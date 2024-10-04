@@ -1,0 +1,146 @@
+     +$0100 map index
+     +$0102 XP position
+      $0104 facing direction
+     
+     +$010A 
+     +$010C 
+      $010E
+
+      $0119 screen brightness (0-F)
+      
+      $0152 vblank flag
+      
+     +$0169 
+     +$016B 
+      
+     +$017B 
+     +$017D 
+     +$017F 
+     
+    ++$01AF pointer to character graphics pointer table ($E42000)
+    ++$01B2 pointer to character sprite assembly pointer table ($E42300)
+    ++$01B5 pointer to character animation pointer table ($E42600)
+    ++$01B8 pointer to some other character graphics pointer table ($E42800)
+      $01BB disable bg3 graphics
+      
+     +$01FE pointer to map properties (+$F60000)
+     
+    ++$0300 decompression source
+    ++$0303 decompression destination
+
+$0500-$0503 NMI jump code
+$0504-$0507 IRQ jump code
+$0508-$06FF CPU stack
+
+$0B88-$0BA5 
+
+      $0BC9 
+      $0BCA 
+     +$0BCB bg1 width
+     +$0BCD bg1 height
+     +$0BCF bg2 width
+     +$0BD1 bg2 height
+     +$0BD3 bg3 width
+     +$0BD5 bg3 height
+      $0BD7 ---o-321 (-> $212C)
+            o: enable objects (sprites) on main screen
+            3: enable bg3 on main screen
+            2: enable bg2 on main screen
+            1: enable bg1 on main screen
+      $0BD8 ---o-321 (-> $212D)
+              o: enable objects (sprites) on sub screen
+            3: enable bg3 on sub screen
+            2: enable bg2 on sub screen
+            1: enable bg1 on sub screen
+    
+      $0BDF shbo4321 (-> $2131)
+            s: 0 = color addition, 1 = color subtraction
+            h: 0 = full add/sub, 1 = half add/sub
+            b: enable add/sub on background
+            o: enable add/sub on objects (sprites)
+            4: enable add/sub on bg4
+            3: enable add/sub on bg3
+            2: enable add/sub on bg2
+            1: enable add/sub on bg1
+      $0BE0 same as $0BDF ???
+
+$1000-$     object data
+     +$1000
+     +$1080
+      $1100 object type ???
+      $1101 object index ???
+     +$1180 object event pointer (2 bytes each)
+      $1200 pointer to sprite graphics (bank)
+      $1201 sprite size ???
+     +$1280 pointer to sprite graphics
+      $1300 pointer to sprite assembly (bank)
+      $1301 
+     +$1380 pointer to sprite assembly
+
+$1C00-$1C7F 
+
+$1D00-$1DFF 
+
+      $1D1A map left scroll limit
+      $1D1B map right scroll limit
+      $1D1C map top scroll limit
+      $1D1D map bottom scroll limit
+      $1D1E bg1 width mask (0F, 1F, 2F, or 3F)
+      $1D1F bg1 height mask
+      $1D20 bg2 width mask
+      $1D21 bg2 height mask
+      $1D22 bg3 width mask
+      $1D23 bg3 height mask
+
+      $1D36
+      $1D37 
+      $1D38 
+      $1D39 
+      $1D3A 
+
+$1E00-$1EFF sound direct page ???
+
+$2020-
+
+$2400-$24FF inventory items
+$2500-$25FF item quantities
+$2600-$282F character data (80 bytes each)
+      $2600 portrait index
+      
+     +$2603 current HP
+     +$2605 max HP
+     +$2607 current MP
+     +$2609 max MP
+      $260B power
+      $260C stamina
+      $260D speed
+      $260E magic
+      $260F hit
+      $2610 evade
+      $2611 magic def
+      $2612 level
+      $2613 XP
+
+      $2627 helmet index
+      $2628 armor index
+      $2629 weapon index
+      $262A accessory
+     +$262B XP to next level
+     +$262D skill points to next tech
+     
+$3000-
+
+$7F0050-$7F01FF event bits
+
+        $7F2000 number of objects
+$7F2001-$7F37FF event pointers and data
+
+$7F6000-$7F6FFF map animation graphics 1
+$7F7000-$7F7FFF map animation graphics 2
+$7F8000-
+
+VRAM
+----
+
+$2000-$4FBF bg1/bg2 graphics
+$5000-$57FF bg3 graphics
