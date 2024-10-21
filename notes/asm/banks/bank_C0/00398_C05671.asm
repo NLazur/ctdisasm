@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5671
+Routine_C05671:
 C0/5671: BD 00 11     LDA $1100,X
 C0/5674: C9 04        CMP #$04
 C0/5676: B0 D3        BCS $564B

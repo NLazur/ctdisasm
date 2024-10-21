@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3DB8
+Routine_C63DB8:
 C6/3DB8: B6 08        LDX $08,Y
 C6/3DBA: 00 B1        BRK $B1
 C6/3DBC: 51 18        EOR ($18),Y

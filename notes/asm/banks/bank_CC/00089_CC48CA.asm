@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 48CA
+Routine_CC48CA:
 CC/48CA: 00 01        BRK $01
 CC/48CC: D0 07        BNE $48D5
 CC/48CE: 20 00 FF     JSR $FF00

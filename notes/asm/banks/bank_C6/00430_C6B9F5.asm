@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B9F5
+Routine_C6B9F5:
 C6/B9F5: 48           PHA
 C6/B9F6: D0 03        BNE $B9FB
 C6/B9F8: 18           CLC

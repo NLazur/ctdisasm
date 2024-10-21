@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F441
+Routine_C0F441:
 C0/F441: 3C 37 34     BIT $3437,X
 C0/F444: 30 2D        BMI $F473
 C0/F446: 2A           ROL

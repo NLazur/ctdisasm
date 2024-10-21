@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7DAB
+Routine_C67DAB:
 C6/7DAB: F8           SED
 C6/7DAC: 11 70        ORA ($70),Y
 C6/7DAE: CD 01 C0     CMP $C001

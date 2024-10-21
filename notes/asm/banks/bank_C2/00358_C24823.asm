@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4823
+Routine_C24823:
 C2/4823: 20 63 0F     JSR $0F63
 C2/4826: 90 4B        BCC $4873
 C2/4828: A9 10        LDA #$10

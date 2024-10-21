@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 88C3
+Routine_C688C3:
 C6/88C3: F1 60        SBC ($60),Y
 C6/88C5: 08           PHP
 C6/88C6: 19 19 5A     ORA $5A19,Y

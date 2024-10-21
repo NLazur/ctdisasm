@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4055
+Routine_C04055:
 C0/4055: BB           TYX
 C0/4056: E8           INX
 C0/4057: E8           INX

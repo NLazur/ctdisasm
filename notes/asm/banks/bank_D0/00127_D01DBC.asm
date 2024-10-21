@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1DBC
+Routine_D01DBC:
 D0/1DBC: 06 27        ASL $27
 D0/1DBE: 18           CLC
 D0/1DBF: 0C 1A 16     TSB $161A

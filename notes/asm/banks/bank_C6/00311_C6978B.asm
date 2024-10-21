@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 978B
+Routine_C6978B:
 C6/978B: E8           INX
 C6/978C: E5 9B        SBC $9B
 C6/978E: 23 35        AND $35,S

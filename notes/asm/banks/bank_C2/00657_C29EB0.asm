@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9EB0
+Routine_C29EB0:
 C2/9EB0: 84 06        STY $06
 C2/9EB2: A5 04        LDA $04
 C2/9EB4: 85 61        STA $61

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D329
+Routine_C2D329:
 C2/D329: 03 02        ORA $02,S
 C2/D32B: 02 08        COP $08
 C2/D32D: E2 30        SEP #$30

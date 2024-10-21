@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 32B8
+Routine_D032B8:
 D0/32B8: 10 38        BPL $32F2
 D0/32BA: 28           PLP
 D0/32BB: 6C 00 00     JMP ($0000)

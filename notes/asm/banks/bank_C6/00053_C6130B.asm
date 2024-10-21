@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 130B
+Routine_C6130B:
 C6/130B: F8           SED
 C6/130C: 38           SEC
 C6/130D: C1 7E        CMP ($7E,X)

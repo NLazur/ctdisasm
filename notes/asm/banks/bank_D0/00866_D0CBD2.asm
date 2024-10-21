@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CBD2
+Routine_D0CBD2:
 D0/CBD2: 80 00        BRA $CBD4
 D0/CBD4: 00 00        BRK $00
 D0/CBD6: 00 00        BRK $00

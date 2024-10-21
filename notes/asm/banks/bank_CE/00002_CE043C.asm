@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 043C
+Routine_CE043C:
 CE/043C: 00 73        BRK $73
 CE/043E: 03 1B        ORA $1B,S
 CE/0440: 09 76        ORA #$76

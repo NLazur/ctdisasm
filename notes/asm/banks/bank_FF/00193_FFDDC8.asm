@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DDC8
+Routine_FFDDC8:
 FF/DDC8: FF 70 F7 68  SBC $68F770,X
 FF/DDCC: EF 38 F7 1C  SBC $1CF738
 FF/DDD0: FB           XCE

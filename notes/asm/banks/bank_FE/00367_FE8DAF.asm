@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8DAF
+Routine_FE8DAF:
 FE/8DAF: FB           XCE
 FE/8DB0: 11 F0        ORA ($F0),Y
 FE/8DB2: 38           SEC

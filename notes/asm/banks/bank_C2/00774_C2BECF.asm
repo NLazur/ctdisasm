@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BECF
+Routine_C2BECF:
 C2/BECF: 58           CLI
 C2/BED0: 80 2E        BRA $BF00
 C2/BED2: 7E 00 02     ROR $0200,X

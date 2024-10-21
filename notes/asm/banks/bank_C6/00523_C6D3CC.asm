@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D3CC
+Routine_C6D3CC:
 C6/D3CC: D0 3C        BNE $D40A
 C6/D3CE: F8           SED
 C6/D3CF: 10 80        BPL $D351

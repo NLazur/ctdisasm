@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 7093
+Routine_CE7093:
 CE/7093: 01 72        ORA ($72,X)
 CE/7095: 14 02        TRB $02
 CE/7097: 36 C2        ROL $C2,X

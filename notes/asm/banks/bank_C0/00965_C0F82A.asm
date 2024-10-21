@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F82A
+Routine_C0F82A:
 C0/F82A: 6D 6F 70     ADC $706F
 C0/F82D: 71 73        ADC ($73),Y
 C0/F82F: 74 75        STZ $75,X

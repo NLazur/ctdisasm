@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7A73
+Routine_C67A73:
 C6/7A73: 6C 6D 06     JMP ($066D)
 C6/7A76: 58           CLI
 C6/7A77: 51 25        EOR ($25),Y

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CD5C
+Routine_D0CD5C:
 D0/CD5C: C0 80        CPY #$80
 D0/CD5E: C0 00        CPY #$00
 D0/CD60: 20 C0 90     JSR $90C0

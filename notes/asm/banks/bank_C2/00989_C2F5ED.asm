@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F5ED
+Routine_C2F5ED:
 C2/F5ED: 08           PHP
 C2/F5EE: E2 20        SEP #$20
 C2/F5F0: 48           PHA

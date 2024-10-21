@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CBDC
+Routine_C0CBDC:
 C0/CBDC: BD 00 12     LDA $1200,X
 C0/CBDF: 85 CF        STA $CF
 C0/CBE1: A9 7F        LDA #$7F

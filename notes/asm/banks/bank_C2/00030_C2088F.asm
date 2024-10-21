@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 088F
+Routine_C2088F:
 C2/088F: 20 DB 08     JSR $08DB
 C2/0892: E2 20        SEP #$20
 C2/0894: 8B           PHB

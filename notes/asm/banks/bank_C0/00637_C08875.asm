@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8875
+Routine_C08875:
 C0/8875: 64 2E        STZ $2E
 C0/8877: 64 30        STZ $30
 C0/8879: 64 32        STZ $32

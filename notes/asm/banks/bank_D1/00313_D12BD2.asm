@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2BD2
+Routine_D12BD2:
 D1/2BD2: 12 08        ORA ($08)
 D1/2BD4: EE 18 10     INC $1018
 D1/2BD7: 54 28 01     MVN $28,$01

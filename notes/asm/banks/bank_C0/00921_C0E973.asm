@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: E973
+Routine_C0E973:
 C0/E973: E8           INX
 C0/E974: E0 04 30     CPX #$3004
 C0/E977: DC 18 60     JMP [$6018]

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 19B8
+Routine_D119B8:
 D1/19B8: 3D 00 00     AND $0000,X
 D1/19BB: 11 80        ORA ($80),Y
 D1/19BD: 02 01        COP $01

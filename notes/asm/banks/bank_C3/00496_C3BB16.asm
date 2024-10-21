@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BB16
+Routine_C3BB16:
 C3/BB16: 03 04        ORA $04,S
 C3/BB18: 80 C0        BRA $BADA
 C3/BB1A: 7E 04 25     ROR $2504,X

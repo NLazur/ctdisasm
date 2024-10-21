@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E52B
+Routine_D0E52B:
 D0/E52B: 29 8D        AND #$8D
 D0/E52D: 88           DEY
 D0/E52E: 00 8D        BRK $8D

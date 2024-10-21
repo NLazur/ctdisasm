@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 493B
+Routine_C3493B:
 C3/493B: A9 1B        LDA #$1B
 C3/493D: 00 00        BRK $00
 C3/493F: 85 35        STA $35

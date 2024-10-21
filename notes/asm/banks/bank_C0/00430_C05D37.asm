@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5D37
+Routine_C05D37:
 C0/5D37: E3 00        SBC $00,S
 C0/5D39: 89 40        BIT #$40
 C0/5D3B: 0D 00 0E     ORA $0E00

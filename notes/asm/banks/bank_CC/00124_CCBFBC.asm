@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: BFBC
+Routine_CCBFBC:
 CC/BFBC: 00 FE        BRK $FE
 CC/BFBE: 04 00        TSB $00
 CC/BFC0: CF 01 FE 0D  CMP $0DFE01

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C74C
+Routine_C1C74C:
 C1/C74C: AD 8B B1     LDA $B18B
 C1/C74F: C9 03        CMP #$03
 C1/C751: B0 2F        BCS $C782

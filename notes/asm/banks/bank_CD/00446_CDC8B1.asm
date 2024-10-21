@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C8B1
+Routine_CDC8B1:
 CD/C8B1: 04 03        TSB $03
 CD/C8B3: 02 36        COP $36
 CD/C8B5: 00 1B        BRK $1B

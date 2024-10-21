@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 2A24
+Routine_CE2A24:
 CE/2A24: 30 01        BMI $2A27
 CE/2A26: 80 30        BRA $2A58
 CE/2A28: 02 C0        COP $C0

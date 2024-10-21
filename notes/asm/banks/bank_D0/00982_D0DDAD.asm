@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: DDAD
+Routine_D0DDAD:
 D0/DDAD: 10 50        BPL $DDFF
 D0/DDAF: 30 0F        BMI $DDC0
 D0/DDB1: 10 0F        BPL $DDC2

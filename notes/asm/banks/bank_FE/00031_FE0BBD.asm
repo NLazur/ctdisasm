@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0BBD
+Routine_FE0BBD:
 FE/0BBD: 32 05        AND ($05)
 FE/0BBF: BF 01 FD 00  LDA $00FD01,X
 FE/0BC3: BC 00 BE     LDY $BE00,X

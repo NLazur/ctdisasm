@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7B72
+Routine_FD7B72:
 FD/7B72: 73 0F        ADC ($0F,S),Y
 FD/7B74: 01 3F        ORA ($3F,X)
 FD/7B76: 61 95        ADC ($95,X)

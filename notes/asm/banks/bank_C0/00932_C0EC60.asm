@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EC60
+Routine_C0EC60:
 C0/EC60: C2 20        REP #$20        ; wait for vblank
 C0/EC62: AD 58 01     LDA $0158
 C0/EC65: 1A           INC

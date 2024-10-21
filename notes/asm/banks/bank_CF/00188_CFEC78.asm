@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EC78
+Routine_CFEC78:
 CF/EC78: 7B           TDC
 CF/EC79: A8           TAY
 CF/EC7A: B9 5B A1     LDA $A15B,Y

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3079
+Routine_C63079:
 C6/3079: D6 16        DEC $16,X
 C6/307B: D7 16        CMP [$16],Y
 C6/307D: E4 3A        CPX $3A

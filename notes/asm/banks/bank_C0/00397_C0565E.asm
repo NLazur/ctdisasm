@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 565E
+Routine_C0565E:
 C0/565E: BD 80 16     LDA $1680,X
 C0/5661: C9 00        CMP #$00
 C0/5663: F0 0B        BEQ $5670

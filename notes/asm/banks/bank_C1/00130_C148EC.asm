@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 48EC
+Routine_C148EC:
 C1/48EC: AE 85 98     LDX $9885
 C1/48EF: 8E 80 A2     STX $A280
 C1/48F2: 7B           TDC

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E607
+Routine_FDE607:
 FD/E607: 3A           DEC
 FD/E608: D0 05        BNE $E60F
 FD/E60A: 20 A1 E6     JSR $E6A1

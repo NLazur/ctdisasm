@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 2FC8
+Routine_FE2FC8:
 FE/2FC8: 69 A0 17     ADC #$17A0
 FE/2FCB: B8           CLV
 FE/2FCC: 7F BA 01 80  ADC $8001BA,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4FAB
+Routine_C04FAB:
 C0/4FAB: 20 A2 AB     JSR $ABA2
 C0/4FAE: C2 20        REP #$20
 C0/4FB0: A5 EE        LDA $EE

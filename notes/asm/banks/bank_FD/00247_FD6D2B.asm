@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6D2B
+Routine_FD6D2B:
 FD/6D2B: 10 00        BPL $6D2D
 FD/6D2D: 10 3D        BPL $6D6C
 FD/6D2F: 02 F2        COP $F2

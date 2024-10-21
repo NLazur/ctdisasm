@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 01D2
+Routine_D101D2:
 D1/01D2: C8           INY
 D1/01D3: 07 08        ORA [$08]
 D1/01D5: C0 40        CPY #$40

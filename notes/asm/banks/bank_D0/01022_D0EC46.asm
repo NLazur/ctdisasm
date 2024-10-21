@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EC46
+Routine_D0EC46:
 D0/EC46: 80 34        BRA $EC7C
 D0/EC48: 0A           ASL
 D0/EC49: 35 0A        AND $0A,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1AC6
+Routine_C01AC6:
 C0/1AC6: A5 EB        LDA $EB
 C0/1AC8: 10 0B        BPL $1AD5
 C0/1ACA: A6 97        LDX $97

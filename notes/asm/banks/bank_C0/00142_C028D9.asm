@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 28D9
+Routine_C028D9:
 C0/28D9: A5 5B        LDA $5B
 C0/28DB: 9F C8 1C 7F  STA $7F1CC8,X
 C0/28DF: 80 F5        BRA $28D6

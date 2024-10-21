@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 78DB
+Routine_FD78DB:
 FD/78DB: 96 6C        STX $6C,Y
 FD/78DD: 14 3E        TRB $3E
 FD/78DF: 16 00        ASL $00,X

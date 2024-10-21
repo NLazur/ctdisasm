@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 345A
+Routine_C0345A:
 C0/345A: 84 C7        STY $C7
 C0/345C: BB           TYX
 C0/345D: 7B           TDC

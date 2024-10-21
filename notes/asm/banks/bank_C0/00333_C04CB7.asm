@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4CB7
+Routine_C04CB7:
 C0/4CB7: 85 D9        STA $D9
 C0/4CB9: 29 30        AND #$30
 C0/4CBB: 9D 01 0C     STA $0C01,X

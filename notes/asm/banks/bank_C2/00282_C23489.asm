@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3489
+Routine_C23489:
 C2/3489: A6 4E        LDX $4E
 C2/348B: BD 02 00     LDA $0002,X
 C2/348E: 0A           ASL

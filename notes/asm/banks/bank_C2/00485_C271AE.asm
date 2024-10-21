@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 71AE
+Routine_C271AE:
 C2/71AE: A6 4E        LDX $4E
 C2/71B0: AD B7 1B     LDA $1BB7
 C2/71B3: DD 22 00     CMP $0022,X

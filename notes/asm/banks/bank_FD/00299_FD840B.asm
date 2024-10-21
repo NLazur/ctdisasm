@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 840B
+Routine_FD840B:
 FD/840B: 06 06        ASL $06
 FD/840D: 2C 10 7C     BIT $7C10
 FD/8410: FF 9B 44 FF  SBC $FF449B,X

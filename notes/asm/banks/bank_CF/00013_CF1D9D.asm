@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1D9D
+Routine_CF1D9D:
 CF/1D9D: 22 40 32 38  JSR $383240
 CF/1DA1: 2C 78 6A     BIT $6A78
 CF/1DA4: 70 52        BVS $1DF8

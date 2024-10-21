@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 7DBD
+Routine_CF7DBD:
 CF/7DBD: BF 82 7D 11  LDA $117D82,X
 CF/7DC1: EF A8 56 50  SBC $5056A8
 CF/7DC5: AE 82 7E     LDX $7E82

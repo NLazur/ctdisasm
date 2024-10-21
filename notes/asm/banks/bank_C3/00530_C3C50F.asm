@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C50F
+Routine_C3C50F:
 C3/C50F: 90 00        BCC $C511
 C3/C511: 0F 08 10 80  ORA $801008
 C3/C515: 44 90 20     MVP $90,$20

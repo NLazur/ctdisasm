@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EBA8
+Routine_D0EBA8:
 D0/EBA8: 0A           ASL
 D0/EBA9: 41 0A        EOR ($0A,X)
 D0/EBAB: 01 10        ORA ($10,X)

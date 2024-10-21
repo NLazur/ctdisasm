@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C99A
+Routine_CDC99A:
 CD/C99A: 70 09        BVS $C9A5
 CD/C99C: A8           TAY
 CD/C99D: 0A           ASL

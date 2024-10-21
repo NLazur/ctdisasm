@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7BD4
+Routine_FD7BD4:
 FD/7BD4: 4B           PHK
 FD/7BD5: 7B           TDC
 FD/7BD6: 08           PHP

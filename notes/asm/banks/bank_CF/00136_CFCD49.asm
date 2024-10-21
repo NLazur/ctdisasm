@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: CD49
+Routine_CFCD49:
 CF/CD49: 21 6B        AND ($6B,X)
 CF/CD4B: 61 C5        ADC ($C5,X)
 CF/CD4D: 21 C5        AND ($C5,X)

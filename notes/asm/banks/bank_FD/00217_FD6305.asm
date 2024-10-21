@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6305
+Routine_FD6305:
 FD/6305: FB           XCE
 FD/6306: 3B           TSC
 FD/6307: B5 2F        LDA $2F,X

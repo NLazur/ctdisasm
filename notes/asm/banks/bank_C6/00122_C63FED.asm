@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3FED
+Routine_C63FED:
 C6/3FED: 4E E0 80     LSR $80E0
 C6/3FF0: 30 84        BMI $3F76
 C6/3FF2: 0D BA 03     ORA $03BA

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B363
+Routine_FDB363:
 FD/B363: 7B           TDC
 FD/B364: AA           TAX
 FD/B365: 86 00        STX $00

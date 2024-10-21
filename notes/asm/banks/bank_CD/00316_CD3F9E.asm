@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3F9E
+Routine_CD3F9E:
 CD/3F9E: CA           DEX
 CD/3F9F: 80 06        BRA $3FA7
 CD/3FA1: 8D 2C CA     STA $CA2C

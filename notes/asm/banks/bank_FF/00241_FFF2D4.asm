@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F2D4
+Routine_FFF2D4:
 FF/F2D4: B2 EA        LDA ($EA)
 FF/F2D6: F3 AA        SBC ($AA,S),Y
 FF/F2D8: 73 F1        ADC ($F1,S),Y

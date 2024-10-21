@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C8F0
+Routine_D0C8F0:
 D0/C8F0: D0 30        BNE $C922
 D0/C8F2: E8           INX
 D0/C8F3: 18           CLC

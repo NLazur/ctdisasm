@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 6887
+Routine_CD6887:
 CD/6887: EE 71 EE     INC $EE71
 CD/688A: 77 EE        ADC [$EE],Y
 CD/688C: 7D EE 83     ADC $83EE,X

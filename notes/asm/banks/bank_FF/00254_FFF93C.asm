@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F93C
+Routine_FFF93C:
 FF/F93C: C2 20        REP #$20
 FF/F93E: A5 02        LDA $02
 FF/F940: 4A           LSR

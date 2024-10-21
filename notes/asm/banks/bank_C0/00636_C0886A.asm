@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 886A
+Routine_C0886A:
 C0/886A: 3A           DEC
 C0/886B: F0 08        BEQ $8875
 C0/886D: 3A           DEC

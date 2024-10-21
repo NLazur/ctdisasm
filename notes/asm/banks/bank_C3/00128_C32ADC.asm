@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2ADC
+Routine_C32ADC:
 C3/2ADC: A5 48        LDA $48
 C3/2ADE: F1 00        SBC ($00),Y
 C3/2AE0: EB           XBA

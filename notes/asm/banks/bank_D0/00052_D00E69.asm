@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0E69
+Routine_D00E69:
 D0/0E69: C0 E0        CPY #$E0
 D0/0E6B: 20 F0 10     JSR $10F0
 D0/0E6E: E0 10 E0     CPX #$E010

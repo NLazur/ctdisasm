@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B53E
+Routine_C0B53E:
 C0/B53E: BF 40 4B 7F  LDA $7F4B40,X
 C0/B542: 48           PHA
 C0/B543: BF 01 4F 7F  LDA $7F4F01,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7D5E
+Routine_C27D5E:
 C2/7D5E: E2 20        SEP #$20
 C2/7D60: 8B           PHB
 C2/7D61: A6 4E        LDX $4E

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: C820
+Routine_C0C820:
 C0/C820: BD C4 4B     LDA $4BC4,X
 C0/C823: 18           CLC
 C0/C824: 65 C5        ADC $C5

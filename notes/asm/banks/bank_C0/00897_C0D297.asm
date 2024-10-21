@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: D297
+Routine_C0D297:
 C0/D297: 85 EE        STA $EE
 C0/D299: 20 7A E9     JSR $E97A
 C0/D29C: 90 F7        BCC $D295

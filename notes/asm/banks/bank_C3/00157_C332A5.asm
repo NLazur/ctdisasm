@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 32A5
+Routine_C332A5:
 C3/32A5: 2A           ROL
 C3/32A6: 00 30        BRK $30
 C3/32A8: 90 40        BCC $32EA

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F132
+Routine_C1F132:
 C1/F132: 7B           TDC
 C1/F133: AE F6 B1     LDX $B1F6
 C1/F136: BD 46 5E     LDA $5E46,X

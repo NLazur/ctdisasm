@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6880
+Routine_C06880:
 C0/6880: C2 20        REP #$20
 C0/6882: E8           INX
 C0/6883: BF 01 20 7F  LDA $7F2001,X

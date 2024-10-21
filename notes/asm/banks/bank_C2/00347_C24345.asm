@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4345
+Routine_C24345:
 C2/4345: AD 94 02     LDA $0294
 C2/4348: 89 10        BIT #$10
 C2/434A: D0 3B        BNE $4387

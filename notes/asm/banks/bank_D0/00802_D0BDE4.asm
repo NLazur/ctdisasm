@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: BDE4
+Routine_D0BDE4:
 D0/BDE4: 00 00        BRK $00
 D0/BDE6: 00 00        BRK $00
 D0/BDE8: 00 00        BRK $00

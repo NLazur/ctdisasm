@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7399
+Routine_C07399:
 C0/7399: AD CB 0B     LDA $0BCB       ; load map size data
 C0/739C: C9 40        CMP #$40        ; bg1 width ...
 C0/739E: F0 1A        BEQ $73BA

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 80D2
+Routine_D180D2:
 D1/80D2: 55 20        EOR $20,X
 D1/80D4: B1 00        LDA ($00),Y
 D1/80D6: 02 A5        COP $A5

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4F67
+Routine_C34F67:
 C3/4F67: AD E6 7B     LDA $7BE6
 C3/4F6A: C9 1E        CMP #$1E
 C3/4F6C: 20 F0 1B     JSR $1BF0

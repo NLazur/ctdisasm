@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6B81
+Routine_C36B81:
 C3/6B81: 2E A5 46     ROL $46A5
 C3/6B84: 8D 10 21     STA $2110
 C3/6B87: A5 42        LDA $42

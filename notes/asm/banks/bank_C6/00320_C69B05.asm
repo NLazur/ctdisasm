@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9B05
+Routine_C69B05:
 C6/9B05: F8           SED
 C6/9B06: 05 7B        ORA $7B
 C6/9B08: 01 E0        ORA ($E0,X)

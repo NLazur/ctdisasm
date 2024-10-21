@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FA7B
+Routine_FFFA7B:
 FF/FA7B: 00 24        BRK $24
 FF/FA7D: 7E B0 05     ROR $05B0,X
 FF/FA80: 23 2C        AND $2C,S

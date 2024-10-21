@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0D33
+Routine_CD0D33:
 CD/0D33: C2 20        REP #$20
 CD/0D35: 7B           TDC
 CD/0D36: AA           TAX

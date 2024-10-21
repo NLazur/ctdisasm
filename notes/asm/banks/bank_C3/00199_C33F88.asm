@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3F88
+Routine_C33F88:
 C3/3F88: 0D E6 3B     ORA $3BE6
 C3/3F8B: 20 3C 78     JSR $783C
 C3/3F8E: A9 00 1C     LDA #$1C00

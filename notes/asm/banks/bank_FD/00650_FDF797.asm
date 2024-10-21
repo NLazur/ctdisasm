@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F797
+Routine_FDF797:
 FD/F797: 70 80        BVS $F719
 FD/F799: 80 80        BRA $F71B
 FD/F79B: 80 80        BRA $F71D

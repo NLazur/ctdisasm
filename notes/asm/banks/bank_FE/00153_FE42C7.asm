@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 42C7
+Routine_FE42C7:
 FE/42C7: D0 10        BNE $42D9
 FE/42C9: 33 33        AND ($33,S),Y
 FE/42CB: 98           TYA

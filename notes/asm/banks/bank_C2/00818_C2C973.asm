@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C973
+Routine_C2C973:
 C2/C973: E2 30        SEP #$30
 C2/C975: A9 08        LDA #$08
 C2/C977: 85 00        STA $00

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3154
+Routine_C03154:
 C0/3154: A6 EB        LDX $EB
 C0/3156: BD 01 1C     LDA $1C01,X
 C0/3159: D0 55        BNE $31B0

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9BF6
+Routine_C69BF6:
 C6/9BF6: 82 29 60     BRL $C6FC22
 C6/9BF9: D0 B5        BNE $9BB0
 C6/9BFB: 03 CB        ORA $CB,S

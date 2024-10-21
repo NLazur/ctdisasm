@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9923
+Routine_C09923:
 C0/9923: C2 20        REP #$20
 C0/9925: A9 80 00     LDA #$0080
 C0/9928: 8D EB 01     STA $01EB

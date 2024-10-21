@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 942A
+Routine_C1942A:
 C1/942A: 7B           TDC
 C1/942B: AE D2 B1     LDX $B1D2
 C1/942E: BF 03 00 CC  LDA $CC0003,X

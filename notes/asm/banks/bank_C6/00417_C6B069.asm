@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B069
+Routine_C6B069:
 C6/B069: 04 00        TSB $00
 C6/B06B: 05 17        ORA $17
 C6/B06D: 07 41        ORA [$41]

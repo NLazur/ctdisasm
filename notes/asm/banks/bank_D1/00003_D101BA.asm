@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 01BA
+Routine_D101BA:
 D1/01BA: 6A           ROR
 D1/01BB: 00 00        BRK $00
 D1/01BD: 12 80        ORA ($80)

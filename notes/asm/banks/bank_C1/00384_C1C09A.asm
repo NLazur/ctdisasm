@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C09A
+Routine_C1C09A:
 C1/C09A: C2 20        REP #$20
 C1/C09C: EB           XBA
 C1/C09D: A8           TAY

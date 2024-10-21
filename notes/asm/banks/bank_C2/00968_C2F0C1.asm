@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F0C1
+Routine_C2F0C1:
 C2/F0C1: 5A           PHY
 C2/F0C2: B9 00 00     LDA $0000,Y
 C2/F0C5: 48           PHA

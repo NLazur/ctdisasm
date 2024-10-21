@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B8FB
+Routine_C3B8FB:
 C3/B8FB: 37 2C        AND [$2C],Y
 C3/B8FD: 7F 00 8E 14  ADC $148E00,X
 C3/B901: 06 00        ASL $00

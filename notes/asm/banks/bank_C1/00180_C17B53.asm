@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7B53
+Routine_C17B53:
 C1/7B53: 5F 60 93 60  EOR $609360,X
 C1/7B57: E6 60        INC $60
 C1/7B59: 54 61 9E     MVN $61,$9E

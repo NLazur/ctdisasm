@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: D6E1
+Routine_CCD6E1:
 CC/D6E1: 36 EF        ROL $EF,X
 CC/D6E3: 36 EF        ROL $EF,X
 CC/D6E5: 2E DE 00     ROL $00DE

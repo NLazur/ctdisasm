@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 079C
+Routine_D1079C:
 D1/079C: FF FF 40 7C  SBC $7C40FF,X
 D1/07A0: 00 00        BRK $00
 D1/07A2: 11 80        ORA ($80),Y

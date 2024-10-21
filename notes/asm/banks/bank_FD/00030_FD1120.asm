@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1120
+Routine_FD1120:
 FD/1120: 08           PHP
 FD/1121: 90 60        BCC $1183
 FD/1123: D0 1A        BNE $113F

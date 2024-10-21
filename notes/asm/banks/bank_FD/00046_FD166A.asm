@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 166A
+Routine_FD166A:
 FD/166A: E0 E0        CPX #$E0
 FD/166C: 00 AA        BRK $AA
 FD/166E: 00 A5        BRK $A5

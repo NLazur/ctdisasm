@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9E3F
+Routine_C09E3F:
 C0/9E3F: AD 33 1D     LDA $1D33
 C0/9E42: A5 AB        LDA $AB
 C0/9E44: 1A           INC

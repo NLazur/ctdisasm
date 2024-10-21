@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EA53
+Routine_C2EA53:
 C2/EA53: A5 57        LDA $57
 C2/EA55: F0 0F        BEQ $EA66
 C2/EA57: AD F2 00     LDA $00F2

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E4B0
+Routine_FEE4B0:
 FE/E4B0: 01 03        ORA ($03,X)
 FE/E4B2: FB           XCE
 FE/E4B3: 01 1D        ORA ($1D,X)

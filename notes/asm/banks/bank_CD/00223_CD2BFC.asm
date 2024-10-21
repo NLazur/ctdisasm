@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2BFC
+Routine_CD2BFC:
 CD/2BFC: C2 20        REP #$20
 CD/2BFE: A2 BF 08     LDX #$08BF
 CD/2C01: A0 FF 08     LDY #$08FF

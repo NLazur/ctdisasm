@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: D620
+Routine_FFD620:
 FF/D620: 70 54        BVS $D676
 FF/D622: 58           CLI
 FF/D623: 54 60 98     MVN $60,$98

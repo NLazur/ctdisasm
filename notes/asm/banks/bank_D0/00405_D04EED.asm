@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4EED
+Routine_D04EED:
 D0/4EED: C0 20 E0     CPY #$E020
 D0/4EF0: 00 00        BRK $00
 D0/4EF2: 00 00        BRK $00

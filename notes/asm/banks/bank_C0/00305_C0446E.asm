@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 446E
+Routine_C0446E:
 C0/446E: A9 00        LDA #$00
 C0/4470: 9D 00 18     STA $1800,X
 C0/4473: BB           TYX

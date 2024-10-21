@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3DC3
+Routine_CD3DC3:
 CD/3DC3: DA           PHX
 CD/3DC4: A8           TAY
 CD/3DC5: A5 45        LDA $45

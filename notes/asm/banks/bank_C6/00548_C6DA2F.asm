@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: DA2F
+Routine_C6DA2F:
 C6/DA2F: AE 08 08     LDX $0808
 C6/DA32: 19 4E 10     ORA $104E,Y
 C6/DA35: 03 08        ORA $08,S

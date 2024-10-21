@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E4E8
+Routine_FDE4E8:
 FD/E4E8: B9 22 05     LDA $0522,Y
 FD/E4EB: 0A           ASL
 FD/E4EC: 85 12        STA $12

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CB12
+Routine_C0CB12:
 C0/CB12: BD 81 1A     LDA $1A81,X
 C0/CB15: F0 FA        BEQ $CB11
 C0/CB17: 30 F8        BMI $CB11

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BBEE
+Routine_C6BBEE:
 C6/BBEE: 61 62        ADC ($62,X)
 C6/BBF0: 1C 63 64     TRB $6463
 C6/BBF3: 27 F8        AND [$F8]

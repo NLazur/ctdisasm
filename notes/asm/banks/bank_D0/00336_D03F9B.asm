@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3F9B
+Routine_D03F9B:
 D0/3F9B: C0 40 C0     CPY #$C040
 D0/3F9E: A0 60        LDY #$60
 D0/3FA0: D0 30        BNE $3FD2

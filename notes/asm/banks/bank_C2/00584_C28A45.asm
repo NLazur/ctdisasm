@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8A45
+Routine_C28A45:
 C2/8A45: E2 20        SEP #$20
 C2/8A47: 20 6E 8B     JSR $8B6E
 C2/8A4A: B0 45        BCS $8A91

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 67D7
+Routine_C067D7:
 C0/67D7: 20 E3 67     JSR $67E3
 C0/67DA: BF 01 20 7F  LDA $7F2001,X
 C0/67DE: 87 D0        STA [$D0]

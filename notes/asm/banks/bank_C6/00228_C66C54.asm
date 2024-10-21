@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6C54
+Routine_C66C54:
 C6/6C54: F8           SED
 C6/6C55: 8B           PHB
 C6/6C56: 62 BC 17     PER $C68415

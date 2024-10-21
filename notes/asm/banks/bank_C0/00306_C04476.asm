@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4476
+Routine_C04476:
 C0/4476: A9 03        LDA #$03
 C0/4478: A6 6D        LDX $6D
 C0/447A: 9D 00 11     STA $1100,X

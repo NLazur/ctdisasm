@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2D18
+Routine_D12D18:
 D1/2D18: 02 01        COP $01
 D1/2D1A: 22 22 09 18  JSR $180922
 D1/2D1E: 06 01        ASL $01

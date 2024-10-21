@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 81D6
+Routine_C081D6:
 C0/81D6: 85 62        STA $62
 C0/81D8: 98           TYA
 C0/81D9: 85 64        STA $64

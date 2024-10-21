@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 698B
+Routine_C0698B:
 C0/698B: C8           INY
 C0/698C: BB           TYX
 C0/698D: BF 01 20 7F  LDA $7F2001,X

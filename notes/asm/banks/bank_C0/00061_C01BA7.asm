@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1BA7
+Routine_C01BA7:
 C0/1BA7: A5 FB        LDA $FB
 C0/1BA9: 80 E7        BRA $1B92
 C0/1BAB: 8B           PHB

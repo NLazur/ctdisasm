@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 09BA
+Routine_FE09BA:
 FE/09BA: F8           SED
 FE/09BB: BE 4E 0A     LDX $0A4E,Y
 FE/09BE: 35 09        AND $09,X

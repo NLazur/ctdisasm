@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B70E
+Routine_C1B70E:
 C1/B70E: A9 81        LDA #$81
 C1/B710: 8D 88 B1     STA $B188
 C1/B713: 8D 89 B1     STA $B189

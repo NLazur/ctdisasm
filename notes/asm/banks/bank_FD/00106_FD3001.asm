@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3001
+Routine_FD3001:
 FD/3001: 48           PHA
 FD/3002: 08           PHP
 FD/3003: 49 08 4A     EOR #$4A08

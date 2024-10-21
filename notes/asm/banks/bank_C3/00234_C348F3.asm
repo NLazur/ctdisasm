@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 48F3
+Routine_C348F3:
 C3/48F3: 20 61 34     JSR $3461
 C3/48F6: 08           PHP
 C3/48F7: 10 04        BPL $48FD

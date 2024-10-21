@@ -1,2 +1,215 @@
+; Bank: C7 | Start Address: 0000
+Routine_C70000:
 C7/0000: 4C 38 00     JMP $0038       ; init SPC
 C7/0003: EA           NOP
+C7/0004: 4C 40 01     JMP $0140
+C7/0007: EA           NOP
+C7/0008: 4C 26 03     JMP $0326
+C7/000B: EA           NOP
+C7/000C: 4C 7B 03     JMP $037B
+C7/000F: EA           NOP
+C7/0010: C3 24
+C7/0012: 09 43
+C7/0014: B4 40
+C7/0016: B7 42
+C7/0018: DD 42
+C7/001A: F3 42
+C7/001C: 00 02
+C7/001E: 00 2F
+C7/0020: 00 47
+C7/0022: 00 1E
+C7/0024: 80 1F
+C7/0026: 00 1F
+C7/0028: 18 0D
+C7/002A: EA 0A
+C7/002C: A4 0B
+C7/002E: 9C 0C
+C7/0030: 20 0C
+C7/0032: 11 0E
+C7/0034: E9 0A
+C7/0026: 0B 5B
+C7/0038: 8B           PHB             ; init SPC
+C7/0039: 0B           PHD
+C7/003A: 08           PHP
+C7/003B: C2 20        REP #$20
+C7/003D: C2 10        REP #$10
+C7/003F: 48           PHA
+C7/0040: DA           PHX
+C7/0041: 5A           PHY
+C7/0042: E2 20        SEP #$20
+C7/0044: A9 00        LDA #$00
+C7/0046: 48           PHA
+C7/0047: AB           PLB
+C7/0048: A2 00 1E     LDX #$1E00
+C7/004B: DA           PHX
+C7/004C: 2B           PLD
+C7/004D: A2 AA BB     LDX #$BBAA
+C7/0050: A9 F0        LDA #$F0
+C7/0052: 8D 41 21     STA $2141
+C7/0055: A9 FF        LDA #$FF
+C7/0057: 8D 40 21     STA $2140
+C7/005A: EC 40 21     CPX $2140
+C7/005D: D0 F1        BNE $0050
+C7/005F: A2 00 00     LDX #$0000
+C7/0062: AF 1C 00 C7  LDA $C7001C
+C7/0066: 8D 42 21     STA $2142
+C7/0069: AF 1D 00 C7  LDA $C7001D
+C7/006D: 8D 43 21     STA $2143
+C7/0070: A9 CC        LDA #$CC
+C7/0072: 8D 41 21     STA $2141
+C7/0075: 8D 40 21     STA $2140
+C7/0078: CD 40 21     CMP $2140
+C7/007B: D0 FB        BNE $0078
+C7/007D: A9 00        LDA #$00
+C7/007F: EB           XBA
+C7/0080: BF 10 00 C7  LDA $C70010,X
+C7/0084: 85 12        STA $12
+C7/0086: BF 11 00 C7  LDA $C70011,X
+C7/008A: 85 13        STA $13
+C7/008C: A9 C7        LDA #$C7
+C7/008E: 85 14        STA $14
+C7/0090: A0 00 00     LDY #$0000
+C7/0093: B7 12        LDA [$12],Y
+C7/0095: 18           CLC
+C7/0096: 69 02        ADC #$02
+C7/0098: 85 0C        STA $0C
+C7/009A: C8           INY
+C7/009B: B7 12        LDA [$12],Y
+C7/009D: 69 00        ADC #$00
+C7/009F: 85 0D        STA $0D
+C7/00A1: C8           INY
+C7/00A2: B7 12        LDA [$12],Y
+C7/00A4: 8D 41 21     STA $2141
+C7/00A7: EB           XBA
+C7/00A8: 8D 40 21     STA $2140
+C7/00AB: CD 40 21     CMP $2140
+C7/00AE: D0 FB        BNE $00AB
+C7/00B0: 1A           INC
+C7/00B1: EB           XBA
+C7/00B2: C8           INY
+C7/00B3: C4 0C        CPY $0C
+C7/00B5: D0 EB        BNE $00A2
+C7/00B7: EB           XBA
+C7/00B8: 1A           INC
+C7/00B9: 1A           INC
+C7/00BA: 1A           INC
+C7/00BB: D0 01        BNE $00BE
+C7/00BD: 1A           INC
+C7/00BE: E8           INX
+C7/00BF: E8           INX
+C7/00C0: E0 0C 00     CPX #$000C
+C7/00C3: F0 1D        BEQ $00E2
+C7/00C5: EB           XBA
+C7/00C6: BF 1C 00 C7  LDA $C7001C,X
+C7/00CA: 8D 42 21     STA $2142
+C7/00CD: BF 1D 00 C7  LDA $C7001D,X
+C7/00D1: 8D 43 21     STA $2143
+C7/00D4: EB           XBA
+C7/00D5: 8D 41 21     STA $2141
+C7/00D8: 8D 40 21     STA $2140
+C7/00DB: CD 40 21     CMP $2140
+C7/00DE: D0 FB        BNE $00DB
+C7/00E0: 80 9B        BRA $007D
+C7/00E2: EB           XBA
+C7/00E3: A9 02        LDA #$02
+C7/00E5: 8D 43 21     STA $2143
+C7/00E8: A9 00        LDA #$00
+C7/00EA: 8D 42 21     STA $2142
+C7/00ED: A9 00        LDA #$00
+C7/00EF: 8D 41 21     STA $2141
+C7/00F2: EB           XBA
+C7/00F3: 8D 40 21     STA $2140
+C7/00F6: CD 40 21     CMP $2140
+C7/00F9: D0 FB        BNE $00F6
+C7/00FB: EB           XBA
+C7/00FC: 8D 40 21     STA $2140
+C7/00FF: A2 00 01     LDX #$0100
+C7/0102: 9D FF 1D     STA $1DFF,X
+C7/0105: CA           DEX
+C7/0106: D0 FA        BNE $0102
+C7/0108: C2 20        REP #$20
+C7/010A: AF B4 40 C7  LDA $C740B4
+C7/010E: 18           CLC
+C7/010F: 69 00 47     ADC #$4700
+C7/0112: 85 F8        STA $F8
+C7/0114: 85 60        STA $60
+C7/0116: 85 F6        STA $F6
+C7/0118: A2 00 08     LDX #$0800
+C7/011B: CA           DEX
+C7/011C: D0 FD        BNE $011B
+C7/011E: E2 20        SEP #$20
+C7/0120: A9 00        LDA #$00
+C7/0122: 85 FA        STA $FA
+C7/0124: A9 C7        LDA #$C7
+C7/0126: 85 FB        STA $FB
+C7/0128: A9 05        LDA #$05
+C7/012A: 85 F0        STA $F0
+C7/012C: 0A           ASL
+C7/012D: 0A           ASL
+C7/012E: 0A           ASL
+C7/012F: 49 FF        EOR #$FF
+C7/0131: 1A           INC
+C7/0132: 18           CLC
+C7/0133: 69 F1        ADC #$F1
+C7/0135: 85 F2        STA $F2
+C7/0137: 64 F1        STZ $F1
+C7/0139: A9 E0        LDA #$E0
+C7/013B: 85 05        STA $05
+C7/013D: 4C 92 01     JMP $0192
+C7/0140: 8B           PHB
+C7/0141: 0B           PHD
+C7/0142: 08           PHP
+C7/0143: C2 20        REP #$20
+C7/0145: C2 10        REP #$10
+C7/0147: 48           PHA
+C7/0148: DA           PHX
+C7/0149: 5A           PHY
+C7/014A: E2 20        SEP #$20
+C7/014C: A9 00        LDA #$00
+C7/014E: 48           PHA
+C7/014F: AB           PLB
+C7/0150: A2 00 1E     LDX #$1E00
+C7/0153: DA           PHX
+C7/0154: 2B           PLD
+C7/0155: E2 20        SEP #$20
+C7/0157: A5 05        LDA $05
+C7/0159: 10 37        BPL $0192
+C7/015B: A5 00        LDA $00
+C7/015D: F0 33        BEQ $0192
+C7/015F: 30 19        BMI $017A
+C7/0161: C9 10        CMP #$10
+C7/0163: 90 2D        BCC $0192
+C7/0165: C9 18        CMP #$18
+C7/0167: B0 0D        BCS $0176
+C7/0169: 29 0F        AND #$0F
+C7/016B: 0A           ASL
+C7/016C: EB           XBA
+C7/016D: A9 00        LDA #$00
+C7/016F: 48           PHA
+C7/0170: EB           XBA
+C7/0171: 48           PHA
+C7/0172: FA           PLX
+C7/0173: 7C D9 0A     JMP ($0AD9,X)
+C7/0176: C9 30        CMP #$30
+C7/0178: B0 03        BCS $017D
+C7/017A: 4C 1C 06     JMP $061C
+C7/017D: C9 40        CMP #$40
+C7/017F: B0 03        BCS $0184
+C7/0181: 4C 1D 07     JMP $071D
+C7/0184: C9 70        CMP #$70
+C7/0186: D0 03        BNE $018B
+C7/0188: 4C E3 08     JMP $08E3
+C7/018B: C9 71        CMP #$71
+C7/018D: D0 03        BNE $0192
+C7/018F: 4C 55 07     JMP $0755
+C7/0192: E2 20        SEP #$20
+C7/0194: 64 00        STZ $00
+C7/0196: C2 20        REP #$20
+C7/0198: C2 10        REP #$10
+C7/019A: 7A           PLY
+C7/019B: FA           PLX
+C7/019C: 68           PLA
+C7/019D: 28           PLP
+C7/019E: 2B           PLD
+C7/019F: AB           PLB
+C7/01A0: 6B           RTL

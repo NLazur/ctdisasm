@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1F11
+Routine_C21F11:
 C2/1F11: A5 08        LDA $08
 C2/1F13: 29 1F        AND #$1F
 C2/1F15: 85 0C        STA $0C

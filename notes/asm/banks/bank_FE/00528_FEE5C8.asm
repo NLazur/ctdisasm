@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E5C8
+Routine_FEE5C8:
 FE/E5C8: 0D 04 E0     ORA $E004
 FE/E5CB: 05 62        ORA $62
 FE/E5CD: 1C 0C 84     TRB $840C

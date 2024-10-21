@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 0DB5
+Routine_CF0DB5:
 CF/0DB5: 9F E1 1E E1  STA $E11EE1,X
 CF/0DB9: 1E E3 1C     ASL $1CE3,X
 CF/0DBC: E3 1C        SBC $1C,S

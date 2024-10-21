@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9084
+Routine_C39084:
 C3/9084: 0C 0D 10     TSB $100D
 C3/9087: D0 40        BNE $90C9
 C3/9089: 17 22        ORA [$22],Y

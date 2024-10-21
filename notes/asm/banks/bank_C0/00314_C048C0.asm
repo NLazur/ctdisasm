@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 48C0
+Routine_C048C0:
 C0/48C0: A6 6D        LDX $6D
 C0/48C2: C2 20        REP #$20
 C0/48C4: BF 80 0B 7F  LDA $7F0B80,X

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 020C
+Routine_FD020C:
 FD/020C: 31 5F        AND ($5F),Y
 FD/020E: 1E 08 74     ASL $7408,X
 FD/0211: 09 10 58     ORA #$5810

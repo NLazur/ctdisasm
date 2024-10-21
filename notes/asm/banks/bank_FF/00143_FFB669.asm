@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: B669
+Routine_FFB669:
 FF/B669: 87 06        STA [$06]
 FF/B66B: 87 07        STA [$07]
 FF/B66D: 07 08        ORA [$08]

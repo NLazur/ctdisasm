@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 6BC5
+Routine_CF6BC5:
 CF/6BC5: E0 C0        CPX #$C0
 CF/6BC7: C0 80        CPY #$80
 CF/6BC9: 80 00        BRA $6BCB

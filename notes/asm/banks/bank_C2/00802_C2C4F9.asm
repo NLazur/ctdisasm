@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C4F9
+Routine_C2C4F9:
 C2/C4F9: 00 03        BRK $03
 C2/C4FB: 02 07        COP $07
 C2/C4FD: 08           PHP

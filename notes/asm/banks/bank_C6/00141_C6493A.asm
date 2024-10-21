@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 493A
+Routine_C6493A:
 C6/493A: 28           PLP
 C6/493B: 2B           PLD
 C6/493C: F2 4C        SBC ($4C)

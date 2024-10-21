@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7B4F
+Routine_C27B4F:
 C2/7B4F: AF 9A 01 7F  LDA $7F019A
 C2/7B53: 09 08        ORA #$08
 C2/7B55: 8F 9A 01 7F  STA $7F019A

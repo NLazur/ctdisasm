@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 762B
+Routine_FD762B:
 FD/762B: 38           SEC
 FD/762C: 1C 18 0A     TRB $0A18
 FD/762F: 1C FC F4     TRB $F4FC

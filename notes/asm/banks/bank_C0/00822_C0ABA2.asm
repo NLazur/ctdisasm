@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: ABA2
+Routine_C0ABA2:
 C0/ABA2: 64 EF        STZ $EF
 C0/ABA4: A5 F3        LDA $F3
 C0/ABA6: 38           SEC

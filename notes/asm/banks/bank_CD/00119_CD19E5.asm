@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 19E5
+Routine_CD19E5:
 CD/19E5: A7 40        LDA [$40]
 CD/19E7: 30 2B        BMI $1A14
 CD/19E9: 29 0B        AND #$0B

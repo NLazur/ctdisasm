@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 7D82
+Routine_FE7D82:
 FE/7D82: 33 32        AND ($32,S),Y
 FE/7D84: 32 33        AND ($33)
 FE/7D86: 35 36        AND $36,X

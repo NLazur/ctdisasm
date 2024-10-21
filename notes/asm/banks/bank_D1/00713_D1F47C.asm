@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F47C
+Routine_D1F47C:
 D1/F47C: A0 02 00     LDY #$0002
 D1/F47F: B7 40        LDA [$40],Y
 D1/F481: 85 49        STA $49

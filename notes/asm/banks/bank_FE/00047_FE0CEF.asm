@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0CEF
+Routine_FE0CEF:
 FE/0CEF: A6 3D        LDX $3D
 FE/0CF1: 09 40 FE     ORA #$FE40
 FE/0CF4: 80 8E        BRA $0C84

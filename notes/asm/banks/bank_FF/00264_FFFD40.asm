@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FD40
+Routine_FFFD40:
 FF/FD40: 48           PHA
 FF/FD41: FD 4B FD     SBC $FD4B,X
 FF/FD44: 4C FD 4E     JMP $4EFD

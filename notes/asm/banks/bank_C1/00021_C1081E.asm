@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 081E
+Routine_C1081E:
 C1/081E: 64 84        STZ $84
 C1/0820: AD D9 A6     LDA $A6D9
 C1/0823: 30 08        BMI $082D

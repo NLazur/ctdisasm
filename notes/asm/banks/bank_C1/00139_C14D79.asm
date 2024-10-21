@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4D79
+Routine_C14D79:
 C1/4D79: 7B           TDC
 C1/4D7A: AA           TAX
 C1/4D7B: 86 8C        STX $8C

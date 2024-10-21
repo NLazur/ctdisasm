@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D166
+Routine_C3D166:
 C3/D166: EB           XBA
 C3/D167: 7E E4 7D     ROR $7DE4,X
 C3/D16A: 65 59        ADC $59

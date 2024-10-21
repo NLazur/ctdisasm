@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 530A
+Routine_C6530A:
 C6/530A: 64 40        STZ $40
 C6/530C: 00 0D        BRK $0D
 C6/530E: 04 97        TSB $97

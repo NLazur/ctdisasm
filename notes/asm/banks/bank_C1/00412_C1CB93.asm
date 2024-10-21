@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CB93
+Routine_C1CB93:
 C1/CB93: AA           TAX
 C1/CB94: 86 28        STX $28
 C1/CB96: A9 0B        LDA #$0B

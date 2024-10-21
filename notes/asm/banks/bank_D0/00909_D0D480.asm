@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D480
+Routine_D0D480:
 D0/D480: 16 15        ASL $15,X
 D0/D482: 13 0B        ORA ($0B,S),Y
 D0/D484: 15 0F        ORA $0F,X

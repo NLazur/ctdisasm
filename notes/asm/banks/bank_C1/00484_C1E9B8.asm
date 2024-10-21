@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E9B8
+Routine_C1E9B8:
 C1/E9B8: 7B           TDC
 C1/E9B9: AD 8D AD     LDA $AD8D
 C1/E9BC: 3A           DEC

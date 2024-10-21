@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 599F
+Routine_FD599F:
 FD/599F: 30 42        BMI $59E3
 FD/59A1: 00 40        BRK $40
 FD/59A3: F8           SED

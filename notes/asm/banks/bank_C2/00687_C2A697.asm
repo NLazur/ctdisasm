@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A697
+Routine_C2A697:
 C2/A697: 08           PHP
 C2/A698: C2 30        REP #$30
 C2/A69A: A2 BD BE     LDX #$BEBD

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2860
+Routine_C32860:
 C3/2860: F0 0F        BEQ $2871
 C3/2862: A5 8A        LDA $8A
 C3/2864: 69 18 48     ADC #$4818

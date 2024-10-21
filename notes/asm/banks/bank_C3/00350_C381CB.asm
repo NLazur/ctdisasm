@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 81CB
+Routine_C381CB:
 C3/81CB: BF 40 40 8F  LDA $8F4040,X
 C3/81CF: 0F 1A 00 E6  ORA $E6001A
 C3/81D3: C0 16 80     CPY #$8016

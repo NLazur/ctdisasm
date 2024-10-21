@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 4A7A
+Routine_CC4A7A:
 CC/4A7A: 04 04        TSB $04
 CC/4A7C: 04 04        TSB $04
 CC/4A7E: 00 00        BRK $00

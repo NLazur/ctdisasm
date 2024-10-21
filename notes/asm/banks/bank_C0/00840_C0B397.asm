@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B397
+Routine_C0B397:
 C0/B397: BF 00 4F 7F  LDA $7F4F00,X
 C0/B39B: AE 85 01     LDX $0185
 C0/B39E: 9D 00 00     STA $0000,X

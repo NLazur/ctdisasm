@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 74E8
+Routine_C074E8:
 C0/74E8: 0B           PHD
 C0/74E9: C2 20        REP #$20
 C0/74EB: A9 00 1D     LDA #$1D00

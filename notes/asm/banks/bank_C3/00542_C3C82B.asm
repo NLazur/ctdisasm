@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C82B
+Routine_C3C82B:
 C3/C82B: 3F 44 26 AB  AND $AB2644,X
 C3/C82F: 0F 10 AB 1B  ORA $1BAB10
 C3/C833: 10 0A        BPL $C83F

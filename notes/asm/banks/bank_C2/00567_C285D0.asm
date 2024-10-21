@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 85D0
+Routine_C285D0:
 C2/85D0: 3C 3C 0A     BIT $0A3C,X
 C2/85D3: 06 0A        ASL $0A
 C2/85D5: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D410
+Routine_C6D410:
 C6/D410: 21 01        AND ($01,X)
 C6/D412: A8           TAY
 C6/D413: 00 00        BRK $00

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4A9B
+Routine_C24A9B:
 C2/4A9B: 0D 18 98     ORA $9818
 C2/4A9E: 0D 19 01     ORA $0119
 C2/4AA1: 30 1B        BMI $4ABE

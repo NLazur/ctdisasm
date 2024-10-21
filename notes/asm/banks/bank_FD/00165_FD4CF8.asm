@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4CF8
+Routine_FD4CF8:
 FD/4CF8: 26 CE        ROL $CE
 FD/4CFA: 66 66        ROR $66
 FD/4CFC: 7E 7E 00     ROR $007E,X

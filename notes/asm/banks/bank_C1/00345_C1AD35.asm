@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AD35
+Routine_C1AD35:
 C1/AD35: 7B           TDC
 C1/AD36: AA           TAX
 C1/AD37: 8E 99 AE     STX $AE99

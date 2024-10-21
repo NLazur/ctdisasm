@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 652D
+Routine_C6652D:
 C6/652D: 24 68        BIT $68
 C6/652F: 24 69        BIT $69
 C6/6531: 24 5A        BIT $5A

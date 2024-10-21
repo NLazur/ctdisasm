@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: E987
+Routine_CEE987:
 CE/E987: AD A3 CA     LDA $CAA3
 CE/E98A: 30 78        BMI $EA04
 CE/E98C: A5 45        LDA $45

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 46A4
+Routine_FD46A4:
 FD/46A4: 7B           TDC
 FD/46A5: FF 70 F7 73  SBC $73F770,X
 FD/46A9: F5 00        SBC $00,X

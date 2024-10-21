@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 20D2
+Routine_C320D2:
 C3/20D2: 01 08        ORA ($08,X)
 C3/20D4: 02 1F        COP $1F
 C3/20D6: 00 20        BRK $20

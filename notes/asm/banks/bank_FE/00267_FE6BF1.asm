@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6BF1
+Routine_FE6BF1:
 FE/6BF1: A2 00 A2     LDX #$A200
 FE/6BF4: 00 E2        BRK $E2
 FE/6BF6: 53 50        EOR ($50,S),Y

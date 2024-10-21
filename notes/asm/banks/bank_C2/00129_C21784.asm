@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1784
+Routine_C21784:
 C2/1784: BD 14 00     LDA $0014,X
 C2/1787: 10 13        BPL $179C
 C2/1789: 18           CLC

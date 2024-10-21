@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 34F8
+Routine_C234F8:
 C2/34F8: E2 20        SEP #$20
 C2/34FA: A6 4E        LDX $4E
 C2/34FC: FE 02 00     INC $0002,X

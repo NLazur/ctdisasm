@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EE23
+Routine_FFEE23:
 FF/EE23: BC DB 00     LDY $00DB,X
 FF/EE26: DF 00 37 F6  CMP $F63700,X
 FF/EE2A: 34 F6        BIT $F6,X

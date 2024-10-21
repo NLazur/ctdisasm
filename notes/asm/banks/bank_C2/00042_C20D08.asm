@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0D08
+Routine_C20D08:
 C2/0D08: BC 0B 00     LDY $000B,X
 C2/0D0B: 84 55        STY $55
 C2/0D0D: BD 0D 00     LDA $000D,X

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A6ED
+Routine_C1A6ED:
 C1/A6ED: 7B           TDC
 C1/A6EE: AA           TAX
 C1/A6EF: A0 03 00     LDY #$0003

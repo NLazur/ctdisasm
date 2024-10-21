@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7003
+Routine_FD7003:
 FD/7003: E0 35        CPX #$35
 FD/7005: 7F 7F 00 BE  ADC $BE007F,X
 FD/7009: BE FC FC     LDX $FCFC,Y

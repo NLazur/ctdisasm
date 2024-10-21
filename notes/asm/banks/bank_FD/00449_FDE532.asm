@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E532
+Routine_FDE532:
 FD/E532: B9 22 05     LDA $0522,Y
 FD/E535: 0A           ASL
 FD/E536: 85 12        STA $12

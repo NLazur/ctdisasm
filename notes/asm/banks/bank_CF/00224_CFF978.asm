@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F978
+Routine_CFF978:
 CF/F978: A2 07        LDX #$07
 CF/F97A: 00 86        BRK $86
 CF/F97C: C6 A6        DEC $A6

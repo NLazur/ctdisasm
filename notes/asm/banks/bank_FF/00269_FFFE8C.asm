@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FE8C
+Routine_FFFE8C:
 FF/FE8C: 62 02 64     PER $FF6291
 FF/FE8F: 02 66        COP $66
 FF/FE91: 02 E4        COP $E4

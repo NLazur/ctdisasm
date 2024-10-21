@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 767D
+Routine_FD767D:
 FD/767D: 1F A0 D1 C3  ORA $C3D1A0,X
 FD/7681: 4E 03 02     LSR $0203
 FD/7684: B0 A0        BCS $7626

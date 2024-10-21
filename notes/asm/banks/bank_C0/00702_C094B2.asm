@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 94B2
+Routine_C094B2:
 C0/94B2: 85 66        STA $66
 C0/94B4: A6 89        LDX $89
 C0/94B6: E8           INX

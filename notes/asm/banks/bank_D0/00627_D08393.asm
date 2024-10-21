@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8393
+Routine_D08393:
 D0/8393: C0 00 80     CPY #$8000
 D0/8396: 80 80        BRA $8318
 D0/8398: 0C 0F 09     TSB $090F

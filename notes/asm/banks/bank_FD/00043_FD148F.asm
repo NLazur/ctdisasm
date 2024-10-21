@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 148F
+Routine_FD148F:
 FD/148F: 80 02        BRA $1493
 FD/1491: 20 84 03     JSR $0384
 FD/1494: 3D 70 01     AND $0170,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8A8F
+Routine_C08A8F:
 C0/8A8F: A5 2E        LDA $2E
 C0/8A91: F0 08        BEQ $8A9B
 C0/8A93: 30 03        BMI $8A98

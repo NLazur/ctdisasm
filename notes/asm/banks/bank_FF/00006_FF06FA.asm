@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 06FA
+Routine_FF06FA:
 FF/06FA: FF 40 7B C0  SBC $C07B40,X
 FF/06FE: E1 C0        SBC ($C0,X)
 FF/0700: 3C 43 96     BIT $9643,X

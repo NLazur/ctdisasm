@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9652
+Routine_C09652:
 C0/9652: 85 66        STA $66
 C0/9654: A5 97        LDA $97
 C0/9656: C9 1F        CMP #$1F

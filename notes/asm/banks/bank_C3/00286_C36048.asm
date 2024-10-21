@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6048
+Routine_C36048:
 C3/6048: F8           SED
 C3/6049: 91 F0        STA ($F0),Y
 C3/604B: F5 8A        SBC $8A,X

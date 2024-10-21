@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EAF9
+Routine_C2EAF9:
 C2/EAF9: A2 19        LDX #$19
 C2/EAFB: 8E 00 1E     STX $1E00
 C2/EAFE: 9C 76 0D     STZ $0D76

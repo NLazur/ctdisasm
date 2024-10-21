@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F4E2
+Routine_FDF4E2:
 FD/F4E2: 00 67        BRK $67
 FD/F4E4: 80 67        BRA $F54D
 FD/F4E6: 00 68        BRK $68

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: A2AA
+Routine_D0A2AA:
 D0/A2AA: 0F 30 25 3A  ORA $3A2530
 D0/A2AE: 36 39        ROL $39,X
 D0/A2B0: 12 1D        ORA ($1D)

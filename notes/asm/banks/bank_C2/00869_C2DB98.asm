@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DB98
+Routine_C2DB98:
 C2/DB98: 00 10        BRK $10
 C2/DB9A: 00 B0        BRK $B0
 C2/DB9C: 7E 00 11     ROR $1100,X

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: ED18
+Routine_CFED18:
 CF/ED18: A2 0A 00     LDX #$000A
 CF/ED1B: E2 10        SEP #$10
 CF/ED1D: BD 92 A1     LDA $A192,X

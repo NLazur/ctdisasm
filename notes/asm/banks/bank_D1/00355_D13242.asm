@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3242
+Routine_D13242:
 D1/3242: E8           INX
 D1/3243: D1 38        CMP ($38),Y
 D1/3245: 65 CD        ADC $CD

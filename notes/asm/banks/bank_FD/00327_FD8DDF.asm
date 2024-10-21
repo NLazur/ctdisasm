@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8DDF
+Routine_FD8DDF:
 FD/8DDF: 3E 05 07     ROL $0705,X
 FD/8DE2: 04 00        TSB $00
 FD/8DE4: 07 6E        ORA [$6E]

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2A57
+Routine_CC2A57:
 CC/2A57: 87 00        STA [$00]
 CC/2A59: 41 87        EOR ($87,X)
 CC/2A5B: 00 42        BRK $42

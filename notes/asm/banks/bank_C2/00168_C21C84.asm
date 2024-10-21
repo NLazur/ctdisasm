@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1C84
+Routine_C21C84:
 C2/1C84: BD 1A 00     LDA $001A,X
 C2/1C87: 49 FF FF     EOR #$FFFF
 C2/1C8A: 18           CLC

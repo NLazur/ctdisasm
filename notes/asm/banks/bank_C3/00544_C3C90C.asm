@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C90C
+Routine_C3C90C:
 C3/C90C: 00 04        BRK $04
 C3/C90E: 13 45        ORA ($45,S),Y
 C3/C910: 00 02        BRK $02

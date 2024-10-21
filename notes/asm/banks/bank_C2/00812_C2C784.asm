@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C784
+Routine_C2C784:
 C2/C784: A2 03 C9     LDX #$C903
 C2/C787: 03 90        ORA $90,S
 C2/C789: 04 E9        TSB $E9

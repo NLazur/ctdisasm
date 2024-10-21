@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 31FC
+Routine_C231FC:
 C2/31FC: AD 94 02     LDA $0294
 C2/31FF: 29 03        AND #$03
 C2/3201: C5 00        CMP $00

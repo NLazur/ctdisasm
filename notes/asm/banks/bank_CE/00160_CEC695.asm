@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: C695
+Routine_CEC695:
 CE/C695: FE F8 06     INC $06F8,X
 CE/C698: 43 F0        EOR $F0,S
 CE/C69A: 08           PHP

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 226F
+Routine_C3226F:
 C3/226F: 48           PHA
 C3/2270: AD 2C 14     LDA $142C
 C3/2273: D4 0A        PEI $0A

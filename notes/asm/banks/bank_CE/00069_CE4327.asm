@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 4327
+Routine_CE4327:
 CE/4327: 24 01        BIT $01
 CE/4329: 03 40        ORA $40,S
 CE/432B: 24 03        BIT $03

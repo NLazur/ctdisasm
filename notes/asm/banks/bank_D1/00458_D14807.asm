@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 4807
+Routine_D14807:
 D1/4807: 4D 8C 31     EOR $318C
 D1/480A: C0 2C        CPY #$2C
 D1/480C: FF 77 BD 73  SBC $73BD77,X

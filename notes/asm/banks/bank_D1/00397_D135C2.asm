@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 35C2
+Routine_D135C2:
 D1/35C2: 2D 00 00     AND $0000
 D1/35C5: 11 80        ORA ($80),Y
 D1/35C7: C0 00        CPY #$00

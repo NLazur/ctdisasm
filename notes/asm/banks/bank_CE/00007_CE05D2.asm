@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 05D2
+Routine_CE05D2:
 CE/05D2: 01 73        ORA ($73,X)
 CE/05D4: 00 24        BRK $24
 CE/05D6: 01 72        ORA ($72,X)

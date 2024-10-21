@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 319B
+Routine_C3319B:
 C3/319B: FA           PLX
 C3/319C: 32 EB        AND ($EB)
 C3/319E: 1A           INC

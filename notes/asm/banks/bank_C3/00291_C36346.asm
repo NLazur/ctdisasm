@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6346
+Routine_C36346:
 C3/6346: 03 F0        ORA $F0,S
 C3/6348: F6 98        INC $98,X
 C3/634A: C0 FA        CPY #$FA

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D63D
+Routine_D0D63D:
 D0/D63D: C0 80        CPY #$80
 D0/D63F: 80 01        BRA $D642
 D0/D641: 01 01        ORA ($01,X)

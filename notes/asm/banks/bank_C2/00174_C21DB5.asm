@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1DB5
+Routine_C21DB5:
 C2/1DB5: C2 20        REP #$20
 C2/1DB7: A2 00 00     LDX #$0000
 C2/1DBA: 9E 20 09     STZ $0920,X

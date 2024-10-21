@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A43D
+Routine_C1A43D:
 C1/A43D: 7B           TDC
 C1/A43E: AD 52 B2     LDA $B252
 C1/A441: 0A           ASL

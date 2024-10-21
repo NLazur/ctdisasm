@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8B69
+Routine_C28B69:
 C2/8B69: AD A6 0D     LDA $0DA6
 C2/8B6C: 80 02        BRA $8B70
 C2/8B6E: A9 FC 1C     LDA #$1CFC

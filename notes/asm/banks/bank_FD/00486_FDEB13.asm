@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EB13
+Routine_FDEB13:
 FD/EB13: 9C 0B 42     STZ $420B
 FD/EB16: 9C 0C 42     STZ $420C
 FD/EB19: A9 82        LDA #$82

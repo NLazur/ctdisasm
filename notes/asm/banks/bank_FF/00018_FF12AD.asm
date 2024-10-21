@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 12AD
+Routine_FF12AD:
 FF/12AD: 9F 20 DF 00  STA $00DF20,X
 FF/12B1: 00 00        BRK $00
 FF/12B3: 00 00        BRK $00

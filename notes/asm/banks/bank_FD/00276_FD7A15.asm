@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7A15
+Routine_FD7A15:
 FD/7A15: 11 02        ORA ($02),Y
 FD/7A17: B2 C0        LDA ($C0)
 FD/7A19: 76 08        ROR $08,X

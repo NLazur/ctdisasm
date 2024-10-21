@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6DE3
+Routine_C66DE3:
 C6/6DE3: F8           SED
 C6/6DE4: 01 F8        ORA ($F8,X)
 C6/6DE6: 12 68        ORA ($68)

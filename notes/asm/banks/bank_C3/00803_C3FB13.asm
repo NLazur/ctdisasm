@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FB13
+Routine_C3FB13:
 C3/FB13: 02 F0        COP $F0
 C3/FB15: F0 60        BEQ $FB77
 C3/FB17: 00 00        BRK $00

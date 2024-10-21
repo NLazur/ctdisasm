@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CB04
+Routine_C6CB04:
 C6/CB04: FA           PLX
 C6/CB05: E0 F9 00     CPX #$00F9
 C6/CB08: FA           PLX

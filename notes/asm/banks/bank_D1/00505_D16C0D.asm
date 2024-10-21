@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 6C0D
+Routine_D16C0D:
 D1/6C0D: 80 70        BRA $6C7F
 D1/6C0F: 0F 83 09 88  ORA $880983
 D1/6C13: 00 89        BRK $89

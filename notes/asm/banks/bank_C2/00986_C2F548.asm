@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F548
+Routine_C2F548:
 C2/F548: 80 22        BRA $F56C
 C2/F54A: 88           DEY
 C2/F54B: 24 A0        BIT $A0

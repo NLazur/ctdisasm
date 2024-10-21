@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3643
+Routine_C03643:
 C0/3643: A5 2D        LDA $2D
 C0/3645: D0 06        BNE $364D
 C0/3647: A2 E0 7F     LDX #$7FE0

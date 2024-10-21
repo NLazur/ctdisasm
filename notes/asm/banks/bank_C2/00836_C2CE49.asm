@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CE49
+Routine_C2CE49:
 C2/CE49: 08           PHP
 C2/CE4A: 7B           TDC
 C2/CE4B: A6 00        LDX $00

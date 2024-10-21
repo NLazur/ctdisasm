@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EFE9
+Routine_D0EFE9:
 D0/EFE9: 10 00        BPL $EFEB
 D0/EFEB: 11 DE        ORA ($DE),Y
 D0/EFED: 52 DD        EOR ($DD)

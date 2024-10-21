@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 90F8
+Routine_C290F8:
 C2/90F8: FC F8 F4     JSR ($F4F8,X)
 C2/90FB: F0 08        BEQ $9105
 C2/90FD: C2 30        REP #$30

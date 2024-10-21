@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3A68
+Routine_C03A68:
 C0/3A68: BB           TYX
 C0/3A69: E8           INX
 C0/3A6A: 7B           TDC

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 04FC
+Routine_D104FC:
 D1/04FC: 4A           LSR
 D1/04FD: 00 00        BRK $00
 D1/04FF: 12 80        ORA ($80)

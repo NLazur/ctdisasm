@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2589
+Routine_C02589:
 C0/2589: A9 17        LDA #$17
 C0/258B: 8F 22 15 7F  STA $7F1522
 C0/258F: A9 00        LDA #$00

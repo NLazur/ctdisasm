@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FBF7
+Routine_C3FBF7:
 C3/FBF7: 02 F8        COP $F8
 C3/FBF9: E8           INX
 C3/FBFA: AE 40 F8     LDX $F840

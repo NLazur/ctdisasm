@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0345
+Routine_C60345:
 C6/0345: 9F C0 7F C0  STA $C07FC0,X
 C6/0349: 00 CF        BRK $CF
 C6/034B: E0 FF        CPX #$FF

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C9FB
+Routine_C3C9FB:
 C3/C9FB: 12 E1        ORA ($E1)
 C3/C9FD: C0 B9        CPY #$B9
 C3/C9FF: 38           SEC

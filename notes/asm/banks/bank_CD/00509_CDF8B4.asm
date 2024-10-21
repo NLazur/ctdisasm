@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F8B4
+Routine_CDF8B4:
 CD/F8B4: 00 41        BRK $41
 CD/F8B6: 01 42        ORA ($42,X)
 CD/F8B8: 02 43        COP $43

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F871
+Routine_C2F871:
 C2/F871: 08           PHP
 C2/F872: C2 20        REP #$20
 C2/F874: 7B           TDC

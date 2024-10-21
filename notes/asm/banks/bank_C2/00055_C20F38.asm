@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0F38
+Routine_C20F38:
 C2/0F38: C2 20        REP #$20
 C2/0F3A: A6 4E        LDX $4E
 C2/0F3C: 18           CLC

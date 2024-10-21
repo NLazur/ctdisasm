@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1434
+Routine_C61434:
 C6/1434: 80 60        BRA $1496
 C6/1436: 70 06        BVS $143E
 C6/1438: 50 F0        BVC $142A

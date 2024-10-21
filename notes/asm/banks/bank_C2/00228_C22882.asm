@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2882
+Routine_C22882:
 C2/2882: A2 00 8C     LDX #$8C00
 C2/2885: 8E 03 03     STX $0303
 C2/2888: A9 7F        LDA #$7F

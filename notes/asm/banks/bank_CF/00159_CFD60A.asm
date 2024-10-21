@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D60A
+Routine_CFD60A:
 CF/D60A: E7 38        SBC [$38]
 CF/D60C: 1C 20 1C     TRB $1C20
 CF/D60F: 20 8B 38     JSR $388B

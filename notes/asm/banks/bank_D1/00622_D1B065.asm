@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: B065
+Routine_D1B065:
 D1/B065: 0E 70 91     ASL $9170
 D1/B068: 08           PHP
 D1/B069: F1 05        SBC ($05),Y

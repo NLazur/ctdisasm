@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 4B64
+Routine_FE4B64:
 FE/4B64: 4F 61 40 81  EOR $814061
 FE/4B68: 80 4F        BRA $4BB9
 FE/4B6A: C0 BE 68     CPY #$68BE

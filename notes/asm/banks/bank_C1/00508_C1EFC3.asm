@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EFC3
+Routine_C1EFC3:
 C1/EFC3: 64 1A        STZ $1A
 C1/EFC5: 7B           TDC
 C1/EFC6: AA           TAX

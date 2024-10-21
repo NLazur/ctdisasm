@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B0B6
+Routine_C1B0B6:
 C1/B0B6: BD 4A 5E     LDA $5E4A,X
 C1/B0B9: 89 80        BIT #$80
 C1/B0BB: F0 03        BEQ $B0C0

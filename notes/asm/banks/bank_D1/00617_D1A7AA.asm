@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: A7AA
+Routine_D1A7AA:
 D1/A7AA: DA           PHX
 D1/A7AB: 91 DA        STA ($DA),Y
 D1/A7AD: D2 DA        CMP ($DA)

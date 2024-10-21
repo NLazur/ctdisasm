@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 81EA
+Routine_FD81EA:
 FD/81EA: 01 CD        ORA ($CD,X)
 FD/81EC: 1C 01 02     TRB $0201
 FD/81EF: FE 0B 22     INC $220B,X

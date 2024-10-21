@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: BB7C
+Routine_C0BB7C:
 C0/BB7C: BD C4 4B     LDA $4BC4,X
 C0/BB7F: 30 07        BMI $BB88
 C0/BB81: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4D2B
+Routine_D04D2B:
 D0/4D2B: 9C F5 0F     STZ $0FF5
 D0/4D2E: FA           PLX
 D0/4D2F: 0E F8 07     ASL $07F8

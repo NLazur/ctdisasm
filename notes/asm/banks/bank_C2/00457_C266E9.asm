@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 66E9
+Routine_C266E9:
 C2/66E9: C2 20        REP #$20
 C2/66EB: AD F6 00     LDA $00F6
 C2/66EE: 89 08 00     BIT #$0008

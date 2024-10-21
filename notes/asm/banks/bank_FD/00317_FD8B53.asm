@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8B53
+Routine_FD8B53:
 FD/8B53: 04 00        TSB $00
 FD/8B55: 33 00        AND ($00,S),Y
 FD/8B57: 66 80        ROR $80

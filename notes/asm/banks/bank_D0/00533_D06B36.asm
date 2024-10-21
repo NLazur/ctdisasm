@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6B36
+Routine_D06B36:
 D0/6B36: D0 30        BNE $6B68
 D0/6B38: 1C 1E 03     TRB $031E
 D0/6B3B: 03 00        ORA $00,S

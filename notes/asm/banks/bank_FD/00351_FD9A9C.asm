@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9A9C
+Routine_FD9A9C:
 FD/9A9C: FF 00 10 0D  SBC $0D1000,X
 FD/9AA0: A0 01 A6     LDY #$A601
 FD/9AA3: 02 D0        COP $D0

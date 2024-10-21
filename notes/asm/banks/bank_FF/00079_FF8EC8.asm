@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 8EC8
+Routine_FF8EC8:
 FF/8EC8: 70 20        BVS $8EEA
 FF/8ECA: 38           SEC
 FF/8ECB: 10 1C        BPL $8EE9

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1488
+Routine_CD1488:
 CD/1488: BF 00 00 D0  LDA $D00000,X
 CD/148C: 99 00 2D     STA $2D00,Y
 CD/148F: EB           XBA

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: CC64
+Routine_FFCC64:
 FF/CC64: 00 00        BRK $00
 FF/CC66: C7 18        CMP [$18]
 FF/CC68: 51 7D        EOR ($7D),Y

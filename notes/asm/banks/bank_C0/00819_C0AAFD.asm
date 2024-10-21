@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AAFD
+Routine_C0AAFD:
 C0/AAFD: A6 6D        LDX $6D
 C0/AAFF: BD 80 1B     LDA $1B80,X
 C0/AB02: F0 02        BEQ $AB06

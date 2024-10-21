@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4A47
+Routine_D04A47:
 D0/4A47: C0 00 00     CPY #$0000
 D0/4A4A: 00 00        BRK $00
 D0/4A4C: 00 00        BRK $00

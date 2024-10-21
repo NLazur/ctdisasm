@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: C997
+Routine_C0C997:
 C0/C997: BD 00 11     LDA $1100,X
 C0/C99A: F0 34        BEQ $C9D0
 C0/C99C: 30 F8        BMI $C996

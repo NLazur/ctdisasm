@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 46A1
+Routine_D046A1:
 D0/46A1: 9F 08 F7 93  STA $93F708,X
 D0/46A5: EF 5F 7F 3F  SBC $3F7F5F
 D0/46A9: C0 B9 46     CPY #$46B9

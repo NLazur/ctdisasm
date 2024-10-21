@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 5972
+Routine_CE5972:
 CE/5972: 03 D8        ORA $D8,S
 CE/5974: 04 03        TSB $03
 CE/5976: 1D 20 1F     ORA $1F20,X

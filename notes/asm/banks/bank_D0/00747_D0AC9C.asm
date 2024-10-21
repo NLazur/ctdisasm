@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: AC9C
+Routine_D0AC9C:
 D0/AC9C: 80 80        BRA $AC1E
 D0/AC9E: 80 80        BRA $AC20
 D0/ACA0: 00 00        BRK $00

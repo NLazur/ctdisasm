@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6CD8
+Routine_C66CD8:
 C6/6CD8: 81 26        STA ($26,X)
 C6/6CDA: 27 5B        AND [$5B]
 C6/6CDC: F8           SED

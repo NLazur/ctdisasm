@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6D46
+Routine_C66D46:
 C6/6D46: 9D 9E A5     STA $A59E,X
 C6/6D49: 15 29        ORA $29,X
 C6/6D4B: 20 E6 01     JSR $01E6

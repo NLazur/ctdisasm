@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0FDC
+Routine_D10FDC:
 D1/0FDC: E0 60        CPX #$60
 D1/0FDE: 00 41        BRK $41
 D1/0FE0: 66 01        ROR $01

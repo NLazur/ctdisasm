@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4892
+Routine_C04892:
 C0/4892: 84 C7        STY $C7
 C0/4894: BB           TYX
 C0/4895: E8           INX

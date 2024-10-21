@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 39D5
+Routine_C239D5:
 C2/39D5: C2 20        REP #$20
 C2/39D7: A5 08        LDA $08
 C2/39D9: 4A           LSR

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 4189
+Routine_CF4189:
 CF/4189: D5 95        CMP $95,X
 CF/418B: EB           XBA
 CF/418C: 4B           PHK

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5B73
+Routine_C35B73:
 C3/5B73: 54 A0 0E     MVN $A0,$0E
 C3/5B76: 45 20        EOR $20
 C3/5B78: 0F FE 13 13  ORA $1313FE

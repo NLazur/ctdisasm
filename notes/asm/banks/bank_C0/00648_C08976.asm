@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8976
+Routine_C08976:
 C0/8976: A9 F0        LDA #$F0
 C0/8978: 85 2D        STA $2D
 C0/897A: A5 30        LDA $30

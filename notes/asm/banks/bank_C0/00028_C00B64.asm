@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0B64
+Routine_C00B64:
 C0/0B64: A9 5C        LDA #$5C        ; set jump code for NMI
 C0/0B66: 8D 00 05     STA $0500
 C0/0B69: A2 63 EA     LDX #$EA63

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2814
+Routine_C12814:
 C1/2814: 20 2D 28     JSR $282D
 C1/2817: F0 13        BEQ $282C
 C1/2819: CE 14 96     DEC $9614

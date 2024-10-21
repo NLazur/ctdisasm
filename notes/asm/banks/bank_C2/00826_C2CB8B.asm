@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CB8B
+Routine_C2CB8B:
 C2/CB8B: 9C 0F 0F     STZ $0F0F
 C2/CB8E: AF CF 01 7F  LDA $7F01CF
 C2/CB92: 29 40 D0     AND #$D040

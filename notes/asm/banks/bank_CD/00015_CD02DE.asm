@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 02DE
+Routine_CD02DE:
 CD/02DE: 48           PHA
 CD/02DF: A9 0B        LDA #$0B
 CD/02E1: 85 53        STA $53

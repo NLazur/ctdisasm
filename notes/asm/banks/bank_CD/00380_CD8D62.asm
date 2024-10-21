@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 8D62
+Routine_CD8D62:
 CD/8D62: 2D 80 12     AND $1280
 CD/8D65: A8           TAY
 CD/8D66: 69 00 20     ADC #$2000

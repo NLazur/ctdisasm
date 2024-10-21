@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9B21
+Routine_C69B21:
 C6/9B21: 20 01 78     JSR $7801
 C6/9B24: 11 2D        ORA ($2D),Y
 C6/9B26: 2E 53 01     ROL $0153

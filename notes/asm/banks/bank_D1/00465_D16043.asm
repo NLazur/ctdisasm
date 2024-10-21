@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 6043
+Routine_D16043:
 D1/6043: 3D E6 28     AND $28E6,X
 D1/6046: 00 00        BRK $00
 D1/6048: 00 00        BRK $00

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2690
+Routine_C32690:
 C3/2690: 8F 04 0D 51  STA $510D04
 C3/2694: EB           XBA
 C3/2695: 0B           PHD

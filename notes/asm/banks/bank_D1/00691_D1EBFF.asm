@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EBFF
+Routine_D1EBFF:
 D1/EBFF: A9 28        LDA #$28
 D1/EC01: 8F 02 42 00  STA $004202
 D1/EC05: A5 7C        LDA $7C

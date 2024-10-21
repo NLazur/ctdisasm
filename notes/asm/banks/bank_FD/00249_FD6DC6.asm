@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6DC6
+Routine_FD6DC6:
 FD/6DC6: E0 02        CPX #$02
 FD/6DC8: 10 01        BPL $6DCB
 FD/6DCA: 70 00        BVS $6DCC

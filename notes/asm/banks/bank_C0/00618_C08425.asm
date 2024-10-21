@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8425
+Routine_C08425:
 C0/8425: A2 80        LDX #$80
 C0/8427: D8           CLD
 C0/8428: 8E 81 21     STX $2181

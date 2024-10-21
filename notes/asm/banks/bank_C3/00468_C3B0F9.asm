@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B0F9
+Routine_C3B0F9:
 C3/B0F9: 06 09        ASL $09
 C3/B0FB: 62 0B 7F     PER $C33009
 C3/B0FE: 09 73        ORA #$73

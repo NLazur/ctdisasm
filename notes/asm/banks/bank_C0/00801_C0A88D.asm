@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A88D
+Routine_C0A88D:
 C0/A88D: A6 6D        LDX $6D
 C0/A88F: BD 00 11     LDA $1100,X
 C0/A892: 30 7C        BMI $A910

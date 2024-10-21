@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DFCA
+Routine_C3DFCA:
 C3/DFCA: 08           PHP
 C3/DFCB: 80 D8        BRA $DFA5
 C3/DFCD: B4 68        LDY $68,X

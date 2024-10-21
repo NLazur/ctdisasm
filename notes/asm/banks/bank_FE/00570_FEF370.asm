@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: F370
+Routine_FEF370:
 FE/F370: 80 40        BRA $F3B2
 FE/F372: 70 03        BVS $F377
 FE/F374: C0 0C 06     CPY #$060C

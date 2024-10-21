@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AC3A
+Routine_C2AC3A:
 C2/AC3A: E2 20        SEP #$20
 C2/AC3C: AD 16 04     LDA $0416
 C2/AC3F: 8D D9 0D     STA $0DD9

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 4E6D
+Routine_CD4E6D:
 CD/4E6D: C0 C4        CPY #$C4
 CD/4E6F: 08           PHP
 CD/4E70: 04 00        TSB $00

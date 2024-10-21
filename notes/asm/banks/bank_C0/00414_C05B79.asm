@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5B79
+Routine_C05B79:
 C0/5B79: AD 1B 1D     LDA $1D1B
 C0/5B7C: 8D D9 01     STA $01D9
 C0/5B7F: BD 01 18     LDA $1801,X

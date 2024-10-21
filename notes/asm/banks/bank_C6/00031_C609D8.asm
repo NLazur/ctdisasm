@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 09D8
+Routine_C609D8:
 C6/09D8: 9F 40 9F 60  STA $609F40,X
 C6/09DC: 9F F0 0C C0  STA $C00CF0,X
 C6/09E0: FC 00 CC     JSR ($CC00,X)

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 74B4
+Routine_D174B4:
 D1/74B4: FF 00 0B 12  SBC $120B00,X
 D1/74B8: 83 20        STA $20,S
 D1/74BA: 12 84        ORA ($84)

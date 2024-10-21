@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EF8B
+Routine_FEEF8B:
 FE/EF8B: 57 E8        EOR [$E8],Y
 FE/EF8D: BD E8 8D     LDA $8DE8,X
 FE/EF90: 80 39        BRA $EFCB

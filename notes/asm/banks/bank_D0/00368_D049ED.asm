@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 49ED
+Routine_D049ED:
 D0/49ED: 42 A0        WDM $A0
 D0/49EF: E0 00        CPX #$00
 D0/49F1: 00 00        BRK $00

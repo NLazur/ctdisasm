@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4D15
+Routine_C04D15:
 C0/4D15: 9E 80 1A     STZ $1A80,X
 C0/4D18: 9E 80 1B     STZ $1B80,X
 C0/4D1B: BB           TYX

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E944
+Routine_FFE944:
 FF/E944: 10 80        BPL $E8C6
 FF/E946: 04 80        TSB $80
 FF/E948: 18           CLC

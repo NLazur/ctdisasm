@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5108
+Routine_C65108:
 C6/5108: 1D D2 1D     ORA $1DD2,X
 C6/510B: FB           XCE
 C6/510C: 1D F9 1E     ORA $1EF9,X

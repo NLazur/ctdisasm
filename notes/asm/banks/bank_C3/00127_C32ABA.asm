@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2ABA
+Routine_C32ABA:
 C3/2ABA: AD 44 B0     LDA $B044
 C3/2ABD: 14 F0        TRB $F0
 C3/2ABF: 01 60        ORA ($60,X)

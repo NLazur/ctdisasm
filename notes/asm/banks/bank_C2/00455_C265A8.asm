@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 65A8
+Routine_C265A8:
 C2/65A8: C9 40        CMP #$40
 C2/65AA: 90 FB        BCC $65A7
 C2/65AC: C9 4F        CMP #$4F

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3BC2
+Routine_C23BC2:
 C2/3BC2: E2 20        SEP #$20
 C2/3BC4: A6 4E        LDX $4E
 C2/3BC6: FE 02 00     INC $0002,X

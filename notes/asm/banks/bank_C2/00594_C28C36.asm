@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8C36
+Routine_C28C36:
 C2/8C36: 8B           PHB
 C2/8C37: 0B           PHD
 C2/8C38: 08           PHP

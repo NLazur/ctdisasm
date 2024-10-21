@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: AF45
+Routine_D0AF45:
 D0/AF45: C0 40 C0     CPY #$C040
 D0/AF48: 80 40        BRA $AF8A
 D0/AF4A: 80 40        BRA $AF8C

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 176C
+Routine_C1176C:
 C1/176C: EE 14 96     INC $9614
 C1/176F: AD 14 96     LDA $9614
 C1/1772: C9 0B        CMP #$0B

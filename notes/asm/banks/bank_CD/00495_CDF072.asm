@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F072
+Routine_CDF072:
 CD/F072: 01 00        ORA ($00,X)
 CD/F074: 01 00        ORA ($00,X)
 CD/F076: 00 3F        BRK $3F

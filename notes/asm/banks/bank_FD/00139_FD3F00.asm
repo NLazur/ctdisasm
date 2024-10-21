@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3F00
+Routine_FD3F00:
 FD/3F00: 83 03        STA $03,S
 FD/3F02: 33 83        AND ($83,S),Y
 FD/3F04: EE FE 32     INC $32FE

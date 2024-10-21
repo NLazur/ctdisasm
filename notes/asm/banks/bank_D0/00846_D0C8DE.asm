@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C8DE
+Routine_D0C8DE:
 D0/C8DE: 27 38        AND [$38]
 D0/C8E0: 0B           PHD
 D0/C8E1: 0C 02 03     TSB $0302

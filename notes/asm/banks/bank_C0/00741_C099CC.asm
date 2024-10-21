@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 99CC
+Routine_C099CC:
 C0/99CC: C9 E0        CMP #$E0
 C0/99CE: 00 B0        BRK $B0
 C0/99D0: CC 80 E3     CPY $E380

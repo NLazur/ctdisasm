@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3657
+Routine_CD3657:
 CD/3657: AA           TAX
 CD/3658: 8D 64 CC     STA $CC64
 CD/365B: 9C 20 00     STZ $0020

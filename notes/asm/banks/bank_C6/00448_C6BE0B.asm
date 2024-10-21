@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BE0B
+Routine_C6BE0B:
 C6/BE0B: 70 30        BVS $BE3D
 C6/BE0D: A0 BC 9B     LDY #$9BBC
 C6/BE10: 2C 2D 2E     BIT $2E2D

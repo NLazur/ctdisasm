@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 767E
+Routine_C1767E:
 C1/767E: A0 03 00     LDY #$0003
 C1/7681: 84 84        STY $84
 C1/7683: 4C 93 76     JMP $7693

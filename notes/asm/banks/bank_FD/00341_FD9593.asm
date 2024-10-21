@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9593
+Routine_FD9593:
 FD/9593: AD 30 D2     LDA $D230
 FD/9596: 02 03        COP $03
 FD/9598: 00 BB        BRK $BB

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 385B
+Routine_C0385B:
 C0/385B: BB           TYX
 C0/385C: E8           INX
 C0/385D: C2 20        REP #$20

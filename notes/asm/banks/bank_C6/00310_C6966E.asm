@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 966E
+Routine_C6966E:
 C6/966E: 10 23        BPL $9693
 C6/9670: 23 E9        AND $E9,S
 C6/9672: 07 07        ORA [$07]

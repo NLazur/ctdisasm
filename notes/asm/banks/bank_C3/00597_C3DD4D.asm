@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DD4D
+Routine_C3DD4D:
 C3/DD4D: A0 1E        LDY #$1E
 C3/DD4F: 18           CLC
 C3/DD50: 37 00        AND [$00],Y

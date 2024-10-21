@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8CCA
+Routine_D08CCA:
 D0/8CCA: B0 10        BCS $8CDC
 D0/8CCC: D0 D0        BNE $8C9E
 D0/8CCE: 48           PHA

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 6917
+Routine_CF6917:
 CF/6917: 77 74        ADC [$74],Y
 CF/6919: 7B           TDC
 CF/691A: 3A           DEC

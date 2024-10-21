@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A947
+Routine_C0A947:
 C0/A947: AD 0A 1D     LDA $1D0A
 C0/A94A: 38           SEC
 C0/A94B: E9 04        SBC #$04

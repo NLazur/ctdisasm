@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1445
+Routine_CD1445:
 CD/1445: 5A           PHY
 CD/1446: 20 09 15     JSR $1509
 CD/1449: 7A           PLY

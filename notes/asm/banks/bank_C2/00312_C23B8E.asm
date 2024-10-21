@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3B8E
+Routine_C23B8E:
 C2/3B8E: A6 4E        LDX $4E
 C2/3B90: 9E 02 00     STZ $0002,X
 C2/3B93: C2 20        REP #$20

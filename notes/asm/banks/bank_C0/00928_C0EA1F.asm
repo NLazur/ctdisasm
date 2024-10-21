@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EA1F
+Routine_C0EA1F:
 C0/EA1F: E2 10        SEP #$10
 C0/EA21: A6 6D        LDX $6D
 C0/EA23: A2 00        LDX #$00

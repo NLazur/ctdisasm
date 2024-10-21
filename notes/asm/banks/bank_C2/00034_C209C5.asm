@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 09C5
+Routine_C209C5:
 C2/09C5: E2 20        SEP #$20
 C2/09C7: 8B           PHB
 C2/09C8: A9 7E        LDA #$7E

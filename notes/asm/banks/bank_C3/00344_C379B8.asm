@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 79B8
+Routine_C379B8:
 C3/79B8: 21 DB        AND ($DB,X)
 C3/79BA: 7B           TDC
 C3/79BB: 68           PLA

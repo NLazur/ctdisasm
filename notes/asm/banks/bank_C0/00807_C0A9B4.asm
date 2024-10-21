@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A9B4
+Routine_C0A9B4:
 C0/A9B4: A8           TAY
 C0/A9B5: EB           XBA
 C0/A9B6: BD 81 0E     LDA $0E81,X

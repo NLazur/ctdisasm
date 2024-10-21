@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7F69
+Routine_C17F69:
 C1/7F69: BB           TYX
 C1/7F6A: 50 D3        BVC $7F3F
 C1/7F6C: 6C 72 6D     JMP ($6D72)

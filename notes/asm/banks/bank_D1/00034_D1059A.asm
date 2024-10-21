@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 059A
+Routine_D1059A:
 D1/059A: C1 20        CMP ($20,X)
 D1/059C: C1 04        CMP ($04,X)
 D1/059E: C1 02        CMP ($02,X)

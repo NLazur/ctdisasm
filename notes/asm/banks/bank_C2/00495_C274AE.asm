@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 74AE
+Routine_C274AE:
 C2/74AE: 29 01        AND #$01
 C2/74B0: 38           SEC
 C2/74B1: 10 52        BPL $7505

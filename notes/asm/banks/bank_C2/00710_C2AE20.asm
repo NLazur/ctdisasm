@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AE20
+Routine_C2AE20:
 C2/AE20: 08           PHP
 C2/AE21: E2 20        SEP #$20
 C2/AE23: D4 54        PEI $54

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5CAF
+Routine_FD5CAF:
 FD/5CAF: 45 F8        EOR $F8
 FD/5CB1: 83 71        STA $71,S
 FD/5CB3: 05 49        ORA $49

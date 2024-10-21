@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F0BD
+Routine_C1F0BD:
 C1/F0BD: A5 1E        LDA $1E
 C1/F0BF: 49 FF        EOR #$FF
 C1/F0C1: 85 1E        STA $1E

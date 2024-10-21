@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0984
+Routine_C60984:
 C6/0984: C0 61 81     CPY #$8161
 C6/0987: 02 02        COP $02
 C6/0989: BE 10 20     LDX $2010,Y

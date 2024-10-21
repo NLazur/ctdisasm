@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: ECDB
+Routine_C2ECDB:
 C2/ECDB: 8B           PHB
 C2/ECDC: 08           PHP
 C2/ECDD: E2 20        SEP #$20

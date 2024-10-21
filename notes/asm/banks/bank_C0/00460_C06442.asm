@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6442
+Routine_C06442:
 C0/6442: C8           INY
 C0/6443: BB           TYX
 C0/6444: AF 00 00 7F  LDA $7F0000

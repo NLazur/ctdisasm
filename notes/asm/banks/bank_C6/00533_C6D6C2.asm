@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D6C2
+Routine_C6D6C2:
 C6/D6C2: 21 10        AND ($10,X)
 C6/D6C4: 9F B0 68 7C  STA $7C68B0,X
 C6/D6C8: 68           PLA

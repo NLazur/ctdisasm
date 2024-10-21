@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B9A1
+Routine_C0B9A1:
 C0/B9A1: A5 C5        LDA $C5
 C0/B9A3: 10 52        BPL $B9F7
 C0/B9A5: BD 04 48     LDA $4804,X

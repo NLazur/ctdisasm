@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 67D2
+Routine_C367D2:
 C3/67D2: A5 83        LDA $83
 C3/67D4: 00 4A        BRK $4A
 C3/67D6: 90 31        BCC $6809

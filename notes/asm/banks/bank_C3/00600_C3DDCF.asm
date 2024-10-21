@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DDCF
+Routine_C3DDCF:
 C3/DDCF: 18           CLC
 C3/DDD0: 1E 18 C4     ASL $C418,X
 C3/DDD3: 1C 1E 18     TRB $181E

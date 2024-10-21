@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2BCF
+Routine_C22BCF:
 C2/2BCF: 8B           PHB
 C2/2BD0: 29 FF 00     AND #$00FF
 C2/2BD3: EB           XBA

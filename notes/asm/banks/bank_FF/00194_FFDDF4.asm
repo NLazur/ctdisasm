@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DDF4
+Routine_FFDDF4:
 FF/DDF4: FE 03 FF     INC $FF03,X
 FF/DDF7: 01 FF        ORA ($FF,X)
 FF/DDF9: 00 FF        BRK $FF

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2DC2
+Routine_FD2DC2:
 FD/2DC2: 7F B8 C7 E8  ADC $E8C7B8,X
 FD/2DC6: 39 30 08     AND $0830,Y
 FD/2DC9: CF 3B C4 A0  CMP $A0C43B

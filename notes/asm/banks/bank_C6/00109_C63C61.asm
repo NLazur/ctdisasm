@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3C61
+Routine_C63C61:
 C6/3C61: 80 6E        BRA $3CD1
 C6/3C63: 80 6F        BRA $3CD4
 C6/3C65: 80 78        BRA $3CDF

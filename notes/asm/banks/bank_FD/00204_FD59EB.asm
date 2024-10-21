@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 59EB
+Routine_FD59EB:
 FD/59EB: 09 0A        ORA #$0A
 FD/59ED: 03 03        ORA $03,S
 FD/59EF: 05 FF        ORA $FF

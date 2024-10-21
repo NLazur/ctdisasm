@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CA52
+Routine_C3CA52:
 C3/CA52: 01 5F        ORA ($5F,X)
 C3/CA54: 11 09        ORA ($09),Y
 C3/CA56: 1A           INC

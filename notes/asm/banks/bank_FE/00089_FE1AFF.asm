@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 1AFF
+Routine_FE1AFF:
 FE/1AFF: 0F 05 30 0B  ORA $0B3005
 FE/1B03: 13 20        ORA ($20,S),Y
 FE/1B05: 23 58        AND $58,S

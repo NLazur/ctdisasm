@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: A8CE
+Routine_FDA8CE:
 FD/A8CE: 7B           TDC
 FD/A8CF: A5 14        LDA $14
 FD/A8D1: 0A           ASL

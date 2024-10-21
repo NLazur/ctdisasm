@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6F79
+Routine_C06F79:
 C0/6F79: 0B           PHD             ;
 C0/6F7A: C2 20        REP #$20
 C0/6F7C: A9 00 21     LDA #$2100      ; set dp to $2100

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C374
+Routine_D0C374:
 D0/C374: 7C 04 7C     JMP ($7C04,X)
 D0/C377: 04 01        TSB $01
 D0/C379: 02 03        COP $03

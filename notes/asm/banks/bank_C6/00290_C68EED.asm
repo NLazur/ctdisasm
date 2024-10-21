@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8EED
+Routine_C68EED:
 C6/8EED: 30 42        BMI $8F31
 C6/8EEF: 32 33        AND ($33)
 C6/8EF1: 33 78        AND ($78,S),Y

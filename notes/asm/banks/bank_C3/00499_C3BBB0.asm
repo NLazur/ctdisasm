@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BBB0
+Routine_C3BBB0:
 C3/BBB0: C6 38        DEC $38
 C3/BBB2: 01 1B        ORA ($1B,X)
 C3/BBB4: 23 FA        AND $FA,S

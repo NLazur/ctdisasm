@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 05B2
+Routine_FE05B2:
 FE/05B2: 10 FF        BPL $05B3
 FE/05B4: 06 85        ASL $85
 FE/05B6: F9 BB 29     SBC $29BB,Y

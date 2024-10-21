@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A7CF
+Routine_C6A7CF:
 C6/A7CF: E6 01        INC $01
 C6/A7D1: 55 54        EOR $54,X
 C6/A7D3: B3 03        LDA ($03,S),Y

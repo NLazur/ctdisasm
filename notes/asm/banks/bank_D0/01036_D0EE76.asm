@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EE76
+Routine_D0EE76:
 D0/EE76: 00 4A        BRK $4A
 D0/EE78: 1C 39 A0     TRB $A039
 D0/EE7B: 49 A0        EOR #$A0

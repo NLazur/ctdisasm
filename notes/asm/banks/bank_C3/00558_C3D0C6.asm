@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D0C6
+Routine_C3D0C6:
 C3/D0C6: 25 2B        AND $2B
 C3/D0C8: 19 C8 14     ORA $14C8,Y
 C3/D0CB: 85 20        STA $20

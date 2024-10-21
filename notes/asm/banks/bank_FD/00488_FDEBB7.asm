@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EBB7
+Routine_FDEBB7:
 FD/EBB7: A2 00 01     LDX #$0100
 FD/EBBA: 8E 04 42     STX $4204
 FD/EBBD: A5 0A        LDA $0A

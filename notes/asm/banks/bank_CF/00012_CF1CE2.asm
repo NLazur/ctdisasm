@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1CE2
+Routine_CF1CE2:
 CF/1CE2: C0 40 80     CPY #$8040
 CF/1CE5: 80 80        BRA $1C67
 CF/1CE7: 80 00        BRA $1CE9

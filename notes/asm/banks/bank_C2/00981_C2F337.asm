@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F337
+Routine_C2F337:
 C2/F337: 8B           PHB
 C2/F338: 08           PHP
 C2/F339: F4 00 00     PEA $0000

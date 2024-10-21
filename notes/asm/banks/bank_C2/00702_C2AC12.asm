@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AC12
+Routine_C2AC12:
 C2/AC12: BC 00 5A     LDY $5A00,X
 C2/AC15: 7B           TDC
 C2/AC16: 94 36        STY $36,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7389
+Routine_C27389:
 C2/7389: 64 08        STZ $08
 C2/738B: A9 C3        LDA #$C3
 C2/738D: 20 F9 71     JSR $71F9

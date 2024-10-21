@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 74A6
+Routine_C074A6:
 C0/74A6: 20 06 75     JSR $7506
 C0/74A9: 20 53 75     JSR $7553
 C0/74AC: AD C9 0B     LDA $0BC9

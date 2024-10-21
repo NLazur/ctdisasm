@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8DC3
+Routine_FD8DC3:
 FD/8DC3: C4 44        CPY $44
 FD/8DC5: E7 E0        SBC [$E0]
 FD/8DC7: BF 00 84 D6  LDA $D68400,X

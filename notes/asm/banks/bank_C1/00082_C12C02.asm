@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2C02
+Routine_C12C02:
 C1/2C02: 9C 72 98     STZ $9872
 C1/2C05: 64 AE        STZ $AE
 C1/2C07: AD 6F 98     LDA $986F

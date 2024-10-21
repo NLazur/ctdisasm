@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A22A
+Routine_C0A22A:
 C0/A22A: A9 00        LDA #$00
 C0/A22C: 80 04        BRA $A232
 C0/A22E: 58           CLI

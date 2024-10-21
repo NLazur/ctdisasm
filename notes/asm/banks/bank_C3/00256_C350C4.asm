@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 50C4
+Routine_C350C4:
 C3/50C4: 01 00        ORA ($00,X)
 C3/50C6: A6 0A        LDX $0A
 C3/50C8: 00 80        BRK $80

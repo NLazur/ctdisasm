@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 90EC
+Routine_FD90EC:
 FD/90EC: 00 DF        BRK $DF
 FD/90EE: 56 00        LSR $00,X
 FD/90F0: E0 B6 00     CPX #$00B6

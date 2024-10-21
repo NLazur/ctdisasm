@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6FFF
+Routine_D06FFF:
 D0/6FFF: C0 40        CPY #$40
 D0/7001: C0 00        CPY #$00
 D0/7003: 80 80        BRA $6F85

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 104E
+Routine_C1104E:
 C1/104E: AD 9D 94     LDA $949D
 C1/1051: C9 73        CMP #$73
 C1/1053: D0 05        BNE $105A

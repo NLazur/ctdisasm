@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EC89
+Routine_CEEC89:
 CE/EC89: AD A3 CA     LDA $CAA3
 CE/EC8C: 10 50        BPL $ECDE
 CE/EC8E: A4 45        LDY $45

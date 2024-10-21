@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 60EB
+Routine_D060EB:
 D0/60EB: 78           SEI
 D0/60EC: 10 F0        BPL $60DE
 D0/60EE: C0 C0 36     CPY #$36C0

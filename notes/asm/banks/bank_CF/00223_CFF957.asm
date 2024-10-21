@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F957
+Routine_CFF957:
 CF/F957: 64 D0        STZ $D0
 CF/F959: 38           SEC
 CF/F95A: A5 CC        LDA $CC

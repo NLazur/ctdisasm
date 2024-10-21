@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 117A
+Routine_FD117A:
 FD/117A: 18           CLC
 FD/117B: 80 38        BRA $11B5
 FD/117D: 80 38        BRA $11B7

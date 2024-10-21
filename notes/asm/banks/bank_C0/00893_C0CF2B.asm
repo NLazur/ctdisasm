@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CF2B
+Routine_C0CF2B:
 C0/CF2B: 85 EE        STA $EE
 C0/CF2D: 20 7A E9     JSR $E97A
 C0/CF30: 90 F7        BCC $CF29

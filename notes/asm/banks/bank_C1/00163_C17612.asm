@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7612
+Routine_C17612:
 C1/7612: A5 80        LDA $80
 C1/7614: 85 D3        STA $D3
 C1/7616: A5 81        LDA $81

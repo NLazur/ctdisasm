@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F0C8
+Routine_FFF0C8:
 FF/F0C8: 38           SEC
 FF/F0C9: 00 64        BRK $64
 FF/F0CB: 1C 23 40     TRB $4023

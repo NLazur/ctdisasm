@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0B52
+Routine_D00B52:
 D0/0B52: 80 80        BRA $0AD4
 D0/0B54: 80 80        BRA $0AD6
 D0/0B56: 80 80        BRA $0AD8

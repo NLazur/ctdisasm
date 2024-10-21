@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1807
+Routine_C21807:
 C2/1807: A0 01 00     LDY #$0001
 C2/180A: B7 58        LDA [$58],Y
 C2/180C: 85 5B        STA $5B

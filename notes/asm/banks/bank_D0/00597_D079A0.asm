@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 79A0
+Routine_D079A0:
 D0/79A0: 0C 3C 1F     TSB $1F3C
 D0/79A3: 3F 1F 1F 1F  AND $1F1F1F,X
 D0/79A7: 1F 00 00 00  ORA $000000,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 57FC
+Routine_C657FC:
 C6/57FC: 12 41        ORA ($41)
 C6/57FE: 12 50        ORA ($50)
 C6/5800: 12 51        ORA ($51)

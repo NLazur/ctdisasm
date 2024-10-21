@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3389
+Routine_D03389:
 D0/3389: C0 80 80     CPY #$8080
 D0/338C: 01 01        ORA ($01,X)
 D0/338E: 00 81        BRK $81

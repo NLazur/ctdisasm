@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C9DE
+Routine_CDC9DE:
 CD/C9DE: 70 09        BVS $C9E9
 CD/C9E0: A8           TAY
 CD/C9E1: 0A           ASL

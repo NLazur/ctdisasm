@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E2EB
+Routine_FEE2EB:
 FE/E2EB: 03 01        ORA $01,S
 FE/E2ED: 28           PLP
 FE/E2EE: 24 21        BIT $21

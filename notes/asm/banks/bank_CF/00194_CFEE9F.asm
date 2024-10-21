@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EE9F
+Routine_CFEE9F:
 CF/EE9F: 38           SEC
 CF/EEA0: A5 C5        LDA $C5
 CF/EEA2: E9 0C        SBC #$0C

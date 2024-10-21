@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4016
+Routine_D04016:
 D0/4016: C0 C0 90     CPY #$90C0
 D0/4019: F0 90        BEQ $3FAB
 D0/401B: F0 A8        BEQ $3FC5

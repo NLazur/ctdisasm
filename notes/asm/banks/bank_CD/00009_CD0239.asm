@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0239
+Routine_CD0239:
 CD/0239: C2 20        REP #$20
 CD/023B: 7B           TDC
 CD/023C: A2 80 00     LDX #$0080

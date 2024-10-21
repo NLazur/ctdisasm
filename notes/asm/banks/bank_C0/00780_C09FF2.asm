@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9FF2
+Routine_C09FF2:
 C0/9FF2: A6 6D        LDX $6D
 C0/9FF4: 82 F2 01     BRL $C0A1E9
 C0/9FF7: F2 9F        SBC ($9F)

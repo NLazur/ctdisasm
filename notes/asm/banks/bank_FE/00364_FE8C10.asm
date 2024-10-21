@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8C10
+Routine_FE8C10:
 FE/8C10: 1D 07 1D     ORA $1D07,X
 FE/8C13: C3 18        CMP $18,S
 FE/8C15: 00 63        BRK $63

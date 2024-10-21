@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3641
+Routine_D13641:
 D1/3641: CA           DEX
 D1/3642: 80 CC        BRA $3610
 D1/3644: 80 CC        BRA $3612

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 90F8
+Routine_C690F8:
 C6/90F8: B0 AC        BCS $90A6
 C6/90FA: AD AE 61     LDA $61AE
 C6/90FD: F8           SED

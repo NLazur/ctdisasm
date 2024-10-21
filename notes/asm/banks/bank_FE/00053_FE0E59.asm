@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0E59
+Routine_FE0E59:
 FE/0E59: 0E 0E 0D     ASL $0D0E
 FE/0E5C: 02 06        COP $06
 FE/0E5E: 41 F8        EOR ($F8,X)

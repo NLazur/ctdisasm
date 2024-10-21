@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2843
+Routine_CD2843:
 CD/2843: BD DA CA     LDA $CADA,X
 CD/2846: 85 47        STA $47
 CD/2848: BD E4 CA     LDA $CAE4,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 46E2
+Routine_C246E2:
 C2/46E2: A6 4E        LDX $4E
 C2/46E4: BD 03 00     LDA $0003,X
 C2/46E7: C9 20 D0     CMP #$D020

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 879B
+Routine_FD879B:
 FD/879B: 39 8B D8     AND $D88B,Y
 FD/879E: 19 1A CE     ORA $CE1A,Y
 FD/87A1: 00 1A        BRK $1A

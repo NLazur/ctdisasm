@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9723
+Routine_C39723:
 C3/9723: 0C 2A 0C     TSB $0C2A
 C3/9726: FB           XCE
 C3/9727: 9C 40 C6     STZ $C640

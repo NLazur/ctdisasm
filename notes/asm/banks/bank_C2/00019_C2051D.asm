@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 051D
+Routine_C2051D:
 C2/051D: A2 30 0B     LDX #$0B30
 C2/0520: C2 20        REP #$20
 C2/0522: BD 00 00     LDA $0000,X

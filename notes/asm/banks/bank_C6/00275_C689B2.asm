@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 89B2
+Routine_C689B2:
 C6/89B2: 31 32        AND ($32),Y
 C6/89B4: 5C 5D 00 10  JMP $10005D
 C6/89B8: 11 86        ORA ($86),Y

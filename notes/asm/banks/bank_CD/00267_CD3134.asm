@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3134
+Routine_CD3134:
 CD/3134: 7B           TDC
 CD/3135: AA           TAX
 CD/3136: 8E 9F CA     STX $CA9F

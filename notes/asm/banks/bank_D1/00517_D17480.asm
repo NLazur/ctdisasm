@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 7480
+Routine_D17480:
 D1/7480: 19 03 00     ORA $0003,Y
 D1/7483: FF 08 01 83  SBC $830108,X
 D1/7487: 0C 88 00     TSB $0088

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: ADD0
+Routine_C2ADD0:
 C2/ADD0: 08           PHP
 C2/ADD1: E2 20        SEP #$20
 C2/ADD3: 20 FC 90     JSR $90FC

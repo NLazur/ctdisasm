@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 7417
+Routine_C37417:
 C3/7417: 49 41        EOR #$41
 C3/7419: 1E 10 4F     ASL $4F10,X
 C3/741C: 13 01        ORA ($01,S),Y

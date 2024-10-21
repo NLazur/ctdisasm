@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: C2FA
+Routine_D1C2FA:
 D1/C2FA: 08           PHP
 D1/C2FB: 00 A0        BRK $A0
 D1/C2FD: A1 08        LDA ($08,X)

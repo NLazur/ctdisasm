@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5FCC
+Routine_C65FCC:
 C6/5FCC: 80 49        BRA $6017
 C6/5FCE: 08           PHP
 C6/5FCF: 43 48        EOR $48,S

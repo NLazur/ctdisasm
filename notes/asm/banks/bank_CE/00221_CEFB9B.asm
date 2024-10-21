@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: FB9B
+Routine_CEFB9B:
 CE/FB9B: BF 84 C9 BD  LDA $BDC984,X
 CE/FB9F: 00 50        BRK $50
 CE/FBA1: 8D BE 50     STA $50BE

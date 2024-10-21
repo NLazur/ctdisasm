@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3CF9
+Routine_FD3CF9:
 FD/3CF9: 5E 40 E8     LSR $E840,X
 FD/3CFC: 0F EC 0F 00  ORA $000FEC
 FD/3D00: FD 0E E8     SBC $E80E,X

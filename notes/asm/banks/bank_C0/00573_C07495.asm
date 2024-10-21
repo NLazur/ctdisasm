@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7495
+Routine_C07495:
 C0/7495: 64 1A        STZ $1A         ; left limit $FF, use bg1 height and width (full map)
 C0/7497: 64 1C        STZ $1C
 C0/7499: AD CB 0B     LDA $0BCB

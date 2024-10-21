@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 84EC
+Routine_CE84EC:
 CE/84EC: 02 0C        COP $0C
 CE/84EE: C2 03        REP #$03
 CE/84F0: 9E A0 01     STZ $01A0,X

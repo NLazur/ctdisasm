@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CD9B
+Routine_C2CD9B:
 C2/CD9B: 08           PHP
 C2/CD9C: C2 30        REP #$30
 C2/CD9E: 20 20 88     JSR $8820

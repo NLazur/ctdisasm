@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2A49
+Routine_D12A49:
 D1/2A49: E0 00 E2     CPX #$E200
 D1/2A4C: 00 00        BRK $00
 D1/2A4E: 10 08        BPL $2A58

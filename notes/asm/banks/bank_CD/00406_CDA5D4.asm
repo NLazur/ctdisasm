@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A5D4
+Routine_CDA5D4:
 CD/A5D4: 36 00        ROL $00,X
 CD/A5D6: 6C 03 02     JMP ($0203)
 CD/A5D9: 24 03        BIT $03

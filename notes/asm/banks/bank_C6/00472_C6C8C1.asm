@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C8C1
+Routine_C6C8C1:
 C6/C8C1: F8           SED
 C6/C8C2: AC F9 14     LDY $14F9
 C6/C8C5: 02 14        COP $14

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 2ED7
+Routine_CF2ED7:
 CF/2ED7: E0 60 E0     CPX #$E060
 CF/2EDA: C0 C0 C0     CPY #$C0C0
 CF/2EDD: C0 C0 C0     CPY #$C0C0

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 699F
+Routine_CE699F:
 CE/699F: 01 60        ORA ($60,X)
 CE/69A1: 02 23        COP $23
 CE/69A3: 01 1B        ORA ($1B,X)

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2BFB
+Routine_C22BFB:
 C2/2BFB: 0B           PHD
 C2/2BFC: A9 21 EB     LDA #$EB21
 C2/2BFF: A9 00 5B     LDA #$5B00

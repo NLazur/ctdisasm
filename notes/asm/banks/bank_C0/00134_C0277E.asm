@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 277E
+Routine_C0277E:
 C0/277E: 89 10        BIT #$10
 C0/2780: D0 0D        BNE $278F
 C0/2782: 29 0C        AND #$0C

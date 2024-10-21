@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EBF3
+Routine_D0EBF3:
 D0/EBF3: 01 C0        ORA ($C0,X)
 D0/EBF5: 00 AD        BRK $AD
 D0/EBF7: 0E AE 0E     ASL $0EAE

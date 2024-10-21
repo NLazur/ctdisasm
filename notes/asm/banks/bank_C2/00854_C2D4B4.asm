@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D4B4
+Routine_C2D4B4:
 C2/D4B4: E0 E4 E8     CPX #$E8E4
 C2/D4B7: EC F0 F4     CPX $F4F0
 C2/D4BA: F8           SED

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E797
+Routine_C6E797:
 C6/E797: C2 20        REP #$20
 C6/E799: A4 4E        LDY $4E
 C6/E79B: B9 14 00     LDA $0014,Y

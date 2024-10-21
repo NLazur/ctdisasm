@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: A53A
+Routine_D0A53A:
 D0/A53A: EC 18 E6     CPX $E618
 D0/A53D: 1C F6 8C     TRB $8CF6
 D0/A540: 00 00        BRK $00

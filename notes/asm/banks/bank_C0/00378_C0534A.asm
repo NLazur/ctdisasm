@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 534A
+Routine_C0534A:
 C0/534A: A6 6D        LDX $6D
 C0/534C: BD 80 1A     LDA $1A80,X
 C0/534F: F0 11        BEQ $5362

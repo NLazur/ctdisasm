@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F95B
+Routine_CCF95B:
 CC/F95B: AD 70 AD     LDA $AD70
 CC/F95E: 77 AD        ADC [$AD],Y
 CC/F960: 66 AD        ROR $AD

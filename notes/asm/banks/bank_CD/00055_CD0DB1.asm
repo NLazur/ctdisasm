@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0DB1
+Routine_CD0DB1:
 CD/0DB1: 20 9E 03     JSR $039E
 CD/0DB4: 20 7D 3E     JSR $3E7D
 CD/0DB7: AF 41 21 00  LDA $002141

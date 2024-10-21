@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: B28B
+Routine_FFB28B:
 FF/B28B: 08           PHP
 FF/B28C: 69 08        ADC #$08
 FF/B28E: 48           PHA

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: DEB2
+Routine_D0DEB2:
 D0/DEB2: 30 30        BMI $DEE4
 D0/DEB4: 10 90        BPL $DE46
 D0/DEB6: 80 40        BRA $DEF8

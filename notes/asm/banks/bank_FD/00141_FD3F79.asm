@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3F79
+Routine_FD3F79:
 FD/3F79: 3C 00 60     BIT $6000,X
 FD/3F7C: 7C 60 EC     JMP ($EC60,X)
 FD/3F7F: 20 78 A0     JSR $A078

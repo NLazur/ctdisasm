@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 20A2
+Routine_CC20A2:
 CC/20A2: 03 03        ORA $03,S
 CC/20A4: 03 1E        ORA $1E,S
 CC/20A6: 63 40        ADC $40,S

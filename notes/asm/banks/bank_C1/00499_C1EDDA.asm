@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EDDA
+Routine_C1EDDA:
 C1/EDDA: AE F6 B1     LDX $B1F6
 C1/EDDD: BD 47 5E     LDA $5E47,X
 C1/EDE0: 25 1C        AND $1C

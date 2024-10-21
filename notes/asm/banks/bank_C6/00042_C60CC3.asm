@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0CC3
+Routine_C60CC3:
 C6/0CC3: DA           PHX
 C6/0CC4: 04 DD        TSB $DD
 C6/0CC6: 04 8A        TSB $8A

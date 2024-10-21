@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 84FE
+Routine_C384FE:
 C3/84FE: BF 20 DF 12  LDA $12DF20,X
 C3/8502: ED 30 00     SBC $0030
 C3/8505: CF 0E 71 38  CMP $38710E

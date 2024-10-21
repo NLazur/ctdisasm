@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 2D74
+Routine_CE2D74:
 CE/2D74: 01 23        ORA ($23,X)
 CE/2D76: 02 70        COP $70
 CE/2D78: 23 03        AND $03,S

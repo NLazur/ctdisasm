@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 99AD
+Routine_CE99AD:
 CE/99AD: F3 BA        SBC ($BA,S),Y
 CE/99AF: 00 01        BRK $01
 CE/99B1: F3 CD        SBC ($CD,S),Y

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 59D9
+Routine_C059D9:
 C0/59D9: 0B           PHD
 C0/59DA: C2 20        REP #$20
 C0/59DC: A9 00 10     LDA #$1000

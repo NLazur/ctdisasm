@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1D99
+Routine_D11D99:
 D1/1D99: 00 40        BRK $40
 D1/1D9B: 73 00        ADC ($00,S),Y
 D1/1D9D: 80 12        BRA $1DB1

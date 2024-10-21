@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3757
+Routine_C03757:
 C0/3757: A5 17        LDA $17
 C0/3759: 89 40        BIT #$40
 C0/375B: D0 20        BNE $377D

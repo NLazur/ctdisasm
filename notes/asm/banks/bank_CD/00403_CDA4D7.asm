@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A4D7
+Routine_CDA4D7:
 CD/A4D7: 0A           ASL
 CD/A4D8: 81 1D        STA ($1D,X)
 CD/A4DA: 82 1C 34     BRL $CDD8F9

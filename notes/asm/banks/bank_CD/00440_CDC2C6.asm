@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C2C6
+Routine_CDC2C6:
 CD/C2C6: 00 73        BRK $73
 CD/C2C8: 03 1B        ORA $1B,S
 CD/C2CA: 0C 24 01     TSB $0124

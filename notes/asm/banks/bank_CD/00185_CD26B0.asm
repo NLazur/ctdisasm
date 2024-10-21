@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 26B0
+Routine_CD26B0:
 CD/26B0: 00 00        BRK $00
 CD/26B2: 2A           ROL
 CD/26B3: 00 54        BRK $54

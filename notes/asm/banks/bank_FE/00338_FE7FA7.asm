@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 7FA7
+Routine_FE7FA7:
 FE/7FA7: 14 1F        TRB $1F
 FE/7FA9: 14 74        TRB $74
 FE/7FAB: 24 A3        BIT $A3

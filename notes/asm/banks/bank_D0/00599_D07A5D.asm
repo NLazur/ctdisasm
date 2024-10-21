@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 7A5D
+Routine_D07A5D:
 D0/7A5D: 80 80        BRA $79DF
 D0/7A5F: 00 00        BRK $00
 D0/7A61: 00 00        BRK $00

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: C6F7
+Routine_FFC6F7:
 FF/C6F7: 41 01        EOR ($01,X)
 FF/C6F9: 42 43        WDM $43
 FF/C6FB: 01 01        ORA ($01,X)

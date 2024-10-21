@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: A173
+Routine_C3A173:
 C3/A173: 00 8C        BRK $8C
 C3/A175: 7F 0B 00 04  ADC $04000B,X
 C3/A179: 80 8C        BRA $A107

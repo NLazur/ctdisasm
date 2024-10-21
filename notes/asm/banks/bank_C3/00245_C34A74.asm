@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4A74
+Routine_C34A74:
 C3/4A74: 10 E2        BPL $4A58
 C3/4A76: 20 60 DA     JSR $DA60
 C3/4A79: 7D 0C E2     ADC $E20C,X

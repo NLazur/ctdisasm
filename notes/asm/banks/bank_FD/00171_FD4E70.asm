@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4E70
+Routine_FD4E70:
 FD/4E70: 0E 00 C5     ASL $C500
 FD/4E73: D3 30        CMP ($30,S),Y
 FD/4E75: F2 51        SBC ($51)

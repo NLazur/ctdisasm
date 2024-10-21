@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5C39
+Routine_C65C39:
 C6/5C39: 88           DEY
 C6/5C3A: 6A           ROR
 C6/5C3B: EC 0B AF     CPX $AF0B

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: FA43
+Routine_CFFA43:
 CF/FA43: 38           SEC
 CF/FA44: AD 4A AC     LDA $AC4A
 CF/FA47: ED 4C AC     SBC $AC4C

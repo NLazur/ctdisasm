@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5620
+Routine_C05620:
 C0/5620: BD 80 16     LDA $1680,X
 C0/5623: C9 FF        CMP #$FF
 C0/5625: F0 06        BEQ $562D

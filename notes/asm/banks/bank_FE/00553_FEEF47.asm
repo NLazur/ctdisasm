@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EF47
+Routine_FEEF47:
 FE/EF47: C9 40 48     CMP #$4840
 FE/EF4A: 8C 88 34     STY $3488
 FE/EF4D: 90 45        BCC $EF94

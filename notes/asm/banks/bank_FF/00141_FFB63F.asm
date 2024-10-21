@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: B63F
+Routine_FFB63F:
 FF/B63F: 33 80        AND ($80,S),Y
 FF/B641: 01 00        ORA ($00,X)
 FF/B643: 00 60        BRK $60

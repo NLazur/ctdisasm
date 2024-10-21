@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AA7E
+Routine_C0AA7E:
 C0/AA7E: BD 00 19     LDA $1900,X
 C0/AA81: 10 17        BPL $AA9A
 C0/AA83: 49 FF        EOR #$FF

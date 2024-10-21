@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0F8F
+Routine_CD0F8F:
 CD/0F8F: A9 7C        LDA #$7C
 CD/0F91: 8D 87 BC     STA $BC87
 CD/0F94: A9 49        LDA #$49

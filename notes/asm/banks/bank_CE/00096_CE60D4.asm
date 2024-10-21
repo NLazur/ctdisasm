@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 60D4
+Routine_CE60D4:
 CE/60D4: 04 1B        TSB $1B
 CE/60D6: 10 24        BPL $60FC
 CE/60D8: 03 71        ORA $71,S

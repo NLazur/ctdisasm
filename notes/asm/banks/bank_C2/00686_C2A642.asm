@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A642
+Routine_C2A642:
 C2/A642: 3D 3E 36     AND $363E,X
 C2/A645: 38           SEC
 C2/A646: 3B           TSC

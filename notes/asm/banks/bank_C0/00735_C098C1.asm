@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 98C1
+Routine_C098C1:
 C0/98C1: A5 75        LDA $75
 C0/98C3: 89 01        BIT #$01
 C0/98C5: F0 0C        BEQ $98D3

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FF3E
+Routine_FFFF3E:
 FF/FF3E: 08           PHP
 FF/FF3F: E2 30        SEP #$30
 FF/FF41: AD 17 18     LDA $1817

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EAC7
+Routine_FFEAC7:
 FF/EAC7: 30 38        BMI $EB01
 FF/EAC9: F8           SED
 FF/EACA: 0C 03 03     TSB $0303

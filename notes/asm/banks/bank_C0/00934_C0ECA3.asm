@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: ECA3
+Routine_C0ECA3:
 C0/ECA3: A9 00        LDA #$00
 C0/ECA5: 8D 02 21     STA $2102
 C0/ECA8: 8D 03 21     STA $2103

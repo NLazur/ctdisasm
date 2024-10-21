@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 27EB
+Routine_C027EB:
 C0/27EB: E8           INX
 C0/27EC: 8E E1 0B     STX $0BE1
 C0/27EF: AD E3 0B     LDA $0BE3

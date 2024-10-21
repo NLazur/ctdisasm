@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 529B
+Routine_D0529B:
 D0/529B: C0 40        CPY #$40
 D0/529D: C0 F0        CPY #$F0
 D0/529F: F0 3B        BEQ $52DC

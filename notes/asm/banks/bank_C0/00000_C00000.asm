@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0000
+Routine_C00000:
 C0/0000: 80 5B        BRA $005D
 C0/0002: 82 3C 2C     BRL $C02C41
 C0/0005: 82 F7 0A     BRL $C00AFF

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8FB8
+Routine_C08FB8:
 C0/8FB8: C2 20        REP #$20
 C0/8FBA: 64 30        STZ $30
 C0/8FBC: E2 20        SEP #$20

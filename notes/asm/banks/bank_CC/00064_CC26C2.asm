@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 26C2
+Routine_CC26C2:
 CC/26C2: 50 6E        BVC $2732
 CC/26C4: 48           PHA
 CC/26C5: 71 4A        ADC ($4A),Y

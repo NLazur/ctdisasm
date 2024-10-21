@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 2B8A
+Routine_CE2B8A:
 CE/2B8A: 00 0D        BRK $0D
 CE/2B8C: A8           TAY
 CE/2B8D: 05 85        ORA $85

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 432C
+Routine_C3432C:
 C3/432C: 01 9C        ORA ($9C,X)
 C3/432E: 15 A5        ORA $A5,X
 C3/4330: 80 C9        BRA $42FB

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3292
+Routine_C63292:
 C6/3292: 80 00        BRA $3294
 C6/3294: 02 70        COP $70
 C6/3296: 00 01        BRK $01

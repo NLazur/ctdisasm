@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F1EF
+Routine_C1F1EF:
 C1/F1EF: 7B           TDC
 C1/F1F0: A5 1C        LDA $1C
 C1/F1F2: C2 20        REP #$20

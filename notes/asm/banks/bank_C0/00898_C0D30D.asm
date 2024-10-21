@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: D30D
+Routine_C0D30D:
 C0/D30D: C2 20        REP #$20
 C0/D30F: BD 80 0D     LDA $0D80,X
 C0/D312: 18           CLC

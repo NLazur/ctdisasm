@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1B17
+Routine_CF1B17:
 CF/1B17: 68           PLA
 CF/1B18: F0 94        BEQ $1AAE
 CF/1B1A: F8           SED

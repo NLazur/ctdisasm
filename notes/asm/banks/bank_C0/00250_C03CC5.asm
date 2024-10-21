@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3CC5
+Routine_C03CC5:
 C0/3CC5: BB           TYX
 C0/3CC6: AD 43 21     LDA $2143
 C0/3CC9: 29 0F        AND #$0F

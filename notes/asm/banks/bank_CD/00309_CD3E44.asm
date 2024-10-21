@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3E44
+Routine_CD3E44:
 CD/3E44: AD 02 CD     LDA $CD02
 CD/3E47: F0 2B        BEQ $3E74
 CD/3E49: A9 F5        LDA #$F5

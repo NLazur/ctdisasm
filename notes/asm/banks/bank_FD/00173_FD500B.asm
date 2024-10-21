@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 500B
+Routine_FD500B:
 FD/500B: FB           XCE
 FD/500C: 04 00        TSB $00
 FD/500E: 1E 00 15     ASL $1500,X

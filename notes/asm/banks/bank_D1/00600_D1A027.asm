@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: A027
+Routine_D1A027:
 D1/A027: FF 00 12 12  SBC $121200,X
 D1/A02B: 83 21        STA $21,S
 D1/A02D: 7F 84 98 30  ADC $309884,X

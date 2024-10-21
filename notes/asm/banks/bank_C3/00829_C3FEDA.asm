@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FEDA
+Routine_C3FEDA:
 C3/FEDA: D0 F0        BNE $FECC
 C3/FEDC: E4 00        CPX $00
 C3/FEDE: E0 F0        CPX #$F0

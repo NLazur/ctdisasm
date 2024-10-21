@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0EBD
+Routine_CD0EBD:
 CD/0EBD: E0 88 00     CPX #$0088
 CD/0EC0: D0 1B        BNE $0EDD
 CD/0EC2: AD 18 A0     LDA $A018

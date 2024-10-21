@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 31B7
+Routine_CD31B7:
 CD/31B7: E2 10        SEP #$10
 CD/31B9: 85 49        STA $49
 CD/31BB: AA           TAX

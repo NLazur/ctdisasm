@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 9642
+Routine_FF9642:
 FF/9642: 7E 7C 7E     ROR $7E7C,X
 FF/9645: 44 E6 B4     MVP $E6,$B4
 FF/9648: B4 18        LDY $18,X

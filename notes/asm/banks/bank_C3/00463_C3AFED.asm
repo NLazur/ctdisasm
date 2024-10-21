@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: AFED
+Routine_C3AFED:
 C3/AFED: FF FF 2F 00  SBC $002FFF,X
 C3/AFF1: 20 00 0F     JSR $0F00
 C3/AFF4: 03 50        ORA $50,S

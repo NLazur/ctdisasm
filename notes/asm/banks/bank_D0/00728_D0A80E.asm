@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: A80E
+Routine_D0A80E:
 D0/A80E: 11 3E        ORA ($3E),Y
 D0/A810: 1F 02 0F 10  ORA $100F02,X
 D0/A814: 03 01        ORA $01,S

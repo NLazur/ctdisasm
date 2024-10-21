@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: CB6B
+Routine_CFCB6B:
 CF/CB6B: 34 6D        BIT $6D,X
 CF/CB6D: 34 6F        BIT $6F,X
 CF/CB6F: 34 71        BIT $71,X

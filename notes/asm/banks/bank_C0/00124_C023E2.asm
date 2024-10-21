@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 23E2
+Routine_C023E2:
 C0/23E2: 64 39        STZ $39
 C0/23E4: A9 00        LDA #$00
 C0/23E6: 8F 22 15 7F  STA $7F1522

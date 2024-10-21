@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 341B
+Routine_D1341B:
 D1/341B: 41 2C        EOR ($2C,X)
 D1/341D: 41 2A        EOR ($2A,X)
 D1/341F: 41 28        EOR ($28,X)

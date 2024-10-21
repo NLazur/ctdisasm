@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5DC4
+Routine_C25DC4:
 C2/5DC4: C2 20        REP #$20
 C2/5DC6: A5 35        LDA $35
 C2/5DC8: 0A           ASL

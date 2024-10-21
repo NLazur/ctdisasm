@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 707C
+Routine_FF707C:
 FF/707C: 36 EF        ROL $EF,X
 FF/707E: A4 BA        LDY $BA
 FF/7080: CB           WAI

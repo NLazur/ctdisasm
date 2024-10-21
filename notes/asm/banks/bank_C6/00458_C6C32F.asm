@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C32F
+Routine_C6C32F:
 C6/C32F: 4F B6 C0 F8  EOR $F8C0B6
 C6/C333: FF 02 F8 61  SBC $61F802,X
 C6/C337: 2E 0F 8F     ROL $8F0F

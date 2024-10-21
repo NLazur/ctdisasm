@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3570
+Routine_C03570:
 C0/3570: A5 2D        LDA $2D
 C0/3572: D0 06        BNE $357A
 C0/3574: A2 E0 7F     LDX #$7FE0

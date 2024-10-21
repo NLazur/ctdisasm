@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 01E7
+Routine_C601E7:
 C6/01E7: 10 00        BPL $01E9
 C6/01E9: B0 C0        BCS $01AB
 C6/01EB: 3E 9F 02     ROL $029F,X

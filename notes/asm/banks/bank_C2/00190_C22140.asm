@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2140
+Routine_C22140:
 C2/2140: 9D 0A 00     STA $000A,X
 C2/2143: FE 02 00     INC $0002,X
 C2/2146: A5 1D        LDA $1D

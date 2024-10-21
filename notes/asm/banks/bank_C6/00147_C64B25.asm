@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4B25
+Routine_C64B25:
 C6/4B25: E8           INX
 C6/4B26: B4 74        LDY $74,X
 C6/4B28: 32 B5        AND ($B5)

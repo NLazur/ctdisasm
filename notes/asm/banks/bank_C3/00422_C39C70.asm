@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9C70
+Routine_C39C70:
 C3/9C70: 0D 10 CD     ORA $CD10
 C3/9C73: 50 02        BVC $9C77
 C3/9C75: B0 20        BCS $9C97

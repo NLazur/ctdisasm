@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6DCF
+Routine_C06DCF:
 C0/6DCF: A6 FE        LDX $FE         ; load map bg3 graphics
 C0/6DD1: BF 02 00 F6  LDA $F60002,X
 C0/6DD5: C9 FF        CMP #$FF

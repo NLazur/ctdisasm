@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 31A8
+Routine_C231A8:
 C2/31A8: 28           PLP
 C2/31A9: 01 38        ORA ($38,X)
 C2/31AB: 12 05        ORA ($05)

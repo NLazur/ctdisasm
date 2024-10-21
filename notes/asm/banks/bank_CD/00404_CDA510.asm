@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A510
+Routine_CDA510:
 CD/A510: 0C 76 0A     TSB $0A76
 CD/A513: 0C 0D 12     TSB $120D
 CD/A516: 0C 1B 0C     TSB $0C1B

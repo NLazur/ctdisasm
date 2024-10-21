@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: FA9C
+Routine_FDFA9C:
 FD/FA9C: 75 F6        ADC $F6,X
 FD/FA9E: 00 00        BRK $00
 FD/FAA0: 00 00        BRK $00

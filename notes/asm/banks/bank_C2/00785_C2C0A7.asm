@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C0A7
+Routine_C2C0A7:
 C2/C0A7: AD 1D 0D     LDA $0D1D
 C2/C0AA: 10 0C        BPL $C0B8
 C2/C0AC: A9 0A        LDA #$0A

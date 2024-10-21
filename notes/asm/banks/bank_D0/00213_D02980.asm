@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2980
+Routine_D02980:
 D0/2980: D0 30        BNE $29B2
 D0/2982: D0 30        BNE $29B4
 D0/2984: D0 30        BNE $29B6

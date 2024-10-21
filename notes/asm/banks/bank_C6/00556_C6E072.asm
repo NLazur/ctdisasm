@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E072
+Routine_C6E072:
 C6/E072: E2 20        SEP #$20
 C6/E074: A9 F0        LDA #$F0
 C6/E076: 8F 35 8A 7E  STA $7E8A35

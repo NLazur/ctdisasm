@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: F8C0
+Routine_CEF8C0:
 CE/F8C0: 5D C1 53     EOR $53C1,X
 CE/F8C3: 5D C1 00     EOR $00C1,X
 CE/F8C6: 50 85        BVC $F84D

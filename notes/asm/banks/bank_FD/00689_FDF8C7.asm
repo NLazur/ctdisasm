@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F8C7
+Routine_FDF8C7:
 FD/F8C7: 00 67        BRK $67
 FD/F8C9: 80 67        BRA $F932
 FD/F8CB: 00 68        BRK $68

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C770
+Routine_C6C770:
 C6/C770: 98           TYA
 C6/C771: E0 50 51     CPX #$5150
 C6/C774: 52 53        EOR ($53)

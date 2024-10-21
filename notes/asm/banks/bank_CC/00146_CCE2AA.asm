@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E2AA
+Routine_CCE2AA:
 CC/E2AA: 8F 16 21 00  STA $002116
 CC/E2AE: 7B           TDC
 CC/E2AF: 8F 17 21 00  STA $002117

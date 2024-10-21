@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4021
+Routine_C14021:
 C1/4021: A6 9C        LDX $9C
 C1/4023: BD 0F 1D     LDA $1D0F,X
 C1/4026: 9D AF 98     STA $98AF,X

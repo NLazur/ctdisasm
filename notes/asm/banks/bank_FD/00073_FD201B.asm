@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 201B
+Routine_FD201B:
 FD/201B: 0F 00 0B 06  ORA $060B00
 FD/201F: 0B           PHD
 FD/2020: 36 04        ROL $04,X

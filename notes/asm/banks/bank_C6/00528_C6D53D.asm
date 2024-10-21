@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D53D
+Routine_C6D53D:
 C6/D53D: 19 01 A8     ORA $A801,Y
 C6/D540: 00 00        BRK $00
 C6/D542: 22 01 08 11  JSR $110801

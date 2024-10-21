@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2163
+Routine_C12163:
 C1/2163: A9 04        LDA #$04
 C1/2165: 85 80        STA $80
 C1/2167: 80 D1        BRA $213A

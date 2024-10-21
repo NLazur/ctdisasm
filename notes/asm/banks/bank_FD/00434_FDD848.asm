@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: D848
+Routine_FDD848:
 FD/D848: AF 27 01 00  LDA $000127
 FD/D84C: 8F 04 42 00  STA $004204
 FD/D850: A9 00        LDA #$00

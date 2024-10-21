@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5605
+Routine_C25605:
 C2/5605: BD 24 00     LDA $0024,X
 C2/5608: 89 01 00     BIT #$0001
 C2/560B: F0 0E        BEQ $561B

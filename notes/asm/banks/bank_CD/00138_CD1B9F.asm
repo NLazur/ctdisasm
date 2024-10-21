@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1B9F
+Routine_CD1B9F:
 CD/1B9F: A9 6F        LDA #$6F
 CD/1BA1: 38           SEC
 CD/1BA2: ED 26 1D     SBC $1D26

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 31F7
+Routine_C631F7:
 C6/31F7: C8           INY
 C6/31F8: 00 50        BRK $50
 C6/31FA: 08           PHP

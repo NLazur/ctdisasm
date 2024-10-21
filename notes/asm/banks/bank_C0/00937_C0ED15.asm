@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: ED15
+Routine_C0ED15:
 C0/ED15: C2 20        REP #$20
 C0/ED17: A9 00 01     LDA #$0100
 C0/ED1A: 5B           TCD

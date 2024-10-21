@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FC2F
+Routine_C2FC2F:
 C2/FC2F: 04 00        TSB $00
 C2/FC31: 6A           ROR
 C2/FC32: 00 52        BRK $52

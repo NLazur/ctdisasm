@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B992
+Routine_C3B992:
 C3/B992: 20 E0 05     JSR $05E0
 C3/B995: 62 0B 08     PER $C3C1A3
 C3/B998: 07 F9        ORA [$F9]

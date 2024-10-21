@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EE02
+Routine_CFEE02:
 CF/EE02: 38           SEC
 CF/EE03: A5 C5        LDA $C5
 CF/EE05: E9 0C        SBC #$0C

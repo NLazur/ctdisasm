@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E2C0
+Routine_FFE2C0:
 FF/E2C0: 78           SEI
 FF/E2C1: 70 E4        BVS $E2A7
 FF/E2C3: 38           SEC

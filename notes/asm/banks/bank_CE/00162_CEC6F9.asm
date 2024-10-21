@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: C6F9
+Routine_CEC6F9:
 CE/C6F9: F8           SED
 CE/C6FA: E0 06        CPX #$06
 CE/C6FC: 01 F8        ORA ($F8,X)

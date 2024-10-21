@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F567
+Routine_FFF567:
 FF/F567: B1 A9        LDA ($A9),Y
 FF/F569: 7F 0C 54 7E  ADC $7E540C,X
 FF/F56D: 7E A4 51     ROR $51A4,X

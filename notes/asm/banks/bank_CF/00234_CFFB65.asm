@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: FB65
+Routine_CFFB65:
 CF/FB65: 08           PHP
 CF/FB66: C2 30        REP #$30
 CF/FB68: 8B           PHB

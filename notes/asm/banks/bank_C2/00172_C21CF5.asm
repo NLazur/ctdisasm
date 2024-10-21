@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1CF5
+Routine_C21CF5:
 C2/1CF5: C2 20        REP #$20
 C2/1CF7: BD 02 00     LDA $0002,X
 C2/1CFA: 29 FF 00     AND #$00FF

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F365
+Routine_CCF365:
 CC/F365: A5 AD        LDA $AD
 CC/F367: 85 77        STA $77
 CC/F369: 8F 02 42 00  STA $004202

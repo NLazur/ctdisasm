@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F0A3
+Routine_C3F0A3:
 C3/F0A3: F3 05        SBC ($05,S),Y
 C3/F0A5: 04 70        TSB $70
 C3/F0A7: F3 05        SBC ($05,S),Y

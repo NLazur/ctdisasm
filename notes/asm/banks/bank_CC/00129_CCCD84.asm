@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: CD84
+Routine_CCCD84:
 CC/CD84: DD 80 DD     CMP $DD80,X
 CC/CD87: 8E DD 9C     STX $9CDD
 CC/CD8A: DD AA DD     CMP $DDAA,X

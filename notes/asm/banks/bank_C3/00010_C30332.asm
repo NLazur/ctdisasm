@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0332
+Routine_C30332:
 C3/0332: 18           CLC
 C3/0333: 65 23        ADC $23
 C3/0335: C5 31        CMP $31

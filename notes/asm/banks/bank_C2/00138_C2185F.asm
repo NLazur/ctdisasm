@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 185F
+Routine_C2185F:
 C2/185F: A6 4E        LDX $4E
 C2/1861: BD 05 00     LDA $0005,X
 C2/1864: 3A           DEC

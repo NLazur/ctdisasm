@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: BF09
+Routine_CDBF09:
 CD/BF09: 10 70        BPL $BF7B
 CD/BF0B: 02 00        COP $00
 CD/BF0D: 09 85 40     ORA #$4085

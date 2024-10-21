@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2986
+Routine_C12986:
 C1/2986: AD 6F 98     LDA $986F
 C1/2989: AA           TAX
 C1/298A: AD 70 98     LDA $9870

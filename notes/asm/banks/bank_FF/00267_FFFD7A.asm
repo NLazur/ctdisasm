@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FD7A
+Routine_FFFD7A:
 FF/FD7A: E2 30        SEP #$30
 FF/FD7C: F4 00 00     PEA $0000
 FF/FD7F: AB           PLB

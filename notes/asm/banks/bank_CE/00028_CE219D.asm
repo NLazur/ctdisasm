@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 219D
+Routine_CE219D:
 CE/219D: 02 23        COP $23
 CE/219F: 01 03        ORA ($03,X)
 CE/21A1: 07 36        ORA [$36]

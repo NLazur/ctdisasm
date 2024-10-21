@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 394E
+Routine_C0394E:
 C0/394E: BB           TYX
 C0/394F: E8           INX
 C0/3950: BF 01 20 7F  LDA $7F2001,X

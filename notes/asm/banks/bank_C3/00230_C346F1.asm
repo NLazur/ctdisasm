@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 46F1
+Routine_C346F1:
 C3/46F1: F0 86        BEQ $4679
 C3/46F3: 72 FD        ADC ($FD)
 C3/46F5: 8D 71 8A     STA $8A71

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 1C55
+Routine_C11C55:
 C1/1C55: AE 79 96     LDX $9679
 C1/1C58: 86 88        STX $88
 C1/1C5A: 9E 22 99     STZ $9922,X

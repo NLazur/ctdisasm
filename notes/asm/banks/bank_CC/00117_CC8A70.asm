@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 8A70
+Routine_CC8A70:
 CC/8A70: 02 00        COP $00
 CC/8A72: 00 00        BRK $00
 CC/8A74: 00 00        BRK $00

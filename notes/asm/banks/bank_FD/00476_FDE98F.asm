@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E98F
+Routine_FDE98F:
 FD/E98F: B9 22 05     LDA $0522,Y
 FD/E992: A8           TAY
 FD/E993: C2 20        REP #$20

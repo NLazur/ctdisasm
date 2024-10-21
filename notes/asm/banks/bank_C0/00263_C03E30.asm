@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3E30
+Routine_C03E30:
 C0/3E30: AD 00 1D     LDA $1D00
 C0/3E33: F0 0C        BEQ $3E41
 C0/3E35: 3A           DEC

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: CBFB
+Routine_FECBFB:
 FE/CBFB: F0 5E        BEQ $CC5B
 FE/CBFD: 54 40 30     MVN $40,$30
 FE/CC00: 55 8C        EOR $8C,X

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: DEC9
+Routine_CDDEC9:
 CD/DEC9: 03 01        ORA $01,S
 CD/DECB: 35 00        AND $00,X
 CD/DECD: 73 00        ADC ($00,S),Y

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: BB77
+Routine_FEBB77:
 FE/BB77: 5A           PHY
 FE/BB78: 08           PHP
 FE/BB79: 08           PHP

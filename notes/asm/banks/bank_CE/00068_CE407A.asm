@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 407A
+Routine_CE407A:
 CE/407A: FF 40 21 41  SBC $412140,X
 CE/407E: 41 41        EOR ($41,X)
 CE/4080: 68           PLA

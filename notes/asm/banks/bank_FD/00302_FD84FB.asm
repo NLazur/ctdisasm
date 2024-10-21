@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 84FB
+Routine_FD84FB:
 FD/84FB: 00 FE        BRK $FE
 FD/84FD: 01 F9        ORA ($F9,X)
 FD/84FF: 06 00        ASL $00

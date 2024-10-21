@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A9D5
+Routine_C6A9D5:
 C6/A9D5: 61 13        ADC ($13,X)
 C6/A9D7: 33 31        AND ($31,S),Y
 C6/A9D9: 12 C1        ORA ($C1)

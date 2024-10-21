@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 504F
+Routine_CE504F:
 CE/504F: 00 60        BRK $60
 CE/5051: 05 33        ORA $33
 CE/5053: 0A           ASL

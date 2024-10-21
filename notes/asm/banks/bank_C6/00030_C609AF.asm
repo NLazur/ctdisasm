@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 09AF
+Routine_C609AF:
 C6/09AF: B1 D8        LDA ($D8),Y
 C6/09B1: 11 D8        ORA ($D8),Y
 C6/09B3: 01 FA        ORA ($FA,X)

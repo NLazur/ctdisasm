@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 56E8
+Routine_CC56E8:
 CC/56E8: 6D 30 00     ADC $0030
 CC/56EB: FF 00 00 00  SBC $000000,X
 CC/56EF: 0A           ASL

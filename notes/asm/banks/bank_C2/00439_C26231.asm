@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6231
+Routine_C26231:
 C2/6231: 64 6B        STZ $6B
 C2/6233: 38           SEC
 C2/6234: A5 68        LDA $68

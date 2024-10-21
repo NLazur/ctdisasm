@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1DF0
+Routine_D01DF0:
 D0/1DF0: 90 00        BCC $1DF2
 D0/1DF2: D0 40        BNE $1E34
 D0/1DF4: A0 40        LDY #$40

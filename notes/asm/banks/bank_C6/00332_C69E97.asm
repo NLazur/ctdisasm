@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9E97
+Routine_C69E97:
 C6/9E97: CE E4 39     DEC $39E4
 C6/9E9A: 32 05        AND ($05)
 C6/9E9C: 8F 00 32 AC  STA $AC3200

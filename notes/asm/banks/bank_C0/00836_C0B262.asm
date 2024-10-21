@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B262
+Routine_C0B262:
 C0/B262: A9 E0        LDA #$E0
 C0/B264: 8D 01 07     STA $0701
 C0/B267: 8D 05 07     STA $0705

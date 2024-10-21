@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 39AA
+Routine_FD39AA:
 FD/39AA: 87 65        STA [$65]
 FD/39AC: 00 AB        BRK $AB
 FD/39AE: E1 0E        SBC ($0E,X)

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8F87
+Routine_C18F87:
 C1/8F87: 20 14 AC     JSR $AC14
 C1/8F8A: AD CB AE     LDA $AECB
 C1/8F8D: F0 45        BEQ $8FD4

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DAF2
+Routine_C3DAF2:
 C3/DAF2: 9E 00 00     STZ $0000,X
 C3/DAF5: B5 49        LDA $49,X
 C3/DAF7: D8           CLD

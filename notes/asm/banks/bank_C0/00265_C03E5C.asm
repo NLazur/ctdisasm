@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3E5C
+Routine_C03E5C:
 C0/3E5C: C8           INY
 C0/3E5D: 84 C7        STY $C7
 C0/3E5F: A9 06        LDA #$06

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F156
+Routine_CCF156:
 CC/F156: AD 97 AE     LDA $AE97
 CC/F159: 8D 15 A0     STA $A015
 CC/F15C: AD 98 AE     LDA $AE98

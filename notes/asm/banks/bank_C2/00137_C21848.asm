@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1848
+Routine_C21848:
 C2/1848: A6 4E        LDX $4E
 C2/184A: A5 58        LDA $58
 C2/184C: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7013
+Routine_C67013:
 C6/7013: 34 77        BIT $77,X
 C6/7015: 79 15 60     ADC $6015,Y
 C6/7018: 03 91        ORA $91,S

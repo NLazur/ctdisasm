@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2A12
+Routine_D02A12:
 D0/2A12: A0 E0        LDY #$E0
 D0/2A14: B0 F0        BCS $2A06
 D0/2A16: D0 30        BNE $2A48

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 05B2
+Routine_CD05B2:
 CD/05B2: AD 1E CA     LDA $CA1E
 CD/05B5: F0 47        BEQ $05FE
 CD/05B7: 30 17        BMI $05D0

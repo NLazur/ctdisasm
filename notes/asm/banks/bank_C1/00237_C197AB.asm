@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 97AB
+Routine_C197AB:
 C1/97AB: 7B           TDC
 C1/97AC: AD 52 B2     LDA $B252
 C1/97AF: AA           TAX

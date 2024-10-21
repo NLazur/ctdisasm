@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1C25
+Routine_CC1C25:
 CC/1C25: 82 00 05     BRL $CC2128
 CC/1C28: 80 80        BRA $1BAA
 CC/1C2A: 07 00        ORA [$00]

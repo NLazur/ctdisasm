@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 82E2
+Routine_C382E2:
 C3/82E2: 0E 80 14     ASL $1480
 C3/82E5: 18           CLC
 C3/82E6: 04 10        TSB $10

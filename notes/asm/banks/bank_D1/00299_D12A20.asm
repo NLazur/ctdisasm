@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2A20
+Routine_D12A20:
 D1/2A20: 80 C8        BRA $29EA
 D1/2A22: 00 E8        BRK $E8
 D1/2A24: 00 08        BRK $08

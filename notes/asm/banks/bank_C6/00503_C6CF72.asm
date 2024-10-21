@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CF72
+Routine_C6CF72:
 C6/CF72: 3C 03 00     BIT $0003,X
 C6/CF75: 01 28        ORA ($28,X)
 C6/CF77: 02 28        COP $28

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3D20
+Routine_C33D20:
 C3/3D20: A2 44        LDX #$44
 C3/3D22: 00 66        BRK $66
 C3/3D24: 4C CA 64     JMP $64CA

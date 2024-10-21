@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 49D8
+Routine_FD49D8:
 FD/49D8: DB           STP
 FD/49D9: 00 34        BRK $34
 FD/49DB: FE 61 A0     INC $A061,X

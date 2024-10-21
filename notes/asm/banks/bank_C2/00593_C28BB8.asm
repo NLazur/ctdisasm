@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8BB8
+Routine_C28BB8:
 C2/8BB8: E2 20        SEP #$20
 C2/8BBA: A2 00 E0     LDX #$E000
 C2/8BBD: 9B           TXY

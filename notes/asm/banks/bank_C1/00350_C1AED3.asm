@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AED3
+Routine_C1AED3:
 C1/AED3: 7B           TDC
 C1/AED4: AA           TAX
 C1/AED5: 8D 24 AF     STA $AF24

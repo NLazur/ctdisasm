@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EA21
+Routine_FEEA21:
 FE/EA21: 42 54        WDM $54
 FE/EA23: 07 46        ORA [$46]
 FE/EA25: 03 45        ORA $45,S

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CC71
+Routine_C1CC71:
 C1/CC71: C9 FF        CMP #$FF
 C1/CC73: F0 55        BEQ $CCCA
 C1/CC75: AA           TAX

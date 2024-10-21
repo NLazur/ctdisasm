@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1966
+Routine_FD1966:
 FD/1966: E0 C0        CPX #$C0
 FD/1968: 06 36        ASL $36
 FD/196A: 50 A0        BVC $190C

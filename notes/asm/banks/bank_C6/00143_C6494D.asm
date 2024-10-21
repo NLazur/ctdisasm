@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 494D
+Routine_C6494D:
 C6/494D: 1A           INC
 C6/494E: 01 D8        ORA ($D8,X)
 C6/4950: 0A           ASL

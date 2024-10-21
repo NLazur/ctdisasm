@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2FD6
+Routine_FD2FD6:
 FD/2FD6: 08           PHP
 FD/2FD7: 00 41        BRK $41
 FD/2FD9: 08           PHP

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F278
+Routine_CFF278:
 CF/F278: A9 01        LDA #$01
 CF/F27A: 85 D1        STA $D1
 CF/F27C: 20 57 F9     JSR $F957

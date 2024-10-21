@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3A83
+Routine_C03A83:
 C0/3A83: A5 17        LDA $17
 C0/3A85: 89 01        BIT #$01
 C0/3A87: D0 21        BNE $3AAA

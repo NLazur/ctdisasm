@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5E41
+Routine_C35E41:
 C3/5E41: E8           INX
 C3/5E42: 21 09        AND ($09,X)
 C3/5E44: C7 07        CMP [$07]

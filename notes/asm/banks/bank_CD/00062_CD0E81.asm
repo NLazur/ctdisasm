@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0E81
+Routine_CD0E81:
 CD/0E81: BF FE EF CE  LDA $CEEFFE,X
 CD/0E85: 99 DA CC     STA $CCDA,Y
 CD/0E88: E8           INX

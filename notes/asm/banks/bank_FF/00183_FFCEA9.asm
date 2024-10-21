@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: CEA9
+Routine_FFCEA9:
 FF/CEA9: 39 8B 41     AND $418B,Y
 FF/CEAC: CE 49 30     DEC $3049
 FF/CEAF: 4E 51 56     LSR $5651

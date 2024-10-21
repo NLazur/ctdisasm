@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0806
+Routine_C60806:
 C6/0806: 20 78 28     JSR $2878
 C6/0809: 38           SEC
 C6/080A: 08           PHP

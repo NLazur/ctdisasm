@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CE2A
+Routine_C2CE2A:
 C2/CE2A: 08           PHP
 C2/CE2B: 0B           PHD
 C2/CE2C: F4 80 19     PEA $1980

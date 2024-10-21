@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9C5C
+Routine_C09C5C:
 C0/9C5C: C2 20        REP #$20
 C0/9C5E: A5 62        LDA $62
 C0/9C60: 18           CLC

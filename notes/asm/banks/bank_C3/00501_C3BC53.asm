@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BC53
+Routine_C3BC53:
 C3/BC53: F0 38        BEQ $BC8D
 C3/BC55: E4 38        CPX $38
 C3/BC57: 1E E1 20     ASL $20E1,X

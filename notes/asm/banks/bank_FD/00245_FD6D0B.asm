@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6D0B
+Routine_FD6D0B:
 FD/6D0B: 04 4F        TSB $4F
 FD/6D0D: 64 04        STZ $04
 FD/6D0F: 6F 9F FC 60  ADC $60FC9F

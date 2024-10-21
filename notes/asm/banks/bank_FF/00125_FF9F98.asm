@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 9F98
+Routine_FF9F98:
 FF/9F98: 50 80        BVC $9F1A
 FF/9F9A: A8           TAY
 FF/9F9B: 14 41        TRB $41

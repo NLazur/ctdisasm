@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 66CC
+Routine_CF66CC:
 CF/66CC: BF C0 7F 80  LDA $807FC0,X
 CF/66D0: BD C3 BD     LDA $BDC3,X
 CF/66D3: C3 7D        CMP $7D,S

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2BE8
+Routine_FD2BE8:
 FD/2BE8: 80 88        BRA $2B72
 FD/2BEA: 08           PHP
 FD/2BEB: 38           SEC

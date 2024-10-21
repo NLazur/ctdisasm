@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5B15
+Routine_C25B15:
 C2/5B15: 98           TYA
 C2/5B16: 38           SEC
 C2/5B17: E9 13        SBC #$13

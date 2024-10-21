@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 67FB
+Routine_FE67FB:
 FE/67FB: 0A           ASL
 FE/67FC: 0A           ASL
 FE/67FD: 11 15        ORA ($15),Y

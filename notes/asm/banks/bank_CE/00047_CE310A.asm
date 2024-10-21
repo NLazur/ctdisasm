@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 310A
+Routine_CE310A:
 CE/310A: 04 7A        TSB $7A
 CE/310C: DA           PHX
 CE/310D: 03 03        ORA $03,S

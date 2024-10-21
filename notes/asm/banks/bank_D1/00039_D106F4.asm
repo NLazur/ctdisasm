@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 06F4
+Routine_D106F4:
 D1/06F4: C1 66        CMP ($66,X)
 D1/06F6: 81 60        STA ($60,X)
 D1/06F8: 81 10        STA ($10,X)

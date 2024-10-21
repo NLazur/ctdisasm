@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0E35
+Routine_CD0E35:
 CD/0E35: 20 23 0E     JSR $0E23
 CD/0E38: 64 55        STZ $55
 CD/0E3A: AD 6B 2C     LDA $2C6B

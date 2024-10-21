@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0EC9
+Routine_C20EC9:
 C2/0EC9: A5 54        LDA $54
 C2/0ECB: 85 57        STA $57
 C2/0ECD: C2 20        REP #$20

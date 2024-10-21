@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: FA04
+Routine_D0FA04:
 D0/FA04: BF 4B 5F 33  LDA $335F4B,X
 D0/FA08: 9A           TXS
 D0/FA09: 3A           DEC

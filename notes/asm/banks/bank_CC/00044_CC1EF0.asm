@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1EF0
+Routine_CC1EF0:
 CC/1EF0: 82 00 2B     BRL $CC49F3
 CC/1EF3: 83 80        STA $80,S
 CC/1EF5: 0B           PHD

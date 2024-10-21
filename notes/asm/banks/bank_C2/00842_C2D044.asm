@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D044
+Routine_C2D044:
 C2/D044: 47 47        EOR [$47]
 C2/D046: 47 47        EOR [$47]
 C2/D048: 47 47        EOR [$47]

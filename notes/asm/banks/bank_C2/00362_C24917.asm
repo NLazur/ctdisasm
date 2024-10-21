@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4917
+Routine_C24917:
 C2/4917: E2 20        SEP #$20
 C2/4919: AD 9E 02     LDA $029E
 C2/491C: 10 26        BPL $4944

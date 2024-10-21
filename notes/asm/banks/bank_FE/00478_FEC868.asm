@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: C868
+Routine_FEC868:
 FE/C868: 10 10        BPL $C87A
 FE/C86A: 02 02        COP $02
 FE/C86C: 08           PHP

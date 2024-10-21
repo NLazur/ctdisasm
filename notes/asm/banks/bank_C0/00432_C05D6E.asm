@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5D6E
+Routine_C05D6E:
 C0/5D6E: 74 5F
 C0/5D70: 6E 5F
 C0/5D72: B6 5F

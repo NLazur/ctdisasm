@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6F5E
+Routine_C06F5E:
 C0/6F5E: A2 60 92     LDX #$9260
 C0/6F61: 86 4B        STX $4B
 C0/6F63: A2 E0 57     LDX #$57E0

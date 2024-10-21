@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E04E
+Routine_D0E04E:
 D0/E04E: 02 09        COP $09
 D0/E050: 03 09        ORA $09,S
 D0/E052: 04 08        TSB $08

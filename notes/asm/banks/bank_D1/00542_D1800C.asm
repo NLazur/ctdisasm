@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 800C
+Routine_D1800C:
 D1/800C: 80 FF        BRA $800D
 D1/800E: 0A           ASL
 D1/800F: 01 DE        ORA ($DE,X)

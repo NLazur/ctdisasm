@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7321
+Routine_C27321:
 C2/7321: 12 13        ORA ($13)
 C2/7323: 14 15        TRB $15
 C2/7325: 1A           INC

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EDB8
+Routine_CFEDB8:
 CF/EDB8: AD D1 A3     LDA $A3D1
 CF/EDBB: F0 03        BEQ $EDC0
 CF/EDBD: 4C 9F EE     JMP $EE9F

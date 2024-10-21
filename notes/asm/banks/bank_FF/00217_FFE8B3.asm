@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E8B3
+Routine_FFE8B3:
 FF/E8B3: 3F 60 1F 00  AND $001F60,X
 FF/E8B7: 7F 00 00 00  ADC $000000,X
 FF/E8BB: 00 F9        BRK $F9

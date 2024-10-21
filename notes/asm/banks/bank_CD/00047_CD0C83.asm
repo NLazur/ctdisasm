@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0C83
+Routine_CD0C83:
 CD/0C83: F1 09        SBC ($09),Y
 CD/0C85: 8D 08 8D     STA $8D08
 CD/0C88: 08           PHP

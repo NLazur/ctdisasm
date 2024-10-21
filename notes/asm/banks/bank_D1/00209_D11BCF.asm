@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1BCF
+Routine_D11BCF:
 D1/1BCF: E8           INX
 D1/1BD0: C0 C8        CPY #$C8
 D1/1BD2: 47 18        EOR [$18]

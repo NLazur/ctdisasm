@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CCDB
+Routine_C2CCDB:
 C2/CCDB: 08           PHP
 C2/CCDC: C2 30        REP #$30
 C2/CCDE: A9 06 00     LDA #$0006

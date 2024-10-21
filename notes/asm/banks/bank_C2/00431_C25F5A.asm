@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5F5A
+Routine_C25F5A:
 C2/5F5A: A4 60        LDY $60
 C2/5F5C: B7 76        LDA [$76],Y
 C2/5F5E: EB           XBA

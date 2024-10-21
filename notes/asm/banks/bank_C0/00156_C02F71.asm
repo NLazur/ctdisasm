@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2F71
+Routine_C02F71:
 C0/2F71: BB           TYX
 C0/2F72: E8           INX
 C0/2F73: BF 01 20 7F  LDA $7F2001,X

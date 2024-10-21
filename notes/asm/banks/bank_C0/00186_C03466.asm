@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3466
+Routine_C03466:
 C0/3466: A5 54        LDA $54
 C0/3468: 89 01        BIT #$01
 C0/346A: F0 33        BEQ $349F

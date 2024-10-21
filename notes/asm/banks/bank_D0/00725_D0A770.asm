@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: A770
+Routine_D0A770:
 D0/A770: 80 60        BRA $A7D2
 D0/A772: F0 E8        BEQ $A75C
 D0/A774: FC B4 C2     JSR ($C2B4,X)

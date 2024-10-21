@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6693
+Routine_FD6693:
 FD/6693: 00 00        BRK $00
 FD/6695: 00 00        BRK $00
 FD/6697: 00 00        BRK $00

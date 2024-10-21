@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 53E3
+Routine_C653E3:
 C6/53E3: 0A           ASL
 C6/53E4: 41 50        EOR ($50,X)
 C6/53E6: 0A           ASL

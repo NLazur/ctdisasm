@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F3F7
+Routine_FDF3F7:
 FD/F3F7: 4E 2B 2B     LSR $2B2B
 FD/F3FA: 2B           PLD
 FD/F3FB: 2B           PLD

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 76A5
+Routine_FD76A5:
 FD/76A5: FD 01 F9     SBC $F901,X
 FD/76A8: 01 E1        ORA ($E1,X)
 FD/76AA: 01 10        ORA ($10,X)

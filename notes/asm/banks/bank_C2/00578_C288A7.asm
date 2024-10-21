@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 88A7
+Routine_C288A7:
 C2/88A7: 00 5A        BRK $5A
 C2/88A9: 7B           TDC
 C2/88AA: 94 BC        STY $BC,X

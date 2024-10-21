@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 28B0
+Routine_C128B0:
 C1/28B0: 7B           TDC
 C1/28B1: A8           TAY
 C1/28B2: A6 80        LDX $80

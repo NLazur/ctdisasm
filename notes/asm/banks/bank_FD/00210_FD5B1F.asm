@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5B1F
+Routine_FD5B1F:
 FD/5B1F: 08           PHP
 FD/5B20: 02 03        COP $03
 FD/5B22: 0A           ASL

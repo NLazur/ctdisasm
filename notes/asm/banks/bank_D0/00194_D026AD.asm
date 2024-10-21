@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 26AD
+Routine_D026AD:
 D0/26AD: C0 A0 60     CPY #$60A0
 D0/26B0: D0 30        BNE $26E2
 D0/26B2: E8           INX

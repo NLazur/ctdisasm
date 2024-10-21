@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0043
+Routine_C20043:
 C2/0043: 0B           PHD
 C2/0044: F4 00 21     PEA $2100
 C2/0047: 2B           PLD

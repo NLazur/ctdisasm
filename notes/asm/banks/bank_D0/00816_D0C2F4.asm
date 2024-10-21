@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C2F4
+Routine_D0C2F4:
 D0/C2F4: 3C 24 14     BIT $1424,X
 D0/C2F7: 18           CLC
 D0/C2F8: 01 00        ORA ($00,X)

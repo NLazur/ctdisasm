@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A258
+Routine_C6A258:
 C6/A258: 61 62        ADC ($62,X)
 C6/A25A: C1 C1        CMP ($C1,X)
 C6/A25C: 3E C2 3D     ROL $3DC2,X

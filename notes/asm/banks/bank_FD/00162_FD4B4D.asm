@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4B4D
+Routine_FD4B4D:
 FD/4B4D: F9 27 24     SBC $2427,Y
 FD/4B50: 80 5C        BRA $4BAE
 FD/4B52: F8           SED

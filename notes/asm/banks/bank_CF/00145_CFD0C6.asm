@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D0C6
+Routine_CFD0C6:
 CF/D0C6: 3A           DEC
 CF/D0C7: 20 34 17     JSR $1734
 CF/D0CA: 37 17        AND [$17],Y

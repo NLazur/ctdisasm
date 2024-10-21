@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4181
+Routine_C04181:
 C0/4181: AD 10 42     LDA $4210
 C0/4184: 10 FB        BPL $4181
 C0/4186: 20 4E 0B     JSR $0B4E

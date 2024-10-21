@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3163
+Routine_C13163:
 C1/3163: 20 B6 30     JSR $30B6
 C1/3166: A6 94        LDX $94
 C1/3168: FE 8E A4     INC $A48E,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 304F
+Routine_C2304F:
 C2/304F: AD EC 1B     LDA $1BEC
 C2/3052: 30 20        BMI $3074
 C2/3054: A9 81 8D     LDA #$8D81

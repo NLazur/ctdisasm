@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 658E
+Routine_C2658E:
 C2/658E: AE 00 01     LDX $0100
 C2/6591: E0 F3 01     CPX #$01F3
 C2/6594: F0 12        BEQ $65A8

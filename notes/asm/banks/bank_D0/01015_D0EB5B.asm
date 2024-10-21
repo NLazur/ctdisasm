@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EB5B
+Routine_D0EB5B:
 D0/EB5B: 13 4A        ORA ($4A,S),Y
 D0/EB5D: 12 4A        ORA ($4A)
 D0/EB5F: 11 40        ORA ($40),Y

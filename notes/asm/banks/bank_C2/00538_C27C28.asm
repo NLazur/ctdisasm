@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7C28
+Routine_C27C28:
 C2/7C28: 00 00        BRK $00
 C2/7C2A: 00 00        BRK $00
 C2/7C2C: 88           DEY

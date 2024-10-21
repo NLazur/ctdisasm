@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 10FA
+Routine_C110FA:
 C1/10FA: AD 3A 99     LDA $993A
 C1/10FD: F0 11        BEQ $1110
 C1/10FF: 9C 3A 99     STZ $993A

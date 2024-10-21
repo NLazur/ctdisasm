@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 519B
+Routine_C0519B:
 C0/519B: BB           TYX
 C0/519C: E8           INX
 C0/519D: BF 01 20 7F  LDA $7F2001,X

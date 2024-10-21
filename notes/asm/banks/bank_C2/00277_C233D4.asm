@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 33D4
+Routine_C233D4:
 C2/33D4: 20 63 62     JSR $6263
 C2/33D7: 20 6E 62     JSR $626E
 C2/33DA: A9 7F        LDA #$7F

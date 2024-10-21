@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7FC5
+Routine_C67FC5:
 C6/7FC5: 21 33        AND ($33,X)
 C6/7FC7: 26 6F        ROL $6F
 C6/7FC9: 56 31        LSR $31,X

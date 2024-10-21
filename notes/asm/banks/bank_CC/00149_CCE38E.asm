@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E38E
+Routine_CCE38E:
 CC/E38E: 8D E1 99     STA $99E1
 CC/E391: AD 92 29     LDA $2992
 CC/E394: AA           TAX

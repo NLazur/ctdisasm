@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 5FB2
+Routine_D05FB2:
 D0/5FB2: C0 40 80     CPY #$8040
 D0/5FB5: 80 80        BRA $5F37
 D0/5FB7: 80 00        BRA $5FB9

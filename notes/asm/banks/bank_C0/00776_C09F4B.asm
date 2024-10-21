@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9F4B
+Routine_C09F4B:
 C0/9F4B: BF 00 0D 7F  LDA $7F0D00,X
 C0/9F4F: 10 05        BPL $9F56
 C0/9F51: 49 FF        EOR #$FF

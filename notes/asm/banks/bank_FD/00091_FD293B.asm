@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 293B
+Routine_FD293B:
 FD/293B: 7F 80 FF 00  ADC $00FF80,X
 FD/293F: 7F 80 00 3F  ADC $3F0080,X
 FD/2943: C0 BF        CPY #$BF

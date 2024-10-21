@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A220
+Routine_C6A220:
 C6/A220: F8           SED
 C6/A221: 5E 10 F6     LSR $F610,X
 C6/A224: 2A           ROL

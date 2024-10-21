@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: CFE2
+Routine_FECFE2:
 FE/CFE2: 46 42        LSR $42
 FE/CFE4: 23 0A        AND $0A,S
 FE/CFE6: 66 01        ROR $01

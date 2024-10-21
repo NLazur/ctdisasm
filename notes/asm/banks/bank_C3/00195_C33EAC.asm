@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3EAC
+Routine_C33EAC:
 C3/3EAC: 0A           ASL
 C3/3EAD: 0E 09 0F     ASL $0F09
 C3/3EB0: 0A           ASL

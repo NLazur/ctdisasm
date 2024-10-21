@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8F6B
+Routine_CF8F6B:
 CF/8F6B: 2A           ROL
 CF/8F6C: 42 2A        WDM $2A
 CF/8F6E: 44 2A 46     MVP $2A,$46

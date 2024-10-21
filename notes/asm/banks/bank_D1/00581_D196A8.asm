@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 96A8
+Routine_D196A8:
 D1/96A8: 50 30        BVC $96DA
 D1/96AA: FF 00 12 12  SBC $121200,X
 D1/96AE: 7F 9D 17 83  ADC $83179D,X

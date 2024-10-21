@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 5409
+Routine_C15409:
 C1/5409: C8           INY
 C1/540A: B7 E6        LDA [$E6],Y
 C1/540C: 8D B0 A2     STA $A2B0

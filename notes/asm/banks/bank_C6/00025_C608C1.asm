@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 08C1
+Routine_C608C1:
 C6/08C1: 7F 60 9F 70  ADC $709F60,X
 C6/08C5: 8F 7C 70 02  STA $02707C
 C6/08C9: D0 07        BNE $08D2

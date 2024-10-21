@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5667
+Routine_C65667:
 C6/5667: 4D 0A 02     EOR $020A
 C6/566A: 00 01        BRK $01
 C6/566C: 20 EE 1B     JSR $1BEE

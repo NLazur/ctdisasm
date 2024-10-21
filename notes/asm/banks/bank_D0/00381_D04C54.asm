@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4C54
+Routine_D04C54:
 D0/4C54: 80 80        BRA $4BD6
 D0/4C56: 00 00        BRK $00
 D0/4C58: 00 00        BRK $00

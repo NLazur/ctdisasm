@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: C21F
+Routine_CFC21F:
 CF/C21F: 0F 6E 0F 71  ORA $710F6E
 CF/C223: 0F 74 0F 1C  ORA $1C0F74
 CF/C227: 20 77 0F     JSR $0F77

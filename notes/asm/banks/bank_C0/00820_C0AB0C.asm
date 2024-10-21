@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AB0C
+Routine_C0AB0C:
 C0/AB0C: 3A           DEC
 C0/AB0D: 9D 01 1A     STA $1A01,X
 C0/AB10: BD 00 19     LDA $1900,X

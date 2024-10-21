@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1F49
+Routine_CF1F49:
 CF/1F49: 22 40 04 C0  JSR $C00440
 CF/1F4D: 08           PHP
 CF/1F4E: C0 04 00     CPY #$0004

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1ACA
+Routine_C21ACA:
 C2/1ACA: E2 20        SEP #$20
 C2/1ACC: A0 01 00     LDY #$0001
 C2/1ACF: B7 58        LDA [$58],Y

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 67A2
+Routine_C067A2:
 C0/67A2: BB           TYX
 C0/67A3: E8           INX
 C0/67A4: BF 01 20 7F  LDA $7F2001,X

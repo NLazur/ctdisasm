@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2E1E
+Routine_C02E1E:
 C0/2E1E: 78           SEI
 C0/2E1F: A9 00        LDA #$00
 C0/2E21: 48           PHA

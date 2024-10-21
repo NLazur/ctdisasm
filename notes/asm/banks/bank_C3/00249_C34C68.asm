@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4C68
+Routine_C34C68:
 C3/4C68: A6 41        LDX $41
 C3/4C6A: E0 FF 18     CPX #$18FF
 C3/4C6D: FF F0 38 2C  SBC $2C38F0,X

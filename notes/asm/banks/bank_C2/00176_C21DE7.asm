@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1DE7
+Routine_C21DE7:
 C2/1DE7: 9B           TXY
 C2/1DE8: FE 02 00     INC $0002,X
 C2/1DEB: BE 32 00     LDX $0032,Y

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: EFD3
+Routine_C3EFD3:
 C3/EFD3: D0 A0        BNE $EF75
 C3/EFD5: 22 00 E0 A0  JSR $A0E000
 C3/EFD9: 24 00        BIT $00

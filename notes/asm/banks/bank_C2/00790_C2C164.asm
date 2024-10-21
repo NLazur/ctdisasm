@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C164
+Routine_C2C164:
 C2/C164: 7B           TDC
 C2/C165: BD 00 00     LDA $0000,X
 C2/C168: A8           TAY

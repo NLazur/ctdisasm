@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 250B
+Routine_CD250B:
 CD/250B: B9 A0 5D     LDA $5DA0,Y
 CD/250E: 8D A7 CA     STA $CAA7
 CD/2511: B9 A1 5D     LDA $5DA1,Y

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7B9F
+Routine_C27B9F:
 C2/7B9F: A9 7E        LDA #$7E
 C2/7BA1: 8D 05 03     STA $0305
 C2/7BA4: A2 00 C6     LDX #$C600

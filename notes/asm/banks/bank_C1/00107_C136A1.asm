@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 36A1
+Routine_C136A1:
 C1/36A1: 64 E5        STZ $E5
 C1/36A3: A9 01        LDA #$01
 C1/36A5: 85 A4        STA $A4

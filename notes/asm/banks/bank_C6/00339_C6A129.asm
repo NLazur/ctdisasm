@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A129
+Routine_C6A129:
 C6/A129: 1F 86 2F 18  ORA $182F86,X
 C6/A12D: 1E 05 08     ASL $0805,X
 C6/A130: C1 17        CMP ($17,X)

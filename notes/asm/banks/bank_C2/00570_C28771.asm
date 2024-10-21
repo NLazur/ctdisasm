@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8771
+Routine_C28771:
 C2/8771: 02 E8        COP $E8
 C2/8773: 02 E7        COP $E7
 C2/8775: 02 E6        COP $E6

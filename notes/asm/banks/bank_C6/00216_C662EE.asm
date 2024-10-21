@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 62EE
+Routine_C662EE:
 C6/62EE: E2 2E        SEP #$2E
 C6/62F0: B2 2E        LDA ($2E)
 C6/62F2: B3 2E        LDA ($2E,S),Y

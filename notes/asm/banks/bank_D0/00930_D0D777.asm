@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D777
+Routine_D0D777:
 D0/D777: 20 A0 60     JSR $60A0
 D0/D77A: C1 41        CMP ($41,X)
 D0/D77C: 43 C2        EOR $C2,S

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F404
+Routine_FFF404:
 FF/F404: 2F 40 43 00  AND $004340
 FF/F408: A4 8C        LDY $8C
 FF/F40A: ED F0 E7     SBC $E7F0

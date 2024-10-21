@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9E0F
+Routine_D09E0F:
 D0/9E0F: E0 4B        CPX #$4B
 D0/9E11: 73 4D        ADC ($4D,S),Y
 D0/9E13: 71 04        ADC ($04),Y

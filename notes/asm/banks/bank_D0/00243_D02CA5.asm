@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2CA5
+Routine_D02CA5:
 D0/2CA5: E0 80        CPX #$80
 D0/2CA7: 80 FE        BRA $2CA7
 D0/2CA9: FF 81 FE 4F  SBC $4FFE81,X

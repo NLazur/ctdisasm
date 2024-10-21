@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 0222
+Routine_C10222:
 C1/0222: 38           SEC
 C1/0223: A5 D3        LDA $D3
 C1/0225: E5 D5        SBC $D5

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: DCA9
+Routine_CFDCA9:
 CF/DCA9: A1 6B        LDA ($6B,X)
 CF/DCAB: E1 C5        SBC ($C5,X)
 CF/DCAD: A1 C5        LDA ($C5,X)

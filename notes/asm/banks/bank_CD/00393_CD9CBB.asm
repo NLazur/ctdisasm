@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 9CBB
+Routine_CD9CBB:
 CD/9CBB: 00 73        BRK $73
 CD/9CBD: 03 1B        ORA $1B,S
 CD/9CBF: 09 24 01     ORA #$0124

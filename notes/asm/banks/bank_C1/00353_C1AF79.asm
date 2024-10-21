@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AF79
+Routine_C1AF79:
 C1/AF79: E2 10        SEP #$10
 C1/AF7B: 86 25        STX $25
 C1/AF7D: C2 10        REP #$10

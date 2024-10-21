@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2BA8
+Routine_CD2BA8:
 CD/2BA8: A6 43        LDX $43
 CD/2BAA: BD 79 CA     LDA $CA79,X
 CD/2BAD: AA           TAX

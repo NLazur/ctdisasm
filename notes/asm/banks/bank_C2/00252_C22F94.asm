@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2F94
+Routine_C22F94:
 C2/2F94: 7B           TDC
 C2/2F95: BD 02 00     LDA $0002,X
 C2/2F98: 0A           ASL

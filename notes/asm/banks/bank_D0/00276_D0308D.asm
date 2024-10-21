@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 308D
+Routine_D0308D:
 D0/308D: C0 40 C0     CPY #$C040
 D0/3090: 80 80        BRA $3012
 D0/3092: 80 80        BRA $3014

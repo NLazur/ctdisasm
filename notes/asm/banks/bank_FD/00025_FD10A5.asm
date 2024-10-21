@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 10A5
+Routine_FD10A5:
 FD/10A5: B0 4E        BCS $10F5
 FD/10A7: 0E F0 EE     ASL $EEF0
 FD/10AA: 10 75        BPL $1121

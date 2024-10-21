@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1FCD
+Routine_C01FCD:
 C0/1FCD: A5 26        LDA $26
 C0/1FCF: D0 27        BNE $1FF8
 C0/1FD1: A5 30        LDA $30

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D09C
+Routine_D0D09C:
 D0/D09C: 10 30        BPL $D0CE
 D0/D09E: 38           SEC
 D0/D09F: 28           PLP

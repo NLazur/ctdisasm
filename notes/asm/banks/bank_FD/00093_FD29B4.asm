@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 29B4
+Routine_FD29B4:
 FD/29B4: 80 A0        BRA $2956
 FD/29B6: 08           PHP
 FD/29B7: D8           CLD

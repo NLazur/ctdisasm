@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 669B
+Routine_C3669B:
 C3/669B: A9 3C 00     LDA #$003C
 C3/669E: 00 85        BRK $85
 C3/66A0: 15 A9        ORA $A9,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6214
+Routine_C06214:
 C0/6214: A6 6D        LDX $6D
 C0/6216: BF 80 09 7F  LDA $7F0980,X
 C0/621A: D0 16        BNE $6232

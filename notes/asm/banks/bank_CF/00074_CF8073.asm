@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8073
+Routine_CF8073:
 CF/8073: 20 62 20     JSR $2062
 CF/8076: 64 20        STZ $20
 CF/8078: 66 20        ROR $20

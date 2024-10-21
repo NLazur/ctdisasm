@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3C8F
+Routine_CD3C8F:
 CD/3C8F: AC 06 CB     LDY $CB06
 CD/3C92: A5 4B        LDA $4B
 CD/3C94: 20 55 3C     JSR $3C55

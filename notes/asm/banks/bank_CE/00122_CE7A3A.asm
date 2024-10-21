@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 7A3A
+Routine_CE7A3A:
 CE/7A3A: 30 01        BMI $7A3D
 CE/7A3C: 80 02        BRA $7A40
 CE/7A3E: 22 24 01 D0  JSR $D00124

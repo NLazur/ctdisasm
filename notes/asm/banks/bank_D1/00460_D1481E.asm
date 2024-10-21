@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 481E
+Routine_D1481E:
 D1/481E: 7B           TDC
 D1/481F: 67 5A        ADC [$5A]
 D1/4821: 63 D6        ADC $D6,S

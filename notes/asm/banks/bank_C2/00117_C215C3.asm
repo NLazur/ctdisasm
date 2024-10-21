@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 15C3
+Routine_C215C3:
 C2/15C3: A6 4E        LDX $4E
 C2/15C5: A0 01 00     LDY #$0001
 C2/15C8: B7 58        LDA [$58],Y

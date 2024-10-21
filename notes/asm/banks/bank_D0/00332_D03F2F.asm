@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3F2F
+Routine_D03F2F:
 D0/3F2F: C0 A0 60     CPY #$60A0
 D0/3F32: 50 B0        BVC $3EE4
 D0/3F34: A8           TAY

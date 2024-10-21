@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 01AA
+Routine_C601AA:
 C6/01AA: 80 00        BRA $01AC
 C6/01AC: C0 00        CPY #$00
 C6/01AE: C0 21        CPY #$21

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 0D6F
+Routine_FF0D6F:
 FF/0D6F: 8F 30 C0 00  STA $00C030
 FF/0D73: 80 00        BRA $0D75
 FF/0D75: C0 80 E0     CPY #$E080

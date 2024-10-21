@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4C1A
+Routine_D04C1A:
 D0/4C1A: 08           PHP
 D0/4C1B: C8           INY
 D0/4C1C: 02 32        COP $32

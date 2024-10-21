@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B9AD
+Routine_C3B9AD:
 C3/B9AD: 1B           TCS
 C3/B9AE: 7F 09 02 1C  ADC $1C0209,X
 C3/B9B2: F9 F1 F9     SBC $F9F1,Y

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9AF2
+Routine_C69AF2:
 C6/9AF2: 68           PLA
 C6/9AF3: E4 01        CPX $01
 C6/9AF5: 11 20        ORA ($20),Y

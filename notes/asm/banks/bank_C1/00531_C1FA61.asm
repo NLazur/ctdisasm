@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: FA61
+Routine_C1FA61:
 C1/FA61: 89 ED        BIT #$ED
 C1/FA63: B9 ED BA     LDA $BAED,Y
 C1/FA66: ED DA ED     SBC $EDDA

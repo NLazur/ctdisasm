@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 75B4
+Routine_FD75B4:
 FD/75B4: 5E 60 1F     LSR $1F60,X
 FD/75B7: B2 01        LDA ($01)
 FD/75B9: 3F 9A 01 A1  AND $A1019A,X

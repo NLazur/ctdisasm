@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C401
+Routine_FDC401:
 FD/C401: C2 20        REP #$20
 FD/C403: AD 67 34     LDA $3467
 FD/C406: 8D 08 15     STA $1508

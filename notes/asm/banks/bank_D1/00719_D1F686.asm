@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F686
+Routine_D1F686:
 D1/F686: 4D F7 4D     EOR $4DF7
 D1/F689: F7 4D        SBC [$4D],Y
 D1/F68B: F7 4D        SBC [$4D],Y

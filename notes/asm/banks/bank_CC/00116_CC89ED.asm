@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 89ED
+Routine_CC89ED:
 CC/89ED: 3A           DEC
 CC/89EE: 3B           TSC
 CC/89EF: 04 3E        TSB $3E

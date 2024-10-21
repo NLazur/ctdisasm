@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: B029
+Routine_CFB029:
 CF/B029: 28           PLP
 CF/B02A: 6D 28 6F     ADC $6F28
 CF/B02D: 28           PLP

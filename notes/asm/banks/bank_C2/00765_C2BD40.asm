@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BD40
+Routine_C2BD40:
 C2/BD40: 01 09        ORA ($09,X)
 C2/BD42: 11 19        ORA ($19),Y
 C2/BD44: 21 29        AND ($29,X)

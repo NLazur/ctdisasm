@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9677
+Routine_D09677:
 D0/9677: 34 00        BIT $00,X
 D0/9679: 02 0C        COP $0C
 D0/967B: 1C 08 07     TRB $0708

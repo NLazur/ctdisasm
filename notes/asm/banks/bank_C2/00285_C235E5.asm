@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 35E5
+Routine_C235E5:
 C2/35E5: AD 32 1B     LDA $1B32
 C2/35E8: 30 92        BMI $357C
 C2/35EA: E2 20        SEP #$20

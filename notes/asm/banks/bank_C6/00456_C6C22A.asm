@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C22A
+Routine_C6C22A:
 C6/C22A: EA           NOP
 C6/C22B: AD FF 03     LDA $03FF
 C6/C22E: 91 92        STA ($92),Y

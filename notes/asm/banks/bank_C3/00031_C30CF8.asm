@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0CF8
+Routine_C30CF8:
 C3/0CF8: 08           PHP
 C3/0CF9: DA           PHX
 C3/0CFA: A2 00 00     LDX #$0000

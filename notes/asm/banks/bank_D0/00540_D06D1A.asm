@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6D1A
+Routine_D06D1A:
 D0/6D1A: 80 80        BRA $6C9C
 D0/6D1C: 00 00        BRK $00
 D0/6D1E: 00 00        BRK $00

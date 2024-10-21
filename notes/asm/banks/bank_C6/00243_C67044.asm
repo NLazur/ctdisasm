@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7044
+Routine_C67044:
 C6/7044: 88           DEY
 C6/7045: 88           DEY
 C6/7046: 89 15 6B     BIT #$6B15

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EF48
+Routine_C2EF48:
 C2/EF48: 08           PHP
 C2/EF49: C2 30        REP #$30
 C2/EF4B: 20 90 ED     JSR $ED90

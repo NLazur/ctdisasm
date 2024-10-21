@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BA7F
+Routine_C6BA7F:
 C6/BA7F: AF E1 0E 38  LDA $380EE1
 C6/BA83: 39 EE 0A     AND $0AEE,Y
 C6/BA86: F1 1A        SBC ($1A),Y

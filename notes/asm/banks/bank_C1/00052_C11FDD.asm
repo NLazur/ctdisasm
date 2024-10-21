@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 1FDD
+Routine_C11FDD:
 C1/1FDD: AD CC 99     LDA $99CC
 C1/1FE0: C9 07        CMP #$07
 C1/1FE2: B0 05        BCS $1FE9

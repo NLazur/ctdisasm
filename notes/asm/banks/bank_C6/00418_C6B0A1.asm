@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B0A1
+Routine_C6B0A1:
 C6/B0A1: 02 23        COP $23
 C6/B0A3: 03 C2        ORA $C2,S
 C6/B0A5: 01 46        ORA ($46,X)

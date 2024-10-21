@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 5E79
+Routine_FF5E79:
 FF/5E79: 2F EF 2C C2  AND $C22CEF
 FF/5E7D: C6 4D        DEC $4D
 FF/5E7F: EF C0 C8 C8  SBC $C8C8C0

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: AB24
+Routine_FEAB24:
 FE/AB24: A5 48        LDA $48
 FE/AB26: 05 6F        ORA $6F
 FE/AB28: D1 00        CMP ($00),Y

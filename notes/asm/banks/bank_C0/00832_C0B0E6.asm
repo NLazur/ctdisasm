@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B0E6
+Routine_C0B0E6:
 C0/B0E6: E2 10        SEP #$10
 C0/B0E8: AF 00 20 7F  LDA $7F2000
 C0/B0EC: 0A           ASL

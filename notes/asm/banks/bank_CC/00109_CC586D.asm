@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 586D
+Routine_CC586D:
 CC/586D: 14 B0        TRB $B0
 CC/586F: 04 08        TSB $08
 CC/5871: 00 FF        BRK $FF

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1E38
+Routine_CF1E38:
 CF/1E38: F0 8C        BEQ $1DC6
 CF/1E3A: F8           SED
 CF/1E3B: 3C E0 22     BIT $22E0,X

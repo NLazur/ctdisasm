@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 873D
+Routine_FD873D:
 FD/873D: 00 F6        BRK $F6
 FD/873F: 37 FD        AND [$FD],Y
 FD/8741: CF 73 7F 43  CMP $437F73

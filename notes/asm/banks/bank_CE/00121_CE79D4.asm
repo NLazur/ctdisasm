@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 79D4
+Routine_CE79D4:
 CE/79D4: 20 28 80     JSR $8028
 CE/79D7: 51 2D        EOR ($2D),Y
 CE/79D9: 80 12        BRA $79ED

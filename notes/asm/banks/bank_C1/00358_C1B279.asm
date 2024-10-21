@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B279
+Routine_C1B279:
 C1/B279: B9 0A AF     LDA $AF0A,Y
 C1/B27C: C9 FF        CMP #$FF
 C1/B27E: D0 03        BNE $B283

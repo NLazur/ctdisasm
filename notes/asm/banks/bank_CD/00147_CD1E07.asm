@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1E07
+Routine_CD1E07:
 CD/1E07: AD A4 05     LDA $05A4
 CD/1E0A: 0D 98 05     ORA $0598
 CD/1E0D: 0D 8C 05     ORA $058C

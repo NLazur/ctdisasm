@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: FDAE
+Routine_C1FDAE:
 C1/FDAE: AA           TAX
 C1/FDAF: 86 28        STX $28
 C1/FDB1: A2 18 00     LDX #$0018

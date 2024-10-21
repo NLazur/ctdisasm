@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3616
+Routine_CD3616:
 CD/3616: 84 45        STY $45
 CD/3618: A5 4B        LDA $4B
 CD/361A: 38           SEC

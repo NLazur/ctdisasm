@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: BC9A
+Routine_D0BC9A:
 D0/BC9A: C0 20 C0     CPY #$C020
 D0/BC9D: 80 80        BRA $BC1F
 D0/BC9F: 00 00        BRK $00

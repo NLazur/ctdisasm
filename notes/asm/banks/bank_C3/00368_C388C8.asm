@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 88C8
+Routine_C388C8:
 C3/88C8: 00 4C        BRK $4C
 C3/88CA: E0 70 80     CPX #$8070
 C3/88CD: E0 80 FA     CPX #$FA80

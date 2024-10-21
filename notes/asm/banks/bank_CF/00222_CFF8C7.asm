@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F8C7
+Routine_CFF8C7:
 CF/F8C7: 20 43 FA     JSR $FA43
 CF/F8CA: A6 C6        LDX $C6
 CF/F8CC: BD 2F A3     LDA $A32F,X

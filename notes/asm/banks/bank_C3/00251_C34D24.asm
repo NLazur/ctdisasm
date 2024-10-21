@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4D24
+Routine_C34D24:
 C3/4D24: 50 21        BVC $4D47
 C3/4D26: A9 3F 00     LDA #$003F
 C3/4D29: A1 05        LDA ($05,X)

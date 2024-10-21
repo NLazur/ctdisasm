@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 67C2
+Routine_C367C2:
 C3/67C2: 00 A5        BRK $A5
 C3/67C4: 0C 3A 0A     TSB $0A3A
 C3/67C7: 0A           ASL

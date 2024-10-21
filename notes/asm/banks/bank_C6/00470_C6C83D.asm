@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C83D
+Routine_C6C83D:
 C6/C83D: F8           SED
 C6/C83E: 14 60        TRB $60
 C6/C840: 00 40        BRK $40

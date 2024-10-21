@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1F47
+Routine_C01F47:
 C0/1F47: A5 1C        LDA $1C
 C0/1F49: 85 1D        STA $1D
 C0/1F4B: A5 19        LDA $19

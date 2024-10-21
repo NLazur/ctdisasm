@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3090
+Routine_D13090:
 D1/3090: 20 00 00     JSR $0000
 D1/3093: 11 80        ORA ($80),Y
 D1/3095: E8           INX

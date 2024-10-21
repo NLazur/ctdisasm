@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CC0B
+Routine_C0CC0B:
 C0/CC0B: 85 EE        STA $EE
 C0/CC0D: 20 52 E9     JSR $E952
 C0/CC10: 90 F7        BCC $CC09

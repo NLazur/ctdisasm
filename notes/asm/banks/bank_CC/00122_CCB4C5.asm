@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: B4C5
+Routine_CCB4C5:
 CC/B4C5: 00 FE        BRK $FE
 CC/B4C7: 05 01        ORA $01
 CC/B4C9: 00 00        BRK $00

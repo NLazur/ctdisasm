@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1677
+Routine_C21677:
 C2/1677: C2 20        REP #$20
 C2/1679: 20 59 17     JSR $1759
 C2/167C: 20 38 0F     JSR $0F38

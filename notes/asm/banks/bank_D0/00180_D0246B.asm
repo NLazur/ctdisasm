@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 246B
+Routine_D0246B:
 D0/246B: C0 A0 60     CPY #$60A0
 D0/246E: D0 30        BNE $24A0
 D0/2470: E8           INX

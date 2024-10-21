@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 10C0
+Routine_C310C0:
 C3/10C0: 43 4F        EOR $4F,S
 C3/10C2: 44 45 20     MVP $45,$20
 C3/10C5: 45 4E        EOR $4E

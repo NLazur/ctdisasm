@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D3B7
+Routine_C6D3B7:
 C6/D3B7: 22 60 21 60  JSR $602160
 C6/D3BB: 20 40 F8     JSR $F840
 C6/D3BE: 14 60        TRB $60

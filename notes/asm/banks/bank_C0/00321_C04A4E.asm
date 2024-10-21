@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4A4E
+Routine_C04A4E:
 C0/4A4E: 84 C7        STY $C7
 C0/4A50: BB           TYX
 C0/4A51: E8           INX

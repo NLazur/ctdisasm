@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 10CD
+Routine_C210CD:
 C2/10CD: A6 4E        LDX $4E
 C2/10CF: A0 01 00     LDY #$0001
 C2/10D2: B7 58        LDA [$58],Y

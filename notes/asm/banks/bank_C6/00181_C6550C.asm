@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 550C
+Routine_C6550C:
 C6/550C: 11 20        ORA ($20),Y
 C6/550E: 07 D0        ORA [$D0]
 C6/5510: 28           PLP

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7B20
+Routine_C27B20:
 C2/7B20: A9 7F        LDA #$7F
 C2/7B22: 8D 05 03     STA $0305
 C2/7B25: A2 00 90     LDX #$9000

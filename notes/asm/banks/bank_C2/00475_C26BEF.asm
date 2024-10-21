@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6BEF
+Routine_C26BEF:
 C2/6BEF: A9 FF        LDA #$FF
 C2/6BF1: FF 8D AF 02  SBC $02AF8D,X
 C2/6BF5: E2 20        SEP #$20

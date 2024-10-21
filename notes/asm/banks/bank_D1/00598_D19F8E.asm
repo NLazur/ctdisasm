@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 9F8E
+Routine_D19F8E:
 D1/9F8E: 19 07 FF     ORA $FF07,Y
 D1/9F91: 00 08        BRK $08
 D1/9F93: 01 80        ORA ($80,X)

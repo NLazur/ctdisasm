@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B48E
+Routine_C2B48E:
 C2/B48E: 20 84 E9     JSR $E984
 C2/B491: 20 23 B8     JSR $B823
 C2/B494: 2C 1D 0D     BIT $0D1D

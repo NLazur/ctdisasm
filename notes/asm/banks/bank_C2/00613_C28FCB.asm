@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8FCB
+Routine_C28FCB:
 C2/8FCB: A5 71        LDA $71
 C2/8FCD: 0A           ASL
 C2/8FCE: 69 63 0F     ADC #$0F63

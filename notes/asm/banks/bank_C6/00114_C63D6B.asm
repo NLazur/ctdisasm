@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3D6B
+Routine_C63D6B:
 C6/3D6B: 1D 61 1D     ORA $1D61,X
 C6/3D6E: 50 62        BVC $3DD2
 C6/3D70: 1D 63 1D     ORA $1D63,X

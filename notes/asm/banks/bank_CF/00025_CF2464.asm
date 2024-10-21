@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 2464
+Routine_CF2464:
 CF/2464: 1F 10 3F 23  ORA $233F10,X
 CF/2468: 7C 4C F0     JMP ($F04C,X)
 CF/246B: 17 E0        ORA [$E0],Y

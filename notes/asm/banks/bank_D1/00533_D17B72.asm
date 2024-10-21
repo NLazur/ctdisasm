@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 7B72
+Routine_D17B72:
 D1/7B72: 80 00        BRA $7B74
 D1/7B74: 0A           ASL
 D1/7B75: 01 91        ORA ($91,X)

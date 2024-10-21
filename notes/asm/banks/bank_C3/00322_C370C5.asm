@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 70C5
+Routine_C370C5:
 C3/70C5: 0E 12 AC     ASL $AC12
 C3/70C8: 7A           PLY
 C3/70C9: 0E F2 3D     ASL $3DF2

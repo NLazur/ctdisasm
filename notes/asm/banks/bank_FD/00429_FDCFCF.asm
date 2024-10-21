@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: CFCF
+Routine_FDCFCF:
 FD/CFCF: AD 27 01     LDA $0127
 FD/CFD2: D0 03        BNE $CFD7
 FD/CFD4: 82 14 F3     BRL $FDC2EB

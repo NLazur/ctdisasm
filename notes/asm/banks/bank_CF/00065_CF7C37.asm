@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 7C37
+Routine_CF7C37:
 CF/7C37: C0 40        CPY #$40
 CF/7C39: C0 40        CPY #$40
 CF/7C3B: C0 40        CPY #$40

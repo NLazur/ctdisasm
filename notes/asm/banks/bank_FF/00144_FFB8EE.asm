@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: B8EE
+Routine_FFB8EE:
 FF/B8EE: F0 01        BEQ $B8F1
 FF/B8F0: 10 FF        BPL $B8F1
 FF/B8F2: FF 00 0A 50  SBC $500A00,X

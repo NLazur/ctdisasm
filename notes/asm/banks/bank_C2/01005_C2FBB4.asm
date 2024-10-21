@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FBB4
+Routine_C2FBB4:
 C2/FBB4: 08           PHP
 C2/FBB5: C2 30        REP #$30
 C2/FBB7: 29 EF 33     AND #$33EF

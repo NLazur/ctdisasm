@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 4ED0
+Routine_CC4ED0:
 CC/4ED0: 00 DC        BRK $DC
 CC/4ED2: 00 14        BRK $14
 CC/4ED4: 00 FF        BRK $FF

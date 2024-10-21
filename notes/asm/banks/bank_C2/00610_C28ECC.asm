@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8ECC
+Routine_C28ECC:
 C2/8ECC: 8B           PHB
 C2/8ECD: 08           PHP
 C2/8ECE: E2 30        SEP #$30

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: BCDC
+Routine_C0BCDC:
 C0/BCDC: 8B           PHB
 C0/BCDD: A9 7F        LDA #$7F
 C0/BCDF: 48           PHA

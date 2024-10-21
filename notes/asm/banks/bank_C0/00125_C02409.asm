@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2409
+Routine_C02409:
 C0/2409: AF E8 1C 7F  LDA $7F1CE8
 C0/240D: F0 07        BEQ $2416
 C0/240F: 3A           DEC

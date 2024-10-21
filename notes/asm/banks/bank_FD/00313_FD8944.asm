@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8944
+Routine_FD8944:
 FD/8944: 02 24        COP $24
 FD/8946: 3C 22 A3     BIT $A322,X
 FD/8949: 3E 3F 00     ROL $003F,X

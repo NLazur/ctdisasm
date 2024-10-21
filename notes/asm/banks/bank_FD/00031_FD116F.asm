@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 116F
+Routine_FD116F:
 FD/116F: 10 50        BPL $11C1
 FD/1171: B0 58        BCS $11CB
 FD/1173: E0 C0        CPX #$C0

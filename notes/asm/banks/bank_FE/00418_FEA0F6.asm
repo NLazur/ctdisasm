@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: A0F6
+Routine_FEA0F6:
 FE/A0F6: E7 20        SBC [$20]
 FE/A0F8: 02 00        COP $00
 FE/A0FA: 71 74        ADC ($74),Y

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 1B19
+Routine_C11B19:
 C1/1B19: A5 A1        LDA $A1
 C1/1B1B: AA           TAX
 C1/1B1C: BD D9 A6     LDA $A6D9,X

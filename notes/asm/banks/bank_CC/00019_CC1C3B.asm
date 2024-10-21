@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1C3B
+Routine_CC1C3B:
 CC/1C3B: 04 00        TSB $00
 CC/1C3D: 07 80        ORA [$80]
 CC/1C3F: 80 14        BRA $1C55

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: D27E
+Routine_FDD27E:
 FD/D27E: AD 27 01     LDA $0127
 FD/D281: D0 03        BNE $D286
 FD/D283: 82 C1 F5     BRL $FDC847

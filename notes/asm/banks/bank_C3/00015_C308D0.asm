@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 08D0
+Routine_C308D0:
 C3/08D0: E2 20        SEP #$20
 C3/08D2: F4 00 00     PEA $0000
 C3/08D5: 2B           PLD

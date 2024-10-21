@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B201
+Routine_FDB201:
 FD/B201: AD BD B3     LDA $B3BD
 FD/B204: F0 1C        BEQ $B222
 FD/B206: C2 20        REP #$20

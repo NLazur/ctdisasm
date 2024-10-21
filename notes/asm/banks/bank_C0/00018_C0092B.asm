@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 092B
+Routine_C0092B:
 C0/092B: A5 01        LDA $01         ; calculate pointer to map properties
 C0/092D: 29 01        AND #$01
 C0/092F: D0 14        BNE $0945

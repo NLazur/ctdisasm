@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5FA0
+Routine_C25FA0:
 C2/5FA0: 4A           LSR
 C2/5FA1: 4A           LSR
 C2/5FA2: 4A           LSR

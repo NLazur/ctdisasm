@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EE23
+Routine_C2EE23:
 C2/EE23: A6 65        LDX $65
 C2/EE25: A5 08        LDA $08
 C2/EE27: 9D 00 00     STA $0000,X

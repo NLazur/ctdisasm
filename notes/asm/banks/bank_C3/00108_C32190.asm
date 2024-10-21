@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2190
+Routine_C32190:
 C3/2190: 00 85        BRK $85
 C3/2192: 30 20        BMI $21B4
 C3/2194: 09 43 A5     ORA #$A543

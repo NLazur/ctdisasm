@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 68B4
+Routine_FD68B4:
 FD/68B4: 10 00        BPL $68B6
 FD/68B6: 00 52        BRK $52
 FD/68B8: 42 10        WDM $10

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7B27
+Routine_FD7B27:
 FD/7B27: 0A           ASL
 FD/7B28: 80 FF        BRA $7B29
 FD/7B2A: C0 3F        CPY #$3F

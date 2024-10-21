@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: ED37
+Routine_CDED37:
 CD/ED37: ED 61 ED     SBC $ED61
 CD/ED3A: 62 ED 63     PER $CD512A
 CD/ED3D: ED 64 ED     SBC $ED64

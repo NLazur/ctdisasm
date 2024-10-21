@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F722
+Routine_FDF722:
 FD/F722: C0 79        CPY #$79
 FD/F724: C0 7E        CPY #$7E
 FD/F726: 80 80        BRA $F6A8

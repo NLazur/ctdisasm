@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1BD7
+Routine_FD1BD7:
 FD/1BD7: 01 00        ORA ($00,X)
 FD/1BD9: D7 02        CMP [$02],Y
 FD/1BDB: DA           PHX

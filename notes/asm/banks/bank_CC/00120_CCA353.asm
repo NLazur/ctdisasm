@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: A353
+Routine_CCA353:
 CC/A353: 00 39        BRK $39
 CC/A355: FE 00 00     INC $0000,X
 CC/A358: 00 00        BRK $00

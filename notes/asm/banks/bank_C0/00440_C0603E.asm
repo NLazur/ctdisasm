@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 603E
+Routine_C0603E:
 C0/603E: 8D 02 42     STA $4202
 C0/6041: A9 80        LDA #$80
 C0/6043: 8D 03 42     STA $4203

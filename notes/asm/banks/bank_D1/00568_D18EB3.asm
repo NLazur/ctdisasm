@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 8EB3
+Routine_D18EB3:
 D1/8EB3: 80 70        BRA $8F25
 D1/8EB5: 00 8A        BRK $8A
 D1/8EB7: 41 80        EOR ($80,X)

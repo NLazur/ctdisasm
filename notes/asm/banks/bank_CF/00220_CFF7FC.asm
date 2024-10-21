@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F7FC
+Routine_CFF7FC:
 CF/F7FC: A5 C6        LDA $C6
 CF/F7FE: A8           TAY
 CF/F7FF: 85 00        STA $00

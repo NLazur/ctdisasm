@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A979
+Routine_C6A979:
 C6/A979: 0C 12 12     TSB $1212
 C6/A97C: C1 E5        CMP ($E5,X)
 C6/A97E: 03 50        ORA $50,S

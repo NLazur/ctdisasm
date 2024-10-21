@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E18A
+Routine_C2E18A:
 C2/E18A: 08           PHP
 C2/E18B: E2 30        SEP #$30
 C2/E18D: 20 6E 91     JSR $916E

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7D44
+Routine_FD7D44:
 FD/7D44: DF E7 DF E7  CMP $E7DFE7,X
 FD/7D48: C7 FF        CMP [$FF]
 FD/7D4A: 80 AB        BRA $7CF7

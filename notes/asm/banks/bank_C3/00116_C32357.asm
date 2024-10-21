@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2357
+Routine_C32357:
 C3/2357: AD 50 0C     LDA $0C50
 C3/235A: 0A           ASL
 C3/235B: 4A           LSR

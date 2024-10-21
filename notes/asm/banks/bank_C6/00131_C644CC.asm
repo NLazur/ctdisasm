@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 44CC
+Routine_C644CC:
 C6/44CC: 31 2F        AND ($2F),Y
 C6/44CE: 31 4E        AND ($4E),Y
 C6/44D0: 31 1F        AND ($1F),Y

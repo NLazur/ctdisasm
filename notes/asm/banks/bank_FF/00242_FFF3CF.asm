@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F3CF
+Routine_FFF3CF:
 FF/F3CF: 73 52        ADC ($52,S),Y
 FF/F3D1: 73 51        ADC ($51,S),Y
 FF/F3D3: 12 5F        ORA ($5F)

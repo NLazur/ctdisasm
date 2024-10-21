@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E006
+Routine_C1E006:
 C1/E006: AD FD B1     LDA $B1FD
 C1/E009: AA           TAX
 C1/E00A: C2 20        REP #$20

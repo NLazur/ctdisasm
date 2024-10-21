@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AAB0
+Routine_FDAAB0:
 FD/AAB0: 7B           TDC
 FD/AAB1: 8F EE 01 7F  STA $7F01EE
 FD/AAB5: AA           TAX

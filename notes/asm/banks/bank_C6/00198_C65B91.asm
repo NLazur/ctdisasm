@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5B91
+Routine_C65B91:
 C6/5B91: 2B           PLD
 C6/5B92: 58           CLI
 C6/5B93: AB           PLB

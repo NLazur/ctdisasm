@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 1180
+Routine_FE1180:
 FE/1180: 01 F8        ORA ($F8,X)
 FE/1182: 7A           PLY
 FE/1183: 2D 40 E0     AND $E040

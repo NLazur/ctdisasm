@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F141
+Routine_C3F141:
 C3/F141: FF 00 48 40  SBC $404800,X
 C3/F145: 05 F8        ORA $F8
 C3/F147: E4 82        CPX $82

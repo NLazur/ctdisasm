@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1E66
+Routine_C01E66:
 C0/1E66: 29 FF        AND #$FF
 C0/1E68: 01 8F        ORA ($8F,X)
 C0/1E6A: 00 02        BRK $02

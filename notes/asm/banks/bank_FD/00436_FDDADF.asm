@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: DADF
+Routine_FDDADF:
 FD/DADF: 00 B0        BRK $B0
 FD/DAE1: 06 64        ASL $64
 FD/DAE3: 23 A9        AND $A9,S

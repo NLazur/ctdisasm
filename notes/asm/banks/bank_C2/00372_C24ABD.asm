@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4ABD
+Routine_C24ABD:
 C2/4ABD: 04 20        TSB $20
 C2/4ABF: F6 C6        INC $C6,X
 C2/4AC1: 08           PHP

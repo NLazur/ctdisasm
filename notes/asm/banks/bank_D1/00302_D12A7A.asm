@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2A7A
+Routine_D12A7A:
 D1/2A7A: 04 41        TSB $41
 D1/2A7C: 42 02        WDM $02
 D1/2A7E: 0A           ASL

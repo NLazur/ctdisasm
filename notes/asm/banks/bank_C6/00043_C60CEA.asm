@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0CEA
+Routine_C60CEA:
 C6/0CEA: FD 73 35     SBC $3573,X
 C6/0CED: 98           TYA
 C6/0CEE: C0 F0 2C     CPY #$2CF0

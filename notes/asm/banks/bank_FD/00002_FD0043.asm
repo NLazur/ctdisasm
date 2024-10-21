@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 0043
+Routine_FD0043:
 FD/0043: 09 04        ORA #$04
 FD/0045: 00 4A        BRK $4A
 FD/0047: BC 10 08     LDY $0810,X

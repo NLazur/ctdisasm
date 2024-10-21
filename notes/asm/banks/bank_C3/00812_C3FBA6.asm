@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FBA6
+Routine_C3FBA6:
 C3/FBA6: 06 EA        ASL $EA
 C3/FBA8: 64 40        STZ $40
 C3/FBAA: 00 F0        BRK $F0

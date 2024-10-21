@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: A150
+Routine_CFA150:
 CF/A150: 1C 20 1C     TRB $1C20
 CF/A153: 20 1C 20     JSR $201C
 CF/A156: 1C 20 32     TRB $3220

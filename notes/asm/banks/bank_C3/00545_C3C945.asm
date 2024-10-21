@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C945
+Routine_C3C945:
 C3/C945: 2E 00 00     ROL $0000
 C3/C948: 02 00        COP $00
 C3/C94A: 2F 05 10 32  AND $321005

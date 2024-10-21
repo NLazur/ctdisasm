@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 27DE
+Routine_CC27DE:
 CC/27DE: 01 90        ORA ($90,X)
 CC/27E0: 28           PLP
 CC/27E1: A4 6C        LDY $6C

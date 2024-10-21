@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 80F0
+Routine_FE80F0:
 FE/80F0: 34 3B        BIT $3B,X
 FE/80F2: 3B           TSC
 FE/80F3: 3C 7A 20     BIT $207A,X

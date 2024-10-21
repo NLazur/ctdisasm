@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 79B9
+Routine_C679B9:
 C6/79B9: 61 62        ADC ($62,X)
 C6/79BB: 63 F8        ADC $F8,S
 C6/79BD: 64 B1        STZ $B1

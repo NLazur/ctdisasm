@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9542
+Routine_C29542:
 C2/9542: 8B           PHB
 C2/9543: 08           PHP
 C2/9544: C2 30        REP #$30

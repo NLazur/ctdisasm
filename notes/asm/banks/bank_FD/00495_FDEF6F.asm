@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EF6F
+Routine_FDEF6F:
 FD/EF6F: A2 00 20     LDX #$2000
 FD/EF72: 8E 81 21     STX $2181
 FD/EF75: A9 7E        LDA #$7E

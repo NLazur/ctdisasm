@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 10B7
+Routine_FD10B7:
 FD/10B7: DC 60 DE     JMP [$DE60]
 FD/10BA: 90 9C        BCC $1058
 FD/10BC: 30 02        BMI $10C0

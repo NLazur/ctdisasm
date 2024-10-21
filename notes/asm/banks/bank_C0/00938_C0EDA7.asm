@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EDA7
+Routine_C0EDA7:
 C0/EDA7: 3A           DEC
 C0/EDA8: F0 03        BEQ $EDAD
 C0/EDAA: 82 DE 00     BRL $C0EE8B

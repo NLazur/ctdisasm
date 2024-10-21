@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6CB6
+Routine_C36CB6:
 C3/6CB6: 1A           INC
 C3/6CB7: 00 82        BRK $82
 C3/6CB9: 33 10        AND ($10,S),Y

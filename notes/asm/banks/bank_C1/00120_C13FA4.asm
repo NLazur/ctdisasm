@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3FA4
+Routine_C13FA4:
 C1/3FA4: 80 12        BRA $3FB8
 C1/3FA6: C9 17 D0     CMP #$D017
 C1/3FA9: 08           PHP

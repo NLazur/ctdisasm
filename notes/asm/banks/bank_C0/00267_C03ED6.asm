@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3ED6
+Routine_C03ED6:
 C0/3ED6: A9 04        LDA #$04
 C0/3ED8: 04 54        TSB $54
 C0/3EDA: BB           TYX

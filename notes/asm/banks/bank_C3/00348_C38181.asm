@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8181
+Routine_C38181:
 C3/8181: 5D 04 F5     EOR $F504,X
 C3/8184: 18           CLC
 C3/8185: 17 29        ORA [$29],Y

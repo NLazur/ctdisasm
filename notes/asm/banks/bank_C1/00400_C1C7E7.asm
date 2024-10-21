@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C7E7
+Routine_C1C7E7:
 C1/C7E7: A5 0A        LDA $0A
 C1/C7E9: 8D 04 96     STA $9604
 C1/C7EC: A5 02        LDA $02

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 212E
+Routine_C0212E:
 C0/212E: C9 09        CMP #$09
 C0/2130: F0 2F        BEQ $2161
 C0/2132: C9 0A        CMP #$0A

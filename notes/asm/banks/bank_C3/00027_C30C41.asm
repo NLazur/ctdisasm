@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0C41
+Routine_C30C41:
 C3/0C41: B2 20        LDA ($20)
 C3/0C43: AA           TAX
 C3/0C44: E6 20        INC $20

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9726
+Routine_C09726:
 C0/9726: 85 66        STA $66
 C0/9728: E6 FB        INC $FB
 C0/972A: E6 FB        INC $FB

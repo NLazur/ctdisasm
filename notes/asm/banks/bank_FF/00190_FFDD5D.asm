@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DD5D
+Routine_FFDD5D:
 FF/DD5D: 0A           ASL
 FF/DD5E: 12 04        ORA ($04)
 FF/DD60: 00 00        BRK $00

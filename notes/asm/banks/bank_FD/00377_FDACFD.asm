@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: ACFD
+Routine_FDACFD:
 FD/ACFD: 7B           TDC
 FD/ACFE: AA           TAX
 FD/ACFF: 9D 28 B3     STA $B328,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9514
+Routine_C09514:
 C0/9514: 85 66        STA $66
 C0/9516: A6 8B        LDX $8B
 C0/9518: E8           INX

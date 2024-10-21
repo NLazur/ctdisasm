@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B093
+Routine_C1B093:
 C1/B093: BD 2F 5E     LDA $5E2F,X
 C1/B096: 29 FE        AND #$FE
 C1/B098: 9D 2F 5E     STA $5E2F,X

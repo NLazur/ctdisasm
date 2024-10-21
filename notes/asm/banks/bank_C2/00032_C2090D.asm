@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 090D
+Routine_C2090D:
 C2/090D: A5 08        LDA $08
 C2/090F: 4A           LSR
 C2/0910: 4A           LSR

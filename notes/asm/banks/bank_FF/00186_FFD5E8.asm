@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: D5E8
+Routine_FFD5E8:
 FF/D5E8: DA           PHX
 FF/D5E9: 28           PLP
 FF/D5EA: 9D B2 5F     STA $5FB2,X

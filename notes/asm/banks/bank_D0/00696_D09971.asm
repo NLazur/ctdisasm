@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9971
+Routine_D09971:
 D0/9971: E0 00        CPX #$00
 D0/9973: 00 00        BRK $00
 D0/9975: 80 50        BRA $99C7

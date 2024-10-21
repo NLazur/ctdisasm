@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 096B
+Routine_C0096B:
 C0/096B: 8D 02 42     STA $4202       ; * 8
 C0/096E: A9 08        LDA #$08
 C0/0970: 8D 03 42     STA $4203

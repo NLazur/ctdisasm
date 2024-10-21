@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3BA9
+Routine_FD3BA9:
 FD/3BA9: 9F 60 06 19  STA $190660,X
 FD/3BAD: 61 61        ADC ($61,X)
 FD/3BAF: 00 30        BRK $30

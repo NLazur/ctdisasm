@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3BF7
+Routine_FD3BF7:
 FD/3BF7: 5F 2E 8B D0  EOR $D08B2E,X
 FD/3BFB: C5 D8        CMP $D8
 FD/3BFD: 00 34        BRK $34

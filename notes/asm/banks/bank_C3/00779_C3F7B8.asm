@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F7B8
+Routine_C3F7B8:
 C3/F7B8: 05 F8        ORA $F8
 C3/F7BA: F0 00        BEQ $F7BC
 C3/F7BC: 01 F0        ORA ($F0,X)

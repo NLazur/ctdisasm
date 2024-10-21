@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 7460
+Routine_CE7460:
 CE/7460: 01 C2        ORA ($C2,X)
 CE/7462: 2B           PLD
 CE/7463: 38           SEC

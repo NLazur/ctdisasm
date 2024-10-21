@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DBEA
+Routine_C3DBEA:
 C3/DBEA: 00 40        BRK $40
 C3/DBEC: 18           CLC
 C3/DBED: 4E 25 00     LSR $0025

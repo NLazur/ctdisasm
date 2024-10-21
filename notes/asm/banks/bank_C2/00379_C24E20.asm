@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4E20
+Routine_C24E20:
 C2/4E20: BD 22 00     LDA $0022,X
 C2/4E23: 1D 24 00     ORA $0024,X
 C2/4E26: 1D 2E 00     ORA $002E,X

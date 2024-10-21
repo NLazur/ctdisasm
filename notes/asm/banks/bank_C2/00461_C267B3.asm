@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 67B3
+Routine_C267B3:
 C2/67B3: A6 08        LDX $08
 C2/67B5: 8E 04 42     STX $4204
 C2/67B8: A5 0C        LDA $0C

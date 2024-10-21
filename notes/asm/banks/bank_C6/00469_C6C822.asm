@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C822
+Routine_C6C822:
 C6/C822: 25 30        AND $30
 C6/C824: 26 30        ROL $30
 C6/C826: 27 40        AND [$40]

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 4C43
+Routine_CE4C43:
 CE/4C43: 00 20        BRK $20
 CE/4C45: 10 33        BPL $4C7A
 CE/4C47: 03 41        ORA $41,S

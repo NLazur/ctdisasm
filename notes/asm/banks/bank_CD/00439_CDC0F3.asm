@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C0F3
+Routine_CDC0F3:
 CD/C0F3: 78           SEI
 CD/C0F4: FF 80 51 36  SBC $365180,X
 CD/C0F8: 06 03        ASL $03

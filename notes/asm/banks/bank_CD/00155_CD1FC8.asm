@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1FC8
+Routine_CD1FC8:
 CD/1FC8: A7 40        LDA [$40]
 CD/1FCA: 85 45        STA $45
 CD/1FCC: C2 20        REP #$20

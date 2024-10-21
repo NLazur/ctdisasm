@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0BA7
+Routine_D10BA7:
 D1/0BA7: EA           NOP
 D1/0BA8: 69 10        ADC #$10
 D1/0BAA: 45 8B        EOR $8B

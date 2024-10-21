@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AF56
+Routine_C6AF56:
 C6/AF56: 1A           INC
 C6/AF57: 56 08        LSR $08,X
 C6/AF59: 15 16        ORA $16,X

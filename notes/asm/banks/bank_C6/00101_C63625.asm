@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3625
+Routine_C63625:
 C6/3625: 00 1B        BRK $1B
 C6/3627: 41 1B        EOR ($1B,X)
 C6/3629: 50 1B        BVC $3646

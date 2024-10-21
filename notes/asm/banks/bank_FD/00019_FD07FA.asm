@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 07FA
+Routine_FD07FA:
 FD/07FA: 99 68 87     STA $8768,Y
 FD/07FD: 97 99        STA [$99],Y
 FD/07FF: 78           SEI

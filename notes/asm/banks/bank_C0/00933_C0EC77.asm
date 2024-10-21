@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EC77
+Routine_C0EC77:
 C0/EC77: AE E5 0B     LDX $0BE5
 C0/EC7A: 8E 16 21     STX $2116
 C0/EC7D: A9 80        LDA #$80

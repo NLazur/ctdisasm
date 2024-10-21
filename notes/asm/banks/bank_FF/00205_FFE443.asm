@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E443
+Routine_FFE443:
 FF/E443: CB           WAI
 FF/E444: 23 E3        AND $E3,S
 FF/E446: F0 F0        BEQ $E438

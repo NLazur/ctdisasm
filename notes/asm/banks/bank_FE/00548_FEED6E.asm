@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: ED6E
+Routine_FEED6E:
 FE/ED6E: 18           CLC
 FE/ED6F: 32 18        AND ($18)
 FE/ED71: 10 50        BPL $EDC3

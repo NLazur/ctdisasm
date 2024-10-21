@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: AF4A
+Routine_C3AF4A:
 C3/AF4A: 04 C0        TSB $C0
 C3/AF4C: 08           PHP
 C3/AF4D: 00 00        BRK $00

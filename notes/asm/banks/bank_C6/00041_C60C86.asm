@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0C86
+Routine_C60C86:
 C6/0C86: 81 5A        STA ($5A,X)
 C6/0C88: 84 C0        STY $C0
 C6/0C8A: 80 40        BRA $0CCC

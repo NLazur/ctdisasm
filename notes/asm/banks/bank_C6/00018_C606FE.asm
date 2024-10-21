@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 06FE
+Routine_C606FE:
 C6/06FE: 00 85        BRK $85
 C6/0700: 61 83        ADC ($83,X)
 C6/0702: 63 CB        ADC $CB,S

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 7BDA
+Routine_CE7BDA:
 CE/7BDA: 20 0A D8     JSR $D80A
 CE/7BDD: 30 01        BMI $7BE0
 CE/7BDF: FF 22 10 01  SBC $011022,X

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 05A7
+Routine_C105A7:
 C1/05A7: AD DB A6     LDA $A6DB
 C1/05AA: 30 10        BMI $05BC
 C1/05AC: AD 9A A0     LDA $A09A

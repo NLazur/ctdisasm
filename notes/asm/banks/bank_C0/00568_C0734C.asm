@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 734C
+Routine_C0734C:
 C0/734C: A5 54        LDA $54
 C0/734E: 30 1E        BMI $736E
 C0/7350: A6 6D        LDX $6D

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 61E6
+Routine_FE61E6:
 FE/61E6: 4F 10 18 78  EOR $781810
 FE/61EA: 01 44        ORA ($44,X)
 FE/61EC: 54 00 90     MVN $00,$90

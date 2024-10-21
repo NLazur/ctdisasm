@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: F00B
+Routine_D0F00B:
 D0/F00B: 20 EE 52     JSR $52EE
 D0/F00E: ED 04 52     SBC $5204
 D0/F011: EC DE 10     CPX $10DE

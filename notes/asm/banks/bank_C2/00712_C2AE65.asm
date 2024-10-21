@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AE65
+Routine_C2AE65:
 C2/AE65: 08           PHP
 C2/AE66: E2 20        SEP #$20
 C2/AE68: 7B           TDC

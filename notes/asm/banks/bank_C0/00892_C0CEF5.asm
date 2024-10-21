@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CEF5
+Routine_C0CEF5:
 C0/CEF5: BD 00 12     LDA $1200,X
 C0/CEF8: 85 CF        STA $CF
 C0/CEFA: A9 7F        LDA #$7F

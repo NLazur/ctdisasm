@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C90B
+Routine_C1C90B:
 C1/C90B: C2 20        REP #$20
 C1/C90D: A2 10 00     LDX #$0010
 C1/C910: 64 2C        STZ $2C

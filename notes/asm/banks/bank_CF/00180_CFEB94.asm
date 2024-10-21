@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EB94
+Routine_CFEB94:
 CF/EB94: BD 02 00     LDA $0002,X
 CF/EB97: 99 02 00     STA $0002,Y
 CF/EB9A: BD 06 00     LDA $0006,X

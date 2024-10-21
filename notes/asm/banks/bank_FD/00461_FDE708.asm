@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E708
+Routine_FDE708:
 FD/E708: B9 22 05     LDA $0522,Y
 FD/E70B: A8           TAY
 FD/E70C: BF 00 20 7E  LDA $7E2000,X

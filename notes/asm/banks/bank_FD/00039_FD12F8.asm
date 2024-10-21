@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 12F8
+Routine_FD12F8:
 FD/12F8: 5D E9 D9     EOR $D9E9,X
 FD/12FB: E0 5F        CPX #$5F
 FD/12FD: 80 60        BRA $135F

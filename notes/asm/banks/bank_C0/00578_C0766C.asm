@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 766C
+Routine_C0766C:
 C0/766C: 4A           LSR
 C0/766D: 25 1E        AND $1E
 C0/766F: 85 52        STA $52

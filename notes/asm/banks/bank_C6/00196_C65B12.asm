@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5B12
+Routine_C65B12:
 C6/5B12: F0 86        BEQ $5A9A
 C6/5B14: 18           CLC
 C6/5B15: 87 18        STA [$18]

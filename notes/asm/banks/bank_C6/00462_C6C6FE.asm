@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C6FE
+Routine_C6C6FE:
 C6/C6FE: A1 0E        LDA ($0E,X)
 C6/C700: 0F 3F FD E1  ORA $E1FD3F
 C6/C704: 33 18        AND ($18,S),Y

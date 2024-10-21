@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 84F6
+Routine_FE84F6:
 FE/84F6: 90 F6        BCC $84EE
 FE/84F8: 07 4B        ORA [$4B]
 FE/84FA: 30 04        BMI $8500

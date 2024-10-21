@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2CE0
+Routine_C12CE0:
 C1/2CE0: AD 6F 98     LDA $986F
 C1/2CE3: AA           TAX
 C1/2CE4: BD 0C 1D     LDA $1D0C,X

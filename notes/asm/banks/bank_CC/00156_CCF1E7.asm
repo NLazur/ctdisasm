@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F1E7
+Routine_CCF1E7:
 CC/F1E7: 7B           TDC
 CC/F1E8: AA           TAX
 CC/F1E9: 86 80        STX $80

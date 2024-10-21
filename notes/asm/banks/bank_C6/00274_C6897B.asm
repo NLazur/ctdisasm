@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 897B
+Routine_C6897B:
 C6/897B: 61 62        ADC ($62,X)
 C6/897D: 63 2A        ADC $2A,S
 C6/897F: 11 07        ORA ($07),Y

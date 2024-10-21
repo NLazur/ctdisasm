@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EAE9
+Routine_FFEAE9:
 FF/EAE9: 4E B2 BE     LSR $BEB2
 FF/EAEC: 52 78        EOR ($78)
 FF/EAEE: 08           PHP

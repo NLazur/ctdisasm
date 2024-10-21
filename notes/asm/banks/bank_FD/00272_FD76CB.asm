@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 76CB
+Routine_FD76CB:
 FD/76CB: 58           CLI
 FD/76CC: E0 D8        CPX #$D8
 FD/76CE: 02 00        COP $00

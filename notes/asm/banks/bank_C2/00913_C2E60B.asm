@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E60B
+Routine_C2E60B:
 C2/E60B: 13 E6        ORA ($E6,S),Y
 C2/E60D: 1B           TCS
 C2/E60E: E6 AE        INC $AE

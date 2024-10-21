@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F3CA
+Routine_C2F3CA:
 C2/F3CA: 0B           PHD
 C2/F3CB: 08           PHP
 C2/F3CC: F4 00 18     PEA $1800

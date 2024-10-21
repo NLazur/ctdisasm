@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 960A
+Routine_C3960A:
 C3/960A: 43 0F        EOR $0F,S
 C3/960C: 01 38        ORA ($38,X)
 C3/960E: 04 4E        TSB $4E

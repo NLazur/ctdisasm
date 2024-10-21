@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6A19
+Routine_D06A19:
 D0/6A19: C0 90        CPY #$90
 D0/6A1B: F0 C2        BEQ $69DF
 D0/6A1D: 4E D0 31     LSR $31D0

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 75C3
+Routine_C275C3:
 C2/75C3: AD 94 02     LDA $0294
 C2/75C6: 89 10 D0     BIT #$D010
 C2/75C9: 31 C2        AND ($C2),Y

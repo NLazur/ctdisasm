@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DF3E
+Routine_C3DF3E:
 C3/DF3E: 91 00        STA ($00),Y
 C3/DF40: 00 CE        BRK $CE
 C3/DF42: 39 FF 7F     AND $7FFF,Y

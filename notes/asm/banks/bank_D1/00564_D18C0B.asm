@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 8C0B
+Routine_D18C0B:
 D1/8C0B: 8B           PHB
 D1/8C0C: 00 82        BRK $82
 D1/8C0E: 61 8F        ADC ($8F,X)

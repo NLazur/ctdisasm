@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 30B2
+Routine_C230B2:
 C2/30B2: AD 7E 02     LDA $027E
 C2/30B5: 8D 7F 02     STA $027F
 C2/30B8: 7B           TDC

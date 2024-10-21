@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 095E
+Routine_C6095E:
 C6/095E: F8           SED
 C6/095F: FE 00 FE     INC $FE00,X
 C6/0962: EC 00 8C     CPX $8C00

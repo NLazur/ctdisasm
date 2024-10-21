@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 34AD
+Routine_C234AD:
 C2/34AD: A6 4E        LDX $4E
 C2/34AF: 9E 02 00     STZ $0002,X
 C2/34B2: C2 20        REP #$20

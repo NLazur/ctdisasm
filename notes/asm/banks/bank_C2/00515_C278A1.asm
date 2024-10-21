@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 78A1
+Routine_C278A1:
 C2/78A1: A6 4E        LDX $4E
 C2/78A3: C2 20        REP #$20
 C2/78A5: BD 14 00     LDA $0014,X

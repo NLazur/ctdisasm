@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 44FB
+Routine_D144FB:
 D1/44FB: 1C C7 18     TRB $18C7
 D1/44FE: FF 7F 3E 37  SBC $373E7F,X
 D1/4502: 77 1A        ADC [$1A],Y

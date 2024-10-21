@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 43D5
+Routine_FD43D5:
 FD/43D5: 8F 1F 38 06  STA $06381F
 FD/43D9: 0F BA 09 81  ORA $8109BA
 FD/43DD: 00 7F        BRK $7F

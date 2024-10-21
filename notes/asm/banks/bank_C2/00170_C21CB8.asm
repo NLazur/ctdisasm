@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1CB8
+Routine_C21CB8:
 C2/1CB8: A6 4E        LDX $4E
 C2/1CBA: BD 14 00     LDA $0014,X
 C2/1CBD: 10 06        BPL $1CC5

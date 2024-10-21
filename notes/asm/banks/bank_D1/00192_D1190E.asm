@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 190E
+Routine_D1190E:
 D1/190E: 01 60        ORA ($60,X)
 D1/1910: 41 2F        EOR ($2F,X)
 D1/1912: 10 0A        BPL $191E

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 61D8
+Routine_C661D8:
 C6/61D8: 79 02 00     ADC $0002,Y
 C6/61DB: E1 08        SBC ($08,X)
 C6/61DD: 09 40        ORA #$40

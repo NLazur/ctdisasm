@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1E56
+Routine_CC1E56:
 CC/1E56: 42 00        WDM $00
 CC/1E58: 38           SEC
 CC/1E59: 80 80        BRA $1DDB

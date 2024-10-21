@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AEAA
+Routine_C6AEAA:
 C6/AEAA: 11 12        ORA ($12),Y
 C6/AEAC: 15 16        ORA $16,X
 C6/AEAE: 06 0A        ASL $0A

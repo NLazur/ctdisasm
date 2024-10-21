@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0165
+Routine_C60165:
 C6/0165: BC 40 FE     LDY $FE40,X
 C6/0168: 00 00        BRK $00
 C6/016A: FF 00 AF ED  SBC $EDAF00,X

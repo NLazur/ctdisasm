@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AA83
+Routine_C2AA83:
 C2/AA83: 4C 98 9A     JMP $9A98
 C2/AA86: A2 FF FF     LDX #$FFFF
 C2/AA89: 8E 00 0F     STX $0F00

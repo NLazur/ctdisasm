@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E290
+Routine_CCE290:
 CC/E290: A9 70 8F     LDA #$8F70
 CC/E293: 72 43        ADC ($43)
 CC/E295: 00 A9        BRK $A9

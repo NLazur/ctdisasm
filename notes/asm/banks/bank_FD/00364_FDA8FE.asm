@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: A8FE
+Routine_FDA8FE:
 FD/A8FE: 7B           TDC
 FD/A8FF: A5 14        LDA $14
 FD/A901: AA           TAX

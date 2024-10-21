@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E7FA
+Routine_C6E7FA:
 C6/E7FA: C2 20        REP #$20
 C6/E7FC: 8B           PHB
 C6/E7FD: A2 00 90     LDX #$9000

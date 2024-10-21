@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DE56
+Routine_C2DE56:
 C2/DE56: A5 00        LDA $00
 C2/DE58: 8F 04 42 00  STA $004204
 C2/DE5C: A9 0A        LDA #$0A

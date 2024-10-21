@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8413
+Routine_C38413:
 C3/8413: 03 A0        ORA $A0,S
 C3/8415: 01 00        ORA ($00,X)
 C3/8417: D0 80        BNE $8399

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EBB8
+Routine_D0EBB8:
 D0/EBB8: 00 8D        BRK $8D
 D0/EBBA: 0E 8E 0E     ASL $0E8E
 D0/EBBD: 8F 0E 40 8F  STA $8F400E

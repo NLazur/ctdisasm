@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3362
+Routine_D03362:
 D0/3362: 20 40 30     JSR $3040
 D0/3365: D0 70        BNE $33D7
 D0/3367: 10 00        BPL $3369

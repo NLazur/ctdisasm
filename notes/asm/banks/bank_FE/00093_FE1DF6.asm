@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 1DF6
+Routine_FE1DF6:
 FE/1DF6: 41 44        EOR ($44,X)
 FE/1DF8: 44 3D 34     MVP $3D,$34
 FE/1DFB: E1 02        SBC ($02,X)

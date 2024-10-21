@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6EFB
+Routine_C66EFB:
 C6/6EFB: 08           PHP
 C6/6EFC: 70 71        BVS $6F6F
 C6/6EFE: 72 73        ADC ($73)

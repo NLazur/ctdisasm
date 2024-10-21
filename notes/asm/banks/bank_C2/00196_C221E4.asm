@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 21E4
+Routine_C221E4:
 C2/21E4: 9E 03 00     STZ $0003,X
 C2/21E7: A5 1F        LDA $1F
 C2/21E9: 29 F0        AND #$F0

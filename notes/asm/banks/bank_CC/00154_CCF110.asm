@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F110
+Routine_CCF110:
 CC/F110: C2 20        REP #$20
 CC/F112: A2 FD 7B     LDX #$7BFD
 CC/F115: A0 FD 7C     LDY #$7CFD

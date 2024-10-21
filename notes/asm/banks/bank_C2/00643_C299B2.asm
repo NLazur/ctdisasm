@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 99B2
+Routine_C299B2:
 C2/99B2: 08           PHP
 C2/99B3: C2 30        REP #$30
 C2/99B5: 64 02        STZ $02

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3BAB
+Routine_CD3BAB:
 CD/3BAB: 64 27        STZ $27
 CD/3BAD: 64 29        STZ $29
 CD/3BAF: A5 23        LDA $23

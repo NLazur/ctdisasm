@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1D85
+Routine_CC1D85:
 CC/1D85: 04 00        TSB $00
 CC/1D87: 25 80        AND $80
 CC/1D89: 80 00        BRA $1D8B

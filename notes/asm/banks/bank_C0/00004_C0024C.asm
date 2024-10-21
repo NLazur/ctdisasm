@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 024C
+Routine_C0024C:
 C0/024C: E2 10        SEP #$10
 C0/024E: 20 17 06     JSR $0617
 C0/0251: C2 10        REP #$10

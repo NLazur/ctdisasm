@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2384
+Routine_C02384:
 C0/2384: 64 39        STZ $39
 C0/2386: C6 3C        DEC $3C
 C0/2388: 80 A6        BRA $2330

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C74E
+Routine_C3C74E:
 C3/C74E: 10 2F        BPL $C77F
 C3/C750: 00 C0        BRK $C0
 C3/C752: 05 12        ORA $12

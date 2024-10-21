@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: AFE0
+Routine_C3AFE0:
 C3/AFE0: 01 01        ORA ($01,X)
 C3/AFE2: 08           PHP
 C3/AFE3: 02 02        COP $02

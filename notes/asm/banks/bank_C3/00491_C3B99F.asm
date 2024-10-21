@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B99F
+Routine_C3B99F:
 C3/B99F: 78           SEI
 C3/B9A0: 80 05        BRA $B9A7
 C3/B9A2: 64 31        STZ $31

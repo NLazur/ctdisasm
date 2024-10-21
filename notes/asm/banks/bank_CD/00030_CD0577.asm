@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0577
+Routine_CD0577:
 CD/0577: 7B           TDC
 CD/0578: AA           TAX
 CD/0579: FE 6A C8     INC $C86A,X

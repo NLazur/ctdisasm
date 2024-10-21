@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B45B
+Routine_C0B45B:
 C0/B45B: BF 01 4F 7F  LDA $7F4F01,X
 C0/B45F: 48           PHA
 C0/B460: BF 00 4F 7F  LDA $7F4F00,X

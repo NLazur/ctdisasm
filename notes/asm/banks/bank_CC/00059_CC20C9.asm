@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 20C9
+Routine_CC20C9:
 CC/20C9: 42 00        WDM $00
 CC/20CB: 18           CLC
 CC/20CC: 1B           TCS

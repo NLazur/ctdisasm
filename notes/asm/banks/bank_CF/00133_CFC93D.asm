@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: C93D
+Routine_CFC93D:
 CF/C93D: 33 6D        AND ($6D,S),Y
 CF/C93F: 33 6F        AND ($6F,S),Y
 CF/C941: 33 1C        AND ($1C,S),Y

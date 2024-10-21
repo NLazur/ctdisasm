@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1BC6
+Routine_C61BC6:
 C6/1BC6: E8           INX
 C6/1BC7: 20 2C C4     JSR $C42C
 C6/1BCA: 3C C8 5B     BIT $5BC8,X

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3AF5
+Routine_C33AF5:
 C3/3AF5: 00 7A        BRK $7A
 C3/3AF7: 2A           ROL
 C3/3AF8: 00 50        BRK $50

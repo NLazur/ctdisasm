@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 79A1
+Routine_C179A1:
 C1/79A1: D7 75        CMP [$75],Y
 C1/79A3: D7 75        CMP [$75],Y
 C1/79A5: D7 75        CMP [$75],Y

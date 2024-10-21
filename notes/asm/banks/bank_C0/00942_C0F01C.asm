@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F01C
+Routine_C0F01C:
 C0/F01C: A9 80        LDA #$80
 C0/F01E: 8D 15 21     STA $2115
 C0/F021: C2 20        REP #$20

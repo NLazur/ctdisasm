@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 2CE3
+Routine_CE2CE3:
 CE/2CE3: D0 0C        BNE $2CF1
 CE/2CE5: 1E 2A 03     ASL $032A,X
 CE/2CE8: 03 D1        ORA $D1,S

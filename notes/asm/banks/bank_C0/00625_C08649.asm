@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8649
+Routine_C08649:
 C0/8649: A6 EF        LDX $EF
 C0/864B: F0 17        BEQ $8664
 C0/864D: C2 20        REP #$20

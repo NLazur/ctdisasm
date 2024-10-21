@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: C2C2
+Routine_CFC2C2:
 CF/C2C2: 1C 20 F3     TRB $F320
 CF/C2C5: 2F F5 2F F7  AND $F72FF5
 CF/C2C9: 2F F9 2F FB  AND $FB2FF9

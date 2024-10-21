@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 71D2
+Routine_CE71D2:
 CE/71D2: 01 02        ORA ($02,X)
 CE/71D4: 01 23        ORA ($23,X)
 CE/71D6: 02 70        COP $70

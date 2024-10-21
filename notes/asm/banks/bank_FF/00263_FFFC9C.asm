@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FC9C
+Routine_FFFC9C:
 FF/FC9C: 08           PHP
 FF/FC9D: E2 30        SEP #$30
 FF/FC9F: AD 17 18     LDA $1817

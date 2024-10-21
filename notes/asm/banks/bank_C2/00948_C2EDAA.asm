@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EDAA
+Routine_C2EDAA:
 C2/EDAA: 20 B0 ED     JSR $EDB0
 C2/EDAD: 4C 7F EE     JMP $EE7F
 C2/EDB0: 20 D3 ED     JSR $EDD3

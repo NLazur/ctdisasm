@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0961
+Routine_C20961:
 C2/0961: A5 0A        LDA $0A
 C2/0963: 29 F8 00     AND #$00F8
 C2/0966: 0A           ASL

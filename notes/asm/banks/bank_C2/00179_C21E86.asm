@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1E86
+Routine_C21E86:
 C2/1E86: A6 4E        LDX $4E
 C2/1E88: BC 07 00     LDY $0007,X
 C2/1E8B: B9 20 0B     LDA $0B20,Y

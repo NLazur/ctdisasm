@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3273
+Routine_CD3273:
 CD/3273: E2 10        SEP #$10
 CD/3275: 7B           TDC
 CD/3276: A8           TAY

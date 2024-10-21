@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: ED31
+Routine_C2ED31:
 C2/ED31: 8B           PHB
 C2/ED32: 08           PHP
 C2/ED33: E2 20        SEP #$20

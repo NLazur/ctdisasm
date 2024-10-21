@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 63B4
+Routine_FD63B4:
 FD/63B4: 04 3B        TSB $3B
 FD/63B6: F8           SED
 FD/63B7: 01 F8        ORA ($F8,X)

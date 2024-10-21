@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4DA4
+Routine_D04DA4:
 D0/4DA4: 00 00        BRK $00
 D0/4DA6: 00 00        BRK $00
 D0/4DA8: 48           PHA

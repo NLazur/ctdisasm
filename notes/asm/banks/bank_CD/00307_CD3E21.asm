@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3E21
+Routine_CD3E21:
 CD/3E21: A5 45        LDA $45
 CD/3E23: 8F 02 42 00  STA $004202
 CD/3E27: A5 47        LDA $47

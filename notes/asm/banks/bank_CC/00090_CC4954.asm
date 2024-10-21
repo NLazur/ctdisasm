@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 4954
+Routine_CC4954:
 CC/4954: 00 00        BRK $00
 CC/4956: 36 00        ROL $00,X
 CC/4958: 0C 00 00     TSB $0000

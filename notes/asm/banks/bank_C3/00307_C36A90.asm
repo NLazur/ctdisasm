@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6A90
+Routine_C36A90:
 C3/6A90: AD 0E 0A     LDA $0A0E
 C3/6A93: 8D 10 0F     STA $0F10
 C3/6A96: 21 AD        AND ($AD,X)

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3714
+Routine_C13714:
 C1/3714: AD E0 99     LDA $99E0
 C1/3717: D0 21        BNE $373A
 C1/3719: 7B           TDC

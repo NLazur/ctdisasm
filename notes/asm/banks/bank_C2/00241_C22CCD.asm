@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2CCD
+Routine_C22CCD:
 C2/2CCD: 20 70 2D     JSR $2D70
 C2/2CD0: 20 61 2B     JSR $2B61
 C2/2CD3: A2 00 B0     LDX #$B000

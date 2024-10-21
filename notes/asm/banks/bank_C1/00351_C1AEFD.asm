@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AEFD
+Routine_C1AEFD:
 C1/AEFD: AD CF B1     LDA $B1CF
 C1/AF00: 89 01        BIT #$01
 C1/AF02: D0 09        BNE $AF0D

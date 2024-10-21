@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3772
+Routine_C23772:
 C2/3772: C2 20        REP #$20
 C2/3774: A6 4E        LDX $4E
 C2/3776: AD 3B 1B     LDA $1B3B

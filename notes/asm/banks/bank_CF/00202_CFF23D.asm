@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F23D
+Routine_CFF23D:
 CF/F23D: A6 C8        LDX $C8
 CF/F23F: BD DE A9     LDA $A9DE,X
 CF/F242: F0 43        BEQ $F287

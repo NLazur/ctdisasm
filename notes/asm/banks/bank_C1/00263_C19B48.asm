@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 9B48
+Routine_C19B48:
 C1/9B48: AE D2 B1     LDX $B1D2
 C1/9B4B: BF 01 00 CC  LDA $CC0001,X
 C1/9B4F: 85 12        STA $12

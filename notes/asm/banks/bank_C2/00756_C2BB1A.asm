@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BB1A
+Routine_C2BB1A:
 C2/BB1A: 38           SEC
 C2/BB1B: 68           PLA
 C2/BB1C: 98           TYA

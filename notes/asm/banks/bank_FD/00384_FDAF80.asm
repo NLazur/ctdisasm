@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AF80
+Routine_FDAF80:
 FD/AF80: 9C 23 AF     STZ $AF23
 FD/AF83: 85 06        STA $06
 FD/AF85: C9 5A        CMP #$5A

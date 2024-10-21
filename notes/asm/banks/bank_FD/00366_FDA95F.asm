@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: A95F
+Routine_FDA95F:
 FD/A95F: AD E7 B3     LDA $B3E7
 FD/A962: F0 05        BEQ $A969
 FD/A964: 64 14        STZ $14

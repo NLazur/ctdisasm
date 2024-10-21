@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5953
+Routine_C25953:
 C2/5953: A7 3D        LDA [$3D]
 C2/5955: 85 68        STA $68
 C2/5957: C2 20        REP #$20

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 16BA
+Routine_C316BA:
 C3/16BA: F0 00        BEQ $16BC
 C3/16BC: F1 F0        SBC ($F0),Y
 C3/16BE: 00 C0        BRK $C0

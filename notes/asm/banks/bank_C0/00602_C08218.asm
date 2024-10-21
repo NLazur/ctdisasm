@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8218
+Routine_C08218:
 C0/8218: 85 62        STA $62
 C0/821A: 98           TYA
 C0/821B: 0A           ASL

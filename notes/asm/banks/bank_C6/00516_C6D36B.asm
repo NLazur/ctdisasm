@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D36B
+Routine_C6D36B:
 C6/D36B: 14 60        TRB $60
 C6/D36D: 13 42        ORA ($42,S),Y
 C6/D36F: F8           SED

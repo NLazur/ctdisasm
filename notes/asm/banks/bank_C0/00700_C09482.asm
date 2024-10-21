@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9482
+Routine_C09482:
 C0/9482: 85 66        STA $66
 C0/9484: A6 87        LDX $87
 C0/9486: CA           DEX

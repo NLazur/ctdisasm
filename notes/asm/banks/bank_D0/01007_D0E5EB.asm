@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E5EB
+Routine_D0E5EB:
 D0/E5EB: 10 21        BPL $E60E
 D0/E5ED: 0D 54 0D     ORA $0D54
 D0/E5F0: 55 0D        EOR $0D,X

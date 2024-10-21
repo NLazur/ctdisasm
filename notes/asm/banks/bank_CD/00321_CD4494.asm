@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 4494
+Routine_CD4494:
 CD/4494: 64 23        STZ $23
 CD/4496: 21 1A        AND ($1A,X)
 CD/4498: 66 6A        ROR $6A

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0922
+Routine_D10922:
 D1/0922: 01 FF        ORA ($FF,X)
 D1/0924: FF 06 00 81  SBC $810006,X
 D1/0928: 05 06        ORA $06

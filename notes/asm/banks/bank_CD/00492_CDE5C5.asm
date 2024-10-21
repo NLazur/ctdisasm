@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: E5C5
+Routine_CDE5C5:
 CD/E5C5: 20 5A 36     JSR $365A
 CD/E5C8: 70 02        BVS $E5CC
 CD/E5CA: 05 0C        ORA $0C

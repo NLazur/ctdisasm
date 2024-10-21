@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: BFAA
+Routine_C1BFAA:
 C1/BFAA: 7B           TDC
 C1/BFAB: AD FC B1     LDA $B1FC
 C1/BFAE: 09 02        ORA #$02

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3E8E
+Routine_FD3E8E:
 FD/3E8E: F1 01        SBC ($01),Y
 FD/3E90: 7E 81 3D     ROR $3D81,X
 FD/3E93: C2 B7        REP #$B7

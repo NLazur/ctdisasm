@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 20F2
+Routine_C020F2:
 C0/20F2: A5 2A        LDA $2A
 C0/20F4: 8D 0C 02     STA $020C
 C0/20F7: A5 54        LDA $54

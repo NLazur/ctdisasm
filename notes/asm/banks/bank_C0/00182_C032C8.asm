@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 32C8
+Routine_C032C8:
 C0/32C8: 64 1F        STZ $1F
 C0/32CA: A6 97        LDX $97
 C0/32CC: BD 00 1C     LDA $1C00,X

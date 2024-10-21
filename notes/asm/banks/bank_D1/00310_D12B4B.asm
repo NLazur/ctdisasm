@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2B4B
+Routine_D12B4B:
 D1/2B4B: C6 08        DEC $08
 D1/2B4D: 20 E6 10     JSR $10E6
 D1/2B50: 00 C7        BRK $C7

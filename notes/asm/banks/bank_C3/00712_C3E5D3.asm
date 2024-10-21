@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: E5D3
+Routine_C3E5D3:
 C3/E5D3: 19 40 00     ORA $0040,Y
 C3/E5D6: 06 7E        ASL $7E
 C3/E5D8: 80 CD        BRA $E5A7

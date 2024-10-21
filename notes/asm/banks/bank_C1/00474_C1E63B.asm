@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E63B
+Routine_C1E63B:
 C1/E63B: 7B           TDC
 C1/E63C: AE F6 B1     LDX $B1F6
 C1/E63F: BD 4B 5E     LDA $5E4B,X

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AB30
+Routine_FDAB30:
 FD/AB30: 9C 4C AE     STZ $AE4C
 FD/AB33: 9C 23 AF     STZ $AF23
 FD/AB36: BD 4E 5E     LDA $5E4E,X

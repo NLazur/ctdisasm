@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6B94
+Routine_C66B94:
 C6/6B94: AC 00 00     LDY $0000
 C6/6B97: 88           DEY
 C6/6B98: 89 7C 36     BIT #$367C

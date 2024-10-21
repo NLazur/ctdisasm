@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7AD6
+Routine_C17AD6:
 C1/7AD6: 59 4B 59     EOR $594B,Y
 C1/7AD9: 56 59        LSR $59,X
 C1/7ADB: 65 59        ADC $59

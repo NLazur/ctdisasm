@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 476C
+Routine_CD476C:
 CD/476C: FF 41 61 00  SBC $006141,X
 CD/4770: 01 00        ORA ($00,X)
 CD/4772: 00 48        BRK $48

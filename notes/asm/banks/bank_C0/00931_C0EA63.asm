@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EA63
+Routine_C0EA63:
 C0/EA63: C2 30        REP #$30        ; main program NMI
 C0/EA65: 48           PHA
 C0/EA66: DA           PHX

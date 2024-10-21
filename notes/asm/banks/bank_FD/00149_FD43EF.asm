@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 43EF
+Routine_FD43EF:
 FD/43EF: 00 00        BRK $00
 FD/43F1: E0 1F 8C     CPX #$8C1F
 FD/43F4: 03 C5        ORA $C5,S

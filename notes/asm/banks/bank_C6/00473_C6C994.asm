@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C994
+Routine_C6C994:
 C6/C994: 6A           ROR
 C6/C995: 02 00        COP $00
 C6/C997: 50 30        BVC $C9C9

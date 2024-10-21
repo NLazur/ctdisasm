@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E12F
+Routine_CCE12F:
 CC/E12F: 8F 75 43 00  STA $004375
 CC/E133: A9 00 8F     LDA #$8F00
 CC/E136: 76 43        ROR $43,X

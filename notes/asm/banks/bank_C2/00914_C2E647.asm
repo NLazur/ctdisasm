@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E647
+Routine_C2E647:
 C2/E647: 20 C2 EA     JSR $EAC2
 C2/E64A: E2 30        SEP #$30
 C2/E64C: A5 54        LDA $54

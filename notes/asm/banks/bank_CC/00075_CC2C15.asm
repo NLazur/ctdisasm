@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2C15
+Routine_CC2C15:
 CC/2C15: 11 32        ORA ($32),Y
 CC/2C17: 53 11        EOR ($11,S),Y
 CC/2C19: 31 53        AND ($53),Y

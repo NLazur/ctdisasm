@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6AEF
+Routine_FE6AEF:
 FE/6AEF: 0E A7 17     ASL $17A7
 FE/6AF2: F0 7A        BEQ $6B6E
 FE/6AF4: 88           DEY

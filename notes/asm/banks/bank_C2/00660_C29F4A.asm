@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9F4A
+Routine_C29F4A:
 C2/9F4A: A2 03 93     LDX #$9303
 C2/9F4D: 8E 96 96     STX $9696
 C2/9F50: A2 25 00     LDX #$0025

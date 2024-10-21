@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F02C
+Routine_FFF02C:
 FF/F02C: E0 F0        CPX #$F0
 FF/F02E: F0 E0        BEQ $F010
 FF/F030: 78           SEI

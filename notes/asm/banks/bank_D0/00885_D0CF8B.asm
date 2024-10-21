@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CF8B
+Routine_D0CF8B:
 D0/CF8B: 80 80        BRA $CF0D
 D0/CF8D: A0 00        LDY #$00
 D0/CF8F: 10 00        BPL $CF91

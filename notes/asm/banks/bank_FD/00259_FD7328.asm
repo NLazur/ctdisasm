@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7328
+Routine_FD7328:
 FD/7328: BB           TYX
 FD/7329: 02 A0        COP $A0
 FD/732B: C0 60        CPY #$60

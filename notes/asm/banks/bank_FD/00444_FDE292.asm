@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E292
+Routine_FDE292:
 FD/E292: 08           PHP
 FD/E293: 0B           PHD
 FD/E294: 8B           PHB

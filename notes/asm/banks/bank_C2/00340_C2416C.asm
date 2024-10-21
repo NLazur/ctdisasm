@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 416C
+Routine_C2416C:
 C2/416C: E2 20        SEP #$20
 C2/416E: BD 28 00     LDA $0028,X
 C2/4171: 29 7F        AND #$7F

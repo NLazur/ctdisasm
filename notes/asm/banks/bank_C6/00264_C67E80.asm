@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7E80
+Routine_C67E80:
 C6/7E80: 03 61        ORA $61,S
 C6/7E82: 12 7B        ORA ($7B)
 C6/7E84: 79 34 26     ADC $2634,Y

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A491
+Routine_CDA491:
 CD/A491: 03 02        ORA $02,S
 CD/A493: 03 01        ORA $01,S
 CD/A495: 00 25        BRK $25

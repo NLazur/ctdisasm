@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 65E6
+Routine_FF65E6:
 FF/65E6: 2F EF C0 94  AND $94C0EF
 FF/65EA: CD EF BA     CMP $BAEF
 FF/65ED: 26 C8        ROL $C8

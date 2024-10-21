@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: F076
+Routine_D0F076:
 D0/F076: 52 AE        EOR ($AE)
 D0/F078: 52 AC        EOR ($AC)
 D0/F07A: 12 AD        ORA ($AD)

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2433
+Routine_CD2433:
 CD/2433: DA           PHX
 CD/2434: 80 04        BRA $243A
 CD/2436: DA           PHX

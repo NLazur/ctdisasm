@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EFBA
+Routine_CFEFBA:
 CF/EFBA: 4C 78 F9     JMP $F978
 CF/EFBD: A2 0A 00     LDX #$000A
 CF/EFC0: 86 C6        STX $C6

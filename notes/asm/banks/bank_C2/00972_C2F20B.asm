@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F20B
+Routine_C2F20B:
 C2/F20B: 29 0F        AND #$0F
 C2/F20D: D0 08        BNE $F217
 C2/F20F: 24 8F        BIT $8F

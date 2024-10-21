@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F24C
+Routine_FDF24C:
 FD/F24C: A2 00 02     LDX #$0200
 FD/F24F: A9 F0        LDA #$F0
 FD/F251: 9D FD 06     STA $06FD,X

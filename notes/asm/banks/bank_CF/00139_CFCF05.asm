@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: CF05
+Routine_CFCF05:
 CF/CF05: 16 10        ASL $10,X
 CF/CF07: D6 43        DEC $43,X
 CF/CF09: 16 46        ASL $46,X

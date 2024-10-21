@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: EE23
+Routine_C6EE23:
 C6/EE23: C2 20        REP #$20
 C6/EE25: A6 4E        LDX $4E
 C6/EE27: 18           CLC

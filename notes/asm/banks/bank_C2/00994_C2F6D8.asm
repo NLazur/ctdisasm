@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F6D8
+Routine_C2F6D8:
 C2/F6D8: CE F6 D1     DEC $D1F6
 C2/F6DB: F6 D2        INC $D2,X
 C2/F6DD: F6 D4        INC $D4,X

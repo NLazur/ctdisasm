@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 371F
+Routine_C3371F:
 C3/371F: 54 A5 5A     MVN $A5,$5A
 C3/3722: FF 15 5B 04  SBC $045B15,X
 C3/3726: 16 5C        ASL $5C,X

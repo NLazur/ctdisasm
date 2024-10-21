@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D5D5
+Routine_CFD5D5:
 CF/D5D5: 21 6B        AND ($6B,X)
 CF/D5D7: 61 C5        ADC ($C5,X)
 CF/D5D9: 21 C5        AND ($C5,X)

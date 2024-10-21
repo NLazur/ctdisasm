@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4382
+Routine_C34382:
 C3/4382: C0 6C        CPY #$6C
 C3/4384: 1D 6D 72     ORA $726D,X
 C3/4387: 00 6D        BRK $6D

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 4CA7
+Routine_CC4CA7:
 CC/4CA7: 00 00        BRK $00
 CC/4CA9: 18           CLC
 CC/4CAA: 00 06        BRK $06

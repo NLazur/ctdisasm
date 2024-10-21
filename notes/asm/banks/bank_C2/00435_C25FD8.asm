@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5FD8
+Routine_C25FD8:
 C2/5FD8: 23 2C        AND $2C,S
 C2/5FDA: 29 2C        AND #$2C
 C2/5FDC: 2F 2C 35 2C  AND $2C352C

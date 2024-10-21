@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: ED90
+Routine_C2ED90:
 C2/ED90: 08           PHP
 C2/ED91: C2 20        REP #$20
 C2/ED93: A5 5D        LDA $5D

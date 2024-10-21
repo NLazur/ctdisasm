@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4D37
+Routine_C24D37:
 C2/4D37: AD 7E 02     LDA $027E
 C2/4D3A: C9 03        CMP #$03
 C2/4D3C: F0 05        BEQ $4D43

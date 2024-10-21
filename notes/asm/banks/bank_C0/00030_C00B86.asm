@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0B86
+Routine_C00B86:
 C0/0B86: A6 00        LDX $00         ;
 C0/0B88: 86 0A        STX $0A
 C0/0B8A: A6 02        LDX $02

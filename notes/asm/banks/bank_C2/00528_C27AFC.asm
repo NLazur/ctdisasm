@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7AFC
+Routine_C27AFC:
 C2/7AFC: A2 00 90     LDX #$9000
 C2/7AFF: 8E 03 03     STX $0303
 C2/7B02: A9 7F 8D     LDA #$8D7F

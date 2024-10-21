@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F2DB
+Routine_C1F2DB:
 C1/F2DB: 7B           TDC
 C1/F2DC: 8D D3 B2     STA $B2D3
 C1/F2DF: 8D D4 B2     STA $B2D4

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0D2F
+Routine_C60D2F:
 C6/0D2F: 14 20        TRB $20
 C6/0D31: C0 02 00     CPY #$0002
 C6/0D34: 50 3A        BVC $0D70

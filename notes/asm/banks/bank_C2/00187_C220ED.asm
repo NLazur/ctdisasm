@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 20ED
+Routine_C220ED:
 C2/20ED: 9E 03 00     STZ $0003,X
 C2/20F0: A5 1D        LDA $1D
 C2/20F2: F0 06        BEQ $20FA

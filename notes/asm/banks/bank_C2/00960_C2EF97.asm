@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EF97
+Routine_C2EF97:
 C2/EF97: 08           PHP
 C2/EF98: E2 20        SEP #$20
 C2/EF9A: 24 88        BIT $88

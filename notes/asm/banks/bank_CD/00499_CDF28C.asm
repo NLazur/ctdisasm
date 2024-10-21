@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F28C
+Routine_CDF28C:
 CD/F28C: 82 61 82     BRL $CD74F0
 CD/F28F: 62 82 63     PER $CD5614
 CD/F292: 82 64 82     BRL $CD74F9

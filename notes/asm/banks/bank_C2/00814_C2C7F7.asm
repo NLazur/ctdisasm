@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C7F7
+Routine_C2C7F7:
 C2/C7F7: 2C 0D 0F     BIT $0F0D
 C2/C7FA: 70 FA        BVS $C7F6
 C2/C7FC: 4C 74 C6     JMP $C674

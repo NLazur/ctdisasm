@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E2CC
+Routine_C2E2CC:
 C2/E2CC: AD 08 0F     LDA $0F08
 C2/E2CF: 3A           DEC
 C2/E2D0: 10 0E        BPL $E2E0

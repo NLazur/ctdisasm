@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4CF3
+Routine_D04CF3:
 D0/4CF3: E0 A0        CPX #$A0
 D0/4CF5: A0 40        LDY #$40
 D0/4CF7: C0 40 80     CPY #$8040

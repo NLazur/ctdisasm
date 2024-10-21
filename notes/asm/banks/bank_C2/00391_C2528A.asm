@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 528A
+Routine_C2528A:
 C2/528A: 64 0A        STZ $0A
 C2/528C: BD 1C 00     LDA $001C,X
 C2/528F: 10 15        BPL $52A6

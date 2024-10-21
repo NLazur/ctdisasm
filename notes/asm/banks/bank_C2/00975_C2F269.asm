@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F269
+Routine_C2F269:
 C2/F269: DA           PHX
 C2/F26A: 29 0F        AND #$0F
 C2/F26C: AA           TAX

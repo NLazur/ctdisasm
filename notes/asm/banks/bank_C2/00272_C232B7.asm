@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 32B7
+Routine_C232B7:
 C2/32B7: AD 43 1B     LDA $1B43
 C2/32BA: F0 0F        BEQ $32CB
 C2/32BC: 9C 80 02     STZ $0280

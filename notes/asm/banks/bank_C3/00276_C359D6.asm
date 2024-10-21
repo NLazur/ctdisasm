@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 59D6
+Routine_C359D6:
 C3/59D6: 90 02        BCC $59DA
 C3/59D8: 10 A9        BPL $5983
 C3/59DA: FF 8F 78 0F  SBC $0F788F,X

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B033
+Routine_FDB033:
 FD/B033: C9 5A        CMP #$5A
 FD/B035: B0 1B        BCS $B052
 FD/B037: AA           TAX

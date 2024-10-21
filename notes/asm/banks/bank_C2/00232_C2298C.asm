@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 298C
+Routine_C2298C:
 C2/298C: A2 00 40     LDX #$4000
 C2/298F: 8E 03 03     STX $0303
 C2/2992: A9 7E        LDA #$7E

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F677
+Routine_FFF677:
 FF/F677: 08           PHP
 FF/F678: A9 FF 8D     LDA #$8DFF
 FF/F67B: 02 03        COP $03

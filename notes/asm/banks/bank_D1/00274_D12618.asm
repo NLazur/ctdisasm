@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2618
+Routine_D12618:
 D1/2618: 10 C0        BPL $25DA
 D1/261A: 4C 00 E6     JMP $E600
 D1/261D: 80 CE        BRA $25ED

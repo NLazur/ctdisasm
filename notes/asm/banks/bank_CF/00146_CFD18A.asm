@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D18A
+Routine_CFD18A:
 CF/D18A: 35 23        AND $23,X
 CF/D18C: 37 23        AND [$23],Y
 CF/D18E: A5 21        LDA $21

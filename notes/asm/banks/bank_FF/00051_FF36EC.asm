@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 36EC
+Routine_FF36EC:
 FF/36EC: 20 70 31     JSR $3170
 FF/36EF: 19 1B 0E     ORA $0E1B,Y
 FF/36F2: 0E 05 04     ASL $0405

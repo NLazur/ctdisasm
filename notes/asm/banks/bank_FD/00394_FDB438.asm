@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B438
+Routine_FDB438:
 FD/B438: 7B           TDC
 FD/B439: A8           TAY
 FD/B43A: 84 04        STY $04

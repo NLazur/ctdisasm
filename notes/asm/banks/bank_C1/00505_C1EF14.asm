@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EF14
+Routine_C1EF14:
 C1/EF14: 7B           TDC
 C1/EF15: AA           TAX
 C1/EF16: A9 64        LDA #$64

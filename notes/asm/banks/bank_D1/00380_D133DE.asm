@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 33DE
+Routine_D133DE:
 D1/33DE: E0 40 08     CPX #$0840
 D1/33E1: CE 40 CC     DEC $CC40
 D1/33E4: 0F 18 E4 40  ORA $40E418

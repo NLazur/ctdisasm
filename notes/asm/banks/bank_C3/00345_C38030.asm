@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8030
+Routine_C38030:
 C3/8030: 7B           TDC
 C3/8031: 89 38        BIT #$38
 C3/8033: 9F 00 A0 FF  STA $FFA000,X

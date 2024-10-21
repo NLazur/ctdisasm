@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C42E
+Routine_C3C42E:
 C3/C42E: 32 0A        AND ($0A)
 C3/C430: 70 A9        BVS $C3DB
 C3/C432: 03 BC        ORA $BC,S

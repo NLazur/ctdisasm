@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 07E2
+Routine_CD07E2:
 CD/07E2: E2 10        SEP #$10
 CD/07E4: C2 20        REP #$20
 CD/07E6: AD 70 2C     LDA $2C70

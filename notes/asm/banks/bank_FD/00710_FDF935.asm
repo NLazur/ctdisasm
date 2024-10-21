@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F935
+Routine_FDF935:
 FD/F935: 7E 80 7E     ROR $7E80,X
 FD/F938: C0 7E        CPY #$7E
 FD/F93A: 04 40        TSB $40

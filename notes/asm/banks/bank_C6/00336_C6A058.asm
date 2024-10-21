@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A058
+Routine_C6A058:
 C6/A058: 07 1A        ORA [$1A]
 C6/A05A: C3 1C        CMP $1C,S
 C6/A05C: 0A           ASL

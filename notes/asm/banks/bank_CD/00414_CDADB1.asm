@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: ADB1
+Routine_CDADB1:
 CD/ADB1: 3D 03 78     AND $7803,X
 CD/ADB4: 6E 30 1B     ROR $1B30
 CD/ADB7: 01 36        ORA ($36,X)

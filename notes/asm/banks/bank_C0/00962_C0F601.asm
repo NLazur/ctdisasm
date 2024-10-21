@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F601
+Routine_C0F601:
 C0/F601: 3E 3C 3A     ROL $3A3C,X
 C0/F604: 39 37 35     AND $3537,Y
 C0/F607: 34 32        BIT $32,X

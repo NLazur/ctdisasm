@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: ED7C
+Routine_FFED7C:
 FF/ED7C: 0F F0 07 F8  ORA $F807F0
 FF/ED80: 07 F8        ORA [$F8]
 FF/ED82: 07 F8        ORA [$F8]

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F5C1
+Routine_C0F5C1:
 C0/F5C1: 3E 3C 3A     ROL $3A3C,X
 C0/F5C4: 38           SEC
 C0/F5C5: 37 35        AND [$35],Y

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: A990
+Routine_FDA990:
 FD/A990: 7B           TDC
 FD/A991: AD 8B B1     LDA $B18B
 FD/A994: 0A           ASL

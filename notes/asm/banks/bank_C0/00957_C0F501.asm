@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F501
+Routine_C0F501:
 C0/F501: 3D 3A 38     AND $383A,X
 C0/F504: 35 33        AND $33,X
 C0/F506: 31 2F        AND ($2F),Y

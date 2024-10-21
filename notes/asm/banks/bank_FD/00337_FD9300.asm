@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9300
+Routine_FD9300:
 FD/9300: 28           PLP
 FD/9301: FE 08 80     INC $8008,X
 FD/9304: 14 00        TRB $00

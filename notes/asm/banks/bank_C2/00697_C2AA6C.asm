@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AA6C
+Routine_C2AA6C:
 C2/AA6C: 9C 9A 0D     STZ $0D9A
 C2/AA6F: AD 15 04     LDA $0415
 C2/AA72: 85 54        STA $54

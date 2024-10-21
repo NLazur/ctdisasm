@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8BC1
+Routine_C08BC1:
 C0/8BC1: 82 98 10     BRL $C09C5C
 C0/8BC4: A9 FF        LDA #$FF
 C0/8BC6: 85 2F        STA $2F

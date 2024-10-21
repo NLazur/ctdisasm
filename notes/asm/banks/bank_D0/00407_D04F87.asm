@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4F87
+Routine_D04F87:
 D0/4F87: 00 80        BRK $80
 D0/4F89: 00 80        BRK $80
 D0/4F8B: 80 40        BRA $4FCD

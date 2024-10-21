@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 673D
+Routine_D1673D:
 D1/673D: 70 10        BVS $674F
 D1/673F: 00 FF        BRK $FF
 D1/6741: 0B           PHD

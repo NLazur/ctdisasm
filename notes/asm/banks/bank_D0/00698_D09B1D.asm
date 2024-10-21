@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9B1D
+Routine_D09B1D:
 D0/9B1D: 90 F0        BCC $9B0F
 D0/9B1F: 08           PHP
 D0/9B20: E0 1C        CPX #$1C

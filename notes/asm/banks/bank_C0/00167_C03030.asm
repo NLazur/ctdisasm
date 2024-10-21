@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3030
+Routine_C03030:
 C0/3030: A9 01        LDA #$01
 C0/3032: A6 6D        LDX $6D
 C0/3034: 9D 01 1A     STA $1A01,X

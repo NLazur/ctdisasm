@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 612D
+Routine_D0612D:
 D0/612D: C0 A0 A0     CPY #$A0A0
 D0/6130: 53 54        EOR ($54,S),Y
 D0/6132: 02 2D        COP $2D

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 2B31
+Routine_FE2B31:
 FE/2B31: 30 3C        BMI $2B6F
 FE/2B33: 2D 2C DF     AND $DF2C
 FE/2B36: 04 B8        TSB $B8

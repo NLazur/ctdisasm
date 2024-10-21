@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BFDE
+Routine_C6BFDE:
 C6/BFDE: 03 7E        ORA $7E,S
 C6/BFE0: 11 2F        ORA ($2F),Y
 C6/BFE2: FF 1F 57 00  SBC $00571F,X

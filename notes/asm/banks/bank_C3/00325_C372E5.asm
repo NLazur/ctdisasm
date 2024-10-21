@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 72E5
+Routine_C372E5:
 C3/72E5: 4E 4F 42     LSR $424F
 C3/72E8: 55 20        EOR $20,X
 C3/72EA: 53 6A        EOR ($6A,S),Y

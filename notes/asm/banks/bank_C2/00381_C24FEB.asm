@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4FEB
+Routine_C24FEB:
 C2/4FEB: A6 4E        LDX $4E
 C2/4FED: BD 03 00     LDA $0003,X
 C2/4FF0: C9 20 D0     CMP #$D020

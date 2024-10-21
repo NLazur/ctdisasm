@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 18D3
+Routine_FD18D3:
 FD/18D3: 6F 4D 00 4F  ADC $4F004D
 FD/18D7: 06 00        ASL $00
 FD/18D9: EC 00 FC     CPX $FC00

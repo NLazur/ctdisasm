@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5594
+Routine_C65594:
 C6/5594: 29 E4 08     AND #$08E4
 C6/5597: 8C 09 F4     STY $F409
 C6/559A: 00 08        BRK $08

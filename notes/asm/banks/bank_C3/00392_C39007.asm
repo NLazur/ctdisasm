@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9007
+Routine_C39007:
 C3/9007: 1C 10 20     TRB $2010
 C3/900A: 1C A0 58     TRB $58A0
 C3/900D: 41 1C        EOR ($1C,X)

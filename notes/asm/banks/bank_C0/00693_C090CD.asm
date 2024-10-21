@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 90CD
+Routine_C090CD:
 C0/90CD: C2 20        REP #$20
 C0/90CF: 20 9E 8A     JSR $8A9E
 C0/90D2: B0 33        BCS $9107

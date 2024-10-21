@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 17F9
+Routine_D117F9:
 D1/17F9: 6A           ROR
 D1/17FA: 01 6C        ORA ($6C,X)
 D1/17FC: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CC17
+Routine_D0CC17:
 D0/CC17: 20 00 00     JSR $0000
 D0/CC1A: 00 00        BRK $00
 D0/CC1C: 80 C0        BRA $CBDE

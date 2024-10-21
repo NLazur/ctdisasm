@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 24AD
+Routine_D024AD:
 D0/24AD: C0 00 80     CPY #$8000
 D0/24B0: 80 80        BRA $2432
 D0/24B2: 80 80        BRA $2434

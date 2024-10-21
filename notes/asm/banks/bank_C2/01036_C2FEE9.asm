@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FEE9
+Routine_C2FEE9:
 C2/FEE9: B2 82        LDA ($82)
 C2/FEEB: B2 82        LDA ($82)
 C2/FEED: FA           PLX

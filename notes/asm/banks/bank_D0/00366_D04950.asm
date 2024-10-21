@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4950
+Routine_D04950:
 D0/4950: 80 80        BRA $48D2
 D0/4952: 80 80        BRA $48D4
 D0/4954: 77 77        ADC [$77],Y

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 010A
+Routine_CD010A:
 CD/010A: AD 00 CD     LDA $CD00
 CD/010D: AA           TAX
 CD/010E: 86 59        STX $59

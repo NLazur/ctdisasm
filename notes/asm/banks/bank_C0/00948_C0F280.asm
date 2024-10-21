@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F280
+Routine_C0F280:
 C0/F280: A2 82 1C     LDX #$1C82
 C0/F283: 86 16        STX $16
 C0/F285: A2 82 29     LDX #$2982

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 82A0
+Routine_D082A0:
 D0/82A0: 00 00        BRK $00
 D0/82A2: 00 00        BRK $00
 D0/82A4: 00 00        BRK $00

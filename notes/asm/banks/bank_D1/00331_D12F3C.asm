@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2F3C
+Routine_D12F3C:
 D1/2F3C: 14 00        TRB $00
 D1/2F3E: 00 12        BRK $12
 D1/2F40: 80 80        BRA $2EC2

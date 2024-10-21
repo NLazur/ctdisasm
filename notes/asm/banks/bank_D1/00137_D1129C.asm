@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 129C
+Routine_D1129C:
 D1/129C: 0B           PHD
 D1/129D: 18           CLC
 D1/129E: C0 00 C2     CPY #$C200

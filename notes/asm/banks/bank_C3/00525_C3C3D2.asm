@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C3D2
+Routine_C3C3D2:
 C3/C3D2: 44 8A 80     MVP $8A,$80
 C3/C3D5: 39 04 30     AND $3004,Y
 C3/C3D8: 26 04        ROL $04

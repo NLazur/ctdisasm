@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B71D
+Routine_C0B71D:
 C0/B71D: 30 0F        BMI $B72E
 C0/B71F: 20 CA B8     JSR $B8CA
 C0/B722: 20 E2 E9     JSR $E9E2

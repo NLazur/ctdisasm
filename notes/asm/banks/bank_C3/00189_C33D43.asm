@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3D43
+Routine_C33D43:
 C3/3D43: F0 E0        BEQ $3D25
 C3/3D45: C9 00        CMP #$00
 C3/3D47: D0 14        BNE $3D5D

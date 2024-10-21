@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 29D2
+Routine_D029D2:
 D0/29D2: 80 C0        BRA $2994
 D0/29D4: 80 C0        BRA $2996
 D0/29D6: C0 C0 00     CPY #$00C0

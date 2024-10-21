@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6180
+Routine_C26180:
 C2/6180: C2 20        REP #$20
 C2/6182: A5 68        LDA $68
 C2/6184: A0 03 00     LDY #$0003

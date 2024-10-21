@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7C97
+Routine_C27C97:
 C2/7C97: A9 F0 8F     LDA #$8FF0
 C2/7C9A: 42 8A        WDM $8A
 C2/7C9C: 7E 8F 45     ROR $458F,X

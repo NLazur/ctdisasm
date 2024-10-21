@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 35FC
+Routine_C035FC:
 C0/35FC: A5 2D        LDA $2D
 C0/35FE: D0 06        BNE $3606
 C0/3600: A2 E0 7F     LDX #$7FE0

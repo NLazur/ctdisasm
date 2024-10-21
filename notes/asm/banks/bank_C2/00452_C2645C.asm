@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 645C
+Routine_C2645C:
 C2/645C: E2 20        SEP #$20
 C2/645E: 8B           PHB
 C2/645F: A9 7E        LDA #$7E

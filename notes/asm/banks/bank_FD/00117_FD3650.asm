@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3650
+Routine_FD3650:
 FD/3650: E0 10        CPX #$10
 FD/3652: E0 A8        CPX #$A8
 FD/3654: 50 A0        BVC $35F6

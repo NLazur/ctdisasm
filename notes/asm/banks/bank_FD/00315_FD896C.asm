@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 896C
+Routine_FD896C:
 FD/896C: 38           SEC
 FD/896D: 0E B2 00     ASL $00B2
 FD/8970: C4 D2        CPY $D2

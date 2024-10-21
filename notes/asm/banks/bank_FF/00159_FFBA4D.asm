@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: BA4D
+Routine_FFBA4D:
 FF/BA4D: 92 00        STA ($00)
 FF/BA4F: 24 30        BIT $30
 FF/BA51: 00 00        BRK $00

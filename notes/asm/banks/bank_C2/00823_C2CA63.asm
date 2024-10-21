@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CA63
+Routine_C2CA63:
 C2/CA63: 67 CA        ADC [$CA]
 C2/CA65: E0 CA A2     CPX #$A2CA
 C2/CA68: 05 BF        ORA $BF

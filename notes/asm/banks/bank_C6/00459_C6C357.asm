@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C357
+Routine_C6C357:
 C6/C357: 97 04        STA [$04],Y
 C6/C359: FE 20 01     INC $0120,X
 C6/C35C: F8           SED

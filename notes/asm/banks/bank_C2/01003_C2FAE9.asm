@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FAE9
+Routine_C2FAE9:
 C2/FAE9: 08           PHP
 C2/FAEA: E2 20        SEP #$20
 C2/FAEC: AD 17 02     LDA $0217

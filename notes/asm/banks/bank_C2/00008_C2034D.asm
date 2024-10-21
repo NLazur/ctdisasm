@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 034D
+Routine_C2034D:
 C2/034D: E2 30        SEP #$30
 C2/034F: A2 60        LDX #$60
 C2/0351: A9 E0        LDA #$E0

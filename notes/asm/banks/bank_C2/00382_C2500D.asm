@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 500D
+Routine_C2500D:
 C2/500D: A9 40 1C     LDA #$1C40
 C2/5010: 9E 02 A9     STZ $A902,X
 C2/5013: 20 1C 9E     JSR $9E1C

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 16A6
+Routine_CD16A6:
 CD/16A6: 86 43        STX $43
 CD/16A8: 0A           ASL
 CD/16A9: AA           TAX

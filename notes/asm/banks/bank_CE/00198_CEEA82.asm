@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EA82
+Routine_CEEA82:
 CE/EA82: 48           PHA
 CE/EA83: A8           TAY
 CE/EA84: 84 45        STY $45

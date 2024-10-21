@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: ECF6
+Routine_FEECF6:
 FE/ECF6: 90 0B        BCC $ED03
 FE/ECF8: 80 40        BRA $ED3A
 FE/ECFA: 11 44        ORA ($44),Y

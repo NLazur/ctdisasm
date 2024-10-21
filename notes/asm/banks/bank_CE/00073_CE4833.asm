@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 4833
+Routine_CE4833:
 CE/4833: 0C 3D 19     TSB $193D
 CE/4836: 82 00 30     BRL $CE7839
 CE/4839: 0E 02 24     ASL $2402

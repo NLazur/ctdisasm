@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 04CD
+Routine_C204CD:
 C2/04CD: 86 08        STX $08
 C2/04CF: C2 20        REP #$20
 C2/04D1: A2 30 0B     LDX #$0B30

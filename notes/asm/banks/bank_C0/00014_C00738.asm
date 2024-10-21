@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0738
+Routine_C00738:
 C0/0738: 7B           TDC
 C0/0739: EB           XBA
 C0/073A: A5 97        LDA $97

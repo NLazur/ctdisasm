@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C2BD
+Routine_C2C2BD:
 C2/C2BD: 00 01        BRK $01
 C2/C2BF: 02 03        COP $03
 C2/C2C1: 04 05        TSB $05

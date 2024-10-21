@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9A1F
+Routine_C09A1F:
 C0/9A1F: 85 52        STA $52
 C0/9A21: A5 10        LDA $10
 C0/9A23: 4A           LSR

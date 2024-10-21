@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 6A2F
+Routine_CF6A2F:
 CF/6A2F: E0 0D        CPX #$0D
 CF/6A31: 0F 1A 1E 14  ORA $141E1A
 CF/6A35: 1C 1C 14     TRB $141C

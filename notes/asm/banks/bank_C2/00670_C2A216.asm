@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A216
+Routine_C2A216:
 C2/A216: 20 EF A1     JSR $A1EF
 C2/A219: A2 0E BE     LDX #$BE0E
 C2/A21C: 4C 31 ED     JMP $ED31

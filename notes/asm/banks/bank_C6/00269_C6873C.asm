@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 873C
+Routine_C6873C:
 C6/873C: 43 32        EOR $32,S
 C6/873E: 3D 97 87     AND $8797,X
 C6/8741: 89 C6 03     BIT #$03C6

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6BFE
+Routine_C26BFE:
 C2/6BFE: 9B           TXY
 C2/6BFF: BD 22 00     LDA $0022,X
 C2/6C02: 29 FF        AND #$FF

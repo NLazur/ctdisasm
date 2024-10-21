@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EA5D
+Routine_D1EA5D:
 D1/EA5D: AD 0A CE     LDA $CE0A
 D1/EA60: D0 03        BNE $EA65
 D1/EA62: 4C 4C EB     JMP $EB4C

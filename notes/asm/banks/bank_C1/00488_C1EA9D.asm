@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EA9D
+Routine_C1EA9D:
 C1/EA9D: 7B           TDC
 C1/EA9E: AA           TAX
 C1/EA9F: 86 16        STX $16

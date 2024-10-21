@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F166
+Routine_C3F166:
 C3/F166: 00 00        BRK $00
 C3/F168: FC 42 00     JSR ($0042,X)
 C3/F16B: 04 F0        TSB $F0

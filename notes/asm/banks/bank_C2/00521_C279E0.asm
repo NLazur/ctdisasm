@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 79E0
+Routine_C279E0:
 C2/79E0: 20 36 23     JSR $2336
 C2/79E3: 8D 02 42     STA $4202
 C2/79E6: A9 30 8D     LDA #$8D30

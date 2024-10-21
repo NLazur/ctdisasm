@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5F3E
+Routine_C35F3E:
 C3/5F3E: 00 01        BRK $01
 C3/5F40: A4 00        LDY $00
 C3/5F42: 02 24        COP $24

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: A626
+Routine_D1A626:
 D1/A626: BA           TSX
 D1/A627: 94 BA        STY $BA,X
 D1/A629: CD BA 1E     CMP $1EBA

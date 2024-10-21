@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7F36
+Routine_C67F36:
 C6/7F36: ED 97 98     SBC $9897
 C6/7F39: 99 15 60     STA $6015,Y
 C6/7F3C: 22 0B DD 04  JSR $04DD0B

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0EE5
+Routine_D10EE5:
 D1/0EE5: 88           DEY
 D1/0EE6: EE 80 EE     INC $EE80
 D1/0EE9: 41 00        EOR ($00,X)

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 05FF
+Routine_CD05FF:
 CD/05FF: 00 7C        BRK $7C
 CD/0601: 10 7C        BPL $067F
 CD/0603: 00 7E        BRK $7E

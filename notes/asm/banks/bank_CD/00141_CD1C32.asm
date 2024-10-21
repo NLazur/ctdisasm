@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1C32
+Routine_CD1C32:
 CD/1C32: A7 40        LDA [$40]
 CD/1C34: 0A           ASL
 CD/1C35: A8           TAY

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 01FC
+Routine_FD01FC:
 FD/01FC: 90 30        BCC $022E
 FD/01FE: 88           DEY
 FD/01FF: 52 01        EOR ($01)

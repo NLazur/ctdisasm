@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: D9D7
+Routine_C1D9D7:
 C1/D9D7: 21 D2        AND ($D2,X)
 C1/D9D9: 3E D2 67     ROL $67D2,X
 C1/D9DC: D2 DE        CMP ($DE)

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7254
+Routine_C27254:
 C2/7254: C2 20        REP #$20
 C2/7256: 64 0C        STZ $0C
 C2/7258: A6 0C        LDX $0C

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8CF9
+Routine_C18CF9:
 C1/8CF9: 7B           TDC
 C1/8CFA: A8           TAY
 C1/8CFB: 8D 24 AF     STA $AF24

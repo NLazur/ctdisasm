@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F61F
+Routine_CFF61F:
 CF/F61F: A6 C6        LDX $C6
 CF/F621: A4 C8        LDY $C8
 CF/F623: BD E0 A1     LDA $A1E0,X

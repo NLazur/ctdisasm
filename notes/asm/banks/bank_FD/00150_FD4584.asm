@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4584
+Routine_FD4584:
 FD/4584: E0 10 A0     CPX #$A010
 FD/4587: 90 20        BCC $45A9
 FD/4589: 03 20        ORA $20,S

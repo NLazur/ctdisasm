@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2EB5
+Routine_CD2EB5:
 CD/2EB5: A6 43        LDX $43
 CD/2EB7: DE 74 CA     DEC $CA74,X
 CD/2EBA: F0 06        BEQ $2EC2

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8305
+Routine_C08305:
 C0/8305: A2 00        LDX #$00
 C0/8307: D0 8E        BNE $8297
 C0/8309: 81 21        STA ($21,X)

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FDBB
+Routine_C2FDBB:
 C2/FDBB: 08           PHP
 C2/FDBC: C2 20        REP #$20
 C2/FDBE: AD 53 2C     LDA $2C53

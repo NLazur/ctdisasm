@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5F07
+Routine_C25F07:
 C2/5F07: 8B           PHB
 C2/5F08: A9 C2        LDA #$C2
 C2/5F0A: 48           PHA

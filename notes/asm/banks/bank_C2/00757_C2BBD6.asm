@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BBD6
+Routine_C2BBD6:
 C2/BBD6: 08           PHP
 C2/BBD7: A2 FF FF     LDX #$FFFF
 C2/BBDA: 86 17        STX $17

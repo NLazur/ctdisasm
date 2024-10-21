@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4CE2
+Routine_FD4CE2:
 FD/4CE2: 5E E0 28     LSR $28E0,X
 FD/4CE5: F0 97        BEQ $4C7E
 FD/4CE7: 78           SEI

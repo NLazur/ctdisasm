@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: DB73
+Routine_C6DB73:
 C6/DB73: BA           TSX
 C6/DB74: 00 FE        BRK $FE
 C6/DB76: 00 01        BRK $01

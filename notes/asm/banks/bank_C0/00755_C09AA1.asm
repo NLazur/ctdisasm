@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9AA1
+Routine_C09AA1:
 C0/9AA1: C2 10        REP #$10
 C0/9AA3: C2 20        REP #$20
 C0/9AA5: 25 1E        AND $1E

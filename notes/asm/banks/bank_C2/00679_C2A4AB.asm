@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A4AB
+Routine_C2A4AB:
 C2/A4AB: 29 27        AND #$27
 C2/A4AD: 28           PLP
 C2/A4AE: 2A           ROL

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DC96
+Routine_C3DC96:
 C3/DC96: 00 40        BRK $40
 C3/DC98: 18           CLC
 C3/DC99: 52 4A        EOR ($4A)

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: D74F
+Routine_C1D74F:
 C1/D74F: 7B           TDC
 C1/D750: 8D D0 B2     STA $B2D0
 C1/D753: 7B           TDC

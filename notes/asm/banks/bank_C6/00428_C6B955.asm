@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B955
+Routine_C6B955:
 C6/B955: 12 FE        ORA ($FE)
 C6/B957: FE 15 16     INC $1615,X
 C6/B95A: 52 67        EOR ($67)

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8C46
+Routine_FE8C46:
 FE/8C46: 1D AD 14     ORA $14AD,X
 FE/8C49: C8           INY
 FE/8C4A: 18           CLC

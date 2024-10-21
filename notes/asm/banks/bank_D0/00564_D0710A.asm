@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 710A
+Routine_D0710A:
 D0/710A: 5F 60 2F 30  EOR $302F60,X
 D0/710E: 2F 30 17 18  AND $181730
 D0/7112: 17 18        ORA [$18],Y

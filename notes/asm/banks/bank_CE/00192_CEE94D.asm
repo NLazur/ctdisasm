@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: E94D
+Routine_CEE94D:
 CE/E94D: 7B           TDC
 CE/E94E: 99 DD C4     STA $C4DD,Y
 CE/E951: 99 15 C5     STA $C515,Y

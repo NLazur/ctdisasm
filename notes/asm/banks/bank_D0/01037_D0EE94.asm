@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EE94
+Routine_D0EE94:
 D0/EE94: 0A           ASL
 D0/EE95: 41 0E        EOR ($0E,X)
 D0/EE97: 42 0E        WDM $0E

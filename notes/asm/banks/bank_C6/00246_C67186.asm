@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7186
+Routine_C67186:
 C6/7186: 08           PHP
 C6/7187: 15 16        ORA $16,X
 C6/7189: 92 3D        STA ($3D)

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EA66
+Routine_C2EA66:
 C2/EA66: A5 5A        LDA $5A
 C2/EA68: 10 0E        BPL $EA78
 C2/EA6A: 29 04 D0     AND #$D004

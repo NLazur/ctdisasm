@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5470
+Routine_C25470:
 C2/5470: A4 4E        LDY $4E
 C2/5472: B9 28 00     LDA $0028,Y
 C2/5475: D9 27 00     CMP $0027,Y

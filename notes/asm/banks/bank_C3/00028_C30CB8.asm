@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0CB8
+Routine_C30CB8:
 C3/0CB8: 08           PHP
 C3/0CB9: C2 20        REP #$20
 C3/0CBB: 8A           TXA

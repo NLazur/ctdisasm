@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6FCA
+Routine_FD6FCA:
 FD/6FCA: 3E 3E 9E     ROL $9E3E,X
 FD/6FCD: 92 80        STA ($80)
 FD/6FCF: CE CA DE     DEC $DECA

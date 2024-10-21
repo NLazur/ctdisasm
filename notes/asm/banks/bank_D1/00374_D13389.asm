@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3389
+Routine_D13389:
 D1/3389: 2F 00 00 32  AND $320000
 D1/338D: 80 A0        BRA $332F
 D1/338F: C4 00        CPY $00

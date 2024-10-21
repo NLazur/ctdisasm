@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1CDA
+Routine_C21CDA:
 C2/1CDA: C2 20        REP #$20
 C2/1CDC: 29 FF 00     AND #$00FF
 C2/1CDF: 0A           ASL

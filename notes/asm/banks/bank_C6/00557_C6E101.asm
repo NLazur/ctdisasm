@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E101
+Routine_C6E101:
 C6/E101: E2 10        SEP #$10
 C6/E103: AE 30 1B     LDX $1B30
 C6/E106: BF 01 FE C0  LDA $C0FE01,X

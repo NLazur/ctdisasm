@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 81D1
+Routine_CF81D1:
 CF/81D1: 21 0E        AND ($0E,X)
 CF/81D3: 21 04        AND ($04,X)
 CF/81D5: 20 04 20     JSR $2004

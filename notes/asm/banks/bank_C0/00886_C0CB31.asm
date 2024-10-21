@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CB31
+Routine_C0CB31:
 C0/CB31: 82 94 02     BRL $C0CDC8
 C0/CB34: 82 ED 05     BRL $C0D124
 C0/CB37: 82 EE 11     BRL $C0DD28

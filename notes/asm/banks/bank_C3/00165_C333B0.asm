@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 33B0
+Routine_C333B0:
 C3/33B0: C2 20        REP #$20
 C3/33B2: 64 F0        STZ $F0
 C3/33B4: 8A           TXA

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 209A
+Routine_C1209A:
 C1/209A: A2 03 00     LDX #$0003
 C1/209D: 86 80        STX $80
 C1/209F: A2 00 00     LDX #$0000

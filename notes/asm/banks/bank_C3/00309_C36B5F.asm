@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6B5F
+Routine_C36B5F:
 C3/6B5F: E6 6A        INC $6A
 C3/6B61: A2 FC        LDX #$FC
 C3/6B63: 9E 20 94     STZ $9420,X

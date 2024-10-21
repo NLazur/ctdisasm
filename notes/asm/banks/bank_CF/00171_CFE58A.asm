@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: E58A
+Routine_CFE58A:
 CF/E58A: CE 12 A1     DEC $A112
 CF/E58D: D0 0D        BNE $E59C
 CF/E58F: A9 0C        LDA #$0C

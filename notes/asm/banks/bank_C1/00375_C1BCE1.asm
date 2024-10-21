@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: BCE1
+Routine_C1BCE1:
 C1/BCE1: AD 8B B1     LDA $B18B
 C1/BCE4: AA           TAX
 C1/BCE5: BD 58 B1     LDA $B158,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2232
+Routine_C22232:
 C2/2232: 9D 0A 00     STA $000A,X
 C2/2235: 9E 03 00     STZ $0003,X
 C2/2238: E2 20        SEP #$20

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 957E
+Routine_C0957E:
 C0/957E: 85 66        STA $66
 C0/9580: A6 8D        LDX $8D
 C0/9582: E8           INX

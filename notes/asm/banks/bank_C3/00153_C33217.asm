@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3217
+Routine_C33217:
 C3/3217: 08           PHP
 C3/3218: 8D 20 21     STA $2120
 C3/321B: A5 09        LDA $09

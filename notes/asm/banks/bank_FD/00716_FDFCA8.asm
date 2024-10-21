@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: FCA8
+Routine_FDFCA8:
 FD/FCA8: 77 F6        ADC [$F6],Y
 FD/FCAA: 00 00        BRK $00
 FD/FCAC: 01 02        ORA ($02,X)

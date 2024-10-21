@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 58B2
+Routine_C258B2:
 C2/58B2: A7 31        LDA [$31]
 C2/58B4: C2 20        REP #$20
 C2/58B6: E6 31        INC $31

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EEBF
+Routine_FFEEBF:
 FF/EEBF: 00 28        BRK $28
 FF/EEC1: 00 00        BRK $00
 FF/EEC3: 00 10        BRK $10

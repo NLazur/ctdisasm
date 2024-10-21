@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6938
+Routine_FE6938:
 FE/6938: C0 40 E0     CPY #$E040
 FE/693B: 00 40        BRK $40
 FE/693D: 90 C0        BCC $68FF

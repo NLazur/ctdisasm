@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A6DD
+Routine_C6A6DD:
 C6/A6DD: 65 66        ADC $66
 C6/A6DF: 5B           TCD
 C6/A6E0: 68           PLA

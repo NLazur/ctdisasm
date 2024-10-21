@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F93E
+Routine_C1F93E:
 C1/F93E: AE 8C B2     LDX $B28C
 C1/F941: DA           PHX
 C1/F942: 9C 11 B3     STZ $B311

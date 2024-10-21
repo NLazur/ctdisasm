@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1ACF
+Routine_CF1ACF:
 CF/1ACF: C0 C0 60     CPY #$60C0
 CF/1AD2: 80 90        BRA $1A64
 CF/1AD4: 00 20        BRK $20

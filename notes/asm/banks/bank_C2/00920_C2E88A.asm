@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E88A
+Routine_C2E88A:
 C2/E88A: 08           PHP
 C2/E88B: 71 00        ADC ($00),Y
 C2/E88D: 5E 7E 00     LSR $007E,X

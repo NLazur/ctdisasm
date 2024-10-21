@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6D1E
+Routine_FD6D1E:
 FD/6D1E: F8           SED
 FD/6D1F: C8           INY
 FD/6D20: 54 70 58     MVN $70,$58

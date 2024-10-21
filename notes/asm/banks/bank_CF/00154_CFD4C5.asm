@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D4C5
+Routine_CFD4C5:
 CF/D4C5: 38           SEC
 CF/D4C6: 1C 20 6D     TRB $6D20
 CF/D4C9: 38           SEC

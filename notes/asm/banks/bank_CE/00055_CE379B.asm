@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 379B
+Routine_CE379B:
 CE/379B: 00 60        BRK $60
 CE/379D: 01 1B        ORA ($1B,X)
 CE/379F: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0CC7
+Routine_C00CC7:
 C0/0CC7: 89 40        BIT #$40
 C0/0CC9: D0 03        BNE $0CCE
 C0/0CCB: 82 70 00     BRL $C00D3E

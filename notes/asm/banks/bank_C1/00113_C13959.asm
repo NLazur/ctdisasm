@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3959
+Routine_C13959:
 C1/3959: A6 9C        LDX $9C
 C1/395B: 9E FD A5     STZ $A5FD,X
 C1/395E: BD 0F 1D     LDA $1D0F,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 18F1
+Routine_C218F1:
 C2/18F1: E2 20        SEP #$20
 C2/18F3: AF ED 01 7F  LDA $7F01ED
 C2/18F7: D0 20        BNE $1919

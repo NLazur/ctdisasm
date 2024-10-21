@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3EE1
+Routine_FD3EE1:
 FD/3EE1: 4A           LSR
 FD/3EE2: 0E 00 98     ASL $9800
 FD/3EE5: 18           CLC

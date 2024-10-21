@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: D515
+Routine_C0D515:
 C0/D515: BD 00 1B     LDA $1B00,X
 C0/D518: 29 7F        AND #$7F
 C0/D51A: F0 11        BEQ $D52D

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 36B9
+Routine_C336B9:
 C3/36B9: A5 08        LDA $08
 C3/36BB: 29 00        AND #$00
 C3/36BD: 1F 00 D0 08  ORA $08D000,X

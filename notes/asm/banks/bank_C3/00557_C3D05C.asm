@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D05C
+Routine_C3D05C:
 C3/D05C: 18           CLC
 C3/D05D: 02 35        COP $35
 C3/D05F: 00 E2        BRK $E2

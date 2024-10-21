@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 7419
+Routine_D07419:
 D0/7419: 90 C0        BCC $73DB
 D0/741B: 20 80 40     JSR $4080
 D0/741E: 00 80        BRK $80

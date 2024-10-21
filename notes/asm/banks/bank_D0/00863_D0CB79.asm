@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CB79
+Routine_D0CB79:
 D0/CB79: 23 63        AND $63,S
 D0/CB7B: 65 03        ADC $03
 D0/CB7D: 07 01        ORA [$01]

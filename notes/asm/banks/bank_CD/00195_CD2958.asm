@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2958
+Routine_CD2958:
 CD/2958: A4 43        LDY $43
 CD/295A: A7 40        LDA [$40]
 CD/295C: 0A           ASL

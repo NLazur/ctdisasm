@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: A07F
+Routine_CFA07F:
 CF/A07F: 20 00 20     JSR $2000
 CF/A082: 02 20        COP $20
 CF/A084: 62 20 64     PER $CF04A7

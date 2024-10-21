@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9CF4
+Routine_FD9CF4:
 FD/9CF4: 48           PHA
 FD/9CF5: 10 08        BPL $9CFF
 FD/9CF7: 04 38        TSB $38

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1A12
+Routine_CF1A12:
 CF/1A12: E0 20 F0     CPX #$F020
 CF/1A15: 90 F8        BCC $1A0F
 CF/1A17: 08           PHP

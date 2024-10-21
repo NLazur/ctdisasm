@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 08B6
+Routine_C608B6:
 C6/08B6: E4 20        CPX $20
 C6/08B8: 88           DEY
 C6/08B9: 28           PLP

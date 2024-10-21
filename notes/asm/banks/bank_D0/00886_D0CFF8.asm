@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CFF8
+Routine_D0CFF8:
 D0/CFF8: A0 C0        LDY #$C0
 D0/CFFA: A0 C0        LDY #$C0
 D0/CFFC: A0 C0        LDY #$C0

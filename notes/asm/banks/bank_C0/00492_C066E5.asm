@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 66E5
+Routine_C066E5:
 C0/66E5: C8           INY
 C0/66E6: AD F2 00     LDA $00F2
 C0/66E9: 89 08        BIT #$08

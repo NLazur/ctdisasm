@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8230
+Routine_C08230:
 C0/8230: 38           SEC
 C0/8231: E9 20        SBC #$20
 C0/8233: 00 18        BRK $18

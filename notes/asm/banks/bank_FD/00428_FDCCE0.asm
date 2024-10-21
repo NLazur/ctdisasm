@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: CCE0
+Routine_FDCCE0:
 FD/CCE0: 38           SEC
 FD/CCE1: E9 10        SBC #$10
 FD/CCE3: 85 D9        STA $D9

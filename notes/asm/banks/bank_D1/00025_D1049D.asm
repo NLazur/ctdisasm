@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 049D
+Routine_D1049D:
 D1/049D: 41 62        EOR ($62,X)
 D1/049F: 41 64        EOR ($64,X)
 D1/04A1: 47 70        EOR [$70]

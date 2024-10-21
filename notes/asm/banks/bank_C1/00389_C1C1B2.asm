@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C1B2
+Routine_C1C1B2:
 C1/C1B2: C2 20        REP #$20
 C1/C1B4: 4A           LSR
 C1/C1B5: 4A           LSR

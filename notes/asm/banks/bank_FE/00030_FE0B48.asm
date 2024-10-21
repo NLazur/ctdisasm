@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0B48
+Routine_FE0B48:
 FE/0B48: 20 48 F8     JSR $F848
 FE/0B4B: 12 68        ORA ($68)
 FE/0B4D: 01 0B        ORA ($0B,X)

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C2D3
+Routine_FDC2D3:
 FD/C2D3: A5 26        LDA $26
 FD/C2D5: 0A           ASL
 FD/C2D6: AA           TAX

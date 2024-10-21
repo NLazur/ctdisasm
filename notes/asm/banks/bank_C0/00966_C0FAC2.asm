@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: FAC2
+Routine_C0FAC2:
 C0/FAC2: 5F 5D 5C 5A  EOR $5A5C5D,X
 C0/FAC6: 59 57 56     EOR $5657,Y
 C0/FAC9: 54 53 51     MVN $53,$51

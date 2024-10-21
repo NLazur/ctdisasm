@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4D42
+Routine_D04D42:
 D0/4D42: 80 80        BRA $4CC4
 D0/4D44: C0 C0 80     CPY #$80C0
 D0/4D47: 80 02        BRA $4D4B

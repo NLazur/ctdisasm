@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1B5E
+Routine_CD1B5E:
 CD/1B5E: AD D2 99     LDA $99D2
 CD/1B61: 29 7F        AND #$7F
 CD/1B63: C9 01        CMP #$01

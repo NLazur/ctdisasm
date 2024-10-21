@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1EE0
+Routine_C01EE0:
 C0/1EE0: E2 20        SEP #$20
 C0/1EE2: A6 97        LDX $97
 C0/1EE4: BD 81 18     LDA $1881,X

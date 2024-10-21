@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0D6F
+Routine_C60D6F:
 C6/0D6F: C2 76        REP #$76
 C6/0D71: F6 11        INC $11,X
 C6/0D73: 80 C3        BRA $0D38

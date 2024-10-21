@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EC30
+Routine_D0EC30:
 D0/EC30: 24 40        BIT $40
 D0/EC32: 0A           ASL
 D0/EC33: 25 0A        AND $0A

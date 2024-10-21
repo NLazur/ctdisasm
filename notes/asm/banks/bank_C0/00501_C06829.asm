@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6829
+Routine_C06829:
 C0/6829: 20 E3 67     JSR $67E3
 C0/682C: BF 01 20 7F  LDA $7F2001,X
 C0/6830: 86 D9        STX $D9

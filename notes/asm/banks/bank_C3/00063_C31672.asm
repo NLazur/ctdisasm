@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1672
+Routine_C31672:
 C3/1672: FF 00 00 FF  SBC $FF0000,X
 C3/1676: E2 20        SEP #$20
 C3/1678: 02 0B        COP $0B

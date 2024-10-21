@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8CB1
+Routine_CF8CB1:
 CF/8CB1: 28           PLP
 CF/8CB2: 62 28 04     PER $CF90DD
 CF/8CB5: 20 04 20     JSR $2004

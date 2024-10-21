@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4BDE
+Routine_C64BDE:
 C6/4BDE: 01 86        ORA ($86,X)
 C6/4BE0: 5A           PHY
 C6/4BE1: 80 00        BRA $4BE3

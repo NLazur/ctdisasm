@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2DB1
+Routine_C22DB1:
 C2/2DB1: 20 5A 7B     JSR $7B5A
 C2/2DB4: C2 20        REP #$20
 C2/2DB6: A2 00 90     LDX #$9000

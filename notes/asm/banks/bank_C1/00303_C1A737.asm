@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A737
+Routine_C1A737:
 C1/A737: AD 52 B2     LDA $B252
 C1/A73A: 18           CLC
 C1/A73B: 69 03        ADC #$03

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 38E5
+Routine_CD38E5:
 CD/38E5: A5 0B        LDA $0B
 CD/38E7: 38           SEC
 CD/38E8: E5 0C        SBC $0C

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DD96
+Routine_FFDD96:
 FF/DD96: BF 41 9F 60  LDA $609F41,X
 FF/DD9A: FF 03 E7 18  SBC $18E703,X
 FF/DD9E: FB           XCE

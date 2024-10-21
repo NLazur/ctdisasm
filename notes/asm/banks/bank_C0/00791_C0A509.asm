@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A509
+Routine_C0A509:
 C0/A509: AD D7 0B     LDA $0BD7
 C0/A50C: 8D 2C 21     STA $212C
 C0/A50F: AD D8 0B     LDA $0BD8

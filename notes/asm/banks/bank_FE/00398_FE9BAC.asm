@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9BAC
+Routine_FE9BAC:
 FE/9BAC: 0E FE 1F     ASL $1FFE
 FE/9BAF: FD 0F FE     SBC $FE0F,X
 FE/9BB2: F7 0D        SBC [$0D],Y

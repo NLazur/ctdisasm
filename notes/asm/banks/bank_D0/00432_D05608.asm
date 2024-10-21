@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 5608
+Routine_D05608:
 D0/5608: A3 20        LDA $20,S
 D0/560A: E7 E2        SBC [$E2]
 D0/560C: EA           NOP

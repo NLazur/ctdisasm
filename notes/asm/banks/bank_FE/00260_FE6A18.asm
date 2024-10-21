@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6A18
+Routine_FE6A18:
 FE/6A18: 2A           ROL
 FE/6A19: 00 0B        BRK $0B
 FE/6A1B: 85 00        STA $00

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FB95
+Routine_C3FB95:
 C3/FB95: 04 EA        TSB $EA
 C3/FB97: 64 40        STZ $40
 C3/FB99: 00 F0        BRK $F0

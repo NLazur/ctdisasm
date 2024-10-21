@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: CCB8
+Routine_FDCCB8:
 FD/CCB8: C9 10        CMP #$10
 FD/CCBA: B0 24        BCS $CCE0
 FD/CCBC: 85 D9        STA $D9

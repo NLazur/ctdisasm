@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9448
+Routine_FD9448:
 FD/9448: 1F 09 00 96  ORA $960009,X
 FD/944C: 25 09        AND $09
 FD/944E: 73 00        ADC ($00,S),Y

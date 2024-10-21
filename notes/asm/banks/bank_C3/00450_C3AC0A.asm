@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: AC0A
+Routine_C3AC0A:
 C3/AC0A: 5E 40 2F     LSR $2F40,X
 C3/AC0D: 53 FC        EOR ($FC,S),Y
 C3/AC0F: FF 32 3F 0B  SBC $0B3F32,X

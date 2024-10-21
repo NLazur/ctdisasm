@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 14A6
+Routine_C314A6:
 C3/14A6: 01 8D        ORA ($8D,X)
 C3/14A8: 01 18        ORA ($18,X)
 C3/14AA: 10 A2        BPL $144E

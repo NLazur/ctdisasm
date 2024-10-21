@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 43C3
+Routine_C043C3:
 C0/43C3: A6 6D        LDX $6D
 C0/43C5: 9D 00 11     STA $1100,X
 C0/43C8: 9E 80 1C     STZ $1C80,X

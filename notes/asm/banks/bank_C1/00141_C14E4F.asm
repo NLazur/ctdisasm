@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4E4F
+Routine_C14E4F:
 C1/4E4F: AD 18 A0     LDA $A018
 C1/4E52: AA           TAX
 C1/4E53: BD 45 A1     LDA $A145,X

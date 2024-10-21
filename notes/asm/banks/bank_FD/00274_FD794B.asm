@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 794B
+Routine_FD794B:
 FD/794B: 4A           LSR
 FD/794C: 3E EE 13     ROL $13EE,X
 FD/794F: FF E8 10 FF  SBC $FF10E8,X

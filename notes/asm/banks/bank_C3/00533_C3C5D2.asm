@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C5D2
+Routine_C3C5D2:
 C3/C5D2: 26 10        ROL $10
 C3/C5D4: 9F 10 27 30  STA $302710,X
 C3/C5D8: 44 F8 52     MVP $F8,$52

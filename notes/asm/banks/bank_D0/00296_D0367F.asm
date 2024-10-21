@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 367F
+Routine_D0367F:
 D0/367F: C0 40 C0     CPY #$C040
 D0/3682: 80 40        BRA $36C4
 D0/3684: A0 60        LDY #$60

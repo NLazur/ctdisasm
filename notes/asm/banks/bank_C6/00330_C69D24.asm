@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9D24
+Routine_C69D24:
 C6/9D24: E0 80 91     CPX #$9180
 C6/9D27: 86 15        STX $15
 C6/9D29: 36 20        ROL $20,X

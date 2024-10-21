@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4B58
+Routine_C04B58:
 C0/4B58: C8           INY
 C0/4B59: BB           TYX
 C0/4B5A: BF 01 20 7F  LDA $7F2001,X

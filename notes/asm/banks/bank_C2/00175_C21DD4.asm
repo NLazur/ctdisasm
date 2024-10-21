@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1DD4
+Routine_C21DD4:
 C2/1DD4: 7B           TDC
 C2/1DD5: BD 02 00     LDA $0002,X
 C2/1DD8: D0 55        BNE $1E2F

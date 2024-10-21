@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 55C5
+Routine_FD55C5:
 FD/55C5: 7B           TDC
 FD/55C6: 54 67 77     MVN $67,$77
 FD/55C9: 87 88        STA [$88]

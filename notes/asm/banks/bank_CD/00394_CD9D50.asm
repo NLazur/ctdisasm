@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 9D50
+Routine_CD9D50:
 CD/9D50: 0A           ASL
 CD/9D51: 6E 02 05     ROR $0502
 CD/9D54: 12 1E        ORA ($1E)

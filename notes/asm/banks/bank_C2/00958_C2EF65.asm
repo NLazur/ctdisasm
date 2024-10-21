@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EF65
+Routine_C2EF65:
 C2/EF65: 8B           PHB
 C2/EF66: 08           PHP
 C2/EF67: E2 20        SEP #$20

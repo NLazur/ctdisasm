@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FE62
+Routine_C3FE62:
 C3/FE62: D0 A0        BNE $FE04
 C3/FE64: E2 00        SEP #$00
 C3/FE66: E0 A0        CPX #$A0

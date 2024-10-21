@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CAC3
+Routine_C3CAC3:
 C3/CAC3: 30 30        BMI $CAF5
 C3/CAC5: 5A           PHY
 C3/CAC6: 01 A9        ORA ($A9,X)

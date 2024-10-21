@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F9B3
+Routine_FDF9B3:
 FD/F9B3: 80 78        BRA $FA2D
 FD/F9B5: 00 79        BRK $79
 FD/F9B7: 80 79        BRA $FA32

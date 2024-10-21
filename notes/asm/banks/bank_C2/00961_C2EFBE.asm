@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EFBE
+Routine_C2EFBE:
 C2/EFBE: DA           PHX
 C2/EFBF: C2 20        REP #$20
 C2/EFC1: 29 FF 00     AND #$00FF

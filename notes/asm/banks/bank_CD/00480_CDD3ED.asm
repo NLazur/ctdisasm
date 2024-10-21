@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: D3ED
+Routine_CDD3ED:
 CD/D3ED: 33 03        AND ($03,S),Y
 CD/D3EF: 0A           ASL
 CD/D3F0: 24 01        BIT $01

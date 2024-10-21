@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6D2F
+Routine_C06D2F:
 C0/6D2F: A7 D6        LDA [$D6]       ; load map graphics to VRAM
 C0/6D31: C9 FF        CMP #$FF
 C0/6D33: F0 2F        BEQ $6D64

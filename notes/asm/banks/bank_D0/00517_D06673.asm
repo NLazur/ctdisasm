@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6673
+Routine_D06673:
 D0/6673: C0 C1        CPY #$C1
 D0/6675: C1 1B        CMP ($1B,X)
 D0/6677: 1C 40 40     TRB $4040

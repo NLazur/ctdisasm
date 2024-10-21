@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: C77C
+Routine_FEC77C:
 FE/C77C: 06 56        ASL $56
 FE/C77E: 03 17        ORA $17,S
 FE/C780: 59 57 E3     EOR $E357,Y

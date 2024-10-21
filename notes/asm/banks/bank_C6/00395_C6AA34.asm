@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AA34
+Routine_C6AA34:
 C6/AA34: 08           PHP
 C6/AA35: 13 B4        ORA ($B4,S),Y
 C6/AA37: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 8826
+Routine_CD8826:
 CD/8826: 88           DEY
 CD/8827: 4E 88 65     LSR $6588
 CD/882A: 88           DEY

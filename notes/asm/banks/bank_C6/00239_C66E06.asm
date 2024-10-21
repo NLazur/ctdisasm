@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6E06
+Routine_C66E06:
 C6/6E06: F8           SED
 C6/6E07: 8B           PHB
 C6/6E08: 34 F8        BIT $F8,X

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0B03
+Routine_C30B03:
 C3/0B03: B2 20        LDA ($20)
 C3/0B05: E6 20        INC $20
 C3/0B07: 89 80 00     BIT #$0080

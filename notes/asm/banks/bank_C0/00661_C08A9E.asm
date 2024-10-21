@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8A9E
+Routine_C08A9E:
 C0/8A9E: A5 68        LDA $68
 C0/8AA0: E2 20        SEP #$20
 C0/8AA2: A5 67        LDA $67

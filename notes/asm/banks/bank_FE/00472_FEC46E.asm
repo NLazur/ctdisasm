@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: C46E
+Routine_FEC46E:
 FE/C46E: 0A           ASL
 FE/C46F: 63 BB        ADC $BB,S
 FE/C471: 80 07        BRA $C47A

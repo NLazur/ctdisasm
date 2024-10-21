@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 889E
+Routine_C6889E:
 C6/889E: DE C9 D9     DEC $D9C9,X
 C6/88A1: 52 77        EOR ($77)
 C6/88A3: B9 AA 7D     LDA $7DAA,Y

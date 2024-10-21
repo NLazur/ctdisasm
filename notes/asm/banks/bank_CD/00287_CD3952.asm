@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3952
+Routine_CD3952:
 CD/3952: A5 13        LDA $13
 CD/3954: C5 15        CMP $15
 CD/3956: 90 0A        BCC $3962

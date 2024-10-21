@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F6E4
+Routine_FDF6E4:
 FD/F6E4: 76 40        ROR $40,X
 FD/F6E6: 7B           TDC
 FD/F6E7: 02 10        COP $10

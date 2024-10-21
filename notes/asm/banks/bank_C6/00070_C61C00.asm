@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1C00
+Routine_C61C00:
 C6/1C00: 11 0D        ORA ($0D),Y
 C6/1C02: 39 0F 3D     AND $3D0F,Y
 C6/1C05: 07 F7        ORA [$F7]

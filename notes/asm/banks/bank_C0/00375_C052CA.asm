@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 52CA
+Routine_C052CA:
 C0/52CA: BB           TYX
 C0/52CB: E8           INX
 C0/52CC: 7B           TDC

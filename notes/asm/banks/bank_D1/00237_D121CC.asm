@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 21CC
+Routine_D121CC:
 D1/21CC: 80 89        BRA $2157
 D1/21CE: 2A           ROL
 D1/21CF: 00 08        BRK $08

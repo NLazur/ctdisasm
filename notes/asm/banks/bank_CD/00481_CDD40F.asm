@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: D40F
+Routine_CDD40F:
 CD/D40F: 20 1E A4     JSR $A41E
 CD/D412: 04 02        TSB $02
 CD/D414: 78           SEI

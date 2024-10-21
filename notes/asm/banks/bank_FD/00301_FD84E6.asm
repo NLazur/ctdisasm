@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 84E6
+Routine_FD84E6:
 FD/84E6: A2 11        LDX #$11
 FD/84E8: FF 00 A8 0C  SBC $0CA800,X
 FD/84EC: 1F A0 09 30  ORA $3009A0,X

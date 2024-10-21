@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4CF7
+Routine_C14CF7:
 C1/4CF7: AD D1 A3     LDA $A3D1
 C1/4CFA: F0 04        BEQ $4D00
 C1/4CFC: 7B           TDC

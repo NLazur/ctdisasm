@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7E45
+Routine_C67E45:
 C6/7E45: 6C 04 04     JMP ($0404)
 C6/7E48: 54 01 92     MVN $01,$92
 C6/7E4B: 80 CE        BRA $7E1B

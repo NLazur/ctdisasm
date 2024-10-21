@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0B28
+Routine_C00B28:
 C0/0B28: 22 24 C1 FD  JSR $FDC124
 C0/0B2C: E2 10        SEP #$10
 C0/0B2E: 22 C1 C2 FD  JSR $FDC2C1

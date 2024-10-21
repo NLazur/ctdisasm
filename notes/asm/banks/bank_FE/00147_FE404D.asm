@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 404D
+Routine_FE404D:
 FE/404D: C6 3F        DEC $3F
 FE/404F: 0A           ASL
 FE/4050: CB           WAI

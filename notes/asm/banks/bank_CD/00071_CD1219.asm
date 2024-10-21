@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1219
+Routine_CD1219:
 CD/1219: B8           CLV
 CD/121A: 12 75        ORA ($75)
 CD/121C: 12 29        ORA ($29)

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E935
+Routine_FDE935:
 FD/E935: B9 22 05     LDA $0522,Y
 FD/E938: A8           TAY
 FD/E939: BF 01 20 7E  LDA $7E2001,X

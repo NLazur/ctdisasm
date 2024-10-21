@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7652
+Routine_C27652:
 C2/7652: A5 1C        LDA $1C
 C2/7654: 10 06        BPL $765C
 C2/7656: A9 02 14     LDA #$1402

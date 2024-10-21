@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A9F2
+Routine_C0A9F2:
 C0/A9F2: 84 C5        STY $C5
 C0/A9F4: A8           TAY
 C0/A9F5: 8A           TXA

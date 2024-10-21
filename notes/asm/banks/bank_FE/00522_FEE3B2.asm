@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E3B2
+Routine_FEE3B2:
 FE/E3B2: 3C 40 80     BIT $8040,X
 FE/E3B5: 23 00        AND $00,S
 FE/E3B7: 41 10        EOR ($10,X)

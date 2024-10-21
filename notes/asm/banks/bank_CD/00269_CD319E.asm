@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 319E
+Routine_CD319E:
 CD/319E: B5 33        LDA $33,X
 CD/31A0: BB           TYX
 CD/31A1: 33 C1        AND ($C1,S),Y

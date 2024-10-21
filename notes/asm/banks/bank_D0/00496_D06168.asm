@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6168
+Routine_D06168:
 D0/6168: 80 80        BRA $60EA
 D0/616A: 20 20 80     JSR $8020
 D0/616D: 80 20        BRA $618F

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6A39
+Routine_C66A39:
 C6/6A39: F8           SED
 C6/6A3A: 0E FE 00     ASL $00FE
 C6/6A3D: 01 F8        ORA ($F8,X)

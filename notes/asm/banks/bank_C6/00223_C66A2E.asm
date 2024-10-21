@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6A2E
+Routine_C66A2E:
 C6/6A2E: 00 E7        BRK $E7
 C6/6A30: 44 00 41     MVP $00,$41
 C6/6A33: 7B           TDC

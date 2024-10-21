@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F01E
+Routine_CFF01E:
 CF/F01E: 3E F0 87     ROL $87F0,X
 CF/F021: F0 94        BEQ $EFB7
 CF/F023: F1 F8        SBC ($F8),Y

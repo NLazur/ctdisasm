@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 50B9
+Routine_FE50B9:
 FE/50B9: 12 C5        ORA ($C5)
 FE/50BB: 00 00        BRK $00
 FE/50BD: FF FB 3F FB  SBC $FB3FFB,X

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F640
+Routine_CDF640:
 CD/F640: 82 61 82     BRL $CD78A4
 CD/F643: 62 82 63     PER $CD59C8
 CD/F646: 82 64 82     BRL $CD78AD

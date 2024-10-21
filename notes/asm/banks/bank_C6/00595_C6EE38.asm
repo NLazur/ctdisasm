@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: EE38
+Routine_C6EE38:
 C6/EE38: AF F5 01 7F  LDA $7F01F5
 C6/EE3C: 29 FE 8F     AND #$8FFE
 C6/EE3F: F5 01        SBC $01,X

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: ADC8
+Routine_D0ADC8:
 D0/ADC8: 80 80        BRA $AD4A
 D0/ADCA: 80 80        BRA $AD4C
 D0/ADCC: 00 00        BRK $00

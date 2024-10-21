@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4702
+Routine_C64702:
 C6/4702: 04 78        TSB $78
 C6/4704: 04 29        TSB $29
 C6/4706: 04 2A        TSB $2A

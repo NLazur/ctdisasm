@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 84D0
+Routine_C284D0:
 C2/84D0: 05 20        ORA $20
 C2/84D2: 8B           PHB
 C2/84D3: 0B           PHD

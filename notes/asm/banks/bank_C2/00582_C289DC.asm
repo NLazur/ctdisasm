@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 89DC
+Routine_C289DC:
 C2/89DC: 00 5A        BRK $5A
 C2/89DE: 7B           TDC
 C2/89DF: 94 5A        STY $5A,X

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1284
+Routine_C31284:
 C3/1284: 20 78 3E     JSR $3E78
 C3/1287: E2 60        SEP #$60
 C3/1289: 30 08        BMI $1293

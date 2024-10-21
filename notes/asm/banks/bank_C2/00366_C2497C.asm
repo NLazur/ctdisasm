@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 497C
+Routine_C2497C:
 C2/497C: A6 4E        LDX $4E
 C2/497E: FE 02 00     INC $0002,X
 C2/4981: A9 B0        LDA #$B0

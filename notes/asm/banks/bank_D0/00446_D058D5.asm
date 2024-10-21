@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 58D5
+Routine_D058D5:
 D0/58D5: C0 00 00     CPY #$0000
 D0/58D8: E9 ED 80     SBC #$80ED
 D0/58DB: 80 00        BRA $58DD

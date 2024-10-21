@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8382
+Routine_FD8382:
 FD/8382: 08           PHP
 FD/8383: F1 00        SBC ($00),Y
 FD/8385: C7 00        CMP [$00]

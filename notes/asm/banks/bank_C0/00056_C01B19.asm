@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1B19
+Routine_C01B19:
 C0/1B19: A5 63        LDA $63
 C0/1B1B: 1A           INC
 C0/1B1C: C5 65        CMP $65

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1E02
+Routine_C31E02:
 C3/1E02: 52 11        EOR ($11)
 C3/1E04: 1E 14 33     ASL $3314,X
 C3/1E07: 50 08        BVC $1E11

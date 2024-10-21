@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 167D
+Routine_D1167D:
 D1/167D: C0 26        CPY #$26
 D1/167F: 41 2A        EOR ($2A,X)
 D1/1681: 41 28        EOR ($28,X)

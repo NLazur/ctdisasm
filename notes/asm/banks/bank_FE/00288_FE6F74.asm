@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6F74
+Routine_FE6F74:
 FE/6F74: 2C 00 80     BIT $8000
 FE/6F77: 0C 80 10     TSB $1080
 FE/6F7A: 80 14        BRA $6F90

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E006
+Routine_CCE006:
 CC/E006: 3A           DEC
 CC/E007: F0 03        BEQ $E00C
 CC/E009: 4C A9 E0     JMP $E0A9

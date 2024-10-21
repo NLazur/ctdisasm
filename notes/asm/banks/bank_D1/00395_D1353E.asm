@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 353E
+Routine_D1353E:
 D1/353E: CC 40 68     CPY $6840
 D1/3541: 08           PHP
 D1/3542: E0 00 E0     CPX #$E000

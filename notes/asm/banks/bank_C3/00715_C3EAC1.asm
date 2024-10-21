@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: EAC1
+Routine_C3EAC1:
 C3/EAC1: EF 00 01 F8  SBC $F80100
 C3/EAC5: F8           SED
 C3/EAC6: 4E 00 01     LSR $0100

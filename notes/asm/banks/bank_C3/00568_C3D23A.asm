@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D23A
+Routine_C3D23A:
 C3/D23A: A4 1C        LDY $1C
 C3/D23C: 84 1C        STY $1C
 C3/D23E: 1B           TCS

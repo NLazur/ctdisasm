@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E77B
+Routine_C1E77B:
 C1/E77B: 7B           TDC
 C1/E77C: C2 20        REP #$20
 C1/E77E: 18           CLC

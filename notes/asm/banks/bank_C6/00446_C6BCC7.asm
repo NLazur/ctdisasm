@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BCC7
+Routine_C6BCC7:
 C6/BCC7: 5B           TCD
 C6/BCC8: AD AE DB     LDA $DBAE
 C6/BCCB: 9B           TXY

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 508E
+Routine_C0508E:
 C0/508E: BB           TYX
 C0/508F: E8           INX
 C0/5090: BF 01 20 7F  LDA $7F2001,X

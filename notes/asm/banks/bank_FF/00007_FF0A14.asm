@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 0A14
+Routine_FF0A14:
 FF/0A14: EF 70 FF 21  SBC $21FF70
 FF/0A18: A1 FF        LDA ($FF,X)
 FF/0A1A: 1C FF E5     TRB $E5FF

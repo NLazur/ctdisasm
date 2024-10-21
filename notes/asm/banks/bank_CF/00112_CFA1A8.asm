@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: A1A8
+Routine_CFA1A8:
 CF/A1A8: DE 20 E0     DEC $E020,X
 CF/A1AB: 20 E2 20     JSR $20E2
 CF/A1AE: E4 20        CPX $20

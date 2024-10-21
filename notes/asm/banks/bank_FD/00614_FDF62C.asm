@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F62C
+Routine_FDF62C:
 FD/F62C: 73 C0        ADC ($C0,S),Y
 FD/F62E: 73 40        ADC ($40,S),Y
 FD/F630: 74 C0        STZ $C0,X

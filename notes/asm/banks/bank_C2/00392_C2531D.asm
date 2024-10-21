@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 531D
+Routine_C2531D:
 C2/531D: A4 4E        LDY $4E
 C2/531F: AD 04 01     LDA $0104
 C2/5322: 29 03 0A     AND #$0A03

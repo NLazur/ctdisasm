@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4576
+Routine_C34576:
 C3/4576: 0D 82 60     ORA $6082
 C3/4579: 0E 8C 60     ASL $608C
 C3/457C: AA           TAX

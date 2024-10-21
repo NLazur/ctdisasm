@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6C3A
+Routine_FE6C3A:
 FE/6C3A: E0 00 C0     CPX #$C000
 FE/6C3D: F0 01        BEQ $6C40
 FE/6C3F: F0 05        BEQ $6C46

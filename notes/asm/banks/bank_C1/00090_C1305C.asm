@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 305C
+Routine_C1305C:
 C1/305C: AD D9 99     LDA $99D9
 C1/305F: AA           TAX
 C1/3060: 86 94        STX $94

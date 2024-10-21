@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 624B
+Routine_C0624B:
 C0/624B: A6 6D        LDX $6D
 C0/624D: A9 00        LDA #$00
 C0/624F: 9D 01 1C     STA $1C01,X

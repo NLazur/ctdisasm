@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 41B5
+Routine_C241B5:
 C2/41B5: E2 20        SEP #$20
 C2/41B7: 64 0E        STZ $0E
 C2/41B9: A5 08        LDA $08

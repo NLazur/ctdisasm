@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1626
+Routine_D11626:
 D1/1626: 6A           ROR
 D1/1627: 01 6C        ORA ($6C,X)
 D1/1629: 0A           ASL

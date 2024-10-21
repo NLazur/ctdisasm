@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3AA5
+Routine_D03AA5:
 D0/3AA5: 7F 1F 1F E0  ADC $E01F1F,X
 D0/3AA9: E0 1F        CPX #$1F
 D0/3AAB: FF E0 1F FE  SBC $FE1FE0,X

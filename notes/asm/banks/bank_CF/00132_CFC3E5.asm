@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: C3E5
+Routine_CFC3E5:
 CF/C3E5: A1 6B        LDA ($6B,X)
 CF/C3E7: E1 47        SBC ($47,X)
 CF/C3E9: 30 49        BMI $C434

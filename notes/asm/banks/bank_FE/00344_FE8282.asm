@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8282
+Routine_FE8282:
 FE/8282: 09 91        ORA #$91
 FE/8284: 39 71 24     AND $2471,Y
 FE/8287: 41 14        EOR ($14,X)

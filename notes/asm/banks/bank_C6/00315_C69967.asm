@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9967
+Routine_C69967:
 C6/9967: 04 37        TSB $37
 C6/9969: 05 FB        ORA $FB
 C6/996B: 30 B3        BMI $9920

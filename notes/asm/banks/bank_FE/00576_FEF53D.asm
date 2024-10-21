@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: F53D
+Routine_FEF53D:
 FE/F53D: BC EE BD     LDY $BDEE,X
 FE/F540: CF BC F4 98  CMP $98F4BC
 FE/F544: 10 7C        BPL $F5C2

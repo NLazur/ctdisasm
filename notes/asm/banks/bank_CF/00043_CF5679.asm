@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 5679
+Routine_CF5679:
 CF/5679: 80 60        BRA $56DB
 CF/567B: 80 40        BRA $56BD
 CF/567D: 80 00        BRA $567F

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 249B
+Routine_CC249B:
 CC/249B: 01 4D        ORA ($4D,X)
 CC/249D: 25 A4        AND $A4
 CC/249F: 00 FF        BRK $FF

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0E36
+Routine_C30E36:
 C3/0E36: 0A           ASL
 C3/0E37: 2D 2D 20     AND $202D
 C3/0E3A: 4A           LSR

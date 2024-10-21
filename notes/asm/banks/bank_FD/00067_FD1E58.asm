@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1E58
+Routine_FD1E58:
 FD/1E58: C0 AF        CPY #$AF
 FD/1E5A: C0 3F        CPY #$3F
 FD/1E5C: C0 4D        CPY #$4D

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E76E
+Routine_C1E76E:
 C1/E76E: DA           PHX
 C1/E76F: 7B           TDC
 C1/E770: AA           TAX

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 0720
+Routine_CC0720:
 CC/0720: 00 00        BRK $00
 CC/0722: 00 68        BRK $68
 CC/0724: 10 40        BPL $0766

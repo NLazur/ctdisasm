@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3F6D
+Routine_C23F6D:
 C2/3F6D: BD 24 00     LDA $0024,X
 C2/3F70: 89 01 00     BIT #$0001
 C2/3F73: F0 07        BEQ $3F7C

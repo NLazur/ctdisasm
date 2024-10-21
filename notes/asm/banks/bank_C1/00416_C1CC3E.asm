@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CC3E
+Routine_C1CC3E:
 C1/CC3E: AA           TAX
 C1/CC3F: BD BE B1     LDA $B1BE,X
 C1/CC42: D0 0E        BNE $CC52

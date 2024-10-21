@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7AEB
+Routine_C27AEB:
 C2/7AEB: C2 20        REP #$20
 C2/7AED: A9 F6 8D     LDA #$8DF6
 C2/7AF0: 8F 21 8A 7E  STA $7E8A21

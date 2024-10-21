@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C392
+Routine_D0C392:
 D0/C392: C0 40        CPY #$40
 D0/C394: C0 40        CPY #$40
 D0/C396: C0 40        CPY #$40

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BB87
+Routine_C6BB87:
 C6/BB87: 7A           PLY
 C6/BB88: CC 03 9D     CPY $9D03
 C6/BB8B: 9E AF B8     STZ $B8AF,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 47FE
+Routine_C047FE:
 C0/47FE: A5 E3        LDA $E3
 C0/4800: C2 20        REP #$20
 C0/4802: 29 FF 00     AND #$00FF

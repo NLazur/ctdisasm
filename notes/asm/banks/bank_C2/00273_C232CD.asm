@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 32CD
+Routine_C232CD:
 C2/32CD: AD 38 1B     LDA $1B38
 C2/32D0: 29 FF        AND #$FF
 C2/32D2: 00 A8        BRK $A8

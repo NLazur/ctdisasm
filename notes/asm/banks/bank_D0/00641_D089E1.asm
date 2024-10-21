@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 89E1
+Routine_D089E1:
 D0/89E1: E0 B0 50     CPX #$50B0
 D0/89E4: F8           SED
 D0/89E5: 08           PHP

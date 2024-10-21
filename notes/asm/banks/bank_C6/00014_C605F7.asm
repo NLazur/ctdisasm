@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 05F7
+Routine_C605F7:
 C6/05F7: E9 FF EA     SBC #$EAFF
 C6/05FA: F4 81 7E     PEA $7E81
 C6/05FD: 02 30        COP $30

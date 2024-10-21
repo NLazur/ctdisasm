@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 74B4
+Routine_C174B4:
 C1/74B4: C8           INY
 C1/74B5: B7 E6        LDA [$E6],Y
 C1/74B7: 85 80        STA $80

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 36C6
+Routine_D136C6:
 D1/36C6: 0C 01 0C     TSB $0C01
 D1/36C9: 00 41        BRK $41
 D1/36CB: 0C 81 0C     TSB $0C81

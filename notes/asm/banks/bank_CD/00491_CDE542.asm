@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: E542
+Routine_CDE542:
 CD/E542: 0A           ASL
 CD/E543: 61 02        ADC ($02,X)
 CD/E545: 00 07        BRK $07

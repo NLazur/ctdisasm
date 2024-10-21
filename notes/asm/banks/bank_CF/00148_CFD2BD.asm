@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D2BD
+Routine_CFD2BD:
 CF/D2BD: A1 6B        LDA ($6B,X)
 CF/D2BF: E1 17        SBC ($17,X)
 CF/D2C1: 23 19        AND $19,S

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CFD3
+Routine_CDCFD3:
 CD/CFD3: 00 73        BRK $73
 CD/CFD5: 03 24        ORA $24,S
 CD/CFD7: 01 1B        ORA ($1B,X)

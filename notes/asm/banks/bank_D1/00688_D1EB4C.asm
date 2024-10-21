@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EB4C
+Routine_D1EB4C:
 D1/EB4C: A2 01 00     LDX #$0001
 D1/EB4F: C2 20        REP #$20
 D1/EB51: AD B2 5F     LDA $5FB2

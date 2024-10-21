@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 04D3
+Routine_D104D3:
 D1/04D3: 06 10        ASL $10
 D1/04D5: 2E 06 18     ROL $1806
 D1/04D8: 41 25        EOR ($25,X)

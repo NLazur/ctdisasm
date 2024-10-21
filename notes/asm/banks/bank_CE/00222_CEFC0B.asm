@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: FC0B
+Routine_CEFC0B:
 CE/FC0B: BF 84 C9 BD  LDA $BDC984,X
 CE/FC0F: 00 88        BRK $88
 CE/FC11: 61 C1        ADC ($C1,X)

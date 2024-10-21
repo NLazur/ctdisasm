@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 37A1
+Routine_C237A1:
 C2/37A1: 20 63 0F     JSR $0F63
 C2/37A4: 90 05        BCC $37AB
 C2/37A6: A6 4E        LDX $4E

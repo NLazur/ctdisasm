@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9C5C
+Routine_C69C5C:
 C6/9C5C: 58           CLI
 C6/9C5D: 0B           PHD
 C6/9C5E: 9D 04 A2     STA $A204,X

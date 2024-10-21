@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3140
+Routine_C03140:
 C0/3140: E2 20        SEP #$20
 C0/3142: A9 F0        LDA #$F0
 C0/3144: A6 6D        LDX $6D

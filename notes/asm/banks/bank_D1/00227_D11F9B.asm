@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1F9B
+Routine_D11F9B:
 D1/1F9B: C0 20        CPY #$20
 D1/1F9D: 80 C0        BRA $1F5F
 D1/1F9F: C0 FF        CPY #$FF

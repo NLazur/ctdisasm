@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 26F5
+Routine_CC26F5:
 CC/26F5: C4 32        CPY $32
 CC/26F7: C8           INY
 CC/26F8: 00 00        BRK $00

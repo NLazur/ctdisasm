@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 82DD
+Routine_FE82DD:
 FE/82DD: 10 75        BPL $8354
 FE/82DF: 2A           ROL
 FE/82E0: 1A           INC

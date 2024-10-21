@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A234
+Routine_C6A234:
 C6/A234: 02 02        COP $02
 C6/A236: AD 3E 3D     LDA $3D3E
 C6/A239: 11 38        ORA ($38),Y

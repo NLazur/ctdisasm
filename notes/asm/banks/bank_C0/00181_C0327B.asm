@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 327B
+Routine_C0327B:
 C0/327B: 7B           TDC
 C0/327C: EB           XBA
 C0/327D: A5 AB        LDA $AB

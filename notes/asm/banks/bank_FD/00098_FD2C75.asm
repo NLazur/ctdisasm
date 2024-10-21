@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2C75
+Routine_FD2C75:
 FD/2C75: 78           SEI
 FD/2C76: 8F 00 F7 60  STA $60F700
 FD/2C7A: F7 04        SBC [$04],Y

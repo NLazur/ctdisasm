@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E807
+Routine_FDE807:
 FD/E807: 5A           PHY
 FD/E808: B9 27 05     LDA $0527,Y
 FD/E80B: 18           CLC

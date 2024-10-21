@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FBE4
+Routine_C2FBE4:
 C2/FBE4: 58           CLI
 C2/FBE5: 80 2E        BRA $FC15
 C2/FBE7: 7E 40 06     ROR $0640,X

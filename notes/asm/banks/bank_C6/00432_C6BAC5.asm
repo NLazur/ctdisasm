@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BAC5
+Routine_C6BAC5:
 C6/BAC5: 7D 08 20     ADC $2008,X
 C6/BAC8: BB           TYX
 C6/BAC9: CC CA CB     CPY $CBCA

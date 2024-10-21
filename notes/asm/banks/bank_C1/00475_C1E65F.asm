@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E65F
+Routine_C1E65F:
 C1/E65F: A5 18        LDA $18
 C1/E661: C9 3E        CMP #$3E
 C1/E663: D0 13        BNE $E678

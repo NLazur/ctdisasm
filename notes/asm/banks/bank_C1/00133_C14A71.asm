@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4A71
+Routine_C14A71:
 C1/4A71: 7B           TDC
 C1/4A72: AA           TAX
 C1/4A73: A8           TAY

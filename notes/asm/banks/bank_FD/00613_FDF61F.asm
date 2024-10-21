@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F61F
+Routine_FDF61F:
 FD/F61F: 71 C0        ADC ($C0),Y
 FD/F621: 71 40        ADC ($40),Y
 FD/F623: 72 04        ADC ($04)

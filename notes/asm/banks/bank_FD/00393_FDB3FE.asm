@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B3FE
+Routine_FDB3FE:
 FD/B3FE: BD FF AE     LDA $AEFF,X
 FD/B401: C9 FF        CMP #$FF
 FD/B403: F0 32        BEQ $B437

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E7DC
+Routine_C6E7DC:
 C6/E7DC: A2 00 34     LDX #$3400
 C6/E7DF: A0 00 0E     LDY #$0E00
 C6/E7E2: 80 06        BRA $E7EA

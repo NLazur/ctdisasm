@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 2298
+Routine_CF2298:
 CF/2298: 80 80        BRA $221A
 CF/229A: 80 80        BRA $221C
 CF/229C: 80 82        BRA $2220

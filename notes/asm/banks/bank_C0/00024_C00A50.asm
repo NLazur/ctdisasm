@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0A50
+Routine_C00A50:
 C0/0A50: 0B           PHD
 C0/0A51: C2 20        REP #$20
 C0/0A53: A9 00 1D     LDA #$1D00

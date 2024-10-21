@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1392
+Routine_D01392:
 D0/1392: 20 20 10     JSR $1020
 D0/1395: 18           CLC
 D0/1396: 00 00        BRK $00

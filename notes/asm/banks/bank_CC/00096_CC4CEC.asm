@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 4CEC
+Routine_CC4CEC:
 CC/4CEC: 00 00        BRK $00
 CC/4CEE: 52 03        EOR ($03)
 CC/4CF0: 2E 00 FF     ROL $FF00

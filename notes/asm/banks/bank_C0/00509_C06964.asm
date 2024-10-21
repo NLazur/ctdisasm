@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6964
+Routine_C06964:
 C0/6964: C8           INY
 C0/6965: BB           TYX
 C0/6966: C2 20        REP #$20

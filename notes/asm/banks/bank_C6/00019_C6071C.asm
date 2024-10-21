@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 071C
+Routine_C6071C:
 C6/071C: FF CC FF FE  SBC $FEFFCC,X
 C6/0720: 7F 7E 10 FE  ADC $FE107E,X
 C6/0724: FD F7 E8     SBC $E8F7,X

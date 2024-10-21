@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EEF5
+Routine_C2EEF5:
 C2/EEF5: 0C 0D 10     TSB $100D
 C2/EEF8: 11 0E        ORA ($0E),Y
 C2/EEFA: 0F 12 13 10  ORA $101312

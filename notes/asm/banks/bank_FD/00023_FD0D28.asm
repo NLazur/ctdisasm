@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 0D28
+Routine_FD0D28:
 FD/0D28: 30 20        BMI $0D4A
 FD/0D2A: 53 35        EOR ($35,S),Y
 FD/0D2C: 22 12 53 FD  JSR $FD5312

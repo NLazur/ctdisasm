@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0143
+Routine_D00143:
 D0/0143: A0 30 D0     LDY #$D030
 D0/0146: A0 B0 80     LDY #$80B0
 D0/0149: 88           DEY

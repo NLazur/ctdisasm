@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 30B7
+Routine_D030B7:
 D0/30B7: C0 0A 0E     CPY #$0E0A
 D0/30BA: 0A           ASL
 D0/30BB: 0E 0A 0E     ASL $0E0A

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3427
+Routine_C33427:
 C3/3427: 02 00        COP $00
 C3/3429: 0E 06 0C     ASL $0C06
 C3/342C: 00 12        BRK $12

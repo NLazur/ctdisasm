@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: C502
+Routine_D1C502:
 D1/C502: 06 40        ASL $40
 D1/C504: 64 2F        STZ $2F
 D1/C506: C0 03        CPY #$03

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5969
+Routine_FD5969:
 FD/5969: 18           CLC
 FD/596A: 18           CLC
 FD/596B: 07 07        ORA [$07]

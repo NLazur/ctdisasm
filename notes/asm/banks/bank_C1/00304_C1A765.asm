@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A765
+Routine_C1A765:
 C1/A765: A0 FF FF     LDY #$FFFF
 C1/A768: 84 02        STY $02
 C1/A76A: 7B           TDC

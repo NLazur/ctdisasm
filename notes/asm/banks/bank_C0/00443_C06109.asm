@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6109
+Routine_C06109:
 C0/6109: A6 6D        LDX $6D
 C0/610B: BF 80 09 7F  LDA $7F0980,X
 C0/610F: F0 09        BEQ $611A

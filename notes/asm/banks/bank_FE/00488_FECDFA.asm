@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: CDFA
+Routine_FECDFA:
 FE/CDFA: 14 6C        TRB $6C
 FE/CDFC: 34 02        BIT $02,X
 FE/CDFE: 69 5F        ADC #$5F

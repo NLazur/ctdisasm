@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0E91
+Routine_C20E91:
 C2/0E91: A0 01 00     LDY #$0001
 C2/0E94: B7 52        LDA [$52],Y
 C2/0E96: 29 FF 00     AND #$00FF

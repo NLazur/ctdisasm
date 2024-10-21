@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 25B3
+Routine_D025B3:
 D0/25B3: C0 40 C0     CPY #$C040
 D0/25B6: 80 80        BRA $2538
 D0/25B8: 5E 62 5A     LSR $5A62,X

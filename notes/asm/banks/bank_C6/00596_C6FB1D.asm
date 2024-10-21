@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: FB1D
+Routine_C6FB1D:
 C6/FB1D: 00 45        BRK $45
 C6/FB1F: 48           PHA
 C6/FB20: 45 50        EOR $50

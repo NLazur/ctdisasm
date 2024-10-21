@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AF3A
+Routine_C2AF3A:
 C2/AF3A: 71 C9        ADC ($C9),Y
 C2/AF3C: 7A           PLY
 C2/AF3D: C9 7A C9     CMP #$C97A

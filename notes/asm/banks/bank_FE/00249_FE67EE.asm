@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 67EE
+Routine_FE67EE:
 FE/67EE: 32 41        AND ($41)
 FE/67F0: E4 A0        CPX $A0
 FE/67F2: 83 E8        STA $E8,S

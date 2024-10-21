@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F588
+Routine_C2F588:
 C2/F588: 08           PHP
 C2/F589: 0B           PHD
 C2/F58A: F4 C0 19     PEA $19C0

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8FDA
+Routine_C18FDA:
 C1/8FDA: AE D2 B1     LDX $B1D2
 C1/8FDD: E8           INX
 C1/8FDE: E8           INX

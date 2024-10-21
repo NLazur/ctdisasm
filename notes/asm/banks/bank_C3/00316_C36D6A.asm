@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6D6A
+Routine_C36D6A:
 C3/6D6A: 0E 58 80     ASL $8058
 C3/6D6D: 33 00        AND ($00,S),Y
 C3/6D6F: 45 00        EOR $00

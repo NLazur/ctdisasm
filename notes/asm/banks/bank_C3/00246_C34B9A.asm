@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4B9A
+Routine_C34B9A:
 C3/4B9A: DA           PHX
 C3/4B9B: B5 58        LDA $58,X
 C3/4B9D: 8F 35 24 70  STA $702435

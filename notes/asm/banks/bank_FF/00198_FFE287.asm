@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E287
+Routine_FFE287:
 FF/E287: 5F 52 52 5F  EOR $5F5252,X
 FF/E28B: 4F FE 00 C3  EOR $C300FE
 FF/E28F: FA           PLX

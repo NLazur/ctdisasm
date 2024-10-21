@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6DDB
+Routine_FE6DDB:
 FE/6DDB: 70 54        BVS $6E31
 FE/6DDD: 10 08        BPL $6DE7
 FE/6DDF: 24 00        BIT $00

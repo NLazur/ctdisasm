@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 72CD
+Routine_C272CD:
 C2/72CD: 20 60 20     JSR $2060
 C2/72D0: 00 30        BRK $30
 C2/72D2: 20 30 40     JSR $4030

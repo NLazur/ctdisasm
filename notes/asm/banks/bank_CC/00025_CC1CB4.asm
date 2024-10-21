@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1CB4
+Routine_CC1CB4:
 CC/1CB4: 02 00        COP $00
 CC/1CB6: 12 80        ORA ($80)
 CC/1CB8: 80 00        BRA $1CBA

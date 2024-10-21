@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2CBA
+Routine_D02CBA:
 D0/2CBA: A0 60        LDY #$60
 D0/2CBC: D0 30        BNE $2CEE
 D0/2CBE: C8           INY

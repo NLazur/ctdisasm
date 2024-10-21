@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4A54
+Routine_C34A54:
 C3/4A54: BD 4D F0     LDA $F04D,X
 C3/4A57: C3 E7        CMP $E7,S
 C3/4A59: 50 A9        BVC $4A04

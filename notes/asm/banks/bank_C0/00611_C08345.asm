@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8345
+Routine_C08345:
 C0/8345: A2 80        LDX #$80
 C0/8347: C8           INY
 C0/8348: 8E 81 21     STX $2181

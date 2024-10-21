@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9945
+Routine_C09945:
 C0/9945: BD 00 11     LDA $1100,X
 C0/9948: 30 EE        BMI $9938
 C0/994A: EC 97 01     CPX $0197

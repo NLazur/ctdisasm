@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DB5D
+Routine_C3DB5D:
 C3/DB5D: 70 5E        BVS $DBBD
 C3/DB5F: BF 17 99 12  LDA $129917,X
 C3/DB63: 80 D6        BRA $DB3B

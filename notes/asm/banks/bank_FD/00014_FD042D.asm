@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 042D
+Routine_FD042D:
 FD/042D: 2C 01 02     BIT $0201
 FD/0430: 00 01        BRK $01
 FD/0432: 20 10 11     JSR $1110

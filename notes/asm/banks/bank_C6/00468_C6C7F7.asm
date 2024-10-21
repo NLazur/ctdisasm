@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C7F7
+Routine_C6C7F7:
 C6/C7F7: 8A           TXA
 C6/C7F8: 01 0C        ORA ($0C,X)
 C6/C7FA: 00 04        BRK $04

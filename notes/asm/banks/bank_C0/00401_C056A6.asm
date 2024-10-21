@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 56A6
+Routine_C056A6:
 C0/56A6: A2 48 00     LDX #$0048      ; load objects ???
 C0/56A9: 86 69        STX $69
 C0/56AB: A2 78 00     LDX #$0078

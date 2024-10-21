@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1A9A
+Routine_CF1A9A:
 CF/1A9A: E0 20 E0     CPX #$E020
 CF/1A9D: A0 C0 40     LDY #$40C0
 CF/1AA0: 00 16        BRK $16

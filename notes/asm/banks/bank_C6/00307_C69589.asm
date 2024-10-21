@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9589
+Routine_C69589:
 C6/9589: 14 FC        TRB $FC
 C6/958B: FC 23 33     JSR ($3323,X)
 C6/958E: 04 00        TSB $00

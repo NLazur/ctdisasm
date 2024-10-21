@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1881
+Routine_C31881:
 C3/1881: 01 D3        ORA ($D3,X)
 C3/1883: 02 00        COP $00
 C3/1885: 04 AD        TSB $AD

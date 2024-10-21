@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8FE8
+Routine_C38FE8:
 C3/8FE8: 3C 86 4C     BIT $4C86,X
 C3/8FEB: AF 01 B5 50  LDA $50B501
 C3/8FEF: 31 A0        AND ($A0),Y

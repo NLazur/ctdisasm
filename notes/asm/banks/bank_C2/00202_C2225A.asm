@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 225A
+Routine_C2225A:
 C2/225A: 18           CLC
 C2/225B: 69 00        ADC #$00
 C2/225D: 01 29        ORA ($29,X)

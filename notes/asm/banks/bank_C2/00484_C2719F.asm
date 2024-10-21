@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 719F
+Routine_C2719F:
 C2/719F: A6 4E        LDX $4E
 C2/71A1: BD 0E 00     LDA $000E,X
 C2/71A4: D0 03        BNE $71A9

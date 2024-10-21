@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: CD1B
+Routine_FECD1B:
 FE/CD1B: 34 00        BIT $00,X
 FE/CD1D: 18           CLC
 FE/CD1E: 1A           INC

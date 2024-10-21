@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6965
+Routine_C26965:
 C2/6965: 20 98 57     JSR $5798
 C2/6968: C2 20        REP #$20
 C2/696A: AD 00 01     LDA $0100

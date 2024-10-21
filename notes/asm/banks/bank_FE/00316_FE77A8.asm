@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 77A8
+Routine_FE77A8:
 FE/77A8: 08           PHP
 FE/77A9: 78           SEI
 FE/77AA: 08           PHP

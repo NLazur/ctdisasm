@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: ABA2
+Routine_FDABA2:
 FD/ABA2: 7B           TDC
 FD/ABA3: A6 0E        LDX $0E
 FD/ABA5: BD 12 AF     LDA $AF12,X

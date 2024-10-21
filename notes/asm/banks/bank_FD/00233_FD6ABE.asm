@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6ABE
+Routine_FD6ABE:
 FD/6ABE: 53 10        EOR ($10,S),Y
 FD/6AC0: 00 2B        BRK $2B
 FD/6AC2: FC 96 00     JSR ($0096,X)

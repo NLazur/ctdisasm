@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 9673
+Routine_D19673:
 D1/9673: 80 70        BRA $96E5
 D1/9675: 03 8A        ORA $8A,S
 D1/9677: 41 80        EOR ($80,X)

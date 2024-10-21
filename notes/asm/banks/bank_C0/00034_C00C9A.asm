@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0C9A
+Routine_C00C9A:
 C0/0C9A: 20 4E 0B     JSR $0B4E
 C0/0C9D: A6 00        LDX $00
 C0/0C9F: 86 05        STX $05

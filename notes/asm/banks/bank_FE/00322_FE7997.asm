@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 7997
+Routine_FE7997:
 FE/7997: 5A           PHY
 FE/7998: 02 F6        COP $F6
 FE/799A: 2E 14 00     ROL $0014

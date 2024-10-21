@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B271
+Routine_C0B271:
 C0/B271: A2 01 09     LDX #$0901
 C0/B274: 86 89        STX $89
 C0/B276: A2 00 00     LDX #$0000

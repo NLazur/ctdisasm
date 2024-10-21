@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 27D9
+Routine_C127D9:
 C1/27D9: A2 0B 00     LDX #$000B
 C1/27DC: A9 FF        LDA #$FF
 C1/27DE: 9D C0 99     STA $99C0,X

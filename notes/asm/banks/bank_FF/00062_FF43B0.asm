@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 43B0
+Routine_FF43B0:
 FF/43B0: 00 80        BRK $80
 FF/43B2: 00 00        BRK $00
 FF/43B4: 00 00        BRK $00

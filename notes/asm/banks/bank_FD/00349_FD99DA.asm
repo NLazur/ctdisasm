@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 99DA
+Routine_FD99DA:
 FD/99DA: 44 FF 00     MVP $FF,$00
 FD/99DD: B2 12        LDA ($12)
 FD/99DF: 06 01        ASL $01

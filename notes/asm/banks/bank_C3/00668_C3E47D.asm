@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: E47D
+Routine_C3E47D:
 C3/E47D: 19 40 00     ORA $0040,Y
 C3/E480: 04 00        TSB $00
 C3/E482: E6 00        INC $00

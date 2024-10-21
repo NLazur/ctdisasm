@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1D0B
+Routine_C31D0B:
 C3/1D0B: 0C 21 A9     TSB $A921
 C3/1D0E: 02 8D        COP $8D
 C3/1D10: 30 6A        BMI $1D7C

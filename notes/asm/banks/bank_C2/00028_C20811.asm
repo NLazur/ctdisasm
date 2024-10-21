@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0811
+Routine_C20811:
 C2/0811: A5 0A        LDA $0A
 C2/0813: EB           XBA
 C2/0814: 4A           LSR

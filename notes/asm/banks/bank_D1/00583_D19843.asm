@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 9843
+Routine_D19843:
 D1/9843: 04 7F        TSB $7F
 D1/9845: 84 9C        STY $9C
 D1/9847: C0 00        CPY #$00

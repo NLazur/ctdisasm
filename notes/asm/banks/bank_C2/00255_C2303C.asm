@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 303C
+Routine_C2303C:
 C2/303C: A6 4E        LDX $4E
 C2/303E: BD 03 00     LDA $0003,X
 C2/3041: C9 3C 90     CMP #$903C

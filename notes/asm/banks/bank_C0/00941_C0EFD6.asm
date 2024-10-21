@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EFD6
+Routine_C0EFD6:
 C0/EFD6: A5 61        LDA $61
 C0/EFD8: D0 42        BNE $F01C
 C0/EFDA: A9 80        LDA #$80

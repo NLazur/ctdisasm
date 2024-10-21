@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 535C
+Routine_C6535C:
 C6/535C: 04 41        TSB $41
 C6/535E: 04 0D        TSB $0D
 C6/5360: 04 0E        TSB $0E

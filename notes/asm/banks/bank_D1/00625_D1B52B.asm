@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: B52B
+Routine_D1B52B:
 D1/B52B: 00 60        BRK $60
 D1/B52D: 00 00        BRK $00
 D1/B52F: 00 00        BRK $00

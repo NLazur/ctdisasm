@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: FAEE
+Routine_CFFAEE:
 CF/FAEE: 84 80        STY $80
 CF/FAF0: 98           TYA
 CF/FAF1: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0DE4
+Routine_D10DE4:
 D1/0DE4: 64 01        STZ $01
 D1/0DE6: D1 12        CMP ($12),Y
 D1/0DE8: 20 66 01     JSR $0166

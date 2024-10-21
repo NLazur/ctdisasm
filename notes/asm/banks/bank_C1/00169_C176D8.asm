@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 76D8
+Routine_C176D8:
 C1/76D8: AD 14 A0     LDA $A014
 C1/76DB: AA           TAX
 C1/76DC: BD 0C 1D     LDA $1D0C,X

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2792
+Routine_CC2792:
 CC/2792: 48           PHA
 CC/2793: 03 27        ORA $27,S
 CC/2795: 28           PLP

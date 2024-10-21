@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E64A
+Routine_C6E64A:
 C6/E64A: A2 00 90     LDX #$9000
 C6/E64D: 8E 03 03     STX $0303
 C6/E650: A9 7F 8D     LDA #$8D7F

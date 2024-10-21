@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FED3
+Routine_FFFED3:
 FF/FED3: FD FE 0F     SBC $0FFE,X
 FF/FED6: FF 16 FF A5  SBC $A5FF16,X
 FF/FEDA: 5A           PHY

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8A03
+Routine_C68A03:
 C6/8A03: 25 8A        AND $8A
 C6/8A05: FC 01 F8     JSR ($F801,X)
 C6/8A08: 05 1E        ORA $1E

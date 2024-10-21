@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F2A9
+Routine_CCF2A9:
 CC/F2A9: A6 80        LDX $80
 CC/F2AB: BD 30 A2     LDA $A230,X
 CC/F2AE: DD B8 A2     CMP $A2B8,X

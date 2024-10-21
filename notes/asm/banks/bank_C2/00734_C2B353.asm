@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B353
+Routine_C2B353:
 C2/B353: 5D B3 65     EOR $65B3,X
 C2/B356: B3 6D        LDA ($6D,S),Y
 C2/B358: B3 AE        LDA ($AE,S),Y

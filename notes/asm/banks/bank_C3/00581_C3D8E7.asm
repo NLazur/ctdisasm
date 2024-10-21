@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D8E7
+Routine_C3D8E7:
 C3/D8E7: EE 45 27     INC $2745
 C3/D8EA: 31 00        AND ($00),Y
 C3/D8EC: C5 20        CMP $20

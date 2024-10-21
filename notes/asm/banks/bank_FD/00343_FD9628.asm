@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9628
+Routine_FD9628:
 FD/9628: 02 0C        COP $0C
 FD/962A: 06 18        ASL $18
 FD/962C: C1 6A        CMP ($6A,X)

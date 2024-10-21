@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 7341
+Routine_C37341:
 C3/7341: 4D 49 BF     EOR $BF49
 C3/7344: 00 55        BRK $55
 C3/7346: 20 D5 00     JSR $00D5

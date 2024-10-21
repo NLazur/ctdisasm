@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: FEA2
+Routine_C0FEA2:
 C0/FEA2: A7 17        LDA [$17]
 C0/FEA4: 76 3B        ROR $3B,X
 C0/FEA6: 16 2A        ASL $2A,X

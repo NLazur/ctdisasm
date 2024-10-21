@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 27C1
+Routine_FD27C1:
 FD/27C1: 84 04        STY $04
 FD/27C3: 10 80        BPL $2745
 FD/27C5: 00 60        BRK $60

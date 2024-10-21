@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D89E
+Routine_CFD89E:
 CF/D89E: 1C 20 03     TRB $0320
 CF/D8A1: 23 05        AND $05,S
 CF/D8A3: 23 07        AND $07,S

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9D4B
+Routine_D09D4B:
 D0/9D4B: E0 C0        CPX #$C0
 D0/9D4D: 80 00        BRA $9D4F
 D0/9D4F: 80 2A        BRA $9D7B

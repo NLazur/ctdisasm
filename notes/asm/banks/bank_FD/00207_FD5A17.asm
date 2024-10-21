@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5A17
+Routine_FD5A17:
 FD/5A17: C8           INY
 FD/5A18: 04 04        TSB $04
 FD/5A1A: 03 80        ORA $80,S

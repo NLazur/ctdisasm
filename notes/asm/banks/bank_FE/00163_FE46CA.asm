@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 46CA
+Routine_FE46CA:
 FE/46CA: 56 7B        LSR $7B,X
 FE/46CC: A2 00 A8     LDX #$A800
 FE/46CF: 00 19        BRK $19

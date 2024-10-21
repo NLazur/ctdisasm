@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 998C
+Routine_C3998C:
 C3/998C: 03 1C        ORA $1C,S
 C3/998E: 09 22        ORA #$22
 C3/9990: 09 38        ORA #$38

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: DED4
+Routine_CCDED4:
 CC/DED4: BB           TYX
 CC/DED5: FD 01 38     SBC $3801,X
 CC/DED8: B5 02        LDA $02,X

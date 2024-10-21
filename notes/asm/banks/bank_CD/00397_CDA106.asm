@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A106
+Routine_CDA106:
 CD/A106: 00 73        BRK $73
 CD/A108: 03 1B        ORA $1B,S
 CD/A10A: 0C 24 01     TSB $0124

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F5B6
+Routine_FDF5B6:
 FD/F5B6: 6F 80 80 80  ADC $808080
 FD/F5BA: 80 80        BRA $F53C
 FD/F5BC: 80 80        BRA $F53E

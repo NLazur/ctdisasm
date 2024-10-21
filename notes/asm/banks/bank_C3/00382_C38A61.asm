@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8A61
+Routine_C38A61:
 C3/8A61: 30 48        BMI $8AAB
 C3/8A63: 50 28        BVC $8A8D
 C3/8A65: 50 A8        BVC $8A0F

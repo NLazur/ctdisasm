@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: CD8B
+Routine_FECD8B:
 FE/CD8B: 6F 50 59 68  ADC $685950
 FE/CD8F: 59 6E 09     EOR $096E,Y
 FE/CD92: 00 6F        BRK $6F

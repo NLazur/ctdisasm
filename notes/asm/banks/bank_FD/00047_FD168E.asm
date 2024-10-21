@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 168E
+Routine_FD168E:
 FD/168E: 19 07 06     ORA $0607,Y
 FD/1691: 0F 00 0C 1E  ORA $1E0C00
 FD/1695: 18           CLC

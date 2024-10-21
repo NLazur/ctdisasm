@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6414
+Routine_D06414:
 D0/6414: 80 80        BRA $6396
 D0/6416: 00 00        BRK $00
 D0/6418: 00 00        BRK $00

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E3A1
+Routine_D0E3A1:
 D0/E3A1: 52 3E        EOR ($3E)
 D0/E3A3: 68           PLA
 D0/E3A4: 52 4D        EOR ($4D)

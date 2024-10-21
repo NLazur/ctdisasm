@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 29AA
+Routine_D129AA:
 D1/29AA: E6 40        INC $40
 D1/29AC: 08           PHP
 D1/29AD: 41 06        EOR ($06,X)

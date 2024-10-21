@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 175C
+Routine_FD175C:
 FD/175C: 88           DEY
 FD/175D: 70 1B        BVS $177A
 FD/175F: 28           PLP

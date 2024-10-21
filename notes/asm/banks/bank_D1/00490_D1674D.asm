@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 674D
+Routine_D1674D:
 D1/674D: 10 10        BPL $675F
 D1/674F: FF 00 08 04  SBC $040800,X
 D1/6753: 8E 40 50     STX $5040

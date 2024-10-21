@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 28B4
+Routine_D028B4:
 D0/28B4: 10 90        BPL $2846
 D0/28B6: 08           PHP
 D0/28B7: 08           PHP

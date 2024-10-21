@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 4475
+Routine_FE4475:
 FE/4475: 8A           TXA
 FE/4476: A8           TAY
 FE/4477: 01 60        ORA ($60,X)

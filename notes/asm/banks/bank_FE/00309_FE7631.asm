@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 7631
+Routine_FE7631:
 FE/7631: 24 C6        BIT $C6
 FE/7633: 32 90        AND ($90)
 FE/7635: 04 06        TSB $06

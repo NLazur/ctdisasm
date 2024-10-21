@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 331C
+Routine_D1331C:
 D1/331C: 10 40        BPL $335E
 D1/331E: 08           PHP
 D1/331F: C1 E8        CMP ($E8,X)

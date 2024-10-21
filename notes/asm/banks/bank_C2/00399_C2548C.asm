@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 548C
+Routine_C2548C:
 C2/548C: 2B           PLD
 C2/548D: 2A           ROL
 C2/548E: 2C 6E 71     BIT $716E

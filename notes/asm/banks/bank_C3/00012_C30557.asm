@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0557
+Routine_C30557:
 C3/0557: 8B           PHB             ; decompression routine
 C3/0558: 0B           PHD
 C3/0559: 08           PHP

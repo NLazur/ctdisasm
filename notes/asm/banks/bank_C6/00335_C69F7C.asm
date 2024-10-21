@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9F7C
+Routine_C69F7C:
 C6/9F7C: E0 01        CPX #$01
 C6/9F7E: 03 04        ORA $04,S
 C6/9F80: 01 02        ORA ($02,X)

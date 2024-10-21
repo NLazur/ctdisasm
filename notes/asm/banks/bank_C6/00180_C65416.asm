@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5416
+Routine_C65416:
 C6/5416: 84 1D        STY $1D
 C6/5418: 84 30        STY $30
 C6/541A: 84 78        STY $78

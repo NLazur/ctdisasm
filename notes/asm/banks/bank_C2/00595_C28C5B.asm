@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8C5B
+Routine_C28C5B:
 C2/8C5B: 75 8C
 C2/8C5D: 79 8C
 C2/8C5F: A2 8C

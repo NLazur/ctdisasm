@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 08E7
+Routine_D108E7:
 D1/08E7: 1C E0 E0     TRB $E0E0
 D1/08EA: 35 08        AND $08,X
 D1/08EC: 7A           PLY

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 74E8
+Routine_C674E8:
 C6/74E8: 7D 12 73     ADC $7312,X
 C6/74EB: 46 00        LSR $00
 C6/74ED: 1E 32 23     ASL $2332,X

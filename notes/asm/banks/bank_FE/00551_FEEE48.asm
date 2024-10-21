@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EE48
+Routine_FEEE48:
 FE/EE48: 09 42 42     ORA #$4242
 FE/EE4B: 03 86        ORA $86,S
 FE/EE4D: 4D 0D EC     EOR $EC0D

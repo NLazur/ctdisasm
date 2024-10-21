@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 1042
+Routine_FE1042:
 FE/1042: F8           SED
 FE/1043: 3E A2 83     ROL $83A2,X
 FE/1046: 06 3A        ASL $3A

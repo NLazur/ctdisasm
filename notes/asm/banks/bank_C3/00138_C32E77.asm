@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2E77
+Routine_C32E77:
 C3/2E77: A2 80        LDX #$80
 C3/2E79: 51 FE        EOR ($FE),Y
 C3/2E7B: 1B           TCS

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9ED1
+Routine_C09ED1:
 C0/9ED1: 64 E5        STZ $E5
 C0/9ED3: A4 6D        LDY $6D
 C0/9ED5: BF 00 0F 7F  LDA $7F0F00,X

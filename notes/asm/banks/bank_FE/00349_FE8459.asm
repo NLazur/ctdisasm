@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8459
+Routine_FE8459:
 FE/8459: EF 27 65 1D  SBC $1D6527
 FE/845D: 6C 2D 73     JMP ($732D)
 FE/8460: 2D 97 40     AND $4097

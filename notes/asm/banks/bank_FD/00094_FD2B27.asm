@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2B27
+Routine_FD2B27:
 FD/2B27: 3C 7C 00     BIT $007C,X
 FD/2B2A: 55 92        EOR $92,X
 FD/2B2C: 3A           DEC

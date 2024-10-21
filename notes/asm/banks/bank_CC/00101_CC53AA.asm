@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 53AA
+Routine_CC53AA:
 CC/53AA: 00 0C        BRK $0C
 CC/53AC: 00 01        BRK $01
 CC/53AE: 00 00        BRK $00

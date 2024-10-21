@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6EA0
+Routine_C06EA0:
 C0/6EA0: 10 9E        BPL $6E40
 C0/6EA2: 90 A0        BCC $6E44
 C0/6EA4: 10 A3        BPL $6E49

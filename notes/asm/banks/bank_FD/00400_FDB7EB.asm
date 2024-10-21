@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B7EB
+Routine_FDB7EB:
 FD/B7EB: 7B           TDC
 FD/B7EC: AA           TAX
 FD/B7ED: 86 02        STX $02

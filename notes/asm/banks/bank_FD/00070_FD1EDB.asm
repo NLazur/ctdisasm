@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1EDB
+Routine_FD1EDB:
 FD/1EDB: 50 A0        BVC $1E7D
 FD/1EDD: 50 A0        BVC $1E7F
 FD/1EDF: C8           INY

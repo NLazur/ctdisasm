@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0000
+Routine_C60000:
 C6/0000: AD
 C6/0001: 07 FE        ORA [$FE]
 C6/0003: 00 01        BRK $01

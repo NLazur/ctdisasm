@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: E99C
+Routine_CFE99C:
 CF/E99C: C2 31        REP #$31
 CF/E99E: A5 C9        LDA $C9
 CF/E9A0: 69 00 07     ADC #$0700

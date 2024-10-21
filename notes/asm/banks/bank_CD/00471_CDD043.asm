@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: D043
+Routine_CDD043:
 CD/D043: 02 72        COP $72
 CD/D045: 00 73        BRK $73
 CD/D047: 00 1B        BRK $1B

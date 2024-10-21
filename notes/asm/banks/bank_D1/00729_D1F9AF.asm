@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F9AF
+Routine_D1F9AF:
 D1/F9AF: 8A           TXA
 D1/F9B0: 8D 64 CC     STA $CC64
 D1/F9B3: BD 0D CD     LDA $CD0D,X

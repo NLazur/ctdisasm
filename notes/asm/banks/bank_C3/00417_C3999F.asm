@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 999F
+Routine_C3999F:
 C3/999F: 61 1C        ADC ($1C,X)
 C3/99A1: B0 05        BCS $99A8
 C3/99A3: 1C 09 32     TRB $3209

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6C97
+Routine_C26C97:
 C2/6C97: D9 01 F2     CMP $F201,Y
 C2/6C9A: 01 F7        ORA ($F7,X)
 C2/6C9C: 01 F0        ORA ($F0,X)

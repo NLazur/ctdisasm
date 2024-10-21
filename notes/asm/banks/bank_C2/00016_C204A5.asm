@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 04A5
+Routine_C204A5:
 C2/04A5: A5 08        LDA $08
 C2/04A7: 9D 00 00     STA $0000,X
 C2/04AA: 9E 03 00     STZ $0003,X

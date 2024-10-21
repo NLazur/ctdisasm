@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9611
+Routine_FD9611:
 FD/9611: 16 89        ASL $89,X
 FD/9613: 0C 92 04     TSB $0492
 FD/9616: 80 FF        BRA $9617

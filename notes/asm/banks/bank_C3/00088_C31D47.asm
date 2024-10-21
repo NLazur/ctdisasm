@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1D47
+Routine_C31D47:
 C3/1D47: 05 00        ORA $00
 C3/1D49: 1F 45 7E FF  ORA $FF7E45,X
 C3/1D4D: F0 00        BEQ $1D4F

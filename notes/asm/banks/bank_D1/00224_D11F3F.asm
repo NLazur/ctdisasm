@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1F3F
+Routine_D11F3F:
 D1/1F3F: EA           NOP
 D1/1F40: 80 EA        BRA $1F2C
 D1/1F42: 02 C0        COP $C0

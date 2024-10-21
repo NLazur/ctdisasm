@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 1AD6
+Routine_FF1AD6:
 FF/1AD6: 24 C2        BIT $C2
 FF/1AD8: 00 02        BRK $02
 FF/1ADA: CA           DEX

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 6671
+Routine_C16671:
 C1/6671: 7B           TDC
 C1/6672: AA           TAX
 C1/6673: 86 82        STX $82

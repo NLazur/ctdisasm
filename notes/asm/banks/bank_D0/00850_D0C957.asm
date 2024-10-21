@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C957
+Routine_D0C957:
 D0/C957: A0 3E        LDY #$3E
 D0/C959: 3F 0F 0F 07  AND $070F0F,X
 D0/C95D: 07 01        ORA [$01]

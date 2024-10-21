@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CDCB
+Routine_C2CDCB:
 C2/CDCB: 00 2E        BRK $2E
 C2/CDCD: 80 2F        BRA $CDFE
 C2/CDCF: 00 31        BRK $31

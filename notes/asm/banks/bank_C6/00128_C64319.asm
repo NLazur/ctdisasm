@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4319
+Routine_C64319:
 C6/4319: 3A           DEC
 C6/431A: 6C 3A 7B     JMP ($7B3A)
 C6/431D: 1A           INC

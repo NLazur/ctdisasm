@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 18ED
+Routine_FF18ED:
 FF/18ED: 61 BB        ADC ($BB,X)
 FF/18EF: 80 BD        BRA $18AE
 FF/18F1: C2 5E        REP #$5E

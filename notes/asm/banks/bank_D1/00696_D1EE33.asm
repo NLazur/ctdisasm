@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EE33
+Routine_D1EE33:
 D1/EE33: AD A1 5D     LDA $5DA1
 D1/EE36: 38           SEC
 D1/EE37: ED 3B CD     SBC $CD3B

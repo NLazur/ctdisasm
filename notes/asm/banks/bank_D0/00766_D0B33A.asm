@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: B33A
+Routine_D0B33A:
 D0/B33A: 80 00        BRA $B33C
 D0/B33C: 80 80        BRA $B2BE
 D0/B33E: 00 00        BRK $00

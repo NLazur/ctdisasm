@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F9FB
+Routine_FFF9FB:
 FF/F9FB: 08           PHP
 FF/F9FC: E2 20        SEP #$20
 FF/F9FE: A5 79        LDA $79

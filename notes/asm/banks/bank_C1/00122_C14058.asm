@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4058
+Routine_C14058:
 C1/4058: EE FD A0     INC $A0FD
 C1/405B: 22 6B F0 CC  JSR $CCF06B
 C1/405F: 20 7E 00     JSR $007E

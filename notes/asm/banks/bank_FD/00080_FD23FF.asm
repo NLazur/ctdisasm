@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 23FF
+Routine_FD23FF:
 FD/23FF: 08           PHP
 FD/2400: 13 73        ORA ($73,S),Y
 FD/2402: A9 2C        LDA #$2C

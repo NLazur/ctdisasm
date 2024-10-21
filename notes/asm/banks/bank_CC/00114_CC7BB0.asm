@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 7BB0
+Routine_CC7BB0:
 CC/7BB0: 39 39 00     AND $0039,Y
 CC/7BB3: 00 30        BRK $30
 CC/7BB5: 00 00        BRK $00

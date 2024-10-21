@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 12E0
+Routine_D012E0:
 D0/12E0: C0 C0 C1     CPY #$C1C0
 D0/12E3: C1 AF        CMP ($AF,X)
 D0/12E5: EF 38 F4 00  SBC $00F438

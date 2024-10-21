@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4DD0
+Routine_D04DD0:
 D0/4DD0: 90 50        BCC $4E22
 D0/4DD2: 20 F0 C8     JSR $C8F0
 D0/4DD5: 68           PLA

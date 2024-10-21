@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FFA8
+Routine_C2FFA8:
 C2/FFA8: A2 98 C8     LDX #$C898
 C2/FFAB: 8E 0E 19     STX $190E
 C2/FFAE: A9 40 8D     LDA #$8D40

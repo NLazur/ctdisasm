@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 170E
+Routine_CD170E:
 CD/170E: 24 C0        BIT $C0
 CD/1710: 21 73        AND ($73,X)
 CD/1712: 21 F3        AND ($F3,X)

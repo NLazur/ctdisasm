@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1884
+Routine_D11884:
 D1/1884: 41 FF        EOR ($FF,X)
 D1/1886: FF 43 70 F0  SBC $F07043,X
 D1/188A: C0 00        CPY #$00

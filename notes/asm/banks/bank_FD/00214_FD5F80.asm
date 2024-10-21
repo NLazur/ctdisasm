@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5F80
+Routine_FD5F80:
 FD/5F80: 13 3C        ORA ($3C,S),Y
 FD/5F82: 11 03        ORA ($03),Y
 FD/5F84: FA           PLX

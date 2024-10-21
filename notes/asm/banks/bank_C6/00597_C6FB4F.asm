@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: FB4F
+Routine_C6FB4F:
 C6/FB4F: 04 60        TSB $60
 C6/FB51: 04 81        TSB $81
 C6/FB53: 04 A1        TSB $A1

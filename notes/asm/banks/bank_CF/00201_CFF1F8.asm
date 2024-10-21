@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F1F8
+Routine_CFF1F8:
 CF/F1F8: A4 C6        LDY $C6
 CF/F1FA: B9 9D A1     LDA $A19D,Y
 CF/F1FD: D0 3D        BNE $F23C

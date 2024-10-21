@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8A2F
+Routine_C38A2F:
 C3/8A2F: 09 80 C6     ORA #$C680
 C3/8A32: C7 F7        CMP [$F7]
 C3/8A34: F7 FF        SBC [$FF],Y

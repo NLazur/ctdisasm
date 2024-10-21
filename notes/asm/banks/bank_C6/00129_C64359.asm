@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4359
+Routine_C64359:
 C6/4359: 1A           INC
 C6/435A: 61 1A        ADC ($1A,X)
 C6/435C: 70 1A        BVS $4378

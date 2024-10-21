@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EC08
+Routine_CFEC08:
 CF/EC08: BD 42 00     LDA $0042,X
 CF/EC0B: 99 42 00     STA $0042,Y
 CF/EC0E: BD 46 00     LDA $0046,X

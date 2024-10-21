@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: A59F
+Routine_FFA59F:
 FF/A59F: 27 C0        AND [$C0]
 FF/A5A1: 00 9F        BRK $9F
 FF/A5A3: 00 A1        BRK $A1

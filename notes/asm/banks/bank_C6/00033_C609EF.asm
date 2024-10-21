@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 09EF
+Routine_C609EF:
 C6/09EF: 80 00        BRA $09F1
 C6/09F1: F6 08        INC $08,X
 C6/09F3: EA           NOP

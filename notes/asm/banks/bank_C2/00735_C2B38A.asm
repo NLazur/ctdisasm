@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B38A
+Routine_C2B38A:
 C2/B38A: AD 49 0F     LDA $0F49
 C2/B38D: D0 03        BNE $B392
 C2/B38F: 4C CC EA     JMP $EACC

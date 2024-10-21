@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 787B
+Routine_C6787B:
 C6/787B: 5C 0E 41 53  JMP $53410E
 C6/787F: D9 02 54     CMP $5402,Y
 C6/7882: 54 3E 53     MVN $3E,$53

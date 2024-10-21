@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EB8B
+Routine_FDEB8B:
 FD/EB8B: A9 80        LDA #$80
 FD/EB8D: 85 1F        STA $1F
 FD/EB8F: 85 21        STA $21

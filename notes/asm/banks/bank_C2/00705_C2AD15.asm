@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AD15
+Routine_C2AD15:
 C2/AD15: A2 7F 33     LDX #$337F
 C2/AD18: A0 FF 33     LDY #$33FF
 C2/AD1B: A9 7F 04     LDA #$047F

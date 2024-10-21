@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0E23
+Routine_CD0E23:
 CD/0E23: 7B           TDC
 CD/0E24: AA           TAX
 CD/0E25: BD EE CC     LDA $CCEE,X

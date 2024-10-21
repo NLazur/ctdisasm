@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 20DF
+Routine_CC20DF:
 CC/20DF: 02 00        COP $00
 CC/20E1: 8A           TXA
 CC/20E2: 92 2E        STA ($2E)

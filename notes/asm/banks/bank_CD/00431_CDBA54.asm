@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: BA54
+Routine_CDBA54:
 CD/BA54: 73 00        ADC ($00,S),Y
 CD/BA56: 19 40 80     ORA $8040,Y
 CD/BA59: 70 02        BVS $BA5D

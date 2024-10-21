@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BA09
+Routine_C2BA09:
 C2/BA09: 0B           PHD
 C2/BA0A: 08           PHP
 C2/BA0B: E2 20        SEP #$20

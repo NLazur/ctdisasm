@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C8FF
+Routine_C3C8FF:
 C3/C8FF: 25 18        AND $18
 C3/C901: 80 60        BRA $C963
 C3/C903: 24 70        BIT $70

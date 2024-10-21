@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1300
+Routine_CD1300:
 CD/1300: 00 00        BRK $00
 CD/1302: FF 00 00 FF  SBC $FF0000,X
 CD/1306: FF FF 00 0C  SBC $0C00FF,X

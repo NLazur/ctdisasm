@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 97A2
+Routine_C697A2:
 C6/97A2: 33 33        AND ($33,S),Y
 C6/97A4: 85 85        STA $85
 C6/97A6: 99 7D F9     STA $F97D,Y

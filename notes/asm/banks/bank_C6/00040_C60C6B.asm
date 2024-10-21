@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0C6B
+Routine_C60C6B:
 C6/0C6B: C0 22 E0     CPY #$E022
 C6/0C6E: 69 06 40     ADC #$4006
 C6/0C71: 80 40        BRA $0CB3

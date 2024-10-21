@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EE9F
+Routine_C1EE9F:
 C1/EE9F: A9 64        LDA #$64
 C1/EEA1: 85 1A        STA $1A
 C1/EEA3: 20 6E E7     JSR $E76E

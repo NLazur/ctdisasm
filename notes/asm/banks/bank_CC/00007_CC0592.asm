@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 0592
+Routine_CC0592:
 CC/0592: 0D 00 00     ORA $0000
 CC/0595: 00 00        BRK $00
 CC/0597: 00 00        BRK $00

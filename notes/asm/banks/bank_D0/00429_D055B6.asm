@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 55B6
+Routine_D055B6:
 D0/55B6: E0 80        CPX #$80
 D0/55B8: 04 04        TSB $04
 D0/55BA: 04 0C        TSB $0C

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1BD2
+Routine_C61BD2:
 C6/1BD2: 7E 02 9F     ROR $9F02,X
 C6/1BD5: 32 01        AND ($01)
 C6/1BD7: 01 00        ORA ($00,X)

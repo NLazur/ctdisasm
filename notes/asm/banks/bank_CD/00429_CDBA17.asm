@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: BA17
+Routine_CDBA17:
 CD/BA17: 78           SEI
 CD/BA18: B7 22        LDA [$22],Y
 CD/BA1A: 1B           TCS

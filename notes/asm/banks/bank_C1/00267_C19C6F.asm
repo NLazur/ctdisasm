@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 9C6F
+Routine_C19C6F:
 C1/9C6F: AE D2 B1     LDX $B1D2
 C1/9C72: AD 52 B2     LDA $B252
 C1/9C75: 0A           ASL

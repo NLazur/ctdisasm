@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: DEBA
+Routine_CDDEBA:
 CD/DEBA: 03 01        ORA $01,S
 CD/DEBC: 24 02        BIT $02
 CD/DEBE: 19 60 08     ORA $0860,Y

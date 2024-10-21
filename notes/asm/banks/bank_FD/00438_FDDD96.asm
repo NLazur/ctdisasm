@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: DD96
+Routine_FDDD96:
 FD/DD96: 02 03        COP $03
 FD/DD98: 03 04        ORA $04,S
 FD/DD9A: 05 06        ORA $06

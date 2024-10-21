@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 0DF5
+Routine_FF0DF5:
 FF/0DF5: 1C 82 01     TRB $0182
 FF/0DF8: 07 00        ORA [$00]
 FF/0DFA: 1F 00 3E 01  ORA $013E00,X

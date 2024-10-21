@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A151
+Routine_C6A151:
 C6/A151: F8           SED
 C6/A152: FF 93 21 48  SBC $482193,X
 C6/A156: 72 99        ADC ($99)

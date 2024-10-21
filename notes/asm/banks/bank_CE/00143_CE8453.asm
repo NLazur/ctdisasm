@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 8453
+Routine_CE8453:
 CE/8453: 84 B8        STY $B8
 CE/8455: 82 6F 84     BRL $CE08C7
 CE/8458: 87 84        STA [$84]

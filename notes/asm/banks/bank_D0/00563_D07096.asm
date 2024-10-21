@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 7096
+Routine_D07096:
 D0/7096: A0 60 16     LDY #$1660
 D0/7099: 19 15 1B     ORA $1B15,Y
 D0/709C: 2D 33 2E     AND $2E33

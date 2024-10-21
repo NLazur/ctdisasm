@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DC74
+Routine_C2DC74:
 C2/DC74: 20 40 60     JSR $6040
 C2/DC77: 80 A0        BRA $DC19
 C2/DC79: C0 E0        CPY #$E0

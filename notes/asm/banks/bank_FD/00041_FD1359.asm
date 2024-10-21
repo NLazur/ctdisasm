@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1359
+Routine_FD1359:
 FD/1359: 10 00        BPL $135B
 FD/135B: 00 FF        BRK $FF
 FD/135D: 9D F8 FA     STA $FAF8,X

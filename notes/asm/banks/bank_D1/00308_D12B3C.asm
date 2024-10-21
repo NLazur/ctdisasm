@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2B3C
+Routine_D12B3C:
 D1/2B3C: 10 40        BPL $2B7E
 D1/2B3E: 04 41        TSB $41
 D1/2B40: 02 0A        COP $0A

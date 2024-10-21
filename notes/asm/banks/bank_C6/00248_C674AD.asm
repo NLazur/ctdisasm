@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 74AD
+Routine_C674AD:
 C6/74AD: 04 97        TSB $97
 C6/74AF: 98           TYA
 C6/74B0: EC 72 EB     CPX $EB72

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E33C
+Routine_FFE33C:
 FF/E33C: AB           PLB
 FF/E33D: AB           PLB
 FF/E33E: 3F FF BF 3F  AND $3FBFFF,X

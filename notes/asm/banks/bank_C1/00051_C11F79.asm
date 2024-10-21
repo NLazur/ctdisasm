@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 1F79
+Routine_C11F79:
 C1/1F79: AD D5 95     LDA $95D5
 C1/1F7C: AA           TAX
 C1/1F7D: 8E 0F 96     STX $960F

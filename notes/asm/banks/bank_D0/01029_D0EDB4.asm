@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EDB4
+Routine_D0EDB4:
 D0/EDB4: 08           PHP
 D0/EDB5: 21 09        AND ($09,X)
 D0/EDB7: 00 34        BRK $34

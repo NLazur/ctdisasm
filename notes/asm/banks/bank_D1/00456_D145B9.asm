@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 45B9
+Routine_D145B9:
 D1/45B9: 21 DC        AND ($DC,X)
 D1/45BB: 10 88        BPL $4545
 D1/45BD: 31 08        AND ($08),Y

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D9DA
+Routine_D0D9DA:
 D0/D9DA: 20 20 18     JSR $1820
 D0/D9DD: 18           CLC
 D0/D9DE: 07 07        ORA [$07]

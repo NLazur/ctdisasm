@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E683
+Routine_C2E683:
 C2/E683: A2 00        LDX #$00
 C2/E685: BD 49 0D     LDA $0D49,X
 C2/E688: F0 07        BEQ $E691

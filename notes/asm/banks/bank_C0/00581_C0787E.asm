@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 787E
+Routine_C0787E:
 C0/787E: 4A           LSR
 C0/787F: 25 1F        AND $1F
 C0/7881: 85 54        STA $54

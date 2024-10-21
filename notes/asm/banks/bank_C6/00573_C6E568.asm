@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E568
+Routine_C6E568:
 C6/E568: C2 20        REP #$20
 C6/E56A: AF 21 8A 7E  LDA $7E8A21
 C6/E56E: 18           CLC

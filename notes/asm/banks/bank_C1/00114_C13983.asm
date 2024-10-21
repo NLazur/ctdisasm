@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3983
+Routine_C13983:
 C1/3983: 80 0D        BRA $3992
 C1/3985: B9 0C 1D     LDA $1D0C,Y
 C1/3988: DD 0F 1D     CMP $1D0F,X

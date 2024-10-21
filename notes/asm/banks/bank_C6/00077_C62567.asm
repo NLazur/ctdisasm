@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 2567
+Routine_C62567:
 C6/2567: 38           SEC
 C6/2568: 30 9B        BMI $2505
 C6/256A: 35 95        AND $95,X

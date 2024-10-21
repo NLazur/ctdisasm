@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 211B
+Routine_CD211B:
 CD/211B: A8           TAY
 CD/211C: 84 45        STY $45
 CD/211E: 64 48        STZ $48

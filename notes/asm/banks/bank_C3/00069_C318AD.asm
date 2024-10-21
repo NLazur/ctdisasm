@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 18AD
+Routine_C318AD:
 C3/18AD: FB           XCE
 C3/18AE: 00 A9        BRK $A9
 C3/18B0: 80 40        BRA $18F2

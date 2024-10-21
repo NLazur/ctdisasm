@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8C52
+Routine_CF8C52:
 CF/8C52: 36 28        ROL $28,X
 CF/8C54: 38           SEC
 CF/8C55: 28           PLP

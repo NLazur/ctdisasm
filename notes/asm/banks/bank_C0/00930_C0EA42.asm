@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EA42
+Routine_C0EA42:
 C0/EA42: A2 00 BD     LDX #$BD00
 C0/EA45: C0 0B        CPY #$0B
 C0/EA47: C5 6D        CMP $6D

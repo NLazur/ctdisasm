@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: FD7E
+Routine_D1FD7E:
 D1/FD7E: A7 40        LDA [$40]
 D1/FD80: 0A           ASL
 D1/FD81: AA           TAX

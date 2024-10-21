@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 954E
+Routine_C6954E:
 C6/954E: 05 02        ORA $02
 C6/9550: 03 04        ORA $04,S
 C6/9552: 61 12        ADC ($12,X)

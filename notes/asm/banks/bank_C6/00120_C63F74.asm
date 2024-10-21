@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3F74
+Routine_C63F74:
 C6/3F74: 93 1D        STA ($1D,S),Y
 C6/3F76: 6E 1D 6F     ROR $6F1D
 C6/3F79: 1D 30 2C     ORA $2C30,X

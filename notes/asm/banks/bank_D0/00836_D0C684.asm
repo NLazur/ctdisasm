@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C684
+Routine_D0C684:
 D0/C684: 3C 24 14     BIT $1424,X
 D0/C687: 18           CLC
 D0/C688: 08           PHP

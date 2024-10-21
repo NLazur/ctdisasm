@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 03B9
+Routine_C603B9:
 C6/03B9: D0 00        BNE $03BB
 C6/03BB: 6C 00 24     JMP ($2400)
 C6/03BE: 22 01 18 00  JSR $001801

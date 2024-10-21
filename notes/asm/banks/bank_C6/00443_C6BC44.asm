@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BC44
+Routine_C6BC44:
 C6/BC44: 6C 1C 6D     JMP ($6D1C)
 C6/BC47: 6E 27 F8     ROR $F827
 C6/BC4A: 01 F8        ORA ($F8,X)

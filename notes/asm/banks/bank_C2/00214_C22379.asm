@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2379
+Routine_C22379:
 C2/2379: 38           SEC
 C2/237A: A5 0E        LDA $0E
 C2/237C: E5 0A        SBC $0A

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9D6F
+Routine_FE9D6F:
 FE/9D6F: 7F 86 9F A0  ADC $A09F86,X
 FE/9D73: E0 FF        CPX #$FF
 FE/9D75: 6D 02 DF     ADC $DF02

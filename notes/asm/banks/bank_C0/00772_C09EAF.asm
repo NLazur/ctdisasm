@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9EAF
+Routine_C09EAF:
 C0/9EAF: AD 2C 1D     LDA $1D2C
 C0/9EB2: 10 05        BPL $9EB9
 C0/9EB4: 49 FF        EOR #$FF

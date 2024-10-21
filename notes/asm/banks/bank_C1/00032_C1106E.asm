@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 106E
+Routine_C1106E:
 C1/106E: AD 0E A1     LDA $A10E
 C1/1071: D0 2A        BNE $109D
 C1/1073: 9C FD A0     STZ $A0FD

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8DD6
+Routine_FE8DD6:
 FE/8DD6: 0C BC 00     TSB $00BC
 FE/8DD9: 1C 11 F0     TRB $F011
 FE/8DDC: D7 30        CMP [$30],Y

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6CCA
+Routine_FD6CCA:
 FD/6CCA: B0 B0        BCS $6C7C
 FD/6CCC: D0 D0        BNE $6C9E
 FD/6CCE: 78           SEI

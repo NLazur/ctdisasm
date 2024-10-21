@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4121
+Routine_C34121:
 C3/4121: 73 69        ADC ($69,S),Y
 C3/4123: FA           PLX
 C3/4124: 00 E3        BRK $E3

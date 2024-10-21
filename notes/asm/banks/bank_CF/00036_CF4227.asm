@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 4227
+Routine_CF4227:
 CF/4227: E0 60        CPX #$60
 CF/4229: E0 20        CPX #$20
 CF/422B: E0 30        CPX #$30

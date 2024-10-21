@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FB77
+Routine_C3FB77:
 C3/FB77: F0 F0        BEQ $FB69
 C3/FB79: 6C 40 04     JMP ($0440)
 C3/FB7C: F0 E0        BEQ $FB5E

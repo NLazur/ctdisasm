@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 04C7
+Routine_D104C7:
 D1/04C7: C4 80        CPY $80
 D1/04C9: C4 C0        CPY $C0
 D1/04CB: 13 08        ORA ($08,S),Y

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7084
+Routine_C07084:
 C0/7084: A6 FE        LDX $FE         ; load map palette
 C0/7086: BF 03 00 F6  LDA $F60003,X
 C0/708A: 8D 02 42     STA $4202

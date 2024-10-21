@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6DF9
+Routine_FD6DF9:
 FD/6DF9: 31 61        AND ($61),Y
 FD/6DFB: 77 00        ADC [$00],Y
 FD/6DFD: 23 3B        AND $3B,S

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 61B7
+Routine_FD61B7:
 FD/61B7: 64 0D        STZ $0D
 FD/61B9: 36 1C        ROL $1C,X
 FD/61BB: E7 74        SBC [$74]

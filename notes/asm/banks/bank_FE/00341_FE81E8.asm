@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 81E8
+Routine_FE81E8:
 FE/81E8: 5D 27 3E     EOR $3E27,X
 FE/81EB: 2D 08 20     AND $2008
 FE/81EE: FF E1 2A 4F  SBC $4F2AE1,X

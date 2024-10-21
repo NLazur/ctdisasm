@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E7C0
+Routine_FDE7C0:
 FD/E7C0: B9 22 05     LDA $0522,Y
 FD/E7C3: A8           TAY
 FD/E7C4: BF 01 20 7E  LDA $7E2001,X

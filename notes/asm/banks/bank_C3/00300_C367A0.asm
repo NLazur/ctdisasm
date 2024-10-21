@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 67A0
+Routine_C367A0:
 C3/67A0: 10 14        BPL $67B6
 C3/67A2: A5 02        LDA $02
 C3/67A4: 21 63        AND ($63,X)

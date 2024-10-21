@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EDBA
+Routine_C1EDBA:
 C1/EDBA: 7B           TDC
 C1/EDBB: AE 89 AD     LDX $AD89
 C1/EDBE: 86 28        STX $28

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E52E
+Routine_C6E52E:
 C6/E52E: AD 52 03     LDA $0352
 C6/E531: 3A           DEC
 C6/E532: 0A           ASL

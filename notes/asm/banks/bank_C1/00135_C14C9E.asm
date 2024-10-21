@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4C9E
+Routine_C14C9E:
 C1/4C9E: 8D 0E A0     STA $A00E
 C1/4CA1: AA           TAX
 C1/4CA2: BD BD 5D     LDA $5DBD,X

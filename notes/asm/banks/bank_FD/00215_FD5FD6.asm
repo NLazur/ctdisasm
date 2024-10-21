@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5FD6
+Routine_FD5FD6:
 FD/5FD6: 1C 0D CB     TRB $CB0D
 FD/5FD9: 03 0B        ORA $0B,S
 FD/5FDB: 13 77        ORA ($77,S),Y

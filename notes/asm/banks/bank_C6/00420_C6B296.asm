@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B296
+Routine_C6B296:
 C6/B296: 41 42        EOR ($42,X)
 C6/B298: 44 FC 44     MVP $FC,$44
 C6/B29B: 32 4E        AND ($4E)

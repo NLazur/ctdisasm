@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 257D
+Routine_D0257D:
 D0/257D: E0 9C        CPX #$9C
 D0/257F: 7C F3 0F     JMP ($0FF3,X)
 D0/2582: FF 00 F8 07  SBC $07F800,X

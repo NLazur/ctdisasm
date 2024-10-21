@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3D50
+Routine_C03D50:
 C0/3D50: 29 7F        AND #$7F
 C0/3D52: F0 0B        BEQ $3D5F
 C0/3D54: 85 23        STA $23

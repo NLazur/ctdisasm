@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1100
+Routine_C21100:
 C2/1100: AD 00 01     LDA $0100
 C2/1103: 8D 05 01     STA $0105
 C2/1106: 8D FC 04     STA $04FC

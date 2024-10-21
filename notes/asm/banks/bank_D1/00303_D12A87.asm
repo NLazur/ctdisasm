@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2A87
+Routine_D12A87:
 D1/2A87: 8A           TXA
 D1/2A88: C6 08        DEC $08
 D1/2A8A: 20 E6 10     JSR $10E6

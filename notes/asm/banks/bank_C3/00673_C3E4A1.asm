@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: E4A1
+Routine_C3E4A1:
 C3/E4A1: 19 40 00     ORA $0040,Y
 C3/E4A4: 04 11        TSB $11
 C3/E4A6: E6 04        INC $04

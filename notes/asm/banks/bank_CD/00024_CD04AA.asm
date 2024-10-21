@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 04AA
+Routine_CD04AA:
 CD/04AA: AD 02 CD     LDA $CD02
 CD/04AD: D0 03        BNE $04B2
 CD/04AF: 20 5F 3B     JSR $3B5F

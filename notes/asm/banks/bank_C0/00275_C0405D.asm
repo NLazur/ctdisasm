@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 405D
+Routine_C0405D:
 C0/405D: A5 39        LDA $39
 C0/405F: F0 2D        BEQ $408E
 C0/4061: C9 03        CMP #$03

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E7B7
+Routine_FFE7B7:
 FF/E7B7: 6F 00 00 00  ADC $000000
 FF/E7BB: 00 15        BRK $15
 FF/E7BD: D2 91        CMP ($91)

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2DF1
+Routine_C32DF1:
 C3/2DF1: B4 10        LDY $10,X
 C3/2DF3: 30 24        BMI $2E19
 C3/2DF5: 32 D0        AND ($D0)

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 23B2
+Routine_CD23B2:
 CD/23B2: A5 25        LDA $25
 CD/23B4: EB           XBA
 CD/23B5: 29 FF        AND #$FF

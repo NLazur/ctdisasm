@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3189
+Routine_CD3189:
 CD/3189: 8D AA CA     STA $CAAA
 CD/318C: 20 AA 31     JSR $31AA
 CD/318F: 90 0C        BCC $319D

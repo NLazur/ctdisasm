@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CBBF
+Routine_C2CBBF:
 C2/CBBF: E2 20        SEP #$20
 C2/CBC1: AF 41 21 00  LDA $002141
 C2/CBC5: F0 05        BEQ $CBCC

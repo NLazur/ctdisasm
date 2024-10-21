@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6CAB
+Routine_FD6CAB:
 FD/6CAB: 53 80        EOR ($80,S),Y
 FD/6CAD: 57 80        EOR [$80],Y
 FD/6CAF: 5D 80 00     EOR $0080,X

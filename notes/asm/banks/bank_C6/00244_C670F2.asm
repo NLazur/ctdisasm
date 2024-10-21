@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 70F2
+Routine_C670F2:
 C6/70F2: 00 00        BRK $00
 C6/70F4: 8A           TXA
 C6/70F5: 98           TYA

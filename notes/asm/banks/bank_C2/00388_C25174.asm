@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5174
+Routine_C25174:
 C2/5174: FE 02 00     INC $0002,X
 C2/5177: BD 0F 00     LDA $000F,X
 C2/517A: 09 30 9D     ORA #$9D30

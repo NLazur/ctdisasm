@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 45C2
+Routine_C345C2:
 C3/45C2: DC 21 9E     JMP [$9E21]
 C3/45C5: 1B           TCS
 C3/45C6: E0 01 D2     CPX #$D201

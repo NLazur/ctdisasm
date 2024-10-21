@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 537C
+Routine_CC537C:
 CC/537C: 01 00        ORA ($00,X)
 CC/537E: 04 26        TSB $26
 CC/5380: 00 7F        BRK $7F

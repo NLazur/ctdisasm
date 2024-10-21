@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AE70
+Routine_C1AE70:
 C1/AE70: 7B           TDC
 C1/AE71: 64 0B        STZ $0B
 C1/AE73: AD 1E AF     LDA $AF1E

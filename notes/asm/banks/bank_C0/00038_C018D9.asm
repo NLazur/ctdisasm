@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 18D9
+Routine_C018D9:
 C0/18D9: AD F0 00     LDA $00F0
 C0/18DC: 89 01        BIT #$01
 C0/18DE: F0 36        BEQ $1916

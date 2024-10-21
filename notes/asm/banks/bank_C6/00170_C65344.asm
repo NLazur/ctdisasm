@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5344
+Routine_C65344:
 C6/5344: 1C 04 1D     TRB $1D04
 C6/5347: 00 04        BRK $04
 C6/5349: 2C 04 2D     BIT $2D04

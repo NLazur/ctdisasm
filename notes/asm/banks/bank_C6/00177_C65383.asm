@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5383
+Routine_C65383:
 C6/5383: 97 00        STA [$00],Y
 C6/5385: B7 08        LDA [$08],Y
 C6/5387: B8           CLV

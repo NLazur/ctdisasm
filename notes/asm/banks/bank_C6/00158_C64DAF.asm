@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4DAF
+Routine_C64DAF:
 C6/4DAF: 28           PLP
 C6/4DB0: 79 9B 04     ADC $049B,Y
 C6/4DB3: 89 90 E0     BIT #$E090

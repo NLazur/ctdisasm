@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 42DD
+Routine_C242DD:
 C2/42DD: 7B           TDC
 C2/42DE: BD 02 00     LDA $0002,X
 C2/42E1: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EBD2
+Routine_D0EBD2:
 D0/EBD2: 00 51        BRK $51
 D0/EBD4: 04 4A        TSB $4A
 D0/EBD6: 50 80        BVC $EB58

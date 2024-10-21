@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: ECD2
+Routine_D1ECD2:
 D1/ECD2: 00 C0        BRK $C0
 D1/ECD4: 00 20        BRK $20
 D1/ECD6: 01 80        ORA ($80,X)

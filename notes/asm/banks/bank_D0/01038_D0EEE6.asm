@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EEE6
+Routine_D0EEE6:
 D0/EEE6: 0E 61 0E     ASL $0E61
 D0/EEE9: 62 0E 63     PER $D051FA
 D0/EEEC: 0E 8E E3     ASL $E38E

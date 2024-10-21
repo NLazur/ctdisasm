@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: B24C
+Routine_CDB24C:
 CD/B24C: 00 73        BRK $73
 CD/B24E: 03 1A        ORA $1A,S
 CD/B250: 24 01        BIT $01

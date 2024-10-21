@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 28D0
+Routine_D128D0:
 D1/28D0: 08           PHP
 D1/28D1: 01 08        ORA ($08,X)
 D1/28D3: 41 C4        EOR ($C4,X)

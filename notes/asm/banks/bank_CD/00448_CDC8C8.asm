@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C8C8
+Routine_CDC8C8:
 CD/C8C8: 70 09        BVS $C8D3
 CD/C8CA: A8           TAY
 CD/C8CB: 0A           ASL

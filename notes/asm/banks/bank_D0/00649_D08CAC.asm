@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8CAC
+Routine_D08CAC:
 D0/8CAC: C0 40 C3     CPY #$C340
 D0/8CAF: 43 FE        EOR $FE,S
 D0/8CB1: 3C 23 E0     BIT $E023,X

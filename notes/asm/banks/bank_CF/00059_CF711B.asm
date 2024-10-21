@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 711B
+Routine_CF711B:
 CF/711B: C0 20        CPY #$20
 CF/711D: E0 F2        CPX #$F2
 CF/711F: 0E 00 00     ASL $0000

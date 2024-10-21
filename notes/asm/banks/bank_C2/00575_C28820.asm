@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8820
+Routine_C28820:
 C2/8820: DA           PHX
 C2/8821: 5A           PHY
 C2/8822: 08           PHP

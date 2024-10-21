@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 18CD
+Routine_C318CD:
 C3/18CD: 24 B0        BIT $B0
 C3/18CF: A1 23        LDA ($23,X)
 C3/18D1: 30 DA        BMI $18AD

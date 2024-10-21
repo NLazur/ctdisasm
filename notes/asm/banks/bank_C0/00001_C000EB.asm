@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 00EB
+Routine_C000EB:
 C0/00EB: 20 1E 88     JSR $881E
 C0/00EE: 20 DE 00     JSR $00DE
 C0/00F1: 82 6C EB     BRL $C0EC60

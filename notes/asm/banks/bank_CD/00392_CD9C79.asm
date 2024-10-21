@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 9C79
+Routine_CD9C79:
 CD/9C79: 01 72        ORA ($72,X)
 CD/9C7B: 03 73        ORA $73,S
 CD/9C7D: 03 24        ORA $24,S

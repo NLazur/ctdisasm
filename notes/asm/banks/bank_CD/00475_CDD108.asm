@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: D108
+Routine_CDD108:
 CD/D108: 08           PHP
 CD/D109: 78           SEI
 CD/D10A: D0 34        BNE $D140

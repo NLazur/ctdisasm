@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C7A6
+Routine_C2C7A6:
 C2/C7A6: AC C7 E0     LDY $E0C7
 C2/C7A9: C7 B9        CMP [$B9]
 C2/C7AB: C6 A5        DEC $A5

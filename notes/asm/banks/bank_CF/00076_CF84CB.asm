@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 84CB
+Routine_CF84CB:
 CF/84CB: 23 42        AND $42,S
 CF/84CD: 23 04        AND $04,S
 CF/84CF: 20 44 23     JSR $2344

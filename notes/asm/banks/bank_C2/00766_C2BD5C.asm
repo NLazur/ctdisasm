@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BD5C
+Routine_C2BD5C:
 C2/BD5C: 6C 6D 6E     JMP ($6E6D)
 C2/BD5F: 6F 70 71 72  ADC $727170
 C2/BD63: 73 74        ADC ($74,S),Y

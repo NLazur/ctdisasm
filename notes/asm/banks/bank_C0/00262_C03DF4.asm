@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3DF4
+Routine_C03DF4:
 C0/3DF4: BB           TYX
 C0/3DF5: E8           INX
 C0/3DF6: C2 20        REP #$20

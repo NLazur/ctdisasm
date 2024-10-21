@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5AC5
+Routine_C05AC5:
 C0/5AC5: A6 EB        LDX $EB
 C0/5AC7: BD 01 1C     LDA $1C01,X
 C0/5ACA: D0 52        BNE $5B1E

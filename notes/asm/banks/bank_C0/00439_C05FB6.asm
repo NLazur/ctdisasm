@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5FB6
+Routine_C05FB6:
 C0/5FB6: C8           INY
 C0/5FB7: BB           TYX
 C0/5FB8: 7B           TDC

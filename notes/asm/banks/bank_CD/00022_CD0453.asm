@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0453
+Routine_CD0453:
 CD/0453: A2 80 0F     LDX #$0F80
 CD/0456: 86 53        STX $53
 CD/0458: A2 80 50     LDX #$5080

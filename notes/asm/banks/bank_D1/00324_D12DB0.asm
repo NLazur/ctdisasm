@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2DB0
+Routine_D12DB0:
 D1/2DB0: E8           INX
 D1/2DB1: 18           CLC
 D1/2DB2: 10 20        BPL $2DD4

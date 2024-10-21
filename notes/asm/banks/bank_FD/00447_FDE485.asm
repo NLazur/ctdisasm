@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E485
+Routine_FDE485:
 FD/E485: B9 23 05     LDA $0523,Y
 FD/E488: C2 21        REP #$21
 FD/E48A: 79 29 05     ADC $0529,Y

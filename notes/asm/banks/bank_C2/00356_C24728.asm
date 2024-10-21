@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4728
+Routine_C24728:
 C2/4728: A6 4E        LDX $4E
 C2/472A: AC AF 02     LDY $02AF
 C2/472D: D0 03        BNE $4732

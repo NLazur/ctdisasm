@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2613
+Routine_D02613:
 D0/2613: C0 40 C0     CPY #$C040
 D0/2616: 80 80        BRA $2598
 D0/2618: 03 03        ORA $03,S

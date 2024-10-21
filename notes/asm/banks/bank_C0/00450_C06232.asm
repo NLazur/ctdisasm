@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6232
+Routine_C06232:
 C0/6232: BB           TYX
 C0/6233: E8           INX
 C0/6234: 7B           TDC

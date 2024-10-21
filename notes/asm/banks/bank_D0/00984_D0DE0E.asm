@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: DE0E
+Routine_D0DE0E:
 D0/DE0E: C0 20        CPY #$20
 D0/DE10: 01 00        ORA ($00,X)
 D0/DE12: 01 00        ORA ($00,X)

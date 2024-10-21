@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F9EB
+Routine_C1F9EB:
 C1/F9EB: A2 03 00     LDX #$0003
 C1/F9EE: 8E F4 B1     STX $B1F4
 C1/F9F1: 7B           TDC

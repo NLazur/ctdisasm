@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 96D4
+Routine_C196D4:
 C1/96D4: 20 14 AC     JSR $AC14
 C1/96D7: AD CB AE     LDA $AECB
 C1/96DA: F0 46        BEQ $9722

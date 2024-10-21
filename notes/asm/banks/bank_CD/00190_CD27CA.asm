@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 27CA
+Routine_CD27CA:
 CD/27CA: E2 10        SEP #$10
 CD/27CC: A7 40        LDA [$40]
 CD/27CE: AA           TAX

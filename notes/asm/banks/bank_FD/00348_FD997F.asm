@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 997F
+Routine_FD997F:
 FD/997F: 0D A0 01     ORA $01A0
 FD/9982: A6 01        LDX $01
 FD/9984: BB           TYX

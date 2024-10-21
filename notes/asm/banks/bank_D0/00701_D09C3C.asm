@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9C3C
+Routine_D09C3C:
 D0/9C3C: D0 20        BNE $9C5E
 D0/9C3E: 70 80        BVS $9BC0
 D0/9C40: B0 C8        BCS $9C0A

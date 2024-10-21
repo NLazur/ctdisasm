@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 17BF
+Routine_C117BF:
 C1/17BF: AD E6 95     LDA $95E6
 C1/17C2: C9 FA        CMP #$FA
 C1/17C4: B0 0E        BCS $17D4

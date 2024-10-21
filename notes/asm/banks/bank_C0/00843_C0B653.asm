@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B653
+Routine_C0B653:
 C0/B653: BF 81 4F 7F  LDA $7F4F81,X
 C0/B657: 48           PHA
 C0/B658: BF 80 4F 7F  LDA $7F4F80,X

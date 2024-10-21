@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B6B9
+Routine_C3B6B9:
 C3/B6B9: 88           DEY
 C3/B6BA: 02 70        COP $70
 C3/B6BC: 02 30        COP $30

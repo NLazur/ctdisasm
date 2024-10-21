@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: D9B6
+Routine_CED9B6:
 CE/D9B6: 28           PLP
 CE/D9B7: C2 2B        REP #$2B
 CE/D9B9: 14 A0        TRB $A0

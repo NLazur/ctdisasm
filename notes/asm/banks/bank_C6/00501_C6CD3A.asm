@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CD3A
+Routine_C6CD3A:
 C6/CD3A: ED 1E 68     SBC $681E
 C6/CD3D: 07 04        ORA [$04]
 C6/CD3F: 20 24 08     JSR $0824

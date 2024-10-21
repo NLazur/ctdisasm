@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EC93
+Routine_C2EC93:
 C2/EC93: 08           PHP
 C2/EC94: C2 30        REP #$30
 C2/EC96: 48           PHA

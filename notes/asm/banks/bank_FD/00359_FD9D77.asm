@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9D77
+Routine_FD9D77:
 FD/9D77: 44 0C 10     MVP $0C,$10
 FD/9D7A: 1E 05 00     ASL $0005,X
 FD/9D7D: 33 00        AND ($00,S),Y

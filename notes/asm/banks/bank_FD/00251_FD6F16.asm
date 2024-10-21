@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6F16
+Routine_FD6F16:
 FD/6F16: 28           PLP
 FD/6F17: F0 28        BEQ $6F41
 FD/6F19: 70 24        BVS $6F3F

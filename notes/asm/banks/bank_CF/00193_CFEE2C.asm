@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EE2C
+Routine_CFEE2C:
 CF/EE2C: A0 00 00     LDY #$0000
 CF/EE2F: 5A           PHY
 CF/EE30: 2B           PLD

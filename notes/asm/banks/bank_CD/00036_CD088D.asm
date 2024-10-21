@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 088D
+Routine_CD088D:
 CD/088D: AF 0F CE 7E  LDA $7ECE0F
 CD/0891: F0 0D        BEQ $08A0
 CD/0893: 22 CE 09 CD  JSR $CD09CE

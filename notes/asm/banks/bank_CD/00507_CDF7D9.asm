@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F7D9
+Routine_CDF7D9:
 CD/F7D9: 00 60        BRK $60
 CD/F7DB: 82 61 82     BRL $CD7A3F
 CD/F7DE: 62 82 63     PER $CD5B63

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 232A
+Routine_C0232A:
 C0/232A: A5 3C        LDA $3C
 C0/232C: C5 3D        CMP $3D
 C0/232E: B0 54        BCS $2384

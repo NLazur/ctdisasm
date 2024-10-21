@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2A98
+Routine_C12A98:
 C1/2A98: 7B           TDC
 C1/2A99: AA           TAX
 C1/2A9A: 86 86        STX $86

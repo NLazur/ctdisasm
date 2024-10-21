@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 2BC2
+Routine_C62BC2:
 C6/2BC2: 16 06        ASL $06,X
 C6/2BC4: 16 26        ASL $26,X
 C6/2BC6: 16 16        ASL $16,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6EE5
+Routine_C66EE5:
 C6/6EE5: 03 61        ORA $61,S
 C6/6EE7: 12 88        ORA ($88)
 C6/6EE9: 79 F4 26     ADC $26F4,Y

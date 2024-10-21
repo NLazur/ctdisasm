@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: CA0A
+Routine_CFCA0A:
 CF/CA0A: 35 23        AND $23,X
 CF/CA0C: 37 23        AND [$23],Y
 CF/CA0E: A5 21        LDA $21

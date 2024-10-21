@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0A1F
+Routine_C60A1F:
 C6/0A1F: C0 3C 61     CPY #$613C
 C6/0A22: 10 10        BPL $0A34
 C6/0A24: 75 02        ADC $02,X

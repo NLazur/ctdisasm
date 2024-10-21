@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A170
+Routine_C2A170:
 C2/A170: 8B           PHB
 C2/A171: 08           PHP
 C2/A172: F4 00 00     PEA $0000

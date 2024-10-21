@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F9BE
+Routine_C3F9BE:
 C3/F9BE: 84 00        STY $00
 C3/F9C0: 00 40        BRK $40
 C3/F9C2: 86 00        STX $00

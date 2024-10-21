@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8C75
+Routine_C28C75:
 C2/8C75: A9 03        LDA #$03
 C2/8C77: 80 58        BRA $8CD1
 C2/8C79: 20 F7 8C     JSR $8CF7

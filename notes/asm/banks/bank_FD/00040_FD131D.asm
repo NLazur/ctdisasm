@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 131D
+Routine_FD131D:
 FD/131D: 1E 40 1F     ASL $1F40,X
 FD/1320: 00 20        BRK $20
 FD/1322: 0F 20 0F 11  ORA $110F20

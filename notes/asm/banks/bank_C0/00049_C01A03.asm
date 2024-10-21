@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1A03
+Routine_C01A03:
 C0/1A03: AF 80 29 7E  LDA $7E2980
 C0/1A07: C5 94        CMP $94
 C0/1A09: D0 11        BNE $1A1C

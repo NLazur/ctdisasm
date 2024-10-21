@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F381
+Routine_C0F381:
 C0/F381: 35 2D        AND $2D,X
 C0/F383: 26 20        ROL $20
 C0/F385: 1B           TCS

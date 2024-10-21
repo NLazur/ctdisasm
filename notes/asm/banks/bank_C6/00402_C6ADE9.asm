@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: ADE9
+Routine_C6ADE9:
 C6/ADE9: F8           SED
 C6/ADEA: E7 3C        SBC [$3C]
 C6/ADEC: C3 00        CMP $00,S

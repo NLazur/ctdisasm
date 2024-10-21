@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5AEE
+Routine_C65AEE:
 C6/5AEE: 1E A7 1E     ASL $1EA7,X
 C6/5AF1: A8           TAY
 C6/5AF2: 1E 99 80     ASL $8099,X

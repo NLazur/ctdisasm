@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EF11
+Routine_CEEF11:
 CE/EF11: 2D EF 44     AND $44EF
 CE/EF14: EF 56 EF 5E  SBC $5EEF56
 CE/EF18: EF 68 EF 74  SBC $74EF68

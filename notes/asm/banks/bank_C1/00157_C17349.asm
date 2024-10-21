@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7349
+Routine_C17349:
 C1/7349: AD FC AA     LDA $AAFC
 C1/734C: 0D FD AA     ORA $AAFD
 C1/734F: F0 13        BEQ $7364

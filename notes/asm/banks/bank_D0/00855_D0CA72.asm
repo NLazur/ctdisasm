@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CA72
+Routine_D0CA72:
 D0/CA72: 80 80        BRA $C9F4
 D0/CA74: 00 00        BRK $00
 D0/CA76: 00 00        BRK $00

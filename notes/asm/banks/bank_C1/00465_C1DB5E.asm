@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: DB5E
+Routine_C1DB5E:
 C1/DB5E: 7B           TDC
 C1/DB5F: AE F6 B1     LDX $B1F6
 C1/DB62: A5 16        LDA $16

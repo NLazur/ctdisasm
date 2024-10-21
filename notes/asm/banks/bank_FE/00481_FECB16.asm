@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: CB16
+Routine_FECB16:
 FE/CB16: 6E 59 5A     ROR $5A59
 FE/CB19: 50 E0        BVC $CAFB
 FE/CB1B: 56 5C        LSR $5C,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9BA2
+Routine_C69BA2:
 C6/9BA2: 52 21        EOR ($21)
 C6/9BA4: 00 82        BRK $82
 C6/9BA6: E0 CC 01     CPX #$01CC

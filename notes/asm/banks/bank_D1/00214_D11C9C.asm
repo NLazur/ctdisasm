@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1C9C
+Routine_D11C9C:
 D1/1C9C: 11 80        ORA ($80),Y
 D1/1C9E: CE 00 FF     DEC $FF00
 D1/1CA1: FF 06 00 80  SBC $800006,X

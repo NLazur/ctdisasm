@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9462
+Routine_D09462:
 D0/9462: 0F 60 07 E8  ORA $E80760
 D0/9466: E7 18        SBC [$18]
 D0/9468: FC FC FC     JSR ($FCFC,X)

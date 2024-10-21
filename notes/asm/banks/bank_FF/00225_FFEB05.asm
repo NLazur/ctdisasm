@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EB05
+Routine_FFEB05:
 FF/EB05: 86 41        STX $41
 FF/EB07: F6 53        INC $53,X
 FF/EB09: 00 94        BRK $94

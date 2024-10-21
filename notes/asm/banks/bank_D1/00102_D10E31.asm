@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0E31
+Routine_D10E31:
 D1/0E31: 52 00        EOR ($00)
 D1/0E33: 00 11        BRK $11
 D1/0E35: 80 E8        BRA $0E1F

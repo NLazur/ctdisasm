@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: D610
+Routine_CED610:
 CE/D610: 01 1F        ORA ($1F,X)
 CE/D612: 2D 80 02     AND $0280
 CE/D615: F0 1F        BEQ $D636

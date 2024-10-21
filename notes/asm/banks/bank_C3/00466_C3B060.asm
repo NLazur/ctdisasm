@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B060
+Routine_C3B060:
 C3/B060: 09 2C        ORA #$2C
 C3/B062: A8           TAY
 C3/B063: 01 80        ORA ($80,X)

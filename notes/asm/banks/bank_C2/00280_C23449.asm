@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3449
+Routine_C23449:
 C2/3449: AD 80 02     LDA $0280
 C2/344C: 0A           ASL
 C2/344D: 0A           ASL

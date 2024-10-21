@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 391C
+Routine_C2391C:
 C2/391C: A0 10 00     LDY #$0010
 C2/391F: A2 00 00     LDX #$0000
 C2/3922: AD 83 02     LDA $0283

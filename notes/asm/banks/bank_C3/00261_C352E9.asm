@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 52E9
+Routine_C352E9:
 C3/52E9: 10 E2        BPL $52CD
 C3/52EB: 8F 81 21 31  STA $312181
 C3/52EF: 0B           PHD

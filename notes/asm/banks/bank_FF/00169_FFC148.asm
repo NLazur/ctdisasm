@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: C148
+Routine_FFC148:
 FF/C148: 43 40        EOR $40,S
 FF/C14A: 31 08        AND ($08),Y
 FF/C14C: 10 97        BPL $C0E5

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3DBF
+Routine_C33DBF:
 C3/3DBF: 00 33        BRK $33
 C3/3DC1: 0D B9 FE     ORA $FEB9
 C3/3DC4: F9 00 10     SBC $1000,Y

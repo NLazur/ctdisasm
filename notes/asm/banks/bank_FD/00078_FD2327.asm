@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2327
+Routine_FD2327:
 FD/2327: 24 06        BIT $06
 FD/2329: 03 F8        ORA $F8,S
 FD/232B: 0C F3 10     TSB $10F3

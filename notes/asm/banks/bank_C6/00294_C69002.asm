@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9002
+Routine_C69002:
 C6/9002: 04 35        TSB $35
 C6/9004: F1 4E        SBC ($4E),Y
 C6/9006: 02 DC        COP $DC

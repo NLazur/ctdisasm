@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EC6B
+Routine_D0EC6B:
 D0/EC6B: F8           SED
 D0/EC6C: BA           TSX
 D0/EC6D: AB           PLB

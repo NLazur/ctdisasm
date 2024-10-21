@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F08D
+Routine_C3F08D:
 C3/F08D: 04 97        TSB $97
 C3/F08F: F0 05        BEQ $F096
 C3/F091: 04 9C        TSB $9C

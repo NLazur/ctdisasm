@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3D40
+Routine_C13D40:
 C1/3D40: A6 9C        LDX $9C
 C1/3D42: 9E 91 97     STZ $9791,X
 C1/3D45: BD 52 97     LDA $9752,X

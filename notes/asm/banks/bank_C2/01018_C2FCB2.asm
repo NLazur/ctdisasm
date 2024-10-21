@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FCB2
+Routine_C2FCB2:
 C2/FCB2: 08           PHP
 C2/FCB3: E2 20        SEP #$20
 C2/FCB5: A9 01        LDA #$01

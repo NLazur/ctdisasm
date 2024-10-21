@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 688A
+Routine_C2688A:
 C2/688A: BD 14 00     LDA $0014,X
 C2/688D: 4A           LSR
 C2/688E: 4A           LSR

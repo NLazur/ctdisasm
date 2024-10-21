@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C770
+Routine_CDC770:
 CD/C770: 0C 10 80     TSB $8010
 CD/C773: 80 22        BRA $C797
 CD/C775: 1B           TCS

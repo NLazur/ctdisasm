@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C45B
+Routine_FDC45B:
 FD/C45B: A9 E4        LDA #$E4
 FD/C45D: 8D E1 11     STA $11E1
 FD/C460: A2 C8        LDX #$C8

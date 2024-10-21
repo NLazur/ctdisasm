@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4205
+Routine_C24205:
 C2/4205: A2 00 58     LDX #$5800
 C2/4208: 86 10        STX $10
 C2/420A: A9 7E        LDA #$7E

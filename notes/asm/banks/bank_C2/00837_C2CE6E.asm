@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CE6E
+Routine_C2CE6E:
 C2/CE6E: 38           SEC
 C2/CE6F: 74 68        STZ $68,X
 C2/CE71: 74 98        STZ $98,X

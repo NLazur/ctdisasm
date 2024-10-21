@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 87CA
+Routine_C387CA:
 C3/87CA: 7F 7F 20 58  ADC $58207F,X
 C3/87CE: A4 7F        LDY $7F
 C3/87D0: 80 20        BRA $87F2

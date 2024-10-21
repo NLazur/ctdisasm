@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 03EF
+Routine_C203EF:
 C2/03EF: 64 5E        STZ $5E
 C2/03F1: 64 5F        STZ $5F
 C2/03F3: A2 00 F0     LDX #$F000

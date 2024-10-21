@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7612
+Routine_C07612:
 C0/7612: A5 5A        LDA $5A
 C0/7614: 89 01        BIT #$01
 C0/7616: F0 03        BEQ $761B

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EF8B
+Routine_D1EF8B:
 D1/EF8B: AA           TAX
 D1/EF8C: BF 8E F4 CE  LDA $CEF48E,X
 D1/EF90: 8F 02 42 00  STA $004202

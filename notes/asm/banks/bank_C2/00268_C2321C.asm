@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 321C
+Routine_C2321C:
 C2/321C: AD 8F 02     LDA $028F
 C2/321F: 0A           ASL
 C2/3220: AA           TAX

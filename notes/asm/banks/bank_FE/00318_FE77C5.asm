@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 77C5
+Routine_FE77C5:
 FE/77C5: 71 FF        ADC ($FF),Y
 FE/77C7: 79 00 39     ADC $3900,Y
 FE/77CA: 85 0A        STA $0A

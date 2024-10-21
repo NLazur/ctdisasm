@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F378
+Routine_C2F378:
 C2/F378: 08           PHP
 C2/F379: C2 30        REP #$30
 C2/F37B: 20 90 ED     JSR $ED90

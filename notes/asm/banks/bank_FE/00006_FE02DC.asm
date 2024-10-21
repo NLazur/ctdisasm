@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 02DC
+Routine_FE02DC:
 FE/02DC: 46 BF        LSR $BF
 FE/02DE: 0C 40 0E     TSB $0E40
 FE/02E1: BF FC 79 82  LDA $8279FC,X

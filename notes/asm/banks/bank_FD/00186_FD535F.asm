@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 535F
+Routine_FD535F:
 FD/535F: D1 21        CMP ($21),Y
 FD/5361: AB           PLB
 FD/5362: 1D 7A 19     ORA $197A,X

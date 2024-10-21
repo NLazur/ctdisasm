@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EDFD
+Routine_C1EDFD:
 C1/EDFD: 7B           TDC
 C1/EDFE: AA           TAX
 C1/EDFF: 8D 9A AD     STA $AD9A

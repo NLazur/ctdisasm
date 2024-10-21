@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: DF2E
+Routine_CFDF2E:
 CF/DF2E: A2 3B        LDX #$3B
 CF/DF30: A4 3B        LDY $3B
 CF/DF32: 1C 20 23     TRB $2320

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0D9E
+Routine_D10D9E:
 D1/0D9E: D5 30        CMP $30,X
 D1/0DA0: 10 42        BPL $0DE4
 D1/0DA2: 36 10        ROL $10,X

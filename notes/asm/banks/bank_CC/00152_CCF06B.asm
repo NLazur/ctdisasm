@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F06B
+Routine_CCF06B:
 CC/F06B: A2 8C 00     LDX #$008C
 CC/F06E: 9E 80 5D     STZ $5D80,X
 CC/F071: CA           DEX

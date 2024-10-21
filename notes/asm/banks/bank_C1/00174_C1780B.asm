@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 780B
+Routine_C1780B:
 C1/780B: AD 14 A0     LDA $A014
 C1/780E: 85 82        STA $82
 C1/7810: C0 32        CPY #$32

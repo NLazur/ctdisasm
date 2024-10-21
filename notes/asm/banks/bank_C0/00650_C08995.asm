@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8995
+Routine_C08995:
 C0/8995: A9 10        LDA #$10
 C0/8997: 85 2D        STA $2D
 C0/8999: A5 30        LDA $30

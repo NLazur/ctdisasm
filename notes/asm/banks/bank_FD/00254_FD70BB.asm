@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 70BB
+Routine_FD70BB:
 FD/70BB: FB           XCE
 FD/70BC: FD F9 FE     SBC $FEF9,X
 FD/70BF: F6 FF        INC $FF,X

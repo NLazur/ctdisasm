@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5841
+Routine_FD5841:
 FD/5841: E0 20        CPX #$20
 FD/5843: 24 21        BIT $21
 FD/5845: 24 00        BIT $00

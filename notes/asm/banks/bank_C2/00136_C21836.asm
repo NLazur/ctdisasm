@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1836
+Routine_C21836:
 C2/1836: DC 5B 00     JMP [$005B]
 C2/1839: A0 01 00     LDY #$0001
 C2/183C: B7 58        LDA [$58],Y

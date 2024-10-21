@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1F4A
+Routine_D01F4A:
 D0/1F4A: 50 40        BVC $1F8C
 D0/1F4C: 90 00        BCC $1F4E
 D0/1F4E: 90 00        BCC $1F50

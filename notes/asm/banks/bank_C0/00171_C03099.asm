@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3099
+Routine_C03099:
 C0/3099: B0 0C        BCS $30A7
 C0/309B: A9 10        LDA #$10
 C0/309D: 9D 80 19     STA $1980,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4926
+Routine_C04926:
 C0/4926: C2 20        REP #$20
 C0/4928: 98           TYA
 C0/4929: A6 6D        LDX $6D

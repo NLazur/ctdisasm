@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8DFF
+Routine_CF8DFF:
 CF/8DFF: 29 04        AND #$04
 CF/8E01: 20 42 29     JSR $2942
 CF/8E04: 44 29 46     MVP $29,$46

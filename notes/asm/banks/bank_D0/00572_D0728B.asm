@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 728B
+Routine_D0728B:
 D0/728B: E0 C8 C8     CPX #$C8C8
 D0/728E: CC CC 6C     CPY $6CCC
 D0/7291: EC 7C FC     CPX $FC7C

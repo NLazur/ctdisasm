@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 069F
+Routine_C2069F:
 C2/069F: 80 FE        BRA $069F
 C2/06A1: C2 20        REP #$20
 C2/06A3: 09 00 FF     ORA #$FF00

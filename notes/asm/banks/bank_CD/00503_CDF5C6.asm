@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F5C6
+Routine_CDF5C6:
 CD/F5C6: 82 61 82     BRL $CD782A
 CD/F5C9: 62 82 63     PER $CD594E
 CD/F5CC: 82 64 82     BRL $CD7833

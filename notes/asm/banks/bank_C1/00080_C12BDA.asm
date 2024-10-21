@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2BDA
+Routine_C12BDA:
 C1/2BDA: AD 6F 98     LDA $986F
 C1/2BDD: AA           TAX
 C1/2BDE: AD 70 98     LDA $9870

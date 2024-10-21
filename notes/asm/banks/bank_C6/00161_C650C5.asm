@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 50C5
+Routine_C650C5:
 C6/50C5: 50 00        BVC $50C7
 C6/50C7: 00 84        BRK $84
 C6/50C9: 50 06        BVC $50D1

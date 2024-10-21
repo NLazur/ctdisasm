@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D4A1
+Routine_D0D4A1:
 D0/D4A1: 80 80        BRA $D423
 D0/D4A3: 00 00        BRK $00
 D0/D4A5: 00 00        BRK $00

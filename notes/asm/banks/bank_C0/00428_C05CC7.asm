@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5CC7
+Routine_C05CC7:
 C0/5CC7: AF 00 20 7F  LDA $7F2000
 C0/5CCB: C9 0D        CMP #$0D
 C0/5CCD: D0 0E        BNE $5CDD

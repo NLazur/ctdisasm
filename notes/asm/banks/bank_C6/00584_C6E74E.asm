@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E74E
+Routine_C6E74E:
 C6/E74E: E2 20        SEP #$20
 C6/E750: 64 06        STZ $06
 C6/E752: A5 00        LDA $00

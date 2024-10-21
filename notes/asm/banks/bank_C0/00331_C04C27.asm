@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4C27
+Routine_C04C27:
 C0/4C27: C8           INY
 C0/4C28: BB           TYX
 C0/4C29: C2 20        REP #$20

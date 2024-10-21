@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 747A
+Routine_C2747A:
 C2/747A: E2 20        SEP #$20
 C2/747C: 7B           TDC
 C2/747D: A0 97 6C     LDY #$6C97

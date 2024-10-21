@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3BD4
+Routine_CD3BD4:
 CD/3BD4: A5 23        LDA $23
 CD/3BD6: 8F 02 42 00  STA $004202
 CD/3BDA: A5 25        LDA $25

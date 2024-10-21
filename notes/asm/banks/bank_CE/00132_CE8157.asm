@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 8157
+Routine_CE8157:
 CE/8157: 1F 98 00 2C  ORA $2C0098,X
 CE/815B: 02 04        COP $04
 CE/815D: 20 14 7B     JSR $7B14

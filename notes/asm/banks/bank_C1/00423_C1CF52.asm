@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CF52
+Routine_C1CF52:
 C1/CF52: A5 06        LDA $06
 C1/CF54: C9 29        CMP #$29
 C1/CF56: D0 07        BNE $CF5F

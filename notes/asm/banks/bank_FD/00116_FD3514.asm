@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3514
+Routine_FD3514:
 FD/3514: FF E0 7F 00  SBC $007FE0,X
 FD/3518: D6 49        DEC $49,X
 FD/351A: F0 4F        BEQ $356B

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EE58
+Routine_C2EE58:
 C2/EE58: A6 8C        LDX $8C
 C2/EE5A: F0 1A        BEQ $EE76
 C2/EE5C: A4 65        LDY $65

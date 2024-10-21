@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9749
+Routine_FD9749:
 FD/9749: 59 AD 04     EOR $04AD,Y
 FD/974C: E8           INX
 FD/974D: 5A           PHY

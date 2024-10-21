@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: E9DB
+Routine_C0E9DB:
 C0/E9DB: E8           INX
 C0/E9DC: E0 02 30     CPX #$3002
 C0/E9DF: CC 18 60     CPY $6018

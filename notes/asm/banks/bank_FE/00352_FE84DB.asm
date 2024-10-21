@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 84DB
+Routine_FE84DB:
 FE/84DB: FF 75 40 9A  SBC $9A4075,X
 FE/84DF: 10 4D        BPL $852E
 FE/84E1: 27 8F        AND [$8F]

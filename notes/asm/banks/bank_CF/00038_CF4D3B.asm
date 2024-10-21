@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 4D3B
+Routine_CF4D3B:
 CF/4D3B: E0 C0        CPX #$C0
 CF/4D3D: C0 80        CPY #$80
 CF/4D3F: 80 E0        BRA $4D21

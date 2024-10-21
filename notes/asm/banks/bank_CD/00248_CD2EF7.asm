@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2EF7
+Routine_CD2EF7:
 CD/2EF7: A7 40        LDA [$40]
 CD/2EF9: 4A           LSR
 CD/2EFA: 4A           LSR

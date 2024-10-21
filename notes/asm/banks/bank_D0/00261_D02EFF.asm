@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2EFF
+Routine_D02EFF:
 D0/2EFF: E0 80        CPX #$80
 D0/2F01: 80 00        BRA $2F03
 D0/2F03: 00 00        BRK $00

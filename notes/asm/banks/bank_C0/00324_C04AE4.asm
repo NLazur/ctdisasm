@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4AE4
+Routine_C04AE4:
 C0/4AE4: A6 C7        LDX $C7
 C0/4AE6: E8           INX
 C0/4AE7: E8           INX

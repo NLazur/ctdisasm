@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E187
+Routine_D0E187:
 D0/E187: F8           SED
 D0/E188: A2 72 1E     LDX #$1E72
 D0/E18B: 49 1D        EOR #$1D

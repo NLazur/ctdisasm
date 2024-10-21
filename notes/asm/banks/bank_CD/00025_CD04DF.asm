@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 04DF
+Routine_CD04DF:
 CD/04DF: AD 05 CD     LDA $CD05
 CD/04E2: F0 18        BEQ $04FC
 CD/04E4: A9 01        LDA #$01

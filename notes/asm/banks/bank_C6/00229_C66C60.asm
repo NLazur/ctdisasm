@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6C60
+Routine_C66C60:
 C6/6C60: F8           SED
 C6/6C61: 02 E8        COP $E8
 C6/6C63: 86 8B        STX $8B

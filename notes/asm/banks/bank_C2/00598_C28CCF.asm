@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8CCF
+Routine_C28CCF:
 C2/8CCF: A9 09        LDA #$09
 C2/8CD1: 85 C2        STA $C2
 C2/8CD3: A0 00        LDY #$00

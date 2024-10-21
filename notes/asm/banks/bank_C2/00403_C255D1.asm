@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 55D1
+Routine_C255D1:
 C2/55D1: A6 4E        LDX $4E
 C2/55D3: BD 03 00     LDA $0003,X
 C2/55D6: C9 31 B0     CMP #$B031

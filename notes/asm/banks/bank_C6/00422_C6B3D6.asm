@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B3D6
+Routine_C6B3D6:
 C6/B3D6: 03 E1        ORA $E1,S
 C6/B3D8: 09 89 1B     ORA #$1B89
 C6/B3DB: 9C 62 BE     STZ $BE62

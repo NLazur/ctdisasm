@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3AFE
+Routine_C33AFE:
 C3/3AFE: 00 90        BRK $90
 C3/3B00: 2A           ROL
 C3/3B01: 00 00        BRK $00

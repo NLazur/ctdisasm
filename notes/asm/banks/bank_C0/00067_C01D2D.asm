@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1D2D
+Routine_C01D2D:
 C0/1D2D: BD 00 11     LDA $1100,X
 C0/1D30: 30 EF        BMI $1D21
 C0/1D32: C9 07        CMP #$07

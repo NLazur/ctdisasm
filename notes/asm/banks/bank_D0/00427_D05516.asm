@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 5516
+Routine_D05516:
 D0/5516: C0 00        CPY #$00
 D0/5518: 80 00        BRA $551A
 D0/551A: 30 18        BMI $5534

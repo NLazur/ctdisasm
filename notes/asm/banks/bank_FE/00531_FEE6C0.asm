@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E6C0
+Routine_FEE6C0:
 FE/E6C0: 12 8B        ORA ($8B)
 FE/E6C2: 03 15        ORA $15,S
 FE/E6C4: D3 00        CMP ($00,S),Y

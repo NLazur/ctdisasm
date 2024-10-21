@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: C3C5
+Routine_CFC3C5:
 CF/C3C5: 21 6B        AND ($6B,X)
 CF/C3C7: 61 01        ADC ($01,X)
 CF/C3C9: 2F 35 30 37  AND $373035

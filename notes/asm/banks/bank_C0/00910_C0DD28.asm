@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: DD28
+Routine_C0DD28:
 C0/DD28: BD 00 0D     LDA $0D00,X
 C0/DD2B: C9 68        CMP #$68
 C0/DD2D: F0 02        BEQ $DD31

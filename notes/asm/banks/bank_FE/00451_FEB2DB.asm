@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: B2DB
+Routine_FEB2DB:
 FE/B2DB: 4F 10 39 47  EOR $473910
 FE/B2DF: 49 A6        EOR #$A6
 FE/B2E1: 69 07        ADC #$07

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DE1D
+Routine_C2DE1D:
 C2/DE1D: 29 28        AND #$28
 C2/DE1F: 27 2A        AND [$2A]
 C2/DE21: 08           PHP

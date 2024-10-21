@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EE5D
+Routine_D0EE5D:
 D0/EE5D: 18           CLC
 D0/EE5E: 81 00        STA ($00,X)
 D0/EE60: 0D 82 0D     ORA $0D82

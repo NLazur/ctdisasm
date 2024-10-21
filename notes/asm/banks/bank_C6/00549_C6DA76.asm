@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: DA76
+Routine_C6DA76:
 C6/DA76: F0 00        BEQ $DA78
 C6/DA78: FE 00 01     INC $0100,X
 C6/DA7B: F8           SED

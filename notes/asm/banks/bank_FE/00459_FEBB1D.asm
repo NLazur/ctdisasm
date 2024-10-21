@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: BB1D
+Routine_FEBB1D:
 FE/BB1D: 0E 20 08     ASL $0820
 FE/BB20: 02 D5        COP $D5
 FE/BB22: 03 B0        ORA $B0,S

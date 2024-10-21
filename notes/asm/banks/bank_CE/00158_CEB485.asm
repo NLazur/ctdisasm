@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: B485
+Routine_CEB485:
 CE/B485: FA           PLX
 CE/B486: D0 05        BNE $B48D
 CE/B488: 00 F6        BRK $F6

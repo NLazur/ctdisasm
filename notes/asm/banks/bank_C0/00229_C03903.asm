@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3903
+Routine_C03903:
 C0/3903: A6 C7        LDX $C7
 C0/3905: BF 01 20 7F  LDA $7F2001,X
 C0/3909: C2 20        REP #$20

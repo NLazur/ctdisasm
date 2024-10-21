@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F3DE
+Routine_CDF3DE:
 CD/F3DE: 01 00        ORA ($00,X)
 CD/F3E0: 01 00        ORA ($00,X)
 CD/F3E2: 00 3F        BRK $3F

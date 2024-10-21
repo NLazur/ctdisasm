@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 5F97
+Routine_CC5F97:
 CC/5F97: 06 D0        ASL $D0
 CC/5F99: 07 00        ORA [$00]
 CC/5F9B: CF 3C 42 01  CMP $01423C

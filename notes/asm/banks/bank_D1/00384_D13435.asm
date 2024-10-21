@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3435
+Routine_D13435:
 D1/3435: 4A           LSR
 D1/3436: 41 20        EOR ($20,X)
 D1/3438: 48           PHA

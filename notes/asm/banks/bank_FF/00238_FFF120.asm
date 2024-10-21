@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F120
+Routine_FFF120:
 FF/F120: C0 80        CPY #$80
 FF/F122: 80 80        BRA $F0A4
 FF/F124: 00 80        BRK $80

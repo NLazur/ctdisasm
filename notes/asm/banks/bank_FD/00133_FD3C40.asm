@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3C40
+Routine_FD3C40:
 FD/3C40: D0 80        BNE $3BC2
 FD/3C42: 50 80        BVC $3BC4
 FD/3C44: 48           PHA

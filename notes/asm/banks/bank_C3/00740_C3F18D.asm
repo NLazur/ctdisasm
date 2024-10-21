@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F18D
+Routine_C3F18D:
 C3/F18D: 04 F0        TSB $F0
 C3/F18F: EC 2E 40     CPX $402E
 C3/F192: 00 EC        BRK $EC

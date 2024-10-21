@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F27D
+Routine_C2F27D:
 C2/F27D: 73 74        ADC ($74,S),Y
 C2/F27F: 75 76        ADC $76,X
 C2/F281: 77 78        ADC [$78],Y

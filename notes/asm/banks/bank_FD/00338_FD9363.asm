@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9363
+Routine_FD9363:
 FD/9363: 28           PLP
 FD/9364: FE C0 4C     INC $4CC0,X
 FD/9367: 4A           LSR

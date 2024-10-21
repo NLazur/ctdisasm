@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B46B
+Routine_C3B46B:
 C3/B46B: 05 82        ORA $82
 C3/B46D: 01 38        ORA ($38,X)
 C3/B46F: 33 32        AND ($32,S),Y

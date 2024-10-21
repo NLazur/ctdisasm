@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 963F
+Routine_D1963F:
 D1/963F: 82 C7 00     BRL $D19709
 D1/9642: 84 83        STY $83
 D1/9644: 1F 82 C7 00  ORA $00C782,X

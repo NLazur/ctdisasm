@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: DA16
+Routine_CDDA16:
 CD/DA16: 02 72        COP $72
 CD/DA18: 00 73        BRK $73
 CD/DA1A: 00 43        BRK $43

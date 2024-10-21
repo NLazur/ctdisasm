@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CA66
+Routine_CDCA66:
 CD/CA66: 70 09        BVS $CA71
 CD/CA68: A8           TAY
 CD/CA69: 0A           ASL

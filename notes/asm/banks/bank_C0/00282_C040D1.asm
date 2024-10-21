@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 40D1
+Routine_C040D1:
 C0/40D1: 9C 51 03     STZ $0351
 C0/40D4: A9 01        LDA #$01
 C0/40D6: 8D 50 03     STA $0350

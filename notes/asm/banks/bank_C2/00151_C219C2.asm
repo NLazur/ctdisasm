@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 19C2
+Routine_C219C2:
 C2/19C2: E2 20        SEP #$20
 C2/19C4: A6 4E        LDX $4E
 C2/19C6: BD 32 00     LDA $0032,X

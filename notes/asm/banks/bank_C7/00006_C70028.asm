@@ -1,3 +1,5 @@
+; Bank: C7 | Start Address: 0028
+Routine_C70028:
 C7/0028: 18 0D
 C7/002A: EA 0A
 C7/002C: A4 0B

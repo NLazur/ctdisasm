@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3913
+Routine_C33913:
 C3/3913: A2 7C        LDX #$7C
 C3/3915: EE 0A 0C     INC $0C0A
 C3/3918: 9D 02 00     STA $0002,X

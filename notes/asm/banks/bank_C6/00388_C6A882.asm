@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A882
+Routine_C6A882:
 C6/A882: 94 9C        STY $9C,X
 C6/A884: 5E 96 8D     LSR $8D96,X
 C6/A887: 13 04        ORA ($04,S),Y

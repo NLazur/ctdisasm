@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A6F2
+Routine_C6A6F2:
 C6/A6F2: 61 C8        ADC ($C8,X)
 C6/A6F4: 05 6A        ORA $6A
 C6/A6F6: 0B           PHD

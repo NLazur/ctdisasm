@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 69F2
+Routine_C269F2:
 C2/69F2: 6C 6D 6E     JMP ($6E6D)
 C2/69F5: 6E 6E 6A     ROR $6A6E
 C2/69F8: 00 2B        BRK $2B

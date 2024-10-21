@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E8C7
+Routine_C6E8C7:
 C6/E8C7: A0 03 00     LDY #$0003
 C6/E8CA: B1 0E        LDA ($0E),Y
 C6/E8CC: 29 1C        AND #$1C

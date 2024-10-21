@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1CE6
+Routine_C31CE6:
 C3/1CE6: 21 A2        AND ($A2,X)
 C3/1CE8: 74 B5        STZ $B5,X
 C3/1CEA: 8E 81 BD     STX $BD81

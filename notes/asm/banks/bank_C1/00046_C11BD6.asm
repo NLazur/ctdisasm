@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 1BD6
+Routine_C11BD6:
 C1/1BD6: CE DE A6     DEC $A6DE
 C1/1BD9: CD D5 95     CMP $95D5
 C1/1BDC: F0 0F        BEQ $1BED

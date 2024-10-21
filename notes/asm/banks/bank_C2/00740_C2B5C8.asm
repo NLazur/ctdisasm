@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B5C8
+Routine_C2B5C8:
 C2/B5C8: E2 20        SEP #$20
 C2/B5CA: A9 6B        LDA #$6B
 C2/B5CC: 8D 13 0D     STA $0D13

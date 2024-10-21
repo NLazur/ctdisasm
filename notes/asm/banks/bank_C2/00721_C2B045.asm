@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B045
+Routine_C2B045:
 C2/B045: 78           SEI
 C2/B046: E4 A0        CPX $A0
 C2/B048: E4 C8        CPX $C8

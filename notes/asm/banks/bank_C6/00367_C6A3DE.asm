@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A3DE
+Routine_C6A3DE:
 C6/A3DE: 10 28        BPL $A408
 C6/A3E0: 13 F5        ORA ($F5,S),Y
 C6/A3E2: 50 9C        BVC $A380

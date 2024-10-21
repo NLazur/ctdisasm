@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2B52
+Routine_CC2B52:
 CC/2B52: 4C 69 85     JMP $8569
 CC/2B55: BD BE BF     LDA $BFBE,X
 CC/2B58: C6 C7        DEC $C7

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1F5A
+Routine_C01F5A:
 C0/1F5A: A5 21        LDA $21
 C0/1F5C: C5 22        CMP $22
 C0/1F5E: F0 22        BEQ $1F82

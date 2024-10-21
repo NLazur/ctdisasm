@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 1A19
+Routine_FF1A19:
 FF/1A19: D8           CLD
 FF/1A1A: D0 68        BNE $1A84
 FF/1A1C: C1 78        CMP ($78,X)

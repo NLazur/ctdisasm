@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 24A6
+Routine_CF24A6:
 CF/24A6: E0 20 F0     CPX #$F020
 CF/24A9: 1C F8 08     TRB $08F8
 CF/24AC: 78           SEI

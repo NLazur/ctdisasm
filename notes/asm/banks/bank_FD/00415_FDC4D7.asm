@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C4D7
+Routine_FDC4D7:
 FD/C4D7: A9 90        LDA #$90
 FD/C4D9: 8D 2E 10     STA $102E
 FD/C4DC: 8D 31 10     STA $1031

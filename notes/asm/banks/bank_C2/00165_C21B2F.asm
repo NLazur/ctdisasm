@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1B2F
+Routine_C21B2F:
 C2/1B2F: E2 20        SEP #$20
 C2/1B31: 7B           TDC
 C2/1B32: A9 7E        LDA #$7E

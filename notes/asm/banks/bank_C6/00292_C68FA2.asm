@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8FA2
+Routine_C68FA2:
 C6/8FA2: 03 12        ORA $12,S
 C6/8FA4: 23 77        AND $77,S
 C6/8FA6: 8D 05 04     STA $0405

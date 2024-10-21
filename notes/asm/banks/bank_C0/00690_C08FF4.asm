@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8FF4
+Routine_C08FF4:
 C0/8FF4: C2 20        REP #$20
 C0/8FF6: 20 9E 8A     JSR $8A9E
 C0/8FF9: B0 33        BCS $902E

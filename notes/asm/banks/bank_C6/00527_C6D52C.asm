@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D52C
+Routine_C6D52C:
 C6/D52C: B5 00        LDA $00,X
 C6/D52E: B9 00 1F     LDA $1F00,Y
 C6/D531: 00 00        BRK $00

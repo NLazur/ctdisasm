@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1CC5
+Routine_D11CC5:
 D1/1CC5: 08           PHP
 D1/1CC6: E0 00        CPX #$00
 D1/1CC8: C0 0D        CPY #$0D

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1708
+Routine_D11708:
 D1/1708: EC 40 EA     CPX $EA40
 D1/170B: 46 08        LSR $08
 D1/170D: C0 21        CPY #$21

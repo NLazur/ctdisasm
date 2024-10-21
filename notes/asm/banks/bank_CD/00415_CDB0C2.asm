@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: B0C2
+Routine_CDB0C2:
 CD/B0C2: 00 73        BRK $73
 CD/B0C4: 00 1B        BRK $1B
 CD/B0C6: 0C 24 01     TSB $0124

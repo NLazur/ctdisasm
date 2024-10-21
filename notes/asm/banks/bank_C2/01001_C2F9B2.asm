@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F9B2
+Routine_C2F9B2:
 C2/F9B2: C2 30        REP #$30
 C2/F9B4: A9 80 00     LDA #$0080
 C2/F9B7: 8D D0 0D     STA $0DD0

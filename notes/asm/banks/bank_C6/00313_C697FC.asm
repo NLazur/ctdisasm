@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 97FC
+Routine_C697FC:
 C6/97FC: D9 FC 7C     CMP $7CFC,Y
 C6/97FF: 36 54        ROL $54,X
 C6/9801: 55 7E        EOR $7E,X

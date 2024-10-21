@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3C23
+Routine_D13C23:
 D1/3C23: C0 80        CPY #$80
 D1/3C25: 80 00        BRA $3C27
 D1/3C27: 00 00        BRK $00

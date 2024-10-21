@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D019
+Routine_C3D019:
 C3/D019: FF 7F 00 CD  SBC $CD007F,X
 C3/D01D: 01 00        ORA ($00,X)
 C3/D01F: 4E 25 D8     LSR $D825

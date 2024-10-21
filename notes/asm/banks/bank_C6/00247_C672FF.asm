@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 72FF
+Routine_C672FF:
 C6/72FF: FC 2A 24     JSR ($242A,X)
 C6/7302: 35 32        AND $32,X
 C6/7304: FA           PLX

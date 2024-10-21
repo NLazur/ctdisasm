@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EA36
+Routine_C2EA36:
 C2/EA36: B9 82 93     LDA $9382,Y
 C2/EA39: 80 0D        BRA $EA48
 C2/EA3B: B9 83 93     LDA $9383,Y

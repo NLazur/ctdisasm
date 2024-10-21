@@ -48,6 +48,8 @@ def save_routine(bank, start_address, routine, output_directory, routine_index):
     filepath = os.path.join(bank_dir, filename)
 
     with open(filepath, 'w') as f:
+        f.write(f"; Bank: {bank} | Start Address: {start_address}\n")
+        f.write(f"Routine_{bank}{start_address}:\n")
         f.write('\n'.join(routine))
 
 def main():

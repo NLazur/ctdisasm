@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0E26
+Routine_D00E26:
 D0/0E26: 80 40        BRA $0E68
 D0/0E28: 00 00        BRK $00
 D0/0E2A: 02 03        COP $03

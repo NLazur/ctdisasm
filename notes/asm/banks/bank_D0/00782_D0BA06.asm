@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: BA06
+Routine_D0BA06:
 D0/BA06: F8           SED
 D0/BA07: 20 9C 48     JSR $489C
 D0/BA0A: F6 40        INC $40,X

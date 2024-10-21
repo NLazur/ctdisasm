@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0B6B
+Routine_D10B6B:
 D1/0B6B: 10 80        BPL $0AED
 D1/0B6D: 2E 01 2C     ROL $2C01
 D1/0B70: 27 08        AND [$08]

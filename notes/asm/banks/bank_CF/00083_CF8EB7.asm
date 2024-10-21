@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8EB7
+Routine_CF8EB7:
 CF/8EB7: 29 B8        AND #$B8
 CF/8EB9: 29 04        AND #$04
 CF/8EBB: 20 BA 29     JSR $29BA

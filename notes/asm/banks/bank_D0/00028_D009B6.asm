@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 09B6
+Routine_D009B6:
 D0/09B6: 00 00        BRK $00
 D0/09B8: 00 00        BRK $00
 D0/09BA: 00 00        BRK $00

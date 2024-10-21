@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 45A5
+Routine_C645A5:
 C6/45A5: 00 40        BRK $40
 C6/45A7: BF 08 51 9F  LDA $9F5108,X
 C6/45AB: 51 08        EOR ($08),Y

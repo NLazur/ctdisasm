@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7A31
+Routine_C27A31:
 C2/7A31: 20 36 23     JSR $2336
 C2/7A34: C2 20        REP #$20
 C2/7A36: A6 4E        LDX $4E

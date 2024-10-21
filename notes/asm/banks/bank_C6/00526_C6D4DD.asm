@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D4DD
+Routine_C6D4DD:
 C6/D4DD: 52 10        EOR ($10)
 C6/D4DF: 44 90 08     MVP $90,$08
 C6/D4E2: 03 65        ORA $65,S

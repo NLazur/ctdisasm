@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4163
+Routine_C04163:
 C0/4163: 9C 51 03     STZ $0351
 C0/4166: A9 02        LDA #$02
 C0/4168: 8D 50 03     STA $0350

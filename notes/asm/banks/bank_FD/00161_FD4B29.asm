@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4B29
+Routine_FD4B29:
 FD/4B29: 21 4D        AND ($4D,X)
 FD/4B2B: 4F A0 40 20  EOR $2040A0
 FD/4B2F: C0 E1        CPY #$E1

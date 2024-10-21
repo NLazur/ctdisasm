@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AFD2
+Routine_C1AFD2:
 C1/AFD2: C2 20        REP #$20
 C1/AFD4: 0A           ASL
 C1/AFD5: AA           TAX

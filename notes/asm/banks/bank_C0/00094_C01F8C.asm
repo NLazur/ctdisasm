@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1F8C
+Routine_C01F8C:
 C0/1F8C: 3A           DEC
 C0/1F8D: F0 25        BEQ $1FB4
 C0/1F8F: 3A           DEC

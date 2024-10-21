@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1EFD
+Routine_C31EFD:
 C3/1EFD: 0B           PHD
 C3/1EFE: 00 00        BRK $00
 C3/1F00: FA           PLX

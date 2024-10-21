@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 459A
+Routine_C3459A:
 C3/459A: 18           CLC
 C3/459B: F0 60        BEQ $45FD
 C3/459D: 19 FA 60     ORA $60FA,Y

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 129C
+Routine_C3129C:
 C3/129C: F0 8C        BEQ $122A
 C3/129E: 12 78        ORA ($78)
 C3/12A0: 04 40        TSB $40

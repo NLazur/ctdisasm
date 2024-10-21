@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 7439
+Routine_D17439:
 D1/7439: 06 04        ASL $04
 D1/743B: 7F 84 83 10  ADC $108384,X
 D1/743F: 8F 60 05 04  STA $040560

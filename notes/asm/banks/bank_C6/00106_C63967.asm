@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3967
+Routine_C63967:
 C6/3967: 16 5B        ASL $5B,X
 C6/3969: 16 7C        ASL $7C,X
 C6/396B: 16 7D        ASL $7D,X

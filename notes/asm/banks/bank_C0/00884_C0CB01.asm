@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CB01
+Routine_C0CB01:
 C0/CB01: 82 D8 00     BRL $C0CBDC
 C0/CB04: 82 EE 03     BRL $C0CEF5
 C0/CB07: 82 ED 09     BRL $C0D4F7

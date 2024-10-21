@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A5EE
+Routine_C6A5EE:
 C6/A5EE: 08           PHP
 C6/A5EF: A6 06        LDX $06
 C6/A5F1: 50 A2        BVC $A595

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5B1F
+Routine_C05B1F:
 C0/5B1F: A6 EB        LDX $EB
 C0/5B21: BD 00 11     LDA $1100,X
 C0/5B24: 30 3C        BMI $5B62

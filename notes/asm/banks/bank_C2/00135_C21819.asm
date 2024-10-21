@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1819
+Routine_C21819:
 C2/1819: 6C 5B 00     JMP ($005B)
 C2/181C: A0 01 00     LDY #$0001
 C2/181F: B7 58        LDA [$58],Y

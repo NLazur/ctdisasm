@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2C79
+Routine_D12C79:
 D1/2C79: 80 42        BRA $2CBD
 D1/2C7B: 01 40        ORA ($40,X)
 D1/2C7D: 01 FF        ORA ($FF,X)

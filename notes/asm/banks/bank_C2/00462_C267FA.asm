@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 67FA
+Routine_C267FA:
 C2/67FA: E2 20        SEP #$20
 C2/67FC: A6 4E        LDX $4E
 C2/67FE: BD 02 00     LDA $0002,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2392
+Routine_C22392:
 C2/2392: 49 FF FF     EOR #$FFFF
 C2/2395: 1A           INC
 C2/2396: A0 06 00     LDY #$0006

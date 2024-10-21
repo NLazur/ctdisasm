@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4EB2
+Routine_D04EB2:
 D0/4EB2: A4 A4        LDY $A4
 D0/4EB4: 00 00        BRK $00
 D0/4EB6: 00 00        BRK $00

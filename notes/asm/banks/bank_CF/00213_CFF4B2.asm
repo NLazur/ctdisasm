@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F4B2
+Routine_CFF4B2:
 CF/F4B2: A6 C6        LDX $C6
 CF/F4B4: BD E0 A1     LDA $A1E0,X
 CF/F4B7: D0 49        BNE $F502

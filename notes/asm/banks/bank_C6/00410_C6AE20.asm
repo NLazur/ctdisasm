@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AE20
+Routine_C6AE20:
 C6/AE20: F8           SED
 C6/AE21: 01 F8        ORA ($F8,X)
 C6/AE23: 01 F8        ORA ($F8,X)

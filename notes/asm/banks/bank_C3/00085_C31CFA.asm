@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1CFA
+Routine_C31CFA:
 C3/1CFA: 64 8E        STZ $8E
 C3/1CFC: 07 21        ORA [$21]
 C3/1CFE: A9 68 8D     LDA #$8D68

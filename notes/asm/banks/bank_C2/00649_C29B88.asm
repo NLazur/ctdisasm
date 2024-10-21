@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9B88
+Routine_C29B88:
 C2/9B88: B9 97 C3     LDA $C397,Y
 C2/9B8B: E6 CA        INC $CA
 C2/9B8D: DB           STP

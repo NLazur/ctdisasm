@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 18FA
+Routine_D118FA:
 D1/18FA: 81 62        STA ($62,X)
 D1/18FC: 81 62        STA ($62,X)
 D1/18FE: C1 1E        CMP ($1E,X)

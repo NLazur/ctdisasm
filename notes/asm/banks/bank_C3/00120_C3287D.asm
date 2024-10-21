@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 287D
+Routine_C3287D:
 C3/287D: 8C A5 78     STY $78A5
 C3/2880: 61 70        ADC ($70,X)
 C3/2882: 07 76        ORA [$76]

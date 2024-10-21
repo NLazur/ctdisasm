@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: DD4F
+Routine_D0DD4F:
 D0/DD4F: C0 02        CPY #$02
 D0/DD51: 03 02        ORA $02,S
 D0/DD53: 03 05        ORA $05,S

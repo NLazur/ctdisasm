@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1FD7
+Routine_CC1FD7:
 CC/1FD7: 04 00        TSB $00
 CC/1FD9: 1C A3 80     TRB $80A3
 CC/1FDC: 06 00        ASL $00

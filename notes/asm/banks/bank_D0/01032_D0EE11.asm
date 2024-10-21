@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EE11
+Routine_D0EE11:
 D0/EE11: 09 00        ORA #$00
 D0/EE13: 61 09        ADC ($09,X)
 D0/EE15: 62 09 63     PER $D05121

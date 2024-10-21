@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: AB4C
+Routine_D0AB4C:
 D0/AB4C: BC 9C 93     LDY $939C,X
 D0/AB4F: 8F 6C 1C F6  STA $F61C6C
 D0/AB53: 0E 25 E3     ASL $E325

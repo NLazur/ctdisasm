@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2C27
+Routine_D02C27:
 D0/2C27: C0 13 1F     CPY #$1F13
 D0/2C2A: F4 FB CF     PEA $CFFB
 D0/2C2D: F0 26        BEQ $2C55

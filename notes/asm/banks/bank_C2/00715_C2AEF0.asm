@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AEF0
+Routine_C2AEF0:
 C2/AEF0: A5 01        LDA $01
 C2/AEF2: 8F 03 42 00  STA $004203
 C2/AEF6: C2 21        REP #$21

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: B289
+Routine_D0B289:
 D0/B289: E0 E0 E0     CPX #$E0E0
 D0/B28C: C0 C0 C0     CPY #$C0C0
 D0/B28F: 80 08        BRA $B299

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8CF7
+Routine_C28CF7:
 C2/8CF7: 20 CF 8C     JSR $8CCF
 C2/8CFA: D0 08        BNE $8D04
 C2/8CFC: B9 80 29     LDA $2980,Y

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 5ECD
+Routine_FE5ECD:
 FE/5ECD: 8D 4A E1     STA $E14A
 FE/5ED0: D2 40        CMP ($40)
 FE/5ED2: 7D F3 0F     ADC $0FF3,X

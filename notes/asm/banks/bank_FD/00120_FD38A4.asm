@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 38A4
+Routine_FD38A4:
 FD/38A4: 16 24        ASL $24,X
 FD/38A6: C3 F1        CMP $F1,S
 FD/38A8: 48           PHA

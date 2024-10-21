@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2019
+Routine_CC2019:
 CC/2019: 04 00        TSB $00
 CC/201B: 2A           ROL
 CC/201C: A3 80        LDA $80,S

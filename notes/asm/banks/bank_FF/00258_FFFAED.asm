@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FAED
+Routine_FFFAED:
 FF/FAED: 08           PHP
 FF/FAEE: C2 30        REP #$30
 FF/FAF0: A9 54 30     LDA #$3054

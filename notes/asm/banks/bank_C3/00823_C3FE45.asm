@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FE45
+Routine_C3FE45:
 C3/FE45: 04 49        TSB $49
 C3/FE47: FE 00 30     INC $3000,X
 C3/FE4A: D0 90        BNE $FDDC

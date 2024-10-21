@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9C29
+Routine_C29C29:
 C2/9C29: 31 9C        AND ($9C),Y
 C2/9C2B: 39 9C 70     AND $709C,Y
 C2/9C2E: 9C A5 9C     STZ $9CA5

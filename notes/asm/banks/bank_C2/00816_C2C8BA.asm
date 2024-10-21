@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C8BA
+Routine_C2C8BA:
 C2/C8BA: 08           PHP
 C2/C8BB: E2 30        SEP #$30
 C2/C8BD: A5 54        LDA $54

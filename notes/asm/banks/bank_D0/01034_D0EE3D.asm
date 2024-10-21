@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EE3D
+Routine_D0EE3D:
 D0/EE3D: 09 73        ORA #$73
 D0/EE3F: 09 76        ORA #$76
 D0/EE41: 09 77        ORA #$77

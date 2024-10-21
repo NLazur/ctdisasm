@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E583
+Routine_C6E583:
 C6/E583: A6 4E        LDX $4E
 C6/E585: BD 22 00     LDA $0022,X
 C6/E588: 4A           LSR

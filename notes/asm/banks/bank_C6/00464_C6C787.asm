@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C787
+Routine_C6C787:
 C6/C787: B0 01        BCS $C78A
 C6/C789: F8           SED
 C6/C78A: FF 01 F8 60  SBC $60F801,X

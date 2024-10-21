@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0516
+Routine_CD0516:
 CD/0516: A9 01        LDA #$01
 CD/0518: 8D 16 CE     STA $CE16
 CD/051B: 20 7D 3E     JSR $3E7D

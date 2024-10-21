@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BB47
+Routine_C6BB47:
 C6/BB47: CC 09 03     CPY $0309
 C6/BB4A: 32 F8        AND ($F8)
 C6/BB4C: 01 F8        ORA ($F8,X)

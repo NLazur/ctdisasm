@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 6DCA
+Routine_D16DCA:
 D1/6DCA: 95 01        STA $01,X
 D1/6DCC: 8E 51 10     STX $1051
 D1/6DCF: 09 FF        ORA #$FF

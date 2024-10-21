@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: BDB3
+Routine_C1BDB3:
 C1/BDB3: 7B           TDC
 C1/BDB4: AD EA B2     LDA $B2EA
 C1/BDB7: AA           TAX

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9450
+Routine_C09450:
 C0/9450: 85 66        STA $66
 C0/9452: A6 87        LDX $87
 C0/9454: E8           INX

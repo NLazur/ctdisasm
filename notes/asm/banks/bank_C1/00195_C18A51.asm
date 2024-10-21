@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8A51
+Routine_C18A51:
 C1/8A51: 7B           TDC
 C1/8A52: AD 7E B1     LDA $B17E
 C1/8A55: D0 03        BNE $8A5A

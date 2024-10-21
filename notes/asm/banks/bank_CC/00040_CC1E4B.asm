@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1E4B
+Routine_CC1E4B:
 CC/1E4B: 02 00        COP $00
 CC/1E4D: 37 80        AND [$80],Y
 CC/1E4F: 80 24        BRA $1E75

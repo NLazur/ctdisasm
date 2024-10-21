@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0375
+Routine_D10375:
 D1/0375: 4E C1 4C     LSR $4CC1
 D1/0378: A0 C1        LDY #$C1
 D1/037A: 4A           LSR

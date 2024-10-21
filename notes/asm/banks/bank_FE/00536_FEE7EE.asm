@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E7EE
+Routine_FEE7EE:
 FE/E7EE: 89 00        BIT #$00
 FE/E7F0: C2 03        REP #$03
 FE/E7F2: 84 00        STY $00

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2D5B
+Routine_D12D5B:
 D1/2D5B: 20 EA C0     JSR $C0EA
 D1/2D5E: E8           INX
 D1/2D5F: C0 E6        CPY #$E6

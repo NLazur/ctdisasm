@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D327
+Routine_C6D327:
 C6/D327: 09 42        ORA #$42
 C6/D329: F8           SED
 C6/D32A: 14 60        TRB $60

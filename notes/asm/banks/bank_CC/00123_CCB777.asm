@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: B777
+Routine_CCB777:
 CC/B777: 00 FE        BRK $FE
 CC/B779: 05 01        ORA $01
 CC/B77B: 00 00        BRK $00

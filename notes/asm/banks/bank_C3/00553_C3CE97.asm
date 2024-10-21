@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CE97
+Routine_C3CE97:
 C3/CE97: 00 9D        BRK $9D
 C3/CE99: 7B           TDC
 C3/CE9A: 78           SEI

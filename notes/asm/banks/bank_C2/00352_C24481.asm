@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4481
+Routine_C24481:
 C2/4481: FE 02 00     INC $0002,X
 C2/4484: 20 A9 48     JSR $48A9
 C2/4487: 20 2A 4A     JSR $4A2A

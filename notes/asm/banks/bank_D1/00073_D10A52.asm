@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0A52
+Routine_D10A52:
 D1/0A52: 81 FF        STA ($FF,X)
 D1/0A54: 22 FF 09 00  JSR $0009FF
 D1/0A58: 46 81        LSR $81

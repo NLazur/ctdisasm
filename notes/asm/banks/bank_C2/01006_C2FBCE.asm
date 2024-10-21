@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FBCE
+Routine_C2FBCE:
 C2/FBCE: 00 58        BRK $58
 C2/FBD0: 00 2E        BRK $2E
 C2/FBD2: 7E 00 0C     ROR $0C00,X

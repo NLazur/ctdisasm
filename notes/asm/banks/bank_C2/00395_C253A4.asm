@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 53A4
+Routine_C253A4:
 C2/53A4: A4 4E        LDY $4E
 C2/53A6: 22 73 22 C2  JSR $C22273
 C2/53AA: 0A           ASL

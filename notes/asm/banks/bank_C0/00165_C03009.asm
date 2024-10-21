@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3009
+Routine_C03009:
 C0/3009: 84 C7        STY $C7
 C0/300B: E2 10        SEP #$10
 C0/300D: A6 6D        LDX $6D

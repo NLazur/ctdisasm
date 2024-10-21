@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 717A
+Routine_C6717A:
 C6/717A: 55 A4        EOR $A4,X
 C6/717C: 18           CLC
 C6/717D: 2A           ROL

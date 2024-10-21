@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 95FA
+Routine_C195FA:
 C1/95FA: AE D2 B1     LDX $B1D2
 C1/95FD: E8           INX
 C1/95FE: 8E D2 B1     STX $B1D2

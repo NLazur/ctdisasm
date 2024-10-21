@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0B3E
+Routine_C60B3E:
 C6/0B3E: F0 00        BEQ $0B40
 C6/0B40: B0 40        BCS $0B82
 C6/0B42: A0 50 40     LDY #$4050

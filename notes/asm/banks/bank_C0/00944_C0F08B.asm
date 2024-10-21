@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F08B
+Routine_C0F08B:
 C0/F08B: 20 42 F1     JSR $F142
 C0/F08E: 20 2B F1     JSR $F12B
 C0/F091: 20 10 F1     JSR $F110

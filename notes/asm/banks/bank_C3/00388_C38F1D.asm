@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8F1D
+Routine_C38F1D:
 C3/8F1D: 20 08 7F     JSR $7F08
 C3/8F20: 37 4E        AND [$4E],Y
 C3/8F22: 71 50        ADC ($50),Y

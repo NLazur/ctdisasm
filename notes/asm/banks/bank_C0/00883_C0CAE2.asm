@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CAE2
+Routine_C0CAE2:
 C0/CAE2: BD 81 1A     LDA $1A81,X
 C0/CAE5: F0 F9        BEQ $CAE0
 C0/CAE7: 30 F7        BMI $CAE0

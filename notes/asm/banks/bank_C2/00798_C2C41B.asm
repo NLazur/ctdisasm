@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C41B
+Routine_C2C41B:
 C2/C41B: CA           DEX
 C2/C41C: 2E D6 31     ROL $31D6
 C2/C41F: CA           DEX

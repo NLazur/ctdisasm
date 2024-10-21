@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 312E
+Routine_CE312E:
 CE/312E: 00 F8        BRK $F8
 CE/3130: F0 E0        BEQ $3112
 CE/3132: F0 53        BEQ $3187

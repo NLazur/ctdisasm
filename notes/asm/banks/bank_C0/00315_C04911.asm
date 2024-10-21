@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4911
+Routine_C04911:
 C0/4911: E2 20        SEP #$20
 C0/4913: A6 C7        LDX $C7
 C0/4915: E8           INX

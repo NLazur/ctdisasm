@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2518
+Routine_CD2518:
 CD/2518: A7 40        LDA [$40]
 CD/251A: AA           TAX
 CD/251B: BD 80 5D     LDA $5D80,X

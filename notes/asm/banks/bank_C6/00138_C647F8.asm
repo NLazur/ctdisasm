@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 47F8
+Routine_C647F8:
 C6/47F8: 80 00        BRA $47FA
 C6/47FA: 70 06        BVS $4802
 C6/47FC: 01 81        ORA ($81,X)

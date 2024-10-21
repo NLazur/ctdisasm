@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 12BC
+Routine_D112BC:
 D1/12BC: C4 40        CPY $40
 D1/12BE: E4 42        CPX $42
 D1/12C0: 00 32        BRK $32

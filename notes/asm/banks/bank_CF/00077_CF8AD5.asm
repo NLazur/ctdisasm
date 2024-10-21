@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8AD5
+Routine_CF8AD5:
 CF/8AD5: 27 62        AND [$62]
 CF/8AD7: 27 04        AND [$04]
 CF/8AD9: 20 64 27     JSR $2764

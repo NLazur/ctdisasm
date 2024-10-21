@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A810
+Routine_C0A810:
 C0/A810: AF 00 20 7F  LDA $7F2000
 C0/A814: 0A           ASL
 C0/A815: 85 BD        STA $BD

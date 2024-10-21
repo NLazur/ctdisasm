@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BA4F
+Routine_C2BA4F:
 C2/BA4F: 08           PHP
 C2/BA50: E2 20        SEP #$20
 C2/BA52: 20 66 F5     JSR $F566

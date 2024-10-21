@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9DAF
+Routine_C29DAF:
 C2/9DAF: E2 20        SEP #$20
 C2/9DB1: A5 54        LDA $54
 C2/9DB3: 18           CLC

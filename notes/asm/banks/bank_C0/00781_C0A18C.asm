@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A18C
+Routine_C0A18C:
 C0/A18C: 64 58        STZ $58
 C0/A18E: 64 59        STZ $59
 C0/A190: AD 32 1D     LDA $1D32

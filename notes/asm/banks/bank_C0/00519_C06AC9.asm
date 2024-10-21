@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6AC9
+Routine_C06AC9:
 C0/6AC9: C8           INY
 C0/6ACA: BB           TYX
 C0/6ACB: C2 20        REP #$20

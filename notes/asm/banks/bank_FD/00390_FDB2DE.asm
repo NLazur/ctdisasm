@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B2DE
+Routine_FDB2DE:
 FD/B2DE: AD 89 29     LDA $2989
 FD/B2E1: 89 20        BIT #$20
 FD/B2E3: D0 03        BNE $B2E8

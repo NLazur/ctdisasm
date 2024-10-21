@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 60BC
+Routine_D160BC:
 D1/60BC: 89 7D        BIT #$7D
 D1/60BE: 4F 7E 00 00  EOR $00007E
 D1/60C2: C6 18        DEC $18

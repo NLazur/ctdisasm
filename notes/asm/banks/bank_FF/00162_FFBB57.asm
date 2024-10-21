@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: BB57
+Routine_FFBB57:
 FF/BB57: BF FF 00 10  LDA $1000FF,X
 FF/BB5B: FF 00 FF 00  SBC $00FF00,X
 FF/BB5F: 00 07        BRK $07

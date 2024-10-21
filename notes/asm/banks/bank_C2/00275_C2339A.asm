@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 339A
+Routine_C2339A:
 C2/339A: A6 4E        LDX $4E
 C2/339C: A9 01        LDA #$01
 C2/339E: 9D 02 00     STA $0002,X

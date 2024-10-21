@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C992
+Routine_C2C992:
 C2/C992: A0 0B        LDY #$0B
 C2/C994: AE 00 0F     LDX $0F00
 C2/C997: 08           PHP

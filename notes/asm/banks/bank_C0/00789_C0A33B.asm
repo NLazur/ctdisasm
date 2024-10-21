@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A33B
+Routine_C0A33B:
 C0/A33B: C2 20        REP #$20        ; load map data
 C0/A33D: A6 FE        LDX $FE
 C0/A33F: BF 04 00 F6  LDA $F60004,X

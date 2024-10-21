@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F784
+Routine_FDF784:
 FD/F784: 6F C0 6F 40  ADC $406FC0
 FD/F788: 6E 04 60     ROR $6004
 FD/F78B: 3D 80 80     AND $8080,X

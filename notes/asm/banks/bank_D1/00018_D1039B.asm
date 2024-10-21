@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 039B
+Routine_D1039B:
 D1/039B: 01 42        ORA ($42,X)
 D1/039D: 01 44        ORA ($44,X)
 D1/039F: 01 46        ORA ($46,X)

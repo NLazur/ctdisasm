@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 0EE1
+Routine_C10EE1:
 C1/0EE1: AD D5 95     LDA $95D5
 C1/0EE4: 0A           ASL
 C1/0EE5: AA           TAX

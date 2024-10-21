@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4B2C
+Routine_C04B2C:
 C0/4B2C: A0 00 00     LDY #$0000
 C0/4B2F: B9 20 05     LDA $0520,Y
 C0/4B32: F0 11        BEQ $4B45

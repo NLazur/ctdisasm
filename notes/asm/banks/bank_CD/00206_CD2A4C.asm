@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2A4C
+Routine_CD2A4C:
 CD/2A4C: 0A           ASL
 CD/2A4D: AA           TAX
 CD/2A4E: 7C 51 2A     JMP ($2A51,X)

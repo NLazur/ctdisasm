@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: A053
+Routine_FEA053:
 FE/A053: DE 18 F8     DEC $F818,X
 FE/A056: F8           SED
 FE/A057: 98           TYA

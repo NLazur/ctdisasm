@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1C66
+Routine_C31C66:
 C3/1C66: 8D 20 0B     STA $0B20
 C3/1C69: A9 08 08     LDA #$0808
 C3/1C6C: 06 0C        ASL $0C

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 9FD2
+Routine_C19FD2:
 C1/9FD2: AE D2 B1     LDX $B1D2
 C1/9FD5: BF 0F 00 CC  LDA $CC000F,X
 C1/9FD9: AA           TAX

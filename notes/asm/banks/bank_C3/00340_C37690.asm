@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 7690
+Routine_C37690:
 C3/7690: 06 13        ASL $13
 C3/7692: 3E 11 45     ROL $4511,X
 C3/7695: F5 FF        SBC $FF,X

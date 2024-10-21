@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7F7E
+Routine_C07F7E:
 C0/7F7E: 0B           PHD             ; clear $1D00-$1DFF
 C0/7F7F: C2 20        REP #$20
 C0/7F81: A9 00 01     LDA #$0100

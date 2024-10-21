@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 504A
+Routine_C6504A:
 C6/504A: 00 00        BRK $00
 C6/504C: 91 50        STA ($50),Y
 C6/504E: 90 50        BCC $50A0

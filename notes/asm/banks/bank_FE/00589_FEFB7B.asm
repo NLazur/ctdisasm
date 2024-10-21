@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: FB7B
+Routine_FEFB7B:
 FE/FB7B: 04 20        TSB $20
 FE/FB7D: 04 A2        TSB $A2
 FE/FB7F: 10 63        BPL $FBE4

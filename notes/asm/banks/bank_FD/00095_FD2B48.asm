@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2B48
+Routine_FD2B48:
 FD/2B48: 4C C8 97     JMP $97C8
 FD/2B4B: 79 07 40     ADC $4007,Y
 FD/2B4E: 87 08        STA [$08]

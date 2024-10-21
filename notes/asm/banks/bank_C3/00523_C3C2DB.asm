@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C2DB
+Routine_C3C2DB:
 C3/C2DB: 13 10        ORA ($10,S),Y
 C3/C2DD: 10 1A        BPL $C2F9
 C3/C2DF: 86 08        STX $08

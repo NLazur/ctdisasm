@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: E952
+Routine_C0E952:
 C0/E952: A2 00 BD     LDX #$BD00
 C0/E955: C0 0B        CPY #$0B
 C0/E957: 10 1A        BPL $E973

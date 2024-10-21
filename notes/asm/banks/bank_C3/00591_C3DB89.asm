@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DB89
+Routine_C3DB89:
 C3/DB89: 45 A0        EOR $A0
 C3/DB8B: 68           PLA
 C3/DB8C: B4 68        LDY $68,X

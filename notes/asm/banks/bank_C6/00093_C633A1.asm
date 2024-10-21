@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 33A1
+Routine_C633A1:
 C6/33A1: 7E 00 04     ROR $0400,X
 C6/33A4: 00 A0        BRK $A0
 C6/33A6: 35 E8        AND $E8,X

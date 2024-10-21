@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 253B
+Routine_CD253B:
 CD/253B: A0 01 00     LDY #$0001
 CD/253E: B7 40        LDA [$40],Y
 CD/2540: 85 45        STA $45

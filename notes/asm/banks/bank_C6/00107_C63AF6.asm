@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3AF6
+Routine_C63AF6:
 C6/3AF6: F8           SED
 C6/3AF7: 08           PHP
 C6/3AF8: F8           SED

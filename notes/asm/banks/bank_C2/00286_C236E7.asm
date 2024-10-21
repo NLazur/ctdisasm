@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 36E7
+Routine_C236E7:
 C2/36E7: 9C F7 1B     STZ $1BF7
 C2/36EA: FE 02 00     INC $0002,X
 C2/36ED: C2 20        REP #$20

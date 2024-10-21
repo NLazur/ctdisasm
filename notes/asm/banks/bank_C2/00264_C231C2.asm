@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 31C2
+Routine_C231C2:
 C2/31C2: AD 9E 02     LDA $029E
 C2/31C5: 89 40        BIT #$40
 C2/31C7: D0 05        BNE $31CE

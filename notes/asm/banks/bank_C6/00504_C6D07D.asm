@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D07D
+Routine_C6D07D:
 C6/D07D: 28           PLP
 C6/D07E: 56 88        LSR $88,X
 C6/D080: BD 6C 4A     LDA $4A6C,X

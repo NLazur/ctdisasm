@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 2C82
+Routine_CE2C82:
 CE/2C82: 20 14 36     JSR $3614
 CE/2C85: 20 0A 03     JSR $030A
 CE/2C88: 0C D0 0C     TSB $0CD0

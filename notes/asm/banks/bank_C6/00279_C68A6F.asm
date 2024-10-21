@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8A6F
+Routine_C68A6F:
 C6/8A6F: F8           SED
 C6/8A70: 03 E0        ORA $E0,S
 C6/8A72: 24 1E        BIT $1E

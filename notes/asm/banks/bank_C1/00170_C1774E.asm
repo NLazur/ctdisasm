@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 774E
+Routine_C1774E:
 C1/774E: AD 10 A0     LDA $A010
 C1/7751: C9 08        CMP #$08
 C1/7753: B0 3A        BCS $778F

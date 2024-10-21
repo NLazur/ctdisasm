@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8C63
+Routine_CF8C63:
 CF/8C63: 28           PLP
 CF/8C64: F6 22        INC $22,X
 CF/8C66: 3E 22 40     ROL $4022,X

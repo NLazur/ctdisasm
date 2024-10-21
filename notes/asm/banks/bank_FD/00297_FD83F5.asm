@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 83F5
+Routine_FD83F5:
 FD/83F5: A7 A7        LDA [$A7]
 FD/83F7: F8           SED
 FD/83F8: FF 40 62 02  SBC $026240,X

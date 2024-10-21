@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 1B81
+Routine_FF1B81:
 FF/1B81: FF 9A F7 67  SBC $67F79A,X
 FF/1B85: BD E9 3F     LDA $3FE9,X
 FF/1B88: E3 FB        SBC $FB,S

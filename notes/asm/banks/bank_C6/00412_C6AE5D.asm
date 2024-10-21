@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AE5D
+Routine_C6AE5D:
 C6/AE5D: CD 07 BA     CMP $BA07
 C6/AE60: BA           TSX
 C6/AE61: 07 CB        ORA [$CB]

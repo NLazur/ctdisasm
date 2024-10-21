@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7901
+Routine_C17901:
 C1/7901: 98           TYA
 C1/7902: 38           SEC
 C1/7903: E9 2A        SBC #$2A

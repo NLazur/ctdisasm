@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 539D
+Routine_C3539D:
 C3/539D: 07 46        ORA [$46]
 C3/539F: 34 A0        BIT $A0,X
 C3/53A1: A0 38        LDY #$38

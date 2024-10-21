@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 9542
+Routine_FF9542:
 FF/9542: 7E 7C 7E     ROR $7E7C,X
 FF/9545: 44 C6 84     MVP $C6,$84
 FF/9548: 8A           TXA

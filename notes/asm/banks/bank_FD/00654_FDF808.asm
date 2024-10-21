@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F808
+Routine_FDF808:
 FD/F808: 00 6A        BRK $6A
 FD/F80A: 80 6A        BRA $F876
 FD/F80C: 00 6B        BRK $6B

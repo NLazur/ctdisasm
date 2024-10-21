@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9764
+Routine_C09764:
 C0/9764: 85 66        STA $66
 C0/9766: C6 FB        DEC $FB
 C0/9768: C6 FB        DEC $FB

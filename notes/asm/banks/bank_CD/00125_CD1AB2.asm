@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1AB2
+Routine_CD1AB2:
 CD/1AB2: AD 8A 5D     LDA $5D8A
 CD/1AB5: 8D 95 CA     STA $CA95
 CD/1AB8: 8D 96 CA     STA $CA96

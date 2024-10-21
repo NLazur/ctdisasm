@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1D2C
+Routine_C31D2C:
 C3/1D2C: 00 26        BRK $26
 C3/1D2E: 64 3D        STZ $3D
 C3/1D30: 7E 43 1B     ROR $1B43,X

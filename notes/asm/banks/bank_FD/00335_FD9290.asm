@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9290
+Routine_FD9290:
 FD/9290: 01 72        ORA ($72,X)
 FD/9292: 02 02        COP $02
 FD/9294: C8           INY

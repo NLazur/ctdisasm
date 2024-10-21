@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 69EB
+Routine_C069EB:
 C0/69EB: C8           INY
 C0/69EC: BB           TYX
 C0/69ED: BF 01 20 7F  LDA $7F2001,X

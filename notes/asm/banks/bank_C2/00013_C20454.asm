@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0454
+Routine_C20454:
 C2/0454: DA           PHX
 C2/0455: 20 46 03     JSR $0346
 C2/0458: AD EC 1B     LDA $1BEC

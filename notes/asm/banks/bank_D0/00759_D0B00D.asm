@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: B00D
+Routine_D0B00D:
 D0/B00D: 38           SEC
 D0/B00E: 3C DC 1C     BIT $1CDC,X
 D0/B011: EC 1E EE     CPX $EE1E

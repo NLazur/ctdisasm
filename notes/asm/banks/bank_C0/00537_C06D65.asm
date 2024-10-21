@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6D65
+Routine_C06D65:
 C0/6D65: A7 D6        LDA [$D6]       ; load map animation graphics to VRAM
 C0/6D67: C9 FF        CMP #$FF
 C0/6D69: F0 2C        BEQ $6D97

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AC69
+Routine_C0AC69:
 C0/AC69: E2 10        SEP #$10
 C0/AC6B: 9E 00 19     STZ $1900,X
 C0/AC6E: 9E 80 19     STZ $1980,X

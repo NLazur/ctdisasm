@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2329
+Routine_C12329:
 C1/2329: 9C 04 96     STZ $9604
 C1/232C: 20 A4 23     JSR $23A4
 C1/232F: 4C E8 27     JMP $27E8

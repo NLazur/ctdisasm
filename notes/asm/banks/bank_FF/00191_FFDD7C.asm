@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DD7C
+Routine_FFDD7C:
 FF/DD7C: FF 00 BF 70  SBC $70BF00,X
 FF/DD80: F3 0C        SBC ($0C,S),Y
 FF/DD82: FD 06 FD     SBC $FD06,X

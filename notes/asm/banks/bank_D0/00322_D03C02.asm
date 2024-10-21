@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3C02
+Routine_D03C02:
 D0/3C02: 80 C0        BRA $3BC4
 D0/3C04: 80 C0        BRA $3BC6
 D0/3C06: 80 C0        BRA $3BC8

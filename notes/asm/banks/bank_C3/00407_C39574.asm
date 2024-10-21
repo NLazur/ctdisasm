@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9574
+Routine_C39574:
 C3/9574: 13 50        ORA ($50,S),Y
 C3/9576: 81 39        STA ($39,X)
 C3/9578: 00 04        BRK $04

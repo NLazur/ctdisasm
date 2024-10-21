@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E368
+Routine_C6E368:
 C6/E368: C2 20        REP #$20
 C6/E36A: A6 4E        LDX $4E
 C6/E36C: FE 24 00     INC $0024,X

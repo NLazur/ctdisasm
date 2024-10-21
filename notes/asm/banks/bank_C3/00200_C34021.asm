@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4021
+Routine_C34021:
 C3/4021: 22 E4 01 C3  JSR $C301E4
 C3/4025: E2 20        SEP #$20
 C3/4027: 00 AD        BRK $AD

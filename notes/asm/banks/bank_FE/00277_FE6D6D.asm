@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6D6D
+Routine_FE6D6D:
 FE/6D6D: BC 00 00     LDY $0000,X
 FE/6D70: 01 08        ORA ($08,X)
 FE/6D72: 02 08        COP $08

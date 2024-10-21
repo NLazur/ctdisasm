@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: C5C1
+Routine_C0C5C1:
 C0/C5C1: BD 04 48     LDA $4804,X
 C0/C5C4: 9D C4 4B     STA $4BC4,X
 C0/C5C7: 18           CLC

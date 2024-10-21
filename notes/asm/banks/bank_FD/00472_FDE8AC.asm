@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E8AC
+Routine_FDE8AC:
 FD/E8AC: A9 00        LDA #$00
 FD/E8AE: 99 20 05     STA $0520,Y
 FD/E8B1: B9 21 05     LDA $0521,Y

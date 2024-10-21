@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2A42
+Routine_CD2A42:
 CD/2A42: 54 48 3C     MVN $48,$3C
 CD/2A45: 30 24        BMI $2A6B
 CD/2A47: 18           CLC

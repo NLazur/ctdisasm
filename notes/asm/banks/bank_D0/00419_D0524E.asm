@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 524E
+Routine_D0524E:
 D0/524E: 5F 60 EC 1C  EOR $1CEC60,X
 D0/5252: DD 3F 9D     CMP $9D3F,X
 D0/5255: 77 39        ADC [$39],Y

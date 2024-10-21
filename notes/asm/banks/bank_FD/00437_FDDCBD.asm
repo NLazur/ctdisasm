@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: DCBD
+Routine_FDDCBD:
 FD/DCBD: A9 80        LDA #$80
 FD/DCBF: 8F 1C 70 7F  STA $7F701C
 FD/DCC3: 8F 20 70 7F  STA $7F7020

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 86F7
+Routine_C086F7:
 C0/86F7: A6 EB        LDX $EB
 C0/86F9: F0 11        BEQ $870C
 C0/86FB: 8E 75 43     STX $4375

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D994
+Routine_C6D994:
 C6/D994: 11 01        ORA ($01),Y
 C6/D996: 02 00        COP $00
 C6/D998: 01 10        ORA ($10,X)

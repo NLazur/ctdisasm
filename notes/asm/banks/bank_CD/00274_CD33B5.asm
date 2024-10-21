@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 33B5
+Routine_CD33B5:
 CD/33B5: 20 FE 31     JSR $31FE
 CD/33B8: 4C A5 35     JMP $35A5
 CD/33BB: 20 73 32     JSR $3273

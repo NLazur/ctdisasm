@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7143
+Routine_C27143:
 C2/7143: 7B           TDC
 C2/7144: BD 02 00     LDA $0002,X
 C2/7147: 0A           ASL

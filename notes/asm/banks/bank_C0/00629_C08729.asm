@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8729
+Routine_C08729:
 C0/8729: A6 F5        LDX $F5
 C0/872B: F0 11        BEQ $873E
 C0/872D: 8E 75 43     STX $4375

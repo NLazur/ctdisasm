@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 048A
+Routine_C2048A:
 C2/048A: 86 08        STX $08
 C2/048C: C2 20        REP #$20
 C2/048E: A2 30 0C     LDX #$0C30

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1F4A
+Routine_D11F4A:
 D1/1F4A: E0 00        CPX #$00
 D1/1F4C: 02 C0        COP $C0
 D1/1F4E: 0D 18 C2     ORA $C218

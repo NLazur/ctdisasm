@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B5EA
+Routine_C3B5EA:
 C3/B5EA: B9 24 10     LDA $1024,Y
 C3/B5ED: 42 20        WDM $20
 C3/B5EF: CF 42 00 E0  CMP $E00042

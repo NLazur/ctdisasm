@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: A16C
+Routine_CFA16C:
 CF/A16C: BF 00 BF 40  LDA $40BF00,X
 CF/A170: 48           PHA
 CF/A171: 20 4A 20     JSR $204A

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4888
+Routine_C24888:
 C2/4888: AD 7E 02     LDA $027E
 C2/488B: C9 05        CMP #$05
 C2/488D: D0 05        BNE $4894

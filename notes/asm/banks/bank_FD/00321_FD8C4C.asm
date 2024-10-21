@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8C4C
+Routine_FD8C4C:
 FD/8C4C: 2D 88 80     AND $8088
 FD/8C4F: C0 C0 64     CPY #$64C0
 FD/8C52: 19 EB 14     ORA $14EB,Y

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 5363
+Routine_FE5363:
 FE/5363: D7 08        CMP [$08],Y
 FE/5365: 3A           DEC
 FE/5366: 14 40        TRB $40

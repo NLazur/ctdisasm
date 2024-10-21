@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 08E8
+Routine_C108E8:
 C1/08E8: 0A           ASL
 C1/08E9: AA           TAX
 C1/08EA: C2 20        REP #$20

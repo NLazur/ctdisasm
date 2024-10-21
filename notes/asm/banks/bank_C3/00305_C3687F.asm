@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 687F
+Routine_C3687F:
 C3/687F: A9 C9 E0     LDA #$E0C9
 C3/6882: 8D 90 A0     STA $A090
 C3/6885: DD 0E D6     CMP $D60E,X

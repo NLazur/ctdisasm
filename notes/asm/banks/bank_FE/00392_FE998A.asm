@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 998A
+Routine_FE998A:
 FE/998A: 1C 65 1C     TRB $1C65
 FE/998D: D0 69        BNE $99F8
 FE/998F: 18           CLC

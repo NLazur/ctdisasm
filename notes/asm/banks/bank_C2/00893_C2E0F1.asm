@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E0F1
+Routine_C2E0F1:
 C2/E0F1: 08           PHP
 C2/E0F2: C2 30        REP #$30
 C2/E0F4: 20 50 E1     JSR $E150

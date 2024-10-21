@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: DCAD
+Routine_C1DCAD:
 C1/DCAD: 7B           TDC
 C1/DCAE: AE F6 B1     LDX $B1F6
 C1/DCB1: BD 4B 5E     LDA $5E4B,X

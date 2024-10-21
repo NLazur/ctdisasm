@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9771
+Routine_FD9771:
 FD/9771: 96 07        STX $07,Y
 FD/9773: 09 96 03     ORA #$0396
 FD/9776: 03 00        ORA $00,S

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 4896
+Routine_D14896:
 D1/4896: DC 7B FF     JMP [$FF7B]
 D1/4899: 7F A5 08 19  ADC $1908A5,X
 D1/489D: 47 34        EOR [$34]

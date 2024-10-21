@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 878C
+Routine_D1878C:
 D1/878C: 80 70        BRA $87FE
 D1/878E: 00 8A        BRK $8A
 D1/8790: 41 80        EOR ($80,X)

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 7C85
+Routine_D17C85:
 D1/7C85: FF 00 12 01  SBC $011200,X
 D1/7C89: DE 01 91     DEC $9101,X
 D1/7C8C: 05 97        ORA $97

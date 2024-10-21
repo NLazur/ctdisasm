@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AA25
+Routine_C1AA25:
 C1/AA25: 9C CB AE     STZ $AECB
 C1/AA28: 9C 20 AF     STZ $AF20
 C1/AA2B: 9C 21 AF     STZ $AF21

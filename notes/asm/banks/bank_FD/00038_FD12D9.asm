@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 12D9
+Routine_FD12D9:
 FD/12D9: B0 40        BCS $131B
 FD/12DB: A0 60        LDY #$60
 FD/12DD: B0 37        BCS $1316

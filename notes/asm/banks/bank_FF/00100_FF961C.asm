@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 961C
+Routine_FF961C:
 FF/961C: 7E 3C 3C     ROR $3C3C,X
 FF/961F: 00 00        BRK $00
 FF/9621: 00 44        BRK $44

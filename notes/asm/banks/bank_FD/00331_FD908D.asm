@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 908D
+Routine_FD908D:
 FD/908D: 0D 1A 04     ORA $041A
 FD/9090: 81 1A        STA ($1A,X)
 FD/9092: 30 01        BMI $9095

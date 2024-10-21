@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 521B
+Routine_FE521B:
 FE/521B: 34 35        BIT $35,X
 FE/521D: 2B           PLD
 FE/521E: 2B           PLD

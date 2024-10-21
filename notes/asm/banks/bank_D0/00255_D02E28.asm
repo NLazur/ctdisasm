@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2E28
+Routine_D02E28:
 D0/2E28: 26 36        ROL $36
 D0/2E2A: 24 36        BIT $36
 D0/2E2C: 27 37        AND [$37]

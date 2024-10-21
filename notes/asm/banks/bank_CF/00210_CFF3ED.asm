@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F3ED
+Routine_CFF3ED:
 CF/F3ED: A4 C6        LDY $C6
 CF/F3EF: B9 AA A5     LDA $A5AA,Y
 CF/F3F2: 20 FB F9     JSR $F9FB

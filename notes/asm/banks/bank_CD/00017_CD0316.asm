@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0316
+Routine_CD0316:
 CD/0316: CD 06 CD     CMP $CD06
 CD/0319: F0 24        BEQ $033F
 CD/031B: 8D 06 CD     STA $CD06

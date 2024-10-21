@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D070
+Routine_CFD070:
 CF/D070: 1C 20 23     TRB $2320
 CF/D073: 17 26        ORA [$26],Y
 CF/D075: 17 1C        ORA [$1C],Y

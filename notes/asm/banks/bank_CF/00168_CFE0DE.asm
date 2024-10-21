@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: E0DE
+Routine_CFE0DE:
 CF/E0DE: 05 00        ORA $00
 CF/E0E0: 00 00        BRK $00
 CF/E0E2: 00 00        BRK $00

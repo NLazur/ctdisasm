@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CFA0
+Routine_C2CFA0:
 C2/CFA0: 80 E6        BRA $CF88
 C2/CFA2: 08           PHP
 C2/CFA3: E2 20        SEP #$20

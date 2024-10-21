@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8CFF
+Routine_C68CFF:
 C6/8CFF: C8           INY
 C6/8D00: 08           PHP
 C6/8D01: 09 09        ORA #$09

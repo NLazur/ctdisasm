@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0625
+Routine_C20625:
 C2/0625: BD E3 00     LDA $00E3,X
 C2/0628: 1A           INC
 C2/0629: C9 C0 00     CMP #$00C0

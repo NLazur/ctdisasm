@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 3FB2
+Routine_CE3FB2:
 CE/3FB2: 01 28        ORA ($28,X)
 CE/3FB4: 3A           DEC
 CE/3FB5: 1F FD C3 14  ORA $14C3FD,X

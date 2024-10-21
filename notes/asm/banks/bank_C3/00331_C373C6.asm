@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 73C6
+Routine_C373C6:
 C3/73C6: 80 42        BRA $740A
 C3/73C8: 41 40        EOR ($40,X)
 C3/73CA: 46 49        LSR $49

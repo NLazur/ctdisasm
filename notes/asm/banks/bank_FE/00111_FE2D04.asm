@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 2D04
+Routine_FE2D04:
 FE/2D04: 61 62        ADC ($62,X)
 FE/2D06: 63 C3        ADC $C3,S
 FE/2D08: 08           PHP

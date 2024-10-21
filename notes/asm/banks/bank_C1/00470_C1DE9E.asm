@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: DE9E
+Routine_C1DE9E:
 C1/DE9E: AE F4 B1     LDX $B1F4
 C1/DEA1: BD 4B 5E     LDA $5E4B,X
 C1/DEA4: 89 05        BIT #$05

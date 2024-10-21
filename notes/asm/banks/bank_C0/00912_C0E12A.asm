@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: E12A
+Routine_C0E12A:
 C0/E12A: BD 00 12     LDA $1200,X
 C0/E12D: 85 CF        STA $CF
 C0/E12F: A9 7F        LDA #$7F

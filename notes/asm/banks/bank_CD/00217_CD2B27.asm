@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2B27
+Routine_CD2B27:
 CD/2B27: AD D2 99     LDA $99D2
 CD/2B2A: 09 80        ORA #$80
 CD/2B2C: 8D D2 99     STA $99D2

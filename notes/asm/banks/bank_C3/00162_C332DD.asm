@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 32DD
+Routine_C332DD:
 C3/32DD: 8B           PHB
 C3/32DE: 08           PHP
 C3/32DF: 6D 02 1F     ADC $1F02

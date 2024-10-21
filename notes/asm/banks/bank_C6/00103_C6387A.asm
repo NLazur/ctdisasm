@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 387A
+Routine_C6387A:
 C6/387A: 45 90        EOR $90
 C6/387C: 10 E6        BPL $3864
 C6/387E: DE 00 F6     DEC $F600,X

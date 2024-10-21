@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F39A
+Routine_C1F39A:
 C1/F39A: AE DB B2     LDX $B2DB
 C1/F39D: 86 30        STX $30
 C1/F39F: A9 FF        LDA #$FF

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2B45
+Routine_CD2B45:
 CD/2B45: 7B           TDC
 CD/2B46: A8           TAY
 CD/2B47: A9 E0        LDA #$E0

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0DB0
+Routine_D00DB0:
 D0/0DB0: 0A           ASL
 D0/0DB1: 8A           TXA
 D0/0DB2: 96 9A        STX $9A,Y

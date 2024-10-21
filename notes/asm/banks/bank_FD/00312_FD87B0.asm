@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 87B0
+Routine_FD87B0:
 FD/87B0: 26 23        ROL $23
 FD/87B2: 00 80        BRK $80
 FD/87B4: A0 40        LDY #$40

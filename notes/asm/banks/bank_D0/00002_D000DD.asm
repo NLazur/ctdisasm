@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 00DD
+Routine_D000DD:
 D0/00DD: C0 E6        CPY #$E6
 D0/00DF: 1E 00 00     ASL $0000,X
 D0/00E2: 00 00        BRK $00

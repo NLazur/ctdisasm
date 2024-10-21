@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 697D
+Routine_FD697D:
 FD/697D: 8F 02 00 3B  STA $3B0002
 FD/6981: 11 40        ORA ($40),Y
 FD/6983: 02 40        COP $40

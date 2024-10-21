@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1813
+Routine_CD1813:
 CD/1813: AD 44 CD     LDA $CD44
 CD/1816: F0 11        BEQ $1829
 CD/1818: A7 40        LDA [$40]

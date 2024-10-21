@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: DB41
+Routine_C6DB41:
 C6/DB41: 1D DD 78     ORA $78DD,X
 C6/DB44: 30 E0        BMI $DB26
 C6/DB46: 6F 71 9F 30  ADC $309F71

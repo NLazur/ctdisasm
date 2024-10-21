@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 516B
+Routine_FD516B:
 FD/516B: 10 60        BPL $51CD
 FD/516D: E0 00 00     CPX #$0000
 FD/5170: DC 20 27     JMP [$2720]

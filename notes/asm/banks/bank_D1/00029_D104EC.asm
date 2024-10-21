@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 04EC
+Routine_D104EC:
 D1/04EC: C8           INY
 D1/04ED: 80 C8        BRA $04B7
 D1/04EF: 0D 18 80     ORA $8018

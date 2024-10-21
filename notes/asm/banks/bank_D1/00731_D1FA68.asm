@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: FA68
+Routine_D1FA68:
 D1/FA68: A5 0F        LDA $0F
 D1/FA6A: 22 B2 38 CD  JSR $CD38B2
 D1/FA6E: A5 15        LDA $15

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8E82
+Routine_C28E82:
 C2/8E82: 08           PHP
 C2/8E83: C2 30        REP #$30
 C2/8E85: B5 22        LDA $22,X

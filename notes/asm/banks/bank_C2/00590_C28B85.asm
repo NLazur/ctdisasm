@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8B85
+Routine_C28B85:
 C2/8B85: 20 27 EA     JSR $EA27
 C2/8B88: BD 81 93     LDA $9381,X
 C2/8B8B: 3A           DEC

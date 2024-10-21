@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 0000
+Routine_CC0000:
 CC/0000: 00
 CC/0001: 86 80        STX $80
 CC/0003: 46 00        LSR $00

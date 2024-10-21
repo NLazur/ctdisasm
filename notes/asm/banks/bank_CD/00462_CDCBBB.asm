@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CBBB
+Routine_CDCBBB:
 CD/CBBB: A8           TAY
 CD/CBBC: 24 01        BIT $01
 CD/CBBE: 20 5A 70     JSR $705A

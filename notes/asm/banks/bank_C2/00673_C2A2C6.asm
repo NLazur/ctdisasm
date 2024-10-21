@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A2C6
+Routine_C2A2C6:
 C2/A2C6: 00 04        BRK $04
 C2/A2C8: 06 08        ASL $08
 C2/A2CA: 04 08        TSB $08

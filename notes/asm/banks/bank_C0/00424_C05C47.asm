@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5C47
+Routine_C05C47:
 C0/5C47: C2 20        REP #$20
 C0/5C49: A6 E9        LDX $E9
 C0/5C4B: BD 00 18     LDA $1800,X

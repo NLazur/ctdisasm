@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8F34
+Routine_C68F34:
 C6/8F34: 41 0C        EOR ($0C,X)
 C6/8F36: 42 32        WDM $32
 C6/8F38: 58           CLI

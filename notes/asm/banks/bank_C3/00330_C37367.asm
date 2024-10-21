@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 7367
+Routine_C37367:
 C3/7367: 43 20        EOR $20,S
 C3/7369: 08           PHP
 C3/736A: 61 17        ADC ($17,X)

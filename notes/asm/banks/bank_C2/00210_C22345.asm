@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2345
+Routine_C22345:
 C2/2345: C2 20        REP #$20
 C2/2347: 20 53 23     JSR $2353
 C2/234A: 90 06        BCC $2352

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B870
+Routine_C2B870:
 C2/B870: 9C BC 0D     STZ $0DBC
 C2/B873: A5 54        LDA $54
 C2/B875: 38           SEC

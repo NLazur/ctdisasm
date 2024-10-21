@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 02BB
+Routine_FE02BB:
 FE/02BB: 4E 41 08     LSR $0841
 FE/02BE: 81 15        STA ($15,X)
 FE/02C0: 05 BD        ORA $BD

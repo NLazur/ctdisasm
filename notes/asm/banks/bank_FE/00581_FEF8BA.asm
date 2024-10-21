@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: F8BA
+Routine_FEF8BA:
 FE/F8BA: 01 92        ORA ($92,X)
 FE/F8BC: 82 00 00     BRL $FEF8BF
 FE/F8BF: 6C 00 54     JMP ($5400)

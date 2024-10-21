@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D5F2
+Routine_C6D5F2:
 C6/D5F2: 85 08        STA $08
 C6/D5F4: 44 41 01     MVP $41,$01
 C6/D5F7: 44 44 3D     MVP $44,$3D

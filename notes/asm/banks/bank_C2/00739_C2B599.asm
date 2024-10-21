@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B599
+Routine_C2B599:
 C2/B599: AD 1A 04     LDA $041A
 C2/B59C: 18           CLC
 C2/B59D: 69 03 C5     ADC #$C503

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 32BC
+Routine_D132BC:
 D1/32BC: EA           NOP
 D1/32BD: 00 EA        BRK $EA
 D1/32BF: 41 18        EOR ($18,X)

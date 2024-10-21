@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F405
+Routine_CFF405:
 CF/F405: A6 C6        LDX $C6
 CF/F407: BD 0C 1D     LDA $1D0C,X
 CF/F40A: 85 CC        STA $CC

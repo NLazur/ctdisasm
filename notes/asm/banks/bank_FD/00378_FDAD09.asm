@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AD09
+Routine_FDAD09:
 FD/AD09: 7B           TDC
 FD/AD0A: AA           TAX
 FD/AD0B: A9 FF        LDA #$FF

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EE53
+Routine_CEEE53:
 CE/EE53: 7B           TDC
 CE/EE54: AA           TAX
 CE/EE55: A0 7C 03     LDY #$037C

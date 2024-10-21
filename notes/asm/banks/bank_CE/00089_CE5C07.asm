@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 5C07
+Routine_CE5C07:
 CE/5C07: 01 2B        ORA ($2B,X)
 CE/5C09: 23 03        AND $03,S
 CE/5C0B: 34 1A        BIT $1A,X

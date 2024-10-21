@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EAF4
+Routine_FDEAF4:
 FD/EAF4: A9 5C        LDA #$5C
 FD/EAF6: 8D 00 05     STA $0500
 FD/EAF9: 8D 04 05     STA $0504

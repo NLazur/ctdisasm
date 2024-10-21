@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 71A1
+Routine_CF71A1:
 CF/71A1: E0 80        CPX #$80
 CF/71A3: 80 00        BRA $71A5
 CF/71A5: 00 00        BRK $00

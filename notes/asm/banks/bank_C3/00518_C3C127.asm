@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C127
+Routine_C3C127:
 C3/C127: 18           CLC
 C3/C128: 80 60        BRA $C18A
 C3/C12A: 24 80        BIT $80

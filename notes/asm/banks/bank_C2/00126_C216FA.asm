@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 16FA
+Routine_C216FA:
 C2/16FA: E2 20        SEP #$20
 C2/16FC: A6 4E        LDX $4E
 C2/16FE: BD 0A 00     LDA $000A,X

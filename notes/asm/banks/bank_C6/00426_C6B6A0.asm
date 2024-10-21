@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B6A0
+Routine_C6B6A0:
 C6/B6A0: 0D 67 45     ORA $4567
 C6/B6A3: 93 2E        STA ($2E,S),Y
 C6/B6A5: AD 0A 1A     LDA $1A0A

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0C51
+Routine_D10C51:
 D1/0C51: EC 40 40     CPX $4040
 D1/0C54: 2A           ROL
 D1/0C55: 41 2E        EOR ($2E,X)

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 397B
+Routine_CE397B:
 CE/397B: 03 2D        ORA $2D,S
 CE/397D: 80 12        BRA $3991
 CE/397F: 30 0D        BMI $398E

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 78EB
+Routine_C678EB:
 C6/78EB: 7E BB 77     ROR $77BB,X
 C6/78EE: D9 A9 6A     CMP $6AA9,Y
 C6/78F1: C4 07        CPY $07

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 592C
+Routine_FD592C:
 FD/592C: 00 41        BRK $41
 FD/592E: 08           PHP
 FD/592F: 1E 0B 01     ASL $010B,X

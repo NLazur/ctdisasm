@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0B3F
+Routine_D10B3F:
 D1/0B3F: C6 80        DEC $80
 D1/0B41: C6 C0        DEC $C0
 D1/0B43: FF FF 1A 18  SBC $181AFF,X

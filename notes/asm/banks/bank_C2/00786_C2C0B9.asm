@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C0B9
+Routine_C2C0B9:
 C2/C0B9: A2 8B 0D     LDX #$0D8B
 C2/C0BC: 20 64 C1     JSR $C164
 C2/C0BF: AD 1D 0D     LDA $0D1D

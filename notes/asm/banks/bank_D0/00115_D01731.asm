@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1731
+Routine_D01731:
 D0/1731: A0 A0 40     LDY #$40A0
 D0/1734: 10 10        BPL $1746
 D0/1736: 00 00        BRK $00

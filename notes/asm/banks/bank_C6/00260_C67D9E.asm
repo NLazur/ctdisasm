@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7D9E
+Routine_C67D9E:
 C6/7D9E: F8           SED
 C6/7D9F: 01 F8        ORA ($F8,X)
 C6/7DA1: BF 01 F8 60  LDA $60F801,X

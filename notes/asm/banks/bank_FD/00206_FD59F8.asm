@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 59F8
+Routine_FD59F8:
 FD/59F8: 20 06 03     JSR $0306
 FD/59FB: 30 F8        BMI $59F5
 FD/59FD: 80 93        BRA $5992

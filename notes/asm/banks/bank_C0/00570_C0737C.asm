@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 737C
+Routine_C0737C:
 C0/737C: 85 D9        STA $D9
 C0/737E: BD 00 0B     LDA $0B00,X
 C0/7381: 30 0D        BMI $7390

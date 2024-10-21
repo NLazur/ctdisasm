@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 908A
+Routine_C0908A:
 C0/908A: C2 20        REP #$20
 C0/908C: 64 2E        STZ $2E
 C0/908E: E2 20        SEP #$20

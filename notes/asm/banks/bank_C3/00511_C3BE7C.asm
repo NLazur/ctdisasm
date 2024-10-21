@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BE7C
+Routine_C3BE7C:
 C3/BE7C: 02 79        COP $79
 C3/BE7E: 30 63        BMI $BEE3
 C3/BE80: 30 32        BMI $BEB4

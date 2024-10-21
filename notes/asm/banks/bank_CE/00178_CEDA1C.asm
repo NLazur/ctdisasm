@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: DA1C
+Routine_CEDA1C:
 CE/DA1C: 01 C0        ORA ($C0,X)
 CE/DA1E: 2B           PLD
 CE/DA1F: 8F 00 01 C0  STA $C00100

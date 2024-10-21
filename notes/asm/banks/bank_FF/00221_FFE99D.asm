@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E99D
+Routine_FFE99D:
 FF/E99D: FC FE 01     JSR ($01FE,X)
 FF/E9A0: 7F 80 AA 10  ADC $10AA80,X
 FF/E9A4: 69 50        ADC #$50

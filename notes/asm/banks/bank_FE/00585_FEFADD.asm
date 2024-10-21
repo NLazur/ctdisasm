@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: FADD
+Routine_FEFADD:
 FE/FADD: 04 5F        TSB $5F
 FE/FADF: 76 9F        ROR $9F,X
 FE/FAE1: 63 D9        ADC $D9,S

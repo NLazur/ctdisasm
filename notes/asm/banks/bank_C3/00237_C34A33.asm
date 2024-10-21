@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4A33
+Routine_C34A33:
 C3/4A33: B7 55        LDA [$55],Y
 C3/4A35: 4D 20 B6     EOR $B620
 C3/4A38: 5B           TCD

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1985
+Routine_C01985:
 C0/1985: A5 26        LDA $26
 C0/1987: F0 05        BEQ $198E
 C0/1989: 49 03        EOR #$03

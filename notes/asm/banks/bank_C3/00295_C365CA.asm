@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 65CA
+Routine_C365CA:
 C3/65CA: A9 00        LDA #$00
 C3/65CC: 95 C9        STA $C9,X
 C3/65CE: 80 08        BRA $65D8

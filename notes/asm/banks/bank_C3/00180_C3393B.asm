@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 393B
+Routine_C3393B:
 C3/393B: 0C 60 20     TSB $2060
 C3/393E: 68           PLA
 C3/393F: 00 08        BRK $08

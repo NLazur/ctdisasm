@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1F85
+Routine_C21F85:
 C2/1F85: C2 20        REP #$20
 C2/1F87: A5 4E        LDA $4E
 C2/1F89: 18           CLC

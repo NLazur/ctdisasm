@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9C07
+Routine_FD9C07:
 FD/9C07: 00 44        BRK $44
 FD/9C09: FF B2 00 57  SBC $5700B2,X
 FD/9C0D: 00 B0        BRK $B0

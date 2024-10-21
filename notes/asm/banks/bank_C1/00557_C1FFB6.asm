@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: FFB6
+Routine_C1FFB6:
 C1/FFB6: A2 18 00     LDX #$0018
 C1/FFB9: 86 2A        STX $2A
 C1/FFBB: 20 06 CB     JSR $CB06

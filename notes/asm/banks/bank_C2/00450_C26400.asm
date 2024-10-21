@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6400
+Routine_C26400:
 C2/6400: E2 20        SEP #$20
 C2/6402: A2 25 AB     LDX #$AB25
 C2/6405: 8E 81 21     STX $2181

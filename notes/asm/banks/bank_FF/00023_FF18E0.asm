@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 18E0
+Routine_FF18E0:
 FF/18E0: 65 27        ADC $27
 FF/18E2: BA           TSX
 FF/18E3: 9B           TXY

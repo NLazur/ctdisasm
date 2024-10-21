@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 7FAC
+Routine_D17FAC:
 D1/7FAC: FF 80 0A 01  SBC $010A80,X
 D1/7FB0: C9 7F        CMP #$7F
 D1/7FB2: E1 83        SBC ($83,X)

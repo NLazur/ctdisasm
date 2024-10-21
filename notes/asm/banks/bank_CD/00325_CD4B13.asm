@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 4B13
+Routine_CD4B13:
 CD/4B13: 06 00        ASL $00
 CD/4B15: 30 23        BMI $4B3A
 CD/4B17: 23 60        AND $60,S

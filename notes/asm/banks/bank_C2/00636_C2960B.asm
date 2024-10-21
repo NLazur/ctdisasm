@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 960B
+Routine_C2960B:
 C2/960B: 85 02        STA $02
 C2/960D: A9 0F 00     LDA #$000F
 C2/9610: 54 7E FF     MVN $7E,$FF

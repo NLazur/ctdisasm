@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1E0C
+Routine_C01E0C:
 C0/1E0C: C2 20        REP #$20
 C0/1E0E: 29 7F 00     AND #$007F
 C0/1E11: 0A           ASL

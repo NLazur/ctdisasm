@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 116B
+Routine_C2116B:
 C2/116B: A0 01 00     LDY #$0001
 C2/116E: B7 58        LDA [$58],Y
 C2/1170: 3A           DEC

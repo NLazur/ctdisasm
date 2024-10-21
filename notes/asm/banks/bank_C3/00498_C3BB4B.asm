@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BB4B
+Routine_C3BB4B:
 C3/BB4B: 10 E4        BPL $BB31
 C3/BB4D: 00 13        BRK $13
 C3/BB4F: 00 E7        BRK $E7

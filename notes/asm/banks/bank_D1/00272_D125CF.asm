@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 25CF
+Routine_D125CF:
 D1/25CF: 00 CA        BRK $CA
 D1/25D1: 02 00        COP $00
 D1/25D3: E0 00        CPX #$00

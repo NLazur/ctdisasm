@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 350C
+Routine_D1350C:
 D1/350C: E2 40        SEP #$40
 D1/350E: E0 40 06     CPX #$0640
 D1/3511: 41 04        EOR ($04,X)

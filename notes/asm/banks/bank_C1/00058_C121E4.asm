@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 21E4
+Routine_C121E4:
 C1/21E4: 8A           TXA
 C1/21E5: 8D 05 96     STA $9605
 C1/21E8: 9C 04 96     STZ $9604

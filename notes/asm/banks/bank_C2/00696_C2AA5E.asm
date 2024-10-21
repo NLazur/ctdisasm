@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AA5E
+Routine_C2AA5E:
 C2/AA5E: 20 C2 EA     JSR $EAC2
 C2/AA61: A5 54        LDA $54
 C2/AA63: C9 0A F0     CMP #$F00A

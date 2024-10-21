@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1C52
+Routine_C61C52:
 C6/1C52: 01 10        ORA ($10,X)
 C6/1C54: 39 00 03     AND $0300,Y
 C6/1C57: C1 00        CMP ($00,X)

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F626
+Routine_C2F626:
 C2/F626: 48           PHA
 C2/F627: 08           PHP
 C2/F628: E2 20        SEP #$20

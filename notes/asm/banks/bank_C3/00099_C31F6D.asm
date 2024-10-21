@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1F6D
+Routine_C31F6D:
 C3/1F6D: F6 19        INC $19,X
 C3/1F6F: 97 1E        STA [$1E],Y
 C3/1F71: 00 00        BRK $00

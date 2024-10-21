@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D7A8
+Routine_C6D7A8:
 C6/D7A8: 41 00        EOR ($00,X)
 C6/D7AA: 01 04        ORA ($04,X)
 C6/D7AC: 10 40        BPL $D7EE

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1052
+Routine_CD1052:
 CD/1052: A2 00 00     LDX #$0000
 CD/1055: 20 61 10     JSR $1061
 CD/1058: A2 00 10     LDX #$1000

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AE99
+Routine_FDAE99:
 FD/AE99: 9C BD B3     STZ $B3BD
 FD/AE9C: AD 57 5E     LDA $5E57
 FD/AE9F: 8D BA B3     STA $B3BA

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: DE87
+Routine_FDDE87:
 FD/DE87: C2 30        REP #$30
 FD/DE89: 48           PHA
 FD/DE8A: DA           PHX

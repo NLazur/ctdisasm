@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7008
+Routine_C07008:
 C0/7008: A2 0C BD     LDX #$BD0C
 C0/700B: 88           DEY
 C0/700C: 0B           PHD

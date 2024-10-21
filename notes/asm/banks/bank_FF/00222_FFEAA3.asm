@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EAA3
+Routine_FFEAA3:
 FF/EAA3: FC 10 A7     JSR ($A710,X)
 FF/EAA6: 3B           TSC
 FF/EAA7: 23 44        AND $44,S

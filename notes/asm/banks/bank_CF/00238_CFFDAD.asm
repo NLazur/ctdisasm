@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: FDAD
+Routine_CFFDAD:
 CF/FDAD: DA           PHX
 CF/FDAE: 7B           TDC
 CF/FDAF: AA           TAX

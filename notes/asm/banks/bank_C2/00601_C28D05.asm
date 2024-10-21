@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8D05
+Routine_C28D05:
 C2/8D05: C2 30        REP #$30
 C2/8D07: A0 00 26     LDY #$2600
 C2/8D0A: 20 1C 8D     JSR $8D1C

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: A24B
+Routine_FEA24B:
 FE/A24B: 33 84        AND ($84,S),Y
 FE/A24D: 7E F2 12     ROR $12F2,X
 FE/A250: EC CA 1A     CPX $1ACA

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EB0C
+Routine_FEEB0C:
 FE/EB0C: BC 0A 80     LDY $800A,X
 FE/EB0F: 44 80 91     MVP $80,$91
 FE/EB12: 01 00        ORA ($00,X)

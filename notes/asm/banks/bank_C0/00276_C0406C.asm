@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 406C
+Routine_C0406C:
 C0/406C: 64 39        STZ $39
 C0/406E: A9 00        LDA #$00
 C0/4070: 8F 22 15 7F  STA $7F1522

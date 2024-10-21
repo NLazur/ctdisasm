@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2B52
+Routine_C32B52:
 C3/2B52: 20 17 80     JSR $8017
 C3/2B55: 85 82        STA $82
 C3/2B57: AD 5A 0C     LDA $0C5A

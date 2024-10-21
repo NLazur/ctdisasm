@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FE58
+Routine_C2FE58:
 C2/FE58: B2 82        LDA ($82)
 C2/FE5A: FE 28 60     INC $6028,X
 C2/FE5D: 08           PHP

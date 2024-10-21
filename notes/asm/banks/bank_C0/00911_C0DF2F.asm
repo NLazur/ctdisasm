@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: DF2F
+Routine_C0DF2F:
 C0/DF2F: BD 01 0F     LDA $0F01,X
 C0/DF32: 8D 02 42     STA $4202
 C0/DF35: A9 78        LDA #$78

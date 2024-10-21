@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3780
+Routine_C03780:
 C0/3780: BB           TYX
 C0/3781: E8           INX
 C0/3782: 7B           TDC

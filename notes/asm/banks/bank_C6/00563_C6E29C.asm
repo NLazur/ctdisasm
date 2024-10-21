@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E29C
+Routine_C6E29C:
 C6/E29C: BD 24 00     LDA $0024,X
 C6/E29F: 69 E0 00     ADC #$00E0
 C6/E2A2: 8F 25 8A 7E  STA $7E8A25

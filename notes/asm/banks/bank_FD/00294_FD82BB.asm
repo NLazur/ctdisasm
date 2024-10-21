@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 82BB
+Routine_FD82BB:
 FD/82BB: 4E 40 00     LSR $0040
 FD/82BE: 0F 00 6D 7F  ORA $7F6D00
 FD/82C2: CB           WAI

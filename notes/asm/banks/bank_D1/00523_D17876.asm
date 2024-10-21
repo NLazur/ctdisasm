@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 7876
+Routine_D17876:
 D1/7876: FF 80 09 01  SBC $010980,X
 D1/787A: 93 13        STA ($13,S),Y
 D1/787C: 02 04        COP $04

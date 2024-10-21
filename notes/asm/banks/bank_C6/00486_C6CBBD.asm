@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CBBD
+Routine_C6CBBD:
 C6/CBBD: DC 30 DD     JMP [$DD30]
 C6/CBC0: F0 30        BEQ $CBF2
 C6/CBC2: DE 30 DF     DEC $DF30,X

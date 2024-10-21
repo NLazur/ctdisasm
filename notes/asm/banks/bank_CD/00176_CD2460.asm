@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2460
+Routine_CD2460:
 CD/2460: A2 04 00     LDX #$0004
 CD/2463: 20 1F 1B     JSR $1B1F
 CD/2466: AD 8E 5D     LDA $5D8E

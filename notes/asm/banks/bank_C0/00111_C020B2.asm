@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 20B2
+Routine_C020B2:
 C0/20B2: 8B           PHB
 C0/20B3: A2 00 00     LDX #$0000
 C0/20B6: A0 00 F0     LDY #$F000

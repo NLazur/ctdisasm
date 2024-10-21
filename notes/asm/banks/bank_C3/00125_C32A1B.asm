@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2A1B
+Routine_C32A1B:
 C3/2A1B: A5 4E        LDA $4E
 C3/2A1D: 69 AC 01     ADC #$01AC
 C3/2A20: E5 73        SBC $73

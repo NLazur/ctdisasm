@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: DCE2
+Routine_CFDCE2:
 CF/DCE2: 30 20        BMI $DD04
 CF/DCE4: 1C 20 85     TRB $8520
 CF/DCE7: 21 87        AND ($87,X)

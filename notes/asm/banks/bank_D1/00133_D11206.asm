@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1206
+Routine_D11206:
 D1/1206: 0A           ASL
 D1/1207: 41 08        EOR ($08,X)
 D1/1209: 41 06        EOR ($06,X)

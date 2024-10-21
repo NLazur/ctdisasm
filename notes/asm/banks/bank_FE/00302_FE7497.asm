@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 7497
+Routine_FE7497:
 FE/7497: 04 30        TSB $30
 FE/7499: 7F 4F 20 38  ADC $38204F,X
 FE/749D: 84 00        STY $00

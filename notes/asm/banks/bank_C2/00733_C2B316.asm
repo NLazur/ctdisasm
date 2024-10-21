@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B316
+Routine_C2B316:
 C2/B316: 00 02        BRK $02
 C2/B318: 01 03        ORA ($03,X)
 C2/B31A: 04 05        TSB $05

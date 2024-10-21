@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BFC5
+Routine_C2BFC5:
 C2/BFC5: 9C 0D 0F     STZ $0F0D
 C2/BFC8: AD 17 04     LDA $0417
 C2/BFCB: 85 54        STA $54

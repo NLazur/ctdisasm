@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: ED44
+Routine_D0ED44:
 D0/ED44: C2 40        REP #$40
 D0/ED46: 02 F8        COP $F8
 D0/ED48: 01 16        ORA ($16,X)

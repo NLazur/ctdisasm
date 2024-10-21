@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: B29A
+Routine_CCB29A:
 CC/B29A: 02 75        COP $75
 CC/B29C: 05 00        ORA $00
 CC/B29E: 00 6B        BRK $6B

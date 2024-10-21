@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6CFB
+Routine_FD6CFB:
 FD/6CFB: E2 53        SEP #$53
 FD/6CFD: A0 A0        LDY #$A0
 FD/6CFF: 90 00        BCC $6D01

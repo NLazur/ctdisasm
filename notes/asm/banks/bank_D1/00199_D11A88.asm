@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1A88
+Routine_D11A88:
 D1/1A88: E8           INX
 D1/1A89: 80 E8        BRA $1A73
 D1/1A8B: 0D 80 E6     ORA $E680

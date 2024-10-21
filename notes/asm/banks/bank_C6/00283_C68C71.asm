@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8C71
+Routine_C68C71:
 C6/8C71: F8           SED
 C6/8C72: 08           PHP
 C6/8C73: B8           CLV

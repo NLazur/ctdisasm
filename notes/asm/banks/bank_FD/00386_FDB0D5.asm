@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B0D5
+Routine_FDB0D5:
 FD/B0D5: 7B           TDC
 FD/B0D6: AA           TAX
 FD/B0D7: 9D B6 AF     STA $AFB6,X

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E146
+Routine_D0E146:
 D0/E146: 09 61        ORA #$61
 D0/E148: 09 62        ORA #$62
 D0/E14A: 09 63        ORA #$63

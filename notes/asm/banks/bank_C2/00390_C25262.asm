@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5262
+Routine_C25262:
 C2/5262: A9 01 9D     LDA #$9D01
 C2/5265: 02 00        COP $00
 C2/5267: BD 0F 00     LDA $000F,X

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A6C3
+Routine_C1A6C3:
 C1/A6C3: 7B           TDC
 C1/A6C4: 64 0B        STZ $0B
 C1/A6C6: AA           TAX

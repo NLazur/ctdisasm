@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3DE5
+Routine_C23DE5:
 C2/3DE5: C2 20        REP #$20
 C2/3DE7: A6 4E        LDX $4E
 C2/3DE9: 20 94 3F     JSR $3F94

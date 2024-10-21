@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EF9E
+Routine_D0EF9E:
 D0/EF9E: 52 E9        EOR ($E9)
 D0/EFA0: 52 E8        EOR ($E8)
 D0/EFA2: 52 1C        EOR ($1C)

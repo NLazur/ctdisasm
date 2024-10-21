@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0B0F
+Routine_D10B0F:
 D1/0B0F: 01 6A        ORA ($6A,X)
 D1/0B11: 08           PHP
 D1/0B12: 10 62        BPL $0B76

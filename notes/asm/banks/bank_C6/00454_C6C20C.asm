@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C20C
+Routine_C6C20C:
 C6/C20C: FA           PLX
 C6/C20D: 05 40        ORA $40
 C6/C20F: 52 BD        EOR ($BD)

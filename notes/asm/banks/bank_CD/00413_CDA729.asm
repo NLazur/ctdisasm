@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A729
+Routine_CDA729:
 CD/A729: 70 02        BVS $A72D
 CD/A72B: 01 24        ORA ($24,X)
 CD/A72D: 02 71        COP $71

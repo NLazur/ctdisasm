@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B7D4
+Routine_C3B7D4:
 C3/B7D4: 78           SEI
 C3/B7D5: 11 31        ORA ($31),Y
 C3/B7D7: 20 5F 93     JSR $935F

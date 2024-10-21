@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5558
+Routine_C25558:
 C2/5558: FE 02 00     INC $0002,X
 C2/555B: C2 20        REP #$20
 C2/555D: 18           CLC

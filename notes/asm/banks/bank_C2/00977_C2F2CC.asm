@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F2CC
+Routine_C2F2CC:
 C2/F2CC: B9 01 00     LDA $0001,Y
 C2/F2CF: 0A           ASL
 C2/F2D0: 85 8A        STA $8A

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EA11
+Routine_FDEA11:
 FD/EA11: B9 22 05     LDA $0522,Y
 FD/EA14: A8           TAY
 FD/EA15: BF 01 20 7E  LDA $7E2001,X

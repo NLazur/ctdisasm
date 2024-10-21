@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9F35
+Routine_C29F35:
 C2/9F35: A5 54        LDA $54
 C2/9F37: 38           SEC
 C2/9F38: E9 04        SBC #$04

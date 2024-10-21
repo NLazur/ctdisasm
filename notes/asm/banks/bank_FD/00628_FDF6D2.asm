@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F6D2
+Routine_FDF6D2:
 FD/F6D2: 75 40        ADC $40,X
 FD/F6D4: 7A           PLY
 FD/F6D5: 02 90        COP $90

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 34F4
+Routine_C034F4:
 C0/34F4: 86 C3        STX $C3
 C0/34F6: AA           TAX
 C0/34F7: BD 00 1C     LDA $1C00,X

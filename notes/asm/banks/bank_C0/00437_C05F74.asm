@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5F74
+Routine_C05F74:
 C0/5F74: A6 6D        LDX $6D
 C0/5F76: BD 00 1C     LDA $1C00,X
 C0/5F79: C9 07        CMP #$07

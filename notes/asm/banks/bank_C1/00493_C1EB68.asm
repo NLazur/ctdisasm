@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EB68
+Routine_C1EB68:
 C1/EB68: 7B           TDC
 C1/EB69: AA           TAX
 C1/EB6A: 86 10        STX $10

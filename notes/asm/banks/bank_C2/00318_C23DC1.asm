@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3DC1
+Routine_C23DC1:
 C2/3DC1: 20 63 0F     JSR $0F63
 C2/3DC4: 90 05        BCC $3DCB
 C2/3DC6: A6 4E        LDX $4E

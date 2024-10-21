@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3324
+Routine_C63324:
 C6/3324: 7E 40 4E     ROR $4E40,X
 C6/3327: 00 00        BRK $00
 C6/3329: 4F 00 5E 00  EOR $005E00

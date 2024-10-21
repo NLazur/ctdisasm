@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CD0A
+Routine_D0CD0A:
 D0/CD0A: E0 E0        CPX #$E0
 D0/CD0C: E0 E0        CPX #$E0
 D0/CD0E: E0 E0        CPX #$E0

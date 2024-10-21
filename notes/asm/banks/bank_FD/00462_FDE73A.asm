@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E73A
+Routine_FDE73A:
 FD/E73A: B9 22 05     LDA $0522,Y
 FD/E73D: A8           TAY
 FD/E73E: BF 01 20 7E  LDA $7E2001,X

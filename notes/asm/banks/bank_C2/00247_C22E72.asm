@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2E72
+Routine_C22E72:
 C2/2E72: C2 20        REP #$20
 C2/2E74: 8B           PHB
 C2/2E75: A2 00 3F     LDX #$3F00

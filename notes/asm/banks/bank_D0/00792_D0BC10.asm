@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: BC10
+Routine_D0BC10:
 D0/BC10: 4F C8 4F C8  EOR $C84FC8
 D0/BC14: 2F 6C A7 67  AND $67A76C
 D0/BC18: 10 30        BPL $BC4A

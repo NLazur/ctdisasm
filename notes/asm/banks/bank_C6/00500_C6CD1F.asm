@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CD1F
+Routine_C6CD1F:
 C6/CD1F: 3E 02 04     ROL $0402,X
 C6/CD22: 00 20        BRK $20
 C6/CD24: 02 18        COP $18

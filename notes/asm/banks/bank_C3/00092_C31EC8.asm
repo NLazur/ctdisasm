@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1EC8
+Routine_C31EC8:
 C3/1EC8: 68           PLA
 C3/1EC9: 20 3F AA     JSR $AA3F
 C3/1ECC: 3F 02 D0 26  AND $26D002,X

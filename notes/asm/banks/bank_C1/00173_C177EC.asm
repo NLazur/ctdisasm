@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 77EC
+Routine_C177EC:
 C1/77EC: 98           TYA
 C1/77ED: 38           SEC
 C1/77EE: E9 1C        SBC #$1C

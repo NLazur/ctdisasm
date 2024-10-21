@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F361
+Routine_FDF361:
 FD/F361: 80 80        BRA $F2E3
 FD/F363: 69 00        ADC #$00
 FD/F365: 6A           ROR

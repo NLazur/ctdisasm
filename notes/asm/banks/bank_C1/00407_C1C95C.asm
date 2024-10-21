@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C95C
+Routine_C1C95C:
 C1/C95C: 8D C7 A7     STA $A7C7
 C1/C95F: C7 BD        CMP [$BD]
 C1/C961: C7 D1        CMP [$D1]

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5AB8
+Routine_C65AB8:
 C6/5AB8: 2E 35 80     ROL $8035
 C6/5ABB: 88           DEY
 C6/5ABC: 36 88        ROL $88,X

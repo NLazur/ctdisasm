@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 429C
+Routine_C0429C:
 C0/429C: A6 6D        LDX $6D
 C0/429E: 9D 00 11     STA $1100,X
 C0/42A1: 9E 80 1C     STZ $1C80,X

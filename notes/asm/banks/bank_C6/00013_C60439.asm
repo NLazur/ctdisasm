@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0439
+Routine_C60439:
 C6/0439: 7D 9C B5     ADC $B59C,X
 C6/043C: F6 00        INC $00,X
 C6/043E: F6 05        INC $05,X

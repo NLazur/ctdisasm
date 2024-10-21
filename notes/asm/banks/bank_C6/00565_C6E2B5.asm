@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E2B5
+Routine_C6E2B5:
 C6/E2B5: C2 20        REP #$20
 C6/E2B7: A6 4E        LDX $4E
 C6/E2B9: 18           CLC

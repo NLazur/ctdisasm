@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BB2B
+Routine_C6BB2B:
 C6/BB2B: 68           PLA
 C6/BB2C: 01 60        ORA ($60,X)
 C6/BB2E: 46 F8        LSR $F8

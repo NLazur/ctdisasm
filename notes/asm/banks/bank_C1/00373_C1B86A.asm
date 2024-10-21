@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B86A
+Routine_C1B86A:
 C1/B86A: 99 61 99     STA $9961,Y
 C1/B86D: 62 99 66     PER $C11F09
 C1/B870: 99 67 99     STA $9967,Y

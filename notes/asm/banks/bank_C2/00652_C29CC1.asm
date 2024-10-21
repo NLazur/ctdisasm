@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9CC1
+Routine_C29CC1:
 C2/9CC1: A9 01        LDA #$01
 C2/9CC3: 8D CB 04     STA $04CB
 C2/9CC6: AC 26 0D     LDY $0D26

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 26E0
+Routine_CD26E0:
 CD/26E0: A7 40        LDA [$40]
 CD/26E2: AA           TAX
 CD/26E3: A0 01 00     LDY #$0001

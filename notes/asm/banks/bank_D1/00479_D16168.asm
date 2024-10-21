@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 6168
+Routine_D16168:
 D1/6168: 00 00        BRK $00
 D1/616A: FF 7F 52 7F  SBC $7F527F,X
 D1/616E: 09 7E        ORA #$7E

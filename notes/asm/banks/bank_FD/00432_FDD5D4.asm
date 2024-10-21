@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: D5D4
+Routine_FDD5D4:
 FD/D5D4: A2 F0 14     LDX #$14F0
 FD/D5D7: 8E 45 12     STX $1245
 FD/D5DA: A9 00        LDA #$00

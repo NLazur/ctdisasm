@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 20D9
+Routine_C220D9:
 C2/20D9: 9D 0A 00     STA $000A,X
 C2/20DC: 9E 03 00     STZ $0003,X
 C2/20DF: E2 20        SEP #$20

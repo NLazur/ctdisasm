@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B86E
+Routine_C6B86E:
 C6/B86E: 08           PHP
 C6/B86F: 35 DC        AND $DC,X
 C6/B871: 16 D6        ASL $D6,X

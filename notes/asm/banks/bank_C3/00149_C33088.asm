@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3088
+Routine_C33088:
 C3/3088: 9F 12 81 21  STA $218112,X
 C3/308C: 9F 02 04 83  STA $830402,X
 C3/3090: 21 F8        AND ($F8,X)

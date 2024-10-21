@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C000
+Routine_FDC000:
 FD/C000: C2 10        REP #$10        ; init hardware registers on reset
 FD/C002: E2 20        SEP #$20
 FD/C004: A2 FF 06     LDX #$06FF      ; set stack pointer

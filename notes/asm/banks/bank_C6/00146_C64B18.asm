@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4B18
+Routine_C64B18:
 C6/4B18: 11 6A        ORA ($6A),Y
 C6/4B1A: 11 6B        ORA ($6B),Y
 C6/4B1C: 11 5C        ORA ($5C),Y

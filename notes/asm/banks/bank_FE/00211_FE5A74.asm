@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 5A74
+Routine_FE5A74:
 FE/5A74: 38           SEC
 FE/5A75: 9C 7E E0     STZ $E07E
 FE/5A78: F5 F3        SBC $F3,X

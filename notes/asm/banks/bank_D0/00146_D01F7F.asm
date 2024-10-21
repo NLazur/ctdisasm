@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1F7F
+Routine_D01F7F:
 D0/1F7F: 20 0C 0A     JSR $0A0C
 D0/1F82: 06 00        ASL $00
 D0/1F84: 02 04        COP $04

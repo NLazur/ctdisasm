@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 55E7
+Routine_C255E7:
 C2/55E7: A9 01 9D     LDA #$9D01
 C2/55EA: 02 00        COP $00
 C2/55EC: C2 20        REP #$20

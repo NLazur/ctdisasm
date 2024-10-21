@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 1C66
+Routine_C11C66:
 C1/1C66: 9D 07 99     STA $9907,X
 C1/1C69: BD 7C 96     LDA $967C,X
 C1/1C6C: 0A           ASL

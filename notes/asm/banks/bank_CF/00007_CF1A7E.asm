@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1A7E
+Routine_CF1A7E:
 CF/1A7E: 80 40        BRA $1AC0
 CF/1A80: 01 05        ORA ($05,X)
 CF/1A82: 0B           PHD

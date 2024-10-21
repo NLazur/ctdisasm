@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EDD5
+Routine_CEEDD5:
 CE/EDD5: AD A3 CA     LDA $CAA3
 CE/EDD8: 30 79        BMI $EE53
 CE/EDDA: D0 17        BNE $EDF3

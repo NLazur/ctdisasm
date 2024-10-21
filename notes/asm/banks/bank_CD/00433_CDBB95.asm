@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: BB95
+Routine_CDBB95:
 CD/BB95: 20 2D 70     JSR $702D
 CD/BB98: 0D 12 03     ORA $0312
 CD/BB9B: 1B           TCS

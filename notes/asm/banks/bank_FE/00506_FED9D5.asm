@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: D9D5
+Routine_FED9D5:
 FE/D9D5: 10 45        BPL $DA1C
 FE/D9D7: 2A           ROL
 FE/D9D8: 02 83        COP $83

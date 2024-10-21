@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A7BC
+Routine_C0A7BC:
 C0/A7BC: DA           PHX
 C0/A7BD: C2 20        REP #$20
 C0/A7BF: A5 52        LDA $52

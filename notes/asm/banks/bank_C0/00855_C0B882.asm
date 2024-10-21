@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B882
+Routine_C0B882:
 C0/B882: BD C4 4B     LDA $4BC4,X
 C0/B885: 18           CLC
 C0/B886: 65 C5        ADC $C5

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2A44
+Routine_C22A44:
 C2/2A44: A2 00 04     LDX #$0400
 C2/2A47: 8E 03 03     STX $0303
 C2/2A4A: A9 7F        LDA #$7F

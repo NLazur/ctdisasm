@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5709
+Routine_C05709:
 C0/5709: A2 00 02     LDX #$0200      ; initialize object data
 C0/570C: 86 4E        STX $4E
 C0/570E: A2 00 02     LDX #$0200

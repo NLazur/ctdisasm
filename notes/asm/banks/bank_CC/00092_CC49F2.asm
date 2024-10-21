@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 49F2
+Routine_CC49F2:
 CC/49F2: 04 04        TSB $04
 CC/49F4: 00 00        BRK $00
 CC/49F6: 0D C0 12     ORA $12C0

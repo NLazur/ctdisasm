@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 188E
+Routine_C2188E:
 C2/188E: E2 20        SEP #$20
 C2/1890: A6 4E        LDX $4E
 C2/1892: BD 0A 00     LDA $000A,X

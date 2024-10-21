@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5243
+Routine_C25243:
 C2/5243: DE 02 00     DEC $0002,X
 C2/5246: 4C A5 51     JMP $51A5
 C2/5249: A6 4E        LDX $4E

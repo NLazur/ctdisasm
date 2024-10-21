@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F3BA
+Routine_CFF3BA:
 CF/F3BA: A6 C6        LDX $C6
 CF/F3BC: DE 13 AB     DEC $AB13,X
 CF/F3BF: D0 0A        BNE $F3CB

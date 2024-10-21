@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F773
+Routine_FDF773:
 FD/F773: 70 80        BVS $F6F5
 FD/F775: 70 C0        BVS $F737
 FD/F777: 70 00        BVS $F779

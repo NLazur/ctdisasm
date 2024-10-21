@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1F3C
+Routine_CD1F3C:
 CD/1F3C: A7 40        LDA [$40]
 CD/1F3E: 8D 95 CA     STA $CA95
 CD/1F41: 8D 96 CA     STA $CA96

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 47AC
+Routine_D047AC:
 D0/47AC: F0 90        BEQ $473E
 D0/47AE: F8           SED
 D0/47AF: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C0D7
+Routine_FDC0D7:
 FD/C0D7: 0B           PHD
 FD/C0D8: C2 20        REP #$20
 FD/C0DA: A9 00 21     LDA #$2100

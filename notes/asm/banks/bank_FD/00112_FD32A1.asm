@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 32A1
+Routine_FD32A1:
 FD/32A1: 41 43        EOR ($43,X)
 FD/32A3: 8B           PHB
 FD/32A4: F0 FF        BEQ $32A5

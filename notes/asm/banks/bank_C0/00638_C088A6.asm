@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 88A6
+Routine_C088A6:
 C0/88A6: BD 80 0A     LDA $0A80,X
 C0/88A9: C9 88        CMP #$88
 C0/88AB: 90 06        BCC $88B3

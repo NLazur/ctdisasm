@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7957
+Routine_C27957:
 C2/7957: E2 20        SEP #$20
 C2/7959: A9 F0        LDA #$F0
 C2/795B: 8F 42 8A 7E  STA $7E8A42

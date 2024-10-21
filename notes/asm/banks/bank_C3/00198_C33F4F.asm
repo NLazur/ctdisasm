@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3F4F
+Routine_C33F4F:
 C3/3F4F: 1C 8C 80     TRB $808C
 C3/3F52: 16 6B        ASL $6B,X
 C3/3F54: 0C 33 00     TSB $0033

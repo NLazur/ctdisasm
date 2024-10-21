@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1D88
+Routine_C61D88:
 C6/1D88: 33 0B        AND ($0B,S),Y
 C6/1D8A: 23 1B        AND $1B,S
 C6/1D8C: 02 13        COP $13

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: ECCC
+Routine_C0ECCC:
 C0/ECCC: C2 30        REP #$30        ; main program IRQ
 C0/ECCE: 48           PHA
 C0/ECCF: DA           PHX

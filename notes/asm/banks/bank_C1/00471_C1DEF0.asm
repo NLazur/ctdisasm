@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: DEF0
+Routine_C1DEF0:
 C1/DEF0: AE F6 B1     LDX $B1F6
 C1/DEF3: BD 4D 5E     LDA $5E4D,X
 C1/DEF6: 1D 52 5E     ORA $5E52,X

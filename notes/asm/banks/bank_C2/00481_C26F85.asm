@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6F85
+Routine_C26F85:
 C2/6F85: 7B           TDC
 C2/6F86: BD 02 00     LDA $0002,X
 C2/6F89: 0A           ASL

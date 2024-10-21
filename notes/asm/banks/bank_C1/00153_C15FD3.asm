@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 5FD3
+Routine_C15FD3:
 C1/5FD3: AE B6 A2     LDX $A2B6
 C1/5FD6: 9E D8 A1     STZ $A1D8,X
 C1/5FD9: A9 01        LDA #$01

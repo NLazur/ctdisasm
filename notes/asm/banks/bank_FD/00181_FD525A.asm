@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 525A
+Routine_FD525A:
 FD/525A: 35 2D        AND $2D,X
 FD/525C: 1B           TCS
 FD/525D: 1F 43 C2 1B  ORA $1BC243,X

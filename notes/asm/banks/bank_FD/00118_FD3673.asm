@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3673
+Routine_FD3673:
 FD/3673: 5A           PHY
 FD/3674: 11 08        ORA ($08),Y
 FD/3676: FD AE 34     SBC $34AE,X

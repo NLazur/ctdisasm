@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4690
+Routine_D04690:
 D0/4690: 0D 0D 07     ORA $070D
 D0/4693: 06 FF        ASL $FF
 D0/4695: FF 00 00 10  SBC $100000,X

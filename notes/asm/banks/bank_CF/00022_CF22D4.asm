@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 22D4
+Routine_CF22D4:
 CF/22D4: 80 00        BRA $22D6
 CF/22D6: 80 00        BRA $22D8
 CF/22D8: 80 00        BRA $22DA

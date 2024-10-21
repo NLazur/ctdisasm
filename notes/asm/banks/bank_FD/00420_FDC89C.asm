@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C89C
+Routine_FDC89C:
 FD/C89C: 13 A2        ORA ($A2,S),Y
 FD/C89E: 1C 15 8E     TRB $8E15
 FD/C8A1: 41 13        EOR ($13,X)

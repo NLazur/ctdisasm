@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E012
+Routine_C2E012:
 C2/E012: A5 51        LDA $51
 C2/E014: 4C F3 F2     JMP $F2F3
 C2/E017: 08           PHP

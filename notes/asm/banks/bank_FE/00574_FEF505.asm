@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: F505
+Routine_FEF505:
 FE/F505: 0A           ASL
 FE/F506: 01 93        ORA ($93,X)
 FE/F508: 0F 9F 0F 40  ORA $400F9F

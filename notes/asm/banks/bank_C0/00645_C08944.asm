@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8944
+Routine_C08944:
 C0/8944: AD F8 00     LDA $00F8
 C0/8947: 89 02        BIT #$02
 C0/8949: F0 0C        BEQ $8957

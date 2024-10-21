@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E363
+Routine_C2E363:
 C2/E363: 08           PHP
 C2/E364: E2 20        SEP #$20
 C2/E366: AE 0C 0F     LDX $0F0C

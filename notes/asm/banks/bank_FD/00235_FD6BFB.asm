@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6BFB
+Routine_FD6BFB:
 FD/6BFB: F0 F0        BEQ $6BED
 FD/6BFD: D0 02        BNE $6C01
 FD/6BFF: 00 4A        BRK $4A

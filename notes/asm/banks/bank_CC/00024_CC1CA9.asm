@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1CA9
+Routine_CC1CA9:
 CC/1CA9: 12 00        ORA ($00)
 CC/1CAB: 11 80        ORA ($80),Y
 CC/1CAD: 80 07        BRA $1CB6

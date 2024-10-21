@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0145
+Routine_C60145:
 C6/0145: 02 20        COP $20
 C6/0147: 02 00        COP $00
 C6/0149: 0B           PHD

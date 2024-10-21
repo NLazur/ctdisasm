@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EB49
+Routine_C1EB49:
 C1/EB49: AE F4 B1     LDX $B1F4
 C1/EB4C: BD 66 5E     LDA $5E66,X
 C1/EB4F: 85 16        STA $16

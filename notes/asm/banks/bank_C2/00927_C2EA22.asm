@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EA22
+Routine_C2EA22:
 C2/EA22: EA           NOP
 C2/EA23: 3B           TSC
 C2/EA24: EA           NOP

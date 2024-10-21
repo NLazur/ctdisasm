@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 74E2
+Routine_C374E2:
 C3/74E2: 42 15        WDM $15
 C3/74E4: 02 A0        COP $A0
 C3/74E6: 70 48        BVS $7530

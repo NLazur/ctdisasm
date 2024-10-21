@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 161D
+Routine_C2161D:
 C2/161D: E2 20        SEP #$20
 C2/161F: A6 4E        LDX $4E
 C2/1621: BD 0A 00     LDA $000A,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 516C
+Routine_C6516C:
 C6/516C: 15 BC        ORA $BC,X
 C6/516E: 1E 4F 16     ASL $164F,X
 C6/5171: 4F 00 16 49  EOR $491600

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AA06
+Routine_C2AA06:
 C2/AA06: 10 FF        BPL $AA07
 C2/AA08: FF 30 E0 01  SBC $01E030,X
 C2/AA0C: 30 D0        BMI $A9DE

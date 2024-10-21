@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 134F
+Routine_FF134F:
 FF/134F: 9B           TXY
 FF/1350: 2C 88 B8     BIT $B888
 FF/1353: CD 9A 6C     CMP $6C9A

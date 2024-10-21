@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7D02
+Routine_C67D02:
 C6/7D02: 26 61        ROL $61
 C6/7D04: 03 C7        ORA $C7,S
 C6/7D06: 26 F8        ROL $F8

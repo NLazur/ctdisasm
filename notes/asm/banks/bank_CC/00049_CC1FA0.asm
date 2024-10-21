@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1FA0
+Routine_CC1FA0:
 CC/1FA0: 12 00        ORA ($00)
 CC/1FA2: 17 1F        ORA [$1F],Y
 CC/1FA4: 80 09        BRA $1FAF

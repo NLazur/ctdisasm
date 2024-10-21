@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FE10
+Routine_C2FE10:
 C2/FE10: B2 82        LDA ($82)
 C2/FE12: 10 8D        BPL $FDA1
 C2/FE14: 53 2C        EOR ($2C,S),Y

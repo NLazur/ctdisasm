@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0989
+Routine_D10989:
 D1/0989: C4 80        CPY $80
 D1/098B: 04 C4        TSB $C4
 D1/098D: C0 0D        CPY #$0D

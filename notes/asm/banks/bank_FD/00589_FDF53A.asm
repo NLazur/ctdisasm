@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F53A
+Routine_FDF53A:
 FD/F53A: 80 74        BRA $F5B0
 FD/F53C: 00 75        BRK $75
 FD/F53E: 80 75        BRA $F5B5

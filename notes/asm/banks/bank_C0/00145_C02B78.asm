@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2B78
+Routine_C02B78:
 C0/2B78: 0B           PHD
 C0/2B79: C2 20        REP #$20
 C0/2B7B: A9 00 21     LDA #$2100

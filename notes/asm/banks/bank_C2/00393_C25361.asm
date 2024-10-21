@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5361
+Routine_C25361:
 C2/5361: C2 20        REP #$20
 C2/5363: A6 4E        LDX $4E
 C2/5365: AD 9A 02     LDA $029A

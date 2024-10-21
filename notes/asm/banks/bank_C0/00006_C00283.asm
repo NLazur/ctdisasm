@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0283
+Routine_C00283:
 C0/0283: 20 62 B2     JSR $B262
 C0/0286: 20 05 09     JSR $0905
 C0/0289: AF EC 01 7F  LDA $7F01EC

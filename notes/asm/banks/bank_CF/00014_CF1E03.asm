@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 1E03
+Routine_CF1E03:
 CF/1E03: C0 00 08     CPY #$0800
 CF/1E06: 06 0E        ASL $0E
 CF/1E08: 0E 08 9F     ASL $9F08

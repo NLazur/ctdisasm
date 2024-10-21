@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9AAF
+Routine_C69AAF:
 C6/9AAF: F8           SED
 C6/9AB0: 3C A0 21     BIT $21A0,X
 C6/9AB3: B0 00        BCS $9AB5

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D131
+Routine_C2D131:
 C2/D131: A6 61        LDX $61
 C2/D133: A0 02 00     LDY #$0002
 C2/D136: A9 30        LDA #$30

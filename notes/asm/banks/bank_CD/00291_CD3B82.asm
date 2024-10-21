@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3B82
+Routine_CD3B82:
 CD/3B82: 85 45        STA $45
 CD/3B84: AF 12 42 00  LDA $004212
 CD/3B88: 30 FA        BMI $3B84

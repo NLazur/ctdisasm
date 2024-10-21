@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8AF5
+Routine_C28AF5:
 C2/8AF5: 20 FD 8A     JSR $8AFD
 C2/8AF8: 20 1E 82     JSR $821E
 C2/8AFB: 80 F8        BRA $8AF5

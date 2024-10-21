@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1275
+Routine_CD1275:
 CD/1275: 5A           PHY
 CD/1276: 20 B8 12     JSR $12B8
 CD/1279: 7A           PLY

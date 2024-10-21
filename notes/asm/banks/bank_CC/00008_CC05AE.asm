@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 05AE
+Routine_CC05AE:
 CC/05AE: 0F 00 00 40  ORA $400000
 CC/05B2: 11 00        ORA ($00),Y
 CC/05B4: 00 40        BRK $40

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 320C
+Routine_C2320C:
 C2/320C: AD 9E 02     LDA $029E
 C2/320F: 29 03        AND #$03
 C2/3211: C5 00        CMP $00

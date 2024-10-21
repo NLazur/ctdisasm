@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DB43
+Routine_C3DB43:
 C3/DB43: 00 40        BRK $40
 C3/DB45: 18           CLC
 C3/DB46: 0F 36 00 EF  ORA $EF0036

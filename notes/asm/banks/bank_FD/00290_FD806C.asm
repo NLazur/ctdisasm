@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 806C
+Routine_FD806C:
 FD/806C: FF FF FE FF  SBC $FFFEFF,X
 FD/8070: EC FF 58     CPX $58FF
 FD/8073: 04 DF        TSB $DF

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: FCB9
+Routine_D0FCB9:
 D0/FCB9: 1C 20 14     TRB $1420
 D0/FCBC: 00 10        BRK $10
 D0/FCBE: 00 00        BRK $00

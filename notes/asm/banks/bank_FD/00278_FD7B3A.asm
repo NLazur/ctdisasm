@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7B3A
+Routine_FD7B3A:
 FD/7B3A: 79 18 60     ADC $6018,Y
 FD/7B3D: 6C 60 F8     JMP ($F860)
 FD/7B40: 8A           TXA

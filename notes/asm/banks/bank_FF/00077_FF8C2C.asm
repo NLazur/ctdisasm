@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 8C2C
+Routine_FF8C2C:
 FF/8C2C: 6C 3E 2E     JMP ($2E3E)
 FF/8C2F: 10 00        BPL $8C31
 FF/8C31: 80 8F        BRA $8BC2

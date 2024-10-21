@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 1C69
+Routine_FE1C69:
 FE/1C69: 04 47        TSB $47
 FE/1C6B: 41 4E        EOR ($4E,X)
 FE/1C6D: 30 E1        BMI $1C50

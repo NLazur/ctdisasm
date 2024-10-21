@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 672B
+Routine_FE672B:
 FE/672B: 3C 42 3C     BIT $3C42,X
 FE/672E: D5 34        CMP $34,X
 FE/6730: C3 88        CMP $88,S

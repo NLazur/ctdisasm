@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 611A
+Routine_C0611A:
 C0/611A: BB           TYX
 C0/611B: E8           INX
 C0/611C: 7B           TDC

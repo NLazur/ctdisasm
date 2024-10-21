@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FDA8
+Routine_C3FDA8:
 C3/FDA8: E0 E0        CPX #$E0
 C3/FDAA: C6 40        DEC $40
 C3/FDAC: C0 D0        CPY #$D0

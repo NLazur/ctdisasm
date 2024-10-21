@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: A2DB
+Routine_FFA2DB:
 FF/A2DB: 1F 80 7F 26  ORA $267F80,X
 FF/A2DF: 19 FD 00     ORA $00FD,Y
 FF/A2E2: FE 00 8F     INC $8F00,X

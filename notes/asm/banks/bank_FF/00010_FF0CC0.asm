@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 0CC0
+Routine_FF0CC0:
 FF/0CC0: F9 07 FE     SBC $FE07,Y
 FF/0CC3: 01 FF        ORA ($FF,X)
 FF/0CC5: 00 FF        BRK $FF

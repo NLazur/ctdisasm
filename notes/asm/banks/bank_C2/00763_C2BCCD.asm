@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BCCD
+Routine_C2BCCD:
 C2/BCCD: AE 90 9A     LDX $9A90
 C2/BCD0: BF BB F9 FF  LDA $FFF9BB,X
 C2/BCD4: 85 00        STA $00

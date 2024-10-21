@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 137D
+Routine_D0137D:
 D0/137D: 7B           TDC
 D0/137E: 31 31        AND ($31),Y
 D0/1380: 00 00        BRK $00

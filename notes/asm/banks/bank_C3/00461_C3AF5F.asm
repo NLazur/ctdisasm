@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: AF5F
+Routine_C3AF5F:
 C3/AF5F: 10 40        BPL $AFA1
 C3/AF61: 30 10        BMI $AF73
 C3/AF63: 28           PLP

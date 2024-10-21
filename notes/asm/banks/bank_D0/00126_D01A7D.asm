@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1A7D
+Routine_D01A7D:
 D0/1A7D: E0 80 E0     CPX #$E080
 D0/1A80: C4 FC        CPY $FC
 D0/1A82: E0 F8 68     CPX #$68F8

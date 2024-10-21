@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 38BF
+Routine_C138BF:
 C1/38BF: A6 9C        LDX $9C
 C1/38C1: 9E FD A5     STZ $A5FD,X
 C1/38C4: BD 0F 1D     LDA $1D0F,X

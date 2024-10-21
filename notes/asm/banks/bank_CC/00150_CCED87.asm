@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: ED87
+Routine_CCED87:
 CC/ED87: 7B           TDC
 CC/ED88: AA           TAX
 CC/ED89: A8           TAY

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EDF8
+Routine_CEEDF8:
 CE/EDF8: 8A           TXA
 CE/EDF9: C9 FF        CMP #$FF
 CE/EDFB: D0 16        BNE $EE13

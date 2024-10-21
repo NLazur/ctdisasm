@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6361
+Routine_C06361:
 C0/6361: C8           INY
 C0/6362: BB           TYX
 C0/6363: BF 01 20 7F  LDA $7F2001,X

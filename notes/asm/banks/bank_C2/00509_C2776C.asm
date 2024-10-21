@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 776C
+Routine_C2776C:
 C2/776C: BD 02 00     LDA $0002,X
 C2/776F: D0 09        BNE $777A
 C2/7771: FE 02 00     INC $0002,X

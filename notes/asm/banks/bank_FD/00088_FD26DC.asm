@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 26DC
+Routine_FD26DC:
 FD/26DC: A4 40        LDY $40
 FD/26DE: 72 0C        ADC ($0C)
 FD/26E0: 14 FD        TRB $FD

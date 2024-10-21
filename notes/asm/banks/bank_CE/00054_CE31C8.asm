@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 31C8
+Routine_CE31C8:
 CE/31C8: 00 98        BRK $98
 CE/31CA: F0 80        BEQ $314C
 CE/31CC: 00 DD        BRK $DD

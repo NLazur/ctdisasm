@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0F00
+Routine_C20F00:
 C2/0F00: E2 30        SEP #$30
 C2/0F02: A6 5F        LDX $5F
 C2/0F04: E6 5E        INC $5E

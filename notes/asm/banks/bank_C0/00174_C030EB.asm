@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 30EB
+Routine_C030EB:
 C0/30EB: 90 0B        BCC $30F8
 C0/30ED: E2 20        SEP #$20
 C0/30EF: A9 10        LDA #$10

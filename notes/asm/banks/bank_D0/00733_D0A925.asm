@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: A925
+Routine_D0A925:
 D0/A925: C0 00        CPY #$00
 D0/A927: E0 08        CPX #$08
 D0/A929: 38           SEC

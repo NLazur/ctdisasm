@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A502
+Routine_C6A502:
 C6/A502: 10 DE        BPL $A4E2
 C6/A504: DE 82 83     DEC $8382,X
 C6/A507: 12 60        ORA ($60)

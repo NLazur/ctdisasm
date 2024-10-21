@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3C6E
+Routine_D03C6E:
 D0/3C6E: C0 C0 40     CPY #$40C0
 D0/3C71: C0 80 80     CPY #$8080
 D0/3C74: 80 80        BRA $3BF6

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: E31A
+Routine_C3E31A:
 C3/E31A: 19 40 00     ORA $0040,Y
 C3/E31D: 04 2D        TSB $2D
 C3/E31F: E3 02        SBC $02,S

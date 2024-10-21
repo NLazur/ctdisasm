@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B488
+Routine_C1B488:
 C1/B488: C2 20        REP #$20
 C1/B48A: 0A           ASL
 C1/B48B: AA           TAX

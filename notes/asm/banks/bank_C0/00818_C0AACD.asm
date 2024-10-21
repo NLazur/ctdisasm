@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AACD
+Routine_C0AACD:
 C0/AACD: 3A           DEC
 C0/AACE: 9D 01 1A     STA $1A01,X
 C0/AAD1: C2 20        REP #$20

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 42C0
+Routine_FD42C0:
 FD/42C0: 57 2F        EOR [$2F],Y
 FD/42C2: 57 2F        EOR [$2F],Y
 FD/42C4: 4F 3F 02 10  EOR $10023F

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AA17
+Routine_C0AA17:
 C0/AA17: 3A           DEC
 C0/AA18: 9D 01 1A     STA $1A01,X
 C0/AA1B: BF 00 0B 7F  LDA $7F0B00,X

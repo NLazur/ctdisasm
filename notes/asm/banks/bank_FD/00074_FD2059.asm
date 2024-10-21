@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2059
+Routine_FD2059:
 FD/2059: 3D 0D FF     AND $FF0D,X
 FD/205C: 0B           PHD
 FD/205D: 00 FF        BRK $FF

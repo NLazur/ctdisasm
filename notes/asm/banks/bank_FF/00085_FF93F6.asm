@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 93F6
+Routine_FF93F6:
 FF/93F6: 3A           DEC
 FF/93F7: 7C 3D 66     JMP ($663D,X)
 FF/93FA: 35 66        AND $66,X

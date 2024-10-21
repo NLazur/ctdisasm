@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EE00
+Routine_FEEE00:
 FE/EE00: 00 62        BRK $62
 FE/EE02: 08           PHP
 FE/EE03: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4B7D
+Routine_C64B7D:
 C6/4B7D: E1 0A        SBC ($0A,X)
 C6/4B7F: 22 00 01 20  JSR $200100
 C6/4B83: 8C 90 7C     STY $7C90

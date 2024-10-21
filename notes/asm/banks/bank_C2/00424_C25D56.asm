@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5D56
+Routine_C25D56:
 C2/5D56: E2 20        SEP #$20
 C2/5D58: A0 08 00     LDY #$0008
 C2/5D5B: A5 40        LDA $40

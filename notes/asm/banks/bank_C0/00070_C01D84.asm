@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1D84
+Routine_C01D84:
 C0/1D84: C2 20        REP #$20
 C0/1D86: A6 EB        LDX $EB
 C0/1D88: BD 80 18     LDA $1880,X

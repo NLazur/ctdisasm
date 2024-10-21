@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 9A3D
+Routine_C19A3D:
 C1/9A3D: AD FC B1     LDA $B1FC
 C1/9A40: 29 FD        AND #$FD
 C1/9A42: 8D FC B1     STA $B1FC

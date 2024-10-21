@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EFFE
+Routine_D0EFFE:
 D0/EFFE: 52 6C        EOR ($6C)
 D0/F000: C6 10        DEC $10
 D0/F002: E8           INX

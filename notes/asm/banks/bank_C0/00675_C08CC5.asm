@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8CC5
+Routine_C08CC5:
 C0/8CC5: 82 94 0F     BRL $C09C5C
 C0/8CC8: C2 20        REP #$20
 C0/8CCA: A5 68        LDA $68

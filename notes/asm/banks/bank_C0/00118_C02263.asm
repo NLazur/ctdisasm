@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2263
+Routine_C02263:
 C0/2263: 64 39        STZ $39
 C0/2265: C6 3C        DEC $3C
 C0/2267: 80 AB        BRA $2214

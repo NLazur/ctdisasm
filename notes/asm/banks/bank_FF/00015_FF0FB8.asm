@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 0FB8
+Routine_FF0FB8:
 FF/0FB8: 7F 80 FC 01  ADC $01FC80,X
 FF/0FBC: FD 03 E1     SBC $E103,X
 FF/0FBF: 0E AF 45     ASL $45AF

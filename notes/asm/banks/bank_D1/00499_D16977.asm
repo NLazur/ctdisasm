@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 6977
+Routine_D16977:
 D1/6977: 50 30        BVC $69A9
 D1/6979: FF 00 13 01  SBC $011300,X
 D1/697D: 7F 7F F1 03  ADC $03F17F,X

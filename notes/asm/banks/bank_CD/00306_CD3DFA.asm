@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3DFA
+Routine_CD3DFA:
 CD/3DFA: BF 8E F4 CE  LDA $CEF48E,X
 CD/3DFE: 4A           LSR
 CD/3DFF: 8F 02 42 00  STA $004202

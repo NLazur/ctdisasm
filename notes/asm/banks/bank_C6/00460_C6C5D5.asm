@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C5D5
+Routine_C6C5D5:
 C6/C5D5: 6C 6D 6E     JMP ($6E6D)
 C6/C5D8: 6F 2B 10 01  ADC $01102B
 C6/C5DC: 46 1C        LSR $1C

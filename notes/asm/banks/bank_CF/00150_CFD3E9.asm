@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D3E9
+Routine_CFD3E9:
 CF/D3E9: A1 6B        LDA ($6B,X)
 CF/D3EB: E1 3D        SBC ($3D,X)
 CF/D3ED: B8           CLV

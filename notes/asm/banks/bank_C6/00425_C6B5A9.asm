@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B5A9
+Routine_C6B5A9:
 C6/B5A9: C7 00        CMP [$00]
 C6/B5AB: 62 24 81     PER $C636D2
 C6/B5AE: 05 15        ORA $15

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 0700
+Routine_FD0700:
 FD/0700: 88           DEY
 FD/0701: 0C 40 88     TSB $8840
 FD/0704: 02 67        COP $67

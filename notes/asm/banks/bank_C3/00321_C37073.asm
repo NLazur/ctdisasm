@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 7073
+Routine_C37073:
 C3/7073: 04 38        TSB $38
 C3/7075: E0 E8        CPX #$E8
 C3/7077: 0D EE E1     ORA $E1EE

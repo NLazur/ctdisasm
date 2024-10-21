@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9DC3
+Routine_C09DC3:
 C0/9DC3: 9C AB 01     STZ $01AB
 C0/9DC6: 9C AC 01     STZ $01AC
 C0/9DC9: 9C AD 01     STZ $01AD

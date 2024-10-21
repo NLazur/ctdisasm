@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 41B5
+Routine_C641B5:
 C6/41B5: 16 9A        ASL $9A,X
 C6/41B7: 16 92        ASL $92,X
 C6/41B9: 16 93        ASL $93,X

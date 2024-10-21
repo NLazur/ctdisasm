@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9942
+Routine_FE9942:
 FE/9942: 80 40        BRA $9984
 FE/9944: 80 86        BRA $98CC
 FE/9946: C7 00        CMP [$00]

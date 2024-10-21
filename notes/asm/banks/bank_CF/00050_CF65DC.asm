@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 65DC
+Routine_CF65DC:
 CF/65DC: C0 40 80     CPY #$8040
 CF/65DF: 80 00        BRA $65E1
 CF/65E1: 00 01        BRK $01

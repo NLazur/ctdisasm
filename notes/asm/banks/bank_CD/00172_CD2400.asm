@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2400
+Routine_CD2400:
 CD/2400: A5 23        LDA $23
 CD/2402: 0A           ASL
 CD/2403: 0A           ASL

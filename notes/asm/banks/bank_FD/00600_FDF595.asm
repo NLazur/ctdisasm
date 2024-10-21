@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F595
+Routine_FDF595:
 FD/F595: 73 C0        ADC ($C0,S),Y
 FD/F597: 73 40        ADC ($40,S),Y
 FD/F599: 74 C0        STZ $C0,X

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 9656
+Routine_C19656:
 C1/9656: AE D2 B1     LDX $B1D2
 C1/9659: E8           INX
 C1/965A: 8E D2 B1     STX $B1D2

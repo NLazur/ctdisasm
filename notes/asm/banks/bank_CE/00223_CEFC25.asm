@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: FC25
+Routine_CEFC25:
 CE/FC25: BF 84 A1 C4  LDA $C4A184,X
 CE/FC29: 00 04        BRK $04
 CE/FC2B: 85 BC        STA $BC

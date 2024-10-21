@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6A9D
+Routine_D06A9D:
 D0/6A9D: C0 20        CPY #$20
 D0/6A9F: E0 08 F8     CPX #$F808
 D0/6AA2: F0 FE        BEQ $6AA2

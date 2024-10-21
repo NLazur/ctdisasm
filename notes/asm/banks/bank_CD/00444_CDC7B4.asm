@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C7B4
+Routine_CDC7B4:
 CD/C7B4: 4C 0C 10     JMP $100C
 CD/C7B7: 80 6C        BRA $C825
 CD/C7B9: 24 04        BIT $04

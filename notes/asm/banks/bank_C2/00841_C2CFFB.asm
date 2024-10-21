@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CFFB
+Routine_C2CFFB:
 C2/CFFB: 08           PHP
 C2/CFFC: C2 30        REP #$30
 C2/CFFE: A2 44 D0     LDX #$D044

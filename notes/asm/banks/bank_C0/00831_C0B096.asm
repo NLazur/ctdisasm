@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B096
+Routine_C0B096:
 C0/B096: 64 DC        STZ $DC
 C0/B098: 64 DE        STZ $DE
 C0/B09A: A5 40        LDA $40

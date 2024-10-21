@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BC3C
+Routine_C3BC3C:
 C3/BC3C: 09 9F        ORA #$9F
 C3/BC3E: 07 00        ORA [$00]
 C3/BC40: 7F 38 20 09  ADC $092038,X

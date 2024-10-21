@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 72F3
+Routine_C372F3:
 C3/72F3: 4D 55 53     EOR $5355
 C3/72F6: 49 40        EOR #$40
 C3/72F8: 43 2F        EOR $2F,S

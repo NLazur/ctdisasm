@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AEC4
+Routine_FDAEC4:
 FD/AEC4: AD 57 5E     LDA $5E57
 FD/AEC7: C9 AB        CMP #$AB
 FD/AEC9: D0 08        BNE $AED3

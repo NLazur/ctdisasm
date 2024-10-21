@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 704E
+Routine_C0704E:
 C0/704E: E8           INX
 C0/704F: E8           INX
 C0/7050: E0 18 30     CPX #$3018

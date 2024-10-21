@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8E65
+Routine_C68E65:
 C6/8E65: BB           TYX
 C6/8E66: 23 23        AND $23,S
 C6/8E68: 35 43        AND $43,X

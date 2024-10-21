@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5517
+Routine_C25517:
 C2/5517: A6 4E        LDX $4E
 C2/5519: FE 02 00     INC $0002,X
 C2/551C: 9E 03 00     STZ $0003,X

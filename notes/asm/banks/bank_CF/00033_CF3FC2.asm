@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 3FC2
+Routine_CF3FC2:
 CF/3FC2: E0 E0        CPX #$E0
 CF/3FC4: C0 C0        CPY #$C0
 CF/3FC6: 80 80        BRA $3F48

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F39F
+Routine_CFF39F:
 CF/F39F: 20 BA F3     JSR $F3BA
 CF/F3A2: A5 C6        LDA $C6
 CF/F3A4: C9 03        CMP #$03

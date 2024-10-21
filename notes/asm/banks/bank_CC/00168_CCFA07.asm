@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: FA07
+Routine_CCFA07:
 CC/FA07: 00 20        BRK $20
 CC/FA09: 00 10        BRK $10
 CC/FA0B: 00 08        BRK $08

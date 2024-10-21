@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A194
+Routine_C6A194:
 C6/A194: F8           SED
 C6/A195: FF 8F 24 0C  SBC $0C248F,X
 C6/A199: 1B           TCS

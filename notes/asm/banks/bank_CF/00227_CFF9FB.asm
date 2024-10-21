@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F9FB
+Routine_CFF9FB:
 CF/F9FB: C2 20        REP #$20
 CF/F9FD: 0A           ASL
 CF/F9FE: 0A           ASL

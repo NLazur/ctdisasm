@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 30B6
+Routine_C130B6:
 C1/30B6: A6 94        LDX $94
 C1/30B8: 9E 83 A4     STZ $A483,X
 C1/30BB: 9E 8E A4     STZ $A48E,X

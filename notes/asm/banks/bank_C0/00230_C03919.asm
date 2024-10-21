@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3919
+Routine_C03919:
 C0/3919: BB           TYX
 C0/391A: E8           INX
 C0/391B: 7B           TDC

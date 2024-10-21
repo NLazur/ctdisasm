@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 52FA
+Routine_CF52FA:
 CF/52FA: 5F 60 2F 30  EOR $302F60,X
 CF/52FE: 2F 30 07 07  AND $070730
 CF/5302: 07 07        ORA [$07]

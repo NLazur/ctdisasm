@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EC80
+Routine_FDEC80:
 FD/EC80: DA           PHX
 FD/EC81: AA           TAX
 FD/EC82: F0 0B        BEQ $EC8F

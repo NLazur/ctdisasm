@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 31D0
+Routine_C231D0:
 C2/31D0: 64 00        STZ $00
 C2/31D2: AF 80 29 7E  LDA $7E2980
 C2/31D6: 30 02        BMI $31DA

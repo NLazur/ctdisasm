@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3159
+Routine_C23159:
 C2/3159: AD 9E 02     LDA $029E
 C2/315C: 10 48        BPL $31A6
 C2/315E: AE 00 01     LDX $0100

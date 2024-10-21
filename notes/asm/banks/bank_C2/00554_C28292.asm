@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8292
+Routine_C28292:
 C2/8292: CA           DEX
 C2/8293: 99 29 9C     STA $9C29,Y
 C2/8296: 34 AA        BIT $AA,X

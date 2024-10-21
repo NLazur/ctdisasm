@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3D97
+Routine_C03D97:
 C0/3D97: BB           TYX
 C0/3D98: E8           INX
 C0/3D99: C2 20        REP #$20

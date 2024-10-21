@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2EC1
+Routine_C22EC1:
 C2/2EC1: 28           PLP
 C2/2EC2: 01 52        ORA ($52,X)
 C2/2EC4: 29 01        AND #$01

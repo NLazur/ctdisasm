@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4D18
+Routine_D04D18:
 D0/4D18: 0A           ASL
 D0/4D19: 0B           PHD
 D0/4D1A: 01 05        ORA ($05,X)

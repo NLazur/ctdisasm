@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 505F
+Routine_FD505F:
 FD/505F: 01 F0        ORA ($F0,X)
 FD/5061: E1 68        SBC ($68,X)
 FD/5063: 23 F0        AND $F0,S

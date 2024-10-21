@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: AAE9
+Routine_C3AAE9:
 C3/AAE9: 13 10        ORA ($10,S),Y
 C3/AAEB: 00 76        BRK $76
 C3/AAED: 13 11        ORA ($11,S),Y

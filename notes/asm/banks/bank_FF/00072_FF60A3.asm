@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 60A3
+Routine_FF60A3:
 FF/60A3: 36 EF        ROL $EF,X
 FF/60A5: 36 EF        ROL $EF,X
 FF/60A7: 21 EF        AND ($EF,X)

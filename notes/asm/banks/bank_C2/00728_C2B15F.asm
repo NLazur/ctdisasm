@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B15F
+Routine_C2B15F:
 C2/B15F: A9 41        LDA #$41
 C2/B161: 8D BD 0D     STA $0DBD
 C2/B164: A9 03        LDA #$03

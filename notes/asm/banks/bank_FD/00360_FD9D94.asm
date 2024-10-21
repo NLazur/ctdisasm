@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9D94
+Routine_FD9D94:
 FD/9D94: DA           PHX
 FD/9D95: E3 01        SBC $01,S
 FD/9D97: 56 00        LSR $00,X

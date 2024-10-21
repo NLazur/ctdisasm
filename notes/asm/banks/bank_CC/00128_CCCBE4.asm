@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: CBE4
+Routine_CCCBE4:
 CC/CBE4: CE 74 CE     DEC $CE74
 CC/CBE7: 88           DEY
 CC/CBE8: CE 97 CE     DEC $CE97

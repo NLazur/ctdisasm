@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D459
+Routine_CFD459:
 CF/D459: E1 6B        SBC ($6B,X)
 CF/D45B: A1 6B        LDA ($6B,X)
 CF/D45D: A1 6B        LDA ($6B,X)

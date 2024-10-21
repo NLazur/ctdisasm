@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1A70
+Routine_C21A70:
 C2/1A70: 76 1A        ROR $1A,X
 C2/1A72: 8A           TXA
 C2/1A73: 1A           INC

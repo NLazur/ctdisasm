@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 99EA
+Routine_CD99EA:
 CD/99EA: 00 73        BRK $73
 CD/99EC: 00 24        BRK $24
 CD/99EE: 01 1B        ORA ($1B,X)

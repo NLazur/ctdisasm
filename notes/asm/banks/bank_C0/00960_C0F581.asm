@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F581
+Routine_C0F581:
 C0/F581: 3E 3C 3A     ROL $3A3C,X
 C0/F584: 37 35        AND [$35],Y
 C0/F586: 34 32        BIT $32,X

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FC05
+Routine_C3FC05:
 C3/FC05: 01 F8        ORA ($F8,X)
 C3/FC07: DB           STP
 C3/FC08: AE 40 04     LDX $0440

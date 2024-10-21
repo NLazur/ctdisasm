@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2C1D
+Routine_C22C1D:
 C2/2C1D: 9C 7C 02     STZ $027C
 C2/2C20: 9C 7D 02     STZ $027D
 C2/2C23: 64 47        STZ $47

@@ -1,3 +1,5 @@
+; Bank: C7 | Start Address: 0038
+Routine_C70038:
 C7/0038: 8B           PHB             ; init SPC
 C7/0039: 0B           PHD
 C7/003A: 08           PHP

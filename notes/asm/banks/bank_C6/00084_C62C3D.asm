@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 2C3D
+Routine_C62C3D:
 C6/2C3D: 00 01        BRK $01
 C6/2C3F: 1E 18 1F     ASL $1F18,X
 C6/2C42: 18           CLC

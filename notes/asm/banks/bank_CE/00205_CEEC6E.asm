@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EC6E
+Routine_CEEC6E:
 CE/EC6E: 7B           TDC
 CE/EC6F: AA           TAX
 CE/EC70: A0 7C 03     LDY #$037C

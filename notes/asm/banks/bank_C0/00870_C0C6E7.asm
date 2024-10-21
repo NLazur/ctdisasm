@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: C6E7
+Routine_C0C6E7:
 C0/C6E7: BD C2 4B     LDA $4BC2,X
 C0/C6EA: 18           CLC
 C0/C6EB: 65 C3        ADC $C3

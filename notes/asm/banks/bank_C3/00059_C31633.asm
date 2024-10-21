@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1633
+Routine_C31633:
 C3/1633: 4C A7 39     JMP $39A7
 C3/1636: 1B           TCS
 C3/1637: 30 0B        BMI $1644

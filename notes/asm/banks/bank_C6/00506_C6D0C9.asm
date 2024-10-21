@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D0C9
+Routine_C6D0C9:
 C6/D0C9: 39 F2 4A     AND $4AF2,Y
 C6/D0CC: A4 68        LDY $68
 C6/D0CE: FD DA 3A     SBC $3ADA,X

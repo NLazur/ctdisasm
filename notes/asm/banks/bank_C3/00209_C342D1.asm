@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 42D1
+Routine_C342D1:
 C3/42D1: 01 8D        ORA ($8D,X)
 C3/42D3: 0E 60 64     ASL $6460
 C3/42D6: 11 A2        ORA ($A2),Y

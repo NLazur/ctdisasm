@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C548
+Routine_C2C548:
 C2/C548: C0 3D 00     CPY #$003D
 C2/C54B: 88           DEY
 C2/C54C: 7E 80 02     ROR $0280,X

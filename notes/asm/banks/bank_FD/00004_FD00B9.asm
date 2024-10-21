@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 00B9
+Routine_FD00B9:
 FD/00B9: 9C 62 8C     STZ $8C62
 FD/00BC: 52 84        EOR ($84)
 FD/00BE: 4A           LSR

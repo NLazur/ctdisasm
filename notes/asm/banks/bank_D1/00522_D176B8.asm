@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 76B8
+Routine_D176B8:
 D1/76B8: 80 70        BRA $772A
 D1/76BA: 00 8A        BRK $8A
 D1/76BC: 41 80        EOR ($80,X)

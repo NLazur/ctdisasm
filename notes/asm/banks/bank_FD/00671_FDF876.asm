@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F876
+Routine_FDF876:
 FD/F876: 70 C0        BVS $F838
 FD/F878: 70 40        BVS $F8BA
 FD/F87A: 71 80        ADC ($80),Y

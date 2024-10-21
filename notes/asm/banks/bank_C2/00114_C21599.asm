@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1599
+Routine_C21599:
 C2/1599: E2 20        SEP #$20
 C2/159B: A2 05 21     LDX #$2105
 C2/159E: 20 8A 04     JSR $048A

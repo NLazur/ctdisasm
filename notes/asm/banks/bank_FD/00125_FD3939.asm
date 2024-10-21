@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3939
+Routine_FD3939:
 FD/3939: E1 E8        SBC ($E8,X)
 FD/393B: 07 A0        ORA [$A0]
 FD/393D: FE 00 3B     INC $3B00,X

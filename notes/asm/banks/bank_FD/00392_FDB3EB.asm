@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B3EB
+Routine_FDB3EB:
 FD/B3EB: BD 56 5E     LDA $5E56,X
 FD/B3EE: C9 3D        CMP #$3D
 FD/B3F0: F0 04        BEQ $B3F6

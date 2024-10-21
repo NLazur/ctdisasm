@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 764A
+Routine_C1764A:
 C1/764A: 98           TYA
 C1/764B: 38           SEC
 C1/764C: E9 09        SBC #$09

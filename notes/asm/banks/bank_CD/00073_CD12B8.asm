@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 12B8
+Routine_CD12B8:
 CD/12B8: A7 53        LDA [$53]
 CD/12BA: 29 FF 1F     AND #$1FFF
 CD/12BD: 0A           ASL

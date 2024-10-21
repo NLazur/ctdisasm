@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0D3E
+Routine_D10D3E:
 D1/0D3E: 20 C8 40     JSR $40C8
 D1/0D41: CE 40 CC     DEC $CC40
 D1/0D44: 16 00        ASL $00,X

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3710
+Routine_D03710:
 D0/3710: A0 E0        LDY #$E0
 D0/3712: A1 E1        LDA ($E1,X)
 D0/3714: C1 A1        CMP ($A1,X)

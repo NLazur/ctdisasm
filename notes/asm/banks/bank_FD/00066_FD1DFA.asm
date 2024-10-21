@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1DFA
+Routine_FD1DFA:
 FD/1DFA: E3 E3        SBC $E3,S
 FD/1DFC: 1B           TCS
 FD/1DFD: 1B           TCS

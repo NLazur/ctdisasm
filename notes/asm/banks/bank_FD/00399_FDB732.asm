@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B732
+Routine_FDB732:
 FD/B732: 7B           TDC
 FD/B733: AA           TAX
 FD/B734: 86 16        STX $16

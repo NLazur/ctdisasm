@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 29F2
+Routine_CC29F2:
 CC/29F2: 02 02        COP $02
 CC/29F4: 0F 20 06 04  ORA $040620
 CC/29F8: 04 02        TSB $02

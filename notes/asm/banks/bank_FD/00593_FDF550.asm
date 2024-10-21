@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F550
+Routine_FDF550:
 FD/F550: 77 80        ADC [$80],Y
 FD/F552: 80 80        BRA $F4D4
 FD/F554: 80 80        BRA $F4D6

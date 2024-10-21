@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DCDA
+Routine_C2DCDA:
 C2/DCDA: 08           PHP
 C2/DCDB: E2 30        SEP #$30
 C2/DCDD: A0 FF        LDY #$FF

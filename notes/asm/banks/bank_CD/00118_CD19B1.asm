@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 19B1
+Routine_CD19B1:
 CD/19B1: A0 01 00     LDY #$0001
 CD/19B4: B7 40        LDA [$40],Y
 CD/19B6: 0A           ASL

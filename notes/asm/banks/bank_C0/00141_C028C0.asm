@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 28C0
+Routine_C028C0:
 C0/28C0: C2 20        REP #$20
 C0/28C2: A2 00 00     LDX #$0000
 C0/28C5: BF C8 1C 7F  LDA $7F1CC8,X

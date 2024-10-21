@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8C3C
+Routine_C68C3C:
 C6/8C3C: F8           SED
 C6/8C3D: 01 F8        ORA ($F8,X)
 C6/8C3F: 1C 18 05     TRB $0518

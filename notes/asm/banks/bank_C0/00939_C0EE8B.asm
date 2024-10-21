@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: EE8B
+Routine_C0EE8B:
 C0/EE8B: A9 80        LDA #$80
 C0/EE8D: 8D 15 21     STA $2115
 C0/EE90: C2 20        REP #$20

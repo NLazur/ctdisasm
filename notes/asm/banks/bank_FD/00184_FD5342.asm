@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5342
+Routine_FD5342:
 FD/5342: B6 80        LDX $80,Y
 FD/5344: 9C 1F 78     STZ $781F
 FD/5347: 1C C0 8A     TRB $8AC0

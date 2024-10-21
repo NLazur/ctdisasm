@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8273
+Routine_C68273:
 C6/8273: 02 0C        COP $0C
 C6/8275: 38           SEC
 C6/8276: 21 0B        AND ($0B,X)

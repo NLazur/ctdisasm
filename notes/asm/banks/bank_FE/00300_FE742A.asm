@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 742A
+Routine_FE742A:
 FE/742A: A0 60 04     LDY #$0460
 FE/742D: E0 20 02     CPX #$0220
 FE/7430: 18           CLC

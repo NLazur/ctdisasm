@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F354
+Routine_CFF354:
 CF/F354: A4 C6        LDY $C6
 CF/F356: B9 9D A1     LDA $A19D,Y
 CF/F359: D0 43        BNE $F39E

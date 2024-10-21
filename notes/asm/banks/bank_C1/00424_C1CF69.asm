@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CF69
+Routine_C1CF69:
 C1/CF69: 7B           TDC
 C1/CF6A: A6 08        LDX $08
 C1/CF6C: BF 05 00 CC  LDA $CC0005,X

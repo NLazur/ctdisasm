@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DE10
+Routine_C3DE10:
 C3/DE10: C8           INY
 C3/DE11: 5F 4B 7B 42  EOR $427B4B,X
 C3/DE15: 2D 60 C8     AND $C860

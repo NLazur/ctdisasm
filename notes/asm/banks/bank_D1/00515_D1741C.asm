@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 741C
+Routine_D1741C:
 D1/741C: 8F 60 01 04  STA $040160
 D1/7420: 7F 8F 60 02  ADC $02608F,X
 D1/7424: 04 7F        TSB $7F

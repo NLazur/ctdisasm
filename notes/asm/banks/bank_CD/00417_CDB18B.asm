@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: B18B
+Routine_CDB18B:
 CD/B18B: 06 05        ASL $05
 CD/B18D: 69 00        ADC #$00
 CD/B18F: 20 02 6A     JSR $6A02

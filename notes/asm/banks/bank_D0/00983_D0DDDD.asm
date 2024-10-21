@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: DDDD
+Routine_D0DDDD:
 D0/DDDD: C0 80        CPY #$80
 D0/DDDF: 80 1F        BRA $DE00
 D0/DDE1: A0 1F        LDY #$1F

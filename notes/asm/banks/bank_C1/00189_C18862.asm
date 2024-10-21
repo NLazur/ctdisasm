@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8862
+Routine_C18862:
 C1/8862: 7B           TDC
 C1/8863: A8           TAY
 C1/8864: AD 8B B1     LDA $B18B

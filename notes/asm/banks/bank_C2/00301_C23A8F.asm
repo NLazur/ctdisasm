@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3A8F
+Routine_C23A8F:
 C2/3A8F: A6 4E        LDX $4E
 C2/3A91: BD 2A 00     LDA $002A,X
 C2/3A94: 10 06        BPL $3A9C

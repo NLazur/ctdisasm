@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 23EF
+Routine_CD23EF:
 CD/23EF: A5 23        LDA $23
 CD/23F1: 0A           ASL
 CD/23F2: 0A           ASL

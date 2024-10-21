@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F406
+Routine_CDF406:
 CD/F406: 00 41        BRK $41
 CD/F408: 01 42        ORA ($42,X)
 CD/F40A: 02 43        COP $43

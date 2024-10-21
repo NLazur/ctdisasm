@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: B61B
+Routine_CFB61B:
 CF/B61B: E7 76        SBC [$76]
 CF/B61D: 2B           PLD
 CF/B61E: 78           SEI

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4978
+Routine_C34978:
 C3/4978: 2F A9 40 D5  AND $D540A9
 C3/497C: 08           PHP
 C3/497D: 46 42        LSR $42

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0D4A
+Routine_FE0D4A:
 FE/0D4A: 15 0B        ORA $0B,X
 FE/0D4C: 44 FB 00     MVP $FB,$00
 FE/0D4F: 5C 18 01 03  JMP $030118

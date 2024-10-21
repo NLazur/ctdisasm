@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6D04
+Routine_C36D04:
 C3/6D04: C4 33        CPY $33
 C3/6D06: 10 50        BPL $6D58
 C3/6D08: 00 C6        BRK $C6

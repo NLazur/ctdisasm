@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 49F8
+Routine_C049F8:
 C0/49F8: A6 6D        LDX $6D
 C0/49FA: BD 81 0F     LDA $0F81,X
 C0/49FD: 0A           ASL

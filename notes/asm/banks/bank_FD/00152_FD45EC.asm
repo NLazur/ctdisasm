@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 45EC
+Routine_FD45EC:
 FD/45EC: 39 0F 3F     AND $3F0F,Y
 FD/45EF: 2F 1F 2E 02  AND $022E1F
 FD/45F3: 00 26        BRK $26

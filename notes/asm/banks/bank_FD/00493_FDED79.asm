@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: ED79
+Routine_FDED79:
 FD/ED79: 80 40        BRA $EDBB
 FD/ED7B: 20 10 08     JSR $0810
 FD/ED7E: 04 02        TSB $02

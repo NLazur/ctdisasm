@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EC42
+Routine_CFEC42:
 CF/EC42: BD 62 00     LDA $0062,X
 CF/EC45: 99 62 00     STA $0062,Y
 CF/EC48: BD 66 00     LDA $0066,X

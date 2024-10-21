@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3EDD
+Routine_C33EDD:
 C3/3EDD: 62 64 66     PER $C3A544
 C3/3EE0: 68           PLA
 C3/3EE1: 6A           ROR

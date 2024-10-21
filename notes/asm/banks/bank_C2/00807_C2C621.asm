@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C621
+Routine_C2C621:
 C2/C621: 27 C6        AND [$C6]
 C2/C623: 5D C6 B9     EOR $B9C6,X
 C2/C626: C6 E2        DEC $E2

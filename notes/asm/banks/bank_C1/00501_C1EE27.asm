@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EE27
+Routine_C1EE27:
 C1/EE27: 22 02 80 C2  JSR $C28002
 C1/EE2B: AD 01 04     LDA $0401
 C1/EE2E: AA           TAX

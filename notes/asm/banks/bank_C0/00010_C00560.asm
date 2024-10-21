@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0560
+Routine_C00560:
 C0/0560: 4A           LSR
 C0/0561: 4A           LSR
 C0/0562: 4A           LSR

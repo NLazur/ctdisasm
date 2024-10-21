@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 036B
+Routine_D0036B:
 D0/036B: E0 B0 70     CPX #$70B0
 D0/036E: E6 1E        INC $1E
 D0/0370: 03 02        ORA $02,S

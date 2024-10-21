@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8035
+Routine_D08035:
 D0/8035: C0 E8 18     CPY #$18E8
 D0/8038: 01 01        ORA ($01,X)
 D0/803A: 01 01        ORA ($01,X)

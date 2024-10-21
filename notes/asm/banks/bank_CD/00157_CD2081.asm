@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2081
+Routine_CD2081:
 CD/2081: C2 20        REP #$20
 CD/2083: 99 5D C1     STA $C15D,Y
 CD/2086: 99 61 C1     STA $C161,Y

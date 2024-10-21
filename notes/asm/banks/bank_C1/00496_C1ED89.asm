@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: ED89
+Routine_C1ED89:
 C1/ED89: AE F4 B1     LDX $B1F4
 C1/ED8C: BD 72 5E     LDA $5E72,X
 C1/ED8F: 85 1C        STA $1C

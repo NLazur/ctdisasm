@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E45D
+Routine_D0E45D:
 D0/E45D: F0 24        BEQ $E483
 D0/E45F: 08           PHP
 D0/E460: 07 2C        ORA [$2C]

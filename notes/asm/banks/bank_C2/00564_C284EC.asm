@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 84EC
+Routine_C284EC:
 C2/84EC: F4 00 00     PEA $0000
 C2/84EF: 2B           PLD
 C2/84F0: F4 00 00     PEA $0000

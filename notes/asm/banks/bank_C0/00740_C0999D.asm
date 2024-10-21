@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 999D
+Routine_C0999D:
 C0/999D: E2 20        SEP #$20
 C0/999F: 80 97        BRA $9938
 C0/99A1: 8E EB 01     STX $01EB

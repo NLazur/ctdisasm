@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1B53
+Routine_C01B53:
 C0/1B53: AF ED 01 7F  LDA $7F01ED
 C0/1B57: F0 06        BEQ $1B5F
 C0/1B59: AF AE 29 7E  LDA $7E29AE

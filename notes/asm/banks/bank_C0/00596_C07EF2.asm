@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7EF2
+Routine_C07EF2:
 C0/7EF2: 4A           LSR
 C0/7EF3: 25 23        AND $23
 C0/7EF5: 85 54        STA $54

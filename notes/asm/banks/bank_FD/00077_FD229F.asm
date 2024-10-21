@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 229F
+Routine_FD229F:
 FD/229F: 3C 64 1D     BIT $1D64,X
 FD/22A2: BF BC 13 DC  LDA $DC13BC,X
 FD/22A6: 05 62        ORA $62

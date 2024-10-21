@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 352C
+Routine_D1352C:
 D1/352C: 0C 41 0A     TSB $0A41
 D1/352F: 41 00        EOR ($00,X)
 D1/3531: 08           PHP

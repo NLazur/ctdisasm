@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: E66F
+Routine_C3E66F:
 C3/E66F: E6 00        INC $00
 C3/E671: 04 89        TSB $89
 C3/E673: E6 08        INC $08

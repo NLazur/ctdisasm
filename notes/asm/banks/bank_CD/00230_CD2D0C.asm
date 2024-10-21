@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2D0C
+Routine_CD2D0C:
 CD/2D0C: AD EE CA     LDA $CAEE
 CD/2D0F: 18           CLC
 CD/2D10: 69 02        ADC #$02

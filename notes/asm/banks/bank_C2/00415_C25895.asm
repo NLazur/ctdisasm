@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5895
+Routine_C25895:
 C2/5895: 80 19        BRA $58B0
 C2/5897: A9 08        LDA #$08
 C2/5899: 80 02        BRA $589D

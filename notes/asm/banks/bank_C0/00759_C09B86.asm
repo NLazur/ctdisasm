@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9B86
+Routine_C09B86:
 C0/9B86: F0 1A        BEQ $9BA2
 C0/9B88: C9 17        CMP #$17
 C0/9B8A: F0 1D        BEQ $9BA9

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6467
+Routine_C06467:
 C0/6467: 87 64        STA [$64]
 C0/6469: 8F 64 97 64  STA $649764
 C0/646D: A1 64        LDA ($64,X)

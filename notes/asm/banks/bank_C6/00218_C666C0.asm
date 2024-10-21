@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 66C0
+Routine_C666C0:
 C6/66C0: 64 38        STZ $38
 C6/66C2: 25 50        AND $50
 C6/66C4: 64 00        STZ $00

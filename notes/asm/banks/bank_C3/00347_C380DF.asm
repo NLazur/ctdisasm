@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 80DF
+Routine_C380DF:
 C3/80DF: BB           TYX
 C3/80E0: 04 1D        TSB $1D
 C3/80E2: 0A           ASL

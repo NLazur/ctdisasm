@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8D0E
+Routine_C08D0E:
 C0/8D0E: 82 4B 0F     BRL $C09C5C
 C0/8D11: 64 31        STZ $31
 C0/8D13: 64 2F        STZ $2F

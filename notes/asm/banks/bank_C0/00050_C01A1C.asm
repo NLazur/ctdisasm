@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1A1C
+Routine_C01A1C:
 C0/1A1C: 64 6E        STZ $6E
 C0/1A1E: A5 8D        LDA $8D
 C0/1A20: 30 05        BMI $1A27

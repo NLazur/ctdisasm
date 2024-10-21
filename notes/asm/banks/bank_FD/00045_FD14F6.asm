@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 14F6
+Routine_FD14F6:
 FD/14F6: 8C 00 40     STY $4000
 FD/14F9: 9E 80 3F     STZ $3F80,X
 FD/14FC: 80 3F        BRA $153D

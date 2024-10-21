@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 12AD
+Routine_D012AD:
 D0/12AD: 70 10        BVS $12BF
 D0/12AF: 18           CLC
 D0/12B0: 00 00        BRK $00

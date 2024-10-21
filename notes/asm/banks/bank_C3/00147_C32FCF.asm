@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2FCF
+Routine_C32FCF:
 C3/2FCF: 85 F0        STA $F0
 C3/2FD1: A0 00        LDY #$00
 C3/2FD3: 0C A2 3F     TSB $3FA2

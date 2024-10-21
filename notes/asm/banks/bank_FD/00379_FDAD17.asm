@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AD17
+Routine_FDAD17:
 FD/AD17: 9C 0F B3     STZ $B30F
 FD/AD1A: AD AF B2     LDA $B2AF
 FD/AD1D: 89 80        BIT #$80

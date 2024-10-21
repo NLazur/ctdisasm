@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 427A
+Routine_FD427A:
 FD/427A: 18           CLC
 FD/427B: 3E 60 B5     ROL $B560,X
 FD/427E: E9 FC        SBC #$FC

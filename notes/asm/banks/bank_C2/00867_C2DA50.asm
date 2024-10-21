@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DA50
+Routine_C2DA50:
 C2/DA50: A9 01        LDA #$01
 C2/DA52: 85 00        STA $00
 C2/DA54: AD CB 04     LDA $04CB

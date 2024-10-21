@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0617
+Routine_C00617:
 C0/0617: AD 0A 1D     LDA $1D0A
 C0/061A: 4A           LSR
 C0/061B: 85 DB        STA $DB

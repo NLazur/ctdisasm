@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D6AF
+Routine_C6D6AF:
 C6/D6AF: 70 BA        BVS $D66B
 C6/D6B1: 08           PHP
 C6/D6B2: A6 08        LDX $08

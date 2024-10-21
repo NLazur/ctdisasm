@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EC5F
+Routine_CFEC5F:
 CF/EC5F: BD 72 00     LDA $0072,X
 CF/EC62: 99 72 00     STA $0072,Y
 CF/EC65: BD 76 00     LDA $0076,X

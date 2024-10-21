@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E6F6
+Routine_FFE6F6:
 FF/E6F6: 11 60        ORA ($60),Y
 FF/E6F8: 10 6C        BPL $E766
 FF/E6FA: 05 72        ORA $72

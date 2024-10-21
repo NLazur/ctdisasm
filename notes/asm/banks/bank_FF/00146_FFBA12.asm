@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: BA12
+Routine_FFBA12:
 FF/BA12: FF FF 30 FF  SBC $FF30FF,X
 FF/BA16: 00 01        BRK $01
 FF/BA18: FF FF 00 07  SBC $0700FF,X

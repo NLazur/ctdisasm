@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9F0C
+Routine_C39F0C:
 C3/9F0C: 02 05        COP $05
 C3/9F0E: 3F 00 07 07  AND $070700,X
 C3/9F12: DA           PHX

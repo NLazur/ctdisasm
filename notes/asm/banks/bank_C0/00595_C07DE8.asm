@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7DE8
+Routine_C07DE8:
 C0/7DE8: 4A           LSR
 C0/7DE9: 25 23        AND $23
 C0/7DEB: 85 54        STA $54

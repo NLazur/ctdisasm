@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 5575
+Routine_CD5575:
 CD/5575: 44 40 34     MVP $40,$34
 CD/5578: 34 FF        BIT $FF,X
 CD/557A: 0C C4 00     TSB $00C4

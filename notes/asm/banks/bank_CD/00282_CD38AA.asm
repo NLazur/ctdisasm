@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 38AA
+Routine_CD38AA:
 CD/38AA: 61 C1        ADC ($C1,X)
 CD/38AC: 63 C1        ADC $C1,S
 CD/38AE: E1 C4        SBC ($C4,X)

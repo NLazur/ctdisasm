@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 670D
+Routine_FE670D:
 FE/670D: 27 43        AND [$43]
 FE/670F: 07 02        ORA [$02]
 FE/6711: 50 80        BVC $6693

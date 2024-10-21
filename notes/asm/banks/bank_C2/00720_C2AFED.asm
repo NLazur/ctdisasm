@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AFED
+Routine_C2AFED:
 C2/AFED: 08           PHP
 C2/AFEE: C2 30        REP #$30
 C2/AFF0: A2 80 35     LDX #$3580

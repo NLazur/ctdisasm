@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EEE1
+Routine_C2EEE1:
 C2/EEE1: C6 8C        DEC $8C
 C2/EEE3: F0 0E        BEQ $EEF3
 C2/EEE5: 06 8A        ASL $8A

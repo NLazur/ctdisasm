@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6103
+Routine_C66103:
 C6/6103: 1B           TCS
 C6/6104: 61 1B        ADC ($1B,X)
 C6/6106: 5A           PHY

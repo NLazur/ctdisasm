@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8BB9
+Routine_C18BB9:
 C1/8BB9: 7B           TDC
 C1/8BBA: A2 0A 00     LDX #$000A
 C1/8BBD: BD 79 B1     LDA $B179,X

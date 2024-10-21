@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 38C5
+Routine_C238C5:
 C2/38C5: C2 20        REP #$20
 C2/38C7: A6 4E        LDX $4E
 C2/38C9: 20 38 0F     JSR $0F38

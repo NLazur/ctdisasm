@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9D32
+Routine_FD9D32:
 FD/9D32: 02 C0        COP $C0
 FD/9D34: 6C 03 82     JMP ($8203)
 FD/9D37: 04 03        TSB $03

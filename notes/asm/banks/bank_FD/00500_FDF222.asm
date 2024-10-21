@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F222
+Routine_FDF222:
 FD/F222: 9C 02 21     STZ $2102
 FD/F225: 9C 0B 42     STZ $420B
 FD/F228: A9 40        LDA #$40

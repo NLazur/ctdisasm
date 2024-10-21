@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 15D5
+Routine_CD15D5:
 CD/15D5: 5A           PHY
 CD/15D6: DA           PHX
 CD/15D7: DA           PHX

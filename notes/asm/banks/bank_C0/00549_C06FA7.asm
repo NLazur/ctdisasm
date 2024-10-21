@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6FA7
+Routine_C06FA7:
 C0/6FA7: B9 6F B9     LDA $B96F,Y
 C0/6FAA: 6F B9 6F BA  ADC $BA6FB9
 C0/6FAE: 6F BA 6F B9  ADC $B96FBA

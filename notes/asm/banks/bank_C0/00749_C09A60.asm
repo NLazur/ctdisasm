@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9A60
+Routine_C09A60:
 C0/9A60: 85 52        STA $52
 C0/9A62: A5 0C        LDA $0C
 C0/9A64: 4A           LSR

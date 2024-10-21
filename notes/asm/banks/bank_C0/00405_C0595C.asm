@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 595C
+Routine_C0595C:
 C0/595C: C2 20        REP #$20        ; execute map startup event
 C0/595E: 64 6D        STZ $6D
 C0/5960: AF 03 20 7F  LDA $7F2003

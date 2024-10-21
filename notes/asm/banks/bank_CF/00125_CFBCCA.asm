@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: BCCA
+Routine_CFBCCA:
 CF/BCCA: 2D 26 35     AND $3526
 CF/BCCD: 26 37        ROL $37
 CF/BCCF: 26 39        ROL $39

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: B394
+Routine_CDB394:
 CD/B394: 00 73        BRK $73
 CD/B396: 00 1B        BRK $1B
 CD/B398: 00 24        BRK $24

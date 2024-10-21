@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C3B5
+Routine_C2C3B5:
 C2/C3B5: 08           PHP
 C2/C3B6: E2 20        SEP #$20
 C2/C3B8: AD 17 04     LDA $0417

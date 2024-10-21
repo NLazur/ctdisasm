@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D142
+Routine_D0D142:
 D0/D142: 70 78        BVS $D1BC
 D0/D144: 0C 06 03     TSB $0306
 D0/D147: 01 0B        ORA ($0B,X)

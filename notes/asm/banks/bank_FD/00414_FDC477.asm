@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C477
+Routine_FDC477:
 FD/C477: AD 51 03     LDA $0351
 FD/C47A: 4A           LSR
 FD/C47B: 90 1C        BCC $C499

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 64E7
+Routine_C064E7:
 C0/64E7: C2 20        REP #$20
 C0/64E9: A5 D9        LDA $D9
 C0/64EB: C5 DB        CMP $DB

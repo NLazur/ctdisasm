@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F9CA
+Routine_C3F9CA:
 C3/F9CA: 8A           TXA
 C3/F9CB: 00 08        BRK $08
 C3/F9CD: 50 8C        BVC $F95B

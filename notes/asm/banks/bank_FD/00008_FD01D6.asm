@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 01D6
+Routine_FD01D6:
 FD/01D6: 28           PLP
 FD/01D7: C0 08 74     CPY #$7408
 FD/01DA: 10 C0        BPL $019C

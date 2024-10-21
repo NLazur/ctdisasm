@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A774
+Routine_C6A774:
 C6/A774: 00 7C        BRK $7C
 C6/A776: 19 C2 08     ORA $08C2,Y
 C6/A779: 6A           ROR

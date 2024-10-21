@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F494
+Routine_FDF494:
 FD/F494: 77 C0        ADC [$C0],Y
 FD/F496: 77 20        ADC [$20],Y
 FD/F498: 78           SEI

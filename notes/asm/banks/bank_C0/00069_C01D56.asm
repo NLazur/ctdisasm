@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1D56
+Routine_C01D56:
 C0/1D56: 5E 1D 84     LSR $841D,X
 C0/1D59: 1D AB 1D     ORA $1DAB,X
 C0/1D5C: D1 1D        CMP ($1D),Y

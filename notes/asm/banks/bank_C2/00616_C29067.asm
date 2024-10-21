@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9067
+Routine_C29067:
 C2/9067: 85 04        STA $04
 C2/9069: 64 05        STZ $05
 C2/906B: C2 20        REP #$20

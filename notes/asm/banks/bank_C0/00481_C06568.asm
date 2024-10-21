@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6568
+Routine_C06568:
 C0/6568: A6 6D        LDX $6D
 C0/656A: BF 80 0A 7F  LDA $7F0A80,X
 C0/656E: C8           INY

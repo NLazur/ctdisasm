@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: E83A
+Routine_CFE83A:
 CF/E83A: A2 00 1D     LDX #$1D00
 CF/E83D: DA           PHX
 CF/E83E: 2B           PLD

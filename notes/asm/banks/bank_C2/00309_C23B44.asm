@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3B44
+Routine_C23B44:
 C2/3B44: AD 80 02     LDA $0280
 C2/3B47: 0A           ASL
 C2/3B48: 0A           ASL

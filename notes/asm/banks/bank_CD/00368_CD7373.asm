@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 7373
+Routine_CD7373:
 CD/7373: 00 73        BRK $73
 CD/7375: 03 1B        ORA $1B,S
 CD/7377: 00 02        BRK $02

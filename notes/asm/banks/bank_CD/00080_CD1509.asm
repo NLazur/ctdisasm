@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1509
+Routine_CD1509:
 CD/1509: A7 53        LDA [$53]
 CD/150B: 85 65        STA $65
 CD/150D: 29 FF 1F     AND #$1FFF

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 019D
+Routine_FD019D:
 FD/019D: 3C 00 34     BIT $3400,X
 FD/01A0: 00 06        BRK $06
 FD/01A2: 08           PHP

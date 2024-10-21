@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5F57
+Routine_C35F57:
 C3/5F57: F1 6B        SBC ($6B),Y
 C3/5F59: 00 08        BRK $08
 C3/5F5B: F2 64        SBC ($64)

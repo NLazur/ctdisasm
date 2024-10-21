@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3253
+Routine_FD3253:
 FD/3253: 38           SEC
 FD/3254: 19 D0 18     ORA $18D0,Y
 FD/3257: 80 00        BRA $3259

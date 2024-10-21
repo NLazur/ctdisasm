@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3466
+Routine_FD3466:
 FD/3466: 80 9D        BRA $3405
 FD/3468: E1 05        SBC ($05,X)
 FD/346A: 47 F5        EOR [$F5]

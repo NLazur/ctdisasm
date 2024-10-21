@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 79D2
+Routine_D179D2:
 D1/79D2: 00 0A        BRK $0A
 D1/79D4: 01 91        ORA ($91,X)
 D1/79D6: 08           PHP

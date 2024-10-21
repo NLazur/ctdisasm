@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0485
+Routine_D10485:
 D1/0485: 01 42        ORA ($42,X)
 D1/0487: 01 44        ORA ($44,X)
 D1/0489: 01 46        ORA ($46,X)

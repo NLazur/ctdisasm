@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AFD9
+Routine_C6AFD9:
 C6/AFD9: 02 0B        COP $0B
 C6/AFDB: 44 01 C0     MVP $01,$C0
 C6/AFDE: 00 CD        BRK $CD

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CF77
+Routine_D0CF77:
 D0/CF77: C1 0B        CMP ($0B,X)
 D0/CF79: 0C 05 02     TSB $0205
 D0/CF7C: 02 0B        COP $0B

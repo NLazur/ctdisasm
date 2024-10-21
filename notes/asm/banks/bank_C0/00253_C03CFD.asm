@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3CFD
+Routine_C03CFD:
 C0/3CFD: BB           TYX
 C0/3CFE: A5 18        LDA $18
 C0/3D00: 89 02        BIT #$02

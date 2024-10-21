@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CBB1
+Routine_C0CBB1:
 C0/CBB1: BD 80 16     LDA $1680,X
 C0/CBB4: 29 FF        AND #$FF
 C0/CBB6: 00 0A        BRK $0A

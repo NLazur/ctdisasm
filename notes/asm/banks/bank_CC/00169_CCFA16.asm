@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: FA16
+Routine_CCFA16:
 CC/FA16: 00 20        BRK $20
 CC/FA18: 00 10        BRK $10
 CC/FA1A: 00 08        BRK $08

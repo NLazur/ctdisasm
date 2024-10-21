@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 5BDD
+Routine_FF5BDD:
 FF/5BDD: 2F 52 EF D0  AND $D0EF52
 FF/5BE1: C1 D2        CMP ($D2,X)
 FF/5BE3: EF D0 BE EF  SBC $EFBED0

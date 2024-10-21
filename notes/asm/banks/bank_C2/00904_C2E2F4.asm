@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E2F4
+Routine_C2E2F4:
 C2/E2F4: 2C 1D 0D     BIT $0D1D
 C2/E2F7: 30 11        BMI $E30A
 C2/E2F9: 50 15        BVC $E310

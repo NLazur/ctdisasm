@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E82F
+Routine_FFE82F:
 FF/E82F: 4A           LSR
 FF/E830: 7E 44 39     ROR $3944,X
 FF/E833: 2E 70 57     ROL $5770

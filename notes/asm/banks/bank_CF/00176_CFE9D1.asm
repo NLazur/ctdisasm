@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: E9D1
+Routine_CFE9D1:
 CF/E9D1: A5 32        LDA $32
 CF/E9D3: 85 2E        STA $2E
 CF/E9D5: 64 2F        STZ $2F

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8216
+Routine_C28216:
 C2/8216: E2 30        SEP #$30
 C2/8218: A6 6E        LDX $6E
 C2/821A: 74 B0        STZ $B0,X

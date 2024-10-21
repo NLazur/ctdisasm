@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EB7A
+Routine_CEEB7A:
 CE/EB7A: 8A           TXA
 CE/EB7B: C9 FF        CMP #$FF
 CE/EB7D: D0 16        BNE $EB95

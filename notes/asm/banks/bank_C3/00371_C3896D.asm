@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 896D
+Routine_C3896D:
 C3/896D: 63 00        ADC $00,S
 C3/896F: 63 5D        ADC $5D,S
 C3/8971: 4D 77 7F     EOR $7F77

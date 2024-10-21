@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F871
+Routine_C1F871:
 C1/F871: 7B           TDC
 C1/F872: AA           TAX
 C1/F873: 86 10        STX $10

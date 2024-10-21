@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: B471
+Routine_D0B471:
 D0/B471: 46 74        LSR $74
 D0/B473: 52 7C        EOR ($7C)
 D0/B475: 42 0C        WDM $0C

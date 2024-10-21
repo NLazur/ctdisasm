@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5F30
+Routine_C65F30:
 C6/5F30: 1D 61 1D     ORA $1D61,X
 C6/5F33: 30 62        BMI $5F97
 C6/5F35: 1D 63 1D     ORA $1D63,X

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F4D6
+Routine_CDF4D6:
 CD/F4D6: 82 61 82     BRL $CD773A
 CD/F4D9: 62 82 63     PER $CD585E
 CD/F4DC: 82 64 82     BRL $CD7743

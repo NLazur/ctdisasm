@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4A58
+Routine_C24A58:
 C2/4A58: E2 20        SEP #$20
 C2/4A5A: A0 00 58     LDY #$5800
 C2/4A5D: 84 10        STY $10

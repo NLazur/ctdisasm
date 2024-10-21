@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2E73
+Routine_D12E73:
 D1/2E73: 01 00        ORA ($00,X)
 D1/2E75: CC 00 CE     CPY $CE00
 D1/2E78: 00 CE        BRK $CE

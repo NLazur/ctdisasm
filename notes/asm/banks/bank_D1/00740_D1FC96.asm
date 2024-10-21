@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: FC96
+Routine_D1FC96:
 D1/FC96: A5 7C        LDA $7C
 D1/FC98: 29 01        AND #$01
 D1/FC9A: F0 2C        BEQ $FCC8

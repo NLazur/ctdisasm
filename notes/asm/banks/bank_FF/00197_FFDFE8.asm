@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DFE8
+Routine_FFDFE8:
 FF/DFE8: 5F 7F 7F 00  EOR $007F7F,X
 FF/DFEC: 7D FA 07     ADC $07FA,X
 FF/DFEF: 02 FF        COP $FF

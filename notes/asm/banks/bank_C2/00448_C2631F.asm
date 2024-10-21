@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 631F
+Routine_C2631F:
 C2/631F: A9 07        LDA #$07
 C2/6321: 85 1E        STA $1E
 C2/6323: A9 63        LDA #$63

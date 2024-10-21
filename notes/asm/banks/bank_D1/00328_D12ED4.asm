@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2ED4
+Routine_D12ED4:
 D1/2ED4: 01 02        ORA ($02,X)
 D1/2ED6: 08           PHP
 D1/2ED7: 24 18        BIT $18

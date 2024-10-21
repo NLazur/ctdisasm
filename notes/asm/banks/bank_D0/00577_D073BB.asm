@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 73BB
+Routine_D073BB:
 D0/73BB: E0 C0 C0     CPX #$C0C0
 D0/73BE: C0 C0        CPY #$C0
 D0/73C0: 80 80        BRA $7342

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: BA36
+Routine_D0BA36:
 D0/BA36: 04 C4        TSB $C4
 D0/BA38: 80 A0        BRA $B9DA
 D0/BA3A: 00 C0        BRK $C0

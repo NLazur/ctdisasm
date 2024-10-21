@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EADD
+Routine_CFEADD:
 CF/EADD: B5 00        LDA $00,X
 CF/EADF: 85 2E        STA $2E
 CF/EAE1: 64 2F        STZ $2F

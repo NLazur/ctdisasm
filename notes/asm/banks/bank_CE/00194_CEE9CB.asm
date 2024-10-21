@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: E9CB
+Routine_CEE9CB:
 CE/E9CB: A9 FF        LDA #$FF
 CE/E9CD: 99 5E C1     STA $C15E,Y
 CE/E9D0: 99 96 C1     STA $C196,Y

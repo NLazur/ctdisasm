@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3569
+Routine_D13569:
 D1/3569: 4F 00 00 22  EOR $220000
 D1/356D: C0 C0        CPY #$C0
 D1/356F: 0C 01 0E     TSB $0E01

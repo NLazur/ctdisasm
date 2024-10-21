@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D9BA
+Routine_D0D9BA:
 D0/D9BA: 3F 30 1B 1C  AND $1C1B30,X
 D0/D9BE: 06 07        ASL $07
 D0/D9C0: 80 80        BRA $D942

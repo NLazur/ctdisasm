@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0393
+Routine_C60393:
 C6/0393: 00 B6        BRK $B6
 C6/0395: 00 E7        BRK $E7
 C6/0397: 00 70        BRK $70

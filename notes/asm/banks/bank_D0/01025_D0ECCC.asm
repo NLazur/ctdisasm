@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: ECCC
+Routine_D0ECCC:
 D0/ECCC: 14 0D        TRB $0D
 D0/ECCE: 12 4D        ORA ($4D)
 D0/ECD0: 11 4D        ORA ($4D),Y

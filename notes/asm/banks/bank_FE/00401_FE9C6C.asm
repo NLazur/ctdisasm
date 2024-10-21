@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9C6C
+Routine_FE9C6C:
 FE/9C6C: A0 20        LDY #$20
 FE/9C6E: D0 E3        BNE $9C53
 FE/9C70: BE 77 02     LDX $0277,Y

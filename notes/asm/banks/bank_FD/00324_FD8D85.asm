@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8D85
+Routine_FD8D85:
 FD/8D85: C0 BE 0A     CPY #$0ABE
 FD/8D88: C0 40 40     CPY #$4040
 FD/8D8B: 52 25        EOR ($25)

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F4DF
+Routine_C1F4DF:
 C1/F4DF: A9 80        LDA #$80
 C1/F4E1: 85 0A        STA $0A
 C1/F4E3: A6 02        LDX $02

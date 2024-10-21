@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 794E
+Routine_C0794E:
 C0/794E: E2 20        SEP #$20
 C0/7950: 64 58        STZ $58
 C0/7952: A9 00        LDA #$00

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: ED59
+Routine_C2ED59:
 C2/ED59: 77 ED        ADC [$ED],Y
 C2/ED5B: 05 EF        ORA $EF
 C2/ED5D: AA           TAX

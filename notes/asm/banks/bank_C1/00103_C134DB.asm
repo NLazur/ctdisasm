@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 34DB
+Routine_C134DB:
 C1/34DB: 20 0F 35     JSR $350F
 C1/34DE: A2 02 00     LDX #$0002
 C1/34E1: A0 04 00     LDY #$0004

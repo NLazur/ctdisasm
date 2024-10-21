@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 676B
+Routine_FE676B:
 FE/676B: 00 1C        BRK $1C
 FE/676D: 36 3E        ROL $3E,X
 FE/676F: 30 3F        BMI $67B0

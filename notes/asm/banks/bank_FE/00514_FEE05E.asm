@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E05E
+Routine_FEE05E:
 FE/E05E: F0 01        BEQ $E061
 FE/E060: 41 04        EOR ($04,X)
 FE/E062: 43 DC        EOR $DC,S

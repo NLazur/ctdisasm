@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E6D1
+Routine_FDE6D1:
 FD/E6D1: B9 22 05     LDA $0522,Y
 FD/E6D4: A8           TAY
 FD/E6D5: C2 20        REP #$20

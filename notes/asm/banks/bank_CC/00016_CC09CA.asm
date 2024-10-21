@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 09CA
+Routine_CC09CA:
 CC/09CA: 22 FE 15 00  JSR $0015FE
 CC/09CE: 00 1C        BRK $1C
 CC/09D0: 25 02        AND $02

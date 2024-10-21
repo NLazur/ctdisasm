@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C888
+Routine_C2C888:
 C2/C888: AD 0C 0F     LDA $0F0C
 C2/C88B: 38           SEC
 C2/C88C: E9 03 85     SBC #$8503

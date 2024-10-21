@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 88C4
+Routine_C088C4:
 C0/88C4: 64 32        STZ $32
 C0/88C6: 64 33        STZ $33
 C0/88C8: A5 93        LDA $93

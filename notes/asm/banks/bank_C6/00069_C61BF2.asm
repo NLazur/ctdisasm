@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1BF2
+Routine_C61BF2:
 C6/1BF2: 0F 02 20 CE  ORA $CE2002
 C6/1BF6: 1C 04 30     TRB $3004
 C6/1BF9: 8C 30 1D     STY $1D30

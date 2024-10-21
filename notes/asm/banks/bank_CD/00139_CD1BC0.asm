@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1BC0
+Routine_CD1BC0:
 CD/1BC0: DA           PHX
 CD/1BC1: 5A           PHY
 CD/1BC2: E2 10        SEP #$10

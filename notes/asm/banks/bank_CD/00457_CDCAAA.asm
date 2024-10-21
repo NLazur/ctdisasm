@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CAAA
+Routine_CDCAAA:
 CD/CAAA: 70 09        BVS $CAB5
 CD/CAAC: A8           TAY
 CD/CAAD: 0A           ASL

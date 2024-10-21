@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E1B0
+Routine_CCE1B0:
 CC/E1B0: 3A           DEC
 CC/E1B1: D0 7A        BNE $E22D
 CC/E1B3: A9 01 8F     LDA #$8F01

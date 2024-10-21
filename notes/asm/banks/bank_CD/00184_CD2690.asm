@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2690
+Routine_CD2690:
 CD/2690: A7 40        LDA [$40]
 CD/2692: 0A           ASL
 CD/2693: AA           TAX

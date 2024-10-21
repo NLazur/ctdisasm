@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1698
+Routine_C61698:
 C6/1698: D2 2D        CMP ($2D)
 C6/169A: D2 2F        CMP ($2F)
 C6/169C: C3 3F        CMP $3F,S

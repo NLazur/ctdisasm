@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: BA86
+Routine_CDBA86:
 CD/BA86: 90 70        BCC $BAF8
 CD/BA88: 02 01        COP $01
 CD/BA8A: 85 C0        STA $C0

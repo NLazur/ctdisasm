@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: E8D9
+Routine_D1E8D9:
 D1/E8D9: 8B           PHB
 D1/E8DA: 48           PHA
 D1/E8DB: A9 00        LDA #$00

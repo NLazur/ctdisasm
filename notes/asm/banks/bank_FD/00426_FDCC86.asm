@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: CC86
+Routine_FDCC86:
 FD/CC86: 38           SEC
 FD/CC87: E9 10        SBC #$10
 FD/CC89: 85 D9        STA $D9

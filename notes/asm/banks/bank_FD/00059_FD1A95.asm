@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1A95
+Routine_FD1A95:
 FD/1A95: 11 01        ORA ($01),Y
 FD/1A97: 23 03        AND $03,S
 FD/1A99: 43 03        EOR $03,S

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 53D9
+Routine_C653D9:
 C6/53D9: 15 50        ORA $50,X
 C6/53DB: 18           CLC
 C6/53DC: E0 B0        CPX #$B0

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 5786
+Routine_CC5786:
 CC/5786: 02 00        COP $00
 CC/5788: F8           SED
 CC/5789: 11 2D        ORA ($2D),Y

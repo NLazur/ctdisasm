@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 5F31
+Routine_FF5F31:
 FF/5F31: 36 EF        ROL $EF,X
 FF/5F33: 36 EF        ROL $EF,X
 FF/5F35: C4 25        CPY $25

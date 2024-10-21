@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 672E
+Routine_C1672E:
 C1/672E: 64 8F        STZ $8F
 C1/6730: AD 9E 5D     LDA $5D9E
 C1/6733: 8D B0 A2     STA $A2B0

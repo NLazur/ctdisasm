@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 45CC
+Routine_C645CC:
 C6/45CC: 11 8A        ORA ($8A),Y
 C6/45CE: 11 8B        ORA ($8B),Y
 C6/45D0: 11 7C        ORA ($7C),Y

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 6729
+Routine_CE6729:
 CE/6729: 02 43        COP $43
 CE/672B: 09 00 F0     ORA #$F000
 CE/672E: 35 70        AND $70,X

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F343
+Routine_FDF343:
 FD/F343: 80 80        BRA $F2C5
 FD/F345: 65 00        ADC $00
 FD/F347: 66 80        ROR $80

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 11B2
+Routine_C211B2:
 C2/11B2: A0 01 00     LDY #$0001
 C2/11B5: B7 58        LDA [$58],Y
 C2/11B7: 85 08        STA $08

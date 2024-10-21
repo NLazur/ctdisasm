@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 20EA
+Routine_CC20EA:
 CC/20EA: 04 00        TSB $00
 CC/20EC: 42 90        WDM $90
 CC/20EE: 9D 00 00     STA $0000,X

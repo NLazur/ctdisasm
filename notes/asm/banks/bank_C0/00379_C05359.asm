@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5359
+Routine_C05359:
 C0/5359: 9E 80 1A     STZ $1A80,X
 C0/535C: BB           TYX
 C0/535D: E8           INX

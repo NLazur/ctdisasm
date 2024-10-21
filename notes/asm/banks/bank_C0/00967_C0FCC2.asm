@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: FCC2
+Routine_C0FCC2:
 C0/FCC2: 5F 5D 5C 5A  EOR $5A5C5D,X
 C0/FCC6: 59 57 56     EOR $5657,Y
 C0/FCC9: 54 53 51     MVN $53,$51

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1A2C
+Routine_C61A2C:
 C6/1A2C: FF A0 04 FF  SBC $FF04A0,X
 C6/1A30: 8C FF DE     STY $DEFF
 C6/1A33: 02 00        COP $00

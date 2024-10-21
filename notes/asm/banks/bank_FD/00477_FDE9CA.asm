@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E9CA
+Routine_FDE9CA:
 FD/E9CA: B9 22 05     LDA $0522,Y
 FD/E9CD: A8           TAY
 FD/E9CE: BF 01 20 7E  LDA $7E2001,X

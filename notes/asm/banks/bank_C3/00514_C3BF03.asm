@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BF03
+Routine_C3BF03:
 C3/BF03: 18           CLC
 C3/BF04: E4 03        CPX $03
 C3/BF06: A8           TAY

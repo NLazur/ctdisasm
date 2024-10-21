@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 278F
+Routine_C0278F:
 C0/278F: C2 20        REP #$20
 C0/2791: 8B           PHB
 C0/2792: A2 00 00     LDX #$0000

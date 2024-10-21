@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 10D4
+Routine_D110D4:
 D1/10D4: CE 08 00     DEC $0008
 D1/10D7: CC C0 0D     CPY $0DC0
 D1/10DA: 10 E0        BPL $10BC

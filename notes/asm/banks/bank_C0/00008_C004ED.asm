@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 04ED
+Routine_C004ED:
 C0/04ED: E2 10        SEP #$10
 C0/04EF: AD 0A 1D     LDA $1D0A
 C0/04F2: 4A           LSR

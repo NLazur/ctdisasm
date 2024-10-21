@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 106D
+Routine_D1106D:
 D1/106D: 41 40        EOR ($40,X)
 D1/106F: 81 40        STA ($40,X)
 D1/1071: 34 18        BIT $18,X

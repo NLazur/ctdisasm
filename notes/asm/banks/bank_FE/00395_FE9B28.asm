@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9B28
+Routine_FE9B28:
 FE/9B28: 34 24        BIT $24,X
 FE/9B2A: 02 27        COP $27
 FE/9B2C: 28           PLP

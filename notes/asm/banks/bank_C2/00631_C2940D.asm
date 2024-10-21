@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 940D
+Routine_C2940D:
 C2/940D: 8B           PHB
 C2/940E: 0B           PHD
 C2/940F: 08           PHP

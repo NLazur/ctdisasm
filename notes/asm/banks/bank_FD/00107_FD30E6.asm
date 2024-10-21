@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 30E6
+Routine_FD30E6:
 FD/30E6: CF 40 00 80  CMP $800040
 FD/30EA: 7F 30 3F 34  ADC $343F30,X
 FD/30EE: 33 F5        AND ($F5,S),Y

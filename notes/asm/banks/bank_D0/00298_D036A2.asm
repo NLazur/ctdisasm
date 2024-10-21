@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 36A2
+Routine_D036A2:
 D0/36A2: A0 60        LDY #$60
 D0/36A4: D0 30        BNE $36D6
 D0/36A6: D0 30        BNE $36D8

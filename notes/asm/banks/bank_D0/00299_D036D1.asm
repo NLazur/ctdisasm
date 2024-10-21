@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 36D1
+Routine_D036D1:
 D0/36D1: 6C 5B 7C     JMP ($7C5B)
 D0/36D4: 47 78        EOR [$78]
 D0/36D6: 2F 30 C0 40  AND $40C030

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6741
+Routine_C36741:
 C3/6741: 02 77        COP $77
 C3/6743: 98           TYA
 C3/6744: 01 3F        ORA ($3F,X)

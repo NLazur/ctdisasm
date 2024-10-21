@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EC39
+Routine_C1EC39:
 C1/EC39: 7B           TDC
 C1/EC3A: AA           TAX
 C1/EC3B: A8           TAY

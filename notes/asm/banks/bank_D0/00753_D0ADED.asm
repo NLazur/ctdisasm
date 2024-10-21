@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: ADED
+Routine_D0ADED:
 D0/ADED: C0 80 80     CPY #$8080
 D0/ADF0: D7 E8        CMP [$E8],Y
 D0/ADF2: BB           TYX

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B30F
+Routine_C0B30F:
 C0/B30F: A6 6D        LDX $6D
 C0/B311: BD 01 12     LDA $1201,X
 C0/B314: 29 03        AND #$03

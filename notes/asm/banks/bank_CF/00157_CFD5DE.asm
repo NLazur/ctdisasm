@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D5DE
+Routine_CFD5DE:
 CF/D5DE: 75 21        ADC $21,X
 CF/D5E0: DB           STP
 CF/D5E1: 38           SEC

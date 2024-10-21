@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 22D8
+Routine_C022D8:
 C0/22D8: AD 50 03     LDA $0350
 C0/22DB: F0 2A        BEQ $2307
 C0/22DD: A9 17        LDA #$17

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9C1E
+Routine_C69C1E:
 C6/9C1E: 80 2B        BRA $9C4B
 C6/9C20: 1A           INC
 C6/9C21: 7F DF 11 34  ADC $3411DF,X

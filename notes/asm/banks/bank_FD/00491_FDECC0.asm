@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: ECC0
+Routine_FDECC0:
 FD/ECC0: A2 00 40     LDX #$4000
 FD/ECC3: 8E 81 21     STX $2181
 FD/ECC6: A9 7F        LDA #$7F

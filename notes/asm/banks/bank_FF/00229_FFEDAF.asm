@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EDAF
+Routine_FFEDAF:
 FF/EDAF: FB           XCE
 FF/EDB0: 4A           LSR
 FF/EDB1: D7 7A        CMP [$7A],Y

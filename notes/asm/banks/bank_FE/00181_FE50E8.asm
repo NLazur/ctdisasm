@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 50E8
+Routine_FE50E8:
 FE/50E8: F2 00        SBC ($00)
 FE/50EA: 01 F4        ORA ($F4,X)
 FE/50EC: 04 52        TSB $52

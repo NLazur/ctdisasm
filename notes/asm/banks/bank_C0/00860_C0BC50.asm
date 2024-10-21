@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: BC50
+Routine_C0BC50:
 C0/BC50: BD C4 4B     LDA $4BC4,X
 C0/BC53: 18           CLC
 C0/BC54: 65 C5        ADC $C5

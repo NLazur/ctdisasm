@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4BB5
+Routine_C24BB5:
 C2/4BB5: 52 3D        EOR ($3D)
 C2/4BB7: 13 34        ORA ($34,S),Y
 C2/4BB9: A9 48 04     LDA #$0448

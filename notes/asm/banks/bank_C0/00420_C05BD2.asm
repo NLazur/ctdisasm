@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5BD2
+Routine_C05BD2:
 C0/5BD2: BD 00 11     LDA $1100,X
 C0/5BD5: 30 F1        BMI $5BC8
 C0/5BD7: E4 6D        CPX $6D

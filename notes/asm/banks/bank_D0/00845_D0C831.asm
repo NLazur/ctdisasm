@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C831
+Routine_D0C831:
 D0/C831: A0 40        LDY #$40
 D0/C833: A0 40        LDY #$40
 D0/C835: A0 40        LDY #$40

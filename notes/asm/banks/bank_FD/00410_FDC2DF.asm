@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C2DF
+Routine_FDC2DF:
 FD/C2DF: EB           XBA
 FD/C2E0: C2 95        REP #$95
 FD/C2E2: C9 CF        CMP #$CF

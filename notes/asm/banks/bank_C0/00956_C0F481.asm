@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F481
+Routine_C0F481:
 C0/F481: 3C 39 35     BIT $3539,X
 C0/F484: 32 30        AND ($30)
 C0/F486: 2D 2A 28     AND $282A

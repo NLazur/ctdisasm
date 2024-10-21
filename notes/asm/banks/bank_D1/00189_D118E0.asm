@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 18E0
+Routine_D118E0:
 D1/18E0: 81 60        STA ($60,X)
 D1/18E2: C1 40        CMP ($40,X)
 D1/18E4: 20 81 40     JSR $4081

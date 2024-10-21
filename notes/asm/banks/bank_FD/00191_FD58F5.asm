@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 58F5
+Routine_FD58F5:
 FD/58F5: 08           PHP
 FD/58F6: 04 05        TSB $05
 FD/58F8: 2B           PLD

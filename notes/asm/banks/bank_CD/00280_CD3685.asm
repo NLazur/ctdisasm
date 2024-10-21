@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3685
+Routine_CD3685:
 CD/3685: A5 13        LDA $13
 CD/3687: C5 15        CMP $15
 CD/3689: 90 08        BCC $3693

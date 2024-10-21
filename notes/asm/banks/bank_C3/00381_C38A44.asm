@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8A44
+Routine_C38A44:
 C3/8A44: 09 00 F5     ORA #$F500
 C3/8A47: 02 00        COP $00
 C3/8A49: 7A           PLY

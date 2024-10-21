@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: AA5F
+Routine_D0AA5F:
 D0/AA5F: 20 04 0C     JSR $0C04
 D0/AA62: 00 0C        BRK $0C
 D0/AA64: 08           PHP

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 20E0
+Routine_C120E0:
 C1/20E0: EE 0A 96     INC $960A
 C1/20E3: 7B           TDC
 C1/20E4: AA           TAX

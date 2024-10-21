@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E408
+Routine_D0E408:
 D0/E408: 10 14        BPL $E41E
 D0/E40A: 08           PHP
 D0/E40B: 09 09        ORA #$09

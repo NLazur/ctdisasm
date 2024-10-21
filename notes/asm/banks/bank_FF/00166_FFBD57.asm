@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: BD57
+Routine_FFBD57:
 FF/BD57: 08           PHP
 FF/BD58: 0C 10 06     TSB $0610
 FF/BD5B: FF 50 70 04  SBC $047050,X

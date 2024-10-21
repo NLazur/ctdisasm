@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9AD9
+Routine_C69AD9:
 C6/9AD9: 3D 11 00     AND $0011,X
 C6/9ADC: 11 32        ORA ($32),Y
 C6/9ADE: 00 F4        BRK $F4

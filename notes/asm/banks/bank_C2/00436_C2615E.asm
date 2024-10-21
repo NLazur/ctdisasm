@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 615E
+Routine_C2615E:
 C2/615E: E2 20        SEP #$20
 C2/6160: A5 68        LDA $68
 C2/6162: A0 02 00     LDY #$0002

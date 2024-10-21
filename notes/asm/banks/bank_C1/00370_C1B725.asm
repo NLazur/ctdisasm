@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B725
+Routine_C1B725:
 C1/B725: 9C D4 99     STZ $99D4
 C1/B728: A9 01        LDA #$01
 C1/B72A: 8D D8 99     STA $99D8

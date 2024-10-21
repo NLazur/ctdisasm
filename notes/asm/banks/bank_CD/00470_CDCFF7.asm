@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CFF7
+Routine_CDCFF7:
 CD/CFF7: D0 6F        BNE $D068
 CD/CFF9: D0 07        BNE $D002
 CD/CFFB: D0 06        BNE $D003

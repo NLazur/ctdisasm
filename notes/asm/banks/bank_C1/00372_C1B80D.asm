@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B80D
+Routine_C1B80D:
 C1/B80D: A7 8E        LDA [$8E]
 C1/B80F: AB           PLB
 C1/B810: 8E 11 8F     STX $8F11

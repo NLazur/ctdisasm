@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 01D3
+Routine_C601D3:
 C6/01D3: 80 E0        BRA $01B5
 C6/01D5: 00 F0        BRK $F0
 C6/01D7: 48           PHA

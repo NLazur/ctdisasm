@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3B70
+Routine_D13B70:
 D1/3B70: 1C 1C 38     TRB $381C
 D1/3B73: 38           SEC
 D1/3B74: 38           SEC

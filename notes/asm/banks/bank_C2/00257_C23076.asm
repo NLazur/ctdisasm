@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3076
+Routine_C23076:
 C2/3076: 7B           TDC
 C2/3077: A5 EB        LDA $EB
 C2/3079: AA           TAX

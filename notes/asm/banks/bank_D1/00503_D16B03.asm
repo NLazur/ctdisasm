@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 6B03
+Routine_D16B03:
 D1/6B03: 19 03 FF     ORA $FF03,Y
 D1/6B06: 00 08        BRK $08
 D1/6B08: 01 83        ORA ($83,X)

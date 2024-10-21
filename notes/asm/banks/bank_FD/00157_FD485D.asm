@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 485D
+Routine_FD485D:
 FD/485D: 87 80        STA [$80]
 FD/485F: 07 11        ORA [$11]
 FD/4861: 1E 00 11     ASL $1100,X

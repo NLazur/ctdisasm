@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: C3AF
+Routine_CFC3AF:
 CF/C3AF: 20 29 30     JSR $3029
 CF/C3B2: 2B           PLD
 CF/C3B3: 30 2D        BMI $C3E2

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9CA1
+Routine_C09CA1:
 C0/9CA1: AD 17 01     LDA $0117
 C0/9CA4: 89 80        BIT #$80
 C0/9CA6: F0 03        BEQ $9CAB

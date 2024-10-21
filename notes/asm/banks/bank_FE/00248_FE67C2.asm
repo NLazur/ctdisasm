@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 67C2
+Routine_FE67C2:
 FE/67C2: 64 18        STZ $18
 FE/67C4: 2A           ROL
 FE/67C5: 84 00        STY $00

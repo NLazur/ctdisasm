@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1168
+Routine_C61168:
 C6/1168: 8E 71 E7     STX $E771
 C6/116B: 00 18        BRK $18
 C6/116D: FB           XCE

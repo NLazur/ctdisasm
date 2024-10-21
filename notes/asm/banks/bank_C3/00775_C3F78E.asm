@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F78E
+Routine_C3F78E:
 C3/F78E: 05 F8        ORA $F8
 C3/F790: EF 20 01 F0  SBC $F00120
 C3/F794: F0 0A        BEQ $F7A0

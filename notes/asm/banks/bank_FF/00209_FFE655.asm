@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E655
+Routine_FFE655:
 FF/E655: A0 B0        LDY #$B0
 FF/E657: 10 00        BPL $E659
 FF/E659: 00 00        BRK $00

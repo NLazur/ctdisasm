@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F88C
+Routine_CDF88C:
 CD/F88C: 01 00        ORA ($00,X)
 CD/F88E: 01 00        ORA ($00,X)
 CD/F890: 00 3F        BRK $3F

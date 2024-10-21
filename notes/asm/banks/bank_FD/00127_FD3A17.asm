@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3A17
+Routine_FD3A17:
 FD/3A17: 32 00        AND ($00)
 FD/3A19: E0 A0        CPX #$A0
 FD/3A1B: B9 B8 1B     LDA $1BB8,Y

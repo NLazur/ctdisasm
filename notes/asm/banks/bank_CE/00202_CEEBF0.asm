@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EBF0
+Routine_CEEBF0:
 CE/EBF0: AD A3 CA     LDA $CAA3
 CE/EBF3: 30 79        BMI $EC6E
 CE/EBF5: D0 17        BNE $EC0E

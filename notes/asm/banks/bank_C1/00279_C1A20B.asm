@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A20B
+Routine_C1A20B:
 C1/A20B: AE D2 B1     LDX $B1D2
 C1/A20E: BF 0F 00 CC  LDA $CC000F,X
 C1/A212: AA           TAX

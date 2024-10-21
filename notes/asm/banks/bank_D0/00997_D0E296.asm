@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E296
+Routine_D0E296:
 D0/E296: F0 80        BEQ $E218
 D0/E298: F8           SED
 D0/E299: 80 F8        BRA $E293

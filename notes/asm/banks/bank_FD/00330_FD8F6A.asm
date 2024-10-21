@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8F6A
+Routine_FD8F6A:
 FD/8F6A: 52 AD        EOR ($AD)
 FD/8F6C: 00 7F        BRK $7F
 FD/8F6E: 8C E3 9C     STY $9CE3

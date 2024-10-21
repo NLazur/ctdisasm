@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F13F
+Routine_C2F13F:
 C2/F13F: 08           PHP
 C2/F140: C2 30        REP #$30
 C2/F142: 64 8A        STZ $8A

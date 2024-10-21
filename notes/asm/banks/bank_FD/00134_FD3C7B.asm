@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3C7B
+Routine_FD3C7B:
 FD/3C7B: 16 40        ASL $40,X
 FD/3C7D: 8B           PHB
 FD/3C7E: 01 5F        ORA ($5F,X)

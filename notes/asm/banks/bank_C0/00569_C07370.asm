@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7370
+Routine_C07370:
 C0/7370: BD 81 0F     LDA $0F81,X
 C0/7373: 4A           LSR
 C0/7374: AA           TAX

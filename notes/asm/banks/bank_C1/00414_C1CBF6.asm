@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CBF6
+Routine_C1CBF6:
 C1/CBF6: C9 A2        CMP #$A2
 C1/CBF8: D0 04        BNE $CBFE
 C1/CBFA: 98           TYA

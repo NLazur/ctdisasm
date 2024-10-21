@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: BE46
+Routine_C0BE46:
 C0/BE46: BD 04 48     LDA $4804,X
 C0/BE49: 9D C4 4B     STA $4BC4,X
 C0/BE4C: 18           CLC

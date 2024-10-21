@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 66A3
+Routine_D166A3:
 D1/66A3: 00 84        BRK $84
 D1/66A5: E5 1A        SBC $1A
 D1/66A7: 83 20        STA $20,S

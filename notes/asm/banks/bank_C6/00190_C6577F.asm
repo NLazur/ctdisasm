@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 577F
+Routine_C6577F:
 C6/577F: 09 08        ORA #$08
 C6/5781: F1 1E        SBC ($1E),Y
 C6/5783: 01 00        ORA ($00,X)

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 47CF
+Routine_C647CF:
 C6/47CF: 48           PHA
 C6/47D0: 01 70        ORA ($70,X)
 C6/47D2: 08           PHP

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 503C
+Routine_FD503C:
 FD/503C: 4B           PHK
 FD/503D: 7C 1B 80     JMP ($801B,X)
 FD/5040: 3B           TSC

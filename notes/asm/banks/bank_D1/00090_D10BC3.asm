@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0BC3
+Routine_D10BC3:
 D1/0BC3: C1 20        CMP ($20,X)
 D1/0BC5: C1 04        CMP ($04,X)
 D1/0BC7: C1 02        CMP ($02,X)

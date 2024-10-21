@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 33D7
+Routine_C033D7:
 C0/33D7: AA           TAX
 C0/33D8: BD 00 1C     LDA $1C00,X
 C0/33DB: 8D 02 42     STA $4202

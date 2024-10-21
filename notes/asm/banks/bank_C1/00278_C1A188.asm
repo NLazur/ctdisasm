@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A188
+Routine_C1A188:
 C1/A188: 7B           TDC
 C1/A189: AE D2 B1     LDX $B1D2
 C1/A18C: BF 09 00 CC  LDA $CC0009,X

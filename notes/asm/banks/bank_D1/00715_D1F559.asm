@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F559
+Routine_D1F559:
 D1/F559: A6 43        LDX $43
 D1/F55B: BD 52 CA     LDA $CA52,X
 D1/F55E: F0 28        BEQ $F588

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: E687
+Routine_C0E687:
 C0/E687: 29 FF 07     AND #$07FF
 C0/E68A: 0A           ASL
 C0/E68B: 0A           ASL

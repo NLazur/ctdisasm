@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5C3D
+Routine_C35C3D:
 C3/5C3D: 00 20        BRK $20
 C3/5C3F: 3C 5E A2     BIT $A25E,X
 C3/5C42: B1 86        LDA ($86),Y

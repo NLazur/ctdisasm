@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1DE3
+Routine_C31DE3:
 C3/1DE3: 17 E1        ORA [$E1],Y
 C3/1DE5: 9B           TXY
 C3/1DE6: C8           INY

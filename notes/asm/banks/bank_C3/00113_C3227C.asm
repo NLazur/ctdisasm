@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 227C
+Routine_C3227C:
 C3/227C: 01 21        ORA ($21,X)
 C3/227E: AD 2F 06     LDA $062F
 C3/2281: 20 30 14     JSR $1430

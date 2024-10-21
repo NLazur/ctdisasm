@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 3A48
+Routine_FE3A48:
 FE/3A48: B5 00        LDA $00,X
 FE/3A4A: 06 00        ASL $00
 FE/3A4C: 01 F0        ORA ($F0,X)

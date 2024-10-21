@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 1413
+Routine_FE1413:
 FE/1413: E0 20 60     CPX #$6020
 FE/1416: A0 C9 92     LDY #$92C9
 FE/1419: 10 BA        BPL $13D5

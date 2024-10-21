@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 79A4
+Routine_FE79A4:
 FE/79A4: 43 30        EOR $30,S
 FE/79A6: 77 02        ADC [$02],Y
 FE/79A8: 36 2B        ROL $2B,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A184
+Routine_C6A184:
 C6/A184: F8           SED
 C6/A185: FD 60 60     SBC $6060,X
 C6/A188: 05 48        ORA $48

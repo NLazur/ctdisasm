@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: DB67
+Routine_FEDB67:
 FE/DB67: 21 0B        AND ($0B,X)
 FE/DB69: E8           INX
 FE/DB6A: 0B           PHD

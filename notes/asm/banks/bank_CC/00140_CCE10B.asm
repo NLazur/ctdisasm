@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E10B
+Routine_CCE10B:
 CC/E10B: 8F 16 21 00  STA $002116
 CC/E10F: A9 01 8F     LDA #$8F01
 CC/E112: 17 21        ORA [$21],Y

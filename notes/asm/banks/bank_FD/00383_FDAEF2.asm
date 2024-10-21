@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AEF2
+Routine_FDAEF2:
 FD/AEF2: 7B           TDC
 FD/AEF3: AA           TAX
 FD/AEF4: 9F 48 1C 00  STA $001C48,X

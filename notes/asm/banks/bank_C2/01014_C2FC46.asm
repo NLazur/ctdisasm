@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FC46
+Routine_C2FC46:
 C2/FC46: 6F 80 5C 7E  ADC $7E5C80
 C2/FC4A: 00 01        BRK $01
 C2/FC4C: 00 6E        BRK $6E

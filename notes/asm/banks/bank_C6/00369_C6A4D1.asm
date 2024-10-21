@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A4D1
+Routine_C6A4D1:
 C6/A4D1: 08           PHP
 C6/A4D2: 12 24        ORA ($24)
 C6/A4D4: D9 D9 27     CMP $27D9,Y

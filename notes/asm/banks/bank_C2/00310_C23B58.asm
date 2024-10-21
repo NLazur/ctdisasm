@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3B58
+Routine_C23B58:
 C2/3B58: C2 3B        REP #$3B
 C2/3B5A: 39 3C DA     AND $DA3C,Y
 C2/3B5D: 3C 3B 3D     BIT $3D3B,X

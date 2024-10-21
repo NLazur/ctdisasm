@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3140
+Routine_D13140:
 D1/3140: FF FF 40 64  SBC $6440FF,X
 D1/3144: 00 00        BRK $00
 D1/3146: 43 70        EOR $70,S

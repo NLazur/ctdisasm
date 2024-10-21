@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A569
+Routine_C2A569:
 C2/A569: 08           PHP
 C2/A56A: C2 30        REP #$30
 C2/A56C: A0 08 00     LDY #$0008

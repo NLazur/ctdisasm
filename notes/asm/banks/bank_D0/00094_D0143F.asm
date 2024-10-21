@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 143F
+Routine_D0143F:
 D0/143F: E0 D0 F0     CPX #$F0D0
 D0/1442: 28           PLP
 D0/1443: 28           PLP

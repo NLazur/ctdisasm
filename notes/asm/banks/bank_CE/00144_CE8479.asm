@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 8479
+Routine_CE8479:
 CE/8479: 00 70        BRK $70
 CE/847B: 78           SEI
 CE/847C: 06 C0        ASL $C0

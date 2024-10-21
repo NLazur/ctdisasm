@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 67C6
+Routine_CE67C6:
 CE/67C6: 01 43        ORA ($43,X)
 CE/67C8: 0A           ASL
 CE/67C9: 00 F0        BRK $F0

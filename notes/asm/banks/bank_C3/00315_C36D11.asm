@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6D11
+Routine_C36D11:
 C3/6D11: 00 CA        BRK $CA
 C3/6D13: 31 10        AND ($10),Y
 C3/6D15: 80 CC        BRA $6CE3

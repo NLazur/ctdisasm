@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 99BE
+Routine_C199BE:
 C1/99BE: 7B           TDC
 C1/99BF: 8D 8C B1     STA $B18C
 C1/99C2: AD FC B1     LDA $B1FC

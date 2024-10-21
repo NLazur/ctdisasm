@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0AC1
+Routine_C60AC1:
 C6/0AC1: B9 7B F9     LDA $F97B,Y
 C6/0AC4: AC FC 01     LDY $01FC
 C6/0AC7: 01 10        ORA ($10,X)

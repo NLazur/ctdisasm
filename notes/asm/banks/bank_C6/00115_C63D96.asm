@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3D96
+Routine_C63D96:
 C6/3D96: 7E 00 04     ROR $0400,X
 C6/3D99: 00 A0        BRK $A0
 C6/3D9B: 00 09        BRK $09

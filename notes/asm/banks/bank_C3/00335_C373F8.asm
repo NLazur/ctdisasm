@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 73F8
+Routine_C373F8:
 C3/73F8: 4D D4 41     EOR $41D4
 C3/73FB: 4D 09 00     EOR $0009
 C3/73FE: 2F 93 01 55  AND $550193

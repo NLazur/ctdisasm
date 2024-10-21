@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 597B
+Routine_D0597B:
 D0/597B: 4A           LSR
 D0/597C: 15 B4        ORA $B4,X
 D0/597E: AA           TAX

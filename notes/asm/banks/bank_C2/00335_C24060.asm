@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4060
+Routine_C24060:
 C2/4060: A9 10 85     LDA #$8510
 C2/4063: 16 AD        ASL $AD,X
 C2/4065: 5A           PHY

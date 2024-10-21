@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2DEA
+Routine_C22DEA:
 C2/2DEA: 0A           ASL
 C2/2DEB: A9 00 20     LDA #$2000
 C2/2DEE: 7F 7B 4C 9F  ADC $9F4C7B,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 085C
+Routine_C6085C:
 C6/085C: 2F E1 1E 45  AND $451EE1
 C6/0860: BA           TSX
 C6/0861: 7E 10 04     ROR $0410,X

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: AA2F
+Routine_D0AA2F:
 D0/AA2F: 20 00 00     JSR $0000
 D0/AA32: 14 1C        TRB $1C
 D0/AA34: 1C 00 1C     TRB $1C00

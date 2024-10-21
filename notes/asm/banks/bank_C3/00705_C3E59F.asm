@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: E59F
+Routine_C3E59F:
 C3/E59F: 19 40 00     ORA $0040,Y
 C3/E5A2: 06 7E        ASL $7E
 C3/E5A4: 80 C9        BRA $E56F

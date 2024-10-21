@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 73D3
+Routine_FD73D3:
 FD/73D3: 03 E6        ORA $E6,S
 FD/73D5: 1E 0F 80     ASL $800F,X
 FD/73D8: 75 7A        ADC $7A,X

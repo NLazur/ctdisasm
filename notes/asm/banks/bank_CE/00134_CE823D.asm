@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 823D
+Routine_CE823D:
 CE/823D: 82 70 82     BRL $CE04B0
 CE/8240: 03 17        ORA $17,S
 CE/8242: 03 17        ORA $17,S

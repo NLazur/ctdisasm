@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FC5B
+Routine_C2FC5B:
 C2/FC5B: 57 80        EOR [$80],Y
 C2/FC5D: 8E 7E 40     STX $407E
 C2/FC60: 01 00        ORA ($00,X)

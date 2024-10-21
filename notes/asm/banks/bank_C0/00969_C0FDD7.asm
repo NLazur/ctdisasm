@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: FDD7
+Routine_C0FDD7:
 C0/FDD7: EB           XBA
 C0/FDD8: 1B           TCS
 C0/FDD9: 9B           TXY

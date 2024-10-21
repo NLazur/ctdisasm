@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: B892
+Routine_D0B892:
 D0/B892: 0F 70 03 3C  ORA $3C0370
 D0/B896: 30 3F        BMI $B8D7
 D0/B898: FF FF FF 7F  SBC $7FFFFF,X

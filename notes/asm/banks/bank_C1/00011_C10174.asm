@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 0174
+Routine_C10174:
 C1/0174: DA           PHX
 C1/0175: 7B           TDC
 C1/0176: AA           TAX

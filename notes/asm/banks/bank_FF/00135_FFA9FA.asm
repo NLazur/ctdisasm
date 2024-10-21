@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: A9FA
+Routine_FFA9FA:
 FF/A9FA: F9 00 F2     SBC $F200,Y
 FF/A9FD: 00 06        BRK $06
 FF/A9FF: F9 FF 00     SBC $00FF,Y

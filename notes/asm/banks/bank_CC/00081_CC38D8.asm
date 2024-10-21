@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 38D8
+Routine_CC38D8:
 CC/38D8: FF 40 17 41  SBC $411740,X
 CC/38DC: 29 41        AND #$41
 CC/38DE: 3F 41 51 41  AND $415141,X

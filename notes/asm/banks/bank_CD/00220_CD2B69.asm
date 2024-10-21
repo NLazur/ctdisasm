@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2B69
+Routine_CD2B69:
 CD/2B69: E2 10        SEP #$10
 CD/2B6B: A2 00        LDX #$00
 CD/2B6D: A9 0C        LDA #$0C

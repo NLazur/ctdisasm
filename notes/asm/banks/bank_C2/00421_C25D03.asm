@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5D03
+Routine_C25D03:
 C2/5D03: D4 00        PEI $00
 C2/5D05: D5 00        CMP $00,X
 C2/5D07: D6 00        DEC $00,X

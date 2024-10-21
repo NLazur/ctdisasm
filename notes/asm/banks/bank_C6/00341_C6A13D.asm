@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A13D
+Routine_C6A13D:
 C6/A13D: B0 4F        BCS $A18E
 C6/A13F: 3B           TSC
 C6/A140: 18           CLC

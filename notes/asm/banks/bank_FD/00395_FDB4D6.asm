@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B4D6
+Routine_FDB4D6:
 FD/B4D6: DA           PHX
 FD/B4D7: 5A           PHY
 FD/B4D8: 7B           TDC

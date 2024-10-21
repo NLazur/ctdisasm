@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E498
+Routine_C6E498:
 C6/E498: C2 20        REP #$20
 C6/E49A: A6 4E        LDX $4E
 C6/E49C: BD 26 00     LDA $0026,X

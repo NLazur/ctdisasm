@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 218D
+Routine_C2218D:
 C2/218D: A9 01        LDA #$01
 C2/218F: 1C F6 1B     TRB $1BF6
 C2/2192: 38           SEC

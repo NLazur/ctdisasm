@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4742
+Routine_C24742:
 C2/4742: 1C 94 02     TRB $0294
 C2/4745: A9 2D 20     LDA #$202D
 C2/4748: DA           PHX

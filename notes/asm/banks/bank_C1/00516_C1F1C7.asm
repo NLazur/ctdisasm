@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F1C7
+Routine_C1F1C7:
 C1/F1C7: AD 9B AE     LDA $AE9B
 C1/F1CA: 89 80        BIT #$80
 C1/F1CC: F0 20        BEQ $F1EE

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 308C
+Routine_C1308C:
 C1/308C: A6 94        LDX $94
 C1/308E: BD F5 96     LDA $96F5,X
 C1/3091: F0 22        BEQ $30B5

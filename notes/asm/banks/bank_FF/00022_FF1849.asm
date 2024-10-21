@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 1849
+Routine_FF1849:
 FF/1849: BF 43 BC 3C  LDA $3CBC43,X
 FF/184D: C0 84 66     CPY #$6684
 FF/1850: C0 00 C0     CPY #$C000

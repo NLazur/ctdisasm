@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1D93
+Routine_CD1D93:
 CD/1D93: A7 40        LDA [$40]
 CD/1D95: 4C 82 3B     JMP $3B82
 CD/1D98: A7 40        LDA [$40]

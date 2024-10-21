@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2B61
+Routine_C22B61:
 C2/2B61: A9 7F        LDA #$7F
 C2/2B63: 8D 05 03     STA $0305
 C2/2B66: A2 00 90     LDX #$9000

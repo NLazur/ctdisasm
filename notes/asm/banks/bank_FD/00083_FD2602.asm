@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2602
+Routine_FD2602:
 FD/2602: 18           CLC
 FD/2603: E0 73        CPX #$73
 FD/2605: 80 07        BRA $260E

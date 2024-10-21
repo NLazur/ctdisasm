@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F6AC
+Routine_FDF6AC:
 FD/F6AC: 80 77        BRA $F725
 FD/F6AE: E0 77 40     CPX #$4077
 FD/F6B1: 78           SEI

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0307
+Routine_C30307:
 C3/0307: 64 33        STZ $33
 C3/0309: C6 25        DEC $25
 C3/030B: F0 0E        BEQ $031B

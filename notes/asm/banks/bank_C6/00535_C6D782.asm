@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D782
+Routine_C6D782:
 C6/D782: 20 86 68     JSR $6886
 C6/D785: 02 00        COP $00
 C6/D787: 01 04        ORA ($04,X)

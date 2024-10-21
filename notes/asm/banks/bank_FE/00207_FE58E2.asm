@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 58E2
+Routine_FE58E2:
 FE/58E2: 41 33        EOR ($33,X)
 FE/58E4: 20 09 00     JSR $0009
 FE/58E7: 1C 9A 09     TRB $099A

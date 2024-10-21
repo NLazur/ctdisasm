@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8385
+Routine_C28385:
 C2/8385: 08           PHP
 C2/8386: 20 A2 83     JSR $83A2
 C2/8389: 54 7E C2     MVN $7E,$C2

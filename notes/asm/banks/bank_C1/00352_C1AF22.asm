@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AF22
+Routine_C1AF22:
 C1/AF22: E2 10        SEP #$10
 C1/AF24: 86 25        STX $25
 C1/AF26: C2 10        REP #$10

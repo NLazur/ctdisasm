@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AE52
+Routine_FDAE52:
 FD/AE52: 7B           TDC
 FD/AE53: B9 FF AE     LDA $AEFF,Y
 FD/AE56: 30 40        BMI $AE98

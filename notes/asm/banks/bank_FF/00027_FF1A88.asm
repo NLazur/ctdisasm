@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 1A88
+Routine_FF1A88:
 FF/1A88: 1E 5E D2     ASL $D25E,X
 FF/1A8B: 53 66        EOR ($66,S),Y
 FF/1A8D: E7 94        SBC [$94]

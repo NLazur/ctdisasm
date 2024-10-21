@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CD9A
+Routine_D0CD9A:
 D0/CD9A: 80 00        BRA $CD9C
 D0/CD9C: 00 1E        BRK $1E
 D0/CD9E: 30 38        BMI $CDD8

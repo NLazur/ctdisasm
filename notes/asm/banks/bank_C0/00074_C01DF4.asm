@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1DF4
+Routine_C01DF4:
 C0/1DF4: A5 29        LDA $29
 C0/1DF6: D0 11        BNE $1E09
 C0/1DF8: A6 97        LDX $97

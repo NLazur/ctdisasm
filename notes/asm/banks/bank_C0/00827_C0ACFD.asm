@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: ACFD
+Routine_C0ACFD:
 C0/ACFD: E2 10        SEP #$10
 C0/ACFF: 9E 00 19     STZ $1900,X
 C0/AD02: 9E 80 19     STZ $1980,X

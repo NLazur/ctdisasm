@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: A9DB
+Routine_FFA9DB:
 FF/A9DB: 0E C1 1C     ASL $1CC1
 FF/A9DE: B8           CLV
 FF/A9DF: 47 FF        EOR [$FF]

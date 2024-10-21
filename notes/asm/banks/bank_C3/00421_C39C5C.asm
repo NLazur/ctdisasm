@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9C5C
+Routine_C39C5C:
 C3/9C5C: 46 18        LSR $18
 C3/9C5E: 08           PHP
 C3/9C5F: 45 80        EOR $80

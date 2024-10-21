@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1C24
+Routine_C61C24:
 C6/1C24: 07 09        ORA [$09]
 C6/1C26: E0 20        CPX #$20
 C6/1C28: 78           SEI

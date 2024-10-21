@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 21D0
+Routine_C321D0:
 C3/21D0: F0 1B        BEQ $21ED
 C3/21D2: AD 44 05     LDA $0544
 C3/21D5: 5D 0C AD     EOR $AD0C,X

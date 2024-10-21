@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A399
+Routine_C6A399:
 C6/A399: 11 14        ORA ($14),Y
 C6/A39B: 05 06        ORA $06
 C6/A39D: EF 00 15 17  SBC $171500

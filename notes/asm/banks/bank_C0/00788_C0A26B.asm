@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A26B
+Routine_C0A26B:
 C0/A26B: A4 99        LDY $99
 C0/A26D: A9 00        LDA #$00
 C0/A26F: 99 00 19     STA $1900,Y

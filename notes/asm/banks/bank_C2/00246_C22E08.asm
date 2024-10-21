@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2E08
+Routine_C22E08:
 C2/2E08: 0A           ASL
 C2/2E09: 20 7F 7B     JSR $7B7F
 C2/2E0C: 4C 9F 7B     JMP $7B9F

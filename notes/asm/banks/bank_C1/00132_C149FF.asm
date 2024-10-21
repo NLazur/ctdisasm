@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 49FF
+Routine_C149FF:
 C1/49FF: A9 01        LDA #$01
 C1/4A01: 8D 30 99     STA $9930
 C1/4A04: AD 91 AE     LDA $AE91

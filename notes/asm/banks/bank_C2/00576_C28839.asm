@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8839
+Routine_C28839:
 C2/8839: 8F 02 42 00  STA $004202
 C2/883D: 09 00        ORA #$00
 C2/883F: 30 3F        BMI $8880

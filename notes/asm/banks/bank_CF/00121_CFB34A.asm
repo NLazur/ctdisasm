@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: B34A
+Routine_CFB34A:
 CF/B34A: 2D 26 35     AND $3526
 CF/B34D: 26 37        ROL $37
 CF/B34F: 26 39        ROL $39

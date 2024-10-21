@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2ECB
+Routine_D02ECB:
 D0/2ECB: C0 A0 60     CPY #$60A0
 D0/2ECE: D0 30        BNE $2F00
 D0/2ED0: E8           INX

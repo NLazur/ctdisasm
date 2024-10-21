@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9E84
+Routine_C09E84:
 C0/9E84: 64 E5        STZ $E5
 C0/9E86: A4 6D        LDY $6D
 C0/9E88: AD 34 1D     LDA $1D34

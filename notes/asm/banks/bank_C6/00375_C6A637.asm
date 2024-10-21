@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A637
+Routine_C6A637:
 C6/A637: 61 39        ADC ($39,X)
 C6/A639: 51 00        EOR ($00),Y
 C6/A63B: A1 50        LDA ($50,X)

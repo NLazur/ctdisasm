@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2768
+Routine_C22768:
 C2/2768: A5 EF        LDA $EF
 C2/276A: 85 12        STA $12
 C2/276C: A9 7F        LDA #$7F

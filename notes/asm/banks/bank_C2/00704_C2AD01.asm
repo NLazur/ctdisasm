@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AD01
+Routine_C2AD01:
 C2/AD01: C2 20        REP #$20
 C2/AD03: AD 21 0D     LDA $0D21
 C2/AD06: 30 0D        BMI $AD15

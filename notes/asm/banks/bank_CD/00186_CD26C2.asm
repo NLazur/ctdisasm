@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 26C2
+Routine_CD26C2:
 CD/26C2: 0A           ASL
 CD/26C3: AA           TAX
 CD/26C4: C2 20        REP #$20

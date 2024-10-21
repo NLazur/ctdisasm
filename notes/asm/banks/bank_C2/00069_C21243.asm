@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1243
+Routine_C21243:
 C2/1243: E2 20        SEP #$20
 C2/1245: A0 01 00     LDY #$0001
 C2/1248: B7 58        LDA [$58],Y

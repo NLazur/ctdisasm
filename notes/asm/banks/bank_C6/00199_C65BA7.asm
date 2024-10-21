@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5BA7
+Routine_C65BA7:
 C6/5BA7: 18           CLC
 C6/5BA8: 5B           TCD
 C6/5BA9: 18           CLC

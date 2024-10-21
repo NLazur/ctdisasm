@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1DC1
+Routine_D11DC1:
 D1/1DC1: E0 00        CPX #$00
 D1/1DC3: C0 C0        CPY #$C0
 D1/1DC5: 0D 10 80     ORA $8010

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3349
+Routine_C23349:
 C2/3349: E2 20        SEP #$20
 C2/334B: 9C 58 1B     STZ $1B58
 C2/334E: 64 00        STZ $00

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0CEA
+Routine_C20CEA:
 C2/0CEA: 8B           PHB
 C2/0CEB: A9 7E 48     LDA #$487E
 C2/0CEE: AB           PLB

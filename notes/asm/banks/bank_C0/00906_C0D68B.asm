@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: D68B
+Routine_C0D68B:
 C0/D68B: C2 20        REP #$20
 C0/D68D: A6 6D        LDX $6D
 C0/D68F: BD 80 0D     LDA $0D80,X

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C95D
+Routine_FDC95D:
 FD/C95D: C2 20        REP #$20
 FD/C95F: AD 67 34     LDA $3467
 FD/C962: 8D 0C 15     STA $150C

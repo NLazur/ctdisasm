@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E05B
+Routine_CCE05B:
 CC/E05B: 8F 75 43 00  STA $004375
 CC/E05F: A9 00 8F     LDA #$8F00
 CC/E062: 76 43        ROR $43,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E5C5
+Routine_C6E5C5:
 C6/E5C5: A9 7E 8D     LDA #$8D7E
 C6/E5C8: 83 21        STA $21,S
 C6/E5CA: A6 4E        LDX $4E

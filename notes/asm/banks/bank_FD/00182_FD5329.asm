@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5329
+Routine_FD5329:
 FD/5329: 50 A0        BVC $52CB
 FD/532B: 88           DEY
 FD/532C: 84 30        STY $30

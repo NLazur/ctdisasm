@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0FA5
+Routine_C30FA5:
 C3/0FA5: 68           PLA
 C3/0FA6: A5 52        LDA $52
 C3/0FA8: 4A           LSR

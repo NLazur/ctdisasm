@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9E84
+Routine_C39E84:
 C3/9E84: 24 80        BIT $80
 C3/9E86: 80 30        BRA $9EB8
 C3/9E88: 80 A0        BRA $9E2A

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 2A39
+Routine_CE2A39:
 CE/2A39: 20 3C 34     JSR $343C
 CE/2A3C: 1B           TCS
 CE/2A3D: 22 1B 00 03  JSR $03001B

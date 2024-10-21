@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F997
+Routine_C3F997:
 C3/F997: 00 00        BRK $00
 C3/F999: 20 62 00     JSR $0062
 C3/F99C: 10 20        BPL $F9BE

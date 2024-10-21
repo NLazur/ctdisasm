@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: BF8A
+Routine_FEBF8A:
 FE/BF8A: 5F 5A 11 58  EOR $58115A,X
 FE/BF8E: 14 5A        TRB $5A
 FE/BF90: 16 0A        ASL $0A,X

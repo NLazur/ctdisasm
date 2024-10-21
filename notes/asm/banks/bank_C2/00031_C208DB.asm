@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 08DB
+Routine_C208DB:
 C2/08DB: A5 08        LDA $08
 C2/08DD: 85 04        STA $04
 C2/08DF: A5 0A        LDA $0A

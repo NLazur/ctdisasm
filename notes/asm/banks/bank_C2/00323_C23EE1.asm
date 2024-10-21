@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3EE1
+Routine_C23EE1:
 C2/3EE1: BD 18 00     LDA $0018,X
 C2/3EE4: 38           SEC
 C2/3EE5: E9 10 00     SBC #$0010

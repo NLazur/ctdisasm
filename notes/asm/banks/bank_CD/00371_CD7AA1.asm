@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 7AA1
+Routine_CD7AA1:
 CD/7AA1: 00 72        BRK $72
 CD/7AA3: 00 73        BRK $73
 CD/7AA5: 00 24        BRK $24

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5C90
+Routine_C05C90:
 C0/5C90: A5 E3        LDA $E3
 C0/5C92: A2 00 00     LDX #$0000
 C0/5C95: DD 20 09     CMP $0920,X

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 33CA
+Routine_D133CA:
 D1/33CA: FF FF 42 80  SBC $8042FF,X
 D1/33CE: 10 30        BPL $3400
 D1/33D0: C2 40        REP #$40

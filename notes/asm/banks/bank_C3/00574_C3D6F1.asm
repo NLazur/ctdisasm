@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D6F1
+Routine_C3D6F1:
 C3/D6F1: B8           CLV
 C3/D6F2: F7 66        SBC [$66],Y
 C3/D6F4: 31 4E        AND ($4E),Y

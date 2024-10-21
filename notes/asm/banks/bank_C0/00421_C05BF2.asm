@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5BF2
+Routine_C05BF2:
 C0/5BF2: FA           PLX
 C0/5BF3: 5B           TCD
 C0/5BF4: 20 5C 47     JSR $475C

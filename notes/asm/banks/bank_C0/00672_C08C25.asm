@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8C25
+Routine_C08C25:
 C0/8C25: C2 20        REP #$20
 C0/8C27: A5 62        LDA $62
 C0/8C29: 38           SEC

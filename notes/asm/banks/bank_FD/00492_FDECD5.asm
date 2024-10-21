@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: ECD5
+Routine_FDECD5:
 FD/ECD5: 85 0A        STA $0A
 FD/ECD7: A5 17        LDA $17
 FD/ECD9: 29 07        AND #$07

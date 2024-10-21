@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 29B0
+Routine_C329B0:
 C3/29B0: 61 03        ADC ($03,X)
 C3/29B2: E9 1A 03     SBC #$031A
 C3/29B5: 62 03 E9     PER $C312BB

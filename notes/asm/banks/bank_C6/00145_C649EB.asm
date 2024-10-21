@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 49EB
+Routine_C649EB:
 C6/49EB: 8A           TXA
 C6/49EC: 00 50        BRK $50
 C6/49EE: 48           PHA

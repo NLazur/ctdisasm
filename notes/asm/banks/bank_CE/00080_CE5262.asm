@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 5262
+Routine_CE5262:
 CE/5262: 05 1B        ORA $1B
 CE/5264: 2A           ROL
 CE/5265: 73 03        ADC ($03,S),Y

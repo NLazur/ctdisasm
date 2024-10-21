@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 040F
+Routine_C2040F:
 C2/040F: E2 10        SEP #$10
 C2/0411: A2 00        LDX #$00
 C2/0413: C2 20        REP #$20

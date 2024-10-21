@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5628
+Routine_C25628:
 C2/5628: C2 20        REP #$20
 C2/562A: BD 02 00     LDA $0002,X
 C2/562D: 29 FF 00     AND #$00FF

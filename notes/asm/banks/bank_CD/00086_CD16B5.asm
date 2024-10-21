@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 16B5
+Routine_CD16B5:
 CD/16B5: 4A           LSR
 CD/16B6: 2A           ROL
 CD/16B7: CB           WAI

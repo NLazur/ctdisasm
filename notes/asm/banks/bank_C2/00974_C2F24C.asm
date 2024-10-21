@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F24C
+Routine_C2F24C:
 C2/F24C: 08           PHP
 C2/F24D: E2 20        SEP #$20
 C2/F24F: 7B           TDC

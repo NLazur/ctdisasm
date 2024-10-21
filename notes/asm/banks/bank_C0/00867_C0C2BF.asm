@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: C2BF
+Routine_C0C2BF:
 C0/C2BF: 8B           PHB
 C0/C2C0: A9 7F 48     LDA #$487F
 C0/C2C3: AB           PLB

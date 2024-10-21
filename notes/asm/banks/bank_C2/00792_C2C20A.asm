@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C20A
+Routine_C2C20A:
 C2/C20A: 04 10        TSB $10
 C2/C20C: 20 02 FF     JSR $FF02
 C2/C20F: C2 30        REP #$30

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 205B
+Routine_CC205B:
 CC/205B: 00 00        BRK $00
 CC/205D: 3E 90 9B     ROL $9B90,X
 CC/2060: 00 00        BRK $00

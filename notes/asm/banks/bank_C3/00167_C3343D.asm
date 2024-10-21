@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 343D
+Routine_C3343D:
 C3/343D: 00 46        BRK $46
 C3/343F: 00 4D        BRK $4D
 C3/3441: 18           CLC

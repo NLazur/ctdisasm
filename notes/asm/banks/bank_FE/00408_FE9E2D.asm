@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9E2D
+Routine_FE9E2D:
 FE/9E2D: CB           WAI
 FE/9E2E: 80 A7        BRA $9DD7
 FE/9E30: A0 E7        LDY #$E7

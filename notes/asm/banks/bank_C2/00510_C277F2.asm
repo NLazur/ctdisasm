@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 77F2
+Routine_C277F2:
 C2/77F2: AD 94 02     LDA $0294
 C2/77F5: 89 10 D0     BIT #$D010
 C2/77F8: 4E A6 4E     LSR $4EA6

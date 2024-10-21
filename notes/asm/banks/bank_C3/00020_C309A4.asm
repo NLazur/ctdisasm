@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 09A4
+Routine_C309A4:
 C3/09A4: E2 20        SEP #$20
 C3/09A6: AD 88 03     LDA $0388
 C3/09A9: D0 2D        BNE $09D8

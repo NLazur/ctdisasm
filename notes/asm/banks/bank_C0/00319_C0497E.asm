@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 497E
+Routine_C0497E:
 C0/497E: A5 D9        LDA $D9
 C0/4980: 29 F0        AND #$F0
 C0/4982: 99 20 05     STA $0520,Y

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C6E4
+Routine_C3C6E4:
 C3/C6E4: 38           SEC
 C3/C6E5: B4 30        LDY $30,X
 C3/C6E7: 59 13 B0     EOR $B013,Y

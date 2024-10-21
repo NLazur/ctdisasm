@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: E534
+Routine_C0E534:
 C0/E534: 29 FF        AND #$FF
 C0/E536: 07 0A        ORA [$0A]
 C0/E538: 0A           ASL

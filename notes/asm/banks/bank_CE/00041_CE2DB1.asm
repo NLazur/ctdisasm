@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 2DB1
+Routine_CE2DB1:
 CE/2DB1: 0D 72 0D     ORA $0D72
 CE/2DB4: 03 10        ORA $10,S
 CE/2DB6: 02 11        COP $11

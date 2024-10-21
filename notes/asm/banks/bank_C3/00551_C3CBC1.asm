@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CBC1
+Routine_C3CBC1:
 C3/CBC1: 78           SEI
 C3/CBC2: 11 31        ORA ($31),Y
 C3/CBC4: D6 20        DEC $20,X

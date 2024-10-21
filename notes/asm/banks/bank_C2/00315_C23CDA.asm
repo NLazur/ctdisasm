@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3CDA
+Routine_C23CDA:
 C2/3CDA: C2 20        REP #$20
 C2/3CDC: A6 4E        LDX $4E
 C2/3CDE: BD 03 00     LDA $0003,X

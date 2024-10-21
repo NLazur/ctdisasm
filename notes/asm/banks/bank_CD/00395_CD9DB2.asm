@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 9DB2
+Routine_CD9DB2:
 CD/9DB2: 20 5A 36     JSR $365A
 CD/9DB5: 02 05        COP $05
 CD/9DB7: 12 21        ORA ($21)

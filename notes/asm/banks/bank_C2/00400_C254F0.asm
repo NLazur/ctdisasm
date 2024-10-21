@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 54F0
+Routine_C254F0:
 C2/54F0: FE 02 00     INC $0002,X
 C2/54F3: C2 20        REP #$20
 C2/54F5: AD 9A 02     LDA $029A

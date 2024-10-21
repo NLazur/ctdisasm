@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4E78
+Routine_C14E78:
 C1/4E78: AE B6 A2     LDX $A2B6
 C1/4E7B: BD C0 A1     LDA $A1C0,X
 C1/4E7E: D0 11        BNE $4E91

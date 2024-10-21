@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0A6A
+Routine_C20A6A:
 C2/0A6A: 80 FE        BRA $0A6A
 C2/0A6C: A9 10        LDA #$10
 C2/0A6E: 00 85        BRK $85

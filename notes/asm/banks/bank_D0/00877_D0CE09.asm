@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CE09
+Routine_D0CE09:
 D0/CE09: 1F F9 5F 56  ORA $565FF9,X
 D0/CE0D: 39 4F 30     AND $304F,Y
 D0/CE10: 07 08        ORA [$08]

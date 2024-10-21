@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DF76
+Routine_C2DF76:
 C2/DF76: 08           PHP
 C2/DF77: E2 30        SEP #$30
 C2/DF79: AE C9 04     LDX $04C9

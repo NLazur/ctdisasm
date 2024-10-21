@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DD40
+Routine_C2DD40:
 C2/DD40: 08           PHP
 C2/DD41: A9 08 85     LDA #$8508
 C2/DD44: 00 9C        BRK $9C

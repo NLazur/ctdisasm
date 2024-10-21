@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 89F4
+Routine_C689F4:
 C6/89F4: 10 12        BPL $8A08
 C6/89F6: 1E 26 26     ASL $2626,X
 C6/89F9: 08           PHP

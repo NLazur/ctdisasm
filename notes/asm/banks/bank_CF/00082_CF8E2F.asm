@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 8E2F
+Routine_CF8E2F:
 CF/8E2F: 29 04        AND #$04
 CF/8E31: 20 04 20     JSR $2004
 CF/8E34: 62 29 64     PER $CFF260

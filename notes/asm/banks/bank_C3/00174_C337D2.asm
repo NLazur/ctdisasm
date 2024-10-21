@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 37D2
+Routine_C337D2:
 C3/37D2: F1 60        SBC ($60),Y
 C3/37D4: 0A           ASL
 C3/37D5: 61 00        ADC ($00,X)

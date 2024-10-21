@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 46DA
+Routine_FD46DA:
 FD/46DA: D1 08        CMP ($08),Y
 FD/46DC: F8           SED
 FD/46DD: 82 3D 6C     BRL $FDB31D

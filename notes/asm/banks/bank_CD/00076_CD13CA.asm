@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 13CA
+Routine_CD13CA:
 CD/13CA: A5 5B        LDA $5B
 CD/13CC: 29 06        AND #$06
 CD/13CE: AA           TAX

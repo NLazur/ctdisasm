@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 379A
+Routine_C1379A:
 C1/379A: A6 9C        LDX $9C
 C1/379C: 9E FD A5     STZ $A5FD,X
 C1/379F: BD 91 97     LDA $9791,X

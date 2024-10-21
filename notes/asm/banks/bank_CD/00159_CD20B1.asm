@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 20B1
+Routine_CD20B1:
 CD/20B1: 18           CLC
 CD/20B2: 69 20        ADC #$20
 CD/20B4: 10 10        BPL $20C6

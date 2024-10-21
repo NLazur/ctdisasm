@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 9082
+Routine_C19082:
 C1/9082: AE D2 B1     LDX $B1D2
 C1/9085: BF 01 00 CC  LDA $CC0001,X
 C1/9089: 85 08        STA $08

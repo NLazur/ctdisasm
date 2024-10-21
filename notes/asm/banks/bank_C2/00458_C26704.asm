@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6704
+Routine_C26704:
 C2/6704: C2 20        REP #$20
 C2/6706: A4 4E        LDY $4E
 C2/6708: BE 28 00     LDX $0028,Y

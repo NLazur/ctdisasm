@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E22C
+Routine_C2E22C:
 C2/E22C: 20 63 E3     JSR $E363
 C2/E22F: 09 00        ORA #$00
 C2/E231: D0 F8        BNE $E22B

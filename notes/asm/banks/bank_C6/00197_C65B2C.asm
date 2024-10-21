@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5B2C
+Routine_C65B2C:
 C6/5B2C: 01 50        ORA ($50,X)
 C6/5B2E: 4F 85 18 6A  EOR $6A1885
 C6/5B32: 18           CLC

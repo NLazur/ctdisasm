@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C785
+Routine_C3C785:
 C3/C785: 0C 94 F0     TSB $F094
 C3/C788: 53 06        EOR ($06,S),Y
 C3/C78A: B0 40        BCS $C7CC

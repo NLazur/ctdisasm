@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 00A7
+Routine_C100A7:
 C1/00A7: 8B           PHB             ; ++$A9 = $A5 * +$A7
 C1/00A8: 7B           TDC
 C1/00A9: 48           PHA

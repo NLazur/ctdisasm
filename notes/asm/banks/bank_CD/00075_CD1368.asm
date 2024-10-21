@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1368
+Routine_CD1368:
 CD/1368: A9 CF        LDA #$CF
 CD/136A: 85 55        STA $55
 CD/136C: A9 CF        LDA #$CF

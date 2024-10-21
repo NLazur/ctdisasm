@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: BB81
+Routine_D1BB81:
 D1/BB81: C0 66        CPY #$66
 D1/BB83: D8           CLD
 D1/BB84: 37 98        AND [$98],Y

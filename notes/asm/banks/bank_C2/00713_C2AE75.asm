@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AE75
+Routine_C2AE75:
 C2/AE75: 7B           TDC
 C2/AE76: B9 00 25     LDA $2500,Y
 C2/AE79: 8D 4E 0D     STA $0D4E

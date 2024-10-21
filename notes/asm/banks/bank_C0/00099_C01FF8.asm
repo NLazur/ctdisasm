@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1FF8
+Routine_C01FF8:
 C0/1FF8: A9 29        LDA #$29
 C0/1FFA: 3A           DEC
 C0/1FFB: C5 27        CMP $27

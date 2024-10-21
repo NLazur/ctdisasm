@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 423A
+Routine_C1423A:
 C1/423A: 7B           TDC
 C1/423B: AA           TAX
 C1/423C: BD 2F A1     LDA $A12F,X

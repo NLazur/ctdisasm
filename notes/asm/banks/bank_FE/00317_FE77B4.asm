@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 77B4
+Routine_FE77B4:
 FE/77B4: F0 0B        BEQ $77C1
 FE/77B6: F0 F8        BEQ $77B0
 FE/77B8: C0 5D        CPY #$5D

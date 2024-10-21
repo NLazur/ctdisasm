@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1F0E
+Routine_C01F0E:
 C0/1F0E: 85 2A        STA $2A
 C0/1F10: A5 97        LDA $97
 C0/1F12: 85 2E        STA $2E

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CAD9
+Routine_C2CAD9:
 C2/CAD9: 00 10        BRK $10
 C2/CADB: 00 5E        BRK $5E
 C2/CADD: 7E 00 10     ROR $1000,X

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 52FB
+Routine_D052FB:
 D0/52FB: C0 00        CPY #$00
 D0/52FD: C0 40        CPY #$40
 D0/52FF: C0 26        CPY #$26

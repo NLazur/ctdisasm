@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 52C0
+Routine_C052C0:
 C0/52C0: A6 6D        LDX $6D
 C0/52C2: BD 01 1A     LDA $1A01,X
 C0/52C5: F0 03        BEQ $52CA

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6B01
+Routine_FE6B01:
 FE/6B01: B2 06        LDA ($06)
 FE/6B03: C2 7E        REP #$7E
 FE/6B05: 10 00        BPL $6B07

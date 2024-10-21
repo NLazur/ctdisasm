@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9C8C
+Routine_C69C8C:
 C6/9C8C: E8           INX
 C6/9C8D: 92 05        STA ($05)
 C6/9C8F: 5E 40 2F     LSR $2F40,X

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: C49A
+Routine_FFC49A:
 FF/C49A: C8           INY
 FF/C49B: 80 C8        BRA $C465
 FF/C49D: C4 C8        CPY $C8

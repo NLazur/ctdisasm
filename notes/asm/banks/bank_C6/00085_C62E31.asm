@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 2E31
+Routine_C62E31:
 C6/2E31: 57 6B        EOR [$6B],Y
 C6/2E33: 1C 03 07     TRB $0703
 C6/2E36: 36 94        ROL $94,X

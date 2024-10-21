@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3BFD
+Routine_CD3BFD:
 CD/3BFD: 18           CLC
 CD/3BFE: 69 40        ADC #$40
 CD/3C00: AA           TAX

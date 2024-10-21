@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1343
+Routine_D11343:
 D1/1343: 5A           PHY
 D1/1344: 00 00        BRK $00
 D1/1346: 22 80 40 40  JSR $404080

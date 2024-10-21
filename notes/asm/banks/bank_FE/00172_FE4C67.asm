@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 4C67
+Routine_FE4C67:
 FE/4C67: A0 40 83     LDY #$8340
 FE/4C6A: CF 00 EB C7  CMP $C7EB00
 FE/4C6E: 51 C7        EOR ($C7),Y

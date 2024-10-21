@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0535
+Routine_C20535:
 C2/0535: BD 00 00     LDA $0000,X
 C2/0538: 85 50        STA $50
 C2/053A: E2 20        SEP #$20

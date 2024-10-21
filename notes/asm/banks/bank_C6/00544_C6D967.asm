@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D967
+Routine_C6D967:
 C6/D967: 14 11        TRB $11
 C6/D969: 41 00        EOR ($00,X)
 C6/D96B: 44 44 AE     MVP $44,$AE

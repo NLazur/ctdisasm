@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E670
+Routine_FEE670:
 FE/E670: 64 48        STZ $48
 FE/E672: 00 40        BRK $40
 FE/E674: 01 09        ORA ($09,X)

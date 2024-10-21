@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 58D0
+Routine_C258D0:
 C2/58D0: C9 21        CMP #$21
 C2/58D2: 90 29        BCC $58FD
 C2/58D4: 85 3B        STA $3B

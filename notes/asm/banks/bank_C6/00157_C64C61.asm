@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4C61
+Routine_C64C61:
 C6/4C61: 48           PHA
 C6/4C62: C0 6C 10     CPY #$106C
 C6/4C65: 00 00        BRK $00

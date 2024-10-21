@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9DB4
+Routine_C09DB4:
 C0/9DB4: A9 00        LDA #$00
 C0/9DB6: 38           SEC
 C0/9DB7: E5 52        SBC $52

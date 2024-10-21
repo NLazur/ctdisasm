@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5823
+Routine_C25823:
 C2/5823: 08           PHP
 C2/5824: C2 20        REP #$20
 C2/5826: 0B           PHD

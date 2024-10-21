@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A61A
+Routine_C0A61A:
 C0/A61A: 29 7F        AND #$7F
 C0/A61C: 85 58        STA $58
 C0/A61E: 9F C0 30 7E  STA $7E30C0,X

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 04FD
+Routine_CD04FD:
 CD/04FD: A9 08        LDA #$08
 CD/04FF: A2 80 00     LDX #$0080
 CD/0502: 20 71 3B     JSR $3B71

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0E4A
+Routine_C20E4A:
 C2/0E4A: 5A           PHY
 C2/0E4B: 0E 6B 0E     ASL $0E6B
 C2/0E4E: 7E 0E 91     ROR $910E,X

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6E5C
+Routine_FE6E5C:
 FE/6E5C: 02 04        COP $04
 FE/6E5E: 08           PHP
 FE/6E5F: 47 0C        EOR [$0C]

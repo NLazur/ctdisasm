@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EA04
+Routine_CEEA04:
 CE/EA04: A5 45        LDA $45
 CE/EA06: 29 02        AND #$02
 CE/EA08: F0 3A        BEQ $EA44

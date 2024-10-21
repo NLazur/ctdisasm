@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3405
+Routine_D03405:
 D0/3405: E0 18        CPX #$18
 D0/3407: F8           SED
 D0/3408: 00 00        BRK $00

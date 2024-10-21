@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 33D0
+Routine_C633D0:
 C6/33D0: 9A           TXS
 C6/33D1: 00 66        BRK $66
 C6/33D3: 18           CLC

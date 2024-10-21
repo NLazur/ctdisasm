@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B77A
+Routine_C0B77A:
 C0/B77A: 29 7F C9     AND #$C97F
 C0/B77D: 03 B0        ORA $B0,S
 C0/B77F: EB           XBA

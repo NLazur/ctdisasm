@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F6F5
+Routine_C2F6F5:
 C2/F6F5: E6 16        INC $16
 C2/F6F7: A4 16        LDY $16
 C2/F6F9: B7 1E        LDA [$1E],Y

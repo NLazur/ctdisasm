@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 0738
+Routine_CC0738:
 CC/0738: 00 00        BRK $00
 CC/073A: 00 70        BRK $70
 CC/073C: 94 40        STY $40,X

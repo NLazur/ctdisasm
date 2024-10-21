@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 973A
+Routine_CD973A:
 CD/973A: 00 73        BRK $73
 CD/973C: 03 24        ORA $24,S
 CD/973E: 01 1B        ORA ($1B,X)

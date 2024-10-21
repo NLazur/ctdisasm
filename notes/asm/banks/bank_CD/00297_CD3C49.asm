@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3C49
+Routine_CD3C49:
 CD/3C49: 8F 03 42 00  STA $004203
 CD/3C4D: EA           NOP
 CD/3C4E: EA           NOP

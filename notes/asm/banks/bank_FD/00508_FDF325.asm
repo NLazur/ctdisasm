@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F325
+Routine_FDF325:
 FD/F325: 80 80        BRA $F2A7
 FD/F327: 61 00        ADC ($00,X)
 FD/F329: 62 80 62     PER $FD55AC

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4705
+Routine_C24705:
 C2/4705: A9 40 1C     LDA #$1C40
 C2/4708: 94 02        STY $02,X
 C2/470A: 9E 02 00     STZ $0002,X

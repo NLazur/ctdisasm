@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: EB2F
+Routine_FFEB2F:
 FF/EB2F: 1C 13 81     TRB $8113
 FF/EB32: B0 23        BCS $EB57
 FF/EB34: 7C 44 B8     JMP ($B844,X)

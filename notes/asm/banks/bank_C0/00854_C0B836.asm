@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B836
+Routine_C0B836:
 C0/B836: A5 C5        LDA $C5
 C0/B838: 10 48        BPL $B882
 C0/B83A: BD C4 4B     LDA $4BC4,X

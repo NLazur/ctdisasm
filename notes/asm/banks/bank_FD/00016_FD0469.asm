@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 0469
+Routine_FD0469:
 FD/0469: 61 62        ADC ($62,X)
 FD/046B: 63 64        ADC $64,S
 FD/046D: 65 81        ADC $81

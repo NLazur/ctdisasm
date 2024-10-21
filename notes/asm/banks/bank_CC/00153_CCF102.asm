@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F102
+Routine_CCF102:
 CC/F102: 7B           TDC
 CC/F103: AA           TAX
 CC/F104: A9 55        LDA #$55

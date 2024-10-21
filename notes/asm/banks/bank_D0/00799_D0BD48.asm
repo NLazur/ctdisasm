@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: BD48
+Routine_D0BD48:
 D0/BD48: 20 40 20     JSR $2040
 D0/BD4B: C0 C0 00     CPY #$00C0
 D0/BD4E: C0 00 03     CPY #$0300

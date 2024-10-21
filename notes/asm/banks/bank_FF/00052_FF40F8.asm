@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 40F8
+Routine_FF40F8:
 FF/40F8: 00 80        BRK $80
 FF/40FA: 00 00        BRK $00
 FF/40FC: 00 00        BRK $00

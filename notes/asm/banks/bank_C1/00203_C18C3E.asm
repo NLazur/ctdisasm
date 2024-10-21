@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8C3E
+Routine_C18C3E:
 C1/8C3E: 7B           TDC
 C1/8C3F: AD 52 B2     LDA $B252
 C1/8C42: AA           TAX

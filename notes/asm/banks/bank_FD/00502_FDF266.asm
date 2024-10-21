@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F266
+Routine_FDF266:
 FD/F266: 9C 21 21     STZ $2121
 FD/F269: 9C 0B 42     STZ $420B
 FD/F26C: A9 42        LDA #$42

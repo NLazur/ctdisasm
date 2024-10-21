@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F74D
+Routine_D1F74D:
 D1/F74D: A5 53        LDA $53
 D1/F74F: 29 F0        AND #$F0
 D1/F751: AA           TAX

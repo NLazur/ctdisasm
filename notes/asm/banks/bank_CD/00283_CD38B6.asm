@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 38B6
+Routine_CD38B6:
 CD/38B6: DA           PHX
 CD/38B7: C2 20        REP #$20
 CD/38B9: 0A           ASL

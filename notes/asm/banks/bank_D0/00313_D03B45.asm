@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3B45
+Routine_D03B45:
 D0/3B45: C0 80 80     CPY #$8080
 D0/3B48: 16 1E        ASL $1E,X
 D0/3B4A: 18           CLC

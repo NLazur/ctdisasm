@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 566A
+Routine_C2566A:
 C2/566A: A6 4E        LDX $4E
 C2/566C: FE 02 00     INC $0002,X
 C2/566F: 9E 0E 00     STZ $000E,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 06D5
+Routine_C206D5:
 C2/06D5: BD E3 00     LDA $00E3,X
 C2/06D8: 3A           DEC
 C2/06D9: 10 03        BPL $06DE

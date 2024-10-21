@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 4C34
+Routine_CE4C34:
 CE/4C34: 05 24        ORA $24
 CE/4C36: 05 6D        ORA $6D
 CE/4C38: 1E 04 36     ASL $3604,X

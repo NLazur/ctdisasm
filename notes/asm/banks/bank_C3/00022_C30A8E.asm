@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0A8E
+Routine_C30A8E:
 C3/0A8E: E2 20        SEP #$20
 C3/0A90: AD 12 42     LDA $4212
 C3/0A93: 89 01        BIT #$01

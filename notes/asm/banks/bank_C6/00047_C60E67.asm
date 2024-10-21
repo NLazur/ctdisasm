@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0E67
+Routine_C60E67:
 C6/0E67: EC 02 7C     CPX $7C02
 C6/0E6A: F0 FF        BEQ $0E6B
 C6/0E6C: 01 F0        ORA ($F0,X)

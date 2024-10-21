@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 133F
+Routine_C6133F:
 C6/133F: CF A2 DD 40  CMP $40DDA2
 C6/1343: 1B           TCS
 C6/1344: 01 F7        ORA ($F7,X)

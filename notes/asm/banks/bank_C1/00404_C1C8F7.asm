@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C8F7
+Routine_C1C8F7:
 C1/C8F7: C9 FF        CMP #$FF
 C1/C8F9: F0 0F        BEQ $C90A
 C1/C8FB: AA           TAX

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 746D
+Routine_FD746D:
 FD/746D: 01 01        ORA ($01,X)
 FD/746F: 03 03        ORA $03,S
 FD/7471: 06 07        ASL $07

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C6D0
+Routine_C2C6D0:
 C2/C6D0: 2C 0D 0F     BIT $0F0D
 C2/C6D3: 70 09        BVS $C6DE
 C2/C6D5: AD 0D 0F     LDA $0F0D

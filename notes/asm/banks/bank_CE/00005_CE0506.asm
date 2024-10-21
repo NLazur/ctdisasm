@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 0506
+Routine_CE0506:
 CE/0506: 01 02        ORA ($02,X)
 CE/0508: 01 70        ORA ($70,X)
 CE/050A: 12 0C        ORA ($0C)

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1ECF
+Routine_CC1ECF:
 CC/1ECF: 22 00 23 04  JSR $042300
 CC/1ED3: 80 08        BRA $1EDD
 CC/1ED5: 08           PHP

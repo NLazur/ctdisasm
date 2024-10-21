@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 305D
+Routine_C0305D:
 C0/305D: A6 6D        LDX $6D
 C0/305F: 9E 00 19     STZ $1900,X
 C0/3062: 9E 80 19     STZ $1980,X

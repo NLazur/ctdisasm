@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F227
+Routine_C2F227:
 C2/F227: 5A           PHY
 C2/F228: 8B           PHB
 C2/F229: 08           PHP

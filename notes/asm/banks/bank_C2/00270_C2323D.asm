@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 323D
+Routine_C2323D:
 C2/323D: AD 9E 02     LDA $029E
 C2/3240: 29 03        AND #$03
 C2/3242: D0 06        BNE $324A

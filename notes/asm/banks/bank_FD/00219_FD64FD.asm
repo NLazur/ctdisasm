@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 64FD
+Routine_FD64FD:
 FD/64FD: F8           SED
 FD/64FE: 41 9C        EOR ($9C,X)
 FD/6500: 06 BE        ASL $BE

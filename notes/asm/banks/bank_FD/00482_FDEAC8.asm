@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EAC8
+Routine_FDEAC8:
 FD/EAC8: 9C 0B 42     STZ $420B
 FD/EACB: 9C 0C 42     STZ $420C
 FD/EACE: A9 80        LDA #$80

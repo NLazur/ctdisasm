@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1AFE
+Routine_C01AFE:
 C0/1AFE: A5 63        LDA $63
 C0/1B00: 30 0A        BMI $1B0C
 C0/1B02: C9 04        CMP #$04

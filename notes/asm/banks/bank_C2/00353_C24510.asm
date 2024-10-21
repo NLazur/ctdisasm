@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4510
+Routine_C24510:
 C2/4510: E2 20        SEP #$20
 C2/4512: AD 94 02     LDA $0294
 C2/4515: 89 08        BIT #$08

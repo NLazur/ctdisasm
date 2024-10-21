@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9B62
+Routine_C09B62:
 C0/9B62: A5 5C        LDA $5C
 C0/9B64: 29 18        AND #$18
 C0/9B66: 4A           LSR

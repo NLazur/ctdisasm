@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BC84
+Routine_C2BC84:
 C2/BC84: 9C 4A 0F     STZ $0F4A
 C2/BC87: 9C 48 0F     STZ $0F48
 C2/BC8A: 08           PHP

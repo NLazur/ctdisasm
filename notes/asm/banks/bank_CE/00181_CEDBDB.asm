@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: DBDB
+Routine_CEDBDB:
 CE/DBDB: 5A           PHY
 CE/DBDC: 20 08 02     JSR $0208
 CE/DBDF: 43 19        EOR $19,S

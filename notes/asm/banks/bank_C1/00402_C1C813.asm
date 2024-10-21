@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C813
+Routine_C1C813:
 C1/C813: A5 0A        LDA $0A
 C1/C815: 8D 04 96     STA $9604
 C1/C818: A5 0C        LDA $0C

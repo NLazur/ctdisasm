@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6F62
+Routine_D06F62:
 D0/6F62: F0 F0        BEQ $6F54
 D0/6F64: D0 F0        BNE $6F56
 D0/6F66: 50 F0        BVC $6F58

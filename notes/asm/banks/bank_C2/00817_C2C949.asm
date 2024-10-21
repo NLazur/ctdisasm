@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C949
+Routine_C2C949:
 C2/C949: DA           PHX
 C2/C94A: 08           PHP
 C2/C94B: E2 30        SEP #$30

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 68C5
+Routine_FD68C5:
 FD/68C5: 20 00 00     JSR $0000
 FD/68C8: 90 42        BCC $690C
 FD/68CA: 14 11        TRB $11

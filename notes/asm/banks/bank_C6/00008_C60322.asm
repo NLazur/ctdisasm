@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0322
+Routine_C60322:
 C6/0322: FD 5E 00     SBC $005E,X
 C6/0325: FF DE D6 E6  SBC $E6D6DE,X
 C6/0329: E5 E6        SBC $E6

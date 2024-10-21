@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 775A
+Routine_CF775A:
 CF/775A: 5F A0 AF 50  EOR $50AFA0,X
 CF/775E: 55 AA        EOR $AA,X
 CF/7760: 05 FA        ORA $FA

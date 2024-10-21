@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 59B6
+Routine_CD59B6:
 CD/59B6: 50 A7        BVC $595F
 CD/59B8: 61 E0        ADC ($E0,X)
 CD/59BA: 26 41        ROL $41

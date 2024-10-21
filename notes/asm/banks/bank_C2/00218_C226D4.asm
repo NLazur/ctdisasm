@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 26D4
+Routine_C226D4:
 C2/26D4: 00 00        BRK $00
 C2/26D6: C2 20        REP #$20
 C2/26D8: 8B           PHB

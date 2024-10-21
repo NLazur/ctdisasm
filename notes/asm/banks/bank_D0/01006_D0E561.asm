@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E561
+Routine_D0E561:
 D0/E561: 5A           PHY
 D0/E562: 8D 7F 8D     STA $8D7F
 D0/E565: 80 8D        BRA $E4F4

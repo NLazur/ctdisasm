@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1609
+Routine_CD1609:
 CD/1609: AD EA CC     LDA $CCEA
 CD/160C: D0 45        BNE $1653
 CD/160E: AD 9B 5D     LDA $5D9B

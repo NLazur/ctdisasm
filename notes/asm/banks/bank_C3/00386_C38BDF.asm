@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8BDF
+Routine_C38BDF:
 C3/8BDF: 02 01        COP $01
 C3/8BE1: 52 3D        EOR ($3D)
 C3/8BE3: 11 24        ORA ($24),Y

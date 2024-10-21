@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3FA7
+Routine_C23FA7:
 C2/3FA7: BD 2A 00     LDA $002A,X
 C2/3FAA: 38           SEC
 C2/3FAB: FD 14 00     SBC $0014,X

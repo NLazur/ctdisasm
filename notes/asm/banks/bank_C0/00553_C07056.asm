@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7056
+Routine_C07056:
 C0/7056: A6 6D        LDX $6D
 C0/7058: C2 20        REP #$20
 C0/705A: BD 00 17     LDA $1700,X

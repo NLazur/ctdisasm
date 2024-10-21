@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7170
+Routine_C07170:
 C0/7170: A5 54        LDA $54
 C0/7172: 30 0C        BMI $7180
 C0/7174: A6 6D        LDX $6D

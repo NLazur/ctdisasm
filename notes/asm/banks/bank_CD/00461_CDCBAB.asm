@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CBAB
+Routine_CDCBAB:
 CD/CBAB: A8           TAY
 CD/CBAC: 10 78        BPL $CC26
 CD/CBAE: 9B           TXY

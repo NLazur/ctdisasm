@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: E781
+Routine_CFE781:
 CF/E781: AD 5A AC     LDA $AC5A
 CF/E784: F0 50        BEQ $E7D6
 CF/E786: AD D2 A3     LDA $A3D2

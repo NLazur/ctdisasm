@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6072
+Routine_FE6072:
 FE/6072: 80 80        BRA $5FF4
 FE/6074: C0 80 A0     CPY #$A080
 FE/6077: 02 10        COP $10

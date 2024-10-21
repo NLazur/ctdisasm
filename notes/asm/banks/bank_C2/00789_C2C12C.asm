@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C12C
+Routine_C2C12C:
 C2/C12C: AD 0F 0F     LDA $0F0F
 C2/C12F: F0 0F        BEQ $C140
 C2/C131: A2 8C 0D     LDX #$0D8C

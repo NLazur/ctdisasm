@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 69CD
+Routine_CE69CD:
 CE/69CD: 90 6B        BCC $6A3A
 CE/69CF: 85 09        STA $09
 CE/69D1: 93 09        STA ($09,S),Y

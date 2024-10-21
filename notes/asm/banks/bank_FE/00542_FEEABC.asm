@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EABC
+Routine_FEEABC:
 FE/EABC: F0 07        BEQ $EAC5
 FE/EABE: C0 04        CPY #$04
 FE/EAC0: 04 02        TSB $02

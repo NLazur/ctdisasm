@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5E5E
+Routine_C65E5E:
 C6/5E5E: 28           PLP
 C6/5E5F: E0 0D        CPX #$0D
 C6/5E61: E1 0D        SBC ($0D,X)

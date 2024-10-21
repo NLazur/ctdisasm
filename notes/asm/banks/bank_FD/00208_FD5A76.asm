@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5A76
+Routine_FD5A76:
 FD/5A76: F8           SED
 FD/5A77: 81 A0        STA ($A0,X)
 FD/5A79: 05 02        ORA $02

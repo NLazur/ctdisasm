@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4D04
+Routine_C14D04:
 C1/4D04: A9 02        LDA #$02
 C1/4D06: 85 8E        STA $8E
 C1/4D08: C8           INY

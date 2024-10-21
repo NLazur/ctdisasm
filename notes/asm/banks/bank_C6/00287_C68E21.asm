@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8E21
+Routine_C68E21:
 C6/8E21: C3 7F        CMP $7F,S
 C6/8E23: 01 24        ORA ($24,X)
 C6/8E25: D7 01        CMP [$01],Y

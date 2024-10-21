@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D36C
+Routine_C2D36C:
 C2/D36C: 08           PHP
 C2/D36D: E2 30        SEP #$30
 C2/D36F: 9C 5D 0D     STZ $0D5D

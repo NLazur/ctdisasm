@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: C209
+Routine_C0C209:
 C0/C209: BD C4 4B     LDA $4BC4,X
 C0/C20C: 18           CLC
 C0/C20D: 65 C5        ADC $C5

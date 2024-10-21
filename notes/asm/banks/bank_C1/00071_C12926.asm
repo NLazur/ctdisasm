@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2926
+Routine_C12926:
 C1/2926: A6 80        LDX $80
 C1/2928: BD 65 97     LDA $9765,X
 C1/292B: 4A           LSR

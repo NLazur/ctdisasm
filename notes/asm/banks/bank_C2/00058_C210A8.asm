@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 10A8
+Routine_C210A8:
 C2/10A8: E2 20        SEP #$20
 C2/10AA: A6 4E        LDX $4E
 C2/10AC: A0 01 00     LDY #$0001

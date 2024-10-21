@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 97D5
+Routine_C197D5:
 C1/97D5: 20 14 AC     JSR $AC14
 C1/97D8: AE D2 B1     LDX $B1D2
 C1/97DB: BF 01 00 CC  LDA $CC0001,X

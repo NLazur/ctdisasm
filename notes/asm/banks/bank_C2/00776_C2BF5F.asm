@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BF5F
+Routine_C2BF5F:
 C2/BF5F: AD 0E 0F     LDA $0F0E
 C2/BF62: 0D 0F 0F     ORA $0F0F
 C2/BF65: D0 EB        BNE $BF52

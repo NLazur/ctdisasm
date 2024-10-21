@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E8D6
+Routine_D0E8D6:
 D0/E8D6: 0A           ASL
 D0/E8D7: 79 0A 7A     ADC $7A0A,Y
 D0/E8DA: 0A           ASL

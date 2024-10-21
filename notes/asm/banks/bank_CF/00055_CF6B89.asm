@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 6B89
+Routine_CF6B89:
 CF/6B89: 7C CB FC     JMP ($FCCB,X)
 CF/6B8C: BD FE 7D     LDA $7DFE,X
 CF/6B8F: FE E7 18     INC $18E7,X

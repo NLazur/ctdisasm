@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 0AA5
+Routine_FD0AA5:
 FD/0AA5: 32 66        AND ($66)
 FD/0AA7: 64 23        STZ $23
 FD/0AA9: 33 66        AND ($66,S),Y

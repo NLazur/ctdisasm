@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 0006
+Routine_FD0006:
 FD/0006: 10 28        BPL $0030
 FD/0008: 38           SEC
 FD/0009: 44 2C EA     MVP $2C,$EA

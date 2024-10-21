@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 40C5
+Routine_D040C5:
 D0/40C5: E0 C0 C0     CPX #$C0C0
 D0/40C8: 02 03        COP $03
 D0/40CA: 04 07        TSB $07

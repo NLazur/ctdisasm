@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3896
+Routine_C33896:
 C3/3896: A9 08 85     LDA #$8508
 C3/3899: 3F C2 20 12  AND $1220C2,X
 C3/389D: BD B4 0C     LDA $0CB4,X

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: FC0C
+Routine_D1FC0C:
 D1/FC0C: C2 20        REP #$20
 D1/FC0E: E2 10        SEP #$10
 D1/FC10: A2 70        LDX #$70

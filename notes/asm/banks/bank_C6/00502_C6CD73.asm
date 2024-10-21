@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CD73
+Routine_C6CD73:
 C6/CD73: 19 48 09     ORA $0948,Y
 C6/CD76: 00 29        BRK $29
 C6/CD78: FE 08 6C     INC $6C08,X

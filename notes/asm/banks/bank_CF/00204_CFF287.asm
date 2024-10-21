@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F287
+Routine_CFF287:
 CF/F287: A6 C8        LDX $C8
 CF/F289: C2 21        REP #$21
 CF/F28B: BD 88 A8     LDA $A888,X

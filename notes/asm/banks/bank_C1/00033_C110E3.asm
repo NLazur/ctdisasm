@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 10E3
+Routine_C110E3:
 C1/10E3: AD 3A 99     LDA $993A
 C1/10E6: F0 11        BEQ $10F9
 C1/10E8: 9C 3A 99     STZ $993A

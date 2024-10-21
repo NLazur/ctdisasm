@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: A2DF
+Routine_C3A2DF:
 C3/A2DF: 80 00        BRA $A2E1
 C3/A2E1: 29 04        AND #$04
 C3/A2E3: 09 48        ORA #$48

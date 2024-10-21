@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8DA0
+Routine_FD8DA0:
 FD/8DA0: 01 96        ORA ($96,X)
 FD/8DA2: 04 3D        TSB $3D
 FD/8DA4: 18           CLC

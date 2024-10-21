@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 379B
+Routine_C0379B:
 C0/379B: A6 C7        LDX $C7
 C0/379D: BF 01 20 7F  LDA $7F2001,X
 C0/37A1: C2 20        REP #$20

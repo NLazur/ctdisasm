@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 4471
+Routine_D14471:
 D1/4471: 64 82        STZ $82
 D1/4473: 79 44 7E     ADC $7E44,Y
 D1/4476: CA           DEX

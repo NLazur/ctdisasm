@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 8209
+Routine_CE8209:
 CE/8209: 09 60 02     ORA #$0260
 CE/820C: 02 01        COP $01
 CE/820E: 70 7A        BVS $828A

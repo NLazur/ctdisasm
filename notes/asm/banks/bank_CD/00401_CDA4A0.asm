@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A4A0
+Routine_CDA4A0:
 CD/A4A0: 03 02        ORA $02,S
 CD/A4A2: 03 01        ORA $01,S
 CD/A4A4: 00 25        BRK $25

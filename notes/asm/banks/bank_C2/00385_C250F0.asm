@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 50F0
+Routine_C250F0:
 C2/50F0: A9 03        LDA #$03
 C2/50F2: 9D 02 00     STA $0002,X
 C2/50F5: BD 0F 00     LDA $000F,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 28F9
+Routine_C028F9:
 C0/28F9: DA           PHX
 C0/28FA: AA           TAX
 C0/28FB: E2 20        SEP #$20

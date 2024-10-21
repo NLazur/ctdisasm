@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F3C1
+Routine_C0F3C1:
 C0/F3C1: 39 32 2D     AND $2D32,Y
 C0/F3C4: 28           PLP
 C0/F3C5: 24 20        BIT $20

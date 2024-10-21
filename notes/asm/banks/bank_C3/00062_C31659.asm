@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1659
+Routine_C31659:
 C3/1659: 1C E6 00     TRB $00E6
 C3/165C: 4E F0 4E     LSR $4EF0
 C3/165F: 10 18        BPL $1679

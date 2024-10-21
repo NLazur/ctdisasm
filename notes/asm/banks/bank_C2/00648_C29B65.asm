@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9B65
+Routine_C29B65:
 C2/9B65: 51 A0        EOR ($A0),Y
 C2/9B67: 50 AD        BVC $9B16
 C2/9B69: DA           PHX

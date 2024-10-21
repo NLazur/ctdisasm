@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2FDA
+Routine_C22FDA:
 C2/2FDA: AD 7C 02     LDA $027C
 C2/2FDD: F0 08        BEQ $2FE7
 C2/2FDF: C9 01        CMP #$01

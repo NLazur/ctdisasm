@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 54EA
+Routine_C354EA:
 C3/54EA: 0E 1A 00     ASL $001A
 C3/54ED: 04 8C        TSB $8C
 C3/54EF: FA           PLX

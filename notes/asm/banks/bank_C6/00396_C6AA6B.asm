@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AA6B
+Routine_C6AA6B:
 C6/AA6B: C0 C0 25     CPY #$25C0
 C6/AA6E: 04 EE        TSB $EE
 C6/AA70: A0 06 19     LDY #$1906

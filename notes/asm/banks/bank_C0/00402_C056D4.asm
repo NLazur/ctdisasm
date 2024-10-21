@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 56D4
+Routine_C056D4:
 C0/56D4: C2 20        REP #$20        ; load map event data
 C0/56D6: A6 FE        LDX $FE
 C0/56D8: BF 08 00 F6  LDA $F60008,X

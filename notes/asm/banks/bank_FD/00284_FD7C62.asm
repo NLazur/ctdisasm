@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7C62
+Routine_FD7C62:
 FD/7C62: BB           TYX
 FD/7C63: 09 D9        ORA #$D9
 FD/7C65: 15 FF        ORA $FF,X

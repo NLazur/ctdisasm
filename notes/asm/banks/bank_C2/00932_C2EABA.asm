@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EABA
+Routine_C2EABA:
 C2/EABA: 08           PHP
 C2/EABB: E2 30        SEP #$30
 C2/EABD: 20 03 EB     JSR $EB03

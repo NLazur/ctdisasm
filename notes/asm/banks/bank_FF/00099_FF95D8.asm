@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 95D8
+Routine_FF95D8:
 FF/95D8: 66 44        ROR $44
 FF/95DA: 46 64        LSR $64
 FF/95DC: 7C 38 78     JMP ($7838,X)

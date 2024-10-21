@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: DD05
+Routine_C6DD05:
 C6/DD05: 00 00        BRK $00
 C6/DD07: 00 00        BRK $00
 C6/DD09: 00 00        BRK $00

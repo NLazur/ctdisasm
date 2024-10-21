@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8168
+Routine_FD8168:
 FD/8168: 11 78        ORA ($78),Y
 FD/816A: FF 14 FF 00  SBC $00FF14,X
 FD/816E: E3 FF        SBC $FF,S

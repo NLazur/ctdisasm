@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 352D
+Routine_CD352D:
 CD/352D: AD AA CA     LDA $CAAA
 CD/3530: AA           TAX
 CD/3531: BD A4 CA     LDA $CAA4,X

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2C51
+Routine_FD2C51:
 FD/2C51: 02 87        COP $87
 FD/2C53: E3 10        SBC $10,S
 FD/2C55: 18           CLC

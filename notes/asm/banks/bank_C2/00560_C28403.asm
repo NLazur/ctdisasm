@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8403
+Routine_C28403:
 C2/8403: 4C 1E 82     JMP $821E
 C2/8406: 5C 0E 84 C2  JMP $C2840E
 C2/840A: 5C 72 84 C2  JMP $C28472

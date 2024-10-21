@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: DB6B
+Routine_D0DB6B:
 D0/DB6B: C0 80        CPY #$80
 D0/DB6D: 80 00        BRA $DB6F
 D0/DB6F: 00 C0        BRK $C0

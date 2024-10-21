@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 7A9D
+Routine_D07A9D:
 D0/7A9D: C0 30        CPY #$30
 D0/7A9F: F0 30        BEQ $7AD1
 D0/7AA1: 70 70        BVS $7B13

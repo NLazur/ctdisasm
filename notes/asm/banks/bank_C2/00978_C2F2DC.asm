@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F2DC
+Routine_C2F2DC:
 C2/F2DC: 20 E2 F2     JSR $F2E2
 C2/F2DF: 4C 65 EF     JMP $EF65
 C2/F2E2: 08           PHP

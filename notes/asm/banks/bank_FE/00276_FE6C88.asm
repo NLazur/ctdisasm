@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6C88
+Routine_FE6C88:
 FE/6C88: F8           SED
 FE/6C89: 01 F8        ORA ($F8,X)
 FE/6C8B: 0E 88 20     ASL $2088

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 6DBD
+Routine_CD6DBD:
 CD/6DBD: 47 47        EOR [$47]
 CD/6DBF: 47 47        EOR [$47]
 CD/6DC1: 47 47        EOR [$47]

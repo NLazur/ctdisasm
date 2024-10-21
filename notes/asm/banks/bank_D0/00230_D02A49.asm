@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2A49
+Routine_D02A49:
 D0/2A49: C0 00 80     CPY #$8000
 D0/2A4C: 00 80        BRK $80
 D0/2A4E: 80 80        BRA $29D0

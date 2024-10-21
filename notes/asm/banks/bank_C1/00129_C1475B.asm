@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 475B
+Routine_C1475B:
 C1/475B: 38           SEC
 C1/475C: AD 93 AE     LDA $AE93
 C1/475F: E9 BC        SBC #$BC

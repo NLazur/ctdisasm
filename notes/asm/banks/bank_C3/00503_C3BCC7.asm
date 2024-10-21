@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BCC7
+Routine_C3BCC7:
 C3/BCC7: AA           TAX
 C3/BCC8: 0E 14 10     ASL $1014
 C3/BCCB: 08           PHP

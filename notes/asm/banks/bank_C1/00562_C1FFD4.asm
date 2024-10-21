@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: FFD4
+Routine_C1FFD4:
 C1/FFD4: 37 B1        AND [$B1],Y
 C1/FFD6: FD 22 DA     SBC $DA22,X
 C1/FFD9: AD FD 60     LDA $60FD

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2308
+Routine_D12308:
 D1/2308: C1 08        CMP ($08,X)
 D1/230A: C1 08        CMP ($08,X)
 D1/230C: 81 0A        STA ($0A,X)

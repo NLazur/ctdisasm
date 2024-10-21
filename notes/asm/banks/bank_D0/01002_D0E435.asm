@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E435
+Routine_D0E435:
 D0/E435: 20 5F 4C     JSR $4C5F
 D0/E438: 3C 14 28     BIT $2814,X
 D0/E43B: 80 2A        BRA $E467

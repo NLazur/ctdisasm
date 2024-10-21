@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5A93
+Routine_C05A93:
 C0/5A93: A5 68        LDA $68
 C0/5A95: 85 67        STA $67
 C0/5A97: C2 20        REP #$20

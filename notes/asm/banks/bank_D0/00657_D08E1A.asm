@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8E1A
+Routine_D08E1A:
 D0/8E1A: 9F 60 8F 70  STA $708F60,X
 D0/8E1E: 8F 78 7F 3F  STA $3F7F78
 D0/8E22: 07 02        ORA [$02]

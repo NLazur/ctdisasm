@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 17AB
+Routine_C217AB:
 C2/17AB: BD 18 00     LDA $0018,X
 C2/17AE: 10 13        BPL $17C3
 C2/17B0: 18           CLC

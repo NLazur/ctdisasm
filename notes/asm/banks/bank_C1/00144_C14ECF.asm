@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4ECF
+Routine_C14ECF:
 C1/4ECF: AD 18 A0     LDA $A018
 C1/4ED2: AA           TAX
 C1/4ED3: BD 50 A1     LDA $A150,X

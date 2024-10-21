@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9774
+Routine_FE9774:
 FE/9774: A6 42        LDX $42
 FE/9776: C3 09        CMP $09,S
 FE/9778: 0E 16 00     ASL $0016

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0000
+Routine_C20000:
 C2/0000: 4C 0F 00     JMP $000F
 C2/0003: 4C DF 57     JMP $57DF
 C2/0006: 4C DF 57     JMP $57DF

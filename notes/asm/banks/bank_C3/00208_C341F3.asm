@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 41F3
+Routine_C341F3:
 C3/41F3: 23 10        AND $10,S
 C3/41F5: B8           CLV
 C3/41F6: 1C 23 90     TRB $9023

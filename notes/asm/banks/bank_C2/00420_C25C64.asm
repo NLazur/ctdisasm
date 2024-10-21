@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5C64
+Routine_C25C64:
 C2/5C64: 5C 70 5C 75  JMP $755C70
 C2/5C68: 5C 64 30 A9  JMP $A93064
 C2/5C6C: 10 85        BPL $5BF3

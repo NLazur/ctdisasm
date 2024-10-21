@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: BF81
+Routine_C1BF81:
 C1/BF81: 7B           TDC
 C1/BF82: A8           TAY
 C1/BF83: AD 8C B1     LDA $B18C

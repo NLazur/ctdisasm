@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C8AE
+Routine_C6C8AE:
 C6/C8AE: F8           SED
 C6/C8AF: 12 70        ORA ($70)
 C6/C8B1: 39 00 30     AND $3000,Y

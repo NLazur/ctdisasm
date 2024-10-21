@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C743
+Routine_D0C743:
 D0/C743: 50 B0        BVC $C6F5
 D0/C745: D0 40        BNE $C787
 D0/C747: A0 FC        LDY #$FC

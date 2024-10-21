@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EB0E
+Routine_C1EB0E:
 C1/EB0E: 7B           TDC
 C1/EB0F: AD ED AE     LDA $AEED
 C1/EB12: 8D 4D AE     STA $AE4D

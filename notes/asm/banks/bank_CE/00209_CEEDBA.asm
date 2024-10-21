@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EDBA
+Routine_CEEDBA:
 CE/EDBA: 7B           TDC
 CE/EDBB: AA           TAX
 CE/EDBC: A0 7C 03     LDY #$037C

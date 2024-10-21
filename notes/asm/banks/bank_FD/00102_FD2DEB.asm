@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2DEB
+Routine_FD2DEB:
 FD/2DEB: 04 8A        TSB $8A
 FD/2DED: 75 FE        ADC $FE,X
 FD/2DEF: 00 01        BRK $01

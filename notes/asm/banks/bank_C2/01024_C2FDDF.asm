@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FDDF
+Routine_C2FDDF:
 C2/FDDF: 08           PHP
 C2/FDE0: E2 30        SEP #$30
 C2/FDE2: A2 00        LDX #$00

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2D2B
+Routine_C32D2B:
 C3/2D2B: A5 77        LDA $77
 C3/2D2D: 20 D3 00     JSR $00D3
 C3/2D30: 50 A5        BVC $2CD7

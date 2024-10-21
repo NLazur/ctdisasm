@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6BD8
+Routine_C26BD8:
 C2/6BD8: E2 20        SEP #$20
 C2/6BDA: A9 18        LDA #$18
 C2/6BDC: 8D 00 1E     STA $1E00

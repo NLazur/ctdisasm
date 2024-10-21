@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 39F4
+Routine_C039F4:
 C0/39F4: 8B           PHB
 C0/39F5: A2 E0 21     LDX #$21E0
 C0/39F8: A0 C0 21     LDY #$21C0

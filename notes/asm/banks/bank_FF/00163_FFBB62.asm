@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: BB62
+Routine_FFBB62:
 FF/BB62: 5F 50 5F 20  EOR $205F50,X
 FF/BB66: 00 00        BRK $00
 FF/BB68: 0D 10 0C     ORA $0C10

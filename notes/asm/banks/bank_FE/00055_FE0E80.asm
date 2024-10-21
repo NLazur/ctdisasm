@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0E80
+Routine_FE0E80:
 FE/0E80: 07 00        ORA [$00]
 FE/0E82: 04 41        TSB $41
 FE/0E84: F8           SED

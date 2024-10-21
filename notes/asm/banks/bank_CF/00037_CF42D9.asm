@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 42D9
+Routine_CF42D9:
 CF/42D9: F0 80        BEQ $425B
 CF/42DB: E0 00        CPX #$00
 CF/42DD: C0 00        CPY #$00

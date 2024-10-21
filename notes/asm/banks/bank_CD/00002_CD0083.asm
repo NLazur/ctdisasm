@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0083
+Routine_CD0083:
 CD/0083: AD 00 CD     LDA $CD00
 CD/0086: AA           TAX
 CD/0087: BD 1D A0     LDA $A01D,X

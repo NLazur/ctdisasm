@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A86B
+Routine_C0A86B:
 C0/A86B: 20 47 A9     JSR $A947
 C0/A86E: 80 CE        BRA $A83E
 C0/A870: 20 FD AA     JSR $AAFD

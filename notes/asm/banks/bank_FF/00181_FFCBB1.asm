@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: CBB1
+Routine_FFCBB1:
 FF/CBB1: 4A           LSR
 FF/CBB2: E0 7F 00     CPX #$007F
 FF/CBB5: 00 84        BRK $84

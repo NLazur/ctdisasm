@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3C71
+Routine_C33C71:
 C3/3C71: CE 99 03     DEC $0399
 C3/3C74: 08           PHP
 C3/3C75: D0 FA        BNE $3C71

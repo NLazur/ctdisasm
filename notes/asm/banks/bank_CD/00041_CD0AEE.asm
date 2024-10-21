@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0AEE
+Routine_CD0AEE:
 CD/0AEE: A9 44        LDA #$44
 CD/0AF0: 8D 70 43     STA $4370
 CD/0AF3: A9 26        LDA #$26

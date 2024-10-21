@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0CD5
+Routine_FE0CD5:
 FE/0CD5: B6 6F        LDX $6F,Y
 FE/0CD7: 8A           TXA
 FE/0CD8: 05 40        ORA $40

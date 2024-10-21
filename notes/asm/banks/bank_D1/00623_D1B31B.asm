@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: B31B
+Routine_D1B31B:
 D1/B31B: 6A           ROR
 D1/B31C: 69 30        ADC #$30
 D1/B31E: 31 32        AND ($32),Y

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6C27
+Routine_FD6C27:
 FD/6C27: C8           INY
 FD/6C28: 80 00        BRA $6C2A
 FD/6C2A: 23 24        AND $24,S

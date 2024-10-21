@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7D98
+Routine_FD7D98:
 FD/7D98: 48           PHA
 FD/7D99: F0 FF        BEQ $7D9A
 FD/7D9B: FF C1 ED 00  SBC $00EDC1,X

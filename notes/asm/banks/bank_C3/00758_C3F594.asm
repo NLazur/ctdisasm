@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F594
+Routine_C3F594:
 C3/F594: F0 E8        BEQ $F57E
 C3/F596: 42 00        WDM $00
 C3/F598: FF E8 42 40  SBC $4042E8,X

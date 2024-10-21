@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 99CA
+Routine_C299CA:
 C2/99CA: CE 99 1B     DEC $1B99
 C2/99CD: 9A           TXS
 C2/99CE: 64 7F        STZ $7F

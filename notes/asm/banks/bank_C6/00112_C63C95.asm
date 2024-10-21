@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3C95
+Routine_C63C95:
 C6/3C95: 80 00        BRA $3C97
 C6/3C97: 70 00        BVS $3C99
 C6/3C99: 01 81        ORA ($81,X)

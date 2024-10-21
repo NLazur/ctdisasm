@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8B93
+Routine_C28B93:
 C2/8B93: 08           PHP
 C2/8B94: E2 20        SEP #$20
 C2/8B96: 9C 9A 0D     STZ $0D9A

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 340C
+Routine_C2340C:
 C2/340C: A6 4E        LDX $4E
 C2/340E: AD 7E 02     LDA $027E
 C2/3411: CD 7F 02     CMP $027F

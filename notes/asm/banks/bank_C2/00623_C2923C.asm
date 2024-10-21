@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 923C
+Routine_C2923C:
 C2/923C: A9 10        LDA #$10
 C2/923E: 8F 02 42 00  STA $004202
 C2/9242: AD 1C 9B     LDA $9B1C

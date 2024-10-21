@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2D7C
+Routine_D02D7C:
 D0/2D7C: A0 E0        LDY #$E0
 D0/2D7E: A0 E0        LDY #$E0
 D0/2D80: 20 E0 A0     JSR $A0E0

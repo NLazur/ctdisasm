@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C26C
+Routine_C2C26C:
 C2/C26C: E2 30        SEP #$30
 C2/C26E: A6 02        LDX $02
 C2/C270: BD 9A 96     LDA $969A,X

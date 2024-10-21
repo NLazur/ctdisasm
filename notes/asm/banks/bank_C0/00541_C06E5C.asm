@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6E5C
+Routine_C06E5C:
 C0/6E5C: AF 91 29 7E  LDA $7E2991
 C0/6E60: C2 20        REP #$20
 C0/6E62: 29 07 00     AND #$0007

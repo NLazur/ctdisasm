@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 95B4
+Routine_C095B4:
 C0/95B4: 85 66        STA $66
 C0/95B6: A6 8D        LDX $8D
 C0/95B8: CA           DEX

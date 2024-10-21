@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 626E
+Routine_C2626E:
 C2/626E: AE 34 1B     LDX $1B34
 C2/6271: BF 02 83 7E  LDA $7E8302,X
 C2/6275: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: FDE2
+Routine_C1FDE2:
 C1/FDE2: 28           PLP
 C1/FDE3: 85 2A        STA $2A
 C1/FDE5: 85 2C        STA $2C

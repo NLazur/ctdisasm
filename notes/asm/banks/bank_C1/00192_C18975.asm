@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 8975
+Routine_C18975:
 C1/8975: 7B           TDC
 C1/8976: AD 7B B1     LDA $B17B
 C1/8979: D0 03        BNE $897E

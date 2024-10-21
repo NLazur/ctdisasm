@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 7EA8
+Routine_CF7EA8:
 CF/7EA8: 0F 30 27 38  ORA $382730
 CF/7EAC: 17 18        ORA [$18],Y
 CF/7EAE: 03 0C        ORA $0C,S

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: EDE1
+Routine_C6EDE1:
 C6/EDE1: A6 08        LDX $08
 C6/EDE3: A5 0D        LDA $0D
 C6/EDE5: 8E 04 42     STX $4204

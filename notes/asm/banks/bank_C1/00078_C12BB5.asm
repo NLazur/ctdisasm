@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2BB5
+Routine_C12BB5:
 C1/2BB5: 7B           TDC
 C1/2BB6: E2 20        SEP #$20
 C1/2BB8: 8D 72 98     STA $9872

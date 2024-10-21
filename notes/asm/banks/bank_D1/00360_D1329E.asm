@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 329E
+Routine_D1329E:
 D1/329E: E4 00        CPX $00
 D1/32A0: E4 1A        CPX $1A
 D1/32A2: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: E77C
+Routine_D1E77C:
 D1/E77C: C2 30        REP #$30
 D1/E77E: 48           PHA
 D1/E77F: DA           PHX

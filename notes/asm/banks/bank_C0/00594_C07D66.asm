@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 7D66
+Routine_C07D66:
 C0/7D66: A5 5A        LDA $5A
 C0/7D68: 89 01        BIT #$01
 C0/7D6A: F0 03        BEQ $7D6F

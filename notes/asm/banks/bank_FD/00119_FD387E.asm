@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 387E
+Routine_FD387E:
 FD/387E: FE 01 F0     INC $F001,X
 FD/3881: 0F F0 0F 3A  ORA $3A0FF0
 FD/3885: 10 00        BPL $3887

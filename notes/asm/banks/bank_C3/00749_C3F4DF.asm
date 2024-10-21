@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F4DF
+Routine_C3F4DF:
 C3/F4DF: 05 F8        ORA $F8
 C3/F4E1: D7 40        CMP [$40],Y
 C3/F4E3: 01 F0        ORA ($F0,X)

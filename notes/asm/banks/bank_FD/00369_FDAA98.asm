@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AA98
+Routine_FDAA98:
 FD/AA98: 7B           TDC
 FD/AA99: AA           TAX
 FD/AA9A: A9 80        LDA #$80

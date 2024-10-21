@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D359
+Routine_C6D359:
 C6/D359: 12 60        ORA ($60)
 C6/D35B: 06 11        ASL $11
 C6/D35D: 42 F8        WDM $F8

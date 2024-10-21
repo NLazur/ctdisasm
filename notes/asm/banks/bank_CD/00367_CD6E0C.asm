@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 6E0C
+Routine_CD6E0C:
 CD/6E0C: 90 80        BCC $6D8E
 CD/6E0E: 90 80        BCC $6D90
 CD/6E10: 1C 6E 2D     TRB $2D6E

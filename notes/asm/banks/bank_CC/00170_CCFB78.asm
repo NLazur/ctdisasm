@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: FB78
+Routine_CCFB78:
 CC/FB78: 51 64        EOR ($64),Y
 CC/FB7A: 79 90 A9     ADC $A990,Y
 CC/FB7D: C4 E1        CPY $E1

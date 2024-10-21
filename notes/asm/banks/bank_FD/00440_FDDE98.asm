@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: DE98
+Routine_FDDE98:
 FD/DE98: 08           PHP
 FD/DE99: 0B           PHD
 FD/DE9A: 8B           PHB

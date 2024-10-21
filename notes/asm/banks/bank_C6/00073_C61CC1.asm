@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1CC1
+Routine_C61CC1:
 C6/1CC1: C0 22 02     CPY #$0222
 C6/1CC4: 26 20        ROL $20
 C6/1CC6: 20 C0 10     JSR $10C0

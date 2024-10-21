@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 8107
+Routine_CE8107:
 CE/8107: 1D 98 00     ORA $0098,X
 CE/810A: 2D 02 04     AND $0402
 CE/810D: 20 14 7B     JSR $7B14

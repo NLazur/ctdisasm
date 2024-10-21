@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: D2F2
+Routine_D1D2F2:
 D1/D2F2: 69 68        ADC #$68
 D1/D2F4: 70 00        BVS $D2F6
 D1/D2F6: 01 4D        ORA ($4D,X)

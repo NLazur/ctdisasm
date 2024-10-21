@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3C6B
+Routine_C63C6B:
 C6/3C6B: 01 48        ORA ($48,X)
 C6/3C6D: 01 70        ORA ($70,X)
 C6/3C6F: 08           PHP

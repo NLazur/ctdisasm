@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 948C
+Routine_D0948C:
 D0/948C: F0 30        BEQ $94BE
 D0/948E: F0 70        BEQ $9500
 D0/9490: F8           SED

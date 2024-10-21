@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C0E9
+Routine_C2C0E9:
 C2/C0E9: AD 1D 0D     LDA $0D1D
 C2/C0EC: 30 1A        BMI $C108
 C2/C0EE: A5 7F        LDA $7F

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B8A4
+Routine_C3B8A4:
 C3/B8A4: 03 3A        ORA $3A,S
 C3/B8A6: 00 A0        BRK $A0
 C3/B8A8: 73 F8        ADC ($F8,S),Y

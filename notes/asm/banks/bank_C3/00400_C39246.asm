@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9246
+Routine_C39246:
 C3/9246: 90 01        BCC $9249
 C3/9248: 04 04        TSB $04
 C3/924A: 01 2A        ORA ($2A,X)

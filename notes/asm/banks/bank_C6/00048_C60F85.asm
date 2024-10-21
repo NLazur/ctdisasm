@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0F85
+Routine_C60F85:
 C6/0F85: F0 4F        BEQ $0FD6
 C6/0F87: AC 73 A6     LDY $A673
 C6/0F8A: 79 FC 70     ADC $70FC,Y

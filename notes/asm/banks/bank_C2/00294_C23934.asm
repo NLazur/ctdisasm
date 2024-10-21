@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3934
+Routine_C23934:
 C2/3934: AD 5A 1B     LDA $1B5A
 C2/3937: 29 FF 00     AND #$00FF
 C2/393A: A8           TAY

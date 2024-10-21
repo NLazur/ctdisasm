@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 41E4
+Routine_C041E4:
 C0/41E4: A5 6D        LDA $6D
 C0/41E6: 85 8D        STA $8D
 C0/41E8: A9 00        LDA #$00

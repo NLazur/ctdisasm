@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 97CC
+Routine_C097CC:
 C0/97CC: A5 76        LDA $76
 C0/97CE: 89 01        BIT #$01
 C0/97D0: F0 0C        BEQ $97DE

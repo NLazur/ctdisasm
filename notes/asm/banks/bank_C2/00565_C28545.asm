@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8545
+Routine_C28545:
 C2/8545: E2 30        SEP #$30
 C2/8547: F4 7E 7E     PEA $7E7E
 C2/854A: AB           PLB

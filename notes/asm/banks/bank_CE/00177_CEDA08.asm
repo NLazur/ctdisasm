@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: DA08
+Routine_CEDA08:
 CE/DA08: 01 C0        ORA ($C0,X)
 CE/DA0A: 2B           PLD
 CE/DA0B: 8B           PHB

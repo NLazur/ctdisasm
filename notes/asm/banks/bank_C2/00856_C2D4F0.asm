@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D4F0
+Routine_C2D4F0:
 C2/D4F0: F8           SED
 C2/D4F1: D4 06        PEI $06
 C2/D4F3: D5 61        CMP $61,X

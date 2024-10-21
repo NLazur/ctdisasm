@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3953
+Routine_C23953:
 C2/3953: E2 20        SEP #$20
 C2/3955: A6 4E        LDX $4E
 C2/3957: 7B           TDC

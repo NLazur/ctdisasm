@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 62ED
+Routine_C262ED:
 C2/62ED: E2 20        SEP #$20
 C2/62EF: A9 7E        LDA #$7E
 C2/62F1: 85 12        STA $12

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 097D
+Routine_D1097D:
 D1/097D: 0C 10 06     TSB $0610
 D1/0980: 00 22        BRK $22
 D1/0982: 00 C0        BRK $C0

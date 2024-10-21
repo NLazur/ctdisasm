@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: BE2D
+Routine_CFBE2D:
 CF/BE2D: 2A           ROL
 CF/BE2E: 62 2A 64     PER $CF225B
 CF/BE31: 2A           ROL

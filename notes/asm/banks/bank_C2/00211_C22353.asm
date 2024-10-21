@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2353
+Routine_C22353:
 C2/2353: A0 02 00     LDY #$0002
 C2/2356: A5 0C        LDA $0C
 C2/2358: 38           SEC

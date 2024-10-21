@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2323
+Routine_C32323:
 C3/2323: A5 08        LDA $08
 C3/2325: 29 03 00     AND #$0003
 C3/2328: D0 28        BNE $2352

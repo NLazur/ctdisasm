@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B49C
+Routine_C2B49C:
 C2/B49C: 20 C2 EA     JSR $EAC2
 C2/B49F: AD 48 0F     LDA $0F48
 C2/B4A2: 85 54        STA $54

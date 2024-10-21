@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 76E6
+Routine_C676E6:
 C6/76E6: 17 06        ORA [$06],Y
 C6/76E8: 44 00 32     MVP $00,$32
 C6/76EB: 4F 2C 2D 23  EOR $232D2C

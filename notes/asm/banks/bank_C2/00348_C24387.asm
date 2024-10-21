@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4387
+Routine_C24387:
 C2/4387: A9 86 8D     LDA #$8D86
 C2/438A: E8           INX
 C2/438B: 1B           TCS

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 9D71
+Routine_D09D71:
 D0/9D71: 7F CB FE 31  ADC $31FECB,X
 D0/9D75: FE 23 DC     INC $DC23,X
 D0/9D78: A0 40        LDY #$40

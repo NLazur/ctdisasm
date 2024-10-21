@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E8E2
+Routine_C1E8E2:
 C1/E8E2: 7B           TDC
 C1/E8E3: A5 1C        LDA $1C
 C1/E8E5: C9 01        CMP #$01

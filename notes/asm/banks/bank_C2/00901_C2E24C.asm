@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E24C
+Routine_C2E24C:
 C2/E24C: A5 54        LDA $54
 C2/E24E: 4A           LSR
 C2/E24F: A9 40        LDA #$40

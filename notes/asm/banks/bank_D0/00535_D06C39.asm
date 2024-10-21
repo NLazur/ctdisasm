@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6C39
+Routine_D06C39:
 D0/6C39: E0 DC 3C     CPX #$3CDC
 D0/6C3C: FB           XCE
 D0/6C3D: 07 FD        ORA [$FD]

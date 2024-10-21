@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B957
+Routine_FDB957:
 FD/B957: 5D B9 72     EOR $72B9,X
 FD/B95A: B9 87 B9     LDA $B987,Y
 FD/B95D: 41 2F        EOR ($2F,X)

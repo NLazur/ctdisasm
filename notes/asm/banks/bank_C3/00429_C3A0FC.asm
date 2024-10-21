@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: A0FC
+Routine_C3A0FC:
 C3/A0FC: 13 41        ORA ($41,S),Y
 C3/A0FE: 00 17        BRK $17
 C3/A100: 10 42        BPL $A144

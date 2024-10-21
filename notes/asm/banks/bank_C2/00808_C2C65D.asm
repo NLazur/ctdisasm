@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C65D
+Routine_C2C65D:
 C2/C65D: 20 84 E9     JSR $E984
 C2/C660: 2C 1D 0D     BIT $0D1D
 C2/C663: 30 0F        BMI $C674

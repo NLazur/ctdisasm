@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: FF62
+Routine_C1FF62:
 C1/FF62: 6E B8 6B     ROR $6BB8
 C1/FF65: BF 05 60 CC  LDA $CC6005,X
 C1/FF69: F0 07        BEQ $FF72

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6B8E
+Routine_C26B8E:
 C2/6B8E: E2 20        SEP #$20
 C2/6B90: DE 22 00     DEC $0022,X
 C2/6B93: 10 03        BPL $6B98

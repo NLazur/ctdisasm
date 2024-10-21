@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 9656
+Routine_FF9656:
 FF/9656: 7E 5C DE     ROR $DE5C,X
 FF/9659: 80 D8        BRA $9633
 FF/965B: 90 DF        BCC $963C

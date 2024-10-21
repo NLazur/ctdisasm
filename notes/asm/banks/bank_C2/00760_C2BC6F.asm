@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BC6F
+Routine_C2BC6F:
 C2/BC6F: AD 19 04     LDA $0419
 C2/BC72: 18           CLC
 C2/BC73: 6D 1A 04     ADC $041A

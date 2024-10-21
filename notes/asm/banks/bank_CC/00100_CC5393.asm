@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 5393
+Routine_CC5393:
 CC/5393: 00 59        BRK $59
 CC/5395: 00 08        BRK $08
 CC/5397: 00 00        BRK $00

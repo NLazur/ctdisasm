@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A98A
+Routine_C0A98A:
 C0/A98A: E2 30        SEP #$30
 C0/A98C: A6 6D        LDX $6D
 C0/A98E: BD 01 0E     LDA $0E01,X

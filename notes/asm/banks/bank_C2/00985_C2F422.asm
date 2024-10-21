@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F422
+Routine_C2F422:
 C2/F422: 08           PHP
 C2/F423: E2 30        SEP #$30
 C2/F425: 64 18        STZ $18

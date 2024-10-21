@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 35E6
+Routine_C635E6:
 C6/35E6: 0E 51 0E     ASL $0E51
 C6/35E9: 51 00        EOR ($00),Y
 C6/35EB: 4E 61 0E     LSR $0E61

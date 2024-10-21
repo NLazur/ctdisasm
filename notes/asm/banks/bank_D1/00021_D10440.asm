@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0440
+Routine_D10440:
 D1/0440: 00 00        BRK $00
 D1/0442: 13 80        ORA ($80,S),Y
 D1/0444: 80 00        BRA $0446

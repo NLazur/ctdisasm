@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BCBA
+Routine_C6BCBA:
 C6/BCBA: BB           TYX
 C6/BCBB: 6A           ROR
 C6/BCBC: 03 CA        ORA $CA,S

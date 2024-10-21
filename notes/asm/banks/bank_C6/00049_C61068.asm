@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1068
+Routine_C61068:
 C6/1068: F0 44        BEQ $10AE
 C6/106A: B8           CLV
 C6/106B: 4C B8 4A     JMP $4AB8

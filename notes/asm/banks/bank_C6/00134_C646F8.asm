@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 46F8
+Routine_C646F8:
 C6/46F8: 04 75        TSB $75
 C6/46FA: 04 76        TSB $76
 C6/46FC: 04 67        TSB $67

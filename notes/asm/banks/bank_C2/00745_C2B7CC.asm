@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B7CC
+Routine_C2B7CC:
 C2/B7CC: AD 21 0D     LDA $0D21
 C2/B7CF: 30 18        BMI $B7E9
 C2/B7D1: A9 64        LDA #$64

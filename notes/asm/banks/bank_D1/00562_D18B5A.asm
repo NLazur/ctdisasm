@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 8B5A
+Routine_D18B5A:
 D1/8B5A: 00 84        BRK $84
 D1/8B5C: 8E 00 19     STX $1900
 D1/8B5F: 02 00        COP $00

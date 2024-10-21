@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 21A8
+Routine_C021A8:
 C0/21A8: AD 16 02     LDA $0216
 C0/21AB: F0 2B        BEQ $21D8
 C0/21AD: 8D 02 42     STA $4202

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A718
+Routine_CDA718:
 CD/A718: 70 02        BVS $A71C
 CD/A71A: 00 24        BRK $24
 CD/A71C: 02 71        COP $71

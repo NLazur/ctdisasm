@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 22B7
+Routine_C122B7:
 C1/22B7: 8A           TXA
 C1/22B8: 8D 05 96     STA $9605
 C1/22BB: AD 0D 96     LDA $960D

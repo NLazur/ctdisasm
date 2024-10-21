@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4BB2
+Routine_D04BB2:
 D0/4BB2: 00 00        BRK $00
 D0/4BB4: 20 20 00     JSR $0020
 D0/4BB7: 00 00        BRK $00

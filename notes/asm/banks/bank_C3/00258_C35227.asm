@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5227
+Routine_C35227:
 C3/5227: 4B           PHK
 C3/5228: AB           PLB
 C3/5229: 01 BB        ORA ($BB,X)

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1B47
+Routine_C01B47:
 C0/1B47: 38           SEC
 C0/1B48: E9 20 00     SBC #$0020
 C0/1B4B: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: F880
+Routine_CEF880:
 CE/F880: 89 BD        BIT #$BD
 CE/F882: 53 89        EOR ($89,S),Y
 CE/F884: BD 00 04     LDA $0400,X

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2B72
+Routine_C32B72:
 C3/2B72: AD 00 0A     LDA $0A00
 C3/2B75: 5E 17 F2     LSR $F217,X
 C3/2B78: 00 EB        BRK $EB

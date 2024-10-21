@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AD68
+Routine_C1AD68:
 C1/AD68: 7B           TDC
 C1/AD69: 8D CB AE     STA $AECB
 C1/AD6C: 8D 20 AF     STA $AF20

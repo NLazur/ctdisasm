@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A3ED
+Routine_C2A3ED:
 C2/A3ED: 86 61        STX $61
 C2/A3EF: AD 77 00     LDA $0077
 C2/A3F2: 29 FF 00     AND #$00FF

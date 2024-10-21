@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F10D
+Routine_C1F10D:
 C1/F10D: A5 1E        LDA $1E
 C1/F10F: D0 05        BNE $F116
 C1/F111: AE F4 B1     LDX $B1F4

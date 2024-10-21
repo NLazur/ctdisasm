@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: B01C
+Routine_D1B01C:
 D1/B01C: 80 40        BRA $B05E
 D1/B01E: 80 40        BRA $B060
 D1/B020: 80 20        BRA $B042

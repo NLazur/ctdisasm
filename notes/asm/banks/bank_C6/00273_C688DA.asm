@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 88DA
+Routine_C688DA:
 C6/88DA: 58           CLI
 C6/88DB: 01 F8        ORA ($F8,X)
 C6/88DD: 03 6F        ORA $6F,S

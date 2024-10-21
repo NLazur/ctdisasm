@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DF62
+Routine_C3DF62:
 C3/DF62: FF 7F 00 52  SBC $52007F,X
 C3/DF66: 4A           LSR
 C3/DF67: 59 77 F6     EOR $F677,Y

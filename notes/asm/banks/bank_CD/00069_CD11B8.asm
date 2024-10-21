@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 11B8
+Routine_CD11B8:
 CD/11B8: C2 20        REP #$20
 CD/11BA: 8A           TXA
 CD/11BB: 29 FF 7F     AND #$7FFF

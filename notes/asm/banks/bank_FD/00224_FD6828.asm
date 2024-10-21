@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6828
+Routine_FD6828:
 FD/6828: 01 01        ORA ($01,X)
 FD/682A: 02 02        COP $02
 FD/682C: 05 04        ORA $04

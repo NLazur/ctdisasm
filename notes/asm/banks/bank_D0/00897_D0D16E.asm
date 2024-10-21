@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D16E
+Routine_D0D16E:
 D0/D16E: A8           TAY
 D0/D16F: 30 80        BMI $D0F1
 D0/D171: 80 80        BRA $D0F3

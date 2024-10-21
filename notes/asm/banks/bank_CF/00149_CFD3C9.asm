@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D3C9
+Routine_CFD3C9:
 CF/D3C9: 21 6B        AND ($6B,X)
 CF/D3CB: 61 3D        ADC ($3D,X)
 CF/D3CD: 38           SEC

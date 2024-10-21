@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 3AAD
+Routine_CC3AAD:
 CC/3AAD: FE 40 14     INC $1440,X
 CC/3AB0: 41 2B        EOR ($2B,X)
 CC/3AB2: 41 41        EOR ($41,X)

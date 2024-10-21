@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BDEB
+Routine_C2BDEB:
 C2/BDEB: AD 18 04     LDA $0418
 C2/BDEE: D0 10        BNE $BE00
 C2/BDF0: 7B           TDC

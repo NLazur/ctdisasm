@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 58BA
+Routine_FF58BA:
 FF/58BA: D1 60        CMP ($60),Y
 FF/58BC: 0D 61 2F     ORA $2F61
 FF/58BF: 61 3E        ADC ($3E,X)

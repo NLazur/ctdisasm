@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4F1A
+Routine_C14F1A:
 C1/4F1A: AD 10 A0     LDA $A010
 C1/4F1D: C9 08        CMP #$08
 C1/4F1F: B0 2E        BCS $4F4F

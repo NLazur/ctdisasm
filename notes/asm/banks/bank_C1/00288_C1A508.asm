@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A508
+Routine_C1A508:
 C1/A508: 7B           TDC
 C1/A509: AC 30 5E     LDY $5E30
 C1/A50C: C9 00        CMP #$00

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8BAE
+Routine_FD8BAE:
 FD/8BAE: 7F 04 00 32  ADC $320004,X
 FD/8BB2: 2C 29 FD     BIT $FD29
 FD/8BB5: 07 40        ORA [$40]

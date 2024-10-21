@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 33EC
+Routine_C633EC:
 C6/33EC: 1A           INC
 C6/33ED: 01 31        ORA ($31,X)
 C6/33EF: 08           PHP

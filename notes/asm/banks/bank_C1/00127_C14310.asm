@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4310
+Routine_C14310:
 C1/4310: A2 0F 00     LDX #$000F
 C1/4313: 9E 77 98     STZ $9877,X
 C1/4316: CA           DEX

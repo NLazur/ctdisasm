@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: DAD5
+Routine_CEDAD5:
 CE/DAD5: 01 72        ORA ($72,X)
 CE/DAD7: 14 02        TRB $02
 CE/DAD9: 36 C2        ROL $C2,X

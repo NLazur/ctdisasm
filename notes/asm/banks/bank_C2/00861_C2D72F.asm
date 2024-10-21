@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D72F
+Routine_C2D72F:
 C2/D72F: A5 81        LDA $81
 C2/D731: 85 54        STA $54
 C2/D733: AD C6 0F     LDA $0FC6

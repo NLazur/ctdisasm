@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CB35
+Routine_C3CB35:
 C3/CB35: B4 14        LDY $14,X
 C3/CB37: 52 38        EOR ($38)
 C3/CB39: 51 F8        EOR ($F8),Y

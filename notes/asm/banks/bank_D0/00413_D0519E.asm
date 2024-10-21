@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 519E
+Routine_D0519E:
 D0/519E: 10 10        BPL $51B0
 D0/51A0: 29 39 40     AND #$4039
 D0/51A3: 62 85 87     PER $D0D92B

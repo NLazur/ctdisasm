@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0999
+Routine_C60999:
 C6/0999: C1 3E        CMP ($3E,X)
 C6/099B: 65 18        ADC $18
 C6/099D: 37 08        AND [$08],Y

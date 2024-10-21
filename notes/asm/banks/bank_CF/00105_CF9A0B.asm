@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 9A0B
+Routine_CF9A0B:
 CF/9A0B: 23 42        AND $42,S
 CF/9A0D: 23 04        AND $04,S
 CF/9A0F: 20 44 23     JSR $2344

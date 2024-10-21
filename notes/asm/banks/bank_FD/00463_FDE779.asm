@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E779
+Routine_FDE779:
 FD/E779: B9 22 05     LDA $0522,Y
 FD/E77C: A8           TAY
 FD/E77D: BF 01 20 7E  LDA $7E2001,X

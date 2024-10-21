@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 121C
+Routine_FD121C:
 FD/121C: 02 F4        COP $F4
 FD/121E: 10 14        BPL $1234
 FD/1220: 00 E0        BRK $E0

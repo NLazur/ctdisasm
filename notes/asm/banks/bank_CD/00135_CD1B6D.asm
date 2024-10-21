@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1B6D
+Routine_CD1B6D:
 CD/1B6D: C2 20        REP #$20
 CD/1B6F: A7 40        LDA [$40]
 CD/1B71: 3A           DEC

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5376
+Routine_C35376:
 C3/5376: 46 00        LSR $00
 C3/5378: 74 44        STZ $44,X
 C3/537A: 34 46        BIT $46,X

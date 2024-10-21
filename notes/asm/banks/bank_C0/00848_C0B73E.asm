@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B73E
+Routine_C0B73E:
 C0/B73E: 30 13        BMI $B753
 C0/B740: C9 02 90     CMP #$9002
 C0/B743: F8           SED

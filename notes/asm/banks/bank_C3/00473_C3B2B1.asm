@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B2B1
+Routine_C3B2B1:
 C3/B2B1: 10 39        BPL $B2EC
 C3/B2B3: 46 3C        LSR $3C
 C3/B2B5: 5E 00 59     LSR $5900,X

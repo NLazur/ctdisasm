@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C645
+Routine_C3C645:
 C3/C645: 8C 7F 0A     STY $0A7F
 C3/C648: 19 3C 01     ORA $013C,Y
 C3/C64B: 4B           PHK

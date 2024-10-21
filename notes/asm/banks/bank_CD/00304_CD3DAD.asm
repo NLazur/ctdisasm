@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3DAD
+Routine_CD3DAD:
 CD/3DAD: BF 8E F4 CE  LDA $CEF48E,X
 CD/3DB1: 4A           LSR
 CD/3DB2: 8F 02 42 00  STA $004202

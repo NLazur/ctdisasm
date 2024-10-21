@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BE4A
+Routine_C6BE4A:
 C6/BE4A: 04 04        TSB $04
 C6/BE4C: 64 00        STZ $00
 C6/BE4E: CB           WAI

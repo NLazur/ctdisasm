@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3B45
+Routine_C03B45:
 C0/3B45: A9 01        LDA #$01
 C0/3B47: 85 1E        STA $1E
 C0/3B49: 80 D0        BRA $3B1B

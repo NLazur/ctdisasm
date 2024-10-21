@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1759
+Routine_C21759:
 C2/1759: BD 14 00     LDA $0014,X
 C2/175C: 10 0D        BPL $176B
 C2/175E: BD 12 00     LDA $0012,X

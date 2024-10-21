@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1C72
+Routine_CC1C72:
 CC/1C72: 00 00        BRK $00
 CC/1C74: 0C 80 80     TSB $8080
 CC/1C77: 00 00        BRK $00

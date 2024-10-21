@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A521
+Routine_C0A521:
 C0/A521: A2 06 B5     LDX #$B506
 C0/A524: 8E 81 21     STX $2181       ; load bg1 map data
 C0/A527: A9 00        LDA #$00

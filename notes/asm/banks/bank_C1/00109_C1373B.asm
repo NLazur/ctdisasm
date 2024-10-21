@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 373B
+Routine_C1373B:
 C1/373B: A6 9C        LDX $9C
 C1/373D: BD F8 96     LDA $96F8,X
 C1/3740: F0 1D        BEQ $375F

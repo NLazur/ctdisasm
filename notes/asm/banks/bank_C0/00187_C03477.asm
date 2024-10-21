@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3477
+Routine_C03477:
 C0/3477: A9 01        LDA #$01
 C0/3479: 14 54        TRB $54
 C0/347B: 7B           TDC

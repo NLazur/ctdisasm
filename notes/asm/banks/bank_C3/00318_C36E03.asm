@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6E03
+Routine_C36E03:
 C3/6E03: 0F 00 08 00  ORA $000800
 C3/6E07: 41 0F        EOR ($0F,X)
 C3/6E09: 10 00        BPL $6E0B

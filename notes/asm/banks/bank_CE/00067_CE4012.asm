@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 4012
+Routine_CE4012:
 CE/4012: 01 3A        ORA ($3A,X)
 CE/4014: 1E FD 2B     ASL $2BFD,X
 CE/4017: 28           PLP

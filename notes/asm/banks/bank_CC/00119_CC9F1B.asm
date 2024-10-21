@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 9F1B
+Routine_CC9F1B:
 CC/9F1B: 01 00        ORA ($00,X)
 CC/9F1D: 05 01        ORA $01
 CC/9F1F: 02 02        COP $02

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2E0C
+Routine_C32E0C:
 C3/2E0C: A0 10        LDY #$10
 C3/2E0E: 1F 00 A9 0D  ORA $0DA900,X
 C3/2E12: E5 1E        SBC $1E

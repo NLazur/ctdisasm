@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9DAB
+Routine_C69DAB:
 C6/9DAB: D8           CLD
 C6/9DAC: 21 39        AND ($39,X)
 C6/9DAE: 7B           TDC

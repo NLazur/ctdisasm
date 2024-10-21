@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EFD0
+Routine_D1EFD0:
 D1/EFD0: AD 3B CD     LDA $CD3B
 D1/EFD3: 18           CLC
 D1/EFD4: 69 A8        ADC #$A8

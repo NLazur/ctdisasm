@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 7510
+Routine_CF7510:
 CF/7510: 8B           PHB
 CF/7511: 74 45        STZ $45,X
 CF/7513: BF 0A 7F 1D  LDA $1D7F0A,X

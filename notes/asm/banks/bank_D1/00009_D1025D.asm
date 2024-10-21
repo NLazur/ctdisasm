@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 025D
+Routine_D1025D:
 D1/025D: C8           INY
 D1/025E: 80 C8        BRA $0228
 D1/0260: 27 08        AND [$08]

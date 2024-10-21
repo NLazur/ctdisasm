@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 76B0
+Routine_D076B0:
 D0/76B0: F0 0F        BEQ $76C1
 D0/76B2: FF 00 FF 00  SBC $00FF00,X
 D0/76B6: FF 00 7F 7F  SBC $7F7F00,X

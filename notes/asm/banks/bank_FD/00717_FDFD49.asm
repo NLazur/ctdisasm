@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: FD49
+Routine_FDFD49:
 FD/FD49: 75 F6        ADC $F6,X
 FD/FD4B: 20 71 02     JSR $0271
 FD/FD4E: 08           PHP

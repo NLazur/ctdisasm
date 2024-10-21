@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7981
+Routine_C27981:
 C2/7981: A6 4E        LDX $4E
 C2/7983: FE 24 00     INC $0024,X
 C2/7986: BD 24 00     LDA $0024,X

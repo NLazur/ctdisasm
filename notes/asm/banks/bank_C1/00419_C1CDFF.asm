@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CDFF
+Routine_C1CDFF:
 C1/CDFF: 7B           TDC
 C1/CE00: AA           TAX
 C1/CE01: 9D 80 15     STA $1580,X

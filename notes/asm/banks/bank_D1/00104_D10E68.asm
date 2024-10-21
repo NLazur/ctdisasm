@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0E68
+Routine_D10E68:
 D1/0E68: 01 08        ORA ($08,X)
 D1/0E6A: 41 08        EOR ($08,X)
 D1/0E6C: 81 08        STA ($08,X)

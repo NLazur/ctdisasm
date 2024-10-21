@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 71ED
+Routine_C071ED:
 C0/71ED: 86 C3        STX $C3
 C0/71EF: 85 DB        STA $DB
 C0/71F1: AA           TAX

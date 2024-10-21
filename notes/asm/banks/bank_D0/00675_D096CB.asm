@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 96CB
+Routine_D096CB:
 D0/96CB: 0F 30 1F 20  ORA $201F30
 D0/96CF: 0F 38 0F 7B  ORA $7B0F38
 D0/96D3: 03 7F        ORA $7F,S

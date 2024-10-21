@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F355
+Routine_C3F355:
 C3/F355: F3 05        SBC ($05,S),Y
 C3/F357: 04 70        TSB $70
 C3/F359: F3 05        SBC ($05,S),Y

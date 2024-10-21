@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5D54
+Routine_C05D54:
 C0/5D54: 0D 00 AE     ORA $AE00
 C0/5D57: 96 00        STX $00,Y
 C0/5D59: 00 A6        BRK $A6

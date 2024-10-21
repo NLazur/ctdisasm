@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: FB72
+Routine_D1FB72:
 D1/FB72: AD 38 CD     LDA $CD38
 D1/FB75: 18           CLC
 D1/FB76: 67 40        ADC [$40]

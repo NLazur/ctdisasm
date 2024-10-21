@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F0B6
+Routine_D1F0B6:
 D1/F0B6: C2 21        REP #$21
 D1/F0B8: 65 4F        ADC $4F
 D1/F0BA: 99 5D C1     STA $C15D,Y

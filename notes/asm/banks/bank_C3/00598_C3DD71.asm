@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DD71
+Routine_C3DD71:
 C3/DD71: 02 1E        COP $1E
 C3/DD73: 08           PHP
 C3/DD74: 00 28        BRK $28

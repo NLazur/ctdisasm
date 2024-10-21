@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 79EF
+Routine_FD79EF:
 FD/79EF: 3F 02 C0 54  AND $54C002,X
 FD/79F3: 56 FF        LSR $FF,X
 FD/79F5: 00 F3        BRK $F3

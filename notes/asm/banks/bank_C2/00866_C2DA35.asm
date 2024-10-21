@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DA35
+Routine_C2DA35:
 C2/DA35: 3D DA 50     AND $50DA,X
 C2/DA38: DA           PHX
 C2/DA39: 83 DA        STA $DA,S

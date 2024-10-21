@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E401
+Routine_C2E401:
 C2/E401: A5 00        LDA $00
 C2/E403: 18           CLC
 C2/E404: 69 06        ADC #$06

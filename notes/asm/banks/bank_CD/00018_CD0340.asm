@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0340
+Routine_CD0340:
 CD/0340: C2 20        REP #$20
 CD/0342: AD 99 CC     LDA $CC99
 CD/0345: 8D 97 CC     STA $CC97

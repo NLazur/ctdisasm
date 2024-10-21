@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 05CC
+Routine_FE05CC:
 FE/05CC: F8           SED
 FE/05CD: 04 37        TSB $37
 FE/05CF: 02 02        COP $02

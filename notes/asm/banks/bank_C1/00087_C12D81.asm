@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2D81
+Routine_C12D81:
 C1/2D81: B2 29        LDA ($29)
 C1/2D83: FB           XCE
 C1/2D84: 29 43        AND #$43

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3726
+Routine_C63726:
 C6/3726: E9 09 02     SBC #$0209
 C6/3729: 00 01        BRK $01
 C6/372B: 20 EE 1F     JSR $1FEE

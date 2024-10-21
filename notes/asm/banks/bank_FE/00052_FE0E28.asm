@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0E28
+Routine_FE0E28:
 FE/0E28: F4 25 F8     PEA $F825
 FE/0E2B: DF 02 F6 01  CMP $01F602,X
 FE/0E2F: F8           SED

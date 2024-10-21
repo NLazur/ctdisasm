@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2D1F
+Routine_CD2D1F:
 CD/2D1F: 7B           TDC
 CD/2D20: AA           TAX
 CD/2D21: BD 07 BB     LDA $BB07,X

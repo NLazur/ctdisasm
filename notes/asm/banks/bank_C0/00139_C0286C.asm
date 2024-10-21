@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 286C
+Routine_C0286C:
 C0/286C: 20 E1 28     JSR $28E1
 C0/286F: 20 50 0A     JSR $0A50
 C0/2872: 20 79 6F     JSR $6F79

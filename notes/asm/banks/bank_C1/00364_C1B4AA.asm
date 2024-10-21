@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B4AA
+Routine_C1B4AA:
 C1/B4AA: 7B           TDC
 C1/B4AB: 8E D2 B1     STX $B1D2
 C1/B4AE: AD 52 B2     LDA $B252

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EA21
+Routine_D1EA21:
 D1/EA21: 00 01        BRK $01
 D1/EA23: 02 03        COP $03
 D1/EA25: 04 05        TSB $05

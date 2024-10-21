@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3ACB
+Routine_C23ACB:
 C2/3ACB: C2 20        REP #$20
 C2/3ACD: AD 83 02     LDA $0283
 C2/3AD0: 4A           LSR

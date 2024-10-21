@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0CEA
+Routine_D10CEA:
 D1/0CEA: FF FF 40 83  SBC $8340FF,X
 D1/0CEE: 00 00        BRK $00
 D1/0CF0: 12 80        ORA ($80)

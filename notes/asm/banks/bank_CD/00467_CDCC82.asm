@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CC82
+Routine_CDCC82:
 CD/CC82: A8           TAY
 CD/CC83: 10 78        BPL $CCFD
 CD/CC85: 9B           TXY

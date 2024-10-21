@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F67A
+Routine_D1F67A:
 D1/F67A: A5 53        LDA $53
 D1/F67C: 29 F0        AND #$F0
 D1/F67E: 4A           LSR

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2D45
+Routine_D02D45:
 D0/2D45: C0 C0 C0     CPY #$C0C0
 D0/2D48: 17 18        ORA [$18],Y
 D0/2D4A: 0A           ASL

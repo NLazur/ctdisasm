@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F055
+Routine_C3F055:
 C3/F055: D0 10        BNE $F067
 C3/F057: 22 00 E0 10  JSR $10E000
 C3/F05B: 24 00        BIT $00

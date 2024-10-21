@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F352
+Routine_FDF352:
 FD/F352: 80 80        BRA $F2D4
 FD/F354: 67 00        ADC [$00]
 FD/F356: 68           PLA

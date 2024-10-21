@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E022
+Routine_FDE022:
 FD/E022: 08           PHP
 FD/E023: 0B           PHD
 FD/E024: 8B           PHB

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0FD0
+Routine_D00FD0:
 D0/0FD0: 84 00        STY $00
 D0/0FD2: 84 00        STY $00
 D0/0FD4: 8E 0A 8E     STX $8E0A

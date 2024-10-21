@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: DEB9
+Routine_CCDEB9:
 CC/DEB9: BB           TYX
 CC/DEBA: FD 01 38     SBC $3801,X
 CC/DEBD: B5 02        LDA $02,X

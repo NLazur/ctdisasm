@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2AAF
+Routine_CD2AAF:
 CD/2AAF: AD 3B CD     LDA $CD3B
 CD/2AB2: EE 3B CD     INC $CD3B
 CD/2AB5: AA           TAX

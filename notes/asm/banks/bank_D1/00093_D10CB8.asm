@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0CB8
+Routine_D10CB8:
 D1/0CB8: 41 42        EOR ($42,X)
 D1/0CBA: 41 60        EOR ($60,X)
 D1/0CBC: 7B           TDC

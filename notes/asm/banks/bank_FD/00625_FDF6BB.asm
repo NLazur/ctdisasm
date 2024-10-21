@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F6BB
+Routine_FDF6BB:
 FD/F6BB: 00 72        BRK $72
 FD/F6BD: 80 72        BRA $F731
 FD/F6BF: 00 73        BRK $73

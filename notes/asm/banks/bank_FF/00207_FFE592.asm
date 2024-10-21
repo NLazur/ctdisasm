@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E592
+Routine_FFE592:
 FF/E592: A0 5C        LDY #$5C
 FF/E594: 2C C4 5C     BIT $5CC4
 FF/E597: A4 2C        LDY $2C

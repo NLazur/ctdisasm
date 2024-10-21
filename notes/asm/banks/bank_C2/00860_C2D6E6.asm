@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D6E6
+Routine_C2D6E6:
 C2/D6E6: 20 C2 EA     JSR $EAC2
 C2/D6E9: 20 A7 F5     JSR $F5A7
 C2/D6EC: 64 00        STZ $00

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E39C
+Routine_FDE39C:
 FD/E39C: 8B           PHB
 FD/E39D: 0B           PHD
 FD/E39E: 7B           TDC

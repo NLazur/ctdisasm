@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 7E7B
+Routine_FE7E7B:
 FE/7E7B: E9 1B        SBC #$1B
 FE/7E7D: D0 0C        BNE $7E8B
 FE/7E7F: 3D 49 DE     AND $DE49,X

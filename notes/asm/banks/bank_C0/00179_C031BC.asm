@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 31BC
+Routine_C031BC:
 C0/31BC: BD 00 1C     LDA $1C00,X
 C0/31BF: F0 FA        BEQ $31BB
 C0/31C1: 8D 02 42     STA $4202

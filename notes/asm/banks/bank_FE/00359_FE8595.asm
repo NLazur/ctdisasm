@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8595
+Routine_FE8595:
 FE/8595: 2C FF 1D     BIT $1DFF
 FE/8598: 28           PLP
 FE/8599: D7 14        CMP [$14],Y

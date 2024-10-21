@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 349F
+Routine_C0349F:
 C0/349F: 86 C3        STX $C3
 C0/34A1: A5 99        LDA $99
 C0/34A3: AA           TAX

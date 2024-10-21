@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1FD1
+Routine_D11FD1:
 D1/1FD1: CA           DEX
 D1/1FD2: 80 CA        BRA $1F9E
 D1/1FD4: 41 18        EOR ($18,X)

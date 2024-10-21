@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 261C
+Routine_FD261C:
 FD/261C: 80 60        BRA $267E
 FD/261E: E0 F0        CPX #$F0
 FD/2620: 02 F0        COP $F0

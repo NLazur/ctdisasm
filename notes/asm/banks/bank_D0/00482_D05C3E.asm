@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 5C3E
+Routine_D05C3E:
 D0/5C3E: 80 80        BRA $5BC0
 D0/5C40: 02 02        COP $02
 D0/5C42: 20 20 30     JSR $3020

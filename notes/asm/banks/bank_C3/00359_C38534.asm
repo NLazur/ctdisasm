@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8534
+Routine_C38534:
 C3/8534: A0 0B 20     LDY #$200B
 C3/8537: 30 00        BMI $8539
 C3/8539: 18           CLC

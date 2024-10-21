@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A452
+Routine_C1A452:
 C1/A452: 9C CB AE     STZ $AECB
 C1/A455: AD 24 00     LDA $0024
 C1/A458: D0 54        BNE $A4AE

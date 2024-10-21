@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CDC8
+Routine_C0CDC8:
 C0/CDC8: A6 6D        LDX $6D
 C0/CDCA: BD 01 0F     LDA $0F01,X
 C0/CDCD: 8D 02 42     STA $4202

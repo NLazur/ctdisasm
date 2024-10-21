@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3377
+Routine_C63377:
 C6/3377: 1D C0 61     ORA $61C0,X
 C6/337A: 1D 62 1D     ORA $1D62,X
 C6/337D: 63 1D        ADC $1D,S

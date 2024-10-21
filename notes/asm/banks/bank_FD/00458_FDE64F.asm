@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E64F
+Routine_FDE64F:
 FD/E64F: B9 22 05     LDA $0522,Y
 FD/E652: A8           TAY
 FD/E653: BF 01 20 7E  LDA $7E2001,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9688
+Routine_C09688:
 C0/9688: 85 66        STA $66
 C0/968A: A5 97        LDA $97
 C0/968C: D0 0A        BNE $9698

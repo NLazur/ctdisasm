@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F06D
+Routine_C3F06D:
 C3/F06D: D0 20        BNE $F08F
 C3/F06F: 28           PLP
 C3/F070: 00 E0        BRK $E0

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: D7AD
+Routine_FDD7AD:
 FD/D7AD: AF 27 01 00  LDA $000127
 FD/D7B1: 8F 04 42 00  STA $004204
 FD/D7B5: A9 00        LDA #$00

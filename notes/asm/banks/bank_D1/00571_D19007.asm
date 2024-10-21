@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 9007
+Routine_D19007:
 D1/9007: FF 00 0A 01  SBC $010A00,X
 D1/900B: 83 1F        STA $1F,S
 D1/900D: 88           DEY

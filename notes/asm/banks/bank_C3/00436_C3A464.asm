@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: A464
+Routine_C3A464:
 C3/A464: 2F 00 E0 FF  AND $FFE000
 C3/A468: FF 16 00 14  SBC $140016,X
 C3/A46C: A2 02        LDX #$02

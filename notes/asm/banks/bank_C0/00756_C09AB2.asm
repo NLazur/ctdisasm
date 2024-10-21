@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9AB2
+Routine_C09AB2:
 C0/9AB2: BF C0 30 7E  LDA $7E30C0,X
 C0/9AB6: 85 58        STA $58
 C0/9AB8: BF 00 70 7E  LDA $7E7000,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FC0F
+Routine_C2FC0F:
 C2/FC0F: 80 3E        BRA $FC4F
 C2/FC11: 7E 00 03     ROR $0300,X
 C2/FC14: 00 68        BRK $68

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: C60E
+Routine_D1C60E:
 D1/C60E: C3 C2        CMP $C2,S
 D1/C610: 4D 80 81     EOR $8180
 D1/C613: 08           PHP

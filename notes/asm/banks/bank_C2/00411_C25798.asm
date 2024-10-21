@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5798
+Routine_C25798:
 C2/5798: C2 20        REP #$20
 C2/579A: 8B           PHB
 C2/579B: 7B           TDC

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4CE0
+Routine_C04CE0:
 C0/4CE0: A6 6D        LDX $6D
 C0/4CE2: A9 00        LDA #$00
 C0/4CE4: 80 F3        BRA $4CD9

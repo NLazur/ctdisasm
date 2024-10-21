@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C124
+Routine_FDC124:
 FD/C124: 8B           PHB
 FD/C125: A9 7F        LDA #$7F
 FD/C127: 48           PHA

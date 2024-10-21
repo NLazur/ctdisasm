@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 596C
+Routine_CC596C:
 CC/596C: 1F 32 00 FF  ORA $FF0032,X
 CC/5970: 00 00        BRK $00
 CC/5972: 00 0A        BRK $0A

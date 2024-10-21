@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8807
+Routine_C38807:
 C3/8807: 84 42        STY $42
 C3/8809: 84 42        STY $42
 C3/880B: 00 42        BRK $42

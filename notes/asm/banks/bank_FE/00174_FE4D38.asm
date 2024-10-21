@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 4D38
+Routine_FE4D38:
 FE/4D38: 0F 08 07 01  ORA $010708
 FE/4D3C: 02 00        COP $00
 FE/4D3E: 3E 00 80     ROL $8000,X

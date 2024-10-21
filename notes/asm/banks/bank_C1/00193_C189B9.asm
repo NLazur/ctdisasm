@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 89B9
+Routine_C189B9:
 C1/89B9: 7B           TDC
 C1/89BA: AD 7C B1     LDA $B17C
 C1/89BD: D0 03        BNE $89C2

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2FB7
+Routine_CD2FB7:
 CD/2FB7: A7 40        LDA [$40]
 CD/2FB9: 4C 89 31     JMP $3189
 CD/2FBC: A7 40        LDA [$40]

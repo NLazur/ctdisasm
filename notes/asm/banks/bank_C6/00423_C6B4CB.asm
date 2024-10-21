@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B4CB
+Routine_C6B4CB:
 C6/B4CB: 0B           PHD
 C6/B4CC: 9A           TXS
 C6/B4CD: 0C 07 14     TSB $1407

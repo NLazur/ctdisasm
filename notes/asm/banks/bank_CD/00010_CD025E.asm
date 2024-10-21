@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 025E
+Routine_CD025E:
 CD/025E: 8D 0C 02     STA $020C
 CD/0261: 9C ED CC     STZ $CCED
 CD/0264: 9C A1 02     STZ $02A1

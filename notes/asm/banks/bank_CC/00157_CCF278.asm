@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F278
+Routine_CCF278:
 CC/F278: 7B           TDC
 CC/F279: AA           TAX
 CC/F27A: BD A8 A1     LDA $A1A8,X

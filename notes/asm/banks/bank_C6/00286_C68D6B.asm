@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8D6B
+Routine_C68D6B:
 C6/8D6B: B8           CLV
 C6/8D6C: 99 33 34     STA $3433,Y
 C6/8D6F: 23 23        AND $23,S

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: B4AD
+Routine_CFB4AD:
 CF/B4AD: 2A           ROL
 CF/B4AE: 62 2A 64     PER $CF18DB
 CF/B4B1: 2A           ROL

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: A35B
+Routine_D1A35B:
 D1/A35B: 92 00        STA ($00)
 D1/A35D: 04 10        TSB $10
 D1/A35F: 01 48        ORA ($48,X)

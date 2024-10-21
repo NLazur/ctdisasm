@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 79AE
+Routine_C079AE:
 C0/79AE: A9 00        LDA #$00
 C0/79B0: 85 58        STA $58
 C0/79B2: A9 20        LDA #$20

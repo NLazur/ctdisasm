@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 652F
+Routine_C0652F:
 C0/652F: C2 20        REP #$20
 C0/6531: A5 D9        LDA $D9
 C0/6533: 05 DB        ORA $DB

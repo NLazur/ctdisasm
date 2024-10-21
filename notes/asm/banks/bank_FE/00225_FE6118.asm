@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6118
+Routine_FE6118:
 FE/6118: 42 CE        WDM $CE
 FE/611A: 20 04 00     JSR $0004
 FE/611D: 07 08        ORA [$08]

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: CC4F
+Routine_C2CC4F:
 C2/CC4F: 08           PHP
 C2/CC50: E2 20        SEP #$20
 C2/CC52: A2 84 2E     LDX #$2E84

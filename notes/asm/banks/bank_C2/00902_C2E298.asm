@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E298
+Routine_C2E298:
 C2/E298: D6 E2        DEC $E2,X
 C2/E29A: CC E2 AA     CPY $AAE2
 C2/E29D: E2 A0        SEP #$A0

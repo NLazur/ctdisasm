@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8A27
+Routine_C38A27:
 C3/8A27: 00 C0        BRK $C0
 C3/8A29: EA           NOP
 C3/8A2A: 02 A0        COP $A0

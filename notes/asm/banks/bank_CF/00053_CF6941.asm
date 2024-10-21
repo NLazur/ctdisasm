@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 6941
+Routine_CF6941:
 CF/6941: E0 C0        CPX #$C0
 CF/6943: C0 80        CPY #$80
 CF/6945: 80 00        BRA $6947

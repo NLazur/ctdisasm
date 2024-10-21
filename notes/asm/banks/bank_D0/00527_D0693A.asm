@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 693A
+Routine_D0693A:
 D0/693A: 38           SEC
 D0/693B: 38           SEC
 D0/693C: 02 0E        COP $0E

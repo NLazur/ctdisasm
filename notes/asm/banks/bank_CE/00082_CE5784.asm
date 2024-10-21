@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 5784
+Routine_CE5784:
 CE/5784: 01 C2        ORA ($C2,X)
 CE/5786: 01 20        ORA ($20,X)
 CE/5788: 80 01        BRA $578B

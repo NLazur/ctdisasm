@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6DB9
+Routine_C36DB9:
 C3/6DB9: 11 00        ORA ($00),Y
 C3/6DBB: 02 3D        COP $3D
 C3/6DBD: 9A           TXS

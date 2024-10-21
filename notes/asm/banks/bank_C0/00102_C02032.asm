@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2032
+Routine_C02032:
 C0/2032: A5 27        LDA $27
 C0/2034: F0 17        BEQ $204D
 C0/2036: C6 27        DEC $27

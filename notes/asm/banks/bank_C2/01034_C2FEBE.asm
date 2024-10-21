@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FEBE
+Routine_C2FEBE:
 C2/FEBE: 08           PHP
 C2/FEBF: E2 30        SEP #$30
 C2/FEC1: A2 00        LDX #$00

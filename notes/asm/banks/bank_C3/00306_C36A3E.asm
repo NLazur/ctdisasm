@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6A3E
+Routine_C36A3E:
 C3/6A3E: A5 7B        LDA $7B
 C3/6A40: F0 92        BEQ $69D4
 C3/6A42: 19 CD 02     ORA $02CD,Y

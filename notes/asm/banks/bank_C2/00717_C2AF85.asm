@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AF85
+Routine_C2AF85:
 C2/AF85: A9 01 0C     LDA #$0C01
 C2/AF88: 18           CLC
 C2/AF89: 18           CLC

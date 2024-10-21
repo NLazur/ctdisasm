@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 76D2
+Routine_FE76D2:
 FE/76D2: 2C 3B 08     BIT $083B
 FE/76D5: 12 2D        ORA ($2D)
 FE/76D7: 1F 20 01 1F  ORA $1F0120,X

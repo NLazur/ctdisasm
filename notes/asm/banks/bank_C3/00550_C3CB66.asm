@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CB66
+Routine_C3CB66:
 C3/CB66: 52 30        EOR ($30)
 C3/CB68: 2C 88 02     BIT $0288
 C3/CB6B: B0 4F        BCS $CBBC

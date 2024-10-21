@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5952
+Routine_FD5952:
 FD/5952: 28           PLP
 FD/5953: 0A           ASL
 FD/5954: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5AEC
+Routine_C35AEC:
 C3/5AEC: 0B           PHD
 C3/5AED: 31 0B        AND ($0B),Y
 C3/5AEF: 20 9C 05     JSR $059C

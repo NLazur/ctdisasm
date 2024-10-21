@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3900
+Routine_C63900:
 C6/3900: 0A           ASL
 C6/3901: 0E 16 0F     ASL $0F16
 C6/3904: 08           PHP

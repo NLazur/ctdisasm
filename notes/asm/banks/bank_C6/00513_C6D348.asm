@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D348
+Routine_C6D348:
 C6/D348: 10 60        BPL $D3AA
 C6/D34A: 0F 40 F8 16  ORA $16F840
 C6/D34E: 50 11        BVC $D361

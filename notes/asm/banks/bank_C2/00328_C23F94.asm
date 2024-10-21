@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3F94
+Routine_C23F94:
 C2/3F94: AD 83 02     LDA $0283
 C2/3F97: 29 F8 FF     AND #$FFF8
 C2/3F9A: 9D 2A 00     STA $002A,X

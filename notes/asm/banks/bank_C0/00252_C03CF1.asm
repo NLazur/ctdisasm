@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3CF1
+Routine_C03CF1:
 C0/3CF1: A5 D9        LDA $D9
 C0/3CF3: 4A           LSR
 C0/3CF4: 4A           LSR

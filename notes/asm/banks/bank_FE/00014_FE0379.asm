@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 0379
+Routine_FE0379:
 FE/0379: F8           SED
 FE/037A: E7 EF        SBC [$EF]
 FE/037C: 1A           INC

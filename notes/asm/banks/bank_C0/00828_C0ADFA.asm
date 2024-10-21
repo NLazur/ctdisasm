@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: ADFA
+Routine_C0ADFA:
 C0/ADFA: BF 00 70 7E  LDA $7E7000,X
 C0/ADFE: 85 E1        STA $E1
 C0/AE00: BF 40 70 7E  LDA $7E7040,X

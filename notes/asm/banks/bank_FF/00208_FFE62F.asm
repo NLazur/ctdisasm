@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E62F
+Routine_FFE62F:
 FF/E62F: 50 63        BVC $E694
 FF/E631: 50 30        BVC $E663
 FF/E633: 38           SEC

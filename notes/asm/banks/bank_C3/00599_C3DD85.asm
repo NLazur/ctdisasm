@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DD85
+Routine_C3DD85:
 C3/DD85: 24 01        BIT $01
 C3/DD87: 00 4D        BRK $4D
 C3/DD89: 3D BD 7B     AND $7BBD,X

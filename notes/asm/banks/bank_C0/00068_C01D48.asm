@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1D48
+Routine_C01D48:
 C0/1D48: 86 EB        STX $EB
 C0/1D4A: A6 DB        LDX $DB
 C0/1D4C: FC 56 1D     JSR ($1D56,X)

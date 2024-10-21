@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 72B4
+Routine_C072B4:
 C0/72B4: A2 01        LDX #$01
 C0/72B6: BD 80 0B     LDA $0B80,X
 C0/72B9: 10 62        BPL $731D

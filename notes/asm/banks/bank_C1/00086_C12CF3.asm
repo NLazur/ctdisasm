@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2CF3
+Routine_C12CF3:
 C1/2CF3: AD 70 98     LDA $9870
 C1/2CF6: AA           TAX
 C1/2CF7: BD 0C 1D     LDA $1D0C,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E719
+Routine_C2E719:
 C2/E719: A9 05 85     LDA #$8505
 C2/E71C: 54 A2 91     MVN $A2,$91
 C2/E71F: C1 20        CMP ($20,X)

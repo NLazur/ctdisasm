@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EF2B
+Routine_C2EF2B:
 C2/EF2B: A6 63        LDX $63
 C2/EF2D: A4 65        LDY $65
 C2/EF2F: A5 8A        LDA $8A

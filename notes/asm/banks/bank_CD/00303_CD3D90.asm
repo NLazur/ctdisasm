@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3D90
+Routine_CD3D90:
 CD/3D90: DA           PHX
 CD/3D91: AA           TAX
 CD/3D92: 10 19        BPL $3DAD

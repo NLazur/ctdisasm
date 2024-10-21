@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3DE4
+Routine_C63DE4:
 C6/3DE4: 1A           INC
 C6/3DE5: 01 31        ORA ($31,X)
 C6/3DE7: 08           PHP

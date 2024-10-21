@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: B1A4
+Routine_D0B1A4:
 D0/B1A4: C0 E0 E0     CPY #$E0E0
 D0/B1A7: E0 E0 FE     CPX #$FEE0
 D0/B1AA: E0 FE E0     CPX #$E0FE

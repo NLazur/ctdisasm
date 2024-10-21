@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 21EE
+Routine_C021EE:
 C0/21EE: 0E 22 69     ASL $6922
 C0/21F1: 22 D8 22 2A  JSR $2A22D8
 C0/21F5: 23 8A        AND $8A,S

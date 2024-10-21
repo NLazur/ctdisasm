@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 50EA
+Routine_C050EA:
 C0/50EA: 20 A2 AB     JSR $ABA2
 C0/50ED: C2 20        REP #$20
 C0/50EF: A5 EE        LDA $EE

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8793
+Routine_C68793:
 C6/8793: 52 53        EOR ($53)
 C6/8795: 55 01        EOR $01,X
 C6/8797: 27 13        AND [$13]

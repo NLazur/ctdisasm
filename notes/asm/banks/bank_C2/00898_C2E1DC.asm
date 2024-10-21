@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E1DC
+Routine_C2E1DC:
 C2/E1DC: 36 38        ROL $38,X
 C2/E1DE: 3B           TSC
 C2/E1DF: 39 37 3A     AND $3A37,Y

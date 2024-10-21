@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 65EB
+Routine_D165EB:
 D1/65EB: 00 84        BRK $84
 D1/65ED: E5 1A        SBC $1A
 D1/65EF: 83 20        STA $20,S

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 54B4
+Routine_C354B4:
 C3/54B4: E5 F4        SBC $F4
 C3/54B6: 85 17        STA $17
 C3/54B8: A5 F4        LDA $F4

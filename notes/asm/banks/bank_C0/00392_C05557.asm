@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5557
+Routine_C05557:
 C0/5557: C8           INY
 C0/5558: BB           TYX
 C0/5559: BF 01 20 7F  LDA $7F2001,X

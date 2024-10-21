@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 4660
+Routine_FF4660:
 FF/4660: 43 CB        EOR $CB,S
 FF/4662: EF BA BF 5C  SBC $5CBFBA
 FF/4666: CB           WAI

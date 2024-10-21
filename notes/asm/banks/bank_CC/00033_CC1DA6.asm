@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1DA6
+Routine_CC1DA6:
 CC/1DA6: 04 00        TSB $00
 CC/1DA8: 28           PLP
 CC/1DA9: 80 80        BRA $1D2B

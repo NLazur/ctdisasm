@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E9C8
+Routine_D0E9C8:
 D0/E9C8: 01 20        ORA ($20,X)
 D0/E9CA: D6 52        DEC $52,X
 D0/E9CC: 99 52 89     STA $8952,Y

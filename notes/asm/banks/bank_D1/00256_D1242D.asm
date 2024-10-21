@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 242D
+Routine_D1242D:
 D1/242D: C0 00        CPY #$00
 D1/242F: C0 40        CPY #$40
 D1/2431: E0 FF        CPX #$FF

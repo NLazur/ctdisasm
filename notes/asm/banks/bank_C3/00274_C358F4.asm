@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 58F4
+Routine_C358F4:
 C3/58F4: 9C 6F 1C     STZ $1C6F
 C3/58F7: 16 11        ASL $11,X
 C3/58F9: 3D 1E 1F     AND $1F1E,X

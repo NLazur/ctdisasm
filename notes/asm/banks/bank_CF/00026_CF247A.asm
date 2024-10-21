@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 247A
+Routine_CF247A:
 CF/247A: 00 80        BRK $80
 CF/247C: 00 00        BRK $00
 CF/247E: 00 00        BRK $00

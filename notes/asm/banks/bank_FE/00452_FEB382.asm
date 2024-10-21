@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: B382
+Routine_FEB382:
 FE/B382: 10 10        BPL $B394
 FE/B384: 70 10        BVS $B396
 FE/B386: 7F AC 0F 0F  ADC $0F0FAC,X

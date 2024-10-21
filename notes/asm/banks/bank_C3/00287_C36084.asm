@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 6084
+Routine_C36084:
 C3/6084: 0B           PHD
 C3/6085: 10 80        BPL $6007
 C3/6087: 90 35        BCC $60BE

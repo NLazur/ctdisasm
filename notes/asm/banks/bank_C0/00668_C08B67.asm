@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8B67
+Routine_C08B67:
 C0/8B67: 82 F2 10     BRL $C09C5C
 C0/8B6A: C2 20        REP #$20
 C0/8B6C: A5 64        LDA $64

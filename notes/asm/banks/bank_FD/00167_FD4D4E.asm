@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4D4E
+Routine_FD4D4E:
 FD/4D4E: 31 D1        AND ($D1),Y
 FD/4D50: 15 12        ORA $12,X
 FD/4D52: 35 00        AND $00,X

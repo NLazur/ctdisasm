@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 28A1
+Routine_CD28A1:
 CD/28A1: DA           PHX
 CD/28A2: 48           PHA
 CD/28A3: 18           CLC

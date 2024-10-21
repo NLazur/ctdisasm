@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3C2C
+Routine_CD3C2C:
 CD/3C2C: BF 8E F4 CE  LDA $CEF48E,X
 CD/3C30: 8F 02 42 00  STA $004202
 CD/3C34: 98           TYA

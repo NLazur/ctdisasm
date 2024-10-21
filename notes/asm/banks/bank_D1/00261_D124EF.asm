@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 24EF
+Routine_D124EF:
 D1/24EF: E6 40        INC $40
 D1/24F1: E4 03        CPX $03
 D1/24F3: 0C 08 4E     TSB $4E08

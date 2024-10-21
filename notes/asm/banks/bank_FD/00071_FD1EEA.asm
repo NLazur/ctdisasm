@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1EEA
+Routine_FD1EEA:
 FD/1EEA: 08           PHP
 FD/1EEB: 08           PHP
 FD/1EEC: 02 F0        COP $F0

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 71AD
+Routine_FD71AD:
 FD/71AD: 74 E0        STZ $E0,X
 FD/71AF: A0 AF        LDY #$AF
 FD/71B1: 06 40        ASL $40

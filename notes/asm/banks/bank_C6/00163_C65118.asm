@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 5118
+Routine_C65118:
 C6/5118: 06 7E        ASL $7E
 C6/511A: 48           PHA
 C6/511B: 04 7D        TSB $7D

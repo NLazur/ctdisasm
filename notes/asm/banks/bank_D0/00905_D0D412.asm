@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D412
+Routine_D0D412:
 D0/D412: F0 90        BEQ $D3A4
 D0/D414: 68           PLA
 D0/D415: 28           PLP

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 18A3
+Routine_C318A3:
 C3/18A3: 21 F0        AND ($F0,X)
 C3/18A5: 05 40        ORA $40
 C3/18A7: CA           DEX

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8AFD
+Routine_C68AFD:
 C6/8AFD: F8           SED
 C6/8AFE: EF 01 F8 45  SBC $45F801
 C6/8B02: 12 BD        ORA ($BD)

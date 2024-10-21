@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F9BB
+Routine_FFF9BB:
 FF/F9BB: 80 40        BRA $F9FD
 FF/F9BD: 20 10 08     JSR $0810
 FF/F9C0: 04 02        TSB $02

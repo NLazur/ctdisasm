@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4968
+Routine_C24968:
 C2/4968: 49 8C 49     EOR #$498C
 C2/496B: C2 20        REP #$20
 C2/496D: AD 00 01     LDA $0100

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: D738
+Routine_C0D738:
 C0/D738: C2 20        REP #$20
 C0/D73A: A6 6D        LDX $6D
 C0/D73C: BD 80 0D     LDA $0D80,X

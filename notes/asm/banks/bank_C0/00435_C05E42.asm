@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5E42
+Routine_C05E42:
 C0/5E42: 04 42        TSB $42
 C0/5E44: 1C 6C 0C     TRB $0C6C
 C0/5E47: 42 14        WDM $14

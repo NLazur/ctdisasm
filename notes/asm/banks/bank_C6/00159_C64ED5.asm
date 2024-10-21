@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4ED5
+Routine_C64ED5:
 C6/4ED5: 0D 79 0D     ORA $0D79
 C6/4ED8: 88           DEY
 C6/4ED9: 0D 89 78     ORA $7889

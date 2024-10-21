@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 076B
+Routine_C0076B:
 C0/076B: A5 A3        LDA $A3
 C0/076D: 30 0C        BMI $077B
 C0/076F: 85 6D        STA $6D

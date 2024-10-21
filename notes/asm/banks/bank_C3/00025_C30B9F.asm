@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0B9F
+Routine_C30B9F:
 C3/0B9F: B2 20        LDA ($20)
 C3/0BA1: 85 20        STA $20
 C3/0BA3: 4C 03 0B     JMP $0B03

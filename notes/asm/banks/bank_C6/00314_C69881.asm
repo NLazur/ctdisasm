@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9881
+Routine_C69881:
 C6/9881: 8F 02 E8 E5  STA $E5E802
 C6/9885: EC AF AF     CPX $AFAF
 C6/9888: F9 8F 25     SBC $258F,Y

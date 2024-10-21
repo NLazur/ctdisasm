@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9EF5
+Routine_C69EF5:
 C6/9EF5: 80 F3        BRA $9EEA
 C6/9EF7: 08           PHP
 C6/9EF8: 0B           PHD

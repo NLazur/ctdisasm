@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F421
+Routine_C0F421:
 C0/F421: 3B           TSC
 C0/F422: 37 32        AND [$32],Y
 C0/F424: 2F 2B 28 25  AND $25282B

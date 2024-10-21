@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E067
+Routine_CCE067:
 CC/E067: 8F 16 21 00  STA $002116
 CC/E06B: 7B           TDC
 CC/E06C: 8F 17 21 00  STA $002117

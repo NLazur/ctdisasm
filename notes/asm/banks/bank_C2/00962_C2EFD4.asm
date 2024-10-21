@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: EFD4
+Routine_C2EFD4:
 C2/EFD4: D3 EF        CMP ($EF,S),Y
 C2/EFD6: F4 EF 05     PEA $05EF
 C2/EFD9: F0 11        BEQ $EFEC

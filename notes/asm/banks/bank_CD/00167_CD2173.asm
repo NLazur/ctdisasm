@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2173
+Routine_CD2173:
 CD/2173: A7 40        LDA [$40]
 CD/2175: 29 01        AND #$01
 CD/2177: 8D 64 CC     STA $CC64

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: DC64
+Routine_C1DC64:
 C1/DC64: A5 16        LDA $16
 C1/DC66: C5 18        CMP $18
 C1/DC68: 90 08        BCC $DC72

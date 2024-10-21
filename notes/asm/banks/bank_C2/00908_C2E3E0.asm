@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E3E0
+Routine_C2E3E0:
 C2/E3E0: A6 51        LDX $51
 C2/E3E2: 86 00        STX $00
 C2/E3E4: A6 51        LDX $51

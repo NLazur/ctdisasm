@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3E6A
+Routine_C33E6A:
 C3/3E6A: 00 02        BRK $02
 C3/3E6C: 3C 44 0F     BIT $0F44,X
 C3/3E6F: 10 70        BPL $3EE1

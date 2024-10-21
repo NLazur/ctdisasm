@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CEDA
+Routine_C3CEDA:
 C3/CEDA: 8F 00 00 00  STA $000000
 C3/CEDE: 00 21        BRK $21
 C3/CEE0: 00 FF        BRK $FF

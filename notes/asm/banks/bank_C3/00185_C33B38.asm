@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3B38
+Routine_C33B38:
 C3/3B38: C6 2F        DEC $2F
 C3/3B3A: D5 08        CMP $08,X
 C3/3B3C: D0 48        BNE $3B86

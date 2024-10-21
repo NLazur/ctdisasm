@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: F018
+Routine_FEF018:
 FE/F018: 8D 44 00     STA $0044
 FE/F01B: 04 10        TSB $10
 FE/F01D: 00 18        BRK $18

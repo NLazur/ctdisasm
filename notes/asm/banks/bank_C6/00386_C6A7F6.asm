@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A7F6
+Routine_C6A7F6:
 C6/A7F6: AE B3 B4     LDX $B4B3
 C6/A7F9: 6E AF E5     ROR $E5AF
 C6/A7FC: 21 32        AND ($32,X)

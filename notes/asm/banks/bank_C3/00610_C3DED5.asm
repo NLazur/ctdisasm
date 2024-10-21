@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DED5
+Routine_C3DED5:
 C3/DED5: 02 1E        COP $1E
 C3/DED7: 28           PLP
 C3/DED8: 20 98 04     JSR $0498

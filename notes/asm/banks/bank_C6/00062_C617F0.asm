@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 17F0
+Routine_C617F0:
 C6/17F0: 63 1B        ADC $1B,S
 C6/17F2: 3B           TSC
 C6/17F3: 05 3F        ORA $3F

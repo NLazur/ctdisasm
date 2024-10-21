@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1D90
+Routine_CC1D90:
 CC/1D90: 22 00 26 80  JSR $802600
 CC/1D94: 80 07        BRA $1D9D
 CC/1D96: 00 00        BRK $00

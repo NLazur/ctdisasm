@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D03C
+Routine_D0D03C:
 D0/D03C: 50 60        BVC $D09E
 D0/D03E: 51 60        EOR ($60),Y
 D0/D040: AA           TAX

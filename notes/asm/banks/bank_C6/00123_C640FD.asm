@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 40FD
+Routine_C640FD:
 C6/40FD: 6A           ROR
 C6/40FE: 08           PHP
 C6/40FF: F8           SED

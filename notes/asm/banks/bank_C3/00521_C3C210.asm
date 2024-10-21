@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C210
+Routine_C3C210:
 C3/C210: 02 08        COP $08
 C3/C212: 08           PHP
 C3/C213: 52 2C        EOR ($2C)

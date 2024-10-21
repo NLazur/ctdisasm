@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 85F2
+Routine_FD85F2:
 FD/85F2: DE 02 80     DEC $8002,X
 FD/85F5: 8C 27 E0     STY $E027
 FD/85F8: 89 62        BIT #$62

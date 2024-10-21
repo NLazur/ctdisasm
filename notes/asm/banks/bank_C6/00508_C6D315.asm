@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: D315
+Routine_C6D315:
 C6/D315: 07 42        ORA [$42]
 C6/D317: F8           SED
 C6/D318: 41 12        EOR ($12,X)

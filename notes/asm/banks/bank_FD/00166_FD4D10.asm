@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4D10
+Routine_FD4D10:
 FD/4D10: 7D 00 35     ADC $3500,X
 FD/4D13: EC E8 E8     CPX $E8E8
 FD/4D16: F8           SED

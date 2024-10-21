@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 38A8
+Routine_C038A8:
 C0/38A8: A6 C7        LDX $C7
 C0/38AA: BF 01 20 7F  LDA $7F2001,X
 C0/38AE: C2 20        REP #$20

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 17D2
+Routine_C217D2:
 C2/17D2: E2 30        SEP #$30
 C2/17D4: A6 5F        LDX $5F
 C2/17D6: E6 5E        INC $5E

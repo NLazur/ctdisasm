@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1E38
+Routine_C21E38:
 C2/1E38: 7B           TDC
 C2/1E39: BD 02 00     LDA $0002,X
 C2/1E3C: 0A           ASL

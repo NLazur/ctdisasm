@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3E9F
+Routine_C33E9F:
 C3/3E9F: 0B           PHD
 C3/3EA0: 0A           ASL
 C3/3EA1: 0A           ASL

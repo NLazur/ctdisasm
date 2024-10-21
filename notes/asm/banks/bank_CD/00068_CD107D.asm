@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 107D
+Routine_CD107D:
 CD/107D: 86 73        STX $73
 CD/107F: 9C AD CA     STZ $CAAD
 CD/1082: A9 38        LDA #$38

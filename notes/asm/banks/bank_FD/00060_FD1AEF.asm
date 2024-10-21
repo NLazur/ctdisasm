@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1AEF
+Routine_FD1AEF:
 FD/1AEF: 37 04        AND [$04],Y
 FD/1AF1: 3A           DEC
 FD/1AF2: 04 5C        TSB $5C

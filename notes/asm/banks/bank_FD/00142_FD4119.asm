@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4119
+Routine_FD4119:
 FD/4119: 00 9E        BRK $9E
 FD/411B: 85 3F        STA $3F
 FD/411D: 8B           PHB

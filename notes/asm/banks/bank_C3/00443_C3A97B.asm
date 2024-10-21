@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: A97B
+Routine_C3A97B:
 C3/A97B: 3D 30 40     AND $4030,X
 C3/A97E: 20 43 F0     JSR $F043
 C3/A981: 27 E0        AND [$E0]

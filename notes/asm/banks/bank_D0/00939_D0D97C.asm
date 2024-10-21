@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D97C
+Routine_D0D97C:
 D0/D97C: 00 40        BRK $40
 D0/D97E: 20 60 00     JSR $0060
 D0/D981: 00 00        BRK $00

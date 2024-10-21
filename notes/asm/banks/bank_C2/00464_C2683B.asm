@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 683B
+Routine_C2683B:
 C2/683B: E2 20        SEP #$20
 C2/683D: A6 4E        LDX $4E
 C2/683F: BD 02 00     LDA $0002,X

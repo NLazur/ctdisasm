@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4830
+Routine_FD4830:
 FD/4830: CF 09 EC 14  CMP $14EC09
 FD/4834: DB           STP
 FD/4835: 00 D2        BRK $D2

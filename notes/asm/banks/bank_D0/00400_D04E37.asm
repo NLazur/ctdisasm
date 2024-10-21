@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4E37
+Routine_D04E37:
 D0/4E37: B0 2A        BCS $4E63
 D0/4E39: CA           DEX
 D0/4E3A: A0 50        LDY #$50

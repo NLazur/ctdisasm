@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EBEB
+Routine_CFEBEB:
 CF/EBEB: BD 32 00     LDA $0032,X
 CF/EBEE: 99 32 00     STA $0032,Y
 CF/EBF1: BD 36 00     LDA $0036,X

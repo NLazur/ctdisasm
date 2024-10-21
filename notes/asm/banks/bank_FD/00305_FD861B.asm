@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 861B
+Routine_FD861B:
 FD/861B: DF 6B F7 6B  CMP $6BF76B,X
 FD/861F: EF 02 00 DF  SBC $DF0002
 FD/8623: 00 6D        BRK $6D

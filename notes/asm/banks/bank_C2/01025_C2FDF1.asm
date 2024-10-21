@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FDF1
+Routine_C2FDF1:
 C2/FDF1: AD 53 2C     LDA $2C53
 C2/FDF4: C9 7F 96     CMP #$967F
 C2/FDF7: 90 0F        BCC $FE08

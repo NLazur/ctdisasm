@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 8FB1
+Routine_CD8FB1:
 CD/8FB1: 00 60        BRK $60
 CD/8FB3: 01 73        ORA ($73,X)
 CD/8FB5: 03 1B        ORA $1B,S

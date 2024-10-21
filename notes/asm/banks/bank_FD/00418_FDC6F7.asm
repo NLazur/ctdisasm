@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C6F7
+Routine_FDC6F7:
 FD/C6F7: C2 20        REP #$20
 FD/C6F9: AF 87 1D 00  LDA $001D87
 FD/C6FD: 8D 0C 15     STA $150C

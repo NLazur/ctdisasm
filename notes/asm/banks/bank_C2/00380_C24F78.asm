@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4F78
+Routine_C24F78:
 C2/4F78: 9C F7 1B     STZ $1BF7
 C2/4F7B: FE 02 00     INC $0002,X
 C2/4F7E: C2 20        REP #$20

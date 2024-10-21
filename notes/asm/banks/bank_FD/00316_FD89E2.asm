@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 89E2
+Routine_FD89E2:
 FD/89E2: 1F E0 C7 3F  ORA $3FC7E0,X
 FD/89E6: 18           CLC
 FD/89E7: 07 00        ORA [$00]

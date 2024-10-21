@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F204
+Routine_FDF204:
 FD/F204: E2 10        SEP #$10
 FD/F206: A2 00        LDX #$00
 FD/F208: BD 00 F8     LDA $F800,X

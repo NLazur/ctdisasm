@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 065D
+Routine_D1065D:
 D1/065D: 41 42        EOR ($42,X)
 D1/065F: 41 60        EOR ($60,X)
 D1/0661: 15 08        ORA $08,X

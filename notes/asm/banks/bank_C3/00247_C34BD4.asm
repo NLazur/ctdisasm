@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4BD4
+Routine_C34BD4:
 C3/4BD4: C9 FF D0     CMP #$D0FF
 C3/4BD7: 0D B5 65     ORA $65B5
 C3/4BDA: 00 95        BRK $95

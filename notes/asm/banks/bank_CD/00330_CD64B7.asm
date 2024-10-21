@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 64B7
+Routine_CD64B7:
 CD/64B7: 89 70        BIT #$70
 CD/64B9: 89 A8        BIT #$A8
 CD/64BB: 89 C8        BIT #$C8

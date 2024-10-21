@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2F4E
+Routine_C22F4E:
 C2/2F4E: AF ED 01 7F  LDA $7F01ED
 C2/2F52: D0 1E        BNE $2F72
 C2/2F54: A5 E3        LDA $E3

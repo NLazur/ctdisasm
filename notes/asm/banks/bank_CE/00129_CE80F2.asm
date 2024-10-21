@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 80F2
+Routine_CE80F2:
 CE/80F2: 00 19        BRK $19
 CE/80F4: B4 08        LDY $08,X
 CE/80F6: 30 06        BMI $80FE

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5FB6
+Routine_C25FB6:
 C2/5FB6: 0A           ASL
 C2/5FB7: 26 63        ROL $63
 C2/5FB9: 0A           ASL

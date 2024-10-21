@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EC91
+Routine_FDEC91:
 FD/EC91: A9 80        LDA #$80
 FD/EC93: 8D 15 21     STA $2115
 FD/EC96: 9C 0B 42     STZ $420B

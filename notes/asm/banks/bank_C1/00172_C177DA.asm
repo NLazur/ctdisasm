@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 77DA
+Routine_C177DA:
 C1/77DA: 98           TYA
 C1/77DB: 38           SEC
 C1/77DC: E9 19        SBC #$19

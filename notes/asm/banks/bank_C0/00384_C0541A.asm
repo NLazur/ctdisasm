@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 541A
+Routine_C0541A:
 C0/541A: BB           TYX
 C0/541B: E8           INX
 C0/541C: 7B           TDC

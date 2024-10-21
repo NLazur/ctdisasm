@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: A3F4
+Routine_FFA3F4:
 FF/A3F4: 2C 93 7C     BIT $7C93
 FF/A3F7: 23 F4        AND $F4,S
 FF/A3F9: 43 EC        EOR $EC,S

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: CBD6
+Routine_CDCBD6:
 CD/CBD6: A8           TAY
 CD/CBD7: 10 78        BPL $CC51
 CD/CBD9: 9B           TXY

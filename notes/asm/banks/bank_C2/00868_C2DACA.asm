@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DACA
+Routine_C2DACA:
 C2/DACA: 08           PHP
 C2/DACB: E2 20        SEP #$20
 C2/DACD: A9 0C        LDA #$0C

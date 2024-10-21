@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: B2A1
+Routine_CDB2A1:
 CD/B2A1: 80 71        BRA $B314
 CD/B2A3: 36 00        ROL $00,X
 CD/B2A5: 73 03        ADC ($03,S),Y

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BFFF
+Routine_C2BFFF:
 C2/BFFF: 17 C0        ORA [$C0],Y
 C2/C001: 6E C0 38     ROR $38C0
 C2/C004: C0 4A        CPY #$4A

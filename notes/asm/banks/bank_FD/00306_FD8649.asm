@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8649
+Routine_FD8649:
 FD/8649: 37 3F        AND [$3F],Y
 FD/864B: 76 FD        ROR $FD,X
 FD/864D: 9E A0 05     STZ $05A0,X

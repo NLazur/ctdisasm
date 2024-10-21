@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F09A
+Routine_CDF09A:
 CD/F09A: 00 41        BRK $41
 CD/F09C: 01 42        ORA ($42,X)
 CD/F09E: 02 43        COP $43

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 49CF
+Routine_C249CF:
 C2/49CF: AD 7E 02     LDA $027E
 C2/49D2: C9 02 D0     CMP #$D002
 C2/49D5: 52 AD        EOR ($AD)

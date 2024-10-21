@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D7D5
+Routine_CFD7D5:
 CF/D7D5: 39 6D 39     AND $396D,Y
 CF/D7D8: 1C 20 1C     TRB $1C20
 CF/D7DB: 20 B5 38     JSR $38B5

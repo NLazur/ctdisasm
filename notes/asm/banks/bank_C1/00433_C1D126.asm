@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: D126
+Routine_C1D126:
 C1/D126: E9 CF        SBC #$CF
 C1/D128: 05 D0        ORA $D0
 C1/D12A: 56 D0        LSR $D0,X

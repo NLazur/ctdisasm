@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3924
+Routine_CD3924:
 CD/3924: AA           TAX
 CD/3925: 8D 64 CC     STA $CC64
 CD/3928: 9C 20 00     STZ $0020

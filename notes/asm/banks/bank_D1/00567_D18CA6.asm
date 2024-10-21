@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 8CA6
+Routine_D18CA6:
 D1/8CA6: 82 C0 8B     BRL $D11869
 D1/8CA9: 00 8F        BRK $8F
 D1/8CAB: 80 08        BRA $8CB5

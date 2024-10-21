@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1FA0
+Routine_CD1FA0:
 CD/1FA0: 20 C0 21     JSR $21C0
 CD/1FA3: A7 40        LDA [$40]
 CD/1FA5: A8           TAY

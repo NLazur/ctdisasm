@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AA35
+Routine_C2AA35:
 C2/AA35: AA           TAX
 C2/AA36: 4A           LSR
 C2/AA37: AA           TAX

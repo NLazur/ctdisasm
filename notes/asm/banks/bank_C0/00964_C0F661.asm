@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F661
+Routine_C0F661:
 C0/F661: 3E 3C 3B     ROL $3B3C,X
 C0/F664: 3A           DEC
 C0/F665: 38           SEC

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: F623
+Routine_C1F623:
 C1/F623: 20 B9 F7     JSR $F7B9
 C1/F626: AD 8B B2     LDA $B28B
 C1/F629: C9 00        CMP #$00

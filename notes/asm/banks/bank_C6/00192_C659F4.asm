@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 59F4
+Routine_C659F4:
 C6/59F4: 56 7C        LSR $7C,X
 C6/59F6: 56 7B        LSR $7B,X
 C6/59F8: 56 6A        LSR $6A,X

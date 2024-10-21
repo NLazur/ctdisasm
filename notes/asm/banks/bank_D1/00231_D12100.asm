@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2100
+Routine_D12100:
 D1/2100: EA           NOP
 D1/2101: 04 10        TSB $10
 D1/2103: 2F 0E 00 12  AND $12000E

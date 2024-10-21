@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: B785
+Routine_C0B785:
 C0/B785: 82 B2 0F     BRL $C0C73A
 C0/B788: 8B           PHB
 C0/B789: A9 7F 48     LDA #$487F

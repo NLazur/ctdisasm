@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: E8C0
+Routine_C1E8C0:
 C1/E8C0: 7B           TDC
 C1/E8C1: AA           TAX
 C1/E8C2: 86 10        STX $10

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8226
+Routine_C38226:
 C3/8226: F0 01        BEQ $8229
 C3/8228: 37 01        AND [$01],Y
 C3/822A: 05 00        ORA $00

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: E355
+Routine_FFE355:
 FF/E355: 6A           ROR
 FF/E356: F9 FE FA     SBC $FAFE,Y
 FF/E359: F8           SED

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DD34
+Routine_FFDD34:
 FF/DD34: FF 51 AF 01  SBC $01AF51,X
 FF/DD38: FD 04 FF     SBC $FF04,X
 FF/DD3B: 09 FF 0A     ORA #$0AFF

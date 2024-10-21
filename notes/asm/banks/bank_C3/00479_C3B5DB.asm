@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B5DB
+Routine_C3B5DB:
 C3/B5DB: 1B           TCS
 C3/B5DC: 22 E2 0D 22  JSR $220DE2
 C3/B5E0: 04 24        TSB $24

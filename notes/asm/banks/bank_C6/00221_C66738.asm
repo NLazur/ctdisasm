@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6738
+Routine_C66738:
 C6/6738: 26 6C        ROL $6C
 C6/673A: 26 44        ROL $44
 C6/673C: 00 25        BRK $25

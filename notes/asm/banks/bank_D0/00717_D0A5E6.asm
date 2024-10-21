@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: A5E6
+Routine_D0A5E6:
 D0/A5E6: BE 41 70     LDX $7041,Y
 D0/A5E9: 70 78        BVS $A663
 D0/A5EB: 7F 7F 7F 7F  ADC $7F7F7F,X

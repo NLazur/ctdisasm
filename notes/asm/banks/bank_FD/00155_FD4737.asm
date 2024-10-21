@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4737
+Routine_FD4737:
 FD/4737: 30 00        BMI $4739
 FD/4739: A8           TAY
 FD/473A: 50 3C        BVC $4778

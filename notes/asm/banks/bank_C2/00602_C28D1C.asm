@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8D1C
+Routine_C28D1C:
 C2/8D1C: B9 2A 00     LDA $002A,Y
 C2/8D1F: 29 FF 00     AND #$00FF
 C2/8D22: AA           TAX

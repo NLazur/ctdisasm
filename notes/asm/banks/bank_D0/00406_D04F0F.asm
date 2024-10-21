@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4F0F
+Routine_D04F0F:
 D0/4F0F: 90 18        BCC $4F29
 D0/4F11: 04 84        TSB $84
 D0/4F13: 82 42 C1     BRL $D01058

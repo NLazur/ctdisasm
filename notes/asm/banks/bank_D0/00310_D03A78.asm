@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3A78
+Routine_D03A78:
 D0/3A78: 15 1B        ORA $1B,X
 D0/3A7A: 09 0F 0A     ORA #$0A0F
 D0/3A7D: 0E 06 06     ASL $0606

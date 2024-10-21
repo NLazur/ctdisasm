@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4590
+Routine_C04590:
 C0/4590: A9 04        LDA #$04
 C0/4592: 20 57 45     JSR $4557
 C0/4595: A9 05        LDA #$05

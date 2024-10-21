@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B575
+Routine_C3B575:
 C3/B575: CC 8C 02     CPY $028C
 C3/B578: 82 16 20     BRL $C3D591
 C3/B57B: 27 60        AND [$60]

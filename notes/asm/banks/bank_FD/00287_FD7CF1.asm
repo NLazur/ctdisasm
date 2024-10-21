@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7CF1
+Routine_FD7CF1:
 FD/7CF1: 3E 81 FF     ROL $FF81,X
 FD/7CF4: C3 3C        CMP $3C,S
 FD/7CF6: BC 21 1D     LDY $1D21,X

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 1FAB
+Routine_D01FAB:
 D0/1FAB: E8           INX
 D0/1FAC: 70 E0        BVS $1F8E
 D0/1FAE: 80 A0        BRA $1F50

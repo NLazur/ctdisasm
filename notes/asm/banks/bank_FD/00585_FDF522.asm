@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F522
+Routine_FDF522:
 FD/F522: 80 60        BRA $F584
 FD/F524: 00 61        BRK $61
 FD/F526: 80 61        BRA $F589

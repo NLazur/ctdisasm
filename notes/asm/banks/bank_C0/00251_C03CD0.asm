@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3CD0
+Routine_C03CD0:
 C0/3CD0: BB           TYX
 C0/3CD1: E8           INX
 C0/3CD2: BF 01 20 7F  LDA $7F2001,X

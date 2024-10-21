@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CD22
+Routine_D0CD22:
 D0/CD22: 70 70        BVS $CD94
 D0/CD24: 70 70        BVS $CD96
 D0/CD26: 70 70        BVS $CD98

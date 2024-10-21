@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: AACA
+Routine_C3AACA:
 C3/AACA: 30 30        BMI $AAFC
 C3/AACC: 46 2E        LSR $2E
 C3/AACE: E2 66        SEP #$66

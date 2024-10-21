@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2318
+Routine_C22318:
 C2/2318: A5 04        LDA $04
 C2/231A: 30 07        BMI $2323
 C2/231C: 38           SEC

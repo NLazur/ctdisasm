@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 4EF7
+Routine_C34EF7:
 C3/4EF7: 86 75        STX $75
 C3/4EF9: A9 80        LDA #$80
 C3/4EFB: 85 70        STA $70

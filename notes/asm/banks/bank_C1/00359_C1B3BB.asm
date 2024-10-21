@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B3BB
+Routine_C1B3BB:
 C1/B3BB: 7B           TDC
 C1/B3BC: AA           TAX
 C1/B3BD: A8           TAY

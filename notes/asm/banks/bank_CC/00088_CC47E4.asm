@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 47E4
+Routine_CC47E4:
 CC/47E4: 00 00        BRK $00
 CC/47E6: 50 46        BVC $482E
 CC/47E8: 30 00        BMI $47EA

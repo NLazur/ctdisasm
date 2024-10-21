@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2A43
+Routine_C12A43:
 C1/2A43: A2 FF FF     LDX #$FFFF
 C1/2A46: 86 86        STX $86
 C1/2A48: A2 03 00     LDX #$0003

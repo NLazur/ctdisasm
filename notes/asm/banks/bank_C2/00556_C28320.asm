@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8320
+Routine_C28320:
 C2/8320: C2 10        REP #$10
 C2/8322: E2 20        SEP #$20
 C2/8324: A9 FF        LDA #$FF

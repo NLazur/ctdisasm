@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 9A69
+Routine_FE9A69:
 FE/9A69: FF 67 A0 8D  SBC $8DA067,X
 FE/9A6D: 84 39        STY $39
 FE/9A6F: 09 26 FE     ORA #$FE26

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 206D
+Routine_CF206D:
 CF/206D: A0 C0 00     LDY #$00C0
 CF/2070: FF C1 FE 02  SBC $02FEC1,X
 CF/2074: FC 04 F8     JSR ($F804,X)

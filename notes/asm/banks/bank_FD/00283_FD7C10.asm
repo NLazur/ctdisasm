@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7C10
+Routine_FD7C10:
 FD/7C10: 00 70        BRK $70
 FD/7C12: 70 7C        BVS $7C90
 FD/7C14: 7C E0 9B     JMP ($9BE0,X)

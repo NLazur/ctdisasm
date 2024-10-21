@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F488
+Routine_FFF488:
 FF/F488: 00 00        BRK $00
 FF/F48A: 08           PHP
 FF/F48B: 08           PHP

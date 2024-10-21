@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0CF6
+Routine_D00CF6:
 D0/0CF6: D0 30        BNE $0D28
 D0/0CF8: 00 00        BRK $00
 D0/0CFA: 00 00        BRK $00

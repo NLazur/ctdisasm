@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BED6
+Routine_C3BED6:
 C3/BED6: C8           INY
 C3/BED7: 58           CLI
 C3/BED8: 70 F8        BVS $BED2

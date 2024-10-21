@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 79C9
+Routine_C679C9:
 C6/79C9: 69 0A 00     ADC #$000A
 C6/79CC: 61 58        ADC ($58,X)
 C6/79CE: 34 EF        BIT $EF,X

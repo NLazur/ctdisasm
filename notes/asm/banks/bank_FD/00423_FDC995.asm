@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C995
+Routine_FDC995:
 FD/C995: AD 27 01     LDA $0127
 FD/C998: D0 03        BNE $C99D
 FD/C99A: 82 4E F9     BRL $FDC2EB

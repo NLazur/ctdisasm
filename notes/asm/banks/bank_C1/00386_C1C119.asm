@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C119
+Routine_C1C119:
 C1/C119: C2 20        REP #$20
 C1/C11B: EB           XBA
 C1/C11C: A8           TAY

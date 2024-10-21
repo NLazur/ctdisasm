@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2252
+Routine_D02252:
 D0/2252: 2C 30 13     BIT $1330
 D0/2255: 1C 04 07     TRB $0704
 D0/2258: 00 00        BRK $00

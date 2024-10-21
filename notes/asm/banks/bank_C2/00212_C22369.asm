@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2369
+Routine_C22369:
 C2/2369: 49 FF FF     EOR #$FFFF
 C2/236C: 1A           INC
 C2/236D: 38           SEC

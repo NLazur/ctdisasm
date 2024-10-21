@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6705
+Routine_C06705:
 C0/6705: C8           INY
 C0/6706: AD F2 00     LDA $00F2
 C0/6709: 89 20        BIT #$20

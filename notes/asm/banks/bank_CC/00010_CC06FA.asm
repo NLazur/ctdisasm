@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 06FA
+Routine_CC06FA:
 CC/06FA: 9C 80 00     STZ $0080
 CC/06FD: 00 00        BRK $00
 CC/06FF: 88           DEY

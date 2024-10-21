@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: C6AD
+Routine_CCC6AD:
 CC/C6AD: 00 63        BRK $63
 CC/C6AF: FE 00 00     INC $0000,X
 CC/C6B2: 00 00        BRK $00

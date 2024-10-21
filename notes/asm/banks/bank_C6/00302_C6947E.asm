@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 947E
+Routine_C6947E:
 C6/947E: 20 E3 C4     JSR $C4E3
 C6/9481: C5 C6        CMP $C6
 C6/9483: 25 26        AND $26

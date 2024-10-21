@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FC57
+Routine_FFFC57:
 FF/FC57: E8           INX
 FF/FC58: E7 E6        SBC [$E6]
 FF/FC5A: E5 E4        SBC $E4

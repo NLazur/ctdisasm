@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0918
+Routine_C00918:
 C0/0918: A2 20 09     LDX #$0920
 C0/091B: A0 00 20     LDY #$2000
 C0/091E: C2 20        REP #$20

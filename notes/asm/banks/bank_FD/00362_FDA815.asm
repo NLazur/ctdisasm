@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: A815
+Routine_FDA815:
 FD/A815: AD 60 2D     LDA $2D60
 FD/A818: 61 AD        ADC ($AD,X)
 FD/A81A: 61 2D        ADC ($2D,X)

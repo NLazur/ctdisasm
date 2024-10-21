@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 4487
+Routine_D04487:
 D0/4487: E0 00 00     CPX #$0000
 D0/448A: 00 00        BRK $00
 D0/448C: 00 00        BRK $00

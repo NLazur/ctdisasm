@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AF53
+Routine_C0AF53:
 C0/AF53: 89 01        BIT #$01
 C0/AF55: F0 0A        BEQ $AF61
 C0/AF57: A2 00        LDX #$00

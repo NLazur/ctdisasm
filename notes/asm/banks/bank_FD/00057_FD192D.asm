@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 192D
+Routine_FD192D:
 FD/192D: 27 00        AND [$00]
 FD/192F: 08           PHP
 FD/1930: 01 14        ORA ($14,X)

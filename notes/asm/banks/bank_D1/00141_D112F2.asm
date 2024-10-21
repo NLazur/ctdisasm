@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 12F2
+Routine_D112F2:
 D1/12F2: EE 40 08     INC $0840
 D1/12F5: EC 40 EA     CPX $EA40
 D1/12F8: 38           SEC

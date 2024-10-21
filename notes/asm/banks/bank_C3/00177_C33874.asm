@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3874
+Routine_C33874:
 C3/3874: 08           PHP
 C3/3875: 3D 78 A6     AND $A678,X
 C3/3878: 1C 86 FE     TRB $FE86

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D41D
+Routine_CFD41D:
 CF/D41D: 61 1C        ADC ($1C,X)
 CF/D41F: 20 1C 20     JSR $201C
 CF/D422: 30 E0        BMI $D404

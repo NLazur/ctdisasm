@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1AEB
+Routine_CD1AEB:
 CD/1AEB: A9 FF        LDA #$FF
 CD/1AED: 8F 04 42 00  STA $004204
 CD/1AF1: 8F 05 42 00  STA $004205

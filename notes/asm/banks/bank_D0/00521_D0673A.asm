@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 673A
+Routine_D0673A:
 D0/673A: C3 C3        CMP $C3,S
 D0/673C: 4D CF 56     EOR $56CF
 D0/673F: DA           PHX

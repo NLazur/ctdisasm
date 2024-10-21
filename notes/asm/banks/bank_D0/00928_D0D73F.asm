@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D73F
+Routine_D0D73F:
 D0/D73F: C0 0B        CPY #$0B
 D0/D741: 0C 0B 0C     TSB $0C0B
 D0/D744: 0B           PHD

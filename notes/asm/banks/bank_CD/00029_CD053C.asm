@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 053C
+Routine_CD053C:
 CD/053C: 7B           TDC
 CD/053D: AA           TAX
 CD/053E: DE 6A C8     DEC $C86A,X

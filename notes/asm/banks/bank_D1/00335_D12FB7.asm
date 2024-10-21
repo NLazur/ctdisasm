@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2FB7
+Routine_D12FB7:
 D1/2FB7: CA           DEX
 D1/2FB8: 80 CA        BRA $2F84
 D1/2FBA: 1A           INC

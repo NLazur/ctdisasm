@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: C82D
+Routine_C1C82D:
 C1/C82D: 7B           TDC
 C1/C82E: 9C 23 AF     STZ $AF23
 C1/C831: AD 8B B1     LDA $B18B

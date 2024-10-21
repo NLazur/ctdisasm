@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1660
+Routine_C61660:
 C6/1660: B0 70        BCS $16D2
 C6/1662: F8           SED
 C6/1663: 38           SEC

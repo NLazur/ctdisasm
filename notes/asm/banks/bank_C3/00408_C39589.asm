@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9589
+Routine_C39589:
 C3/9589: 18           CLC
 C3/958A: 80 60        BRA $95EC
 C3/958C: 24 80        BIT $80

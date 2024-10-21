@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F414
+Routine_FFF414:
 FF/F414: FF 90 92 C6  SBC $C69290,X
 FF/F418: 5D B8 29     EOR $29B8,X
 FF/F41B: 9C 28 9D     STZ $9D28

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A4AF
+Routine_CDA4AF:
 CD/A4AF: 03 02        ORA $02,S
 CD/A4B1: 03 01        ORA $01,S
 CD/A4B3: 00 D0        BRK $D0

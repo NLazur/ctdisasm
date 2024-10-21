@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0B8D
+Routine_D10B8D:
 D1/0B8D: C0 44        CPY #$44
 D1/0B8F: 01 62        ORA ($62,X)
 D1/0B91: 01 64        ORA ($64,X)

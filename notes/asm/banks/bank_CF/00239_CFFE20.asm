@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: FE20
+Routine_CFFE20:
 CF/FE20: A2 0A 00     LDX #$000A
 CF/FE23: BD B0 AE     LDA $AEB0,X
 CF/FE26: F0 56        BEQ $FE7E

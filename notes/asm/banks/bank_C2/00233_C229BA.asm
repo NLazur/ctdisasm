@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 29BA
+Routine_C229BA:
 C2/29BA: A2 00 70     LDX #$7000
 C2/29BD: 8E 03 03     STX $0303
 C2/29C0: A9 7E        LDA #$7E

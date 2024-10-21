@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A254
+Routine_C0A254:
 C0/A254: B9 80 16     LDA $1680,Y
 C0/A257: C9 1B        CMP #$1B
 C0/A259: F0 0F        BEQ $A26A

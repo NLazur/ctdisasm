@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: FD03
+Routine_C0FD03:
 C0/FD03: C0 20        CPY #$20
 C0/FD05: A0 60 E0     LDY #$E060
 C0/FD08: 10 90        BPL $FC9A

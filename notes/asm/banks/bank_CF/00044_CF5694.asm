@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 5694
+Routine_CF5694:
 CF/5694: 1F 20 1F 00  ORA $001F20,X
 CF/5698: 07 00        ORA [$00]
 CF/569A: 03 00        ORA $00,S

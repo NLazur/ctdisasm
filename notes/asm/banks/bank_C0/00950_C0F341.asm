@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F341
+Routine_C0F341:
 C0/F341: 2D 20 17     AND $1720
 C0/F344: 12 0F        ORA ($0F)
 C0/F346: 0D 0B 0A     ORA $0A0B

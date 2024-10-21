@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5281
+Routine_C05281:
 C0/5281: 20 A2 AB     JSR $ABA2
 C0/5284: C2 20        REP #$20
 C0/5286: A5 EE        LDA $EE

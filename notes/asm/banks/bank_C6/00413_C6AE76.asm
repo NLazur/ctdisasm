@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AE76
+Routine_C6AE76:
 C6/AE76: 5F A8 0C 0D  EOR $0D0CA8,X
 C6/AE7A: 0E 10 07     ASL $0710
 C6/AE7D: 0A           ASL

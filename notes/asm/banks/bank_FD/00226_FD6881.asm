@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6881
+Routine_FD6881:
 FD/6881: 80 2A        BRA $68AD
 FD/6883: 00 10        BRK $10
 FD/6885: 80 60        BRA $68E7

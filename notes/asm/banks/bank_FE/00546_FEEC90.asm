@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EC90
+Routine_FEEC90:
 FE/EC90: 01 00        ORA ($00,X)
 FE/EC92: 10 90        BPL $EC24
 FE/EC94: C8           INY

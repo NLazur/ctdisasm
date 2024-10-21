@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A910
+Routine_C0A910:
 C0/A910: BD 00 0F     LDA $0F00,X
 C0/A913: 10 1F        BPL $A934
 C0/A915: 9E 00 0F     STZ $0F00,X

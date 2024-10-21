@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 193A
+Routine_C3193A:
 C3/193A: 70 43        BVS $197F
 C3/193C: B3 07        LDA ($07,S),Y
 C3/193E: 9C 00 1C     STZ $1C00

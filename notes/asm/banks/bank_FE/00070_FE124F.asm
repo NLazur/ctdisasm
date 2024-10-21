@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 124F
+Routine_FE124F:
 FE/124F: D6 5E        DEC $5E,X
 FE/1251: 33 4E        AND ($4E,S),Y
 FE/1253: F0 00        BEQ $1255

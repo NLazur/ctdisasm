@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BD00
+Routine_C2BD00:
 C2/BD00: 64 00        STZ $00
 C2/BD02: A0 00        LDY #$00
 C2/BD04: A6 00        LDX $00

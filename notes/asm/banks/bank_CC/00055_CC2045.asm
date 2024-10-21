@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2045
+Routine_CC2045:
 CC/2045: 12 00        ORA ($00)
 CC/2047: 28           PLP
 CC/2048: 18           CLC

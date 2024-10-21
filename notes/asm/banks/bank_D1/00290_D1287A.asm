@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 287A
+Routine_D1287A:
 D1/287A: C0 00        CPY #$00
 D1/287C: 00 11        BRK $11
 D1/287E: 80 28        BRA $28A8

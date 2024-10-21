@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F7A9
+Routine_CCF7A9:
 CC/F7A9: 06 03        ASL $03
 CC/F7AB: 09 40 06     ORA #$0640
 CC/F7AE: 03 04        ORA $04,S

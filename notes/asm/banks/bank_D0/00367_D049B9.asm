@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 49B9
+Routine_D049B9:
 D0/49B9: C0 20 E0     CPY #$E020
 D0/49BC: 50 B0        BVC $496E
 D0/49BE: 08           PHP

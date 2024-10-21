@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BDA6
+Routine_C2BDA6:
 C2/BDA6: A0 76 9B     LDY #$9B76
 C2/BDA9: A9 7E        LDA #$7E
 C2/BDAB: EB           XBA

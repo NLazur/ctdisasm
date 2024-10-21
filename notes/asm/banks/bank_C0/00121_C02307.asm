@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2307
+Routine_C02307:
 C0/2307: A5 3C        LDA $3C
 C0/2309: C9 02        CMP #$02
 C0/230B: B0 1C        BCS $2329

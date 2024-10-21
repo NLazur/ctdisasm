@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 96E5
+Routine_CE96E5:
 CE/96E5: EB           XBA
 CE/96E6: D1 00        CMP ($00),Y
 CE/96E8: 01 E8        ORA ($E8,X)

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C52E
+Routine_FDC52E:
 FD/C52E: AF FD 1D 00  LDA $001DFD
 FD/C532: D0 1C        BNE $C550
 FD/C534: A9 64        LDA #$64

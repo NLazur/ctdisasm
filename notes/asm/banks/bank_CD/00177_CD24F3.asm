@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 24F3
+Routine_CD24F3:
 CD/24F3: 20 36 24     JSR $2436
 CD/24F6: A7 40        LDA [$40]
 CD/24F8: 0A           ASL

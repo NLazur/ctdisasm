@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6C86
+Routine_C26C86:
 C2/6C86: 18           CLC
 C2/6C87: BD 18 00     LDA $0018,X
 C2/6C8A: 7D 20 00     ADC $0020,X

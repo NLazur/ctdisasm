@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3808
+Routine_C33808:
 C3/3808: 15 BF        ORA $BF,X
 C3/380A: 5D 5D 7E     EOR $7E5D,X
 C3/380D: DA           PHX

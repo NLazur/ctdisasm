@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2056
+Routine_C02056:
 C0/2056: 80 4D        BRA $20A5
 C0/2058: AD 15 02     LDA $0215
 C0/205B: F0 24        BEQ $2081

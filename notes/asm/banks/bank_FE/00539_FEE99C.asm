@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: E99C
+Routine_FEE99C:
 FE/E99C: 0A           ASL
 FE/E99D: 20 60 70     JSR $7060
 FE/E9A0: 00 98        BRK $98

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 26A3
+Routine_C626A3:
 C6/26A3: 2A           ROL
 C6/26A4: 2C 95 35     BIT $3595
 C6/26A7: 23 9A        AND $9A,S

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3D13
+Routine_C63D13:
 C6/3D13: 6E 00 40     ROR $4000
 C6/3D16: 7F 40 7E 40  ADC $407E40,X
 C6/3D1A: 4E 00 4F     LSR $4F00

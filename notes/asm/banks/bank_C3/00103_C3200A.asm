@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 200A
+Routine_C3200A:
 C3/200A: 18           CLC
 C3/200B: FF FF 80 66  SBC $6680FF,X
 C3/200F: 1F 08 00 8E  ORA $8E0008,X

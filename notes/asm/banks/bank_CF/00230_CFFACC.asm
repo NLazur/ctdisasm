@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: FACC
+Routine_CFFACC:
 CF/FACC: AD 51 AC     LDA $AC51
 CF/FACF: 30 08        BMI $FAD9
 CF/FAD1: 7B           TDC

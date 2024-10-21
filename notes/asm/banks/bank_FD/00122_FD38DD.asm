@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 38DD
+Routine_FD38DD:
 FD/38DD: 07 A8        ORA [$A8]
 FD/38DF: 8B           PHB
 FD/38E0: 9E 00 9F     STZ $9F00,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 61BD
+Routine_C261BD:
 C2/61BD: E2 20        SEP #$20
 C2/61BF: A0 01 00     LDY #$0001
 C2/61C2: A2 80 96     LDX #$9680

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B107
+Routine_C2B107:
 C2/B107: 20 0D B1     JSR $B10D
 C2/B10A: 4C 7F B1     JMP $B17F
 C2/B10D: 08           PHP

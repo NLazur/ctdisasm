@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8DF2
+Routine_D08DF2:
 D0/8DF2: 20 20 10     JSR $1020
 D0/8DF5: 10 08        BPL $8DFF
 D0/8DF7: 04 C5        TSB $C5

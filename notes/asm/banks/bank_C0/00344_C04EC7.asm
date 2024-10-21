@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4EC7
+Routine_C04EC7:
 C0/4EC7: A6 6D        LDX $6D
 C0/4EC9: BD 80 1A     LDA $1A80,X
 C0/4ECC: F0 11        BEQ $4EDF

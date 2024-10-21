@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2336
+Routine_C22336:
 C2/2336: E2 30        SEP #$30
 C2/2338: AE 30 1B     LDX $1B30
 C2/233B: BF 00 FE C0  LDA $C0FE00,X

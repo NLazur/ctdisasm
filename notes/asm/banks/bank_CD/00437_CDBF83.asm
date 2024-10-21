@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: BF83
+Routine_CDBF83:
 CD/BF83: 1E 4A 00     ASL $004A,X
 CD/BF86: 73 00        ADC ($00,S),Y
 CD/BF88: 24 01        BIT $01

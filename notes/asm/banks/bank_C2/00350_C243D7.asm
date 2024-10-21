@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 43D7
+Routine_C243D7:
 C2/43D7: A9 40        LDA #$40
 C2/43D9: 0C 94 02     TSB $0294
 C2/43DC: A6 4E        LDX $4E

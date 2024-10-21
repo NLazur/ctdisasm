@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: BFF2
+Routine_C0BFF2:
 C0/BFF2: 8B           PHB
 C0/BFF3: A9 7F        LDA #$7F
 C0/BFF5: 48           PHA

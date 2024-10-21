@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BCD5
+Routine_C6BCD5:
 C6/BCD5: 93 9B        STA ($9B,S),Y
 C6/BCD7: 01 00        ORA ($00,X)
 C6/BCD9: 9F 9B 1E DB  STA $DB1E9B,X

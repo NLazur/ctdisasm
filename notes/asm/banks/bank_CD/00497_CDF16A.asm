@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: F16A
+Routine_CDF16A:
 CD/F16A: 82 61 82     BRL $CD73CE
 CD/F16D: 62 82 63     PER $CD54F2
 CD/F170: 82 64 82     BRL $CD73D7

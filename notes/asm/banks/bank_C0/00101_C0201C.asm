@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 201C
+Routine_C0201C:
 C0/201C: A5 62        LDA $62
 C0/201E: F0 36        BEQ $2056
 C0/2020: C9 01        CMP #$01

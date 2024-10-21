@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: D43D
+Routine_CFD43D:
 CF/D43D: E1 1C        SBC ($1C,X)
 CF/D43F: 20 1C 20     JSR $201C
 CF/D442: 49 38        EOR #$38

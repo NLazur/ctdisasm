@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: EE6E
+Routine_CEEE6E:
 CE/EE6E: 8B           PHB
 CE/EE6F: 0A           ASL
 CE/EE70: AA           TAX

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 020A
+Routine_CD020A:
 CD/020A: A9 10        LDA #$10
 CD/020C: 48           PHA
 CD/020D: 20 75 3E     JSR $3E75

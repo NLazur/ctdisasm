@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 7118
+Routine_FE7118:
 FE/7118: 02 F0        COP $F0
 FE/711A: 02 F0        COP $F0
 FE/711C: 02 F0        COP $F0

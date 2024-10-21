@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3364
+Routine_C33364:
 C3/3364: 99 02 07     STA $0702,Y
 C3/3367: E9 09        SBC #$09
 C3/3369: 4A           LSR

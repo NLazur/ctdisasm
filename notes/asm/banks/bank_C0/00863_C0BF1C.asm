@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: BF1C
+Routine_C0BF1C:
 C0/BF1C: BD 04 48     LDA $4804,X
 C0/BF1F: 9D C4 4B     STA $4BC4,X
 C0/BF22: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3F7D
+Routine_C13F7D:
 C1/3F7D: 80 39        BRA $3FB8
 C1/3F7F: C9 13 D0     CMP #$D013
 C1/3F82: 03 7B        ORA $7B,S

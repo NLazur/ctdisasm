@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C9CD
+Routine_C2C9CD:
 C2/C9CD: A5 54        LDA $54
 C2/C9CF: 20 27 EA     JSR $EA27
 C2/C9D2: A5 5A        LDA $5A

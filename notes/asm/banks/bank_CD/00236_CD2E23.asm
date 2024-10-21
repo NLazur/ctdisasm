@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2E23
+Routine_CD2E23:
 CD/2E23: A6 43        LDX $43
 CD/2E25: C2 21        REP #$21
 CD/2E27: BD 60 CA     LDA $CA60,X

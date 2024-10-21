@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8FBD
+Routine_C38FBD:
 C3/8FBD: 2C 42 38     BIT $3842
 C3/8FC0: 1E 14 01     ASL $0114,X
 C3/8FC3: A5 00        LDA $00

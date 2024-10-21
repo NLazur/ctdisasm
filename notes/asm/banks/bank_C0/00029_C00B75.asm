@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0B75
+Routine_C00B75:
 C0/0B75: A9 5C        LDA #$5C        ; set jump code for IRQ
 C0/0B77: 8D 04 05     STA $0504
 C0/0B7A: A2 CC EC     LDX #$ECCC

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CC41
+Routine_C3CC41:
 C3/CC41: 67 2E        ADC [$2E]
 C3/CC43: 37 5C        AND [$5C],Y
 C3/CC45: 32 05        AND ($05)

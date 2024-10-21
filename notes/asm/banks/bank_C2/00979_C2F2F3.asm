@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F2F3
+Routine_C2F2F3:
 C2/F2F3: 08           PHP
 C2/F2F4: E2 20        SEP #$20
 C2/F2F6: C2 10        REP #$10

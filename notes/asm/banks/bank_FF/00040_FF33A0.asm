@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 33A0
+Routine_FF33A0:
 FF/33A0: 70 60        BVS $3402
 FF/33A2: 70 60        BVS $3404
 FF/33A4: 70 60        BVS $3406

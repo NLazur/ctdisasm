@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CA41
+Routine_D0CA41:
 D0/CA41: C0 00        CPY #$00
 D0/CA43: 00 00        BRK $00
 D0/CA45: 00 00        BRK $00

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2AA7
+Routine_D12AA7:
 D1/2AA7: EE 46 B6     INC $B646
 D1/2AAA: 00 E8        BRK $E8
 D1/2AAC: 80 EE        BRA $2A9C

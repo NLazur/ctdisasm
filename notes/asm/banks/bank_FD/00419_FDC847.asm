@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C847
+Routine_FDC847:
 FD/C847: 8B           PHB
 FD/C848: A9 7F 48     LDA #$487F
 FD/C84B: AB           PLB

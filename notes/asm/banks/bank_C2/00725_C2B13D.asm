@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B13D
+Routine_C2B13D:
 C2/B13D: 05 14        ORA $14
 C2/B13F: 32 64        AND ($64)
 C2/B141: 49 B1        EOR #$B1

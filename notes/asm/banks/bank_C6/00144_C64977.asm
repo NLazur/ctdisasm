@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4977
+Routine_C64977:
 C6/4977: 90 20        BCC $4999
 C6/4979: BA           TSX
 C6/497A: 08           PHP

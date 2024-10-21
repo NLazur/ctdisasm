@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: F767
+Routine_FEF767:
 FE/F767: 2D 2E 63     AND $632E
 FE/F76A: AE 80 80     LDX $8080
 FE/F76D: F9 33 C0     SBC $C033,Y

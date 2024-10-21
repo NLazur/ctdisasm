@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F73D
+Routine_FDF73D:
 FD/F73D: C0 60        CPY #$60
 FD/F73F: 20 61 04     JSR $0461
 FD/F742: 90 29        BCC $F76D

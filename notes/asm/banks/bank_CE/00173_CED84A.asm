@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: D84A
+Routine_CED84A:
 CE/D84A: C0 18        CPY #$18
 CE/D84C: 10 FF        BPL $D84D
 CE/D84E: 01 0D        ORA ($0D,X)

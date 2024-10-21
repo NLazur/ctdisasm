@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 7EE3
+Routine_CF7EE3:
 CF/7EE3: FF 82 FD 01  SBC $01FD82,X
 CF/7EE7: FE AB 54     INC $54AB,X
 CF/7EEA: 57 A8        EOR [$A8],Y

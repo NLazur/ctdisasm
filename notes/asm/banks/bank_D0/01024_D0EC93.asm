@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EC93
+Routine_D0EC93:
 D0/EC93: 38           SEC
 D0/EC94: 0A           ASL
 D0/EC95: 39 0A 3A     AND $3A0A,Y

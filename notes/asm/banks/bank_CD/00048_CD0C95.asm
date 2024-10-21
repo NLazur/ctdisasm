@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0C95
+Routine_CD0C95:
 CD/0C95: A5 7E        LDA $7E
 CD/0C97: 0A           ASL
 CD/0C98: AA           TAX

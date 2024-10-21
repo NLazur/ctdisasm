@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: BD6F
+Routine_C1BD6F:
 C1/BD6F: C2 20        REP #$20
 C1/BD71: 8A           TXA
 C1/BD72: EB           XBA

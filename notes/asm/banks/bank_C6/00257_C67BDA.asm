@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7BDA
+Routine_C67BDA:
 C6/7BDA: 06 81        ASL $81
 C6/7BDC: 81 F0        STA ($F0,X)
 C6/7BDE: 0D 90 28     ORA $2890

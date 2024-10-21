@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B54D
+Routine_C3B54D:
 C3/B54D: 13 31        ORA ($31,S),Y
 C3/B54F: 3C 09 27     BIT $2709,X
 C3/B552: 17 D0        ORA [$D0],Y

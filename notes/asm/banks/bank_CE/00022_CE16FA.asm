@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 16FA
+Routine_CE16FA:
 CE/16FA: A8           TAY
 CE/16FB: 05 03        ORA $03
 CE/16FD: 01 85        ORA ($85,X)

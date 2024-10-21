@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5775
+Routine_C25775:
 C2/5775: C2 20        REP #$20
 C2/5777: AF C2 57 C2  LDA $C257C2
 C2/577B: 8F 00 86 7E  STA $7E8600

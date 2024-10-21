@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 4269
+Routine_C14269:
 C1/4269: AD 28 A0     LDA $A028
 C1/426C: D0 FA        BNE $4268
 C1/426E: AD 12 A0     LDA $A012

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2535
+Routine_CD2535:
 CD/2535: A4 40        LDY $40
 CD/2537: C8           INY
 CD/2538: 84 40        STY $40

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 5DB5
+Routine_C35DB5:
 C3/5DB5: A2 FE        LDX #$FE
 C3/5DB7: FF 8E 00 0B  SBC $0B008E,X
 C3/5DBB: 6C 04 33     JMP ($3304)

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 66D7
+Routine_D166D7:
 D1/66D7: D0 30        BNE $6709
 D1/66D9: 00 FF        BRK $FF
 D1/66DB: 0B           PHD

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1CBF
+Routine_CD1CBF:
 CD/1CBF: A7 40        LDA [$40]
 CD/1CC1: 0A           ASL
 CD/1CC2: 0A           ASL

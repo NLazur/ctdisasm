@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0C69
+Routine_CD0C69:
 CD/0C69: C2 20        REP #$20
 CD/0C6B: A2 C1 CC     LDX #$CCC1
 CD/0C6E: A0 80 05     LDY #$0580

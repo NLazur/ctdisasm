@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A4E0
+Routine_C1A4E0:
 C1/A4E0: 7B           TDC
 C1/A4E1: 8D CB AE     STA $AECB
 C1/A4E4: AD 52 B2     LDA $B252

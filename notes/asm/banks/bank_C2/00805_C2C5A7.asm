@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C5A7
+Routine_C2C5A7:
 C2/C5A7: 74 03        STZ $03,X
 C2/C5A9: F4 03 74     PEA $7403
 C2/C5AC: 04 F4        TSB $F4

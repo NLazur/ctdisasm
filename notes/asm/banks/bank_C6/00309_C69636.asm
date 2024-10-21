@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9636
+Routine_C69636:
 C6/9636: 08           PHP
 C6/9637: 24 00        BIT $00
 C6/9639: 9C 23 24     STZ $2423

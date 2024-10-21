@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 59C3
+Routine_FD59C3:
 FD/59C3: 00 7F        BRK $7F
 FD/59C5: 01 43        ORA ($43,X)
 FD/59C7: 02 1F        COP $1F

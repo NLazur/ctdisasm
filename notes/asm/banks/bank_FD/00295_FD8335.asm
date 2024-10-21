@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8335
+Routine_FD8335:
 FD/8335: 73 34        ADC ($34,S),Y
 FD/8337: C4 A5        CPY $A5
 FD/8339: 3C FD 1C     BIT $1CFD,X

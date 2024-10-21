@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 8293
+Routine_D18293:
 D1/8293: D7 01        CMP [$01],Y
 D1/8295: 03 D7        ORA $D7,S
 D1/8297: 41 D7        EOR ($D7,X)

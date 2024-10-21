@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: CD12
+Routine_FECD12:
 FE/CD12: 14 00        TRB $00
 FE/CD14: 1A           INC
 FE/CD15: 1A           INC

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 164F
+Routine_C6164F:
 C6/164F: 98           TYA
 C6/1650: 04 A0        TSB $A0
 C6/1652: 70 A0        BVS $15F4

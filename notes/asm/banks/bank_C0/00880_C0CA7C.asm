@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: CA7C
+Routine_C0CA7C:
 C0/CA7C: C2 10        REP #$10
 C0/CA7E: E2 10        SEP #$10
 C0/CA80: 64 79        STZ $79

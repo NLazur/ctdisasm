@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5842
+Routine_C25842:
 C2/5842: B2 58        LDA ($58)
 C2/5844: F5 5B        SBC $5B,X
 C2/5846: 3E 5C 77     ROL $775C,X

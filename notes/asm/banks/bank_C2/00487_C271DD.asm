@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 71DD
+Routine_C271DD:
 C2/71DD: A4 50        LDY $50
 C2/71DF: 84 48        STY $48
 C2/71E1: 6C 50 5E     JMP ($5E50)

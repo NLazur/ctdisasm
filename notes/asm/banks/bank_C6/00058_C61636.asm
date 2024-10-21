@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 1636
+Routine_C61636:
 C6/1636: 22 0F 16 1F  JSR $1F160F
 C6/163A: 08           PHP
 C6/163B: 6F 6F 27 0C  ADC $0C276F

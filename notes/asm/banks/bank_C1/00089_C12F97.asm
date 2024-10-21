@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 2F97
+Routine_C12F97:
 C1/2F97: A6 94        LDX $94
 C1/2F99: BD 9B A0     LDA $A09B,X
 C1/2F9C: F0 04        BEQ $2FA2

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: EEE0
+Routine_FEEEE0:
 FE/EEE0: 1F EF C1 FE  ORA $FEC1EF,X
 FE/EEE4: F1 01        SBC ($01),Y
 FE/EEE6: F0 79        BEQ $EF61

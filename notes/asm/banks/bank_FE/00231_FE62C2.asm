@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 62C2
+Routine_FE62C2:
 FE/62C2: 01 6C        ORA ($6C,X)
 FE/62C4: 10 90        BPL $6256
 FE/62C6: 64 94        STZ $94

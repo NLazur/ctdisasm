@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 17C8
+Routine_D117C8:
 D1/17C8: C4 40        CPY $40
 D1/17CA: 28           PLP
 D1/17CB: 41 C6        EOR ($C6,X)

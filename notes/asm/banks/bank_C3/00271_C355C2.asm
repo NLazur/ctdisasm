@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 55C2
+Routine_C355C2:
 C3/55C2: 8E 31 90     STX $9031
 C3/55C5: 05 A2        ORA $A2
 C3/55C7: 00 FF        BRK $FF

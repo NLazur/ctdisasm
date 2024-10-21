@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: CF39
+Routine_C3CF39:
 C3/CF39: 0E DA 01     ASL $01DA
 C3/CF3C: 79 01 2D     ADC $2D01,Y
 C3/CF3F: 48           PHA

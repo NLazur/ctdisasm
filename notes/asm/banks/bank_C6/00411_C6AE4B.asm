@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: AE4B
+Routine_C6AE4B:
 C6/AE4B: BB           TYX
 C6/AE4C: 39 70 2D     AND $2D70,Y
 C6/AE4F: 58           CLI

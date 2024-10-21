@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2196
+Routine_FD2196:
 FD/2196: 19 00 02     ORA $0200,Y
 FD/2199: E0 F3        CPX #$F3
 FD/219B: E0 B3        CPX #$B3

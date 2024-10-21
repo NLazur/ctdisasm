@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 30B7
+Routine_D130B7:
 D1/30B7: E6 40        INC $40
 D1/30B9: FF FF 40 34  SBC $3440FF,X
 D1/30BD: 00 00        BRK $00

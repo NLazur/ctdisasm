@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 982E
+Routine_C0982E:
 C0/982E: A5 77        LDA $77
 C0/9830: 89 01        BIT #$01
 C0/9832: F0 0C        BEQ $9840

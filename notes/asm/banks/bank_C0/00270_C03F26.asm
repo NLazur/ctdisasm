@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3F26
+Routine_C03F26:
 C0/3F26: BB           TYX
 C0/3F27: E8           INX
 C0/3F28: BF 01 20 7F  LDA $7F2001,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2E9A
+Routine_C02E9A:
 C0/2E9A: A6 6D        LDX $6D
 C0/2E9C: BF 01 0B 7F  LDA $7F0B01,X
 C0/2EA0: F0 36        BEQ $2ED8

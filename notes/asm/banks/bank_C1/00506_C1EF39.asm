@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EF39
+Routine_C1EF39:
 C1/EF39: 7B           TDC
 C1/EF3A: AD 90 B1     LDA $B190
 C1/EF3D: 85 2C        STA $2C

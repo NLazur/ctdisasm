@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6EC2
+Routine_FE6EC2:
 FE/6EC2: 39 E7 1C     AND $1CE7,Y
 FE/6EC5: 53 04        EOR ($04,S),Y
 FE/6EC7: 36 50        ROL $50,X

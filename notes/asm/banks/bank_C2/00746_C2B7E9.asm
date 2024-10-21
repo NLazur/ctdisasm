@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B7E9
+Routine_C2B7E9:
 C2/B7E9: A9 38        LDA #$38
 C2/B7EB: 33 85        AND ($85,S),Y
 C2/B7ED: 00 A9        BRK $A9

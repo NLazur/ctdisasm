@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1076
+Routine_FD1076:
 FD/1076: 2D 13 56     AND $5613
 FD/1079: 2F 3B 04 6A  AND $6A043B
 FD/107D: 10 0D        BPL $108C

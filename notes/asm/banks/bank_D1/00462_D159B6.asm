@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 59B6
+Routine_D159B6:
 D1/59B6: 7B           TDC
 D1/59B7: 6F 9C 73 BD  ADC $BD739C
 D1/59BB: 77 DE        ADC [$DE],Y

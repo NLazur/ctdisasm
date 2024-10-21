@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 07F6
+Routine_CC07F6:
 CC/07F6: 6D 10 00     ADC $0010
 CC/07F9: 00 00        BRK $00
 CC/07FB: 02 00        COP $00

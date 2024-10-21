@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 09B0
+Routine_C109B0:
 C1/09B0: A6 80        LDX $80
 C1/09B2: BD 83 15     LDA $1583,X
 C1/09B5: F0 05        BEQ $09BC

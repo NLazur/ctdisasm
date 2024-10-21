@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: FA9F
+Routine_C2FA9F:
 C2/FA9F: 20 A8 FA     JSR $FAA8
 C2/FAA2: 4C 16 82     JMP $8216
 C2/FAA5: 20 1E 82     JSR $821E

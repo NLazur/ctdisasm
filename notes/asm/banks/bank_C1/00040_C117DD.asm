@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 17DD
+Routine_C117DD:
 C1/17DD: AD D5 95     LDA $95D5
 C1/17E0: 10 03        BPL $17E5
 C1/17E2: 4C FE 1A     JMP $1AFE

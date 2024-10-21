@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 027F
+Routine_CD027F:
 CD/027F: 8D 13 02     STA $0213
 CD/0282: 22 09 00 C2  JSR $C20009
 CD/0286: 20 7D 3E     JSR $3E7D

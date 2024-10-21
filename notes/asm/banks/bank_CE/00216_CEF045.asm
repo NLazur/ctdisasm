@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: F045
+Routine_CEF045:
 CE/F045: 80 00        BRA $F047
 CE/F047: 02 04        COP $04
 CE/F049: 06 08        ASL $08

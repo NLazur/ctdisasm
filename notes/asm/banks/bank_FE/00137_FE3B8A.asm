@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 3B8A
+Routine_FE3B8A:
 FE/3B8A: 0C 02 10     TSB $1002
 FE/3B8D: 07 A1        ORA [$A1]
 FE/3B8F: 80 01        BRA $3B92

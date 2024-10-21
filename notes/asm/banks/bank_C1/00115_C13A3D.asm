@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 3A3D
+Routine_C13A3D:
 C1/3A3D: A6 9C        LDX $9C
 C1/3A3F: 9E FD A5     STZ $A5FD,X
 C1/3A42: BD 91 97     LDA $9791,X

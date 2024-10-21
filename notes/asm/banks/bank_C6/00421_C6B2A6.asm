@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B2A6
+Routine_C6B2A6:
 C6/B2A6: C3 20        CMP $20,S
 C6/B2A8: 02 0A        COP $0A
 C6/B2AA: 85 0C        STA $0C

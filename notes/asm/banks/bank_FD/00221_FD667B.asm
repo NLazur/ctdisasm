@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 667B
+Routine_FD667B:
 FD/667B: F8           SED
 FD/667C: FC 93 3D     JSR ($3D93,X)
 FD/667F: 04 7B        TSB $7B

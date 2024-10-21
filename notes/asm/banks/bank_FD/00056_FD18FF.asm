@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 18FF
+Routine_FD18FF:
 FD/18FF: 1A           INC
 FD/1900: 18           CLC
 FD/1901: 80 E4        BRA $18E7

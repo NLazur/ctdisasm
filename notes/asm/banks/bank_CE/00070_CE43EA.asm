@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 43EA
+Routine_CE43EA:
 CE/43EA: 2B           PLD
 CE/43EB: 30 0A        BMI $43F7
 CE/43ED: 07 30        ORA [$30]

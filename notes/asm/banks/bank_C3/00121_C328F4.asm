@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 28F4
+Routine_C328F4:
 C3/28F4: 20 3F 4C     JSR $4C3F
 C3/28F7: A5 69        LDA $69
 C3/28F9: 18           CLC

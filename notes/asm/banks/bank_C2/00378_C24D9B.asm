@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4D9B
+Routine_C24D9B:
 C2/4D9B: FE 02 00     INC $0002,X
 C2/4D9E: A9 01 8D     LDA #$8D01
 C2/4DA1: F0 1B        BEQ $4DBE

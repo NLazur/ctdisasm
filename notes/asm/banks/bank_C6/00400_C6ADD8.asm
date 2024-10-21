@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: ADD8
+Routine_C6ADD8:
 C6/ADD8: F8           SED
 C6/ADD9: 24 02        BIT $02
 C6/ADDB: 4E 80 F7     LSR $F780

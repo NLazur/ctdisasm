@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 8479
+Routine_FE8479:
 FE/8479: C0 F1        CPY #$F1
 FE/847B: C0 11        CPY #$11
 FE/847D: 0B           PHD

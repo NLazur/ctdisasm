@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: A6D4
+Routine_CDA6D4:
 CD/A6D4: 78           SEI
 CD/A6D5: CE 70 02     DEC $0270
 CD/A6D8: 00 24        BRK $24

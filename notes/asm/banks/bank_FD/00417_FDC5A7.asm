@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C5A7
+Routine_FDC5A7:
 FD/C5A7: C2 20        REP #$20
 FD/C5A9: AF 87 1D 00  LDA $001D87
 FD/C5AD: 8D 08 15     STA $1508

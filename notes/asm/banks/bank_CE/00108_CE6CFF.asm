@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 6CFF
+Routine_CE6CFF:
 CE/6CFF: 01 02        ORA ($02,X)
 CE/6D01: 01 23        ORA ($23,X)
 CE/6D03: 02 70        COP $70

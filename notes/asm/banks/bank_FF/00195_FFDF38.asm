@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DF38
+Routine_FFDF38:
 FF/DF38: 7F FF 00 00  ADC $0000FF,X
 FF/DF3C: 80 40        BRA $DF7E
 FF/DF3E: A0 A0        LDY #$A0

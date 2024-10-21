@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 40B9
+Routine_C340B9:
 C3/40B9: DB           STP
 C3/40BA: 18           CLC
 C3/40BB: 20 0E 00     JSR $000E

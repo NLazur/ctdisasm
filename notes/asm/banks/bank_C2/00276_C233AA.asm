@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 33AA
+Routine_C233AA:
 C2/33AA: 20 6E 62     JSR $626E
 C2/33AD: A9 7F        LDA #$7F
 C2/33AF: AE 45 1B     LDX $1B45

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9D87
+Routine_C29D87:
 C2/9D87: AD 13 04     LDA $0413
 C2/9D8A: CD C4 0F     CMP $0FC4
 C2/9D8D: B0 1F        BCS $9DAE

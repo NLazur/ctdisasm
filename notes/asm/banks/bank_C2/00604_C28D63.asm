@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8D63
+Routine_C28D63:
 C2/8D63: A9 FF 8F     LDA #$8FFF
 C2/8D66: E2 7F        SEP #$7F
 C2/8D68: 30 60        BMI $8DCA

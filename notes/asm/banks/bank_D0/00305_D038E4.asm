@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 38E4
+Routine_D038E4:
 D0/38E4: 80 80        BRA $3866
 D0/38E6: 80 80        BRA $3868
 D0/38E8: 63 5C        ADC $5C,S

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 20A5
+Routine_C020A5:
 C0/20A5: A6 34        LDX $34
 C0/20A7: F0 AF        BEQ $2058
 C0/20A9: E0 FF FF     CPX #$FFFF

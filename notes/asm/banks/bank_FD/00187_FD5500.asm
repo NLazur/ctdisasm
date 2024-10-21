@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 5500
+Routine_FD5500:
 FD/5500: 61 62        ADC ($62,X)
 FD/5502: 44 42 08     MVP $42,$08
 FD/5505: 44 6A 6D     MVP $6A,$6D

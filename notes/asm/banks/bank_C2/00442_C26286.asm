@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6286
+Routine_C26286:
 C2/6286: AE 36 1B     LDX $1B36
 C2/6289: BF 83 81 7E  LDA $7E8183,X
 C2/628D: 8D 47 1B     STA $1B47

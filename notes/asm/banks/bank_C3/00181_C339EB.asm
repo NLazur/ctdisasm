@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 39EB
+Routine_C339EB:
 C3/39EB: 00 F8        BRK $F8
 C3/39ED: E0 00        CPX #$00
 C3/39EF: 6A           ROR

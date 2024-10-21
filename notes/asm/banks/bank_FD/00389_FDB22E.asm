@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: B22E
+Routine_FDB22E:
 FD/B22E: 7B           TDC
 FD/B22F: AA           TAX
 FD/B230: 9D 2D 5E     STA $5E2D,X

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 19B3
+Routine_C319B3:
 C3/19B3: 80 A5        BRA $195A
 C3/19B5: 02 8D        COP $8D
 C3/19B7: 0D 21 A5     ORA $A521

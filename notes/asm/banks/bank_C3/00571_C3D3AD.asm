@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D3AD
+Routine_C3D3AD:
 C3/D3AD: 18           CLC
 C3/D3AE: 02 35        COP $35
 C3/D3B0: E2 2C        SEP #$2C

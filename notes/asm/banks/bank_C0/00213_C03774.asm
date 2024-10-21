@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3774
+Routine_C03774:
 C0/3774: A9 40        LDA #$40
 C0/3776: 14 18        TRB $18
 C0/3778: BB           TYX

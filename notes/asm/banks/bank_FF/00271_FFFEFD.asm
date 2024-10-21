@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FEFD
+Routine_FFFEFD:
 FF/FEFD: A9 10        LDA #$10
 FF/FEFF: 8D 00 1E     STA $1E00
 FF/FF02: AD 0A 0F     LDA $0F0A

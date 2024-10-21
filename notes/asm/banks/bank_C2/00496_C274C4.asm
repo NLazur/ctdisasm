@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 74C4
+Routine_C274C4:
 C2/74C4: 00 30        BRK $30
 C2/74C6: 36 39        ROL $39,X
 C2/74C8: 08           PHP

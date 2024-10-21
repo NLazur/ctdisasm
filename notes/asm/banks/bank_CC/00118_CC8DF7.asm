@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 8DF7
+Routine_CC8DF7:
 CC/8DF7: 00 39        BRK $39
 CC/8DF9: FE 00 00     INC $0000,X
 CC/8DFC: 00 00        BRK $00

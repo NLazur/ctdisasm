@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C8B1
+Routine_FDC8B1:
 FD/C8B1: 13 8D        ORA ($8D,S),Y
 FD/C8B3: 43 13        EOR $13,S
 FD/C8B5: 8D 46 13     STA $1346

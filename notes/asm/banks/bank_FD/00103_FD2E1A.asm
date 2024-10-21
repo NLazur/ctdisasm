@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2E1A
+Routine_FD2E1A:
 FD/2E1A: 9C 05 DA     STZ $DA05
 FD/2E1D: 16 83        ASL $83,X
 FD/2E1F: 04 7C        TSB $7C

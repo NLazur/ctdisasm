@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: A26F
+Routine_CFA26F:
 CF/A26F: 21 6D        AND ($6D,X)
 CF/A271: 21 6F        AND ($6F,X)
 CF/A273: 21 71        AND ($71,X)

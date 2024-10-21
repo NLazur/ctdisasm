@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 4CD5
+Routine_CC4CD5:
 CC/4CD5: 00 00        BRK $00
 CC/4CD7: 01 00        ORA ($00,X)
 CC/4CD9: 2D 00 FF     AND $FF00

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 77C3
+Routine_D077C3:
 D0/77C3: B8           CLV
 D0/77C4: 80 70        BRA $7836
 D0/77C6: 00 F0        BRK $F0

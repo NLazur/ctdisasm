@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A8C5
+Routine_C6A8C5:
 C6/A8C5: 08           PHP
 C6/A8C6: 50 A1        BVC $A869
 C6/A8C8: BC 0E E0     LDY $E00E,X

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8C26
+Routine_D08C26:
 D0/8C26: F9 84 C4     SBC $C484,Y
 D0/8C29: CB           WAI
 D0/8C2A: CC C9 C9     CPY $C9C9

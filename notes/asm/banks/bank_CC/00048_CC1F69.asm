@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1F69
+Routine_CC1F69:
 CC/1F69: 02 00        COP $00
 CC/1F6B: 43 8A        EOR $8A,S
 CC/1F6D: 80 10        BRA $1F7F

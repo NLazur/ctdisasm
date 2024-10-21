@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3B1B
+Routine_C23B1B:
 C2/3B1B: AD 7C 02     LDA $027C
 C2/3B1E: C9 01        CMP #$01
 C2/3B20: F0 22        BEQ $3B44

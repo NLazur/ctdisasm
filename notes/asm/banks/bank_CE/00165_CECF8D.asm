@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: CF8D
+Routine_CECF8D:
 CE/CF8D: EE F0 06     INC $06F0
 CE/CF90: 80 10        BRA $CFA2
 CE/CF92: F0 06        BEQ $CF9A

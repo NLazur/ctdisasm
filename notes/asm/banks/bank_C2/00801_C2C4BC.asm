@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C4BC
+Routine_C2C4BC:
 C2/C4BC: 08           PHP
 C2/C4BD: C2 30        REP #$30
 C2/C4BF: AD 17 04     LDA $0417

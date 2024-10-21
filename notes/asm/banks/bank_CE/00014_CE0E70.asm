@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 0E70
+Routine_CE0E70:
 CE/0E70: 01 24        ORA ($24,X)
 CE/0E72: 01 20        ORA ($20,X)
 CE/0E74: 3C 1B 03     BIT $031B,X

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3D4D
+Routine_FD3D4D:
 FD/3D4D: 0B           PHD
 FD/3D4E: 0C FF 19     TSB $19FF
 FD/3D51: FF 00 08 03  SBC $030800,X

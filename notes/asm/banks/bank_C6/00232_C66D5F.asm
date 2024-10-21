@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6D5F
+Routine_C66D5F:
 C6/6D5F: F8           SED
 C6/6D60: 4C 30 36     JMP $3630
 C6/6D63: 37 9A        AND [$9A],Y

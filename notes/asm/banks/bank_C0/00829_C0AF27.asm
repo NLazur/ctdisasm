@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AF27
+Routine_C0AF27:
 C0/AF27: E2 10        SEP #$10
 C0/AF29: 64 DB        STZ $DB
 C0/AF2B: 64 DD        STZ $DD

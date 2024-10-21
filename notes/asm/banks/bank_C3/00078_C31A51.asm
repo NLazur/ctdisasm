@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1A51
+Routine_C31A51:
 C3/1A51: 37 90        AND [$90],Y
 C3/1A53: 0D 00 AA     ORA $AA00
 C3/1A56: A5 08        LDA $08

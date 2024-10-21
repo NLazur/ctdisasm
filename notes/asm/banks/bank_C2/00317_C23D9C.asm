@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3D9C
+Routine_C23D9C:
 C2/3D9C: A6 4E        LDX $4E
 C2/3D9E: BD 24 00     LDA $0024,X
 C2/3DA1: 0A           ASL

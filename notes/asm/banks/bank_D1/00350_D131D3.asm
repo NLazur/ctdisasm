@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 31D3
+Routine_D131D3:
 D1/31D3: C4 13        CPY $13
 D1/31D5: 38           SEC
 D1/31D6: C4 00        CPY $00

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 09DD
+Routine_C009DD:
 C0/09DD: A6 FE        LDX $FE         ; load map tile assembly
 C0/09DF: BF 01 00 F6  LDA $F60001,X
 C0/09E3: C9 FF        CMP #$FF

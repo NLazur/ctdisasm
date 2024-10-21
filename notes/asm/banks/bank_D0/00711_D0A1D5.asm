@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: A1D5
+Routine_D0A1D5:
 D0/A1D5: C0 80        CPY #$80
 D0/A1D7: 80 0C        BRA $A1E5
 D0/A1D9: 0F 1B 1C 12  ORA $121C1B

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 82E2
+Routine_CD82E2:
 CD/82E2: 00 73        BRK $73
 CD/82E4: 03 24        ORA $24,S
 CD/82E6: 01 1B        ORA ($1B,X)

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1A9B
+Routine_C21A9B:
 C2/1A9B: C8           INY
 C2/1A9C: B7 58        LDA [$58],Y
 C2/1A9E: C2 20        REP #$20

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 12CF
+Routine_C612CF:
 C6/12CF: 80 C6        BRA $1297
 C6/12D1: F9 8E F8     SBC $F88E,Y
 C6/12D4: 08           PHP

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1864
+Routine_CD1864:
 CD/1864: C2 20        REP #$20
 CD/1866: A7 40        LDA [$40]
 CD/1868: 8D 00 20     STA $2000

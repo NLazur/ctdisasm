@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: EBF8
+Routine_C1EBF8:
 C1/EBF8: 7B           TDC
 C1/EBF9: AD 02 B2     LDA $B202
 C1/EBFC: 8D 03 B2     STA $B203

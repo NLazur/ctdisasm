@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F38F
+Routine_FDF38F:
 FD/F38F: 80 6B        BRA $F3FC
 FD/F391: E0 6B 00     CPX #$006B
 FD/F394: 79 60 79     ADC $7960,Y

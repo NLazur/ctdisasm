@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 27D7
+Routine_D027D7:
 D0/27D7: C0 04 1C     CPY #$1C04
 D0/27DA: 0C 1C 10     TSB $101C
 D0/27DD: 10 11        BPL $27F0

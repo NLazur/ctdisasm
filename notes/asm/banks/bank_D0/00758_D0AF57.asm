@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: AF57
+Routine_D0AF57:
 D0/AF57: C0 00 80     CPY #$8000
 D0/AF5A: 00 80        BRK $80
 D0/AF5C: 80 80        BRA $AEDE

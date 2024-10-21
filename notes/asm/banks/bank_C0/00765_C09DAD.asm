@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9DAD
+Routine_C09DAD:
 C0/9DAD: A5 52        LDA $52
 C0/9DAF: 85 2B        STA $2B
 C0/9DB1: 64 2A        STZ $2A

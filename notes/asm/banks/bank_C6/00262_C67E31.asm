@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7E31
+Routine_C67E31:
 C6/7E31: 41 42        EOR ($42,X)
 C6/7E33: 45 46        EOR $46
 C6/7E35: 07 07        ORA [$07]

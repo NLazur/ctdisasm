@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 24D0
+Routine_D024D0:
 D0/24D0: A0 60        LDY #$60
 D0/24D2: A0 60        LDY #$60
 D0/24D4: A0 60        LDY #$60

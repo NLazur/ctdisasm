@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4D19
+Routine_C24D19:
 C2/4D19: A9 03        LDA #$03
 C2/4D1B: 9D 02 00     STA $0002,X
 C2/4D1E: A9 B8        LDA #$B8

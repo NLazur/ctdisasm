@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 470A
+Routine_C3470A:
 C3/470A: 63 0B        ADC $0B,S
 C3/470C: 06 00        ASL $00
 C3/470E: 88           DEY

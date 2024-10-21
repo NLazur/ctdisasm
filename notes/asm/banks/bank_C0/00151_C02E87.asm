@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2E87
+Routine_C02E87:
 C0/2E87: A9 00        LDA #$00
 C0/2E89: 80 E2        BRA $2E6D
 C0/2E8B: A9 01        LDA #$01

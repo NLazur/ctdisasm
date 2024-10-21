@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 8042
+Routine_CE8042:
 CE/8042: 01 34        ORA ($34,X)
 CE/8044: 10 69        BPL $80AF
 CE/8046: 04 72        TSB $72

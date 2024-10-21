@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 303B
+Routine_CD303B:
 CD/303B: A0 01 00     LDY #$0001
 CD/303E: B7 40        LDA [$40],Y
 CD/3040: 30 1D        BMI $305F

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F1ED
+Routine_FDF1ED:
 FD/F1ED: 0B           PHD
 FD/F1EE: A2 00 21     LDX #$2100
 FD/F1F1: DA           PHX

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E241
+Routine_C6E241:
 C6/E241: A9 F0        LDA #$F0
 C6/E243: 8F 42 8A 7E  STA $7E8A42
 C6/E247: 8F 45 8A 7E  STA $7E8A45

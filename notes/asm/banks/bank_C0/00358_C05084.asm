@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5084
+Routine_C05084:
 C0/5084: A6 6D        LDX $6D
 C0/5086: BD 01 1A     LDA $1A01,X
 C0/5089: F0 03        BEQ $508E

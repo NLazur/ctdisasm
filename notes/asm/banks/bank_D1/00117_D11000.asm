@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1000
+Routine_D11000:
 D1/1000: 41 60        EOR ($60,X)
 D1/1002: 10 20        BPL $1024
 D1/1004: 66 0A        ROR $0A

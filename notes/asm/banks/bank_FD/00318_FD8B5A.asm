@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8B5A
+Routine_FD8B5A:
 FD/8B5A: 84 E4        STY $E4
 FD/8B5C: 0A           ASL
 FD/8B5D: 00 DA        BRK $DA

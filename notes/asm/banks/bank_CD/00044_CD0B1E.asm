@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0B1E
+Routine_CD0B1E:
 CD/0B1E: AD D2 99     LDA $99D2
 CD/0B21: 30 2D        BMI $0B50
 CD/0B23: F0 2B        BEQ $0B50

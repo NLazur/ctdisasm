@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 345B
+Routine_C6345B:
 C6/345B: A5 0D        LDA $0D
 C6/345D: B4 0D        LDY $0D,X
 C6/345F: B5 0D        LDA $0D,X

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: F521
+Routine_C0F521:
 C0/F521: 3D 3B 38     AND $383B,X
 C0/F524: 36 34        ROL $34,X
 C0/F526: 32 30        AND ($30)

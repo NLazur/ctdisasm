@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F560
+Routine_FDF560:
 FD/F560: 00 62        BRK $62
 FD/F562: 80 62        BRA $F5C6
 FD/F564: 80 80        BRA $F4E6

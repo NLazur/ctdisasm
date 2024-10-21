@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B568
+Routine_C2B568:
 C2/B568: A5 5A        LDA $5A
 C2/B56A: 29 04 D0     AND #$D004
 C2/B56D: 2B           PLD

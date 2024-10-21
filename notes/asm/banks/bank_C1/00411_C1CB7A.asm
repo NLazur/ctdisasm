@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CB7A
+Routine_C1CB7A:
 C1/CB7A: AA           TAX
 C1/CB7B: 86 28        STX $28
 C1/CB7D: A9 0B        LDA #$0B

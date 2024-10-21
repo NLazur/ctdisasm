@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CBEA
+Routine_C6CBEA:
 C6/CBEA: FC 00 FA     JSR ($FA00,X)
 C6/CBED: 00 FA        BRK $FA
 C6/CBEF: FF 00 FA 00  SBC $00FA00,X

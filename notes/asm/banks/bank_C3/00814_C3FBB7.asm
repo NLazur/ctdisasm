@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: FBB7
+Routine_C3FBB7:
 C3/FBB7: 08           PHP
 C3/FBB8: EC 64 40     CPX $4064
 C3/FBBB: 00 F0        BRK $F0

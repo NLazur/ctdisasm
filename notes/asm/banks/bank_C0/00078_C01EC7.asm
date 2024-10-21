@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1EC7
+Routine_C01EC7:
 C0/1EC7: E2 20        SEP #$20
 C0/1EC9: A6 97        LDX $97
 C0/1ECB: BD 81 18     LDA $1881,X

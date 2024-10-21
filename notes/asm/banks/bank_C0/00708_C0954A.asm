@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 954A
+Routine_C0954A:
 C0/954A: 85 66        STA $66
 C0/954C: A6 8B        LDX $8B
 C0/954E: CA           DEX

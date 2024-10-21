@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1D71
+Routine_C31D71:
 C3/1D71: A2 6B        LDX #$6B
 C3/1D73: 07 20        ORA [$20]
 C3/1D75: D8           CLD

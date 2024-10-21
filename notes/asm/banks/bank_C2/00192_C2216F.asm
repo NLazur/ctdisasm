@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 216F
+Routine_C2216F:
 C2/216F: AD F6 1B     LDA $1BF6
 C2/2172: 89 02        BIT #$02
 C2/2174: D0 17        BNE $218D

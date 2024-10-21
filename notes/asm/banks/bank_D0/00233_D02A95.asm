@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2A95
+Routine_D02A95:
 D0/2A95: C0 40 C0     CPY #$C040
 D0/2A98: 0A           ASL
 D0/2A99: 0E 0A 0E     ASL $0E0A

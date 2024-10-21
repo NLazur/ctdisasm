@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: E143
+Routine_CFE143:
 CF/E143: 05 FF        ORA $FF
 CF/E145: FF 45 55 40  SBC $405545,X
 CF/E149: 05 00        ORA $00

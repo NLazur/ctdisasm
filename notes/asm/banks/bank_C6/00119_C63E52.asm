@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 3E52
+Routine_C63E52:
 C6/3E52: A5 0D        LDA $0D
 C6/3E54: B4 0D        LDY $0D,X
 C6/3E56: B5 0D        LDA $0D,X

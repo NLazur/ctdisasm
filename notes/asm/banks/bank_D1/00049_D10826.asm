@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0826
+Routine_D10826:
 D1/0826: 00 00        BRK $00
 D1/0828: 13 00        ORA ($00,S),Y
 D1/082A: 80 80        BRA $07AC

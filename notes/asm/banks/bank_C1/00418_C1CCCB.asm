@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: CCCB
+Routine_C1CCCB:
 C1/CCCB: 7B           TDC
 C1/CCCC: AA           TAX
 C1/CCCD: 86 08        STX $08

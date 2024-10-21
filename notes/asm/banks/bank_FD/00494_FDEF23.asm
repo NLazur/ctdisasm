@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: EF23
+Routine_FDEF23:
 FD/EF23: 8D 02 42     STA $4202
 FD/EF26: AC 14 42     LDY $4214
 FD/EF29: 84 10        STY $10

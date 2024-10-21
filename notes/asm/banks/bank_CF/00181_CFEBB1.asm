@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EBB1
+Routine_CFEBB1:
 CF/EBB1: BD 12 00     LDA $0012,X
 CF/EBB4: 99 12 00     STA $0012,Y
 CF/EBB7: BD 16 00     LDA $0016,X

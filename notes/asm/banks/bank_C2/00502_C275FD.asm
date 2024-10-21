@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 75FD
+Routine_C275FD:
 C2/75FD: AD 94 02     LDA $0294
 C2/7600: 89 10 D0     BIT #$D010
 C2/7603: 4C C2 20     JMP $20C2

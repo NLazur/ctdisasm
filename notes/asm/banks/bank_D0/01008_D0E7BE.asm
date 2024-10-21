@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E7BE
+Routine_D0E7BE:
 D0/E7BE: 2D 80 70     AND $7080
 D0/E7C1: EE 13 B3     INC $B313
 D0/E7C4: 12 D2        ORA ($D2)

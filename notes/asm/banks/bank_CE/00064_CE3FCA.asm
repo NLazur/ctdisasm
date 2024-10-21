@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 3FCA
+Routine_CE3FCA:
 CE/3FCA: 01 28        ORA ($28,X)
 CE/3FCC: 3A           DEC
 CE/3FCD: 1F FD C3 10  ORA $10C3FD,X

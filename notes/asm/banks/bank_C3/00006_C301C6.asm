@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 01C6
+Routine_C301C6:
 C3/01C6: 85 F0        STA $F0
 C3/01C8: A6 56        LDX $56
 C3/01CA: 9B           TXY

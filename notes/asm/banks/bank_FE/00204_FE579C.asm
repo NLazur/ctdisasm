@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 579C
+Routine_FE579C:
 FE/579C: 1F 82 42 4A  ORA $4A4282,X
 FE/57A0: 50 74        BVC $5816
 FE/57A2: 8B           PHB

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8B26
+Routine_C68B26:
 C6/8B26: 74 34        STZ $34,X
 C6/8B28: 39 07 20     AND $2007,Y
 C6/8B2B: F9 E7 01     SBC $01E7,Y

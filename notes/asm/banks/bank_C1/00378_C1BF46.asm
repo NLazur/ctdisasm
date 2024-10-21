@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: BF46
+Routine_C1BF46:
 C1/BF46: 7B           TDC
 C1/BF47: AD 8C B1     LDA $B18C
 C1/BF4A: 0A           ASL

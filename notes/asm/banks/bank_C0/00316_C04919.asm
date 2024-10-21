@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4919
+Routine_C04919:
 C0/4919: 20 2C 4B     JSR $4B2C
 C0/491C: 90 08        BCC $4926
 C0/491E: A6 C7        LDX $C7

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 3B98
+Routine_FE3B98:
 FE/3B98: 07 0E        ORA [$0E]
 FE/3B9A: 0F 02 10 52  ORA $521002
 FE/3B9E: 41 07        EOR ($07,X)

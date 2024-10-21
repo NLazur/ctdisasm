@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 1B1F
+Routine_CD1B1F:
 CD/1B1F: 20 36 24     JSR $2436
 CD/1B22: DA           PHX
 CD/1B23: BD A0 5D     LDA $5DA0,X

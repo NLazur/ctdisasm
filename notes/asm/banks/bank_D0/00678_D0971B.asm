@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 971B
+Routine_D0971B:
 D0/971B: B0 00        BCS $971D
 D0/971D: F0 D0        BEQ $96EF
 D0/971F: 30 00        BMI $9721

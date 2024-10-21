@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 508F
+Routine_C2508F:
 C2/508F: E8           INX
 C2/5090: FF 4E 00 18  SBC $18004E,X
 C2/5094: 00 1F        BRK $1F

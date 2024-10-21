@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 1124
+Routine_FE1124:
 FE/1124: 09 8C 01     ORA #$018C
 FE/1127: 2C F8 02     BIT $02F8
 FE/112A: 97 01        STA [$01],Y

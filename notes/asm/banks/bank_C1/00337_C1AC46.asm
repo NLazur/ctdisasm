@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: AC46
+Routine_C1AC46:
 C1/AC46: 7B           TDC
 C1/AC47: AA           TAX
 C1/AC48: A9 FF        LDA #$FF

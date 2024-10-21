@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7510
+Routine_C27510:
 C2/7510: C0 7E        CPY #$7E
 C2/7512: 00 0C        BRK $0C
 C2/7514: 38           SEC

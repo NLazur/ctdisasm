@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: AFB5
+Routine_C2AFB5:
 C2/AFB5: 08           PHP
 C2/AFB6: C2 30        REP #$30
 C2/AFB8: 9C 00 4E     STZ $4E00

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A1A3
+Routine_C6A1A3:
 C6/A1A3: B8           CLV
 C6/A1A4: 0C 1B FF     TSB $FF1B
 C6/A1A7: 5B           TCD

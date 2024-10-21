@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 9080
+Routine_D19080:
 D1/9080: FF 00 0A 01  SBC $010A00,X
 D1/9084: 83 1F        STA $1F,S
 D1/9086: 7F 84 83 39  ADC $398384,X

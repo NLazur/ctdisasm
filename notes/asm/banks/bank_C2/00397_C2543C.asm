@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 543C
+Routine_C2543C:
 C2/543C: E8           INX
 C2/543D: FF 18 00 18  SBC $180018,X
 C2/5441: 00 18        BRK $18

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8190
+Routine_C28190:
 C2/8190: C2 30        REP #$30
 C2/8192: 9C B0 00     STZ $00B0
 C2/8195: A2 B0 00     LDX #$00B0

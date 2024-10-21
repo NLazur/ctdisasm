@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 996D
+Routine_FD996D:
 FD/996D: 00 82        BRK $82
 FD/996F: 0E 8B 03     ASL $038B
 FD/9972: 07 43        ORA [$43]

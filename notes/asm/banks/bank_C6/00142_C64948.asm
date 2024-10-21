@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 4948
+Routine_C64948:
 C6/4948: 3A           DEC
 C6/4949: 48           PHA
 C6/494A: A8           TAY

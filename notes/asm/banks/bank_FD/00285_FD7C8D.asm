@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7C8D
+Routine_FD7C8D:
 FD/7C8D: 5B           TCD
 FD/7C8E: 6F 47 6F 03  ADC $036F47
 FD/7C92: 2F 02 50 98  AND $985002

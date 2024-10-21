@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 27FA
+Routine_C127FA:
 C1/27FA: 20 2D 28     JSR $282D
 C1/27FD: F0 14        BEQ $2813
 C1/27FF: EE 14 96     INC $9614

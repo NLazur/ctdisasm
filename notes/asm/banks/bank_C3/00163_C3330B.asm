@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 330B
+Routine_C3330B:
 C3/330B: E2 20        SEP #$20
 C3/330D: A4 02        LDY $02
 C3/330F: 11 AB        ORA ($AB),Y

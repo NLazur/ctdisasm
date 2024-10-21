@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D306
+Routine_C2D306:
 C2/D306: AE C5 0D     LDX $0DC5
 C2/D309: A0 10 00     LDY #$0010
 C2/D30C: 5E 00 00     LSR $0000,X

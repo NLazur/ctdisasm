@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 528B
+Routine_C6528B:
 C6/528B: 3F 40 3E 40  AND $403E40,X
 C6/528F: 4F 40 00 4E  EOR $4E0040
 C6/5293: 40           RTI

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 3B10
+Routine_CD3B10:
 CD/3B10: DA           PHX
 CD/3B11: 85 45        STA $45
 CD/3B13: C2 20        REP #$20

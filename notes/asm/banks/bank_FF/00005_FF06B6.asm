@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 06B6
+Routine_FF06B6:
 FF/06B6: E8           INX
 FF/06B7: 70 F4        BVS $06AD
 FF/06B9: 3B           TSC

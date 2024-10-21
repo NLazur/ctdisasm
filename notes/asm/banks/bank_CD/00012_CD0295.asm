@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0295
+Routine_CD0295:
 CD/0295: EE 1D CD     INC $CD1D
 CD/0298: A2 C9 CB     LDX #$CBC9
 CD/029B: 8E 0D 02     STX $020D

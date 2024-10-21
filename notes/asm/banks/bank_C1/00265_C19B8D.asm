@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 9B8D
+Routine_C19B8D:
 C1/9B8D: 7B           TDC
 C1/9B8E: AE D2 B1     LDX $B1D2
 C1/9B91: BF 01 00 CC  LDA $CC0001,X

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 4BB6
+Routine_FE4BB6:
 FE/4BB6: 9C 73 FF     STZ $FF73
 FE/4BB9: 7F 29 25 FF  ADC $FF2529,X
 FE/4BBD: 67 BF        ADC [$BF]

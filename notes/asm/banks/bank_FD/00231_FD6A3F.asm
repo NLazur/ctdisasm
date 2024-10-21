@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6A3F
+Routine_FD6A3F:
 FD/6A3F: 50 80        BVC $69C1
 FD/6A41: F0 E5        BEQ $6A28
 FD/6A43: 01 04        ORA ($04,X)

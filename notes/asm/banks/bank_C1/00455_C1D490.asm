@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: D490
+Routine_C1D490:
 C1/D490: 20 A3 E9     JSR $E9A3
 C1/D493: 20 B8 E9     JSR $E9B8
 C1/D496: 20 D3 D1     JSR $D1D3

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 82D0
+Routine_D082D0:
 D0/82D0: 80 80        BRA $8252
 D0/82D2: 00 00        BRK $00
 D0/82D4: 00 00        BRK $00

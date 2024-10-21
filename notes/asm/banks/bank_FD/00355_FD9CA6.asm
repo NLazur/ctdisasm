@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 9CA6
+Routine_FD9CA6:
 FD/9CA6: A0 0D 0F     LDY #$0F0D
 FD/9CA9: 26 00        ROL $00
 FD/9CAB: 45 0E        EOR $0E

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 22BC
+Routine_C022BC:
 C0/22BC: 64 39        STZ $39
 C0/22BE: A9 00        LDA #$00
 C0/22C0: 8F 22 15 7F  STA $7F1522

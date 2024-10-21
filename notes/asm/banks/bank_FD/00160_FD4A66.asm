@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4A66
+Routine_FD4A66:
 FD/4A66: 04 00        TSB $00
 FD/4A68: CC 07 D0     CPY $D007
 FD/4A6B: 0F 1E 1F 7E  ORA $7E1F1E

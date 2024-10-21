@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A00B
+Routine_C2A00B:
 C2/A00B: 08           PHP
 C2/A00C: E2 30        SEP #$30
 C2/A00E: A6 71        LDX $71

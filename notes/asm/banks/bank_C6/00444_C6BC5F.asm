@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BC5F
+Routine_C6BC5F:
 C6/BC5F: FD 01 F8     SBC $F801,X
 C6/BC62: 00 00        BRK $00
 C6/BC64: 8A           TXA

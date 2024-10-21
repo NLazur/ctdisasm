@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: CD69
+Routine_CFCD69:
 CF/CD69: A1 6B        LDA ($6B,X)
 CF/CD6B: E1 C5        SBC ($C5,X)
 CF/CD6D: A1 C5        LDA ($C5,X)

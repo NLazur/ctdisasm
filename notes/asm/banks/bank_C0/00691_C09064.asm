@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 9064
+Routine_C09064:
 C0/9064: C2 20        REP #$20
 C0/9066: A5 62        LDA $62
 C0/9068: 38           SEC

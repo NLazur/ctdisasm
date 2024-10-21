@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: DC89
+Routine_CFDC89:
 CF/DC89: 21 6B        AND ($6B,X)
 CF/DC8B: 61 C5        ADC ($C5,X)
 CF/DC8D: 21 C5        AND ($C5,X)

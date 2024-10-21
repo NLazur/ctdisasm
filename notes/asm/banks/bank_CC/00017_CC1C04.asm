@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1C04
+Routine_CC1C04:
 CC/1C04: 82 00 02     BRL $CC1E07
 CC/1C07: 80 80        BRA $1B89
 CC/1C09: 07 00        ORA [$00]

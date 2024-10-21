@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: A49D
+Routine_C3A49D:
 C3/A49D: 1A           INC
 C3/A49E: F1 26        SBC ($26),Y
 C3/A4A0: 10 98        BPL $A43A

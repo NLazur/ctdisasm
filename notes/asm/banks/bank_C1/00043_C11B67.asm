@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 1B67
+Routine_C11B67:
 C1/1B67: AD D6 95     LDA $95D6
 C1/1B6A: 30 3D        BMI $1BA9
 C1/1B6C: AA           TAX

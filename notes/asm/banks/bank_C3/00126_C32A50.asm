@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2A50
+Routine_C32A50:
 C3/2A50: AC 09 62     LDY $6209
 C3/2A53: 18           CLC
 C3/2A54: 7E 10 F0     ROR $F010,X

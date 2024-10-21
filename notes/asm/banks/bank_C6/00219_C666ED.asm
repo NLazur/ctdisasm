@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 66ED
+Routine_C666ED:
 C6/66ED: 2C 7D 36     BIT $367D
 C6/66F0: 7E 2E 05     ROR $052E,X
 C6/66F3: 70 0C        BVS $6701

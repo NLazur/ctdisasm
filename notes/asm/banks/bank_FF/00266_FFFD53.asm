@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: FD53
+Routine_FFFD53:
 FF/FD53: FF 85 7B 60  SBC $607B85,X
 FF/FD57: 00 60        BRK $60
 FF/FD59: 00 6A        BRK $6A

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 6BEF
+Routine_CF6BEF:
 CF/6BEF: E0 DB        CPX #$DB
 CF/6BF1: FB           XCE
 CF/6BF2: E7 E4        SBC [$E4]

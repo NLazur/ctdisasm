@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: C297
+Routine_FDC297:
 FD/C297: A2 38 12     LDX #$1238
 FD/C29A: 86 02        STX $02
 FD/C29C: A2 8F 12     LDX #$128F

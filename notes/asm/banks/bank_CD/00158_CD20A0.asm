@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 20A0
+Routine_CD20A0:
 CD/20A0: AA           TAX
 CD/20A1: BF 8E F4 CE  LDA $CEF48E,X
 CD/20A5: 8F 02 42 00  STA $004202

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 0BAB
+Routine_C30BAB:
 C3/0BAB: B2 20        LDA ($20)
 C3/0BAD: AA           TAX
 C3/0BAE: 20 E2 0C     JSR $0CE2

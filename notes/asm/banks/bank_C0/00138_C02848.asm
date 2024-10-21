@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2848
+Routine_C02848:
 C0/2848: 20 6C 28     JSR $286C
 C0/284B: D0 19        BNE $2866
 C0/284D: E6 19        INC $19

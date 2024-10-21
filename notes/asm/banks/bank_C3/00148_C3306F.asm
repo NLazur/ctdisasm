@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 306F
+Routine_C3306F:
 C3/306F: 64 00        STZ $00
 C3/3071: 8E 07 21     STX $2107
 C3/3074: A9 68        LDA #$68

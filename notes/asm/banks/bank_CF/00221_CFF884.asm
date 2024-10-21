@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F884
+Routine_CFF884:
 CF/F884: A6 C6        LDX $C6
 CF/F886: A4 C8        LDY $C8
 CF/F888: B9 41 A2     LDA $A241,Y

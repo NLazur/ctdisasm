@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D7FC
+Routine_D0D7FC:
 D0/D7FC: C0 C0        CPY #$C0
 D0/D7FE: C0 40        CPY #$40
 D0/D800: 01 01        ORA ($01,X)

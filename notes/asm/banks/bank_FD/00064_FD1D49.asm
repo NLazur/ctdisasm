@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1D49
+Routine_FD1D49:
 FD/1D49: 44 BC 01     MVP $BC,$01
 FD/1D4C: C6 12        DEC $12
 FD/1D4E: 91 1E        STA ($1E),Y

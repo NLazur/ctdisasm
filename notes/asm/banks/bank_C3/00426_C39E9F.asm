@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9E9F
+Routine_C39E9F:
 C3/9E9F: 57 00        EOR [$00],Y
 C3/9EA1: 24 60        BIT $60
 C3/9EA3: 57 00        EOR [$00],Y

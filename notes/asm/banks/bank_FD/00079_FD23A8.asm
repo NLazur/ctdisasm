@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 23A8
+Routine_FD23A8:
 FD/23A8: E0 8F        CPX #$8F
 FD/23AA: EF 9F DF 9F  SBC $9FDF9F
 FD/23AE: 1E 00 BF     ASL $BF00,X

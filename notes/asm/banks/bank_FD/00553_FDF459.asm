@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: F459
+Routine_FDF459:
 FD/F459: 77 C0        ADC [$C0],Y
 FD/F45B: 77 20        ADC [$20],Y
 FD/F45D: 78           SEI

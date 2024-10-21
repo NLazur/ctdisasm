@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0110
+Routine_C20110:
 C2/0110: A9 5C        LDA #$5C
 C2/0112: 8D 00 05     STA $0500
 C2/0115: 8D 04 05     STA $0504

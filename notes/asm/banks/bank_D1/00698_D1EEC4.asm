@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EEC4
+Routine_D1EEC4:
 D1/EEC4: AD 3A CD     LDA $CD3A
 D1/EEC7: 18           CLC
 D1/EEC8: 67 40        ADC [$40]

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 06C1
+Routine_C606C1:
 C6/06C1: 5F 20 5F A0  EOR $A05F20,X
 C6/06C5: 00 0F        BRK $0F
 C6/06C7: 70 07        BVS $06D0

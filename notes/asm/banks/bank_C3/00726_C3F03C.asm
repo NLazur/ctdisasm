@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F03C
+Routine_C3F03C:
 C3/F03C: 14 D0        TRB $D0
 C3/F03E: 00 0C        BRK $0C
 C3/F040: 00 E0        BRK $E0

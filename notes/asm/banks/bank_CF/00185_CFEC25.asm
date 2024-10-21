@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: EC25
+Routine_CFEC25:
 CF/EC25: BD 52 00     LDA $0052,X
 CF/EC28: 99 52 00     STA $0052,Y
 CF/EC2B: BD 56 00     LDA $0056,X

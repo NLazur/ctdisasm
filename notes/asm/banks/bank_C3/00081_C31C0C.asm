@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1C0C
+Routine_C31C0C:
 C3/1C0C: A2 18        LDX #$18
 C3/1C0E: 31 20        AND ($20),Y
 C3/1C10: 0C 86 30     TSB $3086

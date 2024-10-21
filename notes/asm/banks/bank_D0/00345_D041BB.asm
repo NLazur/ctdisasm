@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 41BB
+Routine_D041BB:
 D0/41BB: C0 B8 78     CPY #$78B8
 D0/41BE: 0E FE F0     ASL $F0FE
 D0/41C1: F0 00        BEQ $41C3

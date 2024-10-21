@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3AB1
+Routine_C23AB1:
 C2/3AB1: 7B           TDC
 C2/3AB2: AD 8F 02     LDA $028F
 C2/3AB5: 0A           ASL

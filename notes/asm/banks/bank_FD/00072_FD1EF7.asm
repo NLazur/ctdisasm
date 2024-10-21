@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1EF7
+Routine_FD1EF7:
 FD/1EF7: 04 7A        TSB $7A
 FD/1EF9: 05 79        ORA $79
 FD/1EFB: 06 7D        ASL $7D

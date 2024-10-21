@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: DDE7
+Routine_FEDDE7:
 FE/DDE7: 0B           PHD
 FE/DDE8: 44 E0 E1     MVP $E0,$E1
 FE/DDEB: 45 44        EOR $44

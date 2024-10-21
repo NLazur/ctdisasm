@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 2887
+Routine_D02887:
 D0/2887: C0 00 00     CPY #$0000
 D0/288A: 00 00        BRK $00
 D0/288C: 01 01        ORA ($01,X)

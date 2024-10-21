@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: E9A3
+Routine_C0E9A3:
 C0/E9A3: E8           INX
 C0/E9A4: E0 03 30     CPX #$3003
 C0/E9A7: D4 18        PEI $18

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 23A8
+Routine_C223A8:
 C2/23A8: 20 A8 26     JSR $26A8
 C2/23AB: 20 2D 23     JSR $232D
 C2/23AE: 20 F6 0B     JSR $0BF6

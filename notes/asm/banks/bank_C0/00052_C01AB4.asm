@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1AB4
+Routine_C01AB4:
 C0/1AB4: A6 34        LDX $34
 C0/1AB6: F0 09        BEQ $1AC1
 C0/1AB8: E0 FF FF     CPX #$FFFF

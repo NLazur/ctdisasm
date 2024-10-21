@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3DFC
+Routine_D13DFC:
 D1/3DFC: E0 E0 E0     CPX #$E0E0
 D1/3DFF: E0 00 00     CPX #$0000
 D1/3E02: 07 07        ORA [$07]

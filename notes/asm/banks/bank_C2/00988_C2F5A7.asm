@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: F5A7
+Routine_C2F5A7:
 C2/F5A7: 08           PHP
 C2/F5A8: C2 30        REP #$30
 C2/F5AA: AF E8 FF E4  LDA $E4FFE8

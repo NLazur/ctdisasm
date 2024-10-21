@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 83B2
+Routine_C283B2:
 C2/83B2: C2 30        REP #$30
 C2/83B4: A9 BD 83     LDA #$83BD
 C2/83B7: A2 00 00     LDX #$0000

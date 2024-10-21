@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DE1D
+Routine_C3DE1D:
 C3/DE1D: D0 2B        BNE $DE4A
 C3/DE1F: 04 DF        TSB $DF
 C3/DE21: 15 A0        ORA $A0,X

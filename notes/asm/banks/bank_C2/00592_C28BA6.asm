@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8BA6
+Routine_C28BA6:
 C2/8BA6: 8F 02 42 00  STA $004202
 C2/8BAA: A9 04 8F     LDA #$8F04
 C2/8BAD: 03 42        ORA $42,S

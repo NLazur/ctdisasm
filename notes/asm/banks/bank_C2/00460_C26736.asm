@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 6736
+Routine_C26736:
 C2/6736: 64 10        STZ $10
 C2/6738: BD 22 00     LDA $0022,X
 C2/673B: 22 5E 22 C2  JSR $C2225E

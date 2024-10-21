@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 208B
+Routine_C0208B:
 C0/208B: A5 31        LDA $31
 C0/208D: C9 03        CMP #$03
 C0/208F: F0 F5        BEQ $2086

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: F33B
+Routine_C3F33B:
 C3/F33B: 01 F8        ORA ($F8,X)
 C3/F33D: F8           SED
 C3/F33E: 6C 40 01     JMP ($0140)

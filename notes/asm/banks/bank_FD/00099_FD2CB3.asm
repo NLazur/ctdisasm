@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2CB3
+Routine_FD2CB3:
 FD/2CB3: 07 B7        ORA [$B7]
 FD/2CB5: C0 23 D0     CPY #$D023
 FD/2CB8: 00 02        BRK $02

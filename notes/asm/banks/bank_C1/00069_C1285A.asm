@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 285A
+Routine_C1285A:
 C1/285A: 38           SEC
 C1/285B: BD 39 A0     LDA $A039,X
 C1/285E: 30 08        BMI $2868

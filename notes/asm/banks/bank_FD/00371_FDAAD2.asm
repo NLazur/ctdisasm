@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: AAD2
+Routine_FDAAD2:
 FD/AAD2: AD 8C B1     LDA $B18C
 FD/AAD5: AA           TAX
 FD/AAD6: 86 28        STX $28

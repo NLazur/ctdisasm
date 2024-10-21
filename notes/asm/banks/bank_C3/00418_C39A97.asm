@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9A97
+Routine_C39A97:
 C3/9A97: 01 00        ORA ($00,X)
 C3/9A99: 09 A0        ORA #$A0
 C3/9A9B: 07 7F        ORA [$7F]

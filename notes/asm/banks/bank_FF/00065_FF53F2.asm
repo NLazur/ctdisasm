@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 53F2
+Routine_FF53F2:
 FF/53F2: C4 EF        CPY $EF
 FF/53F4: 4C 06 CC     JMP $CC06
 FF/53F7: 55 67        EOR $67,X

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: C65A
+Routine_CDC65A:
 CD/C65A: C6 03        DEC $03
 CD/C65C: BC 18 BC     LDY $BC18,X
 CD/C65F: 2D BC 42     AND $42BC

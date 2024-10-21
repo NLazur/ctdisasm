@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 08B3
+Routine_C308B3:
 C3/08B3: C2 30        REP #$30
 C3/08B5: 48           PHA
 C3/08B6: DA           PHX

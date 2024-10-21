@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4C1D
+Routine_FD4C1D:
 FD/4C1D: 50 0A        BVC $4C29
 FD/4C1F: 80 85        BRA $4BA6
 FD/4C21: 78           SEI

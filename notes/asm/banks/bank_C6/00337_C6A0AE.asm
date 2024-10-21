@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A0AE
+Routine_C6A0AE:
 C6/A0AE: 3F 79 87 89  AND $898779,X
 C6/A0B2: 4F 9F 3D 86  EOR $863D9F
 C6/A0B6: 41 3D        EOR ($3D,X)

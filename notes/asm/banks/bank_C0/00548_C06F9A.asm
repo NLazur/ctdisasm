@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6F9A
+Routine_C06F9A:
 C0/6F9A: A6 6D        LDX $6D
 C0/6F9C: BD 00 11     LDA $1100,X
 C0/6F9F: 30 05        BMI $6FA6

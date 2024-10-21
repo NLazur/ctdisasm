@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 2806
+Routine_FD2806:
 FD/2806: E7 C7        SBC [$C7]
 FD/2808: 07 E8        ORA [$E8]
 FD/280A: FF C0 02 20  SBC $2002C0,X

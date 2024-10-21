@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: EFEB
+Routine_C3EFEB:
 C3/EFEB: D0 B0        BNE $EF9D
 C3/EFED: 28           PLP
 C3/EFEE: 00 E0        BRK $E0

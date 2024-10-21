@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CD8C
+Routine_D0CD8C:
 D0/CD8C: D0 A0        BNE $CD2E
 D0/CD8E: 90 60        BCC $CDF0
 D0/CD90: 9E E0 AF     STZ $AFE0,X

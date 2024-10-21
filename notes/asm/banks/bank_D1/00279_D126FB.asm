@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 26FB
+Routine_D126FB:
 D1/26FB: E4 00        CPX $00
 D1/26FD: E6 00        INC $00
 D1/26FF: 06 41        ASL $41

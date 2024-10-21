@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: DBE8
+Routine_C2DBE8:
 C2/DBE8: 08           PHP
 C2/DBE9: E2 30        SEP #$30
 C2/DBEB: A2 00        LDX #$00

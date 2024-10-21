@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 6AA2
+Routine_FE6AA2:
 FE/6AA2: 00 BA        BRK $BA
 FE/6AA4: EC 0C 92     CPX $920C
 FE/6AA7: 02 40        COP $40

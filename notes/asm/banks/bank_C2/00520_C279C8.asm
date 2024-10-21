@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 79C8
+Routine_C279C8:
 C2/79C8: C2 20        REP #$20
 C2/79CA: A6 4E        LDX $4E
 C2/79CC: 18           CLC

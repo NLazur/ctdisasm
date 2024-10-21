@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 3946
+Routine_D13946:
 D1/3946: 70 50        BVS $3998
 D1/3948: 50 70        BVC $39BA
 D1/394A: 58           CLI

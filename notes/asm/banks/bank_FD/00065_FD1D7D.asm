@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1D7D
+Routine_FD1D7D:
 FD/1D7D: 0F 7D 02 30  ORA $30027D
 FD/1D81: 3C 39 00     BIT $0039,X
 FD/1D84: 49 25 58     EOR #$5825

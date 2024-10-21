@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 036C
+Routine_FF036C:
 FF/036C: C1 40        CMP ($40,X)
 FF/036E: 83 80        STA $80,S
 FF/0370: FF 00 FF 00  SBC $00FF00,X

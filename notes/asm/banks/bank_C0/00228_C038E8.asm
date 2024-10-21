@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 38E8
+Routine_C038E8:
 C0/38E8: BB           TYX
 C0/38E9: E8           INX
 C0/38EA: 7B           TDC

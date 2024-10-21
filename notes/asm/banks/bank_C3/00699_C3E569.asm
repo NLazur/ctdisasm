@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: E569
+Routine_C3E569:
 C3/E569: 19 40 00     ORA $0040,Y
 C3/E56C: 06 7E        ASL $7E
 C3/E56E: 80 CD        BRA $E53D

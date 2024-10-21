@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 89FA
+Routine_C389FA:
 C3/89FA: 7B           TDC
 C3/89FB: F3 01        SBC ($01,S),Y
 C3/89FD: 00 08        BRK $08

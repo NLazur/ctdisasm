@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A1DD
+Routine_C6A1DD:
 C6/A1DD: F8           SED
 C6/A1DE: 28           PLP
 C6/A1DF: A0 01        LDY #$01

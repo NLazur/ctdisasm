@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 00D7
+Routine_C100D7:
 C1/00D7: EE 29 A0     INC $A029       ; +$B5 = +$B2 / $B3 (R -> +$B7)
 C1/00DA: A5 B1        LDA $B1
 C1/00DC: 85 79        STA $79

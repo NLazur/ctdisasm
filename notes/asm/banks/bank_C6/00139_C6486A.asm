@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 486A
+Routine_C6486A:
 C6/486A: 9B           TXY
 C6/486B: 08           PHP
 C6/486C: 9D 08 64     STA $6408,X

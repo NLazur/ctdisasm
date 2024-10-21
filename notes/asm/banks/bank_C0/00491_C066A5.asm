@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 66A5
+Routine_C066A5:
 C0/66A5: C8           INY
 C0/66A6: AD F8 00     LDA $00F8
 C0/66A9: D0 56        BNE $6701

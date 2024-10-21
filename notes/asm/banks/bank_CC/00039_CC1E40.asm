@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 1E40
+Routine_CC1E40:
 CC/1E40: 42 00        WDM $00
 CC/1E42: 36 80        ROL $80,X
 CC/1E44: 80 07        BRA $1E4D

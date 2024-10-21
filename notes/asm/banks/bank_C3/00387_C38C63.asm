@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8C63
+Routine_C38C63:
 C3/8C63: 0B           PHD
 C3/8C64: 45 00        EOR $00
 C3/8C66: 01 44        ORA ($44,X)

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6A85
+Routine_FD6A85:
 FD/6A85: 2D 00 1F     AND $1F00
 FD/6A88: 01 A0        ORA ($A0,X)
 FD/6A8A: 20 1E 1C     JSR $1C1E

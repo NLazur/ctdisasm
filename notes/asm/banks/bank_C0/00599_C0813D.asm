@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 813D
+Routine_C0813D:
 C0/813D: 85 62        STA $62
 C0/813F: 98           TYA
 C0/8140: 0A           ASL

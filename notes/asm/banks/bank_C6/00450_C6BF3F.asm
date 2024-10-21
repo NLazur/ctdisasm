@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BF3F
+Routine_C6BF3F:
 C6/BF3F: 07 07        ORA [$07]
 C6/BF41: 52 42        EOR ($42)
 C6/BF43: 32 33        AND ($33)

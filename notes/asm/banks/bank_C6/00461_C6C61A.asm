@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C61A
+Routine_C6C61A:
 C6/C61A: 16 22        ASL $22,X
 C6/C61C: 23 24        AND $24,S
 C6/C61E: 25 3A        AND $3A

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: DB5F
+Routine_FFDB5F:
 FF/DB5F: F6 63        INC $63,X
 FF/DB61: F4 0B 14     PEA $140B
 FF/DB64: 30 DD        BMI $DB43

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AB45
+Routine_C0AB45:
 C0/AB45: C2 20        REP #$20
 C0/AB47: A6 6D        LDX $6D
 C0/AB49: AD 87 1D     LDA $1D87

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 8D09
+Routine_FD8D09:
 FD/8D09: 00 20        BRK $20
 FD/8D0B: 69 01 ED     ADC #$ED01
 FD/8D0E: F3 1C        SBC ($1C,S),Y

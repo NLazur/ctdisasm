@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 62AE
+Routine_C262AE:
 C2/62AE: E2 20        SEP #$20
 C2/62B0: 64 02        STZ $02
 C2/62B2: 64 03        STZ $03

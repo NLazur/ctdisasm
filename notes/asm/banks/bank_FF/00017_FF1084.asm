@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 1084
+Routine_FF1084:
 FF/1084: F0 0F        BEQ $1095
 FF/1086: 43 BC        EOR $BC,S
 FF/1088: DF 6E 36 DE  CMP $DE366E,X

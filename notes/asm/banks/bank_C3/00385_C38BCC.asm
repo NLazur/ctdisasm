@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8BCC
+Routine_C38BCC:
 C3/8BCC: 09 E3 0D     ORA #$0DE3
 C3/8BCF: 7F 09 F1 04  ADC $04F109,X
 C3/8BD3: 00 46        BRK $46

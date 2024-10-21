@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 82C5
+Routine_C082C5:
 C0/82C5: A2 00        LDX #$00
 C0/82C7: C8           INY
 C0/82C8: 8E 81 21     STX $2181

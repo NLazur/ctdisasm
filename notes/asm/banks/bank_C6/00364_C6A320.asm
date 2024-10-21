@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A320
+Routine_C6A320:
 C6/A320: 52 5F        EOR ($5F)
 C6/A322: 08           PHP
 C6/A323: D0 52        BNE $A377

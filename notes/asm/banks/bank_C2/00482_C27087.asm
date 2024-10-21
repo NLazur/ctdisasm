@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7087
+Routine_C27087:
 C2/7087: C2 20        REP #$20
 C2/7089: 8B           PHB
 C2/708A: AD F5 1B     LDA $1BF5

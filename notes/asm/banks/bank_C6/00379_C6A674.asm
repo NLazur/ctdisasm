@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A674
+Routine_C6A674:
 C6/A674: 79 51 61     ADC $6151,Y
 C6/A677: 21 95        AND ($95,X)
 C6/A679: 09 A1 A2     ORA #$A2A1

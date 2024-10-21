@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E97C
+Routine_C2E97C:
 C2/E97C: 20 84 E9     JSR $E984
 C2/E97F: 20 1E 82     JSR $821E
 C2/E982: 80 F8        BRA $E97C

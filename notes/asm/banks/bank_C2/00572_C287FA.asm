@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 87FA
+Routine_C287FA:
 C2/87FA: A2 00        LDX #$00
 C2/87FC: DD 00 24     CMP $2400,X
 C2/87FF: D0 08        BNE $8809

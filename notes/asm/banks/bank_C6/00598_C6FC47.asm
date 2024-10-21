@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: FC47
+Routine_C6FC47:
 C6/FC47: 01 A0        ORA ($A0,X)
 C6/FC49: F0 E2        BEQ $FC2D
 C6/FC4B: 90 20        BCC $FC6D

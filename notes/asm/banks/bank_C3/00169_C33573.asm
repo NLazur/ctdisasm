@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3573
+Routine_C33573:
 C3/3573: 86 07        STX $07
 C3/3575: 00 A9        BRK $A9
 C3/3577: 70 85        BVS $34FE

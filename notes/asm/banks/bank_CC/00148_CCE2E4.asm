@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: E2E4
+Routine_CCE2E4:
 CC/E2E4: A9 40 85     LDA #$8540
 CC/E2E7: E4 A9        CPX $A9
 CC/E2E9: 01 A2        ORA ($A2,X)

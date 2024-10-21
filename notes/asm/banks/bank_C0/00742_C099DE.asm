@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 99DE
+Routine_C099DE:
 C0/99DE: A5 2E        LDA $2E
 C0/99E0: F0 1D        BEQ $99FF
 C0/99E2: 30 0D        BMI $99F1

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 7B71
+Routine_C67B71:
 C6/7B71: FC 1C F9     JSR ($F91C,X)
 C6/7B74: F1 95        SBC ($95),Y
 C6/7B76: DF 60 DE CF  CMP $CFDE60,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A0E7
+Routine_C2A0E7:
 C2/A0E7: 08           PHP
 C2/A0E8: C2 30        REP #$30
 C2/A0EA: A6 51        LDX $51

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BF2F
+Routine_C2BF2F:
 C2/BF2F: 58           CLI
 C2/BF30: E4 78        CPX $78
 C2/BF32: E4 98        CPX $98

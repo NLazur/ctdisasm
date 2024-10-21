@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1EC0
+Routine_C21EC0:
 C2/1EC0: C2 20        REP #$20
 C2/1EC2: A5 4E        LDA $4E
 C2/1EC4: 18           CLC

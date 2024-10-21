@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: CBB6
+Routine_D0CBB6:
 D0/CBB6: 00 00        BRK $00
 D0/CBB8: 00 06        BRK $06
 D0/CBBA: 0F 0F 00 40  ORA $40000F

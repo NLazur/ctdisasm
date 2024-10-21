@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 8AE4
+Routine_C08AE4:
 C0/8AE4: C2 20        REP #$20
 C0/8AE6: A5 64        LDA $64
 C0/8AE8: 85 68        STA $68

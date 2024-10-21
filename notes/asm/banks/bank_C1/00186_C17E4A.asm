@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7E4A
+Routine_C17E4A:
 C1/7E4A: E0 60 94     CPX #$9460
 C1/7E4D: 61 EC        ADC ($EC,X)
 C1/7E4F: 61 20        ADC ($20,X)

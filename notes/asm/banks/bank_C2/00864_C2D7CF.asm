@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: D7CF
+Routine_C2D7CF:
 C2/D7CF: E2 20        SEP #$20
 C2/D7D1: AD 41 10     LDA $1041
 C2/D7D4: 8D D9 0D     STA $0DD9

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 12B8
+Routine_C212B8:
 C2/12B8: A0 01 00     LDY #$0001
 C2/12BB: B7 58        LDA [$58],Y
 C2/12BD: AA           TAX

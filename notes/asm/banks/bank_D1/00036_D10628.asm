@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0628
+Routine_D10628:
 D1/0628: EC 40 40     CPX $4040
 D1/062B: 2A           ROL
 D1/062C: 41 2E        EOR ($2E,X)

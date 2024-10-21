@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: EFBA
+Routine_C3EFBA:
 C3/EFBA: 14 D0        TRB $D0
 C3/EFBC: 90 0C        BCC $EFCA
 C3/EFBE: 00 E0        BRK $E0

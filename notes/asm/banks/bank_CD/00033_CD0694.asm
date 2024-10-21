@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0694
+Routine_CD0694:
 CD/0694: AF 14 CE 7E  LDA $7ECE14
 CD/0698: 29 01        AND #$01
 CD/069A: F0 0B        BEQ $06A7

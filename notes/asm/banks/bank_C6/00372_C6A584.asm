@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A584
+Routine_C6A584:
 C6/A584: 2C 3D 92     BIT $923D
 C6/A587: 90 52        BCC $A5DB
 C6/A589: 29 1F 01     AND #$011F

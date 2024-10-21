@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3D7A
+Routine_C03D7A:
 C0/3D7A: BB           TYX
 C0/3D7B: A5 18        LDA $18
 C0/3D7D: 89 08        BIT #$08

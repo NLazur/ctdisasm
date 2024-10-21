@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: EE99
+Routine_D1EE99:
 D1/EE99: FF FF FF FF  SBC $FFFFFF,X
 D1/EE9D: 89 88        BIT #$88
 D1/EE9F: 88           DEY

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 04FB
+Routine_C204FB:
 C2/04FB: 85 01        STA $01
 C2/04FD: 86 0A        STX $0A
 C2/04FF: A2 63 0F     LDX #$0F63

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 38FB
+Routine_CE38FB:
 CE/38FB: 3A           DEC
 CE/38FC: 82 3A 85     BRL $CEBE39
 CE/38FF: 09 93 09     ORA #$0993

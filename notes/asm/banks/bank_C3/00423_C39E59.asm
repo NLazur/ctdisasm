@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9E59
+Routine_C39E59:
 C3/9E59: 1A           INC
 C3/9E5A: F2 86        SBC ($86)
 C3/9E5C: 10 98        BPL $9DF6

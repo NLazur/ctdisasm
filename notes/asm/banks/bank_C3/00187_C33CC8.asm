@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 3CC8
+Routine_C33CC8:
 C3/3CC8: A4 62        LDY $62
 C3/3CCA: 4E 07 FE     LSR $FE07
 C3/3CCD: FD 05 99     SBC $9905,X

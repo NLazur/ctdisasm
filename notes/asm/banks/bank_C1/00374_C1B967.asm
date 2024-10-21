@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: B967
+Routine_C1B967:
 C1/B967: 7B           TDC
 C1/B968: A9 01        LDA #$01
 C1/B96A: 8D 22 AF     STA $AF22

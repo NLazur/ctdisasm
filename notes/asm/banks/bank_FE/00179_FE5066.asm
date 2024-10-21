@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 5066
+Routine_FE5066:
 FE/5066: 0A           ASL
 FE/5067: 05 35        ORA $35
 FE/5069: 02 18        COP $18

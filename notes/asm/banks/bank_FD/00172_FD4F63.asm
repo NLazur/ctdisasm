@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4F63
+Routine_FD4F63:
 FD/4F63: 3C C3 00     BIT $00C3,X
 FD/4F66: 54 AB 50     MVN $AB,$50
 FD/4F69: 74 21        STZ $21,X

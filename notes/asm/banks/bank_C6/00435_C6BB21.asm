@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: BB21
+Routine_C6BB21:
 C6/BB21: F8           SED
 C6/BB22: 07 C0        ORA [$C0]
 C6/BB24: 7A           PLY

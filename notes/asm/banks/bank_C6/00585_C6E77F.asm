@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: E77F
+Routine_C6E77F:
 C6/E77F: C2 20        REP #$20
 C6/E781: A6 4E        LDX $4E
 C6/E783: 18           CLC

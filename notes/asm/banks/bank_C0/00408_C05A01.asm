@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 5A01
+Routine_C05A01:
 C0/5A01: BD 00 11     LDA $1100,X
 C0/5A04: F0 2B        BEQ $5A31
 C0/5A06: 30 F0        BMI $59F8

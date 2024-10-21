@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C201
+Routine_C3C201:
 C3/C201: 30 2C        BMI $C22F
 C3/C203: F0 2C        BEQ $C231
 C3/C205: A0 28        LDY #$28

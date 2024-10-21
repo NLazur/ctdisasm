@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: DB7F
+Routine_D0DB7F:
 D0/DB7F: 58           CLI
 D0/DB80: 00 00        BRK $00
 D0/DB82: 00 00        BRK $00

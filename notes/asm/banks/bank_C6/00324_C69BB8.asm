@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9BB8
+Routine_C69BB8:
 C6/9BB8: C8           INY
 C6/9BB9: 01 03        ORA ($03,X)
 C6/9BBB: 59 03 D0     EOR $D003,Y

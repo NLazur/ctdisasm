@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 31DF
+Routine_D131DF:
 D1/31DF: C6 26        DEC $26
 D1/31E1: 38           SEC
 D1/31E2: 00 C6        BRK $C6

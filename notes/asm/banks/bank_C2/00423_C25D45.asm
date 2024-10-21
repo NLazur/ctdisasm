@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 5D45
+Routine_C25D45:
 C2/5D45: A0 00 00     LDY #$0000
 C2/5D48: B7 37        LDA [$37],Y
 C2/5D4A: C9 00 F0     CMP #$F000

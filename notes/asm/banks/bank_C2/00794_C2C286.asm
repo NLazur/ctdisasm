@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C286
+Routine_C2C286:
 C2/C286: E2 20        SEP #$20
 C2/C288: AD 00 0F     LDA $0F00
 C2/C28B: 0D 01 0F     ORA $0F01

@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: B6AB
+Routine_CDB6AB:
 CD/B6AB: 0D 02 06     ORA $0602
 CD/B6AE: A8           TAY
 CD/B6AF: 08           PHP

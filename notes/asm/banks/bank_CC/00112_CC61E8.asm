@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 61E8
+Routine_CC61E8:
 CC/61E8: 0F 00 00 00  ORA $000000
 CC/61EC: 00 00        BRK $00
 CC/61EE: 00 00        BRK $00

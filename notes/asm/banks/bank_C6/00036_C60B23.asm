@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0B23
+Routine_C60B23:
 C6/0B23: 0E 0D 1F     ASL $1F0D
 C6/0B26: 18           CLC
 C6/0B27: 1F 10 0A 03  ORA $030A10,X

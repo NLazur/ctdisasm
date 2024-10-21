@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F65C
+Routine_FFF65C:
 FF/F65C: A9 0C 00     LDA #$000C
 FF/F65F: 85 00        STA $00
 FF/F661: BF 00 00 E4  LDA $E40000,X

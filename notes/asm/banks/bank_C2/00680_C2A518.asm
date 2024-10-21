@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: A518
+Routine_C2A518:
 C2/A518: C2 20        REP #$20
 C2/A51A: A5 22        LDA $22
 C2/A51C: 18           CLC

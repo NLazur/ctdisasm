@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2A9A
+Routine_CC2A9A:
 CC/2A9A: 00 1E        BRK $1E
 CC/2A9C: 14 00        TRB $00
 CC/2A9E: 25 80        AND $80

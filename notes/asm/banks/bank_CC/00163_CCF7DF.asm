@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F7DF
+Routine_CCF7DF:
 CC/F7DF: 0B           PHD
 CC/F7E0: 00 0C        BRK $0C
 CC/F7E2: C0 0C 80     CPY #$800C

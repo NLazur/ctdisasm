@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1CFC
+Routine_C01CFC:
 C0/1CFC: C2 20        REP #$20
 C0/1CFE: 29 06 00     AND #$0006
 C0/1D01: 85 DB        STA $DB

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0696
+Routine_C60696:
 C6/0696: 10 E8        BPL $0680
 C6/0698: 00 B8        BRK $B8
 C6/069A: 00 78        BRK $78

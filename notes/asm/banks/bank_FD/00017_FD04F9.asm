@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 04F9
+Routine_FD04F9:
 FD/04F9: 6C 6D 00     JMP ($006D)
 FD/04FC: 88           DEY
 FD/04FD: 89 8A 8B     BIT #$8B8A

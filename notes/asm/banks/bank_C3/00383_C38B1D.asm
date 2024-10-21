@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 8B1D
+Routine_C38B1D:
 C3/8B1D: 09 00 22     ORA #$2200
 C3/8B20: 51 52        EOR ($52),Y
 C3/8B22: A9 32 C9     LDA #$C932

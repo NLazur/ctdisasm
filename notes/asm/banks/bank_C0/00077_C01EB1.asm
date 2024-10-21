@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 1EB1
+Routine_C01EB1:
 C0/1EB1: A6 97        LDX $97
 C0/1EB3: BD 81 18     LDA $1881,X
 C0/1EB6: 3A           DEC

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: E4F0
+Routine_D0E4F0:
 D0/E4F0: 28           PLP
 D0/E4F1: 8D 94 8D     STA $8D94
 D0/E4F4: 00 95        BRK $95

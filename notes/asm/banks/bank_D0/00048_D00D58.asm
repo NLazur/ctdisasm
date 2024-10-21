@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 0D58
+Routine_D00D58:
 D0/0D58: 37 38        AND [$38],Y
 D0/0D5A: BF C0 1F 20  LDA $201FC0,X
 D0/0D5E: 3F 20 3F 20  AND $203F20,X

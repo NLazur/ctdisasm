@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 9698
+Routine_D19698:
 D1/9698: 10 09        BPL $96A3
 D1/969A: FF 00 10 02  SBC $021000,X
 D1/969E: 8E 40 20     STX $2040

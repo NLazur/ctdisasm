@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 063F
+Routine_C0063F:
 C0/063F: BD 00 11     LDA $1100,X
 C0/0642: C9 05        CMP #$05
 C0/0644: F0 04        BEQ $064A

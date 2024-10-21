@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C46A
+Routine_C3C46A:
 C3/C46A: 4E 98 E4     LSR $E498
 C3/C46D: C6 00        DEC $00
 C3/C46F: 0B           PHD

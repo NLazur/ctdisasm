@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 10FC
+Routine_FD10FC:
 FD/10FC: 10 E8        BPL $10E6
 FD/10FE: 10 DC        BPL $10DC
 FD/1100: 20 B3 00     JSR $00B3

@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: DB29
+Routine_CFDB29:
 CF/DB29: A1 6B        LDA ($6B,X)
 CF/DB2B: E1 C5        SBC ($C5,X)
 CF/DB2D: A1 C5        LDA ($C5,X)

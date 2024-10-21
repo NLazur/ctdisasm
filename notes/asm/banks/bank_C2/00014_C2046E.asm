@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 046E
+Routine_C2046E:
 C2/046E: 4C 46 03     JMP $0346
 C2/0471: A2 30 0B     LDX #$0B30
 C2/0474: 86 4E        STX $4E

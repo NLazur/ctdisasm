@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 0B0B
+Routine_C10B0B:
 C1/0B0B: C2 20        REP #$20
 C1/0B0D: A2 1E 00     LDX #$001E
 C1/0B10: A9 FF FF     LDA #$FFFF

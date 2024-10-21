@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: FBB1
+Routine_D0FBB1:
 D0/FBB1: 10 20        BPL $FBD3
 D0/FBB3: 08           PHP
 D0/FBB4: D8           CLD

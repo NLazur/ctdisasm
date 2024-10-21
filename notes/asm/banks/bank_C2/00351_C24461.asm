@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4461
+Routine_C24461:
 C2/4461: AD A6 1B     LDA $1BA6
 C2/4464: C9 D3        CMP #$D3
 C2/4466: D0 19        BNE $4481

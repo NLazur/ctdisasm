@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: AA07
+Routine_C0AA07:
 C0/AA07: A6 6D        LDX $6D
 C0/AA09: BD 80 1B     LDA $1B80,X
 C0/AA0C: F0 03        BEQ $AA11

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BB22
+Routine_C3BB22:
 C3/BB22: C0 10        CPY #$10
 C3/BB24: 30 1A        BMI $BB40
 C3/BB26: 01 05        ORA ($05,X)

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 0A14
+Routine_C00A14:
 C0/0A14: A5 BB        LDA $BB         ; load map bg3 tile assembly
 C0/0A16: D0 37        BNE $0A4F
 C0/0A18: A6 FE        LDX $FE

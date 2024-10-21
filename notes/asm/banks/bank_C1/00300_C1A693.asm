@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: A693
+Routine_C1A693:
 C1/A693: 9C CB AE     STZ $AECB
 C1/A696: 9C 20 AF     STZ $AF20
 C1/A699: 9C 21 AF     STZ $AF21

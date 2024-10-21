@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 59CF
+Routine_FD59CF:
 FD/59CF: 03 01        ORA $01,S
 FD/59D1: 01 01        ORA ($01,X)
 FD/59D3: 0A           ASL

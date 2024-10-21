@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 33C4
+Routine_FD33C4:
 FD/33C4: E8           INX
 FD/33C5: 43 A0        EOR $A0,S
 FD/33C7: 00 90        BRK $90

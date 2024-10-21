@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2EEE
+Routine_CD2EEE:
 CD/2EEE: 9E 3A CA     STZ $CA3A,X
 CD/2EF1: A4 40        LDY $40
 CD/2EF3: 88           DEY

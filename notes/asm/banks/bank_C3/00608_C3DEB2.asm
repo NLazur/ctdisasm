@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: DEB2
+Routine_C3DEB2:
 C3/DEB2: 83 00        STA $00,S
 C3/DEB4: 00 F3        BRK $F3
 C3/DEB6: 41 48        EOR ($48,X)

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 5365
+Routine_CC5365:
 CC/5365: 01 00        ORA ($00,X)
 CC/5367: 01 0B        ORA ($0B,X)
 CC/5369: 00 7F        BRK $7F

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 485C
+Routine_D0485C:
 D0/485C: C1 C1        CMP ($C1,X)
 D0/485E: 83 82        STA $82,S
 D0/4860: 03 02        ORA $02,S

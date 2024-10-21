@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E437
+Routine_FDE437:
 FD/E437: B9 21 05     LDA $0521,Y
 FD/E43A: C2 21        REP #$21
 FD/E43C: 0A           ASL

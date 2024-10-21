@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0AAE
+Routine_C20AAE:
 C2/0AAE: A4 04        LDY $04
 C2/0AB0: B1 18        LDA ($18),Y
 C2/0AB2: 29 FF        AND #$FF

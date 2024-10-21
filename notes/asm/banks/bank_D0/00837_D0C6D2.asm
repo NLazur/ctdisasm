@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: C6D2
+Routine_D0C6D2:
 D0/C6D2: 3C 40 FC     BIT $FC40,X
 D0/C6D5: 84 FC        STY $FC
 D0/C6D7: 84 05        STY $05

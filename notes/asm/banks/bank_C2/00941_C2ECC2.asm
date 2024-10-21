@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: ECC2
+Routine_C2ECC2:
 C2/ECC2: 08           PHP
 C2/ECC3: E2 30        SEP #$30
 C2/ECC5: A8           TAY

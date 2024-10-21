@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 1235
+Routine_FD1235:
 FD/1235: 12 00        ORA ($00)
 FD/1237: CC 02 00     CPY $0002
 FD/123A: EC 00 FE     CPX $FE00

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 661F
+Routine_C0661F:
 C0/661F: C8           INY
 C0/6620: BB           TYX
 C0/6621: 7B           TDC

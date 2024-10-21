@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: B238
+Routine_FFB238:
 FF/B238: 64 38        STZ $38
 FF/B23A: 43 30        EOR $30,S
 FF/B23C: 43 24        EOR $24,S

@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: 6BB5
+Routine_CE6BB5:
 CE/6BB5: 52 6C        EOR ($6C)
 CE/6BB7: 5E 6C 6A     LSR $6A6C,X
 CE/6BBA: 6C 78 6C     JMP ($6C78)

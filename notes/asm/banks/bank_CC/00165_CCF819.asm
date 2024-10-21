@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: F819
+Routine_CCF819:
 CC/F819: 18           CLC
 CC/F81A: 68           PLA
 CC/F81B: 18           CLC

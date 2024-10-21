@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: FF95
+Routine_C1FF95:
 C1/FF95: AA           TAX
 C1/FF96: 86 28        STX $28
 C1/FF98: A2 18 00     LDX #$0018

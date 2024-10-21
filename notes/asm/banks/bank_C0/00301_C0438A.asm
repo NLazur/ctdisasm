@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 438A
+Routine_C0438A:
 C0/438A: A5 02        LDA $02
 C0/438C: 9D 01 18     STA $1801,X
 C0/438F: A5 03        LDA $03

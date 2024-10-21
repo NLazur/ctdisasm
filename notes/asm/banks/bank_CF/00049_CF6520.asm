@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 6520
+Routine_CF6520:
 CF/6520: 1D 16 1A     ORA $1A16,X
 CF/6523: 17 0C        ORA [$0C],Y
 CF/6525: 0B           PHD

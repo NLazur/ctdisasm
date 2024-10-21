@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BC59
+Routine_C2BC59:
 C2/BC59: 08           PHP
 C2/BC5A: E2 30        SEP #$30
 C2/BC5C: AC BA 9A     LDY $9ABA

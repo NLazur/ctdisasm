@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3908
+Routine_FD3908:
 FD/3908: CF 20 E8 E0  CMP $E0E820
 FD/390C: 00 E1        BRK $E1
 FD/390E: 00 00        BRK $00

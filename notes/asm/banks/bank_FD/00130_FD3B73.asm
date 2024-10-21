@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3B73
+Routine_FD3B73:
 FD/3B73: F8           SED
 FD/3B74: 20 F8 00     JSR $00F8
 FD/3B77: FC 00 40     JSR ($4000,X)

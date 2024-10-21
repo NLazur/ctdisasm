@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: 1BAB
+Routine_FF1BAB:
 FF/1BAB: 7F 18 CF 5A  ADC $5ACF18,X
 FF/1BAF: 55 30        EOR $30,X
 FF/1BB1: FF 0F FF 80  SBC $80FF0F,X

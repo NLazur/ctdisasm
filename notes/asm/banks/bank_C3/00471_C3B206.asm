@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: B206
+Routine_C3B206:
 C3/B206: 38           SEC
 C3/B207: 1E 38 C8     ASL $C838,X
 C3/B20A: 4B           PHK

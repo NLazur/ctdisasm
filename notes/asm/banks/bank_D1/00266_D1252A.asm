@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 252A
+Routine_D1252A:
 D1/252A: EE 00 EE     INC $EE00
 D1/252D: 4D 00 40     EOR $4000
 D1/2530: 23 00        AND $00,S

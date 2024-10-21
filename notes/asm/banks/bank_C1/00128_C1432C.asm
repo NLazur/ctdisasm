@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 432C
+Routine_C1432C:
 C1/432C: AD 91 AE     LDA $AE91
 C1/432F: C9 03        CMP #$03
 C1/4331: 90 03        BCC $4336

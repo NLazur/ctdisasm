@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: BB03
+Routine_FDBB03:
 FD/BB03: A7 17        LDA [$17]
 FD/BB05: 76 3B        ROR $3B,X
 FD/BB07: 16 2A        ASL $2A,X

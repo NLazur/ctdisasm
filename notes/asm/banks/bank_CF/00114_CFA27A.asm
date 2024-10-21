@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: A27A
+Routine_CFA27A:
 CF/A27A: 30 20        BMI $A29C
 CF/A27C: 63 A1        ADC $A1,S
 CF/A27E: 63 E1        ADC $E1,S

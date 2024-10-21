@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 933B
+Routine_C3933B:
 C3/933B: 11 18        ORA ($18),Y
 C3/933D: 10 1A        BPL $9359
 C3/933F: E7 10        SBC [$10]

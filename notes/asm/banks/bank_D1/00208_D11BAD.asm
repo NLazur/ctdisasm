@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 1BAD
+Routine_D11BAD:
 D1/1BAD: 00 E6        BRK $E6
 D1/1BAF: 00 E6        BRK $E6
 D1/1BB1: 80 C6        BRA $1B79

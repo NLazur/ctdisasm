@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2CB3
+Routine_CD2CB3:
 CD/2CB3: AD F2 CA     LDA $CAF2
 CD/2CB6: 48           PHA
 CD/2CB7: AD F4 CA     LDA $CAF4

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 6027
+Routine_C66027:
 C6/6027: 36 88        ROL $88,X
 C6/6029: 25 88        AND $88
 C6/602B: 26 88        ROL $88

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9B73
+Routine_C69B73:
 C6/9B73: F8           SED
 C6/9B74: 2B           PLD
 C6/9B75: 18           CLC

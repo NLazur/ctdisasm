@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: D4E1
+Routine_D0D4E1:
 D0/D4E1: 3F 55 48 3E  AND $3E4855,X
 D0/D4E5: 29 0D        AND #$0D
 D0/D4E7: 01 07        ORA ($07,X)

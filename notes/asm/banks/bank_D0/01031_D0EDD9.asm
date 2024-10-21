@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: EDD9
+Routine_D0EDD9:
 D0/EDD9: 09 41        ORA #$41
 D0/EDDB: 09 42        ORA #$42
 D0/EDDD: 09 43        ORA #$43

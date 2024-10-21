@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: 7639
+Routine_C17639:
 C1/7639: B9 14 A0     LDA $A014,Y
 C1/763C: AA           TAX
 C1/763D: BD 0C 1D     LDA $1D0C,X

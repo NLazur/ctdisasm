@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 2EC4
+Routine_D12EC4:
 D1/2EC4: 80 40        BRA $2F06
 D1/2EC6: 64 01        STZ $01
 D1/2EC8: 02 08        COP $08

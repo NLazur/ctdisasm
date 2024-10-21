@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: F6FB
+Routine_FFF6FB:
 FF/F6FB: 1C 50 18     TRB $1850
 FF/F6FE: 14 06        TRB $06
 FF/F700: 70 17        BVS $F719

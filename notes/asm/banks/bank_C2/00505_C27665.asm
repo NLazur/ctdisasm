@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7665
+Routine_C27665:
 C2/7665: BD 02 00     LDA $0002,X
 C2/7668: D0 14        BNE $767E
 C2/766A: FE 02 00     INC $0002,X

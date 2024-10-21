@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: D52D
+Routine_FDD52D:
 FD/D52D: A9 28        LDA #$28
 FD/D52F: 8F 04 42 00  STA $004204
 FD/D533: A9 00        LDA #$00

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 96BC
+Routine_C096BC:
 C0/96BC: 85 66        STA $66
 C0/96BE: A6 8F        LDX $8F
 C0/96C0: E8           INX

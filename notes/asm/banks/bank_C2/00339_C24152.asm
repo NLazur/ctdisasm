@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 4152
+Routine_C24152:
 C2/4152: BD 30 00     LDA $0030,X
 C2/4155: 10 05        BPL $415C
 C2/4157: A9 FF FF     LDA #$FFFF

@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 6282
+Routine_C06282:
 C0/6282: C8           INY
 C0/6283: BB           TYX
 C0/6284: 7B           TDC

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 9C7C
+Routine_C69C7C:
 C6/9C7C: 62 4C 0B     PER $C6A7CB
 C6/9C7F: 9D 04 A0     STA $A004,X
 C6/9C82: 04 AD        TSB $AD

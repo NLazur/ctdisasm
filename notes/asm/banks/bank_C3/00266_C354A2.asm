@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 54A2
+Routine_C354A2:
 C3/54A2: C9 0E        CMP #$0E
 C3/54A4: 85 F2        STA $F2
 C3/54A6: 8D 27 7D     STA $7D27

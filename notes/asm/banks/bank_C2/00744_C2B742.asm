@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: B742
+Routine_C2B742:
 C2/B742: A2 03 93     LDX #$9303
 C2/B745: 8E 96 96     STX $9696
 C2/B748: A2 22 00     LDX #$0022

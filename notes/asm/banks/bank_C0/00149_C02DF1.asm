@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2DF1
+Routine_C02DF1:
 C0/2DF1: A9 00        LDA #$00        ; clear ($4E) bytes at [$4B] (uses hardware multiplication registers and DMA)
 C0/2DF3: 8D 1B 21     STA $211B
 C0/2DF6: 8D 1B 21     STA $211B

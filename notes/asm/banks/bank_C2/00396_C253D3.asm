@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 53D3
+Routine_C253D3:
 C2/53D3: C2 20        REP #$20
 C2/53D5: A6 4E        LDX $4E
 C2/53D7: 38           SEC

@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4DFB
+Routine_FD4DFB:
 FD/4DFB: 30 00        BMI $4DFD
 FD/4DFD: 2C 00 2F     BIT $2F00
 FD/4E00: 80 00        BRA $4E02

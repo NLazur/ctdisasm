@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: BE79
+Routine_C2BE79:
 C2/BE79: 08           PHP
 C2/BE7A: C2 30        REP #$30
 C2/BE7C: AD 19 04     LDA $0419

@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: 23D8
+Routine_FE23D8:
 FE/23D8: 4D F6 49     EOR $49F6
 FE/23DB: 4F 50 35 15  EOR $153550
 FE/23DF: 2C 05 05     BIT $0505

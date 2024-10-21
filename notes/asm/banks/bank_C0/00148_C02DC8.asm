@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 2DC8
+Routine_C02DC8:
 C0/2DC8: A6 48        LDX $48         ; DMA ($4E) bytes from [$4B] to VRAM at ($48), DMA flags $48
 C0/2DCA: 8E 16 21     STX $2116
 C0/2DCD: A9 80        LDA #$80

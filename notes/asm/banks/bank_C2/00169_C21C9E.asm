@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1C9E
+Routine_C21C9E:
 C2/1C9E: BD 1E 00     LDA $001E,X
 C2/1CA1: 49 FF FF     EOR #$FFFF
 C2/1CA4: 18           CLC

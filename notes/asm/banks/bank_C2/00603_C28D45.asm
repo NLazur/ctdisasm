@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8D45
+Routine_C28D45:
 C2/8D45: C2 30        REP #$30
 C2/8D47: A0 00 26     LDY #$2600
 C2/8D4A: E2 20        SEP #$20

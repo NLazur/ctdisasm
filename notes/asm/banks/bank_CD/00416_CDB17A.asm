@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: B17A
+Routine_CDB17A:
 CD/B17A: 06 05        ASL $05
 CD/B17C: 69 00        ADC #$00
 CD/B17E: 20 02 6A     JSR $6A02

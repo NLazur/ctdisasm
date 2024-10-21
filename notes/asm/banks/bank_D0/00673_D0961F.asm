@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 961F
+Routine_D0961F:
 D0/961F: F0 3F        BEQ $9660
 D0/9621: C0 FF        CPY #$FF
 D0/9623: 00 FF        BRK $FF

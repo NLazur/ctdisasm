@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A2EF
+Routine_C6A2EF:
 C6/A2EF: 50 D0        BVC $A2C1
 C6/A2F1: D0 D0        BNE $A2C3
 C6/A2F3: 20 71 01     JSR $0171

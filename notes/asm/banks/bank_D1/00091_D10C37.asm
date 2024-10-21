@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 0C37
+Routine_D10C37:
 D1/0C37: 01 2C        ORA ($2C,X)
 D1/0C39: 01 28        ORA ($28,X)
 D1/0C3B: 01 4E        ORA ($4E,X)

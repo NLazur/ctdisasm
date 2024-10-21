@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E962
+Routine_FDE962:
 FD/E962: B9 22 05     LDA $0522,Y
 FD/E965: A8           TAY
 FD/E966: BF 00 20 7E  LDA $7E2000,X

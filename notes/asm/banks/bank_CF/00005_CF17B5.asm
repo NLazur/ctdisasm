@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 17B5
+Routine_CF17B5:
 CF/17B5: FF 81 FE 41  SBC $41FE81,X
 CF/17B9: FE 83 FC     INC $FC83,X
 CF/17BC: 43 FC        EOR $FC,S

@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 6EE4
+Routine_D06EE4:
 D0/6EE4: 80 80        BRA $6E66
 D0/6EE6: 00 00        BRK $00
 D0/6EE8: 08           PHP

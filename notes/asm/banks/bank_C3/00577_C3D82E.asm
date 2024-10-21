@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: D82E
+Routine_C3D82E:
 C3/D82E: 5A           PHY
 C3/D82F: 67 75        ADC [$75]
 C3/D831: 4E 32 4A     LSR $4A32

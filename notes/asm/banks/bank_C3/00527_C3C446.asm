@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C446
+Routine_C3C446:
 C3/C446: 00 02        BRK $02
 C3/C448: 34 4F        BIT $4F,X
 C3/C44A: 7C 67 01     JMP ($0167,X)

@@ -1,3 +1,5 @@
+; Bank: FF | Start Address: C08B
+Routine_FFC08B:
 FF/C08B: 43 00        EOR $00,S
 FF/C08D: 2C 0E 99     BIT $990E
 FF/C090: BA           TSX

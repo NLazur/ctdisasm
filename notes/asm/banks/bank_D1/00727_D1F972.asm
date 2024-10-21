@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: F972
+Routine_D1F972:
 D1/F972: A5 0B        LDA $0B
 D1/F974: 38           SEC
 D1/F975: E5 0C        SBC $0C

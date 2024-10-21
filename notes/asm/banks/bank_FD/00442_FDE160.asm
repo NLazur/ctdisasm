@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E160
+Routine_FDE160:
 FD/E160: C2 21        REP #$21
 FD/E162: A5 D0        LDA $D0
 FD/E164: 30 28        BMI $E18E

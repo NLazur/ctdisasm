@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A51C
+Routine_C6A51C:
 C6/A51C: 11 0C        ORA ($0C),Y
 C6/A51E: 15 17        ORA $17,X
 C6/A520: 9C 0D 60     STZ $600D

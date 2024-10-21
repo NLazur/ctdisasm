@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 7AAF
+Routine_C27AAF:
 C2/7AAF: C2 20        REP #$20
 C2/7AB1: AF 21 8A 7E  LDA $7E8A21
 C2/7AB5: 18           CLC

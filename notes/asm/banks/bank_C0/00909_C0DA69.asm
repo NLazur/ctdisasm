@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: DA69
+Routine_C0DA69:
 C0/DA69: C2 20        REP #$20
 C0/DA6B: BD 80 0D     LDA $0D80,X
 C0/DA6E: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 3A34
+Routine_CC3A34:
 CC/3A34: 3C 7E 3C     BIT $3C7E,X
 CC/3A37: 93 3C        STA ($3C,S),Y
 CC/3A39: A9 3C        LDA #$3C

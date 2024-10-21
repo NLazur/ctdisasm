@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: DBAA
+Routine_C1DBAA:
 C1/DBAA: 7B           TDC
 C1/DBAB: A5 16        LDA $16
 C1/DBAD: C9 FF        CMP #$FF

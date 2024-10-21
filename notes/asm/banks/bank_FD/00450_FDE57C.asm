@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: E57C
+Routine_FDE57C:
 FD/E57C: 5A           PHY
 FD/E57D: B9 27 05     LDA $0527,Y
 FD/E580: 18           CLC

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A667
+Routine_C6A667:
 C6/A667: 61 A0        ADC ($A0,X)
 C6/A669: 51 51        EOR ($51),Y
 C6/A66B: 51 60        EOR ($60),Y

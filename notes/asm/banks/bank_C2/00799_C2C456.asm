@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: C456
+Routine_C2C456:
 C2/C456: A2 A6 2E     LDX #$2EA6
 C2/C459: 86 61        STX $61
 C2/C45B: AE 8B 0D     LDX $0D8B

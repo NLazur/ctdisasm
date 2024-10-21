@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: F436
+Routine_CFF436:
 CF/F436: 20 43 FA     JSR $FA43
 CF/F439: A6 C6        LDX $C6
 CF/F43B: BD 24 A3     LDA $A324,X

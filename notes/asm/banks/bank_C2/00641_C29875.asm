@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 9875
+Routine_C29875:
 C2/9875: 08           PHP
 C2/9876: C2 30        REP #$30
 C2/9878: 20 88 99     JSR $9988

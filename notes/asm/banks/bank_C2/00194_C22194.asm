@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 2194
+Routine_C22194:
 C2/2194: C2 20        REP #$20
 C2/2196: A6 4E        LDX $4E
 C2/2198: BD 02 00     LDA $0002,X

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: E390
+Routine_C2E390:
 C2/E390: 08           PHP
 C2/E391: C2 30        REP #$30
 C2/E393: 9C 90 98     STZ $9890

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: BD5C
+Routine_C3BD5C:
 C3/BD5C: 0D 12 30     ORA $3012
 C3/BD5F: 1B           TCS
 C3/BD60: 22 CA 52 38  JSR $3852CA

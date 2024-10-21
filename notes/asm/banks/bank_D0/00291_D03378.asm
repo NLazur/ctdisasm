@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 3378
+Routine_D03378:
 D0/3378: 17 18        ORA [$18],Y
 D0/337A: 0D 0A 02     ORA $020A
 D0/337D: 07 05        ORA [$05]

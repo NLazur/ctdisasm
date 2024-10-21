@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 8375
+Routine_D08375:
 D0/8375: 5F 47 7E 55  EOR $557E47,X
 D0/8379: 66 B6        ROR $B6
 D0/837B: D9 4E B1     CMP $B14E,Y

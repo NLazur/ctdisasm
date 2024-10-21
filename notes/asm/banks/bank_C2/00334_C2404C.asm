@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 404C
+Routine_C2404C:
 C2/404C: A6 4E        LDX $4E
 C2/404E: A9 22 9D     LDA #$9D22
 C2/4051: 29 00 C2     AND #$C200

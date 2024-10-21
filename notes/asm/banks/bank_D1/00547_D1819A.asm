@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 819A
+Routine_D1819A:
 D1/819A: 80 FF        BRA $819B
 D1/819C: 0A           ASL
 D1/819D: 01 9D        ORA ($9D,X)

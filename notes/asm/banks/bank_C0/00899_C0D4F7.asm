@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: D4F7
+Routine_C0D4F7:
 C0/D4F7: BD 00 12     LDA $1200,X
 C0/D4FA: 85 CF        STA $CF
 C0/D4FC: A9 7F        LDA #$7F

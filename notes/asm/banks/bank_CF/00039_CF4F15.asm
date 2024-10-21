@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: 4F15
+Routine_CF4F15:
 CF/4F15: BF C0 3F F1  LDA $F13FC0,X
 CF/4F19: 0F F8 07 F8  ORA $F807F8
 CF/4F1D: 07 F3        ORA [$F3]

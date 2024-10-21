@@ -1,3 +1,5 @@
+; Bank: D0 | Start Address: 7C00
+Routine_D07C00:
 D0/7C00: C0 1C        CPY #$1C
 D0/7C02: C0 3C        CPY #$3C
 D0/7C04: C0 3E        CPY #$3E

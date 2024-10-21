@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 6D73
+Routine_FD6D73:
 FD/6D73: 00 42        BRK $42
 FD/6D75: FA           PLX
 FD/6D76: 11 04        ORA ($04),Y

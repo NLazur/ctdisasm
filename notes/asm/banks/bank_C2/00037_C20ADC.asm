@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 0ADC
+Routine_C20ADC:
 C2/0ADC: A5 0C        LDA $0C
 C2/0ADE: 4A           LSR
 C2/0ADF: 4A           LSR

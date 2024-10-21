@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9620
+Routine_C39620:
 C3/9620: 8C 7F B0     STY $B07F
 C3/9623: 01 60        ORA ($60,X)
 C3/9625: 8C 7F 61     STY $617F

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 07C2
+Routine_C207C2:
 C2/07C2: 20 11 08     JSR $0811
 C2/07C5: E2 20        SEP #$20
 C2/07C7: 8B           PHB

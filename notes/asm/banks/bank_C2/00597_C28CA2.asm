@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 8CA2
+Routine_C28CA2:
 C2/8CA2: 20 75 8C     JSR $8C75
 C2/8CA5: D0 27        BNE $8CCE
 C2/8CA7: C0 02        CPY #$02

@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 63DF
+Routine_C263DF:
 C2/63DF: 20 DE 27     JSR $27DE
 C2/63E2: 20 00 64     JSR $6400
 C2/63E5: A2 00 58     LDX #$5800

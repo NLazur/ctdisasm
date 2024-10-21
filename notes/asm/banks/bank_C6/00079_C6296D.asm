@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 296D
+Routine_C6296D:
 C6/296D: 09 08 0C     ORA #$0C08
 C6/2970: BA           TSX
 C6/2971: 08           PHP

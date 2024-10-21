@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: A1E9
+Routine_C0A1E9:
 C0/A1E9: A5 62        LDA $62
 C0/A1EB: F0 0A        BEQ $A1F7
 C0/A1ED: C9 02        CMP #$02

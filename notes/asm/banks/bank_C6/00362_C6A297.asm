@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: A297
+Routine_C6A297:
 C6/A297: 31 11        AND ($11),Y
 C6/A299: 39 04 05     AND $0504,Y
 C6/A29C: 00 05        BRK $05

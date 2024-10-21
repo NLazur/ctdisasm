@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 3124
+Routine_FD3124:
 FD/3124: 65 08        ADC $08
 FD/3126: 6F 1C 00 C8  ADC $C8001C
 FD/312A: 64 91        STZ $91

@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 2968
+Routine_C32968:
 C3/2968: 21 23        AND ($23,X)
 C3/296A: 58           CLI
 C3/296B: 13 78        ORA ($78,S),Y

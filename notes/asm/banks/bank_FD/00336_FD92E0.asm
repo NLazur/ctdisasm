@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 92E0
+Routine_FD92E0:
 FD/92E0: D0 A0        BNE $9282
 FD/92E2: 32 32        AND ($32)
 FD/92E4: FF FF 04 08  SBC $0804FF,X

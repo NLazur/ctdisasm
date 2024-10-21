@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 3674
+Routine_C03674:
 C0/3674: A9 01        LDA #$01
 C0/3676: 9F 00 0A 7F  STA $7F0A00,X
 C0/367A: BB           TYX

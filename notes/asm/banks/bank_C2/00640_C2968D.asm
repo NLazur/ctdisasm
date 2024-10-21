@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 968D
+Routine_C2968D:
 C2/968D: C2 30        REP #$30
 C2/968F: A9 60 8E     LDA #$8E60
 C2/9692: A2 00 50     LDX #$5000

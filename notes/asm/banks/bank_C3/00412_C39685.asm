@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 9685
+Routine_C39685:
 C3/9685: 3C 0D 1E     BIT $1E0D,X
 C3/9688: 42 0E        WDM $0E
 C3/968A: 3E 00 07     ROL $0700,X

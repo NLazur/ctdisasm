@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: C2F3
+Routine_C3C2F3:
 C3/C2F3: 16 9F        ASL $9F,X
 C3/C2F5: 09 00        ORA #$00
 C3/C2F7: B4 94        LDY $94,X

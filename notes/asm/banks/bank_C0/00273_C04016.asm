@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: 4016
+Routine_C04016:
 C0/4016: B3 40        LDA ($40,S),Y
 C0/4018: 45 41        EOR $41
 C0/401A: 81 41        STA ($41,X)

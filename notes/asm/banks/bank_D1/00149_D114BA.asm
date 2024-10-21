@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 14BA
+Routine_D114BA:
 D1/14BA: 0C 00 01     TSB $0100
 D1/14BD: 0E 01 0E     ASL $0E01
 D1/14C0: 41 0C        EOR ($0C,X)

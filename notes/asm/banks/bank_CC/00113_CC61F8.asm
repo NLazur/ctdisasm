@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 61F8
+Routine_CC61F8:
 CC/61F8: 00 00        BRK $00
 CC/61FA: 00 E7        BRK $E7
 CC/61FC: E7 00        SBC [$00]

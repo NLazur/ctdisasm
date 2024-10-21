@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 8A19
+Routine_C68A19:
 C6/8A19: E0 C0        CPX #$C0
 C6/8A1B: 10 38        BPL $8A55
 C6/8A1D: 39 3A 3B     AND $3B3A,Y

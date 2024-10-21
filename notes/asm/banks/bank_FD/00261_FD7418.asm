@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 7418
+Routine_FD7418:
 FD/7418: 70 80        BVS $739A
 FD/741A: 15 00        ORA $00,X
 FD/741C: 00 00        BRK $00

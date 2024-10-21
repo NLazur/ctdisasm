@@ -1,3 +1,5 @@
+; Bank: FD | Start Address: 4D70
+Routine_FD4D70:
 FD/4D70: BF 40 BF 40  LDA $40BF40,X
 FD/4D74: 31 38        AND ($38),Y
 FD/4D76: 76 05        ROR $05,X

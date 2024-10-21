@@ -1,3 +1,5 @@
+; Bank: C0 | Start Address: BA65
+Routine_C0BA65:
 C0/BA65: 8B           PHB
 C0/BA66: A9 7F        LDA #$7F
 C0/BA68: 48           PHA

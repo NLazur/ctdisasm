@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 0043
+Routine_CD0043:
 CD/0043: 8D 00 CD     STA $CD00
 CD/0046: 20 75 3E     JSR $3E75
 CD/0049: 22 AA 04 CD  JSR $CD04AA

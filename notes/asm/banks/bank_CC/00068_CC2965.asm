@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 2965
+Routine_CC2965:
 CC/2965: 20 10 08     JSR $0810
 CC/2968: 04 02        TSB $02
 CC/296A: C0 A0 90     CPY #$90A0

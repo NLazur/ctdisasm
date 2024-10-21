@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: C182
+Routine_C6C182:
 C6/C182: 05 C0        ORA $C0
 C6/C184: F8           SED
 C6/C185: C0 60 CC     CPY #$CC60

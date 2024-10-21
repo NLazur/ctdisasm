@@ -1,3 +1,5 @@
+; Bank: C3 | Start Address: 1A8A
+Routine_C31A8A:
 C3/1A8A: A9 0A 00     LDA #$000A
 C3/1A8D: 8F 06 42 08  STA $084206
 C3/1A91: 0A           ASL

@@ -1,3 +1,5 @@
+; Bank: C1 | Start Address: DE87
+Routine_C1DE87:
 C1/DE87: AD FD B1     LDA $B1FD
 C1/DE8A: C9 03        CMP #$03
 C1/DE8C: 90 0C        BCC $DE9A

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: CC0B
+Routine_C6CC0B:
 C6/CC0B: 0B           PHD
 C6/CC0C: 01 F4        ORA ($F4,X)
 C6/CC0E: 00 30        BRK $30

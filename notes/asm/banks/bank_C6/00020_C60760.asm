@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: 0760
+Routine_C60760:
 C6/0760: 80 78        BRA $07DA
 C6/0762: 80 D0        BRA $0734
 C6/0764: 01 11        ORA ($11,X)

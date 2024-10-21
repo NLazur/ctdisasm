@@ -1,3 +1,5 @@
+; Bank: FE | Start Address: F23D
+Routine_FEF23D:
 FE/F23D: 01 20        ORA ($20,X)
 FE/F23F: 08           PHP
 FE/F240: DF 5A FF 1C  CMP $1CFF5A,X

@@ -1,3 +1,5 @@
+; Bank: C6 | Start Address: B4F5
+Routine_C6B4F5:
 C6/B4F5: A8           TAY
 C6/B4F6: D2 0A        CMP ($0A)
 C6/B4F8: 1A           INC

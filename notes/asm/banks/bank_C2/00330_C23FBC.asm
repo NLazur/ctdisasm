@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 3FBC
+Routine_C23FBC:
 C2/3FBC: A6 4E        LDX $4E
 C2/3FBE: BD 14 00     LDA $0014,X
 C2/3FC1: 4A           LSR

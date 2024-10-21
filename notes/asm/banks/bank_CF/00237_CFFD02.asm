@@ -1,3 +1,5 @@
+; Bank: CF | Start Address: FD02
+Routine_CFFD02:
 CF/FD02: 7B           TDC
 CF/FD03: AA           TAX
 CF/FD04: A9 01 9D     LDA #$9D01

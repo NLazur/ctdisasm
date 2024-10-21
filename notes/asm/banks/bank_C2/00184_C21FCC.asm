@@ -1,3 +1,5 @@
+; Bank: C2 | Start Address: 1FCC
+Routine_C21FCC:
 C2/1FCC: A4 10        LDY $10
 C2/1FCE: B9 00 00     LDA $0000,Y
 C2/1FD1: F0 20        BEQ $1FF3

@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: 32D0
+Routine_D132D0:
 D1/32D0: EE 00 EE     INC $EE00
 D1/32D3: 64 18        STZ $18
 D1/32D5: 00 43        BRK $43

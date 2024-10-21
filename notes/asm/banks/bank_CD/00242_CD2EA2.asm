@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2EA2
+Routine_CD2EA2:
 CD/2EA2: A6 43        LDX $43
 CD/2EA4: A7 40        LDA [$40]
 CD/2EA6: 1A           INC

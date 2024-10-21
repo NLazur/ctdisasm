@@ -1,3 +1,5 @@
+; Bank: D1 | Start Address: FBD2
+Routine_D1FBD2:
 D1/FBD2: F4 FC 38     PEA $38FC
 D1/FBD5: FC 96 FC     JSR ($FC96,X)
 D1/FBD8: DA           PHX

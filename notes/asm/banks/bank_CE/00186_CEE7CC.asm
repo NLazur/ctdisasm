@@ -1,3 +1,5 @@
+; Bank: CE | Start Address: E7CC
+Routine_CEE7CC:
 CE/E7CC: 6C 4B 00     JMP ($004B)
 CE/E7CF: A5 23        LDA $23
 CE/E7D1: 29 07        AND #$07

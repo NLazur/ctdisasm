@@ -1,3 +1,5 @@
+; Bank: CD | Start Address: 2FED
+Routine_CD2FED:
 CD/2FED: A7 40        LDA [$40]
 CD/2FEF: 29 01        AND #$01
 CD/2FF1: AA           TAX

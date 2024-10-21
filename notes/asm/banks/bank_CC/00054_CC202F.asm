@@ -1,3 +1,5 @@
+; Bank: CC | Start Address: 202F
+Routine_CC202F:
 CC/202F: 12 00        ORA ($00)
 CC/2031: 25 13        AND $13
 CC/2033: 80 08        BRA $203D
