@@ -3,7 +3,7 @@ Routine_C70AEA:
 C7/0AEA: 0D 73 C7     ORA $C773
 C7/0AED: AF 81 C7 52  LDA $52C781
 C7/0AF1: 89 C7        BIT #$C7
-C7/0AF3: 82 8B C7     BRL $C7D281
+C7/0AF3: 82 8B C7     BRL Routine_C7D281
 C7/0AF6: 68           PLA
 C7/0AF7: 9B           TXY
 C7/0AF8: C7 14        CMP [$14]
@@ -17,7 +17,7 @@ C7/0B04: C7 94        CMP [$94]
 C7/0B06: DF C7 AA E3  CMP $E3AAC7,X
 C7/0B0A: C7 40        CMP [$40]
 C7/0B0C: F5 C7        SBC $C7,X
-C7/0B0E: D0 03        BNE $0B13
+C7/0B0E: D0 03        BNE Local_C70B13
 C7/0B10: C8           INY
 C7/0B11: 2B           PLD
 C7/0B12: 0B           PHD

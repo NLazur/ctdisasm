@@ -2,7 +2,7 @@
 Routine_CC1FA0:
 CC/1FA0: 12 00        ORA ($00)
 CC/1FA2: 17 1F        ORA [$1F],Y
-CC/1FA4: 80 09        BRA $1FAF
+CC/1FA4: 80 09        BRA Local_CC1FAF
 CC/1FA6: 09 00 2D     ORA #$2D00
 CC/1FA9: 61 40        ADC ($40,X)
 CC/1FAB: 12 00        ORA ($00)

@@ -15,7 +15,7 @@ FD/E287: 18           CLC
 FD/E288: 69 0C        ADC #$0C
 FD/E28A: A8           TAY
 FD/E28B: C9 90        CMP #$90
-FD/E28D: D0 F2        BNE $E281
+FD/E28D: D0 F2        BNE Local_FDE281
 FD/E28F: AB           PLB
 FD/E290: 28           PLP
 FD/E291: 6B           RTL

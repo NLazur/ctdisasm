@@ -8,13 +8,13 @@ CD/2543: A7 40        LDA [$40]
 CD/2545: 29 1F        AND #$1F
 CD/2547: 85 47        STA $47
 CD/2549: B7 40        LDA [$40],Y
-CD/254B: 10 75        BPL $25C2
+CD/254B: 10 75        BPL Local_CD25C2
 CD/254D: 29 7F        AND #$7F
 CD/254F: 85 49        STA $49
 CD/2551: E2 10        SEP #$10
 CD/2553: A5 7C        LDA $7C
 CD/2555: 25 47        AND $47
-CD/2557: D0 09        BNE $2562
+CD/2557: D0 09        BNE Local_CD2562
 CD/2559: AD 90 CC     LDA $CC90
 CD/255C: 18           CLC
 CD/255D: 65 49        ADC $49
@@ -24,7 +24,7 @@ CD/2565: AA           TAX
 CD/2566: 7B           TDC
 CD/2567: A8           TAY
 CD/2568: 8A           TXA
-CD/2569: 10 2D        BPL $2598
+CD/2569: 10 2D        BPL Local_CD2598
 CD/256B: BF 8E F4 CE  LDA $CEF48E,X
 CD/256F: 8F 02 42 00  STA $004202
 CD/2573: A5 45        LDA $45
@@ -35,15 +35,15 @@ CD/257B: EA           NOP
 CD/257C: AF 17 42 00  LDA $004217
 CD/2580: 49 FF        EOR #$FF
 CD/2582: 1A           INC
-CD/2583: 10 0A        BPL $258F
+CD/2583: 10 0A        BPL Local_CD258F
 CD/2585: 99 00 0A     STA $0A00,Y
 CD/2588: A9 FF        LDA #$FF
 CD/258A: 99 01 0A     STA $0A01,Y
-CD/258D: 80 20        BRA $25AF
+CD/258D: 80 20        BRA Local_CD25AF
 CD/258F: 99 00 0A     STA $0A00,Y
 CD/2592: 7B           TDC
 CD/2593: 99 01 0A     STA $0A01,Y
-CD/2596: 80 17        BRA $25AF
+CD/2596: 80 17        BRA Local_CD25AF
 CD/2598: BF 8E F4 CE  LDA $CEF48E,X
 CD/259C: 8F 02 42 00  STA $004202
 CD/25A0: A5 45        LDA $45
@@ -52,7 +52,7 @@ CD/25A6: EA           NOP
 CD/25A7: EA           NOP
 CD/25A8: EA           NOP
 CD/25A9: AF 17 42 00  LDA $004217
-CD/25AD: 80 D4        BRA $2583
+CD/25AD: 80 D4        BRA Local_CD2583
 CD/25AF: 8A           TXA
 CD/25B0: 18           CLC
 CD/25B1: 69 04        ADC #$04
@@ -61,14 +61,14 @@ CD/25B4: C8           INY
 CD/25B5: C8           INY
 CD/25B6: C8           INY
 CD/25B7: C8           INY
-CD/25B8: D0 AE        BNE $2568
+CD/25B8: D0 AE        BNE Local_CD2568
 CD/25BA: A9 03        LDA #$03
 CD/25BC: 8D 92 CA     STA $CA92
-CD/25BF: 4C 30 26     JMP $2630
+CD/25BF: 4C 30 26     JMP Local_CD2630
 CD/25C2: E2 10        SEP #$10
 CD/25C4: A5 7C        LDA $7C
 CD/25C6: 25 47        AND $47
-CD/25C8: D0 09        BNE $25D3
+CD/25C8: D0 09        BNE Local_CD25D3
 CD/25CA: AD 90 CC     LDA $CC90
 CD/25CD: 18           CLC
 CD/25CE: 77 40        ADC [$40],Y
@@ -78,7 +78,7 @@ CD/25D6: AA           TAX
 CD/25D7: 7B           TDC
 CD/25D8: A8           TAY
 CD/25D9: 8A           TXA
-CD/25DA: 10 2E        BPL $260A
+CD/25DA: 10 2E        BPL Local_CD260A
 CD/25DC: BF 8E F4 CE  LDA $CEF48E,X
 CD/25E0: 8F 02 42 00  STA $004202
 CD/25E4: A5 45        LDA $45
@@ -90,15 +90,15 @@ CD/25ED: C8           INY
 CD/25EE: AF 17 42 00  LDA $004217
 CD/25F2: 49 FF        EOR #$FF
 CD/25F4: 1A           INC
-CD/25F5: 10 0A        BPL $2601
+CD/25F5: 10 0A        BPL Local_CD2601
 CD/25F7: 99 FC 09     STA $09FC,Y
 CD/25FA: A9 FF        LDA #$FF
 CD/25FC: 99 FD 09     STA $09FD,Y
-CD/25FF: 80 21        BRA $2622
+CD/25FF: 80 21        BRA Local_CD2622
 CD/2601: 99 FC 09     STA $09FC,Y
 CD/2604: 7B           TDC
 CD/2605: 99 FD 09     STA $09FD,Y
-CD/2608: 80 18        BRA $2622
+CD/2608: 80 18        BRA Local_CD2622
 CD/260A: BF 8E F4 CE  LDA $CEF48E,X
 CD/260E: 8F 02 42 00  STA $004202
 CD/2612: A5 45        LDA $45
@@ -108,13 +108,13 @@ CD/2619: C8           INY
 CD/261A: C8           INY
 CD/261B: C8           INY
 CD/261C: AF 17 42 00  LDA $004217
-CD/2620: 80 D3        BRA $25F5
+CD/2620: 80 D3        BRA Local_CD25F5
 CD/2622: 8A           TXA
 CD/2623: 18           CLC
 CD/2624: 69 08        ADC #$08
 CD/2626: AA           TAX
 CD/2627: C0 80        CPY #$80
-CD/2629: D0 AE        BNE $25D9
+CD/2629: D0 AE        BNE Local_CD25D9
 CD/262B: A9 02        LDA #$02
 CD/262D: 8D 92 CA     STA $CA92
 CD/2630: C2 10        REP #$10
@@ -137,7 +137,7 @@ CD/264F: 84 40        STY $40
 CD/2651: AD D2 99     LDA $99D2
 CD/2654: 29 7F        AND #$7F
 CD/2656: C9 01        CMP #$01
-CD/2658: D0 05        BNE $265F
+CD/2658: D0 05        BNE Local_CD265F
 CD/265A: 7B           TDC
 CD/265B: AA           TAX
 CD/265C: 8E 91 CC     STX $CC91

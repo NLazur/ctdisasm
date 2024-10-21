@@ -18,7 +18,7 @@ FD/8252: 05 05        ORA $05
 FD/8254: 0E 0E 07     ASL $070E
 FD/8257: 07 00        ORA [$00]
 FD/8259: 03 03        ORA $03,S
-FD/825B: 80 80        BRA $81DD
+FD/825B: 80 80        BRA Local_FD81DD
 FD/825D: 03 03        ORA $03,S
 FD/825F: 11 01        ORA ($01),Y
 FD/8261: 28           PLP
@@ -31,8 +31,8 @@ FD/8273: 7F 7F 0F 78  ADC $780F7F,X
 FD/8277: 0F F0 F0 10  ORA $10F0F0
 FD/827B: 00 15        BRK $15
 FD/827D: 02 B2        COP $B2
-FD/827F: F0 04        BEQ $8285
-FD/8281: B0 C1        BCS $8244
+FD/827F: F0 04        BEQ Local_FD8285
+FD/8281: B0 C1        BCS Local_FD8244
 FD/8283: 00 FF        BRK $FF
 FD/8285: 76 FE        ROR $FE,X
 FD/8287: 8D FD F4     STA $F4FD
@@ -43,7 +43,7 @@ FD/8292: C0 C0        CPY #$C0
 FD/8294: 71 70        ADC ($70),Y
 FD/8296: 86 20        STX $20
 FD/8298: 84 F0        STY $F0
-FD/829A: F0 E1        BEQ $827D
+FD/829A: F0 E1        BEQ Local_FD827D
 FD/829C: E1 86        SBC ($86,X)
 FD/829E: 12 F8        ORA ($F8)
 FD/82A0: F8           SED
@@ -55,5 +55,5 @@ FD/82AC: FF 26 FF 71  SBC $71FF26,X
 FD/82B0: F1 FC        SBC ($FC),Y
 FD/82B2: F4 20 EC     PEA $EC20
 FD/82B5: 0C E7 00     TSB $00E7
-FD/82B8: 80 47        BRA $8301
+FD/82B8: 80 47        BRA Local_FD8301
 FD/82BA: 40           RTI

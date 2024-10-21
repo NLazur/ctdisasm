@@ -40,5 +40,5 @@ FD/E699: E2 20        SEP #$20
 FD/E69B: E8           INX
 FD/E69C: E8           INX
 FD/E69D: 88           DEY
-FD/E69E: D0 B3        BNE $E653
+FD/E69E: D0 B3        BNE Local_FDE653
 FD/E6A0: 60           RTS

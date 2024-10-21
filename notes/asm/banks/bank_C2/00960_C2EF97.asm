@@ -3,9 +3,9 @@ Routine_C2EF97:
 C2/EF97: 08           PHP
 C2/EF98: E2 20        SEP #$20
 C2/EF9A: 24 88        BIT $88
-C2/EF9C: 30 12        BMI $EFB0
+C2/EF9C: 30 12        BMI Local_C2EFB0
 C2/EF9E: C9 FF        CMP #$FF
-C2/EFA0: D0 0E        BNE $EFB0
+C2/EFA0: D0 0E        BNE Local_C2EFB0
 C2/EFA2: EB           XBA
 C2/EFA3: A9 FF        LDA #$FF
 C2/EFA5: 9F C0 FF 7D  STA $7DFFC0,X

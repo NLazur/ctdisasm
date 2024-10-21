@@ -13,8 +13,8 @@ D0/004D: 0C 27 38     TSB $3827
 D0/0050: 00 00        BRK $00
 D0/0052: 00 00        BRK $00
 D0/0054: 00 00        BRK $00
-D0/0056: 10 10        BPL $0068
-D0/0058: 80 A0        BRA $FFFA
+D0/0056: 10 10        BPL Local_D00068
+D0/0058: 80 A0        BRA Local_D0FFFA
 D0/005A: 00 C0        BRK $C0
 D0/005C: A0 60 E8     LDY #$E860
 D0/005F: 18           CLC
@@ -28,9 +28,9 @@ D0/006B: 0A           ASL
 D0/006C: 13 1C        ORA ($1C,S),Y
 D0/006E: CF F0 00 00  CMP $0000F0
 D0/0072: 00 00        BRK $00
-D0/0074: 80 88        BRA $FFFE
+D0/0074: 80 88        BRA Local_D0FFFE
 D0/0076: A0 B0 30     LDY #$30B0
-D0/0079: D0 40        BNE $00BB
+D0/0079: D0 40        BNE Local_D000BB
 D0/007B: A0 90 70     LDY #$7090
 D0/007E: E6 1E        INC $1E
 D0/0080: 00 00        BRK $00
@@ -63,7 +63,7 @@ D0/00B4: 00 00        BRK $00
 D0/00B6: 00 00        BRK $00
 D0/00B8: 00 00        BRK $00
 D0/00BA: 00 00        BRK $00
-D0/00BC: 80 80        BRA $003E
+D0/00BC: 80 80        BRA Local_D0003E
 D0/00BE: E8           INX
 D0/00BF: 18           CLC
 D0/00C0: 01 01        ORA ($01,X)
@@ -78,5 +78,5 @@ D0/00D2: 00 00        BRK $00
 D0/00D4: 00 00        BRK $00
 D0/00D6: 00 00        BRK $00
 D0/00D8: 00 00        BRK $00
-D0/00DA: 80 80        BRA $005C
+D0/00DA: 80 80        BRA Local_D0005C
 D0/00DC: 40           RTI

@@ -1,8 +1,8 @@
 ; Bank: FE | Start Address: A325
 Routine_FEA325:
 FE/A325: 94 54        STY $54,X
-FE/A327: 80 00        BRA $A329
-FE/A329: 90 00        BCC $A32B
+FE/A327: 80 00        BRA Local_FEA329
+FE/A329: 90 00        BCC Local_FEA32B
 FE/A32B: 4D 83 82     EOR $8283
 FE/A32E: 14 FF        TRB $FF
 FE/A330: 44 01 07     MVP $01,$07
@@ -20,12 +20,12 @@ FE/A34D: A0 BF 0C     LDY #$0CBF
 FE/A350: F2 64        SBC ($64)
 FE/A352: 12 E0        ORA ($E0)
 FE/A354: 57 1C        EOR [$1C],Y
-FE/A356: 5C 3A D8 80  JMP $80D83A
+FE/A356: 5C 3A D8 80  JMP Routine_80D83A
 FE/A35A: 13 02        ORA ($02,S),Y
 FE/A35C: 04 67        TSB $67
 FE/A35E: 1C 06 02     TRB $0206
 FE/A361: 6D 00 3E     ADC $3E00
-FE/A364: B0 E0        BCS $A346
+FE/A364: B0 E0        BCS Local_FEA346
 FE/A366: 33 10        AND ($10,S),Y
 FE/A368: 24 97        BIT $97
 FE/A36A: 65 11        ADC $11

@@ -8,7 +8,7 @@ C3/2A23: 09 4E 7B     ORA #$7B4E
 C3/2A26: 00 FE        BRK $FE
 C3/2A28: 05 65        ORA $65
 C3/2A2A: CA           DEX
-C3/2A2B: F0 EE        BEQ $2A1B
+C3/2A2B: F0 EE        BEQ Local_C32A1B
 C3/2A2D: 05 15        ORA $15
 C3/2A2F: C3 21        CMP $21,S
 C3/2A31: E5 4E        SBC $4E

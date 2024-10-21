@@ -1,7 +1,7 @@
 ; Bank: D1 | Start Address: FA68
 Routine_D1FA68:
 D1/FA68: A5 0F        LDA $0F
-D1/FA6A: 22 B2 38 CD  JSR $CD38B2
+D1/FA6A: 22 B2 38 CD  JSR Routine_CD38B2
 D1/FA6E: A5 15        LDA $15
 D1/FA70: 38           SEC
 D1/FA71: E5 13        SBC $13
@@ -23,7 +23,7 @@ D1/FA8A: EB           XBA
 D1/FA8B: AA           TAX
 D1/FA8C: A8           TAY
 D1/FA8D: A5 45        LDA $45
-D1/FA8F: F0 19        BEQ $FAAA
+D1/FA8F: F0 19        BEQ Local_D1FAAA
 D1/FA91: 18           CLC
 D1/FA92: 8A           TXA
 D1/FA93: 65 03        ADC $03
@@ -36,9 +36,9 @@ D1/FA9D: 8D 7F 21     STA $217F
 D1/FAA0: AD 7F 21     LDA $217F
 D1/FAA3: AD 7F 21     LDA $217F
 D1/FAA6: C6 45        DEC $45
-D1/FAA8: D0 E8        BNE $FA92
+D1/FAA8: D0 E8        BNE Local_D1FA92
 D1/FAAA: A5 47        LDA $47
-D1/FAAC: F0 19        BEQ $FAC7
+D1/FAAC: F0 19        BEQ Local_D1FAC7
 D1/FAAE: 18           CLC
 D1/FAAF: 8A           TXA
 D1/FAB0: 65 03        ADC $03
@@ -51,9 +51,9 @@ D1/FABA: 8D 7F 21     STA $217F
 D1/FABD: AD 7F 21     LDA $217F
 D1/FAC0: AD 7F 21     LDA $217F
 D1/FAC3: C6 47        DEC $47
-D1/FAC5: D0 E8        BNE $FAAF
+D1/FAC5: D0 E8        BNE Local_D1FAAF
 D1/FAC7: A5 49        LDA $49
-D1/FAC9: F0 1A        BEQ $FAE5
+D1/FAC9: F0 1A        BEQ Local_D1FAE5
 D1/FACB: 18           CLC
 D1/FACC: 8A           TXA
 D1/FACD: 65 05        ADC $05
@@ -66,7 +66,7 @@ D1/FAD7: 8D 7F 21     STA $217F
 D1/FADA: AD 7F 21     LDA $217F
 D1/FADD: AD 7F 21     LDA $217F
 D1/FAE0: C6 49        DEC $49
-D1/FAE2: D0 E8        BNE $FACC
+D1/FAE2: D0 E8        BNE Local_D1FACC
 D1/FAE4: 7B           TDC
 D1/FAE5: E2 20        SEP #$20
 D1/FAE7: 60           RTS

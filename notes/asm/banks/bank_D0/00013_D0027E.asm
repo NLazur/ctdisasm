@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 027E
 Routine_D0027E:
-D0/027E: 80 80        BRA $0200
-D0/0280: 22 23 05 06  JSR $060523
+D0/027E: 80 80        BRA Local_D00200
+D0/0280: 22 23 05 06  JSR Routine_060523
 D0/0284: 0B           PHD
 D0/0285: 0C 07 04     TSB $0407
 D0/0288: 03 04        ORA $04,S
@@ -10,9 +10,9 @@ D0/028B: 1C 0F 0C     TRB $0C0F
 D0/028E: 06 07        ASL $07
 D0/0290: A0 A0 20     LDY #$20A0
 D0/0293: A0 E0 70     LDY #$70E0
-D0/0296: D0 30        BNE $02C8
-D0/0298: F0 10        BEQ $02AA
-D0/029A: D0 30        BNE $02CC
+D0/0296: D0 30        BNE Local_D002C8
+D0/0298: F0 10        BEQ Local_D002AA
+D0/029A: D0 30        BNE Local_D002CC
 D0/029C: A0 60 40     LDY #$4060
 D0/029F: C0 13        CPY #$13
 D0/02A1: 12 0D        ORA ($0D)
@@ -28,8 +28,8 @@ D0/02B4: B8           CLV
 D0/02B5: 78           SEI
 D0/02B6: D8           CLD
 D0/02B7: 38           SEC
-D0/02B8: D0 30        BNE $02EA
-D0/02BA: D0 30        BNE $02EC
+D0/02B8: D0 30        BNE Local_D002EA
+D0/02BA: D0 30        BNE Local_D002EC
 D0/02BC: E0 20 40     CPX #$4020
 D0/02BF: C0 04        CPY #$04
 D0/02C1: 07 07        ORA [$07]
@@ -54,8 +54,8 @@ D0/02E9: 00 00        BRK $00
 D0/02EB: 00 00        BRK $00
 D0/02ED: 00 00        BRK $00
 D0/02EF: 00 F0        BRK $F0
-D0/02F1: F0 F0        BEQ $02E3
-D0/02F3: F0 E0        BEQ $02D5
+D0/02F1: F0 F0        BEQ Local_D002E3
+D0/02F3: F0 E0        BEQ Local_D002D5
 D0/02F5: E0 C0 C0     CPX #$C0C0
 D0/02F8: 00 00        BRK $00
 D0/02FA: 00 00        BRK $00
@@ -65,7 +65,7 @@ D0/0300: FC FC FC     JSR ($FCFC,X)
 D0/0303: FC D8 F8     JSR ($F8D8,X)
 D0/0306: 98           TYA
 D0/0307: F8           SED
-D0/0308: F0 F0        BEQ $02FA
+D0/0308: F0 F0        BEQ Local_D002FA
 D0/030A: C0 C0        CPY #$C0
 D0/030C: 00 00        BRK $00
 D0/030E: 00 00        BRK $00
@@ -83,7 +83,7 @@ D0/0324: 00 00        BRK $00
 D0/0326: 00 00        BRK $00
 D0/0328: 00 00        BRK $00
 D0/032A: 00 00        BRK $00
-D0/032C: 80 80        BRA $02AE
+D0/032C: 80 80        BRA Local_D002AE
 D0/032E: A0 60 00     LDY #$0060
 D0/0331: 00 00        BRK $00
 D0/0333: 00 01        BRK $01
@@ -96,6 +96,6 @@ D0/0340: 00 00        BRK $00
 D0/0342: 00 00        BRK $00
 D0/0344: 00 00        BRK $00
 D0/0346: 00 00        BRK $00
-D0/0348: 80 80        BRA $02CA
-D0/034A: 80 80        BRA $02CC
+D0/0348: 80 80        BRA Local_D002CA
+D0/034A: 80 80        BRA Local_D002CC
 D0/034C: 60           RTS

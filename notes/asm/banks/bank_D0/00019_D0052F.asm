@@ -1,13 +1,13 @@
 ; Bank: D0 | Start Address: 052F
 Routine_D0052F:
-D0/052F: 90 00        BCC $0531
+D0/052F: 90 00        BCC Local_D00531
 D0/0531: 00 00        BRK $00
 D0/0533: 00 00        BRK $00
 D0/0535: 00 00        BRK $00
 D0/0537: 00 C4        BRK $C4
 D0/0539: 84 00        STY $00
 D0/053B: 08           PHP
-D0/053C: F0 C0        BEQ $04FE
+D0/053C: F0 C0        BEQ Local_D004FE
 D0/053E: 00 00        BRK $00
 D0/0540: 00 00        BRK $00
 D0/0542: 00 00        BRK $00
@@ -24,11 +24,11 @@ D0/055C: 15 26        ORA $26,X
 D0/055E: 17 27        ORA [$27],Y
 D0/0560: 00 00        BRK $00
 D0/0562: 0E 1F 3F     ASL $3F1F
-D0/0565: 30 38        BMI $059F
+D0/0565: 30 38        BMI Local_D0059F
 D0/0567: 38           SEC
 D0/0568: 00 00        BRK $00
 D0/056A: 00 00        BRK $00
-D0/056C: 70 70        BVS $05DE
+D0/056C: 70 70        BVS Local_D005DE
 D0/056E: 48           PHA
 D0/056F: B8           CLV
 D0/0570: 14 0C        TRB $0C
@@ -46,9 +46,9 @@ D0/0587: AF 4E AF 5D  LDA $5DAF4E
 D0/058B: 9E 47 87     STZ $8747,X
 D0/058E: A1 C1        LDA ($C1,X)
 D0/0590: 3E 7F FF     ROL $FF7F,X
-D0/0593: D0 D0        BNE $0565
+D0/0593: D0 D0        BNE Local_D00565
 D0/0595: E0 F8 FE     CPX #$FEF8
-D0/0598: 4C 7C 7A     JMP $7A7C
+D0/0598: 4C 7C 7A     JMP Local_D07A7C
 D0/059B: 86 0D        STX $0D
 D0/059D: 03 F6        ORA $F6,S
 D0/059F: F1 72        SBC ($72),Y

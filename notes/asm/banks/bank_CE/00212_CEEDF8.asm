@@ -2,7 +2,7 @@
 Routine_CEEDF8:
 CE/EDF8: 8A           TXA
 CE/EDF9: C9 FF        CMP #$FF
-CE/EDFB: D0 16        BNE $EE13
+CE/EDFB: D0 16        BNE Local_CEEE13
 CE/EDFD: C2 20        REP #$20
 CE/EDFF: A9 FF 00     LDA #$00FF
 CE/EE02: 99 E1 C4     STA $C4E1,Y
@@ -11,12 +11,12 @@ CE/EE06: C8           INY
 CE/EE07: C8           INY
 CE/EE08: C8           INY
 CE/EE09: C0 82 03     CPY #$0382
-CE/EE0C: 90 F4        BCC $EE02
+CE/EE0C: 90 F4        BCC Local_CEEE02
 CE/EE0E: 7B           TDC
 CE/EE0F: E2 20        SEP #$20
-CE/EE11: 80 25        BRA $EE38
+CE/EE11: 80 25        BRA Local_CEEE38
 CE/EE13: C9 00        CMP #$00
-CE/EE15: D0 15        BNE $EE2C
+CE/EE15: D0 15        BNE Local_CEEE2C
 CE/EE17: 99 E1 C4     STA $C4E1,Y
 CE/EE1A: 9E E4 C4     STZ $C4E4,X
 CE/EE1D: E8           INX

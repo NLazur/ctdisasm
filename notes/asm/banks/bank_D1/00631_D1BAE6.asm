@@ -8,7 +8,7 @@ D1/BAEE: 18           CLC
 D1/BAEF: 58           CLI
 D1/BAF0: 18           CLC
 D1/BAF1: 58           CLI
-D1/BAF2: 20 D8 20     JSR $20D8
+D1/BAF2: 20 D8 20     JSR Local_D120D8
 D1/BAF5: D8           CLD
 D1/BAF6: 19 1A 2D     ORA $2D1A,Y
 D1/BAF9: 6D 21 22     ADC $2221
@@ -24,7 +24,7 @@ D1/BB10: AD ED 2D     LDA $2DED
 D1/BB13: 6D AD ED     ADC $EDAD
 D1/BB16: 18           CLC
 D1/BB17: 58           CLI
-D1/BB18: 20 D8 2D     JSR $2DD8
+D1/BB18: 20 D8 2D     JSR Local_D12DD8
 D1/BB1B: 6D AD ED     ADC $EDAD
 D1/BB1E: 01 60        ORA ($60,X)
 D1/BB20: C0 60        CPY #$60
@@ -36,6 +36,6 @@ D1/BB2A: 06 0C        ASL $0C
 D1/BB2C: C0 18        CPY #$18
 D1/BB2E: C0 DB        CPY #$DB
 D1/BB30: 00 C3        BRK $C3
-D1/BB32: 30 00        BMI $BB34
-D1/BB34: 30 00        BMI $BB36
+D1/BB32: 30 00        BMI Local_D1BB34
+D1/BB34: 30 00        BMI Local_D1BB36
 D1/BB36: 60           RTS

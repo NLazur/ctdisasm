@@ -10,5 +10,5 @@ FE/78AA: 25 26        AND $26
 FE/78AC: B4 20        LDY $20,X
 FE/78AE: E0 00        CPX #$00
 FE/78B0: 43 4E        EOR $4E,S
-FE/78B2: 30 B5        BMI $7869
+FE/78B2: 30 B5        BMI Local_FE7869
 FE/78B4: 40           RTI

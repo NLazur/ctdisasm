@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 5E1C
 Routine_C65E1C:
-C6/5E1C: 90 20        BCC $5E3E
+C6/5E1C: 90 20        BCC Local_C65E3E
 C6/5E1E: BA           TSX
 C6/5E1F: 08           PHP
 C6/5E20: 9C 05 1C     STZ $1C05
@@ -8,7 +8,7 @@ C6/5E23: 07 50        ORA [$50]
 C6/5E25: 58           CLI
 C6/5E26: 31 40        AND ($40),Y
 C6/5E28: 1D 41 1D     ORA $1D41,X
-C6/5E2B: 50 00        BVC $5E2D
+C6/5E2B: 50 00        BVC Local_C65E2D
 C6/5E2D: 1D 51 1D     ORA $1D51,X
 C6/5E30: 42 1D        WDM $1D
 C6/5E32: 43 1D        EOR $1D,S

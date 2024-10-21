@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 798E
 Routine_D0798E:
-D0/798E: 30 30        BMI $79C0
+D0/798E: 30 30        BMI Local_D079C0
 D0/7990: 38           SEC
 D0/7991: 38           SEC
 D0/7992: 1E 1E 0F     ASL $0F1E,X

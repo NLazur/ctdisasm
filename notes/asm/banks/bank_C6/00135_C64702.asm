@@ -16,16 +16,16 @@ C6/4716: 02 30        COP $30
 C6/4718: 06 00        ASL $00
 C6/471A: E0 0C        CPX #$0C
 C6/471C: E1 0C        SBC ($0C,X)
-C6/471E: F0 0C        BEQ $472C
+C6/471E: F0 0C        BEQ Local_C6472C
 C6/4720: 0A           ASL
 C6/4721: F1 70        SBC ($70),Y
-C6/4723: 10 F2        BPL $4717
-C6/4725: 70 00        BVS $4727
+C6/4723: 10 F2        BPL Local_C64717
+C6/4725: 70 00        BVS Local_C64727
 C6/4727: E4 0C        CPX $0C
 C6/4729: E5 0C        SBC $0C
 C6/472B: 08           PHP
 C6/472C: F4 0C F5     PEA $F50C
-C6/472F: 10 20        BPL $4751
+C6/472F: 10 20        BPL Local_C64751
 C6/4731: D6 0C        DEC $0C,X
 C6/4733: E6 0C        INC $0C
 C6/4735: 00 E7        BRK $E7

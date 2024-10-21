@@ -9,8 +9,8 @@ CD/1512: 0A           ASL
 CD/1513: AA           TAX
 CD/1514: A7 53        LDA [$53]
 CD/1516: 29 00 20     AND #$2000
-CD/1519: F0 0A        BEQ $1525
-CD/151B: 20 88 14     JSR $1488
+CD/1519: F0 0A        BEQ Local_CD1525
+CD/151B: 20 88 14     JSR Local_CD1488
 CD/151E: 98           TYA
 CD/151F: 18           CLC
 CD/1520: 69 20 00     ADC #$0020

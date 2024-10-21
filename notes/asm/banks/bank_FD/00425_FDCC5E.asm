@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: CC5E
 Routine_FDCC5E:
 FD/CC5E: C9 10        CMP #$10
-FD/CC60: B0 24        BCS $CC86
+FD/CC60: B0 24        BCS Local_FDCC86
 FD/CC62: 85 D9        STA $D9
 FD/CC64: 09 80        ORA #$80
 FD/CC66: 99 85 10     STA $1085,Y

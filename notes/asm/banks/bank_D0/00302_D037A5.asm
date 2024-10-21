@@ -10,8 +10,8 @@ D0/37B4: 02 03        COP $03
 D0/37B6: 01 01        ORA ($01,X)
 D0/37B8: E8           INX
 D0/37B9: 18           CLC
-D0/37BA: D0 30        BNE $37EC
-D0/37BC: D0 30        BNE $37EE
+D0/37BA: D0 30        BNE Local_D037EC
+D0/37BC: D0 30        BNE Local_D037EE
 D0/37BE: A0 60        LDY #$60
 D0/37C0: A0 60        LDY #$60
 D0/37C2: 40           RTI

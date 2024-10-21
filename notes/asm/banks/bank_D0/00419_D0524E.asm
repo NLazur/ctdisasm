@@ -8,8 +8,8 @@ D0/5259: CE E4 1C     DEC $1CE4
 D0/525C: 9C 7C 3C     STZ $3C7C
 D0/525F: F4 0D 0B     PEA $0B0D
 D0/5262: 2B           PLD
-D0/5263: 2C 4F 58     BIT $584F
-D0/5266: 2C 3B 2F     BIT $2F3B
+D0/5263: 2C 4F 58     BIT Local_D0584F
+D0/5266: 2C 3B 2F     BIT Local_D02F3B
 D0/5269: 37 12        AND [$12],Y
 D0/526B: 1D 08 0F     ORA $0F08,X
 D0/526E: 0A           ASL
@@ -20,7 +20,7 @@ D0/5277: C6 C0        DEC $C0
 D0/5279: AC 24 DC     LDY $DC24
 D0/527C: 48           PHA
 D0/527D: B8           CLV
-D0/527E: 90 70        BCC $52F0
+D0/527E: 90 70        BCC Local_D052F0
 D0/5280: 02 03        COP $03
 D0/5282: 09 0A        ORA #$0A
 D0/5284: 0E 0F 03     ASL $030F
@@ -35,5 +35,5 @@ D0/5294: 88           DEY
 D0/5295: 48           PHA
 D0/5296: C8           INY
 D0/5297: 48           PHA
-D0/5298: B0 F0        BCS $528A
+D0/5298: B0 F0        BCS Local_D0528A
 D0/529A: 40           RTI

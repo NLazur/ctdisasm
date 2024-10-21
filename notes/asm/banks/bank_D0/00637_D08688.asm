@@ -1,11 +1,11 @@
 ; Bank: D0 | Start Address: 8688
 Routine_D08688:
-D0/8688: 80 80        BRA $860A
+D0/8688: 80 80        BRA Local_D0860A
 D0/868A: 00 00        BRK $00
 D0/868C: 00 00        BRK $00
 D0/868E: 00 00        BRK $00
 D0/8690: 98           TYA
-D0/8691: 50 70        BVC $8703
+D0/8691: 50 70        BVC Local_D08703
 D0/8693: E0 80 00     CPX #$0080
 D0/8696: 00 00        BRK $00
 D0/8698: 01 02        ORA ($02,X)

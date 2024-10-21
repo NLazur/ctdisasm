@@ -1,12 +1,12 @@
 ; Bank: FF | Start Address: 8EC8
 Routine_FF8EC8:
-FF/8EC8: 70 20        BVS $8EEA
+FF/8EC8: 70 20        BVS Local_FF8EEA
 FF/8ECA: 38           SEC
-FF/8ECB: 10 1C        BPL $8EE9
+FF/8ECB: 10 1C        BPL Local_FF8EE9
 FF/8ECD: 08           PHP
 FF/8ECE: 16 0C        ASL $0C,X
-FF/8ED0: 3C 00 5A     BIT $5A00,X
-FF/8ED3: 3C 3C 7E     BIT $7E3C,X
+FF/8ED0: 3C 00 5A     BIT Local_FF5A00,X
+FF/8ED3: 3C 3C 7E     BIT Local_FF7E3C,X
 FF/8ED6: DB           STP
 FF/8ED7: 7E 5A FF     ROR $FF5A,X
 FF/8EDA: E7 99        SBC [$99]
@@ -26,7 +26,7 @@ FF/8EF6: FB           XCE
 FF/8EF7: 46 E7        LSR $E7
 FF/8EF9: 42 BD        WDM $BD
 FF/8EFB: 66 5A        ROR $5A
-FF/8EFD: 3C 3C 00     BIT $003C,X
+FF/8EFD: 3C 3C 00     BIT Local_FF003C,X
 FF/8F00: 00 00        BRK $00
 FF/8F02: 00 00        BRK $00
 FF/8F04: 73 62        ADC ($62,S),Y
@@ -63,8 +63,8 @@ FF/8F49: FE A5 FE     INC $FEA5,X
 FF/8F4C: FA           PLX
 FF/8F4D: 7C 7C 00     JMP ($007C,X)
 FF/8F50: 18           CLC
-FF/8F51: 10 18        BPL $8F6B
-FF/8F53: 10 FF        BPL $8F54
+FF/8F51: 10 18        BPL Local_FF8F6B
+FF/8F53: 10 FF        BPL Local_FF8F54
 FF/8F55: FE FE 7C     INC $7CFE,X
 FF/8F58: 3A           DEC
 FF/8F59: 7C 3A 6C     JMP ($6C3A,X)
@@ -421,5 +421,5 @@ FF/9217: F8           SED
 FF/9218: 84 78        STY $78
 FF/921A: C4 38        CPY $38
 FF/921C: 64 18        STZ $18
-FF/921E: 3C 00 60     BIT $6000,X
+FF/921E: 3C 00 60     BIT Local_FF6000,X
 FF/9221: 60           RTS

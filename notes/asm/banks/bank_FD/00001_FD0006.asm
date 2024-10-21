@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 0006
 Routine_FD0006:
-FD/0006: 10 28        BPL $0030
+FD/0006: 10 28        BPL Local_FD0030
 FD/0008: 38           SEC
 FD/0009: 44 2C EA     MVP $2C,$EA
 FD/000C: 00 84        BRK $84
@@ -30,5 +30,5 @@ FD/0036: AA           TAX
 FD/0037: 7C 44 20     JMP ($2044,X)
 FD/003A: 00 00        BRK $00
 FD/003C: FC 04 06     JSR ($0604,X)
-FD/003F: 20 00 86     JSR $8600
+FD/003F: 20 00 86     JSR Local_FD8600
 FD/0042: 40           RTI

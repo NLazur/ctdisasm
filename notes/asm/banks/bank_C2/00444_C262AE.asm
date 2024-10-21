@@ -26,7 +26,7 @@ C2/62DC: A8           TAY
 C2/62DD: E2 20        SEP #$20
 C2/62DF: B7 13        LDA [$13],Y
 C2/62E1: 46 02        LSR $02
-C2/62E3: B0 05        BCS $62EA
+C2/62E3: B0 05        BCS Local_C262EA
 C2/62E5: 4A           LSR
 C2/62E6: 4A           LSR
 C2/62E7: 4A           LSR

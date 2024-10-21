@@ -7,7 +7,7 @@ FD/B367: 86 02        STX $02
 FD/B369: 86 04        STX $04
 FD/B36B: B9 FF AE     LDA $AEFF,Y
 FD/B36E: C9 FF        CMP #$FF
-FD/B370: F0 78        BEQ $B3EA
+FD/B370: F0 78        BEQ Local_FDB3EA
 FD/B372: C2 20        REP #$20
 FD/B374: 98           TYA
 FD/B375: EB           XBA
@@ -18,7 +18,7 @@ FD/B37A: 7B           TDC
 FD/B37B: E2 20        SEP #$20
 FD/B37D: BD 79 5E     LDA $5E79,X
 FD/B380: 89 80        BIT #$80
-FD/B382: F0 1D        BEQ $B3A1
+FD/B382: F0 1D        BEQ Local_FDB3A1
 FD/B384: 7B           TDC
 FD/B385: BD 7B 5E     LDA $5E7B,X
 FD/B388: 85 00        STA $00
@@ -37,10 +37,10 @@ FD/B39E: 9D 4A 5E     STA $5E4A,X
 FD/B3A1: A6 02        LDX $02
 FD/B3A3: BD 79 5E     LDA $5E79,X
 FD/B3A6: 89 40        BIT #$40
-FD/B3A8: F0 00        BEQ $B3AA
+FD/B3A8: F0 00        BEQ Local_FDB3AA
 FD/B3AA: BD 57 5E     LDA $5E57,X
 FD/B3AD: C9 A0        CMP #$A0
-FD/B3AF: D0 18        BNE $B3C9
+FD/B3AF: D0 18        BNE Local_FDB3C9
 FD/B3B1: C2 20        REP #$20
 FD/B3B3: BD 32 5E     LDA $5E32,X
 FD/B3B6: 4A           LSR
@@ -48,21 +48,21 @@ FD/B3B7: 4A           LSR
 FD/B3B8: 18           CLC
 FD/B3B9: 7D 32 5E     ADC $5E32,X
 FD/B3BC: C9 E7 03     CMP #$03E7
-FD/B3BF: 90 03        BCC $B3C4
+FD/B3BF: 90 03        BCC Local_FDB3C4
 FD/B3C1: A9 E7 03     LDA #$03E7
 FD/B3C4: 9D 32 5E     STA $5E32,X
-FD/B3C7: 80 1E        BRA $B3E7
+FD/B3C7: 80 1E        BRA Local_FDB3E7
 FD/B3C9: E2 20        SEP #$20
 FD/B3CB: BD 57 5E     LDA $5E57,X
 FD/B3CE: C9 A1        CMP #$A1
-FD/B3D0: D0 15        BNE $B3E7
+FD/B3D0: D0 15        BNE Local_FDB3E7
 FD/B3D2: C2 20        REP #$20
 FD/B3D4: BD 32 5E     LDA $5E32,X
 FD/B3D7: 4A           LSR
 FD/B3D8: 18           CLC
 FD/B3D9: 7D 32 5E     ADC $5E32,X
 FD/B3DC: C9 E7 03     CMP #$03E7
-FD/B3DF: 90 03        BCC $B3E4
+FD/B3DF: 90 03        BCC Local_FDB3E4
 FD/B3E1: A9 E7 03     LDA #$03E7
 FD/B3E4: 9D 32 5E     STA $5E32,X
 FD/B3E7: 7B           TDC

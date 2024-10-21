@@ -5,9 +5,9 @@ D0/0A4E: 00 00        BRK $00
 D0/0A50: 03 00        ORA $00,S
 D0/0A52: 00 00        BRK $00
 D0/0A54: 00 00        BRK $00
-D0/0A56: 80 80        BRA $09D8
+D0/0A56: 80 80        BRA Local_D009D8
 D0/0A58: 00 01        BRK $01
-D0/0A5A: 20 20 00     JSR $0020
+D0/0A5A: 20 20 00     JSR Local_D00020
 D0/0A5D: 02 00        COP $00
 D0/0A5F: 00 00        BRK $00
 D0/0A61: 00 80        BRK $80

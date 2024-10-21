@@ -190,5 +190,5 @@ FD/F177: E2 20        SEP #$20
 FD/F179: E8           INX
 FD/F17A: E8           INX
 FD/F17B: E0 40 00     CPX #$0040
-FD/F17E: D0 A5        BNE $F125
+FD/F17E: D0 A5        BNE Local_FDF125
 FD/F180: 60           RTS

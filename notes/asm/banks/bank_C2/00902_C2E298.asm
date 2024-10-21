@@ -6,13 +6,13 @@ C2/E29D: E2 A0        SEP #$A0
 C2/E29F: E2 AD        SEP #$AD
 C2/E2A1: 09 0F        ORA #$0F
 C2/E2A3: 3A           DEC
-C2/E2A4: 10 0E        BPL $E2B4
+C2/E2A4: 10 0E        BPL Local_C2E2B4
 C2/E2A6: A9 07        LDA #$07
-C2/E2A8: 80 0A        BRA $E2B4
+C2/E2A8: 80 0A        BRA Local_C2E2B4
 C2/E2AA: AD 09 0F     LDA $0F09
 C2/E2AD: 1A           INC
 C2/E2AE: C9 08        CMP #$08
-C2/E2B0: 90 02        BCC $E2B4
+C2/E2B0: 90 02        BCC Local_C2E2B4
 C2/E2B2: A9 00        LDA #$00
 C2/E2B4: 8D 09 0F     STA $0F09
 C2/E2B7: 8F 03 42 00  STA $004203

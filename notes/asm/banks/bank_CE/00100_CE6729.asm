@@ -14,7 +14,7 @@ CE/6745: 7A           PLY
 CE/6746: 99 0B A8     STA $A80B,Y
 CE/6749: 04 71        TSB $71
 CE/674B: 00 D9        BRK $D9
-CE/674D: 30 1B        BMI $676A
+CE/674D: 30 1B        BMI Local_CE676A
 CE/674F: 0B           PHD
 CE/6750: 72 03        ADC ($03)
 CE/6752: 73 02        ADC ($02,S),Y
@@ -63,7 +63,7 @@ CE/67B2: D9 30 1B     CMP $1B30,Y
 CE/67B5: 0A           ASL
 CE/67B6: 72 03        ADC ($03)
 CE/67B8: 73 02        ADC ($02,S),Y
-CE/67BA: 20 01 75     JSR $7501
+CE/67BA: 20 01 75     JSR Local_CE7501
 CE/67BD: 0A           ASL
 CE/67BE: 77 20        ADC [$20],Y
 CE/67C0: 0C 02 01     TSB $0102

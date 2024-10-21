@@ -13,8 +13,8 @@ D1/82B6: 13 02        ORA ($02,S),Y
 D1/82B8: 04 9D        TSB $9D
 D1/82BA: 17 91        ORA [$91],Y
 D1/82BC: 8A           TXA
-D1/82BD: 82 91 8A     BRL $D10D51
-D1/82C0: 82 9D 13     BRL $D19660
+D1/82BD: 82 91 8A     BRL Routine_D10D51
+D1/82C0: 82 9D 13     BRL Routine_D19660
 D1/82C3: 91 08        STA ($08),Y
 D1/82C5: A2 FF        LDX #$FF
 D1/82C7: 01 88        ORA ($88,X)
@@ -34,7 +34,7 @@ D1/82E1: 83 93        STA $93,S
 D1/82E3: 13 02        ORA ($02,S),Y
 D1/82E5: 04 CA        TSB $CA
 D1/82E7: 47 83        EOR [$83]
-D1/82E9: B0 41        BCS $832C
+D1/82E9: B0 41        BCS Local_D1832C
 D1/82EB: CB           WAI
 D1/82EC: F5 82        SBC $82,X
 D1/82EE: 93 04        STA ($04,S),Y
@@ -49,7 +49,7 @@ D1/82FC: 93 13        STA ($13,S),Y
 D1/82FE: 02 44        COP $44
 D1/8300: CA           DEX
 D1/8301: 47 83        EOR [$83]
-D1/8303: B0 41        BCS $8346
+D1/8303: B0 41        BCS Local_D18346
 D1/8305: CB           WAI
 D1/8306: 0F 83 93 04  ORA $049383
 D1/830A: 02 43        COP $43
@@ -63,7 +63,7 @@ D1/8316: 93 13        STA ($13,S),Y
 D1/8318: 02 84        COP $84
 D1/831A: CA           DEX
 D1/831B: 47 83        EOR [$83]
-D1/831D: B0 41        BCS $8360
+D1/831D: B0 41        BCS Local_D18360
 D1/831F: CB           WAI
 D1/8320: 29 83        AND #$83
 D1/8322: 93 04        STA ($04,S),Y
@@ -78,7 +78,7 @@ D1/8330: 93 13        STA ($13,S),Y
 D1/8332: 02 C4        COP $C4
 D1/8334: CA           DEX
 D1/8335: 47 83        EOR [$83]
-D1/8337: B0 41        BCS $837A
+D1/8337: B0 41        BCS Local_D1837A
 D1/8339: CB           WAI
 D1/833A: 43 83        EOR $83,S
 D1/833C: 93 04        STA ($04,S),Y
@@ -99,16 +99,16 @@ D1/8356: 00 00        BRK $00
 D1/8358: CA           DEX
 D1/8359: 78           SEI
 D1/835A: 83 8A        STA $8A,S
-D1/835C: 10 00        BPL $835E
+D1/835C: 10 00        BPL Local_D1835E
 D1/835E: 00 00        BRK $00
 D1/8360: CA           DEX
 D1/8361: 78           SEI
 D1/8362: 83 8A        STA $8A,S
-D1/8364: 20 00 00     JSR $0000
+D1/8364: 20 00 00     JSR Local_D10000
 D1/8367: 00 CA        BRK $CA
 D1/8369: 78           SEI
 D1/836A: 83 8A        STA $8A,S
-D1/836C: 30 00        BMI $836E
+D1/836C: 30 00        BMI Local_D1836E
 D1/836E: 00 00        BRK $00
 D1/8370: CA           DEX
 D1/8371: 78           SEI

@@ -21,12 +21,12 @@ D1/1313: 31 E0        AND ($E0),Y
 D1/1315: 44 01 46     MVP $01,$46
 D1/1318: 01 48        ORA ($48,X)
 D1/131A: 93 00        STA ($00,S),Y
-D1/131C: 80 31        BRA $134F
+D1/131C: 80 31        BRA Local_D1134F
 D1/131E: E0 4A        CPX #$4A
 D1/1320: 01 4C        ORA ($4C,X)
 D1/1322: 01 4E        ORA ($4E,X)
 D1/1324: 0A           ASL
-D1/1325: 10 20        BPL $1347
+D1/1325: 10 20        BPL Local_D11347
 D1/1327: 62 01 64     PER $D1772B
 D1/132A: 01 66        ORA ($66,X)
 D1/132C: A7 00        LDA [$00]
@@ -38,7 +38,7 @@ D1/1334: 24 06        BIT $06
 D1/1336: 18           CLC
 D1/1337: 3B           TSC
 D1/1338: 00 11        BRK $11
-D1/133A: 80 CE        BRA $130A
+D1/133A: 80 CE        BRA Local_D1130A
 D1/133C: 41 D2        EOR ($D2,X)
 D1/133E: 00 FF        BRK $FF
 D1/1340: E2 00        SEP #$00

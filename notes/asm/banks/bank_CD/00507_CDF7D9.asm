@@ -1,9 +1,9 @@
 ; Bank: CD | Start Address: F7D9
 Routine_CDF7D9:
 CD/F7D9: 00 60        BRK $60
-CD/F7DB: 82 61 82     BRL $CD7A3F
+CD/F7DB: 82 61 82     BRL Routine_CD7A3F
 CD/F7DE: 62 82 63     PER $CD5B63
-CD/F7E1: 82 64 82     BRL $CD7A48
+CD/F7E1: 82 64 82     BRL Routine_CD7A48
 CD/F7E4: 65 82        ADC $82
 CD/F7E6: 66 82        ROR $82
 CD/F7E8: 67 82        ADC [$82]
@@ -11,8 +11,8 @@ CD/F7EA: 08           PHP
 CD/F7EB: 00 1F        BRK $1F
 CD/F7ED: 01 02        ORA ($02,X)
 CD/F7EF: 01 0F        ORA ($0F,X)
-CD/F7F1: 80 0F        BRA $F802
-CD/F7F3: 82 31 82     BRL $CD7A27
+CD/F7F1: 80 0F        BRA Local_CDF802
+CD/F7F3: 82 31 82     BRL Routine_CD7A27
 CD/F7F6: 1A           INC
 CD/F7F7: 00 24        BRK $24
 CD/F7F9: 00 28        BRK $28
@@ -27,8 +27,8 @@ CD/F809: 08           PHP
 CD/F80A: 00 1F        BRK $1F
 CD/F80C: 01 02        ORA ($02,X)
 CD/F80E: 01 0F        ORA ($0F,X)
-CD/F810: 80 0F        BRA $F821
-CD/F812: 82 31 82     BRL $CD7A46
+CD/F810: 80 0F        BRA Local_CDF821
+CD/F812: 82 31 82     BRL Routine_CD7A46
 CD/F815: 1A           INC
 CD/F816: 00 24        BRK $24
 CD/F818: 00 28        BRK $28
@@ -41,7 +41,7 @@ CD/F824: 00 00        BRK $00
 CD/F826: 02 00        COP $00
 CD/F828: 02 02        COP $02
 CD/F82A: 00 01        BRK $01
-CD/F82C: 82 02 82     BRL $CD7A31
+CD/F82C: 82 02 82     BRL Routine_CD7A31
 CD/F82F: 03 82        ORA $82,S
 CD/F831: 04 82        TSB $82
 CD/F833: 05 82        ORA $82
@@ -61,15 +61,15 @@ CD/F84F: 04 00        TSB $00
 CD/F851: 05 00        ORA $00
 CD/F853: 04 00        TSB $00
 CD/F855: 58           CLI
-CD/F856: 82 57 82     BRL $CD7AB0
+CD/F856: 82 57 82     BRL Routine_CD7AB0
 CD/F859: 49 82        EOR #$82
 CD/F85B: 08           PHP
 CD/F85C: 00 0E        BRK $0E
 CD/F85E: 01 08        ORA ($08,X)
 CD/F860: 01 43        ORA ($43,X)
-CD/F862: 80 20        BRA $F884
-CD/F864: 82 21 82     BRL $CD7A88
-CD/F867: 22 82 23 82  JSR $822382
+CD/F862: 80 20        BRA Local_CDF884
+CD/F864: 82 21 82     BRL Routine_CD7A88
+CD/F867: 22 82 23 82  JSR Routine_822382
 CD/F86B: 24 82        BIT $82
 CD/F86D: 25 82        AND $82
 CD/F86F: 26 82        ROL $82
@@ -77,8 +77,8 @@ CD/F871: 27 82        AND [$82]
 CD/F873: 23 03        AND $03,S
 CD/F875: 33 00        AND ($00,S),Y
 CD/F877: 28           PLP
-CD/F878: 80 3C        BRA $F8B6
-CD/F87A: 82 32 82     BRL $CD7AAF
+CD/F878: 80 3C        BRA Local_CDF8B6
+CD/F87A: 82 32 82     BRL Routine_CD7AAF
 CD/F87D: 41 82        EOR ($82,X)
 CD/F87F: 43 82        EOR $82,S
 CD/F881: 42 82        WDM $82

@@ -11,7 +11,7 @@ C1/B6D9: E5 14        SBC $14
 C1/B6DB: AA           TAX
 C1/B6DC: BD EF 93     LDA $93EF,X
 C1/B6DF: 89 40        BIT #$40
-C1/B6E1: F0 28        BEQ $B70B
+C1/B6E1: F0 28        BEQ Local_C1B70B
 C1/B6E3: 29 BF        AND #$BF
 C1/B6E5: 9D EF 93     STA $93EF,X
 C1/B6E8: BD F4 93     LDA $93F4,X
@@ -21,7 +21,7 @@ C1/B6EE: AA           TAX
 C1/B6EF: A8           TAY
 C1/B6F0: BD 80 15     LDA $1580,X
 C1/B6F3: C5 0E        CMP $0E
-C1/B6F5: F0 0D        BEQ $B704
+C1/B6F5: F0 0D        BEQ Local_C1B704
 C1/B6F7: E8           INX
 C1/B6F8: E8           INX
 C1/B6F9: E8           INX

@@ -1,13 +1,13 @@
 ; Bank: D0 | Start Address: 3362
 Routine_D03362:
-D0/3362: 20 40 30     JSR $3040
-D0/3365: D0 70        BNE $33D7
-D0/3367: 10 00        BPL $3369
+D0/3362: 20 40 30     JSR Local_D03040
+D0/3365: D0 70        BNE Local_D033D7
+D0/3367: 10 00        BPL Local_D03369
 D0/3369: 00 00        BRK $00
 D0/336B: 00 00        BRK $00
 D0/336D: 00 00        BRK $00
 D0/336F: 00 00        BRK $00
 D0/3371: 00 08        BRK $08
 D0/3373: 08           PHP
-D0/3374: 10 10        BPL $3386
+D0/3374: 10 10        BPL Local_D03386
 D0/3376: 40           RTI

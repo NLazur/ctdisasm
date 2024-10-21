@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: CA72
 Routine_D0CA72:
-D0/CA72: 80 80        BRA $C9F4
+D0/CA72: 80 80        BRA Local_D0C9F4
 D0/CA74: 00 00        BRK $00
 D0/CA76: 00 00        BRK $00
 D0/CA78: 00 00        BRK $00
@@ -27,17 +27,17 @@ D0/CAA6: 19 3F 00     ORA $003F,Y
 D0/CAA9: 00 00        BRK $00
 D0/CAAB: 00 00        BRK $00
 D0/CAAD: C0 C0        CPY #$C0
-D0/CAAF: F0 F0        BEQ $CAA1
+D0/CAAF: F0 F0        BEQ Local_D0CAA1
 D0/CAB1: F8           SED
-D0/CAB2: F0 F8        BEQ $CAAC
+D0/CAB2: F0 F8        BEQ Local_D0CAAC
 D0/CAB4: F8           SED
 D0/CAB5: FC F0 FC     JSR ($FCF0,X)
 D0/CAB8: 00 00        BRK $00
 D0/CABA: 00 00        BRK $00
 D0/CABC: 00 18        BRK $18
 D0/CABE: 18           CLC
-D0/CABF: 2C 1C 38     BIT $381C
+D0/CABF: 2C 1C 38     BIT Local_D0381C
 D0/CAC2: 08           PHP
-D0/CAC3: 10 00        BPL $CAC5
+D0/CAC3: 10 00        BPL Local_D0CAC5
 D0/CAC5: 00 00        BRK $00
 D0/CAC7: 60           RTS

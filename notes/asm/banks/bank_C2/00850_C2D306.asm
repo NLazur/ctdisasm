@@ -12,5 +12,5 @@ C2/D31E: 5E 00 01     LSR $0100,X
 C2/D321: 7E 10 01     ROR $0110,X
 C2/D324: E8           INX
 C2/D325: 88           DEY
-C2/D326: D0 E4        BNE $D30C
+C2/D326: D0 E4        BNE Local_C2D30C
 C2/D328: 60           RTS

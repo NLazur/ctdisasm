@@ -20,13 +20,13 @@ FE/FB4D: 00 00        BRK $00
 FE/FB4F: 00 00        BRK $00
 FE/FB51: 00 00        BRK $00
 FE/FB53: 00 41        BRK $41
-FE/FB55: 10 21        BPL $FB78
+FE/FB55: 10 21        BPL Local_FEFB78
 FE/FB57: 08           PHP
 FE/FB58: 00 08        BRK $08
 FE/FB5A: 9C 05 91     STZ $9105
 FE/FB5D: 04 FB        TSB $FB
 FE/FB5F: 73 00        ADC ($00,S),Y
 FE/FB61: 14 00        TRB $00
-FE/FB63: 10 00        BPL $FB65
+FE/FB63: 10 00        BPL Local_FEFB65
 FE/FB65: 0C 00 08     TSB $0800
 FE/FB68: 60           RTS

@@ -14,7 +14,7 @@ FD/3C0B: 38           SEC
 FD/3C0C: C1 30        CMP ($30,X)
 FD/3C0E: 0D 10 C8     ORA $C810
 FD/3C11: 38           SEC
-FD/3C12: 10 63        BPL $3C77
+FD/3C12: 10 63        BPL Local_FD3C77
 FD/3C14: C7 07        CMP [$07]
 FD/3C16: F5 04        SBC $04,X
 FD/3C18: FD 00 00     SBC $0000,X
@@ -29,10 +29,10 @@ FD/3C2C: 00 00        BRK $00
 FD/3C2E: 41 10        EOR ($10,X)
 FD/3C30: 01 D0        ORA ($D0,X)
 FD/3C32: 01 C8        ORA ($C8,X)
-FD/3C34: 10 E8        BPL $3C1E
+FD/3C34: 10 E8        BPL Local_FD3C1E
 FD/3C36: 00 C4        BRK $C4
 FD/3C38: 18           CLC
 FD/3C39: 81 28        STA ($28,X)
 FD/3C3B: A5 08        LDA $08
-FD/3C3D: B0 80        BCS $3BBF
+FD/3C3D: B0 80        BCS Local_FD3BBF
 FD/3C3F: 40           RTI

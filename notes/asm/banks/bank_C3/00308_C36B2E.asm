@@ -1,7 +1,7 @@
 ; Bank: C3 | Start Address: 6B2E
 Routine_C36B2E:
 C3/6B2E: 8D 80 21     STA $2180
-C3/6B31: 80 DD        BRA $6B10
+C3/6B31: 80 DD        BRA Local_C36B10
 C3/6B33: 86 00        STX $00
 C3/6B35: 4A           LSR
 C3/6B36: C2 21        REP #$21
@@ -16,7 +16,7 @@ C3/6B47: 48           PHA
 C3/6B48: 83 04        STA $04,S
 C3/6B4A: AD CC 12     LDA $12CC
 C3/6B4D: 09 AD 3E     ORA #$3EAD
-C3/6B50: 2C 04 40     BIT $4004
+C3/6B50: 2C 04 40     BIT Local_C34004
 C3/6B53: 02 E6        COP $E6
 C3/6B55: 46 60        LSR $60
 C3/6B57: A5 46        LDA $46

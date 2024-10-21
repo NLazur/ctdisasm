@@ -1,10 +1,10 @@
 ; Bank: C6 | Start Address: 8EED
 Routine_C68EED:
-C6/8EED: 30 42        BMI $8F31
+C6/8EED: 30 42        BMI Local_C68F31
 C6/8EEF: 32 33        AND ($33)
 C6/8EF1: 33 78        AND ($78,S),Y
 C6/8EF3: 0C 60 20     TSB $2060
-C6/8EF6: 10 EC        BPL $8EE4
+C6/8EF6: 10 EC        BPL Local_C68EE4
 C6/8EF8: 6C 12 20     JMP ($2012)
 C6/8EFB: 01 38        ORA ($38,X)
 C6/8EFD: 0C 24 36     TSB $3624

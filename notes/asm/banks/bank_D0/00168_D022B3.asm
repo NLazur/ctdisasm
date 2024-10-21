@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 22B3
 Routine_D022B3:
-D0/22B3: 50 70        BVC $2325
-D0/22B5: 50 A0        BVC $2257
+D0/22B3: 50 70        BVC Local_D02325
+D0/22B5: 50 A0        BVC Local_D02257
 D0/22B7: C0 A0 E0     CPY #$E0A0
 D0/22BA: 48           PHA
 D0/22BB: 78           SEI

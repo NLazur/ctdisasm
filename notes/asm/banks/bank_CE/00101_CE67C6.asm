@@ -16,11 +16,11 @@ CE/67E3: 94 0A        STY $0A,X
 CE/67E5: A8           TAY
 CE/67E6: 04 71        TSB $71
 CE/67E8: 00 D9        BRK $D9
-CE/67EA: 30 1B        BMI $6807
+CE/67EA: 30 1B        BMI Local_CE6807
 CE/67EC: 0A           ASL
 CE/67ED: 72 03        ADC ($03)
 CE/67EF: 73 02        ADC ($02,S),Y
-CE/67F1: 20 01 75     JSR $7501
+CE/67F1: 20 01 75     JSR Local_CE7501
 CE/67F4: 0A           ASL
 CE/67F5: 77 60        ADC [$60],Y
 CE/67F7: 0C 02 01     TSB $0102
@@ -31,7 +31,7 @@ CE/6801: D9 30 1B     CMP $1B30,Y
 CE/6804: 0A           ASL
 CE/6805: 72 03        ADC ($03)
 CE/6807: 73 02        ADC ($02,S),Y
-CE/6809: 20 01 75     JSR $7501
+CE/6809: 20 01 75     JSR Local_CE7501
 CE/680C: 0A           ASL
 CE/680D: 77 A0        ADC [$A0],Y
 CE/680F: 0C 02 01     TSB $0102
@@ -42,7 +42,7 @@ CE/6819: D9 30 1B     CMP $1B30,Y
 CE/681C: 0A           ASL
 CE/681D: 72 03        ADC ($03)
 CE/681F: 73 02        ADC ($02,S),Y
-CE/6821: 20 01 75     JSR $7501
+CE/6821: 20 01 75     JSR Local_CE7501
 CE/6824: 0A           ASL
 CE/6825: 77 E0        ADC [$E0],Y
 CE/6827: 0C 02 01     TSB $0102
@@ -54,7 +54,7 @@ CE/6834: 00 51        BRK $51
 CE/6836: 68           PLA
 CE/6837: 6D 68 6D     ADC $6D68
 CE/683A: 68           PLA
-CE/683B: 80 68        BRA $68A5
+CE/683B: 80 68        BRA Local_CE68A5
 CE/683D: D8           CLD
 CE/683E: 68           PLA
 CE/683F: FD 68 20     SBC $2068,X
@@ -71,10 +71,10 @@ CE/6859: 06 02        ASL $02
 CE/685B: 24 34        BIT $34
 CE/685D: 1B           TCS
 CE/685E: 24 0C        BIT $0C
-CE/6860: 20 0A 34     JSR $340A
+CE/6860: 20 0A 34     JSR Local_CE340A
 CE/6863: 1A           INC
 CE/6864: 06 03        ASL $03
-CE/6866: 20 01 24     JSR $2401
+CE/6866: 20 01 24     JSR Local_CE2401
 CE/6869: 0E 2E 01     ASL $012E
 CE/686C: 00 72        BRK $72
 CE/686E: 18           CLC
@@ -83,15 +83,15 @@ CE/6871: 02 22        COP $22
 CE/6873: 24 06        BIT $06
 CE/6875: 02 24        COP $24
 CE/6877: 24 0C        BIT $0C
-CE/6879: 22 1B 00 06  JSR $06001B
+CE/6879: 22 1B 00 06  JSR Routine_06001B
 CE/687D: 03 36        ORA $36,S
 CE/687F: 00 D9        BRK $D9
-CE/6881: 30 76        BMI $68F9
+CE/6881: 30 76        BMI Local_CE68F9
 CE/6883: 00 18        BRK $18
-CE/6885: 30 00        BMI $6887
-CE/6887: 80 30        BRA $68B9
+CE/6885: 30 00        BMI Local_CE6887
+CE/6887: 80 30        BRA Local_CE68B9
 CE/6889: 01 5C        ORA ($5C,X)
-CE/688B: 30 02        BMI $688F
-CE/688D: 80 30        BRA $68BF
+CE/688B: 30 02        BMI Local_CE688F
+CE/688D: 80 30        BRA Local_CE68BF
 CE/688F: 03 10        ORA $10,S
 CE/6891: 60           RTS

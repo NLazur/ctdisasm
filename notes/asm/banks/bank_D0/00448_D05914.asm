@@ -22,12 +22,12 @@ D0/5935: 4B           PHK
 D0/5936: C9 2B E8     CMP #$E82B
 D0/5939: 0F EA 1D FA  ORA $FA1DEA
 D0/593D: 0D 72 8D     ORA $8D72
-D0/5940: 80 80        BRA $58C2
+D0/5940: 80 80        BRA Local_D058C2
 D0/5942: 08           PHP
 D0/5943: 88           DEY
 D0/5944: 00 80        BRK $80
-D0/5946: 80 00        BRA $5948
-D0/5948: 80 00        BRA $594A
+D0/5946: 80 00        BRA Local_D05948
+D0/5948: 80 00        BRA Local_D0594A
 D0/594A: C0 40 C8     CPY #$C840
 D0/594D: 48           PHA
 D0/594E: 88           DEY

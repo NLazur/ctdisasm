@@ -16,7 +16,7 @@ FE/065C: 0E 3E F8     ASL $F83E
 FE/065F: 01 84        ORA ($84,X)
 FE/0661: 43 10        EOR $10,S
 FE/0663: 48           PHA
-FE/0664: 10 FF        BPL $0665
+FE/0664: 10 FF        BPL Local_FE0665
 FE/0666: 2E F8 C5     ROL $C5F8
 FE/0669: 98           TYA
 FE/066A: FA           PLX
@@ -62,7 +62,7 @@ FE/06BE: 0F 0A 03 05  ORA $05030A
 FE/06C2: 42 F8        WDM $F8
 FE/06C4: 01 5E        ORA ($5E,X)
 FE/06C6: 02 01        COP $01
-FE/06C8: 3C 05 08     BIT $0805,X
+FE/06C8: 3C 05 08     BIT Local_FE0805,X
 FE/06CB: 0A           ASL
 FE/06CC: 0E 07 0A     ASL $0A07
 FE/06CF: 0A           ASL
@@ -81,7 +81,7 @@ FE/06E7: 00 98        BRK $98
 FE/06E9: 07 08        ORA [$08]
 FE/06EB: 02 41        COP $41
 FE/06ED: F8           SED
-FE/06EE: 80 46        BRA $0736
+FE/06EE: 80 46        BRA Local_FE0736
 FE/06F0: 02 03        COP $03
 FE/06F2: FF 06 32 07  SBC $073206,X
 FE/06F6: 79 06 06     ADC $0606,Y
@@ -101,7 +101,7 @@ FE/070F: 06 FF        ASL $FF
 FE/0711: 7F FE 3B 54  ADC $543BFE,X
 FE/0715: B4 07        LDY $07,X
 FE/0717: 39 10 47     AND $4710,Y
-FE/071A: 10 CC        BPL $06E8
+FE/071A: 10 CC        BPL Local_FE06E8
 FE/071C: 07 07        ORA [$07]
 FE/071E: FA           PLX
 FE/071F: 81 61        STA ($61,X)
@@ -122,7 +122,7 @@ FE/0739: C0 05 03     CPY #$0305
 FE/073C: 02 0A        COP $0A
 FE/073E: 05 09        ORA $09
 FE/0740: 01 FD        ORA ($FD,X)
-FE/0742: 80 55        BRA $0799
+FE/0742: 80 55        BRA Local_FE0799
 FE/0744: F3 FF        SBC ($FF,S),Y
 FE/0746: 05 40        ORA $40
 FE/0748: 00 01        BRK $01

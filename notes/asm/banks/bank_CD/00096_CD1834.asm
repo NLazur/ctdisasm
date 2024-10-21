@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: 1834
 Routine_CD1834:
 CD/1834: EE 3C CD     INC $CD3C
-CD/1837: D0 0C        BNE $1845
+CD/1837: D0 0C        BNE Local_CD1845
 CD/1839: 9C A4 05     STZ $05A4
 CD/183C: 9C 98 05     STZ $0598
 CD/183F: 9C 8C 05     STZ $058C

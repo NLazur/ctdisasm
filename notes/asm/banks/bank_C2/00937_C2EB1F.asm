@@ -8,11 +8,11 @@ C2/EB27: A0 00        LDY #$00
 C2/EB29: 64 01        STZ $01
 C2/EB2B: AE A9 0D     LDX $0DA9
 C2/EB2E: AD AC 0D     LDA $0DAC
-C2/EB31: 10 1C        BPL $EB4F
+C2/EB31: 10 1C        BPL Local_C2EB4F
 C2/EB33: AD AB 0D     LDA $0DAB
 C2/EB36: 49 FF        EOR #$FF
 C2/EB38: DD 90 97     CMP $9790,X
-C2/EB3B: 90 29        BCC $EB66
+C2/EB3B: 90 29        BCC Local_C2EB66
 C2/EB3D: 9C AB 0D     STZ $0DAB
 C2/EB40: 9C AC 0D     STZ $0DAC
 C2/EB43: 38           SEC
@@ -21,13 +21,13 @@ C2/EB47: CA           DEX
 C2/EB48: CA           DEX
 C2/EB49: CA           DEX
 C2/EB4A: 8E A9 0D     STX $0DA9
-C2/EB4D: 80 17        BRA $EB66
+C2/EB4D: 80 17        BRA Local_C2EB66
 C2/EB4F: BD 90 97     LDA $9790,X
 C2/EB52: 3A           DEC
 C2/EB53: 38           SEC
 C2/EB54: ED AB 0D     SBC $0DAB
 C2/EB57: DD 90 97     CMP $9790,X
-C2/EB5A: 90 0A        BCC $EB66
+C2/EB5A: 90 0A        BCC Local_C2EB66
 C2/EB5C: E8           INX
 C2/EB5D: E8           INX
 C2/EB5E: E8           INX
@@ -36,7 +36,7 @@ C2/EB62: BD 90 97     LDA $9790,X
 C2/EB65: 3A           DEC
 C2/EB66: 1A           INC
 C2/EB67: 8D 9A 96     STA $969A
-C2/EB6A: 80 06        BRA $EB72
+C2/EB6A: 80 06        BRA Local_C2EB72
 C2/EB6C: BD 90 97     LDA $9790,X
 C2/EB6F: 99 9A 96     STA $969A,Y
 C2/EB72: C2 31        REP #$31
@@ -50,7 +50,7 @@ C2/EB80: C8           INY
 C2/EB81: C8           INY
 C2/EB82: C8           INY
 C2/EB83: C6 00        DEC $00
-C2/EB85: D0 E5        BNE $EB6C
+C2/EB85: D0 E5        BNE Local_C2EB6C
 C2/EB87: E2 21        SEP #$21
 C2/EB89: BD 8D 97     LDA $978D,X
 C2/EB8C: ED 9A 96     SBC $969A
@@ -58,7 +58,7 @@ C2/EB8F: 99 97 96     STA $9697,Y
 C2/EB92: A9 80        LDA #$80
 C2/EB94: 0C 13 0D     TSB $0D13
 C2/EB97: 28           PLP
-C2/EB98: 4C 1E 82     JMP $821E
+C2/EB98: 4C 1E 82     JMP Local_C2821E
 C2/EB9B: 08           PHP
 C2/EB9C: C2 30        REP #$30
 C2/EB9E: A2 9A 96     LDX #$969A
@@ -116,7 +116,7 @@ C2/EC0F: A5 5A        LDA $5A
 C2/EC11: 29 04        AND #$04
 C2/EC13: C9 01        CMP #$01
 C2/EC15: A9 03        LDA #$03
-C2/EC17: B0 05        BCS $EC1E
+C2/EC17: B0 05        BCS Local_C2EC1E
 C2/EC19: A2 FD FF     LDX #$FFFD
 C2/EC1C: A9 00        LDA #$00
 C2/EC1E: 8E 22 0D     STX $0D22
@@ -125,7 +125,7 @@ C2/EC24: A2 04 00     LDX #$0004
 C2/EC27: 8E 24 0D     STX $0D24
 C2/EC2A: AD FD 00     LDA $00FD
 C2/EC2D: C9 05        CMP #$05
-C2/EC2F: D0 05        BNE $EC36
+C2/EC2F: D0 05        BNE Local_C2EC36
 C2/EC31: A9 04        LDA #$04
 C2/EC33: 8D FD 00     STA $00FD
 C2/EC36: 28           PLP

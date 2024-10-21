@@ -7,6 +7,6 @@ C2/AE69: AD 16 04     LDA $0416
 C2/AE6C: 18           CLC
 C2/AE6D: 65 54        ADC $54
 C2/AE6F: A8           TAY
-C2/AE70: 20 75 AE     JSR $AE75
+C2/AE70: 20 75 AE     JSR Local_C2AE75
 C2/AE73: 28           PLP
 C2/AE74: 60           RTS

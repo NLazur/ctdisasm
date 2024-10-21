@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: C453
 Routine_D0C453:
-D0/C453: 50 B0        BVC $C405
-D0/C455: D0 40        BNE $C497
+D0/C453: 50 B0        BVC Local_D0C405
+D0/C455: D0 40        BNE Local_D0C497
 D0/C457: A0 07        LDY #$07
 D0/C459: 18           CLC
 D0/C45A: 0F 10 0F 10  ORA $100F10

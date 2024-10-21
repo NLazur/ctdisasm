@@ -9,5 +9,5 @@ FE/0E8C: 7D 03 3B     ADC $3B03,X
 FE/0E8F: 00 01        BRK $01
 FE/0E91: 07 3F        ORA [$3F]
 FE/0E93: FC E5 80     JSR ($80E5,X)
-FE/0E96: 70 09        BVS $0EA1
+FE/0E96: 70 09        BVS Local_FE0EA1
 FE/0E98: 40           RTI

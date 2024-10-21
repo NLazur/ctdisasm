@@ -7,7 +7,7 @@ D1/0FE2: 62 01 64     PER $D173E6
 D1/0FE5: 41 60        EOR ($60,X)
 D1/0FE7: 14 41        TRB $41
 D1/0FE9: 64 12        STZ $12
-D1/0FEB: 20 62 0A     JSR $0A62
+D1/0FEB: 20 62 0A     JSR Local_D10A62
 D1/0FEE: 00 62        BRK $62
 D1/0FF0: 01 62        ORA ($62,X)
 D1/0FF2: 26 41        ROL $41

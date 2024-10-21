@@ -14,7 +14,7 @@ D1/EBF3: E8           INX
 D1/EBF4: C8           INY
 D1/EBF5: C8           INY
 D1/EBF6: C6 45        DEC $45
-D1/EBF8: D0 EF        BNE $EBE9
+D1/EBF8: D0 EF        BNE Local_D1EBE9
 D1/EBFA: 7B           TDC
 D1/EBFB: E2 20        SEP #$20
 D1/EBFD: FA           PLX

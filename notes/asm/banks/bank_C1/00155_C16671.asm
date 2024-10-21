@@ -11,7 +11,7 @@ C1/667C: 85 D7        STA $D7
 C1/667E: A9 00        LDA #$00
 C1/6680: E9 00        SBC #$00
 C1/6682: 85 D8        STA $D8
-C1/6684: B0 02        BCS $6688
+C1/6684: B0 02        BCS Local_C16688
 C1/6686: E6 82        INC $82
 C1/6688: 38           SEC
 C1/6689: A5 D6        LDA $D6
@@ -20,7 +20,7 @@ C1/668D: 85 D9        STA $D9
 C1/668F: A9 00        LDA #$00
 C1/6691: E9 00        SBC #$00
 C1/6693: 85 DA        STA $DA
-C1/6695: B0 02        BCS $6699
+C1/6695: B0 02        BCS Local_C16699
 C1/6697: E6 83        INC $83
 C1/6699: A5 D7        LDA $D7
 C1/669B: 45 D8        EOR $D8
@@ -46,7 +46,7 @@ C1/66BC: 8D 82 A8     STA $A882
 C1/66BF: 7B           TDC
 C1/66C0: E2 20        SEP #$20
 C1/66C2: A5 82        LDA $82
-C1/66C4: F0 1E        BEQ $66E4
+C1/66C4: F0 1E        BEQ Local_C166E4
 C1/66C6: C2 20        REP #$20
 C1/66C8: AD 80 A8     LDA $A880
 C1/66CB: 49 FF FF     EOR #$FFFF
@@ -61,14 +61,14 @@ C1/66DA: 38           SEC
 C1/66DB: A5 D3        LDA $D3
 C1/66DD: E5 82        SBC $82
 C1/66DF: 8D F9 AA     STA $AAF9
-C1/66E2: 80 09        BRA $66ED
+C1/66E2: 80 09        BRA Local_C166ED
 C1/66E4: A5 DE        LDA $DE
 C1/66E6: 4A           LSR
 C1/66E7: 18           CLC
 C1/66E8: 65 D3        ADC $D3
 C1/66EA: 8D F9 AA     STA $AAF9
 C1/66ED: A5 83        LDA $83
-C1/66EF: F0 1E        BEQ $670F
+C1/66EF: F0 1E        BEQ Local_C1670F
 C1/66F1: C2 20        REP #$20
 C1/66F3: AD 82 A8     LDA $A882
 C1/66F6: 49 FF FF     EOR #$FFFF
@@ -83,7 +83,7 @@ C1/6705: 38           SEC
 C1/6706: A5 D4        LDA $D4
 C1/6708: E5 83        SBC $83
 C1/670A: 8D FA AA     STA $AAFA
-C1/670D: 80 09        BRA $6718
+C1/670D: 80 09        BRA Local_C16718
 C1/670F: A5 E0        LDA $E0
 C1/6711: 4A           LSR
 C1/6712: 18           CLC
@@ -92,7 +92,7 @@ C1/6715: 8D FA AA     STA $AAFA
 C1/6718: 38           SEC
 C1/6719: AD FA AA     LDA $AAFA
 C1/671C: E9 40        SBC #$40
-C1/671E: B0 02        BCS $6722
+C1/671E: B0 02        BCS Local_C16722
 C1/6720: A9 00        LDA #$00
 C1/6722: 8D FA AA     STA $AAFA
 C1/6725: A9 24        LDA #$24

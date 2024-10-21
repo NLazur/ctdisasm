@@ -3,7 +3,7 @@ Routine_C644CC:
 C6/44CC: 31 2F        AND ($2F),Y
 C6/44CE: 31 4E        AND ($4E),Y
 C6/44D0: 31 1F        AND ($1F),Y
-C6/44D2: 82 00 4F     BRL $C693D5
+C6/44D2: 82 00 4F     BRL Routine_C693D5
 C6/44D5: 08           PHP
 C6/44D6: 31 2D        AND ($2D),Y
 C6/44D8: 31 A8        AND ($A8),Y
@@ -22,7 +22,7 @@ C6/44F1: 00 F4        BRK $F4
 C6/44F3: 1D F5 1D     ORA $1DF5,X
 C6/44F6: E6 1D        INC $1D
 C6/44F8: E7 1D        SBC [$1D]
-C6/44FA: 20 F6 1D     JSR $1DF6
+C6/44FA: 20 F6 1D     JSR Local_C61DF6
 C6/44FD: F7 1D        SBC [$1D],Y
 C6/44FF: E8           INX
 C6/4500: 08           PHP
@@ -67,12 +67,12 @@ C6/4557: 1E 00 A4     ASL $A400,X
 C6/455A: 0E B9 06     ASL $06B9
 C6/455D: 51 AA        EOR ($AA),Y
 C6/455F: 1E 10 B3     ASL $B310,X
-C6/4562: 20 5D 31     JSR $315D
-C6/4565: 20 11 00     JSR $0011
+C6/4562: 20 5D 31     JSR Local_C6315D
+C6/4565: 20 11 00     JSR Local_C60011
 C6/4568: 21 11        AND ($11,X)
 C6/456A: 12 31        ORA ($31)
 C6/456C: 13 31        ORA ($31,S),Y
-C6/456E: 22 11 00 23  JSR $230011
+C6/456E: 22 11 00 23  JSR Routine_230011
 C6/4572: 11 14        ORA ($14),Y
 C6/4574: 31 15        AND ($15),Y
 C6/4576: 31 24        AND ($24),Y

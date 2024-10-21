@@ -43,7 +43,7 @@ FD/E4DA: E6 18        INC $18
 FD/E4DC: E8           INX
 FD/E4DD: E8           INX
 FD/E4DE: 88           DEY
-FD/E4DF: D0 F1        BNE $E4D2
+FD/E4DF: D0 F1        BNE Local_FDE4D2
 FD/E4E1: E2 20        SEP #$20
 FD/E4E3: A9 00        LDA #$00
 FD/E4E5: EB           XBA

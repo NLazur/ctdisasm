@@ -1,11 +1,11 @@
 ; Bank: C3 | Start Address: BD7E
 Routine_C3BD7E:
 C3/BD7E: 17 12        ORA [$12],Y
-C3/BD80: 20 29 2C     JSR $2C29
+C3/BD80: 20 29 2C     JSR Local_C32C29
 C3/BD83: 44 67 80     MVP $67,$80
 C3/BD86: 24 10        BIT $10
-C3/BD88: 20 26 1B     JSR $1B26
-C3/BD8B: 22 C8 52 E8  JSR $E852C8
+C3/BD88: 20 26 1B     JSR Local_C31B26
+C3/BD8B: 22 C8 52 E8  JSR Routine_E852C8
 C3/BD8F: 01 10        ORA ($10,X)
 C3/BD91: 13 03        ORA ($03,S),Y
 C3/BD93: 93 02        STA ($02,S),Y
@@ -35,7 +35,7 @@ C3/BDBE: 28           PLP
 C3/BDBF: F4 0D 28     PEA $280D
 C3/BDC2: 04 04        TSB $04
 C3/BDC4: 0C 22 1A     TSB $1A22
-C3/BDC7: 20 04 1B     JSR $1B04
+C3/BDC7: 20 04 1B     JSR Local_C31B04
 C3/BDCA: 28           PLP
 C3/BDCB: F8           SED
 C3/BDCC: 15 E0        ORA $E0,X
@@ -43,18 +43,18 @@ C3/BDCE: 4A           LSR
 C3/BDCF: 00 02        BRK $02
 C3/BDD1: 38           SEC
 C3/BDD2: 01 4A        ORA ($4A,X)
-C3/BDD4: F0 4A        BEQ $BE20
-C3/BDD6: F0 4A        BEQ $BE22
-C3/BDD8: 50 AE        BVC $BD88
+C3/BDD4: F0 4A        BEQ Local_C3BE20
+C3/BDD6: F0 4A        BEQ Local_C3BE22
+C3/BDD8: 50 AE        BVC Local_C3BD88
 C3/BDDA: 09 4A        ORA #$4A
-C3/BDDC: F0 4A        BEQ $BE28
-C3/BDDE: F0 4A        BEQ $BE2A
-C3/BDE0: 20 3C 4A     JSR $4A3C
+C3/BDDC: F0 4A        BEQ Local_C3BE28
+C3/BDDE: F0 4A        BEQ Local_C3BE2A
+C3/BDE0: 20 3C 4A     JSR Local_C34A3C
 C3/BDE3: E0 70        CPX #$70
 C3/BDE5: 94 00        STY $00,X
 C3/BDE7: 7E BE 94     ROR $94BE,X
-C3/BDEA: 80 0C        BRA $BDF8
-C3/BDEC: 20 4A 60     JSR $604A
+C3/BDEA: 80 0C        BRA Local_C3BDF8
+C3/BDEC: 20 4A 60     JSR Local_C3604A
 C3/BDEF: 1A           INC
-C3/BDF0: 10 4A        BPL $BE3C
+C3/BDF0: 10 4A        BPL Local_C3BE3C
 C3/BDF2: 40           RTI

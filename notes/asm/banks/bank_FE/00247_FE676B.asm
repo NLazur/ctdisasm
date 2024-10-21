@@ -2,11 +2,11 @@
 Routine_FE676B:
 FE/676B: 00 1C        BRK $1C
 FE/676D: 36 3E        ROL $3E,X
-FE/676F: 30 3F        BMI $67B0
+FE/676F: 30 3F        BMI Local_FE67B0
 FE/6771: 00 EF        BRK $EF
 FE/6773: 08           PHP
-FE/6774: 10 FF        BPL $6775
-FE/6776: 20 FE 14     JSR $14FE
+FE/6774: 10 FF        BPL Local_FE6775
+FE/6776: 20 FE 14     JSR Local_FE14FE
 FE/6779: 65 42        ADC $42
 FE/677B: 44 3A 14     MVP $3A,$14
 FE/677E: 00 28        BRK $28
@@ -16,7 +16,7 @@ FE/6784: 08           PHP
 FE/6785: 24 85        BIT $85
 FE/6787: 00 9F        BRK $9F
 FE/6789: C1 DA        CMP ($DA,X)
-FE/678B: D0 D2        BNE $675F
+FE/678B: D0 D2        BNE Local_FE675F
 FE/678D: 5B           TCD
 FE/678E: 58           CLI
 FE/678F: 0B           PHD
@@ -41,9 +41,9 @@ FE/67B0: B8           CLV
 FE/67B1: 68           PLA
 FE/67B2: F8           SED
 FE/67B3: 6C F4 8C     JMP ($8CF4)
-FE/67B6: 10 F2        BPL $67AA
+FE/67B6: 10 F2        BPL Local_FE67AA
 FE/67B8: C4 7A        CPY $7A
-FE/67BA: 50 FA        BVC $67B6
+FE/67BA: 50 FA        BVC Local_FE67B6
 FE/67BC: 03 5C        ORA $5C,S
 FE/67BE: 88           DEY
 FE/67BF: 84 04        STY $04

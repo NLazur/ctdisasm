@@ -12,6 +12,6 @@ C2/A0F7: E8           INX
 C2/A0F8: C8           INY
 C2/A0F9: C8           INY
 C2/A0FA: E0 30 00     CPX #$0030
-C2/A0FD: 90 ED        BCC $A0EC
+C2/A0FD: 90 ED        BCC Local_C2A0EC
 C2/A0FF: 28           PLP
 C2/A100: 60           RTS

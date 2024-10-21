@@ -2,8 +2,8 @@
 Routine_CDB18B:
 CD/B18B: 06 05        ASL $05
 CD/B18D: 69 00        ADC #$00
-CD/B18F: 20 02 6A     JSR $6A02
-CD/B192: 20 02 06     JSR $0602
+CD/B18F: 20 02 6A     JSR Local_CD6A02
+CD/B192: 20 02 06     JSR Local_CD0602
 CD/B195: 03 20        ORA $20,S
 CD/B197: 01 20        ORA ($20,X)
 CD/B199: 0F 36 00 60  ORA $600036
@@ -32,7 +32,7 @@ CD/B1C4: 1B           TCS
 CD/B1C5: 09 24        ORA #$24
 CD/B1C7: 01 20        ORA ($20,X)
 CD/B1C9: 1E 02 00     ASL $0002,X
-CD/B1CC: 70 0B        BVS $B1D9
+CD/B1CC: 70 0B        BVS Local_CDB1D9
 CD/B1CE: 9A           TXS
 CD/B1CF: 00 13        BRK $13
 CD/B1D1: 1B           TCS
@@ -44,7 +44,7 @@ CD/B1DA: 00 73        BRK $73
 CD/B1DC: 03 1C        ORA $1C,S
 CD/B1DE: 0B           PHD
 CD/B1DF: 24 01        BIT $01
-CD/B1E1: 20 1E 02     JSR $021E
+CD/B1E1: 20 1E 02     JSR Local_CD021E
 CD/B1E4: 01 70        ORA ($70,X)
 CD/B1E6: 24 03        BIT $03
 CD/B1E8: 71 00        ADC ($00),Y
@@ -69,17 +69,17 @@ CD/B211: A0 43        LDY #$43
 CD/B213: 00 00        BRK $00
 CD/B215: E8           INX
 CD/B216: 72 0D        ADC ($0D)
-CD/B218: 80 45        BRA $B25F
+CD/B218: 80 45        BRA Local_CDB25F
 CD/B21A: 00 00        BRK $00
 CD/B21C: E7 84        SBC [$84]
-CD/B21E: 80 02        BRA $B222
+CD/B21E: 80 02        BRA Local_CDB222
 CD/B220: 69 78        ADC #$78
 CD/B222: 9C 02 07     STZ $0702
-CD/B225: 20 1E 36     JSR $361E
+CD/B225: 20 1E 36     JSR Local_CD361E
 CD/B228: 24 09        BIT $09
-CD/B22A: 20 3C 36     JSR $363C
+CD/B22A: 20 3C 36     JSR Local_CD363C
 CD/B22D: 24 12        BIT $12
-CD/B22F: 80 12        BRA $B243
+CD/B22F: 80 12        BRA Local_CDB243
 CD/B231: 69 80        ADC #$80
 CD/B233: 51 06        EOR ($06),Y
 CD/B235: 03 50        ORA $50,S

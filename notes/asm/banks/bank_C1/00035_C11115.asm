@@ -23,7 +23,7 @@ C1/1145: E8           INX
 C1/1146: E8           INX
 C1/1147: E8           INX
 C1/1148: E0 10 00     CPX #$0010
-C1/114B: D0 CE        BNE $111B
+C1/114B: D0 CE        BNE Local_C1111B
 C1/114D: A9 AA        LDA #$AA
 C1/114F: 8D 00 09     STA $0900
 C1/1152: 60           RTS

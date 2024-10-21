@@ -25,16 +25,16 @@ C1/9D4F: A8           TAY
 C1/9D50: 7B           TDC
 C1/9D51: E2 20        SEP #$20
 C1/9D53: A5 12        LDA $12
-C1/9D55: F0 06        BEQ $9D5D
+C1/9D55: F0 06        BEQ Local_C19D5D
 C1/9D57: B1 0E        LDA ($0E),Y
 C1/9D59: 05 10        ORA $10
-C1/9D5B: 80 02        BRA $9D5F
+C1/9D5B: 80 02        BRA Local_C19D5F
 C1/9D5D: A5 10        LDA $10
 C1/9D5F: 91 0E        STA ($0E),Y
 C1/9D61: AD C7 B3     LDA $B3C7
 C1/9D64: C9 00        CMP #$00
-C1/9D66: F0 04        BEQ $9D6C
-C1/9D68: 22 33 00 CD  JSR $CD0033
+C1/9D66: F0 04        BEQ Local_C19D6C
+C1/9D68: 22 33 00 CD  JSR Routine_CD0033
 C1/9D6C: A9 02        LDA #$02
 C1/9D6E: 8D B8 B3     STA $B3B8
 C1/9D71: 60           RTS

@@ -18,7 +18,7 @@ CD/11D2: E8           INX
 CD/11D3: C8           INY
 CD/11D4: C8           INY
 CD/11D5: C0 06 00     CPY #$0006
-CD/11D8: D0 F0        BNE $11CA
+CD/11D8: D0 F0        BNE Local_CD11CA
 CD/11DA: AD 00 CA     LDA $CA00
 CD/11DD: 8D 33 CA     STA $CA33
 CD/11E0: 7B           TDC

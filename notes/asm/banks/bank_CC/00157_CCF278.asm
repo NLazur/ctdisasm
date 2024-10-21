@@ -3,24 +3,24 @@ Routine_CCF278:
 CC/F278: 7B           TDC
 CC/F279: AA           TAX
 CC/F27A: BD A8 A1     LDA $A1A8,X
-CC/F27D: F0 08        BEQ $F287
+CC/F27D: F0 08        BEQ Local_CCF287
 CC/F27F: BD B0 A1     LDA $A1B0,X
-CC/F282: F0 03        BEQ $F287
+CC/F282: F0 03        BEQ Local_CCF287
 CC/F284: DE B0 A1     DEC $A1B0,X
 CC/F287: E8           INX
 CC/F288: E0 08 00     CPX #$0008
-CC/F28B: D0 ED        BNE $F27A
+CC/F28B: D0 ED        BNE Local_CCF27A
 CC/F28D: 7B           TDC
 CC/F28E: AA           TAX
 CC/F28F: 86 80        STX $80
 CC/F291: A6 80        LDX $80
 CC/F293: BD A8 A1     LDA $A1A8,X
-CC/F296: F0 08        BEQ $F2A0
+CC/F296: F0 08        BEQ Local_CCF2A0
 CC/F298: BD B0 A1     LDA $A1B0,X
-CC/F29B: D0 03        BNE $F2A0
-CC/F29D: 20 A9 F2     JSR $F2A9
+CC/F29B: D0 03        BNE Local_CCF2A0
+CC/F29D: 20 A9 F2     JSR Local_CCF2A9
 CC/F2A0: E6 80        INC $80
 CC/F2A2: A5 80        LDA $80
 CC/F2A4: C9 08        CMP #$08
-CC/F2A6: D0 E9        BNE $F291
+CC/F2A6: D0 E9        BNE Local_CCF291
 CC/F2A8: 6B           RTL

@@ -2,13 +2,13 @@
 Routine_C3D898:
 C3/D898: 18           CLC
 C3/D899: C0 08 12     CPY #$1208
-C3/D89C: 80 20        BRA $D8BE
+C3/D89C: 80 20        BRA Local_C3D8BE
 C3/D89E: 00 00        BRK $00
 C3/D8A0: 00 7C        BRK $7C
 C3/D8A2: 6F 39 63 95  ADC $956339
 C3/D8A6: 52 00        EOR ($00)
 C3/D8A8: 32 46        AND ($46)
-C3/D8AA: D0 39        BNE $D8E5
+C3/D8AA: D0 39        BNE Local_C3D8E5
 C3/D8AC: 8C 2D E9     STY $E92D
 C3/D8AF: 1C 00 A5     TRB $A500
 C3/D8B2: 18           CLC
@@ -29,7 +29,7 @@ C3/D8CF: 2B           PLD
 C3/D8D0: BB           TYX
 C3/D8D1: 12 2D        ORA ($2D)
 C3/D8D3: 09 63 08     ORA #$0863
-C3/D8D6: 80 BD        BRA $D895
+C3/D8D6: 80 BD        BRA Local_C3D895
 C3/D8D8: 73 D6        ADC ($D6,S),Y
 C3/D8DA: 56 72        LSR $72,X
 C3/D8DC: 42 52        WDM $52

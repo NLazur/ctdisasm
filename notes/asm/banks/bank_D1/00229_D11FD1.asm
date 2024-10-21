@@ -1,24 +1,24 @@
 ; Bank: D1 | Start Address: 1FD1
 Routine_D11FD1:
 D1/1FD1: CA           DEX
-D1/1FD2: 80 CA        BRA $1F9E
+D1/1FD2: 80 CA        BRA Local_D11F9E
 D1/1FD4: 41 18        EOR ($18,X)
 D1/1FD6: CC 00 20     CPY $2000
 D1/1FD9: CC 40 CC     CPY $CC40
-D1/1FDC: 80 CC        BRA $1FAA
+D1/1FDC: 80 CC        BRA Local_D11FAA
 D1/1FDE: 4E 18 CE     LSR $CE18
 D1/1FE1: 00 20        BRK $20
 D1/1FE3: CE 40 CE     DEC $CE40
-D1/1FE6: 80 CE        BRA $1FB6
+D1/1FE6: 80 CE        BRA Local_D11FB6
 D1/1FE8: 5B           TCD
 D1/1FE9: 00 11        BRK $11
-D1/1FEB: 80 47        BRA $2034
+D1/1FEB: 80 47        BRA Local_D12034
 D1/1FED: 69 00        ADC #$00
 D1/1FEF: D4 E0        PEI $E0
 D1/1FF1: 00 06        BRK $06
 D1/1FF3: 08           PHP
 D1/1FF4: E2 06        SEP #$06
-D1/1FF6: 10 E4        BPL $1FDC
+D1/1FF6: 10 E4        BPL Local_D11FDC
 D1/1FF8: 0C 00 40     TSB $4000
 D1/1FFB: 66 01        ROR $01
 D1/1FFD: 00 77        BRK $77
@@ -37,7 +37,7 @@ D1/2011: 81 0A        STA ($0A,X)
 D1/2013: C1 04        CMP ($04,X)
 D1/2015: 08           PHP
 D1/2016: E4 00        CPX $00
-D1/2018: 10 20        BPL $203A
+D1/2018: 10 20        BPL Local_D1203A
 D1/201A: 14 20        TRB $20
 D1/201C: 03 1E        ORA $1E,S
 D1/201E: 00 1A        BRK $1A
@@ -54,7 +54,7 @@ D1/2036: 41 0E        EOR ($0E,X)
 D1/2038: 01 0F        ORA ($0F,X)
 D1/203A: 04 08        TSB $08
 D1/203C: 0E 00 12     ASL $1200
-D1/203F: 10 22        BPL $2063
+D1/203F: 10 22        BPL Local_D12063
 D1/2041: 00 00        BRK $00
 D1/2043: 7C 6C 44     JMP ($446C,X)
 D1/2046: 24 6C        BIT $6C

@@ -34,5 +34,5 @@ FD/E7B8: E2 20        SEP #$20
 FD/E7BA: E8           INX
 FD/E7BB: E8           INX
 FD/E7BC: 88           DEY
-FD/E7BD: D0 BE        BNE $E77D
+FD/E7BD: D0 BE        BNE Local_FDE77D
 FD/E7BF: 60           RTS

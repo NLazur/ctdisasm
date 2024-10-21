@@ -2,27 +2,27 @@
 Routine_C386D7:
 C3/86D7: 00 55        BRK $55
 C3/86D9: 37 01        AND [$01],Y
-C3/86DB: 10 35        BPL $8712
+C3/86DB: 10 35        BPL Local_C38712
 C3/86DD: 37 32        AND [$32],Y
 C3/86DF: 88           DEY
 C3/86E0: 37 20        AND [$20],Y
-C3/86E2: 20 40 00     JSR $0040
-C3/86E5: 30 25        BMI $870C
+C3/86E2: 20 40 00     JSR Local_C30040
+C3/86E5: 30 25        BMI Local_C3870C
 C3/86E7: 12 02        ORA ($02)
 C3/86E9: 18           CLC
 C3/86EA: 00 22        BRK $22
 C3/86EC: 15 00        ORA $00,X
-C3/86EE: 20 2F 6A     JSR $6A2F
+C3/86EE: 20 2F 6A     JSR Local_C36A2F
 C3/86F1: 35 15        AND $15,X
 C3/86F3: 02 67        COP $67
 C3/86F5: C0 00 7F     CPY #$7F00
 C3/86F8: 7F 4D 4F 62  ADC $624F4D,X
 C3/86FC: 37 01        AND [$01],Y
-C3/86FE: 80 00        BRA $8700
+C3/86FE: 80 00        BRA Local_C38700
 C3/8700: 5D 05 70     EOR $7005,X
 C3/8703: 45 22        EOR $22
 C3/8705: 65 12        ADC $12
-C3/8707: 10 55        BPL $875E
+C3/8707: 10 55        BPL Local_C3875E
 C3/8709: 2A           ROL
 C3/870A: 45 1A        EOR $1A
 C3/870C: C0 00 32     CPY #$3200
@@ -30,17 +30,17 @@ C3/870F: 37 32        AND [$32],Y
 C3/8711: 00 D5        BRK $D5
 C3/8713: D5 B7        CMP $B7,X
 C3/8715: B7 B4        LDA [$B4],Y
-C3/8717: B0 B7        BCS $86D0
+C3/8717: B0 B7        BCS Local_C386D0
 C3/8719: B6 00        LDX $00,Y
 C3/871B: B6 B3        LDX $B3,Y
 C3/871D: 35 37        AND $37,X
 C3/871F: 26 26        ROL $26
-C3/8721: 22 15 00 45  JSR $450015
-C3/8725: B0 25        BCS $874C
+C3/8721: 22 15 00 45  JSR Routine_450015
+C3/8725: B0 25        BCS Local_C3874C
 C3/8727: 92 20        STA ($20)
 C3/8729: 97 22        STA [$22],Y
 C3/872B: 95 00        STA $00,X
-C3/872D: 22 95 24 13  JSR $132495
+C3/872D: 22 95 24 13  JSR Routine_132495
 C3/8731: 00 26        BRK $26
 C3/8733: 77 22        ADC [$22],Y
 C3/8735: 00 D5        BRK $D5
@@ -54,7 +54,7 @@ C3/8746: 00 80        BRK $80
 C3/8748: 00 55        BRK $55
 C3/874A: AA           TAX
 C3/874B: 00 FF        BRK $FF
-C3/874D: 22 DD 22 55  JSR $5522DD
+C3/874D: 22 DD 22 55  JSR Routine_5522DD
 C3/8751: 00 44        BRK $44
 C3/8753: 23 00        AND $00,S
 C3/8755: 64 00        STZ $00
@@ -76,7 +76,7 @@ C3/8774: 08           PHP
 C3/8775: 17 02        ORA [$02],Y
 C3/8777: 00 E0        BRK $E0
 C3/8779: 04 38        TSB $38
-C3/877B: 30 7C        BMI $87F9
+C3/877B: 30 7C        BMI Local_C387F9
 C3/877D: 48           PHA
 C3/877E: BE F6 00     LDX $00F6,Y
 C3/8781: 6E 66 1E     ROR $1E66

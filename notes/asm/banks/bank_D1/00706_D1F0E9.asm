@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: F0E9
 Routine_D1F0E9:
-D1/F0E9: 10 10        BPL $F0FB
+D1/F0E9: 10 10        BPL Local_D1F0FB
 D1/F0EB: C2 21        REP #$21
 D1/F0ED: 09 00 FF     ORA #$FF00
 D1/F0F0: 65 51        ADC $51

@@ -21,9 +21,9 @@ C2/ECF5: 0A           ASL
 C2/ECF6: 0A           ASL
 C2/ECF7: 09 03        ORA #$03
 C2/ECF9: 8D 48 0D     STA $0D48
-C2/ECFC: 20 F6 ED     JSR $EDF6
-C2/ECFF: 20 7F EE     JSR $EE7F
-C2/ED02: 20 08 ED     JSR $ED08
+C2/ECFC: 20 F6 ED     JSR Local_C2EDF6
+C2/ECFF: 20 7F EE     JSR Local_C2EE7F
+C2/ED02: 20 08 ED     JSR Local_C2ED08
 C2/ED05: 28           PLP
 C2/ED06: AB           PLB
 C2/ED07: 60           RTS

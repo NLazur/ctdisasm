@@ -2,7 +2,7 @@
 Routine_D1FC38:
 D1/FC38: A5 7C        LDA $7C
 D1/FC3A: 29 01        AND #$01
-D1/FC3C: F0 2C        BEQ $FC6A
+D1/FC3C: F0 2C        BEQ Local_D1FC6A
 D1/FC3E: C2 20        REP #$20
 D1/FC40: E2 10        SEP #$10
 D1/FC42: A2 70        LDX #$70
@@ -19,7 +19,7 @@ D1/FC5F: CA           DEX
 D1/FC60: CA           DEX
 D1/FC61: CA           DEX
 D1/FC62: CA           DEX
-D1/FC63: D0 E2        BNE $FC47
+D1/FC63: D0 E2        BNE Local_D1FC47
 D1/FC65: C2 10        REP #$10
 D1/FC67: E2 20        SEP #$20
 D1/FC69: 60           RTS

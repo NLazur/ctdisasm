@@ -11,12 +11,12 @@ C2/963E: 9D 11 00     STA $0011,X
 C2/9641: E8           INX
 C2/9642: E8           INX
 C2/9643: C6 00        DEC $00
-C2/9645: D0 EE        BNE $9635
+C2/9645: D0 EE        BNE Local_C29635
 C2/9647: C2 21        REP #$21
 C2/9649: 8A           TXA
 C2/964A: 69 10 00     ADC #$0010
 C2/964D: AA           TAX
 C2/964E: 88           DEY
-C2/964F: D0 DE        BNE $962F
+C2/964F: D0 DE        BNE Local_C2962F
 C2/9651: 28           PLP
 C2/9652: 60           RTS

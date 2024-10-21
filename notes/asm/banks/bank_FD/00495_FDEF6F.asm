@@ -7,7 +7,7 @@ FD/EF77: 8D 83 21     STA $2183
 FD/EF7A: A0 00 02     LDY #$0200
 FD/EF7D: 9C 80 21     STZ $2180
 FD/EF80: 88           DEY
-FD/EF81: D0 FA        BNE $EF7D
+FD/EF81: D0 FA        BNE Local_FDEF7D
 FD/EF83: A2 00 20     LDX #$2000
 FD/EF86: 8E 81 21     STX $2181
 FD/EF89: A9 7E        LDA #$7E
@@ -38,7 +38,7 @@ FD/EFBA: 8D 80 21     STA $2180
 FD/EFBD: C2 20        REP #$20
 FD/EFBF: E6 0C        INC $0C
 FD/EFC1: 88           DEY
-FD/EFC2: D0 D3        BNE $EF97
+FD/EFC2: D0 D3        BNE Local_FDEF97
 FD/EFC4: A9 00 00     LDA #$0000
 FD/EFC7: E2 20        SEP #$20
 FD/EFC9: A2 00 21     LDX #$2100
@@ -64,7 +64,7 @@ FD/EFF1: 8D 80 21     STA $2180
 FD/EFF4: C2 20        REP #$20
 FD/EFF6: E6 0C        INC $0C
 FD/EFF8: 88           DEY
-FD/EFF9: D0 E2        BNE $EFDD
+FD/EFF9: D0 E2        BNE Local_FDEFDD
 FD/EFFB: A9 00 00     LDA #$0000
 FD/EFFE: E2 20        SEP #$20
 FD/F000: 60           RTS

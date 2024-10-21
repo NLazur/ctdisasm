@@ -16,7 +16,7 @@ FE/2529: 05 9F        ORA $9F
 FE/252B: 5D 05 C8     EOR $C805,X
 FE/252E: 04 60        TSB $60
 FE/2530: 45 05        EOR $05
-FE/2532: 30 72        BMI $25A6
+FE/2532: 30 72        BMI Local_FE25A6
 FE/2534: 25 1A        AND $1A
 FE/2536: 1A           INC
 FE/2537: 5B           TCD

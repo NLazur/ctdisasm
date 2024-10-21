@@ -8,7 +8,7 @@ D1/7235: 00 00        BRK $00
 D1/7237: 04 BB        TSB $BB
 D1/7239: 06 01        ASL $01
 D1/723B: 84 8E        STY $8E
-D1/723D: 50 19        BVC $7258
+D1/723D: 50 19        BVC Local_D17258
 D1/723F: 03 FF        ORA $FF,S
 D1/7241: 00 08        BRK $08
 D1/7243: 01 83        ORA ($83,X)
@@ -32,6 +32,6 @@ D1/7264: 00 00        BRK $00
 D1/7266: 83 40        STA $40,S
 D1/7268: 7F 84 9D 17  ADC $179D84,X
 D1/726C: 83 0F        STA $0F,S
-D1/726E: 82 CF 00     BRL $D17340
+D1/726E: 82 CF 00     BRL Routine_D17340
 D1/7271: 84 8E        STY $8E
 D1/7273: 40           RTI

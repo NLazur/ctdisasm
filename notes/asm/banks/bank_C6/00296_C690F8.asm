@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 90F8
 Routine_C690F8:
-C6/90F8: B0 AC        BCS $90A6
+C6/90F8: B0 AC        BCS Local_C690A6
 C6/90FA: AD AE 61     LDA $61AE
 C6/90FD: F8           SED
 C6/90FE: 01 F8        ORA ($F8,X)
@@ -46,5 +46,5 @@ C6/914E: DA           PHX
 C6/914F: 79 35 00     ADC $0035,Y
 C6/9152: 83 8C        STA $8C,S
 C6/9154: 92 4E        STA ($4E)
-C6/9156: 70 FF        BVS $9157
+C6/9156: 70 FF        BVS Local_C69157
 C6/9158: 60           RTS

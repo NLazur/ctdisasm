@@ -11,13 +11,13 @@ C6/359B: 2D DA 0D     AND $0DDA
 C6/359E: 1E DB 84     ASL $84DB,X
 C6/35A1: 11 80        ORA ($80),Y
 C6/35A3: A8           TAY
-C6/35A4: 20 2C 50     JSR $502C
-C6/35A7: 2C 20 3B     BIT $3B20
+C6/35A4: 20 2C 50     JSR Local_C6502C
+C6/35A7: 2C 20 3B     BIT Local_C63B20
 C6/35AA: 21 00        AND ($00,X)
 C6/35AC: 3B           TSC
-C6/35AD: 30 3B        BMI $35EA
+C6/35AD: 30 3B        BMI Local_C635EA
 C6/35AF: 31 3B        AND ($3B),Y
-C6/35B1: 22 3B 23 00  JSR $00233B
+C6/35B1: 22 3B 23 00  JSR Routine_00233B
 C6/35B5: 3B           TSC
 C6/35B6: 32 3B        AND ($3B)
 C6/35B8: 33 3B        AND ($3B,S),Y
@@ -45,6 +45,6 @@ C6/35DB: 3B           TSC
 C6/35DC: 3B           TSC
 C6/35DD: 3B           TSC
 C6/35DE: D5 0D        CMP $0D,X
-C6/35E0: 50 00        BVC $35E2
+C6/35E0: 50 00        BVC Local_C635E2
 C6/35E2: 0E E5 0D     ASL $0DE5
 C6/35E5: 60           RTS

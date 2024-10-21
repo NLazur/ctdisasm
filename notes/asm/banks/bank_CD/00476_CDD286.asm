@@ -51,7 +51,7 @@ CD/D2E1: D2 2E        CMP ($2E)
 CD/D2E3: 01 00        ORA ($00,X)
 CD/D2E5: 00 90        BRK $90
 CD/D2E7: F8           SED
-CD/D2E8: 80 00        BRA $D2EA
+CD/D2E8: 80 00        BRA Local_CDD2EA
 CD/D2EA: FA           PLX
 CD/D2EB: D2 09        CMP ($09)
 CD/D2ED: D3 14        CMP ($14,S),Y

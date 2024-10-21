@@ -1,14 +1,14 @@
 ; Bank: FD | Start Address: 6C27
 Routine_FD6C27:
 FD/6C27: C8           INY
-FD/6C28: 80 00        BRA $6C2A
+FD/6C28: 80 00        BRA Local_FD6C2A
 FD/6C2A: 23 24        AND $24,S
 FD/6C2C: A0 E8        LDY #$E8
 FD/6C2E: 4A           LSR
 FD/6C2F: B2 12        LDA ($12)
 FD/6C31: E2 00        SEP #$00
 FD/6C33: 6F 6F E0 00  ADC $00E06F
-FD/6C37: B0 00        BCS $6C39
+FD/6C37: B0 00        BCS Local_FD6C39
 FD/6C39: 38           SEC
 FD/6C3A: 00 00        BRK $00
 FD/6C3C: DF 07 1F 07  CMP $071F07,X
@@ -21,15 +21,15 @@ FD/6C4E: 6E 44 80     ROR $8044
 FD/6C51: 04 C0        TSB $C0
 FD/6C53: C0 70 10     CPY #$1070
 FD/6C56: E0 E0        CPX #$E0
-FD/6C58: 4C 2C 8A     JMP $8A2C
+FD/6C58: 4C 2C 8A     JMP Local_FD8A2C
 FD/6C5B: 00 88        BRK $88
 FD/6C5D: A2 82        LDX #$82
 FD/6C5F: 63 01        ADC $01,S
 FD/6C61: D4 80        PEI $80
-FD/6C63: 50 00        BVC $6C65
+FD/6C63: 50 00        BVC Local_FD6C65
 FD/6C65: 00 F1        BRK $F1
 FD/6C67: 61 BC        ADC ($BC,X)
-FD/6C69: B0 F3        BCS $6C5E
+FD/6C69: B0 F3        BCS Local_FD6C5E
 FD/6C6B: 00 77        BRK $77
 FD/6C6D: 14 00        TRB $00
 FD/6C6F: 7D A2 04     ADC $04A2,X
@@ -40,17 +40,17 @@ FD/6C7A: F2 80        SBC ($80)
 FD/6C7C: E0 02        CPX #$02
 FD/6C7E: 01 20        ORA ($20,X)
 FD/6C80: 91 00        STA ($00),Y
-FD/6C82: 80 F4        BRA $6C78
+FD/6C82: 80 F4        BRA Local_FD6C78
 FD/6C84: F4 B4 B0     PEA $B0B4
 FD/6C87: 72 70        ADC ($70)
 FD/6C89: 9D 2A 91     STA $912A,X
 FD/6C8C: 18           CLC
-FD/6C8D: 10 FF        BPL $6C8E
+FD/6C8D: 10 FF        BPL Local_FD6C8E
 FD/6C8F: 1E 00 0B     ASL $0B00,X
 FD/6C92: 1C 00 8F     TRB $8F00
 FD/6C95: 00 00        BRK $00
 FD/6C97: 6E 00 7C     ROR $7C00
-FD/6C9A: 2C 7A 28     BIT $287A
+FD/6C9A: 2C 7A 28     BIT Local_FD287A
 FD/6C9D: 32 62        AND ($62)
 FD/6C9F: 00 33        BRK $33
 FD/6CA1: 61 34        ADC ($34,X)

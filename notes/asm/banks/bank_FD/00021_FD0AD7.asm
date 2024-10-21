@@ -4,12 +4,12 @@ FD/0AD7: 21 77        AND ($77,X)
 FD/0AD9: 45 24        EOR $24
 FD/0ADB: 31 77        AND ($77),Y
 FD/0ADD: C0 04 66     CPY #$6604
-FD/0AE0: 10 46        BPL $0B28
+FD/0AE0: 10 46        BPL Local_FD0B28
 FD/0AE2: 33 34        AND ($34,S),Y
 FD/0AE4: 43 24        EOR $24,S
 FD/0AE6: 11 22        ORA ($22),Y
-FD/0AE8: 22 21 08 13  JSR $130821
-FD/0AEC: 22 42 2E 01  JSR $012E42
+FD/0AE8: 22 21 08 13  JSR Routine_130821
+FD/0AEC: 22 42 2E 01  JSR Routine_012E42
 FD/0AF0: 42 22        WDM $22
 FD/0AF2: 43 32        EOR $32,S
 FD/0AF4: 00 43        BRK $43
@@ -20,7 +20,7 @@ FD/0AFC: 24 00        BIT $00
 FD/0AFE: 43 23        EOR $23,S
 FD/0B00: 64 34        STZ $34
 FD/0B02: 33 33        AND ($33,S),Y
-FD/0B04: 22 33 00 11  JSR $110033
+FD/0B04: 22 33 00 11  JSR Routine_110033
 FD/0B08: A6 21        LDX $21
 FD/0B0A: 34 11        BIT $11,X
 FD/0B0C: B7 21        LDA [$21],Y
@@ -43,7 +43,7 @@ FD/0B2B: 14 FB        TRB $FB
 FD/0B2D: C8           INY
 FD/0B2E: D3 FE        CMP ($FE,S),Y
 FD/0B30: 35 99        AND $99,X
-FD/0B32: F0 05        BEQ $0B39
+FD/0B32: F0 05        BEQ Local_FD0B39
 FD/0B34: 04 10        TSB $10
 FD/0B36: F4 05 FC     PEA $FC05
 FD/0B39: 05 04        ORA $04
@@ -53,7 +53,7 @@ FD/0B40: 14 26        TRB $26
 FD/0B42: 00 22        BRK $22
 FD/0B44: 01 77        ORA ($77,X)
 FD/0B46: 36 51        ROL $51,X
-FD/0B48: 10 99        BPL $0AE3
+FD/0B48: 10 99        BPL Local_FD0AE3
 FD/0B4A: 58           CLI
 FD/0B4B: 57 31        EOR [$31],Y
 FD/0B4D: B7 06        LDA [$06],Y
@@ -109,8 +109,8 @@ FD/0BB4: 66 33        ROR $33
 FD/0BB6: 32 22        AND ($22)
 FD/0BB8: 33 43        AND ($43,S),Y
 FD/0BBA: C4 13        CPY $13
-FD/0BBC: 22 FB 01 11  JSR $1101FB
-FD/0BC0: 22 11 4D 03  JSR $034D11
+FD/0BBC: 22 FB 01 11  JSR Routine_1101FB
+FD/0BC0: 22 11 4D 03  JSR Routine_034D11
 FD/0BC4: 04 10        TSB $10
 FD/0BC6: 01 4F        ORA ($4F,X)
 FD/0BC8: 02 23        COP $23
@@ -120,11 +120,11 @@ FD/0BCF: 36 00        ROL $00,X
 FD/0BD1: 34 13        BIT $13,X
 FD/0BD3: 32 35        AND ($35)
 FD/0BD5: 25 15        AND $15
-FD/0BD7: 22 34 00 24  JSR $240034
+FD/0BD7: 22 34 00 24  JSR Routine_240034
 FD/0BDB: 23 21        AND $21,S
 FD/0BDD: 65 25        ADC $25
 FD/0BDF: 33 21        AND ($21,S),Y
-FD/0BE1: 22 00 23 63  JSR $632300
+FD/0BE1: 22 00 23 63  JSR Routine_632300
 FD/0BE5: 21 23        AND ($23,X)
 FD/0BE7: 32 64        AND ($64)
 FD/0BE9: 33 44        AND ($44,S),Y
@@ -134,7 +134,7 @@ FD/0BEF: 35 43        AND $43,X
 FD/0BF1: 55 22        EOR $22,X
 FD/0BF3: 43 00        EOR $00,S
 FD/0BF5: 64 64        STZ $64
-FD/0BF7: 22 82 68 56  JSR $566882
+FD/0BF7: 22 82 68 56  JSR Routine_566882
 FD/0BFB: 33 73        AND ($73,S),Y
 FD/0BFD: 00 78        BRK $78
 FD/0BFF: 35 76        AND $76,X
@@ -146,7 +146,7 @@ FD/0C08: 52 66        EOR ($66)
 FD/0C0A: 68           PLA
 FD/0C0B: 55 35        EOR $35,X
 FD/0C0D: 13 31        ORA ($31,S),Y
-FD/0C0F: 80 B9        BRA $0BCA
+FD/0C0F: 80 B9        BRA Local_FD0BCA
 FD/0C11: EC 13 61     CPX $6113
 FD/0C14: CA           DEX
 FD/0C15: 0E 22 4A     ASL $4A22
@@ -198,7 +198,7 @@ FD/0C78: 78           SEI
 FD/0C79: 35 33        AND $33,X
 FD/0C7B: 23 52        AND $52,S
 FD/0C7D: 65 33        ADC $33
-FD/0C7F: 80 12        BRA $0C93
+FD/0C7F: 80 12        BRA Local_FD0C93
 FD/0C81: 55 53        EOR $53,X
 FD/0C83: 32 22        AND ($22)
 FD/0C85: 56 33        LSR $33,X

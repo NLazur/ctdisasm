@@ -15,10 +15,10 @@ D1/9872: 03 9C        ORA $9C,S
 D1/9874: C0 04        CPY #$04
 D1/9876: 7F 84 92 01  ADC $019284,X
 D1/987A: 98           TYA
-D1/987B: 30 95        BMI $9812
+D1/987B: 30 95        BMI Local_D19812
 D1/987D: 0F 88 00 A2  ORA $A20088
 D1/9881: 00 80        BRK $80
-D1/9883: 70 00        BVS $9885
+D1/9883: 70 00        BVS Local_D19885
 D1/9885: A7 00        LDA [$00]
 D1/9887: 00 00        BRK $00
 D1/9889: 00 A3        BRK $A3
@@ -103,7 +103,7 @@ D1/991E: 02 A1        COP $A1
 D1/9920: 00 A5        BRK $A5
 D1/9922: 02 7F        COP $7F
 D1/9924: 84 83        STY $83
-D1/9926: 30 A6        BMI $98CE
+D1/9926: 30 A6        BMI Local_D198CE
 D1/9928: 00 88        BRK $88
 D1/992A: 00 A3        BRK $A3
 D1/992C: 00 00        BRK $00
@@ -161,7 +161,7 @@ D1/9992: 08           PHP
 D1/9993: A2 FF        LDX #$FF
 D1/9995: 01 8A        ORA ($8A,X)
 D1/9997: 00 80        BRK $80
-D1/9999: 70 00        BVS $999B
+D1/9999: 70 00        BVS Local_D1999B
 D1/999B: AB           PLB
 D1/999C: 00 95        BRK $95
 D1/999E: 03 B0        ORA $B0,S
@@ -202,7 +202,7 @@ D1/99E8: 04 87        TSB $87
 D1/99EA: 06 88        ASL $88
 D1/99EC: 00 A2        BRK $A2
 D1/99EE: 00 80        BRK $80
-D1/99F0: 70 80        BVS $9972
+D1/99F0: 70 80        BVS Local_D19972
 D1/99F2: A7 00        LDA [$00]
 D1/99F4: 00 00        BRK $00
 D1/99F6: 00 DD        BRK $DD
@@ -217,8 +217,8 @@ D1/9A0A: 00 7F        BRK $7F
 D1/9A0C: 9D 17 AE     STA $AE17,X
 D1/9A0F: 00 83        BRK $83
 D1/9A11: FF 82 C1 8F  SBC $8FC182,X
-D1/9A15: 80 20        BRA $9A37
-D1/9A17: 80 00        BRA $9A19
+D1/9A15: 80 20        BRA Local_D19A37
+D1/9A17: 80 00        BRA Local_D19A19
 D1/9A19: 84 91        STY $91
 D1/9A1B: 08           PHP
 D1/9A1C: A2 B0        LDX #$B0
@@ -236,7 +236,7 @@ D1/9A33: 01 E6        ORA ($E6,X)
 D1/9A35: 01 8E        ORA ($8E,X)
 D1/9A37: 41 10        EOR ($10,X)
 D1/9A39: 09 00        ORA #$00
-D1/9A3B: 80 08        BRA $9A45
+D1/9A3B: 80 08        BRA Local_D19A45
 D1/9A3D: 01 8E        ORA ($8E,X)
 D1/9A3F: 41 20        EOR ($20,X)
 D1/9A41: 60           RTS

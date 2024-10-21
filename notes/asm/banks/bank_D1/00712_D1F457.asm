@@ -1,7 +1,7 @@
 ; Bank: D1 | Start Address: F457
 Routine_D1F457:
 D1/F457: AD 12 CE     LDA $CE12
-D1/F45A: F0 17        BEQ $F473
+D1/F45A: F0 17        BEQ Local_D1F473
 D1/F45C: 9C 12 CE     STZ $CE12
 D1/F45F: 7B           TDC
 D1/F460: AA           TAX

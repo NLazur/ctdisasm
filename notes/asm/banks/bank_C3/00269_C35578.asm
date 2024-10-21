@@ -7,7 +7,7 @@ C3/557D: 85 32        STA $32
 C3/557F: A5 0E        LDA $0E
 C3/5581: 85 34        STA $34
 C3/5583: 18           CLC
-C3/5584: 4C 7B 35     JMP $357B
+C3/5584: 4C 7B 35     JMP Local_C3357B
 C3/5587: 25 19        AND $19
 C3/5589: A3 09        LDA $09,S
 C3/558B: 40           RTI

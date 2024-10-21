@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 7A1C
 Routine_D07A1C:
-D0/7A1C: 10 30        BPL $7A4E
+D0/7A1C: 10 30        BPL Local_D07A4E
 D0/7A1E: 00 10        BRK $10
 D0/7A20: 00 08        BRK $08
 D0/7A22: 00 00        BRK $00
@@ -16,7 +16,7 @@ D0/7A36: 00 00        BRK $00
 D0/7A38: FE FE F8     INC $F8FE,X
 D0/7A3B: F8           SED
 D0/7A3C: E0 E0 80     CPX #$80E0
-D0/7A3F: 80 00        BRA $7A41
+D0/7A3F: 80 00        BRA Local_D07A41
 D0/7A41: 00 00        BRK $00
 D0/7A43: 00 00        BRK $00
 D0/7A45: 00 00        BRK $00

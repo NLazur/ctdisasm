@@ -1,14 +1,14 @@
 ; Bank: D1 | Start Address: A109
 Routine_D1A109:
-D1/A109: 50 30        BVC $A13B
+D1/A109: 50 30        BVC Local_D1A13B
 D1/A10B: FF 00 12 12  SBC $121200,X
 D1/A10F: 00 98        BRK $98
-D1/A111: 80 8A        BRA $A09D
-D1/A113: 10 80        BPL $A095
-D1/A115: 70 00        BVS $A117
+D1/A111: 80 8A        BRA Local_D1A09D
+D1/A113: 10 80        BPL Local_D1A095
+D1/A115: 70 00        BVS Local_D1A117
 D1/A117: 8A           TXA
 D1/A118: 41 80        EOR ($80,X)
-D1/A11A: 70 00        BVS $A11C
+D1/A11A: 70 00        BVS Local_D1A11C
 D1/A11C: 95 0B        STA $0B,X
 D1/A11E: 88           DEY
 D1/A11F: 00 93        BRK $93

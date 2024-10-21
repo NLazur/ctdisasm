@@ -29,11 +29,11 @@ D1/661C: 41 94        EOR ($94,X)
 D1/661E: 08           PHP
 D1/661F: 8A           TXA
 D1/6620: 01 46        ORA ($46,X)
-D1/6622: 4C 00 83     JMP $8300
+D1/6622: 4C 00 83     JMP Local_D18300
 D1/6625: 07 00        ORA [$00]
 D1/6627: 84 8E        STY $8E
-D1/6629: 50 C0        BVC $65EB
-D1/662B: 10 FF        BPL $662C
+D1/6629: 50 C0        BVC Local_D165EB
+D1/662B: 10 FF        BPL Local_D1662C
 D1/662D: FF 0B 01 9D  SBC $9D010B,X
 D1/6631: 15 91        ORA $91,X
 D1/6633: BE 9E 83     LDX $839E,Y
@@ -46,9 +46,9 @@ D1/663E: 8B           PHB
 D1/663F: 01 00        ORA ($00,X)
 D1/6641: 84 8B        STY $8B
 D1/6643: 01 8E        ORA ($8E,X)
-D1/6645: 50 C0        BVC $6607
-D1/6647: 10 00        BPL $6649
+D1/6645: 50 C0        BVC Local_D16607
+D1/6647: 10 00        BPL Local_D16649
 D1/6649: FF 0B 23 93  SBC $93230B,X
-D1/664D: 10 02        BPL $6651
+D1/664D: 10 02        BPL Local_D16651
 D1/664F: 04 83        TSB $83
 D1/6651: 60           RTS

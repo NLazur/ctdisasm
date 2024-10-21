@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 819A
 Routine_D1819A:
-D1/819A: 80 FF        BRA $819B
+D1/819A: 80 FF        BRA Local_D1819B
 D1/819C: 0A           ASL
 D1/819D: 01 9D        ORA ($9D,X)
 D1/819F: 13 83        ORA ($83,S),Y
@@ -35,20 +35,20 @@ D1/81D5: 01 A5        ORA ($A5,X)
 D1/81D7: 06 82        ASL $82
 D1/81D9: E3 7F        SBC $7F,S
 D1/81DB: 92 01        STA ($01)
-D1/81DD: B0 41        BCS $8220
+D1/81DD: B0 41        BCS Local_D18220
 D1/81DF: CB           WAI
 D1/81E0: E9 81        SBC #$81
 D1/81E2: 93 04        STA ($04,S),Y
 D1/81E4: 02 03        COP $03
 D1/81E6: CA           DEX
-D1/81E7: F0 81        BEQ $816A
+D1/81E7: F0 81        BEQ Local_D1816A
 D1/81E9: 93 04        STA ($04,S),Y
 D1/81EB: 02 02        COP $02
 D1/81ED: CA           DEX
-D1/81EE: F0 81        BEQ $8171
+D1/81EE: F0 81        BEQ Local_D18171
 D1/81F0: 95 0F        STA $0F,X
 D1/81F2: 98           TYA
-D1/81F3: 10 88        BPL $817D
+D1/81F3: 10 88        BPL Local_D1817D
 D1/81F5: 00 D8        BRK $D8
 D1/81F7: 8E 00 00     STX $0000
 D1/81FA: 9D 17 83     STA $8317,X
@@ -70,7 +70,7 @@ D1/8221: 7F A9 1A 12  ADC $121AA9,X
 D1/8225: B2 00        LDA ($00)
 D1/8227: B2 01        LDA ($01)
 D1/8229: 7F BF 07 8E  ADC $8E07BF,X
-D1/822D: 50 19        BVC $8248
+D1/822D: 50 19        BVC Local_D18248
 D1/822F: 03 FF        ORA $FF,S
 D1/8231: 00 08        BRK $08
 D1/8233: 01 83        ORA ($83,X)
@@ -97,14 +97,14 @@ D1/8262: 00 08        BRK $08
 D1/8264: 02 83        COP $83
 D1/8266: 3E 04 84     ROL $8404,X
 D1/8269: 7F BF 03 8E  ADC $8E03BF,X
-D1/826D: 50 10        BVC $827F
+D1/826D: 50 10        BVC Local_D1827F
 D1/826F: 09 80        ORA #$80
 D1/8271: FF 09 02 8E  SBC $8E0209,X
-D1/8275: 50 20        BVC $8297
-D1/8277: 30 80        BMI $81F9
+D1/8275: 50 20        BVC Local_D18297
+D1/8277: 30 80        BMI Local_D181F9
 D1/8279: FF 0A 02 8E  SBC $8E020A,X
-D1/827D: 50 50        BVC $82CF
-D1/827F: 30 80        BMI $8201
+D1/827D: 50 50        BVC Local_D182CF
+D1/827F: 30 80        BMI Local_D18201
 D1/8281: FF 0B 12 9D  SBC $9D120B,X
 D1/8285: 13 91        ORA ($91,S),Y
 D1/8287: 08           PHP

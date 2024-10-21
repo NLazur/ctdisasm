@@ -1,7 +1,7 @@
 ; Bank: CF | Start Address: D0C6
 Routine_CFD0C6:
 CF/D0C6: 3A           DEC
-CF/D0C7: 20 34 17     JSR $1734
+CF/D0C7: 20 34 17     JSR Local_CF1734
 CF/D0CA: 37 17        AND [$17],Y
 CF/D0CC: 3A           DEC
 CF/D0CD: 17 3A        ORA [$3A],Y
@@ -28,9 +28,9 @@ CF/D0F5: 17 67        ORA [$67],Y
 CF/D0F7: 17 6A        ORA [$6A],Y
 CF/D0F9: 17 6D        ORA [$6D],Y
 CF/D0FB: 17 1C        ORA [$1C],Y
-CF/D0FD: 20 1C 20     JSR $201C
+CF/D0FD: 20 1C 20     JSR Local_CF201C
 CF/D100: 1C 20 1C     TRB $1C20
-CF/D103: 20 1D 23     JSR $231D
+CF/D103: 20 1D 23     JSR Local_CF231D
 CF/D106: 1F 23 21 23  ORA $232123,X
 CF/D10A: 23 23        AND $23,S
 CF/D10C: 25 23        AND $23
@@ -44,7 +44,7 @@ CF/D119: 17 79        ORA [$79],Y
 CF/D11B: 17 7C        ORA [$7C],Y
 CF/D11D: 17 7F        ORA [$7F],Y
 CF/D11F: 17 1C        ORA [$1C],Y
-CF/D121: 20 1B 23     JSR $231B
+CF/D121: 20 1B 23     JSR Local_CF231B
 CF/D124: 39 23 3B     AND $3B23,Y
 CF/D127: 23 3D        AND $3D,S
 CF/D129: 23 3F        AND $3F,S
@@ -69,7 +69,7 @@ CF/D14D: 23 63        AND $63,S
 CF/D14F: 23 65        AND $65,S
 CF/D151: 23 67        AND $67,S
 CF/D153: 23 1C        AND $1C,S
-CF/D155: 20 1C 20     JSR $201C
+CF/D155: 20 1C 20     JSR Local_CF201C
 CF/D158: 53 2E        EOR ($2E,S),Y
 CF/D15A: 53 6E        EOR ($6E,S),Y
 CF/D15C: 53 2E        EOR ($2E,S),Y
@@ -84,7 +84,7 @@ CF/D16D: 23 83        AND $83,S
 CF/D16F: 23 85        AND $85,S
 CF/D171: 23 87        AND $87,S
 CF/D173: 23 1C        AND $1C,S
-CF/D175: 20 94 37     JSR $3794
+CF/D175: 20 94 37     JSR Local_CF3794
 CF/D178: 53 AE        EOR ($AE,S),Y
 CF/D17A: 53 EE        EOR ($EE,S),Y
 CF/D17C: 53 AE        EOR ($AE,S),Y

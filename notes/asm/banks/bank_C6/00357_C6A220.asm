@@ -10,5 +10,5 @@ C6/A22A: 2A           ROL
 C6/A22B: F6 E3        INC $E3,X
 C6/A22D: 25 A9        AND $A9
 C6/A22F: 01 C1        ORA ($C1,X)
-C6/A231: 50 51        BVC $A284
+C6/A231: 50 51        BVC Local_C6A284
 C6/A233: 60           RTS

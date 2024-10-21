@@ -42,5 +42,5 @@ FD/B548: 9D 4D B1     STA $B14D,X
 FD/B54B: 9D A0 AF     STA $AFA0,X
 FD/B54E: E8           INX
 FD/B54F: E0 0B 00     CPX #$000B
-FD/B552: 90 95        BCC $B4E9
+FD/B552: 90 95        BCC Local_FDB4E9
 FD/B554: 6B           RTL

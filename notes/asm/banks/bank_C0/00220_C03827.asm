@@ -10,9 +10,9 @@ C0/3831: 86 C7        STX $C7
 C0/3833: A8           TAY
 C0/3834: E2 20        SEP #$20
 C0/3836: A9 03        LDA #$03
-C0/3838: 22 03 80 C1  JSR $C18003
+C0/3838: 22 03 80 C1  JSR Routine_C18003
 C0/383C: C9 00        CMP #$00
-C0/383E: F0 05        BEQ $3845
+C0/383E: F0 05        BEQ Local_C03845
 C0/3840: A6 C7        LDX $C7
 C0/3842: E8           INX
 C0/3843: 38           SEC

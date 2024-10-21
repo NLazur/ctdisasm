@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: CB11
 Routine_D0CB11:
-D0/CB11: 90 00        BCC $CB13
+D0/CB11: 90 00        BCC Local_D0CB13
 D0/CB13: C0 00        CPY #$00
 D0/CB15: 00 00        BRK $00
 D0/CB17: 00 60        BRK $60
@@ -12,10 +12,10 @@ D0/CB21: 03 00        ORA $00,S
 D0/CB23: 00 00        BRK $00
 D0/CB25: 00 00        BRK $00
 D0/CB27: 00 00        BRK $00
-D0/CB29: 80 80        BRA $CAAB
+D0/CB29: 80 80        BRA Local_D0CAAB
 D0/CB2B: C0 80        CPY #$80
 D0/CB2D: C0 C0        CPY #$C0
-D0/CB2F: 80 80        BRA $CAB1
+D0/CB2F: 80 80        BRA Local_D0CAB1
 D0/CB31: 00 00        BRK $00
 D0/CB33: 00 00        BRK $00
 D0/CB35: 00 00        BRK $00

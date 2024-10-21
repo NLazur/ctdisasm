@@ -2,63 +2,63 @@
 Routine_C1ADA1:
 C1/ADA1: 7B           TDC
 C1/ADA2: AD CB AE     LDA $AECB
-C1/ADA5: F0 79        BEQ $AE20
+C1/ADA5: F0 79        BEQ Local_C1AE20
 C1/ADA7: C9 02        CMP #$02
-C1/ADA9: 90 68        BCC $AE13
+C1/ADA9: 90 68        BCC Local_C1AE13
 C1/ADAB: AD 21 AF     LDA $AF21
-C1/ADAE: F0 28        BEQ $ADD8
+C1/ADAE: F0 28        BEQ Local_C1ADD8
 C1/ADB0: 7B           TDC
 C1/ADB1: AA           TAX
 C1/ADB2: A8           TAY
 C1/ADB3: B9 CC AE     LDA $AECC,Y
 C1/ADB6: 29 0F        AND #$0F
 C1/ADB8: DD 3A B2     CMP $B23A,X
-C1/ADBB: F0 11        BEQ $ADCE
+C1/ADBB: F0 11        BEQ Local_C1ADCE
 C1/ADBD: C8           INY
 C1/ADBE: 98           TYA
 C1/ADBF: CD CB AE     CMP $AECB
-C1/ADC2: 90 EF        BCC $ADB3
+C1/ADC2: 90 EF        BCC Local_C1ADB3
 C1/ADC4: 7B           TDC
 C1/ADC5: A8           TAY
 C1/ADC6: E8           INX
 C1/ADC7: 8A           TXA
 C1/ADC8: C9 08        CMP #$08
-C1/ADCA: 90 E7        BCC $ADB3
-C1/ADCC: 80 45        BRA $AE13
+C1/ADCA: 90 E7        BCC Local_C1ADB3
+C1/ADCC: 80 45        BRA Local_C1AE13
 C1/ADCE: B9 CC AE     LDA $AECC,Y
-C1/ADD1: 10 E0        BPL $ADB3
+C1/ADD1: 10 E0        BPL Local_C1ADB3
 C1/ADD3: 8D CC AE     STA $AECC
-C1/ADD6: 80 24        BRA $ADFC
+C1/ADD6: 80 24        BRA Local_C1ADFC
 C1/ADD8: 7B           TDC
 C1/ADD9: AA           TAX
 C1/ADDA: A8           TAY
 C1/ADDB: B9 CC AE     LDA $AECC,Y
 C1/ADDE: 29 0F        AND #$0F
 C1/ADE0: DD 3A B2     CMP $B23A,X
-C1/ADE3: F0 11        BEQ $ADF6
+C1/ADE3: F0 11        BEQ Local_C1ADF6
 C1/ADE5: C8           INY
 C1/ADE6: 98           TYA
 C1/ADE7: CD CB AE     CMP $AECB
-C1/ADEA: 90 EF        BCC $ADDB
+C1/ADEA: 90 EF        BCC Local_C1ADDB
 C1/ADEC: 7B           TDC
 C1/ADED: A8           TAY
 C1/ADEE: E8           INX
 C1/ADEF: 8A           TXA
 C1/ADF0: C9 08        CMP #$08
-C1/ADF2: 90 E7        BCC $ADDB
-C1/ADF4: 80 1D        BRA $AE13
+C1/ADF2: 90 E7        BCC Local_C1ADDB
+C1/ADF4: 80 1D        BRA Local_C1AE13
 C1/ADF6: B9 CC AE     LDA $AECC,Y
 C1/ADF9: 8D CC AE     STA $AECC
 C1/ADFC: AD 20 AF     LDA $AF20
-C1/ADFF: F0 12        BEQ $AE13
+C1/ADFF: F0 12        BEQ Local_C1AE13
 C1/AE01: AD CC AE     LDA $AECC
 C1/AE04: 89 40        BIT #$40
-C1/AE06: F0 0B        BEQ $AE13
-C1/AE08: 20 E0 A4     JSR $A4E0
-C1/AE0B: 80 13        BRA $AE20
+C1/AE06: F0 0B        BEQ Local_C1AE13
+C1/AE08: 20 E0 A4     JSR Local_C1A4E0
+C1/AE0B: 80 13        BRA Local_C1AE20
 C1/AE0D: 7B           TDC
 C1/AE0E: 8D CB AE     STA $AECB
-C1/AE11: 80 0D        BRA $AE20
+C1/AE11: 80 0D        BRA Local_C1AE20
 C1/AE13: A9 01        LDA #$01
 C1/AE15: 8D CB AE     STA $AECB
 C1/AE18: AD CC AE     LDA $AECC

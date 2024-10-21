@@ -10,7 +10,7 @@ FE/24B1: 52 88        EOR ($88)
 FE/24B3: 52 98        EOR ($98)
 FE/24B5: 62 A8 42     PER $FE6760
 FE/24B8: 7F B8 52 51  ADC $5152B8,X
-FE/24BC: 10 C8        BPL $2486
+FE/24BC: 10 C8        BPL Local_FE2486
 FE/24BE: 12 AC        ORA ($AC)
 FE/24C0: 0F D8 22 E3  ORA $E322D8
 FE/24C4: 0B           PHD
@@ -18,7 +18,7 @@ FE/24C5: 45 14        EOR $14
 FE/24C7: 18           CLC
 FE/24C8: 6A           ROR
 FE/24C9: 13 8C        ORA ($8C,S),Y
-FE/24CB: 30 18        BMI $24E5
+FE/24CB: 30 18        BMI Local_FE24E5
 FE/24CD: A7 1C        LDA [$1C]
 FE/24CF: 44 1E 0E     MVP $1E,$0E
 FE/24D2: AB           PLB
@@ -40,7 +40,7 @@ FE/24F0: 0D 2D 12     ORA $122D
 FE/24F3: 45 6B        EOR $6B
 FE/24F5: 32 A8        AND ($A8)
 FE/24F7: 02 7B        COP $7B
-FE/24F9: 22 24 19 2C  JSR $2C1924
+FE/24F9: 22 24 19 2C  JSR Routine_2C1924
 FE/24FD: F3 37        SBC ($37,S),Y
 FE/24FF: 00 3C        BRK $3C
 FE/2501: 31 23        AND ($23),Y

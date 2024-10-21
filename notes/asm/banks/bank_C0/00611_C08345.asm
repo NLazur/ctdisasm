@@ -12,7 +12,7 @@ C0/8356: 85 5C        STA $5C
 C0/8358: A5 0E        LDA $0E
 C0/835A: 3A           DEC
 C0/835B: 85 5A        STA $5A
-C0/835D: 20 E4 77     JSR $77E4
+C0/835D: 20 E4 77     JSR Local_C077E4
 C0/8360: A9 01        LDA #$01
 C0/8362: 04 7A        TSB $7A
 C0/8364: 60           RTS

@@ -27,8 +27,8 @@ C0/63D3: 0A           ASL
 C0/63D4: E2 10        SEP #$10
 C0/63D6: AA           TAX
 C0/63D7: FC 77 64     JSR ($6477,X)
-C0/63DA: 90 03        BCC $63DF
-C0/63DC: 82 6A FF     BRL $C06349
+C0/63DA: 90 03        BCC Local_C063DF
+C0/63DC: 82 6A FF     BRL Routine_C06349
 C0/63DF: C2 10        REP #$10
 C0/63E1: A6 C3        LDX $C3
 C0/63E3: E8           INX

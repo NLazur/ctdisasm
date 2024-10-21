@@ -5,7 +5,7 @@ C2/7C2A: 00 00        BRK $00
 C2/7C2C: 88           DEY
 C2/7C2D: 00 22        BRK $22
 C2/7C2F: 00 88        BRK $88
-C2/7C31: 22 88 22 CC  JSR $CC2288
+C2/7C31: 22 88 22 CC  JSR Routine_CC2288
 C2/7C35: 33 CC        AND ($CC,S),Y
 C2/7C37: 33 EE        AND ($EE,S),Y
 C2/7C39: BB           TYX

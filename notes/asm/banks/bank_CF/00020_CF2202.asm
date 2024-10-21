@@ -1,6 +1,6 @@
 ; Bank: CF | Start Address: 2202
 Routine_CF2202:
-CF/2202: 80 80        BRA $2184
+CF/2202: 80 80        BRA Local_CF2184
 CF/2204: 00 01        BRK $01
 CF/2206: 00 03        BRK $03
 CF/2208: 00 C4        BRK $C4
@@ -20,7 +20,7 @@ CF/2224: 0F 08 0F 08  ORA $080F08
 CF/2228: 1F 11 1F 11  ORA $111F11,X
 CF/222C: 1F 11 3F 21  ORA $213F11,X
 CF/2230: C0 70 C0     CPY #$C070
-CF/2233: D0 80        BNE $21B5
+CF/2233: D0 80        BNE Local_CF21B5
 CF/2235: 8C 80 84     STY $8480
 CF/2238: 00 04        BRK $04
 CF/223A: 00 0C        BRK $0C
@@ -38,10 +38,10 @@ CF/2250: 07 44        ORA [$44]
 CF/2252: 1F 50 3F 43  ORA $433F50,X
 CF/2256: 7C 84 F8     JMP ($F884,X)
 CF/2259: 08           PHP
-CF/225A: F0 10        BEQ $226C
-CF/225C: F0 10        BEQ $226E
-CF/225E: F0 00        BEQ $2260
-CF/2260: 80 00        BRA $2262
+CF/225A: F0 10        BEQ Local_CF226C
+CF/225C: F0 10        BEQ Local_CF226E
+CF/225E: F0 00        BEQ Local_CF2260
+CF/2260: 80 00        BRA Local_CF2262
 CF/2262: 00 00        BRK $00
 CF/2264: 00 00        BRK $00
 CF/2266: 00 00        BRK $00
@@ -67,6 +67,6 @@ CF/228C: 07 04        ORA [$04]
 CF/228E: 07 04        ORA [$04]
 CF/2290: F8           SED
 CF/2291: 08           PHP
-CF/2292: F0 10        BEQ $22A4
+CF/2292: F0 10        BEQ Local_CF22A4
 CF/2294: E0 20 C0     CPX #$C020
 CF/2297: 40           RTI

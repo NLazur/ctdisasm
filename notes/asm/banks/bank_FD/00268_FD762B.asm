@@ -10,7 +10,7 @@ FD/7637: C6 10        DEC $10
 FD/7639: 1F 02 00 B3  ORA $B30002,X
 FD/763D: C3 62        CMP $62,S
 FD/763F: A0 04        LDY #$04
-FD/7641: 80 7F        BRA $76C2
+FD/7641: 80 7F        BRA Local_FD76C2
 FD/7643: BB           TYX
 FD/7644: 12 BD        ORA ($BD)
 FD/7646: 7E 41 FE     ROR $FE41,X
@@ -25,7 +25,7 @@ FD/765A: 01 C0        ORA ($C0,X)
 FD/765C: C1 0F        CMP ($0F,X)
 FD/765E: 02 B0        COP $B0
 FD/7660: FE 10 04     INC $0410,X
-FD/7663: 90 00        BCC $7665
+FD/7663: 90 00        BCC Local_FD7665
 FD/7665: 92 67        STA ($67)
 FD/7667: 7B           TDC
 FD/7668: 67 7B        ADC [$7B]
@@ -33,7 +33,7 @@ FD/766A: 85 00        STA $00
 FD/766C: 92 8C        STA ($8C)
 FD/766E: 02 00        COP $00
 FD/7670: 00 FF        BRK $FF
-FD/7672: 80 7F        BRA $76F3
+FD/7672: 80 7F        BRA Local_FD76F3
 FD/7674: 02 10        COP $10
 FD/7676: 48           PHA
 FD/7677: C0 3F        CPY #$3F

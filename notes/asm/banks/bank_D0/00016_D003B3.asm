@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 03B3
 Routine_D003B3:
 D0/03B3: E0 C0 C0     CPX #$C0C0
-D0/03B6: 80 80        BRA $0338
+D0/03B6: 80 80        BRA Local_D00338
 D0/03B8: 00 00        BRK $00
 D0/03BA: 00 00        BRK $00
 D0/03BC: 00 00        BRK $00
@@ -24,12 +24,12 @@ D0/03DC: 00 00        BRK $00
 D0/03DE: 00 00        BRK $00
 D0/03E0: 00 00        BRK $00
 D0/03E2: 00 00        BRK $00
-D0/03E4: 80 00        BRA $03E6
-D0/03E6: 80 00        BRA $03E8
+D0/03E4: 80 00        BRA Local_D003E6
+D0/03E6: 80 00        BRA Local_D003E8
 D0/03E8: 00 00        BRK $00
 D0/03EA: 00 00        BRK $00
 D0/03EC: 00 00        BRK $00
-D0/03EE: 80 C0        BRA $03B0
+D0/03EE: 80 C0        BRA Local_D003B0
 D0/03F0: 00 00        BRK $00
 D0/03F2: 00 00        BRK $00
 D0/03F4: 00 00        BRK $00
@@ -48,8 +48,8 @@ D0/040C: 00 00        BRK $00
 D0/040E: 00 00        BRK $00
 D0/0410: 00 00        BRK $00
 D0/0412: 00 00        BRK $00
-D0/0414: 80 00        BRA $0416
-D0/0416: 80 00        BRA $0418
+D0/0414: 80 00        BRA Local_D00416
+D0/0416: 80 00        BRA Local_D00418
 D0/0418: 00 00        BRK $00
 D0/041A: 00 00        BRK $00
 D0/041C: 00 80        BRK $80
@@ -73,10 +73,10 @@ D0/043F: 00 00        BRK $00
 D0/0441: 00 C0        BRK $C0
 D0/0443: 00 C0        BRK $C0
 D0/0445: 00 A0        BRK $A0
-D0/0447: 20 00 00     JSR $0000
+D0/0447: 20 00 00     JSR Local_D00000
 D0/044A: 00 00        BRK $00
 D0/044C: C0 E0        CPY #$E0
-D0/044E: F0 D0        BEQ $0420
+D0/044E: F0 D0        BEQ Local_D00420
 D0/0450: 00 00        BRK $00
 D0/0452: 00 00        BRK $00
 D0/0454: 00 00        BRK $00
@@ -87,18 +87,18 @@ D0/045D: 00 2F        BRK $2F
 D0/045F: 00 00        BRK $00
 D0/0461: 00 03        BRK $03
 D0/0463: 08           PHP
-D0/0464: 10 10        BPL $0476
+D0/0464: 10 10        BPL Local_D00476
 D0/0466: 3F 3F 00 00  AND $00003F,X
 D0/046A: 00 00        BRK $00
 D0/046C: C0 00        CPY #$00
-D0/046E: 30 00        BMI $0470
+D0/046E: 30 00        BMI Local_D00470
 D0/0470: 98           TYA
-D0/0471: 80 78        BRA $04EB
+D0/0471: 80 78        BRA Local_D004EB
 D0/0473: 00 EC        BRK $EC
 D0/0475: 00 D4        BRK $D4
-D0/0477: 10 00        BPL $0479
+D0/0477: 10 00        BPL Local_D00479
 D0/0479: 00 C0        BRK $C0
-D0/047B: F0 78        BEQ $04F5
+D0/047B: F0 78        BEQ Local_D004F5
 D0/047D: F8           SED
 D0/047E: FC EC 03     JSR ($03EC,X)
 D0/0481: 00 00        BRK $00

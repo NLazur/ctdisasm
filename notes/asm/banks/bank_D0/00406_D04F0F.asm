@@ -1,20 +1,20 @@
 ; Bank: D0 | Start Address: 4F0F
 Routine_D04F0F:
-D0/4F0F: 90 18        BCC $4F29
+D0/4F0F: 90 18        BCC Local_D04F29
 D0/4F11: 04 84        TSB $84
-D0/4F13: 82 42 C1     BRL $D01058
+D0/4F13: 82 42 C1     BRL Routine_D01058
 D0/4F16: 21 E0        AND ($E0,X)
 D0/4F18: 00 00        BRK $00
 D0/4F1A: 00 00        BRK $00
 D0/4F1C: 00 40        BRK $40
-D0/4F1E: 20 10 00     JSR $0010
+D0/4F1E: 20 10 00     JSR Local_D00010
 D0/4F21: 00 00        BRK $00
 D0/4F23: 00 07        BRK $07
 D0/4F25: 08           PHP
 D0/4F26: 18           CLC
-D0/4F27: 20 20 40     JSR $4020
+D0/4F27: 20 20 40     JSR Local_D04020
 D0/4F2A: 42 83        WDM $83
-D0/4F2C: 82 05 8F     BRL $D0DE34
+D0/4F2C: 82 05 8F     BRL Routine_D0DE34
 D0/4F2F: 08           PHP
 D0/4F30: 00 00        BRK $00
 D0/4F32: 00 00        BRK $00
@@ -27,7 +27,7 @@ D0/4F3D: C0 21 E0     CPY #$E021
 D0/4F40: 00 00        BRK $00
 D0/4F42: 00 00        BRK $00
 D0/4F44: 00 40        BRK $40
-D0/4F46: 20 10 00     JSR $0010
+D0/4F46: 20 10 00     JSR Local_D00010
 D0/4F49: 00 00        BRK $00
 D0/4F4B: 00 03        BRK $03
 D0/4F4D: 00 04        BRK $04
@@ -39,11 +39,11 @@ D0/4F55: 09 0F 08     ORA #$080F
 D0/4F58: 00 00        BRK $00
 D0/4F5A: 00 00        BRK $00
 D0/4F5C: C0 00 20     CPY #$2000
-D0/4F5F: 10 10        BPL $4F71
+D0/4F5F: 10 10        BPL Local_D04F71
 D0/4F61: 00 90        BRK $90
-D0/4F63: 80 60        BRA $4FC5
-D0/4F65: D0 E0        BNE $4F47
-D0/4F67: 20 00 00     JSR $0000
+D0/4F63: 80 60        BRA Local_D04FC5
+D0/4F65: D0 E0        BNE Local_D04F47
+D0/4F67: 20 00 00     JSR Local_D00000
 D0/4F6A: 00 00        BRK $00
 D0/4F6C: 00 40        BRK $40
 D0/4F6E: 00 10        BRK $10

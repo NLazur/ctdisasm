@@ -10,7 +10,7 @@ C3/48DE: AD 00 10     LDA $1000
 C3/48E1: 0B           PHD
 C3/48E2: 65 4F        ADC $4F
 C3/48E4: 85 4F        STA $4F
-C3/48E6: 20 65 02     JSR $0265
+C3/48E6: 20 65 02     JSR Local_C30265
 C3/48E9: 34 BF        BIT $BF,X
 C3/48EB: 09 BE        ORA #$BE
 C3/48ED: F6 60        INC $60,X

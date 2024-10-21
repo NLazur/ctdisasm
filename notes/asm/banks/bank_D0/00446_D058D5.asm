@@ -2,11 +2,11 @@
 Routine_D058D5:
 D0/58D5: C0 00 00     CPY #$0000
 D0/58D8: E9 ED 80     SBC #$80ED
-D0/58DB: 80 00        BRA $58DD
+D0/58DB: 80 00        BRA Local_D058DD
 D0/58DD: 00 00        BRK $00
 D0/58DF: 00 00        BRK $00
 D0/58E1: 00 30        BRK $30
-D0/58E3: F0 00        BEQ $58E5
+D0/58E3: F0 00        BEQ Local_D058E5
 D0/58E5: 00 00        BRK $00
 D0/58E7: 00 00        BRK $00
 D0/58E9: 00 00        BRK $00
@@ -24,7 +24,7 @@ D0/5902: 5E B9 AA     LSR $AAB9,X
 D0/5905: DD FA 4D     CMP $4DFA,X
 D0/5908: 7B           TDC
 D0/5909: 84 FF        STY $FF
-D0/590B: 80 FF        BRA $590C
-D0/590D: 80 3F        BRA $594E
+D0/590B: 80 FF        BRA Local_D0590C
+D0/590D: 80 3F        BRA Local_D0594E
 D0/590F: C0 48 48     CPY #$4848
 D0/5912: 40           RTI

@@ -12,7 +12,7 @@ C2/C5B9: 38           SEC
 C2/C5BA: E8           INX
 C2/C5BB: E8           INX
 C2/C5BC: 2A           ROL
-C2/C5BD: 90 FB        BCC $C5BA
+C2/C5BD: 90 FB        BCC Local_C2C5BA
 C2/C5BF: C2 20        REP #$20
 C2/C5C1: BF 54 D5 FF  LDA $FFD554,X
 C2/C5C5: 28           PLP

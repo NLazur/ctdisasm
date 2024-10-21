@@ -4,7 +4,7 @@ FE/CDFA: 14 6C        TRB $6C
 FE/CDFC: 34 02        BIT $02,X
 FE/CDFE: 69 5F        ADC #$5F
 FE/CE00: 04 39        TSB $39
-FE/CE02: 80 35        BRA $CE39
+FE/CE02: 80 35        BRA Local_FECE39
 FE/CE04: 34 11        BIT $11,X
 FE/CE06: 16 58        ASL $58,X
 FE/CE08: 59 39 08     EOR $0839,Y

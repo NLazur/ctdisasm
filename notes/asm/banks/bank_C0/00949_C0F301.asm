@@ -16,7 +16,7 @@ C0/F319: 00 00        BRK $00
 C0/F31B: 00 00        BRK $00
 C0/F31D: 00 00        BRK $00
 C0/F31F: 00 40        BRK $40
-C0/F321: 20 12 0D     JSR $0D12
+C0/F321: 20 12 0D     JSR Local_C00D12
 C0/F324: 0A           ASL
 C0/F325: 08           PHP
 C0/F326: 06 06        ASL $06

@@ -7,7 +7,7 @@ C6/4B2A: 78           SEI
 C6/4B2B: 12 28        ORA ($28)
 C6/4B2D: 2F D0 0A 86  AND $860AD0
 C6/4B31: AD 58 02     LDA $0258
-C6/4B34: D0 0A        BNE $4B40
+C6/4B34: D0 0A        BNE Local_C64B40
 C6/4B36: A7 11        LDA [$11]
 C6/4B38: AD 11 E8     LDA $E811
 C6/4B3B: 6D E3 50     ADC $50E3
@@ -20,10 +20,10 @@ C6/4B48: 0C 0E 3F     TSB $3F0E
 C6/4B4B: 94 0E        STY $0E,X
 C6/4B4D: 08           PHP
 C6/4B4E: F8           SED
-C6/4B4F: 20 18 78     JSR $7818
+C6/4B4F: 20 18 78     JSR Local_C67818
 C6/4B52: 08           PHP
 C6/4B53: 84 08        STY $08
-C6/4B55: 30 E8        BMI $4B3F
+C6/4B55: 30 E8        BMI Local_C64B3F
 C6/4B57: A0 11        LDY #$11
 C6/4B59: 00 A1        BRK $A1
 C6/4B5B: 11 B0        ORA ($B0),Y
@@ -40,7 +40,7 @@ C6/4B6E: 0A           ASL
 C6/4B6F: EE 63 00     INC $0063
 C6/4B72: 11 70        ORA ($70),Y
 C6/4B74: F8           SED
-C6/4B75: 10 98        BPL $4B0F
+C6/4B75: 10 98        BPL Local_C64B0F
 C6/4B77: B4 F8        LDY $F8,X
-C6/4B79: 20 30 E8     JSR $E830
+C6/4B79: 20 30 E8     JSR Local_C6E830
 C6/4B7C: 40           RTI

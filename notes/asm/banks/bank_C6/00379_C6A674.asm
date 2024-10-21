@@ -15,7 +15,7 @@ C6/A68B: 76 01        ROR $01,X
 C6/A68D: 26 90        ROL $90
 C6/A68F: 08           PHP
 C6/A690: A1 51        LDA ($51,X)
-C6/A692: 90 DC        BCC $A670
+C6/A692: 90 DC        BCC Local_C6A670
 C6/A694: 07 2A        ORA [$2A]
 C6/A696: 2A           ROL
 C6/A697: D6 D6        DEC $D6,X
@@ -35,14 +35,14 @@ C6/A6B6: C5 03        CMP $03
 C6/A6B8: 68           PLA
 C6/A6B9: 52 13        EOR ($13)
 C6/A6BB: 3E CE 0B     ROL $0BCE,X
-C6/A6BE: D0 7B        BNE $A73B
+C6/A6BE: D0 7B        BNE Local_C6A73B
 C6/A6C0: 5F C3 A8 12  EOR $12A8C3,X
-C6/A6C4: 10 12        BPL $A6D8
+C6/A6C4: 10 12        BPL Local_C6A6D8
 C6/A6C6: CE A0 A1     DEC $A1A0
-C6/A6C9: D0 01        BNE $A6CC
+C6/A6C9: D0 01        BNE Local_C6A6CC
 C6/A6CB: C5 30        CMP $30
 C6/A6CD: 2A           ROL
-C6/A6CE: 10 2A        BPL $A6FA
+C6/A6CE: 10 2A        BPL Local_C6A6FA
 C6/A6D0: F8           SED
 C6/A6D1: B1 F9        LDA ($F9),Y
 C6/A6D3: 86 29        STX $29

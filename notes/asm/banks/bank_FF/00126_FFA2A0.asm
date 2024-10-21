@@ -10,7 +10,7 @@ FF/A2AB: 00 FB        BRK $FB
 FF/A2AD: 00 9F        BRK $9F
 FF/A2AF: 00 4A        BRK $4A
 FF/A2B1: 01 25        ORA ($25,X)
-FF/A2B3: 20 DA F8     JSR $F8DA
+FF/A2B3: 20 DA F8     JSR Local_FFF8DA
 FF/A2B6: 35 B0        AND $B0,X
 FF/A2B8: 42 13        WDM $13
 FF/A2BA: 8E 65 15     STX $1565
@@ -25,7 +25,7 @@ FF/A2CD: 00 FF        BRK $FF
 FF/A2CF: 00 02        BRK $02
 FF/A2D1: 06 3B        ASL $3B
 FF/A2D3: 05 3E        ORA $3E
-FF/A2D5: 70 56        BVS $A32D
+FF/A2D5: 70 56        BVS Local_FFA32D
 FF/A2D7: C6 31        DEC $31
 FF/A2D9: 08           PHP
 FF/A2DA: 60           RTS

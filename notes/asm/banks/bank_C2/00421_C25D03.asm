@@ -22,6 +22,6 @@ C2/5D26: B7 37        LDA [$37],Y
 C2/5D28: C9 EF F0     CMP #$F0EF
 C2/5D2B: 06 C8        ASL $C8
 C2/5D2D: C0 0A 00     CPY #$000A
-C2/5D30: 90 F4        BCC $5D26
+C2/5D30: 90 F4        BCC Local_C25D26
 C2/5D32: 98           TYA
 C2/5D33: 60           RTS

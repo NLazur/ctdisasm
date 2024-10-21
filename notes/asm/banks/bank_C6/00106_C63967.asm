@@ -15,8 +15,8 @@ C6/397F: 07 A4        ORA [$A4]
 C6/3981: 08           PHP
 C6/3982: C8           INY
 C6/3983: 0A           ASL
-C6/3984: 90 18        BCC $399E
-C6/3986: 10 3D        BPL $39C5
+C6/3984: 90 18        BCC Local_C6399E
+C6/3986: 10 3D        BPL Local_C639C5
 C6/3988: 02 3D        COP $3D
 C6/398A: 03 00        ORA $00,S
 C6/398C: 3D 11 3D     AND $3D11,X
@@ -38,7 +38,7 @@ C6/39B1: 16 00        ASL $00,X
 C6/39B3: 3B           TSC
 C6/39B4: 16 94        ASL $94,X
 C6/39B6: 0D 4B 16     ORA $164B
-C6/39B9: 3C 16 00     BIT $0016,X
+C6/39B9: 3C 16 00     BIT Local_C60016,X
 C6/39BC: 3D 16 4C     AND $4C16,X
 C6/39BF: 16 4D        ASL $4D,X
 C6/39C1: 16 3E        ASL $3E,X
@@ -50,7 +50,7 @@ C6/39CF: D8           CLD
 C6/39D0: 48           PHA
 C6/39D1: 08           PHP
 C6/39D2: A8           TAY
-C6/39D3: 90 68        BCC $3A3D
+C6/39D3: 90 68        BCC Local_C63A3D
 C6/39D5: 78           SEI
 C6/39D6: 33 80        AND ($80,S),Y
 C6/39D8: 41 0C        EOR ($0C,X)
@@ -75,7 +75,7 @@ C6/39FC: 11 C0        ORA ($C0),Y
 C6/39FE: 2B           PLD
 C6/39FF: 08           PHP
 C6/3A00: F8           SED
-C6/3A01: F0 5B        BEQ $3A5E
+C6/3A01: F0 5B        BEQ Local_C63A5E
 C6/3A03: 0C 09 FF     TSB $FF09
 C6/3A06: 84 09        STY $09
 C6/3A08: 0C 09 84     TSB $8409
@@ -97,10 +97,10 @@ C6/3A29: DD 16 80     CMP $8016,X
 C6/3A2C: CE 16 CF     DEC $CF16
 C6/3A2F: 16 DE        ASL $DE,X
 C6/3A31: 16 DF        ASL $DF,X
-C6/3A33: D0 38        BNE $3A6D
+C6/3A33: D0 38        BNE Local_C63A6D
 C6/3A35: 47 08        EOR [$08]
 C6/3A37: F8           SED
-C6/3A38: 70 54        BVS $3A8E
+C6/3A38: 70 54        BVS Local_C63A8E
 C6/3A3A: 84 09        STY $09
 C6/3A3C: 12 3D        ORA ($3D)
 C6/3A3E: 13 84        ORA ($84,S),Y
@@ -120,26 +120,26 @@ C6/3A59: 7E 00 A8     ROR $A800,X
 C6/3A5C: 0C EA 16     TSB $16EA
 C6/3A5F: EB           XBA
 C6/3A60: 08           PHP
-C6/3A61: 10 00        BPL $3A63
+C6/3A61: 10 00        BPL Local_C63A63
 C6/3A63: C4 00        CPY $00
 C6/3A65: ED 10 10     SBC $1010
 C6/3A68: EE 16 EF     INC $EF16
 C6/3A6B: 08           PHP
 C6/3A6C: 18           CLC
-C6/3A6D: B0 1A        BCS $3A89
+C6/3A6D: B0 1A        BCS Local_C63A89
 C6/3A6F: 3F 50 19 58  AND $581950,X
 C6/3A73: 19 60 39     ORA $3960,Y
-C6/3A76: 10 28        BPL $3AA0
-C6/3A78: F0 0A        BEQ $3A84
+C6/3A76: 10 28        BPL Local_C63AA0
+C6/3A78: F0 0A        BEQ Local_C63A84
 C6/3A7A: 78           SEI
 C6/3A7B: 99 3B 0D     STA $0D3B,Y
-C6/3A7E: 80 3B        BRA $3ABB
+C6/3A7E: 80 3B        BRA Local_C63ABB
 C6/3A80: 0E 3B 1D     ASL $1D3B
 C6/3A83: 3B           TSC
 C6/3A84: 1E 3B 18     ASL $183B,X
 C6/3A87: 0D 7E 1F     ORA $1F7E
 C6/3A8A: 06 00        ASL $00
-C6/3A8C: 20 6B D0     JSR $D06B
+C6/3A8C: 20 6B D0     JSR Local_C6D06B
 C6/3A8F: E0 28        CPX #$28
 C6/3A91: 33 F8        AND ($F8,S),Y
 C6/3A93: F8           SED
@@ -148,12 +148,12 @@ C6/3A95: 69 2C 00     ADC #$002C
 C6/3A98: 3B           TSC
 C6/3A99: 0F 3B 3C 3B  ORA $3B3C3B
 C6/3A9D: 2D 3B 2E     AND $2E3B
-C6/3AA0: 10 3B        BPL $3ADD
+C6/3AA0: 10 3B        BPL Local_C63ADD
 C6/3AA2: 3D 3B 3E     AND $3E3B,X
-C6/3AA5: 80 10        BRA $3AB7
+C6/3AA5: 80 10        BRA Local_C63AB7
 C6/3AA7: 3F 3B 00 FE  AND $FE003B,X
 C6/3AAB: 3B           TSC
-C6/3AAC: 80 B0        BRA $3A5E
+C6/3AAC: 80 B0        BRA Local_C63A5E
 C6/3AAE: C8           INY
 C6/3AAF: 28           PLP
 C6/3AB0: E8           INX
@@ -163,7 +163,7 @@ C6/3AB3: 0B           PHD
 C6/3AB4: F8           SED
 C6/3AB5: 48           PHA
 C6/3AB6: 00 59        BRK $59
-C6/3AB8: 90 A0        BCC $3A5A
+C6/3AB8: 90 A0        BCC Local_C63A5A
 C6/3ABA: 08           PHP
 C6/3ABB: 00 00        BRK $00
 C6/3ABD: 01 EC        ORA ($EC,X)
@@ -180,7 +180,7 @@ C6/3ACF: 3B           TSC
 C6/3AD0: 14 3B        TRB $3B
 C6/3AD2: 15 3B        ORA $3B,X
 C6/3AD4: 06 3B        ASL $3B
-C6/3AD6: 80 07        BRA $3ADF
+C6/3AD6: 80 07        BRA Local_C63ADF
 C6/3AD8: 3B           TSC
 C6/3AD9: 16 3B        ASL $3B,X
 C6/3ADB: 17 3B        ORA [$3B],Y
@@ -192,7 +192,7 @@ C6/3AE2: 3B           TSC
 C6/3AE3: 19 88 38     ORA $3888,Y
 C6/3AE6: D8           CLD
 C6/3AE7: F8           SED
-C6/3AE8: 10 A8        BPL $3A92
+C6/3AE8: 10 A8        BPL Local_C63A92
 C6/3AEA: 48           PHA
 C6/3AEB: 59 50 F8     EOR $F850,Y
 C6/3AEE: FF 38 38 C8  SBC $C83838,X

@@ -16,8 +16,8 @@ C6/A90B: EB           XBA
 C6/A90C: 05 63        ORA $63
 C6/A90E: 0B           PHD
 C6/A90F: DE 07 19     DEC $1907,X
-C6/A912: 80 0A        BRA $A91E
-C6/A914: 80 61        BRA $A977
+C6/A912: 80 0A        BRA Local_C6A91E
+C6/A914: 80 61        BRA Local_C6A977
 C6/A916: 81 1B        STA ($1B,X)
 C6/A918: 23 21        AND $21,S
 C6/A91A: 74 0B        STZ $0B,X
@@ -26,12 +26,12 @@ C6/A91E: 78           SEI
 C6/A91F: 13 18        ORA ($18,S),Y
 C6/A921: 1E 45 77     ASL $7745,X
 C6/A924: 06 C2        ASL $C2
-C6/A926: 70 51        BVS $A979
+C6/A926: 70 51        BVS Local_C6A979
 C6/A928: 8E 71 5D     STX $5D71
 C6/A92B: 03 76        ORA $76,S
 C6/A92D: F9 02 3E     SBC $3E02,Y
 C6/A930: 12 09        ORA ($09)
-C6/A932: 70 EB        BVS $A91F
+C6/A932: 70 EB        BVS Local_C6A91F
 C6/A934: 05 58        ORA $58
 C6/A936: A2 37 A2     LDX #$A237
 C6/A939: FB           XCE

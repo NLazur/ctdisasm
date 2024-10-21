@@ -1,16 +1,16 @@
 ; Bank: C0 | Start Address: 30EB
 Routine_C030EB:
-C0/30EB: 90 0B        BCC $30F8
+C0/30EB: 90 0B        BCC Local_C030F8
 C0/30ED: E2 20        SEP #$20
 C0/30EF: A9 10        LDA #$10
 C0/30F1: A6 6D        LDX $6D
 C0/30F3: 9D 00 19     STA $1900,X
-C0/30F6: 80 0B        BRA $3103
+C0/30F6: 80 0B        BRA Local_C03103
 C0/30F8: E2 20        SEP #$20
 C0/30FA: A9 F0        LDA #$F0
 C0/30FC: A6 6D        LDX $6D
 C0/30FE: 9D 00 19     STA $1900,X
-C0/3101: 80 00        BRA $3103
+C0/3101: 80 00        BRA Local_C03103
 C0/3103: C2 20        REP #$20
 C0/3105: A6 6D        LDX $6D
 C0/3107: BD 80 18     LDA $1880,X
@@ -20,7 +20,7 @@ C0/310F: A6 E9        LDX $E9
 C0/3111: BD 80 18     LDA $1880,X
 C0/3114: 29 F0 FF     AND #$FFF0
 C0/3117: C5 D9        CMP $D9
-C0/3119: D0 0F        BNE $312A
+C0/3119: D0 0F        BNE Local_C0312A
 C0/311B: A6 6D        LDX $6D
 C0/311D: E2 20        SEP #$20
 C0/311F: A9 01        LDA #$01

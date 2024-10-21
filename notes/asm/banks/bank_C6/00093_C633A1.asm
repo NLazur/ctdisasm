@@ -10,7 +10,7 @@ C6/33AD: 08           PHP
 C6/33AE: 00 F8        BRK $F8
 C6/33B0: 0A           ASL
 C6/33B1: A6 40        LDX $40
-C6/33B3: 20 A7 40     JSR $40A7
+C6/33B3: 20 A7 40     JSR Local_C640A7
 C6/33B6: B6 48        LDX $48,Y
 C6/33B8: A2 D8        LDX #$D8
 C6/33BA: 00 A6        BRK $A6

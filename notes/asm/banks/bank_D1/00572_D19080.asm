@@ -17,7 +17,7 @@ D1/909D: 00 8B        BRK $8B
 D1/909F: 01 17        ORA ($17,X)
 D1/90A1: A9 1A        LDA #$1A
 D1/90A3: 03 8E        ORA $8E,S
-D1/90A5: 50 19        BVC $90C0
+D1/90A5: 50 19        BVC Local_D190C0
 D1/90A7: 03 00        ORA $00,S
 D1/90A9: FF 08 01 81  SBC $810108,X
 D1/90AD: 02 83        COP $83
@@ -48,17 +48,17 @@ D1/90E0: 49 FF        EOR #$FF
 D1/90E2: 01 93        ORA ($93,X)
 D1/90E4: 53 02        EOR ($02,S),Y
 D1/90E6: C4 98        CPY $98
-D1/90E8: 80 8A        BRA $9074
-D1/90EA: 10 80        BPL $906C
-D1/90EC: 70 00        BVS $90EE
+D1/90E8: 80 8A        BRA Local_D19074
+D1/90EA: 10 80        BPL Local_D1906C
+D1/90EC: 70 00        BVS Local_D190EE
 D1/90EE: 8A           TXA
 D1/90EF: 41 80        EOR ($80,X)
-D1/90F1: 70 00        BVS $90F3
+D1/90F1: 70 00        BVS Local_D190F3
 D1/90F3: 95 0B        STA $0B,X
 D1/90F5: 88           DEY
 D1/90F6: 00 80        BRK $80
 D1/90F8: 12 AB        ORA ($AB)
 D1/90FA: 00 AB        BRK $AB
-D1/90FC: 80 7F        BRA $917D
+D1/90FC: 80 7F        BRA Local_D1917D
 D1/90FE: 9D 17 83     STA $8317,X
 D1/9101: 40           RTI

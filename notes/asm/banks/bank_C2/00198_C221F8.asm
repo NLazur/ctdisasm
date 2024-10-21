@@ -7,7 +7,7 @@ C2/2200: 0A           ASL
 C2/2201: AA           TAX
 C2/2202: 7C 05 22     JMP ($2205,X)
 C2/2205: 09 22 38     ORA #$3822
-C2/2208: 22 A6 4E BD  JSR $BD4EA6
+C2/2208: 22 A6 4E BD  JSR Routine_BD4EA6
 C2/220C: 07 00        ORA [$00]
 C2/220E: 85 10        STA $10
 C2/2210: E2 20        SEP #$20
@@ -20,7 +20,7 @@ C2/221F: 17 10        ORA [$10],Y
 C2/2221: 85 1F        STA $1F
 C2/2223: A0 02 00     LDY #$0002
 C2/2226: B7 10        LDA [$10],Y
-C2/2228: D0 08        BNE $2232
+C2/2228: D0 08        BNE Local_C22232
 C2/222A: A5 1F        LDA $1F
 C2/222C: 09 F0        ORA #$F0
 C2/222E: 85 1F        STA $1F

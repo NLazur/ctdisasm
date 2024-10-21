@@ -8,7 +8,7 @@ C3/785C: 49 4E        EOR #$4E
 C3/785E: 19 DD 31     ORA $31DD,Y
 C3/7861: 53 5B        EOR ($5B,S),Y
 C3/7863: 3B           TSC
-C3/7864: 10 4F        BPL $78B5
+C3/7864: 10 4F        BPL Local_C378B5
 C3/7866: 24 52        BIT $52
 C3/7868: 5B           TCD
 C3/7869: 4B           PHK
@@ -32,7 +32,7 @@ C3/7887: 64 11        STZ $11
 C3/7889: 52 8B        EOR ($8B)
 C3/788B: 08           PHP
 C3/788C: 32 27        AND ($27)
-C3/788E: 50 45        BVC $78D5
+C3/788E: 50 45        BVC Local_C378D5
 C3/7890: 43 CA        EOR $CA,S
 C3/7892: 49 19        EOR #$19
 C3/7894: 0A           ASL
@@ -47,7 +47,7 @@ C3/78A4: 0C 45 2F     TSB $2F45
 C3/78A7: 46 5B        LSR $5B
 C3/78A9: EE 17 B7     INC $B717
 C3/78AC: B9 1A 09     LDA $091A,Y
-C3/78AF: 10 5E        BPL $790F
+C3/78AF: 10 5E        BPL Local_C3790F
 C3/78B1: 46 54        LSR $54
 C3/78B3: 72 00        ADC ($00)
 C3/78B5: A4 0A        LDY $0A
@@ -85,7 +85,7 @@ C3/78F0: FF DB 00 D5  SBC $D500DB,X
 C3/78F4: 18           CLC
 C3/78F5: E5 10        SBC $10
 C3/78F7: 05 32        ORA $32
-C3/78F9: 80 11        BRA $790C
+C3/78F9: 80 11        BRA Local_C3790C
 C3/78FB: 14 36        TRB $36
 C3/78FD: 7A           PLY
 C3/78FE: 40           RTI

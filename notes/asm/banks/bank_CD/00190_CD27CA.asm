@@ -51,7 +51,7 @@ CD/2829: BD FC CA     LDA $CAFC,X
 CD/282C: 18           CLC
 CD/282D: 77 40        ADC [$40],Y
 CD/282F: 9D FC CA     STA $CAFC,X
-CD/2832: 20 43 28     JSR $2843
+CD/2832: 20 43 28     JSR Local_CD2843
 CD/2835: C2 30        REP #$30
 CD/2837: A5 40        LDA $40
 CD/2839: 18           CLC

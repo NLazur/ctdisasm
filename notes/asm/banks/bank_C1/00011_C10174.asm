@@ -8,7 +8,7 @@ C1/0178: AD 99 94     LDA $9499
 C1/017B: E9 0A        SBC #$0A
 C1/017D: 00 8D        BRK $8D
 C1/017F: 99 94 E8     STA $E894,Y
-C1/0182: B0 F3        BCS $0177
+C1/0182: B0 F3        BCS Local_C10177
 C1/0184: 18           CLC
 C1/0185: AD 99 94     LDA $9499
 C1/0188: 69 0A        ADC #$0A

@@ -11,7 +11,7 @@ C0/81A9: 85 52        STA $52
 C0/81AB: A5 62        LDA $62
 C0/81AD: C9 20        CMP #$20
 C0/81AF: 00 B0        BRK $B0
-C0/81B1: 10 18        BPL $81CB
+C0/81B1: 10 18        BPL Local_C081CB
 C0/81B3: 65 52        ADC $52
 C0/81B5: AA           TAX
 C0/81B6: 38           SEC

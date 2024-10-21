@@ -13,13 +13,13 @@ C2/A707: DA           PHX
 C2/A708: B9 90 98     LDA $9890,Y
 C2/A70B: C8           INY
 C2/A70C: 5A           PHY
-C2/A70D: 20 DC F2     JSR $F2DC
+C2/A70D: 20 DC F2     JSR Local_C2F2DC
 C2/A710: 7A           PLY
 C2/A711: 68           PLA
 C2/A712: 18           CLC
 C2/A713: 69 80 00     ADC #$0080
 C2/A716: AA           TAX
 C2/A717: C0 04 00     CPY #$0004
-C2/A71A: 90 EB        BCC $A707
+C2/A71A: 90 EB        BCC Local_C2A707
 C2/A71C: 28           PLP
 C2/A71D: 60           RTS

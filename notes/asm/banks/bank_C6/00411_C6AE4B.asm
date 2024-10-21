@@ -5,7 +5,7 @@ C6/AE4C: 39 70 2D     AND $2D70,Y
 C6/AE4F: 58           CLI
 C6/AE50: 0A           ASL
 C6/AE51: A8           TAY
-C6/AE52: 80 CD        BRA $AE21
+C6/AE52: 80 CD        BRA Local_C6AE21
 C6/AE54: 07 07        ORA [$07]
 C6/AE56: BA           TSX
 C6/AE57: 07 BA        ORA [$BA]

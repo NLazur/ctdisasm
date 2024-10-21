@@ -2,10 +2,10 @@
 Routine_C31D0B:
 C3/1D0B: 0C 21 A9     TSB $A921
 C3/1D0E: 02 8D        COP $8D
-C3/1D10: 30 6A        BMI $1D7C
-C3/1D12: 20 2C 45     JSR $452C
+C3/1D10: 30 6A        BMI Local_C31D7C
+C3/1D12: 20 2C 45     JSR Local_C3452C
 C3/1D15: 0B           PHD
-C3/1D16: 10 15        BPL $1D2D
+C3/1D16: 10 15        BPL Local_C31D2D
 C3/1D18: EA           NOP
 C3/1D19: 04 0B        TSB $0B
 C3/1D1B: 8E 16 85     STX $8516

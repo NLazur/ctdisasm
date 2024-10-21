@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 0CF6
 Routine_D00CF6:
-D0/0CF6: D0 30        BNE $0D28
+D0/0CF6: D0 30        BNE Local_D00D28
 D0/0CF8: 00 00        BRK $00
 D0/0CFA: 00 00        BRK $00
 D0/0CFC: 01 01        ORA ($01,X)
@@ -26,8 +26,8 @@ D0/0D2C: 00 00        BRK $00
 D0/0D2E: 00 00        BRK $00
 D0/0D30: 00 00        BRK $00
 D0/0D32: 00 00        BRK $00
-D0/0D34: 80 80        BRA $0CB6
-D0/0D36: 80 80        BRA $0CB8
+D0/0D34: 80 80        BRA Local_D00CB6
+D0/0D36: 80 80        BRA Local_D00CB8
 D0/0D38: 00 00        BRK $00
 D0/0D3A: 00 00        BRK $00
 D0/0D3C: 00 00        BRK $00

@@ -45,10 +45,10 @@ C2/5E0C: A5 35        LDA $35
 C2/5E0E: 85 62        STA $62
 C2/5E10: A5 14        LDA $14
 C2/5E12: 29 0F        AND #$0F
-C2/5E14: D0 05        BNE $5E1B
-C2/5E16: 20 36 5E     JSR $5E36
-C2/5E19: 80 03        BRA $5E1E
-C2/5E1B: 20 07 5F     JSR $5F07
+C2/5E14: D0 05        BNE Local_C25E1B
+C2/5E16: 20 36 5E     JSR Local_C25E36
+C2/5E19: 80 03        BRA Local_C25E1E
+C2/5E1B: 20 07 5F     JSR Local_C25F07
 C2/5E1E: A9 00        LDA #$00
 C2/5E20: EB           XBA
 C2/5E21: 38           SEC

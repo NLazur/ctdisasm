@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: E16C
 Routine_D0E16C:
 D0/E16C: 31 0D        AND ($0D),Y
-D0/E16E: 22 12 11 02  JSR $021112
+D0/E16E: 22 12 11 02  JSR Routine_021112
 D0/E172: 00 40        BRK $40
 D0/E174: E0 0F 49     CPX #$490F
 D0/E177: 0E 49 00     ASL $0049

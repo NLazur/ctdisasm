@@ -7,7 +7,7 @@ C1/FFDC: AA           TAX
 C1/FFDD: 86 28        STX $28
 C1/FFDF: A2 18 00     LDX #$0018
 C1/FFE2: 86 2A        STX $2A
-C1/FFE4: 20 49 CB     JSR $CB49
+C1/FFE4: 20 49 CB     JSR Local_C1CB49
 C1/FFE7: A5 2C        LDA $2C
 C1/FFE9: 18           CLC
 C1/FFEA: 69 44        ADC #$44

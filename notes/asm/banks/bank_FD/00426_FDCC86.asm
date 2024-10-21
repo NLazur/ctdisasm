@@ -22,8 +22,8 @@ FD/CCA7: 18           CLC
 FD/CCA8: 69 10        ADC #$10
 FD/CCAA: 85 EE        STA $EE
 FD/CCAC: A5 D9        LDA $D9
-FD/CCAE: F0 D5        BEQ $CC85
-FD/CCB0: 80 AC        BRA $CC5E
+FD/CCAE: F0 D5        BEQ Local_FDCC85
+FD/CCB0: 80 AC        BRA Local_FDCC5E
 FD/CCB2: 18           CLC
 FD/CCB3: 65 EE        ADC $EE
 FD/CCB5: 85 EE        STA $EE

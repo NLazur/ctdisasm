@@ -6,7 +6,7 @@ C0/7AC4: 85 54        STA $54
 C0/7AC6: EB           XBA
 C0/7AC7: A5 58        LDA $58
 C0/7AC9: 89 01        BIT #$01
-C0/7ACB: D0 45        BNE $7B12
+C0/7ACB: D0 45        BNE Local_C07B12
 C0/7ACD: 4A           LSR
 C0/7ACE: 25 20        AND $20
 C0/7AD0: 85 52        STA $52
@@ -35,11 +35,11 @@ C0/7B02: 1A           INC
 C0/7B03: 25 20        AND $20
 C0/7B05: 85 52        STA $52
 C0/7B07: C6 5C        DEC $5C
-C0/7B09: F0 B5        BEQ $7AC0
+C0/7B09: F0 B5        BEQ Local_C07AC0
 C0/7B0B: A5 54        LDA $54
 C0/7B0D: EB           XBA
 C0/7B0E: A5 52        LDA $52
-C0/7B10: 80 C0        BRA $7AD2
+C0/7B10: 80 C0        BRA Local_C07AD2
 C0/7B12: 4A           LSR
 C0/7B13: 25 20        AND $20
 C0/7B15: 85 52        STA $52
@@ -91,11 +91,11 @@ C0/7B73: 1A           INC
 C0/7B74: 25 20        AND $20
 C0/7B76: 85 52        STA $52
 C0/7B78: C6 5C        DEC $5C
-C0/7B7A: F0 07        BEQ $7B83
+C0/7B7A: F0 07        BEQ Local_C07B83
 C0/7B7C: A5 54        LDA $54
 C0/7B7E: EB           XBA
 C0/7B7F: A5 52        LDA $52
-C0/7B81: 80 C0        BRA $7B43
+C0/7B81: 80 C0        BRA Local_C07B43
 C0/7B83: A5 54        LDA $54
 C0/7B85: EB           XBA
 C0/7B86: A5 52        LDA $52

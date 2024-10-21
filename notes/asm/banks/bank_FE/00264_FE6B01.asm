@@ -2,10 +2,10 @@
 Routine_FE6B01:
 FE/6B01: B2 06        LDA ($06)
 FE/6B03: C2 7E        REP #$7E
-FE/6B05: 10 00        BPL $6B07
+FE/6B05: 10 00        BPL Local_FE6B07
 FE/6B07: 02 91        COP $91
 FE/6B09: F5 E0        SBC $E0,X
-FE/6B0B: 80 4C        BRA $6B59
+FE/6B0B: 80 4C        BRA Local_FE6B59
 FE/6B0D: 0B           PHD
 FE/6B0E: D9 9C 3B     CMP $3B9C,Y
 FE/6B11: E4 9C        CPX $9C
@@ -24,18 +24,18 @@ FE/6B2B: 01 F0        ORA ($F0,X)
 FE/6B2D: 01 F0        ORA ($F0,X)
 FE/6B2F: 01 F0        ORA ($F0,X)
 FE/6B31: 0F 01 F0 01  ORA $01F001
-FE/6B35: F0 01        BEQ $6B38
-FE/6B37: F0 0E        BEQ $6B47
-FE/6B39: 10 90        BPL $6ACB
+FE/6B35: F0 01        BEQ Local_FE6B38
+FE/6B37: F0 0E        BEQ Local_FE6B47
+FE/6B39: 10 90        BPL Local_FE6ACB
 FE/6B3B: 00 94        BRK $94
 FE/6B3D: 00 FC        BRK $FC
 FE/6B3F: 8C 14 EC     STY $EC14
 FE/6B42: B1 9C        LDA ($9C),Y
 FE/6B44: 32 2C        AND ($2C)
-FE/6B46: 30 F4        BMI $6B3C
+FE/6B46: 30 F4        BMI Local_FE6B3C
 FE/6B48: 11 F6        ORA ($F6),Y
 FE/6B4A: 71 E6        ADC ($E6),Y
-FE/6B4C: F0 1A        BEQ $6B68
+FE/6B4C: F0 1A        BEQ Local_FE6B68
 FE/6B4E: 1C D0 02     TRB $02D0
 FE/6B51: 1C D5 F0     TRB $F0D5
 FE/6B54: 09 60 E1     ORA #$E160
@@ -43,7 +43,7 @@ FE/6B57: 00 25        BRK $25
 FE/6B59: D8           CLD
 FE/6B5A: 00 E6        BRK $E6
 FE/6B5C: 21 18        AND ($18,X)
-FE/6B5E: F0 28        BEQ $6B88
+FE/6B5E: F0 28        BEQ Local_FE6B88
 FE/6B60: 7B           TDC
 FE/6B61: 05 86        ORA $86
 FE/6B63: E4 E2        CPX $E2
@@ -55,14 +55,14 @@ FE/6B6E: 0C 30 76     TSB $7630
 FE/6B71: 14 8A        TRB $8A
 FE/6B73: 85 D1        STA $D1
 FE/6B75: B5 07        LDA $07,X
-FE/6B77: 80 52        BRA $6BCB
+FE/6B77: 80 52        BRA Local_FE6BCB
 FE/6B79: FC 03 53     JSR ($5303,X)
 FE/6B7C: 17 F0        ORA [$F0],Y
 FE/6B7E: E6 81        INC $81
 FE/6B80: 02 DA        COP $DA
 FE/6B82: 02 EB        COP $EB
 FE/6B84: 18           CLC
-FE/6B85: B0 F6        BCS $6B7D
+FE/6B85: B0 F6        BCS Local_FE6B7D
 FE/6B87: 9E 14 20     STZ $2014,X
 FE/6B8A: 01 18        ORA ($18,X)
 FE/6B8C: 07 34        ORA [$34]
@@ -83,17 +83,17 @@ FE/6BAB: 01 F0        ORA ($F0,X)
 FE/6BAD: 01 F0        ORA ($F0,X)
 FE/6BAF: DF 01 F0 D0  CMP $D0F001,X
 FE/6BB3: 16 04        ASL $04,X
-FE/6BB5: 30 86        BMI $6B3D
+FE/6BB5: 30 86        BMI Local_FE6B3D
 FE/6BB7: F1 2E        SBC ($2E),Y
-FE/6BB9: 10 23        BPL $6BDE
-FE/6BBB: F0 0B        BEQ $6BC8
+FE/6BB9: 10 23        BPL Local_FE6BDE
+FE/6BBB: F0 0B        BEQ Local_FE6BC8
 FE/6BBD: 02 30        COP $30
 FE/6BBF: 76 23        ROR $23,X
 FE/6BC1: 3D F0 3C     AND $3CF0,X
 FE/6BC4: 65 10        ADC $10
 FE/6BC6: 0A           ASL
 FE/6BC7: 0A           ASL
-FE/6BC8: 3C D5 D5     BIT $D5D5,X
+FE/6BC8: 3C D5 D5     BIT Local_FED5D5,X
 FE/6BCB: 3E 93 00     ROL $0093,X
 FE/6BCE: 00 D2        BRK $D2
 FE/6BD0: 40           RTI

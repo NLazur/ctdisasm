@@ -8,7 +8,7 @@ CE/6060: 0C 0F 40     TSB $400F
 CE/6063: 04 1B        TSB $1B
 CE/6065: 0C 2D 80     TSB $802D
 CE/6068: 12 25        ORA ($25)
-CE/606A: 20 14 36     JSR $3614
+CE/606A: 20 14 36     JSR Local_CE3614
 CE/606D: 71 00        ADC ($00),Y
 CE/606F: 25 00        AND $00
 CE/6071: 0D 1B 0D     ORA $0D1B
@@ -16,7 +16,7 @@ CE/6074: 72 03        ADC ($03)
 CE/6076: 73 04        ADC ($04,S),Y
 CE/6078: 02 00        COP $00
 CE/607A: 24 02        BIT $02
-CE/607C: 70 20        BVS $609E
+CE/607C: 70 20        BVS Local_CE609E
 CE/607E: 14 C2        TRB $C2
 CE/6080: 0D 0F 40     ORA $400F
 CE/6083: 04 1B        TSB $1B
@@ -28,7 +28,7 @@ CE/608F: 72 03        ADC ($03)
 CE/6091: 73 05        ADC ($05,S),Y
 CE/6093: 02 00        COP $00
 CE/6095: 24 02        BIT $02
-CE/6097: 70 20        BVS $60B9
+CE/6097: 70 20        BVS Local_CE60B9
 CE/6099: 14 C2        TRB $C2
 CE/609B: 0E 0F 40     ASL $400F
 CE/609E: 04 1B        TSB $1B
@@ -40,7 +40,7 @@ CE/60AA: 72 03        ADC ($03)
 CE/60AC: 73 06        ADC ($06,S),Y
 CE/60AE: 02 00        COP $00
 CE/60B0: 24 02        BIT $02
-CE/60B2: 70 20        BVS $60D4
+CE/60B2: 70 20        BVS Local_CE60D4
 CE/60B4: 14 C2        TRB $C2
 CE/60B6: 0F 0F 40 04  ORA $04400F
 CE/60BA: 1B           TCS
@@ -48,11 +48,11 @@ CE/60BB: 0F 24 03 71  ORA $710324
 CE/60BF: 00 25        BRK $25
 CE/60C1: 03 0D        ORA $0D,S
 CE/60C3: 1B           TCS
-CE/60C4: 10 72        BPL $6138
+CE/60C4: 10 72        BPL Local_CE6138
 CE/60C6: 03 73        ORA $73,S
 CE/60C8: 07 02        ORA [$02]
 CE/60CA: 00 24        BRK $24
 CE/60CC: 02 6E        COP $6E
-CE/60CE: 20 14 C2     JSR $C214
-CE/60D1: 10 0F        BPL $60E2
+CE/60CE: 20 14 C2     JSR Local_CEC214
+CE/60D1: 10 0F        BPL Local_CE60E2
 CE/60D3: 40           RTI

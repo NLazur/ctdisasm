@@ -9,7 +9,7 @@ C0/62D6: 85 D9        STA $D9
 C0/62D8: 8A           TXA
 C0/62D9: 38           SEC
 C0/62DA: E5 D9        SBC $D9
-C0/62DC: 80 E8        BRA $62C6
+C0/62DC: 80 E8        BRA Local_C062C6
 C0/62DE: C8           INY
 C0/62DF: BB           TYX
 C0/62E0: BF 01 20 7F  LDA $7F2001,X
@@ -32,7 +32,7 @@ C0/6303: 0A           ASL
 C0/6304: E2 10        SEP #$10
 C0/6306: AA           TAX
 C0/6307: FC 67 64     JSR ($6467,X)
-C0/630A: B0 3D        BCS $6349
+C0/630A: B0 3D        BCS Local_C06349
 C0/630C: C2 10        REP #$10
 C0/630E: A6 C3        LDX $C3
 C0/6310: E8           INX

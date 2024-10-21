@@ -1,9 +1,9 @@
 ; Bank: D0 | Start Address: D16E
 Routine_D0D16E:
 D0/D16E: A8           TAY
-D0/D16F: 30 80        BMI $D0F1
-D0/D171: 80 80        BRA $D0F3
-D0/D173: 80 C0        BRA $D135
+D0/D16F: 30 80        BMI Local_D0D0F1
+D0/D171: 80 80        BRA Local_D0D0F3
+D0/D173: 80 C0        BRA Local_D0D135
 D0/D175: C0 80        CPY #$80
 D0/D177: C0 85        CPY #$85
 D0/D179: 03 05        ORA $05,S
@@ -24,8 +24,8 @@ D0/D195: 00 40        BRK $40
 D0/D197: 00 40        BRK $40
 D0/D199: 00 40        BRK $40
 D0/D19B: 00 A0        BRK $A0
-D0/D19D: 80 A0        BRA $D13F
-D0/D19F: 80 F0        BRA $D191
+D0/D19D: 80 A0        BRA Local_D0D13F
+D0/D19F: 80 F0        BRA Local_D0D191
 D0/D1A1: E0 C0        CPX #$C0
 D0/D1A3: C0 C0        CPY #$C0
 D0/D1A5: C0 60        CPY #$60

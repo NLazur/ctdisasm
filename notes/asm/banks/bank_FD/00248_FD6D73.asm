@@ -3,11 +3,11 @@ Routine_FD6D73:
 FD/6D73: 00 42        BRK $42
 FD/6D75: FA           PLX
 FD/6D76: 11 04        ORA ($04),Y
-FD/6D78: 90 03        BCC $6D7D
+FD/6D78: 90 03        BCC Local_FD6D7D
 FD/6D7A: FA           PLX
 FD/6D7B: 11 04        ORA ($04),Y
-FD/6D7D: 90 78        BCC $6DF7
-FD/6D7F: 80 63        BRA $6DE4
+FD/6D7D: 90 78        BCC Local_FD6DF7
+FD/6D7F: 80 63        BRA Local_FD6DE4
 FD/6D81: 83 4F        STA $4F,S
 FD/6D83: 8F 00 4F 8B  STA $8B4F00
 FD/6D87: 53 97        EOR ($97,S),Y
@@ -36,8 +36,8 @@ FD/6DB4: 15 80        ORA $80,X
 FD/6DB6: F5 15        SBC $15,X
 FD/6DB8: F5 11        SBC $11,X
 FD/6DBA: F1 A0        SBC ($A0),Y
-FD/6DBC: 80 02        BRA $6DC0
-FD/6DBE: 10 C8        BPL $6D88
-FD/6DC0: 20 00 A0     JSR $A000
+FD/6DBC: 80 02        BRA Local_FD6DC0
+FD/6DBE: 10 C8        BPL Local_FD6D88
+FD/6DC0: 20 00 A0     JSR Local_FDA000
 FD/6DC3: 02 40        COP $40
 FD/6DC5: 60           RTS

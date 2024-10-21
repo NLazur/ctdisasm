@@ -18,6 +18,6 @@ D0/3A96: 00 00        BRK $00
 D0/3A98: FC 03 FF     JSR ($FF03,X)
 D0/3A9B: 00 FF        BRK $FF
 D0/3A9D: 00 7F        BRK $7F
-D0/3A9F: 80 3F        BRA $3AE0
+D0/3A9F: 80 3F        BRA Local_D03AE0
 D0/3AA1: C0 8F F0     CPY #$F08F
 D0/3AA4: 60           RTS

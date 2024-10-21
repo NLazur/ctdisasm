@@ -25,10 +25,10 @@ D1/FB9C: 0A           ASL
 D1/FB9D: 0A           ASL
 D1/FB9E: 85 45        STA $45
 D1/FBA0: E4 45        CPX $45
-D1/FBA2: F0 26        BEQ $FBCA
+D1/FBA2: F0 26        BEQ Local_D1FBCA
 D1/FBA4: A5 7C        LDA $7C
 D1/FBA6: 29 01 00     AND #$0001
-D1/FBA9: F0 0F        BEQ $FBBA
+D1/FBA9: F0 0F        BEQ Local_D1FBBA
 D1/FBAB: A5 49        LDA $49
 D1/FBAD: 9D E1 C4     STA $C4E1,X
 D1/FBB0: E8           INX
@@ -36,8 +36,8 @@ D1/FBB1: E8           INX
 D1/FBB2: E8           INX
 D1/FBB3: E8           INX
 D1/FBB4: E4 45        CPX $45
-D1/FBB6: D0 F5        BNE $FBAD
-D1/FBB8: 80 10        BRA $FBCA
+D1/FBB6: D0 F5        BNE Local_D1FBAD
+D1/FBB8: 80 10        BRA Local_D1FBCA
 D1/FBBA: A9 00 FF     LDA #$FF00
 D1/FBBD: A5 49        LDA $49
 D1/FBBF: 9D 61 C1     STA $C161,X
@@ -46,7 +46,7 @@ D1/FBC3: E8           INX
 D1/FBC4: E8           INX
 D1/FBC5: E8           INX
 D1/FBC6: E4 45        CPX $45
-D1/FBC8: D0 F5        BNE $FBBF
+D1/FBC8: D0 F5        BNE Local_D1FBBF
 D1/FBCA: 7B           TDC
 D1/FBCB: E2 20        SEP #$20
 D1/FBCD: 6B           RTL

@@ -30,7 +30,7 @@ C6/1375: 04 F8        TSB $F8
 C6/1377: 07 1B        ORA [$1B]
 C6/1379: E7 08        SBC [$08]
 C6/137B: F1 01        SBC ($01),Y
-C6/137D: B0 04        BCS $1383
+C6/137D: B0 04        BCS Local_C61383
 C6/137F: 43 18        EOR $18,S
 C6/1381: 02 13        COP $13
 C6/1383: A1 88        LDA ($88,X)
@@ -87,7 +87,7 @@ C6/13EA: 7D BB FF     ADC $FFBB,X
 C6/13ED: C9 F8 D7     CMP #$D7F8
 C6/13F0: FC D9 00     JSR ($00D9,X)
 C6/13F3: E2 1B        SEP #$1B
-C6/13F5: 10 BD        BPL $13B4
+C6/13F5: 10 BD        BPL Local_C613B4
 C6/13F7: 57 FE        EOR [$FE],Y
 C6/13F9: BE 7F 04     LDX $047F,Y
 C6/13FC: 04 87        TSB $87

@@ -61,7 +61,7 @@ FE/DE60: 43 00        EOR $00,S
 FE/DE62: 3B           TSC
 FE/DE63: 05 49        ORA $49
 FE/DE65: 05 84        ORA $84
-FE/DE67: 10 54        BPL $DEBD
+FE/DE67: 10 54        BPL Local_FEDEBD
 FE/DE69: EA           NOP
 FE/DE6A: 44 18 07     MVP $18,$07
 FE/DE6D: 55 24        EOR $24,X
@@ -104,18 +104,18 @@ FE/DEBB: C9 D5        CMP #$D5
 FE/DEBD: 14 54        TRB $54
 FE/DEBF: 1A           INC
 FE/DEC0: 05 02        ORA $02
-FE/DEC2: 2C 2D DC     BIT $DC2D
+FE/DEC2: 2C 2D DC     BIT Local_FEDC2D
 FE/DEC5: 06 1A        ASL $1A
 FE/DEC7: 07 12        ORA [$12]
 FE/DEC9: 3A           DEC
 FE/DECA: F2 04        SBC ($04)
 FE/DECC: 45 0A        EOR $0A
 FE/DECE: 26 0D        ROL $0D
-FE/DED0: D0 D1        BNE $DEA3
-FE/DED2: 10 DE        BPL $DEB2
+FE/DED0: D0 D1        BNE Local_FEDEA3
+FE/DED2: 10 DE        BPL Local_FEDEB2
 FE/DED4: 0B           PHD
 FE/DED5: BA           TSX
-FE/DED6: 10 A3        BPL $DE7B
+FE/DED6: 10 A3        BPL Local_FEDE7B
 FE/DED8: 05 5F        ORA $5F
 FE/DEDA: 06 49        ASL $49
 FE/DEDC: 0C 54 80     TSB $8054
@@ -147,7 +147,7 @@ FE/DF11: 5B           TCD
 FE/DF12: 05 BA        ORA $BA
 FE/DF14: 16 1D        ASL $1D,X
 FE/DF16: 3F 5F 1B 18  AND $181B5F,X
-FE/DF1A: 80 08        BRA $DF24
+FE/DF1A: 80 08        BRA Local_FEDF24
 FE/DF1C: A6 1D        LDX $1D
 FE/DF1E: 38           SEC
 FE/DF1F: 09 21        ORA #$21
@@ -195,5 +195,5 @@ FE/DF7A: 87 0A        STA [$0A]
 FE/DF7C: F9 0A 1A     SBC $1A0A,Y
 FE/DF7F: 43 0A        EOR $0A,S
 FE/DF81: 0C BD 0D     TSB $0DBD
-FE/DF84: 22 15 F3 1E  JSR $1EF315
+FE/DF84: 22 15 F3 1E  JSR Routine_1EF315
 FE/DF88: 40           RTI

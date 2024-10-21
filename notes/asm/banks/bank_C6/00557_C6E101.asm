@@ -17,13 +17,13 @@ C6/E122: EA           NOP
 C6/E123: EA           NOP
 C6/E124: EA           NOP
 C6/E125: AD 16 42     LDA $4216
-C6/E128: 30 05        BMI $E12F
+C6/E128: 30 05        BMI Local_C6E12F
 C6/E12A: AD 17 42     LDA $4217
-C6/E12D: 80 04        BRA $E133
+C6/E12D: 80 04        BRA Local_C6E133
 C6/E12F: AD 17 42     LDA $4217
 C6/E132: 1A           INC
 C6/E133: DD 22 00     CMP $0022,X
-C6/E136: 90 01        BCC $E139
+C6/E136: 90 01        BCC Local_C6E139
 C6/E138: 3A           DEC
 C6/E139: C2 20        REP #$20
 C6/E13B: 29 FF 00     AND #$00FF
@@ -37,7 +37,7 @@ C6/E14A: 85 08        STA $08
 C6/E14C: A5 00        LDA $00
 C6/E14E: C2 20        REP #$20
 C6/E150: 89 80 00     BIT #$0080
-C6/E153: D0 0D        BNE $E162
+C6/E153: D0 0D        BNE Local_C6E162
 C6/E155: A4 08        LDY $08
 C6/E157: A6 4E        LDX $4E
 C6/E159: B7 10        LDA [$10],Y

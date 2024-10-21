@@ -9,7 +9,7 @@ C3/8B76: 00 00        BRK $00
 C3/8B78: 44 36 69     MVP $36,$69
 C3/8B7B: 06 27        ASL $27
 C3/8B7D: 04 01        TSB $01
-C3/8B7F: 80 10        BRA $8B91
+C3/8B7F: 80 10        BRA Local_C38B91
 C3/8B81: 08           PHP
 C3/8B82: 1A           INC
 C3/8B83: 6C 04 08     JMP ($0804)
@@ -23,12 +23,12 @@ C3/8B90: 04 08        TSB $08
 C3/8B92: 1A           INC
 C3/8B93: 02 7F        COP $7F
 C3/8B95: 08           PHP
-C3/8B96: 10 08        BPL $8BA0
+C3/8B96: 10 08        BPL Local_C38BA0
 C3/8B98: 08           PHP
 C3/8B99: 1A           INC
 C3/8B9A: 8E 04 27     STX $2704
 C3/8B9D: 02 AA        COP $AA
-C3/8B9F: 10 10        BPL $8BB1
+C3/8B9F: 10 10        BPL Local_C38BB1
 C3/8BA1: 9D 04 27     STA $2704,X
 C3/8BA4: AB           PLB
 C3/8BA5: 1B           TCS

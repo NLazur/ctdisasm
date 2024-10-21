@@ -6,9 +6,9 @@ CF/E9D5: 64 2F        STZ $2F
 CF/E9D7: A9 00        LDA #$00
 CF/E9D9: 85 3A        STA $3A
 CF/E9DB: A5 34        LDA $34
-CF/E9DD: 30 04        BMI $E9E3
+CF/E9DD: 30 04        BMI Local_CFE9E3
 CF/E9DF: A9 00        LDA #$00
-CF/E9E1: 80 02        BRA $E9E5
+CF/E9E1: 80 02        BRA Local_CFE9E5
 CF/E9E3: A9 FF        LDA #$FF
 CF/E9E5: 85 3B        STA $3B
 CF/E9E7: A5 33        LDA $33
@@ -17,9 +17,9 @@ CF/E9EB: 64 31        STZ $31
 CF/E9ED: A9 00        LDA #$00
 CF/E9EF: 85 3C        STA $3C
 CF/E9F1: A5 35        LDA $35
-CF/E9F3: 30 04        BMI $E9F9
+CF/E9F3: 30 04        BMI Local_CFE9F9
 CF/E9F5: A9 00        LDA #$00
-CF/E9F7: 80 02        BRA $E9FB
+CF/E9F7: 80 02        BRA Local_CFE9FB
 CF/E9F9: A9 FF        LDA #$FF
 CF/E9FB: 85 3D        STA $3D
 CF/E9FD: C2 21        REP #$21
@@ -63,13 +63,13 @@ CF/EA4E: 9D 00 07     STA $0700,X
 CF/EA51: A5 38        LDA $38
 CF/EA53: 9D 01 07     STA $0701,X
 CF/EA56: A5 39        LDA $39
-CF/EA58: F0 08        BEQ $EA62
+CF/EA58: F0 08        BEQ Local_CFEA62
 CF/EA5A: A5 38        LDA $38
 CF/EA5C: C9 F0        CMP #$F0
-CF/EA5E: 90 06        BCC $EA66
-CF/EA60: 80 13        BRA $EA75
+CF/EA5E: 90 06        BCC Local_CFEA66
+CF/EA60: 80 13        BRA Local_CFEA75
 CF/EA62: A5 33        LDA $33
-CF/EA64: F0 0F        BEQ $EA75
+CF/EA64: F0 0F        BEQ Local_CFEA75
 CF/EA66: BD 2D 90     LDA $902D,X
 CF/EA69: AA           TAX
 CF/EA6A: A4 C9        LDY $C9
@@ -89,5 +89,5 @@ CF/EA81: C8           INY
 CF/EA82: C8           INY
 CF/EA83: 84 42        STY $42
 CF/EA85: C6 34        DEC $34
-CF/EA87: D0 9E        BNE $EA27
+CF/EA87: D0 9E        BNE Local_CFEA27
 CF/EA89: 60           RTS

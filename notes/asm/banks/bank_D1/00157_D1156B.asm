@@ -1,14 +1,14 @@
 ; Bank: D1 | Start Address: 156B
 Routine_D1156B:
-D1/156B: 80 42        BRA $15AF
+D1/156B: 80 42        BRA Local_D115AF
 D1/156D: 01 40        ORA ($40,X)
 D1/156F: 01 FF        ORA ($FF,X)
 D1/1571: 00 FF        BRK $FF
-D1/1573: 22 80 40 42  JSR $424080
+D1/1573: 22 80 40 42  JSR Routine_424080
 D1/1577: 41 40        EOR ($40,X)
 D1/1579: 41 00        EOR ($00,X)
 D1/157B: FF FF 12 80  SBC $8012FF,X
-D1/157F: 80 2C        BRA $15AD
+D1/157F: 80 2C        BRA Local_D115AD
 D1/1581: 01 2E        ORA ($2E,X)
 D1/1583: 13 12        ORA ($12,S),Y
 D1/1585: 00 09        BRK $09

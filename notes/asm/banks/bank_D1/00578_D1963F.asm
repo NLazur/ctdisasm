@@ -1,19 +1,19 @@
 ; Bank: D1 | Start Address: 963F
 Routine_D1963F:
-D1/963F: 82 C7 00     BRL $D19709
+D1/963F: 82 C7 00     BRL Routine_D19709
 D1/9642: 84 83        STY $83
 D1/9644: 1F 82 C7 00  ORA $00C782,X
 D1/9648: 84 E6        STY $E6
 D1/964A: 01 91        ORA ($91,X)
 D1/964C: BE 9E 8E     LDX $8E9E,Y
-D1/964F: 50 19        BVC $966A
+D1/964F: 50 19        BVC Local_D1966A
 D1/9651: 03 FF        ORA $FF,S
 D1/9653: 00 13        BRK $13
 D1/9655: 01 83        ORA ($83,X)
 D1/9657: 0F 82 C7 00  ORA $00C782
 D1/965B: 84 91        STY $91
 D1/965D: BE 9E 83     LDX $839E,Y
-D1/9660: 20 82 C7     JSR $C782
+D1/9660: 20 82 C7     JSR Local_D1C782
 D1/9663: 00 84        BRK $84
 D1/9665: E6 00        INC $00
 D1/9667: B7 02        LDA [$02],Y
@@ -21,5 +21,5 @@ D1/9669: 17 91        ORA [$91],Y
 D1/966B: 08           PHP
 D1/966C: A2 FF        LDX #$FF
 D1/966E: 01 98        ORA ($98,X)
-D1/9670: 30 8A        BMI $95FC
+D1/9670: 30 8A        BMI Local_D195FC
 D1/9672: 40           RTI

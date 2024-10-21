@@ -8,6 +8,6 @@ C7/6E42: D4 D2        PEI $D2
 C7/6E44: DC 06 D6     JMP [$D606]
 C7/6E47: 01 C9        ORA ($C9,X)
 C7/6E49: 0B           PHD
-C7/6E4A: 10 FF        BPL $6E4B
+C7/6E4A: 10 FF        BPL Local_C76E4B
 C7/6E4C: C8           INY
 C7/6E4D: 40           RTI

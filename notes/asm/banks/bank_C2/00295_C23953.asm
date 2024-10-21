@@ -15,13 +15,13 @@ C2/3967: BF 7F 39 C2  LDA $C2397F,X
 C2/396B: 85 01        STA $01
 C2/396D: A5 00        LDA $00
 C2/396F: C9 06        CMP #$06
-C2/3971: D0 07        BNE $397A
+C2/3971: D0 07        BNE Local_C2397A
 C2/3973: 18           CLC
 C2/3974: A5 01        LDA $01
 C2/3976: 69 0C        ADC #$0C
 C2/3978: 85 01        STA $01
 C2/397A: A5 01        LDA $01
-C2/397C: 4C DA 1C     JMP $1CDA
+C2/397C: 4C DA 1C     JMP Local_C21CDA
 C2/397F: 04 05        TSB $05
 C2/3981: 01 02        ORA ($02,X)
 C2/3983: 07 08        ORA [$08]
@@ -37,13 +37,13 @@ C2/3992: BF AA 39 C2  LDA $C239AA,X
 C2/3996: 85 01        STA $01
 C2/3998: A5 00        LDA $00
 C2/399A: C9 06        CMP #$06
-C2/399C: D0 07        BNE $39A5
+C2/399C: D0 07        BNE Local_C239A5
 C2/399E: 18           CLC
 C2/399F: A5 01        LDA $01
 C2/39A1: 69 0C        ADC #$0C
 C2/39A3: 85 01        STA $01
 C2/39A5: A5 01        LDA $01
-C2/39A7: 4C DA 1C     JMP $1CDA
+C2/39A7: 4C DA 1C     JMP Local_C21CDA
 C2/39AA: 03 00        ORA $00,S
 C2/39AC: 06 09        ASL $09
 C2/39AE: C2 20        REP #$20
@@ -52,6 +52,6 @@ C2/39B2: BD 22 00     LDA $0022,X
 C2/39B5: 29 04 04     AND #$0404
 C2/39B8: C9 04 04     CMP #$0404
 C2/39BB: E2 20        SEP #$20
-C2/39BD: D0 02        BNE $39C1
+C2/39BD: D0 02        BNE Local_C239C1
 C2/39BF: 38           SEC
 C2/39C0: 60           RTS

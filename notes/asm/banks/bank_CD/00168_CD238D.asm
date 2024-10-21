@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: 238D
 Routine_CD238D:
-CD/238D: 4C BB 23     JMP $23BB
+CD/238D: 4C BB 23     JMP Local_CD23BB
 CD/2390: A5 23        LDA $23
 CD/2392: 0A           ASL
 CD/2393: 0A           ASL

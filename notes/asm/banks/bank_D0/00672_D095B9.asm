@@ -39,7 +39,7 @@ D0/960D: 7A           PLY
 D0/960E: CD 72 E7     CMP $E772
 D0/9611: 78           SEI
 D0/9612: E1 FE        SBC ($FE,X)
-D0/9614: D0 6F        BNE $9685
+D0/9614: D0 6F        BNE Local_D09685
 D0/9616: 4D F7 DF     EOR $DFF7
 D0/9619: FE 4E 46     INC $464E,X
 D0/961C: 41 E0        EOR ($E0,X)

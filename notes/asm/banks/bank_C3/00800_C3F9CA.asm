@@ -2,7 +2,7 @@
 Routine_C3F9CA:
 C3/F9CA: 8A           TXA
 C3/F9CB: 00 08        BRK $08
-C3/F9CD: 50 8C        BVC $F95B
+C3/F9CD: 50 8C        BVC Local_C3F95B
 C3/F9CF: 00 04        BRK $04
 C3/F9D1: DC F9 00     JMP [$00F9]
 C3/F9D4: 04 DC        TSB $DC
@@ -52,7 +52,7 @@ C3/FA28: 06 04        ASL $04
 C3/FA2A: 8B           PHB
 C3/FA2B: FA           PLX
 C3/FA2C: 06 04        ASL $04
-C3/FA2E: 90 FA        BCC $FA2A
+C3/FA2E: 90 FA        BCC Local_C3FA2A
 C3/FA30: 06 04        ASL $04
 C3/FA32: 86 FA        STX $FA
 C3/FA34: 01 05        ORA ($05,X)
@@ -75,13 +75,13 @@ C3/FA50: 8B           PHB
 C3/FA51: FA           PLX
 C3/FA52: 01 05        ORA ($05,X)
 C3/FA54: 01 04        ORA ($04,X)
-C3/FA56: 90 FA        BCC $FA52
+C3/FA56: 90 FA        BCC Local_C3FA52
 C3/FA58: 01 05        ORA ($05,X)
 C3/FA5A: 01 04        ORA ($04,X)
-C3/FA5C: 90 FA        BCC $FA58
+C3/FA5C: 90 FA        BCC Local_C3FA58
 C3/FA5E: 01 05        ORA ($05,X)
 C3/FA60: 01 04        ORA ($04,X)
-C3/FA62: 90 FA        BCC $FA5E
+C3/FA62: 90 FA        BCC Local_C3FA5E
 C3/FA64: 01 05        ORA ($05,X)
 C3/FA66: 01 03        ORA ($03,X)
 C3/FA68: CA           DEX
@@ -159,20 +159,20 @@ C3/FADB: FB           XCE
 C3/FADC: 0A           ASL
 C3/FADD: 03 EC        ORA $EC,S
 C3/FADF: 03 F0        ORA $F0,S
-C3/FAE1: F0 46        BEQ $FB29
+C3/FAE1: F0 46        BEQ Local_C3FB29
 C3/FAE3: 00 00        BRK $00
-C3/FAE5: F0 48        BEQ $FB2F
+C3/FAE5: F0 48        BEQ Local_C3FB2F
 C3/FAE7: 00 00        BRK $00
 C3/FAE9: E0 44        CPX #$44
 C3/FAEB: 00 03        BRK $03
-C3/FAED: F0 F0        BEQ $FADF
-C3/FAEF: 4C 00 00     JMP $0000
-C3/FAF2: F0 4E        BEQ $FB42
+C3/FAED: F0 F0        BEQ Local_C3FADF
+C3/FAEF: 4C 00 00     JMP Local_C30000
+C3/FAF2: F0 4E        BEQ Local_C3FB42
 C3/FAF4: 00 00        BRK $00
 C3/FAF6: E0 4A        CPX #$4A
 C3/FAF8: 00 03        BRK $03
 C3/FAFA: 00 F0        BRK $F0
 C3/FAFC: 46 40        LSR $40
-C3/FAFE: F0 F0        BEQ $FAF0
+C3/FAFE: F0 F0        BEQ Local_C3FAF0
 C3/FB00: 48           PHA
 C3/FB01: 40           RTI

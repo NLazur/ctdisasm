@@ -6,7 +6,7 @@ D0/EE7B: 49 A0        EOR #$A0
 D0/EE7D: 28           PLP
 D0/EE7E: 01 3E        ORA ($3E,X)
 D0/EE80: 28           PLP
-D0/EE81: 90 0D        BCC $EE90
+D0/EE81: 90 0D        BCC Local_D0EE90
 D0/EE83: 91 0D        STA ($0D),Y
 D0/EE85: 92 0D        STA ($0D)
 D0/EE87: 93 00        STA ($00,S),Y

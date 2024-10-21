@@ -21,5 +21,5 @@ CE/E906: 88           DEY
 CE/E907: 88           DEY
 CE/E908: 88           DEY
 CE/E909: 88           DEY
-CE/E90A: D0 CA        BNE $E8D6
+CE/E90A: D0 CA        BNE Local_CEE8D6
 CE/E90C: 60           RTS

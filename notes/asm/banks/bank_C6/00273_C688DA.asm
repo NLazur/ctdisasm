@@ -18,7 +18,7 @@ C6/88F4: 34 42        BIT $42,X
 C6/88F6: BE 0F FF     LDX $FF0F,Y
 C6/88F9: 29 F8 18     AND #$18F8
 C6/88FC: 25 40        AND $40
-C6/88FE: D0 07        BNE $8907
+C6/88FE: D0 07        BNE Local_C68907
 C6/8900: FE 00 01     INC $0100,X
 C6/8903: F8           SED
 C6/8904: 01 F8        ORA ($F8,X)
@@ -44,7 +44,7 @@ C6/8929: 74 1B        STZ $1B,X
 C6/892B: 19 07 BC     ORA $BC07,Y
 C6/892E: F8           SED
 C6/892F: 01 F8        ORA ($F8,X)
-C6/8931: 10 78        BPL $89AB
+C6/8931: 10 78        BPL Local_C689AB
 C6/8933: 81 82        STA ($82,X)
 C6/8935: 83 84        STA $84,S
 C6/8937: 85 07        STA $07
@@ -55,8 +55,8 @@ C6/8940: 91 92        STA ($92),Y
 C6/8942: 93 94        STA ($94,S),Y
 C6/8944: A0 95        LDY #$95
 C6/8946: 00 24        BRK $24
-C6/8948: 10 11        BPL $895B
-C6/894A: 2C 10 24     BIT $2410
+C6/8948: 10 11        BPL Local_C6895B
+C6/894A: 2C 10 24     BIT Local_C62410
 C6/894D: 32 F8        AND ($F8)
 C6/894F: 0B           PHD
 C6/8950: 01 F8        ORA ($F8,X)
@@ -79,6 +79,6 @@ C6/896D: 09 31 F8     ORA #$F831
 C6/8970: 01 F8        ORA ($F8,X)
 C6/8972: 13 60        ORA ($60,S),Y
 C6/8974: 46 10        LSR $10
-C6/8976: 80 12        BRA $898A
+C6/8976: 80 12        BRA Local_C6898A
 C6/8978: 25 10        AND $10
 C6/897A: 60           RTS

@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 8393
 Routine_D08393:
 D0/8393: C0 00 80     CPY #$8000
-D0/8396: 80 80        BRA $8318
+D0/8396: 80 80        BRA Local_D08318
 D0/8398: 0C 0F 09     TSB $090F
 D0/839B: 0E 19 1E     ASL $1E19
 D0/839E: 13 1C        ORA ($1C,S),Y
@@ -11,7 +11,7 @@ D0/83A4: 27 38        AND [$38]
 D0/83A6: 27 38        AND [$38]
 D0/83A8: 00 FF        BRK $FF
 D0/83AA: 00 FF        BRK $FF
-D0/83AC: 80 FF        BRA $83AD
+D0/83AC: 80 FF        BRA Local_D083AD
 D0/83AE: E0 FF 7F     CPX #$7FFF
 D0/83B1: 7F 1F 1F 00  ADC $001F1F,X
 D0/83B5: 00 00        BRK $00
@@ -30,7 +30,7 @@ D0/83D3: 38           SEC
 D0/83D4: 00 00        BRK $00
 D0/83D6: 00 00        BRK $00
 D0/83D8: 00 00        BRK $00
-D0/83DA: 10 10        BPL $83EC
+D0/83DA: 10 10        BPL Local_D083EC
 D0/83DC: 08           PHP
 D0/83DD: 08           PHP
 D0/83DE: 0D 0D 05     ORA $050D
@@ -38,11 +38,11 @@ D0/83E1: 05 00        ORA $00
 D0/83E3: 00 00        BRK $00
 D0/83E5: 00 00        BRK $00
 D0/83E7: 00 80        BRK $80
-D0/83E9: 80 38        BRA $8423
+D0/83E9: 80 38        BRA Local_D08423
 D0/83EB: 38           SEC
 D0/83EC: 00 00        BRK $00
 D0/83EE: C0 C0 F0     CPY #$F0C0
-D0/83F1: F0 E3        BEQ $83D6
+D0/83F1: F0 E3        BEQ Local_D083D6
 D0/83F3: E3 00        SBC $00,S
 D0/83F5: 00 00        BRK $00
 D0/83F7: 00 00        BRK $00
@@ -56,6 +56,6 @@ D0/8405: 00 00        BRK $00
 D0/8407: 00 00        BRK $00
 D0/8409: 00 00        BRK $00
 D0/840B: 00 10        BRK $10
-D0/840D: 10 00        BPL $840F
+D0/840D: 10 00        BPL Local_D0840F
 D0/840F: 00 40        BRK $40
 D0/8411: 40           RTI

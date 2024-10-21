@@ -9,7 +9,7 @@ D0/CB83: 00 00        BRK $00
 D0/CB85: 00 00        BRK $00
 D0/CB87: 00 00        BRK $00
 D0/CB89: 00 00        BRK $00
-D0/CB8B: 80 80        BRA $CB0D
+D0/CB8B: 80 80        BRA Local_D0CB0D
 D0/CB8D: 00 00        BRK $00
 D0/CB8F: 00 00        BRK $00
 D0/CB91: 00 00        BRK $00

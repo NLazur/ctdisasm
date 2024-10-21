@@ -9,7 +9,7 @@ FD/7B7C: 3F 60 E7 20  AND $20E760,X
 FD/7B80: 76 2A        ROR $2A,X
 FD/7B82: 36 14        ROL $14,X
 FD/7B84: 16 04        ASL $04,X
-FD/7B86: 90 78        BCC $7C00
+FD/7B86: 90 78        BCC Local_FD7C00
 FD/7B88: 16 65        ASL $65,X
 FD/7B8A: 67 A1        ADC [$A1]
 FD/7B8C: 46 35        LSR $35
@@ -32,13 +32,13 @@ FD/7BB0: 02 10        COP $10
 FD/7BB2: 26 33        ROL $33
 FD/7BB4: B5 17        LDA $17,X
 FD/7BB6: E0 01        CPX #$01
-FD/7BB8: 80 B6        BRA $7B70
+FD/7BB8: 80 B6        BRA Local_FD7B70
 FD/7BBA: 17 03        ORA [$03],Y
 FD/7BBC: 28           PLP
 FD/7BBD: 12 04        ORA ($04)
-FD/7BBF: 50 F3        BVC $7BB4
+FD/7BBF: 50 F3        BVC Local_FD7BB4
 FD/7BC1: FC F2 FD     JSR ($FDF2,X)
 FD/7BC4: F3 FD        SBC ($FD,S),Y
-FD/7BC6: 20 F3 FC     JSR $FCF3
+FD/7BC6: 20 F3 FC     JSR Local_FDFCF3
 FD/7BC9: F9 FE F8     SBC $F8FE,Y
 FD/7BCC: 60           RTS

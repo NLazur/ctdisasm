@@ -10,5 +10,5 @@ D0/3C62: 02 03        COP $03
 D0/3C64: 04 07        TSB $07
 D0/3C66: 0B           PHD
 D0/3C67: 0D 10 10     ORA $1010
-D0/3C6A: 20 20 60     JSR $6020
+D0/3C6A: 20 20 60     JSR Local_D06020
 D0/3C6D: 60           RTS

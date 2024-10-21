@@ -27,8 +27,8 @@ D0/BC81: 04 07        TSB $07
 D0/BC83: 08           PHP
 D0/BC84: 06 02        ASL $02
 D0/BC86: 03 01        ORA $01,S
-D0/BC88: 80 80        BRA $BC0A
-D0/BC8A: 80 80        BRA $BC0C
+D0/BC88: 80 80        BRA Local_D0BC0A
+D0/BC8A: 80 80        BRA Local_D0BC0C
 D0/BC8C: 00 00        BRK $00
 D0/BC8E: C0 C0 80     CPY #$80C0
 D0/BC91: 40           RTI

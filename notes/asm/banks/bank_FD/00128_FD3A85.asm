@@ -6,7 +6,7 @@ FD/3A88: 58           CLI
 FD/3A89: 02 FF        COP $FF
 FD/3A8B: 02 FF        COP $FF
 FD/3A8D: 07 FE        ORA [$FE]
-FD/3A8F: 80 1D        BRA $3AAE
+FD/3A8F: 80 1D        BRA Local_FD3AAE
 FD/3A91: FE 0B FC     INC $FC0B,X
 FD/3A94: 07 FF        ORA [$FF]
 FD/3A96: 07 80        ORA [$80]
@@ -19,12 +19,12 @@ FD/3AA5: E7 13        SBC [$13]
 FD/3AA7: 17 FF        ORA [$FF],Y
 FD/3AA9: 01 6B        ORA ($6B,X)
 FD/3AAB: 9F 00 6E 9E  STA $9E6E00,X
-FD/3AAF: 10 F0        BPL $3AA1
+FD/3AAF: 10 F0        BPL Local_FD3AA1
 FD/3AB1: 38           SEC
-FD/3AB2: 20 43 A3     JSR $A343
+FD/3AB2: 20 43 A3     JSR Local_FDA343
 FD/3AB5: 00 10        BRK $10
 FD/3AB7: E0 90        CPX #$90
-FD/3AB9: 4C 00 F0     JMP $F000
+FD/3AB9: 4C 00 F0     JMP Local_FDF000
 FD/3ABC: 6F 80 00 FE  ADC $FE0080
-FD/3AC0: F0 E0        BEQ $3AA2
+FD/3AC0: F0 E0        BEQ Local_FD3AA2
 FD/3AC2: 60           RTS

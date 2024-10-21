@@ -24,7 +24,7 @@ C3/0E1C: C8           INY
 C3/0E1D: C8           INY
 C3/0E1E: 98           TYA
 C3/0E1F: 29 0F        AND #$0F
-C3/0E21: D0 02        BNE $0E25
+C3/0E21: D0 02        BNE Local_C30E25
 C3/0E23: E6 13        INC $13
 C3/0E25: 84 11        STY $11
 C3/0E27: 28           PLP

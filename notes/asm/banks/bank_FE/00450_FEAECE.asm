@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: AECE
 Routine_FEAECE:
-FE/AECE: 10 FB        BPL $AECB
+FE/AECE: 10 FB        BPL Local_FEAECB
 FE/AED0: 58           CLI
 FE/AED1: 07 67        ORA [$67]
 FE/AED3: 14 3C        TRB $3C
@@ -9,7 +9,7 @@ FE/AED7: 72 14        ADC ($14)
 FE/AED9: 62 04 12     PER $FEC0E0
 FE/AEDC: 08           PHP
 FE/AEDD: 9C 04 7F     STZ $7F04
-FE/AEE0: D0 17        BNE $AEF9
+FE/AEE0: D0 17        BNE Local_FEAEF9
 FE/AEE2: 0B           PHD
 FE/AEE3: 04 F4        TSB $F4
 FE/AEE5: 13 13        ORA ($13,S),Y
@@ -29,7 +29,7 @@ FE/AEFF: 08           PHP
 FE/AF00: 87 1C        STA [$1C]
 FE/AF02: 00 03        BRK $03
 FE/AF04: 14 29        TRB $29
-FE/AF06: 10 3D        BPL $AF45
+FE/AF06: 10 3D        BPL Local_FEAF45
 FE/AF08: 36 36        ROL $36,X
 FE/AF0A: 38           SEC
 FE/AF0B: 01 01        ORA ($01,X)
@@ -40,10 +40,10 @@ FE/AF15: 14 E7        TRB $E7
 FE/AF17: 13 3E        ORA ($3E,S),Y
 FE/AF19: 00 89        BRK $89
 FE/AF1B: 14 DC        TRB $DC
-FE/AF1D: 10 AF        BPL $AECE
+FE/AF1D: 10 AF        BPL Local_FEAECE
 FE/AF1F: B7 30        LDA [$30],Y
 FE/AF21: E6 10        INC $10
-FE/AF23: 90 04        BCC $AF29
+FE/AF23: 90 04        BCC Local_FEAF29
 FE/AF25: 48           PHA
 FE/AF26: 24 3B        BIT $3B
 FE/AF28: F8           SED
@@ -62,7 +62,7 @@ FE/AF3F: 0B           PHD
 FE/AF40: 6F 3B 02 01  ADC $01023B
 FE/AF44: C0 27        CPY #$27
 FE/AF46: 08           PHP
-FE/AF47: 10 A5        BPL $AEEE
+FE/AF47: 10 A5        BPL Local_FEAEEE
 FE/AF49: 1B           TCS
 FE/AF4A: BF 58 0B CF  LDA $CF0B58,X
 FE/AF4E: 4B           PHK
@@ -102,7 +102,7 @@ FE/AF8D: 3D 0F 17     AND $170F,X
 FE/AF90: 09 7A        ORA #$7A
 FE/AF92: 07 98        ORA [$98]
 FE/AF94: 17 08        ORA [$08],Y
-FE/AF96: 10 7D        BPL $B015
+FE/AF96: 10 7D        BPL Local_FEB015
 FE/AF98: 0C 56 57     TSB $5756
 FE/AF9B: 13 88        ORA ($88,S),Y
 FE/AF9D: 0B           PHD
@@ -118,13 +118,13 @@ FE/AFAF: 58           CLI
 FE/AFB0: 57 5A        EOR [$5A],Y
 FE/AFB2: 56 00        LSR $00,X
 FE/AFB4: 0C 58 10     TSB $1058
-FE/AFB7: 10 D8        BPL $AF91
+FE/AFB7: 10 D8        BPL Local_FEAF91
 FE/AFB9: 0B           PHD
 FE/AFBA: 57 10        EOR [$10],Y
 FE/AFBC: 00 57        BRK $57
 FE/AFBE: FB           XCE
 FE/AFBF: 44 0C 10     MVP $0C,$10
-FE/AFC2: 30 25        BMI $AFE9
+FE/AFC2: 30 25        BMI Local_FEAFE9
 FE/AFC4: 08           PHP
 FE/AFC5: 00 10        BRK $10
 FE/AFC7: 00 40        BRK $40
@@ -134,7 +134,7 @@ FE/AFCB: 13 41        ORA ($41,S),Y
 FE/AFCD: 19 BC 03     ORA $03BC,Y
 FE/AFD0: 07 02        ORA [$02]
 FE/AFD2: 00 20        BRK $20
-FE/AFD4: 4C 27 0C     JMP $0C27
+FE/AFD4: 4C 27 0C     JMP Local_FE0C27
 FE/AFD7: F6 3B        INC $3B,X
 FE/AFD9: 02 1C        COP $1C
 FE/AFDB: 04 FD        TSB $FD
@@ -147,7 +147,7 @@ FE/AFE7: 23 43        AND $43,S
 FE/AFE9: 0A           ASL
 FE/AFEA: E4 33        CPX $33
 FE/AFEC: FE 08 A8     INC $A808,X
-FE/AFEF: 10 25        BPL $B016
+FE/AFEF: 10 25        BPL Local_FEB016
 FE/AFF1: 2B           PLD
 FE/AFF2: 07 2D        ORA [$2D]
 FE/AFF4: 0C 10 FF     TSB $FF10
@@ -210,12 +210,12 @@ FE/B064: FF 3E 04 BA  SBC $BA043E,X
 FE/B068: 2D 08 10     AND $1008
 FE/B06B: 6A           ROR
 FE/B06C: 19 4F 24     ORA $244F,Y
-FE/B06F: 10 10        BPL $B081
+FE/B06F: 10 10        BPL Local_FEB081
 FE/B071: 8B           PHB
 FE/B072: 05 AA        ORA $AA
 FE/B074: 15 F6        ORA $F6,X
 FE/B076: 0A           ASL
-FE/B077: 4C 09 F5     JMP $F509
+FE/B077: 4C 09 F5     JMP Local_FEF509
 FE/B07A: 0C 03 08     TSB $0803
 FE/B07D: 00 14        BRK $14
 FE/B07F: 19 5B 09     ORA $095B,Y
@@ -227,7 +227,7 @@ FE/B08A: 1C 25 2C     TRB $2C25
 FE/B08D: 04 01        TSB $01
 FE/B08F: 1D 25 2A     ORA $2A25,X
 FE/B092: 0D E7 C3     ORA $C3E7
-FE/B095: 2C 32 0D     BIT $0D32
+FE/B095: 2C 32 0D     BIT Local_FE0D32
 FE/B098: B6 0C        LDX $0C,Y
 FE/B09A: 2F 27 45 24  AND $244527
 FE/B09E: 98           TYA
@@ -243,7 +243,7 @@ FE/B0AF: 0B           PHD
 FE/B0B0: B5 FB        LDA $FB,X
 FE/B0B2: 03 3F        ORA $3F,S
 FE/B0B4: 26 07        ROL $07
-FE/B0B6: 3C EF 03     BIT $03EF,X
+FE/B0B6: 3C EF 03     BIT Local_FE03EF,X
 FE/B0B9: B6 12        LDX $12,Y
 FE/B0BB: 3D A3 1B     AND $1BA3,X
 FE/B0BE: F7 67        SBC [$67],Y
@@ -253,7 +253,7 @@ FE/B0C3: B2 17        LDA ($17)
 FE/B0C5: 3D DE 2B     AND $2BDE,X
 FE/B0C8: A4 07        LDY $07
 FE/B0CA: E9 2B        SBC #$2B
-FE/B0CC: 20 07 DB     JSR $DB07
+FE/B0CC: 20 07 DB     JSR Local_FEDB07
 FE/B0CF: B2 21        LDA ($21)
 FE/B0D1: 2F 0B 09 07  AND $07090B
 FE/B0D5: 13 6A        ORA ($6A,S),Y
@@ -271,9 +271,9 @@ FE/B0E9: 3B           TSC
 FE/B0EA: D9 A8 03     CMP $03A8,Y
 FE/B0ED: 39 07 B1     AND $B107,Y
 FE/B0F0: 0A           ASL
-FE/B0F1: 4C 07 37     JMP $3707
+FE/B0F1: 4C 07 37     JMP Local_FE3707
 FE/B0F4: 08           PHP
-FE/B0F5: 10 BD        BPL $B0B4
+FE/B0F5: 10 BD        BPL Local_FEB0B4
 FE/B0F7: 07 FF        ORA [$FF]
 FE/B0F9: 18           CLC
 FE/B0FA: 00 79        BRK $79
@@ -282,7 +282,7 @@ FE/B0FF: DE 0B AD     DEC $AD0B,X
 FE/B102: 23 01        AND $01,S
 FE/B104: 14 FB        TRB $FB
 FE/B106: 03 46        ORA $46,S
-FE/B108: 30 FF        BMI $B109
+FE/B108: 30 FF        BMI Local_FEB109
 FE/B10A: E7 13        SBC [$13]
 FE/B10C: AC 1B A7     LDY $A71B
 FE/B10F: 0B           PHD
@@ -293,7 +293,7 @@ FE/B116: AF 07 EF 07  LDA $07EF07
 FE/B11A: FF AF 13 BC  SBC $BC13AF,X
 FE/B11E: 17 54        ORA [$54],Y
 FE/B120: 14 57        TRB $57
-FE/B122: 10 25        BPL $B149
+FE/B122: 10 25        BPL Local_FEB149
 FE/B124: 08           PHP
 FE/B125: 87 0B        STA [$0B]
 FE/B127: C4 20        CPY $20
@@ -311,7 +311,7 @@ FE/B13D: A8           TAY
 FE/B13E: 18           CLC
 FE/B13F: 6A           ROR
 FE/B140: 08           PHP
-FE/B141: 4C 0C 39     JMP $390C
+FE/B141: 4C 0C 39     JMP Local_FE390C
 FE/B144: 08           PHP
 FE/B145: D1 13        CMP ($13),Y
 FE/B147: 7F 00 74 18  ADC $187400,X
@@ -322,7 +322,7 @@ FE/B152: EA           NOP
 FE/B153: 03 11        ORA $11,S
 FE/B155: 14 BC        TRB $BC
 FE/B157: 08           PHP
-FE/B158: 10 19        BPL $B173
+FE/B158: 10 19        BPL Local_FEB173
 FE/B15A: 3D 36 BF     AND $BF36,X
 FE/B15D: 87 0B        STA [$0B]
 FE/B15F: E3 07        SBC $07,S
@@ -336,7 +336,7 @@ FE/B16C: FF 12 08 9D  SBC $9D0812,X
 FE/B170: 18           CLC
 FE/B171: 18           CLC
 FE/B172: 14 02        TRB $02
-FE/B174: 20 16 38     JSR $3816
+FE/B174: 20 16 38     JSR Local_FE3816
 FE/B177: 94 0C        STY $0C,X
 FE/B179: D6 33        DEC $33,X
 FE/B17B: 85 08        STA $08
@@ -351,11 +351,11 @@ FE/B18B: 08           PHP
 FE/B18C: 7F F7 23 FA  ADC $FA23F7,X
 FE/B190: 08           PHP
 FE/B191: 08           PHP
-FE/B192: 30 C8        BMI $B15C
+FE/B192: 30 C8        BMI Local_FEB15C
 FE/B194: 23 48        AND $48,S
 FE/B196: 0F AE 0D 65  ORA $650DAE
 FE/B19A: 0F 2F B2 0E  ORA $0EB22F
-FE/B19E: 22 3E 0E 03  JSR $030E3E
+FE/B19E: 22 3E 0E 03  JSR Routine_030E3E
 FE/B1A2: 2A           ROL
 FE/B1A3: 2E 11 04     ROL $0411
 FE/B1A6: 27 84        AND [$84]
@@ -364,7 +364,7 @@ FE/B1AC: 75 1F        ADC $1F,X
 FE/B1AE: E3 17        SBC $17,S
 FE/B1B0: 7D 1F EA     ADC $EA1F,X
 FE/B1B3: 07 04        ORA [$04]
-FE/B1B5: 30 24        BMI $B1DB
+FE/B1B5: 30 24        BMI Local_FEB1DB
 FE/B1B7: 8A           TXA
 FE/B1B8: 1E E5 87     ASL $87E5,X
 FE/B1BB: 2E 07 C8     ROL $C807
@@ -374,7 +374,7 @@ FE/B1C1: E0 13 C5     CPX #$C513
 FE/B1C4: 2A           ROL
 FE/B1C5: 58           CLI
 FE/B1C6: 26 5F        ROL $5F
-FE/B1C8: 3C 1B 57     BIT $571B,X
+FE/B1C8: 3C 1B 57     BIT Local_FE571B,X
 FE/B1CB: 0B           PHD
 FE/B1CC: 5A           PHY
 FE/B1CD: 1B           TCS
@@ -409,8 +409,8 @@ FE/B207: 23 C0        AND $C0,S
 FE/B209: 87 65        STA [$65]
 FE/B20B: 33 C0        AND ($C0,S),Y
 FE/B20D: 17 FF        ORA [$FF],Y
-FE/B20F: B0 17        BCS $B228
-FE/B211: D0 0E        BNE $B221
+FE/B20F: B0 17        BCS Local_FEB228
+FE/B211: D0 0E        BNE Local_FEB221
 FE/B213: 2E 17 C0     ROL $C017
 FE/B216: F7 8B        SBC [$8B],Y
 FE/B218: 37 F0        AND [$F0],Y
@@ -421,17 +421,17 @@ FE/B220: 3D 2E E4     AND $E42E,X
 FE/B223: 17 C5        ORA [$C5],Y
 FE/B225: 27 EA        AND [$EA]
 FE/B227: 33 09        AND ($09,S),Y
-FE/B229: 30 28        BMI $B253
+FE/B229: 30 28        BMI Local_FEB253
 FE/B22B: 2E 24 1E     ROL $1E24
 FE/B22E: C7 17        CMP [$17]
 FE/B230: FF AA 20 51  SBC $5120AA,X
 FE/B234: 58           CLI
-FE/B235: 80 FE        BRA $B235
-FE/B237: 80 AE        BRA $B1E7
+FE/B235: 80 FE        BRA Local_FEB235
+FE/B237: 80 AE        BRA Local_FEB1E7
 FE/B239: 17 44        ORA [$44],Y
 FE/B23B: 67 2E        ADC [$2E]
 FE/B23D: 2B           PLD
-FE/B23E: 70 80        BVS $B1C0
+FE/B23E: 70 80        BVS Local_FEB1C0
 FE/B240: 7E 77 A7     ROR $A777,X
 FE/B243: 3E 2E 38     ROL $382E,X
 FE/B246: BD 1E 01     LDA $011E,X
@@ -444,7 +444,7 @@ FE/B256: EC 2A 26     CPX $262A
 FE/B259: 1C F0 0E     TRB $0EF0
 FE/B25C: 07 37        ORA [$37]
 FE/B25E: F7 11        SBC [$11],Y
-FE/B260: 10 89        BPL $B1EB
+FE/B260: 10 89        BPL Local_FEB1EB
 FE/B262: 1F 51 09 39  ORA $390951,X
 FE/B266: 56 28        LSR $28,X
 FE/B268: CA           DEX
@@ -455,7 +455,7 @@ FE/B26E: AD 03 0E     LDA $0E03
 FE/B271: 38           SEC
 FE/B272: EA           NOP
 FE/B273: 03 08        ORA $08,S
-FE/B275: 20 01 B7     JSR $B701
+FE/B275: 20 01 B7     JSR Local_FEB701
 FE/B278: 28           PLP
 FE/B279: 07 3E        ORA [$3E]
 FE/B27B: 01 1D        ORA ($1D,X)
@@ -465,7 +465,7 @@ FE/B282: 5B           TCD
 FE/B283: 0F C3 20 09  ORA $0920C3
 FE/B287: 08           PHP
 FE/B288: 39 7F B8     AND $B87F,Y
-FE/B28B: 10 37        BPL $B2C4
+FE/B28B: 10 37        BPL Local_FEB2C4
 FE/B28D: 18           CLC
 FE/B28E: 7C 1C B9     JMP ($B91C,X)
 FE/B291: 1C 0B 14     TRB $140B
@@ -479,7 +479,7 @@ FE/B2A3: 24 09        BIT $09
 FE/B2A5: B7 1C        LDA [$1C],Y
 FE/B2A7: 3F 08 10 5B  AND $5B1008,X
 FE/B2AB: 09 10        ORA #$10
-FE/B2AD: 20 9B 09     JSR $099B
+FE/B2AD: 20 9B 09     JSR Local_FE099B
 FE/B2B0: B6 18        LDX $18,Y
 FE/B2B2: 06 3C        ASL $3C
 FE/B2B4: 24 25        BIT $25
@@ -496,7 +496,7 @@ FE/B2CC: 18           CLC
 FE/B2CD: 29 34        AND #$34
 FE/B2CF: 18           CLC
 FE/B2D0: 14 25        TRB $25
-FE/B2D2: F0 0C        BEQ $B2E0
+FE/B2D2: F0 0C        BEQ Local_FEB2E0
 FE/B2D4: FD 9F 0C     SBC $0C9F,X
 FE/B2D7: 25 00        AND $00
 FE/B2D9: 08           PHP

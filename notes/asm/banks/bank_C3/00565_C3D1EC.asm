@@ -21,7 +21,7 @@ C3/D20D: 67 B7        ADC [$B7]
 C3/D20F: 66 C9        ROR $C9
 C3/D211: 3D 20 40     AND $4020,X
 C3/D214: 02 42        COP $42
-C3/D216: 10 21        BPL $D239
+C3/D216: 10 21        BPL Local_C3D239
 C3/D218: 02 00        COP $00
 C3/D21A: 1B           TCS
 C3/D21B: 6E 01 02     ROR $0201

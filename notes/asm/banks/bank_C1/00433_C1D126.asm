@@ -5,7 +5,7 @@ C1/D128: 05 D0        ORA $D0
 C1/D12A: 56 D0        LSR $D0,X
 C1/D12C: 86 D0        STX $D0
 C1/D12E: A2 D0 ED     LDX #$EDD0
-C1/D131: D0 7B        BNE $D1AE
+C1/D131: D0 7B        BNE Local_C1D1AE
 C1/D133: AA           TAX
 C1/D134: 86 16        STX $16
 C1/D136: 86 18        STX $18

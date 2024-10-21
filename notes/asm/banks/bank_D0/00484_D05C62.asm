@@ -3,10 +3,10 @@ Routine_D05C62:
 D0/5C62: 00 00        BRK $00
 D0/5C64: 00 00        BRK $00
 D0/5C66: 00 00        BRK $00
-D0/5C68: 80 80        BRA $5BEA
+D0/5C68: 80 80        BRA Local_D05BEA
 D0/5C6A: 00 00        BRK $00
 D0/5C6C: 00 20        BRK $20
-D0/5C6E: 80 80        BRA $5BF0
+D0/5C6E: 80 80        BRA Local_D05BF0
 D0/5C70: 08           PHP
 D0/5C71: 08           PHP
 D0/5C72: 04 04        TSB $04
@@ -35,19 +35,19 @@ D0/5CA1: 08           PHP
 D0/5CA2: 00 00        BRK $00
 D0/5CA4: 00 00        BRK $00
 D0/5CA6: 00 00        BRK $00
-D0/5CA8: 20 20 00     JSR $0020
+D0/5CA8: 20 20 00     JSR Local_D00020
 D0/5CAB: 00 00        BRK $00
 D0/5CAD: 00 00        BRK $00
 D0/5CAF: 00 28        BRK $28
 D0/5CB1: 28           PLP
 D0/5CB2: 01 01        ORA ($01,X)
-D0/5CB4: 10 10        BPL $5CC6
+D0/5CB4: 10 10        BPL Local_D05CC6
 D0/5CB6: 04 04        TSB $04
 D0/5CB8: 08           PHP
 D0/5CB9: 09 14 14     ORA #$1414
 D0/5CBC: 02 0A        COP $0A
 D0/5CBE: 01 05        ORA ($05,X)
-D0/5CC0: 20 20 00     JSR $0020
+D0/5CC0: 20 20 00     JSR Local_D00020
 D0/5CC3: 00 00        BRK $00
 D0/5CC5: 00 40        BRK $40
 D0/5CC7: 40           RTI

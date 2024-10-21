@@ -7,7 +7,7 @@ FD/2945: C0 B9        CPY #$B9
 FD/2947: BE 83 FC     LDX $FC83,Y
 FD/294A: 00 4D        BRK $4D
 FD/294C: B3 77        LDA ($77,S),Y
-FD/294E: 80 C7        BRA $2917
+FD/294E: 80 C7        BRA Local_FD2917
 FD/2950: 00 CF        BRK $CF
 FD/2952: 3E 40 BE     ROL $BE40,X
 FD/2955: 71 50        ADC ($50),Y
@@ -31,7 +31,7 @@ FD/2981: FB           XCE
 FD/2982: 00 46        BRK $46
 FD/2984: F9 DB 0E     SBC $0EDB,Y
 FD/2987: AD 9A E0     LDA $E09A
-FD/298A: 10 00        BPL $298C
+FD/298A: 10 00        BPL Local_FD298C
 FD/298C: 52 33        EOR ($33)
 FD/298E: 9E BD 03     STZ $03BD,X
 FD/2991: A7 48        LDA [$48]
@@ -40,7 +40,7 @@ FD/2994: 84 1E        STY $1E
 FD/2996: DB           STP
 FD/2997: 7C 00 7C     JMP ($7C00,X)
 FD/299A: 0C FF 8C     TSB $8CFF
-FD/299D: D0 04        BNE $29A3
+FD/299D: D0 04        BNE Local_FD29A3
 FD/299F: 00 1B        BRK $1B
 FD/29A1: FC 53 BC     JSR ($BC53,X)
 FD/29A4: 23 FC        AND $FC,S

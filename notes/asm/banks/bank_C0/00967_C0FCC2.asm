@@ -3,7 +3,7 @@ Routine_C0FCC2:
 C0/FCC2: 5F 5D 5C 5A  EOR $5A5C5D,X
 C0/FCC6: 59 57 56     EOR $5657,Y
 C0/FCC9: 54 53 51     MVN $53,$51
-C0/FCCC: 50 4E        BVC $FD1C
+C0/FCCC: 50 4E        BVC Local_C0FD1C
 C0/FCCE: 4D 4B 4A     EOR $4A4B
 C0/FCD1: 48           PHA
 C0/FCD2: 47 45        EOR [$45]
@@ -17,7 +17,7 @@ C0/FCE5: 2A           ROL
 C0/FCE6: 28           PLP
 C0/FCE7: 27 25        AND [$25]
 C0/FCE9: 24 22        BIT $22
-C0/FCEB: 20 1F 1D     JSR $1D1F
+C0/FCEB: 20 1F 1D     JSR Local_C01D1F
 C0/FCEE: 1C 1A 19     TRB $191A
 C0/FCF1: 17 15        ORA [$15],Y
 C0/FCF3: 14 12        TRB $12

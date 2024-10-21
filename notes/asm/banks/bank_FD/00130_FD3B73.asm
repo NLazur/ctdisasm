@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: 3B73
 Routine_FD3B73:
 FD/3B73: F8           SED
-FD/3B74: 20 F8 00     JSR $00F8
+FD/3B74: 20 F8 00     JSR Local_FD00F8
 FD/3B77: FC 00 40     JSR ($4000,X)
 FD/3B7A: B8           CLV
 FD/3B7B: 4A           LSR
@@ -16,8 +16,8 @@ FD/3B8E: 06 F3        ASL $F3
 FD/3B90: 18           CLC
 FD/3B91: D7 30        CMP [$30],Y
 FD/3B93: 00 E8        BRK $E8
-FD/3B95: 20 90 40     JSR $4090
-FD/3B98: 80 40        BRA $3BDA
+FD/3B95: 20 90 40     JSR Local_FD4090
+FD/3B98: 80 40        BRA Local_FD3BDA
 FD/3B9A: 00 40        BRK $40
 FD/3B9C: 00 00        BRK $00
 FD/3B9E: 4D B2 F3     EOR $F3B2

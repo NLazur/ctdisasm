@@ -7,14 +7,14 @@ CE/0473: 09 03        ORA #$03
 CE/0475: 0B           PHD
 CE/0476: A8           TAY
 CE/0477: 01 77        ORA ($77,X)
-CE/0479: 10 0E        BPL $0489
-CE/047B: 70 02        BVS $047F
+CE/0479: 10 0E        BPL Local_CE0489
+CE/047B: 70 02        BVS Local_CE047F
 CE/047D: 00 A8        BRK $A8
 CE/047F: 64 71        STZ $71
 CE/0481: 36 20        ROL $20,X
 CE/0483: 0A           ASL
 CE/0484: 6F 00 90 80  ADC $809000
-CE/0488: 90 00        BCC $048A
+CE/0488: 90 00        BCC Local_CE048A
 CE/048A: 94 04        STY $04,X
 CE/048C: 9E 03 A6     STZ $A603,X
 CE/048F: 03 A4        ORA $A4,S
@@ -36,7 +36,7 @@ CE/04AD: 2A           ROL
 CE/04AE: 24 02        BIT $02
 CE/04B0: 2E 01 00     ROL $0001
 CE/04B3: 24 01        BIT $01
-CE/04B5: 50 36        BVC $04ED
+CE/04B5: 50 36        BVC Local_CE04ED
 CE/04B7: 06 03        ASL $03
 CE/04B9: 00 90        BRK $90
 CE/04BB: C0 80        CPY #$80

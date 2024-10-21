@@ -19,6 +19,6 @@ CD/3949: 8B           PHB
 CD/394A: 7B           TDC
 CD/394B: 48           PHA
 CD/394C: AB           PLB
-CD/394D: 20 52 39     JSR $3952
+CD/394D: 20 52 39     JSR Local_CD3952
 CD/3950: AB           PLB
 CD/3951: 60           RTS

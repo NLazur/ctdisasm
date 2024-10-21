@@ -1,11 +1,11 @@
 ; Bank: D0 | Start Address: 637D
 Routine_D0637D:
 D0/637D: C0 80        CPY #$80
-D0/637F: 80 00        BRA $6381
+D0/637F: 80 00        BRA Local_D06381
 D0/6381: 00 00        BRK $00
 D0/6383: 00 E0        BRK $E0
 D0/6385: E0 80        CPX #$80
-D0/6387: 80 00        BRA $6389
+D0/6387: 80 00        BRA Local_D06389
 D0/6389: 00 00        BRK $00
 D0/638B: 00 00        BRK $00
 D0/638D: 00 00        BRK $00
@@ -26,5 +26,5 @@ D0/63A8: 63 76        ADC $76,S
 D0/63AA: 07 04        ORA [$04]
 D0/63AC: 07 01        ORA [$01]
 D0/63AE: 04 0C        TSB $0C
-D0/63B0: 80 80        BRA $6332
+D0/63B0: 80 80        BRA Local_D06332
 D0/63B2: 40           RTI

@@ -9,7 +9,7 @@ CD/2961: 69 29        ADC #$29
 CD/2963: 75 29        ADC $29,X
 CD/2965: 81 29        STA ($29,X)
 CD/2967: 8D 29 C2     STA $C229
-CD/296A: 20 B9 77     JSR $77B9
+CD/296A: 20 B9 77     JSR Local_CD77B9
 CD/296D: CA           DEX
 CD/296E: 99 7A CA     STA $CA7A,Y
 CD/2971: 7B           TDC

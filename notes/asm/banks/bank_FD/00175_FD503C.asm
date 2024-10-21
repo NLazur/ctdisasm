@@ -9,13 +9,13 @@ FD/5045: 1E 0D 05     ASL $050D,X
 FD/5048: 00 0C        BRK $0C
 FD/504A: 01 04        ORA ($04,X)
 FD/504C: 0A           ASL
-FD/504D: 50 0C        BVC $505B
+FD/504D: 50 0C        BVC Local_FD505B
 FD/504F: 12 0C        ORA ($0C)
 FD/5051: 14 78        TRB $78
 FD/5053: 72 02        ADC ($02)
 FD/5055: 02 00        COP $00
 FD/5057: 04 7F        TSB $7F
 FD/5059: 00 B3        BRK $B3
-FD/505B: 80 F8        BRA $5055
+FD/505B: 80 F8        BRA Local_FD5055
 FD/505D: C8           INY
 FD/505E: 6B           RTL

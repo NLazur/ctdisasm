@@ -20,5 +20,5 @@ D1/79BD: 12 7C        ORA ($7C)
 D1/79BF: 91 28        STA ($28),Y
 D1/79C1: 7C 91 33     JMP ($3391,X)
 D1/79C4: 7C 8E 44     JMP ($448E,X)
-D1/79C7: 10 38        BPL $7A01
+D1/79C7: 10 38        BPL Local_D17A01
 D1/79C9: 40           RTI

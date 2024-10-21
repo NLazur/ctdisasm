@@ -76,7 +76,7 @@ FE/FD77: 00 00        BRK $00
 FE/FD79: 00 00        BRK $00
 FE/FD7B: 00 00        BRK $00
 FE/FD7D: 00 A2        BRK $A2
-FE/FD7F: 10 22        BPL $FDA3
+FE/FD7F: 10 22        BPL Local_FEFDA3
 FE/FD81: 04 00        TSB $00
 FE/FD83: 00 00        BRK $00
 FE/FD85: 00 00        BRK $00

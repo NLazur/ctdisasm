@@ -9,10 +9,10 @@ C1/ABD1: 69 03        ADC #$03
 C1/ABD3: 85 0A        STA $0A
 C1/ABD5: A0 03 00     LDY #$0003
 C1/ABD8: C4 0A        CPY $0A
-C1/ABDA: F0 0C        BEQ $ABE8
+C1/ABDA: F0 0C        BEQ Local_C1ABE8
 C1/ABDC: B9 FF AE     LDA $AEFF,Y
 C1/ABDF: C9 FF        CMP #$FF
-C1/ABE1: F0 05        BEQ $ABE8
+C1/ABE1: F0 05        BEQ Local_C1ABE8
 C1/ABE3: 98           TYA
 C1/ABE4: 9D CC AE     STA $AECC,X
 C1/ABE7: E8           INX
@@ -22,9 +22,9 @@ C1/ABEB: 00 D0        BRK $D0
 C1/ABED: EA           NOP
 C1/ABEE: 8A           TXA
 C1/ABEF: C9 02        CMP #$02
-C1/ABF1: 90 1D        BCC $AC10
+C1/ABF1: 90 1D        BCC Local_C1AC10
 C1/ABF3: A2 00 00     LDX #$0000
-C1/ABF6: 20 22 AF     JSR $AF22
+C1/ABF6: 20 22 AF     JSR Local_C1AF22
 C1/ABF9: AA           TAX
 C1/ABFA: BD CC AE     LDA $AECC,X
 C1/ABFD: 8D CC AE     STA $AECC
@@ -33,7 +33,7 @@ C1/AC02: A2 01 00     LDX #$0001
 C1/AC05: 9D CC AE     STA $AECC,X
 C1/AC08: E8           INX
 C1/AC09: E0 00 00     CPX #$0000
-C1/AC0C: 90 F7        BCC $AC05
+C1/AC0C: 90 F7        BCC Local_C1AC05
 C1/AC0E: A9 01        LDA #$01
 C1/AC10: 8D CB AE     STA $AECB
 C1/AC13: 60           RTS

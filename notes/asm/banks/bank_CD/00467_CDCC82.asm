@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: CC82
 Routine_CDCC82:
 CD/CC82: A8           TAY
-CD/CC83: 10 78        BPL $CCFD
+CD/CC83: 10 78        BPL Local_CDCCFD
 CD/CC85: 9B           TXY
 CD/CC86: 85 C0        STA $C0
 CD/CC88: 0D A8 FF     ORA $FFA8
@@ -23,7 +23,7 @@ CD/CCAA: 02 02        COP $02
 CD/CCAC: 05 0A        ORA $0A
 CD/CCAE: 33 0A        AND ($0A,S),Y
 CD/CCB0: 27 D9        AND [$D9]
-CD/CCB2: 30 99        BMI $CC4D
+CD/CCB2: 30 99        BMI Local_CDCC4D
 CD/CCB4: 00 1A        BRK $1A
 CD/CCB6: 36 34        ROL $34,X
 CD/CCB8: 1B           TCS
@@ -50,7 +50,7 @@ CD/CCDE: 12 03        ORA ($03)
 CD/CCE0: 1B           TCS
 CD/CCE1: 03 35        ORA $35,S
 CD/CCE3: A8           TAY
-CD/CCE4: 20 36 24     JSR $2436
+CD/CCE4: 20 36 24     JSR Local_CD2436
 CD/CCE7: 04 12        TSB $12
 CD/CCE9: 1A           INC
 CD/CCEA: 1B           TCS
@@ -66,7 +66,7 @@ CD/CCF9: 12 03        ORA ($03)
 CD/CCFB: 1B           TCS
 CD/CCFC: 03 35        ORA $35,S
 CD/CCFE: A8           TAY
-CD/CCFF: 20 36 24     JSR $2436
+CD/CCFF: 20 36 24     JSR Local_CD2436
 CD/CD02: 04 12        TSB $12
 CD/CD04: 1B           TCS
 CD/CD05: 1B           TCS
@@ -100,7 +100,7 @@ CD/CD39: 12 03        ORA ($03)
 CD/CD3B: 1B           TCS
 CD/CD3C: 03 36        ORA $36,S
 CD/CD3E: A8           TAY
-CD/CD3F: 20 24 03     JSR $0324
+CD/CD3F: 20 24 03     JSR Local_CD0324
 CD/CD42: 12 19        ORA ($19)
 CD/CD44: 1B           TCS
 CD/CD45: 19 72 0D     ORA $0D72,Y
@@ -109,7 +109,7 @@ CD/CD4A: 00 76        BRK $76
 CD/CD4C: 00 03        BRK $03
 CD/CD4E: 72 0A        ADC ($0A)
 CD/CD50: 27 D9        AND [$D9]
-CD/CD52: 30 02        BMI $CD56
+CD/CD52: 30 02        BMI Local_CDCD56
 CD/CD54: 05 0A        ORA $0A
 CD/CD56: 33 09        AND ($09,S),Y
 CD/CD58: 99 00 1A     STA $1A00,Y
@@ -120,7 +120,7 @@ CD/CD61: 12 0C        ORA ($0C)
 CD/CD63: 1B           TCS
 CD/CD64: 0C 24 02     TSB $0224
 CD/CD67: A8           TAY
-CD/CD68: 20 36 11     JSR $1136
+CD/CD68: 20 36 11     JSR Local_CD1136
 CD/CD6B: 98           TYA
 CD/CD6C: 00 1A        BRK $1A
 CD/CD6E: 1B           TCS
@@ -129,19 +129,19 @@ CD/CD70: DA           PHX
 CD/CD71: 28           PLP
 CD/CD72: 72 0D        ADC ($0D)
 CD/CD74: 06 03        ASL $03
-CD/CD76: 20 0F 50     JSR $500F
+CD/CD76: 20 0F 50     JSR Local_CD500F
 CD/CD79: 2E 01 00     ROL $0001
 CD/CD7C: 24 02        BIT $02
 CD/CD7E: 78           SEI
 CD/CD7F: 67 2D        ADC [$2D]
-CD/CD81: 80 12        BRA $CD95
+CD/CD81: 80 12        BRA Local_CDCD95
 CD/CD83: A8           TAY
 CD/CD84: 69 00 20     ADC #$2000
 CD/CD87: 04 06        TSB $06
 CD/CD89: 05 20        ORA $20
 CD/CD8B: 08           PHP
 CD/CD8C: 6A           ROR
-CD/CD8D: 20 08 06     JSR $0608
+CD/CD8D: 20 08 06     JSR Local_CD0608
 CD/CD90: 03 00        ORA $00,S
 CD/CD92: F8           SED
 CD/CD93: 00 80        BRK $80
@@ -161,7 +161,7 @@ CD/CDB0: 00 24        BRK $24
 CD/CDB2: 01 72        ORA ($72,X)
 CD/CDB4: 15 D0        ORA $D0,X
 CD/CDB6: C4 F0        CPY $F0
-CD/CDB8: F0 C4        BEQ $CD7E
+CD/CDB8: F0 C4        BEQ Local_CDCD7E
 CD/CDBA: E8           INX
 CD/CDBB: F8           SED
 CD/CDBC: C4 E4        CPY $E4
@@ -172,7 +172,7 @@ CD/CDC8: C4 E4        CPY $E4
 CD/CDCA: 02 C4        COP $C4
 CD/CDCC: E8           INX
 CD/CDCD: 04 C4        TSB $C4
-CD/CDCF: F0 08        BEQ $CDD9
+CD/CDCF: F0 08        BEQ Local_CDCDD9
 CD/CDD1: C5 10        CMP $10
 CD/CDD3: D1 02        CMP ($02),Y
 CD/CDD5: 0A           ASL
@@ -180,14 +180,14 @@ CD/CDD6: 36 78        ROL $78,X
 CD/CDD8: 9C 80 45     STZ $4580
 CD/CDDB: 00 00        BRK $00
 CD/CDDD: E7 F1        SBC [$F1]
-CD/CDDF: 20 78 36     JSR $3678
-CD/CDE2: 80 51        BRA $CE35
+CD/CDDF: 20 78 36     JSR Local_CD3678
+CD/CDE2: 80 51        BRA Local_CDCE35
 CD/CDE4: 06 03        ASL $03
 CD/CDE6: 00 24        BRK $24
 CD/CDE8: 01 72        ORA ($72,X)
 CD/CDEA: 15 D0        ORA $D0,X
 CD/CDEC: C4 F0        CPY $F0
-CD/CDEE: F0 C4        BEQ $CDB4
+CD/CDEE: F0 C4        BEQ Local_CDCDB4
 CD/CDF0: E8           INX
 CD/CDF1: F8           SED
 CD/CDF2: C4 E4        CPY $E4
@@ -198,7 +198,7 @@ CD/CDFE: C4 E4        CPY $E4
 CD/CE00: 02 C4        COP $C4
 CD/CE02: E8           INX
 CD/CE03: 04 C4        TSB $C4
-CD/CE05: F0 08        BEQ $CE0F
+CD/CE05: F0 08        BEQ Local_CDCE0F
 CD/CE07: C5 10        CMP $10
 CD/CE09: D1 02        CMP ($02),Y
 CD/CE0B: 0A           ASL
@@ -207,7 +207,7 @@ CD/CE0E: 06 03        ASL $03
 CD/CE10: 00 24        BRK $24
 CD/CE12: 02 06        COP $06
 CD/CE14: 09 D0 C4     ORA #$C4D0
-CD/CE17: F0 F0        BEQ $CE09
+CD/CE17: F0 F0        BEQ Local_CDCE09
 CD/CE19: C4 E8        CPY $E8
 CD/CE1B: F8           SED
 CD/CE1C: C4 E4        CPY $E4
@@ -218,14 +218,14 @@ CD/CE28: C4 E4        CPY $E4
 CD/CE2A: 02 C4        COP $C4
 CD/CE2C: E8           INX
 CD/CE2D: 04 C4        TSB $C4
-CD/CE2F: F0 08        BEQ $CE39
+CD/CE2F: F0 08        BEQ Local_CDCE39
 CD/CE31: C5 10        CMP $10
 CD/CE33: D1 06        CMP ($06),Y
 CD/CE35: 05 24        ORA $24
 CD/CE37: 03 06        ORA $06,S
 CD/CE39: 03 00        ORA $00,S
-CD/CE3B: 90 F8        BCC $CE35
-CD/CE3D: 90 F8        BCC $CE37
+CD/CE3B: 90 F8        BCC Local_CDCE35
+CD/CE3D: 90 F8        BCC Local_CDCE37
 CD/CE3F: 5B           TCD
 CD/CE40: CE 6A CE     DEC $CE6A
 CD/CE43: 7E CE 8B     ROR $8BCE,X
@@ -238,7 +238,7 @@ CD/CE53: 8B           PHB
 CD/CE54: CE 94 CE     DEC $CE94
 CD/CE57: 9D CE A6     STA $A6CE,X
 CD/CE5A: CE 43 00     DEC $0043
-CD/CE5D: D0 00        BNE $CE5F
+CD/CE5D: D0 00        BNE Local_CDCE5F
 CD/CE5F: 72 15        ADC ($15)
 CD/CE61: 02 05        COP $05
 CD/CE63: 29 5E 24     AND #$245E

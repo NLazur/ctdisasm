@@ -15,7 +15,7 @@ D0/4A5F: 1D 6F 73     ORA $736F,X
 D0/4A62: D6 EE        DEC $EE,X
 D0/4A64: 68           PLA
 D0/4A65: 98           TYA
-D0/4A66: B0 70        BCS $4AD8
+D0/4A66: B0 70        BCS Local_D04AD8
 D0/4A68: 0A           ASL
 D0/4A69: 0A           ASL
 D0/4A6A: 00 00        BRK $00
@@ -38,7 +38,7 @@ D0/4A88: 00 00        BRK $00
 D0/4A8A: 00 00        BRK $00
 D0/4A8C: 00 00        BRK $00
 D0/4A8E: 00 00        BRK $00
-D0/4A90: 80 80        BRA $4A12
+D0/4A90: 80 80        BRA Local_D04A12
 D0/4A92: C0 C0 A0     CPY #$A0C0
 D0/4A95: E0 60        CPX #$60
 D0/4A97: 60           RTS

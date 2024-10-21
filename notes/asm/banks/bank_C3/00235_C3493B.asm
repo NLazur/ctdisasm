@@ -13,18 +13,18 @@ C3/4950: 88           DEY
 C3/4951: 25 8F        AND $8F
 C3/4953: 9E 0D 00     STZ $000D,X
 C3/4956: 23 8F        AND $8F,S
-C3/4958: B0 13        BCS $496D
+C3/4958: B0 13        BCS Local_C3496D
 C3/495A: 00 02        BRK $02
 C3/495C: 27 DC        AND [$DC]
-C3/495E: 10 38        BPL $4998
+C3/495E: 10 38        BPL Local_C34998
 C3/4960: 65 1F        ADC $1F
 C3/4962: 38           SEC
 C3/4963: E5 23        SBC $23
 C3/4965: 45 E6        EOR $E6
-C3/4967: 10 0A        BPL $4973
+C3/4967: 10 0A        BPL Local_C34973
 C3/4969: 7F 20 31 A5  ADC $A53120,X
 C3/496D: 29 F3        AND #$F3
-C3/496F: 10 18        BPL $4989
+C3/496F: 10 18        BPL Local_C34989
 C3/4971: 8C 65 23     STY $2365
 C3/4974: 1A           INC
 C3/4975: 00 16        BRK $16

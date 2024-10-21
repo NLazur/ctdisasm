@@ -49,11 +49,11 @@ C0/76CB: 1A           INC
 C0/76CC: 25 1E        AND $1E
 C0/76CE: 85 52        STA $52
 C0/76D0: C6 5C        DEC $5C
-C0/76D2: F0 07        BEQ $76DB
+C0/76D2: F0 07        BEQ Local_C076DB
 C0/76D4: A5 54        LDA $54
 C0/76D6: EB           XBA
 C0/76D7: A5 52        LDA $52
-C0/76D9: 80 C1        BRA $769C
+C0/76D9: 80 C1        BRA Local_C0769C
 C0/76DB: A5 54        LDA $54
 C0/76DD: EB           XBA
 C0/76DE: A5 52        LDA $52

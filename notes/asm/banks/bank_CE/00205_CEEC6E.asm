@@ -15,5 +15,5 @@ CE/EC80: 88           DEY
 CE/EC81: 88           DEY
 CE/EC82: 88           DEY
 CE/EC83: E0 C0 01     CPX #$01C0
-CE/EC86: D0 EB        BNE $EC73
+CE/EC86: D0 EB        BNE Local_CEEC73
 CE/EC88: 60           RTS

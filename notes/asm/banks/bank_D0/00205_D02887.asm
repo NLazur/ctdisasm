@@ -11,12 +11,12 @@ D0/2896: 03 05        ORA $05,S
 D0/2898: C0 C1 41     CPY #$41C1
 D0/289B: C2 07        REP #$07
 D0/289D: 81 8C        STA ($8C,X)
-D0/289F: 82 9B 87     BRL $D0B03D
+D0/289F: 82 9B 87     BRL Routine_D0B03D
 D0/28A2: 36 0F        ROL $0F,X
 D0/28A4: 6D 1E D2     ADC $D21E
 D0/28A7: 3D 00 80     AND $8000,X
 D0/28AA: 84 84        STY $84
 D0/28AC: 08           PHP
 D0/28AD: 18           CLC
-D0/28AE: 50 70        BVC $2920
+D0/28AE: 50 70        BVC Local_D02920
 D0/28B0: 60           RTS

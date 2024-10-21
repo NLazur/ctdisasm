@@ -43,7 +43,7 @@ C1/7729: A5 81        LDA $81
 C1/772B: 85 B2        STA $B2
 C1/772D: A9 03        LDA #$03
 C1/772F: 85 B3        STA $B3
-C1/7731: 20 D7 00     JSR $00D7
+C1/7731: 20 D7 00     JSR Local_C100D7
 C1/7734: A5 B5        LDA $B5
 C1/7736: 8D B0 A2     STA $A2B0
 C1/7739: A5 80        LDA $80
@@ -52,7 +52,7 @@ C1/773D: A5 81        LDA $81
 C1/773F: 85 B2        STA $B2
 C1/7741: A9 03        LDA #$03
 C1/7743: 85 B3        STA $B3
-C1/7745: 20 D7 00     JSR $00D7
+C1/7745: 20 D7 00     JSR Local_C100D7
 C1/7748: A5 B5        LDA $B5
 C1/774A: 8D B2 A2     STA $A2B2
 C1/774D: 60           RTS

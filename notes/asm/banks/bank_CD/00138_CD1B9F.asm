@@ -5,7 +5,7 @@ CD/1BA1: 38           SEC
 CD/1BA2: ED 26 1D     SBC $1D26
 CD/1BA5: AA           TAX
 CD/1BA6: 86 45        STX $45
-CD/1BA8: 4C 13 2E     JMP $2E13
+CD/1BA8: 4C 13 2E     JMP Local_CD2E13
 CD/1BAB: A7 40        LDA [$40]
 CD/1BAD: AA           TAX
 CD/1BAE: A9 6F        LDA #$6F

@@ -9,11 +9,11 @@ C0/5FBE: 85 DB        STA $DB
 C0/5FC0: AA           TAX
 C0/5FC1: 64 DC        STZ $DC
 C0/5FC3: BD 01 1C     LDA $1C01,X
-C0/5FC6: D0 71        BNE $6039
+C0/5FC6: D0 71        BNE Local_C06039
 C0/5FC8: BD 00 11     LDA $1100,X
-C0/5FCB: 30 6C        BMI $6039
+C0/5FCB: 30 6C        BMI Local_C06039
 C0/5FCD: BD 00 10     LDA $1000,X
-C0/5FD0: 30 67        BMI $6039
+C0/5FD0: 30 67        BMI Local_C06039
 C0/5FD2: BD 00 1C     LDA $1C00,X
 C0/5FD5: 85 D9        STA $D9
 C0/5FD7: C8           INY
@@ -26,8 +26,8 @@ C0/5FE1: 4A           LSR
 C0/5FE2: 4A           LSR
 C0/5FE3: 85 DF        STA $DF
 C0/5FE5: C5 D9        CMP $D9
-C0/5FE7: F0 51        BEQ $603A
-C0/5FE9: B0 53        BCS $603E
+C0/5FE7: F0 51        BEQ Local_C0603A
+C0/5FE9: B0 53        BCS Local_C0603E
 C0/5FEB: A5 D9        LDA $D9
 C0/5FED: 8D 02 42     STA $4202
 C0/5FF0: A9 80        LDA #$80
@@ -64,7 +64,7 @@ C0/602C: A5 DF        LDA $DF
 C0/602E: 9D 00 1C     STA $1C00,X
 C0/6031: 9E 80 1A     STZ $1A80,X
 C0/6034: 9E 01 1A     STZ $1A01,X
-C0/6037: 80 01        BRA $603A
+C0/6037: 80 01        BRA Local_C0603A
 C0/6039: C8           INY
 C0/603A: C8           INY
 C0/603B: BB           TYX

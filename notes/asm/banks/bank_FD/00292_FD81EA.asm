@@ -6,7 +6,7 @@ FD/81EF: FE 0B 22     INC $220B,X
 FD/81F2: 71 70        ADC ($70),Y
 FD/81F4: F8           SED
 FD/81F5: F8           SED
-FD/81F6: F0 F0        BEQ $81E8
+FD/81F6: F0 F0        BEQ Local_FD81E8
 FD/81F8: 0C C1 C1     TSB $C1C1
 FD/81FB: 48           PHA
 FD/81FC: 11 1C        ORA ($1C),Y
@@ -20,9 +20,9 @@ FD/820B: F8           SED
 FD/820C: FF 02 F0 B8  SBC $B8F002,X
 FD/8210: 01 67        ORA ($67,X)
 FD/8212: 00 20        BRK $20
-FD/8214: 20 7D 7C     JSR $7C7D
+FD/8214: 20 7D 7C     JSR Local_FD7C7D
 FD/8217: 01 10        ORA ($10,X)
-FD/8219: 20 F8 76     JSR $76F8
+FD/8219: 20 F8 76     JSR Local_FD76F8
 FD/821C: F7 03        SBC [$03],Y
 FD/821E: 03 DE        ORA $DE,S
 FD/8220: C0 80        CPY #$80

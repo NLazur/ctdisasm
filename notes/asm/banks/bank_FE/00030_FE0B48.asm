@@ -1,10 +1,10 @@
 ; Bank: FE | Start Address: 0B48
 Routine_FE0B48:
-FE/0B48: 20 48 F8     JSR $F848
+FE/0B48: 20 48 F8     JSR Local_FEF848
 FE/0B4B: 12 68        ORA ($68)
 FE/0B4D: 01 0B        ORA ($0B,X)
 FE/0B4F: 0A           ASL
-FE/0B50: 20 0E 0C     JSR $0C0E
+FE/0B50: 20 0E 0C     JSR Local_FE0C0E
 FE/0B53: 01 0A        ORA ($0A,X)
 FE/0B55: 0C 01 00     TSB $0001
 FE/0B58: 0B           PHD
@@ -23,12 +23,12 @@ FE/0B6D: 05 05        ORA $05
 FE/0B6F: 0F 73 C9 08  ORA $08C973
 FE/0B73: 09 01 0B     ORA #$0B01
 FE/0B76: 02 46        COP $46
-FE/0B78: 10 01        BPL $0B7B
+FE/0B78: 10 01        BPL Local_FE0B7B
 FE/0B7A: F8           SED
 FE/0B7B: B3 18        LDA ($18,S),Y
 FE/0B7D: 0A           ASL
 FE/0B7E: 01 3F        ORA ($3F,X)
-FE/0B80: 10 04        BPL $0B86
+FE/0B80: 10 04        BPL Local_FE0B86
 FE/0B82: 05 0F        ORA $0F
 FE/0B84: 08           PHP
 FE/0B85: 08           PHP
@@ -40,7 +40,7 @@ FE/0B93: FF 00 01 3F  SBC $3F0100,X
 FE/0B97: 00 04        BRK $04
 FE/0B99: 0F 03 08 0F  ORA $0F0803
 FE/0B9D: 03 02        ORA $02,S
-FE/0B9F: D0 02        BNE $0BA3
+FE/0B9F: D0 02        BNE Local_FE0BA3
 FE/0BA1: 03 03        ORA $03,S
 FE/0BA3: 03 48        ORA $48,S
 FE/0BA5: 00 0F        BRK $0F
@@ -49,7 +49,7 @@ FE/0BAA: 31 43        AND ($43),Y
 FE/0BAC: 81 00        STA ($00,X)
 FE/0BAE: 3F 10 03 09  AND $090310,X
 FE/0BB2: 03 02        ORA $02,S
-FE/0BB4: 3C 10 0F     BIT $0F10,X
+FE/0BB4: 3C 10 0F     BIT Local_FE0F10,X
 FE/0BB7: F7 0A        SBC [$0A],Y
 FE/0BB9: 01 01        ORA ($01,X)
 FE/0BBB: F8           SED

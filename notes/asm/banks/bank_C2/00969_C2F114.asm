@@ -12,7 +12,7 @@ C2/F11F: 48           PHA
 C2/F120: 29 03        AND #$03
 C2/F122: 85 92        STA $92
 C2/F124: 64 93        STZ $93
-C2/F126: 20 3F F1     JSR $F13F
+C2/F126: 20 3F F1     JSR Local_C2F13F
 C2/F129: 68           PLA
 C2/F12A: 49 80        EOR #$80
 C2/F12C: 85 8F        STA $8F
@@ -23,7 +23,7 @@ C2/F131: 4A           LSR
 C2/F132: 29 07        AND #$07
 C2/F134: 85 8E        STA $8E
 C2/F136: 5A           PHY
-C2/F137: 20 DA F1     JSR $F1DA
+C2/F137: 20 DA F1     JSR Local_C2F1DA
 C2/F13A: BB           TYX
 C2/F13B: 7A           PLY
 C2/F13C: 28           PLP

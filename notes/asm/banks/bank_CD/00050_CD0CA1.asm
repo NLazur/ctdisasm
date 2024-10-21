@@ -8,7 +8,7 @@ CD/0CAD: AD 59 2C     LDA $2C59
 CD/0CB0: 8D 88 BC     STA $BC88
 CD/0CB3: AD 21 2A     LDA $2A21
 CD/0CB6: 29 01        AND #$01
-CD/0CB8: F0 08        BEQ $0CC2
+CD/0CB8: F0 08        BEQ Local_CD0CC2
 CD/0CBA: AD 86 BC     LDA $BC86
 CD/0CBD: 29 FE        AND #$FE
 CD/0CBF: 8D 86 BC     STA $BC86
@@ -32,7 +32,7 @@ CD/0CEB: E8           INX
 CD/0CEC: E8           INX
 CD/0CED: E8           INX
 CD/0CEE: E0 80 00     CPX #$0080
-CD/0CF1: D0 D3        BNE $0CC6
+CD/0CF1: D0 D3        BNE Local_CD0CC6
 CD/0CF3: 7B           TDC
 CD/0CF4: E2 20        SEP #$20
 CD/0CF6: AD 58 2C     LDA $2C58

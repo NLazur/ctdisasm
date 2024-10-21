@@ -8,7 +8,7 @@ C3/C3DB: 03 D8        ORA $D8,S
 C3/C3DD: 3F 30 0E 1F  AND $1F0E30,X
 C3/C3E1: 3F 90 3D 90  AND $903D90,X
 C3/C3E5: 37 30        AND [$30],Y
-C3/C3E7: 30 4E        BMI $C437
+C3/C3E7: 30 4E        BMI Local_C3C437
 C3/C3E9: 39 6C 11     AND $116C,Y
 C3/C3EC: 69 01        ADC #$01
 C3/C3EE: 3A           DEC
@@ -19,7 +19,7 @@ C3/C3F5: 43 45        EOR $45,S
 C3/C3F7: 29 06        AND #$06
 C3/C3F9: 44 71 01     MVP $71,$01
 C3/C3FC: 45 00        EOR $00
-C3/C3FE: 10 29        BPL $C429
+C3/C3FE: 10 29        BPL Local_C3C429
 C3/C400: 06 17        ASL $17
 C3/C402: 00 10        BRK $10
 C3/C404: 48           PHA

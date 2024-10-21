@@ -18,35 +18,35 @@ D1/7F34: 00 01        BRK $01
 D1/7F36: 00 01        BRK $01
 D1/7F38: 86 FF        STX $FF
 D1/7F3A: BC 01 C0     LDY $C001,X
-D1/7F3D: 70 10        BVS $7F4F
-D1/7F3F: 50 A2        BVC $7EE3
+D1/7F3D: 70 10        BVS Local_D17F4F
+D1/7F3F: 50 A2        BVC Local_D17EE3
 D1/7F41: 00 80        BRK $80
-D1/7F43: 70 00        BVS $7F45
+D1/7F43: 70 00        BVS Local_D17F45
 D1/7F45: A7 00        LDA [$00]
 D1/7F47: 00 00        BRK $00
 D1/7F49: 00 A5        BRK $A5
 D1/7F4B: 00 A2        BRK $A2
 D1/7F4D: 00 80        BRK $80
-D1/7F4F: 70 00        BVS $7F51
+D1/7F4F: 70 00        BVS Local_D17F51
 D1/7F51: A7 00        LDA [$00]
 D1/7F53: 00 55        BRK $55
 D1/7F55: 00 A5        BRK $A5
 D1/7F57: 01 A2        ORA ($A2,X)
 D1/7F59: 00 80        BRK $80
-D1/7F5B: 70 00        BVS $7F5D
+D1/7F5B: 70 00        BVS Local_D17F5D
 D1/7F5D: A7 00        LDA [$00]
 D1/7F5F: 00 AA        BRK $AA
 D1/7F61: 00 A5        BRK $A5
 D1/7F63: 02 A2        COP $A2
 D1/7F65: 01 80        ORA ($80,X)
-D1/7F67: 70 00        BVS $7F69
+D1/7F67: 70 00        BVS Local_D17F69
 D1/7F69: A7 01        LDA [$01]
 D1/7F6B: 00 00        BRK $00
 D1/7F6D: 00 B1        BRK $B1
 D1/7F6F: 01 E0        ORA ($E0,X)
 D1/7F71: A5 03        LDA $03
 D1/7F73: A2 01        LDX #$01
-D1/7F75: 80 70        BRA $7FE7
+D1/7F75: 80 70        BRA Local_D17FE7
 D1/7F77: 00 A7        BRK $A7
 D1/7F79: 01 00        ORA ($00,X)
 D1/7F7B: 55 00        EOR $00,X
@@ -54,17 +54,17 @@ D1/7F7D: B1 01        LDA ($01),Y
 D1/7F7F: E0 A5        CPX #$A5
 D1/7F81: 04 A2        TSB $A2
 D1/7F83: 01 80        ORA ($80,X)
-D1/7F85: 70 00        BVS $7F87
+D1/7F85: 70 00        BVS Local_D17F87
 D1/7F87: A7 01        LDA [$01]
 D1/7F89: 00 AA        BRK $AA
 D1/7F8B: 00 B1        BRK $B1
 D1/7F8D: 01 E0        ORA ($E0,X)
 D1/7F8F: A5 05        LDA $05
 D1/7F91: 9A           TXS
-D1/7F92: 10 98        BPL $7F2C
+D1/7F92: 10 98        BPL Local_D17F2C
 D1/7F94: AA           TAX
 D1/7F95: 99 0A 96     STA $960A,Y
-D1/7F98: F0 9C        BEQ $7F36
+D1/7F98: F0 9C        BEQ Local_D17F36
 D1/7F9A: E0 00        CPX #$00
 D1/7F9C: 9B           TXY
 D1/7F9D: 17 E6        ORA [$E6],Y

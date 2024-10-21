@@ -3,33 +3,33 @@ Routine_C03E6E:
 C0/3E6E: C8           INY
 C0/3E6F: 84 C7        STY $C7
 C0/3E71: A9 06        LDA #$06
-C0/3E73: 80 F2        BRA $3E67
+C0/3E73: 80 F2        BRA Local_C03E67
 C0/3E75: C8           INY
 C0/3E76: 84 C7        STY $C7
 C0/3E78: A9 07        LDA #$07
-C0/3E7A: 80 EB        BRA $3E67
+C0/3E7A: 80 EB        BRA Local_C03E67
 C0/3E7C: C8           INY
 C0/3E7D: C8           INY
 C0/3E7E: 84 C7        STY $C7
 C0/3E80: A9 08        LDA #$08
-C0/3E82: 80 E3        BRA $3E67
+C0/3E82: 80 E3        BRA Local_C03E67
 C0/3E84: 5A           PHY
 C0/3E85: A9 04        LDA #$04
 C0/3E87: 0C 36 1D     TSB $1D36
 C0/3E8A: 0C 35 1D     TSB $1D35
 C0/3E8D: 9C 39 1D     STZ $1D39
 C0/3E90: 9C 3A 1D     STZ $1D3A
-C0/3E93: 20 27 6E     JSR $6E27
-C0/3E96: 20 A0 75     JSR $75A0
+C0/3E93: 20 27 6E     JSR Local_C06E27
+C0/3E96: 20 A0 75     JSR Local_C075A0
 C0/3E99: 7A           PLY
 C0/3E9A: BB           TYX
 C0/3E9B: E8           INX
 C0/3E9C: BF 01 20 7F  LDA $7F2001,X
-C0/3EA0: 30 09        BMI $3EAB
+C0/3EA0: 30 09        BMI Local_C03EAB
 C0/3EA2: 85 D9        STA $D9
 C0/3EA4: A9 01        LDA #$01
 C0/3EA6: 8D E9 0B     STA $0BE9
-C0/3EA9: 80 09        BRA $3EB4
+C0/3EA9: 80 09        BRA Local_C03EB4
 C0/3EAB: 29 7F        AND #$7F
 C0/3EAD: 85 D9        STA $D9
 C0/3EAF: A9 02        LDA #$02
@@ -39,14 +39,14 @@ C0/3EB6: A2 00 00     LDX #$0000
 C0/3EB9: 64 DD        STZ $DD
 C0/3EBB: A5 D9        LDA $D9
 C0/3EBD: C5 DD        CMP $DD
-C0/3EBF: F0 0E        BEQ $3ECF
+C0/3EBF: F0 0E        BEQ Local_C03ECF
 C0/3EC1: BF 00 A0 FD  LDA $FDA000,X
-C0/3EC5: 30 03        BMI $3ECA
+C0/3EC5: 30 03        BMI Local_C03ECA
 C0/3EC7: E8           INX
-C0/3EC8: 80 F7        BRA $3EC1
+C0/3EC8: 80 F7        BRA Local_C03EC1
 C0/3ECA: E8           INX
 C0/3ECB: E6 DD        INC $DD
-C0/3ECD: 80 EC        BRA $3EBB
+C0/3ECD: 80 EC        BRA Local_C03EBB
 C0/3ECF: 8E E1 0B     STX $0BE1
 C0/3ED2: A6 C7        LDX $C7
 C0/3ED4: E8           INX

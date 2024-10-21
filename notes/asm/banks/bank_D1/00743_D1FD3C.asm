@@ -22,7 +22,7 @@ D1/FD6F: 9D 6F C4     STA $C46F,X
 D1/FD72: 9D A7 C4     STA $C4A7,X
 D1/FD75: CA           DEX
 D1/FD76: CA           DEX
-D1/FD77: D0 CC        BNE $FD45
+D1/FD77: D0 CC        BNE Local_D1FD45
 D1/FD79: C2 10        REP #$10
 D1/FD7B: E2 20        SEP #$20
 D1/FD7D: 60           RTS

@@ -20,7 +20,7 @@ D0/D81E: EA           NOP
 D0/D81F: 9D 0D 0B     STA $0B0D,X
 D0/D822: 3A           DEC
 D0/D823: 36 74        ROL $74,X
-D0/D825: 4C E8 98     JMP $98E8
+D0/D825: 4C E8 98     JMP Local_D098E8
 D0/D828: D1 31        CMP ($31),Y
 D0/D82A: A2 62        LDX #$62
 D0/D82C: C2 46        REP #$46

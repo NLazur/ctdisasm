@@ -25,13 +25,13 @@ FE/D326: 51 83        EOR ($83),Y
 FE/D328: C0 18        CPY #$18
 FE/D32A: 9E 05 73     STZ $7305,X
 FE/D32D: 73 55        ADC ($55,S),Y
-FE/D32F: 10 0A        BPL $D33B
+FE/D32F: 10 0A        BPL Local_FED33B
 FE/D331: B8           CLV
 FE/D332: 00 02        BRK $02
 FE/D334: 1D 71 01     ORA $0171,X
-FE/D337: 10 43        BPL $D37C
+FE/D337: 10 43        BPL Local_FED37C
 FE/D339: 4B           PHK
-FE/D33A: 4C 4D 4C     JMP $4C4D
+FE/D33A: 4C 4D 4C     JMP Local_FE4C4D
 FE/D33D: 00 4D        BRK $4D
 FE/D33F: 4F 2A 4A D0  EOR $D04A2A
 FE/D343: D1 45        CMP ($45),Y
@@ -60,7 +60,7 @@ FE/D372: 35 46        AND $46,X
 FE/D374: 44 3A 5A     MVP $3A,$5A
 FE/D377: 00 E0        BRK $E0
 FE/D379: E1 45        SBC ($45,X)
-FE/D37B: 90 91        BCC $D30E
+FE/D37B: 90 91        BCC Local_FED30E
 FE/D37D: 44 A6 A7     MVP $A6,$A7
 FE/D380: 00 A8        BRK $A8
 FE/D382: 67 86        ADC [$86]

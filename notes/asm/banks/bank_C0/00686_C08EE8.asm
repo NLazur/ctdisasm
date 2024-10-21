@@ -3,7 +3,7 @@ Routine_C08EE8:
 C0/8EE8: C2 20        REP #$20
 C0/8EEA: 64 30        STZ $30
 C0/8EEC: E2 20        SEP #$20
-C0/8EEE: 82 C4 FB     BRL $C08AB5
+C0/8EEE: 82 C4 FB     BRL Routine_C08AB5
 C0/8EF1: A9 FF        LDA #$FF
 C0/8EF3: 85 31        STA $31
 C0/8EF5: 85 2F        STA $2F
@@ -24,8 +24,8 @@ C0/8F13: 18           CLC
 C0/8F14: 65 30        ADC $30
 C0/8F16: 85 68        STA $68
 C0/8F18: E2 20        SEP #$20
-C0/8F1A: 20 23 99     JSR $9923
-C0/8F1D: 90 09        BCC $8F28
+C0/8F1A: 20 23 99     JSR Local_C09923
+C0/8F1D: 90 09        BCC Local_C08F28
 C0/8F1F: C2 20        REP #$20
 C0/8F21: 64 30        STZ $30
 C0/8F23: 64 2E        STZ $2E

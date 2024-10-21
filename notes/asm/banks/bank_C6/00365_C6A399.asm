@@ -23,8 +23,8 @@ C6/A3BF: 02 AD        COP $AD
 C6/A3C1: CB           WAI
 C6/A3C2: 1B           TCS
 C6/A3C3: 31 5F        AND ($5F),Y
-C6/A3C5: 50 60        BVC $A427
+C6/A3C5: 50 60        BVC Local_C6A427
 C6/A3C7: 00 B0        BRK $B0
 C6/A3C9: 94 B0        STY $B0,X
-C6/A3CB: B0 60        BCS $A42D
+C6/A3CB: B0 60        BCS Local_C6A42D
 C6/A3CD: 40           RTI

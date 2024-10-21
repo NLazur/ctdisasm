@@ -5,27 +5,27 @@ FD/B0D6: AA           TAX
 FD/B0D7: 9D B6 AF     STA $AFB6,X
 FD/B0DA: E8           INX
 FD/B0DB: E0 8F 00     CPX #$008F
-FD/B0DE: D0 F7        BNE $B0D7
+FD/B0DE: D0 F7        BNE Local_FDB0D7
 FD/B0E0: 7B           TDC
 FD/B0E1: AA           TAX
 FD/B0E2: A9 0A        LDA #$0A
 FD/B0E4: 9D 45 B0     STA $B045,X
 FD/B0E7: E8           INX
 FD/B0E8: E0 8F 00     CPX #$008F
-FD/B0EB: 90 F7        BCC $B0E4
+FD/B0EB: 90 F7        BCC Local_FDB0E4
 FD/B0ED: 7B           TDC
 FD/B0EE: AA           TAX
 FD/B0EF: 9E 2C 9F     STZ $9F2C,X
 FD/B0F2: E8           INX
 FD/B0F3: E0 08 00     CPX #$0008
-FD/B0F6: 90 F7        BCC $B0EF
+FD/B0F6: 90 F7        BCC Local_FDB0EF
 FD/B0F8: 9C 34 9F     STZ $9F34
 FD/B0FB: 7B           TDC
 FD/B0FC: AA           TAX
 FD/B0FD: A8           TAY
 FD/B0FE: B9 0D AF     LDA $AF0D,Y
 FD/B101: C9 FF        CMP #$FF
-FD/B103: F0 0A        BEQ $B10F
+FD/B103: F0 0A        BEQ Local_FDB10F
 FD/B105: BD C7 5F     LDA $5FC7,X
 FD/B108: 29 02        AND #$02
 FD/B10A: 49 02        EOR #$02
@@ -41,7 +41,7 @@ FD/B119: E2 20        SEP #$20
 FD/B11B: C0 08        CPY #$08
 FD/B11D: 00 90        BRK $90
 FD/B11F: DE 6B A2     DEC $A26B,X
-FD/B122: 80 01        BRA $B125
+FD/B122: 80 01        BRA Local_FDB125
 FD/B124: A0 00 00     LDY #$0000
 FD/B127: BD 47 5E     LDA $5E47,X
 FD/B12A: 29 03        AND #$03
@@ -60,8 +60,8 @@ FD/B13F: E7 6B        SBC [$6B]
 FD/B141: 7B           TDC
 FD/B142: A6 08        LDX $08
 FD/B144: BF 04 00 CC  LDA $CC0004,X
-FD/B148: D0 03        BNE $B14D
-FD/B14A: 4C 00 B2     JMP $B200
+FD/B148: D0 03        BNE Local_FDB14D
+FD/B14A: 4C 00 B2     JMP Local_FDB200
 FD/B14D: C2 20        REP #$20
 FD/B14F: 0A           ASL
 FD/B150: 18           CLC
@@ -74,78 +74,78 @@ FD/B159: BF 01 00 CC  LDA $CC0001,X
 FD/B15D: 85 0A        STA $0A
 FD/B15F: BF 00 00 CC  LDA $CC0000,X
 FD/B163: 85 04        STA $04
-FD/B165: 10 11        BPL $B178
+FD/B165: 10 11        BPL Local_FDB178
 FD/B167: A6 00        LDX $00
 FD/B169: BD 36 00     LDA $0036,X
 FD/B16C: 18           CLC
 FD/B16D: 65 0A        ADC $0A
 FD/B16F: C9 63        CMP #$63
-FD/B171: 90 02        BCC $B175
+FD/B171: 90 02        BCC Local_FDB175
 FD/B173: A9 63        LDA #$63
 FD/B175: 9D 36 00     STA $0036,X
 FD/B178: 06 04        ASL $04
 FD/B17A: A5 04        LDA $04
-FD/B17C: 10 11        BPL $B18F
+FD/B17C: 10 11        BPL Local_FDB18F
 FD/B17E: A6 00        LDX $00
 FD/B180: BD 38 00     LDA $0038,X
 FD/B183: 18           CLC
 FD/B184: 65 0A        ADC $0A
 FD/B186: C9 10        CMP #$10
-FD/B188: 90 02        BCC $B18C
+FD/B188: 90 02        BCC Local_FDB18C
 FD/B18A: A9 10        LDA #$10
 FD/B18C: 9D 38 00     STA $0038,X
 FD/B18F: 06 04        ASL $04
 FD/B191: A5 04        LDA $04
-FD/B193: 10 11        BPL $B1A6
+FD/B193: 10 11        BPL Local_FDB1A6
 FD/B195: A6 00        LDX $00
 FD/B197: BD 37 00     LDA $0037,X
 FD/B19A: 18           CLC
 FD/B19B: 65 0A        ADC $0A
 FD/B19D: C9 63        CMP #$63
-FD/B19F: 90 02        BCC $B1A3
+FD/B19F: 90 02        BCC Local_FDB1A3
 FD/B1A1: A9 63        LDA #$63
 FD/B1A3: 9D 37 00     STA $0037,X
 FD/B1A6: 06 04        ASL $04
 FD/B1A8: A5 04        LDA $04
-FD/B1AA: 10 11        BPL $B1BD
+FD/B1AA: 10 11        BPL Local_FDB1BD
 FD/B1AC: A6 00        LDX $00
 FD/B1AE: BD 3A 00     LDA $003A,X
 FD/B1B1: 18           CLC
 FD/B1B2: 65 0A        ADC $0A
 FD/B1B4: C9 63        CMP #$63
-FD/B1B6: 90 02        BCC $B1BA
+FD/B1B6: 90 02        BCC Local_FDB1BA
 FD/B1B8: A9 63        LDA #$63
 FD/B1BA: 9D 3A 00     STA $003A,X
 FD/B1BD: 06 04        ASL $04
 FD/B1BF: A5 04        LDA $04
-FD/B1C1: 10 0F        BPL $B1D2
+FD/B1C1: 10 0F        BPL Local_FDB1D2
 FD/B1C3: A6 00        LDX $00
 FD/B1C5: BD 3B 00     LDA $003B,X
 FD/B1C8: 18           CLC
 FD/B1C9: 65 0A        ADC $0A
-FD/B1CB: 90 02        BCC $B1CF
+FD/B1CB: 90 02        BCC Local_FDB1CF
 FD/B1CD: A9 FF        LDA #$FF
 FD/B1CF: 9D 3B 00     STA $003B,X
 FD/B1D2: 06 04        ASL $04
 FD/B1D4: A5 04        LDA $04
-FD/B1D6: 10 11        BPL $B1E9
+FD/B1D6: 10 11        BPL Local_FDB1E9
 FD/B1D8: A6 00        LDX $00
 FD/B1DA: BD 39 00     LDA $0039,X
 FD/B1DD: 18           CLC
 FD/B1DE: 65 0A        ADC $0A
 FD/B1E0: C9 63        CMP #$63
-FD/B1E2: 90 02        BCC $B1E6
+FD/B1E2: 90 02        BCC Local_FDB1E6
 FD/B1E4: A9 63        LDA #$63
 FD/B1E6: 9D 39 00     STA $0039,X
 FD/B1E9: 06 04        ASL $04
 FD/B1EB: A5 04        LDA $04
-FD/B1ED: 10 11        BPL $B200
+FD/B1ED: 10 11        BPL Local_FDB200
 FD/B1EF: A6 00        LDX $00
 FD/B1F1: BD 3C 00     LDA $003C,X
 FD/B1F4: 18           CLC
 FD/B1F5: 65 0A        ADC $0A
 FD/B1F7: C9 63        CMP #$63
-FD/B1F9: 90 02        BCC $B1FD
+FD/B1F9: 90 02        BCC Local_FDB1FD
 FD/B1FB: A9 63        LDA #$63
 FD/B1FD: 9D 3C 00     STA $003C,X
 FD/B200: 6B           RTL

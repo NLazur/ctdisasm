@@ -3,14 +3,14 @@ Routine_FE3418:
 FE/3418: 08           PHP
 FE/3419: 1B           TCS
 FE/341A: 1F 47 20 65  ORA $652047,X
-FE/341E: 10 C4        BPL $33E4
+FE/341E: 10 C4        BPL Local_FE33E4
 FE/3420: 26 27        ROL $27
 FE/3422: 05 0B        ORA $0B
 FE/3424: 07 08        ORA [$08]
 FE/3426: 46 0F        LSR $0F
 FE/3428: 28           PLP
 FE/3429: 13 13        ORA ($13,S),Y
-FE/342B: 20 09 0B     JSR $0B09
+FE/342B: 20 09 0B     JSR Local_FE0B09
 FE/342E: 32 32        AND ($32)
 FE/3430: 33 00        AND ($00,S),Y
 FE/3432: 01 23        ORA ($23,X)
@@ -34,7 +34,7 @@ FE/3458: E0 33 1C     CPX #$1C33
 FE/345B: 1D 2E 2F     ORA $2F2E,X
 FE/345E: 3B           TSC
 FE/345F: 11 AD        ORA ($AD),Y
-FE/3461: 22 AB 0A 90  JSR $900AAB
+FE/3461: 22 AB 0A 90  JSR Routine_900AAB
 FE/3465: 28           PLP
 FE/3466: 29 2F 09     AND #$092F
 FE/3469: E2 02        SEP #$02
@@ -43,13 +43,13 @@ FE/346D: 5D 09 3C     EOR $3C09,X
 FE/3470: 0E 47 BF     ASL $BF47
 FE/3473: 12 8A        ORA ($8A)
 FE/3475: 03 0F        ORA $0F,S
-FE/3477: 20 94 0B     JSR $0B94
+FE/3477: 20 94 0B     JSR Local_FE0B94
 FE/347A: 28           PLP
 FE/347B: 29 03 5B     AND #$5B03
 FE/347E: 08           PHP
 FE/347F: BB           TYX
 FE/3480: 01 2B        ORA ($2B,X)
-FE/3482: 2C 2D 57     BIT $572D
+FE/3482: 2C 2D 57     BIT Local_FE572D
 FE/3485: 47 11        EOR [$11]
 FE/3487: 36 2F        ROL $2F,X
 FE/3489: A8           TAY
@@ -93,21 +93,21 @@ FE/34D9: 2B           PLD
 FE/34DA: 3B           TSC
 FE/34DB: 0A           ASL
 FE/34DC: FF 5B 18 5E  SBC $5E185B,X
-FE/34E0: 10 66        BPL $3548
+FE/34E0: 10 66        BPL Local_FE3548
 FE/34E2: 31 D7        AND ($D7),Y
 FE/34E4: 33 00        AND ($00,S),Y
 FE/34E6: 23 E8        AND $E8,S
 FE/34E8: 33 C6        AND ($C6,S),Y
 FE/34EA: 0B           PHD
-FE/34EB: 5C 04 E7 F7  JMP $F7E704
+FE/34EB: 5C 04 E7 F7  JMP Routine_F7E704
 FE/34EF: 2B           PLD
 FE/34F0: E2 08        SEP #$08
 FE/34F2: 98           TYA
 FE/34F3: 04 3B        TSB $3B
-FE/34F5: 3C 03 08     BIT $0803,X
+FE/34F5: 3C 03 08     BIT Local_FE0803,X
 FE/34F8: A0 04 66     LDY #$6604
 FE/34FB: 41 FF        EOR ($FF,X)
-FE/34FD: 80 5C        BRA $355B
+FE/34FD: 80 5C        BRA Local_FE355B
 FE/34FF: 74 2C        STZ $2C,X
 FE/3501: 19 11 C9     ORA $C911,Y
 FE/3504: 8C 4F 1C     STY $1C4F

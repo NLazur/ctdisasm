@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 26AD
 Routine_D026AD:
 D0/26AD: C0 A0 60     CPY #$60A0
-D0/26B0: D0 30        BNE $26E2
+D0/26B0: D0 30        BNE Local_D026E2
 D0/26B2: E8           INX
 D0/26B3: 18           CLC
 D0/26B4: F4 0C 03     PEA $030C
@@ -12,9 +12,9 @@ D0/26C0: 15 1B        ORA $1B,X
 D0/26C2: 15 1B        ORA $1B,X
 D0/26C4: 15 1B        ORA $1B,X
 D0/26C6: 15 1B        ORA $1B,X
-D0/26C8: 80 80        BRA $264A
-D0/26CA: 80 80        BRA $264C
-D0/26CC: 80 80        BRA $264E
+D0/26C8: 80 80        BRA Local_D0264A
+D0/26CA: 80 80        BRA Local_D0264C
+D0/26CC: 80 80        BRA Local_D0264E
 D0/26CE: 00 00        BRK $00
 D0/26D0: 00 00        BRK $00
 D0/26D2: 00 00        BRK $00

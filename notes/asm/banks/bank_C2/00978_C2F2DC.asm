@@ -1,7 +1,7 @@
 ; Bank: C2 | Start Address: F2DC
 Routine_C2F2DC:
-C2/F2DC: 20 E2 F2     JSR $F2E2
-C2/F2DF: 4C 65 EF     JMP $EF65
+C2/F2DC: 20 E2 F2     JSR Local_C2F2E2
+C2/F2DF: 4C 65 EF     JMP Local_C2EF65
 C2/F2E2: 08           PHP
 C2/F2E3: C2 30        REP #$30
 C2/F2E5: 29 FF 00     AND #$00FF

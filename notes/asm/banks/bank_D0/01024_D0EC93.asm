@@ -12,7 +12,7 @@ D0/EC9E: 3A           DEC
 D0/EC9F: 4A           LSR
 D0/ECA0: 39 4A 38     AND $384A,Y
 D0/ECA3: 01 40        ORA ($40,X)
-D0/ECA5: D0 02        BNE $ECA9
+D0/ECA5: D0 02        BNE Local_D0ECA9
 D0/ECA7: 0D 03 0D     ORA $0D03
 D0/ECAA: EC 0E ED     CPX $ED0E
 D0/ECAD: 08           PHP
@@ -29,7 +29,7 @@ D0/ECBA: BD 04 4A     LDA $4A04,X
 D0/ECBD: 0C 4A 2B     TSB $2B4A
 D0/ECC0: 4A           LSR
 D0/ECC1: 02 0A        COP $0A
-D0/ECC3: 80 C0        BRA $EC85
+D0/ECC3: 80 C0        BRA Local_D0EC85
 D0/ECC5: 11 0D        ORA ($0D),Y
 D0/ECC7: 12 0D        ORA ($0D)
 D0/ECC9: 13 0D        ORA ($0D,S),Y

@@ -52,13 +52,13 @@ CE/E825: 64 4B        STZ $4B
 CE/E827: C2 20        REP #$20
 CE/E829: A5 48        LDA $48
 CE/E82B: 89 04 00     BIT #$0004
-CE/E82E: F0 06        BEQ $E836
+CE/E82E: F0 06        BEQ Local_CEE836
 CE/E830: 18           CLC
 CE/E831: 69 08 00     ADC #$0008
 CE/E834: 85 48        STA $48
 CE/E836: A5 4A        LDA $4A
 CE/E838: 89 04 00     BIT #$0004
-CE/E83B: F0 06        BEQ $E843
+CE/E83B: F0 06        BEQ Local_CEE843
 CE/E83D: 18           CLC
 CE/E83E: 69 08 00     ADC #$0008
 CE/E841: 85 4A        STA $4A
@@ -80,9 +80,9 @@ CE/E859: A6 4C        LDX $4C
 CE/E85B: BF 00 F3 C0  LDA $C0F300,X
 CE/E85F: 85 45        STA $45
 CE/E861: A5 28        LDA $28
-CE/E863: 30 14        BMI $E879
+CE/E863: 30 14        BMI Local_CEE879
 CE/E865: A5 2A        LDA $2A
-CE/E867: 30 08        BMI $E871
+CE/E867: 30 08        BMI Local_CEE871
 CE/E869: A9 80        LDA #$80
 CE/E86B: 18           CLC
 CE/E86C: 65 45        ADC $45

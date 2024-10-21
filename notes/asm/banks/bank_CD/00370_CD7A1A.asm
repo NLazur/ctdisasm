@@ -5,7 +5,7 @@ CD/7A1C: 01 02        ORA ($02,X)
 CD/7A1E: 00 73        BRK $73
 CD/7A20: 03 1B        ORA $1B,S
 CD/7A22: 09 24 02     ORA #$0224
-CD/7A25: 20 1E 70     JSR $701E
+CD/7A25: 20 1E 70     JSR Local_CD701E
 CD/7A28: 0C 12 0C     TSB $0C12
 CD/7A2B: 1B           TCS
 CD/7A2C: 0C 36 98     TSB $9836
@@ -17,7 +17,7 @@ CD/7A37: 00 1B        BRK $1B
 CD/7A39: 0C 76 00     TSB $0076
 CD/7A3C: 03 0C        ORA $0C,S
 CD/7A3E: A8           TAY
-CD/7A3F: 10 36        BPL $7A77
+CD/7A3F: 10 36        BPL Local_CD7A77
 CD/7A41: 00 90        BRK $90
 CD/7A43: 00 90        BRK $90
 CD/7A45: 00 D3        BRK $D3
@@ -30,7 +30,7 @@ CD/7A51: 14 78        TRB $78
 CD/7A53: 46 72        LSR $72
 CD/7A55: 0A           ASL
 CD/7A56: 06 09        ASL $09
-CD/7A58: 20 02 69     JSR $6902
+CD/7A58: 20 02 69     JSR Local_CD6902
 CD/7A5B: 00 20        BRK $20
 CD/7A5D: 02 6A        COP $6A
 CD/7A5F: 76 00        ROR $00,X

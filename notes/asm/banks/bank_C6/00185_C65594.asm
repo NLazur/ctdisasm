@@ -38,51 +38,51 @@ C6/55DA: F8           SED
 C6/55DB: 08           PHP
 C6/55DC: BE 09 60     LDX $6009,Y
 C6/55DF: 6C 28 A8     JMP ($A828)
-C6/55E2: 80 2D        BRA $5611
+C6/55E2: 80 2D        BRA Local_C65611
 C6/55E4: D8           CLD
 C6/55E5: AA           TAX
 C6/55E6: 78           SEI
 C6/55E7: 15 5A        ORA $5A,X
-C6/55E9: 10 78        BPL $5663
+C6/55E9: 10 78        BPL Local_C65663
 C6/55EB: 75 10        ADC $10,X
 C6/55ED: 88           DEY
 C6/55EE: 69 18 2F     ADC #$2F18
 C6/55F1: 7F 98 07 8F  ADC $8F0798,X
 C6/55F5: F8           SED
-C6/55F6: 50 8E        BVC $5586
-C6/55F8: 50 A8        BVC $55A2
+C6/55F6: 50 8E        BVC Local_C65586
+C6/55F8: 50 A8        BVC Local_C655A2
 C6/55FA: 69 F0 2C     ADC #$2CF0
 C6/55FD: F8           SED
 C6/55FE: 2D 10 2D     AND $2D10
-C6/5601: 70 29        BVS $562C
+C6/5601: 70 29        BVS Local_C6562C
 C6/5603: FF 78 29 18  SBC $182978,X
 C6/5607: 2D 30 68     AND $6830
-C6/560A: 30 2E        BMI $563A
+C6/560A: 30 2E        BMI Local_C6563A
 C6/560C: A8           TAY
 C6/560D: 2D 90 2D     AND $2D90
-C6/5610: 10 68        BPL $567A
+C6/5610: 10 68        BPL Local_C6567A
 C6/5612: 58           CLI
 C6/5613: 2E 1F 28     ROL $281F
 C6/5616: 6A           ROR
 C6/5617: E0 2D        CPX #$2D
 C6/5619: 88           DEY
 C6/561A: 68           PLA
-C6/561B: 80 2E        BRA $564B
+C6/561B: 80 2E        BRA Local_C6564B
 C6/561D: 68           PLA
 C6/561E: 68           PLA
 C6/561F: 18           CLC
 C6/5620: 04 56        TSB $56
-C6/5622: 22 0A A0 0D  JSR $0DA00A
+C6/5622: 22 0A A0 0D  JSR Routine_0DA00A
 C6/5626: 57 0A        EOR [$0A],Y
 C6/5628: 58           CLI
 C6/5629: 08           PHP
-C6/562A: 10 59        BPL $5685
+C6/562A: 10 59        BPL Local_C65685
 C6/562C: 0A           ASL
 C6/562D: FF B0 1D 48  SBC $481DB0,X
 C6/5631: 2D D0 2D     AND $2DD0
-C6/5634: B0 68        BCS $569E
-C6/5636: D0 2E        BNE $5666
+C6/5634: B0 68        BCS Local_C6569E
+C6/5636: D0 2E        BNE Local_C65666
 C6/5638: C8           INY
 C6/5639: 68           PLA
-C6/563A: 20 68 00     JSR $0068
+C6/563A: 20 68 00     JSR Local_C60068
 C6/563D: 6B           RTL

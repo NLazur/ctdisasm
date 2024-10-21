@@ -6,7 +6,7 @@ FD/9D97: 56 00        LSR $00,X
 FD/9D99: 00 5B        BRK $5B
 FD/9D9B: 00 B2        BRK $B2
 FD/9D9D: E4 00        CPX $00
-FD/9D9F: 20 03 24     JSR $2403
+FD/9D9F: 20 03 24     JSR Local_FD2403
 FD/9DA2: 00 17        BRK $17
 FD/9DA4: 0D 3B E4     ORA $E43B
 FD/9DA7: 0D 09 0D     ORA $0D09
@@ -14,17 +14,17 @@ FD/9DAA: 0A           ASL
 FD/9DAB: 48           PHA
 FD/9DAC: 0C 06 0B     TSB $0B06
 FD/9DAF: 08           PHP
-FD/9DB0: 10 0B        BPL $9DBD
+FD/9DB0: 10 0B        BPL Local_FD9DBD
 FD/9DB2: 08           PHP
 FD/9DB3: 08           PHP
 FD/9DB4: 18           CLC
 FD/9DB5: 0A           ASL
 FD/9DB6: 2A           ROL
 FD/9DB7: 0A           ASL
-FD/9DB8: 10 18        BPL $9DD2
-FD/9DBA: 10 10        BPL $9DCC
-FD/9DBC: 20 0F 10     JSR $100F
-FD/9DBF: 20 0E 0C     JSR $0C0E
+FD/9DB8: 10 18        BPL Local_FD9DD2
+FD/9DBA: 10 10        BPL Local_FD9DCC
+FD/9DBC: 20 0F 10     JSR Local_FD100F
+FD/9DBF: 20 0E 0C     JSR Local_FD0C0E
 FD/9DC2: 00 0B        BRK $0B
 FD/9DC4: E4 0A        CPX $0A
 FD/9DC6: 07 0A        ORA [$0A]
@@ -32,11 +32,11 @@ FD/9DC8: 08           PHP
 FD/9DC9: 0D 09 00     ORA $0009
 FD/9DCC: 0B           PHD
 FD/9DCD: E4 05        CPX $05
-FD/9DCF: 20 06 21     JSR $2106
+FD/9DCF: 20 06 21     JSR Local_FD2106
 FD/9DD2: 27 19        AND [$19]
 FD/9DD4: 00 3B        BRK $3B
 FD/9DD6: 16 78        ASL $78,X
-FD/9DD8: 80 06        BRA $9DE0
+FD/9DD8: 80 06        BRA Local_FD9DE0
 FD/9DDA: 09 E4 04     ORA #$04E4
 FD/9DDD: 00 20        BRK $20
 FD/9DDF: 04 23        TSB $23
@@ -44,7 +44,7 @@ FD/9DE1: 1F 0D 3B 00  ORA $003B0D,X
 FD/9DE5: 57 00        EOR [$00],Y
 FD/9DE7: 00 B0        BRK $B0
 FD/9DE9: 00 8B        BRK $8B
-FD/9DEB: 20 16 00     JSR $0016
+FD/9DEB: 20 16 00     JSR Local_FD0016
 FD/9DEE: 8B           PHB
 FD/9DEF: 00 1F        BRK $1F
 FD/9DF1: 14 00        TRB $00
@@ -57,9 +57,9 @@ FD/9DFD: AD 30 B7     LDA $B730
 FD/9E00: 17 00        ORA [$00],Y
 FD/9E02: 03 00        ORA $00,S
 FD/9E04: AA           TAX
-FD/9E05: 10 89        BPL $9D90
-FD/9E07: 20 7A 04     JSR $047A
-FD/9E0A: 80 06        BRA $9E12
+FD/9E05: 10 89        BPL Local_FD9D90
+FD/9E07: 20 7A 04     JSR Local_FD047A
+FD/9E0A: 80 06        BRA Local_FD9E12
 FD/9E0C: 01 AA        ORA ($AA,X)
 FD/9E0E: 1D AD 10     ORA $10AD,X
 FD/9E11: AE 0E 18     LDX $180E
@@ -73,7 +73,7 @@ FD/9E22: 00 68        BRK $68
 FD/9E24: 43 00        EOR $00,S
 FD/9E26: 6C 47 00     JMP ($0047)
 FD/9E29: 6D 4B 00     ADC $004B
-FD/9E2C: 82 00 48     BRL $FDE62F
+FD/9E2C: 82 00 48     BRL Routine_FDE62F
 FD/9E2F: AA           TAX
 FD/9E30: 04 8B        TSB $8B
 FD/9E32: 1D 15 00     ORA $0015,X
@@ -89,7 +89,7 @@ FD/9E49: E8           INX
 FD/9E4A: 53 65        EOR ($65,S),Y
 FD/9E4C: 07 78        ORA [$78]
 FD/9E4E: E5 76        SBC $76
-FD/9E50: 20 10 00     JSR $0010
+FD/9E50: 20 10 00     JSR Local_FD0010
 FD/9E53: 07 AA        ORA [$AA]
 FD/9E55: 03 BB        ORA $BB,S
 FD/9E57: 14 AA        TRB $AA
@@ -101,12 +101,12 @@ FD/9E62: 16 00        ASL $00,X
 FD/9E64: 00 B3        BRK $B3
 FD/9E66: AD 80 AA     LDA $AA80
 FD/9E69: 06 AD        ASL $AD
-FD/9E6B: 10 AA        BPL $9E17
+FD/9E6B: 10 AA        BPL Local_FD9E17
 FD/9E6D: 00 05        BRK $05
 FD/9E6F: AD 08 11     LDA $1108
 FD/9E72: 0C BB 0C     TSB $0CBB
 FD/9E75: 00 00        BRK $00
-FD/9E77: 82 4F 8B     BRL $FD29C9
+FD/9E77: 82 4F 8B     BRL Routine_FD29C9
 FD/9E7A: 21 11        AND ($11,X)
 FD/9E7C: 0F B4 00 02  ORA $0200B4
 FD/9E80: B2 28        LDA ($28)
@@ -117,7 +117,7 @@ FD/9E88: 03 80        ORA $80,S
 FD/9E8A: 8B           PHB
 FD/9E8B: 1C 16 00     TRB $0016
 FD/9E8E: B4 AD        LDY $AD,X
-FD/9E90: 30 22        BMI $9EB4
+FD/9E90: 30 22        BMI Local_FD9EB4
 FD/9E92: 08           PHP
 FD/9E93: 01 2A        ORA ($2A,X)
 FD/9E95: 00 80        BRK $80
@@ -129,10 +129,10 @@ FD/9E9F: 81 06        STA ($06,X)
 FD/9EA1: 8B           PHB
 FD/9EA2: 0B           PHD
 FD/9EA3: 05 AA        ORA $AA
-FD/9EA5: 22 00 0F 00  JSR $000F00
+FD/9EA5: 22 00 0F 00  JSR Routine_000F00
 FD/9EA9: B2 BB        LDA ($BB)
 FD/9EAB: 13 00        ORA ($00,S),Y
-FD/9EAD: 82 64 00     BRL $FD9F14
+FD/9EAD: 82 64 00     BRL Routine_FD9F14
 FD/9EB0: 8B           PHB
 FD/9EB1: 0A           ASL
 FD/9EB2: 08           PHP
@@ -142,7 +142,7 @@ FD/9EB7: 84 00        STY $00
 FD/9EB9: 00 00        BRK $00
 FD/9EBB: 7A           PLY
 FD/9EBC: 0F 07 01 7A  ORA $7A0107
-FD/9EC0: 10 10        BPL $9ED2
+FD/9EC0: 10 10        BPL Local_FD9ED2
 FD/9EC2: 0C 01 7A     TSB $7A01
 FD/9EC5: 0D 04 00     ORA $0004
 FD/9EC8: 0A           ASL
@@ -150,7 +150,7 @@ FD/9EC9: 08           PHP
 FD/9ECA: 01 00        ORA ($00,X)
 FD/9ECC: 11 11        ORA ($11),Y
 FD/9ECE: BB           TYX
-FD/9ECF: 20 00 82     JSR $8200
+FD/9ECF: 20 00 82     JSR Local_FD8200
 FD/9ED2: 5F 8D 00 00  EOR $00008D,X
 FD/9ED6: 05 40        ORA $40
 FD/9ED8: 06 8E        ASL $8E
@@ -183,27 +183,27 @@ FD/9F07: 05 04        ORA $04
 FD/9F09: 47 AD        EOR [$AD]
 FD/9F0B: 02 30        COP $30
 FD/9F0D: 16 00        ASL $00,X
-FD/9F0F: 82 B1 8B     BRL $FD2AC3
+FD/9F0F: 82 B1 8B     BRL Routine_FD2AC3
 FD/9F12: 29 06 00     AND #$0006
 FD/9F15: 08           PHP
 FD/9F16: B2 E8        LDA ($E8)
 FD/9F18: 4E B7 00     LSR $00B7
 FD/9F1B: 3A           DEC
 FD/9F1C: B3 00        LDA ($00,S),Y
-FD/9F1E: 82 47 76     BRL $FD1568
+FD/9F1E: 82 47 76     BRL Routine_FD1568
 FD/9F21: 02 90        COP $90
 FD/9F23: 6C 8B 2D     JMP ($2D8B)
 FD/9F26: 02 73        COP $73
 FD/9F28: 00 3D        BRK $3D
 FD/9F2A: 00 40        BRK $40
 FD/9F2C: B6 00        LDX $00,Y
-FD/9F2E: 10 0C        BPL $9F3C
-FD/9F30: 80 01        BRA $9F33
+FD/9F2E: 10 0C        BPL Local_FD9F3C
+FD/9F30: 80 01        BRA Local_FD9F33
 FD/9F32: 88           DEY
 FD/9F33: 02 D0        COP $D0
 FD/9F35: 89 01 8D     BIT #$8D01
 FD/9F38: 11 02        ORA ($02),Y
-FD/9F3A: D0 8E        BNE $9ECA
+FD/9F3A: D0 8E        BNE Local_FD9ECA
 FD/9F3C: 01 92        ORA ($92,X)
 FD/9F3E: 02 D0        COP $D0
 FD/9F40: 93 01        STA ($01,S),Y
@@ -214,13 +214,13 @@ FD/9F47: 01 9C        ORA ($9C,X)
 FD/9F49: 02 D0        COP $D0
 FD/9F4B: 9D 01 A1     STA $A101,X
 FD/9F4E: 11 02        ORA ($02),Y
-FD/9F50: D0 A2        BNE $9EF4
+FD/9F50: D0 A2        BNE Local_FD9EF4
 FD/9F52: 01 A6        ORA ($A6,X)
 FD/9F54: 02 D0        COP $D0
 FD/9F56: A7 01        LDA [$01]
 FD/9F58: AB           PLB
 FD/9F59: 41 02        EOR ($02,X)
-FD/9F5B: D0 AC        BNE $9F09
+FD/9F5B: D0 AC        BNE Local_FD9F09
 FD/9F5D: 01 B1        ORA ($B1,X)
 FD/9F5F: 01 B2        ORA ($B2,X)
 FD/9F61: 02 C0        COP $C0
@@ -241,8 +241,8 @@ FD/9F7F: 96 BB        STX $BB,Y
 FD/9F81: FC 00 B2     JSR ($B200,X)
 FD/9F84: 00 80        BRK $80
 FD/9F86: 00 00        BRK $00
-FD/9F88: B0 00        BCS $9F8A
-FD/9F8A: 80 AA        BRA $9F36
+FD/9F88: B0 00        BCS Local_FD9F8A
+FD/9F8A: 80 AA        BRA Local_FD9F36
 FD/9F8C: 01 05        ORA ($05,X)
 FD/9F8E: 08           PHP
 FD/9F8F: 02 0A        COP $0A
@@ -265,7 +265,7 @@ FD/9FAB: E8           INX
 FD/9FAC: 88           DEY
 FD/9FAD: 00 2E        BRK $2E
 FD/9FAF: 42 80        WDM $80
-FD/9FB1: 80 0F        BRA $9FC2
+FD/9FB1: 80 0F        BRA Local_FD9FC2
 FD/9FB3: 02 AD        COP $AD
 FD/9FB5: 18           CLC
 FD/9FB6: 00 E0        BRK $E0

@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 7866
 Routine_D07866:
-D0/7866: 70 80        BVS $77E8
+D0/7866: 70 80        BVS Local_D077E8
 D0/7868: 0F 00 07 00  ORA $000700
 D0/786C: 03 00        ORA $00,S
 D0/786E: 01 00        ORA ($00,X)

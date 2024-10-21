@@ -9,15 +9,15 @@ C0/4449: 29 03        AND #$03
 C0/444B: 9D 00 16     STA $1600,X
 C0/444E: A5 04        LDA $04
 C0/4450: 89 08        BIT #$08
-C0/4452: D0 07        BNE $445B
+C0/4452: D0 07        BNE Local_C0445B
 C0/4454: A9 FF        LDA #$FF
 C0/4456: 9D 80 18     STA $1880,X
-C0/4459: 80 05        BRA $4460
+C0/4459: 80 05        BRA Local_C04460
 C0/445B: A9 7F        LDA #$7F
 C0/445D: 9D 80 18     STA $1880,X
 C0/4460: A5 04        LDA $04
 C0/4462: 89 04        BIT #$04
-C0/4464: D0 08        BNE $446E
+C0/4464: D0 08        BNE Local_C0446E
 C0/4466: A9 80        LDA #$80
 C0/4468: 9D 00 18     STA $1800,X
 C0/446B: BB           TYX

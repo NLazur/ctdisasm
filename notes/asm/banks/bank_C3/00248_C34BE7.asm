@@ -9,7 +9,7 @@ C3/4BF2: F6 63        INC $63,X
 C3/4BF4: AB           PLB
 C3/4BF5: 21 A5        AND ($A5,X)
 C3/4BF7: 01 C2        ORA ($C2,X)
-C3/4BF9: 20 B5 52     JSR $52B5
+C3/4BF9: 20 B5 52     JSR Local_C352B5
 C3/4BFC: 0E 13 A8     ASL $A813
 C3/4BFF: B9 40 00     LDA $0040,Y
 C3/4C02: 26 85        ROL $85
@@ -24,7 +24,7 @@ C3/4C14: F4 B9 02     PEA $02B9
 C3/4C17: 26 38        ROL $38
 C3/4C19: E5 F6        SBC $F6
 C3/4C1B: 4A           LSR
-C3/4C1C: 80 85        BRA $4BA3
+C3/4C1C: 80 85        BRA Local_C34BA3
 C3/4C1E: FA           PLX
 C3/4C1F: 4A           LSR
 C3/4C20: 85 F8        STA $F8
@@ -33,32 +33,32 @@ C3/4C24: 85 0C        STA $0C
 C3/4C26: 00 A8        BRK $A8
 C3/4C28: A5 F6        LDA $F6
 C3/4C2A: C0 00 00     CPY #$0000
-C3/4C2D: F0 15        BEQ $4C44
-C3/4C2F: 80 C0        BRA $4BF1
+C3/4C2D: F0 15        BEQ Local_C34C44
+C3/4C2F: 80 C0        BRA Local_C34BF1
 C3/4C31: 01 00        ORA ($00,X)
-C3/4C33: F0 08        BEQ $4C3D
+C3/4C33: F0 08        BEQ Local_C34C3D
 C3/4C35: C0 02 05     CPY #$0502
 C3/4C38: 00 00        BRK $00
 C3/4C3A: 18           CLC
 C3/4C3B: 65 FA        ADC $FA
 C3/4C3D: 18           CLC
 C3/4C3E: 65 F8        ADC $F8
-C3/4C40: 80 03        BRA $4C45
+C3/4C40: 80 03        BRA Local_C34C45
 C3/4C42: 09 08 20     ORA #$2008
 C3/4C45: F2 95        SBC ($95)
 C3/4C47: E8           INX
 C3/4C48: 0D 60 A5     ORA $A560
 C3/4C4B: 3B           TSC
-C3/4C4C: F0 10        BEQ $4C5E
+C3/4C4C: F0 10        BEQ Local_C34C5E
 C3/4C4E: 27 A2        AND [$A2]
 C3/4C50: 00 60        BRK $60
-C3/4C52: 3C 0D A0     BIT $A00D,X
+C3/4C52: 3C 0D A0     BIT Local_C3A00D,X
 C3/4C55: 01 18        ORA ($18,X)
 C3/4C57: C0 A2 00     CPY #$00A2
 C3/4C5A: 14 8C        TRB $8C
-C3/4C5C: 70 43        BVS $4CA1
+C3/4C5C: 70 43        BVS Local_C34CA1
 C3/4C5E: 21 1D        AND ($1D,X)
 C3/4C60: 51 A7        EOR ($A7),Y
 C3/4C62: 01 E0        ORA ($E0,X)
-C3/4C64: 2C 64 3B     BIT $3B64
+C3/4C64: 2C 64 3B     BIT Local_C33B64
 C3/4C67: 60           RTS

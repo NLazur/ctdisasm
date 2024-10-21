@@ -1,19 +1,19 @@
 ; Bank: CD | Start Address: 0B1E
 Routine_CD0B1E:
 CD/0B1E: AD D2 99     LDA $99D2
-CD/0B21: 30 2D        BMI $0B50
-CD/0B23: F0 2B        BEQ $0B50
+CD/0B21: 30 2D        BMI Local_CD0B50
+CD/0B23: F0 2B        BEQ Local_CD0B50
 CD/0B25: 7B           TDC
 CD/0B26: AA           TAX
 CD/0B27: BD 80 05     LDA $0580,X
-CD/0B2A: F0 1A        BEQ $0B46
+CD/0B2A: F0 1A        BEQ Local_CD0B46
 CD/0B2C: BD 81 05     LDA $0581,X
-CD/0B2F: 30 15        BMI $0B46
+CD/0B2F: 30 15        BMI Local_CD0B46
 CD/0B31: 18           CLC
 CD/0B32: 7D 82 05     ADC $0582,X
 CD/0B35: CD D3 99     CMP $99D3
-CD/0B38: F0 0C        BEQ $0B46
-CD/0B3A: 90 0A        BCC $0B46
+CD/0B38: F0 0C        BEQ Local_CD0B46
+CD/0B3A: 90 0A        BCC Local_CD0B46
 CD/0B3C: AD D3 99     LDA $99D3
 CD/0B3F: 38           SEC
 CD/0B40: FD 81 05     SBC $0581,X
@@ -23,5 +23,5 @@ CD/0B47: 18           CLC
 CD/0B48: 69 0C        ADC #$0C
 CD/0B4A: AA           TAX
 CD/0B4B: E0 30 00     CPX #$0030
-CD/0B4E: D0 D7        BNE $0B27
+CD/0B4E: D0 D7        BNE Local_CD0B27
 CD/0B50: 60           RTS

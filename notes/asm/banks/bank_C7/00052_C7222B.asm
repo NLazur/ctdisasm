@@ -1,12 +1,12 @@
 ; Bank: C7 | Start Address: 222B
 Routine_C7222B:
-C7/222B: 20 48 40     JSR $4048
+C7/222B: 20 48 40     JSR Local_C74048
 C7/222E: 00 00        BRK $00
 C7/2230: 00 23        BRK $23
 C7/2232: 4B           PHK
 C7/2233: 78           SEI
 C7/2234: 21 45        AND ($45,X)
-C7/2236: 50 00        BVC $2238
+C7/2236: 50 00        BVC Local_C72238
 C7/2238: 00 00        BRK $00
 C7/223A: 25 42        AND $42
 C7/223C: 0A           ASL
@@ -27,7 +27,7 @@ C7/2254: 00 00        BRK $00
 C7/2256: 00 00        BRK $00
 C7/2258: 00 00        BRK $00
 C7/225A: 00 25        BRK $25
-C7/225C: 4C 5A 00     JMP $005A
+C7/225C: 4C 5A 00     JMP Local_C7005A
 C7/225F: 00 00        BRK $00
 C7/2261: 26 4B        ROL $4B
 C7/2263: 5A           PHY
@@ -79,7 +79,7 @@ C7/22BC: 00 00        BRK $00
 C7/22BE: 28           PLP
 C7/22BF: 49 40        EOR #$40
 C7/22C1: 26 43        ROL $43
-C7/22C3: 50 00        BVC $22C5
+C7/22C3: 50 00        BVC Local_C722C5
 C7/22C5: 00 00        BRK $00
 C7/22C7: 00 00        BRK $00
 C7/22C9: 00 25        BRK $25

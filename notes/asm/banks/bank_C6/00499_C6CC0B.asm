@@ -5,7 +5,7 @@ C6/CC0C: 01 F4        ORA ($F4,X)
 C6/CC0E: 00 30        BRK $30
 C6/CC10: 02 08        COP $08
 C6/CC12: 01 06        ORA ($06,X)
-C6/CC14: 10 08        BPL $CC1E
+C6/CC14: 10 08        BPL Local_C6CC1E
 C6/CC16: F8           SED
 C6/CC17: 08           PHP
 C6/CC18: F8           SED
@@ -17,11 +17,11 @@ C6/CC1E: 08           PHP
 C6/CC1F: F8           SED
 C6/CC20: 18           CLC
 C6/CC21: 38           SEC
-C6/CC22: 10 02        BPL $CC26
-C6/CC24: 10 11        BPL $CC37
+C6/CC22: 10 02        BPL Local_C6CC26
+C6/CC24: 10 11        BPL Local_C6CC37
 C6/CC26: 08           PHP
 C6/CC27: F8           SED
-C6/CC28: 10 A0        BPL $CBCA
+C6/CC28: 10 A0        BPL Local_C6CBCA
 C6/CC2A: FF 68 F8 08  SBC $08F868,X
 C6/CC2E: F8           SED
 C6/CC2F: 08           PHP

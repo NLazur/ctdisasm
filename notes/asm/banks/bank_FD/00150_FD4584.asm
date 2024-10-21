@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: 4584
 Routine_FD4584:
 FD/4584: E0 10 A0     CPX #$A010
-FD/4587: 90 20        BCC $45A9
+FD/4587: 90 20        BCC Local_FD45A9
 FD/4589: 03 20        ORA $20,S
 FD/458B: 05 96        ORA $96
 FD/458D: 19 80 BA     ORA $BA80,Y
@@ -10,13 +10,13 @@ FD/4594: 00 9F        BRK $9F
 FD/4596: D7 82        CMP [$82],Y
 FD/4598: 06 B2        ASL $B2
 FD/459A: 1D 44 03     ORA $0344,X
-FD/459D: 30 9A        BMI $4539
+FD/459D: 30 9A        BMI Local_FD4539
 FD/459F: 09 60 88     ORA #$8860
 FD/45A2: 0A           ASL
 FD/45A3: 84 16        STY $16
 FD/45A5: F3 CD        SBC ($CD,S),Y
 FD/45A7: 1C 46 1A     TRB $1A46
-FD/45AA: 70 80        BVS $452C
+FD/45AA: 70 80        BVS Local_FD452C
 FD/45AC: A1 39        LDA ($39,X)
 FD/45AE: 58           CLI
 FD/45AF: 13 01        ORA ($01,S),Y
@@ -28,11 +28,11 @@ FD/45BC: 48           PHA
 FD/45BD: 67 00        ADC [$00]
 FD/45BF: 56 16        LSR $16,X
 FD/45C1: 71 04        ADC ($04),Y
-FD/45C3: 30 3A        BMI $45FF
+FD/45C3: 30 3A        BMI Local_FD45FF
 FD/45C5: 25 31        AND $31
 FD/45C7: 00 28        BRK $28
 FD/45C9: 54 30 78     MVN $30,$78
-FD/45CC: 30 67        BMI $4635
+FD/45CC: 30 67        BMI Local_FD4635
 FD/45CE: 37 76        AND [$76],Y
 FD/45D0: 00 20        BRK $20
 FD/45D2: 49 19 0B     EOR #$0B19
@@ -40,5 +40,5 @@ FD/45D5: 0B           PHD
 FD/45D6: 32 10        AND ($10)
 FD/45D8: 26 00        ROL $00
 FD/45DA: 17 3F        ORA [$3F],Y
-FD/45DC: 50 16        BVC $45F4
+FD/45DC: 50 16        BVC Local_FD45F4
 FD/45DE: 60           RTS

@@ -42,7 +42,7 @@ CC/57D1: 00 00        BRK $00
 CC/57D3: 00 00        BRK $00
 CC/57D5: 0A           ASL
 CC/57D6: 09 0F 64     ORA #$640F
-CC/57D9: 10 32        BPL $580D
+CC/57D9: 10 32        BPL Local_CC580D
 CC/57DB: 78           SEI
 CC/57DC: 7F 04 04 04  ADC $040404,X
 CC/57E0: 04 80        TSB $80
@@ -64,7 +64,7 @@ CC/57FE: 00 FF        BRK $FF
 CC/5800: 00 00        BRK $00
 CC/5802: 00 0A        BRK $0A
 CC/5804: 0D 1E 64     ORA $641E
-CC/5807: 10 32        BPL $583B
+CC/5807: 10 32        BPL Local_CC583B
 CC/5809: 01 7F        ORA ($7F,X)
 CC/580B: 04 04        TSB $04
 CC/580D: 04 04        TSB $04
@@ -84,13 +84,13 @@ CC/582B: 28           PLP
 CC/582C: 00 FF        BRK $FF
 CC/582E: 00 00        BRK $00
 CC/5830: 00 0A        BRK $0A
-CC/5832: 10 12        BPL $5846
+CC/5832: 10 12        BPL Local_CC5846
 CC/5834: 64 64        STZ $64
 CC/5836: 64 01        STZ $01
 CC/5838: FF 00 00 00  SBC $000000,X
 CC/583C: 00 E0        BRK $E0
 CC/583E: 03 00        ORA $00,S
-CC/5840: 70 17        BVS $5859
+CC/5840: 70 17        BVS Local_CC5859
 CC/5842: 26 00        ROL $00
 CC/5844: 00 00        BRK $00
 CC/5846: 00 00        BRK $00
@@ -109,7 +109,7 @@ CC/585C: 00 00        BRK $00
 CC/585E: 00 0A        BRK $0A
 CC/5860: 0C 0A 2E     TSB $2E0A
 CC/5863: 14 32        TRB $32
-CC/5865: 20 7F 04     JSR $047F
+CC/5865: 20 7F 04     JSR Local_CC047F
 CC/5868: 04 04        TSB $04
 CC/586A: 04 00        TSB $00
 CC/586C: 40           RTI

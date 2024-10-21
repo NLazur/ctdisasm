@@ -1,14 +1,14 @@
 ; Bank: C1 | Start Address: 27FA
 Routine_C127FA:
-C1/27FA: 20 2D 28     JSR $282D
-C1/27FD: F0 14        BEQ $2813
+C1/27FA: 20 2D 28     JSR Local_C1282D
+C1/27FD: F0 14        BEQ Local_C12813
 C1/27FF: EE 14 96     INC $9614
 C1/2802: AD 14 96     LDA $9614
 C1/2805: C9 0B        CMP #$0B
-C1/2807: D0 04        BNE $280D
+C1/2807: D0 04        BNE Local_C1280D
 C1/2809: 7B           TDC
 C1/280A: 8D 14 96     STA $9614
 C1/280D: AA           TAX
 C1/280E: BD C0 99     LDA $99C0,X
-C1/2811: 30 EC        BMI $27FF
+C1/2811: 30 EC        BMI Local_C127FF
 C1/2813: 60           RTS

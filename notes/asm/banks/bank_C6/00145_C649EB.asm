@@ -3,7 +3,7 @@ Routine_C649EB:
 C6/49EB: 8A           TXA
 C6/49EC: 00 50        BRK $50
 C6/49EE: 48           PHA
-C6/49EF: 70 80        BVS $4971
+C6/49EF: 70 80        BVS Local_C64971
 C6/49F1: F8           SED
 C6/49F2: 01 80        ORA ($80,X)
 C6/49F4: E0 AC        CPX #$AC
@@ -16,7 +16,7 @@ C6/4A01: 91 A9        STA ($A9),Y
 C6/4A03: 11 AA        ORA ($AA),Y
 C6/4A05: 0E 91 64     ASL $6491
 C6/4A08: 08           PHP
-C6/4A09: 80 00        BRA $4A0B
+C6/4A09: 80 00        BRA Local_C64A0B
 C6/4A0B: 84 00        STY $00
 C6/4A0D: AB           PLB
 C6/4A0E: 51 BE        EOR ($BE),Y
@@ -49,7 +49,7 @@ C6/4A3F: 97 11        STA [$11],Y
 C6/4A41: 68           PLA
 C6/4A42: F9 88 1D     SBC $1D88,Y
 C6/4A45: 8C 08 01     STY $0108
-C6/4A48: 90 0D        BCC $4A57
+C6/4A48: 90 0D        BCC Local_C64A57
 C6/4A4A: BB           TYX
 C6/4A4B: 11 BC        ORA ($BC),Y
 C6/4A4D: 11 BB        ORA ($BB),Y
@@ -68,7 +68,7 @@ C6/4A65: 0D 2C 11     ORA $112C
 C6/4A68: 24 75        BIT $75
 C6/4A6A: 04 70        TSB $70
 C6/4A6C: 3E 55 04     ROL $0455,X
-C6/4A6F: 70 0E        BVS $4A7F
+C6/4A6F: 70 0E        BVS Local_C64A7F
 C6/4A71: 66 04        ROR $04
 C6/4A73: EF 70 5E 7C  SBC $7C5E70
 C6/4A77: 08           PHP
@@ -76,8 +76,8 @@ C6/4A78: 74 09        STZ $09,X
 C6/4A7A: 08           PHP
 C6/4A7B: 18           CLC
 C6/4A7C: AC 8C 10     LDY $108C
-C6/4A7F: 10 09        BPL $4A8A
-C6/4A81: 30 6E        BMI $4AF1
+C6/4A7F: 10 09        BPL Local_C64A8A
+C6/4A81: 30 6E        BMI Local_C64AF1
 C6/4A83: 00 30        BRK $30
 C6/4A85: 11 31        ORA ($31),Y
 C6/4A87: 11 40        ORA ($40),Y
@@ -106,7 +106,7 @@ C6/4AB2: 11 3B        ORA ($3B),Y
 C6/4AB4: 11 4A        ORA ($4A),Y
 C6/4AB6: 11 4B        ORA ($4B),Y
 C6/4AB8: 11 00        ORA ($00),Y
-C6/4ABA: 3C 11 3D     BIT $3D11,X
+C6/4ABA: 3C 11 3D     BIT Local_C63D11,X
 C6/4ABD: 11 4C        ORA ($4C),Y
 C6/4ABF: 11 4D        ORA ($4D),Y
 C6/4AC1: 11 00        ORA ($00),Y
@@ -127,10 +127,10 @@ C6/4ADE: 9B           TXY
 C6/4ADF: 51 9A        EOR ($9A),Y
 C6/4AE1: 51 7F        EOR ($7F),Y
 C6/4AE3: 51 7E        EOR ($7E),Y
-C6/4AE5: 50 71        BVC $4B58
+C6/4AE5: 50 71        BVC Local_C64B58
 C6/4AE7: 11 10        ORA ($10),Y
 C6/4AE9: A8           TAY
-C6/4AEA: 50 11        BVC $4AFD
+C6/4AEA: 50 11        BVC Local_C64AFD
 C6/4AEC: 51 C2        EOR ($C2),Y
 C6/4AEE: 00 56        BRK $56
 C6/4AF0: 04 52        TSB $52

@@ -12,7 +12,7 @@ C2/9622: E8           INX
 C2/9623: C8           INY
 C2/9624: C8           INY
 C2/9625: C6 00        DEC $00
-C2/9627: D0 EF        BNE $9618
+C2/9627: D0 EF        BNE Local_C29618
 C2/9629: C6 02        DEC $02
-C2/962B: D0 E0        BNE $960D
+C2/962B: D0 E0        BNE Local_C2960D
 C2/962D: 60           RTS

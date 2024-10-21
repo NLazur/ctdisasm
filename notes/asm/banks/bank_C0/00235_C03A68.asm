@@ -12,6 +12,6 @@ C0/3A76: E8           INX
 C0/3A77: 86 C7        STX $C7
 C0/3A79: AA           TAX
 C0/3A7A: A9 0A        LDA #$0A
-C0/3A7C: 22 04 80 C2  JSR $C28004
+C0/3A7C: 22 04 80 C2  JSR Routine_C28004
 C0/3A80: A6 C7        LDX $C7
 C0/3A82: 60           RTS

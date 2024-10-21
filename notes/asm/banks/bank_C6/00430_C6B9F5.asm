@@ -1,15 +1,15 @@
 ; Bank: C6 | Start Address: B9F5
 Routine_C6B9F5:
 C6/B9F5: 48           PHA
-C6/B9F6: D0 03        BNE $B9FB
+C6/B9F6: D0 03        BNE Local_C6B9FB
 C6/B9F8: 18           CLC
 C6/B9F9: 1C AA 36     TRB $36AA
 C6/B9FC: 06 BD        ASL $BD
 C6/B9FE: 39 66 02     AND $0266,Y
-C6/BA01: 3C 3D 41     BIT $413D,X
+C6/BA01: 3C 3D 41     BIT Local_C6413D,X
 C6/BA04: 27 F1        AND [$F1]
 C6/BA06: 0A           ASL
-C6/BA07: 50 07        BVC $BA10
+C6/BA07: 50 07        BVC Local_C6BA10
 C6/BA09: 0A           ASL
 C6/BA0A: 0A           ASL
 C6/BA0B: 5E 07 56     LSR $5607,X
@@ -24,7 +24,7 @@ C6/BA1F: 41 63        EOR ($63,X)
 C6/BA21: CB           WAI
 C6/BA22: 0C 64 36     TSB $3664
 C6/BA25: 37 F3        AND [$F3],Y
-C6/BA27: 5C 33 06 07  JMP $070633
+C6/BA27: 5C 33 06 07  JMP Routine_070633
 C6/BA2B: 34 06        BIT $06,X
 C6/BA2D: D9 0D AD     CMP $AD0D,Y
 C6/BA30: 07 29        ORA [$29]
@@ -59,7 +59,7 @@ C6/BA68: 74 0F        STZ $0F,X
 C6/BA6A: D2 9F        CMP ($9F)
 C6/BA6C: 86 2A        STX $2A
 C6/BA6E: BC 1A 00     LDY $001A,X
-C6/BA71: 20 21 E6     JSR $E621
+C6/BA71: 20 21 E6     JSR Local_C6E621
 C6/BA74: 26 27        ROL $27
 C6/BA76: 1A           INC
 C6/BA77: 1B           TCS

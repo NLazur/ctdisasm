@@ -7,5 +7,5 @@ C3/67C8: A8           TAY
 C3/67C9: A6 10        LDX $10
 C3/67CB: 00 60        BRK $60
 C3/67CD: A5 85        LDA $85
-C3/67CF: D0 01        BNE $67D2
+C3/67CF: D0 01        BNE Local_C367D2
 C3/67D1: 60           RTS

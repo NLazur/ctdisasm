@@ -32,7 +32,7 @@ CF/7D6C: EA           NOP
 CF/7D6D: FD D1 FE     SBC $FED1,X
 CF/7D70: A0 5F        LDY #$5F
 CF/7D72: 41 BE        EOR ($BE,X)
-CF/7D74: 80 7F        BRA $7DF5
+CF/7D74: 80 7F        BRA Local_CF7DF5
 CF/7D76: 41 BE        EOR ($BE,X)
 CF/7D78: A0 5F        LDY #$5F
 CF/7D7A: 40           RTI

@@ -15,5 +15,5 @@ CE/EDCC: 88           DEY
 CE/EDCD: 88           DEY
 CE/EDCE: 88           DEY
 CE/EDCF: E0 C0 01     CPX #$01C0
-CE/EDD2: D0 EB        BNE $EDBF
+CE/EDD2: D0 EB        BNE Local_CEEDBF
 CE/EDD4: 60           RTS

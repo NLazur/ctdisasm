@@ -1,16 +1,16 @@
 ; Bank: CE | Start Address: 2CE3
 Routine_CE2CE3:
-CE/2CE3: D0 0C        BNE $2CF1
+CE/2CE3: D0 0C        BNE Local_CE2CF1
 CE/2CE5: 1E 2A 03     ASL $032A,X
 CE/2CE8: 03 D1        ORA $D1,S
 CE/2CEA: 03 17        ORA $17,S
 CE/2CEC: 03 17        ORA $17,S
 CE/2CEE: 06 19        ASL $19
-CE/2CF0: 50 06        BVC $2CF8
+CE/2CF0: 50 06        BVC Local_CE2CF8
 CE/2CF2: 03 2E        ORA $2E,S
 CE/2CF4: 01 00        ORA ($00,X)
-CE/2CF6: 90 F0        BCC $2CE8
-CE/2CF8: 80 00        BRA $2CFA
+CE/2CF6: 90 F0        BCC Local_CE2CE8
+CE/2CF8: 80 00        BRA Local_CE2CFA
 CE/2CFA: 08           PHP
 CE/2CFB: 2D 1F 2D     AND $2D1F
 CE/2CFE: 2E 2D 44     ROL $442D
@@ -30,7 +30,7 @@ CE/2D19: 03 23        ORA $23,S
 CE/2D1B: 06 2E        ASL $2E
 CE/2D1D: 01 00        ORA ($00,X)
 CE/2D1F: 23 03        AND $03,S
-CE/2D21: 20 0A 7A     JSR $7A0A
+CE/2D21: 20 0A 7A     JSR Local_CE7A0A
 CE/2D24: AB           PLB
 CE/2D25: 03 D8        ORA $D8,S
 CE/2D27: 04 02        TSB $02

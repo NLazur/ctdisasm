@@ -21,22 +21,22 @@ D0/3CD0: 02 03        COP $03
 D0/3CD2: 00 01        BRK $01
 D0/3CD4: 01 01        ORA ($01,X)
 D0/3CD6: 01 01        ORA ($01,X)
-D0/3CD8: 80 80        BRA $3C5A
-D0/3CDA: 80 80        BRA $3C5C
-D0/3CDC: 80 80        BRA $3C5E
-D0/3CDE: 80 80        BRA $3C60
-D0/3CE0: 80 80        BRA $3C62
+D0/3CD8: 80 80        BRA Local_D03C5A
+D0/3CDA: 80 80        BRA Local_D03C5C
+D0/3CDC: 80 80        BRA Local_D03C5E
+D0/3CDE: 80 80        BRA Local_D03C60
+D0/3CE0: 80 80        BRA Local_D03C62
 D0/3CE2: 00 00        BRK $00
 D0/3CE4: 00 00        BRK $00
 D0/3CE6: 00 00        BRK $00
-D0/3CE8: B0 70        BCS $3D5A
-D0/3CEA: 90 70        BCC $3D5C
-D0/3CEC: D0 30        BNE $3D1E
-D0/3CEE: D0 30        BNE $3D20
-D0/3CF0: D0 30        BNE $3D22
-D0/3CF2: D0 30        BNE $3D24
-D0/3CF4: D0 30        BNE $3D26
-D0/3CF6: D0 30        BNE $3D28
+D0/3CE8: B0 70        BCS Local_D03D5A
+D0/3CEA: 90 70        BCC Local_D03D5C
+D0/3CEC: D0 30        BNE Local_D03D1E
+D0/3CEE: D0 30        BNE Local_D03D20
+D0/3CF0: D0 30        BNE Local_D03D22
+D0/3CF2: D0 30        BNE Local_D03D24
+D0/3CF4: D0 30        BNE Local_D03D26
+D0/3CF6: D0 30        BNE Local_D03D28
 D0/3CF8: EC 1C EC     CPX $EC1C
 D0/3CFB: 1C EC 1C     TRB $1CEC
 D0/3CFE: E4 1C        CPX $1C
@@ -45,13 +45,13 @@ D0/3D02: F6 0E        INC $0E,X
 D0/3D04: F6 0E        INC $0E,X
 D0/3D06: F2 0E        SBC ($0E)
 D0/3D08: 00 00        BRK $00
-D0/3D0A: 10 10        BPL $3D1C
-D0/3D0C: 10 10        BPL $3D1E
-D0/3D0E: 10 10        BPL $3D20
-D0/3D10: 10 30        BPL $3D42
-D0/3D12: 10 30        BPL $3D44
-D0/3D14: 50 30        BVC $3D46
-D0/3D16: 50 30        BVC $3D48
+D0/3D0A: 10 10        BPL Local_D03D1C
+D0/3D0C: 10 10        BPL Local_D03D1E
+D0/3D0E: 10 10        BPL Local_D03D20
+D0/3D10: 10 30        BPL Local_D03D42
+D0/3D12: 10 30        BPL Local_D03D44
+D0/3D14: 50 30        BVC Local_D03D46
+D0/3D16: 50 30        BVC Local_D03D48
 D0/3D18: E4 1C        CPX $1C
 D0/3D1A: E4 1C        CPX $1C
 D0/3D1C: F6 0E        INC $0E,X
@@ -67,9 +67,9 @@ D0/3D30: A0 60        LDY #$60
 D0/3D32: A0 60        LDY #$60
 D0/3D34: A0 60        LDY #$60
 D0/3D36: A0 60        LDY #$60
-D0/3D38: D0 30        BNE $3D6A
-D0/3D3A: D0 30        BNE $3D6C
-D0/3D3C: D0 30        BNE $3D6E
+D0/3D38: D0 30        BNE Local_D03D6A
+D0/3D3A: D0 30        BNE Local_D03D6C
+D0/3D3C: D0 30        BNE Local_D03D6E
 D0/3D3E: D8           CLD
 D0/3D3F: 38           SEC
 D0/3D40: E8           INX
@@ -88,13 +88,13 @@ D0/3D53: 03 FE        ORA $FE,S
 D0/3D55: 01 80        ORA ($80,X)
 D0/3D57: 7F 00 00 00  ADC $000000,X
 D0/3D5B: 00 80        BRK $80
-D0/3D5D: 80 80        BRA $3CDF
-D0/3D5F: 80 C0        BRA $3D21
+D0/3D5D: 80 80        BRA Local_D03CDF
+D0/3D5F: 80 C0        BRA Local_D03D21
 D0/3D61: C0 E0 E0     CPY #$E0E0
-D0/3D64: 70 F0        BVS $3D56
+D0/3D64: 70 F0        BVS Local_D03D56
 D0/3D66: 1E FE D0     ASL $D0FE,X
-D0/3D69: 30 D0        BMI $3D3B
-D0/3D6B: 30 E8        BMI $3D55
+D0/3D69: 30 D0        BMI Local_D03D3B
+D0/3D6B: 30 E8        BMI Local_D03D55
 D0/3D6D: 18           CLC
 D0/3D6E: E8           INX
 D0/3D6F: 18           CLC
@@ -115,9 +115,9 @@ D0/3D83: 00 FF        BRK $FF
 D0/3D85: 00 00        BRK $00
 D0/3D87: FF C0 C0 40  SBC $40C0C0,X
 D0/3D8B: C0 60 E0     CPY #$E060
-D0/3D8E: 20 E0 30     JSR $30E0
-D0/3D91: F0 10        BEQ $3DA3
-D0/3D93: F0 18        BEQ $3DAD
+D0/3D8E: 20 E0 30     JSR Local_D030E0
+D0/3D91: F0 10        BEQ Local_D03DA3
+D0/3D93: F0 18        BEQ Local_D03DAD
 D0/3D95: F8           SED
 D0/3D96: 1E FE 12     ASL $12FE,X
 D0/3D99: 2E 32 0E     ROL $0E32
@@ -140,9 +140,9 @@ D0/3DBA: 00 00        BRK $00
 D0/3DBC: 00 00        BRK $00
 D0/3DBE: 00 00        BRK $00
 D0/3DC0: 00 00        BRK $00
-D0/3DC2: 90 90        BCC $3D54
-D0/3DC4: 90 90        BCC $3D56
-D0/3DC6: 90 90        BCC $3D58
+D0/3DC2: 90 90        BCC Local_D03D54
+D0/3DC4: 90 90        BCC Local_D03D56
+D0/3DC6: 90 90        BCC Local_D03D58
 D0/3DC8: 57 68        EOR [$68],Y
 D0/3DCA: 57 68        EOR [$68],Y
 D0/3DCC: 5F 60 5F 60  EOR $605F60,X
@@ -165,7 +165,7 @@ D0/3DFC: 03 03        ORA $03,S
 D0/3DFE: 03 03        ORA $03,S
 D0/3E00: 04 07        TSB $07
 D0/3E02: E3 FF        SBC $FF,S
-D0/3E04: 30 3C        BMI $3E42
+D0/3E04: 30 3C        BMI Local_D03E42
 D0/3E06: 08           PHP
 D0/3E07: 0C 01 01     TSB $0101
 D0/3E0A: 01 01        ORA ($01,X)
@@ -181,11 +181,11 @@ D0/3E21: 03 FE        ORA $FE,S
 D0/3E23: 01 FF        ORA ($FF,X)
 D0/3E25: 00 F0        BRK $F0
 D0/3E27: 0F 00 00 80  ORA $800000
-D0/3E2B: 80 80        BRA $3DAD
-D0/3E2D: 80 80        BRA $3DAF
-D0/3E2F: 80 40        BRA $3E71
+D0/3E2B: 80 80        BRA Local_D03DAD
+D0/3E2D: 80 80        BRA Local_D03DAF
+D0/3E2F: 80 40        BRA Local_D03E71
 D0/3E31: C0 40 C0     CPY #$C040
-D0/3E34: 20 E0 18     JSR $18E0
+D0/3E34: 20 E0 18     JSR Local_D018E0
 D0/3E37: F8           SED
 D0/3E38: 32 0E        AND ($0E)
 D0/3E3A: 39 07 7C     AND $7C07,Y
@@ -201,7 +201,7 @@ D0/3E4E: 2D 3E 2D     AND $2D3E
 D0/3E51: 3E 2B 3C     ROL $3C2B,X
 D0/3E54: 53 6C        EOR ($6C,S),Y
 D0/3E56: 57 68        EOR [$68],Y
-D0/3E58: 90 90        BCC $3DEA
+D0/3E58: 90 90        BCC Local_D03DEA
 D0/3E5A: 68           PLA
 D0/3E5B: F8           SED
 D0/3E5C: 68           PLA
@@ -225,7 +225,7 @@ D0/3E7C: E8           INX
 D0/3E7D: 18           CLC
 D0/3E7E: E8           INX
 D0/3E7F: 18           CLC
-D0/3E80: 10 F0        BPL $3E72
+D0/3E80: 10 F0        BPL Local_D03E72
 D0/3E82: E0 E0        CPX #$E0
 D0/3E84: 00 00        BRK $00
 D0/3E86: 00 00        BRK $00
@@ -245,8 +245,8 @@ D0/3EA7: 18           CLC
 D0/3EA8: 5F 60 27 38  EOR $382760,X
 D0/3EAC: 18           CLC
 D0/3EAD: 1F 07 07 80  ORA $800707,X
-D0/3EB1: 80 30        BRA $3EE3
-D0/3EB3: F0 C6        BEQ $3E7B
+D0/3EB1: 80 30        BRA Local_D03EE3
+D0/3EB3: F0 C6        BEQ Local_D03E7B
 D0/3EB5: FE 00 00     INC $0000,X
 D0/3EB8: 00 00        BRK $00
 D0/3EBA: 00 00        BRK $00
@@ -260,15 +260,15 @@ D0/3EC8: 01 01        ORA ($01,X)
 D0/3ECA: 06 06        ASL $06
 D0/3ECC: 1C 1C 38     TRB $381C
 D0/3ECF: 38           SEC
-D0/3ED0: D0 F0        BNE $3EC2
-D0/3ED2: 10 F0        BPL $3EC4
+D0/3ED0: D0 F0        BNE Local_D03EC2
+D0/3ED2: 10 F0        BPL Local_D03EC4
 D0/3ED4: A0 60        LDY #$60
 D0/3ED6: A0 60        LDY #$60
 D0/3ED8: 00 00        BRK $00
 D0/3EDA: 00 00        BRK $00
 D0/3EDC: 00 00        BRK $00
-D0/3EDE: 20 20 20     JSR $2020
-D0/3EE1: 20 40 60     JSR $6040
+D0/3EDE: 20 20 20     JSR Local_D02020
+D0/3EE1: 20 40 60     JSR Local_D06040
 D0/3EE4: A0 C0        LDY #$C0
 D0/3EE6: A0 C0        LDY #$C0
 D0/3EE8: 00 00        BRK $00

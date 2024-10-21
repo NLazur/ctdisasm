@@ -5,7 +5,7 @@ D1/36F9: C4 18        CPY $18
 D1/36FB: 00 11        BRK $11
 D1/36FD: 43 28        EOR $28,S
 D1/36FF: 00 FC        BRK $FC
-D1/3701: 80 E4        BRA $36E7
+D1/3701: 80 E4        BRA Local_D136E7
 D1/3703: 1E 00 40     ASL $4000,X
 D1/3706: 00 00        BRK $00
 D1/3708: 00 00        BRK $00

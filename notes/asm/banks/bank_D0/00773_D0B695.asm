@@ -5,7 +5,7 @@ D0/B698: 00 00        BRK $00
 D0/B69A: 00 00        BRK $00
 D0/B69C: 00 00        BRK $00
 D0/B69E: 00 00        BRK $00
-D0/B6A0: F0 E0        BEQ $B682
+D0/B6A0: F0 E0        BEQ Local_D0B682
 D0/B6A2: E0 80 00     CPX #$0080
 D0/B6A5: 00 00        BRK $00
 D0/B6A7: 00 10        BRK $10
@@ -21,18 +21,18 @@ D0/B6B9: 0F 0F 03 00  ORA $00030F
 D0/B6BD: 00 00        BRK $00
 D0/B6BF: 00 58        BRK $58
 D0/B6C1: 38           SEC
-D0/B6C2: D0 30        BNE $B6F4
-D0/B6C4: 30 F0        BMI $B6B6
+D0/B6C2: D0 30        BNE Local_D0B6F4
+D0/B6C4: 30 F0        BMI Local_D0B6B6
 D0/B6C6: C0 C0 00     CPY #$00C0
 D0/B6C9: 00 00        BRK $00
 D0/B6CB: 00 00        BRK $00
 D0/B6CD: 00 00        BRK $00
 D0/B6CF: 00 F8        BRK $F8
-D0/B6D1: F0 F0        BEQ $B6C3
+D0/B6D1: F0 F0        BEQ Local_D0B6C3
 D0/B6D3: C0 00 00     CPY #$0000
 D0/B6D6: 00 00        BRK $00
 D0/B6D8: 07 07        ORA [$07]
-D0/B6DA: 20 00 18     JSR $1800
+D0/B6DA: 20 00 18     JSR Local_D01800
 D0/B6DD: 00 1F        BRK $1F
 D0/B6DF: 00 08        BRK $08
 D0/B6E1: 07 03        ORA [$03]
@@ -47,13 +47,13 @@ D0/B6F4: E8           INX
 D0/B6F5: 18           CLC
 D0/B6F6: 98           TYA
 D0/B6F7: 78           SEI
-D0/B6F8: 70 F0        BVS $B6EA
+D0/B6F8: 70 F0        BVS Local_D0B6EA
 D0/B6FA: C0 C0 00     CPY #$00C0
 D0/B6FD: 00 00        BRK $00
 D0/B6FF: 00 FC        BRK $FC
 D0/B701: FC F8 F8     JSR ($F8F8,X)
-D0/B704: F0 C0        BEQ $B6C6
+D0/B704: F0 C0        BEQ Local_D0B6C6
 D0/B706: 00 00        BRK $00
-D0/B708: 80 00        BRA $B70A
-D0/B70A: 80 00        BRA $B70C
+D0/B708: 80 00        BRA Local_D0B70A
+D0/B70A: 80 00        BRA Local_D0B70C
 D0/B70C: 40           RTI

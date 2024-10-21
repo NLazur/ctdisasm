@@ -34,7 +34,7 @@ C6/2C82: 12 DD        ORA ($DD)
 C6/2C84: 12 BD        ORA ($BD)
 C6/2C86: 12 68        ORA ($68)
 C6/2C88: BE 12 D9     LDX $D912,Y
-C6/2C8B: 4C 01 BF     JMP $BF01
+C6/2C8B: 4C 01 BF     JMP Local_C6BF01
 C6/2C8E: CE 10 90     DEC $9010
 C6/2C91: 12 36        ORA ($36)
 C6/2C93: 00 01        BRK $01
@@ -58,7 +58,7 @@ C6/2CB5: 1D 49 1D     ORA $1D49,X
 C6/2CB8: 58           CLI
 C6/2CB9: 04 1D        TSB $1D
 C6/2CBB: 59 0C 00     EOR $000C,Y
-C6/2CBE: 10 3D        BPL $2CFD
+C6/2CBE: 10 3D        BPL Local_C62CFD
 C6/2CC0: 02 3D        COP $3D
 C6/2CC2: 03 00        ORA $00,S
 C6/2CC4: 3D 11 3D     AND $3D11,X
@@ -116,30 +116,30 @@ C6/2D33: 1A           INC
 C6/2D34: EA           NOP
 C6/2D35: 19 C9 1A     ORA $1AC9,Y
 C6/2D38: 02 18        COP $18
-C6/2D3A: 80 78        BRA $2DB4
+C6/2D3A: 80 78        BRA Local_C62DB4
 C6/2D3C: 1D 79 1D     ORA $1D79,X
 C6/2D3F: 88           DEY
 C6/2D40: 1D 89 9C     ORA $9C89,X
-C6/2D43: 10 1F        BPL $2D64
+C6/2D43: 10 1F        BPL Local_C62D64
 C6/2D45: 0C 09 84     TSB $8409
 C6/2D48: 09 0C 09     ORA #$090C
 C6/2D4B: 84 09        STY $09
 C6/2D4D: 0C 09 C4     TSB $C409
 C6/2D50: 16 D3        ASL $D3,X
-C6/2D52: B0 16        BCS $2D6A
-C6/2D54: 3C 16 3D     BIT $3D16,X
+C6/2D52: B0 16        BCS Local_C62D6A
+C6/2D54: 3C 16 3D     BIT Local_C63D16,X
 C6/2D57: 7C 10 80     JMP ($8010,X)
 C6/2D5A: 08           PHP
-C6/2D5B: 20 62 00     JSR $0062
+C6/2D5B: 20 62 00     JSR Local_C60062
 C6/2D5E: 88           DEY
-C6/2D5F: 30 16        BMI $2D77
+C6/2D5F: 30 16        BMI Local_C62D77
 C6/2D61: 31 66        AND ($66),Y
 C6/2D63: 00 23        BRK $23
 C6/2D65: 16 32        ASL $32,X
 C6/2D67: 62 00 0A     PER $C6376A
 C6/2D6A: 24 62        BIT $62
 C6/2D6C: 00 34        BRK $34
-C6/2D6E: 50 02        BVC $2D72
+C6/2D6E: 50 02        BVC Local_C62D72
 C6/2D70: 7C 36 7D     JMP ($7D36,X)
 C6/2D73: 16 00        ASL $00,X
 C6/2D75: 8C 16 8D     STY $8D16
@@ -162,7 +162,7 @@ C6/2D98: D2 01        CMP ($01)
 C6/2D9A: A3 D6        LDA $D6,S
 C6/2D9C: 11 FD        ORA ($FD),Y
 C6/2D9E: 04 48        TSB $48
-C6/2DA0: 10 84        BPL $2D26
+C6/2DA0: 10 84        BPL Local_C62D26
 C6/2DA2: 11 0C        ORA ($0C),Y
 C6/2DA4: 09 84 09     ORA #$0984
 C6/2DA7: 0C 09 84     TSB $8409
@@ -189,7 +189,7 @@ C6/2DD5: 16 AE        ASL $AE,X
 C6/2DD7: 54 16 AF     MVN $16,$AF
 C6/2DDA: 92 21        STA ($21)
 C6/2DDC: 3E B6 01     ROL $01B6,X
-C6/2DDF: B0 C8        BCS $2DA9
+C6/2DDF: B0 C8        BCS Local_C62DA9
 C6/2DE1: 01 C0        ORA ($C0,X)
 C6/2DE3: 00 16        BRK $16
 C6/2DE5: B1 16        LDA ($16),Y
@@ -201,7 +201,7 @@ C6/2DEF: C8           INY
 C6/2DF0: 01 C3        ORA ($C3,X)
 C6/2DF2: DA           PHX
 C6/2DF3: 01 58        ORA ($58,X)
-C6/2DF5: 10 38        BPL $2E2F
+C6/2DF5: 10 38        BPL Local_C62E2F
 C6/2DF7: 0D 22 38     ORA $3822
 C6/2DFA: 84 09        STY $09
 C6/2DFC: 12 3D        ORA ($3D)
@@ -222,7 +222,7 @@ C6/2E1B: 03 80        ORA $80,S
 C6/2E1D: 12 71        ORA ($71)
 C6/2E1F: 12 7A        ORA ($7A)
 C6/2E21: 16 81        ASL $81,X
-C6/2E23: D0 12        BNE $2E37
+C6/2E23: D0 12        BNE Local_C62E37
 C6/2E25: 8A           TXA
 C6/2E26: 16 7B        ASL $7B,X
 C6/2E28: 8A           TXA

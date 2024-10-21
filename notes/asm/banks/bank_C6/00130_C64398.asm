@@ -3,7 +3,7 @@ Routine_C64398:
 C6/4398: 71 48        ADC ($48),Y
 C6/439A: F8           SED
 C6/439B: 00 00        BRK $00
-C6/439D: 10 1A        BPL $43B9
+C6/439D: 10 1A        BPL Local_C643B9
 C6/439F: 11 00        ORA ($00),Y
 C6/43A1: 1A           INC
 C6/43A2: 02 1A        COP $1A
@@ -14,7 +14,7 @@ C6/43AA: B4 10        LDY $10,X
 C6/43AC: 0C 08 18     TSB $1808
 C6/43AF: 0C 06 3A     TSB $3A06
 C6/43B2: 07 58        ORA [$58]
-C6/43B4: 10 04        BPL $43BA
+C6/43B4: 10 04        BPL Local_C643BA
 C6/43B6: 04 3A        TSB $3A
 C6/43B8: 05 B8        ORA $B8
 C6/43BA: 31 06        AND ($06),Y
@@ -39,7 +39,7 @@ C6/43DD: 33 1A        AND ($1A,S),Y
 C6/43DF: 00 FC        BRK $FC
 C6/43E1: 00 3E        BRK $3E
 C6/43E3: FA           PLX
-C6/43E4: 10 00        BPL $43E6
+C6/43E4: 10 00        BPL Local_C643E6
 C6/43E6: 08           PHP
 C6/43E7: 00 2E        BRK $2E
 C6/43E9: 1A           INC
@@ -49,10 +49,10 @@ C6/43EE: 3A           DEC
 C6/43EF: 3A           DEC
 C6/43F0: 5A           PHY
 C6/43F1: 2B           PLD
-C6/43F2: 22 02 3B 26  JSR $263B02
+C6/43F2: 22 02 3B 26  JSR Routine_263B02
 C6/43F6: 0A           ASL
 C6/43F7: 6C 14 29     JMP ($2914)
-C6/43FA: B0 10        BCS $440C
+C6/43FA: B0 10        BCS Local_C6440C
 C6/43FC: 2A           ROL
 C6/43FD: 07 36        ORA [$36]
 C6/43FF: 02 7C        COP $7C
@@ -85,15 +85,15 @@ C6/442A: 00 1E        BRK $1E
 C6/442C: 1A           INC
 C6/442D: 1F 1A 20 1A  ORA $1A201A,X
 C6/4431: 21 1A        AND ($1A,X)
-C6/4433: 80 24        BRA $4459
+C6/4433: 80 24        BRA Local_C64459
 C6/4435: 1A           INC
 C6/4436: 25 1A        AND $1A
 C6/4438: 34 1A        BIT $1A,X
 C6/443A: 35 2C        AND $2C,X
-C6/443C: 30 00        BMI $443E
-C6/443E: 2C 1A 2D     BIT $2D1A
+C6/443C: 30 00        BMI Local_C6443E
+C6/443E: 2C 1A 2D     BIT Local_C62D1A
 C6/4441: 1A           INC
-C6/4442: 3C 1A 3D     BIT $3D1A,X
+C6/4442: 3C 1A 3D     BIT Local_C63D1A,X
 C6/4445: 1A           INC
 C6/4446: 00 26        BRK $26
 C6/4448: 3A           DEC
@@ -122,7 +122,7 @@ C6/447A: 3D C7 3D     AND $3DC7,X
 C6/447D: C0 3D C1     CPY #$C13D
 C6/4480: 3D 70 D0     AND $D070,X
 C6/4483: 3D D1 3D     AND $3DD1,X
-C6/4486: 90 D1        BCC $4459
+C6/4486: 90 D1        BCC Local_C64459
 C6/4488: 05 88        ORA $88
 C6/448A: 3A           DEC
 C6/448B: 05 0D        ORA $0D

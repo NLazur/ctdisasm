@@ -16,7 +16,7 @@ C1/8874: F6 60        INC $60,X
 C1/8876: 7B           TDC
 C1/8877: A2 00 00     LDX #$0000
 C1/887A: BD 79 B1     LDA $B179,X
-C1/887D: D0 03        BNE $8882
+C1/887D: D0 03        BNE Local_C18882
 C1/887F: AD C7 AE     LDA $AEC7
 C1/8882: 3A           DEC
 C1/8883: AA           TAX
@@ -35,7 +35,7 @@ C1/889F: E2 20        SEP #$20
 C1/88A1: B9 45 B0     LDA $B045,Y
 C1/88A4: 3A           DEC
 C1/88A5: 99 45 B0     STA $B045,Y
-C1/88A8: D0 1A        BNE $88C4
+C1/88A8: D0 1A        BNE Local_C188C4
 C1/88AA: A9 0A        LDA #$0A
 C1/88AC: 99 45 B0     STA $B045,Y
 C1/88AF: 98           TYA

@@ -22,7 +22,7 @@ CF/7143: 00 00        BRK $00
 CF/7145: 00 00        BRK $00
 CF/7147: 00 00        BRK $00
 CF/7149: 00 80        BRK $80
-CF/714B: 80 60        BRA $71AD
+CF/714B: 80 60        BRA Local_CF71AD
 CF/714D: E0 FF        CPX #$FF
 CF/714F: 00 00        BRK $00
 CF/7151: 00 00        BRK $00
@@ -48,9 +48,9 @@ CF/7178: 00 01        BRK $01
 CF/717A: 00 01        BRK $01
 CF/717C: 01 01        ORA ($01,X)
 CF/717E: 00 00        BRK $00
-CF/7180: 20 E0 00     JSR $00E0
-CF/7183: 80 80        BRA $7105
-CF/7185: 80 00        BRA $7187
+CF/7180: 20 E0 00     JSR Local_CF00E0
+CF/7183: 80 80        BRA Local_CF7105
+CF/7185: 80 00        BRA Local_CF7187
 CF/7187: 00 00        BRK $00
 CF/7189: 00 00        BRK $00
 CF/718B: 00 00        BRK $00

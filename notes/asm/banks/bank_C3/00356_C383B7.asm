@@ -1,14 +1,14 @@
 ; Bank: C3 | Start Address: 83B7
 Routine_C383B7:
-C3/83B7: 70 50        BVS $8409
-C3/83B9: 10 00        BPL $83BB
+C3/83B7: 70 50        BVS Local_C38409
+C3/83B9: 10 00        BPL Local_C383BB
 C3/83BB: 00 94        BRK $94
 C3/83BD: 87 B0        STA [$B0]
 C3/83BF: 16 C0        ASL $C0,X
-C3/83C1: 20 E0 00     JSR $00E0
+C3/83C1: 20 E0 00     JSR Local_C300E0
 C3/83C4: 00 A0        BRK $A0
-C3/83C6: 50 60        BVC $8428
-C3/83C8: 90 60        BCC $842A
+C3/83C6: 50 60        BVC Local_C38428
+C3/83C8: 90 60        BCC Local_C3842A
 C3/83CA: 88           DEY
 C3/83CB: 38           SEC
 C3/83CC: C4 00        CPY $00
@@ -27,7 +27,7 @@ C3/83E5: 31 BC        AND ($BC),Y
 C3/83E7: 19 00 5D     ORA $5D00,Y
 C3/83EA: 1C 5F 0C     TRB $0C5F
 C3/83ED: 2F 46 0E 26  AND $260E46
-C3/83F1: 10 17        BPL $840A
+C3/83F1: 10 17        BPL Local_C3840A
 C3/83F3: 23 0B        AND $0B,S
 C3/83F5: 11 76        ORA ($76),Y
 C3/83F7: 02 08        COP $08

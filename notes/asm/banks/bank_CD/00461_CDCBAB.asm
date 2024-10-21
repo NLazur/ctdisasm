@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: CBAB
 Routine_CDCBAB:
 CD/CBAB: A8           TAY
-CD/CBAC: 10 78        BPL $CC26
+CD/CBAC: 10 78        BPL Local_CDCC26
 CD/CBAE: 9B           TXY
 CD/CBAF: 85 C0        STA $C0
 CD/CBB1: 0D A8 FF     ORA $FFA8

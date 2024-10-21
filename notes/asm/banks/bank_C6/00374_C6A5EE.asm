@@ -2,11 +2,11 @@
 Routine_C6A5EE:
 C6/A5EE: 08           PHP
 C6/A5EF: A6 06        LDX $06
-C6/A5F1: 50 A2        BVC $A595
+C6/A5F1: 50 A2        BVC Local_C6A595
 C6/A5F3: A2 90 A0     LDX #$A090
 C6/A5F6: 0C A0 A0     TSB $A0A0
 C6/A5F9: 9F 16 25 01  STA $012516,X
-C6/A5FD: 50 51        BVC $A650
+C6/A5FD: 50 51        BVC Local_C6A650
 C6/A5FF: 3B           TSC
 C6/A600: 61 04        ADC ($04,X)
 C6/A602: 12 49        ORA ($49)
@@ -16,7 +16,7 @@ C6/A608: A2 71 B2     LDX #$B271
 C6/A60B: 9D E6 00     STA $00E6,X
 C6/A60E: 23 E1        AND $E1,S
 C6/A610: 11 60        ORA ($60),Y
-C6/A612: 80 95        BRA $A5A9
+C6/A612: 80 95        BRA Local_C6A5A9
 C6/A614: 63 24        ADC $24,S
 C6/A616: 25 15        AND $15
 C6/A618: 01 41        ORA ($41,X)

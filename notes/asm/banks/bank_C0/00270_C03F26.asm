@@ -24,8 +24,8 @@ C0/3F50: A9 00        LDA #$00
 C0/3F52: C2 20        REP #$20
 C0/3F54: 38           SEC
 C0/3F55: E5 F0        SBC $F0
-C0/3F57: F0 38        BEQ $3F91
-C0/3F59: B0 20        BCS $3F7B
+C0/3F57: F0 38        BEQ Local_C03F91
+C0/3F59: B0 20        BCS Local_C03F7B
 C0/3F5B: 49 FF FF     EOR #$FFFF
 C0/3F5E: 1A           INC
 C0/3F5F: 8D 04 42     STA $4204
@@ -43,7 +43,7 @@ C0/3F70: C2 20        REP #$20
 C0/3F72: AD 14 42     LDA $4214
 C0/3F75: 49 FF FF     EOR #$FFFF
 C0/3F78: 1A           INC
-C0/3F79: 80 16        BRA $3F91
+C0/3F79: 80 16        BRA Local_C03F91
 C0/3F7B: 8D 04 42     STA $4204
 C0/3F7E: E2 20        SEP #$20
 C0/3F80: A5 F4        LDA $F4
@@ -66,7 +66,7 @@ C0/3F9E: E8           INX
 C0/3F9F: 86 F6        STX $F6
 C0/3FA1: E2 20        SEP #$20
 C0/3FA3: C6 EE        DEC $EE
-C0/3FA5: D0 98        BNE $3F3F
+C0/3FA5: D0 98        BNE Local_C03F3F
 C0/3FA7: A9 06        LDA #$06
 C0/3FA9: 85 39        STA $39
 C0/3FAB: A6 C7        LDX $C7

@@ -5,7 +5,7 @@ FD/3E90: 7E 81 3D     ROR $3D81,X
 FD/3E93: C2 B7        REP #$B7
 FD/3E95: 06 FE        ASL $FE
 FD/3E97: 0A           ASL
-FD/3E98: 80 42        BRA $3EDC
+FD/3E98: 80 42        BRA Local_FD3EDC
 FD/3E9A: 0E F5 67     ASL $67F5
 FD/3E9D: 09 94 B8     ORA #$B894
 FD/3EA0: C2 C5        REP #$C5
@@ -19,7 +19,7 @@ FD/3EB3: CA           DEX
 FD/3EB4: 00 F7        BRK $F7
 FD/3EB6: C8           INY
 FD/3EB7: 7B           TDC
-FD/3EB8: D0 5F        BNE $3F19
+FD/3EB8: D0 5F        BNE Local_FD3F19
 FD/3EBA: 58           CLI
 FD/3EBB: 6F E8 00 63  ADC $6300E8
 FD/3EBF: B7 08        LDA [$08],Y
@@ -29,7 +29,7 @@ FD/3EC6: 00 3F        BRK $3F
 FD/3EC8: CF 0F 53 C7  CMP $C7530F
 FD/3ECC: FB           XCE
 FD/3ECD: D7 F9        CMP [$F9],Y
-FD/3ECF: 20 B2 AC     JSR $ACB2
+FD/3ECF: 20 B2 AC     JSR Local_FDACB2
 FD/3ED2: E7 FF        SBC [$FF]
 FD/3ED4: BF 00 03 F0  LDA $F00300,X
 FD/3ED8: 00 80        BRK $80

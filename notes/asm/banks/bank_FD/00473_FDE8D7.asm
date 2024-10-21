@@ -43,5 +43,5 @@ FD/E92D: E2 20        SEP #$20
 FD/E92F: E8           INX
 FD/E930: E8           INX
 FD/E931: 88           DEY
-FD/E932: D0 A7        BNE $E8DB
+FD/E932: D0 A7        BNE Local_FDE8DB
 FD/E934: 60           RTS

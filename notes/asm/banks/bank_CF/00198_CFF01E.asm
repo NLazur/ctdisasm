@@ -1,7 +1,7 @@
 ; Bank: CF | Start Address: F01E
 Routine_CFF01E:
 CF/F01E: 3E F0 87     ROL $87F0,X
-CF/F021: F0 94        BEQ $EFB7
+CF/F021: F0 94        BEQ Local_CFEFB7
 CF/F023: F1 F8        SBC ($F8),Y
 CF/F025: F1 3D        SBC ($3D),Y
 CF/F027: F2 54        SBC ($54)
@@ -16,9 +16,9 @@ CF/F03B: F3 84        SBC ($84,S),Y
 CF/F03D: F8           SED
 CF/F03E: A6 C6        LDX $C6
 CF/F040: BD 9D A1     LDA $A19D,X
-CF/F043: D0 41        BNE $F086
+CF/F043: D0 41        BNE Local_CFF086
 CF/F045: BD EB AB     LDA $ABEB,X
-CF/F048: F0 37        BEQ $F081
+CF/F048: F0 37        BEQ Local_CFF081
 CF/F04A: A6 C8        LDX $C8
 CF/F04C: C2 21        REP #$21
 CF/F04E: BD 88 A8     LDA $A888,X
@@ -41,7 +41,7 @@ CF/F073: B9 FB A8     LDA $A8FB,Y
 CF/F076: 7D 70 A3     ADC $A370,X
 CF/F079: 9D 23 1D     STA $1D23,X
 CF/F07C: DE EB AB     DEC $ABEB,X
-CF/F07F: D0 05        BNE $F086
+CF/F07F: D0 05        BNE Local_CFF086
 CF/F081: A9 01        LDA #$01
 CF/F083: 9D 9D A1     STA $A19D,X
 CF/F086: 60           RTS

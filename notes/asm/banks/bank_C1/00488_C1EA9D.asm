@@ -5,7 +5,7 @@ C1/EA9E: AA           TAX
 C1/EA9F: 86 16        STX $16
 C1/EAA1: A5 16        LDA $16
 C1/EAA3: 8D 8B B1     STA $B18B
-C1/EAA6: 20 A3 E9     JSR $E9A3
+C1/EAA6: 20 A3 E9     JSR Local_C1E9A3
 C1/EAA9: AE F4 B1     LDX $B1F4
 C1/EAAC: 7B           TDC
 C1/EAAD: 9D 4B 5E     STA $5E4B,X
@@ -30,5 +30,5 @@ C1/EADC: 9D 51 AE     STA $AE51,X
 C1/EADF: E6 16        INC $16
 C1/EAE1: A5 16        LDA $16
 C1/EAE3: C9 03        CMP #$03
-C1/EAE5: 90 BA        BCC $EAA1
+C1/EAE5: 90 BA        BCC Local_C1EAA1
 C1/EAE7: 60           RTS

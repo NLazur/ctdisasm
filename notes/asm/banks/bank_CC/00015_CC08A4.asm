@@ -1,7 +1,7 @@
 ; Bank: CC | Start Address: 08A4
 Routine_CC08A4:
 CC/08A4: EA           NOP
-CC/08A5: 80 00        BRA $08A7
+CC/08A5: 80 00        BRA Local_CC08A7
 CC/08A7: 00 00        BRK $00
 CC/08A9: 01 00        ORA ($00,X)
 CC/08AB: 00 00        BRK $00
@@ -18,7 +18,7 @@ CC/08BF: 00 00        BRK $00
 CC/08C1: 00 00        BRK $00
 CC/08C3: 00 00        BRK $00
 CC/08C5: 00 00        BRK $00
-CC/08C7: 50 00        BVC $08C9
+CC/08C7: 50 00        BVC Local_CC08C9
 CC/08C9: FE 00 00     INC $0000,X
 CC/08CC: 00 2C        BRK $2C
 CC/08CE: 01 FE        ORA ($FE,X)
@@ -44,10 +44,10 @@ CC/08F5: 15 00        ORA $00,X
 CC/08F7: D8           CLD
 CC/08F8: 0E 9A 14     ASL $149A
 CC/08FB: 00 00        BRK $00
-CC/08FD: 90 1A        BCC $0919
+CC/08FD: 90 1A        BCC Local_CC0919
 CC/08FF: 64 00        STZ $00
 CC/0901: 00 00        BRK $00
-CC/0903: 70 17        BVS $091C
+CC/0903: 70 17        BVS Local_CC091C
 CC/0905: FE 00 00     INC $0000,X
 CC/0908: 00 64        BRK $64
 CC/090A: 19 64 06     ORA $0664,Y
@@ -76,25 +76,25 @@ CC/0933: C8           INY
 CC/0934: 32 9A        AND ($9A)
 CC/0936: 0B           PHD
 CC/0937: 00 00        BRK $00
-CC/0939: B0 36        BCS $0971
+CC/0939: B0 36        BCS Local_CC0971
 CC/093B: FE 00 1F     INC $1F00,X
 CC/093E: 00 B8        BRK $B8
 CC/0940: 3D 02 00     AND $0002,X
 CC/0943: 00 00        BRK $00
-CC/0945: 10 40        BPL $0987
+CC/0945: 10 40        BPL Local_CC0987
 CC/0947: 02 00        COP $00
 CC/0949: 00 00        BRK $00
 CC/094B: 08           PHP
-CC/094C: 20 FE 00     JSR $00FE
+CC/094C: 20 FE 00     JSR Local_CC00FE
 CC/094F: 00 00        BRK $00
 CC/0951: 08           PHP
-CC/0952: 20 FE 00     JSR $00FE
+CC/0952: 20 FE 00     JSR Local_CC00FE
 CC/0955: 00 00        BRK $00
 CC/0957: 08           PHP
-CC/0958: 20 FE 00     JSR $00FE
+CC/0958: 20 FE 00     JSR Local_CC00FE
 CC/095B: 00 00        BRK $00
 CC/095D: 08           PHP
-CC/095E: 20 FE 00     JSR $00FE
+CC/095E: 20 FE 00     JSR Local_CC00FE
 CC/0961: 00 00        BRK $00
 CC/0963: A8           TAY
 CC/0964: 16 FE        ASL $FE,X
@@ -112,7 +112,7 @@ CC/097A: 14 02        TRB $02
 CC/097C: 00 20        BRK $20
 CC/097E: 0D 15 14     ORA $1415
 CC/0981: 02 00        COP $00
-CC/0983: 20 07 1F     JSR $1F07
+CC/0983: 20 07 1F     JSR Local_CC1F07
 CC/0986: 00 00        BRK $00
 CC/0988: 00 00        BRK $00
 CC/098A: 00 00        BRK $00

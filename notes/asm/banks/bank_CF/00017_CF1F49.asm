@@ -1,15 +1,15 @@
 ; Bank: CF | Start Address: 1F49
 Routine_CF1F49:
-CF/1F49: 22 40 04 C0  JSR $C00440
+CF/1F49: 22 40 04 C0  JSR Routine_C00440
 CF/1F4D: 08           PHP
 CF/1F4E: C0 04 00     CPY #$0004
-CF/1F51: 30 10        BMI $1F63
-CF/1F53: 30 00        BMI $1F55
-CF/1F55: 20 00 10     JSR $1000
+CF/1F51: 30 10        BMI Local_CF1F63
+CF/1F53: 30 00        BMI Local_CF1F55
+CF/1F55: 20 00 10     JSR Local_CF1000
 CF/1F58: 00 10        BRK $10
 CF/1F5A: 08           PHP
 CF/1F5B: 18           CLC
-CF/1F5C: 10 18        BPL $1F76
+CF/1F5C: 10 18        BPL Local_CF1F76
 CF/1F5E: 00 0C        BRK $0C
 CF/1F60: 01 01        ORA ($01,X)
 CF/1F62: 01 01        ORA ($01,X)
@@ -22,12 +22,12 @@ CF/1F6E: 00 00        BRK $00
 CF/1F70: FC 0E F8     JSR ($F80E,X)
 CF/1F73: 19 F0 10     ORA $10F0,Y
 CF/1F76: E0 20 F0     CPX #$F020
-CF/1F79: 10 F8        BPL $1F73
+CF/1F79: 10 F8        BPL Local_CF1F73
 CF/1F7B: 08           PHP
 CF/1F7C: F8           SED
 CF/1F7D: 08           PHP
 CF/1F7E: F8           SED
-CF/1F7F: 80 00        BRA $1F81
+CF/1F7F: 80 00        BRA Local_CF1F81
 CF/1F81: 01 00        ORA ($00,X)
 CF/1F83: 00 00        BRK $00
 CF/1F85: E0 00 32     CPX #$3200
@@ -45,7 +45,7 @@ CF/1F9C: 34 2C        BIT $2C,X
 CF/1F9E: 12 1E        ORA ($1E)
 CF/1FA0: 7C 44 38     JMP ($3844,X)
 CF/1FA3: 28           PLP
-CF/1FA4: 10 13        BPL $1FB9
+CF/1FA4: 10 13        BPL Local_CF1FB9
 CF/1FA6: 00 02        BRK $02
 CF/1FA8: 00 01        BRK $01
 CF/1FAA: 00 00        BRK $00
@@ -61,12 +61,12 @@ CF/1FBC: 00 40        BRK $40
 CF/1FBE: 00 C0        BRK $C0
 CF/1FC0: 3F 20 7F 43  AND $437F20,X
 CF/1FC4: FC 8C F0     JSR ($F08C,X)
-CF/1FC7: 90 F8        BCC $1FC1
+CF/1FC7: 90 F8        BCC Local_CF1FC1
 CF/1FC9: 88           DEY
 CF/1FCA: 7C 44 3E     JMP ($3E44,X)
-CF/1FCD: 22 1F 11 F0  JSR $F0111F
+CF/1FCD: 22 1F 11 F0  JSR Routine_F0111F
 CF/1FD1: 18           CLC
-CF/1FD2: 80 8C        BRA $1F60
+CF/1FD2: 80 8C        BRA Local_CF1F60
 CF/1FD4: 00 03        BRK $03
 CF/1FD6: 00 02        BRK $02
 CF/1FD8: 00 04        BRK $04
@@ -82,7 +82,7 @@ CF/1FEA: 07 34        ORA [$34]
 CF/1FEC: 07 44        ORA [$44]
 CF/1FEE: 0F 2E 7D 45  ORA $457D2E
 CF/1FF2: FB           XCE
-CF/1FF3: 82 FB 08     BRL $CF28F1
+CF/1FF3: 82 FB 08     BRL Routine_CF28F1
 CF/1FF6: F3 10        SBC ($10,S),Y
 CF/1FF8: F3 10        SBC ($10,S),Y
 CF/1FFA: E3 00        SBC $00,S
@@ -105,7 +105,7 @@ CF/201C: C0 80 C0     CPY #$C080
 CF/201F: 00 7C        BRK $7C
 CF/2021: 44 7E 42     MVP $7E,$42
 CF/2024: 7E 42 3E     ROR $3E42,X
-CF/2027: 22 3E 22 1F  JSR $1F223E
+CF/2027: 22 3E 22 1F  JSR Routine_1F223E
 CF/202B: 11 0F        ORA ($0F),Y
 CF/202D: 08           PHP
 CF/202E: 07 04        ORA [$04]
@@ -113,9 +113,9 @@ CF/2030: 00 01        BRK $01
 CF/2032: 00 02        BRK $02
 CF/2034: 00 0C        BRK $0C
 CF/2036: 00 38        BRK $38
-CF/2038: 80 C0        BRA $1FFA
+CF/2038: 80 C0        BRA Local_CF1FFA
 CF/203A: 00 80        BRK $80
-CF/203C: 80 80        BRA $1FBE
+CF/203C: 80 80        BRA Local_CF1FBE
 CF/203E: C0 40 0B     CPY #$0B40
 CF/2041: 0D 07 04     ORA $0407
 CF/2044: 07 04        ORA [$04]
@@ -125,8 +125,8 @@ CF/204D: 18           CLC
 CF/204E: E0 20 00     CPX #$0020
 CF/2051: 07 00        ORA [$00]
 CF/2053: 08           PHP
-CF/2054: 80 84        BRA $1FDA
-CF/2056: 80 84        BRA $1FDC
+CF/2054: 80 84        BRA Local_CF1FDA
+CF/2056: 80 84        BRA Local_CF1FDC
 CF/2058: 00 98        BRK $98
 CF/205A: 00 60        BRK $60
 CF/205C: 00 00        BRK $00

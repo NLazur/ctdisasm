@@ -1,9 +1,9 @@
 ; Bank: C0 | Start Address: 3EDE
 Routine_C03EDE:
 C0/3EDE: A9 08        LDA #$08
-C0/3EE0: 80 F6        BRA $3ED8
+C0/3EE0: 80 F6        BRA Local_C03ED8
 C0/3EE2: A9 10        LDA #$10
-C0/3EE4: 80 F2        BRA $3ED8
+C0/3EE4: 80 F2        BRA Local_C03ED8
 C0/3EE6: 9C 3F 1D     STZ $1D3F
 C0/3EE9: 9C 40 1D     STZ $1D40
 C0/3EEC: 9C 92 1D     STZ $1D92

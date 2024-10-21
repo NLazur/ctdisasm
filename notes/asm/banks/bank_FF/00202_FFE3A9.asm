@@ -3,7 +3,7 @@ Routine_FFE3A9:
 FF/E3A9: 3F 00 08 3F  AND $3F0800,X
 FF/E3AD: 42 FD        WDM $FD
 FF/E3AF: 00 C5        BRK $C5
-FF/E3B1: 20 FD 18     JSR $18FD
+FF/E3B1: 20 FD 18     JSR Local_FF18FD
 FF/E3B4: FF 06 3F 3E  SBC $3E3F06,X
 FF/E3B8: FE 00 EE     INC $EE00,X
 FF/E3BB: E4 F8        CPX $F8
@@ -11,9 +11,9 @@ FF/E3BD: FA           PLX
 FF/E3BE: FA           PLX
 FF/E3BF: E2 00        SEP #$00
 FF/E3C1: C0 00        CPY #$00
-FF/E3C3: 10 3C        BPL $E401
+FF/E3C3: 10 3C        BPL Local_FFE401
 FF/E3C5: 18           CLC
-FF/E3C6: 3C 00 24     BIT $2400,X
+FF/E3C6: 3C 00 24     BIT Local_FF2400,X
 FF/E3C9: 18           CLC
 FF/E3CA: 24 18        BIT $18
 FF/E3CC: 27 1C        AND [$1C]
@@ -24,7 +24,7 @@ FF/E3D5: 00 00        BRK $00
 FF/E3D7: 00 00        BRK $00
 FF/E3D9: 01 01        ORA ($01,X)
 FF/E3DB: 00 7E        BRK $7E
-FF/E3DD: 3C 81 7E     BIT $7E81,X
+FF/E3DD: 3C 81 7E     BIT Local_FF7E81,X
 FF/E3E0: E7 18        SBC [$18]
 FF/E3E2: 34 08        BIT $08,X
 FF/E3E4: FC 00 38     JSR ($3800,X)
@@ -33,7 +33,7 @@ FF/E3E9: 00 E0        BRK $E0
 FF/E3EB: 00 3C        BRK $3C
 FF/E3ED: 7E 18 18     ROR $1818,X
 FF/E3F0: 38           SEC
-FF/E3F1: F0 C0        BEQ $E3B3
+FF/E3F1: F0 C0        BEQ Local_FFE3B3
 FF/E3F3: 00 7D        BRK $7D
 FF/E3F5: 1B           TCS
 FF/E3F6: 7C 77 7B     JMP ($7B77,X)

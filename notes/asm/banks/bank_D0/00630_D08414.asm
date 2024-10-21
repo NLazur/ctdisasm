@@ -13,5 +13,5 @@ D0/842C: 58           CLI
 D0/842D: FC C8 B8     JSR ($B8C8,X)
 D0/8430: E8           INX
 D0/8431: F8           SED
-D0/8432: 90 F0        BCC $8424
+D0/8432: 90 F0        BCC Local_D08424
 D0/8434: 60           RTS

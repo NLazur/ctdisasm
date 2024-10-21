@@ -2,7 +2,7 @@
 Routine_CE8754:
 CE/8754: 09 60 00     ORA #$0060
 CE/8757: 02 01        COP $01
-CE/8759: 70 7A        BVS $87D5
+CE/8759: 70 7A        BVS Local_CE87D5
 CE/875B: AD 03 20     LDA $2003
 CE/875E: 0A           ASL
 CE/875F: 0A           ASL
@@ -10,38 +10,38 @@ CE/8760: A8           TAY
 CE/8761: 14 09        TRB $09
 CE/8763: A8           TAY
 CE/8764: 0A           ASL
-CE/8765: 20 28 71     JSR $7128
+CE/8765: 20 28 71     JSR Local_CE7128
 CE/8768: 36 00        ROL $00,X
 CE/876A: 98           TYA
 CE/876B: FC 80 00     JSR ($0080,X)
-CE/876E: 82 87 B8     BRL $CE3FF8
-CE/8771: 82 92 87     BRL $CE0F06
+CE/876E: 82 87 B8     BRL Routine_CE3FF8
+CE/8771: 82 92 87     BRL Routine_CE0F06
 CE/8774: 09 83 27     ORA #$2783
 CE/8777: 83 9F        STA $9F,S
 CE/8779: 87 BE        STA [$BE]
 CE/877B: 87 DB        STA [$DB]
 CE/877D: 87 FA        STA [$FA]
 CE/877F: 87 F3        STA [$F3]
-CE/8781: 82 72 15     BRL $CE9CF6
+CE/8781: 82 72 15     BRL Routine_CE9CF6
 CE/8784: 03 15        ORA $15,S
 CE/8786: 24 02        BIT $02
-CE/8788: 20 08 78     JSR $7808
+CE/8788: 20 08 78     JSR Local_CE7808
 CE/878B: 06 50        ASL $50
 CE/878D: 06 03        ASL $03
 CE/878F: 2E 01 00     ROL $0001
-CE/8792: 20 05 03     JSR $0305
+CE/8792: 20 05 03     JSR Local_CE0305
 CE/8795: 24 03        BIT $03
 CE/8797: 24 02        BIT $02
 CE/8799: 24 24        BIT $24
 CE/879B: 02 06        COP $06
 CE/879D: 03 00        ORA $00,S
 CE/879F: 25 00        AND $00
-CE/87A1: 20 08 0C     JSR $0C08
+CE/87A1: 20 08 0C     JSR Local_CE0C08
 CE/87A4: 1B           TCS
 CE/87A5: 0D 72 03     ORA $0372
 CE/87A8: 73 04        ADC ($04,S),Y
 CE/87AA: 02 00        COP $00
-CE/87AC: 70 78        BVS $8826
+CE/87AC: 70 78        BVS Local_CE8826
 CE/87AE: 04 C0        TSB $C0
 CE/87B0: 0D 1C A0     ORA $A01C
 CE/87B3: 01 C0        ORA ($C0,X)
@@ -50,12 +50,12 @@ CE/87B8: 01 0B        ORA ($0B,X)
 CE/87BA: 12 0D        ORA ($0D)
 CE/87BC: 71 00        ADC ($00),Y
 CE/87BE: 25 00        AND $00
-CE/87C0: 20 08 0C     JSR $0C08
+CE/87C0: 20 08 0C     JSR Local_CE0C08
 CE/87C3: 1B           TCS
 CE/87C4: 0D 72 03     ORA $0372
 CE/87C7: 73 04        ADC ($04,S),Y
 CE/87C9: 02 00        COP $00
-CE/87CB: 70 C0        BVS $878D
+CE/87CB: 70 C0        BVS Local_CE878D
 CE/87CD: 0D 9C E0     ORA $E09C
 CE/87D0: 01 C0        ORA ($C0,X)
 CE/87D2: 0D 98 E0     ORA $E098
@@ -63,12 +63,12 @@ CE/87D5: 01 0B        ORA ($0B,X)
 CE/87D7: 12 0D        ORA ($0D)
 CE/87D9: 71 00        ADC ($00),Y
 CE/87DB: 25 01        AND $01
-CE/87DD: 20 10 0C     JSR $0C10
+CE/87DD: 20 10 0C     JSR Local_CE0C10
 CE/87E0: 1B           TCS
 CE/87E1: 0E 72 03     ASL $0372
 CE/87E4: 73 05        ADC ($05,S),Y
 CE/87E6: 02 00        COP $00
-CE/87E8: 70 78        BVS $8862
+CE/87E8: 70 78        BVS Local_CE8862
 CE/87EA: 04 C0        TSB $C0
 CE/87EC: 0E 1C A0     ASL $A01C
 CE/87EF: 01 C0        ORA ($C0,X)
@@ -77,22 +77,22 @@ CE/87F4: 01 0B        ORA ($0B,X)
 CE/87F6: 12 0E        ORA ($0E)
 CE/87F8: 71 00        ADC ($00),Y
 CE/87FA: 25 01        AND $01
-CE/87FC: 20 10 0C     JSR $0C10
+CE/87FC: 20 10 0C     JSR Local_CE0C10
 CE/87FF: 1B           TCS
 CE/8800: 0E 72 03     ASL $0372
 CE/8803: 73 05        ADC ($05,S),Y
 CE/8805: 02 00        COP $00
-CE/8807: 70 C0        BVS $87C9
+CE/8807: 70 C0        BVS Local_CE87C9
 CE/8809: 0E 9C E0     ASL $E09C
 CE/880C: 01 C0        ORA ($C0,X)
 CE/880E: 0E 98 E0     ASL $E098
 CE/8811: 01 0B        ORA ($0B,X)
 CE/8813: 12 0E        ORA ($0E)
 CE/8815: 71 00        ADC ($00),Y
-CE/8817: 90 80        BCC $8799
-CE/8819: 80 00        BRA $881B
+CE/8817: 90 80        BCC Local_CE8799
+CE/8819: 80 00        BRA Local_CE881B
 CE/881B: 23 88        AND $88,S
-CE/881D: 2C 88 32     BIT $3288
+CE/881D: 2C 88 32     BIT Local_CE3288
 CE/8820: 88           DEY
 CE/8821: F3 82        SBC ($82,S),Y
 CE/8823: 03 15        ORA $15,S

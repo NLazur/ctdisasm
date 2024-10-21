@@ -3,10 +3,10 @@ Routine_C3D2E7:
 C3/D2E7: DB           STP
 C3/D2E8: 42 D7        WDM $D7
 C3/D2EA: 00 31        BRK $31
-C3/D2EC: 30 21        BMI $D30F
+C3/D2EC: 30 21        BMI Local_C3D30F
 C3/D2EE: EC 20 E8     CPX $E820
 C3/D2F1: 14 4A        TRB $4A
-C3/D2F3: 80 21        BRA $D316
+C3/D2F3: 80 21        BRA Local_C3D316
 C3/D2F5: C6 18        DEC $18
 C3/D2F7: 66 09        ROR $09
 C3/D2F9: C3 24        CMP $24,S
@@ -37,7 +37,7 @@ C3/D32F: 37 77        AND [$77],Y
 C3/D331: 1A           INC
 C3/D332: 8D 21 40     STA $4021
 C3/D335: 29 25 EB     AND #$EB25
-C3/D338: 10 C7        BPL $D301
+C3/D338: 10 C7        BPL Local_C3D301
 C3/D33A: 1C 4E 18     TRB $184E
 C3/D33D: 18           CLC
 C3/D33E: 00 5B        BRK $5B
@@ -51,7 +51,7 @@ C3/D34E: 02 20        COP $20
 C3/D350: D8           CLD
 C3/D351: 1F 40 E0 45  ORA $45E040,X
 C3/D355: 72 01        ADC ($01)
-C3/D357: F0 5F        BEQ $D3B8
+C3/D357: F0 5F        BEQ Local_C3D3B8
 C3/D359: 02 22        COP $22
 C3/D35B: 08           PHP
 C3/D35C: 02 C8        COP $C8

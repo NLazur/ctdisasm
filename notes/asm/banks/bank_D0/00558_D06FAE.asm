@@ -5,9 +5,9 @@ D0/6FB2: BF C0 BF C0  LDA $C0BFC0,X
 D0/6FB6: BF C0 E8 18  LDA $18E8C0,X
 D0/6FBA: E8           INX
 D0/6FBB: 18           CLC
-D0/6FBC: D0 30        BNE $6FEE
-D0/6FBE: D0 30        BNE $6FF0
-D0/6FC0: D0 30        BNE $6FF2
+D0/6FBC: D0 30        BNE Local_D06FEE
+D0/6FBE: D0 30        BNE Local_D06FF0
+D0/6FC0: D0 30        BNE Local_D06FF2
 D0/6FC2: D1 31        CMP ($31),Y
 D0/6FC4: D1 31        CMP ($31),Y
 D0/6FC6: D1 31        CMP ($31),Y
@@ -37,6 +37,6 @@ D0/6FF0: 17 18        ORA [$18],Y
 D0/6FF2: 17 18        ORA [$18],Y
 D0/6FF4: 16 19        ASL $19,X
 D0/6FF6: 16 19        ASL $19,X
-D0/6FF8: 80 60        BRA $705A
+D0/6FF8: 80 60        BRA Local_D0705A
 D0/6FFA: A0 60 C0     LDY #$C060
 D0/6FFD: 40           RTI

@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: A6C5
 Routine_FEA6C5:
-FE/A6C5: F0 0C        BEQ $A6D3
+FE/A6C5: F0 0C        BEQ Local_FEA6D3
 FE/A6C7: E3 64        SBC $64,S
 FE/A6C9: 47 00        EOR [$00]
 FE/A6CB: F8           SED

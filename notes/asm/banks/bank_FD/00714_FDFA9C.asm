@@ -31,12 +31,12 @@ FD/FAD5: F6 11        INC $11,X
 FD/FAD7: 24 03        BIT $03
 FD/FAD9: 02 4A        COP $4A
 FD/FADB: 74 F6        STZ $F6,X
-FD/FADD: 30 75        BMI $FB54
+FD/FADD: 30 75        BMI Local_FDFB54
 FD/FADF: 05 08        ORA $08
 FD/FAE1: 00 00        BRK $00
 FD/FAE3: 17 3C        ORA [$3C],Y
 FD/FAE5: 01 07        ORA ($07,X)
-FD/FAE7: 70 79        BVS $FB62
+FD/FAE7: 70 79        BVS Local_FDFB62
 FD/FAE9: F6 11        INC $11,X
 FD/FAEB: 11 03        ORA ($03),Y
 FD/FAED: 08           PHP
@@ -53,7 +53,7 @@ FD/FB02: 08           PHP
 FD/FB03: 00 00        BRK $00
 FD/FB05: 00 00        BRK $00
 FD/FB07: 00 00        BRK $00
-FD/FB09: 20 2A 04     JSR $042A
+FD/FB09: 20 2A 04     JSR Local_FD042A
 FD/FB0C: 08           PHP
 FD/FB0D: 00 00        BRK $00
 FD/FB0F: 00 00        BRK $00
@@ -86,13 +86,13 @@ FD/FB46: 07 03        ORA [$03]
 FD/FB48: 06 30        ASL $30
 FD/FB4A: 17 03        ORA [$03],Y
 FD/FB4C: 08           PHP
-FD/FB4D: 20 1D 02     JSR $021D
+FD/FB4D: 20 1D 02     JSR Local_FD021D
 FD/FB50: 08           PHP
 FD/FB51: 00 00        BRK $00
 FD/FB53: 00 00        BRK $00
 FD/FB55: 00 00        BRK $00
 FD/FB57: 8F 27 04 10  STA $100427
-FD/FB5B: 80 75        BRA $FBD2
+FD/FB5B: 80 75        BRA Local_FDFBD2
 FD/FB5D: F6 00        INC $00,X
 FD/FB5F: 00 00        BRK $00
 FD/FB61: 01 02        ORA ($02,X)
@@ -105,7 +105,7 @@ FD/FB6D: 01 00        ORA ($00,X)
 FD/FB6F: 00 00        BRK $00
 FD/FB71: 00 00        BRK $00
 FD/FB73: 8F 21 0A 10  STA $100A21
-FD/FB77: B0 75        BCS $FBEE
+FD/FB77: B0 75        BCS Local_FDFBEE
 FD/FB79: F6 00        INC $00,X
 FD/FB7B: 00 00        BRK $00
 FD/FB7D: 01 02        ORA ($02,X)
@@ -120,7 +120,7 @@ FD/FB8D: 00 00        BRK $00
 FD/FB8F: 8B           PHB
 FD/FB90: 38           SEC
 FD/FB91: 04 08        TSB $08
-FD/FB93: 80 75        BRA $FC0A
+FD/FB93: 80 75        BRA Local_FDFC0A
 FD/FB95: F6 00        INC $00,X
 FD/FB97: 01 02        ORA ($02,X)
 FD/FB99: 03 04        ORA $04,S
@@ -147,26 +147,26 @@ FD/FBC0: 03 04        ORA $04,S
 FD/FBC2: 03 02        ORA $02,S
 FD/FBC4: 01 00        ORA ($00,X)
 FD/FBC6: 00 00        BRK $00
-FD/FBC8: 20 71 07     JSR $0771
+FD/FBC8: 20 71 07     JSR Local_FD0771
 FD/FBCB: 08           PHP
 FD/FBCC: 11 79        ORA ($79),Y
 FD/FBCE: 04 06        TSB $06
-FD/FBD0: 80 73        BRA $FC45
+FD/FBD0: 80 73        BRA Local_FDFC45
 FD/FBD2: F6 12        INC $12,X
 FD/FBD4: 15 02        ORA $02,X
 FD/FBD6: 08           PHP
-FD/FBD7: 5C 78 F6 20  JMP $20F678
+FD/FBD7: 5C 78 F6 20  JMP Routine_20F678
 FD/FBDB: 11 02        ORA ($02),Y
 FD/FBDD: 08           PHP
-FD/FBDE: 20 5D 02     JSR $025D
+FD/FBDE: 20 5D 02     JSR Local_FD025D
 FD/FBE1: 0A           ASL
-FD/FBE2: 20 41 07     JSR $0741
+FD/FBE2: 20 41 07     JSR Local_FD0741
 FD/FBE5: 08           PHP
 FD/FBE6: 00 00        BRK $00
 FD/FBE8: 00 00        BRK $00
 FD/FBEA: 00 00        BRK $00
 FD/FBEC: 8F 69 01 0E  STA $0E0169
-FD/FBF0: 82 7A F6     BRL $FDF26D
+FD/FBF0: 82 7A F6     BRL Routine_FDF26D
 FD/FBF3: 00 01        BRK $01
 FD/FBF5: 02 03        COP $03
 FD/FBF7: 04 05        TSB $05
@@ -199,11 +199,11 @@ FD/FC2E: 02 01        COP $01
 FD/FC30: 00 20        BRK $20
 FD/FC32: 15 02        ORA $02,X
 FD/FC34: 08           PHP
-FD/FC35: 20 41 07     JSR $0741
+FD/FC35: 20 41 07     JSR Local_FD0741
 FD/FC38: 08           PHP
-FD/FC39: 20 5D 02     JSR $025D
+FD/FC39: 20 5D 02     JSR Local_FD025D
 FD/FC3C: 0A           ASL
-FD/FC3D: 20 71 07     JSR $0771
+FD/FC3D: 20 71 07     JSR Local_FD0771
 FD/FC40: 08           PHP
 FD/FC41: 11 11        ORA ($11),Y
 FD/FC43: 03 08        ORA $08,S
@@ -215,12 +215,12 @@ FD/FC4B: 08           PHP
 FD/FC4C: F6 78        INC $78,X
 FD/FC4E: F6 00        INC $00,X
 FD/FC50: 00 00        BRK $00
-FD/FC52: 30 6B        BMI $FCBF
+FD/FC52: 30 6B        BMI Local_FDFCBF
 FD/FC54: 04 02        TSB $02
 FD/FC56: 8B           PHB
 FD/FC57: 3B           TSC
 FD/FC58: 04 08        TSB $08
-FD/FC5A: 90 74        BCC $FCD0
+FD/FC5A: 90 74        BCC Local_FDFCD0
 FD/FC5C: F6 00        INC $00,X
 FD/FC5E: 00 01        BRK $01
 FD/FC60: 02 03        COP $03
@@ -252,7 +252,7 @@ FD/FC90: 04 03        TSB $03
 FD/FC92: 02 01        COP $01
 FD/FC94: 87 5B        STA [$5B]
 FD/FC96: 04 16        TSB $16
-FD/FC98: 10 77        BPL $FD11
+FD/FC98: 10 77        BPL Local_FDFD11
 FD/FC9A: F6 00        INC $00,X
 FD/FC9C: 01 02        ORA ($02,X)
 FD/FC9E: 03 04        ORA $04,S

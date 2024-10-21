@@ -6,8 +6,8 @@ FE/CD92: 00 6F        BRK $6F
 FE/CD94: 4F 08 6F 00  EOR $006F08
 FE/CD98: 6D 6E 6D     ADC $6D6E
 FE/CD9B: 6F 37 59 34  ADC $345937
-FE/CD9F: 10 05        BPL $CDA6
-FE/CDA1: 50 1C        BVC $CDBF
+FE/CD9F: 10 05        BPL Local_FECDA6
+FE/CDA1: 50 1C        BVC Local_FECDBF
 FE/CDA3: 35 2B        AND $2B,X
 FE/CDA5: 15 16        ORA $16,X
 FE/CDA7: 18           CLC
@@ -19,7 +19,7 @@ FE/CDAF: 1A           INC
 FE/CDB0: 16 18        ASL $18,X
 FE/CDB2: 37 1B        AND [$1B],Y
 FE/CDB4: 00 5A        BRK $5A
-FE/CDB6: 20 50 1B     JSR $1B50
+FE/CDB6: 20 50 1B     JSR Local_FE1B50
 FE/CDB9: 1A           INC
 FE/CDBA: 16 59        ASL $59,X
 FE/CDBC: 37 00        AND [$00],Y

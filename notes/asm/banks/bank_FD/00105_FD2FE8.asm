@@ -6,7 +6,7 @@ FD/2FED: 08           PHP
 FD/2FEE: 51 08        EOR ($08),Y
 FD/2FF0: 52 08        EOR ($08)
 FD/2FF2: 53 08        EOR ($08,S),Y
-FD/2FF4: 80 54        BRA $304A
+FD/2FF4: 80 54        BRA Local_FD304A
 FD/2FF6: 08           PHP
 FD/2FF7: 55 08        EOR $08,X
 FD/2FF9: 56 08        LSR $08,X

@@ -3,7 +3,7 @@ Routine_C204FB:
 C2/04FB: 85 01        STA $01
 C2/04FD: 86 0A        STX $0A
 C2/04FF: A2 63 0F     LDX #$0F63
-C2/0502: 20 CD 04     JSR $04CD
+C2/0502: 20 CD 04     JSR Local_C204CD
 C2/0505: C2 20        REP #$20
 C2/0507: 8A           TXA
 C2/0508: 38           SEC

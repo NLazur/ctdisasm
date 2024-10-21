@@ -1,11 +1,11 @@
 ; Bank: D1 | Start Address: 9673
 Routine_D19673:
-D1/9673: 80 70        BRA $96E5
+D1/9673: 80 70        BRA Local_D196E5
 D1/9675: 03 8A        ORA $8A,S
 D1/9677: 41 80        EOR ($80,X)
-D1/9679: 70 00        BVS $967B
+D1/9679: 70 00        BVS Local_D1967B
 D1/967B: 95 0F        STA $0F,X
-D1/967D: B0 41        BCS $96C0
+D1/967D: B0 41        BCS Local_D196C0
 D1/967F: A0 04        LDY #$04
 D1/9681: CB           WAI
 D1/9682: 8B           PHB

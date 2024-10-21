@@ -18,7 +18,7 @@ FE/100A: 0B           PHD
 FE/100B: 02 07        COP $07
 FE/100D: C7 01        CMP [$01]
 FE/100F: 36 F8        ROL $F8,X
-FE/1011: 3C 51 7A     BIT $7A51,X
+FE/1011: 3C 51 7A     BIT Local_FE7A51,X
 FE/1014: 06 02        ASL $02
 FE/1016: 16 9F        ASL $9F,X
 FE/1018: 07 06        ORA [$06]

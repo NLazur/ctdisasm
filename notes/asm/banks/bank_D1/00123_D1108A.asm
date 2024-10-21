@@ -20,7 +20,7 @@ D1/10A9: 00 C0        BRK $C0
 D1/10AB: 01 02        ORA ($02,X)
 D1/10AD: 41 02        EOR ($02,X)
 D1/10AF: 81 02        STA ($02,X)
-D1/10B1: 82 00 40     BRL $D150B4
+D1/10B1: 82 00 40     BRL Routine_D150B4
 D1/10B4: 5B           TCD
 D1/10B5: 00 00        BRK $00
 D1/10B7: 11 80        ORA ($80),Y
@@ -32,6 +32,6 @@ D1/10C3: 6E 0C 10     ROR $100C
 D1/10C6: 44 12 10     MVP $12,$10
 D1/10C9: 46 18        LSR $18
 D1/10CB: 00 00        BRK $00
-D1/10CD: 22 C0 C0 CC  JSR $CCC0C0
+D1/10CD: 22 C0 C0 CC  JSR Routine_CCC0C0
 D1/10D1: 00 CC        BRK $CC
 D1/10D3: 40           RTI

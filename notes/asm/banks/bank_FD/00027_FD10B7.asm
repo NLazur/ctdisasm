@@ -1,20 +1,20 @@
 ; Bank: FD | Start Address: 10B7
 Routine_FD10B7:
 FD/10B7: DC 60 DE     JMP [$DE60]
-FD/10BA: 90 9C        BCC $1058
-FD/10BC: 30 02        BMI $10C0
+FD/10BA: 90 9C        BCC Local_FD1058
+FD/10BC: 30 02        BMI Local_FD10C0
 FD/10BE: 51 60        EOR ($60),Y
 FD/10C0: 41 12        EOR ($12,X)
 FD/10C2: 00 6C        BRK $6C
-FD/10C4: B0 E0        BCS $10A6
-FD/10C6: 50 04        BVC $10CC
+FD/10C4: B0 E0        BCS Local_FD10A6
+FD/10C6: 50 04        BVC Local_FD10CC
 FD/10C8: ED 00 0F     SBC $0F00
 FD/10CB: 00 01        BRK $01
 FD/10CD: 3A           DEC
 FD/10CE: 05 2E        ORA $2E
 FD/10D0: 17 1D        ORA [$1D],Y
 FD/10D2: 03 12        ORA $12,S
-FD/10D4: 10 0F        BPL $10E5
+FD/10D4: 10 0F        BPL Local_FD10E5
 FD/10D6: 1F 06 00 EC  ORA $EC0006,X
 FD/10DA: 00 06        BRK $06
 FD/10DC: 01 07        ORA ($07,X)

@@ -26,7 +26,7 @@ C3/C321: 34 84        BIT $84,X
 C3/C323: 9F 7B 43 F4  STA $F4437B,X
 C3/C327: 05 7F        ORA $7F
 C3/C329: 29 01        AND #$01
-C3/C32B: F0 01        BEQ $C32E
+C3/C32B: F0 01        BEQ Local_C3C32E
 C3/C32D: D5 5E        CMP $5E,X
 C3/C32F: 32 1E        AND ($1E)
 C3/C331: 5E 42 1E     LSR $1E42,X
@@ -47,7 +47,7 @@ C3/C34F: 05 05        ORA $05
 C3/C351: DD 03 00     CMP $0003,X
 C3/C354: 07 19        ORA [$19]
 C3/C356: 52 13        EOR ($13)
-C3/C358: 90 02        BCC $C35C
+C3/C358: 90 02        BCC Local_C3C35C
 C3/C35A: 88           DEY
 C3/C35B: 13 00        ORA ($00,S),Y
 C3/C35D: 91 02        STA ($02),Y
@@ -64,7 +64,7 @@ C3/C370: 05 13        ORA $13
 C3/C372: A0 02        LDY #$02
 C3/C374: 01 10        ORA ($10,X)
 C3/C376: 7E 02 00     ROR $0002,X
-C3/C379: 10 8F        BPL $C30A
+C3/C379: 10 8F        BPL Local_C3C30A
 C3/C37B: 02 09        COP $09
 C3/C37D: 97 09        STA [$09],Y
 C3/C37F: 7F 09 12 B0  ADC $B01209,X
@@ -75,7 +75,7 @@ C3/C38C: 01 3E        ORA ($3E,X)
 C3/C38E: 00 02        BRK $02
 C3/C390: 28           PLP
 C3/C391: 02 38        COP $38
-C3/C393: 22 05 D8 10  JSR $10D805
+C3/C393: 22 05 D8 10  JSR Routine_10D805
 C3/C397: 03 07        ORA $07,S
 C3/C399: 08           PHP
 C3/C39A: 52 F6        EOR ($F6)
@@ -84,7 +84,7 @@ C3/C39E: FF FF 14 32  SBC $3214FF,X
 C3/C3A2: 28           PLP
 C3/C3A3: 53 04        EOR ($04,S),Y
 C3/C3A5: 01 0C        ORA ($0C,X)
-C3/C3A7: 10 00        BPL $C3A9
+C3/C3A7: 10 00        BPL Local_C3C3A9
 C3/C3A9: 00 32        BRK $32
 C3/C3AB: 00 90        BRK $90
 C3/C3AD: 52 2C        EOR ($2C)
@@ -92,17 +92,17 @@ C3/C3AF: F8           SED
 C3/C3B0: 03 C0        ORA $C0,S
 C3/C3B2: 01 02        ORA ($02,X)
 C3/C3B4: 0A           ASL
-C3/C3B5: B0 CA        BCS $C381
+C3/C3B5: B0 CA        BCS Local_C3C381
 C3/C3B7: 04 1C        TSB $1C
 C3/C3B9: 24 70        BIT $70
 C3/C3BB: 31 28        AND ($28),Y
-C3/C3BD: 30 1E        BMI $C3DD
+C3/C3BD: 30 1E        BMI Local_C3C3DD
 C3/C3BF: 01 26        ORA ($26,X)
-C3/C3C1: 70 31        BVS $C3F4
-C3/C3C3: 90 30        BCC $C3F5
+C3/C3C1: 70 31        BVS Local_C3C3F4
+C3/C3C3: 90 30        BCC Local_C3C3F5
 C3/C3C5: 1B           TCS
 C3/C3C6: 39 3C 30     AND $303C,Y
-C3/C3C9: 80 1A        BRA $C3E5
+C3/C3C9: 80 1A        BRA Local_C3C3E5
 C3/C3CB: 0D 18 80     ORA $8018
 C3/C3CE: 0D 19 01     ORA $0119
 C3/C3D1: 40           RTI

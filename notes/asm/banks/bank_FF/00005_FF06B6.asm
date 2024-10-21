@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: 06B6
 Routine_FF06B6:
 FF/06B6: E8           INX
-FF/06B7: 70 F4        BVS $06AD
+FF/06B7: 70 F4        BVS Local_FF06AD
 FF/06B9: 3B           TSC
 FF/06BA: FB           XCE
 FF/06BB: 0C FF 1C     TSB $1CFF

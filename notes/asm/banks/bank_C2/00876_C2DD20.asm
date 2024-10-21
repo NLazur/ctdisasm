@@ -14,6 +14,6 @@ C2/DD33: 0A           ASL
 C2/DD34: A8           TAY
 C2/DD35: B9 00 6E     LDA $6E00,Y
 C2/DD38: 8D 44 10     STA $1044
-C2/DD3B: 20 56 DD     JSR $DD56
+C2/DD3B: 20 56 DD     JSR Local_C2DD56
 C2/DD3E: 28           PLP
 C2/DD3F: 60           RTS

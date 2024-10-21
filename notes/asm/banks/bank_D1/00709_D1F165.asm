@@ -29,7 +29,7 @@ D1/F1A6: C8           INY
 D1/F1A7: C8           INY
 D1/F1A8: C8           INY
 D1/F1A9: C8           INY
-D1/F1AA: D0 B9        BNE $F165
+D1/F1AA: D0 B9        BNE Local_D1F165
 D1/F1AC: 2B           PLD
 D1/F1AD: C2 10        REP #$10
 D1/F1AF: 6B           RTL

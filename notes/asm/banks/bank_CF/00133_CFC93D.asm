@@ -3,12 +3,12 @@ Routine_CFC93D:
 CF/C93D: 33 6D        AND ($6D,S),Y
 CF/C93F: 33 6F        AND ($6F,S),Y
 CF/C941: 33 1C        AND ($1C,S),Y
-CF/C943: 20 71 33     JSR $3371
+CF/C943: 20 71 33     JSR Local_CF3371
 CF/C946: 73 33        ADC ($33,S),Y
 CF/C948: 75 33        ADC $33,X
 CF/C94A: 77 33        ADC [$33],Y
 CF/C94C: 79 33 1C     ADC $1C33,Y
-CF/C94F: 20 1C 20     JSR $201C
+CF/C94F: 20 1C 20     JSR Local_CF201C
 CF/C952: 7B           TDC
 CF/C953: 33 7D        AND ($7D,S),Y
 CF/C955: 33 7F        AND ($7F,S),Y
@@ -24,7 +24,7 @@ CF/C968: 1C 20 89     TRB $8920
 CF/C96B: 33 8B        AND ($8B,S),Y
 CF/C96D: 33 8D        AND ($8D,S),Y
 CF/C96F: 33 1C        AND ($1C,S),Y
-CF/C971: 20 8F 33     JSR $338F
+CF/C971: 20 8F 33     JSR Local_CF338F
 CF/C974: 91 33        STA ($33),Y
 CF/C976: 93 33        STA ($33,S),Y
 CF/C978: 53 F3        EOR ($F3,S),Y
@@ -47,7 +47,7 @@ CF/C999: 23 27        AND $27,S
 CF/C99B: 23 29        AND $29,S
 CF/C99D: 23 2B        AND $2B,S
 CF/C99F: 23 1C        AND $1C,S
-CF/C9A1: 20 B0 13     JSR $13B0
+CF/C9A1: 20 B0 13     JSR Local_CF13B0
 CF/C9A4: B3 13        LDA ($13,S),Y
 CF/C9A6: B6 13        LDX $13,Y
 CF/C9A8: 1C 20 B9     TRB $B920
@@ -66,7 +66,7 @@ CF/C9C1: 13 CB        ORA ($CB,S),Y
 CF/C9C3: 13 CE        ORA ($CE,S),Y
 CF/C9C5: 13 D1        ORA ($D1,S),Y
 CF/C9C7: 13 1C        ORA ($1C,S),Y
-CF/C9C9: 20 D4 13     JSR $13D4
+CF/C9C9: 20 D4 13     JSR Local_CF13D4
 CF/C9CC: D7 13        CMP [$13],Y
 CF/C9CE: DA           PHX
 CF/C9CF: 13 DD        ORA ($DD,S),Y
@@ -82,7 +82,7 @@ CF/C9E1: 13 E6        ORA ($E6,S),Y
 CF/C9E3: 13 E9        ORA ($E9,S),Y
 CF/C9E5: 13 EC        ORA ($EC,S),Y
 CF/C9E7: 13 1C        ORA ($1C,S),Y
-CF/C9E9: 20 EF 13     JSR $13EF
+CF/C9E9: 20 EF 13     JSR Local_CF13EF
 CF/C9EC: F2 13        SBC ($13)
 CF/C9EE: F5 13        SBC $13,X
 CF/C9F0: 1C 20 F8     TRB $F820

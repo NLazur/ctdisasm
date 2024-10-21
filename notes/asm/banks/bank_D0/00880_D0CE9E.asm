@@ -22,7 +22,7 @@ D0/CED0: 05 0D        ORA $0D
 D0/CED2: 07 0B        ORA [$0B]
 D0/CED4: 18           CLC
 D0/CED5: 1B           TCS
-D0/CED6: 10 00        BPL $CED8
+D0/CED6: 10 00        BPL Local_D0CED8
 D0/CED8: 00 00        BRK $00
 D0/CEDA: 01 01        ORA ($01,X)
 D0/CEDC: 00 01        BRK $01
@@ -34,5 +34,5 @@ D0/CEE8: 00 00        BRK $00
 D0/CEEA: 00 00        BRK $00
 D0/CEEC: 00 00        BRK $00
 D0/CEEE: 00 00        BRK $00
-D0/CEF0: 80 80        BRA $CE72
+D0/CEF0: 80 80        BRA Local_D0CE72
 D0/CEF2: 40           RTI

@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 8CCA
 Routine_D08CCA:
-D0/8CCA: B0 10        BCS $8CDC
-D0/8CCC: D0 D0        BNE $8C9E
+D0/8CCA: B0 10        BCS Local_D08CDC
+D0/8CCC: D0 D0        BNE Local_D08C9E
 D0/8CCE: 48           PHA
 D0/8CCF: 48           PHA
 D0/8CD0: 00 00        BRK $00
@@ -16,7 +16,7 @@ D0/8CE2: 2F 38 4F 78  AND $784F38
 D0/8CE6: 7F 40 03 07  ADC $070340,X
 D0/8CEA: 0F 1F 3B 38  ORA $383B1F
 D0/8CEE: 78           SEI
-D0/8CEF: 70 00        BVS $8CF1
+D0/8CEF: 70 00        BVS Local_D08CF1
 D0/8CF1: 00 C0        BRK $C0
 D0/8CF3: C0 B0 B0     CPY #$B0B0
 D0/8CF6: 48           PHA
@@ -27,18 +27,18 @@ D0/8CFB: 76 9E        ROR $9E,X
 D0/8CFD: 72 8E        ADC ($8E)
 D0/8CFF: 7A           PLY
 D0/8D00: 00 C0        BRK $C0
-D0/8D02: F0 F8        BEQ $8CFC
-D0/8D04: 4C 76 72     JMP $7276
+D0/8D02: F0 F8        BEQ Local_D08CFC
+D0/8D04: 4C 76 72     JMP Local_D07276
 D0/8D07: 7A           PLY
 D0/8D08: E0 60 C0     CPX #$C060
 D0/8D0B: C0 C0 C0     CPY #$C0C0
-D0/8D0E: 80 80        BRA $8C90
-D0/8D10: 80 80        BRA $8C92
-D0/8D12: 80 80        BRA $8C94
+D0/8D0E: 80 80        BRA Local_D08C90
+D0/8D10: 80 80        BRA Local_D08C92
+D0/8D12: 80 80        BRA Local_D08C94
 D0/8D14: E0 E0 F0     CPX #$F0E0
-D0/8D17: F0 60        BEQ $8D79
+D0/8D17: F0 60        BEQ Local_D08D79
 D0/8D19: C0 C0 80     CPY #$80C0
-D0/8D1C: 80 80        BRA $8C9E
+D0/8D1C: 80 80        BRA Local_D08C9E
 D0/8D1E: E0 F0 1E     CPX #$1EF0
 D0/8D21: 11 0E        ORA ($0E),Y
 D0/8D23: 09 0F 08     ORA #$080F
@@ -76,13 +76,13 @@ D0/8D69: C3 BF        CMP $BF,S
 D0/8D6B: FC EF 90     JSR ($90EF,X)
 D0/8D6E: 77 88        ADC [$88],Y
 D0/8D70: 78           SEI
-D0/8D71: 80 78        BRA $8DEB
+D0/8D71: 80 78        BRA Local_D08DEB
 D0/8D73: 83 78        STA $78,S
 D0/8D75: 83 7C        STA $7C,S
-D0/8D77: 80 C3        BRA $8D3C
+D0/8D77: 80 C3        BRA Local_D08D3C
 D0/8D79: FC F0 F8     JSR ($F8F0,X)
 D0/8D7C: FF FC FC FF  SBC $FFFCFC,X
 D0/8D80: F8           SED
 D0/8D81: 87 FF        STA [$FF]
-D0/8D83: 80 FF        BRA $8D84
+D0/8D83: 80 FF        BRA Local_D08D84
 D0/8D85: 60           RTS

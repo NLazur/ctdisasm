@@ -14,14 +14,14 @@ C3/4BAE: 00 48        BRK $48
 C3/4BB0: 64 20        STZ $20
 C3/4BB2: AA           TAX
 C3/4BB3: 68           PLA
-C3/4BB4: 20 08 1E     JSR $1E08
-C3/4BB7: 70 FA        BVS $4BB3
+C3/4BB4: 20 08 1E     JSR Local_C31E08
+C3/4BB7: 70 FA        BVS Local_C34BB3
 C3/4BB9: 5D 0D F4     EOR $F40D,X
 C3/4BBC: E4 00        CPX $00
 C3/4BBE: AB           PLB
 C3/4BBF: 00 B5        BRK $B5
 C3/4BC1: 5E D5 5F     LSR $5FD5,X
-C3/4BC4: D0 10        BNE $4BD6
+C3/4BC4: D0 10        BNE Local_C34BD6
 C3/4BC6: B5 65        LDA $65,X
 C3/4BC8: 00 D5        BRK $D5
 C3/4BCA: 66 D0        ROR $D0

@@ -7,8 +7,8 @@ D1/1BE9: 06 18        ASL $18
 D1/1BEB: 5A           PHY
 D1/1BEC: 08           PHP
 D1/1BED: 5E 08 CE     LSR $CE08,X
-D1/1BF0: 80 EC        BRA $1BDE
-D1/1BF2: 80 EE        BRA $1BE2
+D1/1BF0: 80 EC        BRA Local_D11BDE
+D1/1BF2: 80 EE        BRA Local_D11BE2
 D1/1BF4: 00 80        BRK $80
 D1/1BF6: CC 80 CC     CPY $CC80
 D1/1BF9: 00 EE        BRK $EE

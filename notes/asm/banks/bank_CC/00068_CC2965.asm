@@ -1,11 +1,11 @@
 ; Bank: CC | Start Address: 2965
 Routine_CC2965:
-CC/2965: 20 10 08     JSR $0810
+CC/2965: 20 10 08     JSR Local_CC0810
 CC/2968: 04 02        TSB $02
 CC/296A: C0 A0 90     CPY #$90A0
 CC/296D: 88           DEY
 CC/296E: 84 60        STY $60
-CC/2970: 50 48        BVC $29BA
+CC/2970: 50 48        BVC Local_CC29BA
 CC/2972: 44 30 24     MVP $30,$24
 CC/2975: 18           CLC
 CC/2976: 14 0C        TRB $0C
@@ -55,8 +55,8 @@ CC/29E2: 02 02        COP $02
 CC/29E4: 05 40        ORA $40
 CC/29E6: 03 10        ORA $10,S
 CC/29E8: 0A           ASL
-CC/29E9: 80 06        BRA $29F1
+CC/29E9: 80 06        BRA Local_CC29F1
 CC/29EB: 04 06        TSB $06
 CC/29ED: 02 0A        COP $0A
-CC/29EF: 80 04        BRA $29F5
+CC/29EF: 80 04        BRA Local_CC29F5
 CC/29F1: 40           RTI

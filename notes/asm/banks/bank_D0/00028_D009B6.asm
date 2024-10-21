@@ -36,7 +36,7 @@ D0/0A0D: 00 03        BRK $03
 D0/0A0F: 03 00        ORA $00,S
 D0/0A11: 04 00        TSB $00
 D0/0A13: 09 12        ORA #$12
-D0/0A15: 10 10        BPL $0A27
+D0/0A15: 10 10        BPL Local_D00A27
 D0/0A17: 14 00        TRB $00
 D0/0A19: 03 0C        ORA $0C,S
 D0/0A1B: 0C 10 10     TSB $1010
@@ -44,7 +44,7 @@ D0/0A1E: 21 22        AND ($22,X)
 D0/0A20: 44 4C 48     MVP $4C,$48
 D0/0A23: 48           PHA
 D0/0A24: 00 90        BRK $90
-D0/0A26: 10 80        BPL $09A8
+D0/0A26: 10 80        BPL Local_D009A8
 D0/0A28: 00 01        BRK $01
 D0/0A2A: 02 02        COP $02
 D0/0A2C: 02 02        COP $02
@@ -61,6 +61,6 @@ D0/0A3E: 08           PHP
 D0/0A3F: 08           PHP
 D0/0A40: 00 00        BRK $00
 D0/0A42: 0C 0C 00     TSB $000C
-D0/0A45: 10 00        BPL $0A47
-D0/0A47: 20 00 40     JSR $4000
+D0/0A45: 10 00        BPL Local_D00A47
+D0/0A47: 20 00 40     JSR Local_D04000
 D0/0A4A: 40           RTI

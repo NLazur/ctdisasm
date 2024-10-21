@@ -1,15 +1,15 @@
 ; Bank: CD | Start Address: 3F9E
 Routine_CD3F9E:
 CD/3F9E: CA           DEX
-CD/3F9F: 80 06        BRA $3FA7
+CD/3F9F: 80 06        BRA Local_CD3FA7
 CD/3FA1: 8D 2C CA     STA $CA2C
 CD/3FA4: EE 30 CA     INC $CA30
 CD/3FA7: 7B           TDC
 CD/3FA8: E2 20        SEP #$20
 CD/3FAA: EE 26 CA     INC $CA26
-CD/3FAD: 20 BB 3E     JSR $3EBB
+CD/3FAD: 20 BB 3E     JSR Local_CD3EBB
 CD/3FB0: AD 26 CA     LDA $CA26
-CD/3FB3: D0 F8        BNE $3FAD
+CD/3FB3: D0 F8        BNE Local_CD3FAD
 CD/3FB5: C2 20        REP #$20
 CD/3FB7: AD 27 CA     LDA $CA27
 CD/3FBA: 18           CLC
@@ -26,7 +26,7 @@ CD/3FD2: 8D 2E CA     STA $CA2E
 CD/3FD5: 7B           TDC
 CD/3FD6: E2 20        SEP #$20
 CD/3FD8: AD 30 CA     LDA $CA30
-CD/3FDB: D0 03        BNE $3FE0
-CD/3FDD: 4C 3E 3F     JMP $3F3E
+CD/3FDB: D0 03        BNE Local_CD3FE0
+CD/3FDD: 4C 3E 3F     JMP Local_CD3F3E
 CD/3FE0: 9C 11 CE     STZ $CE11
 CD/3FE3: 60           RTS

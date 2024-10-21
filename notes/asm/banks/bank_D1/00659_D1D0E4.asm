@@ -4,14 +4,14 @@ D1/D0E4: 1B           TCS
 D1/D0E5: 00 D8        BRK $D8
 D1/D0E7: 00 F0        BRK $F0
 D1/D0E9: 2B           PLD
-D1/D0EA: 2C 33 34     BIT $3433
+D1/D0EA: 2C 33 34     BIT Local_D13433
 D1/D0ED: 2B           PLD
-D1/D0EE: 2C 2B 2C     BIT $2C2B
+D1/D0EE: 2C 2B 2C     BIT Local_D12C2B
 D1/D0F1: 33 34        AND ($34,S),Y
 D1/D0F3: 29 2A        AND #$2A
 D1/D0F5: 33 34        AND ($34,S),Y
 D1/D0F7: 2B           PLD
-D1/D0F8: 2C 29 2A     BIT $2A29
+D1/D0F8: 2C 29 2A     BIT Local_D12A29
 D1/D0FB: 31 32        AND ($32),Y
 D1/D0FD: 33 34        AND ($34,S),Y
 D1/D0FF: 29 2A        AND #$2A
@@ -19,7 +19,7 @@ D1/D101: 31 32        AND ($32),Y
 D1/D103: 29 2A        AND #$2A
 D1/D105: 31 32        AND ($32),Y
 D1/D107: 2B           PLD
-D1/D108: 2C 31 32     BIT $3231
+D1/D108: 2C 31 32     BIT Local_D13231
 D1/D10B: 33 34        AND ($34,S),Y
 D1/D10D: 29 2A        AND #$2A
 D1/D10F: 01 00        ORA ($00,X)
@@ -40,15 +40,15 @@ D1/D12B: 1B           TCS
 D1/D12C: 00 18        BRK $18
 D1/D12E: 00 30        BRK $30
 D1/D130: 2B           PLD
-D1/D131: 2C 2B 2C     BIT $2C2B
+D1/D131: 2C 2B 2C     BIT Local_D12C2B
 D1/D134: 33 34        AND ($34,S),Y
 D1/D136: 2B           PLD
-D1/D137: 2C 33 34     BIT $3433
+D1/D137: 2C 33 34     BIT Local_D13433
 D1/D13A: 2B           PLD
-D1/D13B: 2C 33 34     BIT $3433
+D1/D13B: 2C 33 34     BIT Local_D13433
 D1/D13E: 33 34        AND ($34,S),Y
 D1/D140: 2B           PLD
-D1/D141: 2C 00 FF     BIT $FF00
+D1/D141: 2C 00 FF     BIT Local_D1FF00
 D1/D144: FF FF FF FF  SBC $FFFFFF,X
 D1/D148: FF FF FF FF  SBC $FFFFFF,X
 D1/D14C: FF FF FF FF  SBC $FFFFFF,X
@@ -198,7 +198,7 @@ D1/D266: 00 00        BRK $00
 D1/D268: 00 00        BRK $00
 D1/D26A: 00 00        BRK $00
 D1/D26C: 00 0D        BRK $0D
-D1/D26E: 90 C8        BCC $D238
+D1/D26E: 90 C8        BCC Local_D1D238
 D1/D270: 01 40        ORA ($40,X)
 D1/D272: 00 40        BRK $40
 D1/D274: 00 C0        BRK $C0
@@ -215,9 +215,9 @@ D1/D288: 00 00        BRK $00
 D1/D28A: 00 00        BRK $00
 D1/D28C: 00 00        BRK $00
 D1/D28E: 00 08        BRK $08
-D1/D290: 10 00        BPL $D292
+D1/D290: 10 00        BPL Local_D1D292
 D1/D292: 01 4D        ORA ($4D,X)
-D1/D294: D0 88        BNE $D21E
+D1/D294: D0 88        BNE Local_D1D21E
 D1/D296: 01 60        ORA ($60,X)
 D1/D298: 00 60        BRK $60
 D1/D29A: 00 60        BRK $60
@@ -237,7 +237,7 @@ D1/D2B4: 00 18        BRK $18
 D1/D2B6: 19 20 21     ORA $2120,Y
 D1/D2B9: 28           PLP
 D1/D2BA: 29 30        AND #$30
-D1/D2BC: 4C 41 40     JMP $4041
+D1/D2BC: 4C 41 40     JMP Local_D14041
 D1/D2BF: 0D 90 C8     ORA $C890
 D1/D2C2: 01 30        ORA ($30,X)
 D1/D2C4: 00 30        BRK $30
@@ -257,7 +257,7 @@ D1/D2DE: 00 00        BRK $00
 D1/D2E0: 00 18        BRK $18
 D1/D2E2: 19 20 21     ORA $2120,Y
 D1/D2E5: 73 72        ADC ($72,S),Y
-D1/D2E7: 2C 2D 2E     BIT $2E2D
+D1/D2E7: 2C 2D 2E     BIT Local_D12E2D
 D1/D2EA: 2F 34 35 36  AND $363534
 D1/D2EE: 59 58 61     EOR $6158,Y
 D1/D2F1: 60           RTS

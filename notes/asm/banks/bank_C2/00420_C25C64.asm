@@ -1,20 +1,20 @@
 ; Bank: C2 | Start Address: 5C64
 Routine_C25C64:
-C2/5C64: 5C 70 5C 75  JMP $755C70
-C2/5C68: 5C 64 30 A9  JMP $A93064
-C2/5C6C: 10 85        BPL $5BF3
+C2/5C64: 5C 70 5C 75  JMP Routine_755C70
+C2/5C68: 5C 64 30 A9  JMP Routine_A93064
+C2/5C6C: 10 85        BPL Local_C25BF3
 C2/5C6E: 15 60        ORA $60,X
 C2/5C70: 64 30        STZ $30
-C2/5C72: 4C B2 58     JMP $58B2
-C2/5C75: 80 C7        BRA $5C3E
+C2/5C72: 4C B2 58     JMP Local_C258B2
+C2/5C75: 80 C7        BRA Local_C25C3E
 C2/5C77: A7 37        LDA [$37]
 C2/5C79: C2 20        REP #$20
 C2/5C7B: E6 37        INC $37
 C2/5C7D: E2 20        SEP #$20
 C2/5C7F: C9 01        CMP #$01
-C2/5C81: F0 04        BEQ $5C87
+C2/5C81: F0 04        BEQ Local_C25C87
 C2/5C83: C9 02        CMP #$02
-C2/5C85: D0 07        BNE $5C8E
+C2/5C85: D0 07        BNE Local_C25C8E
 C2/5C87: EB           XBA
 C2/5C88: A7 37        LDA [$37]
 C2/5C8A: C2 20        REP #$20
@@ -22,13 +22,13 @@ C2/5C8C: E6 37        INC $37
 C2/5C8E: C2 20        REP #$20
 C2/5C90: 85 35        STA $35
 C2/5C92: E2 20        SEP #$20
-C2/5C94: 20 C4 5D     JSR $5DC4
+C2/5C94: 20 C4 5D     JSR Local_C25DC4
 C2/5C97: A9 00        LDA #$00
 C2/5C99: C6 3A        DEC $3A
-C2/5C9B: F0 02        BEQ $5C9F
+C2/5C9B: F0 02        BEQ Local_C25C9F
 C2/5C9D: 09 01        ORA #$01
 C2/5C9F: C6 13        DEC $13
-C2/5CA1: F0 02        BEQ $5CA5
+C2/5CA1: F0 02        BEQ Local_C25CA5
 C2/5CA3: 09 02        ORA #$02
 C2/5CA5: 0A           ASL
 C2/5CA6: AA           TAX
@@ -36,12 +36,12 @@ C2/5CA7: 7C AA 5C     JMP ($5CAA,X)
 C2/5CAA: B2 5C        LDA ($5C)
 C2/5CAC: B4 5C        LDY $5C,X
 C2/5CAE: B9 5C BE     LDA $BE5C,Y
-C2/5CB1: 5C 64 30 A9  JMP $A93064
-C2/5CB5: 10 85        BPL $5C3C
+C2/5CB1: 5C 64 30 A9  JMP Routine_A93064
+C2/5CB5: 10 85        BPL Local_C25C3C
 C2/5CB7: 15 60        ORA $60,X
 C2/5CB9: 64 30        STZ $30
-C2/5CBB: 4C B2 58     JMP $58B2
-C2/5CBE: 80 B7        BRA $5C77
+C2/5CBB: 4C B2 58     JMP Local_C258B2
+C2/5CBE: 80 B7        BRA Local_C25C77
 C2/5CC0: C2 20        REP #$20
 C2/5CC2: A5 60        LDA $60
 C2/5CC4: 29 F0 00     AND #$00F0
@@ -52,12 +52,12 @@ C2/5CCA: AA           TAX
 C2/5CCB: BF 03 5D C2  LDA $C25D03,X
 C2/5CCF: A6 6A        LDX $6A
 C2/5CD1: C9 00 01     CMP #$0100
-C2/5CD4: 90 09        BCC $5CDF
+C2/5CD4: 90 09        BCC Local_C25CDF
 C2/5CD6: EB           XBA
 C2/5CD7: 95 40        STA $40,X
 C2/5CD9: E6 6A        INC $6A
 C2/5CDB: E6 6A        INC $6A
-C2/5CDD: 80 04        BRA $5CE3
+C2/5CDD: 80 04        BRA Local_C25CE3
 C2/5CDF: 95 40        STA $40,X
 C2/5CE1: E6 6A        INC $6A
 C2/5CE3: A5 60        LDA $60
@@ -67,12 +67,12 @@ C2/5CE9: AA           TAX
 C2/5CEA: BF 03 5D C2  LDA $C25D03,X
 C2/5CEE: A6 6A        LDX $6A
 C2/5CF0: C9 00 01     CMP #$0100
-C2/5CF3: 90 09        BCC $5CFE
+C2/5CF3: 90 09        BCC Local_C25CFE
 C2/5CF5: EB           XBA
 C2/5CF6: 95 40        STA $40,X
 C2/5CF8: E6 6A        INC $6A
 C2/5CFA: E6 6A        INC $6A
-C2/5CFC: 80 04        BRA $5D02
+C2/5CFC: 80 04        BRA Local_C25D02
 C2/5CFE: 95 40        STA $40,X
 C2/5D00: E6 6A        INC $6A
 C2/5D02: 60           RTS

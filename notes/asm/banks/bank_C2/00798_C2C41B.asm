@@ -3,7 +3,7 @@ Routine_C2C41B:
 C2/C41B: CA           DEX
 C2/C41C: 2E D6 31     ROL $31D6
 C2/C41F: CA           DEX
-C2/C420: 30 CA        BMI $C3EC
+C2/C420: 30 CA        BMI Local_C2C3EC
 C2/C422: 2F D6 30 D6  AND $D630D6
 C2/C426: 2E D6 2F     ROL $2FD6
 C2/C429: CA           DEX

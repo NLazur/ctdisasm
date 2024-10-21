@@ -2,7 +2,7 @@
 Routine_C79631:
 C7/9631: CB           WAI
 C7/9632: C4 03        CPY $03
-C7/9634: 80 22        BRA $9658
+C7/9634: 80 22        BRA Local_C79658
 C7/9636: 11 1D        ORA ($1D),Y
 C7/9638: C0 21 12     CPY #$1221
 C7/963B: 1E EF 84     ASL $84EF,X

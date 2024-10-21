@@ -16,28 +16,28 @@ C2/AB83: 64 00        STZ $00
 C2/AB85: E2 30        SEP #$30
 C2/AB87: A2 00        LDX #$00
 C2/AB89: BD 00 24     LDA $2400,X
-C2/AB8C: F0 15        BEQ $ABA3
+C2/AB8C: F0 15        BEQ Local_C2ABA3
 C2/AB8E: A8           TAY
 C2/AB8F: 99 90 98     STA $9890,Y
 C2/AB92: 18           CLC
 C2/AB93: BD 00 25     LDA $2500,X
 C2/AB96: 79 90 99     ADC $9990,Y
 C2/AB99: C9 64        CMP #$64
-C2/AB9B: 90 02        BCC $AB9F
+C2/AB9B: 90 02        BCC Local_C2AB9F
 C2/AB9D: A9 63        LDA #$63
 C2/AB9F: 99 90 99     STA $9990,Y
 C2/ABA2: C8           INY
 C2/ABA3: E8           INX
-C2/ABA4: D0 E3        BNE $AB89
+C2/ABA4: D0 E3        BNE Local_C2AB89
 C2/ABA6: A0 00        LDY #$00
 C2/ABA8: A2 00        LDX #$00
-C2/ABAA: 20 E9 AB     JSR $ABE9
+C2/ABAA: 20 E9 AB     JSR Local_C2ABE9
 C2/ABAD: A2 00        LDX #$00
 C2/ABAF: BD 90 98     LDA $9890,X
-C2/ABB2: F0 15        BEQ $ABC9
+C2/ABB2: F0 15        BEQ Local_C2ABC9
 C2/ABB4: BD 00 77     LDA $7700,X
 C2/ABB7: 29 08        AND #$08
-C2/ABB9: F0 0E        BEQ $ABC9
+C2/ABB9: F0 0E        BEQ Local_C2ABC9
 C2/ABBB: 8A           TXA
 C2/ABBC: 99 00 24     STA $2400,Y
 C2/ABBF: 9E 90 98     STZ $9890,X
@@ -46,18 +46,18 @@ C2/ABC5: 99 00 25     STA $2500,Y
 C2/ABC8: C8           INY
 C2/ABC9: E8           INX
 C2/ABCA: E0 F2        CPX #$F2
-C2/ABCC: 90 E1        BCC $ABAF
+C2/ABCC: 90 E1        BCC Local_C2ABAF
 C2/ABCE: A2 01        LDX #$01
-C2/ABD0: 20 E9 AB     JSR $ABE9
+C2/ABD0: 20 E9 AB     JSR Local_C2ABE9
 C2/ABD3: E8           INX
 C2/ABD4: E0 05        CPX #$05
-C2/ABD6: 90 F8        BCC $ABD0
+C2/ABD6: 90 F8        BCC Local_C2ABD0
 C2/ABD8: C0 00        CPY #$00
-C2/ABDA: F0 0B        BEQ $ABE7
+C2/ABDA: F0 0B        BEQ Local_C2ABE7
 C2/ABDC: A9 00        LDA #$00
 C2/ABDE: 99 00 24     STA $2400,Y
 C2/ABE1: 99 00 25     STA $2500,Y
 C2/ABE4: C8           INY
-C2/ABE5: D0 F7        BNE $ABDE
+C2/ABE5: D0 F7        BNE Local_C2ABDE
 C2/ABE7: 28           PLP
 C2/ABE8: 60           RTS

@@ -32,7 +32,7 @@ C6/7522: 02 29        COP $29
 C6/7524: 5F 20 19 19  EOR $191920,X
 C6/7528: 1B           TCS
 C6/7529: 19 0B 1A     ORA $1A0B,Y
-C6/752C: 80 23        BRA $7551
+C6/752C: 80 23        BRA Local_C67551
 C6/752E: 23 EA        AND $EA,S
 C6/7530: DF EB 77 79  CMP $7977EB,X
 C6/7534: 38           SEC
@@ -42,13 +42,13 @@ C6/753A: 38           SEC
 C6/753B: 62 98 3B     PER $C6B0D6
 C6/753E: 7F E1 03 89  ADC $8903E1,X
 C6/7542: 1A           INC
-C6/7543: 22 3C 25 35  JSR $35253C
+C6/7543: 22 3C 25 35  JSR Routine_35253C
 C6/7547: 04 04        TSB $04
 C6/7549: 34 4F        BIT $4F,X
 C6/754B: 3B           TSC
 C6/754C: 0D F6 05     ORA $05F6
 C6/754F: 87 7C        STA [$7C]
-C6/7551: 30 8A        BMI $74DD
+C6/7551: 30 8A        BMI Local_C674DD
 C6/7553: 9A           TXS
 C6/7554: 72 ED        ADC ($ED)
 C6/7556: C3 00        CMP $00,S
@@ -84,7 +84,7 @@ C6/759B: 71 48        ADC ($48),Y
 C6/759D: 12 34        ORA ($34)
 C6/759F: 3F 48 D8 81  AND $81D848,X
 C6/75A3: 55 1B        EOR $1B,X
-C6/75A5: 82 03 DD     BRL $C652AB
+C6/75A5: 82 03 DD     BRL Routine_C652AB
 C6/75A8: 03 E2        ORA $E2,S
 C6/75AA: 03 E1        ORA $E1,S
 C6/75AC: 03 77        ORA $77,S
@@ -98,7 +98,7 @@ C6/75BC: 38           SEC
 C6/75BD: 21 22        AND ($22,X)
 C6/75BF: 05 E5        ORA $E5
 C6/75C1: 25 08        AND $08
-C6/75C3: 82 11 1C     BRL $C691D7
+C6/75C3: 82 11 1C     BRL Routine_C691D7
 C6/75C6: 0A           ASL
 C6/75C7: 33 34        AND ($34,S),Y
 C6/75C9: 28           PLP
@@ -107,16 +107,16 @@ C6/75CC: 23 24        AND $24,S
 C6/75CE: 34 34        BIT $34,X
 C6/75D0: AD 05 F7     LDA $F705
 C6/75D3: 12 5E        ORA ($5E)
-C6/75D5: 80 03        BRA $75DA
+C6/75D5: 80 03        BRA Local_C675DA
 C6/75D7: 33 1F        AND ($1F,S),Y
 C6/75D9: 94 0F        STY $0F,X
 C6/75DB: 38           SEC
 C6/75DC: 21 87        AND ($87,X)
 C6/75DE: 89 FC F9     BIT #$F9FC
-C6/75E1: 70 FD        BVS $75E0
+C6/75E1: 70 FD        BVS Local_C675E0
 C6/75E3: 87 88        STA [$88]
 C6/75E5: 23 BE        AND $BE,S
-C6/75E7: 10 66        BPL $764F
+C6/75E7: 10 66        BPL Local_C6764F
 C6/75E9: 62 C3 0C     PER $C682AF
 C6/75EC: 31 3A        AND ($3A),Y
 C6/75EE: 32 5A        AND ($5A)
@@ -216,7 +216,7 @@ C6/76C0: 4B           PHK
 C6/76C1: 5F D3 0D F1  EOR $F10DD3,X
 C6/76C5: 3A           DEC
 C6/76C6: 07 4F        ORA [$4F]
-C6/76C8: 4C 4D 40     JMP $404D
+C6/76C8: 4C 4D 40     JMP Local_C6404D
 C6/76CB: 07 0C        ORA [$0C]
 C6/76CD: 0A           ASL
 C6/76CE: A3 7C        LDA $7C,S

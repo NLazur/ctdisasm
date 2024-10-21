@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 82D0
 Routine_D082D0:
-D0/82D0: 80 80        BRA $8252
+D0/82D0: 80 80        BRA Local_D08252
 D0/82D2: 00 00        BRK $00
 D0/82D4: 00 00        BRK $00
 D0/82D6: 00 00        BRK $00
@@ -33,14 +33,14 @@ D0/8310: 00 00        BRK $00
 D0/8312: DC DC FF     JMP [$FFDC]
 D0/8315: FF 43 FF E1  SBC $E1FF43,X
 D0/8319: E1 B0        SBC ($B0,X)
-D0/831B: F0 50        BEQ $836D
-D0/831D: 70 50        BVS $836F
-D0/831F: 70 30        BVS $8351
-D0/8321: 30 10        BMI $8333
-D0/8323: 10 1C        BPL $8341
+D0/831B: F0 50        BEQ Local_D0836D
+D0/831D: 70 50        BVS Local_D0836F
+D0/831F: 70 30        BVS Local_D08351
+D0/8321: 30 10        BMI Local_D08333
+D0/8323: 10 1C        BPL Local_D08341
 D0/8325: 1C 0C 0C     TRB $0C0C
 D0/8328: C0 C0 80     CPY #$80C0
-D0/832B: 80 00        BRA $832D
+D0/832B: 80 00        BRA Local_D0832D
 D0/832D: 00 00        BRK $00
 D0/832F: 00 00        BRK $00
 D0/8331: 00 1E        BRK $1E

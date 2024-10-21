@@ -33,7 +33,7 @@ FD/E477: E6 18        INC $18
 FD/E479: E8           INX
 FD/E47A: E8           INX
 FD/E47B: 88           DEY
-FD/E47C: D0 F1        BNE $E46F
+FD/E47C: D0 F1        BNE Local_FDE46F
 FD/E47E: E2 20        SEP #$20
 FD/E480: A9 00        LDA #$00
 FD/E482: EB           XBA

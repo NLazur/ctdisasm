@@ -1,6 +1,6 @@
 ; Bank: C2 | Start Address: 7A0C
 Routine_C27A0C:
-C2/7A0C: 20 36 23     JSR $2336
+C2/7A0C: 20 36 23     JSR Local_C22336
 C2/7A0F: C2 20        REP #$20
 C2/7A11: A6 4E        LDX $4E
 C2/7A13: 29 FF 00     AND #$00FF
@@ -8,7 +8,7 @@ C2/7A16: 18           CLC
 C2/7A17: 69 20 02     ADC #$0220
 C2/7A1A: 9D 14 00     STA $0014,X
 C2/7A1D: E2 20        SEP #$20
-C2/7A1F: 20 36 23     JSR $2336
+C2/7A1F: 20 36 23     JSR Local_C22336
 C2/7A22: C2 20        REP #$20
 C2/7A24: A6 4E        LDX $4E
 C2/7A26: 29 FF 00     AND #$00FF

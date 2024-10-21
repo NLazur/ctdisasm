@@ -3,7 +3,7 @@ Routine_C761E5:
 C7/61E5: EB           XBA
 C7/61E6: E0 16 9B     CPX #$9B16
 C7/61E9: EB           XBA
-C7/61EA: D0 CF        BNE $61BB
+C7/61EA: D0 CF        BNE Local_C761BB
 C7/61EC: 14 0A        TRB $0A
 C7/61EE: CF 18 E0 15  CMP $15E018
 C7/61F2: 05 EB        ORA $EB

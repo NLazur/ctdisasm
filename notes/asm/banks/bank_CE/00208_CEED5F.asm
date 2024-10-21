@@ -2,7 +2,7 @@
 Routine_CEED5F:
 CE/ED5F: 8A           TXA
 CE/ED60: C9 FF        CMP #$FF
-CE/ED62: D0 16        BNE $ED7A
+CE/ED62: D0 16        BNE Local_CEED7A
 CE/ED64: C2 20        REP #$20
 CE/ED66: A9 FF 00     LDA #$00FF
 CE/ED69: 99 E1 C4     STA $C4E1,Y
@@ -11,12 +11,12 @@ CE/ED6D: C8           INY
 CE/ED6E: C8           INY
 CE/ED6F: C8           INY
 CE/ED70: C0 80 03     CPY #$0380
-CE/ED73: 90 F4        BCC $ED69
+CE/ED73: 90 F4        BCC Local_CEED69
 CE/ED75: 7B           TDC
 CE/ED76: E2 20        SEP #$20
-CE/ED78: 80 25        BRA $ED9F
+CE/ED78: 80 25        BRA Local_CEED9F
 CE/ED7A: C9 00        CMP #$00
-CE/ED7C: D0 15        BNE $ED93
+CE/ED7C: D0 15        BNE Local_CEED93
 CE/ED7E: 99 E1 C4     STA $C4E1,Y
 CE/ED81: 9E E2 C4     STZ $C4E2,X
 CE/ED84: E8           INX

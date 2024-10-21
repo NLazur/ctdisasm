@@ -16,9 +16,9 @@ C6/29DE: 00 DC        BRK $DC
 C6/29E0: 01 00        ORA ($00,X)
 C6/29E2: 01 30        ORA ($30,X)
 C6/29E4: 08           PHP
-C6/29E5: 10 0C        BPL $29F3
+C6/29E5: 10 0C        BPL Local_C629F3
 C6/29E7: 00 01        BRK $01
-C6/29E9: 10 00        BPL $29EB
+C6/29E9: 10 00        BPL Local_C629EB
 C6/29EB: 00 2F        BRK $2F
 C6/29ED: 0D 02 00     ORA $0002
 C6/29F0: 01 20        ORA ($20,X)
@@ -49,7 +49,7 @@ C6/2A25: 00 00        BRK $00
 C6/2A27: 0C 00 96     TSB $9600
 C6/2A2A: 0E 00 40     ASL $4000
 C6/2A2D: 18           CLC
-C6/2A2E: 10 32        BPL $2A62
+C6/2A2E: 10 32        BPL Local_C62A62
 C6/2A30: 01 32        ORA ($32,X)
 C6/2A32: 00 02        BRK $02
 C6/2A34: 32 11        AND ($11)
@@ -106,7 +106,7 @@ C6/2A9E: E3 0D        SBC $0D,S
 C6/2AA0: 0E E4 7A     ASL $7AE4
 C6/2AA3: 00 B2        BRK $B2
 C6/2AA5: 28           PLP
-C6/2AA6: 82 28 20     BRL $C64AD1
+C6/2AA6: 82 28 20     BRL Routine_C64AD1
 C6/2AA9: 32 6C        AND ($6C)
 C6/2AAB: 12 00        ORA ($00)
 C6/2AAD: 6D 12 21     ADC $2112
@@ -149,7 +149,7 @@ C6/2AF6: 2D D9 C4     AND $C4D9
 C6/2AF9: 2D E2 6E     AND $6EE2
 C6/2AFC: 00 CA        BRK $CA
 C6/2AFE: 0D CB E2     ORA $E2CB
-C6/2B01: 10 EC        BPL $2AEF
+C6/2B01: 10 EC        BPL Local_C62AEF
 C6/2B03: 08           PHP
 C6/2B04: 01 74        ORA ($74,X)
 C6/2B06: 28           PLP

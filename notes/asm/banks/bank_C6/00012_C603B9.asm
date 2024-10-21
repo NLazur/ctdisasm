@@ -1,8 +1,8 @@
 ; Bank: C6 | Start Address: 03B9
 Routine_C603B9:
-C6/03B9: D0 00        BNE $03BB
+C6/03B9: D0 00        BNE Local_C603BB
 C6/03BB: 6C 00 24     JMP ($2400)
-C6/03BE: 22 01 18 00  JSR $001801
+C6/03BE: 22 01 18 00  JSR Routine_001801
 C6/03C2: EC 1F EA     CPX $EA1F
 C6/03C5: 1B           TCS
 C6/03C6: E9 13        SBC #$13
@@ -16,7 +16,7 @@ C6/03D6: 04 19        TSB $19
 C6/03D8: 06 0E        ASL $0E
 C6/03DA: 6D 00 10     ADC $1000
 C6/03DD: 00 01        BRK $01
-C6/03DF: 10 01        BPL $03E2
+C6/03DF: 10 01        BPL Local_C603E2
 C6/03E1: 13 00        ORA ($00,S),Y
 C6/03E3: B3 73        LDA ($73,S),Y
 C6/03E5: 97 00        STA [$00],Y
@@ -26,11 +26,11 @@ C6/03EB: 3B           TSC
 C6/03EC: BF 0D 7F 00  LDA $007F0D,X
 C6/03F0: 0A           ASL
 C6/03F1: 9F 60 43 11  STA $114360,X
-C6/03F5: 3C C0 8E     BIT $8EC0,X
+C6/03F5: 3C C0 8E     BIT Local_C68EC0,X
 C6/03F8: 00 70        BRK $70
 C6/03FA: 8C 70 1C     STY $1C70
 C6/03FD: E0 0E        CPX #$0E
-C6/03FF: F0 0B        BEQ $040C
+C6/03FF: F0 0B        BEQ Local_C6040C
 C6/0401: 00 F4        BRK $F4
 C6/0403: 01 FE        ORA ($FE,X)
 C6/0405: 81 7E        STA ($7E,X)
@@ -52,10 +52,10 @@ C6/0423: 45 38        EOR $38
 C6/0425: 41 00        EOR ($00,X)
 C6/0427: 38           SEC
 C6/0428: 4B           PHK
-C6/0429: 30 EE        BMI $0419
+C6/0429: 30 EE        BMI Local_C60419
 C6/042B: 99 EE 99     STA $99EE,Y
 C6/042E: 8F 00 01 4D  STA $4D0100
 C6/0432: A3 CC        LDA $CC,S
-C6/0434: 50 AD        BVC $03E3
+C6/0434: 50 AD        BVC Local_C603E3
 C6/0436: 71 CB        ADC ($CB),Y
 C6/0438: 40           RTI

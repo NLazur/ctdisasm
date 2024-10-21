@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: 175C
 Routine_FD175C:
 FD/175C: 88           DEY
-FD/175D: 70 1B        BVS $177A
+FD/175D: 70 1B        BVS Local_FD177A
 FD/175F: 28           PLP
 FD/1760: AA           TAX
 FD/1761: 08           PHP
@@ -40,7 +40,7 @@ FD/17A5: 01 01        ORA ($01,X)
 FD/17A7: 03 02        ORA $02,S
 FD/17A9: 06 04        ASL $04
 FD/17AB: 11 40        ORA ($40),Y
-FD/17AD: 10 07        BPL $17B6
+FD/17AD: 10 07        BPL Local_FD17B6
 FD/17AF: 04 03        TSB $03
 FD/17B1: 0B           PHD
 FD/17B2: 02 1C        COP $1C
@@ -52,8 +52,8 @@ FD/17BF: 00 7F        BRK $7F
 FD/17C1: 18           CLC
 FD/17C2: FF 38 DF FD  SBC $FDDF38,X
 FD/17C6: FF FF 02 FF  SBC $FF02FF,X
-FD/17CA: 22 01 1F 78  JSR $781F01
-FD/17CE: 3C F0 78     BIT $78F0,X
+FD/17CA: 22 01 1F 78  JSR Routine_781F01
+FD/17CE: 3C F0 78     BIT Local_FD78F0,X
 FD/17D1: E0 00        CPX #$00
 FD/17D3: F8           SED
 FD/17D4: C0 D8 06     CPY #$06D8
@@ -62,7 +62,7 @@ FD/17D9: E5 00        SBC $00
 FD/17DB: 00 F3        BRK $F3
 FD/17DD: 00 F6        BRK $F6
 FD/17DF: 00 FC        BRK $FC
-FD/17E1: 3C FC 32     BIT $32FC,X
+FD/17E1: 3C FC 32     BIT Local_FD32FC,X
 FD/17E4: 00 FE        BRK $FE
 FD/17E6: 37 F9        AND [$F9],Y
 FD/17E8: F9 E1 FB     SBC $FBE1,Y
@@ -70,7 +70,7 @@ FD/17EB: E1 FF        SBC ($FF,X)
 FD/17ED: 00 F3        BRK $F3
 FD/17EF: FE F7 7C     INC $7CF7,X
 FD/17F2: 7F 1C 3F 12  ADC $123F1C,X
-FD/17F6: 10 3F        BPL $1837
+FD/17F6: 10 3F        BPL Local_FD1837
 FD/17F8: 11 3F        ORA ($3F),Y
 FD/17FA: DC 76 03     JMP [$0376]
 FD/17FD: 7C FF 78     JMP ($78FF,X)
@@ -80,7 +80,7 @@ FD/1803: E0 30        CPX #$30
 FD/1805: C0 79 81     CPY #$8179
 FD/1808: FE 2C 03     INC $032C,X
 FD/180B: DF 40 00 03  CMP $030040,X
-FD/180F: 10 FA        BPL $180B
+FD/180F: 10 FA        BPL Local_FD180B
 FD/1811: FD 08 F9     SBC $F908,X
 FD/1814: FE 00 7E     INC $7E00,X
 FD/1817: 7C 0C E8     JMP ($E80C,X)
@@ -88,14 +88,14 @@ FD/181A: 04 E0        TSB $E0
 FD/181C: 04 C8        TSB $C8
 FD/181E: 18           CLC
 FD/181F: 08           PHP
-FD/1820: D0 30        BNE $1852
+FD/1820: D0 30        BNE Local_FD1852
 FD/1822: 97 06        STA [$06],Y
 FD/1824: 99 06 80     STA $8006,Y
-FD/1827: F0 E0        BEQ $1809
-FD/1829: 80 F8        BRA $1823
+FD/1827: F0 E0        BEQ Local_FD1809
+FD/1829: 80 F8        BRA Local_FD1823
 FD/182B: E0 F8        CPX #$F8
 FD/182D: C8           INY
-FD/182E: F0 D0        BEQ $1800
+FD/182E: F0 D0        BEQ Local_FD1800
 FD/1830: C0 B6 29     CPY #$29B6
 FD/1833: 41 B7        EOR ($B7,X)
 FD/1835: 09 A8 00     ORA #$00A8

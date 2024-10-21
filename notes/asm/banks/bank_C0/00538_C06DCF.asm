@@ -3,7 +3,7 @@ Routine_C06DCF:
 C0/6DCF: A6 FE        LDX $FE         ; load map bg3 graphics
 C0/6DD1: BF 02 00 F6  LDA $F60002,X
 C0/6DD5: C9 FF        CMP #$FF
-C0/6DD7: F0 49        BEQ $6E22
+C0/6DD7: F0 49        BEQ Local_C06E22
 C0/6DD9: C2 20        REP #$20
 C0/6DDB: 29 FF 00     AND #$00FF
 C0/6DDE: 85 D9        STA $D9
@@ -21,7 +21,7 @@ C0/6DF7: BF 22 22 F6  LDA $F62222,X
 C0/6DFB: 8D 02 03     STA $0302
 C0/6DFE: A9 7F        LDA #$7F
 C0/6E00: 8D 05 03     STA $0305
-C0/6E03: 22 02 00 C3  JSR $C30002
+C0/6E03: 22 02 00 C3  JSR Routine_C30002
 C0/6E07: A2 00 50     LDX #$5000
 C0/6E0A: 86 48        STX $48         ; DMA $1000 bytes to VRAM at $5000
 C0/6E0C: A2 80 50     LDX #$5080
@@ -32,5 +32,5 @@ C0/6E15: A9 01        LDA #$01
 C0/6E17: 85 4A        STA $4A
 C0/6E19: A2 00 10     LDX #$1000
 C0/6E1C: 86 4E        STX $4E
-C0/6E1E: 20 C8 2D     JSR $2DC8
+C0/6E1E: 20 C8 2D     JSR Local_C02DC8
 C0/6E21: 60           RTS

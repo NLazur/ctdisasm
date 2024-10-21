@@ -6,7 +6,7 @@ D1/2692: C0 C0        CPY #$C0
 D1/2694: C6 00        DEC $00
 D1/2696: C8           INY
 D1/2697: 00 E6        BRK $E6
-D1/2699: 20 00 E8     JSR $E800
+D1/2699: 20 00 E8     JSR Local_D1E800
 D1/269C: 00 FF        BRK $FF
 D1/269E: FF 0D 00 CA  SBC $CA000D,X
 D1/26A2: 00 20        BRK $20
@@ -18,7 +18,7 @@ D1/26AE: E6 C0        INC $C0
 D1/26B0: C8           INY
 D1/26B1: C0 C6        CPY #$C6
 D1/26B3: C0 1A        CPY #$1A
-D1/26B5: 10 EC        BPL $26A3
+D1/26B5: 10 EC        BPL Local_D126A3
 D1/26B7: 47 35        EOR [$35]
 D1/26B9: 00 C0        BRK $C0
 D1/26BB: C0 EA        CPY #$EA
@@ -27,7 +27,7 @@ D1/26BF: C0 CA        CPY #$CA
 D1/26C1: 0D 00 40     ORA $4000
 D1/26C4: 74 00        STZ $00,X
 D1/26C6: 00 12        BRK $12
-D1/26C8: 80 80        BRA $264A
+D1/26C8: 80 80        BRA Local_D1264A
 D1/26CA: C0 00        CPY #$00
 D1/26CC: E0 00        CPX #$00
 D1/26CE: FF 22 FF 09  SBC $09FF22,X

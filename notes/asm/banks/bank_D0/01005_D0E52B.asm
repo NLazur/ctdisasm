@@ -22,6 +22,6 @@ D0/E553: 86 00        STX $00
 D0/E555: CD 85 CD     CMP $CD85
 D0/E558: 84 CD        STY $CD
 D0/E55A: 83 CD        STA $CD,S
-D0/E55C: 82 03 3E     BRL $D02362
+D0/E55C: 82 03 3E     BRL Routine_D02362
 D0/E55F: F8           SED
 D0/E560: 40           RTI

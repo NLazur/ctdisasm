@@ -21,7 +21,7 @@ FF/F58A: 99 00 B0     STA $B000,Y
 FF/F58D: E8           INX
 FF/F58E: C8           INY
 FF/F58F: C6 06        DEC $06
-FF/F591: D0 EB        BNE $F57E
+FF/F591: D0 EB        BNE Local_FFF57E
 FF/F593: C2 20        REP #$20
 FF/F595: 98           TYA
 FF/F596: 18           CLC
@@ -29,13 +29,13 @@ FF/F597: 69 10 00     ADC #$0010
 FF/F59A: A8           TAY
 FF/F59B: E2 20        SEP #$20
 FF/F59D: C6 07        DEC $07
-FF/F59F: D0 D7        BNE $F578
+FF/F59F: D0 D7        BNE Local_FFF578
 FF/F5A1: A5 00        LDA $00
 FF/F5A3: 18           CLC
 FF/F5A4: 69 10        ADC #$10
 FF/F5A6: 85 00        STA $00
 FF/F5A8: C9 A0        CMP #$A0
-FF/F5AA: 90 C8        BCC $F574
+FF/F5AA: 90 C8        BCC Local_FFF574
 FF/F5AC: C2 30        REP #$30
 FF/F5AE: 9C 90 98     STZ $9890
 FF/F5B1: A2 90 98     LDX #$9890
@@ -72,20 +72,20 @@ FF/F5F5: E6 06        INC $06
 FF/F5F7: E8           INX
 FF/F5F8: C8           INY
 FF/F5F9: C6 02        DEC $02
-FF/F5FB: D0 DC        BNE $F5D9
+FF/F5FB: D0 DC        BNE Local_FFF5D9
 FF/F5FD: C2 20        REP #$20
 FF/F5FF: 98           TYA
 FF/F600: 18           CLC
 FF/F601: 69 10 00     ADC #$0010
 FF/F604: A8           TAY
 FF/F605: E0 A0 00     CPX #$00A0
-FF/F608: 90 C5        BCC $F5CF
+FF/F608: 90 C5        BCC Local_FFF5CF
 FF/F60A: A5 00        LDA $00
 FF/F60C: 18           CLC
 FF/F60D: 69 10 00     ADC #$0010
 FF/F610: 85 00        STA $00
 FF/F612: C9 30 00     CMP #$0030
-FF/F615: 90 B6        BCC $F5CD
+FF/F615: 90 B6        BCC Local_FFF5CD
 FF/F617: 9C C0 BD     STZ $BDC0
 FF/F61A: A2 C0 BD     LDX #$BDC0
 FF/F61D: A0 C2 BD     LDY #$BDC2

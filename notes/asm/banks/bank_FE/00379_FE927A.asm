@@ -4,7 +4,7 @@ FE/927A: 00 00        BRK $00
 FE/927C: 7F 0E 7F 0C  ADC $0C7F0E,X
 FE/9280: 15 2F        ORA $2F,X
 FE/9282: 02 04        COP $04
-FE/9284: 20 77 6B     JSR $6B77
+FE/9284: 20 77 6B     JSR Local_FE6B77
 FE/9287: 1D 37 20     ORA $2037,X
 FE/928A: 0A           ASL
 FE/928B: 1D 07 0E     ORA $0E07,X
@@ -24,9 +24,9 @@ FE/92AC: C7 C6        CMP [$C6]
 FE/92AE: 39 F8 07     AND $07F8,Y
 FE/92B1: C4 80        CPY $80
 FE/92B3: 78           SEI
-FE/92B4: D0 37        BNE $92ED
+FE/92B4: D0 37        BNE Local_FE92ED
 FE/92B6: A8           TAY
-FE/92B7: 70 F0        BVS $92A9
+FE/92B7: 70 F0        BVS Local_FE92A9
 FE/92B9: BB           TYX
 FE/92BA: 53 68        EOR ($68,S),Y
 FE/92BC: 37 0C        AND [$0C],Y
@@ -66,7 +66,7 @@ FE/9301: BD 25 0C     LDA $0C25,X
 FE/9304: AB           PLB
 FE/9305: 25 D2        AND $D2
 FE/9307: D3 28        CMP ($28,S),Y
-FE/9309: 2C 2F 90     BIT $902F
+FE/9309: 2C 2F 90     BIT Local_FE902F
 FE/930C: DA           PHX
 FE/930D: 01 81        ORA ($81,X)
 FE/930F: FE 04 07     INC $0704,X
@@ -74,11 +74,11 @@ FE/9312: FC 1C 05     JSR ($051C,X)
 FE/9315: FC 76 13     JSR ($1376,X)
 FE/9318: DA           PHX
 FE/9319: 31 2E        AND ($2E),Y
-FE/931B: 22 03 10 F7  JSR $F71003
+FE/931B: 22 03 10 F7  JSR Routine_F71003
 FE/931F: 01 18        ORA ($18,X)
 FE/9321: 33 C0        AND ($C0,S),Y
 FE/9323: FF 63 3C FF  SBC $FF3C63,X
-FE/9327: 10 DF        BPL $9308
+FE/9327: 10 DF        BPL Local_FE9308
 FE/9329: 02 13        COP $13
 FE/932B: 91 77        STA ($77),Y
 FE/932D: 40           RTI

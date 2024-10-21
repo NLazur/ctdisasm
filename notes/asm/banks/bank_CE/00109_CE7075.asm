@@ -9,7 +9,7 @@ CE/7080: E0 01 72     CPX #$7201
 CE/7083: 15 02        ORA $02,X
 CE/7085: 36 C2        ROL $C2,X
 CE/7087: 03 19        ORA $19,S
-CE/7089: 20 01 72     JSR $7201
+CE/7089: 20 01 72     JSR Local_CE7201
 CE/708C: 16 02        ASL $02,X
 CE/708E: 36 C2        ROL $C2,X
 CE/7090: 03 1A        ORA $1A,S

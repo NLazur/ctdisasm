@@ -14,5 +14,5 @@ D0/2EC1: F8           SED
 D0/2EC2: 17 18        ORA [$18],Y
 D0/2EC4: 0B           PHD
 D0/2EC5: 0C 0B 0C     TSB $0C0B
-D0/2EC8: 80 80        BRA $2E4A
+D0/2EC8: 80 80        BRA Local_D02E4A
 D0/2ECA: 40           RTI

@@ -12,19 +12,19 @@ FE/9D85: D6 0E        DEC $0E,X
 FE/9D87: 88           DEY
 FE/9D88: 45 04        EOR $04
 FE/9D8A: 03 D2        ORA $D2,S
-FE/9D8C: 82 43 78     BRL $FE15D2
+FE/9D8C: 82 43 78     BRL Routine_FE15D2
 FE/9D8F: 12 1E        ORA ($1E)
 FE/9D91: 1F DD 88 E3  ORA $E388DD,X
 FE/9D95: C1 7A        CMP ($7A,X)
 FE/9D97: 0B           PHD
-FE/9D98: 82 8C FF     BRL $FE9D27
+FE/9D98: 82 8C FF     BRL Routine_FE9D27
 FE/9D9B: 47 7D        EOR [$7D]
 FE/9D9D: 49 20        EOR #$20
-FE/9D9F: 10 E2        BPL $9D83
+FE/9D9F: 10 E2        BPL Local_FE9D83
 FE/9DA1: CB           WAI
 FE/9DA2: CB           WAI
 FE/9DA3: 02 0D        COP $0D
 FE/9DA5: 35 20        AND $20,X
-FE/9DA7: 70 EA        BVS $9D93
+FE/9DA7: 70 EA        BVS Local_FE9D93
 FE/9DA9: EF 09 FE 20  SBC $20FE09
 FE/9DAD: 60           RTS

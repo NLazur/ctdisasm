@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 8ECA
 Routine_C68ECA:
-C6/8ECA: 20 21 0F     JSR $0F21
+C6/8ECA: 20 21 0F     JSR Local_C60F21
 C6/8ECD: 25 25        AND $25
 C6/8ECF: C9 01        CMP #$01
 C6/8ED1: 79 17 DB     ADC $DB17,Y

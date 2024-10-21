@@ -10,7 +10,7 @@ C7/86F7: 58           CLI
 C7/86F8: DE ED DE     DEC $DEED,X
 C7/86FB: FD EF EE     SBC $EEEF,X
 C7/86FE: 0D 0E 48     ORA $480E
-C7/8701: 4C D2 FF     JMP $FFD2
+C7/8701: 4C D2 FF     JMP Local_C7FFD2
 C7/8704: 21 11        AND ($11,X)
 C7/8706: 15 06        ORA $06,X
 C7/8708: E6 48        INC $48
@@ -23,7 +23,7 @@ C7/8715: 42 34        WDM $34
 C7/8717: 04 23        TSB $23
 C7/8719: 02 10        COP $10
 C7/871B: 48           PHA
-C7/871C: 10 F1        BPL $870F
+C7/871C: 10 F1        BPL Local_C7870F
 C7/871E: D2 DE        CMP ($DE)
 C7/8720: FB           XCE
 C7/8721: 1B           TCS
@@ -36,8 +36,8 @@ C7/8732: E0 D2 E1     CPX #$E1D2
 C7/8735: 00 58        BRK $58
 C7/8737: 02 02        COP $02
 C7/8739: 01 22        ORA ($22,X)
-C7/873B: 20 40 33     JSR $3340
+C7/873B: 20 40 33     JSR Local_C73340
 C7/873E: 13 58        ORA ($58,S),Y
-C7/8740: 22 23 31 41  JSR $413123
+C7/8740: 22 23 31 41  JSR Routine_413123
 C7/8744: 21 30        AND ($30,X)
 C7/8746: 40           RTI

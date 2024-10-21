@@ -7,6 +7,6 @@ C0/28B2: 9F C8 1C 7F  STA $7F1CC8,X
 C0/28B6: E8           INX
 C0/28B7: E8           INX
 C0/28B8: E0 20 00     CPX #$0020
-C0/28BB: 90 F5        BCC $28B2
+C0/28BB: 90 F5        BCC Local_C028B2
 C0/28BD: E2 20        SEP #$20
 C0/28BF: 60           RTS

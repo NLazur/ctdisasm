@@ -23,8 +23,8 @@ D0/B239: 00 00        BRK $00
 D0/B23B: 00 00        BRK $00
 D0/B23D: 00 00        BRK $00
 D0/B23F: 00 80        BRK $80
-D0/B241: 80 80        BRA $B1C3
-D0/B243: 80 80        BRA $B1C5
+D0/B241: 80 80        BRA Local_D0B1C3
+D0/B243: 80 80        BRA Local_D0B1C5
 D0/B245: 00 00        BRK $00
 D0/B247: 00 01        BRK $01
 D0/B249: FE 80 7F     INC $7F80,X

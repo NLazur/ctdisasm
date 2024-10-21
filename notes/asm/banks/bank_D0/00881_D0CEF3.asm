@@ -10,9 +10,9 @@ D0/CF00: 00 01        BRK $01
 D0/CF02: 01 01        ORA ($01,X)
 D0/CF04: 00 00        BRK $00
 D0/CF06: 00 00        BRK $00
-D0/CF08: 20 E0 40     JSR $40E0
+D0/CF08: 20 E0 40     JSR Local_D040E0
 D0/CF0B: C0 80        CPY #$80
-D0/CF0D: 80 08        BRA $CF17
+D0/CF0D: 80 08        BRA Local_D0CF17
 D0/CF0F: 08           PHP
 D0/CF10: 00 08        BRK $08
 D0/CF12: 2A           ROL
@@ -32,5 +32,5 @@ D0/CF28: 00 00        BRK $00
 D0/CF2A: 00 00        BRK $00
 D0/CF2C: 00 00        BRK $00
 D0/CF2E: 00 10        BRK $10
-D0/CF30: 80 A0        BRA $CED2
+D0/CF30: 80 A0        BRA Local_D0CED2
 D0/CF32: 40           RTI

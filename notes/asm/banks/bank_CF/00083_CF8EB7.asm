@@ -2,9 +2,9 @@
 Routine_CF8EB7:
 CF/8EB7: 29 B8        AND #$B8
 CF/8EB9: 29 04        AND #$04
-CF/8EBB: 20 BA 29     JSR $29BA
+CF/8EBB: 20 BA 29     JSR Local_CF29BA
 CF/8EBE: BC 29 04     LDY $0429,X
-CF/8EC1: 20 04 20     JSR $2004
+CF/8EC1: 20 04 20     JSR Local_CF2004
 CF/8EC4: BE 29 C0     LDX $C029,Y
 CF/8EC7: 29 C2        AND #$C2
 CF/8EC9: 29 C4        AND #$C4
@@ -17,7 +17,7 @@ CF/8ED5: 29 D0        AND #$D0
 CF/8ED7: 29 D2        AND #$D2
 CF/8ED9: 29 42        AND #$42
 CF/8EDB: A4 04        LDY $04
-CF/8EDD: 20 D4 29     JSR $29D4
+CF/8EDD: 20 D4 29     JSR Local_CF29D4
 CF/8EE0: 04 20        TSB $20
 CF/8EE2: D6 29        DEC $29,X
 CF/8EE4: D8           CLD
@@ -51,9 +51,9 @@ CF/8F16: 0A           ASL
 CF/8F17: 2A           ROL
 CF/8F18: 0C 2A 0E     TSB $0E2A
 CF/8F1B: 2A           ROL
-CF/8F1C: 10 2A        BPL $8F48
+CF/8F1C: 10 2A        BPL Local_CF8F48
 CF/8F1E: 1A           INC
-CF/8F1F: 20 F4 A9     JSR $A9F4
+CF/8F1F: 20 F4 A9     JSR Local_CFA9F4
 CF/8F22: F4 E9 D6     PEA $D6E9
 CF/8F25: A9 12        LDA #$12
 CF/8F27: 2A           ROL
@@ -65,7 +65,7 @@ CF/8F2E: 1A           INC
 CF/8F2F: 2A           ROL
 CF/8F30: 1C 2A 1E     TRB $1E2A
 CF/8F33: 2A           ROL
-CF/8F34: 20 2A 22     JSR $222A
+CF/8F34: 20 2A 22     JSR Local_CF222A
 CF/8F37: 2A           ROL
 CF/8F38: 24 2A        BIT $2A
 CF/8F3A: 26 2A        ROL $2A
@@ -75,10 +75,10 @@ CF/8F3F: 2A           ROL
 CF/8F40: 2A           ROL
 CF/8F41: 2A           ROL
 CF/8F42: 1E 26 04     ASL $0426,X
-CF/8F45: 20 2C 2A     JSR $2A2C
+CF/8F45: 20 2C 2A     JSR Local_CF2A2C
 CF/8F48: 2E 2A 04     ROL $042A
-CF/8F4B: 20 04 20     JSR $2004
-CF/8F4E: 30 2A        BMI $8F7A
+CF/8F4B: 20 04 20     JSR Local_CF2004
+CF/8F4E: 30 2A        BMI Local_CF8F7A
 CF/8F50: 32 2A        AND ($2A)
 CF/8F52: 04 20        TSB $20
 CF/8F54: 04 20        TSB $20
@@ -92,6 +92,6 @@ CF/8F62: 38           SEC
 CF/8F63: 2A           ROL
 CF/8F64: 3A           DEC
 CF/8F65: 2A           ROL
-CF/8F66: 3C 2A 3E     BIT $3E2A,X
+CF/8F66: 3C 2A 3E     BIT Local_CF3E2A,X
 CF/8F69: 2A           ROL
 CF/8F6A: 40           RTI

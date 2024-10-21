@@ -5,15 +5,15 @@ D1/7077: 12 01        ORA ($01)
 D1/7079: 91 08        STA ($08),Y
 D1/707B: A2 FF        LDX #$FF
 D1/707D: 01 98        ORA ($98,X)
-D1/707F: 30 95        BMI $7016
+D1/707F: 30 95        BMI Local_D17016
 D1/7081: 0F 8A 50 80  ORA $80508A
-D1/7085: 70 00        BVS $7087
+D1/7085: 70 00        BVS Local_D17087
 D1/7087: 8A           TXA
 D1/7088: 51 80        EOR ($80),Y
-D1/708A: 70 00        BVS $708C
+D1/708A: 70 00        BVS Local_D1708C
 D1/708C: AB           PLB
 D1/708D: 00 AB        BRK $AB
-D1/708F: 80 88        BRA $7019
+D1/708F: 80 88        BRA Local_D17019
 D1/7091: 00 00        BRK $00
 D1/7093: 93 03        STA ($03,S),Y
 D1/7095: 02 04        COP $04
@@ -61,10 +61,10 @@ D1/70E7: DF 82 D7 93  CMP $93D782,X
 D1/70EB: 13 02        ORA ($02,S),Y
 D1/70ED: 04 7F        TSB $7F
 D1/70EF: 9D 17 E7     STA $E717,X
-D1/70F2: 80 00        BRA $70F4
+D1/70F2: 80 00        BRA Local_D170F4
 D1/70F4: A9 1A        LDA #$1A
 D1/70F6: 05 8E        ORA $8E
-D1/70F8: 50 19        BVC $7113
+D1/70F8: 50 19        BVC Local_D17113
 D1/70FA: 03 FF        ORA $FF,S
 D1/70FC: 00 08        BRK $08
 D1/70FE: 12 83        ORA ($83)
@@ -141,7 +141,7 @@ D1/7193: 0A           ASL
 D1/7194: 0E 0A 0F     ASL $0F0A
 D1/7197: 0B           PHD
 D1/7198: 0F 0B 10 0C  ORA $0C100B
-D1/719C: 10 0C        BPL $71AA
+D1/719C: 10 0C        BPL Local_D171AA
 D1/719E: 11 0D        ORA ($0D),Y
 D1/71A0: 11 0D        ORA ($0D),Y
 D1/71A2: 00 0E        BRK $0E
@@ -177,7 +177,7 @@ D1/71DB: 0A           ASL
 D1/71DC: 0E 0A 0F     ASL $0F0A
 D1/71DF: 0B           PHD
 D1/71E0: 0F 0B 10 0C  ORA $0C100B
-D1/71E4: 10 0C        BPL $71F2
+D1/71E4: 10 0C        BPL Local_D171F2
 D1/71E6: 11 0D        ORA ($0D),Y
 D1/71E8: 11 0D        ORA ($0D),Y
 D1/71EA: 17 0E        ORA [$0E],Y
@@ -195,7 +195,7 @@ D1/7200: 03 93        ORA $93,S
 D1/7202: 13 02        ORA ($02,S),Y
 D1/7204: 04 A2        TSB $A2
 D1/7206: 00 80        BRK $80
-D1/7208: 30 00        BMI $720A
+D1/7208: 30 00        BMI Local_D1720A
 D1/720A: A7 00        LDA [$00]
 D1/720C: 00 00        BRK $00
 D1/720E: 00 A4        BRK $A4

@@ -1,6 +1,6 @@
 ; Bank: C2 | Start Address: 7598
 Routine_C27598:
-C2/7598: 20 36 23     JSR $2336
+C2/7598: 20 36 23     JSR Local_C22336
 C2/759B: A4 4E        LDY $4E
 C2/759D: C2 20        REP #$20
 C2/759F: 29 0F 00     AND #$000F

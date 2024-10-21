@@ -6,8 +6,8 @@ C3/08B6: DA           PHX
 C3/08B7: 5A           PHY
 C3/08B8: 0B           PHD
 C3/08B9: 8B           PHB
-C3/08BA: 22 D0 08 C3  JSR $C308D0
-C3/08BE: 20 A4 09     JSR $09A4
+C3/08BA: 22 D0 08 C3  JSR Routine_C308D0
+C3/08BE: 20 A4 09     JSR Local_C309A4
 C3/08C1: C2 30        REP #$30
 C3/08C3: AB           PLB
 C3/08C4: 2B           PLD

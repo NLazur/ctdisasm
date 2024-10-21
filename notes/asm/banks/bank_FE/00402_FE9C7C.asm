@@ -1,13 +1,13 @@
 ; Bank: FE | Start Address: 9C7C
 Routine_FE9C7C:
-FE/9C7C: 90 7E        BCC $9CFC
+FE/9C7C: 90 7E        BCC Local_FE9CFC
 FE/9C7E: 0D C8 2D     ORA $2DC8
 FE/9C81: 68           PLA
 FE/9C82: 01 68        ORA ($68,X)
 FE/9C84: 04 1A        TSB $1A
 FE/9C86: C0 40        CPY #$40
 FE/9C88: CA           DEX
-FE/9C89: 80 0D        BRA $9C98
+FE/9C89: 80 0D        BRA Local_FE9C98
 FE/9C8B: 6C FF 80     JMP ($80FF)
 FE/9C8E: FC 07 0B     JSR ($0B07,X)
 FE/9C91: 07 FB        ORA [$FB]
@@ -19,9 +19,9 @@ FE/9C9E: F7 F7        SBC [$F7],Y
 FE/9CA0: 07 0F        ORA [$0F]
 FE/9CA2: 86 0F        STX $0F
 FE/9CA4: 8C 0D 10     STY $100D
-FE/9CA7: 20 C1 41     JSR $41C1
+FE/9CA7: 20 C1 41     JSR Local_FE41C1
 FE/9CAA: FF A3 D0 09  SBC $09D0A3,X
-FE/9CAE: 80 EA        BRA $9C9A
+FE/9CAE: 80 EA        BRA Local_FE9C9A
 FE/9CB0: FF F9 FF A9  SBC $A9FFF9,X
 FE/9CB4: FF ED A9 0F  SBC $0FA9ED,X
 FE/9CB8: A8           TAY
@@ -29,7 +29,7 @@ FE/9CB9: 5A           PHY
 FE/9CBA: FF AB 4D 08  SBC $084DAB,X
 FE/9CBE: EE 10 00     INC $0010
 FE/9CC1: AB           PLB
-FE/9CC2: 10 40        BPL $9D04
+FE/9CC2: 10 40        BPL Local_FE9D04
 FE/9CC4: 06 F7        ASL $F7
 FE/9CC6: EA           NOP
 FE/9CC7: 09 A4        ORA #$A4
@@ -41,10 +41,10 @@ FE/9CD1: E7 C7        SBC [$C7]
 FE/9CD3: F7 F0        SBC [$F0],Y
 FE/9CD5: F7 B0        SBC [$B0],Y
 FE/9CD7: F7 00        SBC [$00],Y
-FE/9CD9: F0 37        BEQ $9D12
-FE/9CDB: 30 37        BMI $9D14
-FE/9CDD: 30 FF        BMI $9CDE
-FE/9CDF: F0 EB        BEQ $9CCC
+FE/9CD9: F0 37        BEQ Local_FE9D12
+FE/9CDB: 30 37        BMI Local_FE9D14
+FE/9CDD: 30 FF        BMI Local_FE9CDE
+FE/9CDF: F0 EB        BEQ Local_FE9CCC
 FE/9CE1: 00 E0        BRK $E0
 FE/9CE3: DB           STP
 FE/9CE4: C0 B0        CPY #$B0
@@ -52,7 +52,7 @@ FE/9CE6: F3 20        SBC ($20,S),Y
 FE/9CE8: 27 10        AND [$10]
 FE/9CEA: 00 1D        BRK $1D
 FE/9CEC: 04 07        TSB $07
-FE/9CEE: 22 23 50 50  JSR $505023
+FE/9CEE: 22 23 50 50  JSR Routine_505023
 FE/9CF2: 4A           LSR
 FE/9CF3: 00 5A        BRK $5A
 FE/9CF5: AC AC CF     LDY $CFAC
@@ -67,5 +67,5 @@ FE/9D09: 23 FC        AND $FC,S
 FE/9D0B: 00 FD        BRK $FD
 FE/9D0D: C0 00        CPY #$00
 FE/9D0F: FA           PLX
-FE/9D10: 80 FC        BRA $9D0E
+FE/9D10: 80 FC        BRA Local_FE9D0E
 FE/9D12: 40           RTI

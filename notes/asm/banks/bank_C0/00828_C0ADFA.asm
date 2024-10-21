@@ -5,7 +5,7 @@ C0/ADFE: 85 E1        STA $E1
 C0/AE00: BF 40 70 7E  LDA $7E7040,X
 C0/AE04: 85 E5        STA $E5
 C0/AE06: B9 80 0F     LDA $0F80,Y
-C0/AE09: 10 CC        BPL $ADD7
+C0/AE09: 10 CC        BPL Local_C0ADD7
 C0/AE0B: E2 10        SEP #$10
 C0/AE0D: A5 E5        LDA $E5
 C0/AE0F: 29 40        AND #$40
@@ -20,21 +20,21 @@ C0/AE1E: 4A           LSR
 C0/AE1F: 4A           LSR
 C0/AE20: 09 20        ORA #$20
 C0/AE22: 9D 00 0C     STA $0C00,X
-C0/AE25: 80 C4        BRA $ADEB
+C0/AE25: 80 C4        BRA Local_C0ADEB
 C0/AE27: E2 10        SEP #$10
 C0/AE29: E6 F8        INC $F8
 C0/AE2B: A6 F8        LDX $F8
 C0/AE2D: BD 00 FE     LDA $FE00,X
 C0/AE30: 85 EE        STA $EE
 C0/AE32: A6 6D        LDX $6D
-C0/AE34: 82 00 00     BRL $C0AE37
+C0/AE34: 82 00 00     BRL Routine_C0AE37
 C0/AE37: E2 10        SEP #$10
 C0/AE39: BD 00 1A     LDA $1A00,X
 C0/AE3C: 8D 02 42     STA $4202
 C0/AE3F: A6 EE        LDX $EE
 C0/AE41: BD 00 F8     LDA $F800,X
 C0/AE44: E0 80        CPX #$80
-C0/AE46: B0 0E        BCS $AE56
+C0/AE46: B0 0E        BCS Local_C0AE56
 C0/AE48: 8D 03 42     STA $4203
 C0/AE4B: EA           NOP
 C0/AE4C: EA           NOP
@@ -42,7 +42,7 @@ C0/AE4D: EA           NOP
 C0/AE4E: EA           NOP
 C0/AE4F: AD 17 42     LDA $4217
 C0/AE52: 85 DB        STA $DB
-C0/AE54: 80 12        BRA $AE68
+C0/AE54: 80 12        BRA Local_C0AE68
 C0/AE56: 49 FF        EOR #$FF
 C0/AE58: 1A           INC
 C0/AE59: 8D 03 42     STA $4203
@@ -60,7 +60,7 @@ C0/AE6B: 69 40        ADC #$40
 C0/AE6D: AA           TAX
 C0/AE6E: BD 00 F8     LDA $F800,X
 C0/AE71: E0 80        CPX #$80
-C0/AE73: 90 15        BCC $AE8A
+C0/AE73: 90 15        BCC Local_C0AE8A
 C0/AE75: 49 FF        EOR #$FF
 C0/AE77: 1A           INC
 C0/AE78: 8D 03 42     STA $4203
@@ -72,7 +72,7 @@ C0/AE80: AD 17 42     LDA $4217
 C0/AE83: 49 FF        EOR #$FF
 C0/AE85: 1A           INC
 C0/AE86: 85 DD        STA $DD
-C0/AE88: 80 0D        BRA $AE97
+C0/AE88: 80 0D        BRA Local_C0AE97
 C0/AE8A: 8D 03 42     STA $4203
 C0/AE8D: EA           NOP
 C0/AE8E: EA           NOP
@@ -81,20 +81,20 @@ C0/AE90: A6 6D        LDX $6D
 C0/AE92: AD 17 42     LDA $4217
 C0/AE95: 85 DD        STA $DD
 C0/AE97: A5 DD        LDA $DD
-C0/AE99: F0 0C        BEQ $AEA7
-C0/AE9B: 10 06        BPL $AEA3
+C0/AE99: F0 0C        BEQ Local_C0AEA7
+C0/AE9B: 10 06        BPL Local_C0AEA3
 C0/AE9D: A9 FF        LDA #$FF
 C0/AE9F: 85 DE        STA $DE
-C0/AEA1: 80 08        BRA $AEAB
+C0/AEA1: 80 08        BRA Local_C0AEAB
 C0/AEA3: 64 DE        STZ $DE
-C0/AEA5: 80 04        BRA $AEAB
+C0/AEA5: 80 04        BRA Local_C0AEAB
 C0/AEA7: A5 DB        LDA $DB
-C0/AEA9: F0 6D        BEQ $AF18
+C0/AEA9: F0 6D        BEQ Local_C0AF18
 C0/AEAB: A5 DB        LDA $DB
-C0/AEAD: 10 06        BPL $AEB5
+C0/AEAD: 10 06        BPL Local_C0AEB5
 C0/AEAF: A9 FF        LDA #$FF
 C0/AEB1: 85 DC        STA $DC
-C0/AEB3: 80 02        BRA $AEB7
+C0/AEB3: 80 02        BRA Local_C0AEB7
 C0/AEB5: 64 DC        STZ $DC
 C0/AEB7: A6 6D        LDX $6D
 C0/AEB9: C2 20        REP #$20
@@ -115,9 +115,9 @@ C0/AED5: BF 00 70 7E  LDA $7E7000,X
 C0/AED9: 85 E1        STA $E1
 C0/AEDB: BF 40 70 7E  LDA $7E7040,X
 C0/AEDF: 85 E5        STA $E5
-C0/AEE1: 30 44        BMI $AF27
+C0/AEE1: 30 44        BMI Local_C0AF27
 C0/AEE3: B9 80 0F     LDA $0F80,Y
-C0/AEE6: 10 1C        BPL $AF04
+C0/AEE6: 10 1C        BPL Local_C0AF04
 C0/AEE8: E2 10        SEP #$10
 C0/AEEA: A5 E5        LDA $E5
 C0/AEEC: 29 40        AND #$40
@@ -132,7 +132,7 @@ C0/AEFB: 4A           LSR
 C0/AEFC: 4A           LSR
 C0/AEFD: 09 20        ORA #$20
 C0/AEFF: 9D 00 0C     STA $0C00,X
-C0/AF02: 80 14        BRA $AF18
+C0/AF02: 80 14        BRA Local_C0AF18
 C0/AF04: 85 D9        STA $D9
 C0/AF06: A6 6D        LDX $6D
 C0/AF08: 29 30        AND #$30

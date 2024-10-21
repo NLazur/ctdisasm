@@ -1,9 +1,9 @@
 ; Bank: D0 | Start Address: CD22
 Routine_D0CD22:
-D0/CD22: 70 70        BVS $CD94
-D0/CD24: 70 70        BVS $CD96
-D0/CD26: 70 70        BVS $CD98
-D0/CD28: F0 0C        BEQ $CD36
+D0/CD22: 70 70        BVS Local_D0CD94
+D0/CD24: 70 70        BVS Local_D0CD96
+D0/CD26: 70 70        BVS Local_D0CD98
+D0/CD28: F0 0C        BEQ Local_D0CD36
 D0/CD2A: 00 F0        BRK $F0
 D0/CD2C: 00 00        BRK $00
 D0/CD2E: 00 00        BRK $00
@@ -20,9 +20,9 @@ D0/CD45: 1F 5F 20 6E  ORA $6E205F,X
 D0/CD49: 3F 27 7F 5B  AND $5B7F27,X
 D0/CD4D: 27 7D        AND [$7D]
 D0/CD4F: 03 1F        ORA $1F,S
-D0/CD51: 20 1F 00     JSR $001F
+D0/CD51: 20 1F 00     JSR Local_D0001F
 D0/CD54: 00 02        BRK $02
 D0/CD56: 18           CLC
 D0/CD57: 24 C0        BIT $C0
-D0/CD59: 80 E0        BRA $CD3B
+D0/CD59: 80 E0        BRA Local_D0CD3B
 D0/CD5B: 40           RTI

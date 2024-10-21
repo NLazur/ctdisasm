@@ -2,7 +2,7 @@
 Routine_D104B0:
 D1/04B0: 49 00        EOR #$00
 D1/04B2: 00 11        BRK $11
-D1/04B4: 80 C0        BRA $0476
+D1/04B4: 80 C0        BRA Local_D10476
 D1/04B6: 00 FF        BRK $FF
 D1/04B8: FF 11 80 02  SBC $028011,X
 D1/04BC: C2 06        REP #$06

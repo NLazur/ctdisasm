@@ -61,15 +61,15 @@ C7/1DE7: 00 00        BRK $00
 C7/1DE9: 00 00        BRK $00
 C7/1DEB: 00 00        BRK $00
 C7/1DED: 28           PLP
-C7/1DEE: 4C 78 00     JMP $0078
+C7/1DEE: 4C 78 00     JMP Local_C70078
 C7/1DF1: 00 00        BRK $00
 C7/1DF3: 00 00        BRK $00
 C7/1DF5: 00 2A        BRK $2A
-C7/1DF7: 4C 40 29     JMP $2940
+C7/1DF7: 4C 40 29     JMP Local_C72940
 C7/1DFA: 4B           PHK
 C7/1DFB: 78           SEI
 C7/1DFC: 25 43        AND $43
-C7/1DFE: 50 00        BVC $1E00
+C7/1DFE: 50 00        BVC Local_C71E00
 C7/1E00: 00 00        BRK $00
 C7/1E02: 24 48        BIT $48
 C7/1E04: 40           RTI

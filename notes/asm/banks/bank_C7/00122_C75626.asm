@@ -13,7 +13,7 @@ C7/5636: C9 00        CMP #$00
 C7/5638: 01 BF        ORA ($BF,X)
 C7/563A: C8           INY
 C7/563B: 18           CLC
-C7/563C: F0 07        BEQ $5645
+C7/563C: F0 07        BEQ Local_C75645
 C7/563E: C8           INY
 C7/563F: 78           SEI
 C7/5640: 04 A8        TSB $A8

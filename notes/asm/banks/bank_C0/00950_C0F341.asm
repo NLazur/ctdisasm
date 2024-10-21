@@ -16,7 +16,7 @@ C0/F35B: 03 03        ORA $03,S
 C0/F35D: 02 02        COP $02
 C0/F35F: 02 40        COP $40
 C0/F361: 32 28        AND ($28)
-C0/F363: 20 1A 15     JSR $151A
+C0/F363: 20 1A 15     JSR Local_C0151A
 C0/F366: 12 10        ORA ($10)
 C0/F368: 0E 0D 0B     ASL $0B0D
 C0/F36B: 0B           PHD

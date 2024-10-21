@@ -1,12 +1,12 @@
 ; Bank: D1 | Start Address: 3956
 Routine_D13956:
-D1/3956: 70 70        BVS $39C8
-D1/3958: 70 70        BVS $39CA
+D1/3956: 70 70        BVS Local_D139C8
+D1/3958: 70 70        BVS Local_D139CA
 D1/395A: 78           SEI
 D1/395B: 78           SEI
 D1/395C: 38           SEC
 D1/395D: 38           SEC
-D1/395E: 3C 3C 00     BIT $003C,X
+D1/395E: 3C 3C 00     BIT Local_D1003C,X
 D1/3961: 00 00        BRK $00
 D1/3963: 00 00        BRK $00
 D1/3965: 00 00        BRK $00
@@ -67,7 +67,7 @@ D1/39E5: 00 00        BRK $00
 D1/39E7: 00 00        BRK $00
 D1/39E9: 00 00        BRK $00
 D1/39EB: 00 80        BRK $80
-D1/39ED: 80 78        BRA $3A67
+D1/39ED: 80 78        BRA Local_D13A67
 D1/39EF: F8           SED
 D1/39F0: 00 00        BRK $00
 D1/39F2: 00 00        BRK $00
@@ -75,14 +75,14 @@ D1/39F4: 00 00        BRK $00
 D1/39F6: 00 00        BRK $00
 D1/39F8: 00 00        BRK $00
 D1/39FA: 00 00        BRK $00
-D1/39FC: 80 80        BRA $397E
+D1/39FC: 80 80        BRA Local_D1397E
 D1/39FE: F8           SED
 D1/39FF: F8           SED
 D1/3A00: 07 07        ORA [$07]
 D1/3A02: 08           PHP
 D1/3A03: 0F 16 19 1B  ORA $1B1916
 D1/3A07: 17 24        ORA [$24],Y
-D1/3A09: 3C 26 3A     BIT $3A26,X
+D1/3A09: 3C 26 3A     BIT Local_D13A26,X
 D1/3A0C: 12 1E        ORA ($1E)
 D1/3A0E: 0D 0D 07     ORA $070D
 D1/3A11: 07 0F        ORA [$0F]
@@ -102,12 +102,12 @@ D1/3A2D: F8           SED
 D1/3A2E: 08           PHP
 D1/3A2F: F8           SED
 D1/3A30: E0 E0 F0     CPX #$F0E0
-D1/3A33: F0 F8        BEQ $3A2D
+D1/3A33: F0 F8        BEQ Local_D13A2D
 D1/3A35: F8           SED
 D1/3A36: F8           SED
 D1/3A37: F8           SED
-D1/3A38: 3C 3C 3C     BIT $3C3C,X
-D1/3A3B: 3C F8 F8     BIT $F8F8,X
+D1/3A38: 3C 3C 3C     BIT Local_D13C3C,X
+D1/3A3B: 3C F8 F8     BIT Local_D1F8F8,X
 D1/3A3E: F8           SED
 D1/3A3F: F8           SED
 D1/3A40: 00 00        BRK $00
@@ -131,5 +131,5 @@ D1/3A63: 00 00        BRK $00
 D1/3A65: 00 00        BRK $00
 D1/3A67: 00 00        BRK $00
 D1/3A69: 00 00        BRK $00
-D1/3A6B: 80 00        BRA $3A6D
+D1/3A6B: 80 00        BRA Local_D13A6D
 D1/3A6D: 40           RTI

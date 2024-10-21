@@ -1,9 +1,9 @@
 ; Bank: D0 | Start Address: 54A9
 Routine_D054A9:
-D0/54A9: D0 21        BNE $54CC
-D0/54AB: F0 11        BEQ $54BE
-D0/54AD: 70 53        BVS $5502
-D0/54AF: B0 23        BCS $54D4
+D0/54A9: D0 21        BNE Local_D054CC
+D0/54AB: F0 11        BEQ Local_D054BE
+D0/54AD: 70 53        BVS Local_D05502
+D0/54AF: B0 23        BCS Local_D054D4
 D0/54B1: D2 61        CMP ($61)
 D0/54B3: 9A           TXS
 D0/54B4: F1 0E        SBC ($0E),Y

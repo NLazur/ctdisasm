@@ -1,6 +1,6 @@
 ; Bank: FF | Start Address: D5CF
 Routine_FFD5CF:
-FF/D5CF: 10 21        BPL $D5F2
+FF/D5CF: 10 21        BPL Local_FFD5F2
 FF/D5D1: 0C 62 18     TSB $1862
 FF/D5D4: 61 10        ADC ($10,X)
 FF/D5D6: 41 0C        EOR ($0C,X)

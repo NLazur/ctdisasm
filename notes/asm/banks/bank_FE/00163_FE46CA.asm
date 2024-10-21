@@ -3,7 +3,7 @@ Routine_FE46CA:
 FE/46CA: 56 7B        LSR $7B,X
 FE/46CC: A2 00 A8     LDX #$A800
 FE/46CF: 00 19        BRK $19
-FE/46D1: B0 00        BCS $46D3
+FE/46D1: B0 00        BCS Local_FE46D3
 FE/46D3: 8B           PHB
 FE/46D4: B4 00        LDY $00,X
 FE/46D6: 9B           TXY
@@ -123,7 +123,7 @@ FE/47A4: 73 00        ADC ($00,S),Y
 FE/47A6: AB           PLB
 FE/47A7: 7A           PLY
 FE/47A8: 13 31        ORA ($31,S),Y
-FE/47AA: B0 AA        BCS $4756
+FE/47AA: B0 AA        BCS Local_FE4756
 FE/47AC: 37 21        AND [$21],Y
 FE/47AE: 00 00        BRK $00
 FE/47B0: AB           PLB
@@ -132,7 +132,7 @@ FE/47B2: 23 00        AND $00,S
 FE/47B4: BB           TYX
 FE/47B5: AA           TAX
 FE/47B6: 77 10        ADC [$10],Y
-FE/47B8: B0 AA        BCS $4764
+FE/47B8: B0 AA        BCS Local_FE4764
 FE/47BA: AA           TAX
 FE/47BB: 77 A4        ADC [$A4],Y
 FE/47BD: 00 9A        BRK $9A
@@ -250,7 +250,7 @@ FE/4881: 00 00        BRK $00
 FE/4883: AB           PLB
 FE/4884: 28           PLP
 FE/4885: A8           TAY
-FE/4886: B0 8A        BCS $4812
+FE/4886: B0 8A        BCS Local_FE4812
 FE/4888: 12 81        ORA ($81)
 FE/488A: 00 AB        BRK $AB
 FE/488C: 18           CLC
@@ -341,20 +341,20 @@ FE/493C: 0B           PHD
 FE/493D: 33 22        AND ($22,S),Y
 FE/493F: 00 81        BRK $81
 FE/4941: BB           TYX
-FE/4942: B0 8A        BCS $48CE
+FE/4942: B0 8A        BCS Local_FE48CE
 FE/4944: 88           DEY
 FE/4945: 28           PLP
-FE/4946: B0 AB        BCS $48F3
+FE/4946: B0 AB        BCS Local_FE48F3
 FE/4948: 00 AA        BRK $AA
 FE/494A: 28           PLP
 FE/494B: BB           TYX
 FE/494C: AA           TAX
 FE/494D: 8A           TXA
-FE/494E: 22 AB 8A A0  JSR $A08AAB
+FE/494E: 22 AB 8A A0  JSR Routine_A08AAB
 FE/4952: 13 72        ORA ($72,S),Y
 FE/4954: AB           PLB
 FE/4955: 18           CLC
-FE/4956: 22 08 00 88  JSR $880008
+FE/4956: 22 08 00 88  JSR Routine_880008
 FE/495A: 7C 11 02     JMP ($0211,X)
 FE/495D: AA           TAX
 FE/495E: 4B           PHK
@@ -363,7 +363,7 @@ FE/4961: 72 B9        ADC ($B9)
 FE/4963: 37 B9        AND [$B9],Y
 FE/4965: 97 00        STA [$00],Y
 FE/4967: 1B           TCS
-FE/4968: 22 97 B7 21  JSR $21B797
+FE/4968: 22 97 B7 21  JSR Routine_21B797
 FE/496C: 33 77        AND ($77,S),Y
 FE/496E: A9 01 11     LDA #$1101
 FE/4971: 01 73        ORA ($73,X)
@@ -375,7 +375,7 @@ FE/497C: 23 73        AND $73,S
 FE/497E: 7A           PLY
 FE/497F: 88           DEY
 FE/4980: 23 33        AND $33,S
-FE/4982: 10 97        BPL $491B
+FE/4982: 10 97        BPL Local_FE491B
 FE/4984: CB           WAI
 FE/4985: BC CC C2     LDY $C2CC,X
 FE/4988: 00 B8        BRK $B8
@@ -395,7 +395,7 @@ FE/49A5: 11 00        ORA ($00),Y
 FE/49A7: 9C 00 BC     STZ $BC00
 FE/49AA: BC BC 99     LDY $99BC,X
 FE/49AD: BB           TYX
-FE/49AE: 3C BC 82     BIT $82BC,X
+FE/49AE: 3C BC 82     BIT Local_FE82BC,X
 FE/49B1: 00 99        BRK $99
 FE/49B3: C2 BB        REP #$BB
 FE/49B5: A9 AA CC     LDA #$CCAA
@@ -425,10 +425,10 @@ FE/49E5: 88           DEY
 FE/49E6: 88           DEY
 FE/49E7: 99 00 79     STA $7900,Y
 FE/49EA: 87 8A        STA [$8A]
-FE/49EC: 22 88 A8 0B  JSR $0BA888
-FE/49F0: 22 00 A8 BA  JSR $BAA800
+FE/49EC: 22 88 A8 0B  JSR Routine_0BA888
+FE/49F0: 22 00 A8 BA  JSR Routine_BAA800
 FE/49F4: 00 27        BRK $27
-FE/49F6: 82 BA 0B     BRL $FE55B3
+FE/49F6: 82 BA 0B     BRL Routine_FE55B3
 FE/49F9: 79 02 12     ADC $1202,Y
 FE/49FC: 0C 00 22     TSB $2200
 FE/49FF: 81 0A        STA ($0A,X)
@@ -462,7 +462,7 @@ FE/4A2C: B7 06        LDA [$06],Y
 FE/4A2E: BB           TYX
 FE/4A2F: 8C 03 C8     STY $C803
 FE/4A32: 33 00        AND ($00,S),Y
-FE/4A34: B0 99        BCS $49CF
+FE/4A34: B0 99        BCS Local_FE49CF
 FE/4A36: 93 B7        STA ($B7,S),Y
 FE/4A38: 00 BB        BRK $BB
 FE/4A3A: 37 7A        AND [$7A],Y
@@ -492,7 +492,7 @@ FE/4A63: 37 AA        AND [$AA],Y
 FE/4A65: 00 B2        BRK $B2
 FE/4A67: B9 19 BA     LDA $BA19,Y
 FE/4A6A: 27 C9        AND [$C9]
-FE/4A6C: 3C 7A 00     BIT $007A,X
+FE/4A6C: 3C 7A 00     BIT Local_FE007A,X
 FE/4A6F: 19 C7 17     ORA $17C7,Y
 FE/4A72: 77 72        ADC [$72],Y
 FE/4A74: C3 72        CMP $72,S
@@ -521,10 +521,10 @@ FE/4A9D: 00 78        BRK $78
 FE/4A9F: 00 8B        BRK $8B
 FE/4AA1: B3 96        LDA ($96,S),Y
 FE/4AA3: 33 75        AND ($75,S),Y
-FE/4AA5: 50 EC        BVC $4A93
+FE/4AA5: 50 EC        BVC Local_FE4A93
 FE/4AA7: 13 D6        ORA ($D6,S),Y
 FE/4AA9: 53 7B        EOR ($7B,S),Y
-FE/4AAB: D0 BB        BNE $4A68
+FE/4AAB: D0 BB        BNE Local_FE4A68
 FE/4AAD: 79 CB AB     ADC $ABCB,Y
 FE/4AB0: 4D 04 B0     EOR $B004
 FE/4AB3: 24 04        BIT $04
@@ -539,10 +539,10 @@ FE/4AC1: 03 81        ORA $81,S
 FE/4AC3: 04 FF        TSB $FF
 FE/4AC5: 3B           TSC
 FE/4AC6: 03 01        ORA $01,S
-FE/4AC8: F0 01        BEQ $4ACB
+FE/4AC8: F0 01        BEQ Local_FE4ACB
 FE/4ACA: 00 00        BRK $00
 FE/4ACC: 42 00        WDM $00
-FE/4ACE: 80 01        BRA $4AD1
+FE/4ACE: 80 01        BRA Local_FE4AD1
 FE/4AD0: 02 03        COP $03
 FE/4AD2: 04 05        TSB $05
 FE/4AD4: 06 00        ASL $00
@@ -554,7 +554,7 @@ FE/4AE0: 0C 28 F8     TSB $F828
 FE/4AE3: 81 0A        STA ($0A,X)
 FE/4AE5: A8           TAY
 FE/4AE6: 0D 0E 0F     ORA $0F0E
-FE/4AE9: 10 11        BPL $4AFC
+FE/4AE9: 10 11        BPL Local_FE4AFC
 FE/4AEB: 12 28        ORA ($28)
 FE/4AED: F8           SED
 FE/4AEE: 81 0A        STA ($0A,X)

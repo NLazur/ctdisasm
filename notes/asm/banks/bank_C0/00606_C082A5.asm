@@ -12,7 +12,7 @@ C0/82B5: A9 12        LDA #$12
 C0/82B7: 85 5C        STA $5C
 C0/82B9: A5 10        LDA $10
 C0/82BB: 85 5A        STA $5A
-C0/82BD: 20 66 7D     JSR $7D66
+C0/82BD: 20 66 7D     JSR Local_C07D66
 C0/82C0: A9 04        LDA #$04
 C0/82C2: 04 78        TSB $78
 C0/82C4: 60           RTS

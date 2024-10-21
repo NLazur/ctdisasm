@@ -1,7 +1,7 @@
 ; Bank: C1 | Start Address: 1B67
 Routine_C11B67:
 C1/1B67: AD D6 95     LDA $95D6
-C1/1B6A: 30 3D        BMI $1BA9
+C1/1B6A: 30 3D        BMI Local_C11BA9
 C1/1B6C: AA           TAX
 C1/1B6D: 9E 38 9F     STZ $9F38,X
 C1/1B70: BD 63 A8     LDA $A863,X
@@ -22,7 +22,7 @@ C1/1B97: 8D D9 95     STA $95D9
 C1/1B9A: CE DA 95     DEC $95DA
 C1/1B9D: EE DE A6     INC $A6DE
 C1/1BA0: AD DD A6     LDA $A6DD
-C1/1BA3: 10 04        BPL $1BA9
+C1/1BA3: 10 04        BPL Local_C11BA9
 C1/1BA5: 8A           TXA
 C1/1BA6: 8D DD A6     STA $A6DD
 C1/1BA9: 60           RTS

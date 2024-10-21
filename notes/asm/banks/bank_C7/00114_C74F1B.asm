@@ -23,7 +23,7 @@ C7/4F42: DD 00 00     CMP $0000,X
 C7/4F45: E9 FE        SBC #$FE
 C7/4F47: C4 3C        CPY $3C
 C7/4F49: D4 DC        PEI $DC
-C7/4F4B: 10 C9        BPL $4F16
+C7/4F4B: 10 C9        BPL Local_C74F16
 C7/4F4D: 06 02        ASL $02
 C7/4F4F: A3 D7        LDA $D7,S
 C7/4F51: C8           INY
@@ -31,7 +31,7 @@ C7/4F52: A4 07        LDY $07
 C7/4F54: DD 00 00     CMP $0000,X
 C7/4F57: E9 FE        SBC #$FE
 C7/4F59: C4 38        CPY $38
-C7/4F5B: D0 CF        BNE $4F2C
+C7/4F5B: D0 CF        BNE Local_C74F2C
 C7/4F5D: 12 09        ORA ($09)
 C7/4F5F: CF 1A CB 00  CMP $00CB1A
 C7/4F63: 07 FF        ORA [$FF]
@@ -58,7 +58,7 @@ C7/4F8F: 07 E3        ORA [$E3]
 C7/4F91: EB           XBA
 C7/4F92: D4 D8        PEI $D8
 C7/4F94: 0D 0D C8     ORA $C80D
-C7/4F97: 10 23        BPL $4FBC
+C7/4F97: 10 23        BPL Local_C74FBC
 C7/4F99: E0 0F 04     CPX #$040F
 C7/4F9C: D6 07        DEC $07,X
 C7/4F9E: DD 0C C5     CMP $C50C,X
@@ -75,12 +75,12 @@ C7/4FB1: 37 5F        AND [$5F],Y
 C7/4FB3: 89 A5        BIT #$A5
 C7/4FB5: EB           XBA
 C7/4FB6: C4 36        CPY $36
-C7/4FB8: D0 CF        BNE $4F89
+C7/4FB8: D0 CF        BNE Local_C74F89
 C7/4FBA: 12 0B        ORA ($0B)
 C7/4FBC: CF 1C B1 EB  CMP $EBB11C
 C7/4FC0: C4 36        CPY $36
 C7/4FC2: DC 08 D8     JMP [$D808]
-C7/4FC5: 50 C8        BVC $4F8F
+C7/4FC5: 50 C8        BVC Local_C74F8F
 C7/4FC7: 0C 54 B1     TSB $B154
 C7/4FCA: EB           XBA
 C7/4FCB: C4 58        CPY $58
@@ -99,7 +99,7 @@ C7/4FE2: 03 E0        ORA $E0,S
 C7/4FE4: 13 65        ORA ($65,S),Y
 C7/4FE6: EB           XBA
 C7/4FE7: C4 30        CPY $30
-C7/4FE9: D0 CF        BNE $4FBA
+C7/4FE9: D0 CF        BNE Local_C74FBA
 C7/4FEB: 1E DD 07     ASL $07DD,X
 C7/4FEE: 0C E1 0D     TSB $0DE1
 C7/4FF1: EB           XBA
@@ -110,7 +110,7 @@ C7/4FF9: C8           INY
 C7/4FFA: 04 EB        TSB $EB
 C7/4FFC: 98           TYA
 C7/4FFD: EB           XBA
-C7/4FFE: D0 CF        BNE $4FCF
+C7/4FFE: D0 CF        BNE Local_C74FCF
 C7/5000: 11 0B        ORA ($0B),Y
 C7/5002: E0 19 07     CPX #$0719
 C7/5005: EB           XBA
@@ -120,7 +120,7 @@ C7/500B: 17 8B        ORA [$8B],Y
 C7/500D: C8           INY
 C7/500E: 0F EF 85 EB  ORA $EB85EF
 C7/5012: C4 00        CPY $00
-C7/5014: D0 CF        BNE $4FE5
+C7/5014: D0 CF        BNE Local_C74FE5
 C7/5016: 16 DF        ASL $DF,X
 C7/5018: 01 07        ORA ($07,X)
 C7/501A: EB           XBA
@@ -138,7 +138,7 @@ C7/502F: 04 1A        TSB $1A
 C7/5031: D6 00        DEC $00,X
 C7/5033: DF 02 95 C8  CMP $C89502,X
 C7/5037: 24 1C        BIT $1C
-C7/5039: B0 EB        BCS $5026
+C7/5039: B0 EB        BCS Local_C75026
 C7/503B: C4 38        CPY $38
 C7/503D: D2 CB        CMP ($CB)
 C7/503F: 00 01        BRK $01

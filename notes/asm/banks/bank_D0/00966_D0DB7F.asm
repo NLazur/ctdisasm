@@ -15,11 +15,11 @@ D0/DB96: 48           PHA
 D0/DB97: 78           SEI
 D0/DB98: A8           TAY
 D0/DB99: D8           CLD
-D0/DB9A: D0 30        BNE $DBCC
+D0/DB9A: D0 30        BNE Local_D0DBCC
 D0/DB9C: E0 20        CPX #$20
-D0/DB9E: 80 40        BRA $DBE0
+D0/DB9E: 80 40        BRA Local_D0DBE0
 D0/DBA0: C0 C0        CPY #$C0
-D0/DBA2: F0 B0        BEQ $DB54
+D0/DBA2: F0 B0        BEQ Local_D0DB54
 D0/DBA4: 08           PHP
 D0/DBA5: 78           SEI
 D0/DBA6: 40           RTI

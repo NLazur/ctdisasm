@@ -2,12 +2,12 @@
 Routine_C60C86:
 C6/0C86: 81 5A        STA ($5A,X)
 C6/0C88: 84 C0        STY $C0
-C6/0C8A: 80 40        BRA $0CCC
-C6/0C8C: 20 90 60     JSR $6090
+C6/0C8A: 80 40        BRA Local_C60CCC
+C6/0C8C: 20 90 60     JSR Local_C66090
 C6/0C8F: 58           CLI
 C6/0C90: 94 90        STY $90,X
 C6/0C92: E0 C0 F0     CPX #$F0C0
-C6/0C95: D0 00        BNE $0C97
+C6/0C95: D0 00        BNE Local_C60C97
 C6/0C97: 38           SEC
 C6/0C98: 06 06        ASL $06
 C6/0C9A: C0 65 CD     CPY #$CD65
@@ -22,7 +22,7 @@ C6/0CAA: 81 2B        STA ($2B,X)
 C6/0CAC: 48           PHA
 C6/0CAD: 24 24        BIT $24
 C6/0CAF: 04 04        TSB $04
-C6/0CB1: F0 F8        BEQ $0CAB
+C6/0CB1: F0 F8        BEQ Local_C60CAB
 C6/0CB3: 6A           ROR
 C6/0CB4: F1 07        SBC ($07),Y
 C6/0CB6: 01 F0        ORA ($F0,X)

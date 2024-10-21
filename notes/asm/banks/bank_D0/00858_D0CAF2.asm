@@ -9,8 +9,8 @@ D0/CB00: 03 0F        ORA $0F,S
 D0/CB02: 00 03        BRK $03
 D0/CB04: 00 00        BRK $00
 D0/CB06: 00 00        BRK $00
-D0/CB08: F0 FC        BEQ $CB06
+D0/CB08: F0 FC        BEQ Local_D0CB06
 D0/CB0A: F8           SED
 D0/CB0B: F4 E8 F0     PEA $F0E8
-D0/CB0E: D0 E8        BNE $CAF8
+D0/CB0E: D0 E8        BNE Local_D0CAF8
 D0/CB10: 60           RTS

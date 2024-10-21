@@ -23,7 +23,7 @@ C2/49FF: A9 C2 85     LDA #$85C2
 C2/4A02: 15 20        ORA $20,X
 C2/4A04: 45 23        EOR $23
 C2/4A06: E2 20        SEP #$20
-C2/4A08: 90 11        BCC $4A1B
+C2/4A08: 90 11        BCC Local_C24A1B
 C2/4A0A: A9 08        LDA #$08
 C2/4A0C: 0C 94 02     TSB $0294
 C2/4A0F: A9 4C        LDA #$4C

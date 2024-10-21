@@ -11,6 +11,6 @@ C2/E063: 69 04 34     ADC #$3404
 C2/E066: 85 61        STA $61
 C2/E068: A2 02 00     LDX #$0002
 C2/E06B: A5 02        LDA $02
-C2/E06D: 20 93 EC     JSR $EC93
+C2/E06D: 20 93 EC     JSR Local_C2EC93
 C2/E070: 28           PLP
 C2/E071: 60           RTS

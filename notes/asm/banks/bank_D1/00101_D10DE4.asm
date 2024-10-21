@@ -2,15 +2,15 @@
 Routine_D10DE4:
 D1/0DE4: 64 01        STZ $01
 D1/0DE6: D1 12        CMP ($12),Y
-D1/0DE8: 20 66 01     JSR $0166
+D1/0DE8: 20 66 01     JSR Local_D10166
 D1/0DEB: 62 29 08     PER $D11617
 D1/0DEE: 00 12        BRK $12
 D1/0DF0: 00 07        BRK $07
-D1/0DF2: 10 6A        BPL $0E5E
+D1/0DF2: 10 6A        BPL Local_D10E5E
 D1/0DF4: 66 55        ROR $55
-D1/0DF6: 10 6C        BPL $0E64
+D1/0DF6: 10 6C        BPL Local_D10E64
 D1/0DF8: 5B           TCD
-D1/0DF9: 10 6E        BPL $0E69
+D1/0DF9: 10 6E        BPL Local_D10E69
 D1/0DFB: 61 40        ADC ($40,X)
 D1/0DFD: 55 18        EOR $18,X
 D1/0DFF: 0C 26 81     TSB $8126

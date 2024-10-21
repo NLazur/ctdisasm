@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: C08B
 Routine_FFC08B:
 FF/C08B: 43 00        EOR $00,S
-FF/C08D: 2C 0E 99     BIT $990E
+FF/C08D: 2C 0E 99     BIT Local_FF990E
 FF/C090: BA           TSX
 FF/C091: 0C 30 43     TSB $4330
 FF/C094: 02 0E        COP $0E
@@ -11,12 +11,12 @@ FF/C09A: 99 9D 0E     STA $0E9D,Y
 FF/C09D: FA           PLX
 FF/C09E: BB           TYX
 FF/C09F: 08           PHP
-FF/C0A0: 50 97        BVC $C039
+FF/C0A0: 50 97        BVC Local_FFC039
 FF/C0A2: 0E A9 BA     ASL $BAA9
 FF/C0A5: FF 08 00 3E  SBC $3E0008,X
 FF/C0A9: 04 8B        TSB $8B
 FF/C0AB: 03 02        ORA $02,S
-FF/C0AD: 20 0E 10     JSR $100E
+FF/C0AD: 20 0E 10     JSR Local_FF100E
 FF/C0B0: 08           PHP
 FF/C0B1: 00 4E        BRK $4E
 FF/C0B3: 00 00        BRK $00
@@ -29,17 +29,17 @@ FF/C0C0: 0C 50 43     TSB $4350
 FF/C0C3: 02 12        COP $12
 FF/C0C5: 0E F4 B8     ASL $B8F4
 FF/C0C8: 08           PHP
-FF/C0C9: 80 93        BRA $C05E
+FF/C0C9: 80 93        BRA Local_FFC05E
 FF/C0CB: 0E 3D B5     ASL $B53D
 FF/C0CE: 08           PHP
-FF/C0CF: 80 96        BRA $C067
+FF/C0CF: 80 96        BRA Local_FFC067
 FF/C0D1: 0E 90 BC     ASL $BC90
 FF/C0D4: FF 08 00 36  SBC $360008,X
 FF/C0D8: 00 00        BRK $00
 FF/C0DA: 04 00        TSB $00
 FF/C0DC: 00 06        BRK $06
-FF/C0DE: 22 00 04 02  JSR $020400
-FF/C0E2: 80 FF        BRA $C0E3
+FF/C0DE: 22 00 04 02  JSR Routine_020400
+FF/C0E2: 80 FF        BRA Local_FFC0E3
 FF/C0E4: 08           PHP
 FF/C0E5: 00 36        BRK $36
 FF/C0E7: 00 00        BRK $00
@@ -56,11 +56,11 @@ FF/C0FA: 02 06        COP $06
 FF/C0FC: 04 08        TSB $08
 FF/C0FE: 04 8B        TSB $8B
 FF/C100: 03 02        ORA $02,S
-FF/C102: 10 0C        BPL $C110
+FF/C102: 10 0C        BPL Local_FFC110
 FF/C104: 0A           ASL
 FF/C105: 04 8B        TSB $8B
 FF/C107: 03 0E        ORA $0E,S
-FF/C109: 10 10        BPL $C11B
+FF/C109: 10 10        BPL Local_FFC11B
 FF/C10B: 0A           ASL
 FF/C10C: 02 00        COP $00
 FF/C10E: 00 00        BRK $00

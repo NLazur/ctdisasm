@@ -111,7 +111,7 @@ CE/E197: 9E 47 CD     STZ $CD47,X
 CE/E19A: E8           INX
 CE/E19B: E8           INX
 CE/E19C: E0 80 00     CPX #$0080
-CE/E19F: D0 F6        BNE $E197
+CE/E19F: D0 F6        BNE Local_CEE197
 CE/E1A1: 7B           TDC
 CE/E1A2: E2 20        SEP #$20
 CE/E1A4: 6B           RTL

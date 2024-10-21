@@ -23,11 +23,11 @@ FE/98BD: 02 F0        COP $F0
 FE/98BF: 0B           PHD
 FE/98C0: 00 E8        BRK $E8
 FE/98C2: 0A           ASL
-FE/98C3: F0 8B        BEQ $9850
+FE/98C3: F0 8B        BEQ Local_FE9850
 FE/98C5: 68           PLA
 FE/98C6: 02 F0        COP $F0
 FE/98C8: 17 00        ORA [$00],Y
-FE/98CA: D0 84        BNE $9850
+FE/98CA: D0 84        BNE Local_FE9850
 FE/98CC: 88           DEY
 FE/98CD: 86 8A        STX $8A
 FE/98CF: 84 88        STY $88
@@ -36,7 +36,7 @@ FE/98D3: 8B           PHB
 FE/98D4: 88           DEY
 FE/98D5: 8C 83 85     STY $8583
 FE/98D8: 85 86        STA $86
-FE/98DA: 82 00 83     BRL $FE1BDD
+FE/98DA: 82 00 83     BRL Routine_FE1BDD
 FE/98DD: 74 C3        STZ $C3,X
 FE/98DF: 76 C1        ROR $C1,X
 FE/98E1: 74 C3        STZ $C3,X
@@ -53,8 +53,8 @@ FE/98F5: 7F ED 9F 04  ADC $049FED,X
 FE/98F9: 83 AA        STA $AA,S
 FE/98FB: 1C CC 1A     TRB $1ACC
 FE/98FE: 6D 80 6D     ADC $6D80
-FE/9901: 80 ED        BRA $98F0
-FE/9903: B0 4F        BCS $9954
+FE/9901: 80 ED        BRA Local_FE98F0
+FE/9903: B0 4F        BCS Local_FE9954
 FE/9905: C1 99        CMP ($99,X)
 FE/9907: 1D B6 FE     ORA $FEB6,X
 FE/990A: B6 FE        LDX $FE,Y
@@ -65,7 +65,7 @@ FE/9913: 01 B6        ORA ($B6,X)
 FE/9915: 01 B7        ORA ($B7,X)
 FE/9917: 01 28        ORA ($28,X)
 FE/9919: 1C 00 6C     TRB $6C00
-FE/991C: 5C 20 14 EC  JMP $EC1420
+FE/991C: 5C 20 14 EC  JMP Routine_EC1420
 FE/9920: DC 14 34     JMP [$3414]
 FE/9923: 00 C4        BRK $C4
 FE/9925: A4 A0        LDY $A0
@@ -80,6 +80,6 @@ FE/9936: DB           STP
 FE/9937: 46 9F        LSR $9F
 FE/9939: 86 3B        STX $3B
 FE/993B: 06 40        ASL $40
-FE/993D: 80 00        BRA $993F
-FE/993F: 70 B0        BVS $98F1
+FE/993D: 80 00        BRA Local_FE993F
+FE/993F: 70 B0        BVS Local_FE98F1
 FE/9941: 40           RTI

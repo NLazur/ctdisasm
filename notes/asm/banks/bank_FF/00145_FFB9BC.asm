@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: B9BC
 Routine_FFB9BC:
 FF/B9BC: E7 01        SBC [$01]
-FF/B9BE: 50 F7        BVC $B9B7
+FF/B9BE: 50 F7        BVC Local_FFB9B7
 FF/B9C0: 01 00        ORA ($00,X)
 FF/B9C2: 07 50        ORA [$50]
 FF/B9C4: 00 00        BRK $00
@@ -18,7 +18,7 @@ FF/B9DB: E3 00        SBC $00,S
 FF/B9DD: 0C E7 00     TSB $00E7
 FF/B9E0: 0C EB 00     TSB $00EB
 FF/B9E3: 0C EF 00     TSB $00EF
-FF/B9E6: 10 3F        BPL $BA27
+FF/B9E6: 10 3F        BPL Local_FFBA27
 FF/B9E8: 00 10        BRK $10
 FF/B9EA: 6F 01 01 FF  ADC $FF0101
 FF/B9EE: FF 00 1F 30  SBC $301F00,X

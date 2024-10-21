@@ -3,7 +3,7 @@ Routine_D092B8:
 D0/92B8: 00 00        BRK $00
 D0/92BA: 00 00        BRK $00
 D0/92BC: 00 00        BRK $00
-D0/92BE: 80 40        BRA $9300
+D0/92BE: 80 40        BRA Local_D09300
 D0/92C0: 00 00        BRK $00
 D0/92C2: 00 00        BRK $00
 D0/92C4: 01 01        ORA ($01,X)
@@ -13,7 +13,7 @@ D0/92CC: 47 7A        EOR [$7A]
 D0/92CE: 7C 7F 00     JMP ($007F,X)
 D0/92D1: 00 01        BRK $01
 D0/92D3: 02 1C        COP $1C
-D0/92D5: 70 7A        BVS $9351
+D0/92D5: 70 7A        BVS Local_D09351
 D0/92D7: 7F E2 81 C2  ADC $C281E2,X
 D0/92DB: A1 E2        LDA ($E2,X)
 D0/92DD: 01 16        ORA ($16,X)
@@ -64,6 +64,6 @@ D0/9353: E2 1C        SEP #$1C
 D0/9355: E4 1C        CPX $1C
 D0/9357: E4 18        CPX $18
 D0/9359: E8           INX
-D0/935A: 30 D0        BMI $932C
-D0/935C: F0 10        BEQ $936E
+D0/935A: 30 D0        BMI Local_D0932C
+D0/935C: F0 10        BEQ Local_D0936E
 D0/935E: 60           RTS

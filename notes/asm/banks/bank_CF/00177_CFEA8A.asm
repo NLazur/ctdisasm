@@ -1,9 +1,9 @@
 ; Bank: CF | Start Address: EA8A
 Routine_CFEA8A:
 CF/EA8A: BD CC A5     LDA $A5CC,X
-CF/EA8D: F0 35        BEQ $EAC4
+CF/EA8D: F0 35        BEQ Local_CFEAC4
 CF/EA8F: BD EB 9F     LDA $9FEB,X
-CF/EA92: D0 30        BNE $EAC4
+CF/EA92: D0 30        BNE Local_CFEAC4
 CF/EA94: A4 C9        LDY $C9
 CF/EA96: 38           SEC
 CF/EA97: BD 00 1D     LDA $1D00,X

@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: 53CA
 Routine_C053CA:
-C0/53CA: 20 A2 AB     JSR $ABA2
+C0/53CA: 20 A2 AB     JSR Local_C0ABA2
 C0/53CD: C2 20        REP #$20
 C0/53CF: A5 EE        LDA $EE
 C0/53D1: AA           TAX
@@ -8,8 +8,8 @@ C0/53D2: E2 20        SEP #$20
 C0/53D4: BD 00 F7     LDA $F700,X
 C0/53D7: A6 6D        LDX $6D
 C0/53D9: 9D 00 16     STA $1600,X
-C0/53DC: 20 95 5B     JSR $5B95
-C0/53DF: 90 10        BCC $53F1
+C0/53DC: 20 95 5B     JSR Local_C05B95
+C0/53DF: 90 10        BCC Local_C053F1
 C0/53E1: A5 EE        LDA $EE
 C0/53E3: 18           CLC
 C0/53E4: 69 30        ADC #$30
@@ -27,8 +27,8 @@ C0/53FA: 9D 01 1A     STA $1A01,X
 C0/53FD: 9F 00 0B 7F  STA $7F0B00,X
 C0/5401: FE 80 1A     INC $1A80,X
 C0/5404: 84 C7        STY $C7
-C0/5406: 20 FD AC     JSR $ACFD
-C0/5409: 20 14 56     JSR $5614
+C0/5406: 20 FD AC     JSR Local_C0ACFD
+C0/5409: 20 14 56     JSR Local_C05614
 C0/540C: A6 C7        LDX $C7
 C0/540E: 18           CLC
 C0/540F: 60           RTS

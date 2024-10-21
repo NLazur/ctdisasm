@@ -27,14 +27,14 @@ FF/FC39: BF 57 FC FF  LDA $FFFC57,X
 FF/FC3D: 99 00 6E     STA $6E00,Y
 FF/FC40: C8           INY
 FF/FC41: C6 01        DEC $01
-FF/FC43: D0 E6        BNE $FC2B
+FF/FC43: D0 E6        BNE Local_FFFC2B
 FF/FC45: E6 02        INC $02
 FF/FC47: A5 02        LDA $02
 FF/FC49: C9 08        CMP #$08
-FF/FC4B: 90 04        BCC $FC51
+FF/FC4B: 90 04        BCC Local_FFFC51
 FF/FC4D: A2 82        LDX #$82
 FF/FC4F: 86 00        STX $00
 FF/FC51: C9 10        CMP #$10
-FF/FC53: 90 D2        BCC $FC27
+FF/FC53: 90 D2        BCC Local_FFFC27
 FF/FC55: 28           PLP
 FF/FC56: 6B           RTL

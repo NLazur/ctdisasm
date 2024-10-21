@@ -19,7 +19,7 @@ D0/6C5D: 00 00        BRK $00
 D0/6C5F: 00 00        BRK $00
 D0/6C61: 00 F8        BRK $F8
 D0/6C63: F8           SED
-D0/6C64: 80 80        BRA $6BE6
+D0/6C64: 80 80        BRA Local_D06BE6
 D0/6C66: 00 00        BRK $00
 D0/6C68: 00 00        BRK $00
 D0/6C6A: 00 00        BRK $00
@@ -60,7 +60,7 @@ D0/6CB3: 00 00        BRK $00
 D0/6CB5: 00 00        BRK $00
 D0/6CB7: 00 BF        BRK $BF
 D0/6CB9: C0 7F        CPY #$7F
-D0/6CBB: 80 FF        BRA $6CBC
+D0/6CBB: 80 FF        BRA Local_D06CBC
 D0/6CBD: E0 1F 10     CPX #$101F
 D0/6CC0: 3E 21 3D     ROL $3D21,X
 D0/6CC3: 23 3A        AND $3A,S
@@ -74,7 +74,7 @@ D0/6CD3: 01 01        ORA ($01,X)
 D0/6CD5: 01 01        ORA ($01,X)
 D0/6CD7: 01 E8        ORA ($E8,X)
 D0/6CD9: 18           CLC
-D0/6CDA: F0 10        BEQ $6CEC
+D0/6CDA: F0 10        BEQ Local_D06CEC
 D0/6CDC: C0 20        CPY #$20
 D0/6CDE: E0 20 A0     CPX #$A020
 D0/6CE1: 60           RTS

@@ -1,49 +1,49 @@
 ; Bank: C0 | Start Address: AF53
 Routine_C0AF53:
 C0/AF53: 89 01        BIT #$01
-C0/AF55: F0 0A        BEQ $AF61
+C0/AF55: F0 0A        BEQ Local_C0AF61
 C0/AF57: A2 00        LDX #$00
-C0/AF59: 30 86        BMI $AEE1
-C0/AF5B: F0 20        BEQ $AF7D
+C0/AF59: 30 86        BMI Local_C0AEE1
+C0/AF5B: F0 20        BEQ Local_C0AF7D
 C0/AF5D: 96 B0        STX $B0,Y
 C0/AF5F: A5 44        LDA $44
 C0/AF61: 89 02        BIT #$02
-C0/AF63: F0 0A        BEQ $AF6F
+C0/AF63: F0 0A        BEQ Local_C0AF6F
 C0/AF65: A2 40        LDX #$40
-C0/AF67: 30 86        BMI $AEEF
-C0/AF69: F0 20        BEQ $AF8B
+C0/AF67: 30 86        BMI Local_C0AEEF
+C0/AF69: F0 20        BEQ Local_C0AF8B
 C0/AF6B: 96 B0        STX $B0,Y
 C0/AF6D: A5 44        LDA $44
 C0/AF6F: 89 04        BIT #$04
-C0/AF71: F0 0A        BEQ $AF7D
+C0/AF71: F0 0A        BEQ Local_C0AF7D
 C0/AF73: A2 80        LDX #$80
-C0/AF75: 30 86        BMI $AEFD
-C0/AF77: F0 20        BEQ $AF99
+C0/AF75: 30 86        BMI Local_C0AEFD
+C0/AF77: F0 20        BEQ Local_C0AF99
 C0/AF79: 96 B0        STX $B0,Y
 C0/AF7B: A5 44        LDA $44
 C0/AF7D: 89 08        BIT #$08
-C0/AF7F: F0 0A        BEQ $AF8B
+C0/AF7F: F0 0A        BEQ Local_C0AF8B
 C0/AF81: A2 C0        LDX #$C0
-C0/AF83: 30 86        BMI $AF0B
-C0/AF85: F0 20        BEQ $AFA7
+C0/AF83: 30 86        BMI Local_C0AF0B
+C0/AF85: F0 20        BEQ Local_C0AFA7
 C0/AF87: 96 B0        STX $B0,Y
 C0/AF89: A5 44        LDA $44
 C0/AF8B: 89 10        BIT #$10
-C0/AF8D: F0 0A        BEQ $AF99
+C0/AF8D: F0 0A        BEQ Local_C0AF99
 C0/AF8F: A2 00        LDX #$00
-C0/AF91: 70 86        BVS $AF19
-C0/AF93: F0 20        BEQ $AFB5
+C0/AF91: 70 86        BVS Local_C0AF19
+C0/AF93: F0 20        BEQ Local_C0AFB5
 C0/AF95: 96 B0        STX $B0,Y
 C0/AF97: A5 44        LDA $44
 C0/AF99: 89 20        BIT #$20
-C0/AF9B: F0 0A        BEQ $AFA7
+C0/AF9B: F0 0A        BEQ Local_C0AFA7
 C0/AF9D: A2 40        LDX #$40
-C0/AF9F: 70 86        BVS $AF27
-C0/AFA1: F0 20        BEQ $AFC3
+C0/AF9F: 70 86        BVS Local_C0AF27
+C0/AFA1: F0 20        BEQ Local_C0AFC3
 C0/AFA3: 96 B0        STX $B0,Y
 C0/AFA5: A5 44        LDA $44
 C0/AFA7: 89 40        BIT #$40
-C0/AFA9: F0 72        BEQ $B01D
+C0/AFA9: F0 72        BEQ Local_C0B01D
 C0/AFAB: 64 DC        STZ $DC
 C0/AFAD: 64 DE        STZ $DE
 C0/AFAF: 64 E4        STZ $E4
@@ -80,14 +80,14 @@ C0/AFE8: 29 FE        AND #$FE
 C0/AFEA: 05 D9        ORA $D9
 C0/AFEC: 99 C0 30     STA $30C0,Y
 C0/AFEF: A5 E3        LDA $E3
-C0/AFF1: F0 07        BEQ $AFFA
+C0/AFF1: F0 07        BEQ Local_C0AFFA
 C0/AFF3: 3A           DEC
 C0/AFF4: 85 E3        STA $E3
 C0/AFF6: E8           INX
 C0/AFF7: C8           INY
-C0/AFF8: 80 E4        BRA $AFDE
+C0/AFF8: 80 E4        BRA Local_C0AFDE
 C0/AFFA: A5 DD        LDA $DD
-C0/AFFC: F0 1C        BEQ $B01A
+C0/AFFC: F0 1C        BEQ Local_C0B01A
 C0/AFFE: C6 DD        DEC $DD
 C0/B000: C2 20        REP #$20
 C0/B002: 8A           TXA
@@ -102,12 +102,12 @@ C0/B00F: 69 00 01     ADC #$0100
 C0/B012: 29 00 FF     AND #$FF00
 C0/B015: 05 E1        ORA $E1
 C0/B017: A8           TAY
-C0/B018: 80 BE        BRA $AFD8
+C0/B018: 80 BE        BRA Local_C0AFD8
 C0/B01A: E2 20        SEP #$20
 C0/B01C: AB           PLB
 C0/B01D: A5 44        LDA $44
 C0/B01F: 89 80        BIT #$80
-C0/B021: F0 72        BEQ $B095
+C0/B021: F0 72        BEQ Local_C0B095
 C0/B023: 64 DC        STZ $DC
 C0/B025: 64 DE        STZ $DE
 C0/B027: 64 E4        STZ $E4
@@ -144,14 +144,14 @@ C0/B060: 29 FD        AND #$FD
 C0/B062: 05 D9        ORA $D9
 C0/B064: 99 C0 30     STA $30C0,Y
 C0/B067: A5 E3        LDA $E3
-C0/B069: F0 07        BEQ $B072
+C0/B069: F0 07        BEQ Local_C0B072
 C0/B06B: 3A           DEC
 C0/B06C: 85 E3        STA $E3
 C0/B06E: E8           INX
 C0/B06F: C8           INY
-C0/B070: 80 E4        BRA $B056
+C0/B070: 80 E4        BRA Local_C0B056
 C0/B072: A5 DD        LDA $DD
-C0/B074: F0 1C        BEQ $B092
+C0/B074: F0 1C        BEQ Local_C0B092
 C0/B076: C6 DD        DEC $DD
 C0/B078: C2 20        REP #$20
 C0/B07A: 8A           TXA
@@ -166,7 +166,7 @@ C0/B087: 69 00 01     ADC #$0100
 C0/B08A: 29 00 FF     AND #$FF00
 C0/B08D: 05 E1        ORA $E1
 C0/B08F: A8           TAY
-C0/B090: 80 BE        BRA $B050
+C0/B090: 80 BE        BRA Local_C0B050
 C0/B092: E2 20        SEP #$20
 C0/B094: AB           PLB
 C0/B095: 60           RTS

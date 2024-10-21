@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 243E
 Routine_D0243E:
-D0/243E: 30 30        BMI $2470
+D0/243E: 30 30        BMI Local_D02470
 D0/2440: 28           PLP
 D0/2441: 38           SEC
 D0/2442: 14 1C        TRB $1C
@@ -20,5 +20,5 @@ D0/245F: E0 E3        CPX #$E3
 D0/2461: FC 1C 1F     JSR ($1F1C,X)
 D0/2464: 03 03        ORA $03,S
 D0/2466: 00 00        BRK $00
-D0/2468: 80 80        BRA $23EA
+D0/2468: 80 80        BRA Local_D023EA
 D0/246A: 40           RTI

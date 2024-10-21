@@ -22,7 +22,7 @@ CD/3550: A5 47        LDA $47
 CD/3552: 38           SEC
 CD/3553: E5 45        SBC $45
 CD/3555: 85 4F        STA $4F
-CD/3557: 10 0F        BPL $3568
+CD/3557: 10 0F        BPL Local_CD3568
 CD/3559: 49 FF FF     EOR #$FFFF
 CD/355C: 1A           INC
 CD/355D: 85 51        STA $51
@@ -38,7 +38,7 @@ CD/356C: 65 45        ADC $45
 CD/356E: 18           CLC
 CD/356F: 65 4F        ADC $4F
 CD/3571: C9 DE 00     CMP #$00DE
-CD/3574: 90 0D        BCC $3583
+CD/3574: 90 0D        BCC Local_CD3583
 CD/3576: 38           SEC
 CD/3577: E9 DE 00     SBC #$00DE
 CD/357A: 85 45        STA $45
@@ -61,8 +61,8 @@ CD/3596: 18           CLC
 CD/3597: 65 45        ADC $45
 CD/3599: AA           TAX
 CD/359A: C4 4B        CPY $4B
-CD/359C: F0 03        BEQ $35A1
-CD/359E: 20 16 36     JSR $3616
+CD/359C: F0 03        BEQ Local_CD35A1
+CD/359E: 20 16 36     JSR Local_CD3616
 CD/35A1: 7B           TDC
 CD/35A2: E2 20        SEP #$20
 CD/35A4: 60           RTS

@@ -18,7 +18,7 @@ FF/F0E8: 03 00        ORA $00,S
 FF/F0EA: 02 03        COP $03
 FF/F0EC: 07 08        ORA [$08]
 FF/F0EE: 07 01        ORA [$01]
-FF/F0F0: 82 0E 9A     BRL $FF8B01
+FF/F0F0: 82 0E 9A     BRL Routine_FF8B01
 FF/F0F3: 06 16        ASL $16
 FF/F0F5: 9A           TXS
 FF/F0F6: 16 0A        ASL $0A,X

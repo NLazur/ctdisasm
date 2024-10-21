@@ -13,7 +13,7 @@ FD/03C1: 96 00        STX $00,Y
 FD/03C3: 97 00        STA [$00],Y
 FD/03C5: 98           TYA
 FD/03C6: B8           CLV
-FD/03C7: 10 BC        BPL $0385
+FD/03C7: 10 BC        BPL Local_FD0385
 FD/03C9: 08           PHP
 FD/03CA: 99 83 35     STA $3583,Y
 FD/03CD: F8           SED

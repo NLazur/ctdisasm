@@ -9,6 +9,6 @@ C0/1EEB: 3A           DEC
 C0/1EEC: AA           TAX
 C0/1EED: 86 DB        STX $DB
 C0/1EEF: BF C0 70 7E  LDA $7E70C0,X
-C0/1EF3: 30 E9        BMI $1EDE
+C0/1EF3: 30 E9        BMI Local_C01EDE
 C0/1EF5: 38           SEC
 C0/1EF6: 60           RTS

@@ -1,9 +1,9 @@
 ; Bank: D0 | Start Address: DEB2
 Routine_D0DEB2:
-D0/DEB2: 30 30        BMI $DEE4
-D0/DEB4: 10 90        BPL $DE46
-D0/DEB6: 80 40        BRA $DEF8
-D0/DEB8: D0 30        BNE $DEEA
+D0/DEB2: 30 30        BMI Local_D0DEE4
+D0/DEB4: 10 90        BPL Local_D0DE46
+D0/DEB6: 80 40        BRA Local_D0DEF8
+D0/DEB8: D0 30        BNE Local_D0DEEA
 D0/DEBA: FA           PLX
 D0/DEBB: 06 9E        ASL $9E
 D0/DEBD: E1 00        SBC ($00,X)
@@ -94,7 +94,7 @@ D0/E004: E2 D0        SEP #$D0
 D0/E006: 78           SEI
 D0/E007: E5 D0        SBC $D0
 D0/E009: 00 EB        BRK $EB
-D0/E00B: D0 8B        BNE $DF98
+D0/E00B: D0 8B        BNE Local_D0DF98
 D0/E00D: ED D0 98     SBC $98D0
 D0/E010: F1 D0        SBC ($D0),Y
 D0/E012: 59 02 FC     EOR $FC02,Y
@@ -121,7 +121,7 @@ D0/E037: C2 52        REP #$52
 D0/E039: 08           PHP
 D0/E03A: C1 52        CMP ($52,X)
 D0/E03C: C0 42        CPY #$42
-D0/E03E: 20 04 49     JSR $4904
+D0/E03E: 20 04 49     JSR Local_D04904
 D0/E041: 03 49        ORA $49,S
 D0/E043: 04 02        TSB $02
 D0/E045: 49 4E        EOR #$4E

@@ -47,7 +47,7 @@ C7/55D0: 00 C8        BRK $C8
 C7/55D2: 02 F4        COP $F4
 C7/55D4: 86 E3        STX $E3
 C7/55D6: C4 2A        CPY $2A
-C7/55D8: D0 CF        BNE $55A9
+C7/55D8: D0 CF        BNE Local_C755A9
 C7/55DA: 18           CLC
 C7/55DB: 0A           ASL
 C7/55DC: CB           WAI

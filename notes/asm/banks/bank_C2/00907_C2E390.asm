@@ -14,25 +14,25 @@ C2/E3AB: 54 7E 7E     MVN $7E,$7E
 C2/E3AE: E2 20        SEP #$20
 C2/E3B0: A2 05 00     LDX #$0005
 C2/E3B3: BD A0 98     LDA $98A0,X
-C2/E3B6: F0 07        BEQ $E3BF
+C2/E3B6: F0 07        BEQ Local_C2E3BF
 C2/E3B8: C9 EF        CMP #$EF
-C2/E3BA: D0 06        BNE $E3C2
+C2/E3BA: D0 06        BNE Local_C2E3C2
 C2/E3BC: 9E A0 98     STZ $98A0,X
 C2/E3BF: CA           DEX
-C2/E3C0: 10 F1        BPL $E3B3
+C2/E3C0: 10 F1        BPL Local_C2E3B3
 C2/E3C2: A6 51        LDX $51
 C2/E3C4: 9B           TXY
 C2/E3C5: A9 EF        LDA #$EF
 C2/E3C7: 85 00        STA $00
 C2/E3C9: BD A0 98     LDA $98A0,X
-C2/E3CC: F0 10        BEQ $E3DE
+C2/E3CC: F0 10        BEQ Local_C2E3DE
 C2/E3CE: C5 00        CMP $00
-C2/E3D0: F0 06        BEQ $E3D8
+C2/E3D0: F0 06        BEQ Local_C2E3D8
 C2/E3D2: 99 90 98     STA $9890,Y
 C2/E3D5: 64 00        STZ $00
 C2/E3D7: C8           INY
 C2/E3D8: E8           INX
 C2/E3D9: E0 05 00     CPX #$0005
-C2/E3DC: 90 EB        BCC $E3C9
+C2/E3DC: 90 EB        BCC Local_C2E3C9
 C2/E3DE: 28           PLP
 C2/E3DF: 60           RTS

@@ -1,7 +1,7 @@
 ; Bank: FE | Start Address: B382
 Routine_FEB382:
-FE/B382: 10 10        BPL $B394
-FE/B384: 70 10        BVS $B396
+FE/B382: 10 10        BPL Local_FEB394
+FE/B384: 70 10        BVS Local_FEB396
 FE/B386: 7F AC 0F 0F  ADC $0F0FAC,X
 FE/B38A: 0C 2B 0D     TSB $0D2B
 FE/B38D: 0B           PHD
@@ -13,7 +13,7 @@ FE/B399: 68           PLA
 FE/B39A: 0F D5 19 E8  ORA $E819D5
 FE/B39E: 17 CA        ORA [$CA],Y
 FE/B3A0: 1B           TCS
-FE/B3A1: F0 23        BEQ $B3C6
+FE/B3A1: F0 23        BEQ Local_FEB3C6
 FE/B3A3: C4 0B        CPY $0B
 FE/B3A5: F2 2F        SBC ($2F)
 FE/B3A7: 99 2F 03     STA $032F,Y
@@ -52,7 +52,7 @@ FE/B3E7: 03 7F        ORA $7F,S
 FE/B3E9: 14 23        TRB $23
 FE/B3EB: 96 01        STX $01,Y
 FE/B3ED: 3D 2B 9E     AND $9E2B,X
-FE/B3F0: 10 56        BPL $B448
+FE/B3F0: 10 56        BPL Local_FEB448
 FE/B3F2: 13 F8        ORA ($F8,S),Y
 FE/B3F4: 03 59        ORA $59,S
 FE/B3F6: 23 37        AND $37,S
@@ -82,10 +82,10 @@ FE/B41E: B8           CLV
 FE/B41F: 1B           TCS
 FE/B420: AD 17 E1     LDA $E117
 FE/B423: 06 11        ASL $11
-FE/B425: 2C FF D8     BIT $D8FF
+FE/B425: 2C FF D8     BIT Local_FED8FF
 FE/B428: 07 62        ORA [$62]
-FE/B42A: 22 AF 43 21  JSR $2143AF
-FE/B42E: 2C 80 2A     BIT $2A80
+FE/B42A: 22 AF 43 21  JSR Routine_2143AF
+FE/B42E: 2C 80 2A     BIT Local_FE2A80
 FE/B431: 06 34        ASL $34
 FE/B433: D2 47        CMP ($47)
 FE/B435: D7 37        CMP [$37],Y
@@ -102,7 +102,7 @@ FE/B44B: 57 24        EOR [$24],Y
 FE/B44D: 38           SEC
 FE/B44E: 42 4F        WDM $4F
 FE/B450: 34 45        BIT $45,X
-FE/B452: 22 19 0D 33  JSR $330D19
+FE/B452: 22 19 0D 33  JSR Routine_330D19
 FE/B456: 48           PHA
 FE/B457: 1E 08 F7     ASL $F708,X
 FE/B45A: 67 1C        ADC [$1C]
@@ -121,7 +121,7 @@ FE/B474: 7A           PLY
 FE/B475: 34 C8        BIT $C8,X
 FE/B477: 03 FF        ORA $FF,S
 FE/B479: 7B           TDC
-FE/B47A: 20 D4 12     JSR $12D4
+FE/B47A: 20 D4 12     JSR Local_FE12D4
 FE/B47D: 89 14        BIT #$14
 FE/B47F: DC 11 7A     JMP [$7A11]
 FE/B482: 1C E4 12     TRB $12E4

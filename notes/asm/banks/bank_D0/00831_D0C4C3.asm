@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: C4C3
 Routine_D0C4C3:
-D0/C4C3: 80 C0        BRA $C485
+D0/C4C3: 80 C0        BRA Local_D0C485
 D0/C4C5: 00 E0        BRK $E0
-D0/C4C7: 20 01 03     JSR $0301
+D0/C4C7: 20 01 03     JSR Local_D00301
 D0/C4CA: 02 01        COP $01
 D0/C4CC: 17 14        ORA [$14],Y
 D0/C4CE: 0B           PHD
@@ -10,12 +10,12 @@ D0/C4CF: 1C 17 08     TRB $0817
 D0/C4D2: 1F 00 5F 40  ORA $405F00,X
 D0/C4D6: 3F 60 E0 20  AND $20E060,X
 D0/C4DA: C0 00        CPY #$00
-D0/C4DC: 80 40        BRA $C51E
+D0/C4DC: 80 40        BRA Local_D0C51E
 D0/C4DE: C0 40        CPY #$40
-D0/C4E0: 80 00        BRA $C4E2
-D0/C4E2: 80 00        BRA $C4E4
+D0/C4E0: 80 00        BRA Local_D0C4E2
+D0/C4E2: 80 00        BRA Local_D0C4E4
 D0/C4E4: 00 80        BRK $80
-D0/C4E6: 80 80        BRA $C468
+D0/C4E6: 80 80        BRA Local_D0C468
 D0/C4E8: 01 01        ORA ($01,X)
 D0/C4EA: 01 01        ORA ($01,X)
 D0/C4EC: 00 01        BRK $01
@@ -27,10 +27,10 @@ D0/C4F6: 01 01        ORA ($01,X)
 D0/C4F8: 00 00        BRK $00
 D0/C4FA: 00 00        BRK $00
 D0/C4FC: 00 00        BRK $00
-D0/C4FE: 80 80        BRA $C480
-D0/C500: 80 80        BRA $C482
-D0/C502: 80 80        BRA $C484
-D0/C504: 80 80        BRA $C486
+D0/C4FE: 80 80        BRA Local_D0C480
+D0/C500: 80 80        BRA Local_D0C482
+D0/C502: 80 80        BRA Local_D0C484
+D0/C504: 80 80        BRA Local_D0C486
 D0/C506: 00 00        BRK $00
 D0/C508: 2F 30 0F 10  AND $100F30
 D0/C50C: 1F 10 07 08  ORA $080710,X
@@ -40,10 +40,10 @@ D0/C516: 00 01        BRK $01
 D0/C518: E8           INX
 D0/C519: 18           CLC
 D0/C51A: E0 10        CPX #$10
-D0/C51C: F0 10        BEQ $C52E
+D0/C51C: F0 10        BEQ Local_D0C52E
 D0/C51E: C0 20        CPY #$20
 D0/C520: E0 20        CPX #$20
-D0/C522: 80 40        BRA $C564
+D0/C522: 80 40        BRA Local_D0C564
 D0/C524: 00 80        BRK $80
 D0/C526: 00 00        BRK $00
 D0/C528: 03 02        ORA $02,S
@@ -54,9 +54,9 @@ D0/C530: 01 02        ORA ($02,X)
 D0/C532: 05 06        ORA $06
 D0/C534: 05 06        ORA $06
 D0/C536: 07 04        ORA [$04]
-D0/C538: 80 80        BRA $C4BA
-D0/C53A: 80 80        BRA $C4BC
-D0/C53C: 80 80        BRA $C4BE
+D0/C538: 80 80        BRA Local_D0C4BA
+D0/C53A: 80 80        BRA Local_D0C4BC
+D0/C53C: 80 80        BRA Local_D0C4BE
 D0/C53E: 00 80        BRK $80
 D0/C540: 00 80        BRK $80
 D0/C542: 40           RTI

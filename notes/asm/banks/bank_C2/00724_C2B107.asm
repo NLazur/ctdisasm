@@ -1,7 +1,7 @@
 ; Bank: C2 | Start Address: B107
 Routine_C2B107:
-C2/B107: 20 0D B1     JSR $B10D
-C2/B10A: 4C 7F B1     JMP $B17F
+C2/B107: 20 0D B1     JSR Local_C2B10D
+C2/B10A: 4C 7F B1     JMP Local_C2B17F
 C2/B10D: 08           PHP
 C2/B10E: E2 30        SEP #$30
 C2/B110: A9 64        LDA #$64
@@ -15,10 +15,10 @@ C2/B123: EA           NOP
 C2/B124: AF 17 42 00  LDA $004217
 C2/B128: A2 00        LDX #$00
 C2/B12A: DF 3D B1 C2  CMP $C2B13D,X
-C2/B12E: 90 05        BCC $B135
+C2/B12E: 90 05        BCC Local_C2B135
 C2/B130: E8           INX
 C2/B131: E0 03        CPX #$03
-C2/B133: 90 F5        BCC $B12A
+C2/B133: 90 F5        BCC Local_C2B12A
 C2/B135: 8A           TXA
 C2/B136: 0A           ASL
 C2/B137: AA           TAX

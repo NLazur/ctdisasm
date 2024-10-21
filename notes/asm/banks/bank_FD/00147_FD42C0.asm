@@ -15,7 +15,7 @@ FD/42DC: 00 44        BRK $44
 FD/42DE: C3 E9        CMP $E9,S
 FD/42E0: A5 FF        LDA $FF
 FD/42E2: 83 DC        STA $DC,S
-FD/42E4: 22 00 BF 04  JSR $04BF00
+FD/42E4: 22 00 BF 04  JSR Routine_04BF00
 FD/42E8: AC 90 2F     LDY $2F90
 FD/42EB: E1 6D        SBC ($6D,X)
 FD/42ED: 69 00        ADC #$00
@@ -106,7 +106,7 @@ FD/43A5: 00 E7        BRK $E7
 FD/43A7: E6 13        INC $13
 FD/43A9: 28           PLP
 FD/43AA: C4 CD        CPY $CD
-FD/43AC: 30 61        BMI $440F
+FD/43AC: 30 61        BMI Local_FD440F
 FD/43AE: 00 AE        BRK $AE
 FD/43B0: F7 78        SBC [$78],Y
 FD/43B2: 28           PLP
@@ -120,11 +120,11 @@ FD/43BC: B2 33        LDA ($33)
 FD/43BE: EE BE 00     INC $00BE
 FD/43C1: 69 80        ADC #$80
 FD/43C3: 0F 27 E0 57  ORA $57E027
-FD/43C7: F0 F0        BEQ $43B9
+FD/43C7: F0 F0        BEQ Local_FD43B9
 FD/43C9: 00 30        BRK $30
 FD/43CB: D8           CLD
 FD/43CC: 38           SEC
 FD/43CD: 36 8E        ROL $8E,X
 FD/43CF: 0E E1 11     ASL $11E1
-FD/43D2: 50 F8        BVC $43CC
+FD/43D2: 50 F8        BVC Local_FD43CC
 FD/43D4: 40           RTI

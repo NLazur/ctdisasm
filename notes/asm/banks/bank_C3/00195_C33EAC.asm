@@ -14,8 +14,8 @@ C3/3EC3: 04 06        TSB $06
 C3/3EC5: 08           PHP
 C3/3EC6: 0A           ASL
 C3/3EC7: 0C 00 0E     TSB $0E00
-C3/3ECA: 20 22 24     JSR $2422
+C3/3ECA: 20 22 24     JSR Local_C32422
 C3/3ECD: 26 28        ROL $28
 C3/3ECF: 2A           ROL
-C3/3ED0: 2C 00 2E     BIT $2E00
+C3/3ED0: 2C 00 2E     BIT Local_C32E00
 C3/3ED3: 40           RTI

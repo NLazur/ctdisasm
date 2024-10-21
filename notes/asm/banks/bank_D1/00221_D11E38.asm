@@ -1,11 +1,11 @@
 ; Bank: D1 | Start Address: 1E38
 Routine_D11E38:
 D1/1E38: 12 80        ORA ($80)
-D1/1E3A: 80 EE        BRA $1E2A
+D1/1E3A: 80 EE        BRA Local_D11E2A
 D1/1E3C: 00 0E        BRK $0E
 D1/1E3E: 21 00        AND ($00,X)
 D1/1E40: 44 00 30     MVP $00,$30
-D1/1E43: 30 C0        BMI $1E05
+D1/1E43: 30 C0        BMI Local_D11E05
 D1/1E45: C0 E8        CPY #$E8
 D1/1E47: C0 E6        CPY #$E6
 D1/1E49: C0 00        CPY #$00
@@ -28,7 +28,7 @@ D1/1E66: 00 00        BRK $00
 D1/1E68: EC C0 EA     CPX $EAC0
 D1/1E6B: C0 CC        CPY #$CC
 D1/1E6D: C0 CA        CPY #$CA
-D1/1E6F: 20 C0 FF     JSR $FFC0
+D1/1E6F: 20 C0 FF     JSR Local_D1FFC0
 D1/1E72: FF 23 C0 01  SBC $01C023,X
 D1/1E76: 00 00        BRK $00
 D1/1E78: C2 00        REP #$00
@@ -41,7 +41,7 @@ D1/1E84: 00 32        BRK $32
 D1/1E86: E0 E0        CPX #$E0
 D1/1E88: 00 01        BRK $01
 D1/1E8A: 02 01        COP $01
-D1/1E8C: 80 04        BRA $1E92
+D1/1E8C: 80 04        BRA Local_D11E92
 D1/1E8E: 01 20        ORA ($20,X)
 D1/1E90: 01 22        ORA ($22,X)
 D1/1E92: 01 24        ORA ($24,X)
@@ -55,7 +55,7 @@ D1/1E9F: E0 0C        CPX #$0C
 D1/1EA1: C0 C2        CPY #$C2
 D1/1EA3: 2F 00 23 10  AND $102300
 D1/1EA7: 24 C1        BIT $C1
-D1/1EA9: 22 C1 00 20  JSR $2000C1
+D1/1EA9: 22 C1 00 20  JSR Routine_2000C1
 D1/1EAD: C1 04        CMP ($04,X)
 D1/1EAF: C1 02        CMP ($02,X)
 D1/1EB1: C1 00        CMP ($00,X)
@@ -64,7 +64,7 @@ D1/1EB5: 7D 08 00     ADC $0008,X
 D1/1EB8: 9C 08 84     STZ $8408
 D1/1EBB: 00 2A        BRK $2A
 D1/1EBD: 01 09        ORA ($09,X)
-D1/1EBF: 20 2C 66     JSR $662C
+D1/1EBF: 20 2C 66     JSR Local_D1662C
 D1/1EC2: 01 A8        ORA ($A8,X)
 D1/1EC4: 08           PHP
 D1/1EC5: 96 00        STX $00,Y

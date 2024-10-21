@@ -17,6 +17,6 @@ CE/8444: 0C C2 03     TSB $03C2
 CE/8447: 1E D0 01     ASL $01D0,X
 CE/844A: 12 0C        ORA ($0C)
 CE/844C: 71 00        ADC ($00),Y
-CE/844E: 90 F0        BCC $8440
-CE/8450: 80 00        BRA $8452
+CE/844E: 90 F0        BCC Local_CE8440
+CE/8450: 80 00        BRA Local_CE8452
 CE/8452: 60           RTS

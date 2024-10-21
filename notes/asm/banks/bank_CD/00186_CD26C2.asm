@@ -14,7 +14,7 @@ CD/26D4: E8           INX
 CD/26D5: C8           INY
 CD/26D6: C8           INY
 CD/26D7: C0 2A 00     CPY #$002A
-CD/26DA: D0 F1        BNE $26CD
+CD/26DA: D0 F1        BNE Local_CD26CD
 CD/26DC: 7B           TDC
 CD/26DD: E2 20        SEP #$20
 CD/26DF: 60           RTS

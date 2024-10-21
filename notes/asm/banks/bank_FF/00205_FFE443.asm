@@ -2,13 +2,13 @@
 Routine_FFE443:
 FF/E443: CB           WAI
 FF/E444: 23 E3        AND $E3,S
-FF/E446: F0 F0        BEQ $E438
+FF/E446: F0 F0        BEQ Local_FFE438
 FF/E448: FA           PLX
 FF/E449: F8           SED
 FF/E44A: 9A           TXS
 FF/E44B: 98           TYA
 FF/E44C: 48           PHA
-FF/E44D: 4C C4 34     JMP $34C4
+FF/E44D: 4C C4 34     JMP Local_FF34C4
 FF/E450: 1C 0F 07     TRB $070F
 FF/E453: 67 2E        ADC [$2E]
 FF/E455: 2E BF A7     ROL $A7BF
@@ -23,7 +23,7 @@ FF/E46A: 3B           TSC
 FF/E46B: 01 00        ORA ($00,X)
 FF/E46D: 00 C9        BRK $C9
 FF/E46F: C8           INY
-FF/E470: 50 41        BVC $E4B3
+FF/E470: 50 41        BVC Local_FFE4B3
 FF/E472: 16 10        ASL $10,X
 FF/E474: BE 9C 07     LDX $079C,Y
 FF/E477: 07 0F        ORA [$0F]

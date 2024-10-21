@@ -1,7 +1,7 @@
 ; Bank: C6 | Start Address: 3FED
 Routine_C63FED:
 C6/3FED: 4E E0 80     LSR $80E0
-C6/3FF0: 30 84        BMI $3F76
+C6/3FF0: 30 84        BMI Local_C63F76
 C6/3FF2: 0D BA 03     ORA $03BA
 C6/3FF5: 94 BA        STY $BA,X
 C6/3FF7: 03 A0        ORA $A0,S
@@ -27,7 +27,7 @@ C6/4017: 35 48        AND $48,X
 C6/4019: 01 30        ORA ($30,X)
 C6/401B: 2D 40 1B     AND $1B40
 C6/401E: 41 1B        EOR ($1B,X)
-C6/4020: 50 1B        BVC $403D
+C6/4020: 50 1B        BVC Local_C6403D
 C6/4022: 51 00        EOR ($00),Y
 C6/4024: 1B           TCS
 C6/4025: 42 1B        WDM $1B
@@ -57,13 +57,13 @@ C6/404D: 5A           PHY
 C6/404E: 1B           TCS
 C6/404F: 58           CLI
 C6/4050: 17 58        ORA [$58],Y
-C6/4052: 10 B0        BPL $4004
+C6/4052: 10 B0        BPL Local_C64004
 C6/4054: 1B           TCS
 C6/4055: 00 1E        BRK $1E
 C6/4057: A6 22        LDX $22
 C6/4059: 03 A8        ORA $A8,S
 C6/405B: 00 50        BRK $50
-C6/405D: 82 48 50     BRL $C690A8
+C6/405D: 82 48 50     BRL Routine_C690A8
 C6/4060: 2D 04 08     AND $0804
 C6/4063: 05 08        ORA $08
 C6/4065: 14 42        TRB $42
@@ -83,7 +83,7 @@ C6/407B: 08           PHP
 C6/407C: 49 08 20     EOR #$2008
 C6/407F: 43 48        EOR $48,S
 C6/4081: 59 08 53     EOR $5308,Y
-C6/4084: 80 30        BRA $40B6
+C6/4084: 80 30        BRA Local_C640B6
 C6/4086: 66 00        ROR $00
 C6/4088: 04 61        TSB $61
 C6/408A: 1B           TCS
@@ -106,7 +106,7 @@ C6/40A6: 77 1B        ADC [$1B],Y
 C6/40A8: 68           PLA
 C6/40A9: 1B           TCS
 C6/40AA: 69 1B 78     ADC #$781B
-C6/40AD: 5C 1B 56 90  JMP $90561B
+C6/40AD: 5C 1B 56 90  JMP Routine_90561B
 C6/40B1: 35 80        AND $80,X
 C6/40B3: 68           PLA
 C6/40B4: 88           DEY
@@ -125,7 +125,7 @@ C6/40CA: 36 88        ROL $88,X
 C6/40CC: 25 88        AND $88
 C6/40CE: 26 02        ROL $02
 C6/40D0: 88           DEY
-C6/40D1: 80 08        BRA $40DB
+C6/40D1: 80 08        BRA Local_C640DB
 C6/40D3: 37 88        AND [$88],Y
 C6/40D5: 38           SEC
 C6/40D6: 88           DEY
@@ -135,12 +135,12 @@ C6/40DC: 26 C8        ROL $C8
 C6/40DE: 25 C8        AND $C8
 C6/40E0: 18           CLC
 C6/40E1: 6A           ROR
-C6/40E2: D0 2E        BNE $4112
-C6/40E4: 70 70        BVS $4156
+C6/40E2: D0 2E        BNE Local_C64112
+C6/40E4: 70 70        BVS Local_C64156
 C6/40E6: 1B           TCS
 C6/40E7: 71 1B        ADC ($1B),Y
-C6/40E9: D0 0B        BNE $40F6
-C6/40EB: 50 2E        BVC $411B
+C6/40E9: D0 0B        BNE Local_C640F6
+C6/40EB: 50 2E        BVC Local_C6411B
 C6/40ED: 58           CLI
 C6/40EE: 28           PLP
 C6/40EF: 56 FB        LSR $FB,X
@@ -150,5 +150,5 @@ C6/40F4: 0B           PHD
 C6/40F5: A7 FA        LDA [$FA]
 C6/40F7: 05 F0        ORA $F0
 C6/40F9: 08           PHP
-C6/40FA: 70 28        BVS $4124
+C6/40FA: 70 28        BVS Local_C64124
 C6/40FC: 60           RTS

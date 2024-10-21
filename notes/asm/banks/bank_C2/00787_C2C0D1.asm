@@ -1,10 +1,10 @@
 ; Bank: C2 | Start Address: C0D1
 Routine_C2C0D1:
 C2/C0D1: A2 90 0D     LDX #$0D90
-C2/C0D4: 20 64 C1     JSR $C164
+C2/C0D4: 20 64 C1     JSR Local_C2C164
 C2/C0D7: AD 1D 0D     LDA $0D1D
 C2/C0DA: 29 C0        AND #$C0
-C2/C0DC: F0 0A        BEQ $C0E8
+C2/C0DC: F0 0A        BEQ Local_C2C0E8
 C2/C0DE: A9 05        LDA #$05
 C2/C0E0: 85 54        STA $54
 C2/C0E2: 8D 17 04     STA $0417

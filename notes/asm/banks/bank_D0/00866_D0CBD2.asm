@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: CBD2
 Routine_D0CBD2:
-D0/CBD2: 80 00        BRA $CBD4
+D0/CBD2: 80 00        BRA Local_D0CBD4
 D0/CBD4: 00 00        BRK $00
 D0/CBD6: 00 00        BRK $00
 D0/CBD8: 00 00        BRK $00
@@ -21,7 +21,7 @@ D0/CBF6: 21 E3        AND ($E3,X)
 D0/CBF8: 08           PHP
 D0/CBF9: 78           SEI
 D0/CBFA: 84 BC        STY $BC
-D0/CBFC: 82 FE 43     BRL $D00FFD
+D0/CBFC: 82 FE 43     BRL Routine_D00FFD
 D0/CBFF: DF 00 F0 FC  CMP $FCF000,X
 D0/CC03: 1F 87 C3 C1  ORA $C1C387,X
 D0/CC07: E0 00        CPX #$00
@@ -29,5 +29,5 @@ D0/CC09: 00 00        BRK $00
 D0/CC0B: 00 00        BRK $00
 D0/CC0D: 00 00        BRK $00
 D0/CC0F: 00 80        BRK $80
-D0/CC11: 80 C0        BRA $CBD3
+D0/CC11: 80 C0        BRA Local_D0CBD3
 D0/CC13: 40           RTI

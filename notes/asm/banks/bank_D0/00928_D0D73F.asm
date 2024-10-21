@@ -12,7 +12,7 @@ D0/D750: A0 60        LDY #$60
 D0/D752: A0 60        LDY #$60
 D0/D754: A0 60        LDY #$60
 D0/D756: C0 20        CPY #$20
-D0/D758: D0 30        BNE $D78A
-D0/D75A: D0 30        BNE $D78C
+D0/D758: D0 30        BNE Local_D0D78A
+D0/D75A: D0 30        BNE Local_D0D78C
 D0/D75C: A0 60        LDY #$60
 D0/D75E: 40           RTI

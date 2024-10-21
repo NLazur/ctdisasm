@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: 1445
 Routine_CD1445:
 CD/1445: 5A           PHY
-CD/1446: 20 09 15     JSR $1509
+CD/1446: 20 09 15     JSR Local_CD1509
 CD/1449: 7A           PLY
 CD/144A: 7B           TDC
 CD/144B: E2 20        SEP #$20
@@ -28,6 +28,6 @@ CD/147E: C8           INY
 CD/147F: C8           INY
 CD/1480: C8           INY
 CD/1481: C6 61        DEC $61
-CD/1483: D0 CC        BNE $1451
+CD/1483: D0 CC        BNE Local_CD1451
 CD/1485: C2 20        REP #$20
 CD/1487: 60           RTS

@@ -1,6 +1,6 @@
 ; Bank: FF | Start Address: 9AFF
 Routine_FF9AFF:
-FF/9AFF: 50 00        BVC $9B01
+FF/9AFF: 50 00        BVC Local_FF9B01
 FF/9B01: 00 00        BRK $00
 FF/9B03: 00 7E        BRK $7E
 FF/9B05: 7C 7C 02     JMP ($027C,X)
@@ -25,10 +25,10 @@ FF/9B2F: 00 00        BRK $00
 FF/9B31: 00 00        BRK $00
 FF/9B33: 00 00        BRK $00
 FF/9B35: 00 D8        BRK $D8
-FF/9B37: 90 B0        BCC $9AE9
-FF/9B39: 20 60 40     JSR $4060
+FF/9B37: 90 B0        BCC Local_FF9AE9
+FF/9B39: 20 60 40     JSR Local_FF4060
 FF/9B3C: D8           CLD
-FF/9B3D: 90 90        BCC $9ACF
+FF/9B3D: 90 90        BCC Local_FF9ACF
 FF/9B3F: 00 00        BRK $00
 FF/9B41: 00 36        BRK $36
 FF/9B43: 24 7F        BIT $7F
@@ -52,8 +52,8 @@ FF/9B69: 12 1B        ORA ($1B)
 FF/9B6B: 12 1E        ORA ($1E)
 FF/9B6D: 0C 0C 00     TSB $000C
 FF/9B70: 18           CLC
-FF/9B71: 30 38        BMI $9BAB
-FF/9B73: 30 34        BMI $9BA9
+FF/9B71: 30 38        BMI Local_FF9BAB
+FF/9B73: 30 34        BMI Local_FF9BA9
 FF/9B75: 68           PLA
 FF/9B76: 7C 68 7A     JMP ($7A68,X)
 FF/9B79: EC FE FC     CPX $FCFE

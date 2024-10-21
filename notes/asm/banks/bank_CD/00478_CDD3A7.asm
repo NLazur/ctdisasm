@@ -2,10 +2,10 @@
 Routine_CDD3A7:
 CD/D3A7: 78           SEI
 CD/D3A8: B8           CLV
-CD/D3A9: 22 1B 00 36  JSR $36001B
+CD/D3A9: 22 1B 00 36  JSR Routine_36001B
 CD/D3AD: 06 03        ASL $03
 CD/D3AF: 24 03        BIT $03
-CD/D3B1: 20 0F 50     JSR $500F
+CD/D3B1: 20 0F 50     JSR Local_CD500F
 CD/D3B4: 2E 01 00     ROL $0001
 CD/D3B7: 24 01        BIT $01
 CD/D3B9: 06 09        ASL $09
@@ -24,5 +24,5 @@ CD/D3D5: 02 06        COP $06
 CD/D3D7: 03 50        ORA $50,S
 CD/D3D9: 2E 01 00     ROL $0001
 CD/D3DC: 33 03        AND ($03,S),Y
-CD/D3DE: 30 1F        BMI $D3FF
+CD/D3DE: 30 1F        BMI Local_CDD3FF
 CD/D3E0: 60           RTS

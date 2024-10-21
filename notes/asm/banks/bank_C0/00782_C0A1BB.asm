@@ -2,7 +2,7 @@
 Routine_C0A1BB:
 C0/A1BB: B9 80 16     LDA $1680,Y
 C0/A1BE: C9 17        CMP #$17
-C0/A1C0: F0 0F        BEQ $A1D1
+C0/A1C0: F0 0F        BEQ Local_C0A1D1
 C0/A1C2: A9 17        LDA #$17
 C0/A1C4: 99 80 16     STA $1680,Y
 C0/A1C7: A9 00        LDA #$00

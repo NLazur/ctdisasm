@@ -11,16 +11,16 @@ C1/4CAF: 85 E8        STA $E8
 C1/4CB1: 8C 10 A0     STY $A010
 C1/4CB4: BB           TYX
 C1/4CB5: BD FD 5D     LDA $5DFD,X
-C1/4CB8: F0 05        BEQ $4CBF
+C1/4CB8: F0 05        BEQ Local_C14CBF
 C1/4CBA: DE FD 5D     DEC $5DFD,X
-C1/4CBD: 80 30        BRA $4CEF
+C1/4CBD: 80 30        BRA Local_C14CEF
 C1/4CBF: 9C 0F A0     STZ $A00F
 C1/4CC2: 7B           TDC
 C1/4CC3: A8           TAY
 C1/4CC4: B7 E6        LDA [$E6],Y
 C1/4CC6: 8D 95 98     STA $9895
 C1/4CC9: C9 DB        CMP #$DB
-C1/4CCB: B0 0F        BCS $4CDC
+C1/4CCB: B0 0F        BCS Local_C14CDC
 C1/4CCD: C2 20        REP #$20
 C1/4CCF: 0A           ASL
 C1/4CD0: AA           TAX
@@ -28,7 +28,7 @@ C1/4CD1: 7B           TDC
 C1/4CD2: E2 20        SEP #$20
 C1/4CD4: FC 6B 7A     JSR ($7A6B,X)
 C1/4CD7: AD 0F A0     LDA $A00F
-C1/4CDA: D0 E3        BNE $4CBF
+C1/4CDA: D0 E3        BNE Local_C14CBF
 C1/4CDC: AD 0E A0     LDA $A00E
 C1/4CDF: AA           TAX
 C1/4CE0: A5 E6        LDA $E6

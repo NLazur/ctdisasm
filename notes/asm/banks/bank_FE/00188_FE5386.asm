@@ -3,7 +3,7 @@ Routine_FE5386:
 FE/5386: 02 03        COP $03
 FE/5388: 02 40        COP $40
 FE/538A: 81 B8        STA ($B8,X)
-FE/538C: 20 89 00     JSR $0089
+FE/538C: 20 89 00     JSR Local_FE0089
 FE/538F: 03 00        ORA $00,S
 FE/5391: FC 00 FC     JSR ($FC00,X)
 FE/5394: 02 FC        COP $FC

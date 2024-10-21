@@ -8,12 +8,12 @@ C2/7327: 1C 1D 06     TRB $061D
 C2/732A: 07 08        ORA [$08]
 C2/732C: 09 0A        ORA #$0A
 C2/732E: 0B           PHD
-C2/732F: 22 23 16 17  JSR $171623
+C2/732F: 22 23 16 17  JSR Routine_171623
 C2/7333: 18           CLC
 C2/7334: 19 1E 1F     ORA $1F1E,Y
-C2/7337: 20 21 0C     JSR $0C21
+C2/7337: 20 21 0C     JSR Local_C20C21
 C2/733A: 0D 0E 0F     ORA $0F0E
-C2/733D: 10 11        BPL $7350
+C2/733D: 10 11        BPL Local_C27350
 C2/733F: 28           PLP
 C2/7340: 29 24        AND #$24
 C2/7342: 25 26        AND $26
@@ -25,7 +25,7 @@ C2/734C: 2E 2F 30     ROL $302F
 C2/734F: 31 32        AND ($32),Y
 C2/7351: 2A           ROL
 C2/7352: 2B           PLD
-C2/7353: 2C 2D 00     BIT $002D
+C2/7353: 2C 2D 00     BIT Local_C2002D
 C2/7356: 01 02        ORA ($02,X)
 C2/7358: 03 04        ORA $04,S
 C2/735A: 05 00        ORA $00
@@ -49,5 +49,5 @@ C2/737D: 29 0F        AND #$0F
 C2/737F: 8D 80 21     STA $2180
 C2/7382: E8           INX
 C2/7383: E0 00 04     CPX #$0400
-C2/7386: D0 E8        BNE $7370
+C2/7386: D0 E8        BNE Local_C27370
 C2/7388: 60           RTS

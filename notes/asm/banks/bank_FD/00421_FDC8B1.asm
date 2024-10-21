@@ -46,7 +46,7 @@ FD/C922: 1A           INC
 FD/C923: 8E EC 13     STX $13EC
 FD/C926: A9 F0 8D     LDA #$8DF0
 FD/C929: EE 13 A2     INC $A213
-FD/C92C: 90 1B        BCC $C949
+FD/C92C: 90 1B        BCC Local_FDC949
 FD/C92E: 8E EF 13     STX $13EF
 FD/C931: A9 00 8D     LDA #$8D00
 FD/C934: F1 13        SBC ($13),Y
@@ -63,7 +63,7 @@ FD/C94F: 48           PHA
 FD/C950: 14 20        TRB $20
 FD/C952: 77 C4        ADC [$C4],Y
 FD/C954: A5 53        LDA $53
-FD/C956: 30 05        BMI $C95D
-FD/C958: 20 F7 C6     JSR $C6F7
+FD/C956: 30 05        BMI Local_FDC95D
+FD/C958: 20 F7 C6     JSR Local_FDC6F7
 FD/C95B: AB           PLB
 FD/C95C: 60           RTS

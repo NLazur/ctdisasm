@@ -17,11 +17,11 @@ C2/F5C5: 18           CLC
 C2/F5C6: 69 08 00     ADC #$0008
 C2/F5C9: A8           TAY
 C2/F5CA: C0 80 96     CPY #$9680
-C2/F5CD: 90 E4        BCC $F5B3
+C2/F5CD: 90 E4        BCC Local_C2F5B3
 C2/F5CF: A0 BA 95     LDY #$95BA
 C2/F5D2: 64 00        STZ $00
 C2/F5D4: A5 00        LDA $00
-C2/F5D6: 20 ED F5     JSR $F5ED
+C2/F5D6: 20 ED F5     JSR Local_C2F5ED
 C2/F5D9: 54 7E D1     MVN $7E,$D1
 C2/F5DC: 98           TYA
 C2/F5DD: 18           CLC
@@ -30,6 +30,6 @@ C2/F5E1: A8           TAY
 C2/F5E2: E6 00        INC $00
 C2/F5E4: A5 00        LDA $00
 C2/F5E6: C9 07 00     CMP #$0007
-C2/F5E9: 90 E9        BCC $F5D4
+C2/F5E9: 90 E9        BCC Local_C2F5D4
 C2/F5EB: 28           PLP
 C2/F5EC: 60           RTS

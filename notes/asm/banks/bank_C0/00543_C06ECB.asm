@@ -16,5 +16,5 @@ C0/6EE5: A9 01        LDA #$01
 C0/6EE7: 85 4A        STA $4A
 C0/6EE9: A9 7E        LDA #$7E
 C0/6EEB: 85 4D        STA $4D
-C0/6EED: 20 C8 2D     JSR $2DC8
+C0/6EED: 20 C8 2D     JSR Local_C02DC8
 C0/6EF0: 60           RTS

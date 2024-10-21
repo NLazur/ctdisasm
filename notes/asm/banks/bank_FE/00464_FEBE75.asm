@@ -21,14 +21,14 @@ FE/BE96: 00 63        BRK $63
 FE/BE98: 64 11        STZ $11
 FE/BE9A: 4D 61 65     EOR $6561
 FE/BE9D: 63 62        ADC $62,S
-FE/BE9F: 20 63 64     JSR $6463
+FE/BE9F: 20 63 64     JSR Local_FE6463
 FE/BEA2: 17 11        ORA [$11],Y
-FE/BEA4: 4C 36 00     JMP $0036
+FE/BEA4: 4C 36 00     JMP Local_FE0036
 FE/BEA7: 4B           PHK
 FE/BEA8: 4D 08 65     EOR $6508
 FE/BEAB: 17 61        ORA [$61],Y
 FE/BEAD: 08           PHP
-FE/BEAE: 30 61        BMI $BF11
+FE/BEAE: 30 61        BMI Local_FEBF11
 FE/BEB0: 61 11        ADC ($11,X)
 FE/BEB2: 62 B1 63     PER $FE2266
 FE/BEB5: 14 64        TRB $64
@@ -49,7 +49,7 @@ FE/BED5: 04 61        TSB $61
 FE/BED7: 61 3C        ADC ($3C,X)
 FE/BED9: 65 65        ADC $65
 FE/BEDB: 25 04        AND $04
-FE/BEDD: 90 04        BCC $BEE3
+FE/BEDD: 90 04        BCC Local_FEBEE3
 FE/BEDF: 28           PLP
 FE/BEE0: 04 2C        TSB $2C
 FE/BEE2: 04 11        TSB $11
@@ -58,10 +58,10 @@ FE/BEE7: 17 10        ORA [$10],Y
 FE/BEE9: 64 17        STZ $17
 FE/BEEB: 62 1E 10     PER $FECF0C
 FE/BEEE: 11 15        ORA ($15),Y
-FE/BEF0: 10 B5        BPL $BEA7
+FE/BEF0: 10 B5        BPL Local_FEBEA7
 FE/BEF2: 42 04        WDM $04
 FE/BEF4: 17 85        ORA [$85],Y
-FE/BEF6: 10 4D        BPL $BF45
+FE/BEF6: 10 4D        BPL Local_FEBF45
 FE/BEF8: 9C 00 3A     STZ $3A00
 FE/BEFB: 24 4C        BIT $4C
 FE/BEFD: E9 14        SBC #$14
@@ -75,8 +75,8 @@ FE/BF08: 35 42        AND $42,X
 FE/BF0A: 4B           PHK
 FE/BF0B: BE 4A CF     LDX $CF4A,Y
 FE/BF0E: 96 49        STX $49,Y
-FE/BF10: 80 05        BRA $BF17
-FE/BF12: D0 3A        BNE $BF4E
+FE/BF10: 80 05        BRA Local_FEBF17
+FE/BF12: D0 3A        BNE Local_FEBF4E
 FE/BF14: 87 B5        STA [$B5]
 FE/BF16: 52 52        EOR ($52)
 FE/BF18: BE B9 1C     LDX $1CB9,Y
@@ -102,7 +102,7 @@ FE/BF3D: 59 59 09     EOR $0959,Y
 FE/BF40: 00 52        BRK $52
 FE/BF42: 58           CLI
 FE/BF43: BF 48 3F 15  LDA $153F48,X
-FE/BF47: 30 00        BMI $BF49
+FE/BF47: 30 00        BMI Local_FEBF49
 FE/BF49: 01 BF        ORA ($BF,X)
 FE/BF4B: 18           CLC
 FE/BF4C: 51 52        EOR ($52),Y
@@ -116,7 +116,7 @@ FE/BF5A: 5D 51 51     EOR $5151,X
 FE/BF5D: 54 10 54     MVN $10,$54
 FE/BF60: 54 51 53     MVN $51,$53
 FE/BF63: 08           PHP
-FE/BF64: 50 53        BVC $BFB9
+FE/BF64: 50 53        BVC Local_FEBFB9
 FE/BF66: 59 58 08     EOR $0858,Y
 FE/BF69: 14 54        TRB $54
 FE/BF6B: 54 67 04     MVN $67,$04
@@ -129,5 +129,5 @@ FE/BF78: 08           PHP
 FE/BF79: 21 00        AND ($00,X)
 FE/BF7B: 3D 00 2C     AND $2C00,X
 FE/BF7E: 54 52 29     MVN $52,$29
-FE/BF81: 30 08        BMI $BF8B
+FE/BF81: 30 08        BMI Local_FEBF8B
 FE/BF83: 40           RTI

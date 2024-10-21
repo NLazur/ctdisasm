@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 25B3
 Routine_D025B3:
 D0/25B3: C0 40 C0     CPY #$C040
-D0/25B6: 80 80        BRA $2538
+D0/25B6: 80 80        BRA Local_D02538
 D0/25B8: 5E 62 5A     LSR $5A62,X
 D0/25BB: 66 BC        ROR $BC
 D0/25BD: C4 BC        CPY $BC
@@ -13,12 +13,12 @@ D0/25C6: 68           PLA
 D0/25C7: 98           TYA
 D0/25C8: 06 06        ASL $06
 D0/25CA: 09 09 10     ORA #$1009
-D0/25CD: 10 00        BPL $25CF
-D0/25CF: 10 30        BPL $2601
-D0/25D1: 30 10        BMI $25E3
-D0/25D3: 30 50        BMI $2625
-D0/25D5: 70 50        BVS $2627
-D0/25D7: 70 AA        BVS $2583
+D0/25CD: 10 00        BPL Local_D025CF
+D0/25CF: 10 30        BPL Local_D02601
+D0/25D1: 30 10        BMI Local_D025E3
+D0/25D3: 30 50        BMI Local_D02625
+D0/25D5: 70 50        BVS Local_D02627
+D0/25D7: 70 AA        BVS Local_D02583
 D0/25D9: B6 9E        LDX $9E,Y
 D0/25DB: 92 55        STA ($55)
 D0/25DD: 5B           TCD
@@ -43,7 +43,7 @@ D0/2604: 05 06        ORA $06
 D0/2606: 04 07        TSB $07
 D0/2608: 0E 0E 28     ASL $280E
 D0/260B: 38           SEC
-D0/260C: 50 70        BVC $267E
+D0/260C: 50 70        BVC Local_D0267E
 D0/260E: A0 E0        LDY #$E0
 D0/2610: A0 60        LDY #$60
 D0/2612: 40           RTI

@@ -5,11 +5,11 @@ CD/121A: 12 75        ORA ($75)
 CD/121C: 12 29        ORA ($29)
 CD/121E: 12 21        ORA ($21)
 CD/1220: 12 5A        ORA ($5A)
-CD/1222: 20 29 12     JSR $1229
+CD/1222: 20 29 12     JSR Local_CD1229
 CD/1225: 7A           PLY
-CD/1226: 4C 7A 12     JMP $127A
+CD/1226: 4C 7A 12     JMP Local_CD127A
 CD/1229: 5A           PHY
-CD/122A: 20 B8 12     JSR $12B8
+CD/122A: 20 B8 12     JSR Local_CD12B8
 CD/122D: 7A           PLY
 CD/122E: B9 00 2D     LDA $2D00,Y
 CD/1231: 85 69        STA $69

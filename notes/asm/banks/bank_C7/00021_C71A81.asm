@@ -88,7 +88,7 @@ C7/1B28: 00 24        BRK $24
 C7/1B2A: 4B           PHK
 C7/1B2B: 78           SEI
 C7/1B2C: 26 47        ROL $47
-C7/1B2E: 50 00        BVC $1B30
+C7/1B2E: 50 00        BVC Local_C71B30
 C7/1B30: 00 00        BRK $00
 C7/1B32: 27 48        AND [$48]
 C7/1B34: 40           RTI

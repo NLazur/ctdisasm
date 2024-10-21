@@ -2,11 +2,11 @@
 Routine_FEA176:
 FE/A176: E0 1C        CPX #$1C
 FE/A178: CA           DEX
-FE/A179: 3C E4 14     BIT $14E4,X
+FE/A179: 3C E4 14     BIT Local_FE14E4,X
 FE/A17C: 00 47        BRK $47
-FE/A17E: 70 BF        BVS $A13F
+FE/A17E: 70 BF        BVS Local_FEA13F
 FE/A180: C0 2F        CPY #$2F
-FE/A182: 30 0C        BMI $A190
+FE/A182: 30 0C        BMI Local_FEA190
 FE/A184: 18           CLC
 FE/A185: 48           PHA
 FE/A186: 0A           ASL
@@ -39,14 +39,14 @@ FE/A1BB: F6 0F        INC $0F,X
 FE/A1BD: C2 3C        REP #$3C
 FE/A1BF: 3B           TSC
 FE/A1C0: C7 B5        CMP [$B5]
-FE/A1C2: B0 45        BCS $A209
+FE/A1C2: B0 45        BCS Local_FEA209
 FE/A1C4: 46 1A        LSR $1A
 FE/A1C6: 02 4C        COP $4C
 FE/A1C8: 12 FC        ORA ($FC)
 FE/A1CA: 00 4D        BRK $4D
-FE/A1CC: 90 12        BCC $A1E0
-FE/A1CE: 10 00        BPL $A1D0
-FE/A1D0: F0 E8        BEQ $A1BA
+FE/A1CC: 90 12        BCC Local_FEA1E0
+FE/A1CE: 10 00        BPL Local_FEA1D0
+FE/A1D0: F0 E8        BEQ Local_FEA1BA
 FE/A1D2: 18           CLC
 FE/A1D3: FC 82 2C     JSR ($2C82,X)
 FE/A1D6: 2A           ROL
@@ -66,7 +66,7 @@ FE/A1F3: 02 2D        COP $2D
 FE/A1F5: 12 7B        ORA ($7B)
 FE/A1F7: 00 00        BRK $00
 FE/A1F9: 7D 3A 1F     ADC $1F3A,X
-FE/A1FC: 3C 07 1E     BIT $1E07,X
+FE/A1FC: 3C 07 1E     BIT Local_FE1E07,X
 FE/A1FF: 01 06        ORA ($06,X)
 FE/A201: 0F 91 02 35  ORA $350291
 FE/A205: 03 2B        ORA $2B,S
@@ -77,12 +77,12 @@ FE/A20D: 0F 7F CF CF  ORA $CFCF7F
 FE/A211: B8           CLV
 FE/A212: B8           CLV
 FE/A213: 2A           ROL
-FE/A214: 10 6C        BPL $A282
+FE/A214: 10 6C        BPL Local_FEA282
 FE/A216: 00 00        BRK $00
 FE/A218: F4 F4 01     PEA $01F4
 FE/A21B: FF 00 EF 40  SBC $40EF00,X
-FE/A21F: 90 FF        BCC $A220
-FE/A221: 30 78        BMI $A29B
+FE/A21F: 90 FF        BCC Local_FEA220
+FE/A221: 30 78        BMI Local_FEA29B
 FE/A223: C0 10 6E     CPY #$6E10
 FE/A226: 02 30        COP $30
 FE/A228: C8           INY
@@ -97,7 +97,7 @@ FE/A23A: FE 5C A3     INC $A35C,X
 FE/A23D: EA           NOP
 FE/A23E: F6 18        INC $18,X
 FE/A240: CC F2 80     CPY $80F2
-FE/A243: 3C 00 84     BIT $8400,X
+FE/A243: 3C 00 84     BIT Local_FE8400,X
 FE/A246: 0B           PHD
 FE/A247: 8E 7C C3     STX $C37C
 FE/A24A: 40           RTI

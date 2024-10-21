@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 8385
 Routine_C08385:
 C0/8385: A2 80        LDX #$80
-C0/8387: D0 8E        BNE $8317
+C0/8387: D0 8E        BNE Local_C08317
 C0/8389: 81 21        STA ($21,X)
 C0/838B: A9 00        LDA #$00
 C0/838D: 8D 83 21     STA $2183
@@ -12,7 +12,7 @@ C0/8396: 85 5C        STA $5C
 C0/8398: A5 16        LDA $16
 C0/839A: 3A           DEC
 C0/839B: 85 5A        STA $5A
-C0/839D: 20 A9 7B     JSR $7BA9
+C0/839D: 20 A9 7B     JSR Local_C07BA9
 C0/83A0: A9 02        LDA #$02
 C0/83A2: 04 7A        TSB $7A
 C0/83A4: 60           RTS

@@ -8,14 +8,14 @@ FD/1D51: AA           TAX
 FD/1D52: 14 61        TRB $61
 FD/1D54: 1D DA C3     ORA $C3DA,X
 FD/1D57: 07 02        ORA [$02]
-FD/1D59: 10 38        BPL $1D93
+FD/1D59: 10 38        BPL Local_FD1D93
 FD/1D5B: 00 38        BRK $38
-FD/1D5D: 30 58        BMI $1DB7
+FD/1D5D: 30 58        BMI Local_FD1DB7
 FD/1D5F: 00 BC        BRK $BC
 FD/1D61: 18           CLC
 FD/1D62: 7C A0 FE     JMP ($FEA0,X)
 FD/1D65: 04 F4        TSB $F4
-FD/1D67: 50 00        BVC $1D69
+FD/1D67: 50 00        BVC Local_FD1D69
 FD/1D69: D4 40        PEI $40
 FD/1D6B: 84 10        STY $10
 FD/1D6D: 44 08 24     MVP $08,$24

@@ -1,7 +1,7 @@
 ; Bank: CC | Start Address: E22E
 Routine_CCE22E:
 CC/E22E: A9 01 8F     LDA #$8F01
-CC/E231: 70 43        BVS $E276
+CC/E231: 70 43        BVS Local_CCE276
 CC/E233: 00 A9        BRK $A9
 CC/E235: 18           CLC
 CC/E236: 8F 71 43 00  STA $004371

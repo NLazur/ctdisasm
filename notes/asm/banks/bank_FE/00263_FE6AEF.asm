@@ -1,7 +1,7 @@
 ; Bank: FE | Start Address: 6AEF
 Routine_FE6AEF:
 FE/6AEF: 0E A7 17     ASL $17A7
-FE/6AF2: F0 7A        BEQ $6B6E
+FE/6AF2: F0 7A        BEQ Local_FE6B6E
 FE/6AF4: 88           DEY
 FE/6AF5: F6 05        INC $05,X
 FE/6AF7: 7C D8 86     JMP ($86D8,X)

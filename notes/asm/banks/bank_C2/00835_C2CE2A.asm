@@ -14,7 +14,7 @@ C2/CE3C: 7B           TDC
 C2/CE3D: E9 3F 00     SBC #$003F
 C2/CE40: 5B           TCD
 C2/CE41: C9 00 18     CMP #$1800
-C2/CE44: B0 EA        BCS $CE30
+C2/CE44: B0 EA        BCS Local_C2CE30
 C2/CE46: 2B           PLD
 C2/CE47: 28           PLP
 C2/CE48: 60           RTS

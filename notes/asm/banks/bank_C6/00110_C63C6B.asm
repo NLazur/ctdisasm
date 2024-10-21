@@ -5,7 +5,7 @@ C6/3C6D: 01 70        ORA ($70,X)
 C6/3C6F: 08           PHP
 C6/3C70: 61 00        ADC ($00,X)
 C6/3C72: 62 00 71     PER $C6AD75
-C6/3C75: 10 00        BPL $3C77
+C6/3C75: 10 00        BPL Local_C63C77
 C6/3C77: 72 00        ADC ($00)
 C6/3C79: 63 EC        ADC $EC,S
 C6/3C7B: 00 73        BRK $73

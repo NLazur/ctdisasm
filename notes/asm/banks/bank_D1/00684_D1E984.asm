@@ -11,7 +11,7 @@ D1/E995: 9D 40 22     STA $2240,X
 D1/E998: E8           INX
 D1/E999: E8           INX
 D1/E99A: E0 60 00     CPX #$0060
-D1/E99D: D0 EF        BNE $E98E
+D1/E99D: D0 EF        BNE Local_D1E98E
 D1/E99F: 7B           TDC
 D1/E9A0: E2 20        SEP #$20
 D1/E9A2: 7B           TDC
@@ -20,7 +20,7 @@ D1/E9A4: BD 20 05     LDA $0520,X
 D1/E9A7: 9D 44 05     STA $0544,X
 D1/E9AA: E8           INX
 D1/E9AB: E0 24 00     CPX #$0024
-D1/E9AE: D0 F4        BNE $E9A4
+D1/E9AE: D0 F4        BNE Local_D1E9A4
 D1/E9B0: AD 45 05     LDA $0545
 D1/E9B3: 38           SEC
 D1/E9B4: E9 30        SBC #$30

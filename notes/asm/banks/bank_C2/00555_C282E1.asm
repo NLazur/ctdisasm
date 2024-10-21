@@ -12,12 +12,12 @@ C2/82F6: A9 00 00     LDA #$0000
 C2/82F9: E2 20        SEP #$20
 C2/82FB: BD 2A 00     LDA $002A,X
 C2/82FE: C9 AE        CMP #$AE
-C2/8300: 90 0F        BCC $8311
+C2/8300: 90 0F        BCC Local_C28311
 C2/8302: C9 B3        CMP #$B3
-C2/8304: B0 0B        BCS $8311
+C2/8304: B0 0B        BCS Local_C28311
 C2/8306: A8           TAY
 C2/8307: B9 F6 03     LDA $03F6,Y
-C2/830A: F0 05        BEQ $8311
+C2/830A: F0 05        BEQ Local_C28311
 C2/830C: A9 80        LDA #$80
 C2/830E: 99 A9 27     STA $27A9,Y
 C2/8311: C2 20        REP #$20
@@ -26,6 +26,6 @@ C2/8314: 18           CLC
 C2/8315: 69 50 00     ADC #$0050
 C2/8318: AA           TAX
 C2/8319: C9 30 28     CMP #$2830
-C2/831C: 90 D8        BCC $82F6
+C2/831C: 90 D8        BCC Local_C282F6
 C2/831E: 28           PLP
 C2/831F: 60           RTS

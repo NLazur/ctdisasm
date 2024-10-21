@@ -9,7 +9,7 @@ D1/F110: A0 00        LDY #$00
 D1/F112: BB           TYX
 D1/F113: AD 7C 00     LDA $007C
 D1/F116: 29 01        AND #$01
-D1/F118: F0 4B        BEQ $F165
+D1/F118: F0 4B        BEQ Local_D1F165
 D1/F11A: B9 A1 C5     LDA $C5A1,Y
 D1/F11D: 75 00        ADC $00,X
 D1/F11F: 99 A1 C5     STA $C5A1,Y
@@ -39,7 +39,7 @@ D1/F15B: C8           INY
 D1/F15C: C8           INY
 D1/F15D: C8           INY
 D1/F15E: C8           INY
-D1/F15F: D0 B9        BNE $F11A
+D1/F15F: D0 B9        BNE Local_D1F11A
 D1/F161: 2B           PLD
 D1/F162: C2 10        REP #$10
 D1/F164: 6B           RTL

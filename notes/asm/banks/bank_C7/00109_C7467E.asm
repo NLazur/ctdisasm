@@ -71,9 +71,9 @@ C7/4704: 46 F0        LSR $F0
 C7/4706: 46 00        LSR $00
 C7/4708: 00 00        BRK $00
 C7/470A: 00 C4        BRK $C4
-C7/470C: 3C C8 0C     BIT $0CC8,X
+C7/470C: 3C C8 0C     BIT Local_C70CC8,X
 C7/470F: 18           CLC
-C7/4710: 50 EB        BVC $46FD
+C7/4710: 50 EB        BVC Local_C746FD
 C7/4712: DC 10 D6     JMP [$D610]
 C7/4715: 03 CB        ORA $CB,S
 C7/4717: 00 08        BRK $08
@@ -92,7 +92,7 @@ C7/4730: DD 0A E0     CMP $E00A,X
 C7/4733: 1C 09 EB     TRB $EB09
 C7/4736: C1 DB        CMP ($DB,X)
 C7/4738: 04 C4        TSB $C4
-C7/473A: 50 DC        BVC $4718
+C7/473A: 50 DC        BVC Local_C74718
 C7/473C: 05 D7        ORA $D7
 C7/473E: D4 DD        PEI $DD
 C7/4740: 0A           ASL

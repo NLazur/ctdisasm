@@ -104,14 +104,14 @@ CD/B45B: B6 86        LDX $86,Y
 CD/B45D: B6 D4        LDX $D4,Y
 CD/B45F: 97 27        STA [$27],Y
 CD/B461: 34 00        BIT $00,X
-CD/B463: 80 02        BRA $B467
+CD/B463: 80 02        BRA Local_CDB467
 CD/B465: 69 36        ADC #$36
 CD/B467: 43 00        EOR $00,S
-CD/B469: F0 F0        BEQ $B45B
+CD/B469: F0 F0        BEQ Local_CDB45B
 CD/B46B: 72 16        ADC ($16)
 CD/B46D: 06 07        ASL $07
-CD/B46F: 20 0F 36     JSR $360F
-CD/B472: 20 0A 43     JSR $430A
+CD/B46F: 20 0F 36     JSR Local_CD360F
+CD/B472: 20 0A 43     JSR Local_CD430A
 CD/B475: 00 00        BRK $00
 CD/B477: 00 20        BRK $20
 CD/B479: 1E 72 15     ASL $1572,X
@@ -119,10 +119,10 @@ CD/B47C: 36 06        ROL $06,X
 CD/B47E: 07 24        ORA [$24]
 CD/B480: 04 43        TSB $43
 CD/B482: 00 10        BRK $10
-CD/B484: F0 72        BEQ $B4F8
+CD/B484: F0 72        BEQ Local_CDB4F8
 CD/B486: 17 36        ORA [$36],Y
 CD/B488: 06 07        ASL $07
-CD/B48A: 20 1E 36     JSR $361E
+CD/B48A: 20 1E 36     JSR Local_CD361E
 CD/B48D: 24 07        BIT $07
 CD/B48F: 43 00        EOR $00,S
 CD/B491: 00 00        BRK $00
@@ -131,17 +131,17 @@ CD/B495: 36 06        ROL $06,X
 CD/B497: 07 20        ORA [$20]
 CD/B499: 0A           ASL
 CD/B49A: 43 00        EOR $00,S
-CD/B49C: F0 F0        BEQ $B48E
-CD/B49E: 20 1E 72     JSR $721E
+CD/B49C: F0 F0        BEQ Local_CDB48E
+CD/B49E: 20 1E 72     JSR Local_CD721E
 CD/B4A1: 16 36        ASL $36,X
 CD/B4A3: 06 07        ASL $07
 CD/B4A5: 24 0A        BIT $0A
-CD/B4A7: 80 12        BRA $B4BB
+CD/B4A7: 80 12        BRA Local_CDB4BB
 CD/B4A9: 69 37        ADC #$37
 CD/B4AB: 00 28        BRK $28
 CD/B4AD: 72 15        ADC ($15)
 CD/B4AF: 06 03        ASL $03
-CD/B4B1: 20 20 50     JSR $5020
+CD/B4B1: 20 20 50     JSR Local_CD5020
 CD/B4B4: 2E 01 00     ROL $0001
 CD/B4B7: 24 02        BIT $02
 CD/B4B9: 06 05        ASL $05
@@ -153,10 +153,10 @@ CD/B4C4: 00 73        BRK $73
 CD/B4C6: 00 24        BRK $24
 CD/B4C8: 02 78        COP $78
 CD/B4CA: 74 1A        STZ $1A,X
-CD/B4CC: 70 02        BVS $B4D0
+CD/B4CC: 70 02        BVS Local_CDB4D0
 CD/B4CE: 05 0C        ORA $0C
-CD/B4D0: 10 50        BPL $B522
-CD/B4D2: 90 85        BCC $B459
+CD/B4D0: 10 50        BPL Local_CDB522
+CD/B4D2: 90 85        BCC Local_CDB459
 CD/B4D4: A0 0D        LDY #$0D
 CD/B4D6: 02 06        COP $06
 CD/B4D8: A8           TAY
@@ -164,9 +164,9 @@ CD/B4D9: 08           PHP
 CD/B4DA: 71 24        ADC ($24),Y
 CD/B4DC: 05 78        ORA $78
 CD/B4DE: 74 1A        STZ $1A,X
-CD/B4E0: 70 02        BVS $B4E4
+CD/B4E0: 70 02        BVS Local_CDB4E4
 CD/B4E2: 05 0C        ORA $0C
-CD/B4E4: 10 A0        BPL $B486
+CD/B4E4: 10 A0        BPL Local_CDB486
 CD/B4E6: A0 85        LDY #$85
 CD/B4E8: A0 0D        LDY #$0D
 CD/B4EA: 02 06        COP $06
@@ -176,10 +176,10 @@ CD/B4EE: 71 24        ADC ($24),Y
 CD/B4F0: 08           PHP
 CD/B4F1: 78           SEI
 CD/B4F2: 74 1A        STZ $1A,X
-CD/B4F4: 70 02        BVS $B4F8
+CD/B4F4: 70 02        BVS Local_CDB4F8
 CD/B4F6: 05 0C        ORA $0C
-CD/B4F8: 10 90        BPL $B48A
-CD/B4FA: B0 85        BCS $B481
+CD/B4F8: 10 90        BPL Local_CDB48A
+CD/B4FA: B0 85        BCS Local_CDB481
 CD/B4FC: A0 0D        LDY #$0D
 CD/B4FE: 02 06        COP $06
 CD/B500: A8           TAY
@@ -187,42 +187,42 @@ CD/B501: 08           PHP
 CD/B502: 71 00        ADC ($00),Y
 CD/B504: 73 00        ADC ($00,S),Y
 CD/B506: 24 02        BIT $02
-CD/B508: 20 03 1A     JSR $1A03
-CD/B50B: 70 02        BVS $B50F
+CD/B508: 20 03 1A     JSR Local_CD1A03
+CD/B50B: 70 02        BVS Local_CDB50F
 CD/B50D: 05 0C        ORA $0C
-CD/B50F: 10 50        BPL $B561
-CD/B511: 90 85        BCC $B498
-CD/B513: 20 0D 02     JSR $020D
+CD/B50F: 10 50        BPL Local_CDB561
+CD/B511: 90 85        BCC Local_CDB498
+CD/B513: 20 0D 02     JSR Local_CD020D
 CD/B516: 06 A8        ASL $A8
 CD/B518: 08           PHP
 CD/B519: 71 24        ADC ($24),Y
 CD/B51B: 05 20        ORA $20
 CD/B51D: 03 1A        ORA $1A,S
-CD/B51F: 70 02        BVS $B523
+CD/B51F: 70 02        BVS Local_CDB523
 CD/B521: 05 0C        ORA $0C
-CD/B523: 10 A0        BPL $B4C5
+CD/B523: 10 A0        BPL Local_CDB4C5
 CD/B525: A0 85        LDY #$85
-CD/B527: 20 0D 02     JSR $020D
+CD/B527: 20 0D 02     JSR Local_CD020D
 CD/B52A: 06 A8        ASL $A8
 CD/B52C: 08           PHP
 CD/B52D: 71 24        ADC ($24),Y
 CD/B52F: 08           PHP
-CD/B530: 20 03 1A     JSR $1A03
-CD/B533: 70 02        BVS $B537
+CD/B530: 20 03 1A     JSR Local_CD1A03
+CD/B533: 70 02        BVS Local_CDB537
 CD/B535: 05 0C        ORA $0C
-CD/B537: 10 90        BPL $B4C9
-CD/B539: B0 85        BCS $B4C0
-CD/B53B: 20 0D 02     JSR $020D
+CD/B537: 10 90        BPL Local_CDB4C9
+CD/B539: B0 85        BCS Local_CDB4C0
+CD/B53B: 20 0D 02     JSR Local_CD020D
 CD/B53E: 06 A8        ASL $A8
 CD/B540: 08           PHP
 CD/B541: 71 00        ADC ($00),Y
 CD/B543: 73 00        ADC ($00,S),Y
 CD/B545: 24 02        BIT $02
-CD/B547: 20 06 1A     JSR $1A06
-CD/B54A: 70 02        BVS $B54E
+CD/B547: 20 06 1A     JSR Local_CD1A06
+CD/B54A: 70 02        BVS Local_CDB54E
 CD/B54C: 05 0C        ORA $0C
-CD/B54E: 10 50        BPL $B5A0
-CD/B550: 90 85        BCC $B4D7
+CD/B54E: 10 50        BPL Local_CDB5A0
+CD/B550: 90 85        BCC Local_CDB4D7
 CD/B552: E0 0D        CPX #$0D
 CD/B554: 02 06        COP $06
 CD/B556: A8           TAY
@@ -230,9 +230,9 @@ CD/B557: 08           PHP
 CD/B558: 71 24        ADC ($24),Y
 CD/B55A: 05 20        ORA $20
 CD/B55C: 06 1A        ASL $1A
-CD/B55E: 70 02        BVS $B562
+CD/B55E: 70 02        BVS Local_CDB562
 CD/B560: 05 0C        ORA $0C
-CD/B562: 10 A0        BPL $B504
+CD/B562: 10 A0        BPL Local_CDB504
 CD/B564: A0 85        LDY #$85
 CD/B566: E0 0D        CPX #$0D
 CD/B568: 02 06        COP $06
@@ -240,11 +240,11 @@ CD/B56A: A8           TAY
 CD/B56B: 08           PHP
 CD/B56C: 71 24        ADC ($24),Y
 CD/B56E: 08           PHP
-CD/B56F: 20 06 1A     JSR $1A06
-CD/B572: 70 02        BVS $B576
+CD/B56F: 20 06 1A     JSR Local_CD1A06
+CD/B572: 70 02        BVS Local_CDB576
 CD/B574: 05 0C        ORA $0C
-CD/B576: 10 90        BPL $B508
-CD/B578: B0 85        BCS $B4FF
+CD/B576: 10 90        BPL Local_CDB508
+CD/B578: B0 85        BCS Local_CDB4FF
 CD/B57A: E0 0D        CPX #$0D
 CD/B57C: 02 06        COP $06
 CD/B57E: A8           TAY
@@ -252,9 +252,9 @@ CD/B57F: 08           PHP
 CD/B580: 71 00        ADC ($00),Y
 CD/B582: 73 00        ADC ($00,S),Y
 CD/B584: 24 02        BIT $02
-CD/B586: 20 09 1A     JSR $1A09
-CD/B589: 70 02        BVS $B58D
+CD/B586: 20 09 1A     JSR Local_CD1A09
+CD/B589: 70 02        BVS Local_CDB58D
 CD/B58B: 05 0C        ORA $0C
-CD/B58D: 10 50        BPL $B5DF
-CD/B58F: 90 85        BCC $B516
+CD/B58D: 10 50        BPL Local_CDB5DF
+CD/B58F: 90 85        BCC Local_CDB516
 CD/B591: 60           RTS

@@ -3,7 +3,7 @@ Routine_C03D07:
 C0/3D07: BB           TYX
 C0/3D08: E8           INX
 C0/3D09: BF 01 20 7F  LDA $7F2001,X
-C0/3D0D: F0 5C        BEQ $3D6B
+C0/3D0D: F0 5C        BEQ Local_C03D6B
 C0/3D0F: E8           INX
 C0/3D10: 85 22        STA $22
 C0/3D12: 29 E0        AND #$E0
@@ -13,8 +13,8 @@ C0/3D18: 29 1F        AND #$1F
 C0/3D1A: 05 D9        ORA $D9
 C0/3D1C: 85 21        STA $21
 C0/3D1E: BF 01 20 7F  LDA $7F2001,X
-C0/3D22: F0 20        BEQ $3D44
-C0/3D24: 30 2A        BMI $3D50
+C0/3D22: F0 20        BEQ Local_C03D44
+C0/3D24: 30 2A        BMI Local_C03D50
 C0/3D26: 85 23        STA $23
 C0/3D28: 85 24        STA $24
 C0/3D2A: A9 17        LDA #$17

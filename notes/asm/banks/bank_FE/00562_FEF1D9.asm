@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: F1D9
 Routine_FEF1D9:
-FE/F1D9: 20 80 54     JSR $5480
+FE/F1D9: 20 80 54     JSR Local_FE5480
 FE/F1DC: 0F 04 69 44  ORA $446904
 FE/F1E0: 2E 80 00     ROL $0080
 FE/F1E3: 40           RTI

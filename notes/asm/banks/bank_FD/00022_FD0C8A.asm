@@ -16,7 +16,7 @@ FD/0CA1: 21 22        AND ($22,X)
 FD/0CA3: 11 11        ORA ($11),Y
 FD/0CA5: 23 22        AND $22,S
 FD/0CA7: 21 22        AND ($22,X)
-FD/0CA9: 80 21        BRA $0CCC
+FD/0CA9: 80 21        BRA Local_FD0CCC
 FD/0CAB: 33 31        AND ($31,S),Y
 FD/0CAD: 33 22        AND ($22,S),Y
 FD/0CAF: 35 53        AND $53,X

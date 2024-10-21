@@ -1,13 +1,13 @@
 ; Bank: C3 | Start Address: 3B13
 Routine_C33B13:
-C3/3B13: 10 00        BPL $3B15
+C3/3B13: 10 00        BPL Local_C33B15
 C3/3B15: 9A           TXS
 C3/3B16: 2A           ROL
-C3/3B17: 50 10        BVC $3B29
+C3/3B17: 50 10        BVC Local_C33B29
 C3/3B19: 9C 2A 60     STZ $602A
-C3/3B1C: 10 F8        BPL $3B16
+C3/3B1C: 10 F8        BPL Local_C33B16
 C3/3B1E: A2 00        LDX #$00
-C3/3B20: 70 B1        BVS $3AD3
+C3/3B20: 70 B1        BVS Local_C33AD3
 C3/3B22: 0F D7 FF C5  ORA $C5FFD7
 C3/3B26: 2D C6 2F     AND $2FC6
 C3/3B29: DD 4F 00     CMP $004F,X

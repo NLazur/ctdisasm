@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 7528
 Routine_D07528:
-D0/7528: 80 00        BRA $752A
+D0/7528: 80 00        BRA Local_D0752A
 D0/752A: 00 00        BRK $00
 D0/752C: A0 00 40     LDY #$4000
 D0/752F: 00 3F        BRK $3F
@@ -16,7 +16,7 @@ D0/7544: 00 00        BRK $00
 D0/7546: 00 00        BRK $00
 D0/7548: 7A           PLY
 D0/7549: FD 1E E3     SBC $E31E,X
-D0/754C: F0 0E        BEQ $755C
+D0/754C: F0 0E        BEQ Local_D0755C
 D0/754E: 00 F0        BRK $F0
 D0/7550: 00 00        BRK $00
 D0/7552: 00 00        BRK $00
@@ -26,14 +26,14 @@ D0/7558: FF F6 10 00  SBC $0010F6,X
 D0/755C: 00 00        BRK $00
 D0/755E: 00 00        BRK $00
 D0/7560: A0 F8 00     LDY #$00F8
-D0/7563: D0 00        BNE $7565
-D0/7565: 50 00        BVC $7567
-D0/7567: 20 00 00     JSR $0000
+D0/7563: D0 00        BNE Local_D07565
+D0/7565: 50 00        BVC Local_D07567
+D0/7567: 20 00 00     JSR Local_D00000
 D0/756A: 00 00        BRK $00
 D0/756C: 00 00        BRK $00
 D0/756E: 00 00        BRK $00
-D0/7570: 80 20        BRA $7592
-D0/7572: 20 00 00     JSR $0000
+D0/7570: 80 20        BRA Local_D07592
+D0/7572: 20 00 00     JSR Local_D00000
 D0/7575: 00 00        BRK $00
 D0/7577: 00 00        BRK $00
 D0/7579: 00 03        BRK $03

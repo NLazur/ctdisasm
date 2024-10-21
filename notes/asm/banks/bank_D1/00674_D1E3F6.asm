@@ -1,7 +1,7 @@
 ; Bank: D1 | Start Address: E3F6
 Routine_D1E3F6:
-D1/E3F6: 80 3F        BRA $E437
-D1/E3F8: 80 10        BRA $E40A
+D1/E3F6: 80 3F        BRA Local_D1E437
+D1/E3F8: 80 10        BRA Local_D1E40A
 D1/E3FA: 00 00        BRK $00
 D1/E3FC: 00 00        BRK $00
 D1/E3FE: 00 06        BRK $06
@@ -21,7 +21,7 @@ D1/E419: 00 7B        BRK $7B
 D1/E41B: 00 00        BRK $00
 D1/E41D: 00 00        BRK $00
 D1/E41F: 00 1F        BRK $1F
-D1/E421: 80 01        BRA $E424
+D1/E421: 80 01        BRA Local_D1E424
 D1/E423: 00 00        BRK $00
 D1/E425: 00 00        BRK $00
 D1/E427: 00 46        BRK $46
@@ -53,7 +53,7 @@ D1/E455: 00 00        BRK $00
 D1/E457: 00 00        BRK $00
 D1/E459: 00 00        BRK $00
 D1/E45B: 00 79        BRK $79
-D1/E45D: 80 66        BRA $E4C5
+D1/E45D: 80 66        BRA Local_D1E4C5
 D1/E45F: 00 04        BRK $04
 D1/E461: 00 00        BRK $00
 D1/E463: 00 00        BRK $00
@@ -71,7 +71,7 @@ D1/E475: 00 00        BRK $00
 D1/E477: 00 00        BRK $00
 D1/E479: 00 00        BRK $00
 D1/E47B: 00 71        BRK $71
-D1/E47D: 80 11        BRA $E490
+D1/E47D: 80 11        BRA Local_D1E490
 D1/E47F: 00 00        BRK $00
 D1/E481: 00 00        BRK $00
 D1/E483: 00 00        BRK $00
@@ -85,8 +85,8 @@ D1/E491: 00 00        BRK $00
 D1/E493: 00 00        BRK $00
 D1/E495: 00 00        BRK $00
 D1/E497: 00 20        BRK $20
-D1/E499: 80 60        BRA $E4FB
-D1/E49B: 80 00        BRA $E49D
+D1/E499: 80 60        BRA Local_D1E4FB
+D1/E49B: 80 00        BRA Local_D1E49D
 D1/E49D: 00 00        BRK $00
 D1/E49F: 00 00        BRK $00
 D1/E4A1: 00 00        BRK $00
@@ -95,12 +95,12 @@ D1/E4A5: CF CA C7 C7  CMP $C7C7CA
 D1/E4A9: 01 00        ORA ($00,X)
 D1/E4AB: 00 3F        BRK $3F
 D1/E4AD: 00 7F        BRK $7F
-D1/E4AF: 80 7F        BRA $E530
-D1/E4B1: 80 7F        BRA $E532
-D1/E4B3: 80 7F        BRA $E534
-D1/E4B5: 80 7F        BRA $E536
-D1/E4B7: 80 7F        BRA $E538
-D1/E4B9: 80 3F        BRA $E4FA
+D1/E4AF: 80 7F        BRA Local_D1E530
+D1/E4B1: 80 7F        BRA Local_D1E532
+D1/E4B3: 80 7F        BRA Local_D1E534
+D1/E4B5: 80 7F        BRA Local_D1E536
+D1/E4B7: 80 7F        BRA Local_D1E538
+D1/E4B9: 80 3F        BRA Local_D1E4FA
 D1/E4BB: 00 00        BRK $00
 D1/E4BD: 00 11        BRK $11
 D1/E4BF: 12 13        ORA ($13)
@@ -151,11 +151,11 @@ D1/E514: 00 00        BRK $00
 D1/E516: 00 00        BRK $00
 D1/E518: 00 4D        BRK $4D
 D1/E51A: 08           PHP
-D1/E51B: 50 01        BVC $E51E
-D1/E51D: 30 00        BMI $E51F
-D1/E51F: 30 00        BMI $E521
-D1/E521: 30 00        BMI $E523
-D1/E523: 20 00 20     JSR $2000
+D1/E51B: 50 01        BVC Local_D1E51E
+D1/E51D: 30 00        BMI Local_D1E51F
+D1/E51F: 30 00        BMI Local_D1E521
+D1/E521: 30 00        BMI Local_D1E523
+D1/E523: 20 00 20     JSR Local_D12000
 D1/E526: 00 20        BRK $20
 D1/E528: 00 00        BRK $00
 D1/E52A: 00 00        BRK $00
@@ -167,6 +167,6 @@ D1/E534: 00 00        BRK $00
 D1/E536: 00 00        BRK $00
 D1/E538: 00 00        BRK $00
 D1/E53A: 00 48        BRK $48
-D1/E53C: 90 50        BCC $E58E
+D1/E53C: 90 50        BCC Local_D1E58E
 D1/E53E: 09 41        ORA #$41
 D1/E540: 40           RTI

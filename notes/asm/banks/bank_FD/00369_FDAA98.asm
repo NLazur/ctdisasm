@@ -12,5 +12,5 @@ FD/AAA6: AA           TAX
 FD/AAA7: 7B           TDC
 FD/AAA8: E2 20        SEP #$20
 FD/AAAA: E0 00 04     CPX #$0400
-FD/AAAD: 90 EB        BCC $AA9A
+FD/AAAD: 90 EB        BCC Local_FDAA9A
 FD/AAAF: 6B           RTL

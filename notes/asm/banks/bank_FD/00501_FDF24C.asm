@@ -7,10 +7,10 @@ FD/F254: CA           DEX
 FD/F255: CA           DEX
 FD/F256: CA           DEX
 FD/F257: CA           DEX
-FD/F258: D0 F7        BNE $F251
+FD/F258: D0 F7        BNE Local_FDF251
 FD/F25A: A2 20 00     LDX #$0020
 FD/F25D: A9 55        LDA #$55
 FD/F25F: 9D FF 08     STA $08FF,X
 FD/F262: CA           DEX
-FD/F263: D0 FA        BNE $F25F
+FD/F263: D0 FA        BNE Local_FDF25F
 FD/F265: 60           RTS

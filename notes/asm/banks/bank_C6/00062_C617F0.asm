@@ -21,15 +21,15 @@ C6/1811: D8           CLD
 C6/1812: F8           SED
 C6/1813: A0 FF        LDY #$FF
 C6/1815: 05 3E        ORA $3E
-C6/1817: 10 78        BPL $1891
-C6/1819: 80 F8        BRA $1813
+C6/1817: 10 78        BPL Local_C61891
+C6/1819: 80 F8        BRA Local_C61813
 C6/181B: F8           SED
 C6/181C: F8           SED
 C6/181D: 98           TYA
 C6/181E: F8           SED
 C6/181F: B8           CLV
 C6/1820: F8           SED
-C6/1821: 20 03 0F     JSR $0F03
+C6/1821: 20 03 0F     JSR Local_C60F03
 C6/1824: FC 25 46     JSR ($4625,X)
 C6/1827: 34 8F        BIT $8F,X
 C6/1829: 9B           TXY
@@ -38,14 +38,14 @@ C6/182C: C7 27        CMP [$27]
 C6/182E: 7B           TDC
 C6/182F: 1F 60 3D 0B  ORA $0B3D60,X
 C6/1833: 1E 0F 0F     ASL $0F0F,X
-C6/1836: 10 06        BPL $183E
+C6/1836: 10 06        BPL Local_C6183E
 C6/1838: 7E 10 E7     ROR $E710,X
 C6/183B: 00 DF        BRK $DF
 C6/183D: 7B           TDC
 C6/183E: 7F 3F 3F 1B  ADC $1B3F3F,X
 C6/1842: 1F 0F 03 9E  ORA $9E030F,X
 C6/1846: 06 8E        ASL $8E
-C6/1848: 10 77        BPL $18C1
+C6/1848: 10 77        BPL Local_C618C1
 C6/184A: 0B           PHD
 C6/184B: DA           PHX
 C6/184C: E7 F8        SBC [$F8]
@@ -73,7 +73,7 @@ C6/1882: EE F1 28     INC $28F1
 C6/1885: F7 00        SBC [$00],Y
 C6/1887: A6 7F        LDX $7F
 C6/1889: A1 7E        LDA ($7E,X)
-C6/188B: 50 EF        BVC $187C
+C6/188B: 50 EF        BVC Local_C6187C
 C6/188D: C0 FF 00     CPY #$00FF
 C6/1890: AE 51 40     LDX $4051
 C6/1893: A0 49        LDY #$49

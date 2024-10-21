@@ -9,7 +9,7 @@ C3/3221: 8D 0D 21     STA $210D
 C3/3224: A5 03        LDA $03
 C3/3226: 05 10        ORA $10
 C3/3228: 04 8D        TSB $8D
-C3/322A: 10 0E        BPL $323A
+C3/322A: 10 0E        BPL Local_C3323A
 C3/322C: 21 A5        AND ($A5,X)
 C3/322E: 05 05        ORA $05
 C3/3230: 00 60        BRK $60

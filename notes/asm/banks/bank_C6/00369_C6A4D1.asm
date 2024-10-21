@@ -7,11 +7,11 @@ C6/A4D7: D9 46 DE     CMP $DE46,Y
 C6/A4DA: 0A           ASL
 C6/A4DB: 66 BF        ROR $BF
 C6/A4DD: 08           PHP
-C6/A4DE: 80 81        BRA $A461
+C6/A4DE: 80 81        BRA Local_C6A461
 C6/A4E0: 2B           PLD
-C6/A4E1: 90 05        BCC $A4E8
+C6/A4E1: 90 05        BCC Local_C6A4E8
 C6/A4E3: 02 80        COP $80
-C6/A4E5: D0 D0        BNE $A4B7
+C6/A4E5: D0 D0        BNE Local_C6A4B7
 C6/A4E7: 03 40        ORA $40,S
 C6/A4E9: 11 82        ORA ($82),Y
 C6/A4EB: 83 9B        STA $9B,S

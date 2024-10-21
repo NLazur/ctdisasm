@@ -12,7 +12,7 @@ D0/3250: 00 01        BRK $01
 D0/3252: 00 01        BRK $01
 D0/3254: 01 01        ORA ($01,X)
 D0/3256: 02 03        COP $03
-D0/3258: 80 8E        BRA $31E8
+D0/3258: 80 8E        BRA Local_D031E8
 D0/325A: 00 04        BRK $04
 D0/325C: 00 00        BRK $00
 D0/325E: 00 00        BRK $00
@@ -43,8 +43,8 @@ D0/328E: 28           PLP
 D0/328F: 38           SEC
 D0/3290: 48           PHA
 D0/3291: 78           SEI
-D0/3292: B0 D0        BCS $3264
-D0/3294: 50 B0        BVC $3246
+D0/3292: B0 D0        BCS Local_D03264
+D0/3294: 50 B0        BVC Local_D03246
 D0/3296: E0 20        CPX #$20
 D0/3298: 6D 9E B5     ADC $B59E
 D0/329B: CE 59 66     DEC $6659
@@ -54,9 +54,9 @@ D0/32A2: 8F F0 3F C0  STA $C03FF0
 D0/32A6: FF 00 84 86  SBC $868400,X
 D0/32AA: 64 64        STZ $64
 D0/32AC: 28           PLP
-D0/32AD: 3C 10 18     BIT $1810,X
+D0/32AD: 3C 10 18     BIT Local_D01810,X
 D0/32B0: 08           PHP
 D0/32B1: 08           PHP
 D0/32B2: 00 00        BRK $00
-D0/32B4: 20 30 40     JSR $4030
+D0/32B4: 20 30 40     JSR Local_D04030
 D0/32B7: 60           RTS

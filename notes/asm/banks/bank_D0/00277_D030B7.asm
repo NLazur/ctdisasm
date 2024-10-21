@@ -29,7 +29,7 @@ D0/30EF: 0B           PHD
 D0/30F0: 9B           TXY
 D0/30F1: 7C 47 C7     JMP ($C747,X)
 D0/30F4: E0 E0        CPX #$E0
-D0/30F6: 3C 3C 00     BIT $003C,X
+D0/30F6: 3C 3C 00     BIT Local_D0003C,X
 D0/30F9: 00 F8        BRK $F8
 D0/30FB: F8           SED
 D0/30FC: 00 00        BRK $00

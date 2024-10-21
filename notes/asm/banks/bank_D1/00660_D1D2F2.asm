@@ -1,7 +1,7 @@
 ; Bank: D1 | Start Address: D2F2
 Routine_D1D2F2:
 D1/D2F2: 69 68        ADC #$68
-D1/D2F4: 70 00        BVS $D2F6
+D1/D2F4: 70 00        BVS Local_D1D2F6
 D1/D2F6: 01 4D        ORA ($4D,X)
 D1/D2F8: C9 88        CMP #$88
 D1/D2FA: 01 30        ORA ($30,X)
@@ -22,7 +22,7 @@ D1/D316: 00 20        BRK $20
 D1/D318: 00 1E        BRK $1E
 D1/D31A: 1F 26 27 3C  ORA $3C2726,X
 D1/D31E: 3D 28 29     AND $2928,X
-D1/D321: 30 59        BMI $D37C
+D1/D321: 30 59        BMI Local_D1D37C
 D1/D323: 58           CLI
 D1/D324: 61 60        ADC ($60,X)
 D1/D326: 2A           ROL
@@ -46,7 +46,7 @@ D1/D34D: 1F F8 1F F8  ORA $F81FF8,X
 D1/D351: 1F F8 00 00  ORA $0000F8,X
 D1/D355: 00 00        BRK $00
 D1/D357: 00 00        BRK $00
-D1/D359: 90 14        BCC $D36F
+D1/D359: 90 14        BCC Local_D1D36F
 D1/D35B: 14 14        TRB $14
 D1/D35D: 14 14        TRB $14
 D1/D35F: 14 41        TRB $41
@@ -58,7 +58,7 @@ D1/D369: 14 02        TRB $02
 D1/D36B: 01 14        ORA ($14,X)
 D1/D36D: 14 84        TRB $84
 D1/D36F: CA           DEX
-D1/D370: 90 50        BCC $D3C2
+D1/D370: 90 50        BCC Local_D1D3C2
 D1/D372: 14 14        TRB $14
 D1/D374: 08           PHP
 D1/D375: 14 14        TRB $14
@@ -66,7 +66,7 @@ D1/D377: 14 14        TRB $14
 D1/D379: 14 88        TRB $88
 D1/D37B: 14 84        TRB $84
 D1/D37D: 4A           LSR
-D1/D37E: 10 14        BPL $D394
+D1/D37E: 10 14        BPL Local_D1D394
 D1/D380: 14 14        TRB $14
 D1/D382: 14 14        TRB $14
 D1/D384: 14 45        TRB $45
@@ -84,7 +84,7 @@ D1/D39C: 14 14        TRB $14
 D1/D39E: 14 08        TRB $08
 D1/D3A0: 14 14        TRB $14
 D1/D3A2: 8D 14 14     STA $1414
-D1/D3A5: 50 0A        BVC $D3B1
+D1/D3A5: 50 0A        BVC Local_D1D3B1
 D1/D3A7: 44 14 10     MVP $14,$10
 D1/D3AA: 14 14        TRB $14
 D1/D3AC: 14 4D        TRB $4D
@@ -95,7 +95,7 @@ D1/D3B3: 14 14        TRB $14
 D1/D3B5: 14 14        TRB $14
 D1/D3B7: CD 0E 14     CMP $140E
 D1/D3BA: 14 14        TRB $14
-D1/D3BC: 10 01        BPL $D3BF
+D1/D3BC: 10 01        BPL Local_D1D3BF
 D1/D3BE: 00 00        BRK $00
 D1/D3C0: 00 00        BRK $00
 D1/D3C2: 00 00        BRK $00
@@ -123,7 +123,7 @@ D1/D3F7: 14 4D        TRB $4D
 D1/D3F9: 0D 14 14     ORA $1414
 D1/D3FC: 14 08        TRB $08
 D1/D3FE: 14 14        TRB $14
-D1/D400: 90 45        BCC $D447
+D1/D400: 90 45        BCC Local_D1D447
 D1/D402: 0D 14 14     ORA $1414
 D1/D405: 14 14        TRB $14
 D1/D407: 88           DEY
@@ -135,7 +135,7 @@ D1/D40E: 14 14        TRB $14
 D1/D410: 14 14        TRB $14
 D1/D412: 45 0A        EOR $0A
 D1/D414: 0B           PHD
-D1/D415: 90 14        BCC $D42B
+D1/D415: 90 14        BCC Local_D1D42B
 D1/D417: 14 8A        TRB $8A
 D1/D419: 8B           PHB
 D1/D41A: 07 04        ORA [$04]
@@ -148,7 +148,7 @@ D1/D428: 14 14        TRB $14
 D1/D42A: 48           PHA
 D1/D42B: 14 14        TRB $14
 D1/D42D: 14 14        TRB $14
-D1/D42F: 50 14        BVC $D445
+D1/D42F: 50 14        BVC Local_D1D445
 D1/D431: 14 14        TRB $14
 D1/D433: 14 09        TRB $09
 D1/D435: 14 14        TRB $14
@@ -178,7 +178,7 @@ D1/D46D: 14 0E        TRB $0E
 D1/D46F: 45 0D        EOR $0D
 D1/D471: 02 03        COP $03
 D1/D473: 4D 14 14     EOR $1414
-D1/D476: D0 0A        BNE $D482
+D1/D476: D0 0A        BNE Local_D1D482
 D1/D478: 4A           LSR
 D1/D479: 05 14        ORA $14
 D1/D47B: 00 01        BRK $01
@@ -204,10 +204,10 @@ D1/D49C: 8D 14 49     STA $4914
 D1/D49F: 4A           LSR
 D1/D4A0: 0D 08 8A     ORA $8A08
 D1/D4A3: 8B           PHB
-D1/D4A4: 10 14        BPL $D4BA
+D1/D4A4: 10 14        BPL Local_D1D4BA
 D1/D4A6: CC 8A C4     CPY $C48A
 D1/D4A9: 14 45        TRB $45
-D1/D4AB: 10 14        BPL $D4C1
+D1/D4AB: 10 14        BPL Local_D1D4C1
 D1/D4AD: 00 01        BRK $01
 D1/D4AF: 14 8D        TRB $8D
 D1/D4B1: 06 14        ASL $14
@@ -234,7 +234,7 @@ D1/D4E0: 1F F8 00 00  ORA $0000F8,X
 D1/D4E4: 00 00        BRK $00
 D1/D4E6: 00 00        BRK $00
 D1/D4E8: 14 14        TRB $14
-D1/D4EA: 50 C8        BVC $D4B4
+D1/D4EA: 50 C8        BVC Local_D1D4B4
 D1/D4EC: 88           DEY
 D1/D4ED: 06 14        ASL $14
 D1/D4EF: 14 14        TRB $14
@@ -252,32 +252,32 @@ D1/D503: 06 07        ASL $07
 D1/D505: CC 14 4C     CPY $4C14
 D1/D508: 06 14        ASL $14
 D1/D50A: 14 08        TRB $08
-D1/D50C: 90 0E        BCC $D51C
+D1/D50C: 90 0E        BCC Local_D1D51C
 D1/D50E: 0F 0A 0A 0B  ORA $0B0A0A
 D1/D512: 0E 8A 4A     ASL $4A8A
-D1/D515: 10 88        BPL $D49F
+D1/D515: 10 88        BPL Local_D1D49F
 D1/D517: 94 94        STY $94,X
 D1/D519: 48           PHA
-D1/D51A: 90 14        BCC $D530
+D1/D51A: 90 14        BCC Local_D1D530
 D1/D51C: 14 14        TRB $14
 D1/D51E: 08           PHP
 D1/D51F: 8A           TXA
 D1/D520: 44 8A 8B     MVP $8A,$8B
-D1/D523: 10 88        BPL $D4AD
+D1/D523: 10 88        BPL Local_D1D4AD
 D1/D525: 0A           ASL
 D1/D526: 0B           PHD
 D1/D527: 45 10        EOR $10
 D1/D529: 14 0D        TRB $0D
-D1/D52B: 4C 14 84     JMP $8414
+D1/D52B: 4C 14 84     JMP Local_D18414
 D1/D52E: 14 48        TRB $48
 D1/D530: 14 08        TRB $08
-D1/D532: 90 08        BCC $D53C
+D1/D532: 90 08        BCC Local_D1D53C
 D1/D534: 14 8F        TRB $8F
 D1/D536: 45 14        EOR $14
 D1/D538: 14 50        TRB $50
 D1/D53A: 14 10        TRB $10
 D1/D53C: 88           DEY
-D1/D53D: 10 08        BPL $D547
+D1/D53D: 10 08        BPL Local_D1D547
 D1/D53F: 87 90        STA [$90]
 D1/D541: 8D 14 0D     STA $0D14
 D1/D544: 14 48        TRB $48
@@ -315,7 +315,7 @@ D1/D594: FF FF FF FF  SBC $FFFFFF,X
 D1/D598: FF FF FF FF  SBC $FFFFFF,X
 D1/D59C: 3F FF 1F F8  AND $F81FFF,X
 D1/D5A0: 03 C0        ORA $C0,S
-D1/D5A2: F0 FA        BEQ $D59E
+D1/D5A2: F0 FA        BEQ Local_D1D59E
 D1/D5A4: F9 F8 03     SBC $03F8,Y
 D1/D5A7: 04 05        TSB $05
 D1/D5A9: 06 07        ASL $07
@@ -327,7 +327,7 @@ D1/D5B3: 0B           PHD
 D1/D5B4: 0C 0D 0E     TSB $0E0D
 D1/D5B7: 0F F7 F6 F5  ORA $F5F6F7
 D1/D5BB: F4 F3 F2     PEA $F2F3
-D1/D5BE: 10 11        BPL $D5D1
+D1/D5BE: 10 11        BPL Local_D1D5D1
 D1/D5C0: 12 13        ORA ($13)
 D1/D5C2: 14 15        TRB $15
 D1/D5C4: 16 17        ASL $17,X
@@ -352,11 +352,11 @@ D1/D5EB: DA           PHX
 D1/D5EC: D9 D8 28     CMP $28D8,Y
 D1/D5EF: 29 2A        AND #$2A
 D1/D5F1: 2B           PLD
-D1/D5F2: 2C 2D 2E     BIT $2E2D
+D1/D5F2: 2C 2D 2E     BIT Local_D12E2D
 D1/D5F5: 2F D7 D6 D5  AND $D5D6D7
 D1/D5F9: D4 D3        PEI $D3
 D1/D5FB: D2 D1        CMP ($D1)
-D1/D5FD: D0 32        BNE $D631
+D1/D5FD: D0 32        BNE Local_D1D631
 D1/D5FF: 33 34        AND ($34,S),Y
 D1/D601: 35 36        AND $36,X
 D1/D603: 37 CF        AND [$CF],Y
@@ -365,7 +365,7 @@ D1/D608: CB           WAI
 D1/D609: CA           DEX
 D1/D60A: C9 C8        CMP #$C8
 D1/D60C: 3B           TSC
-D1/D60D: 3C 3D 3E     BIT $3E3D,X
+D1/D60D: 3C 3D 3E     BIT Local_D13E3D,X
 D1/D610: 31 C7        AND ($C7),Y
 D1/D612: C6 C5        DEC $C5
 D1/D614: C4 C3        CPY $C3
@@ -421,5 +421,5 @@ D1/D6B5: FF FF FF FF  SBC $FFFFFF,X
 D1/D6B9: FF FF FF FF  SBC $FFFFFF,X
 D1/D6BD: FF FF FF 06  SBC $06FFFF,X
 D1/D6C1: 01 C0        ORA ($C0,X)
-D1/D6C3: 30 60        BMI $D725
+D1/D6C3: 30 60        BMI Local_D1D725
 D1/D6C5: 60           RTS

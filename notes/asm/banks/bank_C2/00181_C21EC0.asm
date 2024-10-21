@@ -26,7 +26,7 @@ C2/1EEF: 85 08        STA $08
 C2/1EF1: A7 19        LDA [$19]
 C2/1EF3: 85 0A        STA $0A
 C2/1EF5: E2 20        SEP #$20
-C2/1EF7: 20 11 1F     JSR $1F11
+C2/1EF7: 20 11 1F     JSR Local_C21F11
 C2/1EFA: C2 20        REP #$20
 C2/1EFC: E6 10        INC $10
 C2/1EFE: E6 13        INC $13
@@ -37,5 +37,5 @@ C2/1F06: E6 19        INC $19
 C2/1F08: E6 19        INC $19
 C2/1F0A: E2 20        SEP #$20
 C2/1F0C: C6 00        DEC $00
-C2/1F0E: D0 DB        BNE $1EEB
+C2/1F0E: D0 DB        BNE Local_C21EEB
 C2/1F10: 60           RTS

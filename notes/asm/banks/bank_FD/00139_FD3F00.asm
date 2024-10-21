@@ -26,7 +26,7 @@ FD/3F30: 00 FB        BRK $FB
 FD/3F32: 86 FA        STX $FA
 FD/3F34: CD FE 88     CMP $88FE
 FD/3F37: F1 0D        SBC ($0D),Y
-FD/3F39: 80 F1        BRA $3F2C
+FD/3F39: 80 F1        BRA Local_FD3F2C
 FD/3F3B: 0F FF DF DB  ORA $DBDFFF
 FD/3F3F: 7F 03 E3 0D  ADC $0DE303,X
 FD/3F43: 00 F9        BRK $F9
@@ -36,7 +36,7 @@ FD/3F49: 02 FB        COP $FB
 FD/3F4B: 00 20        BRK $20
 FD/3F4D: F6 20        INC $20,X
 FD/3F4F: D8           CLD
-FD/3F50: 80 84        BRA $3ED6
+FD/3F50: 80 84        BRA Local_FD3ED6
 FD/3F52: 97 0B        STA [$0B],Y
 FD/3F54: 04 07        TSB $07
 FD/3F56: 00 00        BRK $00

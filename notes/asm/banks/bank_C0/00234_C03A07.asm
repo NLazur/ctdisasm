@@ -9,37 +9,37 @@ C0/3A10: 85 D9        STA $D9
 C0/3A12: 7B           TDC
 C0/3A13: EB           XBA
 C0/3A14: A5 97        LDA $97
-C0/3A16: 30 17        BMI $3A2F
+C0/3A16: 30 17        BMI Local_C03A2F
 C0/3A18: AA           TAX
 C0/3A19: BD 01 11     LDA $1101,X
 C0/3A1C: C5 D9        CMP $D9
-C0/3A1E: D0 0F        BNE $3A2F
+C0/3A1E: D0 0F        BNE Local_C03A2F
 C0/3A20: A9 03        LDA #$03
 C0/3A22: 9D 00 11     STA $1100,X
 C0/3A25: A9 80        LDA #$80
 C0/3A27: 85 97        STA $97
 C0/3A29: 8F 80 29 7E  STA $7E2980
-C0/3A2D: 80 36        BRA $3A65
+C0/3A2D: 80 36        BRA Local_C03A65
 C0/3A2F: 7B           TDC
 C0/3A30: EB           XBA
 C0/3A31: A5 99        LDA $99
-C0/3A33: 30 17        BMI $3A4C
+C0/3A33: 30 17        BMI Local_C03A4C
 C0/3A35: AA           TAX
 C0/3A36: BD 01 11     LDA $1101,X
 C0/3A39: C5 D9        CMP $D9
-C0/3A3B: D0 0F        BNE $3A4C
+C0/3A3B: D0 0F        BNE Local_C03A4C
 C0/3A3D: A9 03        LDA #$03
 C0/3A3F: 9D 00 11     STA $1100,X
 C0/3A42: A9 80        LDA #$80
 C0/3A44: 85 99        STA $99
 C0/3A46: 8F 81 29 7E  STA $7E2981
-C0/3A4A: 80 19        BRA $3A65
+C0/3A4A: 80 19        BRA Local_C03A65
 C0/3A4C: A5 9B        LDA $9B
-C0/3A4E: 30 15        BMI $3A65
+C0/3A4E: 30 15        BMI Local_C03A65
 C0/3A50: AA           TAX
 C0/3A51: BD 01 11     LDA $1101,X
 C0/3A54: C5 D9        CMP $D9
-C0/3A56: D0 0D        BNE $3A65
+C0/3A56: D0 0D        BNE Local_C03A65
 C0/3A58: A9 03        LDA #$03
 C0/3A5A: 9D 00 11     STA $1100,X
 C0/3A5D: A9 80        LDA #$80

@@ -2,13 +2,13 @@
 Routine_C072B4:
 C0/72B4: A2 01        LDX #$01
 C0/72B6: BD 80 0B     LDA $0B80,X
-C0/72B9: 10 62        BPL $731D
+C0/72B9: 10 62        BPL Local_C0731D
 C0/72BB: E8           INX
 C0/72BC: E0 04        CPX #$04
-C0/72BE: 30 F6        BMI $72B6
+C0/72BE: 30 F6        BMI Local_C072B6
 C0/72C0: A2 01        LDX #$01
 C0/72C2: BD 80 0B     LDA $0B80,X
-C0/72C5: 10 7B        BPL $7342
+C0/72C5: 10 7B        BPL Local_C07342
 C0/72C7: 86 C3        STX $C3
 C0/72C9: A6 6D        LDX $6D
 C0/72CB: A9 80        LDA #$80

@@ -20,7 +20,7 @@ D0/7186: 00 00        BRK $00
 D0/7188: FF 00 FF 00  SBC $00FF00,X
 D0/718C: FF 00 FF 00  SBC $00FF00,X
 D0/7190: FF 00 FF 00  SBC $00FF00,X
-D0/7194: F0 0F        BEQ $71A5
+D0/7194: F0 0F        BEQ Local_D071A5
 D0/7196: 08           PHP
 D0/7197: F8           SED
 D0/7198: FF 00 FF 00  SBC $00FF00,X
@@ -28,14 +28,14 @@ D0/719C: FF 00 FF 00  SBC $00FF00,X
 D0/71A0: F8           SED
 D0/71A1: 07 88        ORA [$88]
 D0/71A3: 78           SEI
-D0/71A4: 80 80        BRA $7126
+D0/71A4: 80 80        BRA Local_D07126
 D0/71A6: 00 00        BRK $00
-D0/71A8: 80 80        BRA $712A
+D0/71A8: 80 80        BRA Local_D0712A
 D0/71AA: C0 40        CPY #$40
-D0/71AC: F0 30        BEQ $71DE
+D0/71AC: F0 30        BEQ Local_D071DE
 D0/71AE: 88           DEY
 D0/71AF: 78           SEI
-D0/71B0: 80 80        BRA $7132
+D0/71B0: 80 80        BRA Local_D07132
 D0/71B2: 00 00        BRK $00
 D0/71B4: 00 00        BRK $00
 D0/71B6: 00 00        BRK $00
@@ -55,9 +55,9 @@ D0/71D6: C8           INY
 D0/71D7: 38           SEC
 D0/71D8: 98           TYA
 D0/71D9: 78           SEI
-D0/71DA: 20 E0 40     JSR $40E0
+D0/71DA: 20 E0 40     JSR Local_D040E0
 D0/71DD: C0 80        CPY #$80
-D0/71DF: 80 00        BRA $71E1
+D0/71DF: 80 00        BRA Local_D071E1
 D0/71E1: 00 00        BRK $00
 D0/71E3: 00 00        BRK $00
 D0/71E5: 00 00        BRK $00

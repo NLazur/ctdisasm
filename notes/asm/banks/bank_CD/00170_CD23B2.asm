@@ -7,21 +7,21 @@ CD/23B7: 00 85        BRK $85
 CD/23B9: 25 60        AND $60
 CD/23BB: A5 23        LDA $23
 CD/23BD: 0A           ASL
-CD/23BE: B0 F2        BCS $23B2
+CD/23BE: B0 F2        BCS Local_CD23B2
 CD/23C0: 0A           ASL
-CD/23C1: B0 DE        BCS $23A1
+CD/23C1: B0 DE        BCS Local_CD23A1
 CD/23C3: 0A           ASL
-CD/23C4: B0 CA        BCS $2390
+CD/23C4: B0 CA        BCS Local_CD2390
 CD/23C6: 0A           ASL
-CD/23C7: B0 59        BCS $2422
+CD/23C7: B0 59        BCS Local_CD2422
 CD/23C9: 0A           ASL
-CD/23CA: B0 45        BCS $2411
+CD/23CA: B0 45        BCS Local_CD2411
 CD/23CC: 0A           ASL
-CD/23CD: B0 31        BCS $2400
+CD/23CD: B0 31        BCS Local_CD2400
 CD/23CF: 0A           ASL
-CD/23D0: B0 1D        BCS $23EF
+CD/23D0: B0 1D        BCS Local_CD23EF
 CD/23D2: 0A           ASL
-CD/23D3: B0 09        BCS $23DE
+CD/23D3: B0 09        BCS Local_CD23DE
 CD/23D5: A5 23        LDA $23
 CD/23D7: EB           XBA
 CD/23D8: 29 00        AND #$00

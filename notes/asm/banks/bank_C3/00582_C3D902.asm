@@ -2,7 +2,7 @@
 Routine_C3D902:
 C3/D902: FF 7F 00 00  SBC $00007F,X
 C3/D906: 00 63        BRK $63
-C3/D908: 10 DB        BPL $D8E5
+C3/D908: 10 DB        BPL Local_C3D8E5
 C3/D90A: 16 3B        ASL $3B,X
 C3/D90C: 15 73        ORA $73,X
 C3/D90E: 4E 00 CE     LSR $CE00
@@ -19,7 +19,7 @@ C3/D926: A2 14        LDX #$14
 C3/D928: 00 00        BRK $00
 C3/D92A: 9C 5F 40     STZ $405F
 C3/D92D: 02 C8        COP $C8
-C3/D92F: 20 F8 20     JSR $20F8
+C3/D92F: 20 F8 20     JSR Local_C320F8
 C3/D932: E8           INX
 C3/D933: 21 08        AND ($08,X)
 C3/D935: 02 C8        COP $C8

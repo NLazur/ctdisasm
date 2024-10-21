@@ -10,7 +10,7 @@ CD/0AFD: A9 7E        LDA #$7E
 CD/0AFF: 8D 74 43     STA $4374
 CD/0B02: A5 7C        LDA $7C
 CD/0B04: 29 01        AND #$01
-CD/0B06: F0 07        BEQ $0B0F
+CD/0B06: F0 07        BEQ Local_CD0B0F
 CD/0B08: A2 CF C9     LDX #$C9CF
 CD/0B0B: 8E 72 43     STX $4372
 CD/0B0E: 60           RTS

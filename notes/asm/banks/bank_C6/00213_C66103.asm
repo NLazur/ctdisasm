@@ -9,7 +9,7 @@ C6/6109: 1B           TCS
 C6/610A: 00 62        BRK $62
 C6/610C: 1B           TCS
 C6/610D: 63 1B        ADC $1B,S
-C6/610F: 5C 1B 5D 1B  JMP $1B5D1B
+C6/610F: 5C 1B 5D 1B  JMP Routine_1B5D1B
 C6/6113: 00 64        BRK $64
 C6/6115: 1B           TCS
 C6/6116: 65 1B        ADC $1B

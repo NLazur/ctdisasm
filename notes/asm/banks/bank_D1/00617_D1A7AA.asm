@@ -103,7 +103,7 @@ D1/A877: 4A           LSR
 D1/A878: 4A           LSR
 D1/A879: 4A           LSR
 D1/A87A: 4A           LSR
-D1/A87B: 5C 9C 8A 8A  JMP $8A8A9C
+D1/A87B: 5C 9C 8A 8A  JMP Routine_8A8A9C
 D1/A87F: 8A           TXA
 D1/A880: 8A           TXA
 D1/A881: CA           DEX
@@ -156,13 +156,13 @@ D1/A8D2: 0A           ASL
 D1/A8D3: 4A           LSR
 D1/A8D4: 4A           LSR
 D1/A8D5: 49 48        EOR #$48
-D1/A8D7: 10 0A        BPL $A8E3
+D1/A8D7: 10 0A        BPL Local_D1A8E3
 D1/A8D9: 0A           ASL
 D1/A8DA: 0A           ASL
 D1/A8DB: 4A           LSR
 D1/A8DC: 4A           LSR
 D1/A8DD: 4A           LSR
-D1/A8DE: 50 18        BVC $A8F8
+D1/A8DE: 50 18        BVC Local_D1A8F8
 D1/A8E0: 0A           ASL
 D1/A8E1: 0A           ASL
 D1/A8E2: 0A           ASL
@@ -178,13 +178,13 @@ D1/A8EB: CA           DEX
 D1/A8EC: CA           DEX
 D1/A8ED: CA           DEX
 D1/A8EE: D8           CLD
-D1/A8EF: 90 8A        BCC $A87B
+D1/A8EF: 90 8A        BCC Local_D1A87B
 D1/A8F1: 8A           TXA
 D1/A8F2: 8A           TXA
 D1/A8F3: CA           DEX
 D1/A8F4: CA           DEX
 D1/A8F5: CA           DEX
-D1/A8F6: D0 88        BNE $A880
+D1/A8F6: D0 88        BNE Local_D1A880
 D1/A8F8: 89 8A        BIT #$8A
 D1/A8FA: 8A           TXA
 D1/A8FB: CA           DEX
@@ -197,10 +197,10 @@ D1/A905: 01 00        ORA ($00,X)
 D1/A907: 00 00        BRK $00
 D1/A909: 00 00        BRK $00
 D1/A90B: 00 1F        BRK $1F
-D1/A90D: 80 1F        BRA $A92E
-D1/A90F: 80 1F        BRA $A930
-D1/A911: 80 1F        BRA $A932
-D1/A913: 80 1F        BRA $A934
+D1/A90D: 80 1F        BRA Local_D1A92E
+D1/A90F: 80 1F        BRA Local_D1A930
+D1/A911: 80 1F        BRA Local_D1A932
+D1/A913: 80 1F        BRA Local_D1A934
 D1/A915: FE 1F FF     INC $FF1F,X
 D1/A918: 01 FF        ORA ($FF,X)
 D1/A91A: 01 FF        ORA ($FF,X)
@@ -297,19 +297,19 @@ D1/A9B5: 7E 11 12     ROR $1211,X
 D1/A9B8: 52 51        EOR ($51)
 D1/A9BA: 01 02        ORA ($02,X)
 D1/A9BC: 03 21        ORA $21,S
-D1/A9BE: 22 23 59 08  JSR $085923
+D1/A9BE: 22 23 59 08  JSR Routine_085923
 D1/A9C2: 09 0A        ORA #$0A
 D1/A9C4: 0A           ASL
 D1/A9C5: 4A           LSR
 D1/A9C6: 0A           ASL
 D1/A9C7: 24 25        BIT $25
-D1/A9C9: 10 0A        BPL $A9D5
+D1/A9C9: 10 0A        BPL Local_D1A9D5
 D1/A9CB: 0A           ASL
 D1/A9CC: 0A           ASL
 D1/A9CD: 4A           LSR
 D1/A9CE: 4A           LSR
 D1/A9CF: 0A           ASL
-D1/A9D0: 50 18        BVC $A9EA
+D1/A9D0: 50 18        BVC Local_D1A9EA
 D1/A9D2: 0A           ASL
 D1/A9D3: 0A           ASL
 D1/A9D4: 0A           ASL
@@ -334,20 +334,20 @@ D1/A9EA: 0A           ASL
 D1/A9EB: 4A           LSR
 D1/A9EC: 4A           LSR
 D1/A9ED: 49 48        EOR #$48
-D1/A9EF: 90 8A        BCC $A97B
+D1/A9EF: 90 8A        BCC Local_D1A97B
 D1/A9F1: 8A           TXA
 D1/A9F2: 8A           TXA
 D1/A9F3: CA           DEX
 D1/A9F4: CA           DEX
 D1/A9F5: CA           DEX
-D1/A9F6: D0 10        BNE $AA08
+D1/A9F6: D0 10        BNE Local_D1AA08
 D1/A9F8: 0A           ASL
 D1/A9F9: 0A           ASL
 D1/A9FA: 0A           ASL
 D1/A9FB: 4A           LSR
 D1/A9FC: 4A           LSR
 D1/A9FD: 4A           LSR
-D1/A9FE: 50 88        BVC $A988
+D1/A9FE: 50 88        BVC Local_D1A988
 D1/AA00: 89 8A        BIT #$8A
 D1/AA02: 8A           TXA
 D1/AA03: CA           DEX
@@ -372,13 +372,13 @@ D1/AA19: CA           DEX
 D1/AA1A: CA           DEX
 D1/AA1B: CA           DEX
 D1/AA1C: D8           CLD
-D1/AA1D: 90 8A        BCC $A9A9
+D1/AA1D: 90 8A        BCC Local_D1A9A9
 D1/AA1F: 8A           TXA
 D1/AA20: 8A           TXA
 D1/AA21: CA           DEX
 D1/AA22: CA           DEX
 D1/AA23: CA           DEX
-D1/AA24: D0 88        BNE $A9AE
+D1/AA24: D0 88        BNE Local_D1A9AE
 D1/AA26: 89 8A        BIT #$8A
 D1/AA28: 8A           TXA
 D1/AA29: CA           DEX
@@ -409,13 +409,13 @@ D1/AA5D: 0A           ASL
 D1/AA5E: 4A           LSR
 D1/AA5F: 4A           LSR
 D1/AA60: 49 48        EOR #$48
-D1/AA62: 10 0A        BPL $AA6E
+D1/AA62: 10 0A        BPL Local_D1AA6E
 D1/AA64: 0A           ASL
 D1/AA65: 0A           ASL
 D1/AA66: 4A           LSR
 D1/AA67: 4A           LSR
 D1/AA68: 4A           LSR
-D1/AA69: 50 18        BVC $AA83
+D1/AA69: 50 18        BVC Local_D1AA83
 D1/AA6B: 0A           ASL
 D1/AA6C: 0A           ASL
 D1/AA6D: 0A           ASL
@@ -435,13 +435,13 @@ D1/AA7A: CA           DEX
 D1/AA7B: D8           CLD
 D1/AA7C: 15 0E        ORA $0E,X
 D1/AA7E: 0F 4F 26 27  ORA $27264F
-D1/AA82: 90 8A        BCC $AA0E
+D1/AA82: 90 8A        BCC Local_D1AA0E
 D1/AA84: 8A           TXA
 D1/AA85: 8A           TXA
 D1/AA86: CA           DEX
 D1/AA87: CA           DEX
 D1/AA88: CA           DEX
-D1/AA89: D0 1D        BNE $AAA8
+D1/AA89: D0 1D        BNE Local_D1AAA8
 D1/AA8B: 16 0A        ASL $0A,X
 D1/AA8D: 4A           LSR
 D1/AA8E: 56 5D        LSR $5D,X
@@ -490,12 +490,12 @@ D1/AAE0: FC 00 FC     JSR ($FC00,X)
 D1/AAE3: 00 FC        BRK $FC
 D1/AAE5: 06 FC        ASL $FC
 D1/AAE7: 06 FC        ASL $FC
-D1/AAE9: 3C FC 3C     BIT $3CFC,X
+D1/AAE9: 3C FC 3C     BIT Local_D13CFC,X
 D1/AAEC: 00 FC        BRK $FC
 D1/AAEE: 00 FC        BRK $FC
-D1/AAF0: 3C FE 3C     BIT $3CFE,X
+D1/AAF0: 3C FE 3C     BIT Local_D13CFE,X
 D1/AAF3: FE 3C FE     INC $FE3C,X
-D1/AAF6: 3C FE 00     BIT $00FE,X
+D1/AAF6: 3C FE 00     BIT Local_D100FE,X
 D1/AAF9: FE 00 15     INC $1500,X
 D1/AAFC: 0E 0F 4F     ASL $4F0F
 D1/AAFF: 4E 55 1D     LSR $1D55
@@ -526,7 +526,7 @@ D1/AB31: 0A           ASL
 D1/AB32: 0A           ASL
 D1/AB33: 0A           ASL
 D1/AB34: 0A           ASL
-D1/AB35: 2C 2D 11     BIT $112D
+D1/AB35: 2C 2D 11     BIT Local_D1112D
 D1/AB38: 12 52        ORA ($52)
 D1/AB3A: 51 0A        EOR ($0A),Y
 D1/AB3C: 0A           ASL
@@ -548,7 +548,7 @@ D1/AB53: 4A           LSR
 D1/AB54: 4A           LSR
 D1/AB55: 4A           LSR
 D1/AB56: 4A           LSR
-D1/AB57: 5C 91 92 D2  JMP $D29291
+D1/AB57: 5C 91 92 D2  JMP Routine_D29291
 D1/AB5B: D1 8A        CMP ($8A),Y
 D1/AB5D: 8A           TXA
 D1/AB5E: CA           DEX
@@ -629,7 +629,7 @@ D1/ABCF: 0A           ASL
 D1/ABD0: 4A           LSR
 D1/ABD1: 4A           LSR
 D1/ABD2: 4A           LSR
-D1/ABD3: 50 9A        BVC $AB6F
+D1/ABD3: 50 9A        BVC Local_D1AB6F
 D1/ABD5: DA           PHX
 D1/ABD6: 0A           ASL
 D1/ABD7: 0A           ASL
@@ -648,7 +648,7 @@ D1/ABE3: 8A           TXA
 D1/ABE4: CA           DEX
 D1/ABE5: CA           DEX
 D1/ABE6: CA           DEX
-D1/ABE7: D0 01        BNE $ABEA
+D1/ABE7: D0 01        BNE Local_D1ABEA
 D1/ABE9: 00 7F        BRK $7F
 D1/ABEB: 00 7F        BRK $7F
 D1/ABED: 00 7F        BRK $7F
@@ -674,7 +674,7 @@ D1/AC0C: 8A           TXA
 D1/AC0D: CA           DEX
 D1/AC0E: CA           DEX
 D1/AC0F: CA           DEX
-D1/AC10: 90 8A        BCC $AB9C
+D1/AC10: 90 8A        BCC Local_D1AB9C
 D1/AC12: 8A           TXA
 D1/AC13: 8A           TXA
 D1/AC14: CA           DEX
@@ -686,7 +686,7 @@ D1/AC1A: 8A           TXA
 D1/AC1B: CA           DEX
 D1/AC1C: CA           DEX
 D1/AC1D: C9 81        CMP #$81
-D1/AC1F: 82 83 C3     BRL $D16FA5
+D1/AC1F: 82 83 C3     BRL Routine_D16FA5
 D1/AC22: C2 C1        REP #$C1
 D1/AC24: 1A           INC
 D1/AC25: 5A           PHY
@@ -717,15 +717,15 @@ D1/AC47: D6 DD        DEC $DD,X
 D1/AC49: 01 00        ORA ($00,X)
 D1/AC4B: 3F 00 3F 00  AND $003F00,X
 D1/AC4F: 3F 07 E0 0F  AND $0FE007,X
-D1/AC53: F0 1F        BEQ $AC74
+D1/AC53: F0 1F        BEQ Local_D1AC74
 D1/AC55: F8           SED
 D1/AC56: 1F F8 1F F8  ORA $F81FF8,X
 D1/AC5A: 1F F8 1F F8  ORA $F81FF8,X
 D1/AC5E: 1F F8 0F F8  ORA $F80FF8,X
 D1/AC62: F7 F8        SBC [$F8],Y
-D1/AC64: F0 00        BEQ $AC66
-D1/AC66: F0 00        BEQ $AC68
-D1/AC68: F0 00        BEQ $AC6A
+D1/AC64: F0 00        BEQ Local_D1AC66
+D1/AC66: F0 00        BEQ Local_D1AC68
+D1/AC68: F0 00        BEQ Local_D1AC6A
 D1/AC6A: 9E 8A 8A     STZ $8A8A,X
 D1/AC6D: CA           DEX
 D1/AC6E: CA           DEX
@@ -766,7 +766,7 @@ D1/ACA3: 4A           LSR
 D1/ACA4: 4A           LSR
 D1/ACA5: 4A           LSR
 D1/ACA6: 4A           LSR
-D1/ACA7: 5C 9C 8A 8A  JMP $8A8A9C
+D1/ACA7: 5C 9C 8A 8A  JMP Routine_8A8A9C
 D1/ACAB: 8A           TXA
 D1/ACAC: 8A           TXA
 D1/ACAD: CA           DEX

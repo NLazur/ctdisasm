@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: 019D
 Routine_CD019D:
-CD/019D: 20 40 60     JSR $6040
-CD/01A0: 80 A0        BRA $0142
+CD/019D: 20 40 60     JSR Local_CD6040
+CD/01A0: 80 A0        BRA Local_CD0142
 CD/01A2: C0 E0        CPY #$E0
 CD/01A4: FF AD 91 29  SBC $2991AD,X
 CD/01A8: 4A           LSR

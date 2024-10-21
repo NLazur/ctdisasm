@@ -1,11 +1,11 @@
 ; Bank: D1 | Start Address: 0D9E
 Routine_D10D9E:
 D1/0D9E: D5 30        CMP $30,X
-D1/0DA0: 10 42        BPL $0DE4
+D1/0DA0: 10 42        BPL Local_D10DE4
 D1/0DA2: 36 10        ROL $10,X
 D1/0DA4: 44 3C D0     MVP $3C,$D0
 D1/0DA7: 64 5A        STZ $5A
-D1/0DA9: 10 42        BPL $0DED
+D1/0DA9: 10 42        BPL Local_D10DED
 D1/0DAB: 18           CLC
 D1/0DAC: 44 3C 00     MVP $3C,$00
 D1/0DAF: FA           PLX
@@ -13,9 +13,9 @@ D1/0DB0: 68           PLA
 D1/0DB1: 66 10        ROR $10
 D1/0DB3: 6A           ROR
 D1/0DB4: 4E 60 40     LSR $4060
-D1/0DB7: 70 00        BVS $0DB9
+D1/0DB7: 70 00        BVS Local_D10DB9
 D1/0DB9: 00 11        BRK $11
-D1/0DBB: 80 4C        BRA $0E09
+D1/0DBB: 80 4C        BRA Local_D10E09
 D1/0DBD: 01 FF        ORA ($FF,X)
 D1/0DBF: FF 11 80 AA  SBC $AA8011,X
 D1/0DC3: 4E 06 10     LSR $1006
@@ -25,7 +25,7 @@ D1/0DCA: 12 10        ORA ($10)
 D1/0DCC: 0C 18 10     TSB $1018
 D1/0DCF: 62 0E 1E     PER $D12BE0
 D1/0DD2: 00 22        BRK $22
-D1/0DD4: 80 00        BRA $0DD6
+D1/0DD4: 80 00        BRA Local_D10DD6
 D1/0DD6: 25 08        AND $08
 D1/0DD8: 07 00        ORA [$00]
 D1/0DDA: 60           RTS

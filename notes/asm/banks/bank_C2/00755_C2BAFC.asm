@@ -2,7 +2,7 @@
 Routine_C2BAFC:
 C2/BAFC: 08           PHP
 C2/BAFD: E2 20        SEP #$20
-C2/BAFF: 20 26 F6     JSR $F626
+C2/BAFF: 20 26 F6     JSR Local_C2F626
 C2/BB02: 99 00 18     STA $1800,Y
 C2/BB05: A9 00        LDA #$00
 C2/BB07: 99 18 18     STA $1818,Y

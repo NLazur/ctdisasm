@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: BF09
 Routine_CDBF09:
-CD/BF09: 10 70        BPL $BF7B
+CD/BF09: 10 70        BPL Local_CDBF7B
 CD/BF0B: 02 00        COP $00
 CD/BF0D: 09 85 40     ORA #$4085
 CD/BF10: A8           TAY
@@ -17,14 +17,14 @@ CD/BF2D: BF 04 C0 DC  LDA $DCC004,X
 CD/BF31: 95 00        STA $00,X
 CD/BF33: 72 15        ADC ($15)
 CD/BF35: 06 0A        ASL $0A
-CD/BF37: 20 1E 26     JSR $261E
+CD/BF37: 20 1E 26     JSR Local_CD261E
 CD/BF3A: 0A           ASL
 CD/BF3B: 02 C4        COP $C4
-CD/BF3D: F0 FF        BEQ $BF3E
+CD/BF3D: F0 FF        BEQ Local_CDBF3E
 CD/BF3F: 02 0B        COP $0B
 CD/BF41: 36 22        ROL $22,X
 CD/BF43: 1C 10 36     TRB $3610
-CD/BF46: 20 02 26     JSR $2602
+CD/BF46: 20 02 26     JSR Local_CD2602
 CD/BF49: 08           PHP
 CD/BF4A: 03 34        ORA $34,S
 CD/BF4C: 1B           TCS
@@ -35,7 +35,7 @@ CD/BF52: 1B           TCS
 CD/BF53: 00 78        BRK $78
 CD/BF55: FF 36 C5 02  SBC $02C536,X
 CD/BF59: 02 03        COP $03
-CD/BF5B: 20 0F 50     JSR $500F
+CD/BF5B: 20 0F 50     JSR Local_CD500F
 CD/BF5E: 2E 01 00     ROL $0001
 CD/BF61: 24 02        BIT $02
 CD/BF63: 69 00 06     ADC #$0600

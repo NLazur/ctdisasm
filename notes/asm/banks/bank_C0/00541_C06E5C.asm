@@ -20,7 +20,7 @@ C0/6E7C: A9 01        LDA #$01
 C0/6E7E: 85 4A        STA $4A
 C0/6E80: A9 FF        LDA #$FF
 C0/6E82: 85 4D        STA $4D
-C0/6E84: 20 C8 2D     JSR $2DC8
+C0/6E84: 20 C8 2D     JSR Local_C02DC8
 C0/6E87: C2 20        REP #$20
 C0/6E89: A5 4B        LDA $4B
 C0/6E8B: 18           CLC
@@ -31,5 +31,5 @@ C0/6E93: 85 48        STA $48
 C0/6E95: A9 80 00     LDA #$0080
 C0/6E98: 85 4E        STA $4E
 C0/6E9A: E2 20        SEP #$20
-C0/6E9C: 20 C8 2D     JSR $2DC8
+C0/6E9C: 20 C8 2D     JSR Local_C02DC8
 C0/6E9F: 60           RTS

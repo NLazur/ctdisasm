@@ -2,12 +2,12 @@
 Routine_FEE36B:
 FE/E36B: 18           CLC
 FE/E36C: 08           PHP
-FE/E36D: 10 18        BPL $E387
-FE/E36F: 10 0E        BPL $E37F
-FE/E371: 10 9D        BPL $E310
+FE/E36D: 10 18        BPL Local_FEE387
+FE/E36F: 10 0E        BPL Local_FEE37F
+FE/E371: 10 9D        BPL Local_FEE310
 FE/E373: 00 86        BRK $86
 FE/E375: 00 3A        BRK $3A
-FE/E377: 10 08        BPL $E381
+FE/E377: 10 08        BPL Local_FEE381
 FE/E379: 08           PHP
 FE/E37A: 08           PHP
 FE/E37B: 18           CLC

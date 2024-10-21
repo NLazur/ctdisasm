@@ -3,7 +3,7 @@ Routine_CD2518:
 CD/2518: A7 40        LDA [$40]
 CD/251A: AA           TAX
 CD/251B: BD 80 5D     LDA $5D80,X
-CD/251E: D0 15        BNE $2535
+CD/251E: D0 15        BNE Local_CD2535
 CD/2520: A0 01 00     LDY #$0001
 CD/2523: B7 40        LDA [$40],Y
 CD/2525: AA           TAX

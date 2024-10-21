@@ -31,7 +31,7 @@ FD/5B0F: 31 86        AND ($86),Y
 FD/5B11: 07 0A        ORA [$0A]
 FD/5B13: 09 09        ORA #$09
 FD/5B15: 4E FA 83     LSR $83FA
-FD/5B18: 10 09        BPL $5B23
+FD/5B18: 10 09        BPL Local_FD5B23
 FD/5B1A: 0A           ASL
 FD/5B1B: 44 0A 0B     MVP $0A,$0B
 FD/5B1E: 40           RTI

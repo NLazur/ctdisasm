@@ -1,14 +1,14 @@
 ; Bank: FE | Start Address: 6072
 Routine_FE6072:
-FE/6072: 80 80        BRA $5FF4
+FE/6072: 80 80        BRA Local_FE5FF4
 FE/6074: C0 80 A0     CPY #$A080
 FE/6077: 02 10        COP $10
 FE/6079: A2 30 C0     LDX #$C030
 FE/607C: 08           PHP
 FE/607D: 00 40        BRK $40
-FE/607F: 80 02        BRA $6083
-FE/6081: 30 AE        BMI $6031
-FE/6083: 80 60        BRA $60E5
+FE/607F: 80 02        BRA Local_FE6083
+FE/6081: 30 AE        BMI Local_FE6031
+FE/6083: 80 60        BRA Local_FE60E5
 FE/6085: 26 00        ROL $00
 FE/6087: 74 42        STZ $42,X
 FE/6089: 7C 56 74     JMP ($7456,X)
@@ -18,16 +18,16 @@ FE/608F: 00 60        BRK $60
 FE/6091: 7E 70 4F     ROR $4F70,X
 FE/6094: CE 70 20     DEC $2070
 FE/6097: 58           CLI
-FE/6098: 80 7C        BRA $6116
+FE/6098: 80 7C        BRA Local_FE6116
 FE/609A: 08           PHP
 FE/609B: 6C 00 34     JMP ($3400)
 FE/609E: 00 20        BRK $20
 FE/60A0: 02 00        COP $00
 FE/60A2: 00 10        BRK $10
-FE/60A4: 20 66 22     JSR $2266
+FE/60A4: 20 66 22     JSR Local_FE2266
 FE/60A7: 32 62        AND ($62)
 FE/60A9: 1E 42 00     ASL $0042,X
-FE/60AC: 2C 62 3A     BIT $3A62
+FE/60AC: 2C 62 3A     BIT Local_FE3A62
 FE/60AF: 62 18 62     PER $FEC2CA
 FE/60B2: 06 62        ASL $62
 FE/60B4: 00 3E        BRK $3E
@@ -35,13 +35,13 @@ FE/60B6: 7A           PLY
 FE/60B7: 62 1C 2C     PER $FE8CD6
 FE/60BA: 1C 00 3C     TRB $3C00
 FE/60BD: 08           PHP
-FE/60BE: 30 1C        BMI $60DC
+FE/60BE: 30 1C        BMI Local_FE60DC
 FE/60C0: 04 02        TSB $02
 FE/60C2: 00 00        BRK $00
 FE/60C4: 1C 18 04     TRB $0418
 FE/60C7: 00 F9        BRK $F9
 FE/60C9: 00 54        BRK $54
-FE/60CB: 80 57        BRA $6124
+FE/60CB: 80 57        BRA Local_FE6124
 FE/60CD: 00 18        BRK $18
 FE/60CF: 00 00        BRK $00
 FE/60D1: 06 00        ASL $00
@@ -56,5 +56,5 @@ FE/60E5: 39 78 78     AND $7878,Y
 FE/60E8: 38           SEC
 FE/60E9: 68           PLA
 FE/60EA: 38           SEC
-FE/60EB: 20 C0 80     JSR $80C0
+FE/60EB: 20 C0 80     JSR Local_FE80C0
 FE/60EE: 60           RTS

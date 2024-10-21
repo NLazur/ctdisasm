@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: 680C
 Routine_C0680C:
-C0/680C: 20 E3 67     JSR $67E3
+C0/680C: 20 E3 67     JSR Local_C067E3
 C0/680F: BF 01 20 7F  LDA $7F2001,X
 C0/6813: 86 D9        STX $D9
 C0/6815: C2 20        REP #$20

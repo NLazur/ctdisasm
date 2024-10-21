@@ -11,7 +11,7 @@ D1/FD88: 69 70 00     ADC #$0070
 D1/FD8B: 85 45        STA $45
 D1/FD8D: A5 7C        LDA $7C
 D1/FD8F: 29 01 00     AND #$0001
-D1/FD92: F0 5A        BEQ $FDEE
+D1/FD92: F0 5A        BEQ Local_D1FDEE
 D1/FD94: BD 61 C1     LDA $C161,X
 D1/FD97: 49 FF FF     EOR #$FFFF
 D1/FD9A: EB           XBA
@@ -49,8 +49,8 @@ D1/FDE5: E8           INX
 D1/FDE6: E8           INX
 D1/FDE7: E8           INX
 D1/FDE8: E4 45        CPX $45
-D1/FDEA: D0 A8        BNE $FD94
-D1/FDEC: 80 58        BRA $FE46
+D1/FDEA: D0 A8        BNE Local_D1FD94
+D1/FDEC: 80 58        BRA Local_D1FE46
 D1/FDEE: BD E1 C4     LDA $C4E1,X
 D1/FDF1: 49 FF FF     EOR #$FFFF
 D1/FDF4: EB           XBA
@@ -88,7 +88,7 @@ D1/FE3F: E8           INX
 D1/FE40: E8           INX
 D1/FE41: E8           INX
 D1/FE42: E4 45        CPX $45
-D1/FE44: D0 A8        BNE $FDEE
+D1/FE44: D0 A8        BNE Local_D1FDEE
 D1/FE46: 7B           TDC
 D1/FE47: E2 20        SEP #$20
 D1/FE49: C2 10        REP #$10

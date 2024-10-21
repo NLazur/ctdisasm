@@ -12,7 +12,7 @@ C0/604E: 65 DB        ADC $DB
 C0/6050: 85 E1        STA $E1
 C0/6052: AA           TAX
 C0/6053: BF 80 05 7F  LDA $7F0580,X
-C0/6057: D0 1F        BNE $6078
+C0/6057: D0 1F        BNE Local_C06078
 C0/6059: A5 DB        LDA $DB
 C0/605B: 29 FF 00     AND #$00FF
 C0/605E: 0A           ASL

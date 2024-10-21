@@ -2,80 +2,80 @@
 Routine_CC23BE:
 CC/23BE: 00 00        BRK $00
 CC/23C0: 00 00        BRK $00
-CC/23C2: 70 00        BVS $23C4
+CC/23C2: 70 00        BVS Local_CC23C4
 CC/23C4: 00 00        BRK $00
 CC/23C6: 00 03        BRK $03
 CC/23C8: 00 00        BRK $00
 CC/23CA: 00 00        BRK $00
 CC/23CC: 03 3C        ORA $3C,S
-CC/23CE: 70 00        BVS $23D0
+CC/23CE: 70 00        BVS Local_CC23D0
 CC/23D0: 19 00 00     ORA $0000,Y
 CC/23D3: 03 00        ORA $00,S
 CC/23D5: 00 00        BRK $00
 CC/23D7: 00 03        BRK $03
-CC/23D9: 3C 70 00     BIT $0070,X
+CC/23D9: 3C 70 00     BIT Local_CC0070,X
 CC/23DC: 02 00        COP $00
 CC/23DE: 00 03        BRK $03
 CC/23E0: 00 00        BRK $00
 CC/23E2: 00 00        BRK $00
 CC/23E4: 03 3C        ORA $3C,S
-CC/23E6: 70 00        BVS $23E8
+CC/23E6: 70 00        BVS Local_CC23E8
 CC/23E8: 26 00        ROL $00
 CC/23EA: 00 03        BRK $03
 CC/23EC: 00 00        BRK $00
 CC/23EE: 3A           DEC
 CC/23EF: 3B           TSC
 CC/23F0: 05 3E        ORA $3E
-CC/23F2: 80 80        BRA $2374
+CC/23F2: 80 80        BRA Local_CC2374
 CC/23F4: 09 04 80     ORA #$8004
 CC/23F7: 03 00        ORA $00,S
 CC/23F9: 00 3A        BRK $3A
 CC/23FB: 3B           TSC
 CC/23FC: 01 3E        ORA ($3E,X)
-CC/23FE: 80 80        BRA $2380
+CC/23FE: 80 80        BRA Local_CC2380
 CC/2400: 08           PHP
 CC/2401: 04 80        TSB $80
 CC/2403: 03 00        ORA $00,S
 CC/2405: 00 3A        BRK $3A
 CC/2407: 3B           TSC
 CC/2408: 02 3E        COP $3E
-CC/240A: 80 80        BRA $238C
+CC/240A: 80 80        BRA Local_CC238C
 CC/240C: 06 04        ASL $04
-CC/240E: 80 03        BRA $2413
+CC/240E: 80 03        BRA Local_CC2413
 CC/2410: 00 00        BRK $00
 CC/2412: 3A           DEC
 CC/2413: 3B           TSC
 CC/2414: 01 3E        ORA ($3E,X)
-CC/2416: 80 00        BRA $2418
+CC/2416: 80 00        BRA Local_CC2418
 CC/2418: 1D 04 00     ORA $0004,X
 CC/241B: 03 00        ORA $00,S
 CC/241D: 00 3A        BRK $3A
 CC/241F: 3B           TSC
 CC/2420: 05 3E        ORA $3E
-CC/2422: 80 00        BRA $2424
+CC/2422: 80 00        BRA Local_CC2424
 CC/2424: 25 04        AND $04
 CC/2426: 00 02        BRK $02
 CC/2428: 05 80        ORA $80
 CC/242A: 00 00        BRK $00
 CC/242C: 00 00        BRK $00
-CC/242E: 70 00        BVS $2430
+CC/242E: 70 00        BVS Local_CC2430
 CC/2430: 00 00        BRK $00
 CC/2432: 00 02        BRK $02
 CC/2434: 01 80        ORA ($80,X)
 CC/2436: 00 00        BRK $00
-CC/2438: 50 00        BVC $243A
-CC/243A: 50 00        BVC $243C
+CC/2438: 50 00        BVC Local_CC243A
+CC/243A: 50 00        BVC Local_CC243C
 CC/243C: 00 00        BRK $00
 CC/243E: 00 03        BRK $03
 CC/2440: 00 00        BRK $00
 CC/2442: 3A           DEC
 CC/2443: 3B           TSC
 CC/2444: 01 3E        ORA ($3E,X)
-CC/2446: 80 00        BRA $2448
+CC/2446: 80 00        BRA Local_CC2448
 CC/2448: 0B           PHD
 CC/2449: 04 00        TSB $00
 CC/244B: 01 4F        ORA ($4F,X)
-CC/244D: 80 00        BRA $244F
+CC/244D: 80 00        BRA Local_CC244F
 CC/244F: 00 00        BRK $00
 CC/2451: 00 A0        BRK $A0
 CC/2453: 00 00        BRK $00
@@ -93,7 +93,7 @@ CC/2469: 00 80        BRK $80
 CC/246B: 00 00        BRK $00
 CC/246D: 00 80        BRK $80
 CC/246F: 01 5C        ORA ($5C,X)
-CC/2471: 80 00        BRA $2473
+CC/2471: 80 00        BRA Local_CC2473
 CC/2473: 00 00        BRK $00
 CC/2475: 00 A0        BRK $A0
 CC/2477: 00 00        BRK $00

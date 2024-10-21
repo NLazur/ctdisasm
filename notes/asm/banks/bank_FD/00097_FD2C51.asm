@@ -10,9 +10,9 @@ FD/2C60: 48           PHA
 FD/2C61: 47 EA        EOR [$EA]
 FD/2C63: 37 F0        AND [$F0],Y
 FD/2C65: 31 CE        AND ($CE),Y
-FD/2C67: F0 B7        BEQ $2C20
+FD/2C67: F0 B7        BEQ Local_FD2C20
 FD/2C69: 14 04        TRB $04
-FD/2C6B: 20 FF F0     JSR $F0FF
+FD/2C6B: 20 FF F0     JSR Local_FDF0FF
 FD/2C6E: 7F E0 0F E0  ADC $E00FE0,X
 FD/2C72: 81 3F        STA ($3F,X)
 FD/2C74: 60           RTS

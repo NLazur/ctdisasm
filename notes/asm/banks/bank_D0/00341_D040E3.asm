@@ -12,7 +12,7 @@ D0/40F4: 1A           INC
 D0/40F5: 1D 26 39     ORA $3926,X
 D0/40F8: 38           SEC
 D0/40F9: 38           SEC
-D0/40FA: 50 70        BVC $416C
+D0/40FA: 50 70        BVC Local_D0416C
 D0/40FC: A0 E0 20     LDY #$20E0
 D0/40FF: E0 40 C0     CPX #$C040
 D0/4102: 40           RTI

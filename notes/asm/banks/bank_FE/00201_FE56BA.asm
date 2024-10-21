@@ -26,7 +26,7 @@ FE/56E9: A6 15        LDX $15
 FE/56EB: 78           SEI
 FE/56EC: 74 0F        STZ $0F,X
 FE/56EE: 4D 02 08     EOR $0802
-FE/56F1: 82 28 2E     BRL $FE851C
+FE/56F1: 82 28 2E     BRL Routine_FE851C
 FE/56F4: 03 0F        ORA $0F,S
 FE/56F6: 0B           PHD
 FE/56F7: 0D 07 0C     ORA $0C07
@@ -37,8 +37,8 @@ FE/5701: 05 A4        ORA $A4
 FE/5703: 05 06        ORA $06
 FE/5705: 7D 13 C0     ADC $C013,X
 FE/5708: A0 E0 B0     LDY #$B0E0
-FE/570B: 70 00        BVS $570D
-FE/570D: B0 D8        BCS $56E7
+FE/570B: 70 00        BVS Local_FE570D
+FE/570D: B0 D8        BCS Local_FE56E7
 FE/570F: 14 80        TRB $80
 FE/5711: DE 44 06     DEC $0644,X
 FE/5714: A0 05 F2     LDY #$F205
@@ -48,5 +48,5 @@ FE/571C: 07 62        ORA [$62]
 FE/571E: 8A           TXA
 FE/571F: 28           PLP
 FE/5720: 18           CLC
-FE/5721: B0 11        BCS $5734
+FE/5721: B0 11        BCS Local_FE5734
 FE/5723: 40           RTI

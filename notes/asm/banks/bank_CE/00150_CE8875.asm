@@ -1,6 +1,6 @@
 ; Bank: CE | Start Address: 8875
 Routine_CE8875:
-CE/8875: F0 D2        BEQ $8849
+CE/8875: F0 D2        BEQ Local_CE8849
 CE/8877: 00 01        BRK $01
 CE/8879: FF F7 0F 41  SBC $410FF7,X
 CE/887D: FF F7 00 02  SBC $0200F7,X
@@ -27,11 +27,11 @@ CE/88AC: 09 E0 DD     ORA #$DDE0
 CE/88AF: 05 49        ORA $49
 CE/88B1: E0 DD 00     CPX #$00DD
 CE/88B4: 0A           ASL
-CE/88B5: 10 DD        BPL $8894
+CE/88B5: 10 DD        BPL Local_CE8894
 CE/88B7: 05 0B        ORA $0B
-CE/88B9: 10 DD        BPL $8898
+CE/88B9: 10 DD        BPL Local_CE8898
 CE/88BB: 05 8B        ORA $8B
-CE/88BD: 10 DD        BPL $889C
+CE/88BD: 10 DD        BPL Local_CE889C
 CE/88BF: 00 00        BRK $00
 CE/88C1: F7 D1        SBC [$D1],Y
 CE/88C3: 0F 40 F7 D1  ORA $D1F740
@@ -62,11 +62,11 @@ CE/88FC: 09 E0 DD     ORA #$DDE0
 CE/88FF: 05 49        ORA $49
 CE/8901: E0 DD 00     CPX #$00DD
 CE/8904: 0A           ASL
-CE/8905: 10 DD        BPL $88E4
+CE/8905: 10 DD        BPL Local_CE88E4
 CE/8907: 05 0B        ORA $0B
-CE/8909: 10 DD        BPL $88E8
+CE/8909: 10 DD        BPL Local_CE88E8
 CE/890B: 05 8B        ORA $8B
-CE/890D: 10 DD        BPL $88EC
+CE/890D: 10 DD        BPL Local_CE88EC
 CE/890F: 00 00        BRK $00
 CE/8911: F8           SED
 CE/8912: F8           SED

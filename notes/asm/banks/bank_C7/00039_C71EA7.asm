@@ -1,7 +1,7 @@
 ; Bank: C7 | Start Address: 1EA7
 Routine_C71EA7:
 C7/1EA7: 24 40        BIT $40
-C7/1EA9: 50 00        BVC $1EAB
+C7/1EA9: 50 00        BVC Local_C71EAB
 C7/1EAB: 00 00        BRK $00
 C7/1EAD: 00 00        BRK $00
 C7/1EAF: 00 00        BRK $00

@@ -1,6 +1,6 @@
 ; Bank: C3 | Start Address: 21D0
 Routine_C321D0:
-C3/21D0: F0 1B        BEQ $21ED
+C3/21D0: F0 1B        BEQ Local_C321ED
 C3/21D2: AD 44 05     LDA $0544
 C3/21D5: 5D 0C AD     EOR $AD0C,X
 C3/21D8: DC 07 B8     JMP [$B807]
@@ -19,7 +19,7 @@ C3/21F1: E5 F2        SBC $F2
 C3/21F3: C0 85 0A     CPY #$0A85
 C3/21F6: AD 0A 0A     LDA $0A0A
 C3/21F9: 18           CLC
-C3/21FA: 5C 04 3B 1E  JMP $1E3B04
+C3/21FA: 5C 04 3B 1E  JMP Routine_1E3B04
 C3/21FE: 05 F6        ORA $F6
 C3/2200: 0A           ASL
 C3/2201: 0E 18 0F     ASL $0F18
@@ -31,14 +31,14 @@ C3/220F: B8           CLV
 C3/2210: 00 3E        BRK $3E
 C3/2212: 00 2C        BRK $2C
 C3/2214: 07 00        ORA [$00]
-C3/2216: F0 14        BEQ $222C
+C3/2216: F0 14        BEQ Local_C3222C
 C3/2218: AD 08 00     LDA $0008
 C3/221B: 4A           LSR
-C3/221C: 90 0E        BCC $222C
+C3/221C: 90 0E        BCC Local_C3222C
 C3/221E: 01 16        ORA ($16,X)
 C3/2220: 02 7F        COP $7F
 C3/2222: 00 10        BRK $10
-C3/2224: 22 E6 04 E6  JSR $E604E6
-C3/2228: 10 00        BPL $222A
+C3/2224: 22 E6 04 E6  JSR Routine_E604E6
+C3/2228: 10 00        BPL Local_C3222A
 C3/222A: E6 0C        INC $0C
 C3/222C: 60           RTS

@@ -14,8 +14,8 @@ D1/3696: E6 80        INC $80
 D1/3698: E6 C0        INC $C0
 D1/369A: 02 E4        COP $E4
 D1/369C: 75 10        ADC $10,X
-D1/369E: 90 90        BCC $3630
-D1/36A0: F0 E8        BEQ $368A
+D1/369E: 90 90        BCC Local_D13630
+D1/36A0: F0 E8        BEQ Local_D1368A
 D1/36A2: 00 EA        BRK $EA
 D1/36A4: 00 00        BRK $00
 D1/36A6: EA           NOP

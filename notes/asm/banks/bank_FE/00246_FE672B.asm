@@ -1,13 +1,13 @@
 ; Bank: FE | Start Address: 672B
 Routine_FE672B:
-FE/672B: 3C 42 3C     BIT $3C42,X
+FE/672B: 3C 42 3C     BIT Local_FE3C42,X
 FE/672E: D5 34        CMP $34,X
 FE/6730: C3 88        CMP $88,S
 FE/6732: 07 8B        ORA [$8B]
 FE/6734: 07 02        ORA [$02]
 FE/6736: 01 06        ORA ($06,X)
 FE/6738: 03 5E        ORA $5E,S
-FE/673A: 70 9E        BVS $66DA
+FE/673A: 70 9E        BVS Local_FE66DA
 FE/673C: 17 AD        ORA [$AD],Y
 FE/673E: C6 03        DEC $03
 FE/6740: 88           DEY
@@ -22,10 +22,10 @@ FE/6753: 62 01 F0     PER $FE5757
 FE/6756: 01 F0        ORA ($F0,X)
 FE/6758: 01 F0        ORA ($F0,X)
 FE/675A: FF 01 F0 01  SBC $01F001,X
-FE/675E: F0 01        BEQ $6761
-FE/6760: F0 01        BEQ $6763
-FE/6762: F0 01        BEQ $6765
-FE/6764: F0 01        BEQ $6767
-FE/6766: F0 01        BEQ $6769
-FE/6768: F0 0B        BEQ $6775
+FE/675E: F0 01        BEQ Local_FE6761
+FE/6760: F0 01        BEQ Local_FE6763
+FE/6762: F0 01        BEQ Local_FE6765
+FE/6764: F0 01        BEQ Local_FE6767
+FE/6766: F0 01        BEQ Local_FE6769
+FE/6768: F0 0B        BEQ Local_FE6775
 FE/676A: 40           RTI

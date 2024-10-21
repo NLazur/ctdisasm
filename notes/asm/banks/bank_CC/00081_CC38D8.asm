@@ -150,10 +150,10 @@ CC/3A1C: 3B           TSC
 CC/3A1D: A7 3B        LDA [$3B]
 CC/3A1F: B2 3B        LDA ($3B)
 CC/3A21: C3 3B        CMP $3B,S
-CC/3A23: D0 3B        BNE $3A60
+CC/3A23: D0 3B        BNE Local_CC3A60
 CC/3A25: E7 3B        SBC [$3B]
 CC/3A27: FE 3B 0C     INC $0C3B,X
-CC/3A2A: 3C 1E 3C     BIT $3C1E,X
+CC/3A2A: 3C 1E 3C     BIT Local_CC3C1E,X
 CC/3A2D: 31 3C        AND ($3C),Y
 CC/3A2F: 41 3C        EOR ($3C,X)
 CC/3A31: 55 3C        EOR $3C,X

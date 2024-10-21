@@ -2,7 +2,7 @@
 Routine_FD46DA:
 FD/46DA: D1 08        CMP ($08),Y
 FD/46DC: F8           SED
-FD/46DD: 82 3D 6C     BRL $FDB31D
+FD/46DD: 82 3D 6C     BRL Routine_FDB31D
 FD/46E0: 29 0F 05     AND #$050F
 FD/46E3: 00 FD        BRK $FD
 FD/46E5: 01 BE        ORA ($BE,X)
@@ -20,10 +20,10 @@ FD/46FD: C8           INY
 FD/46FE: 27 02        AND [$02]
 FD/4700: A7 10        LDA [$10]
 FD/4702: 36 7F        ROL $7F,X
-FD/4704: 80 BF        BRA $46C5
+FD/4704: 80 BF        BRA Local_FD46C5
 FD/4706: C0 4F E0     CPY #$E04F
 FD/4709: 00 27        BRK $27
-FD/470B: F0 10        BEQ $471D
+FD/470B: F0 10        BEQ Local_FD471D
 FD/470D: F8           SED
 FD/470E: E3 1C        SBC $1C,S
 FD/4710: 1F E0 00 00  ORA $0000E0,X

@@ -10,7 +10,7 @@ C3/39F6: E0 04        CPX #$04
 C3/39F8: 07 27        ORA [$27]
 C3/39FA: 4E 00 26     LSR $2600
 C3/39FD: 00 E0        BRK $E0
-C3/39FF: F0 17        BEQ $3A18
+C3/39FF: F0 17        BEQ Local_C33A18
 C3/3A01: 41 6B        EOR ($6B,X)
 C3/3A03: 09 16 00     ORA #$0016
 C3/3A06: E0 E8        CPX #$E8
@@ -20,10 +20,10 @@ C3/3A0C: 00 00        BRK $00
 C3/3A0E: E0 E0        CPX #$E0
 C3/3A10: 07 29        ORA [$29]
 C3/3A12: 02 E9        COP $E9
-C3/3A14: F0 00        BEQ $3A16
+C3/3A14: F0 00        BEQ Local_C33A16
 C3/3A16: 28           PLP
 C3/3A17: 02 E1        COP $E1
-C3/3A19: F0 19        BEQ $3A34
+C3/3A19: F0 19        BEQ Local_C33A34
 C3/3A1B: 02 E9        COP $E9
 C3/3A1D: E8           INX
 C3/3A1E: 00 18        BRK $18
@@ -34,11 +34,11 @@ C3/3A26: E0 00        CPX #$00
 C3/3A28: 08           PHP
 C3/3A29: 02 E1        COP $E1
 C3/3A2B: E0 0A        CPX #$0A
-C3/3A2D: 2C 02 F0     BIT $F002
+C3/3A2D: 2C 02 F0     BIT Local_C3F002
 C3/3A30: 00 F0        BRK $F0
 C3/3A32: 2B           PLD
 C3/3A33: 02 E8        COP $E8
-C3/3A35: F0 2A        BEQ $3A61
+C3/3A35: F0 2A        BEQ Local_C33A61
 C3/3A37: 02 E0        COP $E0
 C3/3A39: 00 F0        BRK $F0
 C3/3A3B: 1C 02 F0     TRB $F002
@@ -77,7 +77,7 @@ C3/3A83: 3E 00 09     ROL $0900,X
 C3/3A86: 54 08 18     MVN $08,$18
 C3/3A89: 00 E0        BRK $E0
 C3/3A8B: 53 08        EOR ($08,S),Y
-C3/3A8D: 10 E0        BPL $3A6F
+C3/3A8D: 10 E0        BPL Local_C33A6F
 C3/3A8F: 12 08        ORA ($08)
 C3/3A91: 08           PHP
 C3/3A92: 08           PHP
@@ -88,7 +88,7 @@ C3/3A98: 08           PHP
 C3/3A99: F8           SED
 C3/3A9A: E0 03        CPX #$03
 C3/3A9C: 00 08        BRK $08
-C3/3A9E: F0 E0        BEQ $3A80
+C3/3A9E: F0 E0        BEQ Local_C33A80
 C3/3AA0: 02 08        COP $08
 C3/3AA2: E8           INX
 C3/3AA3: E0 01        CPX #$01
@@ -96,7 +96,7 @@ C3/3AA5: 00 08        BRK $08
 C3/3AA7: E0 E0        CPX #$E0
 C3/3AA9: 04 5A        TSB $5A
 C3/3AAB: 28           PLP
-C3/3AAC: F0 E0        BEQ $3A8E
+C3/3AAC: F0 E0        BEQ Local_C33A8E
 C3/3AAE: 00 56        BRK $56
 C3/3AB0: 28           PLP
 C3/3AB1: E8           INX
@@ -108,7 +108,7 @@ C3/3AB9: 3F AC 0A 2F  AND $2F0AAC,X
 C3/3ABD: 06 00        ASL $00
 C3/3ABF: F8           SED
 C3/3AC0: 1F 00 06 00  ORA $000600,X
-C3/3AC4: F0 0F        BEQ $3AD5
+C3/3AC4: F0 0F        BEQ Local_C33AD5
 C3/3AC6: 06 00        ASL $00
 C3/3AC8: E8           INX
 C3/3AC9: 3E 01 C0     ROL $C001,X
@@ -128,7 +128,7 @@ C3/3AE5: 2A           ROL
 C3/3AE6: 00 10        BRK $10
 C3/3AE8: 00 74        BRK $74
 C3/3AEA: 2A           ROL
-C3/3AEB: 20 00 76     JSR $7600
+C3/3AEB: 20 00 76     JSR Local_C37600
 C3/3AEE: 2A           ROL
 C3/3AEF: 00 30        BRK $30
 C3/3AF1: 00 78        BRK $78

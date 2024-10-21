@@ -1,12 +1,12 @@
 ; Bank: C3 | Start Address: 8F1D
 Routine_C38F1D:
-C3/8F1D: 20 08 7F     JSR $7F08
+C3/8F1D: 20 08 7F     JSR Local_C37F08
 C3/8F20: 37 4E        AND [$4E],Y
 C3/8F22: 71 50        ADC ($50),Y
 C3/8F24: 01 02        ORA ($02,X)
 C3/8F26: 1A           INC
 C3/8F27: 3A           DEC
-C3/8F28: 70 00        BVS $8F2A
+C3/8F28: 70 00        BVS Local_C38F2A
 C3/8F2A: E0 38 11     CPX #$1138
 C3/8F2D: A0 55 0F     LDY #$0F55
 C3/8F30: 00 04        BRK $04
@@ -37,7 +37,7 @@ C3/8F65: 7F 15 48 1B  ADC $1B4815,X
 C3/8F69: 01 0D        ORA ($0D,X)
 C3/8F6B: 14 3B        TRB $3B
 C3/8F6D: 00 46        BRK $46
-C3/8F6F: 80 09        BRA $8F7A
+C3/8F6F: 80 09        BRA Local_C38F7A
 C3/8F71: D7 09        CMP [$09],Y
 C3/8F73: 7F 09 2D 00  ADC $002D09,X
 C3/8F77: 0A           ASL

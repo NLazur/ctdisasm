@@ -5,7 +5,7 @@ FF/F094: 54 28 58     MVN $28,$58
 FF/F097: 24 30        BIT $30
 FF/F099: 18           CLC
 FF/F09A: E8           INX
-FF/F09B: 70 60        BVS $F0FD
+FF/F09B: 70 60        BVS Local_FFF0FD
 FF/F09D: 98           TYA
 FF/F09E: 88           DEY
 FF/F09F: 78           SEI
@@ -23,8 +23,8 @@ FF/F0AC: 00 00        BRK $00
 FF/F0AE: 00 00        BRK $00
 FF/F0B0: 00 00        BRK $00
 FF/F0B2: 00 00        BRK $00
-FF/F0B4: 20 00 90     JSR $9000
-FF/F0B7: 30 00        BMI $F0B9
+FF/F0B4: 20 00 90     JSR Local_FF9000
+FF/F0B7: 30 00        BMI Local_FFF0B9
 FF/F0B9: 00 00        BRK $00
 FF/F0BB: 00 00        BRK $00
 FF/F0BD: 00 00        BRK $00

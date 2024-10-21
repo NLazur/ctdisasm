@@ -1,39 +1,39 @@
 ; Bank: FF | Start Address: 8E64
 Routine_FF8E64:
-FF/8E64: B0 60        BCS $8EC6
+FF/8E64: B0 60        BCS Local_FF8EC6
 FF/8E66: 5A           PHY
-FF/8E67: 30 2F        BMI $8E98
+FF/8E67: 30 2F        BMI Local_FF8E98
 FF/8E69: 1A           INC
 FF/8E6A: 12 0C        ORA ($0C)
 FF/8E6C: 3D 16 17     AND $1716,X
 FF/8E6F: 02 CF        COP $CF
 FF/8E71: 81 F6        STA ($F6,X)
 FF/8E73: 4F 6E 38 58  EOR $58386E
-FF/8E77: 30 BC        BMI $8E35
+FF/8E77: 30 BC        BMI Local_FF8E35
 FF/8E79: 68           PLA
 FF/8E7A: EF 44 E7 43  SBC $43E744
 FF/8E7E: 87 C2        STA [$C2]
-FF/8E80: 70 20        BVS $8EA2
+FF/8E80: 70 20        BVS Local_FF8EA2
 FF/8E82: B8           CLV
-FF/8E83: 70 5C        BVS $8EE1
+FF/8E83: 70 5C        BVS Local_FF8EE1
 FF/8E85: 38           SEC
 FF/8E86: 2F 1C 3D 15  AND $153D1C
 FF/8E8A: 2D 1E 16     AND $161E
 FF/8E8D: 04 2A        TSB $2A
 FF/8E8F: 08           PHP
 FF/8E90: 6A           ROR
-FF/8E91: 30 F6        BMI $8E89
+FF/8E91: 30 F6        BMI Local_FF8E89
 FF/8E93: 7A           PLY
 FF/8E94: EA           NOP
 FF/8E95: 5E 7E 1E     LSR $1E7E,X
 FF/8E98: EA           NOP
 FF/8E99: 5E F6 7A     LSR $7AF6,X
 FF/8E9C: 6A           ROR
-FF/8E9D: 30 00        BMI $8E9F
+FF/8E9D: 30 00        BMI Local_FF8E9F
 FF/8E9F: 00 E0        BRK $E0
 FF/8EA1: C0 B0 E0     CPY #$E0B0
 FF/8EA4: DA           PHX
-FF/8EA5: 70 6F        BVS $8F16
+FF/8EA5: 70 6F        BVS Local_FF8F16
 FF/8EA7: 3A           DEC
 FF/8EA8: 36 1C        ROL $1C,X
 FF/8EAA: 19 0E 3A     ORA $3A0E,Y

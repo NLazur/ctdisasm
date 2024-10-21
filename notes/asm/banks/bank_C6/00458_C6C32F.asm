@@ -6,12 +6,12 @@ C6/C337: 2E 0F 8F     ROL $8F0F
 C6/C33A: C0 F8 02     CPY #$02F8
 C6/C33D: F8           SED
 C6/C33E: C0 D0 01     CPY #$01D0
-C6/C341: D0 BA        BNE $C2FD
+C6/C341: D0 BA        BNE Local_C6C2FD
 C6/C343: F8           SED
 C6/C344: 47 91        EOR [$91]
 C6/C346: 08           PHP
 C6/C347: FF C0 F0 61  SBC $61F0C0,X
-C6/C34B: D0 BA        BNE $C307
+C6/C34B: D0 BA        BNE Local_C6C307
 C6/C34D: F8           SED
 C6/C34E: C0 F8 C0     CPY #$C0F8
 C6/C351: F8           SED

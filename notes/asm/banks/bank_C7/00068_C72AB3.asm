@@ -2,16 +2,16 @@
 Routine_C72AB3:
 C7/2AB3: 95 A0        STA $A0,X
 C7/2AB5: F2 D5        SBC ($D5)
-C7/2AB7: 80 F2        BRA $2AAB
+C7/2AB7: 80 F2        BRA Local_C72AAB
 C7/2AB9: F5 81        SBC $81,X
 C7/2ABB: F2 95        SBC ($95)
 C7/2ABD: A1 F2        LDA ($F2,X)
 C7/2ABF: 75 81        ADC $81,X
 C7/2AC1: F2 D5        SBC ($D5)
 C7/2AC3: 81 F2        STA ($F2,X)
-C7/2AC5: F0 03        BEQ $2ACA
+C7/2AC5: F0 03        BEQ Local_C72ACA
 C7/2AC7: 09 91        ORA #$91
-C7/2AC9: D0 F5        BNE $2AC0
+C7/2AC9: D0 F5        BNE Local_C72AC0
 C7/2ACB: E0 F4 C4     CPX #$C4F4
 C7/2ACE: 9B           TXY
 C7/2ACF: F5 C0        SBC $C0,X
@@ -19,12 +19,12 @@ C7/2AD1: F3 C4        SBC ($C4,S),Y
 C7/2AD3: 9C F5 C1     STZ $C1F5
 C7/2AD6: F3 C4        SBC ($C4,S),Y
 C7/2AD8: 9D BA 9B     STA $9BBA,X
-C7/2ADB: D0 04        BNE $2AE1
+C7/2ADB: D0 04        BNE Local_C72AE1
 C7/2ADD: E4 9D        CPX $9D
-C7/2ADF: F0 2E        BEQ $2B0F
+C7/2ADF: F0 2E        BEQ Local_C72B0F
 C7/2AE1: F5 60        SBC $60,X
 C7/2AE3: F3 9C        SBC ($9C,S),Y
-C7/2AE5: D0 09        BNE $2AF0
+C7/2AE5: D0 09        BNE Local_C72AF0
 C7/2AE7: D5 C0        CMP $C0,X
 C7/2AE9: F3 D5        SBC ($D5,S),Y
 C7/2AEB: C1 F3        CMP ($F3,X)
@@ -37,14 +37,14 @@ C7/2AF8: F5 E1        SBC $E1,X
 C7/2AFA: F4 7A 9B     PEA $9B7A
 C7/2AFD: D5 E1        CMP $E1,X
 C7/2AFF: F4 DD D5     PEA $D5DD
-C7/2B02: 20 F5 E4     JSR $E4F5
+C7/2B02: 20 F5 E4     JSR Local_C7E4F5
 C7/2B05: 9D 95 21     STA $2195,X
 C7/2B08: F5 D5        SBC $D5,X
 C7/2B0A: 21 F5        AND ($F5,X)
 C7/2B0C: 09 91        ORA #$91
 C7/2B0E: D1 F5        CMP ($F5),Y
 C7/2B10: 71 01        ADC ($01),Y
-C7/2B12: F0 42        BEQ $2B56
+C7/2B12: F0 42        BEQ Local_C72B56
 C7/2B14: F5 E0        SBC $E0,X
 C7/2B16: F3 C4        SBC ($C4,S),Y
 C7/2B18: 9B           TXY
@@ -60,7 +60,7 @@ C7/2B2E: C1 F4        CMP ($F4,X)
 C7/2B30: D5 C1        CMP $C1,X
 C7/2B32: F4 F0 03     PEA $03F0
 C7/2B35: 09 91        ORA #$91
-C7/2B37: D0 F5        BNE $2B2E
+C7/2B37: D0 F5        BNE Local_C72B2E
 C7/2B39: 41 F3        EOR ($F3,X)
 C7/2B3B: 9C D0 15     STZ $15D0
 C7/2B3E: 58           CLI

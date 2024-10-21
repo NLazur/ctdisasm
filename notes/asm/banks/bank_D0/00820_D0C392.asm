@@ -11,10 +11,10 @@ D0/C3A5: 83 02        STA $02,S
 D0/C3A7: 03 F7        ORA $F7,S
 D0/C3A9: 0F EC 1C F8  ORA $F81CEC
 D0/C3AD: 08           PHP
-D0/C3AE: B0 48        BCS $C3F8
+D0/C3AE: B0 48        BCS Local_D0C3F8
 D0/C3B0: 6C F4 C8     JMP ($C8F4)
 D0/C3B3: CC 80 82     CPY $8280
-D0/C3B6: 80 80        BRA $C338
+D0/C3B6: 80 80        BRA Local_D0C338
 D0/C3B8: 16 15        ASL $15,X
 D0/C3BA: 17 14        ORA [$14],Y
 D0/C3BC: 0B           PHD
@@ -28,7 +28,7 @@ D0/C3CF: 04 FC        TSB $FC
 D0/C3D1: 04 F8        TSB $F8
 D0/C3D3: 00 F0        BRK $F0
 D0/C3D5: 08           PHP
-D0/C3D6: F0 08        BEQ $C3E0
+D0/C3D6: F0 08        BEQ Local_D0C3E0
 D0/C3D8: FC 84 7C     JSR ($7C84,X)
 D0/C3DB: 84 F8        STY $F8
 D0/C3DD: 84 3C        STY $3C

@@ -28,7 +28,7 @@ FE/6D99: 34 08        BIT $08,X
 FE/6D9B: 35 08        AND $08,X
 FE/6D9D: 12 36        ORA ($36)
 FE/6D9F: 0E 10 00     ASL $0010
-FE/6DA2: 10 02        BPL $6DA6
+FE/6DA2: 10 02        BPL Local_FE6DA6
 FE/6DA4: 58           CLI
 FE/6DA5: 11 08        ORA ($08),Y
 FE/6DA7: 12 00        ORA ($00)

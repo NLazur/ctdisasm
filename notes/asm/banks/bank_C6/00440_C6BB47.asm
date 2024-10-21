@@ -7,14 +7,14 @@ C6/BB4E: C0 A8 B8     CPY #$B8A8
 C6/BB51: 9A           TXS
 C6/BB52: AF CA 60 F8  LDA $F860CA
 C6/BB56: 01 F8        ORA ($F8,X)
-C6/BB58: 20 A9 CC     JSR $CCA9
+C6/BB58: 20 A9 CC     JSR Local_C6CCA9
 C6/BB5B: 6A           ROR
 C6/BB5C: 03 38        ORA $38,S
 C6/BB5E: CA           DEX
 C6/BB5F: 00 CB        BRK $CB
 C6/BB61: 34 F8        BIT $F8,X
 C6/BB63: 01 F8        ORA ($F8,X)
-C6/BB65: 80 91        BRA $BAF8
+C6/BB65: 80 91        BRA Local_C6BAF8
 C6/BB67: 9A           TXS
 C6/BB68: AD 80 AE     LDA $AE80
 C6/BB6B: DB           STP

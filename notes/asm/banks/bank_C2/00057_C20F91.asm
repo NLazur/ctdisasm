@@ -3,9 +3,9 @@ Routine_C20F91:
 C2/0F91: 37 10        AND [$10],Y
 C2/0F93: 91 10        STA ($10),Y
 C2/0F95: A8           TAY
-C2/0F96: 10 BF        BPL $0F57
-C2/0F98: 10 CD        BPL $0F67
-C2/0F9A: 10 00        BPL $0F9C
+C2/0F96: 10 BF        BPL Local_C20F57
+C2/0F98: 10 CD        BPL Local_C20F67
+C2/0F9A: 10 00        BPL Local_C20F9C
 C2/0F9C: 11 69        ORA ($69),Y
 C2/0F9E: 11 6B        ORA ($6B),Y
 C2/0FA0: 11 B2        ORA ($B2),Y
@@ -60,7 +60,7 @@ C2/0FFF: 5F 18 6B 18  EOR $186B18,X
 C2/1003: 8E 18 B4     STX $B418
 C2/1006: 18           CLC
 C2/1007: C7 18        CMP [$18]
-C2/1009: D0 18        BNE $1023
+C2/1009: D0 18        BNE Local_C21023
 C2/100B: F1 18        SBC ($18),Y
 C2/100D: 47 19        EOR [$19]
 C2/100F: 59 19 C2     EOR $C219,Y

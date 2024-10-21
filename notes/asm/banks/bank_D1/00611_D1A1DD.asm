@@ -39,26 +39,26 @@ D1/A226: 00 A0        BRK $A0
 D1/A228: 00 EF        BRK $EF
 D1/A22A: 7F BF 04 E6  ADC $E604BF,X
 D1/A22E: 00 80        BRK $80
-D1/A230: 10 7F        BPL $A2B1
+D1/A230: 10 7F        BPL Local_D1A2B1
 D1/A232: 92 13        STA ($13)
 D1/A234: 05 00        ORA $00
 D1/A236: 00 10        BRK $10
-D1/A238: 10 02        BPL $A23C
+D1/A238: 10 02        BPL Local_D1A23C
 D1/A23A: 13 22        ORA ($22,S),Y
 D1/A23C: 00 10        BRK $10
-D1/A23E: 10 04        BPL $A244
+D1/A23E: 10 04        BPL Local_D1A244
 D1/A240: 13 14        ORA ($14,S),Y
 D1/A242: 00 10        BRK $10
-D1/A244: 10 01        BPL $A247
+D1/A244: 10 01        BPL Local_D1A247
 D1/A246: 15 18        ORA $18,X
 D1/A248: 00 10        BRK $10
-D1/A24A: 10 01        BPL $A24D
+D1/A24A: 10 01        BPL Local_D1A24D
 D1/A24C: 13 27        ORA ($27,S),Y
 D1/A24E: 00 10        BRK $10
 D1/A250: 0F 01 26 28  ORA $282601
 D1/A254: 00 06        BRK $06
 D1/A256: 06 01        ASL $01
-D1/A258: 20 29 00     JSR $0029
+D1/A258: 20 29 00     JSR Local_D10029
 D1/A25B: 09 0F        ORA #$0F
 D1/A25D: 01 16        ORA ($16,X)
 D1/A25F: 2A           ROL
@@ -67,22 +67,22 @@ D1/A262: 0A           ASL
 D1/A263: 01 15        ORA ($15,X)
 D1/A265: 2B           PLD
 D1/A266: 00 10        BRK $10
-D1/A268: 10 01        BPL $A26B
+D1/A268: 10 01        BPL Local_D1A26B
 D1/A26A: 15 2C        ORA $2C,X
 D1/A26C: 00 10        BRK $10
-D1/A26E: 10 01        BPL $A271
+D1/A26E: 10 01        BPL Local_D1A271
 D1/A270: 15 2D        ORA $2D,X
 D1/A272: 00 10        BRK $10
-D1/A274: 10 01        BPL $A277
+D1/A274: 10 01        BPL Local_D1A277
 D1/A276: 15 2E        ORA $2E,X
 D1/A278: 00 10        BRK $10
-D1/A27A: 10 01        BPL $A27D
-D1/A27C: 10 2F        BPL $A2AD
+D1/A27A: 10 01        BPL Local_D1A27D
+D1/A27C: 10 2F        BPL Local_D1A2AD
 D1/A27E: 00 10        BRK $10
-D1/A280: 10 01        BPL $A283
+D1/A280: 10 01        BPL Local_D1A283
 D1/A282: 15 30        ORA $30,X
 D1/A284: 00 10        BRK $10
-D1/A286: 10 01        BPL $A289
+D1/A286: 10 01        BPL Local_D1A289
 D1/A288: 29 31        AND #$31
 D1/A28A: 00 10        BRK $10
 D1/A28C: 0D 14 2D     ORA $2D14
@@ -99,30 +99,30 @@ D1/A2A4: 0A           ASL
 D1/A2A5: 01 00        ORA ($00,X)
 D1/A2A7: 4F 00 10 10  EOR $101000
 D1/A2AB: 01 15        ORA ($15,X)
-D1/A2AD: 50 00        BVC $A2AF
-D1/A2AF: 10 10        BPL $A2C1
+D1/A2AD: 50 00        BVC Local_D1A2AF
+D1/A2AF: 10 10        BPL Local_D1A2C1
 D1/A2B1: 01 15        ORA ($15,X)
 D1/A2B3: 51 00        EOR ($00),Y
-D1/A2B5: 10 10        BPL $A2C7
+D1/A2B5: 10 10        BPL Local_D1A2C7
 D1/A2B7: 01 15        ORA ($15,X)
 D1/A2B9: 52 00        EOR ($00)
-D1/A2BB: 10 10        BPL $A2CD
+D1/A2BB: 10 10        BPL Local_D1A2CD
 D1/A2BD: 01 40        ORA ($40,X)
 D1/A2BF: 53 00        EOR ($00,S),Y
 D1/A2C1: 08           PHP
-D1/A2C2: 10 01        BPL $A2C5
+D1/A2C2: 10 01        BPL Local_D1A2C5
 D1/A2C4: 2F 54 00 10  AND $100054
-D1/A2C8: 10 01        BPL $A2CB
+D1/A2C8: 10 01        BPL Local_D1A2CB
 D1/A2CA: 05 55        ORA $55
 D1/A2CC: 00 10        BRK $10
 D1/A2CE: 0F 01 46 19  ORA $194601
 D1/A2D2: 00 10        BRK $10
-D1/A2D4: 10 01        BPL $A2D7
+D1/A2D4: 10 01        BPL Local_D1A2D7
 D1/A2D6: 00 57        BRK $57
 D1/A2D8: 00 10        BRK $10
-D1/A2DA: 10 0D        BPL $A2E9
+D1/A2DA: 10 0D        BPL Local_D1A2E9
 D1/A2DC: 38           SEC
 D1/A2DD: 58           CLI
 D1/A2DE: 00 10        BRK $10
-D1/A2E0: 10 01        BPL $A2E3
+D1/A2E0: 10 01        BPL Local_D1A2E3
 D1/A2E2: 40           RTI

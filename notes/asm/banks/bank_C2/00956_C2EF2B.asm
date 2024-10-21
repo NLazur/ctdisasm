@@ -12,5 +12,5 @@ C2/EF3C: A5 63        LDA $63
 C2/EF3E: 69 40 00     ADC #$0040
 C2/EF41: 85 63        STA $63
 C2/EF43: C6 8C        DEC $8C
-C2/EF45: D0 E4        BNE $EF2B
+C2/EF45: D0 E4        BNE Local_C2EF2B
 C2/EF47: 60           RTS

@@ -1,8 +1,8 @@
 ; Bank: D1 | Start Address: 3038
 Routine_D13038:
 D1/3038: 4F 00 04 46  EOR $460400
-D1/303C: F0 01        BEQ $303F
-D1/303E: 10 C0        BPL $3000
+D1/303C: F0 01        BEQ Local_D1303F
+D1/303E: 10 C0        BPL Local_D13000
 D1/3040: 00 C2        BRK $C2
 D1/3042: 00 C2        BRK $C2
 D1/3044: 00 40        BRK $40

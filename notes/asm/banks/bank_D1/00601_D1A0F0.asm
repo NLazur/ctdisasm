@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: A0F0
 Routine_D1A0F0:
-D1/A0F0: 20 60 FF     JSR $FF60
+D1/A0F0: 20 60 FF     JSR Local_D1FF60
 D1/A0F3: FF 11 01 7F  SBC $7F0111,X
 D1/A0F7: 8E 40 10     STX $1040
 D1/A0FA: 09 FF        ORA #$FF

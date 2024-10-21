@@ -6,14 +6,14 @@ CE/69A3: 01 1B        ORA ($1B,X)
 CE/69A5: 18           CLC
 CE/69A6: 72 03        ADC ($03)
 CE/69A8: 73 03        ADC ($03,S),Y
-CE/69AA: 70 24        BVS $69D0
+CE/69AA: 70 24        BVS Local_CE69D0
 CE/69AC: 05 79        ORA $79
 CE/69AE: 03 12        ORA $12,S
 CE/69B0: 2B           PLD
 CE/69B1: 71 DA        ADC ($DA),Y
 CE/69B3: 00 2E        BRK $2E
 CE/69B5: 01 00        ORA ($00,X)
-CE/69B7: F0 FC        BEQ $69B5
+CE/69B7: F0 FC        BEQ Local_CE69B5
 CE/69B9: E0 00 D5     CPX #$D500
 CE/69BC: 69 43 6A     ADC #$6A43
 CE/69BF: 88           DEY

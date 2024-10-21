@@ -21,5 +21,5 @@ FD/E6C9: E2 20        SEP #$20
 FD/E6CB: E8           INX
 FD/E6CC: E8           INX
 FD/E6CD: 88           DEY
-FD/E6CE: D0 D5        BNE $E6A5
+FD/E6CE: D0 D5        BNE Local_FDE6A5
 FD/E6D0: 60           RTS

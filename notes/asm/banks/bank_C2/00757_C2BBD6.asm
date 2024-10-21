@@ -4,7 +4,7 @@ C2/BBD6: 08           PHP
 C2/BBD7: A2 FF FF     LDX #$FFFF
 C2/BBDA: 86 17        STX $17
 C2/BBDC: E2 30        SEP #$30
-C2/BBDE: 20 66 F5     JSR $F566
+C2/BBDE: 20 66 F5     JSR Local_C2F566
 C2/BBE1: AD 48 0F     LDA $0F48
 C2/BBE4: 18           CLC
 C2/BBE5: 6D 4A 0F     ADC $0F4A
@@ -27,12 +27,12 @@ C2/BC0B: 14 00        TRB $00
 C2/BC0D: 64 01        STZ $01
 C2/BC0F: A2 00        LDX #$00
 C2/BC11: 06 00        ASL $00
-C2/BC13: 90 05        BCC $BC1A
+C2/BC13: 90 05        BCC Local_C2BC1A
 C2/BC15: A5 01        LDA $01
 C2/BC17: 95 17        STA $17,X
 C2/BC19: E8           INX
 C2/BC1A: E6 01        INC $01
 C2/BC1C: A5 00        LDA $00
-C2/BC1E: D0 F1        BNE $BC11
+C2/BC1E: D0 F1        BNE Local_C2BC11
 C2/BC20: 28           PLP
 C2/BC21: 60           RTS

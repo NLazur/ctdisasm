@@ -8,7 +8,7 @@ D1/1DCA: C4 00        CPY $00
 D1/1DCC: E2 00        SEP #$00
 D1/1DCE: E4 1A        CPX $1A
 D1/1DD0: 18           CLC
-D1/1DD1: 80 C6        BRA $1D99
+D1/1DD1: 80 C6        BRA Local_D11D99
 D1/1DD3: 00 C8        BRK $C8
 D1/1DD5: 00 E6        BRK $E6
 D1/1DD7: 00 E8        BRK $E8
@@ -36,16 +36,16 @@ D1/1E02: D3 27        CMP ($27,S),Y
 D1/1E04: 00 64        BRK $64
 D1/1E06: 00 EA        BRK $EA
 D1/1E08: 00 82        BRK $82
-D1/1E0A: 10 80        BPL $1D8C
-D1/1E0C: 82 00 84     BRL $D1A20F
-D1/1E0F: 10 46        BPL $1E57
+D1/1E0A: 10 80        BPL Local_D11D8C
+D1/1E0C: 82 00 84     BRL Routine_D1A20F
+D1/1E0F: 10 46        BPL Local_D11E57
 D1/1E11: 83 00        STA $00,S
 D1/1E13: F6 80        INC $80,X
 D1/1E15: 84 00        STY $00
 D1/1E17: 86 10        STX $10
-D1/1E19: 80 86        BRA $1DA1
+D1/1E19: 80 86        BRA Local_D11DA1
 D1/1E1B: 00 88        BRK $88
-D1/1E1D: 50 40        BVC $1E5F
+D1/1E1D: 50 40        BVC Local_D11E5F
 D1/1E1F: AD 00 00     LDA $0000
 D1/1E22: 11 80        ORA ($80),Y
 D1/1E24: 28           PLP
@@ -53,7 +53,7 @@ D1/1E25: 01 FF        ORA ($FF,X)
 D1/1E27: FF 11 80 AA  SBC $AA8011,X
 D1/1E2B: 2A           ROL
 D1/1E2C: 06 10        ASL $10
-D1/1E2E: 2C 0C 10     BIT $100C
+D1/1E2E: 2C 0C 10     BIT Local_D1100C
 D1/1E31: 0A           ASL
 D1/1E32: 12 10        ORA ($10)
 D1/1E34: 0C 18 00     TSB $0018

@@ -8,12 +8,12 @@ C3/3F5A: 35 85        AND $85,X
 C3/3F5C: 04 A9        TSB $A9
 C3/3F5E: 11 65        ORA ($65),Y
 C3/3F60: 04 C2        TSB $C2
-C3/3F62: 20 A2 02     JSR $02A2
+C3/3F62: 20 A2 02     JSR Local_C302A2
 C3/3F65: 69 08 A0     ADC #$A008
 C3/3F68: 3A           DEC
 C3/3F69: 69 A3 04     ADC #$04A3
 C3/3F6C: 89 40 00     BIT #$0040
-C3/3F6F: F0 80        BEQ $3EF1
+C3/3F6F: F0 80        BEQ Local_C33EF1
 C3/3F71: 06 A2        ASL $A2
 C3/3F73: 98           TYA
 C3/3F74: 68           PLA

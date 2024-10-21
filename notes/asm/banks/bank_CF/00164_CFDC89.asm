@@ -11,7 +11,7 @@ CF/DC97: 24 3B        BIT $3B
 CF/DC99: 24 3D        BIT $3D
 CF/DC9B: 24 3F        BIT $3F
 CF/DC9D: 24 1C        BIT $1C
-CF/DC9F: 20 42 1B     JSR $1B42
+CF/DC9F: 20 42 1B     JSR Local_CF1B42
 CF/DCA2: 45 1B        EOR $1B
 CF/DCA4: 63 A1        ADC $A1,S
 CF/DCA6: 63 E1        ADC $E1,S

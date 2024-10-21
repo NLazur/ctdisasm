@@ -5,7 +5,7 @@ D0/2042: 0F 0D E4 70  ORA $70E40D
 D0/2046: 00 80        BRK $80
 D0/2048: 00 00        BRK $00
 D0/204A: D8           CLD
-D0/204B: B0 3C        BCS $2089
+D0/204B: B0 3C        BCS Local_D02089
 D0/204D: D8           CLD
 D0/204E: D4 3E        PEI $3E
 D0/2050: 7A           PLY
@@ -29,8 +29,8 @@ D0/2075: 00 00        BRK $00
 D0/2077: 00 00        BRK $00
 D0/2079: 00 00        BRK $00
 D0/207B: 00 00        BRK $00
-D0/207D: 70 C0        BVS $203F
-D0/207F: 2C 3A F8     BIT $F83A
+D0/207D: 70 C0        BVS Local_D0203F
+D0/207F: 2C 3A F8     BIT Local_D0F83A
 D0/2082: E2 1F        SEP #$1F
 D0/2084: CE 3E F9     DEC $F93E
 D0/2087: 07 00        ORA [$00]
@@ -44,11 +44,11 @@ D0/2096: 00 00        BRK $00
 D0/2098: 00 C0        BRK $C0
 D0/209A: 00 00        BRK $00
 D0/209C: C0 30        CPY #$30
-D0/209E: 80 00        BRA $20A0
+D0/209E: 80 00        BRA Local_D020A0
 D0/20A0: 00 00        BRK $00
 D0/20A2: 00 00        BRK $00
 D0/20A4: C0 00        CPY #$00
-D0/20A6: F0 80        BEQ $2028
+D0/20A6: F0 80        BEQ Local_D02028
 D0/20A8: B8           CLV
 D0/20A9: 3F 04 00 1E  AND $1E0004,X
 D0/20AD: 00 00        BRK $00
@@ -69,7 +69,7 @@ D0/20CB: 00 1E        BRK $1E
 D0/20CD: 00 00        BRK $00
 D0/20CF: 00 00        BRK $00
 D0/20D1: 00 80        BRK $80
-D0/20D3: 30 FC        BMI $20D1
+D0/20D3: 30 FC        BMI Local_D020D1
 D0/20D5: 03 1F        ORA $1F,S
 D0/20D7: 00 FF        BRK $FF
 D0/20D9: 00 FF        BRK $FF
@@ -81,7 +81,7 @@ D0/20E4: 0F 0F F8 00  ORA $00F80F
 D0/20E8: 00 00        BRK $00
 D0/20EA: 00 00        BRK $00
 D0/20EC: 00 80        BRK $80
-D0/20EE: F0 FF        BEQ $20EF
+D0/20EE: F0 FF        BEQ Local_D020EF
 D0/20F0: 58           CLI
 D0/20F1: 1F B3 3C 16  ORA $163CB3,X
 D0/20F5: 07 29        ORA [$29]
@@ -90,7 +90,7 @@ D0/20FB: 00 00        BRK $00
 D0/20FD: 00 00        BRK $00
 D0/20FF: 00 60        BRK $60
 D0/2101: C0 18        CPY #$18
-D0/2103: 30 07        BMI $210C
+D0/2103: 30 07        BMI Local_D0210C
 D0/2105: 00 00        BRK $00
 D0/2107: 00 E7        BRK $E7
 D0/2109: 1F D3 30 FC  ORA $FC30D3,X
@@ -102,14 +102,14 @@ D0/2118: 00 0F        BRK $0F
 D0/211A: 03 18        ORA $18,S
 D0/211C: FF 00 00 00  SBC $000000,X
 D0/2120: 3F C0 5F 60  AND $605FC0,X
-D0/2124: 80 FF        BRA $2125
+D0/2124: 80 FF        BRA Local_D02125
 D0/2126: 28           PLP
 D0/2127: 4F 5A 9B 08  EOR $089B5A
 D0/212B: 02 04        COP $04
 D0/212D: 03 00        ORA $00,S
 D0/212F: 00 00        BRK $00
-D0/2131: 80 00        BRA $2133
-D0/2133: 70 E4        BVS $2119
+D0/2131: 80 00        BRA Local_D02133
+D0/2133: 70 E4        BVS Local_D02119
 D0/2135: 0D 0F 00     ORA $000F
 D0/2138: FE 01 FE     INC $FE01,X
 D0/213B: 00 75        BRK $75
@@ -118,7 +118,7 @@ D0/213E: EE 13 7A     INC $7A13
 D0/2141: E4 D4        CPX $D4
 D0/2143: 3E 3C D8     ROL $D83C,X
 D0/2146: D8           CLD
-D0/2147: B0 00        BCS $2149
+D0/2147: B0 00        BCS Local_D02149
 D0/2149: 01 01        ORA ($01,X)
 D0/214B: 01 02        ORA ($02,X)
 D0/214D: C2 A4        REP #$A4
@@ -138,7 +138,7 @@ D0/216D: 3E E2 1F     ROL $1FE2,X
 D0/2170: 3A           DEC
 D0/2171: F8           SED
 D0/2172: C0 2C 00     CPY #$002C
-D0/2175: 70 00        BVS $2177
+D0/2175: 70 00        BVS Local_D02177
 D0/2177: 00 00        BRK $00
 D0/2179: 00 01        BRK $01
 D0/217B: 01 06        ORA ($06,X)
@@ -146,7 +146,7 @@ D0/217D: 1C F0 00     TRB $00F0
 D0/2180: 38           SEC
 D0/2181: 05 80        ORA $80
 D0/2183: 00 C0        BRK $C0
-D0/2185: 30 00        BMI $2187
+D0/2185: 30 00        BMI Local_D02187
 D0/2187: 00 00        BRK $00
 D0/2189: C0 00 00     CPY #$0000
 D0/218C: 00 00        BRK $00
@@ -172,10 +172,10 @@ D0/21BA: 13 1C        ORA ($1C,S),Y
 D0/21BC: 2E 31 58     ROL $5831
 D0/21BF: 66 38        ROR $38
 D0/21C1: 44 B4 CC     MVP $B4,$CC
-D0/21C4: 70 88        BVS $214E
-D0/21C6: 70 88        BVS $2150
+D0/21C4: 70 88        BVS Local_D0214E
+D0/21C6: 70 88        BVS Local_D02150
 D0/21C8: C0 C0 30     CPY #$30C0
-D0/21CB: F0 88        BEQ $2155
+D0/21CB: F0 88        BEQ Local_D02155
 D0/21CD: 88           DEY
 D0/21CE: 04 04        TSB $04
 D0/21D0: 00 00        BRK $00
@@ -183,7 +183,7 @@ D0/21D2: 00 00        BRK $00
 D0/21D4: 00 00        BRK $00
 D0/21D6: 00 00        BRK $00
 D0/21D8: 04 07        TSB $07
-D0/21DA: 10 1E        BPL $21FA
+D0/21DA: 10 1E        BPL Local_D021FA
 D0/21DC: 28           PLP
-D0/21DD: 30 50        BMI $222F
+D0/21DD: 30 50        BMI Local_D0222F
 D0/21DF: 60           RTS

@@ -12,8 +12,8 @@ CF/7C45: 02 FE        COP $FE
 CF/7C47: 01 FD        ORA ($FD,X)
 CF/7C49: 02 7E        COP $7E
 CF/7C4B: 81 7F        STA ($7F,X)
-CF/7C4D: 80 7F        BRA $7CCE
-CF/7C4F: 80 2F        BRA $7C80
+CF/7C4D: 80 7F        BRA Local_CF7CCE
+CF/7C4F: 80 2F        BRA Local_CF7C80
 CF/7C51: FF 17 FF 0F  SBC $0FFF17,X
 CF/7C55: FF 17 FF 0B  SBC $0BFF17,X
 CF/7C59: FF 85 7F 0B  SBC $0B7F85,X
@@ -49,8 +49,8 @@ CF/7CB4: F8           SED
 CF/7CB5: 07 F5        ORA [$F5]
 CF/7CB7: 0A           ASL
 CF/7CB8: FE 01 7F     INC $7F01,X
-CF/7CBB: 80 EF        BRA $7CAC
-CF/7CBD: 10 57        BPL $7D16
+CF/7CBB: 80 EF        BRA Local_CF7CAC
+CF/7CBD: 10 57        BPL Local_CF7D16
 CF/7CBF: A8           TAY
 CF/7CC0: 52 AD        EOR ($AD)
 CF/7CC2: 01 FE        ORA ($FE,X)
@@ -68,7 +68,7 @@ CF/7CD5: FF 00 FF 80  SBC $80FF00,X
 CF/7CD9: 7F 14 EB 8A  ADC $8AEB14,X
 CF/7CDD: 75 45        ADC $45,X
 CF/7CDF: BA           TSX
-CF/7CE0: 80 FF        BRA $7CE1
+CF/7CE0: 80 FF        BRA Local_CF7CE1
 CF/7CE2: 51 AF        EOR ($AF),Y
 CF/7CE4: BC 43 5E     LDY $5E43,X
 CF/7CE7: A1 AB        LDA ($AB,X)
@@ -90,5 +90,5 @@ CF/7D09: E3 2C        SBC $2C,S
 CF/7D0B: D3 9C        CMP ($9C,S),Y
 CF/7D0D: E3 28        SBC $28,S
 CF/7D0F: D7 FF        CMP [$FF],Y
-CF/7D11: 80 3F        BRA $7D52
+CF/7D11: 80 3F        BRA Local_CF7D52
 CF/7D13: 40           RTI

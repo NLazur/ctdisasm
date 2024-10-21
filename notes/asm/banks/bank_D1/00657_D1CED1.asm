@@ -4,7 +4,7 @@ D1/CED1: 03 78        ORA $78,S
 D1/CED3: 00 DB        BRK $DB
 D1/CED5: 06 CF        ASL $CF
 D1/CED7: 36 3D        ROL $3D,X
-D1/CED9: B0 3D        BCS $CF18
+D1/CED9: B0 3D        BCS Local_D1CF18
 D1/CEDB: EC 6F 6F     CPX $6F6F
 D1/CEDE: 7B           TDC
 D1/CEDF: 1B           TCS
@@ -34,17 +34,17 @@ D1/CF0E: 1D 1E 19     ORA $191E,X
 D1/CF11: 1A           INC
 D1/CF12: 18           CLC
 D1/CF13: 58           CLI
-D1/CF14: 20 D8 1B     JSR $1BD8
+D1/CF14: 20 D8 1B     JSR Local_D11BD8
 D1/CF17: 1C 25 26     TRB $2625
 D1/CF1A: 21 22        AND ($22,X)
 D1/CF1C: 18           CLC
 D1/CF1D: 58           CLI
-D1/CF1E: 20 D8 29     JSR $29D8
+D1/CF1E: 20 D8 29     JSR Local_D129D8
 D1/CF21: 2A           ROL
 D1/CF22: 23 24        AND $24,S
 D1/CF24: 18           CLC
 D1/CF25: 58           CLI
-D1/CF26: 20 D8 1F     JSR $1FD8
+D1/CF26: 20 D8 1F     JSR Local_D11FD8
 D1/CF29: 28           PLP
 D1/CF2A: 31 32        AND ($32),Y
 D1/CF2C: 19 1A 20     ORA $201A,Y
@@ -63,7 +63,7 @@ D1/CF44: 03 78        ORA $78,S
 D1/CF46: 00 DB        BRK $DB
 D1/CF48: 06 CF        ASL $CF
 D1/CF4A: 36 3D        ROL $3D,X
-D1/CF4C: B0 3D        BCS $CF8B
+D1/CF4C: B0 3D        BCS Local_D1CF8B
 D1/CF4E: EC 6F 6F     CPX $6F6F
 D1/CF51: 7B           TDC
 D1/CF52: 1B           TCS
@@ -78,7 +78,7 @@ D1/CF63: 27 30        AND [$30]
 D1/CF65: 1F 28 1D 1E  ORA $1E1D28,X
 D1/CF69: 25 26        AND $26
 D1/CF6B: 2B           PLD
-D1/CF6C: 2C 27 30     BIT $3027
+D1/CF6C: 2C 27 30     BIT Local_D13027
 D1/CF6F: 29 2A        AND #$2A
 D1/CF71: 25 26        AND $26
 D1/CF73: 1B           TCS
@@ -93,14 +93,14 @@ D1/CF83: 1B           TCS
 D1/CF84: 1C 19 1A     TRB $1A19
 D1/CF87: 21 22        AND ($22,X)
 D1/CF89: 1D 1E 27     ORA $271E,X
-D1/CF8C: 30 23        BMI $CFB1
+D1/CF8C: 30 23        BMI Local_D1CFB1
 D1/CF8E: 24 19        BIT $19
 D1/CF90: 1A           INC
 D1/CF91: 21 22        AND ($22,X)
 D1/CF93: 2B           PLD
-D1/CF94: 2C 25 26     BIT $2625
+D1/CF94: 2C 25 26     BIT Local_D12625
 D1/CF97: 19 1A 21     ORA $211A,Y
-D1/CF9A: 22 29 2A 33  JSR $332A29
+D1/CF9A: 22 29 2A 33  JSR Routine_332A29
 D1/CF9E: 34 1B        BIT $1B,X
 D1/CFA0: 1C 21 22     TRB $2221
 D1/CFA3: 31 32        AND ($32),Y

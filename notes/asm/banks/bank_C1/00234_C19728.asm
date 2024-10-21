@@ -1,6 +1,6 @@
 ; Bank: C1 | Start Address: 9728
 Routine_C19728:
-C1/9728: 20 14 AC     JSR $AC14
+C1/9728: 20 14 AC     JSR Local_C1AC14
 C1/972B: AE D2 B1     LDX $B1D2
 C1/972E: E8           INX
 C1/972F: E8           INX
@@ -14,14 +14,14 @@ C1/973C: AD CC AE     LDA $AECC
 C1/973F: AA           TAX
 C1/9740: BD 02 AF     LDA $AF02,X
 C1/9743: C9 FF        CMP #$FF
-C1/9745: D0 06        BNE $974D
+C1/9745: D0 06        BNE Local_C1974D
 C1/9747: A5 0A        LDA $0A
-C1/9749: D0 06        BNE $9751
-C1/974B: 80 09        BRA $9756
+C1/9749: D0 06        BNE Local_C19751
+C1/974B: 80 09        BRA Local_C19756
 C1/974D: A5 0A        LDA $0A
-C1/974F: D0 05        BNE $9756
-C1/9751: 20 3E 8C     JSR $8C3E
-C1/9754: 80 05        BRA $975B
+C1/974F: D0 05        BNE Local_C19756
+C1/9751: 20 3E 8C     JSR Local_C18C3E
+C1/9754: 80 05        BRA Local_C1975B
 C1/9756: A9 01        LDA #$01
 C1/9758: 8D 24 AF     STA $AF24
 C1/975B: 60           RTS

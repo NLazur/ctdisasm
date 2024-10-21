@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: 9C4D
 Routine_FE9C4D:
-FE/9C4D: 30 E3        BMI $9C32
+FE/9C4D: 30 E3        BMI Local_FE9C32
 FE/9C4F: 00 E3        BRK $E3
 FE/9C51: DD C9 AA     CMP $AAC9,X
 FE/9C54: A2 BE        LDX #$BE
@@ -8,7 +8,7 @@ FE/9C56: A2 AA        LDX #$AA
 FE/9C58: C3 83        CMP $83,S
 FE/9C5A: 1D 20 40     ORA $4020,X
 FE/9C5D: FF BE FF BE  SBC $BEFFBE,X
-FE/9C61: 20 90 1F     JSR $1F90
+FE/9C61: 20 90 1F     JSR Local_FE1F90
 FE/9C64: 00 32        BRK $32
 FE/9C66: BE 20 A0     LDX $A020,Y
 FE/9C69: A2 FF        LDX #$FF

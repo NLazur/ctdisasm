@@ -7,5 +7,5 @@ C3/F90E: 04 16        TSB $16
 C3/F910: F9 00 04     SBC $0400,Y
 C3/F913: 73 F9        ADC ($F9,S),Y
 C3/F915: 00 17        BRK $17
-C3/F917: F0 B0        BEQ $F8C9
+C3/F917: F0 B0        BEQ Local_C3F8C9
 C3/F919: 40           RTI

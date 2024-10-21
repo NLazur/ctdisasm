@@ -23,7 +23,7 @@ C0/6339: 0A           ASL
 C0/633A: E2 10        SEP #$10
 C0/633C: AA           TAX
 C0/633D: FC 77 64     JSR ($6477,X)
-C0/6340: B0 07        BCS $6349
+C0/6340: B0 07        BCS Local_C06349
 C0/6342: C2 10        REP #$10
 C0/6344: A6 C3        LDX $C3
 C0/6346: E8           INX

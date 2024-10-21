@@ -2,13 +2,13 @@
 Routine_C33573:
 C3/3573: 86 07        STX $07
 C3/3575: 00 A9        BRK $A9
-C3/3577: 70 85        BVS $34FE
+C3/3577: 70 85        BVS Local_C334FE
 C3/3579: 09 A9        ORA #$A9
 C3/357B: 55 85        EOR $85,X
 C3/357D: 0B           PHD
-C3/357E: 20 A2 02     JSR $02A2
+C3/357E: 20 A2 02     JSR Local_C302A2
 C3/3581: 21 86        AND ($86,X)
-C3/3583: 30 00        BMI $3585
+C3/3583: 30 00        BMI Local_C33585
 C3/3585: 06 1F        ASL $1F
 C3/3587: A9 82        LDA #$82
 C3/3589: 00 04        BRK $04

@@ -22,12 +22,12 @@ C7/09C1: B7 12        LDA [$12],Y
 C7/09C3: 8D 43 21     STA $2143
 C7/09C6: C8           INY
 C7/09C7: A5 84        LDA $84
-C7/09C9: 20 DA 09     JSR $09DA
+C7/09C9: 20 DA 09     JSR Local_C709DA
 C7/09CC: 85 84        STA $84
 C7/09CE: CA           DEX
 C7/09CF: CA           DEX
 C7/09D0: CA           DEX
-C7/09D1: D0 E2        BNE $09B5
+C7/09D1: D0 E2        BNE Local_C709B5
 C7/09D3: 64 F3        STZ $F3
 C7/09D5: A9 E0        LDA #$E0
 C7/09D7: 85 84        STA $84

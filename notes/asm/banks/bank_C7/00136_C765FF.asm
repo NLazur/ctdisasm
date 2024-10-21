@@ -6,8 +6,8 @@ C7/6603: 08           PHP
 C7/6604: E0 12        CPX #$12
 C7/6606: 71 EB        ADC ($EB),Y
 C7/6608: C4 00        CPY $00
-C7/660A: D0 CF        BNE $65DB
-C7/660C: 10 DF        BPL $65ED
+C7/660A: D0 CF        BNE Local_C765DB
+C7/660C: 10 DF        BPL Local_C765ED
 C7/660E: 01 0D        ORA ($0D,X)
 C7/6610: A8           TAY
 C7/6611: EB           XBA
@@ -48,10 +48,10 @@ C7/665B: DC 2A 00     JMP [$002A]
 C7/665E: E0 12        CPX #$12
 C7/6660: A9 EB        LDA #$EB
 C7/6662: C4 7F        CPY $7F
-C7/6664: D0 D4        BNE $663A
+C7/6664: D0 D4        BNE Local_C7663A
 C7/6666: E2 04        SEP #$04
 C7/6668: CF 12 0D CF  CMP $CF0D12
-C7/666C: 10 B2        BPL $6620
+C7/666C: 10 B2        BPL Local_C76620
 C7/666E: E3 CF        SBC $CF,S
 C7/6670: 16 E0        ASL $E0,X
 C7/6672: 11 01        ORA ($01),Y
@@ -71,21 +71,21 @@ C7/668E: 02 C9        COP $C9
 C7/6690: 0B           PHD
 C7/6691: 02 7F        COP $7F
 C7/6693: C8           INY
-C7/6694: F0 24        BEQ $66BA
+C7/6694: F0 24        BEQ Local_C766BA
 C7/6696: 2A           ROL
 C7/6697: AC EB DC     LDY $DCEB
 C7/669A: 07 C8        ORA [$C8]
-C7/669C: F0 14        BEQ $66B2
+C7/669C: F0 14        BEQ Local_C766B2
 C7/669E: C9 05        CMP #$05
 C7/66A0: 08           PHP
 C7/66A1: 6C 00 A8     JMP ($A800)
 C7/66A4: E0 19        CPX #$19
-C7/66A6: B0 EB        BCS $6693
+C7/66A6: B0 EB        BCS Local_C76693
 C7/66A8: D4 E2        PEI $E2
 C7/66AA: 0A           ASL
 C7/66AB: DA           PHX
-C7/66AC: 10 DC        BPL $668A
-C7/66AE: 10 D6        BPL $6686
+C7/66AC: 10 DC        BPL Local_C7668A
+C7/66AE: 10 D6        BPL Local_C76686
 C7/66B0: 03 C8        ORA $C8,S
 C7/66B2: 1E 0B CB     ASL $CB0B,X
 C7/66B5: 00 05        BRK $05

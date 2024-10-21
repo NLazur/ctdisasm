@@ -19,7 +19,7 @@ C0/3DB3: E2 20        SEP #$20
 C0/3DB5: BF 01 20 7F  LDA $7F2001,X
 C0/3DB9: 85 44        STA $44
 C0/3DBB: 86 C7        STX $C7
-C0/3DBD: 20 4E AF     JSR $AF4E
+C0/3DBD: 20 4E AF     JSR Local_C0AF4E
 C0/3DC0: A6 C7        LDX $C7
 C0/3DC2: E8           INX
 C0/3DC3: 18           CLC

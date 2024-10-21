@@ -7,9 +7,9 @@ CC/F7B0: 04 07        TSB $07
 CC/F7B2: 23 09        AND $09,S
 CC/F7B4: 04 07        TSB $07
 CC/F7B6: 23 03        AND $03,S
-CC/F7B8: 80 0C        BRA $F7C6
+CC/F7B8: 80 0C        BRA Local_CCF7C6
 CC/F7BA: 03 08        ORA $08,S
-CC/F7BC: 80 0C        BRA $F7CA
+CC/F7BC: 80 0C        BRA Local_CCF7CA
 CC/F7BE: 03 FF        ORA $FF,S
 CC/F7C0: 00 00        BRK $00
 CC/F7C2: C0 00 80     CPY #$8000

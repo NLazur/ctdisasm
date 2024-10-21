@@ -3,7 +3,7 @@ Routine_D05CC8:
 D0/5CC8: 00 00        BRK $00
 D0/5CCA: 28           PLP
 D0/5CCB: 28           PLP
-D0/5CCC: 80 80        BRA $5C4E
+D0/5CCC: 80 80        BRA Local_D05C4E
 D0/5CCE: 00 40        BRK $40
 D0/5CD0: 02 02        COP $02
 D0/5CD2: 00 08        BRK $08
@@ -14,17 +14,17 @@ D0/5CDA: 14 15        TRB $15
 D0/5CDC: 02 0A        COP $0A
 D0/5CDE: 01 05        ORA ($05,X)
 D0/5CE0: 00 00        BRK $00
-D0/5CE2: 80 80        BRA $5C64
+D0/5CE2: 80 80        BRA Local_D05C64
 D0/5CE4: C0 C0 00     CPY #$00C0
-D0/5CE7: 80 08        BRA $5CF1
+D0/5CE7: 80 08        BRA Local_D05CF1
 D0/5CE9: 08           PHP
 D0/5CEA: 00 20        BRK $20
 D0/5CEC: A8           TAY
 D0/5CED: 88           DEY
 D0/5CEE: 00 40        BRK $40
-D0/5CF0: 10 10        BPL $5D02
+D0/5CF0: 10 10        BPL Local_D05D02
 D0/5CF2: 00 00        BRK $00
-D0/5CF4: 20 20 00     JSR $0020
+D0/5CF4: 20 20 00     JSR Local_D00020
 D0/5CF7: 00 00        BRK $00
 D0/5CF9: 00 00        BRK $00
 D0/5CFB: 00 00        BRK $00
@@ -71,7 +71,7 @@ D0/5D48: 00 00        BRK $00
 D0/5D4A: 28           PLP
 D0/5D4B: A8           TAY
 D0/5D4C: 92 92        STA ($92)
-D0/5D4E: 20 E8 0A     JSR $0AE8
+D0/5D4E: 20 E8 0A     JSR Local_D00AE8
 D0/5D51: 0A           ASL
 D0/5D52: 01 01        ORA ($01,X)
 D0/5D54: 04 04        TSB $04
@@ -81,7 +81,7 @@ D0/5D5A: 09 09 02     ORA #$0209
 D0/5D5D: 02 01        COP $01
 D0/5D5F: 01 5A        ORA ($5A,X)
 D0/5D61: DA           PHX
-D0/5D62: 20 E4 48     JSR $48E4
+D0/5D62: 20 E4 48     JSR Local_D048E4
 D0/5D65: 48           PHA
 D0/5D66: 12 B2        ORA ($B2)
 D0/5D68: 29 69 5E     AND #$5E69
@@ -124,15 +124,15 @@ D0/5DAF: 00 00        BRK $00
 D0/5DB1: 00 00        BRK $00
 D0/5DB3: 00 00        BRK $00
 D0/5DB5: 00 80        BRK $80
-D0/5DB7: 80 80        BRA $5D39
-D0/5DB9: 80 04        BRA $5DBF
+D0/5DB7: 80 80        BRA Local_D05D39
+D0/5DB9: 80 04        BRA Local_D05DBF
 D0/5DBB: 04 08        TSB $08
 D0/5DBD: 08           PHP
 D0/5DBE: 00 00        BRK $00
 D0/5DC0: 08           PHP
 D0/5DC1: AA           TAX
 D0/5DC2: A9 FD 54     LDA #$54FD
-D0/5DC5: 5C 00 00 00  JMP $000000
+D0/5DC5: 5C 00 00 00  JMP Routine_000000
 D0/5DC9: 00 00        BRK $00
 D0/5DCB: 00 00        BRK $00
 D0/5DCD: 00 00        BRK $00
@@ -146,23 +146,23 @@ D0/5DDA: 01 05        ORA ($05,X)
 D0/5DDC: 08           PHP
 D0/5DDD: 08           PHP
 D0/5DDE: 02 02        COP $02
-D0/5DE0: 10 12        BPL $5DF4
+D0/5DE0: 10 12        BPL Local_D05DF4
 D0/5DE2: 88           DEY
 D0/5DE3: 88           DEY
-D0/5DE4: 20 20 94     JSR $9420
+D0/5DE4: 20 20 94     JSR Local_D09420
 D0/5DE7: 94 08        STY $08,X
 D0/5DE9: 08           PHP
-D0/5DEA: 20 20 00     JSR $0020
+D0/5DEA: 20 20 00     JSR Local_D00020
 D0/5DED: 00 20        BRK $20
-D0/5DEF: 20 20 20     JSR $2020
+D0/5DEF: 20 20 20     JSR Local_D02020
 D0/5DF2: 84 84        STY $84
 D0/5DF4: 00 00        BRK $00
-D0/5DF6: 80 80        BRA $5D78
+D0/5DF6: 80 80        BRA Local_D05D78
 D0/5DF8: 00 00        BRK $00
 D0/5DFA: 00 00        BRK $00
 D0/5DFC: 00 00        BRK $00
 D0/5DFE: 00 00        BRK $00
-D0/5E00: 10 10        BPL $5E12
+D0/5E00: 10 10        BPL Local_D05E12
 D0/5E02: 00 00        BRK $00
 D0/5E04: 00 00        BRK $00
 D0/5E06: 00 00        BRK $00
@@ -184,7 +184,7 @@ D0/5E27: 87 F8        STA [$F8]
 D0/5E29: 3A           DEC
 D0/5E2A: C0 42 80     CPY #$8042
 D0/5E2D: 84 00        STY $00
-D0/5E2F: 10 00        BPL $5E31
+D0/5E2F: 10 00        BPL Local_D05E31
 D0/5E31: 01 00        ORA ($00,X)
 D0/5E33: 06 00        ASL $00
 D0/5E35: 08           PHP
@@ -195,9 +195,9 @@ D0/5E3C: 1B           TCS
 D0/5E3D: 1A           INC
 D0/5E3E: 3F 25 C0 40  AND $40C025,X
 D0/5E42: E0 A0 F0     CPX #$F0A0
-D0/5E45: D0 F0        BNE $5E37
-D0/5E47: D0 E0        BNE $5E29
-D0/5E49: 20 00 00     JSR $0000
+D0/5E45: D0 F0        BNE Local_D05E37
+D0/5E47: D0 E0        BNE Local_D05E29
+D0/5E49: 20 00 00     JSR Local_D00000
 D0/5E4C: 00 00        BRK $00
 D0/5E4E: 00 80        BRK $80
 D0/5E50: 00 00        BRK $00
@@ -223,7 +223,7 @@ D0/5E7E: F8           SED
 D0/5E7F: C8           INY
 D0/5E80: 0F 0E 7F 79  ORA $797F0E
 D0/5E84: FE C2 F8     INC $F8C2,X
-D0/5E87: 3C C0 C8     BIT $C8C0,X
+D0/5E87: 3C C0 C8     BIT Local_D0C8C0,X
 D0/5E8A: 00 90        BRK $90
 D0/5E8C: 00 60        BRK $60
 D0/5E8E: 00 00        BRK $00
@@ -238,7 +238,7 @@ D0/5E9E: 03 01        ORA $01,S
 D0/5EA0: 1F 1C FE F3  ORA $F3FE1C,X
 D0/5EA4: FC 06 FC     JSR ($FC06,X)
 D0/5EA7: 2E F8 DC     ROL $DCF8
-D0/5EAA: F0 B4        BEQ $5E60
+D0/5EAA: F0 B4        BEQ Local_D05E60
 D0/5EAC: C0 44 C0     CPY #$C044
 D0/5EAF: 42 00        WDM $00
 D0/5EB1: 00 00        BRK $00
@@ -262,7 +262,7 @@ D0/5ED6: 02 03        COP $03
 D0/5ED8: 04 06        TSB $06
 D0/5EDA: 08           PHP
 D0/5EDB: 0C 10 18     TSB $1810
-D0/5EDE: 30 38        BMI $5F18
+D0/5EDE: 30 38        BMI Local_D05F18
 D0/5EE0: 1E 13 1E     ASL $1E13,X
 D0/5EE3: 16 1E        ASL $1E,X
 D0/5EE5: 12 0F        ORA ($0F)
@@ -277,18 +277,18 @@ D0/5EF6: 00 10        BRK $10
 D0/5EF8: 00 10        BRK $10
 D0/5EFA: 00 60        BRK $60
 D0/5EFC: 00 80        BRK $80
-D0/5EFE: 80 80        BRA $5E80
+D0/5EFE: 80 80        BRA Local_D05E80
 D0/5F00: 7E 5A 54     ROR $545A,X
 D0/5F03: 75 E0        ADC $E0,X
 D0/5F05: A1 50        LDA ($50,X)
-D0/5F07: 70 38        BVS $5F41
+D0/5F07: 70 38        BVS Local_D05F41
 D0/5F09: 29 78 6A     AND #$6A78
-D0/5F0C: F0 9C        BEQ $5EAA
+D0/5F0C: F0 9C        BEQ Local_D05EAA
 D0/5F0E: E0 60 00     CPX #$0060
-D0/5F11: 80 00        BRA $5F13
+D0/5F11: 80 00        BRA Local_D05F13
 D0/5F13: 00 00        BRK $00
 D0/5F15: 00 00        BRK $00
-D0/5F17: 80 00        BRA $5F19
+D0/5F17: 80 00        BRA Local_D05F19
 D0/5F19: 00 00        BRK $00
 D0/5F1B: 00 00        BRK $00
 D0/5F1D: 00 00        BRK $00
@@ -298,8 +298,8 @@ D0/5F23: 24 38        BIT $38
 D0/5F25: 28           PLP
 D0/5F26: 38           SEC
 D0/5F27: 29 38 08     AND #$0838
-D0/5F2A: 30 12        BMI $5F3E
-D0/5F2C: 50 3C        BVC $5F6A
+D0/5F2A: 30 12        BMI Local_D05F3E
+D0/5F2C: 50 3C        BVC Local_D05F6A
 D0/5F2E: E0 70 01     CPX #$0170
 D0/5F31: 43 00        EOR $00,S
 D0/5F33: 44 00 24     MVP $00,$24
@@ -308,7 +308,7 @@ D0/5F38: 00 00        BRK $00
 D0/5F3A: 00 00        BRK $00
 D0/5F3C: 00 00        BRK $00
 D0/5F3E: 00 00        BRK $00
-D0/5F40: F0 30        BEQ $5F72
+D0/5F40: F0 30        BEQ Local_D05F72
 D0/5F42: C0 C0 00     CPY #$00C0
 D0/5F45: 00 00        BRK $00
 D0/5F47: 00 00        BRK $00
@@ -318,8 +318,8 @@ D0/5F4D: 00 00        BRK $00
 D0/5F4F: 00 07        BRK $07
 D0/5F51: 03 1F        ORA $1F,S
 D0/5F53: 12 3F        ORA ($3F)
-D0/5F55: 22 3F 22 1F  JSR $1F223F
-D0/5F59: 70 3C        BVS $5F97
+D0/5F55: 22 3F 22 1F  JSR Routine_1F223F
+D0/5F59: 70 3C        BVS Local_D05F97
 D0/5F5B: B3 FF        LDA ($FF,S),Y
 D0/5F5D: C7 78        CMP [$78]
 D0/5F5F: B8           CLV
@@ -328,7 +328,7 @@ D0/5F63: 04 80        TSB $80
 D0/5F65: 04 88        TSB $88
 D0/5F67: 00 30        BRK $30
 D0/5F69: 00 C0        BRK $C0
-D0/5F6B: 20 00 00     JSR $0000
+D0/5F6B: 20 00 00     JSR Local_D00000
 D0/5F6E: 00 00        BRK $00
 D0/5F70: 03 0A        ORA $0A,S
 D0/5F72: 07 09        ORA [$09]
@@ -346,6 +346,6 @@ D0/5F88: 00 00        BRK $00
 D0/5F8A: 00 00        BRK $00
 D0/5F8C: 00 00        BRK $00
 D0/5F8E: 00 00        BRK $00
-D0/5F90: 20 28 60     JSR $6028
+D0/5F90: 20 28 60     JSR Local_D06028
 D0/5F93: 68           PLA
 D0/5F94: 40           RTI

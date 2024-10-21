@@ -34,7 +34,7 @@ D0/DE51: 00 00        BRK $00
 D0/DE53: 00 00        BRK $00
 D0/DE55: 00 00        BRK $00
 D0/DE57: 00 80        BRK $80
-D0/DE59: 80 00        BRA $DE5B
-D0/DE5B: 80 40        BRA $DE9D
+D0/DE59: 80 00        BRA Local_D0DE5B
+D0/DE5B: 80 40        BRA Local_D0DE9D
 D0/DE5D: C0 80        CPY #$80
 D0/DE5F: 40           RTI

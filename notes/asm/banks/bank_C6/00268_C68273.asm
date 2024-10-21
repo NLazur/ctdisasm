@@ -18,14 +18,14 @@ C6/8293: BB           TYX
 C6/8294: 61 18        ADC ($18,X)
 C6/8296: 3D 7D 06     AND $067D,X
 C6/8299: FB           XCE
-C6/829A: 70 01        BVS $829D
+C6/829A: 70 01        BVS Local_C6829D
 C6/829C: 84 0E        STY $0E
 C6/829E: BC 0D 0A     LDY $0A0D,X
 C6/82A1: D4 0C        PEI $0C
 C6/82A3: 5B           TCD
 C6/82A4: 02 6C        COP $6C
 C6/82A6: 09 AF 00     ORA #$00AF
-C6/82A9: 80 B9        BRA $8264
+C6/82A9: 80 B9        BRA Local_C68264
 C6/82AB: FD 24 3F     SBC $3F24,X
 C6/82AE: 64 55        STZ $55
 C6/82B0: BC AD 0F     LDY $0FAD,X
@@ -36,7 +36,7 @@ C6/82BB: 23 6C        AND $6C,S
 C6/82BD: 28           PLP
 C6/82BE: 2A           ROL
 C6/82BF: 33 95        AND ($95,S),Y
-C6/82C1: 30 69        BMI $832C
+C6/82C1: 30 69        BMI Local_C6832C
 C6/82C3: BD A0 0C     LDA $0CA0,X
 C6/82C6: 44 02 3D     MVP $02,$3D
 C6/82C9: 71 3E        ADC ($3E),Y
@@ -64,9 +64,9 @@ C6/82F9: 78           SEI
 C6/82FA: 52 42        EOR ($42)
 C6/82FC: 45 13        EOR $13
 C6/82FE: 02 60        COP $60
-C6/8300: 30 BC        BMI $82BE
+C6/8300: 30 BC        BMI Local_C682BE
 C6/8302: 05 A0        ORA $A0
-C6/8304: 22 FD B8 25  JSR $25B8FD
+C6/8304: 22 FD B8 25  JSR Routine_25B8FD
 C6/8308: 15 6B        ORA $6B,X
 C6/830A: B2 0E        LDA ($0E)
 C6/830C: 4B           PHK
@@ -81,7 +81,7 @@ C6/831E: BA           TSX
 C6/831F: 5A           PHY
 C6/8320: 32 F4        AND ($F4)
 C6/8322: 0E 52 F2     ASL $F252
-C6/8325: 30 80        BMI $82A7
+C6/8325: 30 80        BMI Local_C682A7
 C6/8327: 09 40 6D     ORA #$6D40
 C6/832A: 01 FC        ORA ($FC,X)
 C6/832C: C2 DF        REP #$DF
@@ -105,7 +105,7 @@ C6/8354: 06 FC        ASL $FC
 C6/8356: 6D 01 24     ADC $2401
 C6/8359: 24 18        BIT $18
 C6/835B: 1A           INC
-C6/835C: 10 01        BPL $835F
+C6/835C: 10 01        BPL Local_C6835F
 C6/835E: 77 CE        ADC [$CE],Y
 C6/8360: 01 CF        ORA ($CF,X)
 C6/8362: 02 18        COP $18
@@ -119,7 +119,7 @@ C6/8370: E6 02        INC $02
 C6/8372: 54 14 6E     MVN $14,$6E
 C6/8375: 24 08        BIT $08
 C6/8377: 09 09 0A     ORA #$0A09
-C6/837A: 80 71        BRA $83ED
+C6/837A: 80 71        BRA Local_C683ED
 C6/837C: 08           PHP
 C6/837D: 0B           PHD
 C6/837E: 1A           INC
@@ -131,7 +131,7 @@ C6/8389: 17 02        ORA [$02],Y
 C6/838B: 08           PHP
 C6/838C: 12 A8        ORA ($A8)
 C6/838E: 1E FF 0C     ASL $0CFF,X
-C6/8391: 82 C9 40     BRL $C6C45D
+C6/8391: 82 C9 40     BRL Routine_C6C45D
 C6/8394: 01 02        ORA ($02,X)
 C6/8396: CA           DEX
 C6/8397: 05 02        ORA $02
@@ -201,14 +201,14 @@ C6/841F: DD BD 0F     CMP $0FBD,X
 C6/8422: B5 04        LDA $04,X
 C6/8424: 08           PHP
 C6/8425: 0A           ASL
-C6/8426: 10 DF        BPL $8407
+C6/8426: 10 DF        BPL Local_C68407
 C6/8428: E8           INX
 C6/8429: 08           PHP
 C6/842A: 0A           ASL
 C6/842B: FB           XCE
 C6/842C: 05 70        ORA $70
 C6/842E: 71 72        ADC ($72),Y
-C6/8430: D0 73        BNE $84A5
+C6/8430: D0 73        BNE Local_C684A5
 C6/8432: 74 75        STZ $75,X
 C6/8434: 76 FC        ROR $FC,X
 C6/8436: 0B           PHD
@@ -281,7 +281,7 @@ C6/84C0: 32 81        AND ($81)
 C6/84C2: 00 58        BRK $58
 C6/84C4: 81 00        STA ($00,X)
 C6/84C6: BC 06 80     LDY $8006,X
-C6/84C9: 10 61        BPL $852C
+C6/84C9: 10 61        BPL Local_C6852C
 C6/84CB: 12 80        ORA ($80)
 C6/84CD: 73 74        ADC ($74,S),Y
 C6/84CF: 71 97        ADC ($97),Y
@@ -290,7 +290,7 @@ C6/84D2: DF 71 61 05  CMP $056171,X
 C6/84D6: 07 1E        ORA [$1E]
 C6/84D8: 12 87        ORA ($87)
 C6/84DA: 41 80        EOR ($80,X)
-C6/84DC: 20 61 12     JSR $1261
+C6/84DC: 20 61 12     JSR Local_C61261
 C6/84DF: 33 28        AND ($28,S),Y
 C6/84E1: 19 08 19     ORA $1908,Y
 C6/84E4: 0A           ASL
@@ -300,14 +300,14 @@ C6/84E9: 09 3A 4A     ORA #$4A3A
 C6/84EC: 8C 09 0A     STY $0A09
 C6/84EF: 00 07        BRK $07
 C6/84F1: 12 17        ORA ($17)
-C6/84F3: 20 21 24     JSR $2421
+C6/84F3: 20 21 24     JSR Local_C62421
 C6/84F6: E5 05        SBC $05
 C6/84F8: 0E 37 D4     ASL $D437
 C6/84FB: 04 D7        TSB $D7
 C6/84FD: 0B           PHD
 C6/84FE: CA           DEX
 C6/84FF: 04 BE        TSB $BE
-C6/8501: 50 38        BVC $853B
+C6/8501: 50 38        BVC Local_C6853B
 C6/8503: 21 41        AND ($41,X)
 C6/8505: 2D 06 68     AND $6806
 C6/8508: 23 95        AND $95,S
@@ -328,7 +328,7 @@ C6/8526: 00 29        BRK $29
 C6/8528: 2A           ROL
 C6/8529: FE 23 08     INC $0823,X
 C6/852C: 09 1B 19     ORA #$191B
-C6/852F: D0 19        BNE $854A
+C6/852F: D0 19        BNE Local_C6854A
 C6/8531: 29 29 4A     AND #$4A29
 C6/8534: F2 02        SBC ($02)
 C6/8536: 14 F1        TRB $F1
@@ -342,9 +342,9 @@ C6/8546: 05 97        ORA $97
 C6/8548: 64 9A        STZ $9A
 C6/854A: 99 82 07     STA $0782,Y
 C6/854D: 35 44        AND $44,X
-C6/854F: 50 05        BVC $8556
+C6/854F: 50 05        BVC Local_C68556
 C6/8551: 0E 03 42     ASL $4203
-C6/8554: D0 32        BNE $8588
+C6/8554: D0 32        BNE Local_C68588
 C6/8556: 7B           TDC
 C6/8557: 7C 79 B5     JMP ($B579,X)
 C6/855A: 21 13        AND ($13,X)
@@ -354,7 +354,7 @@ C6/8560: 00 07        BRK $07
 C6/8562: 52 63        EOR ($63)
 C6/8564: 21 77        AND ($77,X)
 C6/8566: 8C 88 79     STY $7988
-C6/8569: 10 23        BPL $858E
+C6/8569: 10 23        BPL Local_C6858E
 C6/856B: EC 71 ED     CPX $ED71
 C6/856E: C6 00        DEC $00
 C6/8570: 1B           TCS
@@ -370,12 +370,12 @@ C6/8581: 24 26        BIT $26
 C6/8583: D8           CLD
 C6/8584: 01 96        ORA ($96,X)
 C6/8586: 05 1D        ORA $1D
-C6/8588: 4C 2B CE     JMP $CE2B
+C6/8588: 4C 2B CE     JMP Local_C6CE2B
 C6/858B: 33 04        AND ($04,S),Y
-C6/858D: 90 06        BCC $8595
+C6/858D: 90 06        BCC Local_C68595
 C6/858F: 5D 00 45     EOR $4500,X
 C6/8592: 46 57        LSR $57
-C6/8594: 82 57 7B     BRL $C600EE
+C6/8594: 82 57 7B     BRL Routine_C600EE
 C6/8597: 0D 7F 21     ORA $217F
 C6/859A: 97 7B        STA [$7B],Y
 C6/859C: 89 B5 01     BIT #$01B5
@@ -402,9 +402,9 @@ C6/85C5: 72 75        ADC ($75)
 C6/85C7: 75 4B        ADC $4B,X
 C6/85C9: 32 07        AND ($07)
 C6/85CB: 62 0F CC     PER $C651DD
-C6/85CE: 4C 43 BE     JMP $BE43
+C6/85CE: 4C 43 BE     JMP Local_C6BE43
 C6/85D1: BB           TYX
-C6/85D2: 90 0E        BCC $85E2
+C6/85D2: 90 0E        BCC Local_C685E2
 C6/85D4: 45 0D        EOR $0D
 C6/85D6: E4 06        CPX $06
 C6/85D8: BB           TYX
@@ -464,7 +464,7 @@ C6/8640: FC F9 FD     JSR ($FDF9,X)
 C6/8643: 38           SEC
 C6/8644: 87 88        STA [$88]
 C6/8646: 79 A2 1C     ADC $1CA2,Y
-C6/8649: D0 5E        BNE $86A9
+C6/8649: D0 5E        BNE Local_C686A9
 C6/864B: 67 1F        ADC [$1F]
 C6/864D: 87 88        STA [$88]
 C6/864F: 00 7C        BRK $7C
@@ -483,19 +483,19 @@ C6/8661: 34 7F        BIT $7F,X
 C6/8663: C1 01        CMP ($01,X)
 C6/8665: 65 01        ADC $01
 C6/8667: 24 8D        BIT $8D
-C6/8669: 70 1C        BVS $8687
-C6/866B: B0 1B        BCS $8688
-C6/866D: 10 0E        BPL $867D
+C6/8669: 70 1C        BVS Local_C68687
+C6/866B: B0 1B        BCS Local_C68688
+C6/866D: 10 0E        BPL Local_C6867D
 C6/866F: 5B           TCD
 C6/8670: 00 5E        BRK $5E
-C6/8672: F0 34        BEQ $86A8
+C6/8672: F0 34        BEQ Local_C686A8
 C6/8674: 87 88        STA [$88]
 C6/8676: 99 A2 14     STA $14A2,Y
 C6/8679: 53 6D        EOR ($6D,S),Y
 C6/867B: C8           INY
 C6/867C: 07 82        ORA [$82]
 C6/867E: 08           PHP
-C6/867F: 20 8B 7C     JSR $7C8B
+C6/867F: 20 8B 7C     JSR Local_C67C8B
 C6/8682: 8B           PHB
 C6/8683: 87 99        STA [$99]
 C6/8685: 5F 00 9D 19  EOR $199D00,X
@@ -536,7 +536,7 @@ C6/86CD: 7B           TDC
 C6/86CE: 04 77        TSB $77
 C6/86D0: 78           SEI
 C6/86D1: 88           DEY
-C6/86D2: 80 89        BRA $865D
+C6/86D2: 80 89        BRA Local_C6865D
 C6/86D4: 99 4E 23     STA $234E,Y
 C6/86D7: 7C 89 3F     JMP ($3F89,X)
 C6/86DA: CA           DEX
@@ -575,7 +575,7 @@ C6/8717: 19 1A 25     ORA $251A,Y
 C6/871A: CA           DEX
 C6/871B: 14 F5        TRB $F5
 C6/871D: 12 5E        ORA ($5E)
-C6/871F: 90 F0        BCC $8711
+C6/871F: 90 F0        BCC Local_C68711
 C6/8721: 16 50        ASL $50,X
 C6/8723: 07 11        ORA [$11]
 C6/8725: 93 00        STA ($00,S),Y

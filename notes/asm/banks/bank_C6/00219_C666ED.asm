@@ -1,15 +1,15 @@
 ; Bank: C6 | Start Address: 66ED
 Routine_C666ED:
-C6/66ED: 2C 7D 36     BIT $367D
+C6/66ED: 2C 7D 36     BIT Local_C6367D
 C6/66F0: 7E 2E 05     ROR $052E,X
-C6/66F3: 70 0C        BVS $6701
+C6/66F3: 70 0C        BVS Local_C66701
 C6/66F5: 79 60 04     ADC $0460,Y
-C6/66F8: F0 2C        BEQ $6726
+C6/66F8: F0 2C        BEQ Local_C66726
 C6/66FA: 00 2D        BRK $2D
 C6/66FC: 81 00        STA ($00,X)
 C6/66FE: 2E 82 2E     ROL $2E82
 C6/6701: 01 2D        ORA ($2D,X)
-C6/6703: 10 2D        BPL $6732
+C6/6703: 10 2D        BPL Local_C66732
 C6/6705: 83 00        STA $00,S
 C6/6707: 2E 84 2E     ROL $2E84
 C6/670A: 11 2D        ORA ($2D),Y

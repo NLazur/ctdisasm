@@ -1,6 +1,6 @@
 ; Bank: CF | Start Address: A0FF
 Routine_CFA0FF:
-CF/A0FF: 20 78 00     JSR $0078
+CF/A0FF: 20 78 00     JSR Local_CF0078
 CF/A102: 7B           TDC
 CF/A103: 00 7E        BRK $7E
 CF/A105: 00 81        BRK $81
@@ -9,14 +9,14 @@ CF/A109: 00 87        BRK $87
 CF/A10B: 00 8A        BRK $8A
 CF/A10D: 00 8D        BRK $8D
 CF/A10F: 00 00        BRK $00
-CF/A111: 20 02 20     JSR $2002
-CF/A114: 10 20        BPL $A136
+CF/A111: 20 02 20     JSR Local_CF2002
+CF/A114: 10 20        BPL Local_CFA136
 CF/A116: 12 20        ORA ($20)
 CF/A118: 14 20        TRB $20
 CF/A11A: 16 20        ASL $20,X
 CF/A11C: 18           CLC
-CF/A11D: 20 1A 20     JSR $201A
-CF/A120: 90 00        BCC $A122
+CF/A11D: 20 1A 20     JSR Local_CF201A
+CF/A120: 90 00        BCC Local_CFA122
 CF/A122: 93 00        STA ($00,S),Y
 CF/A124: 96 00        STX $00,Y
 CF/A126: 99 00 9C     STA $9C00,Y
@@ -25,10 +25,10 @@ CF/A12B: 00 A2        BRK $A2
 CF/A12D: 00 A5        BRK $A5
 CF/A12F: 00 02        BRK $02
 CF/A131: E0 1C        CPX #$1C
-CF/A133: 20 2A 20     JSR $202A
+CF/A133: 20 2A 20     JSR Local_CF202A
 CF/A136: 1C 20 2C     TRB $2C20
-CF/A139: 20 02 A0     JSR $A002
+CF/A139: 20 02 A0     JSR Local_CFA002
 CF/A13C: 2E 20 30     ROL $3020
-CF/A13F: 20 A8 20     JSR $20A8
+CF/A13F: 20 A8 20     JSR Local_CF20A8
 CF/A142: A8           TAY
 CF/A143: 60           RTS

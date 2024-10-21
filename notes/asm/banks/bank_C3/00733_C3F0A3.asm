@@ -12,13 +12,13 @@ C3/F0B3: F3 05        SBC ($05,S),Y
 C3/F0B5: 04 84        TSB $84
 C3/F0B7: F3 00        SBC ($00,S),Y
 C3/F0B9: 04 BD        TSB $BD
-C3/F0BB: F0 00        BEQ $F0BD
+C3/F0BB: F0 00        BEQ Local_C3F0BD
 C3/F0BD: 08           PHP
 C3/F0BE: 00 F8        BRK $F8
-C3/F0C0: 20 00 10     JSR $1000
+C3/F0C0: 20 00 10     JSR Local_C31000
 C3/F0C3: F8           SED
-C3/F0C4: 22 00 20 F8  JSR $F82000
+C3/F0C4: 22 00 20 F8  JSR Routine_F82000
 C3/F0C8: 24 00        BIT $00
-C3/F0CA: 30 F8        BMI $F0C4
+C3/F0CA: 30 F8        BMI Local_C3F0C4
 C3/F0CC: 26 00        ROL $00
 C3/F0CE: 40           RTI

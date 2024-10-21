@@ -11,11 +11,11 @@ FE/9FFE: 08           PHP
 FE/9FFF: 7D FE FE     ADC $FEFE,X
 FE/A002: 48           PHA
 FE/A003: 28           PLP
-FE/A004: 30 F8        BMI $9FFE
+FE/A004: 30 F8        BMI Local_FE9FFE
 FE/A006: F8           SED
 FE/A007: FF 90 F4 8B  SBC $8BF490,X
 FE/A00B: F6 08        INC $08,X
 FE/A00D: 58           CLI
 FE/A00E: 38           SEC
-FE/A00F: 20 C0 64     JSR $64C0
+FE/A00F: 20 C0 64     JSR Local_FE64C0
 FE/A012: 60           RTS

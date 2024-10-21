@@ -19,7 +19,7 @@ C6/BBAB: 01 CD        ORA ($CD,X)
 C6/BBAD: CE CF 9B     DEC $9BCF
 C6/BBB0: 9B           TXY
 C6/BBB1: C6 BA        DEC $BA
-C6/BBB3: 2C F8 1A     BIT $1AF8
+C6/BBB3: 2C F8 1A     BIT Local_C61AF8
 C6/BBB6: 28           PLP
 C6/BBB7: ED EE EF     SBC $EFEE
 C6/BBBA: 25 F8        AND $F8

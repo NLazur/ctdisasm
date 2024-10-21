@@ -1,11 +1,11 @@
 ; Bank: C6 | Start Address: 4977
 Routine_C64977:
-C6/4977: 90 20        BCC $4999
+C6/4977: 90 20        BCC Local_C64999
 C6/4979: BA           TSX
 C6/497A: 08           PHP
 C6/497B: 42 9C        WDM $9C
 C6/497D: C4 03        CPY $03
-C6/497F: 50 08        BVC $4989
+C6/497F: 50 08        BVC Local_C64989
 C6/4981: A4 91        LDY $91
 C6/4983: 02 00        COP $00
 C6/4985: 11 89        ORA ($89),Y
@@ -14,10 +14,10 @@ C6/4989: 91 A6        STA ($A6),Y
 C6/498B: 08           PHP
 C6/498C: 00 A5        BRK $A5
 C6/498E: 11 A7        ORA ($A7),Y
-C6/4990: 10 00        BPL $4992
+C6/4990: 10 00        BPL Local_C64992
 C6/4992: 0A           ASL
 C6/4993: A5 10        LDA $10
-C6/4995: 10 A5        BPL $493C
+C6/4995: 10 A5        BPL Local_C6493C
 C6/4997: 08           PHP
 C6/4998: 00 A6        BRK $A6
 C6/499A: 11 A6        ORA ($A6),Y
@@ -32,11 +32,11 @@ C6/49AC: 05 12        ORA $12
 C6/49AE: 00 51        BRK $51
 C6/49B0: A6 11        LDX $11
 C6/49B2: 02 A8        COP $A8
-C6/49B4: 20 08 51     JSR $5108
+C6/49B4: 20 08 51     JSR Local_C65108
 C6/49B7: A8           TAY
 C6/49B8: 11 AA        ORA ($AA),Y
 C6/49BA: 51 A4        EOR ($A4),Y
-C6/49BC: 10 91        BPL $494F
+C6/49BC: 10 91        BPL Local_C6494F
 C6/49BE: AC 51 7D     LDY $7D51
 C6/49C1: 06 00        ASL $00
 C6/49C3: AA           TAX
@@ -52,9 +52,9 @@ C6/49D8: 18           CLC
 C6/49D9: AC 11 2A     LDY $2A11
 C6/49DC: AB           PLB
 C6/49DD: 0C 00 AB     TSB $AB00
-C6/49E0: 20 00 60     JSR $6000
+C6/49E0: 20 00 60     JSR Local_C66000
 C6/49E3: 12 01        ORA ($01)
-C6/49E5: 70 48        BVS $4A2F
+C6/49E5: 70 48        BVS Local_C64A2F
 C6/49E7: 88           DEY
-C6/49E8: 50 08        BVC $49F2
+C6/49E8: 50 08        BVC Local_C649F2
 C6/49EA: 40           RTI

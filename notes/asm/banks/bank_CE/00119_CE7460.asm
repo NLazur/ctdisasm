@@ -3,30 +3,30 @@ Routine_CE7460:
 CE/7460: 01 C2        ORA ($C2,X)
 CE/7462: 2B           PLD
 CE/7463: 38           SEC
-CE/7464: 80 01        BRA $7467
+CE/7464: 80 01        BRA Local_CE7467
 CE/7466: C2 2B        REP #$2B
-CE/7468: 30 C0        BMI $742A
+CE/7468: 30 C0        BMI Local_CE742A
 CE/746A: 01 C2        ORA ($C2,X)
 CE/746C: 2B           PLD
 CE/746D: 28           PLP
 CE/746E: 00 01        BRK $01
 CE/7470: C2 2B        REP #$2B
-CE/7472: 22 40 01 C2  JSR $C20140
+CE/7472: 22 40 01 C2  JSR Routine_C20140
 CE/7476: 2B           PLD
 CE/7477: 1C 80 01     TRB $0180
 CE/747A: C2 2B        REP #$2B
 CE/747C: 16 C0        ASL $C0,X
 CE/747E: 01 C2        ORA ($C2,X)
 CE/7480: 2B           PLD
-CE/7481: 10 00        BPL $7483
+CE/7481: 10 00        BPL Local_CE7483
 CE/7483: 01 C2        ORA ($C2,X)
 CE/7485: 2B           PLD
 CE/7486: 0C 40 01     TSB $0140
 CE/7489: C2 2B        REP #$2B
 CE/748B: 08           PHP
-CE/748C: 80 01        BRA $748F
+CE/748C: 80 01        BRA Local_CE748F
 CE/748E: 2B           PLD
-CE/748F: 20 1E 22     JSR $221E
+CE/748F: 20 1E 22     JSR Local_CE221E
 CE/7492: 1B           TCS
 CE/7493: 00 76        BRK $76
 CE/7495: 01 1A        ORA ($1A,X)
@@ -41,11 +41,11 @@ CE/74A3: 01 20        ORA ($20,X)
 CE/74A5: 05 1B        ORA $1B
 CE/74A7: 1A           INC
 CE/74A8: 06 0E        ASL $0E
-CE/74AA: 20 05 72     JSR $7205
+CE/74AA: 20 05 72     JSR Local_CE7205
 CE/74AD: 0D 06 03     ORA $0306
 CE/74B0: 28           PLP
 CE/74B1: 00 D9        BRK $D9
-CE/74B3: 30 27        BMI $74DC
+CE/74B3: 30 27        BMI Local_CE74DC
 CE/74B5: 72 18        ADC ($18)
 CE/74B7: 0C 24 02     TSB $0224
 CE/74BA: 1E 38 98     ASL $9838,X
@@ -87,7 +87,7 @@ CE/750F: 2D 28 00     AND $0028
 CE/7512: 01 30        ORA ($30,X)
 CE/7514: 00 00        BRK $00
 CE/7516: C2 2D        REP #$2D
-CE/7518: 22 40 01 35  JSR $350140
+CE/7518: 22 40 01 35  JSR Routine_350140
 CE/751C: C2 2D        REP #$2D
 CE/751E: 1C 80 01     TRB $0180
 CE/7521: C2 2D        REP #$2D
@@ -99,7 +99,7 @@ CE/752C: 2D 0C 40     AND $400C
 CE/752F: 01 C2        ORA ($C2,X)
 CE/7531: 2D 08 80     AND $8008
 CE/7534: 01 2B        ORA ($2B,X)
-CE/7536: 20 1E 22     JSR $221E
+CE/7536: 20 1E 22     JSR Local_CE221E
 CE/7539: 1B           TCS
 CE/753A: 00 76        BRK $76
 CE/753C: 02 1B        COP $1B
@@ -114,7 +114,7 @@ CE/754A: 01 20        ORA ($20,X)
 CE/754C: 05 1B        ORA $1B
 CE/754E: 1B           TCS
 CE/754F: 06 0E        ASL $0E
-CE/7551: 20 05 72     JSR $7205
+CE/7551: 20 05 72     JSR Local_CE7205
 CE/7554: 0D 06 03     ORA $0306
 CE/7557: 28           PLP
 CE/7558: 00 34        BRK $34
@@ -127,7 +127,7 @@ CE/7564: 1E 05 20     ASL $2005,X
 CE/7567: 1E 35 00     ASL $0035,X
 CE/756A: 34 00        BIT $00,X
 CE/756C: 24 03        BIT $03
-CE/756E: 20 63 6C     JSR $6C63
+CE/756E: 20 63 6C     JSR Local_CE6C63
 CE/7571: 00 03        BRK $03
 CE/7573: 23 01        AND $01,S
 CE/7575: 1E 05 00     ASL $0005,X
@@ -135,7 +135,7 @@ CE/7578: 00 00        BRK $00
 CE/757A: 00 00        BRK $00
 CE/757C: 00 00        BRK $00
 CE/757E: 00 00        BRK $00
-CE/7580: F0 80        BEQ $7502
+CE/7580: F0 80        BEQ Local_CE7502
 CE/7582: E0 00 94     CPX #$9400
 CE/7585: 75 E2        ADC $E2,X
 CE/7587: 75 19        ADC $19,X
@@ -145,14 +145,14 @@ CE/758D: 76 85        ROR $85,X
 CE/758F: 09 93 09     ORA #$0993
 CE/7592: 93 09        STA ($09,S),Y
 CE/7594: 72 0D        ADC ($0D)
-CE/7596: 20 01 3D     JSR $3D01
+CE/7596: 20 01 3D     JSR Local_CE3D01
 CE/7599: 01 82        ORA ($82,X)
 CE/759B: 01 3F        ORA ($3F,X)
 CE/759D: 02 84        COP $84
 CE/759F: 02 47        COP $47
 CE/75A1: 00 0C        BRK $0C
 CE/75A3: 06 1D        ASL $1D
-CE/75A5: 20 0A 26     JSR $260A
+CE/75A5: 20 0A 26     JSR Local_CE260A
 CE/75A8: 0B           PHD
 CE/75A9: 03 7A        ORA $7A,S
 CE/75AB: D2 00        CMP ($00)
@@ -161,7 +161,7 @@ CE/75AE: 00 2B        BRK $2B
 CE/75B0: 29 34 10     AND #$1034
 CE/75B3: 0D 1B 2B     ORA $2B1B
 CE/75B6: 23 02        AND $02,S
-CE/75B8: 20 14 A4     JSR $A414
+CE/75B8: 20 14 A4     JSR Local_CEA414
 CE/75BB: 05 02        ORA $02
 CE/75BD: 02 37        COP $37
 CE/75BF: 2A           ROL
@@ -170,12 +170,12 @@ CE/75C2: 7A           PLY
 CE/75C3: 65 03        ADC $03
 CE/75C5: 2D 80 32     AND $3280
 CE/75C8: 28           PLP
-CE/75C9: 80 45        BRA $7610
+CE/75C9: 80 45        BRA Local_CE7610
 CE/75CB: 00 00        BRK $00
 CE/75CD: E3 80        SBC $80,S
 CE/75CF: 35 12        AND $12,X
 CE/75D1: 03 2D        ORA $2D,S
-CE/75D3: 80 32        BRA $7607
+CE/75D3: 80 32        BRA Local_CE7607
 CE/75D5: E8           INX
 CE/75D6: 06 1D        ASL $1D
 CE/75D8: A5 80        LDA $80
@@ -185,12 +185,12 @@ CE/75DE: 1E 2A 36     ASL $362A,X
 CE/75E1: 00 72        BRK $72
 CE/75E3: 0D 0C 06     ORA $060C
 CE/75E6: 35 2D        AND $2D,X
-CE/75E8: 80 02        BRA $75EC
+CE/75E8: 80 02        BRA Local_CE75EC
 CE/75EA: C0 20 28     CPY #$2820
 CE/75ED: D9 30 27     CMP $2730,Y
 CE/75F0: 76 1A        ROR $1A,X
 CE/75F2: 03 22        ORA $22,S
-CE/75F4: 10 01        BPL $75F7
+CE/75F4: 10 01        BPL Local_CE75F7
 CE/75F6: 34 00        BIT $00,X
 CE/75F8: 12 03        ORA ($03)
 CE/75FA: 78           SEI
@@ -202,18 +202,18 @@ CE/7605: 36 24        ROL $24,X
 CE/7607: 03 34        ORA $34,S
 CE/7609: 1A           INC
 CE/760A: 2D 80 12     AND $1280
-CE/760D: D0 1E        BNE $762D
+CE/760D: D0 1E        BNE Local_CE762D
 CE/760F: 2E DA 28     ROL $28DA
 CE/7612: 23 04        AND $04,S
 CE/7614: 24 05        BIT $05
 CE/7616: 2E 01 00     ROL $0001
 CE/7619: 0C 72 0D     TSB $0D72
 CE/761C: 06 35        ASL $35
-CE/761E: 20 28 D9     JSR $D928
-CE/7621: 30 27        BMI $764A
+CE/761E: 20 28 D9     JSR Local_CED928
+CE/7621: 30 27        BMI Local_CE764A
 CE/7623: 76 1B        ROR $1B,X
 CE/7625: 03 22        ORA $22,S
-CE/7627: 10 01        BPL $762A
+CE/7627: 10 01        BPL Local_CE762A
 CE/7629: 12 03        ORA ($03)
 CE/762B: 78           SEI
 CE/762C: 4D 35 02     EOR $0235
@@ -227,7 +227,7 @@ CE/763C: 08           PHP
 CE/763D: A8           TAY
 CE/763E: 01 26        ORA ($26,X)
 CE/7640: 0E 02 0C     ASL $0C02
-CE/7643: D0 98        BNE $75DD
+CE/7643: D0 98        BNE Local_CE75DD
 CE/7645: 02 1B        COP $1B
 CE/7647: 26 0E        ROL $0E
 CE/7649: 01 20        ORA ($20,X)
@@ -235,12 +235,12 @@ CE/764B: 03 D1        ORA $D1,S
 CE/764D: 1B           TCS
 CE/764E: 1B           TCS
 CE/764F: 06 0E        ASL $0E
-CE/7651: 20 05 72     JSR $7205
+CE/7651: 20 05 72     JSR Local_CE7205
 CE/7654: 0D 06 03     ORA $0306
 CE/7657: DA           PHX
 CE/7658: 28           PLP
 CE/7659: 36 00        ROL $00,X
-CE/765B: 22 00 01 20  JSR $200100
+CE/765B: 22 00 01 20  JSR Routine_200100
 CE/765F: 02 34        COP $34
 CE/7661: 1B           TCS
 CE/7662: 23 02        AND $02,S
@@ -285,7 +285,7 @@ CE/76AD: 26 32        ROL $32
 CE/76AF: 04 23        TSB $23
 CE/76B1: 01 0D        ORA ($0D,X)
 CE/76B3: 27 D9        AND [$D9]
-CE/76B5: 30 7A        BMI $7731
+CE/76B5: 30 7A        BMI Local_CE7731
 CE/76B7: D2 00        CMP ($00)
 CE/76B9: 98           TYA
 CE/76BA: 02 2B        COP $2B
@@ -296,7 +296,7 @@ CE/76C4: 01 02        ORA ($02,X)
 CE/76C6: 0D 02 38     ORA $3802
 CE/76C9: 2A           ROL
 CE/76CA: 12 0C        ORA ($0C)
-CE/76CC: 30 0A        BMI $76D8
+CE/76CC: 30 0A        BMI Local_CE76D8
 CE/76CE: 2A           ROL
 CE/76CF: 7A           PLY
 CE/76D0: 4D 03 6A     EOR $6A03
@@ -318,7 +318,7 @@ CE/76F1: 03 00        ORA $00,S
 CE/76F3: 24 05        BIT $05
 CE/76F5: 1E 03 36     ASL $3603,X
 CE/76F8: 00 D9        BRK $D9
-CE/76FA: 30 0B        BMI $7707
+CE/76FA: 30 0B        BMI Local_CE7707
 CE/76FC: 73 01        ADC ($01,S),Y
 CE/76FE: 72 03        ADC ($03)
 CE/7700: 33 3F        AND ($3F,S),Y
@@ -335,12 +335,12 @@ CE/7713: 09 33 0C     ORA #$0C33
 CE/7716: 41 1E        EOR ($1E,X)
 CE/7718: 06 30        ASL $30
 CE/771A: 07 08        ORA [$08]
-CE/771C: 30 0E        BMI $772C
+CE/771C: 30 0E        BMI Local_CE772C
 CE/771E: 05 30        ORA $30
 CE/7720: 0A           ASL
 CE/7721: 28           PLP
 CE/7722: 81 00        STA ($00,X)
-CE/7724: 82 20 3F     BRL $CEB647
+CE/7724: 82 20 3F     BRL Routine_CEB647
 CE/7727: 00 40        BRK $40
 CE/7729: 09 1B 0A     ORA #$0A1B
 CE/772C: 35 36        AND $36,X
@@ -348,14 +348,14 @@ CE/772E: 33 0A        AND ($0A,S),Y
 CE/7730: 41 1E        EOR ($1E,X)
 CE/7732: 04 41        TSB $41
 CE/7734: 1F 05 02 00  ORA $000205,X
-CE/7738: 20 04 7B     JSR $7B04
+CE/7738: 20 04 7B     JSR Local_CE7B04
 CE/773B: AF 0A 1E 32  LDA $321E0A
 CE/773F: 24 02        BIT $02
 CE/7741: 0B           PHD
 CE/7742: 1B           TCS
 CE/7743: 0A           ASL
 CE/7744: 02 01        COP $01
-CE/7746: 70 79        BVS $77C1
+CE/7746: 70 79        BVS Local_CE77C1
 CE/7748: 56 73        LSR $73,X
 CE/774A: 00 98        BRK $98
 CE/774C: 01 2D        ORA ($2D,X)

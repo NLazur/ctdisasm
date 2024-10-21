@@ -11,10 +11,10 @@ D0/711C: 78           SEI
 D0/711D: 48           PHA
 D0/711E: 28           PLP
 D0/711F: 58           CLI
-D0/7120: 20 50 30     JSR $3050
-D0/7123: 50 F0        BVC $7115
-D0/7125: 90 D0        BCC $70F7
-D0/7127: B0 01        BCS $712A
+D0/7120: 20 50 30     JSR Local_D03050
+D0/7123: 50 F0        BVC Local_D07115
+D0/7125: 90 D0        BCC Local_D070F7
+D0/7127: B0 01        BCS Local_D0712A
 D0/7129: 01 02        ORA ($02,X)
 D0/712B: 03 04        ORA $04,S
 D0/712D: 07 08        ORA [$08]

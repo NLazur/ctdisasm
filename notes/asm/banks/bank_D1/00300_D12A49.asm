@@ -2,18 +2,18 @@
 Routine_D12A49:
 D1/2A49: E0 00 E2     CPX #$E200
 D1/2A4C: 00 00        BRK $00
-D1/2A4E: 10 08        BPL $2A58
+D1/2A4E: 10 08        BPL Local_D12A58
 D1/2A50: 34 00        BIT $00,X
 D1/2A52: 04 84        TSB $84
 D1/2A54: 01 02        ORA ($02,X)
 D1/2A56: 0A           ASL
-D1/2A57: 20 C4 00     JSR $00C4
+D1/2A57: 20 C4 00     JSR Local_D100C4
 D1/2A5A: E4 00        CPX $00
 D1/2A5C: 14 08        TRB $08
 D1/2A5E: 28           PLP
 D1/2A5F: 00 80        BRK $80
 D1/2A61: C6 08        DEC $08
-D1/2A63: 20 E6 10     JSR $10E6
+D1/2A63: 20 E6 10     JSR Local_D110E6
 D1/2A66: 08           PHP
 D1/2A67: C0 C0        CPY #$C0
 D1/2A69: 00 40        BRK $40

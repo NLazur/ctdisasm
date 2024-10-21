@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 1455
 Routine_D01455:
 D0/1455: 42 50        WDM $50
-D0/1457: 50 00        BVC $1459
+D0/1457: 50 00        BVC Local_D01459
 D0/1459: 00 02        BRK $02
 D0/145B: 02 02        COP $02
 D0/145D: 02 06        COP $06
@@ -18,11 +18,11 @@ D0/1475: 38           SEC
 D0/1476: 08           PHP
 D0/1477: 0F A8 6C 80  ORA $806CA8
 D0/147B: 48           PHA
-D0/147C: 50 D8        BVC $1456
+D0/147C: 50 D8        BVC Local_D01456
 D0/147E: 68           PLA
 D0/147F: F8           SED
 D0/1480: A0 90 10     LDY #$1090
-D0/1483: 70 60        BVS $14E5
+D0/1483: 70 60        BVS Local_D014E5
 D0/1485: A0 40 C0     LDY #$C040
 D0/1488: 00 00        BRK $00
 D0/148A: 00 00        BRK $00
@@ -38,7 +38,7 @@ D0/149C: 00 00        BRK $00
 D0/149E: 00 00        BRK $00
 D0/14A0: 00 00        BRK $00
 D0/14A2: 00 00        BRK $00
-D0/14A4: 80 80        BRA $1426
+D0/14A4: 80 80        BRA Local_D01426
 D0/14A6: C1 C1        CMP ($C1,X)
 D0/14A8: 00 00        BRK $00
 D0/14AA: 00 00        BRK $00
@@ -51,9 +51,9 @@ D0/14B6: 05 07        ORA $07
 D0/14B8: 00 00        BRK $00
 D0/14BA: 00 00        BRK $00
 D0/14BC: 00 00        BRK $00
-D0/14BE: 80 80        BRA $1440
-D0/14C0: 80 80        BRA $1442
-D0/14C2: 80 80        BRA $1444
+D0/14BE: 80 80        BRA Local_D01440
+D0/14C0: 80 80        BRA Local_D01442
+D0/14C2: 80 80        BRA Local_D01444
 D0/14C4: 00 00        BRK $00
 D0/14C6: 00 00        BRK $00
 D0/14C8: 00 00        BRK $00
@@ -71,7 +71,7 @@ D0/14E2: 45 C6        EOR $C6
 D0/14E4: 8A           TXA
 D0/14E5: DB           STP
 D0/14E6: 6C 7C EC     JMP ($EC7C)
-D0/14E9: 30 9C        BMI $1487
+D0/14E9: 30 9C        BMI Local_D01487
 D0/14EB: 65 F2        ADC $F2
 D0/14ED: 0A           ASL
 D0/14EE: E0 12 D5     CPX #$D512
@@ -83,16 +83,16 @@ D0/14F8: 00 00        BRK $00
 D0/14FA: 00 00        BRK $00
 D0/14FC: 00 20        BRK $20
 D0/14FE: 00 10        BRK $10
-D0/1500: 20 30 29     JSR $2930
+D0/1500: 20 30 29     JSR Local_D02930
 D0/1503: 31 1E        AND ($1E),Y
 D0/1505: 17 26        ORA [$26],Y
 D0/1507: 3B           TSC
 D0/1508: 00 00        BRK $00
-D0/150A: 10 10        BPL $151C
-D0/150C: 20 20 61     JSR $6120
+D0/150A: 10 10        BPL Local_D0151C
+D0/150C: 20 20 61     JSR Local_D06120
 D0/150F: 61 A1        ADC ($A1,X)
 D0/1511: E1 E0        SBC ($E0,X)
 D0/1513: A0 DC 3C     LDY #$3CDC
-D0/1516: D0 30        BNE $1548
-D0/1518: 20 20 60     JSR $6020
+D0/1516: D0 30        BNE Local_D01548
+D0/1518: 20 20 60     JSR Local_D06020
 D0/151B: 60           RTS

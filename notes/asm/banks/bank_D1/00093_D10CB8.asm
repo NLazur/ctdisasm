@@ -19,7 +19,7 @@ D1/0CD2: 41 44        EOR ($44,X)
 D1/0CD4: 41 42        EOR ($42,X)
 D1/0CD6: 64 B5        STZ $B5
 D1/0CD8: 00 11        BRK $11
-D1/0CDA: 80 EA        BRA $0CC6
+D1/0CDA: 80 EA        BRA Local_D10CC6
 D1/0CDC: 00 06        BRK $06
 D1/0CDE: 08           PHP
 D1/0CDF: CA           DEX

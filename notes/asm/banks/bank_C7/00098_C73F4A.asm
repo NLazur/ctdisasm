@@ -7,6 +7,6 @@ C7/3F51: C0 F5        CPY #$F5
 C7/3F53: F4 03 D6     PEA $D603
 C7/3F56: C1 F5        CMP ($F5,X)
 C7/3F58: 6F FB 27 C8  ADC $C827FB
-C7/3F5C: 10 B0        BPL $3F0E
+C7/3F5C: 10 B0        BPL Local_C73F0E
 C7/3F5E: 07 F6        ORA [$F6]
 C7/3F60: 60           RTS

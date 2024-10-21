@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: BB9C
 Routine_D0BB9C:
-D0/BB9C: 82 82 0C     BRL $D0C821
+D0/BB9C: 82 82 0C     BRL Routine_D0C821
 D0/BB9F: FC C0 F8     JSR ($F8C0,X)
 D0/BBA2: 28           PLP
 D0/BBA3: 3A           DEC

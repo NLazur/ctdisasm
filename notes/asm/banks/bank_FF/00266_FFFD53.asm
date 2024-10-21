@@ -18,7 +18,7 @@ FF/FD70: 18           CLC
 FF/FD71: 71 00        ADC ($00),Y
 FF/FD73: 88           DEY
 FF/FD74: 88           DEY
-FF/FD75: 10 FA        BPL $FD71
+FF/FD75: 10 FA        BPL Local_FFFD71
 FF/FD77: AB           PLB
 FF/FD78: 28           PLP
 FF/FD79: 60           RTS

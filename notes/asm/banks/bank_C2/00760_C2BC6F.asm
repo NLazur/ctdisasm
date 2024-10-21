@@ -10,5 +10,5 @@ C2/BC79: 0A           ASL
 C2/BC7A: 0D 18 04     ORA $0418
 C2/BC7D: C5 84        CMP $84
 C2/BC7F: 85 84        STA $84
-C2/BC81: D0 01        BNE $BC84
+C2/BC81: D0 01        BNE Local_C2BC84
 C2/BC83: 60           RTS

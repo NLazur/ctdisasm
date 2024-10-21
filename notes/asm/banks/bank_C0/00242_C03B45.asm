@@ -2,7 +2,7 @@
 Routine_C03B45:
 C0/3B45: A9 01        LDA #$01
 C0/3B47: 85 1E        STA $1E
-C0/3B49: 80 D0        BRA $3B1B
+C0/3B49: 80 D0        BRA Local_C03B1B
 C0/3B4B: C8           INY
 C0/3B4C: BB           TYX
 C0/3B4D: C2 20        REP #$20
@@ -23,8 +23,8 @@ C0/3B6B: A5 DA        LDA $DA
 C0/3B6D: 29 80        AND #$80
 C0/3B6F: 04 16        TSB $16
 C0/3B71: AD 10 42     LDA $4210
-C0/3B74: 10 FB        BPL $3B71
-C0/3B76: 20 4E 0B     JSR $0B4E
+C0/3B74: 10 FB        BPL Local_C03B71
+C0/3B76: 20 4E 0B     JSR Local_C00B4E
 C0/3B79: A6 00        LDX $00
 C0/3B7B: 86 05        STX $05
 C0/3B7D: A6 02        LDX $02
@@ -39,12 +39,12 @@ C0/3B8D: A5 16        LDA $16
 C0/3B8F: 85 04        STA $04
 C0/3B91: A2 FF 06     LDX #$06FF
 C0/3B94: 9A           TXS
-C0/3B95: 82 68 C4     BRL $C00000
+C0/3B95: 82 68 C4     BRL Routine_C00000
 C0/3B98: A9 01        LDA #$01
 C0/3B9A: 85 1E        STA $1E
-C0/3B9C: 80 AD        BRA $3B4B
+C0/3B9C: 80 AD        BRA Local_C03B4B
 C0/3B9E: A5 17        LDA $17
-C0/3BA0: 30 60        BMI $3C02
+C0/3BA0: 30 60        BMI Local_C03C02
 C0/3BA2: 84 C7        STY $C7
 C0/3BA4: C8           INY
 C0/3BA5: BB           TYX

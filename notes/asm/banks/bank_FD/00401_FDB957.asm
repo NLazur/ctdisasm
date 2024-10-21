@@ -35,7 +35,7 @@ FD/B999: 00 FF        BRK $FF
 FD/B99B: 28           PLP
 FD/B99C: A2 B9 DA     LDX #$DAB9
 FD/B99F: B9 12 BA     LDA $BA12,Y
-FD/B9A2: 20 03 20     JSR $2003
+FD/B9A2: 20 03 20     JSR Local_FD2003
 FD/B9A5: 03 50        ORA $50,S
 FD/B9A7: 00 50        BRK $50
 FD/B9A9: 00 20        BRK $20
@@ -127,9 +127,9 @@ FD/BA55: 05 04        ORA $04
 FD/BA57: 03 02        ORA $02,S
 FD/BA59: 02 04        COP $04
 FD/BA5B: 0A           ASL
-FD/BA5C: 10 03        BPL $BA61
+FD/BA5C: 10 03        BPL Local_FDBA61
 FD/BA5E: 0A           ASL
-FD/BA5F: 10 0C        BPL $BA6D
+FD/BA5F: 10 0C        BPL Local_FDBA6D
 FD/BA61: B1 CA        LDA ($CA),Y
 FD/BA63: EE 6C 5A     INC $5A6C
 FD/BA66: 71 2E        ADC ($2E),Y
@@ -147,12 +147,12 @@ FD/BA81: 94 73        STY $73,X
 FD/BA83: F7 54        SBC [$54],Y
 FD/BA85: D9 6E 72     CMP $726E,Y
 FD/BA88: C0 F4        CPY #$F4
-FD/BA8A: 80 DE        BRA $BA6A
+FD/BA8A: 80 DE        BRA Local_FDBA6A
 FD/BA8C: B9 BB 8D     LDA $8DBB,Y
 FD/BA8F: 66 26        ROR $26
-FD/BA91: D0 36        BNE $BAC9
+FD/BA91: D0 36        BNE Local_FDBAC9
 FD/BA93: E1 E9        SBC ($E9,X)
-FD/BA95: 70 DC        BVS $BA73
+FD/BA95: 70 DC        BVS Local_FDBA73
 FD/BA97: CD 2F 4A     CMP $4A2F
 FD/BA9A: 67 5D        ADC [$5D]
 FD/BA9C: D2 60        CMP ($60)

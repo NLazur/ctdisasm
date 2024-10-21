@@ -15,6 +15,6 @@ C2/DF68: BD 00 78     LDA $7800,X
 C2/DF6B: 4A           LSR
 C2/DF6C: 65 51        ADC $51
 C2/DF6E: 8D 44 10     STA $1044
-C2/DF71: 20 56 DD     JSR $DD56
+C2/DF71: 20 56 DD     JSR Local_C2DD56
 C2/DF74: 28           PLP
 C2/DF75: 60           RTS

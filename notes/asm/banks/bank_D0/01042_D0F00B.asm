@@ -1,13 +1,13 @@
 ; Bank: D0 | Start Address: F00B
 Routine_D0F00B:
-D0/F00B: 20 EE 52     JSR $52EE
+D0/F00B: 20 EE 52     JSR Local_D052EE
 D0/F00E: ED 04 52     SBC $5204
 D0/F011: EC DE 10     CPX $10DE
 D0/F014: 8E 12 8F     STX $8F12
 D0/F017: 12 8F        ORA ($8F)
 D0/F019: 0C 52 8E     TSB $8E52
 D0/F01C: EA           NOP
-D0/F01D: 30 1C        BMI $F03B
+D0/F01D: 30 1C        BMI Local_D0F03B
 D0/F01F: 29 8A        AND #$8A
 D0/F021: 12 8B        ORA ($8B)
 D0/F023: 12 00        ORA ($00)
@@ -22,7 +22,7 @@ D0/F032: 12 F9        ORA ($F9)
 D0/F034: 12 FA        ORA ($FA)
 D0/F036: 12 82        ORA ($82)
 D0/F038: FB           XCE
-D0/F039: 80 20        BRA $F05B
+D0/F039: 80 20        BRA Local_D0F05B
 D0/F03B: FE 52 FD     INC $FD52,X
 D0/F03E: 52 FC        EOR ($FC)
 D0/F040: 1E 11 80     ASL $8011,X
@@ -41,7 +41,7 @@ D0/F05A: 52 7D        EOR ($7D)
 D0/F05C: 48           PHA
 D0/F05D: 01 EC        ORA ($EC,X)
 D0/F05F: 12 ED        ORA ($ED)
-D0/F061: 10 12        BPL $F075
+D0/F061: 10 12        BPL Local_D0F075
 D0/F063: EE 12 CF     INC $CF12
 D0/F066: C0 20        CPY #$20
 D0/F068: FF 52 EF 04  SBC $04EF52,X

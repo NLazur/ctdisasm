@@ -16,10 +16,10 @@ D0/E9E6: F3 10        SBC ($10,S),Y
 D0/E9E8: 11 F4        ORA ($F4),Y
 D0/E9EA: 11 F5        ORA ($F5),Y
 D0/E9EC: 02 00        COP $00
-D0/E9EE: 50 12        BVC $EA02
+D0/E9EE: 50 12        BVC Local_D0EA02
 D0/E9F0: EE E2 93     INC $93E2
 D0/E9F3: 28           PLP
 D0/E9F4: 02 93        COP $93
 D0/E9F6: B3 92        LDA ($92,S),Y
-D0/E9F8: 80 0A        BRA $EA04
+D0/E9F8: 80 0A        BRA Local_D0EA04
 D0/E9FA: 40           RTI

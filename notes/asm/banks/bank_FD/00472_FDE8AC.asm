@@ -16,7 +16,7 @@ FD/E8C7: 9F 00 22 7E  STA $7E2200,X
 FD/E8CB: E8           INX
 FD/E8CC: E8           INX
 FD/E8CD: 88           DEY
-FD/E8CE: D0 F3        BNE $E8C3
+FD/E8CE: D0 F3        BNE Local_FDE8C3
 FD/E8D0: A9 00 00     LDA #$0000
 FD/E8D3: E2 20        SEP #$20
 FD/E8D5: 7A           PLY

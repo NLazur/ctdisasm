@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 6414
 Routine_D06414:
-D0/6414: 80 80        BRA $6396
+D0/6414: 80 80        BRA Local_D06396
 D0/6416: 00 00        BRK $00
 D0/6418: 00 00        BRK $00
 D0/641A: 00 00        BRK $00
@@ -31,7 +31,7 @@ D0/6450: 3A           DEC
 D0/6451: 26 E8        ROL $E8
 D0/6453: 98           TYA
 D0/6454: A0 60 80     LDY #$8060
-D0/6457: 80 00        BRA $6459
+D0/6457: 80 00        BRA Local_D06459
 D0/6459: 00 00        BRK $00
 D0/645B: 00 00        BRK $00
 D0/645D: 00 00        BRK $00
@@ -46,16 +46,16 @@ D0/646C: 01 02        ORA ($02,X)
 D0/646E: 00 00        BRK $00
 D0/6470: FE 01 E0     INC $E001,X
 D0/6473: 1C C0 40     TRB $40C0
-D0/6476: 80 80        BRA $63F8
+D0/6476: 80 80        BRA Local_D063F8
 D0/6478: 00 80        BRK $80
 D0/647A: E0 60 F0     CPX #$F060
-D0/647D: 70 10        BVS $648F
-D0/647F: 10 06        BPL $6487
+D0/647D: 70 10        BVS Local_D0648F
+D0/647F: 10 06        BPL Local_D06487
 D0/6481: 09 1F        ORA #$1F
-D0/6483: 20 78 07     JSR $0778
-D0/6486: F0 1C        BEQ $64A4
+D0/6483: 20 78 07     JSR Local_D00778
+D0/6486: F0 1C        BEQ Local_D064A4
 D0/6488: E0 60 80     CPX #$8060
-D0/648B: 80 00        BRA $648D
+D0/648B: 80 00        BRA Local_D0648D
 D0/648D: 00 00        BRK $00
 D0/648F: 00 FE        BRK $FE
 D0/6491: 00 01        BRK $01
@@ -72,17 +72,17 @@ D0/64AA: 0B           PHD
 D0/64AB: 0C 02 03     TSB $0302
 D0/64AE: 00 00        BRK $00
 D0/64B0: C0 40        CPY #$40
-D0/64B2: F0 10        BEQ $64C4
+D0/64B2: F0 10        BEQ Local_D064C4
 D0/64B4: FC 04 BF     JSR ($BF04,X)
 D0/64B7: C1 EB        CMP ($EB,X)
 D0/64B9: 74 F8        STZ $F8,X
 D0/64BB: 1F BF 43 8F  ORA $8F43BF,X
-D0/64BF: F0 00        BEQ $64C1
+D0/64BF: F0 00        BEQ Local_D064C1
 D0/64C1: 00 00        BRK $00
 D0/64C3: 00 00        BRK $00
 D0/64C5: 00 00        BRK $00
 D0/64C7: 00 E0        BRK $E0
-D0/64C9: 20 F8 08     JSR $08F8
+D0/64C9: 20 F8 08     JSR Local_D008F8
 D0/64CC: 1F E1 A3 BC  ORA $BCA3E1,X
 D0/64D0: 00 00        BRK $00
 D0/64D2: 00 00        BRK $00
@@ -91,7 +91,7 @@ D0/64D6: 00 00        BRK $00
 D0/64D8: 00 00        BRK $00
 D0/64DA: 00 00        BRK $00
 D0/64DC: 00 00        BRK $00
-D0/64DE: 20 E0 11     JSR $11E0
+D0/64DE: 20 E0 11     JSR Local_D011E0
 D0/64E1: 1E 02 03     ASL $0302,X
 D0/64E4: 00 00        BRK $00
 D0/64E6: 00 00        BRK $00

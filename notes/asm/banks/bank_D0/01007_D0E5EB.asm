@@ -1,18 +1,18 @@
 ; Bank: D0 | Start Address: E5EB
 Routine_D0E5EB:
-D0/E5EB: 10 21        BPL $E60E
+D0/E5EB: 10 21        BPL Local_D0E60E
 D0/E5ED: 0D 54 0D     ORA $0D54
 D0/E5F0: 55 0D        EOR $0D,X
 D0/E5F2: 18           CLC
 D0/E5F3: 58           CLI
 D0/E5F4: 0D B2 4E     ORA $4EB2
-D0/E5F7: 10 52        BPL $E64B
+D0/E5F7: 10 52        BPL Local_D0E64B
 D0/E5F9: 08           PHP
 D0/E5FA: B3 4D        LDA ($4D,S),Y
 D0/E5FC: B2 00        LDA ($00)
 D0/E5FE: 4D B1 4D     EOR $4DB1
-D0/E601: B0 4D        BCS $E650
-D0/E603: 50 4D        BVC $E652
+D0/E601: B0 4D        BCS Local_D0E650
+D0/E603: 50 4D        BVC Local_D0E652
 D0/E605: 6F 00 4D 6E  ADC $6E4D00
 D0/E609: 4D 6D 4D     EOR $4D6D
 D0/E60C: 9A           TXS
@@ -27,12 +27,12 @@ D0/E61E: 64 4D        STZ $4D
 D0/E620: 63 10        ADC $10,S
 D0/E622: 4D 62 4D     EOR $4D62
 D0/E625: 61 30        ADC ($30,X)
-D0/E627: 20 31 0D     JSR $0D31
+D0/E627: 20 31 0D     JSR Local_D00D31
 D0/E62A: 64 40        STZ $40
 D0/E62C: 0D 65 0D     ORA $0D65
 D0/E62F: 68           PLA
 D0/E630: 0D 0F 80     ORA $800F
-D0/E633: 30 C3        BMI $E5F8
+D0/E633: 30 C3        BMI Local_D0E5F8
 D0/E635: 00 4D        BRK $4D
 D0/E637: C2 4D        REP #$4D
 D0/E639: C1 4D        CMP ($4D,X)
@@ -53,7 +53,7 @@ D0/E658: 74 40        STZ $40,X
 D0/E65A: 4D 73 4D     EOR $4D73
 D0/E65D: 72 4D        ADC ($4D)
 D0/E65F: 71 70        ADC ($70),Y
-D0/E661: 20 41 00     JSR $0041
+D0/E661: 20 41 00     JSR Local_D00041
 D0/E664: 0D 74 0D     ORA $0D74
 D0/E667: 75 0D        ADC $0D,X
 D0/E669: 57 0D        EOR [$0D],Y
@@ -76,7 +76,7 @@ D0/E68C: 86 4D        STX $4D
 D0/E68E: 85 4D        STA $4D
 D0/E690: 84 10        STY $10
 D0/E692: 4D 83 4D     EOR $4D83
-D0/E695: 82 AE 30     BRL $D01746
+D0/E695: 82 AE 30     BRL Routine_D01746
 D0/E698: 51 0D        EOR ($0D),Y
 D0/E69A: 84 40        STY $40
 D0/E69C: 0D 85 0D     ORA $0D85
@@ -85,8 +85,8 @@ D0/E6A0: 0D A3 00     ORA $00A3
 D0/E6A3: 41 C4        EOR ($C4,X)
 D0/E6A5: 00 4D        BRK $4D
 D0/E6A7: D1 4D        CMP ($4D),Y
-D0/E6A9: D0 4D        BNE $E6F8
-D0/E6AB: 70 4D        BVS $E6FA
+D0/E6A9: D0 4D        BNE Local_D0E6F8
+D0/E6AB: 70 4D        BVS Local_D0E6FA
 D0/E6AD: 9F 00 4D 9E  STA $9E4D00,X
 D0/E6B1: 4D 9D 4D     EOR $4D9D
 D0/E6B4: 9C 4D 9B     STZ $9B4D
@@ -97,7 +97,7 @@ D0/E6BE: 97 4D        STA [$4D],Y
 D0/E6C0: 96 30        STX $30,Y
 D0/E6C2: 4D 95 4D     EOR $4D95
 D0/E6C5: 94 BC        STY $BC,X
-D0/E6C7: 30 40        BMI $E709
+D0/E6C7: 30 40        BMI Local_D0E709
 D0/E6C9: 09 61        ORA #$61
 D0/E6CB: 0D 80 94     ORA $9480
 D0/E6CE: 0D AD 0D     ORA $0DAD
@@ -107,7 +107,7 @@ D0/E6D5: 41 00        EOR ($00,X)
 D0/E6D7: D4 4D        PEI $4D
 D0/E6D9: D3 4D        CMP ($4D,S),Y
 D0/E6DB: D2 4D        CMP ($4D)
-D0/E6DD: 80 4D        BRA $E72C
+D0/E6DD: 80 4D        BRA Local_D0E72C
 D0/E6DF: 00 AF        BRK $AF
 D0/E6E1: 4D AE 4D     EOR $4DAE
 D0/E6E4: AD 4D AC     LDA $AC4D
@@ -119,8 +119,8 @@ D0/E6F0: 4D 80 A7     EOR $A780
 D0/E6F3: 4D A6 4D     EOR $4DA6
 D0/E6F6: A5 4D        LDA $4D
 D0/E6F8: A4 BC        LDY $BC
-D0/E6FA: 30 01        BMI $E6FD
-D0/E6FC: 80 09        BRA $E707
+D0/E6FA: 30 01        BMI Local_D0E6FD
+D0/E6FC: 80 09        BRA Local_D0E707
 D0/E6FE: 71 0D        ADC ($0D),Y
 D0/E700: A4 0D        LDY $0D
 D0/E702: BA           TSX
@@ -147,7 +147,7 @@ D0/E735: 29 A0        AND #$A0
 D0/E737: 00 4D        BRK $4D
 D0/E739: CF 4D CE 4D  CMP $4DCE4D
 D0/E73D: CD 4D CC     CMP $CC4D
-D0/E740: 10 4D        BPL $E78F
+D0/E740: 10 4D        BPL Local_D0E78F
 D0/E742: CB           WAI
 D0/E743: 4D CA EC     EOR $ECCA
 D0/E746: 01 71        ORA ($71,X)
@@ -157,9 +157,9 @@ D0/E74E: 21 02        AND ($02,X)
 D0/E750: F8           SED
 D0/E751: 66 68        ROR $68
 D0/E753: 06 0A        ASL $0A
-D0/E755: 20 1A 03     JSR $031A
+D0/E755: 20 1A 03     JSR Local_D0031A
 D0/E758: F6 19        INC $19,X
-D0/E75A: 2C 3A ED     BIT $ED3A
+D0/E75A: 2C 3A ED     BIT Local_D0ED3A
 D0/E75D: 13 95        ORA ($95,S),Y
 D0/E75F: 52 96        EOR ($96)
 D0/E761: 52 40        EOR ($40)
@@ -179,7 +179,7 @@ D0/E77B: 13 C2        ORA ($C2,S),Y
 D0/E77D: 52 ED        EOR ($ED)
 D0/E77F: 13 40        ORA ($40,S),Y
 D0/E781: F1 D3        SBC ($D3),Y
-D0/E783: F0 D3        BEQ $E758
+D0/E783: F0 D3        BEQ Local_D0E758
 D0/E785: EA           NOP
 D0/E786: D3 82        CMP ($82,S),Y
 D0/E788: 2A           ROL
@@ -192,7 +192,7 @@ D0/E790: 0A           ASL
 D0/E791: 0A           ASL
 D0/E792: 0B           PHD
 D0/E793: 01 74        ORA ($74,X)
-D0/E795: 10 1C        BPL $E7B3
+D0/E795: 10 1C        BPL Local_D0E7B3
 D0/E797: 0A           ASL
 D0/E798: 1D 0A 1E     ORA $1E0A,X
 D0/E79B: 0A           ASL
@@ -202,8 +202,8 @@ D0/E7A1: 13 ED        ORA ($ED,S),Y
 D0/E7A3: 12 96        ORA ($96)
 D0/E7A5: 7A           PLY
 D0/E7A6: 00 F1        BRK $F1
-D0/E7A8: 10 53        BPL $E7FD
-D0/E7AA: F0 13        BEQ $E7BF
+D0/E7A8: 10 53        BPL Local_D0E7FD
+D0/E7AA: F0 13        BEQ Local_D0E7BF
 D0/E7AC: ED 3E 30     SBC $303E
 D0/E7AF: 16 0A        ASL $0A,X
 D0/E7B1: 17 00        ORA [$00],Y

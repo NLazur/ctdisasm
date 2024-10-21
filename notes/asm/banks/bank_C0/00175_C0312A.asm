@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: 312A
 Routine_C0312A:
-C0/312A: 90 14        BCC $3140
+C0/312A: 90 14        BCC Local_C03140
 C0/312C: E2 20        SEP #$20
 C0/312E: A9 10        LDA #$10
 C0/3130: A6 6D        LDX $6D

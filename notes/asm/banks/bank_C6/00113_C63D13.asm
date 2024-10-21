@@ -10,7 +10,7 @@ C6/3D24: 00 6F        BRK $6F
 C6/3D26: 00 00        BRK $00
 C6/3D28: 7E 00 7F     ROR $7F00,X
 C6/3D2B: 00 4D        BRK $4D
-C6/3D2D: 80 5D        BRA $3D8C
+C6/3D2D: 80 5D        BRA Local_C63D8C
 C6/3D2F: 13 0A        ORA ($0A,S),Y
 C6/3D31: 01 02        ORA ($02,X)
 C6/3D33: 00 00        BRK $00
@@ -31,15 +31,15 @@ C6/3D50: 00 A6        BRK $A6
 C6/3D52: 00 B5        BRK $B5
 C6/3D54: 08           PHP
 C6/3D55: B6 58        LDX $58,Y
-C6/3D57: 30 A9        BMI $3D02
-C6/3D59: 50 00        BVC $3D5B
+C6/3D57: 30 A9        BMI Local_C63D02
+C6/3D59: 50 00        BVC Local_C63D5B
 C6/3D5B: AA           TAX
 C6/3D5C: 08           PHP
 C6/3D5D: 8D 78 00     STA $0078
 C6/3D60: 34 78        BIT $78,X
-C6/3D62: 20 BB 08     JSR $08BB
+C6/3D62: 20 BB 08     JSR Local_C608BB
 C6/3D65: 48           PHA
 C6/3D66: BA           TSX
 C6/3D67: 48           PHA
-C6/3D68: 80 0A        BRA $3D74
+C6/3D68: 80 0A        BRA Local_C63D74
 C6/3D6A: 60           RTS

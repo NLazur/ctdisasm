@@ -1,7 +1,7 @@
 ; Bank: D1 | Start Address: 688D
 Routine_D1688D:
 D1/688D: 7F 84 8E 40  ADC $408E84,X
-D1/6891: D0 30        BNE $68C3
+D1/6891: D0 30        BNE Local_D168C3
 D1/6893: 00 FF        BRK $FF
 D1/6895: 09 23        ORA #$23
 D1/6897: 83 20        STA $20,S

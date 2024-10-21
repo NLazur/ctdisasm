@@ -14,6 +14,6 @@ D0/6642: 07 08        ORA [$08]
 D0/6644: 0D 0E 03     ORA $030E
 D0/6647: 03 C3        ORA $C3,S
 D0/6649: 03 CC        ORA $CC,S
-D0/664B: 4C A8 B8     JMP $B8A8
-D0/664E: 90 F0        BCC $6640
+D0/664B: 4C A8 B8     JMP Local_D0B8A8
+D0/664E: 90 F0        BCC Local_D06640
 D0/6650: 40           RTI

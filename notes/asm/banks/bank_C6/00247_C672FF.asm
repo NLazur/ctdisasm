@@ -3,10 +3,10 @@ Routine_C672FF:
 C6/72FF: FC 2A 24     JSR ($242A,X)
 C6/7302: 35 32        AND $32,X
 C6/7304: FA           PLX
-C6/7305: 70 FF        BVS $7306
+C6/7305: 70 FF        BVS Local_C67306
 C6/7307: FF 35 44 06  SBC $064435,X
 C6/730B: 12 5F        ORA ($5F)
-C6/730D: F0 C3        BEQ $72D2
+C6/730D: F0 C3        BEQ Local_C672D2
 C6/730F: 26 31        ROL $31
 C6/7311: A0 32        LDY #$32
 C6/7313: 4E 25 26     LSR $2625
@@ -26,7 +26,7 @@ C6/7331: 02 5F        COP $5F
 C6/7333: F8           SED
 C6/7334: E5 41        SBC $41
 C6/7336: 41 42        EOR ($42,X)
-C6/7338: 10 BA        BPL $72F4
+C6/7338: 10 BA        BPL Local_C672F4
 C6/733A: 32 15        AND ($15)
 C6/733C: 16 89        ASL $89,X
 C6/733E: 06 35        ASL $35
@@ -51,7 +51,7 @@ C6/7368: BC B2 3B     LDY $3BB2,X
 C6/736B: 07 41        ORA [$41]
 C6/736D: 63 21        ADC $21,S
 C6/736F: 97 7B        STA [$7B],Y
-C6/7371: 80 79        BRA $73EC
+C6/7371: 80 79        BRA Local_C673EC
 C6/7373: 24 23        BIT $23
 C6/7375: 08           PHP
 C6/7376: 09 0A 24     ORA #$240A
@@ -76,7 +76,7 @@ C6/73A3: 0C D0 04     TSB $04D0
 C6/73A6: 13 3C        ORA ($3C,S),Y
 C6/73A8: 89 07 80     BIT #$8007
 C6/73AB: 0B           PHD
-C6/73AC: 82 C1 01     BRL $C67570
+C6/73AC: 82 C1 01     BRL Routine_C67570
 C6/73AF: 00 02        BRK $02
 C6/73B1: CA           DEX
 C6/73B2: 05 06        ORA $06
@@ -92,7 +92,7 @@ C6/73C6: A0 35        LDY #$35
 C6/73C8: 45 54        EOR $54
 C6/73CA: 53 55        EOR ($55,S),Y
 C6/73CC: B8           CLV
-C6/73CD: 10 BC        BPL $738B
+C6/73CD: 10 BC        BPL Local_C6738B
 C6/73CF: 8B           PHB
 C6/73D0: 14 1F        TRB $1F
 C6/73D2: 2F 45 84 1B  AND $1B8445
@@ -101,7 +101,7 @@ C6/73D7: B2 A3        LDA ($A3)
 C6/73D9: 03 FA        ORA $FA,S
 C6/73DB: 02 5E        COP $5E
 C6/73DD: 15 60        ORA $60,X
-C6/73DF: 80 61        BRA $7442
+C6/73DF: 80 61        BRA Local_C67442
 C6/73E1: 12 07        ORA ($07)
 C6/73E3: 07 72        ORA [$72]
 C6/73E5: 15 60        ORA $60,X
@@ -112,17 +112,17 @@ C6/73F0: 19 07 23     ORA $2307,Y
 C6/73F3: 35 02        AND $02,X
 C6/73F5: 8E 12 46     STX $4612
 C6/73F8: 2E 76 BD     ROL $BD76
-C6/73FB: D0 44        BNE $7441
+C6/73FB: D0 44        BNE Local_C67441
 C6/73FD: 65 0F        ADC $0F
 C6/73FF: 02 96        COP $96
 C6/7401: 08           PHP
 C6/7402: 0B           PHD
 C6/7403: A3 26        LDA $26,S
 C6/7405: 17 12        ORA [$12],Y
-C6/7407: D0 13        BNE $741C
+C6/7407: D0 13        BNE Local_C6741C
 C6/7409: 4E 13 14     LSR $1413
 C6/740C: 8B           PHB
-C6/740D: 22 72 63 0B  JSR $0B6372
+C6/740D: 22 72 63 0B  JSR Routine_0B6372
 C6/7411: DE 1C 8B     DEC $8B1C,X
 C6/7414: 7E 0C 22     ROR $220C,X
 C6/7417: 0E 23 0C     ASL $0C23
@@ -135,7 +135,7 @@ C6/7427: 61 08        ADC ($08,X)
 C6/7429: 24 81        BIT $81
 C6/742B: DD B5 1C     CMP $1CB5,X
 C6/742E: AA           TAX
-C6/742F: 22 C1 01 33  JSR $3301C1
+C6/742F: 22 C1 01 33  JSR Routine_3301C1
 C6/7433: 8B           PHB
 C6/7434: 02 83        COP $83
 C6/7436: 8B           PHB
@@ -158,7 +158,7 @@ C6/745A: 24 73        BIT $73
 C6/745C: 73 73        ADC ($73,S),Y
 C6/745E: 93 94        STA ($94,S),Y
 C6/7460: A0 A1        LDY #$A1
-C6/7462: 10 A2        BPL $7406
+C6/7462: 10 A2        BPL Local_C67406
 C6/7464: A3 A4        LDA $A4,S
 C6/7466: 24 7C        BIT $7C
 C6/7468: 0D CC CD     ORA $CDCC
@@ -178,7 +178,7 @@ C6/748A: 0B           PHD
 C6/748B: 1B           TCS
 C6/748C: 2A           ROL
 C6/748D: 5A           PHY
-C6/748E: 10 08        BPL $7498
+C6/748E: 10 08        BPL Local_C67498
 C6/7490: 09 35 8A     ORA #$8A35
 C6/7493: 02 24        COP $24
 C6/7495: 06 03        ASL $03
@@ -186,7 +186,7 @@ C6/7497: 47 31        EOR [$31]
 C6/7499: 05 91        ORA $91
 C6/749B: 04 23        TSB $23
 C6/749D: 23 39        AND $39,S
-C6/749F: D0 03        BNE $74A4
+C6/749F: D0 03        BNE Local_C674A4
 C6/74A1: 41 42        EOR ($42,X)
 C6/74A3: 16 03        ASL $03,X
 C6/74A5: EC 7D 9E     CPX $9E7D
