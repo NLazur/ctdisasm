@@ -1,0 +1,133 @@
+D1/3956: 70 70        BVS $39C8
+D1/3958: 70 70        BVS $39CA
+D1/395A: 78           SEI
+D1/395B: 78           SEI
+D1/395C: 38           SEC
+D1/395D: 38           SEC
+D1/395E: 3C 3C 00     BIT $003C,X
+D1/3961: 00 00        BRK $00
+D1/3963: 00 00        BRK $00
+D1/3965: 00 00        BRK $00
+D1/3967: 00 00        BRK $00
+D1/3969: 00 04        BRK $04
+D1/396B: 04 0C        TSB $0C
+D1/396D: 0C 1C 14     TSB $141C
+D1/3970: 00 00        BRK $00
+D1/3972: 00 00        BRK $00
+D1/3974: 00 00        BRK $00
+D1/3976: 00 00        BRK $00
+D1/3978: 00 00        BRK $00
+D1/397A: 04 04        TSB $04
+D1/397C: 0C 0C 1C     TSB $1C0C
+D1/397F: 1C 00 00     TRB $0000
+D1/3982: 3F 3F 3F 21  AND $213F3F,X
+D1/3986: 3F 3D 0E 0A  AND $0A0E3D,X
+D1/398A: 1E 16 3F     ASL $3F16,X
+D1/398D: 21 3F        AND ($3F,X)
+D1/398F: 3F 00 00 3F  AND $3F0000,X
+D1/3993: 3F 3F 3F 3F  AND $3F3F3F,X
+D1/3997: 3F 0E 0E 1E  AND $1E0E0E,X
+D1/399B: 1E 3F 3F     ASL $3F3F,X
+D1/399E: 3F 3F 00 00  AND $00003F,X
+D1/39A2: 00 00        BRK $00
+D1/39A4: 00 00        BRK $00
+D1/39A6: 00 00        BRK $00
+D1/39A8: 00 00        BRK $00
+D1/39AA: 00 00        BRK $00
+D1/39AC: 00 00        BRK $00
+D1/39AE: 00 00        BRK $00
+D1/39B0: 00 00        BRK $00
+D1/39B2: 00 00        BRK $00
+D1/39B4: 00 00        BRK $00
+D1/39B6: 00 00        BRK $00
+D1/39B8: 00 00        BRK $00
+D1/39BA: 00 00        BRK $00
+D1/39BC: 00 00        BRK $00
+D1/39BE: 00 00        BRK $00
+D1/39C0: 00 00        BRK $00
+D1/39C2: 00 00        BRK $00
+D1/39C4: 00 00        BRK $00
+D1/39C6: 00 00        BRK $00
+D1/39C8: 00 00        BRK $00
+D1/39CA: 01 01        ORA ($01,X)
+D1/39CC: 03 02        ORA $02,S
+D1/39CE: 3E 3D 00     ROL $003D,X
+D1/39D1: 00 00        BRK $00
+D1/39D3: 00 00        BRK $00
+D1/39D5: 00 00        BRK $00
+D1/39D7: 00 00        BRK $00
+D1/39D9: 00 01        BRK $01
+D1/39DB: 01 03        ORA ($03,X)
+D1/39DD: 03 3F        ORA $3F,S
+D1/39DF: 3F 00 00 00  AND $000000,X
+D1/39E3: 00 00        BRK $00
+D1/39E5: 00 00        BRK $00
+D1/39E7: 00 00        BRK $00
+D1/39E9: 00 00        BRK $00
+D1/39EB: 00 80        BRK $80
+D1/39ED: 80 78        BRA $3A67
+D1/39EF: F8           SED
+D1/39F0: 00 00        BRK $00
+D1/39F2: 00 00        BRK $00
+D1/39F4: 00 00        BRK $00
+D1/39F6: 00 00        BRK $00
+D1/39F8: 00 00        BRK $00
+D1/39FA: 00 00        BRK $00
+D1/39FC: 80 80        BRA $397E
+D1/39FE: F8           SED
+D1/39FF: F8           SED
+D1/3A00: 07 07        ORA [$07]
+D1/3A02: 08           PHP
+D1/3A03: 0F 16 19 1B  ORA $1B1916
+D1/3A07: 17 24        ORA [$24],Y
+D1/3A09: 3C 26 3A     BIT $3A26,X
+D1/3A0C: 12 1E        ORA ($1E)
+D1/3A0E: 0D 0D 07     ORA $070D
+D1/3A11: 07 0F        ORA [$0F]
+D1/3A13: 0F 1F 1F 1F  ORA $1F1F1F
+D1/3A17: 1F 3C 3C 3E  ORA $3E3C3C,X
+D1/3A1B: 3E 1E 1E     ROL $1E1E,X
+D1/3A1E: 0D 0D E0     ORA $E00D
+D1/3A21: E0 10 F0     CPX #$F010
+D1/3A24: 08           PHP
+D1/3A25: F8           SED
+D1/3A26: C8           INY
+D1/3A27: F8           SED
+D1/3A28: 24 3C        BIT $3C
+D1/3A2A: 24 3C        BIT $3C
+D1/3A2C: C8           INY
+D1/3A2D: F8           SED
+D1/3A2E: 08           PHP
+D1/3A2F: F8           SED
+D1/3A30: E0 E0 F0     CPX #$F0E0
+D1/3A33: F0 F8        BEQ $3A2D
+D1/3A35: F8           SED
+D1/3A36: F8           SED
+D1/3A37: F8           SED
+D1/3A38: 3C 3C 3C     BIT $3C3C,X
+D1/3A3B: 3C F8 F8     BIT $F8F8,X
+D1/3A3E: F8           SED
+D1/3A3F: F8           SED
+D1/3A40: 00 00        BRK $00
+D1/3A42: 00 00        BRK $00
+D1/3A44: 00 38        BRK $38
+D1/3A46: 00 44        BRK $44
+D1/3A48: 00 44        BRK $44
+D1/3A4A: 00 44        BRK $44
+D1/3A4C: 00 39        BRK $39
+D1/3A4E: 00 00        BRK $00
+D1/3A50: 00 00        BRK $00
+D1/3A52: 00 00        BRK $00
+D1/3A54: 38           SEC
+D1/3A55: 38           SEC
+D1/3A56: 44 44 44     MVP $44,$44
+D1/3A59: 44 44 44     MVP $44,$44
+D1/3A5C: 39 39 00     AND $0039,Y
+D1/3A5F: 00 00        BRK $00
+D1/3A61: 00 00        BRK $00
+D1/3A63: 00 00        BRK $00
+D1/3A65: 00 00        BRK $00
+D1/3A67: 00 00        BRK $00
+D1/3A69: 00 00        BRK $00
+D1/3A6B: 80 00        BRA $3A6D
+D1/3A6D: 40           RTI

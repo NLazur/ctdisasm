@@ -1,0 +1,2 @@
+D0/0FEB: C0 C0 20     CPY #$20C0
+D0/0FEE: 40           RTI

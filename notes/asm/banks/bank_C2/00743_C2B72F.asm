@@ -1,0 +1,9 @@
+C2/B72F: A5 54        LDA $54
+C2/B731: D0 07        BNE $B73A
+C2/B733: AD 4A 0F     LDA $0F4A
+C2/B736: F0 09        BEQ $B741
+C2/B738: 80 08        BRA $B742
+C2/B73A: AD 4A 0F     LDA $0F4A
+C2/B73D: C5 57        CMP $57
+C2/B73F: 90 01        BCC $B742
+C2/B741: 60           RTS

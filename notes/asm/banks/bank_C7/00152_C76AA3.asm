@@ -1,0 +1,91 @@
+C7/6AA3: D4 DC        PEI $DC
+C7/6AA5: 04 D6        TSB $D6
+C7/6AA7: 03 E0        ORA $E0,S
+C7/6AA9: 0E E2 00     ASL $00E2
+C7/6AAC: 04 E3        TSB $E3
+C7/6AAE: C4 00        CPY $00
+C7/6AB0: DC 06 D6     JMP [$D606]
+C7/6AB3: 02 DD        COP $DD
+C7/6AB5: 0C E0 15     TSB $15E0
+C7/6AB8: 08           PHP
+C7/6AB9: EB           XBA
+C7/6ABA: C4 3C        CPY $3C
+C7/6ABC: D7 D2        CMP [$D2],Y
+C7/6ABE: C9 02        CMP #$02
+C7/6AC0: 07 7F        ORA [$7F]
+C7/6AC2: 87 C8        STA [$C8]
+C7/6AC4: 05 EF        ORA $EF
+C7/6AC6: B3 EB        LDA ($EB,S),Y
+C7/6AC8: C3 DB        CMP $DB,S
+C7/6ACA: 01 DC        ORA ($DC,X)
+C7/6ACC: 10 C9        BPL $6A97
+C7/6ACE: 01 05        ORA ($05,X)
+C7/6AD0: 7F 22 BF 09  ADC $09BF22,X
+C7/6AD4: BF D8 87 D7  LDA $D787D8,X
+C7/6AD8: 09 BF        ORA #$BF
+C7/6ADA: 09 BF        ORA #$BF
+C7/6ADC: 09 20        ORA #$20
+C7/6ADE: EB           XBA
+C7/6ADF: DB           STP
+C7/6AE0: 04 C4        TSB $C4
+C7/6AE2: 7F D4 DC 03  ADC $03DCD4,X
+C7/6AE6: D7 C8        CMP [$C8],Y
+C7/6AE8: 5F F9 C9 0B  EOR $0BC9F9,X
+C7/6AEC: 1C 97 DD     TRB $DD97
+C7/6AEF: 0A           ASL
+C7/6AF0: E0 0F 00     CPX #$000F
+C7/6AF3: EB           XBA
+C7/6AF4: C4 00        CPY $00
+C7/6AF6: D0 CF        BNE $6AC7
+C7/6AF8: 14 00        TRB $00
+C7/6AFA: E9 FE        SBC #$FE
+C7/6AFC: D2 DC        CMP ($DC)
+C7/6AFE: 07 D7        ORA [$D7]
+C7/6B00: CB           WAI
+C7/6B01: 00 01        BRK $01
+C7/6B03: FF DD 0B E6  SBC $E60BDD,X
+C7/6B07: E2 00        SEP #$00
+C7/6B09: 29 61        AND #$61
+C7/6B0B: E3 D4        SBC $D4,S
+C7/6B0D: D7 C8        CMP [$C8],Y
+C7/6B0F: FF 01 DD 06  SBC $06DD01,X
+C7/6B13: 8E A8 E0     STX $E0A8
+C7/6B16: 12 A9        ORA ($A9)
+C7/6B18: EB           XBA
+C7/6B19: D4 D8        PEI $D8
+C7/6B1B: DD 0C E2     CMP $E20C,X
+C7/6B1E: 02 E2        COP $E2
+C7/6B20: 10 51        BPL $6B73
+C7/6B22: DA           PHX
+C7/6B23: 03 E3        ORA $E3,S
+C7/6B25: DA           PHX
+C7/6B26: D6 E3        DEC $E3,X
+C7/6B28: EB           XBA
+C7/6B29: D4 D7        PEI $D7
+C7/6B2B: C8           INY
+C7/6B2C: FF 01 DD 06  SBC $06DD01,X
+C7/6B30: 8C A8 A9     STY $A9A8
+C7/6B33: E0 12 A8     CPX #$A812
+C7/6B36: EB           XBA
+C7/6B37: B7 D4        LDA [$D4],Y
+C7/6B39: D8           CLD
+C7/6B3A: DD 0C E2     CMP $E20C,X
+C7/6B3D: 05 E2        ORA $E2
+C7/6B3F: 10 52        BPL $6B93
+C7/6B41: DA           PHX
+C7/6B42: 03 E3        ORA $E3,S
+C7/6B44: DA           PHX
+C7/6B45: D6 E3        DEC $E3,X
+C7/6B47: EB           XBA
+C7/6B48: D4 D0        PEI $D0
+C7/6B4A: CF 16 DD 0C  CMP $0CDD16
+C7/6B4E: E0 14 E6     CPX #$E614
+C7/6B51: E2 07        SEP #$07
+C7/6B53: CF 3F 0A E3  CMP $E30A3F
+C7/6B57: E2 0A        SEP #$0A
+C7/6B59: CF 21 0C E3  CMP $E30C21
+C7/6B5D: EB           XBA
+C7/6B5E: D4 DC        PEI $DC
+C7/6B60: 04 D6        TSB $D6
+C7/6B62: 03 C8        ORA $C8,S
+C7/6B64: 40           RTI

@@ -1,0 +1,19 @@
+C2/E2CC: AD 08 0F     LDA $0F08
+C2/E2CF: 3A           DEC
+C2/E2D0: 10 0E        BPL $E2E0
+C2/E2D2: A9 09        LDA #$09
+C2/E2D4: 80 0A        BRA $E2E0
+C2/E2D6: AD 08 0F     LDA $0F08
+C2/E2D9: 1A           INC
+C2/E2DA: C9 0A        CMP #$0A
+C2/E2DC: 90 02        BCC $E2E0
+C2/E2DE: A9 00        LDA #$00
+C2/E2E0: 8D 08 0F     STA $0F08
+C2/E2E3: 8F 03 42 00  STA $004203
+C2/E2E7: EA           NOP
+C2/E2E8: EA           NOP
+C2/E2E9: A9 24        LDA #$24
+C2/E2EB: 18           CLC
+C2/E2EC: 6F 16 42 00  ADC $004216
+C2/E2F0: 8D 80 93     STA $9380
+C2/E2F3: 60           RTS

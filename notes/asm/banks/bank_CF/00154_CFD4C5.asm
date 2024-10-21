@@ -1,0 +1,119 @@
+CF/D4C5: 38           SEC
+CF/D4C6: 1C 20 6D     TRB $6D20
+CF/D4C9: 38           SEC
+CF/D4CA: 1C 20 1C     TRB $1C20
+CF/D4CD: 20 1C 20     JSR $201C
+CF/D4D0: 6F 38 71 38  ADC $387138
+CF/D4D4: 02 E0        COP $E0
+CF/D4D6: 73 38        ADC ($38,S),Y
+CF/D4D8: 75 38        ADC $38,X
+CF/D4DA: 1C 20 53     TRB $5320
+CF/D4DD: 2E 53 6E     ROL $6E53
+CF/D4E0: 77 38        ADC [$38],Y
+CF/D4E2: 79 38 1C     ADC $1C38,Y
+CF/D4E5: 20 1C 20     JSR $201C
+CF/D4E8: 7B           TDC
+CF/D4E9: 38           SEC
+CF/D4EA: 1C 20 7D     TRB $7D20
+CF/D4ED: 38           SEC
+CF/D4EE: 1C 20 7F     TRB $7F20
+CF/D4F1: 38           SEC
+CF/D4F2: 81 38        STA ($38,X)
+CF/D4F4: 1C 20 B9     TRB $B920
+CF/D4F7: 61 1C        ADC ($1C,X)
+CF/D4F9: 20 1C 20     JSR $201C
+CF/D4FC: 53 AE        EOR ($AE,S),Y
+CF/D4FE: 53 EE        EOR ($EE,S),Y
+CF/D500: 83 38        STA $38,S
+CF/D502: 85 38        STA $38
+CF/D504: 87 38        STA [$38]
+CF/D506: 1C 20 A4     TRB $A420
+CF/D509: AB           PLB
+CF/D50A: 89 38        BIT #$38
+CF/D50C: 1C 20 1C     TRB $1C20
+CF/D50F: 20 8B 38     JSR $388B
+CF/D512: 8D 38 8F     STA $8F38
+CF/D515: 38           SEC
+CF/D516: 1C 20 1C     TRB $1C20
+CF/D519: 20 1C 20     JSR $201C
+CF/D51C: 53 2E        EOR ($2E,S),Y
+CF/D51E: 53 6E        EOR ($6E,S),Y
+CF/D520: 91 38        STA ($38),Y
+CF/D522: 93 38        STA ($38,S),Y
+CF/D524: 95 38        STA $38,X
+CF/D526: 97 38        STA [$38],Y
+CF/D528: 99 38 9B     STA $9B38,Y
+CF/D52B: 38           SEC
+CF/D52C: 9D 38 9F     STA $9F38,X
+CF/D52F: 38           SEC
+CF/D530: A1 38        LDA ($38,X)
+CF/D532: A3 38        LDA $38,S
+CF/D534: A5 38        LDA $38
+CF/D536: A7 38        LDA [$38]
+CF/D538: A9 38        LDA #$38
+CF/D53A: A5 21        LDA $21
+CF/D53C: 53 AE        EOR ($AE,S),Y
+CF/D53E: 53 EE        EOR ($EE,S),Y
+CF/D540: 04 20        TSB $20
+CF/D542: 06 20        ASL $20
+CF/D544: 08           PHP
+CF/D545: 20 0A 20     JSR $200A
+CF/D548: 56 35        LSR $35,X
+CF/D54A: 58           CLI
+CF/D54B: 35 5A        AND $5A,X
+CF/D54D: 35 5C        AND $5C,X
+CF/D54F: 35 AB        AND $AB,X
+CF/D551: 38           SEC
+CF/D552: D9 A4 AD     CMP $ADA4,Y
+CF/D555: 38           SEC
+CF/D556: AF 38 B1 38  LDA $38B138
+CF/D55A: B3 38        LDA ($38,S),Y
+CF/D55C: B5 38        LDA $38,X
+CF/D55E: B5 78        LDA $78,X
+CF/D560: 1E 20 20     ASL $2020,X
+CF/D563: 20 22 20     JSR $2022
+CF/D566: 24 20        BIT $20
+CF/D568: 5E 35 60     LSR $6035,X
+CF/D56B: 35 62        AND $62,X
+CF/D56D: 35 64        AND $64,X
+CF/D56F: 35 B7        AND $B7,X
+CF/D571: 38           SEC
+CF/D572: B9 38 BB     LDA $BB38,Y
+CF/D575: 38           SEC
+CF/D576: BD 38 BF     LDA $BF38,X
+CF/D579: 38           SEC
+CF/D57A: C1 38        CMP ($38,X)
+CF/D57C: B5 B8        LDA $B8,X
+CF/D57E: B5 F8        LDA $F8,X
+CF/D580: 1C 20 1C     TRB $1C20
+CF/D583: 20 99 B4     JSR $B499
+CF/D586: 4F 38 1C 20  EOR $201C38
+CF/D58A: 1C 20 C3     TRB $C320
+CF/D58D: 38           SEC
+CF/D58E: 1C 20 53     TRB $5320
+CF/D591: 38           SEC
+CF/D592: 1C 20 30     TRB $3020
+CF/D595: E0 30        CPX #$30
+CF/D597: A0 63        LDY #$63
+CF/D599: 21 63        AND ($63,X)
+CF/D59B: 61 C5        ADC ($C5,X)
+CF/D59D: 38           SEC
+CF/D59E: C7 38        CMP [$38]
+CF/D5A0: 1C 20 C9     TRB $C920
+CF/D5A3: 38           SEC
+CF/D5A4: CB           WAI
+CF/D5A5: 38           SEC
+CF/D5A6: 02 A0        COP $A0
+CF/D5A8: CD 38 5B     CMP $5B38
+CF/D5AB: 38           SEC
+CF/D5AC: CF 38 1C 20  CMP $201C38
+CF/D5B0: 5F 38 61 38  EOR $386138,X
+CF/D5B4: 30 60        BMI $D616
+CF/D5B6: 30 20        BMI $D5D8
+CF/D5B8: 63 A1        ADC $A1,S
+CF/D5BA: 63 E1        ADC $E1,S
+CF/D5BC: D1 38        CMP ($38),Y
+CF/D5BE: D3 38        CMP ($38,S),Y
+CF/D5C0: D5 38        CMP $38,X
+CF/D5C2: D7 38        CMP [$38],Y
+CF/D5C4: 6B           RTL

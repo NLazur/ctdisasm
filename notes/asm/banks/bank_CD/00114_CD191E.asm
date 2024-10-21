@@ -1,0 +1,2 @@
+CD/191E: 22 CD F5 D1  JSR $D1F5CD
+CD/1922: 60           RTS

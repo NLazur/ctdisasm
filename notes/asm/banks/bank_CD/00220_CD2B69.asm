@@ -1,0 +1,32 @@
+CD/2B69: E2 10        SEP #$10
+CD/2B6B: A2 00        LDX #$00
+CD/2B6D: A9 0C        LDA #$0C
+CD/2B6F: 8F 02 42 00  STA $004202
+CD/2B73: 7B           TDC
+CD/2B74: A8           TAY
+CD/2B75: 8A           TXA
+CD/2B76: 10 14        BPL $2B8C
+CD/2B78: BF 8E F4 CE  LDA $CEF48E,X
+CD/2B7C: 8F 03 42 00  STA $004203
+CD/2B80: EA           NOP
+CD/2B81: EA           NOP
+CD/2B82: EA           NOP
+CD/2B83: AF 17 42 00  LDA $004217
+CD/2B87: 49 FF        EOR #$FF
+CD/2B89: 1A           INC
+CD/2B8A: 80 0F        BRA $2B9B
+CD/2B8C: BF 8E F4 CE  LDA $CEF48E,X
+CD/2B90: 8F 03 42 00  STA $004203
+CD/2B94: EA           NOP
+CD/2B95: EA           NOP
+CD/2B96: EA           NOP
+CD/2B97: AF 17 42 00  LDA $004217
+CD/2B9B: 99 00 0A     STA $0A00,Y
+CD/2B9E: E8           INX
+CD/2B9F: E8           INX
+CD/2BA0: E8           INX
+CD/2BA1: E8           INX
+CD/2BA2: C8           INY
+CD/2BA3: D0 D0        BNE $2B75
+CD/2BA5: C2 10        REP #$10
+CD/2BA7: 60           RTS

@@ -1,0 +1,46 @@
+D0/52FB: C0 00        CPY #$00
+D0/52FD: C0 40        CPY #$40
+D0/52FF: C0 26        CPY #$26
+D0/5301: 39 30 3F     AND $3F30,Y
+D0/5304: 3F 3F 43 7F  AND $7F433F,X
+D0/5308: 9B           TXY
+D0/5309: E4 7B        CPX $7B
+D0/530B: 66 37        ROR $37
+D0/530D: 2C 2F 38     BIT $382F
+D0/5310: 7C E4 FC     JMP ($FCE4,X)
+D0/5313: C4 7E        CPY $7E
+D0/5315: 82 07 F9     BRL $D04C1F
+D0/5318: F3 FD        SBC ($FD,S),Y
+D0/531A: FD 0F FF     SBC $FF0F,X
+D0/531D: 07 FC        ORA [$FC]
+D0/531F: 04 0D        TSB $0D
+D0/5321: 4B           PHK
+D0/5322: 1B           TCS
+D0/5323: 7C 5D 7A     JMP ($7A5D,X)
+D0/5326: 23 3E        AND $3E,S
+D0/5328: 19 1F 08     ORA $081F,Y
+D0/532B: 0F 0D 0A 0B  ORA $0B0A0D
+D0/532F: 0C F0 30     TSB $30F0
+D0/5332: BC 5C DA     LDY $DA5C,X
+D0/5335: 36 B2        ROL $B2,X
+D0/5337: 4E C8 38     LSR $38C8
+D0/533A: F0 F0        BEQ $532C
+D0/533C: 54 B4 B0     MVN $B4,$B0
+D0/533F: 50 03        BVC $5344
+D0/5341: 03 01        ORA $01,S
+D0/5343: 02 13        COP $13
+D0/5345: 12 09        ORA ($09)
+D0/5347: 0B           PHD
+D0/5348: 06 07        ASL $07
+D0/534A: 07 07        ORA [$07]
+D0/534C: 03 02        ORA $02,S
+D0/534E: 00 03        BRK $03
+D0/5350: 90 50        BCC $53A2
+D0/5352: E0 E0        CPX #$E0
+D0/5354: F0 F0        BEQ $5346
+D0/5356: C0 40        CPY #$40
+D0/5358: 08           PHP
+D0/5359: C8           INY
+D0/535A: C8           INY
+D0/535B: C8           INY
+D0/535C: 60           RTS

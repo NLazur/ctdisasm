@@ -1,0 +1,132 @@
+C6/966E: 10 23        BPL $9693
+C6/9670: 23 E9        AND $E9,S
+C6/9672: 07 07        ORA [$07]
+C6/9674: AF 61 7A 00  LDA $007A61
+C6/9678: 52 42        EOR ($42)
+C6/967A: 45 54        EOR $54
+C6/967C: 03 08        ORA $08,S
+C6/967E: CA           DEX
+C6/967F: 10 FC        BPL $967D
+C6/9681: 80 FC        BRA $967F
+C6/9683: 98           TYA
+C6/9684: AB           PLB
+C6/9685: 99 24 EE     STA $EE24,Y
+C6/9688: ED E5 00     SBC $00E5
+C6/968B: 18           CLC
+C6/968C: 24 26        BIT $26
+C6/968E: 48           PHA
+C6/968F: AF D3 1A 28  LDA $281AD3
+C6/9693: 51 52        EOR ($52),Y
+C6/9695: 53 04        EOR ($04,S),Y
+C6/9697: 42 32        WDM $32
+C6/9699: CE 31 E5     DEC $E531
+C6/969C: E5 33        SBC $33
+C6/969E: 9C 33 20     STZ $2033
+C6/96A1: 34 23        BIT $23,X
+C6/96A3: 33 34        AND ($34,S),Y
+C6/96A5: 8D 5F 00     STA $005F
+C6/96A8: 07 07        ORA [$07]
+C6/96AA: A2 B6 15     LDX #$15B6
+C6/96AD: 05 52        ORA $52
+C6/96AF: 55 07        EOR $07,X
+C6/96B1: 03 08        ORA $08,S
+C6/96B3: 53 63        EOR ($63,S),Y
+C6/96B5: 00 C2        BRK $C2
+C6/96B7: 32 3D        AND ($3D)
+C6/96B9: 01 9D        ORA ($9D,X)
+C6/96BB: 23 B9        AND $B9,S
+C6/96BD: BA           TSX
+C6/96BE: BF 0A BF F8  LDA $F8BF0A,X
+C6/96C2: 07 E1        ORA [$E1]
+C6/96C4: 3B           TSC
+C6/96C5: 1D 09 EF     ORA $EF09,X
+C6/96C8: 22 24 24 9B  JSR $9B2424
+C6/96CC: FE F4 38     INC $38F4,X
+C6/96CF: F5 E5        SBC $E5,X
+C6/96D1: 23 89        AND $89,S
+C6/96D3: 2A           ROL
+C6/96D4: 15 45        ORA $45,X
+C6/96D6: 89 08 14     BIT #$1408
+C6/96D9: 23 80        AND $80,S
+C6/96DB: 8D 24 C9     STA $C924
+C6/96DE: CA           DEX
+C6/96DF: 23 FC        AND $FC,S
+C6/96E1: 24 6E        BIT $6E
+C6/96E3: 04 9B        TSB $9B
+C6/96E5: 59 F8 A2     EOR $A2F8,Y
+C6/96E8: 2C 6E C1     BIT $C16E
+C6/96EB: 00 31        BRK $31
+C6/96ED: 0A           ASL
+C6/96EE: 35 32        AND $32,X
+C6/96F0: CB           WAI
+C6/96F1: 01 00        ORA ($00,X)
+C6/96F3: 9C EE ED     STZ $EDEE
+C6/96F6: EC FF 23     CPX $23FF
+C6/96F9: 9C D0 0C     STZ $0CD0
+C6/96FC: D1 E8        CMP ($E8),Y
+C6/96FE: 0A           ASL
+C6/96FF: 0B           PHD
+C6/9700: A7 48        LDA [$48]
+C6/9702: 51 7F        EOR ($7F),Y
+C6/9704: 21 24        AND ($24,X)
+C6/9706: 70 23        BVS $972B
+C6/9708: 98           TYA
+C6/9709: 85 24        STA $24
+C6/970B: A2 09 DD     LDX #$DD09
+C6/970E: F9 E1 46     SBC $46E1,Y
+C6/9711: 7E 03 7E     ROR $7E03,X
+C6/9714: 01 31        ORA ($31,X)
+C6/9716: 02 E5        COP $E5
+C6/9718: 26 6E        ROL $6E
+C6/971A: 32 22        AND ($22)
+C6/971C: 23 20        AND $20,S
+C6/971E: 98           TYA
+C6/971F: E4 33        CPX $33
+C6/9721: F9 FD E0     SBC $E0FD,Y
+C6/9724: 01 23        ORA ($23,X)
+C6/9726: 23 60        AND $60,S
+C6/9728: 34 35        BIT $35,X
+C6/972A: 44 44 45     MVP $44,$45
+C6/972D: A7 40        LDA [$40]
+C6/972F: B1 05        LDA ($05),Y
+C6/9731: 23 E0        AND $E0,S
+C6/9733: E9 FC FC     SBC #$FCFC
+C6/9736: EA           NOP
+C6/9737: 9D CE 04     STA $04CE,X
+C6/973A: 9C FA E1     STZ $E1FA
+C6/973D: 4E 21 91     LSR $9121
+C6/9740: 1A           INC
+C6/9741: E5 26        SBC $26
+C6/9743: 8F 31 8F 12  STA $128F31
+C6/9747: 85 E4        STA $E4
+C6/9749: 84 E4        STY $E4
+C6/974B: 99 A6 02     STA $02A6,Y
+C6/974E: 35 77        AND $77,X
+C6/9750: 54 54 15     MVN $54,$15
+C6/9753: 35 C7        AND $C7,X
+C6/9755: 6D 06 C6     ADC $C606
+C6/9758: 0A           ASL
+C6/9759: 3D 01 ED     AND $ED01,X
+C6/975C: 9B           TXY
+C6/975D: 33 2D        AND ($2D,S),Y
+C6/975F: 05 57        ORA $57
+C6/9761: F8           SED
+C6/9762: 49 15 2D     EOR #$2D15
+C6/9765: 61 12        ADC ($12,X)
+C6/9767: 19 02 88     ORA $8802,Y
+C6/976A: 99 63 05     STA $0563,Y
+C6/976D: 36 BC        ROL $BC,X
+C6/976F: 37 41        AND [$41],Y
+C6/9771: C5 01        CMP $01
+C6/9773: 90 02        BCC $9777
+C6/9775: E1 01        SBC ($01,X)
+C6/9777: FC 02 45     JSR ($4502,X)
+C6/977A: A4 40        LDY $40
+C6/977C: 37 6D        AND [$6D],Y
+C6/977E: 16 8A        ASL $8A,X
+C6/9780: 05 3D        ORA $3D
+C6/9782: 09 9B 2D     ORA #$2D9B
+C6/9785: F5 F4        SBC $F4,X
+C6/9787: 58           CLI
+C6/9788: 23 E9        AND $E9,S
+C6/978A: 60           RTS

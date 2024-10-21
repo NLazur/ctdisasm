@@ -1,0 +1,130 @@
+FD/9AF7: 44 FF B2     MVP $FF,$B2
+FD/9AFA: 00 57        BRK $57
+FD/9AFC: 50 00        BVC $9AFE
+FD/9AFE: B0 00        BCS $9B00
+FD/9B00: 5C 04 00 62  JMP $620004
+FD/9B04: 08           PHP
+FD/9B05: 00 6A        BRK $6A
+FD/9B07: 55 0C        EOR $0C,X
+FD/9B09: 00 68        BRK $68
+FD/9B0B: 10 00        BPL $9B0D
+FD/9B0D: 6C 14 00     JMP ($0014)
+FD/9B10: 6D 18 00     ADC $0018
+FD/9B13: 82 00 44     BRL $FDDF16
+FD/9B16: 8B           PHB
+FD/9B17: 0B           PHD
+FD/9B18: 09 8E 33     ORA #$338E
+FD/9B1B: B4 84        LDY $84,X
+FD/9B1D: 00 00        BRK $00
+FD/9B1F: 00 B6        BRK $B6
+FD/9B21: 00 65        BRK $65
+FD/9B23: 05 78        ORA $78
+FD/9B25: BB           TYX
+FD/9B26: 00 0A        BRK $0A
+FD/9B28: 00 82        BRK $82
+FD/9B2A: B8           CLV
+FD/9B2B: 8B           PHB
+FD/9B2C: 10 08        BPL $9B36
+FD/9B2E: 91 00        STA ($00),Y
+FD/9B30: 89 40 0D     BIT #$0D40
+FD/9B33: 00 B4        BRK $B4
+FD/9B35: 00 90        BRK $90
+FD/9B37: E8           INX
+FD/9B38: 80 62        BRA $9B9C
+FD/9B3A: 96 00        STX $00,Y
+FD/9B3C: 09 E8 FF     ORA #$FFE8
+FD/9B3F: 91 13        STA ($13),Y
+FD/9B41: 00 00        BRK $00
+FD/9B43: AD 30 11     LDA $1130
+FD/9B46: 0F BB 22 00  ORA $0022BB
+FD/9B4A: 83 00        STA $00,S
+FD/9B4C: AF 03 8B 04  LDA $048B03
+FD/9B50: 0B           PHD
+FD/9B51: B4 00        LDY $00,X
+FD/9B53: B2 00        LDA ($00)
+FD/9B55: B7 05        LDA [$05],Y
+FD/9B57: 04 AA        TSB $AA
+FD/9B59: 06 BB        ASL $BB
+FD/9B5B: 29 E8 00     AND #$00E8
+FD/9B5E: DD AB 08     CMP $08AB,X
+FD/9B61: 1D AB 08     ORA $08AB,X
+FD/9B64: 0F AB 00 08  ORA $0800AB
+FD/9B68: 1B           TCS
+FD/9B69: AB           PLB
+FD/9B6A: 08           PHP
+FD/9B6B: 17 B4        ORA [$B4],Y
+FD/9B6D: 00 82        BRK $82
+FD/9B6F: 00 70        BRK $70
+FD/9B71: AA           TAX
+FD/9B72: 02 8B        COP $8B
+FD/9B74: 0B           PHD
+FD/9B75: 06 0D        ASL $0D
+FD/9B77: 00 01        BRK $01
+FD/9B79: 53 00        EOR ($00,S),Y
+FD/9B7B: B2 E3        LDA ($E3)
+FD/9B7D: 00 BB        BRK $BB
+FD/9B7F: 36 F0        ROL $F0,X
+FD/9B81: 00 00        BRK $00
+FD/9B83: EB           XBA
+FD/9B84: 00 00        BRK $00
+FD/9B86: E8           INX
+FD/9B87: FF AD 20 EB  SBC $EB20AD,X
+FD/9B8B: 00 30        BRK $30
+FD/9B8D: FF F0 F1 F2  SBC $F2F1F0,X
+FD/9B91: BB           TYX
+FD/9B92: 37 E3        AND [$E3],Y
+FD/9B94: 00 01        BRK $01
+FD/9B96: 00 82        BRK $82
+FD/9B98: 1A           INC
+FD/9B99: 8B           PHB
+FD/9B9A: 05 07        ORA $07
+FD/9B9C: 00 44        BRK $44
+FD/9B9E: 09 01 F0     ORA #$F001
+FD/9BA1: B2 BB        LDA ($BB)
+FD/9BA3: 3C 00 40     BIT $4000,X
+FD/9BA6: 03 01        ORA $01,S
+FD/9BA8: 10 0E        BPL $9BB8
+FD/9BAA: C0 01 C6     CPY #$C601
+FD/9BAD: 02 D0        COP $D0
+FD/9BAF: C7 01        CMP [$01]
+FD/9BB1: CA           DEX
+FD/9BB2: 11 02        ORA ($02),Y
+FD/9BB4: D0 CB        BNE $9B81
+FD/9BB6: 01 CE        ORA ($CE,X)
+FD/9BB8: 02 D0        COP $D0
+FD/9BBA: CF 01 D2 11  CMP $11D201
+FD/9BBE: 02 D0        COP $D0
+FD/9BC0: D3 01        CMP ($01,S),Y
+FD/9BC2: D6 02        DEC $02,X
+FD/9BC4: D0 D7        BNE $9B9D
+FD/9BC6: 01 DA        ORA ($DA,X)
+FD/9BC8: 11 02        ORA ($02),Y
+FD/9BCA: D0 DB        BNE $9BA7
+FD/9BCC: 01 DE        ORA ($DE,X)
+FD/9BCE: 02 D0        COP $D0
+FD/9BD0: DF 01 E2 41  CMP $41E201,X
+FD/9BD4: 02 D0        COP $D0
+FD/9BD6: E3 01        SBC $01,S
+FD/9BD8: ED 01 F9     SBC $F901
+FD/9BDB: 02 C0        COP $C0
+FD/9BDD: FA           PLX
+FD/9BDE: 10 01        BPL $9BE1
+FD/9BE0: 04 02        TSB $02
+FD/9BE2: 06 02        ASL $02
+FD/9BE4: C0 07 02     CPY #$0207
+FD/9BE7: 11 04        ORA ($04),Y
+FD/9BE9: 02 13        COP $13
+FD/9BEB: 02 C0        COP $C0
+FD/9BED: 14 02        TRB $02
+FD/9BEF: 1D 02 1F     ORA $1F02,X
+FD/9BF2: 41 02        EOR ($02,X)
+FD/9BF4: C0 20 02     CPY #$0220
+FD/9BF7: 2B           PLD
+FD/9BF8: 02 3C        COP $3C
+FD/9BFA: 02 C0        COP $C0
+FD/9BFC: 3D 10 02     AND $0210,X
+FD/9BFF: 6A           ROR
+FD/9C00: 02 6C        COP $6C
+FD/9C02: 02 C0        COP $C0
+FD/9C04: 00 B8        BRK $B8
+FD/9C06: 60           RTS

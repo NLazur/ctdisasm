@@ -1,0 +1,18 @@
+C2/191F: E2 20        SEP #$20
+C2/1921: A0 01 00     LDY #$0001
+C2/1924: B7 58        LDA [$58],Y
+C2/1926: 8D E8 1B     STA $1BE8
+C2/1929: C8           INY
+C2/192A: B7 58        LDA [$58],Y
+C2/192C: 8D E9 1B     STA $1BE9
+C2/192F: C8           INY
+C2/1930: B7 58        LDA [$58],Y
+C2/1932: 8D EA 1B     STA $1BEA
+C2/1935: C8           INY
+C2/1936: B7 58        LDA [$58],Y
+C2/1938: 8D EB 1B     STA $1BEB
+C2/193B: 9C ED 1B     STZ $1BED
+C2/193E: 20 D9 2E     JSR $2ED9
+C2/1941: C2 20        REP #$20
+C2/1943: A9 05 00     LDA #$0005
+C2/1946: 60           RTS

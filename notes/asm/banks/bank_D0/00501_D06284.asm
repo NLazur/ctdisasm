@@ -1,0 +1,56 @@
+D0/6284: C0 C0 00     CPY #$00C0
+D0/6287: 00 00        BRK $00
+D0/6289: 00 00        BRK $00
+D0/628B: 00 00        BRK $00
+D0/628D: 00 00        BRK $00
+D0/628F: 00 2B        BRK $2B
+D0/6291: 3C 13 3C     BIT $3C13,X
+D0/6294: 2F 30 1B 1C  AND $1C1B30
+D0/6298: 15 1F        ORA $1F,X
+D0/629A: 0D 0F 02     ORA $020F
+D0/629D: 02 00        COP $00
+D0/629F: 00 7F        BRK $7F
+D0/62A1: 80 AA        BRA $624D
+D0/62A3: 5D E7 1E     EOR $1EE7,X
+D0/62A6: E2 37        SEP #$37
+D0/62A8: 48           PHA
+D0/62A9: E8           INX
+D0/62AA: 25 25        AND $25
+D0/62AC: 90 90        BCC $623E
+D0/62AE: 00 00        BRK $00
+D0/62B0: 52 AF        EOR ($AF)
+D0/62B2: 4D FF B4     EOR $B4FF
+D0/62B5: F5 4A        SBC $4A,X
+D0/62B7: 6A           ROR
+D0/62B8: 90 90        BCC $624A
+D0/62BA: 00 00        BRK $00
+D0/62BC: 00 00        BRK $00
+D0/62BE: 00 00        BRK $00
+D0/62C0: AD ED 50     LDA $50ED
+D0/62C3: 50 80        BVC $6245
+D0/62C5: 80 00        BRA $62C7
+D0/62C7: 00 00        BRK $00
+D0/62C9: 00 00        BRK $00
+D0/62CB: 00 00        BRK $00
+D0/62CD: 00 00        BRK $00
+D0/62CF: 00 06        BRK $06
+D0/62D1: 05 07        ORA $07
+D0/62D3: 07 02        ORA [$02]
+D0/62D5: 03 01        ORA $01,S
+D0/62D7: 01 00        ORA ($00,X)
+D0/62D9: 00 00        BRK $00
+D0/62DB: 00 00        BRK $00
+D0/62DD: 00 00        BRK $00
+D0/62DF: 00 BE        BRK $BE
+D0/62E1: C1 7B        CMP ($7B,X)
+D0/62E3: 84 5D        STY $5D
+D0/62E5: A0 77        LDY #$77
+D0/62E7: C3 90        CMP $90,S
+D0/62E9: F0 00        BEQ $62EB
+D0/62EB: 00 00        BRK $00
+D0/62ED: 00 00        BRK $00
+D0/62EF: 00 D6        BRK $D6
+D0/62F1: 3E 19 F9     ROL $F919,X
+D0/62F4: 24 A4        BIT $A4
+D0/62F6: 00 00        BRK $00
+D0/62F8: 40           RTI

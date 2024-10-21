@@ -1,0 +1,149 @@
+C6/2567: 38           SEC
+C6/2568: 30 9B        BMI $2505
+C6/256A: 35 95        AND $95,X
+C6/256C: E7 20        SBC [$20]
+C6/256E: 9C 07 30     STZ $3007
+C6/2571: 97 E7        STA [$E7],Y
+C6/2573: 30 C9        BMI $253E
+C6/2575: 33 8C        AND ($8C,S),Y
+C6/2577: 20 6A CA     JSR $CA6A
+C6/257A: 07 30        ORA [$30]
+C6/257C: C6 A1        DEC $A1
+C6/257E: 30 C8        BMI $2548
+C6/2580: 07 40        ORA [$40]
+C6/2582: B6 30        LDX $30,Y
+C6/2584: CA           DEX
+C6/2585: A9 BD 30     LDA #$30BD
+C6/2588: C8           INY
+C6/2589: 31 C4        AND ($C4),Y
+C6/258B: 20 C9 07     JSR $07C9
+C6/258E: 30 CA        BMI $255A
+C6/2590: 0E 30 52     ASL $5230
+C6/2593: BB           TYX
+C6/2594: 1F 31 BB 14  ORA $14BB31,X
+C6/2598: 26 31        ROL $31
+C6/259A: 17 26        ORA [$26],Y
+C6/259C: 21 BD        AND ($BD,X)
+C6/259E: 4A           LSR
+C6/259F: 18           CLC
+C6/25A0: 2D 21 BE     AND $BE21
+C6/25A3: 0E 30 B8     ASL $B830
+C6/25A6: 18           CLC
+C6/25A7: 34 21        BIT $21,X
+C6/25A9: B9 55 07     LDA $0755,Y
+C6/25AC: 30 AA        BMI $2558
+C6/25AE: 3B           TSC
+C6/25AF: 31 AC        AND ($AC),Y
+C6/25B1: 42 31        WDM $31
+C6/25B3: AB           PLB
+C6/25B4: 42 31        WDM $31
+C6/25B6: AC A5 49     LDY $49A5
+C6/25B9: 31 BA        AND ($BA),Y
+C6/25BB: 49 31 BA     EOR #$BA31
+C6/25BE: 1A           INC
+C6/25BF: 50 21        BVC $25E2
+C6/25C1: BC 57 31     LDY $3157,X
+C6/25C4: 00 C0        BRK $C0
+C6/25C6: 2E 15 3F     ROL $3F15
+C6/25C9: 08           PHP
+C6/25CA: 0A           ASL
+C6/25CB: 15 01        ORA $01,X
+C6/25CD: 00 1B        BRK $1B
+C6/25CF: 19 01 01     ORA $0101,Y
+C6/25D2: 00 00        BRK $00
+C6/25D4: 01 02        ORA ($02,X)
+C6/25D6: 04 CD        TSB $CD
+C6/25D8: 01 F0        ORA ($F0,X)
+C6/25DA: 96 0E        STX $0E,Y
+C6/25DC: 3F 11 00 AC  AND $AC0011,X
+C6/25E0: 01 00        ORA ($00,X)
+C6/25E2: 4A           LSR
+C6/25E3: 8F 1C 10 85  STA $85101C
+C6/25E7: 04 3E        TSB $3E
+C6/25E9: 09 10 0F     ORA #$0F10
+C6/25EC: 1C 10 87     TRB $8710
+C6/25EF: 07 10        ORA [$10]
+C6/25F1: 20 10 87     JSR $8710
+C6/25F4: 00 06        BRK $06
+C6/25F6: 01 09        ORA ($09,X)
+C6/25F8: A1 2A        LDA ($2A,X)
+C6/25FA: 1F A3 00 00  ORA $0000A3,X
+C6/25FE: 07 0E        ORA [$0E]
+C6/2600: 21 2A        AND ($2A,X)
+C6/2602: 1F B3 01 07  ORA $0701B3,X
+C6/2606: 00 0C        BRK $0C
+C6/2608: 16 2C        ASL $2C,X
+C6/260A: 1E 9F 08     ASL $089F,X
+C6/260D: 18           CLC
+C6/260E: 0D 04 16     ORA $1604
+C6/2611: 2D 07 20     AND $2007
+C6/2614: CD 2B 24     CMP $242B
+C6/2617: 41 08        EOR ($08,X)
+C6/2619: 20 10 0B     JSR $0B10
+C6/261C: 4D 2B 17     EOR $172B
+C6/261F: 07 10        ORA [$10]
+C6/2621: AA           TAX
+C6/2622: 1D 00 20     ORA $2000,X
+C6/2625: A5 08        LDA $08
+C6/2627: 08           PHP
+C6/2628: 25 BB        AND $BB
+C6/262A: 25 22        AND $22
+C6/262C: 80 C3        BRA $25F1
+C6/262E: 08           PHP
+C6/262F: 0C 24 3B     TSB $3B24
+C6/2632: 25 5A        AND $5A
+C6/2634: 07 10        ORA [$10]
+C6/2636: 00 9B        BRK $9B
+C6/2638: 0D 18 70     ORA $7018
+C6/263B: 00 14        BRK $14
+C6/263D: 1E 97 00     ASL $0097,X
+C6/2640: 10 02        BPL $2644
+C6/2642: 72 08        ADC ($08)
+C6/2644: 0C 0C 97     TSB $970C
+C6/2647: 14 00        TRB $00
+C6/2649: 02 73        COP $73
+C6/264B: 08           PHP
+C6/264C: 12 09        ORA ($09)
+C6/264E: 99 13 56     STA $5613,Y
+C6/2651: 00 74        BRK $74
+C6/2653: 08           PHP
+C6/2654: 0E 1C 96     ASL $961C
+C6/2657: 12 0B        ORA ($0B)
+C6/2659: 76 00        ROR $00,X
+C6/265B: 08           PHP
+C6/265C: 38           SEC
+C6/265D: 0B           PHD
+C6/265E: 91 11        STA ($11),Y
+C6/2660: 0E 77 00     ASL $0077
+C6/2663: 00 13        BRK $13
+C6/2665: 2D 91 0F     AND $0F91
+C6/2668: 0E 77 02     ASL $0277
+C6/266B: 12 00        ORA ($00)
+C6/266D: 03 91        ORA $91,S
+C6/266F: 0C 0F 78     TSB $780F
+C6/2672: 00 1F        BRK $1F
+C6/2674: 35 00        AND $00,X
+C6/2676: 8C 11 19     STY $1911
+C6/2679: 81 08        STA ($08,X)
+C6/267B: 08           PHP
+C6/267C: 1C 92 00     TRB $0092
+C6/267F: 21 02        AND ($02,X)
+C6/2681: 88           DEY
+C6/2682: 08           PHP
+C6/2683: 24 1C        BIT $1C
+C6/2685: 92 24        STA ($24)
+C6/2687: 00 23        BRK $23
+C6/2689: 89 08 0F     BIT #$0F08
+C6/268C: 3C 94 23     BIT $2394,X
+C6/268F: 57 00        EOR [$00],Y
+C6/2691: 8A           TXA
+C6/2692: 08           PHP
+C6/2693: 04 1B        TSB $1B
+C6/2695: 91 23        STA ($23),Y
+C6/2697: 0B           PHD
+C6/2698: 8B           PHB
+C6/2699: 00 08        BRK $08
+C6/269B: 38           SEC
+C6/269C: 1C 99 37     TRB $3799
+C6/269F: 1C 98 08     TRB $0898
+C6/26A2: 40           RTI

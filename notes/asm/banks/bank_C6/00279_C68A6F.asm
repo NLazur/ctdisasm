@@ -1,0 +1,66 @@
+C6/8A6F: F8           SED
+C6/8A70: 03 E0        ORA $E0,S
+C6/8A72: 24 1E        BIT $1E
+C6/8A74: 88           DEY
+C6/8A75: 92 34        STA ($34)
+C6/8A77: 00 30        BRK $30
+C6/8A79: 31 32        AND ($32),Y
+C6/8A7B: 66 67        ROR $67
+C6/8A7D: 68           PLA
+C6/8A7E: 69 07 7A     ADC #$7A07
+C6/8A81: 06 B9        ASL $B9
+C6/8A83: 05 06        ORA $06
+C6/8A85: 47 F8        EOR [$F8]
+C6/8A87: 80 B9        BRA $8A42
+C6/8A89: 1F 01 B0 08  ORA $08B001,X
+C6/8A8D: 07 42        ORA [$42]
+C6/8A8F: 3D 17 5B     AND $5B17,X
+C6/8A92: 11 12        ORA ($12),Y
+C6/8A94: 4C 76 BA     JMP $BA76
+C6/8A97: 02 27        COP $27
+C6/8A99: 1A           INC
+C6/8A9A: 16 B9        ASL $B9,X
+C6/8A9C: 05 16        ORA $16
+C6/8A9E: 47 F8        EOR [$F8]
+C6/8AA0: D6 E7        DEC $E7,X
+C6/8AA2: 00 34        BRK $34
+C6/8AA4: 4C 02 4D     JMP $4D02
+C6/8AA7: 2B           PLD
+C6/8AA8: 50 30        BVC $8ADA
+C6/8AAA: 00 00        BRK $00
+C6/8AAC: 5C 5D 1E B8  JMP $B81E5D
+C6/8AB0: 27 00        AND [$00]
+C6/8AB2: 00 36        BRK $36
+C6/8AB4: 14 46        TRB $46
+C6/8AB6: F8           SED
+C6/8AB7: 08           PHP
+C6/8AB8: B8           CLV
+C6/8AB9: 35 E4        AND $E4,X
+C6/8ABB: 1A           INC
+C6/8ABC: 03 E6        ORA $E6,S
+C6/8ABE: 04 77        TSB $77
+C6/8AC0: 68           PLA
+C6/8AC1: 3E 2D 1F     ROL $1F2D,X
+C6/8AC4: 0F 2F 4E 7C  ORA $7C4E2F
+C6/8AC8: 4F 24 BA 25  EOR $25BA24
+C6/8ACC: 01 F8        ORA ($F8,X)
+C6/8ACE: 61 A0        ADC ($A0,X)
+C6/8AD0: 53 96        EOR ($96,S),Y
+C6/8AD2: 89 14 26     BIT #$2614
+C6/8AD5: C0 00 1E     CPY #$1E00
+C6/8AD8: 5E 5F 10     LSR $105F,X
+C6/8ADB: 21 66        AND ($66,X)
+C6/8ADD: FB           XCE
+C6/8ADE: 05 D0        ORA $D0
+C6/8AE0: E2 34        SEP #$34
+C6/8AE2: FD CC 6E     SBC $6ECC,X
+C6/8AE5: 6F 30 52 FD  ADC $FD5230
+C6/8AE9: 01 F8        ORA ($F8,X)
+C6/8AEB: 0F 80 FF 36  ORA $36FF80
+C6/8AEF: 12 9D        ORA ($9D)
+C6/8AF1: 1C 01 F8     TRB $F801
+C6/8AF4: 01 F8        ORA ($F8,X)
+C6/8AF6: BD 06 25     LDA $2506,X
+C6/8AF9: 58           CLI
+C6/8AFA: 36 12        ROL $12,X
+C6/8AFC: 60           RTS

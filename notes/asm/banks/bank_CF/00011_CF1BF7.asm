@@ -1,0 +1,111 @@
+CF/1BF7: 32 00        AND ($00)
+CF/1BF9: 0C 00 00     TSB $0000
+CF/1BFC: 00 00        BRK $00
+CF/1BFE: 00 00        BRK $00
+CF/1C00: EF DC 3F 31  SBC $313FDC
+CF/1C04: 08           PHP
+CF/1C05: 0E 00 01     ASL $0100
+CF/1C08: 00 00        BRK $00
+CF/1C0A: 00 00        BRK $00
+CF/1C0C: 00 00        BRK $00
+CF/1C0E: 00 00        BRK $00
+CF/1C10: 87 9F        STA [$9F]
+CF/1C12: 00 00        BRK $00
+CF/1C14: 00 40        BRK $40
+CF/1C16: 00 00        BRK $00
+CF/1C18: 00 00        BRK $00
+CF/1C1A: 00 00        BRK $00
+CF/1C1C: 00 00        BRK $00
+CF/1C1E: 00 00        BRK $00
+CF/1C20: 1E 13 1E     ASL $1E13,X
+CF/1C23: 16 1E        ASL $1E,X
+CF/1C25: 12 0F        ORA ($0F)
+CF/1C27: 0B           PHD
+CF/1C28: 0F 09 0F 09  ORA $090F09
+CF/1C2C: 07 05        ORA [$05]
+CF/1C2E: 03 02        ORA $02,S
+CF/1C30: 00 00        BRK $00
+CF/1C32: 00 C0        BRK $C0
+CF/1C34: 00 20        BRK $20
+CF/1C36: 00 10        BRK $10
+CF/1C38: 00 10        BRK $10
+CF/1C3A: 00 60        BRK $60
+CF/1C3C: 00 80        BRK $80
+CF/1C3E: 80 80        BRA $1BC0
+CF/1C40: 7E 5A 54     ROR $545A,X
+CF/1C43: 75 E0        ADC $E0,X
+CF/1C45: A1 50        LDA ($50,X)
+CF/1C47: 70 38        BVS $1C81
+CF/1C49: 29 78 6A     AND #$6A78
+CF/1C4C: F0 9C        BEQ $1BEA
+CF/1C4E: E0 60 00     CPX #$0060
+CF/1C51: 80 00        BRA $1C53
+CF/1C53: 00 00        BRK $00
+CF/1C55: 00 00        BRK $00
+CF/1C57: 80 00        BRA $1C59
+CF/1C59: 00 00        BRK $00
+CF/1C5B: 00 00        BRK $00
+CF/1C5D: 00 00        BRK $00
+CF/1C5F: 00 1E        BRK $1E
+CF/1C61: 52 1C        EOR ($1C)
+CF/1C63: 24 38        BIT $38
+CF/1C65: 28           PLP
+CF/1C66: 38           SEC
+CF/1C67: 29 38 08     AND #$0838
+CF/1C6A: 30 12        BMI $1C7E
+CF/1C6C: 50 3C        BVC $1CAA
+CF/1C6E: E0 70 01     CPX #$0170
+CF/1C71: 43 00        EOR $00,S
+CF/1C73: 44 00 24     MVP $00,$24
+CF/1C76: 00 18        BRK $18
+CF/1C78: 00 00        BRK $00
+CF/1C7A: 00 00        BRK $00
+CF/1C7C: 00 00        BRK $00
+CF/1C7E: 00 00        BRK $00
+CF/1C80: F0 30        BEQ $1CB2
+CF/1C82: C0 C0 00     CPY #$00C0
+CF/1C85: 00 00        BRK $00
+CF/1C87: 00 00        BRK $00
+CF/1C89: 00 00        BRK $00
+CF/1C8B: 00 00        BRK $00
+CF/1C8D: 00 00        BRK $00
+CF/1C8F: 00 07        BRK $07
+CF/1C91: 03 1F        ORA $1F,S
+CF/1C93: 12 3F        ORA ($3F)
+CF/1C95: 22 3F 22 1F  JSR $1F223F
+CF/1C99: 70 3C        BVS $1CD7
+CF/1C9B: B3 FF        LDA ($FF,S),Y
+CF/1C9D: C7 78        CMP [$78]
+CF/1C9F: B8           CLV
+CF/1CA0: C0 42 80     CPY #$8042
+CF/1CA3: 04 80        TSB $80
+CF/1CA5: 04 88        TSB $88
+CF/1CA7: 00 30        BRK $30
+CF/1CA9: 00 C0        BRK $C0
+CF/1CAB: 20 00 00     JSR $0000
+CF/1CAE: 00 00        BRK $00
+CF/1CB0: 03 0A        ORA $0A,S
+CF/1CB2: 07 09        ORA [$09]
+CF/1CB4: 1E 12 1E     ASL $1E12,X
+CF/1CB7: 12 1C        ORA ($1C)
+CF/1CB9: 1B           TCS
+CF/1CBA: 3E 32 FC     ROL $FC32,X
+CF/1CBD: C4 F8        CPY $F8
+CF/1CBF: B8           CLV
+CF/1CC0: 00 08        BRK $08
+CF/1CC2: 00 08        BRK $08
+CF/1CC4: 00 30        BRK $30
+CF/1CC6: 00 C0        BRK $C0
+CF/1CC8: 00 00        BRK $00
+CF/1CCA: 00 00        BRK $00
+CF/1CCC: 00 00        BRK $00
+CF/1CCE: 00 00        BRK $00
+CF/1CD0: 01 03        ORA ($03,X)
+CF/1CD2: 03 0F        ORA $0F,S
+CF/1CD4: 03 12        ORA $12,S
+CF/1CD6: 03 22        ORA $22,S
+CF/1CD8: 07 15        ORA [$15]
+CF/1CDA: 0E 08 1E     ASL $1E08
+CF/1CDD: 36 3C        ROL $3C,X
+CF/1CDF: 24 C0        BIT $C0
+CF/1CE1: 40           RTI

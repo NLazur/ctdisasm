@@ -1,0 +1,31 @@
+C7/61A3: 0A           ASL
+C7/61A4: 96 EB        STX $EB,Y
+C7/61A6: D0 CF        BNE $6177
+C7/61A8: 06 E6        ASL $E6
+C7/61AA: E2 0D        SEP #$0D
+C7/61AC: 0D E0 17     ORA $17E0
+C7/61AF: CF 22 E3 EB  CMP $EBE322
+C7/61B3: C4 7F        CPY $7F
+C7/61B5: DC 04 D6     JMP [$D604]
+C7/61B8: 01 CB        ORA ($CB,X)
+C7/61BA: 00 01        BRK $01
+C7/61BC: 7F DD 0C 97  ADC $970CDD,X
+C7/61C0: D2 D6        CMP ($D6)
+C7/61C2: 06 E0        ASL $E0
+C7/61C4: 12 C8        ORA ($C8)
+C7/61C6: 20 54 06     JSR $0654
+C7/61C9: EB           XBA
+C7/61CA: D0 CF        BNE $619B
+C7/61CC: 0A           ASL
+C7/61CD: 0B           PHD
+C7/61CE: D4 CF        PEI $CF
+C7/61D0: 19 C5 37     ORA $37C5,Y
+C7/61D3: 00 DF        BRK $DF
+C7/61D5: 04 01        TSB $01
+C7/61D7: EB           XBA
+C7/61D8: C4 7F        CPY $7F
+C7/61DA: D2 D6        CMP ($D6)
+C7/61DC: 04 CB        TSB $CB
+C7/61DE: 00 01        BRK $01
+C7/61E0: BF A5 D7 C8  LDA $C8D7A5,X
+C7/61E4: 40           RTI

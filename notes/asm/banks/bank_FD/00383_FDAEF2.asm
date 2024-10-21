@@ -1,0 +1,71 @@
+FD/AEF2: 7B           TDC
+FD/AEF3: AA           TAX
+FD/AEF4: 9F 48 1C 00  STA $001C48,X
+FD/AEF8: E8           INX
+FD/AEF9: E0 0F 00     CPX #$000F
+FD/AEFC: D0 F6        BNE $AEF4
+FD/AEFE: 7B           TDC
+FD/AEFF: AA           TAX
+FD/AF00: 86 02        STX $02
+FD/AF02: 86 0A        STX $0A
+FD/AF04: A6 02        LDX $02
+FD/AF06: C2 20        REP #$20
+FD/AF08: 8A           TXA
+FD/AF09: 0A           ASL
+FD/AF0A: AA           TAX
+FD/AF0B: BF 0B A8 FD  LDA $FDA80B,X
+FD/AF0F: AA           TAX
+FD/AF10: 7B           TDC
+FD/AF11: E2 20        SEP #$20
+FD/AF13: BD 29 00     LDA $0029,X
+FD/AF16: 85 06        STA $06
+FD/AF18: F0 4D        BEQ $AF67
+FD/AF1A: AA           TAX
+FD/AF1B: 86 28        STX $28
+FD/AF1D: A9 06        LDA #$06
+FD/AF1F: AA           TAX
+FD/AF20: 86 2A        STX $2A
+FD/AF22: 22 BF FD C1  JSR $C1FDBF
+FD/AF26: A6 2C        LDX $2C
+FD/AF28: 86 04        STX $04
+FD/AF2A: A5 06        LDA $06
+FD/AF2C: A6 0A        LDX $0A
+FD/AF2E: 9F 48 1C 00  STA $001C48,X
+FD/AF32: 7B           TDC
+FD/AF33: A8           TAY
+FD/AF34: A6 04        LDX $04
+FD/AF36: BF A7 06 CC  LDA $CC06A7,X
+FD/AF3A: 89 80        BIT #$80
+FD/AF3C: D0 07        BNE $AF45
+FD/AF3E: 0A           ASL
+FD/AF3F: C8           INY
+FD/AF40: C0 08        CPY #$08
+FD/AF42: 00 90        BRK $90
+FD/AF44: F5 B9        SBC $B9,X
+FD/AF46: BE B1 30     LDX $30B1,Y
+FD/AF49: 0F AA A9 80  ORA $80A9AA
+FD/AF4D: CA           DEX
+FD/AF4E: 30 03        BMI $AF53
+FD/AF50: 4A           LSR
+FD/AF51: 80 FA        BRA $AF4D
+FD/AF53: A6 0A        LDX $0A
+FD/AF55: 9F 4C 1C 00  STA $001C4C,X
+FD/AF59: A6 02        LDX $02
+FD/AF5B: A9 80        LDA #$80
+FD/AF5D: A6 0A        LDX $0A
+FD/AF5F: 9D 4A 1C     STA $1C4A,X
+FD/AF62: A9 01        LDA #$01
+FD/AF64: 9D 4B 1C     STA $1C4B,X
+FD/AF67: C2 20        REP #$20
+FD/AF69: A5 0A        LDA $0A
+FD/AF6B: 18           CLC
+FD/AF6C: 69 05 00     ADC #$0005
+FD/AF6F: 85 0A        STA $0A
+FD/AF71: 7B           TDC
+FD/AF72: E2 20        SEP #$20
+FD/AF74: E6 02        INC $02
+FD/AF76: A5 02        LDA $02
+FD/AF78: C9 03        CMP #$03
+FD/AF7A: B0 03        BCS $AF7F
+FD/AF7C: 4C 04 AF     JMP $AF04
+FD/AF7F: 6B           RTL

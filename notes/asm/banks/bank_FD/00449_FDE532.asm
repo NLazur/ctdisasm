@@ -1,0 +1,37 @@
+FD/E532: B9 22 05     LDA $0522,Y
+FD/E535: 0A           ASL
+FD/E536: 85 12        STA $12
+FD/E538: 64 13        STZ $13
+FD/E53A: B9 21 05     LDA $0521,Y
+FD/E53D: C2 21        REP #$21
+FD/E53F: 0A           ASL
+FD/E540: AA           TAX
+FD/E541: 65 12        ADC $12
+FD/E543: 85 10        STA $10
+FD/E545: E2 20        SEP #$20
+FD/E547: A9 7E        LDA #$7E
+FD/E549: 48           PHA
+FD/E54A: AB           PLB
+FD/E54B: C2 20        REP #$20
+FD/E54D: BD 00 20     LDA $2000,X
+FD/E550: 85 0C        STA $0C
+FD/E552: BD 00 22     LDA $2200,X
+FD/E555: 85 0E        STA $0E
+FD/E557: BD 02 20     LDA $2002,X
+FD/E55A: 9D 00 20     STA $2000,X
+FD/E55D: BD 02 22     LDA $2202,X
+FD/E560: 9D 00 22     STA $2200,X
+FD/E563: E8           INX
+FD/E564: E8           INX
+FD/E565: E4 10        CPX $10
+FD/E567: D0 EE        BNE $E557
+FD/E569: A5 0C        LDA $0C
+FD/E56B: 9D 00 20     STA $2000,X
+FD/E56E: A5 0E        LDA $0E
+FD/E570: 9D 00 22     STA $2200,X
+FD/E573: A9 00 00     LDA #$0000
+FD/E576: E2 20        SEP #$20
+FD/E578: 7B           TDC
+FD/E579: 48           PHA
+FD/E57A: AB           PLB
+FD/E57B: 60           RTS

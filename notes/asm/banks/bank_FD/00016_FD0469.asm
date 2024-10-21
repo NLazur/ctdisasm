@@ -1,0 +1,65 @@
+FD/0469: 61 62        ADC ($62,X)
+FD/046B: 63 64        ADC $64,S
+FD/046D: 65 81        ADC $81
+FD/046F: 82 00 73     BRL $FD7772
+FD/0472: 74 75        STZ $75,X
+FD/0474: 00 70        BRK $70
+FD/0476: 66 90        ROR $90
+FD/0478: 00 00        BRK $00
+FD/047A: 00 85        BRK $85
+FD/047C: 27 28        AND [$28]
+FD/047E: 29 00 00     AND #$0000
+FD/0481: 47 00        EOR [$00]
+FD/0483: 83 84        STA $84,S
+FD/0485: 00 00        BRK $00
+FD/0487: 80 76        BRA $04FF
+FD/0489: 01 00        ORA ($00,X)
+FD/048B: 20 00 86     JSR $8600
+FD/048E: 37 38        AND [$38],Y
+FD/0490: 39 5D 00     AND $005D,Y
+FD/0493: 07 08        ORA [$08]
+FD/0495: 00 09        BRK $09
+FD/0497: 00 0A        BRK $0A
+FD/0499: 0B           PHD
+FD/049A: 0C 00 0D     TSB $0D00
+FD/049D: 0E 08 0F     ASL $0F08
+FD/04A0: 00 D0        BRK $D0
+FD/04A2: 01 00        ORA ($00,X)
+FD/04A4: 17 18        ORA [$18],Y
+FD/04A6: 19 00 80     ORA $8000,Y
+FD/04A9: 1A           INC
+FD/04AA: 1B           TCS
+FD/04AB: 1C 00 1D     TRB $1D00
+FD/04AE: 1E 1F 10     ASL $101F,X
+FD/04B1: 10 00        BPL $04B3
+FD/04B3: 91 92        STA ($92),Y
+FD/04B5: 93 94        STA ($94,S),Y
+FD/04B7: 95 00        STA $00,X
+FD/04B9: B0 B1        BCS $046C
+FD/04BB: 00 B2        BRK $B2
+FD/04BD: B3 B4        LDA ($B4,S),Y
+FD/04BF: B5 00        LDA $00,X
+FD/04C1: 00 56        BRK $56
+FD/04C3: B6 00        LDX $00,Y
+FD/04C5: A1 A2        LDA ($A2,X)
+FD/04C7: A3 A4        LDA $A4,S
+FD/04C9: A5 00        LDA $00
+FD/04CB: C0 C1 00     CPY #$00C1
+FD/04CE: C2 C3        REP #$C3
+FD/04D0: C4 C5        CPY $C5
+FD/04D2: C6 00        DEC $00
+FD/04D4: 6E 6F 00     ROR $006F
+FD/04D7: B7 BD        LDA [$BD],Y
+FD/04D9: BF C7 C8 00  LDA $00C8C7,X
+FD/04DD: A0 7E 00     LDY #$007E
+FD/04E0: 7F 9E 9F BE  ADC $BE9F9E,X
+FD/04E4: A6 A7        LDX $A7
+FD/04E6: 87 00        STA [$00]
+FD/04E8: 00 8E        BRK $8E
+FD/04EA: 8F AE AF 00  STA $00AFAE
+FD/04EE: 00 96        BRK $96
+FD/04F0: 97 02        STA [$02],Y
+FD/04F2: 77 B9        ADC [$B9],Y
+FD/04F4: 20 68 69     JSR $6968
+FD/04F7: 6A           ROR
+FD/04F8: 6B           RTL

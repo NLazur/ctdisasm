@@ -1,0 +1,21 @@
+C7/2B87: B0 02        BCS $2B8B
+C7/2B89: C4 D7        CPY $D7
+C7/2B8B: CE 3F A8     DEC $A83F
+C7/2B8E: 07 CB        ORA [$CB]
+C7/2B90: F4 6F CD     PEA $CD6F
+C7/2B93: 00 F5        BRK $F5
+C7/2B95: 72 F1        ADC ($F1)
+C7/2B97: F0 1E        BEQ $2BB7
+C7/2B99: C4 8D        CPY $8D
+C7/2B9B: F5 73        SBC $73,X
+C7/2B9D: F1 C4        SBC ($C4),Y
+C7/2B9F: 8E F5 74     STX $74F5
+C7/2BA2: F1 C4        SBC ($C4),Y
+C7/2BA4: 8F F5 75 F1  STA $F175F5
+C7/2BA8: C4 90        CPY $90
+C7/2BAA: 4D 3F AC     EOR $AC3F
+C7/2BAD: 0B           PHD
+C7/2BAE: AE 60 88     LDX $8860
+C7/2BB1: 04 5D        TSB $5D
+C7/2BB3: C8           INY
+C7/2BB4: 40           RTI

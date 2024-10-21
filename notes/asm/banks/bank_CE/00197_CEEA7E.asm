@@ -1,0 +1,2 @@
+CE/EA7E: 20 82 EA     JSR $EA82
+CE/EA81: 6B           RTL

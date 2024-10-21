@@ -1,0 +1,76 @@
+C0/7A2A: 4A           LSR
+C0/7A2B: 25 20        AND $20
+C0/7A2D: 85 52        STA $52
+C0/7A2F: AA           TAX
+C0/7A30: BF C0 30 7E  LDA $7E30C0,X
+C0/7A34: 4A           LSR
+C0/7A35: 29 01        AND #$01
+C0/7A37: EB           XBA
+C0/7A38: BF 40 30 7E  LDA $7E3040,X
+C0/7A3C: C2 20        REP #$20
+C0/7A3E: 0A           ASL
+C0/7A3F: 0A           ASL
+C0/7A40: 0A           ASL
+C0/7A41: AA           TAX
+C0/7A42: BF 02 B0 7E  LDA $7EB002,X
+C0/7A46: E2 20        SEP #$20
+C0/7A48: 8D 80 21     STA $2180
+C0/7A4B: EB           XBA
+C0/7A4C: 8D 80 21     STA $2180
+C0/7A4F: C6 5C        DEC $5C
+C0/7A51: A5 54        LDA $54
+C0/7A53: EB           XBA
+C0/7A54: A5 52        LDA $52
+C0/7A56: 1A           INC
+C0/7A57: 25 20        AND $20
+C0/7A59: 85 52        STA $52
+C0/7A5B: AA           TAX
+C0/7A5C: BF C0 30 7E  LDA $7E30C0,X
+C0/7A60: 4A           LSR
+C0/7A61: 29 01        AND #$01
+C0/7A63: EB           XBA
+C0/7A64: BF 40 30 7E  LDA $7E3040,X
+C0/7A68: C2 20        REP #$20
+C0/7A6A: 0A           ASL
+C0/7A6B: 0A           ASL
+C0/7A6C: 0A           ASL
+C0/7A6D: AA           TAX
+C0/7A6E: BF 00 B0 7E  LDA $7EB000,X
+C0/7A72: E2 20        SEP #$20
+C0/7A74: 8D 80 21     STA $2180
+C0/7A77: EB           XBA
+C0/7A78: 8D 80 21     STA $2180
+C0/7A7B: BF 02 B0 7E  LDA $7EB002,X
+C0/7A7F: 8D 80 21     STA $2180
+C0/7A82: BF 03 B0 7E  LDA $7EB003,X
+C0/7A86: 8D 80 21     STA $2180
+C0/7A89: A5 52        LDA $52
+C0/7A8B: 1A           INC
+C0/7A8C: 25 20        AND $20
+C0/7A8E: 85 52        STA $52
+C0/7A90: C6 5C        DEC $5C
+C0/7A92: F0 07        BEQ $7A9B
+C0/7A94: A5 54        LDA $54
+C0/7A96: EB           XBA
+C0/7A97: A5 52        LDA $52
+C0/7A99: 80 C0        BRA $7A5B
+C0/7A9B: A5 54        LDA $54
+C0/7A9D: EB           XBA
+C0/7A9E: A5 52        LDA $52
+C0/7AA0: AA           TAX
+C0/7AA1: BF C0 30 7E  LDA $7E30C0,X
+C0/7AA5: 4A           LSR
+C0/7AA6: 29 01        AND #$01
+C0/7AA8: EB           XBA
+C0/7AA9: BF 40 30 7E  LDA $7E3040,X
+C0/7AAD: C2 20        REP #$20
+C0/7AAF: 0A           ASL
+C0/7AB0: 0A           ASL
+C0/7AB1: 0A           ASL
+C0/7AB2: AA           TAX
+C0/7AB3: BF 02 B0 7E  LDA $7EB002,X
+C0/7AB7: E2 20        SEP #$20
+C0/7AB9: 8D 80 21     STA $2180
+C0/7ABC: EB           XBA
+C0/7ABD: 8D 80 21     STA $2180
+C0/7AC0: 60           RTS

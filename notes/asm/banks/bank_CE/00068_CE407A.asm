@@ -1,0 +1,328 @@
+CE/407A: FF 40 21 41  SBC $412140,X
+CE/407E: 41 41        EOR ($41,X)
+CE/4080: 68           PLA
+CE/4081: 41 C0        EOR ($C0,X)
+CE/4083: 41 15        EOR ($15,X)
+CE/4085: 42 65        WDM $65
+CE/4087: 42 B8        WDM $B8
+CE/4089: 42 ED        WDM $ED
+CE/408B: 42 85        WDM $85
+CE/408D: 09 93 09     ORA #$0993
+CE/4090: 0C 22 10     TSB $1022
+CE/4093: 01 24        ORA ($24,X)
+CE/4095: 03 20        ORA $20,S
+CE/4097: 1E 72 15     ASL $1572,X
+CE/409A: 06 05        ASL $05
+CE/409C: 69 00 6B     ADC #$6B00
+CE/409F: 04 03        TSB $03
+CE/40A1: 4E 69 07     LSR $0769
+CE/40A4: 20 0A 03     JSR $030A
+CE/40A7: 47 03        EOR [$03]
+CE/40A9: 47 6D        EOR [$6D]
+CE/40AB: 69 07 02     ADC #$0207
+CE/40AE: 39 24 05     AND $0524,Y
+CE/40B1: 23 03        AND $03,S
+CE/40B3: 2D 80 02     AND $0280
+CE/40B6: 9B           TXY
+CE/40B7: 02 06        COP $06
+CE/40B9: 12 13        ORA ($13)
+CE/40BB: 27 98        AND [$98]
+CE/40BD: 00 2D        BRK $2D
+CE/40BF: 28           PLP
+CE/40C0: 72 0D        ADC ($0D)
+CE/40C2: 06 41        ASL $41
+CE/40C4: 20 1E 36     JSR $361E
+CE/40C7: 77 40        ADC [$40],Y
+CE/40C9: 7A           PLY
+CE/40CA: 5B           TCD
+CE/40CB: 00 03        BRK $03
+CE/40CD: 3C 02 06     BIT $0602,X
+CE/40D0: 0C 27 98     TSB $9827
+CE/40D3: 00 2A        BRK $2A
+CE/40D5: 28           PLP
+CE/40D6: 72 0D        ADC ($0D)
+CE/40D8: 03 39        ORA $39,S
+CE/40DA: 03 39        ORA $39,S
+CE/40DC: 1E 2A 36     ASL $362A,X
+CE/40DF: 6A           ROR
+CE/40E0: 2D 80 12     AND $1280
+CE/40E3: 9B           TXY
+CE/40E4: 20 0A 69     JSR $690A
+CE/40E7: 07 20        ORA [$20]
+CE/40E9: 0A           ASL
+CE/40EA: 6A           ROR
+CE/40EB: 20 0A 69     JSR $690A
+CE/40EE: 07 20        ORA [$20]
+CE/40F0: 0A           ASL
+CE/40F1: 6A           ROR
+CE/40F2: 20 05 69     JSR $6905
+CE/40F5: 07 20        ORA [$20]
+CE/40F7: 05 6A        ORA $6A
+CE/40F9: 24 08        BIT $08
+CE/40FB: 50 2E        BVC $412B
+CE/40FD: 01 00        ORA ($00,X)
+CE/40FF: 2D 80 02     AND $0280
+CE/4102: D8           CLD
+CE/4103: 72 0A        ADC ($0A)
+CE/4105: 06 1D        ASL $1D
+CE/4107: 36 20        ROL $20,X
+CE/4109: 0C 03 10     TSB $1003
+CE/410C: 02 22        COP $22
+CE/410E: 24 03        BIT $03
+CE/4110: 20 0A 3D     JSR $3D0A
+CE/4113: 00 34        BRK $34
+CE/4115: 1B           TCS
+CE/4116: 78           SEI
+CE/4117: 6E 22 1B     ROR $1B22
+CE/411A: 00 36        BRK $36
+CE/411C: 24 05        BIT $05
+CE/411E: 06 03        ASL $03
+CE/4120: 00 24        BRK $24
+CE/4122: 06 03        ASL $03
+CE/4124: 05 69        ORA $69
+CE/4126: 07 20        ORA [$20]
+CE/4128: 05 72        ORA $72
+CE/412A: 0A           ASL
+CE/412B: 03 05        ORA $05,S
+CE/412D: 20 05 72     JSR $7205
+CE/4130: 0A           ASL
+CE/4131: 03 05        ORA $05,S
+CE/4133: 20 05 6A     JSR $6A05
+CE/4136: 72 0A        ADC ($0A)
+CE/4138: 03 05        ORA $05,S
+CE/413A: 6A           ROR
+CE/413B: 06 03        ASL $03
+CE/413D: 24 07        BIT $07
+CE/413F: 36 00        ROL $00,X
+CE/4141: 1B           TCS
+CE/4142: 03 72        ORA $72,S
+CE/4144: 03 73        ORA $73,S
+CE/4146: 03 76        ORA $76,S
+CE/4148: 00 03        BRK $03
+CE/414A: 0D A8 05     ORA $05A8
+CE/414D: 44 41 1E     MVP $41,$1E
+CE/4150: 00 41        BRK $41
+CE/4152: 1F 01 1B 28  ORA $281B01,X
+CE/4156: 02 03        COP $03
+CE/4158: 76 13        ROR $13,X
+CE/415A: 0C 0B A8     TSB $A80B
+CE/415D: 05 44        ORA $44
+CE/415F: 41 1E        EOR ($1E,X)
+CE/4161: 06 41        ASL $41
+CE/4163: 1F 07 34 10  ORA $103407,X
+CE/4167: 00 1B        BRK $1B
+CE/4169: 01 72        ORA ($72,X)
+CE/416B: 03 73        ORA $73,S
+CE/416D: 01 74        ORA ($74,X)
+CE/416F: 01 76        ORA ($76,X)
+CE/4171: 01 00        ORA ($00,X)
+CE/4173: 61 02        ADC ($02,X)
+CE/4175: 00 03        BRK $03
+CE/4177: 02 01        COP $01
+CE/4179: 0A           ASL
+CE/417A: 24 01        BIT $01
+CE/417C: 77 1E        ADC [$1E],Y
+CE/417E: 70 A8        BVS $4128
+CE/4180: 0C 78 71     TSB $7178
+CE/4183: 20 02 1E     JSR $1E02
+CE/4186: 3B           TSC
+CE/4187: 71 24        ADC ($24),Y
+CE/4189: 02 1B        COP $1B
+CE/418B: 09 24 03     ORA #$0324
+CE/418E: 20 0F 73     JSR $730F
+CE/4191: 03 33        ORA $33,S
+CE/4193: 09 3A 1E     ORA #$1E3A
+CE/4196: 08           PHP
+CE/4197: 3A           DEC
+CE/4198: 1F FA 1A 35  ORA $351AFA,X
+CE/419C: 78           SEI
+CE/419D: 6A           ROR
+CE/419E: 03 02        ORA $02,S
+CE/41A0: 09 02 00     ORA #$0002
+CE/41A3: 85 40        STA $40
+CE/41A5: 73 03        ADC ($03,S),Y
+CE/41A7: 24 06        BIT $06
+CE/41A9: 43 09        EOR $09,S
+CE/41AB: 03 00        ORA $00,S
+CE/41AD: 41 1E        EOR ($1E,X)
+CE/41AF: 02 41        COP $41
+CE/41B1: 1F 03 1B 2B  ORA $2B1B03,X
+CE/41B5: 70 A8        BVS $415F
+CE/41B7: 04 1B        TSB $1B
+CE/41B9: 2B           PLD
+CE/41BA: 77 08        ADC [$08],Y
+CE/41BC: A8           TAY
+CE/41BD: 04 71        TSB $71
+CE/41BF: 00 1B        BRK $1B
+CE/41C1: 01 72        ORA ($72,X)
+CE/41C3: 03 73        ORA $73,S
+CE/41C5: 01 74        ORA ($74,X)
+CE/41C7: 01 76        ORA ($76,X)
+CE/41C9: 01 00        ORA ($00,X)
+CE/41CB: 0A           ASL
+CE/41CC: 02 01        COP $01
+CE/41CE: 24 01        BIT $01
+CE/41D0: 77 62        ADC [$62],Y
+CE/41D2: 70 A8        BVS $417C
+CE/41D4: 0C 1E 3C     TSB $3C1E
+CE/41D7: 71 24        ADC ($24),Y
+CE/41D9: 02 20        COP $20
+CE/41DB: 03 33        ORA $33,S
+CE/41DD: 09 3A 1E     ORA #$1E3A
+CE/41E0: FB           XCE
+CE/41E1: 3A           DEC
+CE/41E2: 1F 03 1A 36  ORA $361A03,X
+CE/41E6: 24 03        BIT $03
+CE/41E8: 20 0F 73     JSR $730F
+CE/41EB: 00 23        BRK $23
+CE/41ED: 01 35        ORA ($35,X)
+CE/41EF: 78           SEI
+CE/41F0: 6A           ROR
+CE/41F1: 03 03        ORA $03,S
+CE/41F3: 0A           ASL
+CE/41F4: 02 00        COP $00
+CE/41F6: 85 40        STA $40
+CE/41F8: 73 03        ADC ($03,S),Y
+CE/41FA: 24 06        BIT $06
+CE/41FC: 20 01 43     JSR $4301
+CE/41FF: 09 FD FB     ORA #$FBFD
+CE/4202: 41 1E        EOR ($1E,X)
+CE/4204: 04 41        TSB $41
+CE/4206: 1F 05 1B 2C  ORA $2C1B05,X
+CE/420A: 70 A8        BVS $41B4
+CE/420C: 08           PHP
+CE/420D: 1B           TCS
+CE/420E: 2C 77 F8     BIT $F877
+CE/4211: A8           TAY
+CE/4212: 05 71        ORA $71
+CE/4214: 00 1B        BRK $1B
+CE/4216: 01 72        ORA ($72,X)
+CE/4218: 03 73        ORA $73,S
+CE/421A: 01 74        ORA ($74,X)
+CE/421C: 01 76        ORA ($76,X)
+CE/421E: 01 00        ORA ($00,X)
+CE/4220: 0A           ASL
+CE/4221: 20 02 02     JSR $0202
+CE/4224: 01 24        ORA ($24,X)
+CE/4226: 01 77        ORA ($77,X)
+CE/4228: A2 70        LDX #$70
+CE/422A: A8           TAY
+CE/422B: 0C 1E 3B     TSB $3B1E
+CE/422E: 71 24        ADC ($24),Y
+CE/4230: 03 20        ORA $20,S
+CE/4232: 1E 73 00     ASL $0073,X
+CE/4235: 23 02        AND $02,S
+CE/4237: 1B           TCS
+CE/4238: 00 03        BRK $03
+CE/423A: 02 33        COP $33
+CE/423C: 09 3A 1E     ORA #$1E3A
+CE/423F: F8           SED
+CE/4240: 3A           DEC
+CE/4241: 1F F8 1A 35  ORA $351AF8,X
+CE/4245: 20 03 78     JSR $7803
+CE/4248: 6A           ROR
+CE/4249: 03 03        ORA $03,S
+CE/424B: 43 0C        EOR $0C,S
+CE/424D: FD FB 1A     SBC $1AFB,X
+CE/4250: 24 06        BIT $06
+CE/4252: 03 03        ORA $03,S
+CE/4254: 20 0A 03     JSR $030A
+CE/4257: 03 A8        ORA $A8,S
+CE/4259: 02 20        COP $20
+CE/425B: 0A           ASL
+CE/425C: 03 03        ORA $03,S
+CE/425E: 20 0A A8     JSR $A80A
+CE/4261: 02 03        COP $03
+CE/4263: 02 00        COP $00
+CE/4265: 1B           TCS
+CE/4266: 01 72        ORA ($72,X)
+CE/4268: 03 73        ORA $73,S
+CE/426A: 01 74        ORA ($74,X)
+CE/426C: 01 76        ORA ($76,X)
+CE/426E: 01 00        ORA ($00,X)
+CE/4270: 0A           ASL
+CE/4271: 20 05 02     JSR $0205
+CE/4274: 01 24        ORA ($24,X)
+CE/4276: 01 77        ORA ($77,X)
+CE/4278: DE 70 A8     DEC $A870,X
+CE/427B: 0C 20 06     TSB $0620
+CE/427E: 1E 3C 71     ASL $713C,X
+CE/4281: 36 24        ROL $24,X
+CE/4283: 03 20        ORA $20,S
+CE/4285: 1E 73 03     ASL $0373,X
+CE/4288: 23 03        AND $03,S
+CE/428A: 33 00        AND ($00,S),Y
+CE/428C: 3A           DEC
+CE/428D: 1E 0A 3A     ASL $3A0A,X
+CE/4290: 1F FC 1A 20  ORA $201AFC,X
+CE/4294: 0A           ASL
+CE/4295: 78           SEI
+CE/4296: 6A           ROR
+CE/4297: 03 03        ORA $03,S
+CE/4299: 36 43        ROL $43,X
+CE/429B: 0C 05 F6     TSB $F605
+CE/429E: 1A           INC
+CE/429F: 24 06        BIT $06
+CE/42A1: 73 00        ADC ($00,S),Y
+CE/42A3: 20 14 03     JSR $0314
+CE/42A6: 02 20        COP $20
+CE/42A8: 0A           ASL
+CE/42A9: 03 03        ORA $03,S
+CE/42AB: A8           TAY
+CE/42AC: 02 03        COP $03
+CE/42AE: 01 A8        ORA ($A8,X)
+CE/42B0: 03 03        ORA $03,S
+CE/42B2: 01 A8        ORA ($A8,X)
+CE/42B4: 02 03        COP $03
+CE/42B6: 01 00        ORA ($00,X)
+CE/42B8: 1B           TCS
+CE/42B9: 01 72        ORA ($72,X)
+CE/42BB: 03 73        ORA $73,S
+CE/42BD: 01 74        ORA ($74,X)
+CE/42BF: 01 09        ORA ($09,X)
+CE/42C1: 20 01 02     JSR $0201
+CE/42C4: 01 24        ORA ($24,X)
+CE/42C6: 01 85        ORA ($85,X)
+CE/42C8: BE 70 20     LDX $2070,Y
+CE/42CB: 02 A8        COP $A8
+CE/42CD: 0C 20 02     TSB $0220
+CE/42D0: 1E 3B 71     ASL $713B,X
+CE/42D3: 43 0C        EOR $0C,S
+CE/42D5: 01 F1        ORA ($F1,X)
+CE/42D7: 1A           INC
+CE/42D8: 24 06        BIT $06
+CE/42DA: 73 00        ADC ($00,S),Y
+CE/42DC: 20 0A 03     JSR $030A
+CE/42DF: 02 20        COP $20
+CE/42E1: 1E 03 02     ASL $0203,X
+CE/42E4: 20 0A 03     JSR $030A
+CE/42E7: 03 20        ORA $20,S
+CE/42E9: 0A           ASL
+CE/42EA: 03 03        ORA $03,S
+CE/42EC: 00 1B        BRK $1B
+CE/42EE: 01 72        ORA ($72,X)
+CE/42F0: 03 73        ORA $73,S
+CE/42F2: 01 74        ORA ($74,X)
+CE/42F4: 01 0A        ORA ($0A,X)
+CE/42F6: 20 04 02     JSR $0204
+CE/42F9: 01 24        ORA ($24,X)
+CE/42FB: 01 85        ORA ($85,X)
+CE/42FD: 7E 70 20     ROR $2070,X
+CE/4300: 03 A8        ORA $A8,S
+CE/4302: 0C 20 03     TSB $0320
+CE/4305: 1E 3C 71     ASL $713C,X
+CE/4308: 00 D8        BRK $D8
+CE/430A: E0 C0        CPX #$C0
+CE/430C: 00 1F        BRK $1F
+CE/430E: 43 3B        EOR $3B,S
+CE/4310: 43 A7        EOR $A7,S
+CE/4312: 43 B7        EOR $B7,S
+CE/4314: 43 BC        EOR $BC,S
+CE/4316: 43 D5        EOR $D5,S
+CE/4318: 43 23        EOR $23,S
+CE/431A: 44 85 09     MVP $85,$09
+CE/431D: 93 09        STA ($09,S),Y
+CE/431F: 72 0B        ADC ($0B)
+CE/4321: 03 13        ORA $13,S
+CE/4323: 20 05 06     JSR $0605
+CE/4326: 40           RTI

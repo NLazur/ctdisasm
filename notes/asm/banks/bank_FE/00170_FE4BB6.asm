@@ -1,0 +1,73 @@
+FE/4BB6: 9C 73 FF     STZ $FF73
+FE/4BB9: 7F 29 25 FF  ADC $FF2529,X
+FE/4BBD: 67 BF        ADC [$BF]
+FE/4BBF: 2F BF 0E E7  AND $E70EBF
+FE/4BC3: 42 C2        WDM $C2
+FE/4BC5: 29 62 25     AND #$2562
+FE/4BC8: BF 01 3A 01  LDA $013A01,X
+FE/4BCC: B6 00        LDX $00,Y
+FE/4BCE: 51 00        EOR ($00),Y
+FE/4BD0: 0E 00 0A     ASL $0A00
+FE/4BD3: 00 08        BRK $08
+FE/4BD5: 00 04        BRK $04
+FE/4BD7: 00 05        BRK $05
+FE/4BD9: 19 02 00     ORA $0002,Y
+FE/4BDC: 05 06        ORA $06
+FE/4BDE: 07 00        ORA [$00]
+FE/4BE0: 0A           ASL
+FE/4BE1: 0B           PHD
+FE/4BE2: 0C 0D 0E     TSB $0E0D
+FE/4BE5: 00 0F        BRK $0F
+FE/4BE7: 20 21 22     JSR $2221
+FE/4BEA: 12 13        ORA ($13)
+FE/4BEC: 15 16        ORA $16,X
+FE/4BEE: 17 18        ORA [$18],Y
+FE/4BF0: 1A           INC
+FE/4BF1: 1B           TCS
+FE/4BF2: 1C 1D 1E     TRB $1E1D
+FE/4BF5: 07 1F        ORA [$1F]
+FE/4BF7: 30 31        BMI $4C2A
+FE/4BF9: 32 23        AND ($23)
+FE/4BFB: 24 25        BIT $25
+FE/4BFD: 00 01        BRK $01
+FE/4BFF: 01 00        ORA ($00,X)
+FE/4C01: 00 01        BRK $01
+FE/4C03: 27 28        AND [$28]
+FE/4C05: 29 2A 00     AND #$002A
+FE/4C08: 00 00        BRK $00
+FE/4C0A: 33 34        AND ($34,S),Y
+FE/4C0C: 35 36        AND $36,X
+FE/4C0E: 01 01        ORA ($01,X)
+FE/4C10: 00 00        BRK $00
+FE/4C12: 01 37        ORA ($37,X)
+FE/4C14: 38           SEC
+FE/4C15: 39 3A 00     AND $003A,Y
+FE/4C18: 00 00        BRK $00
+FE/4C1A: 01 10        ORA ($10,X)
+FE/4C1C: 01 01        ORA ($01,X)
+FE/4C1E: 21 2B        AND ($2B,X)
+FE/4C20: 2C 2D 00     BIT $002D
+FE/4C23: 00 01        BRK $01
+FE/4C25: 21 2F        AND ($2F,X)
+FE/4C27: 11 09        ORA ($09),Y
+FE/4C29: 00 01        BRK $01
+FE/4C2B: 08           PHP
+FE/4C2C: 26 01        ROL $01
+FE/4C2E: 01 3B        ORA ($3B,X)
+FE/4C30: 3C 3D 3E     BIT $3E3D,X
+FE/4C33: 00 01        BRK $01
+FE/4C35: 32 3F        AND ($3F)
+FE/4C37: 04 2E        TSB $2E
+FE/4C39: 03 CA        ORA $CA,S
+FE/4C3B: 06 76        ASL $76
+FE/4C3D: 00 01        BRK $01
+FE/4C3F: F0 04        BEQ $4C45
+FE/4C41: B0 FF        BCS $4C42
+FE/4C43: 02 C0        COP $C0
+FE/4C45: 01 F0        ORA ($F0,X)
+FE/4C47: 09 60 80     ORA #$8060
+FE/4C4A: 88           DEY
+FE/4C4B: 80 C0        BRA $4C0D
+FE/4C4D: C0 14 F0     CPY #$F014
+FE/4C50: 80 80        BRA $4BD2
+FE/4C52: 40           RTI

@@ -1,0 +1,192 @@
+D1/750B: 00 84        BRK $84
+D1/750D: 8E 50 19     STX $1950
+D1/7510: 03 FF        ORA $FF,S
+D1/7512: 00 08        BRK $08
+D1/7514: 12 83        ORA ($83)
+D1/7516: 3F 00 84 8E  AND $8E8400,X
+D1/751A: 50 19        BVC $7535
+D1/751C: 03 FF        ORA $FF,S
+D1/751E: FF 08 12 91  SBC $911208,X
+D1/7522: 08           PHP
+D1/7523: A2 FF        LDX #$FF
+D1/7525: 01 93        ORA ($93,X)
+D1/7527: 13 02        ORA ($02,S),Y
+D1/7529: 04 95        TSB $95
+D1/752B: 03 D2        ORA $D2,S
+D1/752D: 00 88        BRK $88
+D1/752F: 00 01        BRK $01
+D1/7531: 9D 17 88     STA $8817,X
+D1/7534: 00 D2        BRK $D2
+D1/7536: 00 AC        BRK $AC
+D1/7538: 00 00        BRK $00
+D1/753A: 7F A9 1A 0A  ADC $0A1AA9,X
+D1/753E: 9D 13 88     STA $8813,X
+D1/7541: 00 17        BRK $17
+D1/7543: 88           DEY
+D1/7544: 00 17        BRK $17
+D1/7546: 95 00        STA $00,X
+D1/7548: B9 0C AA     LDA $AA0C,Y
+D1/754B: 03 82        ORA $82,S
+D1/754D: 7F 82 7F 82  ADC $827F82,X
+D1/7551: DF 82 D7 93  CMP $93D782,X
+D1/7555: 13 02        ORA ($02,S),Y
+D1/7557: 04 7F        TSB $7F
+D1/7559: 9D 17 83     STA $8317,X
+D1/755C: 3B           TSC
+D1/755D: 00 84        BRK $84
+D1/755F: 8E 50 19     STX $1950
+D1/7562: 03 FF        ORA $FF,S
+D1/7564: 00 08        BRK $08
+D1/7566: 12 83        ORA ($83)
+D1/7568: 3B           TSC
+D1/7569: 00 84        BRK $84
+D1/756B: 8E 50 19     STX $1950
+D1/756E: 03 FF        ORA $FF,S
+D1/7570: FF 08 12 91  SBC $911208,X
+D1/7574: 08           PHP
+D1/7575: A2 FF        LDX #$FF
+D1/7577: 01 8E        ORA ($8E,X)
+D1/7579: 51 10        EOR ($10),Y
+D1/757B: 09 FF        ORA #$FF
+D1/757D: 00 11        BRK $11
+D1/757F: 02 8E        COP $8E
+D1/7581: 51 20        EOR ($20),Y
+D1/7583: 28           PLP
+D1/7584: FF 00 12 02  SBC $021200,X
+D1/7588: 8E 51 48     STX $4851
+D1/758B: 38           SEC
+D1/758C: FF 00 13 12  SBC $121300,X
+D1/7590: 8A           TXA
+D1/7591: 20 80 78     JSR $7880
+D1/7594: 5A           PHY
+D1/7595: 95 03        STA $03,X
+D1/7597: 88           DEY
+D1/7598: 00 8B        BRK $8B
+D1/759A: 00 00        BRK $00
+D1/759C: 8B           PHB
+D1/759D: 00 00        BRK $00
+D1/759F: 82 8F 93     BRL $D10931
+D1/75A2: 13 02        ORA ($02,S),Y
+D1/75A4: 04 8E        TSB $8E
+D1/75A6: 50 19        BVC $75C1
+D1/75A8: 03 00        ORA $00,S
+D1/75AA: FF 08 01 9D  SBC $9D0108,X
+D1/75AE: 17 91        ORA [$91],Y
+D1/75B0: DF 75 91 DF  CMP $DF9175,X
+D1/75B4: 75 91        ADC $91,X
+D1/75B6: DF 75 8E 50  CMP $508E75,X
+D1/75BA: 19 03 FF     ORA $FF03,Y
+D1/75BD: 00 08        BRK $08
+D1/75BF: 01 8E        ORA ($8E,X)
+D1/75C1: 51 10        EOR ($10),Y
+D1/75C3: 09 00        ORA #$00
+D1/75C5: FF 09 02 8E  SBC $8E0209,X
+D1/75C9: 51 20        EOR ($20),Y
+D1/75CB: 28           PLP
+D1/75CC: 00 FF        BRK $FF
+D1/75CE: 0A           ASL
+D1/75CF: 02 8E        COP $8E
+D1/75D1: 51 48        EOR ($48),Y
+D1/75D3: 38           SEC
+D1/75D4: 00 FF        BRK $FF
+D1/75D6: 0B           PHD
+D1/75D7: 12 91        ORA ($91)
+D1/75D9: DF 75 91 08  CMP $089175,X
+D1/75DD: A2 FF        LDX #$FF
+D1/75DF: 85 09        STA $09
+D1/75E1: 82 9C 00     BRL $D17680
+D1/75E4: 82 9C 03     BRL $D17983
+D1/75E7: 82 9C 05     BRL $D17B86
+D1/75EA: 82 9C 06     BRL $D17C89
+D1/75ED: 82 7C 82     BRL $D1F86C
+D1/75F0: 7C 82 7C     JMP ($7C82,X)
+D1/75F3: 82 7C 82     BRL $D1F872
+D1/75F6: 9C 00 82     STZ $8200
+D1/75F9: 9C 03 82     STZ $8203
+D1/75FC: 9C 05 82     STZ $8205
+D1/75FF: 9C 06 82     STZ $8206
+D1/7602: 7C 82 7C     JMP ($7C82,X)
+D1/7605: 82 7C 82     BRL $D1F884
+D1/7608: 7C 86 92     JMP ($9286,X)
+D1/760B: 01 98        ORA ($98,X)
+D1/760D: 10 8A        BPL $7599
+D1/760F: 00 48        BRK $48
+D1/7611: 64 20        STZ $20
+D1/7613: 8A           TXA
+D1/7614: 01 B8        ORA ($B8,X)
+D1/7616: 64 20        STZ $20
+D1/7618: 95 0F        STA $0F,X
+D1/761A: 88           DEY
+D1/761B: 00 9D        BRK $9D
+D1/761D: 17 DE        ORA [$DE],Y
+D1/761F: 01 7F        ORA ($7F,X)
+D1/7621: 83 1F        STA $1F,S
+D1/7623: 88           DEY
+D1/7624: 00 8B        BRK $8B
+D1/7626: 00 8B        BRK $8B
+D1/7628: 01 17        ORA ($17,X)
+D1/762A: 88           DEY
+D1/762B: 00 8B        BRK $8B
+D1/762D: 00 8B        BRK $8B
+D1/762F: 01 00        ORA ($00,X)
+D1/7631: 84 83        STY $83
+D1/7633: 1F 88 00 89  ORA $890088,X
+D1/7637: 00 00        BRK $00
+D1/7639: 00 FF        BRK $FF
+D1/763B: 89 01        BIT #$01
+D1/763D: 00 00        BRK $00
+D1/763F: FF 8B 00 8B  SBC $8B008B,X
+D1/7643: 01 17        ORA ($17,X)
+D1/7645: 88           DEY
+D1/7646: 00 8B        BRK $8B
+D1/7648: 00 8B        BRK $8B
+D1/764A: 01 00        ORA ($00,X)
+D1/764C: 84 93        STY $93
+D1/764E: 13 02        ORA ($02,S),Y
+D1/7650: 04 BD        TSB $BD
+D1/7652: 30 BD        BMI $7611
+D1/7654: 31 8E        AND ($8E),Y
+D1/7656: 51 10        EOR ($10),Y
+D1/7658: 09 00        ORA #$00
+D1/765A: 00 11        BRK $11
+D1/765C: 02 8E        COP $8E
+D1/765E: 51 20        EOR ($20),Y
+D1/7660: 28           PLP
+D1/7661: 00 00        BRK $00
+D1/7663: 12 02        ORA ($02)
+D1/7665: 8E 51 48     STX $4851
+D1/7668: 38           SEC
+D1/7669: 00 00        BRK $00
+D1/766B: 13 12        ORA ($12,S),Y
+D1/766D: 88           DEY
+D1/766E: 00 83        BRK $83
+D1/7670: 12 89        ORA ($89)
+D1/7672: 00 00        BRK $00
+D1/7674: 00 06        BRK $06
+D1/7676: 89 01        BIT #$01
+D1/7678: 00 00        BRK $00
+D1/767A: 06 8B        ASL $8B
+D1/767C: 00 8B        BRK $8B
+D1/767E: 01 7F        ORA ($7F,X)
+D1/7680: 84 8B        STY $8B
+D1/7682: 00 8B        BRK $8B
+D1/7684: 01 8E        ORA ($8E,X)
+D1/7686: 50 19        BVC $76A1
+D1/7688: 03 FF        ORA $FF,S
+D1/768A: 00 08        BRK $08
+D1/768C: 01 83        ORA ($83,X)
+D1/768E: 1F 7F 84 8E  ORA $8E847F,X
+D1/7692: 51 10        EOR ($10),Y
+D1/7694: 09 00        ORA #$00
+D1/7696: FF 09 02 8E  SBC $8E0209,X
+D1/769A: 51 20        EOR ($20),Y
+D1/769C: 28           PLP
+D1/769D: 00 FF        BRK $FF
+D1/769F: 0A           ASL
+D1/76A0: 02 8E        COP $8E
+D1/76A2: 51 48        EOR ($48),Y
+D1/76A4: 38           SEC
+D1/76A5: 00 FF        BRK $FF
+D1/76A7: 0B           PHD
+D1/76A8: 12 83        ORA ($83)
+D1/76AA: 40           RTI

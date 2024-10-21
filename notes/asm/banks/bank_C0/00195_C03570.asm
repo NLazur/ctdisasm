@@ -1,0 +1,26 @@
+C0/3570: A5 2D        LDA $2D
+C0/3572: D0 06        BNE $357A
+C0/3574: A2 E0 7F     LDX #$7FE0
+C0/3577: 82 A4 F8     BRL $C02E1E
+C0/357A: A5 29        LDA $29
+C0/357C: D0 34        BNE $35B2
+C0/357E: A6 6D        LDX $6D
+C0/3580: BF 00 0A 7F  LDA $7F0A00,X
+C0/3584: D0 21        BNE $35A7
+C0/3586: A9 01        LDA #$01
+C0/3588: 9F 00 0A 7F  STA $7F0A00,X
+C0/358C: BB           TYX
+C0/358D: E8           INX
+C0/358E: BF 01 20 7F  LDA $7F2001,X
+C0/3592: 85 2A        STA $2A
+C0/3594: A5 6D        LDA $6D
+C0/3596: 85 2E        STA $2E
+C0/3598: 64 32        STZ $32
+C0/359A: A9 01        LDA #$01
+C0/359C: 85 29        STA $29
+C0/359E: 64 30        STZ $30
+C0/35A0: A9 20        LDA #$20
+C0/35A2: 14 54        TRB $54
+C0/35A4: BB           TYX
+C0/35A5: 18           CLC
+C0/35A6: 60           RTS

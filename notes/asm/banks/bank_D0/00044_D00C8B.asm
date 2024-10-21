@@ -1,0 +1,41 @@
+D0/0C8B: E0 C0 C0     CPX #$C0C0
+D0/0C8E: 80 80        BRA $0C10
+D0/0C90: 00 00        BRK $00
+D0/0C92: 00 00        BRK $00
+D0/0C94: 00 00        BRK $00
+D0/0C96: 00 00        BRK $00
+D0/0C98: 01 01        ORA ($01,X)
+D0/0C9A: 01 01        ORA ($01,X)
+D0/0C9C: 01 01        ORA ($01,X)
+D0/0C9E: 21 21        AND ($21,X)
+D0/0CA0: 18           CLC
+D0/0CA1: 19 13 1E     ORA $1E13,Y
+D0/0CA4: 07 08        ORA [$08]
+D0/0CA6: 0F 08 00 00  ORA $000008
+D0/0CAA: 80 80        BRA $0C2C
+D0/0CAC: 00 80        BRK $80
+D0/0CAE: 02 82        COP $82
+D0/0CB0: C4 46        CPY $46
+D0/0CB2: A0 66 DE     LDY #$DE66
+D0/0CB5: 3A           DEC
+D0/0CB6: F6 1A        INC $1A,X
+D0/0CB8: 04 04        TSB $04
+D0/0CBA: 06 06        ASL $06
+D0/0CBC: 02 03        COP $03
+D0/0CBE: 03 02        ORA $02,S
+D0/0CC0: 01 02        ORA ($02,X)
+D0/0CC2: 1B           TCS
+D0/0CC3: 1C 9F E0     TRB $E09F
+D0/0CC6: 7F 40 01 01  ADC $010140,X
+D0/0CCA: 02 03        COP $03
+D0/0CCC: 07 05        ORA [$05]
+D0/0CCE: 94 9A        STY $9A,X
+D0/0CD0: BE 62 FE     LDX $FE62,Y
+D0/0CD3: 02 F8        COP $F8
+D0/0CD5: 04 FC        TSB $FC
+D0/0CD7: 04 00        TSB $00
+D0/0CD9: 00 00        BRK $00
+D0/0CDB: 00 00        BRK $00
+D0/0CDD: 00 80        BRK $80
+D0/0CDF: 80 20        BRA $0D01
+D0/0CE1: 60           RTS

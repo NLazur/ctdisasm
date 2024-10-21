@@ -1,0 +1,85 @@
+C6/8D6B: B8           CLV
+C6/8D6C: 99 33 34     STA $3433,Y
+C6/8D6F: 23 23        AND $23,S
+C6/8D71: 05 26        ORA $26
+C6/8D73: 01 0A        ORA ($0A,X)
+C6/8D75: 83 09        STA $09,S
+C6/8D77: A4 35        LDY $35
+C6/8D79: 43 32        EOR $32,S
+C6/8D7B: 26 70        ROL $70
+C6/8D7D: 46 56        LSR $56
+C6/8D7F: CC CE 15     CPY $15CE
+C6/8D82: 01 DA        ORA ($DA,X)
+C6/8D84: 13 2A        ORA ($2A,S),Y
+C6/8D86: 04 CE        TSB $CE
+C6/8D88: 1C 07 30     TRB $3007
+C6/8D8B: 47 F8        EOR [$F8]
+C6/8D8D: C0 B8        CPY #$B8
+C6/8D8F: 5D 08 0A     EOR $0A08,X
+C6/8D92: 08           PHP
+C6/8D93: 19 00 1C     ORA $1C00,Y
+C6/8D96: 1A           INC
+C6/8D97: A1 09        LDA ($09,X)
+C6/8D99: 0A           ASL
+C6/8D9A: 23 35        AND $35,S
+C6/8D9C: 67 00        ADC [$00]
+C6/8D9E: 53 21        EOR ($21,S),Y
+C6/8DA0: 26 27        ROL $27
+C6/8DA2: BC CD CE     LDY $CECD,X
+C6/8DA5: 30 40        BMI $8DE7
+C6/8DA7: 65 32        ADC $32
+C6/8DA9: 15 60        ORA $60,X
+C6/8DAB: 05 17        ORA $17
+C6/8DAD: 4C 15 BE     JMP $BE15
+C6/8DB0: 03 E0        ORA $E0,S
+C6/8DB2: F9 08 B8     SBC $B808,Y
+C6/8DB5: 98           TYA
+C6/8DB6: 99 33 23     STA $2333,Y
+C6/8DB9: 18           CLC
+C6/8DBA: 1C 08 19     TRB $1908
+C6/8DBD: 19 DF 01     ORA $01DF,Y
+C6/8DC0: 00 4A        BRK $4A
+C6/8DC2: 0A           ASL
+C6/8DC3: 26 6F        ROL $6F
+C6/8DC5: 20 20 31     JSR $3120
+C6/8DC8: 36 37        ROL $37,X
+C6/8DCA: DC 4D 05     JMP [$054D]
+C6/8DCD: 20 21 A4     JSR $A421
+C6/8DD0: 24 13        BIT $13
+C6/8DD2: 62 00 06     PER $C693D5
+C6/8DD5: DC 49 02     JMP [$0249]
+C6/8DD8: BE 47 F8     LDX $F847,Y
+C6/8DDB: 21 09        AND ($09,X)
+C6/8DDD: B0 0D        BCS $8DEC
+C6/8DDF: 0E 23 23     ASL $2323
+C6/8DE2: 83 01        STA $01,S
+C6/8DE4: 28           PLP
+C6/8DE5: 29 A0        AND #$A0
+C6/8DE7: DF F9 DF 29  CMP $29DFF9,X
+C6/8DEB: 2A           ROL
+C6/8DEC: 23 04        AND $04,S
+C6/8DEE: 41 E1        EOR ($E1,X)
+C6/8DF0: 04 60        TSB $60
+C6/8DF2: CB           WAI
+C6/8DF3: 07 01        ORA [$01]
+C6/8DF5: 11 12        ORA ($12),Y
+C6/8DF7: 59 0A 0E     EOR $0E0A,Y
+C6/8DFA: 13 DC        ORA ($DC,S),Y
+C6/8DFC: 07 20        ORA [$20]
+C6/8DFE: FC 08 B8     JSR ($B808,X)
+C6/8E01: D9 09 24     CMP $2409,Y
+C6/8E04: 23 23        AND $23,S
+C6/8E06: 33 34        AND ($34,S),Y
+C6/8E08: 19 E8 01     ORA $01E8,Y
+C6/8E0B: 33 34        AND ($34,S),Y
+C6/8E0D: BE 0B 94     LDX $940B,Y
+C6/8E10: 1A           INC
+C6/8E11: 12 08        ORA ($08)
+C6/8E13: EA           NOP
+C6/8E14: A0 FE        LDY #$FE
+C6/8E16: FE 29 2A     INC $2A29,X
+C6/8E19: 15 87        ORA $87,X
+C6/8E1B: 09 DC        ORA #$DC
+C6/8E1D: 47 F8        EOR [$F8]
+C6/8E1F: 0B           PHD
+C6/8E20: 60           RTS

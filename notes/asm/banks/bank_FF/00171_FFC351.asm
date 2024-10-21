@@ -1,0 +1,156 @@
+FF/C351: 31 08        AND ($08),Y
+FF/C353: 10 97        BPL $C2EC
+FF/C355: 0E 76 BB     ASL $BB76
+FF/C358: 08           PHP
+FF/C359: 80 93        BRA $C2EE
+FF/C35B: 0E F9 B6     ASL $B6F9
+FF/C35E: 08           PHP
+FF/C35F: 80 96        BRA $C2F7
+FF/C361: 0E E5 BC     ASL $BCE5
+FF/C364: 08           PHP
+FF/C365: 99 9D 0E     STA $0E9D,Y
+FF/C368: 38           SEC
+FF/C369: BC FF 08     LDY $08FF,X
+FF/C36C: 00 3E        BRK $3E
+FF/C36E: 04 8B        TSB $8B
+FF/C370: 03 02        ORA $02,S
+FF/C372: 21 0E        AND ($0E,X)
+FF/C374: 04 04        TSB $04
+FF/C376: 8B           PHB
+FF/C377: 03 10        ORA $10,S
+FF/C379: 21 0E        AND ($0E,X)
+FF/C37B: 04 08        TSB $08
+FF/C37D: 00 4E        BRK $4E
+FF/C37F: 00 80        BRK $80
+FF/C381: 00 00        BRK $00
+FF/C383: 00 06        BRK $06
+FF/C385: 15 00        ORA $00,X
+FF/C387: 05 01        ORA $01
+FF/C389: 00 06        BRK $06
+FF/C38B: 26 00        ROL $00
+FF/C38D: 12 01        ORA ($01)
+FF/C38F: 00 FF        BRK $FF
+FF/C391: 08           PHP
+FF/C392: 00 2E        BRK $2E
+FF/C394: 06 25        ASL $25
+FF/C396: 00 17        BRK $17
+FF/C398: 27 00        AND [$00]
+FF/C39A: 08           PHP
+FF/C39B: 00 3E        BRK $3E
+FF/C39D: 02 02        COP $02
+FF/C39F: 02 02        COP $02
+FF/C3A1: 20 1C 0C     JSR $0C1C
+FF/C3A4: 04 8B        TSB $8B
+FF/C3A6: 03 16        ORA $16,S
+FF/C3A8: 02 08        COP $08
+FF/C3AA: 0A           ASL
+FF/C3AB: 0C 50 43     TSB $4350
+FF/C3AE: 00 29        BRK $29
+FF/C3B0: 0E D2 BB     ASL $BBD2
+FF/C3B3: 0C 20 43     TSB $4320
+FF/C3B6: 03 0D        ORA $0D,S
+FF/C3B8: 0E 4F BA     ASL $BA4F
+FF/C3BB: FF 08 00 2E  SBC $2E0008,X
+FF/C3BF: 00 00        BRK $00
+FF/C3C1: 30 00        BMI $C3C3
+FF/C3C3: 00 08        BRK $08
+FF/C3C5: 00 3E        BRK $3E
+FF/C3C7: 04 8B        TSB $8B
+FF/C3C9: 03 0A        ORA $0A,S
+FF/C3CB: 01 12        ORA ($12,X)
+FF/C3CD: 08           PHP
+FF/C3CE: 04 8B        TSB $8B
+FF/C3D0: 03 04        ORA $04,S
+FF/C3D2: 09 18 12     ORA #$1218
+FF/C3D5: 04 8B        TSB $8B
+FF/C3D7: 23 02        AND $02,S
+FF/C3D9: 2C 1C 06     BIT $061C
+FF/C3DC: 0C 10 43     TSB $4310
+FF/C3DF: 01 31        ORA ($31,X)
+FF/C3E1: 0E C7 BB     ASL $BBC7
+FF/C3E4: 0C 20 43     TSB $4320
+FF/C3E7: 00 2C        BRK $2C
+FF/C3E9: 0E C4 BA     ASL $BAC4
+FF/C3EC: 0C 30 43     TSB $4330
+FF/C3EF: 00 05        BRK $05
+FF/C3F1: 0E 87 BB     ASL $BB87
+FF/C3F4: 0C 40 43     TSB $4340
+FF/C3F7: 02 0D        COP $0D
+FF/C3F9: 0E C2 B9     ASL $B9C2
+FF/C3FC: 0C 50 43     TSB $4350
+FF/C3FF: 02 10        COP $10
+FF/C401: 0E 10 BA     ASL $BA10
+FF/C404: 0C 60 43     TSB $4360
+FF/C407: 00 2C        BRK $2C
+FF/C409: 0E CC BB     ASL $BBCC
+FF/C40C: 08           PHP
+FF/C40D: 80 93        BRA $C3A2
+FF/C40F: 0E 98 B5     ASL $B598
+FF/C412: 08           PHP
+FF/C413: 80 96        BRA $C3AB
+FF/C415: 0E C3 BC     ASL $BCC3
+FF/C418: 08           PHP
+FF/C419: 99 9D 0E     STA $0E9D,Y
+FF/C41C: 48           PHA
+FF/C41D: BC FF 08     LDY $08FF,X
+FF/C420: 00 2F        BRK $2F
+FF/C422: 06 3D        ASL $3D
+FF/C424: 00 14        BRK $14
+FF/C426: 01 00        ORA ($00,X)
+FF/C428: FF 08 00 2E  SBC $2E0008,X
+FF/C42C: 06 24        ASL $24
+FF/C42E: 00 0A        BRK $0A
+FF/C430: 03 80        ORA $80,S
+FF/C432: 08           PHP
+FF/C433: 00 3E        BRK $3E
+FF/C435: 04 8B        TSB $8B
+FF/C437: 03 02        ORA $02,S
+FF/C439: 10 1C        BPL $C457
+FF/C43B: 0A           ASL
+FF/C43C: 0C 20 43     TSB $4320
+FF/C43F: 02 0E        COP $0E
+FF/C441: 0E 1B BA     ASL $BA1B
+FF/C444: 08           PHP
+FF/C445: 80 93        BRA $C3DA
+FF/C447: 0E FA B7     ASL $B7FA
+FF/C44A: 08           PHP
+FF/C44B: 80 96        BRA $C3E3
+FF/C44D: 0E C3 BC     ASL $BCC3
+FF/C450: 08           PHP
+FF/C451: 99 9D 0E     STA $0E9D,Y
+FF/C454: 5E BC FF     LSR $FFBC,X
+FF/C457: D7 C4        CMP [$C4],Y
+FF/C459: ED C4 F4     SBC $F4C4
+FF/C45C: C4 03        CPY $03
+FF/C45E: C5 35        CMP $35
+FF/C460: C5 81        CMP $81
+FF/C462: C5 BE        CMP $BE
+FF/C464: C5 ED        CMP $ED
+FF/C466: C5 F4        CMP $F4
+FF/C468: C5 FD        CMP $FD
+FF/C46A: C5 5A        CMP $5A
+FF/C46C: C6 6E        DEC $6E
+FF/C46E: C6 83        DEC $83
+FF/C470: C6 98        DEC $98
+FF/C472: C6 A2        DEC $A2
+FF/C474: C6 5A        DEC $5A
+FF/C476: C7 65        CMP [$65]
+FF/C478: C7 87        CMP [$87]
+FF/C47A: C7 A6        CMP [$A6]
+FF/C47C: C7 A6        CMP [$A6]
+FF/C47E: C7 A6        CMP [$A6]
+FF/C480: C7 B3        CMP [$B3]
+FF/C482: C7 BE        CMP [$BE]
+FF/C484: C7 DF        CMP [$DF]
+FF/C486: C7 E0        CMP [$E0]
+FF/C488: C4 02        CPY $02
+FF/C48A: C8           INY
+FF/C48B: 02 C8        COP $C8
+FF/C48D: 11 C8        ORA ($C8),Y
+FF/C48F: 11 C8        ORA ($C8),Y
+FF/C491: 11 C8        ORA ($C8),Y
+FF/C493: 11 C8        ORA ($C8),Y
+FF/C495: 11 C8        ORA ($C8),Y
+FF/C497: 2B           PLD
+FF/C498: C8           INY
+FF/C499: 6B           RTL

@@ -1,0 +1,23 @@
+C0/E9AA: A2 00 BD     LDX #$BD00
+C0/E9AD: C0 0B        CPY #$0B
+C0/E9AF: 10 2A        BPL $E9DB
+C0/E9B1: BD C1 0B     LDA $0BC1,X
+C0/E9B4: 10 25        BPL $E9DB
+C0/E9B6: BD C2 0B     LDA $0BC2,X
+C0/E9B9: 10 20        BPL $E9DB
+C0/E9BB: A5 6D        LDA $6D
+C0/E9BD: 9D C0 0B     STA $0BC0,X
+C0/E9C0: 9D C1 0B     STA $0BC1,X
+C0/E9C3: 9D C2 0B     STA $0BC2,X
+C0/E9C6: 8A           TXA
+C0/E9C7: EB           XBA
+C0/E9C8: C2 20        REP #$20
+C0/E9CA: 29 00 FF     AND #$FF00
+C0/E9CD: 0A           ASL
+C0/E9CE: 18           CLC
+C0/E9CF: 69 00 38     ADC #$3800
+C0/E9D2: A6 6D        LDX $6D
+C0/E9D4: 9D 80 0D     STA $0D80,X
+C0/E9D7: E2 20        SEP #$20
+C0/E9D9: 38           SEC
+C0/E9DA: 60           RTS

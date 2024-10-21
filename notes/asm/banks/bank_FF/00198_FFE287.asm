@@ -1,0 +1,27 @@
+FF/E287: 5F 52 52 5F  EOR $5F5252,X
+FF/E28B: 4F FE 00 C3  EOR $C300FE
+FF/E28F: FA           PLX
+FF/E290: FD 00 ED     SBC $ED00,X
+FF/E293: F8           SED
+FF/E294: 07 FA        ORA [$FA]
+FF/E296: 07 FA        ORA [$FA]
+FF/E298: 07 FA        ORA [$FA]
+FF/E29A: EF 0A 00 FC  SBC $FC000A
+FF/E29E: 02 F2        COP $F2
+FF/E2A0: 08           PHP
+FF/E2A1: 08           PHP
+FF/E2A2: F8           SED
+FF/E2A3: F0 07        BEQ $E2AC
+FF/E2A5: 00 0C        BRK $0C
+FF/E2A7: 00 1C        BRK $1C
+FF/E2A9: 00 3F        BRK $3F
+FF/E2AB: 00 2C        BRK $2C
+FF/E2AD: 10 E7        BPL $E296
+FF/E2AF: 18           CLC
+FF/E2B0: 81 7E        STA ($7E,X)
+FF/E2B2: 7E 3C 00     ROR $003C,X
+FF/E2B5: 03 0F        ORA $0F,S
+FF/E2B7: 1C 18 18     TRB $1818
+FF/E2BA: 7E 3C E0     ROR $E03C,X
+FF/E2BD: 00 70        BRK $70
+FF/E2BF: 40           RTI

@@ -1,0 +1,93 @@
+D0/A644: 00 00        BRK $00
+D0/A646: C0 80        CPY #$80
+D0/A648: 05 03        ORA $03
+D0/A64A: 00 00        BRK $00
+D0/A64C: 05 03        ORA $03
+D0/A64E: 00 00        BRK $00
+D0/A650: 01 03        ORA ($03,X)
+D0/A652: 00 00        BRK $00
+D0/A654: 01 01        ORA ($01,X)
+D0/A656: 00 00        BRK $00
+D0/A658: DE 60 CE     DEC $CE60,X
+D0/A65B: 71 E2        ADC ($E2),Y
+D0/A65D: 3C 78 1F     BIT $1F78,X
+D0/A660: 7F 07 3F 00  ADC $003F07,X
+D0/A664: 0F 00 00 00  ORA $000000
+D0/A668: 7F 7E 3F 1F  ADC $1F3F7E,X
+D0/A66C: 07 00        ORA [$00]
+D0/A66E: 00 00        BRK $00
+D0/A670: 27 9A        AND [$9A]
+D0/A672: 87 78        STA [$78]
+D0/A674: 0E B8 1C     ASL $1CB8
+D0/A677: F0 FC        BEQ $A675
+D0/A679: C0 F8        CPY #$F8
+D0/A67B: 00 E0        BRK $E0
+D0/A67D: 00 00        BRK $00
+D0/A67F: 00 7A        BRK $7A
+D0/A681: 38           SEC
+D0/A682: 78           SEI
+D0/A683: F0 C0        BEQ $A645
+D0/A685: 00 00        BRK $00
+D0/A687: 00 DB        BRK $DB
+D0/A689: 67 C7        ADC [$C7]
+D0/A68B: 38           SEC
+D0/A68C: 61 34        ADC ($34,X)
+D0/A68E: 3D 0A 3F     AND $3F0A,X
+D0/A691: 07 1F        ORA [$1F]
+D0/A693: 00 07        BRK $07
+D0/A695: 00 00        BRK $00
+D0/A697: 00 7F        BRK $7F
+D0/A699: 3F 3B 01 07  AND $07013B,X
+D0/A69D: 00 00        BRK $00
+D0/A69F: 00 CF        BRK $CF
+D0/A6A1: FE C7 3C     INC $3CC7,X
+D0/A6A4: 8E 28 3C     STX $3C28
+D0/A6A7: D0 FC        BNE $A6A5
+D0/A6A9: E0 F8        CPX #$F8
+D0/A6AB: 00 E0        BRK $E0
+D0/A6AD: 00 00        BRK $00
+D0/A6AF: 00 FE        BRK $FE
+D0/A6B1: FC D8 80     JSR ($80D8,X)
+D0/A6B4: E0 00        CPX #$00
+D0/A6B6: 00 00        BRK $00
+D0/A6B8: 00 00        BRK $00
+D0/A6BA: 00 00        BRK $00
+D0/A6BC: 00 00        BRK $00
+D0/A6BE: 00 00        BRK $00
+D0/A6C0: 00 00        BRK $00
+D0/A6C2: 00 00        BRK $00
+D0/A6C4: 00 00        BRK $00
+D0/A6C6: 01 00        ORA ($00,X)
+D0/A6C8: 00 00        BRK $00
+D0/A6CA: 00 00        BRK $00
+D0/A6CC: 00 00        BRK $00
+D0/A6CE: 00 01        BRK $01
+D0/A6D0: 00 00        BRK $00
+D0/A6D2: 00 00        BRK $00
+D0/A6D4: 00 00        BRK $00
+D0/A6D6: 00 00        BRK $00
+D0/A6D8: 00 00        BRK $00
+D0/A6DA: 00 00        BRK $00
+D0/A6DC: 01 00        ORA ($00,X)
+D0/A6DE: 01 02        ORA ($02,X)
+D0/A6E0: 00 00        BRK $00
+D0/A6E2: 00 00        BRK $00
+D0/A6E4: 00 00        BRK $00
+D0/A6E6: 01 03        ORA ($03,X)
+D0/A6E8: 00 00        BRK $00
+D0/A6EA: 00 00        BRK $00
+D0/A6EC: 00 00        BRK $00
+D0/A6EE: 00 00        BRK $00
+D0/A6F0: 03 03        ORA $03,S
+D0/A6F2: 06 07        ASL $07
+D0/A6F4: 0D 0E 0C     ORA $0C0E
+D0/A6F7: 0E 00 00     ASL $0000
+D0/A6FA: 00 00        BRK $00
+D0/A6FC: 03 07        ORA $07,S
+D0/A6FE: 0F 0F 00 00  ORA $00000F
+D0/A702: 00 00        BRK $00
+D0/A704: 00 00        BRK $00
+D0/A706: 00 00        BRK $00
+D0/A708: 00 C0        BRK $C0
+D0/A70A: C0 20        CPY #$20
+D0/A70C: 40           RTI

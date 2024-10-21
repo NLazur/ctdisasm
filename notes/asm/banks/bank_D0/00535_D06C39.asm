@@ -1,0 +1,78 @@
+D0/6C39: E0 DC 3C     CPX #$3CDC
+D0/6C3C: FB           XCE
+D0/6C3D: 07 FD        ORA [$FD]
+D0/6C3F: 03 FE        ORA $FE,S
+D0/6C41: 01 F9        ORA ($F9,X)
+D0/6C43: 07 84        ORA [$84]
+D0/6C45: FC 38 38     JSR ($3838,X)
+D0/6C48: 00 00        BRK $00
+D0/6C4A: 00 00        BRK $00
+D0/6C4C: 00 00        BRK $00
+D0/6C4E: E0 E0 3F     CPX #$3FE0
+D0/6C51: FF 81 FF 61  SBC $61FF81,X
+D0/6C55: 7F 38 38 00  ADC $003838,X
+D0/6C59: 00 00        BRK $00
+D0/6C5B: 00 00        BRK $00
+D0/6C5D: 00 00        BRK $00
+D0/6C5F: 00 00        BRK $00
+D0/6C61: 00 F8        BRK $F8
+D0/6C63: F8           SED
+D0/6C64: 80 80        BRA $6BE6
+D0/6C66: 00 00        BRK $00
+D0/6C68: 00 00        BRK $00
+D0/6C6A: 00 00        BRK $00
+D0/6C6C: 00 00        BRK $00
+D0/6C6E: 00 00        BRK $00
+D0/6C70: 00 00        BRK $00
+D0/6C72: 01 01        ORA ($01,X)
+D0/6C74: 06 06        ASL $06
+D0/6C76: 08           PHP
+D0/6C77: 08           PHP
+D0/6C78: 01 01        ORA ($01,X)
+D0/6C7A: 03 02        ORA $02,S
+D0/6C7C: 04 07        TSB $07
+D0/6C7E: 19 1F 7C     ORA $7C1F,Y
+D0/6C81: 7C 80 80     JMP ($8080,X)
+D0/6C84: 00 00        BRK $00
+D0/6C86: 00 00        BRK $00
+D0/6C88: FC 03 F7     JSR ($F703,X)
+D0/6C8B: 0F 78 F8 00  ORA $00F878
+D0/6C8F: 00 00        BRK $00
+D0/6C91: 00 00        BRK $00
+D0/6C93: 00 00        BRK $00
+D0/6C95: 00 00        BRK $00
+D0/6C97: 00 0C        BRK $0C
+D0/6C99: FC E4 FC     JSR ($FCE4,X)
+D0/6C9C: 00 00        BRK $00
+D0/6C9E: 00 00        BRK $00
+D0/6CA0: 00 00        BRK $00
+D0/6CA2: 00 00        BRK $00
+D0/6CA4: 00 00        BRK $00
+D0/6CA6: 00 00        BRK $00
+D0/6CA8: 00 00        BRK $00
+D0/6CAA: 01 01        ORA ($01,X)
+D0/6CAC: 06 07        ASL $07
+D0/6CAE: 1E 1E 00     ASL $001E,X
+D0/6CB1: 00 00        BRK $00
+D0/6CB3: 00 00        BRK $00
+D0/6CB5: 00 00        BRK $00
+D0/6CB7: 00 BF        BRK $BF
+D0/6CB9: C0 7F        CPY #$7F
+D0/6CBB: 80 FF        BRA $6CBC
+D0/6CBD: E0 1F 10     CPX #$101F
+D0/6CC0: 3E 21 3D     ROL $3D21,X
+D0/6CC3: 23 3A        AND $3A,S
+D0/6CC5: 26 44        ROL $44
+D0/6CC7: 7C F9 06     JMP ($06F9,X)
+D0/6CCA: F1 0E        SBC ($0E),Y
+D0/6CCC: ED 1E B3     SBC $B31E
+D0/6CCF: 72 C2        ADC ($C2)
+D0/6CD1: C3 01        CMP $01,S
+D0/6CD3: 01 01        ORA ($01,X)
+D0/6CD5: 01 01        ORA ($01,X)
+D0/6CD7: 01 E8        ORA ($E8,X)
+D0/6CD9: 18           CLC
+D0/6CDA: F0 10        BEQ $6CEC
+D0/6CDC: C0 20        CPY #$20
+D0/6CDE: E0 20 A0     CPX #$A020
+D0/6CE1: 60           RTS

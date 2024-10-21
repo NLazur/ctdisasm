@@ -1,0 +1,52 @@
+D1/EC64: 25 25        AND $25
+D1/EC66: 00 C0        BRK $C0
+D1/EC68: 25 25        AND $25
+D1/EC6A: 00 00        BRK $00
+D1/EC6C: 00 00        BRK $00
+D1/EC6E: 00 00        BRK $00
+D1/EC70: E3 00        SBC $00,S
+D1/EC72: 00 19        BRK $19
+D1/EC74: 0E 0F 00     ASL $000F
+D1/EC77: E7 0E        SBC [$0E]
+D1/EC79: 0F 00 00 00  ORA $000000
+D1/EC7D: 00 00        BRK $00
+D1/EC7F: 00 DC        BRK $DC
+D1/EC81: 00 00        BRK $00
+D1/EC83: 20 12 13     JSR $1312
+D1/EC86: 00 E0        BRK $E0
+D1/EC88: 12 13        ORA ($13)
+D1/EC8A: 00 00        BRK $00
+D1/EC8C: 00 00        BRK $00
+D1/EC8E: 00 00        BRK $00
+D1/EC90: 00 00        BRK $00
+D1/EC92: 00 F8        BRK $F8
+D1/EC94: 73 00        ADC ($00,S),Y
+D1/EC96: 00 08        BRK $08
+D1/EC98: 73 00        ADC ($00,S),Y
+D1/EC9A: 00 00        BRK $00
+D1/EC9C: 00 00        BRK $00
+D1/EC9E: 00 00        BRK $00
+D1/ECA0: 00 00        BRK $00
+D1/ECA2: 00 F8        BRK $F8
+D1/ECA4: 73 00        ADC ($00,S),Y
+D1/ECA6: 00 08        BRK $08
+D1/ECA8: 73 00        ADC ($00,S),Y
+D1/ECAA: 00 00        BRK $00
+D1/ECAC: 00 00        BRK $00
+D1/ECAE: 00 00        BRK $00
+D1/ECB0: 00 00        BRK $00
+D1/ECB2: 00 FC        BRK $FC
+D1/ECB4: 7E 00 00     ROR $0000,X
+D1/ECB7: 04 7E        TSB $7E
+D1/ECB9: 00 00        BRK $00
+D1/ECBB: 00 00        BRK $00
+D1/ECBD: 00 00        BRK $00
+D1/ECBF: 00 00        BRK $00
+D1/ECC1: 00 00        BRK $00
+D1/ECC3: FC 7E 00     JSR ($007E,X)
+D1/ECC6: 00 04        BRK $04
+D1/ECC8: 7E 00 00     ROR $0000,X
+D1/ECCB: 00 00        BRK $00
+D1/ECCD: 00 00        BRK $00
+D1/ECCF: 00 00        BRK $00
+D1/ECD1: 60           RTS

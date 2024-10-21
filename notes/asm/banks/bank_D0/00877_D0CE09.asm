@@ -1,0 +1,42 @@
+D0/CE09: 1F F9 5F 56  ORA $565FF9,X
+D0/CE0D: 39 4F 30     AND $304F,Y
+D0/CE10: 07 08        ORA [$08]
+D0/CE12: C7 60        CMP [$60]
+D0/CE14: 01 40        ORA ($40,X)
+D0/CE16: 06 09        ASL $09
+D0/CE18: 7E 09 7E     ROR $7E09,X
+D0/CE1B: 09 7F        ORA #$7F
+D0/CE1D: 00 3F        BRK $3F
+D0/CE1F: 00 1F        BRK $1F
+D0/CE21: 04 3F        TSB $3F
+D0/CE23: 00 3F        BRK $3F
+D0/CE25: 00 18        BRK $18
+D0/CE27: 00 2A        BRK $2A
+D0/CE29: 2E 3D 18     ROL $183D
+D0/CE2C: 06 1E        ASL $1E
+D0/CE2E: 18           CLC
+D0/CE2F: 00 C2        BRK $C2
+D0/CE31: 7C F9 06     JMP ($06F9,X)
+D0/CE34: D6 38        DEC $38,X
+D0/CE36: DA           PHX
+D0/CE37: 3C FA 1C     BIT $1CFA,X
+D0/CE3A: F5 1A        SBC $1A,X
+D0/CE3C: FD 02 06     SBC $0602,X
+D0/CE3F: 00 7C        BRK $7C
+D0/CE41: 06 B8        ASL $B8
+D0/CE43: BC DC DA     LDY $DADC,X
+D0/CE46: 06 00        ASL $00
+D0/CE48: 7B           TDC
+D0/CE49: 06 6F        ASL $6F
+D0/CE4B: 10 7E        BPL $CECB
+D0/CE4D: 01 3F        ORA ($3F,X)
+D0/CE4F: 00 6F        BRK $6F
+D0/CE51: 10 7C        BPL $CECF
+D0/CE53: 03 34        ORA $34,S
+D0/CE55: 03 03        ORA $03,S
+D0/CE57: 00 26        BRK $26
+D0/CE59: 20 29 16     JSR $1629
+D0/CE5C: 36 37        ROL $37,X
+D0/CE5E: 03 00        ORA $00,S
+D0/CE60: 98           TYA
+D0/CE61: 60           RTS

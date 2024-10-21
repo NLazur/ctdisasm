@@ -1,0 +1,75 @@
+FF/364E: 00 00        BRK $00
+FF/3650: 00 00        BRK $00
+FF/3652: 00 00        BRK $00
+FF/3654: 00 00        BRK $00
+FF/3656: FF FE FE 01  SBC $01FEFE,X
+FF/365A: FF FE FE 01  SBC $01FEFE,X
+FF/365E: 00 00        BRK $00
+FF/3660: 00 00        BRK $00
+FF/3662: 00 00        BRK $00
+FF/3664: 00 00        BRK $00
+FF/3666: 00 00        BRK $00
+FF/3668: 00 00        BRK $00
+FF/366A: 00 00        BRK $00
+FF/366C: 00 00        BRK $00
+FF/366E: 00 00        BRK $00
+FF/3670: FF FE FE 01  SBC $01FEFE,X
+FF/3674: 00 00        BRK $00
+FF/3676: 00 00        BRK $00
+FF/3678: 00 00        BRK $00
+FF/367A: 00 00        BRK $00
+FF/367C: 00 00        BRK $00
+FF/367E: 00 00        BRK $00
+FF/3680: 00 00        BRK $00
+FF/3682: 18           CLC
+FF/3683: 10 18        BPL $369D
+FF/3685: 10 18        BPL $369F
+FF/3687: 10 FF        BPL $3688
+FF/3689: FE FE 11     INC $11FE,X
+FF/368C: 18           CLC
+FF/368D: 10 18        BPL $36A7
+FF/368F: 10 10        BPL $36A1
+FF/3691: 08           PHP
+FF/3692: 00 00        BRK $00
+FF/3694: 00 00        BRK $00
+FF/3696: 00 00        BRK $00
+FF/3698: 06 04        ASL $04
+FF/369A: 66 44        ROR $44
+FF/369C: FC AA EC     JSR ($ECAA,X)
+FF/369F: 58           CLI
+FF/36A0: 58           CLI
+FF/36A1: 34 1B        BIT $1B,X
+FF/36A3: 12 37        ORA ($37)
+FF/36A5: 2D 37 22     AND $2237
+FF/36A8: 22 11 00 00  JSR $000011
+FF/36AC: 00 00        BRK $00
+FF/36AE: 00 00        BRK $00
+FF/36B0: 02 03        COP $03
+FF/36B2: 03 03        ORA $03,S
+FF/36B4: 03 02        ORA $02,S
+FF/36B6: 03 02        ORA $02,S
+FF/36B8: 03 02        ORA $02,S
+FF/36BA: 03 02        ORA $02,S
+FF/36BC: 03 02        ORA $02,S
+FF/36BE: 03 02        ORA $02,S
+FF/36C0: 0F 0E 1F 1E  ORA $1E1F0E
+FF/36C4: 1E 1D 0C     ASL $0C1D,X
+FF/36C7: 12 00        ORA ($00)
+FF/36C9: 00 00        BRK $00
+FF/36CB: 00 00        BRK $00
+FF/36CD: 00 00        BRK $00
+FF/36CF: 00 00        BRK $00
+FF/36D1: 00 00        BRK $00
+FF/36D3: 00 00        BRK $00
+FF/36D5: 00 00        BRK $00
+FF/36D7: 00 00        BRK $00
+FF/36D9: 00 00        BRK $00
+FF/36DB: 00 00        BRK $00
+FF/36DD: 00 00        BRK $00
+FF/36DF: 00 00        BRK $00
+FF/36E1: 00 19        BRK $19
+FF/36E3: 11 3F        ORA ($3F),Y
+FF/36E5: 2A           ROL
+FF/36E6: 6E 55 64     ROR $6455
+FF/36E9: 42 60        WDM $60
+FF/36EB: 40           RTI

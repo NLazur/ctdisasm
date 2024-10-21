@@ -1,0 +1,38 @@
+C1/8BB9: 7B           TDC
+C1/8BBA: A2 0A 00     LDX #$000A
+C1/8BBD: BD 79 B1     LDA $B179,X
+C1/8BC0: D0 03        BNE $8BC5
+C1/8BC2: AD C7 AE     LDA $AEC7
+C1/8BC5: 3A           DEC
+C1/8BC6: AA           TAX
+C1/8BC7: BD 63 B1     LDA $B163,X
+C1/8BCA: A8           TAY
+C1/8BCB: A9 01        LDA #$01
+C1/8BCD: 99 24 B0     STA $B024,Y
+C1/8BD0: B9 42 B1     LDA $B142,Y
+C1/8BD3: 99 95 AF     STA $AF95,Y
+C1/8BD6: C2 20        REP #$20
+C1/8BD8: AD 86 B1     LDA $B186
+C1/8BDB: 29 FB 1F     AND #$1FFB
+C1/8BDE: 8D 86 B1     STA $B186
+C1/8BE1: 7B           TDC
+C1/8BE2: E2 20        SEP #$20
+C1/8BE4: B9 B3 B0     LDA $B0B3,Y
+C1/8BE7: 3A           DEC
+C1/8BE8: 99 B3 B0     STA $B0B3,Y
+C1/8BEB: D0 1A        BNE $8C07
+C1/8BED: A9 0A        LDA #$0A
+C1/8BEF: 99 B3 B0     STA $B0B3,Y
+C1/8BF2: 98           TYA
+C1/8BF3: C2 20        REP #$20
+C1/8BF5: EB           XBA
+C1/8BF6: 4A           LSR
+C1/8BF7: AA           TAX
+C1/8BF8: 7B           TDC
+C1/8BF9: E2 20        SEP #$20
+C1/8BFB: BD 4E 5E     LDA $5E4E,X
+C1/8BFE: 29 FB        AND #$FB
+C1/8C00: 9D 4E 5E     STA $5E4E,X
+C1/8C03: 7B           TDC
+C1/8C04: 99 24 B0     STA $B024,Y
+C1/8C07: 60           RTS

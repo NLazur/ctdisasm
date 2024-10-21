@@ -1,0 +1,27 @@
+C3/3F4F: 1C 8C 80     TRB $808C
+C3/3F52: 16 6B        ASL $6B,X
+C3/3F54: 0C 33 00     TSB $0033
+C3/3F57: A2 80 05     LDX #$0580
+C3/3F5A: 35 85        AND $85,X
+C3/3F5C: 04 A9        TSB $A9
+C3/3F5E: 11 65        ORA ($65),Y
+C3/3F60: 04 C2        TSB $C2
+C3/3F62: 20 A2 02     JSR $02A2
+C3/3F65: 69 08 A0     ADC #$A008
+C3/3F68: 3A           DEC
+C3/3F69: 69 A3 04     ADC #$04A3
+C3/3F6C: 89 40 00     BIT #$0040
+C3/3F6F: F0 80        BEQ $3EF1
+C3/3F71: 06 A2        ASL $A2
+C3/3F73: 98           TYA
+C3/3F74: 68           PLA
+C3/3F75: A0 A1 68     LDY #$68A1
+C3/3F78: A3 04        LDA $04,S
+C3/3F7A: 88           DEY
+C3/3F7B: 8C 20 0B     STY $0B20
+C3/3F7E: 88           DEY
+C3/3F7F: 1D 9C 41     ORA $419C,X
+C3/3F82: 78           SEI
+C3/3F83: C4 02        CPY $02
+C3/3F85: 02 00        COP $00
+C3/3F87: 40           RTI

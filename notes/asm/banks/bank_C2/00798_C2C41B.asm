@@ -1,0 +1,27 @@
+C2/C41B: CA           DEX
+C2/C41C: 2E D6 31     ROL $31D6
+C2/C41F: CA           DEX
+C2/C420: 30 CA        BMI $C3EC
+C2/C422: 2F D6 30 D6  AND $D630D6
+C2/C426: 2E D6 2F     ROL $2FD6
+C2/C429: CA           DEX
+C2/C42A: 31 CA        AND ($CA),Y
+C2/C42C: 32 D6        AND ($D6)
+C2/C42E: 32 01        AND ($01)
+C2/C430: 00 00        BRK $00
+C2/C432: 00 00        BRK $00
+C2/C434: 00 00        BRK $00
+C2/C436: 00 00        BRK $00
+C2/C438: 00 00        BRK $00
+C2/C43A: 08           PHP
+C2/C43B: C2 30        REP #$30
+C2/C43D: A2 86 0D     LDX #$0D86
+C2/C440: A0 09 0F     LDY #$0F09
+C2/C443: A9 09 00     LDA #$0009
+C2/C446: 54 7E 7E     MVN $7E,$7E
+C2/C449: E2 20        SEP #$20
+C2/C44B: 9C 0D 0F     STZ $0F0D
+C2/C44E: 9C 0E 0F     STZ $0F0E
+C2/C451: 9C 0F 0F     STZ $0F0F
+C2/C454: 28           PLP
+C2/C455: 60           RTS

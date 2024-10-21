@@ -1,0 +1,84 @@
+FD/D52D: A9 28        LDA #$28
+FD/D52F: 8F 04 42 00  STA $004204
+FD/D533: A9 00        LDA #$00
+FD/D535: 8F 05 42 00  STA $004205
+FD/D539: A9 08        LDA #$08
+FD/D53B: 8F 06 42 00  STA $004206
+FD/D53F: EA           NOP
+FD/D540: EA           NOP
+FD/D541: EA           NOP
+FD/D542: EA           NOP
+FD/D543: EA           NOP
+FD/D544: EA           NOP
+FD/D545: EA           NOP
+FD/D546: E2 10        SEP #$10
+FD/D548: A2 00        LDX #$00
+FD/D54A: AF 14 42 00  LDA $004214
+FD/D54E: 0A           ASL
+FD/D54F: 85 DB        STA $DB
+FD/D551: 85 DD        STA $DD
+FD/D553: AF 16 42 00  LDA $004216
+FD/D557: 0A           ASL
+FD/D558: 85 DF        STA $DF
+FD/D55A: A9 E8        LDA #$E8
+FD/D55C: 85 E1        STA $E1
+FD/D55E: E4 DB        CPX $DB
+FD/D560: F0 0E        BEQ $D570
+FD/D562: A5 E1        LDA $E1
+FD/D564: 9D 39 15     STA $1539,X
+FD/D567: A9 01        LDA #$01
+FD/D569: 9D 38 15     STA $1538,X
+FD/D56C: E8           INX
+FD/D56D: E8           INX
+FD/D56E: 80 EE        BRA $D55E
+FD/D570: A5 DB        LDA $DB
+FD/D572: 18           CLC
+FD/D573: 65 DD        ADC $DD
+FD/D575: 85 DB        STA $DB
+FD/D577: A5 E1        LDA $E1
+FD/D579: 3A           DEC
+FD/D57A: C9 E0        CMP #$E0
+FD/D57C: F0 02        BEQ $D580
+FD/D57E: 80 DC        BRA $D55C
+FD/D580: A5 DB        LDA $DB
+FD/D582: 18           CLC
+FD/D583: 65 DF        ADC $DF
+FD/D585: 85 DB        STA $DB
+FD/D587: E4 DB        CPX $DB
+FD/D589: F0 0E        BEQ $D599
+FD/D58B: A9 E0        LDA #$E0
+FD/D58D: 9D 39 15     STA $1539,X
+FD/D590: A9 81        LDA #$81
+FD/D592: 9D 38 15     STA $1538,X
+FD/D595: E8           INX
+FD/D596: E8           INX
+FD/D597: 80 EE        BRA $D587
+FD/D599: A9 E0        LDA #$E0
+FD/D59B: 85 E1        STA $E1
+FD/D59D: 80 14        BRA $D5B3
+FD/D59F: 85 E1        STA $E1
+FD/D5A1: E4 DB        CPX $DB
+FD/D5A3: F0 0E        BEQ $D5B3
+FD/D5A5: A5 E1        LDA $E1
+FD/D5A7: 9D 39 15     STA $1539,X
+FD/D5AA: A9 81        LDA #$81
+FD/D5AC: 9D 38 15     STA $1538,X
+FD/D5AF: E8           INX
+FD/D5B0: E8           INX
+FD/D5B1: 80 EE        BRA $D5A1
+FD/D5B3: A5 DB        LDA $DB
+FD/D5B5: 18           CLC
+FD/D5B6: 65 DD        ADC $DD
+FD/D5B8: 85 DB        STA $DB
+FD/D5BA: A5 E1        LDA $E1
+FD/D5BC: C9 E9        CMP #$E9
+FD/D5BE: F0 03        BEQ $D5C3
+FD/D5C0: 1A           INC
+FD/D5C1: 80 DC        BRA $D59F
+FD/D5C3: C2 30        REP #$30
+FD/D5C5: A2 38 15     LDX #$1538
+FD/D5C8: A0 00 16     LDY #$1600
+FD/D5CB: A9 FF 00     LDA #$00FF
+FD/D5CE: 54 7F 7F     MVN $7F,$7F
+FD/D5D1: E2 20        SEP #$20
+FD/D5D3: 60           RTS

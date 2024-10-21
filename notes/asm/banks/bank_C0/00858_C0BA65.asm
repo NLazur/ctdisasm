@@ -1,0 +1,134 @@
+C0/BA65: 8B           PHB
+C0/BA66: A9 7F        LDA #$7F
+C0/BA68: 48           PHA
+C0/BA69: AB           PLB
+C0/BA6A: C2 20        REP #$20
+C0/BA6C: A6 6D        LDX $6D
+C0/BA6E: BF 80 0A 00  LDA $000A80,X
+C0/BA72: 29 FF 01     AND #$01FF
+C0/BA75: 85 C5        STA $C5
+C0/BA77: BF 00 0A 00  LDA $000A00,X
+C0/BA7B: 85 C3        STA $C3
+C0/BA7D: 64 E5        STZ $E5
+C0/BA7F: BF 00 17 00  LDA $001700,X
+C0/BA83: 85 D9        STA $D9
+C0/BA85: 18           CLC
+C0/BA86: 69 18 00     ADC #$0018
+C0/BA89: AA           TAX
+C0/BA8A: BD C2 4B     LDA $4BC2,X
+C0/BA8D: 18           CLC
+C0/BA8E: 65 C3        ADC $C3
+C0/BA90: E2 20        SEP #$20
+C0/BA92: 9D C0 4B     STA $4BC0,X
+C0/BA95: EB           XBA
+C0/BA96: 29 01        AND #$01
+C0/BA98: 85 E6        STA $E6
+C0/BA9A: A5 E5        LDA $E5
+C0/BA9C: 0A           ASL
+C0/BA9D: 0A           ASL
+C0/BA9E: 05 E6        ORA $E6
+C0/BAA0: E4 D9        CPX $D9
+C0/BAA2: F0 0B        BEQ $BAAF
+C0/BAA4: 85 E5        STA $E5
+C0/BAA6: C2 20        REP #$20
+C0/BAA8: 8A           TXA
+C0/BAA9: 38           SEC
+C0/BAAA: E9 08 00     SBC #$0008
+C0/BAAD: 80 DA        BRA $BA89
+C0/BAAF: 09 AA A6     ORA #$A6AA
+C0/BAB2: 6D 9D 00     ADC $009D
+C0/BAB5: 4F 64 E5 C2  EOR $C2E564
+C0/BAB9: 20 A5 D9     JSR $D9A5
+C0/BABC: 18           CLC
+C0/BABD: 69 20 00     ADC #$0020
+C0/BAC0: 85 E7        STA $E7
+C0/BAC2: 18           CLC
+C0/BAC3: 69 18 00     ADC #$0018
+C0/BAC6: AA           TAX
+C0/BAC7: BD C2 4B     LDA $4BC2,X
+C0/BACA: 18           CLC
+C0/BACB: 65 C3        ADC $C3
+C0/BACD: E2 20        SEP #$20
+C0/BACF: 9D C0 4B     STA $4BC0,X
+C0/BAD2: EB           XBA
+C0/BAD3: 29 01        AND #$01
+C0/BAD5: 85 E6        STA $E6
+C0/BAD7: A5 E5        LDA $E5
+C0/BAD9: 0A           ASL
+C0/BADA: 0A           ASL
+C0/BADB: 05 E6        ORA $E6
+C0/BADD: E4 E7        CPX $E7
+C0/BADF: F0 0B        BEQ $BAEC
+C0/BAE1: 85 E5        STA $E5
+C0/BAE3: C2 20        REP #$20
+C0/BAE5: 8A           TXA
+C0/BAE6: 38           SEC
+C0/BAE7: E9 08 00     SBC #$0008
+C0/BAEA: 80 DA        BRA $BAC6
+C0/BAEC: 09 AA A6     ORA #$A6AA
+C0/BAEF: 6D 9D 01     ADC $019D
+C0/BAF2: 4F A6 D9 A5  EOR $A5D9A6
+C0/BAF6: C6 F0        DEC $F0
+C0/BAF8: 03 82        ORA $82,S
+C0/BAFA: 54 01 A5     MVN $01,$A5
+C0/BAFD: C5 10        CMP $10
+C0/BAFF: 7C BD C4     JMP ($C4BD,X)
+C0/BB02: 4B           PHK
+C0/BB03: 18           CLC
+C0/BB04: 65 C5        ADC $C5
+C0/BB06: C9 E0 90     CMP #$90E0
+C0/BB09: 02 A9        COP $A9
+C0/BB0B: E0 9D C1     CPX #$C19D
+C0/BB0E: 4B           PHK
+C0/BB0F: BD CC 4B     LDA $4BCC,X
+C0/BB12: 18           CLC
+C0/BB13: 65 C5        ADC $C5
+C0/BB15: C9 E0 90     CMP #$90E0
+C0/BB18: 02 A9        COP $A9
+C0/BB1A: E0 9D C9     CPX #$C99D
+C0/BB1D: 4B           PHK
+C0/BB1E: BD D4 4B     LDA $4BD4,X
+C0/BB21: 18           CLC
+C0/BB22: 65 C5        ADC $C5
+C0/BB24: C9 E0 90     CMP #$90E0
+C0/BB27: 02 A9        COP $A9
+C0/BB29: E0 9D D1     CPX #$D19D
+C0/BB2C: 4B           PHK
+C0/BB2D: BD DC 4B     LDA $4BDC,X
+C0/BB30: 18           CLC
+C0/BB31: 65 C5        ADC $C5
+C0/BB33: C9 E0 90     CMP #$90E0
+C0/BB36: 02 A9        COP $A9
+C0/BB38: E0 9D D9     CPX #$D99D
+C0/BB3B: 4B           PHK
+C0/BB3C: BD E4 4B     LDA $4BE4,X
+C0/BB3F: 18           CLC
+C0/BB40: 65 C5        ADC $C5
+C0/BB42: C9 E0 90     CMP #$90E0
+C0/BB45: 02 A9        COP $A9
+C0/BB47: E0 9D E1     CPX #$E19D
+C0/BB4A: 4B           PHK
+C0/BB4B: BD EC 4B     LDA $4BEC,X
+C0/BB4E: 18           CLC
+C0/BB4F: 65 C5        ADC $C5
+C0/BB51: C9 E0 90     CMP #$90E0
+C0/BB54: 02 A9        COP $A9
+C0/BB56: E0 9D E9     CPX #$E99D
+C0/BB59: 4B           PHK
+C0/BB5A: BD F4 4B     LDA $4BF4,X
+C0/BB5D: 18           CLC
+C0/BB5E: 65 C5        ADC $C5
+C0/BB60: C9 E0 90     CMP #$90E0
+C0/BB63: 02 A9        COP $A9
+C0/BB65: E0 9D F1     CPX #$F19D
+C0/BB68: 4B           PHK
+C0/BB69: BD FC 4B     LDA $4BFC,X
+C0/BB6C: 18           CLC
+C0/BB6D: 65 C5        ADC $C5
+C0/BB6F: C9 E0 90     CMP #$90E0
+C0/BB72: 02 A9        COP $A9
+C0/BB74: E0 9D F9     CPX #$F99D
+C0/BB77: 4B           PHK
+C0/BB78: E2 20        SEP #$20
+C0/BB7A: AB           PLB
+C0/BB7B: 60           RTS

@@ -1,0 +1,194 @@
+CD/64B7: 89 70        BIT #$70
+CD/64B9: 89 A8        BIT #$A8
+CD/64BB: 89 C8        BIT #$C8
+CD/64BD: 89 98        BIT #$98
+CD/64BF: 8A           TXA
+CD/64C0: 68           PLA
+CD/64C1: 8B           PHB
+CD/64C2: B8           CLV
+CD/64C3: 8B           PHB
+CD/64C4: 14 8C        TRB $8C
+CD/64C6: C4 8C        CPY $8C
+CD/64C8: 74 8D        STZ $8D,X
+CD/64CA: 8C 8E A4     STY $A48E
+CD/64CD: 8F E4 8F 24  STA $248FE4
+CD/64D1: 90 64        BCC $6537
+CD/64D3: 90 A4        BCC $6479
+CD/64D5: 90 E4        BCC $64BB
+CD/64D7: 90 24        BCC $64FD
+CD/64D9: 91 54        STA ($54),Y
+CD/64DB: 91 94        STA ($94),Y
+CD/64DD: 91 D4        STA ($D4),Y
+CD/64DF: 91 14        STA ($14),Y
+CD/64E1: 92 84        STA ($84)
+CD/64E3: 92 E4        STA ($E4)
+CD/64E5: 92 FC        STA ($FC)
+CD/64E7: 93 6C        STA ($6C,S),Y
+CD/64E9: 94 DC        STY $DC,X
+CD/64EB: 94 58        STY $58,X
+CD/64ED: 95 D8        STA $D8,X
+CD/64EF: 95 78        STA $78,X
+CD/64F1: 96 D8        STX $D8,Y
+CD/64F3: 96 48        STX $48,Y
+CD/64F5: 97 A8        STA [$A8],Y
+CD/64F7: 97 18        STA [$18],Y
+CD/64F9: 98           TYA
+CD/64FA: E8           INX
+CD/64FB: 98           TYA
+CD/64FC: 48           PHA
+CD/64FD: 99 A8 99     STA $99A8,Y
+CD/6500: E8           INX
+CD/6501: 99 98 9A     STA $9A98,Y
+CD/6504: 18           CLC
+CD/6505: 9B           TXY
+CD/6506: C8           INY
+CD/6507: 9B           TXY
+CD/6508: 44 9C B4     MVP $9C,$B4
+CD/650B: 9C 24 9D     STZ $9D24
+CD/650E: 90 9D        BCC $64AD
+CD/6510: F4 9D 64     PEA $649D
+CD/6513: 9E F0 9E     STZ $9EF0,X
+CD/6516: 54 9F BC     MVN $9F,$BC
+CD/6519: 9F 8C A0 5C  STA $5CA08C,X
+CD/651D: A1 2C        LDA ($2C,X)
+CD/651F: A2 FC        LDX #$FC
+CD/6521: A2 CC        LDX #$CC
+CD/6523: A3 9C        LDA $9C,S
+CD/6525: A4 6C        LDY $6C
+CD/6527: A5 3C        LDA $3C
+CD/6529: A6 0C        LDX $0C
+CD/652B: A7 3C        LDA [$3C]
+CD/652D: A7 6C        LDA [$6C]
+CD/652F: A7 A8        LDA [$A8]
+CD/6531: A7 E4        LDA [$E4]
+CD/6533: A7 3C        LDA [$3C]
+CD/6535: A8           TAY
+CD/6536: 74 A8        STZ $A8,X
+CD/6538: D4 A8        PEI $A8
+CD/653A: 24 A9        BIT $A9
+CD/653C: FF FF FF FF  SBC $FFFFFF,X
+CD/6540: FF FF FF FF  SBC $FFFFFF,X
+CD/6544: FF FF FF FF  SBC $FFFFFF,X
+CD/6548: FF FF FF FF  SBC $FFFFFF,X
+CD/654C: FF FF FF FF  SBC $FFFFFF,X
+CD/6550: FF FF FF FF  SBC $FFFFFF,X
+CD/6554: FF FF FF FF  SBC $FFFFFF,X
+CD/6558: FF FF FF FF  SBC $FFFFFF,X
+CD/655C: FF FF FF FF  SBC $FFFFFF,X
+CD/6560: FF FF FF FF  SBC $FFFFFF,X
+CD/6564: FF FF FF FF  SBC $FFFFFF,X
+CD/6568: FF FF FF FF  SBC $FFFFFF,X
+CD/656C: FF FF 54 A9  SBC $A954FF,X
+CD/6570: 94 A9        STY $A9,X
+CD/6572: A4 A9        LDY $A9
+CD/6574: DC A9 58     JMP [$58A9]
+CD/6577: AA           TAX
+CD/6578: 78           SEI
+CD/6579: AA           TAX
+CD/657A: 78           SEI
+CD/657B: AA           TAX
+CD/657C: DC AA 3C     JMP [$3CAA]
+CD/657F: AB           PLB
+CD/6580: 3C AB 78     BIT $78AB,X
+CD/6583: AB           PLB
+CD/6584: 80 AB        BRA $6531
+CD/6586: C8           INY
+CD/6587: AB           PLB
+CD/6588: 20 AC 48     JSR $48AC
+CD/658B: AC 80 AC     LDY $AC80
+CD/658E: 80 AC        BRA $653C
+CD/6590: 80 AC        BRA $653E
+CD/6592: B4 AC        LDY $AC,X
+CD/6594: F0 AC        BEQ $6542
+CD/6596: 74 AD        STZ $AD,X
+CD/6598: 9C AD E4     STZ $E4AD
+CD/659B: AD 14 AE     LDA $AE14
+CD/659E: 84 AE        STY $AE
+CD/65A0: C0 AE        CPY #$AE
+CD/65A2: F0 AF        BEQ $6553
+CD/65A4: F8           SED
+CD/65A5: AF 08 B0 08  LDA $08B008
+CD/65A9: B0 08        BCS $65B3
+CD/65AB: B0 08        BCS $65B5
+CD/65AD: B0 30        BCS $65DF
+CD/65AF: B0 30        BCS $65E1
+CD/65B1: B0 38        BCS $65EB
+CD/65B3: B0 98        BCS $654D
+CD/65B5: B0 A8        BCS $655F
+CD/65B7: B1 EC        LDA ($EC),Y
+CD/65B9: B1 F4        LDA ($F4),Y
+CD/65BB: B1 F4        LDA ($F4),Y
+CD/65BD: B1 F4        LDA ($F4),Y
+CD/65BF: B1 F4        LDA ($F4),Y
+CD/65C1: B1 F4        LDA ($F4),Y
+CD/65C3: B1 F4        LDA ($F4),Y
+CD/65C5: B1 F4        LDA ($F4),Y
+CD/65C7: B1 F4        LDA ($F4),Y
+CD/65C9: B1 14        LDA ($14),Y
+CD/65CB: B2 18        LDA ($18)
+CD/65CD: B2 18        LDA ($18)
+CD/65CF: B2 18        LDA ($18)
+CD/65D1: B2 18        LDA ($18)
+CD/65D3: B2 18        LDA ($18)
+CD/65D5: B2 18        LDA ($18)
+CD/65D7: B2 44        LDA ($44)
+CD/65D9: B2 44        LDA ($44)
+CD/65DB: B2 E0        LDA ($E0)
+CD/65DD: B2 E0        LDA ($E0)
+CD/65DF: B2 E0        LDA ($E0)
+CD/65E1: B2 E0        LDA ($E0)
+CD/65E3: B2 F0        LDA ($F0)
+CD/65E5: B3 40        LDA ($40,S),Y
+CD/65E7: B5 84        LDA $84,X
+CD/65E9: B5 84        LDA $84,X
+CD/65EB: B5 84        LDA $84,X
+CD/65ED: B5 84        LDA $84,X
+CD/65EF: B5 94        LDA $94,X
+CD/65F1: B5 94        LDA $94,X
+CD/65F3: B5 94        LDA $94,X
+CD/65F5: B5 94        LDA $94,X
+CD/65F7: B5 94        LDA $94,X
+CD/65F9: B5 C4        LDA $C4,X
+CD/65FB: B5 C4        LDA $C4,X
+CD/65FD: B5 C4        LDA $C4,X
+CD/65FF: B5 08        LDA $08,X
+CD/6601: B6 70        LDX $70,Y
+CD/6603: B6 70        LDX $70,Y
+CD/6605: B6 70        LDX $70,Y
+CD/6607: B6 70        LDX $70,Y
+CD/6609: B6 70        LDX $70,Y
+CD/660B: B6 50        LDX $50,Y
+CD/660D: B7 CC        LDA [$CC],Y
+CD/660F: B7 CC        LDA [$CC],Y
+CD/6611: B7 CC        LDA [$CC],Y
+CD/6613: B7 CC        LDA [$CC],Y
+CD/6615: B7 CC        LDA [$CC],Y
+CD/6617: B7 7C        LDA [$7C],Y
+CD/6619: B8           CLV
+CD/661A: 04 B9        TSB $B9
+CD/661C: 04 B9        TSB $B9
+CD/661E: 68           PLA
+CD/661F: B9 68 B9     LDA $B968,Y
+CD/6622: 68           PLA
+CD/6623: B9 68 B9     LDA $B968,Y
+CD/6626: 68           PLA
+CD/6627: B9 68 B9     LDA $B968,Y
+CD/662A: 68           PLA
+CD/662B: B9 68 B9     LDA $B968,Y
+CD/662E: 68           PLA
+CD/662F: B9 68 B9     LDA $B968,Y
+CD/6632: 68           PLA
+CD/6633: B9 68 B9     LDA $B968,Y
+CD/6636: A0 B9        LDY #$B9
+CD/6638: A0 B9        LDY #$B9
+CD/663A: C0 BA        CPY #$BA
+CD/663C: 20 BB A4     JSR $A4BB
+CD/663F: BB           TYX
+CD/6640: A4 BB        LDY $BB
+CD/6642: 0C BC 0C     TSB $0CBC
+CD/6645: BC 0C BC     LDY $BC0C,X
+CD/6648: 0C BC 0C     TSB $0CBC
+CD/664B: BC 0C BC     LDY $BC0C,X
+CD/664E: 0C BC 0C     TSB $0CBC
+CD/6651: BC 40 BC     LDY $BC40,X
+CD/6654: 40           RTI

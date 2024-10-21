@@ -1,0 +1,49 @@
+C0/4A81: A5 D9        LDA $D9
+C0/4A83: 29 F0        AND #$F0
+C0/4A85: 99 20 05     STA $0520,Y
+C0/4A88: A5 D9        LDA $D9
+C0/4A8A: 29 0F        AND #$0F
+C0/4A8C: 99 26 05     STA $0526,Y
+C0/4A8F: A6 C7        LDX $C7
+C0/4A91: E8           INX
+C0/4A92: E8           INX
+C0/4A93: BF 01 20 7F  LDA $7F2001,X
+C0/4A97: 99 21 05     STA $0521,Y
+C0/4A9A: E8           INX
+C0/4A9B: BF 01 20 7F  LDA $7F2001,X
+C0/4A9F: 99 22 05     STA $0522,Y
+C0/4AA2: E8           INX
+C0/4AA3: BF 01 20 7F  LDA $7F2001,X
+C0/4AA7: 85 DD        STA $DD
+C0/4AA9: E8           INX
+C0/4AAA: BF 01 20 7F  LDA $7F2001,X
+C0/4AAE: 99 25 05     STA $0525,Y
+C0/4AB1: A9 00        LDA #$00
+C0/4AB3: 99 24 05     STA $0524,Y
+C0/4AB6: A9 08        LDA #$08
+C0/4AB8: 99 23 05     STA $0523,Y
+C0/4ABB: E8           INX
+C0/4ABC: A5 DD        LDA $DD
+C0/4ABE: 29 F0        AND #$F0
+C0/4AC0: 4A           LSR
+C0/4AC1: 4A           LSR
+C0/4AC2: 4A           LSR
+C0/4AC3: 4A           LSR
+C0/4AC4: 85 D9        STA $D9
+C0/4AC6: A5 DD        LDA $DD
+C0/4AC8: 29 F0        AND #$F0
+C0/4ACA: 05 D9        ORA $D9
+C0/4ACC: 99 27 05     STA $0527,Y
+C0/4ACF: A5 DD        LDA $DD
+C0/4AD1: 29 0F        AND #$0F
+C0/4AD3: 0A           ASL
+C0/4AD4: 0A           ASL
+C0/4AD5: 0A           ASL
+C0/4AD6: 0A           ASL
+C0/4AD7: 85 D9        STA $D9
+C0/4AD9: A5 DD        LDA $DD
+C0/4ADB: 29 0F        AND #$0F
+C0/4ADD: 05 D9        ORA $D9
+C0/4ADF: 99 28 05     STA $0528,Y
+C0/4AE2: 38           SEC
+C0/4AE3: 60           RTS

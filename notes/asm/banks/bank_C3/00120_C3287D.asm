@@ -1,0 +1,55 @@
+C3/287D: 8C A5 78     STY $78A5
+C3/2880: 61 70        ADC ($70,X)
+C3/2882: 07 76        ORA [$76]
+C3/2884: 46 F0        LSR $F0
+C3/2886: 6A           ROR
+C3/2887: 03 90        ORA $90,S
+C3/2889: 7D 07 53     ADC $5307,X
+C3/288C: 8D 87 07     STA $0787
+C3/288F: 51 17        EOR ($17),Y
+C3/2891: C0 8C 07     CPY #$078C
+C3/2894: 8E A5 B0     STX $B0A5
+C3/2897: 44 04 90     MVP $04,$90
+C3/289A: DE 4B 64     DEC $644B,X
+C3/289D: A4 CE        LDY $CE
+C3/289F: 01 65        ORA ($65,X)
+C3/28A1: 51 41        EOR ($41),Y
+C3/28A3: 0C 04 C0     TSB $C004
+C3/28A6: 00 32        BRK $32
+C3/28A8: 01 F2        ORA ($F2,X)
+C3/28AA: 69 00 02     ADC #$0200
+C3/28AD: C5 42        CMP $42
+C3/28AF: F0 19        BEQ $28CA
+C3/28B1: 02 F2        COP $F2
+C3/28B3: E9 80 01     SBC #$0180
+C3/28B6: 09 00 04     ORA #$0400
+C3/28B9: 00 E6        BRK $E6
+C3/28BB: A4 E6        LDY $E6
+C3/28BD: A4 64        LDY $64
+C3/28BF: A6 A5        LDX $A5
+C3/28C1: 73 00        ADC ($00,S),Y
+C3/28C3: 38           SEC
+C3/28C4: E9 00 10     SBC #$1000
+C3/28C7: C5 4E        CMP $4E
+C3/28C9: 10 0D        BPL $28D8
+C3/28CB: 08           PHP
+C3/28CC: A5 73        LDA $73
+C3/28CE: 69 09 10     ADC #$1009
+C3/28D1: F0 06        BEQ $28D9
+C3/28D3: 10 04        BPL $28D9
+C3/28D5: 80 E6        BRA $28BD
+C3/28D7: A6 E6        LDX $E6
+C3/28D9: A6 A5        LDX $A5
+C3/28DB: A6 0A        LDX $0A
+C3/28DD: 01 00        ORA ($00,X)
+C3/28DF: 10 05        BPL $28E6
+C3/28E1: A4 85        LDY $85
+C3/28E3: A4 1E        LDY $1E
+C3/28E5: 02 A4        COP $A4
+C3/28E7: 85 A8        STA $A8
+C3/28E9: 20 4C CB     JSR $CB4C
+C3/28EC: 4B           PHK
+C3/28ED: A5 A8        LDA $A8
+C3/28EF: 96 05        STX $05,Y
+C3/28F1: D0 0D        BNE $2900
+C3/28F3: 40           RTI

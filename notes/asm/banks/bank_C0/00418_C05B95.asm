@@ -1,0 +1,6 @@
+C0/5B95: 64 EA        STZ $EA
+C0/5B97: A6 6D        LDX $6D
+C0/5B99: BD 00 0F     LDA $0F00,X
+C0/5B9C: D0 02        BNE $5BA0
+C0/5B9E: 18           CLC
+C0/5B9F: 60           RTS

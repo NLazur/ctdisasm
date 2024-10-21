@@ -1,0 +1,42 @@
+FD/997F: 0D A0 01     ORA $01A0
+FD/9982: A6 01        LDX $01
+FD/9984: BB           TYX
+FD/9985: 02 C0        COP $C0
+FD/9987: BC 44 01     LDY $0144,X
+FD/998A: BF 02 D0 C0  LDA $C0D002,X
+FD/998E: 01 C3        ORA ($C3,X)
+FD/9990: 02 D0        COP $D0
+FD/9992: C4 44        CPY $44
+FD/9994: 01 C7        ORA ($C7,X)
+FD/9996: 02 D0        COP $D0
+FD/9998: C8           INY
+FD/9999: 01 CB        ORA ($CB,X)
+FD/999B: 02 D0        COP $D0
+FD/999D: CC 44 01     CPY $0144
+FD/99A0: CF 02 D0 D0  CMP $D0D002
+FD/99A4: 01 D3        ORA ($D3,X)
+FD/99A6: 02 D0        COP $D0
+FD/99A8: D4 04        PEI $04
+FD/99AA: 01 D7        ORA ($D7,X)
+FD/99AC: 02 D0        COP $D0
+FD/99AE: D8           CLD
+FD/99AF: 01 DD        ORA ($DD,X)
+FD/99B1: 01 F6        ORA ($F6,X)
+FD/99B3: 41 02        EOR ($02,X)
+FD/99B5: C0 F7 01     CPY #$01F7
+FD/99B8: 05 02        ORA $02
+FD/99BA: 10 02        BPL $99BE
+FD/99BC: C0 11 10     CPY #$1011
+FD/99BF: 02 1B        COP $1B
+FD/99C1: 02 2B        COP $2B
+FD/99C3: 02 C0        COP $C0
+FD/99C5: 2C 02 40     BIT $4002
+FD/99C8: 10 02        BPL $99CC
+FD/99CA: 42 02        WDM $02
+FD/99CC: 43 02        EOR $02,S
+FD/99CE: B0 4C        BCS $9A1C
+FD/99D0: 02 54        COP $54
+FD/99D2: 04 02        TSB $02
+FD/99D4: 66 02        ROR $02
+FD/99D6: C0 00 B8     CPY #$B800
+FD/99D9: 60           RTS

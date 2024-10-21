@@ -1,0 +1,42 @@
+FD/7B72: 73 0F        ADC ($0F,S),Y
+FD/7B74: 01 3F        ORA ($3F,X)
+FD/7B76: 61 95        ADC ($95,X)
+FD/7B78: 04 68        TSB $68
+FD/7B7A: 35 F8        AND $F8,X
+FD/7B7C: 3F 60 E7 20  AND $20E760,X
+FD/7B80: 76 2A        ROR $2A,X
+FD/7B82: 36 14        ROL $14,X
+FD/7B84: 16 04        ASL $04,X
+FD/7B86: 90 78        BCC $7C00
+FD/7B88: 16 65        ASL $65,X
+FD/7B8A: 67 A1        ADC [$A1]
+FD/7B8C: 46 35        LSR $35
+FD/7B8E: 7C 7F 7C     JMP ($7C7F,X)
+FD/7B91: 7F 80 18 98  ADC $981880,X
+FD/7B95: 55 2B        EOR $2B,X
+FD/7B97: 03 68        ORA $68,S
+FD/7B99: 0A           ASL
+FD/7B9A: 4A           LSR
+FD/7B9B: 1A           INC
+FD/7B9C: FF FE 00 E5  SBC $E500FE,X
+FD/7BA0: 1C FD 90     TRB $90FD
+FD/7BA3: FC FD FC     JSR ($FCFD,X)
+FD/7BA6: 01 38        ORA ($38,X)
+FD/7BA8: 02 05        COP $05
+FD/7BAA: F8           SED
+FD/7BAB: B2 19        LDA ($19)
+FD/7BAD: DC 02 01     JMP [$0102]
+FD/7BB0: 02 10        COP $10
+FD/7BB2: 26 33        ROL $33
+FD/7BB4: B5 17        LDA $17,X
+FD/7BB6: E0 01        CPX #$01
+FD/7BB8: 80 B6        BRA $7B70
+FD/7BBA: 17 03        ORA [$03],Y
+FD/7BBC: 28           PLP
+FD/7BBD: 12 04        ORA ($04)
+FD/7BBF: 50 F3        BVC $7BB4
+FD/7BC1: FC F2 FD     JSR ($FDF2,X)
+FD/7BC4: F3 FD        SBC ($FD,S),Y
+FD/7BC6: 20 F3 FC     JSR $FCF3
+FD/7BC9: F9 FE F8     SBC $F8FE,Y
+FD/7BCC: 60           RTS

@@ -1,0 +1,66 @@
+FE/11C5: CD 35 8E     CMP $8E35
+FE/11C8: 2D 00 2C     AND $2C00
+FE/11CB: 21 2A        AND ($2A,X)
+FE/11CD: 29 29 29     AND #$2929
+FE/11D0: 0B           PHD
+FE/11D1: 21 00        AND ($00,X)
+FE/11D3: 0B           PHD
+FE/11D4: 25 EB        AND $EB
+FE/11D6: 18           CLC
+FE/11D7: EB           XBA
+FE/11D8: 18           CLC
+FE/11D9: 2B           PLD
+FE/11DA: 1D 40 2B     ORA $2B40,X
+FE/11DD: 21 0A        AND ($0A,X)
+FE/11DF: 21 0A        AND ($0A,X)
+FE/11E1: 1D 02 50     ORA $5002,X
+FE/11E4: 09 00 1D     ORA #$1D00
+FE/11E7: E8           INX
+FE/11E8: 1C 0A 21     TRB $210A
+FE/11EB: 09 1D EA     ORA #$EA1D
+FE/11EE: 00 18        BRK $18
+FE/11F0: EA           NOP
+FE/11F1: 1C E9 1C     TRB $1CE9
+FE/11F4: 09 1D EB     ORA #$EB1D
+FE/11F7: 00 1C        BRK $1C
+FE/11F9: CB           WAI
+FE/11FA: 1C C9 14     TRB $14C9
+FE/11FD: 0B           PHD
+FE/11FE: 1D C9 00     ORA $00C9,X
+FE/1201: 14 29        TRB $29
+FE/1203: 25 C9        AND $C9
+FE/1205: 18           CLC
+FE/1206: E9 1C C9     SBC #$C91C
+FE/1209: 01 18        ORA ($18,X)
+FE/120B: 00 C8        BRK $C8
+FE/120D: 18           CLC
+FE/120E: C8           INY
+FE/120F: 1C 08 1D     TRB $1D08
+FE/1212: C6 00        DEC $00
+FE/1214: 10 C5        BPL $11DB
+FE/1216: 14 C7        TRB $C7
+FE/1218: 14 A4        TRB $A4
+FE/121A: 14 84        TRB $84
+FE/121C: 04 10        TSB $10
+FE/121E: A6 04        LDX $04
+FE/1220: 00 64        BRK $64
+FE/1222: 0C 42 08     TSB $0842
+FE/1225: 00 00        BRK $00
+FE/1227: 38           SEC
+FE/1228: DF 7B 9D 77  CMP $779D7B,X
+FE/122C: 5B           TCD
+FE/122D: 6F 39 00 67  ADC $670039
+FE/1231: F8           SED
+FE/1232: 62 D6 5A     PER $FE6D0B
+FE/1235: 94 56        STY $56,X
+FE/1237: 73 00        ADC ($00,S),Y
+FE/1239: 52 51        EOR ($51)
+FE/123B: 4E 0F 46     LSR $460F
+FE/123E: CD 41 AC     CMP $AC41
+FE/1241: 80 39        BRA $127C
+FE/1243: 6A           ROR
+FE/1244: 35 48        AND $48,X
+FE/1246: 2D 06 29     AND $2906
+FE/1249: 20 00 00     JSR $0000
+FE/124C: 77 3A        ADC [$3A],Y
+FE/124E: 6B           RTL

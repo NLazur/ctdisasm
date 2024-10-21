@@ -1,0 +1,141 @@
+C3/01E4: 8B           PHB
+C3/01E5: 0B           PHD
+C3/01E6: 08           PHP
+C3/01E7: C2 30        REP #$30
+C3/01E9: 48           PHA
+C3/01EA: DA           PHX
+C3/01EB: 5A           PHY
+C3/01EC: A9 00 03     LDA #$0300
+C3/01EF: 5B           TCD
+C3/01F0: E2 20        SEP #$20
+C3/01F2: A5 50        LDA $50
+C3/01F4: F0 45        BEQ $023B
+C3/01F6: A5 51        LDA $51
+C3/01F8: D0 3A        BNE $0234
+C3/01FA: 64 F0        STZ $F0
+C3/01FC: A5 50        LDA $50
+C3/01FE: C9 01        CMP #$01
+C3/0200: F0 04        BEQ $0206
+C3/0202: A9 FF        LDA #$FF
+C3/0204: 85 F0        STA $F0
+C3/0206: C2 21        REP #$21
+C3/0208: A5 52        LDA $52
+C3/020A: 69 C0 01     ADC #$01C0
+C3/020D: AA           TAX
+C3/020E: 9B           TXY
+C3/020F: C8           INY
+C3/0210: 8B           PHB
+C3/0211: A5 54        LDA $54
+C3/0213: 4A           LSR
+C3/0214: 90 0E        BCC $0224
+C3/0216: A5 F0        LDA $F0
+C3/0218: 9F 00 00 7F  STA $7F0000,X
+C3/021C: A9 DE 00     LDA #$00DE
+C3/021F: 54 7F 7F     MVN $7F,$7F
+C3/0222: 80 0C        BRA $0230
+C3/0224: A5 F0        LDA $F0
+C3/0226: 9F 00 00 7E  STA $7E0000,X
+C3/022A: A9 DE 00     LDA #$00DE
+C3/022D: 54 7E 7E     MVN $7E,$7E
+C3/0230: AB           PLB
+C3/0231: E2 20        SEP #$20
+C3/0233: 7B           TDC
+C3/0234: 1A           INC
+C3/0235: 85 51        STA $51
+C3/0237: C9 20        CMP #$20
+C3/0239: 30 07        BMI $0242
+C3/023B: 64 51        STZ $51
+C3/023D: 64 50        STZ $50
+C3/023F: 4C BD 01     JMP $01BD
+C3/0242: A9 C0        LDA #$C0
+C3/0244: 85 57        STA $57
+C3/0246: A9 FE        LDA #$FE
+C3/0248: 85 56        STA $56
+C3/024A: 22 DD 02 C3  JSR $C302DD
+C3/024E: 85 55        STA $55
+C3/0250: C2 20        REP #$20
+C3/0252: A5 52        LDA $52
+C3/0254: 18           CLC
+C3/0255: 69 C0 01     ADC #$01C0
+C3/0258: AA           TAX
+C3/0259: 18           CLC
+C3/025A: 69 E0 00     ADC #$00E0
+C3/025D: 85 F4        STA $F4
+C3/025F: A5 51        LDA $51
+C3/0261: 4A           LSR
+C3/0262: A5 52        LDA $52
+C3/0264: B0 03        BCS $0269
+C3/0266: 69 E0 00     ADC #$00E0
+C3/0269: 8D 81 21     STA $2181
+C3/026C: E2 20        SEP #$20
+C3/026E: A5 54        LDA $54
+C3/0270: 8D 83 21     STA $2183
+C3/0273: 48           PHA
+C3/0274: AB           PLB
+C3/0275: 7B           TDC
+C3/0276: EB           XBA
+C3/0277: A0 01 00     LDY #$0001
+C3/027A: A5 50        LDA $50
+C3/027C: C9 02        CMP #$02
+C3/027E: F0 2E        BEQ $02AE
+C3/0280: 88           DEY
+C3/0281: D0 13        BNE $0296
+C3/0283: A7 55        LDA [$55]
+C3/0285: 85 55        STA $55
+C3/0287: 29 1F        AND #$1F
+C3/0289: 69 03        ADC #$03
+C3/028B: A8           TAY
+C3/028C: A7 55        LDA [$55]
+C3/028E: 85 55        STA $55
+C3/0290: 29 03        AND #$03
+C3/0292: 69 08        ADC #$08
+C3/0294: 85 F2        STA $F2
+C3/0296: BD 00 00     LDA $0000,X
+C3/0299: 65 F2        ADC $F2
+C3/029B: 90 02        BCC $029F
+C3/029D: A9 FF        LDA #$FF
+C3/029F: 8F 80 21 00  STA $002180
+C3/02A3: 9D 00 00     STA $0000,X
+C3/02A6: E8           INX
+C3/02A7: E4 F4        CPX $F4
+C3/02A9: D0 D5        BNE $0280
+C3/02AB: 4C BD 01     JMP $01BD
+C3/02AE: 88           DEY
+C3/02AF: D0 13        BNE $02C4
+C3/02B1: A7 55        LDA [$55]
+C3/02B3: 85 55        STA $55
+C3/02B5: 29 1F        AND #$1F
+C3/02B7: 69 03        ADC #$03
+C3/02B9: A8           TAY
+C3/02BA: A7 55        LDA [$55]
+C3/02BC: 85 55        STA $55
+C3/02BE: 29 03        AND #$03
+C3/02C0: 69 08        ADC #$08
+C3/02C2: 85 F2        STA $F2
+C3/02C4: BD 00 00     LDA $0000,X
+C3/02C7: E5 F2        SBC $F2
+C3/02C9: 10 03        BPL $02CE
+C3/02CB: B0 01        BCS $02CE
+C3/02CD: 7B           TDC
+C3/02CE: 8F 80 21 00  STA $002180
+C3/02D2: 9D 00 00     STA $0000,X
+C3/02D5: E8           INX
+C3/02D6: E4 F4        CPX $F4
+C3/02D8: D0 D4        BNE $02AE
+C3/02DA: 4C BD 01     JMP $01BD
+C3/02DD: 2A           ROL
+C3/02DE: 6D 86 03     ADC $0386
+C3/02E1: 8D 86 03     STA $0386
+C3/02E4: 8A           TXA
+C3/02E5: 6D 86 03     ADC $0386
+C3/02E8: 6D 08 00     ADC $0008
+C3/02EB: CD 37 21     CMP $2137
+C3/02EE: 6D 3C 21     ADC $213C
+C3/02F1: ED 3D 21     SBC $213D
+C3/02F4: 6D 86 03     ADC $0386
+C3/02F7: 6D F0 00     ADC $00F0
+C3/02FA: 4D F2 00     EOR $00F2
+C3/02FD: 6D F4 00     ADC $00F4
+C3/0300: ED 3D 21     SBC $213D
+C3/0303: 8D 86 03     STA $0386
+C3/0306: 6B           RTL

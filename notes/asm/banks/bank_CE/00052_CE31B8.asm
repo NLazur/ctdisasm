@@ -1,0 +1,4 @@
+CE/31B8: 1E 40 00     ASL $0040,X
+CE/31BB: 1E 3F 77     ASL $773F,X
+CE/31BE: 80 1E        BRA $31DE
+CE/31C0: 40           RTI

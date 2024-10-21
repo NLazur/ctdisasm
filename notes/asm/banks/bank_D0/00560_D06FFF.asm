@@ -1,0 +1,65 @@
+D0/6FFF: C0 40        CPY #$40
+D0/7001: C0 00        CPY #$00
+D0/7003: 80 80        BRA $6F85
+D0/7005: 80 80        BRA $6F87
+D0/7007: 80 00        BRA $7009
+D0/7009: 00 00        BRK $00
+D0/700B: 00 00        BRK $00
+D0/700D: 00 00        BRK $00
+D0/700F: 00 00        BRK $00
+D0/7011: 00 00        BRK $00
+D0/7013: 00 1F        BRK $1F
+D0/7015: 1F E0 FF 00  ORA $00FFE0,X
+D0/7019: 00 00        BRK $00
+D0/701B: 00 00        BRK $00
+D0/701D: 00 00        BRK $00
+D0/701F: 00 00        BRK $00
+D0/7021: 00 FF        BRK $FF
+D0/7023: FF 00 FF FF  SBC $FFFF00,X
+D0/7027: 00 00        BRK $00
+D0/7029: 00 00        BRK $00
+D0/702B: 00 00        BRK $00
+D0/702D: 00 00        BRK $00
+D0/702F: 00 00        BRK $00
+D0/7031: 00 80        BRK $80
+D0/7033: 80 30        BRA $7065
+D0/7035: F0 C4        BEQ $6FFB
+D0/7037: 3C BF C0     BIT $C0BF,X
+D0/703A: BF C0 BF C0  LDA $C0BFC0,X
+D0/703E: BF C0 BF C0  LDA $C0BFC0,X
+D0/7042: BF C0 BF C0  LDA $C0BFC0,X
+D0/7046: BF C0 D1 31  LDA $31D1C0,X
+D0/704A: D1 31        CMP ($31),Y
+D0/704C: E9 19        SBC #$19
+D0/704E: E9 19        SBC #$19
+D0/7050: E9 19        SBC #$19
+D0/7052: E8           INX
+D0/7053: 18           CLC
+D0/7054: E8           INX
+D0/7055: 18           CLC
+D0/7056: F4 0C 20     PEA $200C
+D0/7059: E0 60 A0     CPX #$A060
+D0/705C: 50 B0        BVC $700E
+D0/705E: 50 B0        BVC $7010
+D0/7060: 50 B0        BVC $7012
+D0/7062: 90 F0        BCC $7054
+D0/7064: A8           TAY
+D0/7065: D8           CLD
+D0/7066: A8           TAY
+D0/7067: D8           CLD
+D0/7068: 02 03        COP $03
+D0/706A: 02 03        COP $03
+D0/706C: 01 01        ORA ($01,X)
+D0/706E: 01 01        ORA ($01,X)
+D0/7070: 01 01        ORA ($01,X)
+D0/7072: 00 00        BRK $00
+D0/7074: 00 00        BRK $00
+D0/7076: 00 00        BRK $00
+D0/7078: FD 03 FD     SBC $FD03,X
+D0/707B: 03 7D        ORA $7D,S
+D0/707D: 83 7E        STA $7E,S
+D0/707F: 81 7E        STA ($7E,X)
+D0/7081: 81 BF        STA ($BF,X)
+D0/7083: C0 BF        CPY #$BF
+D0/7085: C0 7F        CPY #$7F
+D0/7087: 40           RTI

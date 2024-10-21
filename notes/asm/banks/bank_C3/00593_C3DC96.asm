@@ -1,0 +1,59 @@
+C3/DC96: 00 40        BRK $40
+C3/DC98: 18           CLC
+C3/DC99: 52 4A        EOR ($4A)
+C3/DC9B: 02 00        COP $00
+C3/DC9D: 01 10        ORA ($10,X)
+C3/DC9F: 8A           TXA
+C3/DCA0: 3D E7 2C     AND $2CE7,X
+C3/DCA3: C5 1C        CMP $1C
+C3/DCA5: 00 83        BRK $83
+C3/DCA7: 14 F5        TRB $F5
+C3/DCA9: 4E 53 3E     LSR $3E53
+C3/DCAC: D0 31        BNE $DCDF
+C3/DCAE: 00 6D        BRK $6D
+C3/DCB0: 21 16        AND ($16,X)
+C3/DCB2: 1A           INC
+C3/DCB3: D3 0D        CMP ($0D,S),Y
+C3/DCB5: 10 11        BPL $DCC8
+C3/DCB7: 42 78        WDM $78
+C3/DCB9: 00 FC        BRK $FC
+C3/DCBB: AF 14 40 48  LDA $484014
+C3/DCBF: 00 00        BRK $00
+C3/DCC1: B5 49        LDA $49,X
+C3/DCC3: AE 31 6D     LDX $6D31
+C3/DCC6: 29 2A 19     AND #$192A
+C3/DCC9: 00 A3        BRK $A3
+C3/DCCB: 18           CLC
+C3/DCCC: 85 18        STA $18
+C3/DCCE: A5 14        LDA $14
+C3/DCD0: 84 14        STY $14
+C3/DCD2: 00 42        BRK $42
+C3/DCD4: 18           CLC
+C3/DCD5: 23 18        AND $18,S
+C3/DCD7: 42 0C        WDM $0C
+C3/DCD9: 21 04        AND ($04,X)
+C3/DCDB: 00 1B        BRK $1B
+C3/DCDD: 6E 07 21     ROR $2107
+C3/DCE0: 86 24        STX $24
+C3/DCE2: 64 10        STZ $10
+C3/DCE4: 2C 00 38     BIT $3800
+C3/DCE7: 20 18 1E     JSR $1E18
+C3/DCEA: 18           CLC
+C3/DCEB: A3 1E        LDA $1E,S
+C3/DCED: 20 42 18     JSR $1842
+C3/DCF0: C0 1B 6E     CPY #$6E1B
+C3/DCF3: 86 24        STX $24
+C3/DCF5: 07 21        ORA [$21]
+C3/DCF7: 20 38 1E     JSR $1E38
+C3/DCFA: 18           CLC
+C3/DCFB: 3A           DEC
+C3/DCFC: 85 1E        STA $1E
+C3/DCFE: 20 23 20     JSR $2023
+C3/DD01: 00 40        BRK $40
+C3/DD03: 58           CLI
+C3/DD04: 1E 18 A5     ASL $A518,X
+C3/DD07: 14 44        TRB $44
+C3/DD09: 54 00 F9     MVN $00,$F9
+C3/DD0C: 1E 18 42     ASL $4218,X
+C3/DD0F: 0C 40 28     TSB $2840
+C3/DD12: 40           RTI

@@ -1,0 +1,49 @@
+C3/9620: 8C 7F B0     STY $B07F
+C3/9623: 01 60        ORA ($60,X)
+C3/9625: 8C 7F 61     STY $617F
+C3/9628: B0 01        BCS $962B
+C3/962A: 80 8C        BRA $95B8
+C3/962C: 7F 0C 73 02  ADC $02730C,X
+C3/9630: 93 02        STA ($02,S),Y
+C3/9632: 12 00        ORA ($00)
+C3/9634: 38           SEC
+C3/9635: 1E 0D 1E     ASL $1E0D,X
+C3/9638: 14 0C        TRB $0C
+C3/963A: 2A           ROL
+C3/963B: 0B           PHD
+C3/963C: 00 2C        BRK $2C
+C3/963E: 0B           PHD
+C3/963F: 24 13        BIT $13
+C3/9641: 08           PHP
+C3/9642: 00 FE        BRK $FE
+C3/9644: 13 00        ORA ($00,S),Y
+C3/9646: 09 00 FF     ORA #$FF00
+C3/9649: 4E 23 EE     LSR $EE23
+C3/964C: C6 4E        DEC $4E
+C3/964E: 02 F5        COP $F5
+C3/9650: 55 10        EOR $10,X
+C3/9652: 1B           TCS
+C3/9653: 1E E8 0D     ASL $0DE8,X
+C3/9656: 1E 17 20     ASL $2017,X
+C3/9659: 0B           PHD
+C3/965A: 1A           INC
+C3/965B: 46 24        LSR $24
+C3/965D: FC 1D F0     JSR ($F01D,X)
+C3/9660: 1B           TCS
+C3/9661: 1E 00 E9     ASL $E900,X
+C3/9664: 38           SEC
+C3/9665: 10 3C        BPL $96A3
+C3/9667: E7 80        SBC [$80]
+C3/9669: 2C 80 00     BIT $0080
+C3/966C: 00 70        BRK $70
+C3/966E: 00 09        BRK $09
+C3/9670: 76 19        ROR $19,X
+C3/9672: 7F 09 20 A4  ADC $A42009,X
+C3/9676: 19 7F 38     ORA $387F,Y
+C3/9679: 04 12        TSB $12
+C3/967B: 10 70        BPL $96ED
+C3/967D: 00 10        BRK $10
+C3/967F: 88           DEY
+C3/9680: 00 09        BRK $09
+C3/9682: 85 12        STA $12
+C3/9684: 40           RTI

@@ -1,0 +1,71 @@
+D0/1FAB: E8           INX
+D0/1FAC: 70 E0        BVS $1F8E
+D0/1FAE: 80 A0        BRA $1F50
+D0/1FB0: 04 04        TSB $04
+D0/1FB2: 04 0C        TSB $0C
+D0/1FB4: 08           PHP
+D0/1FB5: 18           CLC
+D0/1FB6: 10 60        BPL $2018
+D0/1FB8: 00 00        BRK $00
+D0/1FBA: 00 00        BRK $00
+D0/1FBC: 00 00        BRK $00
+D0/1FBE: 00 00        BRK $00
+D0/1FC0: 00 00        BRK $00
+D0/1FC2: 00 00        BRK $00
+D0/1FC4: 1E 00 04     ASL $0400,X
+D0/1FC7: 00 00        BRK $00
+D0/1FC9: 00 00        BRK $00
+D0/1FCB: 00 00        BRK $00
+D0/1FCD: 00 1F        BRK $1F
+D0/1FCF: 07 00        ORA [$00]
+D0/1FD1: 00 00        BRK $00
+D0/1FD3: 00 1E        BRK $1E
+D0/1FD5: 00 03        BRK $03
+D0/1FD7: 00 C2        BRK $C2
+D0/1FD9: 03 23        ORA $23,S
+D0/1FDB: 0C 40 7F     TSB $7F40
+D0/1FDE: FF 00 00 00  SBC $000000,X
+D0/1FE2: 1F 03 FC 30  ORA $30FC03,X
+D0/1FE6: 80 00        BRA $1FE8
+D0/1FE8: 00 00        BRK $00
+D0/1FEA: F8           SED
+D0/1FEB: 00 0F        BRK $0F
+D0/1FED: 0F 4F 70 03  ORA $03704F
+D0/1FF1: FC FF 00     JSR ($00FF,X)
+D0/1FF4: FF 00 FF 00  SBC $00FF00,X
+D0/1FF8: 00 FF        BRK $FF
+D0/1FFA: F0 80        BEQ $1F7C
+D0/1FFC: 00 00        BRK $00
+D0/1FFE: 00 00        BRK $00
+D0/2000: 00 00        BRK $00
+D0/2002: 00 00        BRK $00
+D0/2004: 00 00        BRK $00
+D0/2006: 00 00        BRK $00
+D0/2008: 07 00        ORA [$00]
+D0/200A: 29 0F        AND #$0F
+D0/200C: 16 07        ASL $07,X
+D0/200E: B3 3C        LDA ($3C,S),Y
+D0/2010: 00 00        BRK $00
+D0/2012: 00 00        BRK $00
+D0/2014: 07 30        ORA [$30]
+D0/2016: 18           CLC
+D0/2017: C0 00        CPY #$00
+D0/2019: 00 00        BRK $00
+D0/201B: 00 00        BRK $00
+D0/201D: 00 00        BRK $00
+D0/201F: 00 0F        BRK $0F
+D0/2021: 00 F8        BRK $F8
+D0/2023: E0 FC        CPX #$FC
+D0/2025: 7C D3 30     JMP ($30D3,X)
+D0/2028: 00 00        BRK $00
+D0/202A: 00 00        BRK $00
+D0/202C: FF 18 03 0F  SBC $0F0318,X
+D0/2030: 00 00        BRK $00
+D0/2032: 00 00        BRK $00
+D0/2034: 04 03        TSB $03
+D0/2036: 08           PHP
+D0/2037: 02 5A        COP $5A
+D0/2039: 9B           TXY
+D0/203A: 28           PLP
+D0/203B: 4F 80 FF 5F  EOR $5FFF80
+D0/203F: 60           RTS

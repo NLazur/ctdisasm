@@ -1,0 +1,70 @@
+C0/5FB6: C8           INY
+C0/5FB7: BB           TYX
+C0/5FB8: 7B           TDC
+C0/5FB9: EB           XBA
+C0/5FBA: BF 01 20 7F  LDA $7F2001,X
+C0/5FBE: 85 DB        STA $DB
+C0/5FC0: AA           TAX
+C0/5FC1: 64 DC        STZ $DC
+C0/5FC3: BD 01 1C     LDA $1C01,X
+C0/5FC6: D0 71        BNE $6039
+C0/5FC8: BD 00 11     LDA $1100,X
+C0/5FCB: 30 6C        BMI $6039
+C0/5FCD: BD 00 10     LDA $1000,X
+C0/5FD0: 30 67        BMI $6039
+C0/5FD2: BD 00 1C     LDA $1C00,X
+C0/5FD5: 85 D9        STA $D9
+C0/5FD7: C8           INY
+C0/5FD8: BB           TYX
+C0/5FD9: BF 01 20 7F  LDA $7F2001,X
+C0/5FDD: 85 DD        STA $DD
+C0/5FDF: 4A           LSR
+C0/5FE0: 4A           LSR
+C0/5FE1: 4A           LSR
+C0/5FE2: 4A           LSR
+C0/5FE3: 85 DF        STA $DF
+C0/5FE5: C5 D9        CMP $D9
+C0/5FE7: F0 51        BEQ $603A
+C0/5FE9: B0 53        BCS $603E
+C0/5FEB: A5 D9        LDA $D9
+C0/5FED: 8D 02 42     STA $4202
+C0/5FF0: A9 80        LDA #$80
+C0/5FF2: 8D 03 42     STA $4203
+C0/5FF5: EA           NOP
+C0/5FF6: EA           NOP
+C0/5FF7: C2 20        REP #$20
+C0/5FF9: 18           CLC
+C0/5FFA: AD 16 42     LDA $4216
+C0/5FFD: 65 DB        ADC $DB
+C0/5FFF: 85 E1        STA $E1
+C0/6001: A6 DB        LDX $DB
+C0/6003: BD 80 11     LDA $1180,X
+C0/6006: A6 E1        LDX $E1
+C0/6008: 9F 80 05 7F  STA $7F0580,X
+C0/600C: A5 DB        LDA $DB
+C0/600E: 29 FF 00     AND #$00FF
+C0/6011: 0A           ASL
+C0/6012: 0A           ASL
+C0/6013: 0A           ASL
+C0/6014: 0A           ASL
+C0/6015: 85 E3        STA $E3
+C0/6017: A5 DD        LDA $DD
+C0/6019: 29 0F 00     AND #$000F
+C0/601C: 0A           ASL
+C0/601D: 18           CLC
+C0/601E: 65 E3        ADC $E3
+C0/6020: AA           TAX
+C0/6021: BF 01 20 7F  LDA $7F2001,X
+C0/6025: A6 DB        LDX $DB
+C0/6027: 9D 80 11     STA $1180,X
+C0/602A: E2 20        SEP #$20
+C0/602C: A5 DF        LDA $DF
+C0/602E: 9D 00 1C     STA $1C00,X
+C0/6031: 9E 80 1A     STZ $1A80,X
+C0/6034: 9E 01 1A     STZ $1A01,X
+C0/6037: 80 01        BRA $603A
+C0/6039: C8           INY
+C0/603A: C8           INY
+C0/603B: BB           TYX
+C0/603C: 38           SEC
+C0/603D: 60           RTS

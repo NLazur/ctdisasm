@@ -1,0 +1,44 @@
+C3/83B7: 70 50        BVS $8409
+C3/83B9: 10 00        BPL $83BB
+C3/83BB: 00 94        BRK $94
+C3/83BD: 87 B0        STA [$B0]
+C3/83BF: 16 C0        ASL $C0,X
+C3/83C1: 20 E0 00     JSR $00E0
+C3/83C4: 00 A0        BRK $A0
+C3/83C6: 50 60        BVC $8428
+C3/83C8: 90 60        BCC $842A
+C3/83CA: 88           DEY
+C3/83CB: 38           SEC
+C3/83CC: C4 00        CPY $00
+C3/83CE: B3 48        LDA ($48,S),Y
+C3/83D0: B5 48        LDA $48,X
+C3/83D2: F8           SED
+C3/83D3: C6 9E        DEC $9E
+C3/83D5: E2 00        SEP #$00
+C3/83D7: 3F 22 4C 72  AND $724C22,X
+C3/83DB: 1E 18 05     ASL $0518,X
+C3/83DE: 13 00        ORA ($00,S),Y
+C3/83E0: 00 1F        BRK $1F
+C3/83E2: 02 07        COP $07
+C3/83E4: 3A           DEC
+C3/83E5: 31 BC        AND ($BC),Y
+C3/83E7: 19 00 5D     ORA $5D00,Y
+C3/83EA: 1C 5F 0C     TRB $0C5F
+C3/83ED: 2F 46 0E 26  AND $260E46
+C3/83F1: 10 17        BPL $840A
+C3/83F3: 23 0B        AND $0B,S
+C3/83F5: 11 76        ORA ($76),Y
+C3/83F7: 02 08        COP $08
+C3/83F9: 03 25        ORA $25,S
+C3/83FB: 00 62        BRK $62
+C3/83FD: E3 E1        SBC $E1,S
+C3/83FF: 61 20        ADC ($20,X)
+C3/8401: A0 40 E0     LDY #$E040
+C3/8404: 00 10        BRK $10
+C3/8406: E0 00 2F     CPX #$2F00
+C3/8409: 08           PHP
+C3/840A: 17 37        ORA [$37],Y
+C3/840C: 08           PHP
+C3/840D: 00 81        BRK $81
+C3/840F: 1C 21 16     TRB $1621
+C3/8412: 60           RTS

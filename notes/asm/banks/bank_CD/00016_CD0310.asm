@@ -1,0 +1,3 @@
+CD/0310: AE 1D CD     LDX $CD1D
+CD/0313: F0 01        BEQ $0316
+CD/0315: 6B           RTL

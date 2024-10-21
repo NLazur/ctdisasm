@@ -1,0 +1,54 @@
+C6/C6FE: A1 0E        LDA ($0E,X)
+C6/C700: 0F 3F FD E1  ORA $E1FD3F
+C6/C704: 33 18        AND ($18,S),Y
+C6/C706: 76 A0        ROR $A0,X
+C6/C708: D2 57        CMP ($57)
+C6/C70A: 9E FA 01     STZ $01FA,X
+C6/C70D: F8           SED
+C6/C70E: 89 42 80     BIT #$8042
+C6/C711: FE 00 00     INC $0000,X
+C6/C714: 0C 1F 4F     TSB $4F1F
+C6/C717: FF 32 08 C0  SBC $C00832,X
+C6/C71B: 30 35        BMI $C752
+C6/C71D: 70 71        BVS $C790
+C6/C71F: 72 73        ADC ($73)
+C6/C721: 3C F8 01     BIT $01F8,X
+C6/C724: F8           SED
+C6/C725: 23 89        AND $89,S
+C6/C727: 42 60        WDM $60
+C6/C729: 00 00        BRK $00
+C6/C72B: 2F 00 60 00  AND $006000
+C6/C72F: 20 21 C0     JSR $C021
+C6/C732: 06 07        ASL $07
+C6/C734: 08           PHP
+C6/C735: 09 0A 0B     ORA #$0B0A
+C6/C738: 3C F8 01     BIT $01F8,X
+C6/C73B: F8           SED
+C6/C73C: 1B           TCS
+C6/C73D: 89 42 60     BIT #$6042
+C6/C740: 08           PHP
+C6/C741: 00 60        BRK $60
+C6/C743: 08           PHP
+C6/C744: 1C 04 17     TRB $1704
+C6/C747: 18           CLC
+C6/C748: 19 7C 1A     ORA $1A7C,Y
+C6/C74B: 1B           TCS
+C6/C74C: 3B           TSC
+C6/C74D: F8           SED
+C6/C74E: 01 F8        ORA ($F8,X)
+C6/C750: 89 42 60     BIT #$6042
+C6/C753: 30 1C        BMI $C771
+C6/C755: 04 27        TSB $27
+C6/C757: F0 28        BEQ $C781
+C6/C759: 29 2A 2B     AND #$2B2A
+C6/C75C: 3A           DEC
+C6/C75D: F8           SED
+C6/C75E: 01 F8        ORA ($F8,X)
+C6/C760: 17 40        ORA [$40],Y
+C6/C762: C0 30 E1     CPY #$E130
+C6/C765: 1C 04 37     TRB $3704
+C6/C768: 38           SEC
+C6/C769: 39 3A 32     AND $323A,Y
+C6/C76C: F8           SED
+C6/C76D: 01 F8        ORA ($F8,X)
+C6/C76F: 60           RTS

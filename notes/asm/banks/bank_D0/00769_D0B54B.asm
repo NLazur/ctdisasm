@@ -1,0 +1,63 @@
+D0/B54B: 20 40 20     JSR $2040
+D0/B54E: 50 30        BVC $B580
+D0/B550: 00 00        BRK $00
+D0/B552: 00 00        BRK $00
+D0/B554: 80 E0        BRA $B536
+D0/B556: E0 F0 00     CPX #$00F0
+D0/B559: 00 00        BRK $00
+D0/B55B: 00 00        BRK $00
+D0/B55D: 00 00        BRK $00
+D0/B55F: 00 00        BRK $00
+D0/B561: 00 07        BRK $07
+D0/B563: 07 07        ORA [$07]
+D0/B565: 05 07        ORA $07
+D0/B567: 07 00        ORA [$00]
+D0/B569: 00 00        BRK $00
+D0/B56B: 03 0F        ORA $0F,S
+D0/B56D: 08           PHP
+D0/B56E: 18           CLC
+D0/B56F: 18           CLC
+D0/B570: 00 00        BRK $00
+D0/B572: 00 00        BRK $00
+D0/B574: 00 00        BRK $00
+D0/B576: C0 00 60     CPY #$6000
+D0/B579: 10 20        BPL $B59B
+D0/B57B: 10 28        BPL $B5A5
+D0/B57D: 18           CLC
+D0/B57E: 28           PLP
+D0/B57F: 18           CLC
+D0/B580: 00 00        BRK $00
+D0/B582: 00 C0        BRK $C0
+D0/B584: F0 F0        BEQ $B576
+D0/B586: F8           SED
+D0/B587: F8           SED
+D0/B588: 00 00        BRK $00
+D0/B58A: 00 00        BRK $00
+D0/B58C: 00 00        BRK $00
+D0/B58E: 00 00        BRK $00
+D0/B590: 07 07        ORA [$07]
+D0/B592: 0F 0F 0E 0D  ORA $0D0E0F
+D0/B596: 0D 0F 00     ORA $000F
+D0/B599: 00 03        BRK $03
+D0/B59B: 0F 18 10 30  ORA $301018
+D0/B59F: 30 00        BMI $B5A1
+D0/B5A1: 00 00        BRK $00
+D0/B5A3: 00 C0        BRK $C0
+D0/B5A5: 00 30        BRK $30
+D0/B5A7: 00 38        BRK $38
+D0/B5A9: 00 90        BRK $90
+D0/B5AB: 88           DEY
+D0/B5AC: 94 8C        STY $8C,X
+D0/B5AE: 94 8C        STY $8C,X
+D0/B5B0: 00 00        BRK $00
+D0/B5B2: C0 F0 F8     CPY #$F8F0
+D0/B5B5: 78           SEI
+D0/B5B6: 7C 7C 00     JMP ($007C,X)
+D0/B5B9: 00 00        BRK $00
+D0/B5BB: 00 1E        BRK $1E
+D0/B5BD: 1E 3F 3F     ASL $3F3F,X
+D0/B5C0: 3B           TSC
+D0/B5C1: 3F 35 3B 3B  AND $3B3B35,X
+D0/B5C5: 3F 1E 1E 03  AND $031E1E,X
+D0/B5C9: 0F 01 00 40  ORA $400001
+D0/B5CD: 40           RTI

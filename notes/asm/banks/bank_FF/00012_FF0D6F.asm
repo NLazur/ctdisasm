@@ -1,0 +1,64 @@
+FF/0D6F: 8F 30 C0 00  STA $00C030
+FF/0D73: 80 00        BRA $0D75
+FF/0D75: C0 80 E0     CPY #$E080
+FF/0D78: C0 F0 E0     CPY #$E0F0
+FF/0D7B: F0 E0        BEQ $0D5D
+FF/0D7D: F0 60        BEQ $0DDF
+FF/0D7F: F0 FF        BEQ $0D80
+FF/0D81: 00 FF        BRK $FF
+FF/0D83: 00 FF        BRK $FF
+FF/0D85: 00 FF        BRK $FF
+FF/0D87: 00 FF        BRK $FF
+FF/0D89: 00 FF        BRK $FF
+FF/0D8B: 00 FF        BRK $FF
+FF/0D8D: 00 FF        BRK $FF
+FF/0D8F: 00 00        BRK $00
+FF/0D91: 00 00        BRK $00
+FF/0D93: 00 00        BRK $00
+FF/0D95: 00 00        BRK $00
+FF/0D97: 00 00        BRK $00
+FF/0D99: 00 00        BRK $00
+FF/0D9B: 00 00        BRK $00
+FF/0D9D: 00 00        BRK $00
+FF/0D9F: 00 FF        BRK $FF
+FF/0DA1: 00 FF        BRK $FF
+FF/0DA3: 00 FF        BRK $FF
+FF/0DA5: 00 FF        BRK $FF
+FF/0DA7: 00 FF        BRK $FF
+FF/0DA9: 00 FF        BRK $FF
+FF/0DAB: 00 FF        BRK $FF
+FF/0DAD: 00 FF        BRK $FF
+FF/0DAF: 00 00        BRK $00
+FF/0DB1: 00 00        BRK $00
+FF/0DB3: 00 00        BRK $00
+FF/0DB5: 00 00        BRK $00
+FF/0DB7: 00 00        BRK $00
+FF/0DB9: 00 00        BRK $00
+FF/0DBB: 00 00        BRK $00
+FF/0DBD: 00 00        BRK $00
+FF/0DBF: 00 FF        BRK $FF
+FF/0DC1: 00 FF        BRK $FF
+FF/0DC3: 00 FF        BRK $FF
+FF/0DC5: 00 FF        BRK $FF
+FF/0DC7: 00 FC        BRK $FC
+FF/0DC9: 02 FA        COP $FA
+FF/0DCB: 05 F5        ORA $F5
+FF/0DCD: 0A           ASL
+FF/0DCE: D3 2D        CMP ($2D,S),Y
+FF/0DD0: 00 00        BRK $00
+FF/0DD2: 00 00        BRK $00
+FF/0DD4: 00 00        BRK $00
+FF/0DD6: 00 00        BRK $00
+FF/0DD8: 01 00        ORA ($00,X)
+FF/0DDA: 00 02        BRK $02
+FF/0DDC: 04 00        TSB $00
+FF/0DDE: 10 08        BPL $0DE8
+FF/0DE0: E0 1F 8F     CPX #$8F1F
+FF/0DE3: 7C F9 07     JMP ($07F9,X)
+FF/0DE6: BE 5D 79     LDX $795D,Y
+FF/0DE9: B8           CLV
+FF/0DEA: EF 60 F2 CE  SBC $CEF260
+FF/0DEE: C8           INY
+FF/0DEF: B9 00 00     LDA $0000,Y
+FF/0DF2: 03 00        ORA $00,S
+FF/0DF4: 60           RTS

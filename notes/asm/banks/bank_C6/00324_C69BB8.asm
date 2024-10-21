@@ -1,0 +1,28 @@
+C6/9BB8: C8           INY
+C6/9BB9: 01 03        ORA ($03,X)
+C6/9BBB: 59 03 D0     EOR $D003,Y
+C6/9BBE: 16 17        ASL $17,X
+C6/9BC0: 18           CLC
+C6/9BC1: 19 61 30     ORA $3061,Y
+C6/9BC4: 17 0B        ORA [$0B],Y
+C6/9BC6: 00 75        BRK $75
+C6/9BC8: 12 F5        ORA ($F5)
+C6/9BCA: 7B           TDC
+C6/9BCB: 53 F0        EOR ($F0,S),Y
+C6/9BCD: FF 01 37 20  SBC $203701,X
+C6/9BD1: 09 15 31     ORA #$3115
+C6/9BD4: 21 29        AND ($29,X)
+C6/9BD6: 1F 49 61 C0  ORA $C06149,X
+C6/9BDA: 70 01        BVS $9BDD
+C6/9BDC: 11 13        ORA ($13),Y
+C6/9BDE: 03 88        ORA $88,S
+C6/9BE0: 20 4E 11     JSR $114E
+C6/9BE3: F1 F0        SBC ($F0),Y
+C6/9BE5: 00 17        BRK $17
+C6/9BE7: 00 00        BRK $00
+C6/9BE9: 25 01        AND $01
+C6/9BEB: 3F 00 4D 43  AND $434D00,X
+C6/9BEF: AA           TAX
+C6/9BF0: 10 DF        BPL $9BD1
+C6/9BF2: 7E 11 60     ROR $6011,X
+C6/9BF5: 40           RTI

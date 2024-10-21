@@ -1,0 +1,100 @@
+FE/01D3: F8           SED
+FE/01D4: 04 02        TSB $02
+FE/01D6: 09 ED 08     ORA #$08ED
+FE/01D9: 6E 22 EF     ROR $EF22
+FE/01DC: 75 22        ADC $22,X
+FE/01DE: 3A           DEC
+FE/01DF: 01 03        ORA ($03,X)
+FE/01E1: 20 40 F8     JSR $F840
+FE/01E4: 01 EE        ORA ($EE,X)
+FE/01E6: 01 32        ORA ($32,X)
+FE/01E8: 08           PHP
+FE/01E9: 70 09        BVS $01F4
+FE/01EB: 32 0D        AND ($0D)
+FE/01ED: 01 18        ORA ($18,X)
+FE/01EF: 05 0D        ORA $0D
+FE/01F1: C7 08        CMP [$08]
+FE/01F3: 80 09        BRA $01FE
+FE/01F5: 05 02        ORA $02
+FE/01F7: E9 40 F8     SBC #$F840
+FE/01FA: 09 08 A7     ORA #$A708
+FE/01FD: 00 0A        BRK $0A
+FE/01FF: 74 12        STZ $12,X
+FE/0201: 04 58        TSB $58
+FE/0203: C8           INY
+FE/0204: 09 F2 03     ORA #$03F2
+FE/0207: 39 F2 02     AND $02F2,Y
+FE/020A: 05 E6        ORA $E6
+FE/020C: 00 B2        BRK $B2
+FE/020E: 02 30        COP $30
+FE/0210: 13 FB        ORA ($FB,S),Y
+FE/0212: 21 C3        AND ($C3,X)
+FE/0214: 0D 09 40     ORA $4009
+FE/0217: 03 08        ORA $08,S
+FE/0219: 09 0D 0D     ORA #$0D0D
+FE/021C: 7F F9 E5 00  ADC $00E5F9,X
+FE/0220: 93 83        STA ($83,S),Y
+FE/0222: 00 84        BRK $84
+FE/0224: 08           PHP
+FE/0225: 0A           ASL
+FE/0226: 0C 01 38     TSB $3801
+FE/0229: 0D 0C 47     ORA $470C
+FE/022C: 1A           INC
+FE/022D: 09 C0 F9     ORA #$F9C0
+FE/0230: 03 0A        ORA $0A,S
+FE/0232: AD 02 02     LDA $0202
+FE/0235: 02 0A        COP $0A
+FE/0237: 02 1C        COP $1C
+FE/0239: 02 0D        COP $0D
+FE/023B: 0B           PHD
+FE/023C: 02 BA        COP $BA
+FE/023E: 01 04        ORA ($04,X)
+FE/0240: 18           CLC
+FE/0241: 0D 03 0C     ORA $0C03
+FE/0244: 23 3D        AND $3D,S
+FE/0246: F8           SED
+FE/0247: 7E 1A 0A     ROR $0A1A,X
+FE/024A: 03 03        ORA $03,S
+FE/024C: B4 02        LDY $02,X
+FE/024E: 0D 0D 38     ORA $380D
+FE/0251: 0A           ASL
+FE/0252: 0D 0C 38     ORA $380C
+FE/0255: 02 77        COP $77
+FE/0257: 03 4F        ORA $4F,S
+FE/0259: 00 0C        BRK $0C
+FE/025B: 01 B7        ORA ($B7,X)
+FE/025D: 7C F8 3D     JMP ($3DF8,X)
+FE/0260: 33 37        AND ($37,S),Y
+FE/0262: 00 0C        BRK $0C
+FE/0264: 43 00        EOR $00,S
+FE/0266: 80 00        BRA $0268
+FE/0268: 03 C3        ORA $C3,S
+FE/026A: 18           CLC
+FE/026B: 1D 3A 09     ORA $093A,X
+FE/026E: 02 8B        COP $8B
+FE/0270: 03 01        ORA $01,S
+FE/0272: F8           SED
+FE/0273: 7E 1B 0E     ROR $0E1B,X
+FE/0276: 0E 0A 7C     ASL $7C0A
+FE/0279: 00 0E        BRK $0E
+FE/027B: 01 40        ORA ($40,X)
+FE/027D: 46 13        LSR $13
+FE/027F: 38           SEC
+FE/0280: F8           SED
+FE/0281: 01 F8        ORA ($F8,X)
+FE/0283: 01 F8        ORA ($F8,X)
+FE/0285: 00 FE        BRK $FE
+FE/0287: 00 36        BRK $36
+FE/0289: 12 BF        ORA ($BF)
+FE/028B: 32 C8        AND ($C8)
+FE/028D: 32 4D        AND ($4D)
+FE/028F: 02 3C        COP $3C
+FE/0291: F8           SED
+FE/0292: 01 F8        ORA ($F8,X)
+FE/0294: 01 F8        ORA ($F8,X)
+FE/0296: 7F 01 F8 01  ADC $01F801,X
+FE/029A: F8           SED
+FE/029B: 01 F8        ORA ($F8,X)
+FE/029D: 3F F6 40 FE  AND $FE40F6,X
+FE/02A1: 81 ED        STA ($ED,X)
+FE/02A3: 40           RTI

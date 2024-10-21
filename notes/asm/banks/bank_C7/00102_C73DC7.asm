@@ -1,0 +1,5 @@
+C7/3DC7: F5 28        SBC $28,X
+C7/3DC9: 70 04        BVS $3DCF
+C7/3DCB: A5 08        LDA $08
+C7/3DCD: 80 D5        BRA $3DA4
+C7/3DCF: 40           RTI

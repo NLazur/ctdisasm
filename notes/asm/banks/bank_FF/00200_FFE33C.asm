@@ -1,0 +1,11 @@
+FF/E33C: AB           PLB
+FF/E33D: AB           PLB
+FF/E33E: 3F FF BF 3F  AND $3FBFFF,X
+FF/E342: 7F 00 B5 B5  ADC $B5B500,X
+FF/E346: B4 BF        LDY $BF,X
+FF/E348: 54 C0 7F     MVN $C0,$7F
+FF/E34B: 00 BB        BRK $BB
+FF/E34D: 44 93 44     MVP $93,$44
+FF/E350: 81 44        STA ($44,X)
+FF/E352: 29 00        AND #$00
+FF/E354: 6B           RTL

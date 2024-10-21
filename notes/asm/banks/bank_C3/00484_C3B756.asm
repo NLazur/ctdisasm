@@ -1,0 +1,52 @@
+C3/B756: 5B           TCD
+C3/B757: A6 30        LDX $30
+C3/B759: 78           SEI
+C3/B75A: A6 10        LDX $10
+C3/B75C: F5 A6        SBC $A6,X
+C3/B75E: 00 72        BRK $72
+C3/B760: 88           DEY
+C3/B761: AF 10 12 17  LDA $171210
+C3/B765: 94 50        STY $50,X
+C3/B767: 53 00        EOR ($00,S),Y
+C3/B769: 94 80        STY $80,X
+C3/B76B: 28           PLP
+C3/B76C: 17 8E        ORA [$8E],Y
+C3/B76E: 0C 8C 10     TSB $108C
+C3/B771: 94 40        STY $40,X
+C3/B773: 0C 94 F0     TSB $F094
+C3/B776: 00 31        BRK $31
+C3/B778: 30 C1        BMI $B73B
+C3/B77A: B0 40        BCS $B7BC
+C3/B77C: 52 2C        EOR ($2C)
+C3/B77E: 70 02        BVS $B782
+C3/B780: 88           DEY
+C3/B781: 4E 71 68     LSR $6871
+C3/B784: 30 00        BMI $B786
+C3/B786: 0D 22 03     ORA $0322
+C3/B789: 09 57        ORA #$57
+C3/B78B: 17 7F        ORA [$7F],Y
+C3/B78D: 38           SEC
+C3/B78E: 22 3C FA 19  JSR $19FA3C
+C3/B792: 34 E0        BIT $E0,X
+C3/B794: 79 8D 21     ADC $218D,Y
+C3/B797: 31 A0        AND ($A0),Y
+C3/B799: 15 2C        ORA $2C,X
+C3/B79B: C0 5C        CPY #$5C
+C3/B79D: 2C 60 89     BIT $8960
+C3/B7A0: 2C 00 28     BIT $2800
+C3/B7A3: 09 94        ORA #$94
+C3/B7A5: B1 06        LDA ($06),Y
+C3/B7A7: 10 1B        BPL $B7C4
+C3/B7A9: 22 F4 32 90  JSR $9032F4
+C3/B7AD: 3D 20 40     AND $4020,X
+C3/B7B0: 89 0C        BIT #$0C
+C3/B7B2: 2A           ROL
+C3/B7B3: CA           DEX
+C3/B7B4: 3D C0 5D     AND $5DC0,X
+C3/B7B7: 69 60        ADC #$60
+C3/B7B9: D2 69        CMP ($69)
+C3/B7BB: 00 10        BRK $10
+C3/B7BD: 09 AA        ORA #$AA
+C3/B7BF: DD 6F 00     CMP $006F,X
+C3/B7C2: 14 0C        TRB $0C
+C3/B7C4: 40           RTI

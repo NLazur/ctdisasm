@@ -1,0 +1,50 @@
+C2/D131: A6 61        LDX $61
+C2/D133: A0 02 00     LDY #$0002
+C2/D136: A9 30        LDA #$30
+C2/D138: EB           XBA
+C2/D139: A5 79        LDA $79
+C2/D13B: 0A           ASL
+C2/D13C: 1A           INC
+C2/D13D: 20 B4 FB     JSR $FBB4
+C2/D140: E8           INX
+C2/D141: E8           INX
+C2/D142: E8           INX
+C2/D143: E8           INX
+C2/D144: E8           INX
+C2/D145: E8           INX
+C2/D146: E8           INX
+C2/D147: E8           INX
+C2/D148: E8           INX
+C2/D149: E8           INX
+C2/D14A: A0 10 00     LDY #$0010
+C2/D14D: AD C7 0D     LDA $0DC7
+C2/D150: 20 97 FB     JSR $FB97
+C2/D153: 4C 2C D3     JMP $D32C
+C2/D156: 08           PHP
+C2/D157: E2 20        SEP #$20
+C2/D159: A6 51        LDX $51
+C2/D15B: 8E 79 0D     STX $0D79
+C2/D15E: 9C 7B 0D     STZ $0D7B
+C2/D161: 86 79        STX $79
+C2/D163: A9 FF        LDA #$FF
+C2/D165: 8D 4C 0D     STA $0D4C
+C2/D168: A6 79        LDX $79
+C2/D16A: 9E 49 0D     STZ $0D49,X
+C2/D16D: 22 C4 F9 FF  JSR $FFF9C4
+C2/D171: A5 00        LDA $00
+C2/D173: F0 0A        BEQ $D17F
+C2/D175: A9 1A        LDA #$1A
+C2/D177: 8D 0C 02     STA $020C
+C2/D17A: 20 96 D2     JSR $D296
+C2/D17D: 80 06        BRA $D185
+C2/D17F: FE 49 0D     INC $0D49,X
+C2/D182: 20 9F D1     JSR $D19F
+C2/D185: 20 C4 D2     JSR $D2C4
+C2/D188: E6 79        INC $79
+C2/D18A: A5 79        LDA $79
+C2/D18C: C9 03        CMP #$03
+C2/D18E: 90 D8        BCC $D168
+C2/D190: A2 98 D1     LDX #$D198
+C2/D193: 20 85 83     JSR $8385
+C2/D196: 28           PLP
+C2/D197: 60           RTS

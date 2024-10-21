@@ -1,0 +1,15 @@
+D0/EBD2: 00 51        BRK $51
+D0/EBD4: 04 4A        TSB $4A
+D0/EBD6: 50 80        BVC $EB58
+D0/EBD8: 00 9D        BRK $9D
+D0/EBDA: 0E 9E 0E     ASL $0E9E
+D0/EBDD: 9F 40 0E 9F  STA $9F0E40,X
+D0/EBE1: 4E 9E 4E     LSR $4E9E
+D0/EBE4: 9D 40 F8     STA $F840,X
+D0/EBE7: 0D 18 60     ORA $6018
+D0/EBEA: 0A           ASL
+D0/EBEB: 61 80        ADC ($80,X)
+D0/EBED: 00 28        BRK $28
+D0/EBEF: 18           CLC
+D0/EBF0: 61 4A        ADC ($4A,X)
+D0/EBF2: 60           RTS

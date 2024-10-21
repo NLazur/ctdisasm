@@ -1,0 +1,30 @@
+C0/A61A: 29 7F        AND #$7F
+C0/A61C: 85 58        STA $58
+C0/A61E: 9F C0 30 7E  STA $7E30C0,X
+C0/A622: AD 80 21     LDA $2180
+C0/A625: 85 5A        STA $5A
+C0/A627: 9F 00 70 7E  STA $7E7000,X
+C0/A62B: AD 80 21     LDA $2180
+C0/A62E: 85 5C        STA $5C
+C0/A630: 9F 40 70 7E  STA $7E7040,X
+C0/A634: 7B           TDC
+C0/A635: EB           XBA
+C0/A636: AD 80 21     LDA $2180
+C0/A639: D0 05        BNE $A640
+C0/A63B: A0 00 01     LDY #$0100
+C0/A63E: 80 01        BRA $A641
+C0/A640: A8           TAY
+C0/A641: 88           DEY
+C0/A642: F0 C3        BEQ $A607
+C0/A644: E8           INX
+C0/A645: E4 54        CPX $54
+C0/A647: 90 0E        BCC $A657
+C0/A649: A5 55        LDA $55
+C0/A64B: 1A           INC
+C0/A64C: 85 55        STA $55
+C0/A64E: EB           XBA
+C0/A64F: A9 00        LDA #$00
+C0/A651: AA           TAX
+C0/A652: E4 52        CPX $52
+C0/A654: 90 01        BCC $A657
+C0/A656: 60           RTS

@@ -1,0 +1,27 @@
+C2/EA81: 08           PHP
+C2/EA82: E2 30        SEP #$30
+C2/EA84: A5 00        LDA $00
+C2/EA86: 8D D8 0D     STA $0DD8
+C2/EA89: 98           TYA
+C2/EA8A: 38           SEC
+C2/EA8B: E5 00        SBC $00
+C2/EA8D: 8F 06 42 00  STA $004206
+C2/EA91: 85 01        STA $01
+C2/EA93: B0 04        BCS $EA99
+C2/EA95: 64 01        STZ $01
+C2/EA97: 84 00        STY $00
+C2/EA99: A5 00        LDA $00
+C2/EA9B: F0 01        BEQ $EA9E
+C2/EA9D: 3A           DEC
+C2/EA9E: 18           CLC
+C2/EA9F: 6D DB 0D     ADC $0DDB
+C2/EAA2: 8D DC 0D     STA $0DDC
+C2/EAA5: A5 01        LDA $01
+C2/EAA7: 85 57        STA $57
+C2/EAA9: 8D 94 0D     STA $0D94
+C2/EAAC: 8D DA 0D     STA $0DDA
+C2/EAAF: C2 20        REP #$20
+C2/EAB1: AF 14 42 00  LDA $004214
+C2/EAB5: 8D 98 0D     STA $0D98
+C2/EAB8: 28           PLP
+C2/EAB9: 60           RTS

@@ -1,0 +1,69 @@
+CD/9CBB: 00 73        BRK $73
+CD/9CBD: 03 1B        ORA $1B,S
+CD/9CBF: 09 24 01     ORA #$0124
+CD/9CC2: 03 02        ORA $02,S
+CD/9CC4: 36 70        ROL $70,X
+CD/9CC6: 02 03        COP $03
+CD/9CC8: 0A           ASL
+CD/9CC9: 12 0C        ORA ($0C)
+CD/9CCB: 1B           TCS
+CD/9CCC: 0C 36 03     TSB $0336
+CD/9CCF: 04 00        TSB $00
+CD/9CD1: 73 03        ADC ($03,S),Y
+CD/9CD3: 1C 09 24     TRB $2409
+CD/9CD6: 02 70        COP $70
+CD/9CD8: 02 05        COP $05
+CD/9CDA: 24 03        BIT $03
+CD/9CDC: 71 00        ADC ($00),Y
+CD/9CDE: 73 03        ADC ($03,S),Y
+CD/9CE0: 1C 09 24     TRB $2409
+CD/9CE3: 02 70        COP $70
+CD/9CE5: 02 06        COP $06
+CD/9CE7: 24 03        BIT $03
+CD/9CE9: 71 00        ADC ($00),Y
+CD/9CEB: 90 FF        BCC $9CEC
+CD/9CED: 80 00        BRA $9CEF
+CD/9CEF: 05 9D        ORA $9D
+CD/9CF1: 16 9D        ASL $9D,X
+CD/9CF3: 25 9D        AND $9D
+CD/9CF5: 63 9D        ADC $9D,S
+CD/9CF7: 73 9D        ADC ($9D,S),Y
+CD/9CF9: 88           DEY
+CD/9CFA: 9D C2 9D     STA $9DC2,X
+CD/9CFD: CB           WAI
+CD/9CFE: 9D DF 9D     STA $9DDF,X
+CD/9D01: E4 9D        CPX $9D
+CD/9D03: E5 9D        SBC $9D
+CD/9D05: 24 0A        BIT $0A
+CD/9D07: 72 0D        ADC ($0D)
+CD/9D09: 03 08        ORA $08,S
+CD/9D0B: 36 24        ROL $24,X
+CD/9D0D: 1E 20 0A     ASL $0A20,X
+CD/9D10: 50 06        BVC $9D18
+CD/9D12: 03 2E        ORA $2E,S
+CD/9D14: 01 00        ORA ($00,X)
+CD/9D16: 24 14        BIT $14
+CD/9D18: 78           SEI
+CD/9D19: 5F 20 05 78  EOR $780520,X
+CD/9D1D: 5F 03 05 24  EOR $240503,X
+CD/9D21: 1E 06 03     ASL $0306,X
+CD/9D24: 00 60        BRK $60
+CD/9D26: 0A           ASL
+CD/9D27: 73 00        ADC ($00,S),Y
+CD/9D29: 33 00        AND ($00,S),Y
+CD/9D2B: 3A           DEC
+CD/9D2C: 1E F6 3A     ASL $3AF6,X
+CD/9D2F: 1F C0 1A 36  ORA $361AC0,X
+CD/9D33: 24 0B        BIT $0B
+CD/9D35: 0B           PHD
+CD/9D36: 03 00        ORA $00,S
+CD/9D38: 70 02        BVS $9D3C
+CD/9D3A: 01 85        ORA ($85,X)
+CD/9D3C: C0 A2 71     CPY #$71A2
+CD/9D3F: 36 24        ROL $24,X
+CD/9D41: 0F 0C 33 03  ORA $03330C
+CD/9D45: 30 1F        BMI $9D66
+CD/9D47: 1D 3A 1E     ORA $1E3A,X
+CD/9D4A: FD 1A 36     SBC $361A,X
+CD/9D4D: 24 11        BIT $11
+CD/9D4F: 60           RTS

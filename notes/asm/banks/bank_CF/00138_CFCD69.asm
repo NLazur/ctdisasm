@@ -1,0 +1,188 @@
+CF/CD69: A1 6B        LDA ($6B,X)
+CF/CD6B: E1 C5        SBC ($C5,X)
+CF/CD6D: A1 C5        LDA ($C5,X)
+CF/CD6F: E1 33        SBC ($33,X)
+CF/CD71: A4 35        LDY $35
+CF/CD73: A4 78        LDY $78
+CF/CD75: 15 7B        ORA $7B,X
+CF/CD77: 15 7E        ORA $7E,X
+CF/CD79: 15 81        ORA $81,X
+CF/CD7B: 15 84        ORA $84,X
+CF/CD7D: 15 87        ORA $87,X
+CF/CD7F: 15 37        ORA $37,X
+CF/CD81: 24 39        BIT $39
+CF/CD83: 24 3B        BIT $3B
+CF/CD85: 24 3D        BIT $3D
+CF/CD87: 24 3F        BIT $3F
+CF/CD89: 24 1C        BIT $1C
+CF/CD8B: 20 8A 35     JSR $358A
+CF/CD8E: 8C 35 8E     STY $8E35
+CF/CD91: 35 75        AND $75,X
+CF/CD93: 26 90        ROL $90
+CF/CD95: 35 1C        AND $1C,X
+CF/CD97: 20 92 35     JSR $3592
+CF/CD9A: 1C 20 94     TRB $9420
+CF/CD9D: 15 97        ORA $97,X
+CF/CD9F: 15 37        ORA $37,X
+CF/CDA1: A4 39        LDY $39
+CF/CDA3: A4 3B        LDY $3B
+CF/CDA5: A4 3D        LDY $3D
+CF/CDA7: A4 3F        LDY $3F
+CF/CDA9: A4 1C        LDY $1C
+CF/CDAB: 20 33 A4     JSR $A433
+CF/CDAE: 9A           TXS
+CF/CDAF: 35 9C        AND $9C,X
+CF/CDB1: 35 9E        AND $9E,X
+CF/CDB3: 35 A0        AND $A0,X
+CF/CDB5: 35 A2        AND $A2,X
+CF/CDB7: 35 3F        AND $3F,X
+CF/CDB9: A4 A4        LDY $A4
+CF/CDBB: 35 A6        AND $A6,X
+CF/CDBD: 15 A9        ORA $A9,X
+CF/CDBF: 15 D7        ORA $D7,X
+CF/CDC1: 21 D7        AND ($D7,X)
+CF/CDC3: 61 AC        ADC ($AC,X)
+CF/CDC5: 35 AE        AND $AE,X
+CF/CDC7: 35 B0        AND $B0,X
+CF/CDC9: 35 B2        AND $B2,X
+CF/CDCB: 35 B4        AND $B4,X
+CF/CDCD: 35 B6        AND $B6,X
+CF/CDCF: 35 D7        AND $D7,X
+CF/CDD1: 21 D7        AND ($D7,X)
+CF/CDD3: 61 36        ADC ($36,X)
+CF/CDD5: 20 38 20     JSR $2038
+CF/CDD8: 3D 2E 3F     AND $3F2E,X
+CF/CDDB: 2E 1C 20     ROL $201C
+CF/CDDE: 1C 20 D7     TRB $D720
+CF/CDE1: A1 D7        LDA ($D7,X)
+CF/CDE3: E1 36        SBC ($36,X)
+CF/CDE5: A0 B8        LDY #$B8
+CF/CDE7: 35 BA        AND $BA,X
+CF/CDE9: 35 BC        AND $BC,X
+CF/CDEB: 35 BE        AND $BE,X
+CF/CDED: 35 C0        AND $C0,X
+CF/CDEF: 35 D7        AND $D7,X
+CF/CDF1: A1 D7        LDA ($D7,X)
+CF/CDF3: E1 54        SBC ($54,X)
+CF/CDF5: 20 56 20     JSR $2056
+CF/CDF8: 45 2E        EOR $2E
+CF/CDFA: 47 2E        EOR [$2E]
+CF/CDFC: 49 2E        EOR #$2E
+CF/CDFE: 4B           PHK
+CF/CDFF: 2E D7 21     ROL $21D7
+CF/CE02: D7 61        CMP [$61],Y
+CF/CE04: D7 21        CMP [$21],Y
+CF/CE06: D7 61        CMP [$61],Y
+CF/CE08: D7 21        CMP [$21],Y
+CF/CE0A: D7 61        CMP [$61],Y
+CF/CE0C: 49 AE        EOR #$AE
+CF/CE0E: 4B           PHK
+CF/CE0F: AE 1C 20     LDX $201C
+CF/CE12: 1C 20 1C     TRB $1C20
+CF/CE15: 20 1C 20     JSR $201C
+CF/CE18: 32 20        AND ($20)
+CF/CE1A: 34 20        BIT $20,X
+CF/CE1C: 55 2E        EOR $2E,X
+CF/CE1E: 57 2E        EOR [$2E],Y
+CF/CE20: D7 A1        CMP [$A1],Y
+CF/CE22: D7 E1        CMP [$E1],Y
+CF/CE24: D7 A1        CMP [$A1],Y
+CF/CE26: D7 E1        CMP [$E1],Y
+CF/CE28: D7 A1        CMP [$A1],Y
+CF/CE2A: D7 E1        CMP [$E1],Y
+CF/CE2C: 1C 20 1C     TRB $1C20
+CF/CE2F: 20 48 20     JSR $2048
+CF/CE32: 4A           LSR
+CF/CE33: 20 4C 20     JSR $204C
+CF/CE36: 4E 20 50     LSR $5020
+CF/CE39: 20 52 20     JSR $2052
+CF/CE3C: 6D 2E 6F     ADC $6F2E
+CF/CE3F: 2E 1C 20     ROL $201C
+CF/CE42: 1C 20 1C     TRB $1C20
+CF/CE45: 20 1C 20     JSR $201C
+CF/CE48: 1C 20 1C     TRB $1C20
+CF/CE4B: 20 02 60     JSR $6002
+CF/CE4E: C2 35        REP #$35
+CF/CE50: C4 35        CPY $35
+CF/CE52: C6 35        DEC $35
+CF/CE54: C8           INY
+CF/CE55: 35 CA        AND $CA,X
+CF/CE57: 35 02        AND $02,X
+CF/CE59: E0 CC 35     CPX #$35CC
+CF/CE5C: 1C 20 CE     TRB $CE20
+CF/CE5F: 35 D0        AND $D0,X
+CF/CE61: 35 D2        AND $D2,X
+CF/CE63: 35 D4        AND $D4,X
+CF/CE65: 35 1C        AND $1C,X
+CF/CE67: 20 1C 20     JSR $201C
+CF/CE6A: D4 75        PEI $75
+CF/CE6C: D6 35        DEC $35,X
+CF/CE6E: D8           CLD
+CF/CE6F: 35 02        AND $02,X
+CF/CE71: A0 1C 20     LDY #$201C
+CF/CE74: 1C 20 DA     TRB $DA20
+CF/CE77: 35 1C        AND $1C,X
+CF/CE79: 20 DC 35     JSR $35DC
+CF/CE7C: DE 35 E0     DEC $E035,X
+CF/CE7F: 35 1C        AND $1C,X
+CF/CE81: 20 30 60     JSR $6030
+CF/CE84: E2 35        SEP #$35
+CF/CE86: 02 20        COP $20
+CF/CE88: 1C 20 E4     TRB $E420
+CF/CE8B: 35 30        AND $30,X
+CF/CE8D: 20 1C 20     JSR $201C
+CF/CE90: D7 21        CMP [$21],Y
+CF/CE92: D7 61        CMP [$61],Y
+CF/CE94: D7 21        CMP [$21],Y
+CF/CE96: D7 61        CMP [$61],Y
+CF/CE98: D7 21        CMP [$21],Y
+CF/CE9A: D7 61        CMP [$61],Y
+CF/CE9C: D7 21        CMP [$21],Y
+CF/CE9E: D7 61        CMP [$61],Y
+CF/CEA0: 1C 20 1C     TRB $1C20
+CF/CEA3: 20 E6 35     JSR $35E6
+CF/CEA6: E8           INX
+CF/CEA7: 35 1C        AND $1C,X
+CF/CEA9: 20 EA 35     JSR $35EA
+CF/CEAC: 1C 20 1C     TRB $1C20
+CF/CEAF: 20 D7 A1     JSR $A1D7
+CF/CEB2: D7 E1        CMP [$E1],Y
+CF/CEB4: D7 A1        CMP [$A1],Y
+CF/CEB6: D7 E1        CMP [$E1],Y
+CF/CEB8: D7 A1        CMP [$A1],Y
+CF/CEBA: D7 E1        CMP [$E1],Y
+CF/CEBC: D7 A1        CMP [$A1],Y
+CF/CEBE: D7 E1        CMP [$E1],Y
+CF/CEC0: EC 15 EF     CPX $EF15
+CF/CEC3: 15 EF        ORA $EF,X
+CF/CEC5: 55 EC        EOR $EC,X
+CF/CEC7: 55 F2        EOR $F2,X
+CF/CEC9: 15 F5        ORA $F5,X
+CF/CECB: 15 F8        ORA $F8,X
+CF/CECD: 15 FB        ORA $FB,X
+CF/CECF: 15 1C        ORA $1C,X
+CF/CED1: 20 FE 15     JSR $15FE
+CF/CED4: 01 16        ORA ($16,X)
+CF/CED6: 1C 20 04     TRB $0420
+CF/CED9: 16 07        ASL $07,X
+CF/CEDB: 16 0A        ASL $0A,X
+CF/CEDD: 16 0D        ASL $0D,X
+CF/CEDF: 16 10        ASL $10,X
+CF/CEE1: 16 13        ASL $13,X
+CF/CEE3: 16 16        ASL $16,X
+CF/CEE5: 16 10        ASL $10,X
+CF/CEE7: 56 19        LSR $19,X
+CF/CEE9: 16 1C        ASL $1C,X
+CF/CEEB: 16 1F        ASL $1F,X
+CF/CEED: 16 22        ASL $22,X
+CF/CEEF: 16 25        ASL $25,X
+CF/CEF1: 16 28        ASL $28,X
+CF/CEF3: 16 2B        ASL $2B,X
+CF/CEF5: 16 2E        ASL $2E,X
+CF/CEF7: 16 31        ASL $31,X
+CF/CEF9: 16 34        ASL $34,X
+CF/CEFB: 16 37        ASL $37,X
+CF/CEFD: 16 3A        ASL $3A,X
+CF/CEFF: 16 1C        ASL $1C,X
+CF/CF01: 20 3D 16     JSR $163D
+CF/CF04: 40           RTI

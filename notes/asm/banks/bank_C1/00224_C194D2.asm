@@ -1,0 +1,32 @@
+C1/94D2: 7B           TDC
+C1/94D3: AE D2 B1     LDX $B1D2
+C1/94D6: BF 03 00 CC  LDA $CC0003,X
+C1/94DA: 85 02        STA $02
+C1/94DC: BF 01 00 CC  LDA $CC0001,X
+C1/94E0: 29 01        AND #$01
+C1/94E2: 0A           ASL
+C1/94E3: 0A           ASL
+C1/94E4: 0A           ASL
+C1/94E5: 0A           ASL
+C1/94E6: 85 00        STA $00
+C1/94E8: AD 52 B2     LDA $B252
+C1/94EB: 0A           ASL
+C1/94EC: 0A           ASL
+C1/94ED: AA           TAX
+C1/94EE: A5 02        LDA $02
+C1/94F0: D0 0E        BNE $9500
+C1/94F2: BD 9E B1     LDA $B19E,X
+C1/94F5: 29 10        AND #$10
+C1/94F7: 45 00        EOR $00
+C1/94F9: D0 13        BNE $950E
+C1/94FB: 20 3E 8C     JSR $8C3E
+C1/94FE: 80 13        BRA $9513
+C1/9500: BD 9E B1     LDA $B19E,X
+C1/9503: 29 10        AND #$10
+C1/9505: 45 00        EOR $00
+C1/9507: F0 05        BEQ $950E
+C1/9509: 20 3E 8C     JSR $8C3E
+C1/950C: 80 05        BRA $9513
+C1/950E: A9 01        LDA #$01
+C1/9510: 8D 24 AF     STA $AF24
+C1/9513: 60           RTS

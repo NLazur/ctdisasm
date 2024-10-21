@@ -1,0 +1,80 @@
+D0/C17E: 5F 60 5F 60  EOR $605F60,X
+D0/C182: BF C0 BF C0  LDA $C0BFC0,X
+D0/C186: 00 00        BRK $00
+D0/C188: 3E 00 1E     ROL $1E00,X
+D0/C18B: 00 8E        BRK $8E
+D0/C18D: 00 C0        BRK $C0
+D0/C18F: 00 E0        BRK $E0
+D0/C191: 00 E0        BRK $E0
+D0/C193: 00 E0        BRK $E0
+D0/C195: 00 00        BRK $00
+D0/C197: 00 3E        BRK $3E
+D0/C199: 00 1E        BRK $1E
+D0/C19B: 00 8E        BRK $8E
+D0/C19D: 00 C6        BRK $C6
+D0/C19F: 00 E2        BRK $E2
+D0/C1A1: 00 F0        BRK $F0
+D0/C1A3: 00 F8        BRK $F8
+D0/C1A5: 00 00        BRK $00
+D0/C1A7: 00 00        BRK $00
+D0/C1A9: 00 03        BRK $03
+D0/C1AB: 03 02        ORA $02,S
+D0/C1AD: 03 05        ORA $05,S
+D0/C1AF: 06 05        ASL $05
+D0/C1B1: 06 0B        ASL $0B
+D0/C1B3: 0C 0B 0C     TSB $0C0B
+D0/C1B6: 00 00        BRK $00
+D0/C1B8: 06 06        ASL $06
+D0/C1BA: 1C 1E 02     TRB $021E
+D0/C1BD: 0C 46 40     TSB $4046
+D0/C1C0: 42 60        WDM $60
+D0/C1C2: B0 C0        BCS $C184
+D0/C1C4: B8           CLV
+D0/C1C5: C0 00 00     CPY #$0000
+D0/C1C8: 00 00        BRK $00
+D0/C1CA: 00 00        BRK $00
+D0/C1CC: 00 00        BRK $00
+D0/C1CE: 04 06        TSB $06
+D0/C1D0: 02 00        COP $00
+D0/C1D2: 10 10        BPL $C1E4
+D0/C1D4: 08           PHP
+D0/C1D5: 10 00        BPL $C1D7
+D0/C1D7: 00 00        BRK $00
+D0/C1D9: 00 00        BRK $00
+D0/C1DB: 00 00        BRK $00
+D0/C1DD: 00 00        BRK $00
+D0/C1DF: 00 00        BRK $00
+D0/C1E1: 02 00        COP $00
+D0/C1E3: 00 00        BRK $00
+D0/C1E5: 08           PHP
+D0/C1E6: 00 00        BRK $00
+D0/C1E8: 00 00        BRK $00
+D0/C1EA: 00 00        BRK $00
+D0/C1EC: 00 00        BRK $00
+D0/C1EE: 05 06        ORA $06
+D0/C1F0: 07 08        ORA [$08]
+D0/C1F2: 1F 10 0F 10  ORA $100F10,X
+D0/C1F6: 1F 00 00 00  ORA $000000,X
+D0/C1FA: 00 00        BRK $00
+D0/C1FC: 00 00        BRK $00
+D0/C1FE: 20 38 50     JSR $5038
+D0/C201: 68           PLA
+D0/C202: A8           TAY
+D0/C203: D8           CLD
+D0/C204: 50 B0        BVC $C1B6
+D0/C206: A0 60 04     LDY #$0460
+D0/C209: 07 0A        ORA [$0A]
+D0/C20B: 0D 15 1B     ORA $1B15
+D0/C20E: 2A           ROL
+D0/C20F: 36 14        ROL $14,X
+D0/C211: 2C 08 38     BIT $3808
+D0/C214: 00 00        BRK $00
+D0/C216: 00 00        BRK $00
+D0/C218: 00 00        BRK $00
+D0/C21A: 00 00        BRK $00
+D0/C21C: 00 00        BRK $00
+D0/C21E: 01 01        ORA ($01,X)
+D0/C220: 02 03        COP $03
+D0/C222: 02 03        COP $03
+D0/C224: 81 81        STA ($81,X)
+D0/C226: 40           RTI

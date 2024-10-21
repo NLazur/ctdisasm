@@ -1,0 +1,34 @@
+FE/6BF1: A2 00 A2     LDX #$A200
+FE/6BF4: 00 E2        BRK $E2
+FE/6BF6: 53 50        EOR ($50,S),Y
+FE/6BF8: E0 C0 06     CPX #$06C0
+FE/6BFB: 71 4A        ADC ($4A),Y
+FE/6BFD: 07 07        ORA [$07]
+FE/6BFF: 02 05        COP $05
+FE/6C01: 7A           PLY
+FE/6C02: 43 19        EOR $19,S
+FE/6C04: 1C 64 92     TRB $9264
+FE/6C07: 92 AF        STA ($AF)
+FE/6C09: D9 08 DD     CMP $DD08,Y
+FE/6C0C: 18           CLC
+FE/6C0D: BC 35 01     LDY $0135,X
+FE/6C10: F0 5C        BEQ $6C6E
+FE/6C12: EC 28 C8     CPX $C828
+FE/6C15: 02 00        COP $00
+FE/6C17: 07 3B        ORA [$3B]
+FE/6C19: 0E A4 F1     ASL $F1A4
+FE/6C1C: 82 0A 86     BRL $FEF229
+FE/6C1F: 02 E6        COP $E6
+FE/6C21: 00 87        BRK $87
+FE/6C23: 9C 02 85     STZ $8502
+FE/6C26: 8C 0A 3E     STY $3E0A
+FE/6C29: F1 5C        SBC ($5C),Y
+FE/6C2B: 06 04        ASL $04
+FE/6C2D: 94 62        STY $62,X
+FE/6C2F: 03 FD        ORA $FD,S
+FE/6C31: 04 10        TSB $10
+FE/6C33: 98           TYA
+FE/6C34: 7A           PLY
+FE/6C35: E1 5C        SBC ($5C,X)
+FE/6C37: 26 DE        ROL $DE
+FE/6C39: 40           RTI

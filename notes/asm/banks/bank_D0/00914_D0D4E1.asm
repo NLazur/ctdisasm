@@ -1,0 +1,133 @@
+D0/D4E1: 3F 55 48 3E  AND $3E4855,X
+D0/D4E5: 29 0D        AND #$0D
+D0/D4E7: 01 07        ORA ($07,X)
+D0/D4E9: 04 01        TSB $01
+D0/D4EB: 00 00        BRK $00
+D0/D4ED: 00 00        BRK $00
+D0/D4EF: 00 15        BRK $15
+D0/D4F1: 6A           ROR
+D0/D4F2: 21 02        AND ($02,X)
+D0/D4F4: 04 00        TSB $00
+D0/D4F6: 00 00        BRK $00
+D0/D4F8: 48           PHA
+D0/D4F9: A0 48        LDY #$48
+D0/D4FB: 30 48        BMI $D545
+D0/D4FD: B0 68        BCS $D567
+D0/D4FF: 00 C8        BRK $C8
+D0/D501: 30 A8        BMI $D4AB
+D0/D503: 20 70 00     JSR $0070
+D0/D506: 00 00        BRK $00
+D0/D508: 30 A0        BMI $D4AA
+D0/D50A: A0 90        LDY #$90
+D0/D50C: 30 50        BMI $D55E
+D0/D50E: 00 00        BRK $00
+D0/D510: 03 02        ORA $02,S
+D0/D512: 05 01        ORA $01
+D0/D514: 08           PHP
+D0/D515: 0B           PHD
+D0/D516: 0C 07 1C     TSB $1C07
+D0/D519: 17 2B        ORA [$2B],Y
+D0/D51B: 09 42        ORA #$42
+D0/D51D: 5E 61 3F     LSR $3F61,X
+D0/D520: 02 02        COP $02
+D0/D522: 0C 00 14     TSB $1400
+D0/D525: 15 61        ORA $61,X
+D0/D527: 00 80        BRK $80
+D0/D529: 80 60        BRA $D58B
+D0/D52B: 20 50 D0     JSR $D050
+D0/D52E: 30 E0        BMI $D510
+D0/D530: 10 E0        BPL $D512
+D0/D532: F8           SED
+D0/D533: 28           PLP
+D0/D534: D6 92        DEC $92,X
+D0/D536: 85 BD        STA $BD
+D0/D538: 80 A0        BRA $D4DA
+D0/D53A: 30 00        BMI $D53C
+D0/D53C: 00 28        BRK $28
+D0/D53E: AA           TAX
+D0/D53F: C3 00        CMP $00,S
+D0/D541: 00 00        BRK $00
+D0/D543: 00 0E        BRK $0E
+D0/D545: 0A           ASL
+D0/D546: 15 04        ORA $04,X
+D0/D548: 21 2F        AND ($2F,X)
+D0/D54A: 30 1F        BMI $D56B
+D0/D54C: 61 5F        ADC ($5F,X)
+D0/D54E: 4F 20 00 00  EOR $000020
+D0/D552: 0A           ASL
+D0/D553: 0A           ASL
+D0/D554: 30 00        BMI $D556
+D0/D556: 51 10        EOR ($10),Y
+D0/D558: 00 00        BRK $00
+D0/D55A: 00 00        BRK $00
+D0/D55C: 00 00        BRK $00
+D0/D55E: 80 80        BRA $D4E0
+D0/D560: 70 50        BVS $D5B2
+D0/D562: AC 24 0A     LDY $0A24
+D0/D565: 7A           PLY
+D0/D566: 86 FC        STX $FC
+D0/D568: 00 00        BRK $00
+D0/D56A: 00 80        BRK $80
+D0/D56C: D0 54        BNE $D5C2
+D0/D56E: 86 00        STX $00
+D0/D570: C0 BF        CPY #$BF
+D0/D572: 9F 41 DF D6  STA $D6DF41,X
+D0/D576: 5F 21 3F 1B  EOR $1B3F21,X
+D0/D57A: 1E 12 00     ASL $0012,X
+D0/D57D: 00 00        BRK $00
+D0/D57F: 00 A0        BRK $A0
+D0/D581: 21 BE        AND ($BE,X)
+D0/D583: 33 1F        AND ($1F,S),Y
+D0/D585: 12 00        ORA ($00)
+D0/D587: 00 C3        BRK $C3
+D0/D589: 7E 81 7E     ROR $7E81,X
+D0/D58C: 3D 80 BF     AND $BF80,X
+D0/D58F: AD BE 40     LDA $40BE
+D0/D592: 7C 34 38     JMP ($3834,X)
+D0/D595: 20 00 00     JSR $0000
+D0/D598: 00 40        BRK $40
+D0/D59A: 42 7D        WDM $7D
+D0/D59C: 64 3C        STZ $3C
+D0/D59E: 20 00 6F     JSR $6F00
+D0/D5A1: 6A           ROR
+D0/D5A2: 2E 11 1F     ROL $1F11
+D0/D5A5: 0F 0F 08 00  ORA $00080F
+D0/D5A9: 00 00        BRK $00
+D0/D5AB: 00 00        BRK $00
+D0/D5AD: 00 00        BRK $00
+D0/D5AF: 00 5E        BRK $5E
+D0/D5B1: 18           CLC
+D0/D5B2: 0E 08 00     ASL $0008
+D0/D5B5: 00 00        BRK $00
+D0/D5B7: 00 02        BRK $02
+D0/D5B9: FC 7A 00     JSR ($007A,X)
+D0/D5BC: 7E 5A 7C     ROR $7C5A,X
+D0/D5BF: 80 FC        BRA $D5BD
+D0/D5C1: 6C 78 48     JMP ($4878)
+D0/D5C4: 00 00        BRK $00
+D0/D5C6: 00 00        BRK $00
+D0/D5C8: 80 84        BRA $D54E
+D0/D5CA: FA           PLX
+D0/D5CB: C8           INY
+D0/D5CC: 7C 48 00     JMP ($0048,X)
+D0/D5CF: 00 00        BRK $00
+D0/D5D1: 00 00        BRK $00
+D0/D5D3: 00 00        BRK $00
+D0/D5D5: 00 01        BRK $01
+D0/D5D7: 01 01        ORA ($01,X)
+D0/D5D9: 01 01        ORA ($01,X)
+D0/D5DB: 01 01        ORA ($01,X)
+D0/D5DD: 01 00        ORA ($00,X)
+D0/D5DF: 01 00        ORA ($00,X)
+D0/D5E1: 00 00        BRK $00
+D0/D5E3: 00 00        BRK $00
+D0/D5E5: 00 01        BRK $01
+D0/D5E7: 01 02        ORA ($02,X)
+D0/D5E9: 03 05        ORA $05,S
+D0/D5EB: 07 00        ORA [$00]
+D0/D5ED: 04 48        TSB $48
+D0/D5EF: 48           PHA
+D0/D5F0: 30 30        BMI $D622
+D0/D5F2: 50 70        BVC $D664
+D0/D5F4: F0 B0        BEQ $D5A6
+D0/D5F6: 60           RTS

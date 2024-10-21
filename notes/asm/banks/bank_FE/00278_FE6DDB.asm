@@ -1,0 +1,63 @@
+FE/6DDB: 70 54        BVS $6E31
+FE/6DDD: 10 08        BPL $6DE7
+FE/6DDF: 24 00        BIT $00
+FE/6DE1: 08           PHP
+FE/6DE2: 25 08        AND $08
+FE/6DE4: 26 08        ROL $08
+FE/6DE6: 27 08        AND [$08]
+FE/6DE8: 28           PLP
+FE/6DE9: 00 08        BRK $08
+FE/6DEB: 29 08 2A     AND #$2A08
+FE/6DEE: 08           PHP
+FE/6DEF: 2B           PLD
+FE/6DF0: 08           PHP
+FE/6DF1: 2C 00 08     BIT $0800
+FE/6DF4: 2D 08 2E     AND $2E08
+FE/6DF7: 08           PHP
+FE/6DF8: 2F 08 50 00  AND $005008
+FE/6DFC: 08           PHP
+FE/6DFD: 51 08        EOR ($08),Y
+FE/6DFF: 52 08        EOR ($08)
+FE/6E01: 53 08        EOR ($08,S),Y
+FE/6E03: 54 C0 08     MVN $C0,$08
+FE/6E06: 55 08        EOR $08,X
+FE/6E08: 56 08        LSR $08,X
+FE/6E0A: 57 80        EOR [$80],Y
+FE/6E0C: 80 40        BRA $6E4E
+FE/6E0E: 18           CLC
+FE/6E0F: 01 06        ORA ($06,X)
+FE/6E11: 58           CLI
+FE/6E12: 3B           TSC
+FE/6E13: 08           PHP
+FE/6E14: 3C 08 3D     BIT $3D08,X
+FE/6E17: 08           PHP
+FE/6E18: 3E 00 08     ROL $0800,X
+FE/6E1B: 3F 08 60 08  AND $086008,X
+FE/6E1F: 61 08        ADC ($08,X)
+FE/6E21: 62 00 08     PER $FE7624
+FE/6E24: 63 08        ADC $08,S
+FE/6E26: 64 08        STZ $08
+FE/6E28: 65 08        ADC $08
+FE/6E2A: 00 42        BRK $42
+FE/6E2C: C6 00        DEC $00
+FE/6E2E: FF 01 08 80  SBC $800801,X
+FE/6E32: 70 40        BVS $6E74
+FE/6E34: F0 00        BEQ $6E36
+FE/6E36: 00 00        BRK $00
+FE/6E38: 00 7E        BRK $7E
+FE/6E3A: 4F 22 00 86  EOR $860022
+FE/6E3E: 00 00        BRK $00
+FE/6E40: C9 00 C9     CMP #$C900
+FE/6E43: 08           PHP
+FE/6E44: 0B           PHD
+FE/6E45: 09 2E 05     ORA #$052E
+FE/6E48: 00 2E        BRK $2E
+FE/6E4A: 0D 70 0D     ORA $0D70
+FE/6E4D: 92 09        STA ($09)
+FE/6E4F: B2 11        LDA ($11)
+FE/6E51: 00 D3        BRK $D3
+FE/6E53: 0D F5 11     ORA $11F5
+FE/6E56: 16 12        ASL $12,X
+FE/6E58: 9A           TXS
+FE/6E59: 16 00        ASL $00,X
+FE/6E5B: 40           RTI

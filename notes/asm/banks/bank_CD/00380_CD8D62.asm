@@ -1,0 +1,94 @@
+CD/8D62: 2D 80 12     AND $1280
+CD/8D65: A8           TAY
+CD/8D66: 69 00 20     ADC #$2000
+CD/8D69: 04 06        TSB $06
+CD/8D6B: 05 20        ORA $20
+CD/8D6D: 08           PHP
+CD/8D6E: 6A           ROR
+CD/8D6F: 20 08 36     JSR $3608
+CD/8D72: 06 03        ASL $03
+CD/8D74: 00 60        BRK $60
+CD/8D76: 00 73        BRK $73
+CD/8D78: 03 24        ORA $24,S
+CD/8D7A: 02 72        COP $72
+CD/8D7C: 00 1B        BRK $1B
+CD/8D7E: 00 03        BRK $03
+CD/8D80: 00 00        BRK $00
+CD/8D82: 90 80        BCC $8D04
+CD/8D84: 90 80        BCC $8D06
+CD/8D86: 92 8D        STA ($8D)
+CD/8D88: B6 8D        LDX $8D,Y
+CD/8D8A: C2 8D        REP #$8D
+CD/8D8C: 92 8D        STA ($8D)
+CD/8D8E: D4 8D        PEI $8D
+CD/8D90: C2 8D        REP #$8D
+CD/8D92: 72 0D        ADC ($0D)
+CD/8D94: A4 02        LDY $02
+CD/8D96: 02 02        COP $02
+CD/8D98: 06 0C        ASL $0C
+CD/8D9A: 12 13        ORA ($13)
+CD/8D9C: 1B           TCS
+CD/8D9D: 13 36        ORA ($36,S),Y
+CD/8D9F: 03 0C        ORA $0C,S
+CD/8DA1: 20 0F A5     JSR $A50F
+CD/8DA4: 02 01        COP $01
+CD/8DA6: 12 19        ORA ($19)
+CD/8DA8: 1B           TCS
+CD/8DA9: 19 72 0D     ORA $0D72,Y
+CD/8DAC: 06 03        ASL $03
+CD/8DAE: 24 03        BIT $03
+CD/8DB0: 20 0F 50     JSR $500F
+CD/8DB3: 2E 01 00     ROL $0001
+CD/8DB6: 24 01        BIT $01
+CD/8DB8: 20 05 78     JSR $7805
+CD/8DBB: 5F 1E 44 36  EOR $36441E,X
+CD/8DBF: 06 03        ASL $03
+CD/8DC1: 00 60        BRK $60
+CD/8DC3: 00 60        BRK $60
+CD/8DC5: 08           PHP
+CD/8DC6: 73 00        ADC ($00,S),Y
+CD/8DC8: 24 01        BIT $01
+CD/8DCA: 20 03 72     JSR $7203
+CD/8DCD: 00 1B        BRK $1B
+CD/8DCF: 00 03        BRK $03
+CD/8DD1: 00 36        BRK $36
+CD/8DD3: 00 24        BRK $24
+CD/8DD5: 01 20        ORA ($20,X)
+CD/8DD7: 05 1E        ORA $1E
+CD/8DD9: 49 36 06     EOR #$0636
+CD/8DDC: 03 00        ORA $00,S
+CD/8DDE: 90 80        BCC $8D60
+CD/8DE0: 90 80        BCC $8D62
+CD/8DE2: EE 8D 10     INC $108D
+CD/8DE5: 8E 3E 8E     STX $8E3E
+CD/8DE8: EE 8D 54     INC $548D
+CD/8DEB: 8E 3E 8E     STX $8E3E
+CD/8DEE: 72 0D        ADC ($0D)
+CD/8DF0: A4 02        LDY $02
+CD/8DF2: 02 02        COP $02
+CD/8DF4: 01 0C        ORA ($0C,X)
+CD/8DF6: 12 13        ORA ($13)
+CD/8DF8: 36 03        ROL $03,X
+CD/8DFA: 0D 20 0F     ORA $0F20
+CD/8DFD: A5 02        LDA $02
+CD/8DFF: 01 12        ORA ($12,X)
+CD/8E01: 19 1B 19     ORA $191B,Y
+CD/8E04: 72 0D        ADC ($0D)
+CD/8E06: 06 03        ASL $03
+CD/8E08: 24 03        BIT $03
+CD/8E0A: 20 0F 50     JSR $500F
+CD/8E0D: 2E 01 00     ROL $0001
+CD/8E10: 24 01        BIT $01
+CD/8E12: 20 05 78     JSR $7805
+CD/8E15: 5F 2D 80 12  EOR $12802D,X
+CD/8E19: A8           TAY
+CD/8E1A: 69 00 20     ADC #$2000
+CD/8E1D: 04 06        TSB $06
+CD/8E1F: 05 20        ORA $20
+CD/8E21: 08           PHP
+CD/8E22: 6A           ROR
+CD/8E23: 20 08 06     JSR $0608
+CD/8E26: 03 20        ORA $20,S
+CD/8E28: 0A           ASL
+CD/8E29: 78           SEI
+CD/8E2A: 60           RTS

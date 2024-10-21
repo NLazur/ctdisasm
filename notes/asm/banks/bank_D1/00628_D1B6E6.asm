@@ -1,0 +1,66 @@
+D1/B6E6: 03 C0        ORA $C0,S
+D1/B6E8: 00 00        BRK $00
+D1/B6EA: 00 00        BRK $00
+D1/B6EC: 00 00        BRK $00
+D1/B6EE: 00 00        BRK $00
+D1/B6F0: 00 00        BRK $00
+D1/B6F2: 35 2F        AND $2F,X
+D1/B6F4: 6F 75 36 37  ADC $373675
+D1/B6F8: 77 76        ADC [$76],Y
+D1/B6FA: B6 F6        LDX $F6,Y
+D1/B6FC: B5 31        LDA $31,X
+D1/B6FE: 71 F5        ADC ($F5),Y
+D1/B700: 01 00        ORA ($00,X)
+D1/B702: 00 00        BRK $00
+D1/B704: 00 00        BRK $00
+D1/B706: 00 00        BRK $00
+D1/B708: 00 07        BRK $07
+D1/B70A: E0 0F        CPX #$0F
+D1/B70C: F0 09        BEQ $B717
+D1/B70E: 90 08        BCC $B718
+D1/B710: 10 0E        BPL $B720
+D1/B712: 70 07        BVS $B71B
+D1/B714: E0 00        CPX #$00
+D1/B716: 00 00        BRK $00
+D1/B718: 00 00        BRK $00
+D1/B71A: 00 00        BRK $00
+D1/B71C: 00 25        BRK $25
+D1/B71E: 26 27        ROL $27
+D1/B720: 67 66        ADC [$66]
+D1/B722: 65 2C        ADC $2C
+D1/B724: 2D 2E 01     AND $012E
+D1/B727: 41 6E        EOR ($6E,X)
+D1/B729: 6D 6C 34     ADC $346C
+D1/B72C: 09 49        ORA #$49
+D1/B72E: 74 B4        STZ $B4,X
+D1/B730: F4 AC AD     PEA $ADAC
+D1/B733: AE EE ED     LDX $EDEE
+D1/B736: EC A5 A6     CPX $A6A5
+D1/B739: A7 E7        LDA [$E7]
+D1/B73B: E6 E5        INC $E5
+D1/B73D: 01 00        ORA ($00,X)
+D1/B73F: 00 00        BRK $00
+D1/B741: 00 0F        BRK $0F
+D1/B743: F0 1E        BEQ $B763
+D1/B745: 78           SEI
+D1/B746: 38           SEC
+D1/B747: 1C 31 8C     TRB $8C31
+D1/B74A: 21 84        AND ($84,X)
+D1/B74C: 20 04 30     JSR $3004
+D1/B74F: 0C 38 1C     TSB $1C38
+D1/B752: 1E 78 0F     ASL $0F78,X
+D1/B755: F0 00        BEQ $B757
+D1/B757: 00 00        BRK $00
+D1/B759: 00 14        BRK $14
+D1/B75B: 15 16        ORA $16,X
+D1/B75D: 17 57        ORA [$57],Y
+D1/B75F: 56 55        LSR $55,X
+D1/B761: 54 1B 1C     MVN $1B,$1C
+D1/B764: 1D 1E 5E     ORA $5E1E,X
+D1/B767: 5D 5C 5B     EOR $5B5C,X
+D1/B76A: 22 23 24 64  JSR $642423
+D1/B76E: 63 62        ADC $62,S
+D1/B770: 2A           ROL
+D1/B771: 2B           PLD
+D1/B772: 02 42        COP $42
+D1/B774: 6B           RTL

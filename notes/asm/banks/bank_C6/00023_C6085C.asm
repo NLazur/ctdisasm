@@ -1,0 +1,42 @@
+C6/085C: 2F E1 1E 45  AND $451EE1
+C6/0860: BA           TSX
+C6/0861: 7E 10 04     ROR $0410,X
+C6/0864: 30 E1        BMI $0847
+C6/0866: 30 FF        BMI $0867
+C6/0868: C1 3F        CMP ($3F,X)
+C6/086A: 03 8E        ORA $8E,S
+C6/086C: 20 96 00     JSR $0096
+C6/086F: 7F 00 00 7F  ADC $7F0000,X
+C6/0873: E1 1E        SBC ($1E,X)
+C6/0875: 01 FE        ORA ($FE,X)
+C6/0877: 03 FC        ORA $FC,S
+C6/0879: 01 02        ORA ($02,X)
+C6/087B: FE 22 50     INC $5022,X
+C6/087E: E7 F7        SBC [$F7]
+C6/0880: 8E CE 87     STX $87CE
+C6/0883: FF 00 0C BC  SBC $BC0C00,X
+C6/0887: 1A           INC
+C6/0888: B8           CLV
+C6/0889: F9 F0 EF     SBC $EFF0,Y
+C6/088C: F8           SED
+C6/088D: 00 BE        BRK $BE
+C6/088F: 28           PLP
+C6/0890: 8F 10 FE 01  STA $01FE10
+C6/0894: 7F 00 10 FC  ADC $FC1000,X
+C6/0898: 03 F8        ORA $F8,S
+C6/089A: 07 02        ORA [$02]
+C6/089C: 10 38        BPL $08D6
+C6/089E: C7 73        CMP [$73]
+C6/08A0: 00 40        BRK $40
+C6/08A2: F3 84        SBC ($84,S),Y
+C6/08A4: 72 05        ADC ($05)
+C6/08A6: E4 2B        CPX $2B
+C6/08A8: C4 80        CPY $80
+C6/08AA: 1B           TCS
+C6/08AB: 84 3B        STY $3B
+C6/08AD: 84 7B        STY $7B
+C6/08AF: 0A           ASL
+C6/08B0: F5 DE        SBC $DE,X
+C6/08B2: 10 4B        BPL $08FF
+C6/08B4: DA           PHX
+C6/08B5: 40           RTI

@@ -1,0 +1,221 @@
+CF/4D3B: E0 C0        CPX #$C0
+CF/4D3D: C0 80        CPY #$80
+CF/4D3F: 80 E0        BRA $4D21
+CF/4D41: E4 00        CPX $00
+CF/4D43: 00 00        BRK $00
+CF/4D45: 02 00        COP $00
+CF/4D47: 00 01        BRK $01
+CF/4D49: 00 00        BRK $00
+CF/4D4B: 20 00 00     JSR $0000
+CF/4D4E: 00 08        BRK $08
+CF/4D50: 17 98        ORA [$98],Y
+CF/4D52: 17 38        ORA [$38],Y
+CF/4D54: 17 38        ORA [$38],Y
+CF/4D56: 17 98        ORA [$98],Y
+CF/4D58: 07 98        ORA [$98]
+CF/4D5A: 0F 10 BF 30  ORA $30BF10
+CF/4D5E: 1F 30 BC C3  ORA $C3BC30,X
+CF/4D62: BC C3 BC     LDY $BCC3,X
+CF/4D65: C3 BC        CMP $BC,S
+CF/4D67: C3 BC        CMP $BC,S
+CF/4D69: C3 BC        CMP $BC,S
+CF/4D6B: C3 BC        CMP $BC,S
+CF/4D6D: C3 BC        CMP $BC,S
+CF/4D6F: C3 38        CMP $38,S
+CF/4D71: F8           SED
+CF/4D72: 38           SEC
+CF/4D73: F8           SED
+CF/4D74: 38           SEC
+CF/4D75: F8           SED
+CF/4D76: 38           SEC
+CF/4D77: F8           SED
+CF/4D78: 38           SEC
+CF/4D79: F8           SED
+CF/4D7A: 38           SEC
+CF/4D7B: F8           SED
+CF/4D7C: 38           SEC
+CF/4D7D: F8           SED
+CF/4D7E: 38           SEC
+CF/4D7F: F8           SED
+CF/4D80: BE C1 BC     LDX $BCC1,Y
+CF/4D83: C3 BC        CMP $BC,S
+CF/4D85: C3 BC        CMP $BC,S
+CF/4D87: C3 BC        CMP $BC,S
+CF/4D89: C3 BC        CMP $BC,S
+CF/4D8B: C3 BC        CMP $BC,S
+CF/4D8D: C3 BC        CMP $BC,S
+CF/4D8F: C3 1C        CMP $1C,S
+CF/4D91: FC 38 F8     JSR ($F838,X)
+CF/4D94: 38           SEC
+CF/4D95: F8           SED
+CF/4D96: 38           SEC
+CF/4D97: F8           SED
+CF/4D98: 38           SEC
+CF/4D99: F8           SED
+CF/4D9A: 38           SEC
+CF/4D9B: F8           SED
+CF/4D9C: 38           SEC
+CF/4D9D: F8           SED
+CF/4D9E: 38           SEC
+CF/4D9F: F8           SED
+CF/4DA0: 5C 63 5C 63  JMP $635C63
+CF/4DA4: 5C 63 B9 C7  JMP $C7B963
+CF/4DA8: B9 C7 B9     LDA $B9C7,Y
+CF/4DAB: C7 B9        CMP [$B9]
+CF/4DAD: C7 B9        CMP [$B9]
+CF/4DAF: C7 E0        CMP [$E0]
+CF/4DB1: E0 E0        CPX #$E0
+CF/4DB3: E0 E0        CPX #$E0
+CF/4DB5: E0 C0        CPX #$C0
+CF/4DB7: C0 C0        CPY #$C0
+CF/4DB9: C0 C0        CPY #$C0
+CF/4DBB: C0 C0        CPY #$C0
+CF/4DBD: C0 C0        CPY #$C0
+CF/4DBF: C0 29        CPY #$29
+CF/4DC1: 37 2A        AND [$2A],Y
+CF/4DC3: 36 54        ROL $54,X
+CF/4DC5: 6C 54 6C     JMP ($6C54)
+CF/4DC8: D4 EC        PEI $EC
+CF/4DCA: A8           TAY
+CF/4DCB: D8           CLD
+CF/4DCC: A8           TAY
+CF/4DCD: D8           CLD
+CF/4DCE: A8           TAY
+CF/4DCF: D8           CLD
+CF/4DD0: 00 00        BRK $00
+CF/4DD2: 00 02        BRK $02
+CF/4DD4: 00 11        BRK $11
+CF/4DD6: 00 04        BRK $04
+CF/4DD8: 01 01        ORA ($01,X)
+CF/4DDA: 00 00        BRK $00
+CF/4DDC: 00 00        BRK $00
+CF/4DDE: 00 00        BRK $00
+CF/4DE0: 4F 30 4F 30  EOR $304F30
+CF/4DE4: 4F 70 4F 70  EOR $704F70
+CF/4DE8: 6F 70 37 38  ADC $383770
+CF/4DEC: 19 1E 04     ORA $041E,Y
+CF/4DEF: 07 00        ORA [$00]
+CF/4DF1: 00 00        BRK $00
+CF/4DF3: 00 00        BRK $00
+CF/4DF5: 00 00        BRK $00
+CF/4DF7: 00 00        BRK $00
+CF/4DF9: 00 00        BRK $00
+CF/4DFB: 01 00        ORA ($00,X)
+CF/4DFD: 03 01        ORA $01,S
+CF/4DFF: 06 00        ASL $00
+CF/4E01: 00 00        BRK $00
+CF/4E03: 00 00        BRK $00
+CF/4E05: 07 06        ORA [$06]
+CF/4E07: 39 1C E3     AND $E31C,Y
+CF/4E0A: 7C 83 F8     JMP ($F883,X)
+CF/4E0D: 07 F8        ORA [$F8]
+CF/4E0F: 07 00        ORA [$00]
+CF/4E11: 00 00        BRK $00
+CF/4E13: 00 00        BRK $00
+CF/4E15: F8           SED
+CF/4E16: 00 FC        BRK $FC
+CF/4E18: 78           SEI
+CF/4E19: 87 FC        STA [$FC]
+CF/4E1B: 03 FC        ORA $FC,S
+CF/4E1D: 03 FC        ORA $FC,S
+CF/4E1F: 03 00        ORA $00,S
+CF/4E21: 00 00        BRK $00
+CF/4E23: 00 00        BRK $00
+CF/4E25: 00 00        BRK $00
+CF/4E27: 00 00        BRK $00
+CF/4E29: 00 00        BRK $00
+CF/4E2B: 80 00        BRA $4E2D
+CF/4E2D: C0 00        CPY #$00
+CF/4E2F: E0 00        CPX #$00
+CF/4E31: 00 00        BRK $00
+CF/4E33: 00 01        BRK $01
+CF/4E35: 01 09        ORA ($09,X)
+CF/4E37: 09 1F        ORA #$1F
+CF/4E39: 1F 1F 1F 3F  ORA $3F1F1F,X
+CF/4E3D: 3F 2F 3F 00  AND $003F2F,X
+CF/4E41: 00 30        BRK $30
+CF/4E43: 30 F6        BMI $4E3B
+CF/4E45: FE F8 FF     INC $FFF8,X
+CF/4E48: F8           SED
+CF/4E49: FF F8 FF F1  SBC $F1FFF8,X
+CF/4E4D: FF E8 FF 08  SBC $08FFE8,X
+CF/4E51: 08           PHP
+CF/4E52: 3E 3E 1F     ROL $1F3E,X
+CF/4E55: 2F F3 CD 0E  AND $0ECDF3
+CF/4E59: F1 0E        SBC ($0E),Y
+CF/4E5B: F1 1F        SBC ($1F),Y
+CF/4E5D: E0 3E        CPX #$3E
+CF/4E5F: C1 00        CMP ($00,X)
+CF/4E61: 00 00        BRK $00
+CF/4E63: 00 C0        BRK $C0
+CF/4E65: C0 C0        CPY #$C0
+CF/4E67: C0 E0        CPY #$E0
+CF/4E69: E0 60        CPX #$60
+CF/4E6B: E0 90        CPX #$90
+CF/4E6D: 70 68        BVS $4ED7
+CF/4E6F: 98           TYA
+CF/4E70: 00 00        BRK $00
+CF/4E72: 00 00        BRK $00
+CF/4E74: 00 00        BRK $00
+CF/4E76: 00 00        BRK $00
+CF/4E78: 00 00        BRK $00
+CF/4E7A: 03 03        ORA $03,S
+CF/4E7C: 03 03        ORA $03,S
+CF/4E7E: 0F 0F 00 00  ORA $00000F
+CF/4E82: 01 01        ORA ($01,X)
+CF/4E84: 01 01        ORA ($01,X)
+CF/4E86: 0B           PHD
+CF/4E87: 0F 2C 2F 18  ORA $182F2C
+CF/4E8B: 7F F8 FF 90  ADC $90FFF8,X
+CF/4E8F: FF 00 00 00  SBC $000000,X
+CF/4E93: 00 F8        BRK $F8
+CF/4E95: F8           SED
+CF/4E96: 0E FE 62     ASL $62FE
+CF/4E99: 9E 7E 82     STZ $827E,X
+CF/4E9C: F8           SED
+CF/4E9D: 06 A1        ASL $A1
+CF/4E9F: 5E 00 00     LSR $0000,X
+CF/4EA2: 00 00        BRK $00
+CF/4EA4: 00 00        BRK $00
+CF/4EA6: 01 01        ORA ($01,X)
+CF/4EA8: 02 03        COP $03
+CF/4EAA: 37 3E        AND [$3E],Y
+CF/4EAC: 7E 7F E5     ROR $E57F,X
+CF/4EAF: FF 03 03 0E  SBC $0E0303,X
+CF/4EB3: 0F 38 3F 33  ORA $333F38
+CF/4EB7: 3C 67 78     BIT $7867,X
+CF/4EBA: 6F 70 DF E0  ADC $E0DF70
+CF/4EBE: DF E0 02 0D  CMP $0D02E0,X
+CF/4EC2: 04 0B        TSB $0B
+CF/4EC4: 01 1E        ORA ($1E,X)
+CF/4EC6: 09 16        ORA #$16
+CF/4EC8: 0C 33 1F     TSB $1F33
+CF/4ECB: 20 1F 20     JSR $201F
+CF/4ECE: 1F 20 7C 83  ORA $837C20,X
+CF/4ED2: 3C C3 BE     BIT $BEC3,X
+CF/4ED5: 41 BC        EOR ($BC,X)
+CF/4ED7: 43 70        EOR $70,S
+CF/4ED9: 8F E3 1C E7  STA $E71CE3
+CF/4EDD: 18           CLC
+CF/4EDE: CF 30 FC 03  CMP $03FC30
+CF/4EE2: 78           SEI
+CF/4EE3: 87 01        STA [$01]
+CF/4EE5: FE 03 FC     INC $FC03,X
+CF/4EE8: 0F F0 1F E0  ORA $E01FF0
+CF/4EEC: 9F 60 CF 30  STA $30CF60,X
+CF/4EF0: C0 30        CPY #$30
+CF/4EF2: E0 10        CPX #$10
+CF/4EF4: E0 18        CPX #$18
+CF/4EF6: F0 08        BEQ $4F00
+CF/4EF8: F0 0C        BEQ $4F06
+CF/4EFA: F8           SED
+CF/4EFB: 04 F8        TSB $F8
+CF/4EFD: 04 F8        TSB $F8
+CF/4EFF: 04 6F        TSB $6F
+CF/4F01: 7F 7F 7F FE  ADC $FE7F7F,X
+CF/4F05: FF BD FE FC  SBC $FCFEBD,X
+CF/4F09: FF F9 FE FB  SBC $FBFEF9,X
+CF/4F0D: FC 5C FF     JSR ($FF5C,X)
+CF/4F10: D0 FF        BNE $4F11
+CF/4F12: 80 FF        BRA $4F13
+CF/4F14: 40           RTI

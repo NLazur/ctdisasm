@@ -1,0 +1,30 @@
+C0/F581: 3E 3C 3A     ROL $3A3C,X
+C0/F584: 37 35        AND [$35],Y
+C0/F586: 34 32        BIT $32,X
+C0/F588: 30 2E        BMI $F5B8
+C0/F58A: 2D 2B 2A     AND $2A2B
+C0/F58D: 28           PLP
+C0/F58E: 27 26        AND [$26]
+C0/F590: 24 23        BIT $23
+C0/F592: 22 21 20 1F  JSR $1F2021
+C0/F596: 1E 1D 1C     ASL $1C1D,X
+C0/F599: 1B           TCS
+C0/F59A: 1A           INC
+C0/F59B: 1A           INC
+C0/F59C: 19 18 17     ORA $1718,Y
+C0/F59F: 17 40        ORA [$40],Y
+C0/F5A1: 3E 3C 3A     ROL $3A3C,X
+C0/F5A4: 38           SEC
+C0/F5A5: 36 35        ROL $35,X
+C0/F5A7: 32 31        AND ($31)
+C0/F5A9: 2F 2E 2C 2B  AND $2B2C2E
+C0/F5AD: 29 28        AND #$28
+C0/F5AF: 26 25        ROL $25
+C0/F5B1: 24 23        BIT $23
+C0/F5B3: 21 21        AND ($21,X)
+C0/F5B5: 20 1F 1E     JSR $1E1F
+C0/F5B8: 1D 1C 1B     ORA $1B1C,X
+C0/F5BB: 1A           INC
+C0/F5BC: 1A           INC
+C0/F5BD: 19 18 18     ORA $1818,Y
+C0/F5C0: 40           RTI

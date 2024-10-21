@@ -1,0 +1,94 @@
+D1/C546: 78           SEI
+D1/C547: 00 38        BRK $38
+D1/C549: 00 04        BRK $04
+D1/C54B: 20 00 40     JSR $4000
+D1/C54E: 02 40        COP $40
+D1/C550: 08           PHP
+D1/C551: C0 0C        CPY #$0C
+D1/C553: C0 06        CPY #$06
+D1/C555: C0 06        CPY #$06
+D1/C557: 50 04        BVC $C55D
+D1/C559: 4F C0 3B 00  EOR $003BC0
+D1/C55D: 18           CLC
+D1/C55E: 00 00        BRK $00
+D1/C560: 00 00        BRK $00
+D1/C562: 00 90        BRK $90
+D1/C564: 0A           ASL
+D1/C565: 44 88 6F     MVP $88,$6F
+D1/C568: 6E 6D 6C     ROR $6C6D
+D1/C56B: 76 75        ROR $75,X
+D1/C56D: 74 4C        STZ $4C,X
+D1/C56F: 0D 08 C8     ORA $C808
+D1/C572: 10 CE        BPL $C542
+D1/C574: 82 83 C6     BRL $D18BFA
+D1/C577: 4D 80 81     EOR $8180
+D1/C57A: 41 40        EOR ($40,X)
+D1/C57C: 80 81        BRA $C4FF
+D1/C57E: C3 C2        CMP $C2,S
+D1/C580: 48           PHA
+D1/C581: 45 05        EOR $05
+D1/C583: 50 4B        BVC $C5D0
+D1/C585: 4A           LSR
+D1/C586: 47 46        EOR [$46]
+D1/C588: 0A           ASL
+D1/C589: C4 8C        CPY $8C
+D1/C58B: 8E 8F 4F     STX $4F8F
+D1/C58E: 4E 86 87     LSR $8786
+D1/C591: 01 01        ORA ($01,X)
+D1/C593: C0 00        CPY #$00
+D1/C595: D8           CLD
+D1/C596: 00 1C        BRK $1C
+D1/C598: 00 00        BRK $00
+D1/C59A: 00 00        BRK $00
+D1/C59C: 00 00        BRK $00
+D1/C59E: 00 00        BRK $00
+D1/C5A0: D8           CLD
+D1/C5A1: 04 D0        TSB $D0
+D1/C5A3: 06 F0        ASL $F0
+D1/C5A5: 06 70        ASL $70
+D1/C5A7: 0C 5C 08     TSB $085C
+D1/C5AA: 2C 00 1F     BIT $1F00
+D1/C5AD: 00 01        BRK $01
+D1/C5AF: 00 00        BRK $00
+D1/C5B1: 00 4A        BRK $4A
+D1/C5B3: 6D 6C 75     ADC $756C
+D1/C5B6: 74 B4        STZ $B4,X
+D1/C5B8: B5 AC        LDA $AC,X
+D1/C5BA: AD 48 82     LDA $8248
+D1/C5BD: 83 00        STA $00,S
+D1/C5BF: 01 8D        ORA ($8D,X)
+D1/C5C1: C1 C0        CMP ($C0,X)
+D1/C5C3: CD 02 03     CMP $0302
+D1/C5C6: C1 C0        CMP ($C0,X)
+D1/C5C8: 43 42        EOR $42,S
+D1/C5CA: 80 81        BRA $C54D
+D1/C5CC: 90 C1        BCC $C58F
+D1/C5CE: C0 CE        CPY #$CE
+D1/C5D0: CC 88 8C     CPY $8C88
+D1/C5D3: 8E 47 C6     STX $C647
+D1/C5D6: 45 86        EOR $86
+D1/C5D8: 4F C7 C6 8A  EOR $8AC6C7
+D1/C5DC: 8B           PHB
+D1/C5DD: 06 0E        ASL $0E
+D1/C5DF: 01 03        ORA ($03,X)
+D1/C5E1: 80 03        BRA $C5E6
+D1/C5E3: C0 00        CPY #$00
+D1/C5E5: 00 00        BRK $00
+D1/C5E7: 00 0C        BRK $0C
+D1/C5E9: 00 1C        BRK $1C
+D1/C5EB: 00 30        BRK $30
+D1/C5ED: 00 30        BRK $30
+D1/C5EF: 00 10        BRK $10
+D1/C5F1: 00 18        BRK $18
+D1/C5F3: 00 40        BRK $40
+D1/C5F5: 00 60        BRK $60
+D1/C5F7: 00 3E        BRK $3E
+D1/C5F9: 00 0F        BRK $0F
+D1/C5FB: 00 01        BRK $01
+D1/C5FD: E0 00        CPX #$00
+D1/C5FF: 20 2C 2D     JSR $2D2C
+D1/C602: B6 34        LDX $34,Y
+D1/C604: 35 AE        AND $AE,X
+D1/C606: AF 06 CF 0C  LDA $0CCF06
+D1/C60A: 0E C7 41     ASL $41C7
+D1/C60D: 40           RTI

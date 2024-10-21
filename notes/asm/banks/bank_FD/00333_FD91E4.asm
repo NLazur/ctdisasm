@@ -1,0 +1,83 @@
+FD/91E4: 3F FE FF 80  AND $80FFFE,X
+FD/91E8: 50 10        BVC $91FA
+FD/91EA: 30 30        BMI $921C
+FD/91EC: 80 50        BRA $923E
+FD/91EE: 2F 40 18 F0  AND $F01840
+FD/91F2: 01 00        ORA ($00,X)
+FD/91F4: F2 DF        SBC ($DF)
+FD/91F6: 5A           PHY
+FD/91F7: 02 18        COP $18
+FD/91F9: 13 B2        ORA ($B2,S),Y
+FD/91FB: 00 00        BRK $00
+FD/91FD: 81 04        STA ($04,X)
+FD/91FF: 8B           PHB
+FD/9200: 17 09        ORA [$09],Y
+FD/9202: 1B           TCS
+FD/9203: 00 96        BRK $96
+FD/9205: 00 11        BRK $11
+FD/9207: 09 AD 04     ORA #$04AD
+FD/920A: 0F AD 08 89  ORA $8908AD
+FD/920E: 00 20        BRK $20
+FD/9210: 96 11        STX $11,Y
+FD/9212: 07 B2        ORA [$B2]
+FD/9214: 00 82        BRK $82
+FD/9216: 37 80        AND [$80],Y
+FD/9218: 8B           PHB
+FD/9219: 1B           TCS
+FD/921A: 08           PHP
+FD/921B: 00 96        BRK $96
+FD/921D: 14 08        TRB $08
+FD/921F: 0B           PHD
+FD/9220: 00 10        BRK $10
+FD/9222: 03 8B        ORA $8B,S
+FD/9224: 1B           TCS
+FD/9225: 0A           ASL
+FD/9226: 0B           PHD
+FD/9227: 00 0A        BRK $0A
+FD/9229: AD 10 08     LDA $0810
+FD/922C: 0F AD 10 20  ORA $2010AD
+FD/9230: 00 13        BRK $13
+FD/9232: 0A           ASL
+FD/9233: 96 12        STX $12,Y
+FD/9235: 0A           ASL
+FD/9236: 07 2B        ORA [$2B]
+FD/9238: 00 1B        BRK $1B
+FD/923A: 27 00        AND [$00]
+FD/923C: 70 8D        BVS $91CB
+FD/923E: 00 19        BRK $19
+FD/9240: 00 60        BRK $60
+FD/9242: 03 89        ORA $89,S
+FD/9244: 08           PHP
+FD/9245: B3 00        LDA ($00,S),Y
+FD/9247: 9C 80 46     STZ $4680
+FD/924A: FF 03 18 3D  SBC $3D1803,X
+FD/924E: 00 2B        BRK $2B
+FD/9250: 8B           PHB
+FD/9251: 15 3D        ORA $3D,X
+FD/9253: 00 0E        BRK $0E
+FD/9255: A7 3D        LDA [$3D]
+FD/9257: 08           PHP
+FD/9258: 0B           PHD
+FD/9259: 00 3D        BRK $3D
+FD/925B: 00 0E        BRK $0E
+FD/925D: 0A           ASL
+FD/925E: 16 10        ASL $10,X
+FD/9260: 1D 53 00     ORA $0053,X
+FD/9263: AA           TAX
+FD/9264: 16 16        ASL $16,X
+FD/9266: 18           CLC
+FD/9267: 1D 53 00     ORA $0053,X
+FD/926A: 16 16        ASL $16,X
+FD/926C: 18           CLC
+FD/926D: 1F 69 00 AA  ORA $AA0069,X
+FD/9271: 18           CLC
+FD/9272: 2C 18 1F     BIT $1F18
+FD/9275: 69 00 18     ADC #$1800
+FD/9278: 2C 18 13     BIT $1318
+FD/927B: 7F 00 46 27  ADC $274600,X
+FD/927F: 01 EA        ORA ($EA,X)
+FD/9281: 0C 42 18     TSB $1842
+FD/9284: 13 7F        ORA ($7F,S),Y
+FD/9286: 00 0C        BRK $0C
+FD/9288: 42 00        WDM $00
+FD/928A: 40           RTI

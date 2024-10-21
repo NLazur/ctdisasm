@@ -1,0 +1,2 @@
+C1/FDC3: 20 05 D0     JSR $D005
+C1/FDC6: 6B           RTL

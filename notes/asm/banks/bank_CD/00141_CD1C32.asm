@@ -1,0 +1,19 @@
+CD/1C32: A7 40        LDA [$40]
+CD/1C34: 0A           ASL
+CD/1C35: A8           TAY
+CD/1C36: 20 36 24     JSR $2436
+CD/1C39: A6 43        LDX $43
+CD/1C3B: C2 20        REP #$20
+CD/1C3D: B9 A0 5D     LDA $5DA0,Y
+CD/1C40: 29 FF 00     AND #$00FF
+CD/1C43: 49 FF FF     EOR #$FFFF
+CD/1C46: 1A           INC
+CD/1C47: 9D 5A CA     STA $CA5A,X
+CD/1C4A: B9 A1 5D     LDA $5DA1,Y
+CD/1C4D: 29 FF 00     AND #$00FF
+CD/1C50: 49 FF FF     EOR #$FFFF
+CD/1C53: 1A           INC
+CD/1C54: 9D 5C CA     STA $CA5C,X
+CD/1C57: 7B           TDC
+CD/1C58: E2 20        SEP #$20
+CD/1C5A: 60           RTS

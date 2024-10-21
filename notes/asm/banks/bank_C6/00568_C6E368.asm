@@ -1,0 +1,109 @@
+C6/E368: C2 20        REP #$20
+C6/E36A: A6 4E        LDX $4E
+C6/E36C: FE 24 00     INC $0024,X
+C6/E36F: BD 24 00     LDA $0024,X
+C6/E372: 4A           LSR
+C6/E373: B0 08        BCS $E37D
+C6/E375: A9 56 8B     LDA #$8B56
+C6/E378: A0 36 8C     LDY #$8C36
+C6/E37B: 80 06        BRA $E383
+C6/E37D: A9 F6 8D     LDA #$8DF6
+C6/E380: A0 D6 8E     LDY #$8ED6
+C6/E383: 8F 21 8A 7E  STA $7E8A21
+C6/E387: 8D 56 03     STA $0356
+C6/E38A: 98           TYA
+C6/E38B: 8F 23 8A 7E  STA $7E8A23
+C6/E38F: 80 27        BRA $E3B8
+C6/E391: C2 20        REP #$20
+C6/E393: A6 4E        LDX $4E
+C6/E395: FE 24 00     INC $0024,X
+C6/E398: BD 24 00     LDA $0024,X
+C6/E39B: 4A           LSR
+C6/E39C: B0 08        BCS $E3A6
+C6/E39E: A9 76 91     LDA #$9176
+C6/E3A1: A0 56 92     LDY #$9256
+C6/E3A4: 80 06        BRA $E3AC
+C6/E3A6: A9 16 94     LDA #$9416
+C6/E3A9: A0 F6 94     LDY #$94F6
+C6/E3AC: 8F 25 8A 7E  STA $7E8A25
+C6/E3B0: 8D 56 03     STA $0356
+C6/E3B3: 98           TYA
+C6/E3B4: 8F 27 8A 7E  STA $7E8A27
+C6/E3B8: E2 20        SEP #$20
+C6/E3BA: BD 14 00     LDA $0014,X
+C6/E3BD: 8D 50 03     STA $0350
+C6/E3C0: BD 18 00     LDA $0018,X
+C6/E3C3: 8D 52 03     STA $0352
+C6/E3C6: BD 22 00     LDA $0022,X
+C6/E3C9: 8D 54 03     STA $0354
+C6/E3CC: A9 7E        LDA #$7E
+C6/E3CE: 8D 58 03     STA $0358
+C6/E3D1: 7B           TDC
+C6/E3D2: 22 08 00 C3  JSR $C30008
+C6/E3D6: E2 20        SEP #$20
+C6/E3D8: 8B           PHB
+C6/E3D9: A9 7E        LDA #$7E
+C6/E3DB: 48           PHA
+C6/E3DC: AB           PLB
+C6/E3DD: C2 20        REP #$20
+C6/E3DF: A6 4E        LDX $4E
+C6/E3E1: BD 18 00     LDA $0018,X
+C6/E3E4: 0A           ASL
+C6/E3E5: 6D 56 03     ADC $0356
+C6/E3E8: 85 19        STA $19
+C6/E3EA: 1A           INC
+C6/E3EB: 1A           INC
+C6/E3EC: 85 16        STA $16
+C6/E3EE: 18           CLC
+C6/E3EF: 69 FC FF     ADC #$FFFC
+C6/E3F2: 85 13        STA $13
+C6/E3F4: 3A           DEC
+C6/E3F5: 3A           DEC
+C6/E3F6: 85 10        STA $10
+C6/E3F8: BD 22 00     LDA $0022,X
+C6/E3FB: 4A           LSR
+C6/E3FC: 85 00        STA $00
+C6/E3FE: 85 02        STA $02
+C6/E400: A6 10        LDX $10
+C6/E402: A4 13        LDY $13
+C6/E404: BD 00 00     LDA $0000,X
+C6/E407: 99 00 00     STA $0000,Y
+C6/E40A: CA           DEX
+C6/E40B: CA           DEX
+C6/E40C: CA           DEX
+C6/E40D: CA           DEX
+C6/E40E: 88           DEY
+C6/E40F: 88           DEY
+C6/E410: C6 00        DEC $00
+C6/E412: D0 F0        BNE $E404
+C6/E414: A6 02        LDX $02
+C6/E416: 86 00        STX $00
+C6/E418: E8           INX
+C6/E419: A9 01 00     LDA #$0001
+C6/E41C: 99 00 00     STA $0000,Y
+C6/E41F: 88           DEY
+C6/E420: 88           DEY
+C6/E421: CA           DEX
+C6/E422: D0 F8        BNE $E41C
+C6/E424: A6 16        LDX $16
+C6/E426: A4 19        LDY $19
+C6/E428: BD 00 00     LDA $0000,X
+C6/E42B: 99 00 00     STA $0000,Y
+C6/E42E: E8           INX
+C6/E42F: E8           INX
+C6/E430: E8           INX
+C6/E431: E8           INX
+C6/E432: C8           INY
+C6/E433: C8           INY
+C6/E434: C6 00        DEC $00
+C6/E436: D0 F0        BNE $E428
+C6/E438: A6 02        LDX $02
+C6/E43A: E8           INX
+C6/E43B: A9 01 00     LDA #$0001
+C6/E43E: 99 00 00     STA $0000,Y
+C6/E441: C8           INY
+C6/E442: C8           INY
+C6/E443: CA           DEX
+C6/E444: D0 F8        BNE $E43E
+C6/E446: AB           PLB
+C6/E447: 6B           RTL

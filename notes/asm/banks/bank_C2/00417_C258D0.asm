@@ -1,0 +1,63 @@
+C2/58D0: C9 21        CMP #$21
+C2/58D2: 90 29        BCC $58FD
+C2/58D4: 85 3B        STA $3B
+C2/58D6: 38           SEC
+C2/58D7: E9 21        SBC #$21
+C2/58D9: 0A           ASL
+C2/58DA: AA           TAX
+C2/58DB: C2 20        REP #$20
+C2/58DD: BF 00 FA DE  LDA $DEFA00,X
+C2/58E1: 85 37        STA $37
+C2/58E3: A9 00 00     LDA #$0000
+C2/58E6: E2 20        SEP #$20
+C2/58E8: A9 DE        LDA #$DE
+C2/58EA: 85 39        STA $39
+C2/58EC: A7 37        LDA [$37]
+C2/58EE: 85 3A        STA $3A
+C2/58F0: C2 20        REP #$20
+C2/58F2: E6 37        INC $37
+C2/58F4: E2 20        SEP #$20
+C2/58F6: A9 01        LDA #$01
+C2/58F8: 85 30        STA $30
+C2/58FA: 4C F5 5B     JMP $5BF5
+C2/58FD: A8           TAY
+C2/58FE: 0A           ASL
+C2/58FF: AA           TAX
+C2/5900: 7C 03 59     JMP ($5903,X)
+C2/5903: 4F 59 06 5B  EOR $5B0659
+C2/5907: 06 5B        ASL $5B
+C2/5909: 45 59        EOR $59
+C2/590B: 4F 59 4F 59  EOR $594F59
+C2/590F: 4F 59 4F 59  EOR $594F59
+C2/5913: 4F 59 4F 59  EOR $594F59
+C2/5917: 4F 59 4F 59  EOR $594F59
+C2/591B: 4F 59 53 59  EOR $595359
+C2/591F: 85 59        STA $59
+C2/5921: C8           INY
+C2/5922: 59 14 5B     EOR $5B14,Y
+C2/5925: 26 5A        ROL $5A
+C2/5927: 4C 5A 15     JMP $155A
+C2/592A: 5B           TCD
+C2/592B: 15 5B        ORA $5B,X
+C2/592D: 15 5B        ORA $5B,X
+C2/592F: 15 5B        ORA $5B,X
+C2/5931: 15 5B        ORA $5B,X
+C2/5933: 15 5B        ORA $5B,X
+C2/5935: 15 5B        ORA $5B,X
+C2/5937: 3B           TSC
+C2/5938: 5B           TCD
+C2/5939: 70 5B        BVS $5996
+C2/593B: 70 5B        BVS $5998
+C2/593D: 70 5B        BVS $599A
+C2/593F: 56 5B        LSR $5B,X
+C2/5941: 9B           TXY
+C2/5942: 5B           TCD
+C2/5943: D6 5B        DEC $5B,X
+C2/5945: A7 31        LDA [$31]
+C2/5947: 85 16        STA $16
+C2/5949: C2 20        REP #$20
+C2/594B: E6 31        INC $31
+C2/594D: E2 20        SEP #$20
+C2/594F: 98           TYA
+C2/5950: 85 15        STA $15
+C2/5952: 60           RTS

@@ -1,0 +1,61 @@
+C2/425A: A2 00 58     LDX #$5800
+C2/425D: 86 10        STX $10
+C2/425F: A9 7E        LDA #$7E
+C2/4261: 85 12        STA $12
+C2/4263: A2 00 70     LDX #$7000
+C2/4266: 86 13        STX $13
+C2/4268: A9 7E        LDA #$7E
+C2/426A: 85 15        STA $15
+C2/426C: C6 06        DEC $06
+C2/426E: C6 07        DEC $07
+C2/4270: 38           SEC
+C2/4271: A5 07        LDA $07
+C2/4273: E5 06        SBC $06
+C2/4275: F0 5E        BEQ $42D5
+C2/4277: 30 2F        BMI $42A8
+C2/4279: E6 06        INC $06
+C2/427B: A5 05        LDA $05
+C2/427D: 3A           DEC
+C2/427E: 85 00        STA $00
+C2/4280: A5 06        LDA $06
+C2/4282: 85 01        STA $01
+C2/4284: 20 AE 62     JSR $62AE
+C2/4287: A6 4E        LDX $4E
+C2/4289: 9D 22 00     STA $0022,X
+C2/428C: A5 05        LDA $05
+C2/428E: 85 00        STA $00
+C2/4290: A5 06        LDA $06
+C2/4292: 85 01        STA $01
+C2/4294: 20 AE 62     JSR $62AE
+C2/4297: A6 4E        LDX $4E
+C2/4299: 1D 22 00     ORA $0022,X
+C2/429C: 29 03        AND #$03
+C2/429E: D0 39        BNE $42D9
+C2/42A0: A5 06        LDA $06
+C2/42A2: C5 07        CMP $07
+C2/42A4: D0 D3        BNE $4279
+C2/42A6: 80 2D        BRA $42D5
+C2/42A8: C6 06        DEC $06
+C2/42AA: A5 05        LDA $05
+C2/42AC: 3A           DEC
+C2/42AD: 85 00        STA $00
+C2/42AF: A5 06        LDA $06
+C2/42B1: 85 01        STA $01
+C2/42B3: 20 AE 62     JSR $62AE
+C2/42B6: A6 4E        LDX $4E
+C2/42B8: 9D 22 00     STA $0022,X
+C2/42BB: A5 05        LDA $05
+C2/42BD: 85 00        STA $00
+C2/42BF: A5 06        LDA $06
+C2/42C1: 85 01        STA $01
+C2/42C3: 20 AE 62     JSR $62AE
+C2/42C6: A6 4E        LDX $4E
+C2/42C8: 1D 22 00     ORA $0022,X
+C2/42CB: 29 03        AND #$03
+C2/42CD: D0 0A        BNE $42D9
+C2/42CF: A5 06        LDA $06
+C2/42D1: C5 07        CMP $07
+C2/42D3: D0 D3        BNE $42A8
+C2/42D5: E6 06        INC $06
+C2/42D7: 18           CLC
+C2/42D8: 60           RTS

@@ -1,0 +1,192 @@
+FD/F001: 00 00        BRK $00
+FD/F003: 00 00        BRK $00
+FD/F005: 00 00        BRK $00
+FD/F007: 00 00        BRK $00
+FD/F009: 00 00        BRK $00
+FD/F00B: 00 00        BRK $00
+FD/F00D: 00 00        BRK $00
+FD/F00F: 00 00        BRK $00
+FD/F011: 00 00        BRK $00
+FD/F013: 00 00        BRK $00
+FD/F015: 00 00        BRK $00
+FD/F017: 00 00        BRK $00
+FD/F019: 00 00        BRK $00
+FD/F01B: 00 00        BRK $00
+FD/F01D: 00 00        BRK $00
+FD/F01F: 00 00        BRK $00
+FD/F021: 00 00        BRK $00
+FD/F023: 01 00        ORA ($00,X)
+FD/F025: 02 00        COP $00
+FD/F027: 03 00        ORA $00,S
+FD/F029: 04 00        TSB $00
+FD/F02B: 05 00        ORA $00
+FD/F02D: 06 00        ASL $00
+FD/F02F: 07 00        ORA [$00]
+FD/F031: 08           PHP
+FD/F032: 00 0A        BRK $0A
+FD/F034: 00 0C        BRK $0C
+FD/F036: 00 0E        BRK $0E
+FD/F038: 00 10        BRK $10
+FD/F03A: 00 12        BRK $12
+FD/F03C: 00 14        BRK $14
+FD/F03E: 00 16        BRK $16
+FD/F040: 00 16        BRK $16
+FD/F042: 00 14        BRK $14
+FD/F044: 00 12        BRK $12
+FD/F046: 00 10        BRK $10
+FD/F048: 00 0E        BRK $0E
+FD/F04A: 00 0C        BRK $0C
+FD/F04C: 00 0A        BRK $0A
+FD/F04E: 00 08        BRK $08
+FD/F050: 00 07        BRK $07
+FD/F052: 00 06        BRK $06
+FD/F054: 00 05        BRK $05
+FD/F056: 00 04        BRK $04
+FD/F058: 00 03        BRK $03
+FD/F05A: 00 02        BRK $02
+FD/F05C: 00 01        BRK $01
+FD/F05E: 00 00        BRK $00
+FD/F060: 00 00        BRK $00
+FD/F062: 00 00        BRK $00
+FD/F064: 00 00        BRK $00
+FD/F066: 00 00        BRK $00
+FD/F068: 00 00        BRK $00
+FD/F06A: 00 00        BRK $00
+FD/F06C: 00 00        BRK $00
+FD/F06E: 00 00        BRK $00
+FD/F070: 00 00        BRK $00
+FD/F072: 00 00        BRK $00
+FD/F074: 00 00        BRK $00
+FD/F076: 00 00        BRK $00
+FD/F078: 00 00        BRK $00
+FD/F07A: 00 00        BRK $00
+FD/F07C: 00 00        BRK $00
+FD/F07E: 00 00        BRK $00
+FD/F080: 00 00        BRK $00
+FD/F082: 00 00        BRK $00
+FD/F084: 00 01        BRK $01
+FD/F086: 00 01        BRK $01
+FD/F088: 00 02        BRK $02
+FD/F08A: 00 02        BRK $02
+FD/F08C: 00 03        BRK $03
+FD/F08E: 00 03        BRK $03
+FD/F090: 00 04        BRK $04
+FD/F092: 00 04        BRK $04
+FD/F094: 00 05        BRK $05
+FD/F096: 00 05        BRK $05
+FD/F098: 00 06        BRK $06
+FD/F09A: 00 06        BRK $06
+FD/F09C: 00 07        BRK $07
+FD/F09E: 00 07        BRK $07
+FD/F0A0: 00 08        BRK $08
+FD/F0A2: 00 08        BRK $08
+FD/F0A4: 00 09        BRK $09
+FD/F0A6: 00 09        BRK $09
+FD/F0A8: 00 0A        BRK $0A
+FD/F0AA: 00 0A        BRK $0A
+FD/F0AC: 00 0B        BRK $0B
+FD/F0AE: 00 0B        BRK $0B
+FD/F0B0: 00 0C        BRK $0C
+FD/F0B2: 00 0C        BRK $0C
+FD/F0B4: 00 0D        BRK $0D
+FD/F0B6: 00 0D        BRK $0D
+FD/F0B8: 00 0E        BRK $0E
+FD/F0BA: 00 0E        BRK $0E
+FD/F0BC: 00 0F        BRK $0F
+FD/F0BE: 00 0F        BRK $0F
+FD/F0C0: 00 0F        BRK $0F
+FD/F0C2: 00 0F        BRK $0F
+FD/F0C4: 00 0E        BRK $0E
+FD/F0C6: 00 0E        BRK $0E
+FD/F0C8: 00 0D        BRK $0D
+FD/F0CA: 00 0D        BRK $0D
+FD/F0CC: 00 0C        BRK $0C
+FD/F0CE: 00 0C        BRK $0C
+FD/F0D0: 00 0B        BRK $0B
+FD/F0D2: 00 0B        BRK $0B
+FD/F0D4: 00 0A        BRK $0A
+FD/F0D6: 00 0A        BRK $0A
+FD/F0D8: 00 09        BRK $09
+FD/F0DA: 00 09        BRK $09
+FD/F0DC: 00 08        BRK $08
+FD/F0DE: 00 08        BRK $08
+FD/F0E0: 00 07        BRK $07
+FD/F0E2: 00 07        BRK $07
+FD/F0E4: 00 06        BRK $06
+FD/F0E6: 00 06        BRK $06
+FD/F0E8: 00 05        BRK $05
+FD/F0EA: 00 05        BRK $05
+FD/F0EC: 00 04        BRK $04
+FD/F0EE: 00 04        BRK $04
+FD/F0F0: 00 03        BRK $03
+FD/F0F2: 00 03        BRK $03
+FD/F0F4: 00 02        BRK $02
+FD/F0F6: 00 02        BRK $02
+FD/F0F8: 00 01        BRK $01
+FD/F0FA: 00 01        BRK $01
+FD/F0FC: 00 00        BRK $00
+FD/F0FE: 00 00        BRK $00
+FD/F100: 00 00        BRK $00
+FD/F102: 00 00        BRK $00
+FD/F104: 00 04        BRK $04
+FD/F106: 00 08        BRK $08
+FD/F108: 00 0C        BRK $0C
+FD/F10A: 00 10        BRK $10
+FD/F10C: 00 14        BRK $14
+FD/F10E: 00 18        BRK $18
+FD/F110: 00 1C        BRK $1C
+FD/F112: 00 1F        BRK $1F
+FD/F114: 00 1C        BRK $1C
+FD/F116: 00 18        BRK $18
+FD/F118: 00 14        BRK $14
+FD/F11A: 00 10        BRK $10
+FD/F11C: 00 0C        BRK $0C
+FD/F11E: 00 08        BRK $08
+FD/F120: 00 04        BRK $04
+FD/F122: 00 A6        BRK $A6
+FD/F124: 08           PHP
+FD/F125: A5 1B        LDA $1B
+FD/F127: A8           TAY
+FD/F128: B9 00 F8     LDA $F800,Y
+FD/F12B: 18           CLC
+FD/F12C: 69 80        ADC #$80
+FD/F12E: 8D 02 42     STA $4202
+FD/F131: BF 81 F1 FD  LDA $FDF181,X
+FD/F135: 8D 03 42     STA $4203
+FD/F138: EA           NOP
+FD/F139: EA           NOP
+FD/F13A: EA           NOP
+FD/F13B: AD 17 42     LDA $4217
+FD/F13E: 85 0E        STA $0E
+FD/F140: 64 0F        STZ $0F
+FD/F142: A5 1B        LDA $1B
+FD/F144: 49 FF        EOR #$FF
+FD/F146: A8           TAY
+FD/F147: B9 00 F8     LDA $F800,Y
+FD/F14A: 18           CLC
+FD/F14B: 69 80        ADC #$80
+FD/F14D: 8D 02 42     STA $4202
+FD/F150: BF 81 F1 FD  LDA $FDF181,X
+FD/F154: 8D 03 42     STA $4203
+FD/F157: EA           NOP
+FD/F158: EA           NOP
+FD/F159: EA           NOP
+FD/F15A: AD 17 42     LDA $4217
+FD/F15D: EB           XBA
+FD/F15E: C2 20        REP #$20
+FD/F160: 4A           LSR
+FD/F161: 4A           LSR
+FD/F162: 4A           LSR
+FD/F163: 05 0E        ORA $0E
+FD/F165: 85 0E        STA $0E
+FD/F167: BF 20 20 7E  LDA $7E2020,X
+FD/F16B: 29 00 7C     AND #$7C00
+FD/F16E: 05 0E        ORA $0E
+FD/F170: 9F 20 20 7E  STA $7E2020,X
+FD/F174: A9 00 00     LDA #$0000
+FD/F177: E2 20        SEP #$20
+FD/F179: E8           INX
+FD/F17A: E8           INX
+FD/F17B: E0 40 00     CPX #$0040
+FD/F17E: D0 A5        BNE $F125
+FD/F180: 60           RTS

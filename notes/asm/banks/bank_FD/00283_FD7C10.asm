@@ -1,0 +1,38 @@
+FD/7C10: 00 70        BRK $70
+FD/7C12: 70 7C        BVS $7C90
+FD/7C14: 7C E0 9B     JMP ($9BE0,X)
+FD/7C17: 8F E4 00 83  STA $8300E4
+FD/7C1B: C0 23        CPY #$23
+FD/7C1D: 7E 01 70     ROR $7001,X
+FD/7C20: 11 90        ORA ($90),Y
+FD/7C22: 17 60        ORA [$60],Y
+FD/7C24: F0 02        BEQ $7C28
+FD/7C26: 07 B4        ORA [$B4]
+FD/7C28: 05 01        ORA $01
+FD/7C2A: FF 81 7F C1  SBC $C17F81,X
+FD/7C2E: 3F 60 F1 0F  AND $0FF160,X
+FD/7C32: F3 0F        SBC ($0F,S),Y
+FD/7C34: FB           XCE
+FD/7C35: E0 E8        CPX #$E8
+FD/7C37: 56 24        LSR $24,X
+FD/7C39: FF 22 B7 0F  SBC $0FB722,X
+FD/7C3D: 08           PHP
+FD/7C3E: 07 FF        ORA [$FF]
+FD/7C40: 05 91        ORA $91
+FD/7C42: F8           SED
+FD/7C43: 00 E0        BRK $E0
+FD/7C45: 74 E0        STZ $E0,X
+FD/7C47: F8           SED
+FD/7C48: 01 00        ORA ($00,X)
+FD/7C4A: FC 01 00     JSR ($0001,X)
+FD/7C4D: 83 04        STA $04,S
+FD/7C4F: 88           DEY
+FD/7C50: 04 1F        TSB $1F
+FD/7C52: 07 FE        ORA [$FE]
+FD/7C54: A7 CE        LDA [$CE]
+FD/7C56: 04 AB        TSB $AB
+FD/7C58: 6C 01 FE     JMP ($FE01)
+FD/7C5B: 00 01        BRK $01
+FD/7C5D: 02 6D        COP $6D
+FD/7C5F: D1 38        CMP ($38),Y
+FD/7C61: 40           RTI

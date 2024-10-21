@@ -1,0 +1,14 @@
+CD/3C2C: BF 8E F4 CE  LDA $CEF48E,X
+CD/3C30: 8F 02 42 00  STA $004202
+CD/3C34: 98           TYA
+CD/3C35: 10 12        BPL $3C49
+CD/3C37: 49 FF        EOR #$FF
+CD/3C39: 1A           INC
+CD/3C3A: 8F 03 42 00  STA $004203
+CD/3C3E: EA           NOP
+CD/3C3F: EA           NOP
+CD/3C40: EA           NOP
+CD/3C41: AF 17 42 00  LDA $004217
+CD/3C45: 49 FF        EOR #$FF
+CD/3C47: 1A           INC
+CD/3C48: 60           RTS

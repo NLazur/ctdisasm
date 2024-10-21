@@ -1,0 +1,37 @@
+FD/750C: BF 7F 5F 3F  LDA $3F5F7F,X
+FD/7510: 07 78        ORA [$78]
+FD/7512: 00 04        BRK $04
+FD/7514: 00 04        BRK $04
+FD/7516: F2 72        SBC ($72)
+FD/7518: 00 3E        BRK $3E
+FD/751A: 00 04        BRK $04
+FD/751C: 00 E0        BRK $E0
+FD/751E: 21 00        AND ($00,X)
+FD/7520: 80 00        BRA $7522
+FD/7522: F8           SED
+FD/7523: 08           PHP
+FD/7524: F3 00        SBC ($00,S),Y
+FD/7526: F0 09        BEQ $7531
+FD/7528: 70 8D        BVS $74B7
+FD/752A: 7C 81 E7     JMP ($E781,X)
+FD/752D: FF 09 02 B0  SBC $B00209,X
+FD/7531: 08           PHP
+FD/7532: 00 02        BRK $02
+FD/7534: B0 0C        BCS $7542
+FD/7536: 0C 0A 0B     TSB $0B0A
+FD/7539: 04 09        TSB $09
+FD/753B: 08           PHP
+FD/753C: 01 70        ORA ($70,X)
+FD/753E: 0F 08 0B 08  ORA $080B08
+FD/7542: 08           PHP
+FD/7543: 01 11        ORA ($11,X)
+FD/7545: 90 67        BCC $75AE
+FD/7547: 18           CLC
+FD/7548: 3F 0A AD 44  AND $44AD0A,X
+FD/754C: 25 04        AND $04
+FD/754E: 0E 08 6A     ASL $6A08
+FD/7551: 31 90        AND ($90),Y
+FD/7553: 00 C0        BRK $C0
+FD/7555: 02 50        COP $50
+FD/7557: 20 00 3A     JSR $3A00
+FD/755A: 40           RTI

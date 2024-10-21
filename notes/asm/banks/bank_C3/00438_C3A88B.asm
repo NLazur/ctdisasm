@@ -1,0 +1,29 @@
+C3/A88B: 10 E8        BPL $A875
+C3/A88D: 00 84        BRK $84
+C3/A88F: 13 E5        ORA ($E5,S),Y
+C3/A891: 0E 00 E6     ASL $E600
+C3/A894: 00 13        BRK $13
+C3/A896: E9 0E        SBC #$0E
+C3/A898: 00 04        BRK $04
+C3/A89A: EA           NOP
+C3/A89B: 00 21        BRK $21
+C3/A89D: 12 4E        ORA ($4E)
+C3/A89F: 28           PLP
+C3/A8A0: E0 C6        CPX #$C6
+C3/A8A2: 03 10        ORA $10,S
+C3/A8A4: 00 90        BRK $90
+C3/A8A6: 7F 00 01 10  ADC $100100,X
+C3/A8AA: 01 38        ORA ($38,X)
+C3/A8AC: 04 00        TSB $00
+C3/A8AE: 4E 4D E0     LSR $E04D
+C3/A8B1: C6 04        DEC $04
+C3/A8B3: 00 8C        BRK $8C
+C3/A8B5: 7F 00 08 00  ADC $000800,X
+C3/A8B9: 04 20        TSB $20
+C3/A8BB: 8C 7F 09     STY $097F
+C3/A8BE: 00 00        BRK $00
+C3/A8C0: 38           SEC
+C3/A8C1: 01 13        ORA ($13,X)
+C3/A8C3: 30 1B        BMI $A8E0
+C3/A8C5: 20 4E 72     JSR $724E
+C3/A8C8: 40           RTI

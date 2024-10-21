@@ -1,0 +1,66 @@
+FF/C148: 43 40        EOR $40,S
+FF/C14A: 31 08        AND ($08),Y
+FF/C14C: 10 97        BPL $C0E5
+FF/C14E: 0E 68 BB     ASL $BB68
+FF/C151: 08           PHP
+FF/C152: 80 93        BRA $C0E7
+FF/C154: 0E 1E B6     ASL $B61E
+FF/C157: 08           PHP
+FF/C158: 80 96        BRA $C0F0
+FF/C15A: 0E E5 BC     ASL $BCE5
+FF/C15D: FF 08 00 2E  SBC $2E0008,X
+FF/C161: 06 16        ASL $16
+FF/C163: 00 03        BRK $03
+FF/C165: 14 80        TRB $80
+FF/C167: FF 06 17 00  SBC $001706,X
+FF/C16B: 12 01        ORA ($01)
+FF/C16D: 80 FF        BRA $C16E
+FF/C16F: 08           PHP
+FF/C170: 00 3E        BRK $3E
+FF/C172: 02 02        COP $02
+FF/C174: 02 02        COP $02
+FF/C176: 20 1C 0C     JSR $0C1C
+FF/C179: 04 8B        TSB $8B
+FF/C17B: 03 16        ORA $16,S
+FF/C17D: 02 08        COP $08
+FF/C17F: 0A           ASL
+FF/C180: 0C 50 43     TSB $4350
+FF/C183: 00 29        BRK $29
+FF/C185: 0E E2 BA     ASL $BAE2
+FF/C188: 0C 20 43     TSB $4320
+FF/C18B: 03 0D        ORA $0D,S
+FF/C18D: 0E 39 B8     ASL $B839
+FF/C190: FF 08 00 3E  SBC $3E0008,X
+FF/C194: 02 02        COP $02
+FF/C196: 20 02 02     JSR $0202
+FF/C199: 1C 0C FF     TRB $FF0C
+FF/C19C: 08           PHP
+FF/C19D: 00 2E        BRK $2E
+FF/C19F: 00 00        BRK $00
+FF/C1A1: 08           PHP
+FF/C1A2: 00 00        BRK $00
+FF/C1A4: 06 0E        ASL $0E
+FF/C1A6: 00 03        BRK $03
+FF/C1A8: 03 80        ORA $80,S
+FF/C1AA: 06 10        ASL $10
+FF/C1AC: 00 12        BRK $12
+FF/C1AE: 0D 00 08     ORA $0800
+FF/C1B1: 00 4E        BRK $4E
+FF/C1B3: 00 00        BRK $00
+FF/C1B5: 04 00        TSB $00
+FF/C1B7: 00 FF        BRK $FF
+FF/C1B9: 08           PHP
+FF/C1BA: 00 3E        BRK $3E
+FF/C1BC: 04 8B        TSB $8B
+FF/C1BE: 03 02        ORA $02,S
+FF/C1C0: 02 0C        COP $0C
+FF/C1C2: 14 04        TRB $04
+FF/C1C4: 8B           PHB
+FF/C1C5: 03 0E        ORA $0E,S
+FF/C1C7: 02 10        COP $10
+FF/C1C9: 14 04        TRB $04
+FF/C1CB: 8B           PHB
+FF/C1CC: 03 02        ORA $02,S
+FF/C1CE: 16 1C        ASL $1C,X
+FF/C1D0: 04 0C        TSB $0C
+FF/C1D2: 40           RTI

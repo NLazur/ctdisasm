@@ -1,0 +1,139 @@
+FE/D525: 65 46        ADC $46
+FE/D527: 47 38        EOR [$38]
+FE/D529: 17 18        ORA [$18],Y
+FE/D52B: 15 03        ORA $03,X
+FE/D52D: 96 6E        STX $6E,Y
+FE/D52F: 97 B1        STA [$B1],Y
+FE/D531: 82 4F 80     BRL $FE5583
+FE/D534: C8           INY
+FE/D535: 03 5C        ORA $5C,S
+FE/D537: 06 29        ASL $29
+FE/D539: CD 0B 65     CMP $650B
+FE/D53C: F8           SED
+FE/D53D: 46 37        LSR $37
+FE/D53F: 27 B0        AND [$B0]
+FE/D541: 0F AF 15 B1  ORA $B115AF
+FE/D545: 8F 4F 59 09  STA $09594F
+FE/D549: 0C FD 49     TSB $49FD
+FE/D54C: 3A           DEC
+FE/D54D: 70 C9        BVS $D518
+FE/D54F: 09 C2        ORA #$C2
+FE/D551: 01 73        ORA ($73,X)
+FE/D553: 1A           INC
+FE/D554: E0 0E        CPX #$0E
+FE/D556: 33 3D        AND ($3D,S),Y
+FE/D558: 00 A1        BRK $A1
+FE/D55A: E7 13        SBC [$13]
+FE/D55C: 0E 08 26     ASL $2608
+FE/D55F: C9 11        CMP #$11
+FE/D561: 33 36        AND ($36,S),Y
+FE/D563: FA           PLX
+FE/D564: 08           PHP
+FE/D565: 56 0A        LSR $0A,X
+FE/D567: 6E 05 1F     ROR $1F05
+FE/D56A: 20 06 74     JSR $7406
+FE/D56D: 17 02        ORA [$02],Y
+FE/D56F: 92 94        STA ($94)
+FE/D571: 42 C7        WDM $C7
+FE/D573: 31 02        AND ($02),Y
+FE/D575: 03 63        ORA $63,S
+FE/D577: E0 66        CPX #$66
+FE/D579: 06 07        ASL $07
+FE/D57B: 02 03        COP $03
+FE/D57D: 71 07        ADC ($07),Y
+FE/D57F: AF 07 5F 0E  LDA $0E5F07
+FE/D583: D1 47        CMP ($47),Y
+FE/D585: 10 7C        BPL $D603
+FE/D587: 7D 7D FE     ADC $FE7D,X
+FE/D58A: 01 09        ORA ($09,X)
+FE/D58C: CF B8 0A 23  CMP $230AB8
+FE/D590: 61 CB        ADC ($CB,X)
+FE/D592: 0F 15 16 05  ORA $051615
+FE/D596: 05 BE        ORA $BE
+FE/D598: 12 5D        ORA ($5D)
+FE/D59A: 23 09        AND $09,S
+FE/D59C: 04 7C        TSB $7C
+FE/D59E: 7E 24 0C     ROR $0C24,X
+FE/D5A1: 7C 7D 6B     JMP ($6B7D,X)
+FE/D5A4: 09 09        ORA #$09
+FE/D5A6: 87 4F        STA [$4F]
+FE/D5A8: B9 4B 13     LDA $134B,Y
+FE/D5AB: B8           CLV
+FE/D5AC: 0A           ASL
+FE/D5AD: 43 25        EOR $25,S
+FE/D5AF: 26 23        ROL $23
+FE/D5B1: BE 0A 00     LDX $000A,Y
+FE/D5B4: 17 04        ORA [$04],Y
+FE/D5B6: 06 03        ASL $03
+FE/D5B8: 04 05        TSB $05
+FE/D5BA: 04 05        TSB $05
+FE/D5BC: 8C 06 07     STY $0706
+FE/D5BF: 42 03        WDM $03
+FE/D5C1: 91 08        STA ($08),Y
+FE/D5C3: 09 7C        ORA #$7C
+FE/D5C5: 09 81        ORA #$81
+FE/D5C7: 48           PHA
+FE/D5C8: 03 C3        ORA $C3,S
+FE/D5CA: 88           DEY
+FE/D5CB: B8           CLV
+FE/D5CC: 02 44        COP $44
+FE/D5CE: 43 44        EOR $44,S
+FE/D5D0: 45 25        EOR $25
+FE/D5D2: 25 C0        AND $C0
+FE/D5D4: 54 54 37     MVN $54,$37
+FE/D5D7: 27 13        AND [$13]
+FE/D5D9: 16 8C        ASL $8C,X
+FE/D5DB: 00 8E        BRK $8E
+FE/D5DD: 00 F4        BRK $F4
+FE/D5DF: 17 07        ORA [$07],Y
+FE/D5E1: 64 06        STZ $06
+FE/D5E3: 31 07        AND ($07),Y
+FE/D5E5: 00 AB        BRK $AB
+FE/D5E7: 0E CF B2     ASL $B2CF
+FE/D5EA: 0E 0E 41     ASL $410E
+FE/D5ED: 37 03        AND [$03],Y
+FE/D5EF: 42 10        WDM $10
+FE/D5F1: 53 10        EOR ($10,S),Y
+FE/D5F3: 55 3F        EOR $3F,X
+FE/D5F5: 00 54        BRK $54
+FE/D5F7: C0 47        CPY #$47
+FE/D5F9: 26 23        ROL $23
+FE/D5FB: 26 23        ROL $23
+FE/D5FD: 25 01        AND $01
+FE/D5FF: 00 8F        BRK $8F
+FE/D601: 03 D0        ORA $D0,S
+FE/D603: 20 21 13     JSR $1321
+FE/D606: 14 91        TRB $91
+FE/D608: 00 18        BRK $18
+FE/D60A: AB           PLB
+FE/D60B: 07 4F        ORA [$4F]
+FE/D60D: B2 8B        LDA ($8B)
+FE/D60F: 8A           TXA
+FE/D610: 0F 37 03 42  ORA $420337
+FE/D614: C2 04        REP #$04
+FE/D616: 10 44        BPL $D65C
+FE/D618: 54 B7 05     MVN $B7,$05
+FE/D61B: 49 03        EOR #$03
+FE/D61D: 08           PHP
+FE/D61E: 45 54        EOR $54
+FE/D620: BD 05 78     LDA $7805,X
+FE/D623: 79 4F 03     ADC $034F,Y
+FE/D626: 25 36        AND $36
+FE/D628: 45 D8        EOR $D8
+FE/D62A: 0A           ASL
+FE/D62B: 80 B8        BRA $D5E5
+FE/D62D: 6E 5F 0D     ROR $0D5F
+FE/D630: 8C 06 10     STY $1006
+FE/D633: 54 00 43     MVN $00,$43
+FE/D636: 54 55 9B     MVN $55,$9B
+FE/D639: 9C 0F 9B     STZ $9B0F
+FE/D63C: EB           XBA
+FE/D63D: 00 DC        BRK $DC
+FE/D63F: DC 0F 44     JMP [$440F]
+FE/D642: 44 54 57     MVP $54,$57
+FE/D645: 86 F2        STX $F2
+FE/D647: 01 7F        ORA ($7F,X)
+FE/D649: 00 61        BRK $61
+FE/D64B: 62 56 04     PER $FEDAA4
+FE/D64E: 4F 03 80 B8  EOR $B88003
+FE/D652: 40           RTI

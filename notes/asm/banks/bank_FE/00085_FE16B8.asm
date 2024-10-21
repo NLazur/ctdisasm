@@ -1,0 +1,50 @@
+FE/16B8: 04 00        TSB $00
+FE/16BA: 14 60        TRB $60
+FE/16BC: 00 74        BRK $74
+FE/16BE: 68           PLA
+FE/16BF: 5C 1C 48 32  JMP $32481C
+FE/16C3: 08           PHP
+FE/16C4: 01 02        ORA ($02,X)
+FE/16C6: 04 60        TSB $60
+FE/16C8: 10 38        BPL $1702
+FE/16CA: 00 68        BRK $68
+FE/16CC: A0 20 68     LDY #$6820
+FE/16CF: 7C 7C 08     JMP ($087C,X)
+FE/16D2: 11 04        ORA ($04),Y
+FE/16D4: 02 47        COP $47
+FE/16D6: 02 80        COP $80
+FE/16D8: 7C 00 7A     JMP ($7A00,X)
+FE/16DB: 6C 36 04     JMP ($0436)
+FE/16DE: 12 28        ORA ($28)
+FE/16E0: 01 11        ORA ($11,X)
+FE/16E2: 91 00        STA ($00),Y
+FE/16E4: 7C 00 60     JMP ($6000,X)
+FE/16E7: 33 01        AND ($01,S),Y
+FE/16E9: 6C 08 0C     JMP ($0C08)
+FE/16EC: 05 A0        ORA $A0
+FE/16EE: 30 10        BMI $1700
+FE/16F0: 80 20        BRA $1712
+FE/16F2: 7C 78 76     JMP ($7678,X)
+FE/16F5: 64 1A        STZ $1A
+FE/16F7: 1F 71 02 B1  ORA $B10271,X
+FE/16FB: 00 C0        BRK $C0
+FE/16FD: 10 22        BPL $1721
+FE/16FF: 00 60        BRK $60
+FE/1701: 50 02        BVC $1705
+FE/1703: 00 7A        BRK $7A
+FE/1705: 71 E6        ADC ($E6),Y
+FE/1707: 03 14        ORA $14,S
+FE/1709: 18           CLC
+FE/170A: 0C 4D 00     TSB $004D
+FE/170D: 59 10 6D     EOR $6D10,Y
+FE/1710: 01 6C        ORA ($6C,X)
+FE/1712: 61 73        ADC ($73,X)
+FE/1714: 04 18        TSB $18
+FE/1716: 10 18        BPL $1730
+FE/1718: 30 01        BMI $171B
+FE/171A: 00 C0        BRK $C0
+FE/171C: 50 00        BVC $171E
+FE/171E: F8           SED
+FE/171F: 04 56        TSB $56
+FE/1721: 44 46 00     MVP $46,$00
+FE/1724: 40           RTI

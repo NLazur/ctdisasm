@@ -1,0 +1,43 @@
+C3/C3D2: 44 8A 80     MVP $8A,$80
+C3/C3D5: 39 04 30     AND $3004,Y
+C3/C3D8: 26 04        ROL $04
+C3/C3DA: F8           SED
+C3/C3DB: 03 D8        ORA $D8,S
+C3/C3DD: 3F 30 0E 1F  AND $1F0E30,X
+C3/C3E1: 3F 90 3D 90  AND $903D90,X
+C3/C3E5: 37 30        AND [$30],Y
+C3/C3E7: 30 4E        BMI $C437
+C3/C3E9: 39 6C 11     AND $116C,Y
+C3/C3EC: 69 01        ADC #$01
+C3/C3EE: 3A           DEC
+C3/C3EF: 00 A0        BRK $A0
+C3/C3F1: 21 46        AND ($46,X)
+C3/C3F3: 00 13        BRK $13
+C3/C3F5: 43 45        EOR $45,S
+C3/C3F7: 29 06        AND #$06
+C3/C3F9: 44 71 01     MVP $71,$01
+C3/C3FC: 45 00        EOR $00
+C3/C3FE: 10 29        BPL $C429
+C3/C400: 06 17        ASL $17
+C3/C402: 00 10        BRK $10
+C3/C404: 48           PHA
+C3/C405: 00 10        BRK $10
+C3/C407: 49 00        EOR #$00
+C3/C409: 13 47        ORA ($47,S),Y
+C3/C40B: D4 00        PEI $00
+C3/C40D: 1F 7F 71 54  ORA $54717F,X
+C3/C411: 7F A1 54 7F  ADC $7F54A1,X
+C3/C415: F1 7F        SBC ($7F),Y
+C3/C417: 11 40        ORA ($40),Y
+C3/C419: 09 45        ORA #$45
+C3/C41B: 0B           PHD
+C3/C41C: 7F 09 6A 04  ADC $046A09,X
+C3/C420: 00 8F        BRK $8F
+C3/C422: 69 08        ADC #$08
+C3/C424: 00 A1        BRK $A1
+C3/C426: 0B           PHD
+C3/C427: 78           SEI
+C3/C428: 21 38        AND ($38,X)
+C3/C42A: C0 10        CPY #$10
+C3/C42C: A8           TAY
+C3/C42D: 40           RTI

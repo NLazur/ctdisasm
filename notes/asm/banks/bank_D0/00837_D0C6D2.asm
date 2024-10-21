@@ -1,0 +1,13 @@
+D0/C6D2: 3C 40 FC     BIT $FC40,X
+D0/C6D5: 84 FC        STY $FC
+D0/C6D7: 84 05        STY $05
+D0/C6D9: 06 03        ASL $03
+D0/C6DB: 04 0B        TSB $0B
+D0/C6DD: 0C 07 08     TSB $0807
+D0/C6E0: 07 08        ORA [$08]
+D0/C6E2: 17 18        ORA [$18],Y
+D0/C6E4: 0F 10 0F 10  ORA $100F10
+D0/C6E8: 7C 84 7C     JMP ($7C84,X)
+D0/C6EB: 84 F8        STY $F8
+D0/C6ED: 84 3C        STY $3C
+D0/C6EF: 40           RTI

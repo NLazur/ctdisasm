@@ -1,0 +1,48 @@
+FE/6E5C: 02 04        COP $04
+FE/6E5E: 08           PHP
+FE/6E5F: 47 0C        EOR [$0C]
+FE/6E61: 68           PLA
+FE/6E62: 0C 00 4B     TSB $4B00
+FE/6E65: 14 AB        TRB $AB
+FE/6E67: 14 30        TRB $30
+FE/6E69: 18           CLC
+FE/6E6A: 70 18        BVS $6E84
+FE/6E6C: 00 10        BRK $10
+FE/6E6E: 20 F1 1C     JSR $1CF1
+FE/6E71: 12 20        ORA ($20)
+FE/6E73: 92 1C        STA ($1C)
+FE/6E75: 10 52        BPL $6EC9
+FE/6E77: 1D 1F 7C     ORA $7C1F,X
+FE/6E7A: 02 10        COP $10
+FE/6E7C: 04 00        TSB $00
+FE/6E7E: 24 04        BIT $04
+FE/6E80: 08           PHP
+FE/6E81: 45 22        EOR $22
+FE/6E83: 00 29        BRK $29
+FE/6E85: 10 0B        BPL $6E92
+FE/6E87: 14 0C        TRB $0C
+FE/6E89: 00 18        BRK $18
+FE/6E8B: 0E 1C 10     ASL $101C
+FE/6E8E: 20 12 24     JSR $2412
+FE/6E91: 5A           PHY
+FE/6E92: 08           PHP
+FE/6E93: 6F E7 1C 1E  ADC $1E1CE7
+FE/6E97: 30 1F        BMI $6EB8
+FE/6E99: 7C 44 02     JMP ($0244,X)
+FE/6E9C: 00 43        BRK $43
+FE/6E9E: 00 63        BRK $63
+FE/6EA0: 00 64        BRK $64
+FE/6EA2: 04 E6        TSB $E6
+FE/6EA4: 20 00 C8     JSR $C800
+FE/6EA7: 00 09        BRK $09
+FE/6EA9: 1D EA 04     ORA $04EA,X
+FE/6EAC: 2C 0D 40     BIT $400D
+FE/6EAF: 4E 05 D2     LSR $D205
+FE/6EB2: 01 57        ORA ($57,X)
+FE/6EB4: 02 20        COP $20
+FE/6EB6: 50 09        BVC $6EC1
+FE/6EB8: 00 00        BRK $00
+FE/6EBA: 5A           PHY
+FE/6EBB: 6F B5 5A 10  ADC $105AB5
+FE/6EBF: 46 CD        LSR $CD
+FE/6EC1: 60           RTS

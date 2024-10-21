@@ -1,0 +1,46 @@
+D1/2F4E: 09 18        ORA #$18
+D1/2F50: C0 E8        CPY #$E8
+D1/2F52: 45 21        EOR $21
+D1/2F54: 00 E6        BRK $E6
+D1/2F56: C0 12        CPY #$12
+D1/2F58: 18           CLC
+D1/2F59: 02 00        COP $00
+D1/2F5B: FF FF 40 1E  SBC $1E40FF,X
+D1/2F5F: 00 00        BRK $00
+D1/2F61: 14 00        TRB $00
+D1/2F63: 80 80        BRA $2EE5
+D1/2F65: 80 C8        BRA $2F2F
+D1/2F67: 00 E8        BRK $E8
+D1/2F69: 80 00        BRA $2F6B
+D1/2F6B: 08           PHP
+D1/2F6C: 01 FF        ORA ($FF,X)
+D1/2F6E: FF 14 00 0E  SBC $0E0014,X
+D1/2F72: 00 88        BRK $88
+D1/2F74: 0A           ASL
+D1/2F75: 01 2A        ORA ($2A,X)
+D1/2F77: 0B           PHD
+D1/2F78: 28           PLP
+D1/2F79: 0C 01 2C     TSB $2C01
+D1/2F7C: 16 18        ASL $18,X
+D1/2F7E: 44 29 00     MVP $29,$00
+D1/2F81: F8           SED
+D1/2F82: 00 80        BRK $80
+D1/2F84: 28           PLP
+D1/2F85: 1F 00 40 A5  ORA $A54000,X
+D1/2F89: 00 00        BRK $00
+D1/2F8B: 11 80        ORA ($80),Y
+D1/2F8D: 46 01        LSR $01
+D1/2F8F: FF FF 11 80  SBC $8011FF,X
+D1/2F93: 0A           ASL
+D1/2F94: 48           PHA
+D1/2F95: 06 10        ASL $10
+D1/2F97: 4A           LSR
+D1/2F98: 0C 00 22     TSB $2200
+D1/2F9B: C0 C0        CPY #$C0
+D1/2F9D: CE 80 00     DEC $0080
+D1/2FA0: CE 40 CE     DEC $CE40
+D1/2FA3: 80 CE        BRA $2F73
+D1/2FA5: C0 0D        CPY #$0D
+D1/2FA7: 10 80        BPL $2F29
+D1/2FA9: CC 00 CC     CPY $CC00
+D1/2FAC: 40           RTI

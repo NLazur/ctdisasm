@@ -1,0 +1,62 @@
+FE/8E86: 03 05        ORA $05,S
+FE/8E88: 06 40        ASL $40
+FE/8E8A: 0F 08 0C 0B  ORA $0B0C08
+FE/8E8E: 0B           PHD
+FE/8E8F: 05 BD        ORA $BD
+FE/8E91: 31 02        AND ($02),Y
+FE/8E93: 04 00        TSB $00
+FE/8E95: 05 2E        ORA $2E
+FE/8E97: 01 08        ORA ($08,X)
+FE/8E99: 03 01        ORA $01,S
+FE/8E9B: 05 03        ORA $03
+FE/8E9D: 00 03        BRK $03
+FE/8E9F: 79 7F 8F     ADC $8F7F,Y
+FE/8EA2: 7C EF 30     JMP ($30EF,X)
+FE/8EA5: DF 00 30 DE  CMP $DE3000,X
+FE/8EA9: A1 DE        LDA ($DE,X)
+FE/8EAB: 71 6F        ADC ($6F),Y
+FE/8EAD: B0 03        BCS $8EB2
+FE/8EAF: 00 00        BRK $00
+FE/8EB1: 7A           PLY
+FE/8EB2: 04 00        TSB $00
+FE/8EB4: 11 F0        ORA ($F0),Y
+FE/8EB6: 04 C0        TSB $C0
+FE/8EB8: 80 20        BRA $8EDA
+FE/8EBA: 41 29        EOR ($29,X)
+FE/8EBC: 01 21        ORA ($21,X)
+FE/8EBE: 30 84        BMI $8E44
+FE/8EC0: 3B           TSC
+FE/8EC1: 00 8F        BRK $8F
+FE/8EC3: 02 60        COP $60
+FE/8EC5: 00 22        BRK $22
+FE/8EC7: 0B           PHD
+FE/8EC8: 72 15        ADC ($15)
+FE/8ECA: 22 80 40 C0  JSR $C04080
+FE/8ECE: 02 60        COP $60
+FE/8ED0: 37 00        AND [$00],Y
+FE/8ED2: 22 0B 72 15  JSR $15720B
+FE/8ED6: 32 01        AND ($01)
+FE/8ED8: 01 00        ORA ($00,X)
+FE/8EDA: 44 00 07     MVP $00,$07
+FE/8EDD: 04 0C        TSB $0C
+FE/8EDF: 07 04        ORA [$04]
+FE/8EE1: 3D 61 4F     AND $4F61,X
+FE/8EE4: 12 03        ORA ($03)
+FE/8EE6: 04 03        TSB $03
+FE/8EE8: 00 A1        BRK $A1
+FE/8EEA: 6E 01 C0     ROR $C001
+FE/8EED: 20 E0 20     JSR $20E0
+FE/8EF0: 44 10 80     MVP $10,$80
+FE/8EF3: 01 00        ORA ($00,X)
+FE/8EF5: 4D 82 22     EOR $2282
+FE/8EF8: C0 02 00     CPY #$0002
+FE/8EFB: 38           SEC
+FE/8EFC: C2 01        REP #$01
+FE/8EFE: 01 40        ORA ($40,X)
+FE/8F00: 20 00 1E     JSR $1E00
+FE/8F03: 07 7F        ORA [$7F]
+FE/8F05: 62 8D 11     PER $FEA095
+FE/8F08: 5F 01 AE 01  EOR $01AE01,X
+FE/8F0C: 38           SEC
+FE/8F0D: 00 F0        BRK $F0
+FE/8F0F: 60           RTS

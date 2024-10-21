@@ -1,0 +1,36 @@
+C3/D1A1: 18           CLC
+C3/D1A2: 06 40        ASL $40
+C3/D1A4: 00 A7        BRK $A7
+C3/D1A6: 18           CLC
+C3/D1A7: FD 00 7F     SBC $7F00,X
+C3/D1AA: 9F 57 9F 71  STA $719F57,X
+C3/D1AE: D8           CLD
+C3/D1AF: 35 8E        AND $8E,X
+C3/D1B1: 00 62        BRK $62
+C3/D1B3: CB           WAI
+C3/D1B4: 0C 9F 37     TSB $379F
+C3/D1B7: 7B           TDC
+C3/D1B8: 12 32        ORA ($32)
+C3/D1BA: 00 09        BRK $09
+C3/D1BC: E6 18        INC $18
+C3/D1BE: FF 7F 38 6B  SBC $6B387F,X
+C3/D1C2: B4 08        LDY $08,X
+C3/D1C4: 66 CB        ROR $CB
+C3/D1C6: 49 20 08     EOR #$0820
+C3/D1C9: FF 67 5F 2F  SBC $2F5F67,X
+C3/D1CD: 80 FE        BRA $D1CD
+C3/D1CF: 09 70 26     ORA #$2670
+C3/D1D2: 8B           PHB
+C3/D1D3: 15 EB        ORA $EB,X
+C3/D1D5: A0 20        LDY #$20
+C3/D1D7: 01 40        ORA ($40,X)
+C3/D1D9: 48           PHA
+C3/D1DA: AA           TAX
+C3/D1DB: 08           PHP
+C3/D1DC: BE 5F 3E     LDX $3E5F,Y
+C3/D1DF: 37 77        AND [$77],Y
+C3/D1E1: 80 1A        BRA $D1FD
+C3/D1E3: 8D 21 E7     STA $E721
+C3/D1E6: 18           CLC
+C3/D1E7: E0 5B        CPX #$5B
+C3/D1E9: 60           RTS

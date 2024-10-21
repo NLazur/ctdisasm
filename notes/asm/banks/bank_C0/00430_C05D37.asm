@@ -1,0 +1,13 @@
+C0/5D37: E3 00        SBC $00,S
+C0/5D39: 89 40        BIT #$40
+C0/5D3B: 0D 00 0E     ORA $0E00
+C0/5D3E: 02 AE        COP $AE
+C0/5D40: 95 00        STA $00,X
+C0/5D42: 0E 00 71     ASL $7100
+C0/5D45: FF 12 FF 03  SBC $03FF12,X
+C0/5D49: 04 04        TSB $04
+C0/5D4B: E3 01        SBC $01,S
+C0/5D4D: 00 11        BRK $11
+C0/5D4F: 09 E3        ORA #$E3
+C0/5D51: 00 89        BRK $89
+C0/5D53: 40           RTI

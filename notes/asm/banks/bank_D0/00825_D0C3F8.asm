@@ -1,0 +1,44 @@
+D0/C3F8: 07 04        ORA [$04]
+D0/C3FA: 07 04        ORA [$04]
+D0/C3FC: 03 04        ORA $04,S
+D0/C3FE: 03 04        ORA $04,S
+D0/C400: 13 14        ORA ($14,S),Y
+D0/C402: 13 14        ORA ($14,S),Y
+D0/C404: 07 10        ORA [$10]
+D0/C406: 0F 18 C0 40  ORA $40C018
+D0/C40A: C0 40        CPY #$40
+D0/C40C: 80 40        BRA $C44E
+D0/C40E: 80 40        BRA $C450
+D0/C410: 90 50        BCC $C462
+D0/C412: 90 50        BCC $C464
+D0/C414: C0 10        CPY #$10
+D0/C416: E0 30        CPX #$30
+D0/C418: 1F 20 3F 00  ORA $003F20,X
+D0/C41C: 3F 00 3F 00  AND $003F00,X
+D0/C420: 3F 00 3F 00  AND $003F00,X
+D0/C424: 3F 00 1F 20  AND $201F00,X
+D0/C428: F8           SED
+D0/C429: 08           PHP
+D0/C42A: F8           SED
+D0/C42B: 08           PHP
+D0/C42C: F8           SED
+D0/C42D: 08           PHP
+D0/C42E: F8           SED
+D0/C42F: 08           PHP
+D0/C430: FA           PLX
+D0/C431: 0A           ASL
+D0/C432: F8           SED
+D0/C433: 0A           ASL
+D0/C434: F2 08        SBC ($08)
+D0/C436: FA           PLX
+D0/C437: 00 5F        BRK $5F
+D0/C439: 20 5F 20     JSR $205F
+D0/C43C: FF 80 7E 81  SBC $817E80,X
+D0/C440: 7F 81 7F 81  ADC $817F81,X
+D0/C444: 7F 81 FF 01  ADC $01FF81,X
+D0/C448: 01 01        ORA ($01,X)
+D0/C44A: 02 02        COP $02
+D0/C44C: 00 04        BRK $04
+D0/C44E: 28           PLP
+D0/C44F: 20 38 28     JSR $2838
+D0/C452: 60           RTS

@@ -1,0 +1,42 @@
+C1/011F: DA           PHX
+C1/0120: 7B           TDC
+C1/0121: AA           TAX
+C1/0122: 38           SEC
+C1/0123: AD 99 94     LDA $9499
+C1/0126: E9 64        SBC #$64
+C1/0128: 00 8D        BRK $8D
+C1/012A: 99 94 E8     STA $E894,Y
+C1/012D: B0 F3        BCS $0122
+C1/012F: 18           CLC
+C1/0130: AD 99 94     LDA $9499
+C1/0133: 69 64        ADC #$64
+C1/0135: 00 8D        BRK $8D
+C1/0137: 99 94 CA     STA $CA94,Y
+C1/013A: DA           PHX
+C1/013B: 7B           TDC
+C1/013C: AA           TAX
+C1/013D: 38           SEC
+C1/013E: AD 99 94     LDA $9499
+C1/0141: E9 0A        SBC #$0A
+C1/0143: 00 8D        BRK $8D
+C1/0145: 99 94 E8     STA $E894,Y
+C1/0148: B0 F3        BCS $013D
+C1/014A: 18           CLC
+C1/014B: AD 99 94     LDA $9499
+C1/014E: 69 0A        ADC #$0A
+C1/0150: 00 CA        BRK $CA
+C1/0152: DA           PHX
+C1/0153: E2 20        SEP #$20
+C1/0155: AA           TAX
+C1/0156: BF 03 F9 CC  LDA $CCF903,X
+C1/015A: 8D 9F 94     STA $949F
+C1/015D: FA           PLX
+C1/015E: BF 03 F9 CC  LDA $CCF903,X
+C1/0162: 8D 9E 94     STA $949E
+C1/0165: FA           PLX
+C1/0166: BF 03 F9 CC  LDA $CCF903,X
+C1/016A: 8D 9D 94     STA $949D
+C1/016D: A9 FF        LDA #$FF
+C1/016F: 8D 9C 94     STA $949C
+C1/0172: FA           PLX
+C1/0173: 60           RTS

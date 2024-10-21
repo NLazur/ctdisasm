@@ -1,0 +1,45 @@
+C3/6741: 02 77        COP $77
+C3/6743: 98           TYA
+C3/6744: 01 3F        ORA ($3F,X)
+C3/6746: 21 0A        AND ($0A,X)
+C3/6748: 90 03        BCC $674D
+C3/674A: CE 01 EE     DEC $EE01
+C3/674D: 09 A9 00     ORA #$00A9
+C3/6750: 0A           ASL
+C3/6751: 5B           TCD
+C3/6752: AD 7B 00     LDA $007B
+C3/6755: 00 F0        BRK $F0
+C3/6757: 03 4C        ORA $4C,S
+C3/6759: B4 56        LDY $56,X
+C3/675B: A5 00        LDA $00
+C3/675D: C5 00        CMP $00
+C3/675F: 30 D0        BMI $6731
+C3/6761: 13 A5        ORA ($A5,S),Y
+C3/6763: 0A           ASL
+C3/6764: C5 32        CMP $32
+C3/6766: D0 00        BNE $6768
+C3/6768: 11 A5        ORA ($A5),Y
+C3/676A: 0C C5 34     TSB $34C5
+C3/676D: D0 0F        BNE $677E
+C3/676F: A5 00        LDA $00
+C3/6771: 10 C5        BPL $6738
+C3/6773: 36 D0        ROL $D0,X
+C3/6775: 0D 60 85     ORA $8560
+C3/6778: 30 00        BMI $677A
+C3/677A: A5 0A        LDA $0A
+C3/677C: 85 32        STA $32
+C3/677E: A5 0C        LDA $0C
+C3/6780: 85 34        STA $34
+C3/6782: 21 B7        AND ($B7,X)
+C3/6784: 01 36        ORA ($36,X)
+C3/6786: 4C 7B 35     JMP $357B
+C3/6789: A1 0F        LDA ($0F,X)
+C3/678B: 0C 0B 58     TSB $580B
+C3/678E: 8D 1E 0A     STA $0A1E
+C3/6791: 3E 10 B7     ROL $B710,X
+C3/6794: 51 1E        EOR ($1E),Y
+C3/6796: D1 41        CMP ($41),Y
+C3/6798: 8D 0C 12     STA $120C
+C3/679B: 14 E4        TRB $E4
+C3/679D: 51 13        EOR ($13),Y
+C3/679F: 60           RTS

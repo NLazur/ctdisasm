@@ -1,0 +1,48 @@
+FD/9909: 00 44        BRK $44
+FD/990B: FF B2 00 57  SBC $5700B2,X
+FD/990F: 00 B0        BRK $B0
+FD/9911: 00 AA        BRK $AA
+FD/9913: 5C 04 00 62  JMP $620004
+FD/9917: 08           PHP
+FD/9918: 00 6A        BRK $6A
+FD/991A: 0C 00 68     TSB $6800
+FD/991D: 10 00        BPL $991F
+FD/991F: 0A           ASL
+FD/9920: 6C 14 00     JMP ($0014)
+FD/9923: 6D 18 00     ADC $0018
+FD/9926: 83 97        STA $97,S
+FD/9928: 03 8B        ORA $8B,S
+FD/992A: 00 0A        BRK $0A
+FD/992C: 09 B4 00     ORA #$00B4
+FD/992F: B2 BB        LDA ($BB)
+FD/9931: 0E 00 40     ASL $4000
+FD/9934: 82 3C 8B     BRL $FD2473
+FD/9937: 06 05        ASL $05
+FD/9939: B3 0B        LDA ($0B,S),Y
+FD/993B: 00 0F        BRK $0F
+FD/993D: 11 17        ORA ($17),Y
+FD/993F: 00 04        BRK $04
+FD/9941: 8B           PHB
+FD/9942: 05 17        ORA $17
+FD/9944: 10 12        BPL $9958
+FD/9946: 00 83        BRK $83
+FD/9948: 00 A1        BRK $A1
+FD/994A: 05 8D        ORA $8D
+FD/994C: 00 08        BRK $08
+FD/994E: F0 0B        BEQ $995B
+FD/9950: 0F 00 00 B2  ORA $B20000
+FD/9954: 65 06        ADC $06
+FD/9956: 78           SEI
+FD/9957: BB           TYX
+FD/9958: 33 00        AND ($00,S),Y
+FD/995A: 00 82        BRK $82
+FD/995C: 0B           PHD
+FD/995D: 8B           PHB
+FD/995E: 09 05 AE     ORA #$AE05
+FD/9961: 00 B2        BRK $B2
+FD/9963: 00 AA        BRK $AA
+FD/9965: 04 BB        TSB $BB
+FD/9967: 2B           PLD
+FD/9968: B7 06        LDA [$06],Y
+FD/996A: 10 AE        BPL $991A
+FD/996C: 40           RTI

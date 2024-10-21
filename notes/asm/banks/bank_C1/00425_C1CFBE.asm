@@ -1,0 +1,2 @@
+C1/CFBE: 20 F9 8C     JSR $8CF9
+C1/CFC1: 60           RTS

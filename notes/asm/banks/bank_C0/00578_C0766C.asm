@@ -1,0 +1,73 @@
+C0/766C: 4A           LSR
+C0/766D: 25 1E        AND $1E
+C0/766F: 85 52        STA $52
+C0/7671: AA           TAX
+C0/7672: BF C0 30 7E  LDA $7E30C0,X
+C0/7676: 29 01        AND #$01
+C0/7678: EB           XBA
+C0/7679: BF 00 30 7E  LDA $7E3000,X
+C0/767D: C2 20        REP #$20
+C0/767F: 0A           ASL
+C0/7680: 0A           ASL
+C0/7681: 0A           ASL
+C0/7682: AA           TAX
+C0/7683: BF 02 B0 7E  LDA $7EB002,X
+C0/7687: E2 20        SEP #$20
+C0/7689: 8D 80 21     STA $2180
+C0/768C: EB           XBA
+C0/768D: 8D 80 21     STA $2180
+C0/7690: C6 5C        DEC $5C
+C0/7692: A5 54        LDA $54
+C0/7694: EB           XBA
+C0/7695: A5 52        LDA $52
+C0/7697: 1A           INC
+C0/7698: 25 1E        AND $1E
+C0/769A: 85 52        STA $52
+C0/769C: AA           TAX
+C0/769D: BF C0 30 7E  LDA $7E30C0,X
+C0/76A1: 29 01        AND #$01
+C0/76A3: EB           XBA
+C0/76A4: BF 00 30 7E  LDA $7E3000,X
+C0/76A8: C2 20        REP #$20
+C0/76AA: 0A           ASL
+C0/76AB: 0A           ASL
+C0/76AC: 0A           ASL
+C0/76AD: AA           TAX
+C0/76AE: BF 00 B0 7E  LDA $7EB000,X
+C0/76B2: E2 20        SEP #$20
+C0/76B4: 8D 80 21     STA $2180
+C0/76B7: EB           XBA
+C0/76B8: 8D 80 21     STA $2180
+C0/76BB: BF 02 B0 7E  LDA $7EB002,X
+C0/76BF: 8D 80 21     STA $2180
+C0/76C2: BF 03 B0 7E  LDA $7EB003,X
+C0/76C6: 8D 80 21     STA $2180
+C0/76C9: A5 52        LDA $52
+C0/76CB: 1A           INC
+C0/76CC: 25 1E        AND $1E
+C0/76CE: 85 52        STA $52
+C0/76D0: C6 5C        DEC $5C
+C0/76D2: F0 07        BEQ $76DB
+C0/76D4: A5 54        LDA $54
+C0/76D6: EB           XBA
+C0/76D7: A5 52        LDA $52
+C0/76D9: 80 C1        BRA $769C
+C0/76DB: A5 54        LDA $54
+C0/76DD: EB           XBA
+C0/76DE: A5 52        LDA $52
+C0/76E0: AA           TAX
+C0/76E1: BF C0 30 7E  LDA $7E30C0,X
+C0/76E5: 29 01        AND #$01
+C0/76E7: EB           XBA
+C0/76E8: BF 00 30 7E  LDA $7E3000,X
+C0/76EC: C2 20        REP #$20
+C0/76EE: 0A           ASL
+C0/76EF: 0A           ASL
+C0/76F0: 0A           ASL
+C0/76F1: AA           TAX
+C0/76F2: BF 02 B0 7E  LDA $7EB002,X
+C0/76F6: E2 20        SEP #$20
+C0/76F8: 8D 80 21     STA $2180
+C0/76FB: EB           XBA
+C0/76FC: 8D 80 21     STA $2180
+C0/76FF: 60           RTS

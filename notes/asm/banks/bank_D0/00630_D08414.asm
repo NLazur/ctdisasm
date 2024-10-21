@@ -1,0 +1,15 @@
+D0/8414: 01 01        ORA ($01,X)
+D0/8416: 00 00        BRK $00
+D0/8418: 8E FB 8E     STX $8EFB
+D0/841B: FF 70 7F 78  SBC $787F70,X
+D0/841F: 47 3D        EOR [$3D]
+D0/8421: 3F 5D 7F 29  AND $297F5D,X
+D0/8425: 2F 06 06 1D  AND $1D0606
+D0/8429: F3 0E        SBC ($0E,S),Y
+D0/842B: FA           PLX
+D0/842C: 58           CLI
+D0/842D: FC C8 B8     JSR ($B8C8,X)
+D0/8430: E8           INX
+D0/8431: F8           SED
+D0/8432: 90 F0        BCC $8424
+D0/8434: 60           RTS

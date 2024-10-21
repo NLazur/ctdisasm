@@ -1,0 +1,42 @@
+C2/688A: BD 14 00     LDA $0014,X
+C2/688D: 4A           LSR
+C2/688E: 4A           LSR
+C2/688F: 4A           LSR
+C2/6890: 69 20        ADC #$20
+C2/6892: 00 9D        BRK $9D
+C2/6894: 14 00        TRB $00
+C2/6896: BD 18 00     LDA $0018,X
+C2/6899: 4A           LSR
+C2/689A: 4A           LSR
+C2/689B: 4A           LSR
+C2/689C: 69 30        ADC #$30
+C2/689E: 00 9D        BRK $9D
+C2/68A0: 18           CLC
+C2/68A1: 00 60        BRK $60
+C2/68A3: BD 02 00     LDA $0002,X
+C2/68A6: D0 30        BNE $68D8
+C2/68A8: FE 02 00     INC $0002,X
+C2/68AB: A9 30        LDA #$30
+C2/68AD: 9D 0F 00     STA $000F,X
+C2/68B0: 9B           TXY
+C2/68B1: C2 20        REP #$20
+C2/68B3: AD 00 01     LDA $0100
+C2/68B6: 29 FF 01     AND #$01FF
+C2/68B9: 38           SEC
+C2/68BA: E9 F0 01     SBC #$01F0
+C2/68BD: 0A           ASL
+C2/68BE: AA           TAX
+C2/68BF: BF E4 68 C2  LDA $C268E4,X
+C2/68C3: 99 14 00     STA $0014,Y
+C2/68C6: A9 C0 00     LDA #$00C0
+C2/68C9: 99 18 00     STA $0018,Y
+C2/68CC: BB           TYX
+C2/68CD: 9E 10 00     STZ $0010,X
+C2/68D0: A9 47 00     LDA #$0047
+C2/68D3: 20 DA 1C     JSR $1CDA
+C2/68D6: E2 20        SEP #$20
+C2/68D8: AD 48 1B     LDA $1B48
+C2/68DB: D0 05        BNE $68E2
+C2/68DD: 20 1D 0E     JSR $0E1D
+C2/68E0: 18           CLC
+C2/68E1: 60           RTS

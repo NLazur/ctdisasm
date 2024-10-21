@@ -1,0 +1,37 @@
+D1/AD6C: 00 60        BRK $60
+D1/AD6E: 00 00        BRK $00
+D1/AD70: 00 9A        BRK $9A
+D1/AD72: DA           PHX
+D1/AD73: 15 0E        ORA $0E,X
+D1/AD75: 0F 4F 4E 55  ORA $554E4F
+D1/AD79: 1D 16 0A     ORA $0A16,X
+D1/AD7C: 4A           LSR
+D1/AD7D: 56 5D        LSR $5D,X
+D1/AD7F: 1E 0A 0A     ASL $0A0A,X
+D1/AD82: 4A           LSR
+D1/AD83: 4A           LSR
+D1/AD84: 5E 9E 8A     LSR $8A9E,X
+D1/AD87: 8A           TXA
+D1/AD88: CA           DEX
+D1/AD89: CA           DEX
+D1/AD8A: DE 9D 96     DEC $969D,X
+D1/AD8D: 8A           TXA
+D1/AD8E: CA           DEX
+D1/AD8F: D6 DD        DEC $DD,X
+D1/AD91: 95 8E        STA $8E,X
+D1/AD93: 8F CF CE D5  STA $D5CECF
+D1/AD97: 0B           PHD
+D1/AD98: 4B           PHK
+D1/AD99: 8B           PHB
+D1/AD9A: CB           WAI
+D1/AD9B: 01 7F        ORA ($7F,X)
+D1/AD9D: EC 7F E0     CPX $E07F
+D1/ADA0: 7F E0 7F E0  ADC $E07FE0,X
+D1/ADA4: 7F E0 7F E0  ADC $E07FE0,X
+D1/ADA8: 3F C0 1F C0  AND $C01FC0,X
+D1/ADAC: 03 C0        ORA $C0,S
+D1/ADAE: 03 C0        ORA $C0,S
+D1/ADB0: 00 00        BRK $00
+D1/ADB2: 00 00        BRK $00
+D1/ADB4: 00 00        BRK $00
+D1/ADB6: 60           RTS

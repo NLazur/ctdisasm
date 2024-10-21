@@ -1,0 +1,173 @@
+C0/E534: 29 FF        AND #$FF
+C0/E536: 07 0A        ORA [$0A]
+C0/E538: 0A           ASL
+C0/E539: 0A           ASL
+C0/E53A: 0A           ASL
+C0/E53B: 0A           ASL
+C0/E53C: 84 C5        STY $C5
+C0/E53E: A8           TAY
+C0/E53F: E2 20        SEP #$20
+C0/E541: 7B           TDC
+C0/E542: EB           XBA
+C0/E543: B7 CD        LDA [$CD],Y
+C0/E545: AA           TAX
+C0/E546: BD 00 FD     LDA $FD00,X
+C0/E549: 8D 80 21     STA $2180
+C0/E54C: C8           INY
+C0/E54D: B7 CD        LDA [$CD],Y
+C0/E54F: AA           TAX
+C0/E550: BD 00 FD     LDA $FD00,X
+C0/E553: 8D 80 21     STA $2180
+C0/E556: C8           INY
+C0/E557: B7 CD        LDA [$CD],Y
+C0/E559: AA           TAX
+C0/E55A: BD 00 FD     LDA $FD00,X
+C0/E55D: 8D 80 21     STA $2180
+C0/E560: C8           INY
+C0/E561: B7 CD        LDA [$CD],Y
+C0/E563: AA           TAX
+C0/E564: BD 00 FD     LDA $FD00,X
+C0/E567: 8D 80 21     STA $2180
+C0/E56A: C8           INY
+C0/E56B: B7 CD        LDA [$CD],Y
+C0/E56D: AA           TAX
+C0/E56E: BD 00 FD     LDA $FD00,X
+C0/E571: 8D 80 21     STA $2180
+C0/E574: C8           INY
+C0/E575: B7 CD        LDA [$CD],Y
+C0/E577: AA           TAX
+C0/E578: BD 00 FD     LDA $FD00,X
+C0/E57B: 8D 80 21     STA $2180
+C0/E57E: C8           INY
+C0/E57F: B7 CD        LDA [$CD],Y
+C0/E581: AA           TAX
+C0/E582: BD 00 FD     LDA $FD00,X
+C0/E585: 8D 80 21     STA $2180
+C0/E588: C8           INY
+C0/E589: B7 CD        LDA [$CD],Y
+C0/E58B: AA           TAX
+C0/E58C: BD 00 FD     LDA $FD00,X
+C0/E58F: 8D 80 21     STA $2180
+C0/E592: C8           INY
+C0/E593: B7 CD        LDA [$CD],Y
+C0/E595: AA           TAX
+C0/E596: BD 00 FD     LDA $FD00,X
+C0/E599: 8D 80 21     STA $2180
+C0/E59C: C8           INY
+C0/E59D: B7 CD        LDA [$CD],Y
+C0/E59F: AA           TAX
+C0/E5A0: BD 00 FD     LDA $FD00,X
+C0/E5A3: 8D 80 21     STA $2180
+C0/E5A6: C8           INY
+C0/E5A7: B7 CD        LDA [$CD],Y
+C0/E5A9: AA           TAX
+C0/E5AA: BD 00 FD     LDA $FD00,X
+C0/E5AD: 8D 80 21     STA $2180
+C0/E5B0: C8           INY
+C0/E5B1: B7 CD        LDA [$CD],Y
+C0/E5B3: AA           TAX
+C0/E5B4: BD 00 FD     LDA $FD00,X
+C0/E5B7: 8D 80 21     STA $2180
+C0/E5BA: C8           INY
+C0/E5BB: B7 CD        LDA [$CD],Y
+C0/E5BD: AA           TAX
+C0/E5BE: BD 00 FD     LDA $FD00,X
+C0/E5C1: 8D 80 21     STA $2180
+C0/E5C4: C8           INY
+C0/E5C5: B7 CD        LDA [$CD],Y
+C0/E5C7: AA           TAX
+C0/E5C8: BD 00 FD     LDA $FD00,X
+C0/E5CB: 8D 80 21     STA $2180
+C0/E5CE: C8           INY
+C0/E5CF: B7 CD        LDA [$CD],Y
+C0/E5D1: AA           TAX
+C0/E5D2: BD 00 FD     LDA $FD00,X
+C0/E5D5: 8D 80 21     STA $2180
+C0/E5D8: C8           INY
+C0/E5D9: B7 CD        LDA [$CD],Y
+C0/E5DB: AA           TAX
+C0/E5DC: BD 00 FD     LDA $FD00,X
+C0/E5DF: 8D 80 21     STA $2180
+C0/E5E2: C8           INY
+C0/E5E3: B7 CD        LDA [$CD],Y
+C0/E5E5: AA           TAX
+C0/E5E6: BD 00 FD     LDA $FD00,X
+C0/E5E9: 8D 80 21     STA $2180
+C0/E5EC: C8           INY
+C0/E5ED: B7 CD        LDA [$CD],Y
+C0/E5EF: AA           TAX
+C0/E5F0: BD 00 FD     LDA $FD00,X
+C0/E5F3: 8D 80 21     STA $2180
+C0/E5F6: C8           INY
+C0/E5F7: B7 CD        LDA [$CD],Y
+C0/E5F9: AA           TAX
+C0/E5FA: BD 00 FD     LDA $FD00,X
+C0/E5FD: 8D 80 21     STA $2180
+C0/E600: C8           INY
+C0/E601: B7 CD        LDA [$CD],Y
+C0/E603: AA           TAX
+C0/E604: BD 00 FD     LDA $FD00,X
+C0/E607: 8D 80 21     STA $2180
+C0/E60A: C8           INY
+C0/E60B: B7 CD        LDA [$CD],Y
+C0/E60D: AA           TAX
+C0/E60E: BD 00 FD     LDA $FD00,X
+C0/E611: 8D 80 21     STA $2180
+C0/E614: C8           INY
+C0/E615: B7 CD        LDA [$CD],Y
+C0/E617: AA           TAX
+C0/E618: BD 00 FD     LDA $FD00,X
+C0/E61B: 8D 80 21     STA $2180
+C0/E61E: C8           INY
+C0/E61F: B7 CD        LDA [$CD],Y
+C0/E621: AA           TAX
+C0/E622: BD 00 FD     LDA $FD00,X
+C0/E625: 8D 80 21     STA $2180
+C0/E628: C8           INY
+C0/E629: B7 CD        LDA [$CD],Y
+C0/E62B: AA           TAX
+C0/E62C: BD 00 FD     LDA $FD00,X
+C0/E62F: 8D 80 21     STA $2180
+C0/E632: C8           INY
+C0/E633: B7 CD        LDA [$CD],Y
+C0/E635: AA           TAX
+C0/E636: BD 00 FD     LDA $FD00,X
+C0/E639: 8D 80 21     STA $2180
+C0/E63C: C8           INY
+C0/E63D: B7 CD        LDA [$CD],Y
+C0/E63F: AA           TAX
+C0/E640: BD 00 FD     LDA $FD00,X
+C0/E643: 8D 80 21     STA $2180
+C0/E646: C8           INY
+C0/E647: B7 CD        LDA [$CD],Y
+C0/E649: AA           TAX
+C0/E64A: BD 00 FD     LDA $FD00,X
+C0/E64D: 8D 80 21     STA $2180
+C0/E650: C8           INY
+C0/E651: B7 CD        LDA [$CD],Y
+C0/E653: AA           TAX
+C0/E654: BD 00 FD     LDA $FD00,X
+C0/E657: 8D 80 21     STA $2180
+C0/E65A: C8           INY
+C0/E65B: B7 CD        LDA [$CD],Y
+C0/E65D: AA           TAX
+C0/E65E: BD 00 FD     LDA $FD00,X
+C0/E661: 8D 80 21     STA $2180
+C0/E664: C8           INY
+C0/E665: B7 CD        LDA [$CD],Y
+C0/E667: AA           TAX
+C0/E668: BD 00 FD     LDA $FD00,X
+C0/E66B: 8D 80 21     STA $2180
+C0/E66E: C8           INY
+C0/E66F: B7 CD        LDA [$CD],Y
+C0/E671: AA           TAX
+C0/E672: BD 00 FD     LDA $FD00,X
+C0/E675: 8D 80 21     STA $2180
+C0/E678: C8           INY
+C0/E679: B7 CD        LDA [$CD],Y
+C0/E67B: AA           TAX
+C0/E67C: BD 00 FD     LDA $FD00,X
+C0/E67F: 8D 80 21     STA $2180
+C0/E682: C2 20        REP #$20
+C0/E684: A4 C5        LDY $C5
+C0/E686: 60           RTS

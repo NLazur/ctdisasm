@@ -1,0 +1,24 @@
+CE/8479: 00 70        BRK $70
+CE/847B: 78           SEI
+CE/847C: 06 C0        ASL $C0
+CE/847E: 0C 1C 60     TSB $601C
+CE/8481: 02 12        COP $12
+CE/8483: 0C 71 36     TSB $3671
+CE/8486: 00 0C        BRK $0C
+CE/8488: 1B           TCS
+CE/8489: 0C 72 03     TSB $0372
+CE/848C: 73 03        ADC ($03,S),Y
+CE/848E: 02 00        COP $00
+CE/8490: 70 C0        BVS $8452
+CE/8492: 0C 9C 20     TSB $209C
+CE/8495: 02 12        COP $12
+CE/8497: 0C 71 00     TSB $0071
+CE/849A: 0C 1B 03     TSB $031B
+CE/849D: 72 03        ADC ($03)
+CE/849F: 73 03        ADC ($03,S),Y
+CE/84A1: 20 02 02     JSR $0202
+CE/84A4: 01 60        ORA ($60,X)
+CE/84A6: 01 70        ORA ($70,X)
+CE/84A8: 79 04 C2     ADC $C204,Y
+CE/84AB: 03 9C        ORA $9C,S
+CE/84AD: 60           RTS

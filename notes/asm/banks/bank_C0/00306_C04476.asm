@@ -1,0 +1,108 @@
+C0/4476: A9 03        LDA #$03
+C0/4478: A6 6D        LDX $6D
+C0/447A: 9D 00 11     STA $1100,X
+C0/447D: A9 01        LDA #$01
+C0/447F: 9D 01 1B     STA $1B01,X
+C0/4482: C8           INY
+C0/4483: BB           TYX
+C0/4484: BF 01 20 7F  LDA $7F2001,X
+C0/4488: A6 6D        LDX $6D
+C0/448A: 9D 01 11     STA $1101,X
+C0/448D: 8D 02 42     STA $4202
+C0/4490: C8           INY
+C0/4491: A9 05        LDA #$05
+C0/4493: 8D 03 42     STA $4203
+C0/4496: 84 C7        STY $C7
+C0/4498: EA           NOP
+C0/4499: EA           NOP
+C0/449A: EA           NOP
+C0/449B: AE 16 42     LDX $4216
+C0/449E: 86 BF        STX $BF
+C0/44A0: BF 01 F0 E4  LDA $E4F001,X
+C0/44A4: C2 20        REP #$20
+C0/44A6: 29 FF 00     AND #$00FF
+C0/44A9: 85 D9        STA $D9
+C0/44AB: 18           CLC
+C0/44AC: 65 D9        ADC $D9
+C0/44AE: 65 D9        ADC $D9
+C0/44B0: A8           TAY
+C0/44B1: B7 B2        LDA [$B2],Y
+C0/44B3: A6 6D        LDX $6D
+C0/44B5: 9D 80 13     STA $1380,X
+C0/44B8: E2 20        SEP #$20
+C0/44BA: C8           INY
+C0/44BB: C8           INY
+C0/44BC: B7 B2        LDA [$B2],Y
+C0/44BE: 9D 00 13     STA $1300,X
+C0/44C1: A6 BF        LDX $BF
+C0/44C3: BF 02 F0 E4  LDA $E4F002,X
+C0/44C7: 8D 02 42     STA $4202
+C0/44CA: A9 18        LDA #$18
+C0/44CC: 8D 03 42     STA $4203
+C0/44CF: EA           NOP
+C0/44D0: EA           NOP
+C0/44D1: EA           NOP
+C0/44D2: C2 20        REP #$20
+C0/44D4: AD 16 42     LDA $4216
+C0/44D7: 18           CLC
+C0/44D8: 69 00 00     ADC #$0000
+C0/44DB: A6 6D        LDX $6D
+C0/44DD: 9D 00 14     STA $1400,X
+C0/44E0: E2 20        SEP #$20
+C0/44E2: A6 BF        LDX $BF
+C0/44E4: BF 03 F0 E4  LDA $E4F003,X
+C0/44E8: C2 20        REP #$20
+C0/44EA: 29 FF 00     AND #$00FF
+C0/44ED: 0A           ASL
+C0/44EE: A8           TAY
+C0/44EF: C8           INY
+C0/44F0: C8           INY
+C0/44F1: B7 B5        LDA [$B5],Y
+C0/44F3: 38           SEC
+C0/44F4: 88           DEY
+C0/44F5: 88           DEY
+C0/44F6: F7 B5        SBC [$B5],Y
+C0/44F8: 4A           LSR
+C0/44F9: 4A           LSR
+C0/44FA: A6 6D        LDX $6D
+C0/44FC: 9D 80 14     STA $1480,X
+C0/44FF: B7 B5        LDA [$B5],Y
+C0/4501: 9D 00 15     STA $1500,X
+C0/4504: B7 B8        LDA [$B8],Y
+C0/4506: 9D 80 15     STA $1580,X
+C0/4509: E2 20        SEP #$20
+C0/450B: A6 BF        LDX $BF
+C0/450D: BF 04 F0 E4  LDA $E4F004,X
+C0/4511: A6 6D        LDX $6D
+C0/4513: 9D 01 12     STA $1201,X
+C0/4516: A6 BF        LDX $BF
+C0/4518: BF 00 F0 E4  LDA $E4F000,X
+C0/451C: C2 20        REP #$20
+C0/451E: 29 FF 00     AND #$00FF
+C0/4521: 85 D9        STA $D9
+C0/4523: 18           CLC
+C0/4524: 65 D9        ADC $D9
+C0/4526: 65 D9        ADC $D9
+C0/4528: A8           TAY
+C0/4529: B7 AF        LDA [$AF],Y
+C0/452B: A6 6D        LDX $6D
+C0/452D: 9D 80 12     STA $1280,X
+C0/4530: E2 20        SEP #$20
+C0/4532: C8           INY
+C0/4533: C8           INY
+C0/4534: B7 AF        LDA [$AF],Y
+C0/4536: 9D 00 12     STA $1200,X
+C0/4539: C2 20        REP #$20
+C0/453B: A9 20 20     LDA #$2020
+C0/453E: 9D 00 0C     STA $0C00,X
+C0/4541: E2 20        SEP #$20
+C0/4543: A9 00        LDA #$00
+C0/4545: 9D 80 16     STA $1680,X
+C0/4548: A9 00        LDA #$00
+C0/454A: 9D 81 16     STA $1681,X
+C0/454D: A9 01        LDA #$01
+C0/454F: 9D 00 16     STA $1600,X
+C0/4552: A4 C7        LDY $C7
+C0/4554: BB           TYX
+C0/4555: 38           SEC
+C0/4556: 60           RTS

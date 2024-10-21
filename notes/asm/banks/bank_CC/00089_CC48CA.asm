@@ -1,0 +1,64 @@
+CC/48CA: 00 01        BRK $01
+CC/48CC: D0 07        BNE $48D5
+CC/48CE: 20 00 FF     JSR $FF00
+CC/48D1: 00 00        BRK $00
+CC/48D3: 00 0A        BRK $0A
+CC/48D5: 0E 0A 64     ASL $640A
+CC/48D8: 0F 32 28 7F  ORA $7F2832
+CC/48DC: 04 04        TSB $04
+CC/48DE: 04 04        TSB $04
+CC/48E0: 80 02        BRA $48E4
+CC/48E2: 00 10        BRK $10
+CC/48E4: 00 02        BRK $02
+CC/48E6: 00 06        BRK $06
+CC/48E8: 00 00        BRK $00
+CC/48EA: 00 01        BRK $01
+CC/48EC: 09 04 06     ORA #$0604
+CC/48EF: 06 32        ASL $32
+CC/48F1: 06 7F        ASL $7F
+CC/48F3: 04 04        TSB $04
+CC/48F5: 04 04        TSB $04
+CC/48F7: 00 00        BRK $00
+CC/48F9: 01 90        ORA ($90,X)
+CC/48FB: 01 0F        ORA ($0F,X)
+CC/48FD: 00 00        BRK $00
+CC/48FF: 00 00        BRK $00
+CC/4901: 00 0A        BRK $0A
+CC/4903: 06 07        ASL $07
+CC/4905: 13 0A        ORA ($0A,S),Y
+CC/4907: 32 15        AND ($15)
+CC/4909: 7F 04 04 04  ADC $040404,X
+CC/490D: 04 00        TSB $00
+CC/490F: 00 00        BRK $00
+CC/4911: 90 01        BCC $4914
+CC/4913: 11 00        ORA ($00),Y
+CC/4915: 00 00        BRK $00
+CC/4917: 00 00        BRK $00
+CC/4919: 0A           ASL
+CC/491A: 0F 0E 13 0A  ORA $0A130E
+CC/491E: 32 1C        AND ($1C)
+CC/4920: AA           TAX
+CC/4921: 04 04        TSB $04
+CC/4923: 04 80        TSB $80
+CC/4925: 00 00        BRK $00
+CC/4927: 00 D0        BRK $D0
+CC/4929: 07 20        ORA [$20]
+CC/492B: 00 FF        BRK $FF
+CC/492D: 00 00        BRK $00
+CC/492F: 00 0A        BRK $0A
+CC/4931: 0E 0A 64     ASL $640A
+CC/4934: 0F 32 3C 7F  ORA $7F3C32
+CC/4938: 04 04        TSB $04
+CC/493A: 04 04        TSB $04
+CC/493C: 80 02        BRA $4940
+CC/493E: 00 2D        BRK $2D
+CC/4940: 00 06        BRK $06
+CC/4942: 00 00        BRK $00
+CC/4944: 00 00        BRK $00
+CC/4946: 00 0A        BRK $0A
+CC/4948: 04 10        TSB $10
+CC/494A: 0C 07 32     TSB $3207
+CC/494D: 03 7F        ORA $7F,S
+CC/494F: 04 04        TSB $04
+CC/4951: 04 04        TSB $04
+CC/4953: 40           RTI

@@ -1,0 +1,41 @@
+C3/8914: EB           XBA
+C3/8915: 7F 7F EF 80  ADC $80EF7F,X
+C3/8919: EF EB EF EF  SBC $EFEFEB
+C3/891D: A7 93        LDA [$93]
+C3/891F: 93 C0        STA ($C0,S),Y
+C3/8921: 08           PHP
+C3/8922: 00 6A        BRK $6A
+C3/8924: 81 4A        STA ($4A,X)
+C3/8926: 35 4A        AND $4A,X
+C3/8928: A5 4A        LDA $4A
+C3/892A: A5 08        LDA $08
+C3/892C: 26 C9        ROL $C9
+C3/892E: 00 10        BRK $10
+C3/8930: 00 00        BRK $00
+C3/8932: 00 AE        BRK $AE
+C3/8934: A4 00        LDY $00
+C3/8936: DE DE EF     DEC $EFDE,X
+C3/8939: EF CB CF CE  SBC $CECFCB
+C3/893D: C6 04        DEC $04
+C3/893F: 43 43        EOR $43,S
+C3/8941: F2 0B        SBC ($0B)
+C3/8943: A4 0A        LDY $0A
+C3/8945: CA           DEX
+C3/8946: 14 8E        TRB $8E
+C3/8948: 00 61        BRK $61
+C3/894A: 88           DEY
+C3/894B: 47 86        EOR [$86]
+C3/894D: 48           PHA
+C3/894E: 00 43        BRK $43
+C3/8950: 0C 40 0C     TSB $0C40
+C3/8953: 0E 0E FE     ASL $FE0E
+C3/8956: AF FD 20 11  LDA $1120FD
+C3/895A: FF 00 BF 3A  SBC $3ABF00,X
+C3/895E: 3A           DEC
+C3/895F: 04 08        TSB $08
+C3/8961: 04 0A        TSB $0A
+C3/8963: 26 02        ROL $02
+C3/8965: D9 20 21     CMP $2120,Y
+C3/8968: CA           DEX
+C3/8969: 00 3A        BRK $3A
+C3/896B: 60           RTS

@@ -1,0 +1,3 @@
+CF/F3CB: DE 29 AB     DEC $AB29,X
+CF/F3CE: F0 01        BEQ $F3D1
+CF/F3D0: 60           RTS

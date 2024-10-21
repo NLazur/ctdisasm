@@ -1,0 +1,29 @@
+C6/E694: E2 30        SEP #$30
+C6/E696: AE 30 1B     LDX $1B30
+C6/E699: BF 00 FE C0  LDA $C0FE00,X
+C6/E69D: 29 7F        AND #$7F
+C6/E69F: 85 08        STA $08
+C6/E6A1: E8           INX
+C6/E6A2: BF 00 FE C0  LDA $C0FE00,X
+C6/E6A6: 29 3F        AND #$3F
+C6/E6A8: 85 0A        STA $0A
+C6/E6AA: E8           INX
+C6/E6AB: 8E 30 1B     STX $1B30
+C6/E6AE: C2 10        REP #$10
+C6/E6B0: 64 09        STZ $09
+C6/E6B2: 64 0B        STZ $0B
+C6/E6B4: A6 4E        LDX $4E
+C6/E6B6: C2 20        REP #$20
+C6/E6B8: A5 E5        LDA $E5
+C6/E6BA: 0A           ASL
+C6/E6BB: 0A           ASL
+C6/E6BC: 0A           ASL
+C6/E6BD: 65 08        ADC $08
+C6/E6BF: 18           CLC
+C6/E6C0: 69 40 00     ADC #$0040
+C6/E6C3: 9D 14 00     STA $0014,X
+C6/E6C6: A9 60 00     LDA #$0060
+C6/E6C9: 18           CLC
+C6/E6CA: 65 0A        ADC $0A
+C6/E6CC: 9D 18 00     STA $0018,X
+C6/E6CF: 6B           RTL

@@ -1,0 +1,73 @@
+CD/010A: AD 00 CD     LDA $CD00
+CD/010D: AA           TAX
+CD/010E: 86 59        STX $59
+CD/0110: BD 7C 96     LDA $967C,X
+CD/0113: C9 02        CMP #$02
+CD/0115: D0 07        BNE $011E
+CD/0117: E0 06 00     CPX #$0006
+CD/011A: D0 02        BNE $011E
+CD/011C: A9 05        LDA #$05
+CD/011E: AA           TAX
+CD/011F: 86 53        STX $53
+CD/0121: AD 01 CD     LDA $CD01
+CD/0124: 29 07        AND #$07
+CD/0126: AA           TAX
+CD/0127: AD FF CC     LDA $CCFF
+CD/012A: 18           CLC
+CD/012B: 7F EA EF CE  ADC $CEEFEA,X
+CD/012F: 8D FF CC     STA $CCFF
+CD/0132: C2 20        REP #$20
+CD/0134: 48           PHA
+CD/0135: 29 07 00     AND #$0007
+CD/0138: 0A           ASL
+CD/0139: AA           TAX
+CD/013A: BF C2 F1 CE  LDA $CEF1C2,X
+CD/013E: 85 73        STA $73
+CD/0140: 68           PLA
+CD/0141: 29 38 00     AND #$0038
+CD/0144: 4A           LSR
+CD/0145: 4A           LSR
+CD/0146: 85 75        STA $75
+CD/0148: 7B           TDC
+CD/0149: E2 20        SEP #$20
+CD/014B: A2 00 00     LDX #$0000
+CD/014E: 20 54 01     JSR $0154
+CD/0151: A2 04 00     LDX #$0004
+CD/0154: 86 55        STX $55
+CD/0156: A5 53        LDA $53
+CD/0158: 0A           ASL
+CD/0159: 0A           ASL
+CD/015A: 0A           ASL
+CD/015B: C2 20        REP #$20
+CD/015D: 29 FF 00     AND #$00FF
+CD/0160: 18           CLC
+CD/0161: 65 55        ADC $55
+CD/0163: AA           TAX
+CD/0164: BF 92 F1 CE  LDA $CEF192,X
+CD/0168: 85 55        STA $55
+CD/016A: BF 94 F1 CE  LDA $CEF194,X
+CD/016E: 85 57        STA $57
+CD/0170: A5 59        LDA $59
+CD/0172: 0A           ASL
+CD/0173: AA           TAX
+CD/0174: BF 66 F1 CE  LDA $CEF166,X
+CD/0178: 18           CLC
+CD/0179: 65 55        ADC $55
+CD/017B: 18           CLC
+CD/017C: 65 75        ADC $75
+CD/017E: AA           TAX
+CD/017F: BD 00 00     LDA $0000,X
+CD/0182: 25 73        AND $73
+CD/0184: 9D 00 00     STA $0000,X
+CD/0187: BD 10 00     LDA $0010,X
+CD/018A: 25 73        AND $73
+CD/018C: 9D 10 00     STA $0010,X
+CD/018F: 8A           TXA
+CD/0190: 18           CLC
+CD/0191: 69 20 00     ADC #$0020
+CD/0194: AA           TAX
+CD/0195: C6 57        DEC $57
+CD/0197: D0 E6        BNE $017F
+CD/0199: 7B           TDC
+CD/019A: E2 20        SEP #$20
+CD/019C: 60           RTS

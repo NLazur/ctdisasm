@@ -1,0 +1,44 @@
+C6/5FCC: 80 49        BRA $6017
+C6/5FCE: 08           PHP
+C6/5FCF: 43 48        EOR $48,S
+C6/5FD1: 59 08 53     EOR $5308,Y
+C6/5FD4: 80 70        BRA $6046
+C6/5FD6: 80 E0        BRA $5FB8
+C6/5FD8: 0C E1 0C     TSB $0CE1
+C6/5FDB: F0 0C        BEQ $5FE9
+C6/5FDD: F1 70        SBC ($70),Y
+C6/5FDF: 10 02        BPL $5FE3
+C6/5FE1: F2 70        SBC ($70)
+C6/5FE3: 00 E4        BRK $E4
+C6/5FE5: 0C E5 0C     TSB $0CE5
+C6/5FE8: F4 0C 02     PEA $020C
+C6/5FEB: F5 10        SBC $10,X
+C6/5FED: 20 D6 0C     JSR $0CD6
+C6/5FF0: E6 0C        INC $0C
+C6/5FF2: E7 0C        SBC [$0C]
+C6/5FF4: 00 F6        BRK $F6
+C6/5FF6: 0C F7 0C     TSB $0CF7
+C6/5FF9: EC 18 ED     CPX $ED18
+C6/5FFC: 18           CLC
+C6/5FFD: 00 FC        BRK $FC
+C6/5FFF: 18           CLC
+C6/6000: FD 18 EE     SBC $EE18,X
+C6/6003: 18           CLC
+C6/6004: EF 18 A0 FE  SBC $FEA018
+C6/6008: 18           CLC
+C6/6009: FF 18 E1 2A  SBC $2AE118,X
+C6/600D: 00 F1        BRK $F1
+C6/600F: 2A           ROL
+C6/6010: 00 0D        BRK $0D
+C6/6012: 7E 08 58     ROR $5808,X
+C6/6015: AC 05 88     LDY $8805
+C6/6018: 18           CLC
+C6/6019: 58           CLI
+C6/601A: 18           CLC
+C6/601B: 49 28        EOR #$28
+C6/601D: 00 4A        BRK $4A
+C6/601F: 28           PLP
+C6/6020: 59 28 5A     EOR $5A28,Y
+C6/6023: 28           PLP
+C6/6024: 35 88        AND $88,X
+C6/6026: 40           RTI

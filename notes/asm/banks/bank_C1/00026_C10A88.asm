@@ -1,0 +1,35 @@
+C1/0A88: AD D5 95     LDA $95D5
+C1/0A8B: AA           TAX
+C1/0A8C: BF 8C F3 CC  LDA $CCF38C,X
+C1/0A90: 85 AF        STA $AF
+C1/0A92: BD EB 95     LDA $95EB,X
+C1/0A95: 85 88        STA $88
+C1/0A97: 85 86        STA $86
+C1/0A99: A9 02 85     LDA #$8502
+C1/0A9C: 87 64        STA [$64]
+C1/0A9E: 89 18 A5     BIT #$A518
+C1/0AA1: 88           DEY
+C1/0AA2: 65 AF        ADC $AF
+C1/0AA4: 85 80        STA $80
+C1/0AA6: 64 81        STZ $81
+C1/0AA8: 7B           TDC
+C1/0AA9: 85 82        STA $82
+C1/0AAB: 85 83        STA $83
+C1/0AAD: 20 0B 0B     JSR $0B0B
+C1/0AB0: E6 80        INC $80
+C1/0AB2: C2 21        REP #$21
+C1/0AB4: A5 82        LDA $82
+C1/0AB6: 69 80 00     ADC #$0080
+C1/0AB9: 85 82        STA $82
+C1/0ABB: 7B           TDC
+C1/0ABC: E2 20        SEP #$20
+C1/0ABE: 20 0B 0B     JSR $0B0B
+C1/0AC1: C2 21        REP #$21
+C1/0AC3: A5 82        LDA $82
+C1/0AC5: 69 80 00     ADC #$0080
+C1/0AC8: 85 82        STA $82
+C1/0ACA: E2 20        SEP #$20
+C1/0ACC: E6 80        INC $80
+C1/0ACE: C6 87        DEC $87
+C1/0AD0: D0 DB        BNE $0AAD
+C1/0AD2: 60           RTS

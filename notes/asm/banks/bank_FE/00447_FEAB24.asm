@@ -1,0 +1,42 @@
+FE/AB24: A5 48        LDA $48
+FE/AB26: 05 6F        ORA $6F
+FE/AB28: D1 00        CMP ($00),Y
+FE/AB2A: 50 25        BVC $AB51
+FE/AB2C: 61 14        ADC ($14,X)
+FE/AB2E: A9 14        LDA #$14
+FE/AB30: 04 71        TSB $71
+FE/AB32: 04 74        TSB $74
+FE/AB34: 14 05        TRB $05
+FE/AB36: DF 5D 10 73  CMP $73105D,X
+FE/AB3A: 14 65        TRB $65
+FE/AB3C: 20 9B 24     JSR $249B
+FE/AB3F: 64 00        STZ $00
+FE/AB41: 04 6F        TSB $6F
+FE/AB43: 04 DA        TSB $DA
+FE/AB45: 33 EF        AND ($EF,S),Y
+FE/AB47: E7 14        SBC [$14]
+FE/AB49: 1F 15 AA 14  ORA $14AA15,X
+FE/AB4D: CD 04 24     CMP $2404
+FE/AB50: 94 15        STY $15,X
+FE/AB52: 92 14        STA ($14)
+FE/AB54: 91 15        STA ($15),Y
+FE/AB56: FF 9C 14 8B  SBC $8B149C,X
+FE/AB5A: 25 A3        AND $A3
+FE/AB5C: 04 93        TSB $93
+FE/AB5E: 55 DD        EOR $DD,X
+FE/AB60: 24 AC        BIT $AC
+FE/AB62: 05 9F        ORA $9F
+FE/AB64: 13 B3        ORA ($B3,S),Y
+FE/AB66: 23 FF        AND $FF,S
+FE/AB68: A6 23        LDX $23
+FE/AB6A: 76 25        ROR $25,X
+FE/AB6C: 92 15        STA ($15)
+FE/AB6E: 72 05        ADC ($05)
+FE/AB70: D7 03        CMP [$03],Y
+FE/AB72: 7C 05 C2     JMP ($C205,X)
+FE/AB75: 71 99        ADC ($99),Y
+FE/AB77: 24 F2        BIT $F2
+FE/AB79: 26 29        ROL $29
+FE/AB7B: 35 27        AND $27,X
+FE/AB7D: 25 70        AND $70
+FE/AB7F: 40           RTI

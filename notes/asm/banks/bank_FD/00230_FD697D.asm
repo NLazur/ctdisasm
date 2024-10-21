@@ -1,0 +1,91 @@
+FD/697D: 8F 02 00 3B  STA $3B0002
+FD/6981: 11 40        ORA ($40),Y
+FD/6983: 02 40        COP $40
+FD/6985: 45 01        EOR $01
+FD/6987: 43 47        EOR $47,S
+FD/6989: 11 01        ORA ($01),Y
+FD/698B: A0 00 00     LDY #$0000
+FD/698E: 08           PHP
+FD/698F: 08           PHP
+FD/6990: 04 10        TSB $10
+FD/6992: 08           PHP
+FD/6993: 00 08        BRK $08
+FD/6995: 38           SEC
+FD/6996: 38           SEC
+FD/6997: 3C 3C 1C     BIT $1C3C,X
+FD/699A: 1C 08 00     TRB $0008
+FD/699D: 08           PHP
+FD/699E: 14 1C        TRB $1C
+FD/69A0: 08           PHP
+FD/69A1: 1C 08 14     TRB $1408
+FD/69A4: 08           PHP
+FD/69A5: 00 14        BRK $14
+FD/69A7: 38           SEC
+FD/69A8: 06 3C        ASL $3C
+FD/69AA: 02 3C        COP $3C
+FD/69AC: 22 00 00 00  JSR $000000
+FD/69B0: 20 24 02     JSR $0224
+FD/69B3: 54 62 14     MVN $62,$14
+FD/69B6: 62 00 14     PER $FD7DB9
+FD/69B9: E2 1C        SEP #$1C
+FD/69BB: F2 0C        SBC ($0C)
+FD/69BD: F0 0C        BEQ $69CB
+FD/69BF: 20 40 20     JSR $2040
+FD/69C2: 56 76        LSR $76,X
+FD/69C4: 26 76        ROL $76
+FD/69C6: 06 02        ASL $02
+FD/69C8: 10 FE        BPL $69C8
+FD/69CA: 01 02        ORA ($02,X)
+FD/69CC: 10 00        BPL $69CE
+FD/69CE: 0C 01 0D     TSB $0D01
+FD/69D1: 03 09        ORA $09,S
+FD/69D3: 03 00        ORA $00,S
+FD/69D5: 0A           ASL
+FD/69D6: 06 0A        ASL $0A
+FD/69D8: 01 0D        ORA ($0D,X)
+FD/69DA: 05 0B        ORA $0B
+FD/69DC: 0E 00 01     ASL $0100
+FD/69DF: 0F 08 0E 00  ORA $000E08
+FD/69E3: 0E 00 0D     ASL $0D00
+FD/69E6: 00 00        BRK $00
+FD/69E8: 0F 0A 0E 08  ORA $080E0A
+FD/69EC: 0E 0C 0F     ASL $0F0C
+FD/69EF: 00 0E        BRK $0E
+FD/69F1: B7 B0        LDA [$B0],Y
+FD/69F3: 66 FE        ROR $FE
+FD/69F5: 96 FF        STX $FF,Y
+FD/69F7: 0C 00 FE     TSB $FE00
+FD/69FA: A5 5F        LDA $5F
+FD/69FC: 3B           TSC
+FD/69FD: 0C 5F D0     TSB $D05F
+FD/6A00: C3 1C        CMP $1C,S
+FD/6A02: F3 4F        SBC ($4F,S),Y
+FD/6A04: 1A           INC
+FD/6A05: 02 1E        COP $1E
+FD/6A07: 12 C0        ORA ($C0)
+FD/6A09: 11 20        ORA ($20),Y
+FD/6A0B: 00 4C        BRK $4C
+FD/6A0D: 00 40        BRK $40
+FD/6A0F: D4 20        PEI $20
+FD/6A11: 46 04        LSR $04
+FD/6A13: 09 09 64     ORA #$6409
+FD/6A16: 00 E4        BRK $E4
+FD/6A18: 35 FC        AND $FC,X
+FD/6A1A: 52 F8        EOR ($F8)
+FD/6A1C: 81 73        STA ($73,X)
+FD/6A1E: 86 00        STX $00
+FD/6A20: 8E FF 00     STX $00FF
+FD/6A23: FB           XCE
+FD/6A24: 00 F6        BRK $F6
+FD/6A26: 00 1B        BRK $1B
+FD/6A28: 01 3E        ORA ($3E,X)
+FD/6A2A: 22 0C 00 75  JSR $75000C
+FD/6A2E: 04 80        TSB $80
+FD/6A30: 70 20        BVS $6A52
+FD/6A32: 00 50        BRK $50
+FD/6A34: 00 50        BRK $50
+FD/6A36: 10 80        BPL $69B8
+FD/6A38: E0 50        CPX #$50
+FD/6A3A: 80 C0        BRA $69FC
+FD/6A3C: B0 30        BCS $6A6E
+FD/6A3E: 40           RTI

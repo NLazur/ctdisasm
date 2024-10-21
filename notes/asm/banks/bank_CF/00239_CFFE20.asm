@@ -1,0 +1,52 @@
+CF/FE20: A2 0A 00     LDX #$000A
+CF/FE23: BD B0 AE     LDA $AEB0,X
+CF/FE26: F0 56        BEQ $FE7E
+CF/FE28: BD F7 9F     LDA $9FF7,X
+CF/FE2B: D0 4E        BNE $FE7B
+CF/FE2D: FE A8 A0     INC $A0A8,X
+CF/FE30: 9E B0 AE     STZ $AEB0,X
+CF/FE33: 9E A4 98     STZ $98A4,X
+CF/FE36: BD B5 99     LDA $99B5,X
+CF/FE39: F0 40        BEQ $FE7B
+CF/FE3B: 8A           TXA
+CF/FE3C: 38           SEC
+CF/FE3D: E9 03        SBC #$03
+CF/FE3F: 0A           ASL
+CF/FE40: 0A           ASL
+CF/FE41: 85 80        STA $80
+CF/FE43: 0A           ASL
+CF/FE44: 18           CLC
+CF/FE45: 65 80        ADC $80
+CF/FE47: A8           TAY
+CF/FE48: B9 C6 29     LDA $29C6,Y
+CF/FE4B: 29 40        AND #$40
+CF/FE4D: D0 2F        BNE $FE7E
+CF/FE4F: BD 3C 99     LDA $993C,X
+CF/FE52: 0A           ASL
+CF/FE53: 0A           ASL
+CF/FE54: 0A           ASL
+CF/FE55: 0A           ASL
+CF/FE56: A8           TAY
+CF/FE57: A9 08        LDA #$08
+CF/FE59: 9D 3C 99     STA $993C,X
+CF/FE5C: DA           PHX
+CF/FE5D: 86 82        STX $82
+CF/FE5F: 7B           TDC
+CF/FE60: AA           TAX
+CF/FE61: A9 18        LDA #$18
+CF/FE63: 85 80        STA $80
+CF/FE65: B9 02 23     LDA $2302,Y
+CF/FE68: 9D 82 23     STA $2382,X
+CF/FE6B: 9D 82 21     STA $2182,X
+CF/FE6E: C8           INY
+CF/FE6F: E8           INX
+CF/FE70: C6 80        DEC $80
+CF/FE72: D0 F1        BNE $FE65
+CF/FE74: A5 82        LDA $82
+CF/FE76: 22 24 00 CD  JSR $CD0024
+CF/FE7A: FA           PLX
+CF/FE7B: 9E F5 96     STZ $96F5,X
+CF/FE7E: CA           DEX
+CF/FE7F: E0 02 00     CPX #$0002
+CF/FE82: D0 9F        BNE $FE23
+CF/FE84: 6B           RTL

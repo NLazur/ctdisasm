@@ -1,0 +1,58 @@
+FE/ECF6: 90 0B        BCC $ED03
+FE/ECF8: 80 40        BRA $ED3A
+FE/ECFA: 11 44        ORA ($44),Y
+FE/ECFC: 00 49        BRK $49
+FE/ECFE: 28           PLP
+FE/ECFF: 04 28        TSB $28
+FE/ED01: 05 00        ORA $00
+FE/ED03: 13 06        ORA ($06,S),Y
+FE/ED05: 2B           PLD
+FE/ED06: 62 9B 12     PER $FEFFA4
+FE/ED09: 48           PHA
+FE/ED0A: 00 B0        BRK $B0
+FE/ED0C: C5 C0        CMP $C0
+FE/ED0E: E1 28        SBC ($28,X)
+FE/ED10: 50 70        BVC $ED82
+FE/ED12: 8A           TXA
+FE/ED13: 34 09        BIT $09,X
+FE/ED15: 05 DE        ORA $DE
+FE/ED17: 02 05        COP $05
+FE/ED19: C8           INY
+FE/ED1A: 1E 20 00     ASL $0020,X
+FE/ED1D: 09 09 08     ORA #$0809
+FE/ED20: 00 0C        BRK $0C
+FE/ED22: 45 40        EOR $40
+FE/ED24: 24 0F        BIT $0F
+FE/ED26: A0 59 09     LDY #$0959
+FE/ED29: 0D 0D 25     ORA $250D
+FE/ED2C: 0C 65 10     TSB $1065
+FE/ED2F: 58           CLI
+FE/ED30: 2D 4A 0D     AND $0D4A
+FE/ED33: 00 10        BRK $10
+FE/ED35: 02 08        COP $08
+FE/ED37: 32 09        AND ($09)
+FE/ED39: 42 0F        WDM $0F
+FE/ED3B: 08           PHP
+FE/ED3C: C9 C0 0D     CMP #$0DC0
+FE/ED3F: 0F 00 05 00  ORA $000500
+FE/ED43: 00 0A        BRK $0A
+FE/ED45: 08           PHP
+FE/ED46: 00 01        BRK $01
+FE/ED48: 34 02        BIT $02,X
+FE/ED4A: 08           PHP
+FE/ED4B: 48           PHA
+FE/ED4C: 61 F9        ADC ($F9,X)
+FE/ED4E: 21 40        AND ($40,X)
+FE/ED50: 00 10        BRK $10
+FE/ED52: 80 76        BRA $EDCA
+FE/ED54: 0D BB 09     ORA $09BB
+FE/ED57: 26 22        ROL $22
+FE/ED59: 64 19        STZ $19
+FE/ED5B: 2C 40 00     BIT $0040
+FE/ED5E: A0 12 02     LDY #$0212
+FE/ED61: 58           CLI
+FE/ED62: 80 64        BRA $EDC8
+FE/ED64: 20 24 61     JSR $6124
+FE/ED67: 6E 10 08     ROR $0810
+FE/ED6A: CE 27 F9     DEC $F927
+FE/ED6D: 60           RTS

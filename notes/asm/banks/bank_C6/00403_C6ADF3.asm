@@ -1,0 +1,4 @@
+C6/ADF3: F8           SED
+C6/ADF4: FF 21 11 01  SBC $011121,X
+C6/ADF8: F8           SED
+C6/ADF9: 60           RTS

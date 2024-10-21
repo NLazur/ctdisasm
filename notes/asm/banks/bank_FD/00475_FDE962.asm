@@ -1,0 +1,21 @@
+FD/E962: B9 22 05     LDA $0522,Y
+FD/E965: A8           TAY
+FD/E966: BF 00 20 7E  LDA $7E2000,X
+FD/E96A: 29 1F        AND #$1F
+FD/E96C: 85 0C        STA $0C
+FD/E96E: 49 1F        EOR #$1F
+FD/E970: 8D 03 42     STA $4203
+FD/E973: A5 0C        LDA $0C
+FD/E975: 18           CLC
+FD/E976: 6D 17 42     ADC $4217
+FD/E979: 29 1F        AND #$1F
+FD/E97B: 85 0C        STA $0C
+FD/E97D: BF 00 20 7E  LDA $7E2000,X
+FD/E981: 29 E0        AND #$E0
+FD/E983: 05 0C        ORA $0C
+FD/E985: 9F 00 22 7E  STA $7E2200,X
+FD/E989: E8           INX
+FD/E98A: E8           INX
+FD/E98B: 88           DEY
+FD/E98C: D0 D8        BNE $E966
+FD/E98E: 60           RTS

@@ -1,0 +1,31 @@
+FF/F0C8: 38           SEC
+FF/F0C9: 00 64        BRK $64
+FF/F0CB: 1C 23 40     TRB $4023
+FF/F0CE: 34 50        BIT $50,X
+FF/F0D0: 47 30        EOR [$30]
+FF/F0D2: 07 01        ORA [$01]
+FF/F0D4: 06 30        ASL $30
+FF/F0D6: 1F 30 00 00  ORA $000030,X
+FF/F0DA: 3E 00 3E     ROL $3E00,X
+FF/F0DD: 00 2D        BRK $2D
+FF/F0DF: 02 21        COP $21
+FF/F0E1: 1E 31 1E     ASL $1E31,X
+FF/F0E4: 00 1F        BRK $1F
+FF/F0E6: 00 1F        BRK $1F
+FF/F0E8: 03 00        ORA $00,S
+FF/F0EA: 02 03        COP $03
+FF/F0EC: 07 08        ORA [$08]
+FF/F0EE: 07 01        ORA [$01]
+FF/F0F0: 82 0E 9A     BRL $FF8B01
+FF/F0F3: 06 16        ASL $16
+FF/F0F5: 9A           TXS
+FF/F0F6: 16 0A        ASL $0A,X
+FF/F0F8: 00 00        BRK $00
+FF/F0FA: 07 00        ORA [$00]
+FF/F0FC: 03 04        ORA $04,S
+FF/F0FE: 0B           PHD
+FF/F0FF: 04 09        TSB $09
+FF/F101: 07 01        ORA [$01]
+FF/F103: 0F 01 0F 91  ORA $910F01
+FF/F107: 0F C0 00 C0  ORA $C000C0
+FF/F10B: 40           RTI

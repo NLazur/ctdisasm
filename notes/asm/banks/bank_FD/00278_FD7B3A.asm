@@ -1,0 +1,26 @@
+FD/7B3A: 79 18 60     ADC $6018,Y
+FD/7B3D: 6C 60 F8     JMP ($F860)
+FD/7B40: 8A           TXA
+FD/7B41: 03 20        ORA $20,S
+FD/7B43: 74 9F        STZ $9F,X
+FD/7B45: 9C 0A BA     STZ $BA0A
+FD/7B48: 3A           DEC
+FD/7B49: 7F F2 7F E0  ADC $E07FF2,X
+FD/7B4D: 15 0F        ORA $0F,X
+FD/7B4F: 0F E2 31 02  ORA $0231E2
+FD/7B53: 00 E0        BRK $E0
+FD/7B55: 25 DC        AND $DC
+FD/7B57: 15 0A        ORA $0A,X
+FD/7B59: FE C0 38     INC $38C0,X
+FD/7B5C: 00 82        BRK $82
+FD/7B5E: 13 E1        ORA ($E1,S),Y
+FD/7B60: E0 F7        CPX #$F7
+FD/7B62: F0 DC        BEQ $7B40
+FD/7B64: E7 E0        SBC [$E0]
+FD/7B66: 16 16        ASL $16,X
+FD/7B68: 76 1A        ROR $1A,X
+FD/7B6A: 1A           INC
+FD/7B6B: 18           CLC
+FD/7B6C: 0F 1E 08 D1  ORA $D1081E
+FD/7B70: 1A           INC
+FD/7B71: 60           RTS

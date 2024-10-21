@@ -1,0 +1,133 @@
+C7/66D0: FE 0F CB     INC $CB0F,X
+C7/66D3: 03 60        ORA $60,S
+C7/66D5: FF A8 A8 EB  SBC $EBA8A8,X
+C7/66D9: D2 D6        CMP ($D6)
+C7/66DB: 04 DD        TSB $DD
+C7/66DD: 0D C8 05     ORA $05C8
+C7/66E0: 19 08 C8     ORA $C808,Y
+C7/66E3: 04 F5        TSB $F5
+C7/66E5: AB           PLB
+C7/66E6: D4 C4        PEI $C4
+C7/66E8: 7F DD 03 D0  ADC $D003DD,X
+C7/66EC: CF 0D 00 A8  CMP $A8000D
+C7/66F0: EB           XBA
+C7/66F1: C4 00        CPY $00
+C7/66F3: D0 CF        BNE $66C4
+C7/66F5: 0C 00 EB     TSB $EB00
+C7/66F8: DC 08 D8     JMP [$D808]
+C7/66FB: D2 D4        CMP ($D4)
+C7/66FD: DD 09 08     CMP $0809,X
+C7/6700: CB           WAI
+C7/6701: 00 32        BRK $32
+C7/6703: BF C8 54 14  LDA $1454C8,X
+C7/6707: 04 C8        TSB $C8
+C7/6709: 4C E0 A9     JMP $A9E0
+C7/670C: EB           XBA
+C7/670D: C3 DB        CMP $DB,S
+C7/670F: 01 D4        ORA ($D4,X)
+C7/6711: DC 07 D7     JMP [$D707]
+C7/6714: DD 0C 0A     CMP $0A0C,X
+C7/6717: C8           INY
+C7/6718: 20 08 E0     JSR $E008
+C7/671B: 10 AB        BPL $66C8
+C7/671D: EB           XBA
+C7/671E: D4 DC        PEI $DC
+C7/6720: 07 08        ORA [$08]
+C7/6722: 08           PHP
+C7/6723: 0D D7 32     ORA $32D7
+C7/6726: EB           XBA
+C7/6727: D4 D0        PEI $D0
+C7/6729: CF 19 E2 03  CMP $03E219
+C7/672D: CF 3F 0B E3  CMP $E30B3F
+C7/6731: B3 CF        LDA ($CF,S),Y
+C7/6733: 11 08        ORA ($08),Y
+C7/6735: EB           XBA
+C7/6736: C3 DB        CMP $DB,S
+C7/6738: FD D4 E2     SBC $E2D4,X
+C7/673B: 02 DA        COP $DA
+C7/673D: 02 DC        COP $DC
+C7/673F: 01 61        ORA ($61,X)
+C7/6741: E0 13        CPX #$13
+C7/6743: 67 E3        ADC [$E3]
+C7/6745: EB           XBA
+C7/6746: D4 DC        PEI $DC
+C7/6748: 01 D7        ORA ($D7,X)
+C7/674A: C8           INY
+C7/674B: 64 FC        STZ $FC
+C7/674D: E0 10        CPX #$10
+C7/674F: 55 E2        EOR $E2,X
+C7/6751: 02 37        COP $37
+C7/6753: E0 13        CPX #$13
+C7/6755: 3A           DEC
+C7/6756: E3 EB        SBC $EB,S
+C7/6758: D4 DC        PEI $DC
+C7/675A: 05 D8        ORA $D8
+C7/675C: C8           INY
+C7/675D: 28           PLP
+C7/675E: 0C C9 07     TSB $07C9
+C7/6761: 08           PHP
+C7/6762: 4B           PHK
+C7/6763: 00 AB        BRK $AB
+C7/6765: EB           XBA
+C7/6766: DB           STP
+C7/6767: 01 C4        ORA ($C4,X)
+C7/6769: 4C D4 DC     JMP $DCD4
+C7/676C: 03 DD        ORA $DD,S
+C7/676E: 0E E2 05     ASL $05E2
+C7/6771: A7 DA        LDA [$DA]
+C7/6773: 02 E3        COP $E3
+C7/6775: A3 EB        LDA $EB,S
+C7/6777: C2 DB        REP #$DB
+C7/6779: 07 C4        ORA [$C4]
+C7/677B: 5F DC 03 D8  EOR $D803DC,X
+C7/677F: D4 A7        PEI $A7
+C7/6781: E2 09        SEP #$09
+C7/6783: 7C DA 03     JMP ($03DA,X)
+C7/6786: E3 EB        SBC $EB,S
+C7/6788: D4 BB        PEI $BB
+C7/678A: D0 CF        BNE $675B
+C7/678C: 1B           TCS
+C7/678D: CD 18 94     CMP $9418
+C7/6790: E0 0F E2     CPX #$E20F
+C7/6793: 01 0A        ORA ($0A,X)
+C7/6795: E2 01        SEP #$01
+C7/6797: 06 09        ASL $09
+C7/6799: E3 B2        SBC $B2,S
+C7/679B: E3 EB        SBC $EB,S
+C7/679D: C4 7F        CPY $7F
+C7/679F: D4 DC        PEI $DC
+C7/67A1: 06 D6        ASL $D6
+C7/67A3: 00 C9        BRK $C9
+C7/67A5: 0B           PHD
+C7/67A6: 6C FF C8     JMP ($C8FF)
+C7/67A9: C0 02        CPY #$02
+C7/67AB: 8D C8 C0     STA $C0C8
+C7/67AE: 02 A8        COP $A8
+C7/67B0: EB           XBA
+C7/67B1: C4 7F        CPY $7F
+C7/67B3: DC 06 C8     JMP [$C806]
+C7/67B6: 09 09        ORA #$09
+C7/67B8: E0 1E 23     CPX #$231E
+C7/67BB: EB           XBA
+C7/67BC: C4 7F        CPY $7F
+C7/67BE: D8           CLD
+C7/67BF: C8           INY
+C7/67C0: 06 11        ASL $11
+C7/67C2: E0 1C 85     CPX #$851C
+C7/67C5: EB           XBA
+C7/67C6: D4 DC        PEI $DC
+C7/67C8: 10 D7        BPL $67A1
+C7/67CA: DD 08 01     CMP $0108,X
+C7/67CD: EB           XBA
+C7/67CE: D4 E6        PEI $E6
+C7/67D0: E2 0F        SEP #$0F
+C7/67D2: 45 7D        EOR $7D
+C7/67D4: DA           PHX
+C7/67D5: 01 E3        ORA ($E3,X)
+C7/67D7: EB           XBA
+C7/67D8: D4 DC        PEI $DC
+C7/67DA: 10 D6        BPL $67B2
+C7/67DC: 04 C9        TSB $C9
+C7/67DE: 00 0C        BRK $0C
+C7/67E0: 7F DD 0A C8  ADC $C80ADD,X
+C7/67E4: 60           RTS

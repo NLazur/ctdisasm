@@ -1,0 +1,38 @@
+C2/7BD8: 7B           TDC
+C2/7BD9: 8F 00 90 7F  STA $7F9000
+C2/7BDD: A9 FF        LDA #$FF
+C2/7BDF: 8F 00 91 7F  STA $7F9100
+C2/7BE3: 8B           PHB
+C2/7BE4: C2 20        REP #$20
+C2/7BE6: A2 00 90     LDX #$9000
+C2/7BE9: 9B           TXY
+C2/7BEA: C8           INY
+C2/7BEB: A9 FE 00     LDA #$00FE
+C2/7BEE: 54 7F 7F     MVN $7F,$7F
+C2/7BF1: A2 00 91     LDX #$9100
+C2/7BF4: 9B           TXY
+C2/7BF5: C8           INY
+C2/7BF6: A9 3E 00     LDA #$003E
+C2/7BF9: 54 7F 7F     MVN $7F,$7F
+C2/7BFC: E2 20        SEP #$20
+C2/7BFE: A0 00 90     LDY #$9000
+C2/7C01: A2 00 00     LDX #$0000
+C2/7C04: BF 28 7C C2  LDA $C27C28,X
+C2/7C08: 99 00 00     STA $0000,Y
+C2/7C0B: 99 20 00     STA $0020,Y
+C2/7C0E: E8           INX
+C2/7C0F: C8           INY
+C2/7C10: C8           INY
+C2/7C11: C2 20        REP #$20
+C2/7C13: 98           TYA
+C2/7C14: 29 0F 00     AND #$000F
+C2/7C17: D0 06        BNE $7C1F
+C2/7C19: 18           CLC
+C2/7C1A: 98           TYA
+C2/7C1B: 69 30 00     ADC #$0030
+C2/7C1E: A8           TAY
+C2/7C1F: E2 20        SEP #$20
+C2/7C21: E0 20 00     CPX #$0020
+C2/7C24: 90 DE        BCC $7C04
+C2/7C26: AB           PLB
+C2/7C27: 60           RTS

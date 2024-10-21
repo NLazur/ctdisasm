@@ -1,0 +1,59 @@
+C6/A451: 42 32        WDM $32
+C6/A453: 71 01        ADC ($01),Y
+C6/A455: 32 32        AND ($32)
+C6/A457: 21 49        AND ($49,X)
+C6/A459: AA           TAX
+C6/A45A: 09 13 82     ORA #$8213
+C6/A45D: 3E 60 88     ROL $8860,X
+C6/A460: 20 26 20     JSR $2026
+C6/A463: 15 06        ORA $06,X
+C6/A465: 92 35        STA ($35)
+C6/A467: 1A           INC
+C6/A468: 09 BC 20     ORA #$20BC
+C6/A46B: 07 77        ORA [$77]
+C6/A46D: 09 C3 00     ORA #$00C3
+C6/A470: 0B           PHD
+C6/A471: 24 25        BIT $25
+C6/A473: A0 25 25     LDY #$2525
+C6/A476: 05 DC        ORA $DC
+C6/A478: ED A9 7D     SBC $7DA9
+C6/A47B: 11 6B        ORA ($6B),Y
+C6/A47D: 04 05        TSB $05
+C6/A47F: 80 04        BRA $A485
+C6/A481: 03 71        ORA $71,S
+C6/A483: 09 31 21     ORA #$2131
+C6/A486: 39 3A 3A     AND $3A3A,Y
+C6/A489: 04 3B        TSB $3B
+C6/A48B: 50 60        BVC $A4ED
+C6/A48D: 80 07        BRA $A496
+C6/A48F: 17 30        ORA [$30],Y
+C6/A491: 20 30 72     JSR $7230
+C6/A494: 04 60        TSB $60
+C6/A496: 28           PLP
+C6/A497: 01 12        ORA ($12,X)
+C6/A499: 1B           TCS
+C6/A49A: 21 21        AND ($21,X)
+C6/A49C: 11 A4        ORA ($A4),Y
+C6/A49E: 02 07        COP $07
+C6/A4A0: C0 18 12     CPY #$1218
+C6/A4A3: 12 24        ORA ($24)
+C6/A4A5: 14 15        TRB $15
+C6/A4A7: 66 03        ROR $03
+C6/A4A9: 0A           ASL
+C6/A4AA: 6E 2A 01     ROR $012A
+C6/A4AD: 7D 0C C2     ADC $C20C,X
+C6/A4B0: 80 04        BRA $A4B6
+C6/A4B2: 03 D2        ORA $D2,S
+C6/A4B4: 0A           ASL
+C6/A4B5: 31 11        AND ($11),Y
+C6/A4B7: 20 4A 4A     JSR $4A4A
+C6/A4BA: 4B           PHK
+C6/A4BB: 82 83 90     BRL $C63541
+C6/A4BE: 7E 07 08     ROR $0807,X
+C6/A4C1: E0 10 D7     CPX #$D710
+C6/A4C4: D8           CLD
+C6/A4C5: 14 05        TRB $05
+C6/A4C7: 5F 2D 14 04  EOR $04142D,X
+C6/A4CB: 1D 19 03     ORA $0319,X
+C6/A4CE: 67 20        ADC [$20]
+C6/A4D0: 60           RTS

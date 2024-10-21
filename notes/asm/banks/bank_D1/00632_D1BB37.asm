@@ -1,0 +1,36 @@
+D1/BB37: 03 60        ORA $60,S
+D1/BB39: 03 00        ORA $00,S
+D1/BB3B: 00 00        BRK $00
+D1/BB3D: 00 00        BRK $00
+D1/BB3F: 19 1A 19     ORA $191A,Y
+D1/BB42: 1A           INC
+D1/BB43: 21 22        AND ($22,X)
+D1/BB45: 21 22        AND ($22,X)
+D1/BB47: 2D 6D 1B     AND $1B6D
+D1/BB4A: 1C 18 58     TRB $5818
+D1/BB4D: AD ED 23     LDA $23ED
+D1/BB50: 24 2D        BIT $2D
+D1/BB52: 6D 20 D8     ADC $D820
+D1/BB55: 18           CLC
+D1/BB56: 58           CLI
+D1/BB57: AD ED 20     LDA $20ED
+D1/BB5A: D8           CLD
+D1/BB5B: 18           CLC
+D1/BB5C: 58           CLI
+D1/BB5D: 19 1A 20     ORA $201A,Y
+D1/BB60: D8           CLD
+D1/BB61: 21 22        AND ($22,X)
+D1/BB63: 1B           TCS
+D1/BB64: 1C 18 58     TRB $5818
+D1/BB67: 23 24        AND $24,S
+D1/BB69: 2D 6D 20     AND $206D
+D1/BB6C: D8           CLD
+D1/BB6D: 18           CLC
+D1/BB6E: 58           CLI
+D1/BB6F: AD ED 20     LDA $20ED
+D1/BB72: D8           CLD
+D1/BB73: 19 1A 21     ORA $211A,Y
+D1/BB76: 22 18 58 2D  JSR $2D5818
+D1/BB7A: 6D 20 D8     ADC $D820
+D1/BB7D: AD ED 01     LDA $01ED
+D1/BB80: 60           RTS

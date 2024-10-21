@@ -1,0 +1,132 @@
+CE/183C: 24 02        BIT $02
+CE/183E: 1E 25 71     ASL $7125,X
+CE/1841: 00 1B        BRK $1B
+CE/1843: 00 72        BRK $72
+CE/1845: 03 73        ORA $73,S
+CE/1847: 03 1B        ORA $1B,S
+CE/1849: 0C 0C 85     TSB $850C
+CE/184C: A0 24        LDY #$24
+CE/184E: 02 1E        COP $1E
+CE/1850: 25 71        AND $71
+CE/1852: 00 1B        BRK $1B
+CE/1854: 00 72        BRK $72
+CE/1856: 03 73        ORA $73,S
+CE/1858: 03 1B        ORA $1B,S
+CE/185A: 0C 0C 85     TSB $850C
+CE/185D: E0 24        CPX #$24
+CE/185F: 02 1E        COP $1E
+CE/1861: 25 71        AND $71
+CE/1863: 00 98        BRK $98
+CE/1865: F0 80        BEQ $17E7
+CE/1867: 00 78        BRK $78
+CE/1869: 18           CLC
+CE/186A: 90 18        BCC $1884
+CE/186C: A3 18        LDA $18,S
+CE/186E: AF 18 CA 18  LDA $18CA18
+CE/1872: D8           CLD
+CE/1873: 18           CLC
+CE/1874: E8           INX
+CE/1875: 18           CLC
+CE/1876: 85 09        STA $09
+CE/1878: 72 0D        ADC ($0D)
+CE/187A: 1E 31 24     ASL $2431,X
+CE/187D: 01 34        ORA ($34,X)
+CE/187F: 1B           TCS
+CE/1880: 78           SEI
+CE/1881: 7F 22 1B 00  ADC $001B22,X
+CE/1885: 06 03        ASL $03
+CE/1887: 30 00        BMI $1889
+CE/1889: 00 36        BRK $36
+CE/188B: 24 03        BIT $03
+CE/188D: 2E 01 00     ROL $0001
+CE/1890: 24 01        BIT $01
+CE/1892: 34 00        BIT $00,X
+CE/1894: 20 8C 78     JSR $788C
+CE/1897: 7E 6C 03     ROR $036C,X
+CE/189A: 05 24        ORA $24
+CE/189C: 02 1E        COP $1E
+CE/189E: 03 20        ORA $20,S
+CE/18A0: 0A           ASL
+CE/18A1: 36 00        ROL $00,X
+CE/18A3: 24 01        BIT $01
+CE/18A5: 20 8C 6C     JSR $6C8C
+CE/18A8: 03 05        ORA $05,S
+CE/18AA: 24 02        BIT $02
+CE/18AC: 1E 08 00     ASL $0008,X
+CE/18AF: 1B           TCS
+CE/18B0: 09 72 03     ORA #$0372
+CE/18B3: 73 00        ADC ($00,S),Y
+CE/18B5: 61 02        ADC ($02,X)
+CE/18B7: 00 03        BRK $03
+CE/18B9: 33 09        AND ($09,S),Y
+CE/18BB: 41 1E        EOR ($1E,X)
+CE/18BD: 04 41        TSB $41
+CE/18BF: 1F 05 02 00  ORA $000205,X
+CE/18C3: 78           SEI
+CE/18C4: AF 1E 32 24  LDA $24321E
+CE/18C8: 01 00        ORA ($00,X)
+CE/18CA: 1B           TCS
+CE/18CB: 09 72 03     ORA #$0372
+CE/18CE: 73 00        ADC ($00,S),Y
+CE/18D0: 20 06 02     JSR $0206
+CE/18D3: 00 1E        BRK $1E
+CE/18D5: 32 71        AND ($71)
+CE/18D7: 00 1B        BRK $1B
+CE/18D9: 09 72 03     ORA #$0372
+CE/18DC: 73 00        ADC ($00,S),Y
+CE/18DE: 20 0C 02     JSR $020C
+CE/18E1: 00 1E        BRK $1E
+CE/18E3: 32 71        AND ($71)
+CE/18E5: 24 01        BIT $01
+CE/18E7: 00 1B        BRK $1B
+CE/18E9: 09 72 03     ORA #$0372
+CE/18EC: 73 00        ADC ($00,S),Y
+CE/18EE: 20 12 02     JSR $0212
+CE/18F1: 00 1E        BRK $1E
+CE/18F3: 32 71        AND ($71)
+CE/18F5: 36 00        ROL $00,X
+CE/18F7: 2E 01 00     ROL $0001
+CE/18FA: 98           TYA
+CE/18FB: FC 80 C0     JSR ($C080,X)
+CE/18FE: 16 19        ASL $19,X
+CE/1900: 32 19        AND ($19)
+CE/1902: 43 19        EOR $19,S
+CE/1904: 4F 19 A7 19  EOR $19A719
+CE/1908: D9 19 12     CMP $1219,Y
+CE/190B: 1A           INC
+CE/190C: 4B           PHK
+CE/190D: 1A           INC
+CE/190E: 81 1A        STA ($1A,X)
+CE/1910: 99 17 AC     STA $AC17,Y
+CE/1913: 17 D5        ORA [$D5],Y
+CE/1915: 17 3D        ORA [$3D],Y
+CE/1917: 03 72        ORA $72,S
+CE/1919: 0D 03 21     ORA $2103
+CE/191C: 03 21        ORA $21,S
+CE/191E: 36 03        ROL $03,X
+CE/1920: 35 24        AND $24,X
+CE/1922: 03 78        ORA $78,S
+CE/1924: 81 34        STA ($34,X)
+CE/1926: 1B           TCS
+CE/1927: 06 03        ASL $03
+CE/1929: 22 10 01 20  JSR $200110
+CE/192D: 14 50        TRB $50
+CE/192F: 2E 01 00     ROL $0001
+CE/1932: 22 1B 01 69  JSR $69011B
+CE/1936: 03 6B        ORA $6B,S
+CE/1938: 03 22        ORA $22,S
+CE/193A: 1B           TCS
+CE/193B: 00 6D        BRK $6D
+CE/193D: 34 10        BIT $10,X
+CE/193F: 6A           ROR
+CE/1940: 1E 08 00     ASL $0008,X
+CE/1943: 22 1B 01 69  JSR $69011B
+CE/1947: 03 22        ORA $22,S
+CE/1949: 10 01        BPL $194C
+CE/194B: 6A           ROR
+CE/194C: 1E 08 00     ASL $0008,X
+CE/194F: 1B           TCS
+CE/1950: 09 72 03     ORA #$0372
+CE/1953: 73 03        ADC ($03,S),Y
+CE/1955: 02 00        COP $00
+CE/1957: 60           RTS

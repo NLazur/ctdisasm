@@ -1,0 +1,93 @@
+FF/F567: B1 A9        LDA ($A9),Y
+FF/F569: 7F 0C 54 7E  ADC $7E540C,X
+FF/F56D: 7E A4 51     ROR $51A4,X
+FF/F570: 64 00        STZ $00
+FF/F572: E2 20        SEP #$20
+FF/F574: A9 0A        LDA #$0A
+FF/F576: 85 07        STA $07
+FF/F578: A9 10        LDA #$10
+FF/F57A: 85 06        STA $06
+FF/F57C: A6 00        LDX $00
+FF/F57E: BF FC CA FF  LDA $FFCAFC,X
+FF/F582: 0A           ASL
+FF/F583: 0A           ASL
+FF/F584: 0A           ASL
+FF/F585: 0A           ASL
+FF/F586: 0A           ASL
+FF/F587: 19 00 B0     ORA $B000,Y
+FF/F58A: 99 00 B0     STA $B000,Y
+FF/F58D: E8           INX
+FF/F58E: C8           INY
+FF/F58F: C6 06        DEC $06
+FF/F591: D0 EB        BNE $F57E
+FF/F593: C2 20        REP #$20
+FF/F595: 98           TYA
+FF/F596: 18           CLC
+FF/F597: 69 10 00     ADC #$0010
+FF/F59A: A8           TAY
+FF/F59B: E2 20        SEP #$20
+FF/F59D: C6 07        DEC $07
+FF/F59F: D0 D7        BNE $F578
+FF/F5A1: A5 00        LDA $00
+FF/F5A3: 18           CLC
+FF/F5A4: 69 10        ADC #$10
+FF/F5A6: 85 00        STA $00
+FF/F5A8: C9 A0        CMP #$A0
+FF/F5AA: 90 C8        BCC $F574
+FF/F5AC: C2 30        REP #$30
+FF/F5AE: 9C 90 98     STZ $9890
+FF/F5B1: A2 90 98     LDX #$9890
+FF/F5B4: A0 92 98     LDY #$9892
+FF/F5B7: A9 0D 00     LDA #$000D
+FF/F5BA: 54 7E 7E     MVN $7E,$7E
+FF/F5BD: A2 0C CB     LDX #$CB0C
+FF/F5C0: A0 A0 98     LDY #$98A0
+FF/F5C3: A9 1F 00     LDA #$001F
+FF/F5C6: 54 7E FF     MVN $7E,$FF
+FF/F5C9: A4 51        LDY $51
+FF/F5CB: 64 00        STZ $00
+FF/F5CD: A6 51        LDX $51
+FF/F5CF: E2 20        SEP #$20
+FF/F5D1: A9 10        LDA #$10
+FF/F5D3: 85 02        STA $02
+FF/F5D5: A5 00        LDA $00
+FF/F5D7: 85 06        STA $06
+FF/F5D9: BF FC CA FF  LDA $FFCAFC,X
+FF/F5DD: 85 04        STA $04
+FF/F5DF: DA           PHX
+FF/F5E0: A6 06        LDX $06
+FF/F5E2: BD 90 98     LDA $9890,X
+FF/F5E5: FA           PLX
+FF/F5E6: 06 04        ASL $04
+FF/F5E8: 06 04        ASL $04
+FF/F5EA: 06 04        ASL $04
+FF/F5EC: 06 04        ASL $04
+FF/F5EE: 2A           ROL
+FF/F5EF: 06 04        ASL $04
+FF/F5F1: 2A           ROL
+FF/F5F2: 99 C0 BD     STA $BDC0,Y
+FF/F5F5: E6 06        INC $06
+FF/F5F7: E8           INX
+FF/F5F8: C8           INY
+FF/F5F9: C6 02        DEC $02
+FF/F5FB: D0 DC        BNE $F5D9
+FF/F5FD: C2 20        REP #$20
+FF/F5FF: 98           TYA
+FF/F600: 18           CLC
+FF/F601: 69 10 00     ADC #$0010
+FF/F604: A8           TAY
+FF/F605: E0 A0 00     CPX #$00A0
+FF/F608: 90 C5        BCC $F5CF
+FF/F60A: A5 00        LDA $00
+FF/F60C: 18           CLC
+FF/F60D: 69 10 00     ADC #$0010
+FF/F610: 85 00        STA $00
+FF/F612: C9 30 00     CMP #$0030
+FF/F615: 90 B6        BCC $F5CD
+FF/F617: 9C C0 BD     STZ $BDC0
+FF/F61A: A2 C0 BD     LDX #$BDC0
+FF/F61D: A0 C2 BD     LDY #$BDC2
+FF/F620: A9 0D 00     LDA #$000D
+FF/F623: 54 7E 7E     MVN $7E,$7E
+FF/F626: 28           PLP
+FF/F627: 6B           RTL

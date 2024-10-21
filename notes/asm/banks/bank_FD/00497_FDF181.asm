@@ -1,0 +1,50 @@
+FD/F181: 00 00        BRK $00
+FD/F183: 01 00        ORA ($00,X)
+FD/F185: 02 00        COP $00
+FD/F187: 03 00        ORA $00,S
+FD/F189: 04 00        TSB $00
+FD/F18B: 05 00        ORA $00
+FD/F18D: 06 00        ASL $00
+FD/F18F: 07 00        ORA [$00]
+FD/F191: 08           PHP
+FD/F192: 00 0A        BRK $0A
+FD/F194: 00 0C        BRK $0C
+FD/F196: 00 0E        BRK $0E
+FD/F198: 00 10        BRK $10
+FD/F19A: 00 12        BRK $12
+FD/F19C: 00 14        BRK $14
+FD/F19E: 00 16        BRK $16
+FD/F1A0: 00 16        BRK $16
+FD/F1A2: 00 14        BRK $14
+FD/F1A4: 00 12        BRK $12
+FD/F1A6: 00 10        BRK $10
+FD/F1A8: 00 0E        BRK $0E
+FD/F1AA: 00 0C        BRK $0C
+FD/F1AC: 00 0A        BRK $0A
+FD/F1AE: 00 08        BRK $08
+FD/F1B0: 00 07        BRK $07
+FD/F1B2: 00 06        BRK $06
+FD/F1B4: 00 05        BRK $05
+FD/F1B6: 00 04        BRK $04
+FD/F1B8: 00 03        BRK $03
+FD/F1BA: 00 02        BRK $02
+FD/F1BC: 00 01        BRK $01
+FD/F1BE: 00 00        BRK $00
+FD/F1C0: 00 9C        BRK $9C
+FD/F1C2: 15 21        ORA $21,X
+FD/F1C4: 9C 0B 42     STZ $420B
+FD/F1C7: A9 40        LDA #$40
+FD/F1C9: 8D 00 43     STA $4300
+FD/F1CC: A9 18        LDA #$18
+FD/F1CE: 8D 01 43     STA $4301
+FD/F1D1: A9 7F        LDA #$7F
+FD/F1D3: 8D 04 43     STA $4304
+FD/F1D6: A2 00 00     LDX #$0000
+FD/F1D9: 8E 02 43     STX $4302
+FD/F1DC: A6 08        LDX $08
+FD/F1DE: 8E 16 21     STX $2116
+FD/F1E1: A2 00 40     LDX #$4000
+FD/F1E4: 8E 05 43     STX $4305
+FD/F1E7: A9 01        LDA #$01
+FD/F1E9: 8D 0B 42     STA $420B
+FD/F1EC: 60           RTS

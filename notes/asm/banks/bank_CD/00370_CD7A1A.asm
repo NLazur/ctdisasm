@@ -1,0 +1,65 @@
+CD/7A1A: 00 60        BRK $60
+CD/7A1C: 01 02        ORA ($02,X)
+CD/7A1E: 00 73        BRK $73
+CD/7A20: 03 1B        ORA $1B,S
+CD/7A22: 09 24 02     ORA #$0224
+CD/7A25: 20 1E 70     JSR $701E
+CD/7A28: 0C 12 0C     TSB $0C12
+CD/7A2B: 1B           TCS
+CD/7A2C: 0C 36 98     TSB $9836
+CD/7A2F: 00 1D        BRK $1D
+CD/7A31: 1B           TCS
+CD/7A32: 1D 71 36     ORA $3671,X
+CD/7A35: 00 02        BRK $02
+CD/7A37: 00 1B        BRK $1B
+CD/7A39: 0C 76 00     TSB $0076
+CD/7A3C: 03 0C        ORA $0C,S
+CD/7A3E: A8           TAY
+CD/7A3F: 10 36        BPL $7A77
+CD/7A41: 00 90        BRK $90
+CD/7A43: 00 90        BRK $90
+CD/7A45: 00 D3        BRK $D3
+CD/7A47: 95 4E        STA $4E,X
+CD/7A49: 7A           PLY
+CD/7A4A: D3 95        CMP ($95,S),Y
+CD/7A4C: 3E 96 24     ROL $2496,X
+CD/7A4F: 01 20        ORA ($20,X)
+CD/7A51: 14 78        TRB $78
+CD/7A53: 46 72        LSR $72
+CD/7A55: 0A           ASL
+CD/7A56: 06 09        ASL $09
+CD/7A58: 20 02 69     JSR $6902
+CD/7A5B: 00 20        BRK $20
+CD/7A5D: 02 6A        COP $6A
+CD/7A5F: 76 00        ROR $00,X
+CD/7A61: 03 0C        ORA $0C,S
+CD/7A63: A9 04 20     LDA #$2004
+CD/7A66: 0A           ASL
+CD/7A67: 36 72        ROL $72,X
+CD/7A69: 0A           ASL
+CD/7A6A: 06 03        ASL $03
+CD/7A6C: 00 90        BRK $90
+CD/7A6E: FF 80 00 87  SBC $870080,X
+CD/7A72: 7A           PLY
+CD/7A73: 96 7A        STX $7A,Y
+CD/7A75: A0 7A        LDY #$7A
+CD/7A77: B5 7A        LDA $7A,X
+CD/7A79: C9 7A DD     CMP #$DD7A
+CD/7A7C: 7A           PLY
+CD/7A7D: F1 7A        SBC ($7A),Y
+CD/7A7F: 01 7B        ORA ($7B,X)
+CD/7A81: 13 7B        ORA ($7B,S),Y
+CD/7A83: 25 7B        AND $7B
+CD/7A85: E5 9D        SBC $9D
+CD/7A87: 72 0D        ADC ($0D)
+CD/7A89: 03 08        ORA $08,S
+CD/7A8B: 36 24        ROL $24,X
+CD/7A8D: 03 06        ORA $06,S
+CD/7A8F: 03 20        ORA $20,S
+CD/7A91: 0F 50 2E 01  ORA $012E50
+CD/7A95: 00 24        BRK $24
+CD/7A97: 02 1E        COP $1E
+CD/7A99: 44 20 1E     MVP $20,$1E
+CD/7A9C: 36 06        ROL $06,X
+CD/7A9E: 03 00        ORA $00,S
+CD/7AA0: 60           RTS

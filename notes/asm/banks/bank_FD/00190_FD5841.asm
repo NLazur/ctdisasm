@@ -1,0 +1,87 @@
+FD/5841: E0 20        CPX #$20
+FD/5843: 24 21        BIT $21
+FD/5845: 24 00        BIT $00
+FD/5847: 22 24 23 24  JSR $242324
+FD/584B: 24 24        BIT $24
+FD/584D: 25 24        AND $24
+FD/584F: 08           PHP
+FD/5850: 26 24        ROL $24
+FD/5852: 27 80        AND [$80]
+FD/5854: 00 28        BRK $28
+FD/5856: 24 29        BIT $29
+FD/5858: 24 00        BIT $00
+FD/585A: 2A           ROL
+FD/585B: 24 2B        BIT $2B
+FD/585D: 24 2C        BIT $2C
+FD/585F: 24 2D        BIT $2D
+FD/5861: 24 F8        BIT $F8
+FD/5863: 2E 24 2F     ROL $2F24
+FD/5866: 80 E8        BRA $5850
+FD/5868: 02 F8        COP $F8
+FD/586A: 02 F8        COP $F8
+FD/586C: 02 F8        COP $F8
+FD/586E: 02 F8        COP $F8
+FD/5870: FF 02 F8 02  SBC $02F802,X
+FD/5874: F8           SED
+FD/5875: 02 F8        COP $F8
+FD/5877: 02 F8        COP $F8
+FD/5879: 02 F8        COP $F8
+FD/587B: 02 F8        COP $F8
+FD/587D: 02 F8        COP $F8
+FD/587F: 02 F8        COP $F8
+FD/5881: FF 02 F8 02  SBC $02F802,X
+FD/5885: F8           SED
+FD/5886: 02 F8        COP $F8
+FD/5888: 02 F8        COP $F8
+FD/588A: 02 F8        COP $F8
+FD/588C: 02 F8        COP $F8
+FD/588E: 02 F8        COP $F8
+FD/5890: 02 F8        COP $F8
+FD/5892: FF 02 F8 02  SBC $02F802,X
+FD/5896: F8           SED
+FD/5897: 02 F8        COP $F8
+FD/5899: 02 F8        COP $F8
+FD/589B: 02 F8        COP $F8
+FD/589D: 02 F8        COP $F8
+FD/589F: 02 F8        COP $F8
+FD/58A1: 02 F8        COP $F8
+FD/58A3: FF 02 F8 02  SBC $02F802,X
+FD/58A7: F8           SED
+FD/58A8: 02 F8        COP $F8
+FD/58AA: 02 F8        COP $F8
+FD/58AC: 02 F8        COP $F8
+FD/58AE: 02 F8        COP $F8
+FD/58B0: 02 F8        COP $F8
+FD/58B2: 02 F8        COP $F8
+FD/58B4: FF 02 F8 02  SBC $02F802,X
+FD/58B8: F8           SED
+FD/58B9: 02 F8        COP $F8
+FD/58BB: 02 F8        COP $F8
+FD/58BD: 02 F8        COP $F8
+FD/58BF: 02 F8        COP $F8
+FD/58C1: 02 F8        COP $F8
+FD/58C3: 02 F8        COP $F8
+FD/58C5: FF 02 F8 02  SBC $02F802,X
+FD/58C9: F8           SED
+FD/58CA: 02 F8        COP $F8
+FD/58CC: 02 F8        COP $F8
+FD/58CE: 02 F8        COP $F8
+FD/58D0: 02 F8        COP $F8
+FD/58D2: 02 F8        COP $F8
+FD/58D4: 02 F8        COP $F8
+FD/58D6: 43 F0        EOR $F0,S
+FD/58D8: 00 FF        BRK $FF
+FD/58DA: 02 F8        COP $F8
+FD/58DC: 02 F8        COP $F8
+FD/58DE: CA           DEX
+FD/58DF: 87 40        STA [$40]
+FD/58E1: 9F 0D 82 00  STA $00820D,X
+FD/58E5: 01 50        ORA ($50,X)
+FD/58E7: 04 03        TSB $03
+FD/58E9: 03 03        ORA $03,S
+FD/58EB: 04 13        TSB $13
+FD/58ED: 58           CLI
+FD/58EE: CB           WAI
+FD/58EF: 01 F8        ORA ($F8,X)
+FD/58F1: 3E 40 02     ROL $0240,X
+FD/58F4: 40           RTI

@@ -1,0 +1,32 @@
+C2/BDA6: A0 76 9B     LDY #$9B76
+C2/BDA9: A9 7E        LDA #$7E
+C2/BDAB: EB           XBA
+C2/BDAC: A9 0B        LDA #$0B
+C2/BDAE: 28           PLP
+C2/BDAF: 4C 65 EF     JMP $EF65
+C2/BDB2: 08           PHP
+C2/BDB3: E2 30        SEP #$30
+C2/BDB5: 8F 02 42 00  STA $004202
+C2/BDB9: A8           TAY
+C2/BDBA: A9 0B        LDA #$0B
+C2/BDBC: 8F 03 42 00  STA $004203
+C2/BDC0: A2 0C        LDX #$0C
+C2/BDC2: B9 00 77     LDA $7700,Y
+C2/BDC5: 89 40        BIT #$40
+C2/BDC7: D0 0C        BNE $BDD5
+C2/BDC9: A2 00        LDX #$00
+C2/BDCB: 89 80        BIT #$80
+C2/BDCD: F0 06        BEQ $BDD5
+C2/BDCF: 24 78        BIT $78
+C2/BDD1: 30 02        BMI $BDD5
+C2/BDD3: A2 08        LDX #$08
+C2/BDD5: 86 7E        STX $7E
+C2/BDD7: C2 31        REP #$31
+C2/BDD9: A9 C4 15     LDA #$15C4
+C2/BDDC: 6F 16 42 00  ADC $004216
+C2/BDE0: A8           TAY
+C2/BDE1: A6 61        LDX $61
+C2/BDE3: A9 0B CC     LDA #$CC0B
+C2/BDE6: 20 65 EF     JSR $EF65
+C2/BDE9: 28           PLP
+C2/BDEA: 60           RTS

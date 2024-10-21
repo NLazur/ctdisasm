@@ -1,0 +1,68 @@
+FE/F909: E5 71        SBC $71
+FE/F90B: 38           SEC
+FE/F90C: 6C E8 21     JMP ($21E8)
+FE/F90F: F4 41 07     PEA $0741
+FE/F912: AA           TAX
+FE/F913: 06 90        ASL $90
+FE/F915: 00 10        BRK $10
+FE/F917: 44 7C FB     MVP $7C,$FB
+FE/F91A: 11 00        ORA ($00),Y
+FE/F91C: 00 00        BRK $00
+FE/F91E: 88           DEY
+FE/F91F: 48           PHA
+FE/F920: 45 18        EOR $18
+FE/F922: BD 7B 3F     LDA $3F7B,X
+FE/F925: 4F 1F 36 3F  EOR $3F361F
+FE/F929: 02 17        COP $17
+FE/F92B: 1C B5 3A     TRB $3AB5
+FE/F92E: F0 5F        BEQ $F98F
+FE/F930: 29 3E 44     AND #$443E
+FE/F933: 21 0B        AND ($0B,X)
+FE/F935: 00 FF        BRK $FF
+FE/F937: 27 00        AND [$00]
+FE/F939: 00 00        BRK $00
+FE/F93B: 00 00        BRK $00
+FE/F93D: 00 00        BRK $00
+FE/F93F: 38           SEC
+FE/F940: A7 24        LDA [$24]
+FE/F942: BD 7B FB     LDA $FB7B,X
+FE/F945: 34 57        BIT $57,X
+FE/F947: 20 2D 23     JSR $232D
+FE/F94A: 04 0E        TSB $0E
+FE/F94C: C4 79        CPY $79
+FE/F94E: 21 69        AND ($69,X)
+FE/F950: BF 16 FF 05  LDA $05FF16,X
+FE/F954: B4 76        LDY $76,X
+FE/F956: 00 0E        BRK $0E
+FE/F958: E1 5C        SBC ($5C,X)
+FE/F95A: 15 20        ORA $20,X
+FE/F95C: BB           TYX
+FE/F95D: 05 00        ORA $00
+FE/F95F: 00 DF        BRK $DF
+FE/F961: 67 DF        ADC [$DF]
+FE/F963: 5B           TCD
+FE/F964: DF 4F DF 43  CMP $43DF4F,X
+FE/F968: DF 3B 3B 2F  CMP $2F3B3B,X
+FE/F96C: D9 22 97     CMP $9722,Y
+FE/F96F: 1A           INC
+FE/F970: 34 16        BIT $16,X
+FE/F972: D1 15        CMP ($15),Y
+FE/F974: E9 18 A7     SBC #$A718
+FE/F977: 18           CLC
+FE/F978: 64 18        STZ $18
+FE/F97A: 22 18 D9 00  JSR $00D918
+FE/F97E: E6 38        INC $38
+FE/F980: 64 28        STZ $28
+FE/F982: 85 30        STA $30
+FE/F984: A7 38        LDA [$38]
+FE/F986: E8           INX
+FE/F987: 3C 29 45     BIT $4529,X
+FE/F98A: 4C 45 8D     JMP $8D45
+FE/F98D: 4D CF 4D     EOR $4DCF
+FE/F990: F1 51        SBC ($51),Y
+FE/F992: 32 52        AND ($52)
+FE/F994: 53 52        EOR ($52,S),Y
+FE/F996: 94 52        STY $52,X
+FE/F998: 95 52        STA $52,X
+FE/F99A: 74 4C        STZ $4C,X
+FE/F99C: 6B           RTL

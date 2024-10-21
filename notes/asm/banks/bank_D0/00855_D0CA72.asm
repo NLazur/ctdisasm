@@ -1,0 +1,41 @@
+D0/CA72: 80 80        BRA $C9F4
+D0/CA74: 00 00        BRK $00
+D0/CA76: 00 00        BRK $00
+D0/CA78: 00 00        BRK $00
+D0/CA7A: 00 00        BRK $00
+D0/CA7C: 00 01        BRK $01
+D0/CA7E: 00 0F        BRK $0F
+D0/CA80: 0E 17 0E     ASL $0E17
+D0/CA83: 1F 0F 1E 12  ORA $121E0F,X
+D0/CA87: 3D 00 00     AND $0000,X
+D0/CA8A: 00 E0        BRK $E0
+D0/CA8C: E0 70        CPX #$70
+D0/CA8E: E0 FC        CPX #$FC
+D0/CA90: FC EE 3C     JSR ($3CEE,X)
+D0/CA93: DE DE 7D     DEC $7DDE,X
+D0/CA96: E6 FB        INC $FB
+D0/CA98: 00 00        BRK $00
+D0/CA9A: 00 00        BRK $00
+D0/CA9C: 00 03        BRK $03
+D0/CA9E: 03 0F        ORA $0F,S
+D0/CAA0: 09 1F        ORA #$1F
+D0/CAA2: 06 19        ASL $19
+D0/CAA4: 16 39        ASL $39,X
+D0/CAA6: 19 3F 00     ORA $003F,Y
+D0/CAA9: 00 00        BRK $00
+D0/CAAB: 00 00        BRK $00
+D0/CAAD: C0 C0        CPY #$C0
+D0/CAAF: F0 F0        BEQ $CAA1
+D0/CAB1: F8           SED
+D0/CAB2: F0 F8        BEQ $CAAC
+D0/CAB4: F8           SED
+D0/CAB5: FC F0 FC     JSR ($FCF0,X)
+D0/CAB8: 00 00        BRK $00
+D0/CABA: 00 00        BRK $00
+D0/CABC: 00 18        BRK $18
+D0/CABE: 18           CLC
+D0/CABF: 2C 1C 38     BIT $381C
+D0/CAC2: 08           PHP
+D0/CAC3: 10 00        BPL $CAC5
+D0/CAC5: 00 00        BRK $00
+D0/CAC7: 60           RTS

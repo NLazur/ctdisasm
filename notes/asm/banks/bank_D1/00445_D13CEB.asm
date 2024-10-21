@@ -1,0 +1,122 @@
+D1/3CEB: E0 80 80     CPX #$8080
+D1/3CEE: 00 00        BRK $00
+D1/3CF0: F8           SED
+D1/3CF1: F8           SED
+D1/3CF2: F8           SED
+D1/3CF3: F8           SED
+D1/3CF4: F8           SED
+D1/3CF5: F8           SED
+D1/3CF6: F0 F0        BEQ $3CE8
+D1/3CF8: F0 F0        BEQ $3CEA
+D1/3CFA: E0 E0 80     CPX #$80E0
+D1/3CFD: 80 00        BRA $3CFF
+D1/3CFF: 00 00        BRK $00
+D1/3D01: 00 00        BRK $00
+D1/3D03: 00 00        BRK $00
+D1/3D05: 00 00        BRK $00
+D1/3D07: 00 00        BRK $00
+D1/3D09: 00 00        BRK $00
+D1/3D0B: 00 00        BRK $00
+D1/3D0D: 00 00        BRK $00
+D1/3D0F: 00 00        BRK $00
+D1/3D11: 00 00        BRK $00
+D1/3D13: 00 00        BRK $00
+D1/3D15: 00 00        BRK $00
+D1/3D17: 00 00        BRK $00
+D1/3D19: 00 00        BRK $00
+D1/3D1B: 00 00        BRK $00
+D1/3D1D: 00 00        BRK $00
+D1/3D1F: 00 00        BRK $00
+D1/3D21: 00 00        BRK $00
+D1/3D23: 00 00        BRK $00
+D1/3D25: 00 00        BRK $00
+D1/3D27: 00 00        BRK $00
+D1/3D29: 00 00        BRK $00
+D1/3D2B: 00 00        BRK $00
+D1/3D2D: 00 00        BRK $00
+D1/3D2F: 00 00        BRK $00
+D1/3D31: 00 00        BRK $00
+D1/3D33: 00 00        BRK $00
+D1/3D35: 00 00        BRK $00
+D1/3D37: 00 00        BRK $00
+D1/3D39: 00 00        BRK $00
+D1/3D3B: 00 00        BRK $00
+D1/3D3D: 00 00        BRK $00
+D1/3D3F: 00 00        BRK $00
+D1/3D41: 00 00        BRK $00
+D1/3D43: 00 00        BRK $00
+D1/3D45: 00 00        BRK $00
+D1/3D47: 00 00        BRK $00
+D1/3D49: 00 20        BRK $20
+D1/3D4B: 20 30 30     JSR $3030
+D1/3D4E: 38           SEC
+D1/3D4F: 28           PLP
+D1/3D50: 00 00        BRK $00
+D1/3D52: 00 00        BRK $00
+D1/3D54: 00 00        BRK $00
+D1/3D56: 00 00        BRK $00
+D1/3D58: 00 00        BRK $00
+D1/3D5A: 20 20 30     JSR $3020
+D1/3D5D: 30 38        BMI $3D97
+D1/3D5F: 38           SEC
+D1/3D60: 02 02        COP $02
+D1/3D62: 06 06        ASL $06
+D1/3D64: 06 06        ASL $06
+D1/3D66: 0E 0A 0A     ASL $0A0A
+D1/3D69: 0E 1A 16     ASL $161A
+D1/3D6C: 14 1C        TRB $1C
+D1/3D6E: 34 2C        BIT $2C,X
+D1/3D70: 02 02        COP $02
+D1/3D72: 06 06        ASL $06
+D1/3D74: 06 06        ASL $06
+D1/3D76: 0E 0E 0E     ASL $0E0E
+D1/3D79: 0E 1E 1E     ASL $1E1E
+D1/3D7C: 1C 1C 3C     TRB $3C1C
+D1/3D7F: 3C FE FE     BIT $FEFE,X
+D1/3D82: FE 82 FE     INC $FE82,X
+D1/3D85: F2 3C        SBC ($3C)
+D1/3D87: 24 78        BIT $78
+D1/3D89: 48           PHA
+D1/3D8A: FC 9C FE     JSR ($FE9C,X)
+D1/3D8D: 82 FE FE     BRL $D13C8E
+D1/3D90: FE FE FE     INC $FEFE,X
+D1/3D93: FE FE FE     INC $FEFE,X
+D1/3D96: 3C 3C 78     BIT $783C,X
+D1/3D99: 78           SEI
+D1/3D9A: FC FC FE     JSR ($FEFC,X)
+D1/3D9D: FE FE FE     INC $FEFE,X
+D1/3DA0: 00 00        BRK $00
+D1/3DA2: 00 00        BRK $00
+D1/3DA4: 00 00        BRK $00
+D1/3DA6: 00 00        BRK $00
+D1/3DA8: 00 00        BRK $00
+D1/3DAA: 00 00        BRK $00
+D1/3DAC: 00 00        BRK $00
+D1/3DAE: 00 00        BRK $00
+D1/3DB0: 00 00        BRK $00
+D1/3DB2: 00 00        BRK $00
+D1/3DB4: 00 00        BRK $00
+D1/3DB6: 00 00        BRK $00
+D1/3DB8: 00 00        BRK $00
+D1/3DBA: 00 00        BRK $00
+D1/3DBC: 00 00        BRK $00
+D1/3DBE: 00 00        BRK $00
+D1/3DC0: 00 00        BRK $00
+D1/3DC2: 00 00        BRK $00
+D1/3DC4: 00 00        BRK $00
+D1/3DC6: 00 00        BRK $00
+D1/3DC8: 00 00        BRK $00
+D1/3DCA: 0E 0E 09     ASL $090E
+D1/3DCD: 0F 08 0F 00  ORA $000F08
+D1/3DD1: 00 00        BRK $00
+D1/3DD3: 00 00        BRK $00
+D1/3DD5: 00 00        BRK $00
+D1/3DD7: 00 00        BRK $00
+D1/3DD9: 00 0E        BRK $0E
+D1/3DDB: 0E 0F 0F     ASL $0F0F
+D1/3DDE: 0F 0F 00 00  ORA $00000F
+D1/3DE2: 00 00        BRK $00
+D1/3DE4: 00 00        BRK $00
+D1/3DE6: 00 00        BRK $00
+D1/3DE8: 00 00        BRK $00
+D1/3DEA: 60           RTS

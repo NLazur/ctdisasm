@@ -1,0 +1,113 @@
+D1/CED1: 03 78        ORA $78,S
+D1/CED3: 00 DB        BRK $DB
+D1/CED5: 06 CF        ASL $CF
+D1/CED7: 36 3D        ROL $3D,X
+D1/CED9: B0 3D        BCS $CF18
+D1/CEDB: EC 6F 6F     CPX $6F6F
+D1/CEDE: 7B           TDC
+D1/CEDF: 1B           TCS
+D1/CEE0: D8           CLD
+D1/CEE1: D8           CLD
+D1/CEE2: C6 C0        DEC $C0
+D1/CEE4: 1D 1E 19     ORA $191E,X
+D1/CEE7: 1A           INC
+D1/CEE8: 25 26        AND $26
+D1/CEEA: 21 22        AND ($22,X)
+D1/CEEC: 1D 1E 1B     ORA $1B1E,X
+D1/CEEF: 1C 25 26     TRB $2625
+D1/CEF2: 1D 1E 1B     ORA $1B1E,X
+D1/CEF5: 1C 23 24     TRB $2423
+D1/CEF8: 29 2A        AND #$2A
+D1/CEFA: 25 26        AND $26
+D1/CEFC: 1F 28 23 24  ORA $242328,X
+D1/CF00: 19 1A 31     ORA $311A,Y
+D1/CF03: 32 19        AND ($19)
+D1/CF05: 1A           INC
+D1/CF06: 27 30        AND [$30]
+D1/CF08: 21 22        AND ($22,X)
+D1/CF0A: 18           CLC
+D1/CF0B: 58           CLI
+D1/CF0C: 21 22        AND ($22,X)
+D1/CF0E: 1D 1E 19     ORA $191E,X
+D1/CF11: 1A           INC
+D1/CF12: 18           CLC
+D1/CF13: 58           CLI
+D1/CF14: 20 D8 1B     JSR $1BD8
+D1/CF17: 1C 25 26     TRB $2625
+D1/CF1A: 21 22        AND ($22,X)
+D1/CF1C: 18           CLC
+D1/CF1D: 58           CLI
+D1/CF1E: 20 D8 29     JSR $29D8
+D1/CF21: 2A           ROL
+D1/CF22: 23 24        AND $24,S
+D1/CF24: 18           CLC
+D1/CF25: 58           CLI
+D1/CF26: 20 D8 1F     JSR $1FD8
+D1/CF29: 28           PLP
+D1/CF2A: 31 32        AND ($32),Y
+D1/CF2C: 19 1A 20     ORA $201A,Y
+D1/CF2F: D8           CLD
+D1/CF30: 27 30        AND [$30]
+D1/CF32: 1B           TCS
+D1/CF33: 1C 21 22     TRB $2221
+D1/CF36: 01 00        ORA ($00,X)
+D1/CF38: 00 00        BRK $00
+D1/CF3A: 00 00        BRK $00
+D1/CF3C: 00 00        BRK $00
+D1/CF3E: 00 00        BRK $00
+D1/CF40: 00 00        BRK $00
+D1/CF42: 03 60        ORA $60,S
+D1/CF44: 03 78        ORA $78,S
+D1/CF46: 00 DB        BRK $DB
+D1/CF48: 06 CF        ASL $CF
+D1/CF4A: 36 3D        ROL $3D,X
+D1/CF4C: B0 3D        BCS $CF8B
+D1/CF4E: EC 6F 6F     CPX $6F6F
+D1/CF51: 7B           TDC
+D1/CF52: 1B           TCS
+D1/CF53: D8           CLD
+D1/CF54: D8           CLD
+D1/CF55: C6 C0        DEC $C0
+D1/CF57: 1F 28 1B 1C  ORA $1C1B28,X
+D1/CF5B: 27 30        AND [$30]
+D1/CF5D: 23 24        AND $24,S
+D1/CF5F: 1F 28 1D 1E  ORA $1E1D28,X
+D1/CF63: 27 30        AND [$30]
+D1/CF65: 1F 28 1D 1E  ORA $1E1D28,X
+D1/CF69: 25 26        AND $26
+D1/CF6B: 2B           PLD
+D1/CF6C: 2C 27 30     BIT $3027
+D1/CF6F: 29 2A        AND #$2A
+D1/CF71: 25 26        AND $26
+D1/CF73: 1B           TCS
+D1/CF74: 1C 33 34     TRB $3433
+D1/CF77: 1B           TCS
+D1/CF78: 1C 31 32     TRB $3231
+D1/CF7B: 23 24        AND $24,S
+D1/CF7D: 19 1A 23     ORA $231A,Y
+D1/CF80: 24 1F        BIT $1F
+D1/CF82: 28           PLP
+D1/CF83: 1B           TCS
+D1/CF84: 1C 19 1A     TRB $1A19
+D1/CF87: 21 22        AND ($22,X)
+D1/CF89: 1D 1E 27     ORA $271E,X
+D1/CF8C: 30 23        BMI $CFB1
+D1/CF8E: 24 19        BIT $19
+D1/CF90: 1A           INC
+D1/CF91: 21 22        AND ($22,X)
+D1/CF93: 2B           PLD
+D1/CF94: 2C 25 26     BIT $2625
+D1/CF97: 19 1A 21     ORA $211A,Y
+D1/CF9A: 22 29 2A 33  JSR $332A29
+D1/CF9E: 34 1B        BIT $1B,X
+D1/CFA0: 1C 21 22     TRB $2221
+D1/CFA3: 31 32        AND ($32),Y
+D1/CFA5: 1D 1E 23     ORA $231E,X
+D1/CFA8: 24 01        BIT $01
+D1/CFAA: 00 00        BRK $00
+D1/CFAC: 00 00        BRK $00
+D1/CFAE: 00 00        BRK $00
+D1/CFB0: 00 00        BRK $00
+D1/CFB2: 00 00        BRK $00
+D1/CFB4: 00 03        BRK $03
+D1/CFB6: 60           RTS

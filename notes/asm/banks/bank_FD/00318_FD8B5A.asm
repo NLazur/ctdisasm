@@ -1,0 +1,39 @@
+FD/8B5A: 84 E4        STY $E4
+FD/8B5C: 0A           ASL
+FD/8B5D: 00 DA        BRK $DA
+FD/8B5F: 02 03        COP $03
+FD/8B61: 53 00        EOR ($00,S),Y
+FD/8B63: 75 06        ADC $06,X
+FD/8B65: B9 01 37     LDA $3701,Y
+FD/8B68: 01 19        ORA ($19,X)
+FD/8B6A: 05 1A        ORA $1A
+FD/8B6C: 0A           ASL
+FD/8B6D: 11 02        ORA ($02),Y
+FD/8B6F: 25 00        AND $00
+FD/8B71: 74 88        STZ $88,X
+FD/8B73: 03 EF        ORA $EF,S
+FD/8B75: 26 27        ROL $27
+FD/8B77: 4B           PHK
+FD/8B78: FE 80 5F     INC $5F80,X
+FD/8B7B: E9 BC 27     SBC #$27BC
+FD/8B7E: 65 97        ADC $97
+FD/8B80: C9 73 0C     CMP #$0C73
+FD/8B83: 00 13        BRK $13
+FD/8B85: EF DE 07 19  SBC $1907DE
+FD/8B89: 00 D6        BRK $D6
+FD/8B8B: 00 10        BRK $10
+FD/8B8D: D8           CLD
+FD/8B8E: 00 69        BRK $69
+FD/8B90: 91 10        STA ($10),Y
+FD/8B92: 10 FF        BPL $8B93
+FD/8B94: F0 5F        BEQ $8BF5
+FD/8B96: 80 98        BRA $8B30
+FD/8B98: FF 70 3F E0  SBC $E03F70,X
+FD/8B9C: 7F C0 5F 0C  ADC $0C5FC0,X
+FD/8BA0: 01 5A        ORA ($5A,X)
+FD/8BA2: 09 F0 F0     ORA #$F0F0
+FD/8BA5: 68           PLA
+FD/8BA6: 88           DEY
+FD/8BA7: 90 10        BCC $8BB9
+FD/8BA9: 20 38 20     JSR $2038
+FD/8BAC: 40           RTI

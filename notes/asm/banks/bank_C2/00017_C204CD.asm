@@ -1,0 +1,21 @@
+C2/04CD: 86 08        STX $08
+C2/04CF: C2 20        REP #$20
+C2/04D1: A2 30 0B     LDX #$0B30
+C2/04D4: A0 04 00     LDY #$0004
+C2/04D7: 80 BB        BRA $0494
+C2/04D9: 85 01        STA $01
+C2/04DB: 86 0A        STX $0A
+C2/04DD: A2 63 0F     LDX #$0F63
+C2/04E0: 20 8A 04     JSR $048A
+C2/04E3: C2 20        REP #$20
+C2/04E5: 8A           TXA
+C2/04E6: 38           SEC
+C2/04E7: E9 40 00     SBC #$0040
+C2/04EA: AA           TAX
+C2/04EB: A5 0A        LDA $0A
+C2/04ED: 9D 07 00     STA $0007,X
+C2/04F0: E2 20        SEP #$20
+C2/04F2: A5 01        LDA $01
+C2/04F4: 9D 09 00     STA $0009,X
+C2/04F7: 9E 0A 00     STZ $000A,X
+C2/04FA: 60           RTS

@@ -1,0 +1,4 @@
+FE/62BB: 20 C0 30     JSR $30C0
+FE/62BE: C8           INY
+FE/62BF: 30 F8        BMI $62B9
+FE/62C1: 6B           RTL

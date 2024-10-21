@@ -1,0 +1,27 @@
+C0/21A8: AD 16 02     LDA $0216
+C0/21AB: F0 2B        BEQ $21D8
+C0/21AD: 8D 02 42     STA $4202
+C0/21B0: A9 0F        LDA #$0F
+C0/21B2: 8D 03 42     STA $4203
+C0/21B5: EA           NOP
+C0/21B6: EA           NOP
+C0/21B7: A9 07        LDA #$07
+C0/21B9: 85 29        STA $29
+C0/21BB: AE 16 42     LDX $4216
+C0/21BE: 86 34        STX $34
+C0/21C0: 80 E1        BRA $21A3
+C0/21C2: A2 FF FF     LDX #$FFFF
+C0/21C5: 86 34        STX $34
+C0/21C7: A9 07        LDA #$07
+C0/21C9: 85 29        STA $29
+C0/21CB: A5 31        LDA $31
+C0/21CD: C9 03        CMP #$03
+C0/21CF: D0 D2        BNE $21A3
+C0/21D1: 80 05        BRA $21D8
+C0/21D3: A2 FF FF     LDX #$FFFF
+C0/21D6: 86 34        STX $34
+C0/21D8: A9 07        LDA #$07
+C0/21DA: 85 29        STA $29
+C0/21DC: A9 81        LDA #$81
+C0/21DE: 85 36        STA $36
+C0/21E0: 60           RTS

@@ -1,0 +1,5 @@
+C1/1C4A: AE 79 96     LDX $9679
+C1/1C4D: BD 7C 96     LDA $967C,X
+C1/1C50: C9 03        CMP #$03
+C1/1C52: D0 01        BNE $1C55
+C1/1C54: 60           RTS

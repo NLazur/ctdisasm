@@ -1,0 +1,374 @@
+CE/0136: 7B           TDC
+CE/0137: 6F 9C 73 BD  ADC $BD739C
+CE/013B: 77 DE        ADC [$DE],Y
+CE/013D: 7B           TDC
+CE/013E: FF 7F DE 7B  SBC $7BDE7F,X
+CE/0142: BD 77 9C     LDA $9C77,X
+CE/0145: 73 7B        ADC ($7B,S),Y
+CE/0147: 6F 5A 6B 39  ADC $396B5A
+CE/014B: 67 18        ADC [$18]
+CE/014D: 63 F7        ADC $F7,S
+CE/014F: 5E D6 5A     LSR $5AD6,X
+CE/0152: B5 56        LDA $56,X
+CE/0154: 94 52        STY $52,X
+CE/0156: 73 4E        ADC ($4E,S),Y
+CE/0158: 52 4A        EOR ($4A)
+CE/015A: 31 46        AND ($46),Y
+CE/015C: 10 42        BPL $01A0
+CE/015E: EF 3D CE 39  SBC $39CE3D
+CE/0162: AD 35 8C     LDA $8C35
+CE/0165: 31 6B        AND ($6B),Y
+CE/0167: 2D 4A 29     AND $294A
+CE/016A: 29 25        AND #$25
+CE/016C: 08           PHP
+CE/016D: 21 E7        AND ($E7,X)
+CE/016F: 1C C6 18     TRB $18C6
+CE/0172: A5 14        LDA $14
+CE/0174: 84 10        STY $10
+CE/0176: 63 0C        ADC $0C,S
+CE/0178: 42 08        WDM $08
+CE/017A: 21 04        AND ($04,X)
+CE/017C: 00 00        BRK $00
+CE/017E: 01 00        ORA ($00,X)
+CE/0180: 02 00        COP $00
+CE/0182: 03 00        ORA $00,S
+CE/0184: 04 00        TSB $00
+CE/0186: 05 00        ORA $00
+CE/0188: 06 00        ASL $00
+CE/018A: 07 00        ORA [$00]
+CE/018C: 08           PHP
+CE/018D: 00 09        BRK $09
+CE/018F: 00 0A        BRK $0A
+CE/0191: 00 0B        BRK $0B
+CE/0193: 00 0C        BRK $0C
+CE/0195: 00 0D        BRK $0D
+CE/0197: 00 0E        BRK $0E
+CE/0199: 00 0F        BRK $0F
+CE/019B: 00 10        BRK $10
+CE/019D: 00 11        BRK $11
+CE/019F: 00 12        BRK $12
+CE/01A1: 00 13        BRK $13
+CE/01A3: 00 14        BRK $14
+CE/01A5: 00 15        BRK $15
+CE/01A7: 00 16        BRK $16
+CE/01A9: 00 17        BRK $17
+CE/01AB: 00 18        BRK $18
+CE/01AD: 00 19        BRK $19
+CE/01AF: 00 1A        BRK $1A
+CE/01B1: 00 1B        BRK $1B
+CE/01B3: 00 1C        BRK $1C
+CE/01B5: 00 1D        BRK $1D
+CE/01B7: 00 1E        BRK $1E
+CE/01B9: 00 1F        BRK $1F
+CE/01BB: 00 1E        BRK $1E
+CE/01BD: 00 1D        BRK $1D
+CE/01BF: 00 1C        BRK $1C
+CE/01C1: 00 1B        BRK $1B
+CE/01C3: 00 1A        BRK $1A
+CE/01C5: 00 19        BRK $19
+CE/01C7: 00 18        BRK $18
+CE/01C9: 00 17        BRK $17
+CE/01CB: 00 16        BRK $16
+CE/01CD: 00 15        BRK $15
+CE/01CF: 00 14        BRK $14
+CE/01D1: 00 13        BRK $13
+CE/01D3: 00 12        BRK $12
+CE/01D5: 00 11        BRK $11
+CE/01D7: 00 10        BRK $10
+CE/01D9: 00 0F        BRK $0F
+CE/01DB: 00 0E        BRK $0E
+CE/01DD: 00 0D        BRK $0D
+CE/01DF: 00 0C        BRK $0C
+CE/01E1: 00 0B        BRK $0B
+CE/01E3: 00 0A        BRK $0A
+CE/01E5: 00 09        BRK $09
+CE/01E7: 00 08        BRK $08
+CE/01E9: 00 07        BRK $07
+CE/01EB: 00 06        BRK $06
+CE/01ED: 00 05        BRK $05
+CE/01EF: 00 04        BRK $04
+CE/01F1: 00 03        BRK $03
+CE/01F3: 00 02        BRK $02
+CE/01F5: 00 01        BRK $01
+CE/01F7: 00 00        BRK $00
+CE/01F9: 00 00        BRK $00
+CE/01FB: 04 00        TSB $00
+CE/01FD: 08           PHP
+CE/01FE: 00 0C        BRK $0C
+CE/0200: 00 10        BRK $10
+CE/0202: 00 14        BRK $14
+CE/0204: 00 18        BRK $18
+CE/0206: 00 1C        BRK $1C
+CE/0208: 00 20        BRK $20
+CE/020A: 00 24        BRK $24
+CE/020C: 00 28        BRK $28
+CE/020E: 00 2C        BRK $2C
+CE/0210: 00 30        BRK $30
+CE/0212: 00 34        BRK $34
+CE/0214: 00 38        BRK $38
+CE/0216: 00 3C        BRK $3C
+CE/0218: 00 40        BRK $40
+CE/021A: 00 44        BRK $44
+CE/021C: 00 48        BRK $48
+CE/021E: 00 4C        BRK $4C
+CE/0220: 00 50        BRK $50
+CE/0222: 00 54        BRK $54
+CE/0224: 00 58        BRK $58
+CE/0226: 00 5C        BRK $5C
+CE/0228: 00 60        BRK $60
+CE/022A: 00 64        BRK $64
+CE/022C: 00 68        BRK $68
+CE/022E: 00 6C        BRK $6C
+CE/0230: 00 70        BRK $70
+CE/0232: 00 74        BRK $74
+CE/0234: 00 78        BRK $78
+CE/0236: 00 7C        BRK $7C
+CE/0238: 00 78        BRK $78
+CE/023A: 00 74        BRK $74
+CE/023C: 00 70        BRK $70
+CE/023E: 00 6C        BRK $6C
+CE/0240: 00 68        BRK $68
+CE/0242: 00 64        BRK $64
+CE/0244: 00 60        BRK $60
+CE/0246: 00 5C        BRK $5C
+CE/0248: 00 58        BRK $58
+CE/024A: 00 54        BRK $54
+CE/024C: 00 50        BRK $50
+CE/024E: 00 4C        BRK $4C
+CE/0250: 00 48        BRK $48
+CE/0252: 00 44        BRK $44
+CE/0254: 00 40        BRK $40
+CE/0256: 00 3C        BRK $3C
+CE/0258: 00 38        BRK $38
+CE/025A: 00 34        BRK $34
+CE/025C: 00 30        BRK $30
+CE/025E: 00 2C        BRK $2C
+CE/0260: 00 28        BRK $28
+CE/0262: 00 24        BRK $24
+CE/0264: 00 20        BRK $20
+CE/0266: 00 1C        BRK $1C
+CE/0268: 00 18        BRK $18
+CE/026A: 00 14        BRK $14
+CE/026C: 00 10        BRK $10
+CE/026E: 00 0C        BRK $0C
+CE/0270: 00 08        BRK $08
+CE/0272: 00 04        BRK $04
+CE/0274: 00 00        BRK $00
+CE/0276: 20 00 40     JSR $4000
+CE/0279: 00 60        BRK $60
+CE/027B: 00 80        BRK $80
+CE/027D: 00 A0        BRK $A0
+CE/027F: 00 C0        BRK $C0
+CE/0281: 00 E0        BRK $E0
+CE/0283: 00 00        BRK $00
+CE/0285: 01 20        ORA ($20,X)
+CE/0287: 01 40        ORA ($40,X)
+CE/0289: 01 60        ORA ($60,X)
+CE/028B: 01 80        ORA ($80,X)
+CE/028D: 01 A0        ORA ($A0,X)
+CE/028F: 01 C0        ORA ($C0,X)
+CE/0291: 01 E0        ORA ($E0,X)
+CE/0293: 01 00        ORA ($00,X)
+CE/0295: 02 20        COP $20
+CE/0297: 02 40        COP $40
+CE/0299: 02 60        COP $60
+CE/029B: 02 80        COP $80
+CE/029D: 02 A0        COP $A0
+CE/029F: 02 C0        COP $C0
+CE/02A1: 02 E0        COP $E0
+CE/02A3: 02 00        COP $00
+CE/02A5: 03 20        ORA $20,S
+CE/02A7: 03 40        ORA $40,S
+CE/02A9: 03 60        ORA $60,S
+CE/02AB: 03 80        ORA $80,S
+CE/02AD: 03 A0        ORA $A0,S
+CE/02AF: 03 C0        ORA $C0,S
+CE/02B1: 03 E0        ORA $E0,S
+CE/02B3: 03 C0        ORA $C0,S
+CE/02B5: 03 A0        ORA $A0,S
+CE/02B7: 03 80        ORA $80,S
+CE/02B9: 03 60        ORA $60,S
+CE/02BB: 03 40        ORA $40,S
+CE/02BD: 03 20        ORA $20,S
+CE/02BF: 03 00        ORA $00,S
+CE/02C1: 03 E0        ORA $E0,S
+CE/02C3: 02 C0        COP $C0
+CE/02C5: 02 A0        COP $A0
+CE/02C7: 02 80        COP $80
+CE/02C9: 02 60        COP $60
+CE/02CB: 02 40        COP $40
+CE/02CD: 02 20        COP $20
+CE/02CF: 02 00        COP $00
+CE/02D1: 02 E0        COP $E0
+CE/02D3: 01 C0        ORA ($C0,X)
+CE/02D5: 01 A0        ORA ($A0,X)
+CE/02D7: 01 80        ORA ($80,X)
+CE/02D9: 01 60        ORA ($60,X)
+CE/02DB: 01 40        ORA ($40,X)
+CE/02DD: 01 20        ORA ($20,X)
+CE/02DF: 01 00        ORA ($00,X)
+CE/02E1: 01 E0        ORA ($E0,X)
+CE/02E3: 00 C0        BRK $C0
+CE/02E5: 00 A0        BRK $A0
+CE/02E7: 00 80        BRK $80
+CE/02E9: 00 60        BRK $60
+CE/02EB: 00 40        BRK $40
+CE/02ED: 00 20        BRK $20
+CE/02EF: 00 00        BRK $00
+CE/02F1: 00 21        BRK $21
+CE/02F3: 00 42        BRK $42
+CE/02F5: 00 63        BRK $63
+CE/02F7: 00 84        BRK $84
+CE/02F9: 00 A5        BRK $A5
+CE/02FB: 00 C6        BRK $C6
+CE/02FD: 00 E7        BRK $E7
+CE/02FF: 00 08        BRK $08
+CE/0301: 01 29        ORA ($29,X)
+CE/0303: 01 4A        ORA ($4A,X)
+CE/0305: 01 6B        ORA ($6B,X)
+CE/0307: 01 8C        ORA ($8C,X)
+CE/0309: 01 AD        ORA ($AD,X)
+CE/030B: 01 CE        ORA ($CE,X)
+CE/030D: 01 EF        ORA ($EF,X)
+CE/030F: 01 10        ORA ($10,X)
+CE/0311: 02 31        COP $31
+CE/0313: 02 52        COP $52
+CE/0315: 02 73        COP $73
+CE/0317: 02 94        COP $94
+CE/0319: 02 B5        COP $B5
+CE/031B: 02 D6        COP $D6
+CE/031D: 02 F7        COP $F7
+CE/031F: 02 18        COP $18
+CE/0321: 03 39        ORA $39,S
+CE/0323: 03 5A        ORA $5A,S
+CE/0325: 03 7B        ORA $7B,S
+CE/0327: 03 9C        ORA $9C,S
+CE/0329: 03 BD        ORA $BD,S
+CE/032B: 03 DE        ORA $DE,S
+CE/032D: 03 FF        ORA $FF,S
+CE/032F: 03 DE        ORA $DE,S
+CE/0331: 03 BD        ORA $BD,S
+CE/0333: 03 9C        ORA $9C,S
+CE/0335: 03 7B        ORA $7B,S
+CE/0337: 03 5A        ORA $5A,S
+CE/0339: 03 39        ORA $39,S
+CE/033B: 03 18        ORA $18,S
+CE/033D: 03 F7        ORA $F7,S
+CE/033F: 02 D6        COP $D6
+CE/0341: 02 B5        COP $B5
+CE/0343: 02 94        COP $94
+CE/0345: 02 73        COP $73
+CE/0347: 02 52        COP $52
+CE/0349: 02 31        COP $31
+CE/034B: 02 10        COP $10
+CE/034D: 02 EF        COP $EF
+CE/034F: 01 CE        ORA ($CE,X)
+CE/0351: 01 AD        ORA ($AD,X)
+CE/0353: 01 8C        ORA ($8C,X)
+CE/0355: 01 6B        ORA ($6B,X)
+CE/0357: 01 4A        ORA ($4A,X)
+CE/0359: 01 29        ORA ($29,X)
+CE/035B: 01 08        ORA ($08,X)
+CE/035D: 01 E7        ORA ($E7,X)
+CE/035F: 00 C6        BRK $C6
+CE/0361: 00 A5        BRK $A5
+CE/0363: 00 84        BRK $84
+CE/0365: 00 63        BRK $63
+CE/0367: 00 42        BRK $42
+CE/0369: 00 21        BRK $21
+CE/036B: 00 FF        BRK $FF
+CE/036D: FF FF FF FF  SBC $FFFFFF,X
+CE/0371: FF FF FF FF  SBC $FFFFFF,X
+CE/0375: FF FF FF FF  SBC $FFFFFF,X
+CE/0379: FF FF FF FF  SBC $FFFFFF,X
+CE/037D: FF FF FF 90  SBC $90FFFF,X
+CE/0381: 80 90        BRA $0313
+CE/0383: 00 8E        BRK $8E
+CE/0385: 03 9E        ORA $9E,S
+CE/0387: 03 A6        ORA $A6,S
+CE/0389: 03 B6        ORA $B6,S
+CE/038B: 03 C5        ORA $C5,S
+CE/038D: 03 1E        ORA $1E,S
+CE/038F: 0A           ASL
+CE/0390: 36 7C        ROL $7C,X
+CE/0392: 03 31        ORA $31,S
+CE/0394: 36 1E        ROL $1E,X
+CE/0396: 2A           ROL
+CE/0397: 23 01        AND $01,S
+CE/0399: 24 03        BIT $03
+CE/039B: 2E 01 00     ROL $0001
+CE/039E: 24 01        BIT $01
+CE/03A0: 20 0F 1E     JSR $1E0F
+CE/03A3: 00 35        BRK $35
+CE/03A5: 00 60        BRK $60
+CE/03A7: 00 73        BRK $73
+CE/03A9: 03 24        ORA $24,S
+CE/03AB: 01 72        ORA ($72,X)
+CE/03AD: 00 1B        BRK $1B
+CE/03AF: 00 20        BRK $20
+CE/03B1: 0D 03 00     ORA $0003
+CE/03B4: 36 00        ROL $00,X
+CE/03B6: 1E 0A 7A     ASL $7A0A,X
+CE/03B9: 02 00        COP $00
+CE/03BB: 03 31        ORA $31,S
+CE/03BD: 36 1E        ROL $1E,X
+CE/03BF: 2A           ROL
+CE/03C0: 24 02        BIT $02
+CE/03C2: 2E 01 00     ROL $0001
+CE/03C5: 24 01        BIT $01
+CE/03C7: 50 36        BVC $03FF
+CE/03C9: 06 03        ASL $03
+CE/03CB: 00 90        BRK $90
+CE/03CD: 80 90        BRA $035F
+CE/03CF: 80 DC        BRA $03AD
+CE/03D1: 03 F2        ORA $F2,S
+CE/03D3: 03 00        ORA $00,S
+CE/03D5: 04 DC        TSB $DC
+CE/03D7: 03 F2        ORA $F2,S
+CE/03D9: 03 00        ORA $00,S
+CE/03DB: 04 1E        TSB $1E
+CE/03DD: 2B           PLD
+CE/03DE: 36 7C        ROL $7C,X
+CE/03E0: 72 0D        ADC ($0D)
+CE/03E2: 03 31        ORA $31,S
+CE/03E4: 36 35        ROL $35,X
+CE/03E6: 7D 03 32     ADC $3203,X
+CE/03E9: 20 0A 1E     JSR $1E0A
+CE/03EC: 2A           ROL
+CE/03ED: 24 04        BIT $04
+CE/03EF: 2E 01 00     ROL $0001
+CE/03F2: 24 01        BIT $01
+CE/03F4: 20 0F 1E     JSR $1E0F
+CE/03F7: 05 23        ORA $23
+CE/03F9: 01 20        ORA ($20,X)
+CE/03FB: 0F 1E 00 36  ORA $36001E
+CE/03FF: 00 73        BRK $73
+CE/0401: 03 60        ORA $60,S
+CE/0403: 00 24        BRK $24
+CE/0405: 01 1B        ORA ($1B,X)
+CE/0407: 00 72        BRK $72
+CE/0409: 00 20        BRK $20
+CE/040B: 0D 2D 80     ORA $802D
+CE/040E: 12 A0        ORA ($A0)
+CE/0410: 03 00        ORA $00,S
+CE/0412: 24 02        BIT $02
+CE/0414: 20 0D 2D     JSR $2D0D
+CE/0417: 80 12        BRA $042B
+CE/0419: A8           TAY
+CE/041A: 03 01        ORA $01,S
+CE/041C: 36 00        ROL $00,X
+CE/041E: 90 80        BCC $03A0
+CE/0420: 80 80        BRA $03A2
+CE/0422: 2C 04 32     BIT $3204
+CE/0425: 04 39        TSB $39
+CE/0427: 04 5B        TSB $5B
+CE/0429: 04 6A        TSB $6A
+CE/042B: 04 7C        TSB $7C
+CE/042D: 03 31        ORA $31,S
+CE/042F: 06 03        ASL $03
+CE/0431: 00 24        BRK $24
+CE/0433: 01 1E        ORA ($1E,X)
+CE/0435: 00 2E        BRK $2E
+CE/0437: 01 00        ORA ($00,X)
+CE/0439: 72 00        ADC ($00)
+CE/043B: 60           RTS

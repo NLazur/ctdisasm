@@ -1,0 +1,5 @@
+C3/14DE: A4 F1        LDY $F1
+C3/14E0: 64 F6        STZ $F6
+C3/14E2: AD 16 0A     LDA $0A16
+C3/14E5: 10 85        BPL $146C
+C3/14E7: 60           RTS

@@ -1,0 +1,26 @@
+C1/0174: DA           PHX
+C1/0175: 7B           TDC
+C1/0176: AA           TAX
+C1/0177: 38           SEC
+C1/0178: AD 99 94     LDA $9499
+C1/017B: E9 0A        SBC #$0A
+C1/017D: 00 8D        BRK $8D
+C1/017F: 99 94 E8     STA $E894,Y
+C1/0182: B0 F3        BCS $0177
+C1/0184: 18           CLC
+C1/0185: AD 99 94     LDA $9499
+C1/0188: 69 0A        ADC #$0A
+C1/018A: 00 CA        BRK $CA
+C1/018C: DA           PHX
+C1/018D: E2 20        SEP #$20
+C1/018F: AA           TAX
+C1/0190: BF 03 F9 CC  LDA $CCF903,X
+C1/0194: 8D 9F 94     STA $949F
+C1/0197: FA           PLX
+C1/0198: BF 03 F9 CC  LDA $CCF903,X
+C1/019C: 8D 9E 94     STA $949E
+C1/019F: A9 FF        LDA #$FF
+C1/01A1: 8D 9D 94     STA $949D
+C1/01A4: 8D 9C 94     STA $949C
+C1/01A7: FA           PLX
+C1/01A8: 60           RTS

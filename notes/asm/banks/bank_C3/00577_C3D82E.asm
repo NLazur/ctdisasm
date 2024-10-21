@@ -1,0 +1,46 @@
+C3/D82E: 5A           PHY
+C3/D82F: 67 75        ADC [$75]
+C3/D831: 4E 32 4A     LSR $4A32
+C3/D834: 00 7C        BRK $7C
+C3/D836: 6F FD 77 9A  ADC $9A77FD
+C3/D83A: 67 5A        ADC [$5A]
+C3/D83C: 67 00        ADC [$00]
+C3/D83E: 18           CLC
+C3/D83F: 67 EE        ADC [$EE]
+C3/D841: 39 8B 31     AND $318B,Y
+C3/D844: 29 25 00     AND #$0025
+C3/D847: 62 10 B0     PER $C3885A
+C3/D84A: 25 EA        AND $EA
+C3/D84C: 14 31        TRB $31
+C3/D84E: 46 00        LSR $00
+C3/D850: BE 77 18     LDX $1877,Y
+C3/D853: 67 54        ADC [$54]
+C3/D855: 56 12        LSR $12,X
+C3/D857: 52 00        EOR ($00)
+C3/D859: 19 5F 74     ORA $745F,Y
+C3/D85C: 46 AF        LSR $AF
+C3/D85E: 31 2A        AND ($2A),Y
+C3/D860: 25 00        AND $00
+C3/D862: C6 18        DEC $18
+C3/D864: 64 10        STZ $10
+C3/D866: 5F 7E D4 50  EOR $50D47E,X
+C3/D86A: 00 F6        BRK $F6
+C3/D86C: 25 92        AND $92
+C3/D86E: 25 4F        AND $4F
+C3/D870: 25 31        AND $31
+C3/D872: 46 22        LSR $22
+C3/D874: 00 01        BRK $01
+C3/D876: 10 85        BPL $D7FD
+C3/D878: 14 65        TRB $65
+C3/D87A: 58           CLI
+C3/D87B: 00 44        BRK $44
+C3/D87D: 10 00        BPL $D87F
+C3/D87F: 24 0C        BIT $0C
+C3/D881: 24 04        BIT $04
+C3/D883: 04 04        TSB $04
+C3/D885: 03 04        ORA $04,S
+C3/D887: 21 16        AND ($16,X)
+C3/D889: 18           CLC
+C3/D88A: 00 00        BRK $00
+C3/D88C: B4 68        LDY $68,X
+C3/D88E: 60           RTS

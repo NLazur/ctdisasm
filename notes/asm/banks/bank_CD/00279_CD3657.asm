@@ -1,0 +1,22 @@
+CD/3657: AA           TAX
+CD/3658: 8D 64 CC     STA $CC64
+CD/365B: 9C 20 00     STZ $0020
+CD/365E: BD EA CA     LDA $CAEA,X
+CD/3661: 85 12        STA $12
+CD/3663: BD EC CA     LDA $CAEC,X
+CD/3666: 85 13        STA $13
+CD/3668: BD EE CA     LDA $CAEE,X
+CD/366B: 85 14        STA $14
+CD/366D: BD F0 CA     LDA $CAF0,X
+CD/3670: 85 15        STA $15
+CD/3672: BD F2 CA     LDA $CAF2,X
+CD/3675: 85 16        STA $16
+CD/3677: BD F4 CA     LDA $CAF4,X
+CD/367A: 85 17        STA $17
+CD/367C: 8B           PHB
+CD/367D: 7B           TDC
+CD/367E: 48           PHA
+CD/367F: AB           PLB
+CD/3680: 20 85 36     JSR $3685
+CD/3683: AB           PLB
+CD/3684: 60           RTS

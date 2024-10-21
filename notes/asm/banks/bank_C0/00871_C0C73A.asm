@@ -1,0 +1,94 @@
+C0/C73A: 8B           PHB
+C0/C73B: A9 7F        LDA #$7F
+C0/C73D: 48           PHA
+C0/C73E: AB           PLB
+C0/C73F: C2 20        REP #$20
+C0/C741: A6 6D        LDX $6D
+C0/C743: BF 80 0A 00  LDA $000A80,X
+C0/C747: 29 FF 01     AND #$01FF
+C0/C74A: 85 C5        STA $C5
+C0/C74C: BF 00 0A 00  LDA $000A00,X
+C0/C750: 85 C3        STA $C3
+C0/C752: BF 00 17 00  LDA $001700,X
+C0/C756: AA           TAX
+C0/C757: 20 E7 C6     JSR $C6E7
+C0/C75A: 86 D9        STX $D9
+C0/C75C: A6 6D        LDX $6D
+C0/C75E: 9D 00 4F     STA $4F00,X
+C0/C761: A6 D9        LDX $D9
+C0/C763: C2 20        REP #$20
+C0/C765: 8A           TXA
+C0/C766: 18           CLC
+C0/C767: 69 20 00     ADC #$0020
+C0/C76A: AA           TAX
+C0/C76B: 20 E7 C6     JSR $C6E7
+C0/C76E: 86 D9        STX $D9
+C0/C770: A6 6D        LDX $6D
+C0/C772: 9D 01 4F     STA $4F01,X
+C0/C775: A6 D9        LDX $D9
+C0/C777: C2 20        REP #$20
+C0/C779: 8A           TXA
+C0/C77A: 18           CLC
+C0/C77B: 69 20 00     ADC #$0020
+C0/C77E: AA           TAX
+C0/C77F: 20 E7 C6     JSR $C6E7
+C0/C782: 86 D9        STX $D9
+C0/C784: A6 6D        LDX $6D
+C0/C786: 9D 40 4B     STA $4B40,X
+C0/C789: A6 D9        LDX $D9
+C0/C78B: C2 20        REP #$20
+C0/C78D: 8A           TXA
+C0/C78E: 18           CLC
+C0/C78F: 69 20 00     ADC #$0020
+C0/C792: AA           TAX
+C0/C793: 20 E7 C6     JSR $C6E7
+C0/C796: 86 D9        STX $D9
+C0/C798: A6 6D        LDX $6D
+C0/C79A: 9D 41 4B     STA $4B41,X
+C0/C79D: A6 D9        LDX $D9
+C0/C79F: C2 20        REP #$20
+C0/C7A1: 8A           TXA
+C0/C7A2: 18           CLC
+C0/C7A3: 69 20 00     ADC #$0020
+C0/C7A6: AA           TAX
+C0/C7A7: 20 E7 C6     JSR $C6E7
+C0/C7AA: 86 D9        STX $D9
+C0/C7AC: A6 6D        LDX $6D
+C0/C7AE: 9D 80 4F     STA $4F80,X
+C0/C7B1: A6 D9        LDX $D9
+C0/C7B3: C2 20        REP #$20
+C0/C7B5: 8A           TXA
+C0/C7B6: 18           CLC
+C0/C7B7: 69 20 00     ADC #$0020
+C0/C7BA: AA           TAX
+C0/C7BB: 20 E7 C6     JSR $C6E7
+C0/C7BE: 86 D9        STX $D9
+C0/C7C0: A6 6D        LDX $6D
+C0/C7C2: 9D 81 4F     STA $4F81,X
+C0/C7C5: A6 6D        LDX $6D
+C0/C7C7: C2 20        REP #$20
+C0/C7C9: BF 00 17 00  LDA $001700,X
+C0/C7CD: AA           TAX
+C0/C7CE: E2 20        SEP #$20
+C0/C7D0: A5 C6        LDA $C6
+C0/C7D2: F0 03        BEQ $C7D7
+C0/C7D4: 82 49 00     BRL $C0C820
+C0/C7D7: A5 C5        LDA $C5
+C0/C7D9: 30 03        BMI $C7DE
+C0/C7DB: 82 1D 00     BRL $C0C7FB
+C0/C7DE: A9 18        LDA #$18
+C0/C7E0: 85 C9        STA $C9
+C0/C7E2: BD C4 4B     LDA $4BC4,X
+C0/C7E5: 18           CLC
+C0/C7E6: 65 C5        ADC $C5
+C0/C7E8: 9D C1 4B     STA $4BC1,X
+C0/C7EB: C2 20        REP #$20
+C0/C7ED: 8A           TXA
+C0/C7EE: 18           CLC
+C0/C7EF: 69 08 00     ADC #$0008
+C0/C7F2: AA           TAX
+C0/C7F3: E2 20        SEP #$20
+C0/C7F5: C6 C9        DEC $C9
+C0/C7F7: D0 E9        BNE $C7E2
+C0/C7F9: AB           PLB
+C0/C7FA: 60           RTS

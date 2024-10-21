@@ -1,0 +1,4 @@
+C0/88DD: 20 AC 91     JSR $91AC
+C0/88E0: 20 E1 93     JSR $93E1
+C0/88E3: 2B           PLD
+C0/88E4: 60           RTS

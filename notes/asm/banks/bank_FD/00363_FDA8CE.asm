@@ -1,0 +1,23 @@
+FD/A8CE: 7B           TDC
+FD/A8CF: A5 14        LDA $14
+FD/A8D1: 0A           ASL
+FD/A8D2: 0A           ASL
+FD/A8D3: 0A           ASL
+FD/A8D4: 38           SEC
+FD/A8D5: E5 14        SBC $14
+FD/A8D7: AA           TAX
+FD/A8D8: 22 CF FD C1  JSR $C1FDCF
+FD/A8DC: 9E EE 93     STZ $93EE,X
+FD/A8DF: 9E EF 93     STZ $93EF,X
+FD/A8E2: A9 FF        LDA #$FF
+FD/A8E4: 9D F3 93     STA $93F3,X
+FD/A8E7: 7B           TDC
+FD/A8E8: A5 14        LDA $14
+FD/A8EA: AA           TAX
+FD/A8EB: BD 58 B1     LDA $B158,X
+FD/A8EE: 9D AB AF     STA $AFAB,X
+FD/A8F1: 9D DD 99     STA $99DD,X
+FD/A8F4: 9D 22 9F     STA $9F22,X
+FD/A8F7: 9E 88 B1     STZ $B188,X
+FD/A8FA: 9E 3A B0     STZ $B03A,X
+FD/A8FD: 60           RTS

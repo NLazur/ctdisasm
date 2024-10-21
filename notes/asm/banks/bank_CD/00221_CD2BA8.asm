@@ -1,0 +1,20 @@
+CD/2BA8: A6 43        LDX $43
+CD/2BAA: BD 79 CA     LDA $CA79,X
+CD/2BAD: AA           TAX
+CD/2BAE: BF D2 F1 CE  LDA $CEF1D2,X
+CD/2BB2: 85 45        STA $45
+CD/2BB4: 10 06        BPL $2BBC
+CD/2BB6: A9 FF        LDA #$FF
+CD/2BB8: 85 46        STA $46
+CD/2BBA: 80 02        BRA $2BBE
+CD/2BBC: 64 46        STZ $46
+CD/2BBE: A6 43        LDX $43
+CD/2BC0: C2 20        REP #$20
+CD/2BC2: BD 60 CA     LDA $CA60,X
+CD/2BC5: 38           SEC
+CD/2BC6: E5 45        SBC $45
+CD/2BC8: 9D 60 CA     STA $CA60,X
+CD/2BCB: 7B           TDC
+CD/2BCC: E2 20        SEP #$20
+CD/2BCE: FE 79 CA     INC $CA79,X
+CD/2BD1: 60           RTS

@@ -1,0 +1,153 @@
+FD/63B4: 04 3B        TSB $3B
+FD/63B6: F8           SED
+FD/63B7: 01 F8        ORA ($F8,X)
+FD/63B9: 01 F8        ORA ($F8,X)
+FD/63BB: 8C 71 EE     STY $EE71
+FD/63BE: 0A           ASL
+FD/63BF: FE 03 27     INC $2703,X
+FD/63C2: F8           SED
+FD/63C3: 45 B3        EOR $B3
+FD/63C5: 01 F7        ORA ($F7,X)
+FD/63C7: 14 01        TRB $01
+FD/63C9: F8           SED
+FD/63CA: 3F A8 07 C0  AND $C007A8,X
+FD/63CE: 0B           PHD
+FD/63CF: 28           PLP
+FD/63D0: F8           SED
+FD/63D1: BC A8 09     LDY $09A8,X
+FD/63D4: 02 0D        COP $0D
+FD/63D6: 0D 0B 68     ORA $680B
+FD/63D9: 06 06        ASL $06
+FD/63DB: 09 00        ORA #$00
+FD/63DD: 04 0B        TSB $0B
+FD/63DF: 86 F8        STX $F8
+FD/63E1: 47 66        EOR [$66]
+FD/63E3: 09 83        ORA #$83
+FD/63E5: 7B           TDC
+FD/63E6: 06 4B        ASL $4B
+FD/63E8: 07 0A        ORA [$0A]
+FD/63EA: 06 06        ASL $06
+FD/63EC: 0D 0A FF     ORA $FF0A
+FD/63EF: 13 8C        ORA ($8C,S),Y
+FD/63F1: 09 09        ORA #$09
+FD/63F3: 36 F8        ROL $F8,X
+FD/63F5: 3D 30 09     AND $0930,X
+FD/63F8: 05 06        ORA $06
+FD/63FA: F5 12        SBC $12,X
+FD/63FC: ED 01 0F     SBC $0F01
+FD/63FF: 0B           PHD
+FD/6400: B9 06 01     LDA $0106,Y
+FD/6403: 0E 05 43     ASL $4305
+FD/6406: F8           SED
+FD/6407: 3E 30 3F     ROL $3F30,X
+FD/640A: 07 FF        ORA [$FF]
+FD/640C: 41 18        EOR ($18,X)
+FD/640E: F9 12 41     SBC $4112,Y
+FD/6411: 20 D9 03     JSR $03D9
+FD/6414: 41 F8        EOR ($F8,X)
+FD/6416: 3D 04 B7     AND $B704,X
+FD/6419: 06 C2        ASL $C2
+FD/641B: 13 FF        ORA ($FF,S),Y
+FD/641D: 3E 17 45     ROL $4517,X
+FD/6420: 10 82        BPL $63A4
+FD/6422: 10 4A        BPL $646E
+FD/6424: F9 7F 13     SBC $137F,Y
+FD/6427: 3E 04 F6     ROL $F604,X
+FD/642A: 0E B2 16     ASL $16B2
+FD/642D: 3F 80 0F C0  AND $C00F80,X
+FD/6431: 0C 89 07     TSB $0789
+FD/6434: 7C FB BF     JMP ($BFFB,X)
+FD/6437: 33 B5        AND ($B5,S),Y
+FD/6439: 32 07        AND ($07)
+FD/643B: 0F FF 39 00  ORA $0039FF
+FD/643F: 05 11        ORA $11
+FD/6441: C3 00        CMP $00,S
+FD/6443: 82 F9 11     BRL $FD763F
+FD/6446: 70 44        BVS $648C
+FD/6448: 04 BE        TSB $BE
+FD/644A: 03 46        ORA $46,S
+FD/644C: 19 7B 41     ORA $417B,Y
+FD/644F: F8           SED
+FD/6450: 42 A0        WDM $A0
+FD/6452: 07 BD        ORA [$BD]
+FD/6454: 00 C7        BRK $C7
+FD/6456: 10 40        BPL $6498
+FD/6458: F8           SED
+FD/6459: BD A3 07     LDA $07A3,X
+FD/645C: 64 06        STZ $06
+FD/645E: 0E BF 05     ASL $05BF
+FD/6461: 08           PHP
+FD/6462: 0E 41 F8     ASL $F841
+FD/6465: FF A3 0E FE  SBC $FE0EA3,X
+FD/6469: 08           PHP
+FD/646A: 81 17        STA ($17,X)
+FD/646C: C3 FB        CMP $FB,S
+FD/646E: BD E7 41     LDA $41E7,X
+FD/6471: F8           SED
+FD/6472: 01 F8        ORA ($F8,X)
+FD/6474: 01 F8        ORA ($F8,X)
+FD/6476: 8F 46 CC 0D  STA $0DCC46
+FD/647A: 09 00        ORA #$00
+FD/647C: FC 3F C8     JSR ($C83F,X)
+FD/647F: 01 04        ORA ($04,X)
+FD/6481: 00 FC        BRK $FC
+FD/6483: 85 D7        STA $D7
+FD/6485: 0D C0 07     ORA $07C0
+FD/6488: 05 7A        ORA $7A
+FD/648A: FA           PLX
+FD/648B: 48           PHA
+FD/648C: 9E 03 02     STZ $0203,X
+FD/648F: 08           PHP
+FD/6490: 0D F2 0D     ORA $0DF2
+FD/6493: 47 03        EOR [$03]
+FD/6495: 03 04        ORA $04,S
+FD/6497: 01 04        ORA ($04,X)
+FD/6499: CB           WAI
+FD/649A: 0B           PHD
+FD/649B: 80 FF        BRA $649C
+FD/649D: FE 3B 57     INC $573B,X
+FD/64A0: F8           SED
+FD/64A1: 00 7C        BRK $7C
+FD/64A3: 07 C2        ORA [$C2]
+FD/64A5: 07 03        ORA [$03]
+FD/64A7: 3D 02 03     AND $0302,X
+FD/64AA: 8A           TXA
+FD/64AB: 0E 05 CC     ASL $CC05
+FD/64AE: 05 0B        ORA $0B
+FD/64B0: 42 F8        WDM $F8
+FD/64B2: 3B           TSC
+FD/64B3: 1C 0A 0B     TRB $0B0A
+FD/64B6: 84 13        STY $13
+FD/64B8: 00 1C        BRK $1C
+FD/64BA: 7D 7E 06     ADC $067E,X
+FD/64BD: 02 07        COP $07
+FD/64BF: 01 C0        ORA ($C0,X)
+FD/64C1: 0B           PHD
+FD/64C2: 1E 43 81     ASL $8143,X
+FD/64C5: C7 BD        CMP [$BD]
+FD/64C7: 17 05        ORA [$05],Y
+FD/64C9: F8           SED
+FD/64CA: 05 07        ORA $07
+FD/64CC: 04 41        TSB $41
+FD/64CE: 24 BF        BIT $BF
+FD/64D0: 0E 45 F9     ASL $F945
+FD/64D3: 01 3C        ORA ($3C,X)
+FD/64D5: C1 0B        CMP ($0B,X)
+FD/64D7: 3F 82 0F 41  AND $410F82,X
+FD/64DB: 30 81        BMI $645E
+FD/64DD: 08           PHP
+FD/64DE: 38           SEC
+FD/64DF: F8           SED
+FD/64E0: C1 6B        CMP ($6B,X)
+FD/64E2: FF 23 01 03  SBC $030123,X
+FD/64E6: BD 8C 04     LDA $048C,X
+FD/64E9: 03 81        ORA $81,S
+FD/64EB: F8           SED
+FD/64EC: B6 86        LDX $86,Y
+FD/64EE: 81 1C        STA ($1C,X)
+FD/64F0: 01 09        ORA ($09,X)
+FD/64F2: 01 81        ORA ($81,X)
+FD/64F4: F8           SED
+FD/64F5: DF F7 96 42  CMP $4296F7,X
+FD/64F9: 20 06 05     JSR $0506
+FD/64FC: 40           RTI

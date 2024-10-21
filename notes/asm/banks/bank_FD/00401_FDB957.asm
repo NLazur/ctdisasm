@@ -1,0 +1,202 @@
+FD/B957: 5D B9 72     EOR $72B9,X
+FD/B95A: B9 87 B9     LDA $B987,Y
+FD/B95D: 41 2F        EOR ($2F,X)
+FD/B95F: 01 05        ORA ($05,X)
+FD/B961: 00 F1        BRK $F1
+FD/B963: 42 01        WDM $01
+FD/B965: 00 00        BRK $00
+FD/B967: 00 00        BRK $00
+FD/B969: 00 00        BRK $00
+FD/B96B: 01 00        ORA ($00,X)
+FD/B96D: 00 00        BRK $00
+FD/B96F: 00 00        BRK $00
+FD/B971: 00 41        BRK $41
+FD/B973: 2F 01 09 00  AND $000901
+FD/B977: F2 3A        SBC ($3A)
+FD/B979: 01 00        ORA ($00,X)
+FD/B97B: 00 00        BRK $00
+FD/B97D: 00 00        BRK $00
+FD/B97F: 00 01        BRK $01
+FD/B981: 00 00        BRK $00
+FD/B983: 00 00        BRK $00
+FD/B985: 00 00        BRK $00
+FD/B987: 01 00        ORA ($00,X)
+FD/B989: 00 00        BRK $00
+FD/B98B: 00 00        BRK $00
+FD/B98D: 00 01        BRK $01
+FD/B98F: 00 00        BRK $00
+FD/B991: 00 00        BRK $00
+FD/B993: 00 00        BRK $00
+FD/B995: 41 20        EOR ($20,X)
+FD/B997: 01 03        ORA ($03,X)
+FD/B999: 00 FF        BRK $FF
+FD/B99B: 28           PLP
+FD/B99C: A2 B9 DA     LDX #$DAB9
+FD/B99F: B9 12 BA     LDA $BA12,Y
+FD/B9A2: 20 03 20     JSR $2003
+FD/B9A5: 03 50        ORA $50,S
+FD/B9A7: 00 50        BRK $50
+FD/B9A9: 00 20        BRK $20
+FD/B9AB: 03 20        ORA $20,S
+FD/B9AD: 03 50        ORA $50,S
+FD/B9AF: 00 50        BRK $50
+FD/B9B1: 00 20        BRK $20
+FD/B9B3: 03 20        ORA $20,S
+FD/B9B5: 03 50        ORA $50,S
+FD/B9B7: 00 50        BRK $50
+FD/B9B9: 00 20        BRK $20
+FD/B9BB: 03 20        ORA $20,S
+FD/B9BD: 03 50        ORA $50,S
+FD/B9BF: 00 50        BRK $50
+FD/B9C1: 00 20        BRK $20
+FD/B9C3: 03 20        ORA $20,S
+FD/B9C5: 03 50        ORA $50,S
+FD/B9C7: 00 50        BRK $50
+FD/B9C9: 00 20        BRK $20
+FD/B9CB: 03 20        ORA $20,S
+FD/B9CD: 03 50        ORA $50,S
+FD/B9CF: 00 50        BRK $50
+FD/B9D1: 00 20        BRK $20
+FD/B9D3: 03 20        ORA $20,S
+FD/B9D5: 03 50        ORA $50,S
+FD/B9D7: 00 50        BRK $50
+FD/B9D9: 00 20        BRK $20
+FD/B9DB: 03 20        ORA $20,S
+FD/B9DD: 03 50        ORA $50,S
+FD/B9DF: 00 50        BRK $50
+FD/B9E1: 00 20        BRK $20
+FD/B9E3: 03 20        ORA $20,S
+FD/B9E5: 03 50        ORA $50,S
+FD/B9E7: 00 50        BRK $50
+FD/B9E9: 00 20        BRK $20
+FD/B9EB: 03 20        ORA $20,S
+FD/B9ED: 03 50        ORA $50,S
+FD/B9EF: 00 50        BRK $50
+FD/B9F1: 00 20        BRK $20
+FD/B9F3: 03 20        ORA $20,S
+FD/B9F5: 03 50        ORA $50,S
+FD/B9F7: 00 50        BRK $50
+FD/B9F9: 00 20        BRK $20
+FD/B9FB: 03 20        ORA $20,S
+FD/B9FD: 03 50        ORA $50,S
+FD/B9FF: 00 50        BRK $50
+FD/BA01: 00 20        BRK $20
+FD/BA03: 03 20        ORA $20,S
+FD/BA05: 03 50        ORA $50,S
+FD/BA07: 00 50        BRK $50
+FD/BA09: 00 20        BRK $20
+FD/BA0B: 03 20        ORA $20,S
+FD/BA0D: 03 50        ORA $50,S
+FD/BA0F: 00 50        BRK $50
+FD/BA11: 00 20        BRK $20
+FD/BA13: 03 20        ORA $20,S
+FD/BA15: 03 50        ORA $50,S
+FD/BA17: 00 50        BRK $50
+FD/BA19: 00 20        BRK $20
+FD/BA1B: 03 20        ORA $20,S
+FD/BA1D: 03 50        ORA $50,S
+FD/BA1F: 00 50        BRK $50
+FD/BA21: 00 20        BRK $20
+FD/BA23: 03 20        ORA $20,S
+FD/BA25: 03 50        ORA $50,S
+FD/BA27: 00 50        BRK $50
+FD/BA29: 00 20        BRK $20
+FD/BA2B: 03 20        ORA $20,S
+FD/BA2D: 03 50        ORA $50,S
+FD/BA2F: 00 50        BRK $50
+FD/BA31: 00 32        BRK $32
+FD/BA33: 00 20        BRK $20
+FD/BA35: 03 50        ORA $50,S
+FD/BA37: 00 50        BRK $50
+FD/BA39: 00 20        BRK $20
+FD/BA3B: 03 20        ORA $20,S
+FD/BA3D: 03 50        ORA $50,S
+FD/BA3F: 00 50        BRK $50
+FD/BA41: 00 20        BRK $20
+FD/BA43: 03 20        ORA $20,S
+FD/BA45: 03 50        ORA $50,S
+FD/BA47: 00 50        BRK $50
+FD/BA49: 00 04        BRK $04
+FD/BA4B: 04 06        TSB $06
+FD/BA4D: 00 FF        BRK $FF
+FD/BA4F: FF 04 04 04  SBC $040404,X
+FD/BA53: 02 03        COP $03
+FD/BA55: 05 04        ORA $04
+FD/BA57: 03 02        ORA $02,S
+FD/BA59: 02 04        COP $04
+FD/BA5B: 0A           ASL
+FD/BA5C: 10 03        BPL $BA61
+FD/BA5E: 0A           ASL
+FD/BA5F: 10 0C        BPL $BA6D
+FD/BA61: B1 CA        LDA ($CA),Y
+FD/BA63: EE 6C 5A     INC $5A6C
+FD/BA66: 71 2E        ADC ($2E),Y
+FD/BA68: 55 D6        EOR $D6,X
+FD/BA6A: 00 CC        BRK $CC
+FD/BA6C: 99 90 6B     STA $6B90,Y
+FD/BA6F: 7D EB 4F     ADC $4FEB,X
+FD/BA72: A0 07 AC     LDY #$AC07
+FD/BA75: DF 8A 56 9E  CMP $9E568A,X
+FD/BA79: F1 9A        SBC ($9A),Y
+FD/BA7B: 63 75        ADC $75,S
+FD/BA7D: 11 91        ORA ($91),Y
+FD/BA7F: A3 B8        LDA $B8,S
+FD/BA81: 94 73        STY $73,X
+FD/BA83: F7 54        SBC [$54],Y
+FD/BA85: D9 6E 72     CMP $726E,Y
+FD/BA88: C0 F4        CPY #$F4
+FD/BA8A: 80 DE        BRA $BA6A
+FD/BA8C: B9 BB 8D     LDA $8DBB,Y
+FD/BA8F: 66 26        ROR $26
+FD/BA91: D0 36        BNE $BAC9
+FD/BA93: E1 E9        SBC ($E9,X)
+FD/BA95: 70 DC        BVS $BA73
+FD/BA97: CD 2F 4A     CMP $4A2F
+FD/BA9A: 67 5D        ADC [$5D]
+FD/BA9C: D2 60        CMP ($60)
+FD/BA9E: B5 9D        LDA $9D,X
+FD/BAA0: 7F 45 37 50  ADC $503745,X
+FD/BAA4: 44 78 04     MVP $78,$04
+FD/BAA7: 19 2C EF     ORA $EF2C,Y
+FD/BAAA: FD 64 81     SBC $8164,X
+FD/BAAD: 03 DA        ORA $DA,S
+FD/BAAF: 95 4C        STA $4C,X
+FD/BAB1: 7A           PLY
+FD/BAB2: 0B           PHD
+FD/BAB3: AD 1F BA     LDA $BA1F
+FD/BAB6: DD 3E F9     CMP $F93E,X
+FD/BAB9: D7 1A        CMP [$1A],Y
+FD/BABB: 29 F8        AND #$F8
+FD/BABD: 18           CLC
+FD/BABE: B3 20        LDA ($20,S),Y
+FD/BAC0: F6 D1        INC $D1,X
+FD/BAC2: 5E 34 92     LSR $9234,X
+FD/BAC5: 7B           TDC
+FD/BAC6: 24 43        BIT $43
+FD/BAC8: 88           DEY
+FD/BAC9: 97 D4        STA [$D4],Y
+FD/BACB: 0F 35 AA 83  ORA $83AA35
+FD/BACF: 68           PLA
+FD/BAD0: 27 A8        AND [$A8]
+FD/BAD2: D5 BE        CMP $BE,X
+FD/BAD4: FA           PLX
+FD/BAD5: 14 31        TRB $31
+FD/BAD7: AF 10 0D D8  LDA $D80D10
+FD/BADB: 6A           ROR
+FD/BADC: CE 23 61     DEC $6123
+FD/BADF: F3 3D        SBC ($3D,S),Y
+FD/BAE1: A4 08        LDY $08
+FD/BAE3: 33 E3        AND ($E3,S),Y
+FD/BAE5: A9 38        LDA #$38
+FD/BAE7: E6 93        INC $93
+FD/BAE9: 1D 1C F0     ORA $F01C,X
+FD/BAEC: 0E 87 59     ASL $5987
+FD/BAEF: 65 82        ADC $82
+FD/BAF1: BC FF FE     LDY $FEFF,X
+FD/BAF4: 7E 8F C1     ROR $C18F,X
+FD/BAF7: 1E F5 CB     ASL $CBF5,X
+FD/BAFA: 49 02        EOR #$02
+FD/BAFC: 32 09        AND ($09)
+FD/BAFE: C4 8E        CPY $8E
+FD/BB00: C6 2B        DEC $2B
+FD/BB02: 40           RTI

@@ -1,0 +1,43 @@
+C1/AF22: E2 10        SEP #$10
+C1/AF24: 86 25        STX $25
+C1/AF26: C2 10        REP #$10
+C1/AF28: A6 2C        LDX $2C
+C1/AF2A: DA           PHX
+C1/AF2B: E2 10        SEP #$10
+C1/AF2D: A6 25        LDX $25
+C1/AF2F: E0 FF        CPX #$FF
+C1/AF31: D0 02        BNE $AF35
+C1/AF33: 80 3E        BRA $AF73
+C1/AF35: 8D 1E B3     STA $B31E
+C1/AF38: AD 89 29     LDA $2989
+C1/AF3B: 89 20        BIT #$20
+C1/AF3D: F0 03        BEQ $AF42
+C1/AF3F: 8A           TXA
+C1/AF40: 80 31        BRA $AF73
+C1/AF42: AD 1E B3     LDA $B31E
+C1/AF45: C9 00        CMP #$00
+C1/AF47: F0 2A        BEQ $AF73
+C1/AF49: C5 25        CMP $25
+C1/AF4B: F0 26        BEQ $AF73
+C1/AF4D: A6 26        LDX $26
+C1/AF4F: 38           SEC
+C1/AF50: E5 25        SBC $25
+C1/AF52: C9 FF        CMP #$FF
+C1/AF54: D0 06        BNE $AF5C
+C1/AF56: BF 61 BA FD  LDA $FDBA61,X
+C1/AF5A: 80 17        BRA $AF73
+C1/AF5C: 85 2A        STA $2A
+C1/AF5E: 64 2B        STZ $2B
+C1/AF60: BF 61 BA FD  LDA $FDBA61,X
+C1/AF64: AA           TAX
+C1/AF65: 86 28        STX $28
+C1/AF67: 64 29        STZ $29
+C1/AF69: 20 2A C9     JSR $C92A
+C1/AF6C: A5 32        LDA $32
+C1/AF6E: 18           CLC
+C1/AF6F: 65 25        ADC $25
+C1/AF71: E6 26        INC $26
+C1/AF73: C2 10        REP #$10
+C1/AF75: FA           PLX
+C1/AF76: 86 2C        STX $2C
+C1/AF78: 60           RTS

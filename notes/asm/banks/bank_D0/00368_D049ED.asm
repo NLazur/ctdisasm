@@ -1,0 +1,36 @@
+D0/49ED: 42 A0        WDM $A0
+D0/49EF: E0 00        CPX #$00
+D0/49F1: 00 00        BRK $00
+D0/49F3: 00 00        BRK $00
+D0/49F5: 00 00        BRK $00
+D0/49F7: 00 20        BRK $20
+D0/49F9: 3F 18 1F 07  AND $071F18,X
+D0/49FD: 07 00        ORA [$00]
+D0/49FF: 00 00        BRK $00
+D0/4A01: 00 00        BRK $00
+D0/4A03: 00 00        BRK $00
+D0/4A05: 00 00        BRK $00
+D0/4A07: 00 FF        BRK $FF
+D0/4A09: FF 00 FF 07  SBC $07FF00,X
+D0/4A0D: F8           SED
+D0/4A0E: FF FF 00 00  SBC $0000FF,X
+D0/4A12: 00 00        BRK $00
+D0/4A14: 00 00        BRK $00
+D0/4A16: 00 00        BRK $00
+D0/4A18: F1 0F        SBC ($0F),Y
+D0/4A1A: CC 3C E0     CPY $E03C
+D0/4A1D: E0 00        CPX #$00
+D0/4A1F: 00 00        BRK $00
+D0/4A21: 00 00        BRK $00
+D0/4A23: 00 00        BRK $00
+D0/4A25: 00 00        BRK $00
+D0/4A27: 00 05        BRK $05
+D0/4A29: 06 05        ASL $05
+D0/4A2B: 06 03        ASL $03
+D0/4A2D: 04 02        TSB $02
+D0/4A2F: 05 02        ORA $02
+D0/4A31: 05 02        ORA $02
+D0/4A33: 05 02        ORA $02
+D0/4A35: 05 01        ORA $01
+D0/4A37: 06 C0        ASL $C0
+D0/4A39: 40           RTI

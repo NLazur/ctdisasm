@@ -1,0 +1,30 @@
+D1/9A5E: 80 00        BRA $9A60
+D1/9A60: 09 01        ORA #$01
+D1/9A62: 05 05        ORA $05
+D1/9A64: 05 05        ORA $05
+D1/9A66: 06 06        ASL $06
+D1/9A68: 06 06        ASL $06
+D1/9A6A: 17 BF        ORA [$BF],Y
+D1/9A6C: 03 91        ORA $91,S
+D1/9A6E: 08           PHP
+D1/9A6F: A2 FF        LDX #$FF
+D1/9A71: AA           TAX
+D1/9A72: 00 82        BRK $82
+D1/9A74: 7F 82 7F 82  ADC $827F82,X
+D1/9A78: DF 82 D7 93  CMP $93D782,X
+D1/9A7C: 13 02        ORA ($02,S),Y
+D1/9A7E: 04 7F        TSB $7F
+D1/9A80: 9D 17 83     STA $8317,X
+D1/9A83: 3B           TSC
+D1/9A84: 00 84        BRK $84
+D1/9A86: 8E 50 19     STX $1950
+D1/9A89: 03 FF        ORA $FF,S
+D1/9A8B: 00 08        BRK $08
+D1/9A8D: 12 83        ORA ($83)
+D1/9A8F: 3B           TSC
+D1/9A90: 00 84        BRK $84
+D1/9A92: 8E 50 19     STX $1950
+D1/9A95: 03 FF        ORA $FF,S
+D1/9A97: FF 08 12 92  SBC $921208,X
+D1/9A9B: 01 8E        ORA ($8E,X)
+D1/9A9D: 40           RTI

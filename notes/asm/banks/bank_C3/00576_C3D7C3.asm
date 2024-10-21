@@ -1,0 +1,51 @@
+C3/D7C3: 72 01        ADC ($01)
+C3/D7C5: 10 CE        BPL $D795
+C3/D7C7: 39 60 0C     AND $0C60,Y
+C3/D7CA: 02 08        COP $08
+C3/D7CC: 86 3C        STX $3C
+C3/D7CE: E5 00        SBC $00
+C3/D7D0: 20 45 31     JSR $3145
+C3/D7D3: A5 49        LDA $49
+C3/D7D5: B0 51        BCS $D828
+C3/D7D7: 18           CLC
+C3/D7D8: 80 67        BRA $D841
+C3/D7DA: B6 56        LDX $56,Y
+C3/D7DC: 54 56 5F     MVN $56,$5F
+C3/D7DF: 7E 18 18     ROR $1818,X
+C3/D7E2: 00 52        BRK $52
+C3/D7E4: 4A           LSR
+C3/D7E5: FF 7F 1A 67  SBC $671A7F,X
+C3/D7E9: 52 56        EOR ($56)
+C3/D7EB: 02 EE        COP $EE
+C3/D7ED: 28           PLP
+C3/D7EE: 00 40        BRK $40
+C3/D7F0: 0C 20 0C     TSB $0C20
+C3/D7F3: EE 39 00     INC $0039
+C3/D7F6: C6 1C        DEC $1C
+C3/D7F8: 10 3A        BPL $D834
+C3/D7FA: 7D 63 2E     ADC $2E63,X
+C3/D7FD: 19 00 F6     ORA $F600,Y
+C3/D800: 25 BA        AND $BA
+C3/D802: 46 21        LSR $21
+C3/D804: 10 52        BPL $D858
+C3/D806: 4A           LSR
+C3/D807: 00 BD        BRK $BD
+C3/D809: 7B           TDC
+C3/D80A: 5A           PHY
+C3/D80B: 67 D6        ADC [$D6]
+C3/D80D: 5E E5 20     LSR $20E5,X
+C3/D810: 00 C5        BRK $C5
+C3/D812: 1C C4 1C     TRB $1CC4
+C3/D815: A4 1C        LDY $1C
+C3/D817: 84 18        STY $18
+C3/D819: 00 84        BRK $84
+C3/D81B: 10 64        BPL $D881
+C3/D81D: 10 63        BPL $D882
+C3/D81F: 10 73        BPL $D894
+C3/D821: 52 00        EOR ($00)
+C3/D823: CB           WAI
+C3/D824: 39 68 29     AND $2968,Y
+C3/D827: E3 20        SBC $20,S
+C3/D829: 31 46        AND ($46),Y
+C3/D82B: 00 7B        BRK $7B
+C3/D82D: 6B           RTL

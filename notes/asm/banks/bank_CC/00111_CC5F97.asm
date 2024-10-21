@@ -1,0 +1,284 @@
+CC/5F97: 06 D0        ASL $D0
+CC/5F99: 07 00        ORA [$00]
+CC/5F9B: CF 3C 42 01  CMP $01423C
+CC/5F9F: 26 02        ROL $02
+CC/5FA1: CA           DEX
+CC/5FA2: CB           WAI
+CC/5FA3: 08           PHP
+CC/5FA4: 00 00        BRK $00
+CC/5FA6: 00 00        BRK $00
+CC/5FA8: 00 00        BRK $00
+CC/5FAA: 00 7E        BRK $7E
+CC/5FAC: 00 00        BRK $00
+CC/5FAE: 00 BE        BRK $BE
+CC/5FB0: 00 04        BRK $04
+CC/5FB2: 0B           PHD
+CC/5FB3: 00 2D        BRK $2D
+CC/5FB5: 00 BD        BRK $BD
+CC/5FB7: BD 01 0B     LDA $0B01,X
+CC/5FBA: 00 2D        BRK $2D
+CC/5FBC: 00 BD        BRK $BD
+CC/5FBE: BD 01 7A     LDA $7A01,X
+CC/5FC1: 01 D0        ORA ($D0,X)
+CC/5FC3: 07 00        ORA [$00]
+CC/5FC5: B4 0A        LDY $0A,X
+CC/5FC7: 7A           PLY
+CC/5FC8: 01 C2        ORA ($C2,X)
+CC/5FCA: 01 00        ORA ($00,X)
+CC/5FCC: 00 0A        BRK $0A
+CC/5FCE: 00 00        BRK $00
+CC/5FD0: EE 02 00     INC $0002
+CC/5FD3: 00 00        BRK $00
+CC/5FD5: F4 01 00     PEA $0001
+CC/5FD8: 00 00        BRK $00
+CC/5FDA: 00 64        BRK $64
+CC/5FDC: 00 00        BRK $00
+CC/5FDE: 00 00        BRK $00
+CC/5FE0: 00 00        BRK $00
+CC/5FE2: 00 22        BRK $22
+CC/5FE4: 00 32        BRK $32
+CC/5FE6: 00 00        BRK $00
+CC/5FE8: CC 02 51     CPY $5102
+CC/5FEB: 00 00        BRK $00
+CC/5FED: 00 D3        BRK $D3
+CC/5FEF: 25 02        AND $02
+CC/5FF1: 20 00 2D     JSR $2D00
+CC/5FF4: 00 00        BRK $00
+CC/5FF6: 00 02        BRK $02
+CC/5FF8: 0A           ASL
+CC/5FF9: 00 3C        BRK $3C
+CC/5FFB: 00 00        BRK $00
+CC/5FFD: 00 01        BRK $01
+CC/5FFF: D8           CLD
+CC/6000: 00 00        BRK $00
+CC/6002: 00 00        BRK $00
+CC/6004: 35 06        AND $06,X
+CC/6006: 72 00        ADC ($00)
+CC/6008: B4 00        LDY $00,X
+CC/600A: 00 00        BRK $00
+CC/600C: 03 0B        ORA $0B,S
+CC/600E: 00 87        BRK $87
+CC/6010: 00 00        BRK $00
+CC/6012: 00 01        BRK $01
+CC/6014: 1A           INC
+CC/6015: 00 1E        BRK $1E
+CC/6017: 00 00        BRK $00
+CC/6019: BE 01 42     LDX $4201,Y
+CC/601C: 00 00        BRK $00
+CC/601E: 00 E5        BRK $E5
+CC/6020: E5 00        SBC $00
+CC/6022: 42 00        WDM $00
+CC/6024: 00 00        BRK $00
+CC/6026: E6 E6        INC $E6
+CC/6028: 00 7F        BRK $7F
+CC/602A: 00 C8        BRK $C8
+CC/602C: 00 00        BRK $00
+CC/602E: 00 04        BRK $04
+CC/6030: 06 00        ASL $00
+CC/6032: 4B           PHK
+CC/6033: 00 00        BRK $00
+CC/6035: 00 01        BRK $01
+CC/6037: 3A           DEC
+CC/6038: 00 46        BRK $46
+CC/603A: 00 00        BRK $00
+CC/603C: 00 02        BRK $02
+CC/603E: EA           NOP
+CC/603F: 00 FA        BRK $FA
+CC/6041: 00 00        BRK $00
+CC/6043: CA           DEX
+CC/6044: 08           PHP
+CC/6045: 3F 02 00 00  AND $000002,X
+CC/6049: 00 A3        BRK $A3
+CC/604B: 0C 12 00     TSB $0012
+CC/604E: 2D 00 00     AND $0000
+CC/6051: 00 01        BRK $01
+CC/6053: 18           CLC
+CC/6054: 00 32        BRK $32
+CC/6056: 00 00        BRK $00
+CC/6058: 00 01        BRK $01
+CC/605A: C4 01        CPY $01
+CC/605C: C2 01        REP #$01
+CC/605E: CC C3 08     CPY $08C3
+CC/6061: 6F 00 DC 00  ADC $00DC00
+CC/6065: C1 00        CMP ($00,X)
+CC/6067: 03 2F        ORA $2F,S
+CC/6069: 01 90        ORA ($90,X)
+CC/606B: 01 CA        ORA ($CA,X)
+CC/606D: 00 08        BRK $08
+CC/606F: 78           SEI
+CC/6070: 01 90        ORA ($90,X)
+CC/6072: 01 00        ORA ($00,X)
+CC/6074: CC 08 00     CPY $0008
+CC/6077: 00 00        BRK $00
+CC/6079: 00 00        BRK $00
+CC/607B: 00 00        BRK $00
+CC/607D: 0F 00 23 00  ORA $002300
+CC/6081: 00 00        BRK $00
+CC/6083: 01 DE        ORA ($DE,X)
+CC/6085: 00 00        BRK $00
+CC/6087: 00 00        BRK $00
+CC/6089: CA           DEX
+CC/608A: 07 6F        ORA [$6F]
+CC/608C: 00 00        BRK $00
+CC/608E: 00 D0        BRK $D0
+CC/6090: 00 02        BRK $02
+CC/6092: 03 00        ORA $00,S
+CC/6094: 10 00        BPL $6096
+CC/6096: BD 00 01     LDA $0100,X
+CC/6099: E8           INX
+CC/609A: 03 00        ORA $00,S
+CC/609C: 00 C1        BRK $C1
+CC/609E: C1 64        CMP ($64,X)
+CC/60A0: 00 00        BRK $00
+CC/60A2: 00 00        BRK $00
+CC/60A4: 00 00        BRK $00
+CC/60A6: 00 5E        BRK $5E
+CC/60A8: 00 00        BRK $00
+CC/60AA: 00 D0        BRK $D0
+CC/60AC: 00 03        BRK $03
+CC/60AE: 5E 00 00     LSR $0000,X
+CC/60B1: 00 D0        BRK $D0
+CC/60B3: 00 03        BRK $03
+CC/60B5: 16 00        ASL $00,X
+CC/60B7: 64 00        STZ $00
+CC/60B9: 00 C0        BRK $C0
+CC/60BB: 01 90        ORA ($90,X)
+CC/60BD: 00 64        BRK $64
+CC/60BF: 00 00        BRK $00
+CC/60C1: 00 02        BRK $02
+CC/60C3: 5C 01 26 02  JMP $022601
+CC/60C7: 00 CC        BRK $CC
+CC/60C9: 0F 0E 00 32  ORA $32000E
+CC/60CD: 00 00        BRK $00
+CC/60CF: 00 01        BRK $01
+CC/60D1: 00 00        BRK $00
+CC/60D3: 00 00        BRK $00
+CC/60D5: 00 00        BRK $00
+CC/60D7: 00 79        BRK $79
+CC/60D9: 01 8A        ORA ($8A,X)
+CC/60DB: 02 00        COP $00
+CC/60DD: 00 08        BRK $08
+CC/60DF: 21 00        AND ($00,X)
+CC/60E1: 14 00        TRB $00
+CC/60E3: 00 CB        BRK $CB
+CC/60E5: 01 2D        ORA ($2D,X)
+CC/60E7: 00 28        BRK $28
+CC/60E9: 00 00        BRK $00
+CC/60EB: 00 01        BRK $01
+CC/60ED: 48           PHA
+CC/60EE: 00 00        BRK $00
+CC/60F0: 00 E7        BRK $E7
+CC/60F2: E7 00        SBC [$00]
+CC/60F4: 48           PHA
+CC/60F5: 00 00        BRK $00
+CC/60F7: 00 E4        BRK $E4
+CC/60F9: E4 02        CPX $02
+CC/60FB: 3E 01 FA     ROL $FA01,X
+CC/60FE: 00 00        BRK $00
+CC/6100: 00 08        BRK $08
+CC/6102: 92 09        STA ($09)
+CC/6104: C4 09        CPY $09
+CC/6106: 00 91        BRK $91
+CC/6108: 78           SEI
+CC/6109: 00 00        BRK $00
+CC/610B: 00 00        BRK $00
+CC/610D: 00 8A        BRK $8A
+CC/610F: 00 6D        BRK $6D
+CC/6111: 01 52        ORA ($52,X)
+CC/6113: 03 00        ORA $00,S
+CC/6115: 00 08        BRK $08
+CC/6117: 20 00 50     JSR $5000
+CC/611A: 00 00        BRK $00
+CC/611C: 00 02        BRK $02
+CC/611E: 5C 01 8A 02  JMP $028A01
+CC/6122: 00 00        BRK $00
+CC/6124: 08           PHP
+CC/6125: 1C 00 28     TRB $2800
+CC/6128: 00 00        BRK $00
+CC/612A: C7 01        CMP [$01]
+CC/612C: 20 00 50     JSR $5000
+CC/612F: 00 00        BRK $00
+CC/6131: CC 02 71     CPY $7102
+CC/6134: 00 D2        BRK $D2
+CC/6136: 00 00        BRK $00
+CC/6138: 00 02        BRK $02
+CC/613A: 7F 00 AA 00  ADC $00AA00,X
+CC/613E: 00 00        BRK $00
+CC/6140: 02 00        COP $00
+CC/6142: 00 00        BRK $00
+CC/6144: 00 00        BRK $00
+CC/6146: 00 00        BRK $00
+CC/6148: 7E 01 20     ROR $2001,X
+CC/614B: 03 00        ORA $00,S
+CC/614D: 00 08        BRK $08
+CC/614F: 7B           TDC
+CC/6150: 00 00        BRK $00
+CC/6152: 00 D1        BRK $D1
+CC/6154: 62 02 7B     PER $CCDC59
+CC/6157: 00 00        BRK $00
+CC/6159: 00 D1        BRK $D1
+CC/615B: 00 03        BRK $03
+CC/615D: 93 00        STA ($00,S),Y
+CC/615F: 00 00        BRK $00
+CC/6161: D1 08        CMP ($08),Y
+CC/6163: 02 16        COP $16
+CC/6165: 00 37        BRK $37
+CC/6167: 00 C0        BRK $C0
+CC/6169: 00 01        BRK $01
+CC/616B: CC 00 C2     CPY $C200
+CC/616E: 01 00        ORA ($00,X)
+CC/6170: 92 05        STA ($05)
+CC/6172: 2C 01 20     BIT $2001
+CC/6175: 03 00        ORA $00,S
+CC/6177: 93 08        STA ($08,S),Y
+CC/6179: 2C 01 20     BIT $2001
+CC/617C: 03 00        ORA $00,S
+CC/617E: C3 08        CMP $08,S
+CC/6180: DC 05 00     JMP [$0005]
+CC/6183: 00 C1        BRK $C1
+CC/6185: C1 64        CMP ($64,X)
+CC/6187: BC 01 00     LDY $0001,X
+CC/618A: 00 00        BRK $00
+CC/618C: C4 08        CPY $08
+CC/618E: 00 00        BRK $00
+CC/6190: 00 00        BRK $00
+CC/6192: 00 00        BRK $00
+CC/6194: 00 81        BRK $81
+CC/6196: 00 00        BRK $00
+CC/6198: 00 D3        BRK $D3
+CC/619A: 00 03        BRK $03
+CC/619C: F1 02        SBC ($02),Y
+CC/619E: E2 04        SEP #$04
+CC/61A0: CB           WAI
+CC/61A1: 9E 0A 24     STZ $240A,X
+CC/61A4: 03 4C        ORA $4C,S
+CC/61A6: 04 CC        TSB $CC
+CC/61A8: CE 08 12     DEC $1208
+CC/61AB: 00 00        BRK $00
+CC/61AD: 00 00        BRK $00
+CC/61AF: 00 01        BRK $01
+CC/61B1: 33 00        AND ($00,S),Y
+CC/61B3: 46 00        LSR $00
+CC/61B5: 00 00        BRK $00
+CC/61B7: 02 30        COP $30
+CC/61B9: 00 00        BRK $00
+CC/61BB: 00 D2        BRK $D2
+CC/61BD: 00 02        BRK $02
+CC/61BF: 16 00        ASL $00,X
+CC/61C1: 32 00        AND ($00)
+CC/61C3: BD 00 01     LDA $0100,X
+CC/61C6: 21 00        AND ($00,X)
+CC/61C8: 3C 00 00     BIT $0000,X
+CC/61CB: BF 01 DD 01  LDA $01DD01,X
+CC/61CF: 20 03 CB     JSR $CB03
+CC/61D2: C3 08        CMP $08,S
+CC/61D4: 1A           INC
+CC/61D5: 00 00        BRK $00
+CC/61D7: 00 C6        BRK $C6
+CC/61D9: 00 01        BRK $01
+CC/61DB: 03 00        ORA $00,S
+CC/61DD: 0F 00 00 00  ORA $000000
+CC/61E1: 01 52        ORA ($52,X)
+CC/61E3: 03 20        ORA $20,S
+CC/61E5: 03 C3        ORA $C3,S
+CC/61E7: 6B           RTL

@@ -1,0 +1,36 @@
+C2/1DE7: 9B           TXY
+C2/1DE8: FE 02 00     INC $0002,X
+C2/1DEB: BE 32 00     LDX $0032,Y
+C2/1DEE: FE 20 0B     INC $0B20,X
+C2/1DF1: BB           TYX
+C2/1DF2: BD 32 00     LDA $0032,X
+C2/1DF5: C2 20        REP #$20
+C2/1DF7: 0A           ASL
+C2/1DF8: 0A           ASL
+C2/1DF9: 0A           ASL
+C2/1DFA: 0A           ASL
+C2/1DFB: 0A           ASL
+C2/1DFC: 69 20 09     ADC #$0920
+C2/1DFF: 8D 81 21     STA $2181
+C2/1E02: BD 35 00     LDA $0035,X
+C2/1E05: 85 10        STA $10
+C2/1E07: 7B           TDC
+C2/1E08: E2 20        SEP #$20
+C2/1E0A: A9 00        LDA #$00
+C2/1E0C: 8D 83 21     STA $2183
+C2/1E0F: BD 37 00     LDA $0037,X
+C2/1E12: 85 12        STA $12
+C2/1E14: A0 00 00     LDY #$0000
+C2/1E17: A2 10 00     LDX #$0010
+C2/1E1A: B7 10        LDA [$10],Y
+C2/1E1C: 8D 80 21     STA $2180
+C2/1E1F: C8           INY
+C2/1E20: B7 10        LDA [$10],Y
+C2/1E22: 8D 80 21     STA $2180
+C2/1E25: C8           INY
+C2/1E26: CA           DEX
+C2/1E27: D0 F1        BNE $1E1A
+C2/1E29: A9 02        LDA #$02
+C2/1E2B: 04 4C        TSB $4C
+C2/1E2D: 18           CLC
+C2/1E2E: 60           RTS

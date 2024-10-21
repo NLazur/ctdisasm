@@ -1,0 +1,158 @@
+CC/38D8: FF 40 17 41  SBC $411740,X
+CC/38DC: 29 41        AND #$41
+CC/38DE: 3F 41 51 41  AND $415141,X
+CC/38E2: 68           PLA
+CC/38E3: 41 7F        EOR ($7F,X)
+CC/38E5: 41 91        EOR ($91,X)
+CC/38E7: 41 A4        EOR ($A4,X)
+CC/38E9: 41 B5        EOR ($B5,X)
+CC/38EB: 41 BC        EOR ($BC,X)
+CC/38ED: 41 C3        EOR ($C3,X)
+CC/38EF: 41 CA        EOR ($CA,X)
+CC/38F1: 41 FF        EOR ($FF,X)
+CC/38F3: FF FF FF FF  SBC $FFFFFF,X
+CC/38F7: FF FF FF FF  SBC $FFFFFF,X
+CC/38FB: FF FF FF FF  SBC $FFFFFF,X
+CC/38FF: FF FF FF FF  SBC $FFFFFF,X
+CC/3903: FF 00 02 24  SBC $240200,X
+CC/3907: 43 93        EOR $93,S
+CC/3909: BF BD C7 D9  LDA $D9C7BD,X
+CC/390D: B5 AD        LDA $AD,X
+CC/390F: DB           STP
+CC/3910: 02 6D        COP $6D
+CC/3912: CB           WAI
+CC/3913: 8D DB 00     STA $00DB
+CC/3916: 8B           PHB
+CC/3917: BD AD 9F     LDA $9FAD,X
+CC/391A: A1 CB        LDA ($CB,X)
+CC/391C: 02 24        COP $24
+CC/391E: 41 2F        EOR ($2F,X)
+CC/3920: 01 D7        ORA ($D7,X)
+CC/3922: 01 97        ORA ($97,X)
+CC/3924: ED 01 A2     SBC $A201
+CC/3927: 00 02        BRK $02
+CC/3929: 6D 02 EC     ADC $EC02
+CC/392C: 01 4E        ORA ($4E,X)
+CC/392E: B5 8B        LDA $8B,X
+CC/3930: BF B3 D9 BB  LDA $BBD9B3,X
+CC/3934: 12 33        ORA ($33)
+CC/3936: ED 01 A2     SBC $A201
+CC/3939: 00 02        BRK $02
+CC/393B: 6D 02 EC     ADC $EC02
+CC/393E: 01 4E        ORA ($4E,X)
+CC/3940: B5 8D        LDA $8D,X
+CC/3942: D9 93 BF     CMP $BF93,Y
+CC/3945: 75 02        ADC $02,X
+CC/3947: FF 5E D2 E5  SBC $E5D25E,X
+CC/394B: 56 00        LSR $00,X
+CC/394D: 02 6D        COP $6D
+CC/394F: 01 E4        ORA ($E4,X)
+CC/3951: 01 4E        ORA ($4E,X)
+CC/3953: B5 8B        LDA $8B,X
+CC/3955: BF B3 D9 BB  LDA $BBD9B3,X
+CC/3959: 12 33        ORA ($33)
+CC/395B: ED 01 A2     SBC $A201
+CC/395E: 00 02        BRK $02
+CC/3960: 2E 01 1B     ROL $1B01
+CC/3963: 02 EC        COP $EC
+CC/3965: 01 4E        ORA ($4E,X)
+CC/3967: BB           TYX
+CC/3968: 01 17        ORA ($17,X)
+CC/396A: 01 ED        ORA ($ED,X)
+CC/396C: 01 77        ORA ($77,X)
+CC/396E: 01 B3        ORA ($B3,X)
+CC/3970: CB           WAI
+CC/3971: B3 B1        LDA ($B1,S),Y
+CC/3973: 99 00 02     STA $0200,Y
+CC/3976: 6D 02 EC     ADC $EC02
+CC/3979: 01 4E        ORA ($4E,X)
+CC/397B: B5 77        LDA $77,X
+CC/397D: 01 53        ORA ($53,X)
+CC/397F: 01 87        ORA ($87,X)
+CC/3981: 01 D7        ORA ($D7,X)
+CC/3983: 01 97        ORA ($97,X)
+CC/3985: 00 02        BRK $02
+CC/3987: 6D 01 E4     ADC $E401
+CC/398A: 01 4E        ORA ($4E,X)
+CC/398C: B5 9B        LDA $9B,X
+CC/398E: AD B3 DB     LDA $DBB3
+CC/3991: 01 55        ORA ($55,X)
+CC/3993: 01 34        ORA ($34,X)
+CC/3995: 12 33        ORA ($33)
+CC/3997: ED 01 A2     SBC $A201
+CC/399A: 00 02        BRK $02
+CC/399C: 2E 01 1B     ROL $1B01
+CC/399F: 02 EC        COP $EC
+CC/39A1: 01 4E        ORA ($4E,X)
+CC/39A3: B5 F6        LDA $F6,X
+CC/39A5: F8           SED
+CC/39A6: 01 54        ORA ($54,X)
+CC/39A8: 01 D4        ORA ($D4,X)
+CC/39AA: ED 02 70     SBC $7002
+CC/39AD: 00 02        BRK $02
+CC/39AF: 6D 02 EC     ADC $EC02
+CC/39B2: 01 4E        ORA ($4E,X)
+CC/39B4: CB           WAI
+CC/39B5: 93 C9        STA ($C9,S),Y
+CC/39B7: D7 C9        CMP [$C9],Y
+CC/39B9: 95 9B        STA $9B,X
+CC/39BB: DB           STP
+CC/39BC: 00 02        BRK $02
+CC/39BE: 6D 02 EC     ADC $EC02
+CC/39C1: 01 4E        ORA ($4E,X)
+CC/39C3: B5 02        LDA $02,X
+CC/39C5: F9 BB 12     SBC $12BB,Y
+CC/39C8: 33 ED        AND ($ED,S),Y
+CC/39CA: 01 DA        ORA ($DA,X)
+CC/39CC: 00 02        BRK $02
+CC/39CE: 2E 01 1B     ROL $1B01
+CC/39D1: 02 EC        COP $EC
+CC/39D3: 01 4E        ORA ($4E,X)
+CC/39D5: B5 F6        LDA $F6,X
+CC/39D7: F8           SED
+CC/39D8: 01 54        ORA ($54,X)
+CC/39DA: 01 D4        ORA ($D4,X)
+CC/39DC: ED 01 23     SBC $2301
+CC/39DF: 00 02        BRK $02
+CC/39E1: 2E 01 1B     ROL $1B01
+CC/39E4: 02 EC        COP $EC
+CC/39E6: 01 4E        ORA ($4E,X)
+CC/39E8: BB           TYX
+CC/39E9: 01 03        ORA ($03,X)
+CC/39EB: 01 52        ORA ($52,X)
+CC/39ED: 01 3C        ORA ($3C,X)
+CC/39EF: A1 01        LDA ($01,X)
+CC/39F1: 0C 01 14     TSB $1401
+CC/39F4: CB           WAI
+CC/39F5: 74 ED        STZ $ED,X
+CC/39F7: 75 00        ADC $00,X
+CC/39F9: 02 6D        COP $6D
+CC/39FB: 01 E4        ORA ($E4,X)
+CC/39FD: 01 4E        ORA ($4E,X)
+CC/39FF: B5 02        LDA $02,X
+CC/3A01: F9 BB 12     SBC $12BB,Y
+CC/3A04: 33 ED        AND ($ED,S),Y
+CC/3A06: 01 DA        ORA ($DA,X)
+CC/3A08: 00 0D        BRK $0D
+CC/3A0A: 3B           TSC
+CC/3A0B: 0E 3B 21     ASL $213B
+CC/3A0E: 3B           TSC
+CC/3A0F: 2B           PLD
+CC/3A10: 3B           TSC
+CC/3A11: 39 3B 43     AND $433B,Y
+CC/3A14: 3B           TSC
+CC/3A15: 52 3B        EOR ($3B)
+CC/3A17: 64 3B        STZ $3B
+CC/3A19: 7E 3B 96     ROR $963B,X
+CC/3A1C: 3B           TSC
+CC/3A1D: A7 3B        LDA [$3B]
+CC/3A1F: B2 3B        LDA ($3B)
+CC/3A21: C3 3B        CMP $3B,S
+CC/3A23: D0 3B        BNE $3A60
+CC/3A25: E7 3B        SBC [$3B]
+CC/3A27: FE 3B 0C     INC $0C3B,X
+CC/3A2A: 3C 1E 3C     BIT $3C1E,X
+CC/3A2D: 31 3C        AND ($3C),Y
+CC/3A2F: 41 3C        EOR ($3C,X)
+CC/3A31: 55 3C        EOR $3C,X
+CC/3A33: 6B           RTL

@@ -1,0 +1,25 @@
+D0/257D: E0 9C        CPX #$9C
+D0/257F: 7C F3 0F     JMP ($0FF3,X)
+D0/2582: FF 00 F8 07  SBC $07F800,X
+D0/2586: C7 3F        CMP [$3F]
+D0/2588: 00 00        BRK $00
+D0/258A: 00 00        BRK $00
+D0/258C: 00 00        BRK $00
+D0/258E: 00 00        BRK $00
+D0/2590: E0 E0        CPX #$E0
+D0/2592: 1F FF F0 F0  ORA $F0F0FF,X
+D0/2596: 00 00        BRK $00
+D0/2598: 00 00        BRK $00
+D0/259A: 00 00        BRK $00
+D0/259C: 00 00        BRK $00
+D0/259E: 00 00        BRK $00
+D0/25A0: 00 00        BRK $00
+D0/25A2: 01 01        ORA ($01,X)
+D0/25A4: 02 03        COP $03
+D0/25A6: 04 07        TSB $07
+D0/25A8: 03 03        ORA $03,S
+D0/25AA: 0C 0C 38     TSB $380C
+D0/25AD: 38           SEC
+D0/25AE: 50 70        BVC $2620
+D0/25B0: A0 E0        LDY #$E0
+D0/25B2: 40           RTI

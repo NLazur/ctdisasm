@@ -1,0 +1,19 @@
+C2/EF97: 08           PHP
+C2/EF98: E2 20        SEP #$20
+C2/EF9A: 24 88        BIT $88
+C2/EF9C: 30 12        BMI $EFB0
+C2/EF9E: C9 FF        CMP #$FF
+C2/EFA0: D0 0E        BNE $EFB0
+C2/EFA2: EB           XBA
+C2/EFA3: A9 FF        LDA #$FF
+C2/EFA5: 9F C0 FF 7D  STA $7DFFC0,X
+C2/EFA9: A5 7E        LDA $7E
+C2/EFAB: 9F C1 FF 7D  STA $7DFFC1,X
+C2/EFAF: EB           XBA
+C2/EFB0: 9F 00 00 7E  STA $7E0000,X
+C2/EFB4: A5 7E        LDA $7E
+C2/EFB6: 9F 01 00 7E  STA $7E0001,X
+C2/EFBA: E8           INX
+C2/EFBB: E8           INX
+C2/EFBC: 28           PLP
+C2/EFBD: 60           RTS

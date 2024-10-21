@@ -1,0 +1,18 @@
+C0/2F71: BB           TYX
+C0/2F72: E8           INX
+C0/2F73: BF 01 20 7F  LDA $7F2001,X
+C0/2F77: A6 6D        LDX $6D
+C0/2F79: 9D 01 13     STA $1301,X
+C0/2F7C: 9E 81 16     STZ $1681,X
+C0/2F7F: 9E 01 16     STZ $1601,X
+C0/2F82: BD 80 17     LDA $1780,X
+C0/2F85: D0 05        BNE $2F8C
+C0/2F87: A9 FF        LDA #$FF
+C0/2F89: 9D 80 16     STA $1680,X
+C0/2F8C: A9 03        LDA #$03
+C0/2F8E: 9D 80 17     STA $1780,X
+C0/2F91: BB           TYX
+C0/2F92: E8           INX
+C0/2F93: E8           INX
+C0/2F94: 18           CLC
+C0/2F95: 60           RTS

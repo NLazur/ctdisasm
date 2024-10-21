@@ -1,0 +1,21 @@
+C1/EB1C: 7B           TDC
+C1/EB1D: A9 03        LDA #$03
+C1/EB1F: AA           TAX
+C1/EB20: 86 2A        STX $2A
+C1/EB22: AD CC B2     LDA $B2CC
+C1/EB25: AA           TAX
+C1/EB26: 86 28        STX $28
+C1/EB28: 20 0B C9     JSR $C90B
+C1/EB2B: A6 2C        LDX $2C
+C1/EB2D: BF 06 2A CC  LDA $CC2A06,X
+C1/EB31: 85 1C        STA $1C
+C1/EB33: A6 2C        LDX $2C
+C1/EB35: BF 07 2A CC  LDA $CC2A07,X
+C1/EB39: 85 1E        STA $1E
+C1/EB3B: A6 2C        LDX $2C
+C1/EB3D: BF 05 2A CC  LDA $CC2A05,X
+C1/EB41: 85 20        STA $20
+C1/EB43: 0A           ASL
+C1/EB44: AA           TAX
+C1/EB45: FC 61 FA     JSR ($FA61,X)
+C1/EB48: 60           RTS

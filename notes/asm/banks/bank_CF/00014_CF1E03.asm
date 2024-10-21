@@ -1,0 +1,24 @@
+CF/1E03: C0 00 08     CPY #$0800
+CF/1E06: 06 0E        ASL $0E
+CF/1E08: 0E 08 9F     ASL $9F08
+CF/1E0B: 11 FF        ORA ($FF),Y
+CF/1E0D: 22 FD 00 08  JSR $0800FD
+CF/1E11: 0C 00 08     TSB $0800
+CF/1E14: 00 00        BRK $00
+CF/1E16: 00 00        BRK $00
+CF/1E18: 00 00        BRK $00
+CF/1E1A: 00 00        BRK $00
+CF/1E1C: 00 00        BRK $00
+CF/1E1E: 00 00        BRK $00
+CF/1E20: 00 00        BRK $00
+CF/1E22: 00 00        BRK $00
+CF/1E24: 00 40        BRK $40
+CF/1E26: 00 A0        BRK $A0
+CF/1E28: 00 10        BRK $10
+CF/1E2A: 28           PLP
+CF/1E2B: 38           SEC
+CF/1E2C: 3F 27 3F 00  AND $003F27,X
+CF/1E30: 03 02        ORA $02,S
+CF/1E32: 07 05        ORA [$05]
+CF/1E34: 1E 12 7C     ASL $7C12,X
+CF/1E37: 40           RTI

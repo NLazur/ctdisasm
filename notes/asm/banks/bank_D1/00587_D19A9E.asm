@@ -1,0 +1,115 @@
+D1/9A9E: 19 03 FF     ORA $FF03,Y
+D1/9AA1: 00 08        BRK $08
+D1/9AA3: 12 91        ORA ($91)
+D1/9AA5: 71 9A        ADC ($9A),Y
+D1/9AA7: B9 0B C3     LDA $C30B,Y
+D1/9AAA: 81 03        STA ($03,X)
+D1/9AAC: 85 12        STA $12
+D1/9AAE: 01 86        ORA ($86,X)
+D1/9AB0: 91 08        STA ($08),Y
+D1/9AB2: A2 FF        LDX #$FF
+D1/9AB4: 01 87        ORA ($87,X)
+D1/9AB6: 0A           ASL
+D1/9AB7: 80 04        BRA $9ABD
+D1/9AB9: 83 07        STA $07,S
+D1/9ABB: 82 DF 84     BRL $D11F9D
+D1/9ABE: DE 01 00     DEC $0001,X
+D1/9AC1: 9D 17 83     STA $8317,X
+D1/9AC4: 6F 82 21 B3  ADC $B32182
+D1/9AC8: 64 7F        STZ $7F
+D1/9ACA: 84 83        STY $83
+D1/9ACC: 07 82        ORA [$82]
+D1/9ACE: 20 B3 64     JSR $64B3
+D1/9AD1: 7F 84 83 07  ADC $078384,X
+D1/9AD5: 82 20 B3     BRL $D14DF8
+D1/9AD8: 64 7F        STZ $7F
+D1/9ADA: B3 64        LDA ($64,S),Y
+D1/9ADC: 7F 84 83 07  ADC $078384,X
+D1/9AE0: 82 20 B3     BRL $D14E03
+D1/9AE3: 64 7F        STZ $7F
+D1/9AE5: B3 64        LDA ($64,S),Y
+D1/9AE7: 7F B3 64 7F  ADC $7F64B3,X
+D1/9AEB: 84 83        STY $83
+D1/9AED: 07 82        ORA [$82]
+D1/9AEF: 20 B3 64     JSR $64B3
+D1/9AF2: 7F B3 64 7F  ADC $7F64B3,X
+D1/9AF6: B3 64        LDA ($64,S),Y
+D1/9AF8: 7F B3 64 7F  ADC $7F64B3,X
+D1/9AFC: B3 64        LDA ($64,S),Y
+D1/9AFE: 7F B3 64 7F  ADC $7F64B3,X
+D1/9B02: 84 83        STY $83
+D1/9B04: 14 B3        TRB $B3
+D1/9B06: 64 7F        STZ $7F
+D1/9B08: 84 83        STY $83
+D1/9B0A: 3F 82 C3 B3  AND $B3C382,X
+D1/9B0E: 64 7F        STZ $7F
+D1/9B10: 84 DE        STY $DE
+D1/9B12: 00 91        BRK $91
+D1/9B14: 08           PHP
+D1/9B15: A2 87        LDX #$87
+D1/9B17: 02 FF        COP $FF
+D1/9B19: 01 98        ORA ($98,X)
+D1/9B1B: 10 95        BPL $9AB2
+D1/9B1D: 0F 93 13 02  ORA $021393
+D1/9B21: 04 88        TSB $88
+D1/9B23: 00 00        BRK $00
+D1/9B25: 8A           TXA
+D1/9B26: 01 80        ORA ($80,X)
+D1/9B28: 70 00        BVS $9B2A
+D1/9B2A: 9D 17 DE     STA $DE17,X
+D1/9B2D: 01 91        ORA ($91,X)
+D1/9B2F: 4B           PHK
+D1/9B30: 9B           TXY
+D1/9B31: 91 4B        STA ($4B),Y
+D1/9B33: 9B           TXY
+D1/9B34: 8E 50 19     STX $1950
+D1/9B37: 03 FF        ORA $FF,S
+D1/9B39: 00 10        BRK $10
+D1/9B3B: 12 91        ORA ($91)
+D1/9B3D: 4B           PHK
+D1/9B3E: 9B           TXY
+D1/9B3F: DE 00 88     DEC $8800,X
+D1/9B42: 00 7F        BRK $7F
+D1/9B44: 88           DEY
+D1/9B45: 00 7F        BRK $7F
+D1/9B47: 91 08        STA ($08),Y
+D1/9B49: A2 FF        LDX #$FF
+D1/9B4B: 8A           TXA
+D1/9B4C: 30 80        BMI $9ACE
+D1/9B4E: 70 0F        BVS $9B5F
+D1/9B50: 83 08        STA $08,S
+D1/9B52: 88           DEY
+D1/9B53: 00 89        BRK $89
+D1/9B55: 00 00        BRK $00
+D1/9B57: 00 08        BRK $08
+D1/9B59: 8B           PHB
+D1/9B5A: 00 B2        BRK $B2
+D1/9B5C: 01 7F        ORA ($7F,X)
+D1/9B5E: 89 01        BIT #$01
+D1/9B60: 00 00        BRK $00
+D1/9B62: 02 8B        COP $8B
+D1/9B64: 01 7F        ORA ($7F,X)
+D1/9B66: 84 88        STY $88
+D1/9B68: 00 89        BRK $89
+D1/9B6A: 00 00        BRK $00
+D1/9B6C: 00 F0        BRK $F0
+D1/9B6E: 8B           PHB
+D1/9B6F: 00 B2        BRK $B2
+D1/9B71: 01 7F        ORA ($7F,X)
+D1/9B73: 89 01        BIT #$01
+D1/9B75: 00 00        BRK $00
+D1/9B77: 02 8B        COP $8B
+D1/9B79: 01 7F        ORA ($7F,X)
+D1/9B7B: 88           DEY
+D1/9B7C: 00 89        BRK $89
+D1/9B7E: 00 00        BRK $00
+D1/9B80: 00 F0        BRK $F0
+D1/9B82: 8B           PHB
+D1/9B83: 00 B2        BRK $B2
+D1/9B85: 01 7F        ORA ($7F,X)
+D1/9B87: 89 01        BIT #$01
+D1/9B89: 00 00        BRK $00
+D1/9B8B: 02 8B        COP $8B
+D1/9B8D: 01 7F        ORA ($7F,X)
+D1/9B8F: 8A           TXA
+D1/9B90: 40           RTI

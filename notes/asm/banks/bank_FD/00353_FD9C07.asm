@@ -1,0 +1,38 @@
+FD/9C07: 00 44        BRK $44
+FD/9C09: FF B2 00 57  SBC $5700B2,X
+FD/9C0D: 00 B0        BRK $B0
+FD/9C0F: 00 AA        BRK $AA
+FD/9C11: 5C 04 00 62  JMP $620004
+FD/9C15: 08           PHP
+FD/9C16: 00 6A        BRK $6A
+FD/9C18: 0C 00 68     TSB $6800
+FD/9C1B: 10 00        BPL $9C1D
+FD/9C1D: 0A           ASL
+FD/9C1E: 6C 14 00     JMP ($0014)
+FD/9C21: 6D 18 00     ADC $0018
+FD/9C24: 82 4C 8D     BRL $FD2973
+FD/9C27: 80 00        BRA $9C29
+FD/9C29: 04 40        TSB $40
+FD/9C2B: 0A           ASL
+FD/9C2C: B4 00        LDY $00,X
+FD/9C2E: B2 B7        LDA ($B7)
+FD/9C30: 05 00        ORA $00
+FD/9C32: 08           PHP
+FD/9C33: 1D AA 07     ORA $07AA,X
+FD/9C36: E8           INX
+FD/9C37: 41 BB        EOR ($BB,X)
+FD/9C39: 06 00        ASL $00
+FD/9C3B: B4 17        LDY $17,X
+FD/9C3D: 00 82        BRK $82
+FD/9C3F: 0E 8D 80     ASL $808D
+FD/9C42: 02 29        COP $29
+FD/9C44: 17 10        ORA [$10],Y
+FD/9C46: BB           TYX
+FD/9C47: 09 0D 10     ORA #$100D
+FD/9C4A: 06 0D        ASL $0D
+FD/9C4C: 18           CLC
+FD/9C4D: 08           PHP
+FD/9C4E: 00 80        BRK $80
+FD/9C50: 82 A8 8D     BRL $FD29FB
+FD/9C53: 80 09        BRA $9C5E
+FD/9C55: 60           RTS

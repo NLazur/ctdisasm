@@ -1,0 +1,27 @@
+C2/2105: 7B           TDC
+C2/2106: BD 02 00     LDA $0002,X
+C2/2109: 0A           ASL
+C2/210A: AA           TAX
+C2/210B: 7C 0E 21     JMP ($210E,X)
+C2/210E: 16 21        ASL $21,X
+C2/2110: 52 21        EOR ($21)
+C2/2112: 6F 21 8D 21  ADC $218D21
+C2/2116: AD F6 1B     LDA $1BF6
+C2/2119: D0 72        BNE $218D
+C2/211B: A9 01        LDA #$01
+C2/211D: 0C F6 1B     TSB $1BF6
+C2/2120: A6 4E        LDX $4E
+C2/2122: BC 07 00     LDY $0007,X
+C2/2125: 84 10        STY $10
+C2/2127: BD 09 00     LDA $0009,X
+C2/212A: 85 12        STA $12
+C2/212C: A0 01 00     LDY #$0001
+C2/212F: B7 10        LDA [$10],Y
+C2/2131: D0 0D        BNE $2140
+C2/2133: 64 1C        STZ $1C
+C2/2135: A9 0F        LDA #$0F
+C2/2137: 85 1D        STA $1D
+C2/2139: A9 03        LDA #$03
+C2/213B: 9D 02 00     STA $0002,X
+C2/213E: 18           CLC
+C2/213F: 60           RTS

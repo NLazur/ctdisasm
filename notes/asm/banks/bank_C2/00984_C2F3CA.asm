@@ -1,0 +1,42 @@
+C2/F3CA: 0B           PHD
+C2/F3CB: 08           PHP
+C2/F3CC: F4 00 18     PEA $1800
+C2/F3CF: 2B           PLD
+C2/F3D0: 9C 22 00     STZ $0022
+C2/F3D3: E2 30        SEP #$30
+C2/F3D5: AD 22 00     LDA $0022
+C2/F3D8: 85 00        STA $00
+C2/F3DA: 0A           ASL
+C2/F3DB: AA           TAX
+C2/F3DC: BF 48 F5 C2  LDA $C2F548,X
+C2/F3E0: 85 19        STA $19
+C2/F3E2: BF 49 F5 C2  LDA $C2F549,X
+C2/F3E6: 85 1A        STA $1A
+C2/F3E8: 64 11        STZ $11
+C2/F3EA: A9 01        LDA #$01
+C2/F3EC: 85 17        STA $17
+C2/F3EE: 20 22 F4     JSR $F422
+C2/F3F1: 20 9D F6     JSR $F69D
+C2/F3F4: EE 22 00     INC $0022
+C2/F3F7: C2 21        REP #$21
+C2/F3F9: 7B           TDC
+C2/F3FA: 69 40 00     ADC #$0040
+C2/F3FD: 5B           TCD
+C2/F3FE: C9 C0 19     CMP #$19C0
+C2/F401: 90 D0        BCC $F3D3
+C2/F403: AF 56 F5 C2  LDA $C2F556
+C2/F407: 85 19        STA $19
+C2/F409: E2 20        SEP #$20
+C2/F40B: A9 FF        LDA #$FF
+C2/F40D: 85 00        STA $00
+C2/F40F: 64 11        STZ $11
+C2/F411: A9 01        LDA #$01
+C2/F413: 85 17        STA $17
+C2/F415: A9 FF        LDA #$FF
+C2/F417: 85 40        STA $40
+C2/F419: 64 51        STZ $51
+C2/F41B: A9 01        LDA #$01
+C2/F41D: 85 57        STA $57
+C2/F41F: 28           PLP
+C2/F420: 2B           PLD
+C2/F421: 60           RTS

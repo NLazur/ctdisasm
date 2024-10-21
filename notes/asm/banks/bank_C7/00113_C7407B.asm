@@ -1,0 +1,646 @@
+C7/407B: 48           PHA
+C7/407C: 30 20        BMI $409E
+C7/407E: 24 18        BIT $18
+C7/4080: 10 0C        BPL $408E
+C7/4082: 08           PHP
+C7/4083: 06 04        ASL $04
+C7/4085: 03 EB        ORA $EB,S
+C7/4087: 02 00        COP $00
+C7/4089: 00 00        BRK $00
+C7/408B: 00 00        BRK $00
+C7/408D: 00 00        BRK $00
+C7/408F: 00 C2        BRK $C2
+C7/4091: 77 77        ADC [$77],Y
+C7/4093: 77 77        ADC [$77],Y
+C7/4095: 77 77        ADC [$77],Y
+C7/4097: 77 77        ADC [$77],Y
+C7/4099: C2 77        REP #$77
+C7/409B: 77 77        ADC [$77],Y
+C7/409D: 77 77        ADC [$77],Y
+C7/409F: 77 77        ADC [$77],Y
+C7/40A1: 77 C2        ADC [$C2],Y
+C7/40A3: 77 77        ADC [$77],Y
+C7/40A5: 77 77        ADC [$77],Y
+C7/40A7: 77 77        ADC [$77],Y
+C7/40A9: 77 77        ADC [$77],Y
+C7/40AB: C3 77        CMP $77,S
+C7/40AD: 77 77        ADC [$77],Y
+C7/40AF: 77 77        ADC [$77],Y
+C7/40B1: 77 77        ADC [$77],Y
+C7/40B3: 77 01        ADC [$01],Y
+C7/40B5: 02 02        COP $02
+C7/40B7: 00 00        BRK $00
+C7/40B9: 00 00        BRK $00
+C7/40BB: 00 00        BRK $00
+C7/40BD: 00 00        BRK $00
+C7/40BF: 8A           TXA
+C7/40C0: 34 44        BIT $44,X
+C7/40C2: 44 54 33     MVP $54,$33
+C7/40C5: 54 44 43     MVN $44,$43
+C7/40C8: 96 7C        STX $7C,Y
+C7/40CA: CC CC CC     CPY $CCCC
+C7/40CD: CC CC CC     CPY $CCCC
+C7/40D0: CC 8B DC     CPY $DC8B
+C7/40D3: CB           WAI
+C7/40D4: CC DC CC     CPY $CCDC
+C7/40D7: CC CC CD     CPY $CDCC
+C7/40DA: 02 00        COP $00
+C7/40DC: 00 00        BRK $00
+C7/40DE: 00 00        BRK $00
+C7/40E0: 00 00        BRK $00
+C7/40E2: 00 96        BRK $96
+C7/40E4: 01 43        ORA ($43,X)
+C7/40E6: 34 44        BIT $44,X
+C7/40E8: 33 33        AND ($33,S),Y
+C7/40EA: 34 43        BIT $43,X
+C7/40EC: 8A           TXA
+C7/40ED: 35 42        AND $42,X
+C7/40EF: 34 43        BIT $43,X
+C7/40F1: 33 43        AND ($43,S),Y
+C7/40F3: 43 43        EOR $43,S
+C7/40F5: D2 33        CMP ($33)
+C7/40F7: 33 33        AND ($33,S),Y
+C7/40F9: 34 1D        BIT $1D,X
+C7/40FB: DC CC CC     JMP [$CCCC]
+C7/40FE: 86 4D        STX $4D
+C7/4100: D9 99 99     CMP $9999,Y
+C7/4103: AA           TAX
+C7/4104: 99 99 99     STA $9999,Y
+C7/4107: 86 99        STX $99
+C7/4109: AA           TAX
+C7/410A: 99 99 9A     STA $9A99,Y
+C7/410D: A9 99 99     LDA #$9999
+C7/4110: 96 DD        STX $DD,Y
+C7/4112: DC CC DD     JMP [$DDCC]
+C7/4115: DC CB FC     JMP [$FCCB]
+C7/4118: 19 C6 2A     ORA $2AC6,Y
+C7/411B: 10 10        BPL $412D
+C7/411D: 10 00        BPL $411F
+C7/411F: 11 10        ORA ($10),Y
+C7/4121: 00 96        BRK $96
+C7/4123: 55 54        EOR $54,X
+C7/4125: 33 33        AND ($33,S),Y
+C7/4127: 33 44        AND ($44,S),Y
+C7/4129: 43 33        EOR $33,S
+C7/412B: 8B           PHB
+C7/412C: 44 33 34     MVP $33,$34
+C7/412F: 43 33        EOR $33,S
+C7/4131: 43 43        EOR $43,S
+C7/4133: 33 02        AND ($02,S),Y
+C7/4135: 00 00        BRK $00
+C7/4137: 00 00        BRK $00
+C7/4139: 00 00        BRK $00
+C7/413B: 00 00        BRK $00
+C7/413D: 9A           TXS
+C7/413E: EC DD F3     CPX $F3DD
+C7/4141: 31 CA        AND ($CA),Y
+C7/4143: 04 20        TSB $20
+C7/4145: 02 9A        COP $9A
+C7/4147: 44 30 DC     MVP $30,$DC
+C7/414A: BE 0E E1     LDX $E10E,Y
+C7/414D: 56 41        LSR $41,X
+C7/414F: 9A           TXS
+C7/4150: CC CD 04     CPY $04CD
+C7/4153: 3F CB 13 20  AND $2013CB,X
+C7/4157: 02 9B        COP $9B
+C7/4159: 44 31 CC     MVP $31,$CC
+C7/415C: BE FE F1     LDX $F1FE,Y
+C7/415F: 65 40        ADC $40
+C7/4161: 02 00        COP $00
+C7/4163: 00 00        BRK $00
+C7/4165: 00 00        BRK $00
+C7/4167: 00 00        BRK $00
+C7/4169: 00 7A        BRK $7A
+C7/416B: 53 32        EOR ($32,S),Y
+C7/416D: 22 44 44 42  JSR $424444
+C7/4171: 01 10        ORA ($10,X)
+C7/4173: 7A           PLY
+C7/4174: 01 1F        ORA ($1F,X)
+C7/4176: EC DD DD     CPX $DDDD
+C7/4179: DD EC BC     CMP $BCEC,X
+C7/417C: 7A           PLY
+C7/417D: CC EE DD     CPY $DDEE
+C7/4180: ED DD F0     SBC $F0DD
+C7/4183: 00 11        BRK $11
+C7/4185: 7A           PLY
+C7/4186: 3F 01 23 23  AND $232301,X
+C7/418A: 32 11        AND ($11)
+C7/418C: 22 24 7A 44  JSR $447A24
+C7/4190: 32 22        AND ($22)
+C7/4192: 44 44 42     MVP $44,$42
+C7/4195: 01 10        ORA ($10,X)
+C7/4197: 7B           TDC
+C7/4198: 02 0E        COP $0E
+C7/419A: EE CC DF     INC $DFCC
+C7/419D: DD DC BC     CMP $BCDC,X
+C7/41A0: 02 00        COP $00
+C7/41A2: 00 00        BRK $00
+C7/41A4: 00 00        BRK $00
+C7/41A6: 00 00        BRK $00
+C7/41A8: 00 BA        BRK $BA
+C7/41AA: E0 21 FD     CPX #$FD21
+C7/41AD: DF 24 2F D0  CMP $D02F24,X
+C7/41B1: 23 BA        AND $BA,S
+C7/41B3: E2 EC        SEP #$EC
+C7/41B5: F1 20        SBC ($20),Y
+C7/41B7: FE 02 42     INC $4202,X
+C7/41BA: 0D BA E0     ORA $E0BA
+C7/41BD: 21 FD        AND ($FD,X)
+C7/41BF: DF 24 2F D0  CMP $D02F24,X
+C7/41C3: 23 BB        AND $BB,S
+C7/41C5: E2 EC        SEP #$EC
+C7/41C7: F1 20        SBC ($20),Y
+C7/41C9: FE 02 42     INC $4202,X
+C7/41CC: 0D 02 00     ORA $0002
+C7/41CF: 00 00        BRK $00
+C7/41D1: 00 00        BRK $00
+C7/41D3: 00 00        BRK $00
+C7/41D5: 00 97        BRK $97
+C7/41D7: 6C CC CC     JMP ($CCCC)
+C7/41DA: CC CC CC     CPY $CCCC
+C7/41DD: CC CC 02     CPY $02CC
+C7/41E0: 00 00        BRK $00
+C7/41E2: 00 00        BRK $00
+C7/41E4: 00 00        BRK $00
+C7/41E6: 00 00        BRK $00
+C7/41E8: 9A           TXS
+C7/41E9: CE DC F4     DEC $F4DC
+C7/41EC: 30 BB        BMI $41A9
+C7/41EE: 13 11        ORA ($11,S),Y
+C7/41F0: 12 9A        ORA ($9A)
+C7/41F2: 44 40 CB     MVP $40,$CB
+C7/41F5: CE FD F1     DEC $F1FD
+C7/41F8: 66 41        ROR $41
+C7/41FA: 9A           TXS
+C7/41FB: CC CD F4     CPY $F4CD
+C7/41FE: 30 BB        BMI $41BB
+C7/4200: 14 10        TRB $10
+C7/4202: 02 9B        COP $9B
+C7/4204: 55 4F        EOR $4F,X
+C7/4206: CC BD FE     CPY $FEBD
+C7/4209: F2 56        SBC ($56)
+C7/420B: 41 02        EOR ($02,X)
+C7/420D: 00 00        BRK $00
+C7/420F: 00 00        BRK $00
+C7/4211: 00 00        BRK $00
+C7/4213: 00 00        BRK $00
+C7/4215: 7A           PLY
+C7/4216: 55 55        EOR $55,X
+C7/4218: 66 66        ROR $66
+C7/421A: 66 66        ROR $66
+C7/421C: 67 66        ADC [$66]
+C7/421E: 7A           PLY
+C7/421F: 56 66        LSR $66,X
+C7/4221: 55 55        EOR $55,X
+C7/4223: 54 44 33     MVN $44,$33
+C7/4226: 43 6A        EOR $6A,S
+C7/4228: 33 53        AND ($53,S),Y
+C7/422A: 21 00        AND ($00,X)
+C7/422C: 00 DC        BRK $DC
+C7/422E: DD BA 7A     CMP $7ABA,X
+C7/4231: DD DC BC     CMP $BCDC,X
+C7/4234: CB           WAI
+C7/4235: BB           TYX
+C7/4236: AA           TAX
+C7/4237: BB           TYX
+C7/4238: A9 7A        LDA #$7A
+C7/423A: AA           TAX
+C7/423B: AA           TAX
+C7/423C: AA           TAX
+C7/423D: AA           TAX
+C7/423E: AA           TAX
+C7/423F: AA           TAX
+C7/4240: BB           TYX
+C7/4241: BB           TYX
+C7/4242: 7A           PLY
+C7/4243: CB           WAI
+C7/4244: CC DC DE     CPY $DEDC
+C7/4247: ED EF FF     SBC $FFEF
+C7/424A: F0 7A        BEQ $42C6
+C7/424C: 4E 12 21     LSR $2112
+C7/424F: 23 33        AND $33,S
+C7/4251: 44 44 55     MVP $44,$55
+C7/4254: 7A           PLY
+C7/4255: 55 56        EOR $56,X
+C7/4257: 66 56        ROR $56
+C7/4259: 67 66        ADC [$66]
+C7/425B: 66 66        ROR $66
+C7/425D: 7B           TDC
+C7/425E: 66 65        ROR $65
+C7/4260: 55 65        EOR $65,X
+C7/4262: 44 44 44     MVP $44,$44
+C7/4265: 32 02        AND ($02)
+C7/4267: 00 00        BRK $00
+C7/4269: 00 00        BRK $00
+C7/426B: 00 00        BRK $00
+C7/426D: 00 00        BRK $00
+C7/426F: 8A           TXA
+C7/4270: D2 0E        CMP ($0E)
+C7/4272: BB           TYX
+C7/4273: BD 10 ED     LDA $ED10,X
+C7/4276: DC BD 8A     JMP [$8ABD]
+C7/4279: 0F EE 0E BD  ORA $BD0EEE
+C7/427D: 45 FB        EOR $FB
+C7/427F: BD 22 9A     LDA $9A22,X
+C7/4282: 1F 01 00 22  ORA $220001,X
+C7/4286: 20 FF 11     JSR $11FF
+C7/4289: 14 9A        TRB $9A
+C7/428B: 3F E0 24 42  AND $4224E0,X
+C7/428F: 0F 02 22 21  ORA $212202
+C7/4293: 8A           TXA
+C7/4294: EE 25 44     INC $4425
+C7/4297: 41 DD        EOR ($DD,X)
+C7/4299: 24 31        BIT $31
+C7/429B: DC 8A F2     JMP [$F28A]
+C7/429E: 21 FE        AND ($FE,X)
+C7/42A0: EF EF FF CD  SBC $CDFFEF
+C7/42A4: EC 8A E1     CPX $E18A
+C7/42A7: 1D BB BD     ORA $BDBB,X
+C7/42AA: 10 ED        BPL $4299
+C7/42AC: EC AD 8B     CPX $8BAD
+C7/42AF: 0F EF FD CE  ORA $CEFDEF
+C7/42B3: 35 FC        AND $FC,X
+C7/42B5: AE 12 24     LDX $2412
+C7/42B8: 00 00        BRK $00
+C7/42BA: 47 00        EOR [$00]
+C7/42BC: 47 24        EOR [$24]
+C7/42BE: 47 3F        EOR [$3F]
+C7/42C0: 47 7E        EOR [$7E]
+C7/42C2: 47 99        EOR [$99]
+C7/42C4: 47 AB        EOR [$AB]
+C7/42C6: 47 C6        EOR [$C6]
+C7/42C8: 47 EA        EOR [$EA]
+C7/42CA: 47 05        EOR [$05]
+C7/42CC: 48           PHA
+C7/42CD: 17 48        ORA [$48],Y
+C7/42CF: 17 48        ORA [$48],Y
+C7/42D1: 29 48        AND #$48
+C7/42D3: 44 48 56     MVP $48,$56
+C7/42D6: 48           PHA
+C7/42D7: 71 48        ADC ($48),Y
+C7/42D9: B0 48        BCS $4323
+C7/42DB: CB           WAI
+C7/42DC: 48           PHA
+C7/42DD: 14 00        TRB $00
+C7/42DF: FF E0 FF E0  SBC $E0FFE0,X
+C7/42E3: FF E0 FF E0  SBC $E0FFE0,X
+C7/42E7: FF E0 FF E0  SBC $E0FFE0,X
+C7/42EB: FF E0 FF E0  SBC $E0FFE0,X
+C7/42EF: FF E0 FF E0  SBC $E0FFE0,X
+C7/42F3: 14 00        TRB $00
+C7/42F5: E1 00        SBC ($00,X)
+C7/42F7: C4 C8        CPY $C8
+C7/42F9: E1 00        SBC ($00,X)
+C7/42FB: E1 00        SBC ($00,X)
+C7/42FD: 00 00        BRK $00
+C7/42FF: 7A           PLY
+C7/4300: 00 19        BRK $19
+C7/4302: 00 00        BRK $00
+C7/4304: 00 5A        BRK $5A
+C7/4306: 00 00        BRK $00
+C7/4308: 00 00        BRK $00
+C7/430A: 18           CLC
+C7/430B: 00 33        BRK $33
+C7/430D: 00 00        BRK $00
+C7/430F: 07 33        ORA [$33]
+C7/4311: 00 00        BRK $00
+C7/4313: 12 33        ORA ($33)
+C7/4315: 1C 33 2B     TRB $2B33
+C7/4318: 33 2E        AND ($2E,S),Y
+C7/431A: 33 3A        AND ($3A,S),Y
+C7/431C: 33 3C        AND ($3C,S),Y
+C7/431E: 33 48        AND ($48,S),Y
+C7/4320: 33 4B        AND ($4B,S),Y
+C7/4322: 33 5B        AND ($5B,S),Y
+C7/4324: 33 5D        AND ($5D,S),Y
+C7/4326: 33 66        AND ($66,S),Y
+C7/4328: 33 68        AND ($68,S),Y
+C7/432A: 33 74        AND ($74,S),Y
+C7/432C: 33 7C        AND ($7C,S),Y
+C7/432E: 33 88        AND ($88,S),Y
+C7/4330: 33 8A        AND ($8A,S),Y
+C7/4332: 33 95        AND ($95,S),Y
+C7/4334: 33 97        AND ($97,S),Y
+C7/4336: 33 AF        AND ($AF,S),Y
+C7/4338: 33 B1        AND ($B1,S),Y
+C7/433A: 33 00        AND ($00,S),Y
+C7/433C: 00 00        BRK $00
+C7/433E: 00 00        BRK $00
+C7/4340: 00 00        BRK $00
+C7/4342: 00 00        BRK $00
+C7/4344: 00 00        BRK $00
+C7/4346: 00 00        BRK $00
+C7/4348: 00 00        BRK $00
+C7/434A: 00 00        BRK $00
+C7/434C: 00 00        BRK $00
+C7/434E: 00 00        BRK $00
+C7/4350: 00 00        BRK $00
+C7/4352: 00 00        BRK $00
+C7/4354: 00 00        BRK $00
+C7/4356: 00 00        BRK $00
+C7/4358: 00 00        BRK $00
+C7/435A: 00 00        BRK $00
+C7/435C: 00 00        BRK $00
+C7/435E: 00 00        BRK $00
+C7/4360: 00 00        BRK $00
+C7/4362: 00 00        BRK $00
+C7/4364: 00 00        BRK $00
+C7/4366: 00 00        BRK $00
+C7/4368: 00 00        BRK $00
+C7/436A: 00 00        BRK $00
+C7/436C: 00 00        BRK $00
+C7/436E: 00 00        BRK $00
+C7/4370: 00 00        BRK $00
+C7/4372: 00 00        BRK $00
+C7/4374: 00 00        BRK $00
+C7/4376: 00 00        BRK $00
+C7/4378: 00 00        BRK $00
+C7/437A: 00 00        BRK $00
+C7/437C: 00 00        BRK $00
+C7/437E: 00 00        BRK $00
+C7/4380: 00 00        BRK $00
+C7/4382: 00 00        BRK $00
+C7/4384: 00 00        BRK $00
+C7/4386: 00 00        BRK $00
+C7/4388: 00 00        BRK $00
+C7/438A: 00 00        BRK $00
+C7/438C: 00 00        BRK $00
+C7/438E: 00 00        BRK $00
+C7/4390: 00 00        BRK $00
+C7/4392: 00 00        BRK $00
+C7/4394: 00 00        BRK $00
+C7/4396: 00 00        BRK $00
+C7/4398: 00 00        BRK $00
+C7/439A: 00 00        BRK $00
+C7/439C: 00 00        BRK $00
+C7/439E: 00 00        BRK $00
+C7/43A0: 00 00        BRK $00
+C7/43A2: 00 00        BRK $00
+C7/43A4: 00 00        BRK $00
+C7/43A6: 00 00        BRK $00
+C7/43A8: 00 00        BRK $00
+C7/43AA: 00 00        BRK $00
+C7/43AC: 00 00        BRK $00
+C7/43AE: 00 00        BRK $00
+C7/43B0: 00 00        BRK $00
+C7/43B2: 00 00        BRK $00
+C7/43B4: 00 00        BRK $00
+C7/43B6: 00 00        BRK $00
+C7/43B8: 00 00        BRK $00
+C7/43BA: 00 00        BRK $00
+C7/43BC: 00 00        BRK $00
+C7/43BE: 00 00        BRK $00
+C7/43C0: 00 00        BRK $00
+C7/43C2: 00 00        BRK $00
+C7/43C4: 00 00        BRK $00
+C7/43C6: 00 00        BRK $00
+C7/43C8: 00 00        BRK $00
+C7/43CA: 00 00        BRK $00
+C7/43CC: 00 00        BRK $00
+C7/43CE: 00 00        BRK $00
+C7/43D0: 00 00        BRK $00
+C7/43D2: 00 00        BRK $00
+C7/43D4: 00 00        BRK $00
+C7/43D6: 00 00        BRK $00
+C7/43D8: 00 00        BRK $00
+C7/43DA: 00 00        BRK $00
+C7/43DC: 00 00        BRK $00
+C7/43DE: 00 00        BRK $00
+C7/43E0: 00 00        BRK $00
+C7/43E2: 00 00        BRK $00
+C7/43E4: 00 00        BRK $00
+C7/43E6: 00 00        BRK $00
+C7/43E8: 00 00        BRK $00
+C7/43EA: 00 00        BRK $00
+C7/43EC: 00 00        BRK $00
+C7/43EE: 00 00        BRK $00
+C7/43F0: 00 00        BRK $00
+C7/43F2: 00 00        BRK $00
+C7/43F4: 00 00        BRK $00
+C7/43F6: 00 00        BRK $00
+C7/43F8: 00 00        BRK $00
+C7/43FA: 00 00        BRK $00
+C7/43FC: 00 00        BRK $00
+C7/43FE: 00 00        BRK $00
+C7/4400: 00 00        BRK $00
+C7/4402: 00 00        BRK $00
+C7/4404: 00 00        BRK $00
+C7/4406: 00 00        BRK $00
+C7/4408: 00 00        BRK $00
+C7/440A: 00 BC        BRK $BC
+C7/440C: 33 00        AND ($00,S),Y
+C7/440E: 00 C3        BRK $C3
+C7/4410: 33 EB        AND ($EB,S),Y
+C7/4412: 33 12        AND ($12,S),Y
+C7/4414: 34 1D        BIT $1D,X
+C7/4416: 34 29        BIT $29,X
+C7/4418: 34 34        BIT $34,X
+C7/441A: 34 42        BIT $42,X
+C7/441C: 34 44        BIT $44,X
+C7/441E: 34 52        BIT $52,X
+C7/4420: 34 54        BIT $54,X
+C7/4422: 34 5C        BIT $5C,X
+C7/4424: 34 00        BIT $00,X
+C7/4426: 00 70        BRK $70
+C7/4428: 34 88        BIT $88,X
+C7/442A: 34 9E        BIT $9E,X
+C7/442C: 34 A7        BIT $A7,X
+C7/442E: 34 B1        BIT $B1,X
+C7/4430: 34 BF        BIT $BF,X
+C7/4432: 34 CB        BIT $CB,X
+C7/4434: 34 D6        BIT $D6,X
+C7/4436: 34 E2        BIT $E2,X
+C7/4438: 34 EA        BIT $EA,X
+C7/443A: 34 F1        BIT $F1,X
+C7/443C: 34 F8        BIT $F8,X
+C7/443E: 34 FE        BIT $FE,X
+C7/4440: 34 0C        BIT $0C,X
+C7/4442: 35 20        AND $20,X
+C7/4444: 35 2C        AND $2C,X
+C7/4446: 35 4C        AND $4C,X
+C7/4448: 35 56        AND $56,X
+C7/444A: 35 62        AND $62,X
+C7/444C: 35 75        AND $75,X
+C7/444E: 35 89        AND $89,X
+C7/4450: 35 99        AND $99,X
+C7/4452: 35 AA        AND $AA,X
+C7/4454: 35 AC        AND $AC,X
+C7/4456: 35 B5        AND $B5,X
+C7/4458: 35 BD        AND $BD,X
+C7/445A: 35 CA        AND $CA,X
+C7/445C: 35 D3        AND $D3,X
+C7/445E: 35 DC        AND $DC,X
+C7/4460: 35 E8        AND $E8,X
+C7/4462: 35 F4        AND $F4,X
+C7/4464: 35 FE        AND $FE,X
+C7/4466: 35 08        AND $08,X
+C7/4468: 36 19        ROL $19,X
+C7/446A: 36 30        ROL $30,X
+C7/446C: 36 37        ROL $37,X
+C7/446E: 36 52        ROL $52,X
+C7/4470: 36 5A        ROL $5A,X
+C7/4472: 36 61        ROL $61,X
+C7/4474: 36 74        ROL $74,X
+C7/4476: 36 81        ROL $81,X
+C7/4478: 36 8A        ROL $8A,X
+C7/447A: 36 9C        ROL $9C,X
+C7/447C: 36 00        ROL $00,X
+C7/447E: 00 AA        BRK $AA
+C7/4480: 36 B2        ROL $B2,X
+C7/4482: 36 BB        ROL $BB,X
+C7/4484: 36 C7        ROL $C7,X
+C7/4486: 36 D6        ROL $D6,X
+C7/4488: 36 E0        ROL $E0,X
+C7/448A: 36 EA        ROL $EA,X
+C7/448C: 36 00        ROL $00,X
+C7/448E: 37 11        AND [$11],Y
+C7/4490: 37 1D        AND [$1D],Y
+C7/4492: 37 2B        AND [$2B],Y
+C7/4494: 37 32        AND [$32],Y
+C7/4496: 37 43        AND [$43],Y
+C7/4498: 37 4E        AND [$4E],Y
+C7/449A: 37 55        AND [$55],Y
+C7/449C: 37 64        AND [$64],Y
+C7/449E: 37 7F        AND [$7F],Y
+C7/44A0: 37 90        AND [$90],Y
+C7/44A2: 37 A1        AND [$A1],Y
+C7/44A4: 37 AC        AND [$AC],Y
+C7/44A6: 37 00        AND [$00],Y
+C7/44A8: 00 B6        BRK $B6
+C7/44AA: 37 BD        AND [$BD],Y
+C7/44AC: 37 C5        AND [$C5],Y
+C7/44AE: 37 D2        AND [$D2],Y
+C7/44B0: 37 D9        AND [$D9],Y
+C7/44B2: 37 F3        AND [$F3],Y
+C7/44B4: 37 00        AND [$00],Y
+C7/44B6: 38           SEC
+C7/44B7: 09 38        ORA #$38
+C7/44B9: 1A           INC
+C7/44BA: 38           SEC
+C7/44BB: 41 38        EOR ($38,X)
+C7/44BD: 48           PHA
+C7/44BE: 38           SEC
+C7/44BF: 57 38        EOR [$38],Y
+C7/44C1: 59 38 65     EOR $6538,Y
+C7/44C4: 38           SEC
+C7/44C5: 6D 38 81     ADC $8138
+C7/44C8: 38           SEC
+C7/44C9: 8D 38 A3     STA $A338
+C7/44CC: 38           SEC
+C7/44CD: BB           TYX
+C7/44CE: 38           SEC
+C7/44CF: D7 38        CMP [$38],Y
+C7/44D1: EA           NOP
+C7/44D2: 38           SEC
+C7/44D3: F8           SED
+C7/44D4: 38           SEC
+C7/44D5: FF 38 10 39  SBC $391038,X
+C7/44D9: 1C 39 2D     TRB $2D39
+C7/44DC: 39 3B 39     AND $393B,Y
+C7/44DF: 44 39 00     MVP $39,$00
+C7/44E2: 00 5B        BRK $5B
+C7/44E4: 39 63 39     AND $3963,Y
+C7/44E7: 7C 39 87     JMP ($8739,X)
+C7/44EA: 39 9D 39     AND $399D,Y
+C7/44ED: AB           PLB
+C7/44EE: 39 C1 39     AND $39C1,Y
+C7/44F1: CE 39 E5     DEC $E539
+C7/44F4: 39 EE 39     AND $39EE,Y
+C7/44F7: FF 39 09 3A  SBC $3A0939,X
+C7/44FB: 13 3A        ORA ($3A,S),Y
+C7/44FD: 1C 3A 37     TRB $373A
+C7/4500: 3A           DEC
+C7/4501: 46 3A        LSR $3A
+C7/4503: 53 3A        EOR ($3A,S),Y
+C7/4505: 55 3A        EOR $3A,X
+C7/4507: 5D 3A 66     EOR $663A,X
+C7/450A: 3A           DEC
+C7/450B: 00 00        BRK $00
+C7/450D: 76 3A        ROR $3A,X
+C7/450F: 96 3A        STX $3A,Y
+C7/4511: A4 3A        LDY $3A
+C7/4513: B3 3A        LDA ($3A,S),Y
+C7/4515: B8           CLV
+C7/4516: 3A           DEC
+C7/4517: D8           CLD
+C7/4518: 3A           DEC
+C7/4519: E9 3A        SBC #$3A
+C7/451B: F6 3A        INC $3A,X
+C7/451D: 03 3B        ORA $3B,S
+C7/451F: 13 3B        ORA ($3B,S),Y
+C7/4521: 1D 3B 2A     ORA $2A3B,X
+C7/4524: 3B           TSC
+C7/4525: 3C 3B 4E     BIT $4E3B,X
+C7/4528: 3B           TSC
+C7/4529: 5E 3B 6D     LSR $6D3B,X
+C7/452C: 3B           TSC
+C7/452D: 6F 3B 77 3B  ADC $3B773B
+C7/4531: 87 3B        STA [$3B]
+C7/4533: 9D 3B A0     STA $A03B,X
+C7/4536: 3B           TSC
+C7/4537: AB           PLB
+C7/4538: 3B           TSC
+C7/4539: B5 3B        LDA $3B,X
+C7/453B: C0 3B        CPY #$3B
+C7/453D: D0 3B        BNE $457A
+C7/453F: DC 3B E7     JMP [$E73B]
+C7/4542: 3B           TSC
+C7/4543: F3 3B        SBC ($3B,S),Y
+C7/4545: FB           XCE
+C7/4546: 3B           TSC
+C7/4547: 07 3C        ORA [$3C]
+C7/4549: 10 3C        BPL $4587
+C7/454B: 1F 3C 30 3C  ORA $3C303C,X
+C7/454F: 3F 3C 00 00  AND $00003C,X
+C7/4553: 49 3C        EOR #$3C
+C7/4555: 58           CLI
+C7/4556: 3C 70 3C     BIT $3C70,X
+C7/4559: 00 00        BRK $00
+C7/455B: 89 3C        BIT #$3C
+C7/455D: 00 00        BRK $00
+C7/455F: 98           TYA
+C7/4560: 3C A9 3C     BIT $3CA9,X
+C7/4563: B3 3C        LDA ($3C,S),Y
+C7/4565: B5 3C        LDA $3C,X
+C7/4567: C1 3C        CMP ($3C,X)
+C7/4569: C3 3C        CMP $3C,S
+C7/456B: D0 3C        BNE $45A9
+C7/456D: E1 3C        SBC ($3C,X)
+C7/456F: EF 3C FD 3C  SBC $3CFD3C
+C7/4573: 06 3D        ASL $3D
+C7/4575: 15 3D        ORA $3D,X
+C7/4577: 20 3D 22     JSR $223D
+C7/457A: 3D 31 3D     AND $3D31,X
+C7/457D: 43 3D        EOR $3D,S
+C7/457F: 59 3D 00     EOR $003D,Y
+C7/4582: 00 6D        BRK $6D
+C7/4584: 3D 7F 3D     AND $3D7F,X
+C7/4587: 92 3D        STA ($3D)
+C7/4589: 94 3D        STY $3D,X
+C7/458B: A3 3D        LDA $3D,S
+C7/458D: AE 3D BA     LDX $BA3D
+C7/4590: 3D D0 3D     AND $3DD0,X
+C7/4593: DD 3D EF     CMP $EF3D,X
+C7/4596: 3D 03 3E     AND $3E03,X
+C7/4599: 0B           PHD
+C7/459A: 3E 1F 3E     ROL $3E1F,X
+C7/459D: 2C 3E 3D     BIT $3D3E
+C7/45A0: 3E 47 3E     ROL $3E47,X
+C7/45A3: 5F 3E 73 3E  EOR $3E733E,X
+C7/45A7: 85 3E        STA $3E
+C7/45A9: 00 00        BRK $00
+C7/45AB: 96 3E        STX $3E,Y
+C7/45AD: A0 3E AC     LDY #$AC3E
+C7/45B0: 3E BD 3E     ROL $3EBD,X
+C7/45B3: D4 3E        PEI $3E
+C7/45B5: DF 3E F3 3E  CMP $3EF33E,X
+C7/45B9: FF 3E 0D 3F  SBC $3F0D3E,X
+C7/45BD: 0F 3F 2F 3F  ORA $3F2F3F
+C7/45C1: 46 3F        LSR $3F
+C7/45C3: 5A           PHY
+C7/45C4: 3F 64 3F 77  AND $773F64,X
+C7/45C8: 3F 8D 3F 99  AND $993F8D,X
+C7/45CC: 3F 9E 3F A7  AND $A73F9E,X
+C7/45D0: 3F BD 3F CF  AND $CF3FBD,X
+C7/45D4: 3F E1 3F 02  AND $023FE1,X
+C7/45D8: 40           RTI

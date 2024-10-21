@@ -1,0 +1,68 @@
+CD/D315: 00 73        BRK $73
+CD/D317: 03 02        ORA $02,S
+CD/D319: 00 24        BRK $24
+CD/D31B: 01 1B        ORA ($1B,X)
+CD/D31D: 09 70 0A     ORA #$0A70
+CD/D320: 85 C0        STA $C0
+CD/D322: A8           TAY
+CD/D323: 20 20 3E     JSR $3E20
+CD/D326: 0D 12 0C     ORA $0C12
+CD/D329: 1B           TCS
+CD/D32A: 0C 71 36     TSB $3671
+CD/D32D: 00 73        BRK $73
+CD/D32F: 03 02        ORA $02,S
+CD/D331: 00 24        BRK $24
+CD/D333: 01 1B        ORA ($1B,X)
+CD/D335: 09 70 0A     ORA #$0A70
+CD/D338: 85 D8        STA $D8
+CD/D33A: A8           TAY
+CD/D33B: 20 20 36     JSR $3620
+CD/D33E: 0D 12 0C     ORA $0C12
+CD/D341: 1B           TCS
+CD/D342: 0C 71 36     TSB $3671
+CD/D345: 00 73        BRK $73
+CD/D347: 03 02        ORA $02,S
+CD/D349: 00 24        BRK $24
+CD/D34B: 01 1B        ORA ($1B,X)
+CD/D34D: 09 70 0A     ORA #$0A70
+CD/D350: 85 A8        STA $A8
+CD/D352: A8           TAY
+CD/D353: 20 20 2E     JSR $2E20
+CD/D356: 0D 12 0C     ORA $0C12
+CD/D359: 1B           TCS
+CD/D35A: 0C 71 36     TSB $3671
+CD/D35D: 00 73        BRK $73
+CD/D35F: 03 02        ORA $02,S
+CD/D361: 00 24        BRK $24
+CD/D363: 01 1B        ORA ($1B,X)
+CD/D365: 09 70 0A     ORA #$0A70
+CD/D368: 85 F0        STA $F0
+CD/D36A: A8           TAY
+CD/D36B: 20 20 26     JSR $2620
+CD/D36E: 0D 12 0C     ORA $0C12
+CD/D371: 1B           TCS
+CD/D372: 0C 71 36     TSB $3671
+CD/D375: 00 73        BRK $73
+CD/D377: 03 02        ORA $02,S
+CD/D379: 00 24        BRK $24
+CD/D37B: 01 1B        ORA ($1B,X)
+CD/D37D: 09 70 0A     ORA #$0A70
+CD/D380: 85 90        STA $90
+CD/D382: A8           TAY
+CD/D383: 20 20 1E     JSR $1E20
+CD/D386: 0D 12 0C     ORA $0C12
+CD/D389: 1B           TCS
+CD/D38A: 0C 71 36     TSB $3671
+CD/D38D: 00 90        BRK $90
+CD/D38F: 00 80        BRK $80
+CD/D391: 00 98        BRK $98
+CD/D393: D3 B7        CMP ($B7,S),Y
+CD/D395: D3 D4        CMP ($D4,S),Y
+CD/D397: 97 72        STA [$72],Y
+CD/D399: 0D 03 07     ORA $0703
+CD/D39C: 3D 03 34     AND $3403,X
+CD/D39F: 1B           TCS
+CD/D3A0: 36 20        ROL $20,X
+CD/D3A2: 05 78        ORA $78
+CD/D3A4: C6 20        DEC $20
+CD/D3A6: 60           RTS

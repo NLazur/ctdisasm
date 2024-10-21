@@ -1,0 +1,237 @@
+C6/B0B4: 05 07        ORA $07
+C6/B0B6: 52 42        EOR ($42)
+C6/B0B8: 32 33        AND ($33)
+C6/B0BA: 1F 5F 00 C0  ORA $C0005F,X
+C6/B0BE: 0A           ASL
+C6/B0BF: 86 02        STX $02
+C6/B0C1: E9 0A FD     SBC #$FD0A
+C6/B0C4: 33 BD        AND ($BD,S),Y
+C6/B0C6: 3A           DEC
+C6/B0C7: 3B           TSC
+C6/B0C8: 48           PHA
+C6/B0C9: 07 2A        ORA [$2A]
+C6/B0CB: 2B           PLD
+C6/B0CC: FC 02 48     JSR ($4802,X)
+C6/B0CF: 49 F6 02     EOR #$02F6
+C6/B0D2: 90 00        BCC $B0D4
+C6/B0D4: 91 92        STA ($92),Y
+C6/B0D6: 93 94        STA ($94,S),Y
+C6/B0D8: 95 23        STA $23,X
+C6/B0DA: 35 32        AND $32,X
+C6/B0DC: 20 24 23     JSR $2324
+C6/B0DF: 35 6C        AND $6C,X
+C6/B0E1: 37 52        AND [$52],Y
+C6/B0E3: 02 18        COP $18
+C6/B0E5: 19 19 28     ORA $2819,Y
+C6/B0E8: 24 9B        BIT $9B
+C6/B0EA: 2C 60 02     BIT $0260
+C6/B0ED: E3 03        SBC $03,S
+C6/B0EF: 30 42        BMI $B133
+C6/B0F1: 43 80        EOR $80,S
+C6/B0F3: 32 33        AND ($33)
+C6/B0F5: 34 23        BIT $23,X
+C6/B0F7: 34 33        BIT $33,X
+C6/B0F9: 23 C0        AND $C0,S
+C6/B0FB: 00 09        BRK $09
+C6/B0FD: C3 08        CMP $08,S
+C6/B0FF: 33 14        AND ($14,S),Y
+C6/B101: 10 02        BPL $B105
+C6/B103: 7E 21 33     ROR $3321,X
+C6/B106: 0F 5C 6E 56  ORA $566E5C
+C6/B10A: A6 0C        LDX $0C
+C6/B10C: 86 02        STX $02
+C6/B10E: E9 02 0B     SBC #$0B02
+C6/B111: 27 3B        AND [$3B]
+C6/B113: AD 30 AA     LDA $AA30
+C6/B116: 07 3A        ORA [$3A]
+C6/B118: 3B           TSC
+C6/B119: FC 02 FB     JSR ($FB02,X)
+C6/B11C: 02 8C        COP $8C
+C6/B11E: 21 08        AND ($08,X)
+C6/B120: 22 33 34 F8  JSR $F83433
+C6/B124: 00 35        BRK $35
+C6/B126: 45 42        EOR $42
+C6/B128: 43 1E        EOR $1E,S
+C6/B12A: 44 8F 00     MVP $8F,$00
+C6/B12D: 72 03        ADC ($03)
+C6/B12F: 95 02        STA $02,X
+C6/B131: D1 1C        CMP ($1C),Y
+C6/B133: 9B           TXY
+C6/B134: 0A           ASL
+C6/B135: 1A           INC
+C6/B136: 84 3E        STY $3E
+C6/B138: 0B           PHD
+C6/B139: E3 03        SBC $03,S
+C6/B13B: 0A           ASL
+C6/B13C: 50 8C        BVC $B0CA
+C6/B13E: 21 60        AND ($60,X)
+C6/B140: 00 CD        BRK $CD
+C6/B142: BE 08 24     LDX $2408,Y
+C6/B145: 05 10        ORA $10
+C6/B147: E6 01        INC $01
+C6/B149: 05 07        ORA $07
+C6/B14B: 76 00        ROR $00,X
+C6/B14D: 90 03        BCC $B152
+C6/B14F: 71 06        ADC ($06),Y
+C6/B151: 05 08        ORA $08
+C6/B153: 09 0A A5     ORA #$A50A
+C6/B156: 09 6C 04     ORA #$046C
+C6/B159: 07 3D        ORA [$3D]
+C6/B15B: AD 0D 13     LDA $130D
+C6/B15E: 10 07        BPL $B167
+C6/B160: 9D 0A 32     STA $320A,X
+C6/B163: 18           CLC
+C6/B164: 15 7C        ORA $7C,X
+C6/B166: 52 53        EOR ($53)
+C6/B168: 02 54        COP $54
+C6/B16A: 01 03        ORA ($03,X)
+C6/B16C: 1B           TCS
+C6/B16D: 3D 3E 1A     AND $1A3E,X
+C6/B170: 18           CLC
+C6/B171: 19 25 F1     ORA $F125,Y
+C6/B174: 12 BD        ORA ($BD)
+C6/B176: 3A           DEC
+C6/B177: 00 0B        BRK $0B
+C6/B179: 1B           TCS
+C6/B17A: E3 03        SBC $03,S
+C6/B17C: 0C 1A 78     TSB $781A
+C6/B17F: 30 31        BMI $B1B2
+C6/B181: 44 C2 00     MVP $C2,$00
+C6/B184: 7E 09 83     ROR $8309,X
+C6/B187: 11 8F        ORA ($8F),Y
+C6/B189: 08           PHP
+C6/B18A: 37 08        AND [$08],Y
+C6/B18C: 07 52        ORA [$52]
+C6/B18E: 53 1E        EOR ($1E,S),Y
+C6/B190: 09 07 07     ORA #$0707
+C6/B193: 18           CLC
+C6/B194: 19 30 28     ORA $2830,Y
+C6/B197: 29 2A 2B     AND #$2B2A
+C6/B19A: 28           PLP
+C6/B19B: 0B           PHD
+C6/B19C: 67 3D        ADC [$3D]
+C6/B19E: BD 1A 44     LDA $441A,X
+C6/B1A1: 1B           TCS
+C6/B1A2: AB           PLB
+C6/B1A3: 87 01        STA [$01]
+C6/B1A5: 20 21 24     JSR $2421
+C6/B1A8: 92 20        STA ($20)
+C6/B1AA: 23 0F        AND $0F,S
+C6/B1AC: 29 13 51     AND #$5113
+C6/B1AF: 00 E0        BRK $E0
+C6/B1B1: 11 49        ORA ($49),Y
+C6/B1B3: 1D AD 18     ORA $18AD,X
+C6/B1B6: 19 1B 82     ORA $821B,Y
+C6/B1B9: 0A           ASL
+C6/B1BA: E3 03        SBC $03,S
+C6/B1BC: 1A           INC
+C6/B1BD: 0A           ASL
+C6/B1BE: 0B           PHD
+C6/B1BF: 41 54        EOR ($54,X)
+C6/B1C1: DF 00 26 32  CMP $322600,X
+C6/B1C5: C3 18        CMP $18,S
+C6/B1C7: 82 09 26     BRL $C6D7D3
+C6/B1CA: 6E 30 03     ROR $0330
+C6/B1CD: 07 07        ORA [$07]
+C6/B1CF: 04 AB        TSB $AB
+C6/B1D1: AD 1F 05     LDA $051F
+C6/B1D4: 0A           ASL
+C6/B1D5: 0B           PHD
+C6/B1D6: 38           SEC
+C6/B1D7: 39 3A 66     AND $663A,Y
+C6/B1DA: 3B           TSC
+C6/B1DB: 28           PLP
+C6/B1DC: 0B           PHD
+C6/B1DD: C7 45        CMP [$45]
+C6/B1DF: AD AB 87     LDA $87AB
+C6/B1E2: 09 75 04     ORA #$0475
+C6/B1E5: 24 01        BIT $01
+C6/B1E7: 15 0A        ORA $0A,X
+C6/B1E9: 23 35        AND $35,S
+C6/B1EB: 43 44        EOR $44,S
+C6/B1ED: 36 37        ROL $37,X
+C6/B1EF: 0D 88 0E     ORA $0E88
+C6/B1F2: 18           CLC
+C6/B1F3: 19 4F 08     ORA $084F,Y
+C6/B1F6: 1B           TCS
+C6/B1F7: 5A           PHY
+C6/B1F8: 5B           TCD
+C6/B1F9: 0D 1A AD     ORA $AD1A
+C6/B1FC: 03 03        ORA $03,S
+C6/B1FE: 1A           INC
+C6/B1FF: E3 03        SBC $03,S
+C6/B201: A6 04        LDX $04
+C6/B203: 1B           TCS
+C6/B204: AE 00 63     LDX $6300
+C6/B207: 25 01        AND $01
+C6/B209: E1 A0        SBC ($A0,X)
+C6/B20B: 02 34        COP $34
+C6/B20D: 33 FD        AND ($FD,S),Y
+C6/B20F: 33 8E        AND ($8E,S),Y
+C6/B211: 00 0F        BRK $0F
+C6/B213: 0D D8 03     ORA $03D8
+C6/B216: E3 26        SBC $26,S
+C6/B218: 03 85        ORA $85,S
+C6/B21A: 05 0A        ORA $0A
+C6/B21C: 0B           PHD
+C6/B21D: 1B           TCS
+C6/B21E: 28           PLP
+C6/B21F: 0B           PHD
+C6/B220: 27 66        AND [$66]
+C6/B222: 42 03        WDM $03
+C6/B224: 06 8C        ASL $8C
+C6/B226: C1 00        CMP ($00,X)
+C6/B228: 15 02        ORA $02,X
+C6/B22A: 35 66        AND $66,X
+C6/B22C: 53 54        EOR ($54,S),Y
+C6/B22E: 46 C9        LSR $C9
+C6/B230: 4D 05 2C     EOR $2C05
+C6/B233: 2D 32 04     AND $0432
+C6/B236: 1B           TCS
+C6/B237: 1A           INC
+C6/B238: 99 00 8A     STA $8A00,Y
+C6/B23B: 1E BF 03     ASL $03BF,X
+C6/B23E: 03 E3        ORA $E3,S
+C6/B240: 03 A6        ORA $A6,S
+C6/B242: 04 44        TSB $44
+C6/B244: 08           PHP
+C6/B245: 02 05        COP $05
+C6/B247: 01 03        ORA ($03,X)
+C6/B249: 34 8F        BIT $8F,X
+C6/B24B: 0B           PHD
+C6/B24C: 33 A6        AND ($A6,S),Y
+C6/B24E: 02 6B        COP $6B
+C6/B250: 03 26        ORA $26,S
+C6/B252: 27 78        AND [$78]
+C6/B254: 06 25        ASL $25
+C6/B256: 13 1B        ORA ($1B,S),Y
+C6/B258: 0A           ASL
+C6/B259: C6 1A        DEC $1A
+C6/B25B: 28           PLP
+C6/B25C: 0B           PHD
+C6/B25D: 87 66        STA [$66]
+C6/B25F: CD 07 10     CMP $1007
+C6/B262: 34 08        BIT $08,X
+C6/B264: DD 09 4F     CMP $4F09,X
+C6/B267: 68           PLA
+C6/B268: 0A           ASL
+C6/B269: 4D 05 F0     EOR $F005
+C6/B26C: 0C 10 06     TSB $0610
+C6/B26F: AB           PLB
+C6/B270: AC 84 48     LDY $4884
+C6/B273: 5C D3 A6 04  JMP $04A6D3
+C6/B277: 69 0B 1A     ADC #$1A0B
+C6/B27A: 41 48        EOR ($48,X)
+C6/B27C: 02 23        COP $23
+C6/B27E: 8F 1B A9 0A  STA $0AA91B
+C6/B282: 87 6F        STA [$6F]
+C6/B284: 05 90        ORA $90
+C6/B286: 0E 69 0D     ASL $0D69
+C6/B289: 07 0C        ORA [$0C]
+C6/B28B: 0A           ASL
+C6/B28C: 0B           PHD
+C6/B28D: 72 01        ADC ($01)
+C6/B28F: 01 FF        ORA ($FF,X)
+C6/B291: 65 0A        ADC $0A
+C6/B293: 07 07        ORA [$07]
+C6/B295: 40           RTI

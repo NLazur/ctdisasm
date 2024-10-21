@@ -1,0 +1,133 @@
+FE/FB7B: 04 20        TSB $20
+FE/FB7D: 04 A2        TSB $A2
+FE/FB7F: 10 63        BPL $FBE4
+FE/FB81: 08           PHP
+FE/FB82: 42 04        WDM $04
+FE/FB84: 21 04        AND ($04,X)
+FE/FB86: 01 04        ORA ($04,X)
+FE/FB88: 00 04        BRK $04
+FE/FB8A: 00 00        BRK $00
+FE/FB8C: A1 65        LDA ($65,X)
+FE/FB8E: 61 24        ADC ($24,X)
+FE/FB90: 41 1C        EOR ($1C,X)
+FE/FB92: 5C 59 F0 30  JMP $30F059
+FE/FB96: 88           DEY
+FE/FB97: 24 40        BIT $40
+FE/FB99: 2F 40 0D C0  AND $C00D40
+FE/FB9D: 0C A2 10     TSB $10A2
+FE/FBA0: 00 00        BRK $00
+FE/FBA2: 00 04        BRK $04
+FE/FBA4: 21 04        AND ($04,X)
+FE/FBA6: 01 04        ORA ($04,X)
+FE/FBA8: 00 04        BRK $04
+FE/FBAA: 00 10        BRK $10
+FE/FBAC: 00 0C        BRK $0C
+FE/FBAE: 00 08        BRK $08
+FE/FBB0: 21 08        AND ($08,X)
+FE/FBB2: 23 08        AND $08,S
+FE/FBB4: 44 0C 43     MVP $0C,$43
+FE/FBB7: 04 22        TSB $22
+FE/FBB9: 04 01        TSB $01
+FE/FBBB: 04 00        TSB $00
+FE/FBBD: 04 00        TSB $00
+FE/FBBF: 00 02        BRK $02
+FE/FBC1: 04 01        TSB $01
+FE/FBC3: 04 01        TSB $01
+FE/FBC5: 00 00        BRK $00
+FE/FBC7: 00 00        BRK $00
+FE/FBC9: 00 00        BRK $00
+FE/FBCB: 00 20        BRK $20
+FE/FBCD: 04 20        TSB $20
+FE/FBCF: 00 00        BRK $00
+FE/FBD1: 00 00        BRK $00
+FE/FBD3: 00 00        BRK $00
+FE/FBD5: 00 00        BRK $00
+FE/FBD7: 00 01        BRK $01
+FE/FBD9: 08           PHP
+FE/FBDA: 00 08        BRK $08
+FE/FBDC: 21 04        AND ($04,X)
+FE/FBDE: 5F 76 9F 5F  EOR $5F9F76,X
+FE/FBE2: 34 32        BIT $32,X
+FE/FBE4: E7 18        SBC [$18]
+FE/FBE6: 34 32        BIT $32,X
+FE/FBE8: 7F 5F 43 04  ADC $04435F,X
+FE/FBEC: 42 04        WDM $04
+FE/FBEE: 41 04        EOR ($04,X)
+FE/FBF0: 21 04        AND ($04,X)
+FE/FBF2: 01 04        ORA ($04,X)
+FE/FBF4: 22 04 22 04  JSR $042204
+FE/FBF8: 22 00 21 00  JSR $002100
+FE/FBFC: 01 00        ORA ($00,X)
+FE/FBFE: BF 37 24 08  LDA $082437,X
+FE/FC02: 23 08        AND $08,S
+FE/FC04: 02 04        COP $04
+FE/FC06: 00 08        BRK $08
+FE/FC08: 00 04        BRK $04
+FE/FC0A: 00 00        BRK $00
+FE/FC0C: 00 00        BRK $00
+FE/FC0E: 00 00        BRK $00
+FE/FC10: 00 00        BRK $00
+FE/FC12: 00 00        BRK $00
+FE/FC14: 00 00        BRK $00
+FE/FC16: 22 04 20 00  JSR $002004
+FE/FC1A: 00 08        BRK $08
+FE/FC1C: 21 04        AND ($04,X)
+FE/FC1E: 69 7F 23     ADC #$237F
+FE/FC21: 00 22        BRK $22
+FE/FC23: 00 21        BRK $21
+FE/FC25: 00 01        BRK $01
+FE/FC27: 00 00        BRK $00
+FE/FC29: 00 40        BRK $40
+FE/FC2B: 04 20        TSB $20
+FE/FC2D: 04 20        TSB $20
+FE/FC2F: 00 20        BRK $20
+FE/FC31: 00 00        BRK $00
+FE/FC33: 00 00        BRK $00
+FE/FC35: 00 00        BRK $00
+FE/FC37: 00 00        BRK $00
+FE/FC39: 00 00        BRK $00
+FE/FC3B: 00 00        BRK $00
+FE/FC3D: 00 F5        BRK $F5
+FE/FC3F: 53 22        EOR ($22,S),Y
+FE/FC41: 04 02        TSB $02
+FE/FC43: 04 02        TSB $02
+FE/FC45: 00 01        BRK $01
+FE/FC47: 00 00        BRK $00
+FE/FC49: 00 00        BRK $00
+FE/FC4B: 00 00        BRK $00
+FE/FC4D: 00 00        BRK $00
+FE/FC4F: 00 00        BRK $00
+FE/FC51: 00 00        BRK $00
+FE/FC53: 00 21        BRK $21
+FE/FC55: 08           PHP
+FE/FC56: 20 08 20     JSR $2008
+FE/FC59: 04 FC        TSB $FC
+FE/FC5B: 04 F6        TSB $F6
+FE/FC5D: 04 FB        TSB $FB
+FE/FC5F: 73 00        ADC ($00,S),Y
+FE/FC61: 10 00        BPL $FC63
+FE/FC63: 0C 00 08     TSB $0800
+FE/FC66: 00 04        BRK $04
+FE/FC68: 00 00        BRK $00
+FE/FC6A: 00 00        BRK $00
+FE/FC6C: 01 04        ORA ($04,X)
+FE/FC6E: 00 04        BRK $04
+FE/FC70: 00 00        BRK $00
+FE/FC72: 00 00        BRK $00
+FE/FC74: 22 04 02 04  JSR $040204
+FE/FC78: 01 04        ORA ($04,X)
+FE/FC7A: 20 04 20     JSR $2004
+FE/FC7D: 04 A2        TSB $A2
+FE/FC7F: 10 22        BPL $FCA3
+FE/FC81: 04 01        TSB $01
+FE/FC83: 00 00        BRK $00
+FE/FC85: 00 00        BRK $00
+FE/FC87: 00 00        BRK $00
+FE/FC89: 00 00        BRK $00
+FE/FC8B: 00 41        BRK $41
+FE/FC8D: 48           PHA
+FE/FC8E: 41 18        EOR ($18,X)
+FE/FC90: 21 10        AND ($10,X)
+FE/FC92: 95 38        STA $38,X
+FE/FC94: 8F 20 48 14  STA $144820
+FE/FC98: 40           RTI

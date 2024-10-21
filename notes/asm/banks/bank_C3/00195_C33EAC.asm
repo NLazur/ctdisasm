@@ -1,0 +1,19 @@
+C3/3EAC: 0A           ASL
+C3/3EAD: 0E 09 0F     ASL $0F09
+C3/3EB0: 0A           ASL
+C3/3EB1: 0F 11 00 0A  ORA $0A0011
+C3/3EB5: 00 0B        BRK $0B
+C3/3EB7: 0E 0C 0B     ASL $0B0C
+C3/3EBA: 0A           ASL
+C3/3EBB: 03 00        ORA $00,S
+C3/3EBD: 0F 01 01 00  ORA $000101
+C3/3EC1: 00 02        BRK $02
+C3/3EC3: 04 06        TSB $06
+C3/3EC5: 08           PHP
+C3/3EC6: 0A           ASL
+C3/3EC7: 0C 00 0E     TSB $0E00
+C3/3ECA: 20 22 24     JSR $2422
+C3/3ECD: 26 28        ROL $28
+C3/3ECF: 2A           ROL
+C3/3ED0: 2C 00 2E     BIT $2E00
+C3/3ED3: 40           RTI

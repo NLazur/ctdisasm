@@ -1,0 +1,113 @@
+C6/133F: CF A2 DD 40  CMP $40DDA2
+C6/1343: 1B           TCS
+C6/1344: 01 F7        ORA ($F7,X)
+C6/1346: 00 5B        BRK $5B
+C6/1348: AF 28 57 71  LDA $715728
+C6/134C: 0F 71 0F 00  ORA $000F71
+C6/1350: CB           WAI
+C6/1351: BC 1B 64     LDY $641B,X
+C6/1354: 5B           TCD
+C6/1355: E4 43        CPX $43
+C6/1357: FC 00 4F     JSR ($4F00,X)
+C6/135A: F4 69 8F     PEA $8F69
+C6/135D: C8           INY
+C6/135E: DF 95 4A 00  CMP $004A95,X
+C6/1362: 1A           INC
+C6/1363: FB           XCE
+C6/1364: DA           PHX
+C6/1365: FB           XCE
+C6/1366: 13 18        ORA ($18,S),Y
+C6/1368: 9B           TXY
+C6/1369: 1F 00 D6 5F  ORA $5FD600,X
+C6/136D: 02 FF        COP $FF
+C6/136F: 43 BF        EOR $BF,S
+C6/1371: 88           DEY
+C6/1372: F7 00        SBC [$00],Y
+C6/1374: FB           XCE
+C6/1375: 04 F8        TSB $F8
+C6/1377: 07 1B        ORA [$1B]
+C6/1379: E7 08        SBC [$08]
+C6/137B: F1 01        SBC ($01),Y
+C6/137D: B0 04        BCS $1383
+C6/137F: 43 18        EOR $18,S
+C6/1381: 02 13        COP $13
+C6/1383: A1 88        LDA ($88,X)
+C6/1385: 03 00        ORA $00,S
+C6/1387: 84 03        STY $03
+C6/1389: 0A           ASL
+C6/138A: 85 97        STA $97
+C6/138C: E9 F6        SBC #$F6
+C6/138E: E0 00 3B     CPX #$3B00
+C6/1391: C4 7C        CPY $7C
+C6/1393: D3 7D        CMP ($7D,S),Y
+C6/1395: C2 FD        REP #$FD
+C6/1397: CA           DEX
+C6/1398: 00 FF        BRK $FF
+C6/139A: E7 FD        SBC [$FD]
+C6/139C: EB           XBA
+C6/139D: 78           SEI
+C6/139E: 77 1D        ADC [$1D],Y
+C6/13A0: 06 00        ASL $00
+C6/13A2: 73 09        ADC ($09,S),Y
+C6/13A4: 17 F8        ORA [$F8],Y
+C6/13A6: 07 E0        ORA [$E0]
+C6/13A8: C3 E1        CMP $E1,S
+C6/13AA: 00 50        BRK $50
+C6/13AC: 98           TYA
+C6/13AD: 01 21        ORA ($21,X)
+C6/13AF: 12 80        ORA ($80)
+C6/13B1: 81 80        STA ($80,X)
+C6/13B3: 00 6A        BRK $6A
+C6/13B5: F7 7B        SBC [$7B],Y
+C6/13B7: C7 FF        CMP [$FF]
+C6/13B9: D1 7E        CMP ($7E),Y
+C6/13BB: 81 00        STA ($00,X)
+C6/13BD: F6 AF        INC $AF,X
+C6/13BF: F7 0E        SBC [$0E],Y
+C6/13C1: FC 97 7E     JSR ($7E97,X)
+C6/13C4: CF 00 08 FB  CMP $FB0800
+C6/13C8: 8A           TXA
+C6/13C9: 7F 0B F9 47  ADC $47F90B,X
+C6/13CD: F5 00        SBC $00,X
+C6/13CF: 23 1B        AND $1B,S
+C6/13D1: D9 67 15     CMP $1567,Y
+C6/13D4: F2 FE        SBC ($FE)
+C6/13D6: 3F 00 1A E5  AND $E51A00,X
+C6/13DA: 9A           TXS
+C6/13DB: E5 98        SBC $98
+C6/13DD: E4 96        CPX $96
+C6/13DF: E8           INX
+C6/13E0: 00 00        BRK $00
+C6/13E2: FC 40 BE     JSR ($BE40,X)
+C6/13E5: 11 EF        ORA ($EF),Y
+C6/13E7: C0 E3 00     CPY #$00E3
+C6/13EA: 7D BB FF     ADC $FFBB,X
+C6/13ED: C9 F8 D7     CMP #$D7F8
+C6/13F0: FC D9 00     JSR ($00D9,X)
+C6/13F3: E2 1B        SEP #$1B
+C6/13F5: 10 BD        BPL $13B4
+C6/13F7: 57 FE        EOR [$FE],Y
+C6/13F9: BE 7F 04     LDX $047F,Y
+C6/13FC: 04 87        TSB $87
+C6/13FE: 8C 05 08     STY $0805
+C6/1401: 01 0E        ORA ($0E,X)
+C6/1403: 03 1C        ORA $1C,S
+C6/1405: 00 00        BRK $00
+C6/1407: FF 79 BF 50  SBC $50BF79,X
+C6/140B: BF ED 32 00  LDA $0032ED,X
+C6/140F: FC E3 7E     JSR ($7EE3,X)
+C6/1412: E1 1A        SBC ($1A,X)
+C6/1414: 85 1A        STA $1A
+C6/1416: 25 00        AND $00
+C6/1418: 58           CLI
+C6/1419: A7 17        LDA [$17]
+C6/141B: 61 B9        ADC ($B9,X)
+C6/141D: 7F 8F F0 00  ADC $00F08F,X
+C6/1421: 0F F0 5F E0  ORA $E05FF0
+C6/1425: 9F 60 1F E0  STA $E01F60,X
+C6/1429: 00 3F        BRK $3F
+C6/142B: C0 76 89     CPY #$8976
+C6/142E: 03 FF        ORA $FF,S
+C6/1430: E0 20        CPX #$20
+C6/1432: 08           PHP
+C6/1433: 40           RTI

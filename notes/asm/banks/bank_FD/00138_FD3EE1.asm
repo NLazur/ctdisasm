@@ -1,0 +1,14 @@
+FD/3EE1: 4A           LSR
+FD/3EE2: 0E 00 98     ASL $9800
+FD/3EE5: 18           CLC
+FD/3EE6: D8           CLD
+FD/3EE7: D9 E6 91     CMP $91E6,Y
+FD/3EEA: C7 87        CMP [$87]
+FD/3EEC: 00 C1        BRK $C1
+FD/3EEE: 01 83        ORA ($83,X)
+FD/3EF0: 83 83        STA $83,S
+FD/3EF2: 73 FE        ADC ($FE,S),Y
+FD/3EF4: EF 80 F8 E7  SBC $E7F880
+FD/3EF8: D9 07 91     CMP $9107,Y
+FD/3EFB: 1F 87 88 05  ORA $058887,X
+FD/3EFF: 40           RTI

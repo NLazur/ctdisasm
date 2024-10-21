@@ -1,0 +1,57 @@
+CD/076C: E2 10        SEP #$10
+CD/076E: C2 20        REP #$20
+CD/0770: AD 70 2C     LDA $2C70
+CD/0773: 18           CLC
+CD/0774: 6D A4 CC     ADC $CCA4
+CD/0777: 18           CLC
+CD/0778: 6D 01 BB     ADC $BB01
+CD/077B: 85 45        STA $45
+CD/077D: AD 72 2C     LDA $2C72
+CD/0780: 18           CLC
+CD/0781: 6D A6 CC     ADC $CCA6
+CD/0784: 18           CLC
+CD/0785: 6D 03 BB     ADC $BB03
+CD/0788: 85 47        STA $47
+CD/078A: AD 74 2C     LDA $2C74
+CD/078D: 18           CLC
+CD/078E: 6D A8 CC     ADC $CCA8
+CD/0791: 85 49        STA $49
+CD/0793: AD 76 2C     LDA $2C76
+CD/0796: 18           CLC
+CD/0797: 6D AA CC     ADC $CCAA
+CD/079A: 85 4B        STA $4B
+CD/079C: AD 5A CA     LDA $CA5A
+CD/079F: 18           CLC
+CD/07A0: 6D 5E CA     ADC $CA5E
+CD/07A3: 18           CLC
+CD/07A4: 6D AC CC     ADC $CCAC
+CD/07A7: 85 4D        STA $4D
+CD/07A9: AD 5C CA     LDA $CA5C
+CD/07AC: 18           CLC
+CD/07AD: 6D 60 CA     ADC $CA60
+CD/07B0: 18           CLC
+CD/07B1: 6D AE CC     ADC $CCAE
+CD/07B4: 85 4F        STA $4F
+CD/07B6: 4C 06 07     JMP $0706
+CD/07B9: 20 E2 07     JSR $07E2
+CD/07BC: C2 20        REP #$20
+CD/07BE: E2 10        SEP #$10
+CD/07C0: A5 1E        LDA $1E
+CD/07C2: D0 04        BNE $07C8
+CD/07C4: A5 4D        LDA $4D
+CD/07C6: 80 06        BRA $07CE
+CD/07C8: BD 00 0A     LDA $0A00,X
+CD/07CB: 18           CLC
+CD/07CC: 65 4D        ADC $4D
+CD/07CE: 9D 89 BD     STA $BD89,X
+CD/07D1: A5 4F        LDA $4F
+CD/07D3: 9D 8B BD     STA $BD8B,X
+CD/07D6: E8           INX
+CD/07D7: E8           INX
+CD/07D8: E8           INX
+CD/07D9: E8           INX
+CD/07DA: D0 E4        BNE $07C0
+CD/07DC: 7B           TDC
+CD/07DD: E2 20        SEP #$20
+CD/07DF: C2 10        REP #$10
+CD/07E1: 60           RTS

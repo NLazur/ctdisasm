@@ -1,0 +1,69 @@
+FE/D2F9: 51 52        EOR ($52),Y
+FE/D2FB: 1A           INC
+FE/D2FC: 25 25        AND $25
+FE/D2FE: 62 44 35     PER $FE0845
+FE/D301: 02 1D        COP $1D
+FE/D303: 1E 1C 76     ASL $761C,X
+FE/D306: 00 C8        BRK $C8
+FE/D308: 00 3D        BRK $3D
+FE/D30A: 00 3C        BRK $3C
+FE/D30C: 3D 2F 4F     AND $4F2F,X
+FE/D30F: 44 C0 C1     MVP $C0,$C1
+FE/D312: C2 00        REP #$00
+FE/D314: 55 45        EOR $45,X
+FE/D316: 45 55        EOR $55
+FE/D318: 44 BA 98     MVP $BA,$98
+FE/D31B: 47 C0        EOR [$C0]
+FE/D31D: 48           PHA
+FE/D31E: 01 61        ORA ($61,X)
+FE/D320: 62 67 68     PER $FE3B8A
+FE/D323: 8A           TXA
+FE/D324: 04 00        TSB $00
+FE/D326: 51 83        EOR ($83),Y
+FE/D328: C0 18        CPY #$18
+FE/D32A: 9E 05 73     STZ $7305,X
+FE/D32D: 73 55        ADC ($55,S),Y
+FE/D32F: 10 0A        BPL $D33B
+FE/D331: B8           CLV
+FE/D332: 00 02        BRK $02
+FE/D334: 1D 71 01     ORA $0171,X
+FE/D337: 10 43        BPL $D37C
+FE/D339: 4B           PHK
+FE/D33A: 4C 4D 4C     JMP $4C4D
+FE/D33D: 00 4D        BRK $4D
+FE/D33F: 4F 2A 4A D0  EOR $D04A2A
+FE/D343: D1 45        CMP ($45),Y
+FE/D345: 55 00        EOR $00,X
+FE/D347: 55 45        EOR $45,X
+FE/D349: 44 44 44     MVP $44,$44
+FE/D34C: 57 76        EOR [$76],Y
+FE/D34E: 77 C0        ADC [$C0],Y
+FE/D350: 87 82        STA [$82]
+FE/D352: 72 77        ADC ($77)
+FE/D354: 01 69        ORA ($69,X)
+FE/D356: C1 0D        CMP ($0D,X)
+FE/D358: 31 57        AND ($57),Y
+FE/D35A: 06 5E        ASL $5E
+FE/D35C: BE 0A FD     LDX $FD0A,Y
+FE/D35F: 01 72        ORA ($72,X)
+FE/D361: 73 44        ADC ($44,S),Y
+FE/D363: 1A           INC
+FE/D364: 3B           TSC
+FE/D365: 00 3C        BRK $3C
+FE/D367: 2D 2D 1C     AND $1C2D
+FE/D36A: 2F 4F 64 08  AND $08644F
+FE/D36E: 00 34        BRK $34
+FE/D370: 35 34        AND $34,X
+FE/D372: 35 46        AND $46,X
+FE/D374: 44 3A 5A     MVP $3A,$5A
+FE/D377: 00 E0        BRK $E0
+FE/D379: E1 45        SBC ($45,X)
+FE/D37B: 90 91        BCC $D30E
+FE/D37D: 44 A6 A7     MVP $A6,$A7
+FE/D380: 00 A8        BRK $A8
+FE/D382: 67 86        ADC [$86]
+FE/D384: 87 79        STA [$79]
+FE/D386: 92 93        STA ($93)
+FE/D388: 94 5C        STY $5C,X
+FE/D38A: 96 79        STX $79,Y
+FE/D38C: 40           RTI

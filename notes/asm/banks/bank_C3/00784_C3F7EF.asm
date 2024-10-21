@@ -1,0 +1,4 @@
+C3/F7EF: F0 00        BEQ $F7F1
+C3/F7F1: 2C 00 FF     BIT $FF00
+C3/F7F4: 00 2C        BRK $2C
+C3/F7F6: 40           RTI

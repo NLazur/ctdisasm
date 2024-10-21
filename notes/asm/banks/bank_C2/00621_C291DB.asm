@@ -1,0 +1,32 @@
+C2/91DB: EB           XBA
+C2/91DC: 91 23        STA ($23),Y
+C2/91DE: 92 23        STA ($23)
+C2/91E0: 92 EB        STA ($EB)
+C2/91E2: 91 EB        STA ($EB),Y
+C2/91E4: 91 3C        STA ($3C),Y
+C2/91E6: 92 EB        STA ($EB)
+C2/91E8: 91 EB        STA ($EB),Y
+C2/91EA: 91 A9        STA ($A9),Y
+C2/91EC: 05 8F        ORA $8F
+C2/91EE: 02 42        COP $42
+C2/91F0: 00 AD        BRK $AD
+C2/91F2: B5 0D        LDA $0D,X
+C2/91F4: 8F 03 42 00  STA $004203
+C2/91F8: EB           XBA
+C2/91F9: EA           NOP
+C2/91FA: C2 20        REP #$20
+C2/91FC: AF 16 42 00  LDA $004216
+C2/9200: 85 00        STA $00
+C2/9202: E2 20        SEP #$20
+C2/9204: A9 0C        LDA #$0C
+C2/9206: 8F 02 42 00  STA $004202
+C2/920A: AD 1C 9B     LDA $9B1C
+C2/920D: 8F 03 42 00  STA $004203
+C2/9211: EA           NOP
+C2/9212: C2 21        REP #$21
+C2/9214: A5 00        LDA $00
+C2/9216: 6F 16 42 00  ADC $004216
+C2/921A: 8F 04 42 00  STA $004204
+C2/921E: E2 20        SEP #$20
+C2/9220: A9 09        LDA #$09
+C2/9222: 60           RTS

@@ -1,0 +1,40 @@
+C2/E18A: 08           PHP
+C2/E18B: E2 30        SEP #$30
+C2/E18D: 20 6E 91     JSR $916E
+C2/E190: AD BA 9A     LDA $9ABA
+C2/E193: C9 A8        CMP #$A8
+C2/E195: D0 03        BNE $E19A
+C2/E197: 0E 21 9B     ASL $9B21
+C2/E19A: A6 51        LDX $51
+C2/E19C: DA           PHX
+C2/E19D: BF DC E1 C2  LDA $C2E1DC,X
+C2/E1A1: AA           TAX
+C2/E1A2: BD 90 9A     LDA $9A90,X
+C2/E1A5: 85 00        STA $00
+C2/E1A7: BD E6 9A     LDA $9AE6,X
+C2/E1AA: 9D 90 9A     STA $9A90,X
+C2/E1AD: AA           TAX
+C2/E1AE: A9 00        LDA #$00
+C2/E1B0: E4 00        CPX $00
+C2/E1B2: F0 06        BEQ $E1BA
+C2/E1B4: A9 08        LDA #$08
+C2/E1B6: B0 02        BCS $E1BA
+C2/E1B8: A9 1C        LDA #$1C
+C2/E1BA: FA           PLX
+C2/E1BB: 9D 4D 0D     STA $0D4D,X
+C2/E1BE: E8           INX
+C2/E1BF: E0 07        CPX #$07
+C2/E1C1: 90 D9        BCC $E19C
+C2/E1C3: A5 71        LDA $71
+C2/E1C5: 0A           ASL
+C2/E1C6: 0A           ASL
+C2/E1C7: 0A           ASL
+C2/E1C8: A8           TAY
+C2/E1C9: 20 21 DE     JSR $DE21
+C2/E1CC: C2 10        REP #$10
+C2/E1CE: A2 18 C3     LDX #$C318
+C2/E1D1: 20 31 ED     JSR $ED31
+C2/E1D4: AD C9 04     LDA $04C9
+C2/E1D7: 20 F3 F2     JSR $F2F3
+C2/E1DA: 28           PLP
+C2/E1DB: 60           RTS

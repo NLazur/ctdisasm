@@ -1,0 +1,56 @@
+C2/0ADC: A5 0C        LDA $0C
+C2/0ADE: 4A           LSR
+C2/0ADF: 4A           LSR
+C2/0AE0: 4A           LSR
+C2/0AE1: C9 20        CMP #$20
+C2/0AE3: 00 90        BRK $90
+C2/0AE5: 04 18        TSB $18
+C2/0AE7: 69 E0        ADC #$E0
+C2/0AE9: 03 18        ORA $18,S
+C2/0AEB: 65 10        ADC $10
+C2/0AED: 85 12        STA $12
+C2/0AEF: AA           TAX
+C2/0AF0: E2 20        SEP #$20
+C2/0AF2: 8B           PHB
+C2/0AF3: 7B           TDC
+C2/0AF4: 48           PHA
+C2/0AF5: AB           PLB
+C2/0AF6: 8E 16 21     STX $2116
+C2/0AF9: A9 81        LDA #$81
+C2/0AFB: 8D 15 21     STA $2115
+C2/0AFE: A9 01        LDA #$01
+C2/0B00: 8D 70 43     STA $4370
+C2/0B03: A9 18        LDA #$18
+C2/0B05: 8D 71 43     STA $4371
+C2/0B08: A6 E0        LDX $E0
+C2/0B0A: 8E 72 43     STX $4372
+C2/0B0D: A5 E2        LDA $E2
+C2/0B0F: 8D 74 43     STA $4374
+C2/0B12: A2 40 00     LDX #$0040
+C2/0B15: 8E 75 43     STX $4375
+C2/0B18: A9 80        LDA #$80
+C2/0B1A: 8D 0B 42     STA $420B
+C2/0B1D: C2 20        REP #$20
+C2/0B1F: A5 12        LDA $12
+C2/0B21: 1A           INC
+C2/0B22: 8D 16 21     STA $2116
+C2/0B25: A5 E0        LDA $E0
+C2/0B27: 18           CLC
+C2/0B28: 69 40 00     ADC #$0040
+C2/0B2B: 8D 72 43     STA $4372
+C2/0B2E: A5 E2        LDA $E2
+C2/0B30: 8D 74 43     STA $4374
+C2/0B33: E2 20        SEP #$20
+C2/0B35: A9 81        LDA #$81
+C2/0B37: 8D 15 21     STA $2115
+C2/0B3A: A9 01        LDA #$01
+C2/0B3C: 8D 70 43     STA $4370
+C2/0B3F: A9 18        LDA #$18
+C2/0B41: 8D 71 43     STA $4371
+C2/0B44: A2 40 00     LDX #$0040
+C2/0B47: 8E 75 43     STX $4375
+C2/0B4A: A9 80        LDA #$80
+C2/0B4C: 8D 0B 42     STA $420B
+C2/0B4F: C2 20        REP #$20
+C2/0B51: AB           PLB
+C2/0B52: 60           RTS

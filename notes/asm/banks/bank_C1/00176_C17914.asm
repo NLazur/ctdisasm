@@ -1,0 +1,66 @@
+C1/7914: A0 02 00     LDY #$0002
+C1/7917: 84 84        STY $84
+C1/7919: AD 15 A0     LDA $A015
+C1/791C: AA           TAX
+C1/791D: 4C 97 76     JMP $7697
+C1/7920: A6 86        LDX $86
+C1/7922: DA           PHX
+C1/7923: 98           TYA
+C1/7924: 38           SEC
+C1/7925: E9 41        SBC #$41
+C1/7927: 0A           ASL
+C1/7928: AA           TAX
+C1/7929: BF 7F FB CC  LDA $CCFB7F,X
+C1/792D: 85 80        STA $80
+C1/792F: 85 AE        STA $AE
+C1/7931: BF 80 FB CC  LDA $CCFB80,X
+C1/7935: 85 81        STA $81
+C1/7937: AD 14 A0     LDA $A014
+C1/793A: AA           TAX
+C1/793B: BD 0C 1D     LDA $1D0C,X
+C1/793E: 85 AD        STA $AD
+C1/7940: BD 23 1D     LDA $1D23,X
+C1/7943: 85 84        STA $84
+C1/7945: 20 89 00     JSR $0089
+C1/7948: A6 AF        LDX $AF
+C1/794A: 86 82        STX $82
+C1/794C: AD 40 A2     LDA $A240
+C1/794F: 85 AD        STA $AD
+C1/7951: AD 50 A2     LDA $A250
+C1/7954: 85 85        STA $85
+C1/7956: A5 81        LDA $81
+C1/7958: 85 AE        STA $AE
+C1/795A: 20 89 00     JSR $0089
+C1/795D: C2 21        REP #$21
+C1/795F: A5 AF        LDA $AF
+C1/7961: 65 82        ADC $82
+C1/7963: 20 1B 01     JSR $011B
+C1/7966: 85 82        STA $82
+C1/7968: 7B           TDC
+C1/7969: E2 20        SEP #$20
+C1/796B: A5 82        LDA $82
+C1/796D: 8D B0 A2     STA $A2B0
+C1/7970: A5 84        LDA $84
+C1/7972: 85 AD        STA $AD
+C1/7974: A5 80        LDA $80
+C1/7976: 85 AE        STA $AE
+C1/7978: 20 89 00     JSR $0089
+C1/797B: A6 AF        LDX $AF
+C1/797D: 86 82        STX $82
+C1/797F: A5 85        LDA $85
+C1/7981: 85 AD        STA $AD
+C1/7983: A5 81        LDA $81
+C1/7985: 85 AE        STA $AE
+C1/7987: 20 89 00     JSR $0089
+C1/798A: C2 21        REP #$21
+C1/798C: A5 AF        LDA $AF
+C1/798E: 65 82        ADC $82
+C1/7990: 20 1B 01     JSR $011B
+C1/7993: 85 82        STA $82
+C1/7995: 7B           TDC
+C1/7996: E2 20        SEP #$20
+C1/7998: A5 82        LDA $82
+C1/799A: 8D B2 A2     STA $A2B2
+C1/799D: FA           PLX
+C1/799E: 86 86        STX $86
+C1/79A0: 60           RTS

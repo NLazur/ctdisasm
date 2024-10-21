@@ -1,0 +1,104 @@
+FD/00B9: 9C 62 8C     STZ $8C62
+FD/00BC: 52 84        EOR ($84)
+FD/00BE: 4A           LSR
+FD/00BF: D0 08        BNE $00C9
+FD/00C1: 38           SEC
+FD/00C2: 20 44 6C     JSR $6C44
+FD/00C5: AA           TAX
+FD/00C6: C6 00        DEC $00
+FD/00C8: 02 08        COP $08
+FD/00CA: 6C AA 02     JMP ($02AA)
+FD/00CD: 38           SEC
+FD/00CE: C0 00        CPY #$00
+FD/00D0: F8           SED
+FD/00D1: 04 0C        TSB $0C
+FD/00D3: CA           DEX
+FD/00D4: 86 40        STX $40
+FD/00D6: 0C FE 02     TSB $02FE
+FD/00D9: A0 28        LDY #$28
+FD/00DB: 20 28 54     JSR $5428
+FD/00DE: 82 10 68     BRL $FD68F1
+FD/00E1: 0E 1C 1D     ASL $1D1C
+FD/00E4: 01 20        ORA ($20,X)
+FD/00E6: 28           PLP
+FD/00E7: 70 28        BVS $0111
+FD/00E9: BA           TSX
+FD/00EA: C6 44        DEC $44
+FD/00EC: 82 00 60     BRL $FD60EF
+FD/00EF: A0 3A        LDY #$3A
+FD/00F1: 46 C4        LSR $C4
+FD/00F3: 42 46        WDM $46
+FD/00F5: 80 E4        BRA $00DB
+FD/00F7: BA           TSX
+FD/00F8: C6 F0        DEC $F0
+FD/00FA: 08           PHP
+FD/00FB: 20 10 02     JSR $0210
+FD/00FE: 38           SEC
+FD/00FF: D0 28        BNE $0129
+FD/0101: D6 18        DEC $18,X
+FD/0103: 00 FA        BRK $FA
+FD/0105: 86 00        STX $00
+FD/0107: 00 44        BRK $44
+FD/0109: 82 44 82     BRL $FD8350
+FD/010C: 00 6C        BRK $6C
+FD/010E: AA           TAX
+FD/010F: 44 28 6C     MVP $28,$6C
+FD/0112: 44 28 00     MVP $28,$00
+FD/0115: 03 1F        ORA $1F,S
+FD/0117: 00 F0        BRK $F0
+FD/0119: 08           PHP
+FD/011A: 52 BC        EOR ($BC)
+FD/011C: 6A           ROR
+FD/011D: B4 4A        LDY $4A,X
+FD/011F: AC 08 42     LDY $4208
+FD/0122: AC 6A 60     LDY $606A
+FD/0125: 09 82        ORA #$82
+FD/0127: 44 44 AA     MVP $44,$AA
+FD/012A: 00 28        BRK $28
+FD/012C: 54 10 28     MVN $10,$28
+FD/012F: 28           PLP
+FD/0130: 54 44 AA     MVN $44,$AA
+FD/0133: 02 82        COP $82
+FD/0135: 50 01        BVC $0138
+FD/0137: 64 02        STZ $02
+FD/0139: 64 02        STZ $02
+FD/013B: 24 42        BIT $42
+FD/013D: 30 7A        BMI $01B9
+FD/013F: 46 34        LSR $34
+FD/0141: 2C 08 09     BIT $0908
+FD/0144: 50 09        BVC $014F
+FD/0146: 08           PHP
+FD/0147: 84 00        STY $00
+FD/0149: 10 08        BPL $0153
+FD/014B: 20 10 40     JSR $4010
+FD/014E: 20 80 42     JSR $4280
+FD/0151: C2 FE        REP #$FE
+FD/0153: AD 51 40     LDA $4051
+FD/0156: 20 60 20     JSR $2060
+FD/0159: BE 69 01     LDX $0169,Y
+FD/015C: F8           SED
+FD/015D: 01 0C        ORA ($0C,X)
+FD/015F: 98           TYA
+FD/0160: 20 00 50     JSR $5000
+FD/0163: 00 70        BRK $70
+FD/0165: 88           DEY
+FD/0166: 88           DEY
+FD/0167: C4 00        CPY $00
+FD/0169: 88           DEY
+FD/016A: 0F 22 F0 10  ORA $10F022
+FD/016E: 90 04        BCC $0174
+FD/0170: 20 10 20     JSR $2010
+FD/0173: A0 90 90     LDY #$9090
+FD/0176: 00 80        BRK $80
+FD/0178: 00 14        BRK $14
+FD/017A: 00 90        BRK $90
+FD/017C: 30 1A        BMI $0198
+FD/017E: A0 E0 00     LDY #$00E0
+FD/0181: 90 20        BCC $01A3
+FD/0183: 90 04        BCC $0189
+FD/0185: 00 E0        BRK $E0
+FD/0187: 30 28        BMI $01B1
+FD/0189: 55 1E        EOR $1E,X
+FD/018B: 00 E0        BRK $E0
+FD/018D: 22 00 F0 10  JSR $10F000
+FD/0191: 60           RTS

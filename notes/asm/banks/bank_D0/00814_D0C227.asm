@@ -1,0 +1,44 @@
+D0/C227: C0 00 00     CPY #$0000
+D0/C22A: 02 03        COP $03
+D0/C22C: 07 04        ORA [$04]
+D0/C22E: 03 04        ORA $04,S
+D0/C230: 03 04        ORA $04,S
+D0/C232: 47 C4        EOR [$C4]
+D0/C234: E2 23        SEP #$23
+D0/C236: C0 20        CPY #$20
+D0/C238: 02 03        COP $03
+D0/C23A: 03 04        ORA $04,S
+D0/C23C: 0F 08 07 08  ORA $080708
+D0/C240: 47 C8        EOR [$C8]
+D0/C242: CF 28 F3 14  CMP $14F328
+D0/C246: E2 13        SEP #$13
+D0/C248: 02 03        COP $03
+D0/C24A: 01 01        ORA ($01,X)
+D0/C24C: 00 00        BRK $00
+D0/C24E: 00 00        BRK $00
+D0/C250: 00 00        BRK $00
+D0/C252: 00 00        BRK $00
+D0/C254: 0C 0C 12     TSB $120C
+D0/C257: 1E 03 04     ASL $0403,X
+D0/C25A: 07 04        ORA [$04]
+D0/C25C: 02 03        COP $03
+D0/C25E: 00 00        BRK $00
+D0/C260: 00 00        BRK $00
+D0/C262: 24 3C        BIT $3C
+D0/C264: 7E 42 3C     ROR $3C42,X
+D0/C267: 42 07        WDM $07
+D0/C269: 08           PHP
+D0/C26A: 0F 08 03 04  ORA $040308
+D0/C26E: 02 03        COP $03
+D0/C270: 24 3C        BIT $3C
+D0/C272: 3C 42 FF     BIT $FF42,X
+D0/C275: 81 7E        STA ($7E,X)
+D0/C277: 81 00        STA ($00,X)
+D0/C279: 00 00        BRK $00
+D0/C27B: 00 00        BRK $00
+D0/C27D: 00 04        BRK $04
+D0/C27F: 04 18        TSB $18
+D0/C281: 18           CLC
+D0/C282: 30 30        BMI $C2B4
+D0/C284: A0 E0        LDY #$E0
+D0/C286: 40           RTI

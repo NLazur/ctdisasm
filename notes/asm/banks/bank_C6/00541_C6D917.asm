@@ -1,0 +1,8 @@
+C6/D917: 18           CLC
+C6/D918: BA           TSX
+C6/D919: 10 44        BPL $D95F
+C6/D91B: 23 29        AND $29,S
+C6/D91D: 22 C2 02 BF  JSR $BF02C2
+C6/D921: 10 20        BPL $D943
+C6/D923: 22 44 20 20  JSR $202044
+C6/D927: 40           RTI

@@ -1,0 +1,4 @@
+CC/F063: 7B           TDC
+CC/F064: 80 00        BRA $F066
+CC/F066: 22 18 00 C1  JSR $C10018
+CC/F06A: 60           RTS

@@ -1,0 +1,50 @@
+FE/56BA: 18           CLC
+FE/56BB: E0 64 15     CPX #$1564
+FE/56BE: 0E 30 DA     ASL $DA30
+FE/56C1: 14 FF        TRB $FF
+FE/56C3: 04 00        TSB $00
+FE/56C5: 02 72        COP $72
+FE/56C7: 04 41        TSB $41
+FE/56C9: C0 C0 20     CPY #$20C0
+FE/56CC: E0 40 10     CPX #$1040
+FE/56CF: F8           SED
+FE/56D0: 08           PHP
+FE/56D1: FC 02 7E     JSR ($7E02,X)
+FE/56D4: 5A           PHY
+FE/56D5: 05 81        ORA $81
+FE/56D7: 83 1D        STA $1D,S
+FE/56D9: 53 80        EOR ($80,S),Y
+FE/56DB: 02 FF        COP $FF
+FE/56DD: 00 1C        BRK $1C
+FE/56DF: E0 7C 22     CPX #$227C
+FE/56E2: 02 5E        COP $5E
+FE/56E4: C0 79 11     CPY #$1179
+FE/56E7: 91 44        STA ($44),Y
+FE/56E9: A6 15        LDX $15
+FE/56EB: 78           SEI
+FE/56EC: 74 0F        STZ $0F,X
+FE/56EE: 4D 02 08     EOR $0802
+FE/56F1: 82 28 2E     BRL $FE851C
+FE/56F4: 03 0F        ORA $0F,S
+FE/56F6: 0B           PHD
+FE/56F7: 0D 07 0C     ORA $0C07
+FE/56FA: 81 13        STA ($13,X)
+FE/56FC: 58           CLI
+FE/56FD: 3F 1F 18 96  AND $96181F,X
+FE/5701: 05 A4        ORA $A4
+FE/5703: 05 06        ORA $06
+FE/5705: 7D 13 C0     ADC $C013,X
+FE/5708: A0 E0 B0     LDY #$B0E0
+FE/570B: 70 00        BVS $570D
+FE/570D: B0 D8        BCS $56E7
+FE/570F: 14 80        TRB $80
+FE/5711: DE 44 06     DEC $0644,X
+FE/5714: A0 05 F2     LDY #$F205
+FE/5717: 0D 20 08     ORA $0820
+FE/571A: 00 12        BRK $12
+FE/571C: 07 62        ORA [$62]
+FE/571E: 8A           TXA
+FE/571F: 28           PLP
+FE/5720: 18           CLC
+FE/5721: B0 11        BCS $5734
+FE/5723: 40           RTI

@@ -1,0 +1,61 @@
+FD/3C7B: 16 40        ASL $40,X
+FD/3C7D: 8B           PHB
+FD/3C7E: 01 5F        ORA ($5F,X)
+FD/3C80: 33 0B        AND ($0B,S),Y
+FD/3C82: 02 03        COP $03
+FD/3C84: 06 09        ASL $09
+FD/3C86: 06 06        ASL $06
+FD/3C88: 00 09        BRK $09
+FD/3C8A: 12 1D        ORA ($1D)
+FD/3C8C: 04 03        TSB $03
+FD/3C8E: 18           CLC
+FD/3C8F: 0B           PHD
+FD/3C90: 08           PHP
+FD/3C91: 00 17        BRK $17
+FD/3C93: 09 03        ORA #$03
+FD/3C95: 0C 0D 06     TSB $060D
+FD/3C98: 0F 0A 00 0E  ORA $0E000A
+FD/3C9C: 19 0B 1D     ORA $1D0B,Y
+FD/3C9F: 1D 11 15     ORA $1511,X
+FD/3CA2: 0B           PHD
+FD/3CA3: 00 0B        BRK $0B
+FD/3CA5: 02 0D        COP $0D
+FD/3CA7: 02 0B        COP $0B
+FD/3CA9: 08           PHP
+FD/3CAA: 0B           PHD
+FD/3CAB: 05 00        ORA $00
+FD/3CAD: 06 04        ASL $04
+FD/3CAF: 16 0A        ASL $0A,X
+FD/3CB1: 14 0A        TRB $0A
+FD/3CB3: 1C 14 40     TRB $4014
+FD/3CB6: 18           CLC
+FD/3CB7: 01 06        ORA ($06,X)
+FD/3CB9: 0B           PHD
+FD/3CBA: 04 0B        TSB $0B
+FD/3CBC: 4C 1B 08     JMP $081B
+FD/3CBF: 08           PHP
+FD/3CC0: 17 08        ORA [$08],Y
+FD/3CC2: 1F 8F 00 E0  ORA $E0008F,X
+FD/3CC6: 58           CLI
+FD/3CC7: 3D 9C 00     AND $009C,X
+FD/3CCA: 4F DD 6C D7  EOR $D76CDD
+FD/3CCE: F4 D0 7D     PEA $7DD0
+FD/3CD1: E5 00        SBC $00
+FD/3CD3: 3D 63 AE     AND $AE63,X
+FD/3CD6: FA           PLX
+FD/3CD7: C7 39        CMP [$39]
+FD/3CD9: D2 B8        CMP ($B8)
+FD/3CDB: 00 D1        BRK $D1
+FD/3CDD: D0 D8        BNE $3CB7
+FD/3CDF: E8           INX
+FD/3CE0: 4C 41 B8     JMP $B841
+FD/3CE3: DD 00 1E     CMP $1E00,X
+FD/3CE6: FF 50 A4 76  SBC $76A450,X
+FD/3CEA: 95 73        STA $73,X
+FD/3CEC: 10 00        BPL $3CEE
+FD/3CEE: 1B           TCS
+FD/3CEF: 41 37        EOR ($37,X)
+FD/3CF1: 54 D6 67     MVN $D6,$67
+FD/3CF4: C0 C0        CPY #$C0
+FD/3CF6: 00 80        BRK $80
+FD/3CF8: 40           RTI

@@ -1,0 +1,34 @@
+C0/6DCF: A6 FE        LDX $FE         ; load map bg3 graphics
+C0/6DD1: BF 02 00 F6  LDA $F60002,X
+C0/6DD5: C9 FF        CMP #$FF
+C0/6DD7: F0 49        BEQ $6E22
+C0/6DD9: C2 20        REP #$20
+C0/6DDB: 29 FF 00     AND #$00FF
+C0/6DDE: 85 D9        STA $D9
+C0/6DE0: 18           CLC
+C0/6DE1: 65 D9        ADC $D9
+C0/6DE3: 65 D9        ADC $D9
+C0/6DE5: 85 D9        STA $D9
+C0/6DE7: AA           TAX
+C0/6DE8: BF 20 22 F6  LDA $F62220,X
+C0/6DEC: 8D 00 03     STA $0300
+C0/6DEF: A9 80 50     LDA #$5080      ; to $7F5080
+C0/6DF2: 8D 03 03     STA $0303
+C0/6DF5: E2 20        SEP #$20
+C0/6DF7: BF 22 22 F6  LDA $F62222,X
+C0/6DFB: 8D 02 03     STA $0302
+C0/6DFE: A9 7F        LDA #$7F
+C0/6E00: 8D 05 03     STA $0305
+C0/6E03: 22 02 00 C3  JSR $C30002
+C0/6E07: A2 00 50     LDX #$5000
+C0/6E0A: 86 48        STX $48         ; DMA $1000 bytes to VRAM at $5000
+C0/6E0C: A2 80 50     LDX #$5080
+C0/6E0F: 86 4B        STX $4B
+C0/6E11: A9 7F        LDA #$7F
+C0/6E13: 85 4D        STA $4D
+C0/6E15: A9 01        LDA #$01
+C0/6E17: 85 4A        STA $4A
+C0/6E19: A2 00 10     LDX #$1000
+C0/6E1C: 86 4E        STX $4E
+C0/6E1E: 20 C8 2D     JSR $2DC8
+C0/6E21: 60           RTS

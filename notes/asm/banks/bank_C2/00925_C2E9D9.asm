@@ -1,0 +1,34 @@
+C2/E9D9: 00 01        BRK $01
+C2/E9DB: 00 00        BRK $00
+C2/E9DD: 00 08        BRK $08
+C2/E9DF: 06 07        ASL $07
+C2/E9E1: FF 08 E2 30  SBC $30E208,X
+C2/E9E5: A5 54        LDA $54
+C2/E9E7: 85 81        STA $81
+C2/E9E9: A9 80        LDA #$80
+C2/E9EB: 8D 1E 0D     STA $0D1E
+C2/E9EE: A2 00        LDX #$00
+C2/E9F0: A5 F5        LDA $F5
+C2/E9F2: 85 5A        STA $5A
+C2/E9F4: 4A           LSR
+C2/E9F5: B0 07        BCS $E9FE
+C2/E9F7: E8           INX
+C2/E9F8: E0 04        CPX #$04
+C2/E9FA: 90 F8        BCC $E9F4
+C2/E9FC: 80 1C        BRA $EA1A
+C2/E9FE: 8E 1E 0D     STX $0D1E
+C2/EA01: AD 1F 0D     LDA $0D1F
+C2/EA04: D0 14        BNE $EA1A
+C2/EA06: A5 54        LDA $54
+C2/EA08: 20 27 EA     JSR $EA27
+C2/EA0B: 9B           TXY
+C2/EA0C: A5 54        LDA $54
+C2/EA0E: 85 55        STA $55
+C2/EA10: AD 1E 0D     LDA $0D1E
+C2/EA13: 0A           ASL
+C2/EA14: AA           TAX
+C2/EA15: C2 10        REP #$10
+C2/EA17: FC 1F EA     JSR ($EA1F,X)
+C2/EA1A: 9C 1F 0D     STZ $0D1F
+C2/EA1D: 28           PLP
+C2/EA1E: 60           RTS

@@ -1,0 +1,67 @@
+D1/95B4: 19 03 FF     ORA $FF03,Y
+D1/95B7: 00 08        BRK $08
+D1/95B9: 02 A6        COP $A6
+D1/95BB: 00 88        BRK $88
+D1/95BD: 00 B8        BRK $B8
+D1/95BF: 00 00        BRK $00
+D1/95C1: A5 00        LDA $00
+D1/95C3: A6 01        LDX $01
+D1/95C5: 88           DEY
+D1/95C6: 00 B8        BRK $B8
+D1/95C8: 00 00        BRK $00
+D1/95CA: A5 01        LDA $01
+D1/95CC: A6 02        LDX $02
+D1/95CE: 88           DEY
+D1/95CF: 00 B8        BRK $B8
+D1/95D1: 00 00        BRK $00
+D1/95D3: A5 02        LDA $02
+D1/95D5: A9 0F        LDA #$0F
+D1/95D7: 1D B9 10     ORA $10B9,X
+D1/95DA: 8E 40 19     STX $1940
+D1/95DD: 03 FF        ORA $FF,S
+D1/95DF: 00 08        BRK $08
+D1/95E1: 02 91        COP $91
+D1/95E3: 25 95        AND $95
+D1/95E5: 8E 50 19     STX $1950
+D1/95E8: 03 FF        ORA $FF,S
+D1/95EA: 00 08        BRK $08
+D1/95EC: 04 83        TSB $83
+D1/95EE: 1D A6 00     ORA $00A6,X
+D1/95F1: 88           DEY
+D1/95F2: 00 B8        BRK $B8
+D1/95F4: 00 00        BRK $00
+D1/95F6: A5 00        LDA $00
+D1/95F8: A6 01        LDX $01
+D1/95FA: 88           DEY
+D1/95FB: 00 B8        BRK $B8
+D1/95FD: 00 00        BRK $00
+D1/95FF: A5 01        LDA $01
+D1/9601: A6 02        LDX $02
+D1/9603: 88           DEY
+D1/9604: 00 B8        BRK $B8
+D1/9606: 00 00        BRK $00
+D1/9608: A5 02        LDA $02
+D1/960A: 84 B7        STY $B7
+D1/960C: 02 17        COP $17
+D1/960E: 91 08        STA ($08),Y
+D1/9610: A2 FF        LDX #$FF
+D1/9612: 01 B7        ORA ($B7,X)
+D1/9614: 02 8A        COP $8A
+D1/9616: 20 80 70     JSR $7080
+D1/9619: 3F AB 00 AA  AND $AA00AB,X
+D1/961D: 00 82        BRK $82
+D1/961F: 7F 82 7F 98  ADC $987F82,X
+D1/9623: 10 95        BPL $95BA
+D1/9625: 03 93        ORA $93,S
+D1/9627: 13 02        ORA ($02,S),Y
+D1/9629: 04 88        TSB $88
+D1/962B: 00 00        BRK $00
+D1/962D: 8B           PHB
+D1/962E: 00 00        BRK $00
+D1/9630: 8B           PHB
+D1/9631: 00 8E        BRK $8E
+D1/9633: 50 19        BVC $964E
+D1/9635: 03 00        ORA $00,S
+D1/9637: FF 13 01 7F  SBC $7F0113,X
+D1/963B: 9D 17 83     STA $8317,X
+D1/963E: 40           RTI

@@ -1,0 +1,25 @@
+C1/764A: 98           TYA
+C1/764B: 38           SEC
+C1/764C: E9 09        SBC #$09
+C1/764E: A8           TAY
+C1/764F: B9 14 A0     LDA $A014,Y
+C1/7652: AA           TAX
+C1/7653: 18           CLC
+C1/7654: BD 0C 1D     LDA $1D0C,X
+C1/7657: 7D 08 97     ADC $9708,X
+C1/765A: 8D B0 A2     STA $A2B0
+C1/765D: BD 13 97     LDA $9713,X
+C1/7660: 10 0C        BPL $766E
+C1/7662: 18           CLC
+C1/7663: BD 23 1D     LDA $1D23,X
+C1/7666: 7D 13 97     ADC $9713,X
+C1/7669: B0 0E        BCS $7679
+C1/766B: 7B           TDC
+C1/766C: 80 0B        BRA $7679
+C1/766E: 18           CLC
+C1/766F: BD 23 1D     LDA $1D23,X
+C1/7672: 7D 13 97     ADC $9713,X
+C1/7675: 90 02        BCC $7679
+C1/7677: A9 FF        LDA #$FF
+C1/7679: 8D B2 A2     STA $A2B2
+C1/767C: 60           RTS

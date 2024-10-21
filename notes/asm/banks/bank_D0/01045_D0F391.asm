@@ -1,0 +1,534 @@
+D0/F391: 4B           PHK
+D0/F392: 00 70        BRK $70
+D0/F394: 13 71        ORA ($71,S),Y
+D0/F396: 13 72        ORA ($72,S),Y
+D0/F398: 13 73        ORA ($73,S),Y
+D0/F39A: 13 00        ORA ($00,S),Y
+D0/F39C: 74 13        STZ $13,X
+D0/F39E: 75 13        ADC $13,X
+D0/F3A0: 76 13        ROR $13,X
+D0/F3A2: 77 13        ADC [$13],Y
+D0/F3A4: 00 78        BRK $78
+D0/F3A6: 13 79        ORA ($79,S),Y
+D0/F3A8: 13 7A        ORA ($7A,S),Y
+D0/F3AA: 13 7B        ORA ($7B,S),Y
+D0/F3AC: 13 00        ORA ($00,S),Y
+D0/F3AE: 7C 13 7D     JMP ($7D13,X)
+D0/F3B1: 13 7E        ORA ($7E,S),Y
+D0/F3B3: 13 7F        ORA ($7F,S),Y
+D0/F3B5: 13 00        ORA ($00,S),Y
+D0/F3B7: 7F 4B 7E 4B  ADC $4B7E4B,X
+D0/F3BB: 7D 4B 7C     ADC $7C4B,X
+D0/F3BE: 4B           PHK
+D0/F3BF: 00 7B        BRK $7B
+D0/F3C1: 4B           PHK
+D0/F3C2: 7A           PLY
+D0/F3C3: 4B           PHK
+D0/F3C4: 79 4B 78     ADC $784B,Y
+D0/F3C7: 4B           PHK
+D0/F3C8: 00 77        BRK $77
+D0/F3CA: 4B           PHK
+D0/F3CB: 76 4B        ROR $4B,X
+D0/F3CD: 75 4B        ADC $4B,X
+D0/F3CF: 74 4B        STZ $4B,X
+D0/F3D1: 00 73        BRK $73
+D0/F3D3: 4B           PHK
+D0/F3D4: 72 4B        ADC ($4B)
+D0/F3D6: 71 4B        ADC ($4B),Y
+D0/F3D8: 70 4B        BVS $F425
+D0/F3DA: 00 80        BRK $80
+D0/F3DC: 13 81        ORA ($81,S),Y
+D0/F3DE: 13 82        ORA ($82,S),Y
+D0/F3E0: 13 83        ORA ($83,S),Y
+D0/F3E2: 13 00        ORA ($00,S),Y
+D0/F3E4: 84 13        STY $13
+D0/F3E6: 85 13        STA $13
+D0/F3E8: 86 13        STX $13
+D0/F3EA: 87 13        STA [$13]
+D0/F3EC: 00 88        BRK $88
+D0/F3EE: 13 89        ORA ($89,S),Y
+D0/F3F0: 13 8A        ORA ($8A,S),Y
+D0/F3F2: 13 8B        ORA ($8B,S),Y
+D0/F3F4: 13 00        ORA ($00,S),Y
+D0/F3F6: 8C 13 8D     STY $8D13
+D0/F3F9: 13 8E        ORA ($8E,S),Y
+D0/F3FB: 13 8F        ORA ($8F,S),Y
+D0/F3FD: 13 00        ORA ($00,S),Y
+D0/F3FF: 8F 4B 8E 4B  STA $4B8E4B
+D0/F403: 8D 4B 8C     STA $8C4B
+D0/F406: 4B           PHK
+D0/F407: 00 8B        BRK $8B
+D0/F409: 4B           PHK
+D0/F40A: 8A           TXA
+D0/F40B: 4B           PHK
+D0/F40C: 89 4B        BIT #$4B
+D0/F40E: 88           DEY
+D0/F40F: 4B           PHK
+D0/F410: 00 87        BRK $87
+D0/F412: 4B           PHK
+D0/F413: 86 4B        STX $4B
+D0/F415: 85 4B        STA $4B
+D0/F417: 84 4B        STY $4B
+D0/F419: 00 83        BRK $83
+D0/F41B: 4B           PHK
+D0/F41C: 82 4B 81     BRL $D0756A
+D0/F41F: 4B           PHK
+D0/F420: 80 4B        BRA $F46D
+D0/F422: 00 90        BRK $90
+D0/F424: 13 91        ORA ($91,S),Y
+D0/F426: 13 92        ORA ($92,S),Y
+D0/F428: 13 93        ORA ($93,S),Y
+D0/F42A: 13 00        ORA ($00,S),Y
+D0/F42C: 94 13        STY $13,X
+D0/F42E: 95 13        STA $13,X
+D0/F430: 96 13        STX $13,Y
+D0/F432: 97 13        STA [$13],Y
+D0/F434: 00 98        BRK $98
+D0/F436: 13 99        ORA ($99,S),Y
+D0/F438: 13 9A        ORA ($9A,S),Y
+D0/F43A: 13 9B        ORA ($9B,S),Y
+D0/F43C: 13 00        ORA ($00,S),Y
+D0/F43E: 9C 13 9D     STZ $9D13
+D0/F441: 13 9E        ORA ($9E,S),Y
+D0/F443: 13 9F        ORA ($9F,S),Y
+D0/F445: 13 00        ORA ($00,S),Y
+D0/F447: 9F 4B 9E 4B  STA $4B9E4B,X
+D0/F44B: 9D 4B 9C     STA $9C4B,X
+D0/F44E: 4B           PHK
+D0/F44F: 00 9B        BRK $9B
+D0/F451: 4B           PHK
+D0/F452: 9A           TXS
+D0/F453: 4B           PHK
+D0/F454: 99 4B 98     STA $984B,Y
+D0/F457: 4B           PHK
+D0/F458: 00 97        BRK $97
+D0/F45A: 4B           PHK
+D0/F45B: 96 4B        STX $4B,Y
+D0/F45D: 95 4B        STA $4B,X
+D0/F45F: 94 4B        STY $4B,X
+D0/F461: 00 93        BRK $93
+D0/F463: 4B           PHK
+D0/F464: 92 4B        STA ($4B)
+D0/F466: 91 4B        STA ($4B),Y
+D0/F468: 90 4B        BCC $F4B5
+D0/F46A: 00 A0        BRK $A0
+D0/F46C: 13 A1        ORA ($A1,S),Y
+D0/F46E: 13 A2        ORA ($A2,S),Y
+D0/F470: 13 A3        ORA ($A3,S),Y
+D0/F472: 13 00        ORA ($00,S),Y
+D0/F474: A4 13        LDY $13
+D0/F476: A5 13        LDA $13
+D0/F478: A6 13        LDX $13
+D0/F47A: A7 13        LDA [$13]
+D0/F47C: 00 A8        BRK $A8
+D0/F47E: 13 A9        ORA ($A9,S),Y
+D0/F480: 13 AA        ORA ($AA,S),Y
+D0/F482: 13 AB        ORA ($AB,S),Y
+D0/F484: 13 00        ORA ($00,S),Y
+D0/F486: AC 13 AD     LDY $AD13
+D0/F489: 13 AE        ORA ($AE,S),Y
+D0/F48B: 13 AF        ORA ($AF,S),Y
+D0/F48D: 13 00        ORA ($00,S),Y
+D0/F48F: AF 4B AE 4B  LDA $4BAE4B
+D0/F493: AD 4B AC     LDA $AC4B
+D0/F496: 4B           PHK
+D0/F497: 00 AB        BRK $AB
+D0/F499: 4B           PHK
+D0/F49A: AA           TAX
+D0/F49B: 4B           PHK
+D0/F49C: A9 4B        LDA #$4B
+D0/F49E: A8           TAY
+D0/F49F: 4B           PHK
+D0/F4A0: 00 A7        BRK $A7
+D0/F4A2: 4B           PHK
+D0/F4A3: A6 4B        LDX $4B
+D0/F4A5: A5 4B        LDA $4B
+D0/F4A7: A4 4B        LDY $4B
+D0/F4A9: 00 A3        BRK $A3
+D0/F4AB: 4B           PHK
+D0/F4AC: A2 4B        LDX #$4B
+D0/F4AE: A1 4B        LDA ($4B,X)
+D0/F4B0: A0 4B        LDY #$4B
+D0/F4B2: 00 B0        BRK $B0
+D0/F4B4: 13 B1        ORA ($B1,S),Y
+D0/F4B6: 13 B2        ORA ($B2,S),Y
+D0/F4B8: 13 B3        ORA ($B3,S),Y
+D0/F4BA: 13 00        ORA ($00,S),Y
+D0/F4BC: B4 13        LDY $13,X
+D0/F4BE: B5 13        LDA $13,X
+D0/F4C0: B6 13        LDX $13,Y
+D0/F4C2: B7 13        LDA [$13],Y
+D0/F4C4: 00 B8        BRK $B8
+D0/F4C6: 13 B9        ORA ($B9,S),Y
+D0/F4C8: 13 BA        ORA ($BA,S),Y
+D0/F4CA: 13 BB        ORA ($BB,S),Y
+D0/F4CC: 13 00        ORA ($00,S),Y
+D0/F4CE: BC 13 BD     LDY $BD13,X
+D0/F4D1: 13 BE        ORA ($BE,S),Y
+D0/F4D3: 13 BF        ORA ($BF,S),Y
+D0/F4D5: 13 00        ORA ($00,S),Y
+D0/F4D7: BF 4B BE 4B  LDA $4BBE4B,X
+D0/F4DB: BD 4B BC     LDA $BC4B,X
+D0/F4DE: 4B           PHK
+D0/F4DF: 00 BB        BRK $BB
+D0/F4E1: 4B           PHK
+D0/F4E2: BA           TSX
+D0/F4E3: 4B           PHK
+D0/F4E4: B9 4B B8     LDA $B84B,Y
+D0/F4E7: 4B           PHK
+D0/F4E8: 00 B7        BRK $B7
+D0/F4EA: 4B           PHK
+D0/F4EB: B6 4B        LDX $4B,Y
+D0/F4ED: B5 4B        LDA $4B,X
+D0/F4EF: B4 4B        LDY $4B,X
+D0/F4F1: 00 B3        BRK $B3
+D0/F4F3: 4B           PHK
+D0/F4F4: B2 4B        LDA ($4B)
+D0/F4F6: B1 4B        LDA ($4B),Y
+D0/F4F8: B0 4B        BCS $F545
+D0/F4FA: 00 C0        BRK $C0
+D0/F4FC: 13 C1        ORA ($C1,S),Y
+D0/F4FE: 13 C2        ORA ($C2,S),Y
+D0/F500: 13 C3        ORA ($C3,S),Y
+D0/F502: 13 00        ORA ($00,S),Y
+D0/F504: C4 13        CPY $13
+D0/F506: C5 13        CMP $13
+D0/F508: C6 13        DEC $13
+D0/F50A: C7 13        CMP [$13]
+D0/F50C: 00 C8        BRK $C8
+D0/F50E: 13 C9        ORA ($C9,S),Y
+D0/F510: 13 CA        ORA ($CA,S),Y
+D0/F512: 13 CB        ORA ($CB,S),Y
+D0/F514: 13 00        ORA ($00,S),Y
+D0/F516: CC 13 CD     CPY $CD13
+D0/F519: 13 CE        ORA ($CE,S),Y
+D0/F51B: 13 CF        ORA ($CF,S),Y
+D0/F51D: 13 00        ORA ($00,S),Y
+D0/F51F: CF 4B CE 4B  CMP $4BCE4B
+D0/F523: CD 4B CC     CMP $CC4B
+D0/F526: 4B           PHK
+D0/F527: 00 CB        BRK $CB
+D0/F529: 4B           PHK
+D0/F52A: CA           DEX
+D0/F52B: 4B           PHK
+D0/F52C: C9 4B        CMP #$4B
+D0/F52E: C8           INY
+D0/F52F: 4B           PHK
+D0/F530: 00 C7        BRK $C7
+D0/F532: 4B           PHK
+D0/F533: C6 4B        DEC $4B
+D0/F535: C5 4B        CMP $4B
+D0/F537: C4 4B        CPY $4B
+D0/F539: 00 C3        BRK $C3
+D0/F53B: 4B           PHK
+D0/F53C: C2 4B        REP #$4B
+D0/F53E: C1 4B        CMP ($4B,X)
+D0/F540: C0 4B        CPY #$4B
+D0/F542: 00 D0        BRK $D0
+D0/F544: 13 D1        ORA ($D1,S),Y
+D0/F546: 13 D2        ORA ($D2,S),Y
+D0/F548: 13 D3        ORA ($D3,S),Y
+D0/F54A: 13 00        ORA ($00,S),Y
+D0/F54C: D4 13        PEI $13
+D0/F54E: D5 13        CMP $13,X
+D0/F550: D6 13        DEC $13,X
+D0/F552: D7 13        CMP [$13],Y
+D0/F554: 00 D8        BRK $D8
+D0/F556: 13 D9        ORA ($D9,S),Y
+D0/F558: 13 DA        ORA ($DA,S),Y
+D0/F55A: 13 DB        ORA ($DB,S),Y
+D0/F55C: 13 00        ORA ($00,S),Y
+D0/F55E: DC 13 DD     JMP [$DD13]
+D0/F561: 13 DE        ORA ($DE,S),Y
+D0/F563: 13 DF        ORA ($DF,S),Y
+D0/F565: 13 00        ORA ($00,S),Y
+D0/F567: DF 4B DE 4B  CMP $4BDE4B,X
+D0/F56B: DD 4B DC     CMP $DC4B,X
+D0/F56E: 4B           PHK
+D0/F56F: 00 DB        BRK $DB
+D0/F571: 4B           PHK
+D0/F572: DA           PHX
+D0/F573: 4B           PHK
+D0/F574: D9 4B D8     CMP $D84B,Y
+D0/F577: 4B           PHK
+D0/F578: 00 D7        BRK $D7
+D0/F57A: 4B           PHK
+D0/F57B: D6 4B        DEC $4B,X
+D0/F57D: D5 4B        CMP $4B,X
+D0/F57F: D4 4B        PEI $4B
+D0/F581: 00 D3        BRK $D3
+D0/F583: 4B           PHK
+D0/F584: D2 4B        CMP ($4B)
+D0/F586: D1 4B        CMP ($4B),Y
+D0/F588: D0 4B        BNE $F5D5
+D0/F58A: 00 D0        BRK $D0
+D0/F58C: 8F D1 8F D2  STA $D28FD1
+D0/F590: 8F D3 8F 00  STA $008FD3
+D0/F594: D4 8F        PEI $8F
+D0/F596: D5 8F        CMP $8F,X
+D0/F598: D6 8F        DEC $8F,X
+D0/F59A: D7 8F        CMP [$8F],Y
+D0/F59C: 00 D8        BRK $D8
+D0/F59E: 8F D9 8F DA  STA $DA8FD9
+D0/F5A2: 8F DB 8F 00  STA $008FDB
+D0/F5A6: DC 8F DD     JMP [$DD8F]
+D0/F5A9: 8F DE 8F DF  STA $DF8FDE
+D0/F5AD: 8F 00 DF D3  STA $D3DF00
+D0/F5B1: DE D3 DD     DEC $DDD3,X
+D0/F5B4: D3 DC        CMP ($DC,S),Y
+D0/F5B6: D3 00        CMP ($00,S),Y
+D0/F5B8: DB           STP
+D0/F5B9: D3 DA        CMP ($DA,S),Y
+D0/F5BB: D3 D9        CMP ($D9,S),Y
+D0/F5BD: D3 D8        CMP ($D8,S),Y
+D0/F5BF: D3 00        CMP ($00,S),Y
+D0/F5C1: D7 D3        CMP [$D3],Y
+D0/F5C3: D6 D3        DEC $D3,X
+D0/F5C5: D5 D3        CMP $D3,X
+D0/F5C7: D4 D3        PEI $D3
+D0/F5C9: 00 D3        BRK $D3
+D0/F5CB: D3 D2        CMP ($D2,S),Y
+D0/F5CD: D3 D1        CMP ($D1,S),Y
+D0/F5CF: D3 D0        CMP ($D0,S),Y
+D0/F5D1: D3 00        CMP ($00,S),Y
+D0/F5D3: C0 8F        CPY #$8F
+D0/F5D5: C1 8F        CMP ($8F,X)
+D0/F5D7: C2 8F        REP #$8F
+D0/F5D9: C3 8F        CMP $8F,S
+D0/F5DB: 00 C4        BRK $C4
+D0/F5DD: 8F C5 8F C6  STA $C68FC5
+D0/F5E1: 8F C7 8F 00  STA $008FC7
+D0/F5E5: C8           INY
+D0/F5E6: 8F C9 8F CA  STA $CA8FC9
+D0/F5EA: 8F CB 8F 00  STA $008FCB
+D0/F5EE: CC 8F CD     CPY $CD8F
+D0/F5F1: 8F CE 8F CF  STA $CF8FCE
+D0/F5F5: 8F 00 CF D3  STA $D3CF00
+D0/F5F9: CE D3 CD     DEC $CDD3
+D0/F5FC: D3 CC        CMP ($CC,S),Y
+D0/F5FE: D3 00        CMP ($00,S),Y
+D0/F600: CB           WAI
+D0/F601: D3 CA        CMP ($CA,S),Y
+D0/F603: D3 C9        CMP ($C9,S),Y
+D0/F605: D3 C8        CMP ($C8,S),Y
+D0/F607: D3 00        CMP ($00,S),Y
+D0/F609: C7 D3        CMP [$D3]
+D0/F60B: C6 D3        DEC $D3
+D0/F60D: C5 D3        CMP $D3
+D0/F60F: C4 D3        CPY $D3
+D0/F611: 00 C3        BRK $C3
+D0/F613: D3 C2        CMP ($C2,S),Y
+D0/F615: D3 C1        CMP ($C1,S),Y
+D0/F617: D3 C0        CMP ($C0,S),Y
+D0/F619: D3 00        CMP ($00,S),Y
+D0/F61B: B0 8F        BCS $F5AC
+D0/F61D: B1 8F        LDA ($8F),Y
+D0/F61F: B2 8F        LDA ($8F)
+D0/F621: B3 8F        LDA ($8F,S),Y
+D0/F623: 00 B4        BRK $B4
+D0/F625: 8F B5 8F B6  STA $B68FB5
+D0/F629: 8F B7 8F 00  STA $008FB7
+D0/F62D: B8           CLV
+D0/F62E: 8F B9 8F BA  STA $BA8FB9
+D0/F632: 8F BB 8F 00  STA $008FBB
+D0/F636: BC 8F BD     LDY $BD8F,X
+D0/F639: 8F BE 8F BF  STA $BF8FBE
+D0/F63D: 8F 00 BF D3  STA $D3BF00
+D0/F641: BE D3 BD     LDX $BDD3,Y
+D0/F644: D3 BC        CMP ($BC,S),Y
+D0/F646: D3 00        CMP ($00,S),Y
+D0/F648: BB           TYX
+D0/F649: D3 BA        CMP ($BA,S),Y
+D0/F64B: D3 B9        CMP ($B9,S),Y
+D0/F64D: D3 B8        CMP ($B8,S),Y
+D0/F64F: D3 00        CMP ($00,S),Y
+D0/F651: B7 D3        LDA [$D3],Y
+D0/F653: B6 D3        LDX $D3,Y
+D0/F655: B5 D3        LDA $D3,X
+D0/F657: B4 D3        LDY $D3,X
+D0/F659: 00 B3        BRK $B3
+D0/F65B: D3 B2        CMP ($B2,S),Y
+D0/F65D: D3 B1        CMP ($B1,S),Y
+D0/F65F: D3 B0        CMP ($B0,S),Y
+D0/F661: D3 00        CMP ($00,S),Y
+D0/F663: A0 8F        LDY #$8F
+D0/F665: A1 8F        LDA ($8F,X)
+D0/F667: A2 8F        LDX #$8F
+D0/F669: A3 8F        LDA $8F,S
+D0/F66B: 00 A4        BRK $A4
+D0/F66D: 8F A5 8F A6  STA $A68FA5
+D0/F671: 8F A7 8F 00  STA $008FA7
+D0/F675: A8           TAY
+D0/F676: 8F A9 8F AA  STA $AA8FA9
+D0/F67A: 8F AB 8F 00  STA $008FAB
+D0/F67E: AC 8F AD     LDY $AD8F
+D0/F681: 8F AE 8F AF  STA $AF8FAE
+D0/F685: 8F 00 AF D3  STA $D3AF00
+D0/F689: AE D3 AD     LDX $ADD3
+D0/F68C: D3 AC        CMP ($AC,S),Y
+D0/F68E: D3 00        CMP ($00,S),Y
+D0/F690: AB           PLB
+D0/F691: D3 AA        CMP ($AA,S),Y
+D0/F693: D3 A9        CMP ($A9,S),Y
+D0/F695: D3 A8        CMP ($A8,S),Y
+D0/F697: D3 00        CMP ($00,S),Y
+D0/F699: A7 D3        LDA [$D3]
+D0/F69B: A6 D3        LDX $D3
+D0/F69D: A5 D3        LDA $D3
+D0/F69F: A4 D3        LDY $D3
+D0/F6A1: 00 A3        BRK $A3
+D0/F6A3: D3 A2        CMP ($A2,S),Y
+D0/F6A5: D3 A1        CMP ($A1,S),Y
+D0/F6A7: D3 A0        CMP ($A0,S),Y
+D0/F6A9: D3 00        CMP ($00,S),Y
+D0/F6AB: 90 8F        BCC $F63C
+D0/F6AD: 91 8F        STA ($8F),Y
+D0/F6AF: 92 8F        STA ($8F)
+D0/F6B1: 93 8F        STA ($8F,S),Y
+D0/F6B3: 00 94        BRK $94
+D0/F6B5: 8F 95 8F 96  STA $968F95
+D0/F6B9: 8F 97 8F 00  STA $008F97
+D0/F6BD: 98           TYA
+D0/F6BE: 8F 99 8F 9A  STA $9A8F99
+D0/F6C2: 8F 9B 8F 00  STA $008F9B
+D0/F6C6: 9C 8F 9D     STZ $9D8F
+D0/F6C9: 8F 9E 8F 9F  STA $9F8F9E
+D0/F6CD: 8F 00 9F D3  STA $D39F00
+D0/F6D1: 9E D3 9D     STZ $9DD3,X
+D0/F6D4: D3 9C        CMP ($9C,S),Y
+D0/F6D6: D3 00        CMP ($00,S),Y
+D0/F6D8: 9B           TXY
+D0/F6D9: D3 9A        CMP ($9A,S),Y
+D0/F6DB: D3 99        CMP ($99,S),Y
+D0/F6DD: D3 98        CMP ($98,S),Y
+D0/F6DF: D3 00        CMP ($00,S),Y
+D0/F6E1: 97 D3        STA [$D3],Y
+D0/F6E3: 96 D3        STX $D3,Y
+D0/F6E5: 95 D3        STA $D3,X
+D0/F6E7: 94 D3        STY $D3,X
+D0/F6E9: 00 93        BRK $93
+D0/F6EB: D3 92        CMP ($92,S),Y
+D0/F6ED: D3 91        CMP ($91,S),Y
+D0/F6EF: D3 90        CMP ($90,S),Y
+D0/F6F1: D3 00        CMP ($00,S),Y
+D0/F6F3: 80 8F        BRA $F684
+D0/F6F5: 81 8F        STA ($8F,X)
+D0/F6F7: 82 8F 83     BRL $D07A89
+D0/F6FA: 8F 00 84 8F  STA $8F8400
+D0/F6FE: 85 8F        STA $8F
+D0/F700: 86 8F        STX $8F
+D0/F702: 87 8F        STA [$8F]
+D0/F704: 00 88        BRK $88
+D0/F706: 8F 89 8F 8A  STA $8A8F89
+D0/F70A: 8F 8B 8F 40  STA $408F8B
+D0/F70E: 8C 8F 8D     STY $8D8F
+D0/F711: 8F 8E 8F 01  STA $018F8E
+D0/F715: 00 D3        BRK $D3
+D0/F717: 00 8E        BRK $8E
+D0/F719: D3 8D        CMP ($8D,S),Y
+D0/F71B: D3 8C        CMP ($8C,S),Y
+D0/F71D: D3 8B        CMP ($8B,S),Y
+D0/F71F: D3 00        CMP ($00,S),Y
+D0/F721: 8A           TXA
+D0/F722: D3 89        CMP ($89,S),Y
+D0/F724: D3 88        CMP ($88,S),Y
+D0/F726: D3 87        CMP ($87,S),Y
+D0/F728: D3 00        CMP ($00,S),Y
+D0/F72A: 86 D3        STX $D3
+D0/F72C: 85 D3        STA $D3
+D0/F72E: 84 D3        STY $D3
+D0/F730: 83 D3        STA $D3,S
+D0/F732: 00 82        BRK $82
+D0/F734: D3 81        CMP ($81,S),Y
+D0/F736: D3 80        CMP ($80,S),Y
+D0/F738: D3 70        CMP ($70,S),Y
+D0/F73A: 8F 00 71 8F  STA $8F7100
+D0/F73E: 72 8F        ADC ($8F)
+D0/F740: 73 8F        ADC ($8F,S),Y
+D0/F742: 74 8F        STZ $8F,X
+D0/F744: 00 75        BRK $75
+D0/F746: 8F 76 8F 77  STA $778F76
+D0/F74A: 8F 78 8F 00  STA $008F78
+D0/F74E: 79 8F 7A     ADC $7A8F,Y
+D0/F751: 8F 7B 8F 7C  STA $7C8F7B
+D0/F755: 8F 00 7D 8F  STA $8F7D00
+D0/F759: 7E 8F 7F     ROR $7F8F,X
+D0/F75C: 8F 7F D3 00  STA $00D37F
+D0/F760: 7E D3 7D     ROR $7DD3,X
+D0/F763: D3 7C        CMP ($7C,S),Y
+D0/F765: D3 7B        CMP ($7B,S),Y
+D0/F767: D3 00        CMP ($00,S),Y
+D0/F769: 7A           PLY
+D0/F76A: D3 79        CMP ($79,S),Y
+D0/F76C: D3 78        CMP ($78,S),Y
+D0/F76E: D3 77        CMP ($77,S),Y
+D0/F770: D3 00        CMP ($00,S),Y
+D0/F772: 76 D3        ROR $D3,X
+D0/F774: 75 D3        ADC $D3,X
+D0/F776: 74 D3        STZ $D3,X
+D0/F778: 73 D3        ADC ($D3,S),Y
+D0/F77A: 00 72        BRK $72
+D0/F77C: D3 71        CMP ($71,S),Y
+D0/F77E: D3 70        CMP ($70,S),Y
+D0/F780: D3 60        CMP ($60,S),Y
+D0/F782: 8F 00 61 8F  STA $8F6100
+D0/F786: 62 8F 63     PER $D05B18
+D0/F789: 8F 64 8F 00  STA $008F64
+D0/F78D: 65 8F        ADC $8F
+D0/F78F: 66 8F        ROR $8F
+D0/F791: 67 8F        ADC [$8F]
+D0/F793: 68           PLA
+D0/F794: 8F 00 69 8F  STA $8F6900
+D0/F798: 6A           ROR
+D0/F799: 8F 6B 8F 6C  STA $6C8F6B
+D0/F79D: 8F 00 6D 8F  STA $8F6D00
+D0/F7A1: 6E 8F 6F     ROR $6F8F
+D0/F7A4: 8F 6F D3 00  STA $00D36F
+D0/F7A8: 6E D3 6D     ROR $6DD3
+D0/F7AB: D3 6C        CMP ($6C,S),Y
+D0/F7AD: D3 6B        CMP ($6B,S),Y
+D0/F7AF: D3 00        CMP ($00,S),Y
+D0/F7B1: 6A           ROR
+D0/F7B2: D3 69        CMP ($69,S),Y
+D0/F7B4: D3 68        CMP ($68,S),Y
+D0/F7B6: D3 67        CMP ($67,S),Y
+D0/F7B8: D3 00        CMP ($00,S),Y
+D0/F7BA: 66 D3        ROR $D3
+D0/F7BC: 65 D3        ADC $D3
+D0/F7BE: 64 D3        STZ $D3
+D0/F7C0: 63 D3        ADC $D3,S
+D0/F7C2: 00 62        BRK $62
+D0/F7C4: D3 61        CMP ($61,S),Y
+D0/F7C6: D3 60        CMP ($60,S),Y
+D0/F7C8: D3 50        CMP ($50,S),Y
+D0/F7CA: 8F 00 51 8F  STA $8F5100
+D0/F7CE: 52 8F        EOR ($8F)
+D0/F7D0: 53 8F        EOR ($8F,S),Y
+D0/F7D2: 54 8F 00     MVN $8F,$00
+D0/F7D5: 55 8F        EOR $8F,X
+D0/F7D7: 56 8F        LSR $8F,X
+D0/F7D9: 57 8F        EOR [$8F],Y
+D0/F7DB: 58           CLI
+D0/F7DC: 8F 00 59 8F  STA $8F5900
+D0/F7E0: 5A           PHY
+D0/F7E1: 8F 5B 8F 5C  STA $5C8F5B
+D0/F7E5: 8F 00 5D 8F  STA $8F5D00
+D0/F7E9: 5E 8F 5F     LSR $5F8F,X
+D0/F7EC: 8F 5F D3 00  STA $00D35F
+D0/F7F0: 5E D3 5D     LSR $5DD3,X
+D0/F7F3: D3 5C        CMP ($5C,S),Y
+D0/F7F5: D3 5B        CMP ($5B,S),Y
+D0/F7F7: D3 00        CMP ($00,S),Y
+D0/F7F9: 5A           PHY
+D0/F7FA: D3 59        CMP ($59,S),Y
+D0/F7FC: D3 58        CMP ($58,S),Y
+D0/F7FE: D3 57        CMP ($57,S),Y
+D0/F800: D3 00        CMP ($00,S),Y
+D0/F802: 56 D3        LSR $D3,X
+D0/F804: 55 D3        EOR $D3,X
+D0/F806: 54 D3 53     MVN $D3,$53
+D0/F809: D3 00        CMP ($00,S),Y
+D0/F80B: 52 D3        EOR ($D3)
+D0/F80D: 51 D3        EOR ($D3),Y
+D0/F80F: 50 D3        BVC $F7E4
+D0/F811: 40           RTI

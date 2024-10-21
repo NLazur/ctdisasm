@@ -1,0 +1,310 @@
+C0/F82A: 6D 6F 70     ADC $706F
+C0/F82D: 71 73        ADC ($73),Y
+C0/F82F: 74 75        STZ $75,X
+C0/F831: 76 78        ROR $78,X
+C0/F833: 79 7A 7A     ADC $7A7A,Y
+C0/F836: 7B           TDC
+C0/F837: 7C 7D 7D     JMP ($7D7D,X)
+C0/F83A: 7E 7E 7E     ROR $7E7E,X
+C0/F83D: 7F 7F 7F 7F  ADC $7F7F7F,X
+C0/F841: 7F 7F 7F 7E  ADC $7E7F7F,X
+C0/F845: 7E 7E 7D     ROR $7D7E,X
+C0/F848: 7D 7C 7B     ADC $7B7C,X
+C0/F84B: 7A           PLY
+C0/F84C: 7A           PLY
+C0/F84D: 79 78 76     ADC $7678,Y
+C0/F850: 75 74        ADC $74,X
+C0/F852: 73 71        ADC ($71,S),Y
+C0/F854: 70 6F        BVS $F8C5
+C0/F856: 6D 6B 6A     ADC $6A6B
+C0/F859: 68           PLA
+C0/F85A: 66 64        ROR $64
+C0/F85C: 62 60 5E     PER $C056BF
+C0/F85F: 5C 5A 58 55  JMP $55585A
+C0/F863: 53 51        EOR ($51,S),Y
+C0/F865: 4E 4C 49     LSR $494C
+C0/F868: 47 44        EOR [$44]
+C0/F86A: 41 3F        EOR ($3F,X)
+C0/F86C: 3C 39 36     BIT $3639,X
+C0/F86F: 33 31        AND ($31,S),Y
+C0/F871: 2E 2B 28     ROL $282B
+C0/F874: 25 22        AND $22
+C0/F876: 1F 1C 19 16  ORA $16191C,X
+C0/F87A: 13 10        ORA ($10,S),Y
+C0/F87C: 0C 09 06     TSB $0609
+C0/F87F: 03 00        ORA $00,S
+C0/F881: FD FA F7     SBC $F7FA,X
+C0/F884: F4 F0 ED     PEA $EDF0
+C0/F887: EA           NOP
+C0/F888: E7 E4        SBC [$E4]
+C0/F88A: E1 DE        SBC ($DE,X)
+C0/F88C: DB           STP
+C0/F88D: D8           CLD
+C0/F88E: D5 D2        CMP $D2,X
+C0/F890: CF CD CA C7  CMP $C7CACD
+C0/F894: C4 C1        CPY $C1
+C0/F896: BF BC B9 B7  LDA $B7B9BC,X
+C0/F89A: B4 B2        LDY $B2,X
+C0/F89C: AF AD AB A8  LDA $A8ABAD
+C0/F8A0: A6 A4        LDX $A4
+C0/F8A2: A2 A0 9E     LDX #$9EA0
+C0/F8A5: 9C 9A 98     STZ $989A
+C0/F8A8: 96 95        STX $95,Y
+C0/F8AA: 93 91        STA ($91,S),Y
+C0/F8AC: 90 8F        BCC $F83D
+C0/F8AE: 8D 8C 8B     STA $8B8C
+C0/F8B1: 8A           TXA
+C0/F8B2: 88           DEY
+C0/F8B3: 87 86        STA [$86]
+C0/F8B5: 86 85        STX $85
+C0/F8B7: 84 83        STY $83
+C0/F8B9: 83 82        STA $82,S
+C0/F8BB: 82 82 81     BRL $C07A40
+C0/F8BE: 81 81        STA ($81,X)
+C0/F8C0: 81 81        STA ($81,X)
+C0/F8C2: 81 81        STA ($81,X)
+C0/F8C4: 82 82 82     BRL $C07B49
+C0/F8C7: 83 83        STA $83,S
+C0/F8C9: 84 85        STY $85
+C0/F8CB: 86 86        STX $86
+C0/F8CD: 87 88        STA [$88]
+C0/F8CF: 8A           TXA
+C0/F8D0: 8B           PHB
+C0/F8D1: 8C 8D 8F     STY $8F8D
+C0/F8D4: 90 91        BCC $F867
+C0/F8D6: 93 95        STA ($95,S),Y
+C0/F8D8: 96 98        STX $98,Y
+C0/F8DA: 9A           TXS
+C0/F8DB: 9C 9E A0     STZ $A09E
+C0/F8DE: A2 A4 A6     LDX #$A6A4
+C0/F8E1: A8           TAY
+C0/F8E2: AB           PLB
+C0/F8E3: AD AF B2     LDA $B2AF
+C0/F8E6: B4 B7        LDY $B7,X
+C0/F8E8: B9 BC BF     LDA $BFBC,Y
+C0/F8EB: C1 C4        CMP ($C4,X)
+C0/F8ED: C7 CA        CMP [$CA]
+C0/F8EF: CD CF D2     CMP $D2CF
+C0/F8F2: D5 D8        CMP $D8,X
+C0/F8F4: DB           STP
+C0/F8F5: DE E1 E4     DEC $E4E1,X
+C0/F8F8: E7 EA        SBC [$EA]
+C0/F8FA: ED F0 F4     SBC $F4F0
+C0/F8FD: F7 FA        SBC [$FA],Y
+C0/F8FF: FD 00 01     SBC $0100,X
+C0/F902: 03 04        ORA $04,S
+C0/F904: 06 07        ASL $07
+C0/F906: 09 0A        ORA #$0A
+C0/F908: 0C 0E 0F     TSB $0F0E
+C0/F90B: 11 12        ORA ($12),Y
+C0/F90D: 14 15        TRB $15
+C0/F90F: 17 19        ORA [$19],Y
+C0/F911: 1A           INC
+C0/F912: 1C 1D 1F     TRB $1F1D
+C0/F915: 20 22 24     JSR $2422
+C0/F918: 25 27        AND $27
+C0/F91A: 28           PLP
+C0/F91B: 2A           ROL
+C0/F91C: 2B           PLD
+C0/F91D: 2D 2E 30     AND $302E
+C0/F920: 31 33        AND ($33),Y
+C0/F922: 35 36        AND $36,X
+C0/F924: 38           SEC
+C0/F925: 39 3B 3C     AND $3C3B,Y
+C0/F928: 3E 3F 41     ROL $413F,X
+C0/F92B: 42 44        WDM $44
+C0/F92D: 45 47        EOR $47
+C0/F92F: 48           PHA
+C0/F930: 4A           LSR
+C0/F931: 4B           PHK
+C0/F932: 4D 4E 50     EOR $504E
+C0/F935: 51 53        EOR ($53),Y
+C0/F937: 54 56 57     MVN $56,$57
+C0/F93A: 59 5A 5C     EOR $5C5A,Y
+C0/F93D: 5D 5F 60     EOR $605F,X
+C0/F940: 61 63        ADC ($63,X)
+C0/F942: 64 66        STZ $66
+C0/F944: 67 69        ADC [$69]
+C0/F946: 6A           ROR
+C0/F947: 6C 6D 6E     JMP ($6E6D)
+C0/F94A: 70 71        BVS $F9BD
+C0/F94C: 73 74        ADC ($74,S),Y
+C0/F94E: 75 77        ADC $77,X
+C0/F950: 78           SEI
+C0/F951: 7A           PLY
+C0/F952: 7B           TDC
+C0/F953: 7C 7E 7F     JMP ($7F7E,X)
+C0/F956: 80 82        BRA $F8DA
+C0/F958: 83 84        STA $84,S
+C0/F95A: 86 87        STX $87
+C0/F95C: 88           DEY
+C0/F95D: 8A           TXA
+C0/F95E: 8B           PHB
+C0/F95F: 8C 8E 8F     STY $8F8E
+C0/F962: 90 92        BCC $F8F6
+C0/F964: 93 94        STA ($94,S),Y
+C0/F966: 95 97        STA $97,X
+C0/F968: 98           TYA
+C0/F969: 99 9B 9C     STA $9C9B,Y
+C0/F96C: 9D 9E 9F     STA $9F9E,X
+C0/F96F: A1 A2        LDA ($A2,X)
+C0/F971: A3 A4        LDA $A4,S
+C0/F973: A6 A7        LDX $A7
+C0/F975: A8           TAY
+C0/F976: A9 AA        LDA #$AA
+C0/F978: AB           PLB
+C0/F979: AD AE AF     LDA $AFAE
+C0/F97C: B0 B1        BCS $F92F
+C0/F97E: B2 B3        LDA ($B3)
+C0/F980: B5 B6        LDA $B6,X
+C0/F982: B7 B8        LDA [$B8],Y
+C0/F984: B9 BA BB     LDA $BBBA,Y
+C0/F987: BC BD BE     LDY $BEBD,X
+C0/F98A: BF C0 C1 C2  LDA $C2C1C0,X
+C0/F98E: C3 C4        CMP $C4,S
+C0/F990: C5 C6        CMP $C6
+C0/F992: C7 C8        CMP [$C8]
+C0/F994: C9 CA        CMP #$CA
+C0/F996: CB           WAI
+C0/F997: CC CD CE     CPY $CECD
+C0/F99A: CF D0 D1 D2  CMP $D2D1D0
+C0/F99E: D3 D3        CMP ($D3,S),Y
+C0/F9A0: D4 D5        PEI $D5
+C0/F9A2: D6 D7        DEC $D7,X
+C0/F9A4: D8           CLD
+C0/F9A5: D9 D9 DA     CMP $DAD9,Y
+C0/F9A8: DB           STP
+C0/F9A9: DC DD DD     JMP [$DDDD]
+C0/F9AC: DE DF E0     DEC $E0DF,X
+C0/F9AF: E1 E1        SBC ($E1,X)
+C0/F9B1: E2 E3        SEP #$E3
+C0/F9B3: E3 E4        SBC $E4,S
+C0/F9B5: E5 E6        SBC $E6
+C0/F9B7: E6 E7        INC $E7
+C0/F9B9: E8           INX
+C0/F9BA: E8           INX
+C0/F9BB: E9 EA        SBC #$EA
+C0/F9BD: EA           NOP
+C0/F9BE: EB           XBA
+C0/F9BF: EB           XBA
+C0/F9C0: EC ED ED     CPX $EDED
+C0/F9C3: EE EE EF     INC $EFEE
+C0/F9C6: EF F0 F1 F1  SBC $F1F1F0
+C0/F9CA: F2 F2        SBC ($F2)
+C0/F9CC: F3 F3        SBC ($F3,S),Y
+C0/F9CE: F4 F4 F4     PEA $F4F4
+C0/F9D1: F5 F5        SBC $F5,X
+C0/F9D3: F6 F6        INC $F6,X
+C0/F9D5: F7 F7        SBC [$F7],Y
+C0/F9D7: F7 F8        SBC [$F8],Y
+C0/F9D9: F8           SED
+C0/F9DA: F9 F9 F9     SBC $F9F9,Y
+C0/F9DD: FA           PLX
+C0/F9DE: FA           PLX
+C0/F9DF: FA           PLX
+C0/F9E0: FB           XCE
+C0/F9E1: FB           XCE
+C0/F9E2: FB           XCE
+C0/F9E3: FB           XCE
+C0/F9E4: FC FC FC     JSR ($FCFC,X)
+C0/F9E7: FC FD FD     JSR ($FDFD,X)
+C0/F9EA: FD FD FE     SBC $FEFD,X
+C0/F9ED: FE FE FE     INC $FEFE,X
+C0/F9F0: FE FE FF     INC $FFFE,X
+C0/F9F3: FF FF FF FF  SBC $FFFFFF,X
+C0/F9F7: FF FF FF FF  SBC $FFFFFF,X
+C0/F9FB: FF FF FF FF  SBC $FFFFFF,X
+C0/F9FF: FF FF FF FF  SBC $FFFFFF,X
+C0/FA03: FF FF FF FF  SBC $FFFFFF,X
+C0/FA07: FF FF FF FF  SBC $FFFFFF,X
+C0/FA0B: FF FF FF FF  SBC $FFFFFF,X
+C0/FA0F: FE FE FE     INC $FEFE,X
+C0/FA12: FE FE FE     INC $FEFE,X
+C0/FA15: FD FD FD     SBC $FDFD,X
+C0/FA18: FD FC FC     SBC $FCFC,X
+C0/FA1B: FC FC FB     JSR ($FBFC,X)
+C0/FA1E: FB           XCE
+C0/FA1F: FB           XCE
+C0/FA20: FB           XCE
+C0/FA21: FA           PLX
+C0/FA22: FA           PLX
+C0/FA23: FA           PLX
+C0/FA24: F9 F9 F9     SBC $F9F9,Y
+C0/FA27: F8           SED
+C0/FA28: F8           SED
+C0/FA29: F7 F7        SBC [$F7],Y
+C0/FA2B: F7 F6        SBC [$F6],Y
+C0/FA2D: F6 F5        INC $F5,X
+C0/FA2F: F5 F4        SBC $F4,X
+C0/FA31: F4 F4 F3     PEA $F3F4
+C0/FA34: F3 F2        SBC ($F2,S),Y
+C0/FA36: F2 F1        SBC ($F1)
+C0/FA38: F1 F0        SBC ($F0),Y
+C0/FA3A: EF EF EE EE  SBC $EEEEEF
+C0/FA3E: ED ED EC     SBC $ECED
+C0/FA41: EB           XBA
+C0/FA42: EB           XBA
+C0/FA43: EA           NOP
+C0/FA44: EA           NOP
+C0/FA45: E9 E8        SBC #$E8
+C0/FA47: E8           INX
+C0/FA48: E7 E6        SBC [$E6]
+C0/FA4A: E6 E5        INC $E5
+C0/FA4C: E4 E3        CPX $E3
+C0/FA4E: E3 E2        SBC $E2,S
+C0/FA50: E1 E1        SBC ($E1,X)
+C0/FA52: E0 DF DE     CPX #$DEDF
+C0/FA55: DD DD DC     CMP $DCDD,X
+C0/FA58: DB           STP
+C0/FA59: DA           PHX
+C0/FA5A: D9 D9 D8     CMP $D8D9,Y
+C0/FA5D: D7 D6        CMP [$D6],Y
+C0/FA5F: D5 D4        CMP $D4,X
+C0/FA61: D3 D3        CMP ($D3,S),Y
+C0/FA63: D2 D1        CMP ($D1)
+C0/FA65: D0 CF        BNE $FA36
+C0/FA67: CE CD CC     DEC $CCCD
+C0/FA6A: CB           WAI
+C0/FA6B: CA           DEX
+C0/FA6C: C9 C8        CMP #$C8
+C0/FA6E: C7 C6        CMP [$C6]
+C0/FA70: C5 C4        CMP $C4
+C0/FA72: C3 C2        CMP $C2,S
+C0/FA74: C1 C0        CMP ($C0,X)
+C0/FA76: BF BE BD BC  LDA $BCBDBE,X
+C0/FA7A: BB           TYX
+C0/FA7B: BA           TSX
+C0/FA7C: B9 B8 B7     LDA $B7B8,Y
+C0/FA7F: B6 B5        LDX $B5,Y
+C0/FA81: B3 B2        LDA ($B2,S),Y
+C0/FA83: B1 B0        LDA ($B0),Y
+C0/FA85: AF AE AD AB  LDA $ABADAE
+C0/FA89: AA           TAX
+C0/FA8A: A9 A8        LDA #$A8
+C0/FA8C: A7 A6        LDA [$A6]
+C0/FA8E: A4 A3        LDY $A3
+C0/FA90: A2 A1 9F     LDX #$9FA1
+C0/FA93: 9E 9D 9C     STZ $9C9D,X
+C0/FA96: 9B           TXY
+C0/FA97: 99 98 97     STA $9798,Y
+C0/FA9A: 95 94        STA $94,X
+C0/FA9C: 93 92        STA ($92,S),Y
+C0/FA9E: 90 8F        BCC $FA2F
+C0/FAA0: 8E 8C 8B     STX $8B8C
+C0/FAA3: 8A           TXA
+C0/FAA4: 88           DEY
+C0/FAA5: 87 86        STA [$86]
+C0/FAA7: 84 83        STY $83
+C0/FAA9: 82 80 7F     BRL $C07A2C
+C0/FAAC: 7E 7C 7B     ROR $7B7C,X
+C0/FAAF: 7A           PLY
+C0/FAB0: 78           SEI
+C0/FAB1: 77 75        ADC [$75],Y
+C0/FAB3: 74 73        STZ $73,X
+C0/FAB5: 71 70        ADC ($70),Y
+C0/FAB7: 6E 6D 6C     ROR $6C6D
+C0/FABA: 6A           ROR
+C0/FABB: 69 67        ADC #$67
+C0/FABD: 66 64        ROR $64
+C0/FABF: 63 61        ADC $61,S
+C0/FAC1: 60           RTS

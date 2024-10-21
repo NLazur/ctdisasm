@@ -1,0 +1,128 @@
+CE/DAD5: 01 72        ORA ($72,X)
+CE/DAD7: 14 02        TRB $02
+CE/DAD9: 36 C2        ROL $C2,X
+CE/DADB: 03 10        ORA $10,S
+CE/DADD: A0 01        LDY #$01
+CE/DADF: 1F 0B 19 DC  ORA $DC190B,X
+CE/DAE3: 18           CLC
+CE/DAE4: 7B           TDC
+CE/DAE5: 6A           ROR
+CE/DAE6: 1C 9A 00     TRB $009A
+CE/DAE9: 2A           ROL
+CE/DAEA: 7B           TDC
+CE/DAEB: 6A           ROR
+CE/DAEC: 1C 9A 00     TRB $009A
+CE/DAEF: 2B           PLD
+CE/DAF0: 7B           TDC
+CE/DAF1: 6A           ROR
+CE/DAF2: 1C 0C 98     TRB $980C
+CE/DAF5: 00 2C        BRK $2C
+CE/DAF7: 7B           TDC
+CE/DAF8: 6A           ROR
+CE/DAF9: 1C 98 00     TRB $0098
+CE/DAFC: 2D 7B 6A     AND $6A7B
+CE/DAFF: 1C 9A 00     TRB $009A
+CE/DB02: 2E 30 1E     ROL $1E30
+CE/DB05: 78           SEI
+CE/DB06: 30 1F        BMI $DB27
+CE/DB08: 30 7B        BMI $DB85
+CE/DB0A: 6A           ROR
+CE/DB0B: 1C 99 00     TRB $0099
+CE/DB0E: 0D 1F 69     ORA $691F
+CE/DB11: 00 20        BRK $20
+CE/DB13: 04 06        TSB $06
+CE/DB15: 05 20        ORA $20
+CE/DB17: 08           PHP
+CE/DB18: 6A           ROR
+CE/DB19: 20 08 1F     JSR $1F08
+CE/DB1C: 85 C0        STA $C0
+CE/DB1E: 0D 23 04     ORA $0423
+CE/DB21: 20 01 A8     JSR $A801
+CE/DB24: 02 23        COP $23
+CE/DB26: 06 20        ASL $20
+CE/DB28: 01 A8        ORA ($A8,X)
+CE/DB2A: 02 23        COP $23
+CE/DB2C: 08           PHP
+CE/DB2D: 20 01 A8     JSR $A801
+CE/DB30: 02 23        COP $23
+CE/DB32: 0A           ASL
+CE/DB33: 20 01 0E     JSR $0E01
+CE/DB36: A8           TAY
+CE/DB37: 02 23        COP $23
+CE/DB39: 0C 20 01     TSB $0120
+CE/DB3C: A8           TAY
+CE/DB3D: 02 23        COP $23
+CE/DB3F: 0E 20 01     ASL $0120
+CE/DB42: A8           TAY
+CE/DB43: 02 23        COP $23
+CE/DB45: 0E 20 01     ASL $0120
+CE/DB48: A8           TAY
+CE/DB49: 02 23        COP $23
+CE/DB4B: 10 20        BPL $DB6D
+CE/DB4D: 01 A8        ORA ($A8,X)
+CE/DB4F: 03 23        ORA $23,S
+CE/DB51: 12 20        ORA ($20)
+CE/DB53: 01 A8        ORA ($A8,X)
+CE/DB55: 03 23        ORA $23,S
+CE/DB57: 14 20        TRB $20
+CE/DB59: 01 A8        ORA ($A8,X)
+CE/DB5B: 03 1F        ORA $1F,S
+CE/DB5D: 1B           TCS
+CE/DB5E: 2D 12 0C     AND $0C12
+CE/DB61: 7A           PLY
+CE/DB62: 4D 03 1F     EOR $1F03
+CE/DB65: 69 00 20     ADC #$2000
+CE/DB68: 05 6A        ORA $6A
+CE/DB6A: 20 05 1F     JSR $1F05
+CE/DB6D: 1F 78 02 06  ORA $060278,X
+CE/DB71: 23 20        AND $20,S
+CE/DB73: 1E 1F 70     ASL $701F,X
+CE/DB76: 02 03        COP $03
+CE/DB78: 0B           PHD
+CE/DB79: A8           TAY
+CE/DB7A: 08           PHP
+CE/DB7B: 02 02        COP $02
+CE/DB7D: 0A           ASL
+CE/DB7E: A8           TAY
+CE/DB7F: 10 02        BPL $DB83
+CE/DB81: 01 09        ORA ($09,X)
+CE/DB83: A8           TAY
+CE/DB84: 08           PHP
+CE/DB85: 02 00        COP $00
+CE/DB87: 08           PHP
+CE/DB88: A8           TAY
+CE/DB89: 08           PHP
+CE/DB8A: 71 35        ADC ($35),Y
+CE/DB8C: 1F 19 21 2A  ORA $2A2119,X
+CE/DB90: 20 08 19     JSR $1908
+CE/DB93: 8C 6E 20     STY $206E
+CE/DB96: 08           PHP
+CE/DB97: 19 40 A0     ORA $A040,Y
+CE/DB9A: 20 08 02     JSR $0208
+CE/DB9D: 1A           INC
+CE/DB9E: 19 91 32     ORA $3291,Y
+CE/DBA1: 20 08 19     JSR $1908
+CE/DBA4: DC 96 20     JMP [$2096]
+CE/DBA7: 08           PHP
+CE/DBA8: 02 37        COP $37
+CE/DBAA: 19 C4 40     ORA $40C4,Y
+CE/DBAD: 20 08 02     JSR $0208
+CE/DBB0: 09 19 28     ORA #$2819
+CE/DBB3: 64 20        STZ $20
+CE/DBB5: 08           PHP
+CE/DBB6: 02 3C        COP $3C
+CE/DBB8: 19 AA 8C     ORA $8CAA,Y
+CE/DBBB: 1F 19 5A 78  ORA $785A19,X
+CE/DBBF: 20 08 19     JSR $1908
+CE/DBC2: C8           INY
+CE/DBC3: 64 20        STZ $20
+CE/DBC5: 08           PHP
+CE/DBC6: 02 24        COP $24
+CE/DBC8: 19 50 46     ORA $4650,Y
+CE/DBCB: 20 08 19     JSR $1908
+CE/DBCE: 20 BE 20     JSR $20BE
+CE/DBD1: 08           PHP
+CE/DBD2: 02 39        COP $39
+CE/DBD4: 19 32 73     ORA $7332,Y
+CE/DBD7: 20 08 19     JSR $1908
+CE/DBDA: 60           RTS

@@ -1,0 +1,36 @@
+FD/EA5C: B9 22 05     LDA $0522,Y
+FD/EA5F: A8           TAY
+FD/EA60: BF 00 20 7E  LDA $7E2000,X
+FD/EA64: 29 1F        AND #$1F
+FD/EA66: 85 0C        STA $0C
+FD/EA68: 49 1F        EOR #$1F
+FD/EA6A: 8D 03 42     STA $4203
+FD/EA6D: A5 0C        LDA $0C
+FD/EA6F: 18           CLC
+FD/EA70: 6D 17 42     ADC $4217
+FD/EA73: C2 20        REP #$20
+FD/EA75: 29 1F 00     AND #$001F
+FD/EA78: 85 0C        STA $0C
+FD/EA7A: BF 00 20 7E  LDA $7E2000,X
+FD/EA7E: 29 E0 03     AND #$03E0
+FD/EA81: 4A           LSR
+FD/EA82: 4A           LSR
+FD/EA83: E2 20        SEP #$20
+FD/EA85: 85 0E        STA $0E
+FD/EA87: 49 F8        EOR #$F8
+FD/EA89: 8D 03 42     STA $4203
+FD/EA8C: A5 0E        LDA $0E
+FD/EA8E: 18           CLC
+FD/EA8F: 6D 17 42     ADC $4217
+FD/EA92: 29 F8        AND #$F8
+FD/EA94: C2 20        REP #$20
+FD/EA96: 0A           ASL
+FD/EA97: 0A           ASL
+FD/EA98: 05 0C        ORA $0C
+FD/EA9A: 9F 00 22 7E  STA $7E2200,X
+FD/EA9E: E2 20        SEP #$20
+FD/EAA0: E8           INX
+FD/EAA1: E8           INX
+FD/EAA2: 88           DEY
+FD/EAA3: D0 BB        BNE $EA60
+FD/EAA5: 60           RTS

@@ -1,0 +1,269 @@
+CD/9DB2: 20 5A 36     JSR $365A
+CD/9DB5: 02 05        COP $05
+CD/9DB7: 12 21        ORA ($21)
+CD/9DB9: 1B           TCS
+CD/9DBA: 21 03        AND ($03,X)
+CD/9DBC: 06 24        ASL $24
+CD/9DBE: 14 03        TRB $03
+CD/9DC0: 07 00        ORA [$00]
+CD/9DC2: 73 03        ADC ($03,S),Y
+CD/9DC4: 1C 0C 24     TRB $240C
+CD/9DC7: 11 02        ORA ($02),Y
+CD/9DC9: 02 00        COP $00
+CD/9DCB: 74 03        STZ $03,X
+CD/9DCD: 24 0E        BIT $0E
+CD/9DCF: 33 03        AND ($03,S),Y
+CD/9DD1: 3A           DEC
+CD/9DD2: 1E 03 3A     ASL $3A03,X
+CD/9DD5: 1F FD 1A 02  ORA $021AFD,X
+CD/9DD9: 08           PHP
+CD/9DDA: 36 24        ROL $24,X
+CD/9DDC: 14 71        TRB $71
+CD/9DDE: 00 20        BRK $20
+CD/9DE0: 37 78        AND [$78],Y
+CD/9DE2: 57 00        EOR [$00],Y
+CD/9DE4: 00 72        BRK $72
+CD/9DE6: 0D 03 08     ORA $0803
+CD/9DE9: 20 0F 06     JSR $060F
+CD/9DEC: 03 20        ORA $20,S
+CD/9DEE: 0F 50 2E 01  ORA $012E50
+CD/9DF2: 00 90        BRK $90
+CD/9DF4: FF 90 FF 1F  SBC $1FFF90,X
+CD/9DF8: 9E 2E 9E     STZ $9E2E,X
+CD/9DFB: 37 9E        AND [$9E],Y
+CD/9DFD: 5A           PHY
+CD/9DFE: 9E 6B 9E     STZ $9E6B,X
+CD/9E01: 7C 9E 8D     JMP ($8D9E,X)
+CD/9E04: 9E 9E 9E     STZ $9E9E,X
+CD/9E07: AF 9E C0 9E  LDA $9EC09E
+CD/9E0B: 1F 9E D1 9E  ORA $9ED19E,X
+CD/9E0F: 37 9E        AND [$9E],Y
+CD/9E11: 5A           PHY
+CD/9E12: 9E 6B 9E     STZ $9E6B,X
+CD/9E15: 7C 9E 8D     JMP ($8D9E,X)
+CD/9E18: 9E 9E 9E     STZ $9E9E,X
+CD/9E1B: AF 9E C0 9E  LDA $9EC09E
+CD/9E1F: 72 0D        ADC ($0D)
+CD/9E21: 36 03        ROL $03,X
+CD/9E23: 07 24        ORA [$24]
+CD/9E25: 0A           ASL
+CD/9E26: 06 03        ASL $03
+CD/9E28: 20 0F 50     JSR $500F
+CD/9E2B: 2E 01 00     ROL $0001
+CD/9E2E: 24 02        BIT $02
+CD/9E30: 1E 44 24     ASL $2444,X
+CD/9E33: 0A           ASL
+CD/9E34: 06 03        ASL $03
+CD/9E36: 00 60        BRK $60
+CD/9E38: 00 73        BRK $73
+CD/9E3A: 03 1B        ORA $1B,S
+CD/9E3C: 00 02        BRK $02
+CD/9E3E: 01 70        ORA ($70,X)
+CD/9E40: 24 01        BIT $01
+CD/9E42: 20 0F 78     JSR $780F
+CD/9E45: 9A           TXS
+CD/9E46: 0B           PHD
+CD/9E47: 98           TYA
+CD/9E48: 00 0C        BRK $0C
+CD/9E4A: 1B           TCS
+CD/9E4B: 0C 36 78     TSB $7836
+CD/9E4E: 74 85        STZ $85,X
+CD/9E50: 00 70        BRK $70
+CD/9E52: 02 00        COP $00
+CD/9E54: 0A           ASL
+CD/9E55: A8           TAY
+CD/9E56: 18           CLC
+CD/9E57: 71 36        ADC ($36),Y
+CD/9E59: 00 73        BRK $73
+CD/9E5B: 03 1B        ORA $1B,S
+CD/9E5D: 0C 24 02     TSB $0224
+CD/9E60: 85 20        STA $20
+CD/9E62: 70 02        BVS $9E66
+CD/9E64: 00 0A        BRK $0A
+CD/9E66: A8           TAY
+CD/9E67: 18           CLC
+CD/9E68: 71 36        ADC ($36),Y
+CD/9E6A: 00 73        BRK $73
+CD/9E6C: 03 1B        ORA $1B,S
+CD/9E6E: 0C 24 02     TSB $0224
+CD/9E71: 85 40        STA $40
+CD/9E73: 70 02        BVS $9E77
+CD/9E75: 00 0A        BRK $0A
+CD/9E77: A8           TAY
+CD/9E78: 18           CLC
+CD/9E79: 71 36        ADC ($36),Y
+CD/9E7B: 00 73        BRK $73
+CD/9E7D: 03 1B        ORA $1B,S
+CD/9E7F: 0C 24 02     TSB $0224
+CD/9E82: 85 60        STA $60
+CD/9E84: 70 02        BVS $9E88
+CD/9E86: 00 0A        BRK $0A
+CD/9E88: A8           TAY
+CD/9E89: 18           CLC
+CD/9E8A: 71 36        ADC ($36),Y
+CD/9E8C: 00 73        BRK $73
+CD/9E8E: 03 1B        ORA $1B,S
+CD/9E90: 0C 24 02     TSB $0224
+CD/9E93: 85 80        STA $80
+CD/9E95: 70 02        BVS $9E99
+CD/9E97: 00 0A        BRK $0A
+CD/9E99: A8           TAY
+CD/9E9A: 18           CLC
+CD/9E9B: 71 36        ADC ($36),Y
+CD/9E9D: 00 73        BRK $73
+CD/9E9F: 03 1B        ORA $1B,S
+CD/9EA1: 0C 24 02     TSB $0224
+CD/9EA4: 85 A0        STA $A0
+CD/9EA6: 70 02        BVS $9EAA
+CD/9EA8: 00 0A        BRK $0A
+CD/9EAA: A8           TAY
+CD/9EAB: 18           CLC
+CD/9EAC: 71 36        ADC ($36),Y
+CD/9EAE: 00 73        BRK $73
+CD/9EB0: 03 1B        ORA $1B,S
+CD/9EB2: 0C 24 02     TSB $0224
+CD/9EB5: 85 C0        STA $C0
+CD/9EB7: 70 02        BVS $9EBB
+CD/9EB9: 00 0A        BRK $0A
+CD/9EBB: A8           TAY
+CD/9EBC: 18           CLC
+CD/9EBD: 71 36        ADC ($36),Y
+CD/9EBF: 00 73        BRK $73
+CD/9EC1: 03 1B        ORA $1B,S
+CD/9EC3: 0C 24 02     TSB $0224
+CD/9EC6: 85 E0        STA $E0
+CD/9EC8: 70 02        BVS $9ECC
+CD/9ECA: 00 0A        BRK $0A
+CD/9ECC: A8           TAY
+CD/9ECD: 18           CLC
+CD/9ECE: 71 36        ADC ($36),Y
+CD/9ED0: 00 24        BRK $24
+CD/9ED2: 02 03        COP $03
+CD/9ED4: 23 24        AND $24,S
+CD/9ED6: 0A           ASL
+CD/9ED7: 06 03        ASL $03
+CD/9ED9: 00 98        BRK $98
+CD/9EDB: F8           SED
+CD/9EDC: 80 00        BRA $9EDE
+CD/9EDE: F0 9E        BEQ $9E7E
+CD/9EE0: 0A           ASL
+CD/9EE1: 9F 18 9F 21  STA $219F18,X
+CD/9EE5: 9F 3B 9F 4F  STA $4F9F3B,X
+CD/9EE9: 9F 62 9F 76  STA $769F62,X
+CD/9EED: 9F 8B 9F 24  STA $249F8B,X
+CD/9EF1: 05 3D        ORA $3D
+CD/9EF3: 00 30        BRK $30
+CD/9EF5: 1B           TCS
+CD/9EF6: 01 32        ORA ($32,X)
+CD/9EF8: 0A           ASL
+CD/9EF9: 72 0D        ADC ($0D)
+CD/9EFB: 02 06        COP $06
+CD/9EFD: 24 0C        BIT $0C
+CD/9EFF: 30 1A        BMI $9F1B
+CD/9F01: 01 20        ORA ($20,X)
+CD/9F03: 20 06 03     JSR $0306
+CD/9F06: 50 2E        BVC $9F36
+CD/9F08: 01 00        ORA ($00,X)
+CD/9F0A: 24 0A        BIT $0A
+CD/9F0C: 02 09        COP $09
+CD/9F0E: 78           SEI
+CD/9F0F: AA           TAX
+CD/9F10: 24 0B        BIT $0B
+CD/9F12: 20 0F 36     JSR $360F
+CD/9F15: 06 03        ASL $03
+CD/9F17: 00 24        BRK $24
+CD/9F19: 0A           ASL
+CD/9F1A: 02 09        COP $09
+CD/9F1C: 24 0C        BIT $0C
+CD/9F1E: 06 03        ASL $03
+CD/9F20: 00 60        BRK $60
+CD/9F22: 00 73        BRK $73
+CD/9F24: 00 33        BRK $33
+CD/9F26: 00 3A        BRK $3A
+CD/9F28: 1E 09 3A     ASL $3A09,X
+CD/9F2B: 1F D7 1A 36  ORA $361AD7,X
+CD/9F2F: 24 0A        BIT $0A
+CD/9F31: 70 02        BVS $9F35
+CD/9F33: 00 09        BRK $09
+CD/9F35: 85 00        STA $00
+CD/9F37: A8           TAY
+CD/9F38: 30 71        BMI $9FAB
+CD/9F3A: 00 73        BRK $73
+CD/9F3C: 00 24        BRK $24
+CD/9F3E: 01 1A        ORA ($1A,X)
+CD/9F40: 36 24        ROL $24,X
+CD/9F42: 0A           ASL
+CD/9F43: 20 1E 70     JSR $701E
+CD/9F46: 02 00        COP $00
+CD/9F48: 09 85 E0     ORA #$E085
+CD/9F4B: A8           TAY
+CD/9F4C: 30 71        BMI $9FBF
+CD/9F4E: 00 73        BRK $73
+CD/9F50: 00 24        BRK $24
+CD/9F52: 02 1A        COP $1A
+CD/9F54: 36 20        ROL $20,X
+CD/9F56: 3C 70 02     BIT $0270,X
+CD/9F59: 00 09        BRK $09
+CD/9F5B: 85 20        STA $20
+CD/9F5D: A8           TAY
+CD/9F5E: 30 71        BMI $9FD1
+CD/9F60: 36 00        ROL $00,X
+CD/9F62: 73 00        ADC ($00,S),Y
+CD/9F64: 24 03        BIT $03
+CD/9F66: 1A           INC
+CD/9F67: 36 24        ROL $24,X
+CD/9F69: 0A           ASL
+CD/9F6A: 20 0F 70     JSR $700F
+CD/9F6D: 02 00        COP $00
+CD/9F6F: 09 85 10     ORA #$1085
+CD/9F72: A8           TAY
+CD/9F73: 30 71        BMI $9FE6
+CD/9F75: 00 73        BRK $73
+CD/9F77: 00 24        BRK $24
+CD/9F79: 04 1A        TSB $1A
+CD/9F7B: 36 24        ROL $24,X
+CD/9F7D: 0A           ASL
+CD/9F7E: 20 3C 70     JSR $703C
+CD/9F81: 02 00        COP $00
+CD/9F83: 09 85 F0     ORA #$F085
+CD/9F86: A8           TAY
+CD/9F87: 30 71        BMI $9FFA
+CD/9F89: 36 00        ROL $00,X
+CD/9F8B: 02 06        COP $06
+CD/9F8D: 20 1E 06     JSR $061E
+CD/9F90: 05 20        ORA $20
+CD/9F92: 0F 06 03 20  ORA $200306
+CD/9F96: 0F 50 2E 01  ORA $012E50
+CD/9F9A: 00 90        BRK $90
+CD/9F9C: FF 80 00 B5  SBC $B50080,X
+CD/9FA0: 9F D6 9F E3  STA $E39FD6,X
+CD/9FA4: 9F 4C A0 5C  STA $5CA04C,X
+CD/9FA8: A0 6E        LDY #$6E
+CD/9FAA: A0 80        LDY #$80
+CD/9FAC: A0 92        LDY #$92
+CD/9FAE: A0 A4        LDY #$A4
+CD/9FB0: A0 B6        LDY #$B6
+CD/9FB2: A0 C9        LDY #$C9
+CD/9FB4: A0 72        LDY #$72
+CD/9FB6: 0D 78 9C     ORA $9C78
+CD/9FB9: 02 07        COP $07
+CD/9FBB: 80 45        BRA $A002
+CD/9FBD: 00 00        BRK $00
+CD/9FBF: E7 84        SBC [$84]
+CD/9FC1: 80 02        BRA $9FC5
+CD/9FC3: 69 20 3C     ADC #$3C20
+CD/9FC6: 36 24        ROL $24,X
+CD/9FC8: 03 80        ORA $80,S
+CD/9FCA: 12 69        ORA ($69)
+CD/9FCC: 80 51        BRA $A01F
+CD/9FCE: 06 03        ASL $03
+CD/9FD0: 20 0F 50     JSR $500F
+CD/9FD3: 2E 01 00     ROL $0001
+CD/9FD6: 24 02        BIT $02
+CD/9FD8: 78           SEI
+CD/9FD9: A8           TAY
+CD/9FDA: 03 09        ORA $09,S
+CD/9FDC: 24 03        BIT $03
+CD/9FDE: 78           SEI
+CD/9FDF: FF 06 03 00  SBC $000306,X
+CD/9FE3: 60           RTS

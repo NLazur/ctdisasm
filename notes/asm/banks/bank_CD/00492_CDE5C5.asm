@@ -1,0 +1,73 @@
+CD/E5C5: 20 5A 36     JSR $365A
+CD/E5C8: 70 02        BVS $E5CC
+CD/E5CA: 05 0C        ORA $0C
+CD/E5CC: 12 2C        ORA ($2C)
+CD/E5CE: 1B           TCS
+CD/E5CF: 2C 03 06     BIT $0603
+CD/E5D2: 36 78        ROL $78,X
+CD/E5D4: 5F 03 07 00  EOR $000703,X
+CD/E5D8: 24 0A        BIT $0A
+CD/E5DA: 73 03        ADC ($03,S),Y
+CD/E5DC: 1B           TCS
+CD/E5DD: 2D 02 02     AND $0202
+CD/E5E0: 24 0B        BIT $0B
+CD/E5E2: 70 0C        BVS $E5F0
+CD/E5E4: 12 2A        ORA ($2A)
+CD/E5E6: 1B           TCS
+CD/E5E7: 2A           ROL
+CD/E5E8: 71 00        ADC ($00),Y
+CD/E5EA: 24 0A        BIT $0A
+CD/E5EC: 73 03        ADC ($03,S),Y
+CD/E5EE: 1B           TCS
+CD/E5EF: 2E 02 02     ROL $0202
+CD/E5F2: 24 0B        BIT $0B
+CD/E5F4: 70 0C        BVS $E602
+CD/E5F6: 12 2B        ORA ($2B)
+CD/E5F8: 1B           TCS
+CD/E5F9: 2B           PLD
+CD/E5FA: 71 00        ADC ($00),Y
+CD/E5FC: 24 0A        BIT $0A
+CD/E5FE: 73 03        ADC ($03,S),Y
+CD/E600: 1B           TCS
+CD/E601: 2F 02 02 24  AND $240202
+CD/E605: 0B           PHD
+CD/E606: 70 0C        BVS $E614
+CD/E608: 12 2C        ORA ($2C)
+CD/E60A: 1B           TCS
+CD/E60B: 2C 71 00     BIT $0071
+CD/E60E: 33 03        AND ($03,S),Y
+CD/E610: 41 1E        EOR ($1E,X)
+CD/E612: 00 41        BRK $41
+CD/E614: 1F 01 41 1E  ORA $1E4101,X
+CD/E618: 02 41        COP $41
+CD/E61A: 1F 03 41 1E  ORA $1E4103,X
+CD/E61E: 04 41        TSB $41
+CD/E620: 1F 05 25 00  ORA $002505,X
+CD/E624: 33 04        AND ($04,S),Y
+CD/E626: 41 1E        EOR ($1E,X)
+CD/E628: 02 41        COP $41
+CD/E62A: 1F 03 25 01  ORA $012503,X
+CD/E62E: 33 05        AND ($05,S),Y
+CD/E630: 41 1E        EOR ($1E,X)
+CD/E632: 04 41        TSB $41
+CD/E634: 1F 05 00 98  ORA $980005,X
+CD/E638: 00 80        BRK $80
+CD/E63A: 00 43        BRK $43
+CD/E63C: E6 5E        INC $5E
+CD/E63E: E6 6D        INC $6D
+CD/E640: E6 D4        INC $D4
+CD/E642: 97 72        STA [$72],Y
+CD/E644: 0D 03 07     ORA $0703
+CD/E647: 36 20        ROL $20,X
+CD/E649: 05 78        ORA $78
+CD/E64B: 98           TYA
+CD/E64C: 2D 80 12     AND $1280
+CD/E64F: B8           CLV
+CD/E650: 34 1B        BIT $1B,X
+CD/E652: 22 1B 00 36  JSR $36001B
+CD/E656: 06 03        ASL $03
+CD/E658: 50 20        BVC $E67A
+CD/E65A: 0F 2E 01 00  ORA $00012E
+CD/E65E: 24 01        BIT $01
+CD/E660: 69 03        ADC #$03
+CD/E662: 6B           RTL

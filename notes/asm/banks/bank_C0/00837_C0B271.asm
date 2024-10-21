@@ -1,0 +1,73 @@
+C0/B271: A2 01 09     LDX #$0901
+C0/B274: 86 89        STX $89
+C0/B276: A2 00 00     LDX #$0000
+C0/B279: 86 8B        STX $8B
+C0/B27B: A2 07 09     LDX #$0907
+C0/B27E: 86 81        STX $81
+C0/B280: A2 00 00     LDX #$0000
+C0/B283: 86 83        STX $83
+C0/B285: A2 1A 09     LDX #$091A
+C0/B288: 86 85        STX $85
+C0/B28A: A2 00 00     LDX #$0000
+C0/B28D: 86 87        STX $87
+C0/B28F: A2 10 07     LDX #$0710
+C0/B292: 86 DF        STX $DF
+C0/B294: A2 70 07     LDX #$0770
+C0/B297: 86 DB        STX $DB
+C0/B299: A9 00        LDA #$00
+C0/B29B: 8D 83 21     STA $2183
+C0/B29E: 85 6E        STA $6E
+C0/B2A0: A2 A0 08     LDX #$08A0
+C0/B2A3: 86 DD        STX $DD
+C0/B2A5: A0 7E 00     LDY #$007E
+C0/B2A8: B9 00 0E     LDA $0E00,Y
+C0/B2AB: 30 13        BMI $B2C0
+C0/B2AD: 85 6D        STA $6D
+C0/B2AF: 20 09 B3     JSR $B309
+C0/B2B2: A6 6D        LDX $6D
+C0/B2B4: BD 81 0E     LDA $0E81,X
+C0/B2B7: 30 07        BMI $B2C0
+C0/B2B9: 85 6D        STA $6D
+C0/B2BB: 20 09 B3     JSR $B309
+C0/B2BE: 80 F2        BRA $B2B2
+C0/B2C0: 88           DEY
+C0/B2C1: 88           DEY
+C0/B2C2: 10 E4        BPL $B2A8
+C0/B2C4: A6 DB        LDX $DB
+C0/B2C6: A9 E0        LDA #$E0
+C0/B2C8: E4 7B        CPX $7B
+C0/B2CA: B0 0C        BCS $B2D8
+C0/B2CC: 9D 01 00     STA $0001,X
+C0/B2CF: E8           INX
+C0/B2D0: E8           INX
+C0/B2D1: E8           INX
+C0/B2D2: E8           INX
+C0/B2D3: E0 A0 08     CPX #$08A0
+C0/B2D6: 90 F0        BCC $B2C8
+C0/B2D8: A6 DB        LDX $DB
+C0/B2DA: 86 7B        STX $7B
+C0/B2DC: A6 DD        LDX $DD
+C0/B2DE: E4 7D        CPX $7D
+C0/B2E0: B0 0C        BCS $B2EE
+C0/B2E2: 9D 01 00     STA $0001,X
+C0/B2E5: E8           INX
+C0/B2E6: E8           INX
+C0/B2E7: E8           INX
+C0/B2E8: E8           INX
+C0/B2E9: E0 00 09     CPX #$0900
+C0/B2EC: 90 F0        BCC $B2DE
+C0/B2EE: A6 DD        LDX $DD
+C0/B2F0: 86 7D        STX $7D
+C0/B2F2: A6 DF        LDX $DF
+C0/B2F4: E4 7F        CPX $7F
+C0/B2F6: B0 0C        BCS $B304
+C0/B2F8: 9D 01 00     STA $0001,X
+C0/B2FB: E8           INX
+C0/B2FC: E8           INX
+C0/B2FD: E8           INX
+C0/B2FE: E8           INX
+C0/B2FF: E0 70 07     CPX #$0770
+C0/B302: 90 F0        BCC $B2F4
+C0/B304: A6 DF        LDX $DF
+C0/B306: 86 7F        STX $7F
+C0/B308: 60           RTS

@@ -1,0 +1,95 @@
+FE/1059: 16 2A        ASL $2A,X
+FE/105B: F8           SED
+FE/105C: C6 B9        DEC $B9
+FE/105E: BA           TSX
+FE/105F: F9 F7 88     SBC $88F7,Y
+FE/1062: F6 01        INC $01,X
+FE/1064: F8           SED
+FE/1065: C4 C5        CPY $C5
+FE/1067: 07 FA        ORA [$FA]
+FE/1069: FA           PLX
+FE/106A: 03 CE        ORA $CE,S
+FE/106C: C0 05 26     CPY #$2605
+FE/106F: F8           SED
+FE/1070: 3D C9 CF     AND $CFC9,X
+FE/1073: 06 C1        ASL $C1
+FE/1075: F8           SED
+FE/1076: 05 D4        ORA $D4
+FE/1078: FB           XCE
+FE/1079: FB           XCE
+FE/107A: C2 CE        REP #$CE
+FE/107C: 0E 0A FC     ASL $FC0A
+FE/107F: 0A           ASL
+FE/1080: 0E 41 F8     ASL $F841
+FE/1083: 84 AD        STY $AD
+FE/1085: 3F 08 41 08  AND $084108,X
+FE/1089: FF FC C3 8E  SBC $8EC3FC,X
+FE/108D: FE 0F 41     INC $410F,X
+FE/1090: 0D 3E 02     ORA $023E
+FE/1093: 3F 05 0E 08  AND $080E05,X
+FE/1097: 34 F8        BIT $F8,X
+FE/1099: 02 4F        COP $4F
+FE/109B: 80 06        BRA $10A3
+FE/109D: C2 09        REP #$09
+FE/109F: 81 05        STA ($05,X)
+FE/10A1: 0B           PHD
+FE/10A2: 0E 0E 0B     ASL $0B0E
+FE/10A5: 7F 05 BD 06  ADC $06BD05,X
+FE/10A9: 1E 08 41     ASL $4108,X
+FE/10AC: F8           SED
+FE/10AD: 41 47        EOR ($47,X)
+FE/10AF: B7 03        LDA [$03],Y
+FE/10B1: F0 06        BEQ $10B9
+FE/10B3: 05 05        ORA $05
+FE/10B5: 0B           PHD
+FE/10B6: 39 82 06     AND $0682,Y
+FE/10B9: 05 05        ORA $05
+FE/10BB: 10 0F        BPL $10CC
+FE/10BD: 49 FA 7E     EOR #$7EFA
+FE/10C0: 48           PHA
+FE/10C1: 03 08        ORA $08,S
+FE/10C3: 2E 01 30     ROL $3001
+FE/10C6: 07 7F        ORA [$7F]
+FE/10C8: 07 BB        ORA [$BB]
+FE/10CA: 0B           PHD
+FE/10CB: 01 50        ORA ($50,X)
+FE/10CD: 07 01        ORA [$01]
+FE/10CF: 08           PHP
+FE/10D0: 4E 03 81     LSR $8103
+FE/10D3: F8           SED
+FE/10D4: 1A           INC
+FE/10D5: 28           PLP
+FE/10D6: 3F 00 09 01  AND $010900,X
+FE/10DA: C0 00 02     CPY #$0200
+FE/10DD: 80 06        BRA $10E5
+FE/10DF: 0C 07 07     TSB $0707
+FE/10E2: 0C 06 02     TSB $0206
+FE/10E5: C0 00 07     CPY #$0700
+FE/10E8: 07 05        ORA [$05]
+FE/10EA: 41 F8        EOR ($F8,X)
+FE/10EC: FB           XCE
+FE/10ED: 4B           PHK
+FE/10EE: 00 0C        BRK $0C
+FE/10F0: 01 0C        ORA ($0C,X)
+FE/10F2: 06 61        ASL $61
+FE/10F4: 7E 02 0B     ROR $0B02,X
+FE/10F7: 0B           PHD
+FE/10F8: 06 06        ASL $06
+FE/10FA: 0B           PHD
+FE/10FB: 00 4D        BRK $4D
+FE/10FD: 06 09        ASL $09
+FE/10FF: FE 03 3A     INC $3A03,X
+FE/1102: F8           SED
+FE/1103: C0 61 F9     CPY #$F961
+FE/1106: 0D FC 05     ORA $05FC
+FE/1109: C0 21 80     CPY #$8021
+FE/110C: F8           SED
+FE/110D: 03 6D        ORA $6D,S
+FE/110F: FF BE 00 C2  SBC $C200BE,X
+FE/1113: 00 BD        BRK $BD
+FE/1115: FC C5 AF     JSR ($AFC5,X)
+FE/1118: 81 04        STA ($04,X)
+FE/111A: 84 04        STY $04
+FE/111C: 3F FA 83 A6  AND $A683FA,X
+FE/1120: 3C 08 03     BIT $0308,X
+FE/1123: 40           RTI

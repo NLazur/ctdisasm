@@ -1,0 +1,83 @@
+D0/6B36: D0 30        BNE $6B68
+D0/6B38: 1C 1E 03     TRB $031E
+D0/6B3B: 03 00        ORA $00,S
+D0/6B3D: 00 00        BRK $00
+D0/6B3F: 00 00        BRK $00
+D0/6B41: 00 00        BRK $00
+D0/6B43: 00 00        BRK $00
+D0/6B45: 00 00        BRK $00
+D0/6B47: 00 38        BRK $38
+D0/6B49: 3E 76 7A     ROL $7A76,X
+D0/6B4C: 66 7A        ROR $7A
+D0/6B4E: AE B2 CE     LDX $CEB2
+D0/6B51: F2 4C        SBC ($4C)
+D0/6B53: 72 17        ADC ($17)
+D0/6B55: 39 2A 3D     AND $3D2A,Y
+D0/6B58: 18           CLC
+D0/6B59: 18           CLC
+D0/6B5A: 00 00        BRK $00
+D0/6B5C: 00 00        BRK $00
+D0/6B5E: 00 00        BRK $00
+D0/6B60: 00 00        BRK $00
+D0/6B62: 00 00        BRK $00
+D0/6B64: 00 00        BRK $00
+D0/6B66: 00 00        BRK $00
+D0/6B68: 00 00        BRK $00
+D0/6B6A: 00 00        BRK $00
+D0/6B6C: 00 00        BRK $00
+D0/6B6E: 1C 1C 13     TRB $131C
+D0/6B71: 1F 1C 1F 24  ORA $241F1C,X
+D0/6B75: 27 06        AND [$06]
+D0/6B77: 05 00        ORA $00
+D0/6B79: 00 00        BRK $00
+D0/6B7B: 00 00        BRK $00
+D0/6B7D: 00 00        BRK $00
+D0/6B7F: 00 00        BRK $00
+D0/6B81: 00 C0        BRK $C0
+D0/6B83: C0 30        CPY #$30
+D0/6B85: F0 0F        BEQ $6B96
+D0/6B87: FF 00 00 00  SBC $000000,X
+D0/6B8B: 00 00        BRK $00
+D0/6B8D: 00 00        BRK $00
+D0/6B8F: 00 00        BRK $00
+D0/6B91: 00 00        BRK $00
+D0/6B93: 00 00        BRK $00
+D0/6B95: 00 F8        BRK $F8
+D0/6B97: F8           SED
+D0/6B98: 00 00        BRK $00
+D0/6B9A: 00 00        BRK $00
+D0/6B9C: 20 20 30     JSR $3020
+D0/6B9F: 30 28        BMI $6BC9
+D0/6BA1: 38           SEC
+D0/6BA2: 26 3E        ROL $3E
+D0/6BA4: 2D 33 5E     AND $5E33
+D0/6BA7: 61 00        ADC ($00,X)
+D0/6BA9: 00 00        BRK $00
+D0/6BAB: 00 01        BRK $01
+D0/6BAD: 01 06        ORA ($06,X)
+D0/6BAF: 07 0D        ORA [$0D]
+D0/6BB1: 0E 03 03     ASL $0303
+D0/6BB4: 00 00        BRK $00
+D0/6BB6: 00 00        BRK $00
+D0/6BB8: 80 80        BRA $6B3A
+D0/6BBA: C0 C0        CPY #$C0
+D0/6BBC: 20 E0 D0     JSR $D0E0
+D0/6BBF: 30 F4        BMI $6BB5
+D0/6BC1: 0C 22 DE     TSB $DE22
+D0/6BC4: 81 FF        STA ($FF,X)
+D0/6BC6: BE C1 00     LDX $00C1,Y
+D0/6BC9: 00 00        BRK $00
+D0/6BCB: 00 00        BRK $00
+D0/6BCD: 00 00        BRK $00
+D0/6BCF: 00 00        BRK $00
+D0/6BD1: 00 00        BRK $00
+D0/6BD3: 00 80        BRK $80
+D0/6BD5: 80 70        BRA $6C47
+D0/6BD7: F0 00        BEQ $6BD9
+D0/6BD9: 00 01        BRK $01
+D0/6BDB: 01 03        ORA ($03,X)
+D0/6BDD: 03 04        ORA $04,S
+D0/6BDF: 06 0B        ASL $0B
+D0/6BE1: 0F 13 1C 2F  ORA $2F1C13
+D0/6BE5: 30 5F        BMI $6C46
+D0/6BE7: 60           RTS

@@ -1,0 +1,28 @@
+CD/278E: A7 40        LDA [$40]
+CD/2790: AA           TAX
+CD/2791: A0 01 00     LDY #$0001
+CD/2794: B7 40        LDA [$40],Y
+CD/2796: 9D D4 CA     STA $CAD4,X
+CD/2799: C8           INY
+CD/279A: B7 40        LDA [$40],Y
+CD/279C: 9D D6 CA     STA $CAD6,X
+CD/279F: C8           INY
+CD/27A0: B7 40        LDA [$40],Y
+CD/27A2: 9D DA CA     STA $CADA,X
+CD/27A5: 9D DC CA     STA $CADC,X
+CD/27A8: 9D DE CA     STA $CADE,X
+CD/27AB: A9 C0        LDA #$C0
+CD/27AD: 9D E4 CA     STA $CAE4,X
+CD/27B0: A9 15        LDA #$15
+CD/27B2: 9D E6 CA     STA $CAE6,X
+CD/27B5: A9 6A        LDA #$6A
+CD/27B7: 9D E8 CA     STA $CAE8,X
+CD/27BA: A9 40        LDA #$40
+CD/27BC: 9D E0 CA     STA $CAE0,X
+CD/27BF: 9D E2 CA     STA $CAE2,X
+CD/27C2: A4 40        LDY $40
+CD/27C4: C8           INY
+CD/27C5: C8           INY
+CD/27C6: C8           INY
+CD/27C7: 84 40        STY $40
+CD/27C9: 60           RTS

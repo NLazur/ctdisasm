@@ -1,0 +1,207 @@
+CF/DF2E: A2 3B        LDX #$3B
+CF/DF30: A4 3B        LDY $3B
+CF/DF32: 1C 20 23     TRB $2320
+CF/DF35: F4 63 38     PEA $3863
+CF/DF38: 65 38        ADC $38
+CF/DF3A: BD A1 53     LDA $53A1,X
+CF/DF3D: AE 53 EE     LDX $EE53
+CF/DF40: A6 3B        LDX $3B
+CF/DF42: 02 20        COP $20
+CF/DF44: 1C 20 1C     TRB $1C20
+CF/DF47: 20 99 B4     JSR $B499
+CF/DF4A: A8           TAY
+CF/DF4B: 3B           TSC
+CF/DF4C: AA           TAX
+CF/DF4D: 3B           TSC
+CF/DF4E: AC 3B 1C     LDY $1C3B
+CF/DF51: 20 1C 20     JSR $201C
+CF/DF54: 02 E0        COP $E0
+CF/DF56: 73 38        ADC ($38,S),Y
+CF/DF58: 75 38        ADC $38,X
+CF/DF5A: 1C 20 1C     TRB $1C20
+CF/DF5D: 20 1C 20     JSR $201C
+CF/DF60: AE 3B B0     LDX $B03B
+CF/DF63: 3B           TSC
+CF/DF64: B2 3B        LDA ($3B)
+CF/DF66: 1C 20 B4     TRB $B420
+CF/DF69: 3B           TSC
+CF/DF6A: 02 A0        COP $A0
+CF/DF6C: B6 3B        LDX $3B,Y
+CF/DF6E: B8           CLV
+CF/DF6F: 3B           TSC
+CF/DF70: 1E E1 BA     ASL $BAE1,X
+CF/DF73: 3B           TSC
+CF/DF74: 1C 20 B9     TRB $B920
+CF/DF77: 61 1C        ADC ($1C,X)
+CF/DF79: 20 1C 20     JSR $201C
+CF/DF7C: 49 2E        EOR #$2E
+CF/DF7E: 4B           PHK
+CF/DF7F: 2E 1C 20     ROL $201C
+CF/DF82: BC 3B BE     LDY $BE3B,X
+CF/DF85: 3B           TSC
+CF/DF86: C0 3B        CPY #$3B
+CF/DF88: C2 3B        REP #$3B
+CF/DF8A: C4 3B        CPY $3B
+CF/DF8C: C6 3B        DEC $3B
+CF/DF8E: C8           INY
+CF/DF8F: 3B           TSC
+CF/DF90: CA           DEX
+CF/DF91: 3B           TSC
+CF/DF92: 1C 20 36     TRB $3620
+CF/DF95: 20 38 20     JSR $2038
+CF/DF98: 3D 2E 3F     AND $3F2E,X
+CF/DF9B: 2E 55 2E     ROL $2E55
+CF/DF9E: 57 2E        EOR [$2E],Y
+CF/DFA0: 1C 20 1C     TRB $1C20
+CF/DFA3: 20 CC 3B     JSR $3BCC
+CF/DFA6: CE 3B D0     DEC $D03B
+CF/DFA9: 3B           TSC
+CF/DFAA: D0 7B        BNE $E027
+CF/DFAC: D2 3B        CMP ($3B)
+CF/DFAE: D4 3B        PEI $3B
+CF/DFB0: D6 3B        DEC $3B,X
+CF/DFB2: 1C 20 54     TRB $5420
+CF/DFB5: 20 56 20     JSR $2056
+CF/DFB8: 45 2E        EOR $2E
+CF/DFBA: 47 2E        EOR [$2E]
+CF/DFBC: 6D 2E 6F     ADC $6F2E
+CF/DFBF: 2E 04 20     ROL $2004
+CF/DFC2: 06 20        ASL $20
+CF/DFC4: 08           PHP
+CF/DFC5: 20 0A 20     JSR $200A
+CF/DFC8: 56 35        LSR $35,X
+CF/DFCA: 58           CLI
+CF/DFCB: 35 5A        AND $5A,X
+CF/DFCD: 35 5C        AND $5C,X
+CF/DFCF: 35 1C        AND $1C,X
+CF/DFD1: 20 1C 20     JSR $201C
+CF/DFD4: 1C 20 1C     TRB $1C20
+CF/DFD7: 20 32 20     JSR $2032
+CF/DFDA: 34 20        BIT $20,X
+CF/DFDC: B5 38        LDA $38,X
+CF/DFDE: B5 78        LDA $78,X
+CF/DFE0: 1E 20 20     ASL $2020,X
+CF/DFE3: 20 22 20     JSR $2022
+CF/DFE6: 24 20        BIT $20
+CF/DFE8: 5E 35 60     LSR $6035,X
+CF/DFEB: 35 62        AND $62,X
+CF/DFED: 35 64        AND $64,X
+CF/DFEF: 35 48        AND $48,X
+CF/DFF1: 20 4A 20     JSR $204A
+CF/DFF4: 4C 20 4E     JMP $4E20
+CF/DFF7: 20 50 20     JSR $2050
+CF/DFFA: 52 20        EOR ($20)
+CF/DFFC: B5 B8        LDA $B8,X
+CF/DFFE: B5 F8        LDA $F8,X
+CF/E000: 00 AA        BRK $AA
+CF/E002: 55 55        EOR $55,X
+CF/E004: 00 AA        BRK $AA
+CF/E006: 55 00        EOR $00,X
+CF/E008: 55 55        EOR $55,X
+CF/E00A: 14 55        TRB $55
+CF/E00C: 00 00        BRK $00
+CF/E00E: 00 00        BRK $00
+CF/E010: 00 00        BRK $00
+CF/E012: 00 00        BRK $00
+CF/E014: 00 00        BRK $00
+CF/E016: 00 00        BRK $00
+CF/E018: 00 00        BRK $00
+CF/E01A: 00 00        BRK $00
+CF/E01C: 00 00        BRK $00
+CF/E01E: 00 00        BRK $00
+CF/E020: 00 00        BRK $00
+CF/E022: 00 00        BRK $00
+CF/E024: 00 55        BRK $55
+CF/E026: 00 00        BRK $00
+CF/E028: 00 00        BRK $00
+CF/E02A: 00 00        BRK $00
+CF/E02C: 00 00        BRK $00
+CF/E02E: 00 50        BRK $50
+CF/E030: 01 00        ORA ($00,X)
+CF/E032: 00 00        BRK $00
+CF/E034: 00 00        BRK $00
+CF/E036: 00 00        BRK $00
+CF/E038: 00 00        BRK $00
+CF/E03A: 55 05        EOR $05,X
+CF/E03C: 55 05        EOR $05,X
+CF/E03E: 00 00        BRK $00
+CF/E040: 00 00        BRK $00
+CF/E042: 00 00        BRK $00
+CF/E044: 00 00        BRK $00
+CF/E046: 00 00        BRK $00
+CF/E048: 00 00        BRK $00
+CF/E04A: 00 00        BRK $00
+CF/E04C: 00 00        BRK $00
+CF/E04E: 00 00        BRK $00
+CF/E050: 00 00        BRK $00
+CF/E052: 00 00        BRK $00
+CF/E054: 00 00        BRK $00
+CF/E056: 00 00        BRK $00
+CF/E058: 00 00        BRK $00
+CF/E05A: 00 00        BRK $00
+CF/E05C: 00 00        BRK $00
+CF/E05E: 00 00        BRK $00
+CF/E060: 00 00        BRK $00
+CF/E062: 00 00        BRK $00
+CF/E064: 00 00        BRK $00
+CF/E066: 00 00        BRK $00
+CF/E068: 00 00        BRK $00
+CF/E06A: 00 00        BRK $00
+CF/E06C: 00 00        BRK $00
+CF/E06E: 00 00        BRK $00
+CF/E070: 00 00        BRK $00
+CF/E072: 00 00        BRK $00
+CF/E074: 00 00        BRK $00
+CF/E076: 00 00        BRK $00
+CF/E078: 00 00        BRK $00
+CF/E07A: 00 00        BRK $00
+CF/E07C: 00 00        BRK $00
+CF/E07E: 00 00        BRK $00
+CF/E080: 00 00        BRK $00
+CF/E082: 00 00        BRK $00
+CF/E084: 00 00        BRK $00
+CF/E086: 00 00        BRK $00
+CF/E088: 00 00        BRK $00
+CF/E08A: 00 00        BRK $00
+CF/E08C: 00 00        BRK $00
+CF/E08E: 00 00        BRK $00
+CF/E090: 00 00        BRK $00
+CF/E092: 00 00        BRK $00
+CF/E094: 00 44        BRK $44
+CF/E096: 24 00        BIT $00
+CF/E098: AA           TAX
+CF/E099: 0A           ASL
+CF/E09A: 00 00        BRK $00
+CF/E09C: 00 00        BRK $00
+CF/E09E: 00 00        BRK $00
+CF/E0A0: 00 40        BRK $40
+CF/E0A2: 05 00        ORA $00
+CF/E0A4: 00 00        BRK $00
+CF/E0A6: 00 00        BRK $00
+CF/E0A8: 00 00        BRK $00
+CF/E0AA: 00 04        BRK $04
+CF/E0AC: 00 05        BRK $05
+CF/E0AE: 00 00        BRK $00
+CF/E0B0: 00 00        BRK $00
+CF/E0B2: 00 00        BRK $00
+CF/E0B4: 00 00        BRK $00
+CF/E0B6: 00 00        BRK $00
+CF/E0B8: 00 00        BRK $00
+CF/E0BA: 55 05        EOR $05,X
+CF/E0BC: 00 00        BRK $00
+CF/E0BE: 55 05        EOR $05,X
+CF/E0C0: 00 01        BRK $01
+CF/E0C2: 44 01 00     MVP $01,$00
+CF/E0C5: 04 10        TSB $10
+CF/E0C7: 00 00        BRK $00
+CF/E0C9: 00 00        BRK $00
+CF/E0CB: 00 55        BRK $55
+CF/E0CD: 00 00        BRK $00
+CF/E0CF: 00 00        BRK $00
+CF/E0D1: 00 00        BRK $00
+CF/E0D3: 14 00        TRB $00
+CF/E0D5: 00 00        BRK $00
+CF/E0D7: 00 00        BRK $00
+CF/E0D9: 00 00        BRK $00
+CF/E0DB: 00 00        BRK $00
+CF/E0DD: 40           RTI

@@ -1,0 +1,46 @@
+CE/7172: 1E A0 71     ASL $71A0,X
+CE/7175: 65 20        ADC $20
+CE/7177: 14 36        TRB $36
+CE/7179: 24 03        BIT $03
+CE/717B: D9 30 60     CMP $6030,Y
+CE/717E: 09 02 03     ORA #$0302
+CE/7181: 70 85        BVS $7108
+CE/7183: C0 0B A8     CPY #$A80B
+CE/7186: 14 0D        TRB $0D
+CE/7188: A8           TAY
+CE/7189: 5A           PHY
+CE/718A: 6F 36 00 0D  ADC $0D0036
+CE/718E: 1B           TCS
+CE/718F: 0A           ASL
+CE/7190: 72 01        ADC ($01)
+CE/7192: 73 01        ADC ($01,S),Y
+CE/7194: 76 0A        ROR $0A,X
+CE/7196: 0B           PHD
+CE/7197: 77 55        ADC [$55],Y
+CE/7199: 02 00        COP $00
+CE/719B: 23 02        AND $02,S
+CE/719D: 70 A8        BVS $7147
+CE/719F: 05 15        ORA $15
+CE/71A1: FF 2B 1B 2B  SBC $2B1B2B,X
+CE/71A5: 35 23        AND $23,X
+CE/71A7: 08           PHP
+CE/71A8: 0D A8 05     ORA $05A8
+CE/71AB: 20 02 71     JSR $7102
+CE/71AE: 1B           TCS
+CE/71AF: 03 85        ORA $85,S
+CE/71B1: A0 74 00     LDY #$0074
+CE/71B4: A8           TAY
+CE/71B5: 04 24        TSB $24
+CE/71B7: 03 D9        ORA $D9,S
+CE/71B9: 30 0C        BMI $71C7
+CE/71BB: 02 04        COP $04
+CE/71BD: 85 C0        STA $C0
+CE/71BF: 70 A8        BVS $7169
+CE/71C1: 0F 0D A8 5F  ORA $5FA80D
+CE/71C5: 6F 00 0D 1B  ADC $1B0D00
+CE/71C9: 0B           PHD
+CE/71CA: 72 02        ADC ($02)
+CE/71CC: 73 02        ADC ($02,S),Y
+CE/71CE: 76 0B        ROR $0B,X
+CE/71D0: 0A           ASL
+CE/71D1: 60           RTS

@@ -1,0 +1,63 @@
+C2/39D5: C2 20        REP #$20
+C2/39D7: A5 08        LDA $08
+C2/39D9: 4A           LSR
+C2/39DA: 4A           LSR
+C2/39DB: 4A           LSR
+C2/39DC: 85 08        STA $08
+C2/39DE: A5 0A        LDA $0A
+C2/39E0: 4A           LSR
+C2/39E1: 4A           LSR
+C2/39E2: 4A           LSR
+C2/39E3: 85 0A        STA $0A
+C2/39E5: E2 20        SEP #$20
+C2/39E7: A0 00 58     LDY #$5800
+C2/39EA: 84 10        STY $10
+C2/39EC: A9 7E        LDA #$7E
+C2/39EE: 85 12        STA $12
+C2/39F0: A0 00 70     LDY #$7000
+C2/39F3: 84 13        STY $13
+C2/39F5: A9 7E        LDA #$7E
+C2/39F7: 85 15        STA $15
+C2/39F9: A6 4E        LDX $4E
+C2/39FB: C2 20        REP #$20
+C2/39FD: A5 08        LDA $08
+C2/39FF: 3A           DEC
+C2/3A00: 10 03        BPL $3A05
+C2/3A02: A9 BF 00     LDA #$00BF
+C2/3A05: 85 00        STA $00
+C2/3A07: A5 0A        LDA $0A
+C2/3A09: 3A           DEC
+C2/3A0A: 29 7F 00     AND #$007F
+C2/3A0D: 85 01        STA $01
+C2/3A0F: 20 AE 62     JSR $62AE
+C2/3A12: A6 4E        LDX $4E
+C2/3A14: 9D 22 00     STA $0022,X
+C2/3A17: A5 08        LDA $08
+C2/3A19: 85 00        STA $00
+C2/3A1B: C2 20        REP #$20
+C2/3A1D: A5 0A        LDA $0A
+C2/3A1F: 3A           DEC
+C2/3A20: 29 7F 00     AND #$007F
+C2/3A23: 85 01        STA $01
+C2/3A25: 20 AE 62     JSR $62AE
+C2/3A28: A6 4E        LDX $4E
+C2/3A2A: 9D 23 00     STA $0023,X
+C2/3A2D: C2 20        REP #$20
+C2/3A2F: A5 08        LDA $08
+C2/3A31: 3A           DEC
+C2/3A32: 10 03        BPL $3A37
+C2/3A34: A9 BF 00     LDA #$00BF
+C2/3A37: 85 00        STA $00
+C2/3A39: A5 0A        LDA $0A
+C2/3A3B: 85 01        STA $01
+C2/3A3D: 20 AE 62     JSR $62AE
+C2/3A40: A6 4E        LDX $4E
+C2/3A42: 9D 24 00     STA $0024,X
+C2/3A45: A5 08        LDA $08
+C2/3A47: 85 00        STA $00
+C2/3A49: A5 0A        LDA $0A
+C2/3A4B: 85 01        STA $01
+C2/3A4D: 20 AE 62     JSR $62AE
+C2/3A50: A6 4E        LDX $4E
+C2/3A52: 9D 25 00     STA $0025,X
+C2/3A55: 60           RTS

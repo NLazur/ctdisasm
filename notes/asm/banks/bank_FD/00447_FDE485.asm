@@ -1,0 +1,49 @@
+FD/E485: B9 23 05     LDA $0523,Y
+FD/E488: C2 21        REP #$21
+FD/E48A: 79 29 05     ADC $0529,Y
+FD/E48D: 85 18        STA $18
+FD/E48F: A9 00 00     LDA #$0000
+FD/E492: E2 20        SEP #$20
+FD/E494: B9 2B 05     LDA $052B,Y
+FD/E497: 85 1A        STA $1A
+FD/E499: A7 18        LDA [$18]
+FD/E49B: 48           PHA
+FD/E49C: B9 21 05     LDA $0521,Y
+FD/E49F: C2 21        REP #$21
+FD/E4A1: 0A           ASL
+FD/E4A2: 18           CLC
+FD/E4A3: 69 00 22     ADC #$2200
+FD/E4A6: 85 18        STA $18
+FD/E4A8: A9 00 00     LDA #$0000
+FD/E4AB: E2 20        SEP #$20
+FD/E4AD: A9 7E        LDA #$7E
+FD/E4AF: 85 1A        STA $1A
+FD/E4B1: 68           PLA
+FD/E4B2: 8D 02 42     STA $4202
+FD/E4B5: B9 22 05     LDA $0522,Y
+FD/E4B8: 0A           ASL
+FD/E4B9: 8D 03 42     STA $4203
+FD/E4BC: EA           NOP
+FD/E4BD: C2 21        REP #$21
+FD/E4BF: B9 26 05     LDA $0526,Y
+FD/E4C2: 6D 16 42     ADC $4216
+FD/E4C5: AA           TAX
+FD/E4C6: A9 00 00     LDA #$0000
+FD/E4C9: E2 20        SEP #$20
+FD/E4CB: 5A           PHY
+FD/E4CC: B9 22 05     LDA $0522,Y
+FD/E4CF: A8           TAY
+FD/E4D0: C2 20        REP #$20
+FD/E4D2: BF 00 00 F6  LDA $F60000,X
+FD/E4D6: 87 18        STA [$18]
+FD/E4D8: E6 18        INC $18
+FD/E4DA: E6 18        INC $18
+FD/E4DC: E8           INX
+FD/E4DD: E8           INX
+FD/E4DE: 88           DEY
+FD/E4DF: D0 F1        BNE $E4D2
+FD/E4E1: E2 20        SEP #$20
+FD/E4E3: A9 00        LDA #$00
+FD/E4E5: EB           XBA
+FD/E4E6: 7A           PLY
+FD/E4E7: 60           RTS

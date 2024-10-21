@@ -1,0 +1,14 @@
+CD/3D90: DA           PHX
+CD/3D91: AA           TAX
+CD/3D92: 10 19        BPL $3DAD
+CD/3D94: BF 8E F4 CE  LDA $CEF48E,X
+CD/3D98: 4A           LSR
+CD/3D99: 8F 02 42 00  STA $004202
+CD/3D9D: A5 47        LDA $47
+CD/3D9F: 8F 03 42 00  STA $004203
+CD/3DA3: FA           PLX
+CD/3DA4: EA           NOP
+CD/3DA5: AF 17 42 00  LDA $004217
+CD/3DA9: 49 FF        EOR #$FF
+CD/3DAB: 1A           INC
+CD/3DAC: 60           RTS

@@ -1,0 +1,348 @@
+C1/7B53: 5F 60 93 60  EOR $609360,X
+C1/7B57: E6 60        INC $60
+C1/7B59: 54 61 9E     MVN $61,$9E
+C1/7B5C: 61 9E        ADC ($9E,X)
+C1/7B5E: 61 C1        ADC ($C1,X)
+C1/7B60: 61 C1        ADC ($C1,X)
+C1/7B62: 61 EB        ADC ($EB,X)
+C1/7B64: 61 F5        ADC ($F5,X)
+C1/7B66: 61 F7        ADC ($F7,X)
+C1/7B68: 4C F7 4C     JMP $4CF7
+C1/7B6B: 1B           TCS
+C1/7B6C: 62 3C 62     PER $C1DDAB
+C1/7B6F: 3C 62 3C     BIT $3C62,X
+C1/7B72: 62 3C 62     PER $C1DDB1
+C1/7B75: 58           CLI
+C1/7B76: 62 F7 4C     PER $C1C870
+C1/7B79: F7 4C        SBC [$4C],Y
+C1/7B7B: F7 4C        SBC [$4C],Y
+C1/7B7D: F7 4C        SBC [$4C],Y
+C1/7B7F: F7 4C        SBC [$4C],Y
+C1/7B81: F7 4C        SBC [$4C],Y
+C1/7B83: F7 4C        SBC [$4C],Y
+C1/7B85: F7 4C        SBC [$4C],Y
+C1/7B87: F7 4C        SBC [$4C],Y
+C1/7B89: F7 4C        SBC [$4C],Y
+C1/7B8B: F7 4C        SBC [$4C],Y
+C1/7B8D: F7 4C        SBC [$4C],Y
+C1/7B8F: F7 4C        SBC [$4C],Y
+C1/7B91: F7 4C        SBC [$4C],Y
+C1/7B93: F7 4C        SBC [$4C],Y
+C1/7B95: F7 4C        SBC [$4C],Y
+C1/7B97: F7 4C        SBC [$4C],Y
+C1/7B99: F7 4C        SBC [$4C],Y
+C1/7B9B: 99 62 2E     STA $2E62,Y
+C1/7B9E: 67 43        ADC [$43]
+C1/7BA0: 67 4A        ADC [$4A]
+C1/7BA2: 67 99        ADC [$99]
+C1/7BA4: 62 2E 67     PER $C1E2D5
+C1/7BA7: F7 4C        SBC [$4C],Y
+C1/7BA9: F7 4C        SBC [$4C],Y
+C1/7BAB: F7 4C        SBC [$4C],Y
+C1/7BAD: F7 4C        SBC [$4C],Y
+C1/7BAF: 51 67        EOR ($67),Y
+C1/7BB1: F7 4C        SBC [$4C],Y
+C1/7BB3: 1B           TCS
+C1/7BB4: 69 BA        ADC #$BA
+C1/7BB6: 69 F7        ADC #$F7
+C1/7BB8: 4C F7 4C     JMP $4CF7
+C1/7BBB: C3 69        CMP $69,S
+C1/7BBD: F0 6A        BEQ $7C29
+C1/7BBF: F7 4C        SBC [$4C],Y
+C1/7BC1: F7 4C        SBC [$4C],Y
+C1/7BC3: F7 4C        SBC [$4C],Y
+C1/7BC5: F7 4C        SBC [$4C],Y
+C1/7BC7: F7 4C        SBC [$4C],Y
+C1/7BC9: F7 4C        SBC [$4C],Y
+C1/7BCB: F7 4C        SBC [$4C],Y
+C1/7BCD: F7 4C        SBC [$4C],Y
+C1/7BCF: F7 4C        SBC [$4C],Y
+C1/7BD1: F7 4C        SBC [$4C],Y
+C1/7BD3: F7 4C        SBC [$4C],Y
+C1/7BD5: F7 4C        SBC [$4C],Y
+C1/7BD7: F7 4C        SBC [$4C],Y
+C1/7BD9: F7 4C        SBC [$4C],Y
+C1/7BDB: F7 4C        SBC [$4C],Y
+C1/7BDD: F7 4C        SBC [$4C],Y
+C1/7BDF: F7 4C        SBC [$4C],Y
+C1/7BE1: F7 4C        SBC [$4C],Y
+C1/7BE3: F7 4C        SBC [$4C],Y
+C1/7BE5: F7 4C        SBC [$4C],Y
+C1/7BE7: F7 4C        SBC [$4C],Y
+C1/7BE9: F7 4C        SBC [$4C],Y
+C1/7BEB: F3 6C        SBC ($6C,S),Y
+C1/7BED: 31 6F        AND ($6F),Y
+C1/7BEF: 53 6F        EOR ($6F,S),Y
+C1/7BF1: 75 6F        ADC $6F,X
+C1/7BF3: 9A           TXS
+C1/7BF4: 6F EF 6F F7  ADC $F76FEF
+C1/7BF8: 4C F7 4C     JMP $4CF7
+C1/7BFB: F7 4C        SBC [$4C],Y
+C1/7BFD: F7 4C        SBC [$4C],Y
+C1/7BFF: F7 4C        SBC [$4C],Y
+C1/7C01: F7 4C        SBC [$4C],Y
+C1/7C03: F7 4C        SBC [$4C],Y
+C1/7C05: F7 4C        SBC [$4C],Y
+C1/7C07: F7 4C        SBC [$4C],Y
+C1/7C09: F7 4C        SBC [$4C],Y
+C1/7C0B: FC 6F 2B     JSR ($2B6F,X)
+C1/7C0E: 70 5A        BVS $7C6A
+C1/7C10: 70 0E        BVS $7C20
+C1/7C12: 72 49        ADC ($49)
+C1/7C14: 73 AD        ADC ($AD,S),Y
+C1/7C16: 73 64        ADC ($64,S),Y
+C1/7C18: 73 0B        ADC ($0B,S),Y
+C1/7C1A: 74 B4        STZ $B4,X
+C1/7C1C: 74 3A        STZ $3A,X
+C1/7C1E: 75 79        ADC $79,X
+C1/7C20: 75 F7        ADC $F7,X
+C1/7C22: 4C F7 4C     JMP $4CF7
+C1/7C25: F7 4C        SBC [$4C],Y
+C1/7C27: F7 4C        SBC [$4C],Y
+C1/7C29: F7 4C        SBC [$4C],Y
+C1/7C2B: BD 0C 1D     LDA $1D0C,X
+C1/7C2E: 9D 39 A0     STA $A039,X
+C1/7C31: BD 23 1D     LDA $1D23,X
+C1/7C34: 9D 50 A0     STA $A050,X
+C1/7C37: 20 5A 28     JSR $285A
+C1/7C3A: 4C B0 28     JMP $28B0
+C1/7C3D: 4D 7C 4D     EOR $4D7C
+C1/7C40: 48           PHA
+C1/7C41: 6A           ROR
+C1/7C42: 75 6B        ADC $6B,X
+C1/7C44: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C47: 4D 7C 4D     EOR $4D7C
+C1/7C4A: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C4D: 4D 7C 4D     EOR $4D7C
+C1/7C50: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C53: 4D 7C 4D     EOR $4D7C
+C1/7C56: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C59: 4D 7C 4D     EOR $4D7C
+C1/7C5C: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C5F: 4D 7C 4D     EOR $4D7C
+C1/7C62: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C65: 4D 7C 4D     EOR $4D7C
+C1/7C68: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C6B: 4D 7C 4D     EOR $4D7C
+C1/7C6E: 7C 4D 78     JMP ($784D,X)
+C1/7C71: 6D B6 6F     ADC $6FB6
+C1/7C74: D8           CLD
+C1/7C75: 6F FA 6F 1F  ADC $1F6FFA
+C1/7C79: 70 74        BVS $7CEF
+C1/7C7B: 70 7C        BVS $7CF9
+C1/7C7D: 4D 7C 4D     EOR $4D7C
+C1/7C80: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C83: 4D 7C 4D     EOR $4D7C
+C1/7C86: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C89: 4D 7C 4D     EOR $4D7C
+C1/7C8C: 7C 4D 7C     JMP ($7C4D,X)
+C1/7C8F: 4D 81 70     EOR $7081
+C1/7C92: B0 70        BCS $7D04
+C1/7C94: DF 70 93 72  CMP $729370,X
+C1/7C98: CE 73 32     DEC $3273
+C1/7C9B: 74 E9        STZ $E9,X
+C1/7C9D: 73 90        ADC ($90,S),Y
+C1/7C9F: 74 39        STZ $39,X
+C1/7CA1: 75 BF        ADC $BF,X
+C1/7CA3: 75 FE        ADC $FE,X
+C1/7CA5: 75 7C        ADC $7C,X
+C1/7CA7: 4D 7C 4D     EOR $4D7C
+C1/7CAA: 7C 4D 7C     JMP ($7C4D,X)
+C1/7CAD: 4D 7C 4D     EOR $4D7C
+C1/7CB0: BD 0C 1D     LDA $1D0C,X
+C1/7CB3: 9D 39 A0     STA $A039,X
+C1/7CB6: BD 23 1D     LDA $1D23,X
+C1/7CB9: 9D 50 A0     STA $A050,X
+C1/7CBC: 20 DF 28     JSR $28DF
+C1/7CBF: 4C 35 29     JMP $2935
+C1/7CC2: F0 78        BEQ $7D3C
+C1/7CC4: F0 78        BEQ $7D3E
+C1/7CC6: F0 78        BEQ $7D40
+C1/7CC8: F0 78        BEQ $7D42
+C1/7CCA: F0 78        BEQ $7D44
+C1/7CCC: F0 78        BEQ $7D46
+C1/7CCE: F0 78        BEQ $7D48
+C1/7CD0: F0 78        BEQ $7D4A
+C1/7CD2: F0 78        BEQ $7D4C
+C1/7CD4: F0 78        BEQ $7D4E
+C1/7CD6: 17 79        ORA [$79],Y
+C1/7CD8: 17 79        ORA [$79],Y
+C1/7CDA: 17 79        ORA [$79],Y
+C1/7CDC: 17 79        ORA [$79],Y
+C1/7CDE: 1F 79 46 79  ORA $794679,X
+C1/7CE2: 46 79        LSR $79
+C1/7CE4: 46 79        LSR $79
+C1/7CE6: 46 79        LSR $79
+C1/7CE8: 46 79        LSR $79
+C1/7CEA: 46 79        LSR $79
+C1/7CEC: 46 79        LSR $79
+C1/7CEE: 46 79        LSR $79
+C1/7CF0: 46 79        LSR $79
+C1/7CF2: 57 79        EOR [$79],Y
+C1/7CF4: 57 79        EOR [$79],Y
+C1/7CF6: 57 79        EOR [$79],Y
+C1/7CF8: 57 79        EOR [$79],Y
+C1/7CFA: 57 79        EOR [$79],Y
+C1/7CFC: 57 79        EOR [$79],Y
+C1/7CFE: 57 79        EOR [$79],Y
+C1/7D00: 57 79        EOR [$79],Y
+C1/7D02: 57 79        EOR [$79],Y
+C1/7D04: 8A           TXA
+C1/7D05: 79 8B 79     ADC $798B,Y
+C1/7D08: 93 79        STA ($79,S),Y
+C1/7D0A: 9B           TXY
+C1/7D0B: 79 E5 79     ADC $79E5,Y
+C1/7D0E: 5B           TCD
+C1/7D0F: 7A           PLY
+C1/7D10: DE 7A E7     DEC $E77A,X
+C1/7D13: 7A           PLY
+C1/7D14: E7 7A        SBC [$7A]
+C1/7D16: E7 7A        SBC [$7A]
+C1/7D18: F9 7A F9     SBC $F97A,Y
+C1/7D1B: 7A           PLY
+C1/7D1C: F9 7A F9     SBC $F97A,Y
+C1/7D1F: 7A           PLY
+C1/7D20: F9 7A F9     SBC $F97A,Y
+C1/7D23: 7A           PLY
+C1/7D24: F9 7A F9     SBC $F97A,Y
+C1/7D27: 7A           PLY
+C1/7D28: 18           CLC
+C1/7D29: 7B           TDC
+C1/7D2A: 18           CLC
+C1/7D2B: 7B           TDC
+C1/7D2C: 18           CLC
+C1/7D2D: 7B           TDC
+C1/7D2E: 18           CLC
+C1/7D2F: 7B           TDC
+C1/7D30: 18           CLC
+C1/7D31: 7B           TDC
+C1/7D32: 18           CLC
+C1/7D33: 7B           TDC
+C1/7D34: 0E 7C 0E     ASL $0E7C
+C1/7D37: 7C 0E 7C     JMP ($7C0E,X)
+C1/7D3A: 0E 7C 0E     ASL $0E7C
+C1/7D3D: 7C 0E 7C     JMP ($7C0E,X)
+C1/7D40: 0E 7C 0E     ASL $0E7C
+C1/7D43: 7C 18 7B     JMP ($7B18,X)
+C1/7D46: 18           CLC
+C1/7D47: 7B           TDC
+C1/7D48: 18           CLC
+C1/7D49: 7B           TDC
+C1/7D4A: 18           CLC
+C1/7D4B: 7B           TDC
+C1/7D4C: 18           CLC
+C1/7D4D: 7B           TDC
+C1/7D4E: 18           CLC
+C1/7D4F: 7B           TDC
+C1/7D50: 18           CLC
+C1/7D51: 7B           TDC
+C1/7D52: 18           CLC
+C1/7D53: 7B           TDC
+C1/7D54: 18           CLC
+C1/7D55: 7B           TDC
+C1/7D56: 18           CLC
+C1/7D57: 7B           TDC
+C1/7D58: 18           CLC
+C1/7D59: 7B           TDC
+C1/7D5A: 18           CLC
+C1/7D5B: 7B           TDC
+C1/7D5C: 18           CLC
+C1/7D5D: 7B           TDC
+C1/7D5E: 18           CLC
+C1/7D5F: 7B           TDC
+C1/7D60: 21 7C        AND ($7C,X)
+C1/7D62: 2D 7C 2D     AND $2D7C
+C1/7D65: 7C 2D 7C     JMP ($7C2D,X)
+C1/7D68: 2D 7C 2D     AND $2D7C
+C1/7D6B: 7C 2D 7C     JMP ($7C2D,X)
+C1/7D6E: 2D 7C 67     AND $677C
+C1/7D71: 4A           LSR
+C1/7D72: 39 46 AD     AND $AD46,Y
+C1/7D75: 48           PHA
+C1/7D76: 68           PLA
+C1/7D77: 4A           LSR
+C1/7D78: FD 4F 04     SBC $044F,X
+C1/7D7B: 50 11        BVC $7D8E
+C1/7D7D: 50 2F        BVC $7DAE
+C1/7D7F: 51 AF        EOR ($AF),Y
+C1/7D81: 51 AF        EOR ($AF),Y
+C1/7D83: 51 AF        EOR ($AF),Y
+C1/7D85: 51 27        EOR ($27),Y
+C1/7D87: 52 61        EOR ($61)
+C1/7D89: 52 61        EOR ($61)
+C1/7D8B: 52 61        EOR ($61)
+C1/7D8D: 52 61        EOR ($61)
+C1/7D8F: 52 61        EOR ($61)
+C1/7D91: 52 61        EOR ($61)
+C1/7D93: 52 61        EOR ($61)
+C1/7D95: 52 61        EOR ($61)
+C1/7D97: 52 CC        EOR ($CC)
+C1/7D99: 52 DE        EOR ($DE)
+C1/7D9B: 52 F0        EOR ($F0)
+C1/7D9D: 52 FB        EOR ($FB)
+C1/7D9F: 54 12 55     MVN $12,$55
+C1/7DA2: 29 55        AND #$55
+C1/7DA4: 16 57        ASL $57,X
+C1/7DA6: 28           PLP
+C1/7DA7: 57 3A        EOR [$3A],Y
+C1/7DA9: 57 1E        EOR [$1E],Y
+C1/7DAB: 59 79 59     EOR $5979,Y
+C1/7DAE: 8A           TXA
+C1/7DAF: 59 A1 59     EOR $59A1,Y
+C1/7DB2: C8           INY
+C1/7DB3: 59 D9 59     EOR $59D9,Y
+C1/7DB6: 08           PHP
+C1/7DB7: 5A           PHY
+C1/7DB8: 21 5A        AND ($5A,X)
+C1/7DBA: 2F 5A 39 5A  AND $5A395A
+C1/7DBE: 50 5A        BVC $7E1A
+C1/7DC0: 63 5A        ADC $5A,S
+C1/7DC2: 76 5A        ROR $5A,X
+C1/7DC4: 8A           TXA
+C1/7DC5: 5A           PHY
+C1/7DC6: 13 5B        ORA ($5B,S),Y
+C1/7DC8: 4D 5B 51     EOR $515B
+C1/7DCB: 5B           TCD
+C1/7DCC: 86 5B        STX $5B
+C1/7DCE: 8A           TXA
+C1/7DCF: 5B           TCD
+C1/7DD0: B8           CLV
+C1/7DD1: 5B           TCD
+C1/7DD2: E9 5B        SBC #$5B
+C1/7DD4: F1 5B        SBC ($5B),Y
+C1/7DD6: 04 50        TSB $50
+C1/7DD8: F9 5B 0B     SBC $0B5B,Y
+C1/7DDB: 5C 19 5C 27  JMP $275C19
+C1/7DDF: 5C 3E 5C 4D  JMP $4D5C3E
+C1/7DE3: 5C 58 5C 63  JMP $635C58
+C1/7DE7: 5C 72 5C 7D  JMP $7D5C72
+C1/7DEB: 5C 88 5C 9E  JMP $9E5C88
+C1/7DEF: 5C B0 5C C6  JMP $C65CB0
+C1/7DF3: 5C C6 5C C6  JMP $C65CC6
+C1/7DF7: 5C C6 5C F1  JMP $F15CC6
+C1/7DFB: 5C 07 5D 19  JMP $195D07
+C1/7DFF: 5D 4B 5D     EOR $5D4B,X
+C1/7E02: C6 5C        DEC $5C
+C1/7E04: C6 5C        DEC $5C
+C1/7E06: 49 65        EOR #$65
+C1/7E08: 49 65        EOR #$65
+C1/7E0A: 7D 5D A6     ADC $A65D,X
+C1/7E0D: 5D 04 50     EOR $5004,X
+C1/7E10: 04 50        TSB $50
+C1/7E12: A6 5D        LDX $5D
+C1/7E14: BC 5D D2     LDY $D25D,X
+C1/7E17: 5D E8 5D     EOR $5DE8,X
+C1/7E1A: E8           INX
+C1/7E1B: 5D E8 5D     EOR $5DE8,X
+C1/7E1E: E8           INX
+C1/7E1F: 5D E8 5D     EOR $5DE8,X
+C1/7E22: E8           INX
+C1/7E23: 5D 04 50     EOR $5004,X
+C1/7E26: 04 50        TSB $50
+C1/7E28: 04 50        TSB $50
+C1/7E2A: 04 50        TSB $50
+C1/7E2C: 04 50        TSB $50
+C1/7E2E: 04 50        TSB $50
+C1/7E30: 04 50        TSB $50
+C1/7E32: FE 5F 1F     INC $1F5F,X
+C1/7E35: 60           RTS

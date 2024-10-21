@@ -1,0 +1,121 @@
+FE/0A4E: BC 00 02     LDY $0200,X
+FE/0A51: 00 01        BRK $01
+FE/0A53: 50 04        BVC $0A59
+FE/0A55: 0F 02 04 04  ORA $040402
+FE/0A59: 04 01        TSB $01
+FE/0A5B: 08           PHP
+FE/0A5C: 00 04        BRK $04
+FE/0A5E: 0F 04 02 0F  ORA $0F0204
+FE/0A62: 04 04        TSB $04
+FE/0A64: 72 02        ADC ($02)
+FE/0A66: 11 00        ORA ($00),Y
+FE/0A68: 0F 04 17 00  ORA $001704
+FE/0A6C: 16 00        ASL $00,X
+FE/0A6E: 0A           ASL
+FE/0A6F: 00 00        BRK $00
+FE/0A71: 20 04 02     JSR $0204
+FE/0A74: 06 0B        ASL $0B
+FE/0A76: 0C 11 10     TSB $1011
+FE/0A79: 01 04        ORA ($04,X)
+FE/0A7B: C4 02        CPY $02
+FE/0A7D: 03 05        ORA $05,S
+FE/0A7F: 00 04        BRK $04
+FE/0A81: 01 01        ORA ($01,X)
+FE/0A83: 23 00        AND $00,S
+FE/0A85: 31 00        AND ($00),Y
+FE/0A87: FF 40 50 3D  SBC $3D5040,X
+FE/0A8B: 10 48        BPL $0AD5
+FE/0A8D: 80 3A        BRA $0AC9
+FE/0A8F: 10 41        BPL $0AD2
+FE/0A91: 20 48 B0     JSR $B048
+FE/0A94: 67 00        ADC [$00]
+FE/0A96: 48           PHA
+FE/0A97: 20 03 40     JSR $4003
+FE/0A9A: 00 48        BRK $48
+FE/0A9C: 20 0E 0F     JSR $0F0E
+FE/0A9F: 02 0E        COP $0E
+FE/0AA1: 0E 02 00     ASL $0002
+FE/0AA4: 0F 0E 0E 03  ORA $030E0E
+FE/0AA8: 0F 02 02 0F  ORA $0F0202
+FE/0AAC: 18           CLC
+FE/0AAD: 03 0E        ORA $0E,S
+FE/0AAF: 05 09        ORA $09
+FE/0AB1: 00 07        BRK $07
+FE/0AB3: 10 03        BPL $0AB8
+FE/0AB5: 03 0F        ORA $0F,S
+FE/0AB7: 00 0B        BRK $0B
+FE/0AB9: 0B           PHD
+FE/0ABA: 0F 03 03 0A  ORA $0A0303
+FE/0ABE: 0F 0E 42 01  ORA $01420E
+FE/0AC2: 25 00        AND $00
+FE/0AC4: 0A           ASL
+FE/0AC5: 0E 0A 02     ASL $020A
+FE/0AC8: 71 00        ADC ($00),Y
+FE/0ACA: 0A           ASL
+FE/0ACB: 00 0E        BRK $0E
+FE/0ACD: 0E 08 0A     ASL $0A08
+FE/0AD0: 0B           PHD
+FE/0AD1: 0B           PHD
+FE/0AD2: 0A           ASL
+FE/0AD3: 08           PHP
+FE/0AD4: 81 30        STA ($30,X)
+FE/0AD6: 00 0B        BRK $0B
+FE/0AD8: 06 06        ASL $06
+FE/0ADA: 0B           PHD
+FE/0ADB: 03 0E        ORA $0E,S
+FE/0ADD: 79 20 21     ADC $2120,Y
+FE/0AE0: 6F 20 02 03  ADC $030220
+FE/0AE4: 03 02        ORA $02,S
+FE/0AE6: B0 00        BCS $0AE8
+FE/0AE8: 02 0E        COP $0E
+FE/0AEA: 68           PLA
+FE/0AEB: 0C 0C 03     TSB $030C
+FE/0AEE: 54 00 0F     MVN $00,$0F
+FE/0AF1: 54 00 04     MVN $00,$04
+FE/0AF4: 00 08        BRK $08
+FE/0AF6: 42 04        WDM $04
+FE/0AF8: 50 20        BVC $0B1A
+FE/0AFA: 08           PHP
+FE/0AFB: 0A           ASL
+FE/0AFC: 03 0E        ORA $0E,S
+FE/0AFE: 01 00        ORA ($00,X)
+FE/0B00: 03 A0        ORA $A0,S
+FE/0B02: 0A           ASL
+FE/0B03: 0A           ASL
+FE/0B04: 0E 07 0E     ASL $0E07
+FE/0B07: 03 00        ORA $00,S
+FE/0B09: 0A           ASL
+FE/0B0A: 09 10 01     ORA #$0110
+FE/0B0D: C4 00        CPY $00
+FE/0B0F: FF 07 10 00  SBC $001007,X
+FE/0B13: 61 06        ADC ($06,X)
+FE/0B15: 3A           DEC
+FE/0B16: 00 01        BRK $01
+FE/0B18: 00 0C        BRK $0C
+FE/0B1A: 02 00        COP $00
+FE/0B1C: 01 F8        ORA ($F8,X)
+FE/0B1E: 0A           ASL
+FE/0B1F: A8           TAY
+FE/0B20: 0C 0C 0E     TSB $0E0C
+FE/0B23: 06 02        ASL $02
+FE/0B25: 00 28        BRK $28
+FE/0B27: F8           SED
+FE/0B28: 3E B8 07     ROL $07B8,X
+FE/0B2B: 0B           PHD
+FE/0B2C: 07 0B        ORA [$0B]
+FE/0B2E: 03 41        ORA $41,S
+FE/0B30: F8           SED
+FE/0B31: 7F A8 0B 07  ADC $070BA8,X
+FE/0B35: 01 0C        ORA ($0C,X)
+FE/0B37: 0B           PHD
+FE/0B38: 0B           PHD
+FE/0B39: 06 01        ASL $01
+FE/0B3B: 2A           ROL
+FE/0B3C: F8           SED
+FE/0B3D: BE 98 06     LDX $0698,Y
+FE/0B40: 0B           PHD
+FE/0B41: 0B           PHD
+FE/0B42: 0A           ASL
+FE/0B43: 0A           ASL
+FE/0B44: 1C 0A 0C     TRB $0C0A
+FE/0B47: 40           RTI

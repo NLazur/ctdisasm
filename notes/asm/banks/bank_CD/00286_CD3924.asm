@@ -1,0 +1,22 @@
+CD/3924: AA           TAX
+CD/3925: 8D 64 CC     STA $CC64
+CD/3928: 9C 20 00     STZ $0020
+CD/392B: BD EA CA     LDA $CAEA,X
+CD/392E: 85 12        STA $12
+CD/3930: BD EC CA     LDA $CAEC,X
+CD/3933: 85 13        STA $13
+CD/3935: BD EE CA     LDA $CAEE,X
+CD/3938: 85 14        STA $14
+CD/393A: BD F0 CA     LDA $CAF0,X
+CD/393D: 85 15        STA $15
+CD/393F: BD F2 CA     LDA $CAF2,X
+CD/3942: 85 16        STA $16
+CD/3944: BD F4 CA     LDA $CAF4,X
+CD/3947: 85 17        STA $17
+CD/3949: 8B           PHB
+CD/394A: 7B           TDC
+CD/394B: 48           PHA
+CD/394C: AB           PLB
+CD/394D: 20 52 39     JSR $3952
+CD/3950: AB           PLB
+CD/3951: 60           RTS

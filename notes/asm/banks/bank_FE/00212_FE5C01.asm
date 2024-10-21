@@ -1,0 +1,21 @@
+FE/5C01: 03 FC        ORA $FC,S
+FE/5C03: 05 FA        ORA $FA
+FE/5C05: 07 F8        ORA [$F8]
+FE/5C07: 02 10        COP $10
+FE/5C09: 0F 00 F0 9E  ORA $9EF000
+FE/5C0D: A5 5F        LDA $5F
+FE/5C0F: 3D 4D 77     AND $774D,X
+FE/5C12: EF 00 07 ED  SBC $ED0700
+FE/5C16: AC 8D 9C     LDY $9C8D
+FE/5C19: 00 D9        BRK $D9
+FE/5C1B: 12 00        ORA ($00)
+FE/5C1D: FC 21 DE     JSR ($DE21,X)
+FE/5C20: B1 CE        LDA ($CE),Y
+FE/5C22: B1 CE        LDA ($CE),Y
+FE/5C24: 51 00        EOR ($00),Y
+FE/5C26: EE DA 67     INC $67DA
+FE/5C29: FA           PLX
+FE/5C2A: 67 BE        ADC [$BE]
+FE/5C2C: 67 BB        ADC [$BB]
+FE/5C2E: 00 67        BRK $67
+FE/5C30: 40           RTI

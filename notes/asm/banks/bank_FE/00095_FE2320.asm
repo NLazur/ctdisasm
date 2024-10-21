@@ -1,0 +1,59 @@
+FE/2320: FE 19 02     INC $0219,X
+FE/2323: 00 05        BRK $05
+FE/2325: 10 94        BPL $22BB
+FE/2327: 1F AE 11 2A  ORA $2A11AE,X
+FE/232B: 10 5E        BPL $238B
+FE/232D: 11 DE        ORA ($DE),Y
+FE/232F: 1C D8 18     TRB $18D8
+FE/2332: 1C 1B 7A     TRB $7A1B
+FE/2335: 10 82        BPL $22B9
+FE/2337: 01 1C        ORA ($1C,X)
+FE/2339: CE 21 83     DEC $8321
+FE/233C: 10 7F        BPL $23BD
+FE/233E: D3 11        CMP ($11,S),Y
+FE/2340: 32 01        AND ($01)
+FE/2342: CE 0E C9     DEC $C90E
+FE/2345: 0E 98 01     ASL $0198
+FE/2348: 5A           PHY
+FE/2349: 01 B9        ORA ($B9,X)
+FE/234B: 01 19        ORA ($19,X)
+FE/234D: 66 19        ROR $19
+FE/234F: 01 04        ORA ($04,X)
+FE/2351: 34 0A        BIT $0A,X
+FE/2353: 45 45        EOR $45
+FE/2355: 42 0E        WDM $0E
+FE/2357: 2A           ROL
+FE/2358: 2A           ROL
+FE/2359: 39 45 30     AND $3045,Y
+FE/235C: 4A           LSR
+FE/235D: 39 EF 2D     AND $2DEF,Y
+FE/2360: 47 4C        EOR [$4C]
+FE/2362: 43 48        EOR $48,S
+FE/2364: 1A           INC
+FE/2365: 4A           LSR
+FE/2366: 2C 4A 4D     BIT $4D4A
+FE/2369: B3 0B        LDA ($0B,S),Y
+FE/236B: 0A           ASL
+FE/236C: 20 44 2E     JSR $2E44
+FE/236F: 0E 49 45     ASL $4549
+FE/2372: 88           DEY
+FE/2373: 49 4D 45     EOR #$454D
+FE/2376: 2A           ROL
+FE/2377: 10 47        BPL $23C0
+FE/2379: 4C 4D D6     JMP $D64D
+FE/237C: 08           PHP
+FE/237D: 70 4C        BVS $23CB
+FE/237F: 4C 4D 4D     JMP $4D4D
+FE/2382: 08           PHP
+FE/2383: 00 79        BRK $79
+FE/2385: 0A           ASL
+FE/2386: 08           PHP
+FE/2387: 00 4A        BRK $4A
+FE/2389: 0C 49 4A     TSB $4A49
+FE/238C: 29 0A 11     AND #$110A
+FE/238F: 00 4D        BRK $4D
+FE/2391: 4A           LSR
+FE/2392: 4D 4A 9F     EOR $9F4A
+FE/2395: 19 10 08     ORA $0810,Y
+FE/2398: 10 10        BPL $23AA
+FE/239A: 40           RTI

@@ -1,0 +1,4 @@
+CD/3017: A7 40        LDA [$40]
+CD/3019: 2D 46 CD     AND $CD46
+CD/301C: 8D 8C BE     STA $BE8C
+CD/301F: 60           RTS

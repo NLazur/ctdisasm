@@ -1,0 +1,60 @@
+CD/27CA: E2 10        SEP #$10
+CD/27CC: A7 40        LDA [$40]
+CD/27CE: AA           TAX
+CD/27CF: A0 01        LDY #$01
+CD/27D1: BD D4 CA     LDA $CAD4,X
+CD/27D4: 18           CLC
+CD/27D5: 77 40        ADC [$40],Y
+CD/27D7: 9D D4 CA     STA $CAD4,X
+CD/27DA: C8           INY
+CD/27DB: BD D6 CA     LDA $CAD6,X
+CD/27DE: 18           CLC
+CD/27DF: 77 40        ADC [$40],Y
+CD/27E1: 9D D6 CA     STA $CAD6,X
+CD/27E4: C8           INY
+CD/27E5: BD D8 CA     LDA $CAD8,X
+CD/27E8: 18           CLC
+CD/27E9: 77 40        ADC [$40],Y
+CD/27EB: 9D D8 CA     STA $CAD8,X
+CD/27EE: C8           INY
+CD/27EF: BD DA CA     LDA $CADA,X
+CD/27F2: 18           CLC
+CD/27F3: 77 40        ADC [$40],Y
+CD/27F5: 9D DA CA     STA $CADA,X
+CD/27F8: BD DC CA     LDA $CADC,X
+CD/27FB: 18           CLC
+CD/27FC: 77 40        ADC [$40],Y
+CD/27FE: 9D DC CA     STA $CADC,X
+CD/2801: BD DE CA     LDA $CADE,X
+CD/2804: 18           CLC
+CD/2805: 77 40        ADC [$40],Y
+CD/2807: 9D DE CA     STA $CADE,X
+CD/280A: C8           INY
+CD/280B: BD F6 CA     LDA $CAF6,X
+CD/280E: 18           CLC
+CD/280F: 77 40        ADC [$40],Y
+CD/2811: 9D F6 CA     STA $CAF6,X
+CD/2814: C8           INY
+CD/2815: BD F8 CA     LDA $CAF8,X
+CD/2818: 18           CLC
+CD/2819: 77 40        ADC [$40],Y
+CD/281B: 9D F8 CA     STA $CAF8,X
+CD/281E: C8           INY
+CD/281F: BD FA CA     LDA $CAFA,X
+CD/2822: 18           CLC
+CD/2823: 77 40        ADC [$40],Y
+CD/2825: 9D FA CA     STA $CAFA,X
+CD/2828: C8           INY
+CD/2829: BD FC CA     LDA $CAFC,X
+CD/282C: 18           CLC
+CD/282D: 77 40        ADC [$40],Y
+CD/282F: 9D FC CA     STA $CAFC,X
+CD/2832: 20 43 28     JSR $2843
+CD/2835: C2 30        REP #$30
+CD/2837: A5 40        LDA $40
+CD/2839: 18           CLC
+CD/283A: 69 08 00     ADC #$0008
+CD/283D: 85 40        STA $40
+CD/283F: 7B           TDC
+CD/2840: E2 20        SEP #$20
+CD/2842: 60           RTS

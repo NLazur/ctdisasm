@@ -1,0 +1,51 @@
+D0/2B8D: C0 E0 E0     CPY #$E0E0
+D0/2B90: 00 00        BRK $00
+D0/2B92: 00 00        BRK $00
+D0/2B94: 80 80        BRA $2B16
+D0/2B96: 00 00        BRK $00
+D0/2B98: 00 00        BRK $00
+D0/2B9A: 00 00        BRK $00
+D0/2B9C: 00 00        BRK $00
+D0/2B9E: 00 00        BRK $00
+D0/2BA0: 00 00        BRK $00
+D0/2BA2: 20 20 20     JSR $2020
+D0/2BA5: 20 20 20     JSR $2020
+D0/2BA8: 01 01        ORA ($01,X)
+D0/2BAA: 03 03        ORA $03,S
+D0/2BAC: 03 03        ORA $03,S
+D0/2BAE: 05 07        ORA $07
+D0/2BB0: 05 07        ORA $07
+D0/2BB2: 05 07        ORA $07
+D0/2BB4: 05 07        ORA $07
+D0/2BB6: 05 07        ORA $07
+D0/2BB8: 24 3C        BIT $3C
+D0/2BBA: 24 3C        BIT $3C
+D0/2BBC: 22 3E 12 1E  JSR $1E123E
+D0/2BC0: 15 1B        ORA $1B,X
+D0/2BC2: 15 1B        ORA $1B,X
+D0/2BC4: 16 19        ASL $19,X
+D0/2BC6: 16 19        ASL $19,X
+D0/2BC8: 15 1B        ORA $1B,X
+D0/2BCA: 15 1B        ORA $1B,X
+D0/2BCC: 15 1B        ORA $1B,X
+D0/2BCE: 15 1B        ORA $1B,X
+D0/2BD0: 15 1B        ORA $1B,X
+D0/2BD2: 15 1B        ORA $1B,X
+D0/2BD4: 95 9B        STA $9B,X
+D0/2BD6: 95 9B        STA $9B,X
+D0/2BD8: 13 1C        ORA ($1C,S),Y
+D0/2BDA: 0B           PHD
+D0/2BDB: 0C 05 06     TSB $0605
+D0/2BDE: 02 03        COP $03
+D0/2BE0: 0D 0E 30     ORA $300E
+D0/2BE3: 3F 0F 0F 00  AND $000F0F,X
+D0/2BE7: 00 E8        BRK $E8
+D0/2BE9: 18           CLC
+D0/2BEA: F4 0C C4     PEA $C40C
+D0/2BED: 3C FE 3E     BIT $3EFE,X
+D0/2BF0: E0 20        CPX #$20
+D0/2BF2: F0 10        BEQ $2C04
+D0/2BF4: 08           PHP
+D0/2BF5: F8           SED
+D0/2BF6: FC FC 60     JSR ($60FC,X)
+D0/2BF9: 60           RTS

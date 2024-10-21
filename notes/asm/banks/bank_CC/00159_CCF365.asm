@@ -1,0 +1,14 @@
+CC/F365: A5 AD        LDA $AD
+CC/F367: 85 77        STA $77
+CC/F369: 8F 02 42 00  STA $004202
+CC/F36D: A5 AE        LDA $AE
+CC/F36F: 85 78        STA $78
+CC/F371: 8F 03 42 00  STA $004203
+CC/F375: C2 20        REP #$20
+CC/F377: EA           NOP
+CC/F378: EA           NOP
+CC/F379: AF 16 42 00  LDA $004216
+CC/F37D: 85 AF        STA $AF
+CC/F37F: 7B           TDC
+CC/F380: E2 20        SEP #$20
+CC/F382: 60           RTS

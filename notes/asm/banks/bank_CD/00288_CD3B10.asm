@@ -1,0 +1,40 @@
+CD/3B10: DA           PHX
+CD/3B11: 85 45        STA $45
+CD/3B13: C2 20        REP #$20
+CD/3B15: A5 7C        LDA $7C
+CD/3B17: 29 01 00     AND #$0001
+CD/3B1A: 0A           ASL
+CD/3B1B: 85 47        STA $47
+CD/3B1D: AF 64 CC 7E  LDA $7ECC64
+CD/3B21: 29 01 00     AND #$0001
+CD/3B24: 18           CLC
+CD/3B25: 65 47        ADC $47
+CD/3B27: 0A           ASL
+CD/3B28: AA           TAX
+CD/3B29: BF AA 38 CD  LDA $CD38AA,X
+CD/3B2D: 8D 81 21     STA $2181
+CD/3B30: 7B           TDC
+CD/3B31: E2 20        SEP #$20
+CD/3B33: A9 7E        LDA #$7E
+CD/3B35: 8D 83 21     STA $2183
+CD/3B38: FA           PLX
+CD/3B39: A5 45        LDA $45
+CD/3B3B: F0 21        BEQ $3B5E
+CD/3B3D: 86 47        STX $47
+CD/3B3F: 84 49        STY $49
+CD/3B41: DA           PHX
+CD/3B42: 5A           PHY
+CD/3B43: E2 10        SEP #$10
+CD/3B45: A4 4A        LDY $4A
+CD/3B47: A6 48        LDX $48
+CD/3B49: 8E 80 21     STX $2180
+CD/3B4C: 8C 80 21     STY $2180
+CD/3B4F: AD 80 21     LDA $2180
+CD/3B52: AD 80 21     LDA $2180
+CD/3B55: C6 45        DEC $45
+CD/3B57: D0 F0        BNE $3B49
+CD/3B59: C2 10        REP #$10
+CD/3B5B: 7A           PLY
+CD/3B5C: FA           PLX
+CD/3B5D: 7B           TDC
+CD/3B5E: 60           RTS

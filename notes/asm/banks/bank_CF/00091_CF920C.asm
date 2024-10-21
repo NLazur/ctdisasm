@@ -1,0 +1,2 @@
+CF/920C: 4C 2B 4C     JMP $4C2B
+CF/920F: 6B           RTL

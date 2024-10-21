@@ -1,0 +1,12 @@
+FD/8D85: C0 BE 0A     CPY #$0ABE
+FD/8D88: C0 40 40     CPY #$4040
+FD/8D8B: 52 25        EOR ($25)
+FD/8D8D: 00 F1        BRK $F1
+FD/8D8F: 0E ED 9D     ASL $9DED
+FD/8D92: DB           STP
+FD/8D93: 38           SEC
+FD/8D94: BF E0 00 FC  LDA $FC00E0,X
+FD/8D98: 84 3E        STY $3E
+FD/8D9A: 07 7C        ORA [$7C]
+FD/8D9C: 2E E2 CF     ROL $CFE2
+FD/8D9F: 40           RTI

@@ -1,0 +1,31 @@
+C2/4A58: E2 20        SEP #$20
+C2/4A5A: A0 00 58     LDY #$5800
+C2/4A5D: 84 10        STY $10
+C2/4A5F: A9 7E        LDA #$7E
+C2/4A61: 85 12        STA $12
+C2/4A63: A0 00 70     LDY #$7000
+C2/4A66: 84 13        STY $13
+C2/4A68: A9 7E        LDA #$7E
+C2/4A6A: 85 15        STA $15
+C2/4A6C: C2 20        REP #$20
+C2/4A6E: A5 08        LDA $08
+C2/4A70: 3A           DEC
+C2/4A71: 10 03        BPL $4A76
+C2/4A73: A9 BF 00     LDA #$00BF
+C2/4A76: 85 00        STA $00
+C2/4A78: A5 0A        LDA $0A
+C2/4A7A: 1A           INC
+C2/4A7B: 29 7F 00     AND #$007F
+C2/4A7E: 85 0A        STA $0A
+C2/4A80: 85 01        STA $01
+C2/4A82: 20 AE 62     JSR $62AE
+C2/4A85: A6 4E        LDX $4E
+C2/4A87: 9D 2E 00     STA $002E,X
+C2/4A8A: A5 08        LDA $08
+C2/4A8C: 85 00        STA $00
+C2/4A8E: A5 0A        LDA $0A
+C2/4A90: 85 01        STA $01
+C2/4A92: 20 AE 62     JSR $62AE
+C2/4A95: A6 4E        LDX $4E
+C2/4A97: 9D 2F 00     STA $002F,X
+C2/4A9A: 60           RTS

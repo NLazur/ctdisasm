@@ -1,0 +1,333 @@
+CD/4494: 64 23        STZ $23
+CD/4496: 21 1A        AND ($1A,X)
+CD/4498: 66 6A        ROR $6A
+CD/449A: 21 07        AND ($07,X)
+CD/449C: 0C 66 6A     TSB $6A66
+CD/449F: 21 07        AND ($07,X)
+CD/44A1: 0C 66 6A     TSB $6A66
+CD/44A4: 21 07        AND ($07,X)
+CD/44A6: 0C 66 6A     TSB $6A66
+CD/44A9: 22 02 0D 66  JSR $660D02
+CD/44AD: 6A           ROR
+CD/44AE: 22 02 0D 66  JSR $660D02
+CD/44B2: 6A           ROR
+CD/44B3: 22 02 0D 20  JSR $200D02
+CD/44B7: 24 02        BIT $02
+CD/44B9: 00 0E        BRK $0E
+CD/44BB: 20 24 02     JSR $0224
+CD/44BE: 00 0E        BRK $0E
+CD/44C0: 20 24 02     JSR $0224
+CD/44C3: 00 0E        BRK $0E
+CD/44C5: 00 00        BRK $00
+CD/44C7: 00 00        BRK $00
+CD/44C9: 00 00        BRK $00
+CD/44CB: 00 00        BRK $00
+CD/44CD: 00 00        BRK $00
+CD/44CF: 00 00        BRK $00
+CD/44D1: 00 00        BRK $00
+CD/44D3: 00 00        BRK $00
+CD/44D5: 00 00        BRK $00
+CD/44D7: 00 00        BRK $00
+CD/44D9: 00 00        BRK $00
+CD/44DB: 00 00        BRK $00
+CD/44DD: 00 00        BRK $00
+CD/44DF: 00 00        BRK $00
+CD/44E1: 00 00        BRK $00
+CD/44E3: 00 00        BRK $00
+CD/44E5: 00 00        BRK $00
+CD/44E7: 00 00        BRK $00
+CD/44E9: 00 00        BRK $00
+CD/44EB: 00 00        BRK $00
+CD/44ED: 00 00        BRK $00
+CD/44EF: 00 00        BRK $00
+CD/44F1: 00 20        BRK $20
+CD/44F3: 24 28        BIT $28
+CD/44F5: 02 21        COP $21
+CD/44F7: 20 24 28     JSR $2824
+CD/44FA: 02 21        COP $21
+CD/44FC: 20 24 28     JSR $2824
+CD/44FF: 02 21        COP $21
+CD/4501: 20 24 24     JSR $2424
+CD/4504: 20 20 20     JSR $2020
+CD/4507: 24 24        BIT $24
+CD/4509: 20 20 20     JSR $2020
+CD/450C: 24 24        BIT $24
+CD/450E: 20 20 69     JSR $6920
+CD/4511: 6D 2D 26     ADC $262D
+CD/4514: 27 69        AND [$69]
+CD/4516: 6D 2D 26     ADC $262D
+CD/4519: 27 69        AND [$69]
+CD/451B: 6D 2D 26     ADC $262D
+CD/451E: 27 00        AND [$00]
+CD/4520: 00 00        BRK $00
+CD/4522: 00 00        BRK $00
+CD/4524: 00 00        BRK $00
+CD/4526: 00 00        BRK $00
+CD/4528: 00 00        BRK $00
+CD/452A: 00 00        BRK $00
+CD/452C: 00 00        BRK $00
+CD/452E: 00 00        BRK $00
+CD/4530: 00 00        BRK $00
+CD/4532: 00 00        BRK $00
+CD/4534: 00 00        BRK $00
+CD/4536: 00 00        BRK $00
+CD/4538: 00 00        BRK $00
+CD/453A: 00 00        BRK $00
+CD/453C: 00 00        BRK $00
+CD/453E: 00 00        BRK $00
+CD/4540: 00 00        BRK $00
+CD/4542: 00 00        BRK $00
+CD/4544: 00 00        BRK $00
+CD/4546: 00 00        BRK $00
+CD/4548: 00 00        BRK $00
+CD/454A: 00 00        BRK $00
+CD/454C: 00 00        BRK $00
+CD/454E: 00 00        BRK $00
+CD/4550: 00 00        BRK $00
+CD/4552: 00 00        BRK $00
+CD/4554: 00 00        BRK $00
+CD/4556: 00 00        BRK $00
+CD/4558: 00 00        BRK $00
+CD/455A: 00 00        BRK $00
+CD/455C: 00 00        BRK $00
+CD/455E: 00 00        BRK $00
+CD/4560: 00 00        BRK $00
+CD/4562: 00 00        BRK $00
+CD/4564: 00 00        BRK $00
+CD/4566: 00 00        BRK $00
+CD/4568: 00 00        BRK $00
+CD/456A: 00 00        BRK $00
+CD/456C: 00 00        BRK $00
+CD/456E: 00 00        BRK $00
+CD/4570: 00 00        BRK $00
+CD/4572: 00 00        BRK $00
+CD/4574: 00 00        BRK $00
+CD/4576: 00 00        BRK $00
+CD/4578: 00 00        BRK $00
+CD/457A: 00 00        BRK $00
+CD/457C: 00 00        BRK $00
+CD/457E: 00 00        BRK $00
+CD/4580: 00 00        BRK $00
+CD/4582: 00 00        BRK $00
+CD/4584: 00 00        BRK $00
+CD/4586: 00 00        BRK $00
+CD/4588: 00 00        BRK $00
+CD/458A: 00 00        BRK $00
+CD/458C: 00 00        BRK $00
+CD/458E: 00 00        BRK $00
+CD/4590: 00 00        BRK $00
+CD/4592: 00 00        BRK $00
+CD/4594: 00 00        BRK $00
+CD/4596: 00 00        BRK $00
+CD/4598: 00 00        BRK $00
+CD/459A: 00 00        BRK $00
+CD/459C: 00 00        BRK $00
+CD/459E: 00 00        BRK $00
+CD/45A0: 00 00        BRK $00
+CD/45A2: 00 00        BRK $00
+CD/45A4: 00 00        BRK $00
+CD/45A6: 00 61        BRK $61
+CD/45A8: 00 01        BRK $01
+CD/45AA: 00 00        BRK $00
+CD/45AC: FF 01 DA EF  SBC $EFDA01,X
+CD/45B0: 20 01 01     JSR $0101
+CD/45B3: FF 02 E8 EC  SBC $ECE802,X
+CD/45B7: 21 02        AND ($02,X)
+CD/45B9: 02 FF        COP $FF
+CD/45BB: 03 F1        ORA $F1,S
+CD/45BD: 00 22        BRK $22
+CD/45BF: 03 03        ORA $03,S
+CD/45C1: 45 04        EOR $04
+CD/45C3: D6 00        DEC $00,X
+CD/45C5: 27 04        AND [$04]
+CD/45C7: 04 FF        TSB $FF
+CD/45C9: 05 F1        ORA $F1
+CD/45CB: 00 22        BRK $22
+CD/45CD: 05 03        ORA $03
+CD/45CF: 02 06        COP $06
+CD/45D1: E1 02        SBC ($02,X)
+CD/45D3: 1B           TCS
+CD/45D4: 06 06        ASL $06
+CD/45D6: 1D 07 20     ORA $2007,X
+CD/45D9: 24 2D        BIT $2D
+CD/45DB: 07 07        ORA [$07]
+CD/45DD: FF 08 FC 00  SBC $00FC08,X
+CD/45E1: 08           PHP
+CD/45E2: 08           PHP
+CD/45E3: 08           PHP
+CD/45E4: 01 09        ORA ($09,X)
+CD/45E6: E1 E5        SBC ($E5,X)
+CD/45E8: 1D 09 09     ORA $0909,X
+CD/45EB: FF 0A 0A 0E  SBC $0E0A0A,X
+CD/45EF: 0E 0A 0A     ASL $0A0A
+CD/45F2: FF 0C F4 00  SBC $00F40C,X
+CD/45F6: 25 3A        AND $3A
+CD/45F8: 0C 44 0B     TSB $0B44
+CD/45FB: E1 02        SBC ($02,X)
+CD/45FD: 1E 0B 0B     ASL $0B0B,X
+CD/4600: FF 0D BB 00  SBC $00BB0D,X
+CD/4604: 3E 0D 0D     ROL $0D0D,X
+CD/4607: 56 0F        LSR $0F,X
+CD/4609: FC 00 25     JSR ($2500,X)
+CD/460C: 3A           DEC
+CD/460D: 0C 57 0E     TSB $0E57
+CD/4610: E1 02        SBC ($02,X)
+CD/4612: 1F 0B 0E FF  ORA $FF0E0B,X
+CD/4616: 10 E1        BPL $45F9
+CD/4618: 02 1B        COP $1B
+CD/461A: 06 06        ASL $06
+CD/461C: 35 11        AND $11,X
+CD/461E: EB           XBA
+CD/461F: 00 23        BRK $23
+CD/4621: 11 11        ORA ($11),Y
+CD/4623: FF 12 C9 CD  SBC $CDC912,X
+CD/4627: 15 12        ORA $12,X
+CD/4629: 12 07        ORA ($07)
+CD/462B: 13 EB        ORA ($EB,S),Y
+CD/462D: 00 23        BRK $23
+CD/462F: 11 13        ORA ($13),Y
+CD/4631: FF 14 F1 00  SBC $00F114,X
+CD/4635: 0A           ASL
+CD/4636: 14 14        TRB $14
+CD/4638: 49 15        EOR #$15
+CD/463A: CE 00 11     DEC $1100
+CD/463D: 15 15        ORA $15,X
+CD/463F: FF 16 EB 00  SBC $00EB16,X
+CD/4643: 0B           PHD
+CD/4644: 11 13        ORA ($13),Y
+CD/4646: 1C 17 CA     TRB $CA17
+CD/4649: 00 10        BRK $10
+CD/464B: 17 17        ORA [$17],Y
+CD/464D: 20 18 F1     JSR $F118
+CD/4650: 00 0A        BRK $0A
+CD/4652: 18           CLC
+CD/4653: 18           CLC
+CD/4654: 0D 19 E6     ORA $E619
+CD/4657: C3 24        CMP $24,S
+CD/4659: 19 19 FF     ORA $FF19,Y
+CD/465C: 1A           INC
+CD/465D: E1 02        SBC ($02,X)
+CD/465F: 1E 0B 0B     ASL $0B0B,X
+CD/4662: 5A           PHY
+CD/4663: 1C 61 E0     TRB $E061
+CD/4666: 26 1B        ROL $1B
+CD/4668: 1B           TCS
+CD/4669: 09 1B        ORA #$1B
+CD/466B: 61 E0        ADC ($E0,X)
+CD/466D: 26 1B        ROL $1B
+CD/466F: 1B           TCS
+CD/4670: 09 1D        ORA #$1D
+CD/4672: E1 02        SBC ($02,X)
+CD/4674: 13 0B        ORA ($0B,S),Y
+CD/4676: 0B           PHD
+CD/4677: 59 1E E6     EOR $E61E,Y
+CD/467A: C3 24        CMP $24,S
+CD/467C: 19 19 FF     ORA $FF19,Y
+CD/467F: 1F F1 F5 0A  ORA $0AF5F1,X
+CD/4683: 1F 1F 50 20  ORA $20501F,X
+CD/4687: 61 00        ADC ($00,X)
+CD/4689: 01 00        ORA ($00,X)
+CD/468B: 00 22        BRK $22
+CD/468D: 21 E1        AND ($E1,X)
+CD/468F: 00 1D        BRK $1D
+CD/4691: 09 09        ORA #$09
+CD/4693: FF 22 E1 00  SBC $00E122,X
+CD/4697: 1D 09 09     ORA $0909,X
+CD/469A: FF 23 F8 00  SBC $00F823,X
+CD/469E: 16 23        ASL $23,X
+CD/46A0: 23 FF        AND $FF,S
+CD/46A2: 24 E1        BIT $E1
+CD/46A4: 02 13        COP $13
+CD/46A6: 24 24        BIT $24
+CD/46A8: 58           CLI
+CD/46A9: 25 61        AND $61
+CD/46AB: 05 01        ORA $01
+CD/46AD: 25 25        AND $25
+CD/46AF: FF 26 F8 00  SBC $00F826,X
+CD/46B3: 16 23        ASL $23,X
+CD/46B5: 23 32        AND $32,S
+CD/46B7: 27 E1        AND [$E1]
+CD/46B9: 02 1F        COP $1F
+CD/46BB: 0B           PHD
+CD/46BC: 0E FF 28     ASL $28FF
+CD/46BF: E0 00 1C     CPX #$1C00
+CD/46C2: 28           PLP
+CD/46C3: 02 41        COP $41
+CD/46C5: 29 E1        AND #$E1
+CD/46C7: 05 1D        ORA $1D
+CD/46C9: 09 09        ORA #$09
+CD/46CB: FF 2A 61 05  SBC $05612A,X
+CD/46CF: 01 25        ORA ($25,X)
+CD/46D1: 25 FF        AND $FF
+CD/46D3: 2B           PLD
+CD/46D4: 61 00        ADC ($00,X)
+CD/46D6: 01 00        ORA ($00,X)
+CD/46D8: 00 FF        BRK $FF
+CD/46DA: 2C 61 00     BIT $0061
+CD/46DD: 01 00        ORA ($00,X)
+CD/46DF: 00 FF        BRK $FF
+CD/46E1: 2D C0 05     AND $05C0
+CD/46E4: 0F 2D 2D FF  ORA $FF2D2D
+CD/46E8: 2F 61 00 01  AND $010061
+CD/46EC: 00 00        BRK $00
+CD/46EE: 06 30        ASL $30
+CD/46F0: 61 00        ADC ($00,X)
+CD/46F2: 01 30        ORA ($30,X)
+CD/46F4: 01 0E        ORA ($0E,X)
+CD/46F6: 2E 61 05     ROL $0561
+CD/46F9: 01 25        ORA ($25,X)
+CD/46FB: 25 FF        AND $FF
+CD/46FD: 31 F1        AND ($F1),Y
+CD/46FF: 00 22        BRK $22
+CD/4701: 03 03        ORA $03,S
+CD/4703: 02 35        COP $35
+CD/4705: FC 00 25     JSR ($2500,X)
+CD/4708: 3A           DEC
+CD/4709: 0C 57 33     TSB $3357
+CD/470C: EB           XBA
+CD/470D: 00 0B        BRK $0B
+CD/470F: 11 13        ORA ($13),Y
+CD/4711: 1C 34 F1     TRB $F134
+CD/4714: 04 0A        TSB $0A
+CD/4716: 34 34        BIT $34,X
+CD/4718: 21 36        AND ($36,X)
+CD/471A: CE 04 12     DEC $1204
+CD/471D: 34 36        BIT $36,X
+CD/471F: FF 32 F8 04  SBC $04F832,X
+CD/4723: 0A           ASL
+CD/4724: 34 34        BIT $34,X
+CD/4726: 2F 37 F1 04  AND $04F137
+CD/472A: 0A           ASL
+CD/472B: 34 34        BIT $34,X
+CD/472D: 08           PHP
+CD/472E: 38           SEC
+CD/472F: F1 04        SBC ($04),Y
+CD/4731: 0A           ASL
+CD/4732: 34 34        BIT $34,X
+CD/4734: 1E 39 E1     ASL $E139,X
+CD/4737: 00 1D        BRK $1D
+CD/4739: 09 09        ORA #$09
+CD/473B: 03 3A        ORA $3A,S
+CD/473D: D2 00        CMP ($00)
+CD/473F: 28           PLP
+CD/4740: 3A           DEC
+CD/4741: 3A           DEC
+CD/4742: 44 3B D2     MVP $3B,$D2
+CD/4745: 00 28        BRK $28
+CD/4747: 3A           DEC
+CD/4748: 3A           DEC
+CD/4749: 69 3C        ADC #$3C
+CD/474B: DA           PHX
+CD/474C: 00 0C        BRK $0C
+CD/474E: 3C 3C 0A     BIT $0A3C,X
+CD/4751: 3D EB 05     AND $05EB,X
+CD/4754: 23 57        AND $57,S
+CD/4756: 57 FF        EOR [$FF],Y
+CD/4758: 3E ED 00     ROL $00ED,X
+CD/475B: 0B           PHD
+CD/475C: 11 55        ORA ($55),Y
+CD/475E: 42 3F        WDM $3F
+CD/4760: 61 00        ADC ($00,X)
+CD/4762: 01 00        ORA ($00,X)
+CD/4764: 00 16        BRK $16
+CD/4766: 40           RTI

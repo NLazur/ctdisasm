@@ -1,0 +1,83 @@
+FE/9892: 18           CLC
+FE/9893: 00 28        BRK $28
+FE/9895: CC 09 D8     CPY $D809
+FE/9898: 17 84        ORA [$84],Y
+FE/989A: 1B           TCS
+FE/989B: A2 00 2D     LDX #$2D00
+FE/989E: A1 1E        LDA ($1E,X)
+FE/98A0: A0 2F 80     LDY #$802F
+FE/98A3: 1F D0 00 17  ORA $1700D0,X
+FE/98A7: E9 99 31     SBC #$3199
+FE/98AA: 29 05 0D     AND #$0D05
+FE/98AD: 18           CLC
+FE/98AE: 00 14        BRK $14
+FE/98B0: 09 05 98     ORA #$9805
+FE/98B3: 94 05        STY $05,X
+FE/98B5: 0D 30 00     ORA $0030
+FE/98B8: 28           PLP
+FE/98B9: 66 20        ROR $20
+FE/98BB: 16 D0        ASL $D0,X
+FE/98BD: 02 F0        COP $F0
+FE/98BF: 0B           PHD
+FE/98C0: 00 E8        BRK $E8
+FE/98C2: 0A           ASL
+FE/98C3: F0 8B        BEQ $9850
+FE/98C5: 68           PLA
+FE/98C6: 02 F0        COP $F0
+FE/98C8: 17 00        ORA [$00],Y
+FE/98CA: D0 84        BNE $9850
+FE/98CC: 88           DEY
+FE/98CD: 86 8A        STX $8A
+FE/98CF: 84 88        STY $88
+FE/98D1: 87 00        STA [$00]
+FE/98D3: 8B           PHB
+FE/98D4: 88           DEY
+FE/98D5: 8C 83 85     STY $8583
+FE/98D8: 85 86        STA $86
+FE/98DA: 82 00 83     BRL $FE1BDD
+FE/98DD: 74 C3        STZ $C3,X
+FE/98DF: 76 C1        ROR $C1,X
+FE/98E1: 74 C3        STZ $C3,X
+FE/98E3: 77 00        ADC [$00],Y
+FE/98E5: C4 70        CPY $70
+FE/98E7: C3 7B        CMP $7B,S
+FE/98E9: C2 79        REP #$79
+FE/98EB: C1 7C        CMP ($7C,X)
+FE/98ED: 83 F6        STA $F6,S
+FE/98EF: 4B           PHK
+FE/98F0: D8           CLD
+FE/98F1: 1F 6D 7F 6D  ORA $6D7F6D,X
+FE/98F5: 7F ED 9F 04  ADC $049FED,X
+FE/98F9: 83 AA        STA $AA,S
+FE/98FB: 1C CC 1A     TRB $1ACC
+FE/98FE: 6D 80 6D     ADC $6D80
+FE/9901: 80 ED        BRA $98F0
+FE/9903: B0 4F        BCS $9954
+FE/9905: C1 99        CMP ($99,X)
+FE/9907: 1D B6 FE     ORA $FEB6,X
+FE/990A: B6 FE        LDX $FE,Y
+FE/990C: B7 2E        LDA [$2E],Y
+FE/990E: 44 D0 1C     MVP $D0,$1C
+FE/9911: 00 B6        BRK $B6
+FE/9913: 01 B6        ORA ($B6,X)
+FE/9915: 01 B7        ORA ($B7,X)
+FE/9917: 01 28        ORA ($28,X)
+FE/9919: 1C 00 6C     TRB $6C00
+FE/991C: 5C 20 14 EC  JMP $EC1420
+FE/9920: DC 14 34     JMP [$3414]
+FE/9923: 00 C4        BRK $C4
+FE/9925: A4 A0        LDY $A0
+FE/9927: 64 44        STZ $44
+FE/9929: C4 27        CPY $27
+FE/992B: C6 00        DEC $00
+FE/992D: 63 86        ADC $86,S
+FE/992F: 2F C6 E3 26  AND $26E3C6
+FE/9933: 0B           PHD
+FE/9934: C6 00        DEC $00
+FE/9936: DB           STP
+FE/9937: 46 9F        LSR $9F
+FE/9939: 86 3B        STX $3B
+FE/993B: 06 40        ASL $40
+FE/993D: 80 00        BRA $993F
+FE/993F: 70 B0        BVS $98F1
+FE/9941: 40           RTI

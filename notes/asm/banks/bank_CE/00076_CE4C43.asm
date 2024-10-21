@@ -1,0 +1,377 @@
+CE/4C43: 00 20        BRK $20
+CE/4C45: 10 33        BPL $4C7A
+CE/4C47: 03 41        ORA $41,S
+CE/4C49: 1E 06 41     ASL $4106,X
+CE/4C4C: 1F 07 33 0A  ORA $0A3307,X
+CE/4C50: 7A           PLY
+CE/4C51: 72 01        ADC ($01)
+CE/4C53: 1E 26 24     ASL $2426,X
+CE/4C56: 02 73        COP $73
+CE/4C58: 03 78        ORA $78,S
+CE/4C5A: 6F 1B 01 1E  ADC $1E011B
+CE/4C5E: 22 71 00 1B  JSR $1B0071
+CE/4C62: 0A           ASL
+CE/4C63: 72 03        ADC ($03)
+CE/4C65: 73 01        ADC ($01,S),Y
+CE/4C67: 20 10 1E     JSR $1E10
+CE/4C6A: 27 24        AND [$24]
+CE/4C6C: 02 73        COP $73
+CE/4C6E: 03 0A        ORA $0A,S
+CE/4C70: 1B           TCS
+CE/4C71: 01 76        ORA ($76,X)
+CE/4C73: 01 03        ORA ($03,X)
+CE/4C75: A8           TAY
+CE/4C76: 09 1E 22     ORA #$221E
+CE/4C79: 71 00        ADC ($00),Y
+CE/4C7B: 1B           TCS
+CE/4C7C: 0A           ASL
+CE/4C7D: 72 03        ADC ($03)
+CE/4C7F: 73 01        ADC ($01,S),Y
+CE/4C81: 20 10 1E     JSR $1E10
+CE/4C84: 28           PLP
+CE/4C85: 24 02        BIT $02
+CE/4C87: 73 03        ADC ($03,S),Y
+CE/4C89: 0A           ASL
+CE/4C8A: 1B           TCS
+CE/4C8B: 01 76        ORA ($76,X)
+CE/4C8D: 01 03        ORA ($03,X)
+CE/4C8F: A8           TAY
+CE/4C90: 12 1E        ORA ($1E)
+CE/4C92: 22 71 00 1B  JSR $1B0071
+CE/4C96: 0A           ASL
+CE/4C97: 72 03        ADC ($03)
+CE/4C99: 73 01        ADC ($01,S),Y
+CE/4C9B: 20 10 1E     JSR $1E10
+CE/4C9E: 29 36 24     AND #$2436
+CE/4CA1: 02 73        COP $73
+CE/4CA3: 03 0A        ORA $0A,S
+CE/4CA5: 1B           TCS
+CE/4CA6: 01 76        ORA ($76,X)
+CE/4CA8: 01 03        ORA ($03,X)
+CE/4CAA: A8           TAY
+CE/4CAB: 1B           TCS
+CE/4CAC: 1E 22 71     ASL $7122,X
+CE/4CAF: 0B           PHD
+CE/4CB0: 1B           TCS
+CE/4CB1: 03 02        ORA $02,S
+CE/4CB3: 00 70        BRK $70
+CE/4CB5: 12 2A        ORA ($2A)
+CE/4CB7: 71 36        ADC ($36),Y
+CE/4CB9: 65 60        ADC $60
+CE/4CBB: 05 02        ORA $02
+CE/4CBD: 04 0C        TSB $0C
+CE/4CBF: 20 14 70     JSR $7014
+CE/4CC2: 7A           PLY
+CE/4CC3: BB           TYX
+CE/4CC4: 03 12        ORA $12,S
+CE/4CC6: 03 7B        ORA $7B,S
+CE/4CC8: B8           CLV
+CE/4CC9: 00 20        BRK $20
+CE/4CCB: 0A           ASL
+CE/4CCC: 34 0F        BIT $0F,X
+CE/4CCE: 03 01        ORA $01,S
+CE/4CD0: 00 1B        BRK $1B
+CE/4CD2: 09 72 03     ORA #$0372
+CE/4CD5: 73 00        ADC ($00,S),Y
+CE/4CD7: 62 02 01     PER $CE4DDC
+CE/4CDA: 04 02        TSB $02
+CE/4CDC: 03 85        ORA $85,S
+CE/4CDE: 00 23        BRK $23
+CE/4CE0: 01 7B        ORA ($7B,X)
+CE/4CE2: A1 00        LDA ($00,X)
+CE/4CE4: 1E 2C 20     ASL $202C,X
+CE/4CE7: 01 66        ORA ($66,X)
+CE/4CE9: 24 03        BIT $03
+CE/4CEB: 34 1B        BIT $1B,X
+CE/4CED: 1B           TCS
+CE/4CEE: 2B           PLD
+CE/4CEF: 02 04        COP $04
+CE/4CF1: 0D 73 03     ORA $0373
+CE/4CF4: 22 0F 01 70  JSR $70010F
+CE/4CF8: 12 03        ORA ($03)
+CE/4CFA: 7B           TDC
+CE/4CFB: B8           CLV
+CE/4CFC: 00 20        BRK $20
+CE/4CFE: 0A           ASL
+CE/4CFF: 34 0F        BIT $0F,X
+CE/4D01: 03 01        ORA $01,S
+CE/4D03: 00 1B        BRK $1B
+CE/4D05: 09 72 03     ORA #$0372
+CE/4D08: 73 00        ADC ($00,S),Y
+CE/4D0A: 02 03        COP $03
+CE/4D0C: 85 40        STA $40
+CE/4D0E: 23 01        AND $01,S
+CE/4D10: 1E 2C 24     ASL $242C,X
+CE/4D13: 03 1B        ORA $1B,S
+CE/4D15: 2C 02 04     BIT $0402
+CE/4D18: 0D 73 03     ORA $0373
+CE/4D1B: 22 0F 02 70  JSR $70020F
+CE/4D1F: 12 03        ORA ($03)
+CE/4D21: 7B           TDC
+CE/4D22: B8           CLV
+CE/4D23: 00 20        BRK $20
+CE/4D25: 0A           ASL
+CE/4D26: 03 01        ORA $01,S
+CE/4D28: 78           SEI
+CE/4D29: FF 36 00 1B  SBC $1B0036,X
+CE/4D2D: 09 72 03     ORA #$0372
+CE/4D30: 73 00        ADC ($00,S),Y
+CE/4D32: 02 03        COP $03
+CE/4D34: 85 80        STA $80
+CE/4D36: 23 01        AND $01,S
+CE/4D38: 1E 2C 00     ASL $002C,X
+CE/4D3B: 1B           TCS
+CE/4D3C: 09 72 03     ORA #$0372
+CE/4D3F: 73 00        ADC ($00,S),Y
+CE/4D41: 02 03        COP $03
+CE/4D43: 85 C0        STA $C0
+CE/4D45: 23 01        AND $01,S
+CE/4D47: 1E 2C 00     ASL $002C,X
+CE/4D4A: D8           CLD
+CE/4D4B: FF C0 00 6A  SBC $6A00C0,X
+CE/4D4F: 4D 86 4D     EOR $4D86
+CE/4D52: 92 4D        STA ($4D)
+CE/4D54: 9E 4D AA     STZ $AA4D,X
+CE/4D57: 4D DE 4D     EOR $4DDE
+CE/4D5A: 0B           PHD
+CE/4D5B: 4E 38 4E     LSR $4E38
+CE/4D5E: 6C 4E A6     JMP ($A64E)
+CE/4D61: 4E D8 4E     LSR $4ED8
+CE/4D64: F9 4E 85     SBC $854E,Y
+CE/4D67: 09 93 09     ORA #$0993
+CE/4D6A: 03 10        ORA $10,S
+CE/4D6C: 02 36        COP $36
+CE/4D6E: 36 24        ROL $24,X
+CE/4D70: 02 2D        COP $2D
+CE/4D72: 80 12        BRA $4D86
+CE/4D74: B0 20        BCS $4D96
+CE/4D76: 21 24        AND ($24,X)
+CE/4D78: 03 34        ORA $34,S
+CE/4D7A: 1B           TCS
+CE/4D7B: 24 03        BIT $03
+CE/4D7D: 22 1B 00 06  JSR $06001B
+CE/4D81: 03 50        ORA $50,S
+CE/4D83: 2E 01 00     ROL $0001
+CE/4D86: 03 10        ORA $10,S
+CE/4D88: 02 22        COP $22
+CE/4D8A: 24 03        BIT $03
+CE/4D8C: 22 1B 00 06  JSR $06001B
+CE/4D90: 03 00        ORA $00,S
+CE/4D92: 24 03        BIT $03
+CE/4D94: 02 24        COP $24
+CE/4D96: 22 1B 00 20  JSR $20001B
+CE/4D9A: 01 06        ORA ($06,X)
+CE/4D9C: 03 00        ORA $00,S
+CE/4D9E: 24 03        BIT $03
+CE/4DA0: 02 24        COP $24
+CE/4DA2: 22 1B 00 20  JSR $20001B
+CE/4DA6: 01 06        ORA ($06,X)
+CE/4DA8: 03 00        ORA $00,S
+CE/4DAA: 1B           TCS
+CE/4DAB: 00 72        BRK $72
+CE/4DAD: 03 73        ORA $73,S
+CE/4DAF: 00 61        BRK $61
+CE/4DB1: 02 00        COP $00
+CE/4DB3: 03 02        ORA $02,S
+CE/4DB5: 00 0D        BRK $0D
+CE/4DB7: 24 01        BIT $01
+CE/4DB9: 70 78        BVS $4E33
+CE/4DBB: 7C 1E 1C     JMP ($1C1E,X)
+CE/4DBE: 0B           PHD
+CE/4DBF: 99 00 1A     STA $1A00,Y
+CE/4DC2: 24 02        BIT $02
+CE/4DC4: 0C 85 00     TSB $0085
+CE/4DC7: 7A           PLY
+CE/4DC8: 04 14        TSB $14
+CE/4DCA: A8           TAY
+CE/4DCB: 0A           ASL
+CE/4DCC: 20 0A 71     JSR $710A
+CE/4DCF: 24 03        BIT $03
+CE/4DD1: 1B           TCS
+CE/4DD2: 03 73        ORA $73,S
+CE/4DD4: 03 78        ORA $78,S
+CE/4DD6: 59 20 14     EOR $1420,Y
+CE/4DD9: 03 01        ORA $01,S
+CE/4DDB: 20 01 00     JSR $0001
+CE/4DDE: 1B           TCS
+CE/4DDF: 00 72        BRK $72
+CE/4DE1: 03 73        ORA $73,S
+CE/4DE3: 00 20        BRK $20
+CE/4DE5: 02 02        COP $02
+CE/4DE7: 00 0D        BRK $0D
+CE/4DE9: 24 01        BIT $01
+CE/4DEB: 20 08 70     JSR $7008
+CE/4DEE: 1E 1C 0B     ASL $0B1C,X
+CE/4DF1: 99 00 1A     STA $1A00,Y
+CE/4DF4: 24 02        BIT $02
+CE/4DF6: 0C 85 20     TSB $2085
+CE/4DF9: A8           TAY
+CE/4DFA: 0A           ASL
+CE/4DFB: 20 0A 71     JSR $710A
+CE/4DFE: 24 03        BIT $03
+CE/4E00: 25 00        AND $00
+CE/4E02: 1B           TCS
+CE/4E03: 04 73        TSB $73
+CE/4E05: 04 20        TSB $20
+CE/4E07: 14 03        TRB $03
+CE/4E09: 01 00        ORA ($00,X)
+CE/4E0B: 1B           TCS
+CE/4E0C: 00 72        BRK $72
+CE/4E0E: 03 73        ORA $73,S
+CE/4E10: 00 20        BRK $20
+CE/4E12: 05 02        ORA $02
+CE/4E14: 00 0D        BRK $0D
+CE/4E16: 24 01        BIT $01
+CE/4E18: 20 10 70     JSR $7010
+CE/4E1B: 1E 1C 0B     ASL $0B1C,X
+CE/4E1E: 99 00 1A     STA $1A00,Y
+CE/4E21: 24 02        BIT $02
+CE/4E23: 0C 85 40     TSB $4085
+CE/4E26: A8           TAY
+CE/4E27: 0A           ASL
+CE/4E28: 20 0A 71     JSR $710A
+CE/4E2B: 24 03        BIT $03
+CE/4E2D: 25 01        AND $01
+CE/4E2F: 1B           TCS
+CE/4E30: 05 73        ORA $73
+CE/4E32: 05 20        ORA $20
+CE/4E34: 14 03        TRB $03
+CE/4E36: 01 00        ORA ($00,X)
+CE/4E38: 1B           TCS
+CE/4E39: 00 72        BRK $72
+CE/4E3B: 03 73        ORA $73,S
+CE/4E3D: 00 20        BRK $20
+CE/4E3F: 07 02        ORA [$02]
+CE/4E41: 00 0D        BRK $0D
+CE/4E43: 24 01        BIT $01
+CE/4E45: 20 18 70     JSR $7018
+CE/4E48: 1E 1C 0B     ASL $0B1C,X
+CE/4E4B: 99 00 1A     STA $1A00,Y
+CE/4E4E: 35 24        AND $24,X
+CE/4E50: 02 0C        COP $0C
+CE/4E52: 85 60        STA $60
+CE/4E54: A8           TAY
+CE/4E55: 0A           ASL
+CE/4E56: 20 0A 71     JSR $710A
+CE/4E59: 24 03        BIT $03
+CE/4E5B: 20 0A 43     JSR $430A
+CE/4E5E: 03 FC        ORA $FC,S
+CE/4E60: 00 1A        BRK $1A
+CE/4E62: 73 03        ADC ($03,S),Y
+CE/4E64: 20 1C 03     JSR $031C
+CE/4E67: 01 20        ORA ($20,X)
+CE/4E69: 01 36        ORA ($36,X)
+CE/4E6B: 00 33        BRK $33
+CE/4E6D: 0A           ASL
+CE/4E6E: 41 1E        EOR ($1E,X)
+CE/4E70: 02 41        COP $41
+CE/4E72: 1F 03 33 14  ORA $143303,X
+CE/4E76: 1B           TCS
+CE/4E77: 0A           ASL
+CE/4E78: 72 03        ADC ($03)
+CE/4E7A: 73 01        ADC ($01,S),Y
+CE/4E7C: 02 00        COP $00
+CE/4E7E: 0D 24 01     ORA $0124
+CE/4E81: 70 78        BVS $4EFB
+CE/4E83: 7C 1E 3D     JMP ($3D1E,X)
+CE/4E86: 0B           PHD
+CE/4E87: 99 00 1A     STA $1A00,Y
+CE/4E8A: 24 02        BIT $02
+CE/4E8C: 0C 85 80     TSB $8085
+CE/4E8F: A8           TAY
+CE/4E90: 0A           ASL
+CE/4E91: 20 0A 71     JSR $710A
+CE/4E94: 24 03        BIT $03
+CE/4E96: 25 00        AND $00
+CE/4E98: 20 0B 43     JSR $430B
+CE/4E9B: 04 FC        TSB $FC
+CE/4E9D: 00 1A        BRK $1A
+CE/4E9F: 73 04        ADC ($04,S),Y
+CE/4EA1: 20 1B 03     JSR $031B
+CE/4EA4: 01 00        ORA ($00,X)
+CE/4EA6: 1B           TCS
+CE/4EA7: 0A           ASL
+CE/4EA8: 72 03        ADC ($03)
+CE/4EAA: 73 01        ADC ($01,S),Y
+CE/4EAC: 20 02 02     JSR $0202
+CE/4EAF: 00 0D        BRK $0D
+CE/4EB1: 24 01        BIT $01
+CE/4EB3: 20 08 70     JSR $7008
+CE/4EB6: 1E 3D 0B     ASL $0B3D,X
+CE/4EB9: 99 00 1A     STA $1A00,Y
+CE/4EBC: 24 02        BIT $02
+CE/4EBE: 0C 85 A0     TSB $A085
+CE/4EC1: A8           TAY
+CE/4EC2: 0A           ASL
+CE/4EC3: 20 0A 71     JSR $710A
+CE/4EC6: 24 03        BIT $03
+CE/4EC8: 25 01        AND $01
+CE/4ECA: 20 0C 43     JSR $430C
+CE/4ECD: 05 FC        ORA $FC
+CE/4ECF: 00 1A        BRK $1A
+CE/4ED1: 73 05        ADC ($05,S),Y
+CE/4ED3: 20 1A 03     JSR $031A
+CE/4ED6: 01 00        ORA ($00,X)
+CE/4ED8: 1B           TCS
+CE/4ED9: 0A           ASL
+CE/4EDA: 72 03        ADC ($03)
+CE/4EDC: 73 01        ADC ($01,S),Y
+CE/4EDE: 20 05 02     JSR $0205
+CE/4EE1: 00 0D        BRK $0D
+CE/4EE3: 24 01        BIT $01
+CE/4EE5: 20 10 70     JSR $7010
+CE/4EE8: 1E 3D 0B     ASL $0B3D,X
+CE/4EEB: 99 00 1A     STA $1A00,Y
+CE/4EEE: 24 02        BIT $02
+CE/4EF0: 0C 85 C0     TSB $C085
+CE/4EF3: A8           TAY
+CE/4EF4: 0A           ASL
+CE/4EF5: 20 0A 71     JSR $710A
+CE/4EF8: 00 1B        BRK $1B
+CE/4EFA: 0A           ASL
+CE/4EFB: 72 03        ADC ($03)
+CE/4EFD: 73 01        ADC ($01,S),Y
+CE/4EFF: 20 07 02     JSR $0207
+CE/4F02: 00 0D        BRK $0D
+CE/4F04: 24 01        BIT $01
+CE/4F06: 20 18 70     JSR $7018
+CE/4F09: 1E 3D 0B     ASL $0B3D,X
+CE/4F0C: 99 00 1A     STA $1A00,Y
+CE/4F0F: 23 01        AND $01,S
+CE/4F11: 36 0C        ROL $0C,X
+CE/4F13: 85 E0        STA $E0
+CE/4F15: A8           TAY
+CE/4F16: 0A           ASL
+CE/4F17: 20 0A 71     JSR $710A
+CE/4F1A: 36 00        ROL $00,X
+CE/4F1C: D0 FE        BNE $4F1C
+CE/4F1E: C0 00 08     CPY #$0800
+CE/4F21: 2D 38 4F     AND $4F38
+CE/4F24: 1F 2D 2E 2D  ORA $2D2E2D,X
+CE/4F28: 44 2D 55     MVP $2D,$55
+CE/4F2B: 2D 56 4F     AND $4F56
+CE/4F2E: 75 4F        ADC $4F,X
+CE/4F30: 99 4F BC     STA $BC4F,Y
+CE/4F33: 4F 85 09 93  EOR $930985
+CE/4F37: 09 72 0D     ORA #$0D72
+CE/4F3A: 02 3C        COP $3C
+CE/4F3C: 23 01        AND $01,S
+CE/4F3E: 0C C2 01     TSB $01C2
+CE/4F41: 03 C0        ORA $C0,S
+CE/4F43: 04 02        TSB $02
+CE/4F45: 1A           INC
+CE/4F46: C2 01        REP #$01
+CE/4F48: 06 C0        ASL $C0
+CE/4F4A: 04 C2        TSB $C2
+CE/4F4C: 01 03        ORA ($03,X)
+CE/4F4E: C0 04 2B     CPY #$2B04
+CE/4F51: 23 05        AND $05,S
+CE/4F53: 06 03        ASL $03
+CE/4F55: 00 D9        BRK $D9
+CE/4F57: 30 0B        BMI $4F64
+CE/4F59: 43 0C        EOR $0C,S
+CE/4F5B: 00 19        BRK $19
+CE/4F5D: 1A           INC
+CE/4F5E: 73 03        ADC ($03,S),Y
+CE/4F60: 02 02        COP $02
+CE/4F62: 60           RTS

@@ -1,0 +1,46 @@
+C2/F6F5: E6 16        INC $16
+C2/F6F7: A4 16        LDY $16
+C2/F6F9: B7 1E        LDA [$1E],Y
+C2/F6FB: F0 E3        BEQ $F6E0
+C2/F6FD: 85 13        STA $13
+C2/F6FF: B7 1B        LDA [$1B],Y
+C2/F701: C5 03        CMP $03
+C2/F703: F0 4B        BEQ $F750
+C2/F705: 85 03        STA $03
+C2/F707: 8F 02 42 00  STA $004202
+C2/F70B: A5 09        LDA $09
+C2/F70D: 8D 92 96     STA $9692
+C2/F710: A9 6B        LDA #$6B
+C2/F712: 8D 93 96     STA $9693
+C2/F715: A6 02        LDX $02
+C2/F717: BF 55 F7 C2  LDA $C2F755,X
+C2/F71B: 8F 03 42 00  STA $004203
+C2/F71F: C2 30        REP #$30
+C2/F721: A9 54 7E     LDA #$7E54
+C2/F724: 8D 90 96     STA $9690
+C2/F727: 8A           TXA
+C2/F728: 0A           ASL
+C2/F729: 0A           ASL
+C2/F72A: 0A           ASL
+C2/F72B: 85 22        STA $22
+C2/F72D: 0A           ASL
+C2/F72E: 0A           ASL
+C2/F72F: 3A           DEC
+C2/F730: A8           TAY
+C2/F731: A5 07        LDA $07
+C2/F733: 6F 16 42 00  ADC $004216
+C2/F737: AA           TAX
+C2/F738: 98           TYA
+C2/F739: A0 90 98     LDY #$9890
+C2/F73C: 22 90 96 7E  JSR $7E9690
+C2/F740: 7B           TDC
+C2/F741: 18           CLC
+C2/F742: 69 22 00     ADC #$0022
+C2/F745: A8           TAY
+C2/F746: A5 22        LDA $22
+C2/F748: 3A           DEC
+C2/F749: 22 90 96 7E  JSR $7E9690
+C2/F74D: 20 5C F7     JSR $F75C
+C2/F750: E2 30        SEP #$30
+C2/F752: C6 13        DEC $13
+C2/F754: 60           RTS

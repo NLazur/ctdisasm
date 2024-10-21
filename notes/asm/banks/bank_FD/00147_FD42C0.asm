@@ -1,0 +1,128 @@
+FD/42C0: 57 2F        EOR [$2F],Y
+FD/42C2: 57 2F        EOR [$2F],Y
+FD/42C4: 4F 3F 02 10  EOR $10023F
+FD/42C8: 1F 01 02 00  ORA $000201,X
+FD/42CC: D8           CLD
+FD/42CD: 0C 5E 48     TSB $485E
+FD/42D0: 1C 31 99     TRB $9931
+FD/42D3: 00 94        BRK $94
+FD/42D5: BC 95 C9     LDY $C995,X
+FD/42D8: 03 BA        ORA $BA,S
+FD/42DA: 93 AE        STA ($AE,S),Y
+FD/42DC: 00 44        BRK $44
+FD/42DE: C3 E9        CMP $E9,S
+FD/42E0: A5 FF        LDA $FF
+FD/42E2: 83 DC        STA $DC,S
+FD/42E4: 22 00 BF 04  JSR $04BF00
+FD/42E8: AC 90 2F     LDY $2F90
+FD/42EB: E1 6D        SBC ($6D,X)
+FD/42ED: 69 00        ADC #$00
+FD/42EF: 3A           DEC
+FD/42F0: EC 1D CC     CPX $CC1D
+FD/42F3: 0D FA 35     ORA $35FA
+FD/42F6: FC 00 14     JSR ($1400,X)
+FD/42F9: AD 06 DF     LDA $DF06
+FD/42FC: 63 5C        ADC $5C,S
+FD/42FE: 00 0B        BRK $0B
+FD/4300: 00 11        BRK $11
+FD/4302: EA           NOP
+FD/4303: F7 EA        SBC [$EA],Y
+FD/4305: F7 DA        SBC [$DA],Y
+FD/4307: E7 DF        SBC [$DF]
+FD/4309: 00 E3        BRK $E3
+FD/430B: D9 E3 BE     CMP $BEE3,Y
+FD/430E: C1 BE        CMP ($BE,X)
+FD/4310: C1 BF        CMP ($BF,X)
+FD/4312: 00 C0        BRK $C0
+FD/4314: C0 DC        CPY #$DC
+FD/4316: 81 9F        STA ($9F,X)
+FD/4318: D9 D3 9A     CMP $9AD3,Y
+FD/431B: 00 A7        BRK $A7
+FD/431D: 4E FC 47     LSR $47FC
+FD/4320: 9A           TXS
+FD/4321: 32 8B        AND ($8B)
+FD/4323: CF 00 A5 4F  CMP $4FA500
+FD/4327: 11 FC        ORA ($FC),Y
+FD/4329: 03 26        ORA $26,S
+FD/432B: CC EC 00     CPY $00EC
+FD/432E: CE F9 0C     DEC $0CF9
+FD/4331: B9 45 CB     LDA $CB45,Y
+FD/4334: 3B           TSC
+FD/4335: F4 00 CE     PEA $CE00
+FD/4338: 6E 4B EC     ROR $EC4B
+FD/433B: 89 33        BIT #$33
+FD/433D: D9 B9 00     CMP $00B9,Y
+FD/4340: C8           INY
+FD/4341: 25 56        AND $56
+FD/4343: 29 15        AND #$15
+FD/4345: 42 06        WDM $06
+FD/4347: F6 40        INC $40,X
+FD/4349: CC 94 FF     CPY $FF94
+FD/434C: 16 FF        ASL $FF,X
+FD/434E: 06 02        ASL $02
+FD/4350: 03 8D        ORA $8D,S
+FD/4352: 00 FB        BRK $FB
+FD/4354: CA           DEX
+FD/4355: FD F8 FD     SBC $FDF8,X
+FD/4358: 33 F8        AND ($F8,S),Y
+FD/435A: 4E 00 17     LSR $1700
+FD/435D: 45 4E        EOR $4E
+FD/435F: 23 93        AND $93,S
+FD/4361: 15 97        ORA $97,X
+FD/4363: 28           PLP
+FD/4364: 00 91        BRK $91
+FD/4366: 5F AA AD EC  EOR $ECADAA,X
+FD/436A: 5E F3 7C     LSR $7CF3,X
+FD/436D: 00 AD        BRK $AD
+FD/436F: AE E0 AC     LDX $ACE0
+FD/4372: 57 FA        EOR [$FA],Y
+FD/4374: 7F A1 00 23  ADC $2300A1,X
+FD/4378: 13 54        ORA ($54,S),Y
+FD/437A: 0B           PHD
+FD/437B: 88           DEY
+FD/437C: 63 CD        ADC $CD,S
+FD/437E: D2 00        CMP ($00)
+FD/4380: 81 16        STA ($16,X)
+FD/4382: C3 FB        CMP $FB,S
+FD/4384: 53 87        EOR ($87,S),Y
+FD/4386: 45 52        EOR $52
+FD/4388: 00 89        BRK $89
+FD/438A: B6 11        LDX $11,Y
+FD/438C: 6A           ROR
+FD/438D: 19 EE E0     ORA $E0EE,Y
+FD/4390: 06 01        ASL $01
+FD/4392: B6 06        LDX $06,Y
+FD/4394: 0F FC 1F F8  ORA $F81FFC
+FD/4398: 17 F8        ORA [$F8],Y
+FD/439A: EF 04 F0 E7  SBC $E7F004
+FD/439E: C2 08        REP #$08
+FD/43A0: 2A           ROL
+FD/43A1: D8           CLD
+FD/43A2: A2 58        LDX #$58
+FD/43A4: 0B           PHD
+FD/43A5: 00 E7        BRK $E7
+FD/43A7: E6 13        INC $13
+FD/43A9: 28           PLP
+FD/43AA: C4 CD        CPY $CD
+FD/43AC: 30 61        BMI $440F
+FD/43AE: 00 AE        BRK $AE
+FD/43B0: F7 78        SBC [$78],Y
+FD/43B2: 28           PLP
+FD/43B3: E1 20        SBC ($20,X)
+FD/43B5: 01 D3        ORA ($D3,X)
+FD/43B7: 00 D0        BRK $D0
+FD/43B9: 2A           ROL
+FD/43BA: C8           INY
+FD/43BB: DA           PHX
+FD/43BC: B2 33        LDA ($33)
+FD/43BE: EE BE 00     INC $00BE
+FD/43C1: 69 80        ADC #$80
+FD/43C3: 0F 27 E0 57  ORA $57E027
+FD/43C7: F0 F0        BEQ $43B9
+FD/43C9: 00 30        BRK $30
+FD/43CB: D8           CLD
+FD/43CC: 38           SEC
+FD/43CD: 36 8E        ROL $8E,X
+FD/43CF: 0E E1 11     ASL $11E1
+FD/43D2: 50 F8        BVC $43CC
+FD/43D4: 40           RTI

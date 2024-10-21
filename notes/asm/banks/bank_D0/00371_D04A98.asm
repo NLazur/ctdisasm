@@ -1,0 +1,123 @@
+D0/4A98: 00 00        BRK $00
+D0/4A9A: 00 00        BRK $00
+D0/4A9C: 00 00        BRK $00
+D0/4A9E: 00 00        BRK $00
+D0/4AA0: 00 00        BRK $00
+D0/4AA2: 00 00        BRK $00
+D0/4AA4: 0F 08 7F 40  ORA $407F08
+D0/4AA8: 00 00        BRK $00
+D0/4AAA: 00 00        BRK $00
+D0/4AAC: 00 00        BRK $00
+D0/4AAE: 00 00        BRK $00
+D0/4AB0: 00 00        BRK $00
+D0/4AB2: 00 00        BRK $00
+D0/4AB4: 00 00        BRK $00
+D0/4AB6: F8           SED
+D0/4AB7: 00 0F        BRK $0F
+D0/4AB9: 00 0B        BRK $0B
+D0/4ABB: 10 03        BPL $4AC0
+D0/4ABD: 04 17        TSB $17
+D0/4ABF: 00 02        BRK $02
+D0/4AC1: 04 0A        TSB $0A
+D0/4AC3: 09 01 00     ORA #$0001
+D0/4AC6: 05 04        ORA $04
+D0/4AC8: 80 00        BRA $4ACA
+D0/4ACA: 80 00        BRA $4ACC
+D0/4ACC: 80 00        BRA $4ACE
+D0/4ACE: C0 00 C0     CPY #$C000
+D0/4AD1: 00 80        BRK $80
+D0/4AD3: 00 C0        BRK $C0
+D0/4AD5: 20 60 00     JSR $0060
+D0/4AD8: 00 00        BRK $00
+D0/4ADA: 00 00        BRK $00
+D0/4ADC: 00 00        BRK $00
+D0/4ADE: 07 07        ORA [$07]
+D0/4AE0: 08           PHP
+D0/4AE1: 0F 08 0F 07  ORA $070F08
+D0/4AE5: 07 00        ORA [$00]
+D0/4AE7: 00 0F        BRK $0F
+D0/4AE9: 0F 38 3F C0  ORA $C03F38
+D0/4AED: FF 0F F0 38  SBC $38F00F,X
+D0/4AF1: C7 01        CMP [$01]
+D0/4AF3: FF F8 F8 00  SBC $00F8F8,X
+D0/4AF7: 00 00        BRK $00
+D0/4AF9: 00 F8        BRK $F8
+D0/4AFB: FF 1F E0 F0  SBC $F0E01F,X
+D0/4AFF: 0F 0F FF C0  ORA $C0FF0F
+D0/4B03: C0 00 00     CPY #$0000
+D0/4B06: 00 00        BRK $00
+D0/4B08: E6 F9        INC $F9
+D0/4B0A: E7 1F        SBC [$1F]
+D0/4B0C: 18           CLC
+D0/4B0D: F8           SED
+D0/4B0E: E0 E0        CPX #$E0
+D0/4B10: 00 00        BRK $00
+D0/4B12: 00 00        BRK $00
+D0/4B14: 00 00        BRK $00
+D0/4B16: 00 00        BRK $00
+D0/4B18: 50 70        BVC $4B8A
+D0/4B1A: 70 70        BVS $4B8C
+D0/4B1C: 50 70        BVC $4B8E
+D0/4B1E: 50 70        BVC $4B90
+D0/4B20: 10 70        BPL $4B92
+D0/4B22: A0 E0        LDY #$E0
+D0/4B24: A0 E0        LDY #$E0
+D0/4B26: 20 E0 03     JSR $03E0
+D0/4B29: 02 07        COP $07
+D0/4B2B: 04 07        TSB $07
+D0/4B2D: 00 0F        BRK $0F
+D0/4B2F: 08           PHP
+D0/4B30: 0D 00 03     ORA $0300
+D0/4B33: 10 0F        BPL $4B44
+D0/4B35: 00 1D        BRK $1D
+D0/4B37: 00 FF        BRK $FF
+D0/4B39: 00 FF        BRK $FF
+D0/4B3B: 00 F0        BRK $F0
+D0/4B3D: 00 C0        BRK $C0
+D0/4B3F: 00 C0        BRK $C0
+D0/4B41: 00 80        BRK $80
+D0/4B43: 00 80        BRK $80
+D0/4B45: 00 80        BRK $80
+D0/4B47: 00 FF        BRK $FF
+D0/4B49: 00 FF        BRK $FF
+D0/4B4B: 00 3F        BRK $3F
+D0/4B4D: 00 07        BRK $07
+D0/4B4F: 00 01        BRK $01
+D0/4B51: 00 00        BRK $00
+D0/4B53: 00 00        BRK $00
+D0/4B55: 00 00        BRK $00
+D0/4B57: 00 00        BRK $00
+D0/4B59: 00 C0        BRK $C0
+D0/4B5B: 00 F0        BRK $F0
+D0/4B5D: 00 C0        BRK $C0
+D0/4B5F: 00 80        BRK $80
+D0/4B61: 00 00        BRK $00
+D0/4B63: 00 00        BRK $00
+D0/4B65: 00 00        BRK $00
+D0/4B67: 00 00        BRK $00
+D0/4B69: 01 02        ORA ($02,X)
+D0/4B6B: 02 01        COP $01
+D0/4B6D: 02 00        COP $00
+D0/4B6F: 00 01        BRK $01
+D0/4B71: 01 00        ORA ($00,X)
+D0/4B73: 00 00        BRK $00
+D0/4B75: 00 00        BRK $00
+D0/4B77: 00 20        BRK $20
+D0/4B79: 00 A0        BRK $A0
+D0/4B7B: 00 58        BRK $58
+D0/4B7D: 00 9C        BRK $9C
+D0/4B7F: 80 28        BRA $4BA9
+D0/4B81: 30 5A        BMI $4BDD
+D0/4B83: 10 0E        BPL $4B93
+D0/4B85: 00 26        BRK $26
+D0/4B87: 28           PLP
+D0/4B88: 05 10        ORA $10
+D0/4B8A: 01 00        ORA ($00,X)
+D0/4B8C: 04 06        TSB $06
+D0/4B8E: 00 00        BRK $00
+D0/4B90: 02 02        COP $02
+D0/4B92: 00 00        BRK $00
+D0/4B94: 00 00        BRK $00
+D0/4B96: 00 00        BRK $00
+D0/4B98: 80 00        BRA $4B9A
+D0/4B9A: 40           RTI

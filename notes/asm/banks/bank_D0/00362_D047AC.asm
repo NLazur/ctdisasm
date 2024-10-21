@@ -1,0 +1,82 @@
+D0/47AC: F0 90        BEQ $473E
+D0/47AE: F8           SED
+D0/47AF: 18           CLC
+D0/47B0: FB           XCE
+D0/47B1: 0B           PHD
+D0/47B2: FF CF 79 49  SBC $4979CF,X
+D0/47B6: 77 57        ADC [$57],Y
+D0/47B8: 7F 7F 3F 30  ADC $303F7F,X
+D0/47BC: 7F 60 FF 87  ADC $87FF60,X
+D0/47C0: FF 8C FF 20  SBC $20FF8C,X
+D0/47C4: FF F0 7F 08  SBC $087FF0,X
+D0/47C8: 80 80        BRA $474A
+D0/47CA: E0 E0        CPX #$E0
+D0/47CC: E0 20        CPX #$20
+D0/47CE: E0 E0        CPX #$E0
+D0/47D0: E0 60        CPX #$60
+D0/47D2: F0 30        BEQ $4804
+D0/47D4: F0 10        BEQ $47E6
+D0/47D6: F0 10        BEQ $47E8
+D0/47D8: 01 01        ORA ($01,X)
+D0/47DA: 03 02        ORA $02,S
+D0/47DC: 03 03        ORA $03,S
+D0/47DE: 04 04        TSB $04
+D0/47E0: 00 00        BRK $00
+D0/47E2: 00 00        BRK $00
+D0/47E4: 00 00        BRK $00
+D0/47E6: 03 03        ORA $03,S
+D0/47E8: C4 44        CPY $44
+D0/47EA: 8A           TXA
+D0/47EB: 8A           TXA
+D0/47EC: 1B           TCS
+D0/47ED: 1B           TCS
+D0/47EE: 1F 14 3F 20  ORA $203F14,X
+D0/47F2: 7F 40 FF 87  ADC $87FF40,X
+D0/47F6: F8           SED
+D0/47F7: F8           SED
+D0/47F8: 30 30        BMI $482A
+D0/47FA: E0 E0        CPX #$E0
+D0/47FC: E0 20        CPX #$20
+D0/47FE: F7 37        SBC [$37],Y
+D0/4800: FF 18 FF 00  SBC $00FF18,X
+D0/4804: FF 84 7F 7F  SBC $7F7F84,X
+D0/4808: 20 00 30     JSR $3000
+D0/480B: 30 E0        BMI $47ED
+D0/480D: E0 E0        CPX #$E0
+D0/480F: 20 E3 23     JSR $23E3
+D0/4812: FC 1C FF     JSR ($FF1C,X)
+D0/4815: FF 00 00 05  SBC $050000,X
+D0/4819: 05 0E        ORA $0E
+D0/481B: 0E 1E 1E     ASL $1E1E
+D0/481E: E8           INX
+D0/481F: E8           INX
+D0/4820: 00 00        BRK $00
+D0/4822: 00 00        BRK $00
+D0/4824: 80 80        BRA $47A6
+D0/4826: 00 00        BRK $00
+D0/4828: 00 00        BRK $00
+D0/482A: 00 00        BRK $00
+D0/482C: 00 00        BRK $00
+D0/482E: 01 01        ORA ($01,X)
+D0/4830: 00 01        BRK $01
+D0/4832: 01 03        ORA ($03,X)
+D0/4834: 02 02        COP $02
+D0/4836: 04 04        TSB $04
+D0/4838: 02 02        COP $02
+D0/483A: 00 00        BRK $00
+D0/483C: 00 00        BRK $00
+D0/483E: 04 04        TSB $04
+D0/4840: 00 00        BRK $00
+D0/4842: 00 00        BRK $00
+D0/4844: 00 00        BRK $00
+D0/4846: 00 00        BRK $00
+D0/4848: 00 00        BRK $00
+D0/484A: 00 00        BRK $00
+D0/484C: 03 03        ORA $03,S
+D0/484E: 07 06        ORA [$06]
+D0/4850: 07 05        ORA [$05]
+D0/4852: 06 04        ASL $04
+D0/4854: 03 02        ORA $02,S
+D0/4856: 03 03        ORA $03,S
+D0/4858: 00 00        BRK $00
+D0/485A: 40           RTI

@@ -1,0 +1,32 @@
+FD/9D32: 02 C0        COP $C0
+FD/9D34: 6C 03 82     JMP ($8203)
+FD/9D37: 04 03        TSB $03
+FD/9D39: 84 02        STY $02
+FD/9D3B: C0 85 03     CPY #$0385
+FD/9D3E: 8F 03 91 41  STA $419103
+FD/9D42: 02 C0        COP $C0
+FD/9D44: 92 03        STA ($03)
+FD/9D46: B0 03        BCS $9D4B
+FD/9D48: B2 02        LDA ($02)
+FD/9D4A: C0 B3 10     CPY #$10B3
+FD/9D4D: 03 BE        ORA $BE,S
+FD/9D4F: 03 D5        ORA $D5,S
+FD/9D51: 02 C0        COP $C0
+FD/9D53: D6 03        DEC $03,X
+FD/9D55: DB           STP
+FD/9D56: 04 03        TSB $03
+FD/9D58: DC 02 C0     JMP [$C002]
+FD/9D5B: EC 03 F3     CPX $F303
+FD/9D5E: 03 FA        ORA $FA,S
+FD/9D60: 21 02        AND ($02,X)
+FD/9D62: C0 FB 03     CPY #$03FB
+FD/9D65: 02 04        COP $04
+FD/9D67: 01 C8        ORA ($C8,X)
+FD/9D69: E8           INX
+FD/9D6A: FF 00 16 5B  SBC $5B1600,X
+FD/9D6E: 01 00        ORA ($00,X)
+FD/9D70: 03 E3        ORA $E3,S
+FD/9D72: 00 00        BRK $00
+FD/9D74: 08           PHP
+FD/9D75: B8           CLV
+FD/9D76: 60           RTS

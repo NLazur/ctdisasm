@@ -1,0 +1,39 @@
+D1/BAE6: 00 60        BRK $60
+D1/BAE8: 00 00        BRK $00
+D1/BAEA: 00 00        BRK $00
+D1/BAEC: 00 00        BRK $00
+D1/BAEE: 18           CLC
+D1/BAEF: 58           CLI
+D1/BAF0: 18           CLC
+D1/BAF1: 58           CLI
+D1/BAF2: 20 D8 20     JSR $20D8
+D1/BAF5: D8           CLD
+D1/BAF6: 19 1A 2D     ORA $2D1A,Y
+D1/BAF9: 6D 21 22     ADC $2221
+D1/BAFC: AD ED 2D     LDA $2DED
+D1/BAFF: 6D AD ED     ADC $EDAD
+D1/BB02: 2D 6D 18     AND $186D
+D1/BB05: 58           CLI
+D1/BB06: AD ED 20     LDA $20ED
+D1/BB09: D8           CLD
+D1/BB0A: 19 1A 2D     ORA $2D1A,Y
+D1/BB0D: 6D 21 22     ADC $2221
+D1/BB10: AD ED 2D     LDA $2DED
+D1/BB13: 6D AD ED     ADC $EDAD
+D1/BB16: 18           CLC
+D1/BB17: 58           CLI
+D1/BB18: 20 D8 2D     JSR $2DD8
+D1/BB1B: 6D AD ED     ADC $EDAD
+D1/BB1E: 01 60        ORA ($60,X)
+D1/BB20: C0 60        CPY #$60
+D1/BB22: D8           CLD
+D1/BB23: 31 98        AND ($98),Y
+D1/BB25: 3D B0 0C     AND $0CB0,X
+D1/BB28: 36 0C        ROL $0C,X
+D1/BB2A: 06 0C        ASL $0C
+D1/BB2C: C0 18        CPY #$18
+D1/BB2E: C0 DB        CPY #$DB
+D1/BB30: 00 C3        BRK $C3
+D1/BB32: 30 00        BMI $BB34
+D1/BB34: 30 00        BMI $BB36
+D1/BB36: 60           RTS

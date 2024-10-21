@@ -1,0 +1,28 @@
+D0/CE63: 80 D0        BRA $CE35
+D0/CE65: E0 E8        CPX #$E8
+D0/CE67: F0 68        BEQ $CED1
+D0/CE69: F0 94        BEQ $CDFF
+D0/CE6B: 68           PLA
+D0/CE6C: E4 18        CPX $18
+D0/CE6E: 18           CLC
+D0/CE6F: 00 60        BRK $60
+D0/CE71: 80 E0        BRA $CE53
+D0/CE73: F0 F0        BEQ $CE65
+D0/CE75: 68           PLA
+D0/CE76: 18           CLC
+D0/CE77: 00 1F        BRK $1F
+D0/CE79: 02 3E        COP $3E
+D0/CE7B: 01 1B        ORA ($1B,X)
+D0/CE7D: 07 3B        ORA [$3B]
+D0/CE7F: 07 3D        ORA [$3D]
+D0/CE81: 03 32        ORA $32,S
+D0/CE83: 0D 13 0C     ORA $0C13
+D0/CE86: 0C 00 02     TSB $0200
+D0/CE89: 19 07 17     ORA $1707,Y
+D0/CE8C: 1B           TCS
+D0/CE8D: 1D 0C 00     ORA $000C,X
+D0/CE90: 25 1A        AND $1A
+D0/CE92: 1F 00 2F 18  ORA $182F00,X
+D0/CE96: 5F 38 5F 38  EOR $385F38,X
+D0/CE9A: 6E 19 BF     ROR $BF19
+D0/CE9D: 40           RTI

@@ -1,0 +1,38 @@
+C6/A7F6: AE B3 B4     LDX $B4B3
+C6/A7F9: 6E AF E5     ROR $E5AF
+C6/A7FC: 21 32        AND ($32,X)
+C6/A7FE: 15 C2        ORA $C2,X
+C6/A800: 0E 33 05     ASL $0533
+C6/A803: 0E 5E 07     ASL $075E
+C6/A806: 24 93        BIT $93
+C6/A808: A9 7F 09     LDA #$097F
+C6/A80B: AB           PLB
+C6/A80C: 32 21        AND ($21)
+C6/A80E: F5 03        SBC $03,X
+C6/A810: 09 2A C0     ORA #$C02A
+C6/A813: 03 80        ORA $80,S
+C6/A815: 09 2A 2A     ORA #$2A2A
+C6/A818: 2A           ROL
+C6/A819: C4 A2        CPY $A2
+C6/A81B: AF 7E 21 20  LDA $20217E
+C6/A81F: 5B           TCD
+C6/A820: 98           TYA
+C6/A821: 85 98        STA $98
+C6/A823: 86 E5        STX $E5
+C6/A825: 21 A0        AND ($A0,X)
+C6/A827: 3B           TSC
+C6/A828: 26 62        ROL $62
+C6/A82A: FC 05 C2     JSR ($C205,X)
+C6/A82D: 0E 78 D0     ASL $D078
+C6/A830: F8           SED
+C6/A831: 0C 11 12     TSB $1211
+C6/A834: 07 C9        ORA [$C9]
+C6/A836: 18           CLC
+C6/A837: 01 F8        ORA ($F8,X)
+C6/A839: C5 08        CMP $08
+C6/A83B: 33 40        AND ($40,S),Y
+C6/A83D: 11 B7        ORA ($B7),Y
+C6/A83F: B8           CLV
+C6/A840: 10 0D        BPL $A84F
+C6/A842: 09 1A D6     ORA #$D61A
+C6/A845: 60           RTS

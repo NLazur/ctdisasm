@@ -1,0 +1,44 @@
+C2/6F2D: 00 D8        BRK $D8
+C2/6F2F: FC 00 04     JSR ($0400,X)
+C2/6F32: 00 E2        BRK $E2
+C2/6F34: 30 A5        BMI $6EDB
+C2/6F36: 0F 45 07 08  ORA $080745
+C2/6F3A: A5 07        LDA $07
+C2/6F3C: 10 05        BPL $6F43
+C2/6F3E: 49 FF        EOR #$FF
+C2/6F40: 1A           INC
+C2/6F41: 85 07        STA $07
+C2/6F43: C2 20        REP #$20
+C2/6F45: A5 0E        LDA $0E
+C2/6F47: 10 06        BPL $6F4F
+C2/6F49: 49 FF FF     EOR #$FFFF
+C2/6F4C: 1A           INC
+C2/6F4D: 85 0E        STA $0E
+C2/6F4F: A6 07        LDX $07
+C2/6F51: A4 0E        LDY $0E
+C2/6F53: 8E 02 42     STX $4202
+C2/6F56: 8C 03 42     STY $4203
+C2/6F59: A4 0F        LDY $0F
+C2/6F5B: A2 00 86     LDX #$8600
+C2/6F5E: 1B           TCS
+C2/6F5F: AD 16 42     LDA $4216
+C2/6F62: 8C 03 42     STY $4203
+C2/6F65: 85 19        STA $19
+C2/6F67: EA           NOP
+C2/6F68: 18           CLC
+C2/6F69: AD 16 42     LDA $4216
+C2/6F6C: 65 1A        ADC $1A
+C2/6F6E: 85 1A        STA $1A
+C2/6F70: 28           PLP
+C2/6F71: 10 0F        BPL $6F82
+C2/6F73: C2 20        REP #$20
+C2/6F75: 38           SEC
+C2/6F76: 7B           TDC
+C2/6F77: E5 19        SBC $19
+C2/6F79: 85 19        STA $19
+C2/6F7B: E2 20        SEP #$20
+C2/6F7D: 7B           TDC
+C2/6F7E: E5 1B        SBC $1B
+C2/6F80: 85 1B        STA $1B
+C2/6F82: C2 10        REP #$10
+C2/6F84: 60           RTS

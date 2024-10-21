@@ -1,0 +1,2 @@
+CE/E7C8: 20 CC E7     JSR $E7CC
+CE/E7CB: 6B           RTL

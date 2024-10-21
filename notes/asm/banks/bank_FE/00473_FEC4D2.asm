@@ -1,0 +1,29 @@
+FE/C4D2: 07 5B        ORA [$5B]
+FE/C4D4: BB           TYX
+FE/C4D5: 03 09        ORA $09,S
+FE/C4D7: 48           PHA
+FE/C4D8: 0C 07 10     TSB $1007
+FE/C4DB: 08           PHP
+FE/C4DC: 00 CF        BRK $CF
+FE/C4DE: C9 03        CMP #$03
+FE/C4E0: 66 1A        ROR $1A
+FE/C4E2: 07 10        ORA [$10]
+FE/C4E4: 33 16        AND ($16,S),Y
+FE/C4E6: 5D 5B 9D     EOR $9D5B,X
+FE/C4E9: 38           SEC
+FE/C4EA: 07 00        ORA [$00]
+FE/C4EC: FF 6C 28 BA  SBC $BA286C,X
+FE/C4F0: 57 7C        EOR [$7C],Y
+FE/C4F2: 28           PLP
+FE/C4F3: C9 38        CMP #$38
+FE/C4F5: 81 2D        STA ($2D,X)
+FE/C4F7: DB           STP
+FE/C4F8: 2D 1A 03     AND $031A
+FE/C4FB: 54 1A E3     MVN $1A,$E3
+FE/C4FE: 2F 07 8A 0E  AND $0E8A07
+FE/C502: 09 09        ORA #$09
+FE/C504: 5E 08 00     LSR $0008,X
+FE/C507: 5F 37 AD 1E  EOR $1EAD37,X
+FE/C50B: FD 76 03     SBC $0376,X
+FE/C50E: 5A           PHY
+FE/C50F: 40           RTI

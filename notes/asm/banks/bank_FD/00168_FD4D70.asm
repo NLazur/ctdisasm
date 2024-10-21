@@ -1,0 +1,52 @@
+FD/4D70: BF 40 BF 40  LDA $40BF40,X
+FD/4D74: 31 38        AND ($38),Y
+FD/4D76: 76 05        ROR $05,X
+FD/4D78: 20 FF 0E     JSR $0EFF
+FD/4D7B: F3 3D        SBC ($3D,S),Y
+FD/4D7D: E2 E6        SEP #$E6
+FD/4D7F: 06 01        ASL $01
+FD/4D81: 0F 00 01 37  ORA $370100
+FD/4D85: 31 11        AND ($11),Y
+FD/4D87: 11 F3        ORA ($F3),Y
+FD/4D89: F3 7E        SBC ($7E,S),Y
+FD/4D8B: 00 7F        BRK $7F
+FD/4D8D: 3C 1F F8     BIT $F81F,X
+FD/4D90: FF F9 FE F9  SBC $F9FEF9,X
+FD/4D94: 00 FE        BRK $FE
+FD/4D96: C8           INY
+FD/4D97: F7 EE        SBC [$EE],Y
+FD/4D99: F6 0C        INC $0C,X
+FD/4D9B: 03 80        ORA $80,S
+FD/4D9D: 08           PHP
+FD/4D9E: 03 C0        ORA $C0,S
+FD/4DA0: 23 F5        AND $F5,S
+FD/4DA2: 21 07        AND ($07,X)
+FD/4DA4: 09 06        ORA #$06
+FD/4DA6: 0F 03 4B 62  ORA $624B03
+FD/4DAA: A5 15        LDA $15
+FD/4DAC: 71 82        ADC ($82),Y
+FD/4DAE: E7 04        SBC [$04]
+FD/4DB0: E3 04        SBC $04,S
+FD/4DB2: 24 C7        BIT $C7
+FD/4DB4: 08           PHP
+FD/4DB5: 81 0D        STA ($0D,X)
+FD/4DB7: C0 7F        CPY #$7F
+FD/4DB9: DA           PHX
+FD/4DBA: 08           PHP
+FD/4DBB: 80 FC        BRA $4DB9
+FD/4DBD: 7A           PLY
+FD/4DBE: 04 CB        TSB $CB
+FD/4DC0: 32 E0        AND ($E0)
+FD/4DC2: 8C 48 C0     STY $C048
+FD/4DC5: F2 A4        SBC ($A4)
+FD/4DC7: A2 3E 0F     LDX #$0F3E
+FD/4DCA: 10 DF        BPL $4DAB
+FD/4DCC: 44 1F F2     MVP $1F,$F2
+FD/4DCF: 08           PHP
+FD/4DD0: F4 28 42     PEA $4228
+FD/4DD3: 1F 44 1F 20  ORA $201F44,X
+FD/4DD7: E8           INX
+FD/4DD8: 08           PHP
+FD/4DD9: 38           SEC
+FD/4DDA: 07 0F        ORA [$0F]
+FD/4DDC: 40           RTI

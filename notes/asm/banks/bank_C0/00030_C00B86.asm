@@ -1,0 +1,90 @@
+C0/0B86: A6 00        LDX $00         ;
+C0/0B88: 86 0A        STX $0A
+C0/0B8A: A6 02        LDX $02
+C0/0B8C: 86 0C        STX $0C
+C0/0B8E: A5 04        LDA $04
+C0/0B90: 85 0E        STA $0E
+C0/0B92: 64 10        STZ $10
+C0/0B94: 64 11        STZ $11
+C0/0B96: 64 17        STZ $17
+C0/0B98: 64 18        STZ $18
+C0/0B9A: 64 38        STZ $38
+C0/0B9C: 64 0F        STZ $0F
+C0/0B9E: A9 E0        LDA #$E0
+C0/0BA0: 85 21        STA $21
+C0/0BA2: 64 19        STZ $19
+C0/0BA4: 64 BC        STZ $BC
+C0/0BA6: A9 02        LDA #$02
+C0/0BA8: 8D DE 0B     STA $0BDE
+C0/0BAB: A2 00 09     LDX #$0900
+C0/0BAE: 86 7D        STX $7D
+C0/0BB0: A2 70 07     LDX #$0770
+C0/0BB3: 86 7F        STX $7F
+C0/0BB5: A2 A0 08     LDX #$08A0
+C0/0BB8: 86 7B        STX $7B
+C0/0BBA: A9 E4        LDA #$E4
+C0/0BBC: 85 B1        STA $B1
+C0/0BBE: 85 B4        STA $B4
+C0/0BC0: 85 B7        STA $B7
+C0/0BC2: 85 BA        STA $BA
+C0/0BC4: A9 01        LDA #$01
+C0/0BC6: 85 1F        STA $1F
+C0/0BC8: 85 20        STA $20
+C0/0BCA: A9 05        LDA #$05
+C0/0BCC: 85 68        STA $68
+C0/0BCE: A9 5F        LDA #$5F
+C0/0BD0: 85 28        STA $28
+C0/0BD2: 64 53        STZ $53
+C0/0BD4: 64 26        STZ $26
+C0/0BD6: 64 29        STZ $29
+C0/0BD8: 64 2F        STZ $2F
+C0/0BDA: 64 2D        STZ $2D
+C0/0BDC: 64 30        STZ $30
+C0/0BDE: 64 44        STZ $44
+C0/0BE0: 64 45        STZ $45
+C0/0BE2: 64 46        STZ $46
+C0/0BE4: 64 5F        STZ $5F
+C0/0BE6: 64 78        STZ $78
+C0/0BE8: 64 BB        STZ $BB
+C0/0BEA: 64 62        STZ $62
+C0/0BEC: A9 80        LDA #$80
+C0/0BEE: 85 63        STA $63
+C0/0BF0: 64 39        STZ $39
+C0/0BF2: 64 54        STZ $54
+C0/0BF4: C2 20        REP #$20
+C0/0BF6: 64 2B        STZ $2B
+C0/0BF8: AF E0 FF E4  LDA $E4FFE0     ; pointers to character graphic data pointers
+C0/0BFC: 85 AF        STA $AF
+C0/0BFE: AF E2 FF E4  LDA $E4FFE2
+C0/0C02: 85 B2        STA $B2
+C0/0C04: AF E4 FF E4  LDA $E4FFE4
+C0/0C08: 85 B5        STA $B5
+C0/0C0A: AF E6 FF E4  LDA $E4FFE6
+C0/0C0E: 85 B8        STA $B8
+C0/0C10: 9C 50 01     STZ $0150
+C0/0C13: A9 00 00     LDA #$0000
+C0/0C16: 8F 00 20 7E  STA $7E2000
+C0/0C1A: 64 58        STZ $58
+C0/0C1C: E2 20        SEP #$20
+C0/0C1E: A9 80        LDA #$80
+C0/0C20: 85 97        STA $97
+C0/0C22: 85 99        STA $99
+C0/0C24: 85 9B        STA $9B
+C0/0C26: 85 8D        STA $8D
+C0/0C28: 85 8E        STA $8E
+C0/0C2A: 85 8F        STA $8F
+C0/0C2C: 85 91        STA $91
+C0/0C2E: 85 90        STA $90
+C0/0C30: 85 92        STA $92
+C0/0C32: 85 93        STA $93
+C0/0C34: AF 80 29 7E  LDA $7E2980
+C0/0C38: 85 94        STA $94
+C0/0C3A: AF 81 29 7E  LDA $7E2981
+C0/0C3E: 85 95        STA $95
+C0/0C40: AF 82 29 7E  LDA $7E2982
+C0/0C44: 85 96        STA $96
+C0/0C46: A9 80        LDA #$80
+C0/0C48: 85 EB        STA $EB
+C0/0C4A: 85 AE        STA $AE
+C0/0C4C: A9 01        LDA #$01
+C0/0C4E: 85 55        STA $55

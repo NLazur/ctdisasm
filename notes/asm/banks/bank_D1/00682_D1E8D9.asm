@@ -1,0 +1,32 @@
+D1/E8D9: 8B           PHB
+D1/E8DA: 48           PHA
+D1/E8DB: A9 00        LDA #$00
+D1/E8DD: 48           PHA
+D1/E8DE: AB           PLB
+D1/E8DF: 68           PLA
+D1/E8E0: 8E 72 43     STX $4372
+D1/E8E3: 8D 74 43     STA $4374
+D1/E8E6: A9 01        LDA #$01
+D1/E8E8: 8D 70 43     STA $4370
+D1/E8EB: A9 18        LDA #$18
+D1/E8ED: 8D 71 43     STA $4371
+D1/E8F0: 9C 76 43     STZ $4376
+D1/E8F3: C2 20        REP #$20
+D1/E8F5: E2 10        SEP #$10
+D1/E8F7: A0 20        LDY #$20
+D1/E8F9: A2 80        LDX #$80
+D1/E8FB: A9 10 00     LDA #$0010
+D1/E8FE: 85 47        STA $47
+D1/E900: A5 45        LDA $45
+D1/E902: 8D 16 21     STA $2116
+D1/E905: 8C 75 43     STY $4375
+D1/E908: 8E 0B 42     STX $420B
+D1/E90B: 18           CLC
+D1/E90C: 69 20 00     ADC #$0020
+D1/E90F: C6 47        DEC $47
+D1/E911: D0 EF        BNE $E902
+D1/E913: 7B           TDC
+D1/E914: E2 20        SEP #$20
+D1/E916: C2 10        REP #$10
+D1/E918: AB           PLB
+D1/E919: 6B           RTL

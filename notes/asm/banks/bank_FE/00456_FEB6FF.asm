@@ -1,0 +1,386 @@
+FE/B6FF: 1F F8 5B 08  ORA $085BF8,X
+FE/B703: 6C 18 4C     JMP ($4C18)
+FE/B706: 28           PLP
+FE/B707: 4C 38 3C     JMP $3C38
+FE/B70A: 2F 2F 49 81  AND $81492F
+FE/B70E: 01 30        ORA ($30,X)
+FE/B710: 47 09        EOR [$09]
+FE/B712: 49 42        EOR #$42
+FE/B714: 47 49        EOR [$49]
+FE/B716: 02 00        COP $00
+FE/B718: 04 3C        TSB $3C
+FE/B71A: 3C 0D 00     BIT $000D,X
+FE/B71D: 47 47        EOR [$47]
+FE/B71F: 49 07        EOR #$07
+FE/B721: 07 A6        ORA [$A6]
+FE/B723: 3C 07 00     BIT $0007,X
+FE/B726: 08           PHP
+FE/B727: 10 47        BPL $B770
+FE/B729: 07 19        ORA [$19]
+FE/B72B: 00 47        BRK $47
+FE/B72D: DA           PHX
+FE/B72E: 25 88        AND $88
+FE/B730: 47 42        EOR [$42]
+FE/B732: 49 A6        EOR #$A6
+FE/B734: 2D 42 3C     AND $3C42
+FE/B737: 49 54        EOR #$54
+FE/B739: 39 3C 07     AND $073C,Y
+FE/B73C: 09 A4        ORA #$A4
+FE/B73E: 03 68        ORA $68,S
+FE/B740: 13 6D        ORA ($6D,S),Y
+FE/B742: 13 F8        ORA ($F8,S),Y
+FE/B744: 13 28        ORA ($28,S),Y
+FE/B746: 2A           ROL
+FE/B747: B2 28        LDA ($28)
+FE/B749: 9E 03 2B     STZ $2B03,X
+FE/B74C: 2A           ROL
+FE/B74D: 76 13        ROR $13,X
+FE/B74F: F7 13        SBC [$13],Y
+FE/B751: 2B           PLD
+FE/B752: 6D 03 6F     ADC $6F03
+FE/B755: 87 13        STA [$13]
+FE/B757: 37 03        AND [$03],Y
+FE/B759: 03 04        ORA $04,S
+FE/B75B: 29 24        AND #$24
+FE/B75D: 2A           ROL
+FE/B75E: FD 13 24     SBC $2413,X
+FE/B761: 14 2B        TRB $2B
+FE/B763: D1 17        CMP ($17),Y
+FE/B765: 14 26        TRB $26
+FE/B767: 26 27        ROL $27
+FE/B769: 07 04        ORA [$04]
+FE/B76B: 2B           PLD
+FE/B76C: F2 03        SBC ($03)
+FE/B76E: B6 03        LDX $03,Y
+FE/B770: 11 42        ORA ($42),Y
+FE/B772: 04 25        TSB $25
+FE/B774: 27 27        AND [$27]
+FE/B776: BC 13 28     LDY $2813,X
+FE/B779: 26 24        ROL $24
+FE/B77B: 99 E0 13     STA $13E0,Y
+FE/B77E: 2B           PLD
+FE/B77F: 29 01        AND #$01
+FE/B781: 04 57        TSB $57
+FE/B783: 14 2B        TRB $2B
+FE/B785: 26 4C        ROL $4C
+FE/B787: 04 DF        TSB $DF
+FE/B789: 56 24        LSR $24,X
+FE/B78B: 6D 10 5C     ADC $5C10
+FE/B78E: 14 3F        TRB $3F
+FE/B790: 04 C6        TSB $C6
+FE/B792: 03 2B        ORA $2B,S
+FE/B794: C0 40        CPY #$40
+FE/B796: C2 00        REP #$00
+FE/B798: 11 B7        ORA ($B7),Y
+FE/B79A: 00 42        BRK $42
+FE/B79C: 49 09        EOR #$09
+FE/B79E: 06 10        ASL $10
+FE/B7A0: 47 49        EOR [$49]
+FE/B7A2: 3C 2D B4     BIT $B42D,X
+FE/B7A5: 20 42 B6     JSR $B642
+FE/B7A8: 00 CB        BRK $CB
+FE/B7AA: 00 47        BRK $47
+FE/B7AC: BA           TSX
+FE/B7AD: 08           PHP
+FE/B7AE: 07 49        ORA [$49]
+FE/B7B0: 47 14        EOR [$14]
+FE/B7B2: 00 B5        BRK $B5
+FE/B7B4: 19 07 40     ORA $4007,Y
+FE/B7B7: 08           PHP
+FE/B7B8: 3C 07 DF     BIT $DF07,X
+FE/B7BB: 24 08        BIT $08
+FE/B7BD: D9 7D 20     CMP $207D,Y
+FE/B7C0: 27 26        AND [$26]
+FE/B7C2: 65 04        ADC $04
+FE/B7C4: 99 14 28     STA $2814,Y
+FE/B7C7: 76 00        ROR $00,X
+FE/B7C9: B3 04        LDA ($04,S),Y
+FE/B7CB: C8           INY
+FE/B7CC: 27 27        AND [$27]
+FE/B7CE: 25 E0        AND $E0
+FE/B7D0: 33 24        AND ($24,S),Y
+FE/B7D2: 26 CB        ROL $CB
+FE/B7D4: 00 C2        BRK $C2
+FE/B7D6: 04 76        TSB $76
+FE/B7D8: 24 F6        BIT $F6
+FE/B7DA: 23 CF        AND $CF,S
+FE/B7DC: 04 26        TSB $26
+FE/B7DE: D9 20 43     CMP $4320,Y
+FE/B7E1: 44 CD 04     MVP $CD,$04
+FE/B7E4: 2B           PLD
+FE/B7E5: 11 91        ORA ($91),Y
+FE/B7E7: 2A           ROL
+FE/B7E8: 61 64        ADC ($64,X)
+FE/B7EA: 65 F5        ADC $F5
+FE/B7EC: 13 64        ORA ($64,S),Y
+FE/B7EE: 61 62        ADC ($62,X)
+FE/B7F0: 41 08        EOR ($08,X)
+FE/B7F2: 10 62        BPL $B856
+FE/B7F4: 62 61 11     PER $FEC958
+FE/B7F7: 61 70        ADC ($70,X)
+FE/B7F9: 0E 62 10     ASL $1062
+FE/B7FC: 64 62        STZ $62
+FE/B7FE: 17 62        ORA [$62],Y
+FE/B800: D9 1A 64     CMP $641A,Y
+FE/B803: 65 64        ADC $64
+FE/B805: BE 63 A1     LDX $A163,Y
+FE/B808: 2A           ROL
+FE/B809: 09 00        ORA #$00
+FE/B80B: C0 3A        CPY #$3A
+FE/B80D: 30 20        BMI $B82F
+FE/B80F: BA           TSX
+FE/B810: 1A           INC
+FE/B811: 64 D8        STZ $D8
+FE/B813: 0F F4 24 25  ORA $2524F4
+FE/B817: 00 1C        BRK $1C
+FE/B819: 26 06        ROL $06
+FE/B81B: 00 25        BRK $25
+FE/B81D: 0F E8 07 0A  ORA $0A07E8
+FE/B821: 24 D6        BIT $D6
+FE/B823: 24 10        BIT $10
+FE/B825: 00 CA        BRK $CA
+FE/B827: 39 27 09     AND $0927,Y
+FE/B82A: 20 26 20     JSR $2026
+FE/B82D: 05 13        ORA $13
+FE/B82F: 10 17        BPL $B848
+FE/B831: 2E 05 A6     ROL $A605
+FE/B834: 02 F5        COP $F5
+FE/B836: 04 24        TSB $24
+FE/B838: 39 15 27     AND $2715,Y
+FE/B83B: 25 0D        AND $0D
+FE/B83D: EF 2E 1E FE  SBC $FE1E2E
+FE/B841: 0B           PHD
+FE/B842: 1C 1C 2A     TRB $2A1C
+FE/B845: 0F 01 2D 14  ORA $142D01
+FE/B849: 4F 1A 34 18  EOR $18341A
+FE/B84D: FF C3 16 45  SBC $4516C3,X
+FE/B851: 24 61        BIT $61
+FE/B853: 0E 3C 08     ASL $083C
+FE/B856: F4 23 45     PEA $4523
+FE/B859: 2C 10 10     BIT $1010
+FE/B85C: 3D 04 E3     AND $E304,X
+FE/B85F: 79 1A C8     ADC $C81A,Y
+FE/B862: 23 0B        AND $0B,S
+FE/B864: 01 08        ORA ($08,X)
+FE/B866: 30 18        BMI $B880
+FE/B868: DA           PHX
+FE/B869: 03 E8        ORA $E8,S
+FE/B86B: 2F 7D 36 0C  AND $0C367D
+FE/B86F: 0A           ASL
+FE/B870: 45 24        EOR $24
+FE/B872: 08           PHP
+FE/B873: 00 07        BRK $07
+FE/B875: 30 6D        BMI $B8E4
+FE/B877: 2E 96 06     ROL $0696
+FE/B87A: 05 A6        ORA $A6
+FE/B87C: 06 33        ASL $33
+FE/B87E: 04 92        TSB $92
+FE/B880: 06 05        ASL $05
+FE/B882: 06 48        ASL $48
+FE/B884: 34 02        BIT $02,X
+FE/B886: 27 1C        AND [$1C]
+FE/B888: 6F 7D 47 32  ADC $32477D
+FE/B88C: 3A           DEC
+FE/B88D: 97 5B        STA [$5B],Y
+FE/B88F: FD 1E 0A     SBC $0A1E,X
+FE/B892: 75 0F        ADC $0F,X
+FE/B894: 1E 1F 0B     ASL $0B1F,X
+FE/B897: C0 0A        CPY #$0A
+FE/B899: 0A           ASL
+FE/B89A: 09 05        ORA #$05
+FE/B89C: 0B           PHD
+FE/B89D: 0A           ASL
+FE/B89E: D6 26        DEC $26,X
+FE/B8A0: B7 26        LDA [$26],Y
+FE/B8A2: 88           DEY
+FE/B8A3: 05 06        ORA $06
+FE/B8A5: 0B           PHD
+FE/B8A6: C4 16        CPY $16
+FE/B8A8: 04 06        TSB $06
+FE/B8AA: 0B           PHD
+FE/B8AB: 43 14        EOR $14,S
+FE/B8AD: 3F BE 57 02  AND $0257BE,X
+FE/B8B1: 34 AA        BIT $AA,X
+FE/B8B3: 37 22        AND [$22],Y
+FE/B8B5: 3C E4 4F     BIT $4FE4,X
+FE/B8B8: 9C 0B 0A     STZ $0A0B
+FE/B8BB: 09 FF        ORA #$FF
+FE/B8BD: 5A           PHY
+FE/B8BE: 0B           PHD
+FE/B8BF: 37 1C        AND [$1C],Y
+FE/B8C1: 54 00 B0     MVN $00,$B0
+FE/B8C4: 2C 20 07     BIT $0720
+FE/B8C7: 84 17        STY $17
+FE/B8C9: A1 28        LDA ($28,X)
+FE/B8CB: FA           PLX
+FE/B8CC: 97 7F        STA [$7F],Y
+FE/B8CE: 31 38        AND ($38),Y
+FE/B8D0: 3B           TSC
+FE/B8D1: 70 DA        BVS $B8AD
+FE/B8D3: 3B           TSC
+FE/B8D4: 31 48        AND ($48),Y
+FE/B8D6: 0C 48 30     TSB $3048
+FE/B8D9: 48           PHA
+FE/B8DA: 54 00 09     MVN $00,$09
+FE/B8DD: FE 04 B2     INC $B204,X
+FE/B8E0: 0C 3A 50     TSB $503A
+FE/B8E3: 8E 0A C0     STX $C00A
+FE/B8E6: 2B           PLD
+FE/B8E7: C8           INY
+FE/B8E8: 2B           PLD
+FE/B8E9: 58           CLI
+FE/B8EA: 0C 83 07     TSB $0783
+FE/B8ED: FE 0B 88     INC $880B,X
+FE/B8F0: 17 C7        ORA [$C7],Y
+FE/B8F2: 1F A1 07 C6  ORA $C607A1,X
+FE/B8F6: 00 95        BRK $95
+FE/B8F8: 2F 89 27 84  AND $842789
+FE/B8FC: 0F 81 17 11  ORA $111781
+FE/B900: 06 05        ASL $05
+FE/B902: 0B           PHD
+FE/B903: 0B           PHD
+FE/B904: 0C 0C BB     TSB $BB0C
+FE/B907: 1B           TCS
+FE/B908: 7E 0A B0     ROR $B00A,X
+FE/B90B: 1B           TCS
+FE/B90C: 9B           TXY
+FE/B90D: 0F 08 10 11  ORA $111008
+FE/B911: 00 33        BRK $33
+FE/B913: 11 09        ORA ($09),Y
+FE/B915: 00 06        BRK $06
+FE/B917: FA           PLX
+FE/B918: 03 C1        ORA $C1,S
+FE/B91A: 37 03        AND [$03],Y
+FE/B91C: D0 03        BNE $B921
+FE/B91E: CB           WAI
+FE/B91F: 03 B1        ORA $B1,S
+FE/B921: 0F CD 17 99  ORA $9917CD
+FE/B925: 25 B3        AND $B3
+FE/B927: 05 30        ORA $30
+FE/B929: 95 31        STA $31,X
+FE/B92B: 03 02        ORA $02,S
+FE/B92D: E3 15        SBC $15,S
+FE/B92F: BB           TYX
+FE/B930: 17 0E        ORA [$0E],Y
+FE/B932: B9 05 E9     LDA $E905,Y
+FE/B935: E6 0F        INC $0F
+FE/B937: 0D 2F D2     ORA $D22F
+FE/B93A: 35 0E        AND $0E,X
+FE/B93C: 78           SEI
+FE/B93D: 04 E1        TSB $E1
+FE/B93F: 1D 78 04     ORA $0478,X
+FE/B942: FD C1 25     SBC $25C1,X
+FE/B945: 0E E8 07     ASL $07E8
+FE/B948: 27 20        AND [$20]
+FE/B94A: 10 00        BPL $B94C
+FE/B94C: C2 0F        REP #$0F
+FE/B94E: D3 0F        CMP ($0F,S),Y
+FE/B950: D6 0B        DEC $0B,X
+FE/B952: BA           TSX
+FE/B953: 25 3A        AND $3A
+FE/B955: 0E 26 DE     ASL $DE26
+FE/B958: 0F CF 0B 35  ORA $350BCF
+FE/B95C: 32 27        AND ($27)
+FE/B95E: E8           INX
+FE/B95F: 07 DB        ORA [$DB]
+FE/B961: 3D 42 4E     AND $4E42,X
+FE/B964: 2E 24 F0     ROL $F024
+FE/B967: 07 0B        ORA [$0B]
+FE/B969: 08           PHP
+FE/B96A: 26 E0        ROL $E0
+FE/B96C: 06 04        ASL $04
+FE/B96E: 00 EF        BRK $EF
+FE/B970: AA           TAX
+FE/B971: 05 F2        ORA $F2
+FE/B973: 06 3C        ASL $3C
+FE/B975: 12 43        ORA ($43)
+FE/B977: 02 26        COP $26
+FE/B979: 79 3D 81     ADC $813D,Y
+FE/B97C: 7D 51 09     ADC $0951,X
+FE/B97F: 06 5E        ASL $5E
+FE/B981: 01 10        ORA ($10,X)
+FE/B983: 56 0D        LSR $0D,X
+FE/B985: 56 57        LSR $57,X
+FE/B987: 55 55        EOR $55,X
+FE/B989: 55 90        EOR $90,X
+FE/B98B: 09 08        ORA #$08
+FE/B98D: 57 57        EOR [$57],Y
+FE/B98F: 08           PHP
+FE/B990: 20 57 58     JSR $5857
+FE/B993: 0E 00 2C     ASL $2C00
+FE/B996: 5E 5E 31     LSR $315E,X
+FE/B999: 05 20        ORA $20
+FE/B99B: 10 5F        BPL $B9FC
+FE/B99D: 39 05 5F     AND $5F05,Y
+FE/B9A0: 5F 88 5F 54  EOR $545F88,X
+FE/B9A4: 54 86 59     MVN $86,$59
+FE/B9A7: 09 09        ORA #$09
+FE/B9A9: 5E 8B 2D     LSR $2D8B,X
+FE/B9AC: 10 5E        BPL $BA0C
+FE/B9AE: 5E 55 5F     LSR $5F55,X
+FE/B9B1: 8D 1D 5E     STA $5E1D
+FE/B9B4: 55 55        EOR $55,X
+FE/B9B6: 4A           LSR
+FE/B9B7: 5F 09 00 08  EOR $080009,X
+FE/B9BB: 43 00        EOR $00,S
+FE/B9BD: 5F 5F A6 09  EOR $09A65F,X
+FE/B9C1: 5F 01 0F 00  EOR $000F01,X
+FE/B9C5: 5F 57 08 08  EOR $080857,X
+FE/B9C9: 5F 5E 5F 20  EOR $205F5E,X
+FE/B9CD: 5F 19 57 07  EOR $075719,X
+FE/B9D1: 07 3F        ORA [$3F]
+FE/B9D3: 10 17        BPL $B9EC
+FE/B9D5: 58           CLI
+FE/B9D6: F4 07 07     PEA $0707
+FE/B9D9: C8           INY
+FE/B9DA: 37 2B        AND [$2B],Y
+FE/B9DC: D8           CLD
+FE/B9DD: 67 E8        ADC [$E8]
+FE/B9DF: 57 F8        EOR [$F8],Y
+FE/B9E1: 77 08        ADC [$08],Y
+FE/B9E3: 38           SEC
+FE/B9E4: FF 18 58 28  SBC $285818,X
+FE/B9E8: 58           CLI
+FE/B9E9: 38           SEC
+FE/B9EA: 48           PHA
+FE/B9EB: C8           INY
+FE/B9EC: 67 D8        ADC [$D8]
+FE/B9EE: 67 E8        ADC [$E8]
+FE/B9F0: 57 F8        EOR [$F8],Y
+FE/B9F2: 57 08        EOR [$08],Y
+FE/B9F4: 48           PHA
+FE/B9F5: FF 18 58 28  SBC $285818,X
+FE/B9F9: 58           CLI
+FE/B9FA: 38           SEC
+FE/B9FB: 58           CLI
+FE/B9FC: C8           INY
+FE/B9FD: 57 D8        EOR [$D8],Y
+FE/B9FF: 67 E8        ADC [$E8]
+FE/BA01: 57 F8        EOR [$F8],Y
+FE/BA03: 47 08        EOR [$08]
+FE/BA05: 58           CLI
+FE/BA06: FF 18 58 28  SBC $285818,X
+FE/BA0A: 58           CLI
+FE/BA0B: 38           SEC
+FE/BA0C: 28           PLP
+FE/BA0D: 7D 08 80     ADC $8008,X
+FE/BA10: FE 80 FE     INC $FE80,X
+FE/BA13: 80 8E        BRA $B9A3
+FE/BA15: 00 28        BRK $28
+FE/BA17: 30 61        BMI $BA7A
+FE/BA19: 62 62 4D     PER $FE077E
+FE/BA1C: 18           CLC
+FE/BA1D: 06 36        ASL $36
+FE/BA1F: 04 4C        TSB $4C
+FE/BA21: 33 F4        AND ($F4,S),Y
+FE/BA23: 59 5A 01     EOR $015A,Y
+FE/BA26: 10 59        BPL $BA81
+FE/BA28: C1 6A        CMP ($6A,X)
+FE/BA2A: C8           INY
+FE/BA2B: 72 82        ADC ($82)
+FE/BA2D: 3D 96 51     AND $5196,X
+FE/BA30: 8F 0C 5B 02  STA $025B0C
+FE/BA34: 3F C2 7A 18  AND $187AC2,X
+FE/BA38: 28           PLP
+FE/BA39: 0D 0D 0E     ORA $0E0D
+FE/BA3C: 40           RTI

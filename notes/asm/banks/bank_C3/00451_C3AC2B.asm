@@ -1,0 +1,22 @@
+C3/AC2B: 25 51        AND $51
+C3/AC2D: 0C 00 07     TSB $0700
+C3/AC30: 5F 83 06 3D  EOR $3D0683,X
+C3/AC34: 51 6B        EOR ($6B),Y
+C3/AC36: 03 05        ORA $05,S
+C3/AC38: 01 36        ORA ($36,X)
+C3/AC3A: 06 FE        ASL $FE
+C3/AC3C: 52 00        EOR ($00)
+C3/AC3E: CA           DEX
+C3/AC3F: 0D 00 00     ORA $0000
+C3/AC42: 13 45        ORA ($45,S),Y
+C3/AC44: 00 02        BRK $02
+C3/AC46: 13 46        ORA ($46,S),Y
+C3/AC48: 00 00        BRK $00
+C3/AC4A: 44 09 A2     MVP $09,$A2
+C3/AC4D: 05 7F        ORA $7F
+C3/AC4F: 09 D5        ORA #$D5
+C3/AC51: 05 00        ORA $00
+C3/AC53: 7F 36 45 05  ADC $054536,X
+C3/AC57: 26 A8        ROL $A8
+C3/AC59: 1B           TCS
+C3/AC5A: 40           RTI

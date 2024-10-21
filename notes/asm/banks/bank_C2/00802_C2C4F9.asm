@@ -1,0 +1,37 @@
+C2/C4F9: 00 03        BRK $03
+C2/C4FB: 02 07        COP $07
+C2/C4FD: 08           PHP
+C2/C4FE: 0B           PHD
+C2/C4FF: 06 04        ASL $04
+C2/C501: 01 09        ORA ($09,X)
+C2/C503: 05 0A        ORA $0A
+C2/C505: 28           PLP
+C2/C506: 18           CLC
+C2/C507: 0C 1C 0C     TSB $0C1C
+C2/C50A: 1E 0E 1F     ASL $1F0E,X
+C2/C50D: 16 1A        ASL $1A,X
+C2/C50F: 20 2A 08     JSR $082A
+C2/C512: C2 30        REP #$30
+C2/C514: A9 C0 3D     LDA #$3DC0
+C2/C517: 8D 90 98     STA $9890
+C2/C51A: AD 8B 0D     LDA $0D8B
+C2/C51D: 29 00 07     AND #$0700
+C2/C520: 4A           LSR
+C2/C521: 48           PHA
+C2/C522: 0A           ASL
+C2/C523: 0A           ASL
+C2/C524: 63 01        ADC $01,S
+C2/C526: 69 10 9E     ADC #$9E10
+C2/C529: AA           TAX
+C2/C52A: 68           PLA
+C2/C52B: A0 00 88     LDY #$8800
+C2/C52E: A9 80 02     LDA #$0280
+C2/C531: 54 7E FF     MVN $7E,$FF
+C2/C534: A2 00 88     LDX #$8800
+C2/C537: A0 14 00     LDY #$0014
+C2/C53A: 20 2E 96     JSR $962E
+C2/C53D: A2 48 C5     LDX #$C548
+C2/C540: 20 85 83     JSR $8385
+C2/C543: 20 08 ED     JSR $ED08
+C2/C546: 28           PLP
+C2/C547: 60           RTS

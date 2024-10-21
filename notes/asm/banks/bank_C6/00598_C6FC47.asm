@@ -1,0 +1,453 @@
+C6/FC47: 01 A0        ORA ($A0,X)
+C6/FC49: F0 E2        BEQ $FC2D
+C6/FC4B: 90 20        BCC $FC6D
+C6/FC4D: F0 00        BEQ $FC4F
+C6/FC4F: B1 00        LDA ($00),Y
+C6/FC51: 00 00        BRK $00
+C6/FC53: 00 00        BRK $00
+C6/FC55: 00 00        BRK $00
+C6/FC57: 00 00        BRK $00
+C6/FC59: 00 00        BRK $00
+C6/FC5B: 00 00        BRK $00
+C6/FC5D: 00 00        BRK $00
+C6/FC5F: 00 00        BRK $00
+C6/FC61: 00 00        BRK $00
+C6/FC63: 00 00        BRK $00
+C6/FC65: 00 00        BRK $00
+C6/FC67: 00 00        BRK $00
+C6/FC69: 00 00        BRK $00
+C6/FC6B: 00 00        BRK $00
+C6/FC6D: 00 00        BRK $00
+C6/FC6F: 00 00        BRK $00
+C6/FC71: 00 00        BRK $00
+C6/FC73: 00 00        BRK $00
+C6/FC75: 00 00        BRK $00
+C6/FC77: 00 00        BRK $00
+C6/FC79: 00 00        BRK $00
+C6/FC7B: 00 00        BRK $00
+C6/FC7D: 00 00        BRK $00
+C6/FC7F: 00 00        BRK $00
+C6/FC81: 00 00        BRK $00
+C6/FC83: 00 00        BRK $00
+C6/FC85: 00 00        BRK $00
+C6/FC87: 00 00        BRK $00
+C6/FC89: 00 00        BRK $00
+C6/FC8B: 00 00        BRK $00
+C6/FC8D: 00 00        BRK $00
+C6/FC8F: 00 00        BRK $00
+C6/FC91: 00 00        BRK $00
+C6/FC93: 00 00        BRK $00
+C6/FC95: 00 00        BRK $00
+C6/FC97: 00 00        BRK $00
+C6/FC99: 00 00        BRK $00
+C6/FC9B: 00 00        BRK $00
+C6/FC9D: 00 00        BRK $00
+C6/FC9F: 00 00        BRK $00
+C6/FCA1: 00 00        BRK $00
+C6/FCA3: 00 00        BRK $00
+C6/FCA5: 00 00        BRK $00
+C6/FCA7: 00 00        BRK $00
+C6/FCA9: 00 00        BRK $00
+C6/FCAB: 00 00        BRK $00
+C6/FCAD: 00 00        BRK $00
+C6/FCAF: 00 00        BRK $00
+C6/FCB1: 00 00        BRK $00
+C6/FCB3: 00 00        BRK $00
+C6/FCB5: 00 00        BRK $00
+C6/FCB7: 00 00        BRK $00
+C6/FCB9: 00 00        BRK $00
+C6/FCBB: 00 00        BRK $00
+C6/FCBD: 00 00        BRK $00
+C6/FCBF: 00 00        BRK $00
+C6/FCC1: 00 00        BRK $00
+C6/FCC3: 00 00        BRK $00
+C6/FCC5: 00 00        BRK $00
+C6/FCC7: 00 00        BRK $00
+C6/FCC9: 00 00        BRK $00
+C6/FCCB: 00 00        BRK $00
+C6/FCCD: 00 00        BRK $00
+C6/FCCF: 00 00        BRK $00
+C6/FCD1: 00 00        BRK $00
+C6/FCD3: 00 00        BRK $00
+C6/FCD5: 00 00        BRK $00
+C6/FCD7: 00 00        BRK $00
+C6/FCD9: 00 00        BRK $00
+C6/FCDB: 00 00        BRK $00
+C6/FCDD: 00 00        BRK $00
+C6/FCDF: 00 00        BRK $00
+C6/FCE1: 00 00        BRK $00
+C6/FCE3: 00 00        BRK $00
+C6/FCE5: 00 00        BRK $00
+C6/FCE7: 00 00        BRK $00
+C6/FCE9: 00 00        BRK $00
+C6/FCEB: 00 00        BRK $00
+C6/FCED: 00 00        BRK $00
+C6/FCEF: 00 00        BRK $00
+C6/FCF1: 00 00        BRK $00
+C6/FCF3: 00 00        BRK $00
+C6/FCF5: 00 00        BRK $00
+C6/FCF7: 00 00        BRK $00
+C6/FCF9: 00 00        BRK $00
+C6/FCFB: 00 00        BRK $00
+C6/FCFD: 00 00        BRK $00
+C6/FCFF: 00 10        BRK $10
+C6/FD01: FD 27 FD     SBC $FD27,X
+C6/FD04: 3E FD 55     ROL $55FD,X
+C6/FD07: FD 6C FD     SBC $FD6C,X
+C6/FD0A: 83 FD        STA $FD,S
+C6/FD0C: 9A           TXS
+C6/FD0D: FD B1 FD     SBC $FDB1,X
+C6/FD10: 00 01        BRK $01
+C6/FD12: 02 03        COP $03
+C6/FD14: 04 05        TSB $05
+C6/FD16: 06 80        ASL $80
+C6/FD18: 14 80        TRB $80
+C6/FD1A: 04 0B        TSB $0B
+C6/FD1C: 04 05        TSB $05
+C6/FD1E: 06 07        ASL $07
+C6/FD20: 00 00        BRK $00
+C6/FD22: 00 00        BRK $00
+C6/FD24: 00 00        BRK $00
+C6/FD26: 00 00        BRK $00
+C6/FD28: 01 02        ORA ($02,X)
+C6/FD2A: 03 04        ORA $04,S
+C6/FD2C: 05 06        ORA $06
+C6/FD2E: 80 14        BRA $FD44
+C6/FD30: 80 05        BRA $FD37
+C6/FD32: 0C 08 09     TSB $0908
+C6/FD35: 06 07        ASL $07
+C6/FD37: 00 01        BRK $01
+C6/FD39: 01 01        ORA ($01,X)
+C6/FD3B: 01 01        ORA ($01,X)
+C6/FD3D: 01 00        ORA ($00,X)
+C6/FD3F: 01 0B        ORA ($0B,X)
+C6/FD41: 0C 0D 0E     TSB $0E0D
+C6/FD44: 80 80        BRA $FCC6
+C6/FD46: 23 80        AND $80,S
+C6/FD48: 07 0E        ORA [$0E]
+C6/FD4A: 80 80        BRA $FCCC
+C6/FD4C: 06 07        ASL $07
+C6/FD4E: 02 03        COP $03
+C6/FD50: 02 02        COP $02
+C6/FD52: 03 02        ORA $02,S
+C6/FD54: 02 1B        COP $1B
+C6/FD56: 1C 1D 1E     TRB $1E1D
+C6/FD59: 1F 20 21 80  ORA $802120,X
+C6/FD5D: 14 80        TRB $80
+C6/FD5F: 08           PHP
+C6/FD60: 0F 0A 80 06  ORA $06800A
+C6/FD64: 07 03        ORA [$03]
+C6/FD66: 04 03        TSB $03
+C6/FD68: 02 00        COP $00
+C6/FD6A: 03 03        ORA $03,S
+C6/FD6C: 00 01        BRK $01
+C6/FD6E: 02 03        COP $03
+C6/FD70: 0F 10 11 80  ORA $801110
+C6/FD74: 15 80        ORA $80,X
+C6/FD76: 09 10 0B     ORA #$0B10
+C6/FD79: 0C 06 07     TSB $0706
+C6/FD7C: 04 05        TSB $05
+C6/FD7E: 04 02        TSB $02
+C6/FD80: 04 04        TSB $04
+C6/FD82: 04 12        TSB $12
+C6/FD84: 13 16        ORA ($16,S),Y
+C6/FD86: 17 18        ORA [$18],Y
+C6/FD88: 19 1A 80     ORA $801A,Y
+C6/FD8B: 80 80        BRA $FD0D
+C6/FD8D: 0A           ASL
+C6/FD8E: 11 0B        ORA ($0B),Y
+C6/FD90: 0C 06 07     TSB $0706
+C6/FD93: 05 07        ORA $07
+C6/FD95: 06 02        ASL $02
+C6/FD97: 00 05        BRK $05
+C6/FD99: 05 00        ORA $00
+C6/FD9B: 01 02        ORA ($02,X)
+C6/FD9D: 03 0F        ORA $0F,S
+C6/FD9F: 10 11        BPL $FDB2
+C6/FDA1: 80 14        BRA $FDB7
+C6/FDA3: 80 09        BRA $FDAE
+C6/FDA5: 10 0B        BPL $FDB2
+C6/FDA7: 0C 06 07     TSB $0706
+C6/FDAA: 04 06        TSB $06
+C6/FDAC: 05 02        ORA $02
+C6/FDAE: 00 06        BRK $06
+C6/FDB0: 06 00        ASL $00
+C6/FDB2: 01 07        ORA ($07,X)
+C6/FDB4: 08           PHP
+C6/FDB5: 09 0A 06     ORA #$060A
+C6/FDB8: 80 22        BRA $FDDC
+C6/FDBA: 80 06        BRA $FDC2
+C6/FDBC: 0D 02 80     ORA $8002
+C6/FDBF: 06 07        ASL $07
+C6/FDC1: 01 02        ORA ($02,X)
+C6/FDC3: 02 02        COP $02
+C6/FDC5: 02 07        COP $07
+C6/FDC7: 07 00        ORA [$00]
+C6/FDC9: 00 00        BRK $00
+C6/FDCB: 00 00        BRK $00
+C6/FDCD: 00 00        BRK $00
+C6/FDCF: 00 00        BRK $00
+C6/FDD1: 00 00        BRK $00
+C6/FDD3: 00 00        BRK $00
+C6/FDD5: 00 00        BRK $00
+C6/FDD7: 00 00        BRK $00
+C6/FDD9: 00 00        BRK $00
+C6/FDDB: 00 00        BRK $00
+C6/FDDD: 00 00        BRK $00
+C6/FDDF: 00 00        BRK $00
+C6/FDE1: 00 00        BRK $00
+C6/FDE3: 00 00        BRK $00
+C6/FDE5: 00 00        BRK $00
+C6/FDE7: 00 00        BRK $00
+C6/FDE9: 00 00        BRK $00
+C6/FDEB: 00 00        BRK $00
+C6/FDED: 00 00        BRK $00
+C6/FDEF: 00 56        BRK $56
+C6/FDF1: 9A           TXS
+C6/FDF2: C5 14        CMP $14
+C6/FDF4: B1 C5        LDA ($C5),Y
+C6/FDF6: 98           TYA
+C6/FDF7: B7 C5        LDA [$C5],Y
+C6/FDF9: ED C6 C5     SBC $C5C6
+C6/FDFC: 21 CD        AND ($CD,X)
+C6/FDFE: C5 97        CMP $97
+C6/FE00: D5 C5        CMP $C5,X
+C6/FE02: 0B           PHD
+C6/FE03: D8           CLD
+C6/FE04: C5 88        CMP $88
+C6/FE06: DA           PHX
+C6/FE07: C5 F7        CMP $F7
+C6/FE09: E0 C5 AF     CPX #$AFC5
+C6/FE0C: EA           NOP
+C6/FE0D: C5 14        CMP $14
+C6/FE0F: ED C5 00     SBC $00C5
+C6/FE12: 00 C6        BRK $C6
+C6/FE14: B6 07        LDX $07,Y
+C6/FE16: C6 9A        DEC $9A
+C6/FE18: 0E C6 00     ASL $00C6
+C6/FE1B: 00 00        BRK $00
+C6/FE1D: 00 00        BRK $00
+C6/FE1F: 00 00        BRK $00
+C6/FE21: 00 C4        BRK $C4
+C6/FE23: B8           CLV
+C6/FE24: 0E C4 3A     ASL $3AC4
+C6/FE27: 1D C4 32     ORA $32C4,X
+C6/FE2A: 2C C4 A0     BIT $A0C4
+C6/FE2D: 3A           DEC
+C6/FE2E: C4 39        CPY $39
+C6/FE30: 48           PHA
+C6/FE31: C4 D7        CPY $D7
+C6/FE33: 55 C4        EOR $C4,X
+C6/FE35: 23 64        AND $64,S
+C6/FE37: C4 C2        CPY $C2
+C6/FE39: 72 C4        ADC ($C4)
+C6/FE3B: 4F 80 C4 47  EOR $47C480
+C6/FE3F: 8C C4 33     STY $33C4
+C6/FE42: 8E C4 45     STX $45C4
+C6/FE45: 9E C4 56     STZ $56C4,X
+C6/FE48: AD C4 49     LDA $49C4
+C6/FE4B: BD C4 04     LDA $04C4,X
+C6/FE4E: C7 C4        CMP [$C4]
+C6/FE50: FF D3 C4 45  SBC $45C4D3,X
+C6/FE54: D9 C4 31     CMP $31C4,Y
+C6/FE57: DB           STP
+C6/FE58: C4 82        CPY $82
+C6/FE5A: E8           INX
+C6/FE5B: C4 AF        CPY $AF
+C6/FE5D: F7 C4        SBC [$C4],Y
+C6/FE5F: 72 FD        ADC ($FD)
+C6/FE61: C4 00        CPY $00
+C6/FE63: 00 C5        BRK $C5
+C6/FE65: E8           INX
+C6/FE66: 0E C5 26     ASL $26C5
+C6/FE69: 1E C5 1C     ASL $1CC5,X
+C6/FE6C: 2E C5 C9     ROL $C9C5
+C6/FE6F: 3C C5 9B     BIT $9BC5,X
+C6/FE72: 4A           LSR
+C6/FE73: C5 48        CMP $48
+C6/FE75: 5A           PHY
+C6/FE76: C5 A5        CMP $A5
+C6/FE78: 65 C5        ADC $C5
+C6/FE7A: 51 71        EOR ($71),Y
+C6/FE7C: C5 00        CMP $00
+C6/FE7E: 80 C5        BRA $FE45
+C6/FE80: 02 8B        COP $8B
+C6/FE82: C5 5A        CMP $5A
+C6/FE84: 8F C5 F7 97  STA $97F7C5
+C6/FE88: C5 48        CMP $48
+C6/FE8A: 98           TYA
+C6/FE8B: C5 AC        CMP $AC
+C6/FE8D: 98           TYA
+C6/FE8E: C5 00        CMP $00
+C6/FE90: 00 00        BRK $00
+C6/FE92: 00 00        BRK $00
+C6/FE94: 00 00        BRK $00
+C6/FE96: 00 00        BRK $00
+C6/FE98: 00 00        BRK $00
+C6/FE9A: 00 00        BRK $00
+C6/FE9C: 00 00        BRK $00
+C6/FE9E: 00 00        BRK $00
+C6/FEA0: 44 CE C3     MVP $CE,$C3
+C6/FEA3: DA           PHX
+C6/FEA4: CE C3 6C     DEC $6CC3
+C6/FEA7: CF C3 F5 CF  CMP $CFF5C3
+C6/FEAB: C3 1C        CMP $1C,S
+C6/FEAD: D0 C3        BNE $FE72
+C6/FEAF: EC D1 C3     CPX $C3D1
+C6/FEB2: 5F D3 C3 D8  EOR $D8C3D3,X
+C6/FEB6: D4 C3        PEI $C3
+C6/FEB8: 45 D6        EOR $D6
+C6/FEBA: C3 C3        CMP $C3,S
+C6/FEBC: D7 C3        CMP [$C3],Y
+C6/FEBE: 38           SEC
+C6/FEBF: D9 C3 F2     CMP $F2C3,Y
+C6/FEC2: DA           PHX
+C6/FEC3: C3 99        CMP $99,S
+C6/FEC5: DB           STP
+C6/FEC6: C3 45        CMP $45,S
+C6/FEC8: DC C3 BE     JMP [$BEC3]
+C6/FECB: DC C3 13     JMP [$13C3]
+C6/FECE: DD C3 85     CMP $85C3,X
+C6/FED1: DD C3 B2     CMP $B2C3,X
+C6/FED4: DE C3 3E     DEC $3EC3,X
+C6/FED7: DF C3 00 00  CMP $0000C3,X
+C6/FEDB: 00 00        BRK $00
+C6/FEDD: 00 00        BRK $00
+C6/FEDF: 00 00        BRK $00
+C6/FEE1: 00 00        BRK $00
+C6/FEE3: 00 00        BRK $00
+C6/FEE5: 00 00        BRK $00
+C6/FEE7: 00 00        BRK $00
+C6/FEE9: 00 00        BRK $00
+C6/FEEB: 00 00        BRK $00
+C6/FEED: 00 00        BRK $00
+C6/FEEF: 00 00        BRK $00
+C6/FEF1: 00 00        BRK $00
+C6/FEF3: 00 00        BRK $00
+C6/FEF5: 00 00        BRK $00
+C6/FEF7: 00 00        BRK $00
+C6/FEF9: 00 00        BRK $00
+C6/FEFB: 00 00        BRK $00
+C6/FEFD: 00 00        BRK $00
+C6/FEFF: 00 EC        BRK $EC
+C6/FF01: 29 C6 26     AND #$26C6
+C6/FF04: 37 C6        AND [$C6],Y
+C6/FF06: 12 41        ORA ($41)
+C6/FF08: C6 7D        DEC $7D
+C6/FF0A: 4B           PHK
+C6/FF0B: C6 67        DEC $67
+C6/FF0D: 56 C6        LSR $C6,X
+C6/FF0F: BD 60 C6     LDA $C660,X
+C6/FF12: 00 00        BRK $00
+C6/FF14: 00 00        BRK $00
+C6/FF16: 00 00        BRK $00
+C6/FF18: 00 00        BRK $00
+C6/FF1A: 00 00        BRK $00
+C6/FF1C: 00 00        BRK $00
+C6/FF1E: 00 00        BRK $00
+C6/FF20: 39 6A C6     AND $C66A,Y
+C6/FF23: 3F 79 C6 FE  AND $FEC679,X
+C6/FF27: 88           DEY
+C6/FF28: C6 D7        DEC $D7
+C6/FF2A: 90 C6        BCC $FEF2
+C6/FF2C: 89 9A C6     BIT #$C69A
+C6/FF2F: 75 AB        ADC $AB,X
+C6/FF31: C6 C5        DEC $C5
+C6/FF33: BA           TSX
+C6/FF34: C6 57        DEC $57
+C6/FF36: C3 C6        CMP $C6,S
+C6/FF38: 00 00        BRK $00
+C6/FF3A: 00 00        BRK $00
+C6/FF3C: 00 00        BRK $00
+C6/FF3E: 00 00        BRK $00
+C6/FF40: F7 C7        SBC [$C7],Y
+C6/FF42: C6 94        DEC $94
+C6/FF44: C9 C6 0B     CMP #$0BC6
+C6/FF47: CC C6 1F     CPY $1FC6
+C6/FF4A: CD C6 72     CMP $72C6
+C6/FF4D: CF C6 C0 D2  CMP $D2C0C6
+C6/FF51: C6 00        DEC $00
+C6/FF53: 00 00        BRK $00
+C6/FF55: 00 00        BRK $00
+C6/FF57: 00 00        BRK $00
+C6/FF59: 00 00        BRK $00
+C6/FF5B: 00 00        BRK $00
+C6/FF5D: 00 00        BRK $00
+C6/FF5F: 00 00        BRK $00
+C6/FF61: 00 00        BRK $00
+C6/FF63: 00 00        BRK $00
+C6/FF65: 00 00        BRK $00
+C6/FF67: 00 00        BRK $00
+C6/FF69: 00 00        BRK $00
+C6/FF6B: 00 00        BRK $00
+C6/FF6D: 00 00        BRK $00
+C6/FF6F: 00 00        BRK $00
+C6/FF71: 00 00        BRK $00
+C6/FF73: 00 00        BRK $00
+C6/FF75: 00 00        BRK $00
+C6/FF77: 00 00        BRK $00
+C6/FF79: 00 00        BRK $00
+C6/FF7B: 00 00        BRK $00
+C6/FF7D: 00 00        BRK $00
+C6/FF7F: 00 10        BRK $10
+C6/FF81: D4 C6        PEI $C6
+C6/FF83: 3D D5 C6     AND $C6D5,X
+C6/FF86: 64 D6        STZ $D6
+C6/FF88: C6 26        DEC $26
+C6/FF8A: D7 C6        CMP [$C6],Y
+C6/FF8C: 03 D8        ORA $D8,S
+C6/FF8E: C6 BE        DEC $BE
+C6/FF90: D8           CLD
+C6/FF91: C6 7C        DEC $7C
+C6/FF93: D9 C6 00     CMP $00C6,Y
+C6/FF96: 00 00        BRK $00
+C6/FF98: 00 00        BRK $00
+C6/FF9A: 00 00        BRK $00
+C6/FF9C: 00 00        BRK $00
+C6/FF9E: 00 00        BRK $00
+C6/FFA0: 76 DA        ROR $DA,X
+C6/FFA2: C6 73        DEC $73
+C6/FFA4: DB           STP
+C6/FFA5: C6 3C        DEC $3C
+C6/FFA7: DC C6 00     JMP [$00C6]
+C6/FFAA: 00 00        BRK $00
+C6/FFAC: 00 00        BRK $00
+C6/FFAE: 00 00        BRK $00
+C6/FFB0: 00 00        BRK $00
+C6/FFB2: 00 00        BRK $00
+C6/FFB4: 00 00        BRK $00
+C6/FFB6: 00 00        BRK $00
+C6/FFB8: 00 00        BRK $00
+C6/FFBA: 00 00        BRK $00
+C6/FFBC: 00 00        BRK $00
+C6/FFBE: 00 00        BRK $00
+C6/FFC0: 11 24        ORA ($24),Y
+C6/FFC2: C6 DF        DEC $DF
+C6/FFC4: 25 C6        AND $C6
+C6/FFC6: 99 27 C6     STA $C627,Y
+C6/FFC9: 34 28        BIT $28,X
+C6/FFCB: C6 E4        DEC $E4
+C6/FFCD: 28           PLP
+C6/FFCE: C6 22        DEC $22
+C6/FFD0: 29 C6 91     AND #$91C6
+C6/FFD3: 29 C6 DA     AND #$DAC6
+C6/FFD6: 29 C6 00     AND #$00C6
+C6/FFD9: 00 00        BRK $00
+C6/FFDB: 00 00        BRK $00
+C6/FFDD: 00 00        BRK $00
+C6/FFDF: 00 6C        BRK $6C
+C6/FFE1: 8B           PHB
+C6/FFE2: C3 D7        CMP $D7,S
+C6/FFE4: 97 C3        STA [$C3],Y
+C6/FFE6: 41 9F        EOR ($9F,X)
+C6/FFE8: C3 07        CMP $07,S
+C6/FFEA: A6 C3        LDX $C3
+C6/FFEC: 3E AC C3     ROL $C3AC,X
+C6/FFEF: 14 BA        TRB $BA
+C6/FFF1: C3 7B        CMP $7B,S
+C6/FFF3: BF C3 05 C8  LDA $C805C3,X
+C6/FFF7: C3 00        CMP $00,S
+C6/FFF9: 00 00        BRK $00
+C6/FFFB: 00 00        BRK $00
+C6/FFFD: 00 00        BRK $00
+C6/FFFF: 00

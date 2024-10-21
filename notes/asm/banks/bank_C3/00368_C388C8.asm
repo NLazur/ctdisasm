@@ -1,0 +1,36 @@
+C3/88C8: 00 4C        BRK $4C
+C3/88CA: E0 70 80     CPX #$8070
+C3/88CD: E0 80 FA     CPX #$FA80
+C3/88D0: FE DF DF     INC $DFDF,X
+C3/88D3: FF FF FB 62  SBC $62FBFF,X
+C3/88D7: 00 00        BRK $00
+C3/88D9: DA           PHX
+C3/88DA: DF 60 90 80  CMP $809060,X
+C3/88DE: 70 92        BVS $8872
+C3/88E0: 6D 00 95     ADC $9500
+C3/88E3: 4A           LSR
+C3/88E4: F5 0A        SBC $0A,X
+C3/88E6: 93 6C        STA ($6C,S),Y
+C3/88E8: 95 4A        STA $4A,X
+C3/88EA: 00 02        BRK $02
+C3/88EC: DD F0 F0     CMP $F0F0,X
+C3/88EF: F8           SED
+C3/88F0: F8           SED
+C3/88F1: CD CD 00     CMP $00CD
+C3/88F4: EF EF FF FF  SBC $FFFFEF
+C3/88F8: C5 C7        CMP $C7
+C3/88FA: C7 C3        CMP [$C3]
+C3/88FC: 00 C1        BRK $C1
+C3/88FE: C1 F0        CMP ($F0,X)
+C3/8900: 00 80        BRK $80
+C3/8902: 78           SEI
+C3/8903: 85 48        STA $48
+C3/8905: 00 E5        BRK $E5
+C3/8907: 1A           INC
+C3/8908: 85 7A        STA $7A
+C3/890A: 85 42        STA $42
+C3/890C: 83 44        STA $44,S
+C3/890E: 04 00        TSB $00
+C3/8910: C1 C0        CMP ($C0,X)
+C3/8912: 08           PHP
+C3/8913: 6B           RTL

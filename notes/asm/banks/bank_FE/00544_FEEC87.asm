@@ -1,0 +1,2 @@
+FE/EC87: 20 EC 40     JSR $40EC
+FE/EC8A: 60           RTS

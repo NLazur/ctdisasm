@@ -1,0 +1,67 @@
+C6/AFD9: 02 0B        COP $0B
+C6/AFDB: 44 01 C0     MVP $01,$C0
+C6/AFDE: 00 CD        BRK $CD
+C6/AFE0: C1 FF        CMP ($FF,X)
+C6/AFE2: 01 60        ORA ($60,X)
+C6/AFE4: 61 12        ADC ($12,X)
+C6/AFE6: 23 24        AND $24,S
+C6/AFE8: B1 10        LDA ($10),Y
+C6/AFEA: 52 01        EOR ($01)
+C6/AFEC: 80 80        BRA $AF6E
+C6/AFEE: 81 82        STA ($82,X)
+C6/AFF0: A5 84        LDA $84
+C6/AFF2: 85 86        STA $86
+C6/AFF4: B4 09        LDY $09,X
+C6/AFF6: 0F 86 02 CC  ORA $CC0286
+C6/AFFA: 02 AF        COP $AF
+C6/AFFC: 4A           LSR
+C6/AFFD: 3D 23 38     AND $3823,X
+C6/B000: 39 65 43     AND $4365,Y
+C6/B003: 00 32        BRK $32
+C6/B005: 23 E8        AND $E8,S
+C6/B007: DF DF DF EB  CMP $EBDFDF,X
+C6/B00B: 15 94        ORA $94,X
+C6/B00D: 62 12 9B     PER $C64B22
+C6/B010: 00 07        BRK $07
+C6/B012: 52 12        EOR ($12)
+C6/B014: 5B           TCD
+C6/B015: 07 F1        ORA [$F1]
+C6/B017: 12 94        ORA ($94)
+C6/B019: AC AD 60     LDY $60AD
+C6/B01C: 0A           ASL
+C6/B01D: 0B           PHD
+C6/B01E: 44 09 CB     MVP $09,$CB
+C6/B021: CD 11 01     CMP $0111
+C6/B024: C0 25 23     CPY #$2325
+C6/B027: 23 23        AND $23,S
+C6/B029: 33 23        AND ($23,S),Y
+C6/B02B: EB           XBA
+C6/B02C: 00 12        BRK $12
+C6/B02E: 01 01        ORA ($01,X)
+C6/B030: 0E 02 91     ASL $9102
+C6/B033: 92 23        STA ($23)
+C6/B035: 94 95        STY $95,X
+C6/B037: 35 45        AND $45,X
+C6/B039: 7C 46 47     JMP ($4746,X)
+C6/B03C: 42 09        WDM $09
+C6/B03E: A5 41        LDA $41
+C6/B040: 1C 11 9C     TRB $9C11
+C6/B043: 18           CLC
+C6/B044: 74 01        STZ $01,X
+C6/B046: 63 D5        ADC $D5,S
+C6/B048: E9 28 24     SBC #$2428
+C6/B04B: 9B           TXY
+C6/B04C: 08           PHP
+C6/B04D: 06 52        ASL $52
+C6/B04F: 03 2E        ORA $2E,S
+C6/B051: B0 33        BCS $B086
+C6/B053: E5 00        SBC $00
+C6/B055: 14 2D        TRB $2D
+C6/B057: 2E 23 03     ROL $0323
+C6/B05A: 5E CB 03     LSR $03CB,X
+C6/B05D: 11 12        ORA ($12),Y
+C6/B05F: 24 10        BIT $10
+C6/B061: CE CE 34     DEC $34CE
+C6/B064: 33 02        AND ($02,S),Y
+C6/B066: 00 15        BRK $15
+C6/B068: 60           RTS

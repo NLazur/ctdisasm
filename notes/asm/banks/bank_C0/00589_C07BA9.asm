@@ -1,0 +1,76 @@
+C0/7BA9: A5 5A        LDA $5A
+C0/7BAB: 89 01        BIT #$01
+C0/7BAD: F0 03        BEQ $7BB2
+C0/7BAF: 82 93 00     BRL $C07C45
+C0/7BB2: 4A           LSR
+C0/7BB3: 25 21        AND $21
+C0/7BB5: 85 54        STA $54
+C0/7BB7: EB           XBA
+C0/7BB8: A5 58        LDA $58
+C0/7BBA: 89 01        BIT #$01
+C0/7BBC: D0 43        BNE $7C01
+C0/7BBE: 4A           LSR
+C0/7BBF: 25 20        AND $20
+C0/7BC1: 85 52        STA $52
+C0/7BC3: AA           TAX
+C0/7BC4: BF C0 30 7E  LDA $7E30C0,X
+C0/7BC8: 4A           LSR
+C0/7BC9: 29 01        AND #$01
+C0/7BCB: EB           XBA
+C0/7BCC: BF 40 30 7E  LDA $7E3040,X
+C0/7BD0: C2 20        REP #$20
+C0/7BD2: 0A           ASL
+C0/7BD3: 0A           ASL
+C0/7BD4: 0A           ASL
+C0/7BD5: AA           TAX
+C0/7BD6: BF 00 B0 7E  LDA $7EB000,X
+C0/7BDA: E2 20        SEP #$20
+C0/7BDC: 8D 80 21     STA $2180
+C0/7BDF: EB           XBA
+C0/7BE0: 8D 80 21     STA $2180
+C0/7BE3: BF 04 B0 7E  LDA $7EB004,X
+C0/7BE7: 8D 80 21     STA $2180
+C0/7BEA: BF 05 B0 7E  LDA $7EB005,X
+C0/7BEE: 8D 80 21     STA $2180
+C0/7BF1: A5 54        LDA $54
+C0/7BF3: C6 5C        DEC $5C
+C0/7BF5: F0 4D        BEQ $7C44
+C0/7BF7: 1A           INC
+C0/7BF8: 25 21        AND $21
+C0/7BFA: 85 54        STA $54
+C0/7BFC: EB           XBA
+C0/7BFD: A5 52        LDA $52
+C0/7BFF: 80 C2        BRA $7BC3
+C0/7C01: 4A           LSR
+C0/7C02: 25 20        AND $20
+C0/7C04: 85 52        STA $52
+C0/7C06: AA           TAX
+C0/7C07: BF C0 30 7E  LDA $7E30C0,X
+C0/7C0B: 4A           LSR
+C0/7C0C: 29 01        AND #$01
+C0/7C0E: EB           XBA
+C0/7C0F: BF 40 30 7E  LDA $7E3040,X
+C0/7C13: C2 20        REP #$20
+C0/7C15: 0A           ASL
+C0/7C16: 0A           ASL
+C0/7C17: 0A           ASL
+C0/7C18: AA           TAX
+C0/7C19: BF 02 B0 7E  LDA $7EB002,X
+C0/7C1D: E2 20        SEP #$20
+C0/7C1F: 8D 80 21     STA $2180
+C0/7C22: EB           XBA
+C0/7C23: 8D 80 21     STA $2180
+C0/7C26: BF 06 B0 7E  LDA $7EB006,X
+C0/7C2A: 8D 80 21     STA $2180
+C0/7C2D: BF 07 B0 7E  LDA $7EB007,X
+C0/7C31: 8D 80 21     STA $2180
+C0/7C34: A5 54        LDA $54
+C0/7C36: C6 5C        DEC $5C
+C0/7C38: F0 0A        BEQ $7C44
+C0/7C3A: 1A           INC
+C0/7C3B: 25 21        AND $21
+C0/7C3D: 85 54        STA $54
+C0/7C3F: EB           XBA
+C0/7C40: A5 52        LDA $52
+C0/7C42: 80 C2        BRA $7C06
+C0/7C44: 60           RTS

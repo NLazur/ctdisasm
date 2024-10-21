@@ -1,0 +1,21 @@
+FF/DDC8: FF 70 F7 68  SBC $68F770,X
+FF/DDCC: EF 38 F7 1C  SBC $1CF738
+FF/DDD0: FB           XCE
+FF/DDD1: 0E FD 07     ASL $07FD
+FF/DDD4: 00 70        BRK $70
+FF/DDD6: 68           PLA
+FF/DDD7: 54 22 11     MVN $22,$11
+FF/DDDA: 08           PHP
+FF/DDDB: 04 FF        TSB $FF
+FF/DDDD: 00 FF        BRK $FF
+FF/DDDF: 00 FF        BRK $FF
+FF/DDE1: 00 FF        BRK $FF
+FF/DDE3: 00 FF        BRK $FF
+FF/DDE5: 00 FF        BRK $FF
+FF/DDE7: 00 FF        BRK $FF
+FF/DDE9: 00 FB        BRK $FB
+FF/DDEB: 04 00        TSB $00
+FF/DDED: 00 00        BRK $00
+FF/DDEF: 00 00        BRK $00
+FF/DDF1: 00 80        BRK $80
+FF/DDF3: 40           RTI

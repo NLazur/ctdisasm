@@ -1,0 +1,76 @@
+C3/6A90: AD 0E 0A     LDA $0A0E
+C3/6A93: 8D 10 0F     STA $0F10
+C3/6A96: 21 AD        AND ($AD,X)
+C3/6A98: 0F 06 10 AE  ORA $AE1006
+C3/6A9C: 02 0A        COP $0A
+C3/6A9E: 00 8E        BRK $8E
+C3/6AA0: 04 14        TSB $14
+C3/6AA2: F4 00 0A     PEA $0A00
+C3/6AA5: 2B           PLD
+C3/6AA6: A9 50        LDA #$50
+C3/6AA8: 00 8D        BRK $8D
+C3/6AAA: 1C 21 03     TRB $0321
+C3/6AAD: 10 1D        BPL $6ACC
+C3/6AAF: 03 10        ORA $10,S
+C3/6AB1: A5 40        LDA $40
+C3/6AB3: 00 8D        BRK $8D
+C3/6AB5: 1B           TCS
+C3/6AB6: 21 A5        AND ($A5,X)
+C3/6AB8: 01 05        ORA ($05,X)
+C3/6ABA: 10 00        BPL $6ABC
+C3/6ABC: 2C 8D 1E     BIT $1E8D
+C3/6ABF: 0A           ASL
+C3/6AC0: 10 05        BPL $6AC7
+C3/6AC2: 00 06        BRK $06
+C3/6AC4: 75 00        ADC $00,X
+C3/6AC6: A5 07        LDA $07
+C3/6AC8: 25 05        AND $05
+C3/6ACA: 10 08        BPL $6AD4
+C3/6ACC: 73 00        ADC ($00,S),Y
+C3/6ACE: A5 09        LDA $09
+C3/6AD0: 05 10        ORA $10
+C3/6AD2: 02 8D        COP $8D
+C3/6AD4: 10 0D        BPL $6AE3
+C3/6AD6: 21 A5        AND ($A5,X)
+C3/6AD8: 03 05        ORA $05,S
+C3/6ADA: 10 04        BPL $6AE0
+C3/6ADC: 8D 0E 08     STA $080E
+C3/6ADF: 21 A5        AND ($A5,X)
+C3/6AE1: 05 05        ORA $05
+C3/6AE3: 00 60        BRK $60
+C3/6AE5: 20 A5 AD     JSR $ADA5
+C3/6AE8: 2C D0 07     BIT $07D0
+C3/6AEB: 37 01        AND [$01],Y
+C3/6AED: 1C 03 50     TRB $5003
+C3/6AF0: 55 0F        EOR $0F,X
+C3/6AF2: A0 14        LDY #$14
+C3/6AF4: 80 14        BRA $6B0A
+C3/6AF6: A9 1F        LDA #$1F
+C3/6AF8: 00 54        BRK $54
+C3/6AFA: 00 D2        BRK $D2
+C3/6AFC: FB           XCE
+C3/6AFD: 0E 00 00     ASL $0000
+C3/6B00: 8D 83 21     STA $2183
+C3/6B03: A2 1C        LDX #$1C
+C3/6B05: 14 8E        TRB $8E
+C3/6B07: 00 81        BRK $81
+C3/6B09: 21 A6        AND ($A6,X)
+C3/6B0B: 4A           LSR
+C3/6B0C: BF 00 00 7E  LDA $7E0000,X
+C3/6B10: 00 E8        BRK $E8
+C3/6B12: C9 2F        CMP #$2F
+C3/6B14: F0 1A        BEQ $6B30
+C3/6B16: C9 5C        CMP #$5C
+C3/6B18: F0 00        BEQ $6B1A
+C3/6B1A: 43 C9        EOR $C9,S
+C3/6B1C: 00 D0        BRK $D0
+C3/6B1E: 04 E8        TSB $E8
+C3/6B20: E8           INX
+C3/6B21: 80 00        BRA $6B23
+C3/6B23: EB           XBA
+C3/6B24: C9 20        CMP #$20
+C3/6B26: D0 02        BNE $6B2A
+C3/6B28: A9 40        LDA #$40
+C3/6B2A: 38           SEC
+C3/6B2B: 00 E9        BRK $E9
+C3/6B2D: 40           RTI

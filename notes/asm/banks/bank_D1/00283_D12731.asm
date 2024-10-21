@@ -1,0 +1,90 @@
+D1/2731: 00 CA        BRK $CA
+D1/2733: 00 CC        BRK $CC
+D1/2735: 00 CE        BRK $CE
+D1/2737: 00 0E        BRK $0E
+D1/2739: 41 46        EOR ($46,X)
+D1/273B: 81 00        STA ($00,X)
+D1/273D: E0 0C        CPX #$0C
+D1/273F: 41 0C        EOR ($0C,X)
+D1/2741: 01 0E        ORA ($0E,X)
+D1/2743: 4E 00 40     LSR $4000
+D1/2746: 6E 00 00     ROR $0000
+D1/2749: 11 80        ORA ($80),Y
+D1/274B: 00 01        BRK $01
+D1/274D: FF FF 11 80  SBC $8011FF,X
+D1/2751: 54 E2 00     MVN $E2,$00
+D1/2754: 06 08        ASL $08
+D1/2756: E4 06        CPX $06
+D1/2758: 10 E6        BPL $2740
+D1/275A: 0C 00 22     TSB $2200
+D1/275D: 00 C0        BRK $C0
+D1/275F: C0 20        CPY #$20
+D1/2761: 01 20        ORA ($20,X)
+D1/2763: 41 20        EOR ($20,X)
+D1/2765: 81 04        STA ($04,X)
+D1/2767: 20 C1 0D     JSR $0DC1
+D1/276A: 10 02        BPL $276E
+D1/276C: 01 02        ORA ($02,X)
+D1/276E: 41 02        EOR ($02,X)
+D1/2770: 04 81        TSB $81
+D1/2772: 02 0D        COP $0D
+D1/2774: 18           CLC
+D1/2775: 04 01        TSB $01
+D1/2777: 04 41        TSB $41
+D1/2779: 04 04        TSB $04
+D1/277B: 81 04        STA ($04,X)
+D1/277D: 1A           INC
+D1/277E: 18           CLC
+D1/277F: 06 01        ASL $01
+D1/2781: 06 41        ASL $41
+D1/2783: 06 04        ASL $04
+D1/2785: 81 06        STA ($06,X)
+D1/2787: 27 18        AND [$18]
+D1/2789: 08           PHP
+D1/278A: 01 08        ORA ($08,X)
+D1/278C: 41 08        EOR ($08,X)
+D1/278E: 04 81        TSB $81
+D1/2790: 08           PHP
+D1/2791: 34 18        BIT $18,X
+D1/2793: 0A           ASL
+D1/2794: 01 0A        ORA ($0A,X)
+D1/2796: 41 0A        EOR ($0A,X)
+D1/2798: 04 81        TSB $81
+D1/279A: 0A           ASL
+D1/279B: 41 18        EOR ($18,X)
+D1/279D: 0C 01 0C     TSB $0C01
+D1/27A0: 41 0C        EOR ($0C,X)
+D1/27A2: 04 81        TSB $81
+D1/27A4: 0C 4E 18     TSB $184E
+D1/27A7: 0E 01 0E     ASL $0E01
+D1/27AA: 41 0E        EOR ($0E,X)
+D1/27AC: 04 81        TSB $81
+D1/27AE: 0E 5B 00     ASL $005B
+D1/27B1: 12 80        ORA ($80)
+D1/27B3: 80 28        BRA $27DD
+D1/27B5: 01 42        ORA ($42,X)
+D1/27B7: 77 00        ADC [$00],Y
+D1/27B9: FE 26 83     INC $8326,X
+D1/27BC: 00 40        BRK $40
+D1/27BE: 4A           LSR
+D1/27BF: 00 80        BRK $80
+D1/27C1: 12 00        ORA ($00)
+D1/27C3: 80 2A        BRA $27EF
+D1/27C5: 01 FF        ORA ($FF,X)
+D1/27C7: FF 07 00 2A  SBC $2A0007,X
+D1/27CB: 2C 07 18     BIT $1807
+D1/27CE: 0A           ASL
+D1/27CF: 0E 18 0C     ASL $0C18
+D1/27D2: 15 08        ORA $08,X
+D1/27D4: 80 80        BRA $2756
+D1/27D6: 08           PHP
+D1/27D7: 0E 01 2E     ASL $2E01
+D1/27DA: 1E 00 22     ASL $2200,X
+D1/27DD: C0 C0        CPY #$C0
+D1/27DF: CC 80 00     CPY $0080
+D1/27E2: CE 00 EC     DEC $EC00
+D1/27E5: 00 EE        BRK $EE
+D1/27E7: 00 0D        BRK $0D
+D1/27E9: 10 00        BPL $27EB
+D1/27EB: CE 40 CC     DEC $CC40
+D1/27EE: 40           RTI

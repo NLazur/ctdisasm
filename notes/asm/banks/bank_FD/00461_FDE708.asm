@@ -1,0 +1,24 @@
+FD/E708: B9 22 05     LDA $0522,Y
+FD/E70B: A8           TAY
+FD/E70C: BF 00 20 7E  LDA $7E2000,X
+FD/E710: 29 1F        AND #$1F
+FD/E712: 8D 03 42     STA $4203
+FD/E715: EA           NOP
+FD/E716: EA           NOP
+FD/E717: EA           NOP
+FD/E718: AD 17 42     LDA $4217
+FD/E71B: C2 20        REP #$20
+FD/E71D: 29 1F 00     AND #$001F
+FD/E720: 85 0C        STA $0C
+FD/E722: BF 00 20 7E  LDA $7E2000,X
+FD/E726: 29 E0 7F     AND #$7FE0
+FD/E729: 05 0C        ORA $0C
+FD/E72B: 9F 00 22 7E  STA $7E2200,X
+FD/E72F: E2 20        SEP #$20
+FD/E731: E8           INX
+FD/E732: E8           INX
+FD/E733: 88           DEY
+FD/E734: D0 D6        BNE $E70C
+FD/E736: A9 00        LDA #$00
+FD/E738: EB           XBA
+FD/E739: 60           RTS

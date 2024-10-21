@@ -1,0 +1,72 @@
+C6/7D02: 26 61        ROL $61
+C6/7D04: 03 C7        ORA $C7,S
+C6/7D06: 26 F8        ROL $F8
+C6/7D08: 19 1D 0D     ORA $0D1D,Y
+C6/7D0B: 0D AD AE     ORA $AEAD
+C6/7D0E: AF 2B F8 1B  LDA $1BF82B
+C6/7D12: 20 80 24     JSR $2480
+C6/7D15: 36 37        ROL $37,X
+C6/7D17: 00 9A        BRK $9A
+C6/7D19: 9B           TXY
+C6/7D1A: 9C 85 F9     STZ $F985
+C6/7D1D: D1 1D        CMP ($1D),Y
+C6/7D1F: 10 67        BPL $7D88
+C6/7D21: 68           PLA
+C6/7D22: 69 34 08     ADC #$0834
+C6/7D25: 17 E4        ORA [$E4],Y
+C6/7D27: F9 0B 2E     SBC $2E0B,Y
+C6/7D2A: 61 6F        ADC ($6F,X)
+C6/7D2C: 02 A9        COP $A9
+C6/7D2E: AA           TAX
+C6/7D2F: AB           PLB
+C6/7D30: DC 2B F8     JMP [$F82B]
+C6/7D33: 81 0B        STA ($0B,X)
+C6/7D35: 00 78        BRK $78
+C6/7D37: 77 78        ADC [$78],Y
+C6/7D39: 79 F1 10     ADC $10F1,Y
+C6/7D3C: 92 00        STA ($00)
+C6/7D3E: 2F F8 0B 26  AND $260BF8
+C6/7D42: B8           CLV
+C6/7D43: 30 B9        BMI $7CFE
+C6/7D45: BA           TSX
+C6/7D46: EB           XBA
+C6/7D47: EC 29 F8     CPX $F829
+C6/7D4A: C9 0D 21     CMP #$210D
+C6/7D4D: 11 35        ORA ($35),Y
+C6/7D4F: 36 0E        ROL $0E,X
+C6/7D51: 26 92        ROL $92
+C6/7D53: 08           PHP
+C6/7D54: AC 2F F8     LDY $F82F
+C6/7D57: 1C 18 34     TRB $3418
+C6/7D5A: F8           SED
+C6/7D5B: 78           SEI
+C6/7D5C: F9 FA FB     SBC $FBFA,Y
+C6/7D5F: 27 F8        AND [$F8]
+C6/7D61: 2A           ROL
+C6/7D62: 2E 25 08     ROL $0825
+C6/7D65: 92 00        STA ($00)
+C6/7D67: BB           TYX
+C6/7D68: 0E BC 2E     ASL $2EBC
+C6/7D6B: F8           SED
+C6/7D6C: 01 F8        ORA ($F8,X)
+C6/7D6E: 0B           PHD
+C6/7D6F: A0 C8        LDY #$C8
+C6/7D71: C9 CA CB     CMP #$CBCA
+C6/7D74: 0E CC 27     ASL $27CC
+C6/7D77: F8           SED
+C6/7D78: 01 F8        ORA ($F8,X)
+C6/7D7A: 0B           PHD
+C6/7D7B: A0 D8        LDY #$D8
+C6/7D7D: D9 DA DB     CMP $DBDA,Y
+C6/7D80: 7F 26 F8 01  ADC $01F826,X
+C6/7D84: F8           SED
+C6/7D85: 01 F8        ORA ($F8,X)
+C6/7D87: 01 F8        ORA ($F8,X)
+C6/7D89: 01 F8        ORA ($F8,X)
+C6/7D8B: 01 F8        ORA ($F8,X)
+C6/7D8D: 1B           TCS
+C6/7D8E: 20 01 FF     JSR $FF01
+C6/7D91: 01 18        ORA ($18,X)
+C6/7D93: 29 F8 01     AND #$01F8
+C6/7D96: F8           SED
+C6/7D97: 60           RTS

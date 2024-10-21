@@ -1,0 +1,68 @@
+FE/8C46: 1D AD 14     ORA $14AD,X
+FE/8C49: C8           INY
+FE/8C4A: 18           CLC
+FE/8C4B: 38           SEC
+FE/8C4C: A6 14        LDX $14
+FE/8C4E: 83 34        STA $34,S
+FE/8C50: 00 20        BRK $20
+FE/8C52: 08           PHP
+FE/8C53: 12 08        ORA ($08)
+FE/8C55: 07 1D        ORA [$1D]
+FE/8C57: 10 E5        BPL $8C3E
+FE/8C59: 1C C3 18     TRB $18C3
+FE/8C5C: 12 08        ORA ($08)
+FE/8C5E: 2B           PLD
+FE/8C5F: 32 C8        AND ($C8)
+FE/8C61: A0 2D 64     LDY #$642D
+FE/8C64: 25 04        AND $04
+FE/8C66: 25 48        AND $48
+FE/8C68: 08           PHP
+FE/8C69: 1E 40 10     ASL $1040,X
+FE/8C6C: 00 55        BRK $55
+FE/8C6E: 0C 54 0C     TSB $0C54
+FE/8C71: 53 0C        EOR ($0C,S),Y
+FE/8C73: 5F 03 00 9F  EOR $9F0003,X
+FE/8C77: 03 DF        ORA $DF,S
+FE/8C79: 03 04        ORA $04,S
+FE/8C7B: 25 04        AND $04
+FE/8C7D: 29 10 04     AND #$0410
+FE/8C80: 2D 00 7C     AND $7C00
+FE/8C83: 02 38        COP $38
+FE/8C85: 08           PHP
+FE/8C86: 25 50        AND $50
+FE/8C88: 00 52        BRK $52
+FE/8C8A: CC 41 06     CPY $0641
+FE/8C8D: 25 83        AND $83
+FE/8C8F: 14 7A        TRB $7A
+FE/8C91: 08           PHP
+FE/8C92: 73 C7        ADC ($C7,S),Y
+FE/8C94: 10 6E        BPL $8D04
+FE/8C96: 00 7F        BRK $7F
+FE/8C98: DA           PHX
+FE/8C99: 14 35        TRB $35
+FE/8C9B: 00 32        BRK $32
+FE/8C9D: 6F 1D 09 19  ADC $19091D
+FE/8CA1: D4 62        PEI $62
+FE/8CA3: D2 20        CMP ($20)
+FE/8CA5: 25 FE        AND $FE
+FE/8CA7: 7F 00 38 20  ADC $203800,X
+FE/8CAB: 38           SEC
+FE/8CAC: 8D 11 00     STA $0011
+FE/8CAF: 08           PHP
+FE/8CB0: 09 FF 7F     ORA #$7FFF
+FE/8CB3: FD 5F 7A     SBC $7A5F,X
+FE/8CB6: 43 00        EOR $00,S
+FE/8CB8: F8           SED
+FE/8CB9: 2E 12 1E     ROL $1E12
+FE/8CBC: D4 62        PEI $62
+FE/8CBE: 4A           LSR
+FE/8CBF: 15 01        ORA $01,X
+FE/8CC1: 20 58 E6     JSR $E658
+FE/8CC4: 14 00        TRB $00
+FE/8CC6: 00 5F        BRK $5F
+FE/8CC8: 0A           ASL
+FE/8CC9: DA           PHX
+FE/8CCA: 20 14 09     JSR $0914
+FE/8CCD: 7A           PLY
+FE/8CCE: 27 2B        AND [$2B]
+FE/8CD0: 40           RTI

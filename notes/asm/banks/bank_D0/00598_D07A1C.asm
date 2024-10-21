@@ -1,0 +1,30 @@
+D0/7A1C: 10 30        BPL $7A4E
+D0/7A1E: 00 10        BRK $10
+D0/7A20: 00 08        BRK $08
+D0/7A22: 00 00        BRK $00
+D0/7A24: 00 00        BRK $00
+D0/7A26: 00 00        BRK $00
+D0/7A28: 0F 0F 0F 0F  ORA $0F0F0F
+D0/7A2C: 07 07        ORA [$07]
+D0/7A2E: 07 07        ORA [$07]
+D0/7A30: 02 02        COP $02
+D0/7A32: 00 00        BRK $00
+D0/7A34: 00 00        BRK $00
+D0/7A36: 00 00        BRK $00
+D0/7A38: FE FE F8     INC $F8FE,X
+D0/7A3B: F8           SED
+D0/7A3C: E0 E0 80     CPX #$80E0
+D0/7A3F: 80 00        BRA $7A41
+D0/7A41: 00 00        BRK $00
+D0/7A43: 00 00        BRK $00
+D0/7A45: 00 00        BRK $00
+D0/7A47: 00 00        BRK $00
+D0/7A49: 0F 00 07 05  ORA $050700
+D0/7A4D: 06 00        ASL $00
+D0/7A4F: 03 01        ORA $01,S
+D0/7A51: 00 00        BRK $00
+D0/7A53: 00 00        BRK $00
+D0/7A55: 00 00        BRK $00
+D0/7A57: 00 58        BRK $58
+D0/7A59: A0 B0 40     LDY #$40B0
+D0/7A5C: 40           RTI

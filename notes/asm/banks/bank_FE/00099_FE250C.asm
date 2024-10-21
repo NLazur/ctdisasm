@@ -1,0 +1,22 @@
+FE/250C: D1 23        CMP ($23),Y
+FE/250E: 0D 34 34     ORA $3434
+FE/2511: 49 1A 07     EOR #$071A
+FE/2514: 47 02        EOR [$02]
+FE/2516: 0D 67 12     ORA $1267
+FE/2519: FF E8 12 10  SBC $1012E8,X
+FE/251D: 0D F8 22     ORA $22F8
+FE/2520: 08           PHP
+FE/2521: 55 18        EOR $18,X
+FE/2523: 55 28        EOR $28,X
+FE/2525: 65 38        ADC $38
+FE/2527: 45 51        EOR $51
+FE/2529: 05 9F        ORA $9F
+FE/252B: 5D 05 C8     EOR $C805,X
+FE/252E: 04 60        TSB $60
+FE/2530: 45 05        EOR $05
+FE/2532: 30 72        BMI $25A6
+FE/2534: 25 1A        AND $1A
+FE/2536: 1A           INC
+FE/2537: 5B           TCD
+FE/2538: 11 1F        ORA ($1F),Y
+FE/253A: 40           RTI

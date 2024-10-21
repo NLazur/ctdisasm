@@ -1,0 +1,44 @@
+C2/934F: 08           PHP
+C2/9350: E2 20        SEP #$20
+C2/9352: 64 00        STZ $00
+C2/9354: AD 86 0D     LDA $0D86
+C2/9357: 4A           LSR
+C2/9358: 66 00        ROR $00
+C2/935A: AD 87 0D     LDA $0D87
+C2/935D: 4A           LSR
+C2/935E: 66 00        ROR $00
+C2/9360: AD 88 0D     LDA $0D88
+C2/9363: 4A           LSR
+C2/9364: 66 00        ROR $00
+C2/9366: AD 89 0D     LDA $0D89
+C2/9369: 4A           LSR
+C2/936A: 66 00        ROR $00
+C2/936C: AD 8F 0D     LDA $0D8F
+C2/936F: 4A           LSR
+C2/9370: 66 00        ROR $00
+C2/9372: AD 8B 0D     LDA $0D8B
+C2/9375: 29 07        AND #$07
+C2/9377: 05 00        ORA $00
+C2/9379: 8D 90 29     STA $2990
+C2/937C: 64 00        STZ $00
+C2/937E: AD 8D 0D     LDA $0D8D
+C2/9381: 4A           LSR
+C2/9382: 66 00        ROR $00
+C2/9384: AD 8E 0D     LDA $0D8E
+C2/9387: 4A           LSR
+C2/9388: 66 00        ROR $00
+C2/938A: AD 90 0D     LDA $0D90
+C2/938D: 29 07        AND #$07
+C2/938F: 0A           ASL
+C2/9390: 0A           ASL
+C2/9391: 0A           ASL
+C2/9392: 04 00        TSB $00
+C2/9394: AD 8C 0D     LDA $0D8C
+C2/9397: 29 07        AND #$07
+C2/9399: 05 00        ORA $00
+C2/939B: 8D 91 29     STA $2991
+C2/939E: AD 8A 0D     LDA $0D8A
+C2/93A1: 29 03        AND #$03
+C2/93A3: 8D 92 29     STA $2992
+C2/93A6: 28           PLP
+C2/93A7: 60           RTS

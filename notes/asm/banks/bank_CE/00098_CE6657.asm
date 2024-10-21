@@ -1,0 +1,88 @@
+CE/6657: 00 70        BRK $70
+CE/6659: 12 03        ORA ($03)
+CE/665B: 71 60        ADC ($60),Y
+CE/665D: 01 00        ORA ($00,X)
+CE/665F: 1B           TCS
+CE/6660: 03 72        ORA $72,S
+CE/6662: 03 73        ORA $73,S
+CE/6664: 03 24        ORA $24,S
+CE/6666: 01 6F        ORA ($6F,X)
+CE/6668: 00 F8        BRK $F8
+CE/666A: FF E0 00 8D  SBC $8D00E0,X
+CE/666E: 66 B1        ROR $B1
+CE/6670: 66 C8        ROR $C8
+CE/6672: 66 E3        ROR $E3
+CE/6674: 66 F6        ROR $F6
+CE/6676: 66 05        ROR $05
+CE/6678: 67 4C        ADC [$4C]
+CE/667A: 67 6E        ADC [$6E]
+CE/667C: 67 90        ADC [$90]
+CE/667E: 67 B2        ADC [$B2]
+CE/6680: 67 E9        ADC [$E9]
+CE/6682: 67 01        ADC [$01]
+CE/6684: 68           PLA
+CE/6685: 19 68 85     ORA $8568,Y
+CE/6688: 09 93 09     ORA #$0993
+CE/668B: 93 09        STA ($09,S),Y
+CE/668D: 2D 80 02     AND $0280
+CE/6690: F8           SED
+CE/6691: 72 18        ADC ($18)
+CE/6693: 03 10        ORA $10,S
+CE/6695: 02 22        COP $22
+CE/6697: 24 01        BIT $01
+CE/6699: 20 01 78     JSR $7801
+CE/669C: B2 1E        LDA ($1E)
+CE/669E: 33 34        AND ($34,S),Y
+CE/66A0: 1B           TCS
+CE/66A1: 20 78 1E     JSR $1E78
+CE/66A4: 34 36        BIT $36,X
+CE/66A6: 22 1B 00 36  JSR $36001B
+CE/66AA: 06 03        ASL $03
+CE/66AC: 24 07        BIT $07
+CE/66AE: 2E 01 00     ROL $0001
+CE/66B1: 72 18        ADC ($18)
+CE/66B3: 03 10        ORA $10,S
+CE/66B5: 02 22        COP $22
+CE/66B7: 24 01        BIT $01
+CE/66B9: 20 01 1E     JSR $1E01
+CE/66BC: 33 20        AND ($20,S),Y
+CE/66BE: 50 36        BVC $66F6
+CE/66C0: 1E 34 22     ASL $2234,X
+CE/66C3: 1B           TCS
+CE/66C4: 00 06        BRK $06
+CE/66C6: 03 00        ORA $00,S
+CE/66C8: 72 18        ADC ($18)
+CE/66CA: 1E 31 36     ASL $3631,X
+CE/66CD: 20 01 1E     JSR $1E01
+CE/66D0: 33 36        AND ($36,S),Y
+CE/66D2: 20 26 36     JSR $3626
+CE/66D5: 1E 34 22     ASL $2234,X
+CE/66D8: 1B           TCS
+CE/66D9: 00 78        BRK $78
+CE/66DB: F1 2D        SBC ($2D),Y
+CE/66DD: 80 12        BRA $66F1
+CE/66DF: 38           SEC
+CE/66E0: 06 03        ASL $03
+CE/66E2: 00 22        BRK $22
+CE/66E4: 0E 01 1E     ASL $1E01
+CE/66E7: 08           PHP
+CE/66E8: 22 0F 01 1E  JSR $1E010F
+CE/66EC: 09 24 06     ORA #$0624
+CE/66EF: 1E 06 20     ASL $2006,X
+CE/66F2: 14 50        TRB $50
+CE/66F4: 36 00        ROL $00,X
+CE/66F6: 22 0E 01 1E  JSR $1E010E
+CE/66FA: 08           PHP
+CE/66FB: 22 0F 01 1E  JSR $1E010F
+CE/66FF: 09 24 06     ORA #$0624
+CE/6702: 1E 06 00     ASL $0006,X
+CE/6705: D9 30 1B     CMP $1B30,Y
+CE/6708: 0B           PHD
+CE/6709: 72 03        ADC ($03)
+CE/670B: 73 02        ADC ($02,S),Y
+CE/670D: 43 0B        EOR $0B,S
+CE/670F: 00 F0        BRK $F0
+CE/6711: 76 00        ROR $00,X
+CE/6713: 01 0C        ORA ($0C,X)
+CE/6715: 02 00        COP $00
+CE/6717: 60           RTS

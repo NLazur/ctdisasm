@@ -1,0 +1,8 @@
+C0/4EC7: A6 6D        LDX $6D
+C0/4EC9: BD 80 1A     LDA $1A80,X
+C0/4ECC: F0 11        BEQ $4EDF
+C0/4ECE: BD 01 1A     LDA $1A01,X
+C0/4ED1: F0 03        BEQ $4ED6
+C0/4ED3: BB           TYX
+C0/4ED4: 18           CLC
+C0/4ED5: 60           RTS

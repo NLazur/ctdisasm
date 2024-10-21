@@ -1,0 +1,168 @@
+CF/CF05: 16 10        ASL $10,X
+CF/CF07: D6 43        DEC $43,X
+CF/CF09: 16 46        ASL $46,X
+CF/CF0B: 16 49        ASL $49,X
+CF/CF0D: 16 22        ASL $22,X
+CF/CF0F: 96 4C        STX $4C,Y
+CF/CF11: 16 4F        ASL $4F,X
+CF/CF13: 16 52        ASL $52,X
+CF/CF15: 16 2E        ASL $2E,X
+CF/CF17: 96 55        STX $55,Y
+CF/CF19: 16 58        ASL $58,X
+CF/CF1B: 16 37        ASL $37,X
+CF/CF1D: 96 5B        STX $5B,Y
+CF/CF1F: 16 1C        ASL $1C,X
+CF/CF21: 20 5E 16     JSR $165E
+CF/CF24: EF D5 EC D5  SBC $D5ECD5
+CF/CF28: 61 16        ADC ($16,X)
+CF/CF2A: 1C 20 F8     TRB $F820
+CF/CF2D: 95 FB        STA $FB,X
+CF/CF2F: 95 64        STA $64,X
+CF/CF31: 16 67        ASL $67,X
+CF/CF33: 16 01        ASL $01,X
+CF/CF35: 96 1C        STX $1C,Y
+CF/CF37: 20 04 96     JSR $9604
+CF/CF3A: 07 96        ORA [$96]
+CF/CF3C: 0A           ASL
+CF/CF3D: 96 0D        STX $0D,Y
+CF/CF3F: 96 1C        STX $1C,Y
+CF/CF41: 20 6A 16     JSR $166A
+CF/CF44: 61 96        ADC ($96,X)
+CF/CF46: 1C 20 6D     TRB $6D20
+CF/CF49: 16 70        ASL $70,X
+CF/CF4B: 16 64        ASL $64,X
+CF/CF4D: 96 67        STX $67,Y
+CF/CF4F: 96 D1        STX $D1,Y
+CF/CF51: 11 D1        ORA ($D1),Y
+CF/CF53: 51 1C        EOR ($1C),Y
+CF/CF55: 20 1C 20     JSR $201C
+CF/CF58: 8B           PHB
+CF/CF59: 0E 8E 0E     ASL $0E8E
+CF/CF5C: 91 0E        STA ($0E),Y
+CF/CF5E: 1C 20 73     TRB $7320
+CF/CF61: 16 76        ASL $76,X
+CF/CF63: 16 79        ASL $79,X
+CF/CF65: 16 46        ASL $46,X
+CF/CF67: 96 7C        STX $7C,Y
+CF/CF69: 16 7F        ASL $7F,X
+CF/CF6B: 16 82        ASL $82,X
+CF/CF6D: 16 4F        ASL $4F,X
+CF/CF6F: 96 D1        STX $D1,Y
+CF/CF71: 91 D1        STA ($D1),Y
+CF/CF73: D1 85        CMP ($85),Y
+CF/CF75: 16 88        ASL $88,X
+CF/CF77: 16 A6        ASL $A6,X
+CF/CF79: 0E A9 0E     ASL $0EA9
+CF/CF7C: AC 0E 1C     LDY $1C0E
+CF/CF7F: 20 33 24     JSR $2433
+CF/CF82: 35 24        AND $24,X
+CF/CF84: 41 24        EOR ($24,X)
+CF/CF86: 41 64        EOR ($64,X)
+CF/CF88: 43 24        EOR $24,S
+CF/CF8A: 43 64        EOR $64,S
+CF/CF8C: 45 24        EOR $24
+CF/CF8E: 45 64        EOR $64
+CF/CF90: 1C 20 1C     TRB $1C20
+CF/CF93: 20 8B 16     JSR $168B
+CF/CF96: 8E 16 91     STX $9116
+CF/CF99: 16 94        ASL $94,X
+CF/CF9B: 16 97        ASL $97,X
+CF/CF9D: 16 9A        ASL $9A,X
+CF/CF9F: 16 33        ASL $33,X
+CF/CFA1: A4 35        LDY $35
+CF/CFA3: A4 33        LDY $33
+CF/CFA5: A4 33        LDY $33
+CF/CFA7: E4 47        CPX $47
+CF/CFA9: 24 47        BIT $47
+CF/CFAB: 64 49        STZ $49
+CF/CFAD: 24 49        BIT $49
+CF/CFAF: 64 3F        STZ $3F
+CF/CFB1: A4 3F        LDY $3F
+CF/CFB3: E4 9D        CPX $9D
+CF/CFB5: 16 A0        ASL $A0,X
+CF/CFB7: 16 A3        ASL $A3,X
+CF/CFB9: 36 1C        ROL $1C,X
+CF/CFBB: 20 1C 20     JSR $201C
+CF/CFBE: 1C 20 37     TRB $3720
+CF/CFC1: 24 39        BIT $39
+CF/CFC3: 24 3B        BIT $3B
+CF/CFC5: 24 3D        BIT $3D
+CF/CFC7: 24 3F        BIT $3F
+CF/CFC9: 24 1C        BIT $1C
+CF/CFCB: 20 8A 35     JSR $358A
+CF/CFCE: 8C 35 8E     STY $8E35
+CF/CFD1: 35 75        AND $75,X
+CF/CFD3: 26 90        ROL $90
+CF/CFD5: 35 1C        AND $1C,X
+CF/CFD7: 20 92 35     JSR $3592
+CF/CFDA: 1C 20 53     TRB $5320
+CF/CFDD: 2E 53 6E     ROL $6E53
+CF/CFE0: 37 A4        AND [$A4],Y
+CF/CFE2: 39 A4 3B     AND $3BA4,Y
+CF/CFE5: A4 3D        LDY $3D
+CF/CFE7: A4 3F        LDY $3F
+CF/CFE9: A4 1C        LDY $1C
+CF/CFEB: 20 33 A4     JSR $A433
+CF/CFEE: 9A           TXS
+CF/CFEF: 35 9C        AND $9C,X
+CF/CFF1: 35 9E        AND $9E,X
+CF/CFF3: 35 A0        AND $A0,X
+CF/CFF5: 35 A2        AND $A2,X
+CF/CFF7: 35 3F        AND $3F,X
+CF/CFF9: A4 A4        LDY $A4
+CF/CFFB: 35 53        AND $53,X
+CF/CFFD: AE 53 EE     LDX $EE53
+CF/D000: A5 16        LDA $16
+CF/D002: A8           TAY
+CF/D003: 16 AB        ASL $AB,X
+CF/D005: 16 AE        ASL $AE,X
+CF/D007: 16 B1        ASL $B1,X
+CF/D009: 16 B4        ASL $B4,X
+CF/D00B: 16 B7        ASL $B7,X
+CF/D00D: 16 BA        ASL $BA,X
+CF/D00F: 16 1C        ASL $1C,X
+CF/D011: 20 BD 16     JSR $16BD
+CF/D014: C0 16        CPY #$16
+CF/D016: 1C 20 C3     TRB $C320
+CF/D019: 16 C6        ASL $C6,X
+CF/D01B: 16 C9        ASL $C9,X
+CF/D01D: 16 CC        ASL $CC,X
+CF/D01F: 16 CF        ASL $CF,X
+CF/D021: 16 D2        ASL $D2,X
+CF/D023: 16 D5        ASL $D5,X
+CF/D025: 16 D8        ASL $D8,X
+CF/D027: 16 DB        ASL $DB,X
+CF/D029: 16 DE        ASL $DE,X
+CF/D02B: 16 E1        ASL $E1,X
+CF/D02D: 16 E4        ASL $E4,X
+CF/D02F: 16 E7        ASL $E7,X
+CF/D031: 16 EA        ASL $EA,X
+CF/D033: 16 ED        ASL $ED,X
+CF/D035: 16 F0        ASL $F0,X
+CF/D037: 16 F3        ASL $F3,X
+CF/D039: 16 F6        ASL $F6,X
+CF/D03B: 16 F9        ASL $F9,X
+CF/D03D: 16 FC        ASL $FC,X
+CF/D03F: 16 FF        ASL $FF,X
+CF/D041: 16 02        ASL $02,X
+CF/D043: 17 05        ORA [$05],Y
+CF/D045: 17 05        ORA [$05],Y
+CF/D047: 57 AA        EOR [$AA],Y
+CF/D049: 00 AD        BRK $AD
+CF/D04B: 00 B0        BRK $B0
+CF/D04D: 00 B3        BRK $B3
+CF/D04F: 00 08        BRK $08
+CF/D051: 17 0B        ORA [$0B],Y
+CF/D053: 17 0E        ORA [$0E],Y
+CF/D055: 17 F0        ORA [$F0],Y
+CF/D057: 96 11        STX $11,Y
+CF/D059: 17 14        ORA [$14],Y
+CF/D05B: 17 17        ORA [$17],Y
+CF/D05D: 17 1A        ORA [$1A],Y
+CF/D05F: 17 1D        ORA [$1D],Y
+CF/D061: 17 1D        ORA [$1D],Y
+CF/D063: 57 20        EOR [$20],Y
+CF/D065: 17 20        ORA [$20],Y
+CF/D067: 57 B9        EOR [$B9],Y
+CF/D069: 00 B9        BRK $B9
+CF/D06B: 40           RTI

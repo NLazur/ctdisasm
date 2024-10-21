@@ -1,0 +1,31 @@
+D0/CBD2: 80 00        BRA $CBD4
+D0/CBD4: 00 00        BRK $00
+D0/CBD6: 00 00        BRK $00
+D0/CBD8: 00 00        BRK $00
+D0/CBDA: 00 00        BRK $00
+D0/CBDC: 00 03        BRK $03
+D0/CBDE: 00 05        BRK $05
+D0/CBE0: 00 0A        BRK $0A
+D0/CBE2: 01 15        ORA ($15,X)
+D0/CBE4: 02 2B        COP $2B
+D0/CBE6: 15 56        ORA $56,X
+D0/CBE8: 00 00        BRK $00
+D0/CBEA: 03 06        ORA $06,S
+D0/CBEC: 0D 1B 37     ORA $371B
+D0/CBEF: 6E 00 00     ROR $0000
+D0/CBF2: 00 F0        BRK $F0
+D0/CBF4: 04 0C        TSB $0C
+D0/CBF6: 21 E3        AND ($E3,X)
+D0/CBF8: 08           PHP
+D0/CBF9: 78           SEI
+D0/CBFA: 84 BC        STY $BC
+D0/CBFC: 82 FE 43     BRL $D00FFD
+D0/CBFF: DF 00 F0 FC  CMP $FCF000,X
+D0/CC03: 1F 87 C3 C1  ORA $C1C387,X
+D0/CC07: E0 00        CPX #$00
+D0/CC09: 00 00        BRK $00
+D0/CC0B: 00 00        BRK $00
+D0/CC0D: 00 00        BRK $00
+D0/CC0F: 00 80        BRK $80
+D0/CC11: 80 C0        BRA $CBD3
+D0/CC13: 40           RTI

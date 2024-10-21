@@ -1,0 +1,137 @@
+C3/50C4: 01 00        ORA ($00,X)
+C3/50C6: A6 0A        LDX $0A
+C3/50C8: 00 80        BRK $80
+C3/50CA: 7D F9 C4     ADC $C4F9,X
+C3/50CD: 7F 16 FF FF  ADC $FFFF16,X
+C3/50D1: 29 CC        AND #$CC
+C3/50D3: 00 95        BRK $95
+C3/50D5: 7D 08 00     ADC $0008,X
+C3/50D8: 11 C7        ORA ($C7),Y
+C3/50DA: 0A           ASL
+C3/50DB: 09 00        ORA #$00
+C3/50DD: 00 9D        BRK $9D
+C3/50DF: 7D FB 00     ADC $00FB,X
+C3/50E2: 2E F9 CB     ROL $CBF9
+C3/50E5: 7F 03 EE 00  ADC $00EE03,X
+C3/50E9: 78           SEI
+C3/50EA: 30 11        BMI $50FD
+C3/50EC: 00 B1        BRK $B1
+C3/50EE: 7D F9 05     ADC $05F9,X
+C3/50F1: 00 82        BRK $82
+C3/50F3: 91 31        STA ($31),Y
+C3/50F5: 00 BE        BRK $BE
+C3/50F7: 7D F2 0A     ADC $0AF2,X
+C3/50FA: C8           INY
+C3/50FB: 0A           ASL
+C3/50FC: 00 02        BRK $02
+C3/50FE: B6 00        LDX $00,Y
+C3/5100: D4 7C        PEI $7C
+C3/5102: 28           PLP
+C3/5103: 01 51        ORA ($51,X)
+C3/5105: 01 08        ORA ($08,X)
+C3/5107: FA           PLX
+C3/5108: 79 80 54     ADC $5480,Y
+C3/510B: 31 91        AND ($91),Y
+C3/510D: B3 00        LDA ($00,S),Y
+C3/510F: DC C0 7D     JMP [$7DC0]
+C3/5112: F2 10        SBC ($10)
+C3/5114: 0A           ASL
+C3/5115: EF FF C0 30  SBC $30C0FF
+C3/5119: C9 00        CMP #$00
+C3/511B: 88           DEY
+C3/511C: FA           PLX
+C3/511D: F1 81        SBC ($81),Y
+C3/511F: 37 00        AND [$00],Y
+C3/5121: FA           PLX
+C3/5122: 5B           TCD
+C3/5123: 83 40        STA $40,S
+C3/5125: 21 F4        AND ($F4,X)
+C3/5127: 01 D0        ORA ($D0,X)
+C3/5129: 4C 0F 00     JMP $000F
+C3/512C: 63 00        ADC $00,S
+C3/512E: BB           TYX
+C3/512F: 10 65        BPL $5196
+C3/5131: 0B           PHD
+C3/5132: 1B           TCS
+C3/5133: 0C 01 70     TSB $7001
+C3/5136: 10 17        BPL $514F
+C3/5138: 00 03        BRK $03
+C3/513A: 7E 11 FD     ROR $FD11,X
+C3/513D: FF CF B4 40  SBC $40B4CF,X
+C3/5141: 74 0B        STZ $0B,X
+C3/5143: 0D 30 3C     ORA $3C30
+C3/5146: 0B           PHD
+C3/5147: 18           CLC
+C3/5148: 7E E8 10     ROR $10E8,X
+C3/514B: CC 00 07     CPY $0700
+C3/514E: 92 0B        STA ($0B)
+C3/5150: 0A           ASL
+C3/5151: 30 59        BMI $51AC
+C3/5153: 0B           PHD
+C3/5154: 30 7E        BMI $51D4
+C3/5156: 11 04        ORA ($04),Y
+C3/5158: 00 1E        BRK $1E
+C3/515A: 12 DA        ORA ($DA)
+C3/515C: 00 9D        BRK $9D
+C3/515E: 0B           PHD
+C3/515F: 0A           ASL
+C3/5160: 10 C8        BPL $512A
+C3/5162: 20 45 7E     JSR $7E45
+C3/5165: 11 3C        ORA ($3C),Y
+C3/5167: F8           SED
+C3/5168: FF 15 10 2A  SBC $2A1015,X
+C3/516C: 10 0A        BPL $5178
+C3/516E: 00 DD        BRK $DD
+C3/5170: 00 07        BRK $07
+C3/5172: 00 30        BRK $30
+C3/5174: 5A           PHY
+C3/5175: 7E 11 FA     ROR $FA11,X
+C3/5178: 57 20        EOR [$20],Y
+C3/517A: EB           XBA
+C3/517B: 00 1F        BRK $1F
+C3/517D: 00 E4        BRK $E4
+C3/517F: 6F 7E A6 0C  ADC $0CA67E
+C3/5183: 7D 7E BF     ADC $BF7E,X
+C3/5186: 10 E2        BPL $516A
+C3/5188: 11 BA        ORA ($BA),Y
+C3/518A: 90 85        BCC $5111
+C3/518C: E2 0C        SEP #$0C
+C3/518E: 03 04        ORA $04,S
+C3/5190: 22 F5 04 F6  JSR $F604F5
+C3/5194: F1 FE        SBC ($FE),Y
+C3/5196: 0C 00 F6     TSB $F600
+C3/5199: 18           CLC
+C3/519A: DC 80 00     JMP [$0080]
+C3/519D: FA           PLX
+C3/519E: F2 7B        SBC ($7B)
+C3/51A0: 99 D7 0C     STA $0CD7,Y
+C3/51A3: AE 7E AF     LDX $AF7E
+C3/51A6: 01 BD        ORA ($BD,X)
+C3/51A8: 11 1F        ORA ($1F),Y
+C3/51AA: 83 FE        STA $FE,S
+C3/51AC: 00 04        BRK $04
+C3/51AE: BC 7E 42     LDY $427E,X
+C3/51B1: 1C C4 7E     TRB $7EC4
+C3/51B4: D1 82        CMP ($82),Y
+C3/51B6: 49 20        EOR #$20
+C3/51B8: 37 54        AND [$54],Y
+C3/51BA: 37 12        AND [$12],Y
+C3/51BC: 7F 04 05 F8  ADC $F80504,X
+C3/51C0: 7E 00 A2     ROR $A200,X
+C3/51C3: C7 7E        CMP [$7E]
+C3/51C5: A9 09        LDA #$09
+C3/51C7: 00 80        BRK $80
+C3/51C9: 15 40        ORA $40,X
+C3/51CB: D1 82        CMP ($82),Y
+C3/51CD: D1 82        CMP ($82),Y
+C3/51CF: 7D 7F 19     ADC $197F,X
+C3/51D2: 10 35        BPL $5209
+C3/51D4: 02 7F        COP $7F
+C3/51D6: 17 10        ORA [$10],Y
+C3/51D8: DC 7E A9     JMP [$A97E]
+C3/51DB: 0B           PHD
+C3/51DC: 00 A0        BRK $A0
+C3/51DE: 34 20        BIT $20,X
+C3/51E0: 09 41        ORA #$41
+C3/51E2: 0B           PHD
+C3/51E3: 60           RTS

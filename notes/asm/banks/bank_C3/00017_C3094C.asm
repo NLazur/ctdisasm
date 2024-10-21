@@ -1,0 +1,39 @@
+C3/094C: 08           PHP
+C3/094D: E2 20        SEP #$20
+C3/094F: A5 F1        LDA $F1
+C3/0951: 45 F2        EOR $F2
+C3/0953: 08           PHP
+C3/0954: A5 F2        LDA $F2
+C3/0956: 10 03        BPL $095B
+C3/0958: 49 FF        EOR #$FF
+C3/095A: 1A           INC
+C3/095B: 8D 02 42     STA $4202
+C3/095E: C2 20        REP #$20
+C3/0960: A5 F0        LDA $F0
+C3/0962: 10 04        BPL $0968
+C3/0964: 49 FF FF     EOR #$FFFF
+C3/0967: 1A           INC
+C3/0968: E2 20        SEP #$20
+C3/096A: 8D 03 42     STA $4203
+C3/096D: 64 F7        STZ $F7
+C3/096F: EB           XBA
+C3/0970: AE 16 42     LDX $4216
+C3/0973: 8D 03 42     STA $4203
+C3/0976: 86 F4        STX $F4
+C3/0978: C2 21        REP #$21
+C3/097A: AD 16 42     LDA $4216
+C3/097D: 65 F5        ADC $F5
+C3/097F: 85 F5        STA $F5
+C3/0981: 28           PLP
+C3/0982: 10 16        BPL $099A
+C3/0984: C2 21        REP #$21
+C3/0986: A5 F4        LDA $F4
+C3/0988: 49 FF FF     EOR #$FFFF
+C3/098B: 69 01 00     ADC #$0001
+C3/098E: 85 F4        STA $F4
+C3/0990: A5 F6        LDA $F6
+C3/0992: 49 FF FF     EOR #$FFFF
+C3/0995: 69 00 00     ADC #$0000
+C3/0998: 85 F6        STA $F6
+C3/099A: 28           PLP
+C3/099B: 6B           RTL

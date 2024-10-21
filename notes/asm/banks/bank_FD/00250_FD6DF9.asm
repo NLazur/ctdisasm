@@ -1,0 +1,137 @@
+FD/6DF9: 31 61        AND ($61),Y
+FD/6DFB: 77 00        ADC [$00],Y
+FD/6DFD: 23 3B        AND $3B,S
+FD/6DFF: 63 36        ADC $36,S
+FD/6E01: 66 5F        ROR $5F
+FD/6E03: 80 5B        BRA $6E60
+FD/6E05: 41 FA        EOR ($FA,X)
+FD/6E07: 01 1F        ORA ($1F,X)
+FD/6E09: C0 5E 80     CPY #$805E
+FD/6E0C: 5C 02 00 19  JMP $190002
+FD/6E10: 82 C0 6F     BRL $FDDDD3
+FD/6E13: 04 13        TSB $13
+FD/6E15: 00 11        BRK $11
+FD/6E17: 00 18        BRK $18
+FD/6E19: ED 04 01     SBC $0104
+FD/6E1C: 95 27        STA $27,X
+FD/6E1E: 3E 3E 13     ROL $133E,X
+FD/6E21: 13 11        ORA ($11,S),Y
+FD/6E23: 11 18        ORA ($18),Y
+FD/6E25: 04 18        TSB $18
+FD/6E27: 0C 10 40     TSB $4010
+FD/6E2A: 13 03        ORA ($03,S),Y
+FD/6E2C: 03 13        ORA $13,S
+FD/6E2E: 00 00        BRK $00
+FD/6E30: 08           PHP
+FD/6E31: 04 0C        TSB $0C
+FD/6E33: 02 13        COP $13
+FD/6E35: 10 11        BPL $6E48
+FD/6E37: 11 00        ORA ($00),Y
+FD/6E39: 11 01        ORA ($01),Y
+FD/6E3B: 01 13        ORA ($13,X)
+FD/6E3D: 1C 1B 1C     TRB $1C1B
+FD/6E40: 0C 18 0F     TSB $0F18
+FD/6E43: 0C 0F 26     TSB $260F
+FD/6E46: 10 10        BPL $6E58
+FD/6E48: 10 D8        BPL $6E22
+FD/6E4A: D0 D8        BNE $6E24
+FD/6E4C: 00 D0        BRK $D0
+FD/6E4E: 10 00        BPL $6E50
+FD/6E50: 20 30 40     JSR $4030
+FD/6E53: C8           INY
+FD/6E54: 00 82        BRK $82
+FD/6E56: 48           PHA
+FD/6E57: CA           DEX
+FD/6E58: 15 B8        ORA $B8,X
+FD/6E5A: 68           PLA
+FD/6E5B: F8           SED
+FD/6E5C: 28           PLP
+FD/6E5D: 50 19        BVC $6E78
+FD/6E5F: 05 18        ORA $18
+FD/6E61: C8           INY
+FD/6E62: C8           INY
+FD/6E63: 48           PHA
+FD/6E64: 10 20        BPL $6E86
+FD/6E66: 98           TYA
+FD/6E67: 17 01        ORA [$01],Y
+FD/6E69: 06 01        ASL $01
+FD/6E6B: 00 0E        BRK $0E
+FD/6E6D: 11 1E        ORA ($1E),Y
+FD/6E6F: 23 3C        AND $3C,S
+FD/6E71: 43 7C        EOR $7C,S
+FD/6E73: 82 62 FD     BRL $FD6BD8
+FD/6E76: 98           TYA
+FD/6E77: 57 1F        EOR [$1F],Y
+FD/6E79: 00 3F        BRK $3F
+FD/6E7B: C4 22        CPY $22
+FD/6E7D: FA           PLX
+FD/6E7E: 12 A0        ORA ($A0)
+FD/6E80: 00 80        BRK $80
+FD/6E82: 90 80        BCC $6E04
+FD/6E84: C8           INY
+FD/6E85: C0 CC C0     CPY #$C0CC
+FD/6E88: EE 88 E0     INC $E088
+FD/6E8B: 67 E0        ADC [$E0]
+FD/6E8D: 58           CLI
+FD/6E8E: 17 60        ORA [$60],Y
+FD/6E90: 00 70        BRK $70
+FD/6E92: 24 03        BIT $03
+FD/6E94: 08           PHP
+FD/6E95: 3C 00 1E     BIT $1E00,X
+FD/6E98: 48           PHA
+FD/6E99: 04 08        TSB $08
+FD/6E9B: 10 00        BPL $6E9D
+FD/6E9D: 18           CLC
+FD/6E9E: 00 3C        BRK $3C
+FD/6EA0: 18           CLC
+FD/6EA1: 5A           PHY
+FD/6EA2: 18           CLC
+FD/6EA3: 01 25        ORA ($25,X)
+FD/6EA5: 2C 72 20     BIT $2072
+FD/6EA8: 51 76        EOR ($76),Y
+FD/6EAA: 24 7E        BIT $7E
+FD/6EAC: 18           CLC
+FD/6EAD: 01 00        ORA ($00,X)
+FD/6EAF: 24 3C        BIT $3C
+FD/6EB1: 00 66        BRK $66
+FD/6EB3: 7E 3D 3E     ROR $3E3D,X
+FD/6EB6: 5E 7E 6C     LSR $6C7E,X
+FD/6EB9: 7F 00 7E 7E  ADC $7E7E00,X
+FD/6EBD: 05 09        ORA $09
+FD/6EBF: 04 08        TSB $08
+FD/6EC1: 54 78 00     MVN $78,$00
+FD/6EC4: 94 F8        STY $F8,X
+FD/6EC6: 67 B4        ADC [$B4]
+FD/6EC8: AD 74 56     LDA $5674
+FD/6ECB: EC 48 56     CPX $5648
+FD/6ECE: EC 0E 01     CPX $010E
+FD/6ED1: 04 7F        TSB $7F
+FD/6ED3: 7F D7 71 33  ADC $3371D7,X
+FD/6ED7: 00 33        BRK $33
+FD/6ED9: B3 33        LDA ($33,S),Y
+FD/6EDB: FF 33 F3 33  SBC $33F333,X
+FD/6EDF: 3B           TSC
+FD/6EE0: 00 37        BRK $37
+FD/6EE2: 32 32        AND ($32)
+FD/6EE4: 76 3A        ROR $3A,X
+FD/6EE6: 23 77        AND $77,S
+FD/6EE8: CC 0A FF     CPY $FF0A
+FD/6EEB: 02 50        COP $50
+FD/6EED: CD 02 00     CMP $0002
+FD/6EF0: DC FF CF     JMP [$CFFF]
+FD/6EF3: CF 00 87 87  CMP $878700
+FD/6EF7: 1F 63 63 03  ORA $036363,X
+FD/6EFB: 0B           PHD
+FD/6EFC: 73 00        ADC ($00,S),Y
+FD/6EFE: 05 01        ORA $01
+FD/6F00: 63 13        ADC $13,S
+FD/6F02: 53 2B        EOR ($2B,S),Y
+FD/6F04: 30 FF        BMI $6F05
+FD/6F06: 56 78        LSR $78,X
+FD/6F08: C2 01        REP #$01
+FD/6F0A: 02 10        COP $10
+FD/6F0C: FE 08 20     INC $2008,X
+FD/6F0F: 10 65        BPL $6F76
+FD/6F11: 05 30        ORA $30
+FD/6F13: 00 10        BRK $10
+FD/6F15: 40           RTI

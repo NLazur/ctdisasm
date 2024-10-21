@@ -1,0 +1,643 @@
+CD/91B5: 01 73        ORA ($73,X)
+CD/91B7: 00 1B        BRK $1B
+CD/91B9: 09 02 02     ORA #$0202
+CD/91BC: 24 01        BIT $01
+CD/91BE: 20 0A 78     JSR $780A
+CD/91C1: 64 70        STZ $70
+CD/91C3: 0C 12 0C     TSB $0C12
+CD/91C6: 1B           TCS
+CD/91C7: 0C 36 20     TSB $2036
+CD/91CA: 0A           ASL
+CD/91CB: 12 09        ORA ($09)
+CD/91CD: 1B           TCS
+CD/91CE: 09 71 36     ORA #$3671
+CD/91D1: 00 73        BRK $73
+CD/91D3: 00 02        BRK $02
+CD/91D5: 00 1B        BRK $1B
+CD/91D7: 09 24 01     ORA #$0124
+CD/91DA: 20 0A 70     JSR $700A
+CD/91DD: 0C 12 3E     TSB $3E12
+CD/91E0: 1B           TCS
+CD/91E1: 3E 24 02     ROL $0224,X
+CD/91E4: 20 0A 12     JSR $120A
+CD/91E7: 09 1B 09     ORA #$091B
+CD/91EA: 71 00        ADC ($00),Y
+CD/91EC: 73 00        ADC ($00,S),Y
+CD/91EE: 02 00        COP $00
+CD/91F0: 1B           TCS
+CD/91F1: 09 24 01     ORA #$0124
+CD/91F4: 20 0A 70     JSR $700A
+CD/91F7: 0C 12 3D     TSB $3D12
+CD/91FA: 1B           TCS
+CD/91FB: 3D 24 02     AND $0224,X
+CD/91FE: 20 0A 12     JSR $120A
+CD/9201: 09 1B 09     ORA #$091B
+CD/9204: 71 00        ADC ($00),Y
+CD/9206: 73 00        ADC ($00,S),Y
+CD/9208: 02 00        COP $00
+CD/920A: 1B           TCS
+CD/920B: 09 24 01     ORA #$0124
+CD/920E: 20 0A 70     JSR $700A
+CD/9211: 0C 12 3C     TSB $3C12
+CD/9214: 1B           TCS
+CD/9215: 3C 24 02     BIT $0224,X
+CD/9218: 20 0A 12     JSR $120A
+CD/921B: 09 1B 09     ORA #$091B
+CD/921E: 71 00        ADC ($00),Y
+CD/9220: 73 00        ADC ($00,S),Y
+CD/9222: 02 00        COP $00
+CD/9224: 1B           TCS
+CD/9225: 09 24 01     ORA #$0124
+CD/9228: 20 0A 70     JSR $700A
+CD/922B: 0C 12 3F     TSB $3F12
+CD/922E: 1B           TCS
+CD/922F: 3F 24 02 20  AND $200224,X
+CD/9233: 0A           ASL
+CD/9234: 12 09        ORA ($09)
+CD/9236: 1B           TCS
+CD/9237: 09 71 00     ORA #$0071
+CD/923A: 73 00        ADC ($00,S),Y
+CD/923C: 02 00        COP $00
+CD/923E: 1B           TCS
+CD/923F: 09 24 01     ORA #$0124
+CD/9242: 20 0A 70     JSR $700A
+CD/9245: 0C 12 3B     TSB $3B12
+CD/9248: 1B           TCS
+CD/9249: 3B           TSC
+CD/924A: 24 02        BIT $02
+CD/924C: 20 0A 12     JSR $120A
+CD/924F: 09 1B 09     ORA #$091B
+CD/9252: 71 00        ADC ($00),Y
+CD/9254: 73 00        ADC ($00,S),Y
+CD/9256: 02 00        COP $00
+CD/9258: 1B           TCS
+CD/9259: 09 24 01     ORA #$0124
+CD/925C: 20 0A 70     JSR $700A
+CD/925F: 0C 12 3A     TSB $3A12
+CD/9262: 1B           TCS
+CD/9263: 3A           DEC
+CD/9264: 24 02        BIT $02
+CD/9266: 20 0A 12     JSR $120A
+CD/9269: 09 1B 09     ORA #$091B
+CD/926C: 71 00        ADC ($00),Y
+CD/926E: 73 00        ADC ($00,S),Y
+CD/9270: 02 00        COP $00
+CD/9272: 1B           TCS
+CD/9273: 09 24 01     ORA #$0124
+CD/9276: 20 0A 70     JSR $700A
+CD/9279: 0C 12 39     TSB $3912
+CD/927C: 1B           TCS
+CD/927D: 39 24 02     AND $0224,Y
+CD/9280: 20 0A 12     JSR $120A
+CD/9283: 09 1B 09     ORA #$091B
+CD/9286: 71 00        ADC ($00),Y
+CD/9288: F8           SED
+CD/9289: FF F8 FF C0  SBC $C0FFF8,X
+CD/928D: 92 C3        STA ($C3)
+CD/928F: 92 C4        STA ($C4)
+CD/9291: 92 C5        STA ($C5)
+CD/9293: 92 C6        STA ($C6)
+CD/9295: 92 C7        STA ($C7)
+CD/9297: 92 C8        STA ($C8)
+CD/9299: 92 C9        STA ($C9)
+CD/929B: 92 CA        STA ($CA)
+CD/929D: 92 CB        STA ($CB)
+CD/929F: 92 CC        STA ($CC)
+CD/92A1: 92 CD        STA ($CD)
+CD/92A3: 92 CE        STA ($CE)
+CD/92A5: 92 CF        STA ($CF)
+CD/92A7: 92 D2        STA ($D2)
+CD/92A9: 92 D3        STA ($D3)
+CD/92AB: 92 D4        STA ($D4)
+CD/92AD: 92 D5        STA ($D5)
+CD/92AF: 92 D6        STA ($D6)
+CD/92B1: 92 D7        STA ($D7)
+CD/92B3: 92 D8        STA ($D8)
+CD/92B5: 92 D9        STA ($D9)
+CD/92B7: 92 DA        STA ($DA)
+CD/92B9: 92 DB        STA ($DB)
+CD/92BB: 92 DC        STA ($DC)
+CD/92BD: 92 DD        STA ($DD)
+CD/92BF: 92 2E        STA ($2E)
+CD/92C1: 01 00        ORA ($00,X)
+CD/92C3: 00 00        BRK $00
+CD/92C5: 00 00        BRK $00
+CD/92C7: 00 00        BRK $00
+CD/92C9: 00 00        BRK $00
+CD/92CB: 00 00        BRK $00
+CD/92CD: 00 00        BRK $00
+CD/92CF: 2E 01 00     ROL $0001
+CD/92D2: 00 00        BRK $00
+CD/92D4: 00 00        BRK $00
+CD/92D6: 00 00        BRK $00
+CD/92D8: 00 00        BRK $00
+CD/92DA: 00 00        BRK $00
+CD/92DC: 00 00        BRK $00
+CD/92DE: 90 FF        BCC $92DF
+CD/92E0: 80 00        BRA $92E2
+CD/92E2: F8           SED
+CD/92E3: 92 B3        STA ($B3)
+CD/92E5: 83 BC        STA $BC,S
+CD/92E7: 83 E2        STA $E2,S
+CD/92E9: 83 FD        STA $FD,S
+CD/92EB: 83 18        STA $18,S
+CD/92ED: 84 33        STY $33
+CD/92EF: 84 4C        STY $4C
+CD/92F1: 84 67        STY $67
+CD/92F3: 84 82        STY $82
+CD/92F5: 84 DC        STY $DC
+CD/92F7: 95 27        STA $27,X
+CD/92F9: 33 0C        AND ($0C,S),Y
+CD/92FB: 41 1E        EOR ($1E,X)
+CD/92FD: 00 41        BRK $41
+CD/92FF: 1F 01 33 3E  ORA $3E3301,X
+CD/9303: 41 1E        EOR ($1E,X)
+CD/9305: 02 41        COP $41
+CD/9307: 1F 03 33 3D  ORA $3D3303,X
+CD/930B: 41 1E        EOR ($1E,X)
+CD/930D: 04 41        TSB $41
+CD/930F: 1F 05 33 3C  ORA $3C3305,X
+CD/9313: 41 1E        EOR ($1E,X)
+CD/9315: 06 41        ASL $41
+CD/9317: 1F 07 33 3F  ORA $3F3307,X
+CD/931B: 41 1E        EOR ($1E,X)
+CD/931D: 08           PHP
+CD/931E: 41 1F        EOR ($1F,X)
+CD/9320: 09 33 3B     ORA #$3B33
+CD/9323: 41 1E        EOR ($1E,X)
+CD/9325: 0A           ASL
+CD/9326: 41 1F        EOR ($1F,X)
+CD/9328: 0B           PHD
+CD/9329: 33 3A        AND ($3A,S),Y
+CD/932B: 41 1E        EOR ($1E,X)
+CD/932D: 0C 41 1F     TSB $1F41
+CD/9330: 0D 33 39     ORA $3933
+CD/9333: 41 1E        EOR ($1E,X)
+CD/9335: 0E 41 1F     ASL $1F41
+CD/9338: 0F 33 09 72  ORA $720933
+CD/933C: 0D 36 03     ORA $0336
+CD/933F: 07 24        ORA [$24]
+CD/9341: 12 28        ORA ($28)
+CD/9343: 06 03        ASL $03
+CD/9345: 20 0F 50     JSR $500F
+CD/9348: 2E 01 00     ROL $0001
+CD/934B: 90 FF        BCC $934C
+CD/934D: 90 FF        BCC $934E
+CD/934F: 77 93        ADC [$93],Y
+CD/9351: E6 7D        INC $7D
+CD/9353: EF 7D 07 7E  SBC $7E077D
+CD/9357: 1D 7E 33     ORA $337E,X
+CD/935A: 7E 49 7E     ROR $7E49,X
+CD/935D: 5F 7E 75 7E  EOR $7E757E,X
+CD/9361: 8B           PHB
+CD/9362: 7E 77 93     ROR $9377,X
+CD/9365: A1 7E        LDA ($7E,X)
+CD/9367: EF 7D 07 7E  SBC $7E077D
+CD/936B: 1D 7E 33     ORA $337E,X
+CD/936E: 7E 49 7E     ROR $7E49,X
+CD/9371: 5F 7E 75 7E  EOR $7E757E,X
+CD/9375: 8B           PHB
+CD/9376: 7E 33 39     ROR $3933,X
+CD/9379: 41 1E        EOR ($1E,X)
+CD/937B: 00 41        BRK $41
+CD/937D: 1F 01 33 3A  ORA $3A3301,X
+CD/9381: 41 1E        EOR ($1E,X)
+CD/9383: 02 41        COP $41
+CD/9385: 1F 03 33 3B  ORA $3B3303,X
+CD/9389: 41 1E        EOR ($1E,X)
+CD/938B: 04 41        TSB $41
+CD/938D: 1F 05 33 3F  ORA $3F3305,X
+CD/9391: 41 1E        EOR ($1E,X)
+CD/9393: 06 41        ASL $41
+CD/9395: 1F 07 33 3C  ORA $3C3307,X
+CD/9399: 41 1E        EOR ($1E,X)
+CD/939B: 08           PHP
+CD/939C: 41 1F        EOR ($1F,X)
+CD/939E: 09 33 3D     ORA #$3D33
+CD/93A1: 41 1E        EOR ($1E,X)
+CD/93A3: 0A           ASL
+CD/93A4: 41 1F        EOR ($1F,X)
+CD/93A6: 0B           PHD
+CD/93A7: 33 3E        AND ($3E,S),Y
+CD/93A9: 41 1E        EOR ($1E,X)
+CD/93AB: 0C 41 1F     TSB $1F41
+CD/93AE: 0D 33 09     ORA $0933
+CD/93B1: 72 0D        ADC ($0D)
+CD/93B3: 36 03        ROL $03,X
+CD/93B5: 0A           ASL
+CD/93B6: 24 03        BIT $03
+CD/93B8: 06 03        ASL $03
+CD/93BA: 20 0F 50     JSR $500F
+CD/93BD: 2E 01 00     ROL $0001
+CD/93C0: 90 80        BCC $9342
+CD/93C2: 90 00        BCC $93C4
+CD/93C4: CE 93 EE     DEC $EE93
+CD/93C7: 93 00        STA ($00,S),Y
+CD/93C9: 94 77        STY $77,X
+CD/93CB: 93 3E        STA ($3E,S),Y
+CD/93CD: 96 02        STX $02,Y
+CD/93CF: 01 0B        ORA ($0B,X)
+CD/93D1: 12 13        ORA ($13)
+CD/93D3: 1B           TCS
+CD/93D4: 13 72        ORA ($72,S),Y
+CD/93D6: 0D 36 03     ORA $0336
+CD/93D9: 0A           ASL
+CD/93DA: 24 02        BIT $02
+CD/93DC: 20 0F 02     JSR $020F
+CD/93DF: 01 12        ORA ($12,X)
+CD/93E1: 19 1B 19     ORA $191B,Y
+CD/93E4: 72 0D        ADC ($0D)
+CD/93E6: 06 03        ASL $03
+CD/93E8: 20 0F 50     JSR $500F
+CD/93EB: 2E 01 00     ROL $0001
+CD/93EE: 76 00        ROR $00,X
+CD/93F0: 03 24        ORA $24,S
+CD/93F2: 01 20        ORA ($20,X)
+CD/93F4: 14 06        TRB $06
+CD/93F6: 05 D8        ORA $D8
+CD/93F8: 05 02        ORA $02
+CD/93FA: 5A           PHY
+CD/93FB: 24 02        BIT $02
+CD/93FD: 06 03        ASL $03
+CD/93FF: 00 60        BRK $60
+CD/9401: 00 73        BRK $73
+CD/9403: 00 24        BRK $24
+CD/9405: 01 20        ORA ($20,X)
+CD/9407: 14 78        TRB $78
+CD/9409: E5 1B        SBC $1B
+CD/940B: 00 72        BRK $72
+CD/940D: 00 70        BRK $70
+CD/940F: 02 00        COP $00
+CD/9411: 20 5A 71     JSR $715A
+CD/9414: 36 00        ROL $00,X
+CD/9416: F8           SED
+CD/9417: FF F8 FF 4E  SBC $4EFFF8,X
+CD/941B: 94 51        STY $51,X
+CD/941D: 94 52        STY $52,X
+CD/941F: 94 53        STY $53,X
+CD/9421: 94 54        STY $54,X
+CD/9423: 94 55        STY $55,X
+CD/9425: 94 56        STY $56,X
+CD/9427: 94 57        STY $57,X
+CD/9429: 94 58        STY $58,X
+CD/942B: 94 59        STY $59,X
+CD/942D: 94 5A        STY $5A,X
+CD/942F: 94 5B        STY $5B,X
+CD/9431: 94 5C        STY $5C,X
+CD/9433: 94 5D        STY $5D,X
+CD/9435: 94 60        STY $60,X
+CD/9437: 94 61        STY $61,X
+CD/9439: 94 62        STY $62,X
+CD/943B: 94 63        STY $63,X
+CD/943D: 94 64        STY $64,X
+CD/943F: 94 65        STY $65,X
+CD/9441: 94 66        STY $66,X
+CD/9443: 94 67        STY $67,X
+CD/9445: 94 68        STY $68,X
+CD/9447: 94 69        STY $69,X
+CD/9449: 94 6A        STY $6A,X
+CD/944B: 94 6B        STY $6B,X
+CD/944D: 94 2E        STY $2E,X
+CD/944F: 01 00        ORA ($00,X)
+CD/9451: 00 00        BRK $00
+CD/9453: 00 00        BRK $00
+CD/9455: 00 00        BRK $00
+CD/9457: 00 00        BRK $00
+CD/9459: 00 00        BRK $00
+CD/945B: 00 00        BRK $00
+CD/945D: 2E 01 00     ROL $0001
+CD/9460: 00 00        BRK $00
+CD/9462: 00 00        BRK $00
+CD/9464: 00 00        BRK $00
+CD/9466: 00 00        BRK $00
+CD/9468: 00 00        BRK $00
+CD/946A: 00 00        BRK $00
+CD/946C: F8           SED
+CD/946D: FF F8 FF A4  SBC $A4FFF8,X
+CD/9471: 94 A7        STY $A7,X
+CD/9473: 94 A8        STY $A8,X
+CD/9475: 94 A9        STY $A9,X
+CD/9477: 94 AA        STY $AA,X
+CD/9479: 94 AB        STY $AB,X
+CD/947B: 94 AC        STY $AC,X
+CD/947D: 94 AD        STY $AD,X
+CD/947F: 94 AE        STY $AE,X
+CD/9481: 94 AF        STY $AF,X
+CD/9483: 94 B0        STY $B0,X
+CD/9485: 94 B1        STY $B1,X
+CD/9487: 94 B2        STY $B2,X
+CD/9489: 94 B3        STY $B3,X
+CD/948B: 94 B6        STY $B6,X
+CD/948D: 94 B7        STY $B7,X
+CD/948F: 94 B8        STY $B8,X
+CD/9491: 94 B9        STY $B9,X
+CD/9493: 94 BA        STY $BA,X
+CD/9495: 94 BB        STY $BB,X
+CD/9497: 94 BC        STY $BC,X
+CD/9499: 94 BD        STY $BD,X
+CD/949B: 94 BE        STY $BE,X
+CD/949D: 94 BF        STY $BF,X
+CD/949F: 94 C0        STY $C0,X
+CD/94A1: 94 C1        STY $C1,X
+CD/94A3: 94 2E        STY $2E,X
+CD/94A5: 01 00        ORA ($00,X)
+CD/94A7: 00 00        BRK $00
+CD/94A9: 00 00        BRK $00
+CD/94AB: 00 00        BRK $00
+CD/94AD: 00 00        BRK $00
+CD/94AF: 00 00        BRK $00
+CD/94B1: 00 00        BRK $00
+CD/94B3: 2E 01 00     ROL $0001
+CD/94B6: 00 00        BRK $00
+CD/94B8: 00 00        BRK $00
+CD/94BA: 00 00        BRK $00
+CD/94BC: 00 00        BRK $00
+CD/94BE: 00 00        BRK $00
+CD/94C0: 00 00        BRK $00
+CD/94C2: F8           SED
+CD/94C3: FF F8 FF FA  SBC $FAFFF8,X
+CD/94C7: 94 FD        STY $FD,X
+CD/94C9: 94 FE        STY $FE,X
+CD/94CB: 94 FF        STY $FF,X
+CD/94CD: 94 00        STY $00,X
+CD/94CF: 95 01        STA $01,X
+CD/94D1: 95 02        STA $02,X
+CD/94D3: 95 03        STA $03,X
+CD/94D5: 95 04        STA $04,X
+CD/94D7: 95 05        STA $05,X
+CD/94D9: 95 06        STA $06,X
+CD/94DB: 95 07        STA $07,X
+CD/94DD: 95 08        STA $08,X
+CD/94DF: 95 09        STA $09,X
+CD/94E1: 95 0C        STA $0C,X
+CD/94E3: 95 0D        STA $0D,X
+CD/94E5: 95 0E        STA $0E,X
+CD/94E7: 95 0F        STA $0F,X
+CD/94E9: 95 10        STA $10,X
+CD/94EB: 95 11        STA $11,X
+CD/94ED: 95 12        STA $12,X
+CD/94EF: 95 13        STA $13,X
+CD/94F1: 95 14        STA $14,X
+CD/94F3: 95 15        STA $15,X
+CD/94F5: 95 16        STA $16,X
+CD/94F7: 95 17        STA $17,X
+CD/94F9: 95 2E        STA $2E,X
+CD/94FB: 01 00        ORA ($00,X)
+CD/94FD: 00 00        BRK $00
+CD/94FF: 00 00        BRK $00
+CD/9501: 00 00        BRK $00
+CD/9503: 00 00        BRK $00
+CD/9505: 00 00        BRK $00
+CD/9507: 00 00        BRK $00
+CD/9509: 2E 01 00     ROL $0001
+CD/950C: 00 00        BRK $00
+CD/950E: 00 00        BRK $00
+CD/9510: 00 00        BRK $00
+CD/9512: 00 00        BRK $00
+CD/9514: 00 00        BRK $00
+CD/9516: 00 00        BRK $00
+CD/9518: F8           SED
+CD/9519: FF F8 FF 50  SBC $50FFF8,X
+CD/951D: 95 53        STA $53,X
+CD/951F: 95 54        STA $54,X
+CD/9521: 95 55        STA $55,X
+CD/9523: 95 56        STA $56,X
+CD/9525: 95 57        STA $57,X
+CD/9527: 95 58        STA $58,X
+CD/9529: 95 59        STA $59,X
+CD/952B: 95 5A        STA $5A,X
+CD/952D: 95 5B        STA $5B,X
+CD/952F: 95 5C        STA $5C,X
+CD/9531: 95 5D        STA $5D,X
+CD/9533: 95 5E        STA $5E,X
+CD/9535: 95 5F        STA $5F,X
+CD/9537: 95 62        STA $62,X
+CD/9539: 95 63        STA $63,X
+CD/953B: 95 64        STA $64,X
+CD/953D: 95 65        STA $65,X
+CD/953F: 95 66        STA $66,X
+CD/9541: 95 67        STA $67,X
+CD/9543: 95 68        STA $68,X
+CD/9545: 95 69        STA $69,X
+CD/9547: 95 6A        STA $6A,X
+CD/9549: 95 6B        STA $6B,X
+CD/954B: 95 6C        STA $6C,X
+CD/954D: 95 6D        STA $6D,X
+CD/954F: 95 2E        STA $2E,X
+CD/9551: 01 00        ORA ($00,X)
+CD/9553: 00 00        BRK $00
+CD/9555: 00 00        BRK $00
+CD/9557: 00 00        BRK $00
+CD/9559: 00 00        BRK $00
+CD/955B: 00 00        BRK $00
+CD/955D: 00 00        BRK $00
+CD/955F: 2E 01 00     ROL $0001
+CD/9562: 00 00        BRK $00
+CD/9564: 00 00        BRK $00
+CD/9566: 00 00        BRK $00
+CD/9568: 00 00        BRK $00
+CD/956A: 00 00        BRK $00
+CD/956C: 00 00        BRK $00
+CD/956E: F8           SED
+CD/956F: FF F8 FF A6  SBC $A6FFF8,X
+CD/9573: 95 A9        STA $A9,X
+CD/9575: 95 AA        STA $AA,X
+CD/9577: 95 AB        STA $AB,X
+CD/9579: 95 AC        STA $AC,X
+CD/957B: 95 AD        STA $AD,X
+CD/957D: 95 AE        STA $AE,X
+CD/957F: 95 AF        STA $AF,X
+CD/9581: 95 B0        STA $B0,X
+CD/9583: 95 B1        STA $B1,X
+CD/9585: 95 B2        STA $B2,X
+CD/9587: 95 B3        STA $B3,X
+CD/9589: 95 B4        STA $B4,X
+CD/958B: 95 B5        STA $B5,X
+CD/958D: 95 B8        STA $B8,X
+CD/958F: 95 B9        STA $B9,X
+CD/9591: 95 BA        STA $BA,X
+CD/9593: 95 BB        STA $BB,X
+CD/9595: 95 BC        STA $BC,X
+CD/9597: 95 BD        STA $BD,X
+CD/9599: 95 BE        STA $BE,X
+CD/959B: 95 BF        STA $BF,X
+CD/959D: 95 C0        STA $C0,X
+CD/959F: 95 C1        STA $C1,X
+CD/95A1: 95 C2        STA $C2,X
+CD/95A3: 95 C3        STA $C3,X
+CD/95A5: 95 2E        STA $2E,X
+CD/95A7: 01 00        ORA ($00,X)
+CD/95A9: 00 00        BRK $00
+CD/95AB: 00 00        BRK $00
+CD/95AD: 00 00        BRK $00
+CD/95AF: 00 00        BRK $00
+CD/95B1: 00 00        BRK $00
+CD/95B3: 00 00        BRK $00
+CD/95B5: 2E 01 00     ROL $0001
+CD/95B8: 00 00        BRK $00
+CD/95BA: 00 00        BRK $00
+CD/95BC: 00 00        BRK $00
+CD/95BE: 00 00        BRK $00
+CD/95C0: 00 00        BRK $00
+CD/95C2: 00 00        BRK $00
+CD/95C4: 72 0D        ADC ($0D)
+CD/95C6: 36 03        ROL $03,X
+CD/95C8: 07 24        ORA [$24]
+CD/95CA: 02 06        COP $06
+CD/95CC: 03 20        ORA $20,S
+CD/95CE: 0F 50 2E 01  ORA $012E50
+CD/95D2: 00 72        BRK $72
+CD/95D4: 0D 36 03     ORA $0336
+CD/95D7: 08           PHP
+CD/95D8: 24 02        BIT $02
+CD/95DA: 06 03        ASL $03
+CD/95DC: 20 0F 50     JSR $500F
+CD/95DF: 2E 01 00     ROL $0001
+CD/95E2: 24 01        BIT $01
+CD/95E4: 1E 49 36     ASL $3649,X
+CD/95E7: 06 03        ASL $03
+CD/95E9: 00 24        BRK $24
+CD/95EB: 01 78        ORA ($78,X)
+CD/95ED: 02 06        COP $06
+CD/95EF: 03 20        ORA $20,S
+CD/95F1: 0F 36 06 03  ORA $030636
+CD/95F5: 00 24        BRK $24
+CD/95F7: 01 20        ORA ($20,X)
+CD/95F9: 05 1E        ORA $1E
+CD/95FB: 49 36 06     EOR #$0636
+CD/95FE: 03 00        ORA $00,S
+CD/9600: 24 01        BIT $01
+CD/9602: 20 05 78     JSR $7805
+CD/9605: 02 06        COP $06
+CD/9607: 03 20        ORA $20,S
+CD/9609: 0F 36 06 03  ORA $030636
+CD/960D: 00 24        BRK $24
+CD/960F: 01 20        ORA ($20,X)
+CD/9611: 0A           ASL
+CD/9612: 1E 49 36     ASL $3649,X
+CD/9615: 06 03        ASL $03
+CD/9617: 00 24        BRK $24
+CD/9619: 01 20        ORA ($20,X)
+CD/961B: 0A           ASL
+CD/961C: 78           SEI
+CD/961D: 02 06        COP $06
+CD/961F: 03 20        ORA $20,S
+CD/9621: 0F 36 06 03  ORA $030636
+CD/9625: 00 24        BRK $24
+CD/9627: 01 20        ORA ($20,X)
+CD/9629: 0F 1E 49 36  ORA $36491E
+CD/962D: 06 03        ASL $03
+CD/962F: 00 24        BRK $24
+CD/9631: 01 20        ORA ($20,X)
+CD/9633: 0F 78 02 06  ORA $060278
+CD/9637: 03 20        ORA $20,S
+CD/9639: 0F 36 06 03  ORA $030636
+CD/963D: 00 24        BRK $24
+CD/963F: 01 20        ORA ($20,X)
+CD/9641: 14 1E        TRB $1E
+CD/9643: 49 36 06     EOR #$0636
+CD/9646: 03 00        ORA $00,S
+CD/9648: 24 01        BIT $01
+CD/964A: 20 14 78     JSR $7814
+CD/964D: 02 06        COP $06
+CD/964F: 03 20        ORA $20,S
+CD/9651: 0F 36 06 03  ORA $030636
+CD/9655: 00 24        BRK $24
+CD/9657: 01 20        ORA ($20,X)
+CD/9659: 1A           INC
+CD/965A: 1E 49 36     ASL $3649,X
+CD/965D: 06 03        ASL $03
+CD/965F: 00 24        BRK $24
+CD/9661: 01 20        ORA ($20,X)
+CD/9663: 1A           INC
+CD/9664: 78           SEI
+CD/9665: 02 06        COP $06
+CD/9667: 03 20        ORA $20,S
+CD/9669: 0F 36 06 03  ORA $030636
+CD/966D: 00 24        BRK $24
+CD/966F: 01 20        ORA ($20,X)
+CD/9671: 1F 1E 49 36  ORA $36491E,X
+CD/9675: 06 03        ASL $03
+CD/9677: 00 24        BRK $24
+CD/9679: 01 20        ORA ($20,X)
+CD/967B: 1F 78 02 06  ORA $060278,X
+CD/967F: 03 20        ORA $20,S
+CD/9681: 0F 36 06 03  ORA $030636
+CD/9685: 00 24        BRK $24
+CD/9687: 02 1E        COP $1E
+CD/9689: 49 36 06     EOR #$0636
+CD/968C: 03 00        ORA $00,S
+CD/968E: 24 02        BIT $02
+CD/9690: 78           SEI
+CD/9691: 02 06        COP $06
+CD/9693: 03 20        ORA $20,S
+CD/9695: 0F 36 06 03  ORA $030636
+CD/9699: 00 24        BRK $24
+CD/969B: FF 02 00 73  SBC $730002,X
+CD/969F: 03 1B        ORA $1B,S
+CD/96A1: 03 76        ORA $76,S
+CD/96A3: 03 00        ORA $00,S
+CD/96A5: 0B           PHD
+CD/96A6: A8           TAY
+CD/96A7: 04 33        TSB $33
+CD/96A9: 23 41        AND $41,S
+CD/96AB: 1E 0E 41     ASL $410E,X
+CD/96AE: 1F 0F 36 00  ORA $00360F,X
+CD/96B2: 24 FF        BIT $FF
+CD/96B4: 02 00        COP $00
+CD/96B6: 73 03        ADC ($03,S),Y
+CD/96B8: 1B           TCS
+CD/96B9: 03 76        ORA $76,S
+CD/96BB: 03 00        ORA $00,S
+CD/96BD: 0C A8 04     TSB $04A8
+CD/96C0: 33 23        AND ($23,S),Y
+CD/96C2: 41 1E        EOR ($1E,X)
+CD/96C4: 0E 41 1F     ASL $1F41
+CD/96C7: 0F 36 00 24  ORA $240036
+CD/96CB: FF 02 00 73  SBC $730002,X
+CD/96CF: 03 1B        ORA $1B,S
+CD/96D1: 03 76        ORA $76,S
+CD/96D3: 03 00        ORA $00,S
+CD/96D5: 0C A8 06     TSB $06A8
+CD/96D8: 33 23        AND ($23,S),Y
+CD/96DA: 41 1E        EOR ($1E,X)
+CD/96DC: 0E 41 1F     ASL $1F41
+CD/96DF: 0F 36 00 24  ORA $240036
+CD/96E3: FF 02 00 73  SBC $730002,X
+CD/96E7: 03 1B        ORA $1B,S
+CD/96E9: 03 76        ORA $76,S
+CD/96EB: 03 00        ORA $00,S
+CD/96ED: 0C A8 08     TSB $08A8
+CD/96F0: 33 23        AND ($23,S),Y
+CD/96F2: 41 1E        EOR ($1E,X)
+CD/96F4: 0E 41 1F     ASL $1F41
+CD/96F7: 0F 36 00 90  ORA $900036
+CD/96FB: 00 90        BRK $90
+CD/96FD: 00 06        BRK $06
+CD/96FF: 97 13        STA [$13],Y
+CD/9701: 97 06        STA [$06],Y
+CD/9703: 97 13        STA [$13],Y
+CD/9705: 97 34        STA [$34],Y
+CD/9707: 00 36        BRK $36
+CD/9709: 20 3C 37     JSR $373C
+CD/970C: 00 36        BRK $36
+CD/970E: 20 0F 2E     JSR $2E0F
+CD/9711: 01 00        ORA ($00,X)
+CD/9713: 24 01        BIT $01
+CD/9715: 6C 00 04     JMP ($0400)
+CD/9718: 24 02        BIT $02
+CD/971A: 00 90        BRK $90
+CD/971C: 80 80        BRA $969E
+CD/971E: 00 27        BRK $27
+CD/9720: 97 38        STA [$38],Y
+CD/9722: 97 39        STA [$39],Y
+CD/9724: 97 45        STA [$45],Y
+CD/9726: 97 72        STA [$72],Y
+CD/9728: 0D 78 59     ORA $5978
+CD/972B: 03 00        ORA $00,S
+CD/972D: 36 24        ROL $24,X
+CD/972F: 02 06        COP $06
+CD/9731: 03 20        ORA $20,S
+CD/9733: 0F 50 2E 01  ORA $012E50
+CD/9737: 00 00        BRK $00
+CD/9739: 60           RTS

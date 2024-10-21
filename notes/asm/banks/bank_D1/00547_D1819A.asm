@@ -1,0 +1,114 @@
+D1/819A: 80 FF        BRA $819B
+D1/819C: 0A           ASL
+D1/819D: 01 9D        ORA ($9D,X)
+D1/819F: 13 83        ORA ($83,S),Y
+D1/81A1: 0F 7F 84 91  ORA $91847F
+D1/81A5: 08           PHP
+D1/81A6: A2 FF        LDX #$FF
+D1/81A8: 88           DEY
+D1/81A9: 00 A6        BRK $A6
+D1/81AB: 00 BA        BRK $BA
+D1/81AD: 00 A5        BRK $A5
+D1/81AF: 00 A6        BRK $A6
+D1/81B1: 04 BA        TSB $BA
+D1/81B3: 01 A5        ORA ($A5,X)
+D1/81B5: 04 82        TSB $82
+D1/81B7: E3 7F        SBC $7F,S
+D1/81B9: 88           DEY
+D1/81BA: 00 A6        BRK $A6
+D1/81BC: 01 BA        ORA ($BA,X)
+D1/81BE: 00 A5        BRK $A5
+D1/81C0: 01 A6        ORA ($A6,X)
+D1/81C2: 05 BA        ORA $BA
+D1/81C4: 01 A5        ORA ($A5,X)
+D1/81C6: 05 82        ORA $82
+D1/81C8: E3 7F        SBC $7F,S
+D1/81CA: 88           DEY
+D1/81CB: 00 A6        BRK $A6
+D1/81CD: 02 BA        COP $BA
+D1/81CF: 00 A5        BRK $A5
+D1/81D1: 02 A6        COP $A6
+D1/81D3: 06 BA        ASL $BA
+D1/81D5: 01 A5        ORA ($A5,X)
+D1/81D7: 06 82        ASL $82
+D1/81D9: E3 7F        SBC $7F,S
+D1/81DB: 92 01        STA ($01)
+D1/81DD: B0 41        BCS $8220
+D1/81DF: CB           WAI
+D1/81E0: E9 81        SBC #$81
+D1/81E2: 93 04        STA ($04,S),Y
+D1/81E4: 02 03        COP $03
+D1/81E6: CA           DEX
+D1/81E7: F0 81        BEQ $816A
+D1/81E9: 93 04        STA ($04,S),Y
+D1/81EB: 02 02        COP $02
+D1/81ED: CA           DEX
+D1/81EE: F0 81        BEQ $8171
+D1/81F0: 95 0F        STA $0F,X
+D1/81F2: 98           TYA
+D1/81F3: 10 88        BPL $817D
+D1/81F5: 00 D8        BRK $D8
+D1/81F7: 8E 00 00     STX $0000
+D1/81FA: 9D 17 83     STA $8317,X
+D1/81FD: 05 88        ORA $88
+D1/81FF: 00 D8        BRK $D8
+D1/8201: 0E 01 B2     ASL $B201
+D1/8204: 01 D9        ORA ($D9,X)
+D1/8206: 00 00        BRK $00
+D1/8208: 7F 88 00 B2  ADC $B20088,X
+D1/820C: 00 D9        BRK $D9
+D1/820E: 01 01        ORA ($01,X)
+D1/8210: 7F 84 88 00  ADC $008884,X
+D1/8214: B2 01        LDA ($01)
+D1/8216: D9 00 00     CMP $0000,Y
+D1/8219: 7F 88 00 B2  ADC $B20088,X
+D1/821D: 00 D9        BRK $D9
+D1/821F: 01 01        ORA ($01,X)
+D1/8221: 7F A9 1A 12  ADC $121AA9,X
+D1/8225: B2 00        LDA ($00)
+D1/8227: B2 01        LDA ($01)
+D1/8229: 7F BF 07 8E  ADC $8E07BF,X
+D1/822D: 50 19        BVC $8248
+D1/822F: 03 FF        ORA $FF,S
+D1/8231: 00 08        BRK $08
+D1/8233: 01 83        ORA ($83,X)
+D1/8235: 1F B2 00 B2  ORA $B200B2,X
+D1/8239: 01 7F        ORA ($7F,X)
+D1/823B: 84 91        STY $91
+D1/823D: 08           PHP
+D1/823E: A2 B0        LDX #$B0
+D1/8240: 49 FF        EOR #$FF
+D1/8242: 01 AA        ORA ($AA,X)
+D1/8244: 00 82        BRK $82
+D1/8246: 7F 83 06 82  ADC $820683,X
+D1/824A: DF 84 82 CF  CMP $CF8284,X
+D1/824E: 93 13        STA ($13,S),Y
+D1/8250: 02 04        COP $04
+D1/8252: 9D 17 81     STA $8117,X
+D1/8255: 04 00        TSB $00
+D1/8257: 01 02        ORA ($02,X)
+D1/8259: 03 04        ORA $04,S
+D1/825B: 81 01        STA ($01,X)
+D1/825D: 8E 50 19     STX $1950
+D1/8260: 03 FF        ORA $FF,S
+D1/8262: 00 08        BRK $08
+D1/8264: 02 83        COP $83
+D1/8266: 3E 04 84     ROL $8404,X
+D1/8269: 7F BF 03 8E  ADC $8E03BF,X
+D1/826D: 50 10        BVC $827F
+D1/826F: 09 80        ORA #$80
+D1/8271: FF 09 02 8E  SBC $8E0209,X
+D1/8275: 50 20        BVC $8297
+D1/8277: 30 80        BMI $81F9
+D1/8279: FF 0A 02 8E  SBC $8E020A,X
+D1/827D: 50 50        BVC $82CF
+D1/827F: 30 80        BMI $8201
+D1/8281: FF 0B 12 9D  SBC $9D120B,X
+D1/8285: 13 91        ORA ($91,S),Y
+D1/8287: 08           PHP
+D1/8288: A2 FF        LDX #$FF
+D1/828A: D7 80        CMP [$80],Y
+D1/828C: 85 09        STA $09
+D1/828E: D7 00        CMP [$00],Y
+D1/8290: 00 D7        BRK $D7
+D1/8292: 40           RTI

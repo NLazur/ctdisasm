@@ -1,0 +1,33 @@
+C0/4C74: C8           INY
+C0/4C75: BB           TYX
+C0/4C76: BF 01 20 7F  LDA $7F2001,X
+C0/4C7A: A6 6D        LDX $6D
+C0/4C7C: 9D 80 0F     STA $0F80,X
+C0/4C7F: 89 80        BIT #$80
+C0/4C81: F0 34        BEQ $4CB7
+C0/4C83: BD 81 18     LDA $1881,X
+C0/4C86: EB           XBA
+C0/4C87: BD 01 18     LDA $1801,X
+C0/4C8A: AA           TAX
+C0/4C8B: BF 00 70 7E  LDA $7E7000,X
+C0/4C8F: 29 40        AND #$40
+C0/4C91: 4A           LSR
+C0/4C92: 4A           LSR
+C0/4C93: 09 20        ORA #$20
+C0/4C95: 85 D9        STA $D9
+C0/4C97: BF 40 70 7E  LDA $7E7040,X
+C0/4C9B: 29 40        AND #$40
+C0/4C9D: 4A           LSR
+C0/4C9E: 4A           LSR
+C0/4C9F: 09 20        ORA #$20
+C0/4CA1: A6 6D        LDX $6D
+C0/4CA3: 9D 00 0C     STA $0C00,X
+C0/4CA6: A5 D9        LDA $D9
+C0/4CA8: 9D 01 0C     STA $0C01,X
+C0/4CAB: A9 FF        LDA #$FF
+C0/4CAD: 9D 01 0F     STA $0F01,X
+C0/4CB0: 9E 01 16     STZ $1601,X
+C0/4CB3: BB           TYX
+C0/4CB4: E8           INX
+C0/4CB5: 38           SEC
+C0/4CB6: 60           RTS

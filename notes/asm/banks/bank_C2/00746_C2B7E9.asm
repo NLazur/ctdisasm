@@ -1,0 +1,40 @@
+C2/B7E9: A9 38        LDA #$38
+C2/B7EB: 33 85        AND ($85,S),Y
+C2/B7ED: 00 A9        BRK $A9
+C2/B7EF: B8           CLV
+C2/B7F0: 33 85        AND ($85,S),Y
+C2/B7F2: 02 A9        COP $A9
+C2/B7F4: 0E 00 85     ASL $8500
+C2/B7F7: 04 A6        TSB $A6
+C2/B7F9: 00 A4        BRK $A4
+C2/B7FB: 02 A9        COP $A9
+C2/B7FD: 15 00        ORA $00,X
+C2/B7FF: 44 7E 7E     MVP $7E,$7E
+C2/B802: A5 00        LDA $00
+C2/B804: 38           SEC
+C2/B805: E9 40        SBC #$40
+C2/B807: 00 85        BRK $85
+C2/B809: 00 A5        BRK $A5
+C2/B80B: 02 38        COP $38
+C2/B80D: E9 40        SBC #$40
+C2/B80F: 00 85        BRK $85
+C2/B811: 02 C6        COP $C6
+C2/B813: 04 D0        TSB $D0
+C2/B815: E2 A2        SEP #$A2
+C2/B817: C0 33        CPY #$33
+C2/B819: A0 C0 2F     LDY #$2FC0
+C2/B81C: A9 7F        LDA #$7F
+C2/B81E: 00 54        BRK $54
+C2/B820: 7E 7E 60     ROR $607E,X
+C2/B823: 08           PHP
+C2/B824: E2 20        SEP #$20
+C2/B826: 20 3E B8     JSR $B83E
+C2/B829: AD 4D 0F     LDA $0F4D
+C2/B82C: 85 71        STA $71
+C2/B82E: 20 20 88     JSR $8820
+C2/B831: AD 97 9A     LDA $9A97
+C2/B834: CD 4F 0F     CMP $0F4F
+C2/B837: B0 03        BCS $B83C
+C2/B839: 9C BC 0D     STZ $0DBC
+C2/B83C: 28           PLP
+C2/B83D: 60           RTS

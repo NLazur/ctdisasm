@@ -1,0 +1,32 @@
+C6/50C5: 50 00        BVC $50C7
+C6/50C7: 00 84        BRK $84
+C6/50C9: 50 06        BVC $50D1
+C6/50CB: 00 F8        BRK $F8
+C6/50CD: 24 A0        BIT $A0
+C6/50CF: 00 08        BRK $08
+C6/50D1: E1 08        SBC ($08,X)
+C6/50D3: B0 08        BCS $50DD
+C6/50D5: F1 08        SBC ($08),Y
+C6/50D7: E2 00        SEP #$00
+C6/50D9: 08           PHP
+C6/50DA: E3 08        SBC $08,S
+C6/50DC: F2 08        SBC ($08)
+C6/50DE: F3 08        SBC ($08,S),Y
+C6/50E0: E4 40        CPX $40
+C6/50E2: 08           PHP
+C6/50E3: A5 08        LDA $08
+C6/50E5: F4 08 B5     PEA $B508
+C6/50E8: 98           TYA
+C6/50E9: 34 00        BIT $00,X
+C6/50EB: 04 00        TSB $00
+C6/50ED: EB           XBA
+C6/50EE: 20 01 00     JSR $0001
+C6/50F1: 00 EC        BRK $EC
+C6/50F3: 1D ED 00     ORA $00ED,X
+C6/50F6: 1D FC 1D     ORA $1DFC,X
+C6/50F9: FD 1D EE     SBC $EE1D,X
+C6/50FC: 1D EF 00     ORA $00EF,X
+C6/50FF: 1D FE 1D     ORA $1DFE,X
+C6/5102: FF 1D F7 1D  SBC $1DF71D,X
+C6/5106: F8           SED
+C6/5107: 40           RTI

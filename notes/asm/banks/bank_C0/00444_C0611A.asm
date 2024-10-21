@@ -1,0 +1,71 @@
+C0/611A: BB           TYX
+C0/611B: E8           INX
+C0/611C: 7B           TDC
+C0/611D: EB           XBA
+C0/611E: BF 01 20 7F  LDA $7F2001,X
+C0/6122: 85 DB        STA $DB
+C0/6124: 64 DC        STZ $DC
+C0/6126: AA           TAX
+C0/6127: BD 01 1C     LDA $1C01,X
+C0/612A: D0 78        BNE $61A4
+C0/612C: BD 00 11     LDA $1100,X
+C0/612F: 30 E3        BMI $6114
+C0/6131: BD 00 10     LDA $1000,X
+C0/6134: 30 DE        BMI $6114
+C0/6136: BD 00 1C     LDA $1C00,X
+C0/6139: 85 D9        STA $D9
+C0/613B: BB           TYX
+C0/613C: E8           INX
+C0/613D: E8           INX
+C0/613E: BF 01 20 7F  LDA $7F2001,X
+C0/6142: 85 DD        STA $DD
+C0/6144: 4A           LSR
+C0/6145: 4A           LSR
+C0/6146: 4A           LSR
+C0/6147: 4A           LSR
+C0/6148: 85 DF        STA $DF
+C0/614A: C5 D9        CMP $D9
+C0/614C: F0 56        BEQ $61A4
+C0/614E: B0 54        BCS $61A4
+C0/6150: A5 D9        LDA $D9
+C0/6152: 8D 02 42     STA $4202
+C0/6155: A9 80        LDA #$80
+C0/6157: 8D 03 42     STA $4203
+C0/615A: EA           NOP
+C0/615B: EA           NOP
+C0/615C: C2 20        REP #$20
+C0/615E: 18           CLC
+C0/615F: AD 16 42     LDA $4216
+C0/6162: 65 DB        ADC $DB
+C0/6164: 85 E1        STA $E1
+C0/6166: A6 DB        LDX $DB
+C0/6168: BD 80 11     LDA $1180,X
+C0/616B: A6 E1        LDX $E1
+C0/616D: 9F 80 05 7F  STA $7F0580,X
+C0/6171: A5 DB        LDA $DB
+C0/6173: 29 FF 00     AND #$00FF
+C0/6176: 0A           ASL
+C0/6177: 0A           ASL
+C0/6178: 0A           ASL
+C0/6179: 0A           ASL
+C0/617A: 85 E3        STA $E3
+C0/617C: A5 DD        LDA $DD
+C0/617E: 29 0F 00     AND #$000F
+C0/6181: 0A           ASL
+C0/6182: 18           CLC
+C0/6183: 65 E3        ADC $E3
+C0/6185: AA           TAX
+C0/6186: BF 01 20 7F  LDA $7F2001,X
+C0/618A: A6 DB        LDX $DB
+C0/618C: 9D 80 11     STA $1180,X
+C0/618F: E2 20        SEP #$20
+C0/6191: A5 DF        LDA $DF
+C0/6193: 9D 00 1C     STA $1C00,X
+C0/6196: 9E 80 1A     STZ $1A80,X
+C0/6199: 9E 01 1A     STZ $1A01,X
+C0/619C: A9 01        LDA #$01
+C0/619E: A6 6D        LDX $6D
+C0/61A0: 9F 80 09 7F  STA $7F0980,X
+C0/61A4: BB           TYX
+C0/61A5: 18           CLC
+C0/61A6: 60           RTS

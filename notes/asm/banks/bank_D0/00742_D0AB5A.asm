@@ -1,0 +1,15 @@
+D0/AB5A: FC 7F FC     JSR ($FC7F,X)
+D0/AB5D: FE 1F FE     INC $FE1F,X
+D0/AB60: 04 05        TSB $05
+D0/AB62: 0B           PHD
+D0/AB63: 0E 2C 2A     ASL $2A2C
+D0/AB66: 75 3B        ADC $3B,X
+D0/AB68: 5B           TCD
+D0/AB69: 31 6E        AND ($6E),Y
+D0/AB6B: 05 79        ORA $79
+D0/AB6D: 12 4C        ORA ($4C)
+D0/AB6F: 13 05        ORA ($05,S),Y
+D0/AB71: 0F 2F 3E 3E  ORA $3E3E2F
+D0/AB75: 3A           DEC
+D0/AB76: 2F 3C 00 00  AND $00003C
+D0/AB7A: 40           RTI

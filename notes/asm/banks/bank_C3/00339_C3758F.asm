@@ -1,0 +1,122 @@
+C3/758F: 00 1C        BRK $1C
+C3/7591: 58           CLI
+C3/7592: 45 80        EOR $80
+C3/7594: 58           CLI
+C3/7595: 45 43        EOR $43
+C3/7597: 55 54        EOR $54,X
+C3/7599: 49 56        EOR #$56
+C3/759B: 91 22        STA ($22),Y
+C3/759D: DF 96 34 59  CMP $593496,X
+C3/75A1: 23 62        AND $62,S
+C3/75A3: 04 4A        TSB $4A
+C3/75A5: 02 67        COP $67
+C3/75A7: 03 60        ORA $60,S
+C3/75A9: 3F 20 94 04  AND $049420,X
+C3/75AD: 7E 45 A0     ROR $A045,X
+C3/75B0: 21 E6        AND ($E6,X)
+C3/75B2: 03 9C        ORA $9C,S
+C3/75B4: 04 CB        TSB $CB
+C3/75B6: 42 C9        WDM $C9
+C3/75B8: 64 CA        STZ $CA
+C3/75BA: 24 48        BIT $48
+C3/75BC: 3A           DEC
+C3/75BD: 49 CB        EOR #$CB
+C3/75BF: 44 2F 01     MVP $2F,$01
+C3/75C2: 10 CF        BPL $7593
+C3/75C4: 64 D0        STZ $D0
+C3/75C6: 34 48        BIT $48,X
+C3/75C8: 49 FD        EOR #$FD
+C3/75CA: D1 84        CMP ($84),Y
+C3/75CC: 48           PHA
+C3/75CD: 13 14        ORA ($14,S),Y
+C3/75CF: D2 94        CMP ($94)
+C3/75D1: 3B           TSC
+C3/75D2: 20 D3 34     JSR $34D3
+C3/75D5: 3D 20 D7     AND $D720,X
+C3/75D8: E4 4F        CPX $4F
+C3/75DA: D8           CLD
+C3/75DB: C4 62        CPY $62
+C3/75DD: 20 DC 84     JSR $84DC
+C3/75E0: DD 94 48     CMP $4894,X
+C3/75E3: 49 DE        EOR #$DE
+C3/75E5: B4 48        LDY $48,X
+C3/75E7: FF 90 30 E3  SBC $E33090,X
+C3/75EB: 34 E4        BIT $E4,X
+C3/75ED: F4 E4 A4     PEA $A4E4
+C3/75F0: 2A           ROL
+C3/75F1: 30 E8        BMI $75DB
+C3/75F3: 94 E9        STY $E9,X
+C3/75F5: F4 E8 00     PEA $00E8
+C3/75F8: F9 EA 04     SBC $04EA,Y
+C3/75FB: 48           PHA
+C3/75FC: 49 5B        EOR #$5B
+C3/75FE: 70 F0        BVS $75F0
+C3/7600: B4 F1        LDY $F1,X
+C3/7602: 94 1F        STY $1F,X
+C3/7604: 80 F5        BRA $75FB
+C3/7606: 64 E7        STZ $E7
+C3/7608: F6 B4        INC $B4,X
+C3/760A: 2C 21 FA     BIT $FA21
+C3/760D: 14 48        TRB $48
+C3/760F: 49 FB        EOR #$FB
+C3/7611: 84 A7        STY $A7
+C3/7613: 20 50 21     JSR $2150
+C3/7616: F7 FD        SBC [$FD],Y
+C3/7618: F4 3E 21     PEA $213E
+C3/761B: FE 94 41     INC $4194,X
+C3/761E: 66 03        ROR $03
+C3/7620: 8A           TXA
+C3/7621: 50 04        BVC $7627
+C3/7623: 75 05        ADC $05,X
+C3/7625: 95 7F        STA $7F,X
+C3/7627: 91 21        STA ($21),Y
+C3/7629: 09 85        ORA #$85
+C3/762B: 24 21        BIT $21
+C3/762D: 0B           PHD
+C3/762E: F5 0B        SBC $0B,X
+C3/7630: 75 44        ADC $44,X
+C3/7632: 11 0C        ORA ($0C),Y
+C3/7634: 15 48        ORA $48,X
+C3/7636: FC 49 42     JSR ($4249,X)
+C3/7639: 6C 31 11     JMP ($1131)
+C3/763C: 85 12        STA $12
+C3/763E: D5 DA        CMP $DA,X
+C3/7640: 01 13        ORA ($13,X)
+C3/7642: 05 66        ORA $66
+C3/7644: 41 73        EOR ($73,X)
+C3/7646: 18           CLC
+C3/7647: 95 19        STA $19,X
+C3/7649: 65 48        ADC $48
+C3/764B: 49 1A        EOR #$1A
+C3/764D: F5 11        SBC $11,X
+C3/764F: 02 1B        COP $1B
+C3/7651: 35 48        AND $48,X
+C3/7653: FE 49 1C     INC $1C49,X
+C3/7656: 75 43        ADC $43,X
+C3/7658: A0 81        LDY #$81
+C3/765A: 51 24        EOR ($24),Y
+C3/765C: 20 22 95     JSR $9522
+C3/765F: 4B           PHK
+C3/7660: 02 44        COP $44
+C3/7662: 22 FF 68 32  JSR $3268FF
+C3/7666: 28           PLP
+C3/7667: E5 29        SBC $29
+C3/7669: C5 FF        CMP $FF
+C3/766B: 51 2E        EOR ($2E),Y
+C3/766D: 95 73        STA $73,X
+C3/766F: 32 30        AND ($30)
+C3/7671: 15 9B        ORA $9B,X
+C3/7673: 00 FF        BRK $FF
+C3/7675: 31 05        AND ($05),Y
+C3/7677: B1 22        LDA ($22),Y
+C3/7679: 35 C5        AND $C5,X
+C3/767B: 36 F5        ROL $F5,X
+C3/767D: 36 45        ROL $45,X
+C3/767F: 4D 31 3A     EOR $3A31
+C3/7682: 75 B9        ADC $B9,X
+C3/7684: 01 FF        ORA ($FF,X)
+C3/7686: 51 31        EOR ($31),Y
+C3/7688: 3D F5 3D     AND $3DF5,X
+C3/768B: 65 44        ADC $44
+C3/768D: 81 33        STA ($33,X)
+C3/768F: 60           RTS

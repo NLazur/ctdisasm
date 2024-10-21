@@ -1,0 +1,145 @@
+C7/467E: 45 79        EOR $79
+C7/4680: 45 8B        EOR $8B
+C7/4682: 45 00        EOR $00
+C7/4684: 00 00        BRK $00
+C7/4686: 00 9A        BRK $9A
+C7/4688: 45 9C        EOR $9C
+C7/468A: 45 AB        EOR $AB
+C7/468C: 45 B7        EOR $B7
+C7/468E: 45 CC        EOR $CC
+C7/4690: 45 DA        EOR $DA
+C7/4692: 45 E7        EOR $E7
+C7/4694: 45 02        EOR $02
+C7/4696: 46 1B        LSR $1B
+C7/4698: 46 3C        LSR $3C
+C7/469A: 46 61        LSR $61
+C7/469C: 46 6C        LSR $6C
+C7/469E: 46 82        LSR $82
+C7/46A0: 46 90        LSR $90
+C7/46A2: 46 A4        LSR $A4
+C7/46A4: 46 AF        LSR $AF
+C7/46A6: 46 BB        LSR $BB
+C7/46A8: 46 BD        LSR $BD
+C7/46AA: 46 C0        LSR $C0
+C7/46AC: 46 C2        LSR $C2
+C7/46AE: 46 C7        LSR $C7
+C7/46B0: 46 D4        LSR $D4
+C7/46B2: 46 00        LSR $00
+C7/46B4: 00 00        BRK $00
+C7/46B6: 00 00        BRK $00
+C7/46B8: 00 00        BRK $00
+C7/46BA: 00 00        BRK $00
+C7/46BC: 00 00        BRK $00
+C7/46BE: 00 00        BRK $00
+C7/46C0: 00 00        BRK $00
+C7/46C2: 00 00        BRK $00
+C7/46C4: 00 00        BRK $00
+C7/46C6: 00 00        BRK $00
+C7/46C8: 00 00        BRK $00
+C7/46CA: 00 00        BRK $00
+C7/46CC: 00 00        BRK $00
+C7/46CE: 00 00        BRK $00
+C7/46D0: 00 00        BRK $00
+C7/46D2: 00 00        BRK $00
+C7/46D4: 00 00        BRK $00
+C7/46D6: 00 00        BRK $00
+C7/46D8: 00 00        BRK $00
+C7/46DA: 00 DF        BRK $DF
+C7/46DC: 46 EA        LSR $EA
+C7/46DE: 46 00        LSR $00
+C7/46E0: 00 00        BRK $00
+C7/46E2: 00 00        BRK $00
+C7/46E4: 00 00        BRK $00
+C7/46E6: 00 00        BRK $00
+C7/46E8: 00 00        BRK $00
+C7/46EA: 00 00        BRK $00
+C7/46EC: 00 00        BRK $00
+C7/46EE: 00 00        BRK $00
+C7/46F0: 00 00        BRK $00
+C7/46F2: 00 00        BRK $00
+C7/46F4: 00 00        BRK $00
+C7/46F6: 00 00        BRK $00
+C7/46F8: 00 00        BRK $00
+C7/46FA: 00 00        BRK $00
+C7/46FC: 00 00        BRK $00
+C7/46FE: 00 00        BRK $00
+C7/4700: 00 00        BRK $00
+C7/4702: 00 EC        BRK $EC
+C7/4704: 46 F0        LSR $F0
+C7/4706: 46 00        LSR $00
+C7/4708: 00 00        BRK $00
+C7/470A: 00 C4        BRK $C4
+C7/470C: 3C C8 0C     BIT $0CC8,X
+C7/470F: 18           CLC
+C7/4710: 50 EB        BVC $46FD
+C7/4712: DC 10 D6     JMP [$D610]
+C7/4715: 03 CB        ORA $CB,S
+C7/4717: 00 08        BRK $08
+C7/4719: FF A4 A1 EB  SBC $EBA1A4,X
+C7/471D: C4 57        CPY $57
+C7/471F: DC 03 D6     JMP [$D603]
+C7/4722: 0E DD 0A     ASL $0ADD
+C7/4725: 0B           PHD
+C7/4726: EB           XBA
+C7/4727: C4 6B        CPY $6B
+C7/4729: DC 04 D6     JMP [$D604]
+C7/472C: 08           PHP
+C7/472D: C8           INY
+C7/472E: 34 08        BIT $08,X
+C7/4730: DD 0A E0     CMP $E00A,X
+C7/4733: 1C 09 EB     TRB $EB09
+C7/4736: C1 DB        CMP ($DB,X)
+C7/4738: 04 C4        TSB $C4
+C7/473A: 50 DC        BVC $4718
+C7/473C: 05 D7        ORA $D7
+C7/473E: D4 DD        PEI $DD
+C7/4740: 0A           ASL
+C7/4741: E0 14 04     CPX #$0414
+C7/4744: EB           XBA
+C7/4745: DB           STP
+C7/4746: 02 D4        COP $D4
+C7/4748: E4 E2        CPX $E2
+C7/474A: 05 DA        ORA $DA
+C7/474C: 03 52        ORA $52,S
+C7/474E: E3 E0        SBC $E0,S
+C7/4750: 16 4D        ASL $4D,X
+C7/4752: EB           XBA
+C7/4753: C1 DB        CMP ($DB,X)
+C7/4755: C0 D4        CPY #$D4
+C7/4757: CD 00 7F     CMP $7F00
+C7/475A: D7 E0        CMP [$E0],Y
+C7/475C: 13 C9        ORA ($C9,S),Y
+C7/475E: 00 01        BRK $01
+C7/4760: FF C8 E3 07  SBC $07E3C8,X
+C7/4764: 81 EB        STA ($EB,X)
+C7/4766: DB           STP
+C7/4767: 02 D4        COP $D4
+C7/4769: E6 E2        INC $E2
+C7/476B: 06 DA        ASL $DA
+C7/476D: 02 52        COP $52
+C7/476F: E3 EB        SBC $EB,S
+C7/4771: DB           STP
+C7/4772: 00 D4        BRK $D4
+C7/4774: DC 05 D7     JMP [$D705]
+C7/4777: E6 E2        INC $E2
+C7/4779: 05 DA        ORA $DA
+C7/477B: FE 37 E3     INC $E337,X
+C7/477E: EB           XBA
+C7/477F: D4 D0        PEI $D0
+C7/4781: CF 1D E0 16  CMP $16E01D
+C7/4785: 04 EB        TSB $EB
+C7/4787: D4 C9        PEI $C9
+C7/4789: 00 0D        BRK $0D
+C7/478B: BF DC 05 C8  LDA $C805DC,X
+C7/478F: 08           PHP
+C7/4790: 0E 05 EB     ASL $EB05
+C7/4793: DB           STP
+C7/4794: 04 D4        TSB $D4
+C7/4796: DC 03 D8     JMP [$D803]
+C7/4799: E2 0A        SEP #$0A
+C7/479B: 52 DA        EOR ($DA)
+C7/479D: 03 E3        ORA $E3,S
+C7/479F: EB           XBA
+C7/47A0: DB           STP
+C7/47A1: E7 C4        SBC [$C4]
+C7/47A3: 60           RTS

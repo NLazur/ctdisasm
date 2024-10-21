@@ -1,0 +1,16 @@
+C2/3DC1: 20 63 0F     JSR $0F63
+C2/3DC4: 90 05        BCC $3DCB
+C2/3DC6: A6 4E        LDX $4E
+C2/3DC8: FE 02 00     INC $0002,X
+C2/3DCB: C2 20        REP #$20
+C2/3DCD: A6 4E        LDX $4E
+C2/3DCF: BD 24 00     LDA $0024,X
+C2/3DD2: 0A           ASL
+C2/3DD3: 0A           ASL
+C2/3DD4: A8           TAY
+C2/3DD5: BD 14 00     LDA $0014,X
+C2/3DD8: 99 83 02     STA $0283,Y
+C2/3DDB: BD 18 00     LDA $0018,X
+C2/3DDE: 99 85 02     STA $0285,Y
+C2/3DE1: 18           CLC
+C2/3DE2: 60           RTS

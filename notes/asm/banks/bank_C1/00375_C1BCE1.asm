@@ -1,0 +1,69 @@
+C1/BCE1: AD 8B B1     LDA $B18B
+C1/BCE4: AA           TAX
+C1/BCE5: BD 58 B1     LDA $B158,X
+C1/BCE8: 9D AB AF     STA $AFAB,X
+C1/BCEB: 20 6F BD     JSR $BD6F
+C1/BCEE: BD 3A B0     LDA $B03A,X
+C1/BCF1: F0 05        BEQ $BCF8
+C1/BCF3: A9 01        LDA #$01
+C1/BCF5: 9D 3A B0     STA $B03A,X
+C1/BCF8: 7B           TDC
+C1/BCF9: AD F4 B3     LDA $B3F4
+C1/BCFC: 8D 8B B1     STA $B18B
+C1/BCFF: 0A           ASL
+C1/BD00: AA           TAX
+C1/BD01: C2 20        REP #$20
+C1/BD03: BF 49 A8 FD  LDA $FDA849,X
+C1/BD07: AA           TAX
+C1/BD08: 7B           TDC
+C1/BD09: E2 20        SEP #$20
+C1/BD0B: 9E 01 00     STZ $0001,X
+C1/BD0E: 9E 02 00     STZ $0002,X
+C1/BD11: 9E 03 00     STZ $0003,X
+C1/BD14: 9E 06 00     STZ $0006,X
+C1/BD17: BD 05 00     LDA $0005,X
+C1/BD1A: C9 FF        CMP #$FF
+C1/BD1C: F0 38        BEQ $BD56
+C1/BD1E: 85 28        STA $28
+C1/BD20: 29 0F        AND #$0F
+C1/BD22: 0A           ASL
+C1/BD23: AA           TAX
+C1/BD24: C2 20        REP #$20
+C1/BD26: BF 49 A8 FD  LDA $FDA849,X
+C1/BD2A: AA           TAX
+C1/BD2B: 7B           TDC
+C1/BD2C: E2 20        SEP #$20
+C1/BD2E: 9E 01 00     STZ $0001,X
+C1/BD31: A9 FF        LDA #$FF
+C1/BD33: 9D 05 00     STA $0005,X
+C1/BD36: A5 28        LDA $28
+C1/BD38: 4A           LSR
+C1/BD39: 4A           LSR
+C1/BD3A: 4A           LSR
+C1/BD3B: 4A           LSR
+C1/BD3C: 29 0F        AND #$0F
+C1/BD3E: C9 0F        CMP #$0F
+C1/BD40: F0 14        BEQ $BD56
+C1/BD42: 0A           ASL
+C1/BD43: AA           TAX
+C1/BD44: C2 20        REP #$20
+C1/BD46: BF 49 A8 FD  LDA $FDA849,X
+C1/BD4A: AA           TAX
+C1/BD4B: 7B           TDC
+C1/BD4C: E2 20        SEP #$20
+C1/BD4E: 9E 01 00     STZ $0001,X
+C1/BD51: A9 FF        LDA #$FF
+C1/BD53: 9D 05 00     STA $0005,X
+C1/BD56: 7B           TDC
+C1/BD57: AD 8B B1     LDA $B18B
+C1/BD5A: 0A           ASL
+C1/BD5B: AA           TAX
+C1/BD5C: C2 20        REP #$20
+C1/BD5E: BF 49 A8 FD  LDA $FDA849,X
+C1/BD62: AA           TAX
+C1/BD63: 7B           TDC
+C1/BD64: E2 20        SEP #$20
+C1/BD66: A9 FF        LDA #$FF
+C1/BD68: 9D 05 00     STA $0005,X
+C1/BD6B: 9C 22 AF     STZ $AF22
+C1/BD6E: 60           RTS

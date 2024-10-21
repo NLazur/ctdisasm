@@ -1,0 +1,101 @@
+CF/EEEB: A0 00 00     LDY #$0000
+CF/EEEE: 5A           PHY
+CF/EEEF: 2B           PLD
+CF/EEF0: BD DF A3     LDA $A3DF,X
+CF/EEF3: 29 07        AND #$07
+CF/EEF5: AA           TAX
+CF/EEF6: 0A           ASL
+CF/EEF7: A8           TAY
+CF/EEF8: BD 5F AB     LDA $AB5F,X
+CF/EEFB: 85 A1        STA $A1
+CF/EEFD: C2 21        REP #$21
+CF/EEFF: B9 40 A2     LDA $A240,Y
+CF/EF02: 79 60 A2     ADC $A260,Y
+CF/EF05: 85 CC        STA $CC
+CF/EF07: 18           CLC
+CF/EF08: B9 50 A2     LDA $A250,Y
+CF/EF0B: 79 70 A2     ADC $A270,Y
+CF/EF0E: 85 CE        STA $CE
+CF/EF10: 7B           TDC
+CF/EF11: E2 20        SEP #$20
+CF/EF13: BD B0 A1     LDA $A1B0,X
+CF/EF16: D0 03        BNE $EF1B
+CF/EF18: 4C A9 EF     JMP $EFA9
+CF/EF1B: BD C0 A2     LDA $A2C0,X
+CF/EF1E: 29 3F        AND #$3F
+CF/EF20: A8           TAY
+CF/EF21: B9 5B A0     LDA $A05B,Y
+CF/EF24: 0A           ASL
+CF/EF25: 0A           ASL
+CF/EF26: AA           TAX
+CF/EF27: 86 C8        STX $C8
+CF/EF29: C2 30        REP #$30
+CF/EF2B: 98           TYA
+CF/EF2C: 0A           ASL
+CF/EF2D: AA           TAX
+CF/EF2E: BF C0 F7 CC  LDA $CCF7C0,X
+CF/EF32: AA           TAX
+CF/EF33: 86 C6        STX $C6
+CF/EF35: AC C9 1D     LDY $1DC9
+CF/EF38: A5 C8        LDA $C8
+CF/EF3A: 48           PHA
+CF/EF3B: 4A           LSR
+CF/EF3C: 4A           LSR
+CF/EF3D: 85 C8        STA $C8
+CF/EF3F: 7B           TDC
+CF/EF40: E2 20        SEP #$20
+CF/EF42: BD 00 45     LDA $4500,X
+CF/EF45: C2 21        REP #$21
+CF/EF47: 65 CC        ADC $CC
+CF/EF49: 85 CA        STA $CA
+CF/EF4B: E2 20        SEP #$20
+CF/EF4D: 99 00 07     STA $0700,Y
+CF/EF50: 7B           TDC
+CF/EF51: BD 01 45     LDA $4501,X
+CF/EF54: C2 21        REP #$21
+CF/EF56: 65 CE        ADC $CE
+CF/EF58: 85 D0        STA $D0
+CF/EF5A: E2 20        SEP #$20
+CF/EF5C: 99 01 07     STA $0701,Y
+CF/EF5F: 7B           TDC
+CF/EF60: BD 02 45     LDA $4502,X
+CF/EF63: 99 02 07     STA $0702,Y
+CF/EF66: BD 03 45     LDA $4503,X
+CF/EF69: 29 CF        AND #$CF
+CF/EF6B: 05 A1        ORA $A1
+CF/EF6D: 99 03 07     STA $0703,Y
+CF/EF70: A5 D1        LDA $D1
+CF/EF72: F0 08        BEQ $EF7C
+CF/EF74: A5 D0        LDA $D0
+CF/EF76: C9 F0        CMP #$F0
+CF/EF78: 90 06        BCC $EF80
+CF/EF7A: 80 11        BRA $EF8D
+CF/EF7C: A5 CB        LDA $CB
+CF/EF7E: F0 0D        BEQ $EF8D
+CF/EF80: B9 2D 90     LDA $902D,Y
+CF/EF83: AA           TAX
+CF/EF84: BD 00 09     LDA $0900,X
+CF/EF87: 19 2D 8E     ORA $8E2D,Y
+CF/EF8A: 9D 00 09     STA $0900,X
+CF/EF8D: A6 C6        LDX $C6
+CF/EF8F: E8           INX
+CF/EF90: E8           INX
+CF/EF91: E8           INX
+CF/EF92: E8           INX
+CF/EF93: 86 C6        STX $C6
+CF/EF95: C8           INY
+CF/EF96: C8           INY
+CF/EF97: C8           INY
+CF/EF98: C8           INY
+CF/EF99: C6 C8        DEC $C8
+CF/EF9B: D0 A5        BNE $EF42
+CF/EF9D: C2 31        REP #$31
+CF/EF9F: 68           PLA
+CF/EFA0: 6D C9 1D     ADC $1DC9
+CF/EFA3: 8D C9 1D     STA $1DC9
+CF/EFA6: 7B           TDC
+CF/EFA7: E2 20        SEP #$20
+CF/EFA9: A2 00 1D     LDX #$1D00
+CF/EFAC: DA           PHX
+CF/EFAD: 2B           PLD
+CF/EFAE: 60           RTS

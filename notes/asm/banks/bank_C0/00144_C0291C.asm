@@ -1,0 +1,294 @@
+C0/291C: 1A           INC
+C0/291D: 9F 00 30 7E  STA $7E3000,X
+C0/2921: C2 20        REP #$20
+C0/2923: 8A           TXA
+C0/2924: 38           SEC
+C0/2925: E9 00 01     SBC #$0100
+C0/2928: AA           TAX
+C0/2929: E2 20        SEP #$20
+C0/292B: A9 E7        LDA #$E7
+C0/292D: 9F 00 30 7E  STA $7E3000,X
+C0/2931: 80 E5        BRA $2918
+C0/2933: 1A           INC
+C0/2934: 9F 00 30 7E  STA $7E3000,X
+C0/2938: E8           INX
+C0/2939: A9 EF        LDA #$EF
+C0/293B: 9F 00 30 7E  STA $7E3000,X
+C0/293F: C2 20        REP #$20
+C0/2941: 8A           TXA
+C0/2942: 38           SEC
+C0/2943: E9 00 01     SBC #$0100
+C0/2946: AA           TAX
+C0/2947: E2 20        SEP #$20
+C0/2949: A9 EB        LDA #$EB
+C0/294B: 9F 00 30 7E  STA $7E3000,X
+C0/294F: A9 E9        LDA #$E9
+C0/2951: CA           DEX
+C0/2952: 9F 00 30 7E  STA $7E3000,X
+C0/2956: 80 C0        BRA $2918
+C0/2958: 1A           INC
+C0/2959: 9F 00 30 7E  STA $7E3000,X
+C0/295D: CA           DEX
+C0/295E: A9 ED        LDA #$ED
+C0/2960: 9F 00 30 7E  STA $7E3000,X
+C0/2964: C2 20        REP #$20
+C0/2966: 8A           TXA
+C0/2967: 38           SEC
+C0/2968: E9 00 01     SBC #$0100
+C0/296B: AA           TAX
+C0/296C: E2 20        SEP #$20
+C0/296E: A9 E9        LDA #$E9
+C0/2970: 9F 00 30 7E  STA $7E3000,X
+C0/2974: A9 EB        LDA #$EB
+C0/2976: E8           INX
+C0/2977: 9F 00 30 7E  STA $7E3000,X
+C0/297B: 80 9B        BRA $2918
+C0/297D: 1A           INC
+C0/297E: 9F 00 30 7E  STA $7E3000,X
+C0/2982: E8           INX
+C0/2983: A9 FD        LDA #$FD
+C0/2985: 9F 00 30 7E  STA $7E3000,X
+C0/2989: C2 20        REP #$20
+C0/298B: 8A           TXA
+C0/298C: 38           SEC
+C0/298D: E9 00 01     SBC #$0100
+C0/2990: AA           TAX
+C0/2991: E2 20        SEP #$20
+C0/2993: A9 F9        LDA #$F9
+C0/2995: 9F 00 30 7E  STA $7E3000,X
+C0/2999: A9 F7        LDA #$F7
+C0/299B: CA           DEX
+C0/299C: 9F 00 30 7E  STA $7E3000,X
+C0/29A0: C2 20        REP #$20
+C0/29A2: 8A           TXA
+C0/29A3: 38           SEC
+C0/29A4: E9 00 01     SBC #$0100
+C0/29A7: AA           TAX
+C0/29A8: E2 20        SEP #$20
+C0/29AA: A9 F3        LDA #$F3
+C0/29AC: 9F 00 30 7E  STA $7E3000,X
+C0/29B0: A9 F5        LDA #$F5
+C0/29B2: E8           INX
+C0/29B3: 9F 00 30 7E  STA $7E3000,X
+C0/29B7: 82 5E FF     BRL $C02918
+C0/29BA: 1A           INC
+C0/29BB: 9F 00 30 7E  STA $7E3000,X
+C0/29BF: CA           DEX
+C0/29C0: A9 FB        LDA #$FB
+C0/29C2: 9F 00 30 7E  STA $7E3000,X
+C0/29C6: C2 20        REP #$20
+C0/29C8: 8A           TXA
+C0/29C9: 38           SEC
+C0/29CA: E9 00 01     SBC #$0100
+C0/29CD: AA           TAX
+C0/29CE: E2 20        SEP #$20
+C0/29D0: A9 F7        LDA #$F7
+C0/29D2: 9F 00 30 7E  STA $7E3000,X
+C0/29D6: A9 F9        LDA #$F9
+C0/29D8: E8           INX
+C0/29D9: 9F 00 30 7E  STA $7E3000,X
+C0/29DD: C2 20        REP #$20
+C0/29DF: 8A           TXA
+C0/29E0: 38           SEC
+C0/29E1: E9 00 01     SBC #$0100
+C0/29E4: AA           TAX
+C0/29E5: E2 20        SEP #$20
+C0/29E7: A9 F5        LDA #$F5
+C0/29E9: 9F 00 30 7E  STA $7E3000,X
+C0/29ED: A9 F3        LDA #$F3
+C0/29EF: CA           DEX
+C0/29F0: 9F 00 30 7E  STA $7E3000,X
+C0/29F4: 82 21 FF     BRL $C02918
+C0/29F7: 0B           PHD
+C0/29F8: C2 20        REP #$20
+C0/29FA: A9 00 21     LDA #$2100
+C0/29FD: 5B           TCD
+C0/29FE: E2 20        SEP #$20
+C0/2A00: A2 00 F0     LDX #$F000
+C0/2A03: 86 81        STX $81
+C0/2A05: A9 00        LDA #$00
+C0/2A07: 85 83        STA $83
+C0/2A09: A9 F0        LDA #$F0
+C0/2A0B: 85 80        STA $80
+C0/2A0D: A9 20        LDA #$20
+C0/2A0F: 85 80        STA $80
+C0/2A11: A2 0F 00     LDX #$000F
+C0/2A14: A9 F1        LDA #$F1
+C0/2A16: 85 80        STA $80
+C0/2A18: A9 20        LDA #$20
+C0/2A1A: 85 80        STA $80
+C0/2A1C: A9 F2        LDA #$F2
+C0/2A1E: 85 80        STA $80
+C0/2A20: A9 20        LDA #$20
+C0/2A22: 85 80        STA $80
+C0/2A24: CA           DEX
+C0/2A25: D0 ED        BNE $2A14
+C0/2A27: A9 F3        LDA #$F3
+C0/2A29: 85 80        STA $80
+C0/2A2B: A9 20        LDA #$20
+C0/2A2D: 85 80        STA $80
+C0/2A2F: A0 02 00     LDY #$0002
+C0/2A32: A9 F4        LDA #$F4
+C0/2A34: 85 80        STA $80
+C0/2A36: A9 20        LDA #$20
+C0/2A38: 85 80        STA $80
+C0/2A3A: A2 07 00     LDX #$0007
+C0/2A3D: A9 FC        LDA #$FC
+C0/2A3F: 85 80        STA $80
+C0/2A41: A9 20        LDA #$20
+C0/2A43: 85 80        STA $80
+C0/2A45: A9 FD        LDA #$FD
+C0/2A47: 85 80        STA $80
+C0/2A49: A9 20        LDA #$20
+C0/2A4B: 85 80        STA $80
+C0/2A4D: A9 FC        LDA #$FC
+C0/2A4F: 85 80        STA $80
+C0/2A51: A9 23        LDA #$23
+C0/2A53: 85 80        STA $80
+C0/2A55: A9 FD        LDA #$FD
+C0/2A57: 85 80        STA $80
+C0/2A59: A9 23        LDA #$23
+C0/2A5B: 85 80        STA $80
+C0/2A5D: CA           DEX
+C0/2A5E: D0 DD        BNE $2A3D
+C0/2A60: A9 FC        LDA #$FC
+C0/2A62: 85 80        STA $80
+C0/2A64: A9 20        LDA #$20
+C0/2A66: 85 80        STA $80
+C0/2A68: A9 FD        LDA #$FD
+C0/2A6A: 85 80        STA $80
+C0/2A6C: A9 20        LDA #$20
+C0/2A6E: 85 80        STA $80
+C0/2A70: A9 F5        LDA #$F5
+C0/2A72: 85 80        STA $80
+C0/2A74: A9 20        LDA #$20
+C0/2A76: 85 80        STA $80
+C0/2A78: A9 F6        LDA #$F6
+C0/2A7A: 85 80        STA $80
+C0/2A7C: A9 20        LDA #$20
+C0/2A7E: 85 80        STA $80
+C0/2A80: A2 07 00     LDX #$0007
+C0/2A83: A9 FE        LDA #$FE
+C0/2A85: 85 80        STA $80
+C0/2A87: A9 20        LDA #$20
+C0/2A89: 85 80        STA $80
+C0/2A8B: A9 FF        LDA #$FF
+C0/2A8D: 85 80        STA $80
+C0/2A8F: A9 20        LDA #$20
+C0/2A91: 85 80        STA $80
+C0/2A93: A9 FE        LDA #$FE
+C0/2A95: 85 80        STA $80
+C0/2A97: A9 23        LDA #$23
+C0/2A99: 85 80        STA $80
+C0/2A9B: A9 FF        LDA #$FF
+C0/2A9D: 85 80        STA $80
+C0/2A9F: A9 23        LDA #$23
+C0/2AA1: 85 80        STA $80
+C0/2AA3: CA           DEX
+C0/2AA4: D0 DD        BNE $2A83
+C0/2AA6: A9 FE        LDA #$FE
+C0/2AA8: 85 80        STA $80
+C0/2AAA: A9 20        LDA #$20
+C0/2AAC: 85 80        STA $80
+C0/2AAE: A9 FF        LDA #$FF
+C0/2AB0: 85 80        STA $80
+C0/2AB2: A9 20        LDA #$20
+C0/2AB4: 85 80        STA $80
+C0/2AB6: A9 F7        LDA #$F7
+C0/2AB8: 85 80        STA $80
+C0/2ABA: A9 20        LDA #$20
+C0/2ABC: 85 80        STA $80
+C0/2ABE: A9 F4        LDA #$F4
+C0/2AC0: 85 80        STA $80
+C0/2AC2: A9 20        LDA #$20
+C0/2AC4: 85 80        STA $80
+C0/2AC6: A2 07 00     LDX #$0007
+C0/2AC9: A9 FC        LDA #$FC
+C0/2ACB: 85 80        STA $80
+C0/2ACD: A9 23        LDA #$23
+C0/2ACF: 85 80        STA $80
+C0/2AD1: A9 FD        LDA #$FD
+C0/2AD3: 85 80        STA $80
+C0/2AD5: A9 23        LDA #$23
+C0/2AD7: 85 80        STA $80
+C0/2AD9: A9 FC        LDA #$FC
+C0/2ADB: 85 80        STA $80
+C0/2ADD: A9 20        LDA #$20
+C0/2ADF: 85 80        STA $80
+C0/2AE1: A9 FD        LDA #$FD
+C0/2AE3: 85 80        STA $80
+C0/2AE5: A9 20        LDA #$20
+C0/2AE7: 85 80        STA $80
+C0/2AE9: CA           DEX
+C0/2AEA: D0 DD        BNE $2AC9
+C0/2AEC: A9 FC        LDA #$FC
+C0/2AEE: 85 80        STA $80
+C0/2AF0: A9 23        LDA #$23
+C0/2AF2: 85 80        STA $80
+C0/2AF4: A9 FD        LDA #$FD
+C0/2AF6: 85 80        STA $80
+C0/2AF8: A9 23        LDA #$23
+C0/2AFA: 85 80        STA $80
+C0/2AFC: A9 F5        LDA #$F5
+C0/2AFE: 85 80        STA $80
+C0/2B00: A9 20        LDA #$20
+C0/2B02: 85 80        STA $80
+C0/2B04: A9 F6        LDA #$F6
+C0/2B06: 85 80        STA $80
+C0/2B08: A9 20        LDA #$20
+C0/2B0A: 85 80        STA $80
+C0/2B0C: A2 07 00     LDX #$0007
+C0/2B0F: A9 FE        LDA #$FE
+C0/2B11: 85 80        STA $80
+C0/2B13: A9 23        LDA #$23
+C0/2B15: 85 80        STA $80
+C0/2B17: A9 FF        LDA #$FF
+C0/2B19: 85 80        STA $80
+C0/2B1B: A9 23        LDA #$23
+C0/2B1D: 85 80        STA $80
+C0/2B1F: A9 FE        LDA #$FE
+C0/2B21: 85 80        STA $80
+C0/2B23: A9 20        LDA #$20
+C0/2B25: 85 80        STA $80
+C0/2B27: A9 FF        LDA #$FF
+C0/2B29: 85 80        STA $80
+C0/2B2B: A9 20        LDA #$20
+C0/2B2D: 85 80        STA $80
+C0/2B2F: CA           DEX
+C0/2B30: D0 DD        BNE $2B0F
+C0/2B32: A9 FE        LDA #$FE
+C0/2B34: 85 80        STA $80
+C0/2B36: A9 23        LDA #$23
+C0/2B38: 85 80        STA $80
+C0/2B3A: A9 FF        LDA #$FF
+C0/2B3C: 85 80        STA $80
+C0/2B3E: A9 23        LDA #$23
+C0/2B40: 85 80        STA $80
+C0/2B42: A9 F7        LDA #$F7
+C0/2B44: 85 80        STA $80
+C0/2B46: A9 20        LDA #$20
+C0/2B48: 85 80        STA $80
+C0/2B4A: 88           DEY
+C0/2B4B: F0 03        BEQ $2B50
+C0/2B4D: 82 E2 FE     BRL $C02A32
+C0/2B50: A9 F8        LDA #$F8
+C0/2B52: 85 80        STA $80
+C0/2B54: A9 20        LDA #$20
+C0/2B56: 85 80        STA $80
+C0/2B58: A2 0F 00     LDX #$000F
+C0/2B5B: A9 F9        LDA #$F9
+C0/2B5D: 85 80        STA $80
+C0/2B5F: A9 20        LDA #$20
+C0/2B61: 85 80        STA $80
+C0/2B63: A9 FA        LDA #$FA
+C0/2B65: 85 80        STA $80
+C0/2B67: A9 20        LDA #$20
+C0/2B69: 85 80        STA $80
+C0/2B6B: CA           DEX
+C0/2B6C: D0 ED        BNE $2B5B
+C0/2B6E: A9 FB        LDA #$FB
+C0/2B70: 85 80        STA $80
+C0/2B72: A9 20        LDA #$20
+C0/2B74: 85 80        STA $80
+C0/2B76: 2B           PLD
+C0/2B77: 6B           RTL

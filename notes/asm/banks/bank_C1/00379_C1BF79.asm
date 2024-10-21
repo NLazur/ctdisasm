@@ -1,0 +1,4 @@
+C1/BF79: 7B           TDC
+C1/BF7A: 8D 23 AF     STA $AF23
+C1/BF7D: 20 23 D5     JSR $D523
+C1/BF80: 60           RTS

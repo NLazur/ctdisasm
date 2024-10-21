@@ -1,0 +1,44 @@
+FD/5A76: F8           SED
+FD/5A77: 81 A0        STA ($A0,X)
+FD/5A79: 05 02        ORA $02
+FD/5A7B: 07 04        ORA [$04]
+FD/5A7D: 05 3F        ORA $3F
+FD/5A7F: F8           SED
+FD/5A80: 7D C1 A8     ADC $A8C1,X
+FD/5A83: 00 FB        BRK $FB
+FD/5A85: 13 40        ORA ($40,S),Y
+FD/5A87: F8           SED
+FD/5A88: 01 F8        ORA ($F8,X)
+FD/5A8A: 01 F8        ORA ($F8,X)
+FD/5A8C: 0D 90 06     ORA $0690
+FD/5A8F: 1B           TCS
+FD/5A90: F1 F5        SBC ($F5),Y
+FD/5A92: 04 D8        TSB $D8
+FD/5A94: 07 BB        ORA [$BB]
+FD/5A96: F9 07 C0     SBC $C007,Y
+FD/5A99: 05 04        ORA $04
+FD/5A9B: 07 0E        ORA [$0E]
+FD/5A9D: 0A           ASL
+FD/5A9E: 3C FB 09     BIT $09FB,X
+FD/5AA1: B0 F8        BCS $5A9B
+FD/5AA3: 05 04        ORA $04
+FD/5AA5: 0A           ASL
+FD/5AA6: 0D 03 C3     ORA $C303
+FD/5AA9: 7F FA 3F A8  ADC $A83FFA,X
+FD/5AAD: 02 02        COP $02
+FD/5AAF: 0B           PHD
+FD/5AB0: 04 83        TSB $83
+FD/5AB2: 0C 2C F8     TSB $F82C
+FD/5AB5: E1 BD        SBC ($BD,X)
+FD/5AB7: 90 03        BCC $5ABC
+FD/5AB9: 02 04        COP $04
+FD/5ABB: 0D 03 13     ORA $1303
+FD/5ABE: BF FC BE 90  LDA $90BEFC,X
+FD/5AC2: FC 03 0A     JSR ($0A03,X)
+FD/5AC5: C0 07        CPY #$07
+FD/5AC7: 02 13        COP $13
+FD/5AC9: 2E F8 FE     ROL $FEF8
+FD/5ACC: 90 40        BCC $5B0E
+FD/5ACE: 10 C5        BPL $5A95
+FD/5AD0: 0F A7 2E F8  ORA $F82EA7
+FD/5AD4: 40           RTI

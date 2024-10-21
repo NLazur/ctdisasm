@@ -1,0 +1,35 @@
+C2/2EC1: 28           PLP
+C2/2EC2: 01 52        ORA ($52,X)
+C2/2EC4: 29 01        AND #$01
+C2/2EC6: 52 00        EOR ($00)
+C2/2EC8: 2A           ROL
+C2/2EC9: 07 02        ORA [$02]
+C2/2ECB: 38           SEC
+C2/2ECC: 10 28        BPL $2EF6
+C2/2ECE: 01 52        ORA ($52,X)
+C2/2ED0: 00 29        BRK $29
+C2/2ED2: 01 38        ORA ($38,X)
+C2/2ED4: 08           PHP
+C2/2ED5: 2B           PLD
+C2/2ED6: 07 02        ORA [$02]
+C2/2ED8: 52 AD        EOR ($AD)
+C2/2EDA: EC 1B F0     CPX $F01B
+C2/2EDD: 0A           ASL
+C2/2EDE: 30 2D        BMI $2F0D
+C2/2EE0: AD EE 1B     LDA $1BEE
+C2/2EE3: CD ED 1B     CMP $1BED
+C2/2EE6: 90 25        BCC $2F0D
+C2/2EE8: AD E8 1B     LDA $1BE8
+C2/2EEB: 8D 00 1E     STA $1E00
+C2/2EEE: AD E9 1B     LDA $1BE9
+C2/2EF1: 8D 01 1E     STA $1E01
+C2/2EF4: AD EA 1B     LDA $1BEA
+C2/2EF7: 8D 02 1E     STA $1E02
+C2/2EFA: AD EB 1B     LDA $1BEB
+C2/2EFD: 8D 03 1E     STA $1E03
+C2/2F00: AD ED 1B     LDA $1BED
+C2/2F03: 8D EE 1B     STA $1BEE
+C2/2F06: A9 01        LDA #$01
+C2/2F08: 8D EC 1B     STA $1BEC
+C2/2F0B: 18           CLC
+C2/2F0C: 60           RTS

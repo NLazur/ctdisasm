@@ -1,0 +1,63 @@
+C6/4131: 36 C1        ROL $C1,X
+C6/4133: 76 00        ROR $00,X
+C6/4135: 20 C2 04     JSR $04C2
+C6/4138: 00 00        BRK $00
+C6/413A: 44 20 8C     MVP $20,$8C
+C6/413D: 20 00 86     JSR $8600
+C6/4140: 76 8D        ROR $8D,X
+C6/4142: 26 00        ROL $00
+C6/4144: 85 54        STA $54
+C6/4146: 76 9C        ROR $9C,X
+C6/4148: 28           PLP
+C6/4149: 00 8B        BRK $8B
+C6/414B: 20 00 82     JSR $8200
+C6/414E: 1A           INC
+C6/414F: 10 87        BPL $40D8
+C6/4151: 01 3A        ORA ($3A,X)
+C6/4153: 00 00        BRK $00
+C6/4155: 20 A9 76     JSR $76A9
+C6/4158: 80 36        BRA $4190
+C6/415A: 92 00        STA ($00)
+C6/415C: 36 9C        ROL $9C,X
+C6/415E: 36 AA        ROL $AA,X
+C6/4160: 36 93        ROL $93,X
+C6/4162: 36 94        ROL $94,X
+C6/4164: 44 36 A9     MVP $36,$A9
+C6/4167: 4E 00 C8     LSR $C800
+C6/416A: 76 80        ROR $80,X
+C6/416C: 3E 00 BD     ROL $BD00,X
+C6/416F: D1 58        CMP ($58),Y
+C6/4171: 00 C4        BRK $C4
+C6/4173: 76 BD        ROR $BD,X
+C6/4175: 48           PHA
+C6/4176: 00 C3        BRK $C3
+C6/4178: 38           SEC
+C6/4179: 00 4A        BRK $4A
+C6/417B: 08           PHP
+C6/417C: 02 BB        COP $BB
+C6/417E: 1E 00 CF     ASL $CF00,X
+C6/4181: 06 CF        ASL $CF
+C6/4183: 46 CF        LSR $CF
+C6/4185: 86 04        STX $04
+C6/4187: CF C6 08 28  CMP $2808C6
+C6/418B: 90 16        BCC $41A3
+C6/418D: 91 16        STA ($16),Y
+C6/418F: 80 00        BRA $4191
+C6/4191: 16 A1        ASL $A1,X
+C6/4193: 16 C8        ASL $C8,X
+C6/4195: 16 BC        ASL $BC,X
+C6/4197: 16 A2        ASL $A2,X
+C6/4199: 00 16        BRK $16
+C6/419B: A3 16        LDA $16,S
+C6/419D: 94 16        STY $16,X
+C6/419F: 95 16        STA $16,X
+C6/41A1: A4 00        LDY $00
+C6/41A3: 16 A5        ASL $A5,X
+C6/41A5: 16 96        ASL $96,X
+C6/41A7: 16 97        ASL $97,X
+C6/41A9: 16 A6        ASL $A6,X
+C6/41AB: 00 16        BRK $16
+C6/41AD: A7 16        LDA [$16]
+C6/41AF: AC 16 96     LDY $9616
+C6/41B2: 56 B8        LSR $B8,X
+C6/41B4: 40           RTI

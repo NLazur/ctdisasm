@@ -1,0 +1,69 @@
+FE/0F03: 68           PLA
+FE/0F04: F5 05        SBC $05,X
+FE/0F06: 01 03        ORA ($03,X)
+FE/0F08: 02 E4        COP $E4
+FE/0F0A: 01 07        ORA ($07,X)
+FE/0F0C: BD 02 0A     LDA $0A02,X
+FE/0F0F: 0E 87 10     ASL $1087
+FE/0F12: 36 F8        ROL $F8,X
+FE/0F14: 81 50        STA ($50,X)
+FE/0F16: FE 07 80     INC $8007,X
+FE/0F19: 20 08 10     JSR $1008
+FE/0F1C: 8B           PHB
+FE/0F1D: FD 7E 7C     SBC $7C7E,X
+FE/0F20: 39 1E 7A     AND $7A1E,Y
+FE/0F23: 11 03        ORA ($03),Y
+FE/0F25: FC 9F 86     JSR ($869F,X)
+FE/0F28: B0 B8        BCS $0EE2
+FE/0F2A: F8           SED
+FE/0F2B: 04 FE        TSB $FE
+FE/0F2D: 01 F8        ORA ($F8,X)
+FE/0F2F: 08           PHP
+FE/0F30: B8           CLV
+FE/0F31: 0C 0C 24     TSB $240C
+FE/0F34: F8           SED
+FE/0F35: 73 02        ADC ($02,S),Y
+FE/0F37: B5 7A        LDA $7A,X
+FE/0F39: 0A           ASL
+FE/0F3A: 06 0C        ASL $0C
+FE/0F3C: 84 03        STY $03
+FE/0F3E: 2C F8 7B     BIT $7BF8
+FE/0F41: 88           DEY
+FE/0F42: 03 E3        ORA $E3,S
+FE/0F44: 85 01        STA $01
+FE/0F46: FD 03 07     SBC $0703,X
+FE/0F49: 07 03        ORA [$03]
+FE/0F4B: 85 F8        STA $F8
+FE/0F4D: FC 64 7D     JSR ($7D64,X)
+FE/0F50: 03 8E        ORA $8E,S
+FE/0F52: 0F C2 05 3C  ORA $3C05C2
+FE/0F56: 02 C7        COP $C7
+FE/0F58: 07 07        ORA [$07]
+FE/0F5A: 06 01        ASL $01
+FE/0F5C: 11 10        ORA ($10),Y
+FE/0F5E: 9E 0F 3A     STZ $3A0F,X
+FE/0F61: F8           SED
+FE/0F62: F5 20        SBC $20,X
+FE/0F64: 7D 0C 77     ADC $770C,X
+FE/0F67: 03 0C        ORA $0C,S
+FE/0F69: 0E 79 02     ASL $0279
+FE/0F6C: D4 0C        PEI $0C
+FE/0F6E: 0E C2 00     ASL $00C2
+FE/0F71: 03 8E        ORA $8E,S
+FE/0F73: 04 08        TSB $08
+FE/0F75: 86 F8        STX $F8
+FE/0F77: 36 31        ROL $31,X
+FE/0F79: A0 09 08     LDY #$0809
+FE/0F7C: 08           PHP
+FE/0F7D: 03 0B        ORA $0B,S
+FE/0F7F: 7D 05 0A     ADC $0A05,X
+FE/0F82: C5 06        CMP $06
+FE/0F84: 00 0A        BRK $0A
+FE/0F86: 01 05        ORA ($05,X)
+FE/0F88: 0B           PHD
+FE/0F89: 03 08        ORA $08,S
+FE/0F8B: 08           PHP
+FE/0F8C: 09 F7 3F     ORA #$3FF7
+FE/0F8F: F8           SED
+FE/0F90: 41 50        EOR ($50,X)
+FE/0F92: 40           RTI

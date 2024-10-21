@@ -1,0 +1,86 @@
+D1/F83D: A9 E8        LDA #$E8
+D1/F83F: 85 54        STA $54
+D1/F841: A9 E0        LDA #$E0
+D1/F843: 85 56        STA $56
+D1/F845: A9 AB        LDA #$AB
+D1/F847: 85 53        STA $53
+D1/F849: A9 55        LDA #$55
+D1/F84B: 85 55        STA $55
+D1/F84D: 7B           TDC
+D1/F84E: AA           TAX
+D1/F84F: 9E 2F C0     STZ $C02F,X
+D1/F852: E8           INX
+D1/F853: E0 20 01     CPX #$0120
+D1/F856: D0 F7        BNE $F84F
+D1/F858: 7B           TDC
+D1/F859: AA           TAX
+D1/F85A: A5 54        LDA $54
+D1/F85C: 9D 31 C0     STA $C031,X
+D1/F85F: A5 56        LDA $56
+D1/F861: 9D 91 C0     STA $C091,X
+D1/F864: A9 81        LDA #$81
+D1/F866: 9D 90 C0     STA $C090,X
+D1/F869: A9 01        LDA #$01
+D1/F86B: 9D 30 C0     STA $C030,X
+D1/F86E: C2 20        REP #$20
+D1/F870: A5 53        LDA $53
+D1/F872: 38           SEC
+D1/F873: E9 55 00     SBC #$0055
+D1/F876: 85 53        STA $53
+D1/F878: A5 55        LDA $55
+D1/F87A: 18           CLC
+D1/F87B: 69 55 00     ADC #$0055
+D1/F87E: 85 55        STA $55
+D1/F880: 7B           TDC
+D1/F881: E2 20        SEP #$20
+D1/F883: E8           INX
+D1/F884: E8           INX
+D1/F885: E8           INX
+D1/F886: E8           INX
+D1/F887: E0 60 00     CPX #$0060
+D1/F88A: D0 CE        BNE $F85A
+D1/F88C: A9 E8        LDA #$E8
+D1/F88E: 85 54        STA $54
+D1/F890: A9 E0        LDA #$E0
+D1/F892: 85 56        STA $56
+D1/F894: A9 56        LDA #$56
+D1/F896: 85 53        STA $53
+D1/F898: A9 AA        LDA #$AA
+D1/F89A: 85 55        STA $55
+D1/F89C: 7B           TDC
+D1/F89D: AA           TAX
+D1/F89E: A5 54        LDA $54
+D1/F8A0: 9D F1 C0     STA $C0F1,X
+D1/F8A3: A5 56        LDA $56
+D1/F8A5: 9D 21 C1     STA $C121,X
+D1/F8A8: A9 81        LDA #$81
+D1/F8AA: 9D 20 C1     STA $C120,X
+D1/F8AD: A9 01        LDA #$01
+D1/F8AF: 9D F0 C0     STA $C0F0,X
+D1/F8B2: C2 20        REP #$20
+D1/F8B4: A5 53        LDA $53
+D1/F8B6: 38           SEC
+D1/F8B7: E9 AA 00     SBC #$00AA
+D1/F8BA: 85 53        STA $53
+D1/F8BC: A5 55        LDA $55
+D1/F8BE: 18           CLC
+D1/F8BF: 69 AA 00     ADC #$00AA
+D1/F8C2: 85 55        STA $55
+D1/F8C4: 7B           TDC
+D1/F8C5: E2 20        SEP #$20
+D1/F8C7: E8           INX
+D1/F8C8: E8           INX
+D1/F8C9: E8           INX
+D1/F8CA: E8           INX
+D1/F8CB: E0 30 00     CPX #$0030
+D1/F8CE: D0 CE        BNE $F89E
+D1/F8D0: A9 E0        LDA #$E0
+D1/F8D2: 8D ED C0     STA $C0ED
+D1/F8D5: 8D 4D C1     STA $C14D
+D1/F8D8: 9C EB C0     STZ $C0EB
+D1/F8DB: 9C EC C0     STZ $C0EC
+D1/F8DE: 9C EE C0     STZ $C0EE
+D1/F8E1: 9C 4B C1     STZ $C14B
+D1/F8E4: 9C 4C C1     STZ $C14C
+D1/F8E7: 9C 4E C1     STZ $C14E
+D1/F8EA: 6B           RTL

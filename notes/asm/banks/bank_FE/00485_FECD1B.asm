@@ -1,0 +1,53 @@
+FE/CD1B: 34 00        BIT $00,X
+FE/CD1D: 18           CLC
+FE/CD1E: 1A           INC
+FE/CD1F: 18           CLC
+FE/CD20: 58           CLI
+FE/CD21: 6C 6B 6C     JMP ($6C6B)
+FE/CD24: 14 80        TRB $80
+FE/CD26: 35 34        AND $34,X
+FE/CD28: 34 34        BIT $34,X
+FE/CD2A: 35 14        AND $14,X
+FE/CD2C: 6C 5F 00     JMP ($005F)
+FE/CD2F: 01 02        ORA ($02,X)
+FE/CD31: 20 39 39     JSR $3939
+FE/CD34: 36 36        ROL $36,X
+FE/CD36: 36 03        ROL $03,X
+FE/CD38: 38           SEC
+FE/CD39: 04 38        TSB $38
+FE/CD3B: 14 0A        TRB $0A
+FE/CD3D: 00 37        BRK $37
+FE/CD3F: 37 14        AND [$14],Y
+FE/CD41: 39 6C 00     AND $006C,Y
+FE/CD44: 4E 4E 4F     LSR $4F4E
+FE/CD47: 56 4F        LSR $4F,X
+FE/CD49: 20 4F 4E     JSR $4E4F
+FE/CD4C: 00 4F        BRK $4F
+FE/CD4E: 20 20 4F     JSR $4F20
+FE/CD51: 56 4E        LSR $4E,X
+FE/CD53: 4F 4F 06 11  EOR $11064F
+FE/CD57: 0D 20 01     ORA $0120
+FE/CD5A: 10 4E        BPL $CDAA
+FE/CD5C: 4F 6C 59 58  EOR $58596C
+FE/CD60: 81 0A        STA ($0A,X)
+FE/CD62: 00 6C        BRK $6C
+FE/CD64: 58           CLI
+FE/CD65: 5A           PHY
+FE/CD66: 38           SEC
+FE/CD67: 58           CLI
+FE/CD68: 35 5F        AND $5F,X
+FE/CD6A: 05 ED        ORA $ED
+FE/CD6C: 7C 00 38     JMP ($3800,X)
+FE/CD6F: 84 00        STY $00
+FE/CD71: 04 00        TSB $00
+FE/CD73: 38           SEC
+FE/CD74: 3C 00 84     BIT $8400,X
+FE/CD77: 00 02        BRK $02
+FE/CD79: 00 00        BRK $00
+FE/CD7B: 67 56        ADC [$56]
+FE/CD7D: 69 6E        ADC #$6E
+FE/CD7F: 10 6D        BPL $CDEE
+FE/CD81: 6F 6F 00 14  ADC $14006F
+FE/CD85: 67 69        ADC [$69]
+FE/CD87: 6D 56 40     ADC $4056
+FE/CD8A: 40           RTI

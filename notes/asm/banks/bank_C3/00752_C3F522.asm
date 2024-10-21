@@ -1,0 +1,44 @@
+C3/F522: 01 F0        ORA ($F0,X)
+C3/F524: D8           CLD
+C3/F525: 0C 00 FF     TSB $FF00
+C3/F528: D8           CLD
+C3/F529: 0C 40 F0     TSB $F040
+C3/F52C: E8           INX
+C3/F52D: 2C 00 FF     BIT $FF00
+C3/F530: E8           INX
+C3/F531: 2C 40 05     BIT $0540
+C3/F534: F8           SED
+C3/F535: D9 00 01     CMP $0100,Y
+C3/F538: F0 D8        BEQ $F512
+C3/F53A: 0E 00 FF     ASL $FF00
+C3/F53D: D8           CLD
+C3/F53E: 0E 40 F0     ASL $F040
+C3/F541: E8           INX
+C3/F542: 2E 00 FF     ROL $FF00
+C3/F545: E8           INX
+C3/F546: 2E 40 05     ROL $0540
+C3/F549: F8           SED
+C3/F54A: D9 20 01     CMP $0120,Y
+C3/F54D: F0 D8        BEQ $F527
+C3/F54F: 0E 00 FF     ASL $FF00
+C3/F552: D8           CLD
+C3/F553: 0E 40 F0     ASL $F040
+C3/F556: E8           INX
+C3/F557: 2E 00 FF     ROL $FF00
+C3/F55A: E8           INX
+C3/F55B: 2E 40 05     ROL $0540
+C3/F55E: F8           SED
+C3/F55F: D9 40 01     CMP $0140,Y
+C3/F562: F0 D8        BEQ $F53C
+C3/F564: 0E 00 FF     ASL $FF00
+C3/F567: D8           CLD
+C3/F568: 0E 40 F0     ASL $F040
+C3/F56B: E8           INX
+C3/F56C: 2E 00 FF     ROL $FF00
+C3/F56F: E8           INX
+C3/F570: 2E 40 05     ROL $0540
+C3/F573: F8           SED
+C3/F574: D5 06        CMP $06,X
+C3/F576: 01 F0        ORA ($F0,X)
+C3/F578: D8           CLD
+C3/F579: 40           RTI

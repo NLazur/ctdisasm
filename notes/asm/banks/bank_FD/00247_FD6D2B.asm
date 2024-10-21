@@ -1,0 +1,34 @@
+FD/6D2B: 10 00        BPL $6D2D
+FD/6D2D: 10 3D        BPL $6D6C
+FD/6D2F: 02 F2        COP $F2
+FD/6D31: B6 44        LDX $44,Y
+FD/6D33: C7 5E        CMP [$5E]
+FD/6D35: 00 E7        BRK $E7
+FD/6D37: A0 FF        LDY #$FF
+FD/6D39: 30 F0        BMI $6D2B
+FD/6D3B: 38           SEC
+FD/6D3C: 00 38        BRK $38
+FD/6D3E: 00 38        BRK $38
+FD/6D40: 38           SEC
+FD/6D41: 3F CE 7D FF  AND $FF7DCE,X
+FD/6D45: BB           TYX
+FD/6D46: 7F 80 B9 FF  ADC $FFB980,X
+FD/6D4A: 7F D8 F8 38  ADC $38F8D8,X
+FD/6D4E: 38           SEC
+FD/6D4F: F8           SED
+FD/6D50: 51 19        EOR ($19),Y
+FD/6D52: 00 32        BRK $32
+FD/6D54: 0D 01 FC     ORA $FC01
+FD/6D57: 91 08        STA ($08),Y
+FD/6D59: 12 3B        ORA ($3B)
+FD/6D5B: 3B           TSC
+FD/6D5C: 3F 83 01 40  AND $400183,X
+FD/6D60: FE 11 3B     INC $3B11,X
+FD/6D63: 3B           TSC
+FD/6D64: C4 FF        CPY $FF
+FD/6D66: C0 02 40     CPY #$4002
+FD/6D69: FD FE 11     SBC $11FE,X
+FD/6D6C: C4 8F        CPY $8F
+FD/6D6E: 32 06        AND ($06)
+FD/6D70: 80 99        BRA $6D0B
+FD/6D72: 60           RTS

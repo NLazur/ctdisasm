@@ -1,0 +1,2 @@
+C1/8EA7: 20 3E 8C     JSR $8C3E
+C1/8EAA: 60           RTS

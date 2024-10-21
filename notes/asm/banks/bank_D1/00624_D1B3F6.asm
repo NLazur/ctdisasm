@@ -1,0 +1,151 @@
+D1/B3F6: 08           PHP
+D1/B3F7: 09 0A        ORA #$0A
+D1/B3F9: 4A           LSR
+D1/B3FA: 49 48        EOR #$48
+D1/B3FC: 10 11        BPL $B40F
+D1/B3FE: 12 52        ORA ($52)
+D1/B400: 51 50        EOR ($50),Y
+D1/B402: 18           CLC
+D1/B403: 19 1A 5A     ORA $5A1A,Y
+D1/B406: 59 58 03     EOR $0358,Y
+D1/B409: 04 05        TSB $05
+D1/B40B: 45 44        EOR $44
+D1/B40D: 43 0B        EOR $0B,S
+D1/B40F: 0C 0D 4D     TSB $4D0D
+D1/B412: 4C 4B 13     JMP $134B
+D1/B415: 14 15        TRB $15
+D1/B417: 55 54        EOR $54,X
+D1/B419: 53 1B        EOR ($1B,S),Y
+D1/B41B: 1C 1D 5D     TRB $5D1D
+D1/B41E: 5C 5B 06 07  JMP $07065B
+D1/B422: 47 46        EOR [$46]
+D1/B424: 0E 0F 4F     ASL $4F0F
+D1/B427: 4E 16 17     LSR $1716
+D1/B42A: 57 56        EOR [$56],Y
+D1/B42C: 1E 1F 5F     ASL $5F1F,X
+D1/B42F: 5E 20 60     LSR $6020,X
+D1/B432: 01 38        ORA ($38,X)
+D1/B434: 00 3C        BRK $3C
+D1/B436: 00 3C        BRK $3C
+D1/B438: 00 3C        BRK $3C
+D1/B43A: 00 3C        BRK $3C
+D1/B43C: 00 3C        BRK $3C
+D1/B43E: 00 1C        BRK $1C
+D1/B440: 00 15        BRK $15
+D1/B442: 17 2C        ORA [$2C],Y
+D1/B444: 18           CLC
+D1/B445: 19 1A 1B     ORA $1B1A,Y
+D1/B448: 20 21 22     JSR $2221
+D1/B44B: 23 28        AND $28,S
+D1/B44D: 29 2A        AND #$2A
+D1/B44F: 2B           PLD
+D1/B450: 1C 1D 1E     TRB $1E1D
+D1/B453: 1F 24 25 26  ORA $262524,X
+D1/B457: 27 2D        AND [$2D]
+D1/B459: 2E 2F 01     ROL $012F
+D1/B45C: 00 00        BRK $00
+D1/B45E: 00 00        BRK $00
+D1/B460: 18           CLC
+D1/B461: 00 18        BRK $18
+D1/B463: 00 00        BRK $00
+D1/B465: 00 00        BRK $00
+D1/B467: 00 00        BRK $00
+D1/B469: 00 01        BRK $01
+D1/B46B: 41 81        EOR ($81,X)
+D1/B46D: C1 01        CMP ($01,X)
+D1/B46F: 00 00        BRK $00
+D1/B471: 00 00        BRK $00
+D1/B473: 18           CLC
+D1/B474: 00 18        BRK $18
+D1/B476: 00 00        BRK $00
+D1/B478: 00 00        BRK $00
+D1/B47A: 00 00        BRK $00
+D1/B47C: 00 02        BRK $02
+D1/B47E: 42 82        WDM $82
+D1/B480: C2 01        REP #$01
+D1/B482: 00 00        BRK $00
+D1/B484: 00 00        BRK $00
+D1/B486: 18           CLC
+D1/B487: 00 18        BRK $18
+D1/B489: 00 00        BRK $00
+D1/B48B: 00 00        BRK $00
+D1/B48D: 00 00        BRK $00
+D1/B48F: 00 03        BRK $03
+D1/B491: 43 83        EOR $83,S
+D1/B493: C3 01        CMP $01,S
+D1/B495: 00 00        BRK $00
+D1/B497: 3C 00 3C     BIT $3C00,X
+D1/B49A: 00 3C        BRK $3C
+D1/B49C: 00 3C        BRK $3C
+D1/B49E: 00 00        BRK $00
+D1/B4A0: 00 00        BRK $00
+D1/B4A2: 00 04        BRK $04
+D1/B4A4: 05 45        ORA $45
+D1/B4A6: 44 06 07     MVP $06,$07
+D1/B4A9: 47 46        EOR [$46]
+D1/B4AB: 86 87        STX $87
+D1/B4AD: C7 C6        CMP [$C6]
+D1/B4AF: 84 85        STY $85
+D1/B4B1: C5 C4        CMP $C4
+D1/B4B3: 01 00        ORA ($00,X)
+D1/B4B5: 00 3C        BRK $3C
+D1/B4B7: 00 3C        BRK $3C
+D1/B4B9: 00 3C        BRK $3C
+D1/B4BB: 00 3C        BRK $3C
+D1/B4BD: 00 00        BRK $00
+D1/B4BF: 00 00        BRK $00
+D1/B4C1: 00 08        BRK $08
+D1/B4C3: 09 49        ORA #$49
+D1/B4C5: 48           PHA
+D1/B4C6: 10 11        BPL $B4D9
+D1/B4C8: 51 50        EOR ($50),Y
+D1/B4CA: 90 91        BCC $B45D
+D1/B4CC: D1 D0        CMP ($D0),Y
+D1/B4CE: 88           DEY
+D1/B4CF: 89 C9        BIT #$C9
+D1/B4D1: C8           INY
+D1/B4D2: 01 00        ORA ($00,X)
+D1/B4D4: 00 3C        BRK $3C
+D1/B4D6: 00 3C        BRK $3C
+D1/B4D8: 00 3C        BRK $3C
+D1/B4DA: 00 3C        BRK $3C
+D1/B4DC: 00 00        BRK $00
+D1/B4DE: 00 00        BRK $00
+D1/B4E0: 00 0A        BRK $0A
+D1/B4E2: 0B           PHD
+D1/B4E3: 4B           PHK
+D1/B4E4: 4A           LSR
+D1/B4E5: 12 13        ORA ($13)
+D1/B4E7: 53 52        EOR ($52,S),Y
+D1/B4E9: 92 93        STA ($93)
+D1/B4EB: D3 D2        CMP ($D2,S),Y
+D1/B4ED: 8A           TXA
+D1/B4EE: 8B           PHB
+D1/B4EF: CB           WAI
+D1/B4F0: CA           DEX
+D1/B4F1: 01 00        ORA ($00,X)
+D1/B4F3: 00 3C        BRK $3C
+D1/B4F5: 00 24        BRK $24
+D1/B4F7: 00 24        BRK $24
+D1/B4F9: 00 3C        BRK $3C
+D1/B4FB: 00 00        BRK $00
+D1/B4FD: 00 00        BRK $00
+D1/B4FF: 00 0C        BRK $0C
+D1/B501: 0D 4D 4C     ORA $4C4D
+D1/B504: 14 54        TRB $54
+D1/B506: 94 D4        STY $D4,X
+D1/B508: 8C 8D CD     STY $CD8D
+D1/B50B: CC 01 00     CPY $0001
+D1/B50E: 00 3C        BRK $3C
+D1/B510: 00 24        BRK $24
+D1/B512: 00 24        BRK $24
+D1/B514: 00 3C        BRK $3C
+D1/B516: 00 00        BRK $00
+D1/B518: 00 00        BRK $00
+D1/B51A: 00 0E        BRK $0E
+D1/B51C: 0F 4F 4E 16  ORA $164E4F
+D1/B520: 56 96        LSR $96,X
+D1/B522: D6 8E        DEC $8E,X
+D1/B524: 8F CF CE 01  STA $01CECF
+D1/B528: 00 00        BRK $00
+D1/B52A: 60           RTS

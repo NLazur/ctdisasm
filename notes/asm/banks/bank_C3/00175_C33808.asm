@@ -1,0 +1,40 @@
+C3/3808: 15 BF        ORA $BF,X
+C3/380A: 5D 5D 7E     EOR $7E5D,X
+C3/380D: DA           PHX
+C3/380E: 45 1C        EOR $1C
+C3/3810: FA           PLX
+C3/3811: 41 0C        EOR ($0C,X)
+C3/3813: 06 0A        ASL $0A
+C3/3815: 00 D0        BRK $D0
+C3/3817: D3 60        CMP ($60,S),Y
+C3/3819: 1F 0D 8F 00  ORA $008F0D,X
+C3/381D: 05 21        ORA $21
+C3/381F: 00 A9        BRK $A9
+C3/3821: B9 FF 85     LDA $85FF,Y
+C3/3824: 04 01        TSB $01
+C3/3826: 19 06 F4     ORA $F406,Y
+C3/3829: 00 7E        BRK $7E
+C3/382B: AB           PLB
+C3/382C: A9 50        LDA #$50
+C3/382E: 8D 00 20     STA $2000
+C3/3831: 05 A9        ORA $A9
+C3/3833: C0 8D        CPY #$8D
+C3/3835: 21 05        AND ($05,X)
+C3/3837: A9 00        LDA #$00
+C3/3839: 10 8D        BPL $37C8
+C3/383B: 22 05 A9 04  JSR $04A905
+C3/383F: 8D 23 50     STA $5023
+C3/3842: 05 9C        ORA $9C
+C3/3844: 24 05        BIT $05
+C3/3846: AA           TAX
+C3/3847: 09 25        ORA #$25
+C3/3849: 30 0C        BMI $3857
+C3/384B: 8D 02 26     STA $2602
+C3/384E: 05 10        ORA $10
+C3/3850: 27 05        AND [$05]
+C3/3852: A9 FF        LDA #$FF
+C3/3854: 8D 28 50     STA $5028
+C3/3857: 05 AB        ORA $AB
+C3/3859: C2 20        REP #$20
+C3/385B: 35 50        AND $50,X
+C3/385D: 40           RTI

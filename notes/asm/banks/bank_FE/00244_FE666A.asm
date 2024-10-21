@@ -1,0 +1,79 @@
+FE/666A: 18           CLC
+FE/666B: 00 26        BRK $26
+FE/666D: 00 C2        BRK $C2
+FE/666F: 00 C2        BRK $C2
+FE/6671: C2 E6        REP #$E6
+FE/6673: E6 18        INC $18
+FE/6675: 24 20        BIT $20
+FE/6677: 1C 03 B3     TRB $B303
+FE/667A: 04 B6        TSB $B6
+FE/667C: 04 3C        TSB $3C
+FE/667E: DA           PHX
+FE/667F: 24 3E        BIT $3E
+FE/6681: 00 5A        BRK $5A
+FE/6683: C0 A4 24     CPY #$24A4
+FE/6686: 18           CLC
+FE/6687: 14 00        TRB $00
+FE/6689: 08           PHP
+FE/668A: 09 01 0C     ORA #$0C01
+FE/668D: 11 E7        ORA ($E7),Y
+FE/668F: 96 67        STX $67,Y
+FE/6691: 0D 20 10     ORA $1020
+FE/6694: 70 18        BVS $66AE
+FE/6696: 1E C7 01     ASL $01C7,X
+FE/6699: F7 87        SBC [$87],Y
+FE/669B: 2D 11 01     AND $0111
+FE/669E: 06 A8        ASL $A8
+FE/66A0: 21 14        AND ($14,X)
+FE/66A2: 1F 00 16 00  ORA $001600,X
+FE/66A6: 45 00        EOR $00
+FE/66A8: 61 6A        ADC ($6A,X)
+FE/66AA: 0D 2C 01     ORA $012C
+FE/66AD: 25 13        AND $13
+FE/66AF: BB           TYX
+FE/66B0: 80 12        BRA $66C4
+FE/66B2: 00 22        BRK $22
+FE/66B4: 00 2F        BRK $2F
+FE/66B6: 00 27        BRK $27
+FE/66B8: 00 02        BRK $02
+FE/66BA: 00 41        BRK $41
+FE/66BC: 00 49        BRK $49
+FE/66BE: 00 4D        BRK $4D
+FE/66C0: 00 7F        BRK $7F
+FE/66C2: 24 00        BIT $00
+FE/66C4: B4 84        LDY $84,X
+FE/66C6: 34 10        BIT $10,X
+FE/66C8: BA           TSX
+FE/66C9: 12 B1        ORA ($B1)
+FE/66CB: 00 00        BRK $00
+FE/66CD: B8           CLV
+FE/66CE: B0 DD        BCS $66AD
+FE/66D0: B5 8B        LDA $8B,X
+FE/66D2: 27 26        AND [$26]
+FE/66D4: 59 00 6D     EOR $6D00,Y
+FE/66D7: 5B           TCD
+FE/66D8: 79 CF 67     ADC $67CF,Y
+FE/66DB: CD 77 CE     CMP $CE77
+FE/66DE: 80 EF        BRA $66CF
+FE/66E0: 46 1F        LSR $1F
+FE/66E2: 42 8A        WDM $8A
+FE/66E4: 50 50        BVC $6736
+FE/66E6: 37 01        AND [$01],Y
+FE/66E8: 07 C0        ORA [$C0]
+FE/66EA: 05 31        ORA $31
+FE/66EC: 01 5C        ORA ($5C,X)
+FE/66EE: 38           SEC
+FE/66EF: A0 E0 A0     LDY #$A0E0
+FE/66F2: C0 C0 E6     CPY #$E6C0
+FE/66F5: 80 01        BRA $66F8
+FE/66F7: 00 6B        BRK $6B
+FE/66F9: 48           PHA
+FE/66FA: C0 C0 74     CPY #$74C0
+FE/66FD: C8           INY
+FE/66FE: 0D 93 28     ORA $2893
+FE/6701: 26 F7        ROL $F7
+FE/6703: 73 B4        ADC ($B4,S),Y
+FE/6705: 10 D0        BPL $66D7
+FE/6707: 46 60        LSR $60
+FE/6709: E0 02 40     CPX #$4002
+FE/670C: 40           RTI

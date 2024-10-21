@@ -1,0 +1,24 @@
+CE/6BB5: 52 6C        EOR ($6C)
+CE/6BB7: 5E 6C 6A     LSR $6A6C,X
+CE/6BBA: 6C 78 6C     JMP ($6C78)
+CE/6BBD: AB           PLB
+CE/6BBE: 6C D2 6C     JMP ($6CD2)
+CE/6BC1: F4 6C 23     PEA $236C
+CE/6BC4: 6D 45 6D     ADC $6D45
+CE/6BC7: 67 6D        ADC [$6D]
+CE/6BC9: 7B           TDC
+CE/6BCA: 6D 85 09     ADC $0985
+CE/6BCD: 93 09        STA ($09,S),Y
+CE/6BCF: 93 09        STA ($09,S),Y
+CE/6BD1: 0D 06 1D     ORA $1D06
+CE/6BD4: 20 0A 2D     JSR $2D0A
+CE/6BD7: 80 02        BRA $6BDB
+CE/6BD9: E8           INX
+CE/6BDA: 26 0B        ROL $0B
+CE/6BDC: 03 27        ORA $27,S
+CE/6BDE: D9 30 7B     CMP $7B30,Y
+CE/6BE1: D2 0A        CMP ($0A)
+CE/6BE3: 12 2D        ORA ($2D)
+CE/6BE5: 29 0E 24     AND #$240E
+CE/6BE8: 01 1B        ORA ($1B,X)
+CE/6BEA: 40           RTI

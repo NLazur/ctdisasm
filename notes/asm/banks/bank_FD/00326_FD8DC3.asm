@@ -1,0 +1,12 @@
+FD/8DC3: C4 44        CPY $44
+FD/8DC5: E7 E0        SBC [$E0]
+FD/8DC7: BF 00 84 D6  LDA $D68400,X
+FD/8DCB: 0C 2D 18     TSB $182D
+FD/8DCE: FD 07 FC     SBC $FC07,X
+FD/8DD1: 00 07        BRK $07
+FD/8DD3: D6 17        DEC $17,X
+FD/8DD5: 07 B7        ORA [$B7]
+FD/8DD7: 33 F7        AND ($F7,S),Y
+FD/8DD9: C2 00        REP #$00
+FD/8DDB: CE 18 8F     DEC $8F18
+FD/8DDE: 60           RTS

@@ -1,0 +1,21 @@
+C2/79E0: 20 36 23     JSR $2336
+C2/79E3: 8D 02 42     STA $4202
+C2/79E6: A9 30 8D     LDA #$8D30
+C2/79E9: 03 42        ORA $42,S
+C2/79EB: EA           NOP
+C2/79EC: EA           NOP
+C2/79ED: EA           NOP
+C2/79EE: EA           NOP
+C2/79EF: AD 16 42     LDA $4216
+C2/79F2: 30 05        BMI $79F9
+C2/79F4: AD 17 42     LDA $4217
+C2/79F7: 80 04        BRA $79FD
+C2/79F9: AD 17 42     LDA $4217
+C2/79FC: 1A           INC
+C2/79FD: C2 20        REP #$20
+C2/79FF: A6 4E        LDX $4E
+C2/7A01: 29 FF 00     AND #$00FF
+C2/7A04: 18           CLC
+C2/7A05: 7D 14 00     ADC $0014,X
+C2/7A08: 9D 14 00     STA $0014,X
+C2/7A0B: 60           RTS

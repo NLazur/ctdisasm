@@ -1,0 +1,39 @@
+C3/0D0E: 8D 81 21     STA $2181
+C3/0D11: E2 20        SEP #$20
+C3/0D13: A4 11        LDY $11
+C3/0D15: A6 13        LDX $13
+C3/0D17: 9C 83 21     STZ $2183
+C3/0D1A: AD 80 21     LDA $2180
+C3/0D1D: 85 19        STA $19
+C3/0D1F: C6 19        DEC $19
+C3/0D21: F0 34        BEQ $0D57
+C3/0D23: AD 80 21     LDA $2180
+C3/0D26: 99 02 07     STA $0702,Y
+C3/0D29: AD 80 21     LDA $2180
+C3/0D2C: 99 03 07     STA $0703,Y
+C3/0D2F: AD 80 21     LDA $2180
+C3/0D32: 18           CLC
+C3/0D33: 65 15        ADC $15
+C3/0D35: 99 00 07     STA $0700,Y
+C3/0D38: AD 80 21     LDA $2180
+C3/0D3B: 18           CLC
+C3/0D3C: 65 17        ADC $17
+C3/0D3E: 99 01 07     STA $0701,Y
+C3/0D41: BD 00 00     LDA $0000,X
+C3/0D44: F0 05        BEQ $0D4B
+C3/0D46: 4A           LSR
+C3/0D47: 4A           LSR
+C3/0D48: 9D 00 00     STA $0000,X
+C3/0D4B: C8           INY
+C3/0D4C: C8           INY
+C3/0D4D: C8           INY
+C3/0D4E: C8           INY
+C3/0D4F: 98           TYA
+C3/0D50: 29 0F        AND #$0F
+C3/0D52: D0 CB        BNE $0D1F
+C3/0D54: E8           INX
+C3/0D55: 80 C8        BRA $0D1F
+C3/0D57: C2 20        REP #$20
+C3/0D59: 86 13        STX $13
+C3/0D5B: 84 11        STY $11
+C3/0D5D: 6B           RTL

@@ -1,0 +1,19 @@
+D1/9E9E: C5 01        CMP $01
+D1/9EA0: 8F 80 0C 98  STA $980C80
+D1/9EA4: 00 84        BRK $84
+D1/9EA6: 8E 50 19     STX $1950
+D1/9EA9: 07 FF        ORA [$FF]
+D1/9EAB: 00 08        BRK $08
+D1/9EAD: 04 83        TSB $83
+D1/9EAF: 80 C5        BRA $9E76
+D1/9EB1: 01 8F        ORA ($8F,X)
+D1/9EB3: 80 0C        BRA $9EC1
+D1/9EB5: 98           TYA
+D1/9EB6: 00 84        BRK $84
+D1/9EB8: 87 02        STA [$02]
+D1/9EBA: 91 08        STA ($08),Y
+D1/9EBC: A2 FF        LDX #$FF
+D1/9EBE: 8E 40 10     STX $1040
+D1/9EC1: 09 FF        ORA #$FF
+D1/9EC3: FF 10 01 8E  SBC $8E0110,X
+D1/9EC7: 40           RTI

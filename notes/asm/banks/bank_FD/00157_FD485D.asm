@@ -1,0 +1,90 @@
+FD/485D: 87 80        STA [$80]
+FD/485F: 07 11        ORA [$11]
+FD/4861: 1E 00 11     ASL $1100,X
+FD/4864: 1E 03 3C     ASL $3C03,X
+FD/4867: FE 03 2C     INC $2C03,X
+FD/486A: DE 8C C0     DEC $C08C,X
+FD/486D: FC BF 1C     JSR ($1CBF,X)
+FD/4870: 29 46        AND #$46
+FD/4872: 5D C0 33     EOR $33C0,X
+FD/4875: 83 97        STA $97,S
+FD/4877: B8           CLV
+FD/4878: 5E A0 2C     LSR $2CA0,X
+FD/487B: 58           CLI
+FD/487C: 06 E7        ASL $E7
+FD/487E: 72 8C        ADC ($8C)
+FD/4880: 19 88 46     ORA $4688,Y
+FD/4883: 26 7A        ROL $7A
+FD/4885: 18           CLC
+FD/4886: 44 06 38     MVP $06,$38
+FD/4889: 00 F3        BRK $F3
+FD/488B: B7 47        LDA [$47],Y
+FD/488D: 48           PHA
+FD/488E: 66 22        ROR $22
+FD/4890: C0 23        CPY #$23
+FD/4892: 00 2C        BRK $2C
+FD/4894: 3E 30 1C     ROL $1C30,X
+FD/4897: 14 34        TRB $34
+FD/4899: 14 00        TRB $00
+FD/489B: 00 1C        BRK $1C
+FD/489D: 0D 00 17     ORA $1700
+FD/48A0: 18           CLC
+FD/48A1: 1A           INC
+FD/48A2: 1C 25 00     TRB $0025
+FD/48A5: 17 2E        ORA [$2E],Y
+FD/48A7: 07 18        ORA [$18]
+FD/48A9: 0F 30 0F 29  ORA $290F30
+FD/48AD: 00 0B        BRK $0B
+FD/48AF: 15 13        ORA $13,X
+FD/48B1: 0F 15 0E 15  ORA $150E15
+FD/48B5: 0E 00 38     ASL $3800
+FD/48B8: 14 22        TRB $22
+FD/48BA: 34 0A        BIT $0A,X
+FD/48BC: 14 2A        TRB $2A
+FD/48BE: 14 00        TRB $00
+FD/48C0: 36 08        ROL $08,X
+FD/48C2: 1A           INC
+FD/48C3: 08           PHP
+FD/48C4: 10 08        BPL $48CE
+FD/48C6: 19 39 00     ORA $0039,Y
+FD/48C9: 06 33        ASL $33
+FD/48CB: 0C 3B 04     TSB $043B
+FD/48CE: 1B           TCS
+FD/48CF: 04 1F        TSB $1F
+FD/48D1: 10 00        BPL $48D3
+FD/48D3: 13 04        ORA ($04,S),Y
+FD/48D5: 1D DD 0C     ORA $0CDD,X
+FD/48D8: 3F 22 37 00  AND $003722,X
+FD/48DC: E0 F8        CPX #$F8
+FD/48DE: AC FC F4     LDY $F4FC
+FD/48E1: CB           WAI
+FD/48E2: C6 21        DEC $21
+FD/48E4: 00 28        BRK $28
+FD/48E6: 33 33        AND ($33,S),Y
+FD/48E8: 0F 76 42 DE  ORA $DE4276
+FD/48EC: 87 00        STA [$00]
+FD/48EE: 9A           TXS
+FD/48EF: 2B           PLD
+FD/48F0: 7F 72 7E EB  ADC $EB7E72,X
+FD/48F4: 5E 7F 00     LSR $007F,X
+FD/48F7: 98           TYA
+FD/48F8: 04 D1        TSB $D1
+FD/48FA: 33 23        AND ($23,S),Y
+FD/48FC: 32 13        AND ($13)
+FD/48FE: 7B           TDC
+FD/48FF: 00 13        BRK $13
+FD/4901: D1 79        CMP ($79),Y
+FD/4903: 8D 7C B9     STA $B97C
+FD/4906: D0 F7        BNE $48FF
+FD/4908: 00 85        BRK $85
+FD/490A: F7 F0        SBC [$F0],Y
+FD/490C: ED D1 E7     SBC $E7D1
+FD/490F: 0C EE 00     TSB $00EE
+FD/4912: 04 AC        TSB $AC
+FD/4914: 06 F1        ASL $F1
+FD/4916: 06 6D        ASL $6D
+FD/4918: 06 70        ASL $70
+FD/491A: 00 0E        BRK $0E
+FD/491C: 29 1E        AND #$1E
+FD/491E: 01 3E        ORA ($3E,X)
+FD/4920: 60           RTS

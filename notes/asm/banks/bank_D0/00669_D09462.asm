@@ -1,0 +1,18 @@
+D0/9462: 0F 60 07 E8  ORA $E80760
+D0/9466: E7 18        SBC [$18]
+D0/9468: FC FC FC     JSR ($FCFC,X)
+D0/946B: F8           SED
+D0/946C: F8           SED
+D0/946D: F8           SED
+D0/946E: F8           SED
+D0/946F: 18           CLC
+D0/9470: FC 6B FC     JSR ($FC6B,X)
+D0/9473: 7A           PLY
+D0/9474: FE 78 FF     INC $FF78,X
+D0/9477: FC FB FC     JSR ($FCFB,X)
+D0/947A: FC FF FF     JSR ($FFFF,X)
+D0/947D: FF FC 7F 6B  SBC $6B7FFC,X
+D0/9481: 7B           TDC
+D0/9482: 79 FC F8     ADC $F8FC,Y
+D0/9485: FC F8 78     JSR ($78F8,X)
+D0/9488: 60           RTS

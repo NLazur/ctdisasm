@@ -1,0 +1,71 @@
+D0/7164: 00 00        BRK $00
+D0/7166: 00 00        BRK $00
+D0/7168: 67 9F        ADC [$9F]
+D0/716A: 38           SEC
+D0/716B: F8           SED
+D0/716C: C0 C0        CPY #$C0
+D0/716E: 00 00        BRK $00
+D0/7170: 00 00        BRK $00
+D0/7172: 00 00        BRK $00
+D0/7174: 00 00        BRK $00
+D0/7176: 00 00        BRK $00
+D0/7178: 2F 30 0F 10  AND $100F30
+D0/717C: 17 18        ORA [$18],Y
+D0/717E: 0F 08 03 04  ORA $040308
+D0/7182: 01 02        ORA ($02,X)
+D0/7184: 00 01        BRK $01
+D0/7186: 00 00        BRK $00
+D0/7188: FF 00 FF 00  SBC $00FF00,X
+D0/718C: FF 00 FF 00  SBC $00FF00,X
+D0/7190: FF 00 FF 00  SBC $00FF00,X
+D0/7194: F0 0F        BEQ $71A5
+D0/7196: 08           PHP
+D0/7197: F8           SED
+D0/7198: FF 00 FF 00  SBC $00FF00,X
+D0/719C: FF 00 FF 00  SBC $00FF00,X
+D0/71A0: F8           SED
+D0/71A1: 07 88        ORA [$88]
+D0/71A3: 78           SEI
+D0/71A4: 80 80        BRA $7126
+D0/71A6: 00 00        BRK $00
+D0/71A8: 80 80        BRA $712A
+D0/71AA: C0 40        CPY #$40
+D0/71AC: F0 30        BEQ $71DE
+D0/71AE: 88           DEY
+D0/71AF: 78           SEI
+D0/71B0: 80 80        BRA $7132
+D0/71B2: 00 00        BRK $00
+D0/71B4: 00 00        BRK $00
+D0/71B6: 00 00        BRK $00
+D0/71B8: C0 A0        CPY #$A0
+D0/71BA: E0 A0 E0     CPX #$E0A0
+D0/71BD: A0 80 C0     LDY #$C080
+D0/71C0: C0 C0        CPY #$C0
+D0/71C2: C0 C0        CPY #$C0
+D0/71C4: 00 80        BRK $80
+D0/71C6: 00 80        BRK $80
+D0/71C8: 4F 70 9F E0  EOR $E09F70
+D0/71CC: 9E E1 3C     STZ $3CE1,X
+D0/71CF: C3 39        CMP $39,S
+D0/71D1: C7 72        CMP [$72]
+D0/71D3: 8E 64 9C     STX $9C64
+D0/71D6: C8           INY
+D0/71D7: 38           SEC
+D0/71D8: 98           TYA
+D0/71D9: 78           SEI
+D0/71DA: 20 E0 40     JSR $40E0
+D0/71DD: C0 80        CPY #$80
+D0/71DF: 80 00        BRA $71E1
+D0/71E1: 00 00        BRK $00
+D0/71E3: 00 00        BRK $00
+D0/71E5: 00 00        BRK $00
+D0/71E7: 00 00        BRK $00
+D0/71E9: 02 01        COP $01
+D0/71EB: 01 00        ORA ($00,X)
+D0/71ED: 00 01        BRK $01
+D0/71EF: 01 02        ORA ($02,X)
+D0/71F1: 03 00        ORA $00,S
+D0/71F3: 03 27        ORA $27,S
+D0/71F5: 24 1B        BIT $1B
+D0/71F7: 1C 80 80     TRB $8080
+D0/71FA: 40           RTI

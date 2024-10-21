@@ -1,0 +1,25 @@
+C6/AE76: 5F A8 0C 0D  EOR $0D0CA8,X
+C6/AE7A: 0E 10 07     ASL $0710
+C6/AE7D: 0A           ASL
+C6/AE7E: 0B           PHD
+C6/AE7F: 07 58        ORA [$58]
+C6/AE81: 00 CD        BRK $CD
+C6/AE83: 07 01        ORA [$01]
+C6/AE85: 2C 02 05     BIT $0502
+C6/AE88: 09 08 E3     ORA #$E308
+C6/AE8B: 28           PLP
+C6/AE8C: 9B           TXY
+C6/AE8D: 1C 00 0D     TRB $0D00
+C6/AE90: 0E 7A 1E     ASL $1E7A
+C6/AE93: BB           TYX
+C6/AE94: 00 CD        BRK $CD
+C6/AE96: 49 88 9A     EOR #$9A88
+C6/AE99: 00 8E        BRK $8E
+C6/AE9B: 00 C4        BRK $C4
+C6/AE9D: D8           CLD
+C6/AE9E: BD 10 07     LDA $0710,X
+C6/AEA1: 1C 1D 1E     TRB $1E1D
+C6/AEA4: 07 19        ORA [$19]
+C6/AEA6: BA           TSX
+C6/AEA7: 07 07        ORA [$07]
+C6/AEA9: 60           RTS

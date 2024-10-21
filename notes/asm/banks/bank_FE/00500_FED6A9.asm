@@ -1,0 +1,29 @@
+FE/D6A9: 00 41        BRK $41
+FE/D6AB: 04 00        TSB $00
+FE/D6AD: CB           WAI
+FE/D6AE: DD 45 44     CMP $4445,X
+FE/D6B1: 45 8E        EOR $8E
+FE/D6B3: 01 25        ORA ($25,X)
+FE/D6B5: 0E 45 7F     ASL $7F45
+FE/D6B8: 07 8E        ORA [$8E]
+FE/D6BA: 04 00        TSB $00
+FE/D6BC: B2 7E        LDA ($7E)
+FE/D6BE: 19 09 20     ORA $2009,Y
+FE/D6C1: 21 3A        AND ($3A,X)
+FE/D6C3: 0A           ASL
+FE/D6C4: 23 0C        AND $0C,S
+FE/D6C6: 2D 1F 3F     AND $3F1F
+FE/D6C9: 00 9C        BRK $9C
+FE/D6CB: DB           STP
+FE/D6CC: 00 ED        BRK $ED
+FE/D6CE: AC CB EC     LDY $ECCB
+FE/D6D1: ED AC EB     SBC $EBAC
+FE/D6D4: DC 00 0F     JMP [$0F00]
+FE/D6D7: 54 45 45     MVN $45,$45
+FE/D6DA: 45 9B        EOR $9B
+FE/D6DC: CB           WAI
+FE/D6DD: 0F 38 54 57  ORA $575438
+FE/D6E1: 58           CLI
+FE/D6E2: 00 07        BRK $07
+FE/D6E4: 00 AA        BRK $AA
+FE/D6E6: 60           RTS

@@ -1,0 +1,141 @@
+CE/5AC8: 0D 72 0D     ORA $0D72
+CE/5ACB: 03 10        ORA $10,S
+CE/5ACD: 02 11        COP $11
+CE/5ACF: 24 02        BIT $02
+CE/5AD1: D8           CLD
+CE/5AD2: 06 02        ASL $02
+CE/5AD4: 14 20        TRB $20
+CE/5AD6: 0A           ASL
+CE/5AD7: A4 02        LDY $02
+CE/5AD9: 02 69        COP $69
+CE/5ADB: 03 20        ORA $20,S
+CE/5ADD: 02 6A        COP $6A
+CE/5ADF: 20 02 69     JSR $6902
+CE/5AE2: 03 20        ORA $20,S
+CE/5AE4: 02 6A        COP $6A
+CE/5AE6: 20 02 69     JSR $6902
+CE/5AE9: 03 20        ORA $20,S
+CE/5AEB: 02 6A        COP $6A
+CE/5AED: D8           CLD
+CE/5AEE: 03 02        ORA $02,S
+CE/5AF0: 0A           ASL
+CE/5AF1: 20 09 A5     JSR $A509
+CE/5AF4: 06 36        ASL $36
+CE/5AF6: A4 04        LDY $04
+CE/5AF8: 02 27        COP $27
+CE/5AFA: D9 30 69     CMP $6930,Y
+CE/5AFD: 03 12        ORA $12,S
+CE/5AFF: 0C 7A 6A     TSB $6A7A
+CE/5B02: 0C 76 19     TSB $1976
+CE/5B05: 0C 36 A8     TSB $A836
+CE/5B08: 06 20        ASL $20
+CE/5B0A: 0A           ASL
+CE/5B0B: A5 06        LDA $06
+CE/5B0D: 22 A4 04 01  JSR $0104A4
+CE/5B11: 85 C0        STA $C0
+CE/5B13: A8           TAY
+CE/5B14: 06 20        ASL $20
+CE/5B16: 0A           ASL
+CE/5B17: A5 72        LDA $72
+CE/5B19: 0D 06 36     ORA $3606
+CE/5B1C: A4 04        LDY $04
+CE/5B1E: 01 12        ORA ($12,X)
+CE/5B20: 0C 7A 6A     TSB $6A7A
+CE/5B23: 0C 6A 36     TSB $366A
+CE/5B26: 20 0A A5     JSR $A50A
+CE/5B29: 85 C0        STA $C0
+CE/5B2B: 26 0B        ROL $0B
+CE/5B2D: 03 A4        ORA $A4,S
+CE/5B2F: 04 01        TSB $01
+CE/5B31: A8           TAY
+CE/5B32: 06 29        ASL $29
+CE/5B34: A8           TAY
+CE/5B35: 02 33        COP $33
+CE/5B37: 03 41        ORA $41,S
+CE/5B39: 1E 02 30     ASL $3002,X
+CE/5B3C: 03 20        ORA $20,S
+CE/5B3E: 2A           ROL
+CE/5B3F: A8           TAY
+CE/5B40: 02 29        COP $29
+CE/5B42: 12 2B        ORA ($2B)
+CE/5B44: 20 14 2A     JSR $2A14
+CE/5B47: 02 37        COP $37
+CE/5B49: 12 0C        ORA ($0C)
+CE/5B4B: 7A           PLY
+CE/5B4C: 6A           ROR
+CE/5B4D: 0C DA 36     TSB $36DA
+CE/5B50: A5 D8        LDA $D8
+CE/5B52: 06 03        ASL $03
+CE/5B54: 0A           ASL
+CE/5B55: 20 0A 7A     JSR $7A0A
+CE/5B58: 6A           ROR
+CE/5B59: 0C 20 0A     TSB $0A20
+CE/5B5C: 06 1D        ASL $1D
+CE/5B5E: 0C 12 03     TSB $0312
+CE/5B61: 20 0A 28     JSR $280A
+CE/5B64: 1E 2A 24     ASL $242A,X
+CE/5B67: 06 22        ASL $22
+CE/5B69: 1B           TCS
+CE/5B6A: 00 2E        BRK $2E
+CE/5B6C: 01 00        ORA ($00,X)
+CE/5B6E: 72 0D        ADC ($0D)
+CE/5B70: 2D 80 02     AND $0280
+CE/5B73: F8           SED
+CE/5B74: 1E 31 23     ASL $2331,X
+CE/5B77: 05 06        ORA $06
+CE/5B79: 03 00        ORA $00,S
+CE/5B7B: 24 03        BIT $03
+CE/5B7D: 2D 80 12     AND $1280
+CE/5B80: A9 06 05     LDA #$0506
+CE/5B83: 75 00        ADC $00,X
+CE/5B85: 69 03 D8     ADC #$D803
+CE/5B88: 03 01        ORA $01,S
+CE/5B8A: 06 6A        ASL $6A
+CE/5B8C: 06 03        ASL $03
+CE/5B8E: 24 04        BIT $04
+CE/5B90: 3D 0C 34     AND $340C,X
+CE/5B93: 1B           TCS
+CE/5B94: 06 05        ASL $05
+CE/5B96: 75 00        ADC $00,X
+CE/5B98: 69 03 D8     ADC #$D803
+CE/5B9B: 03 01        ORA $01,S
+CE/5B9D: 06 6A        ASL $6A
+CE/5B9F: 06 03        ASL $03
+CE/5BA1: 24 05        BIT $05
+CE/5BA3: 2D 80 12     AND $1280
+CE/5BA6: 29 06 05     AND #$0506
+CE/5BA9: 75 00        ADC $00,X
+CE/5BAB: 69 03 D8     ADC #$D803
+CE/5BAE: 03 01        ORA $01,S
+CE/5BB0: 06 6A        ASL $6A
+CE/5BB2: 50 06        BVC $5BBA
+CE/5BB4: 03 36        ORA $36,S
+CE/5BB6: 00 D8        BRK $D8
+CE/5BB8: F8           SED
+CE/5BB9: C0 00 D1     CPY #$D100
+CE/5BBC: 5B           TCD
+CE/5BBD: 53 5C        EOR ($5C,S),Y
+CE/5BBF: 61 5C        ADC ($5C,X)
+CE/5BC1: 71 5C        ADC ($5C),Y
+CE/5BC3: 7C 5C C6     JMP ($C65C,X)
+CE/5BC6: 5C F8 5C 2A  JMP $2A5CF8
+CE/5BCA: 5D 5B 5D     EOR $5D5B,X
+CE/5BCD: 85 09        STA $09
+CE/5BCF: 93 09        STA ($09,S),Y
+CE/5BD1: 0C 03 10     TSB $1003
+CE/5BD4: 35 03        AND $03,X
+CE/5BD6: 22 02 44 D0  JSR $D04402
+CE/5BDA: 33 18        AND ($18,S),Y
+CE/5BDC: 41 1E        EOR ($1E,X)
+CE/5BDE: 00 41        BRK $41
+CE/5BE0: 1F 01 98 00  ORA $009801,X
+CE/5BE4: 2A           ROL
+CE/5BE5: D1 1A        CMP ($1A),Y
+CE/5BE7: 78           SEI
+CE/5BE8: 8F 34 1B 0D  STA $0D1B34
+CE/5BEC: C3 04        CMP $04,S
+CE/5BEE: C0 01 C3     CPY #$C301
+CE/5BF1: 08           PHP
+CE/5BF2: 00 01        BRK $01
+CE/5BF4: C3 0C        CMP $0C,S
+CE/5BF6: 40           RTI

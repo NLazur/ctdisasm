@@ -1,0 +1,102 @@
+FE/80F0: 34 3B        BIT $3B,X
+FE/80F2: 3B           TSC
+FE/80F3: 3C 7A 20     BIT $207A,X
+FE/80F6: 3B           TSC
+FE/80F7: 3B           TSC
+FE/80F8: 19 00 21     ORA $2100,Y
+FE/80FB: 3C 3B 00     BIT $003B,X
+FE/80FE: 31 17        AND ($17),Y
+FE/8100: 10 33        BPL $8135
+FE/8102: 3C 3C 1D     BIT $1D3C,X
+FE/8105: C3 00        CMP $00,S
+FE/8107: 3A           DEC
+FE/8108: 06 10        ASL $10
+FE/810A: 01 20        ORA ($20,X)
+FE/810C: D1 00        CMP ($00),Y
+FE/810E: 3B           TSC
+FE/810F: 3B           TSC
+FE/8110: 3D 69 DF     AND $DF69,X
+FE/8113: 41 3C        EOR ($3C,X)
+FE/8115: 3D 62 21     AND $2162,X
+FE/8118: 3D 24 00     AND $0024,X
+FE/811B: 53 10        EOR ($10,S),Y
+FE/811D: 3D 5C 3C     AND $3C5C,X
+FE/8120: 3B           TSC
+FE/8121: 02 00        COP $00
+FE/8123: 01 20        ORA ($20,X)
+FE/8125: 7C 00 38     JMP ($3800,X)
+FE/8128: 08           PHP
+FE/8129: 20 39 57     JSR $5739
+FE/812C: 82 10 3B     BRL $FEBC3F
+FE/812F: 10 E6        BPL $8117
+FE/8131: 00 3A        BRK $3A
+FE/8133: 81 00        STA ($00,X)
+FE/8135: 3A           DEC
+FE/8136: EE 00 3B     INC $3B00
+FE/8139: 99 FB 41     STA $41FB,Y
+FE/813C: 36 3D        ROL $3D,X
+FE/813E: 82 06 19     BRL $FE9A47
+FE/8141: 10 3C        BPL $817F
+FE/8143: 3D 07 10     AND $1007,X
+FE/8146: DD C5 00     CMP $00C5,X
+FE/8149: 3D 30 00     AND $0030,X
+FE/814C: 3A           DEC
+FE/814D: 01 BB        ORA ($BB,X)
+FE/814F: 00 39        BRK $39
+FE/8151: 73 00        ADC ($00,S),Y
+FE/8153: 39 00 F1     AND $F100,Y
+FE/8156: B3 00        LDA ($00,S),Y
+FE/8158: 3D 3C 3A     AND $3A3C,X
+FE/815B: BF 00 F8 20  LDA $20F800,X
+FE/815F: C5 00        CMP $00
+FE/8161: 8B           PHB
+FE/8162: 00 C6        BRK $C6
+FE/8164: 3A           DEC
+FE/8165: 00 11        BRK $11
+FE/8167: D0 00        BNE $8169
+FE/8169: 33 35        AND ($35,S),Y
+FE/816B: 39 4C 07     AND $074C,Y
+FE/816E: 4A           LSR
+FE/816F: 12 44        ORA ($44)
+FE/8171: 36 3B        ROL $3B,X
+FE/8173: 61 27        ADC ($27,X)
+FE/8175: 35 3D        AND $3D,X
+FE/8177: 3B           TSC
+FE/8178: 15 32        ORA $32,X
+FE/817A: 3B           TSC
+FE/817B: 10 3B        BPL $81B8
+FE/817D: 37 3D        AND [$3D],Y
+FE/817F: 36 8C        ROL $8C,X
+FE/8181: 01 39        ORA ($39,X)
+FE/8183: 39 37 D6     AND $D637,Y
+FE/8186: 3D DC 00     AND $00DC,X
+FE/8189: 41 00        EOR ($00,X)
+FE/818B: 3D 7C 10     AND $107C,X
+FE/818E: 34 81        BIT $81,X
+FE/8190: 00 03        BRK $03
+FE/8192: 10 FF        BPL $8193
+FE/8194: 88           DEY
+FE/8195: 02 80        COP $80
+FE/8197: 22 DA 06 92  JSR $9206DA
+FE/819B: 01 E2        ORA ($E2,X)
+FE/819D: 16 B7        ASL $B7,X
+FE/819F: 22 E8 36 CC  JSR $CC36E8
+FE/81A3: 12 F9        ORA ($F9)
+FE/81A5: A5 01        LDA $01
+FE/81A7: 3B           TSC
+FE/81A8: 36 D6        ROL $D6,X
+FE/81AA: 02 F3        COP $F3
+FE/81AC: 30 2D        BMI $81DB
+FE/81AE: 07 3B        ORA [$3B]
+FE/81B0: 11 C8        ORA ($C8),Y
+FE/81B2: 07 D6        ORA [$D6]
+FE/81B4: 33 C2        AND ($C2,S),Y
+FE/81B6: 10 81        BPL $8139
+FE/81B8: 01 2E        ORA ($2E,X)
+FE/81BA: A9 07        LDA #$07
+FE/81BC: 26 3F        ROL $3F
+FE/81BE: 0E 00 14     ASL $1400
+FE/81C1: EF 77 15 07  SBC $071577
+FE/81C5: 20 5B 0E     JSR $0E5B
+FE/81C8: 08           PHP
+FE/81C9: 40           RTI

@@ -1,0 +1,37 @@
+C3/5E41: E8           INX
+C3/5E42: 21 09        AND ($09,X)
+C3/5E44: C7 07        CMP [$07]
+C3/5E46: 05 A9        ORA $A9
+C3/5E48: 84 E4        STY $E4
+C3/5E4A: 01 06        ORA ($06,X)
+C3/5E4C: 14 E4        TRB $E4
+C3/5E4E: 51 3A        EOR ($3A),Y
+C3/5E50: 23 1A        AND $1A,S
+C3/5E52: AB           PLB
+C3/5E53: 8E 4A 00     STX $004A
+C3/5E56: 01 22        ORA ($22,X)
+C3/5E58: 02 8E        COP $8E
+C3/5E5A: 48           PHA
+C3/5E5B: 00 A9        BRK $A9
+C3/5E5D: 1B           TCS
+C3/5E5E: 20 5F 00     JSR $005F
+C3/5E61: 37 60        AND [$60],Y
+C3/5E63: 43 1B        EOR $1B,S
+C3/5E65: 5F 35 7E 43  EOR $437E35,X
+C3/5E69: 14 1D        TRB $1D
+C3/5E6B: 6D 05 00     ADC $0005
+C3/5E6E: 0D CE 04     ORA $04CE
+C3/5E71: 44 2C 4D     MVP $2C,$4D
+C3/5E74: 00 90        BRK $90
+C3/5E76: 7E 40 05     ROR $0540,X
+C3/5E79: 2F 90 7E 01  AND $017E90
+C3/5E7D: 02 26        COP $26
+C3/5E7F: A4 07        LDY $07
+C3/5E81: 41 31        EOR ($31,X)
+C3/5E83: 2B           PLD
+C3/5E84: 45 7E        EOR $7E
+C3/5E86: FF 9C 40 05  SBC $05409C,X
+C3/5E8A: E0 04        CPX #$04
+C3/5E8C: 10 20        BPL $5EAE
+C3/5E8E: 24 20        BIT $20
+C3/5E90: 40           RTI

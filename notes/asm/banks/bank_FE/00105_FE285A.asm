@@ -1,0 +1,114 @@
+FE/285A: 28           PLP
+FE/285B: 01 44        ORA ($44,X)
+FE/285D: 00 32        BRK $32
+FE/285F: 3A           DEC
+FE/2860: 28           PLP
+FE/2861: 32 32        AND ($32)
+FE/2863: 20 20 00     JSR $0020
+FE/2866: 25 25        AND $25
+FE/2868: 32 24        AND ($24)
+FE/286A: 25 25        AND $25
+FE/286C: 1F 21 9A 22  ORA $229A21,X
+FE/2870: 5E 00 20     LSR $2000,X
+FE/2873: 54 00 55     MVN $00,$55
+FE/2876: 00 22        BRK $22
+FE/2878: 21 0A        AND ($0A,X)
+FE/287A: 03 26        ORA $26,S
+FE/287C: 20 02 00     JSR $0002
+FE/287F: 08           PHP
+FE/2880: 00 21        BRK $21
+FE/2882: 21 DF        AND ($DF,X)
+FE/2884: 15 21        ORA $21,X
+FE/2886: 2A           ROL
+FE/2887: 00 3C        BRK $3C
+FE/2889: 2E 26 26     ROL $2626
+FE/288C: 28           PLP
+FE/288D: 2B           PLD
+FE/288E: 31 30        AND ($30),Y
+FE/2890: 00 36        BRK $36
+FE/2892: 31 26        AND ($26),Y
+FE/2894: 24 24        BIT $24
+FE/2896: 24 32        BIT $32
+FE/2898: 26 54        ROL $54
+FE/289A: 28           PLP
+FE/289B: 28           PLP
+FE/289C: 90 10        BCC $28AE
+FE/289E: 25 0C        AND $0C
+FE/28A0: 00 24        BRK $24
+FE/28A2: 3F 00 25 E6  AND $E62500,X
+FE/28A6: 1C 3F 00     TRB $003F
+FE/28A9: 42 00        WDM $00
+FE/28AB: 25 1C        AND $1C
+FE/28AD: 41 10        EOR ($10,X)
+FE/28AF: 98           TYA
+FE/28B0: 00 4F        BRK $4F
+FE/28B2: 0A           ASL
+FE/28B3: 0E 1C 42     ASL $421C
+FE/28B6: 00 08        BRK $08
+FE/28B8: 00 E2        BRK $E2
+FE/28BA: 05 1C        ORA $1C
+FE/28BC: 1F 20 46 00  ORA $004620,X
+FE/28C0: 48           PHA
+FE/28C1: 37 31        AND [$31],Y
+FE/28C3: 39 36 3E     AND $3E36,Y
+FE/28C6: 3E 22 00     ROL $0022,X
+FE/28C9: 46 49        LSR $49
+FE/28CB: 26 26        ROL $26
+FE/28CD: 3C 2E 3E     BIT $3E2E,X
+FE/28D0: 19 00 46     ORA $4600,Y
+FE/28D3: 48           PHA
+FE/28D4: 49 29 3C     EOR #$3C29
+FE/28D7: 3C 40 18     BIT $1840,X
+FE/28DA: C1 19        CMP ($19,X)
+FE/28DC: 0D 48 49     ORA $4948
+FE/28DF: 3E 30 19     ROL $1930,X
+FE/28E2: 09 00 13     ORA #$1300
+FE/28E5: 00 9C        BRK $9C
+FE/28E7: 36 1A        ROL $1A,X
+FE/28E9: 82 0A 13     BRL $FE3BF6
+FE/28EC: 10 0A        BPL $28F8
+FE/28EE: 0A           ASL
+FE/28EF: 1B           TCS
+FE/28F0: 1A           INC
+FE/28F1: 2C 0D FF     BIT $FF0D
+FE/28F4: D3 0B        CMP ($0B,S),Y
+FE/28F6: FB           XCE
+FE/28F7: 0B           PHD
+FE/28F8: 4F 1B D8 13  EOR $13D81B
+FE/28FC: E8           INX
+FE/28FD: 73 98        ADC ($98,S),Y
+FE/28FF: 36 F1        ROL $F1,X
+FE/2901: 0B           PHD
+FE/2902: 18           CLC
+FE/2903: 3C F7 25     BIT $25F7,X
+FE/2906: 10 20        BPL $2928
+FE/2908: FC 20 8C     JSR ($8C20,X)
+FE/290B: 1B           TCS
+FE/290C: D0 33        BNE $2941
+FE/290E: BC 0B E0     LDY $E00B,X
+FE/2911: 23 18        AND $18,S
+FE/2913: 11 F6        ORA ($F6),Y
+FE/2915: 1B           TCS
+FE/2916: D4 0B        PEI $0B
+FE/2918: F8           SED
+FE/2919: 03 1D        ORA $1D,S
+FE/291B: 67 0A        ADC [$0A]
+FE/291D: 08           PHP
+FE/291E: 0C 20 FC     TSB $FC20
+FE/2921: 20 AC E2     JSR $E2AC
+FE/2924: 20 DA 13     JSR $13DA
+FE/2927: 21 1E        AND ($1E,X)
+FE/2929: 21 08        AND ($08,X)
+FE/292B: 20 9A 06     JSR $069A
+FE/292E: 2C 04 7B     BIT $7B04
+FE/2931: A2 16 34     LDX #$3416
+FE/2934: 04 1E        TSB $1E
+FE/2936: 21 11        AND ($11,X)
+FE/2938: 56 10        LSR $10,X
+FE/293A: 20 FC 20     JSR $20FC
+FE/293D: 8C 40 10     STY $1040
+FE/2940: 38           SEC
+FE/2941: 34 40        BIT $40,X
+FE/2943: 3D B4 01     AND $01B4,X
+FE/2946: 28           PLP
+FE/2947: 40           RTI

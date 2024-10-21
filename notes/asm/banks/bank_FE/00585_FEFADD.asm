@@ -1,0 +1,29 @@
+FE/FADD: 04 5F        TSB $5F
+FE/FADF: 76 9F        ROR $9F,X
+FE/FAE1: 63 D9        ADC $D9,S
+FE/FAE3: 4E 5F 76     LSR $765F
+FE/FAE6: D9 4E 9F     CMP $9F4E,Y
+FE/FAE9: 63 C6        ADC $C6,S
+FE/FAEB: 0C A5 0C     TSB $0CA5
+FE/FAEE: 84 0C        STY $0C
+FE/FAF0: 83 10        STA $10,S
+FE/FAF2: 63 10        ADC $10,S
+FE/FAF4: 23 08        AND $08,S
+FE/FAF6: 44 08 45     MVP $08,$45
+FE/FAF9: 0C 23 08     TSB $0823
+FE/FAFC: 43 08        EOR $08,S
+FE/FAFE: BF 37 66 14  LDA $146637,X
+FE/FB02: 44 0C 44     MVP $0C,$44
+FE/FB05: 08           PHP
+FE/FB06: 00 08        BRK $08
+FE/FB08: 00 04        BRK $04
+FE/FB0A: 00 00        BRK $00
+FE/FB0C: 00 00        BRK $00
+FE/FB0E: 00 00        BRK $00
+FE/FB10: 00 00        BRK $00
+FE/FB12: 00 00        BRK $00
+FE/FB14: 00 00        BRK $00
+FE/FB16: 24 04        BIT $04
+FE/FB18: 41 0C        EOR ($0C,X)
+FE/FB1A: 21 08        AND ($08,X)
+FE/FB1C: 40           RTI

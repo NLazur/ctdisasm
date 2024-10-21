@@ -1,0 +1,55 @@
+D1/21CC: 80 89        BRA $2157
+D1/21CE: 2A           ROL
+D1/21CF: 00 08        BRK $08
+D1/21D1: 01 0A        ORA ($0A,X)
+D1/21D3: 18           CLC
+D1/21D4: EA           NOP
+D1/21D5: 00 0A        BRK $0A
+D1/21D7: 0A           ASL
+D1/21D8: 20 47 83     JSR $8347
+D1/21DB: 00 96        BRK $96
+D1/21DD: EC 86 00     CPX $0086
+D1/21E0: 1E 18 EE     ASL $EE18,X
+D1/21E3: 9C 00 FF     STZ $FF00
+D1/21E6: FF 40 2E 00  SBC $002E40,X
+D1/21EA: 08           PHP
+D1/21EB: 15 80        ORA $80,X
+D1/21ED: 00 01        BRK $01
+D1/21EF: 00 E0        BRK $E0
+D1/21F1: 00 FF        BRK $FF
+D1/21F3: FF 84 15 80  SBC $801584,X
+D1/21F7: 0B           PHD
+D1/21F8: 08           PHP
+D1/21F9: E2 00        SEP #$00
+D1/21FB: 00 81        BRK $81
+D1/21FD: 0C 28 A8     TSB $A828
+D1/2200: E4 00        CPX $00
+D1/2202: EA           NOP
+D1/2203: 18           CLC
+D1/2204: 10 00        BPL $2206
+D1/2206: 24 00        BIT $00
+D1/2208: E8           INX
+D1/2209: 0C 28 2D     TSB $2D28
+D1/220C: 0D 00 E6     ORA $E600
+D1/220F: 18           CLC
+D1/2210: 18           CLC
+D1/2211: 39 08 80     AND $8008,Y
+D1/2214: 0A           ASL
+D1/2215: 38           SEC
+D1/2216: EC 80 47     CPX $4780
+D1/2219: 3D 00 85     AND $8500,X
+D1/221C: 14 28        TRB $28
+D1/221E: EE 1E 30     INC $301E
+D1/2221: 00 01        BRK $01
+D1/2223: FF FF 40 14  SBC $1440FF,X
+D1/2227: 00 00        BRK $00
+D1/2229: 11 80        ORA ($80),Y
+D1/222B: C6 00        DEC $00
+D1/222D: FF FF 11 80  SBC $8011FF,X
+D1/2231: 0A           ASL
+D1/2232: C8           INY
+D1/2233: 06 10        ASL $10
+D1/2235: CA           DEX
+D1/2236: 0C 00 33     TSB $3300
+D1/2239: 80 20        BRA $225B
+D1/223B: 40           RTI

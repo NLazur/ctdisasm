@@ -1,0 +1,37 @@
+C3/B00F: 87 64        STA [$64]
+C3/B011: 01 00        ORA ($00,X)
+C3/B013: 00 37        BRK $37
+C3/B015: 20 32 80     JSR $8032
+C3/B018: 2D 40 0C     AND $0C40
+C3/B01B: E3 08        SBC $08,S
+C3/B01D: 54 01 5A     MVN $01,$5A
+C3/B020: 30 88        BMI $AFAA
+C3/B022: 09 30        ORA #$30
+C3/B024: 09 A8        ORA #$A8
+C3/B026: 7F 09 37 04  ADC $043709,X
+C3/B02A: 00 5A        BRK $5A
+C3/B02C: 08           PHP
+C3/B02D: 00 82        BRK $82
+C3/B02F: 0C 00 2A     TSB $2A00
+C3/B032: AA           TAX
+C3/B033: 10 00        BPL $B035
+C3/B035: D2 14        CMP ($14)
+C3/B037: 00 FA        BRK $FA
+C3/B039: 18           CLC
+C3/B03A: 00 22        BRK $22
+C3/B03C: 0A           ASL
+C3/B03D: 28           PLP
+C3/B03E: 7F 09 4A 04  ADC $044A09,X
+C3/B042: 00 72        BRK $72
+C3/B044: B5 04        LDA $04,X
+C3/B046: 2C A0 00     BIT $00A0
+C3/B049: 01 88        ORA ($88,X)
+C3/B04B: 01 39        ORA ($39,X)
+C3/B04D: 00 2C        BRK $2C
+C3/B04F: A4 01        LDY $01
+C3/B051: 14 84        TRB $84
+C3/B053: 01 C6        ORA ($C6,X)
+C3/B055: 41 0C        EOR ($0C,X)
+C3/B057: 8F 50 2F 00  STA $002F50
+C3/B05B: F4 81 8A     PEA $8A81
+C3/B05E: 60           RTS

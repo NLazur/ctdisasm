@@ -1,0 +1,35 @@
+C0/B882: BD C4 4B     LDA $4BC4,X
+C0/B885: 18           CLC
+C0/B886: 65 C5        ADC $C5
+C0/B888: 10 06        BPL $B890
+C0/B88A: C9 E0        CMP #$E0
+C0/B88C: B0 02        BCS $B890
+C0/B88E: A9 E0        LDA #$E0
+C0/B890: 9D C1 4B     STA $4BC1,X
+C0/B893: BD CC 4B     LDA $4BCC,X
+C0/B896: 18           CLC
+C0/B897: 65 C5        ADC $C5
+C0/B899: 10 06        BPL $B8A1
+C0/B89B: C9 E0        CMP #$E0
+C0/B89D: B0 02        BCS $B8A1
+C0/B89F: A9 E0        LDA #$E0
+C0/B8A1: 9D C9 4B     STA $4BC9,X
+C0/B8A4: BD D4 4B     LDA $4BD4,X
+C0/B8A7: 18           CLC
+C0/B8A8: 65 C5        ADC $C5
+C0/B8AA: 10 06        BPL $B8B2
+C0/B8AC: C9 E0        CMP #$E0
+C0/B8AE: B0 02        BCS $B8B2
+C0/B8B0: A9 E0        LDA #$E0
+C0/B8B2: 9D D1 4B     STA $4BD1,X
+C0/B8B5: BD DC 4B     LDA $4BDC,X
+C0/B8B8: 18           CLC
+C0/B8B9: 65 C5        ADC $C5
+C0/B8BB: 10 06        BPL $B8C3
+C0/B8BD: C9 E0        CMP #$E0
+C0/B8BF: B0 02        BCS $B8C3
+C0/B8C1: A9 E0        LDA #$E0
+C0/B8C3: 9D D9 4B     STA $4BD9,X
+C0/B8C6: E2 20        SEP #$20
+C0/B8C8: AB           PLB
+C0/B8C9: 60           RTS

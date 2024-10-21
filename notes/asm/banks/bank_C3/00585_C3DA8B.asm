@@ -1,0 +1,49 @@
+C3/DA8B: 63 14        ADC $14,S
+C3/DA8D: 41 14        EOR ($14,X)
+C3/DA8F: 00 08        BRK $08
+C3/DA91: 5B           TCD
+C3/DA92: 00 12        BRK $12
+C3/DA94: 2F 0D A7 08  AND $08A70D
+C3/DA98: 99 41 B2     STA $B241,Y
+C3/DA9B: 00 40        BRK $40
+C3/DA9D: FF 7F 00 00  SBC $00007F,X
+C3/DAA1: 63 10        ADC $10,S
+C3/DAA3: DB           STP
+C3/DAA4: 00 16        BRK $16
+C3/DAA6: 3B           TSC
+C3/DAA7: 15 73        ORA $73,X
+C3/DAA9: 4E CE 39     LSR $39CE
+C3/DAAC: 4A           LSR
+C3/DAAD: 00 29        BRK $29
+C3/DAAF: E7 1C        SBC [$1C]
+C3/DAB1: 37 47        AND [$47],Y
+C3/DAB3: 8D 42 28     STA $2842
+C3/DAB6: 00 46        BRK $46
+C3/DAB8: E5 3D        SBC $3D
+C3/DABA: 62 31 22     PER $C3FCEE
+C3/DABD: 1D C1 00     ORA $00C1,X
+C3/DAC0: 18           CLC
+C3/DAC1: A2 14        LDX #$14
+C3/DAC3: 00 00        BRK $00
+C3/DAC5: 21 04        AND ($04,X)
+C3/DAC7: 02 10        COP $10
+C3/DAC9: 00 00        BRK $00
+C3/DACB: 04 00        TSB $00
+C3/DACD: 01 30        ORA ($30,X)
+C3/DACF: 25 00        AND $00
+C3/DAD1: 01 D1        ORA ($D1,X)
+C3/DAD3: 0D 00 40     ORA $4000
+C3/DAD6: 00 20        BRK $20
+C3/DAD8: 13 28        ORA ($28,S),Y
+C3/DADA: 04 10        TSB $10
+C3/DADC: 08           PHP
+C3/DADD: 20 38 47     JSR $4738
+C3/DAE0: B9 01 FF     LDA $FF01,Y
+C3/DAE3: 2E 00 2D     ROL $2D00
+C3/DAE6: 00 1E        BRK $1E
+C3/DAE8: 30 39        BMI $DB23
+C3/DAEA: 00 20        BRK $20
+C3/DAEC: 58           CLI
+C3/DAED: 2E 58 01     ROL $0158
+C3/DAF0: E8           INX
+C3/DAF1: 40           RTI

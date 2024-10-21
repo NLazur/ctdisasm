@@ -1,0 +1,869 @@
+CE/8FA9: F0 D3        BEQ $8F7E
+CE/8FAB: 00 01        BRK $01
+CE/8FAD: F4 F9 00     PEA $00F9
+CE/8FB0: 41 F4        EOR ($F4,X)
+CE/8FB2: F9 00 02     SBC $0200,Y
+CE/8FB5: E0 DD 00     CPX #$00DD
+CE/8FB8: 42 E0        WDM $E0
+CE/8FBA: DD 00 03     CMP $0300,X
+CE/8FBD: 12 DD        ORA ($DD)
+CE/8FBF: 00 83        BRK $83
+CE/8FC1: 00 DD        BRK $DD
+CE/8FC3: 00 04        BRK $04
+CE/8FC5: F8           SED
+CE/8FC6: D3 00        CMP ($00,S),Y
+CE/8FC8: 45 F6        EOR $F6
+CE/8FCA: D3 00        CMP ($00,S),Y
+CE/8FCC: 06 FB        ASL $FB
+CE/8FCE: FC 00 47     JSR ($4700,X)
+CE/8FD1: EB           XBA
+CE/8FD2: EC 00 08     CPX $0800
+CE/8FD5: E0 DD 00     CPX #$00DD
+CE/8FD8: 49 E0        EOR #$E0
+CE/8FDA: DD 00 0A     CMP $0A00,X
+CE/8FDD: 10 DD        BPL $8FBC
+CE/8FDF: 00 8B        BRK $8B
+CE/8FE1: 10 DD        BPL $8FC0
+CE/8FE3: 00 02        BRK $02
+CE/8FE5: FB           XCE
+CE/8FE6: CD 04 03     CMP $0304
+CE/8FE9: FB           XCE
+CE/8FEA: CD 04 04     CMP $0404
+CE/8FED: F3 C5        SBC ($C5,S),Y
+CE/8FEF: 03 44        ORA $44,S
+CE/8FF1: F3 C5        SBC ($C5,S),Y
+CE/8FF3: 00 02        BRK $02
+CE/8FF5: F9 00 04     SBC $0400,Y
+CE/8FF8: 03 F9        ORA $F9,S
+CE/8FFA: 00 04        BRK $04
+CE/8FFC: 04 F1        TSB $F1
+CE/8FFE: F8           SED
+CE/8FFF: 03 44        ORA $44,S
+CE/9001: F1 F8        SBC ($F8),Y
+CE/9003: 00 02        BRK $02
+CE/9005: E1 E8        SBC ($E8,X)
+CE/9007: 04 03        TSB $03
+CE/9009: E1 E8        SBC ($E8,X)
+CE/900B: 04 04        TSB $04
+CE/900D: D9 E0 03     CMP $03E0,Y
+CE/9010: 44 D9 E0     MVP $D9,$E0
+CE/9013: 00 02        BRK $02
+CE/9015: 0F E8 04 03  ORA $0304E8
+CE/9019: 0F E8 04 04  ORA $0404E8
+CE/901D: 07 E0        ORA [$E0]
+CE/901F: 03 84        ORA $84,S
+CE/9021: 07 E0        ORA [$E0]
+CE/9023: 00 05        BRK $05
+CE/9025: FB           XCE
+CE/9026: CD 04 06     CMP $0604
+CE/9029: FB           XCE
+CE/902A: CD 04 07     CMP $0704
+CE/902D: F7 C9        SBC [$C9],Y
+CE/902F: 03 47        ORA $47,S
+CE/9031: F7 C9        SBC [$C9],Y
+CE/9033: 00 05        BRK $05
+CE/9035: F9 00 04     SBC $0400,Y
+CE/9038: 06 F9        ASL $F9
+CE/903A: 00 04        BRK $04
+CE/903C: 07 F5        ORA [$F5]
+CE/903E: FC 03 47     JSR ($4703,X)
+CE/9041: F5 FC        SBC $FC,X
+CE/9043: 00 05        BRK $05
+CE/9045: E1 E8        SBC ($E8,X)
+CE/9047: 04 06        TSB $06
+CE/9049: E1 E8        SBC ($E8,X)
+CE/904B: 04 07        TSB $07
+CE/904D: DD E4 03     CMP $03E4,X
+CE/9050: 47 DD        EOR [$DD]
+CE/9052: E4 00        CPX $00
+CE/9054: 05 0F        ORA $0F
+CE/9056: E8           INX
+CE/9057: 04 06        TSB $06
+CE/9059: 0F E8 04 07  ORA $0704E8
+CE/905D: 0B           PHD
+CE/905E: E4 03        CPX $03
+CE/9060: 87 0B        STA [$0B]
+CE/9062: E4 00        CPX $00
+CE/9064: 08           PHP
+CE/9065: FB           XCE
+CE/9066: CD 04 09     CMP $0904
+CE/9069: FB           XCE
+CE/906A: CD 04 0A     CMP $0A04
+CE/906D: F3 C5        SBC ($C5,S),Y
+CE/906F: 03 4A        ORA $4A,S
+CE/9071: F3 C5        SBC ($C5,S),Y
+CE/9073: 00 08        BRK $08
+CE/9075: F9 00 04     SBC $0400,Y
+CE/9078: 09 F9        ORA #$F9
+CE/907A: 00 04        BRK $04
+CE/907C: 0A           ASL
+CE/907D: F1 F8        SBC ($F8),Y
+CE/907F: 03 4A        ORA $4A,S
+CE/9081: F1 F8        SBC ($F8),Y
+CE/9083: 00 08        BRK $08
+CE/9085: E1 E8        SBC ($E8,X)
+CE/9087: 04 09        TSB $09
+CE/9089: E1 E8        SBC ($E8,X)
+CE/908B: 04 0A        TSB $0A
+CE/908D: D9 E0 03     CMP $03E0,Y
+CE/9090: 4A           LSR
+CE/9091: D9 E0 00     CMP $00E0,Y
+CE/9094: 08           PHP
+CE/9095: 0F E8 04 09  ORA $0904E8
+CE/9099: 0F E8 04 0A  ORA $0A04E8
+CE/909D: 07 E0        ORA [$E0]
+CE/909F: 03 8A        ORA $8A,S
+CE/90A1: 07 E0        ORA [$E0]
+CE/90A3: 00 0B        BRK $0B
+CE/90A5: F3 C5        SBC ($C5,S),Y
+CE/90A7: 04 0C        TSB $0C
+CE/90A9: F3 C5        SBC ($C5,S),Y
+CE/90AB: 04 0D        TSB $0D
+CE/90AD: F3 C5        SBC ($C5,S),Y
+CE/90AF: 03 4D        ORA $4D,S
+CE/90B1: F3 C5        SBC ($C5,S),Y
+CE/90B3: 00 0B        BRK $0B
+CE/90B5: F1 F8        SBC ($F8),Y
+CE/90B7: 04 0C        TSB $0C
+CE/90B9: F1 F8        SBC ($F8),Y
+CE/90BB: 04 0D        TSB $0D
+CE/90BD: F1 F8        SBC ($F8),Y
+CE/90BF: 03 4D        ORA $4D,S
+CE/90C1: F1 F8        SBC ($F8),Y
+CE/90C3: 00 0B        BRK $0B
+CE/90C5: D9 E0 04     CMP $04E0,Y
+CE/90C8: 0C D9 E0     TSB $E0D9
+CE/90CB: 04 0D        TSB $0D
+CE/90CD: D9 E0 03     CMP $03E0,Y
+CE/90D0: 4D D9 E0     EOR $E0D9
+CE/90D3: 00 0B        BRK $0B
+CE/90D5: 07 E0        ORA [$E0]
+CE/90D7: 04 0C        TSB $0C
+CE/90D9: 07 E0        ORA [$E0]
+CE/90DB: 04 0D        TSB $0D
+CE/90DD: 07 E0        ORA [$E0]
+CE/90DF: 03 8D        ORA $8D,S
+CE/90E1: 07 E0        ORA [$E0]
+CE/90E3: 00 0E        BRK $0E
+CE/90E5: F1 CD        SBC ($CD),Y
+CE/90E7: 04 0F        TSB $0F
+CE/90E9: F3 C5        SBC ($C5,S),Y
+CE/90EB: 04 10        TSB $10
+CE/90ED: F3 C5        SBC ($C5,S),Y
+CE/90EF: 03 50        ORA $50,S
+CE/90F1: F3 C5        SBC ($C5,S),Y
+CE/90F3: 00 0E        BRK $0E
+CE/90F5: F9 00 04     SBC $0400,Y
+CE/90F8: 0F F1 F8 04  ORA $04F8F1
+CE/90FC: 10 F1        BPL $90EF
+CE/90FE: F8           SED
+CE/90FF: 03 50        ORA $50,S
+CE/9101: F1 F8        SBC ($F8),Y
+CE/9103: 00 0E        BRK $0E
+CE/9105: E1 E8        SBC ($E8,X)
+CE/9107: 04 0F        TSB $0F
+CE/9109: D9 E0 04     CMP $04E0,Y
+CE/910C: 10 D9        BPL $90E7
+CE/910E: E0 03 50     CPX #$5003
+CE/9111: D9 E0 00     CMP $00E0,Y
+CE/9114: 0E 0F E8     ASL $E80F
+CE/9117: 04 0F        TSB $0F
+CE/9119: 07 E0        ORA [$E0]
+CE/911B: 04 10        TSB $10
+CE/911D: 07 E0        ORA [$E0]
+CE/911F: 03 90        ORA $90,S
+CE/9121: 07 E0        ORA [$E0]
+CE/9123: 00 01        BRK $01
+CE/9125: F6 CE        INC $CE,X
+CE/9127: 05 02        ORA $02
+CE/9129: EE C6 04     INC $04C6
+CE/912C: 42 EE        WDM $EE
+CE/912E: C6 00        DEC $00
+CE/9130: 01 FB        ORA ($FB,X)
+CE/9132: F9 05 02     SBC $0205,Y
+CE/9135: F3 F1        SBC ($F1,S),Y
+CE/9137: 04 42        TSB $42
+CE/9139: F3 F1        SBC ($F1,S),Y
+CE/913B: 00 01        BRK $01
+CE/913D: E0 EC 05     CPX #$05EC
+CE/9140: 02 D8        COP $D8
+CE/9142: E4 04        CPX $04
+CE/9144: 42 D8        WDM $D8
+CE/9146: E4 00        CPX $00
+CE/9148: 01 10        ORA ($10,X)
+CE/914A: EC 05 02     CPX $0205
+CE/914D: 08           PHP
+CE/914E: E4 04        CPX $04
+CE/9150: 82 08 E4     BRL $CE755B
+CE/9153: 00 03        BRK $03
+CE/9155: F6 CE        INC $CE,X
+CE/9157: 04 04        TSB $04
+CE/9159: F0 CA        BEQ $9125
+CE/915B: 04 05        TSB $05
+CE/915D: F2 CA        SBC ($CA)
+CE/915F: 03 45        ORA $45,S
+CE/9161: F2 CA        SBC ($CA)
+CE/9163: 00 03        BRK $03
+CE/9165: FB           XCE
+CE/9166: F9 04 06     SBC $0604,Y
+CE/9169: 01 F5        ORA ($F5,X)
+CE/916B: 04 07        TSB $07
+CE/916D: FF F5 03 45  SBC $4503F5,X
+CE/9171: FF F5 00 03  SBC $0300F5,X
+CE/9175: E0 EC 04     CPX #$04EC
+CE/9178: 06 E6        ASL $E6
+CE/917A: E8           INX
+CE/917B: 04 07        TSB $07
+CE/917D: E4 E8        CPX $E8
+CE/917F: 03 45        ORA $45,S
+CE/9181: E4 E8        CPX $E8
+CE/9183: 00 03        BRK $03
+CE/9185: 10 EC        BPL $9173
+CE/9187: 04 04        TSB $04
+CE/9189: 0A           ASL
+CE/918A: E8           INX
+CE/918B: 04 05        TSB $05
+CE/918D: 0C E8 03     TSB $03E8
+CE/9190: 85 0C        STA $0C
+CE/9192: E8           INX
+CE/9193: 00 08        BRK $08
+CE/9195: F6 DE        INC $DE,X
+CE/9197: 04 09        TSB $09
+CE/9199: F0 DA        BEQ $9175
+CE/919B: 04 0A        TSB $0A
+CE/919D: E2 CA        SEP #$CA
+CE/919F: 03 4A        ORA $4A,S
+CE/91A1: E2 CA        SEP #$CA
+CE/91A3: 00 08        BRK $08
+CE/91A5: FB           XCE
+CE/91A6: F9 04 0B     SBC $0B04,Y
+CE/91A9: 01 F5        ORA ($F5,X)
+CE/91AB: 04 0C        TSB $0C
+CE/91AD: FF E5 03 4C  SBC $4C03E5,X
+CE/91B1: FF E5 00 08  SBC $0800E5,X
+CE/91B5: E0 EC 04     CPX #$04EC
+CE/91B8: 0B           PHD
+CE/91B9: E6 E8        INC $E8
+CE/91BB: 04 0C        TSB $0C
+CE/91BD: E4 D8        CPX $D8
+CE/91BF: 03 4C        ORA $4C,S
+CE/91C1: E4 D8        CPX $D8
+CE/91C3: 00 08        BRK $08
+CE/91C5: 10 EC        BPL $91B3
+CE/91C7: 04 09        TSB $09
+CE/91C9: 0A           ASL
+CE/91CA: E8           INX
+CE/91CB: 04 0A        TSB $0A
+CE/91CD: F6 D4        INC $D4,X
+CE/91CF: 03 8A        ORA $8A,S
+CE/91D1: F6 D4        INC $D4,X
+CE/91D3: 00 0D        BRK $0D
+CE/91D5: EE CA 04     INC $04CA
+CE/91D8: 0E E9 BF     ASL $BFE9
+CE/91DB: 04 0F        TSB $0F
+CE/91DD: DD BE 03     CMP $03BE,X
+CE/91E0: 4F DD BE 00  EOR $00BEDD
+CE/91E4: 0D F3 F1     ORA $F1F3
+CE/91E7: 04 10        TSB $10
+CE/91E9: F7 E6        SBC [$E6],Y
+CE/91EB: 04 11        TSB $11
+CE/91ED: 03 E5        ORA $E5,S
+CE/91EF: 03 51        ORA $51,S
+CE/91F1: 03 E5        ORA $E5,S
+CE/91F3: 00 0D        BRK $0D
+CE/91F5: D8           CLD
+CE/91F6: E4 04        CPX $04
+CE/91F8: 12 E6        ORA ($E6)
+CE/91FA: DC 04 13     JMP [$1304]
+CE/91FD: E8           INX
+CE/91FE: D4 03        PEI $03
+CE/9200: 53 E8        EOR ($E8,S),Y
+CE/9202: D4 00        PEI $00
+CE/9204: 0D 08 E4     ORA $E408
+CE/9207: 04 14        TSB $14
+CE/9209: 0C DC 04     TSB $04DC
+CE/920C: 15 08        ORA $08,X
+CE/920E: D4 03        PEI $03
+CE/9210: 95 08        STA $08,X
+CE/9212: D4 00        PEI $00
+CE/9214: 00 F0        BRK $F0
+CE/9216: DF 05 01 F0  CMP $F00105,X
+CE/921A: D6 05        DEC $05,X
+CE/921C: 02 F8        COP $F8
+CE/921E: D2 05        CMP ($05)
+CE/9220: 42 F8        WDM $F8
+CE/9222: D5 00        CMP $00,X
+CE/9224: 03 F9        ORA $F9,S
+CE/9226: F0 05        BEQ $922D
+CE/9228: 04 F0        TSB $F0
+CE/922A: F0 05        BEQ $9231
+CE/922C: 05 F0        ORA $F0
+CE/922E: EF 05 45 F0  SBC $F04505
+CE/9232: EF 00 06 EC  SBC $EC0600
+CE/9236: E5 05        SBC $05
+CE/9238: 07 EC        ORA [$EC]
+CE/923A: E5 05        SBC $05
+CE/923C: 08           PHP
+CE/923D: ED E4 05     SBC $05E4
+CE/9240: 48           PHA
+CE/9241: ED E4 00     SBC $00E4
+CE/9244: 09 04        ORA #$04
+CE/9246: E5 05        SBC $05
+CE/9248: 0A           ASL
+CE/9249: 04 E5        TSB $E5
+CE/924B: 05 0B        ORA $0B
+CE/924D: 03 E4        ORA $E4,S
+CE/924F: 05 8B        ORA $8B
+CE/9251: 03 E4        ORA $E4,S
+CE/9253: 00 0C        BRK $0C
+CE/9255: 03 BE        ORA $BE,S
+CE/9257: 05 0D        ORA $0D
+CE/9259: 03 BE        ORA $BE,S
+CE/925B: 05 4D        ORA $4D
+CE/925D: 09 CE        ORA #$CE
+CE/925F: 00 0E        BRK $0E
+CE/9261: F0 D4        BEQ $9237
+CE/9263: 05 0F        ORA $0F
+CE/9265: F0 D4        BEQ $923B
+CE/9267: 05 4F        ORA $4F
+CE/9269: EA           NOP
+CE/926A: D4 00        PEI $00
+CE/926C: 0E E0 D0     ASL $D0E0
+CE/926F: 05 0F        ORA $0F
+CE/9271: E0 D0 05     CPX #$05D0
+CE/9274: 4F E0 D0 00  EOR $00D0E0
+CE/9278: 0C 10 D0     TSB $D010
+CE/927B: 05 0D        ORA $0D
+CE/927D: 10 D0        BPL $924F
+CE/927F: 05 8D        ORA $8D
+CE/9281: 10 D0        BPL $9253
+CE/9283: 00 00        BRK $00
+CE/9285: F0 D1        BEQ $9258
+CE/9287: 05 01        ORA $01
+CE/9289: F7 D1        SBC [$D1],Y
+CE/928B: 0A           ASL
+CE/928C: 41 F7        EOR ($F7,X)
+CE/928E: D1 00        CMP ($00),Y
+CE/9290: 02 EC        COP $EC
+CE/9292: EB           XBA
+CE/9293: 05 03        ORA $03
+CE/9295: EC EB 0A     CPX $0AEB
+CE/9298: 43 EC        EOR $EC,S
+CE/929A: EB           XBA
+CE/929B: 00 04        BRK $04
+CE/929D: D7 DE        CMP [$DE],Y
+CE/929F: 05 05        ORA $05
+CE/92A1: D7 DE        CMP [$DE],Y
+CE/92A3: 0A           ASL
+CE/92A4: 45 DF        EOR $DF
+CE/92A6: DE 00 06     DEC $0600,X
+CE/92A9: 19 DE 05     ORA $05DE,Y
+CE/92AC: 07 19        ORA [$19]
+CE/92AE: DE 0A 83     DEC $830A,X
+CE/92B1: 19 DF 00     ORA $00DF,Y
+CE/92B4: 08           PHP
+CE/92B5: F8           SED
+CE/92B6: D3 05        CMP ($05,S),Y
+CE/92B8: 09 F6        ORA #$F6
+CE/92BA: D3 05        CMP ($05,S),Y
+CE/92BC: 49 F6        EOR #$F6
+CE/92BE: D3 00        CMP ($00,S),Y
+CE/92C0: 0A           ASL
+CE/92C1: EB           XBA
+CE/92C2: EC 05 0B     CPX $0B05
+CE/92C5: EB           XBA
+CE/92C6: EC 05 4B     CPX $4B05
+CE/92C9: EB           XBA
+CE/92CA: EC 00 0C     CPX $0C00
+CE/92CD: E0 DD 05     CPX #$05DD
+CE/92D0: 0D E0 DD     ORA $DDE0
+CE/92D3: 05 4D        ORA $4D
+CE/92D5: E0 DD 00     CPX #$00DD
+CE/92D8: 0E 10 DD     ASL $DD10
+CE/92DB: 05 0F        ORA $0F
+CE/92DD: 10 DD        BPL $92BC
+CE/92DF: 05 8F        ORA $8F
+CE/92E1: 10 DD        BPL $92C0
+CE/92E3: 00 05        BRK $05
+CE/92E5: E2 E8        SEP #$E8
+CE/92E7: 05 06        ORA $06
+CE/92E9: E2 E8        SEP #$E8
+CE/92EB: 05 11        ORA $11
+CE/92ED: F8           SED
+CE/92EE: D8           CLD
+CE/92EF: 05 12        ORA $12
+CE/92F1: FC D8 05     JSR ($05D8,X)
+CE/92F4: 13 00        ORA ($00,S),Y
+CE/92F6: D8           CLD
+CE/92F7: 05 53        ORA $53
+CE/92F9: F8           SED
+CE/92FA: D8           CLD
+CE/92FB: 00 07        BRK $07
+CE/92FD: 0A           ASL
+CE/92FE: EA           NOP
+CE/92FF: 05 08        ORA $08
+CE/9301: 0A           ASL
+CE/9302: EA           NOP
+CE/9303: 05 0B        ORA $0B
+CE/9305: D2 E6        CMP ($E6)
+CE/9307: 05 0C        ORA $0C
+CE/9309: D2 E6        CMP ($E6)
+CE/930B: 05 0D        ORA $0D
+CE/930D: D2 E6        CMP ($E6)
+CE/930F: 05 4D        ORA $4D
+CE/9311: E1 E4        SBC ($E4,X)
+CE/9313: 00 07        BRK $07
+CE/9315: 06 E5        ASL $E5
+CE/9317: 05 08        ORA $08
+CE/9319: 06 E5        ASL $E5
+CE/931B: 05 0B        ORA $0B
+CE/931D: D5 E4        CMP $E4,X
+CE/931F: 05 0C        ORA $0C
+CE/9321: D5 E4        CMP $E4,X
+CE/9323: 05 0D        ORA $0D
+CE/9325: D5 E4        CMP $E4,X
+CE/9327: 05 4D        ORA $4D
+CE/9329: D5 E4        CMP $E4,X
+CE/932B: 00 09        BRK $09
+CE/932D: E2 E3        SEP #$E3
+CE/932F: 05 0A        ORA $0A
+CE/9331: E2 E3        SEP #$E3
+CE/9333: 05 0E        ORA $0E
+CE/9335: FA           PLX
+CE/9336: E2 05        SEP #$05
+CE/9338: 0F FA E2 05  ORA $05E2FA
+CE/933C: 10 FA        BPL $9338
+CE/933E: E2 05        SEP #$05
+CE/9340: 90 FA        BCC $933C
+CE/9342: E4 00        CPX $00
+CE/9344: 02 03        COP $03
+CE/9346: E2 05        SEP #$05
+CE/9348: 17 00        ORA [$00],Y
+CE/934A: 00 12        BRK $12
+CE/934C: 03 12        ORA $12,S
+CE/934E: E2 05        SEP #$05
+CE/9350: 57 00        EOR [$00],Y
+CE/9352: 00 00        BRK $00
+CE/9354: 00 E4        BRK $E4
+CE/9356: E6 05        INC $05
+CE/9358: 17 00        ORA [$00],Y
+CE/935A: 00 12        BRK $12
+CE/935C: 01 E8        ORA ($E8,X)
+CE/935E: E5 05        SBC $05
+CE/9360: 57 00        EOR [$00],Y
+CE/9362: 00 00        BRK $00
+CE/9364: 00 E6        BRK $E6
+CE/9366: E6 05        INC $05
+CE/9368: 17 00        ORA [$00],Y
+CE/936A: 00 12        BRK $12
+CE/936C: 00 E3        BRK $E3
+CE/936E: E2 05        SEP #$05
+CE/9370: 57 00        EOR [$00],Y
+CE/9372: 00 00        BRK $00
+CE/9374: 04 0A        TSB $0A
+CE/9376: E6 05        INC $05
+CE/9378: 17 00        ORA [$00],Y
+CE/937A: 00 12        BRK $12
+CE/937C: 04 0D        TSB $0D
+CE/937E: E2 05        SEP #$05
+CE/9380: 97 00        STA [$00],Y
+CE/9382: 00 00        BRK $00
+CE/9384: 02 0C        COP $0C
+CE/9386: E2 0A        SEP #$0A
+CE/9388: 02 02        COP $02
+CE/938A: E1 0A        SBC ($0A,X)
+CE/938C: 17 00        ORA [$00],Y
+CE/938E: 00 19        BRK $19
+CE/9390: 03 11        ORA $11,S
+CE/9392: E1 0A        SBC ($0A,X)
+CE/9394: 57 00        EOR [$00],Y
+CE/9396: 00 00        BRK $00
+CE/9398: 17 00        ORA [$00],Y
+CE/939A: 00 1E        BRK $1E
+CE/939C: 01 E7        ORA ($E7,X)
+CE/939E: E7 0A        SBC [$0A]
+CE/93A0: 57 00        EOR [$00],Y
+CE/93A2: 00 00        BRK $00
+CE/93A4: 17 00        ORA [$00],Y
+CE/93A6: 00 1E        BRK $1E
+CE/93A8: 00 E1        BRK $E1
+CE/93AA: E2 0A        SEP #$0A
+CE/93AC: 57 00        EOR [$00],Y
+CE/93AE: 00 00        BRK $00
+CE/93B0: 17 00        ORA [$00],Y
+CE/93B2: 00 1E        BRK $1E
+CE/93B4: 04 0F        TSB $0F
+CE/93B6: E2 0A        SEP #$0A
+CE/93B8: 97 00        STA [$00],Y
+CE/93BA: 00 00        BRK $00
+CE/93BC: 02 03        COP $03
+CE/93BE: E2 0A        SEP #$0A
+CE/93C0: 14 E2        TRB $E2
+CE/93C2: E9 0A        SBC #$0A
+CE/93C4: 03 12        ORA $12,S
+CE/93C6: E2 0A        SEP #$0A
+CE/93C8: 57 00        EOR [$00],Y
+CE/93CA: 00 00        BRK $00
+CE/93CC: 00 E4        BRK $E4
+CE/93CE: E6 0A        INC $0A
+CE/93D0: 15 10        ORA $10,X
+CE/93D2: EB           XBA
+CE/93D3: 0A           ASL
+CE/93D4: 01 E8        ORA ($E8,X)
+CE/93D6: E5 0A        SBC $0A
+CE/93D8: 57 00        EOR [$00],Y
+CE/93DA: 00 00        BRK $00
+CE/93DC: 00 E6        BRK $E6
+CE/93DE: E6 0A        INC $0A
+CE/93E0: 15 08        ORA $08,X
+CE/93E2: E9 0A        SBC #$0A
+CE/93E4: 00 E3        BRK $E3
+CE/93E6: E2 0A        SEP #$0A
+CE/93E8: 57 00        EOR [$00],Y
+CE/93EA: 00 00        BRK $00
+CE/93EC: 04 0A        TSB $0A
+CE/93EE: E1 0A        SBC ($0A,X)
+CE/93F0: 16 E8        ASL $E8,X
+CE/93F2: E9 0A        SBC #$0A
+CE/93F4: 04 0D        TSB $0D
+CE/93F6: E2 0A        SEP #$0A
+CE/93F8: 97 00        STA [$00],Y
+CE/93FA: 00 00        BRK $00
+CE/93FC: 00 F0        BRK $F0
+CE/93FE: DF 05 01 F0  CMP $F00105,X
+CE/9402: D6 05        DEC $05,X
+CE/9404: 02 F0        COP $F0
+CE/9406: D2 05        CMP ($05)
+CE/9408: 42 F8        WDM $F8
+CE/940A: D5 00        CMP $00,X
+CE/940C: 03 F9        ORA $F9,S
+CE/940E: F0 05        BEQ $9415
+CE/9410: 04 F0        TSB $F0
+CE/9412: F0 05        BEQ $9419
+CE/9414: 05 F0        ORA $F0
+CE/9416: EF 05 45 F0  SBC $F04505
+CE/941A: EF 00 06 DD  SBC $DD0600
+CE/941E: E5 05        SBC $05
+CE/9420: 07 DD        ORA [$DD]
+CE/9422: E5 05        SBC $05
+CE/9424: 08           PHP
+CE/9425: DE E4 05     DEC $05E4,X
+CE/9428: 48           PHA
+CE/9429: DD E4 00     CMP $00E4,X
+CE/942C: 09 04        ORA #$04
+CE/942E: E5 05        SBC $05
+CE/9430: 0A           ASL
+CE/9431: 04 E5        TSB $E5
+CE/9433: 05 0B        ORA $0B
+CE/9435: 03 E4        ORA $E4,S
+CE/9437: 05 8B        ORA $8B
+CE/9439: 03 E4        ORA $E4,S
+CE/943B: 00 0C        BRK $0C
+CE/943D: 03 BE        ORA $BE,S
+CE/943F: 05 0D        ORA $0D
+CE/9441: 03 BE        ORA $BE,S
+CE/9443: 05 4D        ORA $4D
+CE/9445: 09 CE        ORA #$CE
+CE/9447: 00 0E        BRK $0E
+CE/9449: F0 D4        BEQ $941F
+CE/944B: 05 0F        ORA $0F
+CE/944D: F0 D4        BEQ $9423
+CE/944F: 05 4F        ORA $4F
+CE/9451: EA           NOP
+CE/9452: D4 00        PEI $00
+CE/9454: 0E E0 D0     ASL $D0E0
+CE/9457: 05 0F        ORA $0F
+CE/9459: E0 D0 05     CPX #$05D0
+CE/945C: 4F E0 D0 00  EOR $00D0E0
+CE/9460: 0C 10 D0     TSB $D010
+CE/9463: 05 0D        ORA $0D
+CE/9465: 10 D0        BPL $9437
+CE/9467: 05 8D        ORA $8D
+CE/9469: 10 D0        BPL $943B
+CE/946B: 00 00        BRK $00
+CE/946D: F7 C0        SBC [$C0],Y
+CE/946F: 03 01        ORA $01,S
+CE/9471: EF C0 03 02  SBC $0203C0
+CE/9475: EF C0 03 03  SBC $0303C0
+CE/9479: EF C0 03 43  SBC $4303C0
+CE/947D: EF C0 00 00  SBC $0000C0
+CE/9481: F8           SED
+CE/9482: E1 03        SBC ($03,X)
+CE/9484: 01 F0        ORA ($F0,X)
+CE/9486: E1 03        SBC ($03,X)
+CE/9488: 02 F0        COP $F0
+CE/948A: E1 03        SBC ($03,X)
+CE/948C: 03 F0        ORA $F0,S
+CE/948E: E1 03        SBC ($03,X)
+CE/9490: 43 F0        EOR $F0,S
+CE/9492: E1 00        SBC ($00,X)
+CE/9494: 04 EF        TSB $EF
+CE/9496: D4 03        PEI $03
+CE/9498: 05 EF        ORA $EF
+CE/949A: D4 03        PEI $03
+CE/949C: 06 E3        ASL $E3
+CE/949E: D4 03        PEI $03
+CE/94A0: 07 E3        ORA [$E3]
+CE/94A2: D4 03        PEI $03
+CE/94A4: 47 E2        EOR [$E2]
+CE/94A6: D4 00        PEI $00
+CE/94A8: 08           PHP
+CE/94A9: F1 D4        SBC ($D4),Y
+CE/94AB: 03 09        ORA $09,S
+CE/94AD: 01 D4        ORA ($D4,X)
+CE/94AF: 03 0A        ORA $0A,S
+CE/94B1: FD D4 03     SBC $03D4,X
+CE/94B4: 0B           PHD
+CE/94B5: FE D4 03     INC $03D4,X
+CE/94B8: 8B           PHB
+CE/94B9: FE D4 00     INC $00D4,X
+CE/94BC: 0C E0 C5     TSB $C5E0
+CE/94BF: 0A           ASL
+CE/94C0: 4C E0 C5     JMP $C5E0
+CE/94C3: 00 0D        BRK $0D
+CE/94C5: EC D0 0A     CPX $0AD0
+CE/94C8: 4D EC D0     EOR $D0EC
+CE/94CB: 00 0E        BRK $0E
+CE/94CD: E4 BC        CPX $BC
+CE/94CF: 0A           ASL
+CE/94D0: 4E E4 BC     LSR $BCE4
+CE/94D3: 00 0F        BRK $0F
+CE/94D5: 0C BC 0A     TSB $0ABC
+CE/94D8: 8F 0C BC 00  STA $00BC0C
+CE/94DC: 00 F8        BRK $F8
+CE/94DE: DF 04 01 F8  CMP $F80104,X
+CE/94E2: DF 04 02 F8  CMP $F80204,X
+CE/94E6: CF 04 42 F8  CMP $F84204
+CE/94EA: BF 00 03 F8  LDA $F80300,X
+CE/94EE: BF 03 04 F8  LDA $F80403,X
+CE/94F2: D0 03        BNE $94F7
+CE/94F4: 05 F8        ORA $F8
+CE/94F6: D6 03        DEC $03,X
+CE/94F8: 06 F8        ASL $F8
+CE/94FA: DC 03 46     JMP [$4603]
+CE/94FD: F8           SED
+CE/94FE: E2 00        SEP #$00
+CE/9500: 07 F8        ORA [$F8]
+CE/9502: E2 03        SEP #$03
+CE/9504: 08           PHP
+CE/9505: F1 D5        SBC ($D5),Y
+CE/9507: 03 09        ORA $09,S
+CE/9509: E9 D5        SBC #$D5
+CE/950B: 03 0A        ORA $0A,S
+CE/950D: E1 D5        SBC ($D5,X)
+CE/950F: 03 4A        ORA $4A,S
+CE/9511: D9 D5 00     CMP $00D5,Y
+CE/9514: 0B           PHD
+CE/9515: D9 D5 03     CMP $03D5,Y
+CE/9518: 0C FF D5     TSB $D5FF
+CE/951B: 03 0D        ORA $0D,S
+CE/951D: 07 D5        ORA [$D5]
+CE/951F: 03 0E        ORA $0E,S
+CE/9521: 0F D5 03 8E  ORA $8E03D5
+CE/9525: 17 D5        ORA [$D5],Y
+CE/9527: 00 0F        BRK $0F
+CE/9529: 03 BE        ORA $BE,S
+CE/952B: 05 10        ORA $10
+CE/952D: 03 BE        ORA $BE,S
+CE/952F: 05 50        ORA $50
+CE/9531: 09 CE        ORA #$CE
+CE/9533: 00 11        BRK $11
+CE/9535: F0 D4        BEQ $950B
+CE/9537: 05 12        ORA $12
+CE/9539: F0 D4        BEQ $950F
+CE/953B: 05 52        ORA $52
+CE/953D: EA           NOP
+CE/953E: D4 00        PEI $00
+CE/9540: 11 E0        ORA ($E0),Y
+CE/9542: D0 05        BNE $9549
+CE/9544: 12 E0        ORA ($E0)
+CE/9546: D0 05        BNE $954D
+CE/9548: 52 E0        EOR ($E0)
+CE/954A: D0 00        BNE $954C
+CE/954C: 0F 10 D0 05  ORA $05D010
+CE/9550: 10 10        BPL $9562
+CE/9552: D0 05        BNE $9559
+CE/9554: 90 10        BCC $9566
+CE/9556: D0 00        BNE $9558
+CE/9558: 00 F8        BRK $F8
+CE/955A: BA           TSX
+CE/955B: 03 01        ORA $01,S
+CE/955D: F8           SED
+CE/955E: BF 03 02 F0  LDA $F00203,X
+CE/9562: CF 03 03 F0  CMP $F00303
+CE/9566: CF 03 04 E0  CMP $E00403
+CE/956A: CF 03 44 E0  CMP $E04403
+CE/956E: CF 00 00 F8  CMP $F80000
+CE/9572: CA           DEX
+CE/9573: 03 01        ORA $01,S
+CE/9575: F8           SED
+CE/9576: E0 03 02     CPX #$0203
+CE/9579: F0 F0        BEQ $956B
+CE/957B: 03 03        ORA $03,S
+CE/957D: F0 F0        BEQ $956F
+CE/957F: 03 04        ORA $04,S
+CE/9581: E0 F0 03     CPX #$03F0
+CE/9584: 44 E0 F0     MVP $E0,$F0
+CE/9587: 00 00        BRK $00
+CE/9589: E6 C9        INC $C9
+CE/958B: 03 01        ORA $01,S
+CE/958D: E6 D0        INC $D0
+CE/958F: 03 02        ORA $02,S
+CE/9591: E0 E5 03     CPX #$03E5
+CE/9594: 03 E0        ORA $E0,S
+CE/9596: E5 03        SBC $03
+CE/9598: 04 D0        TSB $D0
+CE/959A: E5 03        SBC $03
+CE/959C: 44 D0 E5     MVP $D0,$E5
+CE/959F: 00 00        BRK $00
+CE/95A1: 0A           ASL
+CE/95A2: C9 03        CMP #$03
+CE/95A4: 01 0A        ORA ($0A,X)
+CE/95A6: D0 03        BNE $95AB
+CE/95A8: 02 00        COP $00
+CE/95AA: E5 03        SBC $03
+CE/95AC: 03 00        ORA $00,S
+CE/95AE: E5 03        SBC $03
+CE/95B0: 04 F0        TSB $F0
+CE/95B2: E5 03        SBC $03
+CE/95B4: 84 F0        STY $F0
+CE/95B6: E5 00        SBC $00
+CE/95B8: 05 E0        ORA $E0
+CE/95BA: C5 0A        CMP $0A
+CE/95BC: 45 E0        EOR $E0
+CE/95BE: C5 00        CMP $00
+CE/95C0: 06 EC        ASL $EC
+CE/95C2: D0 0A        BNE $95CE
+CE/95C4: 46 EC        LSR $EC
+CE/95C6: D0 00        BNE $95C8
+CE/95C8: 07 E4        ORA [$E4]
+CE/95CA: BC 0A 47     LDY $470A,X
+CE/95CD: E4 BC        CPX $BC
+CE/95CF: 00 08        BRK $08
+CE/95D1: 0C BC 0A     TSB $0ABC
+CE/95D4: 88           DEY
+CE/95D5: 0C BC 00     TSB $00BC
+CE/95D8: 00 F8        BRK $F8
+CE/95DA: CB           WAI
+CE/95DB: 03 01        ORA $01,S
+CE/95DD: F8           SED
+CE/95DE: CF 03 02 F0  CMP $F00203
+CE/95E2: D7 03        CMP [$03],Y
+CE/95E4: 03 F0        ORA $F0,S
+CE/95E6: D7 03        CMP [$03],Y
+CE/95E8: 04 E0        TSB $E0
+CE/95EA: DF 03 44 E0  CMP $E04403,X
+CE/95EE: DF 00 00 F8  CMP $F80000,X
+CE/95F2: DA           PHX
+CE/95F3: 03 01        ORA $01,S
+CE/95F5: F0 F0        BEQ $95E7
+CE/95F7: 03 02        ORA $02,S
+CE/95F9: F4 F4 03     PEA $03F4
+CE/95FC: 03 F4        ORA $F4,S
+CE/95FE: F4 03 04     PEA $0403
+CE/9601: EC F0 03     CPX $03F0
+CE/9604: 44 E0 F0     MVP $E0,$F0
+CE/9607: 00 00        BRK $00
+CE/9609: E6 D0        INC $D0
+CE/960B: 03 01        ORA $01,S
+CE/960D: E6 D5        INC $D5
+CE/960F: 03 05        ORA $05,S
+CE/9611: E0 EB 03     CPX #$03EB
+CE/9614: 06 E0        ASL $E0
+CE/9616: EB           XBA
+CE/9617: 03 07        ORA $07,S
+CE/9619: D8           CLD
+CE/961A: E3 03        SBC $03,S
+CE/961C: 47 D0        EOR [$D0]
+CE/961E: E3 00        SBC $00,S
+CE/9620: 00 0A        BRK $0A
+CE/9622: D0 03        BNE $9627
+CE/9624: 01 0A        ORA ($0A,X)
+CE/9626: D5 03        CMP $03,X
+CE/9628: 08           PHP
+CE/9629: 00 EB        BRK $EB
+CE/962B: 03 09        ORA $09,S
+CE/962D: 00 EB        BRK $EB
+CE/962F: 03 0A        ORA $0A,S
+CE/9631: FA           PLX
+CE/9632: E3 03        SBC $03,S
+CE/9634: 8A           TXA
+CE/9635: F0 E3        BEQ $961A
+CE/9637: 00 0B        BRK $0B
+CE/9639: E6 EA        INC $EA
+CE/963B: 03 0C        ORA $0C,S
+CE/963D: F3 B8        SBC ($B8,S),Y
+CE/963F: 03 0D        ORA $0D,S
+CE/9641: 0A           ASL
+CE/9642: AE 03 4D     LDX $4D03
+CE/9645: E0 C5 00     CPX #$00C5
+CE/9648: 0E 00 EA     ASL $EA00
+CE/964B: 03 0F        ORA $0F,S
+CE/964D: E5 C4        SBC $C4
+CE/964F: 03 10        ORA $10,S
+CE/9651: DF BC 03 50  CMP $5003BC,X
+CE/9655: EC D0 00     CPX $00D0
+CE/9658: 11 DE        ORA ($DE),Y
+CE/965A: BC 03 12     LDY $1203,X
+CE/965D: DE BC 03     DEC $03BC,X
+CE/9660: 13 DE        ORA ($DE,S),Y
+CE/9662: BC 03 53     LDY $5303,X
+CE/9665: E4 BC        CPX $BC
+CE/9667: 00 14        BRK $14
+CE/9669: FA           PLX
+CE/966A: BC 03 15     LDY $1503,X
+CE/966D: FA           PLX
+CE/966E: BC 03 16     LDY $1603,X
+CE/9671: FA           PLX
+CE/9672: BC 03 96     LDY $9603,X
+CE/9675: 0C BC 00     TSB $00BC
+CE/9678: 02 EF        COP $EF
+CE/967A: C4 0A        CPY $0A
+CE/967C: 03 EF        ORA $EF,S
+CE/967E: C4 05        CPY $05
+CE/9680: 43 EF        EOR $EF,S
+CE/9682: C4 00        CPY $00
+CE/9684: 00 EF        BRK $EF
+CE/9686: EF 0A 01 EF  SBC $EF010A
+CE/968A: EF 05 41 EF  SBC $EF4105
+CE/968E: EF 00 02 DC  SBC $DC0200
+CE/9692: E0 0A 03     CPX #$030A
+CE/9695: DC E0 05     JMP [$05E0]
+CE/9698: 43 DC        EOR $DC,S
+CE/969A: E0 00 00     CPX #$0000
+CE/969D: 04 E0        TSB $E0
+CE/969F: 0A           ASL
+CE/96A0: 01 04        ORA ($04,X)
+CE/96A2: E0 05 81     CPX #$8105
+CE/96A5: 04 E0        TSB $E0
+CE/96A7: 00 04        BRK $04
+CE/96A9: F8           SED
+CE/96AA: D3 05        CMP ($05,S),Y
+CE/96AC: 05 F6        ORA $F6
+CE/96AE: D3 05        CMP ($05,S),Y
+CE/96B0: 45 F6        EOR $F6
+CE/96B2: D3 00        CMP ($00,S),Y
+CE/96B4: 06 EB        ASL $EB
+CE/96B6: EC 05 07     CPX $0705
+CE/96B9: EB           XBA
+CE/96BA: EC 05 47     CPX $4705
+CE/96BD: EB           XBA
+CE/96BE: EC 00 08     CPX $0800
+CE/96C1: E0 DD 05     CPX #$05DD
+CE/96C4: 09 E0        ORA #$E0
+CE/96C6: DD 05 49     CMP $4905,X
+CE/96C9: E0 DD 00     CPX #$00DD
+CE/96CC: 0A           ASL
+CE/96CD: 10 DD        BPL $96AC
+CE/96CF: 05 0B        ORA $0B
+CE/96D1: 10 DD        BPL $96B0
+CE/96D3: 05 8C        ORA $8C
+CE/96D5: 10 DD        BPL $96B4
+CE/96D7: 00 00        BRK $00
+CE/96D9: FB           XCE
+CE/96DA: C1 05        CMP ($05,X)
+CE/96DC: 00 F3        BRK $F3
+CE/96DE: C9 05        CMP #$05
+CE/96E0: 00 EB        BRK $EB
+CE/96E2: D1 05        CMP ($05),Y
+CE/96E4: 40           RTI

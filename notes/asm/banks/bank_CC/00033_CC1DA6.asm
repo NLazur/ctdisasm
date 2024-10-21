@@ -1,0 +1,42 @@
+CC/1DA6: 04 00        TSB $00
+CC/1DA8: 28           PLP
+CC/1DA9: 80 80        BRA $1D2B
+CC/1DAB: 00 00        BRK $00
+CC/1DAD: 00 05        BRK $05
+CC/1DAF: 00 40        BRK $40
+CC/1DB1: 00 00        BRK $00
+CC/1DB3: 29 80 80     AND #$8080
+CC/1DB6: 00 00        BRK $00
+CC/1DB8: 00 05        BRK $05
+CC/1DBA: 00 40        BRK $40
+CC/1DBC: 04 00        TSB $00
+CC/1DBE: 2A           ROL
+CC/1DBF: 80 80        BRA $1D41
+CC/1DC1: 00 00        BRK $00
+CC/1DC3: 00 05        BRK $05
+CC/1DC5: 00 40        BRK $40
+CC/1DC7: 04 00        TSB $00
+CC/1DC9: 2B           PLD
+CC/1DCA: 80 80        BRA $1D4C
+CC/1DCC: 00 00        BRK $00
+CC/1DCE: 00 05        BRK $05
+CC/1DD0: 00 40        BRK $40
+CC/1DD2: 04 00        TSB $00
+CC/1DD4: 2C 80 80     BIT $8080
+CC/1DD7: 00 00        BRK $00
+CC/1DD9: 00 05        BRK $05
+CC/1DDB: 00 40        BRK $40
+CC/1DDD: 02 00        COP $00
+CC/1DDF: 2D 80 80     AND $8080
+CC/1DE2: 0F 00 00 05  ORA $050000
+CC/1DE6: 00 40        BRK $40
+CC/1DE8: 02 00        COP $00
+CC/1DEA: 2E 80 80     ROL $8080
+CC/1DED: 00 00        BRK $00
+CC/1DEF: 00 05        BRK $05
+CC/1DF1: 00 40        BRK $40
+CC/1DF3: 04 00        TSB $00
+CC/1DF5: 2F 80 80 00  AND $008080
+CC/1DF9: 00 00        BRK $00
+CC/1DFB: 05 00        ORA $00
+CC/1DFD: 40           RTI

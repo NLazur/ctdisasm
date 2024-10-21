@@ -1,0 +1,44 @@
+C2/B045: 78           SEI
+C2/B046: E4 A0        CPX $A0
+C2/B048: E4 C8        CPX $C8
+C2/B04A: E4 08        CPX $08
+C2/B04C: E2 20        SEP #$20
+C2/B04E: AD 4D 0D     LDA $0D4D
+C2/B051: F0 4C        BEQ $B09F
+C2/B053: C2 20        REP #$20
+C2/B055: 29 FF 00     AND #$00FF
+C2/B058: 0A           ASL
+C2/B059: A8           TAY
+C2/B05A: B9 00 7D     LDA $7D00,Y
+C2/B05D: A8           TAY
+C2/B05E: A9 0B CC     LDA #$CC0B
+C2/B061: 20 65 EF     JSR $EF65
+C2/B064: A5 7D        LDA $7D
+C2/B066: 29 00 FF     AND #$FF00
+C2/B069: 09 2D 00     ORA #$002D
+C2/B06C: 9D 00 00     STA $0000,X
+C2/B06F: E8           INX
+C2/B070: E8           INX
+C2/B071: A0 4E 0D     LDY #$0D4E
+C2/B074: A9 11 7E     LDA #$7E11
+C2/B077: 20 14 F1     JSR $F114
+C2/B07A: E8           INX
+C2/B07B: E8           INX
+C2/B07C: DA           PHX
+C2/B07D: 9E 00 00     STZ $0000,X
+C2/B080: 9B           TXY
+C2/B081: C8           INY
+C2/B082: C8           INY
+C2/B083: A9 0F 00     LDA #$000F
+C2/B086: 54 7E 7E     MVN $7E,$7E
+C2/B089: AD 4D 0D     LDA $0D4D
+C2/B08C: 29 FF 00     AND #$00FF
+C2/B08F: 0A           ASL
+C2/B090: AA           TAX
+C2/B091: BF 10 B3 FF  LDA $FFB310,X
+C2/B095: A8           TAY
+C2/B096: FA           PLX
+C2/B097: A9 09 FF     LDA #$FF09
+C2/B09A: 20 65 EF     JSR $EF65
+C2/B09D: 28           PLP
+C2/B09E: 60           RTS

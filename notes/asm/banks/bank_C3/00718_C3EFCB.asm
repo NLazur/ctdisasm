@@ -1,0 +1,4 @@
+C3/EFCB: 10 90        BPL $EF5D
+C3/EFCD: 0E 40 20     ASL $2040
+C3/EFD0: 90 0C        BCC $EFDE
+C3/EFD2: 40           RTI

@@ -1,0 +1,92 @@
+C0/3B45: A9 01        LDA #$01
+C0/3B47: 85 1E        STA $1E
+C0/3B49: 80 D0        BRA $3B1B
+C0/3B4B: C8           INY
+C0/3B4C: BB           TYX
+C0/3B4D: C2 20        REP #$20
+C0/3B4F: BF 01 20 7F  LDA $7F2001,X
+C0/3B53: 85 D9        STA $D9
+C0/3B55: 29 FF 01     AND #$01FF
+C0/3B58: 85 12        STA $12
+C0/3B5A: E8           INX
+C0/3B5B: E8           INX
+C0/3B5C: BF 01 20 7F  LDA $7F2001,X
+C0/3B60: 85 14        STA $14
+C0/3B62: E2 20        SEP #$20
+C0/3B64: A5 DA        LDA $DA
+C0/3B66: 4A           LSR
+C0/3B67: 29 0F        AND #$0F
+C0/3B69: 85 16        STA $16
+C0/3B6B: A5 DA        LDA $DA
+C0/3B6D: 29 80        AND #$80
+C0/3B6F: 04 16        TSB $16
+C0/3B71: AD 10 42     LDA $4210
+C0/3B74: 10 FB        BPL $3B71
+C0/3B76: 20 4E 0B     JSR $0B4E
+C0/3B79: A6 00        LDX $00
+C0/3B7B: 86 05        STX $05
+C0/3B7D: A6 02        LDX $02
+C0/3B7F: 86 07        STX $07
+C0/3B81: A5 04        LDA $04
+C0/3B83: 85 09        STA $09
+C0/3B85: A6 12        LDX $12
+C0/3B87: 86 00        STX $00
+C0/3B89: A6 14        LDX $14
+C0/3B8B: 86 02        STX $02
+C0/3B8D: A5 16        LDA $16
+C0/3B8F: 85 04        STA $04
+C0/3B91: A2 FF 06     LDX #$06FF
+C0/3B94: 9A           TXS
+C0/3B95: 82 68 C4     BRL $C00000
+C0/3B98: A9 01        LDA #$01
+C0/3B9A: 85 1E        STA $1E
+C0/3B9C: 80 AD        BRA $3B4B
+C0/3B9E: A5 17        LDA $17
+C0/3BA0: 30 60        BMI $3C02
+C0/3BA2: 84 C7        STY $C7
+C0/3BA4: C8           INY
+C0/3BA5: BB           TYX
+C0/3BA6: BF 01 20 7F  LDA $7F2001,X
+C0/3BAA: C2 20        REP #$20
+C0/3BAC: 29 FF 00     AND #$00FF
+C0/3BAF: 0A           ASL
+C0/3BB0: AA           TAX
+C0/3BB1: BF 00 02 7F  LDA $7F0200,X
+C0/3BB5: 85 12        STA $12
+C0/3BB7: C8           INY
+C0/3BB8: BB           TYX
+C0/3BB9: BF 01 20 7F  LDA $7F2001,X
+C0/3BBD: 29 FF 00     AND #$00FF
+C0/3BC0: 0A           ASL
+C0/3BC1: AA           TAX
+C0/3BC2: E2 20        SEP #$20
+C0/3BC4: BF 00 02 7F  LDA $7F0200,X
+C0/3BC8: 85 14        STA $14
+C0/3BCA: C8           INY
+C0/3BCB: BB           TYX
+C0/3BCC: BF 01 20 7F  LDA $7F2001,X
+C0/3BD0: C2 20        REP #$20
+C0/3BD2: 29 FF 00     AND #$00FF
+C0/3BD5: 0A           ASL
+C0/3BD6: AA           TAX
+C0/3BD7: E2 20        SEP #$20
+C0/3BD9: BF 00 02 7F  LDA $7F0200,X
+C0/3BDD: 85 15        STA $15
+C0/3BDF: C8           INY
+C0/3BE0: BB           TYX
+C0/3BE1: BF 01 20 7F  LDA $7F2001,X
+C0/3BE5: C2 20        REP #$20
+C0/3BE7: 29 FF 00     AND #$00FF
+C0/3BEA: 0A           ASL
+C0/3BEB: AA           TAX
+C0/3BEC: E2 20        SEP #$20
+C0/3BEE: BF 00 02 7F  LDA $7F0200,X
+C0/3BF2: 85 16        STA $16
+C0/3BF4: A5 17        LDA $17
+C0/3BF6: 09 80        ORA #$80
+C0/3BF8: 85 17        STA $17
+C0/3BFA: A9 0F        LDA #$0F
+C0/3BFC: 85 19        STA $19
+C0/3BFE: A6 C7        LDX $C7
+C0/3C00: 18           CLC
+C0/3C01: 60           RTS

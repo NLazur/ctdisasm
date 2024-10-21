@@ -1,0 +1,42 @@
+C6/9E97: CE E4 39     DEC $39E4
+C6/9E9A: 32 05        AND ($05)
+C6/9E9C: 8F 00 32 AC  STA $AC3200
+C6/9EA0: E3 71        SBC $71,S
+C6/9EA2: 5C 00 89 89  JMP $898900
+C6/9EA6: ED D3 06     SBC $06D3
+C6/9EA9: 7E 19 7C     ROR $7C19,X
+C6/9EAC: 01 D4        ORA ($D4,X)
+C6/9EAE: 28           PLP
+C6/9EAF: D5 D6        CMP $D6,X
+C6/9EB1: D7 35        CMP [$35],Y
+C6/9EB3: 27 D0        AND [$D0]
+C6/9EB5: 94 04        STY $04,X
+C6/9EB7: CB           WAI
+C6/9EB8: 5D E1 42     EOR $42E1,X
+C6/9EBB: 17 DD        ORA [$DD],Y
+C6/9EBD: 42 42        WDM $42
+C6/9EBF: BE ED 0E     LDX $0EED,Y
+C6/9EC2: 42 65        WDM $65
+C6/9EC4: C0 78 03     CPY #$0378
+C6/9EC7: E4 21        CPX $21
+C6/9EC9: 92 05        STA ($05)
+C6/9ECB: 9F 33 BC 6A  STA $6ABC33,X
+C6/9ECF: E3 6C        SBC $6C,S
+C6/9ED1: 87 5C        STA [$5C]
+C6/9ED3: 08           PHP
+C6/9ED4: 42 0D        WDM $0D
+C6/9ED6: 7E 31 E4     ROR $E431,X
+C6/9ED9: E5 E6        SBC $E6
+C6/9EDB: E7 B0        SBC [$B0]
+C6/9EDD: 05 0B        ORA $0B
+C6/9EDF: E6 01        INC $01
+C6/9EE1: F3 04        SBC ($04,S),Y
+C6/9EE3: 36 7B        ROL $7B,X
+C6/9EE5: 0C 45 45     TSB $4545
+C6/9EE8: 00 BB        BRK $BB
+C6/9EEA: E0 B9        CPX #$B9
+C6/9EEC: 03 05        ORA $05,S
+C6/9EEE: 41 BE        EOR ($BE,X)
+C6/9EF0: CA           DEX
+C6/9EF1: 0E 82 5C     ASL $5C82
+C6/9EF4: 60           RTS

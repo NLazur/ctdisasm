@@ -1,0 +1,47 @@
+C3/FDA8: E0 E0        CPX #$E0
+C3/FDAA: C6 40        DEC $40
+C3/FDAC: C0 D0        CPY #$D0
+C3/FDAE: C8           INY
+C3/FDAF: 00 D0        BRK $D0
+C3/FDB1: D0 CA        BNE $FD7D
+C3/FDB3: 00 04        BRK $04
+C3/FDB5: F0 F0        BEQ $FDA7
+C3/FDB7: C6 40        DEC $40
+C3/FDB9: E0 E0        CPX #$E0
+C3/FDBB: C6 40        DEC $40
+C3/FDBD: D0 D0        BNE $FD8F
+C3/FDBF: CC 00 C0     CPY $C000
+C3/FDC2: D0 CC        BNE $FD90
+C3/FDC4: 00 01        BRK $01
+C3/FDC6: F8           SED
+C3/FDC7: F8           SED
+C3/FDC8: CE 40 04     DEC $0440
+C3/FDCB: CE FD 00     DEC $00FD
+C3/FDCE: 01 F8        ORA ($F8,X)
+C3/FDD0: 00 80        BRK $80
+C3/FDD2: 00 04        BRK $04
+C3/FDD4: 13 FE        ORA ($FE,S),Y
+C3/FDD6: 03 04        ORA $04,S
+C3/FDD8: 18           CLC
+C3/FDD9: FE 03 04     INC $0403,X
+C3/FDDC: 1D FE 03     ORA $03FE,X
+C3/FDDF: 04 22        TSB $22
+C3/FDE1: FE 03 04     INC $0403,X
+C3/FDE4: 13 FE        ORA ($FE,S),Y
+C3/FDE6: 03 04        ORA $04,S
+C3/FDE8: 22 FE 03 04  JSR $0403FE
+C3/FDEC: 27 FE        AND [$FE]
+C3/FDEE: 03 04        ORA $04,S
+C3/FDF0: 27 FE        AND [$FE]
+C3/FDF2: 00 04        BRK $04
+C3/FDF4: 2C FE 03     BIT $03FE
+C3/FDF7: 04 31        TSB $31
+C3/FDF9: FE 03 04     INC $0403,X
+C3/FDFC: 36 FE        ROL $FE,X
+C3/FDFE: 03 04        ORA $04,S
+C3/FE00: 3B           TSC
+C3/FE01: FE 03 04     INC $0403,X
+C3/FE04: 2C FE 03     BIT $03FE
+C3/FE07: 04 3B        TSB $3B
+C3/FE09: FE 03 04     INC $0403,X
+C3/FE0C: 40           RTI

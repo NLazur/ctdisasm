@@ -1,0 +1,29 @@
+C2/FCE1: 08           PHP
+C2/FCE2: E2 20        SEP #$20
+C2/FCE4: A9 01        LDA #$01
+C2/FCE6: 8D CB 04     STA $04CB
+C2/FCE9: 9C 46 10     STZ $1046
+C2/FCEC: 7B           TDC
+C2/FCED: AD C9 04     LDA $04C9
+C2/FCF0: C2 30        REP #$30
+C2/FCF2: 0A           ASL
+C2/FCF3: AA           TAX
+C2/FCF4: BD 00 78     LDA $7800,X
+C2/FCF7: 4A           LSR
+C2/FCF8: 65 51        ADC $51
+C2/FCFA: 8D 44 10     STA $1044
+C2/FCFD: 8D 47 10     STA $1047
+C2/FD00: 85 04        STA $04
+C2/FD02: 64 00        STZ $00
+C2/FD04: A9 7F 96     LDA #$967F
+C2/FD07: 38           SEC
+C2/FD08: ED 53 2C     SBC $2C53
+C2/FD0B: 85 00        STA $00
+C2/FD0D: E2 20        SEP #$20
+C2/FD0F: A9 98        LDA #$98
+C2/FD11: ED 55 2C     SBC $2C55
+C2/FD14: 85 02        STA $02
+C2/FD16: 90 03        BCC $FD1B
+C2/FD18: 20 1D FD     JSR $FD1D
+C2/FD1B: 28           PLP
+C2/FD1C: 60           RTS

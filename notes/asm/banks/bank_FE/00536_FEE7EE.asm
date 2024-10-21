@@ -1,0 +1,46 @@
+FE/E7EE: 89 00        BIT #$00
+FE/E7F0: C2 03        REP #$03
+FE/E7F2: 84 00        STY $00
+FE/E7F4: 88           DEY
+FE/E7F5: 90 88        BCC $E77F
+FE/E7F7: 28           PLP
+FE/E7F8: 00 02        BRK $02
+FE/E7FA: 8C 88 02     STY $0288
+FE/E7FD: 02 13        COP $13
+FE/E7FF: 92 04        STA ($04)
+FE/E801: 00 24        BRK $24
+FE/E803: 44 00 40     MVP $00,$40
+FE/E806: 94 18        STY $18,X
+FE/E808: 20 0E 00     JSR $000E
+FE/E80B: 6E 84 4D     ROR $4D84
+FE/E80E: 02 81        COP $81
+FE/E810: 92 11        STA ($11)
+FE/E812: 24 00        BIT $00
+FE/E814: 22 40 40 D0  JSR $D04040
+FE/E818: C4 B0        CPY $B0
+FE/E81A: 88           DEY
+FE/E81B: 01 00        ORA ($00,X)
+FE/E81D: 41 A3        EOR ($A3,X)
+FE/E81F: 0A           ASL
+FE/E820: 48           PHA
+FE/E821: 22 14 01 49  JSR $490114
+FE/E825: 00 40        BRK $40
+FE/E827: 14 14        TRB $14
+FE/E829: 91 81        STA ($81),Y
+FE/E82B: 01 B9        ORA ($B9,X)
+FE/E82D: 01 00        ORA ($00,X)
+FE/E82F: C0 22        CPY #$22
+FE/E831: AA           TAX
+FE/E832: 62 6A 44     PER $FE2C9F
+FE/E835: 5D 04 00     EOR $0004,X
+FE/E838: 5D 10 05     EOR $0510,X
+FE/E83B: 81 80        STA ($80,X)
+FE/E83D: A9 90        LDA #$90
+FE/E83F: 10 21        BPL $E862
+FE/E841: 9A           TXS
+FE/E842: 03 20        ORA $20,S
+FE/E844: 20 41 40     JSR $4041
+FE/E847: 8F 23 80 88  STA $888023
+FE/E84B: FF E0 47 FE  SBC $FE47E0,X
+FE/E84F: 13 D0        ORA ($D0,S),Y
+FE/E851: 40           RTI

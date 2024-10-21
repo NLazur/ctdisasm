@@ -1,0 +1,64 @@
+CE/7220: 72 03        ADC ($03)
+CE/7222: 73 03        ADC ($03,S),Y
+CE/7224: 85 C0        STA $C0
+CE/7226: A8           TAY
+CE/7227: 04 44        TSB $44
+CE/7229: 41 1E        EOR ($1E,X)
+CE/722B: 02 41        COP $41
+CE/722D: 1F 03 33 03  ORA $033303,X
+CE/7231: 41 1E        EOR ($1E,X)
+CE/7233: 04 30        TSB $30
+CE/7235: 05 10        ORA $10
+CE/7237: 36 1B        ROL $1B,X
+CE/7239: 03 85        ORA $85,S
+CE/723B: 70 A8        BVS $71E5
+CE/723D: 03 24        ORA $24,S
+CE/723F: 03 D9        ORA $D9,S
+CE/7241: 30 0C        BMI $724F
+CE/7243: 70 02        BVS $7247
+CE/7245: 04 85        TSB $85
+CE/7247: C0 A8 0A     CPY #$0AA8
+CE/724A: 0D A8 64     ORA $64A8
+CE/724D: 6F 00 F0 80  ADC $80F000
+CE/7251: E0 00 63     CPX #$6300
+CE/7254: 72 A6        ADC ($A6)
+CE/7256: 72 19        ADC ($19)
+CE/7258: 76 FF        ROR $FF,X
+CE/725A: 72 1D        ADC ($1D)
+CE/725C: 73 85        ADC ($85,S),Y
+CE/725E: 09 93 09     ORA #$0993
+CE/7261: 93 09        STA ($09,S),Y
+CE/7263: 72 0D        ADC ($0D)
+CE/7265: 20 01 3D     JSR $3D01
+CE/7268: 00 82        BRK $82
+CE/726A: 00 3F        BRK $3F
+CE/726C: 02 84        COP $84
+CE/726E: 02 45        COP $45
+CE/7270: 0C 72 0D     TSB $0D72
+CE/7273: 0C 06 35     TSB $3506
+CE/7276: 2D 80 02     AND $0280
+CE/7279: C0 20 28     CPY #$2820
+CE/727C: D9 30 27     CMP $2730,Y
+CE/727F: 76 19        ROR $19,X
+CE/7281: 03 22        ORA $22,S
+CE/7283: 10 01        BPL $7286
+CE/7285: 34 00        BIT $00,X
+CE/7287: 12 03        ORA ($03)
+CE/7289: 78           SEI
+CE/728A: 4E 35 02     LSR $0235
+CE/728D: 35 A8        AND $A8,X
+CE/728F: 0C 20 18     TSB $1820
+CE/7292: 06 03        ASL $03
+CE/7294: 36 24        ROL $24,X
+CE/7296: 03 2D        ORA $2D,S
+CE/7298: 80 12        BRA $72AC
+CE/729A: D0 1E        BNE $72BA
+CE/729C: 2A           ROL
+CE/729D: DA           PHX
+CE/729E: 28           PLP
+CE/729F: 23 04        AND $04,S
+CE/72A1: 24 05        BIT $05
+CE/72A3: 2E 01 00     ROL $0001
+CE/72A6: 76 01        ROR $01,X
+CE/72A8: 03 77        ORA $77,S
+CE/72AA: 40           RTI

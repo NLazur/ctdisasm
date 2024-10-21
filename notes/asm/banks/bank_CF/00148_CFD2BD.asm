@@ -1,0 +1,122 @@
+CF/D2BD: A1 6B        LDA ($6B,X)
+CF/D2BF: E1 17        SBC ($17,X)
+CF/D2C1: 23 19        AND $19,S
+CF/D2C3: 23 59        AND $59,S
+CF/D2C5: 23 5B        AND $5B,S
+CF/D2C7: 23 5D        AND $5D,S
+CF/D2C9: 23 5F        AND $5F,S
+CF/D2CB: 23 CD        AND $CD,S
+CF/D2CD: 37 CF        AND [$CF],Y
+CF/D2CF: 37 D1        AND [$D1],Y
+CF/D2D1: 37 D3        AND [$D3],Y
+CF/D2D3: 37 1C        AND [$1C],Y
+CF/D2D5: 20 1C 20     JSR $201C
+CF/D2D8: C5 21        CMP $21
+CF/D2DA: C5 61        CMP $61
+CF/D2DC: B1 16        LDA ($16),Y
+CF/D2DE: B4 16        LDY $16,X
+CF/D2E0: 17 A3        ORA [$A3],Y
+CF/D2E2: 17 E3        ORA [$E3],Y
+CF/D2E4: 79 23 D5     ADC $D523,Y
+CF/D2E7: 37 7D        AND [$7D],Y
+CF/D2E9: 23 7F        AND $7F,S
+CF/D2EB: 23 D7        AND $D7,S
+CF/D2ED: 37 D9        AND [$D9],Y
+CF/D2EF: 37 DB        AND [$DB],Y
+CF/D2F1: 37 DD        AND [$DD],Y
+CF/D2F3: 37 1C        AND [$1C],Y
+CF/D2F5: 20 6B 21     JSR $216B
+CF/D2F8: C5 A1        CMP $A1
+CF/D2FA: C5 E1        CMP $E1
+CF/D2FC: DF 17 E2 17  CMP $17E217,X
+CF/D300: 2D 23 2F     AND $2F23
+CF/D303: 23 31        AND $31,S
+CF/D305: 23 33        AND $33,S
+CF/D307: 23 1C        AND $1C,S
+CF/D309: 20 E5 37     JSR $37E5
+CF/D30C: E7 37        SBC [$37]
+CF/D30E: A5 21        LDA $21
+CF/D310: 1C 20 E9     TRB $E920
+CF/D313: 37 EB        AND [$EB],Y
+CF/D315: 37 1C        AND [$1C],Y
+CF/D317: 20 1C 20     JSR $201C
+CF/D31A: 99 23 9B     STA $9B23,Y
+CF/D31D: 23 1C        AND $1C,S
+CF/D31F: 20 ED 37     JSR $37ED
+CF/D322: EF 37 F1 37  SBC $37F137
+CF/D326: 4F 23 F3 37  EOR $37F323
+CF/D32A: F5 37        SBC $37,X
+CF/D32C: F7 37        SBC [$37],Y
+CF/D32E: 57 23        EOR [$23],Y
+CF/D330: F9 37 FB     SBC $FB37,Y
+CF/D333: 37 FD        AND [$FD],Y
+CF/D335: 37 FF        AND [$FF],Y
+CF/D337: 37 A9        AND [$A9],Y
+CF/D339: 23 AB        AND $AB,S
+CF/D33B: 23 AD        AND $AD,S
+CF/D33D: 23 A5        AND $A5,S
+CF/D33F: 21 01        AND ($01,X)
+CF/D341: 38           SEC
+CF/D342: 03 38        ORA $38,S
+CF/D344: 05 38        ORA $38
+CF/D346: 07 38        ORA [$38]
+CF/D348: 71 23        ADC ($23),Y
+CF/D34A: 09 38        ORA #$38
+CF/D34C: 0B           PHD
+CF/D34D: 38           SEC
+CF/D34E: 0D 38 AF     ORA $AF38
+CF/D351: 23 0F        AND $0F,S
+CF/D353: 38           SEC
+CF/D354: 11 38        ORA ($38),Y
+CF/D356: 13 38        ORA ($38,S),Y
+CF/D358: 1C 20 9D     TRB $9D20
+CF/D35B: 23 9F        AND $9F,S
+CF/D35D: 23 02        AND $02,S
+CF/D35F: A0 15        LDY #$15
+CF/D361: 38           SEC
+CF/D362: 17 38        ORA [$38],Y
+CF/D364: 19 38 1B     ORA $1B38,Y
+CF/D367: 38           SEC
+CF/D368: 1C 20 91     TRB $9120
+CF/D36B: 23 93        AND $93,S
+CF/D36D: 23 30        AND $30,S
+CF/D36F: 20 1C 20     JSR $201C
+CF/D372: 1C 20 1C     TRB $1C20
+CF/D375: 20 1C 20     JSR $201C
+CF/D378: 1C 20 1C     TRB $1C20
+CF/D37B: 20 1C 20     JSR $201C
+CF/D37E: 1C 20 1D     TRB $1D20
+CF/D381: 38           SEC
+CF/D382: 1F 38 21 38  ORA $382138,X
+CF/D386: 23 38        AND $38,S
+CF/D388: 25 38        AND $38
+CF/D38A: 27 38        AND [$38]
+CF/D38C: 25 38        AND $38
+CF/D38E: 27 38        AND [$38]
+CF/D390: 1C 20 29     TRB $2920
+CF/D393: 38           SEC
+CF/D394: 1C 20 1C     TRB $1C20
+CF/D397: 20 1C 20     JSR $201C
+CF/D39A: 1C 20 1C     TRB $1C20
+CF/D39D: 20 1C 20     JSR $201C
+CF/D3A0: 2B           PLD
+CF/D3A1: 38           SEC
+CF/D3A2: 1C 20 2D     TRB $2D20
+CF/D3A5: 38           SEC
+CF/D3A6: 1C 20 2F     TRB $2F20
+CF/D3A9: 38           SEC
+CF/D3AA: 31 38        AND ($38),Y
+CF/D3AC: 2F 38 33 38  AND $383338
+CF/D3B0: 35 38        AND $38,X
+CF/D3B2: 33 38        AND ($38,S),Y
+CF/D3B4: 1C 20 37     TRB $3720
+CF/D3B7: 38           SEC
+CF/D3B8: 1C 20 39     TRB $3920
+CF/D3BB: 38           SEC
+CF/D3BC: 1C 20 3B     TRB $3B20
+CF/D3BF: 38           SEC
+CF/D3C0: 30 E0        BMI $D3A2
+CF/D3C2: 30 A0        BMI $D364
+CF/D3C4: 63 21        ADC $21,S
+CF/D3C6: 63 61        ADC $61,S
+CF/D3C8: 6B           RTL

@@ -1,0 +1,23 @@
+C3/6B2E: 8D 80 21     STA $2180
+C3/6B31: 80 DD        BRA $6B10
+C3/6B33: 86 00        STX $00
+C3/6B35: 4A           LSR
+C3/6B36: C2 21        REP #$21
+C3/6B38: A5 48        LDA $48
+C3/6B3A: 69 20 00     ADC #$0020
+C3/6B3D: 00 29        BRK $29
+C3/6B3F: E0 03        CPX #$03
+C3/6B41: 18           CLC
+C3/6B42: 69 00 48     ADC #$4800
+C3/6B45: 85 8A        STA $8A
+C3/6B47: 48           PHA
+C3/6B48: 83 04        STA $04,S
+C3/6B4A: AD CC 12     LDA $12CC
+C3/6B4D: 09 AD 3E     ORA #$3EAD
+C3/6B50: 2C 04 40     BIT $4004
+C3/6B53: 02 E6        COP $E6
+C3/6B55: 46 60        LSR $60
+C3/6B57: A5 46        LDA $46
+C3/6B59: C0 14 85     CPY #$8514
+C3/6B5C: 00 46        BRK $46
+C3/6B5E: 60           RTS

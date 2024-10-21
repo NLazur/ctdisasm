@@ -1,0 +1,50 @@
+FE/A6D9: 74 12        STZ $12,X
+FE/A6DB: 3F 82 27 82  AND $822782,X
+FE/A6DF: FC 09 21     JSR ($2109,X)
+FE/A6E2: D0 EC        BNE $A6D0
+FE/A6E4: 0C 9E 00     TSB $009E
+FE/A6E7: A0 15 04     LDY #$0415
+FE/A6EA: 01 01        ORA ($01,X)
+FE/A6EC: 16 0D        ASL $0D,X
+FE/A6EE: EC 2C FE     CPX $FE2C
+FE/A6F1: 12 E0        ORA ($E0)
+FE/A6F3: 65 32        ADC $32
+FE/A6F5: 16 01        ASL $01,X
+FE/A6F7: 8F 11 07 07  STA $070711
+FE/A6FB: 78           SEI
+FE/A6FC: 27 B4        AND [$B4]
+FE/A6FE: 24 1F        BIT $1F
+FE/A700: 08           PHP
+FE/A701: 18           CLC
+FE/A702: 07 06        ORA [$06]
+FE/A704: 12 48        ORA ($48)
+FE/A706: FD F9 FF     SBC $FFF9,X
+FE/A709: FF 10 E3 E5  SBC $E5E310,X
+FE/A70D: 3D 3E 90     AND $903E,X
+FE/A710: 07 08        ORA [$08]
+FE/A712: 08           PHP
+FE/A713: 14 04        TRB $04
+FE/A715: 00 08        BRK $08
+FE/A717: FC 13 18     JSR ($1813,X)
+FE/A71A: 7F 40 0F 08  ADC $080F40,X
+FE/A71E: 01 0F        ORA ($0F,X)
+FE/A720: 00 14        BRK $14
+FE/A722: 08           PHP
+FE/A723: 08           PHP
+FE/A724: 10 64        BPL $A78A
+FE/A726: A9 2D        LDA #$2D
+FE/A728: 00 F7        BRK $F7
+FE/A72A: E5 6D        SBC $6D
+FE/A72C: FE E9 FD     INC $FDE9,X
+FE/A72F: 36 6F        ROL $6F,X
+FE/A731: 4A           LSR
+FE/A732: 09 66        ORA #$66
+FE/A734: 07 F8        ORA [$F8]
+FE/A736: 7A           PLY
+FE/A737: 04 FA        TSB $FA
+FE/A739: 01 02        ORA ($02,X)
+FE/A73B: 14 80        TRB $80
+FE/A73D: 03 31        ORA $31,S
+FE/A73F: 11 08        ORA ($08),Y
+FE/A741: 0B           PHD
+FE/A742: 40           RTI

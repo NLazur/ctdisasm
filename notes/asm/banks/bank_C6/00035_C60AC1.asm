@@ -1,0 +1,45 @@
+C6/0AC1: B9 7B F9     LDA $F97B,Y
+C6/0AC4: AC FC 01     LDY $01FC
+C6/0AC7: 01 10        ORA ($10,X)
+C6/0AC9: 00 00        BRK $00
+C6/0ACB: 05 04        ORA $04
+C6/0ACD: 27 27        AND [$27]
+C6/0ACF: FE FF FE     INC $FEFF,X
+C6/0AD2: 87 00        STA [$00]
+C6/0AD4: FB           XCE
+C6/0AD5: 07 02        ORA [$02]
+C6/0AD7: 00 0F        BRK $0F
+C6/0AD9: 09 03 06     ORA #$0603
+C6/0ADC: 00 06        BRK $06
+C6/0ADE: 00 08        BRK $08
+C6/0AE0: 0E 0E 08     ASL $080E
+C6/0AE3: 0B           PHD
+C6/0AE4: 0C 28 0E     TSB $0E28
+C6/0AE7: 0E 07 7B     ASL $7B07
+C6/0AEA: 05 08        ORA $08
+C6/0AEC: 02 00        COP $00
+C6/0AEE: 00 0F        BRK $0F
+C6/0AF0: 2C 01 0E     BIT $0E01
+C6/0AF3: 02 10        COP $10
+C6/0AF5: A8           TAY
+C6/0AF6: 13 40        ORA ($40,S),Y
+C6/0AF8: 2B           PLD
+C6/0AF9: 04 00        TSB $00
+C6/0AFB: E0 20 E0     CPX #$E020
+C6/0AFE: 00 20        BRK $20
+C6/0B00: E0 E0 F2     CPX #$F2E0
+C6/0B03: 00 80        BRK $80
+C6/0B05: 80 08        BRA $0B0F
+C6/0B07: C0 C0 E0     CPY #$E0C0
+C6/0B0A: 61 02        ADC ($02,X)
+C6/0B0C: E0 20 F0     CPX #$F020
+C6/0B0F: 10 00        BPL $0B11
+C6/0B11: E0 20 09     CPX #$0920
+C6/0B14: 00 0E        BRK $0E
+C6/0B16: 01 09        ORA ($09,X)
+C6/0B18: 00 00        BRK $00
+C6/0B1A: 19 10 16     ORA $1610,Y
+C6/0B1D: 15 05        ORA $05,X
+C6/0B1F: 00 0D        BRK $0D
+C6/0B21: 08           PHP
+C6/0B22: 40           RTI

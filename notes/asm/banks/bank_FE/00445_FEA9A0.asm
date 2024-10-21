@@ -1,0 +1,127 @@
+FE/A9A0: 38           SEC
+FE/A9A1: 8E 37 CA     STX $CA37
+FE/A9A4: 10 46        BPL $A9EC
+FE/A9A6: 00 AC        BRK $AC
+FE/A9A8: 10 38        BPL $A9E2
+FE/A9AA: 38           SEC
+FE/A9AB: 3B           TSC
+FE/A9AC: 02 00        COP $00
+FE/A9AE: 00 3A        BRK $3A
+FE/A9B0: 36 3B        ROL $3B,X
+FE/A9B2: 38           SEC
+FE/A9B3: 3D 39 3C     AND $3C39,X
+FE/A9B6: 3C 42 3C     BIT $3C42,X
+FE/A9B9: 37 00        AND [$00],Y
+FE/A9BB: 39 3D 3C     AND $3C3D,Y
+FE/A9BE: 3D 43 10     AND $1043,X
+FE/A9C1: 3D 7E 3D     AND $3D7E,X
+FE/A9C4: 59 10 02     EOR $0210,Y
+FE/A9C7: 00 80        BRK $80
+FE/A9C9: D0 7B        BNE $AA46
+FE/A9CB: 10 38        BPL $AA05
+FE/A9CD: 00 3A        BRK $3A
+FE/A9CF: 00 3A        BRK $3A
+FE/A9D1: A2 3A 44     LDX #$443A
+FE/A9D4: 10 39        BPL $AA0F
+FE/A9D6: 38           SEC
+FE/A9D7: 39 08 10     AND $1008,Y
+FE/A9DA: 37 40        AND [$40],Y
+FE/A9DC: 00 80        BRK $80
+FE/A9DE: 3A           DEC
+FE/A9DF: 36 37        ROL $37,X
+FE/A9E1: 37 37        AND [$37],Y
+FE/A9E3: 3C 3B 3A     BIT $3A3B,X
+FE/A9E6: 00 08        BRK $08
+FE/A9E8: 3D 37 37     AND $3737,X
+FE/A9EB: 49 00        EOR #$00
+FE/A9ED: 39 3A 3D     AND $3D3A,Y
+FE/A9F0: 36 10        ROL $10,X
+FE/A9F2: 3A           DEC
+FE/A9F3: 49 09        EOR #$09
+FE/A9F5: 09 CC        ORA #$CC
+FE/A9F7: 00 08        BRK $08
+FE/A9F9: 08           PHP
+FE/A9FA: 49 08        EOR #$08
+FE/A9FC: 49 47        EOR #$47
+FE/A9FE: 3C BF 01     BIT $01BF,X
+FE/AA01: 08           PHP
+FE/AA02: 47 49        EOR [$49]
+FE/AA04: 49 04        EOR #$04
+FE/AA06: 49 3C        EOR #$3C
+FE/AA08: 0A           ASL
+FE/AA09: 00 49        BRK $49
+FE/AA0B: 47 49        EOR [$49]
+FE/AA0D: 42 42        WDM $42
+FE/AA0F: 23 08        AND $08,S
+FE/AA11: 20 01 10     JSR $1001
+FE/AA14: 07 07        ORA [$07]
+FE/AA16: 47 11        EOR [$11]
+FE/AA18: 00 47        BRK $47
+FE/AA1A: 49 CC        EOR #$CC
+FE/AA1C: 09 07        ORA #$07
+FE/AA1E: 1F 00 1B 00  ORA $001B00,X
+FE/AA22: 49 09        EOR #$09
+FE/AA24: 05 10        ORA $10
+FE/AA26: 2C 00 CF     BIT $CF00
+FE/AA29: 7A           PLY
+FE/AA2A: 01 7B        ORA ($7B,X)
+FE/AA2C: 21 78        AND ($78,X)
+FE/AA2E: 41 70        EOR ($70,X)
+FE/AA30: 71 36        ADC ($36),Y
+FE/AA32: 3C 68 11     BIT $1168,X
+FE/AA35: 96 01        STX $01,Y
+FE/AA37: 06 3C        ASL $3C
+FE/AA39: 78           SEI
+FE/AA3A: 01 9D        ORA ($9D,X)
+FE/AA3C: 01 37        ORA ($37,X)
+FE/AA3E: 39 3B 3F     AND $3F3B,Y
+FE/AA41: 3C F9 D5     BIT $D5F9,X
+FE/AA44: 00 36        BRK $36
+FE/AA46: 37 08        AND [$08],Y
+FE/AA48: 00 B5        BRK $B5
+FE/AA4A: 21 8C        AND ($8C,X)
+FE/AA4C: 00 81        BRK $81
+FE/AA4E: 01 A0        ORA ($A0,X)
+FE/AA50: 13 FF        ORA ($FF,S),Y
+FE/AA52: E3 21        SBC $21,S
+FE/AA54: 06 40        ASL $40
+FE/AA56: E7 31        SBC [$31]
+FE/AA58: 6A           ROR
+FE/AA59: 12 E3        ORA ($E3)
+FE/AA5B: 01 B8        ORA ($B8,X)
+FE/AA5D: 13 D6        ORA ($D6,S),Y
+FE/AA5F: 03 92        ORA $92,S
+FE/AA61: 13 5F        ORA ($5F,S),Y
+FE/AA63: 28           PLP
+FE/AA64: 02 63        COP $63
+FE/AA66: 23 14        AND $14,S
+FE/AA68: 10 A0        BPL $AA0A
+FE/AA6A: 43 6F        EOR $6F,S
+FE/AA6C: 13 0E        ORA ($0E,S),Y
+FE/AA6E: D6 33        DEC $33,X
+FE/AA70: 0E DE 0D     ASL $0DDE
+FE/AA73: CF 13 10 20  CMP $201013
+FE/AA77: D5 03        CMP $03,X
+FE/AA79: A8           TAY
+FE/AA7A: 03 01        ORA $01,S
+FE/AA7C: DC 03 AB     JMP [$AB03]
+FE/AA7F: 03 5F        ORA $5F,S
+FE/AA81: A0 03 C1     LDY #$C103
+FE/AA84: 03 5C        ORA $5C,S
+FE/AA86: 14 15        TRB $15
+FE/AA88: 20 53 74     JSR $7453
+FE/AA8B: 05 5D        ORA $5D
+FE/AA8D: 34 02        BIT $02,X
+FE/AA8F: 1E 04 CE     ASL $CE04,X
+FE/AA92: 13 99        ORA ($99,S),Y
+FE/AA94: 23 58        AND $58,S
+FE/AA96: 43 D9        EOR $D9,S
+FE/AA98: 03 03        ORA $03,S
+FE/AA9A: 02 04        COP $04
+FE/AA9C: 13 BA        ORA ($BA,S),Y
+FE/AA9E: 13 89        ORA ($89,S),Y
+FE/AAA0: 04 05        TSB $05
+FE/AAA2: 05 0C        ORA $0C
+FE/AAA4: 00 05        BRK $05
+FE/AAA6: 06 06        ASL $06
+FE/AAA8: 40           RTI

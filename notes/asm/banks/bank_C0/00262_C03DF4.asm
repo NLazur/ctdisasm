@@ -1,0 +1,29 @@
+C0/3DF4: BB           TYX
+C0/3DF5: E8           INX
+C0/3DF6: C2 20        REP #$20
+C0/3DF8: BF 01 20 7F  LDA $7F2001,X
+C0/3DFC: 85 DB        STA $DB
+C0/3DFE: E8           INX
+C0/3DFF: E8           INX
+C0/3E00: E2 20        SEP #$20
+C0/3E02: BF 01 20 7F  LDA $7F2001,X
+C0/3E06: 85 D9        STA $D9
+C0/3E08: E8           INX
+C0/3E09: BF 01 20 7F  LDA $7F2001,X
+C0/3E0D: 8D 4D 1D     STA $1D4D
+C0/3E10: A5 D9        LDA $D9
+C0/3E12: 89 01        BIT #$01
+C0/3E14: F0 05        BEQ $3E1B
+C0/3E16: A4 DB        LDY $DB
+C0/3E18: 8C 24 1D     STY $1D24
+C0/3E1B: 89 02        BIT #$02
+C0/3E1D: F0 05        BEQ $3E24
+C0/3E1F: A4 DB        LDY $DB
+C0/3E21: 8C 26 1D     STY $1D26
+C0/3E24: 89 04        BIT #$04
+C0/3E26: F0 05        BEQ $3E2D
+C0/3E28: A4 DB        LDY $DB
+C0/3E2A: 8C 28 1D     STY $1D28
+C0/3E2D: E8           INX
+C0/3E2E: 38           SEC
+C0/3E2F: 60           RTS

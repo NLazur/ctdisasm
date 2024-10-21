@@ -1,0 +1,32 @@
+FE/5438: 04 F8        TSB $F8
+FE/543A: 00 70        BRK $70
+FE/543C: 92 30        STA ($30)
+FE/543E: 27 80        AND [$80]
+FE/5440: 03 04        ORA $04,S
+FE/5442: 33 B2        AND ($B2,S),Y
+FE/5444: 00 03        BRK $03
+FE/5446: FD 01 01     SBC $0101,X
+FE/5449: 47 80        EOR [$80]
+FE/544B: FA           PLX
+FE/544C: 00 FF        BRK $FF
+FE/544E: 02 FF        COP $FF
+FE/5450: 81 3F        STA ($3F,X)
+FE/5452: 34 40        BIT $40,X
+FE/5454: 3E 4C 01     ROL $014C,X
+FE/5457: 0F 1D 00 B6  ORA $B6001D
+FE/545B: 11 81        ORA ($81),Y
+FE/545D: 7E 00 40     ROR $4000,X
+FE/5460: 3F 20 1F 10  AND $101F20,X
+FE/5464: 0F 08 07 06  ORA $060708
+FE/5468: 04 11        TSB $11
+FE/546A: 00 C2        BRK $C2
+FE/546C: 11 40        ORA ($40),Y
+FE/546E: 00 80        BRK $80
+FE/5470: 20 40 10     JSR $1040
+FE/5473: 10 B8        BPL $542D
+FE/5475: 08           PHP
+FE/5476: C8           INY
+FE/5477: 6A           ROR
+FE/5478: 71 C0        ADC ($C0),Y
+FE/547A: 00 E0        BRK $E0
+FE/547C: 40           RTI

@@ -1,0 +1,127 @@
+C0/74E8: 0B           PHD
+C0/74E9: C2 20        REP #$20
+C0/74EB: A9 00 1D     LDA #$1D00
+C0/74EE: 5B           TCD
+C0/74EF: 64 9B        STZ $9B
+C0/74F1: 64 8B        STZ $8B
+C0/74F3: 64 8D        STZ $8D
+C0/74F5: 80 EA        BRA $74E1
+C0/74F7: 0B           PHD
+C0/74F8: C2 20        REP #$20
+C0/74FA: A9 00 1D     LDA #$1D00
+C0/74FD: 5B           TCD
+C0/74FE: 64 9D        STZ $9D
+C0/7500: 64 8F        STZ $8F
+C0/7502: 64 91        STZ $91
+C0/7504: 80 DB        BRA $74E1
+C0/7506: A5 1A        LDA $1A
+C0/7508: 18           CLC
+C0/7509: 69 08 85     ADC #$8508
+C0/750C: 52 AD        EOR ($AD)
+C0/750E: 02 01        COP $01
+C0/7510: C5 52        CMP $52
+C0/7512: F0 0E        BEQ $7522
+C0/7514: B0 18        BCS $752E
+C0/7516: A5 1A        LDA $1A
+C0/7518: 0A           ASL
+C0/7519: 85 0A        STA $0A
+C0/751B: 18           CLC
+C0/751C: 69 20 85     ADC #$8520
+C0/751F: 0C 80 30     TSB $3080
+C0/7522: A5 1A        LDA $1A
+C0/7524: 0A           ASL
+C0/7525: 85 0A        STA $0A
+C0/7527: 18           CLC
+C0/7528: 69 20 85     ADC #$8520
+C0/752B: 0C 80 24     TSB $2480
+C0/752E: 38           SEC
+C0/752F: E9 08 0A     SBC #$0A08
+C0/7532: 85 0A        STA $0A
+C0/7534: A5 1B        LDA $1B
+C0/7536: 38           SEC
+C0/7537: E9 08 CD     SBC #$CD08
+C0/753A: 02 01        COP $01
+C0/753C: B0 0D        BCS $754B
+C0/753E: A5 1B        LDA $1B
+C0/7540: 1A           INC
+C0/7541: 0A           ASL
+C0/7542: 85 0C        STA $0C
+C0/7544: 38           SEC
+C0/7545: E9 20 85     SBC #$8520
+C0/7548: 0A           ASL
+C0/7549: 80 07        BRA $7552
+C0/754B: A5 0A        LDA $0A
+C0/754D: 18           CLC
+C0/754E: 69 20 85     ADC #$8520
+C0/7551: 0C 60 A5     TSB $A560
+C0/7554: 1C 18 69     TRB $6918
+C0/7557: 08           PHP
+C0/7558: 85 52        STA $52
+C0/755A: AD 03 01     LDA $0103
+C0/755D: C5 52        CMP $52
+C0/755F: F0 0E        BEQ $756F
+C0/7561: B0 18        BCS $757B
+C0/7563: A5 1C        LDA $1C
+C0/7565: 0A           ASL
+C0/7566: 85 0E        STA $0E
+C0/7568: 18           CLC
+C0/7569: 69 1C 85     ADC #$851C
+C0/756C: 10 80        BPL $74EE
+C0/756E: 30 A5        BMI $7515
+C0/7570: 1C 0A 85     TRB $850A
+C0/7573: 0E 18 69     ASL $6918
+C0/7576: 1C 85 10     TRB $1085
+C0/7579: 80 24        BRA $759F
+C0/757B: 38           SEC
+C0/757C: E9 08 0A     SBC #$0A08
+C0/757F: 85 0E        STA $0E
+C0/7581: A5 1D        LDA $1D
+C0/7583: 38           SEC
+C0/7584: E9 06 CD     SBC #$CD06
+C0/7587: 03 01        ORA $01,S
+C0/7589: B0 0D        BCS $7598
+C0/758B: A5 1D        LDA $1D
+C0/758D: 1A           INC
+C0/758E: 0A           ASL
+C0/758F: 85 10        STA $10
+C0/7591: 38           SEC
+C0/7592: E9 1C 85     SBC #$851C
+C0/7595: 0E 80 07     ASL $0780
+C0/7598: A5 0E        LDA $0E
+C0/759A: 18           CLC
+C0/759B: 69 1C 85     ADC #$851C
+C0/759E: 10 60        BPL $7600
+C0/75A0: C2 20        REP #$20
+C0/75A2: 8B           PHB
+C0/75A3: A2 00        LDX #$00
+C0/75A5: 00 A0        BRK $A0
+C0/75A7: 00 C8        BRK $C8
+C0/75A9: A9 1F 00     LDA #$001F
+C0/75AC: 54 7E D2     MVN $7E,$D2
+C0/75AF: A2 00        LDX #$00
+C0/75B1: C8           INY
+C0/75B2: A9 1F 00     LDA #$001F
+C0/75B5: 54 7E 7E     MVN $7E,$7E
+C0/75B8: A2 00        LDX #$00
+C0/75BA: C8           INY
+C0/75BB: A9 3F 00     LDA #$003F
+C0/75BE: 54 7E 7E     MVN $7E,$7E
+C0/75C1: A2 00        LDX #$00
+C0/75C3: C8           INY
+C0/75C4: A9 7F 00     LDA #$007F
+C0/75C7: 54 7E 7E     MVN $7E,$7E
+C0/75CA: A2 00        LDX #$00
+C0/75CC: C8           INY
+C0/75CD: A9 FF 00     LDA #$00FF
+C0/75D0: 54 7E 7E     MVN $7E,$7E
+C0/75D3: A2 00        LDX #$00
+C0/75D5: C8           INY
+C0/75D6: A9 FF 01     LDA #$01FF
+C0/75D9: 54 7E 7E     MVN $7E,$7E
+C0/75DC: A2 00        LDX #$00
+C0/75DE: C8           INY
+C0/75DF: A9 FF 03     LDA #$03FF
+C0/75E2: 54 7E 7E     MVN $7E,$7E
+C0/75E5: AB           PLB
+C0/75E6: E2 20        SEP #$20
+C0/75E8: 60           RTS

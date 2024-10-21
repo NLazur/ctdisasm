@@ -1,0 +1,2 @@
+C6/D39B: 1E 60 1D     ASL $1D60,X
+C6/D39E: 60           RTS

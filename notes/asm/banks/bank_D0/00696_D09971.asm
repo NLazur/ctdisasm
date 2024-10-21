@@ -1,0 +1,131 @@
+D0/9971: E0 00        CPX #$00
+D0/9973: 00 00        BRK $00
+D0/9975: 80 50        BRA $99C7
+D0/9977: C8           INY
+D0/9978: 00 C0        BRK $C0
+D0/997A: 00 00        BRK $00
+D0/997C: E0 00        CPX #$00
+D0/997E: 80 38        BRA $99B8
+D0/9980: 26 1E        ROL $1E
+D0/9982: A1 6F        LDA ($6F,X)
+D0/9984: 00 00        BRK $00
+D0/9986: 05 03        ORA $03
+D0/9988: 00 00        BRK $00
+D0/998A: 99 78 00     STA $0078,Y
+D0/998D: 00 02        BRK $02
+D0/998F: 01 01        ORA ($01,X)
+D0/9991: 1F 00 00 00  ORA $000000,X
+D0/9995: 07 00        ORA [$00]
+D0/9997: 00 66        BRK $66
+D0/9999: 1E C0 C0     ASL $C0C0,X
+D0/999C: 00 00        BRK $00
+D0/999E: 0E 7E 00     ASL $007E
+D0/99A1: 00 98        BRK $98
+D0/99A3: 78           SEI
+D0/99A4: 00 00        BRK $00
+D0/99A6: 87 BF        STA [$BF]
+D0/99A8: FE C0 00     INC $00C0,X
+D0/99AB: FE 00 F8     INC $F800,X
+D0/99AE: 00 7F        BRK $7F
+D0/99B0: 0C 11 00     TSB $0011
+D0/99B3: 00 0C        BRK $0C
+D0/99B5: 11 00        ORA ($00),Y
+D0/99B7: 00 00        BRK $00
+D0/99B9: 00 4C        BRK $4C
+D0/99BB: 71 19        ADC ($19),Y
+D0/99BD: 22 00 00 1E  JSR $1E0000
+D0/99C1: 00 1E        BRK $1E
+D0/99C3: 00 00        BRK $00
+D0/99C5: 7E 3C 00     ROR $003C,X
+D0/99C8: 98           TYA
+D0/99C9: 46 00        LSR $00
+D0/99CB: 00 98        BRK $98
+D0/99CD: 46 00        LSR $00
+D0/99CF: 00 00        BRK $00
+D0/99D1: 00 9B        BRK $9B
+D0/99D3: 47 30        EOR [$30]
+D0/99D5: 8C 00 00     STY $0000
+D0/99D8: 3E 00 3E     ROL $3E00,X
+D0/99DB: 00 00        BRK $00
+D0/99DD: 3F 7C 00 00  AND $00007C,X
+D0/99E1: 01 00        ORA ($00,X)
+D0/99E3: 03 01        ORA $01,S
+D0/99E5: 07 00        ORA [$00]
+D0/99E7: 02 00        COP $00
+D0/99E9: 03 03        ORA $03,S
+D0/99EB: 01 02        ORA ($02,X)
+D0/99ED: 00 02        BRK $02
+D0/99EF: 01 00        ORA ($00,X)
+D0/99F1: 01 03        ORA ($03,X)
+D0/99F3: 05 00        ORA $00
+D0/99F5: 03 03        ORA $03,S
+D0/99F7: 02 02        COP $02
+D0/99F9: 08           PHP
+D0/99FA: 02 05        COP $05
+D0/99FC: 03 00        ORA $00,S
+D0/99FE: 06 05        ASL $05
+D0/9A00: 06 04        ASL $04
+D0/9A02: 02 00        COP $00
+D0/9A04: 00 02        BRK $02
+D0/9A06: 03 02        ORA $02,S
+D0/9A08: 80 60        BRA $9A6A
+D0/9A0A: 80 40        BRA $9A4C
+D0/9A0C: 00 C0        BRK $C0
+D0/9A0E: 00 80        BRK $80
+D0/9A10: 00 00        BRK $00
+D0/9A12: 00 00        BRK $00
+D0/9A14: 00 00        BRK $00
+D0/9A16: 00 00        BRK $00
+D0/9A18: 01 00        ORA ($00,X)
+D0/9A1A: 00 03        BRK $03
+D0/9A1C: 02 00        COP $00
+D0/9A1E: 00 02        BRK $02
+D0/9A20: 00 03        BRK $03
+D0/9A22: 01 00        ORA ($00,X)
+D0/9A24: 00 00        BRK $00
+D0/9A26: 00 00        BRK $00
+D0/9A28: 00 00        BRK $00
+D0/9A2A: 00 00        BRK $00
+D0/9A2C: 10 00        BPL $9A2E
+D0/9A2E: 00 10        BRK $10
+D0/9A30: 00 10        BRK $10
+D0/9A32: 00 80        BRK $80
+D0/9A34: 80 00        BRA $9A36
+D0/9A36: 00 80        BRK $80
+D0/9A38: 99 E2 0C     STA $0CE2,Y
+D0/9A3B: 11 00        ORA ($00),Y
+D0/9A3D: 00 00        BRK $00
+D0/9A3F: 00 4C        BRK $4C
+D0/9A41: 71 00        ADC ($00),Y
+D0/9A43: 00 19        BRK $19
+D0/9A45: 22 00 00 FC  JSR $FC0000
+D0/9A49: 1E 00 00     ASL $0000,X
+D0/9A4C: 7E 00 3C     ROR $3C00,X
+D0/9A4F: 00 36        BRK $36
+D0/9A51: 8E 98 46     STX $4698
+D0/9A54: 00 00        BRK $00
+D0/9A56: 00 00        BRK $00
+D0/9A58: 9B           TXY
+D0/9A59: 47 00        EOR [$00]
+D0/9A5B: 00 30        BRK $30
+D0/9A5D: 8C 00 00     STY $0000
+D0/9A60: 7E 3E 00     ROR $003E,X
+D0/9A63: 00 3F        BRK $3F
+D0/9A65: 00 7C        BRK $7C
+D0/9A67: 00 03        BRK $03
+D0/9A69: 01 02        ORA ($02,X)
+D0/9A6B: 01 00        ORA ($00,X)
+D0/9A6D: 00 00        BRK $00
+D0/9A6F: 01 01        ORA ($01,X)
+D0/9A71: 01 00        ORA ($00,X)
+D0/9A73: 01 00        ORA ($00,X)
+D0/9A75: 01 01        ORA ($01,X)
+D0/9A77: 00 03        BRK $03
+D0/9A79: 03 03        ORA $03,S
+D0/9A7B: 02 03        COP $03
+D0/9A7D: 03 03        ORA $03,S
+D0/9A7F: 03 20        ORA $20,S
+D0/9A81: E0 A0        CPX #$A0
+D0/9A83: E0 A0        CPX #$A0
+D0/9A85: A0 20        LDY #$20
+D0/9A87: 60           RTS

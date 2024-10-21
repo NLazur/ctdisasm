@@ -1,0 +1,140 @@
+FE/C152: 93 0F        STA ($0F,S),Y
+FE/C154: 1B           TCS
+FE/C155: 20 61 12     JSR $1261
+FE/C158: 14 40        TRB $40
+FE/C15A: 14 64        TRB $64
+FE/C15C: 4C EF 03     JMP $03EF
+FE/C15F: 61 63        ADC ($63,X)
+FE/C161: 62 10 4D     PER $FE0E74
+FE/C164: 4B           PHK
+FE/C165: 62 61 CE     PER $FE8FC9
+FE/C168: 03 63        ORA $63,S
+FE/C16A: 63 65        ADC $65,S
+FE/C16C: 1A           INC
+FE/C16D: 65 09        ADC $09
+FE/C16F: 00 11        BRK $11
+FE/C171: 4D 00 16     EOR $1600
+FE/C174: 08           PHP
+FE/C175: 61 17        ADC ($17,X)
+FE/C177: 62 08 63     PER $FE2482
+FE/C17A: 61 0A        ADC ($0A,X)
+FE/C17C: 5D 20 64     EOR $6420,X
+FE/C17F: 61 0A        ADC ($0A,X)
+FE/C181: 08           PHP
+FE/C182: 38           SEC
+FE/C183: 0A           ASL
+FE/C184: 64 65        STZ $65
+FE/C186: 8D 08 E9     STA $E908
+FE/C189: 0F 09 00 65  ORA $650009
+FE/C18D: 61 DD        ADC ($DD,X)
+FE/C18F: A7 08        LDA [$08]
+FE/C191: 65 C7        ADC $C7
+FE/C193: 03 69        ORA $69,S
+FE/C195: 04 0D        TSB $0D
+FE/C197: 04 4B        TSB $4B
+FE/C199: F3 27        SBC ($27,S),Y
+FE/C19B: 7F 04 C8 11  ADC $11C804,X
+FE/C19F: 65 62        ADC $62
+FE/C1A1: 07 10        ORA [$10]
+FE/C1A3: 65 17        ADC $17
+FE/C1A5: 08           PHP
+FE/C1A6: 00 0D        BRK $0D
+FE/C1A8: 00 BB        BRK $BB
+FE/C1AA: 0A           ASL
+FE/C1AB: 08           PHP
+FE/C1AC: 49 00        EOR #$00
+FE/C1AE: 17 11        ORA [$11],Y
+FE/C1B0: 18           CLC
+FE/C1B1: 7B           TDC
+FE/C1B2: 10 29        BPL $C1DD
+FE/C1B4: 08           PHP
+FE/C1B5: 0A           ASL
+FE/C1B6: AF 10 C5 97  LDA $97C510
+FE/C1BA: 00 0A        BRK $0A
+FE/C1BC: 3B           TSC
+FE/C1BD: 2C 51 53     BIT $5351
+FE/C1C0: 52 C7        EOR ($C7)
+FE/C1C2: 38           SEC
+FE/C1C3: 82 03 F9     BRL $FEBAC9
+FE/C1C6: 05 2C        ORA $2C
+FE/C1C8: 56 52        LSR $52,X
+FE/C1CA: 45 2C        EOR $2C
+FE/C1CC: 72 01        ADC ($01)
+FE/C1CE: 46 2C        LSR $2C
+FE/C1D0: E6 07        INC $07
+FE/C1D2: 15 1F        ORA $1F,X
+FE/C1D4: 1D 2B 0C     ORA $0C2B,X
+FE/C1D7: 5D AD 1D     EOR $1DAD,X
+FE/C1DA: D9 17 A0     CMP $A017,Y
+FE/C1DD: 12 58        ORA ($58)
+FE/C1DF: 58           CLI
+FE/C1E0: 52 81        EOR ($81)
+FE/C1E2: CD 03 59     CMP $5903
+FE/C1E5: 14 59        TRB $59
+FE/C1E7: 58           CLI
+FE/C1E8: 57 59        EOR [$59],Y
+FE/C1EA: CC 13 41     CPY $4113
+FE/C1ED: 2B           PLD
+FE/C1EE: 16 53        ASL $53,X
+FE/C1F0: 52 53        EOR ($53)
+FE/C1F2: 58           CLI
+FE/C1F3: 53 32        EOR ($32,S),Y
+FE/C1F5: 06 58        ASL $58
+FE/C1F7: 22 53 F9 07  JSR $07F953
+FE/C1FB: 5D 5A 53     EOR $535A,X
+FE/C1FE: 5E 06 5A     LSR $5A06,X
+FE/C201: 5D 04 51     EOR $5104,X
+FE/C204: 54 08 00     MVN $08,$00
+FE/C207: 5D 5D 52     EOR $525D,X
+FE/C20A: 58           CLI
+FE/C20B: 56 B6        LSR $B6,X
+FE/C20D: 53 48        EOR ($48,S),Y
+FE/C20F: 06 AA        ASL $AA
+FE/C211: 09 11        ORA #$11
+FE/C213: 11 10        ORA ($10),Y
+FE/C215: 86 02        STX $02
+FE/C217: 57 2B        EOR [$2B],Y
+FE/C219: 20 55 E9     JSR $E955
+FE/C21C: 11 5D        ORA ($5D),Y
+FE/C21E: C5 02        CMP $02
+FE/C220: 58           CLI
+FE/C221: 9D 0D 5D     STA $5D0D,X
+FE/C224: 59 12 58     EOR $5812,Y
+FE/C227: A6 5F        LDX $5F
+FE/C229: B3 02        LDA ($02,S),Y
+FE/C22B: C3 12        CMP $12,S
+FE/C22D: 58           CLI
+FE/C22E: 59 C9 12     EOR $12C9,Y
+FE/C231: 11 A4        ORA ($A4),Y
+FE/C233: 0C 45 C2     TSB $C245
+FE/C236: 02 5B        COP $5B
+FE/C238: B0 13        BCS $C24D
+FE/C23A: 58           CLI
+FE/C23B: 5A           PHY
+FE/C23C: 14 8B        TRB $8B
+FE/C23E: 06 5B        ASL $5B
+FE/C240: 04 5D        TSB $5D
+FE/C242: 54 0D 20     MVN $0D,$20
+FE/C245: 18           CLC
+FE/C246: 5D 5F 58     EOR $585F,X
+FE/C249: 14 8A        TRB $8A
+FE/C24B: 58           CLI
+FE/C24C: 9C 16 11     STZ $1116
+FE/C24F: 74 08        STZ $08,X
+FE/C251: 18           CLC
+FE/C252: 5A           PHY
+FE/C253: 18           CLC
+FE/C254: 18           CLC
+FE/C255: 14 90        TRB $90
+FE/C257: 5D 19 5A     EOR $5A19,X
+FE/C25A: 19 DB 03     ORA $03DB,Y
+FE/C25D: 59 18 DC     EOR $DC18,Y
+FE/C260: 0C C1 23     TSB $23C1
+FE/C263: 00 58        BRK $58
+FE/C265: 58           CLI
+FE/C266: 19 5D 5D     ORA $5D5D,Y
+FE/C269: 8B           PHB
+FE/C26A: 00 10        BRK $10
+FE/C26C: 0A           ASL
+FE/C26D: FF C1 10 01  SBC $0110C1,X
+FE/C271: 40           RTI

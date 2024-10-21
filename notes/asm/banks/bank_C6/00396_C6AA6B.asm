@@ -1,0 +1,127 @@
+C6/AA6B: C0 C0 25     CPY #$25C0
+C6/AA6E: 04 EE        TSB $EE
+C6/AA70: A0 06 19     LDY #$1906
+C6/AA73: 25 01        AND $01
+C6/AA75: 83 1B        STA $1B,S
+C6/AA77: 0E 45 02     ASL $0245
+C6/AA7A: C2 E1        REP #$E1
+C6/AA7C: C1 C1        CMP ($C1,X)
+C6/AA7E: 12 67        ORA ($67)
+C6/AA80: 0D 87 BF     ORA $BF87
+C6/AA83: F8           SED
+C6/AA84: 82 7F 3D     BRL $C6E806
+C6/AA87: 0D 12 14     ORA $1412
+C6/AA8A: 04 25        TSB $25
+C6/AA8C: 16 01        ASL $01,X
+C6/AA8E: A0 1B A1     LDY #$A11B
+C6/AA91: 53 19        EOR ($19,S),Y
+C6/AA93: 14 58        TRB $58
+C6/AA95: 07 08        ORA [$08]
+C6/AA97: A8           TAY
+C6/AA98: 18           CLC
+C6/AA99: 21 7F        AND ($7F,X)
+C6/AA9B: 03 82        ORA $82,S
+C6/AA9D: 83 12        STA $12,S
+C6/AA9F: 22 6C 0B 50  JSR $500B6C
+C6/AAA3: C2 38        REP #$38
+C6/AAA5: 12 12        ORA ($12)
+C6/AAA7: 33 32        AND ($32,S),Y
+C6/AAA9: 09 01 F8     ORA #$F801
+C6/AAAC: 63 8E        ADC $8E,S
+C6/AAAE: 12 24        ORA ($24)
+C6/AAB0: 08           PHP
+C6/AAB1: 14 04        TRB $04
+C6/AAB3: 06 9A        ASL $9A
+C6/AAB5: 02 76        COP $76
+C6/AAB7: 77 12        ADC [$12],Y
+C6/AAB9: 0C 97 C9     TSB $C997
+C6/AABC: 00 7F        BRK $7F
+C6/AABE: 09 E1 0D     ORA #$0DE1
+C6/AAC1: CE 35 04     DEC $0435
+C6/AAC4: 23 32        AND $32,S
+C6/AAC6: 4A           LSR
+C6/AAC7: 02 2F        COP $2F
+C6/AAC9: 0A           ASL
+C6/AACA: 03 C6        ORA $C6,S
+C6/AACC: 0B           PHD
+C6/AACD: FC FA C9     JSR ($C9FA,X)
+C6/AAD0: B3 24        LDA ($24,S),Y
+C6/AAD2: B8           CLV
+C6/AAD3: 00 06        BRK $06
+C6/AAD5: 06 4F        ASL $4F
+C6/AAD7: FF 0D 20 01  SBC $01200D,X
+C6/AADB: A2 12 81     LDX #$8112
+C6/AADE: 05 82        ORA $82
+C6/AAE0: 83 AC        STA $AC,S
+C6/AAE2: 0E 31 EE     ASL $EE31
+C6/AAE5: 11 29        ORA ($29),Y
+C6/AAE7: 2C 1F F9     BIT $F91F
+C6/AAEA: 24 AF        BIT $AF
+C6/AAEC: 22 E3 09 E5  JSR $E509E3
+C6/AAF0: 01 3E        ORA ($3E,X)
+C6/AAF2: 0A           ASL
+C6/AAF3: FF 60 08 4A  SBC $4A0860,X
+C6/AAF7: 10 AC        BPL $AAA5
+C6/AAF9: 1E 86 19     ASL $1986,X
+C6/AAFC: A1 07        LDA ($07,X)
+C6/AAFE: 18           CLC
+C6/AAFF: 27 01        AND [$01]
+C6/AB01: F8           SED
+C6/AB02: 6D 83 44     ADC $4483
+C6/AB05: 32 21        AND ($21)
+C6/AB07: E3 01        SBC $01,S
+C6/AB09: 25 26        AND $26
+C6/AB0B: 05 02        ORA $02
+C6/AB0D: 0B           PHD
+C6/AB0E: 16 FC        ASL $FC,X
+C6/AB10: 17 18        ORA [$18],Y
+C6/AB12: 28           PLP
+C6/AB13: 22 E2 1D 63  JSR $631DE2
+C6/AB17: 02 87        COP $87
+C6/AB19: 09 37 FD     ORA #$FD37
+C6/AB1C: 48           PHA
+C6/AB1D: EA           NOP
+C6/AB1E: 00 24        BRK $24
+C6/AB20: 25 15        AND $15
+C6/AB22: 17 26        ORA [$26],Y
+C6/AB24: 26 15        ROL $15
+C6/AB26: 17 3E        ORA [$3E],Y
+C6/AB28: 18           CLC
+C6/AB29: 58           CLI
+C6/AB2A: 5F C4 0A 5E  EOR $5E0AC4,X
+C6/AB2E: F8           SED
+C6/AB2F: 84 FF        STY $FF
+C6/AB31: C4 08        CPY $08
+C6/AB33: 28           PLP
+C6/AB34: 24 F0        BIT $F0
+C6/AB36: 26 26        ROL $26
+C6/AB38: 27 28        AND [$28]
+C6/AB3A: 09 61 28     ORA #$2861
+C6/AB3D: 21 01        AND ($01,X)
+C6/AB3F: F8           SED
+C6/AB40: C4 F8        CPY $F8
+C6/AB42: FF C5 08 5F  SBC $5F08C5,X
+C6/AB46: 68           PLA
+C6/AB47: 0A           ASL
+C6/AB48: FF 01 F8 C4  SBC $C4F801,X
+C6/AB4C: 30 45        BMI $AB93
+C6/AB4E: 0B           PHD
+C6/AB4F: 4E F8 01     LSR $01F8
+C6/AB52: F8           SED
+C6/AB53: FF 28 C1 5F  SBC $5FC128,X
+C6/AB57: F8           SED
+C6/AB58: 01 F8        ORA ($F8,X)
+C6/AB5A: 01 F8        ORA ($F8,X)
+C6/AB5C: 01 F8        ORA ($F8,X)
+C6/AB5E: 01 F8        ORA ($F8,X)
+C6/AB60: 01 F8        ORA ($F8,X)
+C6/AB62: 01 F8        ORA ($F8,X)
+C6/AB64: 46 EB        LSR $EB
+C6/AB66: 10 FF        BPL $AB67
+C6/AB68: 01 F8        ORA ($F8,X)
+C6/AB6A: 01 F8        ORA ($F8,X)
+C6/AB6C: 01 F8        ORA ($F8,X)
+C6/AB6E: 01 F8        ORA ($F8,X)
+C6/AB70: 01 F8        ORA ($F8,X)
+C6/AB72: 01 F8        ORA ($F8,X)
+C6/AB74: 40           RTI

@@ -1,0 +1,21 @@
+C2/E363: 08           PHP
+C2/E364: E2 20        SEP #$20
+C2/E366: AE 0C 0F     LDX $0F0C
+C2/E369: 9E 00 00     STZ $0000,X
+C2/E36C: 20 90 E3     JSR $E390
+C2/E36F: 20 E0 E3     JSR $E3E0
+C2/E372: 09 00        ORA #$00
+C2/E374: D0 18        BNE $E38E
+C2/E376: AD 90 98     LDA $9890
+C2/E379: D0 04        BNE $E37F
+C2/E37B: A9 FF        LDA #$FF
+C2/E37D: 80 0F        BRA $E38E
+C2/E37F: C2 20        REP #$20
+C2/E381: A2 90        LDX #$90
+C2/E383: 98           TYA
+C2/E384: AC 0C 0F     LDY $0F0C
+C2/E387: A9 05 00     LDA #$0005
+C2/E38A: 54 7E 7E     MVN $7E,$7E
+C2/E38D: 7B           TDC
+C2/E38E: 28           PLP
+C2/E38F: 60           RTS

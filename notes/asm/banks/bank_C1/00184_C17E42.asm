@@ -1,0 +1,2 @@
+C1/7E42: CE 60 CE     DEC $CE60
+C1/7E45: 60           RTS

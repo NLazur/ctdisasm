@@ -1,0 +1,39 @@
+C0/327B: 7B           TDC
+C0/327C: EB           XBA
+C0/327D: A5 AB        LDA $AB
+C0/327F: 85 AC        STA $AC
+C0/3281: 85 AD        STA $AD
+C0/3283: AA           TAX
+C0/3284: A9 00        LDA #$00
+C0/3286: 9F 00 0C 7F  STA $7F0C00,X
+C0/328A: 9F 00 0C 7F  STA $7F0C00,X
+C0/328E: 9F 00 0D 7F  STA $7F0D00,X
+C0/3292: 9F 00 0D 7F  STA $7F0D00,X
+C0/3296: 9F 00 0F 7F  STA $7F0F00,X
+C0/329A: A5 97        LDA $97
+C0/329C: 30 06        BMI $32A4
+C0/329E: AA           TAX
+C0/329F: BD 00 1C     LDA $1C00,X
+C0/32A2: F0 D4        BEQ $3278
+C0/32A4: A5 99        LDA $99
+C0/32A6: 30 06        BMI $32AE
+C0/32A8: AA           TAX
+C0/32A9: BD 00 1C     LDA $1C00,X
+C0/32AC: F0 CA        BEQ $3278
+C0/32AE: A5 9B        LDA $9B
+C0/32B0: 30 06        BMI $32B8
+C0/32B2: AA           TAX
+C0/32B3: BD 00 1C     LDA $1C00,X
+C0/32B6: F0 C0        BEQ $3278
+C0/32B8: A9 00        LDA #$00
+C0/32BA: 8F FC 03 7F  STA $7F03FC
+C0/32BE: C8           INY
+C0/32BF: C8           INY
+C0/32C0: C8           INY
+C0/32C1: C8           INY
+C0/32C2: C8           INY
+C0/32C3: C8           INY
+C0/32C4: C8           INY
+C0/32C5: BB           TYX
+C0/32C6: 18           CLC
+C0/32C7: 60           RTS

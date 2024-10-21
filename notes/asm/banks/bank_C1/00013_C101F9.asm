@@ -1,0 +1,19 @@
+C1/01F9: C2 20        REP #$20
+C1/01FB: 0A           ASL
+C1/01FC: 0A           ASL
+C1/01FD: 29 FF 03     AND #$03FF
+C1/0200: AA           TAX
+C1/0201: BF 00 F9 C0  LDA $C0F900,X
+C1/0205: 29 FF 00     AND #$00FF
+C1/0208: E0 00 02     CPX #$0200
+C1/020B: 90 04        BCC $0211
+C1/020D: 49 FF FF     EOR #$FFFF
+C1/0210: 1A           INC
+C1/0211: 85 A7        STA $A7
+C1/0213: A5 AE        LDA $AE
+C1/0215: 29 FF 00     AND #$00FF
+C1/0218: 85 A5        STA $A5
+C1/021A: E2 20        SEP #$20
+C1/021C: 20 A7 00     JSR $00A7
+C1/021F: A5 AA        LDA $AA
+C1/0221: 60           RTS

@@ -1,0 +1,33 @@
+D0/D84E: BF C0 77 F8  LDA $F877C0,X
+D0/D852: DF E1 BE C2  CMP $C2BEE1,X
+D0/D856: 7F 83 FC 06  ADC $06FC83,X
+D0/D85A: FA           PLX
+D0/D85B: 0E F4 0C     ASL $0CF4
+D0/D85E: E8           INX
+D0/D85F: 18           CLC
+D0/D860: 00 00        BRK $00
+D0/D862: 00 00        BRK $00
+D0/D864: 01 01        ORA ($01,X)
+D0/D866: 02 02        COP $02
+D0/D868: 00 00        BRK $00
+D0/D86A: 00 00        BRK $00
+D0/D86C: 00 00        BRK $00
+D0/D86E: 00 00        BRK $00
+D0/D870: 87 C5        STA [$C5]
+D0/D872: 0E 8B 15     ASL $158B
+D0/D875: 1F 18 1C 10  ORA $101C18,X
+D0/D879: 18           CLC
+D0/D87A: 22 32 44 64  JSR $644432
+D0/D87E: 88           DEY
+D0/D87F: CC 63 E3     CPY $E363
+D0/D882: C2 C3        REP #$C3
+D0/D884: 04 26        TSB $26
+D0/D886: 0A           ASL
+D0/D887: 4E 94 1C     LSR $1C94
+D0/D88A: 2A           ROL
+D0/D88B: 3A           DEC
+D0/D88C: 74 4C        STZ $4C,X
+D0/D88E: A8           TAY
+D0/D88F: D8           CLD
+D0/D890: A0 B0        LDY #$B0
+D0/D892: 40           RTI

@@ -1,0 +1,27 @@
+FE/9A69: FF 67 A0 8D  SBC $8DA067,X
+FE/9A6D: 84 39        STY $39
+FE/9A6F: 09 26 FE     ORA #$FE26
+FE/9A72: 01 AE        ORA ($AE,X)
+FE/9A74: 0C C4 FF     TSB $FFC4
+FE/9A77: 81 81        STA ($81,X)
+FE/9A79: 88           DEY
+FE/9A7A: 84 84        STY $84
+FE/9A7C: 42 8C        WDM $8C
+FE/9A7E: 7E 0F A0     ROR $A00F,X
+FE/9A81: C0 FF 39     CPY #$39FF
+FE/9A84: A5 0A        LDA $0A
+FE/9A86: 7E 40 C0     ROR $C040,X
+FE/9A89: 7B           TDC
+FE/9A8A: C8           INY
+FE/9A8B: 73 C0        ADC ($C0,S),Y
+FE/9A8D: 7F 02 00 3F  ADC $3F0002,X
+FE/9A91: 04 C0        TSB $C0
+FE/9A93: C6 78        DEC $78
+FE/9A95: 05 40        ORA $40
+FE/9A97: 80 90        BRA $9A29
+FE/9A99: E0 26 14     CPX #$1426
+FE/9A9C: 38           SEC
+FE/9A9D: 08           PHP
+FE/9A9E: 88           DEY
+FE/9A9F: 11 FF        ORA ($FF),Y
+FE/9AA1: 40           RTI

@@ -1,0 +1,38 @@
+C0/4B74: C8           INY
+C0/4B75: BB           TYX
+C0/4B76: BF 01 20 7F  LDA $7F2001,X
+C0/4B7A: A6 6D        LDX $6D
+C0/4B7C: 9D 01 18     STA $1801,X
+C0/4B7F: 85 D9        STA $D9
+C0/4B81: A9 80        LDA #$80
+C0/4B83: 9D 00 18     STA $1800,X
+C0/4B86: C8           INY
+C0/4B87: BB           TYX
+C0/4B88: BF 01 20 7F  LDA $7F2001,X
+C0/4B8C: A6 6D        LDX $6D
+C0/4B8E: 9D 81 18     STA $1881,X
+C0/4B91: 85 DA        STA $DA
+C0/4B93: A9 FF        LDA #$FF
+C0/4B95: 9D 80 18     STA $1880,X
+C0/4B98: BD 80 0F     LDA $0F80,X
+C0/4B9B: 10 22        BPL $4BBF
+C0/4B9D: A6 D9        LDX $D9
+C0/4B9F: BF 00 70 7E  LDA $7E7000,X
+C0/4BA3: 29 40        AND #$40
+C0/4BA5: 4A           LSR
+C0/4BA6: 4A           LSR
+C0/4BA7: 09 20        ORA #$20
+C0/4BA9: 85 D9        STA $D9
+C0/4BAB: BF 40 70 7E  LDA $7E7040,X
+C0/4BAF: 29 40        AND #$40
+C0/4BB1: 4A           LSR
+C0/4BB2: 4A           LSR
+C0/4BB3: 09 20        ORA #$20
+C0/4BB5: A6 6D        LDX $6D
+C0/4BB7: 9D 00 0C     STA $0C00,X
+C0/4BBA: A5 D9        LDA $D9
+C0/4BBC: 9D 01 0C     STA $0C01,X
+C0/4BBF: BB           TYX
+C0/4BC0: E8           INX
+C0/4BC1: 38           SEC
+C0/4BC2: 60           RTS

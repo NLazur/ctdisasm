@@ -1,0 +1,64 @@
+C6/70F2: 00 00        BRK $00
+C6/70F4: 8A           TXA
+C6/70F5: 98           TYA
+C6/70F6: F7 89        SBC [$89],Y
+C6/70F8: 7B           TDC
+C6/70F9: 89 23 DF     BIT #$DF23
+C6/70FC: 00 F0        BRK $F0
+C6/70FE: F0 4E        BEQ $714E
+C6/7100: F0 F9        BEQ $70FB
+C6/7102: 35 43        AND $43,X
+C6/7104: 32 87        AND ($87)
+C6/7106: E4 0A        CPX $0A
+C6/7108: 21 3C        AND ($3C,X)
+C6/710A: 65 09        ADC $09
+C6/710C: 41 54        EOR ($54,X)
+C6/710E: 42 43        WDM $43
+C6/7110: 63 00        ADC $00,S
+C6/7112: 00 99        BRK $99
+C6/7114: 34 97        BIT $97,X
+C6/7116: 8B           PHB
+C6/7117: 8C 23 5E     STY $5E23
+C6/711A: 23 1C        AND $1C,S
+C6/711C: 89 26 43     BIT #$4326
+C6/711F: 34 83        BIT $83,X
+C6/7121: 09 4F 8C     ORA #$8C4F
+C6/7124: BE 07 51     LDX $5107,Y
+C6/7127: 50 52        BVC $717B
+C6/7129: 53 42        EOR ($42,S),Y
+C6/712B: 32 30        AND ($30)
+C6/712D: 00 8C        BRK $8C
+C6/712F: B2 00        LDA ($00)
+C6/7131: 5E 21 79     LSR $7921,X
+C6/7134: 02 DF        COP $DF
+C6/7136: E8           INX
+C6/7137: E3 E3        SBC $E3,S
+C6/7139: 1E 02 3F     ASL $3F02,X
+C6/713C: 64 8E        STZ $8E
+C6/713E: 31 E0        AND ($E0),Y
+C6/7140: 04 C2        TSB $C2
+C6/7142: 4B           PHK
+C6/7143: 43 10        EOR $10,S
+C6/7145: 52 53        EOR ($53)
+C6/7147: 54 2A 02     MVN $2A,$02
+C6/714A: 00 08        BRK $08
+C6/714C: 0A           ASL
+C6/714D: 97 7B        STA [$7B],Y
+C6/714F: 89 3D 87     BIT #$873D
+C6/7152: 89 1F AE     BIT #$AE1F
+C6/7155: 03 E4        ORA $E4,S
+C6/7157: 2B           PLD
+C6/7158: E4 09        CPX $09
+C6/715A: AE 7C D9     LDX $D97C
+C6/715D: 18           CLC
+C6/715E: 7F 21 22 00  ADC $002221,X
+C6/7162: 97 9A        STA [$9A],Y
+C6/7164: 99 0D 0E     STA $0E0D,Y
+C6/7167: 2B           PLD
+C6/7168: 5C 2C 00 5F  JMP $5F002C
+C6/716C: 23 F9        AND $F9,S
+C6/716E: AF 23 E3 AF  LDA $AFE323
+C6/7172: E0 3D        CPX #$3D
+C6/7174: 3D 05 41     AND $4105,X
+C6/7177: E0 04        CPX #$04
+C6/7179: 40           RTI

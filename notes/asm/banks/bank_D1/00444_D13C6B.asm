@@ -1,0 +1,63 @@
+D1/3C6B: 98           TYA
+D1/3C6C: 00 F8        BRK $F8
+D1/3C6E: 00 70        BRK $70
+D1/3C70: 00 00        BRK $00
+D1/3C72: 00 00        BRK $00
+D1/3C74: 00 00        BRK $00
+D1/3C76: 70 70        BVS $3CE8
+D1/3C78: F8           SED
+D1/3C79: F8           SED
+D1/3C7A: F8           SED
+D1/3C7B: F8           SED
+D1/3C7C: F8           SED
+D1/3C7D: F8           SED
+D1/3C7E: 70 70        BVS $3CF0
+D1/3C80: 04 07        TSB $07
+D1/3C82: 09 0F        ORA #$0F
+D1/3C84: 12 1E        ORA ($1E)
+D1/3C86: 24 3C        BIT $3C
+D1/3C88: 48           PHA
+D1/3C89: 78           SEI
+D1/3C8A: 50 70        BVC $3CFC
+D1/3C8C: 20 20 00     JSR $0020
+D1/3C8F: 00 07        BRK $07
+D1/3C91: 07 0F        ORA [$0F]
+D1/3C93: 0F 1E 1E 3C  ORA $3C1E1E
+D1/3C97: 3C 78 78     BIT $7878,X
+D1/3C9A: 70 70        BVS $3D0C
+D1/3C9C: 20 20 00     JSR $0020
+D1/3C9F: 00 20        BRK $20
+D1/3CA1: E0 90 F0     CPX #$F090
+D1/3CA4: 48           PHA
+D1/3CA5: 78           SEI
+D1/3CA6: 24 3C        BIT $3C
+D1/3CA8: 12 1E        ORA ($1E)
+D1/3CAA: 0A           ASL
+D1/3CAB: 0E 04 04     ASL $0404
+D1/3CAE: 00 00        BRK $00
+D1/3CB0: E0 E0 F0     CPX #$F0E0
+D1/3CB3: F0 78        BEQ $3D2D
+D1/3CB5: 78           SEI
+D1/3CB6: 3C 3C 1E     BIT $1E3C,X
+D1/3CB9: 1E 0E 0E     ASL $0E0E,X
+D1/3CBC: 04 04        TSB $04
+D1/3CBE: 00 00        BRK $00
+D1/3CC0: 2F 31 2F 30  AND $302F31
+D1/3CC4: 2F 30 17 18  AND $181730
+D1/3CC8: 13 1C        ORA ($1C,S),Y
+D1/3CCA: 0C 0F 03     TSB $030F
+D1/3CCD: 03 00        ORA $00,S
+D1/3CCF: 00 3F        BRK $3F
+D1/3CD1: 3F 3F 3F 3F  AND $3F3F3F,X
+D1/3CD5: 3F 1F 1F 1F  AND $1F1F1F,X
+D1/3CD9: 1F 0F 0F 03  ORA $030F0F,X
+D1/3CDD: 03 00        ORA $00,S
+D1/3CDF: 00 E8        BRK $E8
+D1/3CE1: 98           TYA
+D1/3CE2: E8           INX
+D1/3CE3: 18           CLC
+D1/3CE4: E8           INX
+D1/3CE5: 18           CLC
+D1/3CE6: D0 30        BNE $3D18
+D1/3CE8: 90 70        BCC $3D5A
+D1/3CEA: 60           RTS

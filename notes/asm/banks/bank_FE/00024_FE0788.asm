@@ -1,0 +1,145 @@
+FE/0788: F8           SED
+FE/0789: 80 88        BRA $0713
+FE/078B: F4 00 07     PEA $0700
+FE/078E: 09 70 0E     ORA #$0E70
+FE/0791: 0E 09 07     ASL $0709
+FE/0794: 0C 01 40     TSB $4001
+FE/0797: F8           SED
+FE/0798: 44 92 09     MVP $92,$09
+FE/079B: 78           SEI
+FE/079C: 05 06        ORA $06
+FE/079E: 06 BC        ASL $BC
+FE/07A0: 01 3C        ORA ($3C,X)
+FE/07A2: FA           PLX
+FE/07A3: C6 9F        DEC $9F
+FE/07A5: 41 07        EOR ($07,X)
+FE/07A7: 08           PHP
+FE/07A8: FE 08 00     INC $0008,X
+FE/07AB: 07 3A        ORA [$3A]
+FE/07AD: F9 40 A8     SBC $A840,Y
+FE/07B0: 3D 01 43     AND $4301,X
+FE/07B3: 02 40        COP $40
+FE/07B5: F8           SED
+FE/07B6: 46 A2        LSR $A2
+FE/07B8: C0 0E 03     CPY #$030E
+FE/07BB: 05 05        ORA $05
+FE/07BD: 03 0E        ORA $0E,S
+FE/07BF: 3A           DEC
+FE/07C0: FA           PLX
+FE/07C1: 41 B8        EOR ($B8,X)
+FE/07C3: FF 81 07 3F  SBC $3F0781,X
+FE/07C7: F8           SED
+FE/07C8: 42 DF        WDM $DF
+FE/07CA: 26 F8        ROL $F8
+FE/07CC: 01 F8        ORA ($F8,X)
+FE/07CE: 01 F8        ORA ($F8,X)
+FE/07D0: 01 F8        ORA ($F8,X)
+FE/07D2: 01 F8        ORA ($F8,X)
+FE/07D4: FF 01 F8 01  SBC $01F801,X
+FE/07D8: F8           SED
+FE/07D9: 01 F8        ORA ($F8,X)
+FE/07DB: 01 F8        ORA ($F8,X)
+FE/07DD: 01 F8        ORA ($F8,X)
+FE/07DF: 01 F8        ORA ($F8,X)
+FE/07E1: 01 F8        ORA ($F8,X)
+FE/07E3: 01 F8        ORA ($F8,X)
+FE/07E5: 2F 01 F8 01  AND $01F801
+FE/07E9: F8           SED
+FE/07EA: 01 F8        ORA ($F8,X)
+FE/07EC: 03 E0        ORA $E0,S
+FE/07EE: 09 01 08     ORA #$0801
+FE/07F1: 05 05        ORA $05
+FE/07F3: 03 C1        ORA $C1,S
+FE/07F5: FB           XCE
+FE/07F6: 0C 98 08     TSB $0898
+FE/07F9: 07 06        ORA [$06]
+FE/07FB: 06 07        ASL $07
+FE/07FD: 08           PHP
+FE/07FE: 77 8A        ADC [$8A],Y
+FE/0800: 04 2B        TSB $2B
+FE/0802: F8           SED
+FE/0803: C5 6E        CMP $6E
+FE/0805: 04 03        TSB $03
+FE/0807: 08           PHP
+FE/0808: 06 06        ASL $06
+FE/080A: 02 08        COP $08
+FE/080C: 09 03 02     ORA #$0203
+FE/080F: FC 04 6F     JSR ($6F04,X)
+FE/0812: 0F 02 04 02  ORA $020402
+FE/0816: 02 04        COP $04
+FE/0818: 61 42        ADC ($42,X)
+FE/081A: 06 09        ASL $09
+FE/081C: 0F 0F 01 40  ORA $40010F
+FE/0820: F8           SED
+FE/0821: 44 77 03     MVP $77,$03
+FE/0824: 10 0F        BPL $0835
+FE/0826: 03 0F        ORA $0F,S
+FE/0828: 0F C0 04 09  ORA $0904C0
+FE/082C: 01 01        ORA ($01,X)
+FE/082E: 46 0F        LSR $0F
+FE/0830: 3F F8 83 7F  AND $7F83F8,X
+FE/0834: 0F 06 0C 84  ORA $840C06
+FE/0838: 00 07        BRK $07
+FE/083A: 07 BE        ORA [$BE]
+FE/083C: 0C C1 FC     TSB $FCC1
+FE/083F: C3 7F        CMP $7F,S
+FE/0841: 0E 0F 01     ASL $010F
+FE/0844: 0E 02 8C     ASL $8C02
+FE/0847: 04 05        TSB $05
+FE/0849: 42 07        WDM $07
+FE/084B: FF 08 09 05  SBC $050908,X
+FE/084F: 09 34 F8     ORA #$F834
+FE/0852: 81 40        STA ($40,X)
+FE/0854: 57 06        EOR [$06],Y
+FE/0856: 0E 01 01     ASL $0101
+FE/0859: 03 04        ORA $04,S
+FE/085B: 88           DEY
+FE/085C: 07 60        ORA [$60]
+FE/085E: 07 07        ORA [$07]
+FE/0860: 01 02        ORA ($02,X)
+FE/0862: 01 40        ORA ($40,X)
+FE/0864: F8           SED
+FE/0865: 7F 67 0B 20  ADC $200B67,X
+FE/0869: 0B           PHD
+FE/086A: 0C 0E 03     TSB $030E
+FE/086D: 0E B8 07     ASL $07B8
+FE/0870: 09 08 60     ORA #$6008
+FE/0873: 02 03        COP $03
+FE/0875: 02 03        COP $03
+FE/0877: 08           PHP
+FE/0878: C1 F9        CMP ($F9,X)
+FE/087A: 7E 56 05     ROR $0556,X
+FE/087D: C0 05 0C     CPY #$0C05
+FE/0880: 0D 0E 0E     ORA $0E0E
+FE/0883: 01 7F        ORA ($7F,X)
+FE/0885: 00 BD        BRK $BD
+FE/0887: 08           PHP
+FE/0888: C7 44        CMP [$44]
+FE/088A: 0A           ASL
+FE/088B: 02 F9        COP $F9
+FE/088D: BD 46 0C     LDA $0C46,X
+FE/0890: 0D 0D B8     ORA $B80D
+FE/0893: 00 3E        BRK $3E
+FE/0895: 20 0F 7D     JSR $7D0F
+FE/0898: 02 C5        COP $C5
+FE/089A: 0E 37 F8     ASL $F837
+FE/089D: FC 36 03     JSR ($0336,X)
+FE/08A0: 01 02        ORA ($02,X)
+FE/08A2: 03 44        ORA $44,S
+FE/08A4: 05 07        ORA $07
+FE/08A6: 38           SEC
+FE/08A7: 11 0A        ORA ($0A),Y
+FE/08A9: 05 05        ORA $05
+FE/08AB: 02 01        COP $01
+FE/08AD: 08           PHP
+FE/08AE: 53 C1        EOR ($C1,S),Y
+FE/08B0: FA           PLX
+FE/08B1: 3C 49 01     BIT $0149,X
+FE/08B4: 0E F3 00     ASL $00F3
+FE/08B7: 05 B6        ORA $B6
+FE/08B9: 0A           ASL
+FE/08BA: 0A           ASL
+FE/08BB: CF 7C 09 04  CMP $04097C
+FE/08BF: 18           CLC
+FE/08C0: 81 F8        STA ($F8,X)
+FE/08C2: 40           RTI

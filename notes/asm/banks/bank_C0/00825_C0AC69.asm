@@ -1,0 +1,71 @@
+C0/AC69: E2 10        SEP #$10
+C0/AC6B: 9E 00 19     STZ $1900,X
+C0/AC6E: 9E 80 19     STZ $1980,X
+C0/AC71: BD 00 1A     LDA $1A00,X
+C0/AC74: 8D 02 42     STA $4202
+C0/AC77: A6 EE        LDX $EE
+C0/AC79: BD 00 F8     LDA $F800,X
+C0/AC7C: E0 80        CPX #$80
+C0/AC7E: B0 13        BCS $AC93
+C0/AC80: 8D 03 42     STA $4203
+C0/AC83: EA           NOP
+C0/AC84: EA           NOP
+C0/AC85: EA           NOP
+C0/AC86: EA           NOP
+C0/AC87: A6 6D        LDX $6D
+C0/AC89: AD 17 42     LDA $4217
+C0/AC8C: 85 DB        STA $DB
+C0/AC8E: 9D 80 19     STA $1980,X
+C0/AC91: 80 17        BRA $ACAA
+C0/AC93: 49 FF        EOR #$FF
+C0/AC95: 1A           INC
+C0/AC96: 8D 03 42     STA $4203
+C0/AC99: EA           NOP
+C0/AC9A: EA           NOP
+C0/AC9B: EA           NOP
+C0/AC9C: EA           NOP
+C0/AC9D: A6 6D        LDX $6D
+C0/AC9F: AD 17 42     LDA $4217
+C0/ACA2: 49 FF        EOR #$FF
+C0/ACA4: 1A           INC
+C0/ACA5: 85 DB        STA $DB
+C0/ACA7: 9D 80 19     STA $1980,X
+C0/ACAA: BD 80 19     LDA $1980,X
+C0/ACAD: 10 07        BPL $ACB6
+C0/ACAF: A9 FF        LDA #$FF
+C0/ACB1: 9D 81 19     STA $1981,X
+C0/ACB4: 80 03        BRA $ACB9
+C0/ACB6: 9E 81 19     STZ $1981,X
+C0/ACB9: A5 EE        LDA $EE
+C0/ACBB: 18           CLC
+C0/ACBC: 69 40        ADC #$40
+C0/ACBE: AA           TAX
+C0/ACBF: BD 00 F8     LDA $F800,X
+C0/ACC2: E0 80        CPX #$80
+C0/ACC4: 90 18        BCC $ACDE
+C0/ACC6: 49 FF        EOR #$FF
+C0/ACC8: 1A           INC
+C0/ACC9: 8D 03 42     STA $4203
+C0/ACCC: EA           NOP
+C0/ACCD: EA           NOP
+C0/ACCE: EA           NOP
+C0/ACCF: A6 6D        LDX $6D
+C0/ACD1: AD 17 42     LDA $4217
+C0/ACD4: 49 FF        EOR #$FF
+C0/ACD6: 1A           INC
+C0/ACD7: 9D 00 19     STA $1900,X
+C0/ACDA: C2 10        REP #$10
+C0/ACDC: 80 10        BRA $ACEE
+C0/ACDE: 8D 03 42     STA $4203
+C0/ACE1: EA           NOP
+C0/ACE2: EA           NOP
+C0/ACE3: EA           NOP
+C0/ACE4: A6 6D        LDX $6D
+C0/ACE6: AD 17 42     LDA $4217
+C0/ACE9: 9D 00 19     STA $1900,X
+C0/ACEC: C2 10        REP #$10
+C0/ACEE: BD 00 19     LDA $1900,X
+C0/ACF1: 10 06        BPL $ACF9
+C0/ACF3: A9 FF        LDA #$FF
+C0/ACF5: 9D 01 19     STA $1901,X
+C0/ACF8: 60           RTS

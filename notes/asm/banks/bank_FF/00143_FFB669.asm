@@ -1,0 +1,313 @@
+FF/B669: 87 06        STA [$06]
+FF/B66B: 87 07        STA [$07]
+FF/B66D: 07 08        ORA [$08]
+FF/B66F: 2F 08 08 09  AND $090808
+FF/B673: 09 30        ORA #$30
+FF/B675: 2F 09 09 08  AND $080909
+FF/B679: 08           PHP
+FF/B67A: 68           PLA
+FF/B67B: 47 0A        EOR [$0A]
+FF/B67D: 0A           ASL
+FF/B67E: 0A           ASL
+FF/B67F: 0A           ASL
+FF/B680: 5C 2B 0B 0B  JMP $0B0B2B
+FF/B684: 0B           PHD
+FF/B685: 0B           PHD
+FF/B686: 08           PHP
+FF/B687: AB           PLB
+FF/B688: 0C 0C 12     TSB $120C
+FF/B68B: 0D 28 AB     ORA $AB28
+FF/B68E: 0D 0D 0C     ORA $0C0D
+FF/B691: 0E 48 AB     ASL $AB48
+FF/B694: 0E 0E 0D     ASL $0D0E
+FF/B697: 0F 68 AB 0F  ORA $0FAB68
+FF/B69B: 0F 0E 10 88  ORA $88100E
+FF/B69F: AB           PLB
+FF/B6A0: 10 10        BPL $B6B2
+FF/B6A2: 0F 11 A8 AB  ORA $ABA811
+FF/B6A6: 11 11        ORA ($11),Y
+FF/B6A8: 10 12        BPL $B6BC
+FF/B6AA: C8           INY
+FF/B6AB: AB           PLB
+FF/B6AC: 12 12        ORA ($12)
+FF/B6AE: 11 0C        ORA ($0C),Y
+FF/B6B0: 48           PHA
+FF/B6B1: 80 2F        BRA $B6E2
+FF/B6B3: 03 01        ORA $01,S
+FF/B6B5: 00 00        BRK $00
+FF/B6B7: 80 3B        BRA $B6F4
+FF/B6B9: 00 02        BRK $02
+FF/B6BB: 01 01        ORA ($01,X)
+FF/B6BD: 80 47        BRA $B706
+FF/B6BF: 01 03        ORA ($03,X)
+FF/B6C1: 02 02        COP $02
+FF/B6C3: 80 53        BRA $B718
+FF/B6C5: 02 00        COP $00
+FF/B6C7: 03 03        ORA $03,S
+FF/B6C9: 08           PHP
+FF/B6CA: 33 84        AND ($84,S),Y
+FF/B6CC: 05 04        ORA $04
+FF/B6CE: 04 08        TSB $08
+FF/B6D0: 3F 04 06 05  AND $050604,X
+FF/B6D4: 05 08        ORA $08
+FF/B6D6: 4B           PHK
+FF/B6D7: 05 07        ORA $07
+FF/B6D9: 06 06        ASL $06
+FF/B6DB: 08           PHP
+FF/B6DC: 57 06        EOR [$06],Y
+FF/B6DE: 08           PHP
+FF/B6DF: 07 07        ORA [$07]
+FF/B6E1: 08           PHP
+FF/B6E2: 63 07        ADC $07,S
+FF/B6E4: 09 08        ORA #$08
+FF/B6E6: 08           PHP
+FF/B6E7: 08           PHP
+FF/B6E8: 6F 08 0A 09  ADC $090A08
+FF/B6EC: 09 08        ORA #$08
+FF/B6EE: 7B           TDC
+FF/B6EF: 09 0B        ORA #$0B
+FF/B6F1: 0A           ASL
+FF/B6F2: 0A           ASL
+FF/B6F3: 08           PHP
+FF/B6F4: 87 0A        STA [$0A]
+FF/B6F6: 8B           PHB
+FF/B6F7: 0B           PHD
+FF/B6F8: 0B           PHD
+FF/B6F9: 24 08        BIT $08
+FF/B6FB: 35 03        AND $03,X
+FF/B6FD: 01 00        ORA ($00,X)
+FF/B6FF: 00 08        BRK $08
+FF/B701: 55 00        EOR $00,X
+FF/B703: 02 01        COP $01
+FF/B705: 01 08        ORA ($08,X)
+FF/B707: 75 01        ADC $01,X
+FF/B709: 03 02        ORA $02,S
+FF/B70B: 02 08        COP $08
+FF/B70D: 15 02        ORA $02,X
+FF/B70F: 00 03        BRK $03
+FF/B711: 03 B8        ORA $B8,S
+FF/B713: 57 05        EOR [$05],Y
+FF/B715: 05 04        ORA $04
+FF/B717: 04 B8        TSB $B8
+FF/B719: 67 04        ADC [$04]
+FF/B71B: 04 05        TSB $05
+FF/B71D: 05 12        ORA $12
+FF/B71F: 08           PHP
+FF/B720: 23 80        AND $80,S
+FF/B722: 01 00        ORA ($00,X)
+FF/B724: 00 08        BRK $08
+FF/B726: 53 00        EOR ($00,S),Y
+FF/B728: 02 01        COP $01
+FF/B72A: 01 08        ORA ($08,X)
+FF/B72C: 83 01        STA $01,S
+FF/B72E: 82 02 02     BRL $FFB933
+FF/B731: 48           PHA
+FF/B732: 78           SEI
+FF/B733: 4F 03 01 00  EOR $000103
+FF/B737: 00 78        BRK $78
+FF/B739: 5B           TCD
+FF/B73A: 00 02        BRK $02
+FF/B73C: 01 01        ORA ($01,X)
+FF/B73E: 78           SEI
+FF/B73F: 67 01        ADC [$01]
+FF/B741: 03 02        ORA $02,S
+FF/B743: 02 78        COP $78
+FF/B745: 73 02        ADC ($02,S),Y
+FF/B747: 00 03        BRK $03
+FF/B749: 03 08        ORA $08,S
+FF/B74B: 4B           PHK
+FF/B74C: 84 05        STY $05
+FF/B74E: 04 04        TSB $04
+FF/B750: 08           PHP
+FF/B751: 57 04        EOR [$04],Y
+FF/B753: 06 05        ASL $05
+FF/B755: 05 08        ORA $08
+FF/B757: 63 05        ADC $05,S
+FF/B759: 07 06        ORA [$06]
+FF/B75B: 06 08        ASL $08
+FF/B75D: 6F 06 08 07  ADC $070806
+FF/B761: 07 08        ORA [$08]
+FF/B763: 7B           TDC
+FF/B764: 07 09        ORA [$09]
+FF/B766: 08           PHP
+FF/B767: 08           PHP
+FF/B768: 08           PHP
+FF/B769: 87 08        STA [$08]
+FF/B76B: 0A           ASL
+FF/B76C: 09 09        ORA #$09
+FF/B76E: 08           PHP
+FF/B76F: 93 09        STA ($09,S),Y
+FF/B771: 0B           PHD
+FF/B772: 0A           ASL
+FF/B773: 0A           ASL
+FF/B774: 08           PHP
+FF/B775: 9F 0A 8B 0B  STA $0B8B0A,X
+FF/B779: 0B           PHD
+FF/B77A: 2A           ROL
+FF/B77B: 08           PHP
+FF/B77C: 23 02        AND $02,S
+FF/B77E: 01 03        ORA ($03,X)
+FF/B780: 03 08        ORA $08,S
+FF/B782: 53 00        EOR ($00,S),Y
+FF/B784: 02 04        COP $04
+FF/B786: 04 08        TSB $08
+FF/B788: 83 01        STA $01,S
+FF/B78A: 00 05        BRK $05
+FF/B78C: 05 E8        ORA $E8
+FF/B78E: 23 86        AND $86,S
+FF/B790: 04 00        TSB $00
+FF/B792: 00 E8        BRK $E8
+FF/B794: 53 03        EOR ($03,S),Y
+FF/B796: 05 01        ORA $01
+FF/B798: 01 E8        ORA ($E8,X)
+FF/B79A: 83 04        STA $04,S
+FF/B79C: 06 02        ASL $02
+FF/B79E: 02 E8        COP $E8
+FF/B7A0: B3 05        LDA ($05,S),Y
+FF/B7A2: 83 02        STA $02,S
+FF/B7A4: 02 54        COP $54
+FF/B7A6: 80 3B        BRA $B7E3
+FF/B7A8: 80 01        BRA $B7AB
+FF/B7AA: 00 00        BRK $00
+FF/B7AC: 80 47        BRA $B7F5
+FF/B7AE: 00 02        BRK $02
+FF/B7B0: 01 01        ORA ($01,X)
+FF/B7B2: 80 53        BRA $B807
+FF/B7B4: 01 03        ORA ($03,X)
+FF/B7B6: 02 02        COP $02
+FF/B7B8: 80 5F        BRA $B819
+FF/B7BA: 02 04        COP $04
+FF/B7BC: 03 03        ORA $03,S
+FF/B7BE: 80 6B        BRA $B82B
+FF/B7C0: 03 05        ORA $05,S
+FF/B7C2: 04 04        TSB $04
+FF/B7C4: 80 77        BRA $B83D
+FF/B7C6: 04 06        TSB $06
+FF/B7C8: 05 05        ORA $05
+FF/B7CA: 80 83        BRA $B74F
+FF/B7CC: 05 07        ORA $07
+FF/B7CE: 06 06        ASL $06
+FF/B7D0: 80 8F        BRA $B761
+FF/B7D2: 06 87        ASL $87
+FF/B7D4: 07 07        ORA [$07]
+FF/B7D6: 78           SEI
+FF/B7D7: 47 0A        EOR [$0A]
+FF/B7D9: 09 08        ORA #$08
+FF/B7DB: 08           PHP
+FF/B7DC: 78           SEI
+FF/B7DD: 67 08        ADC [$08]
+FF/B7DF: 0A           ASL
+FF/B7E0: 09 09        ORA #$09
+FF/B7E2: 78           SEI
+FF/B7E3: 87 09        STA [$09]
+FF/B7E5: 08           PHP
+FF/B7E6: 0A           ASL
+FF/B7E7: 0A           ASL
+FF/B7E8: 08           PHP
+FF/B7E9: 23 8B        AND $8B,S
+FF/B7EB: 0C 0B 0B     TSB $0B0B
+FF/B7EE: 08           PHP
+FF/B7EF: 53 0B        EOR ($0B,S),Y
+FF/B7F1: 0D 0C 0C     ORA $0C0C
+FF/B7F4: 08           PHP
+FF/B7F5: 83 0C        STA $0C,S
+FF/B7F7: 8D 0D 0D     STA $0D0D
+FF/B7FA: 0C 58 53     TSB $5358
+FF/B7FD: 01 01        ORA ($01,X)
+FF/B7FF: 00 00        BRK $00
+FF/B801: 58           CLI
+FF/B802: 63 00        ADC $00,S
+FF/B804: 00 01        BRK $01
+FF/B806: 01 22        ORA ($22,X)
+FF/B808: 58           CLI
+FF/B809: FF FF 0C 03  SBC $030CFF,X
+FF/B80D: 00 0C        BRK $0C
+FF/B80F: 07 00        ORA [$00]
+FF/B811: 1C 0B 00     TRB $000B
+FF/B814: 0C 0F 00     TSB $000F
+FF/B817: 0C 13 00     TSB $0013
+FF/B81A: 0C 17 00     TSB $0017
+FF/B81D: 08           PHP
+FF/B81E: D7 01        CMP [$01],Y
+FF/B820: 10 0F        BPL $B831
+FF/B822: 00 00        BRK $00
+FF/B824: 09 10        ORA #$10
+FF/B826: 09 60        ORA #$60
+FF/B828: 02 70        COP $70
+FF/B82A: 02 01        COP $01
+FF/B82C: 09 00        ORA #$00
+FF/B82E: 0A           ASL
+FF/B82F: 28           PLP
+FF/B830: FF 00 60 E7  SBC $E76000,X
+FF/B834: 01 50        ORA ($50,X)
+FF/B836: F7 01        SBC [$01],Y
+FF/B838: 00 1A        BRK $1A
+FF/B83A: 24 FC        BIT $FC
+FF/B83C: 00 F3        BRK $F3
+FF/B83E: 01 0C        ORA ($0C,X)
+FF/B840: FC 00 F7     JSR ($F700,X)
+FF/B843: 01 0C        ORA ($0C,X)
+FF/B845: FC 00 FB     JSR ($FB00,X)
+FF/B848: 01 1C        ORA ($1C,X)
+FF/B84A: 00 00        BRK $00
+FF/B84C: FF FF 01 00  SBC $0001FF,X
+FF/B850: 00 FF        BRK $FF
+FF/B852: FF 00 2B 28  SBC $282B00,X
+FF/B856: F7 01        SBC [$01],Y
+FF/B858: 2C A7 00     BIT $00A7
+FF/B85B: 0C CF 01     TSB $01CF
+FF/B85E: 0C D3 01     TSB $01D3
+FF/B861: 0C D7 01     TSB $01D7
+FF/B864: 0C DB 01     TSB $01DB
+FF/B867: 0C DF 01     TSB $01DF
+FF/B86A: 0C E3 01     TSB $01E3
+FF/B86D: 0C E7 01     TSB $01E7
+FF/B870: 0C EB 01     TSB $01EB
+FF/B873: 0C EF 01     TSB $01EF
+FF/B876: 0C F3 01     TSB $01F3
+FF/B879: 01 FF        ORA ($FF,X)
+FF/B87B: 00 00        BRK $00
+FF/B87D: 0A           ASL
+FF/B87E: 70 00        BVS $B880
+FF/B880: 00 50        BRK $50
+FF/B882: 00 00        BRK $00
+FF/B884: 10 FC        BPL $B882
+FF/B886: 00 00        BRK $00
+FF/B888: 07 70        ORA [$70]
+FF/B88A: FF FF 70 FF  SBC $FF70FF,X
+FF/B88E: FF 00 13 10  SBC $101300,X
+FF/B892: FF 00 28 E0  SBC $E02800,X
+FF/B896: 01 68        ORA ($68,X)
+FF/B898: F0 01        BEQ $B89B
+FF/B89A: 10 FF        BPL $B89B
+FF/B89C: 00 10        BRK $10
+FF/B89E: F7 01        SBC [$01],Y
+FF/B8A0: 01 FF        ORA ($FF,X)
+FF/B8A2: FF 00 25 30  SBC $302500,X
+FF/B8A6: CF 00 0C F3  CMP $F30C00
+FF/B8AA: 01 0C        ORA ($0C,X)
+FF/B8AC: F7 01        SBC [$01],Y
+FF/B8AE: 0C FB 01     TSB $01FB
+FF/B8B1: 0C FF FF     TSB $FFFF
+FF/B8B4: 0C 03 00     TSB $0003
+FF/B8B7: 0C 07 00     TSB $0007
+FF/B8BA: 0C 0B 00     TSB $000B
+FF/B8BD: 0C 0F 00     TSB $000F
+FF/B8C0: 10 3F        BPL $B901
+FF/B8C2: 00 10        BRK $10
+FF/B8C4: 6F 01 01 FF  ADC $FF0101
+FF/B8C8: FF 00 0A 28  SBC $280A00,X
+FF/B8CC: FF FF 70 E0  SBC $E070FF,X
+FF/B8D0: 01 01        ORA ($01,X)
+FF/B8D2: FF 00 00 0A  SBC $0A0000,X
+FF/B8D6: 28           PLP
+FF/B8D7: FF FF 60 F7  SBC $F760FF,X
+FF/B8DB: 01 50        ORA ($50,X)
+FF/B8DD: F7 01        SBC [$01],Y
+FF/B8DF: 00 13        BRK $13
+FF/B8E1: 10 FF        BPL $B8E2
+FF/B8E3: FF 30 E0 01  SBC $01E030,X
+FF/B8E7: 30 E0        BMI $B8C9
+FF/B8E9: 01 30        ORA ($30,X)
+FF/B8EB: E0 01        CPX #$01
+FF/B8ED: 40           RTI

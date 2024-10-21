@@ -1,0 +1,22 @@
+C2/FCB2: 08           PHP
+C2/FCB3: E2 20        SEP #$20
+C2/FCB5: A9 01        LDA #$01
+C2/FCB7: 8D CB 04     STA $04CB
+C2/FCBA: 9C 46 10     STZ $1046
+C2/FCBD: 7B           TDC
+C2/FCBE: AD C9 04     LDA $04C9
+C2/FCC1: C2 30        REP #$30
+C2/FCC3: 0A           ASL
+C2/FCC4: AA           TAX
+C2/FCC5: BD 00 6E     LDA $6E00,X
+C2/FCC8: 8D 44 10     STA $1044
+C2/FCCB: 8D 47 10     STA $1047
+C2/FCCE: 85 04        STA $04
+C2/FCD0: AD 53 2C     LDA $2C53
+C2/FCD3: 85 00        STA $00
+C2/FCD5: E2 20        SEP #$20
+C2/FCD7: AD 55 2C     LDA $2C55
+C2/FCDA: 85 02        STA $02
+C2/FCDC: 20 1D FD     JSR $FD1D
+C2/FCDF: 28           PLP
+C2/FCE0: 60           RTS

@@ -1,0 +1,43 @@
+FD/46DA: D1 08        CMP ($08),Y
+FD/46DC: F8           SED
+FD/46DD: 82 3D 6C     BRL $FDB31D
+FD/46E0: 29 0F 05     AND #$050F
+FD/46E3: 00 FD        BRK $FD
+FD/46E5: 01 BE        ORA ($BE,X)
+FD/46E7: 29 FF 91     AND #$91FF
+FD/46EA: FF 18 00 7F  SBC $7F0018,X
+FD/46EE: 8D FF B4     STA $B4FF
+FD/46F1: 4B           PHK
+FD/46F2: F8           SED
+FD/46F3: 04 FA        TSB $FA
+FD/46F5: 02 04        COP $04
+FD/46F7: 74 07        STZ $07,X
+FD/46F9: 41 9E        EOR ($9E,X)
+FD/46FB: B1 4F        LDA ($4F),Y
+FD/46FD: C8           INY
+FD/46FE: 27 02        AND [$02]
+FD/4700: A7 10        LDA [$10]
+FD/4702: 36 7F        ROL $7F,X
+FD/4704: 80 BF        BRA $46C5
+FD/4706: C0 4F E0     CPY #$E04F
+FD/4709: 00 27        BRK $27
+FD/470B: F0 10        BEQ $471D
+FD/470D: F8           SED
+FD/470E: E3 1C        SBC $1C,S
+FD/4710: 1F E0 00 00  ORA $0000E0,X
+FD/4714: FF 77 F8 D7  SBC $D7F877,X
+FD/4718: D8           CLD
+FD/4719: CB           WAI
+FD/471A: CC 00 01     CPY $0100
+FD/471D: 02 55        COP $55
+FD/471F: D6 9E        DEC $9E,X
+FD/4721: 61 F9        ADC ($F9,X)
+FD/4723: E6 00        INC $00
+FD/4725: FF FF BF BF  SBC $BFBFFF,X
+FD/4729: D7 77        CMP [$77],Y
+FD/472B: CB           WAI
+FD/472C: F3 30        SBC ($30,S),Y
+FD/472E: 07 FB        ORA [$FB]
+FD/4730: D5 FD        CMP $FD,X
+FD/4732: EF 0E 74 0B  SBC $0B740E
+FD/4736: 40           RTI

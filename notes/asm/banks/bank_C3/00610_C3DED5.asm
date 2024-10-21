@@ -1,0 +1,50 @@
+C3/DED5: 02 1E        COP $1E
+C3/DED7: 28           PLP
+C3/DED8: 20 98 04     JSR $0498
+C3/DEDB: 76 00        ROR $00,X
+C3/DEDD: 3C 28 40     BIT $4028,X
+C3/DEE0: 98           TYA
+C3/DEE1: 44 40 00     MVP $40,$00
+C3/DEE4: 62 18 60     PER $C33EFF
+C3/DEE7: 98           TYA
+C3/DEE8: 4A           LSR
+C3/DEE9: 00 2D        BRK $2D
+C3/DEEB: D3 31        CMP ($31,S),Y
+C3/DEED: 90 21        BCC $DF10
+C3/DEEF: 2C 1D C9     BIT $C91D
+C3/DEF2: 00 10        BRK $10
+C3/DEF4: C3 55        CMP $55,S
+C3/DEF6: CC 11 66     CPY $6611
+C3/DEF9: 01 25        ORA ($25,X)
+C3/DEFB: 00 09        BRK $09
+C3/DEFD: E4 00        CPX $00
+C3/DEFF: 61 08        ADC ($08,X)
+C3/DF01: 06 52        ASL $52
+C3/DF03: E5 F3        SBC $F3
+C3/DF05: 8A           TXA
+C3/DF06: 00 06        BRK $06
+C3/DF08: 08           PHP
+C3/DF09: 00 00        BRK $00
+C3/DF0B: 20 98 1E     JSR $1E98
+C3/DF0E: 18           CLC
+C3/DF0F: 20 B8 42     JSR $42B8
+C3/DF12: 18           CLC
+C3/DF13: 00 E5        BRK $E5
+C3/DF15: 55 08        EOR $08,X
+C3/DF17: 21 08        AND ($08,X)
+C3/DF19: 21 4A        AND ($4A,X)
+C3/DF1B: 29 00 6B     AND #$6B00
+C3/DF1E: 2D AD 35     AND $35AD
+C3/DF21: CE 39 EF     DEC $EF39
+C3/DF24: 3D 00 31     AND $3100,X
+C3/DF27: 46 52        LSR $52
+C3/DF29: 4A           LSR
+C3/DF2A: 94 52        STY $52,X
+C3/DF2C: B5 56        LDA $56,X
+C3/DF2E: 00 D6        BRK $D6
+C3/DF30: 5A           PHY
+C3/DF31: F7 5E        SBC [$5E],Y
+C3/DF33: 39 67 7B     AND $7B67,Y
+C3/DF36: 6F 42 8B 00  ADC $008B42
+C3/DF3A: FC BD 77     JSR ($77BD,X)
+C3/DF3D: 40           RTI

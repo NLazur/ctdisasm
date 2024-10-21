@@ -1,0 +1,28 @@
+D0/B5CE: C0 E1 C0     CPY #$C0E1
+D0/B5D1: 00 F0        BRK $F0
+D0/B5D3: 00 18        BRK $18
+D0/B5D5: 00 08        BRK $08
+D0/B5D7: 04 0A        TSB $0A
+D0/B5D9: 06 0A        ASL $0A
+D0/B5DB: 06 0B        ASL $0B
+D0/B5DD: 07 0B        ORA [$0B]
+D0/B5DF: 07 C0        ORA [$C0]
+D0/B5E1: F0 F8        BEQ $B5DB
+D0/B5E3: FC FE FE     JSR ($FEFE,X)
+D0/B5E6: FF FF 00 00  SBC $0000FF,X
+D0/B5EA: 00 00        BRK $00
+D0/B5EC: 00 00        BRK $00
+D0/B5EE: 00 00        BRK $00
+D0/B5F0: 00 00        BRK $00
+D0/B5F2: 06 01        ASL $01
+D0/B5F4: 03 00        ORA $00,S
+D0/B5F6: 00 00        BRK $00
+D0/B5F8: 00 00        BRK $00
+D0/B5FA: 00 00        BRK $00
+D0/B5FC: 00 07        BRK $07
+D0/B5FE: 1F 3F 00 00  ORA $00003F,X
+D0/B602: 00 00        BRK $00
+D0/B604: 00 00        BRK $00
+D0/B606: 00 00        BRK $00
+D0/B608: 00 00        BRK $00
+D0/B60A: 60           RTS

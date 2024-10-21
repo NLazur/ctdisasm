@@ -1,0 +1,74 @@
+C6/BF3F: 07 07        ORA [$07]
+C6/BF41: 52 42        EOR ($42)
+C6/BF43: 32 33        AND ($33)
+C6/BF45: 5F 00 07 3C  EOR $3C0700,X
+C6/BF49: 07 AB        ORA [$AB]
+C6/BF4B: A5 3B        LDA $3B
+C6/BF4D: C0 F8 31     CPY #$31F8
+C6/BF50: 14 21        TRB $21
+C6/BF52: 29 9B 2C     AND #$2C9B
+C6/BF55: 87 44        STA [$44]
+C6/BF57: 12 BC        ORA ($BC)
+C6/BF59: 20 B8 08     JSR $08B8
+C6/BF5C: 07 07        ORA [$07]
+C6/BF5E: 11 16        ORA ($16),Y
+C6/BF60: 26 09        ROL $09
+C6/BF62: 01 CD        ORA ($CD,X)
+C6/BF64: 08           PHP
+C6/BF65: 7E 21 33     ROR $3321,X
+C6/BF68: 0F 6E 56 07  ORA $07566E
+C6/BF6C: 1C AB BC     TRB $BCAB
+C6/BF6F: C0 F8 C0     CPY #$C0F8
+C6/BF72: 63 21        ADC $21,S
+C6/BF74: 29 9B 3C     AND #$3C9B
+C6/BF77: 2B           PLD
+C6/BF78: 95 0E        STA $0E,X
+C6/BF7A: 11 0A        ORA ($0A),Y
+C6/BF7C: BC 10 5A     LDY $5A10,X
+C6/BF7F: B1 0B        LDA ($0B),Y
+C6/BF81: 20 21 30     JSR $3021
+C6/BF84: 02 C4        COP $C4
+C6/BF86: 18           CLC
+C6/BF87: 19 CD 08     ORA $08CD,Y
+C6/BF8A: 30 42        BMI $BFCE
+C6/BF8C: 43 DC        EOR $DC,S
+C6/BF8E: 01 40        ORA ($40,X)
+C6/BF90: 04 A7        TSB $A7
+C6/BF92: C0 F8 C0     CPY #$C0F8
+C6/BF95: 98           TYA
+C6/BF96: 03 13        ORA $13,S
+C6/BF98: 1B           TCS
+C6/BF99: 2C 46 02     BIT $0246
+C6/BF9C: 0A           ASL
+C6/BF9D: 7E 01 32     ROR $3201,X
+C6/BFA0: 0A           ASL
+C6/BFA1: C0 10 11     CPY #$1110
+C6/BFA4: 12 90        ORA ($90)
+C6/BFA6: 02 CB        COP $CB
+C6/BFA8: 20 52 53     JSR $5352
+C6/BFAB: BD 1E 09     LDA $091E,X
+C6/BFAE: BC C0 F8     LDY $F8C0,X
+C6/BFB1: C0 90 BB     CPY #$BB90
+C6/BFB4: 05 03        ORA $03
+C6/BFB6: 0B           PHD
+C6/BFB7: 0A           ASL
+C6/BFB8: 24 14        BIT $14
+C6/BFBA: D8           CLD
+C6/BFBB: 0B           PHD
+C6/BFBC: 3A           DEC
+C6/BFBD: 3B           TSC
+C6/BFBE: 4E 05 BF     LSR $BF05
+C6/BFC1: 08           PHP
+C6/BFC2: CF 60 08 2A  CMP $2A0860
+C6/BFC6: 29 FF 5D     AND #$5DFF
+C6/BFC9: 05 DC        ORA $DC
+C6/BFCB: 05 24        ORA $24
+C6/BFCD: 45 E7        EOR $E7
+C6/BFCF: 35 08        AND $08,X
+C6/BFD1: A8           TAY
+C6/BFD2: 80 39        BRA $C00D
+C6/BFD4: 84 0C        STY $0C
+C6/BFD6: 03 03        ORA $03,S
+C6/BFD8: 8F CA 01 62  STA $6201CA
+C6/BFDC: 0B           PHD
+C6/BFDD: 6B           RTL

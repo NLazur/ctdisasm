@@ -1,0 +1,81 @@
+FD/C1EE: 0B           PHD
+FD/C1EF: C2 20        REP #$20
+FD/C1F1: A9 00 43     LDA #$4300
+FD/C1F4: 5B           TCD
+FD/C1F5: E2 20        SEP #$20
+FD/C1F7: A9 44        LDA #$44
+FD/C1F9: 85 00        STA $00
+FD/C1FB: A9 43        LDA #$43
+FD/C1FD: 85 10        STA $10
+FD/C1FF: A9 43        LDA #$43
+FD/C201: 85 20        STA $20
+FD/C203: A9 43        LDA #$43
+FD/C205: 85 30        STA $30
+FD/C207: A9 44        LDA #$44
+FD/C209: 85 40        STA $40
+FD/C20B: A9 41        LDA #$41
+FD/C20D: 85 50        STA $50
+FD/C20F: A9 41        LDA #$41
+FD/C211: 85 60        STA $60
+FD/C213: A9 40        LDA #$40
+FD/C215: 85 70        STA $70
+FD/C217: A9 07        LDA #$07
+FD/C219: 85 01        STA $01
+FD/C21B: A9 0D        LDA #$0D
+FD/C21D: 85 11        STA $11
+FD/C21F: A9 0F        LDA #$0F
+FD/C221: 85 21        STA $21
+FD/C223: A9 11        LDA #$11
+FD/C225: 85 31        STA $31
+FD/C227: A9 2C        LDA #$2C
+FD/C229: 85 41        STA $41
+FD/C22B: A9 26        LDA #$26
+FD/C22D: 85 51        STA $51
+FD/C22F: A9 31        LDA #$31
+FD/C231: 85 61        STA $61
+FD/C233: AD 3C 01     LDA $013C
+FD/C236: 89 01        BIT #$01
+FD/C238: D0 04        BNE $C23E
+FD/C23A: A9 28        LDA #$28
+FD/C23C: 80 02        BRA $C240
+FD/C23E: A9 29        LDA #$29
+FD/C240: 85 71        STA $71
+FD/C242: A9 7F        LDA #$7F
+FD/C244: 85 04        STA $04
+FD/C246: 85 14        STA $14
+FD/C248: 85 24        STA $24
+FD/C24A: 85 34        STA $34
+FD/C24C: 85 44        STA $44
+FD/C24E: 85 54        STA $54
+FD/C250: 85 64        STA $64
+FD/C252: 85 74        STA $74
+FD/C254: 85 07        STA $07
+FD/C256: 85 17        STA $17
+FD/C258: 85 27        STA $27
+FD/C25A: 85 37        STA $37
+FD/C25C: 85 47        STA $47
+FD/C25E: 85 57        STA $57
+FD/C260: 85 67        STA $67
+FD/C262: 85 77        STA $77
+FD/C264: AD 53 01     LDA $0153
+FD/C267: 29 0F        AND #$0F
+FD/C269: F0 02        BEQ $C26D
+FD/C26B: 80 2A        BRA $C297
+FD/C26D: A2 80 0F     LDX #$0F80
+FD/C270: 86 02        STX $02
+FD/C272: A2 D7 0F     LDX #$0FD7
+FD/C275: 86 12        STX $12
+FD/C277: A2 2E 10     LDX #$102E
+FD/C27A: 86 22        STX $22
+FD/C27C: A2 85 10     LDX #$1085
+FD/C27F: 86 32        STX $32
+FD/C281: A2 DC 10     LDX #$10DC
+FD/C284: 86 42        STX $42
+FD/C286: A2 33 11     LDX #$1133
+FD/C289: 86 52        STX $52
+FD/C28B: A2 8A 11     LDX #$118A
+FD/C28E: 86 62        STX $62
+FD/C290: A2 E1 11     LDX #$11E1
+FD/C293: 86 72        STX $72
+FD/C295: 2B           PLD
+FD/C296: 6B           RTL

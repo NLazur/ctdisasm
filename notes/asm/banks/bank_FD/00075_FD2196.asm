@@ -1,0 +1,58 @@
+FD/2196: 19 00 02     ORA $0200,Y
+FD/2199: E0 F3        CPX #$F3
+FD/219B: E0 B3        CPX #$B3
+FD/219D: 00 C7        BRK $C7
+FD/219F: 03 3F        ORA $3F,S
+FD/21A1: 03 3F        ORA $3F,S
+FD/21A3: 33 27        AND ($27,S),Y
+FD/21A5: BB           TYX
+FD/21A6: 00 17        BRK $17
+FD/21A8: DB           STP
+FD/21A9: 0B           PHD
+FD/21AA: E9 03        SBC #$03
+FD/21AC: F1 01        SBC ($01),Y
+FD/21AE: F8           SED
+FD/21AF: 02 03        COP $03
+FD/21B1: D9 19 03     CMP $0319,Y
+FD/21B4: C3 83        CMP $83,S
+FD/21B6: E3 C3        SBC $C3,S
+FD/21B8: F5 DC        SBC $DC,X
+FD/21BA: E1 FD        SBC ($FD,X)
+FD/21BC: B3 03        LDA ($03,S),Y
+FD/21BE: C0 71        CPY #$71
+FD/21C0: 86 0E        STX $0E
+FD/21C2: F5 01        SBC $01,X
+FD/21C4: 0C 0F 90     TSB $900F
+FD/21C7: 00 F5        BRK $F5
+FD/21C9: E1 E9        SBC ($E9,X)
+FD/21CB: FE 1F 1D     INC $1D1F,X
+FD/21CE: EF 9B 00 EF  SBC $EF009B
+FD/21D2: BE C1 C3     LDX $C3C1,Y
+FD/21D5: 00 03        BRK $03
+FD/21D7: F3 02        SBC ($02,S),Y
+FD/21D9: 02 FB        COP $FB
+FD/21DB: 3A           DEC
+FD/21DC: 03 DE        ORA $DE,S
+FD/21DE: 00 ED        BRK $ED
+FD/21E0: 80 EB        BRA $21CD
+FD/21E2: 80 40        BRA $2224
+FD/21E4: C0 3C        CPY #$3C
+FD/21E6: 00 FC        BRK $FC
+FD/21E8: F0 FC        BEQ $21E6
+FD/21EA: 2C 02 E1     BIT $E102
+FD/21ED: 14 FE        TRB $FE
+FD/21EF: F1 BE        SBC ($BE),Y
+FD/21F1: 0E FE 40     ASL $40FE
+FD/21F4: 02 87        COP $87
+FD/21F6: 78           SEI
+FD/21F7: 62 68 BD     PER $FDDF62
+FD/21FA: 79 DE D2     ADC $D2DE,Y
+FD/21FD: 09 F0        ORA #$F0
+FD/21FF: DE 09 40     DEC $4009,X
+FD/2202: 12 7F        ORA ($7F)
+FD/2204: B0 20        BCS $2226
+FD/2206: 3E 18 1F     ROL $1F18,X
+FD/2209: D9 8A C4     CMP $C48A,Y
+FD/220C: 09 60        ORA #$60
+FD/220E: 6C DB 02     JMP ($02DB)
+FD/2211: 40           RTI

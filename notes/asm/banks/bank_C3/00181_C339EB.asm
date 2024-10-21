@@ -1,0 +1,134 @@
+C3/39EB: 00 F8        BRK $F8
+C3/39ED: E0 00        CPX #$00
+C3/39EF: 6A           ROR
+C3/39F0: 00 F0        BRK $F0
+C3/39F2: E0 69        CPX #$69
+C3/39F4: 00 E8        BRK $E8
+C3/39F6: E0 04        CPX #$04
+C3/39F8: 07 27        ORA [$27]
+C3/39FA: 4E 00 26     LSR $2600
+C3/39FD: 00 E0        BRK $E0
+C3/39FF: F0 17        BEQ $3A18
+C3/3A01: 41 6B        EOR ($6B,X)
+C3/3A03: 09 16 00     ORA #$0016
+C3/3A06: E0 E8        CPX #$E8
+C3/3A08: 07 15        ORA [$15]
+C3/3A0A: 00 06        BRK $06
+C3/3A0C: 00 00        BRK $00
+C3/3A0E: E0 E0        CPX #$E0
+C3/3A10: 07 29        ORA [$29]
+C3/3A12: 02 E9        COP $E9
+C3/3A14: F0 00        BEQ $3A16
+C3/3A16: 28           PLP
+C3/3A17: 02 E1        COP $E1
+C3/3A19: F0 19        BEQ $3A34
+C3/3A1B: 02 E9        COP $E9
+C3/3A1D: E8           INX
+C3/3A1E: 00 18        BRK $18
+C3/3A20: 02 E1        COP $E1
+C3/3A22: E8           INX
+C3/3A23: 09 02 E9     ORA #$E902
+C3/3A26: E0 00        CPX #$00
+C3/3A28: 08           PHP
+C3/3A29: 02 E1        COP $E1
+C3/3A2B: E0 0A        CPX #$0A
+C3/3A2D: 2C 02 F0     BIT $F002
+C3/3A30: 00 F0        BRK $F0
+C3/3A32: 2B           PLD
+C3/3A33: 02 E8        COP $E8
+C3/3A35: F0 2A        BEQ $3A61
+C3/3A37: 02 E0        COP $E0
+C3/3A39: 00 F0        BRK $F0
+C3/3A3B: 1C 02 F0     TRB $F002
+C3/3A3E: E8           INX
+C3/3A3F: 1B           TCS
+C3/3A40: 02 E8        COP $E8
+C3/3A42: 00 E8        BRK $E8
+C3/3A44: 1A           INC
+C3/3A45: 02 E0        COP $E0
+C3/3A47: E8           INX
+C3/3A48: 0C 02 F0     TSB $F002
+C3/3A4B: A8           TAY
+C3/3A4C: E0 0B        CPX #$0B
+C3/3A4E: 02 A2        COP $A2
+C3/3A50: 03 02        ORA $02,S
+C3/3A52: 3E 00 2E     ROL $2E00,X
+C3/3A55: 3E 00 AA     ROL $AA00,X
+C3/3A58: 2D 3E 00     AND $003E
+C3/3A5B: 1E 3E 00     ASL $003E,X
+C3/3A5E: 1D 3E 00     ORA $003E,X
+C3/3A61: 0E 3E 00     ASL $003E
+C3/3A64: AA           TAX
+C3/3A65: 0D 3E 10     ORA $103E
+C3/3A68: 59 3E 00     EOR $003E,Y
+C3/3A6B: 58           CLI
+C3/3A6C: 3E 00 57     ROL $5700,X
+C3/3A6F: 3E 00 AA     ROL $AA00,X
+C3/3A72: 49 3E 00     EOR #$003E
+C3/3A75: 48           PHA
+C3/3A76: 3E 00 47     ROL $4700,X
+C3/3A79: 3E 00 39     ROL $3900,X
+C3/3A7C: 3E 00 0A     ROL $0A00,X
+C3/3A7F: 38           SEC
+C3/3A80: 3E 00 37     ROL $3700,X
+C3/3A83: 3E 00 09     ROL $0900,X
+C3/3A86: 54 08 18     MVN $08,$18
+C3/3A89: 00 E0        BRK $E0
+C3/3A8B: 53 08        EOR ($08,S),Y
+C3/3A8D: 10 E0        BPL $3A6F
+C3/3A8F: 12 08        ORA ($08)
+C3/3A91: 08           PHP
+C3/3A92: 08           PHP
+C3/3A93: E0 11        CPX #$11
+C3/3A95: 08           PHP
+C3/3A96: 34 01        BIT $01,X
+C3/3A98: 08           PHP
+C3/3A99: F8           SED
+C3/3A9A: E0 03        CPX #$03
+C3/3A9C: 00 08        BRK $08
+C3/3A9E: F0 E0        BEQ $3A80
+C3/3AA0: 02 08        COP $08
+C3/3AA2: E8           INX
+C3/3AA3: E0 01        CPX #$01
+C3/3AA5: 00 08        BRK $08
+C3/3AA7: E0 E0        CPX #$E0
+C3/3AA9: 04 5A        TSB $5A
+C3/3AAB: 28           PLP
+C3/3AAC: F0 E0        BEQ $3A8E
+C3/3AAE: 00 56        BRK $56
+C3/3AB0: 28           PLP
+C3/3AB1: E8           INX
+C3/3AB2: E0 55        CPX #$55
+C3/3AB4: 28           PLP
+C3/3AB5: E0 E0        CPX #$E0
+C3/3AB7: 04 0A        TSB $0A
+C3/3AB9: 3F AC 0A 2F  AND $2F0AAC,X
+C3/3ABD: 06 00        ASL $00
+C3/3ABF: F8           SED
+C3/3AC0: 1F 00 06 00  ORA $000600,X
+C3/3AC4: F0 0F        BEQ $3AD5
+C3/3AC6: 06 00        ASL $00
+C3/3AC8: E8           INX
+C3/3AC9: 3E 01 C0     ROL $C001,X
+C3/3ACC: 00 3D        BRK $3D
+C3/3ACE: 06 F8        ASL $F8
+C3/3AD0: E0 3C        CPX #$3C
+C3/3AD2: 06 F0        ASL $F0
+C3/3AD4: 00 E0        BRK $E0
+C3/3AD6: 3B           TSC
+C3/3AD7: 06 E8        ASL $E8
+C3/3AD9: E0 3A        CPX #$3A
+C3/3ADB: 06 E0        ASL $E0
+C3/3ADD: 00 E0        BRK $E0
+C3/3ADF: 0F 70 2A 00  ORA $002A70
+C3/3AE3: 00 72        BRK $72
+C3/3AE5: 2A           ROL
+C3/3AE6: 00 10        BRK $10
+C3/3AE8: 00 74        BRK $74
+C3/3AEA: 2A           ROL
+C3/3AEB: 20 00 76     JSR $7600
+C3/3AEE: 2A           ROL
+C3/3AEF: 00 30        BRK $30
+C3/3AF1: 00 78        BRK $78
+C3/3AF3: 2A           ROL
+C3/3AF4: 40           RTI

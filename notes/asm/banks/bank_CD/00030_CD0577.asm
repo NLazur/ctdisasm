@@ -1,0 +1,29 @@
+CD/0577: 7B           TDC
+CD/0578: AA           TAX
+CD/0579: FE 6A C8     INC $C86A,X
+CD/057C: BD 6D C8     LDA $C86D,X
+CD/057F: 38           SEC
+CD/0580: E9 02        SBC #$02
+CD/0582: 9D 6D C8     STA $C86D,X
+CD/0585: FE 70 C8     INC $C870,X
+CD/0588: C2 20        REP #$20
+CD/058A: 8A           TXA
+CD/058B: 18           CLC
+CD/058C: 69 2D 00     ADC #$002D
+CD/058F: AA           TAX
+CD/0590: 7B           TDC
+CD/0591: E2 20        SEP #$20
+CD/0593: E0 95 01     CPX #$0195
+CD/0596: D0 E1        BNE $0579
+CD/0598: C2 20        REP #$20
+CD/059A: AD F5 C8     LDA $C8F5
+CD/059D: 18           CLC
+CD/059E: 69 04 00     ADC #$0004
+CD/05A1: 8D F5 C8     STA $C8F5
+CD/05A4: AD 4F C9     LDA $C94F
+CD/05A7: 18           CLC
+CD/05A8: 69 04 00     ADC #$0004
+CD/05AB: 8D 4F C9     STA $C94F
+CD/05AE: 7B           TDC
+CD/05AF: E2 20        SEP #$20
+CD/05B1: 60           RTS

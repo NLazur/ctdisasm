@@ -1,0 +1,46 @@
+C2/EC38: 08           PHP
+C2/EC39: E2 30        SEP #$30
+C2/EC3B: AE 46 0D     LDX $0D46
+C2/EC3E: BF 70 CE FF  LDA $FFCE70,X
+C2/EC42: 85 00        STA $00
+C2/EC44: A0 06        LDY #$06
+C2/EC46: C2 30        REP #$30
+C2/EC48: A6 61        LDX $61
+C2/EC4A: A5 00        LDA $00
+C2/EC4C: 9D 00 00     STA $0000,X
+C2/EC4F: 1A           INC
+C2/EC50: 9D 02 00     STA $0002,X
+C2/EC53: 1A           INC
+C2/EC54: 9D 04 00     STA $0004,X
+C2/EC57: 1A           INC
+C2/EC58: 9D 06 00     STA $0006,X
+C2/EC5B: 1A           INC
+C2/EC5C: 9D 08 00     STA $0008,X
+C2/EC5F: 1A           INC
+C2/EC60: 9D 0A 00     STA $000A,X
+C2/EC63: 1A           INC
+C2/EC64: 85 00        STA $00
+C2/EC66: 8A           TXA
+C2/EC67: 18           CLC
+C2/EC68: 69 40 00     ADC #$0040
+C2/EC6B: AA           TAX
+C2/EC6C: 88           DEY
+C2/EC6D: D0 DB        BNE $EC4A
+C2/EC6F: AD 46 0D     LDA $0D46
+C2/EC72: 29 07 00     AND #$0007
+C2/EC75: 0A           ASL
+C2/EC76: AA           TAX
+C2/EC77: BF 78 CE FF  LDA $FFCE78,X
+C2/EC7B: AA           TAX
+C2/EC7C: A5 01        LDA $01
+C2/EC7E: 29 1C 00     AND #$001C
+C2/EC81: 0A           ASL
+C2/EC82: 0A           ASL
+C2/EC83: 0A           ASL
+C2/EC84: 69 80 94     ADC #$9480
+C2/EC87: A8           TAY
+C2/EC88: A9 1F 00     LDA #$001F
+C2/EC8B: 54 7E FF     MVN $7E,$FF
+C2/EC8E: EE 15 0D     INC $0D15
+C2/EC91: 28           PLP
+C2/EC92: 60           RTS

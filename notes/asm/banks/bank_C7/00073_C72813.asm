@@ -1,0 +1,59 @@
+C7/2813: 95 61        STA $61,X
+C7/2815: F3 80        SBC ($80,S),Y
+C7/2817: A8           TAY
+C7/2818: 0A           ASL
+C7/2819: D5 A1        CMP $A1,X
+C7/281B: F3 3F        SBC ($3F,S),Y
+C7/281D: BD 06 E4     LDA $E406,X
+C7/2820: B5 D5        LDA $D5,X
+C7/2822: 20 F5 E4     JSR $E4F5
+C7/2825: B6 D5        LDX $D5,Y
+C7/2827: 21 F5        AND ($F5,X)
+C7/2829: F5 51        SBC $51,X
+C7/282B: 01 F0        ORA ($F0,X)
+C7/282D: 33 C4        AND ($C4,S),Y
+C7/282F: A5 3F        LDA $3F
+C7/2831: A2 18 C8     LDX #$C818
+C7/2834: 10 B0        BPL $27E6
+C7/2836: 04 8D        TSB $8D
+C7/2838: 00 2F        BRK $2F
+C7/283A: 04 F5        TSB $F5
+C7/283C: 10 01        BPL $283F
+C7/283E: FD F6 87     SBC $87F6,X
+C7/2841: 1D FD D0     ORA $D0FD,X
+C7/2844: 04 BA        TSB $BA
+C7/2846: B5 2F        LDA $2F,X
+C7/2848: 11 CB        ORA ($CB),Y
+C7/284A: 9D E4 B6     STA $B6E4,X
+C7/284D: CF DA 9B E4  CMP $E49BDA
+C7/2851: B5 EB        LDA $EB,X
+C7/2853: 9D CF DD     STA $DDCF,X
+C7/2856: 8D 00 7A     STA $7A00
+C7/2859: 9B           TXY
+C7/285A: D5 00        CMP $00,X
+C7/285C: F3 DD        SBC ($DD,S),Y
+C7/285E: D5 01        CMP $01,X
+C7/2860: F3 F5        SBC ($F5,S),Y
+C7/2862: 70 01        BVS $2865
+C7/2864: F0 07        BEQ $286D
+C7/2866: C4 A5        CPY $A5
+C7/2868: 3F 60 19 E8  AND $E81960,X
+C7/286C: 00 D5        BRK $D5
+C7/286E: 00 F5        BRK $F5
+C7/2870: D5 01        CMP $01,X
+C7/2872: F5 D5        SBC $D5,X
+C7/2874: A0 F4 D5     LDY #$D5F4
+C7/2877: A1 F4        LDA ($F4,X)
+C7/2879: D5 C0        CMP $C0,X
+C7/287B: F3 D5        SBC ($D5,S),Y
+C7/287D: C1 F3        CMP ($F3,X)
+C7/287F: D5 E0        CMP $E0,X
+C7/2881: F4 C8 10     PEA $10C8
+C7/2884: B0 1E        BCS $28A4
+C7/2886: 09 91        ORA #$91
+C7/2888: 24 E4        BIT $E4
+C7/288A: 86 24        STX $24
+C7/288C: 91 D0        STA ($D0),Y
+C7/288E: 37 E4        AND [$E4],Y
+C7/2890: 91 24        STA ($24),Y
+C7/2892: 60           RTS

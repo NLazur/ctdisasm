@@ -1,0 +1,2 @@
+C3/FE0D: FE 03 04     INC $0403,X
+C3/FE10: 40           RTI

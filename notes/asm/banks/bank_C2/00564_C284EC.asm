@@ -1,0 +1,44 @@
+C2/84EC: F4 00 00     PEA $0000
+C2/84EF: 2B           PLD
+C2/84F0: F4 00 00     PEA $0000
+C2/84F3: AB           PLB
+C2/84F4: AB           PLB
+C2/84F5: E2 20        SEP #$20
+C2/84F7: A9 01        LDA #$01
+C2/84F9: 2C 12 42     BIT $4212
+C2/84FC: D0 FB        BNE $84F9
+C2/84FE: A6 F2        LDX $F2
+C2/8500: 86 FE        STX $FE
+C2/8502: AD 18 42     LDA $4218
+C2/8505: 29 F0        AND #$F0
+C2/8507: 85 F2        STA $F2
+C2/8509: AD 19 42     LDA $4219
+C2/850C: 29 0F        AND #$0F
+C2/850E: 85 F3        STA $F3
+C2/8510: AD 19 42     LDA $4219
+C2/8513: 4A           LSR
+C2/8514: 4A           LSR
+C2/8515: 4A           LSR
+C2/8516: 4A           LSR
+C2/8517: 04 F2        TSB $F2
+C2/8519: C2 30        REP #$30
+C2/851B: AD 18 42     LDA $4218
+C2/851E: C9 30 30     CMP #$3030
+C2/8521: D0 04        BNE $8527
+C2/8523: 5C 00 FF C0  JMP $C0FF00
+C2/8527: A5 F2        LDA $F2
+C2/8529: 45 FE        EOR $FE
+C2/852B: 25 F2        AND $F2
+C2/852D: 85 F0        STA $F0
+C2/852F: 85 F4        STA $F4
+C2/8531: E2 10        SEP #$10
+C2/8533: A6 FD        LDX $FD
+C2/8535: A5 F2        LDA $F2
+C2/8537: 25 FE        AND $FE
+C2/8539: F0 05        BEQ $8540
+C2/853B: CA           DEX
+C2/853C: D0 04        BNE $8542
+C2/853E: 04 F4        TSB $F4
+C2/8540: A6 FC        LDX $FC
+C2/8542: 86 FD        STX $FD
+C2/8544: 60           RTS

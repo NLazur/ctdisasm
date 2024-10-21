@@ -1,0 +1,181 @@
+FF/A3F4: 2C 93 7C     BIT $7C93
+FF/A3F7: 23 F4        AND $F4,S
+FF/A3F9: 43 EC        EOR $EC,S
+FF/A3FB: A3 DC        LDA $DC,S
+FF/A3FD: 13 B4        ORA ($B4,S),Y
+FF/A3FF: 03 E9        ORA $E9,S
+FF/A401: 00 D9        BRK $D9
+FF/A403: 00 F9        BRK $F9
+FF/A405: 00 D9        BRK $D9
+FF/A407: 00 B9        BRK $B9
+FF/A409: 00 59        BRK $59
+FF/A40B: 00 E9        BRK $E9
+FF/A40D: 00 F9        BRK $F9
+FF/A40F: 00 6F        BRK $6F
+FF/A411: B4 6D        LDY $6D,X
+FF/A413: B0 6A        BCS $A47F
+FF/A415: B1 65        LDA ($65),Y
+FF/A417: B8           CLV
+FF/A418: 64 BF        STZ $BF
+FF/A41A: 7F 80 00 FF  ADC $FF0080,X
+FF/A41E: 00 FF        BRK $FF
+FF/A420: 3B           TSC
+FF/A421: 00 3F        BRK $3F
+FF/A423: 00 3F        BRK $3F
+FF/A425: 00 3F        BRK $3F
+FF/A427: 00 3F        BRK $3F
+FF/A429: 00 00        BRK $00
+FF/A42B: 00 00        BRK $00
+FF/A42D: 00 FF        BRK $FF
+FF/A42F: 00 FF        BRK $FF
+FF/A431: 69 FD        ADC #$FD
+FF/A433: 51 FF        EOR ($FF),Y
+FF/A435: A6 FE        LDX $FE
+FF/A437: 4C D5 A0     JMP $A0D5
+FF/A43A: FF 00 00 FF  SBC $FF0000,X
+FF/A43E: 00 FF        BRK $FF
+FF/A440: 96 00        STX $00,Y
+FF/A442: AE 00 59     LDX $5900
+FF/A445: 00 B3        BRK $B3
+FF/A447: 00 7F        BRK $7F
+FF/A449: 00 00        BRK $00
+FF/A44B: 00 00        BRK $00
+FF/A44D: 00 FF        BRK $FF
+FF/A44F: 00 EC        BRK $EC
+FF/A451: 49 F3        EOR #$F3
+FF/A453: 9C B2 08     STZ $08B2
+FF/A456: E6 B2        INC $B2
+FF/A458: DD 64 FF     CMP $FF64,X
+FF/A45B: 00 00        BRK $00
+FF/A45D: FF 00 FF B7  SBC $B7FF00,X
+FF/A461: 00 6F        BRK $6F
+FF/A463: 00 FF        BRK $FF
+FF/A465: 00 5D        BRK $5D
+FF/A467: 00 BB        BRK $BB
+FF/A469: 00 00        BRK $00
+FF/A46B: 00 00        BRK $00
+FF/A46D: 00 FF        BRK $FF
+FF/A46F: 00 B4        BRK $B4
+FF/A471: 43 64        EOR $64,S
+FF/A473: 83 B4        STA $B4,S
+FF/A475: 03 D4        ORA $D4,S
+FF/A477: 03 E4        ORA $E4,S
+FF/A479: 23 FC        AND $FC,S
+FF/A47B: 03 00        ORA $00,S
+FF/A47D: FF 00 FF F9  SBC $F9FF00,X
+FF/A481: 00 F9        BRK $F9
+FF/A483: 00 F9        BRK $F9
+FF/A485: 00 F9        BRK $F9
+FF/A487: 00 D9        BRK $D9
+FF/A489: 00 01        BRK $01
+FF/A48B: 00 01        BRK $01
+FF/A48D: 00 FF        BRK $FF
+FF/A48F: 00 B7        BRK $B7
+FF/A491: 41 6F        EOR ($6F,X)
+FF/A493: 83 BB        STA $BB,S
+FF/A495: 02 D6        COP $D6
+FF/A497: 05 E2        ORA $E2
+FF/A499: C4 CD        CPY $CD
+FF/A49B: 80 B3        BRA $A450
+FF/A49D: 08           PHP
+FF/A49E: 7F 29 FE 00  ADC $00FE29,X
+FF/A4A2: FC 00 FD     JSR ($FD00,X)
+FF/A4A5: 00 FB        BRK $FB
+FF/A4A7: 00 3F        BRK $3F
+FF/A4A9: 00 7F        BRK $7F
+FF/A4AB: 00 FF        BRK $FF
+FF/A4AD: 00 D6        BRK $D6
+FF/A4AF: 00 FF        BRK $FF
+FF/A4B1: 69 FD        ADC #$FD
+FF/A4B3: 51 FF        EOR ($FF),Y
+FF/A4B5: A6 FE        LDX $FE
+FF/A4B7: 4C D5 A0     JMP $A0D5
+FF/A4BA: DB           STP
+FF/A4BB: 24 66        BIT $66
+FF/A4BD: 18           CLC
+FF/A4BE: DE 22 96     DEC $9622,X
+FF/A4C1: 00 AE        BRK $AE
+FF/A4C3: 00 59        BRK $59
+FF/A4C5: 00 B3        BRK $B3
+FF/A4C7: 00 7F        BRK $7F
+FF/A4C9: 00 FF        BRK $FF
+FF/A4CB: 00 FF        BRK $FF
+FF/A4CD: 00 FD        BRK $FD
+FF/A4CF: 00 EC        BRK $EC
+FF/A4D1: 49 F3        EOR #$F3
+FF/A4D3: 9C B2 08     STZ $08B2
+FF/A4D6: E6 B2        INC $B2
+FF/A4D8: DD 64 B6     CMP $B664,X
+FF/A4DB: 01 7B        ORA ($7B,X)
+FF/A4DD: 05 3F        ORA $3F
+FF/A4DF: 02 B7        COP $B7
+FF/A4E1: 00 6F        BRK $6F
+FF/A4E3: 00 FF        BRK $FF
+FF/A4E5: 00 5D        BRK $5D
+FF/A4E7: 00 BB        BRK $BB
+FF/A4E9: 00 FF        BRK $FF
+FF/A4EB: 00 FE        BRK $FE
+FF/A4ED: 00 FD        BRK $FD
+FF/A4EF: 00 9F        BRK $9F
+FF/A4F1: 44 1D 08     MVP $1D,$08
+FF/A4F4: EA           NOP
+FF/A4F5: 81 D5        STA ($D5,X)
+FF/A4F7: 00 B8        BRK $B8
+FF/A4F9: 23 35        AND $35,S
+FF/A4FB: 12 FE        ORA ($FE)
+FF/A4FD: 20 7B 6A     JSR $6A7B
+FF/A500: FB           XCE
+FF/A501: 00 F7        BRK $F7
+FF/A503: 00 7F        BRK $7F
+FF/A505: 00 FF        BRK $FF
+FF/A507: 00 DF        BRK $DF
+FF/A509: 00 EF        BRK $EF
+FF/A50B: 00 DF        BRK $DF
+FF/A50D: 00 95        BRK $95
+FF/A50F: 00 FE        BRK $FE
+FF/A511: B2 99        LDA ($99)
+FF/A513: 24 1B        BIT $1B
+FF/A515: 2C 15 C8     BIT $C815
+FF/A518: CE 31 1B     DEC $1B31
+FF/A51B: 45 65        EOR $65
+FF/A51D: 80 CA        BRA $A4E9
+FF/A51F: 00 4D        BRK $4D
+FF/A521: 00 FF        BRK $FF
+FF/A523: 00 F7        BRK $F7
+FF/A525: 00 FF        BRK $FF
+FF/A527: 00 FF        BRK $FF
+FF/A529: 00 FE        BRK $FE
+FF/A52B: 00 FF        BRK $FF
+FF/A52D: 00 FF        BRK $FF
+FF/A52F: 00 7F        BRK $7F
+FF/A531: 02 B7        COP $B7
+FF/A533: 04 FD        TSB $FD
+FF/A535: 99 DF 06     STA $06DF,Y
+FF/A538: 2F 0A DF 01  AND $01DF0A
+FF/A53C: FF 44 DF 28  SBC $28DF44,X
+FF/A540: FD 00 FB     SBC $FB00,X
+FF/A543: 00 66        BRK $66
+FF/A545: 00 F9        BRK $F9
+FF/A547: 00 F5        BRK $F5
+FF/A549: 00 FE        BRK $FE
+FF/A54B: 00 BB        BRK $BB
+FF/A54D: 00 F7        BRK $F7
+FF/A54F: 00 9E        BRK $9E
+FF/A551: 63 7F        ADC $7F,S
+FF/A553: CC E6 01     CPY $01E6
+FF/A556: 0B           PHD
+FF/A557: E2 16        SEP #$16
+FF/A559: 84 2D        STY $2D
+FF/A55B: 08           PHP
+FF/A55C: DE 04 BF     DEC $BF04,X
+FF/A55F: 0A           ASL
+FF/A560: FD 00 B3     SBC $B300,X
+FF/A563: 00 FF        BRK $FF
+FF/A565: 00 FD        BRK $FD
+FF/A567: 00 FB        BRK $FB
+FF/A569: 00 F7        BRK $F7
+FF/A56B: 00 FB        BRK $FB
+FF/A56D: 00 F5        BRK $F5
+FF/A56F: 00 BF        BRK $BF
+FF/A571: 51 B7        EOR ($B7),Y
+FF/A573: 6B           RTL

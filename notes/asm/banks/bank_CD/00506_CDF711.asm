@@ -1,0 +1,94 @@
+CD/F711: 00 40        BRK $40
+CD/F713: 00 42        BRK $42
+CD/F715: 01 4C        ORA ($4C,X)
+CD/F717: 01 49        ORA ($49,X)
+CD/F719: 82 08 00     BRL $CDF724
+CD/F71C: 08           PHP
+CD/F71D: 01 08        ORA ($08,X)
+CD/F71F: 02 08        COP $08
+CD/F721: 03 50        ORA $50,S
+CD/F723: 82 3E 82     BRL $CD7964
+CD/F726: 48           PHA
+CD/F727: 00 49        BRK $49
+CD/F729: 00 4A        BRK $4A
+CD/F72B: 00 4B        BRK $4B
+CD/F72D: 01 46        ORA ($46,X)
+CD/F72F: 80 40        BRA $F771
+CD/F731: 80 4C        BRA $F77F
+CD/F733: 00 00        BRK $00
+CD/F735: 00 01        BRK $01
+CD/F737: 00 02        BRK $02
+CD/F739: 00 03        BRK $03
+CD/F73B: 00 04        BRK $04
+CD/F73D: 00 05        BRK $05
+CD/F73F: 00 06        BRK $06
+CD/F741: 00 07        BRK $07
+CD/F743: 00 0F        BRK $0F
+CD/F745: 01 45        ORA ($45,X)
+CD/F747: 00 40        BRK $40
+CD/F749: 00 40        BRK $40
+CD/F74B: 82 06 00     BRL $CDF754
+CD/F74E: 48           PHA
+CD/F74F: 82 49 82     BRL $CD799B
+CD/F752: 4A           LSR
+CD/F753: 82 4B 82     BRL $CD79A1
+CD/F756: 4C 82 4D     JMP $4D82
+CD/F759: 82 4E 82     BRL $CD79AA
+CD/F75C: 4F 82 13 82  EOR $821382
+CD/F760: 0E 82 13     ASL $1382
+CD/F763: 82 19 82     BRL $CD797F
+CD/F766: 1A           INC
+CD/F767: 00 09        BRK $09
+CD/F769: 01 40        ORA ($40,X)
+CD/F76B: 01 4D        ORA ($4D,X)
+CD/F76D: 00 4D        BRK $4D
+CD/F76F: 01 40        ORA ($40,X)
+CD/F771: 00 40        BRK $40
+CD/F773: 01 06        ORA ($06,X)
+CD/F775: 01 54        ORA ($54,X)
+CD/F777: 82 36 00     BRL $CDF7B0
+CD/F77A: 37 00        AND [$00],Y
+CD/F77C: 36 00        ROL $00,X
+CD/F77E: 3F 82 4C 82  AND $824C82,X
+CD/F782: 4D 82 4E     EOR $4E82
+CD/F785: 82 4F 82     BRL $CD79D7
+CD/F788: 06 00        ASL $00
+CD/F78A: 06 01        ASL $01
+CD/F78C: 06 02        ASL $02
+CD/F78E: 06 03        ASL $03
+CD/F790: 02 00        COP $00
+CD/F792: 02 01        COP $01
+CD/F794: 02 02        COP $02
+CD/F796: 02 03        COP $03
+CD/F798: 02 01        COP $01
+CD/F79A: 06 01        ASL $01
+CD/F79C: 00 00        BRK $00
+CD/F79E: 00 01        BRK $01
+CD/F7A0: 00 02        BRK $02
+CD/F7A2: 00 03        BRK $03
+CD/F7A4: 50 00        BVC $F7A6
+CD/F7A6: 50 01        BVC $F7A9
+CD/F7A8: 51 00        EOR ($00),Y
+CD/F7AA: 51 01        EOR ($01),Y
+CD/F7AC: 4E 00 40     LSR $4000
+CD/F7AF: 00 41        BRK $41
+CD/F7B1: 01 42        ORA ($42,X)
+CD/F7B3: 02 43        COP $43
+CD/F7B5: 03 58        ORA $58,S
+CD/F7B7: 00 59        BRK $59
+CD/F7B9: 00 5A        BRK $5A
+CD/F7BB: 00 5B        BRK $5B
+CD/F7BD: 00 5A        BRK $5A
+CD/F7BF: 00 59        BRK $59
+CD/F7C1: 00 48        BRK $48
+CD/F7C3: 82 40 01     BRL $CDF906
+CD/F7C6: 00 00        BRK $00
+CD/F7C8: 01 01        ORA ($01,X)
+CD/F7CA: 02 02        COP $02
+CD/F7CC: 03 03        ORA $03,S
+CD/F7CE: 00 00        BRK $00
+CD/F7D0: 00 01        BRK $01
+CD/F7D2: 00 00        BRK $00
+CD/F7D4: 00 00        BRK $00
+CD/F7D6: 06 00        ASL $00
+CD/F7D8: 40           RTI

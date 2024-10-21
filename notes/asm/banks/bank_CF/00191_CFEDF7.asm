@@ -1,0 +1,5 @@
+CF/EDF7: AD 13 A0     LDA $A013
+CF/EDFA: F0 05        BEQ $EE01
+CF/EDFC: AD D1 A3     LDA $A3D1
+CF/EDFF: F0 01        BEQ $EE02
+CF/EE01: 60           RTS

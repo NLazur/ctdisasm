@@ -1,0 +1,31 @@
+D1/31EB: 42 C8        WDM $C8
+D1/31ED: 39 38 C8     AND $C838,Y
+D1/31F0: 00 E8        BRK $E8
+D1/31F2: C0 50        CPY #$50
+D1/31F4: 00 40        BRK $40
+D1/31F6: 42 CA        WDM $CA
+D1/31F8: 4C 38 CA     JMP $CA38
+D1/31FB: 00 EA        BRK $EA
+D1/31FD: C0 50        CPY #$50
+D1/31FF: 00 40        BRK $40
+D1/3201: 42 CC        WDM $CC
+D1/3203: 5F 38 CC 00  EOR $00CC38,X
+D1/3207: EC C0 50     CPX $50C0
+D1/320A: 00 40        BRK $40
+D1/320C: 42 CE        WDM $CE
+D1/320E: 72 38        ADC ($38)
+D1/3210: CE 00 C0     DEC $C000
+D1/3213: C0 50        CPY #$50
+D1/3215: 00 40        BRK $40
+D1/3217: 42 E0        WDM $E0
+D1/3219: 85 38        STA $38
+D1/321B: E0 00 C2     CPX #$C200
+D1/321E: C0 50        CPY #$50
+D1/3220: 00 40        BRK $40
+D1/3222: 42 E2        WDM $E2
+D1/3224: 98           TYA
+D1/3225: 38           SEC
+D1/3226: E2 00        SEP #$00
+D1/3228: C4 C0        CPY $C0
+D1/322A: 50 00        BVC $322C
+D1/322C: 40           RTI

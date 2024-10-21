@@ -1,0 +1,34 @@
+C1/8975: 7B           TDC
+C1/8976: AD 7B B1     LDA $B17B
+C1/8979: D0 03        BNE $897E
+C1/897B: AD C7 AE     LDA $AEC7
+C1/897E: 3A           DEC
+C1/897F: AA           TAX
+C1/8980: BD 63 B1     LDA $B163,X
+C1/8983: A8           TAY
+C1/8984: A9 01        LDA #$01
+C1/8986: 99 CC AF     STA $AFCC,Y
+C1/8989: B9 EA B0     LDA $B0EA,Y
+C1/898C: 99 3D AF     STA $AF3D,Y
+C1/898F: C2 20        REP #$20
+C1/8991: AD 86 B1     LDA $B186
+C1/8994: 29 FF 1B     AND #$1BFF
+C1/8997: 8D 86 B1     STA $B186
+C1/899A: 7B           TDC
+C1/899B: E2 20        SEP #$20
+C1/899D: B9 5B B0     LDA $B05B,Y
+C1/89A0: 3A           DEC
+C1/89A1: 99 5B B0     STA $B05B,Y
+C1/89A4: D0 12        BNE $89B8
+C1/89A6: A9 0A        LDA #$0A
+C1/89A8: 99 5B B0     STA $B05B,Y
+C1/89AB: 98           TYA
+C1/89AC: C2 20        REP #$20
+C1/89AE: EB           XBA
+C1/89AF: 4A           LSR
+C1/89B0: AA           TAX
+C1/89B1: 7B           TDC
+C1/89B2: E2 20        SEP #$20
+C1/89B4: 7B           TDC
+C1/89B5: 99 CC AF     STA $AFCC,Y
+C1/89B8: 60           RTS

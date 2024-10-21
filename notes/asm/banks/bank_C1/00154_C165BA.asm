@@ -1,0 +1,90 @@
+C1/65BA: 7B           TDC
+C1/65BB: AA           TAX
+C1/65BC: 86 82        STX $82
+C1/65BE: 86 84        STX $84
+C1/65C0: 86 8C        STX $8C
+C1/65C2: 38           SEC
+C1/65C3: A5 D5        LDA $D5
+C1/65C5: E5 D3        SBC $D3
+C1/65C7: 85 D7        STA $D7
+C1/65C9: A9 00        LDA #$00
+C1/65CB: E9 00        SBC #$00
+C1/65CD: 85 D8        STA $D8
+C1/65CF: B0 02        BCS $65D3
+C1/65D1: E6 82        INC $82
+C1/65D3: 38           SEC
+C1/65D4: A5 D6        LDA $D6
+C1/65D6: E5 D4        SBC $D4
+C1/65D8: 85 D9        STA $D9
+C1/65DA: A9 00        LDA #$00
+C1/65DC: E9 00        SBC #$00
+C1/65DE: 85 DA        STA $DA
+C1/65E0: B0 02        BCS $65E4
+C1/65E2: E6 83        INC $83
+C1/65E4: A5 D7        LDA $D7
+C1/65E6: 45 D8        EOR $D8
+C1/65E8: 38           SEC
+C1/65E9: E5 D8        SBC $D8
+C1/65EB: 85 DE        STA $DE
+C1/65ED: 64 DF        STZ $DF
+C1/65EF: A5 D9        LDA $D9
+C1/65F1: 45 DA        EOR $DA
+C1/65F3: 38           SEC
+C1/65F4: E5 DA        SBC $DA
+C1/65F6: 85 E0        STA $E0
+C1/65F8: 64 E1        STZ $E1
+C1/65FA: A5 DE        LDA $DE
+C1/65FC: C5 E0        CMP $E0
+C1/65FE: 90 24        BCC $6624
+C1/6600: 85 B3        STA $B3
+C1/6602: 8D FE AA     STA $AAFE
+C1/6605: 4A           LSR
+C1/6606: 85 84        STA $84
+C1/6608: A5 E0        LDA $E0
+C1/660A: C2 20        REP #$20
+C1/660C: 20 0D 01     JSR $010D
+C1/660F: 85 B1        STA $B1
+C1/6611: 7B           TDC
+C1/6612: E2 20        SEP #$20
+C1/6614: 20 D7 00     JSR $00D7
+C1/6617: A6 B5        LDX $B5
+C1/6619: 8E 82 A8     STX $A882
+C1/661C: A2 00 01     LDX #$0100
+C1/661F: 8E 80 A8     STX $A880
+C1/6622: 80 26        BRA $664A
+C1/6624: E6 8C        INC $8C
+C1/6626: A5 E0        LDA $E0
+C1/6628: 85 B3        STA $B3
+C1/662A: 8D FE AA     STA $AAFE
+C1/662D: 4A           LSR
+C1/662E: 85 84        STA $84
+C1/6630: A5 DE        LDA $DE
+C1/6632: C2 20        REP #$20
+C1/6634: 20 0D 01     JSR $010D
+C1/6637: 85 B1        STA $B1
+C1/6639: 7B           TDC
+C1/663A: E2 20        SEP #$20
+C1/663C: 20 D7 00     JSR $00D7
+C1/663F: A6 B5        LDX $B5
+C1/6641: 8E 80 A8     STX $A880
+C1/6644: A2 00 01     LDX #$0100
+C1/6647: 8E 82 A8     STX $A882
+C1/664A: A5 82        LDA $82
+C1/664C: F0 0F        BEQ $665D
+C1/664E: C2 20        REP #$20
+C1/6650: AD 80 A8     LDA $A880
+C1/6653: 49 FF FF     EOR #$FFFF
+C1/6656: 1A           INC
+C1/6657: 8D 80 A8     STA $A880
+C1/665A: 7B           TDC
+C1/665B: E2 20        SEP #$20
+C1/665D: A5 83        LDA $83
+C1/665F: F0 0F        BEQ $6670
+C1/6661: C2 20        REP #$20
+C1/6663: AD 82 A8     LDA $A882
+C1/6666: 49 FF FF     EOR #$FFFF
+C1/6669: 1A           INC
+C1/666A: 8D 82 A8     STA $A882
+C1/666D: 7B           TDC
+C1/666E: E2 20        SEP #$20
+C1/6670: 60           RTS

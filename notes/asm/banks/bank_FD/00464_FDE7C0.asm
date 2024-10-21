@@ -1,0 +1,36 @@
+FD/E7C0: B9 22 05     LDA $0522,Y
+FD/E7C3: A8           TAY
+FD/E7C4: BF 01 20 7E  LDA $7E2001,X
+FD/E7C8: 29 7C        AND #$7C
+FD/E7CA: 8D 03 42     STA $4203
+FD/E7CD: EA           NOP
+FD/E7CE: EA           NOP
+FD/E7CF: EA           NOP
+FD/E7D0: AD 17 42     LDA $4217
+FD/E7D3: EB           XBA
+FD/E7D4: BF 00 20 7E  LDA $7E2000,X
+FD/E7D8: C2 20        REP #$20
+FD/E7DA: 29 1F 7C     AND #$7C1F
+FD/E7DD: 85 0C        STA $0C
+FD/E7DF: BF 00 20 7E  LDA $7E2000,X
+FD/E7E3: 29 E0 03     AND #$03E0
+FD/E7E6: 4A           LSR
+FD/E7E7: 4A           LSR
+FD/E7E8: E2 20        SEP #$20
+FD/E7EA: 8D 03 42     STA $4203
+FD/E7ED: EA           NOP
+FD/E7EE: EA           NOP
+FD/E7EF: EA           NOP
+FD/E7F0: AD 17 42     LDA $4217
+FD/E7F3: 29 F8        AND #$F8
+FD/E7F5: C2 20        REP #$20
+FD/E7F7: 0A           ASL
+FD/E7F8: 0A           ASL
+FD/E7F9: 05 0C        ORA $0C
+FD/E7FB: 9F 00 22 7E  STA $7E2200,X
+FD/E7FF: E2 20        SEP #$20
+FD/E801: E8           INX
+FD/E802: E8           INX
+FD/E803: 88           DEY
+FD/E804: D0 BE        BNE $E7C4
+FD/E806: 60           RTS

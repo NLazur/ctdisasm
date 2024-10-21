@@ -1,0 +1,19 @@
+FD/F4FD: 00 69        BRK $69
+FD/F4FF: 80 69        BRA $F56A
+FD/F501: 00 6A        BRK $6A
+FD/F503: 80 6A        BRA $F56F
+FD/F505: 00 69        BRK $69
+FD/F507: 80 69        BRA $F572
+FD/F509: 00 6A        BRK $6A
+FD/F50B: 80 6A        BRA $F577
+FD/F50D: 80 80        BRA $F48F
+FD/F50F: 80 80        BRA $F491
+FD/F511: 80 80        BRA $F493
+FD/F513: 80 80        BRA $F495
+FD/F515: 80 80        BRA $F497
+FD/F517: 80 80        BRA $F499
+FD/F519: 04 00        TSB $00
+FD/F51B: 26 80        ROL $80
+FD/F51D: 80 80        BRA $F49F
+FD/F51F: 80 00        BRA $F521
+FD/F521: 60           RTS

@@ -1,0 +1,61 @@
+CE/312E: 00 F8        BRK $F8
+CE/3130: F0 E0        BEQ $3112
+CE/3132: F0 53        BEQ $3187
+CE/3134: 31 95        AND ($95),Y
+CE/3136: 31 95        AND ($95),Y
+CE/3138: 31 9C        AND ($9C),Y
+CE/313A: 31 9C        AND ($9C),Y
+CE/313C: 31 A9        AND ($A9),Y
+CE/313E: 31 B4        AND ($B4),Y
+CE/3140: 31 BB        AND ($BB),Y
+CE/3142: 31 C2        AND ($C2),Y
+CE/3144: 31 53        AND ($53),Y
+CE/3146: 31 95        AND ($95),Y
+CE/3148: 31 95        AND ($95),Y
+CE/314A: 31 A9        AND ($A9),Y
+CE/314C: 31 B4        AND ($B4),Y
+CE/314E: 31 BB        AND ($BB),Y
+CE/3150: 31 C2        AND ($C2),Y
+CE/3152: 31 2D        AND ($2D),Y
+CE/3154: 80 02        BRA $3158
+CE/3156: F8           SED
+CE/3157: 3D 00 33     AND $3300,X
+CE/315A: 00 49        BRK $49
+CE/315C: 1F F8 41 1E  ORA $1E41F8,X
+CE/3160: 02 41        COP $41
+CE/3162: 1F 03 72 14  ORA $147203,X
+CE/3166: 02 36        COP $36
+CE/3168: 24 01        BIT $01
+CE/316A: 02 3A        COP $3A
+CE/316C: 7A           PLY
+CE/316D: DE 00 34     DEC $3400,X
+CE/3170: 1B           TCS
+CE/3171: 20 78 06     JSR $0678
+CE/3174: 23 20        AND $20,S
+CE/3176: 78           SEI
+CE/3177: 03 38        ORA $38,S
+CE/3179: 7B           TDC
+CE/317A: 78           SEI
+CE/317B: 00 36        BRK $36
+CE/317D: 2D 80 12     AND $1280
+CE/3180: A0 20        LDY #$20
+CE/3182: 08           PHP
+CE/3183: 27 DA        AND [$DA]
+CE/3185: 34 1A        BIT $1A,X
+CE/3187: 22 1B 00 20  JSR $20001B
+CE/318B: 20 06 03     JSR $0306
+CE/318E: 35 20        AND $20,X
+CE/3190: 14 28        TRB $28
+CE/3192: 2E 01 00     ROL $0001
+CE/3195: 24 02        BIT $02
+CE/3197: 27 23        AND [$23]
+CE/3199: 01 28        ORA ($28,X)
+CE/319B: 00 24        BRK $24
+CE/319D: 02 D9        COP $D9
+CE/319F: 00 09        BRK $09
+CE/31A1: 12 2B        ORA ($2B)
+CE/31A3: 22 1B 00 29  JSR $29001B
+CE/31A7: 5E 00 7A     LSR $7A00,X
+CE/31AA: DD 00 1E     CMP $1E00,X
+CE/31AD: 3F 77 00 1E  AND $1E0077,X
+CE/31B1: 40           RTI

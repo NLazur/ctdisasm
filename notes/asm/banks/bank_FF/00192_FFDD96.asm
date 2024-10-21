@@ -1,0 +1,24 @@
+FF/DD96: BF 41 9F 60  LDA $609F41,X
+FF/DD9A: FF 03 E7 18  SBC $18E703,X
+FF/DD9E: FB           XCE
+FF/DD9F: 04 F9        TSB $F9
+FF/DDA1: 06 FF        ASL $FF
+FF/DDA3: 00 41        BRK $41
+FF/DDA5: 41 40        EOR ($40,X)
+FF/DDA7: 23 20        AND $20,S
+FF/DDA9: 18           CLC
+FF/DDAA: 07 00        ORA [$00]
+FF/DDAC: FB           XCE
+FF/DDAD: 84 7F        STY $7F
+FF/DDAF: 84 FF        STY $FF
+FF/DDB1: 04 FB        TSB $FB
+FF/DDB3: 86 EF        STX $EF
+FF/DDB5: 18           CLC
+FF/DDB6: BF 57 7F C3  LDA $C37F57,X
+FF/DDBA: FF 00 82 04  SBC $048200,X
+FF/DDBE: 04 02        TSB $02
+FF/DDC0: 0A           ASL
+FF/DDC1: 35 C3        AND $C3,X
+FF/DDC3: 00 FF        BRK $FF
+FF/DDC5: 00 FF        BRK $FF
+FF/DDC7: 40           RTI

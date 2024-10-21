@@ -1,0 +1,134 @@
+FE/063E: F8           SED
+FE/063F: 16 48        ASL $48,X
+FE/0641: 0D AB 07     ORA $07AB
+FE/0644: 0E BC 00     ASL $00BC
+FE/0647: BE 03 C0     LDX $C003,Y
+FE/064A: 08           PHP
+FE/064B: C4 03        CPY $03
+FE/064D: 3D 01 8B     AND $8B01,X
+FE/0650: FE 42 60     INC $6042,X
+FE/0653: 0E B7 08     ASL $08B7
+FE/0656: F3 49        SBC ($49,S),Y
+FE/0658: 0F 09 00 03  ORA $030009
+FE/065C: 0E 3E F8     ASL $F83E
+FE/065F: 01 84        ORA ($84,X)
+FE/0661: 43 10        EOR $10,S
+FE/0663: 48           PHA
+FE/0664: 10 FF        BPL $0665
+FE/0666: 2E F8 C5     ROL $C5F8
+FE/0669: 98           TYA
+FE/066A: FA           PLX
+FE/066B: 2E 2E F8     ROL $F82E
+FE/066E: 07 99        ORA [$99]
+FE/0670: 02 18        COP $18
+FE/0672: 2A           ROL
+FE/0673: F8           SED
+FE/0674: 01 F8        ORA ($F8,X)
+FE/0676: FF 01 F8 01  SBC $01F801,X
+FE/067A: F8           SED
+FE/067B: 01 F8        ORA ($F8,X)
+FE/067D: 01 F8        ORA ($F8,X)
+FE/067F: 01 F8        ORA ($F8,X)
+FE/0681: 01 F8        ORA ($F8,X)
+FE/0683: 01 F8        ORA ($F8,X)
+FE/0685: 48           PHA
+FE/0686: 3B           TSC
+FE/0687: 1F 38 FB 49  ORA $49FB38,X
+FE/068B: D4 00        PEI $00
+FE/068D: 06 FD        ASL $FD
+FE/068F: F9 43 B6     SBC $B643,Y
+FE/0692: 0A           ASL
+FE/0693: 0A           ASL
+FE/0694: 0C 06 0C     TSB $0C06
+FE/0697: 3E FA 46     ROL $46FA,X
+FE/069A: B5 0A        LDA $0A,X
+FE/069C: 0F 0F 03 03  ORA $03030F
+FE/06A0: 47 41        EOR [$41]
+FE/06A2: 06 C3        ASL $C3
+FE/06A4: F8           SED
+FE/06A5: C0 96 05     CPY #$0596
+FE/06A8: 08           PHP
+FE/06A9: 03 BC        ORA $BC,S
+FE/06AB: 06 0F        ASL $0F
+FE/06AD: 1E 03 CA     ASL $CA03,X
+FE/06B0: 0D 30 F8     ORA $F830
+FE/06B3: FE 6E FD     INC $FD6E,X
+FE/06B6: 04 0A        TSB $0A
+FE/06B8: 0F 04 E0 03  ORA $03E004
+FE/06BC: 03 04        ORA $04,S
+FE/06BE: 0F 0A 03 05  ORA $05030A
+FE/06C2: 42 F8        WDM $F8
+FE/06C4: 01 5E        ORA ($5E,X)
+FE/06C6: 02 01        COP $01
+FE/06C8: 3C 05 08     BIT $0805,X
+FE/06CB: 0A           ASL
+FE/06CC: 0E 07 0A     ASL $0A07
+FE/06CF: 0A           ASL
+FE/06D0: C4 07        CPY $07
+FE/06D2: 0E 4B 06     ASL $064B
+FE/06D5: 07 08        ORA [$08]
+FE/06D7: 01 C5        ORA ($C5,X)
+FE/06D9: F8           SED
+FE/06DA: 3F 48 C8 02  AND $02C848,X
+FE/06DE: 08           PHP
+FE/06DF: 07 3D        ORA [$3D]
+FE/06E1: 08           PHP
+FE/06E2: 0E 07 3F     ASL $3F07
+FE/06E5: 00 43        BRK $43
+FE/06E7: 00 98        BRK $98
+FE/06E9: 07 08        ORA [$08]
+FE/06EB: 02 41        COP $41
+FE/06ED: F8           SED
+FE/06EE: 80 46        BRA $0736
+FE/06F0: 02 03        COP $03
+FE/06F2: FF 06 32 07  SBC $073206,X
+FE/06F6: 79 06 06     ADC $0606,Y
+FE/06F9: 06 7E        ASL $7E
+FE/06FB: 06 09        ASL $09
+FE/06FD: 00 09        BRK $09
+FE/06FF: 03 FE        ORA $FE,S
+FE/0701: 02 40        COP $40
+FE/0703: F8           SED
+FE/0704: 81 4E        STA ($4E,X)
+FE/0706: BE 0E F7     LDX $F70E,Y
+FE/0709: 00 80        BRK $80
+FE/070B: 00 07        BRK $07
+FE/070D: 08           PHP
+FE/070E: 8B           PHB
+FE/070F: 06 FF        ASL $FF
+FE/0711: 7F FE 3B 54  ADC $543BFE,X
+FE/0715: B4 07        LDY $07,X
+FE/0717: 39 10 47     AND $4710,Y
+FE/071A: 10 CC        BPL $06E8
+FE/071C: 07 07        ORA [$07]
+FE/071E: FA           PLX
+FE/071F: 81 61        STA ($61,X)
+FE/0721: 98           TYA
+FE/0722: 08           PHP
+FE/0723: 05 08        ORA $08
+FE/0725: 79 06 47     ADC $4706,Y
+FE/0728: 07 09        ORA [$09]
+FE/072A: 08           PHP
+FE/072B: 0B           PHD
+FE/072C: 00 83        BRK $83
+FE/072E: 3D F8 FF     AND $FFF8,X
+FE/0731: 6C 09 05     JMP ($0509)
+FE/0734: 0A           ASL
+FE/0735: 02 03        COP $03
+FE/0737: C4 07        CPY $07
+FE/0739: C0 05 03     CPY #$0305
+FE/073C: 02 0A        COP $0A
+FE/073E: 05 09        ORA $09
+FE/0740: 01 FD        ORA ($FD,X)
+FE/0742: 80 55        BRA $0799
+FE/0744: F3 FF        SBC ($FF,S),Y
+FE/0746: 05 40        ORA $40
+FE/0748: 00 01        BRK $01
+FE/074A: 02 40        COP $40
+FE/074C: 08           PHP
+FE/074D: F9 06 40     SBC $4006,Y
+FE/0750: 00 C6        BRK $C6
+FE/0752: 04 F7        TSB $F7
+FE/0754: 38           SEC
+FE/0755: F8           SED
+FE/0756: 40           RTI

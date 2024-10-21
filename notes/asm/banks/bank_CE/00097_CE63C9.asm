@@ -1,0 +1,325 @@
+CE/63C9: 0A           ASL
+CE/63CA: 24 01        BIT $01
+CE/63CC: 70 15        BVS $63E3
+CE/63CE: 00 2B        BRK $2B
+CE/63D0: 1B           TCS
+CE/63D1: 2B           PLD
+CE/63D2: 36 24        ROL $24,X
+CE/63D4: 05 0B        ORA $0B
+CE/63D6: 9A           TXS
+CE/63D7: 01 00        ORA ($00,X)
+CE/63D9: 71 36        ADC ($36),Y
+CE/63DB: 24 07        BIT $07
+CE/63DD: 1B           TCS
+CE/63DE: 0C 60 08     TSB $0860
+CE/63E1: 20 0A 78     JSR $780A
+CE/63E4: 06 03        ASL $03
+CE/63E6: 01 36        ORA ($36,X)
+CE/63E8: 00 0C        BRK $0C
+CE/63EA: 1B           TCS
+CE/63EB: 01 72        ORA ($72,X)
+CE/63ED: 0D 73 01     ORA $0173
+CE/63F0: 02 04        COP $04
+CE/63F2: 24 01        BIT $01
+CE/63F4: 70 15        BVS $640B
+CE/63F6: 80 2B        BRA $6423
+CE/63F8: 1B           TCS
+CE/63F9: 2B           PLD
+CE/63FA: 36 24        ROL $24,X
+CE/63FC: 03 71        ORA $71,S
+CE/63FE: 1B           TCS
+CE/63FF: 00 60        BRK $60
+CE/6401: 09 06 02     ORA #$0206
+CE/6404: 24 04        BIT $04
+CE/6406: 70 78        BVS $6480
+CE/6408: 9F 98 00 2B  STA $2B0098,X
+CE/640C: 1B           TCS
+CE/640D: 2B           PLD
+CE/640E: 78           SEI
+CE/640F: FF 36 0B 9A  SBC $9A0B36,X
+CE/6413: 01 00        ORA ($00,X)
+CE/6415: 71 24        ADC ($24),Y
+CE/6417: 07 25        ORA [$25]
+CE/6419: 00 1B        BRK $1B
+CE/641B: 0D 03 01     ORA $0103
+CE/641E: 00 1B        BRK $1B
+CE/6420: 00 72        BRK $72
+CE/6422: 0D 73 01     ORA $0173
+CE/6425: 0C 06 02     TSB $0206
+CE/6428: 24 04        BIT $04
+CE/642A: 70 98        BVS $63C4
+CE/642C: 00 46        BRK $46
+CE/642E: 1B           TCS
+CE/642F: 46 24        LSR $24
+CE/6431: 05 0B        ORA $0B
+CE/6433: 9A           TXS
+CE/6434: 01 00        ORA ($00,X)
+CE/6436: 71 24        ADC ($24),Y
+CE/6438: 07 25        ORA [$25]
+CE/643A: 01 1B        ORA ($1B,X)
+CE/643C: 0E 03 01     ASL $0103
+CE/643F: 00 1B        BRK $1B
+CE/6441: 00 72        BRK $72
+CE/6443: 0D 73 01     ORA $0173
+CE/6446: 0C 06 02     TSB $0206
+CE/6449: 24 04        BIT $04
+CE/644B: 70 98        BVS $63E5
+CE/644D: 00 45        BRK $45
+CE/644F: 1B           TCS
+CE/6450: 45 24        EOR $24
+CE/6452: 05 0B        ORA $0B
+CE/6454: 9A           TXS
+CE/6455: 01 00        ORA ($00,X)
+CE/6457: 71 00        ADC ($00),Y
+CE/6459: 1B           TCS
+CE/645A: 00 72        BRK $72
+CE/645C: 0D 73 01     ORA $0173
+CE/645F: 0C 06 02     TSB $0206
+CE/6462: 24 04        BIT $04
+CE/6464: 70 98        BVS $63FE
+CE/6466: 00 44        BRK $44
+CE/6468: 1B           TCS
+CE/6469: 44 24 05     MVP $24,$05
+CE/646C: 0B           PHD
+CE/646D: 9A           TXS
+CE/646E: 01 00        ORA ($00,X)
+CE/6470: 71 00        ADC ($00),Y
+CE/6472: 1B           TCS
+CE/6473: 00 72        BRK $72
+CE/6475: 0D 73 01     ORA $0173
+CE/6478: 0C 06 02     TSB $0206
+CE/647B: 24 04        BIT $04
+CE/647D: 70 98        BVS $6417
+CE/647F: 00 47        BRK $47
+CE/6481: 1B           TCS
+CE/6482: 47 24        EOR [$24]
+CE/6484: 05 0B        ORA $0B
+CE/6486: 9A           TXS
+CE/6487: 01 00        ORA ($00,X)
+CE/6489: 71 00        ADC ($00),Y
+CE/648B: 1B           TCS
+CE/648C: 00 72        BRK $72
+CE/648E: 0D 73 01     ORA $0173
+CE/6491: 0C 06 02     TSB $0206
+CE/6494: 24 04        BIT $04
+CE/6496: 70 98        BVS $6430
+CE/6498: 00 43        BRK $43
+CE/649A: 1B           TCS
+CE/649B: 43 24        EOR $24,S
+CE/649D: 05 0B        ORA $0B
+CE/649F: 9A           TXS
+CE/64A0: 01 00        ORA ($00,X)
+CE/64A2: 71 00        ADC ($00),Y
+CE/64A4: 1B           TCS
+CE/64A5: 00 72        BRK $72
+CE/64A7: 0D 73 01     ORA $0173
+CE/64AA: 0C 06 02     TSB $0206
+CE/64AD: 24 04        BIT $04
+CE/64AF: 70 98        BVS $6449
+CE/64B1: 00 42        BRK $42
+CE/64B3: 1B           TCS
+CE/64B4: 42 24        WDM $24
+CE/64B6: 05 0B        ORA $0B
+CE/64B8: 9A           TXS
+CE/64B9: 01 00        ORA ($00,X)
+CE/64BB: 71 00        ADC ($00),Y
+CE/64BD: D0 FF        BNE $64BE
+CE/64BF: C0 00 DB     CPY #$DB00
+CE/64C2: 64 A3        STZ $A3
+CE/64C4: 5E BD 5E     LSR $5EBD,X
+CE/64C7: C3 5E        CMP $5E,S
+CE/64C9: 0E 5F 1D     ASL $1D5F
+CE/64CC: 5F 2C 5F 3B  EOR $3B5F2C,X
+CE/64D0: 5F 3C 5F 3D  EOR $3D5F3C,X
+CE/64D4: 5F 3E 5F 85  EOR $855F3E,X
+CE/64D8: 09 93 09     ORA #$0993
+CE/64DB: 72 0B        ADC ($0B)
+CE/64DD: 24 02        BIT $02
+CE/64DF: 02 4F        COP $4F
+CE/64E1: 24 03        BIT $03
+CE/64E3: 02 21        COP $21
+CE/64E5: 24 04        BIT $04
+CE/64E7: D0 02        BNE $64EB
+CE/64E9: 34 7A        BIT $7A,X
+CE/64EB: A2 00 20     LDX #$2000
+CE/64EE: 01 D9        ORA ($D9,X)
+CE/64F0: 30 C4        BMI $64B6
+CE/64F2: F8           SED
+CE/64F3: FF C4 E4 FE  SBC $FEE4C4,X
+CE/64F7: 20 01 36     JSR $3601
+CE/64FA: 09 20 0A     ORA #$0A20
+CE/64FD: 12 03        ORA ($03)
+CE/64FF: 20 0A 36     JSR $360A
+CE/6502: 24 07        BIT $07
+CE/6504: 06 46        ASL $46
+CE/6506: 20 0A C4     JSR $C40A
+CE/6509: F0 04        BEQ $650F
+CE/650B: 7A           PLY
+CE/650C: B8           CLV
+CE/650D: 03 C5        ORA $C5,S
+CE/650F: 04 DA        TSB $DA
+CE/6511: 36 20        ROL $20,X
+CE/6513: 1E 1E 2A     ASL $2A1E,X
+CE/6516: 24 09        BIT $09
+CE/6518: 2E 01 00     ROL $0001
+CE/651B: D0 C0        BNE $64DD
+CE/651D: C0 00 2D     CPY #$2D00
+CE/6520: 65 65        ADC $65
+CE/6522: 65 F5        ADC $F5
+CE/6524: 65 2C        ADC $2C
+CE/6526: 66 5F        ROR $5F
+CE/6528: 66 85        ROR $85
+CE/652A: 09 93 09     ORA #$0993
+CE/652D: 72 0D        ADC ($0D)
+CE/652F: 7A           PLY
+CE/6530: 7A           PLY
+CE/6531: 00 03        BRK $03
+CE/6533: 3F 03 40 03  AND $034003,X
+CE/6537: 33 03        AND ($03,S),Y
+CE/6539: 3E 03 33     ROL $3303,X
+CE/653C: 26 32        ROL $32
+CE/653E: 04 23        TSB $23
+CE/6540: 01 35        ORA ($35,X)
+CE/6542: 0D 27 D9     ORA $D927
+CE/6545: 30 7A        BMI $65C1
+CE/6547: D2 00        CMP ($00)
+CE/6549: 98           TYA
+CE/654A: 02 2B        COP $2B
+CE/654C: 29 1B 2D     AND #$2D1B
+CE/654F: 24 03        BIT $03
+CE/6551: 0D 02 38     ORA $3802
+CE/6554: 2A           ROL
+CE/6555: 12 0C        ORA ($0C)
+CE/6557: 12 2C        ORA ($2C)
+CE/6559: 1B           TCS
+CE/655A: 2C 03 23     BIT $2303
+CE/655D: DA           PHX
+CE/655E: 28           PLP
+CE/655F: 24 05        BIT $05
+CE/6561: 1E 2A 36     ASL $362A,X
+CE/6564: 00 76        BRK $76
+CE/6566: 01 03        ORA ($03,X)
+CE/6568: 77 40        ADC [$40],Y
+CE/656A: 0D 72 0D     ORA $0D72
+CE/656D: 03 10        ORA $10,S
+CE/656F: 02 11        COP $11
+CE/6571: 7B           TDC
+CE/6572: E6 0A        INC $0A
+CE/6574: D8           CLD
+CE/6575: 06 02        ASL $02
+CE/6577: 14 20        TRB $20
+CE/6579: 0A           ASL
+CE/657A: A4 02        LDY $02
+CE/657C: 02 1E        COP $1E
+CE/657E: 0B           PHD
+CE/657F: D8           CLD
+CE/6580: 03 02        ORA $02,S
+CE/6582: 0A           ASL
+CE/6583: 20 09 A5     JSR $A509
+CE/6586: 06 36        ASL $36
+CE/6588: A4 04        LDY $04
+CE/658A: 02 27        COP $27
+CE/658C: D9 30 7B     CMP $7B30,Y
+CE/658F: 53 0A        EOR ($0A,S),Y
+CE/6591: 12 0C        ORA ($0C)
+CE/6593: 7B           TDC
+CE/6594: 4C 0C 76     JMP $760C
+CE/6597: 1A           INC
+CE/6598: 0C 36 A8     TSB $A836
+CE/659B: 06 20        ASL $20
+CE/659D: 0A           ASL
+CE/659E: A5 06        LDA $06
+CE/65A0: 22 A4 04 01  JSR $0104A4
+CE/65A4: 85 C0        STA $C0
+CE/65A6: A8           TAY
+CE/65A7: 06 20        ASL $20
+CE/65A9: 0A           ASL
+CE/65AA: A5 72        LDA $72
+CE/65AC: 0D 06 36     ORA $3606
+CE/65AF: A4 03        LDY $03
+CE/65B1: 01 7B        ORA ($7B,X)
+CE/65B3: 53 0A        EOR ($0A,S),Y
+CE/65B5: 12 0C        ORA ($0C)
+CE/65B7: 7B           TDC
+CE/65B8: 4C 0C 36     JMP $360C
+CE/65BB: A5 85        LDA $85
+CE/65BD: C0 26 0B     CPY #$0B26
+CE/65C0: 03 A4        ORA $A4,S
+CE/65C2: 04 01        TSB $01
+CE/65C4: A8           TAY
+CE/65C5: 06 29        ASL $29
+CE/65C7: A8           TAY
+CE/65C8: 02 2A        COP $2A
+CE/65CA: A8           TAY
+CE/65CB: 02 29        COP $29
+CE/65CD: 02 37        COP $37
+CE/65CF: 12 2B        ORA ($2B)
+CE/65D1: 20 14 36     JSR $3614
+CE/65D4: 20 01 06     JSR $0601
+CE/65D7: 4F 2A 7B 53  EOR $537B2A
+CE/65DB: 0A           ASL
+CE/65DC: 12 0C        ORA ($0C)
+CE/65DE: 7B           TDC
+CE/65DF: 4C 0C 20     JMP $200C
+CE/65E2: 03 7B        ORA $7B,S
+CE/65E4: 4D 0C 36     EOR $360C
+CE/65E7: A5 20        LDA $20
+CE/65E9: 14 DA        TRB $DA
+CE/65EB: 28           PLP
+CE/65EC: 24 05        BIT $05
+CE/65EE: 1E 2E 24     ASL $242E,X
+CE/65F1: 06 2E        ASL $2E
+CE/65F3: 01 00        ORA ($00,X)
+CE/65F5: 24 01        BIT $01
+CE/65F7: 2D 80 12     AND $1280
+CE/65FA: A8           TAY
+CE/65FB: 06 05        ASL $05
+CE/65FD: 75 00        ADC $00,X
+CE/65FF: D8           CLD
+CE/6600: 03 01        ORA $01,S
+CE/6602: 0A           ASL
+CE/6603: 20 0A 06     JSR $060A
+CE/6606: 03 24        ORA $24,S
+CE/6608: 02 2D        COP $2D
+CE/660A: 80 12        BRA $661E
+CE/660C: A8           TAY
+CE/660D: 06 05        ASL $05
+CE/660F: 75 00        ADC $00,X
+CE/6611: D8           CLD
+CE/6612: 03 01        ORA $01,S
+CE/6614: 0A           ASL
+CE/6615: 20 0A 06     JSR $060A
+CE/6618: 03 24        ORA $24,S
+CE/661A: 04 2D        TSB $2D
+CE/661C: 80 12        BRA $6630
+CE/661E: 28           PLP
+CE/661F: 06 05        ASL $05
+CE/6621: 75 00        ADC $00,X
+CE/6623: D8           CLD
+CE/6624: 03 01        ORA $01,S
+CE/6626: 06 50        ASL $50
+CE/6628: 06 03        ASL $03
+CE/662A: 36 00        ROL $00,X
+CE/662C: 1B           TCS
+CE/662D: 03 72        ORA $72,S
+CE/662F: 03 73        ORA $73,S
+CE/6631: 03 02        ORA $02,S
+CE/6633: 02 33        COP $33
+CE/6635: 03 41        ORA $41,S
+CE/6637: 1E 02 30     ASL $3002,X
+CE/663A: 03 20        ORA $20,S
+CE/663C: 33 0C        AND ($0C,S),Y
+CE/663E: 41 1E        EOR ($1E,X)
+CE/6640: 04 43        TSB $43
+CE/6642: 03 00        ORA $00,S
+CE/6644: 18           CLC
+CE/6645: 41 1F        EOR ($1F,X)
+CE/6647: 05 33        ORA $33
+CE/6649: 0C 41 1E     TSB $1E41
+CE/664C: 06 30        ASL $30
+CE/664E: 07 08        ORA [$08]
+CE/6650: 1B           TCS
+CE/6651: 00 35        BRK $35
+CE/6653: 0B           PHD
+CE/6654: 23 02        AND $02,S
+CE/6656: 60           RTS

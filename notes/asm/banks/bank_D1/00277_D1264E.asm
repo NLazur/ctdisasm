@@ -1,0 +1,31 @@
+D1/264E: CA           DEX
+D1/264F: 00 E2        BRK $E2
+D1/2651: 02 00        COP $00
+D1/2653: A2 CA        LDX #$CA
+D1/2655: 0E 20 CC     ASL $CC20
+D1/2658: 00 E4        BRK $E4
+D1/265A: 02 00        COP $00
+D1/265C: CC 1C 20     CPY $201C
+D1/265F: 8A           TXA
+D1/2660: CE 1C 10     DEC $101C
+D1/2663: CE 2A 20     DEC $202A
+D1/2666: E2 80        SEP #$80
+D1/2668: CC 02 00     CPY $0002
+D1/266B: 44 E2 80     MVP $E2,$80
+D1/266E: 38           SEC
+D1/266F: 18           CLC
+D1/2670: E4 80        CPX $80
+D1/2672: CA           DEX
+D1/2673: 02 00        COP $00
+D1/2675: E4 B9        CPX $B9
+D1/2677: 0E 08 80     ASL $8008
+D1/267A: 00 1C        BRK $1C
+D1/267C: 00 18        BRK $18
+D1/267E: 10 0A        BPL $268A
+D1/2680: 00 CC        BRK $CC
+D1/2682: 3E 18 43     ROL $4318,X
+D1/2685: 50 00        BVC $2687
+D1/2687: FD 14 00     SBC $0014,X
+D1/268A: CA           DEX
+D1/268B: 56 10        LSR $10,X
+D1/268D: 40           RTI

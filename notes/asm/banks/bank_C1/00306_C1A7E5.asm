@@ -1,0 +1,24 @@
+C1/A7E5: 9C CB AE     STZ $AECB
+C1/A7E8: 9C 20 AF     STZ $AF20
+C1/A7EB: 9C 21 AF     STZ $AF21
+C1/A7EE: 7B           TDC
+C1/A7EF: A9 06        LDA #$06
+C1/A7F1: AA           TAX
+C1/A7F2: 86 0E        STX $0E
+C1/A7F4: A9 1D        LDA #$1D
+C1/A7F6: 85 0A        STA $0A
+C1/A7F8: A9 FF        LDA #$FF
+C1/A7FA: 8D 1F AF     STA $AF1F
+C1/A7FD: A9 03        LDA #$03
+C1/A7FF: 8D 1E AF     STA $AF1E
+C1/A802: 20 70 AE     JSR $AE70
+C1/A805: A6 0E        LDX $0E
+C1/A807: E8           INX
+C1/A808: E8           INX
+C1/A809: 86 0E        STX $0E
+C1/A80B: EE 1E AF     INC $AF1E
+C1/A80E: AD 1E AF     LDA $AF1E
+C1/A811: C9 0B        CMP #$0B
+C1/A813: 90 ED        BCC $A802
+C1/A815: 20 A1 AD     JSR $ADA1
+C1/A818: 60           RTS

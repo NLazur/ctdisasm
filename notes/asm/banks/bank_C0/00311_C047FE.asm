@@ -1,0 +1,58 @@
+C0/47FE: A5 E3        LDA $E3
+C0/4800: C2 20        REP #$20
+C0/4802: 29 FF 00     AND #$00FF
+C0/4805: 85 D9        STA $D9
+C0/4807: 18           CLC
+C0/4808: 65 D9        ADC $D9
+C0/480A: 65 D9        ADC $D9
+C0/480C: A8           TAY
+C0/480D: B7 AF        LDA [$AF],Y
+C0/480F: 8D 00 03     STA $0300
+C0/4812: A5 71        LDA $71
+C0/4814: 8D 03 03     STA $0303
+C0/4817: E2 20        SEP #$20
+C0/4819: C8           INY
+C0/481A: C8           INY
+C0/481B: B7 AF        LDA [$AF],Y
+C0/481D: 8D 02 03     STA $0302
+C0/4820: A9 7F        LDA #$7F
+C0/4822: 8D 05 03     STA $0305
+C0/4825: 22 02 00 C3  JSR $C30002
+C0/4829: C2 20        REP #$20
+C0/482B: AD 06 03     LDA $0306
+C0/482E: 18           CLC
+C0/482F: 65 71        ADC $71
+C0/4831: 85 71        STA $71
+C0/4833: C9 00 80     CMP #$8000
+C0/4836: 10 08        BPL $4840
+C0/4838: E2 20        SEP #$20
+C0/483A: A2 1F 7C     LDX #$7C1F
+C0/483D: 82 DE E5     BRL $C02E1E
+C0/4840: E2 20        SEP #$20
+C0/4842: 82 54 FF     BRL $C04799
+C0/4845: A5 E3        LDA $E3
+C0/4847: C2 20        REP #$20
+C0/4849: 29 FF 00     AND #$00FF
+C0/484C: 85 D9        STA $D9
+C0/484E: 18           CLC
+C0/484F: 65 D9        ADC $D9
+C0/4851: 65 D9        ADC $D9
+C0/4853: A8           TAY
+C0/4854: B7 AF        LDA [$AF],Y
+C0/4856: A6 6D        LDX $6D
+C0/4858: 9D 80 12     STA $1280,X
+C0/485B: E2 20        SEP #$20
+C0/485D: C8           INY
+C0/485E: C8           INY
+C0/485F: B7 AF        LDA [$AF],Y
+C0/4861: 9D 00 12     STA $1200,X
+C0/4864: 82 32 FF     BRL $C04799
+C0/4867: C8           INY
+C0/4868: BB           TYX
+C0/4869: BF 01 20 7F  LDA $7F2001,X
+C0/486D: A6 6D        LDX $6D
+C0/486F: 9D 01 1B     STA $1B01,X
+C0/4872: C8           INY
+C0/4873: BB           TYX
+C0/4874: 38           SEC
+C0/4875: 60           RTS

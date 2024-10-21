@@ -1,0 +1,15 @@
+D1/74E9: 00 FF        BRK $FF
+D1/74EB: 0B           PHD
+D1/74EC: 12 85        ORA ($85)
+D1/74EE: 0D 04 86     ORA $8604
+D1/74F1: 81 01        STA ($01,X)
+D1/74F3: 91 08        STA ($08),Y
+D1/74F5: A2 FF        LDX #$FF
+D1/74F7: 01 AA        ORA ($AA,X)
+D1/74F9: 00 82        BRK $82
+D1/74FB: 7F 82 7F 82  ADC $827F82,X
+D1/74FF: DF 82 D7 93  CMP $93D782,X
+D1/7503: 13 02        ORA ($02,S),Y
+D1/7505: 04 7F        TSB $7F
+D1/7507: 9D 17 83     STA $8317,X
+D1/750A: 40           RTI

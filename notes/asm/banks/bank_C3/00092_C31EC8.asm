@@ -1,0 +1,21 @@
+C3/1EC8: 68           PLA
+C3/1EC9: 20 3F AA     JSR $AA3F
+C3/1ECC: 3F 02 D0 26  AND $26D002,X
+C3/1ED0: 20 08 00     JSR $0008
+C3/1ED3: 00 0B        BRK $0B
+C3/1ED5: 01 00        ORA ($00,X)
+C3/1ED7: 0C 01 00     TSB $0001
+C3/1EDA: 15 10        ORA $10,X
+C3/1EDC: 00 00        BRK $00
+C3/1EDE: 12 FF        ORA ($FF)
+C3/1EE0: FF 91 07 00  SBC $000791,X
+C3/1EE4: 79 00 3F     ADC $3F00,Y
+C3/1EE7: 18           CLC
+C3/1EE8: 01 00        ORA ($00,X)
+C3/1EEA: 10 01        BPL $1EED
+C3/1EEC: 00 80        BRK $80
+C3/1EEE: 12 0E        ORA ($0E)
+C3/1EF0: 0B           PHD
+C3/1EF1: 00 0C        BRK $0C
+C3/1EF3: 00 19        BRK $19
+C3/1EF5: 40           RTI

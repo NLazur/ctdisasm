@@ -1,0 +1,35 @@
+D0/30B7: C0 0A 0E     CPY #$0E0A
+D0/30BA: 0A           ASL
+D0/30BB: 0E 0A 0E     ASL $0E0A
+D0/30BE: 06 06        ASL $06
+D0/30C0: 06 06        ASL $06
+D0/30C2: 06 06        ASL $06
+D0/30C4: 02 02        COP $02
+D0/30C6: 02 02        COP $02
+D0/30C8: 2E 31 16     ROL $1631
+D0/30CB: 19 0A 0D     ORA $0D0A,Y
+D0/30CE: 0A           ASL
+D0/30CF: 0D 05 07     ORA $0705
+D0/30D2: 05 07        ORA $07
+D0/30D4: 03 03        ORA $03,S
+D0/30D6: 03 03        ORA $03,S
+D0/30D8: 9F E0 6F 70  STA $706FE0,X
+D0/30DC: 37 38        AND [$38],Y
+D0/30DE: 09 0E 06     ORA #$060E
+D0/30E1: 07 01        ORA [$01]
+D0/30E3: 01 00        ORA ($00,X)
+D0/30E5: 00 00        BRK $00
+D0/30E7: 00 02        BRK $02
+D0/30E9: FE FC 03     INC $03FC,X
+D0/30EC: FA           PLX
+D0/30ED: 06 F5        ASL $F5
+D0/30EF: 0B           PHD
+D0/30F0: 9B           TXY
+D0/30F1: 7C 47 C7     JMP ($C747,X)
+D0/30F4: E0 E0        CPX #$E0
+D0/30F6: 3C 3C 00     BIT $003C,X
+D0/30F9: 00 F8        BRK $F8
+D0/30FB: F8           SED
+D0/30FC: 00 00        BRK $00
+D0/30FE: 00 00        BRK $00
+D0/3100: 40           RTI

@@ -1,0 +1,90 @@
+CC/2A9A: 00 1E        BRK $1E
+CC/2A9C: 14 00        TRB $00
+CC/2A9E: 25 80        AND $80
+CC/2AA0: 00 02        BRK $02
+CC/2AA2: 04 01        TSB $01
+CC/2AA4: 0F 23 FF 06  ORA $06FF23
+CC/2AA8: 00 00        BRK $00
+CC/2AAA: 14 1E        TRB $1E
+CC/2AAC: 02 13        COP $13
+CC/2AAE: 00 01        BRK $01
+CC/2AB0: 00 00        BRK $00
+CC/2AB2: 14 2B        TRB $2B
+CC/2AB4: 18           CLC
+CC/2AB5: 2B           PLD
+CC/2AB6: 1C 2B 20     TRB $202B
+CC/2AB9: 2B           PLD
+CC/2ABA: 24 2B        BIT $2B
+CC/2ABC: 28           PLP
+CC/2ABD: 2B           PLD
+CC/2ABE: 2C 2B 30     BIT $302B
+CC/2AC1: 2B           PLD
+CC/2AC2: 34 2B        BIT $2B,X
+CC/2AC4: 38           SEC
+CC/2AC5: 2B           PLD
+CC/2AC6: 3C 2B 01     BIT $012B,X
+CC/2AC9: 04 02        TSB $02
+CC/2ACB: 03 03        ORA $03,S
+CC/2ACD: 02 01        COP $01
+CC/2ACF: 04 01        TSB $01
+CC/2AD1: FF FF FF FF  SBC $FFFFFF,X
+CC/2AD5: FF FF FF FF  SBC $FFFFFF,X
+CC/2AD9: FF FF 0B 2B  SBC $2B0BFF,X
+CC/2ADD: 0E 2B 17     ASL $172B
+CC/2AE0: 2B           PLD
+CC/2AE1: 21 2B        AND ($2B,X)
+CC/2AE3: 29 2B 33     AND #$332B
+CC/2AE6: 2B           PLD
+CC/2AE7: 39 2B 41     AND $412B,Y
+CC/2AEA: 2B           PLD
+CC/2AEB: 49 2B 4D     EOR #$4D2B
+CC/2AEE: 2B           PLD
+CC/2AEF: 5E 2B 6B     LSR $6B2B,X
+CC/2AF2: 2B           PLD
+CC/2AF3: 73 2B        ADC ($2B,S),Y
+CC/2AF5: 7E 2B 8E     ROR $8E2B,X
+CC/2AF8: 2B           PLD
+CC/2AF9: 97 2B        STA [$2B],Y
+CC/2AFB: A0 2B A3     LDY #$A32B
+CC/2AFE: 2B           PLD
+CC/2AFF: A8           TAY
+CC/2B00: 2B           PLD
+CC/2B01: A9 2B B2     LDA #$B22B
+CC/2B04: 2B           PLD
+CC/2B05: BD 2B CB     LDA $CB2B,X
+CC/2B08: 2B           PLD
+CC/2B09: D0 2B        BNE $2B36
+CC/2B0B: 02 04        COP $04
+CC/2B0D: 00 02        BRK $02
+CC/2B0F: 20 5C 7D     JSR $7D5C
+CC/2B12: BD C6 01     LDA $01C6,X
+CC/2B15: 00 00        BRK $00
+CC/2B17: 02 01        COP $01
+CC/2B19: 01 00        ORA ($00,X)
+CC/2B1B: 10 01        BPL $2B1E
+CC/2B1D: 01 01        ORA ($01,X)
+CC/2B1F: 09 01 05     ORA #$0501
+CC/2B22: 02 00        COP $00
+CC/2B24: 01 00        ORA ($00,X)
+CC/2B26: 00 82        BRK $82
+CC/2B28: 01 01        ORA ($01,X)
+CC/2B2A: 04 10        TSB $10
+CC/2B2C: 01 01        ORA ($01,X)
+CC/2B2E: 05 09        ORA $09
+CC/2B30: 01 00        ORA ($00,X)
+CC/2B32: 06 02        ASL $02
+CC/2B34: 01 01        ORA ($01,X)
+CC/2B36: 04 19        TSB $19
+CC/2B38: 01 01        ORA ($01,X)
+CC/2B3A: 00 19        BRK $19
+CC/2B3C: 01 06        ORA ($06,X)
+CC/2B3E: 01 02        ORA ($02,X)
+CC/2B40: 00 BD        BRK $BD
+CC/2B42: BE BF C6     LDX $C6BF,Y
+CC/2B45: C7 C8        CMP [$C8]
+CC/2B47: C0 00 BD     CPY #$BD00
+CC/2B4A: BE C6 00     LDX $00C6,Y
+CC/2B4D: 0B           PHD
+CC/2B4E: 18           CLC
+CC/2B4F: 27 36        AND [$36]
+CC/2B51: 40           RTI

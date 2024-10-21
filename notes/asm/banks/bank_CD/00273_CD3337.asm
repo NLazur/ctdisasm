@@ -1,0 +1,64 @@
+CD/3337: E2 10        SEP #$10
+CD/3339: 7B           TDC
+CD/333A: A8           TAY
+CD/333B: AD AA CA     LDA $CAAA
+CD/333E: AA           TAX
+CD/333F: BD A6 CA     LDA $CAA6,X
+CD/3342: 85 4B        STA $4B
+CD/3344: 85 4D        STA $4D
+CD/3346: A2 FE        LDX #$FE
+CD/3348: B9 00 B8     LDA $B800,Y
+CD/334B: 0A           ASL
+CD/334C: 85 51        STA $51
+CD/334E: A5 4B        LDA $4B
+CD/3350: 38           SEC
+CD/3351: E5 51        SBC $51
+CD/3353: B0 01        BCS $3356
+CD/3355: 7B           TDC
+CD/3356: 9D 00 B9     STA $B900,X
+CD/3359: 8F 80 21 00  STA $002180
+CD/335D: A5 51        LDA $51
+CD/335F: 18           CLC
+CD/3360: 65 4D        ADC $4D
+CD/3362: 90 02        BCC $3366
+CD/3364: A9 FF        LDA #$FF
+CD/3366: 9D 01 B9     STA $B901,X
+CD/3369: 8F 80 21 00  STA $002180
+CD/336D: CA           DEX
+CD/336E: CA           DEX
+CD/336F: C8           INY
+CD/3370: C4 47        CPY $47
+CD/3372: D0 D4        BNE $3348
+CD/3374: 7B           TDC
+CD/3375: 99 00 B8     STA $B800,Y
+CD/3378: 88           DEY
+CD/3379: B9 00 B8     LDA $B800,Y
+CD/337C: 3A           DEC
+CD/337D: 85 47        STA $47
+CD/337F: B9 00 B8     LDA $B800,Y
+CD/3382: D9 FF B7     CMP $B7FF,Y
+CD/3385: F0 26        BEQ $33AD
+CD/3387: A5 47        LDA $47
+CD/3389: 0A           ASL
+CD/338A: 85 51        STA $51
+CD/338C: A5 4B        LDA $4B
+CD/338E: 38           SEC
+CD/338F: E5 51        SBC $51
+CD/3391: B0 01        BCS $3394
+CD/3393: 7B           TDC
+CD/3394: 9D 00 B9     STA $B900,X
+CD/3397: 8F 80 21 00  STA $002180
+CD/339B: A5 51        LDA $51
+CD/339D: 18           CLC
+CD/339E: 65 4D        ADC $4D
+CD/33A0: 90 02        BCC $33A4
+CD/33A2: A9 FF        LDA #$FF
+CD/33A4: 9D 01 B9     STA $B901,X
+CD/33A7: 8F 80 21 00  STA $002180
+CD/33AB: CA           DEX
+CD/33AC: CA           DEX
+CD/33AD: C6 47        DEC $47
+CD/33AF: 88           DEY
+CD/33B0: D0 CD        BNE $337F
+CD/33B2: C2 10        REP #$10
+CD/33B4: 60           RTS

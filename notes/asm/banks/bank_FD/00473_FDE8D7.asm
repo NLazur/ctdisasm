@@ -1,0 +1,45 @@
+FD/E8D7: B9 22 05     LDA $0522,Y
+FD/E8DA: A8           TAY
+FD/E8DB: BF 01 20 7E  LDA $7E2001,X
+FD/E8DF: 29 7C        AND #$7C
+FD/E8E1: 85 0D        STA $0D
+FD/E8E3: 49 7C        EOR #$7C
+FD/E8E5: 8D 03 42     STA $4203
+FD/E8E8: A5 0D        LDA $0D
+FD/E8EA: 18           CLC
+FD/E8EB: 6D 17 42     ADC $4217
+FD/E8EE: EB           XBA
+FD/E8EF: BF 00 20 7E  LDA $7E2000,X
+FD/E8F3: 29 1F        AND #$1F
+FD/E8F5: 85 0C        STA $0C
+FD/E8F7: 49 1F        EOR #$1F
+FD/E8F9: 8D 03 42     STA $4203
+FD/E8FC: A5 0C        LDA $0C
+FD/E8FE: 18           CLC
+FD/E8FF: 6D 17 42     ADC $4217
+FD/E902: C2 20        REP #$20
+FD/E904: 29 1F 7C     AND #$7C1F
+FD/E907: 85 0C        STA $0C
+FD/E909: BF 00 20 7E  LDA $7E2000,X
+FD/E90D: 29 E0 03     AND #$03E0
+FD/E910: 4A           LSR
+FD/E911: 4A           LSR
+FD/E912: E2 20        SEP #$20
+FD/E914: 85 0E        STA $0E
+FD/E916: 49 F8        EOR #$F8
+FD/E918: 8D 03 42     STA $4203
+FD/E91B: A5 0E        LDA $0E
+FD/E91D: 18           CLC
+FD/E91E: 6D 17 42     ADC $4217
+FD/E921: 29 F8        AND #$F8
+FD/E923: C2 20        REP #$20
+FD/E925: 0A           ASL
+FD/E926: 0A           ASL
+FD/E927: 05 0C        ORA $0C
+FD/E929: 9F 00 22 7E  STA $7E2200,X
+FD/E92D: E2 20        SEP #$20
+FD/E92F: E8           INX
+FD/E930: E8           INX
+FD/E931: 88           DEY
+FD/E932: D0 A7        BNE $E8DB
+FD/E934: 60           RTS

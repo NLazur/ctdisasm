@@ -1,0 +1,81 @@
+D1/F6AB: 80 00        BRA $F6AD
+D1/F6AD: 28           PLP
+D1/F6AE: A0 A8 00     LDY #$00A8
+D1/F6B1: 14 50        TRB $50
+D1/F6B3: 54 20 92     MVN $20,$92
+D1/F6B6: F6 A5        INC $A5,X
+D1/F6B8: 54 29 1C     MVN $29,$1C
+D1/F6BB: 4A           LSR
+D1/F6BC: 4A           LSR
+D1/F6BD: AA           TAX
+D1/F6BE: BF 9C F6 D1  LDA $D1F69C,X
+D1/F6C2: 8D B3 CC     STA $CCB3
+D1/F6C5: 9C B2 CC     STZ $CCB2
+D1/F6C8: A5 54        LDA $54
+D1/F6CA: 29 E0        AND #$E0
+D1/F6CC: 4A           LSR
+D1/F6CD: 4A           LSR
+D1/F6CE: 4A           LSR
+D1/F6CF: 4A           LSR
+D1/F6D0: 4A           LSR
+D1/F6D1: AA           TAX
+D1/F6D2: BF A4 F6 D1  LDA $D1F6A4,X
+D1/F6D6: 8D B5 CC     STA $CCB5
+D1/F6D9: 9C B4 CC     STZ $CCB4
+D1/F6DC: A5 55        LDA $55
+D1/F6DE: 29 0F        AND #$0F
+D1/F6E0: 8D B7 CC     STA $CCB7
+D1/F6E3: A5 55        LDA $55
+D1/F6E5: 29 F0        AND #$F0
+D1/F6E7: 4A           LSR
+D1/F6E8: 4A           LSR
+D1/F6E9: 4A           LSR
+D1/F6EA: 4A           LSR
+D1/F6EB: 8D B6 CC     STA $CCB6
+D1/F6EE: A5 56        LDA $56
+D1/F6F0: 29 1C        AND #$1C
+D1/F6F2: 4A           LSR
+D1/F6F3: 4A           LSR
+D1/F6F4: AA           TAX
+D1/F6F5: BF 9C F6 D1  LDA $D1F69C,X
+D1/F6F9: 8D BB CC     STA $CCBB
+D1/F6FC: 9C BA CC     STZ $CCBA
+D1/F6FF: A5 56        LDA $56
+D1/F701: 29 E0        AND #$E0
+D1/F703: 4A           LSR
+D1/F704: 4A           LSR
+D1/F705: 4A           LSR
+D1/F706: 4A           LSR
+D1/F707: 4A           LSR
+D1/F708: AA           TAX
+D1/F709: BF A4 F6 D1  LDA $D1F6A4,X
+D1/F70D: 8D BD CC     STA $CCBD
+D1/F710: 9C BC CC     STZ $CCBC
+D1/F713: A5 57        LDA $57
+D1/F715: 29 0F        AND #$0F
+D1/F717: 8D BF CC     STA $CCBF
+D1/F71A: A5 57        LDA $57
+D1/F71C: 29 F0        AND #$F0
+D1/F71E: 4A           LSR
+D1/F71F: 4A           LSR
+D1/F720: 4A           LSR
+D1/F721: 4A           LSR
+D1/F722: 8D BE CC     STA $CCBE
+D1/F725: A5 54        LDA $54
+D1/F727: 29 03        AND #$03
+D1/F729: AA           TAX
+D1/F72A: BF AC F6 D1  LDA $D1F6AC,X
+D1/F72E: 85 5B        STA $5B
+D1/F730: A5 56        LDA $56
+D1/F732: 29 03        AND #$03
+D1/F734: AA           TAX
+D1/F735: BF B0 F6 D1  LDA $D1F6B0,X
+D1/F739: 05 5B        ORA $5B
+D1/F73B: 8D C0 CC     STA $CCC0
+D1/F73E: A5 54        LDA $54
+D1/F740: 29 03        AND #$03
+D1/F742: 8D B0 CC     STA $CCB0
+D1/F745: A5 56        LDA $56
+D1/F747: 29 03        AND #$03
+D1/F749: 8D B8 CC     STA $CCB8
+D1/F74C: 60           RTS

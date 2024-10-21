@@ -1,0 +1,19 @@
+FE/76A9: 3F 38 20 07  AND $072038,X
+FE/76AD: 04 03        TSB $03
+FE/76AF: 00 07        BRK $07
+FE/76B1: 28           PLP
+FE/76B2: 03 F9        ORA $F9,S
+FE/76B4: 07 BC        ORA [$BC]
+FE/76B6: FE FE 1A     INC $1AFE,X
+FE/76B9: 39 20 1D     AND $1D20,Y
+FE/76BC: F8           SED
+FE/76BD: 28           PLP
+FE/76BE: 00 21        BRK $21
+FE/76C0: 1C 60 6B     TRB $6B60
+FE/76C3: 01 FE        ORA ($FE,X)
+FE/76C5: 28           PLP
+FE/76C6: 73 90        ADC ($90,S),Y
+FE/76C8: FF 80 5D 63  SBC $635D80,X
+FE/76CC: 3E 06 3E     ROL $3E06,X
+FE/76CF: C0 2B        CPY #$2B
+FE/76D1: 60           RTS

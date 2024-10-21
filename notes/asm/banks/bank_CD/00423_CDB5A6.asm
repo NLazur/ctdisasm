@@ -1,0 +1,11 @@
+CD/B5A6: 0D 02 06     ORA $0602
+CD/B5A9: A8           TAY
+CD/B5AA: 08           PHP
+CD/B5AB: 71 24        ADC ($24),Y
+CD/B5AD: 08           PHP
+CD/B5AE: 20 09 1A     JSR $1A09
+CD/B5B1: 70 02        BVS $B5B5
+CD/B5B3: 05 0C        ORA $0C
+CD/B5B5: 10 90        BPL $B547
+CD/B5B7: B0 85        BCS $B53E
+CD/B5B9: 60           RTS

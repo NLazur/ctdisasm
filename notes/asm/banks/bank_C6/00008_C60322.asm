@@ -1,0 +1,16 @@
+C6/0322: FD 5E 00     SBC $005E,X
+C6/0325: FF DE D6 E6  SBC $E6D6DE,X
+C6/0329: E5 E6        SBC $E6
+C6/032B: E5 C3        SBC $C3
+C6/032D: 04 00        TSB $00
+C6/032F: E3 02        SBC $02,S
+C6/0331: 00 33        BRK $33
+C6/0333: 00 31        BRK $31
+C6/0335: 00 38        BRK $38
+C6/0337: 00 01        BRK $01
+C6/0339: 1B           TCS
+C6/033A: 00 1B        BRK $1B
+C6/033C: 00 C0        BRK $C0
+C6/033E: 1F A0 00 7F  ORA $7F00A0,X
+C6/0342: E0 9F        CPX #$9F
+C6/0344: 40           RTI

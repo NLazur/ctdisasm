@@ -1,0 +1,42 @@
+C1/767E: A0 03 00     LDY #$0003
+C1/7681: 84 84        STY $84
+C1/7683: 4C 93 76     JMP $7693
+C1/7686: A0 01 00     LDY #$0001
+C1/7689: 84 84        STY $84
+C1/768B: 4C 93 76     JMP $7693
+C1/768E: A0 02 00     LDY #$0002
+C1/7691: 84 84        STY $84
+C1/7693: AD 14 A0     LDA $A014
+C1/7696: AA           TAX
+C1/7697: BD 0C 1D     LDA $1D0C,X
+C1/769A: 85 80        STA $80
+C1/769C: 64 81        STZ $81
+C1/769E: BD 23 1D     LDA $1D23,X
+C1/76A1: 85 82        STA $82
+C1/76A3: 64 83        STZ $83
+C1/76A5: A4 84        LDY $84
+C1/76A7: B9 14 A0     LDA $A014,Y
+C1/76AA: AA           TAX
+C1/76AB: BD 0C 1D     LDA $1D0C,X
+C1/76AE: 85 84        STA $84
+C1/76B0: 64 85        STZ $85
+C1/76B2: BD 23 1D     LDA $1D23,X
+C1/76B5: 85 86        STA $86
+C1/76B7: 64 87        STZ $87
+C1/76B9: C2 21        REP #$21
+C1/76BB: A5 80        LDA $80
+C1/76BD: 65 84        ADC $84
+C1/76BF: 4A           LSR
+C1/76C0: 85 80        STA $80
+C1/76C2: 18           CLC
+C1/76C3: A5 82        LDA $82
+C1/76C5: 65 86        ADC $86
+C1/76C7: 4A           LSR
+C1/76C8: 85 82        STA $82
+C1/76CA: 7B           TDC
+C1/76CB: E2 20        SEP #$20
+C1/76CD: A5 80        LDA $80
+C1/76CF: 8D B0 A2     STA $A2B0
+C1/76D2: A5 82        LDA $82
+C1/76D4: 8D B2 A2     STA $A2B2
+C1/76D7: 60           RTS

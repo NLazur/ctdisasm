@@ -1,0 +1,56 @@
+C6/4758: C8           INY
+C6/4759: 00 50        BRK $50
+C6/475B: 08           PHP
+C6/475C: 80 41        BRA $479F
+C6/475E: 04 42        TSB $42
+C6/4760: 04 51        TSB $51
+C6/4762: 04 52        TSB $52
+C6/4764: 32 01        AND ($01)
+C6/4766: 00 48        BRK $48
+C6/4768: 04 57        TSB $57
+C6/476A: 04 58        TSB $58
+C6/476C: 04 45        TSB $45
+C6/476E: 04 0A        TSB $0A
+C6/4770: 46 46        LSR $46
+C6/4772: 01 56        ORA ($56,X)
+C6/4774: 10 70        BPL $47E6
+C6/4776: 4B           PHK
+C6/4777: 04 4C        TSB $4C
+C6/4779: 04 00        TSB $00
+C6/477B: 5B           TCD
+C6/477C: 04 5C        TSB $5C
+C6/477E: 04 40        TSB $40
+C6/4780: 48           PHA
+C6/4781: AF 08 02 50  LDA $500208
+C6/4785: 86 00        STX $00
+C6/4787: C6 0C        DEC $0C
+C6/4789: C7 0C        CMP [$0C]
+C6/478B: 57 04        EOR [$04],Y
+C6/478D: 00 D7        BRK $D7
+C6/478F: 0C C8 0C     TSB $0CC8
+C6/4792: C9 0C D8     CMP #$D80C
+C6/4795: 0C 00 D9     TSB $D900
+C6/4798: 0C CA 0C     TSB $0CCA
+C6/479B: CB           WAI
+C6/479C: 0C DA 0C     TSB $0CDA
+C6/479F: 00 55        BRK $55
+C6/47A1: 04 7F        TSB $7F
+C6/47A3: C4 7E        CPY $7E
+C6/47A5: C4 6F        CPY $6F
+C6/47A7: C4 00        CPY $00
+C6/47A9: 6E C4 5E     ROR $5EC4
+C6/47AC: 84 5F        STY $5F
+C6/47AE: 84 4E        STY $4E
+C6/47B0: 84 00        STY $00
+C6/47B2: 4F 84 7E 84  EOR $847E84
+C6/47B6: 7F 84 6E 84  ADC $846E84,X
+C6/47BA: 00 6F        BRK $6F
+C6/47BC: 84 0D        STY $0D
+C6/47BE: 04 0E        TSB $0E
+C6/47C0: 04 1D        TSB $1D
+C6/47C2: 04 20        TSB $20
+C6/47C4: 1E 04 0B     ASL $0B04,X
+C6/47C7: 04 0C        TSB $0C
+C6/47C9: 04 10        TSB $10
+C6/47CB: AE 08 02     LDX $0208
+C6/47CE: 60           RTS

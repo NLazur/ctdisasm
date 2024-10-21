@@ -1,0 +1,42 @@
+FD/9A9C: FF 00 10 0D  SBC $0D1000,X
+FD/9AA0: A0 01 A6     LDY #$A601
+FD/9AA3: 02 D0        COP $D0
+FD/9AA5: A7 01        LDA [$01]
+FD/9AA7: AA           TAX
+FD/9AA8: 11 02        ORA ($02),Y
+FD/9AAA: D0 AB        BNE $9A57
+FD/9AAC: 01 AE        ORA ($AE,X)
+FD/9AAE: 02 D0        COP $D0
+FD/9AB0: AF 01 B2 11  LDA $11B201
+FD/9AB4: 02 D0        COP $D0
+FD/9AB6: B3 01        LDA ($01,S),Y
+FD/9AB8: B6 02        LDX $02,Y
+FD/9ABA: D0 B7        BNE $9A73
+FD/9ABC: 01 BA        ORA ($BA,X)
+FD/9ABE: 11 02        ORA ($02),Y
+FD/9AC0: D0 BB        BNE $9A7D
+FD/9AC2: 01 BE        ORA ($BE,X)
+FD/9AC4: 02 D0        COP $D0
+FD/9AC6: BF 01 C2 41  LDA $41C201,X
+FD/9ACA: 02 D0        COP $D0
+FD/9ACC: C3 01        CMP $01,S
+FD/9ACE: D0 01        BNE $9AD1
+FD/9AD0: D5 02        CMP $02,X
+FD/9AD2: C0 D6 10     CPY #$10D6
+FD/9AD5: 01 F2        ORA ($F2,X)
+FD/9AD7: 01 F4        ORA ($F4,X)
+FD/9AD9: 02 C0        COP $C0
+FD/9ADB: F5 01        SBC $01,X
+FD/9ADD: FE 08 01     INC $0108,X
+FD/9AE0: 14 02        TRB $02
+FD/9AE2: 02 B8        COP $B8
+FD/9AE4: 15 02        ORA $02,X
+FD/9AE6: 22 02 82 39  JSR $398202
+FD/9AEA: 02 C0        COP $C0
+FD/9AEC: 3A           DEC
+FD/9AED: 02 41        COP $41
+FD/9AEF: 02 43        COP $43
+FD/9AF1: 02 C0        COP $C0
+FD/9AF3: 00 00        BRK $00
+FD/9AF5: B8           CLV
+FD/9AF6: 60           RTS

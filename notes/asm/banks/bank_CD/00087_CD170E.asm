@@ -1,0 +1,83 @@
+CD/170E: 24 C0        BIT $C0
+CD/1710: 21 73        AND ($73,X)
+CD/1712: 21 F3        AND ($F3,X)
+CD/1714: 20 ED 20     JSR $20ED
+CD/1717: D8           CLD
+CD/1718: 20 D3 20     JSR $20D3
+CD/171B: C8           INY
+CD/171C: 1F A0 1F 53  ORA $531FA0,X
+CD/1720: 1F 53 1F 4D  ORA $4D1F53,X
+CD/1724: 1F 47 1F 3C  ORA $3C1F47,X
+CD/1728: 1F 91 1E 7C  ORA $7C1E91,X
+CD/172C: 1E 45 1E     ASL $1E45,X
+CD/172F: 36 1E        ROL $1E,X
+CD/1731: 27 1E        AND [$1E]
+CD/1733: 07 1E        ORA [$1E]
+CD/1735: 98           TYA
+CD/1736: 1D 93 1D     ORA $1D93,X
+CD/1739: 56 1D        LSR $1D,X
+CD/173B: 4D 1D 7B     EOR $7B1D
+CD/173E: 1C 63 1C     TRB $1C63
+CD/1741: CE 1B AB     DEC $AB1B
+CD/1744: 1B           TCS
+CD/1745: 9F 1B 78 1B  STA $1B781B,X
+CD/1749: 6D 1B 5E     ADC $5E1B
+CD/174C: 1B           TCS
+CD/174D: 1F 1B EB 1A  ORA $1AEB1B,X
+CD/1751: E6 1A        INC $1A
+CD/1753: E1 1A        SBC ($1A,X)
+CD/1755: CB           WAI
+CD/1756: 1A           INC
+CD/1757: BE 1A B2     LDX $B21A,Y
+CD/175A: 1A           INC
+CD/175B: 9C 1A 8B     STZ $8B1A
+CD/175E: 1A           INC
+CD/175F: 7A           PLY
+CD/1760: 1A           INC
+CD/1761: 66 1A        ROR $1A
+CD/1763: E5 19        SBC $19
+CD/1765: C2 19        REP #$19
+CD/1767: B1 19        LDA ($19),Y
+CD/1769: 37 19        AND [$19],Y
+CD/176B: 32 19        AND ($19)
+CD/176D: 23 19        AND $19,S
+CD/176F: 1E 19 18     ASL $1819,X
+CD/1772: 19 13 19     ORA $1913,Y
+CD/1775: 0D 19 9A     ORA $9A19
+CD/1778: 1B           TCS
+CD/1779: 07 19        ORA [$19]
+CD/177B: DF 18 CF 18  CMP $18CF18,X
+CD/177F: C8           INY
+CD/1780: 18           CLC
+CD/1781: C2 18        REP #$18
+CD/1783: 7E 18 74     ROR $7418,X
+CD/1786: 18           CLC
+CD/1787: 79 18 64     ADC $6418,Y
+CD/178A: 18           CLC
+CD/178B: 5F 18 5A 18  EOR $185A18,X
+CD/178F: 55 18        EOR $18,X
+CD/1791: 50 18        BVC $17AB
+CD/1793: 34 18        BIT $18,X
+CD/1795: 2A           ROL
+CD/1796: 18           CLC
+CD/1797: 13 18        ORA ($18,S),Y
+CD/1799: 0A           ASL
+CD/179A: 18           CLC
+CD/179B: 4B           PHK
+CD/179C: 18           CLC
+CD/179D: 05 18        ORA $18
+CD/179F: FF 17 E5 17  SBC $17E517,X
+CD/17A3: DF 17 BE 17  CMP $17BE17,X
+CD/17A7: A9 17        LDA #$17
+CD/17A9: A7 40        LDA [$40]
+CD/17AB: 48           PHA
+CD/17AC: A0 01 00     LDY #$0001
+CD/17AF: C2 20        REP #$20
+CD/17B1: B7 40        LDA [$40],Y
+CD/17B3: AA           TAX
+CD/17B4: E6 40        INC $40
+CD/17B6: 7B           TDC
+CD/17B7: E2 20        SEP #$20
+CD/17B9: 68           PLA
+CD/17BA: 9D 00 00     STA $0000,X
+CD/17BD: 60           RTS

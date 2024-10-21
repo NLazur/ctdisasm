@@ -1,0 +1,24 @@
+C6/130B: F8           SED
+C6/130C: 38           SEC
+C6/130D: C1 7E        CMP ($7E,X)
+C6/130F: 00 81        BRK $81
+C6/1311: FF 00 3F C0  SBC $C03F00,X
+C6/1315: 1B           TCS
+C6/1316: F6 02        INC $02,X
+C6/1318: 00 7C        BRK $7C
+C6/131A: F8           SED
+C6/131B: FF 7C FF 69  SBC $69FF7C,X
+C6/131F: 97 07        STA [$07],Y
+C6/1321: 00 3B        BRK $3B
+C6/1323: DA           PHX
+C6/1324: 3F DB 2F B7  AND $B72FDB,X
+C6/1328: 6C 7C 10     JMP ($107C)
+C6/132B: FF 7F 7F 03  SBC $037F7F,X
+C6/132F: F8           SED
+C6/1330: 13 E0        ORA ($E0,S),Y
+C6/1332: E0 01 00     CPX #$0001
+C6/1335: F4 08 A1     PEA $A108
+C6/1338: A9 95        LDA #$95
+C6/133A: FA           PLX
+C6/133B: FE 87 00     INC $0087,X
+C6/133E: 40           RTI

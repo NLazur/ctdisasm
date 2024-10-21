@@ -1,0 +1,38 @@
+C1/01A9: C2 20        REP #$20
+C1/01AB: A2 A0 94     LDX #$94A0
+C1/01AE: A0 C0 94     LDY #$94C0
+C1/01B1: A9 0F 00     LDA #$000F
+C1/01B4: 54 7E 7E     MVN $7E,$7E
+C1/01B7: A2 1E 00     LDX #$001E
+C1/01BA: 9D A0 94     STA $94A0,X
+C1/01BD: CA           DEX
+C1/01BE: CA           DEX
+C1/01BF: 10 F9        BPL $01BA
+C1/01C1: 7B           TDC
+C1/01C2: AA           TAX
+C1/01C3: E2 20        SEP #$20
+C1/01C5: BD C0 94     LDA $94C0,X
+C1/01C8: F0 2E        BEQ $01F8
+C1/01CA: C9 73        CMP #$73
+C1/01CC: B0 1C        BCS $01EA
+C1/01CE: C9 69        CMP #$69
+C1/01D0: B0 0E        BCS $01E0
+C1/01D2: C9 40        CMP #$40
+C1/01D4: 90 14        BCC $01EA
+C1/01D6: 18           CLC
+C1/01D7: 69 40        ADC #$40
+C1/01D9: 9D A0 94     STA $94A0,X
+C1/01DC: A9 71        LDA #$71
+C1/01DE: 80 0F        BRA $01EF
+C1/01E0: 18           CLC
+C1/01E1: 69 17        ADC #$17
+C1/01E3: 9D A0 94     STA $94A0,X
+C1/01E6: A9 72        LDA #$72
+C1/01E8: 80 05        BRA $01EF
+C1/01EA: 9D A0 94     STA $94A0,X
+C1/01ED: A9 FF        LDA #$FF
+C1/01EF: 9D B0 94     STA $94B0,X
+C1/01F2: E8           INX
+C1/01F3: E0 10 00     CPX #$0010
+C1/01F6: D0 CD        BNE $01C5
+C1/01F8: 60           RTS

@@ -1,0 +1,48 @@
+CF/EFBA: 4C 78 F9     JMP $F978
+CF/EFBD: A2 0A 00     LDX #$000A
+CF/EFC0: 86 C6        STX $C6
+CF/EFC2: A6 C6        LDX $C6
+CF/EFC4: BD 37 A3     LDA $A337,X
+CF/EFC7: F0 20        BEQ $EFE9
+CF/EFC9: DE EB A2     DEC $A2EB,X
+CF/EFCC: D0 1B        BNE $EFE9
+CF/EFCE: BD FE A2     LDA $A2FE,X
+CF/EFD1: 9D EB A2     STA $A2EB,X
+CF/EFD4: C2 20        REP #$20
+CF/EFD6: A5 C6        LDA $C6
+CF/EFD8: 0A           ASL
+CF/EFD9: 85 C8        STA $C8
+CF/EFDB: 0A           ASL
+CF/EFDC: 85 CA        STA $CA
+CF/EFDE: 7B           TDC
+CF/EFDF: E2 20        SEP #$20
+CF/EFE1: BD 6D A8     LDA $A86D,X
+CF/EFE4: 0A           ASL
+CF/EFE5: AA           TAX
+CF/EFE6: FC 1E F0     JSR ($F01E,X)
+CF/EFE9: C6 C6        DEC $C6
+CF/EFEB: 10 D5        BPL $EFC2
+CF/EFED: A2 07 00     LDX #$0007
+CF/EFF0: 86 C6        STX $C6
+CF/EFF2: A6 C6        LDX $C6
+CF/EFF4: BD 42 A3     LDA $A342,X
+CF/EFF7: F0 20        BEQ $F019
+CF/EFF9: DE F6 A2     DEC $A2F6,X
+CF/EFFC: D0 1B        BNE $F019
+CF/EFFE: BD 09 A3     LDA $A309,X
+CF/F001: 9D F6 A2     STA $A2F6,X
+CF/F004: C2 20        REP #$20
+CF/F006: A5 C6        LDA $C6
+CF/F008: 0A           ASL
+CF/F009: 85 C8        STA $C8
+CF/F00B: 0A           ASL
+CF/F00C: 85 CA        STA $CA
+CF/F00E: 7B           TDC
+CF/F00F: E2 20        SEP #$20
+CF/F011: BD 78 A8     LDA $A878,X
+CF/F014: 0A           ASL
+CF/F015: AA           TAX
+CF/F016: FC 2E F0     JSR ($F02E,X)
+CF/F019: C6 C6        DEC $C6
+CF/F01B: 10 D5        BPL $EFF2
+CF/F01D: 60           RTS

@@ -1,0 +1,37 @@
+CE/71D2: 01 02        ORA ($02,X)
+CE/71D4: 01 23        ORA ($23,X)
+CE/71D6: 02 70        COP $70
+CE/71D8: A8           TAY
+CE/71D9: 05 15        ORA $15
+CE/71DB: FF 2B 1B 2B  SBC $2B1B2B,X
+CE/71DF: 35 23        AND $23,X
+CE/71E1: 08           PHP
+CE/71E2: 0D A8 05     ORA $05A8
+CE/71E5: 20 02 71     JSR $7102
+CE/71E8: 1B           TCS
+CE/71E9: 03 85        ORA $85,S
+CE/71EB: 20 A8 04     JSR $04A8
+CE/71EE: 24 03        BIT $03
+CE/71F0: D9 30 85     CMP $8530,Y
+CE/71F3: C0 02 05     CPY #$0502
+CE/71F6: 70 0B        BVS $7203
+CE/71F8: A8           TAY
+CE/71F9: 05 0D        ORA $0D
+CE/71FB: A8           TAY
+CE/71FC: 69 6F 00     ADC #$006F
+CE/71FF: 1B           TCS
+CE/7200: 03 72        ORA $72,S
+CE/7202: 03 73        ORA $73,S
+CE/7204: 00 0C        BRK $0C
+CE/7206: 85 00        STA $00
+CE/7208: A8           TAY
+CE/7209: 03 24        ORA $24,S
+CE/720B: 03 D9        ORA $D9,S
+CE/720D: 30 0B        BMI $721A
+CE/720F: 70 02        BVS $7213
+CE/7211: 03 85        ORA $85,S
+CE/7213: C0 A8 1E     CPY #$1EA8
+CE/7216: 0D A8 50     ORA $50A8
+CE/7219: 6F 00 0D 3D  ADC $3D0D00
+CE/721D: 03 1B        ORA $1B,S
+CE/721F: 40           RTI

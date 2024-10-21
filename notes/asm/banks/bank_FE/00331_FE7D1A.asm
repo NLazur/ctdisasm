@@ -1,0 +1,49 @@
+FE/7D1A: 28           PLP
+FE/7D1B: 42 09        WDM $09
+FE/7D1D: 52 19        EOR ($19)
+FE/7D1F: 12 30        ORA ($30)
+FE/7D21: FF CB 39 E4  SBC $E439CB,X
+FE/7D25: 08           PHP
+FE/7D26: 28           PLP
+FE/7D27: 27 D8        AND [$D8]
+FE/7D29: 24 72        BIT $72
+FE/7D2B: 18           CLC
+FE/7D2C: E0 34        CPX #$34
+FE/7D2E: EE 49 09     INC $0949
+FE/7D31: 14 EF        TRB $EF
+FE/7D33: 10 23        BPL $7D58
+FE/7D35: 06 2A        ASL $2A
+FE/7D37: DA           PHX
+FE/7D38: 36 E7        ROL $E7,X
+FE/7D3A: 46 21        LSR $21
+FE/7D3C: E1 46        SBC ($46,X)
+FE/7D3E: 5F 12 28 14  EOR $142812,X
+FE/7D42: FF 4E 26 3D  SBC $3D264E,X
+FE/7D46: 49 70        EOR #$70
+FE/7D48: 27 5C        AND [$5C]
+FE/7D4A: 1A           INC
+FE/7D4B: 9F 32 44 39  STA $394432,X
+FE/7D4F: 7C 19 42     JMP ($4219,X)
+FE/7D52: 2A           ROL
+FE/7D53: EF CF 41 BE  SBC $BE41CF
+FE/7D57: 31 19        AND ($19),Y
+FE/7D59: 19 6C 2A     ORA $2A6C,Y
+FE/7D5C: 22 8A 24 B3  JSR $B3248A
+FE/7D60: 0A           ASL
+FE/7D61: 67 24        ADC [$24]
+FE/7D63: FF 08 10 34  SBC $341008,X
+FE/7D67: 19 B8 10     ORA $10B8,Y
+FE/7D6A: B8           CLV
+FE/7D6B: 27 A8        AND [$A8]
+FE/7D6D: 10 0D        BPL $7D7C
+FE/7D6F: 0A           ASL
+FE/7D70: B4 26        LDY $26,X
+FE/7D72: 84 0A        STY $0A
+FE/7D74: A3 D1        LDA $D1,S
+FE/7D76: 0A           ASL
+FE/7D77: B0 34        BCS $7DAD
+FE/7D79: 23 22        AND $22,S
+FE/7D7B: 35 01        AND $01,X
+FE/7D7D: 00 34        BRK $34
+FE/7D7F: 05 20        ORA $20
+FE/7D81: 40           RTI

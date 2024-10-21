@@ -1,0 +1,98 @@
+C3/3088: 9F 12 81 21  STA $218112,X
+C3/308C: 9F 02 04 83  STA $830402,X
+C3/3090: 21 F8        AND ($F8,X)
+C3/3092: 22 60 00 8E  JSR $8E0060
+C3/3096: FE FF 61     INC $61FF,X
+C3/3099: FB           XCE
+C3/309A: 1E 21 5B     ASL $5B21,X
+C3/309D: A5 80        LDA $80
+C3/309F: 41 0E        EOR ($0E,X)
+C3/30A1: F2 24        SBC ($24)
+C3/30A3: AA           TAX
+C3/30A4: 00 A0        BRK $A0
+C3/30A6: 10 00        BPL $30A8
+C3/30A8: BD 00 02     LDA $0200,X
+C3/30AB: 85 18        STA $18
+C3/30AD: 00 E8        BRK $E8
+C3/30AF: E8           INX
+C3/30B0: 88           DEY
+C3/30B1: D0 F6        BNE $30A9
+C3/30B3: CE FE FF     DEC $FFFE
+C3/30B6: 04 D0        TSB $D0
+C3/30B8: E3 F5        SBC $F5,S
+C3/30BA: 15 E2        ORA $E2,X
+C3/30BC: 20 AB 60     JSR $60AB
+C3/30BF: 05 02        ORA $02
+C3/30C1: 00 01        BRK $01
+C3/30C3: 00 0F        BRK $0F
+C3/30C5: 01 80        ORA ($80,X)
+C3/30C7: FF 02 90 00  SBC $009002,X
+C3/30CB: FF 03 19 00  SBC $001903,X
+C3/30CF: 04 1B        TSB $1B
+C3/30D1: 00 31        BRK $31
+C3/30D3: 00 06        BRK $06
+C3/30D5: 32 08        AND ($08)
+C3/30D7: FA           PLX
+C3/30D8: 49 37        EOR #$37
+C3/30DA: FA           PLX
+C3/30DB: 54 00 37     MVN $00,$37
+C3/30DE: FA           PLX
+C3/30DF: 9B           TXY
+C3/30E0: 57 FA        EOR [$FA],Y
+C3/30E2: A9 56        LDA #$56
+C3/30E4: FA           PLX
+C3/30E5: 00 7A        BRK $7A
+C3/30E7: 34 F8        BIT $F8,X
+C3/30E9: 0B           PHD
+C3/30EA: 38           SEC
+C3/30EB: F8           SED
+C3/30EC: 54 56 00     MVN $56,$00
+C3/30EF: 91 77        STA ($77),Y
+C3/30F1: 00 55        BRK $55
+C3/30F3: 55 FB        EOR $FB,X
+C3/30F5: 11 2C        ORA ($2C),Y
+C3/30F7: 00 10        BRK $10
+C3/30F9: C0 FF        CPY #$FF
+C3/30FB: 90 35        BCC $3132
+C3/30FD: 00 5D        BRK $5D
+C3/30FF: 55 00        EOR $00,X
+C3/3101: FD 65 55     SBC $5565,X
+C3/3104: 00 FF        BRK $FF
+C3/3106: FF 02 FF 00  SBC $00FF02,X
+C3/310A: FF 91 81 00  SBC $008191,X
+C3/310E: 6E 55 02     ROR $0255
+C3/3111: 00 01        BRK $01
+C3/3113: 73 0C        ADC ($0C,S),Y
+C3/3115: 00 92        BRK $92
+C3/3117: 01 00        ORA ($00,X)
+C3/3119: 79 55 90     ADC $9055,Y
+C3/311C: 00 07        BRK $07
+C3/311E: 00 76        BRK $76
+C3/3120: 55 91        EOR $91,X
+C3/3122: 59 00 83     EOR $8300,Y
+C3/3125: 00 55        BRK $55
+C3/3127: FA           PLX
+C3/3128: 55 58        EOR $58,X
+C3/312A: 05 00        ORA $00
+C3/312C: 02 15        COP $15
+C3/312E: 00 02        BRK $02
+C3/3130: 00 91        BRK $91
+C3/3132: 43 00        EOR $00,S
+C3/3134: 8E 55 80     STX $8055
+C3/3137: 42 02        WDM $02
+C3/3139: 05 00        ORA $00
+C3/313B: FA           PLX
+C3/313C: F9 55 12     SBC $1255,Y
+C3/313F: 28           PLP
+C3/3140: 00 0F        BRK $0F
+C3/3142: 00 00        BRK $00
+C3/3144: A1 55        LDA ($55,X)
+C3/3146: 80 07        BRA $314F
+C3/3148: 00 9E        BRK $9E
+C3/314A: 55 08        EOR $08,X
+C3/314C: 12 FF        ORA ($FF)
+C3/314E: FF 0D 00 AE  SBC $AE000D,X
+C3/3152: 55 80        EOR $80,X
+C3/3154: 0F 14 00 AB  ORA $AB0014
+C3/3158: 1A           INC
+C3/3159: 40           RTI

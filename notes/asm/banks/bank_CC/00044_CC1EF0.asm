@@ -1,0 +1,50 @@
+CC/1EF0: 82 00 2B     BRL $CC49F3
+CC/1EF3: 83 80        STA $80,S
+CC/1EF5: 0B           PHD
+CC/1EF6: 00 00        BRK $00
+CC/1EF8: 28           PLP
+CC/1EF9: 41 40        EOR ($40,X)
+CC/1EFB: 04 00        TSB $00
+CC/1EFD: AC 04 80     LDY $8004
+CC/1F00: 00 06        BRK $06
+CC/1F02: 00 0C        BRK $0C
+CC/1F04: 61 40        ADC ($40,X)
+CC/1F06: 42 00        WDM $00
+CC/1F08: 0B           PHD
+CC/1F09: 13 80        ORA ($80,S),Y
+CC/1F0B: 07 07        ORA [$07]
+CC/1F0D: 00 0C        BRK $0C
+CC/1F0F: 61 40        ADC ($40,X)
+CC/1F11: 42 00        WDM $00
+CC/1F13: 0E 16 80     ASL $8016
+CC/1F16: 09 09 00     ORA #$0009
+CC/1F19: 0C 61 40     TSB $4061
+CC/1F1C: 42 00        WDM $00
+CC/1F1E: 0E 18 80     ASL $8018
+CC/1F21: 08           PHP
+CC/1F22: 08           PHP
+CC/1F23: 00 0D        BRK $0D
+CC/1F25: 00 40        BRK $40
+CC/1F27: 00 00        BRK $00
+CC/1F29: 09 9A 80     ORA #$809A
+CC/1F2C: 00 00        BRK $00
+CC/1F2E: 00 29        BRK $29
+CC/1F30: 61 40        ADC ($40,X)
+CC/1F32: 22 00 1C 0B  JSR $0B1C00
+CC/1F36: 80 09        BRA $1F41
+CC/1F38: 09 00 0D     ORA #$0D00
+CC/1F3B: 00 40        BRK $40
+CC/1F3D: 00 00        BRK $00
+CC/1F3F: 0F 9D 80 00  ORA $00809D
+CC/1F43: 00 00        BRK $00
+CC/1F45: 2A           ROL
+CC/1F46: 61 40        ADC ($40,X)
+CC/1F48: 22 00 23 0B  JSR $0B2300
+CC/1F4C: 80 07        BRA $1F55
+CC/1F4E: 07 00        ORA [$00]
+CC/1F50: 2A           ROL
+CC/1F51: 61 40        ADC ($40,X)
+CC/1F53: 22 00 26 0E  JSR $0E2600
+CC/1F57: 80 09        BRA $1F62
+CC/1F59: 09 00 0E     ORA #$0E00
+CC/1F5C: 60           RTS

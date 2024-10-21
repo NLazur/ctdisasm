@@ -1,0 +1,29 @@
+C0/F521: 3D 3B 38     AND $383B,X
+C0/F524: 36 34        ROL $34,X
+C0/F526: 32 30        AND ($30)
+C0/F528: 2E 2C 2A     ROL $2A2C
+C0/F52B: 29 26        AND #$26
+C0/F52D: 25 24        AND $24
+C0/F52F: 22 21 20 1F  JSR $1F2021
+C0/F533: 1D 1C 1B     ORA $1B1C,X
+C0/F536: 1A           INC
+C0/F537: 1A           INC
+C0/F538: 19 18 17     ORA $1718,Y
+C0/F53B: 17 16        ORA [$16],Y
+C0/F53D: 15 15        ORA $15,X
+C0/F53F: 14 40        TRB $40
+C0/F541: 3D 3B 39     AND $393B,X
+C0/F544: 37 35        AND [$35],Y
+C0/F546: 32 30        AND ($30)
+C0/F548: 2F 2D 2B 29  AND $292B2D
+C0/F54C: 28           PLP
+C0/F54D: 26 25        ROL $25
+C0/F54F: 24 22        BIT $22
+C0/F551: 21 20        AND ($20,X)
+C0/F553: 1F 1D 1C 1C  ORA $1C1C1D,X
+C0/F557: 1B           TCS
+C0/F558: 1A           INC
+C0/F559: 19 18 17     ORA $1718,Y
+C0/F55C: 17 16        ORA [$16],Y
+C0/F55E: 15 15        ORA $15,X
+C0/F560: 40           RTI

@@ -1,0 +1,91 @@
+C1/C95C: 8D C7 A7     STA $A7C7
+C1/C95F: C7 BD        CMP [$BD]
+C1/C961: C7 D1        CMP [$D1]
+C1/C963: C7 E7        CMP [$E7]
+C1/C965: C7 FD        CMP [$FD]
+C1/C967: C7 13        CMP [$13]
+C1/C969: C8           INY
+C1/C96A: 7B           TDC
+C1/C96B: AA           TAX
+C1/C96C: 86 00        STX $00
+C1/C96E: 86 08        STX $08
+C1/C970: 86 0E        STX $0E
+C1/C972: A5 06        LDA $06
+C1/C974: AA           TAX
+C1/C975: BD FF AE     LDA $AEFF,X
+C1/C978: C9 FF        CMP #$FF
+C1/C97A: D0 03        BNE $C97F
+C1/C97C: 4C 19 CA     JMP $CA19
+C1/C97F: 85 00        STA $00
+C1/C981: AA           TAX
+C1/C982: BF 9D A8 FD  LDA $FDA89D,X
+C1/C986: 85 08        STA $08
+C1/C988: BF 9E A8 FD  LDA $FDA89E,X
+C1/C98C: 85 0E        STA $0E
+C1/C98E: A5 08        LDA $08
+C1/C990: C2 20        REP #$20
+C1/C992: 0A           ASL
+C1/C993: 85 02        STA $02
+C1/C995: 7B           TDC
+C1/C996: E2 20        SEP #$20
+C1/C998: A5 06        LDA $06
+C1/C99A: C2 20        REP #$20
+C1/C99C: 0A           ASL
+C1/C99D: AA           TAX
+C1/C99E: BF 4F A8 FD  LDA $FDA84F,X
+C1/C9A2: 85 04        STA $04
+C1/C9A4: 7B           TDC
+C1/C9A5: E2 20        SEP #$20
+C1/C9A7: A6 00        LDX $00
+C1/C9A9: BD 37 28     LDA $2837,X
+C1/C9AC: 85 0C        STA $0C
+C1/C9AE: A5 0C        LDA $0C
+C1/C9B0: 29 80        AND #$80
+C1/C9B2: F0 47        BEQ $C9FB
+C1/C9B4: A5 08        LDA $08
+C1/C9B6: 20 93 CB     JSR $CB93
+C1/C9B9: 7B           TDC
+C1/C9BA: A6 02        LDX $02
+C1/C9BC: BF CC 1A CC  LDA $CC1ACC,X
+C1/C9C0: 29 3F        AND #$3F
+C1/C9C2: A6 04        LDX $04
+C1/C9C4: 9D 02 00     STA $0002,X
+C1/C9C7: A6 02        LDX $02
+C1/C9C9: BF CB 1A CC  LDA $CC1ACB,X
+C1/C9CD: A6 04        LDX $04
+C1/C9CF: 9D 01 00     STA $0001,X
+C1/C9D2: A6 04        LDX $04
+C1/C9D4: A5 08        LDA $08
+C1/C9D6: 9D 00 00     STA $0000,X
+C1/C9D9: A6 04        LDX $04
+C1/C9DB: A9 FF        LDA #$FF
+C1/C9DD: 9D 03 00     STA $0003,X
+C1/C9E0: 9D 05 00     STA $0005,X
+C1/C9E3: 9D 06 00     STA $0006,X
+C1/C9E6: 7B           TDC
+C1/C9E7: A5 08        LDA $08
+C1/C9E9: 20 48 CB     JSR $CB48
+C1/C9EC: A8           TAY
+C1/C9ED: 7B           TDC
+C1/C9EE: AD EA B2     LDA $B2EA
+C1/C9F1: 20 C3 CB     JSR $CBC3
+C1/C9F4: A9 FF        LDA #$FF
+C1/C9F6: A6 04        LDX $04
+C1/C9F8: 9D 04 00     STA $0004,X
+C1/C9FB: A5 0C        LDA $0C
+C1/C9FD: 0A           ASL
+C1/C9FE: 85 0C        STA $0C
+C1/CA00: C2 20        REP #$20
+C1/CA02: A5 04        LDA $04
+C1/CA04: 18           CLC
+C1/CA05: 69 07 00     ADC #$0007
+C1/CA08: 85 04        STA $04
+C1/CA0A: E6 02        INC $02
+C1/CA0C: E6 02        INC $02
+C1/CA0E: 7B           TDC
+C1/CA0F: E2 20        SEP #$20
+C1/CA11: E6 08        INC $08
+C1/CA13: A5 08        LDA $08
+C1/CA15: C5 0E        CMP $0E
+C1/CA17: 90 95        BCC $C9AE
+C1/CA19: 60           RTS

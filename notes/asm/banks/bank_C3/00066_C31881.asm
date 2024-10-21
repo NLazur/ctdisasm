@@ -1,0 +1,14 @@
+C3/1881: 01 D3        ORA ($D3,X)
+C3/1883: 02 00        COP $00
+C3/1885: 04 AD        TSB $AD
+C3/1887: 03 1E        ORA $1E,S
+C3/1889: 8D 43 00     STA $0043
+C3/188C: 21 AD        AND ($AD,X)
+C3/188E: 02 1E        COP $1E
+C3/1890: 8D 42 21     STA $2142
+C3/1893: AD 00 01     LDA $0100
+C3/1896: 1E 8D 41     ASL $418D,X
+C3/1899: 21 AD        AND ($AD,X)
+C3/189B: 00 1E        BRK $1E
+C3/189D: 00 8D        BRK $8D
+C3/189F: 40           RTI

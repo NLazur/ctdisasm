@@ -1,0 +1,52 @@
+FD/3939: E1 E8        SBC ($E8,X)
+FD/393B: 07 A0        ORA [$A0]
+FD/393D: FE 00 3B     INC $3B00,X
+FD/3940: 47 B3        EOR [$B3]
+FD/3942: 73 01        ADC ($01,S),Y
+FD/3944: F0 07        BEQ $394D
+FD/3946: 80 FF        BRA $3947
+FD/3948: 97 01        STA [$01],Y
+FD/394A: F0 B1        BEQ $38FD
+FD/394C: 85 07        STA $07
+FD/394E: 86 99        STX $99
+FD/3950: 5F 09 98 09  EOR $099809,X
+FD/3954: 03 02        ORA $02,S
+FD/3956: 04 05        TSB $05
+FD/3958: 01 1C        ORA ($1C,X)
+FD/395A: 00 07        BRK $07
+FD/395C: C2 05        REP #$05
+FD/395E: 32 04        AND ($04)
+FD/3960: 9B           TXY
+FD/3961: 09 03        ORA #$03
+FD/3963: 05 03        ORA $03
+FD/3965: F0 00        BEQ $3967
+FD/3967: 04 06        TSB $06
+FD/3969: 06 9D        ASL $9D
+FD/396B: 09 C9        ORA #$C9
+FD/396D: 09 B9        ORA #$B9
+FD/396F: 19 6E 06     ORA $066E,Y
+FD/3972: 0F 1E 10 CD  ORA $CD101E
+FD/3976: 16 22        ASL $22,X
+FD/3978: 10 35        BPL $39AF
+FD/397A: 00 05        BRK $05
+FD/397C: 02 01        COP $01
+FD/397E: 06 00        ASL $00
+FD/3980: BA           TSX
+FD/3981: 5A           PHY
+FD/3982: FD 47 30     SBC $3047,X
+FD/3985: EA           NOP
+FD/3986: FE AC 00     INC $00AC,X
+FD/3989: 5C AC B0 3E  JMP $3EB0AC
+FD/398D: BD 56 24     LDA $2456,X
+FD/3990: 1E 00 75     ASL $7500,X
+FD/3993: E9 02        SBC #$02
+FD/3995: F4 C7 D9     PEA $D9C7
+FD/3998: 6A           ROR
+FD/3999: F8           SED
+FD/399A: 00 06        BRK $06
+FD/399C: 74 AA        STZ $AA,X
+FD/399E: E0 13        CPX #$13
+FD/39A0: B9 46 B0     LDA $B046,Y
+FD/39A3: 00 1E        BRK $1E
+FD/39A5: AF 5B BC 36  LDA $36BC5B
+FD/39A9: 40           RTI

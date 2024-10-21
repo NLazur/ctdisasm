@@ -1,0 +1,69 @@
+CD/1CBF: A7 40        LDA [$40]
+CD/1CC1: 0A           ASL
+CD/1CC2: 0A           ASL
+CD/1CC3: AA           TAX
+CD/1CC4: C2 20        REP #$20
+CD/1CC6: BF 5B 1C CD  LDA $CD1C5B,X
+CD/1CCA: 85 49        STA $49
+CD/1CCC: BF 5D 1C CD  LDA $CD1C5D,X
+CD/1CD0: 85 4B        STA $4B
+CD/1CD2: 7B           TDC
+CD/1CD3: E2 20        SEP #$20
+CD/1CD5: A6 43        LDX $43
+CD/1CD7: BD 81 CA     LDA $CA81,X
+CD/1CDA: 18           CLC
+CD/1CDB: 69 06        ADC #$06
+CD/1CDD: 9D 81 CA     STA $CA81,X
+CD/1CE0: BD 80 CA     LDA $CA80,X
+CD/1CE3: 18           CLC
+CD/1CE4: 69 05        ADC #$05
+CD/1CE6: 9D 80 CA     STA $CA80,X
+CD/1CE9: BD 7F CA     LDA $CA7F,X
+CD/1CEC: 18           CLC
+CD/1CED: 69 02        ADC #$02
+CD/1CEF: 9D 7F CA     STA $CA7F,X
+CD/1CF2: 7B           TDC
+CD/1CF3: A8           TAY
+CD/1CF4: E2 10        SEP #$10
+CD/1CF6: A6 43        LDX $43
+CD/1CF8: A4 49        LDY $49
+CD/1CFA: BD 7F CA     LDA $CA7F,X
+CD/1CFD: 20 FD 3B     JSR $3BFD
+CD/1D00: 85 45        STA $45
+CD/1D02: A6 43        LDX $43
+CD/1D04: A4 4A        LDY $4A
+CD/1D06: BD 7F CA     LDA $CA7F,X
+CD/1D09: 20 00 3C     JSR $3C00
+CD/1D0C: 85 47        STA $47
+CD/1D0E: A6 43        LDX $43
+CD/1D10: A4 4B        LDY $4B
+CD/1D12: BD 81 CA     LDA $CA81,X
+CD/1D15: 20 FD 3B     JSR $3BFD
+CD/1D18: A6 43        LDX $43
+CD/1D1A: 18           CLC
+CD/1D1B: 65 4D        ADC $4D
+CD/1D1D: 18           CLC
+CD/1D1E: 65 45        ADC $45
+CD/1D20: C2 20        REP #$20
+CD/1D22: 49 FF FF     EOR #$FFFF
+CD/1D25: 1A           INC
+CD/1D26: 9D 5A CA     STA $CA5A,X
+CD/1D29: 7B           TDC
+CD/1D2A: E2 20        SEP #$20
+CD/1D2C: A6 43        LDX $43
+CD/1D2E: A4 4C        LDY $4C
+CD/1D30: BD 80 CA     LDA $CA80,X
+CD/1D33: 20 00 3C     JSR $3C00
+CD/1D36: A6 43        LDX $43
+CD/1D38: 18           CLC
+CD/1D39: 65 4E        ADC $4E
+CD/1D3B: 18           CLC
+CD/1D3C: 65 47        ADC $47
+CD/1D3E: C2 20        REP #$20
+CD/1D40: 49 FF FF     EOR #$FFFF
+CD/1D43: 1A           INC
+CD/1D44: 9D 5C CA     STA $CA5C,X
+CD/1D47: 7B           TDC
+CD/1D48: E2 20        SEP #$20
+CD/1D4A: C2 10        REP #$10
+CD/1D4C: 60           RTS

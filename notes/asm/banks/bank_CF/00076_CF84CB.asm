@@ -1,0 +1,742 @@
+CF/84CB: 23 42        AND $42,S
+CF/84CD: 23 04        AND $04,S
+CF/84CF: 20 44 23     JSR $2344
+CF/84D2: 46 23        LSR $23
+CF/84D4: 48           PHA
+CF/84D5: 23 4A        AND $4A,S
+CF/84D7: 23 04        AND $04,S
+CF/84D9: 20 04 20     JSR $2004
+CF/84DC: 04 20        TSB $20
+CF/84DE: 04 20        TSB $20
+CF/84E0: 04 20        TSB $20
+CF/84E2: 4C 23 4E     JMP $4E23
+CF/84E5: 23 04        AND $04,S
+CF/84E7: 20 04 20     JSR $2004
+CF/84EA: 50 23        BVC $850F
+CF/84EC: 52 23        EOR ($23)
+CF/84EE: 04 20        TSB $20
+CF/84F0: 54 23 56     MVN $23,$56
+CF/84F3: 23 58        AND $58,S
+CF/84F5: 23 5A        AND $5A,S
+CF/84F7: 23 5C        AND $5C,S
+CF/84F9: 23 5E        AND $5E,S
+CF/84FB: 23 60        AND $60,S
+CF/84FD: 23 62        AND $62,S
+CF/84FF: 23 64        AND $64,S
+CF/8501: 23 66        AND $66,S
+CF/8503: 23 68        AND $68,S
+CF/8505: 23 6A        AND $6A,S
+CF/8507: 23 6C        AND $6C,S
+CF/8509: 23 6E        AND $6E,S
+CF/850B: 23 70        AND $70,S
+CF/850D: 23 72        AND $72,S
+CF/850F: 23 74        AND $74,S
+CF/8511: 23 76        AND $76,S
+CF/8513: 23 78        AND $78,S
+CF/8515: 23 7A        AND $7A,S
+CF/8517: 23 7C        AND $7C,S
+CF/8519: 23 7E        AND $7E,S
+CF/851B: 23 80        AND $80,S
+CF/851D: 23 82        AND $82,S
+CF/851F: 23 84        AND $84,S
+CF/8521: 23 86        AND $86,S
+CF/8523: 23 88        AND $88,S
+CF/8525: 23 8A        AND $8A,S
+CF/8527: 23 8C        AND $8C,S
+CF/8529: 23 8E        AND $8E,S
+CF/852B: 23 90        AND $90,S
+CF/852D: 23 04        AND $04,S
+CF/852F: 20 92 23     JSR $2392
+CF/8532: 94 23        STY $23,X
+CF/8534: 96 23        STX $23,Y
+CF/8536: 98           TYA
+CF/8537: 23 04        AND $04,S
+CF/8539: 20 04 20     JSR $2004
+CF/853C: 04 20        TSB $20
+CF/853E: 04 20        TSB $20
+CF/8540: 9A           TXS
+CF/8541: 23 9C        AND $9C,S
+CF/8543: 23 9E        AND $9E,S
+CF/8545: 23 A0        AND $A0,S
+CF/8547: 23 A2        AND $A2,S
+CF/8549: 23 A4        AND $A4,S
+CF/854B: 23 A6        AND $A6,S
+CF/854D: 23 A8        AND $A8,S
+CF/854F: 23 1A        AND $1A,S
+CF/8551: 20 1A 20     JSR $201A
+CF/8554: AA           TAX
+CF/8555: 23 AA        AND $AA,S
+CF/8557: 23 AC        AND $AC,S
+CF/8559: 23 AE        AND $AE,S
+CF/855B: 23 B0        AND $B0,S
+CF/855D: 23 B2        AND $B2,S
+CF/855F: 23 B4        AND $B4,S
+CF/8561: 23 04        AND $04,S
+CF/8563: 20 A0 23     JSR $23A0
+CF/8566: A4 23        LDY $23
+CF/8568: B6 23        LDX $23,Y
+CF/856A: B8           CLV
+CF/856B: 23 BA        AND $BA,S
+CF/856D: 23 BC        AND $BC,S
+CF/856F: 23 1A        AND $1A,S
+CF/8571: 20 1A 20     JSR $201A
+CF/8574: AA           TAX
+CF/8575: 23 AA        AND $AA,S
+CF/8577: 23 BE        AND $BE,S
+CF/8579: 23 C0        AND $C0,S
+CF/857B: 23 04        AND $04,S
+CF/857D: 20 C2 23     JSR $23C2
+CF/8580: 04 20        TSB $20
+CF/8582: 98           TYA
+CF/8583: E3 C4        SBC $C4,S
+CF/8585: 23 C6        AND $C6,S
+CF/8587: 23 C8        AND $C8,S
+CF/8589: 23 CA        AND $CA,S
+CF/858B: 23 CC        AND $CC,S
+CF/858D: 23 04        AND $04,S
+CF/858F: 20 CE 23     JSR $23CE
+CF/8592: CE 63 04     DEC $0463
+CF/8595: 20 D0 23     JSR $23D0
+CF/8598: 04 20        TSB $20
+CF/859A: 04 20        TSB $20
+CF/859C: D2 23        CMP ($23)
+CF/859E: D4 23        PEI $23
+CF/85A0: 04 20        TSB $20
+CF/85A2: D6 23        DEC $23,X
+CF/85A4: D8           CLD
+CF/85A5: 23 DA        AND $DA,S
+CF/85A7: 23 DC        AND $DC,S
+CF/85A9: 23 DE        AND $DE,S
+CF/85AB: 23 E0        AND $E0,S
+CF/85AD: 23 04        AND $04,S
+CF/85AF: 20 CE A3     JSR $A3CE
+CF/85B2: CE E3 E2     DEC $E2E3
+CF/85B5: 23 E4        AND $E4,S
+CF/85B7: 23 04        AND $04,S
+CF/85B9: 20 E6 23     JSR $23E6
+CF/85BC: E8           INX
+CF/85BD: 23 EA        AND $EA,S
+CF/85BF: 23 EC        AND $EC,S
+CF/85C1: 23 EE        AND $EE,S
+CF/85C3: 23 F0        AND $F0,S
+CF/85C5: 23 04        AND $04,S
+CF/85C7: 20 F2 23     JSR $23F2
+CF/85CA: F4 23 F6     PEA $F623
+CF/85CD: 23 04        AND $04,S
+CF/85CF: 20 04 20     JSR $2004
+CF/85D2: F8           SED
+CF/85D3: 23 FA        AND $FA,S
+CF/85D5: 23 04        AND $04,S
+CF/85D7: 20 FC 23     JSR $23FC
+CF/85DA: FE 23 00     INC $0023,X
+CF/85DD: 24 02        BIT $02
+CF/85DF: 24 04        BIT $04
+CF/85E1: 20 04 24     JSR $2404
+CF/85E4: 06 24        ASL $24
+CF/85E6: 04 20        TSB $20
+CF/85E8: 08           PHP
+CF/85E9: 24 0A        BIT $0A
+CF/85EB: 24 04        BIT $04
+CF/85ED: 20 04 20     JSR $2004
+CF/85F0: 0C 24 0E     TSB $0E24
+CF/85F3: 24 10        BIT $10
+CF/85F5: 24 04        BIT $04
+CF/85F7: 20 12 24     JSR $2412
+CF/85FA: 14 24        TRB $24
+CF/85FC: 16 24        ASL $24,X
+CF/85FE: AC E0 18     LDY $18E0
+CF/8601: 24 1A        BIT $1A
+CF/8603: 24 1C        BIT $1C
+CF/8605: 24 04        BIT $04
+CF/8607: 20 04 20     JSR $2004
+CF/860A: 04 20        TSB $20
+CF/860C: 1E 24 20     ASL $2024,X
+CF/860F: 24 04        BIT $04
+CF/8611: 20 04 20     JSR $2004
+CF/8614: 04 20        TSB $20
+CF/8616: 04 20        TSB $20
+CF/8618: 22 24 24 24  JSR $242424
+CF/861C: 26 24        ROL $24
+CF/861E: 28           PLP
+CF/861F: 24 2A        BIT $2A
+CF/8621: 24 2C        BIT $2C
+CF/8623: 24 04        BIT $04
+CF/8625: 20 04 20     JSR $2004
+CF/8628: 04 20        TSB $20
+CF/862A: 2E 24 30     ROL $3024
+CF/862D: 24 32        BIT $32
+CF/862F: 24 34        BIT $34
+CF/8631: 24 36        BIT $36
+CF/8633: 24 38        BIT $38
+CF/8635: 24 3A        BIT $3A
+CF/8637: 24 3C        BIT $3C
+CF/8639: 24 3E        BIT $3E
+CF/863B: 24 40        BIT $40
+CF/863D: 24 42        BIT $42
+CF/863F: 24 44        BIT $44
+CF/8641: 24 46        BIT $46
+CF/8643: 24 CE        BIT $CE
+CF/8645: 23 CE        AND $CE,S
+CF/8647: 63 48        ADC $48,S
+CF/8649: 24 4A        BIT $4A
+CF/864B: 24 4C        BIT $4C
+CF/864D: 24 4E        BIT $4E
+CF/864F: 24 50        BIT $50
+CF/8651: 24 52        BIT $52
+CF/8653: 24 54        BIT $54
+CF/8655: 24 56        BIT $56
+CF/8657: 24 58        BIT $58
+CF/8659: 24 5A        BIT $5A
+CF/865B: 24 CE        BIT $CE
+CF/865D: 23 CE        AND $CE,S
+CF/865F: 63 5C        ADC $5C,S
+CF/8661: 24 C8        BIT $C8
+CF/8663: E3 CE        SBC $CE,S
+CF/8665: A3 CE        LDA $CE,S
+CF/8667: E3 5E        SBC $5E,S
+CF/8669: 24 60        BIT $60
+CF/866B: 24 62        BIT $62
+CF/866D: 24 04        BIT $04
+CF/866F: 20 64 24     JSR $2464
+CF/8672: 66 24        ROR $24
+CF/8674: 04 20        TSB $20
+CF/8676: 04 20        TSB $20
+CF/8678: 04 20        TSB $20
+CF/867A: 04 20        TSB $20
+CF/867C: CE A3 CE     DEC $CEA3
+CF/867F: E3 04        SBC $04,S
+CF/8681: 20 04 20     JSR $2004
+CF/8684: 04 20        TSB $20
+CF/8686: 04 20        TSB $20
+CF/8688: 68           PLA
+CF/8689: 24 6A        BIT $6A
+CF/868B: 24 6C        BIT $6C
+CF/868D: 24 6E        BIT $6E
+CF/868F: 24 04        BIT $04
+CF/8691: 20 70 24     JSR $2470
+CF/8694: 72 24        ADC ($24)
+CF/8696: 74 24        STZ $24,X
+CF/8698: 04 20        TSB $20
+CF/869A: 76 24        ROR $24,X
+CF/869C: 78           SEI
+CF/869D: 24 7A        BIT $7A
+CF/869F: 24 04        BIT $04
+CF/86A1: 20 7C 24     JSR $247C
+CF/86A4: 7E 24 80     ROR $8024,X
+CF/86A7: 24 82        BIT $82
+CF/86A9: 24 84        BIT $84
+CF/86AB: 24 86        BIT $86
+CF/86AD: 24 88        BIT $88
+CF/86AF: 24 04        BIT $04
+CF/86B1: 20 8A 24     JSR $248A
+CF/86B4: 8C 24 8E     STY $8E24
+CF/86B7: 24 90        BIT $90
+CF/86B9: 24 92        BIT $92
+CF/86BB: 24 94        BIT $94
+CF/86BD: 24 96        BIT $96
+CF/86BF: 24 CE        BIT $CE
+CF/86C1: 23 CE        AND $CE,S
+CF/86C3: 63 04        ADC $04,S
+CF/86C5: 20 92 E0     JSR $E092
+CF/86C8: 00 21        BRK $21
+CF/86CA: 02 21        COP $21
+CF/86CC: 04 21        TSB $21
+CF/86CE: 06 21        ASL $21
+CF/86D0: 04 20        TSB $20
+CF/86D2: 3E 21 98     ROL $9821,X
+CF/86D5: 24 9A        BIT $9A
+CF/86D7: 24 9C        BIT $9C
+CF/86D9: 24 9E        BIT $9E
+CF/86DB: 24 A0        BIT $A0
+CF/86DD: 24 A2        BIT $A2
+CF/86DF: 24 CE        BIT $CE
+CF/86E1: A3 CE        LDA $CE,S
+CF/86E3: E3 10        SBC $10,S
+CF/86E5: 21 12        AND ($12,X)
+CF/86E7: 21 A4        AND ($A4,X)
+CF/86E9: 24 A6        BIT $A6
+CF/86EB: 24 A8        BIT $A8
+CF/86ED: 24 AA        BIT $AA
+CF/86EF: 24 92        BIT $92
+CF/86F1: E0 4C        CPX #$4C
+CF/86F3: 21 AC        AND ($AC,X)
+CF/86F5: 24 AE        BIT $AE
+CF/86F7: 24 B0        BIT $B0
+CF/86F9: 24 B2        BIT $B2
+CF/86FB: 24 B4        BIT $B4
+CF/86FD: 24 B6        BIT $B6
+CF/86FF: 24 04        BIT $04
+CF/8701: 20 1A 21     JSR $211A
+CF/8704: B8           CLV
+CF/8705: 24 BA        BIT $BA
+CF/8707: 24 BC        BIT $BC
+CF/8709: 24 BE        BIT $BE
+CF/870B: 24 C0        BIT $C0
+CF/870D: 24 AA        BIT $AA
+CF/870F: 23 58        AND $58,S
+CF/8711: 21 C2        AND ($C2,X)
+CF/8713: 24 C4        BIT $C4
+CF/8715: 24 C6        BIT $C6
+CF/8717: 24 C8        BIT $C8
+CF/8719: 24 CA        BIT $CA
+CF/871B: 24 CC        BIT $CC
+CF/871D: 24 CE        BIT $CE
+CF/871F: 24 2C        BIT $2C
+CF/8721: 21 D0        AND ($D0,X)
+CF/8723: 24 D2        BIT $D2
+CF/8725: 24 D4        BIT $D4
+CF/8727: 24 D6        BIT $D6
+CF/8729: 24 D8        BIT $D8
+CF/872B: 24 DA        BIT $DA
+CF/872D: 24 1E        BIT $1E
+CF/872F: 21 68        AND ($68,X)
+CF/8731: 21 DC        AND ($DC,X)
+CF/8733: 24 DE        BIT $DE
+CF/8735: 24 E0        BIT $E0
+CF/8737: 24 E2        BIT $E2
+CF/8739: 24 E4        BIT $E4
+CF/873B: 24 E6        BIT $E6
+CF/873D: 24 E8        BIT $E8
+CF/873F: 24 5C        BIT $5C
+CF/8741: 21 EA        AND ($EA,X)
+CF/8743: 24 EC        BIT $EC
+CF/8745: 24 EE        BIT $EE
+CF/8747: 24 F0        BIT $F0
+CF/8749: 24 F2        BIT $F2
+CF/874B: 24 F4        BIT $F4
+CF/874D: 24 F6        BIT $F6
+CF/874F: 24 F8        BIT $F8
+CF/8751: 24 FA        BIT $FA
+CF/8753: 24 FC        BIT $FC
+CF/8755: 24 FE        BIT $FE
+CF/8757: 24 00        BIT $00
+CF/8759: 25 02        AND $02
+CF/875B: 25 CE        AND $CE
+CF/875D: 23 CE        AND $CE,S
+CF/875F: 63 6A        ADC $6A,S
+CF/8761: 21 04        AND ($04,X)
+CF/8763: 25 AA        AND $AA
+CF/8765: 23 1E        AND $1E,S
+CF/8767: 21 06        AND ($06,X)
+CF/8769: 25 08        AND $08
+CF/876B: 25 0A        AND $0A
+CF/876D: 25 0C        AND $0C
+CF/876F: 25 0E        AND $0E
+CF/8771: 25 10        AND $10
+CF/8773: 25 12        AND $12
+CF/8775: 25 14        AND $14
+CF/8777: 25 16        AND $16
+CF/8779: 25 18        AND $18
+CF/877B: 25 CE        AND $CE
+CF/877D: A3 CE        LDA $CE,S
+CF/877F: E3 CE        SBC $CE,S
+CF/8781: 23 CE        AND $CE,S
+CF/8783: 63 CE        ADC $CE,S
+CF/8785: 23 CE        AND $CE,S
+CF/8787: 63 CE        ADC $CE,S
+CF/8789: 23 CE        AND $CE,S
+CF/878B: 63 CE        ADC $CE,S
+CF/878D: 23 CE        AND $CE,S
+CF/878F: 63 CE        ADC $CE,S
+CF/8791: 23 CE        AND $CE,S
+CF/8793: 63 CE        ADC $CE,S
+CF/8795: 23 CE        AND $CE,S
+CF/8797: 63 CE        ADC $CE,S
+CF/8799: 23 CE        AND $CE,S
+CF/879B: 63 CE        ADC $CE,S
+CF/879D: 23 CE        AND $CE,S
+CF/879F: 63 CE        ADC $CE,S
+CF/87A1: A3 CE        LDA $CE,S
+CF/87A3: E3 CE        SBC $CE,S
+CF/87A5: A3 CE        LDA $CE,S
+CF/87A7: E3 CE        SBC $CE,S
+CF/87A9: A3 CE        LDA $CE,S
+CF/87AB: E3 CE        SBC $CE,S
+CF/87AD: A3 CE        LDA $CE,S
+CF/87AF: E3 CE        SBC $CE,S
+CF/87B1: A3 CE        LDA $CE,S
+CF/87B3: E3 CE        SBC $CE,S
+CF/87B5: A3 CE        LDA $CE,S
+CF/87B7: E3 CE        SBC $CE,S
+CF/87B9: A3 CE        LDA $CE,S
+CF/87BB: E3 CE        SBC $CE,S
+CF/87BD: A3 CE        LDA $CE,S
+CF/87BF: E3 CE        SBC $CE,S
+CF/87C1: 23 CE        AND $CE,S
+CF/87C3: 63 CE        ADC $CE,S
+CF/87C5: 23 CE        AND $CE,S
+CF/87C7: 63 CE        ADC $CE,S
+CF/87C9: 23 CE        AND $CE,S
+CF/87CB: 63 CE        ADC $CE,S
+CF/87CD: 23 CE        AND $CE,S
+CF/87CF: 63 CE        ADC $CE,S
+CF/87D1: 23 CE        AND $CE,S
+CF/87D3: 63 CE        ADC $CE,S
+CF/87D5: 23 CE        AND $CE,S
+CF/87D7: 63 CE        ADC $CE,S
+CF/87D9: 23 CE        AND $CE,S
+CF/87DB: 63 CE        ADC $CE,S
+CF/87DD: 23 CE        AND $CE,S
+CF/87DF: 63 CE        ADC $CE,S
+CF/87E1: A3 CE        LDA $CE,S
+CF/87E3: E3 CE        SBC $CE,S
+CF/87E5: A3 CE        LDA $CE,S
+CF/87E7: E3 CE        SBC $CE,S
+CF/87E9: A3 CE        LDA $CE,S
+CF/87EB: E3 CE        SBC $CE,S
+CF/87ED: A3 CE        LDA $CE,S
+CF/87EF: E3 CE        SBC $CE,S
+CF/87F1: A3 CE        LDA $CE,S
+CF/87F3: E3 CE        SBC $CE,S
+CF/87F5: A3 CE        LDA $CE,S
+CF/87F7: E3 CE        SBC $CE,S
+CF/87F9: A3 CE        LDA $CE,S
+CF/87FB: E3 CE        SBC $CE,S
+CF/87FD: A3 CE        LDA $CE,S
+CF/87FF: E3 04        SBC $04,S
+CF/8801: 20 1A 25     JSR $251A
+CF/8804: 1C 25 1A     TRB $1A25
+CF/8807: 20 1A 20     JSR $201A
+CF/880A: 1E 25 20     ASL $2025,X
+CF/880D: 25 22        AND $22
+CF/880F: 25 24        AND $24
+CF/8811: 25 26        AND $26
+CF/8813: 25 28        AND $28
+CF/8815: 25 2A        AND $2A
+CF/8817: 25 2C        AND $2C
+CF/8819: 25 2E        AND $2E
+CF/881B: 25 1A        AND $1A
+CF/881D: 20 30 25     JSR $2530
+CF/8820: 04 20        TSB $20
+CF/8822: 04 20        TSB $20
+CF/8824: 32 25        AND ($25)
+CF/8826: 1A           INC
+CF/8827: 20 1A 20     JSR $201A
+CF/882A: 34 25        BIT $25,X
+CF/882C: 36 25        ROL $25,X
+CF/882E: 38           SEC
+CF/882F: 25 3A        AND $3A
+CF/8831: 25 3C        AND $3C
+CF/8833: 25 3E        AND $3E
+CF/8835: 25 40        AND $40
+CF/8837: 25 42        AND $42
+CF/8839: 25 44        AND $44
+CF/883B: 25 46        AND $46
+CF/883D: 25 48        AND $48
+CF/883F: 25 4A        AND $4A
+CF/8841: 25 4C        AND $4C
+CF/8843: 25 4E        AND $4E
+CF/8845: 25 50        AND $50
+CF/8847: 25 52        AND $52
+CF/8849: 25 54        AND $54
+CF/884B: 25 56        AND $56
+CF/884D: 25 58        AND $58
+CF/884F: 25 5A        AND $5A
+CF/8851: 25 5C        AND $5C
+CF/8853: 25 5E        AND $5E
+CF/8855: 25 60        AND $60
+CF/8857: 25 62        AND $62
+CF/8859: 25 64        AND $64
+CF/885B: 25 66        AND $66
+CF/885D: 25 1A        AND $1A
+CF/885F: 20 68 25     JSR $2568
+CF/8862: 6A           ROR
+CF/8863: 25 04        AND $04
+CF/8865: 20 6C 25     JSR $256C
+CF/8868: 6E 25 70     ROR $7025
+CF/886B: 25 72        AND $72
+CF/886D: 25 74        AND $74
+CF/886F: 25 76        AND $76
+CF/8871: 25 78        AND $78
+CF/8873: 25 7A        AND $7A
+CF/8875: 25 7C        AND $7C
+CF/8877: 25 7E        AND $7E
+CF/8879: 25 04        AND $04
+CF/887B: 20 80 25     JSR $2580
+CF/887E: 82 25 04     BRL $CF8CA6
+CF/8881: 20 84 25     JSR $2584
+CF/8884: 86 25        STX $25
+CF/8886: 88           DEY
+CF/8887: 25 8A        AND $8A
+CF/8889: 25 8C        AND $8C
+CF/888B: 25 8E        AND $8E
+CF/888D: 25 90        AND $90
+CF/888F: 25 92        AND $92
+CF/8891: 25 94        AND $94
+CF/8893: 25 96        AND $96
+CF/8895: 25 98        AND $98
+CF/8897: 25 9A        AND $9A
+CF/8899: 25 9C        AND $9C
+CF/889B: 25 9E        AND $9E
+CF/889D: 25 A0        AND $A0
+CF/889F: 25 04        AND $04
+CF/88A1: 20 A2 25     JSR $25A2
+CF/88A4: A4 25        LDY $25
+CF/88A6: A6 25        LDX $25
+CF/88A8: A8           TAY
+CF/88A9: 25 AA        AND $AA
+CF/88AB: 25 AC        AND $AC
+CF/88AD: 25 AE        AND $AE
+CF/88AF: 25 B0        AND $B0
+CF/88B1: 25 B2        AND $B2
+CF/88B3: 25 B4        AND $B4
+CF/88B5: 25 B6        AND $B6
+CF/88B7: 25 B8        AND $B8
+CF/88B9: 25 04        AND $04
+CF/88BB: 20 BA 25     JSR $25BA
+CF/88BE: 04 20        TSB $20
+CF/88C0: 48           PHA
+CF/88C1: 23 BC        AND $BC,S
+CF/88C3: 25 BE        AND $BE
+CF/88C5: 25 C0        AND $C0
+CF/88C7: 25 C2        AND $C2
+CF/88C9: 25 C4        AND $C4
+CF/88CB: 25 04        AND $04
+CF/88CD: 20 C6 25     JSR $25C6
+CF/88D0: C8           INY
+CF/88D1: 25 CA        AND $CA
+CF/88D3: 25 CC        AND $CC
+CF/88D5: 25 CE        AND $CE
+CF/88D7: 25 D0        AND $D0
+CF/88D9: 25 04        AND $04
+CF/88DB: 20 1A 20     JSR $201A
+CF/88DE: 1A           INC
+CF/88DF: 20 D2 25     JSR $25D2
+CF/88E2: D4 25        PEI $25
+CF/88E4: D6 25        DEC $25,X
+CF/88E6: D8           CLD
+CF/88E7: 25 DA        AND $DA
+CF/88E9: 25 04        AND $04
+CF/88EB: 20 04 20     JSR $2004
+CF/88EE: DC 25 DE     JMP [$DE25]
+CF/88F1: 25 E0        AND $E0
+CF/88F3: 25 E2        AND $E2
+CF/88F5: 25 E4        AND $E4
+CF/88F7: 25 E6        AND $E6
+CF/88F9: 25 04        AND $04
+CF/88FB: 20 1A 20     JSR $201A
+CF/88FE: 1A           INC
+CF/88FF: 20 E8 25     JSR $25E8
+CF/8902: EA           NOP
+CF/8903: 25 EC        AND $EC
+CF/8905: 25 EE        AND $EE
+CF/8907: 25 F0        AND $F0
+CF/8909: 25 04        AND $04
+CF/890B: 20 04 20     JSR $2004
+CF/890E: F2 25        SBC ($25)
+CF/8910: F4 25 F6     PEA $F625
+CF/8913: 25 F8        AND $F8
+CF/8915: 25 FA        AND $FA
+CF/8917: 25 FC        AND $FC
+CF/8919: 25 04        AND $04
+CF/891B: 20 9E A5     JSR $A59E
+CF/891E: FE 25 00     INC $0025,X
+CF/8921: 26 02        ROL $02
+CF/8923: 26 04        ROL $04
+CF/8925: 26 6A        ROL $6A
+CF/8927: E5 06        SBC $06
+CF/8929: 26 04        ROL $04
+CF/892B: 20 04 20     JSR $2004
+CF/892E: 08           PHP
+CF/892F: 26 0A        ROL $0A
+CF/8931: 26 0C        ROL $0C
+CF/8933: 26 0E        ROL $0E
+CF/8935: 26 10        ROL $10
+CF/8937: 26 12        ROL $12
+CF/8939: 26 04        ROL $04
+CF/893B: 20 1A 20     JSR $201A
+CF/893E: 14 26        TRB $26
+CF/8940: 16 26        ASL $26,X
+CF/8942: 18           CLC
+CF/8943: 26 C0        ROL $C0
+CF/8945: 65 1A        ADC $1A
+CF/8947: 26 1C        ROL $1C
+CF/8949: 26 1E        ROL $1E
+CF/894B: 26 20        ROL $20
+CF/894D: 26 1A        ROL $1A
+CF/894F: 20 22 26     JSR $2622
+CF/8952: 24 26        BIT $26
+CF/8954: 26 26        ROL $26
+CF/8956: 28           PLP
+CF/8957: 26 2A        ROL $2A
+CF/8959: 26 04        ROL $04
+CF/895B: 20 CE 23     JSR $23CE
+CF/895E: CE 63 04     DEC $0463
+CF/8961: 20 2C 26     JSR $262C
+CF/8964: 2E 26 30     ROL $3026
+CF/8967: 26 32        ROL $32
+CF/8969: 26 34        ROL $34
+CF/896B: 26 36        ROL $36
+CF/896D: 26 38        ROL $38
+CF/896F: 26 3A        ROL $3A
+CF/8971: 26 3C        ROL $3C
+CF/8973: 26 3E        ROL $3E
+CF/8975: 26 40        ROL $40
+CF/8977: 26 42        ROL $42
+CF/8979: 26 04        ROL $04
+CF/897B: 20 CE A3     JSR $A3CE
+CF/897E: CE E3 44     DEC $44E3
+CF/8981: 26 46        ROL $46
+CF/8983: 26 48        ROL $48
+CF/8985: 26 4A        ROL $4A
+CF/8987: 26 D2        ROL $D2
+CF/8989: E5 04        SBC $04
+CF/898B: 20 4C 26     JSR $264C
+CF/898E: 4E 26 50     LSR $5026
+CF/8991: 26 52        ROL $52
+CF/8993: 26 54        ROL $54
+CF/8995: 26 04        ROL $04
+CF/8997: 20 56 26     JSR $2656
+CF/899A: 58           CLI
+CF/899B: 26 5A        ROL $5A
+CF/899D: 26 5C        ROL $5C
+CF/899F: 26 5E        ROL $5E
+CF/89A1: 26 60        ROL $60
+CF/89A3: 26 62        ROL $62
+CF/89A5: 26 64        ROL $64
+CF/89A7: 26 66        ROL $66
+CF/89A9: 26 04        ROL $04
+CF/89AB: 20 68 26     JSR $2668
+CF/89AE: 6A           ROR
+CF/89AF: 26 6C        ROL $6C
+CF/89B1: 26 6E        ROL $6E
+CF/89B3: 26 70        ROL $70
+CF/89B5: 26 04        ROL $04
+CF/89B7: 20 04 20     JSR $2004
+CF/89BA: 72 26        ADC ($26)
+CF/89BC: 74 26        STZ $26,X
+CF/89BE: 76 26        ROR $26,X
+CF/89C0: 04 20        TSB $20
+CF/89C2: 04 20        TSB $20
+CF/89C4: AC 20 78     LDY $7820
+CF/89C7: 26 7A        ROL $7A
+CF/89C9: 26 7C        ROL $7C
+CF/89CB: 26 7E        ROL $7E
+CF/89CD: 26 80        ROL $80
+CF/89CF: 26 82        ROL $82
+CF/89D1: 26 84        ROL $84
+CF/89D3: 26 C4        ROL $C4
+CF/89D5: 62 86 26     PER $CFB05E
+CF/89D8: 04 20        TSB $20
+CF/89DA: 88           DEY
+CF/89DB: 26 8A        ROL $8A
+CF/89DD: 26 8C        ROL $8C
+CF/89DF: 26 04        ROL $04
+CF/89E1: 20 8E 26     JSR $268E
+CF/89E4: 90 26        BCC $8A0C
+CF/89E6: 92 26        STA ($26)
+CF/89E8: 94 26        STY $26,X
+CF/89EA: 18           CLC
+CF/89EB: E5 96        SBC $96
+CF/89ED: 26 98        ROL $98
+CF/89EF: 26 9A        ROL $9A
+CF/89F1: 26 1A        ROL $1A
+CF/89F3: 20 1A 20     JSR $201A
+CF/89F6: 1A           INC
+CF/89F7: 20 04 20     JSR $2004
+CF/89FA: 04 20        TSB $20
+CF/89FC: 92 60        STA ($60)
+CF/89FE: 9C 26 04     STZ $0426
+CF/8A01: 20 9E 26     JSR $269E
+CF/8A04: A0 26        LDY #$26
+CF/8A06: A2 26        LDX #$26
+CF/8A08: A4 26        LDY $26
+CF/8A0A: A6 26        LDX $26
+CF/8A0C: A8           TAY
+CF/8A0D: 26 AA        ROL $AA
+CF/8A0F: 26 AC        ROL $AC
+CF/8A11: 26 0E        ROL $0E
+CF/8A13: 21 0E        AND ($0E,X)
+CF/8A15: 21 0E        AND ($0E,X)
+CF/8A17: 21 AE        AND ($AE,X)
+CF/8A19: 26 B0        ROL $B0
+CF/8A1B: 26 B2        ROL $B2
+CF/8A1D: 26 B4        ROL $B4
+CF/8A1F: 26 B6        ROL $B6
+CF/8A21: 26 B8        ROL $B8
+CF/8A23: 26 BA        ROL $BA
+CF/8A25: 26 BC        ROL $BC
+CF/8A27: 26 BE        ROL $BE
+CF/8A29: 26 C0        ROL $C0
+CF/8A2B: 26 C2        ROL $C2
+CF/8A2D: 26 C4        ROL $C4
+CF/8A2F: 26 C6        ROL $C6
+CF/8A31: 26 C8        ROL $C8
+CF/8A33: 26 CA        ROL $CA
+CF/8A35: 26 CC        ROL $CC
+CF/8A37: 26 CE        ROL $CE
+CF/8A39: 26 D0        ROL $D0
+CF/8A3B: 26 D2        ROL $D2
+CF/8A3D: 26 D4        ROL $D4
+CF/8A3F: 26 D6        ROL $D6
+CF/8A41: 26 D8        ROL $D8
+CF/8A43: 26 DA        ROL $DA
+CF/8A45: 26 DC        ROL $DC
+CF/8A47: 26 DE        ROL $DE
+CF/8A49: 26 E0        ROL $E0
+CF/8A4B: 26 E2        ROL $E2
+CF/8A4D: 26 1A        ROL $1A
+CF/8A4F: 20 E4 26     JSR $26E4
+CF/8A52: E6 26        INC $26
+CF/8A54: E8           INX
+CF/8A55: 26 EA        ROL $EA
+CF/8A57: 26 EC        ROL $EC
+CF/8A59: 26 EE        ROL $EE
+CF/8A5B: 26 F0        ROL $F0
+CF/8A5D: 26 F2        ROL $F2
+CF/8A5F: 26 F4        ROL $F4
+CF/8A61: 26 F6        ROL $F6
+CF/8A63: 26 F8        ROL $F8
+CF/8A65: 26 FA        ROL $FA
+CF/8A67: 26 FC        ROL $FC
+CF/8A69: 26 FE        ROL $FE
+CF/8A6B: 26 00        ROL $00
+CF/8A6D: 27 1A        AND [$1A]
+CF/8A6F: 20 02 27     JSR $2702
+CF/8A72: 04 27        TSB $27
+CF/8A74: 06 27        ASL $27
+CF/8A76: 08           PHP
+CF/8A77: 27 0A        AND [$0A]
+CF/8A79: 27 0C        AND [$0C]
+CF/8A7B: 27 0E        AND [$0E]
+CF/8A7D: 27 10        AND [$10]
+CF/8A7F: 27 12        AND [$12]
+CF/8A81: 27 14        AND [$14]
+CF/8A83: 27 16        AND [$16]
+CF/8A85: 27 18        AND [$18]
+CF/8A87: 27 1A        AND [$1A]
+CF/8A89: 27 1C        AND [$1C]
+CF/8A8B: 27 04        AND [$04]
+CF/8A8D: 20 1E 27     JSR $271E
+CF/8A90: 20 27 22     JSR $2227
+CF/8A93: 27 24        AND [$24]
+CF/8A95: 27 26        AND [$26]
+CF/8A97: 27 28        AND [$28]
+CF/8A99: 27 2A        AND [$2A]
+CF/8A9B: 27 2C        AND [$2C]
+CF/8A9D: 27 2E        AND [$2E]
+CF/8A9F: 27 30        AND [$30]
+CF/8AA1: 27 32        AND [$32]
+CF/8AA3: 27 34        AND [$34]
+CF/8AA5: 27 36        AND [$36]
+CF/8AA7: 27 38        AND [$38]
+CF/8AA9: 27 3A        AND [$3A]
+CF/8AAB: 27 04        AND [$04]
+CF/8AAD: 20 3C 27     JSR $273C
+CF/8AB0: 3E 27 40     ROL $4027,X
+CF/8AB3: 27 42        AND [$42]
+CF/8AB5: 27 44        AND [$44]
+CF/8AB7: 27 46        AND [$46]
+CF/8AB9: 27 48        AND [$48]
+CF/8ABB: 27 4A        AND [$4A]
+CF/8ABD: 27 4C        AND [$4C]
+CF/8ABF: 27 4E        AND [$4E]
+CF/8AC1: 27 50        AND [$50]
+CF/8AC3: 27 52        AND [$52]
+CF/8AC5: 27 54        AND [$54]
+CF/8AC7: 27 56        AND [$56]
+CF/8AC9: 27 58        AND [$58]
+CF/8ACB: 27 04        AND [$04]
+CF/8ACD: 20 5A 27     JSR $275A
+CF/8AD0: 5C 27 5E 27  JMP $275E27
+CF/8AD4: 60           RTS

@@ -1,0 +1,52 @@
+FD/3F00: 83 03        STA $03,S
+FD/3F02: 33 83        AND ($83,S),Y
+FD/3F04: EE FE 32     INC $32FE
+FD/3F07: 03 E7        ORA $E7,S
+FD/3F09: 0A           ASL
+FD/3F0A: E0 EA 0E     CPX #$0EEA
+FD/3F0D: FE B6 10     INC $10B6,X
+FD/3F10: DF 11 FF F8  CMP $F8FF11,X
+FD/3F14: 04 00        TSB $00
+FD/3F16: 18           CLC
+FD/3F17: D8           CLD
+FD/3F18: 65 E0        ADC $E0
+FD/3F1A: 00 11        BRK $11
+FD/3F1C: E0 5E 00     CPX #$005E
+FD/3F1F: 27 5E        AND [$5E]
+FD/3F21: A3 F2        LDA $F2,S
+FD/3F23: CA           DEX
+FD/3F24: BA           TSX
+FD/3F25: CB           WAI
+FD/3F26: 1E 00 EE     ASL $EE00,X
+FD/3F29: 39 C1 9F     AND $9FC1,Y
+FD/3F2C: BF FF 77 06  LDA $0677FF,X
+FD/3F30: 00 FB        BRK $FB
+FD/3F32: 86 FA        STX $FA
+FD/3F34: CD FE 88     CMP $88FE
+FD/3F37: F1 0D        SBC ($0D),Y
+FD/3F39: 80 F1        BRA $3F2C
+FD/3F3B: 0F FF DF DB  ORA $DBDFFF
+FD/3F3F: 7F 03 E3 0D  ADC $0DE303,X
+FD/3F43: 00 F9        BRK $F9
+FD/3F45: 00 FF        BRK $FF
+FD/3F47: 06 FE        ASL $FE
+FD/3F49: 02 FB        COP $FB
+FD/3F4B: 00 20        BRK $20
+FD/3F4D: F6 20        INC $20,X
+FD/3F4F: D8           CLD
+FD/3F50: 80 84        BRA $3ED6
+FD/3F52: 97 0B        STA [$0B],Y
+FD/3F54: 04 07        TSB $07
+FD/3F56: 00 00        BRK $00
+FD/3F58: 0D 00 08     ORA $0800
+FD/3F5B: 04 0D        TSB $0D
+FD/3F5D: 00 63        BRK $63
+FD/3F5F: 00 04        BRK $04
+FD/3F61: 87 78        STA [$78]
+FD/3F63: 85 78        STA $78
+FD/3F65: 45 98        EOR $98
+FD/3F67: 41 00        EOR ($00,X)
+FD/3F69: 9C 81 9C     STZ $9C81
+FD/3F6C: 41 0C        EOR ($0C,X)
+FD/3F6E: C1 18        CMP ($18,X)
+FD/3F70: 40           RTI

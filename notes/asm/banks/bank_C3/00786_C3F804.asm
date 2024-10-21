@@ -1,0 +1,4 @@
+C3/F804: F0 00        BEQ $F806
+C3/F806: 2E 00 FF     ROL $FF00
+C3/F809: 00 2E        BRK $2E
+C3/F80B: 40           RTI

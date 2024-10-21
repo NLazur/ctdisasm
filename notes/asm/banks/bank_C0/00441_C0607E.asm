@@ -1,0 +1,71 @@
+C0/607E: BB           TYX
+C0/607F: E8           INX
+C0/6080: 7B           TDC
+C0/6081: EB           XBA
+C0/6082: BF 01 20 7F  LDA $7F2001,X
+C0/6086: 85 DB        STA $DB
+C0/6088: AA           TAX
+C0/6089: 64 DC        STZ $DC
+C0/608B: BD 01 1C     LDA $1C01,X
+C0/608E: D0 76        BNE $6106
+C0/6090: BD 00 11     LDA $1100,X
+C0/6093: 30 6B        BMI $6100
+C0/6095: BD 00 10     LDA $1000,X
+C0/6098: 30 66        BMI $6100
+C0/609A: BD 00 1C     LDA $1C00,X
+C0/609D: 85 D9        STA $D9
+C0/609F: BB           TYX
+C0/60A0: E8           INX
+C0/60A1: E8           INX
+C0/60A2: BF 01 20 7F  LDA $7F2001,X
+C0/60A6: 85 DD        STA $DD
+C0/60A8: 4A           LSR
+C0/60A9: 4A           LSR
+C0/60AA: 4A           LSR
+C0/60AB: 4A           LSR
+C0/60AC: 85 DF        STA $DF
+C0/60AE: C5 D9        CMP $D9
+C0/60B0: F0 54        BEQ $6106
+C0/60B2: B0 52        BCS $6106
+C0/60B4: A5 D9        LDA $D9
+C0/60B6: 8D 02 42     STA $4202
+C0/60B9: A9 80        LDA #$80
+C0/60BB: 8D 03 42     STA $4203
+C0/60BE: EA           NOP
+C0/60BF: EA           NOP
+C0/60C0: C2 20        REP #$20
+C0/60C2: 18           CLC
+C0/60C3: AD 16 42     LDA $4216
+C0/60C6: 65 DB        ADC $DB
+C0/60C8: 85 E1        STA $E1
+C0/60CA: A6 DB        LDX $DB
+C0/60CC: BD 80 11     LDA $1180,X
+C0/60CF: A6 E1        LDX $E1
+C0/60D1: 9F 80 05 7F  STA $7F0580,X
+C0/60D5: A5 DB        LDA $DB
+C0/60D7: 29 FF 00     AND #$00FF
+C0/60DA: 0A           ASL
+C0/60DB: 0A           ASL
+C0/60DC: 0A           ASL
+C0/60DD: 0A           ASL
+C0/60DE: 85 E3        STA $E3
+C0/60E0: A5 DD        LDA $DD
+C0/60E2: 29 0F 00     AND #$000F
+C0/60E5: 0A           ASL
+C0/60E6: 18           CLC
+C0/60E7: 65 E3        ADC $E3
+C0/60E9: AA           TAX
+C0/60EA: BF 01 20 7F  LDA $7F2001,X
+C0/60EE: A6 DB        LDX $DB
+C0/60F0: 9D 80 11     STA $1180,X
+C0/60F3: E2 20        SEP #$20
+C0/60F5: A5 DF        LDA $DF
+C0/60F7: 9D 00 1C     STA $1C00,X
+C0/60FA: 9E 80 1A     STZ $1A80,X
+C0/60FD: 9E 01 1A     STZ $1A01,X
+C0/6100: BB           TYX
+C0/6101: E8           INX
+C0/6102: E8           INX
+C0/6103: E8           INX
+C0/6104: 38           SEC
+C0/6105: 60           RTS

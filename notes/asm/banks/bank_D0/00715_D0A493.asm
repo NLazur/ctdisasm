@@ -1,0 +1,79 @@
+D0/A493: E0 00        CPX #$00
+D0/A495: 00 C0        BRK $C0
+D0/A497: C0 00        CPY #$00
+D0/A499: 00 00        BRK $00
+D0/A49B: 03 00        ORA $00,S
+D0/A49D: 00 00        BRK $00
+D0/A49F: 03 00        ORA $00,S
+D0/A4A1: 00 00        BRK $00
+D0/A4A3: 07 00        ORA [$00]
+D0/A4A5: 00 00        BRK $00
+D0/A4A7: 07 00        ORA [$00]
+D0/A4A9: 00 03        BRK $03
+D0/A4AB: 03 00        ORA $00,S
+D0/A4AD: 00 03        BRK $03
+D0/A4AF: 03 00        ORA $00,S
+D0/A4B1: 00 07        BRK $07
+D0/A4B3: 07 00        ORA [$00]
+D0/A4B5: 00 06        BRK $06
+D0/A4B7: 07 00        ORA [$00]
+D0/A4B9: 00 C8        BRK $C8
+D0/A4BB: F0 00        BEQ $A4BD
+D0/A4BD: 00 90        BRK $90
+D0/A4BF: E0 00        CPX #$00
+D0/A4C1: 00 20        BRK $20
+D0/A4C3: C0 00        CPY #$00
+D0/A4C5: 00 40        BRK $40
+D0/A4C7: 80 01        BRA $A4CA
+D0/A4C9: 00 00        BRK $00
+D0/A4CB: 00 00        BRK $00
+D0/A4CD: 00 00        BRK $00
+D0/A4CF: 00 00        BRK $00
+D0/A4D1: 00 00        BRK $00
+D0/A4D3: 00 00        BRK $00
+D0/A4D5: 00 00        BRK $00
+D0/A4D7: 00 3F        BRK $3F
+D0/A4D9: FF 00 00 9F  SBC $9F0000,X
+D0/A4DD: 7F 00 00 4F  ADC $4F0000,X
+D0/A4E1: 3F 00 00 4F  AND $4F0000,X
+D0/A4E5: 3F 00 00 00  AND $000000,X
+D0/A4E9: 00 00        BRK $00
+D0/A4EB: 00 00        BRK $00
+D0/A4ED: 00 07        BRK $07
+D0/A4EF: 00 1C        BRK $1C
+D0/A4F1: 07 37        ORA [$37]
+D0/A4F3: 0F 68 1F 53  ORA $531F68
+D0/A4F7: 3F 00 00 00  AND $000000,X
+D0/A4FB: 00 07        BRK $07
+D0/A4FD: 08           PHP
+D0/A4FE: 10 20        BPL $A520
+D0/A500: 00 00        BRK $00
+D0/A502: 00 00        BRK $00
+D0/A504: 00 00        BRK $00
+D0/A506: E0 00        CPX #$00
+D0/A508: 78           SEI
+D0/A509: E0 9C        CPX #$9C
+D0/A50B: 70 EE        BVS $A4FB
+D0/A50D: D8           CLD
+D0/A50E: E6 FC        INC $FC
+D0/A510: 00 00        BRK $00
+D0/A512: 00 00        BRK $00
+D0/A514: E0 F0        CPX #$F0
+D0/A516: 38           SEC
+D0/A517: 1C 00 00     TRB $0000
+D0/A51A: 00 00        BRK $00
+D0/A51C: 00 00        BRK $00
+D0/A51E: 07 00        ORA [$00]
+D0/A520: 19 06 37     ORA $3706,Y
+D0/A523: 18           CLC
+D0/A524: 7F 27 7D 0F  ADC $0F7D27,X
+D0/A528: 00 00        BRK $00
+D0/A52A: 00 00        BRK $00
+D0/A52C: 07 1F        ORA [$1F]
+D0/A52E: 38           SEC
+D0/A52F: 30 00        BMI $A531
+D0/A531: 00 00        BRK $00
+D0/A533: 00 00        BRK $00
+D0/A535: 00 E0        BRK $E0
+D0/A537: 00 B8        BRK $B8
+D0/A539: 60           RTS
