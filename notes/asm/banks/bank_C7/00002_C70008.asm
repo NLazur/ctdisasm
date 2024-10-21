@@ -1,4 +1,0 @@
-; Bank: C7 | Start Address: 0008
-Routine_C70008:
-C7/0008: 4C 26 03     JMP $0326
-C7/000B: EA           NOP
