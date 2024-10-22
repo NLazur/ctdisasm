@@ -30,7 +30,7 @@ FE/9BEB: 1B           TCS
 FE/9BEC: FB           XCE
 FE/9BED: 67 F0        ADC [$F0]
 FE/9BEF: F8           SED
-FE/9BF0: 9D 20 21     STA $2120,X
+FE/9BF0: 9D 20 21     STA M7Y,X
 FE/9BF3: 7C 07 9A     JMP ($9A07,X)
 FE/9BF6: 0F 24 96 02  ORA $029624
 FE/9BFA: 17 C0        ORA [$C0],Y

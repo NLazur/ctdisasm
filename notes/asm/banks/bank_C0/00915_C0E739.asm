@@ -40,6 +40,6 @@ C0/E7B0: AB           PLB
 C0/E7B1: 98           TYA
 C0/E7B2: 18           CLC
 C0/E7B3: 69 20 00     ADC #$0020
-C0/E7B6: 8D 81 21     STA $2181
+C0/E7B6: 8D 81 21     STA WMADDL
 C0/E7B9: A4 C5        LDY $C5
 C0/E7BB: 60           RTS

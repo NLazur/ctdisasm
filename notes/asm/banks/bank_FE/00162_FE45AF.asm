@@ -108,7 +108,7 @@ FE/4680: B8           CLV
 FE/4681: 17 71        ORA [$71],Y
 Local_FE4683:
 FE/4683: 80 8B        BRA Local_FE4610
-FE/4685: B9 32 21     LDA $2132,Y
+FE/4685: B9 32 21     LDA COLDATA,Y
 FE/4688: B7 79        LDA [$79],Y
 FE/468A: 72 49        ADC ($49)
 FE/468C: 00 00        BRK $00

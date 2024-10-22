@@ -27,7 +27,7 @@ D1/D8DC: 22 23 6F 6E  JSR Routine_6E6F23
 D1/D8E0: 6D 6C 76     ADC $766C
 D1/D8E3: 75 74        ADC $74,X
 D1/D8E5: 18           CLC
-D1/D8E6: 19 20 21     ORA $2120,Y
+D1/D8E6: 19 20 21     ORA M7Y,Y
 D1/D8E9: 28           PLP
 D1/D8EA: 29 30        AND #$30
 D1/D8EC: 01 C8        ORA ($C8,X)

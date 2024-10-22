@@ -1,13 +1,13 @@
 ; Bank: C0 | Start Address: 603E
 Routine_C0603E:
-C0/603E: 8D 02 42     STA $4202
+C0/603E: 8D 02 42     STA WRMPYA
 C0/6041: A9 80        LDA #$80
-C0/6043: 8D 03 42     STA $4203
+C0/6043: 8D 03 42     STA WRMPYB
 C0/6046: EA           NOP
 C0/6047: EA           NOP
 C0/6048: C2 20        REP #$20
 C0/604A: 18           CLC
-C0/604B: AD 16 42     LDA $4216
+C0/604B: AD 16 42     LDA RDMPYL
 C0/604E: 65 DB        ADC $DB
 C0/6050: 85 E1        STA $E1
 C0/6052: AA           TAX

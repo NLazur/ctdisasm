@@ -4,7 +4,7 @@ C0/82E5: A2 00        LDX #$00
 C0/82E7: D0 8E        BNE Routine_C08277
 C0/82E9: 81 21        STA ($21,X)
 C0/82EB: A9 00        LDA #$00
-C0/82ED: 8D 83 21     STA $2183
+C0/82ED: 8D 83 21     STA WMADDH
 C0/82F0: A5 0A        LDA $0A
 C0/82F2: 3A           DEC
 C0/82F3: 85 58        STA $58

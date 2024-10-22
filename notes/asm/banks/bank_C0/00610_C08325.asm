@@ -2,9 +2,9 @@
 Routine_C08325:
 C0/8325: A2 00        LDX #$00
 C0/8327: D8           CLD
-C0/8328: 8E 81 21     STX $2181
+C0/8328: 8E 81 21     STX WMADDL
 C0/832B: A9 00        LDA #$00
-C0/832D: 8D 83 21     STA $2183
+C0/832D: 8D 83 21     STA WMADDH
 C0/8330: A5 0A        LDA $0A
 C0/8332: 3A           DEC
 C0/8333: 85 58        STA $58

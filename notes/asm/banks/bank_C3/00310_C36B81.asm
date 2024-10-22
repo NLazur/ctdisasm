@@ -1,7 +1,7 @@
 ; Bank: C3 | Start Address: 6B81
 Routine_C36B81:
 C3/6B81: 2E A5 46     ROL $46A5
-C3/6B84: 8D 10 21     STA $2110
+C3/6B84: 8D 10 21     STA BG2VOFS
 C3/6B87: A5 42        LDA $42
 C3/6B89: 47 05        EOR [$05]
 C3/6B8B: 00 60        BRK $60
@@ -97,7 +97,7 @@ C3/6C51: ED EB E9     SBC $E9EB
 C3/6C54: E7 E5        SBC [$E5]
 C3/6C56: E3 00        SBC $00,S
 C3/6C58: E1 E0        SBC ($E0,X)
-C3/6C5A: 8D 81 21     STA $2181
+C3/6C5A: 8D 81 21     STA WMADDL
 C3/6C5D: E2 20        SEP #$20
 C3/6C5F: A4 00        LDY $00
 C3/6C61: 11 A6        ORA ($A6),Y

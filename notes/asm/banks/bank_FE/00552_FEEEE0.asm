@@ -47,6 +47,6 @@ FE/EF39: 05 84        ORA $84
 FE/EF3B: A0 14 51     LDY #$5114
 FE/EF3E: AA           TAX
 FE/EF3F: 00 22        BRK $22
-FE/EF41: 1C 24 21     TRB $2124
+FE/EF41: 1C 24 21     TRB W34SEL
 FE/EF44: 24 41        BIT $41
 FE/EF46: 40           RTI

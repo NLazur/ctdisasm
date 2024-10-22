@@ -127,7 +127,7 @@ FD/090A: 99 00 86     STA $8600,Y
 Local_FD090D:
 FD/090D: 68           PLA
 FD/090E: 98           TYA
-FD/090F: 99 34 43     STA $4334,Y
+FD/090F: 99 34 43     STA A1B3,Y
 FD/0912: 67 86        ADC [$86]
 FD/0914: 00 46        BRK $46
 FD/0916: 43 47        EOR $47,S

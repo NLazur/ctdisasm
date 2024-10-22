@@ -102,7 +102,7 @@ C3/3660: 00 68        BRK $68
 C3/3662: 5B           TCD
 C3/3663: F0 E9        BEQ Routine_C3364E
 C3/3665: 5D FA 20     EOR $20FA,X
-C3/3668: 5D 41 21     EOR $2141,X
+C3/3668: 5D 41 21     EOR APUIO1,X
 C3/366B: 06 76        ASL $76
 C3/366D: 5B           TCD
 C3/366E: FA           PLX

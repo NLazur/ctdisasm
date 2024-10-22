@@ -60,7 +60,7 @@ C3/3044: 06 00        ASL $00
 C3/3046: 0B           PHD
 C3/3047: A2 10        LDX #$10
 C3/3049: 00 00        BRK $00
-C3/304B: 8E 2C 21     STX $212C
+C3/304B: 8E 2C 21     STX TM
 C3/304E: 8B           PHB
 C3/304F: 20 49 37     JSR Routine_C33749
 C3/3052: AB           PLB

@@ -77,7 +77,7 @@ C6/B486: 0B           PHD
 C6/B487: 1A           INC
 C6/B488: 29 03 84     AND #$8403
 C6/B48B: 12 33        ORA ($33)
-C6/B48D: 0D 05 43     ORA $4305
+C6/B48D: 0D 05 43     ORA DAS0L
 C6/B490: 32 35        AND ($35)
 C6/B492: 45 CF        EOR $CF
 C6/B494: 05 27        ORA $27

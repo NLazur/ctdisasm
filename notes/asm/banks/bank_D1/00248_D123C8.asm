@@ -9,7 +9,7 @@ D1/23D2: 80 20        BRA Local_D123F4
 D1/23D4: 01 46        ORA ($46,X)
 D1/23D6: 08           PHP
 D1/23D7: 22 06 10 24  JSR Routine_241006
-D1/23DB: 0C 10 42     TSB $4210
+D1/23DB: 0C 10 42     TSB RDNMI
 D1/23DE: 26 12        ROL $12
 D1/23E0: 00 12        BRK $12
 D1/23E2: 00 80        BRK $80

@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 0B4C
 Routine_D10B4C:
-D1/0B4C: 0C 08 42     TSB $4208
+D1/0B4C: 0C 08 42     TSB HTIMEH
 D1/0B4F: 41 0C        EOR ($0C,X)
 D1/0B51: 10 12        BPL Routine_D10B65
 D1/0B53: 10 24        BPL Routine_D10B79

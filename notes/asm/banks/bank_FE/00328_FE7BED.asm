@@ -66,7 +66,7 @@ FE/7C68: 12 2D        ORA ($2D)
 FE/7C6A: 30 C9        BMI Routine_FE7C35
 FE/7C6C: 07 D2        ORA [$D2]
 FE/7C6E: 23 FF        AND $FF,S
-FE/7C70: AC 02 43     LDY $4302
+FE/7C70: AC 02 43     LDY A1T0L
 FE/7C73: 05 AA        ORA $AA
 FE/7C75: 23 18        AND $18,S
 FE/7C77: 34 5A        BIT $5A,X

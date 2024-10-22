@@ -8,7 +8,7 @@ FD/C008: A9 00        LDA #$00        ; set bank
 FD/C00A: 48           PHA
 FD/C00B: AB           PLB
 FD/C00C: C2 20        REP #$20
-FD/C00E: A9 00 42     LDA #$4200      ; set dp to $4200 for hardware setup
+FD/C00E: A9 00 42     LDA #$4200      ; set dp to NMITIMEN for hardware setup
 FD/C011: 5B           TCD
 FD/C012: E2 20        SEP #$20
 FD/C014: A9 01        LDA #$01        ; select fastROM
@@ -29,7 +29,7 @@ FD/C030: 85 0A        STA $0A
 FD/C032: A9 FF        LDA #$FF
 FD/C034: 85 01        STA $01
 FD/C036: C2 20        REP #$20
-FD/C038: A9 00 21     LDA #$2100      ; set dp to $2100 for hardware setup
+FD/C038: A9 00 21     LDA #$2100      ; set dp to INIDISP for hardware setup
 FD/C03B: 5B           TCD
 FD/C03C: E2 20        SEP #$20
 FD/C03E: A9 80        LDA #$80

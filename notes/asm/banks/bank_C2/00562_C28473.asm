@@ -13,7 +13,7 @@ C2/8484: 8B           PHB
 C2/8485: 0B           PHD
 C2/8486: 08           PHP
 C2/8487: 20 EC 84     JSR Routine_C284EC
-C2/848A: AD 1A 42     LDA $421A
+C2/848A: AD 1A 42     LDA JOY2L
 C2/848D: 8D 1F 04     STA $041F
 C2/8490: 20 AE 85     JSR Routine_C285AE
 C2/8493: 28           PLP

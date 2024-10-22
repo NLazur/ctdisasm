@@ -33,7 +33,7 @@ C7/D62D: 51 EF        EOR ($EF),Y
 C7/D62F: 20 BB 68     JSR Routine_C768BB
 C7/D632: F1 FD        SBC ($FD),Y
 C7/D634: E2 30        SEP #$30
-C7/D636: ED 02 42     SBC $4202
+C7/D636: ED 02 42     SBC WRMPYA
 C7/D639: FC 68 CD     JSR ($CD68,X)
 C7/D63C: E0 12        CPX #$12
 C7/D63E: 21 FF        AND ($FF,X)

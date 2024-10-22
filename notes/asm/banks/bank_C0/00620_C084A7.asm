@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 84A7
 Routine_C084A7:
 C0/84A7: A9 80        LDA #$80
-C0/84A9: 8D 15 21     STA $2115
+C0/84A9: 8D 15 21     STA VMAIN
 C0/84AC: A9 01        LDA #$01
 C0/84AE: 8D 70 43     STA $4370
 C0/84B1: A9 18        LDA #$18
@@ -9,5 +9,5 @@ C0/84B3: 8D 71 43     STA $4371
 C0/84B6: A9 7E        LDA #$7E
 C0/84B8: 8D 74 43     STA $4374
 C0/84BB: A9 80        LDA #$80
-C0/84BD: 8D 0B 42     STA $420B
+C0/84BD: 8D 0B 42     STA MDMAEN
 C0/84C0: 60           RTS

@@ -2,9 +2,9 @@
 Routine_C082A5:
 C0/82A5: A2 00        LDX #$00
 C0/82A7: D8           CLD
-C0/82A8: 8E 81 21     STX $2181
+C0/82A8: 8E 81 21     STX WMADDL
 C0/82AB: A9 00        LDA #$00
-C0/82AD: 8D 83 21     STA $2183
+C0/82AD: 8D 83 21     STA WMADDH
 C0/82B0: A5 0A        LDA $0A
 C0/82B2: 3A           DEC
 C0/82B3: 85 58        STA $58

@@ -28,7 +28,7 @@ C6/AEE3: 86 01        STX $01
 C6/AEE5: 1A           INC
 C6/AEE6: 1B           TCS
 C6/AEE7: 37 31        AND [$31],Y
-C6/AEE9: CD 43 21     CMP $2143
+C6/AEE9: CD 43 21     CMP APUIO3
 Local_C6AEEC:
 C6/AEEC: BD 80 07     LDA $0780,X
 C6/AEEF: 10 02        BPL Local_C6AEF3

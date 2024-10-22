@@ -65,7 +65,7 @@ CC/6012: 00 01        BRK $01
 CC/6014: 1A           INC
 CC/6015: 00 1E        BRK $1E
 CC/6017: 00 00        BRK $00
-CC/6019: BE 01 42     LDX $4201,Y
+CC/6019: BE 01 42     LDX WRIO,Y
 CC/601C: 00 00        BRK $00
 CC/601E: 00 E5        BRK $E5
 CC/6020: E5 00        SBC $00

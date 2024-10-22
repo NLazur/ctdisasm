@@ -40,6 +40,6 @@ C0/E8B6: AB           PLB
 C0/E8B7: 98           TYA
 C0/E8B8: 18           CLC
 C0/E8B9: 69 20 00     ADC #$0020
-C0/E8BC: 8D 81 21     STA $2181
+C0/E8BC: 8D 81 21     STA WMADDL
 C0/E8BF: A4 C5        LDY $C5
 C0/E8C1: 60           RTS

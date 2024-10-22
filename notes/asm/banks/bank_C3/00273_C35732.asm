@@ -206,5 +206,5 @@ C3/58E9: 74 8D        STZ $8D,X
 C3/58EB: 08           PHP
 C3/58EC: 21 A9        AND ($A9,X)
 C3/58EE: 66 E0        ROR $E0
-C3/58F0: 8D 0B 21     STA $210B
+C3/58F0: 8D 0B 21     STA BG12NBA
 C3/58F3: 60           RTS

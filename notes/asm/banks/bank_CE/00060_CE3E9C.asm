@@ -20,7 +20,7 @@ CE/3EBC: 02 01        COP $01
 CE/3EBE: 24 01        BIT $01
 CE/3EC0: 77 62        ADC [$62],Y
 CE/3EC2: 70 A8        BVS Routine_CE3E6C
-CE/3EC4: 0C 1E 21     TSB $211E
+CE/3EC4: 0C 1E 21     TSB M7D
 CE/3EC7: 71 00        ADC ($00),Y
 CE/3EC9: 1B           TCS
 CE/3ECA: 01 72        ORA ($72,X)

@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 4181
 Routine_C04181:
 Local_C04181:
-C0/4181: AD 10 42     LDA $4210
+C0/4181: AD 10 42     LDA RDNMI
 C0/4184: 10 FB        BPL Local_C04181
 C0/4186: 20 4E 0B     JSR Routine_C00B4E
 C0/4189: A2 FF 06     LDX #$06FF

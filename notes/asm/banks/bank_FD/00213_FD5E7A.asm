@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: 5E7A
 Routine_FD5E7A:
 FD/5E7A: 04 04        TSB $04
-FD/5E7C: 0C 04 43     TSB $4304
+FD/5E7C: 0C 04 43     TSB A1B0
 FD/5E7F: FC 83 34     JSR ($3483,X)
 FD/5E82: 0D BB 06     ORA $06BB
 FD/5E85: 04 04        TSB $04

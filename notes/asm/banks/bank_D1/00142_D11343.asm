@@ -21,7 +21,7 @@ D1/1367: 01 42        ORA ($42,X)
 D1/1369: 01 28        ORA ($28,X)
 D1/136B: 84 01        STY $01
 D1/136D: 2A           ROL
-D1/136E: 0D 00 21     ORA $2100
+D1/136E: 0D 00 21     ORA INIDISP
 D1/1371: 80 EE        BRA Routine_D11361
 D1/1373: 00 06        BRK $06
 D1/1375: 00 10        BRK $10

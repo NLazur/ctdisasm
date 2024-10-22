@@ -34,7 +34,7 @@ D1/C2B4: 2C 2D D9     BIT $D92D
 D1/C2B7: D8           CLD
 D1/C2B8: 34 35        BIT $35,X
 D1/C2BA: 18           CLC
-D1/C2BB: 19 20 21     ORA $2120,Y
+D1/C2BB: 19 20 21     ORA M7Y,Y
 D1/C2BE: 45 84        EOR $84
 D1/C2C0: 2A           ROL
 D1/C2C1: 2B           PLD

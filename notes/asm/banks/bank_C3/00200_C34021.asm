@@ -8,6 +8,6 @@ C3/402B: 4A           LSR
 C3/402C: 90 07        BCC Local_C34035
 C3/402E: A2 8A 80     LDX #$808A
 C3/4031: 68           PLA
-C3/4032: 8E 02 43     STX $4302
+C3/4032: 8E 02 43     STX A1T0L
 Local_C34035:
 C3/4035: 60           RTS

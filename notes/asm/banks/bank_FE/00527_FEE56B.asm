@@ -4,7 +4,7 @@ FE/E56B: A8           TAY
 FE/E56C: 09 04        ORA #$04
 FE/E56E: 51 00        EOR ($00),Y
 FE/E570: 49 88        EOR #$88
-FE/E572: 8C 5A 43     STY $435A
+FE/E572: 8C 5A 43     STY NTRL5
 FE/E575: A1 04        LDA ($04,X)
 FE/E577: A2 00        LDX #$00
 FE/E579: E2 08        SEP #$08

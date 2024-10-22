@@ -108,7 +108,7 @@ FE/B7D6: 04 76        TSB $76
 FE/B7D8: 24 F6        BIT $F6
 FE/B7DA: 23 CF        AND $CF,S
 FE/B7DC: 04 26        TSB $26
-FE/B7DE: D9 20 43     CMP $4320,Y
+FE/B7DE: D9 20 43     CMP DMAP2,Y
 FE/B7E1: 44 CD 04     MVP $CD,$04
 FE/B7E4: 2B           PLD
 FE/B7E5: 11 91        ORA ($91),Y

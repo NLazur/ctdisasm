@@ -11,10 +11,10 @@ FD/E99D: 4A           LSR
 FD/E99E: E2 20        SEP #$20
 FD/E9A0: 85 0C        STA $0C
 FD/E9A2: 49 F8        EOR #$F8
-FD/E9A4: 8D 03 42     STA $4203
+FD/E9A4: 8D 03 42     STA WRMPYB
 FD/E9A7: A5 0C        LDA $0C
 FD/E9A9: 18           CLC
-FD/E9AA: 6D 17 42     ADC $4217
+FD/E9AA: 6D 17 42     ADC RDMPYH
 FD/E9AD: 29 F8        AND #$F8
 FD/E9AF: C2 20        REP #$20
 FD/E9B1: 0A           ASL

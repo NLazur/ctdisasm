@@ -4,7 +4,7 @@ C0/8405: A2 80        LDX #$80
 C0/8407: D0 8E        BNE Routine_C08397
 C0/8409: 81 21        STA ($21,X)
 C0/840B: A9 00        LDA #$00
-C0/840D: 8D 83 21     STA $2183
+C0/840D: 8D 83 21     STA WMADDH
 C0/8410: A5 12        LDA $12
 C0/8412: 85 58        STA $58
 C0/8414: A9 0F        LDA #$0F

@@ -2,14 +2,14 @@
 Routine_C07084:
 C0/7084: A6 FE        LDX $FE         ; load map palette
 C0/7086: BF 03 00 F6  LDA $F60003,X
-C0/708A: 8D 02 42     STA $4202
+C0/708A: 8D 02 42     STA WRMPYA
 C0/708D: A9 D2        LDA #$D2
-C0/708F: 8D 03 42     STA $4203
+C0/708F: 8D 03 42     STA WRMPYB
 C0/7092: EA           NOP
 C0/7093: EA           NOP
 C0/7094: EA           NOP
 C0/7095: C2 20        REP #$20
-C0/7097: AD 16 42     LDA $4216
+C0/7097: AD 16 42     LDA RDMPYL
 C0/709A: 18           CLC
 C0/709B: 69 C0 24     ADC #$24C0
 C0/709E: AA           TAX

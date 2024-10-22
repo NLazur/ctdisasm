@@ -5,7 +5,7 @@ C0/8265: D0 8E        BNE Routine_C081F5
 C0/8267: 81 21        STA ($21,X)
 C0/8269: E2 20        SEP #$20
 C0/826B: A9 00        LDA #$00
-C0/826D: 8D 83 21     STA $2183
+C0/826D: 8D 83 21     STA WMADDH
 C0/8270: A5 0A        LDA $0A
 C0/8272: 3A           DEC
 C0/8273: 85 58        STA $58

@@ -198,7 +198,7 @@ FF/C63D: 0C 01 1E     TSB $1E01
 FF/C640: 9B           TXY
 FF/C641: 01 06        ORA ($06,X)
 FF/C643: 51 0D        EOR ($0D),Y
-FF/C645: 0C 04 21     TSB $2104
+FF/C645: 0C 04 21     TSB OAMDATA
 FF/C648: 9B           TXY
 FF/C649: 01 06        ORA ($06,X)
 FF/C64B: 53 0D        EOR ($0D,S),Y

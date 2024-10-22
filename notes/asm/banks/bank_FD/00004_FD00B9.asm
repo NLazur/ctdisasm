@@ -53,7 +53,7 @@ FD/0119: 08           PHP
 FD/011A: 52 BC        EOR ($BC)
 FD/011C: 6A           ROR
 FD/011D: B4 4A        LDY $4A,X
-FD/011F: AC 08 42     LDY $4208
+FD/011F: AC 08 42     LDY HTIMEH
 FD/0122: AC 6A 60     LDY $606A
 FD/0125: 09 82        ORA #$82
 FD/0127: 44 44 AA     MVP $44,$AA

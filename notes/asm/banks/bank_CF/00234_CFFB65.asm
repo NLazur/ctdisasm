@@ -78,7 +78,7 @@ CF/FBF5: 0A           ASL
 CF/FBF6: A8           TAY
 CF/FBF7: A2 18 00     LDX #$0018
 Local_CFFBFA:
-CF/FBFA: B9 02 21     LDA $2102,Y
+CF/FBFA: B9 02 21     LDA OAMADDL,Y
 CF/FBFD: 99 02 23     STA $2302,Y
 CF/FC00: C8           INY
 CF/FC01: CA           DEX

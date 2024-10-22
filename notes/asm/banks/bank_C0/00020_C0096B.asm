@@ -1,13 +1,13 @@
 ; Bank: C0 | Start Address: 096B
 Routine_C0096B:
-C0/096B: 8D 02 42     STA $4202       ; * 8
+C0/096B: 8D 02 42     STA WRMPYA       ; * 8
 C0/096E: A9 08        LDA #$08
-C0/0970: 8D 03 42     STA $4203
+C0/0970: 8D 03 42     STA WRMPYB
 C0/0973: EA           NOP
 C0/0974: EA           NOP
 C0/0975: EA           NOP
 C0/0976: C2 30        REP #$30
-C0/0978: AD 16 42     LDA $4216       ; +$F61C00
+C0/0978: AD 16 42     LDA RDMPYL       ; +$F61C00
 C0/097B: 18           CLC
 C0/097C: 69 00 1C     ADC #$1C00
 C0/097F: 85 D6        STA $D6

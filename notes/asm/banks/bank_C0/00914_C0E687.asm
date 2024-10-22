@@ -71,6 +71,6 @@ C0/E72D: AB           PLB
 C0/E72E: 98           TYA
 C0/E72F: 18           CLC
 C0/E730: 69 20 00     ADC #$0020
-C0/E733: 8D 81 21     STA $2181
+C0/E733: 8D 81 21     STA WMADDL
 C0/E736: A4 C5        LDY $C5
 C0/E738: 60           RTS

@@ -2,7 +2,7 @@
 Routine_C06F79:
 C0/6F79: 0B           PHD             ;
 C0/6F7A: C2 20        REP #$20
-C0/6F7C: A9 00 21     LDA #$2100      ; set dp to $2100
+C0/6F7C: A9 00 21     LDA #$2100      ; set dp to INIDISP
 C0/6F7F: 5B           TCD
 C0/6F80: E2 20        SEP #$20
 C0/6F82: A2 88 0B     LDX #$0B88      ; set WRAM to $000B88

@@ -17,7 +17,7 @@ C0/5726: 0A           ASL
 C0/5727: 0A           ASL
 C0/5728: 0A           ASL
 C0/5729: 85 D9        STA $D9
-C0/572B: A9 00 21     LDA #$2100      ; set dp to $2100
+C0/572B: A9 00 21     LDA #$2100      ; set dp to INIDISP
 C0/572E: 5B           TCD
 C0/572F: E2 20        SEP #$20
 C0/5731: A2 80 11     LDX #$1180      ; set WRAM to $001180

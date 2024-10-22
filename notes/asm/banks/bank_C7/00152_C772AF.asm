@@ -64,7 +64,7 @@ C7/7343: F1 02        SBC ($02),Y
 C7/7345: 98           TYA
 C7/7346: 32 D2        AND ($D2)
 C7/7348: 01 3F        ORA ($3F,X)
-C7/734A: 2E 01 21     ROL $2101
+C7/734A: 2E 01 21     ROL OBSEL
 C7/734D: A1 A8        LDA ($A8,X)
 C7/734F: D0 51        BNE Routine_C773A2
 C7/7351: FD E1 42     SBC $42E1,X

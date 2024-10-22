@@ -12,11 +12,11 @@ FD/E6E4: 29 E0 03     AND #$03E0
 FD/E6E7: 4A           LSR
 FD/E6E8: 4A           LSR
 FD/E6E9: E2 20        SEP #$20
-FD/E6EB: 8D 03 42     STA $4203
+FD/E6EB: 8D 03 42     STA WRMPYB
 FD/E6EE: EA           NOP
 FD/E6EF: EA           NOP
 FD/E6F0: EA           NOP
-FD/E6F1: AD 17 42     LDA $4217
+FD/E6F1: AD 17 42     LDA RDMPYH
 FD/E6F4: 29 F8        AND #$F8
 FD/E6F6: C2 20        REP #$20
 FD/E6F8: 0A           ASL

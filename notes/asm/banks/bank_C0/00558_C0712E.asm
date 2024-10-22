@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 712E
 Routine_C0712E:
 C0/712E: A9 00        LDA #$00
-C0/7130: 8D 21 21     STA $2121
+C0/7130: 8D 21 21     STA CGADD
 C0/7133: A9 00        LDA #$00
 C0/7135: 8D 70 43     STA $4370
 C0/7138: A9 22        LDA #$22
@@ -13,5 +13,5 @@ C0/7145: 8D 74 43     STA $4374
 C0/7148: A2 00 02     LDX #$0200
 C0/714B: 8E 75 43     STX $4375
 C0/714E: A9 80        LDA #$80
-C0/7150: 8D 0B 42     STA $420B
+C0/7150: 8D 0B 42     STA MDMAEN
 C0/7153: 60           RTS

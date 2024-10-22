@@ -9,7 +9,7 @@ C6/C18B: 07 CB        ORA [$CB]
 C6/C18D: 08           PHP
 C6/C18E: 08           PHP
 C6/C18F: C0 58 AC     CPY #$AC58
-C6/C192: 0D 07 42     ORA $4207
+C6/C192: 0D 07 42     ORA HTIMEL
 C6/C195: 07 08        ORA [$08]
 C6/C197: 03 38        ORA $38,S
 C6/C199: 39 3A 3B     AND $3B3A,Y

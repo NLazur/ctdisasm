@@ -26,7 +26,7 @@ C6/79F9: CB           WAI
 C6/79FA: 29 01 62     AND #$6201
 C6/79FD: 9B           TXY
 C6/79FE: 17 6D        ORA [$6D],Y
-C6/7A00: 19 42 43     ORA $4342,Y
+C6/7A00: 19 42 43     ORA A1T4L,Y
 C6/7A03: CD 69 16     CMP $1669
 C6/7A06: CA           DEX
 C6/7A07: C3 F9        CMP $F9,S

@@ -110,7 +110,7 @@ C6/2AA5: 28           PLP
 C6/2AA6: 82 28 20     BRL Routine_C64AD1
 C6/2AA9: 32 6C        AND ($6C)
 C6/2AAB: 12 00        ORA ($00)
-C6/2AAD: 6D 12 21     ADC $2112
+C6/2AAD: 6D 12 21     ADC BG3VOFS
 C6/2AB0: 12 22        ORA ($22)
 C6/2AB2: 12 6E        ORA ($6E)
 C6/2AB4: 12 00        ORA ($00)

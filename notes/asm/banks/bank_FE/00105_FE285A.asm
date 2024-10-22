@@ -45,7 +45,7 @@ FE/28AD: 41 10        EOR ($10,X)
 FE/28AF: 98           TYA
 FE/28B0: 00 4F        BRK $4F
 FE/28B2: 0A           ASL
-FE/28B3: 0E 1C 42     ASL $421C
+FE/28B3: 0E 1C 42     ASL JOY3L
 FE/28B6: 00 08        BRK $08
 FE/28B8: 00 E2        BRK $E2
 FE/28BA: 05 1C        ORA $1C

@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 6B01
 Routine_C66B01:
-C6/6B01: 19 42 43     ORA $4342,Y
+C6/6B01: 19 42 43     ORA A1T4L,Y
 C6/6B04: 31 FB        AND ($FB),Y
 C6/6B06: 7D 50 A2     ADC $A250,X
 C6/6B09: 09 01 55     ORA #$5501

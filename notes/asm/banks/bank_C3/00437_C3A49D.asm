@@ -52,7 +52,7 @@ C3/A4FF: E1 01        SBC ($01,X)
 C3/A501: 71 08        ADC ($08),Y
 C3/A503: 4E 38 EE     LSR $EE38
 C3/A506: C6 15        DEC $15
-C3/A508: AC 1B 42     LDY $421B
+C3/A508: AC 1B 42     LDY JOY2H
 C3/A50B: 01 72        ORA ($72,X)
 C3/A50D: 18           CLC
 C3/A50E: 38           SEC

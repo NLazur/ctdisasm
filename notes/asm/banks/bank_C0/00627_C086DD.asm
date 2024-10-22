@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 86DD
 Routine_C086DD:
 C0/86DD: A9 81        LDA #$81
-C0/86DF: 8D 15 21     STA $2115
+C0/86DF: 8D 15 21     STA VMAIN
 C0/86E2: A9 01        LDA #$01
 C0/86E4: 8D 70 43     STA $4370
 C0/86E7: A9 18        LDA #$18
@@ -9,5 +9,5 @@ C0/86E9: 8D 71 43     STA $4371
 C0/86EC: A9 7E        LDA #$7E
 C0/86EE: 8D 74 43     STA $4374
 C0/86F1: A9 80        LDA #$80
-C0/86F3: 8D 0B 42     STA $420B
+C0/86F3: 8D 0B 42     STA MDMAEN
 C0/86F6: 60           RTS

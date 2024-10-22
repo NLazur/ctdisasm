@@ -5,7 +5,7 @@ FE/80F2: 3B           TSC
 FE/80F3: 3C 7A 20     BIT $207A,X
 FE/80F6: 3B           TSC
 FE/80F7: 3B           TSC
-FE/80F8: 19 00 21     ORA $2100,Y
+FE/80F8: 19 00 21     ORA INIDISP,Y
 FE/80FB: 3C 3B 00     BIT $003B,X
 FE/80FE: 31 17        AND ($17),Y
 FE/8100: 10 33        BPL Local_FE8135

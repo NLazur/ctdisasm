@@ -43,7 +43,7 @@ D1/C391: 00 00        BRK $00
 D1/C393: 00 00        BRK $00
 D1/C395: 00 00        BRK $00
 D1/C397: 05 18        ORA $18
-D1/C399: 19 20 21     ORA $2120,Y
+D1/C399: 19 20 21     ORA M7Y,Y
 D1/C39C: B4 B5        LDY $B5,X
 D1/C39E: AC AD 59     LDY $59AD
 D1/C3A1: 58           CLI

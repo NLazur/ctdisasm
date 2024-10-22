@@ -1,7 +1,7 @@
 ; Bank: C2 | Start Address: 0043
 Routine_C20043:
 C2/0043: 0B           PHD
-C2/0044: F4 00 21     PEA $2100
+C2/0044: F4 00 21     PEA INIDISP
 C2/0047: 2B           PLD
 C2/0048: A9 60        LDA #$60
 C2/004A: 85 01        STA $01
@@ -87,7 +87,7 @@ C2/00EA: A9 E0        LDA #$E0
 C2/00EC: 85 32        STA $32
 C2/00EE: A9 00        LDA #$00
 C2/00F0: 85 33        STA $33
-C2/00F2: F4 00 42     PEA $4200
+C2/00F2: F4 00 42     PEA NMITIMEN
 C2/00F5: 2B           PLD
 C2/00F6: A9 FF        LDA #$FF
 C2/00F8: 85 01        STA $01

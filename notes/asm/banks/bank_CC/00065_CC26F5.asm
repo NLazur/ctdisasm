@@ -63,7 +63,7 @@ CC/2769: 03 01        ORA $01,S
 CC/276B: 08           PHP
 CC/276C: 09 08 11     ORA #$1108
 CC/276F: 08           PHP
-CC/2770: 19 08 21     ORA $2108,Y
+CC/2770: 19 08 21     ORA BG2SC,Y
 CC/2773: 08           PHP
 CC/2774: 29 08 31     AND #$3108
 CC/2777: 08           PHP

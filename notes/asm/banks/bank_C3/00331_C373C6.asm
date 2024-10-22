@@ -12,5 +12,5 @@ C3/73D6: 41 20        EOR ($20,X)
 C3/73D8: 45 54        EOR $54
 C3/73DA: E6 00        INC $00
 C3/73DC: 00 45        BRK $45
-C3/73DE: 4E 49 43     LSR $4349
+C3/73DE: 4E 49 43     LSR A2A4H
 C3/73E1: 60           RTS

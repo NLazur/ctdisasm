@@ -345,7 +345,7 @@ CE/1698: 17 AC        ORA [$AC],Y
 CE/169A: 17 D5        ORA [$D5],Y
 CE/169C: 17 3D        ORA [$3D],Y
 CE/169E: 03 72        ORA $72,S
-CE/16A0: 0D 03 21     ORA $2103
+CE/16A0: 0D 03 21     ORA OAMADDH
 CE/16A3: 03 21        ORA $21,S
 CE/16A5: 36 03        ROL $03,X
 CE/16A7: 35 24        AND $24,X

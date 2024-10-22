@@ -2,7 +2,7 @@
 Routine_C0B204:
 C0/B204: 0B           PHD
 C0/B205: C2 20        REP #$20
-C0/B207: A9 00 21     LDA #$2100      ; set dp to $2100
+C0/B207: A9 00 21     LDA #$2100      ; set dp to INIDISP
 C0/B20A: 5B           TCD
 C0/B20B: E2 20        SEP #$20
 C0/B20D: A2 00 0E     LDX #$0E00      ; set WRAM to $000E00

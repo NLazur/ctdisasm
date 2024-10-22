@@ -40,6 +40,6 @@ C0/E929: AB           PLB
 C0/E92A: 98           TYA
 C0/E92B: 18           CLC
 C0/E92C: 69 20 00     ADC #$0020
-C0/E92F: 8D 81 21     STA $2181
+C0/E92F: 8D 81 21     STA WMADDL
 C0/E932: A4 C5        LDY $C5
 C0/E934: 60           RTS
