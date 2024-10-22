@@ -9,13 +9,13 @@ C2/32DB: 89 80        BIT #$80
 C2/32DD: 00 F0        BRK $F0
 C2/32DF: 07 29        ORA [$29]
 C2/32E1: 7F 3F C5 00  ADC $00C53F,X
-C2/32E5: F0 0C        BEQ Local_C232F3
+C2/32E5: F0 0C        BEQ $32F3
 C2/32E7: 8A           TXA
 C2/32E8: 18           CLC
 C2/32E9: 69 07        ADC #$07
 C2/32EB: 00 AA        BRK $AA
 C2/32ED: 88           DEY
-C2/32EE: D0 E7        BNE Local_C232D7
+C2/32EE: D0 E7        BNE $32D7
 C2/32F0: A2 FF FF     LDX #$FFFF
 C2/32F3: 8E 32 1B     STX $1B32
 C2/32F6: AD 39 1B     LDA $1B39
@@ -27,13 +27,13 @@ C2/3304: 89 80        BIT #$80
 C2/3306: 00 F0        BRK $F0
 C2/3308: 07 29        ORA [$29]
 C2/330A: 7F 3F C5 00  ADC $00C53F,X
-C2/330E: F0 0C        BEQ Local_C2331C
+C2/330E: F0 0C        BEQ $331C
 C2/3310: 8A           TXA
 C2/3311: 18           CLC
 C2/3312: 69 03        ADC #$03
 C2/3314: 00 AA        BRK $AA
 C2/3316: 88           DEY
-C2/3317: D0 E7        BNE Local_C23300
+C2/3317: D0 E7        BNE $3300
 C2/3319: A2 FF FF     LDX #$FFFF
 C2/331C: 8E 34 1B     STX $1B34
 C2/331F: AD 3A 1B     LDA $1B3A
@@ -45,13 +45,13 @@ C2/332D: 89 80        BIT #$80
 C2/332F: 00 F0        BRK $F0
 C2/3331: 07 29        ORA [$29]
 C2/3333: 7F 3F C5 00  ADC $00C53F,X
-C2/3337: F0 0C        BEQ Local_C23345
+C2/3337: F0 0C        BEQ $3345
 C2/3339: 8A           TXA
 C2/333A: 18           CLC
 C2/333B: 69 03        ADC #$03
 C2/333D: 00 AA        BRK $AA
 C2/333F: 88           DEY
-C2/3340: D0 E7        BNE Local_C23329
+C2/3340: D0 E7        BNE $3329
 C2/3342: A2 FF FF     LDX #$FFFF
 C2/3345: 8E 36 1B     STX $1B36
 C2/3348: 60           RTS

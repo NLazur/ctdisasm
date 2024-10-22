@@ -1,11 +1,11 @@
 ; Bank: FE | Start Address: 58E2
 Routine_FE58E2:
 FE/58E2: 41 33        EOR ($33,X)
-FE/58E4: 20 09 00     JSR Local_FE0009
+FE/58E4: 20 09 00     JSR $0009
 FE/58E7: 1C 9A 09     TRB $099A
-FE/58EA: 80 07        BRA Local_FE58F3
+FE/58EA: 80 07        BRA $58F3
 FE/58EC: C2 21        REP #$21
-FE/58EE: 90 17        BCC Local_FE5907
+FE/58EE: 90 17        BCC $5907
 FE/58F0: 92 17        STA ($17)
 FE/58F2: 00 00        BRK $00
 FE/58F4: 84 04        STY $04
@@ -13,7 +13,7 @@ FE/58F6: 01 06        ORA ($06,X)
 FE/58F8: 01 D7        ORA ($D7,X)
 FE/58FA: 08           PHP
 FE/58FB: 11 05        ORA ($05),Y
-FE/58FD: 10 10        BPL Local_FE590F
+FE/58FD: 10 10        BPL $590F
 FE/58FF: C8           INY
 FE/5900: 48           PHA
 FE/5901: F8           SED

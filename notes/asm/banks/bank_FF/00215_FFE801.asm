@@ -18,9 +18,9 @@ FF/E81B: 35 03        AND $03,X
 FF/E81D: 97 22        STA [$22],Y
 FF/E81F: 97 11        STA [$11],Y
 FF/E821: A9 14        LDA #$14
-FF/E823: 90 0A        BCC Local_FFE82F
+FF/E823: 90 0A        BCC $E82F
 FF/E825: AC 1D 9F     LDY $9F1D
 FF/E828: 00 FF        BRK $FF
 FF/E82A: 00 00        BRK $00
-FF/E82C: 30 2A        BMI Local_FFE858
+FF/E82C: 30 2A        BMI $E858
 FF/E82E: 60           RTS

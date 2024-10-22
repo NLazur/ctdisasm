@@ -6,7 +6,7 @@ D1/31F0: 00 E8        BRK $E8
 D1/31F2: C0 50        CPY #$50
 D1/31F4: 00 40        BRK $40
 D1/31F6: 42 CA        WDM $CA
-D1/31F8: 4C 38 CA     JMP Local_D1CA38
+D1/31F8: 4C 38 CA     JMP $CA38
 D1/31FB: 00 EA        BRK $EA
 D1/31FD: C0 50        CPY #$50
 D1/31FF: 00 40        BRK $40
@@ -29,5 +29,5 @@ D1/3224: 98           TYA
 D1/3225: 38           SEC
 D1/3226: E2 00        SEP #$00
 D1/3228: C4 C0        CPY $C0
-D1/322A: 50 00        BVC Local_D1322C
+D1/322A: 50 00        BVC $322C
 D1/322C: 40           RTI

@@ -23,12 +23,12 @@ C3/6294: 9F 02 C1 94  STA $94C102,X
 C3/6298: F7 E0        SBC [$E0],Y
 C3/629A: 76 31        ROR $31,X
 C3/629C: F8           SED
-C3/629D: 50 88        BVC Local_C36227
+C3/629D: 50 88        BVC $6227
 C3/629F: AB           PLB
 C3/62A0: 13 3B        ORA ($3B,S),Y
 C3/62A2: 23 6F        AND $6F,S
 C3/62A4: 11 20        ORA ($20),Y
-C3/62A6: 90 3F        BCC Local_C362E7
+C3/62A6: 90 3F        BCC $62E7
 C3/62A8: 00 D0        BRK $D0
 C3/62AA: 94 A7        STY $A7,X
 C3/62AC: 13 AF        ORA ($AF,S),Y

@@ -12,7 +12,7 @@ C0/83D6: 85 5C        STA $5C
 C0/83D8: A5 0E        LDA $0E
 C0/83DA: 3A           DEC
 C0/83DB: 85 5A        STA $5A
-C0/83DD: 20 E4 77     JSR Local_C077E4
+C0/83DD: 20 E4 77     JSR $77E4
 C0/83E0: A9 01        LDA #$01
 C0/83E2: 04 7B        TSB $7B
 C0/83E4: 60           RTS

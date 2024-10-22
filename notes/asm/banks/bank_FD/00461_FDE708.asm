@@ -20,7 +20,7 @@ FD/E72F: E2 20        SEP #$20
 FD/E731: E8           INX
 FD/E732: E8           INX
 FD/E733: 88           DEY
-FD/E734: D0 D6        BNE Local_FDE70C
+FD/E734: D0 D6        BNE $E70C
 FD/E736: A9 00        LDA #$00
 FD/E738: EB           XBA
 FD/E739: 60           RTS

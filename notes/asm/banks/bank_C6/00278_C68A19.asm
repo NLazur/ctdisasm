@@ -1,14 +1,14 @@
 ; Bank: C6 | Start Address: 8A19
 Routine_C68A19:
 C6/8A19: E0 C0        CPX #$C0
-C6/8A1B: 10 38        BPL Local_C68A55
+C6/8A1B: 10 38        BPL $8A55
 C6/8A1D: 39 3A 3B     AND $3B3A,Y
 C6/8A20: 9E 3C DB     STZ $DB3C,X
 C6/8A23: 49 98 14     EOR #$1498
 C6/8A26: EC F9 01     CPX $01F9
 C6/8A29: F8           SED
 C6/8A2A: 0D 0F 01     ORA $010F
-C6/8A2D: 10 6C        BPL Local_C68A9B
+C6/8A2D: 10 6C        BPL $8A9B
 C6/8A2F: 1F 3F 9C 5A  ORA $5A9C3F,X
 C6/8A33: 98           TYA
 C6/8A34: 14 35        TRB $35
@@ -17,7 +17,7 @@ C6/8A38: 03 E0        ORA $E0,S
 C6/8A3A: 0F 86 2F 20  ORA $202F86
 C6/8A3E: 01 78        ORA ($78,X)
 C6/8A40: 09 1E 00     ORA #$001E
-C6/8A43: 30 32        BMI Local_C68A77
+C6/8A43: 30 32        BMI $8A77
 C6/8A45: 97 49        STA [$49],Y
 C6/8A47: 4F 9D 19 5E  EOR $5E199D
 C6/8A4B: 35 01        AND $01,X
@@ -27,7 +27,7 @@ C6/8A52: 55 96        EOR $96,X
 C6/8A54: 21 C0        AND ($C0,X)
 C6/8A56: 11 12        ORA ($12),Y
 C6/8A58: 46 47        LSR $47
-C6/8A5A: 30 31        BMI Local_C68A8D
+C6/8A5A: 30 31        BMI $8A8D
 C6/8A5C: 5E 1D 01     LSR $011D,X
 C6/8A5F: F8           SED
 C6/8A60: 03 7F        ORA $7F,S
@@ -35,5 +35,5 @@ C6/8A62: E9 28 68     SBC #$6828
 C6/8A65: 24 20        BIT $20
 C6/8A67: 21 22        AND ($22,X)
 C6/8A69: 56 57        LSR $57,X
-C6/8A6B: 4C 58 59     JMP Local_C65958
+C6/8A6B: 4C 58 59     JMP $5958
 C6/8A6E: 40           RTI

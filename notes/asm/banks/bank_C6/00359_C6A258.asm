@@ -14,18 +14,18 @@ C6/A26D: A8           TAY
 C6/A26E: 79 21 12     ADC $1221,Y
 C6/A271: 29 2A        AND #$2A
 C6/A273: EA           NOP
-C6/A274: 80 80        BRA Local_C6A1F6
+C6/A274: 80 80        BRA $A1F6
 C6/A276: 51 81        EOR ($81),Y
-C6/A278: 70 D6        BVS Local_C6A250
+C6/A278: 70 D6        BVS $A250
 C6/A27A: ED 2A C1     SBC $C12A
 C6/A27D: A0 01        LDY #$01
 C6/A27F: AE 00 C2     LDX $C200
 C6/A282: C1 C2        CMP ($C2,X)
-C6/A284: 70 51        BVS Local_C6A2D7
+C6/A284: 70 51        BVS $A2D7
 C6/A286: 52 02        EOR ($02)
 C6/A288: 02 2D        COP $2D
 C6/A28A: 35 28        AND $28,X
-C6/A28C: 82 83 76     BRL Routine_C61912
+C6/A28C: 82 83 76     BRL $C61912
 C6/A28F: 77 82        ADC [$82],Y
 C6/A291: 83 01        STA $01,S
 C6/A293: 60           RTS

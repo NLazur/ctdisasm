@@ -2,10 +2,10 @@
 Routine_C03A83:
 C0/3A83: A5 17        LDA $17
 C0/3A85: 89 01        BIT #$01
-C0/3A87: D0 21        BNE Local_C03AAA
+C0/3A87: D0 21        BNE $3AAA
 C0/3A89: A5 18        LDA $18
 C0/3A8B: 89 01        BIT #$01
-C0/3A8D: D0 1E        BNE Local_C03AAD
+C0/3A8D: D0 1E        BNE $3AAD
 C0/3A8F: BB           TYX
 C0/3A90: E8           INX
 C0/3A91: BF 01 20 7F  LDA $7F2001,X

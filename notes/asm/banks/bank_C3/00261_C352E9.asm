@@ -1,12 +1,12 @@
 ; Bank: C3 | Start Address: 52E9
 Routine_C352E9:
-C3/52E9: 10 E2        BPL Local_C352CD
+C3/52E9: 10 E2        BPL $52CD
 C3/52EB: 8F 81 21 31  STA $312181
 C3/52EF: 0B           PHD
 C3/52F0: A9 7E        LDA #$7E
 C3/52F2: 8F 80 83 21  STA $218380
 C3/52F6: 00 AF        BRK $AF
-C3/52F8: 80 21        BRA Local_C3531B
+C3/52F8: 80 21        BRA $531B
 C3/52FA: 00 E9        BRK $E9
 C3/52FC: 2F 00 AA 60  AND $60AA00
 C3/5300: AD 44 00     LDA $0044
@@ -32,7 +32,7 @@ C3/5324: B1 15        LDA ($15),Y
 C3/5326: 00 AF        BRK $AF
 C3/5328: 46 00        LSR $00
 C3/532A: 8D 0B 16     STA $160B
-C3/532D: 10 20        BPL Local_C3534F
+C3/532D: 10 20        BPL $534F
 C3/532F: 16 00        ASL $00,X
 C3/5331: 06 02        ASL $02
 C3/5333: 21 01        AND ($01,X)
@@ -40,7 +40,7 @@ C3/5335: 25 09        AND $09
 C3/5337: D3 80        CMP ($80,S),Y
 C3/5339: 8D 0A 81     STA $810A
 C3/533C: C1 06        CMP ($06,X)
-C3/533E: 10 0E        BPL Local_C3534E
+C3/533E: 10 0E        BPL $534E
 C3/5340: 81 A9        STA ($A9,X)
 C3/5342: 12 81        ORA ($81)
 C3/5344: 61 10        ADC ($10,X)
@@ -48,21 +48,21 @@ C3/5346: CC 06 01     CPY $0106
 C3/5349: 64 50        STZ $50
 C3/534B: A9 38        LDA #$38
 C3/534D: 85 F0        STA $F0
-C3/534F: 20 A6 80     JSR Local_C380A6
-C3/5352: 4C A9 C0     JMP Local_C3C0A9
+C3/534F: 20 A6 80     JSR $80A6
+C3/5352: 4C A9 C0     JMP $C0A9
 C3/5355: 07 00        ORA [$00]
 C3/5357: 0F 0D 18 AA  ORA $AA180D
 C3/535B: A3 0B        LDA $0B,S
 C3/535D: BD E8 E9     LDA $E9E8,X
-C3/5360: 80 8F        BRA Local_C352F1
+C3/5360: 80 8F        BRA $52F1
 C3/5362: 7B           TDC
 C3/5363: 00 E8        BRK $E8
 C3/5365: 08           PHP
-C3/5366: 80 DB        BRA Local_C35343
+C3/5366: 80 DB        BRA $5343
 C3/5368: 0B           PHD
 C3/5369: 13 A0        ORA ($A0,S),Y
 C3/536B: 26 60        ROL $60
-C3/536D: 3C 1D 45     BIT Local_C3451D,X
+C3/536D: 3C 1D 45     BIT $451D,X
 C3/5370: 1E E1 80     ASL $80E1,X
 C3/5373: C7 07        CMP [$07]
 C3/5375: 60           RTS

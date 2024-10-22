@@ -26,9 +26,9 @@ D1/72A8: 08           PHP
 D1/72A9: A2 FF        LDX #$FF
 D1/72AB: 01 A2        ORA ($A2,X)
 D1/72AD: 00 B0        BRK $B0
-D1/72AF: 70 00        BVS Local_D172B1
+D1/72AF: 70 00        BVS $72B1
 D1/72B1: A2 01        LDX #$01
-D1/72B3: 50 70        BVC Local_D17325
+D1/72B3: 50 70        BVC $7325
 D1/72B5: 00 A7        BRK $A7
 D1/72B7: 00 00        BRK $00
 D1/72B9: 00 00        BRK $00
@@ -38,11 +38,11 @@ D1/72BF: 00 A3        BRK $A3
 D1/72C1: 00 00        BRK $00
 D1/72C3: 00 04        BRK $04
 D1/72C5: 00 00        BRK $00
-D1/72C7: 80 B7        BRA Local_D17280
+D1/72C7: 80 B7        BRA $7280
 D1/72C9: 01 00        ORA ($00,X)
 D1/72CB: 95 0F        STA $0F,X
 D1/72CD: 98           TYA
-D1/72CE: 10 DE        BPL Local_D172AE
+D1/72CE: 10 DE        BPL $72AE
 D1/72D0: 01 9D        ORA ($9D,X)
 D1/72D2: 17 83        ORA [$83],Y
 D1/72D4: 14 88        TRB $88
@@ -57,6 +57,6 @@ D1/72E3: 00 00        BRK $00
 D1/72E5: 04 00        TSB $00
 D1/72E7: 00 F8        BRK $F8
 D1/72E9: A1 01        LDA ($01,X)
-D1/72EB: 82 61 00     BRL Routine_D1734F
+D1/72EB: 82 61 00     BRL $D1734F
 D1/72EE: 84 83        STY $83
 D1/72F0: 40           RTI

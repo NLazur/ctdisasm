@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 568C
 Routine_D0568C:
-D0/568C: 30 30        BMI Local_D056BE
+D0/568C: 30 30        BMI $56BE
 D0/568E: 28           PLP
 D0/568F: 38           SEC
 D0/5690: 14 1C        TRB $1C
@@ -16,22 +16,22 @@ D0/56A1: 56 58        LSR $58,X
 D0/56A3: 56 4D        LSR $4D,X
 D0/56A5: 53 0C        EOR ($0C,S),Y
 D0/56A7: 53 3F        EOR ($3F,S),Y
-D0/56A9: 20 2F 30     JSR Local_D0302F
+D0/56A9: 20 2F 30     JSR $302F
 D0/56AC: 3F 10 3F 18  AND $183F10,X
 D0/56B0: 39 0E 1B     AND $1B0E,Y
 D0/56B3: 0C 0D 0E     TSB $0E0D
 D0/56B6: 07 03        ORA [$03]
 D0/56B8: 00 00        BRK $00
-D0/56BA: 20 20 30     JSR Local_D03020
-D0/56BD: 10 00        BPL Local_D056BF
+D0/56BA: 20 20 30     JSR $3020
+D0/56BD: 10 00        BPL $56BF
 D0/56BF: 04 B8        TSB $B8
-D0/56C1: 70 E8        BVS Local_D056AB
-D0/56C3: 20 C4 30     JSR Local_D030C4
+D0/56C1: 70 E8        BVS $56AB
+D0/56C3: 20 C4 30     JSR $30C4
 D0/56C6: EC 18 EC     CPX $EC18
 D0/56C9: 18           CLC
 D0/56CA: E4 30        CPX $30
 D0/56CC: 68           PLA
-D0/56CD: 80 D0        BRA Local_D0569F
+D0/56CD: 80 D0        BRA $569F
 D0/56CF: C0 08 18     CPY #$1808
 D0/56D2: 0C 04 04     TSB $0404
 D0/56D5: 0C 18 30     TSB $3018
@@ -49,9 +49,9 @@ D0/56EB: 01 01        ORA ($01,X)
 D0/56ED: 00 00        BRK $00
 D0/56EF: 00 F1        BRK $F1
 D0/56F1: 41 7F        EOR ($7F,X)
-D0/56F3: 20 3F 10     JSR Local_D0103F
+D0/56F3: 20 3F 10     JSR $103F
 D0/56F6: 3B           TSC
-D0/56F7: 2C 96 D9     BIT Local_D0D996
+D0/56F7: 2C 96 D9     BIT $D996
 D0/56FA: CB           WAI
 D0/56FB: 76 7B        ROR $7B,X
 D0/56FD: 14 0C        TRB $0C

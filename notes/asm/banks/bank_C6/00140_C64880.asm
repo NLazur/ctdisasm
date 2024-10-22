@@ -15,7 +15,7 @@ C6/489A: 5F 00 04 6E  EOR $6E0400,X
 C6/489E: 04 6F        TSB $6F
 C6/48A0: 04 7E        TSB $7E
 C6/48A2: 04 7F        TSB $7F
-C6/48A4: 30 04        BMI Local_C648AA
+C6/48A4: 30 04        BMI $48AA
 C6/48A6: 4D 84 5D     EOR $5D84
 C6/48A9: 0A           ASL
 C6/48AA: 01 02        ORA ($02,X)
@@ -39,31 +39,31 @@ C6/48CA: A6 04        LDX $04
 C6/48CC: B5 04        LDA $04,X
 C6/48CE: 08           PHP
 C6/48CF: B6 58        LDX $58,Y
-C6/48D1: 30 A9        BMI Local_C6487C
+C6/48D1: 30 A9        BMI $487C
 C6/48D3: 08           PHP
 C6/48D4: AA           TAX
 C6/48D5: 08           PHP
 C6/48D6: 8D 85 78     STA $7885
 C6/48D9: 00 34        BRK $34
 C6/48DB: 78           SEI
-C6/48DC: 20 BB 48     JSR Local_C648BB
+C6/48DC: 20 BB 48     JSR $48BB
 C6/48DF: BA           TSX
 C6/48E0: 48           PHA
-C6/48E1: 80 0A        BRA Local_C648ED
+C6/48E1: 80 0A        BRA $48ED
 C6/48E3: 2B           PLD
 C6/48E4: 00 2B        BRK $2B
-C6/48E6: 90 2A        BCC Local_C64912
+C6/48E6: 90 2A        BCC $4912
 C6/48E8: F1 06        SBC ($06),Y
 C6/48EA: 02 C7        COP $C7
 C6/48EC: 8E 01 8E     STX $8E01
 C6/48EF: 04 C0        TSB $C0
 C6/48F1: 8F 04 9E 04  STA $049E04
 C6/48F5: 9F 04 08 08  STA $080804,X
-C6/48F9: 80 08        BRA Local_C64903
+C6/48F9: 80 08        BRA $4903
 C6/48FB: 0B           PHD
 C6/48FC: 88           DEY
 C6/48FD: 08           PHP
-C6/48FE: 10 08        BPL Local_C64908
+C6/48FE: 10 08        BPL $4908
 C6/4900: 7F 84 08 04  ADC $040884,X
 C6/4904: 5D 04 2D     EOR $2D04,X
 C6/4907: 56 44        LSR $44,X

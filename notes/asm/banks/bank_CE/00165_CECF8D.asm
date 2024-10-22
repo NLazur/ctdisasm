@@ -1,8 +1,8 @@
 ; Bank: CE | Start Address: CF8D
 Routine_CECF8D:
 CE/CF8D: EE F0 06     INC $06F0
-CE/CF90: 80 10        BRA Local_CECFA2
-CE/CF92: F0 06        BEQ Local_CECF9A
+CE/CF90: 80 10        BRA $CFA2
+CE/CF92: F0 06        BEQ $CF9A
 CE/CF94: 00 00        BRK $00
 CE/CF96: D8           CLD
 CE/CF97: 03 01        ORA $01,S
@@ -10,11 +10,11 @@ CE/CF99: 00 D8        BRK $D8
 CE/CF9B: 03 42        ORA $42,S
 CE/CF9D: 00 D8        BRK $D8
 CE/CF9F: 03 03        ORA $03,S
-CE/CFA1: F0 E8        BEQ Local_CECF8B
+CE/CFA1: F0 E8        BEQ $CF8B
 CE/CFA3: 03 04        ORA $04,S
-CE/CFA5: F0 E8        BEQ Local_CECF8F
+CE/CFA5: F0 E8        BEQ $CF8F
 CE/CFA7: 03 45        ORA $45,S
-CE/CFA9: F0 E8        BEQ Local_CECF93
+CE/CFA9: F0 E8        BEQ $CF93
 CE/CFAB: 03 06        ORA $06,S
 CE/CFAD: E0 E0 03     CPX #$03E0
 CE/CFB0: 07 E0        ORA [$E0]
@@ -22,18 +22,18 @@ CE/CFB2: E0 03 48     CPX #$4803
 CE/CFB5: E0 E0 03     CPX #$03E0
 CE/CFB8: 09 10        ORA #$10
 CE/CFBA: E0 03 0A     CPX #$0A03
-CE/CFBD: 10 E0        BPL Local_CECF9F
+CE/CFBD: 10 E0        BPL $CF9F
 CE/CFBF: 03 8B        ORA $8B,S
-CE/CFC1: 10 E0        BPL Local_CECFA3
+CE/CFC1: 10 E0        BPL $CFA3
 CE/CFC3: 03 00        ORA $00,S
 CE/CFC5: 00 D0        BRK $D0
 CE/CFC7: 8A           TXA
 CE/CFC8: 01 00        ORA ($00,X)
-CE/CFCA: D0 8A        BNE Local_CECF56
+CE/CFCA: D0 8A        BNE $CF56
 CE/CFCC: 02 00        COP $00
-CE/CFCE: D0 8A        BNE Local_CECF5A
+CE/CFCE: D0 8A        BNE $CF5A
 CE/CFD0: 23 00        AND $00,S
-CE/CFD2: D0 8A        BNE Local_CECF5E
+CE/CFD2: D0 8A        BNE $CF5E
 CE/CFD4: 04 00        TSB $00
 CE/CFD6: E0 8A 05     CPX #$058A
 CE/CFD9: 00 E0        BRK $E0
@@ -46,7 +46,7 @@ CE/CFE4: 08           PHP
 CE/CFE5: 00 F0        BRK $F0
 CE/CFE7: 8A           TXA
 CE/CFE8: 09 00        ORA #$00
-CE/CFEA: F0 8A        BEQ Local_CECF76
+CE/CFEA: F0 8A        BEQ $CF76
 CE/CFEC: 0A           ASL
 CE/CFED: 00 F0        BRK $F0
 CE/CFEF: 8A           TXA
@@ -60,7 +60,7 @@ CE/CFFB: 8A           TXA
 CE/CFFC: 0E 00 00     ASL $0000
 CE/CFFF: 8A           TXA
 CE/D000: 2F 00 00 8A  AND $8A0000
-CE/D004: 20 F8 F8     JSR Local_CEF8F8
+CE/D004: 20 F8 F8     JSR $F8F8
 CE/D007: 05 08        ORA $08
 CE/D009: F8           SED
 CE/D00A: F8           SED
@@ -162,7 +162,7 @@ CE/D098: 23 00        AND $00,S
 CE/D09A: 00 06        BRK $06
 CE/D09C: 02 F0        COP $F0
 CE/D09E: E0 06 22     CPX #$2206
-CE/D0A1: F0 E0        BEQ Local_CED083
+CE/D0A1: F0 E0        BEQ $D083
 CE/D0A3: 06 01        ASL $01
 CE/D0A5: F8           SED
 CE/D0A6: F8           SED
@@ -171,7 +171,7 @@ CE/D0A9: F8           SED
 CE/D0AA: F8           SED
 CE/D0AB: 06 20        ASL $20
 CE/D0AD: 00 00        BRK $00
-CE/D0AF: 20 00 E8     JSR Local_CEE800
+CE/D0AF: 20 00 E8     JSR $E800
 CE/D0B2: D8           CLD
 CE/D0B3: 06 01        ASL $01
 CE/D0B5: E8           INX
@@ -181,107 +181,107 @@ CE/D0B9: E8           INX
 CE/D0BA: DC 06 23     JMP [$2306]
 CE/D0BD: E8           INX
 CE/D0BE: DE 06 00     DEC $0006,X
-CE/D0C1: F0 F0        BEQ Local_CED0B3
+CE/D0C1: F0 F0        BEQ $D0B3
 CE/D0C3: 06 01        ASL $01
-CE/D0C5: F0 F0        BEQ Local_CED0B7
+CE/D0C5: F0 F0        BEQ $D0B7
 CE/D0C7: 06 02        ASL $02
-CE/D0C9: F0 F0        BEQ Local_CED0BB
+CE/D0C9: F0 F0        BEQ $D0BB
 CE/D0CB: 06 03        ASL $03
-CE/D0CD: F0 F0        BEQ Local_CED0BF
+CE/D0CD: F0 F0        BEQ $D0BF
 CE/D0CF: 05 04        ORA $04
-CE/D0D1: F0 F0        BEQ Local_CED0C3
+CE/D0D1: F0 F0        BEQ $D0C3
 CE/D0D3: 05 05        ORA $05
-CE/D0D5: F0 F0        BEQ Local_CED0C7
+CE/D0D5: F0 F0        BEQ $D0C7
 CE/D0D7: 04 06        TSB $06
-CE/D0D9: F0 F0        BEQ Local_CED0CB
+CE/D0D9: F0 F0        BEQ $D0CB
 CE/D0DB: 04 27        TSB $27
-CE/D0DD: F0 F0        BEQ Local_CED0CF
+CE/D0DD: F0 F0        BEQ $D0CF
 CE/D0DF: 05 08        ORA $08
-CE/D0E1: F0 0A        BEQ Local_CED0ED
+CE/D0E1: F0 0A        BEQ $D0ED
 CE/D0E3: 06 09        ASL $09
-CE/D0E5: F0 08        BEQ Local_CED0EF
+CE/D0E5: F0 08        BEQ $D0EF
 CE/D0E7: 06 0A        ASL $0A
-CE/D0E9: F0 06        BEQ Local_CED0F1
+CE/D0E9: F0 06        BEQ $D0F1
 CE/D0EB: 06 0B        ASL $0B
-CE/D0ED: F0 04        BEQ Local_CED0F3
+CE/D0ED: F0 04        BEQ $D0F3
 CE/D0EF: 06 0C        ASL $0C
-CE/D0F1: F0 02        BEQ Local_CED0F5
+CE/D0F1: F0 02        BEQ $D0F5
 CE/D0F3: 06 2D        ASL $2D
-CE/D0F5: F0 00        BEQ Local_CED0F7
+CE/D0F5: F0 00        BEQ $D0F7
 CE/D0F7: 06 07        ASL $07
-CE/D0F9: F0 F0        BEQ Local_CED0EB
+CE/D0F9: F0 F0        BEQ $D0EB
 CE/D0FB: 06 06        ASL $06
-CE/D0FD: F0 F0        BEQ Local_CED0EF
+CE/D0FD: F0 F0        BEQ $D0EF
 CE/D0FF: 06 05        ASL $05
-CE/D101: F0 F0        BEQ Local_CED0F3
+CE/D101: F0 F0        BEQ $D0F3
 CE/D103: 06 04        ASL $04
-CE/D105: F0 F0        BEQ Local_CED0F7
+CE/D105: F0 F0        BEQ $D0F7
 CE/D107: 06 03        ASL $03
-CE/D109: F0 F0        BEQ Local_CED0FB
+CE/D109: F0 F0        BEQ $D0FB
 CE/D10B: 06 02        ASL $02
-CE/D10D: F0 F0        BEQ Local_CED0FF
+CE/D10D: F0 F0        BEQ $D0FF
 CE/D10F: 06 01        ASL $01
-CE/D111: F0 F0        BEQ Local_CED103
+CE/D111: F0 F0        BEQ $D103
 CE/D113: 06 20        ASL $20
-CE/D115: F0 F0        BEQ Local_CED107
+CE/D115: F0 F0        BEQ $D107
 CE/D117: 06 00        ASL $00
-CE/D119: F0 F0        BEQ Local_CED10B
+CE/D119: F0 F0        BEQ $D10B
 CE/D11B: 03 01        ORA $01,S
-CE/D11D: F0 F0        BEQ Local_CED10F
+CE/D11D: F0 F0        BEQ $D10F
 CE/D11F: 02 02        COP $02
-CE/D121: F0 F0        BEQ Local_CED113
+CE/D121: F0 F0        BEQ $D113
 CE/D123: 01 21        ORA ($21,X)
-CE/D125: F0 F0        BEQ Local_CED117
+CE/D125: F0 F0        BEQ $D117
 CE/D127: 02 00        COP $00
-CE/D129: F0 F0        BEQ Local_CED11B
+CE/D129: F0 F0        BEQ $D11B
 CE/D12B: 03 01        ORA $01,S
-CE/D12D: F0 F0        BEQ Local_CED11F
+CE/D12D: F0 F0        BEQ $D11F
 CE/D12F: 02 02        COP $02
-CE/D131: F0 F0        BEQ Local_CED123
+CE/D131: F0 F0        BEQ $D123
 CE/D133: 01 21        ORA ($21,X)
-CE/D135: F0 F0        BEQ Local_CED127
+CE/D135: F0 F0        BEQ $D127
 CE/D137: 02 03        COP $03
-CE/D139: F0 F0        BEQ Local_CED12B
+CE/D139: F0 F0        BEQ $D12B
 CE/D13B: 01 04        ORA ($04,X)
-CE/D13D: F0 F0        BEQ Local_CED12F
+CE/D13D: F0 F0        BEQ $D12F
 CE/D13F: 01 25        ORA ($25,X)
-CE/D141: F0 F0        BEQ Local_CED133
+CE/D141: F0 F0        BEQ $D133
 CE/D143: 03 06        ORA $06,S
-CE/D145: F0 F0        BEQ Local_CED137
+CE/D145: F0 F0        BEQ $D137
 CE/D147: 01 07        ORA ($07,X)
-CE/D149: F0 F0        BEQ Local_CED13B
+CE/D149: F0 F0        BEQ $D13B
 CE/D14B: 01 28        ORA ($28,X)
-CE/D14D: F0 F0        BEQ Local_CED13F
+CE/D14D: F0 F0        BEQ $D13F
 CE/D14F: 03 09        ORA $09,S
-CE/D151: F0 F0        BEQ Local_CED143
+CE/D151: F0 F0        BEQ $D143
 CE/D153: 01 0A        ORA ($0A,X)
-CE/D155: F0 F0        BEQ Local_CED147
+CE/D155: F0 F0        BEQ $D147
 CE/D157: 01 2B        ORA ($2B,X)
-CE/D159: F0 F0        BEQ Local_CED14B
+CE/D159: F0 F0        BEQ $D14B
 CE/D15B: 03 0C        ORA $0C,S
-CE/D15D: F0 F0        BEQ Local_CED14F
+CE/D15D: F0 F0        BEQ $D14F
 CE/D15F: 01 0D        ORA ($0D,X)
-CE/D161: F0 F0        BEQ Local_CED153
+CE/D161: F0 F0        BEQ $D153
 CE/D163: 01 2E        ORA ($2E,X)
-CE/D165: F0 F0        BEQ Local_CED157
+CE/D165: F0 F0        BEQ $D157
 CE/D167: 03 0F        ORA $0F,S
-CE/D169: F0 F0        BEQ Local_CED15B
+CE/D169: F0 F0        BEQ $D15B
 CE/D16B: 01 10        ORA ($10,X)
-CE/D16D: F0 F0        BEQ Local_CED15F
+CE/D16D: F0 F0        BEQ $D15F
 CE/D16F: 01 31        ORA ($31,X)
-CE/D171: F0 F0        BEQ Local_CED163
+CE/D171: F0 F0        BEQ $D163
 CE/D173: 03 12        ORA $12,S
-CE/D175: F0 F0        BEQ Local_CED167
+CE/D175: F0 F0        BEQ $D167
 CE/D177: 01 13        ORA ($13,X)
-CE/D179: F0 F0        BEQ Local_CED16B
+CE/D179: F0 F0        BEQ $D16B
 CE/D17B: 01 34        ORA ($34,X)
-CE/D17D: F0 F0        BEQ Local_CED16F
+CE/D17D: F0 F0        BEQ $D16F
 CE/D17F: 03 15        ORA $15,S
-CE/D181: F0 F0        BEQ Local_CED173
+CE/D181: F0 F0        BEQ $D173
 CE/D183: 01 16        ORA ($16,X)
-CE/D185: F0 F0        BEQ Local_CED177
+CE/D185: F0 F0        BEQ $D177
 CE/D187: 01 37        ORA ($37,X)
-CE/D189: F0 F0        BEQ Local_CED17B
+CE/D189: F0 F0        BEQ $D17B
 CE/D18B: 03 00        ORA $00,S
 CE/D18D: F8           SED
 CE/D18E: E0 06 00     CPX #$0006
@@ -293,7 +293,7 @@ CE/D197: 06 00        ASL $00
 CE/D199: 04 D2        TSB $D2
 CE/D19B: 06 00        ASL $00
 CE/D19D: F8           SED
-CE/D19E: D0 06        BNE Local_CED1A6
+CE/D19E: D0 06        BNE $D1A6
 CE/D1A0: 00 EC        BRK $EC
 CE/D1A2: D2 06        CMP ($06)
 CE/D1A4: 00 E8        BRK $E8
@@ -301,12 +301,12 @@ CE/D1A6: D8           CLD
 CE/D1A7: 06 20        ASL $20
 CE/D1A9: EC DE 06     CPX $06DE
 CE/D1AC: 01 00        ORA ($00,X)
-CE/D1AE: F0 10        BEQ Local_CED1C0
+CE/D1AE: F0 10        BEQ $D1C0
 CE/D1B0: 00 F4        BRK $F4
 CE/D1B2: E0 13 02     CPX #$0213
 CE/D1B5: F8           SED
 CE/D1B6: E8           INX
-CE/D1B7: 10 22        BPL Local_CED1DB
+CE/D1B7: 10 22        BPL $D1DB
 CE/D1B9: F8           SED
 CE/D1BA: E8           INX
 CE/D1BB: 01 03        ORA ($03,X)
@@ -351,7 +351,7 @@ CE/D205: 08           PHP
 CE/D206: C2 03        REP #$03
 CE/D208: 1E 0C C4     ASL $C40C,X
 CE/D20B: 03 1D        ORA $1D,S
-CE/D20D: 10 C8        BPL Local_CED1D7
+CE/D20D: 10 C8        BPL $D1D7
 CE/D20F: 03 1C        ORA $1C,S
 CE/D211: 14 D0        TRB $D0
 CE/D213: 03 3B        ORA $3B,S
@@ -359,7 +359,7 @@ CE/D215: 18           CLC
 CE/D216: E0 03 1A     CPX #$1A03
 CE/D219: F4 D0 03     PEA $03D0
 CE/D21C: 1B           TCS
-CE/D21D: F0 C8        BEQ Local_CED1E7
+CE/D21D: F0 C8        BEQ $D1E7
 CE/D21F: 03 1C        ORA $1C,S
 CE/D221: EC C4 03     CPX $03C4
 CE/D224: 1D E8 C2     ORA $C2E8,X
@@ -381,7 +381,7 @@ CE/D245: 08           PHP
 CE/D246: D1 02        CMP ($02),Y
 CE/D248: 1E 0C D2     ASL $D20C,X
 CE/D24B: 02 1D        COP $1D
-CE/D24D: 10 D4        BPL Local_CED223
+CE/D24D: 10 D4        BPL $D223
 CE/D24F: 02 1C        COP $1C
 CE/D251: 14 D8        TRB $D8
 CE/D253: 02 3B        COP $3B
@@ -389,7 +389,7 @@ CE/D255: 18           CLC
 CE/D256: E0 02 1A     CPX #$1A02
 CE/D259: F4 D8 02     PEA $02D8
 CE/D25C: 1B           TCS
-CE/D25D: F0 D4        BEQ Local_CED233
+CE/D25D: F0 D4        BEQ $D233
 CE/D25F: 02 1C        COP $1C
 CE/D261: EC D2 02     CPX $02D2
 CE/D264: 1D E8 D1     ORA $D1E8,X
@@ -418,11 +418,11 @@ CE/D28A: E8           INX
 CE/D28B: 06 0E        ASL $0E
 CE/D28D: E8           INX
 CE/D28E: C8           INY
-CE/D28F: 10 2E        BPL Local_CED2BF
+CE/D28F: 10 2E        BPL $D2BF
 CE/D291: E7 C9        SBC [$C9]
-CE/D293: 10 0F        BPL Local_CED2A4
+CE/D293: 10 0F        BPL $D2A4
 CE/D295: E0 E0 04     CPX #$04E0
-CE/D298: 10 E0        BPL Local_CED27A
+CE/D298: 10 E0        BPL $D27A
 CE/D29A: E0 04 11     CPX #$1104
 CE/D29D: E0 E0 04     CPX #$04E0
 CE/D2A0: 32 E0        AND ($E0)
@@ -488,17 +488,17 @@ CE/D317: 04 38        TSB $38
 CE/D319: 00 D0        BRK $D0
 CE/D31B: 04 19        TSB $19
 CE/D31D: F8           SED
-CE/D31E: F0 04        BEQ Local_CED324
+CE/D31E: F0 04        BEQ $D324
 CE/D320: 1A           INC
 CE/D321: F8           SED
-CE/D322: F0 04        BEQ Local_CED328
+CE/D322: F0 04        BEQ $D328
 CE/D324: 1B           TCS
 CE/D325: F8           SED
-CE/D326: F0 04        BEQ Local_CED32C
+CE/D326: F0 04        BEQ $D32C
 CE/D328: 1C F8 F0     TRB $F0F8
 CE/D32B: 04 1D        TSB $1D
 CE/D32D: F8           SED
-CE/D32E: F0 04        BEQ Local_CED334
+CE/D32E: F0 04        BEQ $D334
 CE/D330: 3E F8 F0     ROL $F0F8,X
 CE/D333: 04 1F        TSB $1F
 CE/D335: F8           SED
@@ -526,7 +526,7 @@ CE/D35C: 05 F8        ORA $F8
 CE/D35E: F4 06 24     PEA $2406
 CE/D361: F8           SED
 CE/D362: F6 06        INC $06,X
-CE/D364: 10 00        BPL Local_CED366
+CE/D364: 10 00        BPL $D366
 CE/D366: 00 05        BRK $05
 CE/D368: 11 00        ORA ($00),Y
 CE/D36A: 00 05        BRK $05
@@ -556,53 +556,53 @@ CE/D397: 05 3D        ORA $3D
 CE/D399: 00 00        BRK $00
 CE/D39B: 05 0A        ORA $0A
 CE/D39D: F8           SED
-CE/D39E: 80 04        BRA Local_CED3A4
+CE/D39E: 80 04        BRA $D3A4
 CE/D3A0: 0B           PHD
 CE/D3A1: F8           SED
-CE/D3A2: 80 04        BRA Local_CED3A8
+CE/D3A2: 80 04        BRA $D3A8
 CE/D3A4: 0C F8 80     TSB $80F8
 CE/D3A7: 04 0D        TSB $0D
 CE/D3A9: F8           SED
-CE/D3AA: 80 04        BRA Local_CED3B0
+CE/D3AA: 80 04        BRA $D3B0
 CE/D3AC: 0E F8 80     ASL $80F8
 CE/D3AF: 04 0F        TSB $0F
 CE/D3B1: F8           SED
-CE/D3B2: 80 04        BRA Local_CED3B8
-CE/D3B4: 30 F8        BMI Local_CED3AE
-CE/D3B6: 80 0A        BRA Local_CED3C2
-CE/D3B8: 10 F8        BPL Local_CED3B2
-CE/D3BA: 80 04        BRA Local_CED3C0
+CE/D3B2: 80 04        BRA $D3B8
+CE/D3B4: 30 F8        BMI $D3AE
+CE/D3B6: 80 0A        BRA $D3C2
+CE/D3B8: 10 F8        BPL $D3B2
+CE/D3BA: 80 04        BRA $D3C0
 CE/D3BC: 0F F8 80 04  ORA $0480F8
 CE/D3C0: 0E F8 80     ASL $80F8
 CE/D3C3: 04 0D        TSB $0D
 CE/D3C5: F8           SED
-CE/D3C6: 80 04        BRA Local_CED3CC
+CE/D3C6: 80 04        BRA $D3CC
 CE/D3C8: 0C F8 80     TSB $80F8
 CE/D3CB: 04 0B        TSB $0B
 CE/D3CD: F8           SED
-CE/D3CE: 80 04        BRA Local_CED3D4
+CE/D3CE: 80 04        BRA $D3D4
 CE/D3D0: 2A           ROL
 CE/D3D1: F8           SED
-CE/D3D2: 80 0A        BRA Local_CED3DE
+CE/D3D2: 80 0A        BRA $D3DE
 CE/D3D4: 06 F8        ASL $F8
-CE/D3D6: B0 05        BCS Local_CED3DD
+CE/D3D6: B0 05        BCS $D3DD
 CE/D3D8: 07 F8        ORA [$F8]
-CE/D3DA: B0 05        BCS Local_CED3E1
+CE/D3DA: B0 05        BCS $D3E1
 CE/D3DC: 08           PHP
 CE/D3DD: F8           SED
-CE/D3DE: B0 05        BCS Local_CED3E5
+CE/D3DE: B0 05        BCS $D3E5
 CE/D3E0: 09 F8        ORA #$F8
-CE/D3E2: B0 05        BCS Local_CED3E9
+CE/D3E2: B0 05        BCS $D3E9
 CE/D3E4: 0A           ASL
 CE/D3E5: F8           SED
-CE/D3E6: B0 05        BCS Local_CED3ED
+CE/D3E6: B0 05        BCS $D3ED
 CE/D3E8: 0B           PHD
 CE/D3E9: F8           SED
-CE/D3EA: B0 05        BCS Local_CED3F1
+CE/D3EA: B0 05        BCS $D3F1
 CE/D3EC: 0C F8 B0     TSB $B0F8
 CE/D3EF: 05 0D        ORA $0D
 CE/D3F1: F8           SED
-CE/D3F2: B0 05        BCS Local_CED3F9
+CE/D3F2: B0 05        BCS $D3F9
 CE/D3F4: 2E F8 B0     ROL $B0F8
 CE/D3F7: 05 0B        ORA $0B
 CE/D3F9: 00 00        BRK $00
@@ -631,46 +631,46 @@ CE/D425: 00 00        BRK $00
 CE/D427: 04 72        TSB $72
 CE/D429: 0A           ASL
 CE/D42A: 69 00        ADC #$00
-CE/D42C: 20 02 06     JSR Local_CE0602
+CE/D42C: 20 02 06     JSR $0602
 CE/D42F: 05 20        ORA $20
 CE/D431: 02 6A        COP $6A
 CE/D433: 03 05        ORA $05,S
 CE/D435: 06 03        ASL $03
-CE/D437: 50 1F        BVC Local_CED458
+CE/D437: 50 1F        BVC $D458
 CE/D439: 72 0A        ADC ($0A)
 CE/D43B: 69 01        ADC #$01
-CE/D43D: 20 02 06     JSR Local_CE0602
+CE/D43D: 20 02 06     JSR $0602
 CE/D440: 05 20        ORA $20
 CE/D442: 02 6A        COP $6A
 CE/D444: 03 05        ORA $05,S
 CE/D446: 06 03        ASL $03
-CE/D448: 50 1F        BVC Local_CED469
+CE/D448: 50 1F        BVC $D469
 CE/D44A: 72 0A        ADC ($0A)
 CE/D44C: 69 02        ADC #$02
-CE/D44E: 20 02 06     JSR Local_CE0602
+CE/D44E: 20 02 06     JSR $0602
 CE/D451: 05 20        ORA $20
 CE/D453: 02 6A        COP $6A
 CE/D455: 03 05        ORA $05,S
 CE/D457: 06 03        ASL $03
-CE/D459: 50 1F        BVC Local_CED47A
+CE/D459: 50 1F        BVC $D47A
 CE/D45B: 72 0A        ADC ($0A)
 CE/D45D: 69 03        ADC #$03
-CE/D45F: 20 02 06     JSR Local_CE0602
+CE/D45F: 20 02 06     JSR $0602
 CE/D462: 05 20        ORA $20
 CE/D464: 02 6A        COP $6A
 CE/D466: 03 05        ORA $05,S
 CE/D468: 06 03        ASL $03
-CE/D46A: 50 1F        BVC Local_CED48B
+CE/D46A: 50 1F        BVC $D48B
 CE/D46C: 72 0A        ADC ($0A)
 CE/D46E: 69 04        ADC #$04
-CE/D470: 20 02 06     JSR Local_CE0602
+CE/D470: 20 02 06     JSR $0602
 CE/D473: 05 20        ORA $20
 CE/D475: 02 6A        COP $6A
 CE/D477: 03 05        ORA $05,S
 CE/D479: 06 03        ASL $03
-CE/D47B: 50 1F        BVC Local_CED49C
+CE/D47B: 50 1F        BVC $D49C
 CE/D47D: 69 00        ADC #$00
-CE/D47F: 20 02 06     JSR Local_CE0602
+CE/D47F: 20 02 06     JSR $0602
 CE/D482: 05 20        ORA $20
 CE/D484: 02 6A        COP $6A
 CE/D486: 03 05        ORA $05,S
@@ -705,10 +705,10 @@ CE/D4C7: 03 72        ORA $72,S
 CE/D4C9: 0D 1F 69     ORA $691F
 CE/D4CC: 00 20        BRK $20
 CE/D4CE: 02 6A        COP $6A
-CE/D4D0: 20 02 69     JSR Local_CE6902
+CE/D4D0: 20 02 69     JSR $6902
 CE/D4D3: 00 20        BRK $20
 CE/D4D5: 02 6A        COP $6A
-CE/D4D7: 20 02 69     JSR Local_CE6902
+CE/D4D7: 20 02 69     JSR $6902
 CE/D4DA: 00 20        BRK $20
 CE/D4DC: 02 6A        COP $6A
 CE/D4DE: 1F 12 1A 12  ORA $121A12,X
@@ -725,8 +725,8 @@ CE/D4F9: 05 06        ORA $06
 CE/D4FB: 16 03        ASL $03,X
 CE/D4FD: 08           PHP
 CE/D4FE: 69 00        ADC #$00
-CE/D500: 20 02 6A     JSR Local_CE6A02
-CE/D503: 20 02 06     JSR Local_CE0602
+CE/D500: 20 02 6A     JSR $6A02
+CE/D503: 20 02 06     JSR $0602
 CE/D506: 16 50        ASL $50,X
 CE/D508: 06 03        ASL $03
 CE/D50A: 1F 03 09 20  ORA $200903,X
@@ -746,8 +746,8 @@ CE/D52B: 06 35        ASL $35
 CE/D52D: 12 03        ORA ($03)
 CE/D52F: 36 02        ROL $02,X
 CE/D531: 35 A9        AND $A9,X
-CE/D533: 10 77        BPL Local_CED5AC
-CE/D535: 80 26        BRA Local_CED55D
+CE/D533: 10 77        BPL $D5AC
+CE/D535: 80 26        BRA $D55D
 CE/D537: 35 04        AND $04,X
 CE/D539: 1F 07 76 03  ORA $037607,X
 CE/D53D: 00 72        BRK $72
@@ -773,15 +773,15 @@ CE/D56D: 0C 06 35     TSB $3506
 CE/D570: 12 03        ORA ($03)
 CE/D572: 78           SEI
 CE/D573: 5F 02 35 A8  EOR $A83502,X
-CE/D577: 10 77        BPL Local_CED5F0
-CE/D579: 80 26        BRA Local_CED5A1
+CE/D577: 10 77        BPL $D5F0
+CE/D579: 80 26        BRA $D5A1
 CE/D57B: 35 04        AND $04,X
 CE/D57D: 1F 33 09 3A  ORA $3A0933,X
 CE/D581: 1E 06 3A     ASL $3A06,X
 CE/D584: 1F 03 1A 1F  ORA $1F1A03,X
 CE/D588: 06 00        ASL $00
-CE/D58A: 20 14 78     JSR Local_CE7814
-CE/D58D: 5C 70 98 00  JMP Routine_009870
+CE/D58A: 20 14 78     JSR $7814
+CE/D58D: 5C 70 98 00  JMP $009870
 CE/D591: 03 36        ORA $36,S
 CE/D593: 62 02 01     PER $CED698
 CE/D596: 02 1B        COP $1B
@@ -789,13 +789,13 @@ CE/D598: 03 78        ORA $78,S
 CE/D59A: 71 02        ADC ($02),Y
 CE/D59C: 01 03        ORA ($03,X)
 CE/D59E: 01 20        ORA ($20,X)
-CE/D5A0: 80 36        BRA Local_CED5D8
+CE/D5A0: 80 36        BRA $D5D8
 CE/D5A2: 1F 0D 24 01  ORA $01240D,X
 CE/D5A6: 1B           TCS
 CE/D5A7: 00 70        BRK $70
 CE/D5A9: 12 03        ORA ($03)
 CE/D5AB: 36 A8        ROL $A8,X
-CE/D5AD: 10 71        BPL Local_CED620
+CE/D5AD: 10 71        BPL $D620
 CE/D5AF: 36 1F        ROL $1F,X
 CE/D5B1: 0A           ASL
 CE/D5B2: 72 0D        ADC ($0D)
@@ -811,7 +811,7 @@ CE/D5C6: C0 09        CPY #$09
 CE/D5C8: 84 C0        STY $C0
 CE/D5CA: 01 C0        ORA ($C0,X)
 CE/D5CC: 09 85        ORA #$85
-CE/D5CE: 80 01        BRA Local_CED5D1
+CE/D5CE: 80 01        BRA $D5D1
 CE/D5D0: C0 09        CPY #$09
 CE/D5D2: 86 40        STX $40
 CE/D5D4: 01 C0        ORA ($C0,X)

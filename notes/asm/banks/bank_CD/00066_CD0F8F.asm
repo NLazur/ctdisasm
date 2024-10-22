@@ -10,12 +10,12 @@ CD/0F9F: 9C CE CA     STZ $CACE
 CD/0FA2: A6 53        LDX $53
 CD/0FA4: DA           PHX
 CD/0FA5: DA           PHX
-CD/0FA6: 20 E4 11     JSR Local_CD11E4
+CD/0FA6: 20 E4 11     JSR $11E4
 CD/0FA9: AD CE CA     LDA $CACE
 CD/0FAC: 0A           ASL
 CD/0FAD: AA           TAX
 CD/0FAE: E0 06 00     CPX #$0006
-CD/0FB1: D0 13        BNE Local_CD0FC6
+CD/0FB1: D0 13        BNE $0FC6
 CD/0FB3: DA           PHX
 CD/0FB4: 7B           TDC
 CD/0FB5: AA           TAX
@@ -25,7 +25,7 @@ CD/0FBB: 9E E0 30     STZ $30E0,X
 CD/0FBE: E8           INX
 CD/0FBF: E8           INX
 CD/0FC0: E0 20 00     CPX #$0020
-CD/0FC3: D0 F3        BNE Local_CD0FB8
+CD/0FC3: D0 F3        BNE $0FB8
 CD/0FC5: FA           PLX
 CD/0FC6: C2 20        REP #$20
 CD/0FC8: BF F2 EF CE  LDA $CEEFF2,X
@@ -36,7 +36,7 @@ CD/0FD0: A2 00 04     LDX #$0400
 CD/0FD3: 86 53        STX $53
 CD/0FD5: A2 00 2D     LDX #$2D00
 CD/0FD8: A9 7E        LDA #$7E
-CD/0FDA: 20 D2 3E     JSR Local_CD3ED2
+CD/0FDA: 20 D2 3E     JSR $3ED2
 CD/0FDD: EE 0C CD     INC $CD0C
 CD/0FE0: FA           PLX
 CD/0FE1: E8           INX
@@ -44,21 +44,21 @@ CD/0FE2: E8           INX
 CD/0FE3: EE CE CA     INC $CACE
 CD/0FE6: AD CE CA     LDA $CACE
 CD/0FE9: C9 04        CMP #$04
-CD/0FEB: D0 B8        BNE Local_CD0FA5
-CD/0FED: 20 52 10     JSR Local_CD1052
+CD/0FEB: D0 B8        BNE $0FA5
+CD/0FED: 20 52 10     JSR $1052
 CD/0FF0: A2 00 08     LDX #$0800
 CD/0FF3: 86 53        STX $53
 CD/0FF5: A2 00 D0     LDX #$D000
 CD/0FF8: A9 7E        LDA #$7E
 CD/0FFA: A0 00 7C     LDY #$7C00
-CD/0FFD: 20 D2 3E     JSR Local_CD3ED2
+CD/0FFD: 20 D2 3E     JSR $3ED2
 CD/1000: FA           PLX
-CD/1001: 20 7D 10     JSR Local_CD107D
+CD/1001: 20 7D 10     JSR $107D
 CD/1004: 7B           TDC
 CD/1005: A8           TAY
 CD/1006: AD 95 CA     LDA $CA95
 CD/1009: C9 FF        CMP #$FF
-CD/100B: F0 1C        BEQ Local_CD1029
+CD/100B: F0 1C        BEQ $1029
 CD/100D: C2 20        REP #$20
 CD/100F: 0A           ASL
 CD/1010: 0A           ASL
@@ -72,14 +72,14 @@ CD/101E: E8           INX
 CD/101F: C8           INY
 CD/1020: C8           INY
 CD/1021: C0 06 00     CPY #$0006
-CD/1024: D0 ED        BNE Local_CD1013
+CD/1024: D0 ED        BNE $1013
 CD/1026: 7B           TDC
 CD/1027: E2 20        SEP #$20
 CD/1029: 7B           TDC
 CD/102A: A8           TAY
 CD/102B: AD 96 CA     LDA $CA96
 CD/102E: C9 FF        CMP #$FF
-CD/1030: F0 1F        BEQ Local_CD1051
+CD/1030: F0 1F        BEQ $1051
 CD/1032: C2 20        REP #$20
 CD/1034: 29 FF 00     AND #$00FF
 CD/1037: 0A           ASL
@@ -94,7 +94,7 @@ CD/1046: E8           INX
 CD/1047: C8           INY
 CD/1048: C8           INY
 CD/1049: C0 06 00     CPY #$0006
-CD/104C: D0 ED        BNE Local_CD103B
+CD/104C: D0 ED        BNE $103B
 CD/104E: 7B           TDC
 CD/104F: E2 20        SEP #$20
 CD/1051: 60           RTS

@@ -21,7 +21,7 @@ C6/9025: 46 57        LSR $57
 C6/9027: FB           XCE
 C6/9028: 63 1E        ADC $1E,S
 C6/902A: 87 14        STA [$14]
-C6/902C: 22 60 F8 01  JSR Routine_01F860
+C6/902C: 22 60 F8 01  JSR $01F860
 C6/9030: F8           SED
 C6/9031: 01 F8        ORA ($F8,X)
 C6/9033: 01 F8        ORA ($F8,X)

@@ -1,7 +1,7 @@
 ; Bank: D1 | Start Address: 195A
 Routine_D1195A:
 D1/195A: 2E 41 2C     ROL $2C41
-D1/195D: 30 41        BMI Local_D119A0
+D1/195D: 30 41        BMI $19A0
 D1/195F: 2E C1 2C     ROL $2CC1
 D1/1962: 95 00        STA $00,X
 D1/1964: 44 10 28     MVP $10,$28
@@ -21,8 +21,8 @@ D1/1982: 8D 48 43     STA $4348
 D1/1985: 00 8E        BRK $8E
 D1/1987: 88           DEY
 D1/1988: 43 00        EOR $00,S
-D1/198A: 90 F0        BCC Local_D1197C
-D1/198C: F0 44        BEQ Local_D119D2
+D1/198A: 90 F0        BCC $197C
+D1/198C: F0 44        BEQ $19D2
 D1/198E: 01 44        ORA ($44,X)
 D1/1990: 41 64        EOR ($64,X)
 D1/1992: 00 01        BRK $01
@@ -36,7 +36,7 @@ D1/19A0: 41 46        EOR ($46,X)
 D1/19A2: CA           DEX
 D1/19A3: 00 11        BRK $11
 D1/19A5: A8           TAY
-D1/19A6: 80 6A        BRA Local_D11A12
+D1/19A6: 80 6A        BRA $1A12
 D1/19A8: 01 06        ORA ($06,X)
 D1/19AA: 08           PHP
 D1/19AB: 4A           LSR

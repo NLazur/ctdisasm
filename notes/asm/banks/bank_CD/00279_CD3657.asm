@@ -19,6 +19,6 @@ CD/367C: 8B           PHB
 CD/367D: 7B           TDC
 CD/367E: 48           PHA
 CD/367F: AB           PLB
-CD/3680: 20 85 36     JSR Local_CD3685
+CD/3680: 20 85 36     JSR $3685
 CD/3683: AB           PLB
 CD/3684: 60           RTS

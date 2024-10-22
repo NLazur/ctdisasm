@@ -2,7 +2,7 @@
 Routine_C37509:
 C3/7509: 17 23        ORA [$23],Y
 C3/750B: 38           SEC
-C3/750C: 22 48 4F 4E  JSR Routine_4E4F48
+C3/750C: 22 48 4F 4E  JSR $4E4F48
 C3/7510: 4E 45 7F     LSR $7F45
 C3/7513: 73 83        ADC ($83,S),Y
 C3/7515: 38           SEC
@@ -12,7 +12,7 @@ C3/751A: 03 72        ORA $72,S
 C3/751C: 13 BE        ORA ($BE,S),Y
 C3/751E: 03 19        ORA $19,S
 C3/7520: 13 49        ORA ($49,S),Y
-C3/7522: 80 4E        BRA Local_C37572
+C3/7522: 80 4E        BRA $7572
 C3/7524: 55 4B        EOR $4B,X
 C3/7526: 41 49        EOR ($49,X)
 C3/7528: 2F 46 B2 11  AND $11B246
@@ -21,7 +21,7 @@ C3/752E: 12 1D        ORA ($1D)
 C3/7530: 12 40        ORA ($40)
 C3/7532: 4D 4F 4E     EOR $4E4F
 C3/7535: 53 38        EOR ($38,S),Y
-C3/7537: 80 08        BRA Local_C37541
+C3/7537: 80 08        BRA $7541
 C3/7539: 4B           PHK
 C3/753A: 4F 55 50 12  EOR $125055
 C3/753E: 45 42        EOR $42
@@ -29,7 +29,7 @@ C3/7540: 45 2F        EOR $2F
 C3/7542: D5 CC        CMP $CC,X
 C3/7544: 03 54        ORA $54,S
 C3/7546: 00 01        BRK $01
-C3/7548: 20 C9 03     JSR Local_C303C9
+C3/7548: 20 C9 03     JSR $03C9
 C3/754B: 41 32        EOR ($32,X)
 C3/754D: 12 05        ORA ($05)
 C3/754F: 00 FF        BRK $FF
@@ -50,7 +50,7 @@ C3/756D: 9F D1 13 F0  STA $F013D1,X
 C3/7571: 02 F2        COP $F2
 C3/7573: 13 82        ORA ($82,S),Y
 C3/7575: 12 32        ORA ($32)
-C3/7577: 90 60        BCC Local_C375D9
+C3/7577: 90 60        BCC $75D9
 C3/7579: 44 BB 02     MVP $BB,$02
 C3/757C: 19 4E 04     ORA $044E,Y
 C3/757F: 4B           PHK

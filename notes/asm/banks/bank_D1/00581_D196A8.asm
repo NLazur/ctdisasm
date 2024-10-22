@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 96A8
 Routine_D196A8:
-D1/96A8: 50 30        BVC Local_D196DA
+D1/96A8: 50 30        BVC $96DA
 D1/96AA: FF 00 12 12  SBC $121200,X
 D1/96AE: 7F 9D 17 83  ADC $83179D,X
 D1/96B2: 39 89 00     AND $0089,Y
@@ -20,14 +20,14 @@ D1/96CD: 08           PHP
 D1/96CE: A2 B0        LDX #$B0
 D1/96D0: 49 FF        EOR #$FF
 D1/96D2: 01 98        ORA ($98,X)
-D1/96D4: 30 8A        BMI Local_D19660
-D1/96D6: 50 80        BVC Local_D19658
-D1/96D8: 70 00        BVS Local_D196DA
+D1/96D4: 30 8A        BMI $9660
+D1/96D6: 50 80        BVC $9658
+D1/96D8: 70 00        BVS $96DA
 D1/96DA: 8A           TXA
 D1/96DB: 51 80        EOR ($80),Y
-D1/96DD: 70 00        BVS Local_D196DF
+D1/96DD: 70 00        BVS $96DF
 D1/96DF: 95 0F        STA $0F,X
-D1/96E1: B0 41        BCS Local_D19724
+D1/96E1: B0 41        BCS $9724
 D1/96E3: A0 04        LDY #$04
 D1/96E5: CB           WAI
 D1/96E6: EF 96 93 04  SBC $049396
@@ -80,14 +80,14 @@ D1/973E: 00 8B        BRK $8B
 D1/9740: 01 B2        ORA ($B2,X)
 D1/9742: 00 7F        BRK $7F
 D1/9744: 92 8A        STA ($8A)
-D1/9746: 50 80        BVC Local_D196C8
-D1/9748: 70 00        BVS Local_D1974A
+D1/9746: 50 80        BVC $96C8
+D1/9748: 70 00        BVS $974A
 D1/974A: 8A           TXA
 D1/974B: 51 80        EOR ($80),Y
-D1/974D: 70 00        BVS Local_D1974F
+D1/974D: 70 00        BVS $974F
 D1/974F: AB           PLB
 D1/9750: 00 AB        BRK $AB
-D1/9752: 80 88        BRA Local_D196DC
+D1/9752: 80 88        BRA $96DC
 D1/9754: 00 00        BRK $00
 D1/9756: 88           DEY
 D1/9757: 00 00        BRK $00
@@ -129,7 +129,7 @@ D1/979C: A0 03        LDY #$03
 D1/979E: 88           DEY
 D1/979F: 00 A2        BRK $A2
 D1/97A1: 00 80        BRK $80
-D1/97A3: 70 80        BVS Local_D19725
+D1/97A3: 70 80        BVS $9725
 D1/97A5: A7 00        LDA [$00]
 D1/97A7: 00 00        BRK $00
 D1/97A9: 00 DD        BRK $DD
@@ -199,6 +199,6 @@ D1/982D: 9C 80 04     STZ $0480
 D1/9830: 7F 84 9C 20  ADC $209C84,X
 D1/9834: 00 83        BRK $83
 D1/9836: 03 9C        ORA $9C,S
-D1/9838: 20 04 7F     JSR Local_D17F04
+D1/9838: 20 04 7F     JSR $7F04
 D1/983B: 84 9C        STY $9C
 D1/983D: 40           RTI

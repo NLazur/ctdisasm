@@ -35,12 +35,12 @@ C2/729D: 69 40 00     ADC #$0040
 C2/72A0: 85 0A        STA $0A
 C2/72A2: E2 20        SEP #$20
 C2/72A4: C6 00        DEC $00
-C2/72A6: D0 C3        BNE Local_C2726B
+C2/72A6: D0 C3        BNE $726B
 C2/72A8: C2 20        REP #$20
 C2/72AA: E6 0C        INC $0C
 C2/72AC: E6 0C        INC $0C
 C2/72AE: A6 0C        LDX $0C
 C2/72B0: E0 20 00     CPX #$0020
-C2/72B3: D0 A3        BNE Local_C27258
+C2/72B3: D0 A3        BNE $7258
 C2/72B5: E2 20        SEP #$20
 C2/72B7: 60           RTS

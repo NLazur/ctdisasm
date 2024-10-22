@@ -2,9 +2,9 @@
 Routine_C67E45:
 C6/7E45: 6C 04 04     JMP ($0404)
 C6/7E48: 54 01 92     MVN $01,$92
-C6/7E4B: 80 CE        BRA Local_C67E1B
+C6/7E4B: 80 CE        BRA $7E1B
 C6/7E4D: 21 10        AND ($10,X)
-C6/7E4F: 20 00 72     JSR Local_C67200
+C6/7E4F: 20 00 72     JSR $7200
 C6/7E52: 01 D6        ORA ($D6,X)
 C6/7E54: 01 01        ORA ($01,X)
 C6/7E56: 02 61        COP $61

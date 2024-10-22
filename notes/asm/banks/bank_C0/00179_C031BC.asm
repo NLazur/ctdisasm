@@ -1,19 +1,19 @@
 ; Bank: C0 | Start Address: 31BC
 Routine_C031BC:
 C0/31BC: BD 00 1C     LDA $1C00,X
-C0/31BF: F0 FA        BEQ Local_C031BB
+C0/31BF: F0 FA        BEQ $31BB
 C0/31C1: 8D 02 42     STA $4202
 C0/31C4: A4 EB        LDY $EB
 C0/31C6: B9 01 1B     LDA $1B01,Y
 C0/31C9: 89 02        BIT #$02
-C0/31CB: F0 EE        BEQ Local_C031BB
+C0/31CB: F0 EE        BEQ $31BB
 C0/31CD: A6 97        LDX $97
 C0/31CF: BD 00 16     LDA $1600,X
-C0/31D2: F0 2E        BEQ Local_C03202
+C0/31D2: F0 2E        BEQ $3202
 C0/31D4: 3A           DEC
-C0/31D5: F0 40        BEQ Local_C03217
+C0/31D5: F0 40        BEQ $3217
 C0/31D7: 3A           DEC
-C0/31D8: F0 13        BEQ Local_C031ED
+C0/31D8: F0 13        BEQ $31ED
 C0/31DA: B9 81 18     LDA $1881,Y
 C0/31DD: EB           XBA
 C0/31DE: B9 01 18     LDA $1801,Y
@@ -21,28 +21,28 @@ C0/31E1: 1A           INC
 C0/31E2: C2 10        REP #$10
 C0/31E4: AA           TAX
 C0/31E5: BF 40 70 7E  LDA $7E7040,X
-C0/31E9: 30 CE        BMI Local_C031B9
-C0/31EB: 80 3B        BRA Local_C03228
+C0/31E9: 30 CE        BMI $31B9
+C0/31EB: 80 3B        BRA $3228
 C0/31ED: B9 81 18     LDA $1881,Y
 C0/31F0: EB           XBA
 C0/31F1: B9 01 18     LDA $1801,Y
-C0/31F4: F0 C3        BEQ Local_C031B9
+C0/31F4: F0 C3        BEQ $31B9
 C0/31F6: 3A           DEC
 C0/31F7: C2 10        REP #$10
 C0/31F9: AA           TAX
 C0/31FA: BF 40 70 7E  LDA $7E7040,X
-C0/31FE: 30 B9        BMI Local_C031B9
-C0/3200: 80 26        BRA Local_C03228
+C0/31FE: 30 B9        BMI $31B9
+C0/3200: 80 26        BRA $3228
 C0/3202: B9 81 18     LDA $1881,Y
-C0/3205: F0 B2        BEQ Local_C031B9
+C0/3205: F0 B2        BEQ $31B9
 C0/3207: 3A           DEC
 C0/3208: EB           XBA
 C0/3209: B9 01 18     LDA $1801,Y
 C0/320C: C2 10        REP #$10
 C0/320E: AA           TAX
 C0/320F: BF 40 70 7E  LDA $7E7040,X
-C0/3213: 30 A4        BMI Local_C031B9
-C0/3215: 80 11        BRA Local_C03228
+C0/3213: 30 A4        BMI $31B9
+C0/3215: 80 11        BRA $3228
 C0/3217: B9 81 18     LDA $1881,Y
 C0/321A: 1A           INC
 C0/321B: EB           XBA
@@ -50,7 +50,7 @@ C0/321C: B9 01 18     LDA $1801,Y
 C0/321F: C2 10        REP #$10
 C0/3221: AA           TAX
 C0/3222: BF 40 70 7E  LDA $7E7040,X
-C0/3226: 30 91        BMI Local_C031B9
+C0/3226: 30 91        BMI $31B9
 C0/3228: C2 20        REP #$20
 C0/322A: 8A           TXA
 C0/322B: A2 80 17     LDX #$1780

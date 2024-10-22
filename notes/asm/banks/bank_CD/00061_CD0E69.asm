@@ -10,5 +10,5 @@ CD/0E76: F2 80        SBC ($80)
 CD/0E78: 16 20        ASL $20,X
 CD/0E7A: 35 0E        AND $0E,X
 CD/0E7C: A5 55        LDA $55
-CD/0E7E: F0 01        BEQ Local_CD0E81
+CD/0E7E: F0 01        BEQ $0E81
 CD/0E80: 60           RTS

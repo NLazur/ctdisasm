@@ -6,8 +6,8 @@ CE/D757: 00 70        BRK $70
 CE/D759: 0A           ASL
 CE/D75A: 85 C0        STA $C0
 CE/D75C: A8           TAY
-CE/D75D: 10 77        BPL Local_CED7D6
-CE/D75F: 80 0B        BRA Local_CED76C
+CE/D75D: 10 77        BPL $D7D6
+CE/D75F: 80 0B        BRA $D76C
 CE/D761: A8           TAY
 CE/D762: 06 0C        ASL $0C
 CE/D764: C1 0C        CMP ($0C,X)

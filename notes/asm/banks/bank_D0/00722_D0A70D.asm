@@ -1,11 +1,11 @@
 ; Bank: D0 | Start Address: A70D
 Routine_D0A70D:
-D0/A70D: 50 B0        BVC Local_D0A6BF
+D0/A70D: 50 B0        BVC $A6BF
 D0/A70F: E0 00        CPX #$00
 D0/A711: 00 00        BRK $00
 D0/A713: 00 C0        BRK $C0
 D0/A715: E0 B0        CPX #$B0
-D0/A717: 10 00        BPL Local_D0A719
+D0/A717: 10 00        BPL $A719
 D0/A719: 00 00        BRK $00
 D0/A71B: 00 00        BRK $00
 D0/A71D: 01 01        ORA ($01,X)

@@ -24,8 +24,8 @@ FE/5468: 04 11        TSB $11
 FE/546A: 00 C2        BRK $C2
 FE/546C: 11 40        ORA ($40),Y
 FE/546E: 00 80        BRK $80
-FE/5470: 20 40 10     JSR Local_FE1040
-FE/5473: 10 B8        BPL Local_FE542D
+FE/5470: 20 40 10     JSR $1040
+FE/5473: 10 B8        BPL $542D
 FE/5475: 08           PHP
 FE/5476: C8           INY
 FE/5477: 6A           ROR

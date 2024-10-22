@@ -15,7 +15,7 @@ FD/0AB9: 48           PHA
 FD/0ABA: 86 78        STX $78
 FD/0ABC: 66 68        ROR $68
 FD/0ABE: 87 89        STA [$89]
-FD/0AC0: 4C 76 68     JMP Local_FD6876
+FD/0AC0: 4C 76 68     JMP $6876
 FD/0AC3: 08           PHP
 FD/0AC4: 00 24        BRK $24
 FD/0AC6: 01 44        ORA ($44,X)

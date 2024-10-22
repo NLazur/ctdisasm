@@ -11,6 +11,6 @@ C2/ECB8: 9D 41 00     STA $0041,X
 C2/ECBB: E8           INX
 C2/ECBC: E8           INX
 C2/ECBD: 88           DEY
-C2/ECBE: D0 F5        BNE Local_C2ECB5
+C2/ECBE: D0 F5        BNE $ECB5
 C2/ECC0: 28           PLP
 C2/ECC1: 60           RTS

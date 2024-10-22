@@ -9,7 +9,7 @@ C3/55E4: A9 F6        LDA #$F6
 C3/55E6: 84 85        STY $85
 C3/55E8: 4E 80 EE     LSR $EE80
 C3/55EB: 00 85        BRK $85
-C3/55ED: 4C E6 4E     JMP Local_C34EE6
+C3/55ED: 4C E6 4E     JMP $4EE6
 C3/55F0: AE 02 0B     LDX $0B02
 C3/55F3: 86 00        STX $00
 C3/55F5: 15 AE        ORA $AE,X
@@ -20,12 +20,12 @@ C3/55FD: 02 AB        COP $AB
 C3/55FF: C7 23        CMP [$23]
 C3/5601: 09 23        ORA #$23
 C3/5603: 29 F8        AND #$F8
-C3/5605: F0 22        BEQ Local_C35629
+C3/5605: F0 22        BEQ $5629
 C3/5607: 00 29        BRK $29
-C3/5609: F0 F0        BEQ Local_C355FB
+C3/5609: F0 F0        BEQ $55FB
 C3/560B: 21 29        AND ($29,X)
 C3/560D: E8           INX
-C3/560E: F0 20        BEQ Local_C35630
+C3/560E: F0 20        BEQ $5630
 C3/5610: 00 29        BRK $29
 C3/5612: E0 F0        CPX #$F0
 C3/5614: 13 29        ORA ($29,S),Y
@@ -37,7 +37,7 @@ C3/561C: E8           INX
 C3/561D: 11 29        ORA ($29),Y
 C3/561F: E8           INX
 C3/5620: E8           INX
-C3/5621: 10 A0        BPL Local_C355C3
+C3/5621: 10 A0        BPL $55C3
 C3/5623: 29 E0        AND #$E0
 C3/5625: E8           INX
 C3/5626: 09 3B        ORA #$3B
@@ -76,12 +76,12 @@ C3/565B: 3F 63 00 3E  AND $3E0063,X
 C3/565F: 63 00        ADC $00,S
 C3/5661: AA           TAX
 C3/5662: 3D 63 00     AND $0063,X
-C3/5665: 3C 63 00     BIT Local_C30063,X
+C3/5665: 3C 63 00     BIT $0063,X
 C3/5668: 2F 63 00 2E  AND $2E0063
 C3/566C: 63 00        ADC $00,S
 C3/566E: AA           TAX
 C3/566F: 2D 63 00     AND $0063
-C3/5672: 2C 63 10     BIT Local_C31063
+C3/5672: 2C 63 10     BIT $1063
 C3/5675: 1F 84 00 1E  ORA $1E0084,X
 C3/5679: 84 00        STY $00
 C3/567B: AA           TAX
@@ -93,29 +93,29 @@ C3/5688: 0A           ASL
 C3/5689: 0D 84 00     ORA $0084
 C3/568C: 0C 84 00     TSB $0084
 C3/568F: 0C 35 29     TSB $2935
-C3/5692: 10 00        BPL Local_C35694
+C3/5692: 10 00        BPL $5694
 C3/5694: F8           SED
 C3/5695: 37 29        AND [$29],Y
 C3/5697: 08           PHP
 C3/5698: E8           INX
 C3/5699: 34 29        BIT $29,X
 C3/569B: 00 54        BRK $54
-C3/569D: F0 5F        BEQ Local_C356FE
+C3/569D: F0 5F        BEQ $56FE
 C3/569F: B1 00        LDA ($00),Y
 C3/56A1: 5E B1 00     LSR $00B1,X
 C3/56A4: 5D B1 00     EOR $00B1,X
-C3/56A7: 5C 55 B1 00  JMP Routine_00B155
+C3/56A7: 5C 55 B1 00  JMP $00B155
 C3/56AB: 4F B1 00 4E  EOR $4E00B1
 C3/56AF: B1 00        LDA ($00),Y
 C3/56B1: 4D B1 00     EOR $00B1
-C3/56B4: 4C 01 B1     JMP Local_C3B101
+C3/56B4: 4C 01 B1     JMP $B101
 C3/56B7: 00 10        BRK $10
 C3/56B9: 36 29        ROL $29,X
 C3/56BB: 00 E0        BRK $E0
 C3/56BD: 37 29        AND [$29],Y
 C3/56BF: AA           TAX
-C3/56C0: 10 2D        BPL Local_C356EF
-C3/56C2: 20 27 DE     JSR Local_C3DE27
+C3/56C0: 10 2D        BPL $56EF
+C3/56C2: 20 27 DE     JSR $DE27
 C3/56C5: 00 26        BRK $26
 C3/56C7: DE 00 25     DEC $2500,X
 C3/56CA: DE 00 AA     DEC $AA00,X
@@ -129,7 +129,7 @@ C3/56DC: 00 07        BRK $07
 C3/56DE: 29 F8        AND #$F8
 C3/56E0: E0 06        CPX #$06
 C3/56E2: 29 00        AND #$00
-C3/56E4: F0 E0        BEQ Local_C356C6
+C3/56E4: F0 E0        BEQ $56C6
 C3/56E6: 05 29        ORA $29
 C3/56E8: E8           INX
 C3/56E9: E0 04        CPX #$04
@@ -137,7 +137,7 @@ C3/56EB: 29 00        AND #$00
 C3/56ED: E0 E0        CPX #$E0
 C3/56EF: 0B           PHD
 C3/56F0: 36 29        ROL $29,X
-C3/56F2: 10 F0        BPL Local_C356E4
+C3/56F2: 10 F0        BPL $56E4
 C3/56F4: 37 55        AND [$55],Y
 C3/56F6: 66 00        ROR $00
 C3/56F8: 5B           TCD
@@ -163,11 +163,11 @@ C3/571D: F8           SED
 C3/571E: 51 29        EOR ($29),Y
 C3/5720: E8           INX
 C3/5721: F8           SED
-C3/5722: 50 29        BVC Local_C3574D
+C3/5722: 50 29        BVC $574D
 C3/5724: A8           TAY
 C3/5725: E0 F8        CPX #$F8
 C3/5727: 43 9B        EOR $9B,S
 C3/5729: 00 42        BRK $42
-C3/572B: 4C 01 41     JMP Local_C34101
-C3/572E: 4C 01 AA     JMP Local_C3AA01
+C3/572B: 4C 01 41     JMP $4101
+C3/572E: 4C 01 AA     JMP $AA01
 C3/5731: 40           RTI

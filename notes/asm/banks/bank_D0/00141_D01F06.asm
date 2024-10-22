@@ -2,8 +2,8 @@
 Routine_D01F06:
 D0/1F06: 7F 40 E0 C0  ADC $C0E040,X
 D0/1F0A: C0 C0        CPY #$C0
-D0/1F0C: 80 80        BRA Local_D01E8E
-D0/1F0E: 80 80        BRA Local_D01E90
+D0/1F0C: 80 80        BRA $1E8E
+D0/1F0E: 80 80        BRA $1E90
 D0/1F10: E2 10        SEP #$10
 D0/1F12: EA           NOP
 D0/1F13: 18           CLC
@@ -24,10 +24,10 @@ D0/1F31: 05 15        ORA $15
 D0/1F33: 05 13        ORA $13
 D0/1F35: 01 13        ORA ($13,X)
 D0/1F37: 01 10        ORA ($10,X)
-D0/1F39: 10 10        BPL Local_D01F4B
+D0/1F39: 10 10        BPL $1F4B
 D0/1F3B: 18           CLC
 D0/1F3C: 1A           INC
 D0/1F3D: 12 16        ORA ($16)
 D0/1F3F: 16 E0        ASL $E0,X
-D0/1F41: 20 E0 60     JSR Local_D060E0
+D0/1F41: 20 E0 60     JSR $60E0
 D0/1F44: 60           RTS

@@ -2,29 +2,29 @@
 Routine_C21FCC:
 C2/1FCC: A4 10        LDY $10
 C2/1FCE: B9 00 00     LDA $0000,Y
-C2/1FD1: F0 20        BEQ Local_C21FF3
-C2/1FD3: 30 0F        BMI Local_C21FE4
+C2/1FD1: F0 20        BEQ $1FF3
+C2/1FD3: 30 0F        BMI $1FE4
 C2/1FD5: AA           TAX
 C2/1FD6: BF 62 20 C2  LDA $C22062,X
-C2/1FDA: F0 02        BEQ Local_C21FDE
+C2/1FDA: F0 02        BEQ $1FDE
 C2/1FDC: E6 08        INC $08
 C2/1FDE: BB           TYX
 C2/1FDF: FE 00 00     INC $0000,X
-C2/1FE2: 80 0F        BRA Local_C21FF3
+C2/1FE2: 80 0F        BRA $1FF3
 C2/1FE4: 29 3F        AND #$3F
 C2/1FE6: AA           TAX
 C2/1FE7: BF 62 20 C2  LDA $C22062,X
-C2/1FEB: F0 02        BEQ Local_C21FEF
+C2/1FEB: F0 02        BEQ $1FEF
 C2/1FED: C6 08        DEC $08
 C2/1FEF: BB           TYX
 C2/1FF0: DE 00 00     DEC $0000,X
 C2/1FF3: A4 13        LDY $13
 C2/1FF5: B9 00 00     LDA $0000,Y
-C2/1FF8: F0 36        BEQ Local_C22030
-C2/1FFA: 30 1A        BMI Local_C22016
+C2/1FF8: F0 36        BEQ $2030
+C2/1FFA: 30 1A        BMI $2016
 C2/1FFC: AA           TAX
 C2/1FFD: BF 62 20 C2  LDA $C22062,X
-C2/2001: F0 0D        BEQ Local_C22010
+C2/2001: F0 0D        BEQ $2010
 C2/2003: C2 20        REP #$20
 C2/2005: A5 08        LDA $08
 C2/2007: 18           CLC
@@ -34,11 +34,11 @@ C2/200D: 7B           TDC
 C2/200E: E2 20        SEP #$20
 C2/2010: BB           TYX
 C2/2011: FE 00 00     INC $0000,X
-C2/2014: 80 1A        BRA Local_C22030
+C2/2014: 80 1A        BRA $2030
 C2/2016: 29 3F        AND #$3F
 C2/2018: AA           TAX
 C2/2019: BF 62 20 C2  LDA $C22062,X
-C2/201D: F0 0D        BEQ Local_C2202C
+C2/201D: F0 0D        BEQ $202C
 C2/201F: C2 20        REP #$20
 C2/2021: A5 08        LDA $08
 C2/2023: 38           SEC
@@ -50,22 +50,22 @@ C2/202C: BB           TYX
 C2/202D: DE 00 00     DEC $0000,X
 C2/2030: A4 16        LDY $16
 C2/2032: B9 00 00     LDA $0000,Y
-C2/2035: F0 2A        BEQ Local_C22061
-C2/2037: 30 14        BMI Local_C2204D
+C2/2035: F0 2A        BEQ $2061
+C2/2037: 30 14        BMI $204D
 C2/2039: AA           TAX
 C2/203A: BF 62 20 C2  LDA $C22062,X
-C2/203E: F0 07        BEQ Local_C22047
+C2/203E: F0 07        BEQ $2047
 C2/2040: A5 09        LDA $09
 C2/2042: 18           CLC
 C2/2043: 69 04        ADC #$04
 C2/2045: 85 09        STA $09
 C2/2047: BB           TYX
 C2/2048: FE 00 00     INC $0000,X
-C2/204B: 80 14        BRA Local_C22061
+C2/204B: 80 14        BRA $2061
 C2/204D: 29 3F        AND #$3F
 C2/204F: AA           TAX
 C2/2050: BF 62 20 C2  LDA $C22062,X
-C2/2054: F0 07        BEQ Local_C2205D
+C2/2054: F0 07        BEQ $205D
 C2/2056: A5 09        LDA $09
 C2/2058: 38           SEC
 C2/2059: E9 04        SBC #$04

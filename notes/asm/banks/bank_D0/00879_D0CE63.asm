@@ -1,15 +1,15 @@
 ; Bank: D0 | Start Address: CE63
 Routine_D0CE63:
-D0/CE63: 80 D0        BRA Local_D0CE35
+D0/CE63: 80 D0        BRA $CE35
 D0/CE65: E0 E8        CPX #$E8
-D0/CE67: F0 68        BEQ Local_D0CED1
-D0/CE69: F0 94        BEQ Local_D0CDFF
+D0/CE67: F0 68        BEQ $CED1
+D0/CE69: F0 94        BEQ $CDFF
 D0/CE6B: 68           PLA
 D0/CE6C: E4 18        CPX $18
 D0/CE6E: 18           CLC
 D0/CE6F: 00 60        BRK $60
-D0/CE71: 80 E0        BRA Local_D0CE53
-D0/CE73: F0 F0        BEQ Local_D0CE65
+D0/CE71: 80 E0        BRA $CE53
+D0/CE73: F0 F0        BEQ $CE65
 D0/CE75: 68           PLA
 D0/CE76: 18           CLC
 D0/CE77: 00 1F        BRK $1F

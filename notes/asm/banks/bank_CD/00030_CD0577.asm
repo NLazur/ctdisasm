@@ -16,7 +16,7 @@ CD/058F: AA           TAX
 CD/0590: 7B           TDC
 CD/0591: E2 20        SEP #$20
 CD/0593: E0 95 01     CPX #$0195
-CD/0596: D0 E1        BNE Local_CD0579
+CD/0596: D0 E1        BNE $0579
 CD/0598: C2 20        REP #$20
 CD/059A: AD F5 C8     LDA $C8F5
 CD/059D: 18           CLC

@@ -13,13 +13,13 @@ CF/B4BB: 0A           ASL
 CF/B4BC: 72 0A        ADC ($0A)
 CF/B4BE: 75 0A        ADC $0A,X
 CF/B4C0: 1C 20 1C     TRB $1C20
-CF/B4C3: 20 1C 20     JSR Local_CF201C
+CF/B4C3: 20 1C 20     JSR $201C
 CF/B4C6: 78           SEI
 CF/B4C7: 0A           ASL
 CF/B4C8: 7B           TDC
 CF/B4C9: 0A           ASL
 CF/B4CA: 7E 0A 1C     ROR $1C0A,X
-CF/B4CD: 20 81 0A     JSR Local_CF0A81
+CF/B4CD: 20 81 0A     JSR $0A81
 CF/B4D0: 84 0A        STY $0A
 CF/B4D2: 87 0A        STA [$0A]
 CF/B4D4: 1C 20 8A     TRB $8A20
@@ -41,7 +41,7 @@ CF/B4EF: 0A           ASL
 CF/B4F0: AA           TAX
 CF/B4F1: 0A           ASL
 CF/B4F2: AD 0A 3A     LDA $3A0A
-CF/B4F5: 20 B0 2A     JSR Local_CF2AB0
+CF/B4F5: 20 B0 2A     JSR $2AB0
 CF/B4F8: B2 0A        LDA ($0A)
 CF/B4FA: B5 0A        LDA $0A,X
 CF/B4FC: B8           CLV
@@ -59,10 +59,10 @@ CF/B50C: CD 2A CF     CMP $CF2A
 CF/B50F: 2A           ROL
 CF/B510: 3A           DEC
 CF/B511: A0 1C        LDY #$1C
-CF/B513: 20 D1 2A     JSR Local_CF2AD1
+CF/B513: 20 D1 2A     JSR $2AD1
 CF/B516: D3 2A        CMP ($2A,S),Y
 CF/B518: 1C 20 1C     TRB $1C20
-CF/B51B: 20 1C 20     JSR Local_CF201C
+CF/B51B: 20 1C 20     JSR $201C
 CF/B51E: 1C 20 D5     TRB $D520
 CF/B521: 0A           ASL
 CF/B522: D8           CLD
@@ -79,20 +79,20 @@ CF/B532: EA           NOP
 CF/B533: 2A           ROL
 CF/B534: EC 2A EE     CPX $EE2A
 CF/B537: 2A           ROL
-CF/B538: F0 2A        BEQ Local_CFB564
+CF/B538: F0 2A        BEQ $B564
 CF/B53A: F2 2A        SBC ($2A)
 CF/B53C: F4 2A 1C     PEA $1C2A
-CF/B53F: 20 1C 20     JSR Local_CF201C
+CF/B53F: 20 1C 20     JSR $201C
 CF/B542: 1C 20 F6     TRB $F620
 CF/B545: 2A           ROL
 CF/B546: 1C 20 1C     TRB $1C20
-CF/B549: 20 1C 20     JSR Local_CF201C
+CF/B549: 20 1C 20     JSR $201C
 CF/B54C: F8           SED
 CF/B54D: 2A           ROL
 CF/B54E: FA           PLX
 CF/B54F: 2A           ROL
 CF/B550: FC 2A 02     JSR ($022A,X)
-CF/B553: 20 AB 02     JSR Local_CF02AB
+CF/B553: 20 AB 02     JSR $02AB
 CF/B556: AE 02 FE     LDX $FE02
 CF/B559: 2A           ROL
 CF/B55A: 00 2B        BRK $2B
@@ -106,7 +106,7 @@ CF/B566: 0A           ASL
 CF/B567: 2B           PLD
 CF/B568: 0C 2B 0E     TSB $0E2B
 CF/B56B: 2B           PLD
-CF/B56C: 10 2B        BPL Local_CFB599
+CF/B56C: 10 2B        BPL $B599
 CF/B56E: 12 2B        ORA ($2B)
 CF/B570: 14 2B        TRB $2B
 CF/B572: 16 2B        ASL $2B,X
@@ -117,10 +117,10 @@ CF/B579: 2B           PLD
 CF/B57A: 1A           INC
 CF/B57B: 2B           PLD
 CF/B57C: 1C 2B 1C     TRB $1C2B
-CF/B57F: 20 1C 20     JSR Local_CF201C
+CF/B57F: 20 1C 20     JSR $201C
 CF/B582: 1E 2B 20     ASL $202B,X
 CF/B585: 2B           PLD
-CF/B586: 22 2B 24 2B  JSR Routine_2B242B
+CF/B586: 22 2B 24 2B  JSR $2B242B
 CF/B58A: 26 2B        ROL $2B
 CF/B58C: 28           PLP
 CF/B58D: 2B           PLD
@@ -142,7 +142,7 @@ CF/B5A6: 38           SEC
 CF/B5A7: 2B           PLD
 CF/B5A8: 3A           DEC
 CF/B5A9: 2B           PLD
-CF/B5AA: 3C 2B 3E     BIT Local_CF3E2B,X
+CF/B5AA: 3C 2B 3E     BIT $3E2B,X
 CF/B5AD: 2B           PLD
 CF/B5AE: 1C 20 C1     TRB $C120
 CF/B5B1: 02 C4        COP $C4
@@ -154,15 +154,15 @@ CF/B5BA: 42 2B        WDM $2B
 CF/B5BC: 44 2B 46     MVP $2B,$46
 CF/B5BF: 2B           PLD
 CF/B5C0: 1C 20 1C     TRB $1C20
-CF/B5C3: 20 1C 20     JSR Local_CF201C
+CF/B5C3: 20 1C 20     JSR $201C
 CF/B5C6: 1C 20 1C     TRB $1C20
-CF/B5C9: 20 1C 20     JSR Local_CF201C
+CF/B5C9: 20 1C 20     JSR $201C
 CF/B5CC: 1C 20 1C     TRB $1C20
-CF/B5CF: 20 48 2B     JSR Local_CF2B48
+CF/B5CF: 20 48 2B     JSR $2B48
 CF/B5D2: 4A           LSR
 CF/B5D3: 2B           PLD
 CF/B5D4: 1C 20 1C     TRB $1C20
-CF/B5D7: 20 4C 2B     JSR Local_CF2B4C
+CF/B5D7: 20 4C 2B     JSR $2B4C
 CF/B5DA: 4E 2B 50     LSR $502B
 CF/B5DD: 2B           PLD
 CF/B5DE: 52 2B        EOR ($2B)
@@ -193,7 +193,7 @@ CF/B60C: 6A           ROR
 CF/B60D: 2B           PLD
 CF/B60E: 6C 2B 6E     JMP ($6E2B)
 CF/B611: 2B           PLD
-CF/B612: 70 2B        BVS Local_CFB63F
+CF/B612: 70 2B        BVS $B63F
 CF/B614: 72 2B        ADC ($2B)
 CF/B616: 1C 20 74     TRB $7420
 CF/B619: 2B           PLD

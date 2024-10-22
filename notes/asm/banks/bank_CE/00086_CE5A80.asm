@@ -18,7 +18,7 @@ CE/5AA1: 00 0A        BRK $0A
 CE/5AA3: 41 1E        EOR ($1E,X)
 CE/5AA5: 06 41        ASL $41
 CE/5AA7: 1F 07 35 00  ORA $003507,X
-CE/5AAB: D0 F8        BNE Local_CE5AA5
+CE/5AAB: D0 F8        BNE $5AA5
 CE/5AAD: C0 00 C3     CPY #$C300
 CE/5AB0: 5A           PHY
 CE/5AB1: 77 55        ADC [$55],Y

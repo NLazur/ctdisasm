@@ -37,14 +37,14 @@ FD/127F: 52 28        EOR ($28)
 FD/1281: 1B           TCS
 FD/1282: C4 EB        CPY $EB
 FD/1284: 00 00        BRK $00
-FD/1286: B0 20        BCS Local_FD12A8
-FD/1288: F0 60        BEQ Local_FD12EA
-FD/128A: B0 E0        BCS Local_FD126C
-FD/128C: 10 C0        BPL Local_FD124E
+FD/1286: B0 20        BCS $12A8
+FD/1288: F0 60        BEQ $12EA
+FD/128A: B0 E0        BCS $126C
+FD/128C: 10 C0        BPL $124E
 FD/128E: 00 30        BRK $30
 FD/1290: E0 F0        CPX #$F0
 FD/1292: E0 A0        CPX #$A0
-FD/1294: 80 C0        BRA Local_FD1256
+FD/1294: 80 C0        BRA $1256
 FD/1296: 00 80        BRK $80
 FD/1298: C0 60 80     CPY #$8060
 FD/129B: 40           RTI

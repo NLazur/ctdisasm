@@ -2,25 +2,25 @@
 Routine_C318CD:
 C3/18CD: 24 B0        BIT $B0
 C3/18CF: A1 23        LDA ($23,X)
-C3/18D1: 30 DA        BMI Local_C318AD
+C3/18D1: 30 DA        BMI $18AD
 C3/18D3: BB           TYX
 C3/18D4: C8           INY
 C3/18D5: 9E E5 01     STZ $01E5,X
 C3/18D8: 3E 2F 20     ROL $202F,X
 C3/18DB: 8D 29 00     STA $0029
 C3/18DE: E9 29        SBC #$29
-C3/18E0: 10 4B        BPL Local_C3192D
+C3/18E0: 10 4B        BPL $192D
 C3/18E2: 07 FC        ORA [$FC]
-C3/18E4: F0 00        BEQ Local_C318E6
+C3/18E4: F0 00        BEQ $18E6
 C3/18E6: 7C 00 00     JMP ($0000,X)
 C3/18E9: AE 02 42     LDX $4202
 C3/18EC: 86 F0        STX $F0
-C3/18EE: 22 F7 FF 44  JSR Routine_44FFF7
+C3/18EE: 22 F7 FF 44  JSR $44FFF7
 C3/18F2: FD A6 3A     SBC $3AA6,X
 C3/18F5: 16 60        ASL $60,X
-C3/18F7: 20 70 15     JSR Local_C31570
+C3/18F7: 20 70 15     JSR $1570
 C3/18FA: 07 00        ORA [$00]
-C3/18FC: 20 8E 02     JSR Local_C3028E
+C3/18FC: 20 8E 02     JSR $028E
 C3/18FF: 21 9C        AND ($9C,X)
 C3/1901: 74 39        STZ $39,X
 C3/1903: 07 04        ORA [$04]
@@ -33,7 +33,7 @@ C3/1912: 07 80        ORA [$80]
 C3/1914: 03 21        ORA $21,S
 C3/1916: A5 10        LDA $10
 C3/1918: 8D 02 21     STA $2102
-C3/191B: 90 17        BCC Local_C31934
+C3/191B: 90 17        BCC $1934
 C3/191D: 0A           ASL
 C3/191E: 11 44        ORA ($44),Y
 C3/1920: 27 60        AND [$60]
@@ -44,10 +44,10 @@ C3/1927: 1B           TCS
 C3/1928: 18           CLC
 C3/1929: 21 A9        AND ($A9,X)
 C3/192B: E0 B0 07     CPX #$07B0
-C3/192E: 3C 00 A9     BIT Local_C3A900,X
+C3/192E: 3C 00 A9     BIT $A900,X
 C3/1931: 34 8D        BIT $8D,X
 C3/1933: 4A           LSR
 C3/1934: 71 3B        ADC ($3B),Y
-C3/1936: 50 00        BVC Local_C31938
+C3/1936: 50 00        BVC $1938
 C3/1938: 3B           TSC
 C3/1939: 40           RTI

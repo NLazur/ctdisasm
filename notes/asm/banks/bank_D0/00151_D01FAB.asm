@@ -1,13 +1,13 @@
 ; Bank: D0 | Start Address: 1FAB
 Routine_D01FAB:
 D0/1FAB: E8           INX
-D0/1FAC: 70 E0        BVS Local_D01F8E
-D0/1FAE: 80 A0        BRA Local_D01F50
+D0/1FAC: 70 E0        BVS $1F8E
+D0/1FAE: 80 A0        BRA $1F50
 D0/1FB0: 04 04        TSB $04
 D0/1FB2: 04 0C        TSB $0C
 D0/1FB4: 08           PHP
 D0/1FB5: 18           CLC
-D0/1FB6: 10 60        BPL Local_D02018
+D0/1FB6: 10 60        BPL $2018
 D0/1FB8: 00 00        BRK $00
 D0/1FBA: 00 00        BRK $00
 D0/1FBC: 00 00        BRK $00
@@ -28,7 +28,7 @@ D0/1FD9: 03 23        ORA $23,S
 D0/1FDB: 0C 40 7F     TSB $7F40
 D0/1FDE: FF 00 00 00  SBC $000000,X
 D0/1FE2: 1F 03 FC 30  ORA $30FC03,X
-D0/1FE6: 80 00        BRA Local_D01FE8
+D0/1FE6: 80 00        BRA $1FE8
 D0/1FE8: 00 00        BRK $00
 D0/1FEA: F8           SED
 D0/1FEB: 00 0F        BRK $0F
@@ -36,7 +36,7 @@ D0/1FED: 0F 4F 70 03  ORA $03704F
 D0/1FF1: FC FF 00     JSR ($00FF,X)
 D0/1FF4: FF 00 FF 00  SBC $00FF00,X
 D0/1FF8: 00 FF        BRK $FF
-D0/1FFA: F0 80        BEQ Local_D01F7C
+D0/1FFA: F0 80        BEQ $1F7C
 D0/1FFC: 00 00        BRK $00
 D0/1FFE: 00 00        BRK $00
 D0/2000: 00 00        BRK $00

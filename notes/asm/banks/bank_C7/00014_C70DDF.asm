@@ -15,7 +15,7 @@ C7/0DF2: CB           WAI
 C7/0DF3: F9 C2 CB     SBC $CBC2,Y
 C7/0DF6: 53 CC        EOR ($CC,S),Y
 C7/0DF8: CB           WAI
-C7/0DF9: 4C CD CB     JMP Local_C7CBCD
+C7/0DF9: 4C CD CB     JMP $CBCD
 C7/0DFC: BD CD CB     LDA $CBCD,X
 C7/0DFF: 33 CE        AND ($CE,S),Y
 C7/0E01: CB           WAI

@@ -41,5 +41,5 @@ C3/B8F1: 26 F0        ROL $F0
 C3/B8F3: 26 20        ROL $20
 C3/B8F5: 28           PLP
 C3/B8F6: 83 42        STA $42,S
-C3/B8F8: F0 42        BEQ Local_C3B93C
+C3/B8F8: F0 42        BEQ $B93C
 C3/B8FA: 60           RTS

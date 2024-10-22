@@ -1,10 +1,10 @@
 ; Bank: FF | Start Address: 33A0
 Routine_FF33A0:
-FF/33A0: 70 60        BVS Local_FF3402
-FF/33A2: 70 60        BVS Local_FF3404
-FF/33A4: 70 60        BVS Local_FF3406
+FF/33A0: 70 60        BVS $3402
+FF/33A2: 70 60        BVS $3404
+FF/33A4: 70 60        BVS $3406
 FF/33A6: 78           SEI
-FF/33A7: 30 30        BMI Local_FF33D9
+FF/33A7: 30 30        BMI $33D9
 FF/33A9: 08           PHP
 FF/33AA: 00 00        BRK $00
 FF/33AC: 00 00        BRK $00

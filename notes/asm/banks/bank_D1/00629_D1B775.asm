@@ -20,19 +20,19 @@ D1/B790: 96 97        STX $97,Y
 D1/B792: D7 D6        CMP [$D6],Y
 D1/B794: D5 D4        CMP $D4,X
 D1/B796: 01 0F        ORA ($0F,X)
-D1/B798: F0 3E        BEQ Local_D1B7D8
+D1/B798: F0 3E        BEQ $B7D8
 D1/B79A: 7C 70 0E     JMP ($0E70,X)
 D1/B79D: E0 07        CPX #$07
 D1/B79F: C0 03        CPY #$03
 D1/B7A1: C0 03        CPY #$03
 D1/B7A3: 81 81        STA ($81,X)
-D1/B7A5: 80 01        BRA Local_D1B7A8
+D1/B7A5: 80 01        BRA $B7A8
 D1/B7A7: C0 03        CPY #$03
 D1/B7A9: C0 03        CPY #$03
 D1/B7AB: E0 07        CPX #$07
-D1/B7AD: 70 0E        BVS Local_D1B7BD
+D1/B7AD: 70 0E        BVS $B7BD
 D1/B7AF: 3E 7C 0F     ROL $0F7C,X
-D1/B7B2: F0 04        BEQ Local_D1B7B8
+D1/B7B2: F0 04        BEQ $B7B8
 D1/B7B4: 05 06        ORA $06
 D1/B7B6: 07 47        ORA [$47]
 D1/B7B8: 46 45        LSR $45

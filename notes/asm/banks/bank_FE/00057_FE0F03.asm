@@ -10,13 +10,13 @@ FE/0F0F: 0E 87 10     ASL $1087
 FE/0F12: 36 F8        ROL $F8,X
 FE/0F14: 81 50        STA ($50,X)
 FE/0F16: FE 07 80     INC $8007,X
-FE/0F19: 20 08 10     JSR Local_FE1008
+FE/0F19: 20 08 10     JSR $1008
 FE/0F1C: 8B           PHB
 FE/0F1D: FD 7E 7C     SBC $7C7E,X
 FE/0F20: 39 1E 7A     AND $7A1E,Y
 FE/0F23: 11 03        ORA ($03),Y
 FE/0F25: FC 9F 86     JSR ($869F,X)
-FE/0F28: B0 B8        BCS Local_FE0EE2
+FE/0F28: B0 B8        BCS $0EE2
 FE/0F2A: F8           SED
 FE/0F2B: 04 FE        TSB $FE
 FE/0F2D: 01 F8        ORA ($F8,X)
@@ -29,7 +29,7 @@ FE/0F37: B5 7A        LDA $7A,X
 FE/0F39: 0A           ASL
 FE/0F3A: 06 0C        ASL $0C
 FE/0F3C: 84 03        STY $03
-FE/0F3E: 2C F8 7B     BIT Local_FE7BF8
+FE/0F3E: 2C F8 7B     BIT $7BF8
 FE/0F41: 88           DEY
 FE/0F42: 03 E3        ORA $E3,S
 FE/0F44: 85 01        STA $01

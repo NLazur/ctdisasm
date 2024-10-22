@@ -12,7 +12,7 @@ C7/253F: 1F E8 E0 C5  ORA $C5E0E8,X
 C7/2543: A1 1F        LDA ($1F,X)
 C7/2545: E8           INX
 C7/2546: E1 C5        SBC ($C5,X)
-C7/2548: 20 1F E8     JSR Local_C7E81F
+C7/2548: 20 1F E8     JSR $E81F
 C7/254B: 00 C5        BRK $C5
 C7/254D: 21 1F        AND ($1F,X)
 C7/254F: E8           INX

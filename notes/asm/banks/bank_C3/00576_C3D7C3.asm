@@ -1,16 +1,16 @@
 ; Bank: C3 | Start Address: D7C3
 Routine_C3D7C3:
 C3/D7C3: 72 01        ADC ($01)
-C3/D7C5: 10 CE        BPL Local_C3D795
+C3/D7C5: 10 CE        BPL $D795
 C3/D7C7: 39 60 0C     AND $0C60,Y
 C3/D7CA: 02 08        COP $08
 C3/D7CC: 86 3C        STX $3C
 C3/D7CE: E5 00        SBC $00
-C3/D7D0: 20 45 31     JSR Local_C33145
+C3/D7D0: 20 45 31     JSR $3145
 C3/D7D3: A5 49        LDA $49
-C3/D7D5: B0 51        BCS Local_C3D828
+C3/D7D5: B0 51        BCS $D828
 C3/D7D7: 18           CLC
-C3/D7D8: 80 67        BRA Local_C3D841
+C3/D7D8: 80 67        BRA $D841
 C3/D7DA: B6 56        LDX $56,Y
 C3/D7DC: 54 56 5F     MVN $56,$5F
 C3/D7DF: 7E 18 18     ROR $1818,X
@@ -24,12 +24,12 @@ C3/D7EE: 00 40        BRK $40
 C3/D7F0: 0C 20 0C     TSB $0C20
 C3/D7F3: EE 39 00     INC $0039
 C3/D7F6: C6 1C        DEC $1C
-C3/D7F8: 10 3A        BPL Local_C3D834
+C3/D7F8: 10 3A        BPL $D834
 C3/D7FA: 7D 63 2E     ADC $2E63,X
 C3/D7FD: 19 00 F6     ORA $F600,Y
 C3/D800: 25 BA        AND $BA
 C3/D802: 46 21        LSR $21
-C3/D804: 10 52        BPL Local_C3D858
+C3/D804: 10 52        BPL $D858
 C3/D806: 4A           LSR
 C3/D807: 00 BD        BRK $BD
 C3/D809: 7B           TDC
@@ -41,9 +41,9 @@ C3/D812: 1C C4 1C     TRB $1CC4
 C3/D815: A4 1C        LDY $1C
 C3/D817: 84 18        STY $18
 C3/D819: 00 84        BRK $84
-C3/D81B: 10 64        BPL Local_C3D881
-C3/D81D: 10 63        BPL Local_C3D882
-C3/D81F: 10 73        BPL Local_C3D894
+C3/D81B: 10 64        BPL $D881
+C3/D81D: 10 63        BPL $D882
+C3/D81F: 10 73        BPL $D894
 C3/D821: 52 00        EOR ($00)
 C3/D823: CB           WAI
 C3/D824: 39 68 29     AND $2968,Y

@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: 9786
 Routine_FE9786:
-FE/9786: 80 3C        BRA Local_FE97C4
+FE/9786: 80 3C        BRA $97C4
 FE/9788: 00 F1        BRK $F1
 FE/978A: 01 E6        ORA ($E6,X)
 FE/978C: 00 07        BRK $07

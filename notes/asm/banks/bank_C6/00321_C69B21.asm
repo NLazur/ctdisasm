@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 9B21
 Routine_C69B21:
-C6/9B21: 20 01 78     JSR Local_C67801
+C6/9B21: 20 01 78     JSR $7801
 C6/9B24: 11 2D        ORA ($2D),Y
 C6/9B26: 2E 53 01     ROL $0153
 C6/9B29: B5 79        LDA $79,X
@@ -29,7 +29,7 @@ C6/9B56: DB           STP
 C6/9B57: 01 16        ORA ($16,X)
 C6/9B59: 17 19        ORA [$19],Y
 C6/9B5B: 08           PHP
-C6/9B5C: F0 10        BEQ Local_C69B6E
+C6/9B5C: F0 10        BEQ $9B6E
 C6/9B5E: C1 28        CMP ($28,X)
 C6/9B60: 9F 80 51 41  STA $415180,X
 C6/9B64: 11 0E        ORA ($0E),Y

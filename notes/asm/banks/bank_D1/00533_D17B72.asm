@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 7B72
 Routine_D17B72:
-D1/7B72: 80 00        BRA Local_D17B74
+D1/7B72: 80 00        BRA $7B74
 D1/7B74: 0A           ASL
 D1/7B75: 01 91        ORA ($91,X)
 D1/7B77: 08           PHP
@@ -25,17 +25,17 @@ D1/7B9C: 08           PHP
 D1/7B9D: A2 FF        LDX #$FF
 D1/7B9F: 01 91        ORA ($91,X)
 D1/7BA1: 4E 7C 9C     LSR $9C7C
-D1/7BA4: 80 00        BRA Local_D17BA6
+D1/7BA4: 80 00        BRA $7BA6
 D1/7BA6: 9C 80 0F     STZ $0F80
 D1/7BA9: 8A           TXA
-D1/7BAA: 50 80        BVC Local_D17B2C
-D1/7BAC: 70 00        BVS Local_D17BAE
+D1/7BAA: 50 80        BVC $7B2C
+D1/7BAC: 70 00        BVS $7BAE
 D1/7BAE: 8A           TXA
 D1/7BAF: 51 80        EOR ($80),Y
-D1/7BB1: 70 00        BVS Local_D17BB3
+D1/7BB1: 70 00        BVS $7BB3
 D1/7BB3: AB           PLB
 D1/7BB4: 00 AB        BRK $AB
-D1/7BB6: 80 E6        BRA Local_D17B9E
+D1/7BB6: 80 E6        BRA $7B9E
 D1/7BB8: 01 8E        ORA ($8E,X)
 D1/7BBA: 44 10 09     MVP $10,$09
 D1/7BBD: 00 40        BRK $40

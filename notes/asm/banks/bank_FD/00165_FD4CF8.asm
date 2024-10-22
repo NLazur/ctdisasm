@@ -7,7 +7,7 @@ FD/4CFF: 86 40        STX $40
 FD/4D01: 94 19        STY $19,X
 FD/4D03: 17 FF        ORA [$FF],Y
 FD/4D05: 17 E7        ORA [$E7],Y
-FD/4D07: 10 DF        BPL Local_FD4CE8
+FD/4D07: 10 DF        BPL $4CE8
 FD/4D09: 27 07        AND [$07]
 FD/4D0B: 2F E5 1C 00  AND $001CE5
 FD/4D0F: 40           RTI

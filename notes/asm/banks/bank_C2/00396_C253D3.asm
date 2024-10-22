@@ -6,7 +6,7 @@ C2/53D7: 38           SEC
 C2/53D8: BD 2A 00     LDA $002A,X
 C2/53DB: FD 14 00     SBC $0014,X
 C2/53DE: 85 08        STA $08
-C2/53E0: 10 04        BPL Local_C253E6
+C2/53E0: 10 04        BPL $53E6
 C2/53E2: 49 FF FF     EOR #$FFFF
 C2/53E5: 1A           INC
 C2/53E6: EB           XBA
@@ -25,7 +25,7 @@ C2/5405: 38           SEC
 C2/5406: BD 2C 00     LDA $002C,X
 C2/5409: FD 18 00     SBC $0018,X
 C2/540C: 85 0A        STA $0A
-C2/540E: 10 04        BPL Local_C25414
+C2/540E: 10 04        BPL $5414
 C2/5410: 49 FF FF     EOR #$FFFF
 C2/5413: 1A           INC
 C2/5414: EB           XBA
@@ -35,15 +35,15 @@ C2/541A: A9 30        LDA #$30
 C2/541C: 8D 06 42     STA $4206
 C2/541F: C2 20        REP #$20
 C2/5421: A5 08        LDA $08
-C2/5423: 30 04        BMI Local_C25429
+C2/5423: 30 04        BMI $5429
 C2/5425: EA           NOP
 C2/5426: EA           NOP
-C2/5427: 80 03        BRA Local_C2542C
-C2/5429: 20 84 1C     JSR Local_C21C84
+C2/5427: 80 03        BRA $542C
+C2/5429: 20 84 1C     JSR $1C84
 C2/542C: AD 14 42     LDA $4214
 C2/542F: 9D 1F 00     STA $001F,X
 C2/5432: A5 0A        LDA $0A
-C2/5434: 10 03        BPL Local_C25439
-C2/5436: 20 9E 1C     JSR Local_C21C9E
+C2/5434: 10 03        BPL $5439
+C2/5436: 20 9E 1C     JSR $1C9E
 C2/5439: E2 20        SEP #$20
 C2/543B: 60           RTS

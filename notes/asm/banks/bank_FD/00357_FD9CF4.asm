@@ -1,18 +1,18 @@
 ; Bank: FD | Start Address: 9CF4
 Routine_FD9CF4:
 FD/9CF4: 48           PHA
-FD/9CF5: 10 08        BPL Local_FD9CFF
+FD/9CF5: 10 08        BPL $9CFF
 FD/9CF7: 04 38        TSB $38
 FD/9CF9: 0A           ASL
 FD/9CFA: 03 1E        ORA $1E,S
 FD/9CFC: 0D 02 00     ORA $0002
-FD/9CFF: 80 48        BRA Local_FD9D49
-FD/9D01: 10 08        BPL Local_FD9D0B
+FD/9CFF: 80 48        BRA $9D49
+FD/9D01: 10 08        BPL $9D0B
 FD/9D03: 04 38        TSB $38
 FD/9D05: 0E 03 11     ASL $1103
 FD/9D08: 8F 02 00 A0  STA $A00002
 FD/9D0C: 48           PHA
-FD/9D0D: 10 08        BPL Local_FD9D17
+FD/9D0D: 10 08        BPL $9D17
 FD/9D0F: 04 38        TSB $38
 FD/9D11: 12 03        ORA ($03)
 FD/9D13: 15 02        ORA $02,X

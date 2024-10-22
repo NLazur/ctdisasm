@@ -1,21 +1,21 @@
 ; Bank: FE | Start Address: 7546
 Routine_FE7546:
 FE/7546: A0 7C 0A     LDY #$0A7C
-FE/7549: D0 30        BNE Local_FE757B
-FE/754B: F0 10        BEQ Local_FE755D
-FE/754D: F0 00        BEQ Local_FE754F
-FE/754F: 90 B0        BCC Local_FE7501
-FE/7551: D0 00        BNE Local_FE7553
+FE/7549: D0 30        BNE $757B
+FE/754B: F0 10        BEQ $755D
+FE/754D: F0 00        BEQ $754F
+FE/754F: 90 B0        BCC $7501
+FE/7551: D0 00        BNE $7553
 FE/7553: 00 E3        BRK $E3
-FE/7555: 20 E3 00     JSR Local_FE00E3
+FE/7555: 20 E3 00     JSR $00E3
 FE/7558: 00 F3        BRK $F3
 FE/755A: 00 FB        BRK $FB
-FE/755C: 20 FF 30     JSR Local_FE30FF
+FE/755C: 20 FF 30     JSR $30FF
 FE/755F: EF 38 28 E7  SBC $E72838
 FE/7563: 24 7C        BIT $7C
 FE/7565: 2A           ROL
 FE/7566: 06 28        ASL $28
-FE/7568: 80 7A        BRA Local_FE75E4
+FE/7568: 80 7A        BRA $75E4
 FE/756A: A0 60 00     LDY #$0060
 FE/756D: E8           INX
 FE/756E: 18           CLC
@@ -29,18 +29,18 @@ FE/757D: 0E 9A FF     ASL $FF9A
 FE/7580: C0 02        CPY #$02
 FE/7582: E1 C6        SBC ($C6,X)
 FE/7584: 19 80 22     ORA $2280,Y
-FE/7587: 80 80        BRA Local_FE7509
+FE/7587: 80 80        BRA $7509
 FE/7589: A3 02        LDA $02,S
 FE/758B: 0F C8 11 10  ORA $1011C8
 FE/758F: 79 60 59     ADC $5960,Y
 FE/7592: F8           SED
-FE/7593: 10 09        BPL Local_FE759E
+FE/7593: 10 09        BPL $759E
 FE/7595: 0D 03 1E     ORA $1E03
-FE/7598: 80 02        BRA Local_FE759C
+FE/7598: 80 02        BRA $759C
 FE/759A: FC 04 F8     JSR ($F804,X)
 FE/759D: 08           PHP
-FE/759E: F0 F0        BEQ Local_FE7590
-FE/75A0: 20 69 80     JSR Local_FE8069
+FE/759E: F0 F0        BEQ $7590
+FE/75A0: 20 69 80     JSR $8069
 FE/75A3: F5 3B        SBC $3B,X
 FE/75A5: E7 21        SBC [$21]
 FE/75A7: E2 25        SEP #$25
@@ -56,16 +56,16 @@ FE/75BB: 3A           DEC
 FE/75BC: 48           PHA
 FE/75BD: 11 41        ORA ($41),Y
 FE/75BF: 2B           PLD
-FE/75C0: 20 32 33     JSR Local_FE3332
+FE/75C0: 20 32 33     JSR $3332
 FE/75C3: 51 73        EOR ($73),Y
 FE/75C5: 11 10        ORA ($10),Y
 FE/75C7: 52 32        EOR ($32)
-FE/75C9: 50 30        BVC Local_FE75FB
-FE/75CB: 70 2A        BVS Local_FE75F7
+FE/75C9: 50 30        BVC $75FB
+FE/75CB: 70 2A        BVS $75F7
 FE/75CD: 28           PLP
 FE/75CE: 18           CLC
 FE/75CF: 38           SEC
-FE/75D0: 20 08 18     JSR Local_FE1808
+FE/75D0: 20 08 18     JSR $1808
 FE/75D3: 28           PLP
 FE/75D4: 18           CLC
 FE/75D5: 28           PLP
@@ -75,17 +75,17 @@ FE/75DB: FE 00 02     INC $0200,X
 FE/75DE: 48           PHA
 FE/75DF: E3 FE        SBC $FE,S
 FE/75E1: 58           CLI
-FE/75E2: 80 80        BRA Local_FE7564
-FE/75E4: 80 6A        BRA Local_FE7650
+FE/75E2: 80 80        BRA $7564
+FE/75E4: 80 6A        BRA $7650
 FE/75E6: F4 08 00     PEA $0008
 FE/75E9: 1A           INC
 FE/75EA: 06 1C        ASL $1C
 FE/75EC: 24 74        BIT $74
 FE/75EE: 0C E8 18     TSB $18E8
 FE/75F1: 00 B0        BRK $B0
-FE/75F3: 70 C0        BVS Local_FE75B5
+FE/75F3: 70 C0        BVS $75B5
 FE/75F5: C0 E1        CPY #$E1
-FE/75F7: 22 E3 24 C0  JSR Routine_C024E3
+FE/75F7: 22 E3 24 C0  JSR $C024E3
 FE/75FB: FF 01 F2 0E  SBC $0EF201,X
 FE/75FF: FC 3C 58     JSR ($583C,X)
 FE/7602: 1B           TCS

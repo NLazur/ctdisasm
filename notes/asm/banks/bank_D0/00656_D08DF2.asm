@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 8DF2
 Routine_D08DF2:
-D0/8DF2: 20 20 10     JSR Local_D01020
-D0/8DF5: 10 08        BPL Local_D08DFF
+D0/8DF2: 20 20 10     JSR $1020
+D0/8DF5: 10 08        BPL $8DFF
 D0/8DF7: 04 C5        TSB $C5
 D0/8DF9: 7F E5 5F FF  ADC $FF5FE5,X
 D0/8DFD: 24 FB        BIT $FB

@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: B785
 Routine_C0B785:
-C0/B785: 82 B2 0F     BRL Routine_C0C73A
+C0/B785: 82 B2 0F     BRL $C0C73A
 C0/B788: 8B           PHB
 C0/B789: A9 7F 48     LDA #$487F
 C0/B78C: AB           PLB
@@ -29,13 +29,13 @@ C0/B7BD: 0A           ASL
 C0/B7BE: 0A           ASL
 C0/B7BF: 05 E6        ORA $E6
 C0/B7C1: E4 D9        CPX $D9
-C0/B7C3: F0 0B        BEQ Local_C0B7D0
+C0/B7C3: F0 0B        BEQ $B7D0
 C0/B7C5: 85 E5        STA $E5
 C0/B7C7: C2 20        REP #$20
 C0/B7C9: 8A           TXA
 C0/B7CA: 38           SEC
 C0/B7CB: E9 08 00     SBC #$0008
-C0/B7CE: 80 DA        BRA Local_C0B7AA
+C0/B7CE: 80 DA        BRA $B7AA
 C0/B7D0: 09 AA A6     ORA #$A6AA
 C0/B7D3: 6D 9D 00     ADC $009D
 C0/B7D6: 4F A6 D9 A5  EOR $A5D9A6
@@ -44,7 +44,7 @@ C0/B7DC: 59 BD C4     EOR $C4BD,Y
 C0/B7DF: 4B           PHK
 C0/B7E0: 18           CLC
 C0/B7E1: 65 C5        ADC $C5
-C0/B7E3: 90 04        BCC Local_C0B7E9
+C0/B7E3: 90 04        BCC $B7E9
 C0/B7E5: C9 E0 B0     CMP #$B0E0
 C0/B7E8: 02 A9        COP $A9
 C0/B7EA: E0 9D C1     CPX #$C19D
@@ -52,7 +52,7 @@ C0/B7ED: 4B           PHK
 C0/B7EE: BD CC 4B     LDA $4BCC,X
 C0/B7F1: 18           CLC
 C0/B7F2: 65 C5        ADC $C5
-C0/B7F4: 90 04        BCC Local_C0B7FA
+C0/B7F4: 90 04        BCC $B7FA
 C0/B7F6: C9 E0 B0     CMP #$B0E0
 C0/B7F9: 02 A9        COP $A9
 C0/B7FB: E0 9D C9     CPX #$C99D
@@ -60,7 +60,7 @@ C0/B7FE: 4B           PHK
 C0/B7FF: BD D4 4B     LDA $4BD4,X
 C0/B802: 18           CLC
 C0/B803: 65 C5        ADC $C5
-C0/B805: 90 04        BCC Local_C0B80B
+C0/B805: 90 04        BCC $B80B
 C0/B807: C9 E0 B0     CMP #$B0E0
 C0/B80A: 02 A9        COP $A9
 C0/B80C: E0 9D D1     CPX #$D19D
@@ -68,7 +68,7 @@ C0/B80F: 4B           PHK
 C0/B810: BD DC 4B     LDA $4BDC,X
 C0/B813: 18           CLC
 C0/B814: 65 C5        ADC $C5
-C0/B816: 90 04        BCC Local_C0B81C
+C0/B816: 90 04        BCC $B81C
 C0/B818: C9 E0 B0     CMP #$B0E0
 C0/B81B: 02 A9        COP $A9
 C0/B81D: E0 9D D9     CPX #$D99D
@@ -76,7 +76,7 @@ C0/B820: 4B           PHK
 C0/B821: BD E4 4B     LDA $4BE4,X
 C0/B824: 18           CLC
 C0/B825: 65 C5        ADC $C5
-C0/B827: 90 04        BCC Local_C0B82D
+C0/B827: 90 04        BCC $B82D
 C0/B829: C9 E0 B0     CMP #$B0E0
 C0/B82C: 02 A9        COP $A9
 C0/B82E: E0 9D E1     CPX #$E19D

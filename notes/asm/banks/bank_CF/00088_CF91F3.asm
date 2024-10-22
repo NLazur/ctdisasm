@@ -7,7 +7,7 @@ CF/91F8: 4A           LSR
 CF/91F9: 2B           PLD
 CF/91FA: 48           PHA
 CF/91FB: 2B           PLD
-CF/91FC: 4C AB 4C     JMP Local_CF4CAB
+CF/91FC: 4C AB 4C     JMP $4CAB
 CF/91FF: EB           XBA
-CF/9200: 4C 2B 4C     JMP Local_CF4C2B
+CF/9200: 4C 2B 4C     JMP $4C2B
 CF/9203: 6B           RTL

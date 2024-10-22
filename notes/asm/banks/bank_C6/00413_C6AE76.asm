@@ -7,7 +7,7 @@ C6/AE7E: 0B           PHD
 C6/AE7F: 07 58        ORA [$58]
 C6/AE81: 00 CD        BRK $CD
 C6/AE83: 07 01        ORA [$01]
-C6/AE85: 2C 02 05     BIT Local_C60502
+C6/AE85: 2C 02 05     BIT $0502
 C6/AE88: 09 08 E3     ORA #$E308
 C6/AE8B: 28           PLP
 C6/AE8C: 9B           TXY

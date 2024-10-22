@@ -3,15 +3,15 @@ Routine_D05B9A:
 D0/5B9A: 08           PHP
 D0/5B9B: 08           PHP
 D0/5B9C: 04 04        TSB $04
-D0/5B9E: 10 10        BPL Local_D05BB0
+D0/5B9E: 10 10        BPL $5BB0
 D0/5BA0: 00 00        BRK $00
 D0/5BA2: 00 00        BRK $00
 D0/5BA4: 00 00        BRK $00
-D0/5BA6: 20 20 80     JSR Local_D08020
-D0/5BA9: 80 80        BRA Local_D05B2B
-D0/5BAB: 80 40        BRA Local_D05BED
+D0/5BA6: 20 20 80     JSR $8020
+D0/5BA9: 80 80        BRA $5B2B
+D0/5BAB: 80 40        BRA $5BED
 D0/5BAD: 41 00        EOR ($00,X)
-D0/5BAF: 10 06        BPL Local_D05BB7
+D0/5BAF: 10 06        BPL $5BB7
 D0/5BB1: 06 01        ASL $01
 D0/5BB3: 01 00        ORA ($00,X)
 D0/5BB5: 00 00        BRK $00

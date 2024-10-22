@@ -37,13 +37,13 @@ D1/9053: 84 FF        STY $FF
 D1/9055: 01 E2        ORA ($E2,X)
 D1/9057: 01 8A        ORA ($8A,X)
 D1/9059: 00 80        BRK $80
-D1/905B: 70 00        BVS Local_D1905D
+D1/905B: 70 00        BVS $905D
 D1/905D: 8A           TXA
 D1/905E: 01 80        ORA ($80,X)
-D1/9060: 70 00        BVS Local_D19062
+D1/9060: 70 00        BVS $9062
 D1/9062: CB           WAI
 D1/9063: 6A           ROR
-D1/9064: 90 94        BCC Local_D18FFA
+D1/9064: 90 94        BCC $8FFA
 D1/9066: AA           TAX
 D1/9067: CA           DEX
 D1/9068: 6C 90 94     JMP ($9490)

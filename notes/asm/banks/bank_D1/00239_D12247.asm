@@ -7,8 +7,8 @@ D1/224D: 00 C0        BRK $C0
 D1/224F: 00 FF        BRK $FF
 D1/2251: FF 55 08 08  SBC $080855,X
 D1/2255: C2 08        REP #$08
-D1/2257: 20 E0 10     JSR Local_D110E0
-D1/225A: 20 E2 18     JSR Local_D118E2
+D1/2257: 20 E0 10     JSR $10E0
+D1/225A: 20 E2 18     JSR $18E2
 D1/225D: 08           PHP
 D1/225E: E0 00        CPX #$00
 D1/2260: E0 E0        CPX #$E0
@@ -22,7 +22,7 @@ D1/226D: E8           INX
 D1/226E: 00 C8        BRK $C8
 D1/2270: C0 10        CPY #$10
 D1/2272: 0E 01 C8     ASL $C801
-D1/2275: 80 18        BRA Local_D1228F
+D1/2275: 80 18        BRA $228F
 D1/2277: 08           PHP
 D1/2278: A0 E0        LDY #$E0
 D1/227A: CA           DEX

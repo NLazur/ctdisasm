@@ -14,15 +14,15 @@ C6/5393: 08           PHP
 C6/5394: 8C 04 90     STY $9004
 C6/5397: 7C 02 00     JMP ($0002,X)
 C6/539A: 7D 90 94     ADC $9490,X
-C6/539D: 90 95        BCC Local_C65334
+C6/539D: 90 95        BCC $5334
 C6/539F: 01 06        ORA ($06,X)
 C6/53A1: 02 92        COP $92
-C6/53A3: 90 7F        BCC Local_C65424
-C6/53A5: 90 8F        BCC Local_C65336
-C6/53A7: 90 8D        BCC Local_C65336
+C6/53A3: 90 7F        BCC $5424
+C6/53A5: 90 8F        BCC $5336
+C6/53A7: 90 8D        BCC $5336
 C6/53A9: 08           PHP
-C6/53AA: D0 7C        BNE Local_C65428
-C6/53AC: D0 68        BNE Local_C65416
+C6/53AA: D0 7C        BNE $5428
+C6/53AC: D0 68        BNE $5416
 C6/53AE: 28           PLP
 C6/53AF: 44 02 45     MVP $02,$45
 C6/53B2: 02 00        COP $00
@@ -43,5 +43,5 @@ C6/53CF: 46 04        LSR $04
 C6/53D1: 47 58        EOR [$58]
 C6/53D3: 00 0E        BRK $0E
 C6/53D5: 58           CLI
-C6/53D6: 10 0E        BPL Local_C653E6
+C6/53D6: 10 0E        BPL $53E6
 C6/53D8: 40           RTI

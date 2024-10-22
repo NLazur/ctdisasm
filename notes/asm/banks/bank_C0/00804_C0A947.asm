@@ -18,15 +18,15 @@ C0/A964: A6 6D        LDX $6D
 C0/A966: BD 01 18     LDA $1801,X
 C0/A969: 0A           ASL
 C0/A96A: C5 C3        CMP $C3
-C0/A96C: 30 17        BMI Local_C0A985
+C0/A96C: 30 17        BMI $A985
 C0/A96E: C5 C4        CMP $C4
-C0/A970: 10 13        BPL Local_C0A985
+C0/A970: 10 13        BPL $A985
 C0/A972: BD 81 18     LDA $1881,X
 C0/A975: 0A           ASL
 C0/A976: C5 C5        CMP $C5
-C0/A978: 30 0B        BMI Local_C0A985
+C0/A978: 30 0B        BMI $A985
 C0/A97A: C5 C6        CMP $C6
-C0/A97C: 10 07        BPL Local_C0A985
+C0/A97C: 10 07        BPL $A985
 C0/A97E: A9 80        LDA #$80
 C0/A980: 9D 00 0F     STA $0F00,X
 C0/A983: 38           SEC

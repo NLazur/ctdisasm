@@ -41,7 +41,7 @@ D1/D896: 9B           TXY
 D1/D897: 5B           TCD
 D1/D898: 5A           PHY
 D1/D899: 63 62        ADC $62,S
-D1/D89B: 2C 2D 2E     BIT Local_D12E2D
+D1/D89B: 2C 2D 2E     BIT $2E2D
 D1/D89E: 2F 34 35 36  AND $363534
 D1/D8A2: 59 58 61     EOR $6158,Y
 D1/D8A5: 60           RTS

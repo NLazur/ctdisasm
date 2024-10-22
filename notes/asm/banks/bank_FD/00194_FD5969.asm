@@ -27,5 +27,5 @@ FD/598F: 00 81        BRK $81
 FD/5991: E8           INX
 FD/5992: 0A           ASL
 FD/5993: 05 3E        ORA $3E
-FD/5995: 10 F1        BPL Local_FD5988
+FD/5995: 10 F1        BPL $5988
 FD/5997: 40           RTI

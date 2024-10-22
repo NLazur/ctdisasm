@@ -1,14 +1,14 @@
 ; Bank: D1 | Start Address: 8F14
 Routine_D18F14:
-D1/8F14: 80 70        BRA Local_D18F86
+D1/8F14: 80 70        BRA $8F86
 D1/8F16: 00 8A        BRK $8A
 D1/8F18: 41 80        EOR ($80,X)
-D1/8F1A: 70 01        BVS Local_D18F1D
+D1/8F1A: 70 01        BVS $8F1D
 D1/8F1C: AB           PLB
 D1/8F1D: 00 AB        BRK $AB
-D1/8F1F: 80 83        BRA Local_D18EA4
+D1/8F1F: 80 83        BRA $8EA4
 D1/8F21: 07 BD        ORA [$BD]
-D1/8F23: 30 BD        BMI Local_D18EE2
+D1/8F23: 30 BD        BMI $8EE2
 D1/8F25: 31 88        AND ($88),Y
 D1/8F27: 00 89        BRK $89
 D1/8F29: 00 00        BRK $00
@@ -30,7 +30,7 @@ D1/8F48: 00 8B        BRK $8B
 D1/8F4A: 01 7F        ORA ($7F,X)
 D1/8F4C: 84 83        STY $83
 D1/8F4E: 07 BD        ORA [$BD]
-D1/8F50: 30 BD        BMI Local_D18F0F
+D1/8F50: 30 BD        BMI $8F0F
 D1/8F52: 31 88        AND ($88),Y
 D1/8F54: 00 89        BRK $89
 D1/8F56: 00 00        BRK $00

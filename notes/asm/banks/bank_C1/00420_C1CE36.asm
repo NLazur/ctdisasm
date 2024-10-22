@@ -1,14 +1,14 @@
 ; Bank: C1 | Start Address: CE36
 Routine_C1CE36:
-C1/CE36: 22 F2 AE FD  JSR Routine_FDAEF2
+C1/CE36: 22 F2 AE FD  JSR $FDAEF2
 C1/CE3A: 7B           TDC
 C1/CE3B: AA           TAX
 C1/CE3C: 86 0A        STX $0A
 C1/CE3E: A6 02        LDX $02
 C1/CE40: BD FF AE     LDA $AEFF,X
 C1/CE43: C9 FF        CMP #$FF
-C1/CE45: D0 03        BNE Local_C1CE4A
-C1/CE47: 4C 14 CF     JMP Local_C1CF14
+C1/CE45: D0 03        BNE $CE4A
+C1/CE47: 4C 14 CF     JMP $CF14
 C1/CE4A: C2 20        REP #$20
 C1/CE4C: 8A           TXA
 C1/CE4D: 0A           ASL
@@ -39,7 +39,7 @@ C1/CE88: 86 28        STX $28
 C1/CE8A: A9 06        LDA #$06
 C1/CE8C: AA           TAX
 C1/CE8D: 86 2A        STX $2A
-C1/CE8F: 20 0B C9     JSR Local_C1C90B
+C1/CE8F: 20 0B C9     JSR $C90B
 C1/CE92: C2 20        REP #$20
 C1/CE94: A5 2C        LDA $2C
 C1/CE96: 18           CLC
@@ -49,10 +49,10 @@ C1/CE9C: 7B           TDC
 C1/CE9D: E2 20        SEP #$20
 C1/CE9F: A2 D7 29     LDX #$29D7
 C1/CEA2: 86 0E        STX $0E
-C1/CEA4: 22 41 B1 FD  JSR Routine_FDB141
+C1/CEA4: 22 41 B1 FD  JSR $FDB141
 C1/CEA8: A2 03 2A     LDX #$2A03
 C1/CEAB: 86 0E        STX $0E
-C1/CEAD: 20 69 CF     JSR Local_C1CF69
+C1/CEAD: 20 69 CF     JSR $CF69
 C1/CEB0: 7B           TDC
 C1/CEB1: A6 00        LDX $00
 C1/CEB3: BD 28 00     LDA $0028,X
@@ -63,7 +63,7 @@ C1/CEBA: 86 28        STX $28
 C1/CEBC: A9 06        LDA #$06
 C1/CEBE: AA           TAX
 C1/CEBF: 86 2A        STX $2A
-C1/CEC1: 20 0B C9     JSR Local_C1C90B
+C1/CEC1: 20 0B C9     JSR $C90B
 C1/CEC4: C2 20        REP #$20
 C1/CEC6: A5 2C        LDA $2C
 C1/CEC8: 18           CLC
@@ -73,10 +73,10 @@ C1/CECE: 7B           TDC
 C1/CECF: E2 20        SEP #$20
 C1/CED1: A2 D7 29     LDX #$29D7
 C1/CED4: 86 0E        STX $0E
-C1/CED6: 22 41 B1 FD  JSR Routine_FDB141
+C1/CED6: 22 41 B1 FD  JSR $FDB141
 C1/CEDA: A2 03 2A     LDX #$2A03
 C1/CEDD: 86 0E        STX $0E
-C1/CEDF: 20 69 CF     JSR Local_C1CF69
+C1/CEDF: 20 69 CF     JSR $CF69
 C1/CEE2: 7B           TDC
 C1/CEE3: A6 00        LDX $00
 C1/CEE5: BD 27 00     LDA $0027,X
@@ -87,7 +87,7 @@ C1/CEEC: 86 28        STX $28
 C1/CEEE: A9 06        LDA #$06
 C1/CEF0: AA           TAX
 C1/CEF1: 86 2A        STX $2A
-C1/CEF3: 20 0B C9     JSR Local_C1C90B
+C1/CEF3: 20 0B C9     JSR $C90B
 C1/CEF6: C2 20        REP #$20
 C1/CEF8: A5 2C        LDA $2C
 C1/CEFA: 18           CLC
@@ -97,8 +97,8 @@ C1/CF00: 7B           TDC
 C1/CF01: E2 20        SEP #$20
 C1/CF03: A2 D7 29     LDX #$29D7
 C1/CF06: 86 0E        STX $0E
-C1/CF08: 22 41 B1 FD  JSR Routine_FDB141
+C1/CF08: 22 41 B1 FD  JSR $FDB141
 C1/CF0C: A2 03 2A     LDX #$2A03
 C1/CF0F: 86 0E        STX $0E
-C1/CF11: 20 69 CF     JSR Local_C1CF69
+C1/CF11: 20 69 CF     JSR $CF69
 C1/CF14: 60           RTS

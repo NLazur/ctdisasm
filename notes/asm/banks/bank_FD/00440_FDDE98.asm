@@ -31,10 +31,10 @@ FD/DECF: A0 00 00     LDY #$0000
 FD/DED2: BF 10 F3 FD  LDA $FDF310,X
 FD/DED6: E8           INX
 FD/DED7: C9 80        CMP #$80
-FD/DED9: D0 08        BNE Local_FDDEE3
+FD/DED9: D0 08        BNE $DEE3
 FD/DEDB: A9 80        LDA #$80
 FD/DEDD: 99 B3 05     STA $05B3,Y
-FD/DEE0: 4C 0B E0     JMP Local_FDE00B
+FD/DEE0: 4C 0B E0     JMP $E00B
 FD/DEE3: 99 B0 05     STA $05B0,Y
 FD/DEE6: BF 10 F3 FD  LDA $FDF310,X
 FD/DEEA: 99 B2 05     STA $05B2,Y
@@ -46,7 +46,7 @@ FD/DEF6: A9 7F        LDA #$7F
 FD/DEF8: 99 B4 05     STA $05B4,Y
 FD/DEFB: B9 B0 05     LDA $05B0,Y
 FD/DEFE: C9 02        CMP #$02
-FD/DF00: D0 63        BNE Local_FDDF65
+FD/DF00: D0 63        BNE $DF65
 FD/DF02: A9 00        LDA #$00
 FD/DF04: 99 B0 05     STA $05B0,Y
 FD/DF07: 99 B1 05     STA $05B1,Y
@@ -71,7 +71,7 @@ FD/DF2E: EB           XBA
 FD/DF2F: 8D 7F 21     STA $217F
 FD/DF32: E2 20        SEP #$20
 FD/DF34: C6 10        DEC $10
-FD/DF36: D0 D6        BNE Local_FDDF0E
+FD/DF36: D0 D6        BNE $DF0E
 FD/DF38: E8           INX
 FD/DF39: E8           INX
 FD/DF3A: A9 04        LDA #$04
@@ -85,14 +85,14 @@ FD/DF50: 8D 80 21     STA $2180
 FD/DF53: BF 13 F3 FD  LDA $FDF313,X
 FD/DF57: 8D 80 21     STA $2180
 FD/DF5A: C6 10        DEC $10
-FD/DF5C: D0 E0        BNE Local_FDDF3E
+FD/DF5C: D0 E0        BNE $DF3E
 FD/DF5E: E8           INX
 FD/DF5F: E8           INX
 FD/DF60: E8           INX
 FD/DF61: E8           INX
-FD/DF62: 4C 0B E0     JMP Local_FDE00B
+FD/DF62: 4C 0B E0     JMP $E00B
 FD/DF65: C9 04        CMP #$04
-FD/DF67: D0 65        BNE Local_FDDFCE
+FD/DF67: D0 65        BNE $DFCE
 FD/DF69: A9 00        LDA #$00
 FD/DF6B: 99 B0 05     STA $05B0,Y
 FD/DF6E: 99 B1 05     STA $05B1,Y
@@ -113,10 +113,10 @@ FD/DF8A: E2 20        SEP #$20
 FD/DF8C: C6 10        DEC $10
 FD/DF8E: A5 10        LDA $10
 FD/DF90: 29 03        AND #$03
-FD/DF92: D0 E2        BNE Local_FDDF76
+FD/DF92: D0 E2        BNE $DF76
 FD/DF94: FA           PLX
 FD/DF95: A5 10        LDA $10
-FD/DF97: D0 DC        BNE Local_FDDF75
+FD/DF97: D0 DC        BNE $DF75
 FD/DF99: E8           INX
 FD/DF9A: E8           INX
 FD/DF9B: E8           INX
@@ -133,17 +133,17 @@ FD/DFB1: E8           INX
 FD/DFB2: C6 10        DEC $10
 FD/DFB4: A5 10        LDA $10
 FD/DFB6: 29 03        AND #$03
-FD/DFB8: D0 E8        BNE Local_FDDFA2
+FD/DFB8: D0 E8        BNE $DFA2
 FD/DFBA: FA           PLX
 FD/DFBB: A5 10        LDA $10
-FD/DFBD: D0 E2        BNE Local_FDDFA1
+FD/DFBD: D0 E2        BNE $DFA1
 FD/DFBF: C2 21        REP #$21
 FD/DFC1: 8A           TXA
 FD/DFC2: 69 08 00     ADC #$0008
 FD/DFC5: AA           TAX
 FD/DFC6: A9 00 00     LDA #$0000
 FD/DFC9: E2 20        SEP #$20
-FD/DFCB: 4C 0B E0     JMP Local_FDE00B
+FD/DFCB: 4C 0B E0     JMP $E00B
 FD/DFCE: A9 00        LDA #$00
 FD/DFD0: 99 B0 05     STA $05B0,Y
 FD/DFD3: 99 B1 05     STA $05B1,Y
@@ -160,7 +160,7 @@ FD/DFEA: EB           XBA
 FD/DFEB: 8D 80 21     STA $2180
 FD/DFEE: E8           INX
 FD/DFEF: C6 10        DEC $10
-FD/DFF1: D0 E7        BNE Local_FDDFDA
+FD/DFF1: D0 E7        BNE $DFDA
 FD/DFF3: A9 08        LDA #$08
 FD/DFF5: 85 10        STA $10
 FD/DFF7: BF 10 F3 FD  LDA $FDF310,X
@@ -170,7 +170,7 @@ FD/E002: 8D 80 21     STA $2180
 FD/E005: E8           INX
 FD/E006: E8           INX
 FD/E007: C6 10        DEC $10
-FD/E009: D0 EC        BNE Local_FDDFF7
+FD/E009: D0 EC        BNE $DFF7
 FD/E00B: C2 21        REP #$21
 FD/E00D: 98           TYA
 FD/E00E: 69 05 00     ADC #$0005
@@ -178,8 +178,8 @@ FD/E011: A8           TAY
 FD/E012: A9 00 00     LDA #$0000
 FD/E015: E2 20        SEP #$20
 FD/E017: C6 18        DEC $18
-FD/E019: F0 03        BEQ Local_FDE01E
-FD/E01B: 4C D2 DE     JMP Local_FDDED2
+FD/E019: F0 03        BEQ $E01E
+FD/E01B: 4C D2 DE     JMP $DED2
 FD/E01E: AB           PLB
 FD/E01F: 2B           PLD
 FD/E020: 28           PLP

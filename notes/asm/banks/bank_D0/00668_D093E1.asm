@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 93E1
 Routine_D093E1:
 D0/93E1: A0 70        LDY #$70
-D0/93E3: 90 70        BCC Local_D09455
-D0/93E5: 90 78        BCC Local_D0945F
+D0/93E3: 90 70        BCC $9455
+D0/93E5: 90 78        BCC $945F
 D0/93E7: 88           DEY
 D0/93E8: F8           SED
 D0/93E9: 08           PHP
@@ -10,18 +10,18 @@ D0/93EA: F8           SED
 D0/93EB: 08           PHP
 D0/93EC: FC 84 FC     JSR ($FC84,X)
 D0/93EF: 64 A0        STZ $A0
-D0/93F1: 90 90        BCC Local_D09383
+D0/93F1: 90 90        BCC $9383
 D0/93F3: 88           DEY
 D0/93F4: 08           PHP
 D0/93F5: 08           PHP
 D0/93F6: 84 64        STY $64
 D0/93F8: 3E 39 33     ROL $3339,X
-D0/93FB: 20 27 3B     JSR Local_D03B27
+D0/93FB: 20 27 3B     JSR $3B27
 D0/93FE: 1F 1F 0F 0F  ORA $0F0F1F,X
 D0/9402: 0E 0E 02     ASL $020E
 D0/9405: 03 01        ORA $01,S
 D0/9407: 01 3F        ORA ($3F,X)
-D0/9409: 3C 3B 1F     BIT Local_D01F3B,X
+D0/9409: 3C 3B 1F     BIT $1F3B,X
 D0/940C: 0F 0F 03 01  ORA $01030F
 D0/9410: DB           STP
 D0/9411: 64 C7        STZ $C7

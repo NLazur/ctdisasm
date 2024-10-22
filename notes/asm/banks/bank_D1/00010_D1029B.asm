@@ -3,11 +3,11 @@ Routine_D1029B:
 D1/029B: 3B           TSC
 D1/029C: 00 00        BRK $00
 D1/029E: 12 80        ORA ($80)
-D1/02A0: 80 E0        BRA Local_D10282
+D1/02A0: 80 E0        BRA $0282
 D1/02A2: 00 E2        BRK $E2
 D1/02A4: 00 FF        BRK $FF
 D1/02A6: 00 FF        BRK $FF
-D1/02A8: 22 C0 C0 E4  JSR Routine_E4C0C0
+D1/02A8: 22 C0 C0 E4  JSR $E4C0C0
 D1/02AC: 00 E6        BRK $E6
 D1/02AE: 00 08        BRK $08
 D1/02B0: E8           INX

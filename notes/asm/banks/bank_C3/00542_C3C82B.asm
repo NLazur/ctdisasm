@@ -2,8 +2,8 @@
 Routine_C3C82B:
 C3/C82B: 3F 44 26 AB  AND $AB2644,X
 C3/C82F: 0F 10 AB 1B  ORA $1BAB10
-C3/C833: 10 0A        BPL Local_C3C83F
-C3/C835: 10 08        BPL Local_C3C83F
+C3/C833: 10 0A        BPL $C83F
+C3/C835: 10 08        BPL $C83F
 C3/C837: 00 3F        BRK $3F
 C3/C839: 26 94        ROL $94
 C3/C83B: 02 50        COP $50
@@ -17,7 +17,7 @@ C3/C849: 41 00        EOR ($00,X)
 C3/C84B: 00 13        BRK $13
 C3/C84D: 29 02        AND #$02
 C3/C84F: 38           SEC
-C3/C850: 20 13 7C     JSR Local_C37C13
+C3/C850: 20 13 7C     JSR $7C13
 C3/C853: 00 02        BRK $02
 C3/C855: 01 52        ORA ($52,X)
 C3/C857: 09 11        ORA #$11
@@ -39,17 +39,17 @@ C3/C877: 9B           TXY
 C3/C878: 1B           TCS
 C3/C879: 05 10        ORA $10
 C3/C87B: 9C 1B 00     STZ $001B
-C3/C87E: 10 9D        BPL Local_C3C81D
+C3/C87E: 10 9D        BPL $C81D
 C3/C880: 1B           TCS
-C3/C881: 10 9E        BPL Local_C3C821
+C3/C881: 10 9E        BPL $C821
 C3/C883: 1B           TCS
-C3/C884: 10 9F        BPL Local_C3C825
+C3/C884: 10 9F        BPL $C825
 C3/C886: 00 1B        BRK $1B
-C3/C888: 10 A0        BPL Local_C3C82A
+C3/C888: 10 A0        BPL $C82A
 C3/C88A: 1B           TCS
-C3/C88B: 10 A1        BPL Local_C3C82E
+C3/C88B: 10 A1        BPL $C82E
 C3/C88D: 1B           TCS
-C3/C88E: 10 00        BPL Local_C3C890
+C3/C88E: 10 00        BPL $C890
 C3/C890: A2 1B        LDX #$1B
 C3/C892: 37 2C        AND [$2C],Y
 C3/C894: 08           PHP
@@ -57,14 +57,14 @@ C3/C895: 00 C0        BRK $C0
 C3/C897: 00 00        BRK $00
 C3/C899: 02 31        COP $31
 C3/C89B: 01 00        ORA ($00,X)
-C3/C89D: 30 7A        BMI Local_C3C919
-C3/C89F: 4C F7 00     JMP Local_C300F7
+C3/C89D: 30 7A        BMI $C919
+C3/C89F: 4C F7 00     JMP $00F7
 C3/C8A2: 1B           TCS
 C3/C8A3: 78           SEI
 C3/C8A4: 0A           ASL
 C3/C8A5: 39 01 1A     AND $1A01,Y
 C3/C8A8: 95 04        STA $04,X
-C3/C8AA: 20 38 01     JSR Local_C30138
+C3/C8AA: 20 38 01     JSR $0138
 C3/C8AD: 11 F7        ORA ($F7),Y
 C3/C8AF: 1B           TCS
 C3/C8B0: 08           PHP
@@ -79,7 +79,7 @@ C3/C8BD: 02 24        COP $24
 C3/C8BF: 05 00        ORA $00
 C3/C8C1: 27 94        AND [$94]
 C3/C8C3: 02 80        COP $80
-C3/C8C5: 10 24        BPL Local_C3C8EB
+C3/C8C5: 10 24        BPL $C8EB
 C3/C8C7: 00 9F        BRK $9F
 C3/C8C9: 02 F7        COP $F7
 C3/C8CB: 0B           PHD
@@ -96,9 +96,9 @@ C3/C8DF: 56 37        LSR $37,X
 C3/C8E1: 38           SEC
 C3/C8E2: 02 01        COP $01
 C3/C8E4: A3 00        LDA $00,S
-C3/C8E6: 10 FE        BPL Local_C3C8E6
+C3/C8E6: 10 FE        BPL $C8E6
 C3/C8E8: 1B           TCS
-C3/C8E9: 22 F9 37 00  JSR Routine_0037F9
+C3/C8E9: 22 F9 37 00  JSR $0037F9
 C3/C8ED: 04 00        TSB $00
 C3/C8EF: C0 7E        CPY #$7E
 C3/C8F1: 02 00        COP $00
@@ -106,5 +106,5 @@ C3/C8F3: 0D 22 40     ORA $4022
 C3/C8F6: 0A           ASL
 C3/C8F7: 36 D3        ROL $D3,X
 C3/C8F9: 04 04        TSB $04
-C3/C8FB: 20 0C 80     JSR Local_C3800C
+C3/C8FB: 20 0C 80     JSR $800C
 C3/C8FE: 40           RTI

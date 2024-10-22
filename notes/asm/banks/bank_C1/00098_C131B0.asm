@@ -1,6 +1,6 @@
 ; Bank: C1 | Start Address: 31B0
 Routine_C131B0:
-C1/31B0: 20 B6 30     JSR Local_C130B6
+C1/31B0: 20 B6 30     JSR $30B6
 C1/31B3: A6 94        LDX $94
 C1/31B5: FE 8E A4     INC $A48E,X
 C1/31B8: 9E 99 A4     STZ $A499,X

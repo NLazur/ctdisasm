@@ -8,7 +8,7 @@ C0/7FA2: A5 99        LDA $99
 C0/7FA4: 3A           DEC
 C0/7FA5: 29 3F 00     AND #$003F
 C0/7FA8: 48           PHA
-C0/7FA9: 20 3D 81     JSR Local_C0813D
+C0/7FA9: 20 3D 81     JSR $813D
 C0/7FAC: 8A           TXA
 C0/7FAD: 18           CLC
 C0/7FAE: 65 7C        ADC $7C
@@ -33,7 +33,7 @@ C0/7FCE: 69 1C 00     ADC #$001C
 C0/7FD1: 29 1F 00     AND #$001F
 C0/7FD4: A8           TAY
 C0/7FD5: 68           PLA
-C0/7FD6: 20 A1 81     JSR Local_C081A1
+C0/7FD6: 20 A1 81     JSR $81A1
 C0/7FD9: 18           CLC
 C0/7FDA: 65 7C        ADC $7C
 C0/7FDC: 85 A7        STA $A7
@@ -52,7 +52,7 @@ C0/7FF0: 48           PHA
 C0/7FF1: A8           TAY
 C0/7FF2: A5 99        LDA $99
 C0/7FF4: 29 3F 00     AND #$003F
-C0/7FF7: 20 D6 81     JSR Local_C081D6
+C0/7FF7: 20 D6 81     JSR $81D6
 C0/7FFA: 8A           TXA
 C0/7FFB: 18           CLC
 C0/7FFC: 65 7C        ADC $7C
@@ -70,7 +70,7 @@ C0/800F: A5 99        LDA $99
 C0/8011: 18           CLC
 C0/8012: 69 20 00     ADC #$0020
 C0/8015: 29 3F 00     AND #$003F
-C0/8018: 20 18 82     JSR Local_C08218
+C0/8018: 20 18 82     JSR $8218
 C0/801B: 18           CLC
 C0/801C: 65 7C        ADC $7C
 C0/801E: 85 B1        STA $B1
@@ -85,7 +85,7 @@ C0/802C: A5 9B        LDA $9B
 C0/802E: 3A           DEC
 C0/802F: 29 3F 00     AND #$003F
 C0/8032: 48           PHA
-C0/8033: 20 3D 81     JSR Local_C0813D
+C0/8033: 20 3D 81     JSR $813D
 C0/8036: 8A           TXA
 C0/8037: 18           CLC
 C0/8038: 65 7E        ADC $7E
@@ -110,7 +110,7 @@ C0/8058: 69 1C 00     ADC #$001C
 C0/805B: 29 1F 00     AND #$001F
 C0/805E: A8           TAY
 C0/805F: 68           PLA
-C0/8060: 20 A1 81     JSR Local_C081A1
+C0/8060: 20 A1 81     JSR $81A1
 C0/8063: 18           CLC
 C0/8064: 65 7E        ADC $7E
 C0/8066: 85 BB        STA $BB
@@ -129,7 +129,7 @@ C0/807A: 48           PHA
 C0/807B: A8           TAY
 C0/807C: A5 9B        LDA $9B
 C0/807E: 29 3F 00     AND #$003F
-C0/8081: 20 D6 81     JSR Local_C081D6
+C0/8081: 20 D6 81     JSR $81D6
 C0/8084: 8A           TXA
 C0/8085: 18           CLC
 C0/8086: 65 7E        ADC $7E
@@ -147,7 +147,7 @@ C0/8099: A5 9B        LDA $9B
 C0/809B: 18           CLC
 C0/809C: 69 20 00     ADC #$0020
 C0/809F: 29 3F 00     AND #$003F
-C0/80A2: 20 18 82     JSR Local_C08218
+C0/80A2: 20 18 82     JSR $8218
 C0/80A5: 18           CLC
 C0/80A6: 65 7E        ADC $7E
 C0/80A8: 85 C5        STA $C5
@@ -162,7 +162,7 @@ C0/80B6: A5 9D        LDA $9D
 C0/80B8: 3A           DEC
 C0/80B9: 29 3F 00     AND #$003F
 C0/80BC: 48           PHA
-C0/80BD: 20 3D 81     JSR Local_C0813D
+C0/80BD: 20 3D 81     JSR $813D
 C0/80C0: 8A           TXA
 C0/80C1: 18           CLC
 C0/80C2: 65 80        ADC $80
@@ -187,7 +187,7 @@ C0/80E2: 69 1C 00     ADC #$001C
 C0/80E5: 29 1F 00     AND #$001F
 C0/80E8: A8           TAY
 C0/80E9: 68           PLA
-C0/80EA: 20 A1 81     JSR Local_C081A1
+C0/80EA: 20 A1 81     JSR $81A1
 C0/80ED: 18           CLC
 C0/80EE: 65 80        ADC $80
 C0/80F0: 85 CF        STA $CF
@@ -206,7 +206,7 @@ C0/8104: 48           PHA
 C0/8105: A8           TAY
 C0/8106: A5 9D        LDA $9D
 C0/8108: 29 3F 00     AND #$003F
-C0/810B: 20 D6 81     JSR Local_C081D6
+C0/810B: 20 D6 81     JSR $81D6
 C0/810E: 8A           TXA
 C0/810F: 18           CLC
 C0/8110: 65 80        ADC $80
@@ -224,7 +224,7 @@ C0/8123: A5 9D        LDA $9D
 C0/8125: 18           CLC
 C0/8126: 69 20 00     ADC #$0020
 C0/8129: 29 3F 00     AND #$003F
-C0/812C: 20 18 82     JSR Local_C08218
+C0/812C: 20 18 82     JSR $8218
 C0/812F: 18           CLC
 C0/8130: 65 80        ADC $80
 C0/8132: 85 D9        STA $D9

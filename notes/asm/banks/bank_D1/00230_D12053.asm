@@ -2,10 +2,10 @@
 Routine_D12053:
 D1/2053: 54 50 80     MVN $50,$80
 D1/2056: 54 20 00     MVN $20,$00
-D1/2059: 10 38        BPL Local_D12093
+D1/2059: 10 38        BPL $2093
 D1/205B: 6C 0C 38     JMP ($380C)
-D1/205E: 10 42        BPL Local_D120A2
-D1/2060: 20 54 98     JSR Local_D19854
+D1/205E: 10 42        BPL $20A2
+D1/2060: 20 54 98     JSR $9854
 D1/2063: 00 38        BRK $38
 D1/2065: 38           SEC
 D1/2066: 38           SEC
@@ -23,7 +23,7 @@ D1/2077: 92 18        STA ($18)
 D1/2079: C4 00        CPY $00
 D1/207B: 92 C4        STA ($C4)
 D1/207D: 00 04        BRK $04
-D1/207F: 20 01 04     JSR Local_D10401
+D1/207F: 20 01 04     JSR $0401
 D1/2082: 41 E2        EOR ($E2,X)
 D1/2084: 00 06        BRK $06
 D1/2086: 08           PHP
@@ -32,8 +32,8 @@ D1/2089: F4 04 C1     PEA $C104
 D1/208C: 04 08        TSB $08
 D1/208E: E2 C4        SEP #$C4
 D1/2090: 00 12        BRK $12
-D1/2092: 20 16 20     JSR Local_D12016
-D1/2095: 20 00 03     JSR Local_D10300
+D1/2092: 20 16 20     JSR $2016
+D1/2095: 20 00 03     JSR $0300
 D1/2098: 1C 00 C6     TRB $C600
 D1/209B: 38           SEC
 D1/209C: 28           PLP
@@ -49,16 +49,16 @@ D1/20AB: 0E 00 17     ASL $1700
 D1/20AE: 12 10        ORA ($10)
 D1/20B0: C6 38        DEC $38
 D1/20B2: 56 10        LSR $10,X
-D1/20B4: 80 56        BRA Local_D1210C
-D1/20B6: 50 40        BVC Local_D120F8
+D1/20B4: 80 56        BRA $210C
+D1/20B6: 50 40        BVC $20F8
 D1/20B8: E2 40        SEP #$40
 D1/20BA: 3D 54 50     AND $5054,X
-D1/20BD: 80 54        BRA Local_D12113
-D1/20BF: 20 C6 20     JSR Local_D120C6
+D1/20BD: 80 54        BRA $2113
+D1/20BF: 20 C6 20     JSR $20C6
 D1/20C2: 54 C8 C6     MVN $C8,$C6
 D1/20C5: 18           CLC
 D1/20C6: 04 01        TSB $01
-D1/20C8: 82 06 AC     BRL Routine_D1CCD1
+D1/20C8: 82 06 AC     BRL $D1CCD1
 D1/20CB: 00 24        BRK $24
 D1/20CD: 01 26        ORA ($26,X)
 D1/20CF: 01 24        ORA ($24,X)
@@ -78,11 +78,11 @@ D1/20E8: E0 BF        CPX #$BF
 D1/20EA: C4 00        CPY $00
 D1/20EC: 12 20        ORA ($20)
 D1/20EE: 16 20        ASL $20,X
-D1/20F0: 20 00 1C     JSR Local_D11C00
+D1/20F0: 20 00 1C     JSR $1C00
 D1/20F3: 00 8C        BRK $8C
 D1/20F5: 39 E8 20     AND $20E8,Y
 D1/20F8: 00 80        BRK $80
 D1/20FA: E8           INX
-D1/20FB: 80 E0        BRA Local_D120DD
+D1/20FB: 80 E0        BRA $20DD
 D1/20FD: 00 EA        BRK $EA
 D1/20FF: 40           RTI

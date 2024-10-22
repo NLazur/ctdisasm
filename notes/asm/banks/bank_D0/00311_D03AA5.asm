@@ -7,8 +7,8 @@ D0/3AAF: 01 F9        ORA ($F9,X)
 D0/3AB1: 07 C6        ORA [$C6]
 D0/3AB3: 3E 38 F8     ROL $F838,X
 D0/3AB6: C0 C0 70     CPY #$70C0
-D0/3AB9: 70 B0        BVS Local_D03A6B
-D0/3ABB: F0 60        BEQ Local_D03B1D
+D0/3AB9: 70 B0        BVS $3A6B
+D0/3ABB: F0 60        BEQ $3B1D
 D0/3ABD: E0 C0        CPX #$C0
 D0/3ABF: C0 80 80     CPY #$8080
 D0/3AC2: 00 00        BRK $00
@@ -47,7 +47,7 @@ D0/3B01: 36 15        ROL $15,X
 D0/3B03: 1B           TCS
 D0/3B04: 15 1B        ORA $1B,X
 D0/3B06: 09 0F 20     ORA #$200F
-D0/3B09: 20 10 10     JSR Local_D01010
+D0/3B09: 20 10 10     JSR $1010
 D0/3B0C: 00 00        BRK $00
 D0/3B0E: 00 00        BRK $00
 D0/3B10: 00 00        BRK $00
@@ -69,8 +69,8 @@ D0/3B32: 9D 7E 62     STA $627E,X
 D0/3B35: E3 01        SBC $01,S
 D0/3B37: 01 20        ORA ($20,X)
 D0/3B39: E0 D0        CPX #$D0
-D0/3B3B: 30 D0        BMI Local_D03B0D
-D0/3B3D: 30 D0        BMI Local_D03B0F
-D0/3B3F: 30 D0        BMI Local_D03B11
-D0/3B41: 30 A0        BMI Local_D03AE3
+D0/3B3B: 30 D0        BMI $3B0D
+D0/3B3D: 30 D0        BMI $3B0F
+D0/3B3F: 30 D0        BMI $3B11
+D0/3B41: 30 A0        BMI $3AE3
 D0/3B43: 60           RTS

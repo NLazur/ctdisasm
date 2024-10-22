@@ -3,7 +3,7 @@ Routine_FEA6D9:
 FE/A6D9: 74 12        STZ $12,X
 FE/A6DB: 3F 82 27 82  AND $822782,X
 FE/A6DF: FC 09 21     JSR ($2109,X)
-FE/A6E2: D0 EC        BNE Local_FEA6D0
+FE/A6E2: D0 EC        BNE $A6D0
 FE/A6E4: 0C 9E 00     TSB $009E
 FE/A6E7: A0 15 04     LDY #$0415
 FE/A6EA: 01 01        ORA ($01,X)
@@ -33,7 +33,7 @@ FE/A71E: 01 0F        ORA ($0F,X)
 FE/A720: 00 14        BRK $14
 FE/A722: 08           PHP
 FE/A723: 08           PHP
-FE/A724: 10 64        BPL Local_FEA78A
+FE/A724: 10 64        BPL $A78A
 FE/A726: A9 2D        LDA #$2D
 FE/A728: 00 F7        BRK $F7
 FE/A72A: E5 6D        SBC $6D

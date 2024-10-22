@@ -3,7 +3,7 @@ Routine_C6C182:
 C6/C182: 05 C0        ORA $C0
 C6/C184: F8           SED
 C6/C185: C0 60 CC     CPY #$CC60
-C6/C188: 70 CD        BVS Local_C6C157
+C6/C188: 70 CD        BVS $C157
 C6/C18A: BA           TSX
 C6/C18B: 07 CB        ORA [$CB]
 C6/C18D: 08           PHP
@@ -35,7 +35,7 @@ C6/C1C4: 29 D7 06     AND #$06D7
 C6/C1C7: 0D 0E 9F     ORA $9F0E
 C6/C1CA: 02 C0        COP $C0
 C6/C1CC: F8           SED
-C6/C1CD: 80 51        BRA Local_C6C220
+C6/C1CD: 80 51        BRA $C220
 C6/C1CF: D8           CLD
 C6/C1D0: 9B           TXY
 C6/C1D1: 11 12        ORA ($12),Y
@@ -47,7 +47,7 @@ C6/C1D9: 08           PHP
 C6/C1DA: 95 37        STA $37,X
 C6/C1DC: 93 61        STA ($61,S),Y
 C6/C1DE: 08           PHP
-C6/C1DF: B0 1D        BCS Local_C6C1FE
+C6/C1DF: B0 1D        BCS $C1FE
 C6/C1E1: 5A           PHY
 C6/C1E2: 07 0D        ORA [$0D]
 C6/C1E4: 06 38        ASL $38

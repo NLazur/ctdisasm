@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: 8E1E
 Routine_C08E1E:
-C0/8E1E: 82 3B 0E     BRL Routine_C09C5C
+C0/8E1E: 82 3B 0E     BRL $C09C5C
 C0/8E21: A9 FF        LDA #$FF
 C0/8E23: 85 31        STA $31
 C0/8E25: 64 2F        STZ $2F
@@ -20,8 +20,8 @@ C0/8E42: 18           CLC
 C0/8E43: 65 30        ADC $30
 C0/8E45: 85 68        STA $68
 C0/8E47: E2 20        SEP #$20
-C0/8E49: 20 23 99     JSR Local_C09923
-C0/8E4C: 90 09        BCC Local_C08E57
+C0/8E49: 20 23 99     JSR $9923
+C0/8E4C: 90 09        BCC $8E57
 C0/8E4E: C2 20        REP #$20
 C0/8E50: 64 30        STZ $30
 C0/8E52: 64 2E        STZ $2E

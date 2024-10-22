@@ -8,9 +8,9 @@ C7/3ACD: 8E 3F 53     STX $533F
 C7/3AD0: 07 EB        ORA [$EB]
 C7/3AD2: 8E F0 13     STX $13F0
 C7/3AD5: 48           PHA
-C7/3AD6: 80 EA        BRA Local_C73AC2
+C7/3AD6: 80 EA        BRA $3AC2
 C7/3AD8: 76 E0        ROR $E0,X
-C7/3ADA: 80 A4        BRA Local_C73A80
+C7/3ADA: 80 A4        BRA $3A80
 C7/3ADC: 76 EA        ROR $EA,X
 C7/3ADE: 76 E0        ROR $E0,X
 C7/3AE0: 3F 5F 0E F8  AND $F80E5F,X
@@ -24,16 +24,16 @@ C7/3AF3: 03 BC        ORA $BC,S
 C7/3AF5: 1C 1C 1C     TRB $1C1C
 C7/3AF8: FD CD 10     SBC $10CD,X
 C7/3AFB: E4 8E        CPX $8E
-C7/3AFD: F0 27        BEQ Local_C73B26
+C7/3AFD: F0 27        BEQ $3B26
 C7/3AFF: E8           INX
 C7/3B00: 00 D4        BRK $D4
 C7/3B02: 63 F4        ADC $F4,S
 C7/3B04: 64 48        STZ $48
-C7/3B06: 80 C4        BRA Local_C73ACC
+C7/3B06: 80 C4        BRA $3ACC
 C7/3B08: 9B           TXY
 C7/3B09: F6 92        INC $92,X
 C7/3B0B: 1D 48 80     ORA $8048,X
-C7/3B0E: 80 A4        BRA Local_C73AB4
+C7/3B0E: 80 A4        BRA $3AB4
 C7/3B10: 9B           TXY
 C7/3B11: 6D 4D 3F     ADC $3F4D
 C7/3B14: 5F 0E CE D5  EOR $D5CE0E,X
@@ -41,15 +41,15 @@ C7/3B18: FE 00 DD     INC $DD00,X
 C7/3B1B: D5 FF        CMP $FF,X
 C7/3B1D: 00 EE        BRK $EE
 C7/3B1F: DC 1D 1D     JMP [$1D1D]
-C7/3B22: D0 DB        BNE Local_C73AFF
+C7/3B22: D0 DB        BNE $3AFF
 C7/3B24: 2F 0A F6 92  AND $92F60A
 C7/3B28: 1D D4 64     ORA $64D4,X
 C7/3B2B: DC 1D 1D     JMP [$1D1D]
-C7/3B2E: D0 F6        BNE Local_C73B26
+C7/3B2E: D0 F6        BNE $3B26
 C7/3B30: F8           SED
 C7/3B31: A6 6F        LDX $6F
 C7/3B33: C8           INY
-C7/3B34: 10 90        BPL Local_C73AC6
+C7/3B34: 10 90        BPL $3AC6
 C7/3B36: 08           PHP
 C7/3B37: 8D 00 CD     STA $CD00
 C7/3B3A: 0C 9E F8     TSB $F89E
@@ -74,7 +74,7 @@ C7/3B63: F5 D5        SBC $D5,X
 C7/3B65: 01 F5        ORA ($F5,X)
 C7/3B67: E8           INX
 C7/3B68: 00 D5        BRK $D5
-C7/3B6A: 80 F4        BRA Local_C73B60
+C7/3B6A: 80 F4        BRA $3B60
 C7/3B6C: D5 81        CMP $81,X
 C7/3B6E: F4 F5 E0     PEA $E0F5
 C7/3B71: F2 D5        SBC ($D5)
@@ -86,13 +86,13 @@ C7/3B7C: DA           PHX
 C7/3B7D: 9B           TXY
 C7/3B7E: F5 21        SBC $21,X
 C7/3B80: F2 28        SBC ($28)
-C7/3B82: 70 FD        BVS Local_C73B81
+C7/3B82: 70 FD        BVS $3B81
 C7/3B84: C8           INY
-C7/3B85: 10 90        BPL Local_C73B17
+C7/3B85: 10 90        BPL $3B17
 C7/3B87: 04 E8        TSB $E8
 C7/3B89: 00 2F        BRK $2F
 C7/3B8B: 03 F5        ORA $F5,S
-C7/3B8D: 10 01        BPL Local_C73B90
+C7/3B8D: 10 01        BPL $3B90
 C7/3B8F: D5 11        CMP $11,X
 C7/3B91: 01 3F        ORA ($3F,X)
 C7/3B93: 08           PHP
@@ -106,7 +106,7 @@ C7/3BA1: F4 6F 28     PEA $286F
 C7/3BA4: 3F BC 8D 00  AND $008DBC,X
 C7/3BA8: CB           WAI
 C7/3BA9: 9C F8 9B     STZ $9BF8
-C7/3BAC: F0 06        BEQ Local_C73BB4
+C7/3BAC: F0 06        BEQ $3BB4
 C7/3BAE: 9E C4 9C     STZ $9CC4,X
 C7/3BB1: E8           INX
 C7/3BB2: 00 9E        BRK $9E
@@ -117,7 +117,7 @@ C7/3BBA: 4B           PHK
 C7/3BBB: 9C 6B 9B     STZ $9B6B
 C7/3BBE: BA           TSX
 C7/3BBF: 9B           TXY
-C7/3BC0: D0 02        BNE Local_C73BC4
+C7/3BC0: D0 02        BNE $3BC4
 C7/3BC2: AB           PLB
 C7/3BC3: 9B           TXY
 C7/3BC4: 0B           PHD
@@ -126,17 +126,17 @@ C7/3BC6: 2B           PLD
 C7/3BC7: 9C 0B 9B     STZ $9B0B
 C7/3BCA: 2B           PLD
 C7/3BCB: 9C 6F 0D     STZ $0D6F
-C7/3BCE: F0 08        BEQ Local_C73BD8
+C7/3BCE: F0 08        BEQ $3BD8
 C7/3BD0: 4B           PHK
 C7/3BD1: 9C 6B 9B     STZ $9B6B
 C7/3BD4: 4B           PHK
 C7/3BD5: 9C 6B 9B     STZ $9B6B
 C7/3BD8: 78           SEI
-C7/3BD9: 80 A5        BRA Local_C73B80
-C7/3BDB: 90 0D        BCC Local_C73BEA
+C7/3BD9: 80 A5        BRA $3B80
+C7/3BDB: 90 0D        BCC $3BEA
 C7/3BDD: 78           SEI
 C7/3BDE: C0 A5        CPY #$A5
-C7/3BE0: B0 08        BCS Local_C73BEA
+C7/3BE0: B0 08        BCS $3BEA
 C7/3BE2: 58           CLI
 C7/3BE3: FF 9B 58 FF  SBC $FF589B,X
 C7/3BE7: 9C 3A 9B     STZ $9B3A
@@ -155,7 +155,7 @@ C7/3C03: D5 20        CMP $20,X
 C7/3C05: F3 C4        SBC ($C4,S),Y
 C7/3C07: 9B           TXY
 C7/3C08: 3F 53 07 D5  AND $D50753,X
-C7/3C0C: 70 01        BVS Local_C73C0F
+C7/3C0C: 70 01        BVS $3C0F
 C7/3C0E: 3F DE 18 F8  AND $F818DE,X
 C7/3C12: A6 E4        LDX $E4
 C7/3C14: 9B           TXY

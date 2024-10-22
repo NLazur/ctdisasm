@@ -3,21 +3,21 @@ Routine_C00738:
 C0/0738: 7B           TDC
 C0/0739: EB           XBA
 C0/073A: A5 97        LDA $97
-C0/073C: 30 0C        BMI Local_C0074A
+C0/073C: 30 0C        BMI $074A
 C0/073E: A8           TAY
 C0/073F: A9 03        LDA #$03
 C0/0741: 99 80 17     STA $1780,Y
 C0/0744: B9 01 0F     LDA $0F01,Y
 C0/0747: 99 01 13     STA $1301,Y
 C0/074A: A5 99        LDA $99
-C0/074C: 30 0C        BMI Local_C0075A
+C0/074C: 30 0C        BMI $075A
 C0/074E: A8           TAY
 C0/074F: A9 03        LDA #$03
 C0/0751: 99 80 17     STA $1780,Y
 C0/0754: B9 01 0F     LDA $0F01,Y
 C0/0757: 99 01 13     STA $1301,Y
 C0/075A: A5 9B        LDA $9B
-C0/075C: 30 0C        BMI Local_C0076A
+C0/075C: 30 0C        BMI $076A
 C0/075E: A8           TAY
 C0/075F: A9 03        LDA #$03
 C0/0761: 99 80 17     STA $1780,Y

@@ -1,10 +1,10 @@
 ; Bank: FD | Start Address: 121C
 Routine_FD121C:
 FD/121C: 02 F4        COP $F4
-FD/121E: 10 14        BPL Local_FD1234
+FD/121E: 10 14        BPL $1234
 FD/1220: 00 E0        BRK $E0
 FD/1222: 08           PHP
-FD/1223: F0 34        BEQ Local_FD1259
+FD/1223: F0 34        BEQ $1259
 FD/1225: C8           INY
 FD/1226: 4A           LSR
 FD/1227: B4 4A        LDY $4A,X

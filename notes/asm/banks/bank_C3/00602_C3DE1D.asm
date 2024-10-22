@@ -1,11 +1,11 @@
 ; Bank: C3 | Start Address: DE1D
 Routine_C3DE1D:
-C3/DE1D: D0 2B        BNE Local_C3DE4A
+C3/DE1D: D0 2B        BNE $DE4A
 C3/DE1F: 04 DF        TSB $DF
 C3/DE21: 15 A0        ORA $A0,X
 C3/DE23: 18           CLC
 C3/DE24: 4D 3D 63     EOR $633D
-C3/DE27: 10 DB        BPL Local_C3DE04
+C3/DE27: 10 DB        BPL $DE04
 C3/DE29: 00 16        BRK $16
 C3/DE2B: 3B           TSC
 C3/DE2C: 15 73        ORA $73,X
@@ -32,14 +32,14 @@ C3/DE53: CE 39 62     DEC $6239
 C3/DE56: 14 00        TRB $00
 C3/DE58: 41 14        EOR ($14,X)
 C3/DE5A: 41 0C        EOR ($0C,X)
-C3/DE5C: 20 08 00     JSR Local_C30008
+C3/DE5C: 20 08 00     JSR $0008
 C3/DE5F: 08           PHP
 C3/DE60: 48           PHA
 C3/DE61: 00 04        BRK $04
 C3/DE63: 00 01        BRK $01
-C3/DE65: 70 52        BVS Local_C3DEB9
+C3/DE65: 70 52        BVS $DEB9
 C3/DE67: 4A           LSR
-C3/DE68: 20 68 07     JSR Local_C30768
+C3/DE68: 20 68 07     JSR $0768
 C3/DE6B: 00 00        BRK $00
 C3/DE6D: 05 00        ORA $00
 C3/DE6F: 02 00        COP $00

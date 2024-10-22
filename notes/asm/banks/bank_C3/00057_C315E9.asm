@@ -3,7 +3,7 @@ Routine_C315E9:
 C3/15E9: 08           PHP
 C3/15EA: DA           PHX
 C3/15EB: E2 00        SEP #$00
-C3/15ED: 20 7B EB     JSR Local_C3EB7B
+C3/15ED: 20 7B EB     JSR $EB7B
 C3/15F0: AF 9B 03 00  LDA $00039B
 C3/15F4: 1A           INC
 C3/15F5: 08           PHP

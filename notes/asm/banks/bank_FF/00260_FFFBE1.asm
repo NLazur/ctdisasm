@@ -17,7 +17,7 @@ FF/FBFA: 18           CLC
 FF/FBFB: 71 00        ADC ($00),Y
 FF/FBFD: 88           DEY
 FF/FBFE: 88           DEY
-FF/FBFF: 10 FA        BPL Local_FFFBFB
+FF/FBFF: 10 FA        BPL $FBFB
 FF/FC01: AB           PLB
 FF/FC02: 28           PLP
 FF/FC03: 60           RTS

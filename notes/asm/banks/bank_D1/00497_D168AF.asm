@@ -1,16 +1,16 @@
 ; Bank: D1 | Start Address: 68AF
 Routine_D168AF:
-D1/68AF: 90 30        BCC Local_D168E1
+D1/68AF: 90 30        BCC $68E1
 D1/68B1: 00 80        BRK $80
 D1/68B3: 0A           ASL
 D1/68B4: 34 91        BIT $91,X
 D1/68B6: 31 6D        AND ($6D),Y
 D1/68B8: F2 05        SBC ($05)
 D1/68BA: 7F 7F F1 03  ADC $03F17F,X
-D1/68BE: 80 17        BRA Local_D168D7
+D1/68BE: 80 17        BRA $68D7
 D1/68C0: 8A           TXA
-D1/68C1: 50 80        BVC Local_D16843
-D1/68C3: 70 00        BVS Local_D168C5
+D1/68C1: 50 80        BVC $6843
+D1/68C3: 70 00        BVS $68C5
 D1/68C5: DE 01 7F     DEC $7F01,X
 D1/68C8: 94 02        STY $02,X
 D1/68CA: 88           DEY
@@ -65,7 +65,7 @@ D1/6927: 69 F2        ADC #$F2
 D1/6929: 01 91        ORA ($91,X)
 D1/692B: 9A           TXS
 D1/692C: 69 84        ADC #$84
-D1/692E: 80 19        BRA Local_D16949
+D1/692E: 80 19        BRA $6949
 D1/6930: F2 02        SBC ($02)
 D1/6932: 91 9A        STA ($9A),Y
 D1/6934: 69 F2        ADC #$F2

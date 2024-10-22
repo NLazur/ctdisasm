@@ -9,7 +9,7 @@ C7/6D97: EB           XBA
 C7/6D98: DC 00 D6     JMP [$D600]
 C7/6D9B: 04 0A        TSB $0A
 C7/6D9D: C8           INY
-C7/6D9E: 20 08 02     JSR Local_C70208
+C7/6D9E: 20 08 02     JSR $0208
 C7/6DA1: C4 7F        CPY $7F
 C7/6DA3: DC 03 D6     JMP [$D603]
 C7/6DA6: 02 DD        COP $DD
@@ -20,7 +20,7 @@ C7/6DAE: 03 D2        ORA $D2,S
 C7/6DB0: C9 00        CMP #$00
 C7/6DB2: 01 7F        ORA ($7F,X)
 C7/6DB4: C8           INY
-C7/6DB5: 20 05 02     JSR Local_C70205
+C7/6DB5: 20 05 02     JSR $0205
 C7/6DB8: D4 C4        PEI $C4
 C7/6DBA: 7F D6 07 CB  ADC $CB07D6,X
 C7/6DBE: 00 02        BRK $02

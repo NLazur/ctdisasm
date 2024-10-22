@@ -2,7 +2,7 @@
 Routine_C08963:
 C0/8963: AD F8 00     LDA $00F8
 C0/8966: 89 02        BIT #$02
-C0/8968: F0 0C        BEQ Local_C08976
+C0/8968: F0 0C        BEQ $8976
 C0/896A: A9 E0        LDA #$E0
 C0/896C: 85 2D        STA $2D
 C0/896E: A5 30        LDA $30

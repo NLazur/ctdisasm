@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: 4CE2
 Routine_FD4CE2:
 FD/4CE2: 5E E0 28     LSR $28E0,X
-FD/4CE5: F0 97        BEQ Local_FD4C7E
+FD/4CE5: F0 97        BEQ $4C7E
 FD/4CE7: 78           SEI
 FD/4CE8: C0 00        CPY #$00
 FD/4CEA: 3F 02 80 02  AND $028002,X

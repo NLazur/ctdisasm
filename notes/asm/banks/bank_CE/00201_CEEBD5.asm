@@ -15,5 +15,5 @@ CE/EBE7: 88           DEY
 CE/EBE8: 88           DEY
 CE/EBE9: 88           DEY
 CE/EBEA: E0 C0 01     CPX #$01C0
-CE/EBED: D0 EB        BNE Local_CEEBDA
+CE/EBED: D0 EB        BNE $EBDA
 CE/EBEF: 60           RTS

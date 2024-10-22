@@ -20,7 +20,7 @@ C6/E54E: 88           DEY
 C6/E54F: E8           INX
 C6/E550: E8           INX
 C6/E551: C6 00        DEC $00
-C6/E553: D0 F2        BNE Local_C6E547
+C6/E553: D0 F2        BNE $E547
 C6/E555: A6 4E        LDX $4E
 C6/E557: BD 24 00     LDA $0024,X
 C6/E55A: 0A           ASL

@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 9A5E
 Routine_D19A5E:
-D1/9A5E: 80 00        BRA Local_D19A60
+D1/9A5E: 80 00        BRA $9A60
 D1/9A60: 09 01        ORA #$01
 D1/9A62: 05 05        ORA $05
 D1/9A64: 05 05        ORA $05

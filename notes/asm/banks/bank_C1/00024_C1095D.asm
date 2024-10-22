@@ -11,7 +11,7 @@ C1/096A: E2 20        SEP #$20
 C1/096C: 99 80 0E     STA $0E80,Y
 C1/096F: C8           INY
 C1/0970: CA           DEX
-C1/0971: D0 F9        BNE Local_C1096C
+C1/0971: D0 F9        BNE $096C
 C1/0973: 64 81        STZ $81
 C1/0975: C2 20        REP #$20
 C1/0977: 7B           TDC
@@ -27,7 +27,7 @@ C1/0985: AA           TAX
 C1/0986: 7B           TDC
 C1/0987: 85 86        STA $86
 C1/0989: E2 20        SEP #$20
-C1/098B: 20 B0 09     JSR Local_C109B0
+C1/098B: 20 B0 09     JSR $09B0
 C1/098E: C2 20        REP #$20
 C1/0990: A5 86        LDA $86
 C1/0992: 1A           INC
@@ -48,5 +48,5 @@ C1/09A5: E2 20        SEP #$20
 C1/09A7: E6 86        INC $86
 C1/09A9: A5 86        LDA $86
 C1/09AB: C9 03        CMP #$03
-C1/09AD: D0 DC        BNE Local_C1098B
+C1/09AD: D0 DC        BNE $098B
 C1/09AF: 60           RTS

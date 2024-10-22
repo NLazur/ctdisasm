@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: BDD2
 Routine_D0BDD2:
-D0/BDD2: F0 F0        BEQ Local_D0BDC4
-D0/BDD4: 90 90        BCC Local_D0BD66
+D0/BDD2: F0 F0        BEQ $BDC4
+D0/BDD4: 90 90        BCC $BD66
 D0/BDD6: A0 80 C0     LDY #$C080
 D0/BDD9: C0 00 00     CPY #$0000
 D0/BDDC: 00 00        BRK $00

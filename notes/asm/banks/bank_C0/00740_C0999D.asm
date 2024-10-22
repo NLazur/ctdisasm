@@ -1,23 +1,23 @@
 ; Bank: C0 | Start Address: 999D
 Routine_C0999D:
 C0/999D: E2 20        SEP #$20
-C0/999F: 80 97        BRA Local_C09938
+C0/999F: 80 97        BRA $9938
 C0/99A1: 8E EB 01     STX $01EB
 C0/99A4: C2 20        REP #$20
 C0/99A6: BD 80 18     LDA $1880,X
 C0/99A9: E5 68        SBC $68
-C0/99AB: 10 1F        BPL Local_C099CC
+C0/99AB: 10 1F        BPL $99CC
 C0/99AD: 49 FF FF     EOR #$FFFF
 C0/99B0: 1A           INC
 C0/99B1: C9 E0 00     CMP #$00E0
-C0/99B4: B0 E7        BCS Local_C0999D
+C0/99B4: B0 E7        BCS $999D
 C0/99B6: BD 00 18     LDA $1800,X
 C0/99B9: E5 66        SBC $66
-C0/99BB: 10 16        BPL Local_C099D3
+C0/99BB: 10 16        BPL $99D3
 C0/99BD: 49 FF FF     EOR #$FFFF
 C0/99C0: 1A           INC
 C0/99C1: C9 E0 00     CMP #$00E0
-C0/99C4: B0 D7        BCS Local_C0999D
+C0/99C4: B0 D7        BCS $999D
 C0/99C6: E2 20        SEP #$20
 C0/99C8: C2 10        REP #$10
 C0/99CA: 18           CLC

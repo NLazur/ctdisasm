@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 2678
 Routine_D02678:
-D0/2678: 30 50        BMI Local_D026CA
-D0/267A: 20 50 20     JSR Local_D02050
-D0/267D: 50 68        BVC Local_D026E7
+D0/2678: 30 50        BMI $26CA
+D0/267A: 20 50 20     JSR $2050
+D0/267D: 50 68        BVC $26E7
 D0/267F: 58           CLI
 D0/2680: 58           CLI
 D0/2681: 68           PLA

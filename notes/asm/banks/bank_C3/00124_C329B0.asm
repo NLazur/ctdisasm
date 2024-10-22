@@ -9,36 +9,36 @@ C3/29BD: 76 18        ROR $18,X
 C3/29BF: 69 C0 00     ADC #$00C0
 C3/29C2: 04 85        TSB $85
 C3/29C4: F6 51        INC $51,X
-C3/29C6: 30 F8        BMI Local_C329C0
+C3/29C6: 30 F8        BMI $29C0
 C3/29C8: A5 F6        LDA $F6
 C3/29CA: 38           SEC
 C3/29CB: E5 0A        SBC $0A
-C3/29CD: F0 0E        BEQ Local_C329DD
+C3/29CD: F0 0E        BEQ $29DD
 C3/29CF: 00 F8        BRK $F8
 C3/29D1: 09 09 F8     ORA #$F809
 C3/29D4: A5 51        LDA $51
 C3/29D6: 65 12        ADC $12
 C3/29D8: F6 82        INC $82,X
-C3/29DA: 10 65        BPL Local_C32A41
+C3/29DA: 10 65        BPL $2A41
 C3/29DC: F8           SED
 C3/29DD: 81 00        STA ($00,X)
 C3/29DF: 76 E5        ROR $E5,X
 C3/29E1: F8           SED
 C3/29E2: 03 77        ORA $77,S
-C3/29E4: 10 06        BPL Local_C329EC
+C3/29E4: 10 06        BPL $29EC
 C3/29E6: 00 78        BRK $78
-C3/29E8: 80 43        BRA Local_C32A2D
+C3/29E8: 80 43        BRA $2A2D
 C3/29EA: A5 76        LDA $76
 C3/29EC: 38           SEC
-C3/29ED: 22 E9 36 00  JSR Routine_0036E9
-C3/29F1: F0 A5        BEQ Local_C32998
+C3/29ED: 22 E9 36 00  JSR $0036E9
+C3/29F1: F0 A5        BEQ $2998
 C3/29F3: 78           SEI
 C3/29F4: 45 30        EOR $30
 C3/29F6: 51 18        EOR ($18),Y
 C3/29F8: DA           PHX
 C3/29F9: 69 6E 03     ADC #$036E
 C3/29FC: F6 AD        INC $AD,X
-C3/29FE: 30 45        BMI Local_C32A45
+C3/29FE: 30 45        BMI $2A45
 C3/2A00: C0 76 45     CPY #$4576
 C3/2A03: 00 B0        BRK $B0
 C3/2A05: 00 35        BRK $35

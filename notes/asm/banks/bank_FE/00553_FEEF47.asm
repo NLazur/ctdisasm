@@ -2,7 +2,7 @@
 Routine_FEEF47:
 FE/EF47: C9 40 48     CMP #$4840
 FE/EF4A: 8C 88 34     STY $3488
-FE/EF4D: 90 45        BCC Local_FEEF94
+FE/EF4D: 90 45        BCC $EF94
 FE/EF4F: 58           CLI
 FE/EF50: 25 01        AND $01
 FE/EF52: 34 00        BIT $00,X
@@ -16,11 +16,11 @@ FE/EF63: FD 1A 0C     SBC $0C1A,X
 FE/EF66: 00 21        BRK $21
 FE/EF68: 21 00        AND ($00,X)
 FE/EF6A: 01 40        ORA ($40,X)
-FE/EF6C: 10 10        BPL Local_FEEF7E
+FE/EF6C: 10 10        BPL $EF7E
 FE/EF6E: 84 14        STY $14
 FE/EF70: 01 05        ORA ($05,X)
 FE/EF72: B8           CLV
-FE/EF73: 20 01 08     JSR Local_FE0801
+FE/EF73: 20 01 08     JSR $0801
 FE/EF76: D4 07        PEI $07
 FE/EF78: 8A           TXA
 FE/EF79: 02 DE        COP $DE

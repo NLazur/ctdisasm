@@ -1,7 +1,7 @@
 ; Bank: CE | Start Address: 8042
 Routine_CE8042:
 CE/8042: 01 34        ORA ($34,X)
-CE/8044: 10 69        BPL Local_CE80AF
+CE/8044: 10 69        BPL $80AF
 CE/8046: 04 72        TSB $72
 CE/8048: 14 27        TRB $27
 CE/804A: C2 00        REP #$00
@@ -29,7 +29,7 @@ CE/806D: 23 01        AND $01,S
 CE/806F: 06 10        ASL $10
 CE/8071: 34 1B        BIT $1B,X
 CE/8073: 7A           PLY
-CE/8074: 80 02        BRA Local_CE8078
+CE/8074: 80 02        BRA $8078
 CE/8076: 24 05        BIT $05
 CE/8078: 29 06 03     AND #$0306
 CE/807B: 24 06        BIT $06
@@ -56,12 +56,12 @@ CE/80A5: 09 1B 2E     ORA #$2E1B
 CE/80A8: 12 09        ORA ($09)
 CE/80AA: 24 04        BIT $04
 CE/80AC: 85 C0        STA $C0
-CE/80AE: 20 0F 43     JSR Local_CE430F
+CE/80AE: 20 0F 43     JSR $430F
 CE/80B1: 09 FF FA     ORA #$FAFF
 CE/80B4: 41 1E        EOR ($1E,X)
 CE/80B6: 00 41        BRK $41
 CE/80B8: 1F 01 1B 09  ORA $091B01,X
-CE/80BC: 30 0E        BMI Local_CE80CC
+CE/80BC: 30 0E        BMI $80CC
 CE/80BE: 04 30        TSB $30
 CE/80C0: 0A           ASL
 CE/80C1: 2A           ROL
@@ -72,23 +72,23 @@ CE/80C7: 0A           ASL
 CE/80C8: A8           TAY
 CE/80C9: 0A           ASL
 CE/80CA: 0B           PHD
-CE/80CB: 30 0E        BMI Local_CE80DB
+CE/80CB: 30 0E        BMI $80DB
 CE/80CD: 03 A8        ORA $A8,S
 CE/80CF: 0A           ASL
 CE/80D0: 0D A8 0A     ORA $0AA8
-CE/80D3: 30 0E        BMI Local_CE80E3
+CE/80D3: 30 0E        BMI $80E3
 CE/80D5: 02 A8        COP $A8
 CE/80D7: 0A           ASL
-CE/80D8: 30 0E        BMI Local_CE80E8
+CE/80D8: 30 0E        BMI $80E8
 CE/80DA: 01 A8        ORA ($A8,X)
 CE/80DC: 64 7A        STZ $7A
 CE/80DE: 0B           PHD
 CE/80DF: 09 34 1A     ORA #$1A34
 CE/80E2: 2D 80 32     AND $3280
 CE/80E5: A3 36        LDA $36,S
-CE/80E7: 20 01 2D     JSR Local_CE2D01
-CE/80EA: 80 12        BRA Local_CE80FE
+CE/80E7: 20 01 2D     JSR $2D01
+CE/80EA: 80 12        BRA $80FE
 CE/80EC: 28           PLP
 CE/80ED: 00 D9        BRK $D9
-CE/80EF: 30 0C        BMI Local_CE80FD
+CE/80EF: 30 0C        BMI $80FD
 CE/80F1: 60           RTS

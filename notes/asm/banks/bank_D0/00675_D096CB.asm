@@ -6,8 +6,8 @@ D0/96D3: 03 7F        ORA $7F,S
 D0/96D5: 00 0C        BRK $0C
 D0/96D7: 00 05        BRK $05
 D0/96D9: 33 01        AND ($01,S),Y
-D0/96DB: 10 00        BPL Local_D096DD
-D0/96DD: 3C 1C 00     BIT Local_D0001C,X
+D0/96DB: 10 00        BPL $96DD
+D0/96DD: 3C 1C 00     BIT $001C,X
 D0/96E0: 00 01        BRK $01
 D0/96E2: 01 02        ORA ($02,X)
 D0/96E4: 03 04        ORA $04,S
@@ -19,10 +19,10 @@ D0/96EF: 28           PLP
 D0/96F0: 00 C0        BRK $C0
 D0/96F2: C0 20        CPY #$20
 D0/96F4: E0 10        CPX #$10
-D0/96F6: F0 08        BEQ Local_D09700
-D0/96F8: 70 88        BVS Local_D09682
-D0/96FA: 70 88        BVS Local_D09684
-D0/96FC: 70 88        BVS Local_D09686
+D0/96F6: F0 08        BEQ $9700
+D0/96F8: 70 88        BVS $9682
+D0/96FA: 70 88        BVS $9684
+D0/96FC: 70 88        BVS $9686
 D0/96FE: C0 38        CPY #$38
 D0/9700: 00 03        BRK $03
 D0/9702: 03 04        ORA $04,S

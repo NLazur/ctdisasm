@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: D356
 Routine_D0D356:
-D0/D356: 20 00 00     JSR Local_D00000
+D0/D356: 20 00 00     JSR $0000
 D0/D359: 00 00        BRK $00
 D0/D35B: 00 00        BRK $00
 D0/D35D: 00 C0        BRK $C0
@@ -22,11 +22,11 @@ D0/D37E: 7E 3C BE     ROR $BE3C,X
 D0/D381: D6 5C        DEC $5C,X
 D0/D383: A8           TAY
 D0/D384: 88           DEY
-D0/D385: 70 FC        BVS Local_D0D383
+D0/D385: 70 FC        BVS $D383
 D0/D387: 84 84        STY $84
 D0/D389: 06 C0        ASL $C0
 D0/D38B: 9C 5E 08     STZ $085E
-D0/D38E: 10 84        BPL Local_D0D314
+D0/D38E: 10 84        BPL $D314
 D0/D390: 00 00        BRK $00
 D0/D392: 00 00        BRK $00
 D0/D394: 03 02        ORA $02,S
@@ -41,19 +41,19 @@ D0/D3A2: 02 04        COP $04
 D0/D3A4: 0F 02 05 08  ORA $080502
 D0/D3A8: 00 00        BRK $00
 D0/D3AA: 00 00        BRK $00
-D0/D3AC: F0 10        BEQ Local_D0D3BE
+D0/D3AC: F0 10        BEQ $D3BE
 D0/D3AE: 28           PLP
 D0/D3AF: E8           INX
 D0/D3B0: 18           CLC
-D0/D3B1: F0 F8        BEQ Local_D0D3AB
-D0/D3B3: F0 F8        BEQ Local_D0D3AD
+D0/D3B1: F0 F8        BEQ $D3AB
+D0/D3B3: F0 F8        BEQ $D3AD
 D0/D3B5: 58           CLI
-D0/D3B6: 70 A0        BVS Local_D0D358
+D0/D3B6: 70 A0        BVS $D358
 D0/D3B8: 00 00        BRK $00
-D0/D3BA: 10 18        BPL Local_D0D3D4
+D0/D3BA: 10 18        BPL $D3D4
 D0/D3BC: 00 70        BRK $70
 D0/D3BE: 78           SEI
-D0/D3BF: 20 00 00     JSR Local_D00000
+D0/D3BF: 20 00 00     JSR $0000
 D0/D3C2: 3F 21 62 3E  AND $3E6221,X
 D0/D3C6: 81 BF        STA ($BF,X)
 D0/D3C8: DD 42 91     CMP $9142,X
@@ -78,9 +78,9 @@ D0/D3EE: 54 AA 00     MVN $AA,$00
 D0/D3F1: 00 00        BRK $00
 D0/D3F3: 00 00        BRK $00
 D0/D3F5: 00 1F        BRK $1F
-D0/D3F7: 10 31        BPL Local_D0D42A
+D0/D3F7: 10 31        BPL $D42A
 D0/D3F9: 1F 40 5F 6E  ORA $6E5F40,X
 D0/D3FD: 21 48        AND ($48,X)
 D0/D3FF: 3F 00 00 00  AND $000000,X
-D0/D403: 10 00        BPL Local_D0D405
+D0/D403: 10 00        BPL $D405
 D0/D405: 60           RTS

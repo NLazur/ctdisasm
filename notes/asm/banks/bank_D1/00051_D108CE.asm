@@ -4,7 +4,7 @@ D1/08CE: 1D 35 48     ORA $4835,X
 D1/08D1: EA           NOP
 D1/08D2: 3B           TSC
 D1/08D3: 00 17        BRK $17
-D1/08D5: 20 3B 28     JSR Local_D1283B
+D1/08D5: 20 3B 28     JSR $283B
 D1/08D8: E6 80        INC $80
 D1/08DA: E0 25        CPX #$25
 D1/08DC: 45 00        EOR $00

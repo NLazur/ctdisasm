@@ -4,11 +4,11 @@ C6/35E6: 0E 51 0E     ASL $0E51
 C6/35E9: 51 00        EOR ($00),Y
 C6/35EB: 4E 61 0E     LSR $0E61
 C6/35EE: 61 4E        ADC ($4E,X)
-C6/35F0: 50 4E        BVC Local_C63640
-C6/35F2: D0 50        BNE Local_C63644
+C6/35F0: 50 4E        BVC $3640
+C6/35F2: D0 50        BNE $3644
 C6/35F4: 0D 60 4E     ORA $4E60
 C6/35F7: E0 80        CPX #$80
-C6/35F9: 30 84        BMI Local_C6357F
+C6/35F9: 30 84        BMI $357F
 C6/35FB: BA           TSX
 C6/35FC: 03 94        ORA $94,S
 C6/35FE: 03 BA        ORA $BA,S

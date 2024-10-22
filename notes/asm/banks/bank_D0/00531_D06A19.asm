@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 6A19
 Routine_D06A19:
 D0/6A19: C0 90        CPY #$90
-D0/6A1B: F0 C2        BEQ Local_D069DF
+D0/6A1B: F0 C2        BEQ $69DF
 D0/6A1D: 4E D0 31     LSR $31D0
 D0/6A20: 42 BE        WDM $BE
 D0/6A22: 00 FF        BRK $FF
@@ -9,9 +9,9 @@ D0/6A24: E0 FF 0F     CPX #$0FFF
 D0/6A27: 0F 00 00 00  ORA $000000
 D0/6A2B: 00 00        BRK $00
 D0/6A2D: 00 80        BRK $80
-D0/6A2F: 80 00        BRA Local_D06A31
+D0/6A2F: 80 00        BRA $6A31
 D0/6A31: 00 10        BRK $10
-D0/6A33: F0 00        BEQ Local_D06A35
+D0/6A33: F0 00        BEQ $6A35
 D0/6A35: FF 00 FF 00  SBC $00FF00,X
 D0/6A39: 00 00        BRK $00
 D0/6A3B: 00 00        BRK $00
@@ -27,7 +27,7 @@ D0/6A4E: 00 00        BRK $00
 D0/6A50: 00 00        BRK $00
 D0/6A52: 00 00        BRK $00
 D0/6A54: 00 00        BRK $00
-D0/6A56: F0 F0        BEQ Local_D06A48
+D0/6A56: F0 F0        BEQ $6A48
 D0/6A58: 00 00        BRK $00
 D0/6A5A: 00 00        BRK $00
 D0/6A5C: 00 00        BRK $00
@@ -38,9 +38,9 @@ D0/6A64: 0F 0F 19 1F  ORA $1F190F
 D0/6A68: 00 00        BRK $00
 D0/6A6A: 00 00        BRK $00
 D0/6A6C: 00 00        BRK $00
-D0/6A6E: 70 70        BVS Local_D06AE0
+D0/6A6E: 70 70        BVS $6AE0
 D0/6A70: C0 C0        CPY #$C0
-D0/6A72: 80 80        BRA Local_D069F4
+D0/6A72: 80 80        BRA $69F4
 D0/6A74: 00 00        BRK $00
 D0/6A76: 00 00        BRK $00
 D0/6A78: 25 3B        AND $3B
@@ -55,8 +55,8 @@ D0/6A88: 74 8C        STZ $8C,X
 D0/6A8A: BD C3 CB     LDA $CBC3,X
 D0/6A8D: F4 91 9E     PEA $9E91
 D0/6A90: C7 47        CMP [$47]
-D0/6A92: 20 E0 D0     JSR Local_D0D0E0
-D0/6A95: F0 60        BEQ Local_D06AF7
+D0/6A92: 20 E0 D0     JSR $D0E0
+D0/6A95: F0 60        BEQ $6AF7
 D0/6A97: 78           SEI
 D0/6A98: 00 00        BRK $00
 D0/6A9A: 00 00        BRK $00

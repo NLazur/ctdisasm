@@ -1,13 +1,13 @@
 ; Bank: C2 | Start Address: 8CA2
 Routine_C28CA2:
-C2/8CA2: 20 75 8C     JSR Local_C28C75
-C2/8CA5: D0 27        BNE Local_C28CCE
+C2/8CA2: 20 75 8C     JSR $8C75
+C2/8CA5: D0 27        BNE $8CCE
 C2/8CA7: C0 02        CPY #$02
-C2/8CA9: F0 09        BEQ Local_C28CB4
+C2/8CA9: F0 09        BEQ $8CB4
 C2/8CAB: B9 81 29     LDA $2981,Y
 C2/8CAE: 99 80 29     STA $2980,Y
 C2/8CB1: C8           INY
-C2/8CB2: 80 F3        BRA Local_C28CA7
+C2/8CB2: 80 F3        BRA $8CA7
 C2/8CB4: B9 80 29     LDA $2980,Y
 C2/8CB7: 09 80        ORA #$80
 C2/8CB9: 99 80 29     STA $2980,Y
@@ -16,8 +16,8 @@ C2/8CBE: A0 03        LDY #$03
 C2/8CC0: BE 80 29     LDX $2980,Y
 C2/8CC3: 99 80 29     STA $2980,Y
 C2/8CC6: 8A           TXA
-C2/8CC7: 30 05        BMI Local_C28CCE
+C2/8CC7: 30 05        BMI $8CCE
 C2/8CC9: C8           INY
 C2/8CCA: C0 09        CPY #$09
-C2/8CCC: 90 F2        BCC Local_C28CC0
+C2/8CCC: 90 F2        BCC $8CC0
 C2/8CCE: 60           RTS

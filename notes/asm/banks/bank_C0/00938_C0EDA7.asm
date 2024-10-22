@@ -1,8 +1,8 @@
 ; Bank: C0 | Start Address: EDA7
 Routine_C0EDA7:
 C0/EDA7: 3A           DEC
-C0/EDA8: F0 03        BEQ Local_C0EDAD
-C0/EDAA: 82 DE 00     BRL Routine_C0EE8B
+C0/EDA8: F0 03        BEQ $EDAD
+C0/EDAA: 82 DE 00     BRL $C0EE8B
 C0/EDAD: A9 80        LDA #$80
 C0/EDAF: 8D 15 21     STA $2115
 C0/EDB2: C2 20        REP #$20

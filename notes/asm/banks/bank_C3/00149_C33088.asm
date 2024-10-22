@@ -3,7 +3,7 @@ Routine_C33088:
 C3/3088: 9F 12 81 21  STA $218112,X
 C3/308C: 9F 02 04 83  STA $830402,X
 C3/3090: 21 F8        AND ($F8,X)
-C3/3092: 22 60 00 8E  JSR Routine_8E0060
+C3/3092: 22 60 00 8E  JSR $8E0060
 C3/3096: FE FF 61     INC $61FF,X
 C3/3099: FB           XCE
 C3/309A: 1E 21 5B     ASL $5B21,X
@@ -12,18 +12,18 @@ C3/309F: 41 0E        EOR ($0E,X)
 C3/30A1: F2 24        SBC ($24)
 C3/30A3: AA           TAX
 C3/30A4: 00 A0        BRK $A0
-C3/30A6: 10 00        BPL Local_C330A8
+C3/30A6: 10 00        BPL $30A8
 C3/30A8: BD 00 02     LDA $0200,X
 C3/30AB: 85 18        STA $18
 C3/30AD: 00 E8        BRK $E8
 C3/30AF: E8           INX
 C3/30B0: 88           DEY
-C3/30B1: D0 F6        BNE Local_C330A9
+C3/30B1: D0 F6        BNE $30A9
 C3/30B3: CE FE FF     DEC $FFFE
 C3/30B6: 04 D0        TSB $D0
 C3/30B8: E3 F5        SBC $F5,S
 C3/30BA: 15 E2        ORA $E2,X
-C3/30BC: 20 AB 60     JSR Local_C360AB
+C3/30BC: 20 AB 60     JSR $60AB
 C3/30BF: 05 02        ORA $02
 C3/30C1: 00 01        BRK $01
 C3/30C3: 00 0F        BRK $0F
@@ -55,7 +55,7 @@ C3/30F3: 55 FB        EOR $FB,X
 C3/30F5: 11 2C        ORA ($2C),Y
 C3/30F7: 00 10        BRK $10
 C3/30F9: C0 FF        CPY #$FF
-C3/30FB: 90 35        BCC Local_C33132
+C3/30FB: 90 35        BCC $3132
 C3/30FD: 00 5D        BRK $5D
 C3/30FF: 55 00        EOR $00,X
 C3/3101: FD 65 55     SBC $5565,X
@@ -89,7 +89,7 @@ C3/313F: 28           PLP
 C3/3140: 00 0F        BRK $0F
 C3/3142: 00 00        BRK $00
 C3/3144: A1 55        LDA ($55,X)
-C3/3146: 80 07        BRA Local_C3314F
+C3/3146: 80 07        BRA $314F
 C3/3148: 00 9E        BRK $9E
 C3/314A: 55 08        EOR $08,X
 C3/314C: 12 FF        ORA ($FF)

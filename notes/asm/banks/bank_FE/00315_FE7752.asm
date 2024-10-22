@@ -1,11 +1,11 @@
 ; Bank: FE | Start Address: 7752
 Routine_FE7752:
 FE/7752: E1 00        SBC ($00,X)
-FE/7754: 20 51 B0     JSR Local_FEB051
+FE/7754: 20 51 B0     JSR $B051
 FE/7757: F1 90        SBC ($90),Y
 FE/7759: 71 10        ADC ($10),Y
 FE/775B: F7 80        SBC [$80],Y
-FE/775D: 10 F7        BPL Local_FE7756
+FE/775D: 10 F7        BPL $7756
 FE/775F: 14 00        TRB $00
 FE/7761: 00 C7        BRK $C7
 FE/7763: 41 02        EOR ($02,X)
@@ -21,17 +21,17 @@ FE/7775: E3 20        SBC $20,S
 FE/7777: 53 B4        EOR ($B4,S),Y
 FE/7779: F7 90        SBC [$90],Y
 FE/777B: 77 00        ADC [$00],Y
-FE/777D: 10 F3        BPL Local_FE7772
+FE/777D: 10 F3        BPL $7772
 FE/777F: 14 F3        TRB $F3
-FE/7781: 10 00        BPL Local_FE7783
+FE/7781: 10 00        BPL $7783
 FE/7783: 00 FE        BRK $FE
-FE/7785: 10 02        BPL Local_FE7789
+FE/7785: 10 02        BPL $7789
 FE/7787: FE 02 7E     INC $7E02,X
 FE/778A: 88           DEY
 FE/778B: 01 80        ORA ($80,X)
-FE/778D: 80 F0        BRA Local_FE777F
+FE/778D: 80 F0        BRA $777F
 FE/778F: C8           INY
-FE/7790: 70 E8        BVS Local_FE777A
+FE/7790: 70 E8        BVS $777A
 FE/7792: 18           CLC
 FE/7793: 00 7E        BRK $7E
 FE/7795: EE 22 02     INC $0222

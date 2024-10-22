@@ -16,7 +16,7 @@ D1/FCE9: CA           DEX
 D1/FCEA: CA           DEX
 D1/FCEB: CA           DEX
 D1/FCEC: CA           DEX
-D1/FCED: D0 E2        BNE Local_D1FCD1
+D1/FCED: D0 E2        BNE $FCD1
 D1/FCEF: C2 10        REP #$10
 D1/FCF1: E2 20        SEP #$20
 D1/FCF3: 60           RTS

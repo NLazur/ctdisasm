@@ -12,7 +12,7 @@ C3/3EED: 03 84        ORA $84,S
 C3/3EEF: 81 A0        STA ($A0,X)
 C3/3EF1: 08           PHP
 C3/3EF2: 00 A5        BRK $A5
-C3/3EF4: 80 04        BRA Local_C33EFA
+C3/3EF4: 80 04        BRA $3EFA
 C3/3EF6: 85 18        STA $18
 C3/3EF8: 04 00        TSB $00
 C3/3EFA: 19 88 D0     ORA $D088,Y
@@ -20,7 +20,7 @@ C3/3EFD: F5 84        SBC $84,X
 C3/3EFF: C2 18        REP #$18
 C3/3F01: 02 B0        COP $B0
 C3/3F03: CA           DEX
-C3/3F04: D0 DF        BNE Local_C33EE5
+C3/3F04: D0 DF        BNE $3EE5
 C3/3F06: 2B           PLD
 C3/3F07: 66 0F        ROR $0F
 C3/3F09: CB           WAI
@@ -34,13 +34,13 @@ C3/3F18: 14 02        TRB $02
 C3/3F1A: 0B           PHD
 C3/3F1B: 87 1A        STA [$1A]
 C3/3F1D: 03 06        ORA $06,S
-C3/3F1F: 10 60        BPL Local_C33F81
+C3/3F1F: 10 60        BPL $3F81
 C3/3F21: A9 01 18     LDA #$1801
 C3/3F24: 9C 1B 21     STZ $211B
 C3/3F27: C6 0A        DEC $0A
 C3/3F29: B9 04 1C     LDA $1C04,Y
 C3/3F2C: 21 9C        AND ($9C,X)
-C3/3F2E: 50 74        BVC Local_C33FA4
+C3/3F2E: 50 74        BVC $3FA4
 C3/3F30: 43 A9        EOR $A9,S
 C3/3F32: 34 12        BIT $12,X
 C3/3F34: 25 14        AND $14

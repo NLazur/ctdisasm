@@ -1,12 +1,12 @@
 ; Bank: FE | Start Address: 630F
 Routine_FE630F:
-FE/630F: 90 30        BCC Local_FE6341
+FE/630F: 90 30        BCC $6341
 FE/6311: 67 00        ADC [$00]
 FE/6313: 58           CLI
 FE/6314: FF 1A 00 FF  SBC $FF001A,X
 FE/6318: 6A           ROR
 FE/6319: EE 72 F3     INC $F372
-FE/631C: 70 F7        BVS Local_FE6315
+FE/631C: 70 F7        BVS $6315
 FE/631E: 32 00        AND ($00)
 FE/6320: F2 30        SBC ($30)
 FE/6322: F3 31        SBC ($31,S),Y
@@ -19,14 +19,14 @@ FE/632F: 72 4A        ADC ($4A)
 FE/6331: 00 31        BRK $31
 FE/6333: 48           PHA
 FE/6334: 31 49        AND ($49),Y
-FE/6336: 30 42        BMI Local_FE637A
+FE/6336: 30 42        BMI $637A
 FE/6338: A0 42 20     LDY #$2042
 FE/633B: 00 02        BRK $02
 FE/633D: E0 42 60     CPX #$6042
 FE/6340: FD 00 C0     SBC $C000,X
 FE/6343: 02 00        COP $00
-FE/6345: 80 02        BRA Local_FE6349
-FE/6347: 80 00        BRA Local_FE6349
-FE/6349: 3C 80 3C     BIT Local_FE3C80,X
+FE/6345: 80 02        BRA $6349
+FE/6347: 80 00        BRA $6349
+FE/6349: 3C 80 3C     BIT $3C80,X
 FE/634C: A0 00 1C     LDY #$1C00
 FE/634F: 60           RTS

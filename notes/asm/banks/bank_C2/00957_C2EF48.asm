@@ -2,7 +2,7 @@
 Routine_C2EF48:
 C2/EF48: 08           PHP
 C2/EF49: C2 30        REP #$30
-C2/EF4B: 20 90 ED     JSR Local_C2ED90
+C2/EF4B: 20 90 ED     JSR $ED90
 C2/EF4E: A5 5B        LDA $5B
 C2/EF50: 0A           ASL
 C2/EF51: AA           TAX
@@ -13,6 +13,6 @@ C2/EF59: E2 20        SEP #$20
 C2/EF5B: A9 FF        LDA #$FF
 C2/EF5D: EB           XBA
 C2/EF5E: A5 5F        LDA $5F
-C2/EF60: 20 65 EF     JSR Local_C2EF65
+C2/EF60: 20 65 EF     JSR $EF65
 C2/EF63: 28           PLP
 C2/EF64: 60           RTS

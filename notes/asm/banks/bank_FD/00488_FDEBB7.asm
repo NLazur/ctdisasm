@@ -27,7 +27,7 @@ FD/EBE4: A5 14        LDA $14
 FD/EBE6: 38           SEC
 FD/EBE7: ED 16 42     SBC $4216
 FD/EBEA: 85 14        STA $14
-FD/EBEC: 30 14        BMI Local_FDEC02
+FD/EBEC: 30 14        BMI $EC02
 FD/EBEE: EB           XBA
 FD/EBEF: 9F 2C 70 7F  STA $7F702C,X
 FD/EBF3: A4 15        LDY $15
@@ -36,43 +36,43 @@ FD/EBF8: A5 16        LDA $16
 FD/EBFA: 18           CLC
 FD/EBFB: 6D 16 42     ADC $4216
 FD/EBFE: 85 16        STA $16
-FD/EC00: 80 DD        BRA Local_FDEBDF
+FD/EC00: 80 DD        BRA $EBDF
 FD/EC02: A9 00 00     LDA #$0000
 FD/EC05: E2 20        SEP #$20
 FD/EC07: A5 21        LDA $21
 FD/EC09: 38           SEC
 FD/EC0A: E5 0A        SBC $0A
-FD/EC0C: 90 03        BCC Local_FDEC11
-FD/EC0E: 20 80 EC     JSR Local_FDEC80
+FD/EC0C: 90 03        BCC $EC11
+FD/EC0E: 20 80 EC     JSR $EC80
 FD/EC11: A4 1F        LDY $1F
 FD/EC13: A6 0A        LDX $0A
 FD/EC15: E4 21        CPX $21
-FD/EC17: 90 02        BCC Local_FDEC1B
+FD/EC17: 90 02        BCC $EC1B
 FD/EC19: A6 21        LDX $21
 FD/EC1B: CA           DEX
 FD/EC1C: 98           TYA
 FD/EC1D: 38           SEC
 FD/EC1E: FF 2C 70 7F  SBC $7F702C,X
-FD/EC22: B0 01        BCS Local_FDEC25
+FD/EC22: B0 01        BCS $EC25
 FD/EC24: 7B           TDC
 FD/EC25: 8D 80 21     STA $2180
 FD/EC28: 98           TYA
 FD/EC29: 18           CLC
 FD/EC2A: 7F 2C 70 7F  ADC $7F702C,X
-FD/EC2E: 90 02        BCC Local_FDEC32
+FD/EC2E: 90 02        BCC $EC32
 FD/EC30: A9 FF        LDA #$FF
 FD/EC32: 8D 80 21     STA $2180
 FD/EC35: CA           DEX
-FD/EC36: D0 E4        BNE Local_FDEC1C
+FD/EC36: D0 E4        BNE $EC1C
 FD/EC38: A4 1F        LDY $1F
 FD/EC3A: A6 0A        LDX $0A
 FD/EC3C: A5 21        LDA $21
 FD/EC3E: C9 FF        CMP #$FF
-FD/EC40: B0 3B        BCS Local_FDEC7D
+FD/EC40: B0 3B        BCS $EC7D
 FD/EC42: 18           CLC
 FD/EC43: 65 0A        ADC $0A
 FD/EC45: C9 FF        CMP #$FF
-FD/EC47: 90 06        BCC Local_FDEC4F
+FD/EC47: 90 06        BCC $EC4F
 FD/EC49: A9 FF        LDA #$FF
 FD/EC4B: 38           SEC
 FD/EC4C: E5 21        SBC $21
@@ -82,23 +82,23 @@ FD/EC51: A6 08        LDX $08
 FD/EC53: 98           TYA
 FD/EC54: 38           SEC
 FD/EC55: FF 2C 70 7F  SBC $7F702C,X
-FD/EC59: B0 02        BCS Local_FDEC5D
+FD/EC59: B0 02        BCS $EC5D
 FD/EC5B: A9 00        LDA #$00
 FD/EC5D: 8D 80 21     STA $2180
 FD/EC60: 98           TYA
 FD/EC61: 18           CLC
 FD/EC62: 7F 2C 70 7F  ADC $7F702C,X
-FD/EC66: 90 02        BCC Local_FDEC6A
+FD/EC66: 90 02        BCC $EC6A
 FD/EC68: A9 FF        LDA #$FF
 FD/EC6A: 8D 80 21     STA $2180
 FD/EC6D: E8           INX
 FD/EC6E: E4 18        CPX $18
-FD/EC70: D0 E1        BNE Local_FDEC53
+FD/EC70: D0 E1        BNE $EC53
 FD/EC72: A9 00        LDA #$00
 FD/EC74: 38           SEC
 FD/EC75: E5 0A        SBC $0A
 FD/EC77: 38           SEC
 FD/EC78: E5 21        SBC $21
-FD/EC7A: 20 80 EC     JSR Local_FDEC80
+FD/EC7A: 20 80 EC     JSR $EC80
 FD/EC7D: C2 10        REP #$10
 FD/EC7F: 60           RTS

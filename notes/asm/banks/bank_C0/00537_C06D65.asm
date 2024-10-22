@@ -2,7 +2,7 @@
 Routine_C06D65:
 C0/6D65: A7 D6        LDA [$D6]       ; load map animation graphics to VRAM
 C0/6D67: C9 FF        CMP #$FF
-C0/6D69: F0 2C        BEQ Local_C06D97
+C0/6D69: F0 2C        BEQ $6D97
 C0/6D6B: C2 20        REP #$20        ; 1st animation graphics to $7F6000
 C0/6D6D: 29 FF 00     AND #$00FF
 C0/6D70: 85 D9        STA $D9
@@ -19,13 +19,13 @@ C0/6D87: BF 22 22 F6  LDA $F62222,X
 C0/6D8B: 8D 02 03     STA $0302
 C0/6D8E: A9 7F        LDA #$7F
 C0/6D90: 8D 05 03     STA $0305
-C0/6D93: 22 02 00 C3  JSR Routine_C30002
+C0/6D93: 22 02 00 C3  JSR $C30002
 C0/6D97: A6 D6        LDX $D6         ; 2nd animation graphics to $7F7000
 C0/6D99: E8           INX
 C0/6D9A: 86 D6        STX $D6
 C0/6D9C: A7 D6        LDA [$D6]
 C0/6D9E: C9 FF        CMP #$FF
-C0/6DA0: F0 2C        BEQ Local_C06DCE
+C0/6DA0: F0 2C        BEQ $6DCE
 C0/6DA2: C2 20        REP #$20
 C0/6DA4: 29 FF 00     AND #$00FF
 C0/6DA7: 85 D9        STA $D9
@@ -42,5 +42,5 @@ C0/6DBE: BF 22 22 F6  LDA $F62222,X
 C0/6DC2: 8D 02 03     STA $0302
 C0/6DC5: A9 7F        LDA #$7F
 C0/6DC7: 8D 05 03     STA $0305
-C0/6DCA: 22 02 00 C3  JSR Routine_C30002
+C0/6DCA: 22 02 00 C3  JSR $C30002
 C0/6DCE: 60           RTS

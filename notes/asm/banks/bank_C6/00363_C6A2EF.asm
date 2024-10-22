@@ -1,8 +1,8 @@
 ; Bank: C6 | Start Address: A2EF
 Routine_C6A2EF:
-C6/A2EF: 50 D0        BVC Local_C6A2C1
-C6/A2F1: D0 D0        BNE Local_C6A2C3
-C6/A2F3: 20 71 01     JSR Local_C60171
+C6/A2EF: 50 D0        BVC $A2C1
+C6/A2F1: D0 D0        BNE $A2C3
+C6/A2F3: 20 71 01     JSR $0171
 C6/A2F6: 00 02        BRK $02
 C6/A2F8: E4 06        CPX $06
 C6/A2FA: E5 29        SBC $29
@@ -17,7 +17,7 @@ C6/A306: E3 08        SBC $08,S
 C6/A308: 7B           TDC
 C6/A309: 01 2A        ORA ($2A,X)
 C6/A30B: 02 2A        COP $2A
-C6/A30D: 70 51        BVS Local_C6A360
+C6/A30D: 70 51        BVS $A360
 C6/A30F: A1 A2        LDA ($A2,X)
 C6/A311: C2 80        REP #$80
 C6/A313: 06 81        ASL $81

@@ -15,7 +15,7 @@ D0/8DB0: 7B           TDC
 D0/8DB1: 1F FC 87 7E  ORA $7E87FC,X
 D0/8DB5: 65 BE        ADC $BE
 D0/8DB7: 63 8F        ADC $8F,S
-D0/8DB9: 70 BA        BVS Local_D08D75
+D0/8DB9: 70 BA        BVS $8D75
 D0/8DBB: 05 23        ORA $23
 D0/8DBD: 9D B3 4C     STA $4CB3,X
 D0/8DC0: 9F 87 E5 E3  STA $E3E587,X
@@ -30,14 +30,14 @@ D0/8DCE: 78           SEI
 D0/8DCF: E8           INX
 D0/8DD0: 78           SEI
 D0/8DD1: E8           INX
-D0/8DD2: F0 50        BEQ Local_D08E24
-D0/8DD4: F0 D0        BEQ Local_D08DA6
-D0/8DD6: F0 90        BEQ Local_D08D68
+D0/8DD2: F0 50        BEQ $8E24
+D0/8DD4: F0 D0        BEQ $8DA6
+D0/8DD6: F0 90        BEQ $8D68
 D0/8DD8: 48           PHA
 D0/8DD9: A8           TAY
 D0/8DDA: E8           INX
 D0/8DDB: E8           INX
 D0/8DDC: E8           INX
-D0/8DDD: 50 D0        BVC Local_D08DAF
-D0/8DDF: 90 7F        BCC Local_D08E60
+D0/8DDD: 50 D0        BVC $8DAF
+D0/8DDF: 90 7F        BCC $8E60
 D0/8DE1: 40           RTI

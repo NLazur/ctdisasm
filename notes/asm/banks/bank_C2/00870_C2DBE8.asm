@@ -5,12 +5,12 @@ C2/DBE9: E2 30        SEP #$30
 C2/DBEB: A2 00        LDX #$00
 C2/DBED: 9B           TXY
 C2/DBEE: BD 5F 0D     LDA $0D5F,X
-C2/DBF1: 30 04        BMI Local_C2DBF7
+C2/DBF1: 30 04        BMI $DBF7
 C2/DBF3: 99 4D 10     STA $104D,Y
 C2/DBF6: C8           INY
 C2/DBF7: E8           INX
 C2/DBF8: E0 09        CPX #$09
-C2/DBFA: 90 F2        BCC Local_C2DBEE
+C2/DBFA: 90 F2        BCC $DBEE
 C2/DBFC: A9 FF        LDA #$FF
 C2/DBFE: 99 4D 10     STA $104D,Y
 C2/DC01: 8C 55 10     STY $1055

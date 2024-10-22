@@ -2,9 +2,9 @@
 Routine_CC055A:
 CC/055A: 0B           PHD
 CC/055B: 00 00        BRK $00
-CC/055D: 10 02        BPL Local_CC0561
+CC/055D: 10 02        BPL $0561
 CC/055F: 00 00        BRK $00
-CC/0561: 10 05        BPL Local_CC0568
+CC/0561: 10 05        BPL $0568
 CC/0563: 00 20        BRK $20
 CC/0565: 00 00        BRK $00
 CC/0567: 00 20        BRK $20

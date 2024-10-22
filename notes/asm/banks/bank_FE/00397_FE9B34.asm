@@ -7,15 +7,15 @@ FE/9B39: 01 3A        ORA ($3A,X)
 FE/9B3B: 26 3E        ROL $3E
 FE/9B3D: 27 3F        AND [$3F]
 FE/9B3F: 00 5F        BRK $5F
-FE/9B41: 30 87        BMI Local_FE9ACA
+FE/9B41: 30 87        BMI $9ACA
 FE/9B43: 98           TYA
 FE/9B44: FF F8 F4 01  SBC $01F4F8,X
 FE/9B48: F8           SED
 FE/9B49: 01 D1        ORA ($D1,X)
 FE/9B4B: 39 00 D0     AND $D000,Y
 FE/9B4E: 78           SEI
-FE/9B4F: B0 98        BCS Local_FE9AE9
-FE/9B51: 70 98        BVS Local_FE9AEB
+FE/9B4F: B0 98        BCS $9AE9
+FE/9B51: 70 98        BVS $9AEB
 FE/9B53: 07 FF        ORA [$FF]
 FE/9B55: 1D 99 0D     ORA $0D99,X
 FE/9B58: F8           SED
@@ -27,7 +27,7 @@ FE/9B63: 9A           TXS
 FE/9B64: FF F9 77 5E  SBC $5E77F9,X
 FE/9B68: FF FF 01 AD  SBC $AD01FF,X
 FE/9B6C: 00 80        BRK $80
-FE/9B6E: 5C C2 2F F1  JMP Routine_F12FC2
+FE/9B6E: 5C C2 2F F1  JMP $F12FC2
 FE/9B72: F7 F8        SBC [$F8],Y
 FE/9B74: FB           XCE
 FE/9B75: 00 04        BRK $04
@@ -46,7 +46,7 @@ FE/9B94: E3 5F        SBC $5F,S
 FE/9B96: F7 3F        SBC [$3F],Y
 FE/9B98: 58           CLI
 FE/9B99: 00 B1        BRK $B1
-FE/9B9B: F0 60        BEQ Local_FE9BFD
+FE/9B9B: F0 60        BEQ $9BFD
 FE/9B9D: E2 70        SEP #$70
 FE/9B9F: F1 7F        SBC ($7F),Y
 FE/9BA1: 29 00        AND #$00

@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: C684
 Routine_D0C684:
-D0/C684: 3C 24 14     BIT Local_D01424,X
+D0/C684: 3C 24 14     BIT $1424,X
 D0/C687: 18           CLC
 D0/C688: 08           PHP
 D0/C689: 0F 0C 0F 07  ORA $070F0C
@@ -10,8 +10,8 @@ D0/C691: 00 00        BRK $00
 D0/C693: 00 00        BRK $00
 D0/C695: 00 00        BRK $00
 D0/C697: 00 70        BRK $70
-D0/C699: F0 F0        BEQ Local_D0C68B
-D0/C69B: F0 E0        BEQ Local_D0C67D
+D0/C699: F0 F0        BEQ $C68B
+D0/C69B: F0 E0        BEQ $C67D
 D0/C69D: E0 C0        CPX #$C0
 D0/C69F: C0 00        CPY #$00
 D0/C6A1: 00 00        BRK $00
@@ -33,6 +33,6 @@ D0/C6C2: 7E 81 FD     ROR $FD81,X
 D0/C6C5: 03 FC        ORA $FC,S
 D0/C6C7: 02 14        COP $14
 D0/C6C9: 1A           INC
-D0/C6CA: 2C 32 3E     BIT Local_D03E32
-D0/C6CD: 22 5C 60 7C  JSR Routine_7C605C
+D0/C6CA: 2C 32 3E     BIT $3E32
+D0/C6CD: 22 5C 60 7C  JSR $7C605C
 D0/C6D1: 40           RTI

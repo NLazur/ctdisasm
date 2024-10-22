@@ -13,8 +13,8 @@ D0/855C: F8           SED
 D0/855D: F8           SED
 D0/855E: D8           CLD
 D0/855F: F8           SED
-D0/8560: 70 F0        BVS Local_D08552
-D0/8562: F0 F0        BEQ Local_D08554
+D0/8560: 70 F0        BVS $8552
+D0/8562: F0 F0        BEQ $8554
 D0/8564: B4 F4        LDY $F4,X
 D0/8566: BC FC 43     LDY $43FC,X
 D0/8569: 43 43        EOR $43,S
@@ -37,7 +37,7 @@ D0/8590: 67 6F        ADC [$6F]
 D0/8592: 73 77        ADC ($77,S),Y
 D0/8594: 58           CLI
 D0/8595: 5B           TCD
-D0/8596: 2C 2C 4F     BIT Local_D04F2C
+D0/8596: 2C 2C 4F     BIT $4F2C
 D0/8599: 3E 9F DF     ROL $DF9F,X
 D0/859C: 5F 4F 67 33  EOR $33674F,X
 D0/85A0: FE F7 FC     INC $FCF7,X
@@ -124,7 +124,7 @@ D0/8650: F3 E3        SBC ($E3,S),Y
 D0/8652: F3 A3        SBC ($A3,S),Y
 D0/8654: F9 F1 F9     SBC $F9F1,Y
 D0/8657: B9 7D 55     LDA $557D,Y
-D0/865A: 3C 34 0C     BIT Local_D00C34,X
+D0/865A: 3C 34 0C     BIT $0C34,X
 D0/865D: 0C 00 00     TSB $0000
 D0/8660: 63 E3        ADC $E3,S
 D0/8662: B1 D9        LDA ($D9),Y
@@ -143,6 +143,6 @@ D0/867C: CB           WAI
 D0/867D: FC 38 00     JSR ($0038,X)
 D0/8680: E8           INX
 D0/8681: E8           INX
-D0/8682: F0 F0        BEQ Local_D08674
-D0/8684: D0 D0        BNE Local_D08656
+D0/8682: F0 F0        BEQ $8674
+D0/8684: D0 D0        BNE $8656
 D0/8686: 60           RTS

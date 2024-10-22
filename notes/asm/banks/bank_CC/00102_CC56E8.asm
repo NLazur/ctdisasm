@@ -6,5 +6,5 @@ CC/56EF: 0A           ASL
 CC/56F0: 0B           PHD
 CC/56F1: 07 64        ORA [$64]
 CC/56F3: 14 63        TRB $63
-CC/56F5: 22 FF 40 40  JSR Routine_4040FF
+CC/56F5: 22 FF 40 40  JSR $4040FF
 CC/56F9: 40           RTI

@@ -1,11 +1,11 @@
 ; Bank: C6 | Start Address: 0806
 Routine_C60806:
-C6/0806: 20 78 28     JSR Local_C62878
+C6/0806: 20 78 28     JSR $2878
 C6/0809: 38           SEC
 C6/080A: 08           PHP
 C6/080B: 08           PHP
 C6/080C: 26 00        ROL $00
-C6/080E: 30 00        BMI Local_C60810
+C6/080E: 30 00        BMI $0810
 C6/0810: 02 3E        COP $3E
 C6/0812: 55 00        EOR $00,X
 C6/0814: 00 78        BRK $78
@@ -17,7 +17,7 @@ C6/081D: 00 3F        BRK $3F
 C6/081F: 02 00        COP $00
 C6/0821: 0F 00 01 C4  ORA $C40100
 C6/0825: 00 CC        BRK $CC
-C6/0827: 82 8D 82     BRL Routine_C68AB7
+C6/0827: 82 8D 82     BRL $C68AB7
 C6/082A: 92 03        STA ($03)
 C6/082C: 1A           INC
 C6/082D: 03 00        ORA $00,S
@@ -28,13 +28,13 @@ C6/0834: 07 74        ORA [$74]
 C6/0836: C7 00        CMP [$00]
 C6/0838: 38           SEC
 C6/0839: 81 7E        STA ($7E,X)
-C6/083B: 82 7D 02     BRL Routine_C60ABB
+C6/083B: 82 7D 02     BRL $C60ABB
 C6/083E: FD 02 00     SBC $0002,X
 C6/0841: FD 06 F9     SBC $F906,X
 C6/0844: 06 F9        ASL $F9
 C6/0846: 04 FB        TSB $FB
-C6/0848: 50 00        BVC Local_C6084A
-C6/084A: D0 67        BNE Local_C608B3
+C6/0848: 50 00        BVC $084A
+C6/084A: D0 67        BNE $08B3
 C6/084C: E1 FF        SBC ($FF,X)
 C6/084E: 45 FC        EOR $FC
 C6/0850: 03 53        ORA $53,S

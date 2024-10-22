@@ -6,8 +6,8 @@ D1/36AD: 00 41        BRK $41
 D1/36AF: 08           PHP
 D1/36B0: 81 08        STA ($08,X)
 D1/36B2: C1 E8        CMP ($E8,X)
-D1/36B4: 80 EA        BRA Local_D136A0
-D1/36B6: 10 80        BPL Local_D13638
+D1/36B4: 80 EA        BRA $36A0
+D1/36B6: 10 80        BPL $3638
 D1/36B8: EA           NOP
 D1/36B9: C0 E8        CPY #$E8
 D1/36BB: 1F 28 EC 00  ORA $00EC28,X

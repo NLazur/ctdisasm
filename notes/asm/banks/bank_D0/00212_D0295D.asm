@@ -14,5 +14,5 @@ D0/2974: 02 03        COP $03
 D0/2976: F2 F3        SBC ($F3)
 D0/2978: A0 E0        LDY #$E0
 D0/297A: A0 E0        LDY #$E0
-D0/297C: 20 E0 A0     JSR Local_D0A0E0
+D0/297C: 20 E0 A0     JSR $A0E0
 D0/297F: 60           RTS

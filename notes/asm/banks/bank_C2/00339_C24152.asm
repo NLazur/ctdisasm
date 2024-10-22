@@ -1,9 +1,9 @@
 ; Bank: C2 | Start Address: 4152
 Routine_C24152:
 C2/4152: BD 30 00     LDA $0030,X
-C2/4155: 10 05        BPL Local_C2415C
+C2/4155: 10 05        BPL $415C
 C2/4157: A9 FF FF     LDA #$FFFF
-C2/415A: 80 03        BRA Local_C2415F
+C2/415A: 80 03        BRA $415F
 C2/415C: A9 01 00     LDA #$0001
 C2/415F: 9D 20 00     STA $0020,X
 C2/4162: 9E 1E 00     STZ $001E,X

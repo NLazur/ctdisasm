@@ -8,6 +8,6 @@ C1/2CD5: 4A           LSR
 C1/2CD6: 4A           LSR
 C1/2CD7: 4A           LSR
 C1/2CD8: C9 0B        CMP #$0B
-C1/2CDA: B0 03        BCS Local_C12CDF
+C1/2CDA: B0 03        BCS $2CDF
 C1/2CDC: CE 72 98     DEC $9872
 C1/2CDF: 60           RTS

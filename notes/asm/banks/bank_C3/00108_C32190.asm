@@ -1,7 +1,7 @@
 ; Bank: C3 | Start Address: 2190
 Routine_C32190:
 C3/2190: 00 85        BRK $85
-C3/2192: 30 20        BMI Local_C321B4
+C3/2192: 30 20        BMI $21B4
 C3/2194: 09 43 A5     ORA #$A543
 C3/2197: 0A           ASL
 C3/2198: 85 00        STA $00
@@ -12,7 +12,7 @@ C3/21A1: 85 00        STA $00
 C3/21A3: 36 A5        ROL $A5,X
 C3/21A5: 16 85        ASL $85,X
 C3/21A7: 38           SEC
-C3/21A8: 4C 7B 35     JMP Local_C3357B
+C3/21A8: 4C 7B 35     JMP $357B
 C3/21AB: 00 9C        BRK $9C
 C3/21AD: 46 14        LSR $14
 C3/21AF: A2 46 14     LDX #$1446

@@ -2,7 +2,7 @@
 Routine_D116D3:
 D1/16D3: 68           PLA
 D1/16D4: 01 EC        ORA ($EC,X)
-D1/16D6: 80 66        BRA Local_D1173E
+D1/16D6: 80 66        BRA $173E
 D1/16D8: 01 0C        ORA ($0C,X)
 D1/16DA: 00 80        BRK $80
 D1/16DC: 00 C0        BRK $C0
@@ -19,7 +19,7 @@ D1/16F0: EA           NOP
 D1/16F1: 00 EC        BRK $EC
 D1/16F3: 00 28        BRK $28
 D1/16F5: 00 34        BRK $34
-D1/16F7: 20 E8 34     JSR Local_D134E8
+D1/16F7: 20 E8 34     JSR $34E8
 D1/16FA: 08           PHP
 D1/16FB: 00 60        BRK $60
 D1/16FD: C0 C0        CPY #$C0

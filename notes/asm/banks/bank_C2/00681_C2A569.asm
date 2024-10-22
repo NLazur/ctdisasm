@@ -11,18 +11,18 @@ C2/A57A: A8           TAY
 C2/A57B: E2 20        SEP #$20
 C2/A57D: B9 00 0F     LDA $0F00,Y
 C2/A580: 8D C9 04     STA $04C9
-C2/A583: F0 01        BEQ Local_C2A586
+C2/A583: F0 01        BEQ $A586
 C2/A585: C8           INY
 C2/A586: C2 30        REP #$30
 C2/A588: DA           PHX
 C2/A589: 5A           PHY
-C2/A58A: 20 9A A5     JSR Local_C2A59A
+C2/A58A: 20 9A A5     JSR $A59A
 C2/A58D: 7A           PLY
 C2/A58E: 68           PLA
 C2/A58F: 18           CLC
 C2/A590: 69 80 00     ADC #$0080
 C2/A593: AA           TAX
 C2/A594: C6 22        DEC $22
-C2/A596: D0 E3        BNE Local_C2A57B
+C2/A596: D0 E3        BNE $A57B
 C2/A598: 28           PLP
 C2/A599: 60           RTS

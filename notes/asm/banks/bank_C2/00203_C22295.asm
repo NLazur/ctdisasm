@@ -7,7 +7,7 @@ C2/229B: FF 6B 38 A5  SBC $A5386B,X
 C2/229F: 0A           ASL
 C2/22A0: E5 0E        SBC $0E
 C2/22A2: 85 00        STA $00
-C2/22A4: 10 04        BPL Local_C222AA
+C2/22A4: 10 04        BPL $22AA
 C2/22A6: 49 FF        EOR #$FF
 C2/22A8: FF 1A 85 02  SBC $02851A,X
 C2/22AC: C9 00        CMP #$00
@@ -23,7 +23,7 @@ C2/22C2: 00 38        BRK $38
 C2/22C4: A5 08        LDA $08
 C2/22C6: E5 0C        SBC $0C
 C2/22C8: 85 04        STA $04
-C2/22CA: 10 04        BPL Local_C222D0
+C2/22CA: 10 04        BPL $22D0
 C2/22CC: 49 FF        EOR #$FF
 C2/22CE: FF 1A 85 06  SBC $06851A,X
 C2/22D2: C9 00        CMP #$00
@@ -51,9 +51,9 @@ C2/2300: 85 06        STA $06
 C2/2302: C2 20        REP #$20
 C2/2304: A5 00        LDA $00
 C2/2306: 45 04        EOR $04
-C2/2308: 30 0E        BMI Local_C22318
+C2/2308: 30 0E        BMI $2318
 C2/230A: A5 04        LDA $04
-C2/230C: 30 07        BMI Local_C22315
+C2/230C: 30 07        BMI $2315
 C2/230E: 18           CLC
 C2/230F: A9 80 00     LDA #$0080
 C2/2312: 65 06        ADC $06

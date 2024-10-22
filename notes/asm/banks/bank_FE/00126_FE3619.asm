@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: 3619
 Routine_FE3619:
-FE/3619: 30 47        BMI Local_FE3662
+FE/3619: 30 47        BMI $3662
 FE/361B: 08           PHP
 FE/361C: FF CC 48 2F  SBC $2F48CC,X
 FE/3620: 1C 3D 10     TRB $103D
@@ -14,13 +14,13 @@ FE/362F: 07 EF        ORA [$EF]
 FE/3631: 21 EC        AND ($EC,X)
 FE/3633: 0D 18 33     ORA $3318
 FE/3636: 64 B9        STZ $B9
-FE/3638: 10 3D        BPL Local_FE3677
-FE/363A: 30 E8        BMI Local_FE3624
+FE/3638: 10 3D        BPL $3677
+FE/363A: 30 E8        BMI $3624
 FE/363C: 34 DF        BIT $DF,X
 FE/363E: B2 07        LDA ($07)
 FE/3640: B6 0A        LDX $0A,Y
 FE/3642: 78           SEI
-FE/3643: 22 33 0A F3  JSR Routine_F30A33
+FE/3643: 22 33 0A F3  JSR $F30A33
 FE/3647: 1B           TCS
 FE/3648: 17 54        ORA [$54],Y
 FE/364A: 3B           TSC
@@ -28,18 +28,18 @@ FE/364B: 62 00 FF     PER $FE354E
 FE/364E: 42 17        WDM $17
 FE/3650: 77 4F        ADC [$4F],Y
 FE/3652: E8           INX
-FE/3653: 3C AD 57     BIT Local_FE57AD,X
+FE/3653: 3C AD 57     BIT $57AD,X
 FE/3656: 33 0A        AND ($0A,S),Y
-FE/3658: 80 5B        BRA Local_FE36B5
+FE/3658: 80 5B        BRA $36B5
 FE/365A: 6E 11 38     ROR $3811
 FE/365D: 0F FF B9 40  ORA $40B9FF
 FE/3661: 9C 3C 5C     STZ $5C3C
-FE/3664: 10 96        BPL Local_FE35FC
+FE/3664: 10 96        BPL $35FC
 FE/3666: 0F 8A 39 CC  ORA $CC398A
 FE/366A: 02 80        COP $80
 FE/366C: 33 AD        AND ($AD,S),Y
 FE/366E: 11 FF        ORA ($FF),Y
-FE/3670: F0 48        BEQ Local_FE36BA
+FE/3670: F0 48        BEQ $36BA
 FE/3672: CB           WAI
 FE/3673: 31 65        AND ($65),Y
 FE/3675: 1D 5C 10     ORA $105C,X
@@ -47,10 +47,10 @@ FE/3678: 9B           TXY
 FE/3679: 07 B4        ORA [$B4]
 FE/367B: 1B           TCS
 FE/367C: A3 29        LDA $29,S
-FE/367E: 80 2B        BRA Local_FE36AB
+FE/367E: 80 2B        BRA $36AB
 FE/3680: FE 5E B7     INC $B75E,X
-FE/3683: 10 3F        BPL Local_FE36C4
-FE/3685: 70 CB        BVS Local_FE3652
+FE/3683: 10 3F        BPL $36C4
+FE/3685: 70 CB        BVS $3652
 FE/3687: 11 D8        ORA ($D8),Y
 FE/3689: 18           CLC
 FE/368A: D2 38        CMP ($38)
@@ -58,8 +58,8 @@ FE/368C: 73 13        ADC ($13,S),Y
 FE/368E: 05 22        ORA $22
 FE/3690: FF 80 1B F2  SBC $F21B80,X
 FE/3694: 00 B7        BRK $B7
-FE/3696: 10 CE        BPL Local_FE3666
-FE/3698: 22 B8 4F F4  JSR Routine_F44FB8
+FE/3696: 10 CE        BPL $3666
+FE/3698: 22 B8 4F F4  JSR $F44FB8
 FE/369C: 0B           PHD
 FE/369D: 76 01        ROR $01,X
 FE/369F: 1D 30 FB     ORA $FB30,X

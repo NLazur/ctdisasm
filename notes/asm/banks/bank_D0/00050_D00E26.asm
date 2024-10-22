@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 0E26
 Routine_D00E26:
-D0/0E26: 80 40        BRA Local_D00E68
+D0/0E26: 80 40        BRA $0E68
 D0/0E28: 00 00        BRK $00
 D0/0E2A: 02 03        COP $03
 D0/0E2C: 0B           PHD
@@ -10,10 +10,10 @@ D0/0E34: 7F 40 3F 40  ADC $403F40,X
 D0/0E38: 04 07        TSB $07
 D0/0E3A: 13 1C        ORA ($1C,S),Y
 D0/0E3C: 2F 30 50 6C  AND $6C5030
-D0/0E40: 20 58 A0     JSR Local_D0A058
-D0/0E43: D0 40        BNE Local_D00E85
+D0/0E40: 20 58 A0     JSR $A058
+D0/0E43: D0 40        BNE $0E85
 D0/0E45: A0 40 A0     LDY #$A040
 D0/0E48: 04 07        TSB $07
-D0/0E4A: 10 1C        BPL Local_D00E68
-D0/0E4C: 20 30 40     JSR Local_D04030
+D0/0E4A: 10 1C        BPL $0E68
+D0/0E4C: 20 30 40     JSR $4030
 D0/0E4F: 60           RTS

@@ -20,7 +20,7 @@ D0/AC3C: 9C 30 B0     STZ $B030
 D0/AC3F: 38           SEC
 D0/AC40: 68           PLA
 D0/AC41: A8           TAY
-D0/AC42: 20 E0 40     JSR Local_D040E0
+D0/AC42: 20 E0 40     JSR $40E0
 D0/AC45: C0 00 80     CPY #$8000
 D0/AC48: 38           SEC
 D0/AC49: B8           CLV
@@ -43,22 +43,22 @@ D0/AC6A: 00 00        BRK $00
 D0/AC6C: 00 01        BRK $01
 D0/AC6E: 02 03        COP $03
 D0/AC70: 07 07        ORA [$07]
-D0/AC72: 10 1C        BPL Local_D0AC90
-D0/AC74: 20 38 48     JSR Local_D04838
+D0/AC72: 10 1C        BPL $AC90
+D0/AC74: 20 38 48     JSR $4838
 D0/AC77: 78           SEI
-D0/AC78: 20 50 A0     JSR Local_D0A050
-D0/AC7B: D0 60        BNE Local_D0ACDD
-D0/AC7D: 90 68        BCC Local_D0ACE7
+D0/AC78: 20 50 A0     JSR $A050
+D0/AC7B: D0 60        BNE $ACDD
+D0/AC7D: 90 68        BCC $ACE7
 D0/AC7F: 98           TYA
 D0/AC80: 00 00        BRK $00
 D0/AC82: 0E 0E 28     ASL $280E
 D0/AC85: 38           SEC
-D0/AC86: 50 70        BVC Local_D0ACF8
+D0/AC86: 50 70        BVC $ACF8
 D0/AC88: 00 60        BRK $60
 D0/AC8A: E0 A0 60     CPX #$60A0
 D0/AC8D: A0 60 A0     LDY #$A060
 D0/AC90: 00 00        BRK $00
 D0/AC92: 00 00        BRK $00
-D0/AC94: 10 10        BPL Local_D0ACA6
-D0/AC96: 20 20 40     JSR Local_D04020
+D0/AC94: 10 10        BPL $ACA6
+D0/AC96: 20 20 40     JSR $4020
 D0/AC99: 40           RTI

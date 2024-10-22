@@ -49,7 +49,7 @@ CD/2774: BD E8 CA     LDA $CAE8,X
 CD/2777: 18           CLC
 CD/2778: 77 40        ADC [$40],Y
 CD/277A: 9D E8 CA     STA $CAE8,X
-CD/277D: 20 D2 28     JSR Local_CD28D2
+CD/277D: 20 D2 28     JSR $28D2
 CD/2780: C2 30        REP #$30
 CD/2782: A5 40        LDA $40
 CD/2784: 18           CLC

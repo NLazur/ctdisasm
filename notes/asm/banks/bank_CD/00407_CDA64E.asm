@@ -6,15 +6,15 @@ CD/A652: 00 43        BRK $43
 CD/A654: 09 00 E1     ORA #$E100
 CD/A657: 1A           INC
 CD/A658: 24 01        BIT $01
-CD/A65A: 20 0F 34     JSR Local_CD340F
+CD/A65A: 20 0F 34     JSR $340F
 CD/A65D: 1B           TCS
 CD/A65E: 78           SEI
 CD/A65F: 74 0B        STZ $0B,X
 CD/A661: 12 0C        ORA ($0C)
 CD/A663: 36 00        ROL $00,X
 CD/A665: 72 0D        ADC ($0D)
-CD/A667: D0 C4        BNE Local_CDA62D
-CD/A669: F0 F0        BEQ Local_CDA65B
+CD/A667: D0 C4        BNE $A62D
+CD/A669: F0 F0        BEQ $A65B
 CD/A66B: C4 E8        CPY $E8
 CD/A66D: F8           SED
 CD/A66E: C4 E4        CPY $E4
@@ -27,7 +27,7 @@ CD/A67E: C4 E4        CPY $E4
 CD/A680: 02 C4        COP $C4
 CD/A682: E8           INX
 CD/A683: 04 C4        TSB $C4
-CD/A685: F0 08        BEQ Local_CDA68F
+CD/A685: F0 08        BEQ $A68F
 CD/A687: C5 10        CMP $10
 CD/A689: D1 06        CMP ($06),Y
 CD/A68B: 03 20        ORA $20,S
@@ -53,7 +53,7 @@ CD/A6B3: 78           SEI
 CD/A6B4: CD 22 1B     CMP $1B22
 CD/A6B7: 00 36        BRK $36
 CD/A6B9: 06 03        ASL $03
-CD/A6BB: 20 0F 50     JSR Local_CD500F
+CD/A6BB: 20 0F 50     JSR $500F
 CD/A6BE: 2E 01 00     ROL $0001
 CD/A6C1: 24 01        BIT $01
 CD/A6C3: 06 05        ASL $05

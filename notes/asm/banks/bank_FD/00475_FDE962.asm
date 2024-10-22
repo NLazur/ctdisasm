@@ -19,5 +19,5 @@ FD/E985: 9F 00 22 7E  STA $7E2200,X
 FD/E989: E8           INX
 FD/E98A: E8           INX
 FD/E98B: 88           DEY
-FD/E98C: D0 D8        BNE Local_FDE966
+FD/E98C: D0 D8        BNE $E966
 FD/E98E: 60           RTS

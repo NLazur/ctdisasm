@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: C52E
 Routine_FDC52E:
 FD/C52E: AF FD 1D 00  LDA $001DFD
-FD/C532: D0 1C        BNE Local_FDC550
+FD/C532: D0 1C        BNE $C550
 FD/C534: A9 64        LDA #$64
 FD/C536: 8D E6 12     STA $12E6
 FD/C539: A2 14        LDX #$14
@@ -36,7 +36,7 @@ FD/C581: 12 8E        ORA ($8E)
 FD/C583: EA           NOP
 FD/C584: 12 8E        ORA ($8E)
 FD/C586: ED 12 8E     SBC $8E12
-FD/C589: F0 12        BEQ Local_FDC59D
+FD/C589: F0 12        BEQ $C59D
 FD/C58B: 8E F3 12     STX $12F3
 FD/C58E: 8E F6 12     STX $12F6
 FD/C591: 8E F9 12     STX $12F9

@@ -10,11 +10,11 @@ FD/5938: 08           PHP
 FD/5939: 09 04        ORA #$04
 FD/593B: 0D 9E 0D     ORA $0D9E
 FD/593E: 81 08        STA ($08,X)
-FD/5940: 80 00        BRA Local_FD5942
+FD/5940: 80 00        BRA $5942
 FD/5942: 42 F8        WDM $F8
 FD/5944: 3E 58 0A     ROL $0A58,X
 FD/5947: 0A           ASL
-FD/5948: 80 00        BRA Local_FD594A
+FD/5948: 80 00        BRA $594A
 FD/594A: 24 08        BIT $08
 FD/594C: 0D 01 00     ORA $0001
 FD/594F: 06 07        ASL $07

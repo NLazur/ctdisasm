@@ -3,7 +3,7 @@ Routine_C71E05:
 C7/1E05: 27 42        AND [$42]
 C7/1E07: 0A           ASL
 C7/1E08: 26 45        ROL $45
-C7/1E0A: 50 27        BVC Local_C71E33
+C7/1E0A: 50 27        BVC $1E33
 C7/1E0C: 45 28        EOR $28
 C7/1E0E: 27 48        AND [$48]
 C7/1E10: 46 00        LSR $00

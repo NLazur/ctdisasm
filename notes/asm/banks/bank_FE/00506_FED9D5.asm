@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: D9D5
 Routine_FED9D5:
-FE/D9D5: 10 45        BPL Local_FEDA1C
+FE/D9D5: 10 45        BPL $DA1C
 FE/D9D7: 2A           ROL
 FE/D9D8: 02 83        COP $83
 FE/D9DA: 02 02        COP $02
@@ -10,7 +10,7 @@ FE/D9E1: CC 0F E6     CPY $E60F
 FE/D9E4: 02 10        COP $10
 FE/D9E6: 43 4A        EOR $4A,S
 FE/D9E8: 2B           PLD
-FE/D9E9: 2C FF 00     BIT Local_FE00FF
+FE/D9E9: 2C FF 00     BIT $00FF
 FE/D9EC: 4E 4F 5A     LSR $5A4F
 FE/D9EF: A0 54        LDY #$54
 FE/D9F1: 44 45 55     MVP $45,$55
@@ -26,7 +26,7 @@ FE/DA05: 6A           ROR
 FE/DA06: 84 CC        STY $CC
 FE/DA08: 6D 89 10     ADC $1089
 FE/DA0B: 55 2B        EOR $2B,X
-FE/DA0D: 2C 2E EB     BIT Local_FEEB2E
+FE/DA0D: 2C 2E EB     BIT $EB2E
 FE/DA10: 01 99        ORA ($99,X)
 FE/DA12: 11 00        ORA ($00),Y
 FE/DA14: EC ED 95     CPX $95ED
@@ -89,9 +89,9 @@ FE/DA8C: 4D 08 55     EOR $5508
 FE/DA8F: 0A           ASL
 FE/DA90: 6A           ROR
 FE/DA91: 94 01        STY $01,X
-FE/DA93: 20 CC DC     JSR Local_FEDCCC
+FE/DA93: 20 CC DC     JSR $DCCC
 FE/DA96: 6D 54 4A     ADC $4A54
-FE/DA99: 70 0B        BVS Local_FEDAA6
+FE/DA99: 70 0B        BVS $DAA6
 FE/DA9B: 0B           PHD
 FE/DA9C: 55 11        EOR $11,X
 FE/DA9E: FC 00 8A     JSR ($8A00,X)

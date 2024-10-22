@@ -22,13 +22,13 @@ C2/3F50: AD 85 02     LDA $0285
 C2/3F53: 85 0A        STA $0A
 C2/3F55: A5 0A        LDA $0A
 C2/3F57: C5 00        CMP $00
-C2/3F59: 90 10        BCC Local_C23F6B
+C2/3F59: 90 10        BCC $3F6B
 C2/3F5B: C5 02        CMP $02
-C2/3F5D: B0 0C        BCS Local_C23F6B
+C2/3F5D: B0 0C        BCS $3F6B
 C2/3F5F: A5 08        LDA $08
 C2/3F61: C5 04        CMP $04
-C2/3F63: 90 06        BCC Local_C23F6B
+C2/3F63: 90 06        BCC $3F6B
 C2/3F65: C5 06        CMP $06
-C2/3F67: B0 02        BCS Local_C23F6B
+C2/3F67: B0 02        BCS $3F6B
 C2/3F69: 38           SEC
 C2/3F6A: 60           RTS

@@ -10,7 +10,7 @@ C0/6851: E8           INX
 C0/6852: E8           INX
 C0/6853: BF 01 20 7F  LDA $7F2001,X
 C0/6857: C9 7E        CMP #$7E
-C0/6859: F0 25        BEQ Local_C06880
+C0/6859: F0 25        BEQ $6880
 C0/685B: C2 20        REP #$20
 C0/685D: E8           INX
 C0/685E: BF 01 20 7F  LDA $7F2001,X

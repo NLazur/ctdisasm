@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: 4FAB
 Routine_C04FAB:
-C0/4FAB: 20 A2 AB     JSR Local_C0ABA2
+C0/4FAB: 20 A2 AB     JSR $ABA2
 C0/4FAE: C2 20        REP #$20
 C0/4FB0: A5 EE        LDA $EE
 C0/4FB2: AA           TAX
@@ -8,8 +8,8 @@ C0/4FB3: E2 20        SEP #$20
 C0/4FB5: BD 00 F7     LDA $F700,X
 C0/4FB8: A6 6D        LDX $6D
 C0/4FBA: 9D 00 16     STA $1600,X
-C0/4FBD: 20 95 5B     JSR Local_C05B95
-C0/4FC0: 90 10        BCC Local_C04FD2
+C0/4FBD: 20 95 5B     JSR $5B95
+C0/4FC0: 90 10        BCC $4FD2
 C0/4FC2: A5 EE        LDA $EE
 C0/4FC4: 18           CLC
 C0/4FC5: 69 30        ADC #$30
@@ -23,8 +23,8 @@ C0/4FD4: BD 00 10     LDA $1000,X
 C0/4FD7: 9D 01 1A     STA $1A01,X
 C0/4FDA: 9F 00 0B 7F  STA $7F0B00,X
 C0/4FDE: 84 C7        STY $C7
-C0/4FE0: 20 FD AC     JSR Local_C0ACFD
-C0/4FE3: 20 14 56     JSR Local_C05614
+C0/4FE0: 20 FD AC     JSR $ACFD
+C0/4FE3: 20 14 56     JSR $5614
 C0/4FE6: A6 C7        LDX $C7
 C0/4FE8: 18           CLC
 C0/4FE9: 60           RTS

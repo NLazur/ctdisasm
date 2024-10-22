@@ -3,7 +3,7 @@ Routine_C009DD:
 C0/09DD: A6 FE        LDX $FE         ; load map tile assembly
 C0/09DF: BF 01 00 F6  LDA $F60001,X
 C0/09E3: C9 FF        CMP #$FF
-C0/09E5: F0 2C        BEQ Local_C00A13
+C0/09E5: F0 2C        BEQ $0A13
 C0/09E7: C2 30        REP #$30
 C0/09E9: 29 FF 00     AND #$00FF
 C0/09EC: 85 D9        STA $D9
@@ -20,5 +20,5 @@ C0/0A03: BF 02 21 F6  LDA $F62102,X
 C0/0A07: 8D 02 03     STA $0302
 C0/0A0A: A9 7E        LDA #$7E
 C0/0A0C: 8D 05 03     STA $0305
-C0/0A0F: 22 02 00 C3  JSR Routine_C30002
+C0/0A0F: 22 02 00 C3  JSR $C30002
 C0/0A13: 60           RTS

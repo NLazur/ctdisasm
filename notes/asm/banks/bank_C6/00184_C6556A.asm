@@ -13,7 +13,7 @@ C6/557D: 54 B8 54     MVN $B8,$54
 C6/5580: A8           TAY
 C6/5581: E8           INX
 C6/5582: 14 00        TRB $00
-C6/5584: 10 78        BPL Local_C655FE
+C6/5584: 10 78        BPL $55FE
 C6/5586: 75 10        ADC $10,X
 C6/5588: 78           SEI
 C6/5589: 0D 4C 0C     ORA $0C4C

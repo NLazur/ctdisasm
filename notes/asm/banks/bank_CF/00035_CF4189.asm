@@ -5,7 +5,7 @@ CF/418B: EB           XBA
 CF/418C: 4B           PHK
 CF/418D: F5 85        SBC $85,X
 CF/418F: FA           PLX
-CF/4190: 5C FF BB FE  JMP Routine_FEBBFF
+CF/4190: 5C FF BB FE  JMP $FEBBFF
 CF/4194: 54 FF B9     MVN $FF,$B9
 CF/4197: FE 56 FD     INC $FD56,X
 CF/419A: A9 FE        LDA #$FE
@@ -37,7 +37,7 @@ CF/41E5: FF 5E FE BC  SBC $BCFE5E,X
 CF/41E9: FC 5C FC     JSR ($FC5C,X)
 CF/41EC: B8           CLV
 CF/41ED: F8           SED
-CF/41EE: 70 F0        BVS Local_CF41E0
+CF/41EE: 70 F0        BVS $41E0
 CF/41F0: 05 06        ORA $06
 CF/41F2: 03 06        ORA $06,S
 CF/41F4: 05 06        ORA $06

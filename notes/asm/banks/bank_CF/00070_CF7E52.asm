@@ -26,7 +26,7 @@ CF/7E8E: FF 00 D0 28  SBC $28D000,X
 CF/7E92: E8           INX
 CF/7E93: 18           CLC
 CF/7E94: E0 10        CPX #$10
-CF/7E96: D0 30        BNE Local_CF7EC8
+CF/7E96: D0 30        BNE $7EC8
 CF/7E98: C0 20        CPY #$20
 CF/7E9A: A0 60        LDY #$60
 CF/7E9C: 00 C0        BRK $C0

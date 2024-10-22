@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: C868
 Routine_FEC868:
-FE/C868: 10 10        BPL Local_FEC87A
+FE/C868: 10 10        BPL $C87A
 FE/C86A: 02 02        COP $02
 FE/C86C: 08           PHP
 FE/C86D: 03 0E        ORA $0E,S
@@ -30,12 +30,12 @@ FE/C89B: 9B           TXY
 FE/C89C: 09 08        ORA #$08
 FE/C89E: 00 C7        BRK $C7
 FE/C8A0: 14 08        TRB $08
-FE/C8A2: 10 18        BPL Local_FEC8BC
+FE/C8A2: 10 18        BPL $C8BC
 FE/C8A4: 07 20        ORA [$20]
 FE/C8A6: 0A           ASL
 FE/C8A7: 08           PHP
 FE/C8A8: FF C4 09 07  SBC $0709C4,X
-FE/C8AC: 10 91        BPL Local_FEC83F
+FE/C8AC: 10 91        BPL $C83F
 FE/C8AE: 57 90        EOR [$90],Y
 FE/C8B0: 67 E4        ADC [$E4]
 FE/C8B2: 13 8A        ORA ($8A,S),Y
@@ -55,13 +55,13 @@ FE/C8CD: 33 07        AND ($07,S),Y
 FE/C8CF: 44 DB 03     MVP $DB,$03
 FE/C8D2: 18           CLC
 FE/C8D3: 54 1F 24     MVN $1F,$24
-FE/C8D6: 10 20        BPL Local_FEC8F8
+FE/C8D6: 10 20        BPL $C8F8
 FE/C8D8: FF 09 64 68  SBC $686409,X
-FE/C8DC: 20 39 44     JSR Local_FE4439
+FE/C8DC: 20 39 44     JSR $4439
 FE/C8DF: 48           PHA
 FE/C8E0: 64 4A        STZ $4A
 FE/C8E2: 84 40        STY $40
-FE/C8E4: 30 3F        BMI Local_FEC925
+FE/C8E4: 30 3F        BMI $C925
 FE/C8E6: 64 7C        STZ $7C
 FE/C8E8: 14 D8        TRB $D8
 FE/C8EA: 0A           ASL
@@ -70,12 +70,12 @@ FE/C8ED: 84 24        STY $24
 FE/C8EF: 34 04        BIT $04,X
 FE/C8F1: 41 F8        EOR ($F8,X)
 FE/C8F3: 23 97        AND $97,S
-FE/C8F5: 10 FF        BPL Local_FEC8F6
+FE/C8F5: 10 FF        BPL $C8F6
 FE/C8F7: 26 40        ROL $40
 FE/C8F9: 8F 04 83 34  STA $348304
 FE/C8FD: CB           WAI
 FE/C8FE: 23 EE        AND $EE,S
 FE/C900: 0B           PHD
 FE/C901: D2 23        CMP ($23)
-FE/C903: 82 08 07     BRL Routine_FED00E
+FE/C903: 82 08 07     BRL $FED00E
 FE/C906: 40           RTI

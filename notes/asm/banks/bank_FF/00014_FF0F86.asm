@@ -17,7 +17,7 @@ FF/0FA8: 52 7F        EOR ($7F)
 FF/0FAA: C6 3E        DEC $3E
 FF/0FAC: ED 1C F0     SBC $F01C
 FF/0FAF: 11 EF        ORA ($EF),Y
-FF/0FB1: 10 EF        BPL Local_FF0FA2
-FF/0FB3: 10 FF        BPL Local_FF0FB4
+FF/0FB1: 10 EF        BPL $0FA2
+FF/0FB3: 10 FF        BPL $0FB4
 FF/0FB5: 00 BF        BRK $BF
 FF/0FB7: 40           RTI

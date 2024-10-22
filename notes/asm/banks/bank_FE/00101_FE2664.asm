@@ -13,11 +13,11 @@ FE/2679: 0A           ASL
 FE/267A: 1B           TCS
 FE/267B: 2B           PLD
 FE/267C: E0 13 9B     CPX #$9B13
-FE/267F: 10 34        BPL Local_FE26B5
+FE/267F: 10 34        BPL $26B5
 FE/2681: 00 3C        BRK $3C
 FE/2683: EE 2B FF     INC $FF2B
 FE/2686: BC 3D 0B     LDY $0B3D,X
-FE/2689: 30 B0        BMI Local_FE263B
+FE/2689: 30 B0        BMI $263B
 FE/268B: 1B           TCS
 FE/268C: 0C 17 20     TSB $2017
 FE/268F: 1A           INC

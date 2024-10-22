@@ -16,7 +16,7 @@ FD/E63F: 9F 00 22 7E  STA $7E2200,X
 FD/E643: E8           INX
 FD/E644: E8           INX
 FD/E645: 88           DEY
-FD/E646: D0 F3        BNE Local_FDE63B
+FD/E646: D0 F3        BNE $E63B
 FD/E648: A9 00 00     LDA #$0000
 FD/E64B: E2 20        SEP #$20
 FD/E64D: 7A           PLY

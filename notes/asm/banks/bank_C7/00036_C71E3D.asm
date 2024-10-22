@@ -1,6 +1,6 @@
 ; Bank: C7 | Start Address: 1E3D
 Routine_C71E3D:
-C7/1E3D: 50 26        BVC Local_C71E65
+C7/1E3D: 50 26        BVC $1E65
 C7/1E3F: 43 40        EOR $40,S
 C7/1E41: 00 00        BRK $00
 C7/1E43: 00 29        BRK $29

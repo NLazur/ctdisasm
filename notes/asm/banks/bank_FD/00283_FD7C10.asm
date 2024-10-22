@@ -1,14 +1,14 @@
 ; Bank: FD | Start Address: 7C10
 Routine_FD7C10:
 FD/7C10: 00 70        BRK $70
-FD/7C12: 70 7C        BVS Local_FD7C90
+FD/7C12: 70 7C        BVS $7C90
 FD/7C14: 7C E0 9B     JMP ($9BE0,X)
 FD/7C17: 8F E4 00 83  STA $8300E4
 FD/7C1B: C0 23        CPY #$23
 FD/7C1D: 7E 01 70     ROR $7001,X
 FD/7C20: 11 90        ORA ($90),Y
 FD/7C22: 17 60        ORA [$60],Y
-FD/7C24: F0 02        BEQ Local_FD7C28
+FD/7C24: F0 02        BEQ $7C28
 FD/7C26: 07 B4        ORA [$B4]
 FD/7C28: 05 01        ORA $01
 FD/7C2A: FF 81 7F C1  SBC $C17F81,X

@@ -15,8 +15,8 @@ D0/0214: 00 00        BRK $00
 D0/0216: 00 00        BRK $00
 D0/0218: C0 C0        CPY #$C0
 D0/021A: E0 E0 70     CPX #$70E0
-D0/021D: F0 70        BEQ Local_D0028F
-D0/021F: F0 00        BEQ Local_D00221
+D0/021D: F0 70        BEQ $028F
+D0/021F: F0 00        BEQ $0221
 D0/0221: 00 00        BRK $00
 D0/0223: 00 03        BRK $03
 D0/0225: 03 0F        ORA $0F,S
@@ -26,7 +26,7 @@ D0/022E: 39 3F 00     AND $003F,Y
 D0/0231: 00 00        BRK $00
 D0/0233: 00 C0        BRK $C0
 D0/0235: C0 F0        CPY #$F0
-D0/0237: F0 F8        BEQ Local_D00231
+D0/0237: F0 F8        BEQ $0231
 D0/0239: F8           SED
 D0/023A: F8           SED
 D0/023B: F8           SED

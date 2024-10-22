@@ -1,12 +1,12 @@
 ; Bank: FF | Start Address: 0D6F
 Routine_FF0D6F:
 FF/0D6F: 8F 30 C0 00  STA $00C030
-FF/0D73: 80 00        BRA Local_FF0D75
+FF/0D73: 80 00        BRA $0D75
 FF/0D75: C0 80 E0     CPY #$E080
 FF/0D78: C0 F0 E0     CPY #$E0F0
-FF/0D7B: F0 E0        BEQ Local_FF0D5D
-FF/0D7D: F0 60        BEQ Local_FF0DDF
-FF/0D7F: F0 FF        BEQ Local_FF0D80
+FF/0D7B: F0 E0        BEQ $0D5D
+FF/0D7D: F0 60        BEQ $0DDF
+FF/0D7F: F0 FF        BEQ $0D80
 FF/0D81: 00 FF        BRK $FF
 FF/0D83: 00 FF        BRK $FF
 FF/0D85: 00 FF        BRK $FF
@@ -54,7 +54,7 @@ FF/0DD6: 00 00        BRK $00
 FF/0DD8: 01 00        ORA ($00,X)
 FF/0DDA: 00 02        BRK $02
 FF/0DDC: 04 00        TSB $00
-FF/0DDE: 10 08        BPL Local_FF0DE8
+FF/0DDE: 10 08        BPL $0DE8
 FF/0DE0: E0 1F 8F     CPX #$8F1F
 FF/0DE3: 7C F9 07     JMP ($07F9,X)
 FF/0DE6: BE 5D 79     LDX $795D,Y

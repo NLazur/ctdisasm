@@ -26,7 +26,7 @@ D1/E908: 8E 0B 42     STX $420B
 D1/E90B: 18           CLC
 D1/E90C: 69 20 00     ADC #$0020
 D1/E90F: C6 47        DEC $47
-D1/E911: D0 EF        BNE Local_D1E902
+D1/E911: D0 EF        BNE $E902
 D1/E913: 7B           TDC
 D1/E914: E2 20        SEP #$20
 D1/E916: C2 10        REP #$10

@@ -22,13 +22,13 @@ C2/EEA8: C8           INY
 C2/EEA9: C8           INY
 C2/EEAA: C2 20        REP #$20
 C2/EEAC: C6 06        DEC $06
-C2/EEAE: F0 17        BEQ Local_C2EEC7
+C2/EEAE: F0 17        BEQ $EEC7
 C2/EEB0: 8A           TXA
 C2/EEB1: 1A           INC
 C2/EEB2: 29 03 00     AND #$0003
 C2/EEB5: 05 0A        ORA $0A
 C2/EEB7: AA           TAX
-C2/EEB8: D0 DE        BNE Local_C2EE98
+C2/EEB8: D0 DE        BNE $EE98
 C2/EEBA: 98           TYA
 C2/EEBB: 38           SEC
 C2/EEBC: E9 08 00     SBC #$0008
@@ -45,8 +45,8 @@ C2/EECF: A5 0A        LDA $0A
 C2/EED1: 69 04 00     ADC #$0004
 C2/EED4: 29 0C 00     AND #$000C
 C2/EED7: 85 0A        STA $0A
-C2/EED9: F0 06        BEQ Local_C2EEE1
+C2/EED9: F0 06        BEQ $EEE1
 C2/EEDB: C6 8C        DEC $8C
-C2/EEDD: D0 B1        BNE Local_C2EE90
+C2/EEDD: D0 B1        BNE $EE90
 C2/EEDF: 28           PLP
 C2/EEE0: 60           RTS

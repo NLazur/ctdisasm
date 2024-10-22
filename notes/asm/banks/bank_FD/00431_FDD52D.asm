@@ -25,14 +25,14 @@ FD/D558: 85 DF        STA $DF
 FD/D55A: A9 E8        LDA #$E8
 FD/D55C: 85 E1        STA $E1
 FD/D55E: E4 DB        CPX $DB
-FD/D560: F0 0E        BEQ Local_FDD570
+FD/D560: F0 0E        BEQ $D570
 FD/D562: A5 E1        LDA $E1
 FD/D564: 9D 39 15     STA $1539,X
 FD/D567: A9 01        LDA #$01
 FD/D569: 9D 38 15     STA $1538,X
 FD/D56C: E8           INX
 FD/D56D: E8           INX
-FD/D56E: 80 EE        BRA Local_FDD55E
+FD/D56E: 80 EE        BRA $D55E
 FD/D570: A5 DB        LDA $DB
 FD/D572: 18           CLC
 FD/D573: 65 DD        ADC $DD
@@ -40,43 +40,43 @@ FD/D575: 85 DB        STA $DB
 FD/D577: A5 E1        LDA $E1
 FD/D579: 3A           DEC
 FD/D57A: C9 E0        CMP #$E0
-FD/D57C: F0 02        BEQ Local_FDD580
-FD/D57E: 80 DC        BRA Local_FDD55C
+FD/D57C: F0 02        BEQ $D580
+FD/D57E: 80 DC        BRA $D55C
 FD/D580: A5 DB        LDA $DB
 FD/D582: 18           CLC
 FD/D583: 65 DF        ADC $DF
 FD/D585: 85 DB        STA $DB
 FD/D587: E4 DB        CPX $DB
-FD/D589: F0 0E        BEQ Local_FDD599
+FD/D589: F0 0E        BEQ $D599
 FD/D58B: A9 E0        LDA #$E0
 FD/D58D: 9D 39 15     STA $1539,X
 FD/D590: A9 81        LDA #$81
 FD/D592: 9D 38 15     STA $1538,X
 FD/D595: E8           INX
 FD/D596: E8           INX
-FD/D597: 80 EE        BRA Local_FDD587
+FD/D597: 80 EE        BRA $D587
 FD/D599: A9 E0        LDA #$E0
 FD/D59B: 85 E1        STA $E1
-FD/D59D: 80 14        BRA Local_FDD5B3
+FD/D59D: 80 14        BRA $D5B3
 FD/D59F: 85 E1        STA $E1
 FD/D5A1: E4 DB        CPX $DB
-FD/D5A3: F0 0E        BEQ Local_FDD5B3
+FD/D5A3: F0 0E        BEQ $D5B3
 FD/D5A5: A5 E1        LDA $E1
 FD/D5A7: 9D 39 15     STA $1539,X
 FD/D5AA: A9 81        LDA #$81
 FD/D5AC: 9D 38 15     STA $1538,X
 FD/D5AF: E8           INX
 FD/D5B0: E8           INX
-FD/D5B1: 80 EE        BRA Local_FDD5A1
+FD/D5B1: 80 EE        BRA $D5A1
 FD/D5B3: A5 DB        LDA $DB
 FD/D5B5: 18           CLC
 FD/D5B6: 65 DD        ADC $DD
 FD/D5B8: 85 DB        STA $DB
 FD/D5BA: A5 E1        LDA $E1
 FD/D5BC: C9 E9        CMP #$E9
-FD/D5BE: F0 03        BEQ Local_FDD5C3
+FD/D5BE: F0 03        BEQ $D5C3
 FD/D5C0: 1A           INC
-FD/D5C1: 80 DC        BRA Local_FDD59F
+FD/D5C1: 80 DC        BRA $D59F
 FD/D5C3: C2 30        REP #$30
 FD/D5C5: A2 38 15     LDX #$1538
 FD/D5C8: A0 00 16     LDY #$1600

@@ -2,7 +2,7 @@
 Routine_C189B9:
 C1/89B9: 7B           TDC
 C1/89BA: AD 7C B1     LDA $B17C
-C1/89BD: D0 03        BNE Local_C189C2
+C1/89BD: D0 03        BNE $89C2
 C1/89BF: AD C7 AE     LDA $AEC7
 C1/89C2: 3A           DEC
 C1/89C3: AA           TAX
@@ -21,7 +21,7 @@ C1/89DF: E2 20        SEP #$20
 C1/89E1: B9 66 B0     LDA $B066,Y
 C1/89E4: 3A           DEC
 C1/89E5: 99 66 B0     STA $B066,Y
-C1/89E8: D0 1A        BNE Local_C18A04
+C1/89E8: D0 1A        BNE $8A04
 C1/89EA: A9 0A        LDA #$0A
 C1/89EC: 99 66 B0     STA $B066,Y
 C1/89EF: 98           TYA

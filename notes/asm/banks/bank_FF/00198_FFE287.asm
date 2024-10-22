@@ -13,12 +13,12 @@ FF/E29E: 02 F2        COP $F2
 FF/E2A0: 08           PHP
 FF/E2A1: 08           PHP
 FF/E2A2: F8           SED
-FF/E2A3: F0 07        BEQ Local_FFE2AC
+FF/E2A3: F0 07        BEQ $E2AC
 FF/E2A5: 00 0C        BRK $0C
 FF/E2A7: 00 1C        BRK $1C
 FF/E2A9: 00 3F        BRK $3F
 FF/E2AB: 00 2C        BRK $2C
-FF/E2AD: 10 E7        BPL Local_FFE296
+FF/E2AD: 10 E7        BPL $E296
 FF/E2AF: 18           CLC
 FF/E2B0: 81 7E        STA ($7E,X)
 FF/E2B2: 7E 3C 00     ROR $003C,X

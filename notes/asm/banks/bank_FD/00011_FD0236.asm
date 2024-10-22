@@ -2,7 +2,7 @@
 Routine_FD0236:
 FD/0236: EC 01 02     CPX $0201
 FD/0239: 00 01        BRK $01
-FD/023B: 10 01        BPL Local_FD023E
+FD/023B: 10 01        BPL $023E
 FD/023D: 00 02        BRK $02
 FD/023F: 00 03        BRK $03
 FD/0241: 00 80        BRK $80
@@ -45,7 +45,7 @@ FD/0289: 1E 00 1F     ASL $1F00,X
 FD/028C: 00 20        BRK $20
 FD/028E: 00 21        BRK $21
 FD/0290: 00 00        BRK $00
-FD/0292: 22 00 23 00  JSR Routine_002300
+FD/0292: 22 00 23 00  JSR $002300
 FD/0296: 24 00        BIT $00
 FD/0298: 25 00        AND $00
 FD/029A: 18           CLC
@@ -53,7 +53,7 @@ FD/029B: 26 00        ROL $00
 FD/029D: 27 39        AND [$39]
 FD/029F: F8           SED
 FD/02A0: FB           XCE
-FD/02A1: 10 28        BPL Local_FD02CB
+FD/02A1: 10 28        BPL $02CB
 FD/02A3: 00 29        BRK $29
 FD/02A5: 00 00        BRK $00
 FD/02A7: 2A           ROL
@@ -99,14 +99,14 @@ FD/02F1: 00 00        BRK $00
 FD/02F3: 49 00 4A     EOR #$4A00
 FD/02F6: 00 4B        BRK $4B
 FD/02F8: 00 4C        BRK $4C
-FD/02FA: 30 00        BMI Local_FD02FC
+FD/02FA: 30 00        BMI $02FC
 FD/02FC: 4D 00 4E     EOR $4E00
 FD/02FF: 3B           TSC
 FD/0300: F8           SED
 FD/0301: BB           TYX
 FD/0302: 11 4F        ORA ($4F),Y
 FD/0304: 00 00        BRK $00
-FD/0306: 50 00        BVC Local_FD0308
+FD/0306: 50 00        BVC $0308
 FD/0308: 51 00        EOR ($00),Y
 FD/030A: 52 00        EOR ($00)
 FD/030C: 53 00        EOR ($00,S),Y

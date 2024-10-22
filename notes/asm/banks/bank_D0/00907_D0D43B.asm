@@ -28,6 +28,6 @@ D0/D46C: 7E 3C BE     ROR $BE3C,X
 D0/D46F: D6 5C        DEC $5C,X
 D0/D471: A8           TAY
 D0/D472: 88           DEY
-D0/D473: 70 F0        BVS Local_D0D465
+D0/D473: 70 F0        BVS $D465
 D0/D475: E0 60        CPX #$60
 D0/D477: 60           RTS

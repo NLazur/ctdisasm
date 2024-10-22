@@ -6,7 +6,7 @@ FE/D529: 17 18        ORA [$18],Y
 FE/D52B: 15 03        ORA $03,X
 FE/D52D: 96 6E        STX $6E,Y
 FE/D52F: 97 B1        STA [$B1],Y
-FE/D531: 82 4F 80     BRL Routine_FE5583
+FE/D531: 82 4F 80     BRL $FE5583
 FE/D534: C8           INY
 FE/D535: 03 5C        ORA $5C,S
 FE/D537: 06 29        ASL $29
@@ -18,7 +18,7 @@ FE/D541: 0F AF 15 B1  ORA $B115AF
 FE/D545: 8F 4F 59 09  STA $09594F
 FE/D549: 0C FD 49     TSB $49FD
 FE/D54C: 3A           DEC
-FE/D54D: 70 C9        BVS Local_FED518
+FE/D54D: 70 C9        BVS $D518
 FE/D54F: 09 C2        ORA #$C2
 FE/D551: 01 73        ORA ($73,X)
 FE/D553: 1A           INC
@@ -33,7 +33,7 @@ FE/D563: FA           PLX
 FE/D564: 08           PHP
 FE/D565: 56 0A        LSR $0A,X
 FE/D567: 6E 05 1F     ROR $1F05
-FE/D56A: 20 06 74     JSR Local_FE7406
+FE/D56A: 20 06 74     JSR $7406
 FE/D56D: 17 02        ORA [$02],Y
 FE/D56F: 92 94        STA ($94)
 FE/D571: 42 C7        WDM $C7
@@ -45,7 +45,7 @@ FE/D57B: 02 03        COP $03
 FE/D57D: 71 07        ADC ($07),Y
 FE/D57F: AF 07 5F 0E  LDA $0E5F07
 FE/D583: D1 47        CMP ($47),Y
-FE/D585: 10 7C        BPL Local_FED603
+FE/D585: 10 7C        BPL $D603
 FE/D587: 7D 7D FE     ADC $FE7D,X
 FE/D58A: 01 09        ORA ($09,X)
 FE/D58C: CF B8 0A 23  CMP $230AB8
@@ -104,7 +104,7 @@ FE/D5FB: 26 23        ROL $23
 FE/D5FD: 25 01        AND $01
 FE/D5FF: 00 8F        BRK $8F
 FE/D601: 03 D0        ORA $D0,S
-FE/D603: 20 21 13     JSR Local_FE1321
+FE/D603: 20 21 13     JSR $1321
 FE/D606: 14 91        TRB $91
 FE/D608: 00 18        BRK $18
 FE/D60A: AB           PLB
@@ -113,7 +113,7 @@ FE/D60D: B2 8B        LDA ($8B)
 FE/D60F: 8A           TXA
 FE/D610: 0F 37 03 42  ORA $420337
 FE/D614: C2 04        REP #$04
-FE/D616: 10 44        BPL Local_FED65C
+FE/D616: 10 44        BPL $D65C
 FE/D618: 54 B7 05     MVN $B7,$05
 FE/D61B: 49 03        EOR #$03
 FE/D61D: 08           PHP
@@ -123,7 +123,7 @@ FE/D623: 79 4F 03     ADC $034F,Y
 FE/D626: 25 36        AND $36
 FE/D628: 45 D8        EOR $D8
 FE/D62A: 0A           ASL
-FE/D62B: 80 B8        BRA Local_FED5E5
+FE/D62B: 80 B8        BRA $D5E5
 FE/D62D: 6E 5F 0D     ROR $0D5F
 FE/D630: 8C 06 10     STY $1006
 FE/D633: 54 00 43     MVN $00,$43

@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 2ECB
 Routine_D02ECB:
 D0/2ECB: C0 A0 60     CPY #$60A0
-D0/2ECE: D0 30        BNE Local_D02F00
+D0/2ECE: D0 30        BNE $2F00
 D0/2ED0: E8           INX
 D0/2ED1: 18           CLC
 D0/2ED2: F4 0C FA     PEA $FA0C

@@ -8,17 +8,17 @@ C3/B102: 84 84        STY $84
 C3/B104: 0B           PHD
 C3/B105: 24 04        BIT $04
 C3/B107: 38           SEC
-C3/B108: 22 09 F3 B0  JSR Routine_B0F309
+C3/B108: 22 09 F3 B0  JSR $B0F309
 C3/B10C: 01 82        ORA ($82,X)
 C3/B10E: 16 14        ASL $14,X
 C3/B110: 00 3C        BRK $3C
 C3/B112: 0B           PHD
 C3/B113: 7F 38 50 79  ADC $795038,X
 C3/B117: 03 04        ORA $04,S
-C3/B119: 22 15 CC 06  JSR Routine_06CC15
+C3/B119: 22 15 CC 06  JSR $06CC15
 C3/B11D: 4E 44 E6     LSR $E644
 C3/B120: C6 05        DEC $05
-C3/B122: 90 8A        BCC Local_C3B0AE
+C3/B122: 90 8A        BCC $B0AE
 C3/B124: 01 36        ORA ($36,X)
 C3/B126: 3B           TSC
 C3/B127: C3 31        CMP $31,S
@@ -28,7 +28,7 @@ C3/B12D: 00 0A        BRK $0A
 C3/B12F: 24 A3        BIT $A3
 C3/B131: 1B           TCS
 C3/B132: 06 07        ASL $07
-C3/B134: 30 16        BMI Local_C3B14C
+C3/B134: 30 16        BMI $B14C
 C3/B136: 04 2E        TSB $2E
 C3/B138: 00 5D        BRK $5D
 C3/B13A: 04 2F        TSB $2F

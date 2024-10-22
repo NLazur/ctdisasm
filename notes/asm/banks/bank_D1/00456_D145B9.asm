@@ -1,7 +1,7 @@
 ; Bank: D1 | Start Address: 45B9
 Routine_D145B9:
 D1/45B9: 21 DC        AND ($DC,X)
-D1/45BB: 10 88        BPL Local_D14545
+D1/45BB: 10 88        BPL $4545
 D1/45BD: 31 08        AND ($08),Y
 D1/45BF: 1D FF 7F     ORA $7FFF,X
 D1/45C2: 19 5F 32     ORA $325F,Y

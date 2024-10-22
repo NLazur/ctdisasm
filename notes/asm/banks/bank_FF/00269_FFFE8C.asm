@@ -17,7 +17,7 @@ FF/FEA7: A9 01        LDA #$01
 FF/FEA9: 85 00        STA $00
 FF/FEAB: AD F2 00     LDA $00F2
 FF/FEAE: 29 01        AND #$01
-FF/FEB0: F0 04        BEQ Local_FFFEB6
+FF/FEB0: F0 04        BEQ $FEB6
 FF/FEB2: A9 10        LDA #$10
 FF/FEB4: 85 00        STA $00
 FF/FEB6: A5 54        LDA $54
@@ -25,13 +25,13 @@ FF/FEB8: 38           SEC
 FF/FEB9: E9 13        SBC #$13
 FF/FEBB: 85 02        STA $02
 FF/FEBD: AA           TAX
-FF/FEBE: 20 D9 FE     JSR Local_FFFED9
-FF/FEC1: 2C 1C 0D     BIT Local_FF0D1C
-FF/FEC4: 10 07        BPL Local_FFFECD
+FF/FEBE: 20 D9 FE     JSR $FED9
+FF/FEC1: 2C 1C 0D     BIT $0D1C
+FF/FEC4: 10 07        BPL $FECD
 FF/FEC6: A5 02        LDA $02
 FF/FEC8: 0A           ASL
 FF/FEC9: AA           TAX
 FF/FECA: FC D3 FE     JSR ($FED3,X)
-FF/FECD: 22 CA FE C2  JSR Routine_C2FECA
+FF/FECD: 22 CA FE C2  JSR $C2FECA
 FF/FED1: 28           PLP
 FF/FED2: 6B           RTL

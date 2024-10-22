@@ -26,7 +26,7 @@ FD/E516: 9D 00 22     STA $2200,X
 FD/E519: CA           DEX
 FD/E51A: CA           DEX
 FD/E51B: E4 10        CPX $10
-FD/E51D: D0 EE        BNE Local_FDE50D
+FD/E51D: D0 EE        BNE $E50D
 FD/E51F: A5 0C        LDA $0C
 FD/E521: 9D 00 20     STA $2000,X
 FD/E524: A5 0E        LDA $0E

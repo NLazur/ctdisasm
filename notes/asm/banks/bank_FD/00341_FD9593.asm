@@ -16,7 +16,7 @@ FD/95AA: 00 68        BRK $68
 FD/95AC: E6 00        INC $00
 FD/95AE: 04 03        TSB $03
 FD/95B0: 00 AD        BRK $AD
-FD/95B2: 50 08        BVC Local_FD95BC
+FD/95B2: 50 08        BVC $95BC
 FD/95B4: E6 00        INC $00
 FD/95B6: 00 07        BRK $07
 FD/95B8: 00 10        BRK $10
@@ -34,7 +34,7 @@ FD/95CF: 02 04        COP $04
 FD/95D1: 33 AD        AND ($AD,S),Y
 FD/95D3: 00 04        BRK $04
 FD/95D5: EB           XBA
-FD/95D6: 30 00        BMI Local_FD95D8
+FD/95D6: 30 00        BMI $95D8
 FD/95D8: 04 06        TSB $06
 FD/95DA: 33 4B        AND ($4B,S),Y
 FD/95DC: 00 9A        BRK $9A
@@ -45,17 +45,17 @@ FD/95E3: 9C 02 81     STZ $8102
 FD/95E6: 31 00        AND ($00),Y
 FD/95E8: 4A           LSR
 FD/95E9: 9E 02 00     STZ $0002,X
-FD/95EC: 80 ED        BRA Local_FD95DB
+FD/95EC: 80 ED        BRA $95DB
 FD/95EE: 7A           PLY
-FD/95EF: 10 00        BPL Local_FD95F1
+FD/95EF: 10 00        BPL $95F1
 FD/95F1: 56 00        LSR $00,X
 FD/95F3: ED 01 E0     SBC $E001
 FD/95F6: F3 01        SBC ($01,S),Y
 FD/95F8: 6A           ROR
 FD/95F9: 00 54        BRK $54
 FD/95FB: 00 82        BRK $82
-FD/95FD: 70 8D        BVS Local_FD958C
-FD/95FF: 80 35        BRA Local_FD9636
+FD/95FD: 70 8D        BVS $958C
+FD/95FF: 80 35        BRA $9636
 FD/9601: 00 20        BRK $20
 FD/9603: 23 0D        AND $0D,S
 FD/9605: 00 AC        BRK $AC

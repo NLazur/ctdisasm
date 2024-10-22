@@ -7,16 +7,16 @@ FE/01D9: 6E 22 EF     ROR $EF22
 FE/01DC: 75 22        ADC $22,X
 FE/01DE: 3A           DEC
 FE/01DF: 01 03        ORA ($03,X)
-FE/01E1: 20 40 F8     JSR Local_FEF840
+FE/01E1: 20 40 F8     JSR $F840
 FE/01E4: 01 EE        ORA ($EE,X)
 FE/01E6: 01 32        ORA ($32,X)
 FE/01E8: 08           PHP
-FE/01E9: 70 09        BVS Local_FE01F4
+FE/01E9: 70 09        BVS $01F4
 FE/01EB: 32 0D        AND ($0D)
 FE/01ED: 01 18        ORA ($18,X)
 FE/01EF: 05 0D        ORA $0D
 FE/01F1: C7 08        CMP [$08]
-FE/01F3: 80 09        BRA Local_FE01FE
+FE/01F3: 80 09        BRA $01FE
 FE/01F5: 05 02        ORA $02
 FE/01F7: E9 40 F8     SBC #$F840
 FE/01FA: 09 08 A7     ORA #$A708
@@ -69,7 +69,7 @@ FE/025D: 7C F8 3D     JMP ($3DF8,X)
 FE/0260: 33 37        AND ($37,S),Y
 FE/0262: 00 0C        BRK $0C
 FE/0264: 43 00        EOR $00,S
-FE/0266: 80 00        BRA Local_FE0268
+FE/0266: 80 00        BRA $0268
 FE/0268: 03 C3        ORA $C3,S
 FE/026A: 18           CLC
 FE/026B: 1D 3A 09     ORA $093A,X

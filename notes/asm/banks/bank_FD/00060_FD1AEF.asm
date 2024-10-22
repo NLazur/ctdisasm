@@ -8,9 +8,9 @@ FD/1AF5: 42 02        WDM $02
 FD/1AF7: 2F 41 00 D6  AND $D60041
 FD/1AFB: 38           SEC
 FD/1AFC: 00 38        BRK $38
-FD/1AFE: 82 18 E0     BRL Routine_FDFB19
-FD/1B01: 80 0A        BRA Local_FD1B0D
-FD/1B03: 30 E0        BMI Local_FD1AE5
+FD/1AFE: 82 18 E0     BRL $FDFB19
+FD/1B01: 80 0A        BRA $1B0D
+FD/1B03: 30 E0        BMI $1AE5
 FD/1B05: 1C E8 E0     TRB $E0E8
 FD/1B08: BB           TYX
 FD/1B09: 08           PHP
@@ -22,7 +22,7 @@ FD/1B11: 00 10        BRK $10
 FD/1B13: 00 F0        BRK $F0
 FD/1B15: 7D 02 7D     ADC $7D02,X
 FD/1B18: 02 3D        COP $3D
-FD/1B1A: 4C 02 1D     JMP Local_FD1D02
+FD/1B1A: 4C 02 1D     JMP $1D02
 FD/1B1D: D8           CLD
 FD/1B1E: 0A           ASL
 FD/1B1F: 43 2D        EOR $2D,S
@@ -50,23 +50,23 @@ FD/1B4D: 00 00        BRK $00
 FD/1B4F: 48           PHA
 FD/1B50: 04 24        TSB $24
 FD/1B52: 04 24        TSB $24
-FD/1B54: 10 14        BPL Local_FD1B6A
-FD/1B56: F0 02        BEQ Local_FD1B5A
+FD/1B54: 10 14        BPL $1B6A
+FD/1B56: F0 02        BEQ $1B5A
 FD/1B58: 12 02        ORA ($02)
 FD/1B5A: 12 24        ORA ($24)
-FD/1B5C: 22 D3 26 D3  JSR Routine_D326D3
+FD/1B5C: 22 D3 26 D3  JSR $D326D3
 FD/1B60: 0D 8D 4D     ORA $4D8D
-FD/1B63: 80 17        BRA Local_FD1B7C
+FD/1B63: 80 17        BRA $1B7C
 FD/1B65: 13 03        ORA ($03,S),Y
 FD/1B67: 11 01        ORA ($01),Y
-FD/1B69: 10 01        BPL Local_FD1B6C
+FD/1B69: 10 01        BPL $1B6C
 FD/1B6B: 57 0B        EOR [$0B],Y
 FD/1B6D: 62 04 3E     PER $FD5974
 FD/1B70: 12 04        ORA ($04)
 FD/1B72: 00 13        BRK $13
 FD/1B74: 4A           LSR
 FD/1B75: 68           PLA
-FD/1B76: 4C 22 27     JMP Local_FD2722
+FD/1B76: 4C 22 27     JMP $2722
 FD/1B79: 00 C3        BRK $C3
 FD/1B7B: C3 81        CMP $81,S
 FD/1B7D: 41 80        EOR ($80,X)
@@ -96,15 +96,15 @@ FD/1BAF: 04 80        TSB $80
 FD/1BB1: 84 A6        STY $A6
 FD/1BB3: 51 00        EOR ($00),Y
 FD/1BB5: 9C 80 8D     STZ $8D80
-FD/1BB8: 80 16        BRA Local_FD1BD0
-FD/1BBA: 80 0A        BRA Local_FD1BC6
-FD/1BBC: 80 00        BRA Local_FD1BBE
+FD/1BB8: 80 16        BRA $1BD0
+FD/1BBA: 80 0A        BRA $1BC6
+FD/1BBC: 80 00        BRA $1BBE
 FD/1BBE: 0C 88 88     TSB $8888
 FD/1BC1: 88           DEY
 FD/1BC2: 08           PHP
 FD/1BC3: 08           PHP
 FD/1BC4: 01 11        ORA ($11,X)
-FD/1BC6: 30 0C        BMI Local_FD1BD4
+FD/1BC6: 30 0C        BMI $1BD4
 FD/1BC8: 8F 04 86 31  STA $318604
 FD/1BCC: 2E BD 1D     ROL $1DBD
 FD/1BCF: 08           PHP

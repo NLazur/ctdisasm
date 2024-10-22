@@ -10,7 +10,7 @@ C3/1A99: A9 20 18     LDA #$1820
 C3/1A9C: 00 6F        BRK $6F
 C3/1A9E: 14 42        TRB $42
 C3/1AA0: 00 8D        BRK $8D
-C3/1AA2: 82 3A AF     BRL Routine_C3C9DF
+C3/1AA2: 82 3A AF     BRL $C3C9DF
 C3/1AA5: 00 16        BRK $16
 C3/1AA7: 42 00        WDM $00
 C3/1AA9: 18           CLC
@@ -25,9 +25,9 @@ C3/1ABA: 08           PHP
 C3/1ABB: 00 11        BRK $11
 C3/1ABD: CA           DEX
 C3/1ABE: AD 86 08     LDA $0886
-C3/1AC1: 10 10        BPL Local_C31AD3
+C3/1AC1: 10 10        BPL $1AD3
 C3/1AC3: 09 CA AD     ORA #$ADCA
-C3/1AC6: 82 10 10     BRL Routine_C32AD9
+C3/1AC6: 82 10 10     BRL $C32AD9
 C3/1AC9: 01 CA        ORA ($CA,X)
 C3/1ACB: 8E 00 7D     STX $7D00
 C3/1ACE: 3A           DEC

@@ -20,5 +20,5 @@ D1/7BE6: 12 7C        ORA ($7C)
 D1/7BE8: 91 28        STA ($28),Y
 D1/7BEA: 7C 91 33     JMP ($3391,X)
 D1/7BED: 7C 8E 44     JMP ($448E,X)
-D1/7BF0: 10 09        BPL Local_D17BFB
+D1/7BF0: 10 09        BPL $7BFB
 D1/7BF2: 40           RTI

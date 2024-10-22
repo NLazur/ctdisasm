@@ -20,7 +20,7 @@ CD/E560: 08           PHP
 CD/E561: 1B           TCS
 CD/E562: 2D 36 24     AND $2436
 CD/E565: 0B           PHD
-CD/E566: 70 02        BVS Local_CDE56A
+CD/E566: 70 02        BVS $E56A
 CD/E568: 05 0C        ORA $0C
 CD/E56A: 12 2A        ORA ($2A)
 CD/E56C: 1B           TCS
@@ -45,7 +45,7 @@ CD/E58D: FF 71 36 24  SBC $243671,X
 CD/E591: 09 1B        ORA #$1B
 CD/E593: 2E 36 24     ROL $2436
 CD/E596: 0B           PHD
-CD/E597: 70 02        BVS Local_CDE59B
+CD/E597: 70 02        BVS $E59B
 CD/E599: 05 0C        ORA $0C
 CD/E59B: 12 2B        ORA ($2B)
 CD/E59D: 1B           TCS
@@ -60,7 +60,7 @@ CD/E5AC: 36 24        ROL $24,X
 CD/E5AE: 05 20        ORA $20
 CD/E5B0: 28           PLP
 CD/E5B1: 03 00        ORA $00,S
-CD/E5B3: 70 02        BVS Local_CDE5B7
+CD/E5B3: 70 02        BVS $E5B7
 CD/E5B5: 01 0B        ORA ($0B,X)
 CD/E5B7: 85 C0        STA $C0
 CD/E5B9: A8           TAY

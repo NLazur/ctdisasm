@@ -2,7 +2,7 @@
 Routine_FDC439:
 FD/C439: AD 51 03     LDA $0351
 FD/C43C: 4A           LSR
-FD/C43D: B0 1C        BCS Local_FDC45B
+FD/C43D: B0 1C        BCS $C45B
 FD/C43F: A9 E4        LDA #$E4
 FD/C441: 8D E1 11     STA $11E1
 FD/C444: A2 A8        LDX #$A8

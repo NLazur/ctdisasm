@@ -2,21 +2,21 @@
 Routine_FE3C57:
 FE/3C57: 00 41        BRK $41
 FE/3C59: FC 60 FF     JSR ($FF60,X)
-FE/3C5C: F0 FF        BEQ Local_FE3C5D
+FE/3C5C: F0 FF        BEQ $3C5D
 FE/3C5E: F9 FF 01     SBC $01FF,Y
 FE/3C61: F7 11        SBC [$11],Y
-FE/3C63: 10 35        BPL Local_FE3C9A
+FE/3C63: 10 35        BPL $3C9A
 FE/3C65: 14 37        TRB $37
 FE/3C67: 17 57        ORA [$57],Y
 FE/3C69: 76 42        ROR $42,X
 FE/3C6B: F7 41        SBC [$41],Y
-FE/3C6D: 10 01        BPL Local_FE3C70
+FE/3C6D: 10 01        BPL $3C70
 FE/3C6F: 13 01        ORA ($01,S),Y
 FE/3C71: 17 10        ORA [$10],Y
 FE/3C73: 00 3F        BRK $3F
-FE/3C75: 10 17        BPL Local_FE3C8E
+FE/3C75: 10 17        BPL $3C8E
 FE/3C77: DF 76 FF 51  CMP $51FF76,X
-FE/3C7B: 10 E6        BPL Local_FE3C63
+FE/3C7B: 10 E6        BPL $3C63
 FE/3C7D: F6 C9        INC $C9,X
 FE/3C7F: 00 E9        BRK $E9
 FE/3C81: DD FD 8C     CMP $8CFD,X

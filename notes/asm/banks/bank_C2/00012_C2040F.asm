@@ -24,7 +24,7 @@ C2/043E: 18           CLC
 C2/043F: 69 08        ADC #$08
 C2/0441: AA           TAX
 C2/0442: E4 5F        CPX $5F
-C2/0444: D0 CD        BNE Local_C20413
+C2/0444: D0 CD        BNE $0413
 C2/0446: 64 5F        STZ $5F
 C2/0448: C2 10        REP #$10
 C2/044A: A2 00 F0     LDX #$F000

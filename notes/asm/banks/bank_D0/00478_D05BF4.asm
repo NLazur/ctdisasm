@@ -22,7 +22,7 @@ D0/5C12: 08           PHP
 D0/5C13: 08           PHP
 D0/5C14: 00 00        BRK $00
 D0/5C16: 00 00        BRK $00
-D0/5C18: 80 80        BRA Local_D05B9A
+D0/5C18: 80 80        BRA $5B9A
 D0/5C1A: 01 01        ORA ($01,X)
 D0/5C1C: 00 00        BRK $00
 D0/5C1E: 00 00        BRK $00
@@ -36,7 +36,7 @@ D0/5C2A: 00 10        BRK $10
 D0/5C2C: 00 00        BRK $00
 D0/5C2E: 00 00        BRK $00
 D0/5C30: 00 00        BRK $00
-D0/5C32: 80 80        BRA Local_D05BB4
+D0/5C32: 80 80        BRA $5BB4
 D0/5C34: 00 00        BRK $00
-D0/5C36: 80 80        BRA Local_D05BB8
+D0/5C36: 80 80        BRA $5BB8
 D0/5C38: 40           RTI

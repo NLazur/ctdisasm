@@ -1,6 +1,6 @@
 ; Bank: C3 | Start Address: F57F
 Routine_C3F57F:
-C3/F57F: F0 E8        BEQ Local_C3F569
+C3/F57F: F0 E8        BEQ $F569
 C3/F581: 42 00        WDM $00
 C3/F583: FF E8 42 40  SBC $4042E8,X
 C3/F587: 05 F8        ORA $F8

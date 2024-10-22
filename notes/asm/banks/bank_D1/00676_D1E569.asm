@@ -2,9 +2,9 @@
 Routine_D1E569:
 D1/E569: 41 40        EOR ($40,X)
 D1/E56B: 48           PHA
-D1/E56C: 4C 50 48     JMP Local_D14850
+D1/E56C: 4C 50 48     JMP $4850
 D1/E56F: 08           PHP
-D1/E570: 50 10        BVC Local_D1E582
+D1/E570: 50 10        BVC $E582
 D1/E572: 41 40        EOR ($40,X)
 D1/E574: 4D 08 10     EOR $1008
 D1/E577: 01 28        ORA ($28,X)
@@ -25,15 +25,15 @@ D1/E593: 00 00        BRK $00
 D1/E595: 00 4D        BRK $4D
 D1/E597: 08           PHP
 D1/E598: 00 01        BRK $01
-D1/E59A: 10 0A        BPL Local_D1E5A6
+D1/E59A: 10 0A        BPL $E5A6
 D1/E59C: 0B           PHD
 D1/E59D: 0D 45 0D     ORA $0D45
 D1/E5A0: 8A           TXA
 D1/E5A1: 44 41 40     MVP $41,$40
 D1/E5A4: 08           PHP
-D1/E5A5: 90 05        BCC Local_D1E5AC
+D1/E5A5: 90 05        BCC $E5AC
 D1/E5A7: 06 07        ASL $07
-D1/E5A9: 10 88        BPL Local_D1E533
+D1/E5A9: 10 88        BPL $E533
 D1/E5AB: 08           PHP
 D1/E5AC: 08           PHP
 D1/E5AD: 0E 0F 05     ASL $050F
@@ -43,7 +43,7 @@ D1/E5B3: 4B           PHK
 D1/E5B4: 4A           LSR
 D1/E5B5: 4B           PHK
 D1/E5B6: 4A           LSR
-D1/E5B7: 10 00        BPL Local_D1E5B9
+D1/E5B7: 10 00        BPL $E5B9
 D1/E5B9: 01 00        ORA ($00,X)
 D1/E5BB: 01 4D        ORA ($4D,X)
 D1/E5BD: 0D 08 50     ORA $5008
@@ -70,7 +70,7 @@ D1/E5E5: 03 4D        ORA $4D,S
 D1/E5E7: 05 0D        ORA $0D
 D1/E5E9: 48           PHA
 D1/E5EA: 00 01        BRK $01
-D1/E5EC: 10 0A        BPL Local_D1E5F8
+D1/E5EC: 10 0A        BPL $E5F8
 D1/E5EE: 0B           PHD
 D1/E5EF: 0D 4B 4A     ORA $4A4B
 D1/E5F2: 45 0C        EOR $0C

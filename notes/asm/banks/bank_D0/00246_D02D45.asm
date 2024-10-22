@@ -9,8 +9,8 @@ D0/2D51: 06 7E        ASL $7E
 D0/2D53: 7A           PLY
 D0/2D54: 31 3F        AND ($3F),Y
 D0/2D56: 0F 0F A0 60  ORA $60A00F
-D0/2D5A: B0 70        BCS Local_D02DCC
-D0/2D5C: 50 D0        BVC Local_D02D2E
-D0/2D5E: 50 D0        BVC Local_D02D30
+D0/2D5A: B0 70        BCS $2DCC
+D0/2D5C: 50 D0        BVC $2D2E
+D0/2D5E: 50 D0        BVC $2D30
 D0/2D60: C0 C0 40     CPY #$40C0
 D0/2D63: 40           RTI

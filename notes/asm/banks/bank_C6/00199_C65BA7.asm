@@ -3,7 +3,7 @@ Routine_C65BA7:
 C6/5BA7: 18           CLC
 C6/5BA8: 5B           TCD
 C6/5BA9: 18           CLC
-C6/5BAA: 5C 18 02 AE  JMP Routine_AE0218
+C6/5BAA: 5C 18 02 AE  JMP $AE0218
 C6/5BAE: A4 03        LDY $03
 C6/5BB0: BE 08 30     LDX $3008,Y
 C6/5BB3: 08           PHP
@@ -19,7 +19,7 @@ C6/5BC2: 33 18        AND ($18,S),Y
 C6/5BC4: 68           PLA
 C6/5BC5: 18           CLC
 C6/5BC6: 65 18        ADC $18
-C6/5BC8: 80 66        BRA Local_C65C30
+C6/5BC8: 80 66        BRA $5C30
 C6/5BCA: 18           CLC
 C6/5BCB: 75 18        ADC $18,X
 C6/5BCD: 76 18        ROR $18,X
@@ -55,7 +55,7 @@ C6/5BFD: EE 03 1A     INC $1A03
 C6/5C00: 35 80        AND $80,X
 C6/5C02: 12 25        ORA ($25)
 C6/5C04: 04 04        TSB $04
-C6/5C06: 50 28        BVC Local_C65C30
+C6/5C06: 50 28        BVC $5C30
 C6/5C08: AE 08 40     LDX $4008
 C6/5C0B: 41 38        EOR ($38,X)
 C6/5C0D: 04 50        TSB $50
@@ -74,8 +74,8 @@ C6/5C21: 45 18        EOR $18
 C6/5C23: 46 18        LSR $18
 C6/5C25: 55 18        EOR $18,X
 C6/5C27: 56 51        LSR $51,X
-C6/5C29: 10 70        BPL Local_C65C9B
+C6/5C29: 10 70        BPL $5C9B
 C6/5C2B: 4B           PHK
 C6/5C2C: 18           CLC
-C6/5C2D: 4C B8 10     JMP Local_C610B8
+C6/5C2D: 4C B8 10     JMP $10B8
 C6/5C30: 40           RTI

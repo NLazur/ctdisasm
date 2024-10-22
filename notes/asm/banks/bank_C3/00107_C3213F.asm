@@ -1,7 +1,7 @@
 ; Bank: C3 | Start Address: 213F
 Routine_C3213F:
 C3/213F: 14 8D        TRB $8D
-C3/2141: 20 14 18     JSR Local_C31814
+C3/2141: 20 14 18     JSR $1814
 C3/2144: 00 69        BRK $69
 C3/2146: 7F 00 8D 2C  ADC $2C8D00,X
 C3/214A: 14 AD        TRB $AD
@@ -18,24 +18,24 @@ C3/2160: 05 DD        ORA $DD
 C3/2162: 0F 04 2A 00  ORA $002A04
 C3/2166: 06 85        ASL $85
 C3/2168: 04 A5        TSB $A5
-C3/216A: F0 04        BEQ Local_C32170
+C3/216A: F0 04        BEQ $2170
 C3/216C: 85 06        STA $06
 C3/216E: 5A           PHY
 C3/216F: 41 C5        EOR ($C5,X)
-C3/2171: 30 D0        BMI Local_C32143
+C3/2171: 30 D0        BMI $2143
 C3/2173: 19 A5 00     ORA $00A5,Y
 C3/2176: 0A           ASL
 C3/2177: C5 32        CMP $32
-C3/2179: D0 1A        BNE Local_C32195
+C3/2179: D0 1A        BNE $2195
 C3/217B: A5 0C        LDA $0C
 C3/217D: C5 00        CMP $00
 C3/217F: 34 D0        BIT $D0,X
 C3/2181: 18           CLC
 C3/2182: A5 10        LDA $10
 C3/2184: C5 36        CMP $36
-C3/2186: D0 00        BNE Local_C32188
+C3/2186: D0 00        BNE $2188
 C3/2188: 16 A5        ASL $A5,X
 C3/218A: 16 C5        ASL $C5,X
 C3/218C: 38           SEC
-C3/218D: D0 14        BNE Local_C321A3
+C3/218D: D0 14        BNE $21A3
 C3/218F: 60           RTS

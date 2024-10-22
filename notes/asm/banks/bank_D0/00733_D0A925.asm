@@ -14,7 +14,7 @@ D0/A939: 00 00        BRK $00
 D0/A93B: 00 00        BRK $00
 D0/A93D: 00 00        BRK $00
 D0/A93F: 00 00        BRK $00
-D0/A941: 10 0B        BPL Local_D0A94E
+D0/A941: 10 0B        BPL $A94E
 D0/A943: 03 04        ORA $04,S
 D0/A945: 08           PHP
 D0/A946: 01 02        ORA ($02,X)
@@ -22,6 +22,6 @@ D0/A948: 00 00        BRK $00
 D0/A94A: 00 00        BRK $00
 D0/A94C: 00 00        BRK $00
 D0/A94E: 00 00        BRK $00
-D0/A950: 80 90        BRA Local_D0A8E2
+D0/A950: 80 90        BRA $A8E2
 D0/A952: A0 80        LDY #$80
 D0/A954: 40           RTI

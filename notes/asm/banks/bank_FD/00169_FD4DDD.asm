@@ -10,6 +10,6 @@ FD/4DED: FA           PLX
 FD/4DEE: 42 23        WDM $23
 FD/4DF0: 07 E3        ORA [$E3]
 FD/4DF2: 13 10        ORA ($10,S),Y
-FD/4DF4: 70 00        BVS Local_FD4DF6
+FD/4DF4: 70 00        BVS $4DF6
 FD/4DF6: 1F A7 02 1E  ORA $1E02A7,X
 FD/4DFA: 60           RTS

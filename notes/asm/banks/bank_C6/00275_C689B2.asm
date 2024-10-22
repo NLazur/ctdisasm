@@ -1,12 +1,12 @@
 ; Bank: C6 | Start Address: 89B2
 Routine_C689B2:
 C6/89B2: 31 32        AND ($32),Y
-C6/89B4: 5C 5D 00 10  JMP Routine_10005D
+C6/89B4: 5C 5D 00 10  JMP $10005D
 C6/89B8: 11 86        ORA ($86),Y
 C6/89BA: 32 1A        AND ($1A)
 C6/89BC: 04 83        TSB $83
 C6/89BE: 01 10        ORA ($10,X)
-C6/89C0: 20 00 12     JSR Local_C61200
+C6/89C0: 20 00 12     JSR $1200
 C6/89C3: C1 F8        CMP ($F8,X)
 C6/89C5: 03 01        ORA $01,S
 C6/89C7: F8           SED

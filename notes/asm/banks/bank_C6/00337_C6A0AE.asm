@@ -9,7 +9,7 @@ C6/A0BC: 33 FC        AND ($FC,S),Y
 C6/A0BE: B9 11 69     LDA $6911,Y
 C6/A0C1: 06 56        ASL $56
 C6/A0C3: 08           PHP
-C6/A0C4: 50 1E        BVC Local_C6A0E4
+C6/A0C4: 50 1E        BVC $A0E4
 C6/A0C6: EB           XBA
 C6/A0C7: 08           PHP
 C6/A0C8: D4 AF        PEI $AF
@@ -20,7 +20,7 @@ C6/A0D1: 23 3E        AND $3E,S
 C6/A0D3: 07 43        ORA [$43]
 C6/A0D5: 21 B3        AND ($B3,X)
 C6/A0D7: 08           PHP
-C6/A0D8: 22 11 FF 5A  JSR Routine_5AFF11
+C6/A0D8: 22 11 FF 5A  JSR $5AFF11
 C6/A0DC: 32 BF        AND ($BF)
 C6/A0DE: C8           INY
 C6/A0DF: 35 81        AND $81,X
@@ -51,5 +51,5 @@ C6/A11C: 0B           PHD
 C6/A11D: CC 13 0A     CPY $0A13
 C6/A120: 07 B0        ORA [$B0]
 C6/A122: 35 AF        AND $AF,X
-C6/A124: 10 67        BPL Local_C6A18D
+C6/A124: 10 67        BPL $A18D
 C6/A126: 60           RTS

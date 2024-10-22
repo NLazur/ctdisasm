@@ -20,7 +20,7 @@ C6/AA53: E3 15        SBC $15,S
 C6/AA55: 17 08        ORA [$08],Y
 C6/AA57: 0B           PHD
 C6/AA58: 13 21        ORA ($21,S),Y
-C6/AA5A: 22 BF F8 9E  JSR Routine_9EF8BF
+C6/AA5A: 22 BF F8 9E  JSR $9EF8BF
 C6/AA5E: 95 8C        STA $8C,X
 C6/AA60: 06 00        ASL $00
 C6/AA62: 24 25        BIT $25

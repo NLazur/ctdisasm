@@ -5,7 +5,7 @@ D0/C289: 00 01        BRK $01
 D0/C28B: 01 00        ORA ($00,X)
 D0/C28D: 02 02        COP $02
 D0/C28F: 06 14        ASL $14
-D0/C291: 10 08        BPL Local_D0C29B
+D0/C291: 10 08        BPL $C29B
 D0/C293: 14 5C        TRB $5C
 D0/C295: 44 38 40     MVP $38,$40
 D0/C298: 01 01        ORA ($01,X)
@@ -31,7 +31,7 @@ D0/C2BD: 96 B4        STX $B4,Y
 D0/C2BF: AC 70 C8     LDY $C870
 D0/C2C2: 68           PLA
 D0/C2C3: 98           TYA
-D0/C2C4: F0 10        BEQ Local_D0C2D6
+D0/C2C4: F0 10        BEQ $C2D6
 D0/C2C6: C0 20        CPY #$20
 D0/C2C8: 00 00        BRK $00
 D0/C2CA: 00 00        BRK $00
@@ -43,20 +43,20 @@ D0/C2D4: 0A           ASL
 D0/C2D5: 09 07        ORA #$07
 D0/C2D7: 09 08        ORA #$08
 D0/C2D9: 08           PHP
-D0/C2DA: 10 10        BPL Local_D0C2EC
+D0/C2DA: 10 10        BPL $C2EC
 D0/C2DC: 00 20        BRK $20
 D0/C2DE: 00 40        BRK $40
-D0/C2E0: 80 00        BRA Local_D0C2E2
-D0/C2E2: 80 80        BRA Local_D0C264
+D0/C2E0: 80 00        BRA $C2E2
+D0/C2E2: 80 80        BRA $C264
 D0/C2E4: 00 00        BRK $00
 D0/C2E6: 00 00        BRK $00
-D0/C2E8: 30 48        BMI Local_D0C332
+D0/C2E8: 30 48        BMI $C332
 D0/C2EA: 78           SEI
 D0/C2EB: 08           PHP
 D0/C2EC: 78           SEI
 D0/C2ED: 88           DEY
 D0/C2EE: 78           SEI
 D0/C2EF: 88           DEY
-D0/C2F0: 30 48        BMI Local_D0C33A
+D0/C2F0: 30 48        BMI $C33A
 D0/C2F2: 78           SEI
 D0/C2F3: 40           RTI

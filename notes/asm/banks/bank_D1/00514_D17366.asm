@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 7366
 Routine_D17366:
-D1/7366: 10 70        BPL Local_D173D8
+D1/7366: 10 70        BPL $73D8
 D1/7368: 00 FF        BRK $FF
 D1/736A: 08           PHP
 D1/736B: 01 83        ORA ($83,X)
@@ -16,7 +16,7 @@ D1/737D: 07 DE        ORA [$DE]
 D1/737F: 00 B7        BRK $B7
 D1/7381: 01 17        ORA ($17,X)
 D1/7383: 8E 40 10     STX $1040
-D1/7386: 70 FF        BVS Local_D17387
+D1/7386: 70 FF        BVS $7387
 D1/7388: 00 08        BRK $08
 D1/738A: 01 91        ORA ($91,X)
 D1/738C: 08           PHP
@@ -24,7 +24,7 @@ D1/738D: A2 FF        LDX #$FF
 D1/738F: 01 83        ORA ($83,X)
 D1/7391: 06 82        ASL $82
 D1/7393: DF 84 82 CF  CMP $CF8284,X
-D1/7397: 82 7F 82     BRL Routine_D1F619
+D1/7397: 82 7F 82     BRL $D1F619
 D1/739A: 7F 9B 17 98  ADC $98179B,X
 D1/739E: 00 CB        BRK $CB
 D1/73A0: A7 73        LDA [$73]
@@ -78,5 +78,5 @@ D1/740F: 00 00        BRK $00
 D1/7411: 91 08        STA ($08),Y
 D1/7413: A2 FF        LDX #$FF
 D1/7415: 01 83        ORA ($83,X)
-D1/7417: 5C 7F 84 83  JMP Routine_83847F
+D1/7417: 5C 7F 84 83  JMP $83847F
 D1/741B: 40           RTI

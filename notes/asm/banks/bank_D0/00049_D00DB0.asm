@@ -13,8 +13,8 @@ D0/0DC1: 00 00        BRK $00
 D0/0DC3: 00 00        BRK $00
 D0/0DC5: 00 00        BRK $00
 D0/0DC7: 00 00        BRK $00
-D0/0DC9: 80 80        BRA Local_D00D4B
-D0/0DCB: 80 00        BRA Local_D00DCD
+D0/0DC9: 80 80        BRA $0D4B
+D0/0DCB: 80 00        BRA $0DCD
 D0/0DCD: 00 00        BRK $00
 D0/0DCF: 00 00        BRK $00
 D0/0DD1: 00 00        BRK $00
@@ -46,9 +46,9 @@ D0/0E03: 01 01        ORA ($01,X)
 D0/0E05: 00 01        BRK $01
 D0/0E07: 00 00        BRK $00
 D0/0E09: 00 00        BRK $00
-D0/0E0B: 80 00        BRA Local_D00E0D
-D0/0E0D: 80 80        BRA Local_D00D8F
-D0/0E0F: 80 00        BRA Local_D00E11
+D0/0E0B: 80 00        BRA $0E0D
+D0/0E0D: 80 80        BRA $0D8F
+D0/0E0F: 80 00        BRA $0E11
 D0/0E11: 00 00        BRK $00
 D0/0E13: 00 00        BRK $00
 D0/0E15: 00 00        BRK $00
@@ -58,5 +58,5 @@ D0/0E1B: 00 00        BRK $00
 D0/0E1D: 00 00        BRK $00
 D0/0E1F: 00 00        BRK $00
 D0/0E21: 00 80        BRK $80
-D0/0E23: 80 C0        BRA Local_D00DE5
+D0/0E23: 80 C0        BRA $0DE5
 D0/0E25: 40           RTI

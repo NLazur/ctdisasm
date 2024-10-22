@@ -26,11 +26,11 @@ D0/DD78: 02 04        COP $04
 D0/DD7A: 02 00        COP $00
 D0/DD7C: 00 01        BRK $01
 D0/DD7E: 01 00        ORA ($00,X)
-D0/DD80: 80 48        BRA Local_D0DDCA
+D0/DD80: 80 48        BRA $DDCA
 D0/DD82: E4 20        CPX $20
 D0/DD84: E2 00        SEP #$00
-D0/DD86: F0 11        BEQ Local_D0DD99
-D0/DD88: F0 08        BEQ Local_D0DD92
+D0/DD86: F0 11        BEQ $DD99
+D0/DD88: F0 08        BEQ $DD92
 D0/DD8A: 7C 04 7C     JMP ($7C04,X)
 D0/DD8D: 02 3F        COP $3F
 D0/DD8F: 01 00        ORA ($00,X)
@@ -38,5 +38,5 @@ D0/DD91: 00 00        BRK $00
 D0/DD93: 00 00        BRK $00
 D0/DD95: 00 00        BRK $00
 D0/DD97: 00 00        BRK $00
-D0/DD99: 80 80        BRA Local_D0DD1B
+D0/DD99: 80 80        BRA $DD1B
 D0/DD9B: 40           RTI

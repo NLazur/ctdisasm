@@ -25,7 +25,7 @@ C3/CF0A: 00 29        BRK $29
 C3/CF0C: 62 25 BF     PER $C38E34
 C3/CF0F: 01 3A        ORA ($3A,X)
 C3/CF11: 01 B6        ORA ($B6,X)
-C3/CF13: 10 00        BPL Local_C3CF15
+C3/CF13: 10 00        BPL $CF15
 C3/CF15: 51 00        EOR ($00),Y
 C3/CF17: 0E 22 10     ASL $1022
 C3/CF1A: 04 00        TSB $00

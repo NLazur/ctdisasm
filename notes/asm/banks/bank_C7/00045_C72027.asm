@@ -1,7 +1,7 @@
 ; Bank: C7 | Start Address: 2027
 Routine_C72027:
 C7/2027: 26 45        ROL $45
-C7/2029: 2C 00 00     BIT Local_C70000
+C7/2029: 2C 00 00     BIT $0000
 C7/202C: 00 00        BRK $00
 C7/202E: 00 00        BRK $00
 C7/2030: 00 00        BRK $00

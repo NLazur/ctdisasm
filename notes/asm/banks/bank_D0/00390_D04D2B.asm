@@ -7,7 +7,7 @@ D0/4D32: 79 87 FC     ADC $FC87,Y
 D0/4D35: 83 15        STA $15,S
 D0/4D37: EB           XBA
 D0/4D38: 00 00        BRK $00
-D0/4D3A: 80 80        BRA Local_D04CBC
+D0/4D3A: 80 80        BRA $4CBC
 D0/4D3C: 00 00        BRK $00
-D0/4D3E: 80 80        BRA Local_D04CC0
+D0/4D3E: 80 80        BRA $4CC0
 D0/4D40: 40           RTI

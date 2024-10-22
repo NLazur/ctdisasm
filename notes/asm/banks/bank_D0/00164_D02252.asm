@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 2252
 Routine_D02252:
-D0/2252: 2C 30 13     BIT Local_D01330
+D0/2252: 2C 30 13     BIT $1330
 D0/2255: 1C 04 07     TRB $0704
 D0/2258: 00 00        BRK $00
 D0/225A: 00 00        BRK $00
@@ -18,7 +18,7 @@ D0/2270: 02 03        COP $03
 D0/2272: 02 03        COP $03
 D0/2274: 02 03        COP $03
 D0/2276: 03 02        ORA $02,S
-D0/2278: B0 D0        BCS Local_D0224A
+D0/2278: B0 D0        BCS $224A
 D0/227A: C0 A0 40     CPY #$40A0
 D0/227D: A0 60        LDY #$60
 D0/227F: A0 80        LDY #$80

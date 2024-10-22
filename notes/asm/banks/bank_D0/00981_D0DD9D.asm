@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: DD9D
 Routine_D0DD9D:
-D0/DD9D: 20 30 00     JSR Local_D00030
+D0/DD9D: 20 30 00     JSR $0030
 D0/DDA0: 02 01        COP $01
 D0/DDA2: 05 03        ORA $03
 D0/DDA4: 0D 03 0A     ORA $0A03

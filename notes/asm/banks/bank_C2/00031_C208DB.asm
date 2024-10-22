@@ -18,7 +18,7 @@ C2/08F3: A6 0E        LDX $0E
 C2/08F5: 64 08        STZ $08
 C2/08F7: BD E3 00     LDA $00E3,X
 C2/08FA: 4A           LSR
-C2/08FB: B0 02        BCS Local_C208FF
+C2/08FB: B0 02        BCS $08FF
 C2/08FD: E6 08        INC $08
 C2/08FF: B5 20        LDA $20,X
 C2/0901: 38           SEC

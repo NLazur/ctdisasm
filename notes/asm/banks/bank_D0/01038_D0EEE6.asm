@@ -37,10 +37,10 @@ D0/EF34: D4 0D        PEI $0D
 D0/EF36: D5 0D        CMP $0D,X
 D0/EF38: 00 D6        BRK $D6
 D0/EF3A: 0D D7 0D     ORA $0DD7
-D0/EF3D: 80 0E        BRA Local_D0EF4D
+D0/EF3D: 80 0E        BRA $EF4D
 D0/EF3F: 81 0E        STA ($0E,X)
 D0/EF41: 18           CLC
-D0/EF42: 82 0E F2     BRL Routine_D0E153
+D0/EF42: 82 0E F2     BRL $D0E153
 D0/EF45: A2 10 1C     LDX #$1C10
 D0/EF48: 29 94        AND #$94
 D0/EF4A: 09 95        ORA #$95
@@ -65,9 +65,9 @@ D0/EF6F: 8F 20 11 1C  STA $1C1120
 D0/EF73: 09 A0        ORA #$A0
 D0/EF75: 48           PHA
 D0/EF76: 84 48        STY $48
-D0/EF78: D0 4D        BNE Local_D0EFC7
+D0/EF78: D0 4D        BNE $EFC7
 D0/EF7A: C0 06        CPY #$06
-D0/EF7C: 10 00        BPL Local_D0EF7E
+D0/EF7C: 10 00        BPL $EF7E
 D0/EF7E: F2 4E        SBC ($4E)
 D0/EF80: F2 0E        SBC ($0E)
 D0/EF82: DB           STP

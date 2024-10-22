@@ -9,8 +9,8 @@ D1/2CB4: 00 EC        BRK $EC
 D1/2CB6: 1A           INC
 D1/2CB7: 00 32        BRK $32
 D1/2CB9: 00 E2        BRK $E2
-D1/2CBB: 80 E0        BRA Local_D12C9D
-D1/2CBD: 22 80 3B 10  JSR Routine_103B80
+D1/2CBB: 80 E0        BRA $2C9D
+D1/2CBD: 22 80 3B 10  JSR $103B80
 D1/2CC1: E6 80        INC $80
 D1/2CC3: E4 09        CPX $09
 D1/2CC5: 18           CLC

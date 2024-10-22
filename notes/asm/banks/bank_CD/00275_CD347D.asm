@@ -22,7 +22,7 @@ CD/34A0: A5 47        LDA $47
 CD/34A2: 38           SEC
 CD/34A3: E5 45        SBC $45
 CD/34A5: 85 4F        STA $4F
-CD/34A7: 10 0F        BPL Local_CD34B8
+CD/34A7: 10 0F        BPL $34B8
 CD/34A9: 49 FF FF     EOR #$FFFF
 CD/34AC: 1A           INC
 CD/34AD: 85 51        STA $51
@@ -38,7 +38,7 @@ CD/34BC: 65 45        ADC $45
 CD/34BE: 18           CLC
 CD/34BF: 65 4F        ADC $4F
 CD/34C1: C9 DE 00     CMP #$00DE
-CD/34C4: 90 0D        BCC Local_CD34D3
+CD/34C4: 90 0D        BCC $34D3
 CD/34C6: 38           SEC
 CD/34C7: E9 DE 00     SBC #$00DE
 CD/34CA: 85 45        STA $45
@@ -61,8 +61,8 @@ CD/34E6: 18           CLC
 CD/34E7: 65 45        ADC $45
 CD/34E9: AA           TAX
 CD/34EA: C4 4B        CPY $4B
-CD/34EC: F0 03        BEQ Local_CD34F1
-CD/34EE: 20 16 36     JSR Local_CD3616
+CD/34EC: F0 03        BEQ $34F1
+CD/34EE: 20 16 36     JSR $3616
 CD/34F1: A5 47        LDA $47
 CD/34F3: 0A           ASL
 CD/34F4: 0A           ASL
@@ -76,7 +76,7 @@ CD/3500: 65 45        ADC $45
 CD/3502: 85 45        STA $45
 CD/3504: A5 7C        LDA $7C
 CD/3506: 29 01 00     AND #$0001
-CD/3509: F0 10        BEQ Local_CD351B
+CD/3509: F0 10        BEQ $351B
 CD/350B: AD 00 BA     LDA $BA00
 CD/350E: 9D E1 C4     STA $C4E1,X
 CD/3511: E8           INX
@@ -84,8 +84,8 @@ CD/3512: E8           INX
 CD/3513: E8           INX
 CD/3514: E8           INX
 CD/3515: E4 45        CPX $45
-CD/3517: D0 F5        BNE Local_CD350E
-CD/3519: 80 0E        BRA Local_CD3529
+CD/3517: D0 F5        BNE $350E
+CD/3519: 80 0E        BRA $3529
 CD/351B: AD 00 BA     LDA $BA00
 CD/351E: 9D 61 C1     STA $C161,X
 CD/3521: E8           INX
@@ -93,7 +93,7 @@ CD/3522: E8           INX
 CD/3523: E8           INX
 CD/3524: E8           INX
 CD/3525: E4 45        CPX $45
-CD/3527: D0 F5        BNE Local_CD351E
+CD/3527: D0 F5        BNE $351E
 CD/3529: 7B           TDC
 CD/352A: E2 20        SEP #$20
 CD/352C: 60           RTS

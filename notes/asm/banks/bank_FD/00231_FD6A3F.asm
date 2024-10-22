@@ -1,17 +1,17 @@
 ; Bank: FD | Start Address: 6A3F
 Routine_FD6A3F:
-FD/6A3F: 50 80        BVC Local_FD69C1
-FD/6A41: F0 E5        BEQ Local_FD6A28
+FD/6A3F: 50 80        BVC $69C1
+FD/6A41: F0 E5        BEQ $6A28
 FD/6A43: 01 04        ORA ($04,X)
-FD/6A45: 20 00 50     JSR Local_FD5000
-FD/6A48: 70 10        BVS Local_FD6A5A
-FD/6A4A: F0 30        BEQ Local_FD6A7C
-FD/6A4C: F0 70        BEQ Local_FD6ABE
+FD/6A45: 20 00 50     JSR $5000
+FD/6A48: 70 10        BVS $6A5A
+FD/6A4A: F0 30        BEQ $6A7C
+FD/6A4C: F0 70        BEQ $6ABE
 FD/6A4E: 00 00        BRK $00
 FD/6A50: 00 0D        BRK $0D
 FD/6A52: 0D 70 B7     ORA $B770
 FD/6A55: C0 D8 25     CPY #$25D8
-FD/6A58: 20 3A 19     JSR Local_FD193A
+FD/6A58: 20 3A 19     JSR $193A
 FD/6A5B: F9 00 1F     SBC $1F00,Y
 FD/6A5E: D8           CLD
 FD/6A5F: 12 0D        ORA ($0D)
@@ -19,12 +19,12 @@ FD/6A61: 02 00        COP $00
 FD/6A63: 37 CF        AND [$CF],Y
 FD/6A65: C8           INY
 FD/6A66: 38           SEC
-FD/6A67: 30 DF        BMI Local_FD6A48
+FD/6A67: 30 DF        BMI $6A48
 FD/6A69: F9 E6 02     SBC $02E6,Y
 FD/6A6C: 1F 10 00 40  ORA $400010,X
 FD/6A70: 6C C1 4D     JMP ($4DC1)
 FD/6A73: 03 09        ORA $09,S
-FD/6A75: 10 23        BPL Local_FD6A9A
+FD/6A75: 10 23        BPL $6A9A
 FD/6A77: 2A           ROL
 FD/6A78: 16 1A        ASL $1A,X
 FD/6A7A: A0 10        LDY #$10

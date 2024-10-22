@@ -4,7 +4,7 @@ C2/BD40: 01 09        ORA ($09,X)
 C2/BD42: 11 19        ORA ($19),Y
 C2/BD44: 21 29        AND ($29,X)
 C2/BD46: 31 39        AND ($39),Y
-C2/BD48: 3C 3F 42     BIT Local_C2423F,X
+C2/BD48: 3C 3F 42     BIT $423F,X
 C2/BD4B: 45 48        EOR $48
 C2/BD4D: 4B           PHK
 C2/BD4E: 4E 51 54     LSR $5451

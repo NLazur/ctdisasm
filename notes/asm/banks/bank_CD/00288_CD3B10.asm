@@ -21,7 +21,7 @@ CD/3B33: A9 7E        LDA #$7E
 CD/3B35: 8D 83 21     STA $2183
 CD/3B38: FA           PLX
 CD/3B39: A5 45        LDA $45
-CD/3B3B: F0 21        BEQ Local_CD3B5E
+CD/3B3B: F0 21        BEQ $3B5E
 CD/3B3D: 86 47        STX $47
 CD/3B3F: 84 49        STY $49
 CD/3B41: DA           PHX
@@ -34,7 +34,7 @@ CD/3B4C: 8C 80 21     STY $2180
 CD/3B4F: AD 80 21     LDA $2180
 CD/3B52: AD 80 21     LDA $2180
 CD/3B55: C6 45        DEC $45
-CD/3B57: D0 F0        BNE Local_CD3B49
+CD/3B57: D0 F0        BNE $3B49
 CD/3B59: C2 10        REP #$10
 CD/3B5B: 7A           PLY
 CD/3B5C: FA           PLX

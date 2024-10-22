@@ -9,5 +9,5 @@ D1/1BD8: E6 40        INC $40
 D1/1BDA: E6 C0        INC $C0
 D1/1BDC: C6 0F        DEC $0F
 D1/1BDE: 28           PLP
-D1/1BDF: 80 CA        BRA Local_D11BAB
+D1/1BDF: 80 CA        BRA $1BAB
 D1/1BE1: 40           RTI

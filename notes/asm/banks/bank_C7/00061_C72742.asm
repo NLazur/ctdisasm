@@ -2,7 +2,7 @@
 Routine_C72742:
 C7/2742: 84 48        STY $48
 C7/2744: C4 48        CPY $48
-C7/2746: 90 43        BCC Local_C7278B
+C7/2746: 90 43        BCC $278B
 C7/2748: CD 00 8F     CMP $8F00
 C7/274B: 01 91        ORA ($91,X)
 C7/274D: FA           PLX
@@ -19,12 +19,12 @@ C7/2760: 2F 1C E8 02  AND $02E81C
 C7/2764: DE 26 14     DEC $1426,X
 C7/2767: E4 5A        CPX $5A
 C7/2769: 24 91        BIT $91
-C7/276B: D0 0E        BNE Local_C7277B
+C7/276B: D0 0E        BNE $277B
 C7/276D: E4 91        CPX $91
 C7/276F: 4E 24 00     LSR $0024
 C7/2772: E4 86        CPX $86
 C7/2774: 24 91        BIT $91
-C7/2776: D0 03        BNE Local_C7277B
+C7/2776: D0 03        BNE $277B
 C7/2778: 09 91        ORA #$91
 C7/277A: 23 3F        AND $3F,S
 C7/277C: AF 07 3D 3D  LDA $3D3D07
@@ -34,7 +34,7 @@ C7/2783: A3 B0        LDA $B0,S
 C7/2785: CC D0 F6     CPY $F6D0
 C7/2788: 3F C7 04 6F  AND $6F04C7,X
 C7/278C: E4 4A        CPX $4A
-C7/278E: F0 08        BEQ Local_C72798
+C7/278E: F0 08        BEQ $2798
 C7/2790: 8B           PHB
 C7/2791: 4A           LSR
 C7/2792: BA           TSX
@@ -46,10 +46,10 @@ C7/2799: 52 F0        EOR ($F0)
 C7/279B: 08           PHP
 C7/279C: 8B           PHB
 C7/279D: 52 BA        EOR ($BA)
-C7/279F: 50 7A        BVC Local_C7281B
+C7/279F: 50 7A        BVC $281B
 C7/27A1: 4E DA 4E     LSR $4EDA
 C7/27A4: E4 78        CPX $78
-C7/27A6: F0 08        BEQ Local_C727B0
+C7/27A6: F0 08        BEQ $27B0
 C7/27A8: 8B           PHB
 C7/27A9: 78           SEI
 C7/27AA: BA           TSX
@@ -59,7 +59,7 @@ C7/27AF: 75 E4        ADC $E4,X
 C7/27B1: 77 F0        ADC [$F0],Y
 C7/27B3: 17 8B        ORA [$8B],Y
 C7/27B5: 77 CD        ADC [$CD],Y
-C7/27B7: 10 F4        BPL Local_C727AD
+C7/27B7: 10 F4        BPL $27AD
 C7/27B9: 63 60        ADC $60,S
 C7/27BB: 95 FE        STA $FE,X
 C7/27BD: 00 D4        BRK $D4
@@ -74,7 +74,7 @@ C7/27D0: C4 90        CPY $90
 C7/27D2: 05 3F        ORA $3F
 C7/27D4: 3D 07 2F     AND $2F07,X
 C7/27D7: F4 FB 26     PEA $26FB
-C7/27DA: D0 0A        BNE Local_C727E6
+C7/27DA: D0 0A        BNE $27E6
 C7/27DC: CD 0E 9E     CMP $9E0E
 C7/27DF: F8           SED
 C7/27E0: A6 F6        LDX $F6
@@ -83,7 +83,7 @@ C7/27E4: D4 26        PEI $26
 C7/27E6: E4 A5        CPX $A5
 C7/27E8: 68           PLA
 C7/27E9: A8           TAY
-C7/27EA: 90 08        BCC Local_C727F4
+C7/27EA: 90 08        BCC $27F4
 C7/27EC: 68           PLA
 C7/27ED: B6 90        LDX $90,Y
 C7/27EF: 01 6F        ORA ($6F,X)
@@ -92,11 +92,11 @@ C7/27F5: 00 CD        BRK $CD
 C7/27F7: 0E 9E C4     ASL $C49E
 C7/27FA: A5 F8        LDA $F8
 C7/27FC: A6 C8        LDX $C8
-C7/27FE: 10 B0        BPL Local_C727B0
+C7/27FE: 10 B0        BPL $27B0
 C7/2800: 0B           PHD
 C7/2801: E4 91        CPX $91
 C7/2803: 24 7C        BIT $7C
-C7/2805: F0 05        BEQ Local_C7280C
+C7/2805: F0 05        BEQ $280C
 C7/2807: 3F 20 07 2F  AND $2F0720,X
 C7/280B: 06 F5        ASL $F5
 C7/280D: 00 F2        BRK $F2

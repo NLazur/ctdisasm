@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 3C02
 Routine_D03C02:
-D0/3C02: 80 C0        BRA Local_D03BC4
-D0/3C04: 80 C0        BRA Local_D03BC6
-D0/3C06: 80 C0        BRA Local_D03BC8
+D0/3C02: 80 C0        BRA $3BC4
+D0/3C04: 80 C0        BRA $3BC6
+D0/3C06: 80 C0        BRA $3BC8
 D0/3C08: 05 07        ORA $07
 D0/3C0A: 09 0F 09     ORA #$090F
 D0/3C0D: 0F 0D 0B 15  ORA $150B0D
@@ -17,7 +17,7 @@ D0/3C1D: 00 00        BRK $00
 D0/3C1F: 00 00        BRK $00
 D0/3C21: 00 00        BRK $00
 D0/3C23: 00 20        BRK $20
-D0/3C25: 20 20 20     JSR Local_D02020
+D0/3C25: 20 20 20     JSR $2020
 D0/3C28: 01 01        ORA ($01,X)
 D0/3C2A: 01 01        ORA ($01,X)
 D0/3C2C: 01 01        ORA ($01,X)

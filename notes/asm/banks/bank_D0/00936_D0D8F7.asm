@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: D8F7
 Routine_D0D8F7:
 D0/D8F7: C0 80        CPY #$80
-D0/D8F9: 80 00        BRA Local_D0D8FB
+D0/D8F9: 80 00        BRA $D8FB
 D0/D8FB: 00 00        BRK $00
 D0/D8FD: 00 00        BRK $00
 D0/D8FF: 00 0F        BRK $0F
@@ -25,6 +25,6 @@ D0/D929: EE 9F 97     INC $979F
 D0/D92C: 38           SEC
 D0/D92D: 38           SEC
 D0/D92E: 00 00        BRK $00
-D0/D930: 50 B0        BVC Local_D0D8E2
+D0/D930: 50 B0        BVC $D8E2
 D0/D932: A0 60        LDY #$60
 D0/D934: 40           RTI

@@ -12,7 +12,7 @@ C0/8335: A9 12        LDA #$12
 C0/8337: 85 5C        STA $5C
 C0/8339: A5 0E        LDA $0E
 C0/833B: 85 5A        STA $5A
-C0/833D: 20 66 7D     JSR Local_C07D66
+C0/833D: 20 66 7D     JSR $7D66
 C0/8340: A9 04        LDA #$04
 C0/8342: 04 79        TSB $79
 C0/8344: 60           RTS

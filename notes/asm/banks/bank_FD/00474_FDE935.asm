@@ -19,5 +19,5 @@ FD/E958: 9F 01 22 7E  STA $7E2201,X
 FD/E95C: E8           INX
 FD/E95D: E8           INX
 FD/E95E: 88           DEY
-FD/E95F: D0 D8        BNE Local_FDE939
+FD/E95F: D0 D8        BNE $E939
 FD/E961: 60           RTS

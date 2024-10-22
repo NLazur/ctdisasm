@@ -7,8 +7,8 @@ D1/3481: EE 40 FF     INC $FF40
 D1/3484: FF 40 D6 00  SBC $00D640,X
 D1/3488: 00 45        BRK $45
 D1/348A: 00 F0        BRK $F0
-D1/348C: F0 70        BEQ Local_D134FE
-D1/348E: 30 C0        BMI Local_D13450
+D1/348C: F0 70        BEQ $34FE
+D1/348E: 30 C0        BMI $3450
 D1/3490: 00 00        BRK $00
 D1/3492: C2 00        REP #$00
 D1/3494: C4 00        CPY $00
@@ -24,7 +24,7 @@ D1/34A7: 01 24        ORA ($24,X)
 D1/34A9: 01 26        ORA ($26,X)
 D1/34AB: 01 20        ORA ($20,X)
 D1/34AD: FF FF 45 60  SBC $6045FF,X
-D1/34B1: 70 01        BVS Local_D134B4
+D1/34B1: 70 01        BVS $34B4
 D1/34B3: 00 C8        BRK $C8
 D1/34B5: 00 00        BRK $00
 D1/34B7: CA           DEX
@@ -44,8 +44,8 @@ D1/34CE: 00 CE        BRK $CE
 D1/34D0: 00 04        BRK $04
 D1/34D2: EE 00 24     INC $2400
 D1/34D5: 00 00        BRK $00
-D1/34D7: 70 70        BVS Local_D13549
-D1/34D9: F0 70        BEQ Local_D1354B
+D1/34D7: 70 70        BVS $3549
+D1/34D9: F0 70        BEQ $354B
 D1/34DB: 00 40        BRK $40
 D1/34DD: 01 42        ORA ($42,X)
 D1/34DF: 01 44        ORA ($44,X)

@@ -39,7 +39,7 @@ C6/9D6D: C4 30        CPY $30
 C6/9D6F: 54 08 27     MVN $08,$27
 C6/9D72: 27 54        AND [$54]
 C6/9D74: 00 78        BRK $78
-C6/9D76: 2C 56 57     BIT Local_C65756
+C6/9D76: 2C 56 57     BIT $5756
 C6/9D79: DB           STP
 C6/9D7A: 16 9F        ASL $9F,X
 C6/9D7C: 05 3F        ORA $3F
@@ -53,7 +53,7 @@ C6/9D8F: 1C 4B 6C     TRB $6C4B
 C6/9D92: DA           PHX
 C6/9D93: 1A           INC
 C6/9D94: DE 09 54     DEC $5409,X
-C6/9D97: 20 65 66     JSR Local_C66665
+C6/9D97: 20 65 66     JSR $6665
 C6/9D9A: 67 4E        ADC [$4E]
 C6/9D9C: 68           PLA
 C6/9D9D: BC 1B 6F     LDY $6F1B,X

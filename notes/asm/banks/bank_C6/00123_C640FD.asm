@@ -10,5 +10,5 @@ C6/410B: 78           SEI
 C6/410C: 2B           PLD
 C6/410D: 68           PLA
 C6/410E: F8           SED
-C6/410F: 10 98        BPL Local_C640A9
+C6/410F: 10 98        BPL $40A9
 C6/4111: 40           RTI

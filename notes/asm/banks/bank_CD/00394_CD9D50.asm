@@ -34,14 +34,14 @@ CD/9D96: 0A           ASL
 CD/9D97: 24 0B        BIT $0B
 CD/9D99: 0B           PHD
 CD/9D9A: 03 00        ORA $00,S
-CD/9D9C: 70 02        BVS Local_CD9DA0
+CD/9D9C: 70 02        BVS $9DA0
 CD/9D9E: 01 85        ORA ($85,X)
 CD/9DA0: C0 A2 71     CPY #$71A2
 CD/9DA3: 36 24        ROL $24,X
-CD/9DA5: 10 0C        BPL Local_CD9DB3
+CD/9DA5: 10 0C        BPL $9DB3
 CD/9DA7: 33 03        AND ($03,S),Y
-CD/9DA9: 30 1F        BMI Local_CD9DCA
-CD/9DAB: 20 3A 1E     JSR Local_CD1E3A
+CD/9DA9: 30 1F        BMI $9DCA
+CD/9DAB: 20 3A 1E     JSR $1E3A
 CD/9DAE: 03 1A        ORA $1A,S
 CD/9DB0: 78           SEI
 CD/9DB1: 6B           RTL

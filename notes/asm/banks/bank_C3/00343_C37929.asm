@@ -2,7 +2,7 @@
 Routine_C37929:
 C3/7929: 48           PHA
 C3/792A: 8C 5B 59     STY $595B
-C3/792D: 70 02        BVS Local_C37931
+C3/792D: 70 02        BVS $7931
 C3/792F: 55 1C        EOR $1C,X
 C3/7931: 5B           TCD
 C3/7932: 59 55 B5     EOR $B555,Y
@@ -16,18 +16,18 @@ C3/7941: 33 0A        AND ($0A,S),Y
 C3/7943: 53 BE        EOR ($BE,S),Y
 C3/7945: 5B           TCD
 C3/7946: 5D 0D 51     EOR $510D,X
-C3/7949: 10 6D        BPL Local_C379B8
+C3/7949: 10 6D        BPL $79B8
 C3/794B: 2D 3D 3B     AND $3B3D
 C3/794E: 28           PLP
 C3/794F: 52 4D        EOR ($4D)
-C3/7951: 82 01 B5     BRL Routine_C32E55
+C3/7951: 82 01 B5     BRL $C32E55
 C3/7954: 1F 19 52 1E  ORA $1E5219,X
 C3/7958: 12 4B        ORA ($4B)
 C3/795A: 02 0C        COP $0C
 C3/795C: 83 17        STA $17,S
 C3/795E: 4B           PHK
 C3/795F: 76 11        ROR $11,X
-C3/7961: 3C 45 4B     BIT Local_C34B45,X
+C3/7961: 3C 45 4B     BIT $4B45,X
 C3/7964: 7D 20 22     ADC $2220,X
 C3/7967: 11 CE        ORA ($CE),Y
 C3/7969: 31 F5        AND ($F5),Y
@@ -41,7 +41,7 @@ C3/7977: 01 4D        ORA ($4D,X)
 C3/7979: 77 33        ADC [$33],Y
 C3/797B: 54 DB F4     MVN $DB,$F4
 C3/797E: 01 12        ORA ($12,X)
-C3/7980: 20 4E E2     JSR Local_C3E24E
+C3/7980: 20 4E E2     JSR $E24E
 C3/7983: 0A           ASL
 C3/7984: AB           PLB
 C3/7985: 18           CLC
@@ -52,7 +52,7 @@ C3/798E: 67 20        ADC [$20]
 C3/7990: C7 76        CMP [$76]
 C3/7992: 75 00        ADC $00,X
 C3/7994: F5 09        SBC $09,X
-C3/7996: 4C 09 47     JMP Local_C34709
+C3/7996: 4C 09 47     JMP $4709
 C3/7999: 21 10        AND ($10,X)
 C3/799B: FC 53 4F     JSR ($4F53,X)
 C3/799E: 03 0C        ORA $0C,S
@@ -60,10 +60,10 @@ C3/79A0: 79 03 18     ADC $1803,Y
 C3/79A3: 51 8B        EOR ($8B),Y
 C3/79A5: 00 B8        BRK $B8
 C3/79A7: 31 57        AND ($57),Y
-C3/79A9: 10 CF        BPL Local_C3797A
+C3/79A9: 10 CF        BPL $797A
 C3/79AB: 4B           PHK
 C3/79AC: 13 D8        ORA ($D8,S),Y
-C3/79AE: 22 73 01 EB  JSR Routine_EB0173
+C3/79AE: 22 73 01 EB  JSR $EB0173
 C3/79B2: 28           PLP
 C3/79B3: 2F 57 0B 02  AND $020B57
 C3/79B7: 6B           RTL

@@ -3,9 +3,9 @@ Routine_D02AD2:
 D0/2AD2: 00 00        BRK $00
 D0/2AD4: 00 00        BRK $00
 D0/2AD6: 00 00        BRK $00
-D0/2AD8: 30 30        BMI Local_D02B0A
-D0/2ADA: 30 30        BMI Local_D02B0C
-D0/2ADC: 30 30        BMI Local_D02B0E
+D0/2AD8: 30 30        BMI $2B0A
+D0/2ADA: 30 30        BMI $2B0C
+D0/2ADC: 30 30        BMI $2B0E
 D0/2ADE: 28           PLP
 D0/2ADF: 38           SEC
 D0/2AE0: 28           PLP
@@ -35,10 +35,10 @@ D0/2B10: D9 3F D5     CMP $D53F,Y
 D0/2B13: 37 F3        AND [$F3],Y
 D0/2B15: 13 E9        ORA ($E9,S),Y
 D0/2B17: 19 80 80     ORA $8080,Y
-D0/2B1A: 80 80        BRA Local_D02A9C
-D0/2B1C: 80 80        BRA Local_D02A9E
-D0/2B1E: 80 80        BRA Local_D02AA0
-D0/2B20: 80 80        BRA Local_D02AA2
+D0/2B1A: 80 80        BRA $2A9C
+D0/2B1C: 80 80        BRA $2A9E
+D0/2B1E: 80 80        BRA $2AA0
+D0/2B20: 80 80        BRA $2AA2
 D0/2B22: C0 C0 C0     CPY #$C0C0
 D0/2B25: C0 C0 C0     CPY #$C0C0
 D0/2B28: 04 07        TSB $07
@@ -50,7 +50,7 @@ D0/2B31: 0E 0A 0E     ASL $0E0A
 D0/2B34: 0A           ASL
 D0/2B35: 0E 0A 0E     ASL $0E0A
 D0/2B38: 81 81        STA ($81,X)
-D0/2B3A: 82 83 42     BRL Routine_D06DC0
+D0/2B3A: 82 83 42     BRL $D06DC0
 D0/2B3D: C3 42        CMP $42,S
 D0/2B3F: C3 C2        CMP $C2,S
 D0/2B41: C3 A4        CMP $A4,S
@@ -58,12 +58,12 @@ D0/2B43: E7 A4        SBC [$A4]
 D0/2B45: E7 24        SBC [$24]
 D0/2B47: 67 40        ADC [$40]
 D0/2B49: C0 00 80     CPY #$8000
-D0/2B4C: 80 80        BRA Local_D02ACE
-D0/2B4E: 80 80        BRA Local_D02AD0
-D0/2B50: 80 80        BRA Local_D02AD2
-D0/2B52: 80 80        BRA Local_D02AD4
-D0/2B54: 80 80        BRA Local_D02AD6
-D0/2B56: 80 80        BRA Local_D02AD8
+D0/2B4C: 80 80        BRA $2ACE
+D0/2B4E: 80 80        BRA $2AD0
+D0/2B50: 80 80        BRA $2AD2
+D0/2B52: 80 80        BRA $2AD4
+D0/2B54: 80 80        BRA $2AD6
+D0/2B56: 80 80        BRA $2AD8
 D0/2B58: 8A           TXA
 D0/2B59: 8E 86 86     STX $8686
 D0/2B5C: C6 C6        DEC $C6
@@ -87,5 +87,5 @@ D0/2B81: 0E 03 03     ASL $0303
 D0/2B84: 00 00        BRK $00
 D0/2B86: 00 00        BRK $00
 D0/2B88: 00 00        BRK $00
-D0/2B8A: 80 80        BRA Local_D02B0C
+D0/2B8A: 80 80        BRA $2B0C
 D0/2B8C: 40           RTI

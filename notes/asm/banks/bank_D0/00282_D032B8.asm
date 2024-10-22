@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 32B8
 Routine_D032B8:
-D0/32B8: 10 38        BPL Local_D032F2
+D0/32B8: 10 38        BPL $32F2
 D0/32BA: 28           PLP
 D0/32BB: 6C 00 00     JMP ($0000)
 D0/32BE: 00 00        BRK $00
@@ -21,7 +21,7 @@ D0/32D8: 00 00        BRK $00
 D0/32DA: 04 04        TSB $04
 D0/32DC: 00 02        BRK $02
 D0/32DE: 01 00        ORA ($00,X)
-D0/32E0: 80 82        BRA Local_D03264
+D0/32E0: 80 82        BRA $3264
 D0/32E2: 04 04        TSB $04
 D0/32E4: 00 00        BRK $00
 D0/32E6: 00 00        BRK $00
@@ -54,11 +54,11 @@ D0/331D: 0C F7 08     TSB $08F7
 D0/3320: F6 09        INC $09,X
 D0/3322: FE 01 FC     INC $FC01,X
 D0/3325: 03 7D        ORA $7D,S
-D0/3327: 82 A0 60     BRL Routine_D093CA
+D0/3327: 82 A0 60     BRL $D093CA
 D0/332A: 81 41        STA ($41,X)
 D0/332C: 42 C2        WDM $C2
-D0/332E: 4C CC 38     JMP Local_D038CC
+D0/332E: 4C CC 38     JMP $38CC
 D0/3331: B8           CLV
-D0/3332: 90 F0        BCC Local_D03324
+D0/3332: 90 F0        BCC $3324
 D0/3334: A0 60        LDY #$60
 D0/3336: 40           RTI

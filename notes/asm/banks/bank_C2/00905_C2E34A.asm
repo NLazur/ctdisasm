@@ -4,7 +4,7 @@ C2/E34A: 08           PHP
 C2/E34B: E2 20        SEP #$20
 C2/E34D: AD 06 0F     LDA $0F06
 C2/E350: C9 05        CMP #$05
-C2/E352: 90 02        BCC Local_C2E356
+C2/E352: 90 02        BCC $E356
 C2/E354: A9 04        LDA #$04
 C2/E356: 0A           ASL
 C2/E357: 0A           ASL

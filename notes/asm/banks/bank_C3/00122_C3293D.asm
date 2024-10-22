@@ -3,10 +3,10 @@ Routine_C3293D:
 C3/293D: 81 0D        STA ($0D,X)
 C3/293F: 00 0B        BRK $0B
 C3/2941: C9 22 00     CMP #$0022
-C3/2944: D0 06        BNE Local_C3294C
+C3/2944: D0 06        BNE $294C
 C3/2946: 17 00        ORA [$00],Y
 C3/2948: 0B           PHD
-C3/2949: 50 00        BVC Local_C3294B
+C3/2949: 50 00        BVC $294B
 C3/294B: 5D 34 12     EOR $1234,X
 C3/294E: B8           CLV
 C3/294F: 0D 02 1E     ORA $1E02

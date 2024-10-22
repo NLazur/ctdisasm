@@ -5,9 +5,9 @@ CD/010D: AA           TAX
 CD/010E: 86 59        STX $59
 CD/0110: BD 7C 96     LDA $967C,X
 CD/0113: C9 02        CMP #$02
-CD/0115: D0 07        BNE Local_CD011E
+CD/0115: D0 07        BNE $011E
 CD/0117: E0 06 00     CPX #$0006
-CD/011A: D0 02        BNE Local_CD011E
+CD/011A: D0 02        BNE $011E
 CD/011C: A9 05        LDA #$05
 CD/011E: AA           TAX
 CD/011F: 86 53        STX $53
@@ -33,7 +33,7 @@ CD/0146: 85 75        STA $75
 CD/0148: 7B           TDC
 CD/0149: E2 20        SEP #$20
 CD/014B: A2 00 00     LDX #$0000
-CD/014E: 20 54 01     JSR Local_CD0154
+CD/014E: 20 54 01     JSR $0154
 CD/0151: A2 04 00     LDX #$0004
 CD/0154: 86 55        STX $55
 CD/0156: A5 53        LDA $53
@@ -69,7 +69,7 @@ CD/0190: 18           CLC
 CD/0191: 69 20 00     ADC #$0020
 CD/0194: AA           TAX
 CD/0195: C6 57        DEC $57
-CD/0197: D0 E6        BNE Local_CD017F
+CD/0197: D0 E6        BNE $017F
 CD/0199: 7B           TDC
 CD/019A: E2 20        SEP #$20
 CD/019C: 60           RTS

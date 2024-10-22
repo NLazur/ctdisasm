@@ -19,18 +19,18 @@ D1/0710: 00 2A        BRK $2A
 D1/0712: 00 01        BRK $01
 D1/0714: 66 D6        ROR $D6
 D1/0716: 41 2A        EOR ($2A,X)
-D1/0718: 10 0F        BPL Local_D10729
+D1/0718: 10 0F        BPL $0729
 D1/071A: 08           PHP
 D1/071B: 00 2A        BRK $2A
 D1/071D: 00 81        BRK $81
 D1/071F: 2A           ROL
-D1/0720: 10 BB        BPL Local_D106DD
+D1/0720: 10 BB        BPL $06DD
 D1/0722: 08           PHP
-D1/0723: 22 00 2A 18  JSR Routine_182A00
+D1/0723: 22 00 2A 18  JSR $182A00
 D1/0727: 11 80        ORA ($80),Y
 D1/0729: 42 62        WDM $62
 D1/072B: 00 11        BRK $11
-D1/072D: 80 45        BRA Local_D10774
+D1/072D: 80 45        BRA $0774
 D1/072F: A8           TAY
 D1/0730: 00 FA        BRK $FA
 D1/0732: 2E 06 10     ROL $1006

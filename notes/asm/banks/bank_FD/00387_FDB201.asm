@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: B201
 Routine_FDB201:
 FD/B201: AD BD B3     LDA $B3BD
-FD/B204: F0 1C        BEQ Local_FDB222
+FD/B204: F0 1C        BEQ $B222
 FD/B206: C2 20        REP #$20
 FD/B208: AD 8C B2     LDA $B28C
 FD/B20B: 18           CLC

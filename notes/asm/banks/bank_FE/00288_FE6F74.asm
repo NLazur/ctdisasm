@@ -1,24 +1,24 @@
 ; Bank: FE | Start Address: 6F74
 Routine_FE6F74:
-FE/6F74: 2C 00 80     BIT Local_FE8000
+FE/6F74: 2C 00 80     BIT $8000
 FE/6F77: 0C 80 10     TSB $1080
-FE/6F7A: 80 14        BRA Local_FE6F90
-FE/6F7C: 80 28        BRA Local_FE6FA6
+FE/6F7A: 80 14        BRA $6F90
+FE/6F7C: 80 28        BRA $6FA6
 FE/6F7E: 00 80        BRK $80
-FE/6F80: 2C 80 30     BIT Local_FE3080
-FE/6F83: 80 34        BRA Local_FE6FB9
+FE/6F80: 2C 80 30     BIT $3080
+FE/6F83: 80 34        BRA $6FB9
 FE/6F85: A0 10 00     LDY #$0010
 FE/6F88: A0 30 01     LDY #$0130
 FE/6F8B: 04 21        TSB $21
 FE/6F8D: 08           PHP
 FE/6F8E: 21 0C        AND ($0C,X)
 FE/6F90: 00 21        BRK $21
-FE/6F92: 10 21        BPL Local_FE6FB5
+FE/6F92: 10 21        BPL $6FB5
 FE/6F94: 14 41        TRB $41
 FE/6F96: 08           PHP
 FE/6F97: 41 0C        EOR ($0C,X)
 FE/6F99: 00 41        BRK $41
-FE/6F9B: 10 41        BPL Local_FE6FDE
+FE/6F9B: 10 41        BPL $6FDE
 FE/6F9D: 14 41        TRB $41
 FE/6F9F: 18           CLC
 FE/6FA0: 41 1C        EOR ($1C,X)
@@ -27,23 +27,23 @@ FE/6FA4: 0C 61 10     TSB $1061
 FE/6FA7: 61 14        ADC ($14,X)
 FE/6FA9: 61 1C        ADC ($1C,X)
 FE/6FAB: 00 61        BRK $61
-FE/6FAD: 20 61 24     JSR Local_FE2461
+FE/6FAD: 20 61 24     JSR $2461
 FE/6FB0: 81 10        STA ($10,X)
 FE/6FB2: 81 20        STA ($20,X)
 FE/6FB4: 00 81        BRK $81
 FE/6FB6: 24 81        BIT $81
-FE/6FB8: 2C 81 30     BIT Local_FE3081
+FE/6FB8: 2C 81 30     BIT $3081
 FE/6FBB: A1 0C        LDA ($0C,X)
 FE/6FBD: 00 A1        BRK $A1
-FE/6FBF: 10 A1        BPL Local_FE6F62
+FE/6FBF: 10 A1        BPL $6F62
 FE/6FC1: 28           PLP
 FE/6FC2: A1 2C        LDA ($2C,X)
 FE/6FC4: A1 34        LDA ($34,X)
 FE/6FC6: 00 C1        BRK $C1
-FE/6FC8: 10 C1        BPL Local_FE6F8B
+FE/6FC8: 10 C1        BPL $6F8B
 FE/6FCA: 14 E1        TRB $E1
 FE/6FCC: 14 22        TRB $22
-FE/6FCE: 10 00        BPL Local_FE6FD0
+FE/6FCE: 10 00        BPL $6FD0
 FE/6FD0: 42 08        WDM $08
 FE/6FD2: 42 10        WDM $10
 FE/6FD4: 42 1C        WDM $1C
@@ -52,16 +52,16 @@ FE/6FD8: 00 62        BRK $62
 FE/6FDA: 14 62        TRB $62
 FE/6FDC: 1C 62 20     TRB $2062
 FE/6FDF: 62 24 00     PER $FE7006
-FE/6FE2: 82 10 82     BRL Routine_FEF1F5
+FE/6FE2: 82 10 82     BRL $FEF1F5
 FE/6FE5: 1C 82 20     TRB $2082
-FE/6FE8: 82 24 00     BRL Routine_FE700F
-FE/6FEB: 82 28 A2     BRL Routine_FE1216
+FE/6FE8: 82 24 00     BRL $FE700F
+FE/6FEB: 82 28 A2     BRL $FE1216
 FE/6FEE: 14 A2        TRB $A2
 FE/6FF0: 1C A2 24     TRB $24A2
 FE/6FF3: 00 A2        BRK $A2
 FE/6FF5: 28           PLP
 FE/6FF6: A2 2C C2     LDX #$C22C
-FE/6FF9: 10 C2        BPL Local_FE6FBD
+FE/6FF9: 10 C2        BPL $6FBD
 FE/6FFB: 18           CLC
 FE/6FFC: 00 C2        BRK $C2
 FE/6FFE: 1C C2 20     TRB $20C2
@@ -69,7 +69,7 @@ FE/7001: C2 24        REP #$24
 FE/7003: C2 30        REP #$30
 FE/7005: 00 C2        BRK $C2
 FE/7007: 34 E2        BIT $E2,X
-FE/7009: 10 E2        BPL Local_FE6FED
+FE/7009: 10 E2        BPL $6FED
 FE/700B: 14 E2        TRB $E2
 FE/700D: 18           CLC
 FE/700E: 00 02        BRK $02
@@ -77,7 +77,7 @@ FE/7010: 15 22        ORA $22,X
 FE/7012: 19 63 0C     ORA $0C63,Y
 FE/7015: 63 14        ADC $14,S
 FE/7017: 00 63        BRK $63
-FE/7019: 20 83 0C     JSR Local_FE0C83
+FE/7019: 20 83 0C     JSR $0C83
 FE/701C: 83 20        STA $20,S
 FE/701E: 83 24        STA $24,S
 FE/7020: 00 A3        BRK $A3
@@ -167,7 +167,7 @@ FE/70D1: 62 2E 46     PER $FEB702
 FE/70D4: 00 6E        BRK $6E
 FE/70D6: 5A           PHY
 FE/70D7: 8F 6A B0 5E  STA $5EB06A
-FE/70DB: D0 6A        BNE Local_FE7147
+FE/70DB: D0 6A        BNE $7147
 FE/70DD: 00 D0        BRK $D0
 FE/70DF: 72 12        ADC ($12)
 FE/70E1: 73 34        ADC ($34,S),Y

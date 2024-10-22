@@ -15,5 +15,5 @@ FF/035F: 00 F7        BRK $F7
 FF/0361: F8           SED
 FF/0362: FF 00 FD 84  SBC $84FD00,X
 FF/0366: FC 0C F0     JSR ($F00C,X)
-FF/0369: 30 C0        BMI Local_FF032B
+FF/0369: 30 C0        BMI $032B
 FF/036B: 40           RTI

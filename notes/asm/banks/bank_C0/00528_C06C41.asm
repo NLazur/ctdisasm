@@ -14,7 +14,7 @@ C0/6C55: E2 20        SEP #$20
 C0/6C57: BF 00 02 7F  LDA $7F0200,X
 C0/6C5B: 4A           LSR
 C0/6C5C: C6 D9        DEC $D9
-C0/6C5E: D0 FB        BNE Local_C06C5B
+C0/6C5E: D0 FB        BNE $6C5B
 C0/6C60: 9F 00 02 7F  STA $7F0200,X
 C0/6C64: C8           INY
 C0/6C65: C8           INY

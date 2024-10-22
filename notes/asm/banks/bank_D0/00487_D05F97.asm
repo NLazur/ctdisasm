@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 5F97
 Routine_D05F97:
-D0/5F97: 70 80        BVS Local_D05F19
+D0/5F97: 70 80        BVS $5F19
 D0/5F99: C0 80 C0     CPY #$C080
 D0/5F9C: 00 40        BRK $40
 D0/5F9E: 00 80        BRK $80

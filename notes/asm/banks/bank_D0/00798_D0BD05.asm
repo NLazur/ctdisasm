@@ -3,7 +3,7 @@ Routine_D0BD05:
 D0/BD05: 00 A0        BRK $A0
 D0/BD07: 00 00        BRK $00
 D0/BD09: 00 00        BRK $00
-D0/BD0B: 20 40 80     JSR Local_D08040
+D0/BD0B: 20 40 80     JSR $8040
 D0/BD0E: C0 40 00     CPY #$0040
 D0/BD11: 00 00        BRK $00
 D0/BD13: 00 00        BRK $00
@@ -16,10 +16,10 @@ D0/BD1F: 00 00        BRK $00
 D0/BD21: 01 00        ORA ($00,X)
 D0/BD23: 01 01        ORA ($01,X)
 D0/BD25: 32 13        AND ($13)
-D0/BD27: 2C 0E 10     BIT Local_D0100E
+D0/BD27: 2C 0E 10     BIT $100E
 D0/BD2A: 08           PHP
-D0/BD2B: 10 08        BPL Local_D0BD35
-D0/BD2D: 30 30        BMI Local_D0BD5F
+D0/BD2B: 10 08        BPL $BD35
+D0/BD2D: 30 30        BMI $BD5F
 D0/BD2F: C0 00 01     CPY #$0100
 D0/BD32: 00 00        BRK $00
 D0/BD34: 00 00        BRK $00

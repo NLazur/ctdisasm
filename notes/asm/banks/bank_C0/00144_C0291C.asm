@@ -10,7 +10,7 @@ C0/2928: AA           TAX
 C0/2929: E2 20        SEP #$20
 C0/292B: A9 E7        LDA #$E7
 C0/292D: 9F 00 30 7E  STA $7E3000,X
-C0/2931: 80 E5        BRA Local_C02918
+C0/2931: 80 E5        BRA $2918
 C0/2933: 1A           INC
 C0/2934: 9F 00 30 7E  STA $7E3000,X
 C0/2938: E8           INX
@@ -27,7 +27,7 @@ C0/294B: 9F 00 30 7E  STA $7E3000,X
 C0/294F: A9 E9        LDA #$E9
 C0/2951: CA           DEX
 C0/2952: 9F 00 30 7E  STA $7E3000,X
-C0/2956: 80 C0        BRA Local_C02918
+C0/2956: 80 C0        BRA $2918
 C0/2958: 1A           INC
 C0/2959: 9F 00 30 7E  STA $7E3000,X
 C0/295D: CA           DEX
@@ -44,7 +44,7 @@ C0/2970: 9F 00 30 7E  STA $7E3000,X
 C0/2974: A9 EB        LDA #$EB
 C0/2976: E8           INX
 C0/2977: 9F 00 30 7E  STA $7E3000,X
-C0/297B: 80 9B        BRA Local_C02918
+C0/297B: 80 9B        BRA $2918
 C0/297D: 1A           INC
 C0/297E: 9F 00 30 7E  STA $7E3000,X
 C0/2982: E8           INX
@@ -72,7 +72,7 @@ C0/29AC: 9F 00 30 7E  STA $7E3000,X
 C0/29B0: A9 F5        LDA #$F5
 C0/29B2: E8           INX
 C0/29B3: 9F 00 30 7E  STA $7E3000,X
-C0/29B7: 82 5E FF     BRL Routine_C02918
+C0/29B7: 82 5E FF     BRL $C02918
 C0/29BA: 1A           INC
 C0/29BB: 9F 00 30 7E  STA $7E3000,X
 C0/29BF: CA           DEX
@@ -100,7 +100,7 @@ C0/29E9: 9F 00 30 7E  STA $7E3000,X
 C0/29ED: A9 F3        LDA #$F3
 C0/29EF: CA           DEX
 C0/29F0: 9F 00 30 7E  STA $7E3000,X
-C0/29F4: 82 21 FF     BRL Routine_C02918
+C0/29F4: 82 21 FF     BRL $C02918
 C0/29F7: 0B           PHD
 C0/29F8: C2 20        REP #$20
 C0/29FA: A9 00 21     LDA #$2100
@@ -124,7 +124,7 @@ C0/2A1E: 85 80        STA $80
 C0/2A20: A9 20        LDA #$20
 C0/2A22: 85 80        STA $80
 C0/2A24: CA           DEX
-C0/2A25: D0 ED        BNE Local_C02A14
+C0/2A25: D0 ED        BNE $2A14
 C0/2A27: A9 F3        LDA #$F3
 C0/2A29: 85 80        STA $80
 C0/2A2B: A9 20        LDA #$20
@@ -152,7 +152,7 @@ C0/2A57: 85 80        STA $80
 C0/2A59: A9 23        LDA #$23
 C0/2A5B: 85 80        STA $80
 C0/2A5D: CA           DEX
-C0/2A5E: D0 DD        BNE Local_C02A3D
+C0/2A5E: D0 DD        BNE $2A3D
 C0/2A60: A9 FC        LDA #$FC
 C0/2A62: 85 80        STA $80
 C0/2A64: A9 20        LDA #$20
@@ -187,7 +187,7 @@ C0/2A9D: 85 80        STA $80
 C0/2A9F: A9 23        LDA #$23
 C0/2AA1: 85 80        STA $80
 C0/2AA3: CA           DEX
-C0/2AA4: D0 DD        BNE Local_C02A83
+C0/2AA4: D0 DD        BNE $2A83
 C0/2AA6: A9 FE        LDA #$FE
 C0/2AA8: 85 80        STA $80
 C0/2AAA: A9 20        LDA #$20
@@ -222,7 +222,7 @@ C0/2AE3: 85 80        STA $80
 C0/2AE5: A9 20        LDA #$20
 C0/2AE7: 85 80        STA $80
 C0/2AE9: CA           DEX
-C0/2AEA: D0 DD        BNE Local_C02AC9
+C0/2AEA: D0 DD        BNE $2AC9
 C0/2AEC: A9 FC        LDA #$FC
 C0/2AEE: 85 80        STA $80
 C0/2AF0: A9 23        LDA #$23
@@ -257,7 +257,7 @@ C0/2B29: 85 80        STA $80
 C0/2B2B: A9 20        LDA #$20
 C0/2B2D: 85 80        STA $80
 C0/2B2F: CA           DEX
-C0/2B30: D0 DD        BNE Local_C02B0F
+C0/2B30: D0 DD        BNE $2B0F
 C0/2B32: A9 FE        LDA #$FE
 C0/2B34: 85 80        STA $80
 C0/2B36: A9 23        LDA #$23
@@ -271,8 +271,8 @@ C0/2B44: 85 80        STA $80
 C0/2B46: A9 20        LDA #$20
 C0/2B48: 85 80        STA $80
 C0/2B4A: 88           DEY
-C0/2B4B: F0 03        BEQ Local_C02B50
-C0/2B4D: 82 E2 FE     BRL Routine_C02A32
+C0/2B4B: F0 03        BEQ $2B50
+C0/2B4D: 82 E2 FE     BRL $C02A32
 C0/2B50: A9 F8        LDA #$F8
 C0/2B52: 85 80        STA $80
 C0/2B54: A9 20        LDA #$20
@@ -287,7 +287,7 @@ C0/2B65: 85 80        STA $80
 C0/2B67: A9 20        LDA #$20
 C0/2B69: 85 80        STA $80
 C0/2B6B: CA           DEX
-C0/2B6C: D0 ED        BNE Local_C02B5B
+C0/2B6C: D0 ED        BNE $2B5B
 C0/2B6E: A9 FB        LDA #$FB
 C0/2B70: 85 80        STA $80
 C0/2B72: A9 20        LDA #$20

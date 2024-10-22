@@ -1,7 +1,7 @@
 ; Bank: C3 | Start Address: 91C7
 Routine_C391C7:
 C3/91C7: 18           CLC
-C3/91C8: 80 60        BRA Local_C3922A
+C3/91C8: 80 60        BRA $922A
 C3/91CA: 24 70        BIT $70
 C3/91CC: 1A           INC
 C3/91CD: 12 40        ORA ($40)

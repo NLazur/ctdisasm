@@ -7,7 +7,7 @@ D1/0F88: 08           PHP
 D1/0F89: C0 40 01     CPY #$0140
 D1/0F8C: 4A           LSR
 D1/0F8D: 21 08        AND ($08,X)
-D1/0F8F: 10 42        BPL Local_D10FD3
+D1/0F8F: 10 42        BPL $0FD3
 D1/0F91: 41 40        EOR ($40,X)
 D1/0F93: 41 10        EOR ($10,X)
 D1/0F95: 08           PHP

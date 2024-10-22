@@ -20,7 +20,7 @@ C3/D1C2: B4 08        LDY $08,X
 C3/D1C4: 66 CB        ROR $CB
 C3/D1C6: 49 20 08     EOR #$0820
 C3/D1C9: FF 67 5F 2F  SBC $2F5F67,X
-C3/D1CD: 80 FE        BRA Local_C3D1CD
+C3/D1CD: 80 FE        BRA $D1CD
 C3/D1CF: 09 70 26     ORA #$2670
 C3/D1D2: 8B           PHB
 C3/D1D3: 15 EB        ORA $EB,X
@@ -31,7 +31,7 @@ C3/D1DA: AA           TAX
 C3/D1DB: 08           PHP
 C3/D1DC: BE 5F 3E     LDX $3E5F,Y
 C3/D1DF: 37 77        AND [$77],Y
-C3/D1E1: 80 1A        BRA Local_C3D1FD
+C3/D1E1: 80 1A        BRA $D1FD
 C3/D1E3: 8D 21 E7     STA $E721
 C3/D1E6: 18           CLC
 C3/D1E7: E0 5B        CPX #$5B

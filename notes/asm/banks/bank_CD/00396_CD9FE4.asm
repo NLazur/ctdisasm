@@ -35,7 +35,7 @@ CD/A037: 1F 0F 02 01  ORA $01020F,X
 CD/A03B: 43 00        EOR $00,S
 CD/A03D: 00 E8        BRK $E8
 CD/A03F: 1A           INC
-CD/A040: 70 36        BVS Local_CDA078
+CD/A040: 70 36        BVS $A078
 CD/A042: 02 01        COP $01
 CD/A044: 0B           PHD
 CD/A045: 98           TYA
@@ -47,7 +47,7 @@ CD/A04C: 73 03        ADC ($03,S),Y
 CD/A04E: 24 02        BIT $02
 CD/A050: 02 00        COP $00
 CD/A052: 1A           INC
-CD/A053: 70 0B        BVS Local_CDA060
+CD/A053: 70 0B        BVS $A060
 CD/A055: 98           TYA
 CD/A056: 00 2B        BRK $2B
 CD/A058: 1B           TCS
@@ -55,36 +55,36 @@ CD/A059: 2B           PLD
 CD/A05A: 71 00        ADC ($00),Y
 CD/A05C: 73 03        ADC ($03,S),Y
 CD/A05E: 24 02        BIT $02
-CD/A060: 20 0F 02     JSR Local_CD020F
+CD/A060: 20 0F 02     JSR $020F
 CD/A063: 02 1A        COP $1A
-CD/A065: 70 0B        BVS Local_CDA072
+CD/A065: 70 0B        BVS $A072
 CD/A067: 98           TYA
 CD/A068: 00 2C        BRK $2C
 CD/A06A: 1B           TCS
-CD/A06B: 2C 71 00     BIT Local_CD0071
+CD/A06B: 2C 71 00     BIT $0071
 CD/A06E: 73 03        ADC ($03,S),Y
 CD/A070: 24 02        BIT $02
-CD/A072: 20 0F 02     JSR Local_CD020F
+CD/A072: 20 0F 02     JSR $020F
 CD/A075: 01 1A        ORA ($1A,X)
-CD/A077: 70 0B        BVS Local_CDA084
+CD/A077: 70 0B        BVS $A084
 CD/A079: 98           TYA
 CD/A07A: 00 2D        BRK $2D
 CD/A07C: 1B           TCS
 CD/A07D: 2D 71 00     AND $0071
 CD/A080: 73 03        ADC ($03,S),Y
 CD/A082: 24 02        BIT $02
-CD/A084: 20 1E 02     JSR Local_CD021E
+CD/A084: 20 1E 02     JSR $021E
 CD/A087: 02 1A        COP $1A
-CD/A089: 70 0B        BVS Local_CDA096
+CD/A089: 70 0B        BVS $A096
 CD/A08B: 98           TYA
 CD/A08C: 00 2E        BRK $2E
 CD/A08E: 1B           TCS
 CD/A08F: 2E 71 00     ROL $0071
 CD/A092: 73 03        ADC ($03,S),Y
 CD/A094: 24 02        BIT $02
-CD/A096: 20 1E 02     JSR Local_CD021E
+CD/A096: 20 1E 02     JSR $021E
 CD/A099: 00 1A        BRK $1A
-CD/A09B: 70 0B        BVS Local_CDA0A8
+CD/A09B: 70 0B        BVS $A0A8
 CD/A09D: 98           TYA
 CD/A09E: 00 2F        BRK $2F
 CD/A0A0: 1B           TCS
@@ -93,17 +93,17 @@ CD/A0A5: 03 24        ORA $24,S
 CD/A0A7: 02 20        COP $20
 CD/A0A9: 2D 02 02     AND $0202
 CD/A0AC: 1A           INC
-CD/A0AD: 70 0B        BVS Local_CDA0BA
+CD/A0AD: 70 0B        BVS $A0BA
 CD/A0AF: 98           TYA
 CD/A0B0: 00 30        BRK $30
 CD/A0B2: 1B           TCS
-CD/A0B3: 30 71        BMI Local_CDA126
+CD/A0B3: 30 71        BMI $A126
 CD/A0B5: 00 73        BRK $73
 CD/A0B7: 03 24        ORA $24,S
 CD/A0B9: 02 20        COP $20
 CD/A0BB: 2D 02 01     AND $0102
 CD/A0BE: 1A           INC
-CD/A0BF: 70 0B        BVS Local_CDA0CC
+CD/A0BF: 70 0B        BVS $A0CC
 CD/A0C1: 98           TYA
 CD/A0C2: 00 31        BRK $31
 CD/A0C4: 1B           TCS
@@ -111,11 +111,11 @@ CD/A0C5: 31 71        AND ($71),Y
 CD/A0C7: 36 00        ROL $00,X
 CD/A0C9: 72 0D        ADC ($0D)
 CD/A0CB: 02 07        COP $07
-CD/A0CD: 20 1E 06     JSR Local_CD061E
+CD/A0CD: 20 1E 06     JSR $061E
 CD/A0D0: 03 20        ORA $20,S
 CD/A0D2: 0F 50 2E 01  ORA $012E50
 CD/A0D6: 00 90        BRK $90
-CD/A0D8: F0 80        BEQ Local_CDA05A
+CD/A0D8: F0 80        BEQ $A05A
 CD/A0DA: 00 E9        BRK $E9
 CD/A0DC: A0 F6        LDY #$F6
 CD/A0DE: A0 05        LDY #$05

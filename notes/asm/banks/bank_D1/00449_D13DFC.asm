@@ -32,7 +32,7 @@ D1/3E46: 00 18        BRK $18
 D1/3E48: 00 00        BRK $00
 D1/3E4A: 00 00        BRK $00
 D1/3E4C: 00 00        BRK $00
-D1/3E4E: 30 08        BMI Local_D13E58
+D1/3E4E: 30 08        BMI $3E58
 D1/3E50: 00 00        BRK $00
 D1/3E52: 00 00        BRK $00
 D1/3E54: 18           CLC
@@ -53,9 +53,9 @@ D1/3E6A: 00 02        BRK $02
 D1/3E6C: 00 44        BRK $44
 D1/3E6E: 00 28        BRK $28
 D1/3E70: 00 00        BRK $00
-D1/3E72: 30 30        BMI Local_D13EA4
+D1/3E72: 30 30        BMI $3EA4
 D1/3E74: 44 44 82     MVP $44,$82
-D1/3E77: 82 82 82     BRL Routine_D1C0FC
+D1/3E77: 82 82 82     BRL $D1C0FC
 D1/3E7A: 02 02        COP $02
 D1/3E7C: 44 44 28     MVP $44,$28
 D1/3E7F: 28           PLP
@@ -102,19 +102,19 @@ D1/3EDB: 07 1F        ORA [$1F]
 D1/3EDD: 1F 3F 3F 00  ORA $003F3F,X
 D1/3EE1: 00 00        BRK $00
 D1/3EE3: 00 80        BRK $80
-D1/3EE5: 80 40        BRA Local_D13F27
+D1/3EE5: 80 40        BRA $3F27
 D1/3EE7: C0 80        CPY #$80
-D1/3EE9: 80 C0        BRA Local_D13EAB
+D1/3EE9: 80 C0        BRA $3EAB
 D1/3EEB: C0 30        CPY #$30
-D1/3EED: F0 C8        BEQ Local_D13EB7
+D1/3EED: F0 C8        BEQ $3EB7
 D1/3EEF: 38           SEC
 D1/3EF0: 00 00        BRK $00
 D1/3EF2: 00 00        BRK $00
-D1/3EF4: 80 80        BRA Local_D13E76
+D1/3EF4: 80 80        BRA $3E76
 D1/3EF6: C0 C0        CPY #$C0
-D1/3EF8: 80 80        BRA Local_D13E7A
+D1/3EF8: 80 80        BRA $3E7A
 D1/3EFA: C0 C0        CPY #$C0
-D1/3EFC: F0 F0        BEQ Local_D13EEE
+D1/3EFC: F0 F0        BEQ $3EEE
 D1/3EFE: F8           SED
 D1/3EFF: F8           SED
 D1/3F00: 00 00        BRK $00
@@ -171,5 +171,5 @@ D1/3F65: 3A           DEC
 D1/3F66: 24 3C        BIT $3C
 D1/3F68: 28           PLP
 D1/3F69: 38           SEC
-D1/3F6A: 50 70        BVC Local_D13FDC
+D1/3F6A: 50 70        BVC $3FDC
 D1/3F6C: 60           RTS

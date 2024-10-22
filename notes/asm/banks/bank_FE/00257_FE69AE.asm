@@ -11,7 +11,7 @@ FE/69BD: 06 F9        ASL $F9
 FE/69BF: 7B           TDC
 FE/69C0: 94 39        STY $39,X
 FE/69C2: 00 CE        BRK $CE
-FE/69C4: 80 00        BRA Local_FE69C6
+FE/69C4: 80 00        BRA $69C6
 FE/69C6: B7 02        LDA [$02],Y
 FE/69C8: 33 02        AND ($02,S),Y
 FE/69CA: 15 01        ORA $01,X

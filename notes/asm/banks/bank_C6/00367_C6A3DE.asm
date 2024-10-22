@@ -1,18 +1,18 @@
 ; Bank: C6 | Start Address: A3DE
 Routine_C6A3DE:
-C6/A3DE: 10 28        BPL Local_C6A408
+C6/A3DE: 10 28        BPL $A408
 C6/A3E0: 13 F5        ORA ($F5,S),Y
-C6/A3E2: 50 9C        BVC Local_C6A380
+C6/A3E2: 50 9C        BVC $A380
 C6/A3E4: 1C 39 29     TRB $2939
 C6/A3E7: 3D 01 4A     AND $4A01,X
 C6/A3EA: 4A           LSR
 C6/A3EB: 39 A0 3B     AND $3BA0,Y
 C6/A3EE: 4A           LSR
 C6/A3EF: 4B           PHK
-C6/A3F0: D0 29        BNE Local_C6A41B
+C6/A3F0: D0 29        BNE $A41B
 C6/A3F2: 4A           LSR
 C6/A3F3: 02 C2        COP $C2
-C6/A3F5: 2C 64 45     BIT Local_C64564
+C6/A3F5: 2C 64 45     BIT $4564
 C6/A3F8: 9D 14 14     STA $1414,X
 C6/A3FB: 24 02        BIT $02
 C6/A3FD: 05 EF        ORA $EF
@@ -36,8 +36,8 @@ C6/A41B: 4B           PHK
 C6/A41C: 00 6C        BRK $6C
 C6/A41E: 21 49        AND ($49,X)
 C6/A420: 4B           PHK
-C6/A421: 22 15 17 39  JSR Routine_391715
-C6/A425: 30 80        BMI Local_C6A3A7
+C6/A421: 22 15 17 39  JSR $391715
+C6/A425: 30 80        BMI $A3A7
 C6/A427: C2 81        REP #$81
 C6/A429: C2 0C        REP #$0C
 C6/A42B: 8D 68 01     STA $0168

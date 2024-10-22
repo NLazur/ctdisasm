@@ -1,13 +1,13 @@
 ; Bank: D0 | Start Address: B33A
 Routine_D0B33A:
-D0/B33A: 80 00        BRA Local_D0B33C
-D0/B33C: 80 80        BRA Local_D0B2BE
+D0/B33A: 80 00        BRA $B33C
+D0/B33C: 80 80        BRA $B2BE
 D0/B33E: 00 00        BRK $00
 D0/B340: 00 00        BRK $00
 D0/B342: 00 00        BRK $00
 D0/B344: 00 00        BRK $00
 D0/B346: 00 00        BRK $00
-D0/B348: 80 80        BRA Local_D0B2CA
+D0/B348: 80 80        BRA $B2CA
 D0/B34A: 00 00        BRK $00
 D0/B34C: 00 00        BRK $00
 D0/B34E: 00 00        BRK $00
@@ -115,6 +115,6 @@ D0/B446: 00 40        BRK $40
 D0/B448: 00 E0        BRK $E0
 D0/B44A: 00 B0        BRK $B0
 D0/B44C: C0 58 40     CPY #$4058
-D0/B44F: 4C 00 00     JMP Local_D00000
+D0/B44F: 4C 00 00     JMP $0000
 D0/B452: 00 00        BRK $00
 D0/B454: 40           RTI

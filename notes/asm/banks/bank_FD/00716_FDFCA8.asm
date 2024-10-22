@@ -10,7 +10,7 @@ FD/FCB4: 06 05        ASL $05
 FD/FCB6: 04 03        TSB $03
 FD/FCB8: 02 01        COP $01
 FD/FCBA: 8F 41 0A 16  STA $160A41
-FD/FCBE: 80 77        BRA Local_FDFD37
+FD/FCBE: 80 77        BRA $FD37
 FD/FCC0: F6 00        INC $00,X
 FD/FCC2: 00 01        BRK $01
 FD/FCC4: 02 03        COP $03
@@ -61,7 +61,7 @@ FD/FD1F: 01 02        ORA ($02,X)
 FD/FD21: 01 00        ORA ($00,X)
 FD/FD23: 00 00        BRK $00
 FD/FD25: 00 00        BRK $00
-FD/FD27: 20 1D 01     JSR Local_FD011D
+FD/FD27: 20 1D 01     JSR $011D
 FD/FD2A: 01 00        ORA ($00,X)
 FD/FD2C: 00 00        BRK $00
 FD/FD2E: 00 00        BRK $00
@@ -70,7 +70,7 @@ FD/FD32: 5D 02 09     EOR $0902,X
 FD/FD35: 00 00        BRK $00
 FD/FD37: 00 00        BRK $00
 FD/FD39: 00 00        BRK $00
-FD/FD3B: 20 19 01     JSR Local_FD0119
+FD/FD3B: 20 19 01     JSR $0119
 FD/FD3E: 02 00        COP $00
 FD/FD40: 00 00        BRK $00
 FD/FD42: 00 00        BRK $00

@@ -13,16 +13,16 @@ C2/E9EE: A2 00        LDX #$00
 C2/E9F0: A5 F5        LDA $F5
 C2/E9F2: 85 5A        STA $5A
 C2/E9F4: 4A           LSR
-C2/E9F5: B0 07        BCS Local_C2E9FE
+C2/E9F5: B0 07        BCS $E9FE
 C2/E9F7: E8           INX
 C2/E9F8: E0 04        CPX #$04
-C2/E9FA: 90 F8        BCC Local_C2E9F4
-C2/E9FC: 80 1C        BRA Local_C2EA1A
+C2/E9FA: 90 F8        BCC $E9F4
+C2/E9FC: 80 1C        BRA $EA1A
 C2/E9FE: 8E 1E 0D     STX $0D1E
 C2/EA01: AD 1F 0D     LDA $0D1F
-C2/EA04: D0 14        BNE Local_C2EA1A
+C2/EA04: D0 14        BNE $EA1A
 C2/EA06: A5 54        LDA $54
-C2/EA08: 20 27 EA     JSR Local_C2EA27
+C2/EA08: 20 27 EA     JSR $EA27
 C2/EA0B: 9B           TXY
 C2/EA0C: A5 54        LDA $54
 C2/EA0E: 85 55        STA $55

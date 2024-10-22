@@ -10,7 +10,7 @@ FE/8C50: 00 20        BRK $20
 FE/8C52: 08           PHP
 FE/8C53: 12 08        ORA ($08)
 FE/8C55: 07 1D        ORA [$1D]
-FE/8C57: 10 E5        BPL Local_FE8C3E
+FE/8C57: 10 E5        BPL $8C3E
 FE/8C59: 1C C3 18     TRB $18C3
 FE/8C5C: 12 08        ORA ($08)
 FE/8C5E: 2B           PLD
@@ -38,7 +38,7 @@ FE/8C8D: 25 83        AND $83
 FE/8C8F: 14 7A        TRB $7A
 FE/8C91: 08           PHP
 FE/8C92: 73 C7        ADC ($C7,S),Y
-FE/8C94: 10 6E        BPL Local_FE8D04
+FE/8C94: 10 6E        BPL $8D04
 FE/8C96: 00 7F        BRK $7F
 FE/8C98: DA           PHX
 FE/8C99: 14 35        TRB $35
@@ -59,12 +59,12 @@ FE/8CB9: 2E 12 1E     ROL $1E12
 FE/8CBC: D4 62        PEI $62
 FE/8CBE: 4A           LSR
 FE/8CBF: 15 01        ORA $01,X
-FE/8CC1: 20 58 E6     JSR Local_FEE658
+FE/8CC1: 20 58 E6     JSR $E658
 FE/8CC4: 14 00        TRB $00
 FE/8CC6: 00 5F        BRK $5F
 FE/8CC8: 0A           ASL
 FE/8CC9: DA           PHX
-FE/8CCA: 20 14 09     JSR Local_FE0914
+FE/8CCA: 20 14 09     JSR $0914
 FE/8CCD: 7A           PLY
 FE/8CCE: 27 2B        AND [$2B]
 FE/8CD0: 40           RTI

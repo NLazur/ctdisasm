@@ -3,7 +3,7 @@ Routine_CF762E:
 CF/762E: 5F A0 00 00  EOR $0000A0,X
 CF/7632: 00 00        BRK $00
 CF/7634: 00 00        BRK $00
-CF/7636: F0 F0        BEQ Local_CF7628
+CF/7636: F0 F0        BEQ $7628
 CF/7638: C7 3F        CMP [$3F]
 CF/763A: FE 01 FF     INC $FF01,X
 CF/763D: 00 FF        BRK $FF
@@ -58,7 +58,7 @@ CF/76A3: FA           PLX
 CF/76A4: 00 FF        BRK $FF
 CF/76A6: 00 FF        BRK $FF
 CF/76A8: 00 FF        BRK $FF
-CF/76AA: 50 AF        BVC Local_CF765B
+CF/76AA: 50 AF        BVC $765B
 CF/76AC: AA           TAX
 CF/76AD: 55 55        EOR $55,X
 CF/76AF: AA           TAX
@@ -74,11 +74,11 @@ CF/76BF: FF FC 03 FE  SBC $FE03FC,X
 CF/76C3: 01 FD        ORA ($FD,X)
 CF/76C5: 02 FE        COP $FE
 CF/76C7: 01 7D        ORA ($7D,X)
-CF/76C9: 82 BA 45     BRL Routine_CFBC86
+CF/76C9: 82 BA 45     BRL $CFBC86
 CF/76CC: 55 AA        EOR $AA,X
 CF/76CE: AA           TAX
 CF/76CF: 55 80        EOR $80,X
-CF/76D1: 80 20        BRA Local_CF76F3
+CF/76D1: 80 20        BRA $76F3
 CF/76D3: E0 48        CPX #$48
 CF/76D5: B8           CLV
 CF/76D6: A4 5C        LDY $5C
@@ -124,6 +124,6 @@ CF/774A: E9 FE        SBC #$FE
 CF/774C: F4 FF FA     PEA $FAFF
 CF/774F: FF A1 5E 56  SBC $565EA1,X
 CF/7753: A9 AF        LDA #$AF
-CF/7755: 50 FF        BVC Local_CF7756
+CF/7755: 50 FF        BVC $7756
 CF/7757: 00 BF        BRK $BF
 CF/7759: 40           RTI

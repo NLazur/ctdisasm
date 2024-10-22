@@ -37,9 +37,9 @@ FD/C22F: A9 31        LDA #$31
 FD/C231: 85 61        STA $61
 FD/C233: AD 3C 01     LDA $013C
 FD/C236: 89 01        BIT #$01
-FD/C238: D0 04        BNE Local_FDC23E
+FD/C238: D0 04        BNE $C23E
 FD/C23A: A9 28        LDA #$28
-FD/C23C: 80 02        BRA Local_FDC240
+FD/C23C: 80 02        BRA $C240
 FD/C23E: A9 29        LDA #$29
 FD/C240: 85 71        STA $71
 FD/C242: A9 7F        LDA #$7F
@@ -61,8 +61,8 @@ FD/C260: 85 67        STA $67
 FD/C262: 85 77        STA $77
 FD/C264: AD 53 01     LDA $0153
 FD/C267: 29 0F        AND #$0F
-FD/C269: F0 02        BEQ Local_FDC26D
-FD/C26B: 80 2A        BRA Local_FDC297
+FD/C269: F0 02        BEQ $C26D
+FD/C26B: 80 2A        BRA $C297
 FD/C26D: A2 80 0F     LDX #$0F80
 FD/C270: 86 02        STX $02
 FD/C272: A2 D7 0F     LDX #$0FD7

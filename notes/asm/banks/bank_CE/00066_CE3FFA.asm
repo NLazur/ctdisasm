@@ -3,7 +3,7 @@ Routine_CE3FFA:
 CE/3FFA: 01 28        ORA ($28,X)
 CE/3FFC: 3A           DEC
 CE/3FFD: 1F FD C3 08  ORA $08C3FD,X
-CE/4001: 80 01        BRA Local_CE4004
+CE/4001: 80 01        BRA $4004
 CE/4003: C3 06        CMP $06,S
 CE/4005: C0 01 35     CPY #$3501
 CE/4008: 3A           DEC

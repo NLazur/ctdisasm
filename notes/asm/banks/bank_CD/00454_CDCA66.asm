@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: CA66
 Routine_CDCA66:
-CD/CA66: 70 09        BVS Local_CDCA71
+CD/CA66: 70 09        BVS $CA71
 CD/CA68: A8           TAY
 CD/CA69: 0A           ASL
 CD/CA6A: 0A           ASL
@@ -9,7 +9,7 @@ CD/CA6C: 0A           ASL
 CD/CA6D: 0B           PHD
 CD/CA6E: A8           TAY
 CD/CA6F: 0A           ASL
-CD/CA70: 20 0A 03     JSR Local_CD030A
+CD/CA70: 20 0A 03     JSR $030A
 CD/CA73: 01 65        ORA ($65,X)
 CD/CA75: 36 00        ROL $00,X
 CD/CA77: 1B           TCS

@@ -1,20 +1,20 @@
 ; Bank: C1 | Start Address: AC5E
 Routine_C1AC5E:
 C1/AC5E: AD B2 AE     LDA $AEB2
-C1/AC61: F0 1E        BEQ Local_C1AC81
+C1/AC61: F0 1E        BEQ $AC81
 C1/AC63: 7B           TDC
 C1/AC64: AA           TAX
 C1/AC65: BD B3 AE     LDA $AEB3,X
-C1/AC68: F0 05        BEQ Local_C1AC6F
+C1/AC68: F0 05        BEQ $AC6F
 C1/AC6A: A9 01        LDA #$01
 C1/AC6C: 9D 85 AE     STA $AE85,X
 C1/AC6F: E8           INX
 C1/AC70: E0 08 00     CPX #$0008
-C1/AC73: 90 F0        BCC Local_C1AC65
+C1/AC73: 90 F0        BCC $AC65
 C1/AC75: AD 89 29     LDA $2989
 C1/AC78: 89 20        BIT #$20
-C1/AC7A: D0 05        BNE Local_C1AC81
+C1/AC7A: D0 05        BNE $AC81
 C1/AC7C: A9 06        LDA #$06
-C1/AC7E: 20 03 00     JSR Local_C10003
+C1/AC7E: 20 03 00     JSR $0003
 C1/AC81: 9C B2 AE     STZ $AEB2
 C1/AC84: 60           RTS

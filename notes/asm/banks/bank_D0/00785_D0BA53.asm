@@ -14,7 +14,7 @@ D0/BA67: 00 00        BRK $00
 D0/BA69: 00 00        BRK $00
 D0/BA6B: 00 02        BRK $02
 D0/BA6D: 00 30        BRK $30
-D0/BA6F: 30 00        BMI Local_D0BA71
+D0/BA6F: 30 00        BMI $BA71
 D0/BA71: C0 C0 04     CPY #$04C0
 D0/BA74: 00 00        BRK $00
 D0/BA76: 02 00        COP $00
@@ -38,7 +38,7 @@ D0/BA97: 00 00        BRK $00
 D0/BA99: 00 00        BRK $00
 D0/BA9B: 00 00        BRK $00
 D0/BA9D: 00 00        BRK $00
-D0/BA9F: 30 00        BMI Local_D0BAA1
+D0/BA9F: 30 00        BMI $BAA1
 D0/BAA1: C0 00 04     CPY #$0400
 D0/BAA4: 00 00        BRK $00
 D0/BAA6: 00 30        BRK $30
@@ -80,7 +80,7 @@ D0/BAEF: 00 7A        BRK $7A
 D0/BAF1: 42 74        WDM $74
 D0/BAF3: 18           CLC
 D0/BAF4: 37 08        AND [$08],Y
-D0/BAF6: 30 0B        BMI Local_D0BB03
+D0/BAF6: 30 0B        BMI $BB03
 D0/BAF8: 1F 29 07 0F  ORA $0F0729,X
 D0/BAFC: 07 07        ORA [$07]
 D0/BAFE: 01 01        ORA ($01,X)
@@ -91,13 +91,13 @@ D0/BB09: 55 E1        EOR $E1,X
 D0/BB0B: 34 10        BIT $10,X
 D0/BB0D: DF 43 9D 96  CMP $969D43,X
 D0/BB11: FA           PLX
-D0/BB12: F0 E4        BEQ Local_D0BAF8
-D0/BB14: D0 F0        BNE Local_D0BB06
+D0/BB12: F0 E4        BEQ $BAF8
+D0/BB14: D0 F0        BNE $BB06
 D0/BB16: C0 C0 8F     CPY #$8FC0
 D0/BB19: CF EF FF FE  CMP $FEFFEF
 D0/BB1D: FC F0 C0     JSR ($C0F0,X)
 D0/BB20: 00 00        BRK $00
-D0/BB22: 10 00        BPL Local_D0BB24
+D0/BB22: 10 00        BPL $BB24
 D0/BB24: 14 00        TRB $00
 D0/BB26: 00 00        BRK $00
 D0/BB28: 00 00        BRK $00
@@ -108,7 +108,7 @@ D0/BB30: 00 10        BRK $10
 D0/BB32: 14 00        TRB $00
 D0/BB34: 00 00        BRK $00
 D0/BB36: 00 00        BRK $00
-D0/BB38: 50 20        BVC Local_D0BB5A
+D0/BB38: 50 20        BVC $BB5A
 D0/BB3A: 21 00        AND ($00,X)
 D0/BB3C: 00 00        BRK $00
 D0/BB3E: 00 00        BRK $00

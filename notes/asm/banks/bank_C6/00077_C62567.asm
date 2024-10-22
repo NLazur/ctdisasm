@@ -1,25 +1,25 @@
 ; Bank: C6 | Start Address: 2567
 Routine_C62567:
 C6/2567: 38           SEC
-C6/2568: 30 9B        BMI Local_C62505
+C6/2568: 30 9B        BMI $2505
 C6/256A: 35 95        AND $95,X
 C6/256C: E7 20        SBC [$20]
 C6/256E: 9C 07 30     STZ $3007
 C6/2571: 97 E7        STA [$E7],Y
-C6/2573: 30 C9        BMI Local_C6253E
+C6/2573: 30 C9        BMI $253E
 C6/2575: 33 8C        AND ($8C,S),Y
-C6/2577: 20 6A CA     JSR Local_C6CA6A
+C6/2577: 20 6A CA     JSR $CA6A
 C6/257A: 07 30        ORA [$30]
 C6/257C: C6 A1        DEC $A1
-C6/257E: 30 C8        BMI Local_C62548
+C6/257E: 30 C8        BMI $2548
 C6/2580: 07 40        ORA [$40]
 C6/2582: B6 30        LDX $30,Y
 C6/2584: CA           DEX
 C6/2585: A9 BD 30     LDA #$30BD
 C6/2588: C8           INY
 C6/2589: 31 C4        AND ($C4),Y
-C6/258B: 20 C9 07     JSR Local_C607C9
-C6/258E: 30 CA        BMI Local_C6255A
+C6/258B: 20 C9 07     JSR $07C9
+C6/258E: 30 CA        BMI $255A
 C6/2590: 0E 30 52     ASL $5230
 C6/2593: BB           TYX
 C6/2594: 1F 31 BB 14  ORA $14BB31,X
@@ -33,7 +33,7 @@ C6/25A3: 0E 30 B8     ASL $B830
 C6/25A6: 18           CLC
 C6/25A7: 34 21        BIT $21,X
 C6/25A9: B9 55 07     LDA $0755,Y
-C6/25AC: 30 AA        BMI Local_C62558
+C6/25AC: 30 AA        BMI $2558
 C6/25AE: 3B           TSC
 C6/25AF: 31 AC        AND ($AC),Y
 C6/25B1: 42 31        WDM $31
@@ -43,7 +43,7 @@ C6/25B6: AC A5 49     LDY $49A5
 C6/25B9: 31 BA        AND ($BA),Y
 C6/25BB: 49 31 BA     EOR #$BA31
 C6/25BE: 1A           INC
-C6/25BF: 50 21        BVC Local_C625E2
+C6/25BF: 50 21        BVC $25E2
 C6/25C1: BC 57 31     LDY $3157,X
 C6/25C4: 00 C0        BRK $C0
 C6/25C6: 2E 15 3F     ROL $3F15
@@ -65,7 +65,7 @@ C6/25E7: 04 3E        TSB $3E
 C6/25E9: 09 10 0F     ORA #$0F10
 C6/25EC: 1C 10 87     TRB $8710
 C6/25EF: 07 10        ORA [$10]
-C6/25F1: 20 10 87     JSR Local_C68710
+C6/25F1: 20 10 87     JSR $8710
 C6/25F4: 00 06        BRK $06
 C6/25F6: 01 09        ORA ($09,X)
 C6/25F8: A1 2A        LDA ($2A,X)
@@ -81,7 +81,7 @@ C6/260E: 0D 04 16     ORA $1604
 C6/2611: 2D 07 20     AND $2007
 C6/2614: CD 2B 24     CMP $242B
 C6/2617: 41 08        EOR ($08,X)
-C6/2619: 20 10 0B     JSR Local_C60B10
+C6/2619: 20 10 0B     JSR $0B10
 C6/261C: 4D 2B 17     EOR $172B
 C6/261F: 07 10        ORA [$10]
 C6/2621: AA           TAX
@@ -90,7 +90,7 @@ C6/2625: A5 08        LDA $08
 C6/2627: 08           PHP
 C6/2628: 25 BB        AND $BB
 C6/262A: 25 22        AND $22
-C6/262C: 80 C3        BRA Local_C625F1
+C6/262C: 80 C3        BRA $25F1
 C6/262E: 08           PHP
 C6/262F: 0C 24 3B     TSB $3B24
 C6/2632: 25 5A        AND $5A
@@ -99,7 +99,7 @@ C6/2636: 00 9B        BRK $9B
 C6/2638: 0D 18 70     ORA $7018
 C6/263B: 00 14        BRK $14
 C6/263D: 1E 97 00     ASL $0097,X
-C6/2640: 10 02        BPL Local_C62644
+C6/2640: 10 02        BPL $2644
 C6/2642: 72 08        ADC ($08)
 C6/2644: 0C 0C 97     TSB $970C
 C6/2647: 14 00        TRB $00
@@ -136,7 +136,7 @@ C6/2683: 24 1C        BIT $1C
 C6/2685: 92 24        STA ($24)
 C6/2687: 00 23        BRK $23
 C6/2689: 89 08 0F     BIT #$0F08
-C6/268C: 3C 94 23     BIT Local_C62394,X
+C6/268C: 3C 94 23     BIT $2394,X
 C6/268F: 57 00        EOR [$00],Y
 C6/2691: 8A           TXA
 C6/2692: 08           PHP

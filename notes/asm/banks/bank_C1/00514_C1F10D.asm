@@ -1,9 +1,9 @@
 ; Bank: C1 | Start Address: F10D
 Routine_C1F10D:
 C1/F10D: A5 1E        LDA $1E
-C1/F10F: D0 05        BNE Local_C1F116
+C1/F10F: D0 05        BNE $F116
 C1/F111: AE F4 B1     LDX $B1F4
-C1/F114: 80 14        BRA Local_C1F12A
+C1/F114: 80 14        BRA $F12A
 C1/F116: AE F6 B1     LDX $B1F6
 C1/F119: C2 20        REP #$20
 C1/F11B: 8A           TXA

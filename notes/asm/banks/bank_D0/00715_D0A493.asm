@@ -20,13 +20,13 @@ D0/A4B3: 07 00        ORA [$00]
 D0/A4B5: 00 06        BRK $06
 D0/A4B7: 07 00        ORA [$00]
 D0/A4B9: 00 C8        BRK $C8
-D0/A4BB: F0 00        BEQ Local_D0A4BD
+D0/A4BB: F0 00        BEQ $A4BD
 D0/A4BD: 00 90        BRK $90
 D0/A4BF: E0 00        CPX #$00
 D0/A4C1: 00 20        BRK $20
 D0/A4C3: C0 00        CPY #$00
 D0/A4C5: 00 40        BRK $40
-D0/A4C7: 80 01        BRA Local_D0A4CA
+D0/A4C7: 80 01        BRA $A4CA
 D0/A4C9: 00 00        BRK $00
 D0/A4CB: 00 00        BRK $00
 D0/A4CD: 00 00        BRK $00
@@ -48,14 +48,14 @@ D0/A4F3: 0F 68 1F 53  ORA $531F68
 D0/A4F7: 3F 00 00 00  AND $000000,X
 D0/A4FB: 00 07        BRK $07
 D0/A4FD: 08           PHP
-D0/A4FE: 10 20        BPL Local_D0A520
+D0/A4FE: 10 20        BPL $A520
 D0/A500: 00 00        BRK $00
 D0/A502: 00 00        BRK $00
 D0/A504: 00 00        BRK $00
 D0/A506: E0 00        CPX #$00
 D0/A508: 78           SEI
 D0/A509: E0 9C        CPX #$9C
-D0/A50B: 70 EE        BVS Local_D0A4FB
+D0/A50B: 70 EE        BVS $A4FB
 D0/A50D: D8           CLD
 D0/A50E: E6 FC        INC $FC
 D0/A510: 00 00        BRK $00
@@ -73,7 +73,7 @@ D0/A528: 00 00        BRK $00
 D0/A52A: 00 00        BRK $00
 D0/A52C: 07 1F        ORA [$1F]
 D0/A52E: 38           SEC
-D0/A52F: 30 00        BMI Local_D0A531
+D0/A52F: 30 00        BMI $A531
 D0/A531: 00 00        BRK $00
 D0/A533: 00 00        BRK $00
 D0/A535: 00 E0        BRK $E0

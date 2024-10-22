@@ -1,9 +1,9 @@
 ; Bank: D0 | Start Address: 2287
 Routine_D02287:
 D0/2287: C0 10 10     CPY #$1010
-D0/228A: 10 10        BPL Local_D0229C
-D0/228C: 10 10        BPL Local_D0229E
-D0/228E: 10 10        BPL Local_D022A0
+D0/228A: 10 10        BPL $229C
+D0/228C: 10 10        BPL $229E
+D0/228E: 10 10        BPL $22A0
 D0/2290: 18           CLC
 D0/2291: 18           CLC
 D0/2292: 18           CLC
@@ -19,9 +19,9 @@ D0/229C: 18           CLC
 D0/229D: 18           CLC
 D0/229E: 18           CLC
 D0/229F: 18           CLC
-D0/22A0: 30 30        BMI Local_D022D2
-D0/22A2: 30 30        BMI Local_D022D4
-D0/22A4: 50 70        BVC Local_D02316
+D0/22A0: 30 30        BMI $22D2
+D0/22A2: 30 30        BMI $22D4
+D0/22A4: 50 70        BVC $2316
 D0/22A6: 53 73        EOR ($73,S),Y
 D0/22A8: 5A           PHY
 D0/22A9: 66 58        ROR $58

@@ -1,26 +1,26 @@
 ; Bank: CD | Start Address: 1609
 Routine_CD1609:
 CD/1609: AD EA CC     LDA $CCEA
-CD/160C: D0 45        BNE Local_CD1653
+CD/160C: D0 45        BNE $1653
 CD/160E: AD 9B 5D     LDA $5D9B
-CD/1611: F0 40        BEQ Local_CD1653
-CD/1613: 20 9D 0E     JSR Local_CD0E9D
-CD/1616: 90 02        BCC Local_CD161A
+CD/1611: F0 40        BEQ $1653
+CD/1613: 20 9D 0E     JSR $0E9D
+CD/1616: 90 02        BCC $161A
 CD/1618: A9 01        LDA #$01
 CD/161A: 8D 92 CA     STA $CA92
 CD/161D: 7B           TDC
 CD/161E: AA           TAX
 CD/161F: A8           TAY
 CD/1620: BD 32 CA     LDA $CA32,X
-CD/1623: F0 12        BEQ Local_CD1637
+CD/1623: F0 12        BEQ $1637
 CD/1625: DE 39 CA     DEC $CA39,X
-CD/1628: D0 0E        BNE Local_CD1638
+CD/1628: D0 0E        BNE $1638
 CD/162A: BD 38 CA     LDA $CA38,X
 CD/162D: 9D 39 CA     STA $CA39,X
 CD/1630: 5A           PHY
-CD/1631: 20 54 16     JSR Local_CD1654
+CD/1631: 20 54 16     JSR $1654
 CD/1634: 7A           PLY
-CD/1635: 80 01        BRA Local_CD1638
+CD/1635: 80 01        BRA $1638
 CD/1637: C8           INY
 CD/1638: C2 20        REP #$20
 CD/163A: 8A           TXA
@@ -43,16 +43,16 @@ CD/1658: 84 40        STY $40
 CD/165A: BD 37 CA     LDA $CA37,X
 CD/165D: 85 42        STA $42
 CD/165F: A7 40        LDA [$40]
-CD/1661: 30 2E        BMI Local_CD1691
+CD/1661: 30 2E        BMI $1691
 CD/1663: C9 7F        CMP #$7F
-CD/1665: D0 0D        BNE Local_CD1674
+CD/1665: D0 0D        BNE $1674
 CD/1667: C2 20        REP #$20
 CD/1669: A5 40        LDA $40
 CD/166B: 1A           INC
 CD/166C: 9D 35 CA     STA $CA35,X
 CD/166F: 7B           TDC
 CD/1670: E2 20        SEP #$20
-CD/1672: 80 2B        BRA Local_CD169F
+CD/1672: 80 2B        BRA $169F
 CD/1674: 18           CLC
 CD/1675: 7D 3A CA     ADC $CA3A,X
 CD/1678: C2 20        REP #$20
@@ -67,13 +67,13 @@ CD/1686: 9D 35 CA     STA $CA35,X
 CD/1689: 7B           TDC
 CD/168A: E2 20        SEP #$20
 CD/168C: EE 17 CA     INC $CA17
-CD/168F: 80 0E        BRA Local_CD169F
+CD/168F: 80 0E        BRA $169F
 CD/1691: C9 FF        CMP #$FF
-CD/1693: F0 0C        BEQ Local_CD16A1
-CD/1695: 20 A6 16     JSR Local_CD16A6
+CD/1693: F0 0C        BEQ $16A1
+CD/1695: 20 A6 16     JSR $16A6
 CD/1698: A4 40        LDY $40
 CD/169A: C8           INY
 CD/169B: 84 40        STY $40
-CD/169D: 80 C0        BRA Local_CD165F
+CD/169D: 80 C0        BRA $165F
 CD/169F: FA           PLX
 CD/16A0: 60           RTS

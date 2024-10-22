@@ -1,9 +1,9 @@
 ; Bank: FE | Start Address: 7717
 Routine_FE7717:
-FE/7717: 50 30        BVC Local_FE7749
-FE/7719: 70 10        BVS Local_FE772B
-FE/771B: 70 70        BVS Local_FE778D
-FE/771D: B0 05        BCS Local_FE7724
+FE/7717: 50 30        BVC $7749
+FE/7719: 70 10        BVS $772B
+FE/771B: 70 70        BVS $778D
+FE/771D: B0 05        BCS $7724
 FE/771F: 00 C8        BRK $C8
 FE/7721: E1 00        SBC ($00,X)
 FE/7723: 73 86        ADC ($86,S),Y

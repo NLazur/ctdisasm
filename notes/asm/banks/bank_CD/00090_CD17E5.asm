@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: 17E5
 Routine_CD17E5:
 CD/17E5: AD 10 CE     LDA $CE10
-CD/17E8: D0 11        BNE Local_CD17FB
+CD/17E8: D0 11        BNE $17FB
 CD/17EA: A7 40        LDA [$40]
 CD/17EC: AA           TAX
 CD/17ED: 86 45        STX $45

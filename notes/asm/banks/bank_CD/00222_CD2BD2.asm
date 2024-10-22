@@ -5,10 +5,10 @@ CD/2BD4: BD 79 CA     LDA $CA79,X
 CD/2BD7: AA           TAX
 CD/2BD8: BF D2 F1 CE  LDA $CEF1D2,X
 CD/2BDC: 85 45        STA $45
-CD/2BDE: 10 06        BPL Local_CD2BE6
+CD/2BDE: 10 06        BPL $2BE6
 CD/2BE0: A9 FF        LDA #$FF
 CD/2BE2: 85 46        STA $46
-CD/2BE4: 80 02        BRA Local_CD2BE8
+CD/2BE4: 80 02        BRA $2BE8
 CD/2BE6: 64 46        STZ $46
 CD/2BE8: A6 43        LDX $43
 CD/2BEA: C2 20        REP #$20

@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 2F14
 Routine_D02F14:
-D0/2F14: 80 80        BRA Local_D02E96
-D0/2F16: 80 80        BRA Local_D02E98
+D0/2F14: 80 80        BRA $2E96
+D0/2F16: 80 80        BRA $2E98
 D0/2F18: 0A           ASL
 D0/2F19: 0D 0B 0D     ORA $0D0B
 D0/2F1C: 05 07        ORA $07
@@ -27,7 +27,7 @@ D0/2F44: 02 1E        COP $1E
 D0/2F46: 12 0E        ORA ($0E)
 D0/2F48: 00 00        BRK $00
 D0/2F4A: 00 00        BRK $00
-D0/2F4C: 10 10        BPL Local_D02F5E
+D0/2F4C: 10 10        BPL $2F5E
 D0/2F4E: 18           CLC
 D0/2F4F: 18           CLC
 D0/2F50: 18           CLC
@@ -38,15 +38,15 @@ D0/2F56: 0A           ASL
 D0/2F57: 0E 10 10     ASL $1010
 D0/2F5A: 18           CLC
 D0/2F5B: 18           CLC
-D0/2F5C: 10 18        BPL Local_D02F76
+D0/2F5C: 10 18        BPL $2F76
 D0/2F5E: 1C 14 10     TRB $1014
 D0/2F61: 1C 0E 0A     TRB $0A0E
 D0/2F64: 0F 09 0A 0D  ORA $0D0A09
-D0/2F68: 10 10        BPL Local_D02F7A
-D0/2F6A: 30 30        BMI Local_D02F9C
-D0/2F6C: 10 30        BPL Local_D02F9E
-D0/2F6E: 70 50        BVS Local_D02FC0
-D0/2F70: 10 70        BPL Local_D02FE2
+D0/2F68: 10 10        BPL $2F7A
+D0/2F6A: 30 30        BMI $2F9C
+D0/2F6C: 10 30        BPL $2F9E
+D0/2F6E: 70 50        BVS $2FC0
+D0/2F70: 10 70        BPL $2FE2
 D0/2F72: E0 A0        CPX #$A0
 D0/2F74: E0 20        CPX #$20
 D0/2F76: A0 60        LDY #$60
@@ -59,8 +59,8 @@ D0/2F82: 2E 3F 21     ROL $213F
 D0/2F85: 3F 0A 16 00  AND $00160A,X
 D0/2F89: 00 00        BRK $00
 D0/2F8B: 00 80        BRK $80
-D0/2F8D: 80 80        BRA Local_D02F0F
-D0/2F8F: 80 40        BRA Local_D02FD1
+D0/2F8D: 80 80        BRA $2F0F
+D0/2F8F: 80 40        BRA $2FD1
 D0/2F91: C0 80 80     CPY #$8080
 D0/2F94: 00 00        BRK $00
 D0/2F96: 00 00        BRK $00
@@ -81,9 +81,9 @@ D0/2FB5: 00 FF        BRK $FF
 D0/2FB7: 00 00        BRK $00
 D0/2FB9: 00 00        BRK $00
 D0/2FBB: 00 80        BRK $80
-D0/2FBD: 80 C0        BRA Local_D02F7F
+D0/2FBD: 80 C0        BRA $2F7F
 D0/2FBF: C0 40 C0     CPY #$C040
-D0/2FC2: 20 E0 38     JSR Local_D038E0
+D0/2FC2: 20 E0 38     JSR $38E0
 D0/2FC5: F8           SED
 D0/2FC6: 86 7E        STX $7E
 D0/2FC8: 0B           PHD

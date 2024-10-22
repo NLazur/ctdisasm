@@ -1,8 +1,8 @@
 ; Bank: C1 | Start Address: 96D4
 Routine_C196D4:
-C1/96D4: 20 14 AC     JSR Local_C1AC14
+C1/96D4: 20 14 AC     JSR $AC14
 C1/96D7: AD CB AE     LDA $AECB
-C1/96DA: F0 46        BEQ Local_C19722
+C1/96DA: F0 46        BEQ $9722
 C1/96DC: 7B           TDC
 C1/96DD: AE D2 B1     LDX $B1D2
 C1/96E0: E8           INX
@@ -15,26 +15,26 @@ C1/96F0: 7B           TDC
 C1/96F1: AA           TAX
 C1/96F2: AD CC AE     LDA $AECC
 C1/96F5: DD 0A AF     CMP $AF0A,X
-C1/96F8: F0 08        BEQ Local_C19702
+C1/96F8: F0 08        BEQ $9702
 C1/96FA: E8           INX
 C1/96FB: E0 03 00     CPX #$0003
-C1/96FE: 90 F5        BCC Local_C196F5
-C1/9700: 80 17        BRA Local_C19719
+C1/96FE: 90 F5        BCC $96F5
+C1/9700: 80 17        BRA $9719
 C1/9702: A5 0A        LDA $0A
 C1/9704: C9 01        CMP #$01
-C1/9706: F0 1A        BEQ Local_C19722
+C1/9706: F0 1A        BEQ $9722
 C1/9708: A5 08        LDA $08
 C1/970A: C9 01        CMP #$01
-C1/970C: F0 11        BEQ Local_C1971F
+C1/970C: F0 11        BEQ $971F
 C1/970E: BD FF AE     LDA $AEFF,X
 C1/9711: C9 FF        CMP #$FF
-C1/9713: F0 02        BEQ Local_C19717
-C1/9715: 80 08        BRA Local_C1971F
-C1/9717: 80 09        BRA Local_C19722
+C1/9713: F0 02        BEQ $9717
+C1/9715: 80 08        BRA $971F
+C1/9717: 80 09        BRA $9722
 C1/9719: A5 0A        LDA $0A
 C1/971B: C9 00        CMP #$00
-C1/971D: F0 03        BEQ Local_C19722
-C1/971F: 20 3E 8C     JSR Local_C18C3E
+C1/971D: F0 03        BEQ $9722
+C1/971F: 20 3E 8C     JSR $8C3E
 C1/9722: A9 01        LDA #$01
 C1/9724: 8D 24 AF     STA $AF24
 C1/9727: 60           RTS

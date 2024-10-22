@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 9EF5
 Routine_C69EF5:
-C6/9EF5: 80 F3        BRA Local_C69EEA
+C6/9EF5: 80 F3        BRA $9EEA
 C6/9EF7: 08           PHP
 C6/9EF8: 0B           PHD
 C6/9EF9: 92 1E        STA ($1E)
@@ -17,5 +17,5 @@ C6/9F11: C2 06        REP #$06
 C6/9F13: DD C9 5D     CMP $5DC9,X
 C6/9F16: 1E 07 5E     ASL $5E07,X
 C6/9F19: 17 60        ORA [$60],Y
-C6/9F1B: 80 D3        BRA Local_C69EF0
+C6/9F1B: 80 D3        BRA $9EF0
 C6/9F1D: 6B           RTL

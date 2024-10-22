@@ -24,6 +24,6 @@ C2/D2B7: C8           INY
 C2/D2B8: C8           INY
 C2/D2B9: A9 FD 01     LDA #$01FD
 C2/D2BC: 54 7E 7E     MVN $7E,$7E
-C2/D2BF: 20 0C F9     JSR Local_C2F90C
+C2/D2BF: 20 0C F9     JSR $F90C
 C2/D2C2: 28           PLP
 C2/D2C3: 60           RTS

@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 961F
 Routine_D0961F:
-D0/961F: F0 3F        BEQ Local_D09660
+D0/961F: F0 3F        BEQ $9660
 D0/9621: C0 FF        CPY #$FF
 D0/9623: 00 FF        BRK $FF
 D0/9625: 21 FF        AND ($FF,X)
@@ -17,7 +17,7 @@ D0/963F: E1 FF        SBC ($FF,X)
 D0/9641: 11 FF        ORA ($FF),Y
 D0/9643: 01 FF        ORA ($FF,X)
 D0/9645: 01 7E        ORA ($7E,X)
-D0/9647: 82 31 41     BRL Routine_D0D77B
+D0/9647: 82 31 41     BRL $D0D77B
 D0/964A: 81 E1        STA ($E1,X)
 D0/964C: 11 01        ORA ($01),Y
 D0/964E: 01 82        ORA ($82,X)

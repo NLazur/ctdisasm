@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: 1275
 Routine_CD1275:
 CD/1275: 5A           PHY
-CD/1276: 20 B8 12     JSR Local_CD12B8
+CD/1276: 20 B8 12     JSR $12B8
 CD/1279: 7A           PLY
 CD/127A: 7B           TDC
 CD/127B: E2 20        SEP #$20
@@ -28,6 +28,6 @@ CD/12AE: C8           INY
 CD/12AF: C8           INY
 CD/12B0: C8           INY
 CD/12B1: C6 61        DEC $61
-CD/12B3: D0 CC        BNE Local_CD1281
+CD/12B3: D0 CC        BNE $1281
 CD/12B5: C2 20        REP #$20
 CD/12B7: 60           RTS

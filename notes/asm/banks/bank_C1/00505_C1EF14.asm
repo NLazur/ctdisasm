@@ -3,10 +3,10 @@ Routine_C1EF14:
 C1/EF14: 7B           TDC
 C1/EF15: AA           TAX
 C1/EF16: A9 64        LDA #$64
-C1/EF18: 20 22 AF     JSR Local_C1AF22
+C1/EF18: 20 22 AF     JSR $AF22
 C1/EF1B: C5 1C        CMP $1C
-C1/EF1D: F0 02        BEQ Local_C1EF21
-C1/EF1F: B0 17        BCS Local_C1EF38
+C1/EF1D: F0 02        BEQ $EF21
+C1/EF1F: B0 17        BCS $EF38
 C1/EF21: AE F6 B1     LDX $B1F6
 C1/EF24: C2 20        REP #$20
 C1/EF26: BD 30 5E     LDA $5E30,X

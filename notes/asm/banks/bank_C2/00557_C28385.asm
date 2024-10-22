@@ -1,11 +1,11 @@
 ; Bank: C2 | Start Address: 8385
 Routine_C28385:
 C2/8385: 08           PHP
-C2/8386: 20 A2 83     JSR Local_C283A2
+C2/8386: 20 A2 83     JSR $83A2
 C2/8389: 54 7E C2     MVN $7E,$C2
-C2/838C: 80 07        BRA Local_C28395
+C2/838C: 80 07        BRA $8395
 C2/838E: 08           PHP
-C2/838F: 20 A2 83     JSR Local_C283A2
+C2/838F: 20 A2 83     JSR $83A2
 C2/8392: 54 7E 7E     MVN $7E,$7E
 C2/8395: E2 20        SEP #$20
 C2/8397: AD 11 0D     LDA $0D11

@@ -7,17 +7,17 @@ FE/AAAF: 02 00        COP $00
 FE/AAB1: 04 88        TSB $88
 FE/AAB3: 03 04        ORA $04,S
 FE/AAB5: 05 11        ORA $11
-FE/AAB7: 10 05        BPL Local_FEAABE
+FE/AAB7: 10 05        BPL $AABE
 FE/AAB9: 04 04        TSB $04
 FE/AABB: 0B           PHD
-FE/AABC: 10 08        BPL Local_FEAAC6
+FE/AABC: 10 08        BPL $AAC6
 FE/AABE: 06 04        ASL $04
 FE/AAC0: 05 C7        ORA $C7
 FE/AAC2: 23 04        AND $04,S
 FE/AAC4: 03 06        ORA $06,S
 FE/AAC6: 01 DA        ORA ($DA,X)
 FE/AAC8: 04 3B        TSB $3B
-FE/AACA: 20 06 A7     JSR Local_FEA706
+FE/AACA: 20 06 A7     JSR $A706
 FE/AACD: 24 08        BIT $08
 FE/AACF: 00 03        BRK $03
 FE/AAD1: 2A           ROL
@@ -50,10 +50,10 @@ FE/AAFB: 00 62        BRK $62
 FE/AAFD: 04 04        TSB $04
 FE/AAFF: 68           PLA
 FE/AB00: 00 67        BRK $67
-FE/AB02: 20 66 30     JSR Local_FE3066
+FE/AB02: 20 66 30     JSR $3066
 FE/AB05: 05 02        ORA $02
 FE/AB07: 02 6D        COP $6D
-FE/AB09: 10 0A        BPL Local_FEAB15
+FE/AB09: 10 0A        BPL $AB15
 FE/AB0B: 0A           ASL
 FE/AB0C: 04 05        TSB $05
 FE/AB0E: 0A           ASL
@@ -62,7 +62,7 @@ FE/AB11: 0F 10 0A 4B  ORA $4B0A10
 FE/AB15: 00 0C        BRK $0C
 FE/AB17: 0B           PHD
 FE/AB18: 88           DEY
-FE/AB19: 10 09        BPL Local_FEAB24
+FE/AB19: 10 09        BPL $AB24
 FE/AB1B: 09 C0        ORA #$C0
 FE/AB1D: 0A           ASL
 FE/AB1E: 0B           PHD

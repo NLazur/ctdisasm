@@ -2,8 +2,8 @@
 Routine_D0529B:
 D0/529B: C0 40        CPY #$40
 D0/529D: C0 F0        CPY #$F0
-D0/529F: F0 3B        BEQ Local_D052DC
-D0/52A1: 3C 7E 6D     BIT Local_D06D7E,X
+D0/529F: F0 3B        BEQ $52DC
+D0/52A1: 3C 7E 6D     BIT $6D7E,X
 D0/52A4: 9F E3 DE A3  STA $A3DEE3,X
 D0/52A8: 5D 67 58     EOR $5867,X
 D0/52AB: 6F 2B 3F 3D  ADC $3D3F2B
@@ -23,11 +23,11 @@ D0/52CD: 0B           PHD
 D0/52CE: 0B           PHD
 D0/52CF: 0F 18 F8 F0  ORA $F0F818
 D0/52D3: F4 42 A2     PEA $A242
-D0/52D6: 22 C6 44 AC  JSR Routine_AC44C6
+D0/52D6: 22 C6 44 AC  JSR $AC44C6
 D0/52DA: 08           PHP
 D0/52DB: 38           SEC
-D0/52DC: 10 F0        BPL Local_D052CE
-D0/52DE: 30 D0        BMI Local_D052B0
+D0/52DC: 10 F0        BPL $52CE
+D0/52DE: 30 D0        BMI $52B0
 D0/52E0: 07 07        ORA [$07]
 D0/52E2: 07 07        ORA [$07]
 D0/52E4: 02 03        COP $03
@@ -36,11 +36,11 @@ D0/52E8: 02 03        COP $03
 D0/52EA: 01 03        ORA ($03,X)
 D0/52EC: 03 02        ORA $02,S
 D0/52EE: 05 06        ORA $06
-D0/52F0: 80 40        BRA Local_D05332
-D0/52F2: 50 D0        BVC Local_D052C4
+D0/52F0: 80 40        BRA $5332
+D0/52F2: 50 D0        BVC $52C4
 D0/52F4: 98           TYA
 D0/52F5: D8           CLD
-D0/52F6: 70 F0        BVS Local_D052E8
+D0/52F6: 70 F0        BVS $52E8
 D0/52F8: 98           TYA
 D0/52F9: D8           CLD
 D0/52FA: 40           RTI

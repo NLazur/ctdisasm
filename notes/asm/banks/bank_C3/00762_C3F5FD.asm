@@ -1,6 +1,6 @@
 ; Bank: C3 | Start Address: F5FD
 Routine_C3F5FD:
-C3/F5FD: F0 E8        BEQ Local_C3F5E7
+C3/F5FD: F0 E8        BEQ $F5E7
 C3/F5FF: 4A           LSR
 C3/F600: 00 FF        BRK $FF
 C3/F602: E8           INX

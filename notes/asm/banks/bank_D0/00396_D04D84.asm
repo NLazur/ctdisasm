@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 4D84
 Routine_D04D84:
-D0/4D84: 20 20 00     JSR Local_D00020
+D0/4D84: 20 20 00     JSR $0020
 D0/4D87: 08           PHP
 D0/4D88: 00 00        BRK $00
 D0/4D8A: 00 00        BRK $00
@@ -14,5 +14,5 @@ D0/4D99: 00 01        BRK $01
 D0/4D9B: 01 00        ORA ($00,X)
 D0/4D9D: 00 08        BRK $08
 D0/4D9F: 08           PHP
-D0/4DA0: 30 30        BMI Local_D04DD2
+D0/4DA0: 30 30        BMI $4DD2
 D0/4DA2: 40           RTI

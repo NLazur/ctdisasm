@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 951D
 Routine_C6951D:
-C6/951D: 20 61 12     JSR Local_C61261
+C6/951D: 20 61 12     JSR $1261
 C6/9520: E5 26        SBC $26
 C6/9522: 6F 5B 18 03  ADC $03185B
 C6/9526: 05 43        ORA $43

@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: BC9A
 Routine_D0BC9A:
 D0/BC9A: C0 20 C0     CPY #$C020
-D0/BC9D: 80 80        BRA Local_D0BC1F
+D0/BC9D: 80 80        BRA $BC1F
 D0/BC9F: 00 00        BRK $00
 D0/BCA1: 00 00        BRK $00
 D0/BCA3: 00 00        BRK $00
@@ -18,7 +18,7 @@ D0/BCB7: 00 00        BRK $00
 D0/BCB9: 01 00        ORA ($00,X)
 D0/BCBB: 01 01        ORA ($01,X)
 D0/BCBD: 02 01        COP $01
-D0/BCBF: 82 00 00     BRL Routine_D0BCC2
+D0/BCBF: 82 00 00     BRL $D0BCC2
 D0/BCC2: 00 00        BRK $00
 D0/BCC4: 00 00        BRK $00
 D0/BCC6: 00 18        BRK $18
@@ -38,16 +38,16 @@ D0/BCE0: 00 00        BRK $00
 D0/BCE2: 00 00        BRK $00
 D0/BCE4: 00 00        BRK $00
 D0/BCE6: 00 00        BRK $00
-D0/BCE8: 3C 00 2F     BIT Local_D02F00,X
+D0/BCE8: 3C 00 2F     BIT $2F00,X
 D0/BCEB: 0C 1E 04     TSB $041E
 D0/BCEE: 0D 00 00     ORA $0000
 D0/BCF1: 00 00        BRK $00
 D0/BCF3: 00 00        BRK $00
-D0/BCF5: 10 0B        BPL Local_D0BD02
+D0/BCF5: 10 0B        BPL $BD02
 D0/BCF7: 06 00        ASL $00
 D0/BCF9: 00 00        BRK $00
 D0/BCFB: 00 30        BRK $30
 D0/BCFD: 00 50        BRK $50
 D0/BCFF: 00 F0        BRK $F0
-D0/BD01: 20 F0 60     JSR Local_D060F0
+D0/BD01: 20 F0 60     JSR $60F0
 D0/BD04: 60           RTS

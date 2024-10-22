@@ -8,13 +8,13 @@ C1/2A4D: AD 6F 98     LDA $986F
 C1/2A50: 85 8A        STA $8A
 C1/2A52: A5 84        LDA $84
 C1/2A54: C5 8A        CMP $8A
-C1/2A56: F0 37        BEQ Local_C12A8F
+C1/2A56: F0 37        BEQ $2A8F
 C1/2A58: 8D 70 98     STA $9870
 C1/2A5B: AA           TAX
 C1/2A5C: BD F5 96     LDA $96F5,X
-C1/2A5F: F0 2E        BEQ Local_C12A8F
+C1/2A5F: F0 2E        BEQ $2A8F
 C1/2A61: BD F7 9F     LDA $9FF7,X
-C1/2A64: 30 29        BMI Local_C12A8F
+C1/2A64: 30 29        BMI $2A8F
 C1/2A66: 8A           TXA
 C1/2A67: 0A           ASL
 C1/2A68: AA           TAX
@@ -24,12 +24,12 @@ C1/2A6F: AA           TAX
 C1/2A70: 7B           TDC
 C1/2A71: E2 20        SEP #$20
 C1/2A73: BD 4A 5E     LDA $5E4A,X
-C1/2A76: 30 17        BMI Local_C12A8F
-C1/2A78: 20 37 2B     JSR Local_C12B37
+C1/2A76: 30 17        BMI $2A8F
+C1/2A78: 20 37 2B     JSR $2B37
 C1/2A7B: C2 20        REP #$20
 C1/2A7D: A5 86        LDA $86
 C1/2A7F: C5 AF        CMP $AF
-C1/2A81: 90 09        BCC Local_C12A8C
+C1/2A81: 90 09        BCC $2A8C
 C1/2A83: A5 AF        LDA $AF
 C1/2A85: 85 86        STA $86
 C1/2A87: A5 84        LDA $84
@@ -39,5 +39,5 @@ C1/2A8D: E2 20        SEP #$20
 C1/2A8F: E6 84        INC $84
 C1/2A91: A5 84        LDA $84
 C1/2A93: C9 0B        CMP #$0B
-C1/2A95: D0 BB        BNE Local_C12A52
+C1/2A95: D0 BB        BNE $2A52
 C1/2A97: 60           RTS

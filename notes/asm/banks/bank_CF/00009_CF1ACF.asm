@@ -1,7 +1,7 @@
 ; Bank: CF | Start Address: 1ACF
 Routine_CF1ACF:
 CF/1ACF: C0 C0 60     CPY #$60C0
-CF/1AD2: 80 90        BRA Local_CF1A64
+CF/1AD2: 80 90        BRA $1A64
 CF/1AD4: 00 20        BRK $20
 CF/1AD6: 00 40        BRK $40
 CF/1AD8: 00 80        BRK $80
@@ -11,7 +11,7 @@ CF/1ADE: 00 80        BRK $80
 CF/1AE0: 00 00        BRK $00
 CF/1AE2: 00 00        BRK $00
 CF/1AE4: 00 06        BRK $06
-CF/1AE6: 10 19        BPL Local_CF1B01
+CF/1AE6: 10 19        BPL $1B01
 CF/1AE8: 38           SEC
 CF/1AE9: 28           PLP
 CF/1AEA: 7E 46 FF     ROR $FF46,X

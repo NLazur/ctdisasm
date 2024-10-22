@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 250B
 Routine_D0250B:
 D0/250B: C0 A0 60     CPY #$60A0
-D0/250E: D0 30        BNE Local_D02540
+D0/250E: D0 30        BNE $2540
 D0/2510: E8           INX
 D0/2511: 18           CLC
 D0/2512: F4 0C FA     PEA $FA0C
@@ -14,18 +14,18 @@ D0/2521: 00 00        BRK $00
 D0/2523: 00 00        BRK $00
 D0/2525: 00 00        BRK $00
 D0/2527: 00 80        BRK $80
-D0/2529: 80 40        BRA Local_D0256B
+D0/2529: 80 40        BRA $256B
 D0/252B: C0 20 E0     CPY #$E020
-D0/252E: 90 F0        BCC Local_D02520
+D0/252E: 90 F0        BCC $2520
 D0/2530: 38           SEC
 D0/2531: 38           SEC
 D0/2532: 0C 0C 02     TSB $020C
 D0/2535: 02 01        COP $01
 D0/2537: 01 2F        ORA ($2F,X)
-D0/2539: 30 2C        BMI Local_D02567
+D0/2539: 30 2C        BMI $2567
 D0/253B: 33 13        AND ($13,S),Y
 D0/253D: 2F 4C 7C 70  AND $707C4C
-D0/2541: 70 C0        BVS Local_D02503
+D0/2541: 70 C0        BVS $2503
 D0/2543: C0 00 00     CPY #$0000
 D0/2546: 00 00        BRK $00
 D0/2548: 1C FC E0     TRB $E0FC
@@ -50,5 +50,5 @@ D0/2570: 02 03        COP $03
 D0/2572: 1C 1F E3     TRB $E31F
 D0/2575: FC 1F E0     JSR ($E01F,X)
 D0/2578: 00 00        BRK $00
-D0/257A: 80 80        BRA Local_D024FC
+D0/257A: 80 80        BRA $24FC
 D0/257C: 60           RTS

@@ -16,5 +16,5 @@ D1/D789: 00 00        BRK $00
 D1/D78B: 00 00        BRK $00
 D1/D78D: 00 0D        BRK $0D
 D1/D78F: 48           PHA
-D1/D790: 10 01        BPL Local_D1D793
+D1/D790: 10 01        BPL $D793
 D1/D792: 40           RTI

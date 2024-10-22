@@ -1,10 +1,10 @@
 ; Bank: D0 | Start Address: B54B
 Routine_D0B54B:
-D0/B54B: 20 40 20     JSR Local_D02040
-D0/B54E: 50 30        BVC Local_D0B580
+D0/B54B: 20 40 20     JSR $2040
+D0/B54E: 50 30        BVC $B580
 D0/B550: 00 00        BRK $00
 D0/B552: 00 00        BRK $00
-D0/B554: 80 E0        BRA Local_D0B536
+D0/B554: 80 E0        BRA $B536
 D0/B556: E0 F0 00     CPX #$00F0
 D0/B559: 00 00        BRK $00
 D0/B55B: 00 00        BRK $00
@@ -23,14 +23,14 @@ D0/B570: 00 00        BRK $00
 D0/B572: 00 00        BRK $00
 D0/B574: 00 00        BRK $00
 D0/B576: C0 00 60     CPY #$6000
-D0/B579: 10 20        BPL Local_D0B59B
-D0/B57B: 10 28        BPL Local_D0B5A5
+D0/B579: 10 20        BPL $B59B
+D0/B57B: 10 28        BPL $B5A5
 D0/B57D: 18           CLC
 D0/B57E: 28           PLP
 D0/B57F: 18           CLC
 D0/B580: 00 00        BRK $00
 D0/B582: 00 C0        BRK $C0
-D0/B584: F0 F0        BEQ Local_D0B576
+D0/B584: F0 F0        BEQ $B576
 D0/B586: F8           SED
 D0/B587: F8           SED
 D0/B588: 00 00        BRK $00
@@ -42,7 +42,7 @@ D0/B592: 0F 0F 0E 0D  ORA $0D0E0F
 D0/B596: 0D 0F 00     ORA $000F
 D0/B599: 00 03        BRK $03
 D0/B59B: 0F 18 10 30  ORA $301018
-D0/B59F: 30 00        BMI Local_D0B5A1
+D0/B59F: 30 00        BMI $B5A1
 D0/B5A1: 00 00        BRK $00
 D0/B5A3: 00 C0        BRK $C0
 D0/B5A5: 00 30        BRK $30

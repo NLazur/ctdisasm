@@ -2,8 +2,8 @@
 Routine_D06186:
 D0/6186: E0 00 F8     CPX #$F800
 D0/6189: 08           PHP
-D0/618A: D0 28        BNE Local_D061B4
-D0/618C: 70 98        BVS Local_D06126
+D0/618A: D0 28        BNE $61B4
+D0/618C: 70 98        BVS $6126
 D0/618E: 88           DEY
 D0/618F: F8           SED
 D0/6190: 00 00        BRK $00
@@ -24,8 +24,8 @@ D0/61A9: FE 90 7B     INC $7B90,X
 D0/61AC: EF 10 FD 02  SBC $02FD10
 D0/61B0: 00 00        BRK $00
 D0/61B2: 00 00        BRK $00
-D0/61B4: 20 20 40     JSR Local_D04020
-D0/61B7: D0 AC        BNE Local_D06165
+D0/61B4: 20 20 40     JSR $4020
+D0/61B7: D0 AC        BNE $6165
 D0/61B9: AC 0A DA     LDY $DA0A
 D0/61BC: 53 F7        EOR ($F7,S),Y
 D0/61BE: A9 55 00     LDA #$0055
@@ -33,8 +33,8 @@ D0/61C1: 00 00        BRK $00
 D0/61C3: 00 00        BRK $00
 D0/61C5: 00 00        BRK $00
 D0/61C7: 00 20        BRK $20
-D0/61C9: 20 88 88     JSR Local_D08888
-D0/61CC: 90 D0        BCC Local_D0619E
+D0/61C9: 20 88 88     JSR $8888
+D0/61CC: 90 D0        BCC $619E
 D0/61CE: 62 62 00     PER $D06233
 D0/61D1: 00 00        BRK $00
 D0/61D3: 00 00        BRK $00
@@ -53,7 +53,7 @@ D0/61EF: 89 00 00     BIT #$0000
 D0/61F2: 00 00        BRK $00
 D0/61F4: 00 00        BRK $00
 D0/61F6: 00 00        BRK $00
-D0/61F8: 80 80        BRA Local_D0617A
+D0/61F8: 80 80        BRA $617A
 D0/61FA: 29 29 84     AND #$8429
 D0/61FD: 84 71        STY $71
 D0/61FF: E1 00        SBC ($00,X)
@@ -63,7 +63,7 @@ D0/6205: 00 00        BRK $00
 D0/6207: 00 00        BRK $00
 D0/6209: 00 00        BRK $00
 D0/620B: 00 20        BRK $20
-D0/620D: 20 80 80     JSR Local_D08080
+D0/620D: 20 80 80     JSR $8080
 D0/6210: 03 03        ORA $03,S
 D0/6212: 06 06        ASL $06
 D0/6214: 08           PHP

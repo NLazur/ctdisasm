@@ -2,7 +2,7 @@
 Routine_CEE90D:
 CE/E90D: A5 45        LDA $45
 CE/E90F: 29 02        AND #$02
-CE/E911: F0 3A        BEQ Local_CEE94D
+CE/E911: F0 3A        BEQ $E94D
 CE/E913: 7B           TDC
 CE/E914: 99 DF C4     STA $C4DF,Y
 CE/E917: 99 17 C5     STA $C517,Y
@@ -24,6 +24,6 @@ CE/E944: 88           DEY
 CE/E945: 88           DEY
 CE/E946: 88           DEY
 CE/E947: 88           DEY
-CE/E948: D0 CA        BNE Local_CEE914
+CE/E948: D0 CA        BNE $E914
 CE/E94A: E6 45        INC $45
 CE/E94C: 60           RTS

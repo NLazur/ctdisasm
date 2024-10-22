@@ -3,9 +3,9 @@ Routine_C07008:
 C0/7008: A2 0C BD     LDX #$BD0C
 C0/700B: 88           DEY
 C0/700C: 0B           PHD
-C0/700D: 10 3F        BPL Local_C0704E
+C0/700D: 10 3F        BPL $704E
 C0/700F: BD 89 0B     LDA $0B89,X
-C0/7012: 10 3A        BPL Local_C0704E
+C0/7012: 10 3A        BPL $704E
 C0/7014: A5 6D        LDA $6D
 C0/7016: 9D 88 0B     STA $0B88,X
 C0/7019: 9D 89 0B     STA $0B89,X

@@ -17,7 +17,7 @@ C1/0AA6: 64 81        STZ $81
 C1/0AA8: 7B           TDC
 C1/0AA9: 85 82        STA $82
 C1/0AAB: 85 83        STA $83
-C1/0AAD: 20 0B 0B     JSR Local_C10B0B
+C1/0AAD: 20 0B 0B     JSR $0B0B
 C1/0AB0: E6 80        INC $80
 C1/0AB2: C2 21        REP #$21
 C1/0AB4: A5 82        LDA $82
@@ -25,7 +25,7 @@ C1/0AB6: 69 80 00     ADC #$0080
 C1/0AB9: 85 82        STA $82
 C1/0ABB: 7B           TDC
 C1/0ABC: E2 20        SEP #$20
-C1/0ABE: 20 0B 0B     JSR Local_C10B0B
+C1/0ABE: 20 0B 0B     JSR $0B0B
 C1/0AC1: C2 21        REP #$21
 C1/0AC3: A5 82        LDA $82
 C1/0AC5: 69 80 00     ADC #$0080
@@ -33,5 +33,5 @@ C1/0AC8: 85 82        STA $82
 C1/0ACA: E2 20        SEP #$20
 C1/0ACC: E6 80        INC $80
 C1/0ACE: C6 87        DEC $87
-C1/0AD0: D0 DB        BNE Local_C10AAD
+C1/0AD0: D0 DB        BNE $0AAD
 C1/0AD2: 60           RTS

@@ -1,10 +1,10 @@
 ; Bank: C7 | Start Address: 1918
 Routine_C71918:
-C7/1918: 22 24 4C 4F  JSR Routine_4F4C24
+C7/1918: 22 24 4C 4F  JSR $4F4C24
 C7/191C: 26 44        ROL $44
 C7/191E: 64 27        STZ $27
 C7/1920: 46 78        LSR $78
-C7/1922: 22 4D 32 00  JSR Routine_00324D
+C7/1922: 22 4D 32 00  JSR $00324D
 C7/1926: 00 00        BRK $00
 C7/1928: 00 00        BRK $00
 C7/192A: 00 00        BRK $00
@@ -29,7 +29,7 @@ C7/194E: 00 25        BRK $25
 C7/1950: 3E 2C 27     ROL $272C,X
 C7/1953: 4B           PHK
 C7/1954: 11 28        ORA ($28),Y
-C7/1956: 4C 40 00     JMP Local_C70040
+C7/1956: 4C 40 00     JMP $0040
 C7/1959: 00 00        BRK $00
 C7/195B: 00 00        BRK $00
 C7/195D: 00 24        BRK $24
@@ -78,7 +78,7 @@ C7/19B4: 64 23        STZ $23
 C7/19B6: 23 7F        AND $7F,S
 C7/19B8: 00 00        BRK $00
 C7/19BA: 00 23        BRK $23
-C7/19BC: 30 00        BMI Local_C719BE
+C7/19BC: 30 00        BMI $19BE
 C7/19BE: 00 00        BRK $00
 C7/19C0: 00 24        BRK $24
 C7/19C2: 32 40        AND ($40)

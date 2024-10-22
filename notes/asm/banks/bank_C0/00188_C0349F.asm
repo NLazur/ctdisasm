@@ -31,7 +31,7 @@ C0/34DE: A6 C3        LDX $C3
 C0/34E0: 7B           TDC
 C0/34E1: EB           XBA
 C0/34E2: A5 9B        LDA $9B
-C0/34E4: 10 0E        BPL Local_C034F4
+C0/34E4: 10 0E        BPL $34F4
 C0/34E6: A9 02        LDA #$02
 C0/34E8: 8F FE 03 7F  STA $7F03FE
 C0/34EC: A6 C7        LDX $C7

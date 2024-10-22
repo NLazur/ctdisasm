@@ -2,7 +2,7 @@
 Routine_C34F67:
 C3/4F67: AD E6 7B     LDA $7BE6
 C3/4F6A: C9 1E        CMP #$1E
-C3/4F6C: 20 F0 1B     JSR Local_C31BF0
+C3/4F6C: 20 F0 1B     JSR $1BF0
 C3/4F6F: EE E6 7B     INC $7BE6
 C3/4F72: 03 00        ORA $00,S
 C3/4F74: CE E5 07     DEC $07E5
@@ -20,7 +20,7 @@ C3/4F8F: 0B           PHD
 C3/4F90: 35 00        AND $00,X
 C3/4F92: 03 54        ORA $54,S
 C3/4F94: 4B           PHK
-C3/4F95: 20 7C 53     JSR Local_C3537C
+C3/4F95: 20 7C 53     JSR $537C
 C3/4F98: 4B           PHK
 C3/4F99: 7C 01 03     JMP ($0301,X)
 C3/4F9C: 00 47        BRK $47
@@ -49,7 +49,7 @@ C3/4FCC: F2 4A        SBC ($4A)
 C3/4FCE: 00 C4        BRK $C4
 C3/4FD0: 81 F8        STA ($F8,X)
 C3/4FD2: 4A           LSR
-C3/4FD3: 82 F0 E8     BRL Routine_C338C6
+C3/4FD3: 82 F0 E8     BRL $C338C6
 C3/4FD6: 7E 00 F8     ROR $F800,X
 C3/4FD9: 35 7A        AND $7A,X
 C3/4FDB: F8           SED
@@ -64,7 +64,7 @@ C3/4FEC: 7A           PLY
 C3/4FED: 34 F6        BIT $F6,X
 C3/4FEF: 18           CLC
 C3/4FF0: DB           STP
-C3/4FF1: 80 20        BRA Local_C35013
+C3/4FF1: 80 20        BRA $5013
 C3/4FF3: 00 00        BRK $00
 C3/4FF5: FF 00 FC 65  SBC $65FC00,X
 C3/4FF9: 0A           ASL
@@ -72,7 +72,7 @@ C3/4FFA: 04 70        TSB $70
 C3/4FFC: 00 00        BRK $00
 C3/4FFE: 01 00        ORA ($00,X)
 C3/5000: 00 03        BRK $03
-C3/5002: 80 00        BRA Local_C35004
+C3/5002: 80 00        BRA $5004
 C3/5004: 09 06        ORA #$06
 C3/5006: 00 3F        BRK $3F
 C3/5008: 1B           TCS
@@ -81,7 +81,7 @@ C3/500C: FD B5 7C     SBC $7CB5,X
 C3/500F: F6 00        INC $00,X
 C3/5011: 18           CLC
 C3/5012: DA           PHX
-C3/5013: 80 00        BRA Local_C35015
+C3/5013: 80 00        BRA $5015
 C3/5015: 08           PHP
 C3/5016: FA           PLX
 C3/5017: FF 0A 21 4C  SBC $4C210A,X
@@ -94,19 +94,19 @@ C3/5024: A0 C8        LDY #$C8
 C3/5026: 7C FD D1     JMP ($D1FD,X)
 C3/5029: 7C 20 0B     JMP ($0B20,X)
 C3/502C: 01 42        ORA ($42,X)
-C3/502E: 20 49 52     JSR Local_C35249
+C3/502E: 20 49 52     JSR $5249
 C3/5031: 00 10        BRK $10
 C3/5033: FC 07 1A     JSR ($1A07,X)
 C3/5036: E0 7C        CPX #$7C
-C3/5038: 22 1A 3F 00  JSR Routine_003F1A
+C3/5038: 22 1A 3F 00  JSR $003F1A
 C3/503C: 00 E8        BRK $E8
 C3/503E: 7C FD F0     JMP ($F0FD,X)
 C3/5041: 7C 05 A8     JMP ($A805,X)
 C3/5044: 23 51        AND $51,S
-C3/5046: 10 7B        BPL Local_C350C3
+C3/5046: 10 7B        BPL $50C3
 C3/5048: 0B           PHD
-C3/5049: F0 F5        BEQ Local_C35040
-C3/504B: 82 28 0B     BRL Routine_C35B76
+C3/5049: F0 F5        BEQ $5040
+C3/504B: 82 28 0B     BRL $C35B76
 C3/504E: FF 7C 00 FA  SBC $FA007C,X
 C3/5052: FA           PLX
 C3/5053: 37 91        AND [$91],Y
@@ -122,7 +122,7 @@ C3/5062: 00 0A        BRK $0A
 C3/5064: B8           CLV
 C3/5065: 7C 01 E0     JMP ($E001,X)
 C3/5068: 00 02        BRK $02
-C3/506A: 70 00        BVS Local_C3506C
+C3/506A: 70 00        BVS $506C
 C3/506C: 00 00        BRK $00
 C3/506E: 61 00        ADC ($00,X)
 C3/5070: 06 0A        ASL $0A

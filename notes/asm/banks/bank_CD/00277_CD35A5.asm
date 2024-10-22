@@ -21,7 +21,7 @@ CD/35C7: A5 47        LDA $47
 CD/35C9: 38           SEC
 CD/35CA: E5 45        SBC $45
 CD/35CC: 85 4F        STA $4F
-CD/35CE: 10 0F        BPL Local_CD35DF
+CD/35CE: 10 0F        BPL $35DF
 CD/35D0: 49 FF FF     EOR #$FFFF
 CD/35D3: 1A           INC
 CD/35D4: 85 51        STA $51
@@ -35,7 +35,7 @@ CD/35E1: A5 45        LDA $45
 CD/35E3: 18           CLC
 CD/35E4: 65 4F        ADC $4F
 CD/35E6: C9 DE 00     CMP #$00DE
-CD/35E9: 90 0D        BCC Local_CD35F8
+CD/35E9: 90 0D        BCC $35F8
 CD/35EB: 38           SEC
 CD/35EC: E9 DE 00     SBC #$00DE
 CD/35EF: 85 45        STA $45
@@ -57,7 +57,7 @@ CD/360A: 0A           ASL
 CD/360B: 18           CLC
 CD/360C: 65 45        ADC $45
 CD/360E: AA           TAX
-CD/360F: 20 16 36     JSR Local_CD3616
+CD/360F: 20 16 36     JSR $3616
 CD/3612: 7B           TDC
 CD/3613: E2 20        SEP #$20
 CD/3615: 60           RTS

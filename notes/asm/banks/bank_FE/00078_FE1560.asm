@@ -1,25 +1,25 @@
 ; Bank: FE | Start Address: 1560
 Routine_FE1560:
-FE/1560: 50 FC        BVC Local_FE155E
-FE/1562: 10 FE        BPL Local_FE1562
+FE/1560: 50 FC        BVC $155E
+FE/1562: 10 FE        BPL $1562
 FE/1564: 0C F2 14     TSB $14F2
 FE/1567: 01 D0        ORA ($D0,X)
 FE/1569: 02 50        COP $50
 FE/156B: 01 00        ORA ($00,X)
-FE/156D: D0 D0        BNE Local_FE153F
+FE/156D: D0 D0        BNE $153F
 FE/156F: 00 50        BRK $50
 FE/1571: 00 5C        BRK $5C
 FE/1573: 01 02        ORA ($02,X)
 FE/1575: 00 00        BRK $00
-FE/1577: 20 DD 30     JSR Local_FE30DD
+FE/1577: 20 DD 30     JSR $30DD
 FE/157A: 85 C9        STA $C9
 FE/157C: 24 04        BIT $04
 FE/157E: CC 01 F4     CPY $F401
 FE/1581: 51 CD        EOR ($CD),Y
 FE/1583: CC 85 CC     CPY $CC85
 FE/1586: 21 60        AND ($60,X)
-FE/1588: 30 01        BMI Local_FE158B
-FE/158A: 30 01        BMI Local_FE158D
+FE/1588: 30 01        BMI $158B
+FE/158A: 30 01        BMI $158D
 FE/158C: CC 02 00     CPY $0002
 FE/158F: 08           PHP
 FE/1590: 00 04        BRK $04

@@ -9,7 +9,7 @@ C3/70D0: 00 12        BRK $12
 C3/70D2: 31 00        AND ($00),Y
 C3/70D4: F2 05        SBC ($05)
 C3/70D6: AE 7A FE     LDX $FE7A
-C3/70D9: 10 FE        BPL Local_C370D9
+C3/70D9: 10 FE        BPL $70D9
 C3/70DB: CE 3A F3     DEC $F33A
 C3/70DE: 39 10 0F     AND $0F10,Y
 C3/70E1: AE 3A 04     LDX $043A
@@ -34,7 +34,7 @@ C3/7108: C8           INY
 C3/7109: 3A           DEC
 C3/710A: A8           TAY
 C3/710B: EC EF C6     CPX $C6EF
-C3/710E: 30 01        BMI Local_C37111
+C3/710E: 30 01        BMI $7111
 C3/7110: C6 14        DEC $14
 C3/7112: 01 C6        ORA ($C6,X)
 C3/7114: 36 02        ROL $02,X
@@ -54,7 +54,7 @@ C3/712B: 06 00        ASL $00
 C3/712D: 01 C8        ORA ($C8,X)
 C3/712F: 7A           PLY
 C3/7130: FA           PLX
-C3/7131: 10 C8        BPL Local_C370FB
+C3/7131: 10 C8        BPL $70FB
 C3/7133: 7A           PLY
 C3/7134: 06 00        ASL $00
 C3/7136: 09 C8        ORA #$C8
@@ -82,19 +82,19 @@ C3/715C: 00 08        BRK $08
 C3/715E: CB           WAI
 C3/715F: 2A           ROL
 C3/7160: 08           PHP
-C3/7161: 10 D8        BPL Local_C3713B
+C3/7161: 10 D8        BPL $713B
 C3/7163: 2A           ROL
 C3/7164: F8           SED
 C3/7165: 00 08        BRK $08
 C3/7167: C7 2A        CMP [$2A]
-C3/7169: F0 00        BEQ Local_C3716B
+C3/7169: F0 00        BEQ $716B
 C3/716B: D8           CLD
 C3/716C: 2A           ROL
 C3/716D: 00 00        BRK $00
-C3/716F: 10 D7        BPL Local_C37148
+C3/716F: 10 D7        BPL $7148
 C3/7171: 2A           ROL
 C3/7172: F8           SED
-C3/7173: 10 C8        BPL Local_C3713D
+C3/7173: 10 C8        BPL $713D
 C3/7175: 2A           ROL
 C3/7176: 00 00        BRK $00
 C3/7178: 08           PHP
@@ -110,8 +110,8 @@ C3/7182: D9 2A F8     CMP $F82A,Y
 C3/7185: 18           CLC
 C3/7186: C8           INY
 C3/7187: 2A           ROL
-C3/7188: F0 AA        BEQ Local_C37134
-C3/718A: 10 F8        BPL Local_C37184
+C3/7188: F0 AA        BEQ $7134
+C3/718A: 10 F8        BPL $7184
 C3/718C: 11 11        ORA ($11),Y
 C3/718E: F8           SED
 C3/718F: 01 11        ORA ($11,X)
@@ -185,6 +185,6 @@ C3/71FB: 6D A2 08     ADC $08A2
 C3/71FE: AE 20 A2     LDX $A220
 C3/7201: 08           PHP
 C3/7202: EF A2 00 1C  SBC $1C00A2
-C3/7206: F0 08        BEQ Local_C37210
+C3/7206: F0 08        BEQ $7210
 C3/7208: 3A           DEC
 C3/7209: 40           RTI

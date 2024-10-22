@@ -17,7 +17,7 @@ C6/BE66: 12 11        ORA ($11)
 C6/BE68: 16 01        ASL $01,X
 C6/BE6A: 01 2E        ORA ($2E,X)
 C6/BE6C: 01 CD        ORA ($CD,X)
-C6/BE6E: 20 21 23     JSR Local_C62321
+C6/BE6E: 20 21 23     JSR $2321
 C6/BE71: 23 72        AND $72,S
 C6/BE73: 72 00        ADC ($00)
 C6/BE75: 72 ED        ADC ($ED)
@@ -25,7 +25,7 @@ C6/BE77: 14 15        TRB $15
 C6/BE79: 16 17        ASL $17,X
 C6/BE7B: 07 BB        ORA [$BB]
 C6/BE7D: 27 F5        AND [$F5]
-C6/BE7F: 30 C0        BMI Local_C6BE41
+C6/BE7F: 30 C0        BMI $BE41
 C6/BE81: F8           SED
 C6/BE82: F2 29        SBC ($29)
 C6/BE84: AE AD 40     LDX $40AD
@@ -59,7 +59,7 @@ C6/BEBC: 11 2D        ORA ($2D),Y
 C6/BEBE: 2E 61 08     ROL $0861
 C6/BEC1: 17 F4        ORA [$F4],Y
 C6/BEC3: 01 00        ORA ($00,X)
-C6/BEC5: 20 21 80     JSR Local_C68021
+C6/BEC5: 20 21 80     JSR $8021
 C6/BEC8: 81 82        STA ($82,X)
 C6/BECA: A5 84        LDA $84
 C6/BECC: 85 C0        STA $C0
@@ -73,10 +73,10 @@ C6/BEDD: 00 38        BRK $38
 C6/BEDF: 1E 0B 28     ASL $280B,X
 C6/BEE2: 09 23 45     ORA #$4523
 C6/BEE5: 0A           ASL
-C6/BEE6: 30 02        BMI Local_C6BEEA
+C6/BEE6: 30 02        BMI $BEEA
 C6/BEE8: 3D 08 09     AND $0908,X
 C6/BEEB: 24 21        BIT $21
-C6/BEED: 30 31        BMI Local_C6BF20
+C6/BEED: 30 31        BMI $BF20
 C6/BEEF: 00 32        BRK $32
 C6/BEF1: 91 92        STA ($92),Y
 C6/BEF3: 23 94        AND $94,S
@@ -84,7 +84,7 @@ C6/BEF5: 95 35        STA $35,X
 C6/BEF7: 45 B8        EOR $B8
 C6/BEF9: 46 47        LSR $47
 C6/BEFB: AB           PLB
-C6/BEFC: 80 F9        BRA Local_C6BEF7
+C6/BEFC: 80 F9        BRA $BEF7
 C6/BEFE: C0 88 63     CPY #$6388
 C6/BF01: 03 0C        ORA $0C,S
 C6/BF03: 44 02 90     MVP $02,$90
@@ -107,7 +107,7 @@ C6/BF23: E5 3A        SBC $3A
 C6/BF25: C0 F8 81     CPY #$81F8
 C6/BF28: C0 48 BD     CPY #$BD48
 C6/BF2B: 07 07        ORA [$07]
-C6/BF2D: 3C 3D 3E     BIT Local_C63E3D,X
+C6/BF2D: 3C 3D 3E     BIT $3E3D,X
 C6/BF30: E7 02        SBC [$02]
 C6/BF32: 32 10        AND ($10)
 C6/BF34: EB           XBA

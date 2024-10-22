@@ -3,7 +3,7 @@ Routine_FE09BA:
 FE/09BA: F8           SED
 FE/09BB: BE 4E 0A     LDX $0A4E,Y
 FE/09BE: 35 09        AND $09,X
-FE/09C0: 80 08        BRA Local_FE09CA
+FE/09C0: 80 08        BRA $09CA
 FE/09C2: 05 0A        ORA $0A
 FE/09C4: 0A           ASL
 FE/09C5: 09 09 03     ORA #$0309

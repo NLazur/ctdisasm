@@ -1,7 +1,7 @@
 ; Bank: C2 | Start Address: 9A77
 Routine_C29A77:
 C2/9A77: A2 51 BD     LDX #$BD51
-C2/9A7A: 20 31 ED     JSR Local_C2ED31
+C2/9A7A: 20 31 ED     JSR $ED31
 C2/9A7D: AD 11 04     LDA $0411
 C2/9A80: 1A           INC
 C2/9A81: 85 67        STA $67

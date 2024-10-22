@@ -1,8 +1,8 @@
 ; Bank: FD | Start Address: 12D9
 Routine_FD12D9:
-FD/12D9: B0 40        BCS Local_FD131B
+FD/12D9: B0 40        BCS $131B
 FD/12DB: A0 60        LDY #$60
-FD/12DD: B0 37        BCS Local_FD1316
+FD/12DD: B0 37        BCS $1316
 FD/12DF: 09 10 15     ORA #$1510
 FD/12E2: 0B           PHD
 FD/12E3: 1F 07 C0 10  ORA $10C007,X

@@ -14,6 +14,6 @@ C0/6481: 11 65        ORA ($65),Y
 C0/6483: 23 65        AND $65,S
 C0/6485: 2F 65 A5 D9  AND $D9A565
 C0/6489: C5 DB        CMP $DB
-C0/648B: F0 26        BEQ Local_C064B3
+C0/648B: F0 26        BEQ $64B3
 C0/648D: 38           SEC
 C0/648E: 60           RTS

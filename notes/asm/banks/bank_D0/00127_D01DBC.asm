@@ -11,7 +11,7 @@ D0/1DCC: 02 03        COP $03
 D0/1DCE: 0A           ASL
 D0/1DCF: 0D 17 18     ORA $1817
 D0/1DD2: 0D 12 2F     ORA $2F12
-D0/1DD5: 30 3F        BMI Local_D01E16
+D0/1DD5: 30 3F        BMI $1E16
 D0/1DD7: 01 13        ORA ($13,X)
 D0/1DD9: 00 17        BRK $17
 D0/1DDB: 04 0B        TSB $0B
@@ -21,7 +21,7 @@ D0/1DE1: 0C 43 0C     TSB $0C43
 D0/1DE4: 7B           TDC
 D0/1DE5: 14 2B        TRB $2B
 D0/1DE7: 14 14        TRB $14
-D0/1DE9: 10 18        BPL Local_D01E03
+D0/1DE9: 10 18        BPL $1E03
 D0/1DEB: 58           CLI
-D0/1DEC: 50 50        BVC Local_D01E3E
+D0/1DEC: 50 50        BVC $1E3E
 D0/1DEE: 60           RTS

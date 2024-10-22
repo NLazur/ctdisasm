@@ -19,6 +19,6 @@ FE/EA14: 8C 0C 01     STY $010C
 FE/EA17: 02 10        COP $10
 FE/EA19: 08           PHP
 FE/EA1A: 08           PHP
-FE/EA1B: 80 24        BRA Local_FEEA41
-FE/EA1D: 82 2A 08     BRL Routine_FEF24A
+FE/EA1B: 80 24        BRA $EA41
+FE/EA1D: 82 2A 08     BRL $FEF24A
 FE/EA20: 40           RTI

@@ -33,7 +33,7 @@ D0/C269: 08           PHP
 D0/C26A: 0F 08 03 04  ORA $040308
 D0/C26E: 02 03        COP $03
 D0/C270: 24 3C        BIT $3C
-D0/C272: 3C 42 FF     BIT Local_D0FF42,X
+D0/C272: 3C 42 FF     BIT $FF42,X
 D0/C275: 81 7E        STA ($7E,X)
 D0/C277: 81 00        STA ($00,X)
 D0/C279: 00 00        BRK $00
@@ -41,6 +41,6 @@ D0/C27B: 00 00        BRK $00
 D0/C27D: 00 04        BRK $04
 D0/C27F: 04 18        TSB $18
 D0/C281: 18           CLC
-D0/C282: 30 30        BMI Local_D0C2B4
+D0/C282: 30 30        BMI $C2B4
 D0/C284: A0 E0        LDY #$E0
 D0/C286: 40           RTI

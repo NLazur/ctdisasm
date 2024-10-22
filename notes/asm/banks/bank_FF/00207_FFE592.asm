@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: E592
 Routine_FFE592:
 FF/E592: A0 5C        LDY #$5C
-FF/E594: 2C C4 5C     BIT Local_FF5CC4
+FF/E594: 2C C4 5C     BIT $5CC4
 FF/E597: A4 2C        LDY $2C
 FF/E599: 14 8C        TRB $8C
 FF/E59B: 74 12        STZ $12,X
@@ -12,7 +12,7 @@ FF/E5A4: 24 8B        BIT $8B
 FF/E5A6: 13 AC        ORA ($AC,S),Y
 FF/E5A8: 00 FF        BRK $FF
 FF/E5AA: 7F 00 21 3A  ADC $3A2100,X
-FF/E5AE: 30 2A        BMI Local_FFE5DA
+FF/E5AE: 30 2A        BMI $E5DA
 FF/E5B0: 0A           ASL
 FF/E5B1: 04 05        TSB $05
 FF/E5B3: 0A           ASL
@@ -30,10 +30,10 @@ FF/E5C9: FE FF 00     INC $00FF,X
 FF/E5CC: 88           DEY
 FF/E5CD: 58           CLI
 FF/E5CE: 08           PHP
-FF/E5CF: 50 50        BVC Local_FFE621
-FF/E5D1: 20 B8 40     JSR Local_FF40B8
+FF/E5CF: 50 50        BVC $E621
+FF/E5D1: 20 B8 40     JSR $40B8
 FF/E5D4: 7C 80 C0     JMP ($C080,X)
-FF/E5D7: 3C 00 00     BIT Local_FF0000,X
+FF/E5D7: 3C 00 00     BIT $0000,X
 FF/E5DA: 00 00        BRK $00
 FF/E5DC: 00 FF        BRK $FF
 FF/E5DE: 00 83        BRK $83
@@ -46,8 +46,8 @@ FF/E5ED: 00 04        BRK $04
 FF/E5EF: 06 0F        ASL $0F
 FF/E5F1: 08           PHP
 FF/E5F2: 1C 10 1F     TRB $1F10
-FF/E5F5: 10 3F        BPL Local_FFE636
-FF/E5F7: 20 38 23     JSR Local_FF2338
+FF/E5F5: 10 3F        BPL $E636
+FF/E5F7: 20 38 23     JSR $2338
 FF/E5FA: 3D 22 00     AND $0022,X
 FF/E5FD: FE 61 42     INC $4261,X
 FF/E600: B1 B2        LDA ($B2),Y
@@ -57,12 +57,12 @@ FF/E607: EA           NOP
 FF/E608: A1 2A        LDA ($2A,X)
 FF/E60A: 69 2A        ADC #$2A
 FF/E60C: 00 00        BRK $00
-FF/E60E: 70 90        BVS Local_FFE5A0
+FF/E60E: 70 90        BVS $E5A0
 FF/E610: B8           CLV
 FF/E611: 48           PHA
 FF/E612: D8           CLD
 FF/E613: 28           PLP
-FF/E614: 5C 24 FC 14  JMP Routine_14FC24
+FF/E614: 5C 24 FC 14  JMP $14FC24
 FF/E618: BC 54 7C     LDY $7C54,X
 FF/E61B: 94 11        STY $11,X
 FF/E61D: 95 27        STA $27,X

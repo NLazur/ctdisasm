@@ -2,8 +2,8 @@
 Routine_C06109:
 C0/6109: A6 6D        LDX $6D
 C0/610B: BF 80 09 7F  LDA $7F0980,X
-C0/610F: F0 09        BEQ Local_C0611A
-C0/6111: 82 93 00     BRL Routine_C061A7
+C0/610F: F0 09        BEQ $611A
+C0/6111: 82 93 00     BRL $C061A7
 C0/6114: BB           TYX
 C0/6115: E8           INX
 C0/6116: E8           INX

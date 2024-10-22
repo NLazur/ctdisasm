@@ -15,7 +15,7 @@ C6/C62F: 98           TYA
 C6/C630: 99 9A 9B     STA $9B9A,Y
 C6/C633: 9C 9D 9E     STZ $9E9D
 C6/C636: 00 9F        BRK $9F
-C6/C638: D0 E2        BNE Local_C6C61C
+C6/C638: D0 E2        BNE $C61C
 C6/C63A: 00 60        BRK $60
 C6/C63C: 26 B4        ROL $B4
 C6/C63E: 33 38        AND ($38,S),Y
@@ -48,7 +48,7 @@ C6/C674: BB           TYX
 C6/C675: BC BD BE     LDY $BEBD,X
 C6/C678: BF F0 E3 80  LDA $80E3F0,X
 C6/C67C: 00 00        BRK $00
-C6/C67E: 50 51        BVC Local_C6C6D1
+C6/C67E: 50 51        BVC $C6D1
 C6/C680: 31 32        AND ($32),Y
 C6/C682: C2 39        REP #$39
 C6/C684: F8           SED
@@ -62,7 +62,7 @@ C6/C690: C4 C5        CPY $C5
 C6/C692: C6 C7        DEC $C7
 C6/C694: C8           INY
 C6/C695: C9 CA CB     CMP #$CBCA
-C6/C698: 10 CC        BPL Local_C6C666
+C6/C698: 10 CC        BPL $C666
 C6/C69A: CD CE CF     CMP $CFCE
 C6/C69D: 18           CLC
 C6/C69E: 11 60        ORA ($60),Y
@@ -77,7 +77,7 @@ C6/C6AE: 00 D4        BRK $D4
 C6/C6B0: D5 D6        CMP $D6,X
 C6/C6B2: D7 D8        CMP [$D8],Y
 C6/C6B4: D9 DA DB     CMP $DBDA,Y
-C6/C6B7: D0 DC        BNE Local_C6C695
+C6/C6B7: D0 DC        BNE $C695
 C6/C6B9: DD DE DF     CMP $DFDE,X
 C6/C6BC: 18           CLC
 C6/C6BD: 19 50 3B     ORA $3B50,Y

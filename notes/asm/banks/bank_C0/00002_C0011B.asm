@@ -1,13 +1,13 @@
 ; Bank: C0 | Start Address: 011B
 Routine_C0011B:
 C0/011B: A5 29        LDA $29
-C0/011D: F0 0A        BEQ Local_C00129
+C0/011D: F0 0A        BEQ $0129
 C0/011F: A9 01        LDA #$01
 C0/0121: 85 29        STA $29
 C0/0123: A9 00        LDA #$00
 C0/0125: 85 26        STA $26
 C0/0127: 64 27        STZ $27
-C0/0129: 20 18 09     JSR Local_C00918
+C0/0129: 20 18 09     JSR $0918
 C0/012C: A4 97        LDY $97
 C0/012E: B9 01 18     LDA $1801,Y
 C0/0131: 85 02        STA $02
@@ -19,7 +19,7 @@ C0/013D: A2 00 00     LDX #$0000
 C0/0140: 7B           TDC
 C0/0141: EB           XBA
 C0/0142: B5 97        LDA $97,X
-C0/0144: 30 1A        BMI Local_C00160
+C0/0144: 30 1A        BMI $0160
 C0/0146: A8           TAY
 C0/0147: C2 20        REP #$20
 C0/0149: B9 00 18     LDA $1800,Y
@@ -32,7 +32,7 @@ C0/015E: E2 20        SEP #$20
 C0/0160: E8           INX
 C0/0161: E8           INX
 C0/0162: E0 06 00     CPX #$0006
-C0/0165: D0 D9        BNE Local_C00140
+C0/0165: D0 D9        BNE $0140
 C0/0167: A5 AB        LDA $AB
 C0/0169: 8F 1B 1D 7F  STA $7F1D1B
 C0/016D: A5 AC        LDA $AC

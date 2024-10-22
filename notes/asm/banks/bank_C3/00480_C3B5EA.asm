@@ -5,27 +5,27 @@ C3/B5ED: 42 20        WDM $20
 C3/B5EF: CF 42 00 E0  CMP $E00042
 C3/B5F3: 18           CLC
 C3/B5F4: 1B           TCS
-C3/B5F5: 22 D8 52 91  JSR Routine_9152D8
+C3/B5F5: 22 D8 52 91  JSR $9152D8
 C3/B5F9: 81 5A        STA ($5A,X)
 C3/B5FB: 06 58        ASL $58
 C3/B5FD: 21 89        AND ($89,X)
 C3/B5FF: E8           INX
 C3/B600: 06 26        ASL $26
-C3/B602: 2C 64 61     BIT Local_C36164
+C3/B602: 2C 64 61     BIT $6164
 C3/B605: 1A           INC
 C3/B606: 76 14        ROR $14,X
 C3/B608: F9 81 16     SBC $1681,Y
 C3/B60B: D4 18        PEI $18
-C3/B60D: D0 00        BNE Local_C3B60F
+C3/B60D: D0 00        BNE $B60F
 C3/B60F: 42 96        WDM $96
-C3/B611: 30 90        BMI Local_C3B5A3
+C3/B611: 30 90        BMI $B5A3
 C3/B613: 3B           TSC
 C3/B614: D4 80        PEI $80
 C3/B616: C0 01        CPY #$01
 C3/B618: 0C 30 95     TSB $9530
 C3/B61B: 39 32 5E     AND $5E32,Y
-C3/B61E: F0 5E        BEQ Local_C3B67E
-C3/B620: 30 B6        BMI Local_C3B5D8
+C3/B61E: F0 5E        BEQ $B67E
+C3/B620: 30 B6        BMI $B5D8
 C3/B622: 1E C2 71     ASL $71C2,X
 C3/B625: 55 82        EOR $82,X
 C3/B627: CA           DEX
@@ -33,7 +33,7 @@ C3/B628: 16 B0        ASL $B0,X
 C3/B62A: 5A           PHY
 C3/B62B: 42 8F        WDM $8F
 C3/B62D: EE 71 2C     INC $2C71
-C3/B630: 30 94        BMI Local_C3B5C6
+C3/B630: 30 94        BMI $B5C6
 C3/B632: 2E F0 06     ROL $06F0
 C3/B635: 12 00        ORA ($00)
 C3/B637: 0D B4 10     ORA $10B4
@@ -56,13 +56,13 @@ C3/B665: 34 D1        BIT $D1,X
 C3/B667: 7B           TDC
 C3/B668: 4E 3D 8A     LSR $8A3D
 C3/B66B: 01 98        ORA ($98,X)
-C3/B66D: 50 15        BVC Local_C3B684
+C3/B66D: 50 15        BVC $B684
 C3/B66F: 7F 09 D7 04  ADC $04D709,X
 C3/B673: 00 E8        BRK $E8
 C3/B675: 08           PHP
 C3/B676: 00 F9        BRK $F9
 C3/B678: 65 04        ADC $04
-C3/B67A: 10 17        BPL Local_C3B693
+C3/B67A: 10 17        BPL $B693
 C3/B67C: A6 1A        LDX $1A
 C3/B67E: 3A           DEC
 C3/B67F: 4B           PHK
@@ -76,8 +76,8 @@ C3/B68B: 38           SEC
 C3/B68C: 12 14        ORA ($14)
 C3/B68E: AA           TAX
 C3/B68F: C4 1B        CPY $1B
-C3/B691: 20 63 08     JSR Local_C30863
-C3/B694: 80 05        BRA Local_C3B69B
+C3/B691: 20 63 08     JSR $0863
+C3/B694: 80 05        BRA $B69B
 C3/B696: F5 63        SBC $63,X
 C3/B698: 18           CLC
 C3/B699: C8           INY
@@ -85,12 +85,12 @@ C3/B69A: 27 FF        AND [$FF]
 C3/B69C: 15 3E        ORA $3E,X
 C3/B69E: D4 37        PEI $37
 C3/B6A0: CA           DEX
-C3/B6A1: 2C EB 23     BIT Local_C323EB
+C3/B6A1: 2C EB 23     BIT $23EB
 C3/B6A4: 2D 5E 80     AND $805E
 C3/B6A7: 1C E1 45     TRB $45E1
 C3/B6AA: 18           CLC
-C3/B6AB: 70 61        BVS Local_C3B70E
-C3/B6AD: 20 04 01     JSR Local_C30104
+C3/B6AB: 70 61        BVS $B70E
+C3/B6AD: 20 04 01     JSR $0104
 C3/B6B0: 1A           INC
 C3/B6B1: A3 15        LDA $15,S
 C3/B6B3: 01 24        ORA ($24,X)

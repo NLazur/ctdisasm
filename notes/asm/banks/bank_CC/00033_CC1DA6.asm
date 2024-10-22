@@ -2,7 +2,7 @@
 Routine_CC1DA6:
 CC/1DA6: 04 00        TSB $00
 CC/1DA8: 28           PLP
-CC/1DA9: 80 80        BRA Local_CC1D2B
+CC/1DA9: 80 80        BRA $1D2B
 CC/1DAB: 00 00        BRK $00
 CC/1DAD: 00 05        BRK $05
 CC/1DAF: 00 40        BRK $40
@@ -13,18 +13,18 @@ CC/1DB8: 00 05        BRK $05
 CC/1DBA: 00 40        BRK $40
 CC/1DBC: 04 00        TSB $00
 CC/1DBE: 2A           ROL
-CC/1DBF: 80 80        BRA Local_CC1D41
+CC/1DBF: 80 80        BRA $1D41
 CC/1DC1: 00 00        BRK $00
 CC/1DC3: 00 05        BRK $05
 CC/1DC5: 00 40        BRK $40
 CC/1DC7: 04 00        TSB $00
 CC/1DC9: 2B           PLD
-CC/1DCA: 80 80        BRA Local_CC1D4C
+CC/1DCA: 80 80        BRA $1D4C
 CC/1DCC: 00 00        BRK $00
 CC/1DCE: 00 05        BRK $05
 CC/1DD0: 00 40        BRK $40
 CC/1DD2: 04 00        TSB $00
-CC/1DD4: 2C 80 80     BIT Local_CC8080
+CC/1DD4: 2C 80 80     BIT $8080
 CC/1DD7: 00 00        BRK $00
 CC/1DD9: 00 05        BRK $05
 CC/1DDB: 00 40        BRK $40

@@ -38,12 +38,12 @@ C0/FE20: 94 73        STY $73,X
 C0/FE22: F7 54        SBC [$54],Y
 C0/FE24: D9 6E 72     CMP $726E,Y
 C0/FE27: C0 F4        CPY #$F4
-C0/FE29: 80 DE        BRA Local_C0FE09
+C0/FE29: 80 DE        BRA $FE09
 C0/FE2B: B9 BB 8D     LDA $8DBB,Y
 C0/FE2E: 66 26        ROR $26
-C0/FE30: D0 36        BNE Local_C0FE68
+C0/FE30: D0 36        BNE $FE68
 C0/FE32: E1 E9        SBC ($E9,X)
-C0/FE34: 70 DC        BVS Local_C0FE12
+C0/FE34: 70 DC        BVS $FE12
 C0/FE36: CD 2F 4A     CMP $4A2F
 C0/FE39: 67 5D        ADC [$5D]
 C0/FE3B: D2 60        CMP ($60)

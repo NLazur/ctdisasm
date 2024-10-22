@@ -7,11 +7,11 @@ C6/A980: A0 52 C1     LDY #$C152
 C6/A983: A2 53 FB     LDX #$FB53
 C6/A986: DE 5C 00     DEC $005C,X
 C6/A989: 0C C2 C2     TSB $C2C2
-C6/A98C: 50 51        BVC Local_C6A9DF
+C6/A98C: 50 51        BVC $A9DF
 C6/A98E: DB           STP
 C6/A98F: C7 C8        CMP [$C8]
 C6/A991: 01 5F        ORA ($5F,X)
-C6/A993: 10 06        BPL Local_C6A99B
+C6/A993: 10 06        BPL $A99B
 C6/A995: 07 BB        ORA [$BB]
 C6/A997: BC 05 06     LDY $0605,X
 C6/A99A: EF 07 60 08  SBC $086007
@@ -19,7 +19,7 @@ C6/A99E: B9 05 4F     LDA $4F05,Y
 C6/A9A1: 03 23        ORA $23,S
 C6/A9A3: 21 82        AND ($82,X)
 C6/A9A5: 83 02        STA $02,S
-C6/A9A7: 20 32 32     JSR Local_C63232
+C6/A9A7: 20 32 32     JSR $3232
 C6/A9AA: E3 12        SBC $12,S
 C6/A9AC: 12 C9        ORA ($C9)
 C6/A9AE: 05 60        ORA $60
@@ -32,7 +32,7 @@ C6/A9BD: 08           PHP
 C6/A9BE: 52 61        EOR ($61)
 C6/A9C0: A6 BC        LDX $BC
 C6/A9C2: 08           PHP
-C6/A9C3: D0 D0        BNE Local_C6A995
+C6/A9C3: D0 D0        BNE $A995
 C6/A9C5: 06 06        ASL $06
 C6/A9C7: 41 21        EOR ($21,X)
 C6/A9C9: 02 05        COP $05

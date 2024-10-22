@@ -18,7 +18,7 @@ FD/4135: F7 33        SBC [$33],Y
 FD/4137: F3 00        SBC ($00,S),Y
 FD/4139: 27 BF        AND [$BF]
 FD/413B: 27 6B        AND [$6B]
-FD/413D: 4C DE 89     JMP Local_FD89DE
+FD/413D: 4C DE 89     JMP $89DE
 FD/4140: 18           CLC
 FD/4141: 00 1E        BRK $1E
 FD/4143: 63 0E        ADC $0E,S
@@ -92,19 +92,19 @@ FD/41E5: F3 48        SBC ($48,S),Y
 FD/41E7: B1 80        LDA ($80),Y
 FD/41E9: 48           PHA
 FD/41EA: B1 49        LDA ($49),Y
-FD/41EC: B0 01        BCS Local_FD41EF
-FD/41EE: F0 08        BEQ Local_FD41F8
+FD/41EC: B0 01        BCS $41EF
+FD/41EE: F0 08        BEQ $41F8
 FD/41F0: 02 00        COP $00
 FD/41F2: 00 E4        BRK $E4
 FD/41F4: 18           CLC
-FD/41F5: F0 0C        BEQ Local_FD4203
+FD/41F5: F0 0C        BEQ $4203
 FD/41F7: FF F7 7F 7F  SBC $7F7FF7,X
 FD/41FB: 00 A9        BRK $A9
 FD/41FD: C9 11        CMP #$11
 FD/41FF: 95 95        STA $95,X
 FD/4201: DF D1 9F 00  CMP $009FD1,X
-FD/4205: 10 C7        BPL Local_FD41CE
-FD/4207: 30 35        BMI Local_FD423E
+FD/4205: 10 C7        BPL $41CE
+FD/4207: 30 35        BMI $423E
 FD/4209: 8F 77 37 FF  STA $FF3777
 FD/420D: 00 9F        BRK $9F
 FD/420F: B9 3B 51     LDA $513B,Y
@@ -113,7 +113,7 @@ FD/4214: 91 91        STA ($91),Y
 FD/4216: 00 28        BRK $28
 FD/4218: 11 AA        ORA ($AA),Y
 FD/421A: F1 88        SBC ($88),Y
-FD/421C: 70 80        BVS Local_FD419E
+FD/421C: 70 80        BVS $419E
 FD/421E: 48           PHA
 FD/421F: 00 00        BRK $00
 FD/4221: 96 C0        STX $C0,Y

@@ -15,7 +15,7 @@ FE/254F: 05 1F        ORA $1F
 FE/2551: 25 05        AND $05
 FE/2553: EF 04 FF 4B  SBC $4BFF04
 FE/2557: 15 6A        ORA $6A,X
-FE/2559: 10 53        BPL Local_FE25AE
+FE/2559: 10 53        BPL $25AE
 FE/255B: 05 FF        ORA $FF
 FE/255D: 14 15        TRB $15
 FE/255F: 05 18        ORA $18
@@ -30,10 +30,10 @@ FE/256E: A2 05 7F     LDX #$7F05
 FE/2571: 04 D5        TSB $D5
 FE/2573: 0F 87 58 10  ORA $105887
 FE/2577: 08           PHP
-FE/2578: 10 58        BPL Local_FE25D2
-FE/257A: 10 1F        BPL Local_FE259B
+FE/2578: 10 58        BPL $25D2
+FE/257A: 10 1F        BPL $259B
 FE/257C: 21 21        AND ($21,X)
-FE/257E: 20 7C 05     JSR Local_FE057C
+FE/257E: 20 7C 05     JSR $057C
 FE/2581: FE 1E 8F     INC $8F1E,X
 FE/2584: 08           PHP
 FE/2585: EA           NOP
@@ -56,24 +56,24 @@ FE/25AA: 3D 4C 23     AND $234C,X
 FE/25AD: 18           CLC
 FE/25AE: 03 2B        ORA $2B,S
 FE/25B0: 45 43        EOR $43
-FE/25B2: 4C F1 1A     JMP Local_FE1AF1
+FE/25B2: 4C F1 1A     JMP $1AF1
 FE/25B5: 00 23        BRK $23
 FE/25B7: 23 15        AND $15,S
 FE/25B9: E5 02        SBC $02
 FE/25BB: 0F 03 EB 02  ORA $02EB03
-FE/25BF: 10 03        BPL Local_FE25C4
+FE/25BF: 10 03        BPL $25C4
 FE/25C1: E6 15        INC $15
 FE/25C3: 15 03        ORA $03,X
 FE/25C5: ED 02 23     SBC $2302
 FE/25C8: 15 F1        ORA $F1,X
 FE/25CA: 12 20        ORA ($20)
 FE/25CC: 03 0F        ORA $0F,S
-FE/25CE: 10 1F        BPL Local_FE25EF
+FE/25CE: 10 1F        BPL $25EF
 FE/25D0: F3 12        SBC ($12,S),Y
 FE/25D2: 17 30        ORA [$30],Y
 FE/25D4: F6 12        INC $12,X
-FE/25D6: 20 20 10     JSR Local_FE1020
-FE/25D9: 70 15        BVS Local_FE25F0
+FE/25D6: 20 20 10     JSR $1020
+FE/25D9: 70 15        BVS $25F0
 FE/25DB: 23 23        AND $23,S
 FE/25DD: 48           PHA
 FE/25DE: 43 49        EOR $49,S
@@ -86,11 +86,11 @@ FE/25EC: 15 2B        ORA $2B,X
 FE/25EE: 31 30        AND ($30),Y
 FE/25F0: 13 4E        ORA ($4E,S),Y
 FE/25F2: 00 09        BRK $09
-FE/25F4: 30 FF        BMI Local_FE25F5
+FE/25F4: 30 FF        BMI $25F5
 FE/25F6: 46 30        LSR $30
 FE/25F8: 45 03        EOR $03
 FE/25FA: 7C 03 03     JMP ($0303,X)
-FE/25FD: 10 50        BPL Local_FE264F
+FE/25FD: 10 50        BPL $264F
 FE/25FF: 14 D0        TRB $D0
 FE/2601: 33 5D        AND ($5D,S),Y
 FE/2603: 34 27        BIT $27,X
@@ -103,7 +103,7 @@ FE/2610: 34 49        BIT $49,X
 FE/2612: 8C 15 23     STY $2315
 FE/2615: 95 24        STA $24,X
 FE/2617: 08           PHP
-FE/2618: 30 4A        BMI Local_FE2664
+FE/2618: 30 4A        BMI $2664
 FE/261A: 4D 49 C8     EOR $C849
 FE/261D: 53 FF        EOR ($FF,S),Y
 FE/261F: D8           CLD

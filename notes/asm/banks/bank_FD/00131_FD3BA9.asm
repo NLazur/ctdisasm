@@ -12,7 +12,7 @@ FD/3BBD: 38           SEC
 FD/3BBE: 01 81        ORA ($81,X)
 FD/3BC0: 07 C7        ORA [$C7]
 FD/3BC2: 00 18        BRK $18
-FD/3BC4: F0 FF        BEQ Local_FD3BC5
+FD/3BC4: F0 FF        BEQ $3BC5
 FD/3BC6: FF 1C E3 18  SBC $18E31C,X
 FD/3BCA: E7 00        SBC [$00]
 FD/3BCC: 18           CLC

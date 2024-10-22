@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: B9E2
 Routine_C6B9E2:
-C6/B9E2: D0 1E        BNE Local_C6BA02
+C6/B9E2: D0 1E        BNE $BA02
 C6/B9E4: 2A           ROL
 C6/B9E5: 4A           LSR
 C6/B9E6: 0F 07 4A F8  ORA $F84A07

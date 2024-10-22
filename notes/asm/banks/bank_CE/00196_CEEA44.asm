@@ -21,6 +21,6 @@ CE/EA75: 88           DEY
 CE/EA76: 88           DEY
 CE/EA77: 88           DEY
 CE/EA78: 88           DEY
-CE/EA79: D0 CA        BNE Local_CEEA45
+CE/EA79: D0 CA        BNE $EA45
 CE/EA7B: E6 45        INC $45
 CE/EA7D: 60           RTS

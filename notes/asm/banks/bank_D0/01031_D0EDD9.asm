@@ -13,7 +13,7 @@ D0/EDE9: 08           PHP
 D0/EDEA: 9C 88 24     STZ $2488
 D0/EDED: 28           PLP
 D0/EDEE: C0 08        CPY #$08
-D0/EDF0: 80 50        BRA Local_D0EE42
+D0/EDF0: 80 50        BRA $EE42
 D0/EDF2: 09 51        ORA #$51
 D0/EDF4: 09 52        ORA #$52
 D0/EDF6: 09 53        ORA #$53

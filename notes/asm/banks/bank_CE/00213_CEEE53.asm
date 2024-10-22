@@ -15,5 +15,5 @@ CE/EE65: 88           DEY
 CE/EE66: 88           DEY
 CE/EE67: 88           DEY
 CE/EE68: E0 C0 01     CPX #$01C0
-CE/EE6B: D0 EB        BNE Local_CEEE58
+CE/EE6B: D0 EB        BNE $EE58
 CE/EE6D: 60           RTS

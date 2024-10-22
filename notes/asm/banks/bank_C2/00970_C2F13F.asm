@@ -11,7 +11,7 @@ C2/F14C: 29 FF 00     AND #$00FF
 C2/F14F: 85 8E        STA $8E
 C2/F151: A0 08 00     LDY #$0008
 C2/F154: 46 8E        LSR $8E
-C2/F156: 90 13        BCC Local_C2F16B
+C2/F156: 90 13        BCC $F16B
 C2/F158: F8           SED
 C2/F159: 18           CLC
 C2/F15A: BF 7A F1 C2  LDA $C2F17A,X
@@ -26,10 +26,10 @@ C2/F16C: E8           INX
 C2/F16D: E8           INX
 C2/F16E: E8           INX
 C2/F16F: 88           DEY
-C2/F170: D0 E2        BNE Local_C2F154
+C2/F170: D0 E2        BNE $F154
 C2/F172: 7A           PLY
 C2/F173: C8           INY
 C2/F174: C6 92        DEC $92
-C2/F176: D0 D0        BNE Local_C2F148
+C2/F176: D0 D0        BNE $F148
 C2/F178: 28           PLP
 C2/F179: 60           RTS

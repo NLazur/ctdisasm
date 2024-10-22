@@ -12,7 +12,7 @@ D0/A8A7: 00 00        BRK $00
 D0/A8A9: 00 00        BRK $00
 D0/A8AB: 08           PHP
 D0/A8AC: 00 00        BRK $00
-D0/A8AE: 20 00 00     JSR Local_D00000
+D0/A8AE: 20 00 00     JSR $0000
 D0/A8B1: 00 00        BRK $00
 D0/A8B3: 00 00        BRK $00
 D0/A8B5: 00 00        BRK $00

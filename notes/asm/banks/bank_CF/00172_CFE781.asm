@@ -1,19 +1,19 @@
 ; Bank: CF | Start Address: E781
 Routine_CFE781:
 CF/E781: AD 5A AC     LDA $AC5A
-CF/E784: F0 50        BEQ Local_CFE7D6
+CF/E784: F0 50        BEQ $E7D6
 CF/E786: AD D2 A3     LDA $A3D2
 CF/E789: AA           TAX
 CF/E78A: BF 10 5E D1  LDA $D15E10,X
 CF/E78E: C9 80        CMP #$80
-CF/E790: F0 41        BEQ Local_CFE7D3
+CF/E790: F0 41        BEQ $E7D3
 CF/E792: 7B           TDC
 CF/E793: A8           TAY
 CF/E794: B9 DC A0     LDA $A0DC,Y
-CF/E797: D0 09        BNE Local_CFE7A2
+CF/E797: D0 09        BNE $E7A2
 CF/E799: BF 10 5E D1  LDA $D15E10,X
 CF/E79D: 99 E7 A0     STA $A0E7,Y
-CF/E7A0: 80 07        BRA Local_CFE7A9
+CF/E7A0: 80 07        BRA $E7A9
 CF/E7A2: BF 49 5E D1  LDA $D15E49,X
 CF/E7A6: 99 E7 A0     STA $A0E7,Y
 CF/E7A9: C8           INY
@@ -35,7 +35,7 @@ CF/E7C4: E8           INX
 CF/E7C5: E8           INX
 CF/E7C6: E8           INX
 CF/E7C7: C6 C6        DEC $C6
-CF/E7C9: D0 EE        BNE Local_CFE7B9
+CF/E7C9: D0 EE        BNE $E7B9
 CF/E7CB: C8           INY
 CF/E7CC: C0 0B        CPY #$0B
 CF/E7CE: 00 D0        BRK $D0
@@ -48,9 +48,9 @@ CF/E7DA: 84 C6        STY $C6
 CF/E7DC: E2 10        SEP #$10
 CF/E7DE: A4 C6        LDY $C6
 CF/E7E0: B9 6D A4     LDA $A46D,Y
-CF/E7E3: F0 4E        BEQ Local_CFE833
+CF/E7E3: F0 4E        BEQ $E833
 CF/E7E5: AD 01 A1     LDA $A101
-CF/E7E8: D0 49        BNE Local_CFE833
+CF/E7E8: D0 49        BNE $E833
 CF/E7EA: C2 10        REP #$10
 CF/E7EC: B9 41 A4     LDA $A441,Y
 CF/E7EF: 0A           ASL
@@ -64,7 +64,7 @@ CF/E7FC: 7B           TDC
 CF/E7FD: E2 20        SEP #$20
 CF/E7FF: B9 3C 99     LDA $993C,Y
 CF/E802: C9 08        CMP #$08
-CF/E804: F0 2D        BEQ Local_CFE833
+CF/E804: F0 2D        BEQ $E833
 CF/E806: 0A           ASL
 CF/E807: 0A           ASL
 CF/E808: 0A           ASL
@@ -81,10 +81,10 @@ CF/E821: FE 99 A4     INC $A499,X
 CF/E824: FE 99 A4     INC $A499,X
 CF/E827: BD 99 A4     LDA $A499,X
 CF/E82A: C9 7C        CMP #$7C
-CF/E82C: D0 03        BNE Local_CFE831
+CF/E82C: D0 03        BNE $E831
 CF/E82E: 9E 99 A4     STZ $A499,X
 CF/E831: E2 10        SEP #$10
 CF/E833: C6 C6        DEC $C6
-CF/E835: 10 A7        BPL Local_CFE7DE
+CF/E835: 10 A7        BPL $E7DE
 CF/E837: C2 10        REP #$10
 CF/E839: 60           RTS

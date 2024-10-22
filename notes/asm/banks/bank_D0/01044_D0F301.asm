@@ -15,7 +15,7 @@ D0/F316: 13 59        ORA ($59,S),Y
 D0/F318: 13 5A        ORA ($5A,S),Y
 D0/F31A: 13 5B        ORA ($5B,S),Y
 D0/F31C: 13 00        ORA ($00,S),Y
-D0/F31E: 5C 13 5D 13  JMP Routine_135D13
+D0/F31E: 5C 13 5D 13  JMP $135D13
 D0/F322: 5E 13 5F     LSR $5F13,X
 D0/F325: 13 00        ORA ($00,S),Y
 D0/F327: 5F 4B 5E 4B  EOR $4B5E4B,X
@@ -35,7 +35,7 @@ D0/F33F: 54 4B 00     MVN $4B,$00
 D0/F342: 53 4B        EOR ($4B,S),Y
 D0/F344: 52 4B        EOR ($4B)
 D0/F346: 51 4B        EOR ($4B),Y
-D0/F348: 50 4B        BVC Local_D0F395
+D0/F348: 50 4B        BVC $F395
 D0/F34A: 00 60        BRK $60
 D0/F34C: 13 61        ORA ($61,S),Y
 D0/F34E: 13 62        ORA ($62,S),Y

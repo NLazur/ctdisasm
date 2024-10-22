@@ -12,7 +12,7 @@ D1/EEAB: C2 20        REP #$20
 D1/EEAD: 0A           ASL
 D1/EEAE: 0A           ASL
 D1/EEAF: A8           TAY
-D1/EEB0: 30 0B        BMI Local_D1EEBD
+D1/EEB0: 30 0B        BMI $EEBD
 D1/EEB2: 7B           TDC
 D1/EEB3: 99 5F C1     STA $C15F,Y
 D1/EEB6: 1A           INC
@@ -20,7 +20,7 @@ D1/EEB7: 88           DEY
 D1/EEB8: 88           DEY
 D1/EEB9: 88           DEY
 D1/EEBA: 88           DEY
-D1/EEBB: 10 F6        BPL Local_D1EEB3
+D1/EEBB: 10 F6        BPL $EEB3
 D1/EEBD: EE 3A CD     INC $CD3A
 D1/EEC0: 7B           TDC
 D1/EEC1: E2 20        SEP #$20

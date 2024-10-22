@@ -2,7 +2,7 @@
 Routine_C08A3C:
 C0/8A3C: AD F8 00     LDA $00F8
 C0/8A3F: 89 02        BIT #$02
-C0/8A41: F0 15        BEQ Local_C08A58
+C0/8A41: F0 15        BEQ $8A58
 C0/8A43: A9 E0        LDA #$E0
 C0/8A45: 85 2C        STA $2C
 C0/8A47: 85 2D        STA $2D

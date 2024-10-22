@@ -10,7 +10,7 @@ C2/EF6F: 86 65        STX $65
 C2/EF71: EB           XBA
 C2/EF72: 48           PHA
 C2/EF73: AB           PLB
-C2/EF74: 20 7E EF     JSR Local_C2EF7E
+C2/EF74: 20 7E EF     JSR $EF7E
 C2/EF77: A9 DC        LDA #$DC
 C2/EF79: 14 7E        TRB $7E
 C2/EF7B: 28           PLP

@@ -7,7 +7,7 @@ D0/78C4: 00 00        BRK $00
 D0/78C6: 00 00        BRK $00
 D0/78C8: C0 C0        CPY #$C0
 D0/78CA: E0 E0 30     CPX #$30E0
-D0/78CD: 30 00        BMI Local_D078CF
+D0/78CD: 30 00        BMI $78CF
 D0/78CF: 00 00        BRK $00
 D0/78D1: 00 00        BRK $00
 D0/78D3: 00 00        BRK $00
@@ -20,7 +20,7 @@ D0/78E3: 00 00        BRK $00
 D0/78E5: 00 00        BRK $00
 D0/78E7: 00 E0        BRK $E0
 D0/78E9: E0 E0 E0     CPX #$E0E0
-D0/78EC: F0 F0        BEQ Local_D078DE
+D0/78EC: F0 F0        BEQ $78DE
 D0/78EE: 00 00        BRK $00
 D0/78F0: 00 00        BRK $00
 D0/78F2: 00 00        BRK $00
@@ -32,7 +32,7 @@ D0/78FE: 1C 1F 1C     TRB $1C1F
 D0/7901: 1C 30 30     TRB $3030
 D0/7904: 00 00        BRK $00
 D0/7906: 00 00        BRK $00
-D0/7908: 80 F0        BRA Local_D078FA
+D0/7908: 80 F0        BRA $78FA
 D0/790A: 00 F0        BRK $F0
 D0/790C: 00 C0        BRK $C0
 D0/790E: 00 00        BRK $00
@@ -49,8 +49,8 @@ D0/7922: 18           CLC
 D0/7923: 00 10        BRK $10
 D0/7925: 00 00        BRK $00
 D0/7927: 00 F0        BRK $F0
-D0/7929: 10 E0        BPL Local_D0790B
-D0/792B: 20 80 00     JSR Local_D00080
+D0/7929: 10 E0        BPL $790B
+D0/792B: 20 80 00     JSR $0080
 D0/792E: 00 00        BRK $00
 D0/7930: 00 00        BRK $00
 D0/7932: 00 00        BRK $00
@@ -68,7 +68,7 @@ D0/7947: 00 00        BRK $00
 D0/7949: 00 10        BRK $10
 D0/794B: 00 18        BRK $18
 D0/794D: 00 1E        BRK $1E
-D0/794F: 10 17        BPL Local_D07968
+D0/794F: 10 17        BPL $7968
 D0/7951: 18           CLC
 D0/7952: 11 1E        ORA ($1E),Y
 D0/7954: 00 0F        BRK $0F

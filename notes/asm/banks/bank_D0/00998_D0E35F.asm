@@ -12,7 +12,7 @@ D0/E36F: F8           SED
 D0/E370: 00 39        BRK $39
 D0/E372: 3B           TSC
 D0/E373: 00 12        BRK $12
-D0/E375: 3C 12 3D     BIT Local_D03D12,X
+D0/E375: 3C 12 3D     BIT $3D12,X
 D0/E378: 12 37        ORA ($37)
 D0/E37A: 12 38        ORA ($38)
 D0/E37C: 00 12        BRK $12

@@ -8,19 +8,19 @@ D0/E3A8: 08           PHP
 D0/E3A9: 27 80        AND [$80]
 D0/E3AB: F8           SED
 D0/E3AC: 00 03        BRK $03
-D0/E3AE: 20 00 49     JSR Local_D04900
+D0/E3AE: 20 00 49     JSR $4900
 D0/E3B1: E5 13        SBC $13
 D0/E3B3: E5 53        SBC $53
 D0/E3B5: 3B           TSC
 D0/E3B6: 12 3F        ORA ($3F)
 D0/E3B8: 00 12        BRK $12
 D0/E3BA: 41 12        EOR ($12,X)
-D0/E3BC: 82 12 82     BRL Routine_D065D1
+D0/E3BC: 82 12 82     BRL $D065D1
 D0/E3BF: 52 41        EOR ($41)
 D0/E3C1: EC 52 3F     CPX $3F52
 D0/E3C4: 7E 00 14     ROR $1400,X
 D0/E3C7: 08           PHP
-D0/E3C8: 20 7E 09     JSR Local_D0097E
+D0/E3C8: 20 7E 09     JSR $097E
 D0/E3CB: 00 A9        BRK $A9
 D0/E3CD: 76 03        ROR $03,X
 D0/E3CF: 01 00        ORA ($00,X)
@@ -50,7 +50,7 @@ D0/E3F6: 49 09        EOR #$09
 D0/E3F8: 49 E7        EOR #$E7
 D0/E3FA: 04 13        TSB $13
 D0/E3FC: E7 40        SBC [$40]
-D0/E3FE: 10 45        BPL Local_D0E445
+D0/E3FE: 10 45        BPL $E445
 D0/E400: 12 46        ORA ($46)
 D0/E402: 12 46        ORA ($46)
 D0/E404: 8C 52 45     STY $4552

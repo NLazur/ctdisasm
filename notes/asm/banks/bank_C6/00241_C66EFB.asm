@@ -1,10 +1,10 @@
 ; Bank: C6 | Start Address: 6EFB
 Routine_C66EFB:
 C6/6EFB: 08           PHP
-C6/6EFC: 70 71        BVS Local_C66F6F
+C6/6EFC: 70 71        BVS $6F6F
 C6/6EFE: 72 73        ADC ($73)
 C6/6F00: 74 75        STZ $75,X
-C6/6F02: 50 76        BVC Local_C66F7A
+C6/6F02: 50 76        BVC $6F7A
 C6/6F04: 25 26        AND $26
 C6/6F06: 27 53        AND [$53]
 C6/6F08: 79 DE 32     ADC $32DE,Y
@@ -46,15 +46,15 @@ C6/6F50: 7A           PLY
 C6/6F51: 09 51 BB     ORA #$BB51
 C6/6F54: 08           PHP
 C6/6F55: 62 72 12     PER $C681CA
-C6/6F58: 82 08 17     BRL Routine_C68663
+C6/6F58: 82 08 17     BRL $C68663
 C6/6F5B: 2D 32 DB     AND $DB32
 C6/6F5E: 00 07        BRK $07
-C6/6F60: 30 31        BMI Local_C66F93
+C6/6F60: 30 31        BMI $6F93
 C6/6F62: 32 91        AND ($91)
 C6/6F64: 92 68        STA ($68)
 C6/6F66: 94 E0        STY $E0,X
 C6/6F68: 95 35        STA $35,X
-C6/6F6A: 3C 46 47     BIT Local_C64746,X
+C6/6F6A: 3C 46 47     BIT $4746,X
 C6/6F6D: B3 69        LDA ($69,S),Y
 C6/6F6F: 94 08        STY $08,X
 C6/6F71: 14 01        TRB $01
@@ -79,7 +79,7 @@ C6/6F91: 73 80        ADC ($80,S),Y
 C6/6F93: 74 DF        STZ $DF,X
 C6/6F95: 97 98        STA [$98],Y
 C6/6F97: 99 15 60     STA $6015,Y
-C6/6F9A: 20 0B 0C     JSR Local_C60C0B
+C6/6F9A: 20 0B 0C     JSR $0C0B
 C6/6F9D: DD DE 23     CMP $23DE,X
 C6/6FA0: 03 C1        ORA $C1,S
 C6/6FA2: 00 41        BRK $41
@@ -94,15 +94,15 @@ C6/6FB1: 01 35        ORA ($35,X)
 C6/6FB3: 08           PHP
 C6/6FB4: 87 7B        STA [$7B]
 C6/6FB6: 7C 78 79     JMP ($7978,X)
-C6/6FB9: B0 B1        BCS Local_C66F6C
-C6/6FBB: 20 B2 B3     JSR Local_C6B3B2
+C6/6FB9: B0 B1        BCS $6F6C
+C6/6FBB: 20 B2 B3     JSR $B3B2
 C6/6FBE: B4 B5        LDY $B5,X
 C6/6FC0: A0 6A        LDY #$6A
 C6/6FC2: 08           PHP
 C6/6FC3: 7B           TDC
 C6/6FC4: 7C 38 8A     JMP ($8A38,X)
 C6/6FC7: 79 13 A4     ADC $A413,Y
-C6/6FCA: 10 A1        BPL Local_C66F6D
+C6/6FCA: 10 A1        BPL $6F6D
 C6/6FCC: 2A           ROL
 C6/6FCD: 43 13        EOR $13,S
 C6/6FCF: 01 11        ORA ($11,X)
@@ -112,7 +112,7 @@ C6/6FD6: 24 24        BIT $24
 C6/6FD8: C3 10        CMP $10,S
 C6/6FDA: F2 0A        SBC ($0A)
 C6/6FDC: E2 09        SEP #$09
-C6/6FDE: F0 52        BEQ Local_C67032
+C6/6FDE: F0 52        BEQ $7032
 C6/6FE0: 42 32        WDM $32
 C6/6FE2: 33 5F        AND ($5F,S),Y
 C6/6FE4: 00 72        BRK $72

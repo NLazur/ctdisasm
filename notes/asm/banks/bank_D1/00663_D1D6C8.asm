@@ -1,15 +1,15 @@
 ; Bank: D1 | Start Address: D6C8
 Routine_D1D6C8:
-D1/D6C8: 70 E0        BVS Local_D1D6AA
-D1/D6CA: 70 E0        BVS Local_D1D6AC
+D1/D6C8: 70 E0        BVS $D6AA
+D1/D6CA: 70 E0        BVS $D6AC
 D1/D6CC: 39 C0 39     AND $39C0,Y
 D1/D6CF: C0 3F        CPY #$3F
 D1/D6D1: C0 3F        CPY #$3F
 D1/D6D3: C0 1F        CPY #$1F
-D1/D6D5: 80 1F        BRA Local_D1D6F6
-D1/D6D7: 80 1F        BRA Local_D1D6F8
-D1/D6D9: 80 1F        BRA Local_D1D6FA
-D1/D6DB: 80 0F        BRA Local_D1D6EC
+D1/D6D5: 80 1F        BRA $D6F6
+D1/D6D7: 80 1F        BRA $D6F8
+D1/D6D9: 80 1F        BRA $D6FA
+D1/D6DB: 80 0F        BRA $D6EC
 D1/D6DD: 00 0F        BRK $0F
 D1/D6DF: 00 80        BRK $80
 D1/D6E1: 51 11        EOR ($11),Y
@@ -18,39 +18,39 @@ D1/D6E5: 52 12        EOR ($12)
 D1/D6E7: C9 81        CMP #$81
 D1/D6E9: 51 11        EOR ($11),Y
 D1/D6EB: C1 88        CMP ($88,X)
-D1/D6ED: 50 52        BVC Local_D1D741
+D1/D6ED: 50 52        BVC $D741
 D1/D6EF: 12 10        ORA ($10)
 D1/D6F1: C8           INY
-D1/D6F2: 80 50        BRA Local_D1D744
+D1/D6F2: 80 50        BRA $D744
 D1/D6F4: 51 11        EOR ($11),Y
-D1/D6F6: 10 C0        BPL Local_D1D6B8
+D1/D6F6: 10 C0        BPL $D6B8
 D1/D6F8: 89 50        BIT #$50
 D1/D6FA: 52 12        EOR ($12)
-D1/D6FC: 10 C9        BPL Local_D1D6C7
+D1/D6FC: 10 C9        BPL $D6C7
 D1/D6FE: 81 50        STA ($50,X)
 D1/D700: 51 11        EOR ($11),Y
-D1/D702: 10 C1        BPL Local_D1D6C5
+D1/D702: 10 C1        BPL $D6C5
 D1/D704: 88           DEY
-D1/D705: 50 10        BVC Local_D1D717
+D1/D705: 50 10        BVC $D717
 D1/D707: 52 12        EOR ($12)
-D1/D709: 10 10        BPL Local_D1D71B
+D1/D709: 10 10        BPL $D71B
 D1/D70B: C8           INY
-D1/D70C: 80 50        BRA Local_D1D75E
-D1/D70E: 10 51        BPL Local_D1D761
+D1/D70C: 80 50        BRA $D75E
+D1/D70E: 10 51        BPL $D761
 D1/D710: 11 10        ORA ($10),Y
-D1/D712: 10 C0        BPL Local_D1D6D4
+D1/D712: 10 C0        BPL $D6D4
 D1/D714: 89 10        BIT #$10
-D1/D716: 10 10        BPL Local_D1D728
-D1/D718: 10 C9        BPL Local_D1D6E3
+D1/D716: 10 10        BPL $D728
+D1/D718: 10 C9        BPL $D6E3
 D1/D71A: 81 50        STA ($50,X)
-D1/D71C: 50 10        BVC Local_D1D72E
-D1/D71E: 10 C1        BPL Local_D1D6E1
+D1/D71C: 50 10        BVC $D72E
+D1/D71E: 10 C1        BPL $D6E1
 D1/D720: 88           DEY
 D1/D721: 45 44        EOR $44
 D1/D723: 04 05        TSB $05
 D1/D725: C8           INY
-D1/D726: 80 4D        BRA Local_D1D775
-D1/D728: 4C 0C 0D     JMP Local_D10D0C
+D1/D726: 80 4D        BRA $D775
+D1/D728: 4C 0C 0D     JMP $0D0C
 D1/D72B: C0 06        CPY #$06
 D1/D72D: 07 47        ORA [$47]
 D1/D72F: 46 0E        LSR $0E
@@ -75,7 +75,7 @@ D1/D754: 00 15        BRK $15
 D1/D756: 17 2C        ORA [$2C],Y
 D1/D758: 18           CLC
 D1/D759: 19 1A 1B     ORA $1B1A,Y
-D1/D75C: 20 21 22     JSR Local_D12221
+D1/D75C: 20 21 22     JSR $2221
 D1/D75F: 23 28        AND $28,S
 D1/D761: 29 2A        AND #$2A
 D1/D763: 2B           PLD

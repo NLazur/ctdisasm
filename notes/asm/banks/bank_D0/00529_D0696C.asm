@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 696C
 Routine_D0696C:
 D0/696C: 00 00        BRK $00
-D0/696E: 10 10        BPL Local_D06980
+D0/696E: 10 10        BPL $6980
 D0/6970: 88           DEY
 D0/6971: 88           DEY
 D0/6972: C0 C0        CPY #$C0
@@ -18,10 +18,10 @@ D0/6986: 0F 00 00 00  ORA $000000
 D0/698A: 00 00        BRK $00
 D0/698C: 00 00        BRK $00
 D0/698E: 00 00        BRK $00
-D0/6990: 70 00        BVS Local_D06992
-D0/6992: D0 30        BNE Local_D069C4
-D0/6994: 80 40        BRA Local_D069D6
-D0/6996: 80 40        BRA Local_D069D8
+D0/6990: 70 00        BVS $6992
+D0/6992: D0 30        BNE $69C4
+D0/6994: 80 40        BRA $69D6
+D0/6996: 80 40        BRA $69D8
 D0/6998: 07 08        ORA [$08]
 D0/699A: 03 0C        ORA $0C,S
 D0/699C: 01 06        ORA ($06,X)
@@ -33,8 +33,8 @@ D0/69A7: 07 D8        ORA [$D8]
 D0/69A9: 24 F4        BIT $F4
 D0/69AB: 0C E8 18     TSB $18E8
 D0/69AE: C0 30        CPY #$30
-D0/69B0: 90 70        BCC Local_D06A22
-D0/69B2: 20 E0 40     JSR Local_D040E0
+D0/69B0: 90 70        BCC $6A22
+D0/69B2: 20 E0 40     JSR $40E0
 D0/69B5: C0 00        CPY #$00
 D0/69B7: 00 00        BRK $00
 D0/69B9: 00 01        BRK $01
@@ -48,6 +48,6 @@ D0/69C8: 24 E4        BIT $E4
 D0/69CA: 24 EC        BIT $EC
 D0/69CC: 68           PLA
 D0/69CD: F8           SED
-D0/69CE: 90 F0        BCC Local_D069C0
-D0/69D0: 30 F0        BMI Local_D069C2
+D0/69CE: 90 F0        BCC $69C0
+D0/69D0: 30 F0        BMI $69C2
 D0/69D2: 60           RTS

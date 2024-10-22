@@ -1,9 +1,9 @@
 ; Bank: CF | Start Address: 22D4
 Routine_CF22D4:
-CF/22D4: 80 00        BRA Local_CF22D6
-CF/22D6: 80 00        BRA Local_CF22D8
-CF/22D8: 80 00        BRA Local_CF22DA
-CF/22DA: 80 80        BRA Local_CF225C
+CF/22D4: 80 00        BRA $22D6
+CF/22D6: 80 00        BRA $22D8
+CF/22D8: 80 00        BRA $22DA
+CF/22DA: 80 80        BRA $225C
 CF/22DC: 00 00        BRK $00
 CF/22DE: 00 00        BRK $00
 CF/22E0: 3E 22 3C     ROL $3C22,X
@@ -24,6 +24,6 @@ CF/2304: F8           SED
 CF/2305: 88           DEY
 CF/2306: F8           SED
 CF/2307: 08           PHP
-CF/2308: F0 10        BEQ Local_CF231A
+CF/2308: F0 10        BEQ $231A
 CF/230A: E0 20 C0     CPX #$C020
 CF/230D: 40           RTI

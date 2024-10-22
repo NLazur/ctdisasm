@@ -1,8 +1,8 @@
 ; Bank: FE | Start Address: 763C
 Routine_FE763C:
 FE/763C: 21 71        AND ($71,X)
-FE/763E: 10 31        BPL Local_FE7671
-FE/7640: 50 21        BVC Local_FE7663
+FE/763E: 10 31        BPL $7671
+FE/7640: 50 21        BVC $7663
 FE/7642: 0F 60 02 20  ORA $200260
 FE/7646: 0A           ASL
 FE/7647: 42 0B        WDM $0B
@@ -12,8 +12,8 @@ FE/764D: E3 21        SBC $21,S
 FE/764F: 00 E3        BRK $E3
 FE/7651: 21 62        AND ($62,X)
 FE/7653: A5 57        LDA $57
-FE/7655: B0 77        BCS Local_FE76CE
-FE/7657: 10 06        BPL Local_FE765F
+FE/7655: B0 77        BCS $76CE
+FE/7657: 10 06        BPL $765F
 FE/7659: 7F 80 02 6A  ADC $6A0280,X
 FE/765D: 18           CLC
 FE/765E: 94 8C        STY $8C,X
@@ -49,6 +49,6 @@ FE/769A: 29 E7        AND #$E7
 FE/769C: 24 0A        BIT $0A
 FE/769E: 04 0E        TSB $0E
 FE/76A0: E1 F6        SBC ($F6,X)
-FE/76A2: 2C 42 0A     BIT Local_FE0A42
+FE/76A2: 2C 42 0A     BIT $0A42
 FE/76A5: E0 09 5F     CPX #$5F09
 FE/76A8: 60           RTS

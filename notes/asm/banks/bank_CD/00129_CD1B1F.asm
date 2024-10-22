@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: 1B1F
 Routine_CD1B1F:
-CD/1B1F: 20 36 24     JSR Local_CD2436
+CD/1B1F: 20 36 24     JSR $2436
 CD/1B22: DA           PHX
 CD/1B23: BD A0 5D     LDA $5DA0,X
 CD/1B26: 85 23        STA $23
@@ -10,7 +10,7 @@ CD/1B2D: BD A2 5D     LDA $5DA2,X
 CD/1B30: 85 25        STA $25
 CD/1B32: BD A3 5D     LDA $5DA3,X
 CD/1B35: 85 26        STA $26
-CD/1B37: 22 CF E7 CE  JSR Routine_CEE7CF
+CD/1B37: 22 CF E7 CE  JSR $CEE7CF
 CD/1B3B: A5 45        LDA $45
 CD/1B3D: 8D 08 CD     STA $CD08
 CD/1B40: FA           PLX

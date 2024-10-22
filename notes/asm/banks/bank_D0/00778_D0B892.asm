@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: B892
 Routine_D0B892:
 D0/B892: 0F 70 03 3C  ORA $3C0370
-D0/B896: 30 3F        BMI Local_D0B8D7
+D0/B896: 30 3F        BMI $B8D7
 D0/B898: FF FF FF 7F  SBC $7FFFFF,X
 D0/B89C: 7F 7F 3F 3F  ADC $3F3F7F,X
 D0/B8A0: 00 00        BRK $00
@@ -67,7 +67,7 @@ D0/B939: 00 00        BRK $00
 D0/B93B: 00 00        BRK $00
 D0/B93D: 00 00        BRK $00
 D0/B93F: 00 FC        BRK $FC
-D0/B941: F0 C0        BEQ Local_D0B903
+D0/B941: F0 C0        BEQ $B903
 D0/B943: 00 00        BRK $00
 D0/B945: 00 00        BRK $00
 D0/B947: 00 1C        BRK $1C

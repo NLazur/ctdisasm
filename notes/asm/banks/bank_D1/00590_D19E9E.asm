@@ -7,9 +7,9 @@ D1/9EA6: 8E 50 19     STX $1950
 D1/9EA9: 07 FF        ORA [$FF]
 D1/9EAB: 00 08        BRK $08
 D1/9EAD: 04 83        TSB $83
-D1/9EAF: 80 C5        BRA Local_D19E76
+D1/9EAF: 80 C5        BRA $9E76
 D1/9EB1: 01 8F        ORA ($8F,X)
-D1/9EB3: 80 0C        BRA Local_D19EC1
+D1/9EB3: 80 0C        BRA $9EC1
 D1/9EB5: 98           TYA
 D1/9EB6: 00 84        BRK $84
 D1/9EB8: 87 02        STA [$02]

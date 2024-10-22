@@ -4,7 +4,7 @@ C7/88D3: 02 38        COP $38
 C7/88D5: 13 F3        ORA ($F3,S),Y
 C7/88D7: F2 0F        SBC ($0F)
 C7/88D9: F3 D2        SBC ($D2,S),Y
-C7/88DB: D0 FC        BNE Local_C788D9
+C7/88DB: D0 FC        BNE $88D9
 C7/88DD: 38           SEC
 C7/88DE: 0F DF DF BD  ORA $BDDFDF
 C7/88E2: 0C EC C0     TSB $C0EC
@@ -20,7 +20,7 @@ C7/88F9: 31 22        AND ($22),Y
 C7/88FB: 13 22        ORA ($22,S),Y
 C7/88FD: 3F 40 13 03  AND $031340,X
 C7/8901: 28           PLP
-C7/8902: 30 30        BMI Local_C78934
+C7/8902: 30 30        BMI $8934
 C7/8904: 5F 20 50 D2  EOR $D25020,X
 C7/8908: 00 1F        BRK $1F
 C7/890A: 28           PLP

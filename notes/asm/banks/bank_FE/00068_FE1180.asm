@@ -11,14 +11,14 @@ FE/118D: 21 C4        AND ($C4,X)
 FE/118F: 18           CLC
 FE/1190: 04 8E        TSB $8E
 FE/1192: 31 08        AND ($08),Y
-FE/1194: 30 08        BMI Local_FE119E
+FE/1194: 30 08        BMI $119E
 FE/1196: 21 33        AND ($33,X)
 FE/1198: 46 AE        LSR $AE
-FE/119A: 80 31        BRA Local_FE11CD
+FE/119A: 80 31        BRA $11CD
 FE/119C: 69 2D 8E     ADC #$8E2D
 FE/119F: 31 08        AND ($08),Y
 FE/11A1: 21 02        AND ($02,X)
-FE/11A3: 10 00        BPL Local_FE11A5
+FE/11A3: 10 00        BPL $11A5
 FE/11A5: 00 00        BRK $00
 FE/11A7: FF 7B 7D 6F  SBC $6F7D7B,X
 FE/11AB: 1A           INC

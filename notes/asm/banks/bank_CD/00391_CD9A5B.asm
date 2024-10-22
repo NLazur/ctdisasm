@@ -23,7 +23,7 @@ CD/9A82: 09 00 00     ORA #$0000
 CD/9A85: 1A           INC
 CD/9A86: 36 24        ROL $24,X
 CD/9A88: 09 20 06     ORA #$0620
-CD/9A8B: 70 78        BVS Local_CD9B05
+CD/9A8B: 70 78        BVS $9B05
 CD/9A8D: 6A           ROR
 CD/9A8E: 02 00        COP $00
 CD/9A90: 0C 12 03     TSB $0312
@@ -38,7 +38,7 @@ CD/9AA0: 09 00 00     ORA #$0000
 CD/9AA3: 1A           INC
 CD/9AA4: 36 24        ROL $24,X
 CD/9AA6: 09 20 0C     ORA #$0C20
-CD/9AA9: 70 78        BVS Local_CD9B23
+CD/9AA9: 70 78        BVS $9B23
 CD/9AAB: 6A           ROR
 CD/9AAC: 02 00        COP $00
 CD/9AAE: 0C 12 03     TSB $0312
@@ -53,7 +53,7 @@ CD/9ABE: 09 00 00     ORA #$0000
 CD/9AC1: 1A           INC
 CD/9AC2: 36 24        ROL $24,X
 CD/9AC4: 09 20 12     ORA #$1220
-CD/9AC7: 70 78        BVS Local_CD9B41
+CD/9AC7: 70 78        BVS $9B41
 CD/9AC9: 6A           ROR
 CD/9ACA: 02 00        COP $00
 CD/9ACC: 0C 12 03     TSB $0312
@@ -68,7 +68,7 @@ CD/9ADC: 09 00 00     ORA #$0000
 CD/9ADF: 1A           INC
 CD/9AE0: 36 24        ROL $24,X
 CD/9AE2: 09 20 18     ORA #$1820
-CD/9AE5: 70 78        BVS Local_CD9B5F
+CD/9AE5: 70 78        BVS $9B5F
 CD/9AE7: 6A           ROR
 CD/9AE8: 02 00        COP $00
 CD/9AEA: 0C 12 03     TSB $0312
@@ -83,7 +83,7 @@ CD/9AFA: 00 00        BRK $00
 CD/9AFC: 1A           INC
 CD/9AFD: 36 24        ROL $24,X
 CD/9AFF: 09 20 1E     ORA #$1E20
-CD/9B02: 70 78        BVS Local_CD9B7C
+CD/9B02: 70 78        BVS $9B7C
 CD/9B04: 6A           ROR
 CD/9B05: 02 00        COP $00
 CD/9B07: 0C 12 03     TSB $0312
@@ -98,7 +98,7 @@ CD/9B17: 00 00        BRK $00
 CD/9B19: 1A           INC
 CD/9B1A: 36 24        ROL $24,X
 CD/9B1C: 09 20 24     ORA #$2420
-CD/9B1F: 70 78        BVS Local_CD9B99
+CD/9B1F: 70 78        BVS $9B99
 CD/9B21: 6A           ROR
 CD/9B22: 02 00        COP $00
 CD/9B24: 0C 12 03     TSB $0312
@@ -114,7 +114,7 @@ CD/9B35: 00 00        BRK $00
 CD/9B37: 1A           INC
 CD/9B38: 36 24        ROL $24,X
 CD/9B3A: 09 20 2A     ORA #$2A20
-CD/9B3D: 70 78        BVS Local_CD9BB7
+CD/9B3D: 70 78        BVS $9BB7
 CD/9B3F: 6A           ROR
 CD/9B40: 02 00        COP $00
 CD/9B42: 0C 12 03     TSB $0312
@@ -135,13 +135,13 @@ CD/9B5E: AD 9B BA     LDA $BA9B
 CD/9B61: 9B           TXY
 CD/9B62: CF 9B DC 95  CMP $95DC9B
 CD/9B66: 02 06        COP $06
-CD/9B68: 80 45        BRA Local_CD9BAF
+CD/9B68: 80 45        BRA $9BAF
 CD/9B6A: E7 20        SBC [$20]
 CD/9B6C: E7 42        SBC [$42]
 CD/9B6E: 78           SEI
 CD/9B6F: 56 20        LSR $20,X
 CD/9B71: 1E 33 03     ASL $0333,X
-CD/9B74: 30 1E        BMI Local_CD9B94
+CD/9B74: 30 1E        BMI $9B94
 CD/9B76: E0 41        CPX #$41
 CD/9B78: 1E 00 41     ASL $4100,X
 CD/9B7B: 1F 01 0C 12  ORA $120C01,X
@@ -155,13 +155,13 @@ CD/9B89: 2A           ROL
 CD/9B8A: 1B           TCS
 CD/9B8B: 2A           ROL
 CD/9B8C: 36 20        ROL $20,X
-CD/9B8E: 3C 12 19     BIT Local_CD1912,X
+CD/9B8E: 3C 12 19     BIT $1912,X
 CD/9B91: 1B           TCS
 CD/9B92: 19 78 FF     ORA $FF78,Y
-CD/9B95: 80 51        BRA Local_CD9BE8
+CD/9B95: 80 51        BRA $9BE8
 CD/9B97: 36 06        ROL $06,X
 CD/9B99: 03 20        ORA $20,S
-CD/9B9B: 3C 50 2E     BIT Local_CD2E50,X
+CD/9B9B: 3C 50 2E     BIT $2E50,X
 CD/9B9E: 01 00        ORA ($00,X)
 CD/9BA0: 06 09        ASL $09
 CD/9BA2: 24 01        BIT $01
@@ -192,8 +192,8 @@ CD/9BD4: 00 70        BRK $70
 CD/9BD6: 02 00        COP $00
 CD/9BD8: 24 03        BIT $03
 CD/9BDA: 71 00        ADC ($00),Y
-CD/9BDC: 90 F0        BCC Local_CD9BCE
-CD/9BDE: 90 F0        BCC Local_CD9BD0
+CD/9BDC: 90 F0        BCC $9BCE
+CD/9BDE: 90 F0        BCC $9BD0
 CD/9BE0: F8           SED
 CD/9BE1: 9B           TXY
 CD/9BE2: FF 9B 08 9C  SBC $9C089B,X
@@ -219,14 +219,14 @@ CD/9C0D: 03 24        ORA $24,S
 CD/9C0F: 01 43        ORA ($43,X)
 CD/9C11: 00 E6        BRK $E6
 CD/9C13: C0 1A 36     CPY #$361A
-CD/9C16: 70 02        BVS Local_CD9C1A
+CD/9C16: 70 02        BVS $9C1A
 CD/9C18: 00 78        BRK $78
 CD/9C1A: 65 0C        ADC $0C
 CD/9C1C: 85 C0        STA $C0
 CD/9C1E: A8           TAY
 CD/9C1F: FF 71 24 04  SBC $042471,X
 CD/9C23: 33 03        AND ($03,S),Y
-CD/9C25: 30 1F        BMI Local_CD9C46
+CD/9C25: 30 1F        BMI $9C46
 CD/9C27: 08           PHP
 CD/9C28: 1A           INC
 CD/9C29: 36 24        ROL $24,X
@@ -256,7 +256,7 @@ CD/9C56: 0C 71 00     TSB $0071
 CD/9C59: 73 03        ADC ($03,S),Y
 CD/9C5B: 24 03        BIT $03
 CD/9C5D: 1A           INC
-CD/9C5E: 20 08 70     JSR Local_CD7008
+CD/9C5E: 20 08 70     JSR $7008
 CD/9C61: 02 00        COP $00
 CD/9C63: 0C 85 C8     TSB $C885
 CD/9C66: A8           TAY

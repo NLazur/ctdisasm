@@ -1,18 +1,18 @@
 ; Bank: C6 | Start Address: 0696
 Routine_C60696:
-C6/0696: 10 E8        BPL Local_C60680
+C6/0696: 10 E8        BPL $0680
 C6/0698: 00 B8        BRK $B8
 C6/069A: 00 78        BRK $78
 C6/069C: D9 02 16     CMP $1602,Y
 C6/069F: FC DD 25     JSR ($25DD,X)
 C6/06A2: 08           PHP
-C6/06A3: 10 FC        BPL Local_C606A1
+C6/06A3: 10 FC        BPL $06A1
 C6/06A5: 67 22        ADC [$22]
 C6/06A7: FE E7 E1     INC $E1E7,X
 C6/06AA: 00 C0        BRK $C0
 C6/06AC: C1 38        CMP ($38,X)
 C6/06AE: 38           SEC
-C6/06AF: 5C 5C 5E DE  JMP Routine_DE5E5C
+C6/06AF: 5C 5C 5E DE  JMP $DE5E5C
 C6/06B3: 00 0F        BRK $0F
 C6/06B5: 0F 06 26 00  ORA $002606
 C6/06B9: 00 F9        BRK $F9

@@ -3,7 +3,7 @@ Routine_C6C22A:
 C6/C22A: EA           NOP
 C6/C22B: AD FF 03     LDA $03FF
 C6/C22E: 91 92        STA ($92),Y
-C6/C230: 80 24        BRA Local_C6C256
+C6/C230: 80 24        BRA $C256
 C6/C232: 94 95        STY $95,X
 C6/C234: 96 15        STX $15,Y
 C6/C236: 16 CB        ASL $CB,X
@@ -12,7 +12,7 @@ C6/C239: 9B           TXY
 C6/C23A: 1F C1 18 2A  ORA $2A18C1,X
 C6/C23E: 04 51        TSB $51
 C6/C240: 0D 1F 61     ORA $611F
-C6/C243: 80 F9        BRA Local_C6C23E
+C6/C243: 80 F9        BRA $C23E
 C6/C245: AD 41 42     LDA $4241
 C6/C248: E8           INX
 C6/C249: 32 35        AND ($35)
@@ -30,7 +30,7 @@ C6/C261: 6C 45 54     JMP ($5445)
 C6/C264: 63 04        ADC $04,S
 C6/C266: 7D 05 BB     ADC $BB05,X
 C6/C269: 21 7E        AND ($7E,X)
-C6/C26B: 70 26        BVS Local_C6C293
+C6/C26B: 70 26        BVS $C293
 C6/C26D: 5E 31 6E     LSR $6E31,X
 C6/C270: 06 3E        ASL $3E
 C6/C272: 28           PLP
@@ -42,7 +42,7 @@ C6/C27B: 52 55        EOR ($55)
 C6/C27D: AA           TAX
 C6/C27E: 63 04        ADC $04,S
 C6/C280: 45 46        EOR $46
-C6/C282: 80 31        BRA Local_C6C2B5
+C6/C282: 80 31        BRA $C2B5
 C6/C284: 25 46        AND $46
 C6/C286: 7F C4 0C 10  ADC $100CC4,X
 C6/C28A: 16 6E        ASL $6E,X

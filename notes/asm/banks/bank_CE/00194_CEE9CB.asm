@@ -21,5 +21,5 @@ CE/E9FD: 88           DEY
 CE/E9FE: 88           DEY
 CE/E9FF: 88           DEY
 CE/EA00: 88           DEY
-CE/EA01: D0 CA        BNE Local_CEE9CD
+CE/EA01: D0 CA        BNE $E9CD
 CE/EA03: 60           RTS

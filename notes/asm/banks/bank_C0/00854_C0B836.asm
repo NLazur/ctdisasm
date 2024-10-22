@@ -1,37 +1,37 @@
 ; Bank: C0 | Start Address: B836
 Routine_C0B836:
 C0/B836: A5 C5        LDA $C5
-C0/B838: 10 48        BPL Local_C0B882
+C0/B838: 10 48        BPL $B882
 C0/B83A: BD C4 4B     LDA $4BC4,X
 C0/B83D: 18           CLC
 C0/B83E: 65 C5        ADC $C5
-C0/B840: 90 06        BCC Local_C0B848
+C0/B840: 90 06        BCC $B848
 C0/B842: C9 E0        CMP #$E0
-C0/B844: 90 02        BCC Local_C0B848
+C0/B844: 90 02        BCC $B848
 C0/B846: A9 E0        LDA #$E0
 C0/B848: 9D C1 4B     STA $4BC1,X
 C0/B84B: BD CC 4B     LDA $4BCC,X
 C0/B84E: 18           CLC
 C0/B84F: 65 C5        ADC $C5
-C0/B851: 90 06        BCC Local_C0B859
+C0/B851: 90 06        BCC $B859
 C0/B853: C9 E0        CMP #$E0
-C0/B855: 90 02        BCC Local_C0B859
+C0/B855: 90 02        BCC $B859
 C0/B857: A9 E0        LDA #$E0
 C0/B859: 9D C9 4B     STA $4BC9,X
 C0/B85C: BD D4 4B     LDA $4BD4,X
 C0/B85F: 18           CLC
 C0/B860: 65 C5        ADC $C5
-C0/B862: 90 06        BCC Local_C0B86A
+C0/B862: 90 06        BCC $B86A
 C0/B864: C9 E0        CMP #$E0
-C0/B866: 90 02        BCC Local_C0B86A
+C0/B866: 90 02        BCC $B86A
 C0/B868: A9 E0        LDA #$E0
 C0/B86A: 9D D1 4B     STA $4BD1,X
 C0/B86D: BD DC 4B     LDA $4BDC,X
 C0/B870: 18           CLC
 C0/B871: 65 C5        ADC $C5
-C0/B873: 90 06        BCC Local_C0B87B
+C0/B873: 90 06        BCC $B87B
 C0/B875: C9 E0        CMP #$E0
-C0/B877: 90 02        BCC Local_C0B87B
+C0/B877: 90 02        BCC $B87B
 C0/B879: A9 E0        LDA #$E0
 C0/B87B: 9D D9 4B     STA $4BD9,X
 C0/B87E: E2 20        SEP #$20

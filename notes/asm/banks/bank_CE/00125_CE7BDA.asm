@@ -1,7 +1,7 @@
 ; Bank: CE | Start Address: 7BDA
 Routine_CE7BDA:
-CE/7BDA: 20 0A D8     JSR Local_CED80A
-CE/7BDD: 30 01        BMI Local_CE7BE0
+CE/7BDA: 20 0A D8     JSR $D80A
+CE/7BDD: 30 01        BMI $7BE0
 CE/7BDF: FF 22 10 01  SBC $011022,X
 CE/7BE3: 29 24 04     AND #$0424
 CE/7BE6: 1B           TCS
@@ -15,7 +15,7 @@ CE/7BEF: 06 03        ASL $03
 CE/7BF1: DA           PHX
 CE/7BF2: 28           PLP
 CE/7BF3: 35 00        AND $00,X
-CE/7BF5: 30 06        BMI Local_CE7BFD
+CE/7BF5: 30 06        BMI $7BFD
 CE/7BF7: 6C 30 07     JMP ($0730)
 CE/7BFA: 64 30        STZ $30
 CE/7BFC: 08           PHP
@@ -27,15 +27,15 @@ CE/7C06: 35 00        AND $00,X
 CE/7C08: 24 04        BIT $04
 CE/7C0A: 1E 05 00     ASL $0005,X
 CE/7C0D: 19 DC 18     ORA $18DC,Y
-CE/7C10: 20 01 73     JSR Local_CE7301
+CE/7C10: 20 01 73     JSR $7301
 CE/7C13: 01 D9        ORA ($D9,X)
-CE/7C15: 30 72        BMI Local_CE7C89
+CE/7C15: 30 72        BMI $7C89
 CE/7C17: 01 02        ORA ($02,X)
 CE/7C19: 00 24        BRK $24
 CE/7C1B: 03 34        ORA $34,S
 CE/7C1D: 1B           TCS
-CE/7C1E: 20 01 78     JSR Local_CE7801
-CE/7C21: 80 1E        BRA Local_CE7C41
+CE/7C1E: 20 01 78     JSR $7801
+CE/7C21: 80 1E        BRA $7C41
 CE/7C23: 43 7B        EOR $7B,S
 CE/7C25: 6A           ROR
 CE/7C26: 1C 34 10     TRB $1034
@@ -43,15 +43,15 @@ CE/7C29: 98           TYA
 CE/7C2A: 01 18        ORA ($18,X)
 CE/7C2C: 78           SEI
 CE/7C2D: 98           TYA
-CE/7C2E: 20 04 6F     JSR Local_CE6F04
+CE/7C2E: 20 04 6F     JSR $6F04
 CE/7C31: 34 1A        BIT $1A,X
-CE/7C33: 20 3C 36     JSR Local_CE363C
+CE/7C33: 20 3C 36     JSR $363C
 CE/7C36: 00 19        BRK $19
 CE/7C38: DC 24 60     JMP [$6024]
 CE/7C3B: 00 20        BRK $20
 CE/7C3D: 01 73        ORA ($73,X)
 CE/7C3F: 01 D9        ORA ($D9,X)
-CE/7C41: 30 72        BMI Local_CE7CB5
+CE/7C41: 30 72        BMI $7CB5
 CE/7C43: 01 02        ORA ($02,X)
 CE/7C45: 01 24        ORA ($24,X)
 CE/7C47: 03 20        ORA $20,S
@@ -62,20 +62,20 @@ CE/7C50: 00 19        BRK $19
 CE/7C52: DC 24 20     JMP [$2024]
 CE/7C55: 01 73        ORA ($73,X)
 CE/7C57: 01 D9        ORA ($D9,X)
-CE/7C59: 30 72        BMI Local_CE7CCD
+CE/7C59: 30 72        BMI $7CCD
 CE/7C5B: 01 02        ORA ($02,X)
 CE/7C5D: 02 24        COP $24
 CE/7C5F: 03 20        ORA $20,S
 CE/7C61: 05 70        ORA $70
 CE/7C63: 78           SEI
-CE/7C64: 80 1E        BRA Local_CE7C84
+CE/7C64: 80 1E        BRA $7C84
 CE/7C66: 43 98        EOR $98,S
 CE/7C68: 01 18        ORA ($18,X)
 CE/7C6A: 71 00        ADC ($00),Y
 CE/7C6C: 19 DC 24     ORA $24DC,Y
-CE/7C6F: 20 01 73     JSR Local_CE7301
+CE/7C6F: 20 01 73     JSR $7301
 CE/7C72: 01 D9        ORA ($D9,X)
-CE/7C74: 30 72        BMI Local_CE7CE8
+CE/7C74: 30 72        BMI $7CE8
 CE/7C76: 01 02        ORA ($02,X)
 CE/7C78: 03 24        ORA $24,S
 CE/7C7A: 03 20        ORA $20,S
@@ -83,7 +83,7 @@ CE/7C7C: 09 70 1E     ORA #$1E70
 CE/7C7F: 43 98        EOR $98,S
 CE/7C81: 01 18        ORA ($18,X)
 CE/7C83: 71 00        ADC ($00),Y
-CE/7C85: F0 F0        BEQ Local_CE7C77
+CE/7C85: F0 F0        BEQ $7C77
 CE/7C87: E0 00 9F     CPX #$9F00
 CE/7C8A: 7C 01 7D     JMP ($7D01,X)
 CE/7C8D: 73 7D        ADC ($7D,S),Y
@@ -96,7 +96,7 @@ CE/7C9B: 93 09        STA ($09,S),Y
 CE/7C9D: 93 09        STA ($09,S),Y
 CE/7C9F: 3D 03 27     AND $2703,X
 CE/7CA2: D9 30 2D     CMP $2D30,Y
-CE/7CA5: 80 02        BRA Local_CE7CA9
+CE/7CA5: 80 02        BRA $7CA9
 CE/7CA7: 68           PLA
 CE/7CA8: 72 0D        ADC ($0D)
 CE/7CAA: 7A           PLY
@@ -114,7 +114,7 @@ CE/7CBF: 02 2A        COP $2A
 CE/7CC1: 29 1B 2D     AND #$2D1B
 CE/7CC4: 35 23        AND $23,X
 CE/7CC6: 04 2D        TSB $2D
-CE/7CC8: 80 12        BRA Local_CE7CDC
+CE/7CC8: 80 12        BRA $7CDC
 CE/7CCA: A1 34        LDA ($34,X)
 CE/7CCC: 1B           TCS
 CE/7CCD: 79 F3 20     ADC $20F3,Y

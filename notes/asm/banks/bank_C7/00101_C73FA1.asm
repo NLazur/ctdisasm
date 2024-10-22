@@ -21,13 +21,13 @@ C7/3FC9: D3 E4        CMP ($E4,S),Y
 C7/3FCB: D2 64        CMP ($64)
 C7/3FCD: A5 B0        LDA $B0
 C7/3FCF: 0E BB 02     ASL $02BB
-C7/3FD2: D0 02        BNE Local_C73FD6
+C7/3FD2: D0 02        BNE $3FD6
 C7/3FD4: BB           TYX
 C7/3FD5: 03 BB        ORA $BB,S
 C7/3FD7: 02 D0        COP $D0
 C7/3FD9: 14 BB        TRB $BB
 C7/3FDB: 03 2F        ORA $2F,S
-C7/3FDD: 10 3F        BPL Local_C7401E
+C7/3FDD: 10 3F        BPL $401E
 C7/3FDF: 53 07        EOR ($07,S),Y
 C7/3FE1: FD 3F 53     SBC $533F,X
 C7/3FE4: 07 DD        ORA [$DD]
@@ -40,7 +40,7 @@ C7/3FEF: F7 93        SBC [$93],Y
 C7/3FF1: C4 A5        CPY $A5
 C7/3FF3: E4 D2        CPX $D2
 C7/3FF5: 64 A5        STZ $A5
-C7/3FF7: B0 08        BCS Local_C74001
+C7/3FF7: B0 08        BCS $4001
 C7/3FF9: 3A           DEC
 C7/3FFA: 93 3A        STA ($3A,S),Y
 C7/3FFC: 93 3A        STA ($3A,S),Y
@@ -55,10 +55,10 @@ C7/400F: AE AE 62     LDX $62AE
 C7/4012: 88           DEY
 C7/4013: E4 91        CPX $91
 C7/4015: C8           INY
-C7/4016: 10 B0        BPL Local_C73FC8
+C7/4016: 10 B0        BPL $3FC8
 C7/4018: 0A           ASL
 C7/4019: 4E 53 00     LSR $0053
-C7/401C: D0 0B        BNE Local_C74029
+C7/401C: D0 0B        BNE $4029
 C7/401E: 8F FF 80 2F  STA $2F80FF
 C7/4022: 06 4E        ASL $4E
 C7/4024: 86 00        STX $00
@@ -78,7 +78,7 @@ C7/4041: 0C 74 0D     TSB $0D74
 C7/4044: 41 0E        EOR ($0E,X)
 C7/4046: 1A           INC
 C7/4047: 0F 00 10 F3  ORA $F31000
-C7/404B: 10 0F        BPL Local_C7405C
+C7/404B: 10 0F        BPL $405C
 C7/404D: 1F 30 42 55  ORA $554230,X
 C7/4051: 6A           ROR
 C7/4052: 7F 96 AE C8  ADC $C8AE96,X

@@ -1,11 +1,11 @@
 ; Bank: CC | Start Address: 3A34
 Routine_CC3A34:
-CC/3A34: 3C 7E 3C     BIT Local_CC3C7E,X
+CC/3A34: 3C 7E 3C     BIT $3C7E,X
 CC/3A37: 93 3C        STA ($3C,S),Y
 CC/3A39: A9 3C        LDA #$3C
 CC/3A3B: BF 3C C9 3C  LDA $3CC93C,X
 CC/3A3F: DA           PHX
-CC/3A40: 3C EC 3C     BIT Local_CC3CEC,X
+CC/3A40: 3C EC 3C     BIT $3CEC,X
 CC/3A43: F7 3C        SBC [$3C],Y
 CC/3A45: 0B           PHD
 CC/3A46: 3D 20 3D     AND $3D20,X
@@ -20,7 +20,7 @@ CC/3A5B: E6 3D        INC $3D
 CC/3A5D: F9 3D 08     SBC $083D,Y
 CC/3A60: 3E 18 3E     ROL $3E18,X
 CC/3A63: 23 3E        AND $3E,S
-CC/3A65: 30 3E        BMI Local_CC3AA5
+CC/3A65: 30 3E        BMI $3AA5
 CC/3A67: 48           PHA
 CC/3A68: 3E 5C 3E     ROL $3E5C,X
 CC/3A6B: 76 3E        ROR $3E,X

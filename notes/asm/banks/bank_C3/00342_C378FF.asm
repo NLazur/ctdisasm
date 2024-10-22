@@ -14,7 +14,7 @@ C3/7913: 0A           ASL
 C3/7914: 4B           PHK
 C3/7915: 5B           TCD
 C3/7916: 4F 4F 47 53  EOR $53474F
-C3/791A: 10 54        BPL Local_C37970
+C3/791A: 10 54        BPL $7970
 C3/791C: 46 74        LSR $74
 C3/791E: 4D 5B E5     EOR $E55B
 C3/7921: 06 48        ASL $48

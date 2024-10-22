@@ -10,11 +10,11 @@ C3/E327: 03 00        ORA $00,S
 C3/E329: 03 00        ORA $00,S
 C3/E32B: 03 00        ORA $00,S
 C3/E32D: 04 F0        TSB $F0
-C3/E32F: F0 80        BEQ Local_C3E2B1
+C3/E32F: F0 80        BEQ $E2B1
 C3/E331: 01 F0        ORA ($F0,X)
 C3/E333: 00 84        BRK $84
 C3/E335: 01 FF        ORA ($FF,X)
-C3/E337: F0 80        BEQ Local_C3E2B9
+C3/E337: F0 80        BEQ $E2B9
 C3/E339: 41 FF        EOR ($FF,X)
 C3/E33B: 00 84        BRK $84
 C3/E33D: 41 06        EOR ($06,X)

@@ -8,15 +8,15 @@ C3/C915: 00 10        BRK $10
 C3/C917: 48           PHA
 C3/C918: 00 10        BRK $10
 C3/C91A: 49 00        EOR #$00
-C3/C91C: 10 47        BPL Local_C3C965
+C3/C91C: 10 47        BPL $C965
 C3/C91E: 00 00        BRK $00
 C3/C920: 13 E3        ORA ($E3,S),Y
 C3/C922: 00 44        BRK $44
-C3/C924: 10 E4        BPL Local_C3C90A
+C3/C924: 10 E4        BPL $C90A
 C3/C926: 00 00        BRK $00
 C3/C928: 13 E7        ORA ($E7,S),Y
 C3/C92A: 00 27        BRK $27
-C3/C92C: 10 E8        BPL Local_C3C916
+C3/C92C: 10 E8        BPL $C916
 C3/C92E: 00 13        BRK $13
 C3/C930: 42 E5        WDM $E5
 C3/C932: 0E 00 E6     ASL $E600

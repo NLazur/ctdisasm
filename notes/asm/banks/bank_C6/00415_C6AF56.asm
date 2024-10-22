@@ -39,7 +39,7 @@ C6/AF9F: 26 27        ROL $27
 C6/AFA1: CB           WAI
 C6/AFA2: 69 00 20     ADC #$2000
 C6/AFA5: 21 70        AND ($70,X)
-C6/AFA7: 80 71        BRA Local_C6B01A
+C6/AFA7: 80 71        BRA $B01A
 C6/AFA9: 72 73        ADC ($73)
 C6/AFAB: 74 75        STZ $75,X
 C6/AFAD: 76 25        ROR $25,X

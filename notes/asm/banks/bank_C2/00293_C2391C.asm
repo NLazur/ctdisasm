@@ -9,5 +9,5 @@ C2/392B: 9D 7B 1B     STA $1B7B,X
 C2/392E: E8           INX
 C2/392F: E8           INX
 C2/3930: 88           DEY
-C2/3931: D0 EF        BNE Local_C23922
+C2/3931: D0 EF        BNE $3922
 C2/3933: 60           RTS

@@ -9,7 +9,7 @@ FD/3A23: 13 BB        ORA ($BB,S),Y
 FD/3A25: 84 5A        STY $5A
 FD/3A27: 07 5F        ORA [$5F]
 FD/3A29: 85 00        STA $00
-FD/3A2B: F0 0F        BEQ Local_FD3A3C
+FD/3A2B: F0 0F        BEQ $3A3C
 FD/3A2D: 00 47        BRK $47
 FD/3A2F: F6 01        INC $01,X
 FD/3A31: DC 00 00     JMP [$0000]

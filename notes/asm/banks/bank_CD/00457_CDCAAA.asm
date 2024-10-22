@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: CAAA
 Routine_CDCAAA:
-CD/CAAA: 70 09        BVS Local_CDCAB5
+CD/CAAA: 70 09        BVS $CAB5
 CD/CAAC: A8           TAY
 CD/CAAD: 0A           ASL
 CD/CAAE: 0A           ASL
@@ -9,7 +9,7 @@ CD/CAB0: 0A           ASL
 CD/CAB1: 0B           PHD
 CD/CAB2: A8           TAY
 CD/CAB3: 0A           ASL
-CD/CAB4: 20 0A 03     JSR Local_CD030A
+CD/CAB4: 20 0A 03     JSR $030A
 CD/CAB7: 01 00        ORA ($00,X)
 CD/CAB9: 1B           TCS
 CD/CABA: 09 72 0D     ORA #$0D72
@@ -19,7 +19,7 @@ CD/CAC1: 0D 76 00     ORA $0076
 CD/CAC4: 03 77        ORA $77,S
 CD/CAC6: C0 A8 02     CPY #$02A8
 CD/CAC9: 77 60        ADC [$60],Y
-CD/CACB: 70 09        BVS Local_CDCAD6
+CD/CACB: 70 09        BVS $CAD6
 CD/CACD: A8           TAY
 CD/CACE: 0A           ASL
 CD/CACF: 0A           ASL
@@ -28,7 +28,7 @@ CD/CAD1: 0A           ASL
 CD/CAD2: 0B           PHD
 CD/CAD3: A8           TAY
 CD/CAD4: 0A           ASL
-CD/CAD5: 20 0A 03     JSR Local_CD030A
+CD/CAD5: 20 0A 03     JSR $030A
 CD/CAD8: 01 00        ORA ($00,X)
 CD/CADA: 98           TYA
 CD/CADB: FF 80 00 F6  SBC $F60080,X
@@ -46,9 +46,9 @@ CD/CAEE: 0D CC 38     ORA $38CC
 CD/CAF1: CC 63 CC     CPY $CC63
 CD/CAF4: 7A           PLY
 CD/CAF5: C5 30        CMP $30
-CD/CAF7: 20 78 30     JSR Local_CD3078
+CD/CAF7: 20 78 30     JSR $3078
 CD/CAFA: 21 A8        AND ($A8,X)
-CD/CAFC: 30 09        BMI Local_CDCB07
+CD/CAFC: 30 09        BMI $CB07
 CD/CAFE: 02 30        COP $30
 CD/CB00: 0A           ASL
 CD/CB01: 2E 30 0B     ROL $0B30
@@ -62,7 +62,7 @@ CD/CB12: 36 20        ROL $20,X
 CD/CB14: 05 78        ORA $78
 CD/CB16: 7F 34 1B 24  ADC $241B34,X
 CD/CB1A: 09 34 1A     ORA #$1A34
-CD/CB1D: 22 1B 00 06  JSR Routine_06001B
+CD/CB1D: 22 1B 00 06  JSR $06001B
 CD/CB21: 03 20        ORA $20,S
 CD/CB23: 0F 50 2E 01  ORA $012E50
 CD/CB27: 00 24        BRK $24

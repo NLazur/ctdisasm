@@ -34,12 +34,12 @@ C6/6162: 07 1B        ORA [$1B]
 C6/6164: 00 16        BRK $16
 C6/6166: 1B           TCS
 C6/6167: 17 1B        ORA [$1B],Y
-C6/6169: 20 1B 21     JSR Local_C6211B
+C6/6169: 20 1B 21     JSR $211B
 C6/616C: 1B           TCS
 C6/616D: 00 30        BRK $30
 C6/616F: 1B           TCS
 C6/6170: 31 1B        AND ($1B),Y
-C6/6172: 22 1B 23 1B  JSR Routine_1B231B
+C6/6172: 22 1B 23 1B  JSR $1B231B
 C6/6176: 00 32        BRK $32
 C6/6178: 1B           TCS
 C6/6179: 33 1B        AND ($1B,S),Y
@@ -86,7 +86,7 @@ C6/61BE: 00 3A        BRK $3A
 C6/61C0: 1B           TCS
 C6/61C1: 3B           TSC
 C6/61C2: 1B           TCS
-C6/61C3: 2C 1B 2D     BIT Local_C62D1B
+C6/61C3: 2C 1B 2D     BIT $2D1B
 C6/61C6: 1B           TCS
 C6/61C7: 00 3C        BRK $3C
 C6/61C9: 1B           TCS

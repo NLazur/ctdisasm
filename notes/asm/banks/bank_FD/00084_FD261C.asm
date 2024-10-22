@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 261C
 Routine_FD261C:
-FD/261C: 80 60        BRA Local_FD267E
+FD/261C: 80 60        BRA $267E
 FD/261E: E0 F0        CPX #$F0
 FD/2620: 02 F0        COP $F0
 FD/2622: A2 00        LDX #$00
@@ -18,6 +18,6 @@ FD/263C: 03 04        ORA $04,S
 FD/263E: 01 01        ORA ($01,X)
 FD/2640: BF 10 F8 40  LDA $40F810,X
 FD/2644: FC E0 FE     JSR ($FEE0,X)
-FD/2647: 20 F0 FF     JSR Local_FDFFF0
+FD/2647: 20 F0 FF     JSR $FFF0
 FD/264A: FC FF FE     JSR ($FEFF,X)
 FD/264D: 60           RTS

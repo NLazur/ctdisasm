@@ -16,6 +16,6 @@ C6/A7E8: 5D 4F 02     EOR $024F,X
 C6/A7EB: 12 33        ORA ($33)
 C6/A7ED: 07 80        ORA [$80]
 C6/A7EF: 04 81        TSB $81
-C6/A7F1: 70 15        BVS Local_C6A808
+C6/A7F1: 70 15        BVS $A808
 C6/A7F3: 21 6B        AND ($6B,X)
 C6/A7F5: 6B           RTL

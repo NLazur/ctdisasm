@@ -7,10 +7,10 @@ C6/541C: 08           PHP
 C6/541D: 0F BA 04 30  ORA $3004BA
 C6/5421: 14 08        TRB $08
 C6/5423: 08           PHP
-C6/5424: 80 2A        BRA Local_C65450
+C6/5424: 80 2A        BRA $5450
 C6/5426: C2 08        REP #$08
 C6/5428: C3 08        CMP $08,S
-C6/542A: 50 A6        BVC Local_C653D2
+C6/542A: 50 A6        BVC $53D2
 C6/542C: 08           PHP
 C6/542D: D3 08        CMP ($08,S),Y
 C6/542F: E0 36        CPX #$36
@@ -21,14 +21,14 @@ C6/5438: 42 0A        WDM $0A
 C6/543A: 43 0A        EOR $0A,S
 C6/543C: 53 0A        EOR ($0A,S),Y
 C6/543E: 02 54        COP $54
-C6/5440: B0 0B        BCS Local_C6544D
+C6/5440: B0 0B        BCS $544D
 C6/5442: 09 55 0A     ORA #$0A55
 C6/5445: 15 09        ORA $09,X
 C6/5447: A9 12 08     LDA #$0812
 C6/544A: 18           CLC
 C6/544B: 08           PHP
 C6/544C: 11 09        ORA ($09),Y
-C6/544E: 90 2F        BCC Local_C6547F
+C6/544E: 90 2F        BCC $547F
 C6/5450: 04 09        TSB $09
 C6/5452: B9 40 08     LDA $0840,Y
 C6/5455: 14 09        TRB $09
@@ -43,8 +43,8 @@ C6/5469: 7F 10 8E 10  ADC $108E10,X
 C6/546D: 8F 10 F0 2C  STA $2CF010
 C6/5471: 57 D0        EOR [$D0],Y
 C6/5473: 48           PHA
-C6/5474: 80 1C        BRA Local_C65492
-C6/5476: D0 18        BNE Local_C65490
+C6/5474: 80 1C        BRA $5492
+C6/5476: D0 18        BNE $5490
 C6/5478: E4 98        CPX $98
 C6/547A: 04 F4        TSB $F4
 C6/547C: 98           TYA
@@ -71,7 +71,7 @@ C6/54A6: 0D A7 0D     ORA $0DA7
 C6/54A9: 98           TYA
 C6/54AA: 0D 99 0D     ORA $0D99
 C6/54AD: A8           TAY
-C6/54AE: 10 0D        BPL Local_C654BD
+C6/54AE: 10 0D        BPL $54BD
 C6/54B0: A9 0D 30     LDA #$300D
 C6/54B3: 88           DEY
 C6/54B4: 07 40        ORA [$40]
@@ -80,8 +80,8 @@ C6/54B9: 0A           ASL
 C6/54BA: 07 90        ORA [$90]
 C6/54BC: 1F D0 29 D8  ORA $D829D0,X
 C6/54C0: 29 D0 28     AND #$28D0
-C6/54C3: 70 2D        BVS Local_C654F2
-C6/54C5: D0 18        BNE Local_C654DF
+C6/54C3: 70 2D        BVS $54F2
+C6/54C5: D0 18        BNE $54DF
 C6/54C7: B8           CLV
 C6/54C8: 48           PHA
 C6/54C9: 54 05 09     MVN $05,$09
@@ -89,7 +89,7 @@ C6/54CC: B8           CLV
 C6/54CD: 08           PHP
 C6/54CE: 04 E8        TSB $E8
 C6/54D0: 00 14        BRK $14
-C6/54D2: D0 00        BNE Local_C654D4
+C6/54D2: D0 00        BNE $54D4
 C6/54D4: A6 05        LDX $05
 C6/54D6: 18           CLC
 C6/54D7: 05 B6        ORA $B6
@@ -102,17 +102,17 @@ C6/54E4: B2 0D        LDA ($0D)
 C6/54E6: B3 0D        LDA ($0D,S),Y
 C6/54E8: C2 08        REP #$08
 C6/54EA: 0D C3 0D     ORA $0DC3
-C6/54ED: 20 2E B6     JSR Local_C6B62E
+C6/54ED: 20 2E B6     JSR $B62E
 C6/54F0: 0D B7 0D     ORA $0DB7
 C6/54F3: 00 C6        BRK $C6
 C6/54F5: 0D C7 0D     ORA $0DC7
 C6/54F8: B8           CLV
 C6/54F9: 0D B9 0D     ORA $0DB9
-C6/54FC: 80 C8        BRA Local_C654C6
+C6/54FC: 80 C8        BRA $54C6
 C6/54FE: 0D C9 0D     ORA $0DC9
-C6/5501: 50 0D        BVC Local_C65510
+C6/5501: 50 0D        BVC $5510
 C6/5503: 51 78        EOR ($78),Y
-C6/5505: 10 3F        BPL Local_C65546
-C6/5507: 30 29        BMI Local_C65532
-C6/5509: D0 29        BNE Local_C65534
+C6/5505: 10 3F        BPL $5546
+C6/5507: 30 29        BMI $5532
+C6/5509: D0 29        BNE $5534
 C6/550B: 60           RTS

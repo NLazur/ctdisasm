@@ -7,7 +7,7 @@ C3/C44D: 55 03        EOR $03,X
 C3/C44F: 00 60        BRK $60
 C3/C451: 08           PHP
 C3/C452: 09 52        ORA #$52
-C3/C454: 2C 80 36     BIT Local_C33680
+C3/C454: 2C 80 36     BIT $3680
 C3/C457: 04 2E        TSB $2E
 C3/C459: 14 0D        TRB $0D
 C3/C45B: 04 24        TSB $24

@@ -1,8 +1,8 @@
 ; Bank: C3 | Start Address: 6084
 Routine_C36084:
 C3/6084: 0B           PHD
-C3/6085: 10 80        BPL Local_C36007
-C3/6087: 90 35        BCC Local_C360BE
+C3/6085: 10 80        BPL $6007
+C3/6087: 90 35        BCC $60BE
 C3/6089: 00 41        BRK $41
 C3/608B: 92 F5        STA ($F5)
 C3/608D: 07 44        ORA [$44]
@@ -11,8 +11,8 @@ C3/6091: B1 93        LDA ($93),Y
 C3/6093: F1 8D        SBC ($8D),Y
 C3/6095: 03 00        ORA $00,S
 C3/6097: FB           XCE
-C3/6098: 10 80        BPL Local_C3601A
-C3/609A: 2C FB 00     BIT Local_C300FB
+C3/6098: 10 80        BPL $601A
+C3/609A: 2C FB 00     BIT $00FB
 C3/609D: 2E F0 AF     ROL $AFF0
 C3/60A0: 8B           PHB
 C3/60A1: A3 11        LDA $11,S
@@ -24,14 +24,14 @@ C3/60AD: 7B           TDC
 C3/60AE: 92 37        STA ($37)
 C3/60B0: 31 83        AND ($83),Y
 C3/60B2: 92 D4        STA ($D4)
-C3/60B4: 50 F0        BVC Local_C360A6
+C3/60B4: 50 F0        BVC $60A6
 C3/60B6: 14 06        TRB $06
 C3/60B8: 8C C4 01     STY $01C4
 C3/60BB: D1 00        CMP ($00),Y
 C3/60BD: 03 08        ORA $08,S
 C3/60BF: 00 04        BRK $04
 C3/60C1: 08           PHP
-C3/60C2: 80 00        BRA Local_C360C4
+C3/60C2: 80 00        BRA $60C4
 C3/60C4: 01 B4        ORA ($B4,X)
 C3/60C6: FF 02 C8 FF  SBC $FFC802,X
 C3/60CA: 35 01        AND $01,X
@@ -43,7 +43,7 @@ C3/60D2: EF 00 AB 92  SBC $92AB00
 C3/60D6: 00 91        BRK $91
 C3/60D8: B3 00        LDA ($00,S),Y
 C3/60DA: B6 92        LDX $92,Y
-C3/60DC: F0 D0        BEQ Local_C360AE
+C3/60DC: F0 D0        BEQ $60AE
 C3/60DE: 8C 00 F3     STY $F300
 C3/60E1: 2E 93 F9     ROL $F993
 C3/60E4: 7A           PLY
@@ -63,7 +63,7 @@ C3/60FD: 39 04 00     AND $0004,Y
 C3/6100: 47 08        EOR [$08]
 C3/6102: 00 73        BRK $73
 C3/6104: 9F 00 F5 09  STA $09F500,X
-C3/6108: F0 F3        BEQ Local_C360FD
+C3/6108: F0 F3        BEQ $60FD
 C3/610A: 8D FA 0C     STA $0CFA
 C3/610D: 9A           TXS
 C3/610E: 00 FA        BRK $FA
@@ -76,7 +76,7 @@ C3/611A: 88           DEY
 C3/611B: 8E 91 3B     STX $3B91
 C3/611E: 00 F6        BRK $F6
 C3/6120: 00 92        BRK $92
-C3/6122: F0 8A        BEQ Local_C360AE
+C3/6122: F0 8A        BEQ $60AE
 C3/6124: 9F 91 0B 03  STA $030B91,X
 C3/6128: FE 40 92     INC $9240,X
 C3/612B: F1 96        SBC ($96),Y
@@ -117,7 +117,7 @@ C3/616B: E0 00        CPX #$00
 C3/616D: FF 02 20 00  SBC $002002,X
 C3/6171: FD 47 93     SBC $9347,X
 C3/6174: 01 00        ORA ($00,X)
-C3/6176: 20 00 02     JSR Local_C30200
+C3/6176: 20 00 02     JSR $0200
 C3/6179: 18           CLC
 C3/617A: 00 91        BRK $91
 C3/617C: FF 01 40 50  SBC $504001,X
@@ -127,30 +127,30 @@ C3/6184: 12 C3        ORA ($C3)
 C3/6186: 31 5F        AND ($5F),Y
 C3/6188: 34 00        BIT $00,X
 C3/618A: 55 0E        EOR $0E,X
-C3/618C: 70 FC        BVS Local_C3618A
+C3/618C: 70 FC        BVS $618A
 C3/618E: 18           CLC
 C3/618F: 00 D8        BRK $D8
 C3/6191: 11 1F        ORA ($1F),Y
 C3/6193: 00 06        BRK $06
 C3/6195: 63 23        ADC $23,S
-C3/6197: 10 0B        BPL Local_C361A4
-C3/6199: 30 78        BMI Local_C36213
+C3/6197: 10 0B        BPL $61A4
+C3/6199: 30 78        BMI $6213
 C3/619B: 93 FD        STA ($FD,S),Y
 C3/619D: 83 93        STA $93,S
 C3/619F: 05 2E        ORA $2E
 C3/61A1: 00 16        BRK $16
-C3/61A3: 5C 42 86 93  JMP Routine_938642
+C3/61A3: 5C 42 86 93  JMP $938642
 C3/61A7: FD 93 93     SBC $9393,X
 C3/61AA: 00 12        BRK $12
 C3/61AC: FF FF 92 1F  SBC $1F92FF,X
 C3/61B0: 00 99        BRK $99
 C3/61B2: 93 80        STA ($80,S),Y
-C3/61B4: 90 07        BCC Local_C361BD
+C3/61B4: 90 07        BCC $61BD
 C3/61B6: 00 96        BRK $96
 C3/61B8: 93 FD        STA ($FD,S),Y
 C3/61BA: A3 10        LDA $10,S
-C3/61BC: 10 00        BPL Local_C361BE
-C3/61BE: 90 8F        BCC Local_C3614F
+C3/61BC: 10 00        BPL $61BE
+C3/61BE: 90 8F        BCC $614F
 C3/61C0: 00 A6        BRK $A6
 C3/61C2: 93 FD        STA ($FD,S),Y
 C3/61C4: AE 93 C8     LDX $C893
@@ -186,7 +186,7 @@ C3/6205: 62 00 94     PER $C3F608
 C3/6208: 02 00        COP $00
 C3/620A: 00 FC        BRK $FC
 C3/620C: 75 02        ADC $02,X
-C3/620E: 10 01        BPL Local_C36211
+C3/620E: 10 01        BPL $6211
 C3/6210: 06 06        ASL $06
 C3/6212: 94 3C        STY $3C,X
 C3/6214: 01 42        ORA ($42,X)
@@ -197,16 +197,16 @@ C3/621E: F2 00        SBC ($00)
 C3/6220: 0B           PHD
 C3/6221: FE FF F6     INC $F6FF,X
 C3/6224: 81 02        STA ($02,X)
-C3/6226: 80 2B        BRA Local_C36253
+C3/6226: 80 2B        BRA $6253
 C3/6228: 03 00        ORA $00,S
 C3/622A: 33 FB        AND ($FB,S),Y
 C3/622C: 15 2C        ORA $2C,X
-C3/622E: F0 00        BEQ Local_C36230
+C3/622E: F0 00        BEQ $6230
 C3/6230: A9 9F        LDA #$9F
 C3/6232: 91 FF        STA ($FF),Y
 C3/6234: 00 2A        BRK $2A
 C3/6236: 94 FA        STY $FA,X
-C3/6238: 90 97        BCC Local_C361D1
+C3/6238: 90 97        BCC $61D1
 C3/623A: 98           TYA
 C3/623B: F6 F0        INC $F0,X
 C3/623D: 7D 00 F6     ADC $F600,X
@@ -221,7 +221,7 @@ C3/6250: 94 F0        STY $F0,X
 C3/6252: CC 87 F8     CPY $F887
 C3/6255: 76 31        ROR $31,X
 C3/6257: 87 43        STA [$43]
-C3/6259: 22 48 87 A3  JSR Routine_A38748
+C3/6259: 22 48 87 A3  JSR $A38748
 C3/625D: F8           SED
 C3/625E: C0 89        CPY #$89
 C3/6260: F6 52        INC $52,X

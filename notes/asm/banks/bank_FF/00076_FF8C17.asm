@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: 8C17
 Routine_FF8C17:
-FF/8C17: 10 00        BPL Local_FF8C19
-FF/8C19: 80 8C        BRA Local_FF8BA7
+FF/8C17: 10 00        BPL $8C19
+FF/8C19: 80 8C        BRA $8BA7
 FF/8C1B: 0E CE E0     ASL $E0CE
 FF/8C1E: E0 40 EC     CPX #$EC40
 FF/8C21: CE EE 44     DEC $44EE

@@ -58,6 +58,6 @@ C2/0CDF: 18           CLC
 C2/0CE0: 69 80 00     ADC #$0080
 C2/0CE3: A8           TAY
 C2/0CE4: C6 08        DEC $08
-C2/0CE6: D0 90        BNE Local_C20C78
+C2/0CE6: D0 90        BNE $0C78
 C2/0CE8: AB           PLB
 C2/0CE9: 60           RTS

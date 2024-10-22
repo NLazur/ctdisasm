@@ -24,7 +24,7 @@ FF/2011: 2A           ROL
 FF/2012: 92 21        STA ($21)
 FF/2014: 4E 19 0E     LSR $0E19
 FF/2017: 21 AB        AND ($AB,X)
-FF/2019: 10 EC        BPL Local_FF2007
+FF/2019: 10 EC        BPL $2007
 FF/201B: 49 7D 3D     EOR #$3D7D
 FF/201E: 46 00        LSR $00
 FF/2020: 31 46        AND ($46),Y
@@ -1984,7 +1984,7 @@ FF/2F65: CC EE CC     CPY $CCEE
 FF/2F68: FE FC FE     INC $FEFC,X
 FF/2F6B: CC EE CC     CPY $CCEE
 FF/2F6E: EE CC CC     INC $CCCC
-FF/2F71: 22 00 00 00  JSR Routine_000000
+FF/2F71: 22 00 00 00  JSR $000000
 FF/2F75: 00 00        BRK $00
 FF/2F77: 00 FC        BRK $FC
 FF/2F79: F8           SED
@@ -2023,7 +2023,7 @@ FF/2FC1: F8           SED
 FF/2FC2: F8           SED
 FF/2FC3: C4 E0        CPY $E0
 FF/2FC5: C0 F8 F0     CPY #$F0F8
-FF/2FC8: F0 C8        BEQ Local_FF2F92
+FF/2FC8: F0 C8        BEQ $2F92
 FF/2FCA: E0 C0 E0     CPX #$E0C0
 FF/2FCD: C0 FC F8     CPY #$F8FC
 FF/2FD0: F8           SED
@@ -2035,7 +2035,7 @@ FF/2FD9: F8           SED
 FF/2FDA: F8           SED
 FF/2FDB: C4 E0        CPY $E0
 FF/2FDD: C0 F8 F0     CPY #$F0F8
-FF/2FE0: F0 C8        BEQ Local_FF2FAA
+FF/2FE0: F0 C8        BEQ $2FAA
 FF/2FE2: E0 C0 E0     CPX #$E0C0
 FF/2FE5: C0 E0 C0     CPY #$C0E0
 FF/2FE8: C0 20 00     CPY #$0020
@@ -2062,15 +2062,15 @@ FF/3018: CC 22 00     CPY $0022
 FF/301B: 00 00        BRK $00
 FF/301D: 00 00        BRK $00
 FF/301F: 00 F8        BRK $F8
-FF/3021: F0 F0        BEQ Local_FF3013
+FF/3021: F0 F0        BEQ $3013
 FF/3023: 68           PLA
-FF/3024: 70 60        BVS Local_FF3086
-FF/3026: 70 60        BVS Local_FF3088
-FF/3028: 70 60        BVS Local_FF308A
-FF/302A: 70 60        BVS Local_FF308C
-FF/302C: 70 60        BVS Local_FF308E
+FF/3024: 70 60        BVS $3086
+FF/3026: 70 60        BVS $3088
+FF/3028: 70 60        BVS $308A
+FF/302A: 70 60        BVS $308C
+FF/302C: 70 60        BVS $308E
 FF/302E: F8           SED
-FF/302F: F0 F0        BEQ Local_FF3021
+FF/302F: F0 F0        BEQ $3021
 FF/3031: 08           PHP
 FF/3032: 00 00        BRK $00
 FF/3034: 00 00        BRK $00
@@ -2169,7 +2169,7 @@ FF/3108: CC 22 00     CPY $0022
 FF/310B: 00 00        BRK $00
 FF/310D: 00 00        BRK $00
 FF/310F: 00 78        BRK $78
-FF/3111: 70 FC        BVS Local_FF310F
+FF/3111: 70 FC        BVS $310F
 FF/3113: C8           INY
 FF/3114: E8           INX
 FF/3115: D4 F0        PEI $F0
@@ -2185,12 +2185,12 @@ FF/3124: 00 00        BRK $00
 FF/3126: 00 00        BRK $00
 FF/3128: FE FC FC     INC $FCFC,X
 FF/312B: 32 38        AND ($38)
-FF/312D: 30 38        BMI Local_FF3167
-FF/312F: 30 38        BMI Local_FF3169
-FF/3131: 30 38        BMI Local_FF316B
-FF/3133: 30 38        BMI Local_FF316D
-FF/3135: 30 38        BMI Local_FF316F
-FF/3137: 30 30        BMI Local_FF3169
+FF/312D: 30 38        BMI $3167
+FF/312F: 30 38        BMI $3169
+FF/3131: 30 38        BMI $316B
+FF/3133: 30 38        BMI $316D
+FF/3135: 30 38        BMI $316F
+FF/3137: 30 30        BMI $3169
 FF/3139: 08           PHP
 FF/313A: 00 00        BRK $00
 FF/313C: 00 00        BRK $00
@@ -2239,15 +2239,15 @@ FF/31A4: EE CC EE     INC $EECC
 FF/31A7: CC FC 7A     CPY $7AFC
 FF/31AA: 78           SEI
 FF/31AB: 34 38        BIT $38,X
-FF/31AD: 30 38        BMI Local_FF31E7
-FF/31AF: 30 30        BMI Local_FF31E1
+FF/31AD: 30 38        BMI $31E7
+FF/31AF: 30 30        BMI $31E1
 FF/31B1: 08           PHP
 FF/31B2: 00 00        BRK $00
 FF/31B4: 00 00        BRK $00
 FF/31B6: 00 00        BRK $00
 FF/31B8: FE FC FE     INC $FEFC,X
 FF/31BB: 0C 1E 1C     TSB $1C1E
-FF/31BE: 3C 3A 78     BIT Local_FF783A,X
+FF/31BE: 3C 3A 78     BIT $783A,X
 FF/31C1: 74 F0        STZ $F0,X
 FF/31C3: E8           INX
 FF/31C4: E0 D0 FE     CPX #$FED0
@@ -2277,7 +2277,7 @@ FF/31FD: 00 00        BRK $00
 FF/31FF: 00 00        BRK $00
 FF/3201: 00 00        BRK $00
 FF/3203: 00 78        BRK $78
-FF/3205: 70 FC        BVS Local_FF3203
+FF/3205: 70 FC        BVS $3203
 FF/3207: C8           INY
 FF/3208: E8           INX
 FF/3209: C4 E0        CPY $E0
@@ -2312,10 +2312,10 @@ FF/3247: 00 3C        BRK $3C
 FF/3249: 38           SEC
 FF/324A: 78           SEI
 FF/324B: 64 F8        STZ $F8
-FF/324D: F0 F0        BEQ Local_FF323F
+FF/324D: F0 F0        BEQ $323F
 FF/324F: 68           PLA
-FF/3250: 70 60        BVS Local_FF32B2
-FF/3252: 70 60        BVS Local_FF32B4
-FF/3254: 70 60        BVS Local_FF32B6
-FF/3256: 70 60        BVS Local_FF32B8
+FF/3250: 70 60        BVS $32B2
+FF/3252: 70 60        BVS $32B4
+FF/3254: 70 60        BVS $32B6
+FF/3256: 70 60        BVS $32B8
 FF/3258: 60           RTS

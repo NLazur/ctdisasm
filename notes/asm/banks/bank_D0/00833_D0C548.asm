@@ -23,8 +23,8 @@ D0/C56E: 07 00        ORA [$00]
 D0/C570: 0F 08 0F 08  ORA $080F08
 D0/C574: 0F 08 27 28  ORA $282708
 D0/C578: C0 40        CPY #$40
-D0/C57A: 80 40        BRA Local_D0C5BC
-D0/C57C: 80 40        BRA Local_D0C5BE
+D0/C57A: 80 40        BRA $C5BC
+D0/C57C: 80 40        BRA $C5BE
 D0/C57E: C0 00        CPY #$00
 D0/C580: E0 20        CPX #$20
 D0/C582: E0 20        CPX #$20
@@ -39,12 +39,12 @@ D0/C590: 03 00        ORA $00,S
 D0/C592: 03 00        ORA $00,S
 D0/C594: 07 04        ORA [$04]
 D0/C596: 07 04        ORA [$04]
-D0/C598: 80 80        BRA Local_D0C51A
-D0/C59A: 80 80        BRA Local_D0C51C
+D0/C598: 80 80        BRA $C51A
+D0/C59A: 80 80        BRA $C51C
 D0/C59C: 00 80        BRK $80
 D0/C59E: 00 80        BRK $80
-D0/C5A0: 80 00        BRA Local_D0C5A2
-D0/C5A2: 80 00        BRA Local_D0C5A4
+D0/C5A0: 80 00        BRA $C5A2
+D0/C5A2: 80 00        BRA $C5A4
 D0/C5A4: C0 40        CPY #$40
 D0/C5A6: C0 40        CPY #$40
 D0/C5A8: 00 FF        BRK $FF
@@ -65,10 +65,10 @@ D0/C5C4: 00 01        BRK $01
 D0/C5C6: 01 01        ORA ($01,X)
 D0/C5C8: 00 80        BRK $80
 D0/C5CA: 00 80        BRK $80
-D0/C5CC: 80 00        BRA Local_D0C5CE
-D0/C5CE: 80 00        BRA Local_D0C5D0
+D0/C5CC: 80 00        BRA $C5CE
+D0/C5CE: 80 00        BRA $C5D0
 D0/C5D0: 00 80        BRK $80
-D0/C5D2: 80 80        BRA Local_D0C554
+D0/C5D2: 80 80        BRA $C554
 D0/C5D4: 00 00        BRK $00
 D0/C5D6: 00 00        BRK $00
 D0/C5D8: 17 18        ORA [$18],Y
@@ -78,11 +78,11 @@ D0/C5DE: 0F 08 03 04  ORA $040308
 D0/C5E2: 07 04        ORA [$04]
 D0/C5E4: 01 02        ORA ($02,X)
 D0/C5E6: 00 01        BRK $01
-D0/C5E8: D0 30        BNE Local_D0C61A
-D0/C5EA: D0 30        BNE Local_D0C61C
+D0/C5E8: D0 30        BNE $C61A
+D0/C5EA: D0 30        BNE $C61C
 D0/C5EC: C0 20        CPY #$20
 D0/C5EE: E0 20        CPX #$20
-D0/C5F0: 80 40        BRA Local_D0C632
+D0/C5F0: 80 40        BRA $C632
 D0/C5F2: C0 40        CPY #$40
 D0/C5F4: 00 80        BRK $80
 D0/C5F6: 00 00        BRK $00
@@ -94,13 +94,13 @@ D0/C600: 07 04        ORA [$04]
 D0/C602: 01 02        ORA ($02,X)
 D0/C604: 03 02        ORA $02,S
 D0/C606: 00 01        BRK $01
-D0/C608: D0 50        BNE Local_D0C65A
+D0/C608: D0 50        BNE $C65A
 D0/C60A: A0 60        LDY #$60
 D0/C60C: A0 60        LDY #$60
-D0/C60E: 80 40        BRA Local_D0C650
+D0/C60E: 80 40        BRA $C650
 D0/C610: C0 40        CPY #$40
 D0/C612: 00 80        BRK $80
-D0/C614: 80 80        BRA Local_D0C596
+D0/C614: 80 80        BRA $C596
 D0/C616: 00 00        BRK $00
 D0/C618: 00 00        BRK $00
 D0/C61A: 01 01        ORA ($01,X)

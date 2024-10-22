@@ -98,7 +98,7 @@ FE/0102: 09 01 18     ORA #$1801
 FE/0105: 3A           DEC
 FE/0106: F8           SED
 FE/0107: E5 80        SBC $80
-FE/0109: 30 0F        BMI Local_FE011A
+FE/0109: 30 0F        BMI $011A
 FE/010B: 3F 28 05 07  AND $070528,X
 FE/010F: 01 20        ORA ($20,X)
 FE/0111: 46 00        LSR $00

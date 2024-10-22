@@ -6,7 +6,7 @@ D1/F5F7: C2 20        REP #$20
 D1/F5F9: E2 10        SEP #$10
 D1/F5FB: A5 7C        LDA $7C
 D1/F5FD: 29 01 00     AND #$0001
-D1/F600: F0 3A        BEQ Local_D1F63C
+D1/F600: F0 3A        BEQ $F63C
 D1/F602: BD 61 C1     LDA $C161,X
 D1/F605: 9D E3 C4     STA $C4E3,X
 D1/F608: BD D1 C1     LDA $C1D1,X
@@ -28,8 +28,8 @@ D1/F633: E8           INX
 D1/F634: E8           INX
 D1/F635: E8           INX
 D1/F636: E0 70        CPX #$70
-D1/F638: D0 C8        BNE Local_D1F602
-D1/F63A: 80 38        BRA Local_D1F674
+D1/F638: D0 C8        BNE $F602
+D1/F63A: 80 38        BRA $F674
 D1/F63C: BD E1 C4     LDA $C4E1,X
 D1/F63F: 9D 63 C1     STA $C163,X
 D1/F642: BD 51 C5     LDA $C551,X
@@ -51,7 +51,7 @@ D1/F66D: E8           INX
 D1/F66E: E8           INX
 D1/F66F: E8           INX
 D1/F670: E0 70        CPX #$70
-D1/F672: D0 C8        BNE Local_D1F63C
+D1/F672: D0 C8        BNE $F63C
 D1/F674: 7B           TDC
 D1/F675: E2 20        SEP #$20
 D1/F677: C2 10        REP #$10

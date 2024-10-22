@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 1660
 Routine_C61660:
-C6/1660: B0 70        BCS Local_C616D2
+C6/1660: B0 70        BCS $16D2
 C6/1662: F8           SED
 C6/1663: 38           SEC
 C6/1664: B8           CLV
@@ -8,8 +8,8 @@ C6/1665: 78           SEI
 C6/1666: 53 00        EOR ($00,S),Y
 C6/1668: 25 54        AND $54
 C6/166A: 29 66 50     AND #$5066
-C6/166D: 3C 23 1A     BIT Local_C61A23,X
-C6/1670: 10 1D        BPL Local_C6168F
+C6/166D: 3C 23 1A     BIT $1A23,X
+C6/1670: 10 1D        BPL $168F
 C6/1672: 0F 0F 0B 48  ORA $480B0F
 C6/1676: 00 71        BRK $71
 C6/1678: 6E 7D 00     ROR $007D
@@ -17,7 +17,7 @@ C6/167B: 66 56        ROR $56
 C6/167D: 6F 3F 3F 1F  ADC $1F3F3F
 C6/1681: 18           CLC
 C6/1682: 0E 01 10     ASL $1001
-C6/1685: 20 4A B7     JSR Local_C6B74A
+C6/1685: 20 4A B7     JSR $B74A
 C6/1688: EE 15 47     INC $4715
 C6/168B: 84 7B        STY $7B
 C6/168D: 00 AF        BRK $AF

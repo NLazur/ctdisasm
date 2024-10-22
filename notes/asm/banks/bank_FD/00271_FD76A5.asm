@@ -5,7 +5,7 @@ FD/76A8: 01 E1        ORA ($E1,X)
 FD/76AA: 01 10        ORA ($10,X)
 FD/76AC: 9A           TXS
 FD/76AD: 33 FD        AND ($FD,S),Y
-FD/76AF: 20 02 F9     JSR Local_FDF902
+FD/76AF: 20 02 F9     JSR $F902
 FD/76B2: 06 E1        ASL $E1
 FD/76B4: 1E 02 10     ASL $1002,X
 FD/76B7: E7 F8        SBC [$F8]

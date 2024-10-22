@@ -16,7 +16,7 @@ C0/A803: A0 FF        LDY #$FF
 C0/A805: 86 80        STX $80
 C0/A807: 84 80        STY $80
 C0/A809: 3A           DEC
-C0/A80A: D0 F9        BNE Local_C0A805
+C0/A80A: D0 F9        BNE $A805
 C0/A80C: C2 10        REP #$10
 C0/A80E: 2B           PLD
 C0/A80F: 60           RTS

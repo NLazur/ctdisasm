@@ -34,5 +34,5 @@ FD/EA9E: E2 20        SEP #$20
 FD/EAA0: E8           INX
 FD/EAA1: E8           INX
 FD/EAA2: 88           DEY
-FD/EAA3: D0 BB        BNE Local_FDEA60
+FD/EAA3: D0 BB        BNE $EA60
 FD/EAA5: 60           RTS

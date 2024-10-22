@@ -5,24 +5,24 @@ CC/4CEE: 52 03        EOR ($03)
 CC/4CF0: 2E 00 FF     ROL $FF00
 CC/4CF3: 00 00        BRK $00
 CC/4CF5: 00 0A        BRK $0A
-CC/4CF7: 10 96        BPL Local_CC4C8F
-CC/4CF9: 2C 13 32     BIT Local_CC3213
+CC/4CF7: 10 96        BPL $4C8F
+CC/4CF9: 2C 13 32     BIT $3213
 CC/4CFC: 16 7F        ASL $7F,X
 CC/4CFE: 04 04        TSB $04
 CC/4D00: 04 04        TSB $04
-CC/4D02: 80 00        BRA Local_CC4D04
+CC/4D02: 80 00        BRA $4D04
 CC/4D04: 14 E2        TRB $E2
 CC/4D06: 04 2D        TSB $2D
 CC/4D08: 00 FF        BRK $FF
 CC/4D0A: 00 00        BRK $00
 CC/4D0C: 00 0A        BRK $0A
-CC/4D0E: 10 0F        BPL Local_CC4D1F
+CC/4D0E: 10 0F        BPL $4D1F
 CC/4D10: 2B           PLD
-CC/4D11: 50 64        BVC Local_CC4D77
+CC/4D11: 50 64        BVC $4D77
 CC/4D13: 32 7F        AND ($7F)
 CC/4D15: 00 00        BRK $00
 CC/4D17: 00 00        BRK $00
-CC/4D19: 80 00        BRA Local_CC4D1B
+CC/4D19: 80 00        BRA $4D1B
 CC/4D1B: 00 01        BRK $01
 CC/4D1D: 00 00        BRK $00
 CC/4D1F: 00 FF        BRK $FF
@@ -61,7 +61,7 @@ CC/4D64: 00 00        BRK $00
 CC/4D66: 00 00        BRK $00
 CC/4D68: 00 0A        BRK $0A
 CC/4D6A: 07 0A        ORA [$0A]
-CC/4D6C: 10 09        BPL Local_CC4D77
+CC/4D6C: 10 09        BPL $4D77
 CC/4D6E: 32 14        AND ($14)
 CC/4D70: FF 04 04 04  SBC $040404,X
 CC/4D74: 04 00        TSB $00
@@ -139,7 +139,7 @@ CC/4DFA: 7F 04 04 04  ADC $040404,X
 CC/4DFE: 04 00        TSB $00
 CC/4E00: 00 00        BRK $00
 CC/4E02: 64 00        STZ $00
-CC/4E04: 10 00        BPL Local_CC4E06
+CC/4E04: 10 00        BPL $4E06
 CC/4E06: 00 00        BRK $00
 CC/4E08: 00 00        BRK $00
 CC/4E0A: 0A           ASL
@@ -150,7 +150,7 @@ CC/4E11: 7F 04 04 04  ADC $040404,X
 CC/4E15: 04 00        TSB $00
 CC/4E17: 00 00        BRK $00
 CC/4E19: 64 00        STZ $00
-CC/4E1B: 10 00        BPL Local_CC4E1D
+CC/4E1B: 10 00        BPL $4E1D
 CC/4E1D: 00 00        BRK $00
 CC/4E1F: 00 00        BRK $00
 CC/4E21: 0A           ASL
@@ -182,7 +182,7 @@ CC/4E53: 0D 1E 0C     ORA $0C1E
 CC/4E56: 7F 04 04 04  ADC $040404,X
 CC/4E5A: 04 00        TSB $00
 CC/4E5C: 00 0E        BRK $0E
-CC/4E5E: 2C 01 1E     BIT Local_CC1E01
+CC/4E5E: 2C 01 1E     BIT $1E01
 CC/4E61: 00 FF        BRK $FF
 CC/4E63: 00 00        BRK $00
 CC/4E65: 00 0A        BRK $0A
@@ -199,10 +199,10 @@ CC/4E7A: 00 00        BRK $00
 CC/4E7C: 00 0A        BRK $0A
 CC/4E7E: 08           PHP
 CC/4E7F: 0A           ASL
-CC/4E80: 2C 13 32     BIT Local_CC3213
+CC/4E80: 2C 13 32     BIT $3213
 CC/4E83: 01 7F        ORA ($7F,X)
-CC/4E85: 10 10        BPL Local_CC4E97
-CC/4E87: 10 10        BPL Local_CC4E99
+CC/4E85: 10 10        BPL $4E97
+CC/4E87: 10 10        BPL $4E99
 CC/4E89: 02 00        COP $00
 CC/4E8B: 07 64        ORA [$64]
 CC/4E8D: 00 07        BRK $07
@@ -213,7 +213,7 @@ CC/4E95: 0F 07 0C 07  ORA $070C07
 CC/4E99: 32 0A        AND ($0A)
 CC/4E9B: 7F 03 04 04  ADC $040403,X
 CC/4E9F: 08           PHP
-CC/4EA0: 80 40        BRA Local_CC4EE2
+CC/4EA0: 80 40        BRA $4EE2
 CC/4EA2: 00 78        BRK $78
 CC/4EA4: 00 09        BRK $09
 CC/4EA6: 00 06        BRK $06
@@ -225,7 +225,7 @@ CC/4EAF: 08           PHP
 CC/4EB0: 32 0C        AND ($0C)
 CC/4EB2: 7F 03 04 04  ADC $040403,X
 CC/4EB6: 08           PHP
-CC/4EB7: 80 40        BRA Local_CC4EF9
+CC/4EB7: 80 40        BRA $4EF9
 CC/4EB9: 00 00        BRK $00
 CC/4EBB: 04 23        TSB $23
 CC/4EBD: 00 7F        BRK $7F

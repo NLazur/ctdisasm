@@ -10,7 +10,7 @@ C1/4A79: A5 81        LDA $81
 C1/4A7B: 29 F0        AND #$F0
 C1/4A7D: 85 92        STA $92
 C1/4A7F: A5 80        LDA $80
-C1/4A81: 20 1A 01     JSR Local_C1011A
+C1/4A81: 20 1A 01     JSR $011A
 C1/4A84: 05 92        ORA $92
 C1/4A86: AA           TAX
 C1/4A87: A9 20        LDA #$20
@@ -23,11 +23,11 @@ C1/4A97: A5 83        LDA $83
 C1/4A99: 29 F0        AND #$F0
 C1/4A9B: 85 92        STA $92
 C1/4A9D: A5 82        LDA $82
-C1/4A9F: 20 1A 01     JSR Local_C1011A
+C1/4A9F: 20 1A 01     JSR $011A
 C1/4AA2: 05 92        ORA $92
 C1/4AA4: AA           TAX
 C1/4AA5: EC 13 A5     CPX $A513
-C1/4AA8: D0 04        BNE Local_C14AAE
+C1/4AA8: D0 04        BNE $4AAE
 C1/4AAA: 38           SEC
 C1/4AAB: E9 10        SBC #$10
 C1/4AAD: AA           TAX
@@ -40,18 +40,18 @@ C1/4ABA: 64 84        STZ $84
 C1/4ABC: 64 80        STZ $80
 C1/4ABE: A4 80        LDY $80
 C1/4AC0: B9 FD 7D     LDA $7DFD,Y
-C1/4AC3: D0 03        BNE Local_C14AC8
-C1/4AC5: 4C 4D 4B     JMP Local_C14B4D
+C1/4AC3: D0 03        BNE $4AC8
+C1/4AC5: 4C 4D 4B     JMP $4B4D
 C1/4AC8: 85 82        STA $82
 C1/4ACA: 18           CLC
 C1/4ACB: 69 F0        ADC #$F0
 C1/4ACD: AA           TAX
 C1/4ACE: BD FD 7C     LDA $7CFD,X
-C1/4AD1: F0 08        BEQ Local_C14ADB
+C1/4AD1: F0 08        BEQ $4ADB
 C1/4AD3: C9 FF        CMP #$FF
-C1/4AD5: D0 11        BNE Local_C14AE8
+C1/4AD5: D0 11        BNE $4AE8
 C1/4AD7: E6 92        INC $92
-C1/4AD9: 80 0D        BRA Local_C14AE8
+C1/4AD9: 80 0D        BRA $4AE8
 C1/4ADB: A5 94        LDA $94
 C1/4ADD: 9D FD 7C     STA $7CFD,X
 C1/4AE0: 8A           TXA
@@ -63,11 +63,11 @@ C1/4AE9: A5 82        LDA $82
 C1/4AEB: 69 10        ADC #$10
 C1/4AED: AA           TAX
 C1/4AEE: BD FD 7C     LDA $7CFD,X
-C1/4AF1: F0 08        BEQ Local_C14AFB
+C1/4AF1: F0 08        BEQ $4AFB
 C1/4AF3: C9 FF        CMP #$FF
-C1/4AF5: D0 11        BNE Local_C14B08
+C1/4AF5: D0 11        BNE $4B08
 C1/4AF7: E6 92        INC $92
-C1/4AF9: 80 0D        BRA Local_C14B08
+C1/4AF9: 80 0D        BRA $4B08
 C1/4AFB: A5 94        LDA $94
 C1/4AFD: 9D FD 7C     STA $7CFD,X
 C1/4B00: 8A           TXA
@@ -79,11 +79,11 @@ C1/4B09: A5 82        LDA $82
 C1/4B0B: 69 FF        ADC #$FF
 C1/4B0D: AA           TAX
 C1/4B0E: BD FD 7C     LDA $7CFD,X
-C1/4B11: F0 08        BEQ Local_C14B1B
+C1/4B11: F0 08        BEQ $4B1B
 C1/4B13: C9 FF        CMP #$FF
-C1/4B15: D0 11        BNE Local_C14B28
+C1/4B15: D0 11        BNE $4B28
 C1/4B17: E6 92        INC $92
-C1/4B19: 80 0D        BRA Local_C14B28
+C1/4B19: 80 0D        BRA $4B28
 C1/4B1B: A5 94        LDA $94
 C1/4B1D: 9D FD 7C     STA $7CFD,X
 C1/4B20: 8A           TXA
@@ -95,11 +95,11 @@ C1/4B29: A5 82        LDA $82
 C1/4B2B: 69 01        ADC #$01
 C1/4B2D: AA           TAX
 C1/4B2E: BD FD 7C     LDA $7CFD,X
-C1/4B31: F0 08        BEQ Local_C14B3B
+C1/4B31: F0 08        BEQ $4B3B
 C1/4B33: C9 FF        CMP #$FF
-C1/4B35: D0 11        BNE Local_C14B48
+C1/4B35: D0 11        BNE $4B48
 C1/4B37: E6 92        INC $92
-C1/4B39: 80 0D        BRA Local_C14B48
+C1/4B39: 80 0D        BRA $4B48
 C1/4B3B: A5 94        LDA $94
 C1/4B3D: 9D FD 7C     STA $7CFD,X
 C1/4B40: 8A           TXA
@@ -107,27 +107,27 @@ C1/4B41: A6 84        LDX $84
 C1/4B43: 9D FD 7E     STA $7EFD,X
 C1/4B46: E6 84        INC $84
 C1/4B48: E6 80        INC $80
-C1/4B4A: 4C BE 4A     JMP Local_C14ABE
+C1/4B4A: 4C BE 4A     JMP $4ABE
 C1/4B4D: A5 92        LDA $92
-C1/4B4F: D0 26        BNE Local_C14B77
+C1/4B4F: D0 26        BNE $4B77
 C1/4B51: A6 84        LDX $84
 C1/4B53: 9E FD 7E     STZ $7EFD,X
 C1/4B56: 7B           TDC
 C1/4B57: AA           TAX
 C1/4B58: BD FD 7E     LDA $7EFD,X
-C1/4B5B: F0 06        BEQ Local_C14B63
+C1/4B5B: F0 06        BEQ $4B63
 C1/4B5D: 9D FD 7D     STA $7DFD,X
 C1/4B60: E8           INX
-C1/4B61: 80 F5        BRA Local_C14B58
+C1/4B61: 80 F5        BRA $4B58
 C1/4B63: 9E FD 7D     STZ $7DFD,X
 C1/4B66: E6 94        INC $94
 C1/4B68: A5 94        LDA $94
 C1/4B6A: C9 1F        CMP #$1F
-C1/4B6C: F0 03        BEQ Local_C14B71
-C1/4B6E: 4C BA 4A     JMP Local_C14ABA
+C1/4B6C: F0 03        BEQ $4B71
+C1/4B6E: 4C BA 4A     JMP $4ABA
 C1/4B71: A9 80        LDA #$80
 C1/4B73: 85 92        STA $92
-C1/4B75: 80 44        BRA Local_C14BBB
+C1/4B75: 80 44        BRA $4BBB
 C1/4B77: A6 8E        LDX $8E
 C1/4B79: 9E FD 7C     STZ $7CFD,X
 C1/4B7C: C6 94        DEC $94
@@ -138,21 +138,21 @@ C1/4B83: 69 F0        ADC #$F0
 C1/4B85: A8           TAY
 C1/4B86: B9 FD 7C     LDA $7CFD,Y
 C1/4B89: C5 94        CMP $94
-C1/4B8B: F0 23        BEQ Local_C14BB0
+C1/4B8B: F0 23        BEQ $4BB0
 C1/4B8D: 18           CLC
 C1/4B8E: A5 90        LDA $90
 C1/4B90: 69 10        ADC #$10
 C1/4B92: A8           TAY
 C1/4B93: B9 FD 7C     LDA $7CFD,Y
 C1/4B96: C5 94        CMP $94
-C1/4B98: F0 16        BEQ Local_C14BB0
+C1/4B98: F0 16        BEQ $4BB0
 C1/4B9A: 18           CLC
 C1/4B9B: A5 90        LDA $90
 C1/4B9D: 69 FF        ADC #$FF
 C1/4B9F: A8           TAY
 C1/4BA0: B9 FD 7C     LDA $7CFD,Y
 C1/4BA3: C5 94        CMP $94
-C1/4BA5: F0 09        BEQ Local_C14BB0
+C1/4BA5: F0 09        BEQ $4BB0
 C1/4BA7: 18           CLC
 C1/4BA8: A5 90        LDA $90
 C1/4BAA: 69 01        ADC #$01
@@ -162,6 +162,6 @@ C1/4BB0: 09 E0        ORA #$E0
 C1/4BB2: 99 FD 7C     STA $7CFD,Y
 C1/4BB5: 84 90        STY $90
 C1/4BB7: C6 94        DEC $94
-C1/4BB9: 10 C5        BPL Local_C14B80
+C1/4BB9: 10 C5        BPL $4B80
 C1/4BBB: C2 10        REP #$10
 C1/4BBD: 60           RTS

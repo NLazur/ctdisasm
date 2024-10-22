@@ -3,7 +3,7 @@ Routine_C05F74:
 C0/5F74: A6 6D        LDX $6D
 C0/5F76: BD 00 1C     LDA $1C00,X
 C0/5F79: C9 07        CMP #$07
-C0/5F7B: F0 36        BEQ Local_C05FB3
+C0/5F7B: F0 36        BEQ $5FB3
 C0/5F7D: 8D 02 42     STA $4202
 C0/5F80: A9 80        LDA #$80
 C0/5F82: 8D 03 42     STA $4203
@@ -25,7 +25,7 @@ C0/5FA0: FE 00 1C     INC $1C00,X
 C0/5FA3: C2 20        REP #$20
 C0/5FA5: AA           TAX
 C0/5FA6: BF 80 05 7F  LDA $7F0580,X
-C0/5FAA: F0 EB        BEQ Local_C05F97
+C0/5FAA: F0 EB        BEQ $5F97
 C0/5FAC: A6 6D        LDX $6D
 C0/5FAE: AA           TAX
 C0/5FAF: E2 20        SEP #$20

@@ -5,7 +5,7 @@ FD/974C: E8           INX
 FD/974D: 5A           PHY
 FD/974E: 04 00        TSB $00
 FD/9750: 08           PHP
-FD/9751: 20 B4 00     JSR Local_FD00B4
+FD/9751: 20 B4 00     JSR $00B4
 FD/9754: 00 82        BRK $82
 FD/9756: 05 8B        ORA $8B
 FD/9758: 07 06        ORA [$06]

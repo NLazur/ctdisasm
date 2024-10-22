@@ -1,10 +1,10 @@
 ; Bank: D0 | Start Address: 2A12
 Routine_D02A12:
 D0/2A12: A0 E0        LDY #$E0
-D0/2A14: B0 F0        BCS Local_D02A06
-D0/2A16: D0 30        BNE Local_D02A48
-D0/2A18: 20 20 30     JSR Local_D03020
-D0/2A1B: 30 18        BMI Local_D02A35
+D0/2A14: B0 F0        BCS $2A06
+D0/2A16: D0 30        BNE $2A48
+D0/2A18: 20 20 30     JSR $3020
+D0/2A1B: 30 18        BMI $2A35
 D0/2A1D: 18           CLC
 D0/2A1E: 14 1C        TRB $1C
 D0/2A20: 13 1F        ORA ($1F,S),Y

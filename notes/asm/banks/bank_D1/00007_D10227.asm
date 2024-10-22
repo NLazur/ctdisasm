@@ -2,7 +2,7 @@
 Routine_D10227:
 D1/0227: 64 00        STZ $00
 D1/0229: 00 11        BRK $11
-D1/022B: 80 C0        BRA Local_D101ED
+D1/022B: 80 C0        BRA $01ED
 D1/022D: 00 FF        BRK $FF
 D1/022F: FF 11 80 02  SBC $028011,X
 D1/0233: C2 06        REP #$06

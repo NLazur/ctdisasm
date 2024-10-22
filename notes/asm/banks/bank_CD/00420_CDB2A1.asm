@@ -1,45 +1,45 @@
 ; Bank: CD | Start Address: B2A1
 Routine_CDB2A1:
-CD/B2A1: 80 71        BRA Local_CDB314
+CD/B2A1: 80 71        BRA $B314
 CD/B2A3: 36 00        ROL $00,X
 CD/B2A5: 73 03        ADC ($03,S),Y
 CD/B2A7: 1A           INC
 CD/B2A8: 24 01        BIT $01
-CD/B2AA: 70 02        BVS Local_CDB2AE
+CD/B2AA: 70 02        BVS $B2AE
 CD/B2AC: 02 0D        COP $0D
 CD/B2AE: 85 B8        STA $B8
 CD/B2B0: A8           TAY
 CD/B2B1: FF 71 36 24  SBC $243671,X
 CD/B2B5: 0A           ASL
-CD/B2B6: 20 0A 19     JSR Local_CD190A
-CD/B2B9: 20 08 0C     JSR Local_CD0C08
-CD/B2BC: 70 10        BVS Local_CDB2CE
-CD/B2BE: 20 40 71     JSR Local_CD7140
+CD/B2B6: 20 0A 19     JSR $190A
+CD/B2B9: 20 08 0C     JSR $0C08
+CD/B2BC: 70 10        BVS $B2CE
+CD/B2BE: 20 40 71     JSR $7140
 CD/B2C1: 36 00        ROL $00,X
 CD/B2C3: 73 03        ADC ($03,S),Y
 CD/B2C5: 1A           INC
 CD/B2C6: 24 01        BIT $01
-CD/B2C8: 70 02        BVS Local_CDB2CC
+CD/B2C8: 70 02        BVS $B2CC
 CD/B2CA: 01 0D        ORA ($0D,X)
 CD/B2CC: 85 C8        STA $C8
 CD/B2CE: A8           TAY
 CD/B2CF: FF 71 36 24  SBC $243671,X
 CD/B2D3: 0A           ASL
-CD/B2D4: 20 0F 19     JSR Local_CD190F
+CD/B2D4: 20 0F 19     JSR $190F
 CD/B2D7: A0 08        LDY #$08
-CD/B2D9: 70 10        BVS Local_CDB2EB
+CD/B2D9: 70 10        BVS $B2EB
 CD/B2DB: A0 B8        LDY #$B8
 CD/B2DD: 71 36        ADC ($36),Y
 CD/B2DF: 00 73        BRK $73
 CD/B2E1: 03 1A        ORA $1A,S
 CD/B2E3: 24 01        BIT $01
-CD/B2E5: 70 02        BVS Local_CDB2E9
+CD/B2E5: 70 02        BVS $B2E9
 CD/B2E7: 01 0D        ORA ($0D,X)
 CD/B2E9: 85 B4        STA $B4
 CD/B2EB: A8           TAY
 CD/B2EC: FF 71 36 24  SBC $243671,X
 CD/B2F0: 0A           ASL
-CD/B2F1: 20 0F 19     JSR Local_CD190F
+CD/B2F1: 20 0F 19     JSR $190F
 CD/B2F4: C0 08        CPY #$08
 CD/B2F6: 0C 70 10     TSB $1070
 CD/B2F9: C0 50        CPY #$50
@@ -47,35 +47,35 @@ CD/B2FB: 71 36        ADC ($36),Y
 CD/B2FD: 00 73        BRK $73
 CD/B2FF: 03 1A        ORA $1A,S
 CD/B301: 24 01        BIT $01
-CD/B303: 70 02        BVS Local_CDB307
+CD/B303: 70 02        BVS $B307
 CD/B305: 01 0D        ORA ($0D,X)
 CD/B307: 85 CC        STA $CC
 CD/B309: A8           TAY
 CD/B30A: FF 71 36 24  SBC $243671,X
 CD/B30E: 0A           ASL
-CD/B30F: 20 14 19     JSR Local_CD1914
-CD/B312: 70 08        BVS Local_CDB31C
+CD/B30F: 20 14 19     JSR $1914
+CD/B312: 70 08        BVS $B31C
 CD/B314: 0C 02 02     TSB $0202
-CD/B317: 70 10        BVS Local_CDB329
-CD/B319: 70 70        BVS Local_CDB38B
+CD/B317: 70 10        BVS $B329
+CD/B319: 70 70        BVS $B38B
 CD/B31B: 71 36        ADC ($36),Y
 CD/B31D: 00 73        BRK $73
 CD/B31F: 03 1A        ORA $1A,S
 CD/B321: 24 01        BIT $01
-CD/B323: 70 02        BVS Local_CDB327
+CD/B323: 70 02        BVS $B327
 CD/B325: 00 0D        BRK $0D
 CD/B327: 85 B0        STA $B0
 CD/B329: A8           TAY
 CD/B32A: FF 71 36 24  SBC $243671,X
 CD/B32E: 0A           ASL
-CD/B32F: 20 14 19     JSR Local_CD1914
-CD/B332: 20 08 02     JSR Local_CD0208
+CD/B32F: 20 14 19     JSR $1914
+CD/B332: 20 08 02     JSR $0208
 CD/B335: 00 70        BRK $70
-CD/B337: 10 20        BPL Local_CDB359
+CD/B337: 10 20        BPL $B359
 CD/B339: C0 71        CPY #$71
 CD/B33B: 36 00        ROL $00,X
-CD/B33D: 90 FF        BCC Local_CDB33E
-CD/B33F: 80 00        BRA Local_CDB341
+CD/B33D: 90 FF        BCC $B33E
+CD/B33F: 80 00        BRA $B341
 CD/B341: 57 B3        EOR [$B3],Y
 CD/B343: 77 B3        ADC [$B3],Y
 CD/B345: 93 B3        STA ($B3,S),Y

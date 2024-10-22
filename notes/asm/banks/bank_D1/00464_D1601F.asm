@@ -6,8 +6,8 @@ D1/6023: 73 F7        ADC ($F7,S),Y
 D1/6025: 33 53        AND ($53,S),Y
 D1/6027: 2B           PLD
 D1/6028: 00 00        BRK $00
-D1/602A: 80 2F        BRA Local_D1605B
-D1/602C: 20 1E 40     JSR Local_D1401E
+D1/602A: 80 2F        BRA $605B
+D1/602C: 20 1E 40     JSR $401E
 D1/602F: 15 00        ORA $00,X
 D1/6031: 00 32        BRK $32
 D1/6033: 3A           DEC

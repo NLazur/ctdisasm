@@ -31,7 +31,7 @@ C2/1E20: B7 10        LDA [$10],Y
 C2/1E22: 8D 80 21     STA $2180
 C2/1E25: C8           INY
 C2/1E26: CA           DEX
-C2/1E27: D0 F1        BNE Local_C21E1A
+C2/1E27: D0 F1        BNE $1E1A
 C2/1E29: A9 02        LDA #$02
 C2/1E2B: 04 4C        TSB $4C
 C2/1E2D: 18           CLC

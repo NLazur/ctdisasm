@@ -3,7 +3,7 @@ Routine_D16B03:
 D1/6B03: 19 03 FF     ORA $FF03,Y
 D1/6B06: 00 08        BRK $08
 D1/6B08: 01 83        ORA ($83,X)
-D1/6B0A: 20 88 00     JSR Local_D10088
+D1/6B0A: 20 88 00     JSR $0088
 D1/6B0D: 9C E0 01     STZ $01E0
 D1/6B10: A8           TAY
 D1/6B11: 00 00        BRK $00
@@ -43,7 +43,7 @@ D1/6B54: 41 19        EOR ($19,X)
 D1/6B56: 03 FF        ORA $FF,S
 D1/6B58: 00 08        BRK $08
 D1/6B5A: 01 83        ORA ($83,X)
-D1/6B5C: 20 88 00     JSR Local_D10088
+D1/6B5C: 20 88 00     JSR $0088
 D1/6B5F: 9C E0 01     STZ $01E0
 D1/6B62: A8           TAY
 D1/6B63: 00 00        BRK $00
@@ -79,12 +79,12 @@ D1/6B9F: 88           DEY
 D1/6BA0: 00 00        BRK $00
 D1/6BA2: 95 0F        STA $0F,X
 D1/6BA4: 98           TYA
-D1/6BA5: 10 B9        BPL Local_D16B60
+D1/6BA5: 10 B9        BPL $6B60
 D1/6BA7: 2E 93 13     ROL $1393
 D1/6BAA: 02 C4        COP $C4
 D1/6BAC: 8A           TXA
 D1/6BAD: 51 80        EOR ($80),Y
-D1/6BAF: 70 00        BVS Local_D16BB1
+D1/6BAF: 70 00        BVS $6BB1
 D1/6BB1: DE 01 91     DEC $9101,X
 D1/6BB4: C7 6B        CMP [$6B]
 D1/6BB6: 91 C7        STA ($C7),Y

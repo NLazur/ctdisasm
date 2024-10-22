@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 973F
 Routine_D0973F:
-D0/973F: 20 00 20     JSR Local_D02000
+D0/973F: 20 00 20     JSR $2000
 D0/9742: 00 38        BRK $38
 D0/9744: 00 70        BRK $70
 D0/9746: 00 E0        BRK $E0

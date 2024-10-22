@@ -1,12 +1,12 @@
 ; Bank: D0 | Start Address: 5C3E
 Routine_D05C3E:
-D0/5C3E: 80 80        BRA Local_D05BC0
+D0/5C3E: 80 80        BRA $5BC0
 D0/5C40: 02 02        COP $02
-D0/5C42: 20 20 30     JSR Local_D03020
-D0/5C45: 30 00        BMI Local_D05C47
+D0/5C42: 20 20 30     JSR $3020
+D0/5C45: 30 00        BMI $5C47
 D0/5C47: 00 02        BRK $02
 D0/5C49: 02 20        COP $20
-D0/5C4B: 20 00 00     JSR Local_D00000
+D0/5C4B: 20 00 00     JSR $0000
 D0/5C4E: 12 12        ORA ($12)
 D0/5C50: 01 01        ORA ($01,X)
 D0/5C52: 0C 0C 10     TSB $100C

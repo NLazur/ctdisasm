@@ -19,6 +19,6 @@ C2/FCD3: 85 00        STA $00
 C2/FCD5: E2 20        SEP #$20
 C2/FCD7: AD 55 2C     LDA $2C55
 C2/FCDA: 85 02        STA $02
-C2/FCDC: 20 1D FD     JSR Local_C2FD1D
+C2/FCDC: 20 1D FD     JSR $FD1D
 C2/FCDF: 28           PLP
 C2/FCE0: 60           RTS

@@ -4,11 +4,11 @@ C2/5FD8: 23 2C        AND $2C,S
 C2/5FDA: 29 2C        AND #$2C
 C2/5FDC: 2F 2C 35 2C  AND $2C352C
 C2/5FE0: 3B           TSC
-C2/5FE1: 2C 41 2C     BIT Local_C22C41
+C2/5FE1: 2C 41 2C     BIT $2C41
 C2/5FE4: 47 2C        EOR [$2C]
 C2/5FE6: 00 00        BRK $00
-C2/5FE8: 10 00        BPL Local_C25FEA
-C2/5FEA: 20 00 30     JSR Local_C23000
+C2/5FE8: 10 00        BPL $5FEA
+C2/5FEA: 20 00 30     JSR $3000
 C2/5FED: 00 40        BRK $40
 C2/5FEF: 00 50        BRK $50
 C2/5FF1: 00 60        BRK $60
@@ -189,11 +189,11 @@ C2/6147: BA           TSX
 C2/6148: BD C2 BA     LDA $BAC2,X
 C2/614B: 64 65        STZ $65
 C2/614D: C5 6A        CMP $6A
-C2/614F: 90 02        BCC Local_C26153
+C2/614F: 90 02        BCC $6153
 C2/6151: E5 6A        SBC $6A
 C2/6153: 26 65        ROL $65
 C2/6155: 46 6A        LSR $6A
 C2/6157: 88           DEY
-C2/6158: D0 F3        BNE Local_C2614D
+C2/6158: D0 F3        BNE $614D
 C2/615A: A0 04 00     LDY #$0004
 C2/615D: 60           RTS

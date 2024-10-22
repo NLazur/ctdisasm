@@ -1,8 +1,8 @@
 ; Bank: C0 | Start Address: D553
 Routine_C0D553:
 C0/D553: 85 EE        STA $EE
-C0/D555: 20 AA E9     JSR Local_C0E9AA
-C0/D558: 90 F7        BCC Local_C0D551
+C0/D555: 20 AA E9     JSR $E9AA
+C0/D558: 90 F7        BCC $D551
 C0/D55A: A5 EE        LDA $EE
 C0/D55C: 9D 01 0F     STA $0F01,X
 C0/D55F: C2 20        REP #$20
@@ -30,25 +30,25 @@ C0/D590: 8D 81 21     STA $2181
 C0/D593: A9 08 00     LDA #$0008
 C0/D596: 85 C9        STA $C9
 C0/D598: A0 00 00     LDY #$0000
-C0/D59B: 80 08        BRA Local_C0D5A5
+C0/D59B: 80 08        BRA $D5A5
 C0/D59D: A5 D0        LDA $D0
 C0/D59F: 18           CLC
 C0/D5A0: 69 20 00     ADC #$0020
 C0/D5A3: 85 D0        STA $D0
 C0/D5A5: B7 D3        LDA [$D3],Y
 C0/D5A7: 89 00 40     BIT #$4000
-C0/D5AA: D0 0B        BNE Local_C0D5B7
-C0/D5AC: 20 87 E6     JSR Local_C0E687
+C0/D5AA: D0 0B        BNE $D5B7
+C0/D5AC: 20 87 E6     JSR $E687
 C0/D5AF: C8           INY
 C0/D5B0: C8           INY
 C0/D5B1: C6 C9        DEC $C9
-C0/D5B3: D0 E8        BNE Local_C0D59D
-C0/D5B5: 80 09        BRA Local_C0D5C0
-C0/D5B7: 20 34 E5     JSR Local_C0E534
+C0/D5B3: D0 E8        BNE $D59D
+C0/D5B5: 80 09        BRA $D5C0
+C0/D5B7: 20 34 E5     JSR $E534
 C0/D5BA: C8           INY
 C0/D5BB: C8           INY
 C0/D5BC: C6 C9        DEC $C9
-C0/D5BE: D0 DD        BNE Local_C0D59D
+C0/D5BE: D0 DD        BNE $D59D
 C0/D5C0: C2 20        REP #$20
 C0/D5C2: A6 6D        LDX $6D
 C0/D5C4: BD 80 0D     LDA $0D80,X
@@ -60,25 +60,25 @@ C0/D5D0: C2 10        REP #$10
 C0/D5D2: A9 08 00     LDA #$0008
 C0/D5D5: 85 C9        STA $C9
 C0/D5D7: A0 10 00     LDY #$0010
-C0/D5DA: 80 08        BRA Local_C0D5E4
+C0/D5DA: 80 08        BRA $D5E4
 C0/D5DC: A5 D0        LDA $D0
 C0/D5DE: 18           CLC
 C0/D5DF: 69 20 00     ADC #$0020
 C0/D5E2: 85 D0        STA $D0
 C0/D5E4: B7 D3        LDA [$D3],Y
 C0/D5E6: 89 00 40     BIT #$4000
-C0/D5E9: D0 0B        BNE Local_C0D5F6
-C0/D5EB: 20 87 E6     JSR Local_C0E687
+C0/D5E9: D0 0B        BNE $D5F6
+C0/D5EB: 20 87 E6     JSR $E687
 C0/D5EE: C8           INY
 C0/D5EF: C8           INY
 C0/D5F0: C6 C9        DEC $C9
-C0/D5F2: D0 E8        BNE Local_C0D5DC
-C0/D5F4: 80 09        BRA Local_C0D5FF
-C0/D5F6: 20 34 E5     JSR Local_C0E534
+C0/D5F2: D0 E8        BNE $D5DC
+C0/D5F4: 80 09        BRA $D5FF
+C0/D5F6: 20 34 E5     JSR $E534
 C0/D5F9: C8           INY
 C0/D5FA: C8           INY
 C0/D5FB: C6 C9        DEC $C9
-C0/D5FD: D0 DD        BNE Local_C0D5DC
+C0/D5FD: D0 DD        BNE $D5DC
 C0/D5FF: E2 30        SEP #$30
 C0/D601: A6 6D        LDX $6D
 C0/D603: FE 00 1B     INC $1B00,X

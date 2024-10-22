@@ -14,7 +14,7 @@ C6/9B85: 63 02        ADC $02,S
 C6/9B87: C0 25 E6     CPY #$E625
 C6/9B8A: 26 43        ROL $43
 C6/9B8C: 11 F6        ORA ($F6),Y
-C6/9B8E: 10 16        BPL Local_C69BA6
+C6/9B8E: 10 16        BPL $9BA6
 C6/9B90: 00 30        BRK $30
 C6/9B92: 00 60        BRK $60
 C6/9B94: 68           PLA

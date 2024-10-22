@@ -16,7 +16,7 @@ D0/0A9B: 3F C0 FF 07  AND $07FFC0,X
 D0/0A9F: FF 3F FF F8  SBC $F8FF3F,X
 D0/0AA3: F8           SED
 D0/0AA4: E0 E0 80     CPX #$80E0
-D0/0AA7: 80 00        BRA Local_D00AA9
+D0/0AA7: 80 00        BRA $0AA9
 D0/0AA9: 00 00        BRK $00
 D0/0AAB: 00 00        BRK $00
 D0/0AAD: 00 01        BRK $01
@@ -39,7 +39,7 @@ D0/0AD0: 02 02        COP $02
 D0/0AD2: 04 04        TSB $04
 D0/0AD4: 08           PHP
 D0/0AD5: 08           PHP
-D0/0AD6: 10 10        BPL Local_D00AE8
+D0/0AD6: 10 10        BPL $0AE8
 D0/0AD8: 07 07        ORA [$07]
 D0/0ADA: 38           SEC
 D0/0ADB: 38           SEC
@@ -70,7 +70,7 @@ D0/0B0C: 00 00        BRK $00
 D0/0B0E: 08           PHP
 D0/0B0F: 08           PHP
 D0/0B10: 1C 14 3E     TRB $3E14
-D0/0B13: 22 1C 22 3D  JSR Routine_3D221C
+D0/0B13: 22 1C 22 3D  JSR $3D221C
 D0/0B17: 02 00        COP $00
 D0/0B19: 00 00        BRK $00
 D0/0B1B: 00 00        BRK $00
@@ -82,12 +82,12 @@ D0/0B25: 04 03        TSB $03
 D0/0B27: 04 27        TSB $27
 D0/0B29: 3F 26 3E 4E  AND $4E3E26,X
 D0/0B2D: 7E 4C 7C     ROR $7C4C,X
-D0/0B30: 4C 7C 98     JMP Local_D0987C
+D0/0B30: 4C 7C 98     JMP $987C
 D0/0B33: F8           SED
 D0/0B34: 98           TYA
 D0/0B35: F8           SED
 D0/0B36: 98           TYA
 D0/0B37: F8           SED
-D0/0B38: 30 30        BMI Local_D00B6A
-D0/0B3A: 30 30        BMI Local_D00B6C
+D0/0B38: 30 30        BMI $0B6A
+D0/0B3A: 30 30        BMI $0B6C
 D0/0B3C: 60           RTS

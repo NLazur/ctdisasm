@@ -12,12 +12,12 @@ C3/E083: EA           NOP
 C3/E084: BF E9 87 EA  LDA $EA87E9,X
 C3/E088: B3 E8        LDA ($E8,S),Y
 C3/E08A: 79 EF 8D     ADC $8DEF,Y
-C3/E08D: F0 B9        BEQ Local_C3E048
-C3/E08F: F0 DE        BEQ Local_C3E06F
-C3/E091: F0 E8        BEQ Local_C3E07B
-C3/E093: F0 F2        BEQ Local_C3E087
-C3/E095: F0 FC        BEQ Local_C3E093
-C3/E097: F0 9E        BEQ Local_C3E037
+C3/E08D: F0 B9        BEQ $E048
+C3/E08F: F0 DE        BEQ $E06F
+C3/E091: F0 E8        BEQ $E07B
+C3/E093: F0 F2        BEQ $E087
+C3/E095: F0 FC        BEQ $E093
+C3/E097: F0 9E        BEQ $E037
 C3/E099: F1 A2        SBC ($A2),Y
 C3/E09B: F1 F6        SBC ($F6),Y
 C3/E09D: E5 D8        SBC $D8
@@ -26,7 +26,7 @@ C3/E0A1: E7 B8        SBC [$B8]
 C3/E0A3: F1 0D        SBC ($0D),Y
 C3/E0A5: F2 1A        SBC ($1A)
 C3/E0A7: F2 A1        SBC ($A1)
-C3/E0A9: F0 2E        BEQ Local_C3E0D9
+C3/E0A9: F0 2E        BEQ $E0D9
 C3/E0AB: F2 32        SBC ($32)
 C3/E0AD: F2 36        SBC ($36)
 C3/E0AF: F2 3A        SBC ($3A)
@@ -77,7 +77,7 @@ C3/E108: BA           TSX
 C3/E109: F8           SED
 C3/E10A: BE F8 0E     LDX $0EF8,Y
 C3/E10D: F9 12 F9     SBC $F912,Y
-C3/E110: D0 F9        BNE Local_C3E10B
+C3/E110: D0 F9        BNE $E10B
 C3/E112: E1 F9        SBC ($F9,X)
 C3/E114: 95 FA        STA $FA,X
 C3/E116: 9F FA A9 FA  STA $FAA9FA,X

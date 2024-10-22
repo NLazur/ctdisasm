@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: F481
 Routine_C0F481:
-C0/F481: 3C 39 35     BIT Local_C03539,X
+C0/F481: 3C 39 35     BIT $3539,X
 C0/F484: 32 30        AND ($30)
 C0/F486: 2D 2A 28     AND $282A
 C0/F489: 26 24        ROL $24
@@ -12,11 +12,11 @@ C0/F494: 15 15        ORA $15,X
 C0/F496: 14 13        TRB $13
 C0/F498: 12 12        ORA ($12)
 C0/F49A: 11 10        ORA ($10),Y
-C0/F49C: 10 10        BPL Local_C0F4AE
+C0/F49C: 10 10        BPL $F4AE
 C0/F49E: 0F 0F 40 3C  ORA $3C400F
 C0/F4A2: 3A           DEC
 C0/F4A3: 37 33        AND [$33],Y
-C0/F4A5: 30 2E        BMI Local_C0F4D5
+C0/F4A5: 30 2E        BMI $F4D5
 C0/F4A7: 2B           PLD
 C0/F4A8: 29 27        AND #$27
 C0/F4AA: 25 23        AND $23
@@ -29,13 +29,13 @@ C0/F4B7: 15 14        ORA $14,X
 C0/F4B9: 13 12        ORA ($12,S),Y
 C0/F4BB: 12 11        ORA ($11)
 C0/F4BD: 11 10        ORA ($10),Y
-C0/F4BF: 10 40        BPL Local_C0F501
-C0/F4C1: 3C 3A 37     BIT Local_C0373A,X
+C0/F4BF: 10 40        BPL $F501
+C0/F4C1: 3C 3A 37     BIT $373A,X
 C0/F4C4: 35 32        AND $32,X
 C0/F4C6: 2F 2D 2B 29  AND $292B2D
 C0/F4CA: 26 24        ROL $24
 C0/F4CC: 23 21        AND $21,S
-C0/F4CE: 20 1F 1D     JSR Local_C01D1F
+C0/F4CE: 20 1F 1D     JSR $1D1F
 C0/F4D1: 1C 1A 1A     TRB $1A1A
 C0/F4D4: 18           CLC
 C0/F4D5: 17 17        ORA [$17],Y
@@ -46,13 +46,13 @@ C0/F4DD: 12 12        ORA ($12)
 C0/F4DF: 11 40        ORA ($40),Y
 C0/F4E1: 3D 3A 37     AND $373A,X
 C0/F4E4: 35 32        AND $32,X
-C0/F4E6: 30 2E        BMI Local_C0F516
+C0/F4E6: 30 2E        BMI $F516
 C0/F4E8: 2B           PLD
 C0/F4E9: 2A           ROL
 C0/F4EA: 28           PLP
 C0/F4EB: 26 24        ROL $24
 C0/F4ED: 23 21        AND $21,S
-C0/F4EF: 20 1F 1D     JSR Local_C01D1F
+C0/F4EF: 20 1F 1D     JSR $1D1F
 C0/F4F2: 1C 1B 1A     TRB $1A1B
 C0/F4F5: 19 18 17     ORA $1718,Y
 C0/F4F8: 17 15        ORA [$15],Y

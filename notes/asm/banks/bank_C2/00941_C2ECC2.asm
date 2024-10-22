@@ -12,6 +12,6 @@ C2/ECD1: 9D 01 00     STA $0001,X
 C2/ECD4: E8           INX
 C2/ECD5: E8           INX
 C2/ECD6: 88           DEY
-C2/ECD7: D0 F1        BNE Local_C2ECCA
+C2/ECD7: D0 F1        BNE $ECCA
 C2/ECD9: 28           PLP
 C2/ECDA: 60           RTS

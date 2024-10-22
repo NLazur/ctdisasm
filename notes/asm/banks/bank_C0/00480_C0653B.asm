@@ -8,7 +8,7 @@ C0/6543: 29 FF 00     AND #$00FF
 C0/6546: 0A           ASL
 C0/6547: AA           TAX
 C0/6548: BF 00 02 7F  LDA $7F0200,X
-C0/654C: 80 0E        BRA Local_C0655C
+C0/654C: 80 0E        BRA $655C
 C0/654E: C8           INY
 C0/654F: BB           TYX
 C0/6550: C2 20        REP #$20

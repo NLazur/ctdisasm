@@ -1,8 +1,8 @@
 ; Bank: C0 | Start Address: D297
 Routine_C0D297:
 C0/D297: 85 EE        STA $EE
-C0/D299: 20 7A E9     JSR Local_C0E97A
-C0/D29C: 90 F7        BCC Local_C0D295
+C0/D299: 20 7A E9     JSR $E97A
+C0/D29C: 90 F7        BCC $D295
 C0/D29E: A5 EE        LDA $EE
 C0/D2A0: 9D 01 0F     STA $0F01,X
 C0/D2A3: C2 20        REP #$20
@@ -30,25 +30,25 @@ C0/D2D4: 8D 81 21     STA $2181
 C0/D2D7: A9 10 00     LDA #$0010
 C0/D2DA: 85 C9        STA $C9
 C0/D2DC: A0 00 00     LDY #$0000
-C0/D2DF: 80 08        BRA Local_C0D2E9
+C0/D2DF: 80 08        BRA $D2E9
 C0/D2E1: A5 D0        LDA $D0
 C0/D2E3: 18           CLC
 C0/D2E4: 69 20 00     ADC #$0020
 C0/D2E7: 85 D0        STA $D0
 C0/D2E9: B7 D3        LDA [$D3],Y
 C0/D2EB: 89 00 40     BIT #$4000
-C0/D2EE: D0 0B        BNE Local_C0D2FB
-C0/D2F0: 20 87 E6     JSR Local_C0E687
+C0/D2EE: D0 0B        BNE $D2FB
+C0/D2F0: 20 87 E6     JSR $E687
 C0/D2F3: C8           INY
 C0/D2F4: C8           INY
 C0/D2F5: C6 C9        DEC $C9
-C0/D2F7: D0 E8        BNE Local_C0D2E1
-C0/D2F9: 80 09        BRA Local_C0D304
-C0/D2FB: 20 34 E5     JSR Local_C0E534
+C0/D2F7: D0 E8        BNE $D2E1
+C0/D2F9: 80 09        BRA $D304
+C0/D2FB: 20 34 E5     JSR $E534
 C0/D2FE: C8           INY
 C0/D2FF: C8           INY
 C0/D300: C6 C9        DEC $C9
-C0/D302: D0 DD        BNE Local_C0D2E1
+C0/D302: D0 DD        BNE $D2E1
 C0/D304: E2 30        SEP #$30
 C0/D306: A6 6D        LDX $6D
 C0/D308: FE 00 1B     INC $1B00,X

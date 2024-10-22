@@ -4,8 +4,8 @@ D1/167D: C0 26        CPY #$26
 D1/167F: 41 2A        EOR ($2A,X)
 D1/1681: 41 28        EOR ($28,X)
 D1/1683: 12 00        ORA ($00)
-D1/1685: 10 21        BPL Local_D116A8
-D1/1687: 80 EE        BRA Local_D11677
+D1/1685: 10 21        BPL $16A8
+D1/1687: 80 EE        BRA $1677
 D1/1689: 00 06        BRK $06
 D1/168B: 00 C0        BRK $C0
 D1/168D: 00 01        BRK $01
@@ -19,8 +19,8 @@ D1/1699: 00 EA        BRK $EA
 D1/169B: 04 00        TSB $00
 D1/169D: EC 1A 00     CPX $001A
 D1/16A0: 12 80        ORA ($80)
-D1/16A2: 80 E2        BRA Local_D11686
-D1/16A4: 80 44        BRA Local_D116EA
+D1/16A2: 80 E2        BRA $1686
+D1/16A4: 80 44        BRA $16EA
 D1/16A6: E0 80        CPX #$80
 D1/16A8: 09 10        ORA #$10
 D1/16AA: E6 80        INC $80

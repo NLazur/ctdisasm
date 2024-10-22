@@ -66,12 +66,12 @@ FF/F7FA: 99 10 00     STA $0010,Y
 FF/F7FD: C8           INY
 FF/F7FE: C8           INY
 FF/F7FF: C6 02        DEC $02
-FF/F801: D0 F1        BNE Local_FFF7F4
+FF/F801: D0 F1        BNE $F7F4
 FF/F803: C2 21        REP #$21
 FF/F805: A5 00        LDA $00
 FF/F807: 69 20 00     ADC #$0020
 FF/F80A: 85 00        STA $00
 FF/F80C: E0 30 94     CPX #$9430
-FF/F80F: 90 D3        BCC Local_FFF7E4
+FF/F80F: 90 D3        BCC $F7E4
 FF/F811: 28           PLP
 FF/F812: 6B           RTL

@@ -5,7 +5,7 @@ C6/3DBA: 00 B1        BRK $B1
 C6/3DBC: 51 18        EOR ($18),Y
 C6/3DBE: 11 B2        ORA ($B2),Y
 C6/3DC0: 00 B3        BRK $B3
-C6/3DC2: 50 11        BVC Local_C63DD5
+C6/3DC2: 50 11        BVC $3DD5
 C6/3DC4: 7A           PLY
 C6/3DC5: 58           CLI
 C6/3DC6: 01 7B        ORA ($7B,X)

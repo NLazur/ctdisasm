@@ -3,14 +3,14 @@ Routine_C64ED5:
 C6/4ED5: 0D 79 0D     ORA $0D79
 C6/4ED8: 88           DEY
 C6/4ED9: 0D 89 78     ORA $7889
-C6/4EDC: 10 20        BPL Local_C64EFE
+C6/4EDC: 10 20        BPL $4EFE
 C6/4EDE: 74 0D        STZ $0D,X
 C6/4EE0: 21 80        AND ($80,X)
 C6/4EE2: 00 38        BRK $38
 C6/4EE4: 5A           PHY
 C6/4EE5: 03 00        ORA $00,S
 C6/4EE7: 01 D8        ORA ($D8,X)
-C6/4EE9: 22 09 15 68  JSR Routine_681509
+C6/4EE9: 22 09 15 68  JSR $681509
 C6/4EED: 03 19        ORA $19,S
 C6/4EEF: 0E 01 C4     ASL $C401
 C6/4EF2: C6 02        DEC $02
@@ -18,9 +18,9 @@ C6/4EF4: D4 28        PEI $28
 C6/4EF6: D5 02        CMP $02,X
 C6/4EF8: 28           PLP
 C6/4EF9: 98           TYA
-C6/4EFA: 30 38        BMI Local_C64F34
+C6/4EFA: 30 38        BMI $4F34
 C6/4EFC: 00 38        BRK $38
-C6/4EFE: 22 39 23 01  JSR Routine_012339
+C6/4EFE: 22 39 23 01  JSR $012339
 C6/4F02: 86 03        STX $03
 C6/4F04: 0A           ASL
 C6/4F05: 3D 9E 1C     AND $1C9E,X
@@ -33,7 +33,7 @@ C6/4F13: 0D 00 3D     ORA $3D00
 C6/4F16: 0E 3D 1D     ASL $1D3D
 C6/4F19: 1D 1E 1D     ORA $1D1E,X
 C6/4F1C: 0F 80 3D BA  ORA $BA3D80
-C6/4F20: 3C 1F 1D     BIT Local_C61D1F,X
+C6/4F20: 3C 1F 1D     BIT $1D1F,X
 C6/4F23: CA           DEX
 C6/4F24: 1C 78 19     TRB $1978
 C6/4F27: 00 7B        BRK $7B
@@ -61,7 +61,7 @@ C6/4F57: 02 A1        COP $A1
 C6/4F59: 08           PHP
 C6/4F5A: 28           PLP
 C6/4F5B: D4 08        PEI $08
-C6/4F5D: 20 03 18     JSR Local_C61803
+C6/4F5D: 20 03 18     JSR $1803
 C6/4F60: 00 18        BRK $18
 C6/4F62: 28           PLP
 C6/4F63: 58           CLI
@@ -70,7 +70,7 @@ C6/4F67: 08           PHP
 C6/4F68: 08           PHP
 C6/4F69: 08           PHP
 C6/4F6A: 01 18        ORA ($18,X)
-C6/4F6C: 70 2C        BVS Local_C64F9A
+C6/4F6C: 70 2C        BVS $4F9A
 C6/4F6E: 32 00        AND ($00)
 C6/4F70: 39 33 39     AND $3933,Y
 C6/4F73: 42 39        WDM $39
@@ -89,7 +89,7 @@ C6/4F8F: 1D 3E 1D     ORA $1D3E,X
 C6/4F92: 2F 40 1D DA  AND $DA1D40
 C6/4F96: 1C 3F 1D     TRB $1D3F
 C6/4F99: EA           NOP
-C6/4F9A: 80 00        BRA Local_C64F9C
+C6/4F9A: 80 00        BRA $4F9C
 C6/4F9C: 8B           PHB
 C6/4F9D: 00 3D        BRK $3D
 C6/4F9F: 9A           TXS
@@ -121,7 +121,7 @@ C6/4FDA: 19 00 06     ORA $0600,Y
 C6/4FDD: 18           CLC
 C6/4FDE: 08           PHP
 C6/4FDF: 01 80        ORA ($80,X)
-C6/4FE1: 30 6A        BMI Local_C6504D
+C6/4FE1: 30 6A        BMI $504D
 C6/4FE3: 19 6B 19     ORA $196B,Y
 C6/4FE6: 7A           PLY
 C6/4FE7: 00 19        BRK $19
@@ -130,9 +130,9 @@ C6/4FEC: 1C 4A 1D     TRB $1D4A
 C6/4FEF: 00 00        BRK $00
 C6/4FF1: 00 5A        BRK $5A
 C6/4FF3: 1D 4B 1D     ORA $1D4B,X
-C6/4FF6: 4C 1D 5B     JMP Local_C65B1D
+C6/4FF6: 4C 1D 5B     JMP $5B1D
 C6/4FF9: 00 1D        BRK $1D
-C6/4FFB: 5C 1D 4D 1D  JMP Routine_1D4D1D
+C6/4FFB: 5C 1D 4D 1D  JMP $1D4D1D
 C6/4FFF: 4E 1D 5D     LSR $5D1D
 C6/5002: 01 12        ORA ($12,X)
 C6/5004: 00 B4        BRK $B4
@@ -161,11 +161,11 @@ C6/5034: 1D F6 1D     ORA $1DF6,X
 C6/5037: 76 50        ROR $50,X
 C6/5039: 77 50        ADC [$50],Y
 C6/503B: 86 E8        STX $E8
-C6/503D: 50 87        BVC Local_C64FC6
-C6/503F: 50 40        BVC Local_C65081
+C6/503D: 50 87        BVC $4FC6
+C6/503F: 50 40        BVC $5081
 C6/5041: 0B           PHD
 C6/5042: 92 42        STA ($42)
 C6/5044: 05 00        ORA $00
 C6/5046: 4A           LSR
-C6/5047: D0 1B        BNE Local_C65064
+C6/5047: D0 1B        BNE $5064
 C6/5049: 40           RTI

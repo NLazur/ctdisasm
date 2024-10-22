@@ -14,6 +14,6 @@ D0/E19B: 1E 10 2E     ASL $2E10,X
 D0/E19E: 49 2D        EOR #$2D
 D0/E1A0: 49 2C        EOR #$2C
 D0/E1A2: C0 49        CPY #$49
-D0/E1A4: 2C 09 2D     BIT Local_D02D09
+D0/E1A4: 2C 09 2D     BIT $2D09
 D0/E1A7: 09 2E        ORA #$2E
 D0/E1A9: 40           RTI

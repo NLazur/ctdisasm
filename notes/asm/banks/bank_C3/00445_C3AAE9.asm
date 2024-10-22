@@ -14,12 +14,12 @@ C3/AAFD: 09 7F        ORA #$7F
 C3/AAFF: 38           SEC
 C3/AB00: 02 00        COP $00
 C3/AB02: 0B           PHD
-C3/AB03: 22 1B 24 E8  JSR Routine_E8241B
+C3/AB03: 22 1B 24 E8  JSR $E8241B
 C3/AB07: 52 39        EOR ($39)
 C3/AB09: 1E 20 52     ASL $5220,X
 C3/AB0C: 00 34        BRK $34
 C3/AB0E: 6F 78 27 02  ADC $022778
-C3/AB12: 22 13 0A 39  JSR Routine_390A13
+C3/AB12: 22 13 0A 39  JSR $390A13
 C3/AB16: 04 00        TSB $00
 C3/AB18: 3A           DEC
 C3/AB19: E1 05        SBC ($05,X)
@@ -27,10 +27,10 @@ C3/AB1B: 43 00        EOR $00,S
 C3/AB1D: 17 10        ORA [$10],Y
 C3/AB1F: 00 44        BRK $44
 C3/AB21: 00 10        BRK $10
-C3/AB23: 20 09 10     JSR Local_C31009
+C3/AB23: 20 09 10     JSR $1009
 C3/AB26: 21 09        AND ($09,X)
 C3/AB28: AB           PLB
-C3/AB29: 30 12        BMI Local_C3AB3D
+C3/AB29: 30 12        BMI $AB3D
 C3/AB2B: 27 03        AND [$03]
 C3/AB2D: 5A           PHY
 C3/AB2E: 27 33        AND [$33]
@@ -55,9 +55,9 @@ C3/AB53: 00 59        BRK $59
 C3/AB55: 0B           PHD
 C3/AB56: 7F 00 29 01  ADC $012900,X
 C3/AB5A: 38           SEC
-C3/AB5B: 10 38        BPL Local_C3AB95
+C3/AB5B: 10 38        BPL $AB95
 C3/AB5D: B6 38        LDX $38,Y
-C3/AB5F: 10 20        BPL Local_C3AB81
+C3/AB5F: 10 20        BPL $AB81
 C3/AB61: 28           PLP
 C3/AB62: 01 38        ORA ($38,X)
 C3/AB64: 12 15        ORA ($15)
@@ -75,23 +75,23 @@ C3/AB7B: 37 38        AND [$38],Y
 C3/AB7D: 00 01        BRK $01
 C3/AB7F: 23 F0        AND $F0,S
 C3/AB81: 00 08        BRK $08
-C3/AB83: 22 F1 00 42  JSR Routine_4200F1
+C3/AB83: 22 F1 00 42  JSR $4200F1
 C3/AB87: FA           PLX
 C3/AB88: 25 10        AND $10
 C3/AB8A: 4E AF E2     LSR $E2AF
 C3/AB8D: C6 29        DEC $29
-C3/AB8F: 70 2C        BVS Local_C3ABBD
+C3/AB8F: 70 2C        BVS $ABBD
 C3/AB91: 00 50        BRK $50
 C3/AB93: 03 1E        ORA $1E,S
 C3/AB95: 03 01        ORA $01,S
 C3/AB97: 08           PHP
 C3/AB98: 02 B0        COP $B0
 C3/AB9A: 09 F3        ORA #$F3
-C3/AB9C: 10 30        BPL Local_C3ABCE
+C3/AB9C: 10 30        BPL $ABCE
 C3/AB9E: 26 20        ROL $20
 C3/ABA0: 72 31        ADC ($31)
 C3/ABA2: B6 31        LDX $31,Y
-C3/ABA4: 20 01 46     JSR Local_C34601
+C3/ABA4: 20 01 46     JSR $4601
 C3/ABA7: 42 80        WDM $80
 C3/ABA9: 00 00        BRK $00
 C3/ABAB: 31 20        AND ($20),Y

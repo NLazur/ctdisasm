@@ -5,7 +5,7 @@ C1/A3F8: AA           TAX
 C1/A3F9: A8           TAY
 C1/A3FA: B9 FF AE     LDA $AEFF,Y
 C1/A3FD: C9 FF        CMP #$FF
-C1/A3FF: F0 05        BEQ Local_C1A406
+C1/A3FF: F0 05        BEQ $A406
 C1/A401: 98           TYA
 C1/A402: 9D CC AE     STA $AECC,X
 C1/A405: E8           INX
@@ -19,7 +19,7 @@ C1/A412: F7 A3        SBC [$A3],Y
 C1/A414: A0 03 00     LDY #$0003
 C1/A417: B9 FF AE     LDA $AEFF,Y
 C1/A41A: C9 FF        CMP #$FF
-C1/A41C: F0 05        BEQ Local_C1A423
+C1/A41C: F0 05        BEQ $A423
 C1/A41E: 98           TYA
 C1/A41F: 9D CC AE     STA $AECC,X
 C1/A422: E8           INX

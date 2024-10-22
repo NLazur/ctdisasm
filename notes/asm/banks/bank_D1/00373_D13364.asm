@@ -1,9 +1,9 @@
 ; Bank: D1 | Start Address: 3364
 Routine_D13364:
-D1/3364: 10 E0        BPL Local_D13346
-D1/3366: 80 E0        BRA Local_D13348
+D1/3364: 10 E0        BPL $3346
+D1/3366: 80 E0        BRA $3348
 D1/3368: C0 16        CPY #$16
-D1/336A: 10 CE        BPL Local_D1333A
+D1/336A: 10 CE        BPL $333A
 D1/336C: 00 EE        BRK $EE
 D1/336E: 01 39        ORA ($39,X)
 D1/3370: 18           CLC

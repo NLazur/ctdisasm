@@ -1,8 +1,8 @@
 ; Bank: CE | Start Address: 312E
 Routine_CE312E:
 CE/312E: 00 F8        BRK $F8
-CE/3130: F0 E0        BEQ Local_CE3112
-CE/3132: F0 53        BEQ Local_CE3187
+CE/3130: F0 E0        BEQ $3112
+CE/3132: F0 53        BEQ $3187
 CE/3134: 31 95        AND ($95),Y
 CE/3136: 31 95        AND ($95),Y
 CE/3138: 31 9C        AND ($9C),Y
@@ -19,7 +19,7 @@ CE/314C: 31 B4        AND ($B4),Y
 CE/314E: 31 BB        AND ($BB),Y
 CE/3150: 31 C2        AND ($C2),Y
 CE/3152: 31 2D        AND ($2D),Y
-CE/3154: 80 02        BRA Local_CE3158
+CE/3154: 80 02        BRA $3158
 CE/3156: F8           SED
 CE/3157: 3D 00 33     AND $3300,X
 CE/315A: 00 49        BRK $49
@@ -32,7 +32,7 @@ CE/316A: 02 3A        COP $3A
 CE/316C: 7A           PLY
 CE/316D: DE 00 34     DEC $3400,X
 CE/3170: 1B           TCS
-CE/3171: 20 78 06     JSR Local_CE0678
+CE/3171: 20 78 06     JSR $0678
 CE/3174: 23 20        AND $20,S
 CE/3176: 78           SEI
 CE/3177: 03 38        ORA $38,S
@@ -44,8 +44,8 @@ CE/3180: A0 20        LDY #$20
 CE/3182: 08           PHP
 CE/3183: 27 DA        AND [$DA]
 CE/3185: 34 1A        BIT $1A,X
-CE/3187: 22 1B 00 20  JSR Routine_20001B
-CE/318B: 20 06 03     JSR Local_CE0306
+CE/3187: 22 1B 00 20  JSR $20001B
+CE/318B: 20 06 03     JSR $0306
 CE/318E: 35 20        AND $20,X
 CE/3190: 14 28        TRB $28
 CE/3192: 2E 01 00     ROL $0001
@@ -56,7 +56,7 @@ CE/319B: 00 24        BRK $24
 CE/319D: 02 D9        COP $D9
 CE/319F: 00 09        BRK $09
 CE/31A1: 12 2B        ORA ($2B)
-CE/31A3: 22 1B 00 29  JSR Routine_29001B
+CE/31A3: 22 1B 00 29  JSR $29001B
 CE/31A7: 5E 00 7A     LSR $7A00,X
 CE/31AA: DD 00 1E     CMP $1E00,X
 CE/31AD: 3F 77 00 1E  AND $1E0077,X

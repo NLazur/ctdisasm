@@ -4,11 +4,11 @@ FD/9290: 01 72        ORA ($72,X)
 FD/9292: 02 02        COP $02
 FD/9294: C8           INY
 FD/9295: 73 02        ADC ($02,S),Y
-FD/9297: 22 7B 02 D0  JSR Routine_D0027B
+FD/9297: 22 7B 02 D0  JSR $D0027B
 FD/929B: 7C 02 A0     JMP ($A002,X)
 FD/929E: 02 D0        COP $D0
 FD/92A0: A1 02        LDA ($02,X)
-FD/92A2: 22 DA 02 D0  JSR Routine_D002DA
+FD/92A2: 22 DA 02 D0  JSR $D002DA
 FD/92A6: DB           STP
 FD/92A7: 02 E5        COP $E5
 FD/92A9: 02 D0        COP $D0
@@ -32,10 +32,10 @@ FD/92CB: 11 01        ORA ($01),Y
 FD/92CD: 00 00        BRK $00
 FD/92CF: 01 00        ORA ($00,X)
 FD/92D1: B8           CLV
-FD/92D2: 30 B2        BMI Local_FD9286
+FD/92D2: 30 B2        BMI $9286
 FD/92D4: F6 CF        INC $CF,X
 FD/92D6: 00 06        BRK $06
 FD/92D8: 79 FE FF     ADC $FFFE,Y
-FD/92DB: D0 A0        BNE Local_FD927D
-FD/92DD: 30 30        BMI Local_FD930F
+FD/92DB: D0 A0        BNE $927D
+FD/92DD: 30 30        BMI $930F
 FD/92DF: 40           RTI

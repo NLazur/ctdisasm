@@ -16,7 +16,7 @@ C3/5E58: 02 8E        COP $8E
 C3/5E5A: 48           PHA
 C3/5E5B: 00 A9        BRK $A9
 C3/5E5D: 1B           TCS
-C3/5E5E: 20 5F 00     JSR Local_C3005F
+C3/5E5E: 20 5F 00     JSR $005F
 C3/5E61: 37 60        AND [$60],Y
 C3/5E63: 43 1B        EOR $1B,S
 C3/5E65: 5F 35 7E 43  EOR $437E35,X
@@ -34,6 +34,6 @@ C3/5E83: 2B           PLD
 C3/5E84: 45 7E        EOR $7E
 C3/5E86: FF 9C 40 05  SBC $05409C,X
 C3/5E8A: E0 04        CPX #$04
-C3/5E8C: 10 20        BPL Local_C35EAE
+C3/5E8C: 10 20        BPL $5EAE
 C3/5E8E: 24 20        BIT $20
 C3/5E90: 40           RTI

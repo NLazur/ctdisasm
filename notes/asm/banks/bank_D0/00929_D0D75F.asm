@@ -9,6 +9,6 @@ D0/D769: 00 01        BRK $01
 D0/D76B: 01 03        ORA ($03,X)
 D0/D76D: 02 87        COP $87
 D0/D76F: 8C 08 08     STY $0808
-D0/D772: 10 10        BPL Local_D0D784
-D0/D774: 10 30        BPL Local_D0D7A6
+D0/D772: 10 10        BPL $D784
+D0/D774: 10 30        BPL $D7A6
 D0/D776: 60           RTS

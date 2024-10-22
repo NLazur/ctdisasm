@@ -9,8 +9,8 @@ D1/12A6: 21 00        AND ($00,X)
 D1/12A8: C4 00        CPY $00
 D1/12AA: C6 00        DEC $00
 D1/12AC: E4 0B        CPX $0B
-D1/12AE: 10 40        BPL Local_D112F0
-D1/12B0: 20 C2 40     JSR Local_D140C2
+D1/12AE: 10 40        BPL $12F0
+D1/12B0: 20 C2 40     JSR $40C2
 D1/12B3: C0 40 E0     CPY #$E040
 D1/12B6: 37 10        AND [$10],Y
 D1/12B8: 40           RTI

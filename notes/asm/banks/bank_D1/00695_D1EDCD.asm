@@ -1,29 +1,29 @@
 ; Bank: D1 | Start Address: EDCD
 Routine_D1EDCD:
 D1/EDCD: A7 40        LDA [$40]
-D1/EDCF: D0 62        BNE Local_D1EE33
+D1/EDCF: D0 62        BNE $EE33
 D1/EDD1: AD A0 5D     LDA $5DA0
 D1/EDD4: 38           SEC
 D1/EDD5: ED 3A CD     SBC $CD3A
-D1/EDD8: B0 01        BCS Local_D1EDDB
+D1/EDD8: B0 01        BCS $EDDB
 D1/EDDA: 7B           TDC
 D1/EDDB: 85 45        STA $45
 D1/EDDD: AD A0 5D     LDA $5DA0
 D1/EDE0: 18           CLC
 D1/EDE1: 6D 3A CD     ADC $CD3A
-D1/EDE4: 90 02        BCC Local_D1EDE8
+D1/EDE4: 90 02        BCC $EDE8
 D1/EDE6: A9 FF        LDA #$FF
 D1/EDE8: 85 46        STA $46
 D1/EDEA: AD 3A CD     LDA $CD3A
 D1/EDED: C9 08        CMP #$08
-D1/EDEF: B0 03        BCS Local_D1EDF4
+D1/EDEF: B0 03        BCS $EDF4
 D1/EDF1: EE 3A CD     INC $CD3A
 D1/EDF4: 7B           TDC
 D1/EDF5: AA           TAX
 D1/EDF6: C2 20        REP #$20
 D1/EDF8: A5 7C        LDA $7C
 D1/EDFA: 29 01 00     AND #$0001
-D1/EDFD: F0 19        BEQ Local_D1EE18
+D1/EDFD: F0 19        BEQ $EE18
 D1/EDFF: A5 45        LDA $45
 D1/EE01: 9D E1 C4     STA $C4E1,X
 D1/EE04: 9D B5 C5     STA $C5B5,X
@@ -34,8 +34,8 @@ D1/EE0E: E8           INX
 D1/EE0F: E8           INX
 D1/EE10: E8           INX
 D1/EE11: E0 D4 00     CPX #$00D4
-D1/EE14: D0 EB        BNE Local_D1EE01
-D1/EE16: 80 17        BRA Local_D1EE2F
+D1/EE14: D0 EB        BNE $EE01
+D1/EE16: 80 17        BRA $EE2F
 D1/EE18: A5 45        LDA $45
 D1/EE1A: 9D 61 C1     STA $C161,X
 D1/EE1D: 9D 35 C2     STA $C235,X
@@ -46,7 +46,7 @@ D1/EE27: E8           INX
 D1/EE28: E8           INX
 D1/EE29: E8           INX
 D1/EE2A: E0 D4 00     CPX #$00D4
-D1/EE2D: D0 EB        BNE Local_D1EE1A
+D1/EE2D: D0 EB        BNE $EE1A
 D1/EE2F: 7B           TDC
 D1/EE30: E2 20        SEP #$20
 D1/EE32: 6B           RTL

@@ -27,15 +27,15 @@ C0/51CB: 85 F0        STA $F0
 C0/51CD: BD 81 18     LDA $1881,X
 C0/51D0: 85 F1        STA $F1
 C0/51D2: C5 F3        CMP $F3
-C0/51D4: D0 1B        BNE Local_C051F1
+C0/51D4: D0 1B        BNE $51F1
 C0/51D6: A5 F0        LDA $F0
 C0/51D8: C5 F2        CMP $F2
-C0/51DA: D0 15        BNE Local_C051F1
+C0/51DA: D0 15        BNE $51F1
 C0/51DC: BD 81 1C     LDA $1C81,X
 C0/51DF: 89 01        BIT #$01
-C0/51E1: F0 05        BEQ Local_C051E8
-C0/51E3: 20 5D 30     JSR Local_C0305D
-C0/51E6: B0 06        BCS Local_C051EE
+C0/51E1: F0 05        BEQ $51E8
+C0/51E3: 20 5D 30     JSR $305D
+C0/51E6: B0 06        BCS $51EE
 C0/51E8: BB           TYX
 C0/51E9: E8           INX
 C0/51EA: E8           INX

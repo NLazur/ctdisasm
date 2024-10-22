@@ -10,7 +10,7 @@ C2/27ED: E2 20        SEP #$20
 C2/27EF: A4 08        LDY $08
 C2/27F1: 7B           TDC
 C2/27F2: B7 ED        LDA [$ED],Y
-C2/27F4: 30 1A        BMI Local_C22810
+C2/27F4: 30 1A        BMI $2810
 C2/27F6: 0A           ASL
 C2/27F7: 77 ED        ADC [$ED],Y
 C2/27F9: AA           TAX
@@ -20,7 +20,7 @@ C2/2800: 8D 00 03     STA $0300
 C2/2803: E2 20        SEP #$20
 C2/2805: BF 22 FE C6  LDA $C6FE22,X
 C2/2809: 8D 02 03     STA $0302
-C2/280C: 22 02 00 C3  JSR Routine_C30002
+C2/280C: 22 02 00 C3  JSR $C30002
 C2/2810: C2 20        REP #$20
 C2/2812: 18           CLC
 C2/2813: AD 03 03     LDA $0303
@@ -29,5 +29,5 @@ C2/2819: 8D 03 03     STA $0303
 C2/281C: E6 08        INC $08
 C2/281E: A5 08        LDA $08
 C2/2820: C9 07 00     CMP #$0007
-C2/2823: D0 C8        BNE Local_C227ED
+C2/2823: D0 C8        BNE $27ED
 C2/2825: 60           RTS

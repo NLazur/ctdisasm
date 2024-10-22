@@ -24,13 +24,13 @@ FF/367C: 00 00        BRK $00
 FF/367E: 00 00        BRK $00
 FF/3680: 00 00        BRK $00
 FF/3682: 18           CLC
-FF/3683: 10 18        BPL Local_FF369D
-FF/3685: 10 18        BPL Local_FF369F
-FF/3687: 10 FF        BPL Local_FF3688
+FF/3683: 10 18        BPL $369D
+FF/3685: 10 18        BPL $369F
+FF/3687: 10 FF        BPL $3688
 FF/3689: FE FE 11     INC $11FE,X
 FF/368C: 18           CLC
-FF/368D: 10 18        BPL Local_FF36A7
-FF/368F: 10 10        BPL Local_FF36A1
+FF/368D: 10 18        BPL $36A7
+FF/368F: 10 10        BPL $36A1
 FF/3691: 08           PHP
 FF/3692: 00 00        BRK $00
 FF/3694: 00 00        BRK $00
@@ -43,7 +43,7 @@ FF/36A0: 58           CLI
 FF/36A1: 34 1B        BIT $1B,X
 FF/36A3: 12 37        ORA ($37)
 FF/36A5: 2D 37 22     AND $2237
-FF/36A8: 22 11 00 00  JSR Routine_000011
+FF/36A8: 22 11 00 00  JSR $000011
 FF/36AC: 00 00        BRK $00
 FF/36AE: 00 00        BRK $00
 FF/36B0: 02 03        COP $03

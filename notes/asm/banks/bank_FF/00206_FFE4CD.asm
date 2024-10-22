@@ -68,5 +68,5 @@ FF/E587: F2 31        SBC ($31)
 FF/E589: FA           PLX
 FF/E58A: 71 7A        ADC ($7A),Y
 FF/E58C: 00 00        BRK $00
-FF/E58E: 2C D4 9C     BIT Local_FF9CD4
+FF/E58E: 2C D4 9C     BIT $9CD4
 FF/E591: 60           RTS

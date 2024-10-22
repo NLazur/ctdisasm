@@ -34,12 +34,12 @@ FD/9C8D: 08           PHP
 FD/9C8E: 0B           PHD
 FD/9C8F: 00 AA        BRK $AA
 FD/9C91: 03 AD        ORA $AD,S
-FD/9C93: 20 E8 5C     JSR Local_FD5CE8
+FD/9C93: 20 E8 5C     JSR $5CE8
 FD/9C96: AB           PLB
 FD/9C97: 07 00        ORA [$00]
 FD/9C99: AA           TAX
 FD/9C9A: 06 AD        ASL $AD
-FD/9C9C: 20 B3 A0     JSR Local_FDA0B3
+FD/9C9C: 20 B3 A0     JSR $A0B3
 FD/9C9F: 0D 0B 80     ORA $800B
 FD/9CA2: 8E 26 89     STX $8926
 FD/9CA5: 40           RTI

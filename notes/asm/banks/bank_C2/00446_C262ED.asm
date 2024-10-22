@@ -19,7 +19,7 @@ C2/630E: A8           TAY
 C2/630F: E2 20        SEP #$20
 C2/6311: B7 10        LDA [$10],Y
 C2/6313: 46 00        LSR $00
-C2/6315: B0 05        BCS Local_C2631C
+C2/6315: B0 05        BCS $631C
 C2/6317: 4A           LSR
 C2/6318: 4A           LSR
 C2/6319: 4A           LSR

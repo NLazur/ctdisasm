@@ -11,14 +11,14 @@ C6/8989: 00 30        BRK $30
 C6/898B: 21 C0        AND ($C0,X)
 C6/898D: 11 20        ORA ($20),Y
 C6/898F: 11 12        ORA ($12),Y
-C6/8991: 10 12        BPL Local_C689A5
+C6/8991: 10 12        BPL $89A5
 C6/8993: 29 19 62     AND #$6219
 C6/8996: FB           XCE
 C6/8997: 03 01        ORA $01,S
 C6/8999: F8           SED
 C6/899A: 17 40        ORA [$40],Y
 C6/899C: 21 22        AND ($22,X)
-C6/899E: 4C 4D 30     JMP Local_C6304D
+C6/899E: 4C 4D 30     JMP $304D
 C6/89A1: 21 CA        AND ($CA,X)
 C6/89A3: 21 29        AND ($29,X)
 C6/89A5: 08           PHP

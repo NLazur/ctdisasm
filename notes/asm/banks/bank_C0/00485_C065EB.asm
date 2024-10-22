@@ -7,4 +7,4 @@ C0/65EE: EB           XBA
 C0/65EF: BF 01 20 7F  LDA $7F2001,X
 C0/65F3: AA           TAX
 C0/65F4: B5 97        LDA $97,X
-C0/65F6: 80 BA        BRA Local_C065B2
+C0/65F6: 80 BA        BRA $65B2

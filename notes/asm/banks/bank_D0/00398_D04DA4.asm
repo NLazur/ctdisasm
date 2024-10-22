@@ -18,6 +18,6 @@ D0/4DC3: 15 02        ORA $02,X
 D0/4DC5: 09 01 04     ORA #$0401
 D0/4DC8: C8           INY
 D0/4DC9: 68           PLA
-D0/4DCA: 20 60 90     JSR Local_D09060
-D0/4DCD: 50 E0        BVC Local_D04DAF
+D0/4DCA: 20 60 90     JSR $9060
+D0/4DCD: 50 E0        BVC $4DAF
 D0/4DCF: 60           RTS

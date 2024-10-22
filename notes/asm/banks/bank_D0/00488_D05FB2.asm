@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 5FB2
 Routine_D05FB2:
 D0/5FB2: C0 40 80     CPY #$8040
-D0/5FB5: 80 80        BRA Local_D05F37
-D0/5FB7: 80 00        BRA Local_D05FB9
+D0/5FB5: 80 80        BRA $5F37
+D0/5FB7: 80 00        BRA $5FB9
 D0/5FB9: 00 00        BRK $00
 D0/5FBB: 00 00        BRK $00
 D0/5FBD: 00 00        BRK $00
@@ -14,7 +14,7 @@ D0/5FC7: 21 62        AND ($62,X)
 D0/5FC9: 63 00        ADC $00,S
 D0/5FCB: 42 85        WDM $85
 D0/5FCD: C5 C3        CMP $C3
-D0/5FCF: 82 F0 F0     BRL Routine_D050C2
+D0/5FCF: 82 F0 F0     BRL $D050C2
 D0/5FD2: F8           SED
 D0/5FD3: F8           SED
 D0/5FD4: B4 CC        LDY $CC,X
@@ -30,7 +30,7 @@ D0/5FEA: 6E 72 69     ROR $6972
 D0/5FED: 75 0F        ADC $0F,X
 D0/5FEF: 16 00        ASL $00,X
 D0/5FF1: 00 80        BRK $80
-D0/5FF3: 80 40        BRA Local_D06035
+D0/5FF3: 80 40        BRA $6035
 D0/5FF5: C0 B0 B0     CPY #$B0B0
 D0/5FF8: 6C 7C 7A     JMP ($7A7C)
 D0/5FFB: 76 BC        ROR $BC,X
@@ -44,11 +44,11 @@ D0/600B: 0E 05 0D     ASL $0D05
 D0/600E: 47 4E        EOR [$4E]
 D0/6010: 00 00        BRK $00
 D0/6012: A0 E0 D0     LDY #$D0E0
-D0/6015: 30 90        BMI Local_D05FA7
-D0/6017: 70 82        BVS Local_D05F9B
-D0/6019: 82 34 36     BRL Routine_D09650
+D0/6015: 30 90        BMI $5FA7
+D0/6017: 70 82        BVS $5F9B
+D0/6019: 82 34 36     BRL $D09650
 D0/601C: 92 9E        STA ($9E)
-D0/601E: 4C CC 00     JMP Local_D000CC
+D0/601E: 4C CC 00     JMP $00CC
 D0/6021: 00 01        BRK $01
 D0/6023: 01 01        ORA ($01,X)
 D0/6025: 02 03        COP $03
@@ -56,10 +56,10 @@ D0/6027: 04 0F        TSB $0F
 D0/6029: 08           PHP
 D0/602A: 07 08        ORA [$08]
 D0/602C: 0E 11 3F     ASL $3F11
-D0/602F: 20 44 7C     JSR Local_D07C44
-D0/6032: 10 F0        BPL Local_D06024
+D0/602F: 20 44 7C     JSR $7C44
+D0/6032: 10 F0        BPL $6024
 D0/6034: A0 60 D0     LDY #$D060
-D0/6037: 30 40        BMI Local_D06079
+D0/6037: 30 40        BMI $6079
 D0/6039: C0 A0 60     CPY #$60A0
-D0/603C: 80 80        BRA Local_D05FBE
+D0/603C: 80 80        BRA $5FBE
 D0/603E: 40           RTI

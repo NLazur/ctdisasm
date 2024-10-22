@@ -9,9 +9,9 @@ C2/84D6: 08           PHP
 C2/84D7: C2 30        REP #$30
 C2/84D9: 48           PHA
 C2/84DA: 08           PHP
-C2/84DB: 20 EC 84     JSR Local_C284EC
-C2/84DE: 20 45 85     JSR Local_C28545
-C2/84E1: 20 AE 85     JSR Local_C285AE
+C2/84DB: 20 EC 84     JSR $84EC
+C2/84DE: 20 45 85     JSR $8545
+C2/84E1: 20 AE 85     JSR $85AE
 C2/84E4: 28           PLP
 C2/84E5: 68           PLA
 C2/84E6: 28           PLP

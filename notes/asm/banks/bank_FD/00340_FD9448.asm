@@ -12,10 +12,10 @@ FD/945B: 08           PHP
 FD/945C: AD 40 1B     LDA $1B40
 FD/945F: 84 00        STY $00
 FD/9461: 27 8B        AND [$8B]
-FD/9463: 2C 09 08     BIT Local_FD0809
+FD/9463: 2C 09 08     BIT $0809
 FD/9466: 00 AA        BRK $AA
 FD/9468: 03 0A        ORA $0A,S
-FD/946A: 10 2B        BPL Local_FD9497
+FD/946A: 10 2B        BPL $9497
 FD/946C: 07 00        ORA [$00]
 FD/946E: AA           TAX
 FD/946F: 00 08        BRK $08
@@ -32,7 +32,7 @@ FD/9485: 28           PLP
 FD/9486: 09 1B 00     ORA #$001B
 FD/9489: AD 68 17     LDA $1768
 FD/948C: 44 09 02     MVP $09,$02
-FD/948F: F0 AA        BEQ Local_FD943B
+FD/948F: F0 AA        BEQ $943B
 FD/9491: 06 B2        ASL $B2
 FD/9493: 00 40        BRK $40
 FD/9495: 0E 02 20     ASL $2002
@@ -55,11 +55,11 @@ FD/94B3: 85 02        STA $02
 FD/94B5: 98           TYA
 FD/94B6: 02 00        COP $00
 FD/94B8: A2 99 02     LDX #$0299
-FD/94BB: B0 A2        BCS Local_FD945F
+FD/94BB: B0 A2        BCS $945F
 FD/94BD: 02 AF        COP $AF
 FD/94BF: 02 00        COP $00
-FD/94C1: B0 02        BCS Local_FD94C5
-FD/94C3: B0 28        BCS Local_FD94ED
+FD/94C1: B0 02        BCS $94C5
+FD/94C3: B0 28        BCS $94ED
 FD/94C5: C1 02        CMP ($02,X)
 FD/94C7: CD 02 00     CMP $0002
 FD/94CA: CE 02 B0     DEC $B002
@@ -71,7 +71,7 @@ FD/94D6: F9 02 06     SBC $0602,Y
 FD/94D9: 03 88        ORA $88,S
 FD/94DB: 06 03        ASL $03
 FD/94DD: 07 02        ORA [$02]
-FD/94DF: B0 16        BCS Local_FD94F7
+FD/94DF: B0 16        BCS $94F7
 FD/94E1: 03 24        ORA $24,S
 FD/94E3: 02 00        COP $00
 FD/94E5: 02 25        COP $25
@@ -83,15 +83,15 @@ FD/94EF: 00 08        BRK $08
 FD/94F1: 4A           LSR
 FD/94F2: 11 01        ORA ($01),Y
 FD/94F4: 00 01        BRK $01
-FD/94F6: 10 0B        BPL Local_FD9503
+FD/94F6: 10 0B        BPL $9503
 FD/94F8: 00 0A        BRK $0A
 FD/94FA: 08           PHP
 FD/94FB: 0A           ASL
 FD/94FC: 0A           ASL
 FD/94FD: 0A           ASL
 FD/94FE: 0C 0A 0E     TSB $0E0A
-FD/9501: 80 0A        BRA Local_FD950D
-FD/9503: 10 00        BPL Local_FD9505
+FD/9501: 80 0A        BRA $950D
+FD/9503: 10 00        BPL $9505
 FD/9505: B8           CLV
 FD/9506: 96 BB        STX $BB,Y
 FD/9508: FC 1B 08     JSR ($081B,X)
@@ -109,7 +109,7 @@ FD/951F: FF 04 08 00  SBC $000804,X
 FD/9523: 2B           PLD
 FD/9524: F1 50        SBC ($50),Y
 FD/9526: 00 00        BRK $00
-FD/9528: F0 F1        BEQ Local_FD951B
+FD/9528: F0 F1        BEQ $951B
 FD/952A: AD 08 02     LDA $0208
 FD/952D: 0C 43 02     TSB $0243
 FD/9530: 00 08        BRK $08
@@ -119,8 +119,8 @@ FD/9536: 0E 43 02     ASL $0243
 FD/9539: 00 0A        BRK $0A
 FD/953B: 43 AD        EOR $AD,S
 FD/953D: 12 FE        ORA ($FE)
-FD/953F: F0 C0        BEQ Local_FD9501
-FD/9541: 70 60        BVS Local_FD95A3
+FD/953F: F0 C0        BEQ $9501
+FD/9541: 70 60        BVS $95A3
 FD/9543: 2B           PLD
 FD/9544: 2B           PLD
 FD/9545: C0 70 2D     CPY #$2D70
@@ -129,7 +129,7 @@ FD/954B: 08           PHP
 FD/954C: 2B           PLD
 FD/954D: 02 2B        COP $2B
 FD/954F: 24 00        BIT $00
-FD/9551: 10 43        BPL Local_FD9596
+FD/9551: 10 43        BPL $9596
 FD/9553: AD 18 F0     LDA $F018
 FD/9556: 01 00        ORA ($00,X)
 FD/9558: F2 F1        SBC ($F1)
@@ -139,25 +139,25 @@ FD/955F: 08           PHP
 FD/9560: 00 DF        BRK $DF
 FD/9562: 59 02 13     EOR $1302,Y
 FD/9565: 08           PHP
-FD/9566: 10 06        BPL Local_FD956E
+FD/9566: 10 06        BPL $956E
 FD/9568: DF 00 8E 02  CMP $028E00,X
 FD/956C: 15 0B        ORA $0B,X
-FD/956E: 10 89        BPL Local_FD94F9
+FD/956E: 10 89        BPL $94F9
 FD/9570: EA           NOP
 FD/9571: 00 08        BRK $08
 FD/9573: EB           XBA
 FD/9574: 00 FF        BRK $FF
 FD/9576: 6D 08 AD     ADC $AD08
-FD/9579: 20 EA 3A     JSR Local_FD3AEA
+FD/9579: 20 EA 3A     JSR $3AEA
 FD/957C: 00 AD        BRK $AD
-FD/957E: 80 F0        BRA Local_FD9570
+FD/957E: 80 F0        BRA $9570
 FD/9580: FC AD 40     JSR ($40AD,X)
 FD/9583: EB           XBA
 FD/9584: 00 02        BRK $02
-FD/9586: 30 0B        BMI Local_FD9593
+FD/9586: 30 0B        BMI $9593
 FD/9588: 00 70        BRK $70
 FD/958A: EB           XBA
 FD/958B: 00 00        BRK $00
 FD/958D: EA           NOP
-FD/958E: 22 00 EB 80  JSR Routine_80EB00
+FD/958E: 22 00 EB 80  JSR $80EB00
 FD/9592: 40           RTI

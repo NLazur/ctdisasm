@@ -6,7 +6,7 @@ C7/889B: 32 51        AND ($51)
 C7/889D: 14 38        TRB $38
 C7/889F: 34 71        BIT $71,X
 C7/88A1: 52 60        EOR ($60)
-C7/88A3: 50 13        BVC Local_C788B8
+C7/88A3: 50 13        BVC $88B8
 C7/88A5: 0C 6E 48     TSB $486E
 C7/88A8: 1D F1 FF     ORA $FFF1,X
 C7/88AB: ED 1D DE     SBC $DE1D
@@ -19,7 +19,7 @@ C7/88BA: C2 B0        REP #$B0
 C7/88BC: 0A           ASL
 C7/88BD: 2F 2F C5 F0  AND $F0C52F
 C7/88C1: 03 48        ORA $48,S
-C7/88C3: 20 02 01     JSR Local_C70102
+C7/88C3: 20 02 01     JSR $0102
 C7/88C6: 11 5D        ORA ($5D),Y
 C7/88C8: 31 12        AND ($12),Y
 C7/88CA: 12 48        ORA ($48)

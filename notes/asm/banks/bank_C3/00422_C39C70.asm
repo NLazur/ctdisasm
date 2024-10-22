@@ -1,14 +1,14 @@
 ; Bank: C3 | Start Address: 9C70
 Routine_C39C70:
 C3/9C70: 0D 10 CD     ORA $CD10
-C3/9C73: 50 02        BVC Local_C39C77
-C3/9C75: B0 20        BCS Local_C39C97
+C3/9C73: 50 02        BVC $9C77
+C3/9C75: B0 20        BCS $9C97
 C3/9C77: 08           PHP
 C3/9C78: 6A           ROR
-C3/9C79: F0 6A        BEQ Local_C39CE5
-C3/9C7B: 80 28        BRA Local_C39CA5
+C3/9C79: F0 6A        BEQ $9CE5
+C3/9C7B: 80 28        BRA $9CA5
 C3/9C7D: 46 01        LSR $01
-C3/9C7F: 22 F0 8C B0  JSR Routine_B08CF0
+C3/9C7F: 22 F0 8C B0  JSR $B08CF0
 C3/9C83: 38           SEC
 C3/9C84: 01 15        ORA ($15,X)
 C3/9C86: E0 06        CPX #$06
@@ -16,13 +16,13 @@ C3/9C88: 05 00        ORA $00
 C3/9C8A: A3 00        LDA $00,S
 C3/9C8C: 0A           ASL
 C3/9C8D: 0D 52 4E     ORA $4E52
-C3/9C90: 70 E4        BVS Local_C39C76
+C3/9C90: 70 E4        BVS $9C76
 C3/9C92: 0A           ASL
 C3/9C93: C6 7B        DEC $7B
 C3/9C95: 01 A0        ORA ($A0,X)
 C3/9C97: 39 01 68     AND $6801,Y
 C3/9C9A: 00 0C        BRK $0C
-C3/9C9C: 22 00 0A 23  JSR Routine_230A00
+C3/9C9C: 22 00 0A 23  JSR $230A00
 C3/9CA0: 0D 24 08     ORA $0824
 C3/9CA3: 0A           ASL
 C3/9CA4: 25 0A        AND $0A
@@ -31,7 +31,7 @@ C3/9CA8: 0A           ASL
 C3/9CA9: 27 0D        AND [$0D]
 C3/9CAB: 28           PLP
 C3/9CAC: 0C 4E BE     TSB $BE4E
-C3/9CAF: 80 E4        BRA Local_C39C95
+C3/9CAF: 80 E4        BRA $9C95
 C3/9CB1: C6 47        DEC $47
 C3/9CB3: 18           CLC
 C3/9CB4: 08           PHP
@@ -44,13 +44,13 @@ C3/9CBF: 12 10        ORA ($10)
 C3/9CC1: 0F 40 F7 D9  ORA $D9F740
 C3/9CC5: 6C 01 00     JMP ($0001)
 C3/9CC8: 00 23        BRK $23
-C3/9CCA: 10 E3        BPL Local_C39CAF
+C3/9CCA: 10 E3        BPL $9CAF
 C3/9CCC: 00 04        BRK $04
 C3/9CCE: 08           PHP
-C3/9CCF: F0 10        BEQ Local_C39CE1
-C3/9CD1: 20 86 01     JSR Local_C30186
+C3/9CCF: F0 10        BEQ $9CE1
+C3/9CD1: 20 86 01     JSR $0186
 C3/9CD4: 43 10        EOR $10,S
-C3/9CD6: 30 11        BMI Local_C39CE9
+C3/9CD6: 30 11        BMI $9CE9
 C3/9CD8: 1A           INC
 C3/9CD9: 51 0B        EOR ($0B),Y
 C3/9CDB: 00 C6        BRK $C6
@@ -62,7 +62,7 @@ C3/9CE8: 1F 11 47 00  ORA $004711,X
 C3/9CEC: D2 00        CMP ($00)
 C3/9CEE: 24 FB        BIT $FB
 C3/9CF0: 0C 00 00     TSB $0000
-C3/9CF3: 10 12        BPL Local_C39D07
+C3/9CF3: 10 12        BPL $9D07
 C3/9CF5: 47 00        EOR [$00]
 C3/9CF7: 11 48        ORA ($48),Y
 C3/9CF9: 00 11        BRK $11
@@ -90,11 +90,11 @@ C3/9D25: 08           PHP
 C3/9D26: B1 0C        LDA ($0C),Y
 C3/9D28: 06 30        ASL $30
 C3/9D2A: 38           SEC
-C3/9D2B: 20 38 20     JSR Local_C32038
+C3/9D2B: 20 38 20     JSR $2038
 C3/9D2E: 17 04        ORA [$04],Y
 C3/9D30: CF 22 01 00  CMP $000122
 C3/9D34: 0E 32 0C     ASL $0C32
-C3/9D37: 10 0F        BPL Local_C39D48
+C3/9D37: 10 0F        BPL $9D48
 C3/9D39: 23 0C        AND $0C,S
 C3/9D3B: 00 38        BRK $38
 C3/9D3D: 38           SEC
@@ -104,7 +104,7 @@ C3/9D41: D8           CLD
 C3/9D42: 06 11        ASL $11
 C3/9D44: 43 1B        EOR $1B,S
 C3/9D46: 52 02        EOR ($02)
-C3/9D48: B0 2C        BCS Local_C39D76
+C3/9D48: B0 2C        BCS $9D76
 C3/9D4A: 00 A8        BRK $A8
 C3/9D4C: 01 F8        ORA ($F8,X)
 C3/9D4E: 01 38        ORA ($38,X)
@@ -116,7 +116,7 @@ C3/9D57: 25 A4        AND $A4
 C3/9D59: 1B           TCS
 C3/9D5A: 00 07        BRK $07
 C3/9D5C: 01 39        ORA ($39,X)
-C3/9D5E: 10 36        BPL Local_C39D96
+C3/9D5E: 10 36        BPL $9D96
 C3/9D60: D5 0C        CMP $0C,X
 C3/9D62: 36 2B        ROL $2B,X
 C3/9D64: 0D 2C 40     ORA $402C
@@ -124,86 +124,86 @@ C3/9D67: 88           DEY
 C3/9D68: 01 50        ORA ($50,X)
 C3/9D6A: 02 39        COP $39
 C3/9D6C: 00 24        BRK $24
-C3/9D6E: 90 01        BCC Local_C39D71
+C3/9D6E: 90 01        BCC $9D71
 C3/9D70: AD 24 10     LDA $1024
 C3/9D73: 01 24        ORA ($24,X)
-C3/9D75: F0 48        BEQ Local_C39DBF
-C3/9D77: 90 02        BCC Local_C39D7B
+C3/9D75: F0 48        BEQ $9DBF
+C3/9D77: 90 02        BCC $9D7B
 C3/9D79: 48           PHA
-C3/9D7A: 10 02        BPL Local_C39D7E
+C3/9D7A: 10 02        BPL $9D7E
 C3/9D7C: 24 F0        BIT $F0
 C3/9D7E: B5 6C        LDA $6C,X
-C3/9D80: 90 03        BCC Local_C39D85
+C3/9D80: 90 03        BCC $9D85
 C3/9D82: 6C 10 03     JMP ($0310)
 C3/9D85: 24 F0        BIT $F0
-C3/9D87: 90 90        BCC Local_C39D19
+C3/9D87: 90 90        BCC $9D19
 C3/9D89: 04 90        TSB $90
-C3/9D8B: 10 D6        BPL Local_C39D63
+C3/9D8B: 10 D6        BPL $9D63
 C3/9D8D: 04 24        TSB $24
-C3/9D8F: F0 B4        BEQ Local_C39D45
-C3/9D91: 90 05        BCC Local_C39D98
+C3/9D8F: F0 B4        BEQ $9D45
+C3/9D91: 90 05        BCC $9D98
 C3/9D93: B4 10        LDY $10,X
 C3/9D95: 05 24        ORA $24
-C3/9D97: F0 D8        BEQ Local_C39D71
-C3/9D99: 90 1A        BCC Local_C39DB5
+C3/9D97: F0 D8        BEQ $9D71
+C3/9D99: 90 1A        BCC $9DB5
 C3/9D9B: 06 D8        ASL $D8
-C3/9D9D: 10 06        BPL Local_C39DA5
+C3/9D9D: 10 06        BPL $9DA5
 C3/9D9F: 24 F0        BIT $F0
 C3/9DA1: FA           PLX
-C3/9DA2: 20 2E E9     JSR Local_C3E92E
+C3/9DA2: 20 2E E9     JSR $E92E
 C3/9DA5: A2 01        LDX #$01
 C3/9DA7: F2 03        SBC ($03)
 C3/9DA9: ED 2B FD     SBC $FD2B
 C3/9DAC: FF 0D 31 04  SBC $04310D,X
 C3/9DB0: 00 0D        BRK $0D
-C3/9DB2: 30 04        BMI Local_C39DB8
-C3/9DB4: 30 00        BMI Local_C39DB6
+C3/9DB2: 30 04        BMI $9DB8
+C3/9DB4: 30 00        BMI $9DB6
 C3/9DB6: 31 01        AND ($01),Y
 C3/9DB8: 34 A0        BIT $A0,X
 C3/9DBA: C8           INY
 C3/9DBB: 79 1B 30     ADC $301B,Y
 C3/9DBE: F9 0D 10     SBC $100D,Y
 C3/9DC1: 06 0D        ASL $0D
-C3/9DC3: 90 8A        BCC Local_C39D4F
+C3/9DC3: 90 8A        BCC $9D4F
 C3/9DC5: 03 1A        ORA $1A,S
-C3/9DC7: 90 09        BCC Local_C39DD2
+C3/9DC7: 90 09        BCC $9DD2
 C3/9DC9: 27 50        AND [$50]
 C3/9DCB: 1B           TCS
 C3/9DCC: 31 CC        AND ($CC),Y
 C3/9DCE: 34 40        BIT $40,X
 C3/9DD0: 01 39        ORA ($39,X)
-C3/9DD2: 20 37 2C     JSR Local_C32C37
-C3/9DD5: 90 01        BCC Local_C39DD8
+C3/9DD2: 20 37 2C     JSR $2C37
+C3/9DD5: 90 01        BCC $9DD8
 C3/9DD7: 48           PHA
 C3/9DD8: 02 30        COP $30
-C3/9DDA: 80 00        BRA Local_C39DDC
+C3/9DDA: 80 00        BRA $9DDC
 C3/9DDC: 0D 31 1B     ORA $1B31
 C3/9DDF: 2E 26 B4     ROL $B426
 C3/9DE2: 4D 04 10     EOR $1004
 C3/9DE5: F7 95        SBC [$95],Y
 C3/9DE7: FE FF 53     INC $53FF,X
-C3/9DEA: 30 31        BMI Local_C39E1D
+C3/9DEA: 30 31        BMI $9E1D
 C3/9DEC: FB           XCE
 C3/9DED: 37 24        AND [$24],Y
-C3/9DEF: 2C 68 1D     BIT Local_C31D68
+C3/9DEF: 2C 68 1D     BIT $1D68
 C3/9DF2: 05 01        ORA $01
 C3/9DF4: 04 13        TSB $13
 C3/9DF6: 46 9B        LSR $9B
 C3/9DF8: 04 50        TSB $50
-C3/9DFA: 80 C0        BRA Local_C39DBC
+C3/9DFA: 80 C0        BRA $9DBC
 C3/9DFC: 7E 0A B3     ROR $B30A,X
 C3/9DFF: 05 08        ORA $08
-C3/9E01: 20 05 04     JSR Local_C30405
+C3/9E01: 20 05 04     JSR $0405
 C3/9E04: 8A           TXA
 C3/9E05: A0 0C        LDY #$0C
-C3/9E07: 80 C0        BRA Local_C39DC9
+C3/9E07: 80 C0        BRA $9DC9
 C3/9E09: 18           CLC
-C3/9E0A: 70 1A        BVS Local_C39E26
+C3/9E0A: 70 1A        BVS $9E26
 C3/9E0C: 56 0D        LSR $0D,X
 C3/9E0E: 07 06        ORA [$06]
 C3/9E10: 00 D8        BRK $D8
 C3/9E12: 01 0D        ORA ($0D,X)
-C3/9E14: 10 C0        BPL Local_C39DD6
+C3/9E14: 10 C0        BPL $9DD6
 C3/9E16: 0A           ASL
 C3/9E17: 11 01        ORA ($01),Y
 C3/9E19: 8A           TXA
@@ -211,7 +211,7 @@ C3/9E1A: 06 99        ASL $99
 C3/9E1C: 18           CLC
 C3/9E1D: 07 42        ORA [$42]
 C3/9E1F: 00 B1        BRK $B1
-C3/9E21: 30 7E        BMI Local_C39EA1
+C3/9E21: 30 7E        BMI $9EA1
 C3/9E23: F5 25        SBC $25,X
 C3/9E25: 03 F0        ORA $F0,S
 C3/9E27: 05 C5        ORA $C5
@@ -226,7 +226,7 @@ C3/9E37: 16 19        ASL $19,X
 C3/9E39: 7E A5 DF     ROR $DFA5,X
 C3/9E3C: 06 99        ASL $99
 C3/9E3E: 06 1D        ASL $1D
-C3/9E40: 20 F2 05     JSR Local_C305F2
+C3/9E40: 20 F2 05     JSR $05F2
 C3/9E43: 1D F0 B6     ORA $B6F0,X
 C3/9E46: 06 1A        ASL $1A
 C3/9E48: 52 99        EOR ($99)
@@ -236,5 +236,5 @@ C3/9E4F: E0 7F        CPX #$7F
 C3/9E51: 1B           TCS
 C3/9E52: 76 31        ROR $31,X
 C3/9E54: A1 40        LDA ($40,X)
-C3/9E56: 30 31        BMI Local_C39E89
+C3/9E56: 30 31        BMI $9E89
 C3/9E58: 40           RTI

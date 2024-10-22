@@ -6,7 +6,7 @@ D0/24D4: A0 60        LDY #$60
 D0/24D6: A0 60        LDY #$60
 D0/24D8: C5 C6        CMP $C6
 D0/24DA: 79 7E 33     ADC $337E,Y
-D0/24DD: 3C 0C 0F     BIT Local_D00F0C,X
+D0/24DD: 3C 0C 0F     BIT $0F0C,X
 D0/24E0: 03 03        ORA $03,S
 D0/24E2: 00 00        BRK $00
 D0/24E4: 00 00        BRK $00
@@ -27,5 +27,5 @@ D0/2500: 02 03        COP $03
 D0/2502: 02 03        COP $03
 D0/2504: 02 03        COP $03
 D0/2506: 05 06        ORA $06
-D0/2508: 80 80        BRA Local_D0248A
+D0/2508: 80 80        BRA $248A
 D0/250A: 40           RTI

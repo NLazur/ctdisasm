@@ -4,7 +4,7 @@ D1/CDFB: 03 78        ORA $78,S
 D1/CDFD: 00 DB        BRK $DB
 D1/CDFF: 06 CF        ASL $CF
 D1/CE01: 36 3D        ROL $3D,X
-D1/CE03: B0 31        BCS Local_D1CE36
+D1/CE03: B0 31        BCS $CE36
 D1/CE05: EC 03 6C     CPX $6C03
 D1/CE08: 1B           TCS
 D1/CE09: 00 D8        BRK $D8
@@ -12,14 +12,14 @@ D1/CE0B: C0 C6        CPY #$C6
 D1/CE0D: C0 19        CPY #$19
 D1/CE0F: 1A           INC
 D1/CE10: 2D 6D 21     AND $216D
-D1/CE13: 22 AD ED 19  JSR Routine_19EDAD
+D1/CE13: 22 AD ED 19  JSR $19EDAD
 D1/CE17: 1A           INC
 D1/CE18: 18           CLC
 D1/CE19: 58           CLI
 D1/CE1A: 21 22        AND ($22,X)
 D1/CE1C: 19 1A 18     ORA $181A,Y
 D1/CE1F: 58           CLI
-D1/CE20: 20 D8 1D     JSR Local_D11DD8
+D1/CE20: 20 D8 1D     JSR $1DD8
 D1/CE23: 1E 21 22     ASL $2221,X
 D1/CE26: 1B           TCS
 D1/CE27: 1C 20 D8     TRB $D820

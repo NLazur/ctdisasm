@@ -1,11 +1,11 @@
 ; Bank: C2 | Start Address: 9137
 Routine_C29137:
 C2/9137: 08           PHP
-C2/9138: 20 6E 91     JSR Local_C2916E
+C2/9138: 20 6E 91     JSR $916E
 C2/913B: E2 20        SEP #$20
 C2/913D: AD BA 9A     LDA $9ABA
 C2/9140: C9 A8        CMP #$A8
-C2/9142: D0 03        BNE Local_C29147
+C2/9142: D0 03        BNE $9147
 C2/9144: 0E 21 9B     ASL $9B21
 C2/9147: C2 30        REP #$30
 C2/9149: A4 6F        LDY $6F

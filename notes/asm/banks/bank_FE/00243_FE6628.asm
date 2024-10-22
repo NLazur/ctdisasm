@@ -1,7 +1,7 @@
 ; Bank: FE | Start Address: 6628
 Routine_FE6628:
 FE/6628: C3 16        CMP $16,S
-FE/662A: 3C B7 EA     BIT Local_FEEAB7,X
+FE/662A: 3C B7 EA     BIT $EAB7,X
 FE/662D: A3 80        LDA $80,S
 FE/662F: 01 0E        ORA ($0E,X)
 FE/6631: 1F BF 7E 1D  ORA $1D7EBF,X

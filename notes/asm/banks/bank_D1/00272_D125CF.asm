@@ -8,7 +8,7 @@ D1/25D8: 0C 08 CC     TSB $CC08
 D1/25DB: 02 00        COP $00
 D1/25DD: E2 0C        SEP #$0C
 D1/25DF: 18           CLC
-D1/25E0: 20 80 CE     JSR Local_D1CE80
+D1/25E0: 20 80 CE     JSR $CE80
 D1/25E3: 00 CE        BRK $CE
 D1/25E5: 00 E4        BRK $E4
 D1/25E7: 00 EE        BRK $EE

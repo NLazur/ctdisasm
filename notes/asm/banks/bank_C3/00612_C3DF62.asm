@@ -8,7 +8,7 @@ C3/DF6B: CD 41 40     CMP $4041
 C3/DF6E: 06 2D        ASL $2D
 C3/DF70: A4 1C        LDY $1C
 C3/DF72: 58           CLI
-C3/DF73: 30 20        BMI Local_C3DF95
+C3/DF73: 30 20        BMI $DF95
 C3/DF75: 18           CLC
 C3/DF76: F6 00        INC $00,X
 C3/DF78: 11 0D        ORA ($0D),Y

@@ -1,7 +1,7 @@
 ; Bank: C6 | Start Address: A5CD
 Routine_C6A5CD:
 C6/A5CD: 92 81        STA ($81)
-C6/A5CF: B0 15        BCS Local_C6A5E6
+C6/A5CF: B0 15        BCS $A5E6
 C6/A5D1: 05 08        ORA $08
 C6/A5D3: DC 81 01     JMP [$0181]
 C6/A5D6: 6C 06 CF     JMP ($CF06)

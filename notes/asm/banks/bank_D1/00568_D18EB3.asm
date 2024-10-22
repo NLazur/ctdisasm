@@ -1,11 +1,11 @@
 ; Bank: D1 | Start Address: 8EB3
 Routine_D18EB3:
-D1/8EB3: 80 70        BRA Local_D18F25
+D1/8EB3: 80 70        BRA $8F25
 D1/8EB5: 00 8A        BRK $8A
 D1/8EB7: 41 80        EOR ($80,X)
-D1/8EB9: 70 04        BVS Local_D18EBF
+D1/8EB9: 70 04        BVS $8EBF
 D1/8EBB: 9A           TXS
-D1/8EBC: 10 CB        BPL Local_D18E89
+D1/8EBC: 10 CB        BPL $8E89
 D1/8EBE: C5 8E        CMP $8E
 D1/8EC0: 9B           TXY
 D1/8EC1: 07 CA        ORA [$CA]
@@ -14,8 +14,8 @@ D1/8EC5: 9B           TXY
 D1/8EC6: 06 98        ASL $98
 D1/8EC8: AA           TAX
 D1/8EC9: 99 0A 96     STA $960A,Y
-D1/8ECC: F0 9C        BEQ Local_D18E6A
-D1/8ECE: 80 00        BRA Local_D18ED0
+D1/8ECC: F0 9C        BEQ $8E6A
+D1/8ECE: 80 00        BRA $8ED0
 D1/8ED0: 9C 80 1F     STZ $1F80
 D1/8ED3: E6 01        INC $01
 D1/8ED5: 8E 54 10     STX $1054

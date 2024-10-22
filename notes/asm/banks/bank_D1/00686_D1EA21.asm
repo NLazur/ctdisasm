@@ -28,6 +28,6 @@ D1/EA50: 05 0D        ORA $0D
 D1/EA52: 98           TYA
 D1/EA53: 05 0D        ORA $0D
 D1/EA55: 8C 05 0D     STY $0D05
-D1/EA58: 80 05        BRA Local_D1EA5F
-D1/EA5A: F0 01        BEQ Local_D1EA5D
+D1/EA58: 80 05        BRA $EA5F
+D1/EA5A: F0 01        BEQ $EA5D
 D1/EA5C: 6B           RTL

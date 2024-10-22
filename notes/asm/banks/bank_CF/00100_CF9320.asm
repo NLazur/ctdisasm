@@ -16,13 +16,13 @@ CF/9333: 2B           PLD
 CF/9334: EA           NOP
 CF/9335: 2B           PLD
 CF/9336: 04 20        TSB $20
-CF/9338: 4C AB 4C     JMP Local_CF4CAB
+CF/9338: 4C AB 4C     JMP $4CAB
 CF/933B: EB           XBA
-CF/933C: 4C AB 4C     JMP Local_CF4CAB
+CF/933C: 4C AB 4C     JMP $4CAB
 CF/933F: EB           XBA
 CF/9340: EC 2B EE     CPX $EE2B
 CF/9343: 2B           PLD
-CF/9344: F0 2B        BEQ Local_CF9371
+CF/9344: F0 2B        BEQ $9371
 CF/9346: F2 2B        SBC ($2B)
 CF/9348: F4 2B F6     PEA $F62B
 CF/934B: 2B           PLD
@@ -34,5 +34,5 @@ CF/9350: FC 2B FE     JSR ($FE2B,X)
 CF/9353: 2B           PLD
 CF/9354: 00 2C        BRK $2C
 CF/9356: 02 2C        COP $2C
-CF/9358: 4C 2B 4C     JMP Local_CF4C2B
+CF/9358: 4C 2B 4C     JMP $4C2B
 CF/935B: 6B           RTL

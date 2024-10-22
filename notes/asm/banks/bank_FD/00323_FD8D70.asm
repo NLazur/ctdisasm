@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 8D70
 Routine_FD8D70:
-FD/8D70: 80 69        BRA Local_FD8DDB
+FD/8D70: 80 69        BRA $8DDB
 FD/8D72: 00 73        BRK $73
 FD/8D74: 01 C6        ORA ($C6,X)
 FD/8D76: E0 02 7F     CPX #$7F02

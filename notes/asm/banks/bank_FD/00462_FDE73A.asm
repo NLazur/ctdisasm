@@ -28,5 +28,5 @@ FD/E771: E2 20        SEP #$20
 FD/E773: E8           INX
 FD/E774: E8           INX
 FD/E775: 88           DEY
-FD/E776: D0 C6        BNE Local_FDE73E
+FD/E776: D0 C6        BNE $E73E
 FD/E778: 60           RTS

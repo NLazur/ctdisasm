@@ -14,8 +14,8 @@ C0/7600: A5 0A        LDA $0A
 C0/7602: 85 58        STA $58
 C0/7604: A9 10        LDA #$10
 C0/7606: 85 5C        STA $5C
-C0/7608: 20 12 76     JSR Local_C07612
+C0/7608: 20 12 76     JSR $7612
 C0/760B: E6 5A        INC $5A
 C0/760D: C6 5E        DEC $5E
-C0/760F: D0 EF        BNE Local_C07600
+C0/760F: D0 EF        BNE $7600
 C0/7611: 60           RTS

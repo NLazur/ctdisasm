@@ -1,11 +1,11 @@
 ; Bank: C0 | Start Address: 0A14
 Routine_C00A14:
 C0/0A14: A5 BB        LDA $BB         ; load map bg3 tile assembly
-C0/0A16: D0 37        BNE Local_C00A4F
+C0/0A16: D0 37        BNE $0A4F
 C0/0A18: A6 FE        LDX $FE
 C0/0A1A: BF 02 00 F6  LDA $F60002,X
 C0/0A1E: C9 FF        CMP #$FF
-C0/0A20: F0 2D        BEQ Local_C00A4F
+C0/0A20: F0 2D        BEQ $0A4F
 C0/0A22: C2 30        REP #$30
 C0/0A24: 29 FF 00     AND #$00FF
 C0/0A27: 85 D9        STA $D9
@@ -22,5 +22,5 @@ C0/0A3E: BF C2 21 F6  LDA $F621C2,X
 C0/0A42: 8D 02 03     STA $0302
 C0/0A45: A9 7E        LDA #$7E
 C0/0A47: 8D 05 03     STA $0305
-C0/0A4A: 22 02 00 C3  JSR Routine_C30002
+C0/0A4A: 22 02 00 C3  JSR $C30002
 C0/0A4E: 60           RTS

@@ -2,24 +2,24 @@
 Routine_FEED6E:
 FE/ED6E: 18           CLC
 FE/ED6F: 32 18        AND ($18)
-FE/ED71: 10 50        BPL Local_FEEDC3
+FE/ED71: 10 50        BPL $EDC3
 FE/ED73: 24 22        BIT $22
 FE/ED75: 24 09        BIT $09
 FE/ED77: 56 08        LSR $08,X
 FE/ED79: 08           PHP
 FE/ED7A: 18           CLC
 FE/ED7B: A1 08        LDA ($08,X)
-FE/ED7D: 10 00        BPL Local_FEED7F
+FE/ED7D: 10 00        BPL $ED7F
 FE/ED7F: 00 26        BRK $26
 FE/ED81: 26 10        ROL $10
-FE/ED83: 20 20 70     JSR Local_FE7020
+FE/ED83: 20 20 70     JSR $7020
 FE/ED86: 0B           PHD
 FE/ED87: 83 2E        STA $2E,S
 FE/ED89: 0A           ASL
 FE/ED8A: 7E 3D 80     ROR $803D,X
-FE/ED8D: 80 0C        BRA Local_FEED9B
+FE/ED8D: 80 0C        BRA $ED9B
 FE/ED8F: 04 0A        TSB $0A
-FE/ED91: F0 07        BEQ Local_FEED9A
+FE/ED91: F0 07        BEQ $ED9A
 FE/ED93: FD 10 80     SBC $8010,X
 FE/ED96: 0C 00 18     TSB $1800
 FE/ED99: 78           SEI
@@ -29,7 +29,7 @@ FE/ED9D: 12 1A        ORA ($1A)
 FE/ED9F: E7 28        SBC [$28]
 FE/EDA1: F3 19        SBC ($19,S),Y
 FE/EDA3: FF A6 28 10  SBC $1028A6,X
-FE/EDA7: 10 25        BPL Local_FEEDCE
+FE/EDA7: 10 25        BPL $EDCE
 FE/EDA9: 02 FF        COP $FF
 FE/EDAB: 8E 01 F0     STX $F001
 FE/EDAE: 01 F0        ORA ($F0,X)
@@ -40,7 +40,7 @@ FE/EDB6: F7 2A        SBC [$2A],Y
 FE/EDB8: A4 04        LDY $04
 FE/EDBA: 0C F1 85     TSB $85F1
 FE/EDBD: 4E F9 01     LSR $01F9
-FE/EDC0: F0 09        BEQ Local_FEEDCB
+FE/EDC0: F0 09        BEQ $EDCB
 FE/EDC2: 19 01 15     ORA $1501,Y
 FE/EDC5: 58           CLI
 FE/EDC6: 0E 10 AE     ASL $AE10
@@ -57,9 +57,9 @@ FE/EDDC: BC 0E 4A     LDY $4A0E,X
 FE/EDDF: 59 44 15     EOR $1544,Y
 FE/EDE2: 02 01        COP $01
 FE/EDE4: D5 00        CMP $00,X
-FE/EDE6: 30 04        BMI Local_FEEDEC
+FE/EDE6: 30 04        BMI $EDEC
 FE/EDE8: A4 42        LDY $42
 FE/EDEA: 25 08        AND $08
 FE/EDEC: 18           CLC
-FE/EDED: 22 00 12 17  JSR Routine_171200
+FE/EDED: 22 00 12 17  JSR $171200
 FE/EDF1: 40           RTI

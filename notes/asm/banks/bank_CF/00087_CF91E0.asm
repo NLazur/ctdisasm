@@ -9,5 +9,5 @@ CF/91EA: 58           CLI
 CF/91EB: 2B           PLD
 CF/91EC: 5A           PHY
 CF/91ED: 2B           PLD
-CF/91EE: 5C 2B 5E 2B  JMP Routine_2B5E2B
+CF/91EE: 5C 2B 5E 2B  JMP $2B5E2B
 CF/91F2: 60           RTS

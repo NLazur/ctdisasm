@@ -9,7 +9,7 @@ C7/7299: C2 DA        REP #$DA
 C7/729B: F3 C4        SBC ($C4,S),Y
 C7/729D: 67 D4        ADC [$D4]
 C7/729F: D2 DC        CMP ($DC)
-C7/72A1: 10 C9        BPL Local_C7726C
+C7/72A1: 10 C9        BPL $726C
 C7/72A3: 01 05        ORA ($05,X)
 C7/72A5: 7F D6 04 25  ADC $2504D6,X
 C7/72A9: 25 BF        AND $BF

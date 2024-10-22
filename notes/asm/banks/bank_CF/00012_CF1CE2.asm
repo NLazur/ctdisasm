@@ -1,8 +1,8 @@
 ; Bank: CF | Start Address: 1CE2
 Routine_CF1CE2:
 CF/1CE2: C0 40 80     CPY #$8040
-CF/1CE5: 80 80        BRA Local_CF1C67
-CF/1CE7: 80 00        BRA Local_CF1CE9
+CF/1CE5: 80 80        BRA $1C67
+CF/1CE7: 80 00        BRA $1CE9
 CF/1CE9: 00 00        BRK $00
 CF/1CEB: 00 00        BRK $00
 CF/1CED: 00 00        BRK $00
@@ -49,7 +49,7 @@ CF/1D66: 00 00        BRK $00
 CF/1D68: 00 04        BRK $04
 CF/1D6A: 00 0A        BRK $0A
 CF/1D6C: 00 09        BRK $09
-CF/1D6E: 10 19        BPL Local_CF1D89
+CF/1D6E: 10 19        BPL $1D89
 CF/1D70: 00 00        BRK $00
 CF/1D72: 00 00        BRK $00
 CF/1D74: 00 00        BRK $00

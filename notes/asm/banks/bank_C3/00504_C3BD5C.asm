@@ -2,7 +2,7 @@
 Routine_C3BD5C:
 C3/BD5C: 0D 12 30     ORA $3012
 C3/BD5F: 1B           TCS
-C3/BD60: 22 CA 52 38  JSR Routine_3852CA
+C3/BD60: 22 CA 52 38  JSR $3852CA
 C3/BD64: 48           PHA
 C3/BD65: A5 38        LDA $38
 C3/BD67: 6A           ROR

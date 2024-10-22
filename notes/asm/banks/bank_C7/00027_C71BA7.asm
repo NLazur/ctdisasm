@@ -1,7 +1,7 @@
 ; Bank: C7 | Start Address: 1BA7
 Routine_C71BA7:
 C7/1BA7: 29 3E        AND #$3E
-C7/1BA9: 2C 28 3B     BIT Local_C73B28
+C7/1BA9: 2C 28 3B     BIT $3B28
 C7/1BAC: 54 00 00     MVN $00,$00
 C7/1BAF: 00 00        BRK $00
 C7/1BB1: 00 00        BRK $00

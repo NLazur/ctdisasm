@@ -51,11 +51,11 @@ C0/7A8B: 1A           INC
 C0/7A8C: 25 20        AND $20
 C0/7A8E: 85 52        STA $52
 C0/7A90: C6 5C        DEC $5C
-C0/7A92: F0 07        BEQ Local_C07A9B
+C0/7A92: F0 07        BEQ $7A9B
 C0/7A94: A5 54        LDA $54
 C0/7A96: EB           XBA
 C0/7A97: A5 52        LDA $52
-C0/7A99: 80 C0        BRA Local_C07A5B
+C0/7A99: 80 C0        BRA $7A5B
 C0/7A9B: A5 54        LDA $54
 C0/7A9D: EB           XBA
 C0/7A9E: A5 52        LDA $52

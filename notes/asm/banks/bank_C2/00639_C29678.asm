@@ -8,5 +8,5 @@ C2/9684: 9D 10 00     STA $0010,X
 C2/9687: E8           INX
 C2/9688: E8           INX
 C2/9689: 88           DEY
-C2/968A: D0 EF        BNE Local_C2967B
+C2/968A: D0 EF        BNE $967B
 C2/968C: 60           RTS

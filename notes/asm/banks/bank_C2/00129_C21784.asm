@@ -1,7 +1,7 @@
 ; Bank: C2 | Start Address: 1784
 Routine_C21784:
 C2/1784: BD 14 00     LDA $0014,X
-C2/1787: 10 13        BPL Local_C2179C
+C2/1787: 10 13        BPL $179C
 C2/1789: 18           CLC
 C2/178A: BD 12 00     LDA $0012,X
 C2/178D: 49 FF FF     EOR #$FFFF
@@ -9,7 +9,7 @@ C2/1790: 69 01 00     ADC #$0001
 C2/1793: BD 14 00     LDA $0014,X
 C2/1796: 49 FF FF     EOR #$FFFF
 C2/1799: 69 00 00     ADC #$0000
-C2/179C: F0 0B        BEQ Local_C217A9
+C2/179C: F0 0B        BEQ $17A9
 C2/179E: E2 20        SEP #$20
 C2/17A0: BD 14 00     LDA $0014,X
 C2/17A3: 85 01        STA $01

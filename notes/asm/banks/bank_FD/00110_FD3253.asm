@@ -2,7 +2,7 @@
 Routine_FD3253:
 FD/3253: 38           SEC
 FD/3254: 19 D0 18     ORA $18D0,Y
-FD/3257: 80 00        BRA Local_FD3259
+FD/3257: 80 00        BRA $3259
 FD/3259: 08           PHP
 FD/325A: 04 0C        TSB $0C
 FD/325C: C3 FF        CMP $FF,S

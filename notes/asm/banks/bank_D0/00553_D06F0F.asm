@@ -1,9 +1,9 @@
 ; Bank: D0 | Start Address: 6F0F
 Routine_D06F0F:
 D0/6F0F: C0 80        CPY #$80
-D0/6F11: 80 80        BRA Local_D06E93
-D0/6F13: 80 80        BRA Local_D06E95
-D0/6F15: 80 00        BRA Local_D06F17
+D0/6F11: 80 80        BRA $6E93
+D0/6F13: 80 80        BRA $6E95
+D0/6F15: 80 00        BRA $6F17
 D0/6F17: 00 01        BRK $01
 D0/6F19: 01 02        ORA ($02,X)
 D0/6F1B: 03 04        ORA $04,S
@@ -20,17 +20,17 @@ D0/6F34: E8           INX
 D0/6F35: 18           CLC
 D0/6F36: E8           INX
 D0/6F37: 18           CLC
-D0/6F38: 80 80        BRA Local_D06EBA
+D0/6F38: 80 80        BRA $6EBA
 D0/6F3A: 00 00        BRK $00
 D0/6F3C: 02 02        COP $02
 D0/6F3E: 04 04        TSB $04
 D0/6F40: 08           PHP
 D0/6F41: 08           PHP
-D0/6F42: 10 10        BPL Local_D06F54
-D0/6F44: 30 30        BMI Local_D06F76
-D0/6F46: 10 30        BPL Local_D06F78
+D0/6F42: 10 10        BPL $6F54
+D0/6F44: 30 30        BMI $6F76
+D0/6F46: 10 30        BPL $6F78
 D0/6F48: 44 7C 24     MVP $7C,$24
-D0/6F4B: 3C 22 3E     BIT Local_D03E22,X
+D0/6F4B: 3C 22 3E     BIT $3E22,X
 D0/6F4E: 2A           ROL
 D0/6F4F: 36 2D        ROL $2D,X
 D0/6F51: 33 0D        AND ($0D,S),Y

@@ -3,9 +3,9 @@ Routine_CFEC78:
 CF/EC78: 7B           TDC
 CF/EC79: A8           TAY
 CF/EC7A: B9 5B A1     LDA $A15B,Y
-CF/EC7D: F0 3C        BEQ Local_CFECBB
+CF/EC7D: F0 3C        BEQ $ECBB
 CF/EC7F: B9 00 A5     LDA $A500,Y
-CF/EC82: 30 37        BMI Local_CFECBB
+CF/EC82: 30 37        BMI $ECBB
 CF/EC84: 38           SEC
 CF/EC85: A9 07        LDA #$07
 CF/EC87: F9 00 A5     SBC $A500,Y
@@ -42,9 +42,9 @@ CF/ECC5: 86 C6        STX $C6
 CF/ECC7: E2 10        SEP #$10
 CF/ECC9: A6 C6        LDX $C6
 CF/ECCB: BD 37 A4     LDA $A437,X
-CF/ECCE: 30 41        BMI Local_CFED11
+CF/ECCE: 30 41        BMI $ED11
 CF/ECD0: 29 40        AND #$40
-CF/ECD2: D0 1B        BNE Local_CFECEF
+CF/ECD2: D0 1B        BNE $ECEF
 CF/ECD4: BD 37 A4     LDA $A437,X
 CF/ECD7: A8           TAY
 CF/ECD8: 8A           TXA
@@ -56,7 +56,7 @@ CF/ECE1: 9E 41 A2     STZ $A241,X
 CF/ECE4: B9 23 1D     LDA $1D23,Y
 CF/ECE7: 9D 50 A2     STA $A250,X
 CF/ECEA: 9E 51 A2     STZ $A251,X
-CF/ECED: 80 22        BRA Local_CFED11
+CF/ECED: 80 22        BRA $ED11
 CF/ECEF: BD 37 A4     LDA $A437,X
 CF/ECF2: 29 07        AND #$07
 CF/ECF4: 0A           ASL
@@ -73,6 +73,6 @@ CF/ED08: 9D 50 A2     STA $A250,X
 CF/ED0B: B9 51 A2     LDA $A251,Y
 CF/ED0E: 9D 51 A2     STA $A251,X
 CF/ED11: C6 C6        DEC $C6
-CF/ED13: 10 B4        BPL Local_CFECC9
+CF/ED13: 10 B4        BPL $ECC9
 CF/ED15: C2 10        REP #$10
 CF/ED17: 60           RTS

@@ -20,7 +20,7 @@ FE/9A8D: 7F 02 00 3F  ADC $3F0002,X
 FE/9A91: 04 C0        TSB $C0
 FE/9A93: C6 78        DEC $78
 FE/9A95: 05 40        ORA $40
-FE/9A97: 80 90        BRA Local_FE9A29
+FE/9A97: 80 90        BRA $9A29
 FE/9A99: E0 26 14     CPX #$1426
 FE/9A9C: 38           SEC
 FE/9A9D: 08           PHP

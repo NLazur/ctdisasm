@@ -1,31 +1,31 @@
 ; Bank: C3 | Start Address: CAC3
 Routine_C3CAC3:
-C3/CAC3: 30 30        BMI Local_C3CAF5
+C3/CAC3: 30 30        BMI $CAF5
 C3/CAC5: 5A           PHY
 C3/CAC6: 01 A9        ORA ($A9,X)
-C3/CAC8: 20 2C 90     JSR Local_C3902C
+C3/CAC8: 20 2C 90     JSR $902C
 C3/CACB: 00 80        BRK $80
 C3/CACD: 00 09        BRK $09
 C3/CACF: 72 50        ADC ($50)
 C3/CAD1: 07 7F        ORA [$7F]
-C3/CAD3: 2C 80 09     BIT Local_C30980
-C3/CAD6: 10 8F        BPL Local_C3CA67
+C3/CAD3: 2C 80 09     BIT $0980
+C3/CAD6: 10 8F        BPL $CA67
 C3/CAD8: 09 00        ORA #$00
-C3/CADA: 70 15        BVS Local_C3CAF1
+C3/CADA: 70 15        BVS $CAF1
 C3/CADC: 12 10        ORA ($10)
 C3/CADE: B3 12        LDA ($12,S),Y
 C3/CAE0: 00 8C        BRK $8C
 C3/CAE2: 1B           TCS
-C3/CAE3: 10 D7        BPL Local_C3CABC
+C3/CAE3: 10 D7        BPL $CABC
 C3/CAE5: 07 7F        ORA [$7F]
 C3/CAE7: 02 52        COP $52
-C3/CAE9: 20 02 FE     JSR Local_C3FE02
+C3/CAE9: 20 02 FE     JSR $FE02
 C3/CAEC: FF 31 0E 2F  SBC $2F0E31,X
 C3/CAF0: 00 00        BRK $00
 C3/CAF2: E0 FF        CPX #$FF
 C3/CAF4: FF 31 F0 2F  SBC $2FF031,X
 C3/CAF8: 00 20        BRK $20
-C3/CAFA: 10 00        BPL Local_C3CAFC
+C3/CAFA: 10 00        BPL $CAFC
 C3/CAFC: 00 31        BRK $31
 C3/CAFE: 08           PHP
 C3/CAFF: 35 02        AND $02,X
@@ -39,16 +39,16 @@ C3/CB11: 78           SEI
 C3/CB12: 2F 00 D0 24  AND $24D000
 C3/CB16: 00 07        BRK $07
 C3/CB18: 00 0E        BRK $0E
-C3/CB1A: 10 24        BPL Local_C3CB40
+C3/CB1A: 10 24        BPL $CB40
 C3/CB1C: 85 24        STA $24
-C3/CB1E: 30 0A        BMI Local_C3CB2A
+C3/CB1E: 30 0A        BMI $CB2A
 C3/CB20: 24 40        BIT $40
-C3/CB22: 10 2F        BPL Local_C3CB53
+C3/CB22: 10 2F        BPL $CB53
 C3/CB24: 00 C0        BRK $C0
 C3/CB26: 41 00        EOR ($00,X)
-C3/CB28: F0 80        BEQ Local_C3CAAA
+C3/CB28: F0 80        BEQ $CAAA
 C3/CB2A: 2F 00 40 41  AND $414000
 C3/CB2E: 00 07        BRK $07
 C3/CB30: 00 0E        BRK $0E
-C3/CB32: 10 24        BPL Local_C3CB58
+C3/CB32: 10 24        BPL $CB58
 C3/CB34: 40           RTI

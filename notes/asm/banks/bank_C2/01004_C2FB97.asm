@@ -12,6 +12,6 @@ C2/FBAA: 29 EF FF     AND #$FFEF
 C2/FBAD: E8           INX
 C2/FBAE: E8           INX
 C2/FBAF: 88           DEY
-C2/FBB0: D0 EE        BNE Local_C2FBA0
+C2/FBB0: D0 EE        BNE $FBA0
 C2/FBB2: 28           PLP
 C2/FBB3: 60           RTS

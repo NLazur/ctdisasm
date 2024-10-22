@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: 1525
 Routine_CD1525:
-CD/1525: 20 88 14     JSR Local_CD1488
+CD/1525: 20 88 14     JSR $1488
 CD/1528: 8A           TXA
 CD/1529: 18           CLC
 CD/152A: 69 10 00     ADC #$0010

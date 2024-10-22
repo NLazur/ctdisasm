@@ -2,9 +2,9 @@
 Routine_CED610:
 CE/D610: 01 1F        ORA ($1F,X)
 CE/D612: 2D 80 02     AND $0280
-CE/D615: F0 1F        BEQ Local_CED636
+CE/D615: F0 1F        BEQ $D636
 CE/D617: 2D 80 12     AND $1280
-CE/D61A: F0 1F        BEQ Local_CED63B
+CE/D61A: F0 1F        BEQ $D63B
 CE/D61C: 0B           PHD
 CE/D61D: 78           SEI
 CE/D61E: 91 03        STA ($03),Y
@@ -84,17 +84,17 @@ CE/D6C3: 08           PHP
 CE/D6C4: FF 01 1F 0E  SBC $0E1F01,X
 CE/D6C8: A8           TAY
 CE/D6C9: 06 0B        ASL $0B
-CE/D6CB: 70 1F        BVS Local_CED6EC
+CE/D6CB: 70 1F        BVS $D6EC
 CE/D6CD: 02 02        COP $02
 CE/D6CF: 0A           ASL
-CE/D6D0: 70 A8        BVS Local_CED67A
+CE/D6D0: 70 A8        BVS $D67A
 CE/D6D2: 0A           ASL
-CE/D6D3: 20 05 02     JSR Local_CE0205
+CE/D6D3: 20 05 02     JSR $0205
 CE/D6D6: 03 77        ORA $77,S
 CE/D6D8: 18           CLC
 CE/D6D9: A8           TAY
 CE/D6DA: 08           PHP
-CE/D6DB: 20 05 02     JSR Local_CE0205
+CE/D6DB: 20 05 02     JSR $0205
 CE/D6DE: 04 77        TSB $77
 CE/D6E0: 28           PLP
 CE/D6E1: 0D A8 04     ORA $04A8
@@ -105,8 +105,8 @@ CE/D6EC: 03 70        ORA $70,S
 CE/D6EE: 0A           ASL
 CE/D6EF: 85 00        STA $00
 CE/D6F1: A8           TAY
-CE/D6F2: 10 77        BPL Local_CED76B
-CE/D6F4: 80 0B        BRA Local_CED701
+CE/D6F2: 10 77        BPL $D76B
+CE/D6F4: 80 0B        BRA $D701
 CE/D6F6: A8           TAY
 CE/D6F7: 06 36        ASL $36
 CE/D6F9: 0C C1 0C     TSB $0CC1

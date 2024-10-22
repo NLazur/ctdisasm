@@ -2,14 +2,14 @@
 Routine_CF6BC5:
 CF/6BC5: E0 C0        CPX #$C0
 CF/6BC7: C0 80        CPY #$80
-CF/6BC9: 80 00        BRA Local_CF6BCB
+CF/6BC9: 80 00        BRA $6BCB
 CF/6BCB: 00 00        BRK $00
 CF/6BCD: 00 00        BRK $00
 CF/6BCF: 00 07        BRK $07
 CF/6BD1: 07 07        ORA [$07]
 CF/6BD3: 07 1F        ORA [$1F]
 CF/6BD5: 1F 36 39 6F  ORA $6F3936,X
-CF/6BD9: 70 99        BVS Local_CF6B74
+CF/6BD9: 70 99        BVS $6B74
 CF/6BDB: E6 66        INC $66
 CF/6BDD: 9F 99 79 7E  STA $7E7999,X
 CF/6BE1: 87 31        STA [$31]

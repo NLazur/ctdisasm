@@ -6,8 +6,8 @@ C2/854A: AB           PLB
 C2/854B: AB           PLB
 C2/854C: A0 00        LDY #$00
 C2/854E: BB           TYX
-C2/854F: 20 55 85     JSR Local_C28555
-C2/8552: 20 55 85     JSR Local_C28555
+C2/854F: 20 55 85     JSR $8555
+C2/8552: 20 55 85     JSR $8555
 C2/8555: 74 F6        STZ $F6,X
 C2/8557: B5 F0        LDA $F0,X
 C2/8559: 39 98 29     AND $2998,Y

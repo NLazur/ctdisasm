@@ -2,10 +2,10 @@
 Routine_C03757:
 C0/3757: A5 17        LDA $17
 C0/3759: 89 40        BIT #$40
-C0/375B: D0 20        BNE Local_C0377D
+C0/375B: D0 20        BNE $377D
 C0/375D: A5 18        LDA $18
 C0/375F: 89 40        BIT #$40
-C0/3761: D0 11        BNE Local_C03774
+C0/3761: D0 11        BNE $3774
 C0/3763: BB           TYX
 C0/3764: E8           INX
 C0/3765: BF 01 20 7F  LDA $7F2001,X

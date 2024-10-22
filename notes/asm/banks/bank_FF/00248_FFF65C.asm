@@ -11,7 +11,7 @@ FF/F66D: E8           INX
 FF/F66E: C8           INY
 FF/F66F: C8           INY
 FF/F670: C6 00        DEC $00
-FF/F672: D0 ED        BNE Local_FFF661
+FF/F672: D0 ED        BNE $F661
 FF/F674: 28           PLP
 FF/F675: FA           PLX
 FF/F676: 6B           RTL

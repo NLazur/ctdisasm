@@ -21,7 +21,7 @@ C3/28A6: 00 32        BRK $32
 C3/28A8: 01 F2        ORA ($F2,X)
 C3/28AA: 69 00 02     ADC #$0200
 C3/28AD: C5 42        CMP $42
-C3/28AF: F0 19        BEQ Local_C328CA
+C3/28AF: F0 19        BEQ $28CA
 C3/28B1: 02 F2        COP $F2
 C3/28B3: E9 80 01     SBC #$0180
 C3/28B6: 09 00 04     ORA #$0400
@@ -33,25 +33,25 @@ C3/28C1: 73 00        ADC ($00,S),Y
 C3/28C3: 38           SEC
 C3/28C4: E9 00 10     SBC #$1000
 C3/28C7: C5 4E        CMP $4E
-C3/28C9: 10 0D        BPL Local_C328D8
+C3/28C9: 10 0D        BPL $28D8
 C3/28CB: 08           PHP
 C3/28CC: A5 73        LDA $73
 C3/28CE: 69 09 10     ADC #$1009
-C3/28D1: F0 06        BEQ Local_C328D9
-C3/28D3: 10 04        BPL Local_C328D9
-C3/28D5: 80 E6        BRA Local_C328BD
+C3/28D1: F0 06        BEQ $28D9
+C3/28D3: 10 04        BPL $28D9
+C3/28D5: 80 E6        BRA $28BD
 C3/28D7: A6 E6        LDX $E6
 C3/28D9: A6 A5        LDX $A5
 C3/28DB: A6 0A        LDX $0A
 C3/28DD: 01 00        ORA ($00,X)
-C3/28DF: 10 05        BPL Local_C328E6
+C3/28DF: 10 05        BPL $28E6
 C3/28E1: A4 85        LDY $85
 C3/28E3: A4 1E        LDY $1E
 C3/28E5: 02 A4        COP $A4
 C3/28E7: 85 A8        STA $A8
-C3/28E9: 20 4C CB     JSR Local_C3CB4C
+C3/28E9: 20 4C CB     JSR $CB4C
 C3/28EC: 4B           PHK
 C3/28ED: A5 A8        LDA $A8
 C3/28EF: 96 05        STX $05,Y
-C3/28F1: D0 0D        BNE Local_C32900
+C3/28F1: D0 0D        BNE $2900
 C3/28F3: 40           RTI

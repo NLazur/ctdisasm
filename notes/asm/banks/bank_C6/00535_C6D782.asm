@@ -1,18 +1,18 @@
 ; Bank: C6 | Start Address: D782
 Routine_C6D782:
-C6/D782: 20 86 68     JSR Local_C66886
+C6/D782: 20 86 68     JSR $6886
 C6/D785: 02 00        COP $00
 C6/D787: 01 04        ORA ($04,X)
 C6/D789: 00 A0        BRK $A0
 C6/D78B: 08           PHP
 C6/D78C: 9E 00 C6     STZ $C600,X
-C6/D78F: 30 6E        BMI Local_C6D7FF
+C6/D78F: 30 6E        BMI $D7FF
 C6/D791: 78           SEI
 C6/D792: 76 38        ROR $38,X
 C6/D794: C8           INY
 C6/D795: 48           PHA
 C6/D796: 12 12        ORA ($12)
-C6/D798: 20 50 27     JSR Local_C62750
+C6/D798: 20 50 27     JSR $2750
 C6/D79B: 44 08 3E     MVP $08,$3E
 C6/D79E: 48           PHA
 C6/D79F: 5A           PHY

@@ -8,10 +8,10 @@ FE/5042: 89 34        BIT #$34
 FE/5044: A0 C0        LDY #$C0
 FE/5046: C0 F0        CPY #$F0
 FE/5048: 68           PLA
-FE/5049: F0 00        BEQ Local_FE504B
+FE/5049: F0 00        BEQ $504B
 FE/504B: 34 F8        BIT $F8,X
 FE/504D: 08           PHP
-FE/504E: 3C F8 E9     BIT Local_FEE9F8,X
+FE/504E: 3C F8 E9     BIT $E9F8,X
 FE/5051: 74 F8        STZ $F8,X
 FE/5053: 00 7A        BRK $7A
 FE/5055: FC 5F DE     JSR ($DE5F,X)

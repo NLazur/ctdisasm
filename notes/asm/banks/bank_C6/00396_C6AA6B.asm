@@ -11,7 +11,7 @@ C6/AA7C: C1 C1        CMP ($C1,X)
 C6/AA7E: 12 67        ORA ($67)
 C6/AA80: 0D 87 BF     ORA $BF87
 C6/AA83: F8           SED
-C6/AA84: 82 7F 3D     BRL Routine_C6E806
+C6/AA84: 82 7F 3D     BRL $C6E806
 C6/AA87: 0D 12 14     ORA $1412
 C6/AA8A: 04 25        TSB $25
 C6/AA8C: 16 01        ASL $01,X
@@ -24,7 +24,7 @@ C6/AA98: 18           CLC
 C6/AA99: 21 7F        AND ($7F,X)
 C6/AA9B: 03 82        ORA $82,S
 C6/AA9D: 83 12        STA $12,S
-C6/AA9F: 22 6C 0B 50  JSR Routine_500B6C
+C6/AA9F: 22 6C 0B 50  JSR $500B6C
 C6/AAA3: C2 38        REP #$38
 C6/AAA5: 12 12        ORA ($12)
 C6/AAA7: 33 32        AND ($32,S),Y
@@ -57,13 +57,13 @@ C6/AADE: 05 82        ORA $82
 C6/AAE0: 83 AC        STA $AC,S
 C6/AAE2: 0E 31 EE     ASL $EE31
 C6/AAE5: 11 29        ORA ($29),Y
-C6/AAE7: 2C 1F F9     BIT Local_C6F91F
+C6/AAE7: 2C 1F F9     BIT $F91F
 C6/AAEA: 24 AF        BIT $AF
-C6/AAEC: 22 E3 09 E5  JSR Routine_E509E3
+C6/AAEC: 22 E3 09 E5  JSR $E509E3
 C6/AAF0: 01 3E        ORA ($3E,X)
 C6/AAF2: 0A           ASL
 C6/AAF3: FF 60 08 4A  SBC $4A0860,X
-C6/AAF7: 10 AC        BPL Local_C6AAA5
+C6/AAF7: 10 AC        BPL $AAA5
 C6/AAF9: 1E 86 19     ASL $1986,X
 C6/AAFC: A1 07        LDA ($07,X)
 C6/AAFE: 18           CLC
@@ -78,7 +78,7 @@ C6/AB0D: 0B           PHD
 C6/AB0E: 16 FC        ASL $FC,X
 C6/AB10: 17 18        ORA [$18],Y
 C6/AB12: 28           PLP
-C6/AB13: 22 E2 1D 63  JSR Routine_631DE2
+C6/AB13: 22 E2 1D 63  JSR $631DE2
 C6/AB17: 02 87        COP $87
 C6/AB19: 09 37 FD     ORA #$FD37
 C6/AB1C: 48           PHA
@@ -106,7 +106,7 @@ C6/AB42: FF C5 08 5F  SBC $5F08C5,X
 C6/AB46: 68           PLA
 C6/AB47: 0A           ASL
 C6/AB48: FF 01 F8 C4  SBC $C4F801,X
-C6/AB4C: 30 45        BMI Local_C6AB93
+C6/AB4C: 30 45        BMI $AB93
 C6/AB4E: 0B           PHD
 C6/AB4F: 4E F8 01     LSR $01F8
 C6/AB52: F8           SED
@@ -119,7 +119,7 @@ C6/AB5E: 01 F8        ORA ($F8,X)
 C6/AB60: 01 F8        ORA ($F8,X)
 C6/AB62: 01 F8        ORA ($F8,X)
 C6/AB64: 46 EB        LSR $EB
-C6/AB66: 10 FF        BPL Local_C6AB67
+C6/AB66: 10 FF        BPL $AB67
 C6/AB68: 01 F8        ORA ($F8,X)
 C6/AB6A: 01 F8        ORA ($F8,X)
 C6/AB6C: 01 F8        ORA ($F8,X)

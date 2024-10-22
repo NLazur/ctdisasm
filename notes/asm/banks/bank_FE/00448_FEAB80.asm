@@ -18,7 +18,7 @@ FE/AB99: 14 C8        TRB $C8
 FE/AB9B: 03 60        ORA $60,S
 FE/AB9D: 42 1D        WDM $1D
 FE/AB9F: 03 68        ORA $68,S
-FE/ABA1: 82 F2 22     BRL Routine_FECE96
+FE/ABA1: 82 F2 22     BRL $FECE96
 FE/ABA4: E1 03        SBC ($03,X)
 FE/ABA6: 36 FF        ROL $FF,X
 FE/ABA8: 69 02        ADC #$02
@@ -32,14 +32,14 @@ FE/ABB5: 12 35        ORA ($35)
 FE/ABB7: 04 32        TSB $32
 FE/ABB9: 07 71        ORA [$71]
 FE/ABBB: 23 3A        AND $3A,S
-FE/ABBD: 3C B9 03     BIT Local_FE03B9,X
+FE/ABBD: 3C B9 03     BIT $03B9,X
 FE/ABC0: B4 23        LDY $23,X
 FE/ABC2: 09 38        ORA #$38
 FE/ABC4: 01 B2        ORA ($B2,X)
 FE/ABC6: 03 3A        ORA $3A,S
 FE/ABC8: 3E 39 09     ROL $0939,X
 FE/ABCB: 39 39 3A     AND $3A39,Y
-FE/ABCE: 80 3A        BRA Local_FEAC0A
+FE/ABCE: 80 3A        BRA $AC0A
 FE/ABD0: 3E 3C 3B     ROL $3B3C,X
 FE/ABD3: 08           PHP
 FE/ABD4: 3B           TSC
@@ -62,7 +62,7 @@ FE/ABF0: 38           SEC
 FE/ABF1: 3D 3D 3C     AND $3C3D,X
 FE/ABF4: C9 03        CMP #$03
 FE/ABF6: 9D 22 00     STA $0022,X
-FE/ABF9: 3C 7F 00     BIT Local_FE007F,X
+FE/ABF9: 3C 7F 00     BIT $007F,X
 FE/ABFC: 01 00        ORA ($00,X)
 FE/ABFE: A1 13        LDA ($13,X)
 FE/AC00: 3A           DEC
@@ -78,11 +78,11 @@ FE/AC0F: 04 3B        TSB $3B
 FE/AC11: 0A           ASL
 FE/AC12: 04 49        TSB $49
 FE/AC14: 09 04        ORA #$04
-FE/AC16: 3C 3E FF     BIT Local_FEFF3E,X
+FE/AC16: 3C 3E FF     BIT $FF3E,X
 FE/AC19: 03 3C        ORA $3C,S
 FE/AC1B: 37 C0        AND [$C0],Y
 FE/AC1D: 03 3E        ORA $3E,S
-FE/AC1F: 30 3D        BMI Local_FEAC5E
+FE/AC1F: 30 3D        BMI $AC5E
 FE/AC21: 39 3A 36     AND $363A,Y
 FE/AC24: 54 00 31     MVN $00,$31
 FE/AC27: 04 3C        TSB $3C
@@ -105,19 +105,19 @@ FE/AC49: 00 25        BRK $25
 FE/AC4B: 00 3C        BRK $3C
 FE/AC4D: 37 36        AND [$36],Y
 FE/AC4F: 3A           DEC
-FE/AC50: 10 04        BPL Local_FEAC56
-FE/AC52: 3C 72 3C     BIT Local_FE3C72,X
+FE/AC50: 10 04        BPL $AC56
+FE/AC52: 3C 72 3C     BIT $3C72,X
 FE/AC55: 41 00        EOR ($00,X)
 FE/AC57: 3A           DEC
-FE/AC58: 3C 75 00     BIT Local_FE0075,X
+FE/AC58: 3C 75 00     BIT $0075,X
 FE/AC5B: 41 00        EOR ($00,X)
 FE/AC5D: 1A           INC
 FE/AC5E: 04 3D        TSB $3D
 FE/AC60: 38           SEC
 FE/AC61: 38           SEC
-FE/AC62: 3C 3D 12     BIT Local_FE123D,X
-FE/AC65: 10 36        BPL Local_FEAC9D
-FE/AC67: 10 1F        BPL Local_FEAC88
+FE/AC62: 3C 3D 12     BIT $123D,X
+FE/AC65: 10 36        BPL $AC9D
+FE/AC67: 10 1F        BPL $AC88
 FE/AC69: 04 36        TSB $36
 FE/AC6B: 3A           DEC
 FE/AC6C: E4 3A        CPX $3A
@@ -132,7 +132,7 @@ FE/AC7C: 4B           PHK
 FE/AC7D: 04 3D        TSB $3D
 FE/AC7F: 3A           DEC
 FE/AC80: 1C 00 B3     TRB $B300
-FE/AC83: 10 3A        BPL Local_FEACBF
+FE/AC83: 10 3A        BPL $ACBF
 FE/AC85: 26 05        ROL $05
 FE/AC87: FF 3C 15 96  SBC $96153C,X
 FE/AC8B: 04 23        TSB $23
@@ -141,13 +141,13 @@ FE/AC8F: 04 B7        TSB $B7
 FE/AC91: 23 A1        AND $A1,S
 FE/AC93: 14 55        TRB $55
 FE/AC95: 05 2D        ORA $2D
-FE/AC97: 10 FF        BPL Local_FEAC98
+FE/AC97: 10 FF        BPL $AC98
 FE/AC99: 12 00        ORA ($00)
 FE/AC9B: 08           PHP
 FE/AC9C: 00 6E        BRK $6E
-FE/AC9E: 10 89        BPL Local_FEAC29
+FE/AC9E: 10 89        BPL $AC29
 FE/ACA0: 04 10        TSB $10
-FE/ACA2: 20 0D 01     JSR Local_FE010D
+FE/ACA2: 20 0D 01     JSR $010D
 FE/ACA5: 45 10        EOR $10
 FE/ACA7: 13 01        ORA ($01,S),Y
 FE/ACA9: BF 68 17 9C  LDA $9C1768,X
@@ -164,14 +164,14 @@ FE/ACBF: 13 0E        ORA ($0E,S),Y
 FE/ACC1: 1D 10 0E     ORA $0E10,X
 FE/ACC4: 25 07        AND $07
 FE/ACC6: 19 22 9F     ORA $9F22,Y
-FE/ACC9: 80 07        BRA Local_FEACD2
+FE/ACC9: 80 07        BRA $ACD2
 FE/ACCB: F4 26 FD     PEA $FD26
 FE/ACCE: 07 8B        ORA [$8B]
 FE/ACD0: 07 EF        ORA [$EF]
 FE/ACD2: 27 2F        AND [$2F]
 FE/ACD4: 0E D9 17     ASL $17D9
 FE/ACD7: 27 08        AND [$08]
-FE/ACD9: 20 60 37     JSR Local_FE3760
+FE/ACD9: 20 60 37     JSR $3760
 FE/ACDC: 71 47        ADC ($47),Y
 FE/ACDE: 2F 0D 3A 17  AND $173A0D
 FE/ACE2: 01 04        ORA ($04,X)
@@ -190,16 +190,16 @@ FE/ACFB: 13 78        ORA ($78,S),Y
 FE/ACFD: 23 4E        AND $4E,S
 FE/ACFF: 03 97        ORA $97,S
 FE/AD01: 03 09        ORA $09,S
-FE/AD03: 10 0E        BPL Local_FEAD13
+FE/AD03: 10 0E        BPL $AD13
 FE/AD05: 0A           ASL
 FE/AD06: D8           CLD
 FE/AD07: 23 08        AND $08,S
-FE/AD09: 10 B9        BPL Local_FEACC4
+FE/AD09: 10 B9        BPL $ACC4
 FE/AD0B: 03 03        ORA $03,S
 FE/AD0D: 03 0B        ORA $0B,S
 FE/AD0F: 08           PHP
 FE/AD10: 21 06        AND ($06,X)
-FE/AD12: 20 0B 01     JSR Local_FE010B
+FE/AD12: 20 0B 01     JSR $010B
 FE/AD15: 08           PHP
 FE/AD16: 06 C9        ASL $C9
 FE/AD18: 13 06        ORA ($06,S),Y

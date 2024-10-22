@@ -1,8 +1,8 @@
 ; Bank: C0 | Start Address: 516D
 Routine_C0516D:
-C0/516D: 20 A2 AB     JSR Local_C0ABA2
-C0/5170: 20 95 5B     JSR Local_C05B95
-C0/5173: 90 07        BCC Local_C0517C
+C0/516D: 20 A2 AB     JSR $ABA2
+C0/5170: 20 95 5B     JSR $5B95
+C0/5173: 90 07        BCC $517C
 C0/5175: A5 EE        LDA $EE
 C0/5177: 18           CLC
 C0/5178: 69 30        ADC #$30
@@ -12,7 +12,7 @@ C0/517E: BD 00 10     LDA $1000,X
 C0/5181: 9D 01 1A     STA $1A01,X
 C0/5184: 9F 00 0B 7F  STA $7F0B00,X
 C0/5188: 84 C7        STY $C7
-C0/518A: 20 FD AC     JSR Local_C0ACFD
+C0/518A: 20 FD AC     JSR $ACFD
 C0/518D: A6 C7        LDX $C7
 C0/518F: 18           CLC
 C0/5190: 60           RTS

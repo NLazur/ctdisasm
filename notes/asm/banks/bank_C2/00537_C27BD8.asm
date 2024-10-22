@@ -28,13 +28,13 @@ C2/7C10: C8           INY
 C2/7C11: C2 20        REP #$20
 C2/7C13: 98           TYA
 C2/7C14: 29 0F 00     AND #$000F
-C2/7C17: D0 06        BNE Local_C27C1F
+C2/7C17: D0 06        BNE $7C1F
 C2/7C19: 18           CLC
 C2/7C1A: 98           TYA
 C2/7C1B: 69 30 00     ADC #$0030
 C2/7C1E: A8           TAY
 C2/7C1F: E2 20        SEP #$20
 C2/7C21: E0 20 00     CPX #$0020
-C2/7C24: 90 DE        BCC Local_C27C04
+C2/7C24: 90 DE        BCC $7C04
 C2/7C26: AB           PLB
 C2/7C27: 60           RTS

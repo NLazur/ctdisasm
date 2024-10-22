@@ -1,15 +1,15 @@
 ; Bank: C3 | Start Address: DFCA
 Routine_C3DFCA:
 C3/DFCA: 08           PHP
-C3/DFCB: 80 D8        BRA Local_C3DFA5
+C3/DFCB: 80 D8        BRA $DFA5
 C3/DFCD: B4 68        LDY $68,X
 C3/DFCF: 7B           TDC
 C3/DFD0: 6F 47 A2 00  ADC $00A247
 C3/DFD4: 9B           TXY
 C3/DFD5: C0 28 80     CPY #$8028
-C3/DFD8: 20 04 C0     JSR Local_C3C004
+C3/DFD8: 20 04 C0     JSR $C004
 C3/DFDB: 18           CLC
-C3/DFDC: 80 08        BRA Local_C3DFE6
+C3/DFDC: 80 08        BRA $DFE6
 C3/DFDE: 7B           TDC
 C3/DFDF: 6F 40 00 00  ADC $000040
 C3/DFE3: 00 00        BRK $00

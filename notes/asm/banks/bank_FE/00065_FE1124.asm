@@ -1,13 +1,13 @@
 ; Bank: FE | Start Address: 1124
 Routine_FE1124:
 FE/1124: 09 8C 01     ORA #$018C
-FE/1127: 2C F8 02     BIT Local_FE02F8
+FE/1127: 2C F8 02     BIT $02F8
 FE/112A: 97 01        STA [$01],Y
 FE/112C: 09 F9 43     ORA #$43F9
 FE/112F: 01 0C        ORA ($0C,X)
 FE/1131: 09 CB 05     ORA #$05CB
 FE/1134: 2E F8 FE     ROL $FEF8
-FE/1137: 82 FA 08     BRL Routine_FE1A34
+FE/1137: 82 FA 08     BRL $FE1A34
 FE/113A: C0 04 0F     CPY #$0F04
 FE/113D: 08           PHP
 FE/113E: 08           PHP

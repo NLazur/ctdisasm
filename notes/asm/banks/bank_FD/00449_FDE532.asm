@@ -26,7 +26,7 @@ FD/E560: 9D 00 22     STA $2200,X
 FD/E563: E8           INX
 FD/E564: E8           INX
 FD/E565: E4 10        CPX $10
-FD/E567: D0 EE        BNE Local_FDE557
+FD/E567: D0 EE        BNE $E557
 FD/E569: A5 0C        LDA $0C
 FD/E56B: 9D 00 20     STA $2000,X
 FD/E56E: A5 0E        LDA $0E

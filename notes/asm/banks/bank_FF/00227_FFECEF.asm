@@ -4,7 +4,7 @@ FF/ECEF: E8           INX
 FF/ECF0: F7 EC        SBC [$EC],Y
 FF/ECF2: 0A           ASL
 FF/ECF3: 17 07        ORA [$07],Y
-FF/ECF5: 22 D3 96 1F  JSR Routine_1F96D3
+FF/ECF5: 22 D3 96 1F  JSR $1F96D3
 FF/ECF9: 07 2F        ORA [$2F]
 FF/ECFB: 05 5F        ORA $5F
 FF/ECFD: 01 1F        ORA ($1F,X)
@@ -30,9 +30,9 @@ FF/ED36: 65 BA        ADC $BA
 FF/ED38: FF FF FF FF  SBC $FFFFFF,X
 FF/ED3C: FF FF FF FE  SBC $FEFFFF,X
 FF/ED40: FE F9 FA     INC $FAF9,X
-FF/ED43: F0 F4        BEQ Local_FFED39
+FF/ED43: F0 F4        BEQ $ED39
 FF/ED45: C0 C4        CPY #$C4
-FF/ED47: 80 F1        BRA Local_FFED3A
+FF/ED47: 80 F1        BRA $ED3A
 FF/ED49: C9 F3        CMP #$F3
 FF/ED4B: 8B           PHB
 FF/ED4C: D7 2F        CMP [$2F],Y

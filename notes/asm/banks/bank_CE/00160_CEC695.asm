@@ -36,7 +36,7 @@ CE/C6CB: 05 06        ORA $06
 CE/C6CD: E8           INX
 CE/C6CE: CE 05 07     DEC $0705
 CE/C6D1: E8           INX
-CE/C6D2: D0 05        BNE Local_CEC6D9
+CE/C6D2: D0 05        BNE $C6D9
 CE/C6D4: 08           PHP
 CE/C6D5: E8           INX
 CE/C6D6: D1 04        CMP ($04),Y
@@ -50,7 +50,7 @@ CE/C6E1: E8           INX
 CE/C6E2: D3 00        CMP ($00,S),Y
 CE/C6E4: 00 00        BRK $00
 CE/C6E6: 00 85        BRK $85
-CE/C6E8: 20 00 00     JSR Local_CE0000
+CE/C6E8: 20 00 00     JSR $0000
 CE/C6EB: 85 00        STA $00
 CE/C6ED: F8           SED
 CE/C6EE: E0 06        CPX #$06

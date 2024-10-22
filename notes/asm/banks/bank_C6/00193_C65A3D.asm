@@ -19,7 +19,7 @@ C6/5A5D: 12 00        ORA ($00)
 C6/5A5F: 7A           PLY
 C6/5A60: 27 88        AND [$88]
 C6/5A62: 28           PLP
-C6/5A63: 82 88 F4     BRL Routine_C64EEE
+C6/5A63: 82 88 F4     BRL $C64EEE
 C6/5A66: 08           PHP
 C6/5A67: 43 08        EOR $08,S
 C6/5A69: 4A           LSR
@@ -49,13 +49,13 @@ C6/5A99: 00 92        BRK $92
 C6/5A9B: 1E 93 1E     ASL $1E93,X
 C6/5A9E: A2 1E        LDX #$1E
 C6/5AA0: A3 1E        LDA $1E,S
-C6/5AA2: 20 94 1E     JSR Local_C61E94
+C6/5AA2: 20 94 1E     JSR $1E94
 C6/5AA5: 00 00        BRK $00
 C6/5AA7: A4 04        LDY $04
 C6/5AA9: 00 00        BRK $00
 C6/5AAB: 00 7A        BRK $7A
 C6/5AAD: 7F 8C 12 7F  ADC $7F128C,X
-C6/5AB1: 70 60        BVS Local_C65B13
+C6/5AB1: 70 60        BVS $5B13
 C6/5AB3: 08           PHP
 C6/5AB4: 68           PLA
 C6/5AB5: 68           PLA

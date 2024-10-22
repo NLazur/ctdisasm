@@ -21,8 +21,8 @@ CF/EF0E: 85 CE        STA $CE
 CF/EF10: 7B           TDC
 CF/EF11: E2 20        SEP #$20
 CF/EF13: BD B0 A1     LDA $A1B0,X
-CF/EF16: D0 03        BNE Local_CFEF1B
-CF/EF18: 4C A9 EF     JMP Local_CFEFA9
+CF/EF16: D0 03        BNE $EF1B
+CF/EF18: 4C A9 EF     JMP $EFA9
 CF/EF1B: BD C0 A2     LDA $A2C0,X
 CF/EF1E: 29 3F        AND #$3F
 CF/EF20: A8           TAY
@@ -67,13 +67,13 @@ CF/EF69: 29 CF        AND #$CF
 CF/EF6B: 05 A1        ORA $A1
 CF/EF6D: 99 03 07     STA $0703,Y
 CF/EF70: A5 D1        LDA $D1
-CF/EF72: F0 08        BEQ Local_CFEF7C
+CF/EF72: F0 08        BEQ $EF7C
 CF/EF74: A5 D0        LDA $D0
 CF/EF76: C9 F0        CMP #$F0
-CF/EF78: 90 06        BCC Local_CFEF80
-CF/EF7A: 80 11        BRA Local_CFEF8D
+CF/EF78: 90 06        BCC $EF80
+CF/EF7A: 80 11        BRA $EF8D
 CF/EF7C: A5 CB        LDA $CB
-CF/EF7E: F0 0D        BEQ Local_CFEF8D
+CF/EF7E: F0 0D        BEQ $EF8D
 CF/EF80: B9 2D 90     LDA $902D,Y
 CF/EF83: AA           TAX
 CF/EF84: BD 00 09     LDA $0900,X
@@ -90,7 +90,7 @@ CF/EF96: C8           INY
 CF/EF97: C8           INY
 CF/EF98: C8           INY
 CF/EF99: C6 C8        DEC $C8
-CF/EF9B: D0 A5        BNE Local_CFEF42
+CF/EF9B: D0 A5        BNE $EF42
 CF/EF9D: C2 31        REP #$31
 CF/EF9F: 68           PLA
 CF/EFA0: 6D C9 1D     ADC $1DC9

@@ -13,7 +13,7 @@ C2/C795: 63 01        ADC $01,S
 C2/C797: 69 02 85     ADC #$8502
 C2/C79A: 01 AD        ORA ($AD,X)
 C2/C79C: 36 0D        ROL $0D,X
-C2/C79E: F0 04        BEQ Local_C2C7A4
+C2/C79E: F0 04        BEQ $C7A4
 C2/C7A0: A9 09 85     LDA #$8509
 C2/C7A3: 00 68        BRK $68
 C2/C7A5: 60           RTS

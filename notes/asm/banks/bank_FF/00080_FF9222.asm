@@ -1,6 +1,6 @@
 ; Bank: FF | Start Address: 9222
 Routine_FF9222:
-FF/9222: 90 70        BCC Local_FF9294
+FF/9222: 90 70        BCC $9294
 FF/9224: 88           DEY
 FF/9225: 78           SEI
 FF/9226: 86 7C        STX $7C

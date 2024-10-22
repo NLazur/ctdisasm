@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 800C
 Routine_D1800C:
-D1/800C: 80 FF        BRA Local_D1800D
+D1/800C: 80 FF        BRA $800D
 D1/800E: 0A           ASL
 D1/800F: 01 DE        ORA ($DE,X)
 D1/8011: 00 83        BRK $83
@@ -67,7 +67,7 @@ D1/808B: 03 FF        ORA $FF,S
 D1/808D: 00 08        BRK $08
 D1/808F: 02 04        COP $04
 D1/8091: 83 78        STA $78,S
-D1/8093: 82 61 7F     BRL Routine_D1FFF7
+D1/8093: 82 61 7F     BRL $D1FFF7
 D1/8096: 84 B9        STY $B9
 D1/8098: 0F 8E 40 19  ORA $19408E
 D1/809C: 03 FF        ORA $FF,S
@@ -85,6 +85,6 @@ D1/80B6: 84 FF        STY $FF
 D1/80B8: 01 DE        ORA ($DE,X)
 D1/80BA: 01 A2        ORA ($A2,X)
 D1/80BC: 00 80        BRK $80
-D1/80BE: 70 00        BVS Local_D180C0
+D1/80BE: 70 00        BVS $80C0
 D1/80C0: A7 00        LDA [$00]
 D1/80C2: 40           RTI

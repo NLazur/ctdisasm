@@ -1,12 +1,12 @@
 ; Bank: FE | Start Address: 9942
 Routine_FE9942:
-FE/9942: 80 40        BRA Local_FE9984
-FE/9944: 80 86        BRA Local_FE98CC
+FE/9942: 80 40        BRA $9984
+FE/9944: 80 86        BRA $98CC
 FE/9946: C7 00        CMP [$00]
 FE/9948: 26 47        ROL $47
 FE/994A: 56 67        LSR $67,X
 FE/994C: 28           PLP
-FE/994D: 30 40        BMI Local_FE998F
+FE/994D: 30 40        BMI $998F
 FE/994F: 3F 04 40 0F  AND $0F4004,X
 FE/9953: 04 00        TSB $00
 FE/9955: 7F 06 38 A6  ADC $A63806,X
@@ -20,7 +20,7 @@ FE/9962: DB           STP
 FE/9963: FF 02 10 09  SBC $091002,X
 FE/9967: B9 76 DB     LDA $DB76,Y
 FE/996A: 00 02        BRK $02
-FE/996C: 10 00        BPL Local_FE996E
+FE/996C: 10 00        BPL $996E
 FE/996E: FF 72 01 00  SBC $000172,X
 FE/9972: 7E 0D 32     ROR $320D,X
 FE/9975: 01 3A        ORA ($3A,X)
@@ -31,6 +31,6 @@ FE/997D: 6A           ROR
 FE/997E: E6 14        INC $14
 FE/9980: 0C 02 FC     TSB $FC02
 FE/9983: 04 02        TSB $02
-FE/9985: F0 04        BEQ Local_FE998B
+FE/9985: F0 04        BEQ $998B
 FE/9987: 00 FE        BRK $FE
 FE/9989: 60           RTS

@@ -9,11 +9,11 @@ C2/EA8A: 38           SEC
 C2/EA8B: E5 00        SBC $00
 C2/EA8D: 8F 06 42 00  STA $004206
 C2/EA91: 85 01        STA $01
-C2/EA93: B0 04        BCS Local_C2EA99
+C2/EA93: B0 04        BCS $EA99
 C2/EA95: 64 01        STZ $01
 C2/EA97: 84 00        STY $00
 C2/EA99: A5 00        LDA $00
-C2/EA9B: F0 01        BEQ Local_C2EA9E
+C2/EA9B: F0 01        BEQ $EA9E
 C2/EA9D: 3A           DEC
 C2/EA9E: 18           CLC
 C2/EA9F: 6D DB 0D     ADC $0DDB

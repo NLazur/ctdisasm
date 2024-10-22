@@ -19,9 +19,9 @@ D0/A3DB: 00 00        BRK $00
 D0/A3DD: 00 00        BRK $00
 D0/A3DF: C0 00        CPY #$00
 D0/A3E1: 00 00        BRK $00
-D0/A3E3: 80 00        BRA Local_D0A3E5
+D0/A3E3: 80 00        BRA $A3E5
 D0/A3E5: 00 00        BRK $00
-D0/A3E7: 80 00        BRA Local_D0A3E9
+D0/A3E7: 80 00        BRA $A3E9
 D0/A3E9: 00 00        BRK $00
 D0/A3EB: 00 00        BRK $00
 D0/A3ED: 00 03        BRK $03
@@ -85,7 +85,7 @@ D0/A46A: F8           SED
 D0/A46B: 07 00        ORA [$00]
 D0/A46D: 00 F0        BRK $F0
 D0/A46F: 0E 00 00     ASL $0000
-D0/A472: F0 0E        BEQ Local_D0A482
+D0/A472: F0 0E        BEQ $A482
 D0/A474: 00 00        BRK $00
 D0/A476: E0 1C        CPX #$1C
 D0/A478: 00 00        BRK $00
@@ -99,6 +99,6 @@ D0/A487: 31 00        AND ($00),Y
 D0/A489: 00 18        BRK $18
 D0/A48B: F8           SED
 D0/A48C: 00 00        BRK $00
-D0/A48E: 30 F0        BMI Local_D0A480
+D0/A48E: 30 F0        BMI $A480
 D0/A490: 00 00        BRK $00
 D0/A492: 60           RTS

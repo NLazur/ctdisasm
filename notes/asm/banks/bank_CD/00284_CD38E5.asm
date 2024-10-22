@@ -3,7 +3,7 @@ Routine_CD38E5:
 CD/38E5: A5 0B        LDA $0B
 CD/38E7: 38           SEC
 CD/38E8: E5 0C        SBC $0C
-CD/38EA: 90 15        BCC Local_CD3901
+CD/38EA: 90 15        BCC $3901
 CD/38EC: EB           XBA
 CD/38ED: A8           TAY
 CD/38EE: 8C 04 42     STY $4204

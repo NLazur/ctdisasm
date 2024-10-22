@@ -18,16 +18,16 @@ FE/EE68: 0A           ASL
 FE/EE69: DC 00 05     JMP [$0500]
 FE/EE6C: 17 02        ORA [$02],Y
 FE/EE6E: EB           XBA
-FE/EE6F: 2C 3D 19     BIT Local_FE193D
-FE/EE72: 10 21        BPL Local_FEEE95
+FE/EE6F: 2C 3D 19     BIT $193D
+FE/EE72: 10 21        BPL $EE95
 FE/EE74: 49 28 0D     EOR #$0D28
 FE/EE77: 68           PLA
-FE/EE78: 20 00 58     JSR Local_FE5800
+FE/EE78: 20 00 58     JSR $5800
 FE/EE7B: 0E 04 A0     ASL $A004
 FE/EE7E: 06 22        ASL $22
 FE/EE80: EE 20 50     INC $5020
 FE/EE83: 0A           ASL
-FE/EE84: 30 DA        BMI Local_FEEE60
+FE/EE84: 30 DA        BMI $EE60
 FE/EE86: 1B           TCS
 FE/EE87: 02 0B        COP $0B
 FE/EE89: 27 A8        AND [$A8]
@@ -42,7 +42,7 @@ FE/EE95: 00 00        BRK $00
 FE/EE97: E8           INX
 FE/EE98: E8           INX
 FE/EE99: 18           CLC
-FE/EE9A: 80 40        BRA Local_FEEEDC
+FE/EE9A: 80 40        BRA $EEDC
 FE/EE9C: 31 51        AND ($51),Y
 FE/EE9E: 14 BC        TRB $BC
 FE/EEA0: 46 09        LSR $09
@@ -54,22 +54,22 @@ FE/EEAB: 0D 31 11     ORA $1131
 FE/EEAE: 44 E7 E3     MVP $E7,$E3
 FE/EEB1: 05 88        ORA $88
 FE/EEB3: 3B           TSC
-FE/EEB4: 50 37        BVC Local_FEEEED
+FE/EEB4: 50 37        BVC $EEED
 FE/EEB6: 44 44 D8     MVP $44,$D8
 FE/EEB9: 13 FE        ORA ($FE,S),Y
 FE/EEBB: 13 F6        ORA ($F6,S),Y
 FE/EEBD: 35 FF        AND $FF,X
 FE/EEBF: B9 37 A2     LDA $A237,Y
 FE/EEC2: 0F 0A 09 10  ORA $10090A
-FE/EEC6: 20 09 4C     JSR Local_FE4C09
-FE/EEC9: 10 10        BPL Local_FEEEDB
+FE/EEC6: 20 09 4C     JSR $4C09
+FE/EEC9: 10 10        BPL $EEDB
 FE/EECB: 71 F1        ADC ($F1),Y
 FE/EECD: 01 F0        ORA ($F0,X)
 FE/EECF: FF 49 87 B0  SBC $B08749,X
 FE/EED3: 42 0F        WDM $0F
-FE/EED5: 70 42        BVS Local_FEEF19
+FE/EED5: 70 42        BVS $EF19
 FE/EED7: 42 24        WDM $24
 FE/EED9: 48           PHA
-FE/EEDA: 50 50        BVC Local_FEEF2C
+FE/EEDA: 50 50        BVC $EF2C
 FE/EEDC: DC B1 66     JMP [$66B1]
 FE/EEDF: 40           RTI

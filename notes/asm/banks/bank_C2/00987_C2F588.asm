@@ -14,7 +14,7 @@ C2/F59A: 7B           TDC
 C2/F59B: E9 3F 00     SBC #$003F
 C2/F59E: 5B           TCD
 C2/F59F: C9 00 18     CMP #$1800
-C2/F5A2: B0 EA        BCS Local_C2F58E
+C2/F5A2: B0 EA        BCS $F58E
 C2/F5A4: 2B           PLD
 C2/F5A5: 28           PLP
 C2/F5A6: 60           RTS

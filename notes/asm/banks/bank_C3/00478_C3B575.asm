@@ -1,7 +1,7 @@
 ; Bank: C3 | Start Address: B575
 Routine_C3B575:
 C3/B575: CC 8C 02     CPY $028C
-C3/B578: 82 16 20     BRL Routine_C3D591
+C3/B578: 82 16 20     BRL $C3D591
 C3/B57B: 27 60        AND [$60]
 C3/B57D: D8           CLD
 C3/B57E: 02 A6        COP $A6
@@ -13,27 +13,27 @@ C3/B586: 32 50        AND ($50)
 C3/B588: E8           INX
 C3/B589: 02 96        COP $96
 C3/B58B: 3D 50 0A     AND $0A50,X
-C3/B58E: F0 16        BEQ Local_C3B5A6
-C3/B590: 70 F8        BVS Local_C3B58A
-C3/B592: 2C 40 52     BIT Local_C35240
+C3/B58E: F0 16        BEQ $B5A6
+C3/B590: 70 F8        BVS $B58A
+C3/B592: 2C 40 52     BIT $5240
 C3/B595: 3B           TSC
 C3/B596: 9A           TXS
-C3/B597: 80 04        BRA Local_C3B59D
+C3/B597: 80 04        BRA $B59D
 C3/B599: 31 1E        AND ($1E),Y
 C3/B59B: 6A           ROR
-C3/B59C: 50 09        BVC Local_C3B5A7
+C3/B59C: 50 09        BVC $B5A7
 C3/B59E: AA           TAX
 C3/B59F: 13 7F        ORA ($7F,S),Y
 C3/B5A1: 0D 20 22     ORA $2220
-C3/B5A4: 10 34        BPL Local_C3B5DA
+C3/B5A4: 10 34        BPL $B5DA
 C3/B5A6: 38           SEC
 C3/B5A7: 0F 57 16 FB  ORA $FB1657
 C3/B5AB: 1A           INC
 C3/B5AC: C0 97        CPY #$97
 C3/B5AE: 13 4E        ORA ($4E,S),Y
-C3/B5B0: D0 E6        BNE Local_C3B598
+C3/B5B0: D0 E6        BNE $B598
 C3/B5B2: C6 23        DEC $23
-C3/B5B4: 30 DE        BMI Local_C3B594
+C3/B5B4: 30 DE        BMI $B594
 C3/B5B6: 81 1D        STA ($1D,X)
 C3/B5B8: D4 01        PEI $01
 C3/B5BA: 00 1D        BRK $1D
@@ -46,7 +46,7 @@ C3/B5C9: 14 7F        TRB $7F
 C3/B5CB: 38           SEC
 C3/B5CC: 08           PHP
 C3/B5CD: 55 0A        EOR $0A,X
-C3/B5CF: 20 23 0A     JSR Local_C30A23
+C3/B5CF: 20 23 0A     JSR $0A23
 C3/B5D2: 00 0C        BRK $0C
 C3/B5D4: 14 20        TRB $20
 C3/B5D6: 47 14        EOR [$14]
