@@ -10,11 +10,11 @@ D0/613A: 0B           PHD
 D0/613B: 0C 1B 3C     TSB $3C1B
 D0/613E: 57 58        EOR [$58],Y
 D0/6140: A4 54        LDY $54
-D0/6142: F0 30        BEQ $6174
+D0/6142: F0 30        BEQ Routine_D06174
 D0/6144: A4 74        LDY $74
 D0/6146: C8           INY
 D0/6147: 68           PLA
-D0/6148: 82 72 F4     BRL $D055BD
+D0/6148: 82 72 F4     BRL Routine_D055BD
 D0/614B: 1C B8 48     TRB $48B8
 D0/614E: 72 8A        ADC ($8A)
 D0/6150: 00 00        BRK $00

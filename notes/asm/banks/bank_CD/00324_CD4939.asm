@@ -121,10 +121,10 @@ CD/4A14: 04 00        TSB $00
 CD/4A16: 76 C0        ROR $C0,X
 CD/4A18: C4 08        CPY $08
 CD/4A1A: 04 00        TSB $00
-CD/4A1C: 4C C0 C4     JMP $C4C0
+CD/4A1C: 4C C0 C4     JMP Routine_CDC4C0
 CD/4A1F: 08           PHP
 CD/4A20: 04 00        TSB $00
-CD/4A22: 4C C0 C4     JMP $C4C0
+CD/4A22: 4C C0 C4     JMP Routine_CDC4C0
 CD/4A25: 08           PHP
 CD/4A26: 04 00        TSB $00
 CD/4A28: 04 C0        TSB $C0
@@ -188,14 +188,16 @@ CD/4A92: 04 00        TSB $00
 CD/4A94: 5A           PHY
 CD/4A95: C0 C4        CPY #$C4
 CD/4A97: 08           PHP
+Local_CD4A98:
 CD/4A98: 04 00        TSB $00
-CD/4A9A: 20 C8 00     JSR $00C8
+CD/4A9A: 20 C8 00     JSR Routine_CD00C8
 CD/4A9D: 03 06        ORA $06,S
 CD/4A9F: 06 20        ASL $20
 CD/4AA1: C8           INY
 CD/4AA2: 00 03        BRK $03
+Local_CD4AA4:
 CD/4AA4: 06 06        ASL $06
-CD/4AA6: 20 C8 00     JSR $00C8
+CD/4AA6: 20 C8 00     JSR Routine_CD00C8
 CD/4AA9: 03 06        ORA $06,S
 CD/4AAB: 06 20        ASL $20
 CD/4AAD: C8           INY
@@ -221,13 +223,13 @@ CD/4AD0: 68           PLA
 CD/4AD1: C0 C4        CPY #$C4
 CD/4AD3: 08           PHP
 CD/4AD4: 04 00        TSB $00
-CD/4AD6: 10 C0        BPL $4A98
+CD/4AD6: 10 C0        BPL Local_CD4A98
 CD/4AD8: C4 08        CPY $08
 CD/4ADA: 04 00        TSB $00
-CD/4ADC: 10 C0        BPL $4A9E
+CD/4ADC: 10 C0        BPL Routine_CD4A9E
 CD/4ADE: C4 08        CPY $08
 CD/4AE0: 04 00        TSB $00
-CD/4AE2: 10 C0        BPL $4AA4
+CD/4AE2: 10 C0        BPL Local_CD4AA4
 CD/4AE4: C4 08        CPY $08
 CD/4AE6: 04 00        TSB $00
 CD/4AE8: 0A           ASL

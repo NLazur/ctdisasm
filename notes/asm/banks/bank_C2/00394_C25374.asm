@@ -14,10 +14,10 @@ C2/538E: BD 2A 00     LDA $002A,X
 C2/5391: 85 0C        STA $0C
 C2/5393: BD 2C 00     LDA $002C,X
 C2/5396: 85 0E        STA $0E
-C2/5398: 20 9D 22     JSR $229D
+C2/5398: 20 9D 22     JSR Routine_C2229D
 C2/539B: 85 08        STA $08
 C2/539D: 9B           TXY
-C2/539E: D0 04        BNE $53A4
+C2/539E: D0 04        BNE Routine_C253A4
 C2/53A0: E2 20        SEP #$20
 C2/53A2: 18           CLC
 C2/53A3: 60           RTS

@@ -24,7 +24,7 @@ CE/17DC: 09 03 0D     ORA #$0D03
 CE/17DF: A8           TAY
 CE/17E0: 05 44        ORA $44
 CE/17E2: 00 90        BRK $90
-CE/17E4: F0 80        BEQ $1766
+CE/17E4: F0 80        BEQ Routine_CE1766
 CE/17E6: 00 F5        BRK $F5
 CE/17E8: 17 03        ORA [$03],Y
 CE/17EA: 18           CLC
@@ -58,7 +58,7 @@ CE/181F: 7A           PLY
 CE/1820: EA           NOP
 CE/1821: 0C 03 01     TSB $0103
 CE/1824: 36 85        ROL $85,X
-CE/1826: 20 7A F0     JSR $F07A
+CE/1826: 20 7A F0     JSR Routine_CEF07A
 CE/1829: 0C 1E 25     TSB $251E
 CE/182C: 71 20        ADC ($20),Y
 CE/182E: 01 36        ORA ($36,X)

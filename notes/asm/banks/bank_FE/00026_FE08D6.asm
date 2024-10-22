@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: 08D6
 Routine_FE08D6:
-FE/08D6: 10 7C        BPL $0954
+FE/08D6: 10 7C        BPL Local_FE0954
 FE/08D8: 08           PHP
 FE/08D9: C0 02 01     CPY #$0102
 FE/08DC: 0E 0D 0C     ASL $0C0D
@@ -61,6 +61,7 @@ FE/094B: BE 0F 0F     LDX $0F0F,Y
 FE/094E: 04 04        TSB $04
 FE/0950: 05 06        ORA $06
 FE/0952: 07 AB        ORA [$AB]
+Local_FE0954:
 FE/0954: 42 F8        WDM $F8
 FE/0956: 0F 80 06 C2  ORA $C20680
 FE/095A: 0D 0B 42     ORA $420B

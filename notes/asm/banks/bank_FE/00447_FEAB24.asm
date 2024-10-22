@@ -3,7 +3,7 @@ Routine_FEAB24:
 FE/AB24: A5 48        LDA $48
 FE/AB26: 05 6F        ORA $6F
 FE/AB28: D1 00        CMP ($00),Y
-FE/AB2A: 50 25        BVC $AB51
+FE/AB2A: 50 25        BVC Routine_FEAB51
 FE/AB2C: 61 14        ADC ($14,X)
 FE/AB2E: A9 14        LDA #$14
 FE/AB30: 04 71        TSB $71
@@ -11,7 +11,7 @@ FE/AB32: 04 74        TSB $74
 FE/AB34: 14 05        TRB $05
 FE/AB36: DF 5D 10 73  CMP $73105D,X
 FE/AB3A: 14 65        TRB $65
-FE/AB3C: 20 9B 24     JSR $249B
+FE/AB3C: 20 9B 24     JSR Routine_FE249B
 FE/AB3F: 64 00        STZ $00
 FE/AB41: 04 6F        TSB $6F
 FE/AB43: 04 DA        TSB $DA

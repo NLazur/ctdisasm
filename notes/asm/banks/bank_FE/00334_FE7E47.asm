@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: 7E47
 Routine_FE7E47:
-FE/7E47: 90 3A        BCC $7E83
+FE/7E47: 90 3A        BCC Routine_FE7E83
 FE/7E49: 1C 3E 20     TRB $203E
 FE/7E4C: 49 0C        EOR #$0C
 FE/7E4E: B1 34        LDA ($34),Y

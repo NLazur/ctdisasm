@@ -22,7 +22,7 @@ C2/21BD: 17 10        ORA [$10],Y
 C2/21BF: 85 1F        STA $1F
 C2/21C1: A0 02 00     LDY #$0002
 C2/21C4: B7 10        LDA [$10],Y
-C2/21C6: D0 08        BNE $21D0
+C2/21C6: D0 08        BNE Routine_C221D0
 C2/21C8: A5 1F        LDA $1F
 C2/21CA: 29 0F        AND #$0F
 C2/21CC: 85 1F        STA $1F

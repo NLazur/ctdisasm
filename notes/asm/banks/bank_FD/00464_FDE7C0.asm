@@ -2,6 +2,7 @@
 Routine_FDE7C0:
 FD/E7C0: B9 22 05     LDA $0522,Y
 FD/E7C3: A8           TAY
+Local_FDE7C4:
 FD/E7C4: BF 01 20 7E  LDA $7E2001,X
 FD/E7C8: 29 7C        AND #$7C
 FD/E7CA: 8D 03 42     STA $4203
@@ -34,5 +35,5 @@ FD/E7FF: E2 20        SEP #$20
 FD/E801: E8           INX
 FD/E802: E8           INX
 FD/E803: 88           DEY
-FD/E804: D0 BE        BNE $E7C4
+FD/E804: D0 BE        BNE Local_FDE7C4
 FD/E806: 60           RTS

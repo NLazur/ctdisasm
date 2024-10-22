@@ -1,8 +1,9 @@
 ; Bank: C1 | Start Address: 4943
 Routine_C14943:
-C1/4943: 20 7E 00     JSR $007E
-C1/4946: 20 FA 10     JSR $10FA
+C1/4943: 20 7E 00     JSR Routine_C1007E
+C1/4946: 20 FA 10     JSR Routine_C110FA
 C1/4949: 64 8C        STZ $8C
+Local_C1494B:
 C1/494B: C2 20        REP #$20
 C1/494D: AD 50 A6     LDA $A650
 C1/4950: 0A           ASL
@@ -15,8 +16,9 @@ C1/495B: AE 50 A6     LDX $A650
 C1/495E: 9E 5B A0     STZ $A05B,X
 C1/4961: AE 52 A6     LDX $A652
 C1/4964: BD 00 2D     LDA $2D00,X
-C1/4967: D0 03        BNE $496C
-C1/4969: 4C FE 49     JMP $49FE
+C1/4967: D0 03        BNE Local_C1496C
+C1/4969: 4C FE 49     JMP Local_C149FE
+Local_C1496C:
 C1/496C: 29 0F        AND #$0F
 C1/496E: 85 81        STA $81
 C1/4970: 85 82        STA $82
@@ -29,24 +31,27 @@ C1/4979: 85 80        STA $80
 C1/497B: E8           INX
 C1/497C: 7B           TDC
 C1/497D: A8           TAY
+Local_C1497E:
 C1/497E: BD 00 2D     LDA $2D00,X
 C1/4981: 99 D3 A2     STA $A2D3,Y
 C1/4984: E8           INX
 C1/4985: C8           INY
 C1/4986: C6 82        DEC $82
-C1/4988: D0 F4        BNE $497E
+C1/4988: D0 F4        BNE Local_C1497E
 C1/498A: 8E 52 A6     STX $A652
 C1/498D: 7B           TDC
 C1/498E: A8           TAY
 C1/498F: 84 82        STY $82
+Local_C14991:
 C1/4991: 7B           TDC
 C1/4992: A8           TAY
 C1/4993: 84 86        STY $86
+Local_C14995:
 C1/4995: A4 82        LDY $82
 C1/4997: B9 D3 A2     LDA $A2D3,Y
 C1/499A: 0A           ASL
 C1/499B: 99 D3 A2     STA $A2D3,Y
-C1/499E: 90 3A        BCC $49DA
+C1/499E: 90 3A        BCC Local_C149DA
 C1/49A0: AE 52 A6     LDX $A652
 C1/49A3: A4 84        LDY $84
 C1/49A5: BD 00 2D     LDA $2D00,X
@@ -71,13 +76,14 @@ C1/49D1: C8           INY
 C1/49D2: 84 84        STY $84
 C1/49D4: AE 50 A6     LDX $A650
 C1/49D7: FE 5B A0     INC $A05B,X
+Local_C149DA:
 C1/49DA: E6 86        INC $86
 C1/49DC: A5 86        LDA $86
 C1/49DE: C9 08        CMP #$08
-C1/49E0: D0 B3        BNE $4995
+C1/49E0: D0 B3        BNE Local_C14995
 C1/49E2: E6 82        INC $82
 C1/49E4: C6 81        DEC $81
-C1/49E6: D0 A9        BNE $4991
+C1/49E6: D0 A9        BNE Local_C14991
 C1/49E8: AE 52 A6     LDX $A652
 C1/49EB: E8           INX
 C1/49EC: E8           INX
@@ -86,6 +92,7 @@ C1/49F0: EE 50 A6     INC $A650
 C1/49F3: E6 8C        INC $8C
 C1/49F5: A5 8C        LDA $8C
 C1/49F7: C9 04        CMP #$04
-C1/49F9: F0 03        BEQ $49FE
-C1/49FB: 4C 4B 49     JMP $494B
+C1/49F9: F0 03        BEQ Local_C149FE
+C1/49FB: 4C 4B 49     JMP Local_C1494B
+Local_C149FE:
 C1/49FE: 60           RTS

@@ -3,7 +3,7 @@ Routine_FD4D70:
 FD/4D70: BF 40 BF 40  LDA $40BF40,X
 FD/4D74: 31 38        AND ($38),Y
 FD/4D76: 76 05        ROR $05,X
-FD/4D78: 20 FF 0E     JSR $0EFF
+FD/4D78: 20 FF 0E     JSR Routine_FD0EFF
 FD/4D7B: F3 3D        SBC ($3D,S),Y
 FD/4D7D: E2 E6        SEP #$E6
 FD/4D7F: 06 01        ASL $01
@@ -33,16 +33,17 @@ FD/4DB2: 24 C7        BIT $C7
 FD/4DB4: 08           PHP
 FD/4DB5: 81 0D        STA ($0D,X)
 FD/4DB7: C0 7F        CPY #$7F
+Local_FD4DB9:
 FD/4DB9: DA           PHX
 FD/4DBA: 08           PHP
-FD/4DBB: 80 FC        BRA $4DB9
+FD/4DBB: 80 FC        BRA Local_FD4DB9
 FD/4DBD: 7A           PLY
 FD/4DBE: 04 CB        TSB $CB
 FD/4DC0: 32 E0        AND ($E0)
 FD/4DC2: 8C 48 C0     STY $C048
 FD/4DC5: F2 A4        SBC ($A4)
 FD/4DC7: A2 3E 0F     LDX #$0F3E
-FD/4DCA: 10 DF        BPL $4DAB
+FD/4DCA: 10 DF        BPL Routine_FD4DAB
 FD/4DCC: 44 1F F2     MVP $1F,$F2
 FD/4DCF: 08           PHP
 FD/4DD0: F4 28 42     PEA $4228

@@ -1,5 +1,6 @@
 ; Bank: D1 | Start Address: F165
 Routine_D1F165:
+Local_D1F165:
 D1/F165: B9 21 C2     LDA $C221,Y
 D1/F168: 75 00        ADC $00,X
 D1/F16A: 99 21 C2     STA $C221,Y
@@ -29,7 +30,7 @@ D1/F1A6: C8           INY
 D1/F1A7: C8           INY
 D1/F1A8: C8           INY
 D1/F1A9: C8           INY
-D1/F1AA: D0 B9        BNE $F165
+D1/F1AA: D0 B9        BNE Local_D1F165
 D1/F1AC: 2B           PLD
 D1/F1AD: C2 10        REP #$10
 D1/F1AF: 6B           RTL

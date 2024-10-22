@@ -12,10 +12,10 @@ D1/14CB: 0A           ASL
 D1/14CC: 49 00        EOR #$00
 D1/14CE: 42 E0        WDM $E0
 D1/14D0: 41 27        EOR ($27,X)
-D1/14D2: 10 E8        BPL $14BC
+D1/14D2: 10 E8        BPL Routine_D114BC
 D1/14D4: 00 20        BRK $20
 D1/14D6: 01 22        ORA ($22,X)
-D1/14D8: 4C 80 0A     JMP $0A80
+D1/14D8: 4C 80 0A     JMP Routine_D10A80
 D1/14DB: 42 41        WDM $41
-D1/14DD: 4C 10 70     JMP $7010
+D1/14DD: 4C 10 70     JMP Routine_D17010
 D1/14E0: 60           RTS

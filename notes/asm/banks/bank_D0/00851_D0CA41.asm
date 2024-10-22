@@ -4,7 +4,7 @@ D0/CA41: C0 00        CPY #$00
 D0/CA43: 00 00        BRK $00
 D0/CA45: 00 00        BRK $00
 D0/CA47: 00 0F        BRK $0F
-D0/CA49: F0 FF        BEQ $CA4A
+D0/CA49: F0 FF        BEQ Routine_D0CA4A
 D0/CA4B: 00 00        BRK $00
 D0/CA4D: FF 03 03 00  SBC $000303,X
 D0/CA51: 00 00        BRK $00
@@ -19,5 +19,5 @@ D0/CA64: 00 00        BRK $00
 D0/CA66: 00 00        BRK $00
 D0/CA68: 1E 1E 18     ASL $181E,X
 D0/CA6B: 18           CLC
-D0/CA6C: 30 30        BMI $CA9E
+D0/CA6C: 30 30        BMI Routine_D0CA9E
 D0/CA6E: 60           RTS

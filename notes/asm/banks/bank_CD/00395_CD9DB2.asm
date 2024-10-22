@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: 9DB2
 Routine_CD9DB2:
-CD/9DB2: 20 5A 36     JSR $365A
+CD/9DB2: 20 5A 36     JSR Routine_CD365A
 CD/9DB5: 02 05        COP $05
 CD/9DB7: 12 21        ORA ($21)
 CD/9DB9: 1B           TCS
@@ -26,7 +26,7 @@ CD/9DE0: 37 78        AND [$78],Y
 CD/9DE2: 57 00        EOR [$00],Y
 CD/9DE4: 00 72        BRK $72
 CD/9DE6: 0D 03 08     ORA $0803
-CD/9DE9: 20 0F 06     JSR $060F
+CD/9DE9: 20 0F 06     JSR Routine_CD060F
 CD/9DEC: 03 20        ORA $20,S
 CD/9DEE: 0F 50 2E 01  ORA $012E50
 CD/9DF2: 00 90        BRK $90
@@ -50,7 +50,7 @@ CD/9E21: 36 03        ROL $03,X
 CD/9E23: 07 24        ORA [$24]
 CD/9E25: 0A           ASL
 CD/9E26: 06 03        ASL $03
-CD/9E28: 20 0F 50     JSR $500F
+CD/9E28: 20 0F 50     JSR Routine_CD500F
 CD/9E2B: 2E 01 00     ROL $0001
 CD/9E2E: 24 02        BIT $02
 CD/9E30: 1E 44 24     ASL $2444,X
@@ -62,7 +62,7 @@ CD/9E3A: 03 1B        ORA $1B,S
 CD/9E3C: 00 02        BRK $02
 CD/9E3E: 01 70        ORA ($70,X)
 CD/9E40: 24 01        BIT $01
-CD/9E42: 20 0F 78     JSR $780F
+CD/9E42: 20 0F 78     JSR Routine_CD780F
 CD/9E45: 9A           TXS
 CD/9E46: 0B           PHD
 CD/9E47: 98           TYA
@@ -80,8 +80,9 @@ CD/9E59: 00 73        BRK $73
 CD/9E5B: 03 1B        ORA $1B,S
 CD/9E5D: 0C 24 02     TSB $0224
 CD/9E60: 85 20        STA $20
-CD/9E62: 70 02        BVS $9E66
+CD/9E62: 70 02        BVS Local_CD9E66
 CD/9E64: 00 0A        BRK $0A
+Local_CD9E66:
 CD/9E66: A8           TAY
 CD/9E67: 18           CLC
 CD/9E68: 71 36        ADC ($36),Y
@@ -89,8 +90,9 @@ CD/9E6A: 00 73        BRK $73
 CD/9E6C: 03 1B        ORA $1B,S
 CD/9E6E: 0C 24 02     TSB $0224
 CD/9E71: 85 40        STA $40
-CD/9E73: 70 02        BVS $9E77
+CD/9E73: 70 02        BVS Local_CD9E77
 CD/9E75: 00 0A        BRK $0A
+Local_CD9E77:
 CD/9E77: A8           TAY
 CD/9E78: 18           CLC
 CD/9E79: 71 36        ADC ($36),Y
@@ -98,8 +100,9 @@ CD/9E7B: 00 73        BRK $73
 CD/9E7D: 03 1B        ORA $1B,S
 CD/9E7F: 0C 24 02     TSB $0224
 CD/9E82: 85 60        STA $60
-CD/9E84: 70 02        BVS $9E88
+CD/9E84: 70 02        BVS Local_CD9E88
 CD/9E86: 00 0A        BRK $0A
+Local_CD9E88:
 CD/9E88: A8           TAY
 CD/9E89: 18           CLC
 CD/9E8A: 71 36        ADC ($36),Y
@@ -107,8 +110,9 @@ CD/9E8C: 00 73        BRK $73
 CD/9E8E: 03 1B        ORA $1B,S
 CD/9E90: 0C 24 02     TSB $0224
 CD/9E93: 85 80        STA $80
-CD/9E95: 70 02        BVS $9E99
+CD/9E95: 70 02        BVS Local_CD9E99
 CD/9E97: 00 0A        BRK $0A
+Local_CD9E99:
 CD/9E99: A8           TAY
 CD/9E9A: 18           CLC
 CD/9E9B: 71 36        ADC ($36),Y
@@ -116,8 +120,9 @@ CD/9E9D: 00 73        BRK $73
 CD/9E9F: 03 1B        ORA $1B,S
 CD/9EA1: 0C 24 02     TSB $0224
 CD/9EA4: 85 A0        STA $A0
-CD/9EA6: 70 02        BVS $9EAA
+CD/9EA6: 70 02        BVS Local_CD9EAA
 CD/9EA8: 00 0A        BRK $0A
+Local_CD9EAA:
 CD/9EAA: A8           TAY
 CD/9EAB: 18           CLC
 CD/9EAC: 71 36        ADC ($36),Y
@@ -125,8 +130,9 @@ CD/9EAE: 00 73        BRK $73
 CD/9EB0: 03 1B        ORA $1B,S
 CD/9EB2: 0C 24 02     TSB $0224
 CD/9EB5: 85 C0        STA $C0
-CD/9EB7: 70 02        BVS $9EBB
+CD/9EB7: 70 02        BVS Local_CD9EBB
 CD/9EB9: 00 0A        BRK $0A
+Local_CD9EBB:
 CD/9EBB: A8           TAY
 CD/9EBC: 18           CLC
 CD/9EBD: 71 36        ADC ($36),Y
@@ -134,8 +140,9 @@ CD/9EBF: 00 73        BRK $73
 CD/9EC1: 03 1B        ORA $1B,S
 CD/9EC3: 0C 24 02     TSB $0224
 CD/9EC6: 85 E0        STA $E0
-CD/9EC8: 70 02        BVS $9ECC
+CD/9EC8: 70 02        BVS Local_CD9ECC
 CD/9ECA: 00 0A        BRK $0A
+Local_CD9ECC:
 CD/9ECC: A8           TAY
 CD/9ECD: 18           CLC
 CD/9ECE: 71 36        ADC ($36),Y
@@ -146,8 +153,9 @@ CD/9ED6: 0A           ASL
 CD/9ED7: 06 03        ASL $03
 CD/9ED9: 00 98        BRK $98
 CD/9EDB: F8           SED
-CD/9EDC: 80 00        BRA $9EDE
-CD/9EDE: F0 9E        BEQ $9E7E
+CD/9EDC: 80 00        BRA Local_CD9EDE
+Local_CD9EDE:
+CD/9EDE: F0 9E        BEQ Routine_CD9E7E
 CD/9EE0: 0A           ASL
 CD/9EE1: 9F 18 9F 21  STA $219F18,X
 CD/9EE5: 9F 3B 9F 4F  STA $4F9F3B,X
@@ -161,17 +169,17 @@ CD/9EF8: 0A           ASL
 CD/9EF9: 72 0D        ADC ($0D)
 CD/9EFB: 02 06        COP $06
 CD/9EFD: 24 0C        BIT $0C
-CD/9EFF: 30 1A        BMI $9F1B
+CD/9EFF: 30 1A        BMI Routine_CD9F1B
 CD/9F01: 01 20        ORA ($20,X)
-CD/9F03: 20 06 03     JSR $0306
-CD/9F06: 50 2E        BVC $9F36
+CD/9F03: 20 06 03     JSR Routine_CD0306
+CD/9F06: 50 2E        BVC Routine_CD9F36
 CD/9F08: 01 00        ORA ($00,X)
 CD/9F0A: 24 0A        BIT $0A
 CD/9F0C: 02 09        COP $09
 CD/9F0E: 78           SEI
 CD/9F0F: AA           TAX
 CD/9F10: 24 0B        BIT $0B
-CD/9F12: 20 0F 36     JSR $360F
+CD/9F12: 20 0F 36     JSR Routine_CD360F
 CD/9F15: 06 03        ASL $03
 CD/9F17: 00 24        BRK $24
 CD/9F19: 0A           ASL
@@ -185,21 +193,22 @@ CD/9F26: 00 3A        BRK $3A
 CD/9F28: 1E 09 3A     ASL $3A09,X
 CD/9F2B: 1F D7 1A 36  ORA $361AD7,X
 CD/9F2F: 24 0A        BIT $0A
-CD/9F31: 70 02        BVS $9F35
+CD/9F31: 70 02        BVS Local_CD9F35
 CD/9F33: 00 09        BRK $09
+Local_CD9F35:
 CD/9F35: 85 00        STA $00
 CD/9F37: A8           TAY
-CD/9F38: 30 71        BMI $9FAB
+CD/9F38: 30 71        BMI Routine_CD9FAB
 CD/9F3A: 00 73        BRK $73
 CD/9F3C: 00 24        BRK $24
 CD/9F3E: 01 1A        ORA ($1A,X)
 CD/9F40: 36 24        ROL $24,X
 CD/9F42: 0A           ASL
-CD/9F43: 20 1E 70     JSR $701E
+CD/9F43: 20 1E 70     JSR Routine_CD701E
 CD/9F46: 02 00        COP $00
 CD/9F48: 09 85 E0     ORA #$E085
 CD/9F4B: A8           TAY
-CD/9F4C: 30 71        BMI $9FBF
+CD/9F4C: 30 71        BMI Local_CD9FBF
 CD/9F4E: 00 73        BRK $73
 CD/9F50: 00 24        BRK $24
 CD/9F52: 02 1A        COP $1A
@@ -208,31 +217,31 @@ CD/9F56: 3C 70 02     BIT $0270,X
 CD/9F59: 00 09        BRK $09
 CD/9F5B: 85 20        STA $20
 CD/9F5D: A8           TAY
-CD/9F5E: 30 71        BMI $9FD1
+CD/9F5E: 30 71        BMI Routine_CD9FD1
 CD/9F60: 36 00        ROL $00,X
 CD/9F62: 73 00        ADC ($00,S),Y
 CD/9F64: 24 03        BIT $03
 CD/9F66: 1A           INC
 CD/9F67: 36 24        ROL $24,X
 CD/9F69: 0A           ASL
-CD/9F6A: 20 0F 70     JSR $700F
+CD/9F6A: 20 0F 70     JSR Routine_CD700F
 CD/9F6D: 02 00        COP $00
 CD/9F6F: 09 85 10     ORA #$1085
 CD/9F72: A8           TAY
-CD/9F73: 30 71        BMI $9FE6
+CD/9F73: 30 71        BMI Routine_CD9FE6
 CD/9F75: 00 73        BRK $73
 CD/9F77: 00 24        BRK $24
 CD/9F79: 04 1A        TSB $1A
 CD/9F7B: 36 24        ROL $24,X
 CD/9F7D: 0A           ASL
-CD/9F7E: 20 3C 70     JSR $703C
+CD/9F7E: 20 3C 70     JSR Routine_CD703C
 CD/9F81: 02 00        COP $00
 CD/9F83: 09 85 F0     ORA #$F085
 CD/9F86: A8           TAY
-CD/9F87: 30 71        BMI $9FFA
+CD/9F87: 30 71        BMI Routine_CD9FFA
 CD/9F89: 36 00        ROL $00,X
 CD/9F8B: 02 06        COP $06
-CD/9F8D: 20 1E 06     JSR $061E
+CD/9F8D: 20 1E 06     JSR Routine_CD061E
 CD/9F90: 05 20        ORA $20
 CD/9F92: 0F 06 03 20  ORA $200306
 CD/9F96: 0F 50 2E 01  ORA $012E50
@@ -249,17 +258,18 @@ CD/9FB2: A0 C9        LDY #$C9
 CD/9FB4: A0 72        LDY #$72
 CD/9FB6: 0D 78 9C     ORA $9C78
 CD/9FB9: 02 07        COP $07
-CD/9FBB: 80 45        BRA $A002
+CD/9FBB: 80 45        BRA Routine_CDA002
 CD/9FBD: 00 00        BRK $00
+Local_CD9FBF:
 CD/9FBF: E7 84        SBC [$84]
-CD/9FC1: 80 02        BRA $9FC5
+CD/9FC1: 80 02        BRA Routine_CD9FC5
 CD/9FC3: 69 20 3C     ADC #$3C20
 CD/9FC6: 36 24        ROL $24,X
 CD/9FC8: 03 80        ORA $80,S
 CD/9FCA: 12 69        ORA ($69)
-CD/9FCC: 80 51        BRA $A01F
+CD/9FCC: 80 51        BRA Routine_CDA01F
 CD/9FCE: 06 03        ASL $03
-CD/9FD0: 20 0F 50     JSR $500F
+CD/9FD0: 20 0F 50     JSR Routine_CD500F
 CD/9FD3: 2E 01 00     ROL $0001
 CD/9FD6: 24 02        BIT $02
 CD/9FD8: 78           SEI

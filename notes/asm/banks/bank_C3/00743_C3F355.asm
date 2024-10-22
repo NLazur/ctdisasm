@@ -13,10 +13,11 @@ C3/F367: 04 84        TSB $84
 C3/F369: F3 00        SBC ($00,S),Y
 C3/F36B: 01 F8        ORA ($F8,X)
 C3/F36D: F8           SED
-C3/F36E: 80 00        BRA $F370
+C3/F36E: 80 00        BRA Local_C3F370
+Local_C3F370:
 C3/F370: 01 F8        ORA ($F8,X)
 C3/F372: F8           SED
-C3/F373: 82 00 01     BRL $C3F476
+C3/F373: 82 00 01     BRL Routine_C3F476
 C3/F376: F8           SED
 C3/F377: F8           SED
 C3/F378: 84 00        STY $00
@@ -45,9 +46,10 @@ C3/F39F: 33 F5        AND ($F5,S),Y
 C3/F3A1: 0A           ASL
 C3/F3A2: 04 F4        TSB $F4
 C3/F3A4: F4 08 03     PEA $0308
-C3/F3A7: F0 04        BEQ $F3AD
+C3/F3A7: F0 04        BEQ Local_C3F3AD
 C3/F3A9: CA           DEX
 C3/F3AA: F4 0A 04     PEA $040A
+Local_C3F3AD:
 C3/F3AD: 09 F5        ORA #$F5
 C3/F3AF: 08           PHP
 C3/F3B0: 04 48        TSB $48

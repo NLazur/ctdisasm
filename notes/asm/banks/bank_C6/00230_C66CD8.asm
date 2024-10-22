@@ -22,7 +22,7 @@ C6/6CFB: 23 0E        AND $0E,S
 C6/6CFD: 21 BF        AND ($BF,X)
 C6/6CFF: C0 20 21     CPY #$2120
 C6/6D02: 12 D7        ORA ($D7)
-C6/6D04: 70 39        BVS $6D3F
+C6/6D04: 70 39        BVS Routine_C66D3F
 C6/6D06: 6C FC 12     JMP ($12FC)
 C6/6D09: 68           PLA
 C6/6D0A: 21 23        AND ($23,X)
@@ -31,7 +31,7 @@ C6/6D0F: FE 13 60     INC $6013,X
 C6/6D12: F2 3F        SBC ($3F)
 C6/6D14: ED 26 10     SBC $1026
 C6/6D17: 11 83        ORA ($83),Y
-C6/6D19: 22 62 F0 63  JSR $63F062
+C6/6D19: 22 62 F0 63  JSR Routine_63F062
 C6/6D1D: F8           SED
 C6/6D1E: 78           SEI
 C6/6D1F: 69 7D 3F     ADC #$3F7D

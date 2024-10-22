@@ -3,7 +3,7 @@ Routine_FE7BCC:
 FE/7BCC: D8           CLD
 FE/7BCD: 03 AC        ORA $AC,S
 FE/7BCF: 25 B0        AND $B0
-FE/7BD1: 20 00 24     JSR $2400
+FE/7BD1: 20 00 24     JSR Routine_FE2400
 FE/7BD4: E2 42        SEP #$42
 FE/7BD6: 6F 45 EF 15  ADC $15EF45
 FE/7BDA: 11 6B        ORA ($6B),Y

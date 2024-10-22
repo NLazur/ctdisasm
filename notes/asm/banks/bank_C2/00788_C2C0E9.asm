@@ -1,25 +1,27 @@
 ; Bank: C2 | Start Address: C0E9
 Routine_C2C0E9:
 C2/C0E9: AD 1D 0D     LDA $0D1D
-C2/C0EC: 30 1A        BMI $C108
+C2/C0EC: 30 1A        BMI Local_C2C108
 C2/C0EE: A5 7F        LDA $7F
 C2/C0F0: C9 08        CMP #$08
-C2/C0F2: D0 34        BNE $C128
+C2/C0F2: D0 34        BNE Local_C2C128
 C2/C0F4: A5 5A        LDA $5A
 C2/C0F6: 29 01        AND #$01
-C2/C0F8: F0 2E        BEQ $C128
+C2/C0F8: F0 2E        BEQ Local_C2C128
 C2/C0FA: AD 87 0D     LDA $0D87
-C2/C0FD: D0 17        BNE $C116
+C2/C0FD: D0 17        BNE Local_C2C116
 C2/C0FF: A9 03        LDA #$03
 C2/C101: 85 54        STA $54
 C2/C103: 8D 17 04     STA $0417
-C2/C106: 80 20        BRA $C128
+C2/C106: 80 20        BRA Local_C2C128
+Local_C2C108:
 C2/C108: AD 87 0D     LDA $0D87
 C2/C10B: 1A           INC
 C2/C10C: 29 01        AND #$01
 C2/C10E: 8D 87 0D     STA $0D87
 C2/C111: 8D 0A 0F     STA $0F0A
-C2/C114: F0 12        BEQ $C128
+C2/C114: F0 12        BEQ Local_C2C128
+Local_C2C116:
 C2/C116: A9 0F        LDA #$0F
 C2/C118: 85 54        STA $54
 C2/C11A: E6 68        INC $68
@@ -28,5 +30,6 @@ C2/C11D: A2 08 04     LDX #$0408
 C2/C120: A0 00 0F     LDY #$0F00
 C2/C123: A9 08        LDA #$08
 C2/C125: 54 7E 7E     MVN $7E,$7E
-C2/C128: 20 4F C5     JSR $C54F
+Local_C2C128:
+C2/C128: 20 4F C5     JSR Routine_C2C54F
 C2/C12B: 60           RTS

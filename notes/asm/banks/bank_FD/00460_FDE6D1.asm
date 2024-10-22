@@ -2,6 +2,7 @@
 Routine_FDE6D1:
 FD/E6D1: B9 22 05     LDA $0522,Y
 FD/E6D4: A8           TAY
+Local_FDE6D5:
 FD/E6D5: C2 20        REP #$20
 FD/E6D7: BF 00 20 7E  LDA $7E2000,X
 FD/E6DB: 29 1F 7C     AND #$7C1F
@@ -26,5 +27,5 @@ FD/E700: E2 20        SEP #$20
 FD/E702: E8           INX
 FD/E703: E8           INX
 FD/E704: 88           DEY
-FD/E705: D0 CE        BNE $E6D5
+FD/E705: D0 CE        BNE Local_FDE6D5
 FD/E707: 60           RTS

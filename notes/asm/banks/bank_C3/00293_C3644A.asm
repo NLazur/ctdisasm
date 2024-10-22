@@ -9,14 +9,14 @@ C3/6453: 01 20        ORA ($20,X)
 C3/6455: 97 98        STA [$98],Y
 C3/6457: FD 29 97     SBC $9729,X
 C3/645A: B6 02        LDX $02,Y
-C3/645C: 20 70 0C     JSR $0C70
+C3/645C: 20 70 0C     JSR Routine_C30C70
 C3/645F: 00 52        BRK $52
 C3/6461: 25 30        AND $30
 C3/6463: 91 3F        STA ($3F),Y
 C3/6465: 00 3B        BRK $3B
 C3/6467: A3 10        LDA $10,S
 C3/6469: 0A           ASL
-C3/646A: 20 45 97     JSR $9745
+C3/646A: 20 45 97     JSR Routine_C39745
 C3/646D: 04 90        TSB $90
 C3/646F: 01 0F        ORA ($0F,X)
 C3/6471: 00 FD        BRK $FD
@@ -27,28 +27,30 @@ C3/647D: 02 21        COP $21
 C3/647F: 04 2A        TSB $2A
 C3/6481: 00 41        BRK $41
 C3/6483: FF 13 21 04  SBC $042113,X
-C3/6487: 10 FD        BPL $6486
+C3/6487: 10 FD        BPL Routine_C36486
 C3/6489: FF D8 01 65  SBC $6501D8,X
 C3/648D: 06 97        ASL $97
 C3/648F: 0E 40 D3     ASL $D340
 C3/6492: 03 07        ORA $07,S
 C3/6494: 00 73        BRK $73
 C3/6496: 97 12        STA [$12],Y
-C3/6498: 10 02        BPL $649C
+C3/6498: 10 02        BPL Local_C3649C
 C3/649A: 00 FC        BRK $FC
+Local_C3649C:
 C3/649C: 11 FD        ORA ($FD),Y
 C3/649E: 01 17        ORA ($17,X)
 C3/64A0: 00 81        BRK $81
 C3/64A2: 09 36        ORA #$36
-C3/64A4: 10 FD        BPL $64A3
-C3/64A6: 90 F1        BCC $6499
-C3/64A8: 10 91        BPL $643B
+C3/64A4: 10 FD        BPL Routine_C364A3
+C3/64A6: 90 F1        BCC Routine_C36499
+C3/64A8: 10 91        BPL Routine_C3643B
 C3/64AA: 07 00        ORA [$00]
 C3/64AC: 93 12        STA ($12,S),Y
 C3/64AE: 97 05        STA [$05],Y
 C3/64B0: 04 80        TSB $80
 C3/64B2: 2F 08 00 02  AND $020008
-C3/64B6: F0 00        BEQ $64B8
+C3/64B6: F0 00        BEQ Local_C364B8
+Local_C364B8:
 C3/64B8: 08           PHP
 C3/64B9: FD A6 97     SBC $97A6,X
 C3/64BC: B6 06        LDX $06,Y
@@ -69,13 +71,14 @@ C3/64D9: 0E 20 03     ASL $0320
 C3/64DC: 04 0E        TSB $0E
 C3/64DE: 00 8F        BRK $8F
 C3/64E0: 00 C8        BRK $C8
-C3/64E2: 70 97        BVS $647B
+C3/64E2: 70 97        BVS Routine_C3647B
 C3/64E4: F9 2A 99     SBC $992A,Y
 C3/64E7: AB           PLB
 C3/64E8: 05 76        ORA $76
 C3/64EA: 04 6D        TSB $6D
 C3/64EC: 11 0F        ORA ($0F),Y
-C3/64EE: 20 00 D9     JSR $D900
+Local_C364EE:
+C3/64EE: 20 00 D9     JSR Routine_C3D900
 C3/64F1: 97 11        STA [$11],Y
 C3/64F3: FE 0E 50     INC $500E,X
 C3/64F6: 2F 00 06 E7  AND $E70600
@@ -94,8 +97,9 @@ C3/6510: 86 06        STX $06
 C3/6512: 03 1E        ORA $1E,S
 C3/6514: 05 14        ORA $14
 C3/6516: 98           TYA
-C3/6517: 30 36        BMI $654F
-C3/6519: 90 00        BCC $651B
+C3/6517: 30 36        BMI Local_C3654F
+C3/6519: 90 00        BCC Local_C3651B
+Local_C3651B:
 C3/651B: 27 00        AND [$00]
 C3/651D: 19 98 91     ORA $9198,Y
 C3/6520: 5B           TCD
@@ -108,23 +112,24 @@ C3/652A: DD 02 31     CMP $3102,X
 C3/652D: 1D 10 86     ORA $8610,X
 C3/6530: 11 C8        ORA ($C8),Y
 C3/6532: 0F 00 36 0B  ORA $0B3600
-C3/6536: 70 41        BVS $6579
+C3/6536: 70 41        BVS Routine_C36579
 C3/6538: 98           TYA
 C3/6539: DD 02 9C     CMP $9C02,X
 C3/653C: 31 94        AND ($94),Y
-C3/653E: 4C 98 DD     JMP $DD98
+C3/653E: 4C 98 DD     JMP Routine_C3DD98
 C3/6541: 02 16        COP $16
 C3/6543: 1B           TCS
 C3/6544: 13 00        ORA ($00,S),Y
 C3/6546: 57 73        EOR [$73],Y
 C3/6548: 12 11        ORA ($11)
 C3/654A: 0B           PHD
-C3/654B: 10 0F        BPL $655C
+C3/654B: 10 0F        BPL Routine_C3655C
 C3/654D: 00 62        BRK $62
+Local_C3654F:
 C3/654F: 0B           PHD
-C3/6550: 50 7F        BVC $65D1
+C3/6550: 50 7F        BVC Routine_C365D1
 C3/6552: 00 6D        BRK $6D
-C3/6554: 90 98        BCC $64EE
+C3/6554: 90 98        BCC Local_C364EE
 C3/6556: FD 78 98     SBC $9878,X
 C3/6559: 97 07        STA [$07],Y
 C3/655B: 02 D3        COP $D3
@@ -134,16 +139,17 @@ C3/6563: 06 92        ASL $92
 C3/6565: 03 00        ORA $00,S
 C3/6567: 8A           TXA
 C3/6568: 98           TYA
-C3/6569: 90 00        BCC $656B
+C3/6569: 90 00        BCC Local_C3656B
+Local_C3656B:
 C3/656B: CF 00 84 98  CMP $988400
 C3/656F: FD 94 98     SBC $9894,X
-C3/6572: 20 50 E3     JSR $E350
+C3/6572: 20 50 E3     JSR Routine_C3E350
 C3/6575: 98           TYA
 C3/6576: 85 58        STA $58
 C3/6578: 05 10        ORA $10
 C3/657A: 5A           PHY
 C3/657B: 0A           ASL
-C3/657C: 10 5C        BPL $65DA
+C3/657C: 10 5C        BPL Routine_C365DA
 C3/657E: 00 A2        BRK $A2
 C3/6580: AC 98 4C     LDY $4C98
 C3/6583: B1 39        LDA ($39),Y
@@ -159,15 +165,16 @@ C3/6594: 0C 30 04     TSB $0430
 C3/6597: 0B           PHD
 C3/6598: 85 5A        STA $5A
 C3/659A: C6 02        DEC $02
-C3/659C: 5C 18 30 00  JMP $003018
+C3/659C: 5C 18 30 00  JMP Routine_003018
 C3/65A0: 0B           PHD
 C3/65A1: 85 5C        STA $5C
 C3/65A3: AD 02 00     LDA $0002
 C3/65A6: 0B           PHD
-C3/65A7: D0 0D        BNE $65B6
+C3/65A7: D0 0D        BNE Local_C365B6
 C3/65A9: AD 04 0B     LDA $0B04
-C3/65AC: D0 08        BNE $65B6
+C3/65AC: D0 08        BNE Local_C365B6
 C3/65AE: 01 8C        ORA ($8C,X)
 C3/65B0: 0F D0 03 EE  ORA $EE03D0
 C3/65B4: 00 0B        BRK $0B
+Local_C365B6:
 C3/65B6: 60           RTS

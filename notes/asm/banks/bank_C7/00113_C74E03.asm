@@ -12,7 +12,7 @@ C7/4E17: 00 01        BRK $01
 C7/4E19: BF E0 18 7F  LDA $7F18E0,X
 C7/4E1D: EB           XBA
 C7/4E1E: C4 00        CPY $00
-C7/4E20: D0 CF        BNE $4DF1
+C7/4E20: D0 CF        BNE Routine_C74DF1
 C7/4E22: 0C E4 00     TSB $00E4
 C7/4E25: A9 EB        LDA #$EB
 C7/4E27: D2 CB        CMP ($CB)
@@ -48,7 +48,7 @@ C7/4E5F: 8C D4 C4     STY $C4D4
 C7/4E62: 7F DC 26 D8  ADC $D826DC,X
 C7/4E66: A3 EB        LDA $EB,S
 C7/4E68: C4 00        CPY $00
-C7/4E6A: D0 CF        BNE $4E3B
+C7/4E6A: D0 CF        BNE Routine_C74E3B
 C7/4E6C: 0F DF 00 06  ORA $0600DF
 C7/4E70: EB           XBA
 C7/4E71: D2 DC        CMP ($DC)
@@ -103,7 +103,7 @@ C7/4EDE: A6 DA        LDX $DA
 C7/4EE0: 34 E3        BIT $E3,X
 C7/4EE2: EB           XBA
 C7/4EE3: C4 00        CPY $00
-C7/4EE5: D0 CF        BNE $4EB6
+C7/4EE5: D0 CF        BNE Routine_C74EB6
 C7/4EE7: 16 DC        ASL $DC,X
 C7/4EE9: 01 1A        ORA ($1A,X)
 C7/4EEB: C4 7F        CPY $7F
@@ -118,7 +118,7 @@ C7/4EFA: E0 16 C8     CPX #$C816
 C7/4EFD: 04 17        TSB $17
 C7/4EFF: 81 EB        STA ($EB,X)
 C7/4F01: C4 14        CPY $14
-C7/4F03: D0 CF        BNE $4ED4
+C7/4F03: D0 CF        BNE Routine_C74ED4
 C7/4F05: 1E DD 09     ASL $09DD,X
 C7/4F08: CB           WAI
 C7/4F09: 00 0B        BRK $0B

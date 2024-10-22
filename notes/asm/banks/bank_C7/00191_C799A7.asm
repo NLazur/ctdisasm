@@ -7,5 +7,6 @@ C7/99AF: 54 F4 B1     MVN $F4,$B1
 C7/99B2: 42 AE        WDM $AE
 C7/99B4: 04 06        TSB $06
 C7/99B6: F9 0C 50     SBC $500C,Y
-C7/99B9: B0 00        BCS $99BB
+C7/99B9: B0 00        BCS Local_C799BB
+Local_C799BB:
 C7/99BB: 40           RTI

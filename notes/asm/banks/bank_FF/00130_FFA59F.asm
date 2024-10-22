@@ -12,7 +12,7 @@ FF/A5AF: 00 FF        BRK $FF
 FF/A5B1: 00 FF        BRK $FF
 FF/A5B3: FF C6 3E 2E  SBC $2E3EC6,X
 FF/A5B7: A1 55        LDA ($55,X)
-FF/A5B9: 90 82        BCC $A53D
+FF/A5B9: 90 82        BCC Routine_FFA53D
 FF/A5BB: 81 6C        STA ($6C,X)
 FF/A5BD: 81 00        STA ($00,X)
 FF/A5BF: 7F 00 00 FF  ADC $FF0000,X
@@ -52,7 +52,7 @@ FF/A60B: 00 FD        BRK $FD
 FF/A60D: 00 FD        BRK $FD
 FF/A60F: 00 6B        BRK $6B
 FF/A611: 26 74        ROL $74
-FF/A613: 20 7E 21     JSR $217E
+FF/A613: 20 7E 21     JSR Routine_FF217E
 FF/A616: 66 31        ROR $31
 FF/A618: 64 33        STZ $33
 FF/A61A: 7A           PLY
@@ -83,7 +83,7 @@ FF/A649: 00 0D        BRK $0D
 FF/A64B: 00 3D        BRK $3D
 FF/A64D: 00 7D        BRK $7D
 FF/A64F: 00 7F        BRK $7F
-FF/A651: 20 70 24     JSR $2470
+FF/A651: 20 70 24     JSR Routine_FF2470
 FF/A654: 78           SEI
 FF/A655: 2A           ROL
 FF/A656: 76 2E        ROR $2E,X
@@ -114,7 +114,7 @@ FF/A68D: 00 7D        BRK $7D
 FF/A68F: 00 5B        BRK $5B
 FF/A691: 26 46        ROL $46
 FF/A693: 35 49        AND $49,X
-FF/A695: 30 52        BMI $A6E9
+FF/A695: 30 52        BMI Local_FFA6E9
 FF/A697: 31 4E        AND ($4E),Y
 FF/A699: 21 8F        AND ($8F,X)
 FF/A69B: FF C0 FF FF  SBC $FFFFC0,X
@@ -145,6 +145,7 @@ FF/A6DF: FF 01 00 5F  SBC $5F0001,X
 FF/A6E3: 00 6F        BRK $6F
 FF/A6E5: 00 7F        BRK $7F
 FF/A6E7: 00 7F        BRK $7F
+Local_FFA6E9:
 FF/A6E9: 00 FF        BRK $FF
 FF/A6EB: 00 00        BRK $00
 FF/A6ED: 00 FF        BRK $FF

@@ -1,10 +1,11 @@
 ; Bank: CC | Start Address: E006
 Routine_CCE006:
 CC/E006: 3A           DEC
-CC/E007: F0 03        BEQ $E00C
-CC/E009: 4C A9 E0     JMP $E0A9
+CC/E007: F0 03        BEQ Local_CCE00C
+CC/E009: 4C A9 E0     JMP Routine_CCE0A9
+Local_CCE00C:
 CC/E00C: A9 01 8F     LDA #$8F01
-CC/E00F: 70 43        BVS $E054
+CC/E00F: 70 43        BVS Routine_CCE054
 CC/E011: 00 A9        BRK $A9
 CC/E013: 18           CLC
 CC/E014: 8F 71 43 00  STA $004371
@@ -19,14 +20,14 @@ CC/E029: 00 A9        BRK $A9
 CC/E02B: 00 8F        BRK $8F
 CC/E02D: 75 43        ADC $43,X
 CC/E02F: 00 A9        BRK $A9
-CC/E031: 10 8F        BPL $DFC2
+CC/E031: 10 8F        BPL Routine_CCDFC2
 CC/E033: 76 43        ROR $43,X
 CC/E035: 00 7B        BRK $7B
 CC/E037: 8F 16 21 00  STA $002116
 CC/E03B: A9 58 8F     LDA #$8F58
 CC/E03E: 17 21        ORA [$21],Y
 CC/E040: 00 A9        BRK $A9
-CC/E042: 80 8F        BRA $DFD3
+CC/E042: 80 8F        BRA Routine_CCDFD3
 CC/E044: 0B           PHD
 CC/E045: 42 00        WDM $00
 CC/E047: A9 C2 8F     LDA #$8FC2

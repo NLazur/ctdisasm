@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: 1BFE
 Routine_FF1BFE:
-FF/1BFE: F0 40        BEQ $1C40
-FF/1C00: 80 FF        BRA $1C01
+FF/1BFE: F0 40        BEQ Local_FF1C40
+FF/1C00: 80 FF        BRA Routine_FF1C01
 FF/1C02: 00 FF        BRK $FF
 FF/1C04: 00 FF        BRK $FF
 FF/1C06: 00 FF        BRK $FF
@@ -31,6 +31,7 @@ FF/1C38: 03 00        ORA $00,S
 FF/1C3A: 03 00        ORA $00,S
 FF/1C3C: 00 03        BRK $03
 FF/1C3E: 00 03        BRK $03
+Local_FF1C40:
 FF/1C40: 49 3F 1C     EOR #$1C3F
 FF/1C43: 67 13        ADC [$13]
 FF/1C45: F3 8B        SBC ($8B,S),Y
@@ -65,7 +66,7 @@ FF/1C84: 36 E8        ROL $E8,X
 FF/1C86: 32 EC        AND ($EC)
 FF/1C88: 33 ED        AND ($ED,S),Y
 FF/1C8A: 23 FC        AND $FC,S
-FF/1C8C: 20 FF 3C     JSR $3CFF
+FF/1C8C: 20 FF 3C     JSR Routine_FF3CFF
 FF/1C8F: E3 3F        SBC $3F,S
 FF/1C91: 08           PHP
 FF/1C92: 1F 08 1F 08  ORA $081F08,X

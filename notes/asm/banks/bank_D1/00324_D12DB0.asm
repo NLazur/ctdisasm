@@ -2,16 +2,16 @@
 Routine_D12DB0:
 D1/2DB0: E8           INX
 D1/2DB1: 18           CLC
-D1/2DB2: 10 20        BPL $2DD4
+D1/2DB2: 10 20        BPL Routine_D12DD4
 D1/2DB4: EC 40 EE     CPX $EE40
 D1/2DB7: 55 27        EOR $27,X
-D1/2DB9: 10 C0        BPL $2D7B
-D1/2DBB: 5C 10 C2 62  JMP $62C210
-D1/2DBF: 10 C4        BPL $2D85
+D1/2DB9: 10 C0        BPL Routine_D12D7B
+D1/2DBB: 5C 10 C2 62  JMP Routine_62C210
+D1/2DBF: 10 C4        BPL Routine_D12D85
 D1/2DC1: 68           PLA
-D1/2DC2: 10 C6        BPL $2D8A
+D1/2DC2: 10 C6        BPL Routine_D12D8A
 D1/2DC4: A5 6E        LDA $6E
-D1/2DC6: 10 C0        BPL $2D88
+D1/2DC6: 10 C0        BPL Routine_D12D88
 D1/2DC8: 45 10        EOR $10
 D1/2DCA: 2E 01 A9     ROL $A901
 D1/2DCD: 08           PHP
@@ -57,10 +57,11 @@ D1/2E1A: 0E 41 0E     ASL $0E41
 D1/2E1D: 81 0E        STA ($0E,X)
 D1/2E1F: 41 00        EOR ($00,X)
 D1/2E21: 21 19        AND ($19,X)
-D1/2E23: 10 42        BPL $2E67
-D1/2E25: 50 00        BVC $2E27
+D1/2E23: 10 42        BPL Routine_D12E67
+D1/2E25: 50 00        BVC Local_D12E27
+Local_D12E27:
 D1/2E27: FF 08 10 1D  SBC $1D1008,X
-D1/2E2B: 10 40        BPL $2E6D
+D1/2E2B: 10 40        BPL Local_D12E6D
 D1/2E2D: 4B           PHK
 D1/2E2E: 00 00        BRK $00
 D1/2E30: 44 30 F0     MVP $30,$F0
@@ -92,6 +93,7 @@ D1/2E63: E0 00 E2     CPX #$E200
 D1/2E66: 00 00        BRK $00
 D1/2E68: E2 C0        SEP #$C0
 D1/2E6A: E0 C0 C2     CPX #$C2C0
+Local_D12E6D:
 D1/2E6D: C0 C0        CPY #$C0
 D1/2E6F: 05 17        ORA $17
 D1/2E71: 08           PHP

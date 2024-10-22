@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 46DF
 Routine_C046DF:
 C0/46DF: A9 05        LDA #$05
-C0/46E1: 20 57 45     JSR $4557
+C0/46E1: 20 57 45     JSR Routine_C04557
 C0/46E4: A9 0A        LDA #$0A
 C0/46E6: 8D 03 42     STA $4203
 C0/46E9: 84 C7        STY $C7
@@ -73,11 +73,13 @@ C0/4773: 85 E3        STA $E3
 C0/4775: A6 6D        LDX $6D
 C0/4777: BD 01 11     LDA $1101,X
 C0/477A: C9 F8        CMP #$F8
-C0/477C: 90 03        BCC $4781
-C0/477E: 82 C4 00     BRL $C04845
-C0/4781: 20 90 5C     JSR $5C90
-C0/4784: B0 03        BCS $4789
-C0/4786: 82 75 00     BRL $C047FE
+C0/477C: 90 03        BCC Local_C04781
+C0/477E: 82 C4 00     BRL Routine_C04845
+Local_C04781:
+C0/4781: 20 90 5C     JSR Routine_C05C90
+C0/4784: B0 03        BCS Local_C04789
+C0/4786: 82 75 00     BRL Routine_C047FE
+Local_C04789:
 C0/4789: C2 20        REP #$20
 C0/478B: 29 FF 00     AND #$00FF
 C0/478E: AA           TAX
@@ -126,15 +128,17 @@ C0/47DA: E2 20        SEP #$20
 C0/47DC: BD 01 12     LDA $1201,X
 C0/47DF: 29 03        AND #$03
 C0/47E1: C9 03        CMP #$03
-C0/47E3: 90 07        BCC $47EC
+C0/47E3: 90 07        BCC Local_C047EC
 C0/47E5: A6 6D        LDX $6D
 C0/47E7: 86 AE        STX $AE
-C0/47E9: 20 2A E1     JSR $E12A
+C0/47E9: 20 2A E1     JSR Routine_C0E12A
+Local_C047EC:
 C0/47EC: A5 E1        LDA $E1
-C0/47EE: 10 07        BPL $47F7
+C0/47EE: 10 07        BPL Local_C047F7
 C0/47F0: A9 06        LDA #$06
 C0/47F2: A6 6D        LDX $6D
 C0/47F4: 9D 00 11     STA $1100,X
+Local_C047F7:
 C0/47F7: C2 10        REP #$10
 C0/47F9: A6 C7        LDX $C7
 C0/47FB: E8           INX

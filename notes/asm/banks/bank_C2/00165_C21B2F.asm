@@ -8,10 +8,12 @@ C2/1B36: 85 15        STA $15
 C2/1B38: A0 01 00     LDY #$0001
 C2/1B3B: B7 58        LDA [$58],Y
 C2/1B3D: C9 01        CMP #$01
-C2/1B3F: D0 05        BNE $1B46
+C2/1B3F: D0 05        BNE Local_C21B46
 C2/1B41: A2 00 40     LDX #$4000
-C2/1B44: 80 03        BRA $1B49
+C2/1B44: 80 03        BRA Local_C21B49
+Local_C21B46:
 C2/1B46: A2 00 58     LDX #$5800
+Local_C21B49:
 C2/1B49: 86 10        STX $10
 C2/1B4B: A0 03 00     LDY #$0003
 C2/1B4E: B7 58        LDA [$58],Y
@@ -31,10 +33,12 @@ C2/1B68: 7B           TDC
 C2/1B69: A0 04 00     LDY #$0004
 C2/1B6C: B7 58        LDA [$58],Y
 C2/1B6E: C9 01        CMP #$01
-C2/1B70: D0 05        BNE $1B77
+C2/1B70: D0 05        BNE Local_C21B77
 C2/1B72: A2 00 40     LDX #$4000
-C2/1B75: 80 03        BRA $1B7A
+C2/1B75: 80 03        BRA Local_C21B7A
+Local_C21B77:
 C2/1B77: A2 00 58     LDX #$5800
+Local_C21B7A:
 C2/1B7A: 86 13        STX $13
 C2/1B7C: A0 06 00     LDY #$0006
 C2/1B7F: B7 58        LDA [$58],Y
@@ -57,6 +61,7 @@ C2/1B9F: 85 00        STA $00
 C2/1BA1: C8           INY
 C2/1BA2: B7 58        LDA [$58],Y
 C2/1BA4: 85 01        STA $01
+Local_C21BA6:
 C2/1BA6: A5 00        LDA $00
 C2/1BA8: 85 02        STA $02
 C2/1BAA: A6 13        LDX $13
@@ -64,11 +69,12 @@ C2/1BAC: 8E 81 21     STX $2181
 C2/1BAF: A9 7E        LDA #$7E
 C2/1BB1: 8D 83 21     STA $2183
 C2/1BB4: A0 00 00     LDY #$0000
+Local_C21BB7:
 C2/1BB7: B7 10        LDA [$10],Y
 C2/1BB9: 8D 80 21     STA $2180
 C2/1BBC: C8           INY
 C2/1BBD: C6 02        DEC $02
-C2/1BBF: D0 F6        BNE $1BB7
+C2/1BBF: D0 F6        BNE Local_C21BB7
 C2/1BC1: C2 20        REP #$20
 C2/1BC3: 18           CLC
 C2/1BC4: A5 10        LDA $10
@@ -81,7 +87,7 @@ C2/1BD1: 85 13        STA $13
 C2/1BD3: 7B           TDC
 C2/1BD4: E2 20        SEP #$20
 C2/1BD6: C6 01        DEC $01
-C2/1BD8: D0 CC        BNE $1BA6
+C2/1BD8: D0 CC        BNE Local_C21BA6
 C2/1BDA: C2 20        REP #$20
 C2/1BDC: A9 09 00     LDA #$0009
 C2/1BDF: 60           RTS

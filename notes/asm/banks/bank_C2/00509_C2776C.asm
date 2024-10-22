@@ -1,10 +1,11 @@
 ; Bank: C2 | Start Address: 776C
 Routine_C2776C:
 C2/776C: BD 02 00     LDA $0002,X
-C2/776F: D0 09        BNE $777A
+C2/776F: D0 09        BNE Local_C2777A
 C2/7771: FE 02 00     INC $0002,X
 C2/7774: 9E 22 00     STZ $0022,X
 C2/7777: 9E 23 00     STZ $0023,X
+Local_C2777A:
 C2/777A: A9 F0 8F     LDA #$8FF0
 C2/777D: 35 8A        AND $8A,X
 C2/777F: 7E 8F 38     ROR $388F,X
@@ -29,6 +30,7 @@ C2/77AF: A9 02        LDA #$02
 C2/77B1: 04 4A        TSB $4A
 C2/77B3: C2 20        REP #$20
 C2/77B5: A2 00 00     LDX #$0000
+Local_C277B8:
 C2/77B8: A5 24        LDA $24
 C2/77BA: 9F 56 8B 7E  STA $7E8B56,X
 C2/77BE: E8           INX
@@ -36,16 +38,17 @@ C2/77BF: E8           INX
 C2/77C0: E8           INX
 C2/77C1: E8           INX
 C2/77C2: E0 C0 01     CPX #$01C0
-C2/77C5: D0 F1        BNE $77B8
+C2/77C5: D0 F1        BNE Local_C277B8
 C2/77C7: BD 22 00     LDA $0022,X
 C2/77CA: 85 0A        STA $0A
 C2/77CC: 18           CLC
 C2/77CD: 69 04 00     ADC #$0004
 C2/77D0: 9D 22 00     STA $0022,X
 C2/77D3: A2 02 00     LDX #$0002
+Local_C277D6:
 C2/77D6: 9B           TXY
 C2/77D7: A5 0A        LDA $0A
-C2/77D9: 22 5E 22 C2  JSR $C2225E
+C2/77D9: 22 5E 22 C2  JSR Routine_C2225E
 C2/77DD: E6 0A        INC $0A
 C2/77DF: BB           TYX
 C2/77E0: 18           CLC
@@ -56,6 +59,6 @@ C2/77E8: E8           INX
 C2/77E9: E8           INX
 C2/77EA: E8           INX
 C2/77EB: E0 C2 01     CPX #$01C2
-C2/77EE: D0 E6        BNE $77D6
+C2/77EE: D0 E6        BNE Local_C277D6
 C2/77F0: 18           CLC
 C2/77F1: 60           RTS

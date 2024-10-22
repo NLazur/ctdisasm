@@ -1,16 +1,17 @@
 ; Bank: C6 | Start Address: 0A1F
 Routine_C60A1F:
 C6/0A1F: C0 3C 61     CPY #$613C
-C6/0A22: 10 10        BPL $0A34
+C6/0A22: 10 10        BPL Local_C60A34
 C6/0A24: 75 02        ADC $02,X
 C6/0A26: 0F 80 07 01  ORA $010780
-C6/0A2A: F0 01        BEQ $0A2D
-C6/0A2C: F0 E3        BEQ $0A11
+C6/0A2A: F0 01        BEQ Routine_C60A2D
+C6/0A2C: F0 E3        BEQ Routine_C60A11
 C6/0A2E: 23 0C        AND $0C,S
 C6/0A30: 0F 32 3D 39  ORA $393D32
+Local_C60A34:
 C6/0A34: 04 38        TSB $38
 C6/0A36: 2E DA 63     ROL $63DA
-C6/0A39: 10 1F        BPL $0A5A
+C6/0A39: 10 1F        BPL Local_C60A5A
 C6/0A3B: 00 3F        BRK $3F
 C6/0A3D: 07 08        ORA [$08]
 C6/0A3F: 38           SEC
@@ -26,9 +27,10 @@ C6/0A52: 14 02        TRB $02
 C6/0A54: 00 00        BRK $00
 C6/0A56: 01 01        ORA ($01,X)
 C6/0A58: 02 01        COP $01
+Local_C60A5A:
 C6/0A5A: 05 23        ORA $23
 C6/0A5C: 2A           ROL
-C6/0A5D: 80 F0        BRA $0A4F
+C6/0A5D: 80 F0        BRA Routine_C60A4F
 C6/0A5F: 94 01        STY $01,X
 C6/0A61: AA           TAX
 C6/0A62: 16 53        ASL $53,X
@@ -40,8 +42,8 @@ C6/0A6E: E3 FE        SBC $FE,S
 C6/0A70: 3C 03 FD     BIT $FD03,X
 C6/0A73: 02 00        COP $00
 C6/0A75: 6A           ROR
-C6/0A76: F0 01        BEQ $0A79
-C6/0A78: F0 D7        BEQ $0A51
+C6/0A76: F0 01        BEQ Routine_C60A79
+C6/0A78: F0 D7        BEQ Routine_C60A51
 C6/0A7A: 01 04        ORA ($04,X)
 C6/0A7C: 05 06        ORA $06
 C6/0A7E: 07 45        ORA [$45]
@@ -49,11 +51,12 @@ C6/0A80: 14 6E        TRB $6E
 C6/0A82: 14 02        TRB $02
 C6/0A84: 02 04        COP $04
 C6/0A86: 04 07        TSB $07
-C6/0A88: 80 04        BRA $0A8E
+C6/0A88: 80 04        BRA Local_C60A8E
 C6/0A8A: 0F 08 08 08  ORA $080808
-C6/0A8E: 10 10        BPL $0AA0
+Local_C60A8E:
+C6/0A8E: 10 10        BPL Local_C60AA0
 C6/0A90: 2A           ROL
-C6/0A91: F0 3F        BEQ $0AD2
+C6/0A91: F0 3F        BEQ Routine_C60AD2
 C6/0A93: 01 F0        ORA ($F0,X)
 C6/0A95: 01 F0        ORA ($F0,X)
 C6/0A97: 01 F0        ORA ($F0,X)
@@ -61,7 +64,8 @@ C6/0A99: 01 F0        ORA ($F0,X)
 C6/0A9B: 01 F0        ORA ($F0,X)
 C6/0A9D: 7A           PLY
 C6/0A9E: 00 01        BRK $01
-C6/0AA0: 10 22        BPL $0AC4
+Local_C60AA0:
+C6/0AA0: 10 22        BPL Routine_C60AC4
 C6/0AA2: 0E 10 A0     ASL $A010
 C6/0AA5: 02 1F        COP $1F
 C6/0AA7: 1F CA 82 08  ORA $0882CA,X

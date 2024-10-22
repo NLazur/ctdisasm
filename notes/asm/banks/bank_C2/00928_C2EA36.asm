@@ -1,15 +1,17 @@
 ; Bank: C2 | Start Address: EA36
 Routine_C2EA36:
 C2/EA36: B9 82 93     LDA $9382,Y
-C2/EA39: 80 0D        BRA $EA48
+C2/EA39: 80 0D        BRA Local_C2EA48
 C2/EA3B: B9 83 93     LDA $9383,Y
-C2/EA3E: 80 08        BRA $EA48
+C2/EA3E: 80 08        BRA Local_C2EA48
 C2/EA40: B9 84 93     LDA $9384,Y
-C2/EA43: 80 03        BRA $EA48
+C2/EA43: 80 03        BRA Local_C2EA48
 C2/EA45: B9 85 93     LDA $9385,Y
+Local_C2EA48:
 C2/EA48: 85 54        STA $54
-C2/EA4A: 10 06        BPL $EA52
+C2/EA4A: 10 06        BPL Local_C2EA52
 C2/EA4C: A9 80 04     LDA #$0480
 C2/EA4F: 5A           PHY
 C2/EA50: 14 54        TRB $54
+Local_C2EA52:
 C2/EA52: 60           RTS

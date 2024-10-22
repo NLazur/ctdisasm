@@ -8,6 +8,7 @@ C1/2CC2: 4A           LSR
 C1/2CC3: 4A           LSR
 C1/2CC4: 4A           LSR
 C1/2CC5: C9 08        CMP #$08
-C1/2CC7: 90 03        BCC $2CCC
+C1/2CC7: 90 03        BCC Local_C12CCC
 C1/2CC9: CE 72 98     DEC $9872
+Local_C12CCC:
 C1/2CCC: 60           RTS

@@ -5,9 +5,10 @@ FD/EF72: 8E 81 21     STX $2181
 FD/EF75: A9 7E        LDA #$7E
 FD/EF77: 8D 83 21     STA $2183
 FD/EF7A: A0 00 02     LDY #$0200
+Local_FDEF7D:
 FD/EF7D: 9C 80 21     STZ $2180
 FD/EF80: 88           DEY
-FD/EF81: D0 FA        BNE $EF7D
+FD/EF81: D0 FA        BNE Local_FDEF7D
 FD/EF83: A2 00 20     LDX #$2000
 FD/EF86: 8E 81 21     STX $2181
 FD/EF89: A9 7E        LDA #$7E
@@ -16,6 +17,7 @@ FD/EF8E: A0 40 00     LDY #$0040
 FD/EF91: C2 20        REP #$20
 FD/EF93: A5 08        LDA $08
 FD/EF95: 85 0C        STA $0C
+Local_FDEF97:
 FD/EF97: A5 0C        LDA $0C
 FD/EF99: 29 3F 00     AND #$003F
 FD/EF9C: 0A           ASL
@@ -38,7 +40,7 @@ FD/EFBA: 8D 80 21     STA $2180
 FD/EFBD: C2 20        REP #$20
 FD/EFBF: E6 0C        INC $0C
 FD/EFC1: 88           DEY
-FD/EFC2: D0 D3        BNE $EF97
+FD/EFC2: D0 D3        BNE Local_FDEF97
 FD/EFC4: A9 00 00     LDA #$0000
 FD/EFC7: E2 20        SEP #$20
 FD/EFC9: A2 00 21     LDX #$2100
@@ -49,6 +51,7 @@ FD/EFD4: A0 80 00     LDY #$0080
 FD/EFD7: C2 20        REP #$20
 FD/EFD9: A5 08        LDA $08
 FD/EFDB: 85 0C        STA $0C
+Local_FDEFDD:
 FD/EFDD: A5 0C        LDA $0C
 FD/EFDF: 29 0F 00     AND #$000F
 FD/EFE2: 0A           ASL
@@ -64,7 +67,7 @@ FD/EFF1: 8D 80 21     STA $2180
 FD/EFF4: C2 20        REP #$20
 FD/EFF6: E6 0C        INC $0C
 FD/EFF8: 88           DEY
-FD/EFF9: D0 E2        BNE $EFDD
+FD/EFF9: D0 E2        BNE Local_FDEFDD
 FD/EFFB: A9 00 00     LDA #$0000
 FD/EFFE: E2 20        SEP #$20
 FD/F000: 60           RTS

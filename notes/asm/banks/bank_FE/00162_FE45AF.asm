@@ -16,16 +16,18 @@ FE/45CC: 00 70        BRK $70
 FE/45CE: 8F 80 A2 06  STA $06A280
 FE/45D2: 7A           PLY
 FE/45D3: BE 5D 0C     LDX $0C5D,Y
-FE/45D6: 30 B3        BMI $458B
-FE/45D8: 30 55        BMI $462F
+FE/45D6: 30 B3        BMI Routine_FE458B
+FE/45D8: 30 55        BMI Routine_FE462F
 FE/45DA: 6E D1 20     ROR $20D1
 FE/45DD: 26 03        ROL $03
 FE/45DF: 1F D0 E0 08  ORA $08E0D0,X
 FE/45E3: F7 31        SBC [$31],Y
 FE/45E5: 7D 0C 07     ADC $070C,X
 FE/45E8: 59 90 FC     EOR $FC90,Y
-FE/45EB: 10 01        BPL $45EE
+Local_FE45EB:
+FE/45EB: 10 01        BPL Local_FE45EE
 FE/45ED: 28           PLP
+Local_FE45EE:
 FE/45EE: 12 01        ORA ($01)
 FE/45F0: 08           PHP
 FE/45F1: F7 03        SBC [$03],Y
@@ -33,6 +35,7 @@ FE/45F3: FF 1F F7 50  SBC $50F71F,X
 FE/45F7: FF 7F B9 B9  SBC $B9B97F,X
 FE/45FB: 8E BE 46     STX $46BE
 FE/45FE: 27 24        AND [$24]
+Local_FE4600:
 FE/4600: 00 C0        BRK $C0
 FE/4602: 00 CE        BRK $CE
 FE/4604: 00 CE        BRK $CE
@@ -42,21 +45,22 @@ FE/4609: 05 1B        ORA $1B
 FE/460B: 4A           LSR
 FE/460C: DB           STP
 FE/460D: 1D 93 20     ORA $2093,X
-FE/4610: 20 71 0C     JSR $0C71
+Local_FE4610:
+FE/4610: 20 71 0C     JSR Routine_FE0C71
 FE/4613: 12 BE        ORA ($BE)
 FE/4615: 00 1E        BRK $1E
-FE/4617: 20 F0 40     JSR $40F0
-FE/461A: 20 3F A4     JSR $A43F
-FE/461D: 10 CC        BPL $45EB
+FE/4617: 20 F0 40     JSR Routine_FE40F0
+FE/461A: 20 3F A4     JSR Routine_FEA43F
+FE/461D: 10 CC        BPL Local_FE45EB
 FE/461F: 13 CB        ORA ($CB,S),Y
 FE/4621: 1A           INC
 FE/4622: 0D 40 60     ORA $6040
 FE/4625: 74 19        STZ $19,X
-FE/4627: 20 AA 55     JSR $55AA
+FE/4627: 20 AA 55     JSR Routine_FE55AA
 FE/462A: FF 98 F9 01  SBC $01F998,X
-FE/462E: F0 01        BEQ $4631
-FE/4630: F0 70        BEQ $46A2
-FE/4632: F0 4F        BEQ $4683
+FE/462E: F0 01        BEQ Routine_FE4631
+FE/4630: F0 70        BEQ Routine_FE46A2
+FE/4632: F0 4F        BEQ Local_FE4683
 FE/4634: FB           XCE
 FE/4635: 01 F0        ORA ($F0,X)
 FE/4637: 01 F0        ORA ($F0,X)
@@ -64,29 +68,31 @@ FE/4639: 01 F0        ORA ($F0,X)
 FE/463B: 06 43        ASL $43
 FE/463D: 0B           PHD
 FE/463E: CF 01 F0 01  CMP $01F001
-FE/4642: F0 01        BEQ $4645
-FE/4644: F0 01        BEQ $4647
-FE/4646: F0 00        BEQ $4648
+FE/4642: F0 01        BEQ Routine_FE4645
+FE/4644: F0 01        BEQ Routine_FE4647
+FE/4646: F0 00        BEQ Local_FE4648
+Local_FE4648:
 FE/4648: 00 00        BRK $00
 FE/464A: 75 04        ADC $04,X
 FE/464C: 0E 00 01     ASL $0100
-FE/464F: F0 01        BEQ $4652
-FE/4651: F0 01        BEQ $4654
+FE/464F: F0 01        BEQ Routine_FE4652
+FE/4651: F0 01        BEQ Routine_FE4654
 FE/4653: E0 B0 BB     CPX #$BBB0
 FE/4656: 00 00        BRK $00
 FE/4658: 74 BB        STZ $BB,X
 FE/465A: B9 04 00     LDA $0004,Y
 FE/465D: 79 19 D0     ADC $D019,Y
 FE/4660: 2C 00 1C     BIT $1C00
-FE/4663: 10 9B        BPL $4600
+FE/4663: 10 9B        BPL Local_FE4600
 FE/4665: C4 BB        CPY $BB
 FE/4667: BB           TYX
 FE/4668: 04 00        TSB $00
 FE/466A: 1B           TCS
 FE/466B: BB           TYX
 FE/466C: 7B           TDC
-FE/466D: 10 30        BPL $469F
-FE/466F: 30 00        BMI $4671
+FE/466D: 10 30        BPL Routine_FE469F
+FE/466F: 30 00        BMI Local_FE4671
+Local_FE4671:
 FE/4671: 00 B0        BRK $B0
 FE/4673: BB           TYX
 FE/4674: 7B           TDC
@@ -100,14 +106,15 @@ FE/467D: 17 B1        ORA [$B1],Y
 FE/467F: 9B           TXY
 FE/4680: B8           CLV
 FE/4681: 17 71        ORA [$71],Y
-FE/4683: 80 8B        BRA $4610
+Local_FE4683:
+FE/4683: 80 8B        BRA Local_FE4610
 FE/4685: B9 32 21     LDA $2132,Y
 FE/4688: B7 79        LDA [$79],Y
 FE/468A: 72 49        ADC ($49)
 FE/468C: 00 00        BRK $00
 FE/468E: 00 B7        BRK $B7
 FE/4690: 0B           PHD
-FE/4691: B0 BB        BCS $464E
+FE/4691: B0 BB        BCS Routine_FE464E
 FE/4693: 71 0B        ADC ($0B),Y
 FE/4695: BB           TYX
 FE/4696: 00 BB        BRK $BB
@@ -122,7 +129,7 @@ FE/46A5: 37 99        AND [$99],Y
 FE/46A7: B9 A0 17     LDA $17A0,Y
 FE/46AA: 79 97 79     ADC $7997,Y
 FE/46AD: 12 7C        ORA ($7C)
-FE/46AF: 50 0B        BVC $46BC
+FE/46AF: 50 0B        BVC Routine_FE46BC
 FE/46B1: 59 20 08     EOR $0820,Y
 FE/46B4: BB           TYX
 FE/46B5: 0B           PHD

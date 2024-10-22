@@ -8,8 +8,9 @@ CE/0887: 12 0C        ORA ($0C)
 CE/0889: 71 36        ADC ($36),Y
 CE/088B: 00 90        BRK $90
 CE/088D: C0 90        CPY #$90
-CE/088F: 80 9E        BRA $082F
+CE/088F: 80 9E        BRA Routine_CE082F
 CE/0891: 08           PHP
+Local_CE0892:
 CE/0892: B8           CLV
 CE/0893: 05 C0        ORA $C0
 CE/0895: 05 D1        ORA $D1
@@ -25,7 +26,7 @@ CE/08A4: 02 34        COP $34
 CE/08A6: 18           CLC
 CE/08A7: 19 1B 19     ORA $191B,Y
 CE/08AA: 72 0D        ADC ($0D)
-CE/08AC: 20 05 06     JSR $0605
+CE/08AC: 20 05 06     JSR Routine_CE0605
 CE/08AF: 03 23        ORA $23,S
 CE/08B1: 01 24        ORA ($24,X)
 CE/08B3: 03 2E        ORA $2E,S
@@ -39,12 +40,12 @@ CE/08BF: 02 34        COP $34
 CE/08C1: 18           CLC
 CE/08C2: 19 1B 19     ORA $191B,Y
 CE/08C5: 72 0D        ADC ($0D)
-CE/08C7: 20 05 06     JSR $0605
+CE/08C7: 20 05 06     JSR Routine_CE0605
 CE/08CA: 03 24        ORA $24,S
 CE/08CC: 02 2E        COP $2E
 CE/08CE: 01 00        ORA ($00,X)
-CE/08D0: 90 C0        BCC $0892
-CE/08D2: 90 80        BCC $0854
+CE/08D0: 90 C0        BCC Local_CE0892
+CE/08D2: 90 80        BCC Routine_CE0854
 CE/08D4: E2 08        SEP #$08
 CE/08D6: 3A           DEC
 CE/08D7: 07 42        ORA [$42]
@@ -59,7 +60,7 @@ CE/08E6: 06 03        ASL $03
 CE/08E8: 23 01        AND $01,S
 CE/08EA: 24 02        BIT $02
 CE/08EC: 2E 01 00     ROL $0001
-CE/08EF: 20 01 35     JSR $3501
+CE/08EF: 20 01 35     JSR Routine_CE3501
 CE/08F2: 7A           PLY
 CE/08F3: 02 00        COP $00
 CE/08F5: 03 33        ORA $33,S
@@ -68,12 +69,14 @@ CE/08F9: 36 06        ROL $06,X
 CE/08FB: 03 24        ORA $24,S
 CE/08FD: 02 2E        COP $2E
 CE/08FF: 01 00        ORA ($00,X)
-CE/0901: 80 00        BRA $0903
-CE/0903: 80 00        BRA $0905
+CE/0901: 80 00        BRA Local_CE0903
+Local_CE0903:
+CE/0903: 80 00        BRA Local_CE0905
+Local_CE0905:
 CE/0905: 85 09        STA $09
 CE/0907: 85 09        STA $09
 CE/0909: 98           TYA
-CE/090A: 80 80        BRA $088C
+CE/090A: 80 80        BRA Routine_CE088C
 CE/090C: 00 17        BRK $17
 CE/090E: 09 4D        ORA #$4D
 CE/0910: 09 60        ORA #$60
@@ -82,7 +85,7 @@ CE/0914: 09 85        ORA #$85
 CE/0916: 09 0C        ORA #$0C
 CE/0918: 72 0D        ADC ($0D)
 CE/091A: 06 1D        ASL $1D
-CE/091C: 20 05 06     JSR $0605
+CE/091C: 20 05 06     JSR Routine_CE0605
 CE/091F: 26 1E        ROL $1E
 CE/0921: 1D D0 27     ORA $27D0,X
 CE/0924: D9 30 98     CMP $9830,Y
@@ -94,7 +97,7 @@ CE/0930: 78           SEI
 CE/0931: FF 36 1E 1E  SBC $1E1E36,X
 CE/0935: 26 0E        ROL $0E
 CE/0937: 02 0C        COP $0C
-CE/0939: D0 98        BNE $08D3
+CE/0939: D0 98        BNE Routine_CE08D3
 CE/093B: 02 19        COP $19
 CE/093D: D1 28        CMP ($28),Y
 CE/093F: DA           PHX
@@ -102,14 +105,14 @@ CE/0940: 1B           TCS
 CE/0941: 19 03 33     ORA $3303,Y
 CE/0944: 06 03        ASL $03
 CE/0946: 24 03        BIT $03
-CE/0948: 20 14 2E     JSR $2E14
+CE/0948: 20 14 2E     JSR Routine_CE2E14
 CE/094B: 01 00        ORA ($00,X)
 CE/094D: 34 00        BIT $00,X
 CE/094F: 24 01        BIT $01
-CE/0951: 20 14 6C     JSR $6C14
+CE/0951: 20 14 6C     JSR Routine_CE6C14
 CE/0954: 00 04        BRK $04
 CE/0956: 24 02        BIT $02
-CE/0958: 20 02 1E     JSR $1E02
+CE/0958: 20 02 1E     JSR Routine_CE1E02
 CE/095B: 00 06        BRK $06
 CE/095D: 03 36        ORA $36,S
 CE/095F: 00 24        BRK $24
@@ -117,7 +120,7 @@ CE/0961: 01 20        ORA ($20,X)
 CE/0963: 14 6C        TRB $6C
 CE/0965: 00 04        BRK $04
 CE/0967: 24 02        BIT $02
-CE/0969: 20 02 1E     JSR $1E02
+CE/0969: 20 02 1E     JSR Routine_CE1E02
 CE/096C: 05 06        ORA $06
 CE/096E: 03 00        ORA $00,S
 CE/0970: D9 30 24     CMP $2430,Y
@@ -131,13 +134,13 @@ CE/097F: 00 70        BRK $70
 CE/0981: 24 02        BIT $02
 CE/0983: 71 00        ADC ($00),Y
 CE/0985: 06 19        ASL $19
-CE/0987: 20 14 03     JSR $0314
+CE/0987: 20 14 03     JSR Routine_CE0314
 CE/098A: 17 03        ORA [$03],Y
 CE/098C: 17 50        ORA [$50],Y
 CE/098E: 06 03        ASL $03
 CE/0990: 2E 01 00     ROL $0001
 CE/0993: 06 19        ASL $19
-CE/0995: 20 14 03     JSR $0314
+CE/0995: 20 14 03     JSR Routine_CE0314
 CE/0998: 17 06        ORA [$06],Y
 CE/099A: 03 00        ORA $00,S
 CE/099C: 98           TYA
@@ -168,7 +171,7 @@ CE/09CD: 19 72 0D     ORA $0D72,Y
 CE/09D0: 06 03        ASL $03
 CE/09D2: 23 02        AND $02,S
 CE/09D4: 24 04        BIT $04
-CE/09D6: 20 0A 2E     JSR $2E0A
+CE/09D6: 20 0A 2E     JSR Routine_CE2E0A
 CE/09D9: 01 00        ORA ($00,X)
 CE/09DB: 23 02        AND $02,S
 CE/09DD: 1E 05 24     ASL $2405,X
@@ -180,7 +183,7 @@ CE/09E9: 61 01        ADC ($01,X)
 CE/09EB: 00 03        BRK $03
 CE/09ED: 0C 02 00     TSB $0002
 CE/09F0: 24 01        BIT $01
-CE/09F2: 20 0F 36     JSR $360F
+CE/09F2: 20 0F 36     JSR Routine_CE360F
 CE/09F5: 1B           TCS
 CE/09F6: 00 72        BRK $72
 CE/09F8: 00 73        BRK $73
@@ -227,7 +230,7 @@ CE/0A47: 00 72        BRK $72
 CE/0A49: 00 73        BRK $73
 CE/0A4B: 03 20        ORA $20,S
 CE/0A4D: 08           PHP
-CE/0A4E: 70 12        BVS $0A62
+CE/0A4E: 70 12        BVS Routine_CE0A62
 CE/0A50: 03 A8        ORA $A8,S
 CE/0A52: 3C 36 71     BIT $7136,X
 CE/0A55: 00 1B        BRK $1B
@@ -238,6 +241,7 @@ CE/0A5D: 01 78        ORA ($78,X)
 CE/0A5F: 4F 03 05 35  EOR $350503
 CE/0A63: 00 90        BRK $90
 CE/0A65: FC 80 00     JSR ($0080,X)
+Local_CE0A68:
 CE/0A68: 7A           PLY
 CE/0A69: 0A           ASL
 CE/0A6A: A1 0A        LDA ($0A,X)
@@ -257,19 +261,20 @@ CE/0A82: 36 20        ROL $20,X
 CE/0A84: 0C 03 10     TSB $1003
 CE/0A87: 02 22        COP $22
 CE/0A89: 24 03        BIT $03
-CE/0A8B: 20 0A 3D     JSR $3D0A
+CE/0A8B: 20 0A 3D     JSR Routine_CE3D0A
 CE/0A8E: 03 34        ORA $34,S
 CE/0A90: 1B           TCS
 CE/0A91: 78           SEI
 CE/0A92: 6E 22 1B     ROR $1B22
 CE/0A95: 00 36        BRK $36
 CE/0A97: 24 05        BIT $05
+Local_CE0A99:
 CE/0A99: 23 03        AND $03,S
 CE/0A9B: 06 03        ASL $03
-CE/0A9D: 50 2E        BVC $0ACD
+CE/0A9D: 50 2E        BVC Routine_CE0ACD
 CE/0A9F: 01 00        ORA ($00,X)
 CE/0AA1: 24 03        BIT $03
-CE/0AA3: 20 1E 1E     JSR $1E1E
+CE/0AA3: 20 1E 1E     JSR Routine_CE1E1E
 CE/0AA6: 06 00        ASL $00
 CE/0AA8: 1B           TCS
 CE/0AA9: 00 72        BRK $72
@@ -283,10 +288,10 @@ CE/0AB7: 02 01        COP $01
 CE/0AB9: 0A           ASL
 CE/0ABA: 24 01        BIT $01
 CE/0ABC: 77 1E        ADC [$1E],Y
-CE/0ABE: 70 A8        BVS $0A68
+CE/0ABE: 70 A8        BVS Local_CE0A68
 CE/0AC0: 0C 78 71     TSB $7178
-CE/0AC3: 20 02 1E     JSR $1E02
-CE/0AC6: 20 71 24     JSR $2471
+CE/0AC3: 20 02 1E     JSR Routine_CE1E02
+CE/0AC6: 20 71 24     JSR Routine_CE2471
 CE/0AC9: 03 20        ORA $20,S
 CE/0ACB: 0F 73 03 33  ORA $330373
 CE/0ACF: 0C 3A 1E     TSB $1E3A
@@ -306,7 +311,7 @@ CE/0AE8: 0A           ASL
 CE/0AE9: 02 01        COP $01
 CE/0AEB: 24 01        BIT $01
 CE/0AED: 77 62        ADC [$62],Y
-CE/0AEF: 70 A8        BVS $0A99
+CE/0AEF: 70 A8        BVS Local_CE0A99
 CE/0AF1: 0C 1E 21     TSB $211E
 CE/0AF4: 71 24        ADC ($24),Y
 CE/0AF6: 02 33        COP $33
@@ -314,7 +319,7 @@ CE/0AF8: 0C 3A 1E     TSB $1E3A
 CE/0AFB: FB           XCE
 CE/0AFC: 3A           DEC
 CE/0AFD: 1F 03 1A 36  ORA $361A03,X
-CE/0B01: 20 0F 73     JSR $730F
+CE/0B01: 20 0F 73     JSR Routine_CE730F
 CE/0B04: 03 23        ORA $23,S
 CE/0B06: 01 35        ORA ($35,X)
 CE/0B08: 78           SEI
@@ -327,7 +332,7 @@ CE/0B12: 00 74        BRK $74
 CE/0B14: 00 76        BRK $76
 CE/0B16: 00 03        BRK $03
 CE/0B18: 0A           ASL
-CE/0B19: 20 02 02     JSR $0202
+CE/0B19: 20 02 02     JSR Routine_CE0202
 CE/0B1C: 01 24        ORA ($24,X)
 CE/0B1E: 01 77        ORA ($77,X)
 CE/0B20: A2 70        LDX #$70
@@ -344,17 +349,18 @@ CE/0B34: 0C 3A 1E     TSB $1E3A
 CE/0B37: F8           SED
 CE/0B38: 3A           DEC
 CE/0B39: 1F F8 1A 35  ORA $351AF8,X
-CE/0B3D: 20 03 78     JSR $7803
+CE/0B3D: 20 03 78     JSR Routine_CE7803
 CE/0B40: 6A           ROR
 CE/0B41: 03 03        ORA $03,S
 CE/0B43: 00 1B        BRK $1B
+Local_CE0B45:
 CE/0B45: 00 72        BRK $72
 CE/0B47: 03 73        ORA $73,S
 CE/0B49: 00 74        BRK $74
 CE/0B4B: 00 76        BRK $76
 CE/0B4D: 00 03        BRK $03
 CE/0B4F: 0A           ASL
-CE/0B50: 20 05 02     JSR $0205
+CE/0B50: 20 05 02     JSR Routine_CE0205
 CE/0B53: 01 24        ORA ($24,X)
 CE/0B55: 01 77        ORA ($77,X)
 CE/0B57: DE 70 A8     DEC $A870,X
@@ -378,7 +384,7 @@ CE/0B7B: 00 72        BRK $72
 CE/0B7D: 03 73        ORA $73,S
 CE/0B7F: 00 74        BRK $74
 CE/0B81: 00 09        BRK $09
-CE/0B83: 20 01 02     JSR $0201
+CE/0B83: 20 01 02     JSR Routine_CE0201
 CE/0B86: 01 24        ORA ($24,X)
 CE/0B88: 01 85        ORA ($85,X)
 CE/0B8A: BE 70 20     LDX $2070,Y
@@ -390,7 +396,7 @@ CE/0B97: 00 72        BRK $72
 CE/0B99: 03 73        ORA $73,S
 CE/0B9B: 00 74        BRK $74
 CE/0B9D: 00 0A        BRK $0A
-CE/0B9F: 20 04 02     JSR $0204
+CE/0B9F: 20 04 02     JSR Routine_CE0204
 CE/0BA2: 01 24        ORA ($24,X)
 CE/0BA4: 01 85        ORA ($85,X)
 CE/0BA6: 7E 70 20     ROR $2070,X
@@ -398,15 +404,15 @@ CE/0BA9: 03 A8        ORA $A8,S
 CE/0BAB: 0C 20 03     TSB $0320
 CE/0BAE: 1E 21 71     ASL $7121,X
 CE/0BB1: 00 90        BRK $90
-CE/0BB3: 80 90        BRA $0B45
-CE/0BB5: 80 C2        BRA $0B79
+CE/0BB3: 80 90        BRA Local_CE0B45
+CE/0BB5: 80 C2        BRA Routine_CE0B79
 CE/0BB7: 0B           PHD
 CE/0BB8: 13 0C        ORA ($0C,S),Y
 CE/0BBA: 1F 0C 3C 0C  ORA $0C3C0C,X
 CE/0BBE: 87 0C        STA [$0C]
 CE/0BC0: 8C 0C 72     STY $720C
 CE/0BC3: 0D 06 31     ORA $3106
-CE/0BC6: 20 14 06     JSR $0614
+CE/0BC6: 20 14 06     JSR Routine_CE0614
 CE/0BC9: 32 0C        AND ($0C)
 CE/0BCB: 7A           PLY
 CE/0BCC: D2 00        CMP ($00)
@@ -426,19 +432,19 @@ CE/0BE6: 26 37        ROL $37
 CE/0BE8: 02 A5        COP $A5
 CE/0BEA: 36 7A        ROL $7A,X
 CE/0BEC: 4D 03 2D     EOR $2D03
-CE/0BEF: 80 12        BRA $0C03
+CE/0BEF: 80 12        BRA Routine_CE0C03
 CE/0BF1: B8           CLV
-CE/0BF2: 20 04 7A     JSR $7A04
+CE/0BF2: 20 04 7A     JSR Routine_CE7A04
 CE/0BF5: 4D 03 20     EOR $2003
 CE/0BF8: 04 7A        TSB $7A
 CE/0BFA: 4D 03 20     EOR $2003
 CE/0BFD: 08           PHP
-CE/0BFE: 80 45        BRA $0C45
+CE/0BFE: 80 45        BRA Local_CE0C45
 CE/0C00: 57 40        EOR [$40],Y
 CE/0C02: 00 00        BRK $00
-CE/0C04: 20 14 0C     JSR $0C14
+CE/0C04: 20 14 0C     JSR Routine_CE0C14
 CE/0C07: 12 03        ORA ($03)
-CE/0C09: 80 51        BRA $0C5C
+CE/0C09: 80 51        BRA Routine_CE0C5C
 CE/0C0B: 1E 2A DA     ASL $DA2A,X
 CE/0C0E: 24 02        BIT $02
 CE/0C10: 2E 01 00     ROL $0001
@@ -451,7 +457,7 @@ CE/0C1E: 00 1B        BRK $1B
 CE/0C20: 0C 72 03     TSB $0372
 CE/0C23: 73 03        ADC ($03,S),Y
 CE/0C25: 23 01        AND $01,S
-CE/0C27: 20 28 7A     JSR $7A28
+CE/0C27: 20 28 7A     JSR Routine_CE7A28
 CE/0C2A: 53 00        EOR ($00,S),Y
 CE/0C2C: 0D 60 00     ORA $0060
 CE/0C2F: 24 01        BIT $01
@@ -462,8 +468,9 @@ CE/0C36: 03 01        ORA $01,S
 CE/0C38: 0F 03 00 00  ORA $000003
 CE/0C3C: 72 0D        ADC ($0D)
 CE/0C3E: 06 31        ASL $31
-CE/0C40: 20 14 06     JSR $0614
+CE/0C40: 20 14 06     JSR Routine_CE0614
 CE/0C43: 32 0C        AND ($0C)
+Local_CE0C45:
 CE/0C45: 7A           PLY
 CE/0C46: D2 00        CMP ($00)
 CE/0C48: 98           TYA
@@ -493,12 +500,12 @@ CE/0C76: 02 06        COP $06
 CE/0C78: 17 20        ORA [$20],Y
 CE/0C7A: 02 26        COP $26
 CE/0C7C: 17 02        ORA [$02],Y
-CE/0C7E: 20 02 1E     JSR $1E02
+CE/0C7E: 20 02 1E     JSR Routine_CE1E02
 CE/0C81: 2A           ROL
 CE/0C82: 24 02        BIT $02
 CE/0C84: 2E 01 00     ROL $0001
 CE/0C87: 24 01        BIT $01
-CE/0C89: 50 36        BVC $0CC1
+CE/0C89: 50 36        BVC Routine_CE0CC1
 CE/0C8B: 00 23        BRK $23
 CE/0C8D: 01 20        ORA ($20,X)
 CE/0C8F: 28           PLP
@@ -517,30 +524,31 @@ CE/0CAC: E0 0D        CPX #$0D
 CE/0CAE: 85 09        STA $09
 CE/0CB0: 02 26        COP $26
 CE/0CB2: 0C 30 1E     TSB $1E30
-CE/0CB5: 80 30        BRA $0CE7
+CE/0CB5: 80 30        BRA Routine_CE0CE7
 CE/0CB7: 1F 80 D0 D9  ORA $D9D080,X
-CE/0CBB: 30 27        BMI $0CE4
+CE/0CBB: 30 27        BMI Local_CE0CE4
 CE/0CBD: 99 02 1A     STA $1A02,Y
 CE/0CC0: 72 15        ADC ($15)
 CE/0CC2: 06 1D        ASL $1D
-CE/0CC4: 20 14 36     JSR $3614
+CE/0CC4: 20 14 36     JSR Routine_CE3614
 CE/0CC7: 78           SEI
 CE/0CC8: 7C 03 10     JMP ($1003,X)
 CE/0CCB: 24 02        BIT $02
 CE/0CCD: 34 1B        BIT $1B,X
 CE/0CCF: 78           SEI
 CE/0CD0: 7B           TDC
-CE/0CD1: 22 1B 00 1E  JSR $1E001B
+CE/0CD1: 22 1B 00 1E  JSR Routine_1E001B
 CE/0CD5: 2D DA 28     AND $28DA
 CE/0CD8: 24 03        BIT $03
 CE/0CDA: 2E 01 00     ROL $0001
-CE/0CDD: 22 1B 01 22  JSR $22011B
+CE/0CDD: 22 1B 01 22  JSR Routine_22011B
 CE/0CE1: 1B           TCS
 CE/0CE2: 00 1E        BRK $1E
+Local_CE0CE4:
 CE/0CE4: 06 20        ASL $20
 CE/0CE6: 14 50        TRB $50
 CE/0CE8: 36 00        ROL $00,X
-CE/0CEA: 22 1B 01 22  JSR $22011B
+CE/0CEA: 22 1B 01 22  JSR Routine_22011B
 CE/0CEE: 1B           TCS
 CE/0CEF: 00 1E        BRK $1E
 CE/0CF1: 06 00        ASL $00
@@ -559,7 +567,7 @@ CE/0D08: 01 20        ORA ($20,X)
 CE/0D0A: 14 12        TRB $12
 CE/0D0C: 18           CLC
 CE/0D0D: 71 77        ADC ($77),Y
-CE/0D0F: 10 1E        BPL $0D2F
+CE/0D0F: 10 1E        BPL Local_CE0D2F
 CE/0D11: 24 12        BIT $12
 CE/0D13: 18           CLC
 CE/0D14: 1E 23 6F     ASL $6F23,X
@@ -576,7 +584,8 @@ CE/0D27: 1E 24 24     ASL $2424,X
 CE/0D2A: 01 12        ORA ($12,X)
 CE/0D2C: 18           CLC
 CE/0D2D: 71 77        ADC ($77),Y
-CE/0D2F: 10 1E        BPL $0D4F
+Local_CE0D2F:
+CE/0D2F: 10 1E        BPL Local_CE0D4F
 CE/0D31: 24 0D        BIT $0D
 CE/0D33: 12 18        ORA ($18)
 CE/0D35: 1E 23 71     ASL $7123,X
@@ -592,8 +601,9 @@ CE/0D47: 1E 24 24     ASL $2424,X
 CE/0D4A: 01 20        ORA ($20,X)
 CE/0D4C: 04 12        TSB $12
 CE/0D4E: 18           CLC
+Local_CE0D4F:
 CE/0D4F: 71 77        ADC ($77),Y
-CE/0D51: 10 1E        BPL $0D71
+CE/0D51: 10 1E        BPL Routine_CE0D71
 CE/0D53: 24 12        BIT $12
 CE/0D55: 18           CLC
 CE/0D56: 1E 23 71     ASL $7123,X
@@ -609,7 +619,7 @@ CE/0D68: 1E 24 24     ASL $2424,X
 CE/0D6B: 01 20        ORA ($20,X)
 CE/0D6D: 0E 12 18     ASL $1812
 CE/0D70: 71 77        ADC ($77),Y
-CE/0D72: 10 1E        BPL $0D92
+CE/0D72: 10 1E        BPL Local_CE0D92
 CE/0D74: 24 0D        BIT $0D
 CE/0D76: 12 18        ORA ($18)
 CE/0D78: 1E 23 71     ASL $7123,X
@@ -625,8 +635,9 @@ CE/0D8A: 1E 24 24     ASL $2424,X
 CE/0D8D: 01 20        ORA ($20,X)
 CE/0D8F: 08           PHP
 CE/0D90: 12 18        ORA ($18)
+Local_CE0D92:
 CE/0D92: 71 77        ADC ($77),Y
-CE/0D94: 10 1E        BPL $0DB4
+CE/0D94: 10 1E        BPL Routine_CE0DB4
 CE/0D96: 24 12        BIT $12
 CE/0D98: 18           CLC
 CE/0D99: 1E 23 71     ASL $7123,X
@@ -643,7 +654,7 @@ CE/0DAE: 01 20        ORA ($20,X)
 CE/0DB0: 12 12        ORA ($12)
 CE/0DB2: 18           CLC
 CE/0DB3: 71 77        ADC ($77),Y
-CE/0DB5: 10 1E        BPL $0DD5
+CE/0DB5: 10 1E        BPL Local_CE0DD5
 CE/0DB7: 24 0D        BIT $0D
 CE/0DB9: 12 18        ORA ($18)
 CE/0DBB: 1E 23 71     ASL $7123,X
@@ -659,8 +670,9 @@ CE/0DCD: 1E 24 24     ASL $2424,X
 CE/0DD0: 01 20        ORA ($20,X)
 CE/0DD2: 0A           ASL
 CE/0DD3: 12 18        ORA ($18)
+Local_CE0DD5:
 CE/0DD5: 71 77        ADC ($77),Y
-CE/0DD7: 10 1E        BPL $0DF7
+CE/0DD7: 10 1E        BPL Routine_CE0DF7
 CE/0DD9: 24 12        BIT $12
 CE/0DDB: 18           CLC
 CE/0DDC: 1E 23 71     ASL $7123,X
@@ -677,7 +689,7 @@ CE/0DF1: 01 20        ORA ($20,X)
 CE/0DF3: 04 12        TSB $12
 CE/0DF5: 18           CLC
 CE/0DF6: 71 77        ADC ($77),Y
-CE/0DF8: 10 1E        BPL $0E18
+CE/0DF8: 10 1E        BPL Routine_CE0E18
 CE/0DFA: 24 0D        BIT $0D
 CE/0DFC: 12 18        ORA ($18)
 CE/0DFE: 1E 23 71     ASL $7123,X
@@ -690,11 +702,11 @@ CE/0E0D: 0E 7A 0E     ASL $0E7A
 CE/0E10: 85 09        STA $09
 CE/0E12: 72 0D        ADC ($0D)
 CE/0E14: 02 24        COP $24
-CE/0E16: 20 78 06     JSR $0678
+CE/0E16: 20 78 06     JSR Routine_CE0678
 CE/0E19: 1D 20 14     ORA $1420,X
 CE/0E1C: 78           SEI
 CE/0E1D: 89 02        BIT #$02
-CE/0E1F: 10 3D        BPL $0E5E
+CE/0E1F: 10 3D        BPL Routine_CE0E5E
 CE/0E21: 03 34        ORA $34,S
 CE/0E23: 1B           TCS
 CE/0E24: 36 20        ROL $20,X
@@ -703,7 +715,7 @@ CE/0E27: 36 24        ROL $24,X
 CE/0E29: 02 34        COP $34
 CE/0E2B: 1A           INC
 CE/0E2C: 06 1D        ASL $1D
-CE/0E2E: 50 20        BVC $0E50
+CE/0E2E: 50 20        BVC Local_CE0E50
 CE/0E30: 14 2E        TRB $2E
 CE/0E32: 01 00        ORA ($00,X)
 CE/0E34: 24 02        BIT $02
@@ -714,11 +726,12 @@ CE/0E3C: 03 73        ORA $73,S
 CE/0E3E: 00 60        BRK $60
 CE/0E40: 00 02        BRK $02
 CE/0E42: 00 0D        BRK $0D
-CE/0E44: 70 7A        BVS $0EC0
+CE/0E44: 70 7A        BVS Routine_CE0EC0
 CE/0E46: 7C 00 1E     JMP ($1E00,X)
 CE/0E49: 1C 71 73     TRB $7371
 CE/0E4C: 03 24        ORA $24,S
 CE/0E4E: 01 60        ORA ($60,X)
+Local_CE0E50:
 CE/0E50: 02 1B        COP $1B
 CE/0E52: 03 02        ORA $02,S
 CE/0E54: 01 78        ORA ($78,X)
@@ -730,7 +743,7 @@ CE/0E5F: 03 73        ORA $73,S
 CE/0E61: 00 20        BRK $20
 CE/0E63: 02 02        COP $02
 CE/0E65: 00 0D        BRK $0D
-CE/0E67: 20 08 70     JSR $7008
+CE/0E67: 20 08 70     JSR Routine_CE7008
 CE/0E6A: 1E 1C 71     ASL $711C,X
 CE/0E6D: 73 03        ADC ($03,S),Y
 CE/0E6F: 60           RTS

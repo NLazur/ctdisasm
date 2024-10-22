@@ -15,12 +15,13 @@ D0/FCD0: 00 04        BRK $04
 D0/FCD2: 06 20        ASL $20
 D0/FCD4: 09 28        ORA #$28
 D0/FCD6: 4A           LSR
-D0/FCD7: 30 09        BMI $FCE2
+D0/FCD7: 30 09        BMI Local_D0FCE2
 D0/FCD9: 28           PLP
 D0/FCDA: 06 20        ASL $20
 D0/FCDC: 05 1C        ORA $1C
 D0/FCDE: 00 00        BRK $00
 D0/FCE0: 00 00        BRK $00
+Local_D0FCE2:
 D0/FCE2: 00 00        BRK $00
 D0/FCE4: 00 00        BRK $00
 D0/FCE6: 00 00        BRK $00

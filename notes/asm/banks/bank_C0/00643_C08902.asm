@@ -19,7 +19,7 @@ C0/8921: 89 24        BIT #$24
 C0/8923: 89 60        BIT #$60
 C0/8925: AD F8 00     LDA $00F8
 C0/8928: 89 02        BIT #$02
-C0/892A: F0 0C        BEQ $8938
+C0/892A: F0 0C        BEQ Routine_C08938
 C0/892C: A9 20        LDA #$20
 C0/892E: 85 2C        STA $2C
 C0/8930: A5 2E        LDA $2E

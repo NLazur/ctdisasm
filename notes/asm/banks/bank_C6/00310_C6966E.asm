@@ -1,6 +1,6 @@
 ; Bank: C6 | Start Address: 966E
 Routine_C6966E:
-C6/966E: 10 23        BPL $9693
+C6/966E: 10 23        BPL Local_C69693
 C6/9670: 23 E9        AND $E9,S
 C6/9672: 07 07        ORA [$07]
 C6/9674: AF 61 7A 00  LDA $007A61
@@ -8,8 +8,9 @@ C6/9678: 52 42        EOR ($42)
 C6/967A: 45 54        EOR $54
 C6/967C: 03 08        ORA $08,S
 C6/967E: CA           DEX
-C6/967F: 10 FC        BPL $967D
-C6/9681: 80 FC        BRA $967F
+Local_C6967F:
+C6/967F: 10 FC        BPL Routine_C6967D
+C6/9681: 80 FC        BRA Local_C6967F
 C6/9683: 98           TYA
 C6/9684: AB           PLB
 C6/9685: 99 24 EE     STA $EE24,Y
@@ -18,6 +19,7 @@ C6/968B: 18           CLC
 C6/968C: 24 26        BIT $26
 C6/968E: 48           PHA
 C6/968F: AF D3 1A 28  LDA $281AD3
+Local_C69693:
 C6/9693: 51 52        EOR ($52),Y
 C6/9695: 53 04        EOR ($04,S),Y
 C6/9697: 42 32        WDM $32
@@ -42,7 +44,7 @@ C6/96BE: BF 0A BF F8  LDA $F8BF0A,X
 C6/96C2: 07 E1        ORA [$E1]
 C6/96C4: 3B           TSC
 C6/96C5: 1D 09 EF     ORA $EF09,X
-C6/96C8: 22 24 24 9B  JSR $9B2424
+C6/96C8: 22 24 24 9B  JSR Routine_9B2424
 C6/96CC: FE F4 38     INC $38F4,X
 C6/96CF: F5 E5        SBC $E5,X
 C6/96D1: 23 89        AND $89,S
@@ -71,7 +73,7 @@ C6/96FF: 0B           PHD
 C6/9700: A7 48        LDA [$48]
 C6/9702: 51 7F        EOR ($7F),Y
 C6/9704: 21 24        AND ($24,X)
-C6/9706: 70 23        BVS $972B
+C6/9706: 70 23        BVS Routine_C6972B
 C6/9708: 98           TYA
 C6/9709: 85 24        STA $24
 C6/970B: A2 09 DD     LDX #$DD09
@@ -120,8 +122,9 @@ C6/976A: 99 63 05     STA $0563,Y
 C6/976D: 36 BC        ROL $BC,X
 C6/976F: 37 41        AND [$41],Y
 C6/9771: C5 01        CMP $01
-C6/9773: 90 02        BCC $9777
+C6/9773: 90 02        BCC Local_C69777
 C6/9775: E1 01        SBC ($01,X)
+Local_C69777:
 C6/9777: FC 02 45     JSR ($4502,X)
 C6/977A: A4 40        LDY $40
 C6/977C: 37 6D        AND [$6D],Y

@@ -7,14 +7,16 @@ CC/7C83: 00 80        BRK $80
 CC/7C85: 03 00        ORA $00,S
 CC/7C87: 00 39        BRK $39
 CC/7C89: 39 03 3C     AND $3C03,Y
-CC/7C8C: 70 00        BVS $7C8E
+CC/7C8C: 70 00        BVS Local_CC7C8E
+Local_CC7C8E:
 CC/7C8E: 03 00        ORA $00,S
 CC/7C90: 00 03        BRK $03
 CC/7C92: 28           PLP
-CC/7C93: 80 3A        BRA $7CCF
+CC/7C93: 80 3A        BRA Routine_CC7CCF
 CC/7C95: 3B           TSC
 CC/7C96: 03 3C        ORA $3C,S
-CC/7C98: 50 00        BVC $7C9A
+CC/7C98: 50 00        BVC Local_CC7C9A
+Local_CC7C9A:
 CC/7C9A: 03 00        ORA $00,S
 CC/7C9C: 00 03        BRK $03
 CC/7C9E: 00 00        BRK $00
@@ -64,21 +66,24 @@ CC/7D06: 1C 00 00     TRB $0000
 CC/7D09: 03 00        ORA $00,S
 CC/7D0B: 00 39        BRK $39
 CC/7D0D: 39 03 3C     AND $3C03,Y
-CC/7D10: 70 00        BVS $7D12
+CC/7D10: 70 00        BVS Local_CC7D12
+Local_CC7D12:
 CC/7D12: 04 00        TSB $00
 CC/7D14: 00 03        BRK $03
 CC/7D16: 00 00        BRK $00
 CC/7D18: 3A           DEC
 CC/7D19: 3B           TSC
 CC/7D1A: 04 3C        TSB $3C
-CC/7D1C: 90 00        BCC $7D1E
+CC/7D1C: 90 00        BCC Local_CC7D1E
+Local_CC7D1E:
 CC/7D1E: 17 00        ORA [$00],Y
 CC/7D20: 00 03        BRK $03
 CC/7D22: 00 00        BRK $00
 CC/7D24: 3A           DEC
 CC/7D25: 3B           TSC
 CC/7D26: 04 3E        TSB $3E
-CC/7D28: B0 00        BCS $7D2A
+CC/7D28: B0 00        BCS Local_CC7D2A
+Local_CC7D2A:
 CC/7D2A: 18           CLC
 CC/7D2B: 00 00        BRK $00
 CC/7D2D: 03 64        ORA $64,S
@@ -92,12 +97,14 @@ CC/7D3A: 00 00        BRK $00
 CC/7D3C: 3A           DEC
 CC/7D3D: 3B           TSC
 CC/7D3E: 04 3E        TSB $3E
-CC/7D40: 90 00        BCC $7D42
+CC/7D40: 90 00        BCC Local_CC7D42
+Local_CC7D42:
 CC/7D42: 0C 00 00     TSB $0000
 CC/7D45: 03 00        ORA $00,S
 CC/7D47: 00 39        BRK $39
 CC/7D49: 39 03 3E     AND $3E03,Y
-CC/7D4C: 70 00        BVS $7D4E
+CC/7D4C: 70 00        BVS Local_CC7D4E
+Local_CC7D4E:
 CC/7D4E: 0E 00 00     ASL $0000
 CC/7D51: 05 80        ORA $80
 CC/7D53: 0A           ASL
@@ -125,32 +132,38 @@ CC/7D7F: 00 00        BRK $00
 CC/7D81: 03 00        ORA $00,S
 CC/7D83: 00 39        BRK $39
 CC/7D85: 39 03 3C     AND $3C03,Y
-CC/7D88: 70 00        BVS $7D8A
+CC/7D88: 70 00        BVS Local_CC7D8A
+Local_CC7D8A:
 CC/7D8A: 03 00        ORA $00,S
 CC/7D8C: 00 03        BRK $03
 CC/7D8E: 00 00        BRK $00
 CC/7D90: 3A           DEC
 CC/7D91: 3B           TSC
 CC/7D92: 04 3E        TSB $3E
-CC/7D94: 90 00        BCC $7D96
+CC/7D94: 90 00        BCC Local_CC7D96
+Local_CC7D96:
 CC/7D96: 0C 00 00     TSB $0000
 CC/7D99: 03 00        ORA $00,S
 CC/7D9B: 00 3A        BRK $3A
 CC/7D9D: 3B           TSC
 CC/7D9E: 04 3E        TSB $3E
-CC/7DA0: 90 00        BCC $7DA2
-CC/7DA2: 10 00        BPL $7DA4
+CC/7DA0: 90 00        BCC Local_CC7DA2
+Local_CC7DA2:
+CC/7DA2: 10 00        BPL Local_CC7DA4
+Local_CC7DA4:
 CC/7DA4: 00 03        BRK $03
 CC/7DA6: 00 00        BRK $00
 CC/7DA8: 3A           DEC
 CC/7DA9: 3B           TSC
 CC/7DAA: 04 3E        TSB $3E
-CC/7DAC: 90 00        BCC $7DAE
+CC/7DAC: 90 00        BCC Local_CC7DAE
+Local_CC7DAE:
 CC/7DAE: 0C 00 00     TSB $0000
 CC/7DB1: 03 00        ORA $00,S
 CC/7DB3: 00 39        BRK $39
 CC/7DB5: 39 03 3C     AND $3C03,Y
-CC/7DB8: 70 00        BVS $7DBA
+CC/7DB8: 70 00        BVS Local_CC7DBA
+Local_CC7DBA:
 CC/7DBA: 06 00        ASL $00
 CC/7DBC: 00 03        BRK $03
 CC/7DBE: 00 00        BRK $00
@@ -162,19 +175,22 @@ CC/7DC9: 03 00        ORA $00,S
 CC/7DCB: 00 3A        BRK $3A
 CC/7DCD: 3B           TSC
 CC/7DCE: 04 3E        TSB $3E
-CC/7DD0: 90 00        BCC $7DD2
+CC/7DD0: 90 00        BCC Local_CC7DD2
+Local_CC7DD2:
 CC/7DD2: 16 00        ASL $00,X
 CC/7DD4: 00 03        BRK $03
 CC/7DD6: 00 00        BRK $00
 CC/7DD8: 3A           DEC
 CC/7DD9: 3B           TSC
 CC/7DDA: 04 3E        TSB $3E
-CC/7DDC: F0 00        BEQ $7DDE
+CC/7DDC: F0 00        BEQ Local_CC7DDE
+Local_CC7DDE:
 CC/7DDE: 0C 00 00     TSB $0000
 CC/7DE1: 03 00        ORA $00,S
 CC/7DE3: 00 39        BRK $39
 CC/7DE5: 39 03 3C     AND $3C03,Y
-CC/7DE8: 70 00        BVS $7DEA
+CC/7DE8: 70 00        BVS Local_CC7DEA
+Local_CC7DEA:
 CC/7DEA: 14 00        TRB $00
 CC/7DEC: 00 03        BRK $03
 CC/7DEE: 00 00        BRK $00
@@ -191,24 +207,28 @@ CC/7E06: 64 10        STZ $10
 CC/7E08: 39 39 03     AND $0339,Y
 CC/7E0B: 3C 74 00     BIT $0074,X
 CC/7E0E: 03 00        ORA $00,S
-CC/7E10: 80 03        BRA $7E15
+CC/7E10: 80 03        BRA Local_CC7E15
 CC/7E12: 00 00        BRK $00
 CC/7E14: 3A           DEC
+Local_CC7E15:
 CC/7E15: 3B           TSC
 CC/7E16: 04 3E        TSB $3E
-CC/7E18: 90 00        BCC $7E1A
+CC/7E18: 90 00        BCC Local_CC7E1A
+Local_CC7E1A:
 CC/7E1A: 0C 00 00     TSB $0000
 CC/7E1D: 03 00        ORA $00,S
 CC/7E1F: 00 39        BRK $39
 CC/7E21: 39 03 3C     AND $3C03,Y
-CC/7E24: F0 00        BEQ $7E26
+CC/7E24: F0 00        BEQ Local_CC7E26
+Local_CC7E26:
 CC/7E26: 07 00        ORA [$00]
 CC/7E28: 00 03        BRK $03
 CC/7E2A: 00 00        BRK $00
 CC/7E2C: 3A           DEC
 CC/7E2D: 3B           TSC
 CC/7E2E: 04 3E        TSB $3E
-CC/7E30: B0 00        BCS $7E32
+CC/7E30: B0 00        BCS Local_CC7E32
+Local_CC7E32:
 CC/7E32: 0C 00 00     TSB $0000
 CC/7E35: 03 00        ORA $00,S
 CC/7E37: 00 39        BRK $39
@@ -217,14 +237,15 @@ CC/7E3C: 74 00        STZ $00,X
 CC/7E3E: 1A           INC
 CC/7E3F: 00 00        BRK $00
 CC/7E41: 03 64        ORA $64,S
-CC/7E43: 20 39 39     JSR $3939
+CC/7E43: 20 39 39     JSR Routine_CC3939
 CC/7E46: 03 3C        ORA $3C,S
 CC/7E48: 74 00        STZ $00,X
 CC/7E4A: 19 00 00     ORA $0000,Y
 CC/7E4D: 03 00        ORA $00,S
 CC/7E4F: 00 39        BRK $39
 CC/7E51: 39 03 3C     AND $3C03,Y
-CC/7E54: 70 00        BVS $7E56
+CC/7E54: 70 00        BVS Local_CC7E56
+Local_CC7E56:
 CC/7E56: 05 00        ORA $00
 CC/7E58: 00 03        BRK $03
 CC/7E5A: 00 00        BRK $00
@@ -236,21 +257,24 @@ CC/7E66: 00 00        BRK $00
 CC/7E68: 3A           DEC
 CC/7E69: 3B           TSC
 CC/7E6A: 04 3E        TSB $3E
-CC/7E6C: B0 00        BCS $7E6E
+CC/7E6C: B0 00        BCS Local_CC7E6E
+Local_CC7E6E:
 CC/7E6E: 08           PHP
 CC/7E6F: 00 00        BRK $00
 CC/7E71: 03 00        ORA $00,S
 CC/7E73: 00 3A        BRK $3A
 CC/7E75: 3B           TSC
 CC/7E76: 04 3E        TSB $3E
-CC/7E78: B0 00        BCS $7E7A
+CC/7E78: B0 00        BCS Local_CC7E7A
+Local_CC7E7A:
 CC/7E7A: 08           PHP
 CC/7E7B: 00 00        BRK $00
 CC/7E7D: 03 00        ORA $00,S
 CC/7E7F: 00 3A        BRK $3A
 CC/7E81: 3B           TSC
 CC/7E82: 04 3E        TSB $3E
-CC/7E84: B0 00        BCS $7E86
+CC/7E84: B0 00        BCS Local_CC7E86
+Local_CC7E86:
 CC/7E86: 13 00        ORA ($00,S),Y
 CC/7E88: 00 00        BRK $00
 CC/7E8A: 1E 80 00     ASL $0080,X
@@ -261,7 +285,8 @@ CC/7E93: 00 00        BRK $00
 CC/7E95: 03 00        ORA $00,S
 CC/7E97: 00 39        BRK $39
 CC/7E99: 39 03 3C     AND $3C03,Y
-CC/7E9C: 70 00        BVS $7E9E
+CC/7E9C: 70 00        BVS Local_CC7E9E
+Local_CC7E9E:
 CC/7E9E: 05 00        ORA $00
 CC/7EA0: 00 03        BRK $03
 CC/7EA2: 00 00        BRK $00
@@ -302,7 +327,8 @@ CC/7EF2: 0D 00 00     ORA $0000
 CC/7EF5: 03 00        ORA $00,S
 CC/7EF7: 00 39        BRK $39
 CC/7EF9: 39 03 3C     AND $3C03,Y
-CC/7EFC: 50 00        BVC $7EFE
+CC/7EFC: 50 00        BVC Local_CC7EFE
+Local_CC7EFE:
 CC/7EFE: 03 00        ORA $00,S
 CC/7F00: 00 03        BRK $03
 CC/7F02: 00 00        BRK $00
@@ -323,7 +349,8 @@ CC/7F23: 00 00        BRK $00
 CC/7F25: 03 00        ORA $00,S
 CC/7F27: 00 39        BRK $39
 CC/7F29: 39 03 3C     AND $3C03,Y
-CC/7F2C: 70 00        BVS $7F2E
+CC/7F2C: 70 00        BVS Local_CC7F2E
+Local_CC7F2E:
 CC/7F2E: 04 00        TSB $00
 CC/7F30: 00 03        BRK $03
 CC/7F32: 00 00        BRK $00
@@ -344,7 +371,8 @@ CC/7F53: 00 80        BRK $80
 CC/7F55: 03 00        ORA $00,S
 CC/7F57: 00 39        BRK $39
 CC/7F59: 39 03 3C     AND $3C03,Y
-CC/7F5C: 50 00        BVC $7F5E
+CC/7F5C: 50 00        BVC Local_CC7F5E
+Local_CC7F5E:
 CC/7F5E: 03 00        ORA $00,S
 CC/7F60: 00 03        BRK $03
 CC/7F62: 00 00        BRK $00
@@ -386,7 +414,8 @@ CC/7FB3: 00 00        BRK $00
 CC/7FB5: 03 00        ORA $00,S
 CC/7FB7: 00 39        BRK $39
 CC/7FB9: 39 03 3C     AND $3C03,Y
-CC/7FBC: 70 00        BVS $7FBE
+CC/7FBC: 70 00        BVS Local_CC7FBE
+Local_CC7FBE:
 CC/7FBE: 00 00        BRK $00
 CC/7FC0: 00 03        BRK $03
 CC/7FC2: 64 10        STZ $10
@@ -396,7 +425,8 @@ CC/7FCA: 09 00 80     ORA #$8000
 CC/7FCD: 03 00        ORA $00,S
 CC/7FCF: 00 39        BRK $39
 CC/7FD1: 39 03 3C     AND $3C03,Y
-CC/7FD4: 70 00        BVS $7FD6
+CC/7FD4: 70 00        BVS Local_CC7FD6
+Local_CC7FD6:
 CC/7FD6: 12 00        ORA ($00)
 CC/7FD8: 00 03        BRK $03
 CC/7FDA: 1E 10 3A     ASL $3A10,X
@@ -404,18 +434,21 @@ CC/7FDD: 3B           TSC
 CC/7FDE: 04 3C        TSB $3C
 CC/7FE0: 94 00        STY $00,X
 CC/7FE2: 06 00        ASL $00
-CC/7FE4: 80 03        BRA $7FE9
+CC/7FE4: 80 03        BRA Local_CC7FE9
 CC/7FE6: 00 00        BRK $00
 CC/7FE8: 3A           DEC
+Local_CC7FE9:
 CC/7FE9: 3B           TSC
 CC/7FEA: 04 3E        TSB $3E
-CC/7FEC: B0 00        BCS $7FEE
+CC/7FEC: B0 00        BCS Local_CC7FEE
+Local_CC7FEE:
 CC/7FEE: 1E 00 00     ASL $0000,X
 CC/7FF1: 03 00        ORA $00,S
 CC/7FF3: 00 3A        BRK $3A
 CC/7FF5: 3B           TSC
 CC/7FF6: 04 3E        TSB $3E
-CC/7FF8: B0 00        BCS $7FFA
+CC/7FF8: B0 00        BCS Local_CC7FFA
+Local_CC7FFA:
 CC/7FFA: 12 00        ORA ($00)
 CC/7FFC: 00 03        BRK $03
 CC/7FFE: 32 00        AND ($00)
@@ -435,19 +468,22 @@ CC/801E: 03 00        ORA $00,S
 CC/8020: 00 07        BRK $07
 CC/8022: 0F 80 3A 3B  ORA $3B3A80
 CC/8026: 04 3E        TSB $3E
-CC/8028: 90 00        BCC $802A
+CC/8028: 90 00        BCC Local_CC802A
+Local_CC802A:
 CC/802A: 0C 00 00     TSB $0000
 CC/802D: 03 00        ORA $00,S
 CC/802F: 00 3A        BRK $3A
 CC/8031: 3B           TSC
 CC/8032: 04 3E        TSB $3E
-CC/8034: B0 00        BCS $8036
+CC/8034: B0 00        BCS Local_CC8036
+Local_CC8036:
 CC/8036: FF 00 00 03  SBC $030000,X
 CC/803A: 00 00        BRK $00
 CC/803C: 3A           DEC
 CC/803D: 3B           TSC
 CC/803E: 04 3E        TSB $3E
-CC/8040: B0 00        BCS $8042
+CC/8040: B0 00        BCS Local_CC8042
+Local_CC8042:
 CC/8042: 32 00        AND ($00)
 CC/8044: 00 03        BRK $03
 CC/8046: 00 00        BRK $00
@@ -500,7 +536,8 @@ CC/80AC: 00 00        BRK $00
 CC/80AE: 00 00        BRK $00
 CC/80B0: 00 00        BRK $00
 CC/80B2: 0A           ASL
-CC/80B3: 80 00        BRA $80B5
+CC/80B3: 80 00        BRA Local_CC80B5
+Local_CC80B5:
 CC/80B5: 00 00        BRK $00
 CC/80B7: 00 00        BRK $00
 CC/80B9: 00 00        BRK $00
@@ -515,27 +552,31 @@ CC/80C9: 03 00        ORA $00,S
 CC/80CB: 00 3A        BRK $3A
 CC/80CD: 3B           TSC
 CC/80CE: 04 3E        TSB $3E
-CC/80D0: B0 00        BCS $80D2
+CC/80D0: B0 00        BCS Local_CC80D2
+Local_CC80D2:
 CC/80D2: 46 00        LSR $00
 CC/80D4: 00 03        BRK $03
 CC/80D6: 00 00        BRK $00
 CC/80D8: 3A           DEC
 CC/80D9: 3B           TSC
 CC/80DA: 04 3E        TSB $3E
-CC/80DC: B0 00        BCS $80DE
+CC/80DC: B0 00        BCS Local_CC80DE
+Local_CC80DE:
 CC/80DE: 23 00        AND $00,S
 CC/80E0: 00 03        BRK $03
 CC/80E2: 00 00        BRK $00
 CC/80E4: 3A           DEC
 CC/80E5: 3B           TSC
 CC/80E6: 04 3E        TSB $3E
-CC/80E8: B0 00        BCS $80EA
+CC/80E8: B0 00        BCS Local_CC80EA
+Local_CC80EA:
 CC/80EA: 18           CLC
 CC/80EB: 00 00        BRK $00
 CC/80ED: 03 00        ORA $00,S
 CC/80EF: 00 39        BRK $39
 CC/80F1: 39 03 3C     AND $3C03,Y
-CC/80F4: 70 00        BVS $80F6
+CC/80F4: 70 00        BVS Local_CC80F6
+Local_CC80F6:
 CC/80F6: 12 00        ORA ($00)
 CC/80F8: 00 03        BRK $03
 CC/80FA: 32 02        AND ($02)
@@ -548,7 +589,8 @@ CC/8108: 3A           DEC
 CC/8109: 3B           TSC
 CC/810A: 04 3C        TSB $3C
 CC/810C: 94 00        STY $00,X
-CC/810E: 50 00        BVC $8110
+CC/810E: 50 00        BVC Local_CC8110
+Local_CC8110:
 CC/8110: 00 03        BRK $03
 CC/8112: 00 00        BRK $00
 CC/8114: 39 39 03     AND $0339,Y
@@ -575,15 +617,17 @@ CC/813F: 00 00        BRK $00
 CC/8141: 03 00        ORA $00,S
 CC/8143: 00 39        BRK $39
 CC/8145: 39 03 3C     AND $3C03,Y
-CC/8148: 70 00        BVS $814A
+CC/8148: 70 00        BVS Local_CC814A
+Local_CC814A:
 CC/814A: 05 00        ORA $00
 CC/814C: 00 02        BRK $02
 CC/814E: 01 02        ORA ($02,X)
 CC/8150: 00 00        BRK $00
 CC/8152: 00 00        BRK $00
-CC/8154: 30 00        BMI $8156
+CC/8154: 30 00        BMI Local_CC8156
+Local_CC8156:
 CC/8156: 00 00        BRK $00
-CC/8158: 80 03        BRA $815D
+CC/8158: 80 03        BRA Routine_CC815D
 CC/815A: 00 00        BRK $00
 CC/815C: 39 39 03     AND $0339,Y
 CC/815F: 3C 50 00     BIT $0050,X
@@ -607,26 +651,30 @@ CC/8187: 00 00        BRK $00
 CC/8189: 03 00        ORA $00,S
 CC/818B: 00 39        BRK $39
 CC/818D: 39 03 3C     AND $3C03,Y
-CC/8190: 70 00        BVS $8192
+CC/8190: 70 00        BVS Local_CC8192
+Local_CC8192:
 CC/8192: 14 00        TRB $00
 CC/8194: 00 03        BRK $03
 CC/8196: 00 00        BRK $00
 CC/8198: 3A           DEC
 CC/8199: 3B           TSC
 CC/819A: 04 3E        TSB $3E
-CC/819C: B0 00        BCS $819E
+CC/819C: B0 00        BCS Local_CC819E
+Local_CC819E:
 CC/819E: 2B           PLD
 CC/819F: 00 00        BRK $00
 CC/81A1: 03 00        ORA $00,S
 CC/81A3: 00 39        BRK $39
 CC/81A5: 39 03 3C     AND $3C03,Y
-CC/81A8: 70 00        BVS $81AA
+CC/81A8: 70 00        BVS Local_CC81AA
+Local_CC81AA:
 CC/81AA: 08           PHP
 CC/81AB: 00 00        BRK $00
 CC/81AD: 03 00        ORA $00,S
 CC/81AF: 00 39        BRK $39
 CC/81B1: 39 03 3C     AND $3C03,Y
-CC/81B4: 50 00        BVC $81B6
+CC/81B4: 50 00        BVC Local_CC81B6
+Local_CC81B6:
 CC/81B6: 03 00        ORA $00,S
 CC/81B8: 00 00        BRK $00
 CC/81BA: 19 80 00     ORA $0080,Y
@@ -637,7 +685,8 @@ CC/81C3: 00 00        BRK $00
 CC/81C5: 03 00        ORA $00,S
 CC/81C7: 00 39        BRK $39
 CC/81C9: 39 03 3C     AND $3C03,Y
-CC/81CC: F0 00        BEQ $81CE
+CC/81CC: F0 00        BEQ Local_CC81CE
+Local_CC81CE:
 CC/81CE: 03 00        ORA $00,S
 CC/81D0: 00 03        BRK $03
 CC/81D2: 00 00        BRK $00
@@ -649,7 +698,8 @@ CC/81DE: 00 00        BRK $00
 CC/81E0: 3A           DEC
 CC/81E1: 3B           TSC
 CC/81E2: 04 3E        TSB $3E
-CC/81E4: B0 00        BCS $81E6
+CC/81E4: B0 00        BCS Local_CC81E6
+Local_CC81E6:
 CC/81E6: 17 00        ORA [$00],Y
 CC/81E8: 00 03        BRK $03
 CC/81EA: 00 00        BRK $00
@@ -659,22 +709,26 @@ CC/81F2: 6E 00 00     ROR $0000
 CC/81F5: 03 00        ORA $00,S
 CC/81F7: 00 39        BRK $39
 CC/81F9: 39 03 3C     AND $3C03,Y
-CC/81FC: F0 00        BEQ $81FE
+CC/81FC: F0 00        BEQ Local_CC81FE
+Local_CC81FE:
 CC/81FE: 03 00        ORA $00,S
 CC/8200: 00 03        BRK $03
 CC/8202: 00 00        BRK $00
 CC/8204: 3A           DEC
 CC/8205: 3B           TSC
 CC/8206: 04 3E        TSB $3E
-CC/8208: B0 00        BCS $820A
+CC/8208: B0 00        BCS Local_CC820A
+Local_CC820A:
 CC/820A: 71 00        ADC ($00),Y
 CC/820C: 00 03        BRK $03
 CC/820E: 00 00        BRK $00
 CC/8210: 3A           DEC
 CC/8211: 3B           TSC
 CC/8212: 04 3E        TSB $3E
-CC/8214: B0 00        BCS $8216
-CC/8216: F0 00        BEQ $8218
+CC/8214: B0 00        BCS Local_CC8216
+Local_CC8216:
+CC/8216: F0 00        BEQ Local_CC8218
+Local_CC8218:
 CC/8218: 00 03        BRK $03
 CC/821A: 00 00        BRK $00
 CC/821C: 39 39 03     AND $0339,Y
@@ -746,13 +800,15 @@ CC/82AA: 00 00        BRK $00
 CC/82AC: 3A           DEC
 CC/82AD: 3B           TSC
 CC/82AE: 04 3E        TSB $3E
-CC/82B0: B0 00        BCS $82B2
+CC/82B0: B0 00        BCS Local_CC82B2
+Local_CC82B2:
 CC/82B2: 18           CLC
 CC/82B3: 00 00        BRK $00
 CC/82B5: 03 00        ORA $00,S
 CC/82B7: 00 39        BRK $39
 CC/82B9: 39 03 3C     AND $3C03,Y
-CC/82BC: 70 00        BVS $82BE
+CC/82BC: 70 00        BVS Local_CC82BE
+Local_CC82BE:
 CC/82BE: 14 00        TRB $00
 CC/82C0: 00 03        BRK $03
 CC/82C2: 00 00        BRK $00
@@ -813,12 +869,14 @@ CC/833A: 00 00        BRK $00
 CC/833C: 3A           DEC
 CC/833D: 3B           TSC
 CC/833E: 04 3E        TSB $3E
-CC/8340: B0 00        BCS $8342
+CC/8340: B0 00        BCS Local_CC8342
+Local_CC8342:
 CC/8342: 0C 00 00     TSB $0000
 CC/8345: 03 00        ORA $00,S
 CC/8347: 00 39        BRK $39
 CC/8349: 39 03 3C     AND $3C03,Y
-CC/834C: 70 00        BVS $834E
+CC/834C: 70 00        BVS Local_CC834E
+Local_CC834E:
 CC/834E: 05 00        ORA $00
 CC/8350: 00 03        BRK $03
 CC/8352: 00 00        BRK $00
@@ -844,13 +902,15 @@ CC/8381: 03 00        ORA $00,S
 CC/8383: 00 3A        BRK $3A
 CC/8385: 3B           TSC
 CC/8386: 04 3E        TSB $3E
-CC/8388: B0 00        BCS $838A
+CC/8388: B0 00        BCS Local_CC838A
+Local_CC838A:
 CC/838A: 88           DEY
 CC/838B: 00 00        BRK $00
 CC/838D: 03 00        ORA $00,S
 CC/838F: 00 39        BRK $39
 CC/8391: 39 03 3C     AND $3C03,Y
-CC/8394: 70 00        BVS $8396
+CC/8394: 70 00        BVS Local_CC8396
+Local_CC8396:
 CC/8396: 64 00        STZ $00
 CC/8398: 00 03        BRK $03
 CC/839A: 00 00        BRK $00
@@ -978,12 +1038,14 @@ CC/84BA: 00 00        BRK $00
 CC/84BC: 3A           DEC
 CC/84BD: 3B           TSC
 CC/84BE: 04 3E        TSB $3E
-CC/84C0: B0 00        BCS $84C2
+CC/84C0: B0 00        BCS Local_CC84C2
+Local_CC84C2:
 CC/84C2: 0C 00 00     TSB $0000
 CC/84C5: 03 00        ORA $00,S
 CC/84C7: 00 39        BRK $39
 CC/84C9: 39 03 3C     AND $3C03,Y
-CC/84CC: 50 00        BVC $84CE
+CC/84CC: 50 00        BVC Local_CC84CE
+Local_CC84CE:
 CC/84CE: 03 00        ORA $00,S
 CC/84D0: 00 03        BRK $03
 CC/84D2: 00 00        BRK $00
@@ -1076,7 +1138,7 @@ CC/85A0: 39 39 03     AND $0339,Y
 CC/85A3: 3C 50 00     BIT $0050,X
 CC/85A6: 03 00        ORA $00,S
 CC/85A8: 00 05        BRK $05
-CC/85AA: 80 05        BRA $85B1
+CC/85AA: 80 05        BRA Routine_CC85B1
 CC/85AC: 00 00        BRK $00
 CC/85AE: 00 00        BRK $00
 CC/85B0: 00 00        BRK $00
@@ -1111,7 +1173,8 @@ CC/85F2: 00 00        BRK $00
 CC/85F4: 3A           DEC
 CC/85F5: 3B           TSC
 CC/85F6: 04 3E        TSB $3E
-CC/85F8: B0 00        BCS $85FA
+CC/85F8: B0 00        BCS Local_CC85FA
+Local_CC85FA:
 CC/85FA: FF 00 00 02  SBC $020000,X
 CC/85FE: 01 04        ORA ($04,X)
 CC/8600: 39 39 64     AND $6439,Y
@@ -1122,7 +1185,8 @@ CC/8609: 03 00        ORA $00,S
 CC/860B: 00 3A        BRK $3A
 CC/860D: 3B           TSC
 CC/860E: 04 3E        TSB $3E
-CC/8610: B0 00        BCS $8612
+CC/8610: B0 00        BCS Local_CC8612
+Local_CC8612:
 CC/8612: 86 00        STX $00
 CC/8614: 00 03        BRK $03
 CC/8616: 00 00        BRK $00
@@ -1139,13 +1203,15 @@ CC/862E: 00 00        BRK $00
 CC/8630: 3A           DEC
 CC/8631: 3B           TSC
 CC/8632: 04 3E        TSB $3E
-CC/8634: B0 00        BCS $8636
+CC/8634: B0 00        BCS Local_CC8636
+Local_CC8636:
 CC/8636: FF 00 00 03  SBC $030000,X
 CC/863A: 00 00        BRK $00
 CC/863C: 3A           DEC
 CC/863D: 3B           TSC
 CC/863E: 04 3E        TSB $3E
-CC/8640: B0 00        BCS $8642
+CC/8640: B0 00        BCS Local_CC8642
+Local_CC8642:
 CC/8642: FF 00 00 03  SBC $030000,X
 CC/8646: 00 00        BRK $00
 CC/8648: 39 39 03     AND $0339,Y
@@ -1155,43 +1221,50 @@ CC/864F: 00 00        BRK $00
 CC/8651: 03 00        ORA $00,S
 CC/8653: 00 39        BRK $39
 CC/8655: 39 03 3C     AND $3C03,Y
-CC/8658: 70 00        BVS $865A
+CC/8658: 70 00        BVS Local_CC865A
+Local_CC865A:
 CC/865A: 0D 00 00     ORA $0000
 CC/865D: 03 00        ORA $00,S
 CC/865F: 00 39        BRK $39
 CC/8661: 39 03 3C     AND $3C03,Y
-CC/8664: 70 00        BVS $8666
+CC/8664: 70 00        BVS Local_CC8666
+Local_CC8666:
 CC/8666: 0D 00 00     ORA $0000
 CC/8669: 03 64        ORA $64,S
-CC/866B: 10 3A        BPL $86A7
+CC/866B: 10 3A        BPL Routine_CC86A7
 CC/866D: 3B           TSC
 CC/866E: 04 3E        TSB $3E
 CC/8670: 94 00        STY $00,X
 CC/8672: 07 00        ORA [$00]
-CC/8674: 80 03        BRA $8679
+CC/8674: 80 03        BRA Local_CC8679
 CC/8676: 00 00        BRK $00
 CC/8678: 3A           DEC
+Local_CC8679:
 CC/8679: 3B           TSC
 CC/867A: 04 3C        TSB $3C
-CC/867C: F0 00        BEQ $867E
+CC/867C: F0 00        BEQ Local_CC867E
+Local_CC867E:
 CC/867E: 0C 00 00     TSB $0000
 CC/8681: 03 00        ORA $00,S
 CC/8683: 00 39        BRK $39
 CC/8685: 39 03 3C     AND $3C03,Y
-CC/8688: 70 00        BVS $868A
+CC/8688: 70 00        BVS Local_CC868A
+Local_CC868A:
 CC/868A: 0A           ASL
 CC/868B: 00 00        BRK $00
 CC/868D: 03 00        ORA $00,S
 CC/868F: 00 39        BRK $39
 CC/8691: 39 03 3C     AND $3C03,Y
-CC/8694: 70 00        BVS $8696
+CC/8694: 70 00        BVS Local_CC8696
+Local_CC8696:
 CC/8696: 0A           ASL
 CC/8697: 00 00        BRK $00
 CC/8699: 03 00        ORA $00,S
 CC/869B: 00 3A        BRK $3A
 CC/869D: 3B           TSC
 CC/869E: 04 3E        TSB $3E
-CC/86A0: B0 00        BCS $86A2
+CC/86A0: B0 00        BCS Local_CC86A2
+Local_CC86A2:
 CC/86A2: 64 00        STZ $00
 CC/86A4: 00 03        BRK $03
 CC/86A6: 00 00        BRK $00
@@ -1575,16 +1648,19 @@ CC/89C7: 00 00        BRK $00
 CC/89C9: 3A           DEC
 CC/89CA: 3B           TSC
 CC/89CB: 04 3E        TSB $3E
-CC/89CD: 10 00        BPL $89CF
+CC/89CD: 10 00        BPL Local_CC89CF
+Local_CC89CF:
 CC/89CF: 0C 00 80     TSB $8000
 CC/89D2: 03 00        ORA $00,S
 CC/89D4: 00 3A        BRK $3A
 CC/89D6: 3B           TSC
 CC/89D7: 04 3E        TSB $3E
-CC/89D9: 10 00        BPL $89DB
+CC/89D9: 10 00        BPL Local_CC89DB
+Local_CC89DB:
 CC/89DB: 12 00        ORA ($00)
-CC/89DD: 80 03        BRA $89E2
+CC/89DD: 80 03        BRA Local_CC89E2
 CC/89DF: 19 80 3A     ORA $3A80,Y
+Local_CC89E2:
 CC/89E2: 3B           TSC
 CC/89E3: 04 3E        TSB $3E
 CC/89E5: 94 00        STY $00,X

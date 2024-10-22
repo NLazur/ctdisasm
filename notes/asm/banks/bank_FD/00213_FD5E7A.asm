@@ -11,20 +11,21 @@ FD/5E8A: 01 00        ORA ($00,X)
 FD/5E8C: 4F 44 0F 3D  EOR $3D0F44
 FD/5E90: 18           CLC
 FD/5E91: 39 F8 C1     AND $C1F8,Y
-FD/5E94: 30 09        BMI $5E9F
+FD/5E94: 30 09        BMI Local_FD5E9F
 FD/5E96: 09 BD        ORA #$BD
 FD/5E98: 07 02        ORA [$02]
 FD/5E9A: D7 34        CMP [$34],Y
 FD/5E9C: 07 FF        ORA [$FF]
 FD/5E9E: 0B           PHD
+Local_FD5E9F:
 FD/5E9F: C1 0B        CMP ($0B,X)
 FD/5EA1: 04 51        TSB $51
 FD/5EA3: 14 00        TRB $00
 FD/5EA5: 8A           TXA
 FD/5EA6: F9 7D 33     SBC $337D,Y
 FD/5EA9: CE 03 B4     DEC $B403
-FD/5EAC: 10 B6        BPL $5E64
-FD/5EAE: 10 49        BPL $5EF9
+FD/5EAC: 10 B6        BPL Routine_FD5E64
+FD/5EAE: 10 49        BPL Routine_FD5EF9
 FD/5EB0: 07 06        ORA [$06]
 FD/5EB2: 06 07        ASL $07
 FD/5EB4: FB           XCE
@@ -66,6 +67,7 @@ FD/5EF7: 3C 09 37     BIT $3709,X
 FD/5EFA: F9 C9 A2     SBC $A2C9,Y
 FD/5EFD: FD 0B 06     SBC $060B,X
 FD/5F00: 41 F9        EOR ($F9,X)
+Local_FD5F02:
 FD/5F02: 81 7D        STA ($7D,X)
 FD/5F04: A7 09        LDA [$09]
 FD/5F06: 03 0A        ORA $0A,S
@@ -93,7 +95,7 @@ FD/5F31: 0A           ASL
 FD/5F32: 41 00        EOR ($00,X)
 FD/5F34: BE 06 BE     LDX $BE06,Y
 FD/5F37: 23 41        AND $41,S
-FD/5F39: 10 C7        BPL $5F02
+FD/5F39: 10 C7        BPL Local_FD5F02
 FD/5F3B: C5 FB        CMP $FB
 FD/5F3D: 7E 2F 6D     ROR $6D2F,X
 FD/5F40: 00 0A        BRK $0A
@@ -102,7 +104,7 @@ FD/5F43: 08           PHP
 FD/5F44: 01 08        ORA ($08,X)
 FD/5F46: BB           TYX
 FD/5F47: 0C FF 01     TSB $01FF
-FD/5F4A: 20 91 03     JSR $0391
+FD/5F4A: 20 91 03     JSR Routine_FD0391
 FD/5F4D: 91 04        STA ($04),Y
 FD/5F4F: 42 F8        WDM $F8
 FD/5F51: 7C 07 F3     JMP ($F307,X)

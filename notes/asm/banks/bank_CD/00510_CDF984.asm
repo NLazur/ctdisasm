@@ -4,8 +4,8 @@ CD/F984: 00 08        BRK $08
 CD/F986: 00 1F        BRK $1F
 CD/F988: 01 02        ORA ($02,X)
 CD/F98A: 01 0F        ORA ($0F,X)
-CD/F98C: 80 0F        BRA $F99D
-CD/F98E: 82 31 82     BRL $CD7BC2
+CD/F98C: 80 0F        BRA Routine_CDF99D
+CD/F98E: 82 31 82     BRL Routine_CD7BC2
 CD/F991: 1A           INC
 CD/F992: 00 24        BRK $24
 CD/F994: 00 28        BRK $28
@@ -18,8 +18,8 @@ CD/F9A0: 00 08        BRK $08
 CD/F9A2: 00 1F        BRK $1F
 CD/F9A4: 01 02        ORA ($02,X)
 CD/F9A6: 01 0F        ORA ($0F,X)
-CD/F9A8: 80 0F        BRA $F9B9
-CD/F9AA: 82 31 82     BRL $CD7BDE
+CD/F9A8: 80 0F        BRA Routine_CDF9B9
+CD/F9AA: 82 31 82     BRL Routine_CD7BDE
 CD/F9AD: 1A           INC
 CD/F9AE: 00 24        BRK $24
 CD/F9B0: 00 28        BRK $28

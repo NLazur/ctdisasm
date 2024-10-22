@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 3F2F
 Routine_D03F2F:
 D0/3F2F: C0 A0 60     CPY #$60A0
-D0/3F32: 50 B0        BVC $3EE4
+D0/3F32: 50 B0        BVC Routine_D03EE4
 D0/3F34: A8           TAY
 D0/3F35: D8           CLD
 D0/3F36: 54 6C 0B     MVN $6C,$0B
@@ -19,9 +19,9 @@ D0/3F4F: 06 0B        ASL $0B
 D0/3F51: 0C 17 19     TSB $1917
 D0/3F54: 16 1B        ASL $1B,X
 D0/3F56: 2E 33 60     ROL $6033
-D0/3F59: 80 E0        BRA $3F3B
+D0/3F59: 80 E0        BRA Routine_D03F3B
 D0/3F5B: 00 E0        BRK $E0
 D0/3F5D: 00 E0        BRK $E0
 D0/3F5F: 00 C0        BRK $C0
-D0/3F61: 20 A0 60     JSR $60A0
+D0/3F61: 20 A0 60     JSR Routine_D060A0
 D0/3F64: 40           RTI

@@ -119,7 +119,7 @@ C7/5F0A: 00 00        BRK $00
 C7/5F0C: 00 C4        BRK $C4
 C7/5F0E: 3C C8 0C     BIT $0CC8,X
 C7/5F11: 18           CLC
-C7/5F12: 50 EB        BVC $5EFF
+C7/5F12: 50 EB        BVC Routine_C75EFF
 C7/5F14: DB           STP
 C7/5F15: 00 C4        BRK $C4
 C7/5F17: 2C DC 10     BIT $10DC

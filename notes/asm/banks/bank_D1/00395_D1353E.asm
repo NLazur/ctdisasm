@@ -3,7 +3,7 @@ Routine_D1353E:
 D1/353E: CC 40 68     CPY $6840
 D1/3541: 08           PHP
 D1/3542: E0 00 E0     CPX #$E000
-D1/3545: F0 E0        BEQ $3527
+D1/3545: F0 E0        BEQ Routine_D13527
 D1/3547: 44 41 42     MVP $41,$42
 D1/354A: 41 40        EOR ($40,X)
 D1/354C: 00 41        BRK $41

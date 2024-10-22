@@ -5,7 +5,8 @@ FD/ECC3: 8E 81 21     STX $2181
 FD/ECC6: A9 7F        LDA #$7F
 FD/ECC8: 8D 83 21     STA $2183
 FD/ECCB: A2 00 20     LDX #$2000
+Local_FDECCE:
 FD/ECCE: 9C 80 21     STZ $2180
 FD/ECD1: CA           DEX
-FD/ECD2: D0 FA        BNE $ECCE
+FD/ECD2: D0 FA        BNE Local_FDECCE
 FD/ECD4: 60           RTS

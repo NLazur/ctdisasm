@@ -1,7 +1,7 @@
 ; Bank: FE | Start Address: 6DDB
 Routine_FE6DDB:
-FE/6DDB: 70 54        BVS $6E31
-FE/6DDD: 10 08        BPL $6DE7
+FE/6DDB: 70 54        BVS Routine_FE6E31
+FE/6DDD: 10 08        BPL Routine_FE6DE7
 FE/6DDF: 24 00        BIT $00
 FE/6DE1: 08           PHP
 FE/6DE2: 25 08        AND $08
@@ -25,7 +25,7 @@ FE/6E03: 54 C0 08     MVN $C0,$08
 FE/6E06: 55 08        EOR $08,X
 FE/6E08: 56 08        LSR $08,X
 FE/6E0A: 57 80        EOR [$80],Y
-FE/6E0C: 80 40        BRA $6E4E
+FE/6E0C: 80 40        BRA Routine_FE6E4E
 FE/6E0E: 18           CLC
 FE/6E0F: 01 06        ORA ($06,X)
 FE/6E11: 58           CLI
@@ -43,8 +43,9 @@ FE/6E28: 65 08        ADC $08
 FE/6E2A: 00 42        BRK $42
 FE/6E2C: C6 00        DEC $00
 FE/6E2E: FF 01 08 80  SBC $800801,X
-FE/6E32: 70 40        BVS $6E74
-FE/6E34: F0 00        BEQ $6E36
+FE/6E32: 70 40        BVS Routine_FE6E74
+FE/6E34: F0 00        BEQ Local_FE6E36
+Local_FE6E36:
 FE/6E36: 00 00        BRK $00
 FE/6E38: 00 7E        BRK $7E
 FE/6E3A: 4F 22 00 86  EOR $860022

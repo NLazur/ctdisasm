@@ -15,6 +15,7 @@ CD/1095: 85 59        STA $59
 CD/1097: AD FC C9     LDA $C9FC
 CD/109A: 29 3F        AND #$3F
 CD/109C: 8D FC C9     STA $C9FC
+Local_CD109F:
 CD/109F: AD 01 CA     LDA $CA01
 CD/10A2: 85 6D        STA $6D
 CD/10A4: C2 20        REP #$20
@@ -27,12 +28,13 @@ CD/10B1: A7 53        LDA [$53]
 CD/10B3: 29 FF 00     AND #$00FF
 CD/10B6: 8D AB CA     STA $CAAB
 CD/10B9: A0 01 00     LDY #$0001
+Local_CD10BC:
 CD/10BC: B7 53        LDA [$53],Y
 CD/10BE: 99 AD CA     STA $CAAD,Y
 CD/10C1: C8           INY
 CD/10C2: C8           INY
 CD/10C3: C0 21 00     CPY #$0021
-CD/10C6: D0 F4        BNE $10BC
+CD/10C6: D0 F4        BNE Local_CD10BC
 CD/10C8: AD 01 CA     LDA $CA01
 CD/10CB: 29 FF 00     AND #$00FF
 CD/10CE: 0A           ASL
@@ -47,17 +49,20 @@ CD/10DA: E2 20        SEP #$20
 CD/10DC: A8           TAY
 CD/10DD: 1A           INC
 CD/10DE: 85 5F        STA $5F
+Local_CD10E0:
 CD/10E0: C6 5F        DEC $5F
-CD/10E2: D0 0D        BNE $10F1
+CD/10E2: D0 0D        BNE Local_CD10F1
 CD/10E4: A9 08        LDA #$08
 CD/10E6: 85 5F        STA $5F
 CD/10E8: A6 61        LDX $61
 CD/10EA: E6 61        INC $61
 CD/10EC: BD AE CA     LDA $CAAE,X
 CD/10EF: 85 63        STA $63
+Local_CD10F1:
 CD/10F1: 06 63        ASL $63
-CD/10F3: B0 03        BCS $10F8
-CD/10F5: 4C 89 11     JMP $1189
+CD/10F3: B0 03        BCS Local_CD10F8
+CD/10F5: 4C 89 11     JMP Local_CD1189
+Local_CD10F8:
 CD/10F8: A5 65        LDA $65
 CD/10FA: 18           CLC
 CD/10FB: 65 6F        ADC $6F
@@ -80,20 +85,22 @@ CD/1113: E2 20        SEP #$20
 CD/1115: A7 53        LDA [$53]
 CD/1117: 85 67        STA $67
 CD/1119: AD AB CA     LDA $CAAB
-CD/111C: 10 1C        BPL $113A
+CD/111C: 10 1C        BPL Local_CD113A
 CD/111E: EE AD CA     INC $CAAD
 CD/1121: C2 20        REP #$20
 CD/1123: E6 53        INC $53
 CD/1125: AD AD CA     LDA $CAAD
 CD/1128: 29 1F 00     AND #$001F
-CD/112B: D0 08        BNE $1135
+CD/112B: D0 08        BNE Local_CD1135
 CD/112D: A5 53        LDA $53
 CD/112F: 38           SEC
 CD/1130: E9 20 00     SBC #$0020
 CD/1133: 85 53        STA $53
+Local_CD1135:
 CD/1135: 7B           TDC
 CD/1136: E2 20        SEP #$20
-CD/1138: 80 0D        BRA $1147
+CD/1138: 80 0D        BRA Local_CD1147
+Local_CD113A:
 CD/113A: C2 20        REP #$20
 CD/113C: A5 53        LDA $53
 CD/113E: 18           CLC
@@ -101,6 +108,7 @@ CD/113F: 6D AB CA     ADC $CAAB
 CD/1142: 85 53        STA $53
 CD/1144: 7B           TDC
 CD/1145: E2 20        SEP #$20
+Local_CD1147:
 CD/1147: A5 67        LDA $67
 CD/1149: 29 07        AND #$07
 CD/114B: 0A           ASL
@@ -127,11 +135,13 @@ CD/1169: 65 73        ADC $73
 CD/116B: AA           TAX
 CD/116C: BF 00 E2 CF  LDA $CFE200,X
 CD/1170: 25 75        AND $75
-CD/1172: F0 06        BEQ $117A
+CD/1172: F0 06        BEQ Local_CD117A
 CD/1174: A9 04        LDA #$04
 CD/1176: 85 75        STA $75
-CD/1178: 80 02        BRA $117C
+CD/1178: 80 02        BRA Local_CD117C
+Local_CD117A:
 CD/117A: 64 75        STZ $75
+Local_CD117C:
 CD/117C: A5 67        LDA $67
 CD/117E: C8           INY
 CD/117F: 29 C0        AND #$C0
@@ -139,16 +149,19 @@ CD/1181: 45 70        EOR $70
 CD/1183: 05 71        ORA $71
 CD/1185: 05 75        ORA $75
 CD/1187: 97 57        STA [$57],Y
+Local_CD1189:
 CD/1189: E6 65        INC $65
 CD/118B: A5 65        LDA $65
 CD/118D: C9 10        CMP #$10
-CD/118F: F0 03        BEQ $1194
-CD/1191: 4C E0 10     JMP $10E0
+CD/118F: F0 03        BEQ Local_CD1194
+CD/1191: 4C E0 10     JMP Local_CD10E0
+Local_CD1194:
 CD/1194: 64 65        STZ $65
 CD/1196: E6 66        INC $66
 CD/1198: C6 6D        DEC $6D
-CD/119A: F0 03        BEQ $119F
-CD/119C: 4C E0 10     JMP $10E0
+CD/119A: F0 03        BEQ Local_CD119F
+CD/119C: 4C E0 10     JMP Local_CD10E0
+Local_CD119F:
 CD/119F: C2 20        REP #$20
 CD/11A1: 18           CLC
 CD/11A2: A5 57        LDA $57
@@ -158,6 +171,7 @@ CD/11A9: EE FE C9     INC $C9FE
 CD/11AC: 7B           TDC
 CD/11AD: E2 20        SEP #$20
 CD/11AF: CE FC C9     DEC $C9FC
-CD/11B2: F0 03        BEQ $11B7
-CD/11B4: 4C 9F 10     JMP $109F
+CD/11B2: F0 03        BEQ Local_CD11B7
+CD/11B4: 4C 9F 10     JMP Local_CD109F
+Local_CD11B7:
 CD/11B7: 60           RTS

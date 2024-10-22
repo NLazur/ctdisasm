@@ -16,11 +16,11 @@ FD/38B9: 3D 7C 37     AND $377C,X
 FD/38BC: F5 00        SBC $00,X
 FD/38BE: 1F EE 95 FC  ORA $FC95EE,X
 FD/38C2: 07 8F        ORA [$8F]
-FD/38C4: F0 C7        BEQ $388D
+FD/38C4: F0 C7        BEQ Routine_FD388D
 FD/38C6: 00 F8        BRK $F8
 FD/38C8: 73 FC        ADC ($FC,S),Y
 FD/38CA: 01 FE        ORA ($FE,X)
-FD/38CC: 30 CF        BMI $389D
+FD/38CC: 30 CF        BMI Routine_FD389D
 FD/38CE: 1C 00 E3     TRB $E300
 FD/38D1: 9B           TXY
 FD/38D2: 60           RTS

@@ -3,6 +3,7 @@ Routine_CEEBD5:
 CE/EBD5: 7B           TDC
 CE/EBD6: AA           TAX
 CE/EBD7: A0 7C 03     LDY #$037C
+Local_CEEBDA:
 CE/EBDA: BD 62 C1     LDA $C162,X
 CE/EBDD: 49 FF        EOR #$FF
 CE/EBDF: 99 62 C1     STA $C162,Y
@@ -15,5 +16,5 @@ CE/EBE7: 88           DEY
 CE/EBE8: 88           DEY
 CE/EBE9: 88           DEY
 CE/EBEA: E0 C0 01     CPX #$01C0
-CE/EBED: D0 EB        BNE $EBDA
+CE/EBED: D0 EB        BNE Local_CEEBDA
 CE/EBEF: 60           RTS

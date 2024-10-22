@@ -1,7 +1,9 @@
 ; Bank: FE | Start Address: 14CF
 Routine_FE14CF:
-FE/14CF: F0 00        BEQ $14D1
-FE/14D1: 30 00        BMI $14D3
+FE/14CF: F0 00        BEQ Local_FE14D1
+Local_FE14D1:
+FE/14D1: 30 00        BMI Local_FE14D3
+Local_FE14D3:
 FE/14D3: 08           PHP
 FE/14D4: 38           SEC
 FE/14D5: 00 5F        BRK $5F
@@ -10,13 +12,14 @@ FE/14DA: 7F A0 A0 04  ADC $04A0A0,X
 FE/14DE: C0 C8 7F     CPY #$7FC8
 FE/14E1: 01 C0        ORA ($C0,X)
 FE/14E3: C0 E8 A0     CPY #$A0E8
-FE/14E6: B0 E0        BCS $14C8
+FE/14E6: B0 E0        BCS Routine_FE14C8
 FE/14E8: 00 00        BRK $00
 FE/14EA: B1 FF        LDA ($FF),Y
 FE/14EC: FF 83 61 0A  SBC $0A6183,X
-FE/14F0: 10 0F        BPL $1501
-FE/14F2: 80 01        BRA $14F5
+FE/14F0: 10 0F        BPL Routine_FE1501
+FE/14F2: 80 01        BRA Local_FE14F5
 FE/14F4: AB           PLB
+Local_FE14F5:
 FE/14F5: 21 92        AND ($92,X)
 FE/14F7: FE FB 04     INC $04FB,X
 FE/14FA: 1F 02 0F 11  ORA $110F02,X
@@ -60,8 +63,8 @@ FE/154F: 00 00        BRK $00
 FE/1551: D5 F1        CMP $F1,X
 FE/1553: 00 FE        BRK $FE
 FE/1555: 01 00        ORA ($00,X)
-FE/1557: 50 78        BVC $15D1
+FE/1557: 50 78        BVC Routine_FE15D1
 FE/1559: 00 A8        BRK $A8
-FE/155B: 50 A8        BVC $1505
+FE/155B: 50 A8        BVC Routine_FE1505
 FE/155D: 00 28        BRK $28
 FE/155F: 40           RTI

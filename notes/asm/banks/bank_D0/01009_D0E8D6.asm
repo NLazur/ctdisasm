@@ -5,7 +5,7 @@ D0/E8D7: 79 0A 7A     ADC $7A0A,Y
 D0/E8DA: 0A           ASL
 D0/E8DB: 7B           TDC
 D0/E8DC: F4 51 31     PEA $3151
-D0/E8DF: 80 12        BRA $E8F3
+D0/E8DF: 80 12        BRA Routine_D0E8F3
 D0/E8E1: 32 12        AND ($12)
 D0/E8E3: F2 13        SBC ($13)
 D0/E8E5: F3 13        SBC ($13,S),Y

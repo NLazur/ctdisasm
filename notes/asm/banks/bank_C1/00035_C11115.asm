@@ -4,6 +4,7 @@ C1/1115: 7B           TDC
 C1/1116: AA           TAX
 C1/1117: AD D5 95     LDA $95D5
 C1/111A: A8           TAY
+Local_C1111B:
 C1/111B: 18           CLC
 C1/111C: BF 04 F6 CC  LDA $CCF604,X
 C1/1120: 79 0C 1D     ADC $1D0C,Y
@@ -23,7 +24,7 @@ C1/1145: E8           INX
 C1/1146: E8           INX
 C1/1147: E8           INX
 C1/1148: E0 10 00     CPX #$0010
-C1/114B: D0 CE        BNE $111B
+C1/114B: D0 CE        BNE Local_C1111B
 C1/114D: A9 AA        LDA #$AA
 C1/114F: 8D 00 09     STA $0900
 C1/1152: 60           RTS

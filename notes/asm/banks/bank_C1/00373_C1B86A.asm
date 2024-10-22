@@ -7,7 +7,7 @@ C1/B873: 78           SEI
 C1/B874: 99 79 99     STA $9979,Y
 C1/B877: 7D 99 7E     ADC $7E99,X
 C1/B87A: 99 7F 99     STA $997F,Y
-C1/B87D: 80 99        BRA $B818
+C1/B87D: 80 99        BRA Routine_C1B818
 C1/B87F: 81 99        STA ($99,X)
 C1/B881: B4 99        LDY $99,X
 C1/B883: B4 99        LDY $99,X
@@ -48,6 +48,7 @@ C1/B8CC: A5 41        LDA $41
 C1/B8CE: A5 4B        LDA $4B
 C1/B8D0: A5 55        LDA $55
 C1/B8D2: A5 5F        LDA $5F
+Local_C1B8D4:
 C1/B8D4: A5 69        LDA $69
 C1/B8D6: A5 73        LDA $73
 C1/B8D8: A5 A3        LDA $A3
@@ -77,6 +78,7 @@ C1/B906: AA           TAX
 C1/B907: 61 AA        ADC ($AA,X)
 C1/B909: AB           PLB
 C1/B90A: AA           TAX
+Local_C1B90B:
 C1/B90B: B6 AA        LDX $AA,Y
 C1/B90D: C1 AA        CMP ($AA,X)
 C1/B90F: CC AA D7     CPY $D7AA
@@ -90,7 +92,7 @@ C1/B91E: AB           PLB
 C1/B91F: 64 AB        STZ $AB
 C1/B921: 6F AB 7A AB  ADC $AB7AAB
 C1/B925: 85 AB        STA $AB
-C1/B927: 90 AB        BCC $B8D4
+C1/B927: 90 AB        BCC Local_C1B8D4
 C1/B929: 9B           TXY
 C1/B92A: AB           PLB
 C1/B92B: C9 AB        CMP #$AB
@@ -110,12 +112,13 @@ C1/B949: C1 AF        CMP ($AF,X)
 C1/B94B: CC AF D7     CPY $D7AF
 C1/B94E: AF E2 AF ED  LDA $EDAFE2
 C1/B952: AF F8 AF 03  LDA $03AFF8
-C1/B956: B0 0E        BCS $B966
-C1/B958: B0 19        BCS $B973
-C1/B95A: B0 24        BCS $B980
-C1/B95C: B0 2F        BCS $B98D
-C1/B95E: B0 3A        BCS $B99A
-C1/B960: B0 A9        BCS $B90B
+C1/B956: B0 0E        BCS Local_C1B966
+C1/B958: B0 19        BCS Routine_C1B973
+C1/B95A: B0 24        BCS Routine_C1B980
+C1/B95C: B0 2F        BCS Routine_C1B98D
+C1/B95E: B0 3A        BCS Routine_C1B99A
+C1/B960: B0 A9        BCS Local_C1B90B
 C1/B962: 02 20        COP $20
 C1/B964: 03 00        ORA $00,S
+Local_C1B966:
 C1/B966: 6B           RTL

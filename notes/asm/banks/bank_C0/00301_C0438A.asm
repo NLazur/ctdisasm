@@ -9,15 +9,17 @@ C0/4396: 29 03        AND #$03
 C0/4398: 9D 00 16     STA $1600,X
 C0/439B: A5 04        LDA $04
 C0/439D: 89 08        BIT #$08
-C0/439F: D0 07        BNE $43A8
+C0/439F: D0 07        BNE Local_C043A8
 C0/43A1: A9 FF        LDA #$FF
 C0/43A3: 9D 80 18     STA $1880,X
-C0/43A6: 80 05        BRA $43AD
+C0/43A6: 80 05        BRA Local_C043AD
+Local_C043A8:
 C0/43A8: A9 7F        LDA #$7F
 C0/43AA: 9D 80 18     STA $1880,X
+Local_C043AD:
 C0/43AD: A5 04        LDA $04
 C0/43AF: 89 04        BIT #$04
-C0/43B1: D0 08        BNE $43BB
+C0/43B1: D0 08        BNE Routine_C043BB
 C0/43B3: A9 80        LDA #$80
 C0/43B5: 9D 00 18     STA $1800,X
 C0/43B8: BB           TYX

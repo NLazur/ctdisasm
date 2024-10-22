@@ -3,14 +3,14 @@ Routine_FD7003:
 FD/7003: E0 35        CPX #$35
 FD/7005: 7F 7F 00 BE  ADC $BE007F,X
 FD/7009: BE FC FC     LDX $FCFC,Y
-FD/700C: F0 F0        BEQ $6FFE
+FD/700C: F0 F0        BEQ Routine_FD6FFE
 FD/700E: E0 E0        CPX #$E0
 FD/7010: 00 85        BRK $85
 FD/7012: FA           PLX
 FD/7013: 8B           PHB
 FD/7014: F4 84 F8     PEA $F884
 FD/7017: 09 F0 00     ORA #$00F0
-FD/701A: 10 E3        BPL $6FFF
+FD/701A: 10 E3        BPL Routine_FD6FFF
 FD/701C: 28           PLP
 FD/701D: C7 73        CMP [$73]
 FD/701F: 8C E7 98     STY $98E7
@@ -18,7 +18,7 @@ FD/7022: 03 61        ORA $61,S
 FD/7024: 73 0A        ADC ($0A,S),Y
 FD/7026: 14 F0        TRB $F0
 FD/7028: 00 33        BRK $33
-FD/702A: F0 99        BEQ $6FC5
+FD/702A: F0 99        BEQ Routine_FD6FC5
 FD/702C: 78           SEI
 FD/702D: 00 C9        BRK $C9
 FD/702F: 38           SEC
@@ -31,7 +31,7 @@ FD/703D: E7 00        SBC [$00]
 FD/703F: 2A           ROL
 FD/7040: F7 84        SBC [$84],Y
 FD/7042: 07 FF        ORA [$FF]
-FD/7044: 20 02 9F     JSR $9F02
+FD/7044: 20 02 9F     JSR Routine_FD9F02
 FD/7047: 42 08        WDM $08
 FD/7049: 28           PLP
 FD/704A: 34 14        BIT $14,X

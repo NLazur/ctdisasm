@@ -21,7 +21,7 @@ D0/9E34: 0F 70 4F 70  ORA $704F70
 D0/9E38: 00 00        BRK $00
 D0/9E3A: 00 00        BRK $00
 D0/9E3C: 00 00        BRK $00
-D0/9E3E: 80 80        BRA $9DC0
+D0/9E3E: 80 80        BRA Routine_D09DC0
 D0/9E40: 00 00        BRK $00
 D0/9E42: 00 00        BRK $00
 D0/9E44: 00 00        BRK $00
@@ -50,9 +50,9 @@ D0/9E77: C7 69        CMP [$69]
 D0/9E79: 8F 53 9F AF  STA $AF9F53
 D0/9E7D: 3F A8 38 FE  AND $FE38A8,X
 D0/9E81: FC FC F8     JSR ($F8FC,X)
-D0/9E84: F0 E0        BEQ $9E66
+D0/9E84: F0 E0        BEQ Routine_D09E66
 D0/9E86: C0 C7 AF     CPY #$AFC7
-D0/9E89: D0 FF        BNE $9E8A
+D0/9E89: D0 FF        BNE Routine_D09E8A
 D0/9E8B: 00 FF        BRK $FF
 D0/9E8D: 00 FF        BRK $FF
 D0/9E8F: 00 FF        BRK $FF
@@ -63,7 +63,7 @@ D0/9E97: 74 00        STZ $00,X
 D0/9E99: 00 00        BRK $00
 D0/9E9B: 00 00        BRK $00
 D0/9E9D: 00 00        BRK $00
-D0/9E9F: 80 14        BRA $9EB5
+D0/9E9F: 80 14        BRA Routine_D09EB5
 D0/9EA1: 0E 09 17     ASL $1709
 D0/9EA4: 0A           ASL
 D0/9EA5: 15 16        ORA $16,X
@@ -106,9 +106,10 @@ D0/9EF9: 03 01        ORA $01,S
 D0/9EFB: 00 00        BRK $00
 D0/9EFD: 00 00        BRK $00
 D0/9EFF: 00 EF        BRK $EF
-D0/9F01: 70 AF        BVS $9EB2
-D0/9F03: 30 EF        BMI $9EF4
-D0/9F05: 30 47        BMI $9F4E
+D0/9F01: 70 AF        BVS Routine_D09EB2
+D0/9F03: 30 EF        BMI Routine_D09EF4
+D0/9F05: 30 47        BMI Routine_D09F4E
+Local_D09F07:
 D0/9F07: 98           TYA
 D0/9F08: 47 98        EOR [$98]
 D0/9F0A: D3 9C        CMP ($9C,S),Y
@@ -117,7 +118,7 @@ D0/9F0E: 2B           PLD
 D0/9F0F: 4E 80 C0     LSR $C080
 D0/9F12: C0 E0 E0     CPY #$E0E0
 D0/9F15: E0 70        CPX #$70
-D0/9F17: 70 07        BVS $9F20
+D0/9F17: 70 07        BVS Routine_D09F20
 D0/9F19: 07 0E        ORA [$0E]
 D0/9F1B: 0F 0E 0F 0F  ORA $0F0F0E
 D0/9F1F: 0F 07 07 07  ORA $070707
@@ -129,7 +130,7 @@ D0/9F2C: 07 07        ORA [$07]
 D0/9F2E: 07 03        ORA [$03]
 D0/9F30: 43 FC        EOR $FC,S
 D0/9F32: 2E C0 0A     ROL $0AC0
-D0/9F35: F0 D0        BEQ $9F07
+D0/9F35: F0 D0        BEQ Local_D09F07
 D0/9F37: E2 A8        SEP #$A8
 D0/9F39: CA           DEX
 D0/9F3A: DD 9A 6C     CMP $6C9A,X
@@ -154,7 +155,7 @@ D0/9F64: DF E0 0F F0  CMP $F00FE0,X
 D0/9F68: 07 F8        ORA [$F8]
 D0/9F6A: 4F F0 EF F0  EOR $F0EFF0
 D0/9F6E: 77 78        ADC [$78],Y
-D0/9F70: 80 80        BRA $9EF2
+D0/9F70: 80 80        BRA Routine_D09EF2
 D0/9F72: 00 00        BRK $00
 D0/9F74: 00 00        BRK $00
 D0/9F76: 00 80        BRK $80
@@ -171,9 +172,9 @@ D0/9F8A: 03 03        ORA $03,S
 D0/9F8C: 03 03        ORA $03,S
 D0/9F8E: 03 01        ORA $01,S
 D0/9F90: 1C E1 CF     TRB $CFE1
-D0/9F93: F0 3F        BEQ $9FD4
+D0/9F93: F0 3F        BEQ Local_D09FD4
 D0/9F95: C0 67        CPY #$67
-D0/9F97: 80 A9        BRA $9F42
+D0/9F97: 80 A9        BRA Routine_D09F42
 D0/9F99: C6 D2        DEC $D2
 D0/9F9B: ED 45 FA     SBC $FA45
 D0/9F9E: 1F E0 FE FF  ORA $FFFEE0,X
@@ -185,7 +186,8 @@ D0/9FAD: 5F 59 5E 3B  EOR $3B5E59,X
 D0/9FB1: 3C B7 38     BIT $38B7,X
 D0/9FB4: 93 1C        STA ($1C,S),Y
 D0/9FB6: 31 3E        AND ($3E),Y
-D0/9FB8: 80 00        BRA $9FBA
+D0/9FB8: 80 00        BRA Local_D09FBA
+Local_D09FBA:
 D0/9FBA: A0 A0        LDY #$A0
 D0/9FBC: C0 C0        CPY #$C0
 D0/9FBE: E0 C0        CPX #$C0
@@ -197,8 +199,9 @@ D0/9FCA: 07 14        ORA [$14]
 D0/9FCC: 1B           TCS
 D0/9FCD: 14 0B        TRB $0B
 D0/9FCF: 04 70        TSB $70
-D0/9FD1: 30 38        BMI $A00B
+D0/9FD1: 30 38        BMI Local_D0A00B
 D0/9FD3: 38           SEC
+Local_D09FD4:
 D0/9FD4: 18           CLC
 D0/9FD5: 18           CLC
 D0/9FD6: 18           CLC
@@ -216,7 +219,8 @@ D0/9FE8: 00 00        BRK $00
 D0/9FEA: 01 01        ORA ($01,X)
 D0/9FEC: 0E 0F 23     ASL $230F
 D0/9FEF: 3F F0 F0 80  AND $80F0F0,X
-D0/9FF3: 80 00        BRA $9FF5
+D0/9FF3: 80 00        BRA Local_D09FF5
+Local_D09FF5:
 D0/9FF5: 00 00        BRK $00
 D0/9FF7: 00 33        BRK $33
 D0/9FF9: 3C DF E0     BIT $E0DF,X
@@ -229,6 +233,7 @@ D0/A006: 00 00        BRK $00
 D0/A008: C8           INY
 D0/A009: 38           SEC
 D0/A00A: FA           PLX
+Local_D0A00B:
 D0/A00B: 06 7D        ASL $7D
 D0/A00D: 83 BF        STA $BF,S
 D0/A00F: C1 5E        CMP ($5E,X)
@@ -260,7 +265,7 @@ D0/A03F: 01 03        ORA ($03,X)
 D0/A041: 03 06        ORA $06,S
 D0/A043: 06 08        ASL $08
 D0/A045: 08           PHP
-D0/A046: 10 10        BPL $A058
+D0/A046: 10 10        BPL Routine_D0A058
 D0/A048: 06 06        ASL $06
 D0/A04A: 18           CLC
 D0/A04B: 18           CLC

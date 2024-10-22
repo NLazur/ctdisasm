@@ -1,7 +1,7 @@
 ; Bank: C2 | Start Address: 58D0
 Routine_C258D0:
 C2/58D0: C9 21        CMP #$21
-C2/58D2: 90 29        BCC $58FD
+C2/58D2: 90 29        BCC Local_C258FD
 C2/58D4: 85 3B        STA $3B
 C2/58D6: 38           SEC
 C2/58D7: E9 21        SBC #$21
@@ -21,7 +21,8 @@ C2/58F2: E6 37        INC $37
 C2/58F4: E2 20        SEP #$20
 C2/58F6: A9 01        LDA #$01
 C2/58F8: 85 30        STA $30
-C2/58FA: 4C F5 5B     JMP $5BF5
+C2/58FA: 4C F5 5B     JMP Routine_C25BF5
+Local_C258FD:
 C2/58FD: A8           TAY
 C2/58FE: 0A           ASL
 C2/58FF: AA           TAX
@@ -38,7 +39,7 @@ C2/591F: 85 59        STA $59
 C2/5921: C8           INY
 C2/5922: 59 14 5B     EOR $5B14,Y
 C2/5925: 26 5A        ROL $5A
-C2/5927: 4C 5A 15     JMP $155A
+C2/5927: 4C 5A 15     JMP Routine_C2155A
 C2/592A: 5B           TCD
 C2/592B: 15 5B        ORA $5B,X
 C2/592D: 15 5B        ORA $5B,X
@@ -48,9 +49,9 @@ C2/5933: 15 5B        ORA $5B,X
 C2/5935: 15 5B        ORA $5B,X
 C2/5937: 3B           TSC
 C2/5938: 5B           TCD
-C2/5939: 70 5B        BVS $5996
-C2/593B: 70 5B        BVS $5998
-C2/593D: 70 5B        BVS $599A
+C2/5939: 70 5B        BVS Routine_C25996
+C2/593B: 70 5B        BVS Routine_C25998
+C2/593D: 70 5B        BVS Routine_C2599A
 C2/593F: 56 5B        LSR $5B,X
 C2/5941: 9B           TXY
 C2/5942: 5B           TCD

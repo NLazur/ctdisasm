@@ -5,7 +5,7 @@ D1/B31C: 69 30        ADC #$30
 D1/B31E: 31 32        AND ($32),Y
 D1/B320: 33 73        AND ($73,S),Y
 D1/B322: 72 71        ADC ($71)
-D1/B324: 70 2C        BVS $B352
+D1/B324: 70 2C        BVS Local_D1B352
 D1/B326: 2D 2E 2F     AND $2F2E
 D1/B329: 3D 7D 6F     AND $6F7D,X
 D1/B32C: 6E 6D 6C     ROR $6C6D
@@ -24,12 +24,13 @@ D1/B34A: FA           PLX
 D1/B34B: F9 F8 B4     SBC $B4F8,Y
 D1/B34E: B5 B6        LDA $B6,X
 D1/B350: B7 BE        LDA [$BE],Y
+Local_D1B352:
 D1/B352: FE F7 F6     INC $F6F7,X
 D1/B355: F5 F4        SBC $F4,X
 D1/B357: AC AD AE     LDY $AEAD
 D1/B35A: AF BD FD EF  LDA $EFFDBD
 D1/B35E: EE ED EC     INC $ECED
-D1/B361: B0 B1        BCS $B314
+D1/B361: B0 B1        BCS Routine_D1B314
 D1/B363: B2 B3        LDA ($B3)
 D1/B365: F3 F2        SBC ($F2,S),Y
 D1/B367: F1 F0        SBC ($F0),Y
@@ -78,7 +79,8 @@ D1/B3E7: C0 03        CPY #$03
 D1/B3E9: C0 03        CPY #$03
 D1/B3EB: C0 03        CPY #$03
 D1/B3ED: C0 01        CPY #$01
-D1/B3EF: 80 00        BRA $B3F1
+D1/B3EF: 80 00        BRA Local_D1B3F1
+Local_D1B3F1:
 D1/B3F1: 01 02        ORA ($02,X)
 D1/B3F3: 42 41        WDM $41
 D1/B3F5: 40           RTI

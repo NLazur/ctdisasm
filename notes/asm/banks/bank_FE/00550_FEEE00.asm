@@ -8,7 +8,7 @@ FE/EE06: 00 29        BRK $29
 FE/EE08: 08           PHP
 FE/EE09: 00 85        BRK $85
 FE/EE0B: 00 C2        BRK $C2
-FE/EE0D: 80 4D        BRA $EE5C
+FE/EE0D: 80 4D        BRA Routine_FEEE5C
 FE/EE0F: 00 69        BRK $69
 FE/EE11: 54 00 80     MVN $00,$80
 FE/EE14: 02 00        COP $00
@@ -27,14 +27,14 @@ FE/EE2B: 08           PHP
 FE/EE2C: 62 13 42     PER $FE3042
 FE/EE2F: 58           CLI
 FE/EE30: 25 71        AND $71
-FE/EE32: 10 64        BPL $EE98
+FE/EE32: 10 64        BPL Routine_FEEE98
 FE/EE34: 09 00 08     ORA #$0800
 FE/EE37: 00 20        BRK $20
 FE/EE39: 06 06        ASL $06
 FE/EE3B: 41 09        EOR ($09,X)
 FE/EE3D: 04 00        TSB $00
 FE/EE3F: 04 10        TSB $10
-FE/EE41: 30 01        BMI $EE44
+FE/EE41: 30 01        BMI Routine_FEEE44
 FE/EE43: 04 22        TSB $22
 FE/EE45: 63 05        ADC $05,S
 FE/EE47: 60           RTS

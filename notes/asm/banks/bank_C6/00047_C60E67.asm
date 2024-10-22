@@ -1,7 +1,7 @@
 ; Bank: C6 | Start Address: 0E67
 Routine_C60E67:
 C6/0E67: EC 02 7C     CPX $7C02
-C6/0E6A: F0 FF        BEQ $0E6B
+C6/0E6A: F0 FF        BEQ Routine_C60E6B
 C6/0E6C: 01 F0        ORA ($F0,X)
 C6/0E6E: 01 F0        ORA ($F0,X)
 C6/0E70: 01 F0        ORA ($F0,X)
@@ -11,28 +11,31 @@ C6/0E76: 01 F0        ORA ($F0,X)
 C6/0E78: 01 F0        ORA ($F0,X)
 C6/0E7A: 01 F0        ORA ($F0,X)
 C6/0E7C: FF 01 F0 01  SBC $01F001,X
-C6/0E80: F0 01        BEQ $0E83
-C6/0E82: F0 01        BEQ $0E85
-C6/0E84: F0 01        BEQ $0E87
-C6/0E86: F0 01        BEQ $0E89
-C6/0E88: F0 F4        BEQ $0E7E
+C6/0E80: F0 01        BEQ Routine_C60E83
+C6/0E82: F0 01        BEQ Routine_C60E85
+C6/0E84: F0 01        BEQ Routine_C60E87
+C6/0E86: F0 01        BEQ Routine_C60E89
+C6/0E88: F0 F4        BEQ Routine_C60E7E
 C6/0E8A: C1 40        CMP ($40,X)
 C6/0E8C: F1 05        SBC ($05),Y
 C6/0E8E: E3 06        SBC $06,S
 C6/0E90: E7 F4        SBC [$F4]
 C6/0E92: B1 06        LDA ($06),Y
 C6/0E94: 75 01        ADC $01,X
-C6/0E96: F0 00        BEQ $0E98
+C6/0E96: F0 00        BEQ Local_C60E98
+Local_C60E98:
 C6/0E98: 00 00        BRK $00
+Local_C60E9A:
 C6/0E9A: C8           INY
 C6/0E9B: 0F FE 00 01  ORA $0100FE
-C6/0E9F: F0 01        BEQ $0EA2
-C6/0EA1: F0 01        BEQ $0EA4
-C6/0EA3: F0 01        BEQ $0EA6
-C6/0EA5: F0 01        BEQ $0EA8
-C6/0EA7: F0 01        BEQ $0EAA
-C6/0EA9: F0 01        BEQ $0EAC
-C6/0EAB: F0 00        BEQ $0EAD
+C6/0E9F: F0 01        BEQ Routine_C60EA2
+C6/0EA1: F0 01        BEQ Routine_C60EA4
+C6/0EA3: F0 01        BEQ Routine_C60EA6
+C6/0EA5: F0 01        BEQ Routine_C60EA8
+C6/0EA7: F0 01        BEQ Routine_C60EAA
+C6/0EA9: F0 01        BEQ Routine_C60EAC
+C6/0EAB: F0 00        BEQ Local_C60EAD
+Local_C60EAD:
 C6/0EAD: 00 00        BRK $00
 C6/0EAF: 01 01        ORA ($01,X)
 C6/0EB1: 02 03        COP $03
@@ -46,9 +49,10 @@ C6/0EBF: 0E 01 00     ASL $0001
 C6/0EC2: 03 02        ORA $02,S
 C6/0EC4: 00 0F        BRK $0F
 C6/0EC6: 02 10        COP $10
-C6/0EC8: 10 00        BPL $0ECA
+C6/0EC8: 10 00        BPL Local_C60ECA
+Local_C60ECA:
 C6/0ECA: 1F 00 1F 00  ORA $001F00,X
-C6/0ECE: 70 B3        BVS $0E83
+C6/0ECE: 70 B3        BVS Routine_C60E83
 C6/0ED0: 98           TYA
 C6/0ED1: 69 00 D4     ADC #$D400
 C6/0ED4: 25 3C        AND $3C
@@ -57,35 +61,38 @@ C6/0ED8: E4 94        CPX $94
 C6/0EDA: 6C 00 9C     JMP ($9C00)
 C6/0EDD: 6C 14 EF     JMP ($EF14)
 C6/0EE0: F1 0E        SBC ($0E),Y
+Local_C60EE2:
 C6/0EE2: F8           SED
 C6/0EE3: 07 10        ORA [$10]
 C6/0EE5: F4 0B FC     PEA $FC0B
 C6/0EE8: 03 02        ORA $02,S
-C6/0EEA: 30 F6        BMI $0EE2
+C6/0EEA: 30 F6        BMI Local_C60EE2
 C6/0EEC: 09 00 00     ORA #$0000
 C6/0EEF: 00 20        BRK $20
-C6/0EF1: 80 00        BRA $0EF3
+C6/0EF1: 80 00        BRA Local_C60EF3
+Local_C60EF3:
 C6/0EF3: C0 10 60     CPY #$6010
 C6/0EF6: 1E 80 80     ASL $8080,X
 C6/0EF9: 14 A2        TRB $A2
 C6/0EFB: 33 C4        AND ($C4,S),Y
 C6/0EFD: 03 C0        ORA $C0,S
-C6/0EFF: 10 00        BPL $0F01
+C6/0EFF: 10 00        BPL Local_C60F01
+Local_C60F01:
 C6/0F01: 00 C0        BRK $C0
 C6/0F03: 00 E0        BRK $E0
-C6/0F05: 10 F0        BPL $0EF7
+C6/0F05: 10 F0        BPL Routine_C60EF7
 C6/0F07: 18           CLC
 C6/0F08: FE 12 20     INC $2012,X
 C6/0F0B: FC 37 F9     JSR ($F937,X)
 C6/0F0E: 3E C1 71     ROL $71C1,X
-C6/0F11: 90 80        BCC $0E93
-C6/0F13: 80 E2        BRA $0EF7
+C6/0F11: 90 80        BCC Routine_C60E93
+C6/0F13: 80 E2        BRA Routine_C60EF7
 C6/0F15: FC 80 A0     JSR ($A080,X)
-C6/0F18: 80 80        BRA $0E9A
+C6/0F18: 80 80        BRA Local_C60E9A
 C6/0F1A: 00 11        BRK $11
-C6/0F1C: B0 01        BCS $0F1F
-C6/0F1E: F0 01        BEQ $0F21
-C6/0F20: F0 1F        BEQ $0F41
+C6/0F1C: B0 01        BCS Routine_C60F1F
+C6/0F1E: F0 01        BEQ Routine_C60F21
+C6/0F20: F0 1F        BEQ Local_C60F41
 C6/0F22: 01 F0        ORA ($F0,X)
 C6/0F24: 01 F0        ORA ($F0,X)
 C6/0F26: 01 F0        ORA ($F0,X)
@@ -94,6 +101,7 @@ C6/0F2A: 07 80        ORA [$80]
 C6/0F2C: 02 01        COP $01
 C6/0F2E: 06 00        ASL $00
 C6/0F30: 07 07        ORA [$07]
+Local_C60F32:
 C6/0F32: 01 05        ORA ($05,X)
 C6/0F34: 02 05        COP $05
 C6/0F36: 08           PHP
@@ -101,6 +109,7 @@ C6/0F37: 09 0A 06     ORA #$060A
 C6/0F3A: 1E 30 06     ASL $0630,X
 C6/0F3D: 02 00        COP $00
 C6/0F3F: 07 00        ORA [$00]
+Local_C60F41:
 C6/0F41: 0D 02 00     ORA $0002
 C6/0F44: 0F 00 3C 2C  ORA $2C3C00
 C6/0F48: 7F 5F F0 7F  ADC $7FF05F,X
@@ -115,7 +124,7 @@ C6/0F60: 0E 04 1F     ASL $1F04
 C6/0F63: 44 8F 41     MVP $8F,$41
 C6/0F66: 8E 04 CD     STX $CD04
 C6/0F69: 3E 4E 00     ROL $004E,X
-C6/0F6C: 10 C4        BPL $0F32
+C6/0F6C: 10 C4        BPL Local_C60F32
 C6/0F6E: DC 16 BE     JMP [$BE16]
 C6/0F71: 00 13        BRK $13
 C6/0F73: 67 B9        ADC [$B9]

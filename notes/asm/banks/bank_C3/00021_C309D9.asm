@@ -31,14 +31,17 @@ C3/0A0B: E2 20        SEP #$20
 C3/0A0D: 5A           PHY
 C3/0A0E: 64 F2        STZ $F2
 C3/0A10: A0 08 00     LDY #$0008
+Local_C30A13:
 C3/0A13: 5A           PHY
 C3/0A14: 64 F4        STZ $F4
 C3/0A16: A0 02 00     LDY #$0002
+Local_C30A19:
 C3/0A19: 5A           PHY
 C3/0A1A: 64 F6        STZ $F6
 C3/0A1C: A0 08 00     LDY #$0008
+Local_C30A1F:
 C3/0A1F: 8A           TXA
-C3/0A20: D0 15        BNE $0A37
+C3/0A20: D0 15        BNE Local_C30A37
 C3/0A22: A9 A9        LDA #$A9
 C3/0A24: 8D 80 21     STA $2180
 C3/0A27: 7B           TDC
@@ -48,6 +51,7 @@ C3/0A2D: 8D 80 21     STA $2180
 C3/0A30: E6 FB        INC $FB
 C3/0A32: A9 5B        LDA #$5B
 C3/0A34: 8D 80 21     STA $2180
+Local_C30A37:
 C3/0A37: A9 AD        LDA #$AD
 C3/0A39: 8D 80 21     STA $2180
 C3/0A3C: C2 20        REP #$20
@@ -75,19 +79,19 @@ C3/0A62: 18           CLC
 C3/0A63: 69 20        ADC #$20
 C3/0A65: 85 F6        STA $F6
 C3/0A67: 88           DEY
-C3/0A68: D0 B5        BNE $0A1F
+C3/0A68: D0 B5        BNE Local_C30A1F
 C3/0A6A: 7A           PLY
 C3/0A6B: E6 F4        INC $F4
 C3/0A6D: E6 F4        INC $F4
 C3/0A6F: 88           DEY
-C3/0A70: D0 A7        BNE $0A19
+C3/0A70: D0 A7        BNE Local_C30A19
 C3/0A72: 7A           PLY
 C3/0A73: A5 F2        LDA $F2
 C3/0A75: 18           CLC
 C3/0A76: 69 04        ADC #$04
 C3/0A78: 85 F2        STA $F2
 C3/0A7A: 88           DEY
-C3/0A7B: D0 96        BNE $0A13
+C3/0A7B: D0 96        BNE Local_C30A13
 C3/0A7D: 7A           PLY
 C3/0A7E: C8           INY
 C3/0A7F: C8           INY

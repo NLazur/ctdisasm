@@ -26,6 +26,7 @@ D0/5581: 08           PHP
 D0/5582: 08           PHP
 D0/5583: 08           PHP
 D0/5584: 08           PHP
+Local_D05585:
 D0/5585: 08           PHP
 D0/5586: 08           PHP
 D0/5587: 08           PHP
@@ -41,7 +42,7 @@ D0/5598: 13 04        ORA ($04,S),Y
 D0/559A: 11 06        ORA ($06),Y
 D0/559C: 09 02 07     ORA #$0702
 D0/559F: 03 08        ORA $08,S
-D0/55A1: 10 10        BPL $55B3
+D0/55A1: 10 10        BPL Local_D055B3
 D0/55A3: 18           CLC
 D0/55A4: 18           CLC
 D0/55A5: 18           CLC
@@ -50,6 +51,7 @@ D0/55A9: 88           DEY
 D0/55AA: EC 18 F8     CPX $F818
 D0/55AD: 0C D4 20     TSB $20D4
 D0/55B0: C8           INY
-D0/55B1: 30 58        BMI $560B
-D0/55B3: B0 D0        BCS $5585
+D0/55B1: 30 58        BMI Routine_D0560B
+Local_D055B3:
+D0/55B3: B0 D0        BCS Local_D05585
 D0/55B5: 40           RTI

@@ -2,6 +2,7 @@
 Routine_FDEA11:
 FD/EA11: B9 22 05     LDA $0522,Y
 FD/EA14: A8           TAY
+Local_FDEA15:
 FD/EA15: BF 01 20 7E  LDA $7E2001,X
 FD/EA19: 29 7C        AND #$7C
 FD/EA1B: 85 0C        STA $0C
@@ -35,5 +36,5 @@ FD/EA54: E2 20        SEP #$20
 FD/EA56: E8           INX
 FD/EA57: E8           INX
 FD/EA58: 88           DEY
-FD/EA59: D0 BA        BNE $EA15
+FD/EA59: D0 BA        BNE Local_FDEA15
 FD/EA5B: 60           RTS

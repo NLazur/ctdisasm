@@ -1,7 +1,7 @@
 ; Bank: CE | Start Address: 60D4
 Routine_CE60D4:
 CE/60D4: 04 1B        TSB $1B
-CE/60D6: 10 24        BPL $60FC
+CE/60D6: 10 24        BPL Routine_CE60FC
 CE/60D8: 03 71        ORA $71,S
 CE/60DA: 00 25        BRK $25
 CE/60DC: 03 0D        ORA $0D,S
@@ -17,7 +17,7 @@ CE/60ED: 0F 40 04 1B  ORA $1B0440
 CE/60F1: 11 24        ORA ($24),Y
 CE/60F3: 03 71        ORA $71,S
 CE/60F5: 00 D0        BRK $D0
-CE/60F7: 80 C0        BRA $60B9
+CE/60F7: 80 C0        BRA Routine_CE60B9
 CE/60F9: 00 06        BRK $06
 CE/60FB: 61 5D        ADC ($5D,X)
 CE/60FD: 61 87        ADC ($87,X)
@@ -29,7 +29,7 @@ CE/6108: 0C 72 0B     TSB $0B72
 CE/610B: 03 12        ORA $12,S
 CE/610D: 02 26        COP $26
 CE/610F: 27 D9        AND [$D9]
-CE/6111: 30 7A        BMI $618D
+CE/6111: 30 7A        BMI Local_CE618D
 CE/6113: 64 00        STZ $00
 CE/6115: 98           TYA
 CE/6116: 00 01        BRK $01
@@ -42,7 +42,7 @@ CE/6120: 1F 05 36 85  ORA $853605,X
 CE/6124: C0 0B A8     CPY #$A80B
 CE/6127: 18           CLC
 CE/6128: 85 40        STA $40
-CE/612A: 20 08 36     JSR $3608
+CE/612A: 20 08 36     JSR Routine_CE3608
 CE/612D: A8           TAY
 CE/612E: 0C A4 03     TSB $03A4
 CE/6131: 03 0C        ORA $0C,S
@@ -53,13 +53,13 @@ CE/6137: D4 00        PEI $00
 CE/6139: 9A           TXS
 CE/613A: 00 2D        BRK $2D
 CE/613C: 35 7B        AND $7B,X
-CE/613E: 4C 00 9A     JMP $9A00
+CE/613E: 4C 00 9A     JMP Routine_CE9A00
 CE/6141: 01 2B        ORA ($2B,X)
 CE/6143: A5 29        LDA $29
 CE/6145: 33 19        AND ($19,S),Y
-CE/6147: 30 1F        BMI $6168
-CE/6149: 10 1A        BPL $6165
-CE/614B: 20 0A 72     JSR $720A
+CE/6147: 30 1F        BMI Local_CE6168
+CE/6149: 10 1A        BPL Local_CE6165
+CE/614B: 20 0A 72     JSR Routine_CE720A
 CE/614E: 0D 06 22     ORA $2206
 CE/6151: 2A           ROL
 CE/6152: 12 19        ORA ($19)
@@ -72,20 +72,22 @@ CE/615D: 72 0A        ADC ($0A)
 CE/615F: 06 23        ASL $23
 CE/6161: 23 01        AND $01,S
 CE/6163: 24 01        BIT $01
+Local_CE6165:
 CE/6165: 7A           PLY
 CE/6166: 51 01        EOR ($01),Y
+Local_CE6168:
 CE/6168: 02 22        COP $22
 CE/616A: 0B           PHD
 CE/616B: 24 02        BIT $02
 CE/616D: 02 24        COP $24
 CE/616F: 85 C0        STA $C0
 CE/6171: 27 D9        AND [$D9]
-CE/6173: 30 A8        BMI $611D
+CE/6173: 30 A8        BMI Routine_CE611D
 CE/6175: 0C 72 0D     TSB $0D72
 CE/6178: 7A           PLY
 CE/6179: B3 01        LDA ($01,S),Y
 CE/617B: 06 35        ASL $35
-CE/617D: 20 14 12     JSR $1214
+CE/617D: 20 14 12     JSR Routine_CE1214
 CE/6180: 1A           INC
 CE/6181: 06 03        ASL $03
 CE/6183: 28           PLP
@@ -94,6 +96,7 @@ CE/6185: 36 00        ROL $00,X
 CE/6187: 23 02        AND $02,S
 CE/6189: 2D 80 12     AND $1280
 CE/618C: A8           TAY
+Local_CE618D:
 CE/618D: 1E 00 35     ASL $3500,X
 CE/6190: 00 1B        BRK $1B
 CE/6192: 03 72        ORA $72,S
@@ -109,7 +112,7 @@ CE/61A8: 41 1E        EOR ($1E,X)
 CE/61AA: 02 30        COP $30
 CE/61AC: 03 10        ORA $10,S
 CE/61AE: 35 00        AND $00,X
-CE/61B0: D0 80        BNE $6132
+CE/61B0: D0 80        BNE Routine_CE6132
 CE/61B2: C0 80 C2     CPY #$C280
 CE/61B5: 61 2D        ADC ($2D,X)
 CE/61B7: 62 5D 62     PER $CEC417
@@ -121,7 +124,7 @@ CE/61C4: 0B           PHD
 CE/61C5: 24 01        BIT $01
 CE/61C7: 03 13        ORA $13,S
 CE/61C9: 06 1D        ASL $1D
-CE/61CB: 20 05 26     JSR $2605
+CE/61CB: 20 05 26     JSR Routine_CE2605
 CE/61CE: 39 02 20     AND $2002,Y
 CE/61D1: 05 D0        ORA $D0
 CE/61D3: 02 34        COP $34
@@ -130,7 +133,7 @@ CE/61D8: 02 D1        COP $D1
 CE/61DA: 72 0B        ADC ($0B)
 CE/61DC: 36 06        ROL $06,X
 CE/61DE: 48           PHA
-CE/61DF: 20 0A 26     JSR $260A
+CE/61DF: 20 0A 26     JSR Routine_CE260A
 CE/61E2: 48           PHA
 CE/61E3: 02 20        COP $20
 CE/61E5: 05 26        ORA $26
@@ -140,7 +143,7 @@ CE/61EA: 0A           ASL
 CE/61EB: 06 48        ASL $48
 CE/61ED: 24 04        BIT $04
 CE/61EF: 06 48        ASL $48
-CE/61F1: 20 0A 26     JSR $260A
+CE/61F1: 20 0A 26     JSR Routine_CE260A
 CE/61F4: 48           PHA
 CE/61F5: 02 20        COP $20
 CE/61F7: 05 26        ORA $26
@@ -150,20 +153,21 @@ CE/61FC: 0A           ASL
 CE/61FD: 06 48        ASL $48
 CE/61FF: 24 06        BIT $06
 CE/6201: 02 22        COP $22
-CE/6203: D0 35        BNE $623A
+CE/6203: D0 35        BNE Routine_CE623A
 CE/6205: 23 02        AND $02,S
-CE/6207: 20 0A C4     JSR $C40A
+CE/6207: 20 0A C4     JSR Routine_CEC40A
 CE/620A: D8           CLD
 CE/620B: F8           SED
-CE/620C: 20 03 C4     JSR $C403
+CE/620C: 20 03 C4     JSR Routine_CEC403
 CE/620F: D6 FE        DEC $FE,X
-CE/6211: 20 03 C4     JSR $C403
+CE/6211: 20 03 C4     JSR Routine_CEC403
 CE/6214: D4 FE        PEI $FE
-CE/6216: 20 03 C4     JSR $C403
+CE/6216: 20 03 C4     JSR Routine_CEC403
 CE/6219: D2 FE        CMP ($FE)
-CE/621B: 20 03 C4     JSR $C403
-CE/621E: D0 FE        BNE $621E
-CE/6220: 20 14 C5     JSR $C514
+CE/621B: 20 03 C4     JSR Routine_CEC403
+Local_CE621E:
+CE/621E: D0 FE        BNE Local_CE621E
+CE/6220: 20 14 C5     JSR Routine_CEC514
 CE/6223: 08           PHP
 CE/6224: 35 1E        AND $1E,X
 CE/6226: 2A           ROL
@@ -174,65 +178,69 @@ CE/622D: 72 0A        ADC ($0A)
 CE/622F: 02 13        COP $13
 CE/6231: 7A           PLY
 CE/6232: 51 01        EOR ($01),Y
-CE/6234: 20 0A 7A     JSR $7A0A
+CE/6234: 20 0A 7A     JSR Routine_CE7A0A
 CE/6237: 51 01        EOR ($01),Y
-CE/6239: 20 0A 7A     JSR $7A0A
+CE/6239: 20 0A 7A     JSR Routine_CE7A0A
 CE/623C: 51 01        EOR ($01),Y
 CE/623E: 24 02        BIT $02
 CE/6240: 72 0A        ADC ($0A)
 CE/6242: 06 10        ASL $10
 CE/6244: 24 03        BIT $03
 CE/6246: 06 38        ASL $38
-CE/6248: 20 0A 06     JSR $060A
-CE/624B: 22 20 0A 24  JSR $240A20
+CE/6248: 20 0A 06     JSR Routine_CE060A
+CE/624B: 22 20 0A 24  JSR Routine_240A20
 CE/624F: 05 06        ORA $06
 CE/6251: 38           SEC
-CE/6252: 20 0A 06     JSR $060A
-CE/6255: 22 20 0A 03  JSR $030A20
+CE/6252: 20 0A 06     JSR Routine_CE060A
+CE/6255: 22 20 0A 03  JSR Routine_030A20
 CE/6259: 13 06        ORA ($06,S),Y
 CE/625B: 03 00        ORA $00,S
 CE/625D: 0C D9 30     TSB $30D9
 CE/6260: 24 02        BIT $02
 CE/6262: 02 05        COP $05
-CE/6264: 20 1E D0     JSR $D01E
+CE/6264: 20 1E D0     JSR Routine_CED01E
 CE/6267: 7A           PLY
-CE/6268: B0 00        BCS $626A
+CE/6268: B0 00        BCS Local_CE626A
+Local_CE626A:
 CE/626A: 98           TYA
 CE/626B: 02 01        COP $01
 CE/626D: 36 80        ROL $80,X
 CE/626F: 45 87        EOR $87
-CE/6271: 20 00 00     JSR $0000
-CE/6274: 20 05 80     JSR $8005
+CE/6271: 20 00 00     JSR Routine_CE0000
+CE/6274: 20 05 80     JSR Routine_CE8005
 CE/6277: 51 20        EOR ($20),Y
 CE/6279: 0F 72 0A 7A  ORA $7A0A72
-CE/627D: B0 01        BCS $6280
+CE/627D: B0 01        BCS Local_CE6280
 CE/627F: 98           TYA
+Local_CE6280:
 CE/6280: 01 00        ORA ($00,X)
 CE/6282: 36 24        ROL $24,X
 CE/6284: 04 80        TSB $80
 CE/6286: 45 87        EOR $87
-CE/6288: 20 00 00     JSR $0000
-CE/628B: 20 05 80     JSR $8005
+CE/6288: 20 00 00     JSR Routine_CE0000
+CE/628B: 20 05 80     JSR Routine_CE8005
 CE/628E: 51 20        EOR ($20),Y
 CE/6290: 0F 0D 72 0B  ORA $0B720D
 CE/6294: 7A           PLY
-CE/6295: B0 00        BCS $6297
+CE/6295: B0 00        BCS Local_CE6297
+Local_CE6297:
 CE/6297: 98           TYA
 CE/6298: 01 01        ORA ($01,X)
 CE/629A: 36 24        ROL $24,X
 CE/629C: 05 80        ORA $80
 CE/629E: 45 87        EOR $87
-CE/62A0: 20 00 00     JSR $0000
-CE/62A3: 20 05 80     JSR $8005
+CE/62A0: 20 00 00     JSR Routine_CE0000
+CE/62A3: 20 05 80     JSR Routine_CE8005
 CE/62A6: 51 20        EOR ($20),Y
 CE/62A8: 0F 72 0A 7A  ORA $7A0A72
-CE/62AC: B0 01        BCS $62AF
+CE/62AC: B0 01        BCS Local_CE62AF
 CE/62AE: 98           TYA
+Local_CE62AF:
 CE/62AF: 00 00        BRK $00
 CE/62B1: 36 80        ROL $80,X
 CE/62B3: 45 87        EOR $87
-CE/62B5: 20 00 00     JSR $0000
-CE/62B8: 80 51        BRA $630B
+CE/62B5: 20 00 00     JSR Routine_CE0000
+CE/62B8: 80 51        BRA Local_CE630B
 CE/62BA: 35 23        AND $23,X
 CE/62BC: 02 D1        COP $D1
 CE/62BE: 7A           PLY
@@ -249,7 +257,7 @@ CE/62D2: 11 23        ORA ($23),Y
 CE/62D4: 03 C5        ORA $C5,S
 CE/62D6: 0C 7A B8     TSB $B87A
 CE/62D9: 03 2D        ORA $2D,S
-CE/62DB: 80 12        BRA $62EF
+CE/62DB: 80 12        BRA Routine_CE62EF
 CE/62DD: A8           TAY
 CE/62DE: DA           PHX
 CE/62DF: D8           CLD
@@ -257,7 +265,7 @@ CE/62E0: 04 04        TSB $04
 CE/62E2: 19 80 45     ORA $4580,Y
 CE/62E5: 87 40        STA [$40]
 CE/62E7: 00 00        BRK $00
-CE/62E9: 20 19 80     JSR $8019
+CE/62E9: 20 19 80     JSR Routine_CE8019
 CE/62EC: 51 1E        EOR ($1E),Y
 CE/62EE: 00 35        BRK $35
 CE/62F0: 00 1B        BRK $1B
@@ -274,7 +282,8 @@ CE/6302: 0C 72 0B     TSB $0B72
 CE/6305: 24 01        BIT $01
 CE/6307: 03 13        ORA $13,S
 CE/6309: 06 1D        ASL $1D
-CE/630B: 20 05 26     JSR $2605
+Local_CE630B:
+CE/630B: 20 05 26     JSR Routine_CE2605
 CE/630E: 39 02 20     AND $2002,Y
 CE/6311: 05 D0        ORA $D0
 CE/6313: 02 34        COP $34
@@ -292,14 +301,14 @@ CE/632D: 72 0A        ADC ($0A)
 CE/632F: 02 13        COP $13
 CE/6331: 7A           PLY
 CE/6332: 51 01        EOR ($01),Y
-CE/6334: 20 0A 7A     JSR $7A0A
+CE/6334: 20 0A 7A     JSR Routine_CE7A0A
 CE/6337: 51 01        EOR ($01),Y
-CE/6339: 20 0A 7A     JSR $7A0A
+CE/6339: 20 0A 7A     JSR Routine_CE7A0A
 CE/633C: 51 01        EOR ($01),Y
 CE/633E: 24 02        BIT $02
 CE/6340: 72 0A        ADC ($0A)
 CE/6342: 06 05        ASL $05
-CE/6344: 50 06        BVC $634C
+CE/6344: 50 06        BVC Routine_CE634C
 CE/6346: 03 36        ORA $36,S
 CE/6348: 00 D8        BRK $D8
 CE/634A: FF C0 00 69  SBC $6900C0,X
@@ -318,20 +327,20 @@ CE/6364: 64 85        STZ $85
 CE/6366: 09 93 09     ORA #$0993
 CE/6369: 3D 00 24     AND $2400,X
 CE/636C: 03 2D        ORA $2D,S
-CE/636E: 80 02        BRA $6372
+CE/636E: 80 02        BRA Routine_CE6372
 CE/6370: BD 72 0B     LDA $0B72,X
 CE/6373: 03 34        ORA $34,S
 CE/6375: 36 24        ROL $24,X
 CE/6377: 06 78        ASL $78
 CE/6379: E9 34 1B     SBC #$1B34
-CE/637C: 20 0A 02     JSR $020A
+CE/637C: 20 0A 02     JSR Routine_CE020A
 CE/637F: 44 22 1B     MVP $22,$1B
 CE/6382: 00 2D        BRK $2D
-CE/6384: 80 12        BRA $6398
+CE/6384: 80 12        BRA Routine_CE6398
 CE/6386: AD 06 03     LDA $0306
 CE/6389: 36 24        ROL $24,X
 CE/638B: 08           PHP
-CE/638C: 50 2E        BVC $63BC
+CE/638C: 50 2E        BVC Local_CE63BC
 CE/638E: 01 00        ORA ($00,X)
 CE/6390: 72 0D        ADC ($0D)
 CE/6392: 03 24        ORA $24,S
@@ -355,6 +364,7 @@ CE/63B3: 01 72        ORA ($72,X)
 CE/63B5: 0D 73 01     ORA $0173
 CE/63B8: 0C 85 C0     TSB $C085
 CE/63BB: A8           TAY
+Local_CE63BC:
 CE/63BC: 08           PHP
 CE/63BD: 44 41 1E     MVP $41,$1E
 CE/63C0: 02 41        COP $41

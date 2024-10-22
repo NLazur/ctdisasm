@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 4016
 Routine_D04016:
 D0/4016: C0 C0 90     CPY #$90C0
-D0/4019: F0 90        BEQ $3FAB
-D0/401B: F0 A8        BEQ $3FC5
+D0/4019: F0 90        BEQ Routine_D03FAB
+D0/401B: F0 A8        BEQ Routine_D03FC5
 D0/401D: D8           CLD
 D0/401E: A8           TAY
 D0/401F: D8           CLD
@@ -35,7 +35,7 @@ D0/4050: 03 03        ORA $03,S
 D0/4052: 03 03        ORA $03,S
 D0/4054: 05 07        ORA $07
 D0/4056: 05 07        ORA $07
-D0/4058: 22 3E 24 3C  JSR $3C243E
+D0/4058: 22 3E 24 3C  JSR Routine_3C243E
 D0/405C: 44 7C 54     MVP $7C,$54
 D0/405F: 6C 54 6C     JMP ($6C54)
 D0/4062: B4 CC        LDY $CC,X
@@ -48,15 +48,16 @@ D0/406D: 01 02        ORA ($02,X)
 D0/406F: 03 05        ORA $05,S
 D0/4071: 07 0E        ORA [$0E]
 D0/4073: 0E 18 18     ASL $1818
-D0/4076: 30 30        BMI $40A8
+D0/4076: 30 30        BMI Routine_D040A8
 D0/4078: 02 02        COP $02
 D0/407A: 04 04        TSB $04
+Local_D0407C:
 D0/407C: 0C 0C 18     TSB $180C
 D0/407F: 18           CLC
 D0/4080: 28           PLP
 D0/4081: 38           SEC
-D0/4082: 50 70        BVC $40F4
+D0/4082: 50 70        BVC Routine_D040F4
 D0/4084: A0 E0 20     LDY #$20E0
 D0/4087: E0 AC DC     CPX #$DCAC
-D0/408A: 10 F0        BPL $407C
+D0/408A: 10 F0        BPL Local_D0407C
 D0/408C: 60           RTS

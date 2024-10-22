@@ -55,15 +55,15 @@ CC/2B01: A9 2B B2     LDA #$B22B
 CC/2B04: 2B           PLD
 CC/2B05: BD 2B CB     LDA $CB2B,X
 CC/2B08: 2B           PLD
-CC/2B09: D0 2B        BNE $2B36
+CC/2B09: D0 2B        BNE Local_CC2B36
 CC/2B0B: 02 04        COP $04
 CC/2B0D: 00 02        BRK $02
-CC/2B0F: 20 5C 7D     JSR $7D5C
+CC/2B0F: 20 5C 7D     JSR Routine_CC7D5C
 CC/2B12: BD C6 01     LDA $01C6,X
 CC/2B15: 00 00        BRK $00
 CC/2B17: 02 01        COP $01
 CC/2B19: 01 00        ORA ($00,X)
-CC/2B1B: 10 01        BPL $2B1E
+CC/2B1B: 10 01        BPL Routine_CC2B1E
 CC/2B1D: 01 01        ORA ($01,X)
 CC/2B1F: 09 01 05     ORA #$0501
 CC/2B22: 02 00        COP $00
@@ -76,6 +76,7 @@ CC/2B2E: 05 09        ORA $09
 CC/2B30: 01 00        ORA ($00,X)
 CC/2B32: 06 02        ASL $02
 CC/2B34: 01 01        ORA ($01,X)
+Local_CC2B36:
 CC/2B36: 04 19        TSB $19
 CC/2B38: 01 01        ORA ($01,X)
 CC/2B3A: 00 19        BRK $19

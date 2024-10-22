@@ -11,7 +11,8 @@ D0/B61C: 00 00        BRK $00
 D0/B61E: 02 00        COP $00
 D0/B620: 00 00        BRK $00
 D0/B622: 00 00        BRK $00
-D0/B624: 10 00        BPL $B626
+D0/B624: 10 00        BPL Local_D0B626
+Local_D0B626:
 D0/B626: 00 00        BRK $00
 D0/B628: 00 00        BRK $00
 D0/B62A: 00 03        BRK $03
@@ -60,5 +61,5 @@ D0/B689: 07 07        ORA [$07]
 D0/B68B: 01 00        ORA ($00,X)
 D0/B68D: 00 00        BRK $00
 D0/B68F: 00 50        BRK $50
-D0/B691: 30 A0        BMI $B633
+D0/B691: 30 A0        BMI Routine_D0B633
 D0/B693: 60           RTS

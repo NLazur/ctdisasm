@@ -19,11 +19,11 @@ D0/8C4E: B7 4C        LDA [$4C],Y
 D0/8C50: 0F F6 07 FF  ORA $FF07F6
 D0/8C54: FF C7 67 7D  SBC $7D67C7,X
 D0/8C58: FC C0 F0     JSR ($F0C0,X)
-D0/8C5B: 4C 06 01     JMP $0106
+D0/8C5B: 4C 06 01     JMP Routine_D00106
 D0/8C5E: C0 FC E0     CPY #$E0FC
-D0/8C61: 20 F0 30     JSR $30F0
-D0/8C64: F0 70        BEQ $8CD6
-D0/8C66: F0 70        BEQ $8CD8
+D0/8C61: 20 F0 30     JSR Routine_D030F0
+D0/8C64: F0 70        BEQ Routine_D08CD6
+D0/8C66: F0 70        BEQ Routine_D08CD8
 D0/8C68: F8           SED
 D0/8C69: E8           INX
 D0/8C6A: F8           SED
@@ -32,8 +32,8 @@ D0/8C6C: F8           SED
 D0/8C6D: E8           INX
 D0/8C6E: F8           SED
 D0/8C6F: C8           INY
-D0/8C70: 20 30 70     JSR $7030
-D0/8C73: 70 E8        BVS $8C5D
+D0/8C70: 20 30 70     JSR Routine_D07030
+D0/8C73: 70 E8        BVS Routine_D08C5D
 D0/8C75: 68           PLA
 D0/8C76: E8           INX
 D0/8C77: 48           PHA
@@ -41,8 +41,8 @@ D0/8C78: 7A           PLY
 D0/8C79: 45 FA        EOR $FA
 D0/8C7B: C5 FB        CMP $FB
 D0/8C7D: 84 FF        STY $FF
-D0/8C7F: 80 FF        BRA $8C80
-D0/8C81: 80 FF        BRA $8C82
-D0/8C83: 80 FF        BRA $8C84
-D0/8C85: 80 7F        BRA $8D06
+D0/8C7F: 80 FF        BRA Routine_D08C80
+D0/8C81: 80 FF        BRA Routine_D08C82
+D0/8C83: 80 FF        BRA Routine_D08C84
+D0/8C85: 80 7F        BRA Routine_D08D06
 D0/8C87: 40           RTI

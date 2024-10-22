@@ -23,11 +23,13 @@ D1/2675: E4 B9        CPX $B9
 D1/2677: 0E 08 80     ASL $8008
 D1/267A: 00 1C        BRK $1C
 D1/267C: 00 18        BRK $18
-D1/267E: 10 0A        BPL $268A
+D1/267E: 10 0A        BPL Local_D1268A
 D1/2680: 00 CC        BRK $CC
 D1/2682: 3E 18 43     ROL $4318,X
-D1/2685: 50 00        BVC $2687
+D1/2685: 50 00        BVC Local_D12687
+Local_D12687:
 D1/2687: FD 14 00     SBC $0014,X
+Local_D1268A:
 D1/268A: CA           DEX
 D1/268B: 56 10        LSR $10,X
 D1/268D: 40           RTI

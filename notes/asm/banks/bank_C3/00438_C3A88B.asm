@@ -1,6 +1,6 @@
 ; Bank: C3 | Start Address: A88B
 Routine_C3A88B:
-C3/A88B: 10 E8        BPL $A875
+C3/A88B: 10 E8        BPL Routine_C3A875
 C3/A88D: 00 84        BRK $84
 C3/A88F: 13 E5        ORA ($E5,S),Y
 C3/A891: 0E 00 E6     ASL $E600
@@ -26,6 +26,6 @@ C3/A8BB: 8C 7F 09     STY $097F
 C3/A8BE: 00 00        BRK $00
 C3/A8C0: 38           SEC
 C3/A8C1: 01 13        ORA ($13,X)
-C3/A8C3: 30 1B        BMI $A8E0
-C3/A8C5: 20 4E 72     JSR $724E
+C3/A8C3: 30 1B        BMI Routine_C3A8E0
+C3/A8C5: 20 4E 72     JSR Routine_C3724E
 C3/A8C8: 40           RTI

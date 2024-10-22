@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 8649
 Routine_C08649:
 C0/8649: A6 EF        LDX $EF
-C0/864B: F0 17        BEQ $8664
+C0/864B: F0 17        BEQ Local_C08664
 C0/864D: C2 20        REP #$20
 C0/864F: A5 EF        LDA $EF
 C0/8651: 8D 75 43     STA $4375
@@ -11,9 +11,10 @@ C0/8658: 8E 16 21     STX $2116
 C0/865B: A2 00        LDX #$00
 C0/865D: D8           CLD
 C0/865E: 8E 72 43     STX $4372
-C0/8661: 20 A7 84     JSR $84A7
+C0/8661: 20 A7 84     JSR Routine_C084A7
+Local_C08664:
 C0/8664: A6 F1        LDX $F1
-C0/8666: F0 1E        BEQ $8686
+C0/8666: F0 1E        BEQ Local_C08686
 C0/8668: C2 20        REP #$20
 C0/866A: A5 F1        LDA $F1
 C0/866C: 8D 75 43     STA $4375
@@ -26,9 +27,10 @@ C0/867A: 18           CLC
 C0/867B: 69 00 D8     ADC #$D800
 C0/867E: 8D 72 43     STA $4372
 C0/8681: E2 20        SEP #$20
-C0/8683: 20 A7 84     JSR $84A7
+C0/8683: 20 A7 84     JSR Routine_C084A7
+Local_C08686:
 C0/8686: A6 F3        LDX $F3
-C0/8688: F0 20        BEQ $86AA
+C0/8688: F0 20        BEQ Local_C086AA
 C0/868A: C2 20        REP #$20
 C0/868C: A5 F3        LDA $F3
 C0/868E: 8D 75 43     STA $4375
@@ -42,5 +44,6 @@ C0/869D: 65 F1        ADC $F1
 C0/869F: 69 00 D8     ADC #$D800
 C0/86A2: 8D 72 43     STA $4372
 C0/86A5: E2 20        SEP #$20
-C0/86A7: 20 A7 84     JSR $84A7
+C0/86A7: 20 A7 84     JSR Routine_C084A7
+Local_C086AA:
 C0/86AA: 60           RTS

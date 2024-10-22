@@ -14,6 +14,6 @@ D0/17CA: 00 00        BRK $00
 D0/17CC: 00 00        BRK $00
 D0/17CE: 00 00        BRK $00
 D0/17D0: 00 00        BRK $00
-D0/17D2: 20 20 40     JSR $4020
-D0/17D5: 80 80        BRA $1757
+D0/17D2: 20 20 40     JSR Routine_D04020
+D0/17D5: 80 80        BRA Routine_D01757
 D0/17D7: 40           RTI

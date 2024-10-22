@@ -17,12 +17,13 @@ C6/7B97: F8           SED
 C6/7B98: FB           XCE
 C6/7B99: 26 24        ROL $24
 C6/7B9B: 78           SEI
-C6/7B9C: B0 06        BCS $7BA4
+C6/7B9C: B0 06        BCS Local_C67BA4
 C6/7B9E: 8B           PHB
 C6/7B9F: 39 F8 03     AND $03F8,Y
 C6/7BA2: E0 75        CPX #$75
+Local_C67BA4:
 C6/7BA4: 4B           PHK
-C6/7BA5: 30 72        BMI $7C19
+C6/7BA5: 30 72        BMI Routine_C67C19
 C6/7BA7: 73 74        ADC ($74,S),Y
 C6/7BA9: 2F 58 1C 60  AND $601C58
 C6/7BAD: 00 B0        BRK $B0
@@ -35,8 +36,9 @@ C6/7BB9: 00 FB        BRK $FB
 C6/7BBB: 0E 82 83     ASL $8382
 C6/7BBE: 84 85        STY $85
 C6/7BC0: 2F D0 07 81  AND $8107D0
-C6/7BC4: 70 01        BVS $7BC7
+C6/7BC4: 70 01        BVS Local_C67BC7
 C6/7BC6: F8           SED
+Local_C67BC7:
 C6/7BC7: 1F 00 18 19  ORA $191800,X
 C6/7BCB: 1A           INC
 C6/7BCC: 1B           TCS

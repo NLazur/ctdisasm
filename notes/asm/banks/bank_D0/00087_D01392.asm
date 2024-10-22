@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 1392
 Routine_D01392:
-D0/1392: 20 20 10     JSR $1020
+D0/1392: 20 20 10     JSR Routine_D01020
 D0/1395: 18           CLC
 D0/1396: 00 00        BRK $00
 D0/1398: 00 00        BRK $00
@@ -20,7 +20,7 @@ D0/13B5: 1C 0B 0C     TRB $0C0B
 D0/13B8: 08           PHP
 D0/13B9: 18           CLC
 D0/13BA: 00 10        BRK $10
-D0/13BC: 10 30        BPL $13EE
+D0/13BC: 10 30        BPL Local_D013EE
 D0/13BE: 01 21        ORA ($21,X)
 D0/13C0: 02 62        COP $62
 D0/13C2: 3A           DEC
@@ -48,6 +48,7 @@ D0/13E7: 4B           PHK
 D0/13E8: 02 06        COP $06
 D0/13EA: 12 1E        ORA ($1E)
 D0/13EC: 96 9E        STX $9E,Y
+Local_D013EE:
 D0/13EE: 0D 9D A5     ORA $A59D
 D0/13F1: BD 52 EB     LDA $EB52,X
 D0/13F4: 2C DE D4     BIT $D4DE

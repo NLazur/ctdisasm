@@ -14,5 +14,5 @@ D1/0A1F: 0A           ASL
 D1/0A20: 41 0A        EOR ($0A,X)
 D1/0A22: 81 0A        STA ($0A,X)
 D1/0A24: C1 27        CMP ($27,X)
-D1/0A26: 10 08        BPL $0A30
+D1/0A26: 10 08        BPL Routine_D10A30
 D1/0A28: 40           RTI

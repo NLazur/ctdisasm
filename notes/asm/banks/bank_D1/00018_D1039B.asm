@@ -6,7 +6,7 @@ D1/039F: 01 46        ORA ($46,X)
 D1/03A1: 8A           TXA
 D1/03A2: 08           PHP
 D1/03A3: 00 80        BRK $80
-D1/03A5: 80 C0        BRA $0367
+D1/03A5: 80 C0        BRA Routine_D10367
 D1/03A7: 48           PHA
 D1/03A8: 01 4A        ORA ($4A,X)
 D1/03AA: 01 4C        ORA ($4C,X)
@@ -21,5 +21,6 @@ D1/03BC: 0C 10 01     TSB $0110
 D1/03BF: 62 01 64     PER $D167C3
 D1/03C2: 41 AB        EOR ($AB,X)
 D1/03C4: 00 FF        BRK $FF
-D1/03C6: B0 00        BCS $03C8
+D1/03C6: B0 00        BCS Local_D103C8
+Local_D103C8:
 D1/03C8: 40           RTI

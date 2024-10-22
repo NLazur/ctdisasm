@@ -1,10 +1,10 @@
 ; Bank: FF | Start Address: A574
 Routine_FFA574:
 FF/A574: 2E 92 7A     ROL $7A92
-FF/A577: 20 F5 41     JSR $41F5
+FF/A577: 20 F5 41     JSR Routine_FF41F5
 FF/A57A: EB           XBA
 FF/A57B: A0 DF        LDY #$DF
-FF/A57D: 10 B5        BPL $A534
+FF/A57D: 10 B5        BPL Routine_FFA534
 FF/A57F: 00 EE        BRK $EE
 FF/A581: 00 DC        BRK $DC
 FF/A583: 00 FD        BRK $FD

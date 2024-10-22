@@ -16,26 +16,28 @@ C0/4D3C: BD 01 18     LDA $1801,X
 C0/4D3F: 85 F0        STA $F0
 C0/4D41: BD 81 18     LDA $1881,X
 C0/4D44: 85 F1        STA $F1
-C0/4D46: 20 A2 AB     JSR $ABA2
+C0/4D46: 20 A2 AB     JSR Routine_C0ABA2
 C0/4D49: A6 6D        LDX $6D
-C0/4D4B: 20 69 AC     JSR $AC69
+C0/4D4B: 20 69 AC     JSR Routine_C0AC69
 C0/4D4E: A5 F2        LDA $F2
 C0/4D50: 38           SEC
 C0/4D51: E5 F0        SBC $F0
-C0/4D53: F0 4C        BEQ $4DA1
-C0/4D55: B0 03        BCS $4D5A
+C0/4D53: F0 4C        BEQ Local_C04DA1
+C0/4D55: B0 03        BCS Local_C04D5A
 C0/4D57: 49 FF        EOR #$FF
 C0/4D59: 1A           INC
+Local_C04D5A:
 C0/4D5A: EB           XBA
 C0/4D5B: A9 00        LDA #$00
 C0/4D5D: C2 20        REP #$20
 C0/4D5F: 8D 04 42     STA $4204
 C0/4D62: E2 20        SEP #$20
 C0/4D64: BD 00 19     LDA $1900,X
-C0/4D67: F0 38        BEQ $4DA1
-C0/4D69: 10 03        BPL $4D6E
+C0/4D67: F0 38        BEQ Local_C04DA1
+C0/4D69: 10 03        BPL Local_C04D6E
 C0/4D6B: 49 FF        EOR #$FF
 C0/4D6D: 1A           INC
+Local_C04D6E:
 C0/4D6E: 8D 06 42     STA $4206
 C0/4D71: EA           NOP
 C0/4D72: EA           NOP
@@ -62,24 +64,27 @@ C0/4D96: 18           CLC
 C0/4D97: 7D 80 19     ADC $1980,X
 C0/4D9A: 9D 80 19     STA $1980,X
 C0/4D9D: E2 20        SEP #$20
-C0/4D9F: 80 78        BRA $4E19
+C0/4D9F: 80 78        BRA Local_C04E19
+Local_C04DA1:
 C0/4DA1: A5 F3        LDA $F3
 C0/4DA3: 38           SEC
 C0/4DA4: E5 F1        SBC $F1
-C0/4DA6: F0 4C        BEQ $4DF4
-C0/4DA8: B0 03        BCS $4DAD
+C0/4DA6: F0 4C        BEQ Local_C04DF4
+C0/4DA8: B0 03        BCS Local_C04DAD
 C0/4DAA: 49 FF        EOR #$FF
 C0/4DAC: 1A           INC
+Local_C04DAD:
 C0/4DAD: EB           XBA
 C0/4DAE: A9 00        LDA #$00
 C0/4DB0: C2 20        REP #$20
 C0/4DB2: 8D 04 42     STA $4204
 C0/4DB5: E2 20        SEP #$20
 C0/4DB7: BD 80 19     LDA $1980,X
-C0/4DBA: F0 38        BEQ $4DF4
-C0/4DBC: 10 03        BPL $4DC1
+C0/4DBA: F0 38        BEQ Local_C04DF4
+C0/4DBC: 10 03        BPL Local_C04DC1
 C0/4DBE: 49 FF        EOR #$FF
 C0/4DC0: 1A           INC
+Local_C04DC1:
 C0/4DC1: 8D 06 42     STA $4206
 C0/4DC4: EA           NOP
 C0/4DC5: EA           NOP
@@ -106,7 +111,8 @@ C0/4DE9: 18           CLC
 C0/4DEA: 7D 80 19     ADC $1980,X
 C0/4DED: 9D 80 19     STA $1980,X
 C0/4DF0: E2 20        SEP #$20
-C0/4DF2: 80 25        BRA $4E19
+C0/4DF2: 80 25        BRA Local_C04E19
+Local_C04DF4:
 C0/4DF4: A5 C1        LDA $C1
 C0/4DF6: 9D 01 1A     STA $1A01,X
 C0/4DF9: 8D 02 42     STA $4202
@@ -124,6 +130,7 @@ C0/4E10: 18           CLC
 C0/4E11: 7D 80 19     ADC $1980,X
 C0/4E14: 9D 80 19     STA $1980,X
 C0/4E17: E2 20        SEP #$20
+Local_C04E19:
 C0/4E19: A9 01        LDA #$01
 C0/4E1B: 9D 80 1A     STA $1A80,X
 C0/4E1E: 9D 80 1B     STA $1B80,X

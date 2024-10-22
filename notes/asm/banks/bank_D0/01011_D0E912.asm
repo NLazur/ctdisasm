@@ -8,8 +8,9 @@ D0/E91A: 44 12 44     MVP $12,$44
 D0/E91D: F4 13 AE     PEA $AE13
 D0/E920: 09 C1        ORA #$C1
 D0/E922: 12 C2        ORA ($C2)
-D0/E924: 80 01        BRA $E927
+D0/E924: 80 01        BRA Local_D0E927
 D0/E926: E8           INX
+Local_D0E927:
 D0/E927: 41 7E        EOR ($7E,X)
 D0/E929: 00 9A        BRK $9A
 D0/E92B: 12 99        ORA ($99)
@@ -69,7 +70,7 @@ D0/E991: 11 00        ORA ($00),Y
 D0/E993: 0A           ASL
 D0/E994: E8           INX
 D0/E995: FC 00 89     JSR ($8900,X)
-D0/E998: 10 52        BPL $E9EC
+D0/E998: 10 52        BPL Routine_D0E9EC
 D0/E99A: B9 52 B8     LDA $B852,Y
 D0/E99D: 48           PHA
 D0/E99E: 21 84        AND ($84,X)

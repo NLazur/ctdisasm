@@ -30,7 +30,7 @@ FE/6829: 00 F3        BRK $F3
 FE/682B: 02 39        COP $39
 FE/682D: 0A           ASL
 FE/682E: B6 1F        LDX $1F,Y
-FE/6830: 90 0A        BCC $683C
+FE/6830: 90 0A        BCC Routine_FE683C
 FE/6832: 54 19 10     MVN $19,$10
 FE/6835: C6 42        DEC $42
 FE/6837: C8           INY
@@ -47,6 +47,7 @@ FE/684B: A0 65 70     LDY #$7065
 FE/684E: 8E 00 1A     STX $1A00
 FE/6851: AC 8A 27     LDY $278A
 FE/6854: 87 0A        STA [$0A]
+Local_FE6856:
 FE/6856: 04 FA        TSB $FA
 FE/6858: 18           CLC
 FE/6859: 03 20        ORA $20,S
@@ -54,7 +55,7 @@ FE/685B: DF D1 AE 14  CMP $14AED1,X
 FE/685F: 02 FC        COP $FC
 FE/6861: F8           SED
 FE/6862: 71 38        ADC ($38),Y
-FE/6864: 20 C5 08     JSR $08C5
+FE/6864: 20 C5 08     JSR Routine_FE08C5
 FE/6867: A0 A5 16     LDY #$16A5
 FE/686A: 00 A2        BRK $A2
 FE/686C: 05 82        ORA $82
@@ -62,7 +63,7 @@ FE/686E: 78           SEI
 FE/686F: FC EE 07     JSR ($07EE,X)
 FE/6872: C0 00 F8     CPY #$F800
 FE/6875: ED 0F 02     SBC $020F
-FE/6878: 80 DC        BRA $6856
+FE/6878: 80 DC        BRA Local_FE6856
 FE/687A: 09 BF 19     ORA #$19BF
 FE/687D: 04 D6        TSB $D6
 FE/687F: 18           CLC
@@ -70,13 +71,13 @@ FE/6880: 86 32        STX $32
 FE/6882: 28           PLP
 FE/6883: 0B           PHD
 FE/6884: FF 01 F0 01  SBC $01F001,X
-FE/6888: F0 01        BEQ $688B
-FE/688A: F0 01        BEQ $688D
-FE/688C: F0 01        BEQ $688F
-FE/688E: F0 01        BEQ $6891
-FE/6890: F0 01        BEQ $6893
-FE/6892: F0 01        BEQ $6895
-FE/6894: F0 81        BEQ $6817
+FE/6888: F0 01        BEQ Routine_FE688B
+FE/688A: F0 01        BEQ Routine_FE688D
+FE/688C: F0 01        BEQ Routine_FE688F
+FE/688E: F0 01        BEQ Routine_FE6891
+FE/6890: F0 01        BEQ Routine_FE6893
+FE/6892: F0 01        BEQ Routine_FE6895
+FE/6894: F0 81        BEQ Routine_FE6817
 FE/6896: 02 D0        COP $D0
 FE/6898: 2C BF 08     BIT $08BF
 FE/689B: 3B           TSC

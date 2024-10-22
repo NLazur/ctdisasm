@@ -4,7 +4,7 @@ C6/8F34: 41 0C        EOR ($0C,X)
 C6/8F36: 42 32        WDM $32
 C6/8F38: 58           CLI
 C6/8F39: 05 64        ORA $64
-C6/8F3B: 10 34        BPL $8F71
+C6/8F3B: 10 34        BPL Routine_C68F71
 C6/8F3D: 24 23        BIT $23
 C6/8F3F: 35 03        AND $03,X
 C6/8F41: 47 F8        EOR [$F8]
@@ -25,7 +25,7 @@ C6/8F5D: 35 44        AND $44,X
 C6/8F5F: 45 47        EOR $47
 C6/8F61: F8           SED
 C6/8F62: 31 09        AND ($09),Y
-C6/8F64: B0 07        BCS $8F6D
+C6/8F64: B0 07        BCS Routine_C68F6D
 C6/8F66: 07 52        ORA [$52]
 C6/8F68: F7 02        SBC [$02],Y
 C6/8F6A: 07 17        ORA [$17]
@@ -48,13 +48,13 @@ C6/8F87: 04 0D        TSB $0D
 C6/8F89: 00 23        BRK $23
 C6/8F8B: DC C4 10     JMP [$10C4]
 C6/8F8E: 55 06        EOR $06,X
-C6/8F90: 30 21        BMI $8FB3
+C6/8F90: 30 21        BMI Routine_C68FB3
 C6/8F92: 28           PLP
 C6/8F93: 0B           PHD
 C6/8F94: 31 61        AND ($61),Y
-C6/8F96: 10 2A        BPL $8FC2
+C6/8F96: 10 2A        BPL Routine_C68FC2
 C6/8F98: 26 37        ROL $37
-C6/8F9A: 20 FC 40     JSR $40FC
+C6/8F9A: 20 FC 40     JSR Routine_C640FC
 C6/8F9D: C2 24        REP #$24
 C6/8F9F: 15 A0        ORA $A0,X
 C6/8FA1: 60           RTS

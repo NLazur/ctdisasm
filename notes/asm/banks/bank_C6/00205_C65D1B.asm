@@ -15,6 +15,7 @@ C6/5D2B: D4 05        PEI $05
 C6/5D2D: 14 F2        TRB $F2
 C6/5D2F: 33 FB        AND ($FB,S),Y
 C6/5D31: DA           PHX
+Local_C65D32:
 C6/5D32: 0C FC 1B     TSB $1BFC
 C6/5D35: 25 E8        AND $E8
 C6/5D37: 05 74        ORA $74
@@ -35,7 +36,7 @@ C6/5D51: A1 18        LDA ($18,X)
 C6/5D53: F8           SED
 C6/5D54: 0A           ASL
 C6/5D55: A6 58        LDX $58
-C6/5D57: 20 A7 58     JSR $58A7
+C6/5D57: 20 A7 58     JSR Routine_C658A7
 C6/5D5A: B6 48        LDX $48,Y
 C6/5D5C: A2 80        LDX #$80
 C6/5D5E: 00 A6        BRK $A6
@@ -50,16 +51,17 @@ C6/5D6A: BE 03 08     LDX $0803,Y
 C6/5D6D: 09 00        ORA #$00
 C6/5D6F: A0 0D        LDY #$0D
 C6/5D71: A1 0D        LDA ($0D,X)
-C6/5D73: B0 0D        BCS $5D82
+C6/5D73: B0 0D        BCS Local_C65D82
 C6/5D75: B1 0D        LDA ($0D),Y
 C6/5D77: 00 A2        BRK $A2
 C6/5D79: 0D A3 0D     ORA $0DA3
 C6/5D7C: B2 0D        LDA ($0D)
 C6/5D7E: B3 0D        LDA ($0D,S),Y
 C6/5D80: 00 A4        BRK $A4
+Local_C65D82:
 C6/5D82: 0D A5 0D     ORA $0DA5
 C6/5D85: B4 0D        LDY $0D,X
 C6/5D87: B5 0D        LDA $0D,X
-C6/5D89: 90 A7        BCC $5D32
+C6/5D89: 90 A7        BCC Local_C65D32
 C6/5D8B: 18           CLC
 C6/5D8C: 60           RTS

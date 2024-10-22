@@ -4,9 +4,9 @@ FE/A176: E0 1C        CPX #$1C
 FE/A178: CA           DEX
 FE/A179: 3C E4 14     BIT $14E4,X
 FE/A17C: 00 47        BRK $47
-FE/A17E: 70 BF        BVS $A13F
+FE/A17E: 70 BF        BVS Routine_FEA13F
 FE/A180: C0 2F        CPY #$2F
-FE/A182: 30 0C        BMI $A190
+FE/A182: 30 0C        BMI Local_FEA190
 FE/A184: 18           CLC
 FE/A185: 48           PHA
 FE/A186: 0A           ASL
@@ -14,6 +14,7 @@ FE/A187: 0C 05 6C     TSB $6C05
 FE/A18A: 11 0F        ORA ($0F),Y
 FE/A18C: 07 E0        ORA [$E0]
 FE/A18E: 09 00        ORA #$00
+Local_FEA190:
 FE/A190: 06 1F        ASL $1F
 FE/A192: 64 01        STZ $01
 FE/A194: 0A           ASL
@@ -39,14 +40,15 @@ FE/A1BB: F6 0F        INC $0F,X
 FE/A1BD: C2 3C        REP #$3C
 FE/A1BF: 3B           TSC
 FE/A1C0: C7 B5        CMP [$B5]
-FE/A1C2: B0 45        BCS $A209
+FE/A1C2: B0 45        BCS Routine_FEA209
 FE/A1C4: 46 1A        LSR $1A
 FE/A1C6: 02 4C        COP $4C
 FE/A1C8: 12 FC        ORA ($FC)
 FE/A1CA: 00 4D        BRK $4D
-FE/A1CC: 90 12        BCC $A1E0
-FE/A1CE: 10 00        BPL $A1D0
-FE/A1D0: F0 E8        BEQ $A1BA
+FE/A1CC: 90 12        BCC Routine_FEA1E0
+FE/A1CE: 10 00        BPL Local_FEA1D0
+Local_FEA1D0:
+FE/A1D0: F0 E8        BEQ Routine_FEA1BA
 FE/A1D2: 18           CLC
 FE/A1D3: FC 82 2C     JSR ($2C82,X)
 FE/A1D6: 2A           ROL
@@ -77,12 +79,12 @@ FE/A20D: 0F 7F CF CF  ORA $CFCF7F
 FE/A211: B8           CLV
 FE/A212: B8           CLV
 FE/A213: 2A           ROL
-FE/A214: 10 6C        BPL $A282
+FE/A214: 10 6C        BPL Routine_FEA282
 FE/A216: 00 00        BRK $00
 FE/A218: F4 F4 01     PEA $01F4
 FE/A21B: FF 00 EF 40  SBC $40EF00,X
-FE/A21F: 90 FF        BCC $A220
-FE/A221: 30 78        BMI $A29B
+FE/A21F: 90 FF        BCC Routine_FEA220
+FE/A221: 30 78        BMI Routine_FEA29B
 FE/A223: C0 10 6E     CPY #$6E10
 FE/A226: 02 30        COP $30
 FE/A228: C8           INY

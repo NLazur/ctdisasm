@@ -4,14 +4,15 @@ D1/9F19: A8           TAY
 D1/9F1A: 00 00        BRK $00
 D1/9F1C: 00 80        BRK $80
 D1/9F1E: 00 00        BRK $00
-D1/9F20: 80 00        BRA $9F22
+D1/9F20: 80 00        BRA Local_D19F22
+Local_D19F22:
 D1/9F22: 00 A8        BRK $A8
 D1/9F24: 01 00        ORA ($00,X)
 D1/9F26: 00 80        BRK $80
 D1/9F28: 00 00        BRK $00
 D1/9F2A: 00 00        BRK $00
 D1/9F2C: 00 8E        BRK $8E
-D1/9F2E: 50 19        BVC $9F49
+D1/9F2E: 50 19        BVC Local_D19F49
 D1/9F30: 07 00        ORA [$00]
 D1/9F32: FF 08 04 17  SBC $170408,X
 D1/9F36: 9D 17 83     STA $8317,X
@@ -22,6 +23,7 @@ D1/9F41: 01 04        ORA ($04,X)
 D1/9F43: 03 02        ORA $02,S
 D1/9F45: 00 A1        BRK $A1
 D1/9F47: 00 A8        BRK $A8
+Local_D19F49:
 D1/9F49: 01 00        ORA ($00,X)
 D1/9F4B: 00 01        BRK $01
 D1/9F4D: 01 04        ORA ($04,X)

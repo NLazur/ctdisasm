@@ -2,8 +2,9 @@
 Routine_CDBA3D:
 CD/BA3D: 73 00        ADC ($00,S),Y
 CD/BA3F: 19 80 A0     ORA $A080,Y
-CD/BA42: 70 02        BVS $BA46
+CD/BA42: 70 02        BVS Local_CDBA46
 CD/BA44: 00 85        BRK $85
+Local_CDBA46:
 CD/BA46: C0 08        CPY #$08
 CD/BA48: A8           TAY
 CD/BA49: 18           CLC

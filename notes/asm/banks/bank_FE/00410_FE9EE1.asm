@@ -5,10 +5,10 @@ FE/9EE2: 1C 01 08     TRB $0801
 FE/9EE5: A4 20        LDY $20
 FE/9EE7: 9C 20 5C     STZ $5C20
 FE/9EEA: 01 08        ORA ($08,X)
-FE/9EEC: 20 70 42     JSR $4270
+FE/9EEC: 20 70 42     JSR Routine_FE4270
 FE/9EEF: 45 00        EOR $00
 FE/9EF1: FF 77 38 20  SBC $203877,X
-FE/9EF5: 30 40        BMI $9F37
+FE/9EF5: 30 40        BMI Routine_FE9F37
 FE/9EF7: D3 00        CMP ($00,S),Y
 FE/9EF9: 02 00        COP $00
 FE/9EFB: 01 70        ORA ($70,X)
@@ -20,7 +20,7 @@ FE/9F06: 1A           INC
 FE/9F07: 78           SEI
 FE/9F08: 01 F8        ORA ($F8,X)
 FE/9F0A: 00 3C        BRK $3C
-FE/9F0C: 10 05        BPL $9F13
+FE/9F0C: 10 05        BPL Routine_FE9F13
 FE/9F0E: 06 38        ASL $38
 FE/9F10: 00 00        BRK $00
 FE/9F12: 04 04        TSB $04
@@ -31,8 +31,9 @@ FE/9F1A: 04 3E        TSB $3E
 FE/9F1C: 01 2A        ORA ($2A,X)
 FE/9F1E: F8           SED
 FE/9F1F: 7D 98 3E     ADC $3E98,X
-FE/9F22: 10 3F        BPL $9F63
+FE/9F22: 10 3F        BPL Local_FE9F63
 FE/9F24: F8           SED
+Local_FE9F25:
 FE/9F25: 0E 88 02     ASL $0288
 FE/9F28: 02 00        COP $00
 FE/9F2A: 07 03        ORA [$03]
@@ -53,7 +54,7 @@ FE/9F4A: 3F 68 41 08  AND $084168,X
 FE/9F4E: 38           SEC
 FE/9F4F: 03 01        ORA $01,S
 FE/9F51: 01 3D        ORA ($3D,X)
-FE/9F53: 10 3E        BPL $9F93
+FE/9F53: 10 3E        BPL Local_FE9F93
 FE/9F55: F8           SED
 FE/9F56: BA           TSX
 FE/9F57: 29 03        AND #$03
@@ -62,10 +63,12 @@ FE/9F5B: 03 01        ORA $01,S
 FE/9F5D: 04 03        TSB $03
 FE/9F5F: 01 03        ORA ($03,X)
 FE/9F61: 04 3D        TSB $3D
+Local_FE9F63:
 FE/9F63: 00 CF        BRK $CF
 FE/9F65: 3F 08 02 18  AND $180208,X
 FE/9F69: 38           SEC
 FE/9F6A: F8           SED
+Local_FE9F6B:
 FE/9F6B: 3E 28 02     ROL $0228,X
 FE/9F6E: 07 BD        ORA [$BD]
 FE/9F70: 00 02        BRK $02
@@ -88,6 +91,7 @@ FE/9F8D: 04 56        TSB $56
 FE/9F8F: 08           PHP
 FE/9F90: 03 85        ORA $85,S
 FE/9F92: F8           SED
+Local_FE9F93:
 FE/9F93: 78           SEI
 FE/9F94: 09 37        ORA #$37
 FE/9F96: 01 F8        ORA ($F8,X)
@@ -96,12 +100,12 @@ FE/9F99: 04 FF        TSB $FF
 FE/9F9B: C4 00        CPY $00
 FE/9F9D: BD 10 C1     LDA $C110,X
 FE/9FA0: 01 C6        ORA ($C6,X)
-FE/9FA2: 30 81        BMI $9F25
+FE/9FA2: 30 81        BMI Local_FE9F25
 FE/9FA4: F8           SED
 FE/9FA5: A8           TAY
 FE/9FA6: 09 75        ORA #$75
 FE/9FA8: 09 AF        ORA #$AF
-FE/9FAA: 10 BF        BPL $9F6B
+FE/9FAA: 10 BF        BPL Local_FE9F6B
 FE/9FAC: 7A           PLY
 FE/9FAD: 08           PHP
 FE/9FAE: 00 02        BRK $02

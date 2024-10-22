@@ -7,7 +7,7 @@ CD/D7A9: 04 06        TSB $06
 CD/D7AB: 05 20        ORA $20
 CD/D7AD: 08           PHP
 CD/D7AE: 6A           ROR
-CD/D7AF: 20 08 36     JSR $3608
+CD/D7AF: 20 08 36     JSR Routine_CD3608
 CD/D7B2: 06 03        ASL $03
 CD/D7B4: 00 90        BRK $90
 CD/D7B6: 00 80        BRK $80
@@ -21,8 +21,8 @@ CD/D7C4: 0C 85 C0     TSB $C085
 CD/D7C7: A8           TAY
 CD/D7C8: FF 29 20 3C  SBC $3C2029,X
 CD/D7CC: 33 03        AND ($03,S),Y
-CD/D7CE: 30 1F        BMI $D7EF
-CD/D7D0: 20 1A 06     JSR $061A
+CD/D7CE: 30 1F        BMI Routine_CDD7EF
+CD/D7D0: 20 1A 06     JSR Routine_CD061A
 CD/D7D3: 08           PHP
 CD/D7D4: 2A           ROL
 CD/D7D5: 12 0C        ORA ($0C)
@@ -38,7 +38,7 @@ CD/D7E7: 1B           TCS
 CD/D7E8: 19 A5 72     ORA $72A5,Y
 CD/D7EB: 0D 06 03     ORA $0306
 CD/D7EE: 24 02        BIT $02
-CD/D7F0: 50 2E        BVC $D820
+CD/D7F0: 50 2E        BVC Routine_CDD820
 CD/D7F2: 01 00        ORA ($00,X)
 CD/D7F4: 24 01        BIT $01
 CD/D7F6: 78           SEI

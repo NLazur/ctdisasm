@@ -9,12 +9,12 @@ D0/2E10: 28           PLP
 D0/2E11: 38           SEC
 D0/2E12: 28           PLP
 D0/2E13: 38           SEC
-D0/2E14: 50 70        BVC $2E86
-D0/2E16: 50 70        BVC $2E88
+D0/2E14: 50 70        BVC Routine_D02E86
+D0/2E16: 50 70        BVC Routine_D02E88
 D0/2E18: 64 67        STZ $67
 D0/2E1A: 69 6F 72     ADC #$726F
 D0/2E1D: 7E 54 7C     ROR $7C54,X
 D0/2E20: 48           PHA
 D0/2E21: 78           SEI
-D0/2E22: 50 70        BVC $2E94
+D0/2E22: 50 70        BVC Routine_D02E94
 D0/2E24: 60           RTS

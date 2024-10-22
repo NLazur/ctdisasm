@@ -9,7 +9,7 @@ C0/F62F: 2A           ROL
 C0/F630: 29 27        AND #$27
 C0/F632: 26 25        ROL $25
 C0/F634: 24 23        BIT $23
-C0/F636: 22 21 21 20  JSR $202121
+C0/F636: 22 21 21 20  JSR Routine_202121
 C0/F63A: 1F 1E 1D 1C  ORA $1C1D1E,X
 C0/F63E: 1C 1B 40     TRB $401B
 C0/F641: 3E 3C 3B     ROL $3B3C,X
@@ -17,7 +17,7 @@ C0/F644: 3A           DEC
 C0/F645: 38           SEC
 C0/F646: 37 35        AND [$35],Y
 C0/F648: 33 32        AND ($32,S),Y
-C0/F64A: 30 30        BMI $F67C
+C0/F64A: 30 30        BMI Routine_C0F67C
 C0/F64C: 2E 2D 2B     ROL $2B2D
 C0/F64F: 2B           PLD
 C0/F650: 29 28        AND #$28
@@ -25,6 +25,6 @@ C0/F652: 27 26        AND [$26]
 C0/F654: 25 24        AND $24
 C0/F656: 23 22        AND $22,S
 C0/F658: 21 21        AND ($21,X)
-C0/F65A: 20 1F 1E     JSR $1E1F
+C0/F65A: 20 1F 1E     JSR Routine_C01E1F
 C0/F65D: 1D 1C 1C     ORA $1C1C,X
 C0/F660: 40           RTI

@@ -2,7 +2,7 @@
 Routine_FD9611:
 FD/9611: 16 89        ASL $89,X
 FD/9613: 0C 92 04     TSB $0492
-FD/9616: 80 FF        BRA $9617
+FD/9616: 80 FF        BRA Routine_FD9617
 FD/9618: 03 00        ORA $00,S
 FD/961A: B2 00        LDA ($00)
 FD/961C: C1 69        CMP ($69,X)

@@ -25,11 +25,11 @@ D0/D1D6: 03 02        ORA $02,S
 D0/D1D8: 00 00        BRK $00
 D0/D1DA: 00 00        BRK $00
 D0/D1DC: 00 00        BRK $00
-D0/D1DE: 80 80        BRA $D160
+D0/D1DE: 80 80        BRA Routine_D0D160
 D0/D1E0: C0 40        CPY #$40
-D0/D1E2: 80 40        BRA $D224
+D0/D1E2: 80 40        BRA Routine_D0D224
 D0/D1E4: C0 40        CPY #$40
-D0/D1E6: 80 80        BRA $D168
+D0/D1E6: 80 80        BRA Routine_D0D168
 D0/D1E8: 00 00        BRK $00
 D0/D1EA: 00 00        BRK $00
 D0/D1EC: 01 00        ORA ($00,X)
@@ -45,5 +45,6 @@ D0/D1FE: 04 00        TSB $00
 D0/D200: 00 00        BRK $00
 D0/D202: 00 00        BRK $00
 D0/D204: 00 00        BRK $00
-D0/D206: 80 00        BRA $D208
+D0/D206: 80 00        BRA Local_D0D208
+Local_D0D208:
 D0/D208: 40           RTI

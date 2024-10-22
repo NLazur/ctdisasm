@@ -3,14 +3,15 @@ Routine_D11D25:
 D1/1D25: 28           PLP
 D1/1D26: 00 00        BRK $00
 D1/1D28: 11 80        ORA ($80),Y
+Local_D11D2A:
 D1/1D2A: C0 00        CPY #$00
 D1/1D2C: FF FF 11 80  SBC $8011FF,X
 D1/1D30: 2A           ROL
 D1/1D31: C2 06        REP #$06
-D1/1D33: 10 C4        BPL $1CF9
+D1/1D33: 10 C4        BPL Routine_D11CF9
 D1/1D35: 0C 10 C6     TSB $C610
 D1/1D38: 12 00        ORA ($00)
-D1/1D3A: 22 C0 00 C0  JSR $C000C0
+D1/1D3A: 22 C0 00 C0  JSR Routine_C000C0
 D1/1D3E: C8           INY
 D1/1D3F: 00 CA        BRK $CA
 D1/1D41: 00 E8        BRK $E8
@@ -29,30 +30,31 @@ D1/1D5B: C0 00        CPY #$00
 D1/1D5D: FF FF 11 80  SBC $8011FF,X
 D1/1D61: AA           TAX
 D1/1D62: C2 06        REP #$06
-D1/1D64: 10 C4        BPL $1D2A
+D1/1D64: 10 C4        BPL Local_D11D2A
 D1/1D66: 0C 10 C6     TSB $C610
 D1/1D69: 12 10        ORA ($10)
 D1/1D6B: C8           INY
 D1/1D6C: 18           CLC
-D1/1D6D: 10 2A        BPL $1D99
+D1/1D6D: 10 2A        BPL Routine_D11D99
 D1/1D6F: CA           DEX
 D1/1D70: 1E 10 CC     ASL $CC10,X
 D1/1D73: 24 10        BIT $10
+Local_D11D75:
 D1/1D75: CE 2A 10     DEC $102A
 D1/1D78: 00 01        BRK $01
 D1/1D7A: 55 30        EOR $30,X
 D1/1D7C: 08           PHP
 D1/1D7D: E2 36        SEP #$36
-D1/1D7F: 10 E4        BPL $1D65
+D1/1D7F: 10 E4        BPL Routine_D11D65
 D1/1D81: 3C 10 E6     BIT $E610,X
 D1/1D84: 42 10        WDM $10
 D1/1D86: E8           INX
 D1/1D87: 55 48        EOR $48,X
-D1/1D89: 10 EA        BPL $1D75
+D1/1D89: 10 EA        BPL Local_D11D75
 D1/1D8B: 4E 10 EC     LSR $EC10
 D1/1D8E: 54 10 EE     MVN $10,$EE
 D1/1D91: 5A           PHY
-D1/1D92: 10 E0        BPL $1D74
+D1/1D92: 10 E0        BPL Routine_D11D74
 D1/1D94: 41 44        EOR ($44,X)
 D1/1D96: 00 FF        BRK $FF
 D1/1D98: 60           RTS

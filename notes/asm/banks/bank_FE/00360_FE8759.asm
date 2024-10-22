@@ -7,10 +7,10 @@ FE/875F: 99 24 08     STA $0824,Y
 FE/8762: 08           PHP
 FE/8763: 08           PHP
 FE/8764: 9E 90 9A     STZ $9A90,X
-FE/8767: B0 A0        BCS $8709
+FE/8767: B0 A0        BCS Routine_FE8709
 FE/8769: AE BF 00     LDX $00BF
 FE/876C: 8C A9 76     STY $76A9
-FE/876F: 10 25        BPL $8796
+FE/876F: 10 25        BPL Local_FE8796
 FE/8771: B5 10        LDA $10,X
 FE/8773: 91 74        STA ($74),Y
 FE/8775: 01 DD        ORA ($DD,X)
@@ -27,7 +27,8 @@ FE/878B: CE CE CF     DEC $CFCE
 FE/878E: DE 03 02     DEC $0203,X
 FE/8791: 41 00        EOR ($00,X)
 FE/8793: 68           PLA
-FE/8794: 90 8A        BCC $8720
+FE/8794: 90 8A        BCC Routine_FE8720
+Local_FE8796:
 FE/8796: 8A           TXA
 FE/8797: 4D 01 8E     EOR $8E01
 FE/879A: 76 18        ROR $18,X
@@ -44,11 +45,11 @@ FE/87B3: 11 99        ORA ($99),Y
 FE/87B5: 9E FD 0C     STZ $0CFD,X
 FE/87B8: 11 BF        ORA ($BF),Y
 FE/87BA: B5 18        LDA $18,X
-FE/87BC: B0 0A        BCS $87C8
+FE/87BC: B0 0A        BCS Routine_FE87C8
 FE/87BE: 34 4A        BIT $4A,X
 FE/87C0: 00 5A        BRK $5A
 FE/87C2: 97 08        STA [$08],Y
-FE/87C4: 10 1A        BPL $87E0
+FE/87C4: 10 1A        BPL Local_FE87E0
 FE/87C6: DE DC 82     DEC $82DC,X
 FE/87C9: 08           PHP
 FE/87CA: 46 11        LSR $11
@@ -60,6 +61,7 @@ FE/87D5: EF 34 4A 00  SBC $004A34
 FE/87D9: 8B           PHB
 FE/87DA: EC 0A 10     CPX $100A
 FE/87DD: 09 9C 50     ORA #$509C
+Local_FE87E0:
 FE/87E0: 11 38        ORA ($38),Y
 FE/87E2: 11 6C        ORA ($6C),Y
 FE/87E4: 02 FF        COP $FF
@@ -73,7 +75,7 @@ FE/87F1: 09 50 19     ORA #$1950
 FE/87F4: 77 09        ADC [$09],Y
 FE/87F6: 32 9D        AND ($9D)
 FE/87F8: F8           SED
-FE/87F9: 10 F0        BPL $87EB
+FE/87F9: 10 F0        BPL Routine_FE87EB
 FE/87FB: F1 04        SBC ($04),Y
 FE/87FD: 18           CLC
 FE/87FE: 00 79        BRK $79
@@ -86,7 +88,7 @@ FE/880C: 0B           PHD
 FE/880D: C4 DD        CPY $DD
 FE/880F: 8B           PHB
 FE/8810: 4D 12 9A     EOR $9A12
-FE/8813: 90 94        BCC $87A9
+FE/8813: 90 94        BCC Routine_FE87A9
 FE/8815: 6C 1A AC     JMP ($AC1A)
 FE/8818: 2B           PLD
 FE/8819: 03 00        ORA $00,S
@@ -134,11 +136,11 @@ FE/886E: E3 0B        SBC $0B,S
 FE/8870: 8A           TXA
 FE/8871: 91 12        STA ($12),Y
 FE/8873: AA           TAX
-FE/8874: 90 30        BCC $88A6
+FE/8874: 90 30        BCC Routine_FE88A6
 FE/8876: 8A           TXA
 FE/8877: D1 AE        CMP ($AE),Y
 FE/8879: AF 28 99 00  LDA $009928
-FE/887D: 4C D4 D5     JMP $D5D4
+FE/887D: 4C D4 D5     JMP Routine_FED5D4
 FE/8880: 99 84 08     STA $0884,Y
 FE/8883: DA           PHX
 FE/8884: DB           STP

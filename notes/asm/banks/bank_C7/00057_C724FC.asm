@@ -1,8 +1,9 @@
 ; Bank: C7 | Start Address: 24FC
 Routine_C724FC:
+Local_C724FC:
 C7/24FC: 88           DEY
-C7/24FD: 10 FD        BPL $24FC
-C7/24FF: 10 F5        BPL $24F6
+C7/24FD: 10 FD        BPL Local_C724FC
+C7/24FF: 10 F5        BPL Routine_C724F6
 C7/2501: 8F 30 F1 8F  STA $8FF130
 C7/2505: 2A           ROL
 C7/2506: FA           PLX

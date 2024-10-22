@@ -12,6 +12,7 @@ C7/53A6: C2 DB        REP #$DB
 C7/53A8: 08           PHP
 C7/53A9: D4 6F        PEI $6F
 C7/53AB: E2 02        SEP #$02
+Local_C753AD:
 C7/53AD: 8B           PHB
 C7/53AE: DA           PHX
 C7/53AF: 05 E3        ORA $E3
@@ -36,7 +37,7 @@ C7/53D2: 0C 0B 09     TSB $090B
 C7/53D5: BF DA FE E3  LDA $E3FEDA,X
 C7/53D9: EB           XBA
 C7/53DA: C4 00        CPY $00
-C7/53DC: D0 CF        BNE $53AD
+C7/53DC: D0 CF        BNE Local_C753AD
 C7/53DE: 14 08        TRB $08
 C7/53E0: C5 A8        CMP $A8
 C7/53E2: 08           PHP
@@ -49,6 +50,7 @@ C7/53EE: D6 03        DEC $03,X
 C7/53F0: D2 D4        CMP ($D4)
 C7/53F2: C5 48        CMP $48
 C7/53F4: 54 D7 CB     MVN $D7,$CB
+Local_C753F7:
 C7/53F7: 00 01        BRK $01
 C7/53F9: BF C9 08 01  LDA $0108C9,X
 C7/53FD: 7B           TDC
@@ -70,7 +72,7 @@ C7/541E: 14 32        TRB $32
 C7/5420: 07 EB        ORA [$EB]
 C7/5422: E2 00        SEP #$00
 C7/5424: C4 29        CPY $29
-C7/5426: D0 CF        BNE $53F7
+C7/5426: D0 CF        BNE Local_C753F7
 C7/5428: 1B           TCS
 C7/5429: E0 1F 0A     CPX #$0A1F
 C7/542C: D1 C4        CMP ($C4),Y
@@ -78,7 +80,7 @@ C7/542E: 00 03        BRK $03
 C7/5430: E3 E2        SBC $E2,S
 C7/5432: 00 C4        BRK $C4
 C7/5434: 55 DC        EOR $DC,X
-C7/5436: 22 D6 06 C9  JSR $C906D6
+C7/5436: 22 D6 06 C9  JSR Routine_C906D6
 C7/543A: 05 01        ORA $01
 C7/543C: 7F D4 18 D2  ADC $D218D4,X
 C7/5440: CA           DEX
@@ -95,6 +97,7 @@ C7/5457: 1D 9E EB     ORA $EB9E,X
 C7/545A: C4 59        CPY $59
 C7/545C: D2 D7        CMP ($D7)
 C7/545E: E0 14 20     CPX #$2014
+Local_C75461:
 C7/5461: EB           XBA
 C7/5462: DC 04 D8     JMP [$D804]
 C7/5465: 6D E0 14     ADC $14E0
@@ -118,7 +121,7 @@ C7/548C: 0A           ASL
 C7/548D: 0A           ASL
 C7/548E: 0A           ASL
 C7/548F: EB           XBA
-C7/5490: D0 CF        BNE $5461
+C7/5490: D0 CF        BNE Local_C75461
 C7/5492: 1A           INC
 C7/5493: E0 1C 0A     CPX #$0A1C
 C7/5496: 0A           ASL
@@ -151,7 +154,7 @@ C7/54C7: 3C 0A E0     BIT $E00A,X
 C7/54CA: 0E 00 EB     ASL $EB00
 C7/54CD: D4 C4        PEI $C4
 C7/54CF: 00 C5        BRK $C5
-C7/54D1: 5C 7F DC 07  JMP $07DC7F
+C7/54D1: 5C 7F DC 07  JMP Routine_07DC7F
 C7/54D5: D6 03        DEC $03,X
 C7/54D7: C9 08        CMP #$08
 C7/54D9: 02 53        COP $53
@@ -204,7 +207,7 @@ C7/553A: C8           INY
 C7/553B: FF F8 A9 E0  SBC $E0A9F8,X
 C7/553F: 0D A8 EB     ORA $EBA8
 C7/5542: C4 2F        CPY $2F
-C7/5544: D0 D4        BNE $551A
+C7/5544: D0 D4        BNE Routine_C7551A
 C7/5546: CB           WAI
 C7/5547: 00 01        BRK $01
 C7/5549: 7F CD 1C 60  ADC $601CCD,X
@@ -222,7 +225,7 @@ C7/5562: C8           INY
 C7/5563: FF 0A E2 00  SBC $00E20A,X
 C7/5567: AD E3 C4     LDA $C4E3
 C7/556A: 00 C5        BRK $C5
-C7/556C: 4C 4F DC     JMP $DC4F
+C7/556C: 4C 4F DC     JMP Routine_C7DC4F
 C7/556F: 00 D6        BRK $D6
 C7/5571: 03 CB        ORA $CB,S
 C7/5573: 00 01        BRK $01

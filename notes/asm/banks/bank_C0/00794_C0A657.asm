@@ -6,15 +6,17 @@ C0/A65D: A5 5A        LDA $5A
 C0/A65F: 9F 00 70 7E  STA $7E7000,X
 C0/A663: A5 5C        LDA $5C
 C0/A665: 9F 40 70 7E  STA $7E7040,X
-C0/A669: 80 D6        BRA $A641
+C0/A669: 80 D6        BRA Routine_C0A641
 C0/A66B: A9 80        LDA #$80
 C0/A66D: A2 00 00     LDX #$0000
+Local_C0A670:
 C0/A670: 9F 80 70 7E  STA $7E7080,X
 C0/A674: E8           INX
 C0/A675: E0 40 00     CPX #$0040
-C0/A678: 90 F6        BCC $A670
+C0/A678: 90 F6        BCC Local_C0A670
 C0/A67A: C2 20        REP #$20
 C0/A67C: A0 80 AF     LDY #$AF80
+Local_C0A67F:
 C0/A67F: A2 80 70     LDX #$7080
 C0/A682: A9 3F 00     LDA #$003F
 C0/A685: 8B           PHB
@@ -25,7 +27,7 @@ C0/A68B: 38           SEC
 C0/A68C: E9 40 01     SBC #$0140
 C0/A68F: A8           TAY
 C0/A690: C0 80 70     CPY #$7080
-C0/A693: D0 EA        BNE $A67F
+C0/A693: D0 EA        BNE Local_C0A67F
 C0/A695: AD 00 01     LDA $0100       ; load entrance trigger data
 C0/A698: 29 FF 01     AND #$01FF
 C0/A69B: 0A           ASL
@@ -38,45 +40,50 @@ C0/A6A5: BF 00 00 E5  LDA $E50000,X
 C0/A6A9: 85 56        STA $56
 C0/A6AB: A6 04        LDX $04
 C0/A6AD: 64 54        STZ $54
+Local_C0A6AF:
 C0/A6AF: E4 56        CPX $56
-C0/A6B1: B0 5C        BCS $A70F
+C0/A6B1: B0 5C        BCS Local_C0A70F
 C0/A6B3: A9 00 00     LDA #$0000
 C0/A6B6: E2 20        SEP #$20
 C0/A6B8: BF 02 00 E5  LDA $E50002,X
-C0/A6BC: 30 1E        BMI $A6DC
+C0/A6BC: 30 1E        BMI Local_C0A6DC
 C0/A6BE: A8           TAY
 C0/A6BF: C2 20        REP #$20
 C0/A6C1: BF 00 00 E5  LDA $E50000,X
 C0/A6C5: 86 52        STX $52
+Local_C0A6C7:
 C0/A6C7: 25 1E        AND $1E
 C0/A6C9: AA           TAX
 C0/A6CA: E2 20        SEP #$20
 C0/A6CC: A5 54        LDA $54
 C0/A6CE: 9F 80 70 7E  STA $7E7080,X
 C0/A6D2: C0 00 00     CPY #$0000
-C0/A6D5: F0 2A        BEQ $A701
+C0/A6D5: F0 2A        BEQ Local_C0A701
 C0/A6D7: 88           DEY
 C0/A6D8: E8           INX
 C0/A6D9: 8A           TXA
-C0/A6DA: 80 EB        BRA $A6C7
+C0/A6DA: 80 EB        BRA Local_C0A6C7
+Local_C0A6DC:
 C0/A6DC: 29 7F        AND #$7F
 C0/A6DE: A8           TAY
 C0/A6DF: C2 20        REP #$20
 C0/A6E1: BF 00 00 E5  LDA $E50000,X
 C0/A6E5: 86 52        STX $52
+Local_C0A6E7:
 C0/A6E7: 25 1E        AND $1E
 C0/A6E9: AA           TAX
 C0/A6EA: E2 20        SEP #$20
 C0/A6EC: A5 54        LDA $54
 C0/A6EE: 9F 80 70 7E  STA $7E7080,X
 C0/A6F2: C0 00 00     CPY #$0000
-C0/A6F5: F0 0A        BEQ $A701
+C0/A6F5: F0 0A        BEQ Local_C0A701
 C0/A6F7: 88           DEY
 C0/A6F8: C2 20        REP #$20
 C0/A6FA: 8A           TXA
 C0/A6FB: 18           CLC
 C0/A6FC: 69 00 01     ADC #$0100
-C0/A6FF: 80 E6        BRA $A6E7
+C0/A6FF: 80 E6        BRA Local_C0A6E7
+Local_C0A701:
 C0/A701: 1A           INC
 C0/A702: 85 54        STA $54
 C0/A704: C2 20        REP #$20
@@ -84,6 +91,7 @@ C0/A706: A5 52        LDA $52
 C0/A708: 18           CLC
 C0/A709: 69 07 00     ADC #$0007
 C0/A70C: AA           TAX
-C0/A70D: 80 A0        BRA $A6AF
+C0/A70D: 80 A0        BRA Local_C0A6AF
+Local_C0A70F:
 C0/A70F: E2 20        SEP #$20
 C0/A711: 60           RTS

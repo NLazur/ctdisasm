@@ -33,6 +33,6 @@ C2/1E79: 0A           ASL
 C2/1E7A: 0A           ASL
 C2/1E7B: 69 20 09     ADC #$0920
 C2/1E7E: 9D 0E 00     STA $000E,X
-C2/1E81: 20 C0 1E     JSR $1EC0
+C2/1E81: 20 C0 1E     JSR Routine_C21EC0
 C2/1E84: 18           CLC
 C2/1E85: 60           RTS

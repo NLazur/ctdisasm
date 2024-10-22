@@ -13,8 +13,8 @@ CE/6BCA: 6D 85 09     ADC $0985
 CE/6BCD: 93 09        STA ($09,S),Y
 CE/6BCF: 93 09        STA ($09,S),Y
 CE/6BD1: 0D 06 1D     ORA $1D06
-CE/6BD4: 20 0A 2D     JSR $2D0A
-CE/6BD7: 80 02        BRA $6BDB
+CE/6BD4: 20 0A 2D     JSR Routine_CE2D0A
+CE/6BD7: 80 02        BRA Routine_CE6BDB
 CE/6BD9: E8           INX
 CE/6BDA: 26 0B        ROL $0B
 CE/6BDC: 03 27        ORA $27,S

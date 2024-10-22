@@ -42,7 +42,7 @@ CC/B2EB: FE 04 00     INC $0004,X
 CC/B2EE: 3A           DEC
 CC/B2EF: 01 FE        ORA ($FE,X)
 CC/B2F1: 14 3E        TRB $3E
-CC/B2F3: 30 37        BMI $B32C
+CC/B2F3: 30 37        BMI Routine_CCB32C
 CC/B2F5: 00 37        BRK $37
 CC/B2F7: 00 37        BRK $37
 CC/B2F9: 00 3E        BRK $3E
@@ -105,7 +105,7 @@ CC/B372: FE 04 00     INC $0004,X
 CC/B375: 3A           DEC
 CC/B376: 01 FE        ORA ($FE,X)
 CC/B378: 14 3E        TRB $3E
-CC/B37A: 20 37 00     JSR $0037
+CC/B37A: 20 37 00     JSR Routine_CC0037
 CC/B37D: 37 00        AND [$00],Y
 CC/B37F: 37 00        AND [$00],Y
 CC/B381: 3E FE 15     ROL $15FE,X
@@ -238,7 +238,7 @@ CC/B4A3: 3C 32 12     BIT $1232,X
 CC/B4A6: 37 05        AND [$05],Y
 CC/B4A8: 00 00        BRK $00
 CC/B4AA: 3E C8 3C     ROL $3CC8,X
-CC/B4AD: 50 3E        BVC $B4ED
+CC/B4AD: 50 3E        BVC Routine_CCB4ED
 CC/B4AF: C8           INY
 CC/B4B0: 3C 50 3C     BIT $3C50,X
 CC/B4B3: 3C 33 00     BIT $0033,X

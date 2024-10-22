@@ -2,7 +2,7 @@
 Routine_C1774E:
 C1/774E: AD 10 A0     LDA $A010
 C1/7751: C9 08        CMP #$08
-C1/7753: B0 3A        BCS $778F
+C1/7753: B0 3A        BCS Local_C1778F
 C1/7755: AA           TAX
 C1/7756: BD 14 A0     LDA $A014,X
 C1/7759: AA           TAX
@@ -10,7 +10,7 @@ C1/775A: 86 80        STX $80
 C1/775C: A9 18        LDA #$18
 C1/775E: 85 AE        STA $AE
 C1/7760: BD 4A A3     LDA $A34A,X
-C1/7763: 20 F9 01     JSR $01F9
+C1/7763: 20 F9 01     JSR Routine_C101F9
 C1/7766: 85 82        STA $82
 C1/7768: A6 80        LDX $80
 C1/776A: A9 18        LDA #$18
@@ -18,7 +18,7 @@ C1/776C: 85 AE        STA $AE
 C1/776E: 18           CLC
 C1/776F: BD 4A A3     LDA $A34A,X
 C1/7772: 69 40        ADC #$40
-C1/7774: 20 F9 01     JSR $01F9
+C1/7774: 20 F9 01     JSR Routine_C101F9
 C1/7777: 85 83        STA $83
 C1/7779: A6 80        LDX $80
 C1/777B: 18           CLC
@@ -29,7 +29,8 @@ C1/7784: 18           CLC
 C1/7785: BD 0C 1D     LDA $1D0C,X
 C1/7788: 65 83        ADC $83
 C1/778A: 8D B0 A2     STA $A2B0
-C1/778D: 80 41        BRA $77D0
+C1/778D: 80 41        BRA Local_C177D0
+Local_C1778F:
 C1/778F: 38           SEC
 C1/7790: E9 08        SBC #$08
 C1/7792: AA           TAX
@@ -37,7 +38,7 @@ C1/7793: 86 80        STX $80
 C1/7795: A9 18        LDA #$18
 C1/7797: 85 AE        STA $AE
 C1/7799: BD 55 A3     LDA $A355,X
-C1/779C: 20 F9 01     JSR $01F9
+C1/779C: 20 F9 01     JSR Routine_C101F9
 C1/779F: 85 82        STA $82
 C1/77A1: 64 83        STZ $83
 C1/77A3: A6 80        LDX $80
@@ -46,7 +47,7 @@ C1/77A7: 85 AE        STA $AE
 C1/77A9: 18           CLC
 C1/77AA: BD 55 A3     LDA $A355,X
 C1/77AD: 69 40        ADC #$40
-C1/77AF: 20 F9 01     JSR $01F9
+C1/77AF: 20 F9 01     JSR Routine_C101F9
 C1/77B2: 85 84        STA $84
 C1/77B4: 64 85        STZ $85
 C1/77B6: A5 80        LDA $80
@@ -62,4 +63,5 @@ C1/77C8: 65 84        ADC $84
 C1/77CA: 8D B0 A2     STA $A2B0
 C1/77CD: 7B           TDC
 C1/77CE: E2 20        SEP #$20
+Local_C177D0:
 C1/77D0: 60           RTS

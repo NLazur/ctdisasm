@@ -1,23 +1,24 @@
 ; Bank: FE | Start Address: 78CD
 Routine_FE78CD:
 FE/78CD: FE 24 E2     INC $E224,X
-FE/78D0: 10 3E        BPL $7910
-FE/78D2: 20 30 10     JSR $1030
+FE/78D0: 10 3E        BPL Routine_FE7910
+FE/78D2: 20 30 10     JSR Routine_FE1030
 FE/78D5: 2C 01 78     BIT $7801
-FE/78D8: 10 02        BPL $78DC
-FE/78DA: 10 C9        BPL $78A5
-FE/78DC: 10 7F        BPL $795D
+FE/78D8: 10 02        BPL Local_FE78DC
+FE/78DA: 10 C9        BPL Routine_FE78A5
+Local_FE78DC:
+FE/78DC: 10 7F        BPL Routine_FE795D
 FE/78DE: 0C 30 50     TSB $5030
 FE/78E1: 00 23        BRK $23
 FE/78E3: 11 7E        ORA ($7E),Y
 FE/78E5: 01 F8        ORA ($F8,X)
-FE/78E7: 20 2D 11     JSR $112D
+FE/78E7: 20 2D 11     JSR Routine_FE112D
 FE/78EA: BA           TSX
-FE/78EB: 30 24        BMI $7911
+FE/78EB: 30 24        BMI Local_FE7911
 FE/78ED: 5E 25 9D     LSR $9D25,X
-FE/78F0: 10 36        BPL $7928
-FE/78F2: 10 6A        BPL $795E
-FE/78F4: 10 FB        BPL $78F1
+FE/78F0: 10 36        BPL Routine_FE7928
+FE/78F2: 10 6A        BPL Local_FE795E
+FE/78F4: 10 FB        BPL Routine_FE78F1
 FE/78F6: 00 24        BRK $24
 FE/78F8: FF 10 2C 27  SBC $272C10,X
 FE/78FC: 47 00        EOR [$00]
@@ -26,13 +27,15 @@ FE/7900: 87 00        STA [$00]
 FE/7902: 2C 2F FE     BIT $FE2F
 FE/7905: 00 26        BRK $26
 FE/7907: 26 FE        ROL $FE
-FE/7909: 22 3F 30 07  JSR $07303F
+FE/7909: 22 3F 30 07  JSR Routine_07303F
 FE/790D: 00 48        BRK $48
-FE/790F: 10 80        BPL $7891
-FE/7911: 70 2B        BVS $793E
-FE/7913: 10 FC        BPL $7911
-FE/7915: 10 2B        BPL $7942
-FE/7917: 10 47        BPL $7960
+FE/790F: 10 80        BPL Routine_FE7891
+Local_FE7911:
+FE/7911: 70 2B        BVS Routine_FE793E
+Local_FE7913:
+FE/7913: 10 FC        BPL Local_FE7911
+FE/7915: 10 2B        BPL Routine_FE7942
+FE/7917: 10 47        BPL Local_FE7960
 FE/7919: F5 00        SBC $00,X
 FE/791B: 3F 10 52 01  AND $015210,X
 FE/791F: 25 25        AND $25
@@ -43,7 +46,7 @@ FE/7927: 8D 20 2F     STA $2F20
 FE/792A: 2F 3A 11 C2  AND $C2113A
 FE/792E: 11 B1        ORA ($B1),Y
 FE/7930: 01 0B        ORA ($0B,X)
-FE/7932: 20 FF B1     JSR $B1FF
+FE/7932: 20 FF B1     JSR Routine_FEB1FF
 FE/7935: 01 C2        ORA ($C2,X)
 FE/7937: 21 45        AND ($45,X)
 FE/7939: 31 89        AND ($89),Y
@@ -51,10 +54,10 @@ FE/793B: 01 40        ORA ($40,X)
 FE/793D: 21 1A        AND ($1A,X)
 FE/793F: 01 46        ORA ($46,X)
 FE/7941: 21 48        AND ($48,X)
-FE/7943: 10 CE        BPL $7913
+FE/7943: 10 CE        BPL Local_FE7913
 FE/7945: 25 8B        AND $8B
 FE/7947: 00 08        BRK $08
-FE/7949: 20 A3 00     JSR $00A3
+FE/7949: 20 A3 00     JSR Routine_FE00A3
 FE/794C: 25 24        AND $24
 FE/794E: FD 11 BE     SBC $BE11,X
 FE/7951: 11 FF        ORA ($FF),Y
@@ -64,16 +67,18 @@ FE/7956: 02 3B        COP $3B
 FE/7958: 12 4D        ORA ($4D)
 FE/795A: 02 48        COP $48
 FE/795C: 00 0A        BRK $0A
+Local_FE795E:
 FE/795E: 32 08        AND ($08)
-FE/7960: 30 47        BMI $79A9
+Local_FE7960:
+FE/7960: 30 47        BMI Routine_FE79A9
 FE/7962: 12 3F        ORA ($3F)
 FE/7964: 0B           PHD
 FE/7965: 12 59        ORA ($59)
 FE/7967: 02 F0        COP $F0
-FE/7969: 30 68        BMI $79D3
-FE/796B: 10 6A        BPL $79D7
-FE/796D: 30 12        BMI $7981
-FE/796F: 22 2E 2E D9  JSR $D92E2E
+FE/7969: 30 68        BMI Routine_FE79D3
+FE/796B: 10 6A        BPL Routine_FE79D7
+FE/796D: 30 12        BMI Routine_FE7981
+FE/796F: 22 2E 2E D9  JSR Routine_D92E2E
 FE/7973: DA           PHX
 FE/7974: 11 26        ORA ($26),Y
 FE/7976: 2D 07 00     AND $0007
@@ -82,13 +87,13 @@ FE/797B: 2C 09 00     BIT $0009
 FE/797E: 05 00        ORA $00
 FE/7980: 86 2C        STX $2C
 FE/7982: 2A           ROL
-FE/7983: 22 E4 01 26  JSR $2601E4
+FE/7983: 22 E4 01 26  JSR Routine_2601E4
 FE/7987: 2A           ROL
 FE/7988: 2A           ROL
 FE/7989: 2A           ROL
-FE/798A: 10 20        BPL $79AC
+FE/798A: 10 20        BPL Routine_FE79AC
 FE/798C: C5 08        CMP $08
-FE/798E: 70 2D        BVS $79BD
+FE/798E: 70 2D        BVS Routine_FE79BD
 FE/7990: 1E 20 2C     ASL $2C20,X
 FE/7993: 2D 2D 24     AND $242D
 FE/7996: 40           RTI

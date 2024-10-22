@@ -7,20 +7,20 @@ FE/8298: AF 24 7C 30  LDA $307C24
 FE/829C: FF C0 04 58  SBC $5804C0,X
 FE/82A0: 14 51        TRB $51
 FE/82A2: 24 0F        BIT $0F
-FE/82A4: 10 E3        BPL $8289
+FE/82A4: 10 E3        BPL Routine_FE8289
 FE/82A6: 04 67        TSB $67
 FE/82A8: 34 08        BIT $08,X
 FE/82AA: 00 99        BRK $99
-FE/82AC: 20 BF 70     JSR $70BF
+FE/82AC: 20 BF 70     JSR Routine_FE70BF
 FE/82AF: 24 D4        BIT $D4
-FE/82B1: 20 E9 12     JSR $12E9
+FE/82B1: 20 E9 12     JSR Routine_FE12E9
 FE/82B4: C8           INY
 FE/82B5: 13 FA        ORA ($FA,S),Y
 FE/82B7: 12 F6        ORA ($F6)
 FE/82B9: 02 3C        COP $3C
 FE/82BB: 32 12        AND ($12)
 FE/82BD: FF 09 10 99  SBC $991009,X
-FE/82C1: 20 79 02     JSR $0279
+FE/82C1: 20 79 02     JSR Routine_FE0279
 FE/82C4: C9 40        CMP #$40
 FE/82C6: 00 61        BRK $61
 FE/82C8: EA           NOP
@@ -32,5 +32,5 @@ FE/82D2: 33 A8        AND ($A8,S),Y
 FE/82D4: 03 3F        ORA $3F,S
 FE/82D6: 33 45        AND ($45,S),Y
 FE/82D8: 13 3D        ORA ($3D,S),Y
-FE/82DA: 10 3D        BPL $8319
+FE/82DA: 10 3D        BPL Routine_FE8319
 FE/82DC: 40           RTI

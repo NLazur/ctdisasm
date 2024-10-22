@@ -10,5 +10,5 @@ D0/8CBD: FC 7B BF     JSR ($BF7B,X)
 D0/8CC0: 00 00        BRK $00
 D0/8CC2: 00 00        BRK $00
 D0/8CC4: 00 00        BRK $00
-D0/8CC6: 80 80        BRA $8C48
+D0/8CC6: 80 80        BRA Routine_D08C48
 D0/8CC8: 60           RTS

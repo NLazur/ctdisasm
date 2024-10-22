@@ -1,16 +1,18 @@
 ; Bank: CC | Start Address: 48CA
 Routine_CC48CA:
 CC/48CA: 00 01        BRK $01
-CC/48CC: D0 07        BNE $48D5
-CC/48CE: 20 00 FF     JSR $FF00
+CC/48CC: D0 07        BNE Local_CC48D5
+CC/48CE: 20 00 FF     JSR Routine_CCFF00
 CC/48D1: 00 00        BRK $00
 CC/48D3: 00 0A        BRK $0A
+Local_CC48D5:
 CC/48D5: 0E 0A 64     ASL $640A
 CC/48D8: 0F 32 28 7F  ORA $7F2832
 CC/48DC: 04 04        TSB $04
 CC/48DE: 04 04        TSB $04
-CC/48E0: 80 02        BRA $48E4
+CC/48E0: 80 02        BRA Local_CC48E4
 CC/48E2: 00 10        BRK $10
+Local_CC48E4:
 CC/48E4: 00 02        BRK $02
 CC/48E6: 00 06        BRK $06
 CC/48E8: 00 00        BRK $00
@@ -32,7 +34,7 @@ CC/4907: 32 15        AND ($15)
 CC/4909: 7F 04 04 04  ADC $040404,X
 CC/490D: 04 00        TSB $00
 CC/490F: 00 00        BRK $00
-CC/4911: 90 01        BCC $4914
+CC/4911: 90 01        BCC Routine_CC4914
 CC/4913: 11 00        ORA ($00),Y
 CC/4915: 00 00        BRK $00
 CC/4917: 00 00        BRK $00
@@ -52,8 +54,9 @@ CC/4931: 0E 0A 64     ASL $640A
 CC/4934: 0F 32 3C 7F  ORA $7F3C32
 CC/4938: 04 04        TSB $04
 CC/493A: 04 04        TSB $04
-CC/493C: 80 02        BRA $4940
+CC/493C: 80 02        BRA Local_CC4940
 CC/493E: 00 2D        BRK $2D
+Local_CC4940:
 CC/4940: 00 06        BRK $06
 CC/4942: 00 00        BRK $00
 CC/4944: 00 00        BRK $00

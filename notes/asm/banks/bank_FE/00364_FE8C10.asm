@@ -8,7 +8,7 @@ FE/8C19: 2A           ROL
 FE/8C1A: 83 18        STA $18,S
 FE/8C1C: E5 1C        SBC $1C
 FE/8C1E: 00 C4        BRK $C4
-FE/8C20: 20 A3 1C     JSR $1CA3
+FE/8C20: 20 A3 1C     JSR Routine_FE1CA3
 FE/8C23: 04 25        TSB $25
 FE/8C25: 63 21        ADC $21,S
 FE/8C27: 00 85        BRK $85

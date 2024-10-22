@@ -2,7 +2,7 @@
 Routine_D03F9B:
 D0/3F9B: C0 40 C0     CPY #$C040
 D0/3F9E: A0 60        LDY #$60
-D0/3FA0: D0 30        BNE $3FD2
+D0/3FA0: D0 30        BNE Local_D03FD2
 D0/3FA2: E8           INX
 D0/3FA3: 18           CLC
 D0/3FA4: F4 0C 74     PEA $740C
@@ -25,8 +25,9 @@ D0/3FC5: 00 00        BRK $00
 D0/3FC7: 00 00        BRK $00
 D0/3FC9: 00 00        BRK $00
 D0/3FCB: 00 80        BRK $80
-D0/3FCD: 80 40        BRA $400F
+D0/3FCD: 80 40        BRA Routine_D0400F
 D0/3FCF: C0 B0 F0     CPY #$F0B0
+Local_D03FD2:
 D0/3FD2: 68           PLA
 D0/3FD3: 78           SEI
 D0/3FD4: 1C 1C 07     TRB $071C
@@ -41,11 +42,11 @@ D0/3FE5: 01 00        ORA ($00,X)
 D0/3FE7: 00 00        BRK $00
 D0/3FE9: 00 00        BRK $00
 D0/3FEB: 00 80        BRK $80
-D0/3FED: 80 80        BRA $3F6F
-D0/3FEF: 80 40        BRA $4031
+D0/3FED: 80 80        BRA Routine_D03F6F
+D0/3FEF: 80 40        BRA Routine_D04031
 D0/3FF1: C0 20 E0     CPY #$E020
-D0/3FF4: 20 E0 90     JSR $90E0
-D0/3FF7: F0 BA        BEQ $3FB3
+D0/3FF4: 20 E0 90     JSR Routine_D090E0
+D0/3FF7: F0 BA        BEQ Routine_D03FB3
 D0/3FF9: C6 BA        DEC $BA
 D0/3FFB: C6 BA        DEC $BA
 D0/3FFD: C6 BA        DEC $BA

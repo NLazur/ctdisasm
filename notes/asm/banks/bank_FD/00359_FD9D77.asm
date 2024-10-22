@@ -11,6 +11,7 @@ FD/9D87: 00 46        BRK $46
 FD/9D89: 05 02        ORA $02
 FD/9D8B: 46 05        LSR $05
 FD/9D8D: 04 46        TSB $46
-FD/9D8F: F0 00        BEQ $9D91
+FD/9D8F: F0 00        BEQ Local_FD9D91
+Local_FD9D91:
 FD/9D91: F1 AD        SBC ($AD),Y
 FD/9D93: 60           RTS

@@ -1,9 +1,10 @@
 ; Bank: C6 | Start Address: FC47
 Routine_C6FC47:
 C6/FC47: 01 A0        ORA ($A0,X)
-C6/FC49: F0 E2        BEQ $FC2D
-C6/FC4B: 90 20        BCC $FC6D
-C6/FC4D: F0 00        BEQ $FC4F
+C6/FC49: F0 E2        BEQ Routine_C6FC2D
+C6/FC4B: 90 20        BCC Local_C6FC6D
+C6/FC4D: F0 00        BEQ Local_C6FC4F
+Local_C6FC4F:
 C6/FC4F: B1 00        LDA ($00),Y
 C6/FC51: 00 00        BRK $00
 C6/FC53: 00 00        BRK $00
@@ -19,6 +20,7 @@ C6/FC65: 00 00        BRK $00
 C6/FC67: 00 00        BRK $00
 C6/FC69: 00 00        BRK $00
 C6/FC6B: 00 00        BRK $00
+Local_C6FC6D:
 C6/FC6D: 00 00        BRK $00
 C6/FC6F: 00 00        BRK $00
 C6/FC71: 00 00        BRK $00
@@ -98,6 +100,7 @@ C6/FD04: 3E FD 55     ROL $55FD,X
 C6/FD07: FD 6C FD     SBC $FD6C,X
 C6/FD0A: 83 FD        STA $FD,S
 C6/FD0C: 9A           TXS
+Local_C6FD0D:
 C6/FD0D: FD B1 FD     SBC $FDB1,X
 C6/FD10: 00 01        BRK $01
 C6/FD12: 02 03        COP $03
@@ -114,20 +117,22 @@ C6/FD26: 00 00        BRK $00
 C6/FD28: 01 02        ORA ($02,X)
 C6/FD2A: 03 04        ORA $04,S
 C6/FD2C: 05 06        ORA $06
-C6/FD2E: 80 14        BRA $FD44
-C6/FD30: 80 05        BRA $FD37
+C6/FD2E: 80 14        BRA Local_C6FD44
+C6/FD30: 80 05        BRA Local_C6FD37
 C6/FD32: 0C 08 09     TSB $0908
 C6/FD35: 06 07        ASL $07
+Local_C6FD37:
 C6/FD37: 00 01        BRK $01
 C6/FD39: 01 01        ORA ($01,X)
 C6/FD3B: 01 01        ORA ($01,X)
 C6/FD3D: 01 00        ORA ($00,X)
 C6/FD3F: 01 0B        ORA ($0B,X)
 C6/FD41: 0C 0D 0E     TSB $0E0D
-C6/FD44: 80 80        BRA $FCC6
+Local_C6FD44:
+C6/FD44: 80 80        BRA Routine_C6FCC6
 C6/FD46: 23 80        AND $80,S
 C6/FD48: 07 0E        ORA [$0E]
-C6/FD4A: 80 80        BRA $FCCC
+C6/FD4A: 80 80        BRA Routine_C6FCCC
 C6/FD4C: 06 07        ASL $07
 C6/FD4E: 02 03        COP $03
 C6/FD50: 02 02        COP $02
@@ -142,6 +147,7 @@ C6/FD64: 07 03        ORA [$03]
 C6/FD66: 04 03        TSB $03
 C6/FD68: 02 00        COP $00
 C6/FD6A: 03 03        ORA $03,S
+Local_C6FD6C:
 C6/FD6C: 00 01        BRK $01
 C6/FD6E: 02 03        COP $03
 C6/FD70: 0F 10 11 80  ORA $801110
@@ -155,7 +161,7 @@ C6/FD82: 04 12        TSB $12
 C6/FD84: 13 16        ORA ($16,S),Y
 C6/FD86: 17 18        ORA [$18],Y
 C6/FD88: 19 1A 80     ORA $801A,Y
-C6/FD8B: 80 80        BRA $FD0D
+C6/FD8B: 80 80        BRA Local_C6FD0D
 C6/FD8D: 0A           ASL
 C6/FD8E: 11 0B        ORA ($0B),Y
 C6/FD90: 0C 06 07     TSB $0706
@@ -165,20 +171,22 @@ C6/FD97: 00 05        BRK $05
 C6/FD99: 05 00        ORA $00
 C6/FD9B: 01 02        ORA ($02,X)
 C6/FD9D: 03 0F        ORA $0F,S
-C6/FD9F: 10 11        BPL $FDB2
-C6/FDA1: 80 14        BRA $FDB7
-C6/FDA3: 80 09        BRA $FDAE
-C6/FDA5: 10 0B        BPL $FDB2
+C6/FD9F: 10 11        BPL Local_C6FDB2
+C6/FDA1: 80 14        BRA Routine_C6FDB7
+C6/FDA3: 80 09        BRA Local_C6FDAE
+C6/FDA5: 10 0B        BPL Local_C6FDB2
 C6/FDA7: 0C 06 07     TSB $0706
 C6/FDAA: 04 06        TSB $06
 C6/FDAC: 05 02        ORA $02
+Local_C6FDAE:
 C6/FDAE: 00 06        BRK $06
 C6/FDB0: 06 00        ASL $00
+Local_C6FDB2:
 C6/FDB2: 01 07        ORA ($07,X)
 C6/FDB4: 08           PHP
 C6/FDB5: 09 0A 06     ORA #$060A
-C6/FDB8: 80 22        BRA $FDDC
-C6/FDBA: 80 06        BRA $FDC2
+C6/FDB8: 80 22        BRA Routine_C6FDDC
+C6/FDBA: 80 06        BRA Routine_C6FDC2
 C6/FDBC: 0D 02 80     ORA $8002
 C6/FDBF: 06 07        ASL $07
 C6/FDC1: 01 02        ORA ($02,X)
@@ -246,6 +254,7 @@ C6/FE39: 72 C4        ADC ($C4)
 C6/FE3B: 4F 80 C4 47  EOR $47C480
 C6/FE3F: 8C C4 33     STY $33C4
 C6/FE42: 8E C4 45     STX $45C4
+Local_C6FE45:
 C6/FE45: 9E C4 56     STZ $56C4,X
 C6/FE48: AD C4 49     LDA $49C4
 C6/FE4B: BD C4 04     LDA $04C4,X
@@ -265,6 +274,7 @@ C6/FE66: 0E C5 26     ASL $26C5
 C6/FE69: 1E C5 1C     ASL $1CC5,X
 C6/FE6C: 2E C5 C9     ROL $C9C5
 C6/FE6F: 3C C5 9B     BIT $9BC5,X
+Local_C6FE72:
 C6/FE72: 4A           LSR
 C6/FE73: C5 48        CMP $48
 C6/FE75: 5A           PHY
@@ -272,7 +282,7 @@ C6/FE76: C5 A5        CMP $A5
 C6/FE78: 65 C5        ADC $C5
 C6/FE7A: 51 71        EOR ($71),Y
 C6/FE7C: C5 00        CMP $00
-C6/FE7E: 80 C5        BRA $FE45
+C6/FE7E: 80 C5        BRA Local_C6FE45
 C6/FE80: 02 8B        COP $8B
 C6/FE82: C5 5A        CMP $5A
 C6/FE84: 8F C5 F7 97  STA $97F7C5
@@ -294,7 +304,7 @@ C6/FEA3: DA           PHX
 C6/FEA4: CE C3 6C     DEC $6CC3
 C6/FEA7: CF C3 F5 CF  CMP $CFF5C3
 C6/FEAB: C3 1C        CMP $1C,S
-C6/FEAD: D0 C3        BNE $FE72
+C6/FEAD: D0 C3        BNE Local_C6FE72
 C6/FEAF: EC D1 C3     CPX $C3D1
 C6/FEB2: 5F D3 C3 D8  EOR $D8C3D3,X
 C6/FEB6: D4 C3        PEI $C3
@@ -351,7 +361,7 @@ C6/FF20: 39 6A C6     AND $C66A,Y
 C6/FF23: 3F 79 C6 FE  AND $FEC679,X
 C6/FF27: 88           DEY
 C6/FF28: C6 D7        DEC $D7
-C6/FF2A: 90 C6        BCC $FEF2
+C6/FF2A: 90 C6        BCC Routine_C6FEF2
 C6/FF2C: 89 9A C6     BIT #$C69A
 C6/FF2F: 75 AB        ADC $AB,X
 C6/FF31: C6 C5        DEC $C5

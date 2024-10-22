@@ -2,6 +2,7 @@
 Routine_FD7B3A:
 FD/7B3A: 79 18 60     ADC $6018,Y
 FD/7B3D: 6C 60 F8     JMP ($F860)
+Local_FD7B40:
 FD/7B40: 8A           TXA
 FD/7B41: 03 20        ORA $20,S
 FD/7B43: 74 9F        STZ $9F,X
@@ -17,7 +18,7 @@ FD/7B59: FE C0 38     INC $38C0,X
 FD/7B5C: 00 82        BRK $82
 FD/7B5E: 13 E1        ORA ($E1,S),Y
 FD/7B60: E0 F7        CPX #$F7
-FD/7B62: F0 DC        BEQ $7B40
+FD/7B62: F0 DC        BEQ Local_FD7B40
 FD/7B64: E7 E0        SBC [$E0]
 FD/7B66: 16 16        ASL $16,X
 FD/7B68: 76 1A        ROR $1A,X

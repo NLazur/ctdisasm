@@ -2,10 +2,11 @@
 Routine_FD908D:
 FD/908D: 0D 1A 04     ORA $041A
 FD/9090: 81 1A        STA ($1A,X)
-FD/9092: 30 01        BMI $9095
+FD/9092: 30 01        BMI Routine_FD9095
 FD/9094: 16 00        ASL $00,X
 FD/9096: 99 04 2B     STA $2B04,Y
-FD/9099: 80 00        BRA $909B
+FD/9099: 80 00        BRA Local_FD909B
+Local_FD909B:
 FD/909B: 00 03        BRK $03
 FD/909D: 26 16        ROL $16
 FD/909F: 00 A2        BRK $A2

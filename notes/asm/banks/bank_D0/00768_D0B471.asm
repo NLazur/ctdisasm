@@ -24,7 +24,7 @@ D0/B4A1: 00 00        BRK $00
 D0/B4A3: 00 00        BRK $00
 D0/B4A5: 03 03        ORA $03,S
 D0/B4A7: FC 00 00     JSR ($0000,X)
-D0/B4AA: D0 2F        BNE $B4DB
+D0/B4AA: D0 2F        BNE Routine_D0B4DB
 D0/B4AC: 00 FF        BRK $FF
 D0/B4AE: 00 00        BRK $00
 D0/B4B0: 00 00        BRK $00
@@ -40,7 +40,7 @@ D0/B4C7: 00 00        BRK $00
 D0/B4C9: 00 00        BRK $00
 D0/B4CB: FF FF 00 00  SBC $0000FF,X
 D0/B4CF: 00 00        BRK $00
-D0/B4D1: 30 30        BMI $B503
+D0/B4D1: 30 30        BMI Local_D0B503
 D0/B4D3: 48           PHA
 D0/B4D4: 08           PHP
 D0/B4D5: C4 68        CPY $68
@@ -67,9 +67,10 @@ D0/B4FB: 00 00        BRK $00
 D0/B4FD: 01 00        ORA ($00,X)
 D0/B4FF: 00 33        BRK $33
 D0/B501: 84 34        STY $34
+Local_D0B503:
 D0/B503: 83 3A        STA $3A,S
-D0/B505: 80 5A        BRA $B561
-D0/B507: 80 54        BRA $B55D
+D0/B505: 80 5A        BRA Routine_D0B561
+D0/B507: 80 54        BRA Routine_D0B55D
 D0/B509: 85 08        STA $08
 D0/B50B: 0E 00 FC     ASL $FC00
 D0/B50E: 00 F8        BRK $F8
@@ -101,5 +102,6 @@ D0/B540: 00 00        BRK $00
 D0/B542: 00 00        BRK $00
 D0/B544: 00 00        BRK $00
 D0/B546: 00 00        BRK $00
-D0/B548: 80 00        BRA $B54A
+D0/B548: 80 00        BRA Local_D0B54A
+Local_D0B54A:
 D0/B54A: 40           RTI

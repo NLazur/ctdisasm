@@ -16,6 +16,7 @@ C0/BA7F: BF 00 17 00  LDA $001700,X
 C0/BA83: 85 D9        STA $D9
 C0/BA85: 18           CLC
 C0/BA86: 69 18 00     ADC #$0018
+Local_C0BA89:
 C0/BA89: AA           TAX
 C0/BA8A: BD C2 4B     LDA $4BC2,X
 C0/BA8D: 18           CLC
@@ -30,22 +31,24 @@ C0/BA9C: 0A           ASL
 C0/BA9D: 0A           ASL
 C0/BA9E: 05 E6        ORA $E6
 C0/BAA0: E4 D9        CPX $D9
-C0/BAA2: F0 0B        BEQ $BAAF
+C0/BAA2: F0 0B        BEQ Local_C0BAAF
 C0/BAA4: 85 E5        STA $E5
 C0/BAA6: C2 20        REP #$20
 C0/BAA8: 8A           TXA
 C0/BAA9: 38           SEC
 C0/BAAA: E9 08 00     SBC #$0008
-C0/BAAD: 80 DA        BRA $BA89
+C0/BAAD: 80 DA        BRA Local_C0BA89
+Local_C0BAAF:
 C0/BAAF: 09 AA A6     ORA #$A6AA
 C0/BAB2: 6D 9D 00     ADC $009D
 C0/BAB5: 4F 64 E5 C2  EOR $C2E564
-C0/BAB9: 20 A5 D9     JSR $D9A5
+C0/BAB9: 20 A5 D9     JSR Routine_C0D9A5
 C0/BABC: 18           CLC
 C0/BABD: 69 20 00     ADC #$0020
 C0/BAC0: 85 E7        STA $E7
 C0/BAC2: 18           CLC
 C0/BAC3: 69 18 00     ADC #$0018
+Local_C0BAC6:
 C0/BAC6: AA           TAX
 C0/BAC7: BD C2 4B     LDA $4BC2,X
 C0/BACA: 18           CLC
@@ -60,13 +63,14 @@ C0/BAD9: 0A           ASL
 C0/BADA: 0A           ASL
 C0/BADB: 05 E6        ORA $E6
 C0/BADD: E4 E7        CPX $E7
-C0/BADF: F0 0B        BEQ $BAEC
+C0/BADF: F0 0B        BEQ Local_C0BAEC
 C0/BAE1: 85 E5        STA $E5
 C0/BAE3: C2 20        REP #$20
 C0/BAE5: 8A           TXA
 C0/BAE6: 38           SEC
 C0/BAE7: E9 08 00     SBC #$0008
-C0/BAEA: 80 DA        BRA $BAC6
+C0/BAEA: 80 DA        BRA Local_C0BAC6
+Local_C0BAEC:
 C0/BAEC: 09 AA A6     ORA #$A6AA
 C0/BAEF: 6D 9D 01     ADC $019D
 C0/BAF2: 4F A6 D9 A5  EOR $A5D9A6

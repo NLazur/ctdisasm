@@ -6,9 +6,9 @@ C1/B810: 8E 11 8F     STX $8F11
 C1/B813: 87 8F        STA [$8F]
 C1/B815: DA           PHX
 C1/B816: 8F 13 90 45  STA $459013
-C1/B81A: 90 82        BCC $B79E
-C1/B81C: 90 BE        BCC $B7DC
-C1/B81E: 90 30        BCC $B850
+C1/B81A: 90 82        BCC Routine_C1B79E
+C1/B81C: 90 BE        BCC Routine_C1B7DC
+C1/B81E: 90 30        BCC Local_C1B850
 C1/B820: 91 8E        STA ($8E),Y
 C1/B822: 91 F9        STA ($F9),Y
 C1/B824: 91 5D        STA ($5D),Y
@@ -33,6 +33,7 @@ C1/B848: 97 5C        STA [$5C],Y
 C1/B84A: 97 65        STA [$65],Y
 C1/B84C: 97 AB        STA [$AB],Y
 C1/B84E: 97 C0        STA [$C0],Y
+Local_C1B850:
 C1/B850: 97 D5        STA [$D5],Y
 C1/B852: 97 FA        STA [$FA],Y
 C1/B854: 95 FA        STA $FA,X

@@ -23,6 +23,6 @@ D0/7F27: 00 00        BRK $00
 D0/7F29: 00 00        BRK $00
 D0/7F2B: 00 00        BRK $00
 D0/7F2D: 00 10        BRK $10
-D0/7F2F: 10 40        BPL $7F71
+D0/7F2F: 10 40        BPL Routine_D07F71
 D0/7F31: E0 E0 A0     CPX #$A0E0
 D0/7F34: 40           RTI

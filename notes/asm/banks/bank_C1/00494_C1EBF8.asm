@@ -4,7 +4,7 @@ C1/EBF8: 7B           TDC
 C1/EBF9: AD 02 B2     LDA $B202
 C1/EBFC: 8D 03 B2     STA $B203
 C1/EBFF: 89 80        BIT #$80
-C1/EC01: F0 0F        BEQ $EC12
+C1/EC01: F0 0F        BEQ Local_C1EC12
 C1/EC03: C2 20        REP #$20
 C1/EC05: AD 89 AD     LDA $AD89
 C1/EC08: 49 FF FF     EOR #$FFFF
@@ -12,12 +12,13 @@ C1/EC0B: 1A           INC
 C1/EC0C: 8D 89 AD     STA $AD89
 C1/EC0F: 7B           TDC
 C1/EC10: E2 20        SEP #$20
+Local_C1EC12:
 C1/EC12: AD C7 B2     LDA $B2C7
 C1/EC15: AA           TAX
 C1/EC16: 86 28        STX $28
 C1/EC18: A2 2C 00     LDX #$002C
 C1/EC1B: 86 2A        STX $2A
-C1/EC1D: 20 0B C9     JSR $C90B
+C1/EC1D: 20 0B C9     JSR Routine_C1C90B
 C1/EC20: 98           TYA
 C1/EC21: 0A           ASL
 C1/EC22: 0A           ASL

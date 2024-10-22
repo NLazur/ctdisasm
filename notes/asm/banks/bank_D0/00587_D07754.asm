@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 7754
 Routine_D07754:
 D0/7754: C0 C0        CPY #$C0
-D0/7756: 80 80        BRA $76D8
+D0/7756: 80 80        BRA Routine_D076D8
 D0/7758: 00 00        BRK $00
 D0/775A: FF FF C0 C0  SBC $C0C0FF,X
 D0/775E: 00 00        BRK $00
@@ -10,7 +10,7 @@ D0/7762: 00 00        BRK $00
 D0/7764: 00 00        BRK $00
 D0/7766: 00 00        BRK $00
 D0/7768: C0 C0        CPY #$C0
-D0/776A: 20 60 58     JSR $5860
+D0/776A: 20 60 58     JSR Routine_D05860
 D0/776D: 78           SEI
 D0/776E: 2E 3E 1B     ROL $1B3E
 D0/7771: 1F 06 07 01  ORA $010706,X

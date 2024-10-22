@@ -56,10 +56,10 @@ FF/CA99: 78           SEI
 FF/CA9A: 7C 00 7C     JMP ($7C00,X)
 FF/CA9D: 78           SEI
 FF/CA9E: 7C 30 38     JMP ($3830,X)
-FF/CAA1: 30 38        BMI $CADB
-FF/CAA3: 30 38        BMI $CADD
-FF/CAA5: 30 38        BMI $CADF
-FF/CAA7: 30 7C        BMI $CB25
+FF/CAA1: 30 38        BMI Local_FFCADB
+FF/CAA3: 30 38        BMI Local_FFCADD
+FF/CAA5: 30 38        BMI Local_FFCADF
+FF/CAA7: 30 7C        BMI Local_FFCB25
 FF/CAA9: 78           SEI
 FF/CAAA: 7C 00 F6     JMP ($F600,X)
 FF/CAAD: E4 F6        CPX $F6
@@ -71,11 +71,11 @@ FF/CAB8: EE C4 E6     INC $E6C4
 FF/CABB: 00 FE        BRK $FE
 FF/CABD: FC FE 30     JSR ($30FE,X)
 FF/CAC0: 38           SEC
-FF/CAC1: 30 38        BMI $CAFB
-FF/CAC3: 30 38        BMI $CAFD
-FF/CAC5: 30 38        BMI $CAFF
-FF/CAC7: 30 38        BMI $CB01
-FF/CAC9: 30 38        BMI $CB03
+FF/CAC1: 30 38        BMI Local_FFCAFB
+FF/CAC3: 30 38        BMI Local_FFCAFD
+FF/CAC5: 30 38        BMI Routine_FFCAFF
+FF/CAC7: 30 38        BMI Local_FFCB01
+FF/CAC9: 30 38        BMI Local_FFCB03
 FF/CACB: 00 E6        BRK $E6
 FF/CACD: C4 E6        CPY $E6
 FF/CACF: C4 E6        CPY $E6
@@ -84,8 +84,11 @@ FF/CAD3: C4 E6        CPY $E6
 FF/CAD5: C4 FE        CPY $FE
 FF/CAD7: 68           PLA
 FF/CAD8: 7C 30 38     JMP ($3830,X)
+Local_FFCADB:
 FF/CADB: 00 E6        BRK $E6
+Local_FFCADD:
 FF/CADD: C4 E6        CPY $E6
+Local_FFCADF:
 FF/CADF: C4 FE        CPY $FE
 FF/CAE1: 68           PLA
 FF/CAE2: 7C 30 7C     JMP ($7C30,X)
@@ -100,10 +103,14 @@ FF/CAF3: 78           SEI
 FF/CAF4: 06 04        ASL $04
 FF/CAF6: C6 C4        DEC $C4
 FF/CAF8: FE 78 7C     INC $7C78,X
+Local_FFCAFB:
 FF/CAFB: 00 0E        BRK $0E
+Local_FFCAFD:
 FF/CAFD: 0C 1F 12     TSB $121F
 FF/CB00: 1B           TCS
+Local_FFCB01:
 FF/CB01: 12 1B        ORA ($1B)
+Local_FFCB03:
 FF/CB03: 12 1B        ORA ($1B)
 FF/CB05: 12 1B        ORA ($1B)
 FF/CB07: 12 1E        ORA ($1E)
@@ -119,9 +126,10 @@ FF/CB1C: 0E 0C 1F     ASL $1F0C
 FF/CB1F: 12 1B        ORA ($1B)
 FF/CB21: 12 16        ORA ($16)
 FF/CB23: 04 0C        TSB $0C
+Local_FFCB25:
 FF/CB25: 08           PHP
 FF/CB26: 18           CLC
-FF/CB27: 10 1F        BPL $CB48
+FF/CB27: 10 1F        BPL Routine_FFCB48
 FF/CB29: 1E 1E 00     ASL $001E,X
 FF/CB2C: 0E 0C 1F     ASL $1F0C
 FF/CB2F: 12 13        ORA ($13)
@@ -129,6 +137,7 @@ FF/CB31: 02 0E        COP $0E
 FF/CB33: 0C 0F 02     TSB $020F
 FF/CB36: 13 12        ORA ($12,S),Y
 FF/CB38: 1E 0C 0C     ASL $0C0C,X
+Local_FFCB3B:
 FF/CB3B: 00 06        BRK $06
 FF/CB3D: 04 0E        TSB $0E
 FF/CB3F: 0C 0E 0C     TSB $0C0E
@@ -144,7 +153,7 @@ FF/CB57: 12 1E        ORA ($1E)
 FF/CB59: 0C 0C 00     TSB $000C
 FF/CB5C: 0E 0C 1F     ASL $1F0C
 FF/CB5F: 12 1A        ORA ($1A)
-FF/CB61: 10 1E        BPL $CB81
+FF/CB61: 10 1E        BPL Local_FFCB81
 FF/CB63: 1C 1F 12     TRB $121F
 FF/CB66: 1B           TCS
 FF/CB67: 12 1E        ORA ($1E)
@@ -158,6 +167,7 @@ FF/CB79: 08           PHP
 FF/CB7A: 0C 00 0E     TSB $0E00
 FF/CB7D: 0C 1F 12     TSB $121F
 FF/CB80: 1B           TCS
+Local_FFCB81:
 FF/CB81: 12 1E        ORA ($1E)
 FF/CB83: 0C 1F 12     TSB $121F
 FF/CB86: 1B           TCS
@@ -172,10 +182,10 @@ FF/CB98: 1E 0C 0C     ASL $0C0C,X
 FF/CB9B: 00 00        BRK $00
 FF/CB9D: 00 81        BRK $81
 FF/CB9F: 04 44        TSB $44
-FF/CBA1: 22 E8 33 00  JSR $0033E8
+FF/CBA1: 22 E8 33 00  JSR Routine_0033E8
 FF/CBA5: 00 05        BRK $05
-FF/CBA7: 10 92        BPL $CB3B
+FF/CBA7: 10 92        BPL Local_FFCB3B
 FF/CBA9: 48           PHA
 FF/CBAA: 9F 7D 00 00  STA $00007D,X
-FF/CBAE: 80 10        BRA $CBC0
+FF/CBAE: 80 10        BRA Routine_FFCBC0
 FF/CBB0: 40           RTI

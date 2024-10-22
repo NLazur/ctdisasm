@@ -10,18 +10,19 @@ CF/1AA8: 7B           TDC
 CF/1AA9: 4B           PHK
 CF/1AAA: F5 BE        SBC $BE,X
 CF/1AAC: EF AB C4 44  SBC $44C4AB
-CF/1AB0: D0 B1        BNE $1A63
+CF/1AB0: D0 B1        BNE Routine_CF1A63
 CF/1AB2: E0 62 80     CPX #$8062
-CF/1AB5: 82 C0 44     BRL $CF5F78
+CF/1AB5: 82 C0 44     BRL Routine_CF5F78
 CF/1AB8: C0 78 80     CPY #$8078
-CF/1ABB: 80 00        BRA $1ABD
+CF/1ABB: 80 00        BRA Local_CF1ABD
+Local_CF1ABD:
 CF/1ABD: 00 00        BRK $00
 CF/1ABF: 00 07        BRK $07
 CF/1AC1: 04 07        TSB $07
 CF/1AC3: 01 0E        ORA ($0E,X)
 CF/1AC5: 0A           ASL
 CF/1AC6: 0E 0A 38     ASL $380A
-CF/1AC9: 30 58        BMI $1B23
+CF/1AC9: 30 58        BMI Routine_CF1B23
 CF/1ACB: 68           PLA
-CF/1ACC: B0 F0        BCS $1ABE
+CF/1ACC: B0 F0        BCS Routine_CF1ABE
 CF/1ACE: 40           RTI

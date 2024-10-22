@@ -6,16 +6,19 @@ D1/E5FD: 08           PHP
 D1/E5FE: 08           PHP
 D1/E5FF: 4B           PHK
 D1/E600: 4A           LSR
-D1/E601: 10 10        BPL $E613
+D1/E601: 10 10        BPL Local_D1E613
 D1/E603: 0D 48 4C     ORA $4C48
 D1/E606: 05 49        ORA $49
 D1/E608: 45 0A        EOR $0A
 D1/E60A: 0B           PHD
 D1/E60B: 48           PHA
-D1/E60C: 10 01        BPL $E60F
-D1/E60E: 70 00        BVS $E610
-D1/E610: 70 00        BVS $E612
+D1/E60C: 10 01        BPL Routine_D1E60F
+D1/E60E: 70 00        BVS Local_D1E610
+Local_D1E610:
+D1/E610: 70 00        BVS Local_D1E612
+Local_D1E612:
 D1/E612: B8           CLV
+Local_D1E613:
 D1/E613: 00 F8        BRK $F8
 D1/E615: 00 F0        BRK $F0
 D1/E617: 00 F0        BRK $F0
@@ -31,7 +34,7 @@ D1/E629: 00 40        BRK $40
 D1/E62B: 00 08        BRK $08
 D1/E62D: 9A           TXS
 D1/E62E: 9B           TXY
-D1/E62F: 10 5B        BPL $E68C
+D1/E62F: 10 5B        BPL Routine_D1E68C
 D1/E631: 5A           PHY
 D1/E632: 0D 63 62     ORA $6263
 D1/E635: 48           PHA

@@ -2,6 +2,7 @@
 Routine_C2034D:
 C2/034D: E2 30        SEP #$30
 C2/034F: A2 60        LDX #$60
+Local_C20351:
 C2/0351: A9 E0        LDA #$E0
 C2/0353: 9D 01 07     STA $0701,X
 C2/0356: 9D 05 07     STA $0705,X
@@ -39,7 +40,7 @@ C2/03B3: 8A           TXA
 C2/03B4: 38           SEC
 C2/03B5: E9 20        SBC #$20
 C2/03B7: AA           TAX
-C2/03B8: 10 97        BPL $0351
+C2/03B8: 10 97        BPL Local_C20351
 C2/03BA: C2 30        REP #$30
 C2/03BC: 9C 00 09     STZ $0900
 C2/03BF: 9C 02 09     STZ $0902

@@ -6,7 +6,7 @@ C7/8FAF: D1 00        CMP ($00),Y
 C7/8FB1: 32 CC        AND ($CC)
 C7/8FB3: A0 23        LDY #$23
 C7/8FB5: 11 2E        ORA ($2E),Y
-C7/8FB7: B0 31        BCS $8FEA
+C7/8FB7: B0 31        BCS Local_C78FEA
 C7/8FB9: 01 0F        ORA ($0F,X)
 C7/8FBB: 23 A0        AND $A0,S
 C7/8FBD: 1E 02 0F     ASL $0F02,X
@@ -24,6 +24,7 @@ C7/8FE1: E0 0F        CPX #$0F
 C7/8FE3: 13 1C        ORA ($1C,S),Y
 C7/8FE5: C1 11        CMP ($11,X)
 C7/8FE7: 1E D0 A0     ASL $A0D0,X
+Local_C78FEA:
 C7/8FEA: 43 0E        EOR $0E,S
 C7/8FEC: 00 04        BRK $04
 C7/8FEE: 2D C0 21     AND $21C0

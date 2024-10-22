@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 3466
 Routine_FD3466:
-FD/3466: 80 9D        BRA $3405
+FD/3466: 80 9D        BRA Routine_FD3405
 FD/3468: E1 05        SBC ($05,X)
 FD/346A: 47 F5        EOR [$F5]
 FD/346C: 00 F0        BRK $F0
@@ -24,7 +24,7 @@ FD/3498: FF 64 9C FF  SBC $FF9C64,X
 FD/349C: 13 F4        ORA ($F4,S),Y
 FD/349E: 14 8F        TRB $8F
 FD/34A0: 00 47        BRK $47
-FD/34A2: 4C 0C 73     JMP $730C
+FD/34A2: 4C 0C 73     JMP Routine_FD730C
 FD/34A5: 7F B7 CC CF  ADC $CFCCB7,X
 FD/34A9: 00 10        BRK $10
 FD/34AB: 1B           TCS
@@ -38,7 +38,7 @@ FD/34B8: 27 27        AND [$27]
 FD/34BA: E3 0C        SBC $0C,S
 FD/34BC: C7 E0        CMP [$E0]
 FD/34BE: 3C 04 38     BIT $3804,X
-FD/34C1: 10 80        BPL $3443
+FD/34C1: 10 80        BPL Routine_FD3443
 FD/34C3: FF 08 FF 00  SBC $00FF08,X
 FD/34C7: 3B           TSC
 FD/34C8: DC DB 3C     JMP [$3CDB]
@@ -55,7 +55,7 @@ FD/34DA: AC 02 84     LDY $8402
 FD/34DD: 28           PLP
 FD/34DE: 8F 50 2D 00  STA $002D50
 FD/34E2: FC 04 D6     JSR ($D604,X)
-FD/34E5: 22 EC 0F E8  JSR $E80FEC
+FD/34E5: 22 EC 0F E8  JSR Routine_E80FEC
 FD/34E9: 01 00        ORA ($00,X)
 FD/34EB: B8           CLV
 FD/34EC: 25 B6        AND $B6

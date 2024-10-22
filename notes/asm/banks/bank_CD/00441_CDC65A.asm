@@ -12,10 +12,10 @@ CD/C66F: 73 03        ADC ($03,S),Y
 CD/C671: 1B           TCS
 CD/C672: 09 02 00     ORA #$0002
 CD/C675: 24 01        BIT $01
-CD/C677: 70 09        BVS $C682
+CD/C677: 70 09        BVS Routine_CDC682
 CD/C679: 85 00        STA $00
 CD/C67B: A8           TAY
-CD/C67C: 20 0C 15     JSR $150C
+CD/C67C: 20 0C 15     JSR Routine_CD150C
 CD/C67F: 00 0C        BRK $0C
 CD/C681: 71 36        ADC ($36),Y
 CD/C683: 00 98        BRK $98
@@ -28,15 +28,15 @@ CD/C68F: 97 3D        STA [$3D],Y
 CD/C691: 03 72        ORA $72,S
 CD/C693: 0D 03 07     ORA $0703
 CD/C696: 78           SEI
-CD/C697: D0 34        BNE $C6CD
+CD/C697: D0 34        BNE Local_CDC6CD
 CD/C699: 1B           TCS
-CD/C69A: 20 1E 34     JSR $341E
+CD/C69A: 20 1E 34     JSR Routine_CD341E
 CD/C69D: 1A           INC
 CD/C69E: 36 22        ROL $22,X
 CD/C6A0: 1B           TCS
 CD/C6A1: 00 36        BRK $36
 CD/C6A3: 06 03        ASL $03
-CD/C6A5: 50 2E        BVC $C6D5
+CD/C6A5: 50 2E        BVC Local_CDC6D5
 CD/C6A7: 01 00        ORA ($00,X)
 CD/C6A9: 24 01        BIT $01
 CD/C6AB: 06 05        ASL $05
@@ -57,9 +57,11 @@ CD/C6C7: 78           SEI
 CD/C6C8: C5 22        CMP $22
 CD/C6CA: 1B           TCS
 CD/C6CB: 00 36        BRK $36
+Local_CDC6CD:
 CD/C6CD: 06 03        ASL $03
-CD/C6CF: 20 0F 50     JSR $500F
+CD/C6CF: 20 0F 50     JSR Routine_CD500F
 CD/C6D2: 2E 01 00     ROL $0001
+Local_CDC6D5:
 CD/C6D5: 24 01        BIT $01
 CD/C6D7: 06 05        ASL $05
 CD/C6D9: 24 02        BIT $02
@@ -79,7 +81,7 @@ CD/C6F3: 78           SEI
 CD/C6F4: CC 22 1B     CPY $1B22
 CD/C6F7: 00 36        BRK $36
 CD/C6F9: 06 03        ASL $03
-CD/C6FB: 20 0F 50     JSR $500F
+CD/C6FB: 20 0F 50     JSR Routine_CD500F
 CD/C6FE: 2E 01 00     ROL $0001
 CD/C701: 24 01        BIT $01
 CD/C703: 69 00 06     ADC #$0600
@@ -98,11 +100,12 @@ CD/C71C: 0D 03 07     ORA $0703
 CD/C71F: 78           SEI
 CD/C720: D1 34        CMP ($34),Y
 CD/C722: 1B           TCS
+Local_CDC723:
 CD/C723: 36 22        ROL $22,X
 CD/C725: 1B           TCS
 CD/C726: 00 36        BRK $36
 CD/C728: 06 03        ASL $03
-CD/C72A: 50 2E        BVC $C75A
+CD/C72A: 50 2E        BVC Routine_CDC75A
 CD/C72C: 01 00        ORA ($00,X)
 CD/C72E: 24 01        BIT $01
 CD/C730: 06 05        ASL $05
@@ -127,9 +130,9 @@ CD/C757: 1F 03 36 24  ORA $243603,X
 CD/C75B: 02 02        COP $02
 CD/C75D: 07 24        ORA [$24]
 CD/C75F: 03 0C        ORA $0C,S
-CD/C761: 10 C0        BPL $C723
+CD/C761: 10 C0        BPL Local_CDC723
 CD/C763: A0 0B 10     LDY #$100B
-CD/C766: 90 60        BCC $C7C8
+CD/C766: 90 60        BCC Routine_CDC7C8
 CD/C768: 0C 10 70     TSB $7010
 CD/C76B: A0 0B 10     LDY #$100B
 CD/C76E: 40           RTI

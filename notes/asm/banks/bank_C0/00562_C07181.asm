@@ -13,12 +13,13 @@ C0/7194: 72 1C        ADC ($1C)
 C0/7196: 72 1C        ADC ($1C)
 C0/7198: 72 A2        ADC ($A2)
 C0/719A: 05 BD        ORA $BD
-C0/719C: 80 0B        BRA $71A9
-C0/719E: 10 4D        BPL $71ED
+C0/719C: 80 0B        BRA Local_C071A9
+C0/719E: 10 4D        BPL Routine_C071ED
 C0/71A0: 86 C3        STX $C3
 C0/71A2: A6 6D        LDX $6D
 C0/71A4: A9 80        LDA #$80
 C0/71A6: 9D 00 0B     STA $0B00,X
+Local_C071A9:
 C0/71A9: 9D 01 0B     STA $0B01,X
 C0/71AC: A5 6D        LDA $6D
 C0/71AE: A6 C3        LDX $C3

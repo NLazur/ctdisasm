@@ -31,8 +31,9 @@ C0/AB7A: 4A           LSR
 C0/AB7B: 4A           LSR
 C0/AB7C: 38           SEC
 C0/AB7D: E5 DD        SBC $DD
-C0/AB7F: B0 03        BCS $AB84
+C0/AB7F: B0 03        BCS Local_C0AB84
 C0/AB81: 09 00 01     ORA #$0100
+Local_C0AB84:
 C0/AB84: 29 FF 01     AND #$01FF
 C0/AB87: 9D 00 0A     STA $0A00,X
 C0/AB8A: BD 80 18     LDA $1880,X
@@ -42,8 +43,9 @@ C0/AB8F: 4A           LSR
 C0/AB90: 4A           LSR
 C0/AB91: 38           SEC
 C0/AB92: E5 DF        SBC $DF
-C0/AB94: B0 03        BCS $AB99
+C0/AB94: B0 03        BCS Local_C0AB99
 C0/AB96: 09 00 01     ORA #$0100
+Local_C0AB99:
 C0/AB99: 29 FF 01     AND #$01FF
 C0/AB9C: 9D 80 0A     STA $0A80,X
 C0/AB9F: E2 20        SEP #$20

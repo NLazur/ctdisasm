@@ -28,7 +28,8 @@ C7/1A73: 00 00        BRK $00
 C7/1A75: 26 4B        ROL $4B
 C7/1A77: 78           SEI
 C7/1A78: 24 47        BIT $47
-C7/1A7A: 50 00        BVC $1A7C
+C7/1A7A: 50 00        BVC Local_C71A7C
+Local_C71A7C:
 C7/1A7C: 00 00        BRK $00
 C7/1A7E: 24 31        BIT $31
 C7/1A80: 40           RTI

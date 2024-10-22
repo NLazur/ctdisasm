@@ -17,12 +17,12 @@ D0/5056: 00 00        BRK $00
 D0/5058: 32 E1        AND ($E1)
 D0/505A: 54 C2 B8     MVN $C2,$B8
 D0/505D: 84 E0        STY $E0
-D0/505F: 10 C0        BPL $5021
+D0/505F: 10 C0        BPL Routine_D05021
 D0/5061: 00 00        BRK $00
 D0/5063: 00 00        BRK $00
 D0/5065: 00 00        BRK $00
 D0/5067: 00 10        BRK $10
-D0/5069: 30 60        BMI $50CB
+D0/5069: 30 60        BMI Routine_D050CB
 D0/506B: 00 C0        BRK $C0
 D0/506D: 00 00        BRK $00
 D0/506F: 00 01        BRK $01
@@ -34,7 +34,7 @@ D0/5079: 04 04        TSB $04
 D0/507B: 04 00        TSB $00
 D0/507D: 02 00        COP $00
 D0/507F: 01 F0        ORA ($F0,X)
-D0/5081: F0 4B        BEQ $50CE
+D0/5081: F0 4B        BEQ Local_D050CE
 D0/5083: CC 27 38     CPY $3827
 D0/5086: 0B           PHD
 D0/5087: 0C 17 18     TSB $1817
@@ -51,7 +51,7 @@ D0/509C: 00 00        BRK $00
 D0/509E: 00 00        BRK $00
 D0/50A0: 06 06        ASL $06
 D0/50A2: E1 E3        SBC ($E3,X)
-D0/50A4: D0 31        BNE $50D7
+D0/50A4: D0 31        BNE Routine_D050D7
 D0/50A6: EA           NOP
 D0/50A7: 1B           TCS
 D0/50A8: A0 A3        LDY #$A3
@@ -72,9 +72,10 @@ D0/50C2: 0B           PHD
 D0/50C3: 0C 2F 30     TSB $302F
 D0/50C6: BF C0 6F 90  LDA $906FC0,X
 D0/50CA: 9F 60 3F C0  STA $C03F60,X
+Local_D050CE:
 D0/50CE: BD C2 00     LDA $00C2,X
 D0/50D1: 00 90        BRK $90
-D0/50D3: 70 E4        BVS $50B9
+D0/50D3: 70 E4        BVS Routine_D050B9
 D0/50D5: 1C F9 07     TRB $07F9
 D0/50D8: FE 01 FD     INC $FD01,X
 D0/50DB: 02 F5        COP $F5
@@ -83,7 +84,7 @@ D0/50DE: EF 19 00 00  SBC $000019
 D0/50E2: 00 00        BRK $00
 D0/50E4: 00 00        BRK $00
 D0/50E6: 00 00        BRK $00
-D0/50E8: 80 80        BRA $506A
-D0/50EA: 80 40        BRA $512C
-D0/50EC: 80 E0        BRA $50CE
+D0/50E8: 80 80        BRA Routine_D0506A
+D0/50EA: 80 40        BRA Routine_D0512C
+D0/50EC: 80 E0        BRA Local_D050CE
 D0/50EE: 40           RTI

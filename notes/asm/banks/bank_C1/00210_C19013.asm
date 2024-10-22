@@ -6,20 +6,24 @@ C1/901A: 85 08        STA $08
 C1/901C: 7B           TDC
 C1/901D: AA           TAX
 C1/901E: 86 0A        STX $0A
+Local_C19020:
 C1/9020: BD 02 AF     LDA $AF02,X
 C1/9023: C9 FF        CMP #$FF
-C1/9025: F0 07        BEQ $902E
+C1/9025: F0 07        BEQ Local_C1902E
 C1/9027: BD 15 AF     LDA $AF15,X
-C1/902A: D0 02        BNE $902E
+C1/902A: D0 02        BNE Local_C1902E
 C1/902C: E6 0A        INC $0A
+Local_C1902E:
 C1/902E: E8           INX
 C1/902F: E0 08 00     CPX #$0008
-C1/9032: 90 EC        BCC $9020
+C1/9032: 90 EC        BCC Local_C19020
 C1/9034: A5 08        LDA $08
 C1/9036: C5 0A        CMP $0A
-C1/9038: 90 05        BCC $903F
-C1/903A: 20 3E 8C     JSR $8C3E
-C1/903D: 80 05        BRA $9044
+C1/9038: 90 05        BCC Local_C1903F
+C1/903A: 20 3E 8C     JSR Routine_C18C3E
+C1/903D: 80 05        BRA Local_C19044
+Local_C1903F:
 C1/903F: A9 01        LDA #$01
 C1/9041: 8D 24 AF     STA $AF24
+Local_C19044:
 C1/9044: 60           RTS

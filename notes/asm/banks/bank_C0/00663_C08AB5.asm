@@ -16,8 +16,8 @@ C0/8AD0: 38           SEC
 C0/8AD1: E9 40 00     SBC #$0040
 C0/8AD4: 85 68        STA $68
 C0/8AD6: E2 20        SEP #$20
-C0/8AD8: 20 23 99     JSR $9923
-C0/8ADB: 90 07        BCC $8AE4
+C0/8AD8: 20 23 99     JSR Routine_C09923
+C0/8ADB: 90 07        BCC Routine_C08AE4
 C0/8ADD: C2 20        REP #$20
 C0/8ADF: 64 2E        STZ $2E
 C0/8AE1: E2 20        SEP #$20

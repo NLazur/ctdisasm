@@ -33,7 +33,8 @@ D0/A582: 1A           INC
 D0/A583: 1C 00 00     TRB $0000
 D0/A586: 34 38        BIT $38,X
 D0/A588: 00 00        BRK $00
-D0/A58A: 80 00        BRA $A58C
+D0/A58A: 80 00        BRA Local_D0A58C
+Local_D0A58C:
 D0/A58C: 00 00        BRK $00
 D0/A58E: 00 00        BRK $00
 D0/A590: 00 00        BRK $00

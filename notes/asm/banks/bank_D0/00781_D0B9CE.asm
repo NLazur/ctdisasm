@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: B9CE
 Routine_D0B9CE:
-D0/B9CE: 30 70        BMI $BA40
+D0/B9CE: 30 70        BMI Routine_D0BA40
 D0/B9D0: 00 00        BRK $00
 D0/B9D2: 00 00        BRK $00
 D0/B9D4: 02 00        COP $00
@@ -9,7 +9,7 @@ D0/B9D9: 03 0C        ORA $0C,S
 D0/B9DB: 0F 3E 1F 0F  ORA $0F1F3E
 D0/B9DF: 0F 00 00 03  ORA $030000
 D0/B9E3: 0E 1C 10     ASL $101C
-D0/B9E6: 20 30 00     JSR $0030
+D0/B9E6: 20 30 00     JSR Routine_D00030
 D0/B9E9: 00 01        BRK $01
 D0/B9EB: 00 04        BRK $04
 D0/B9ED: 01 0E        ORA ($0E,X)

@@ -12,7 +12,7 @@ CF/FA0C: 02 90        COP $90
 CF/FA0E: 04 49        TSB $49
 CF/FA10: FF FF 1A 85  SBC $851AFF,X
 CF/FA14: 02 E2        COP $E2
-CF/FA16: 20 8B 7B     JSR $7B8B
+CF/FA16: 20 8B 7B     JSR Routine_CF7B8B
 CF/FA19: 48           PHA
 CF/FA1A: AB           PLB
 CF/FA1B: A5 00        LDA $00

@@ -8,5 +8,5 @@ C3/164A: C7 A2        CMP [$A2]
 C3/164C: C2 34        REP #$34
 C3/164E: 84 4C        STY $4C
 C3/1650: B1 2D        LDA ($2D),Y
-C3/1652: F0 01        BEQ $1655
+C3/1652: F0 01        BEQ Routine_C31655
 C3/1654: 60           RTS

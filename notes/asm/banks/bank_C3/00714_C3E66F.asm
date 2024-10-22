@@ -161,6 +161,7 @@ C3/E79F: DF C6 01 01  CMP $0101C6,X
 C3/E7A3: F8           SED
 C3/E7A4: E0 C8        CPX #$C8
 C3/E7A6: 01 01        ORA ($01,X)
+Local_C3E7A8:
 C3/E7A8: F8           SED
 C3/E7A9: E0 C4        CPX #$C4
 C3/E7AB: 41 01        EOR ($01,X)
@@ -182,38 +183,43 @@ C3/E7C6: F8           SED
 C3/E7C7: F8           SED
 C3/E7C8: 0C 00 04     TSB $0400
 C3/E7CB: CE E7 00     DEC $00E7
-C3/E7CE: 10 D8        BPL $E7A8
+C3/E7CE: 10 D8        BPL Local_C3E7A8
 C3/E7D0: E0 24        CPX #$24
 C3/E7D2: 00 E8        BRK $E8
 C3/E7D4: E0 26        CPX #$26
 C3/E7D6: 00 F8        BRK $F8
 C3/E7D8: E0 28        CPX #$28
 C3/E7DA: 00 D8        BRK $D8
-C3/E7DC: F0 08        BEQ $E7E6
+C3/E7DC: F0 08        BEQ Local_C3E7E6
 C3/E7DE: 00 E8        BRK $E8
-C3/E7E0: F0 0A        BEQ $E7EC
+C3/E7E0: F0 0A        BEQ Local_C3E7EC
 C3/E7E2: 00 F8        BRK $F8
-C3/E7E4: F0 0C        BEQ $E7F2
+C3/E7E4: F0 0C        BEQ Local_C3E7F2
+Local_C3E7E6:
 C3/E7E6: 00 D0        BRK $D0
 C3/E7E8: 00 00        BRK $00
 C3/E7EA: 00 E0        BRK $E0
+Local_C3E7EC:
 C3/E7EC: 00 02        BRK $02
 C3/E7EE: 00 D0        BRK $D0
-C3/E7F0: 10 04        BPL $E7F6
+C3/E7F0: 10 04        BPL Local_C3E7F6
+Local_C3E7F2:
 C3/E7F2: 00 E0        BRK $E0
-C3/E7F4: 10 06        BPL $E7FC
+C3/E7F4: 10 06        BPL Local_C3E7FC
+Local_C3E7F6:
 C3/E7F6: 00 D8        BRK $D8
-C3/E7F8: 20 0E 00     JSR $000E
+C3/E7F8: 20 0E 00     JSR Routine_C3000E
 C3/E7FB: E8           INX
-C3/E7FC: 20 20 00     JSR $0020
+Local_C3E7FC:
+C3/E7FC: 20 20 00     JSR Routine_C30020
 C3/E7FF: F8           SED
-C3/E800: 20 22 00     JSR $0022
+C3/E800: 20 22 00     JSR Routine_C30022
 C3/E803: D8           CLD
-C3/E804: 30 2A        BMI $E830
+C3/E804: 30 2A        BMI Local_C3E830
 C3/E806: 00 E8        BRK $E8
-C3/E808: 30 2C        BMI $E836
+C3/E808: 30 2C        BMI Routine_C3E836
 C3/E80A: 00 F8        BRK $F8
-C3/E80C: 30 2E        BMI $E83C
+C3/E80C: 30 2E        BMI Local_C3E83C
 C3/E80E: 00 04        BRK $04
 C3/E810: 32 EC        AND ($EC)
 C3/E812: 01 04        ORA ($04,X)
@@ -229,11 +235,13 @@ C3/E828: 68           PLA
 C3/E829: EC 01 04     CPX $0401
 C3/E82C: 75 EC        ADC $EC,X
 C3/E82E: 01 04        ORA ($04,X)
-C3/E830: 82 EC 01     BRL $C3EA1F
+Local_C3E830:
+C3/E830: 82 EC 01     BRL Routine_C3EA1F
 C3/E833: 04 93        TSB $93
 C3/E835: EC 01 04     CPX $0401
 C3/E838: A4 EC        LDY $EC
 C3/E83A: 01 04        ORA ($04,X)
+Local_C3E83C:
 C3/E83C: B9 EC 01     LDA $01EC,Y
 C3/E83F: 04 CE        TSB $CE
 C3/E841: EC 01 04     CPX $0401
@@ -270,7 +278,7 @@ C3/E888: A4 EC        LDY $EC
 C3/E88A: 01 04        ORA ($04,X)
 C3/E88C: 93 EC        STA ($EC,S),Y
 C3/E88E: 01 04        ORA ($04,X)
-C3/E890: 82 EC 01     BRL $C3EA7F
+C3/E890: 82 EC 01     BRL Routine_C3EA7F
 C3/E893: 04 75        TSB $75
 C3/E895: EC 01 04     CPX $0401
 C3/E898: 68           PLA
@@ -327,7 +335,7 @@ C3/E904: 68           PLA
 C3/E905: EC 01 04     CPX $0401
 C3/E908: 75 EC        ADC $EC,X
 C3/E90A: 01 04        ORA ($04,X)
-C3/E90C: 82 EC 01     BRL $C3EAFB
+C3/E90C: 82 EC 01     BRL Routine_C3EAFB
 C3/E90F: 04 93        TSB $93
 C3/E911: EC 01 04     CPX $0401
 C3/E914: A4 EC        LDY $EC
@@ -360,7 +368,7 @@ C3/E950: 68           PLA
 C3/E951: EC 01 04     CPX $0401
 C3/E954: 75 EC        ADC $EC,X
 C3/E956: 01 04        ORA ($04,X)
-C3/E958: 82 EC 01     BRL $C3EB47
+C3/E958: 82 EC 01     BRL Routine_C3EB47
 C3/E95B: 04 93        TSB $93
 C3/E95D: EC 01 04     CPX $0401
 C3/E960: A4 EC        LDY $EC

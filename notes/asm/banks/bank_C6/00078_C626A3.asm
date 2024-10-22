@@ -17,14 +17,15 @@ C6/26BE: 02 9D        COP $9D
 C6/26C0: 5B           TCD
 C6/26C1: 00 99        BRK $99
 C6/26C3: 2A           ROL
+Local_C626C4:
 C6/26C4: 1D 9E 08     ORA $089E,X
 C6/26C7: 34 94        BIT $94,X
 C6/26C9: 3C 98 07     BIT $0798,X
-C6/26CC: 30 9A        BMI $2668
+C6/26CC: 30 9A        BMI Routine_C62668
 C6/26CE: 0E 30 99     ASL $9930
 C6/26D1: 29 15 30     AND #$3015
 C6/26D4: 85 07        STA $07
-C6/26D6: 30 9A        BMI $2672
+C6/26D6: 30 9A        BMI Routine_C62672
 C6/26D8: 0E 30 C8     ASL $C830
 C6/26DB: 31 02        AND ($02),Y
 C6/26DD: B9 69 00     LDA $0069,Y
@@ -43,7 +44,8 @@ C6/26F6: 0B           PHD
 C6/26F7: 2D C5 32     AND $32C5
 C6/26FA: 0B           PHD
 C6/26FB: 02 BE        COP $BE
-C6/26FD: 70 00        BVS $26FF
+C6/26FD: 70 00        BVS Local_C626FF
+Local_C626FF:
 C6/26FF: 8F 2F 1A 8C  STA $8C1A2F
 C6/2703: 00 08        BRK $08
 C6/2705: 00 2E        BRK $2E
@@ -52,6 +54,7 @@ C6/2708: E4 1B        CPX $1B
 C6/270A: 91 00        STA ($00),Y
 C6/270C: 13 1E        ORA ($1E,S),Y
 C6/270E: 00 AC        BRK $AC
+Local_C62710:
 C6/2710: 21 1F        AND ($1F,X)
 C6/2712: A4 0A        LDY $0A
 C6/2714: 2B           PLD
@@ -66,51 +69,56 @@ C6/2726: 98           TYA
 C6/2727: E7 30        SBC [$30]
 C6/2729: 98           TYA
 C6/272A: 25 E7        AND $E7
-C6/272C: 30 96        BMI $26C4
+Local_C6272C:
+C6/272C: 30 96        BMI Local_C626C4
 C6/272E: EE 30 9A     INC $9A30
 C6/2731: 12 EE        ORA ($EE)
-C6/2733: 20 95 13     JSR $1395
+C6/2733: 20 95 13     JSR Routine_C61395
 C6/2736: 55 EE        EOR $EE,X
-C6/2738: 20 96 07     JSR $0796
-C6/273B: 30 93        BMI $26D0
+Local_C62738:
+C6/2738: 20 96 07     JSR Routine_C60796
+C6/273B: 30 93        BMI Routine_C626D0
 C6/273D: D9 30 93     CMP $9330,Y
+Local_C62740:
 C6/2740: D9 30 92     CMP $9230,Y
 C6/2743: 2A           ROL
 C6/2744: 25 E0        AND $E0
-C6/2746: 30 22        BMI $276A
+C6/2746: 30 22        BMI Local_C6276A
 C6/2748: E0 20        CPX #$20
 C6/274A: 95 07        STA $07,X
-C6/274C: 30 90        BMI $26DE
+C6/274C: 30 90        BMI Routine_C626DE
 C6/274E: 24 55        BIT $55
 C6/2750: E7 20        SBC [$20]
 C6/2752: 91 07        STA ($07),Y
-C6/2754: 30 9A        BMI $26F0
+C6/2754: 30 9A        BMI Routine_C626F0
 C6/2756: EE 30 98     INC $9830
 C6/2759: F5 30        SBC $30,X
 C6/275B: 9B           TXY
 C6/275C: 4A           LSR
 C6/275D: 35 EE        AND $EE,X
-C6/275F: 20 9C 07     JSR $079C
-C6/2762: 30 C8        BMI $272C
-C6/2764: 30 BD        BMI $2723
-C6/2766: 30 31        BMI $2799
+C6/275F: 20 9C 07     JSR Routine_C6079C
+C6/2762: 30 C8        BMI Local_C6272C
+C6/2764: 30 BD        BMI Routine_C62723
+C6/2766: 30 31        BMI Routine_C62799
 C6/2768: A5 BD        LDA $BD
-C6/276A: 20 CA 07     JSR $07CA
-C6/276D: 30 C9        BMI $2738
+Local_C6276A:
+C6/276A: 20 CA 07     JSR Routine_C607CA
+C6/276D: 30 C9        BMI Local_C62738
 C6/276F: 33 C4        AND ($C4,S),Y
-C6/2771: 20 CA 07     JSR $07CA
-C6/2774: 30 9A        BMI $2710
+C6/2771: 20 CA 07     JSR Routine_C607CA
+C6/2774: 30 9A        BMI Local_C62710
 C6/2776: C8           INY
 C6/2777: CB           WAI
-C6/2778: 30 C6        BMI $2740
+C6/2778: 30 C6        BMI Local_C62740
 C6/277A: 07 40        ORA [$40]
 C6/277C: D2 30        CMP ($30)
 C6/277E: C6 31        DEC $31
 C6/2780: D9 20 0A     CMP $0A20,Y
 C6/2783: C5 07        CMP $07
-C6/2785: 30 C4        BMI $274B
+C6/2785: 30 C4        BMI Routine_C6274B
 C6/2787: 0E 30 01     ASL $0130
 C6/278A: 1A           INC
+Local_C6278B:
 C6/278B: 1F 00 07 B9  ORA $B90700,X
 C6/278F: 01 80        ORA ($80,X)
 C6/2791: 01 00        ORA ($00,X)
@@ -120,17 +128,18 @@ C6/2797: 0B           PHD
 C6/2798: 00 8C        BRK $8C
 C6/279A: 00 00        BRK $00
 C6/279C: 14 8B        TRB $8B
-C6/279E: 22 27 D2 08  JSR $08D227
+C6/279E: 22 27 D2 08  JSR Routine_08D227
 C6/27A2: 1A           INC
 C6/27A3: 2D 02 8C     AND $8C02
 C6/27A6: 07 30        ORA [$30]
 C6/27A8: 8D 1B 26     STA $261B
-C6/27AB: D0 08        BNE $27B5
+C6/27AB: D0 08        BNE Local_C627B5
 C6/27AD: 08           PHP
 C6/27AE: 00 0B        BRK $0B
 C6/27B0: 9B           TXY
 C6/27B1: 16 29        ASL $29,X
 C6/27B3: D6 08        DEC $08,X
+Local_C627B5:
 C6/27B5: 32 1D        AND ($1D)
 C6/27B7: 02 9C        COP $9C
 C6/27B9: 07 30        ORA [$30]
@@ -142,14 +151,14 @@ C6/27C3: B9 07 30     LDA $3007,Y
 C6/27C6: A6 26        LDX $26
 C6/27C8: 2E F1 08     ROL $08F1
 C6/27CB: 08           PHP
-C6/27CC: 22 2D A7 07  JSR $07A72D
-C6/27D0: 30 B9        BMI $278B
+C6/27CC: 22 2D A7 07  JSR Routine_07A72D
+C6/27D0: 30 B9        BMI Local_C6278B
 C6/27D2: 12 2C        ORA ($2C)
 C6/27D4: E4 00        CPX $00
 C6/27D6: 08           PHP
 C6/27D7: 0A           ASL
 C6/27D8: 18           CLC
-C6/27D9: 90 17        BCC $27F2
+C6/27D9: 90 17        BCC Local_C627F2
 C6/27DB: 28           PLP
 C6/27DC: D4 00        PEI $00
 C6/27DE: 00 05        BRK $05
@@ -161,6 +170,7 @@ C6/27E7: 00 22        BRK $22
 C6/27E9: 9F 11 2A DF  STA $DF2A11,X
 C6/27ED: 00 23        BRK $23
 C6/27EF: 1E 00 A8     ASL $A800,X
+Local_C627F2:
 C6/27F2: 0F 2A E1 00  ORA $00E12A
 C6/27F6: 39 0C A2     AND $A20C,Y
 C6/27F9: 00 17        BRK $17
@@ -172,17 +182,18 @@ C6/2805: 23 21        AND $21,S
 C6/2807: CE 08 16     DEC $1608
 C6/280A: FF 08 00 08  SBC $080008,X
 C6/280E: 1D C8 2E     ORA $2EC8,X
-C6/2811: 30 F8        BMI $280B
+C6/2811: 30 F8        BMI Routine_C6280B
 C6/2813: 08           PHP
 C6/2814: 09 00 3C     ORA #$3C00
 C6/2817: AA           TAX
 C6/2818: 23 2F        AND $2F,S
+Local_C6281A:
 C6/281A: F4 08 37     PEA $3708
 C6/281D: 3D 00 9E     AND $9E00,X
 C6/2820: 37 31        AND [$31],Y
 C6/2822: FB           XCE
 C6/2823: 08           PHP
-C6/2824: 10 2D        BPL $2853
+C6/2824: 10 2D        BPL Routine_C62853
 C6/2826: 01 06        ORA ($06,X)
 C6/2828: 9A           TXS
 C6/2829: 00 E8        BRK $E8
@@ -216,16 +227,16 @@ C6/2862: 1C 00 22     TRB $2200
 C6/2865: 07 30        ORA [$30]
 C6/2867: 0A           ASL
 C6/2868: 21 1C        AND ($1C,X)
-C6/286A: 30 22        BMI $288E
+C6/286A: 30 22        BMI Routine_C6288E
 C6/286C: 23 30        AND $30,S
 C6/286E: A1 34        LDA ($34,X)
 C6/2870: 38           SEC
 C6/2871: 1B           TCS
-C6/2872: 10 0B        BPL $287F
+C6/2872: 10 0B        BPL Routine_C6287F
 C6/2874: 06 07        ASL $07
 C6/2876: A2 07        LDX #$07
-C6/2878: 30 A0        BMI $281A
-C6/287A: 10 3A        BPL $28B6
+C6/2878: 30 A0        BMI Local_C6281A
+C6/287A: 10 3A        BPL Local_C628B6
 C6/287C: 00 25        BRK $25
 C6/287E: 01 07        ORA ($07,X)
 C6/2880: 3E D1 09     ROL $09D1,X
@@ -253,7 +264,8 @@ C6/28AE: 38           SEC
 C6/28AF: 0E A4 11     ASL $11A4
 C6/28B2: 00 39        BRK $39
 C6/28B4: 23 01        AND $01,S
-C6/28B6: 22 2E A0 1B  JSR $1BA02E
+Local_C628B6:
+C6/28B6: 22 2E A0 1B  JSR Routine_1BA02E
 C6/28BA: 36 00        ROL $00,X
 C6/28BC: 17 03        ORA [$03],Y
 C6/28BE: 16 02        ASL $02,X
@@ -265,7 +277,7 @@ C6/28C8: B4 28        LDY $28,X
 C6/28CA: 52 33        EOR ($33)
 C6/28CC: 09 28 07     ORA #$0728
 C6/28CF: 0C B5 07     TSB $07B5
-C6/28D2: 30 B6        BMI $288A
+C6/28D2: 30 B6        BMI Routine_C6288A
 C6/28D4: 0E 30 01     ASL $0130
 C6/28D7: 00 05        BRK $05
 C6/28D9: AF 00 F4 00  LDA $00F400
@@ -296,7 +308,7 @@ C6/2910: 84 03        STY $03
 C6/2912: 07 08        ORA [$08]
 C6/2914: 9A           TXS
 C6/2915: A1 07        LDA ($07,X)
-C6/2917: 30 01        BMI $291A
+C6/2917: 30 01        BMI Routine_C6291A
 C6/2919: 00 00        BRK $00
 C6/291B: 00 04        BRK $04
 C6/291D: 00 01        BRK $01
@@ -313,9 +325,10 @@ C6/2935: 1A           INC
 C6/2936: 0E 00 88     ASL $8800
 C6/2939: 34 15        BIT $15,X
 C6/293B: B3 0E        LDA ($0E,S),Y
-C6/293D: 10 09        BPL $2948
+C6/293D: 10 09        BPL Routine_C62948
 C6/293F: 2D B4 1C     AND $1CB4
-C6/2942: 10 00        BPL $2944
+C6/2942: 10 00        BPL Local_C62944
+Local_C62944:
 C6/2944: 1E 2D B2     ASL $B22D,X
 C6/2947: 19 43 91     ORA $9143,Y
 C6/294A: 09 15 00     ORA #$0015

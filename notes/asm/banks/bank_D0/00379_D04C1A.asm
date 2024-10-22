@@ -12,7 +12,7 @@ D0/4C28: 00 00        BRK $00
 D0/4C2A: 00 00        BRK $00
 D0/4C2C: 00 00        BRK $00
 D0/4C2E: 00 00        BRK $00
-D0/4C30: 80 80        BRA $4BB2
+D0/4C30: 80 80        BRA Routine_D04BB2
 D0/4C32: 28           PLP
 D0/4C33: 28           PLP
 D0/4C34: 4A           LSR
@@ -25,9 +25,10 @@ D0/4C3E: 00 00        BRK $00
 D0/4C40: 00 00        BRK $00
 D0/4C42: 00 00        BRK $00
 D0/4C44: 44 44 80     MVP $44,$80
-D0/4C47: 80 00        BRA $4C49
+D0/4C47: 80 00        BRA Local_D04C49
+Local_D04C49:
 D0/4C49: 00 00        BRK $00
 D0/4C4B: 00 00        BRK $00
 D0/4C4D: 00 20        BRK $20
-D0/4C4F: 20 00 00     JSR $0000
+D0/4C4F: 20 00 00     JSR Routine_D00000
 D0/4C52: 40           RTI

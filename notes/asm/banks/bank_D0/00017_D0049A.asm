@@ -7,7 +7,8 @@ D0/04A0: 00 00        BRK $00
 D0/04A2: 00 00        BRK $00
 D0/04A4: 00 00        BRK $00
 D0/04A6: 00 00        BRK $00
-D0/04A8: 80 00        BRA $04AA
+D0/04A8: 80 00        BRA Local_D004AA
+Local_D004AA:
 D0/04AA: 00 00        BRK $00
 D0/04AC: 00 00        BRK $00
 D0/04AE: 00 00        BRK $00
@@ -23,9 +24,10 @@ D0/04C0: 07 03        ORA [$03]
 D0/04C2: 01 00        ORA ($00,X)
 D0/04C4: 00 00        BRK $00
 D0/04C6: 00 00        BRK $00
-D0/04C8: 20 60 40     JSR $4060
-D0/04CB: 80 80        BRA $044D
-D0/04CD: 80 00        BRA $04CF
+D0/04C8: 20 60 40     JSR Routine_D04060
+D0/04CB: 80 80        BRA Routine_D0044D
+D0/04CD: 80 00        BRA Local_D004CF
+Local_D004CF:
 D0/04CF: 00 00        BRK $00
 D0/04D1: 00 00        BRK $00
 D0/04D3: 00 00        BRK $00
@@ -46,6 +48,6 @@ D0/04EF: 00 0F        BRK $0F
 D0/04F1: 0E 06 03     ASL $0306
 D0/04F4: 00 00        BRK $00
 D0/04F6: 00 00        BRK $00
-D0/04F8: 10 70        BPL $056A
-D0/04FA: 70 90        BVS $048C
+D0/04F8: 10 70        BPL Routine_D0056A
+D0/04FA: 70 90        BVS Routine_D0048C
 D0/04FC: 40           RTI

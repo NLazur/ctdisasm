@@ -64,6 +64,6 @@ FD/F309: 06 AB        ASL $AB
 FD/F30B: 06 AB        ASL $AB
 FD/F30D: 06 AB        ASL $AB
 FD/F30F: 06 04        ASL $04
-FD/F311: 90 32        BCC $F345
-FD/F313: 80 40        BRA $F355
+FD/F311: 90 32        BCC Routine_FDF345
+FD/F313: 80 40        BRA Routine_FDF355
 FD/F315: 40           RTI

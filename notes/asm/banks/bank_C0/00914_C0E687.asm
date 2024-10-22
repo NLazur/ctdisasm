@@ -14,18 +14,22 @@ C0/E695: A4 D0        LDY $D0
 C0/E697: E2 20        SEP #$20
 C0/E699: A5 CF        LDA $CF
 C0/E69B: C9 7F        CMP #$7F
-C0/E69D: D0 03        BNE $E6A2
-C0/E69F: 82 20 02     BRL $C0E8C2
+C0/E69D: D0 03        BNE Local_C0E6A2
+C0/E69F: 82 20 02     BRL Routine_C0E8C2
+Local_C0E6A2:
 C0/E6A2: 38           SEC
 C0/E6A3: E9 D2        SBC #$D2
-C0/E6A5: D0 03        BNE $E6AA
-C0/E6A7: 82 12 01     BRL $C0E7BC
+C0/E6A5: D0 03        BNE Local_C0E6AA
+C0/E6A7: 82 12 01     BRL Routine_C0E7BC
+Local_C0E6AA:
 C0/E6AA: 3A           DEC
-C0/E6AB: D0 03        BNE $E6B0
-C0/E6AD: 82 8F 01     BRL $C0E83F
+C0/E6AB: D0 03        BNE Local_C0E6B0
+C0/E6AD: 82 8F 01     BRL Routine_C0E83F
+Local_C0E6B0:
 C0/E6B0: 3A           DEC
-C0/E6B1: D0 03        BNE $E6B6
-C0/E6B3: 82 83 00     BRL $C0E739
+C0/E6B1: D0 03        BNE Local_C0E6B6
+C0/E6B3: 82 83 00     BRL Routine_C0E739
+Local_C0E6B6:
 C0/E6B6: 8B           PHB
 C0/E6B7: A9 7F        LDA #$7F
 C0/E6B9: 48           PHA

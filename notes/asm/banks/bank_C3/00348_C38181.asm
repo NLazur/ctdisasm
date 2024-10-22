@@ -15,14 +15,15 @@ C3/819A: 7C 8B 71     JMP ($718B,X)
 C3/819D: 47 03        EOR [$03]
 C3/819F: 00 37        BRK $37
 C3/81A1: 02 06        COP $06
-C3/81A3: 10 10        BPL $81B5
+C3/81A3: 10 10        BPL Routine_C381B5
 C3/81A5: 00 40        BRK $40
 C3/81A7: 00 01        BRK $01
 C3/81A9: B6 10        LDX $10,Y
 C3/81AB: 77 88        ADC [$88],Y
 C3/81AD: 37 C8        AND [$C8],Y
 C3/81AF: 06 F9        ASL $F9
-C3/81B1: 10 00        BPL $81B3
+C3/81B1: 10 00        BPL Local_C381B3
+Local_C381B3:
 C3/81B3: EE 40 B0     INC $B040
 C3/81B6: 00 C0        BRK $C0
 C3/81B8: F4 22 B4     PEA $B422

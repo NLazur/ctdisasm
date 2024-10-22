@@ -23,12 +23,13 @@ C0/B0B8: 65 F0        ADC $F0
 C0/B0BA: A8           TAY
 C0/B0BB: 29 FF 00     AND #$00FF
 C0/B0BE: 85 E1        STA $E1
+Local_C0B0C0:
 C0/B0C0: A5 DB        LDA $DB
 C0/B0C2: 8B           PHB
 C0/B0C3: 54 7E 7E     MVN $7E,$7E
 C0/B0C6: AB           PLB
 C0/B0C7: A5 DD        LDA $DD
-C0/B0C9: F0 18        BEQ $B0E3
+C0/B0C9: F0 18        BEQ Local_C0B0E3
 C0/B0CB: C6 DD        DEC $DD
 C0/B0CD: 8A           TXA
 C0/B0CE: 38           SEC
@@ -44,6 +45,7 @@ C0/B0DB: 3A           DEC
 C0/B0DC: 18           CLC
 C0/B0DD: 69 00 01     ADC #$0100
 C0/B0E0: A8           TAY
-C0/B0E1: 80 DD        BRA $B0C0
+C0/B0E1: 80 DD        BRA Local_C0B0C0
+Local_C0B0E3:
 C0/B0E3: E2 20        SEP #$20
 C0/B0E5: 60           RTS

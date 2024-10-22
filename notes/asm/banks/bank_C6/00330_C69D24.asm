@@ -53,7 +53,7 @@ C6/9D8F: 1C 4B 6C     TRB $6C4B
 C6/9D92: DA           PHX
 C6/9D93: 1A           INC
 C6/9D94: DE 09 54     DEC $5409,X
-C6/9D97: 20 65 66     JSR $6665
+C6/9D97: 20 65 66     JSR Routine_C66665
 C6/9D9A: 67 4E        ADC [$4E]
 C6/9D9C: 68           PLA
 C6/9D9D: BC 1B 6F     LDY $6F1B,X

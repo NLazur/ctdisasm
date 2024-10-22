@@ -13,7 +13,7 @@ FD/4601: 8B           PHB
 FD/4602: 7E 8C 39     ROR $398C,X
 FD/4605: DC E1 00     JMP [$00E1]
 FD/4608: 03 FE        ORA $FE,S
-FD/460A: 30 DA        BMI $45E6
+FD/460A: 30 DA        BMI Routine_FD45E6
 FD/460C: 12 F0        ORA ($F0)
 FD/460E: 2C AB 00     BIT $00AB
 FD/4611: D7 53        CMP [$53],Y
@@ -38,10 +38,11 @@ FD/4636: BC 41 79     LDY $7941,X
 FD/4639: 83 7B        STA $7B,S
 FD/463B: 83 FE        STA $FE,S
 FD/463D: 00 03        BRK $03
-FD/463F: F0 07        BEQ $4648
+FD/463F: F0 07        BEQ Local_FD4648
 FD/4641: F4 07 EC     PEA $EC07
 FD/4644: 07 29        ORA [$29]
 FD/4646: 00 EC        BRK $EC
+Local_FD4648:
 FD/4648: AD 8E 86     LDA $868E
 FD/464B: FB           XCE
 FD/464C: B9 E6 3D     LDA $3DE6,Y
@@ -69,7 +70,7 @@ FD/467F: C3 40        CMP $40,S
 FD/4681: EF 24 FF 38  SBC $38FF24
 FD/4685: 01 99        ORA ($99,X)
 FD/4687: 45 34        EOR $34
-FD/4689: D0 33        BNE $46BE
+FD/4689: D0 33        BNE Routine_FD46BE
 FD/468B: E8           INX
 FD/468C: 89 54 9D     BIT #$9D54
 FD/468F: 00 5A        BRK $5A

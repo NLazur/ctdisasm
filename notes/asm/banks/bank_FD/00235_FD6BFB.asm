@@ -1,12 +1,14 @@
 ; Bank: FD | Start Address: 6BFB
 Routine_FD6BFB:
-FD/6BFB: F0 F0        BEQ $6BED
-FD/6BFD: D0 02        BNE $6C01
+FD/6BFB: F0 F0        BEQ Routine_FD6BED
+FD/6BFD: D0 02        BNE Local_FD6C01
 FD/6BFF: 00 4A        BRK $4A
-FD/6C01: 90 02        BCC $6C05
+Local_FD6C01:
+FD/6C01: 90 02        BCC Local_FD6C05
 FD/6C03: 00 10        BRK $10
+Local_FD6C05:
 FD/6C05: 02 00        COP $00
-FD/6C07: 90 F0        BCC $6BF9
+FD/6C07: 90 F0        BCC Routine_FD6BF9
 FD/6C09: 78           SEI
 FD/6C0A: 24 04        BIT $04
 FD/6C0C: 00 12        BRK $12

@@ -72,7 +72,7 @@ CC/277B: FA           PLX
 CC/277C: 27 A0        AND [$A0]
 CC/277E: 3C 03 03     BIT $0303,X
 CC/2781: 28           PLP
-CC/2782: 90 3F        BCC $27C3
+CC/2782: 90 3F        BCC Routine_CC27C3
 CC/2784: 03 0C        ORA $0C,S
 CC/2786: 28           PLP
 CC/2787: 88           DEY

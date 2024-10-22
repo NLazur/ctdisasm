@@ -2,7 +2,7 @@
 Routine_C62992:
 C6/2992: 00 00        BRK $00
 C6/2994: 07 C2        ORA [$C2]
-C6/2996: 10 46        BPL $29DE
+C6/2996: 10 46        BPL Routine_C629DE
 C6/2998: AC 01 09     LDY $0901
 C6/299B: 1E 00 C6     ASL $C600,X
 C6/299E: 17 53        ORA [$53],Y

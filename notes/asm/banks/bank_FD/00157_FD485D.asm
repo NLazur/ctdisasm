@@ -47,13 +47,15 @@ FD/48BE: 14 00        TRB $00
 FD/48C0: 36 08        ROL $08,X
 FD/48C2: 1A           INC
 FD/48C3: 08           PHP
-FD/48C4: 10 08        BPL $48CE
+FD/48C4: 10 08        BPL Local_FD48CE
 FD/48C6: 19 39 00     ORA $0039,Y
 FD/48C9: 06 33        ASL $33
 FD/48CB: 0C 3B 04     TSB $043B
+Local_FD48CE:
 FD/48CE: 1B           TCS
 FD/48CF: 04 1F        TSB $1F
-FD/48D1: 10 00        BPL $48D3
+FD/48D1: 10 00        BPL Local_FD48D3
+Local_FD48D3:
 FD/48D3: 13 04        ORA ($04,S),Y
 FD/48D5: 1D DD 0C     ORA $0CDD,X
 FD/48D8: 3F 22 37 00  AND $003722,X
@@ -74,10 +76,11 @@ FD/48F8: 04 D1        TSB $D1
 FD/48FA: 33 23        AND ($23,S),Y
 FD/48FC: 32 13        AND ($13)
 FD/48FE: 7B           TDC
+Local_FD48FF:
 FD/48FF: 00 13        BRK $13
 FD/4901: D1 79        CMP ($79),Y
 FD/4903: 8D 7C B9     STA $B97C
-FD/4906: D0 F7        BNE $48FF
+FD/4906: D0 F7        BNE Local_FD48FF
 FD/4908: 00 85        BRK $85
 FD/490A: F7 F0        SBC [$F0],Y
 FD/490C: ED D1 E7     SBC $E7D1

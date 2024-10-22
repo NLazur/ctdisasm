@@ -1,19 +1,22 @@
 ; Bank: D0 | Start Address: 1F4A
 Routine_D01F4A:
-D0/1F4A: 50 40        BVC $1F8C
-D0/1F4C: 90 00        BCC $1F4E
-D0/1F4E: 90 00        BCC $1F50
-D0/1F50: 10 10        BPL $1F62
-D0/1F52: 10 30        BPL $1F84
-D0/1F54: B0 90        BCS $1EE6
-D0/1F56: D0 D0        BNE $1F28
+D0/1F4A: 50 40        BVC Routine_D01F8C
+D0/1F4C: 90 00        BCC Local_D01F4E
+Local_D01F4E:
+D0/1F4E: 90 00        BCC Local_D01F50
+Local_D01F50:
+D0/1F50: 10 10        BPL Routine_D01F62
+D0/1F52: 10 30        BPL Routine_D01F84
+D0/1F54: B0 90        BCS Routine_D01EE6
+Local_D01F56:
+D0/1F56: D0 D0        BNE Routine_D01F28
 D0/1F58: AB           PLB
 D0/1F59: D4 BF        PEI $BF
-D0/1F5B: 50 5F        BVC $1FBC
-D0/1F5D: B0 F7        BCS $1F56
+D0/1F5B: 50 5F        BVC Routine_D01FBC
+D0/1F5D: B0 F7        BCS Local_D01F56
 D0/1F5F: E8           INX
 D0/1F60: DB           STP
 D0/1F61: 64 6F        STZ $6F
-D0/1F63: 30 1B        BMI $1F80
+D0/1F63: 30 1B        BMI Routine_D01F80
 D0/1F65: 2C 04 09     BIT $0904
 D0/1F68: 60           RTS

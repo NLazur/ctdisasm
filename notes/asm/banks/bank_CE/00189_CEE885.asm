@@ -2,14 +2,16 @@
 Routine_CEE885:
 CE/E885: A0 38 A5     LDY #$A538
 CE/E888: 7C 29 01     JMP ($0129,X)
-CE/E88B: D0 03        BNE $E890
-CE/E88D: 4C 87 E9     JMP $E987
+CE/E88B: D0 03        BNE Local_CEE890
+CE/E88D: 4C 87 E9     JMP Routine_CEE987
+Local_CEE890:
 CE/E890: AD A3 CA     LDA $CAA3
-CE/E893: 30 78        BMI $E90D
+CE/E893: 30 78        BMI Routine_CEE90D
 CE/E895: A5 45        LDA $45
 CE/E897: 29 02        AND #$02
-CE/E899: F0 39        BEQ $E8D4
+CE/E899: F0 39        BEQ Routine_CEE8D4
 CE/E89B: A9 FF        LDA #$FF
+Local_CEE89D:
 CE/E89D: 99 E0 C4     STA $C4E0,Y
 CE/E8A0: 99 18 C5     STA $C518,Y
 CE/E8A3: 99 50 C5     STA $C550,Y
@@ -30,5 +32,5 @@ CE/E8CD: 88           DEY
 CE/E8CE: 88           DEY
 CE/E8CF: 88           DEY
 CE/E8D0: 88           DEY
-CE/E8D1: D0 CA        BNE $E89D
+CE/E8D1: D0 CA        BNE Local_CEE89D
 CE/E8D3: 60           RTS

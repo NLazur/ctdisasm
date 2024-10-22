@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 75A3
 Routine_FD75A3:
-FD/75A3: D0 18        BNE $75BD
+FD/75A3: D0 18        BNE Routine_FD75BD
 FD/75A5: 1F 30 1F 00  ORA $001F30,X
 FD/75A9: 03 3C        ORA $3C,S
 FD/75AB: 67 38        ADC [$38]

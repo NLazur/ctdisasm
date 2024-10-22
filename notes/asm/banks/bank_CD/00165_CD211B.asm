@@ -9,7 +9,7 @@ CD/2124: 38           SEC
 CD/2125: E5 47        SBC $47
 CD/2127: 85 49        STA $49
 CD/2129: A5 49        LDA $49
-CD/212B: 10 28        BPL $2155
+CD/212B: 10 28        BPL Routine_CD2155
 CD/212D: 49 FF FF     EOR #$FFFF
 CD/2130: 1A           INC
 CD/2131: E2 20        SEP #$20

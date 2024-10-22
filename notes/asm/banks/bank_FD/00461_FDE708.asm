@@ -2,6 +2,7 @@
 Routine_FDE708:
 FD/E708: B9 22 05     LDA $0522,Y
 FD/E70B: A8           TAY
+Local_FDE70C:
 FD/E70C: BF 00 20 7E  LDA $7E2000,X
 FD/E710: 29 1F        AND #$1F
 FD/E712: 8D 03 42     STA $4203
@@ -20,7 +21,7 @@ FD/E72F: E2 20        SEP #$20
 FD/E731: E8           INX
 FD/E732: E8           INX
 FD/E733: 88           DEY
-FD/E734: D0 D6        BNE $E70C
+FD/E734: D0 D6        BNE Local_FDE70C
 FD/E736: A9 00        LDA #$00
 FD/E738: EB           XBA
 FD/E739: 60           RTS

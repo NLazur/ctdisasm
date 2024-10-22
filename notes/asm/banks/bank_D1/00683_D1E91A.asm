@@ -3,6 +3,7 @@ Routine_D1E91A:
 D1/E91A: C2 20        REP #$20
 D1/E91C: 7B           TDC
 D1/E91D: AA           TAX
+Local_D1E91E:
 D1/E91E: BD 40 20     LDA $2040,X
 D1/E921: 9D A0 20     STA $20A0,X
 D1/E924: 9D A0 22     STA $22A0,X
@@ -11,16 +12,17 @@ D1/E92A: 9E 40 22     STZ $2240,X
 D1/E92D: E8           INX
 D1/E92E: E8           INX
 D1/E92F: E0 60 00     CPX #$0060
-D1/E932: D0 EA        BNE $E91E
+D1/E932: D0 EA        BNE Local_D1E91E
 D1/E934: 7B           TDC
 D1/E935: E2 20        SEP #$20
 D1/E937: 7B           TDC
 D1/E938: AA           TAX
+Local_D1E939:
 D1/E939: BD 44 05     LDA $0544,X
 D1/E93C: 9D 20 05     STA $0520,X
 D1/E93F: E8           INX
 D1/E940: E0 24 00     CPX #$0024
-D1/E943: D0 F4        BNE $E939
+D1/E943: D0 F4        BNE Local_D1E939
 D1/E945: AD 21 05     LDA $0521
 D1/E948: 18           CLC
 D1/E949: 69 30        ADC #$30

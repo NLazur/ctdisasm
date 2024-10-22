@@ -20,7 +20,7 @@ D0/5277: C6 C0        DEC $C0
 D0/5279: AC 24 DC     LDY $DC24
 D0/527C: 48           PHA
 D0/527D: B8           CLV
-D0/527E: 90 70        BCC $52F0
+D0/527E: 90 70        BCC Routine_D052F0
 D0/5280: 02 03        COP $03
 D0/5282: 09 0A        ORA #$0A
 D0/5284: 0E 0F 03     ASL $030F
@@ -35,5 +35,5 @@ D0/5294: 88           DEY
 D0/5295: 48           PHA
 D0/5296: C8           INY
 D0/5297: 48           PHA
-D0/5298: B0 F0        BCS $528A
+D0/5298: B0 F0        BCS Routine_D0528A
 D0/529A: 40           RTI

@@ -22,27 +22,27 @@ FD/1DAE: C3 00        CMP $00,S
 FD/1DB0: 04 33        TSB $33
 FD/1DB2: C1 0B        CMP ($0B,X)
 FD/1DB4: F1 07        SBC ($07),Y
-FD/1DB6: 80 FB        BRA $1DB3
+FD/1DB6: 80 FB        BRA Routine_FD1DB3
 FD/1DB8: C7 3B        CMP [$3B]
-FD/1DBA: F0 F7        BEQ $1DB3
+FD/1DBA: F0 F7        BEQ Routine_FD1DB3
 FD/1DBC: C0 C3 84     CPY #$84C3
 FD/1DBF: 2F 08 C1 01  AND $01C108
 FD/1DC3: F1 0B        SBC ($0B),Y
 FD/1DC5: 0D FB FE     ORA $FEFB
 FD/1DC8: F1 FF        SBC ($FF),Y
 FD/1DCA: 00 CE        BRK $CE
-FD/1DCC: F0 3F        BEQ $1E0D
-FD/1DCE: 80 FF        BRA $1DCF
+FD/1DCC: F0 3F        BEQ Routine_FD1E0D
+FD/1DCE: 80 FF        BRA Routine_FD1DCF
 FD/1DD0: 85 FA        STA $FA
 FD/1DD2: 86 00        STX $00
 FD/1DD4: F9 81 FF     SBC $FF81,Y
 FD/1DD7: 83 FF        STA $FF,S
 FD/1DD9: 01 F1        ORA ($F1,X)
 FD/1DDB: 0E 84 CE     ASL $CE84
-FD/1DDE: 30 10        BMI $1DF0
+FD/1DDE: 30 10        BMI Routine_FD1DF0
 FD/1DE0: 00 80        BRK $80
 FD/1DE2: FD 80 FF     SBC $FF80,X
-FD/1DE5: 10 10        BPL $1DF7
+FD/1DE5: 10 10        BPL Local_FD1DF7
 FD/1DE7: 00 1C        BRK $1C
 FD/1DE9: E3 FC        SBC $FC,S
 FD/1DEB: 03 7E        ORA $7E,S
@@ -51,5 +51,6 @@ FD/1DEF: C0 00 1C     CPY #$1C00
 FD/1DF2: E2 70        SEP #$70
 FD/1DF4: E8           INX
 FD/1DF5: E6 C6        INC $C6
+Local_FD1DF7:
 FD/1DF7: C7 A7        CMP [$A7]
 FD/1DF9: 40           RTI

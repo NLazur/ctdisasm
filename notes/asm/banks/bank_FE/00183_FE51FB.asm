@@ -2,7 +2,7 @@
 Routine_FE51FB:
 FE/51FB: 34 30        BIT $30,X
 FE/51FD: 8A           TXA
-FE/51FE: B0 60        BCS $5260
+FE/51FE: B0 60        BCS Routine_FE5260
 FE/5200: 94 40        STY $40,X
 FE/5202: 81 05        STA ($05,X)
 FE/5204: 62 FE 22     PER $FE7505

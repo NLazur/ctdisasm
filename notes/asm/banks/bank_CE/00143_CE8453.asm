@@ -1,12 +1,12 @@
 ; Bank: CE | Start Address: 8453
 Routine_CE8453:
 CE/8453: 84 B8        STY $B8
-CE/8455: 82 6F 84     BRL $CE08C7
+CE/8455: 82 6F 84     BRL Routine_CE08C7
 CE/8458: 87 84        STA [$84]
 CE/845A: 9A           TXS
 CE/845B: 84 B3        STY $B3
 CE/845D: 84 F3        STY $F3
-CE/845F: 82 72 15     BRL $CE99D4
+CE/845F: 82 72 15     BRL Routine_CE99D4
 CE/8462: 03 15        ORA $15,S
 CE/8464: 24 02        BIT $02
 CE/8466: 78           SEI

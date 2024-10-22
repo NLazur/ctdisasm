@@ -1,7 +1,7 @@
 ; Bank: C2 | Start Address: 17AB
 Routine_C217AB:
 C2/17AB: BD 18 00     LDA $0018,X
-C2/17AE: 10 13        BPL $17C3
+C2/17AE: 10 13        BPL Local_C217C3
 C2/17B0: 18           CLC
 C2/17B1: BD 16 00     LDA $0016,X
 C2/17B4: 49 FF FF     EOR #$FFFF
@@ -9,7 +9,8 @@ C2/17B7: 69 01 00     ADC #$0001
 C2/17BA: BD 18 00     LDA $0018,X
 C2/17BD: 49 FF FF     EOR #$FFFF
 C2/17C0: 69 00 00     ADC #$0000
-C2/17C3: F0 0B        BEQ $17D0
+Local_C217C3:
+C2/17C3: F0 0B        BEQ Routine_C217D0
 C2/17C5: E2 20        SEP #$20
 C2/17C7: BD 18 00     LDA $0018,X
 C2/17CA: 85 01        STA $01

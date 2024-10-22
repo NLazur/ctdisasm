@@ -2,6 +2,7 @@
 Routine_FDE935:
 FD/E935: B9 22 05     LDA $0522,Y
 FD/E938: A8           TAY
+Local_FDE939:
 FD/E939: BF 01 20 7E  LDA $7E2001,X
 FD/E93D: 29 7C        AND #$7C
 FD/E93F: 85 0C        STA $0C
@@ -19,5 +20,5 @@ FD/E958: 9F 01 22 7E  STA $7E2201,X
 FD/E95C: E8           INX
 FD/E95D: E8           INX
 FD/E95E: 88           DEY
-FD/E95F: D0 D8        BNE $E939
+FD/E95F: D0 D8        BNE Local_FDE939
 FD/E961: 60           RTS

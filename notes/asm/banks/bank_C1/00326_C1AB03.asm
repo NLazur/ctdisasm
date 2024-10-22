@@ -3,37 +3,41 @@ Routine_C1AB03:
 C1/AB03: 7B           TDC
 C1/AB04: AA           TAX
 C1/AB05: A8           TAY
+Local_C1AB06:
 C1/AB06: BD 15 AF     LDA $AF15,X
 C1/AB09: 89 80        BIT #$80
-C1/AB0B: F0 05        BEQ $AB12
+C1/AB0B: F0 05        BEQ Local_C1AB12
 C1/AB0D: 8A           TXA
 C1/AB0E: 99 CC AE     STA $AECC,Y
 C1/AB11: C8           INY
+Local_C1AB12:
 C1/AB12: E8           INX
 C1/AB13: E0 08 00     CPX #$0008
-C1/AB16: 90 EE        BCC $AB06
+C1/AB16: 90 EE        BCC Local_C1AB06
 C1/AB18: C0 00        CPY #$00
 C1/AB1A: 00 D0        BRK $D0
 C1/AB1C: 06 7B        ASL $7B
 C1/AB1E: 8D CB AE     STA $AECB
-C1/AB21: 80 2A        BRA $AB4D
+C1/AB21: 80 2A        BRA Local_C1AB4D
 C1/AB23: 98           TYA
 C1/AB24: 8D CB AE     STA $AECB
 C1/AB27: C9 02        CMP #$02
-C1/AB29: 90 22        BCC $AB4D
+C1/AB29: 90 22        BCC Local_C1AB4D
 C1/AB2B: 7B           TDC
 C1/AB2C: AA           TAX
 C1/AB2D: AD CB AE     LDA $AECB
-C1/AB30: 20 22 AF     JSR $AF22
+C1/AB30: 20 22 AF     JSR Routine_C1AF22
 C1/AB33: AA           TAX
 C1/AB34: BD CC AE     LDA $AECC,X
 C1/AB37: 8D CC AE     STA $AECC
 C1/AB3A: A2 01 00     LDX #$0001
 C1/AB3D: A9 FF        LDA #$FF
+Local_C1AB3F:
 C1/AB3F: 9D CC AE     STA $AECC,X
 C1/AB42: E8           INX
 C1/AB43: E0 0B 00     CPX #$000B
-C1/AB46: 90 F7        BCC $AB3F
+C1/AB46: 90 F7        BCC Local_C1AB3F
 C1/AB48: A9 01        LDA #$01
 C1/AB4A: 8D CB AE     STA $AECB
+Local_C1AB4D:
 C1/AB4D: 60           RTS

@@ -5,7 +5,7 @@ FE/0E2B: DF 02 F6 01  CMP $01F602,X
 FE/0E2F: F8           SED
 FE/0E30: 02 DE        COP $DE
 FE/0E32: 26 F8        ROL $F8
-FE/0E34: 82 BC 06     BRL $FE14F3
+FE/0E34: 82 BC 06     BRL Routine_FE14F3
 FE/0E37: C7 07        CMP [$07]
 FE/0E39: 41 F8        EOR ($F8,X)
 FE/0E3B: C7 01        CMP [$01]

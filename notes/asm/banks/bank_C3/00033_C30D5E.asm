@@ -7,8 +7,9 @@ C3/0D65: A6 13        LDX $13
 C3/0D67: 9C 83 21     STZ $2183
 C3/0D6A: AD 80 21     LDA $2180
 C3/0D6D: 85 19        STA $19
+Local_C30D6F:
 C3/0D6F: C6 19        DEC $19
-C3/0D71: F0 42        BEQ $0DB5
+C3/0D71: F0 42        BEQ Local_C30DB5
 C3/0D73: AD 80 21     LDA $2180
 C3/0D76: 99 02 07     STA $0702,Y
 C3/0D79: AD 80 21     LDA $2180
@@ -18,8 +19,9 @@ C3/0D82: C2 21        REP #$21
 C3/0D84: 29 FF 00     AND #$00FF
 C3/0D87: 65 15        ADC $15
 C3/0D89: C9 00 01     CMP #$0100
-C3/0D8C: 30 03        BMI $0D91
+C3/0D8C: 30 03        BMI Local_C30D91
 C3/0D8E: A9 01 98     LDA #$9801
+Local_C30D91:
 C3/0D91: 99 00 07     STA $0700,Y
 C3/0D94: 0A           ASL
 C3/0D95: E2 20        SEP #$20
@@ -38,9 +40,10 @@ C3/0DAB: C8           INY
 C3/0DAC: C8           INY
 C3/0DAD: 98           TYA
 C3/0DAE: 29 0F        AND #$0F
-C3/0DB0: D0 BD        BNE $0D6F
+C3/0DB0: D0 BD        BNE Local_C30D6F
 C3/0DB2: E8           INX
-C3/0DB3: 80 BA        BRA $0D6F
+C3/0DB3: 80 BA        BRA Local_C30D6F
+Local_C30DB5:
 C3/0DB5: C2 20        REP #$20
 C3/0DB7: 86 13        STX $13
 C3/0DB9: 84 11        STY $11

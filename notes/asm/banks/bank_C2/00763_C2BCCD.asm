@@ -11,15 +11,17 @@ C2/BCDF: 85 01        STA $01
 C2/BCE1: BF 65 BD C2  LDA $C2BD65,X
 C2/BCE5: AA           TAX
 C2/BCE6: A0 00        LDY #$00
+Local_C2BCE8:
 C2/BCE8: BF 63 29 CC  LDA $CC2963,X
 C2/BCEC: 25 00        AND $00
-C2/BCEE: F0 05        BEQ $BCF5
+C2/BCEE: F0 05        BEQ Local_C2BCF5
 C2/BCF0: 8A           TXA
 C2/BCF1: 99 90 98     STA $9890,Y
 C2/BCF4: C8           INY
+Local_C2BCF5:
 C2/BCF5: E8           INX
 C2/BCF6: C6 01        DEC $01
-C2/BCF8: D0 EE        BNE $BCE8
+C2/BCF8: D0 EE        BNE Local_C2BCE8
 C2/BCFA: A9 FF        LDA #$FF
 C2/BCFC: 99 90 98     STA $9890,Y
 C2/BCFF: 60           RTS

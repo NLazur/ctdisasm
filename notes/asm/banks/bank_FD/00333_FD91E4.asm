@@ -1,9 +1,9 @@
 ; Bank: FD | Start Address: 91E4
 Routine_FD91E4:
 FD/91E4: 3F FE FF 80  AND $80FFFE,X
-FD/91E8: 50 10        BVC $91FA
-FD/91EA: 30 30        BMI $921C
-FD/91EC: 80 50        BRA $923E
+FD/91E8: 50 10        BVC Routine_FD91FA
+FD/91EA: 30 30        BMI Routine_FD921C
+FD/91EC: 80 50        BRA Local_FD923E
 FD/91EE: 2F 40 18 F0  AND $F01840
 FD/91F2: 01 00        ORA ($00,X)
 FD/91F4: F2 DF        SBC ($DF)
@@ -45,7 +45,8 @@ FD/9235: 0A           ASL
 FD/9236: 07 2B        ORA [$2B]
 FD/9238: 00 1B        BRK $1B
 FD/923A: 27 00        AND [$00]
-FD/923C: 70 8D        BVS $91CB
+FD/923C: 70 8D        BVS Routine_FD91CB
+Local_FD923E:
 FD/923E: 00 19        BRK $19
 FD/9240: 00 60        BRK $60
 FD/9242: 03 89        ORA $89,S

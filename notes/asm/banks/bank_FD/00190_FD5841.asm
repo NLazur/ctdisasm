@@ -3,10 +3,11 @@ Routine_FD5841:
 FD/5841: E0 20        CPX #$20
 FD/5843: 24 21        BIT $21
 FD/5845: 24 00        BIT $00
-FD/5847: 22 24 23 24  JSR $242324
+FD/5847: 22 24 23 24  JSR Routine_242324
 FD/584B: 24 24        BIT $24
 FD/584D: 25 24        AND $24
 FD/584F: 08           PHP
+Local_FD5850:
 FD/5850: 26 24        ROL $24
 FD/5852: 27 80        AND [$80]
 FD/5854: 00 28        BRK $28
@@ -18,7 +19,7 @@ FD/585D: 24 2C        BIT $2C
 FD/585F: 24 2D        BIT $2D
 FD/5861: 24 F8        BIT $F8
 FD/5863: 2E 24 2F     ROL $2F24
-FD/5866: 80 E8        BRA $5850
+FD/5866: 80 E8        BRA Local_FD5850
 FD/5868: 02 F8        COP $F8
 FD/586A: 02 F8        COP $F8
 FD/586C: 02 F8        COP $F8

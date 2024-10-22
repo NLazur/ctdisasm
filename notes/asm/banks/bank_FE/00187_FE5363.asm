@@ -12,7 +12,7 @@ FE/5373: 08           PHP
 FE/5374: E7 14        SBC [$14]
 FE/5376: E3 0A        SBC $0A,S
 FE/5378: F1 35        SBC ($35),Y
-FE/537A: 22 08 A4 30  JSR $30A408
+FE/537A: 22 08 A4 30  JSR Routine_30A408
 FE/537E: 09 FE E0     ORA #$E0FE
 FE/5381: 52 10        EOR ($10)
 FE/5383: 03 80        ORA $80,S

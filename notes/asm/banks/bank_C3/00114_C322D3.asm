@@ -5,37 +5,38 @@ C3/22D5: 0C 01 B9     TSB $B901
 C3/22D8: 1E 18 69     ASL $6918,X
 C3/22DB: 17 00        ORA [$00],Y
 C3/22DD: 8D 1E 14     STA $141E
-C3/22E0: 20 3A 3A     JSR $3A3A
+C3/22E0: 20 3A 3A     JSR Routine_C33A3A
 C3/22E3: 8D 36 14     STA $1436
 C3/22E6: 7B           TDC
 C3/22E7: 0E 18 6D     ASL $6D18
 C3/22EA: 04 0A        TSB $0A
 C3/22EC: 0A           ASL
-C3/22ED: D0 1E        BNE $230D
+C3/22ED: D0 1E        BNE Local_C3230D
 C3/22EF: 8D 1C 14     STA $141C
 C3/22F2: 4A           LSR
 C3/22F3: 8D 4A 34     STA $344A
 C3/22F6: 04 00        TSB $00
-C3/22F8: 30 55        BMI $234F
-C3/22FA: 10 AD        BPL $22A9
+C3/22F8: 30 55        BMI Routine_C3234F
+C3/22FA: 10 AD        BPL Routine_C322A9
 C3/22FC: 9D 39 01     STA $0139,X
 C3/22FF: 85 00        STA $00
-C3/2301: F0 AD        BEQ $22B0
+C3/2301: F0 AD        BEQ Routine_C322B0
 C3/2303: 02 0A        COP $0A
 C3/2305: 4A           LSR
 C3/2306: 65 F0        ADC $F0
 C3/2308: 69 02 88     ADC #$8802
 C3/230B: 96 2E        STX $2E,Y
+Local_C3230D:
 C3/230D: 85 F0        STA $F0
 C3/230F: 18           CLC
 C3/2310: 6D 3E 14     ADC $143E
 C3/2313: CB           WAI
 C3/2314: 28           PLP
-C3/2315: 10 25        BPL $233C
-C3/2317: 10 AD        BPL $22C6
+C3/2315: 10 25        BPL Routine_C3233C
+C3/2317: 10 AD        BPL Routine_C322C6
 C3/2319: 08           PHP
-C3/231A: 10 85        BPL $22A1
-C3/231C: F0 1F        BEQ $233D
+C3/231A: 10 85        BPL Routine_C322A1
+C3/231C: F0 1F        BEQ Routine_C3233D
 C3/231E: 00 36        BRK $36
 C3/2320: 00 00        BRK $00
 C3/2322: 60           RTS

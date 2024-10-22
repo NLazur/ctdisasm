@@ -1,8 +1,10 @@
 ; Bank: D0 | Start Address: CD9A
 Routine_D0CD9A:
-D0/CD9A: 80 00        BRA $CD9C
+Local_D0CD9A:
+D0/CD9A: 80 00        BRA Local_D0CD9C
+Local_D0CD9C:
 D0/CD9C: 00 1E        BRK $1E
-D0/CD9E: 30 38        BMI $CDD8
+D0/CD9E: 30 38        BMI Local_D0CDD8
 D0/CDA0: 0F 07 1F 08  ORA $081F07
 D0/CDA4: 3F 07 3F 30  AND $303F07,X
 D0/CDA8: 3F 1B 3F 3D  AND $3D3F1B,X
@@ -11,13 +13,13 @@ D0/CDB0: 07 08        ORA [$08]
 D0/CDB2: 07 30        ORA [$30]
 D0/CDB4: 18           CLC
 D0/CDB5: 3C 04 0E     BIT $0E04,X
-D0/CDB8: F0 E0        BEQ $CD9A
+D0/CDB8: F0 E0        BEQ Local_D0CD9A
 D0/CDBA: FA           PLX
-D0/CDBB: 10 FF        BPL $CDBC
+D0/CDBB: 10 FF        BPL Routine_D0CDBC
 D0/CDBD: E2 FE        SEP #$FE
 D0/CDBF: 0C FC D8     TSB $D8FC
 D0/CDC2: FE BC FC     INC $FCBC,X
-D0/CDC5: 20 F8 70     JSR $70F8
+D0/CDC5: 20 F8 70     JSR Routine_D070F8
 D0/CDC8: E0 10        CPX #$10
 D0/CDCA: E2 0C        SEP #$0C
 D0/CDCC: 18           CLC
@@ -26,6 +28,7 @@ D0/CDD0: 03 01        ORA $01,S
 D0/CDD2: 07 02        ORA [$02]
 D0/CDD4: 03 01        ORA $01,S
 D0/CDD6: 05 02        ORA $02
+Local_D0CDD8:
 D0/CDD8: 69 07        ADC #$07
 D0/CDDA: FB           XCE
 D0/CDDB: E7 DB        SBC [$DB]
@@ -33,8 +36,9 @@ D0/CDDD: 37 E8        AND [$E8],Y
 D0/CDDF: 77 01        ADC [$01],Y
 D0/CDE1: 02 01        COP $01
 D0/CDE3: 00 00        BRK $00
+Local_D0CDE5:
 D0/CDE5: E1 30        SBC ($30,X)
-D0/CDE7: 70 FC        BVS $CDE5
+D0/CDE7: 70 FC        BVS Local_D0CDE5
 D0/CDE9: F8           SED
 D0/CDEA: FE 04 FE     INC $FE04,X
 D0/CDED: F8           SED

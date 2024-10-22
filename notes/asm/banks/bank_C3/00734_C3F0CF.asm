@@ -32,9 +32,10 @@ C3/F104: 03 F8        ORA $F8,S
 C3/F106: 05 F8        ORA $F8
 C3/F108: E8           INX
 C3/F109: 84 00        STY $00
-C3/F10B: F0 F0        BEQ $F0FD
+C3/F10B: F0 F0        BEQ Routine_C3F0FD
 C3/F10D: 24 00        BIT $00
-C3/F10F: F0 00        BEQ $F111
+C3/F10F: F0 00        BEQ Local_C3F111
+Local_C3F111:
 C3/F111: 44 00 FF     MVP $00,$FF
-C3/F114: F0 24        BEQ $F13A
+C3/F114: F0 24        BEQ Routine_C3F13A
 C3/F116: 40           RTI

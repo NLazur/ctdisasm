@@ -2,23 +2,23 @@
 Routine_C64131:
 C6/4131: 36 C1        ROL $C1,X
 C6/4133: 76 00        ROR $00,X
-C6/4135: 20 C2 04     JSR $04C2
+C6/4135: 20 C2 04     JSR Routine_C604C2
 C6/4138: 00 00        BRK $00
 C6/413A: 44 20 8C     MVP $20,$8C
-C6/413D: 20 00 86     JSR $8600
+C6/413D: 20 00 86     JSR Routine_C68600
 C6/4140: 76 8D        ROR $8D,X
 C6/4142: 26 00        ROL $00
 C6/4144: 85 54        STA $54
 C6/4146: 76 9C        ROR $9C,X
 C6/4148: 28           PLP
 C6/4149: 00 8B        BRK $8B
-C6/414B: 20 00 82     JSR $8200
+C6/414B: 20 00 82     JSR Routine_C68200
 C6/414E: 1A           INC
-C6/414F: 10 87        BPL $40D8
+C6/414F: 10 87        BPL Routine_C640D8
 C6/4151: 01 3A        ORA ($3A,X)
 C6/4153: 00 00        BRK $00
-C6/4155: 20 A9 76     JSR $76A9
-C6/4158: 80 36        BRA $4190
+C6/4155: 20 A9 76     JSR Routine_C676A9
+C6/4158: 80 36        BRA Routine_C64190
 C6/415A: 92 00        STA ($00)
 C6/415C: 36 9C        ROL $9C,X
 C6/415E: 36 AA        ROL $AA,X
@@ -42,9 +42,10 @@ C6/4181: 06 CF        ASL $CF
 C6/4183: 46 CF        LSR $CF
 C6/4185: 86 04        STX $04
 C6/4187: CF C6 08 28  CMP $2808C6
-C6/418B: 90 16        BCC $41A3
+C6/418B: 90 16        BCC Local_C641A3
 C6/418D: 91 16        STA ($16),Y
-C6/418F: 80 00        BRA $4191
+C6/418F: 80 00        BRA Local_C64191
+Local_C64191:
 C6/4191: 16 A1        ASL $A1,X
 C6/4193: 16 C8        ASL $C8,X
 C6/4195: 16 BC        ASL $BC,X
@@ -54,6 +55,7 @@ C6/419B: A3 16        LDA $16,S
 C6/419D: 94 16        STY $16,X
 C6/419F: 95 16        STA $16,X
 C6/41A1: A4 00        LDY $00
+Local_C641A3:
 C6/41A3: 16 A5        ASL $A5,X
 C6/41A5: 16 96        ASL $96,X
 C6/41A7: 16 97        ASL $97,X

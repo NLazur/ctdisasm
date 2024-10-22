@@ -1,13 +1,15 @@
 ; Bank: CD | Start Address: CFF7
 Routine_CDCFF7:
-CD/CFF7: D0 6F        BNE $D068
-CD/CFF9: D0 07        BNE $D002
-CD/CFFB: D0 06        BNE $D003
-CD/CFFD: D0 42        BNE $D041
-CD/CFFF: D0 51        BNE $D052
-CD/D001: D0 60        BNE $D063
-CD/D003: D0 6F        BNE $D074
-CD/D005: D0 00        BNE $D007
+CD/CFF7: D0 6F        BNE Routine_CDD068
+CD/CFF9: D0 07        BNE Routine_CDD002
+CD/CFFB: D0 06        BNE Local_CDD003
+CD/CFFD: D0 42        BNE Routine_CDD041
+CD/CFFF: D0 51        BNE Routine_CDD052
+CD/D001: D0 60        BNE Routine_CDD063
+Local_CDD003:
+CD/D003: D0 6F        BNE Routine_CDD074
+CD/D005: D0 00        BNE Local_CDD007
+Local_CDD007:
 CD/D007: 43 09        EOR $09,S
 CD/D009: F4 0C 41     PEA $410C
 CD/D00C: 1E 00 41     ASL $4100,X
@@ -26,6 +28,6 @@ CD/D034: A0 20 05     LDY #$0520
 CD/D037: 36 20        ROL $20,X
 CD/D039: 12 29        ORA ($29)
 CD/D03B: 24 02        BIT $02
-CD/D03D: 20 0F 2E     JSR $2E0F
+CD/D03D: 20 0F 2E     JSR Routine_CD2E0F
 CD/D040: 01 00        ORA ($00,X)
 CD/D042: 60           RTS

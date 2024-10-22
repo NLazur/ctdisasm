@@ -5,9 +5,9 @@ FF/B28C: 69 08        ADC #$08
 FF/B28E: 48           PHA
 FF/B28F: 04 00        TSB $00
 FF/B291: 00 E6        BRK $E6
-FF/B293: 20 83 14     JSR $1483
+FF/B293: 20 83 14     JSR Routine_FF1483
 FF/B296: 62 10 62     PER $FF14A9
-FF/B299: 10 63        BPL $B2FE
+FF/B299: 10 63        BPL Local_FFB2FE
 FF/B29B: 0C 42 0C     TSB $0C42
 FF/B29E: 21 04        AND ($04,X)
 FF/B2A0: 00 00        BRK $00
@@ -37,7 +37,7 @@ FF/B2D0: E7 1C        SBC [$1C]
 FF/B2D2: 2C 11 A6     BIT $A611
 FF/B2D5: 08           PHP
 FF/B2D6: 84 08        STY $08
-FF/B2D8: 82 04 81     BRL $FF33DF
+FF/B2D8: 82 04 81     BRL Routine_FF33DF
 FF/B2DB: 00 61        BRK $61
 FF/B2DD: 00 42        BRK $42
 FF/B2DF: 00 00        BRK $00
@@ -48,12 +48,13 @@ FF/B2E7: 04 86        TSB $86
 FF/B2E9: 04 65        TSB $65
 FF/B2EB: 08           PHP
 FF/B2EC: 84 00        STY $00
-FF/B2EE: 22 04 00 00  JSR $000004
+FF/B2EE: 22 04 00 00  JSR Routine_000004
 FF/B2F2: EF 31 4B 25  SBC $254B31
 FF/B2F6: E7 1C        SBC [$1C]
 FF/B2F8: C5 18        CMP $18
 FF/B2FA: 63 10        ADC $10,S
 FF/B2FC: 21 08        AND ($08,X)
+Local_FFB2FE:
 FF/B2FE: 00 00        BRK $00
 FF/B300: E7 1C        SBC [$1C]
 FF/B302: 6F 11 CA 0C  ADC $0CCA11
@@ -393,6 +394,7 @@ FF/B5A1: 1B           TCS
 FF/B5A2: 04 01        TSB $01
 FF/B5A4: 05 05        ORA $05
 FF/B5A6: 08           PHP
+Local_FFB5A7:
 FF/B5A7: 3B           TSC
 FF/B5A8: 00 02        BRK $02
 FF/B5AA: 06 06        ASL $06
@@ -406,6 +408,7 @@ FF/B5B4: 02 04        COP $04
 FF/B5B6: 08           PHP
 FF/B5B7: 08           PHP
 FF/B5B8: 08           PHP
+Local_FFB5B9:
 FF/B5B9: 9B           TXY
 FF/B5BA: 03 00        ORA $00,S
 FF/B5BC: 09 09        ORA #$09
@@ -439,7 +442,7 @@ FF/B5E3: 27 0A        AND [$0A]
 FF/B5E5: 0A           ASL
 FF/B5E6: 0B           PHD
 FF/B5E7: 0B           PHD
-FF/B5E8: 80 4F        BRA $B639
+FF/B5E8: 80 4F        BRA Routine_FFB639
 FF/B5EA: 0C 0C 0E     TSB $0E0C
 FF/B5ED: 0D A8 4F     ORA $4FA8
 FF/B5F0: 0D 0D 0C     ORA $0C0D
@@ -449,17 +452,18 @@ FF/B5F9: 0C 80 63     TSB $6380
 FF/B5FC: 14 10        TRB $10
 FF/B5FE: 0F 0F 80 6F  ORA $6F800F
 FF/B602: 0F 11 10 10  ORA $101011
-FF/B606: 80 7B        BRA $B683
-FF/B608: 10 12        BPL $B61C
+FF/B606: 80 7B        BRA Routine_FFB683
+FF/B608: 10 12        BPL Local_FFB61C
 FF/B60A: 11 11        ORA ($11),Y
-FF/B60C: 80 87        BRA $B595
+FF/B60C: 80 87        BRA Routine_FFB595
 FF/B60E: 11 13        ORA ($13),Y
 FF/B610: 12 12        ORA ($12)
-FF/B612: 80 93        BRA $B5A7
+FF/B612: 80 93        BRA Local_FFB5A7
 FF/B614: 12 14        ORA ($14)
 FF/B616: 13 13        ORA ($13,S),Y
-FF/B618: 80 9F        BRA $B5B9
+FF/B618: 80 9F        BRA Local_FFB5B9
 FF/B61A: 13 0F        ORA ($0F,S),Y
+Local_FFB61C:
 FF/B61C: 14 14        TRB $14
 FF/B61E: 1E 08 1D     ASL $1D08,X
 FF/B621: 02 01        COP $01

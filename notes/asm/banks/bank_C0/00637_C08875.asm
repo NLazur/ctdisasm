@@ -7,19 +7,21 @@ C0/887B: 64 33        STZ $33
 C0/887D: E2 10        SEP #$10
 C0/887F: AE 97 01     LDX $0197
 C0/8882: A5 93        LDA $93
-C0/8884: F0 11        BEQ $8897
+C0/8884: F0 11        BEQ Local_C08897
 C0/8886: BD 00 0A     LDA $0A00,X
 C0/8889: C9 80        CMP #$80
-C0/888B: 90 06        BCC $8893
+C0/888B: 90 06        BCC Local_C08893
 C0/888D: A9 10        LDA #$10
 C0/888F: 85 2E        STA $2E
-C0/8891: 80 04        BRA $8897
+C0/8891: 80 04        BRA Local_C08897
+Local_C08893:
 C0/8893: A9 F0        LDA #$F0
 C0/8895: 85 2E        STA $2E
+Local_C08897:
 C0/8897: A5 96        LDA $96
-C0/8899: D0 0B        BNE $88A6
+C0/8899: D0 0B        BNE Routine_C088A6
 C0/889B: A5 93        LDA $93
-C0/889D: D0 18        BNE $88B7
+C0/889D: D0 18        BNE Routine_C088B7
 C0/889F: C2 10        REP #$10
 C0/88A1: 9C 38 01     STZ $0138
 C0/88A4: 2B           PLD

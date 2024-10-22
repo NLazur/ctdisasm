@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 93E1
 Routine_D093E1:
 D0/93E1: A0 70        LDY #$70
-D0/93E3: 90 70        BCC $9455
-D0/93E5: 90 78        BCC $945F
+D0/93E3: 90 70        BCC Local_D09455
+D0/93E5: 90 78        BCC Local_D0945F
 D0/93E7: 88           DEY
 D0/93E8: F8           SED
 D0/93E9: 08           PHP
@@ -10,13 +10,13 @@ D0/93EA: F8           SED
 D0/93EB: 08           PHP
 D0/93EC: FC 84 FC     JSR ($FC84,X)
 D0/93EF: 64 A0        STZ $A0
-D0/93F1: 90 90        BCC $9383
+D0/93F1: 90 90        BCC Routine_D09383
 D0/93F3: 88           DEY
 D0/93F4: 08           PHP
 D0/93F5: 08           PHP
 D0/93F6: 84 64        STY $64
 D0/93F8: 3E 39 33     ROL $3339,X
-D0/93FB: 20 27 3B     JSR $3B27
+D0/93FB: 20 27 3B     JSR Routine_D03B27
 D0/93FE: 1F 1F 0F 0F  ORA $0F0F1F,X
 D0/9402: 0E 0E 02     ASL $020E
 D0/9405: 03 01        ORA $01,S
@@ -46,9 +46,11 @@ D0/944B: 8E FC BF     STX $BFFC
 D0/944E: 78           SEI
 D0/944F: 7F 3F 37 FF  ADC $FF373F,X
 D0/9453: F3 F7        SBC ($F7,S),Y
+Local_D09455:
 D0/9455: CF BF 7F 8F  CMP $8F7FBF
 D0/9459: 00 BF        BRK $BF
 D0/945B: 00 FF        BRK $FF
 D0/945D: 00 6F        BRK $6F
+Local_D0945F:
 D0/945F: 00 0F        BRK $0F
 D0/9461: 60           RTS

@@ -7,11 +7,12 @@ CC/F962: 71 AD        ADC ($AD),Y
 CC/F964: 72 AD        ADC ($AD)
 CC/F966: 7D 80 00     ADC $0080,X
 CC/F969: 00 04        BRK $04
-CC/F96B: 80 06        BRA $F973
+CC/F96B: 80 06        BRA Local_CCF973
 CC/F96D: 00 0A        BRK $0A
-CC/F96F: 80 01        BRA $F972
+CC/F96F: 80 01        BRA Routine_CCF972
 CC/F971: 00 07        BRK $07
-CC/F973: 80 07        BRA $F97C
+Local_CCF973:
+CC/F973: 80 07        BRA Routine_CCF97C
 CC/F975: 00 0D        BRK $0D
 CC/F977: 00 01        BRK $01
 CC/F979: 00 05        BRK $05
@@ -39,28 +40,34 @@ CC/F9A9: AD 72 AD     LDA $AD72
 CC/F9AC: 75 AD        ADC $AD,X
 CC/F9AE: 76 AD        ROR $AD,X
 CC/F9B0: 79 AD 7A     ADC $7AAD,Y
-CC/F9B3: 80 00        BRA $F9B5
+CC/F9B3: 80 00        BRA Local_CCF9B5
+Local_CCF9B5:
 CC/F9B5: 00 02        BRK $02
-CC/F9B7: 80 02        BRA $F9BB
+CC/F9B7: 80 02        BRA Local_CCF9BB
 CC/F9B9: 00 04        BRK $04
-CC/F9BB: 80 04        BRA $F9C1
+Local_CCF9BB:
+CC/F9BB: 80 04        BRA Local_CCF9C1
 CC/F9BD: 00 06        BRK $06
-CC/F9BF: 80 06        BRA $F9C7
+CC/F9BF: 80 06        BRA Local_CCF9C7
+Local_CCF9C1:
 CC/F9C1: 00 08        BRK $08
-CC/F9C3: 80 08        BRA $F9CD
+CC/F9C3: 80 08        BRA Local_CCF9CD
 CC/F9C5: 00 0A        BRK $0A
-CC/F9C7: 80 0A        BRA $F9D3
-CC/F9C9: 80 01        BRA $F9CC
+Local_CCF9C7:
+CC/F9C7: 80 0A        BRA Local_CCF9D3
+CC/F9C9: 80 01        BRA Routine_CCF9CC
 CC/F9CB: 00 03        BRK $03
-CC/F9CD: 80 03        BRA $F9D2
+Local_CCF9CD:
+CC/F9CD: 80 03        BRA Routine_CCF9D2
 CC/F9CF: 00 05        BRK $05
-CC/F9D1: 80 05        BRA $F9D8
+CC/F9D1: 80 05        BRA Routine_CCF9D8
+Local_CCF9D3:
 CC/F9D3: 00 07        BRK $07
-CC/F9D5: 80 07        BRA $F9DE
+CC/F9D5: 80 07        BRA Routine_CCF9DE
 CC/F9D7: 00 09        BRK $09
-CC/F9D9: 80 09        BRA $F9E4
+CC/F9D9: 80 09        BRA Routine_CCF9E4
 CC/F9DB: 00 0B        BRK $0B
-CC/F9DD: 80 0B        BRA $F9EA
+CC/F9DD: 80 0B        BRA Routine_CCF9EA
 CC/F9DF: 00 01        BRK $01
 CC/F9E1: 00 02        BRK $02
 CC/F9E3: 00 05        BRK $05

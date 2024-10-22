@@ -3,7 +3,7 @@ Routine_D13140:
 D1/3140: FF FF 40 64  SBC $6440FF,X
 D1/3144: 00 00        BRK $00
 D1/3146: 43 70        EOR $70,S
-D1/3148: D0 C0        BNE $310A
+D1/3148: D0 C0        BNE Routine_D1310A
 D1/314A: EA           NOP
 D1/314B: 00 EC        BRK $EC
 D1/314D: 00 00        BRK $00
@@ -15,7 +15,7 @@ D1/3158: 06 01        ASL $01
 D1/315A: 08           PHP
 D1/315B: 01 FF        ORA ($FF,X)
 D1/315D: FF 43 C0 00  SBC $00C043,X
-D1/3161: 80 F0        BRA $3153
+D1/3161: 80 F0        BRA Routine_D13153
 D1/3163: CA           DEX
 D1/3164: 00 CC        BRK $CC
 D1/3166: 00 CE        BRK $CE
@@ -39,14 +39,14 @@ D1/318B: 01 0C        ORA ($0C,X)
 D1/318D: 01 2D        ORA ($2D,X)
 D1/318F: 00 44        BRK $44
 D1/3191: E0 30 30     CPX #$3030
-D1/3194: 30 2C        BMI $31C2
+D1/3194: 30 2C        BMI Routine_D131C2
 D1/3196: 41 00        EOR ($00,X)
 D1/3198: 2A           ROL
 D1/3199: 41 28        EOR ($28,X)
 D1/319B: 41 26        EOR ($26,X)
 D1/319D: 41 22        EOR ($22,X)
 D1/319F: 41 00        EOR ($00,X)
-D1/31A1: 20 41 0E     JSR $0E41
+D1/31A1: 20 41 0E     JSR Routine_D10E41
 D1/31A4: 41 0C        EOR ($0C,X)
 D1/31A6: 41 0A        EOR ($0A,X)
 D1/31A8: 41 42        EOR ($42,X)
@@ -54,5 +54,5 @@ D1/31AA: 6C 00 FC     JMP ($FC00)
 D1/31AD: FF FF 40 AD  SBC $AD40FF,X
 D1/31B1: 00 00        BRK $00
 D1/31B3: 76 80        ROR $80,X
-D1/31B5: 10 02        BPL $31B9
+D1/31B5: 10 02        BPL Routine_D131B9
 D1/31B7: 40           RTI

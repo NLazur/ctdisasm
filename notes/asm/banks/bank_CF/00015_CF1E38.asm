@@ -1,6 +1,6 @@
 ; Bank: CF | Start Address: 1E38
 Routine_CF1E38:
-CF/1E38: F0 8C        BEQ $1DC6
+CF/1E38: F0 8C        BEQ Routine_CF1DC6
 CF/1E3A: F8           SED
 CF/1E3B: 3C E0 22     BIT $22E0,X
 CF/1E3E: E0 22 00     CPX #$0022
@@ -19,8 +19,8 @@ CF/1E58: 00 C0        BRK $C0
 CF/1E5A: 00 80        BRK $80
 CF/1E5C: 00 00        BRK $00
 CF/1E5E: 00 00        BRK $00
-CF/1E60: F0 30        BEQ $1E92
-CF/1E62: F0 10        BEQ $1E74
+CF/1E60: F0 30        BEQ Routine_CF1E92
+CF/1E62: F0 10        BEQ Routine_CF1E74
 CF/1E64: 7C 0C 7C     JMP ($7C0C,X)
 CF/1E67: 44 3E 32     MVP $3E,$32
 CF/1E6A: 0E 08 0E     ASL $0E08
@@ -52,7 +52,7 @@ CF/1EA2: 1E 10 3C     ASL $3C10,X
 CF/1EA5: 0F F4 06 F2  ORA $F206F4
 CF/1EA9: 36 C8        ROL $C8,X
 CF/1EAB: 0C C4 CC     TSB $CCC4
-CF/1EAE: 90 98        BCC $1E48
+CF/1EAE: 90 98        BCC Routine_CF1E48
 CF/1EB0: 00 20        BRK $20
 CF/1EB2: 00 40        BRK $40
 CF/1EB4: 00 80        BRK $80
@@ -62,7 +62,7 @@ CF/1EBA: 4F 78 7F 41  EOR $417F78
 CF/1EBE: FF 83 7F 4C  SBC $4C7F83,X
 CF/1EC2: 73 52        ADC ($52,S),Y
 CF/1EC4: E0 A0 E0     CPX #$E0A0
-CF/1EC7: 20 C0 40     JSR $40C0
+CF/1EC7: 20 C0 40     JSR Routine_CF40C0
 CF/1ECA: C0 40 00     CPY #$0040
 CF/1ECD: 01 00        ORA ($00,X)
 CF/1ECF: 02 C0        COP $C0
@@ -76,10 +76,10 @@ CF/1EDE: 00 00        BRK $00
 CF/1EE0: 00 02        BRK $02
 CF/1EE2: 00 02        BRK $02
 CF/1EE4: 00 01        BRK $01
-CF/1EE6: 30 31        BMI $1F19
+CF/1EE6: 30 31        BMI Routine_CF1F19
 CF/1EE8: 7C 4C FF     JMP ($FF4C,X)
 CF/1EEB: 83 FF        STA $FF,S
-CF/1EED: 90 FF        BCC $1EEE
+CF/1EED: 90 FF        BCC Routine_CF1EEE
 CF/1EEF: 9C 01 01     STZ $0101
 CF/1EF2: 01 00        ORA ($00,X)
 CF/1EF4: 03 00        ORA $00,S
@@ -93,5 +93,6 @@ CF/1F05: 00 00        BRK $00
 CF/1F07: 00 00        BRK $00
 CF/1F09: 00 00        BRK $00
 CF/1F0B: 00 00        BRK $00
-CF/1F0D: 80 00        BRA $1F0F
+CF/1F0D: 80 00        BRA Local_CF1F0F
+Local_CF1F0F:
 CF/1F0F: 40           RTI

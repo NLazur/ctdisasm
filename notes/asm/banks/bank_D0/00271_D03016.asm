@@ -20,5 +20,5 @@ D0/3035: 73 5D        ADC ($5D,S),Y
 D0/3037: 63 04        ADC $04,S
 D0/3039: 07 0B        ORA [$0B]
 D0/303B: 0F 1C 1C 30  ORA $301C1C
-D0/303F: 30 40        BMI $3081
+D0/303F: 30 40        BMI Routine_D03081
 D0/3041: 40           RTI

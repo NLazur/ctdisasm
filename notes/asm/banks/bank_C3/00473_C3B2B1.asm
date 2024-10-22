@@ -1,9 +1,10 @@
 ; Bank: C3 | Start Address: B2B1
 Routine_C3B2B1:
-C3/B2B1: 10 39        BPL $B2EC
+C3/B2B1: 10 39        BPL Routine_C3B2EC
 C3/B2B3: 46 3C        LSR $3C
 C3/B2B5: 5E 00 59     LSR $5900,X
-C3/B2B8: F0 00        BEQ $B2BA
+C3/B2B8: F0 00        BEQ Local_C3B2BA
+Local_C3B2BA:
 C3/B2BA: 01 04        ORA ($04,X)
 C3/B2BC: 92 45        STA ($45)
 C3/B2BE: 8E 14 38     STX $3814
@@ -14,19 +15,20 @@ C3/B2C7: 83 0E        STA $0E,S
 C3/B2C9: 7F FD 3B 01  ADC $013BFD,X
 C3/B2CD: 02 B2        COP $B2
 C3/B2CF: 32 0D        AND ($0D)
-C3/B2D1: 50 AD        BVC $B280
-C3/B2D3: 22 1A 50 A8  JSR $A8501A
-C3/B2D7: 22 27 50 03  JSR $035027
+C3/B2D1: 50 AD        BVC Routine_C3B280
+C3/B2D3: 22 1A 50 A8  JSR Routine_A8501A
+C3/B2D7: 22 27 50 03  JSR Routine_035027
 C3/B2DB: A3 22        LDA $22,S
 C3/B2DD: 34 00        BIT $00,X
 C3/B2DF: 52 3B        EOR ($3B)
 C3/B2E1: 08           PHP
-C3/B2E2: 80 39        BRA $B31D
+C3/B2E2: 80 39        BRA Routine_C3B31D
 C3/B2E4: 24 2A        BIT $2A
 C3/B2E6: 52 8C        EOR ($8C)
 C3/B2E8: 85 BC        STA $BC
 C3/B2EA: AC 01 CA     LDY $CA01
-C3/B2ED: B0 01        BCS $B2F0
+C3/B2ED: B0 01        BCS Routine_C3B2F0
+Local_C3B2EF:
 C3/B2EF: 00 0F        BRK $0F
 C3/B2F1: A8           TAY
 C3/B2F2: 7F 09 3B 04  ADC $043B09,X
@@ -46,9 +48,9 @@ C3/B315: 3C 52 93     BIT $9352,X
 C3/B318: 25 63        AND $63
 C3/B31A: 21 96        AND ($96,X)
 C3/B31C: 55 31        EOR $31,X
-C3/B31E: 50 CF        BVC $B2EF
+C3/B31E: 50 CF        BVC Local_C3B2EF
 C3/B320: 92 25        STA ($25)
 C3/B322: E4 40        CPX $40
 C3/B324: B3 05        LDA ($05,S),Y
-C3/B326: 90 05        BCC $B32D
+C3/B326: 90 05        BCC Routine_C3B32D
 C3/B328: 60           RTS

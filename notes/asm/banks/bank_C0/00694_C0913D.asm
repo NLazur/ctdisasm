@@ -13,8 +13,8 @@ C0/914D: 65 30        ADC $30
 C0/914F: 38           SEC
 C0/9150: E9 70 00     SBC #$0070
 C0/9153: 85 68        STA $68
-C0/9155: 20 9E 8A     JSR $8A9E
-C0/9158: 90 12        BCC $916C
+C0/9155: 20 9E 8A     JSR Routine_C08A9E
+C0/9158: 90 12        BCC Routine_C0916C
 C0/915A: C2 20        REP #$20
 C0/915C: 64 30        STZ $30
 C0/915E: 64 2E        STZ $2E

@@ -3,19 +3,20 @@ Routine_CCF819:
 CC/F819: 18           CLC
 CC/F81A: 68           PLA
 CC/F81B: 18           CLC
-CC/F81C: 70 18        BVS $F836
+CC/F81C: 70 18        BVS Local_CCF836
 CC/F81E: 78           SEI
 CC/F81F: 18           CLC
 CC/F820: 00 10        BRK $10
-CC/F822: 20 30 40     JSR $4030
-CC/F825: 50 60        BVC $F887
-CC/F827: 70 80        BVS $F7A9
+CC/F822: 20 30 40     JSR Routine_CC4030
+CC/F825: 50 60        BVC Routine_CCF887
+CC/F827: 70 80        BVS Routine_CCF7A9
 CC/F829: 00 2C        BRK $2C
 CC/F82B: 58           CLI
 CC/F82C: 84 B0        STY $B0
 CC/F82E: DC 00 08     JMP [$0800]
-CC/F831: 10 18        BPL $F84B
-CC/F833: 20 28 30     JSR $3028
+CC/F831: 10 18        BPL Local_CCF84B
+CC/F833: 20 28 30     JSR Routine_CC3028
+Local_CCF836:
 CC/F836: 38           SEC
 CC/F837: 00 0A        BRK $0A
 CC/F839: 14 1E        TRB $1E
@@ -26,6 +27,7 @@ CC/F840: 05 0A        ORA $0A
 CC/F842: 0F 14 19 1E  ORA $1E1914
 CC/F846: 00 06        BRK $06
 CC/F848: 0C 12 18     TSB $1812
+Local_CCF84B:
 CC/F84B: 1E 24 80     ASL $8024,X
 CC/F84E: 11 80        ORA ($80),Y
 CC/F850: 11 84        ORA ($84),Y
@@ -128,8 +130,9 @@ CC/F911: 94 95        STY $95,X
 CC/F913: 96 97        STX $97,Y
 CC/F915: 98           TYA
 CC/F916: 99 00 00     STA $0000,Y
-CC/F919: 10 00        BPL $F91B
-CC/F91B: 20 00 30     JSR $3000
+CC/F919: 10 00        BPL Local_CCF91B
+Local_CCF91B:
+CC/F91B: 20 00 30     JSR Routine_CC3000
 CC/F91E: 00 40        BRK $40
 CC/F920: 00 50        BRK $50
 CC/F922: 00 60        BRK $60
@@ -145,7 +148,7 @@ CC/F935: 18           CLC
 CC/F936: 1B           TCS
 CC/F937: 1E 21 00     ASL $0021,X
 CC/F93A: 0C 18 24     TSB $2418
-CC/F93D: 30 3C        BMI $F97B
+CC/F93D: 30 3C        BMI Routine_CCF97B
 CC/F93F: 48           PHA
 CC/F940: 54 AD 64     MVN $AD,$64
 CC/F943: AD 67 AD     LDA $AD67

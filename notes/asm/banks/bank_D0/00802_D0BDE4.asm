@@ -12,14 +12,15 @@ D0/BDF6: 00 00        BRK $00
 D0/BDF8: 02 02        COP $02
 D0/BDFA: 08           PHP
 D0/BDFB: 18           CLC
+Local_D0BDFC:
 D0/BDFC: 00 00        BRK $00
 D0/BDFE: 00 00        BRK $00
 D0/BE00: 00 00        BRK $00
 D0/BE02: 00 00        BRK $00
-D0/BE04: 30 30        BMI $BE36
+D0/BE04: 30 30        BMI Routine_D0BE36
 D0/BE06: 58           CLI
 D0/BE07: 18           CLC
 D0/BE08: 98           TYA
 D0/BE09: 98           TYA
-D0/BE0A: F0 F0        BEQ $BDFC
+D0/BE0A: F0 F0        BEQ Local_D0BDFC
 D0/BE0C: 60           RTS

@@ -1,6 +1,6 @@
 ; Bank: C2 | Start Address: 7575
 Routine_C27575:
-C2/7575: 20 36 23     JSR $2336
+C2/7575: 20 36 23     JSR Routine_C22336
 C2/7578: 85 08        STA $08
 C2/757A: 64 09        STZ $09
 C2/757C: A6 4E        LDX $4E

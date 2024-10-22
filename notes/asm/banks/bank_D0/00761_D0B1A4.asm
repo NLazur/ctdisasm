@@ -38,5 +38,5 @@ D0/B1F8: 00 00        BRK $00
 D0/B1FA: 03 03        ORA $03,S
 D0/B1FC: 07 07        ORA [$07]
 D0/B1FE: 07 07        ORA [$07]
-D0/B200: 80 7F        BRA $B281
+D0/B200: 80 7F        BRA Routine_D0B281
 D0/B202: 40           RTI

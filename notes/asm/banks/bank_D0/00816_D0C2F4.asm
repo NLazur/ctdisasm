@@ -12,22 +12,22 @@ D0/C304: 01 02        ORA ($02,X)
 D0/C306: 01 02        ORA ($02,X)
 D0/C308: 00 00        BRK $00
 D0/C30A: 00 00        BRK $00
-D0/C30C: 80 80        BRA $C28E
-D0/C30E: 80 80        BRA $C290
-D0/C310: 80 80        BRA $C292
-D0/C312: 80 80        BRA $C294
+D0/C30C: 80 80        BRA Routine_D0C28E
+D0/C30E: 80 80        BRA Routine_D0C290
+D0/C310: 80 80        BRA Routine_D0C292
+D0/C312: 80 80        BRA Routine_D0C294
 D0/C314: 00 80        BRK $80
 D0/C316: 00 80        BRK $80
 D0/C318: 02 83        COP $83
 D0/C31A: 27 66        AND [$66]
 D0/C31C: 6D 5E 1B     ADC $1B5E
 D0/C31F: 24 3F        BIT $3F
-D0/C321: 20 6F 70     JSR $706F
+D0/C321: 20 6F 70     JSR Routine_D0706F
 D0/C324: DF E0 7F 80  CMP $807FE0,X
-D0/C328: 80 82        BRA $C2AC
+D0/C328: 80 82        BRA Routine_D0C2AC
 D0/C32A: C8           INY
 D0/C32B: CC 6C F4     CPY $F46C
-D0/C32E: B0 48        BCS $C378
+D0/C32E: B0 48        BCS Routine_D0C378
 D0/C330: F8           SED
 D0/C331: 08           PHP
 D0/C332: EC 1C F7     CPX $F71C
@@ -46,5 +46,5 @@ D0/C350: DE 61 BE     DEC $BE61,X
 D0/C353: 41 FD        EOR ($FD,X)
 D0/C355: 03 FC        ORA $FC,S
 D0/C357: 02 E0        COP $E0
-D0/C359: 20 80 40     JSR $4080
+D0/C359: 20 80 40     JSR Routine_D04080
 D0/C35C: 40           RTI

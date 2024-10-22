@@ -1,21 +1,22 @@
 ; Bank: C6 | Start Address: 5FCC
 Routine_C65FCC:
-C6/5FCC: 80 49        BRA $6017
+C6/5FCC: 80 49        BRA Routine_C66017
 C6/5FCE: 08           PHP
 C6/5FCF: 43 48        EOR $48,S
 C6/5FD1: 59 08 53     EOR $5308,Y
-C6/5FD4: 80 70        BRA $6046
-C6/5FD6: 80 E0        BRA $5FB8
+C6/5FD4: 80 70        BRA Routine_C66046
+C6/5FD6: 80 E0        BRA Routine_C65FB8
 C6/5FD8: 0C E1 0C     TSB $0CE1
-C6/5FDB: F0 0C        BEQ $5FE9
+C6/5FDB: F0 0C        BEQ Routine_C65FE9
 C6/5FDD: F1 70        SBC ($70),Y
-C6/5FDF: 10 02        BPL $5FE3
+C6/5FDF: 10 02        BPL Local_C65FE3
 C6/5FE1: F2 70        SBC ($70)
+Local_C65FE3:
 C6/5FE3: 00 E4        BRK $E4
 C6/5FE5: 0C E5 0C     TSB $0CE5
 C6/5FE8: F4 0C 02     PEA $020C
 C6/5FEB: F5 10        SBC $10,X
-C6/5FED: 20 D6 0C     JSR $0CD6
+C6/5FED: 20 D6 0C     JSR Routine_C60CD6
 C6/5FF0: E6 0C        INC $0C
 C6/5FF2: E7 0C        SBC [$0C]
 C6/5FF4: 00 F6        BRK $F6

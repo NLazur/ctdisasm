@@ -14,10 +14,11 @@ FF/FBF2: 85 00        STA $00
 FF/FBF4: A0 FE 09     LDY #$09FE
 FF/FBF7: A9 00 00     LDA #$0000
 FF/FBFA: 18           CLC
+Local_FFFBFB:
 FF/FBFB: 71 00        ADC ($00),Y
 FF/FBFD: 88           DEY
 FF/FBFE: 88           DEY
-FF/FBFF: 10 FA        BPL $FBFB
+FF/FBFF: 10 FA        BPL Local_FFFBFB
 FF/FC01: AB           PLB
 FF/FC02: 28           PLP
 FF/FC03: 60           RTS

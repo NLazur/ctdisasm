@@ -8,7 +8,7 @@ C6/8E29: 33 34        AND ($34,S),Y
 C6/8E2B: 89 FD        BIT #$FD
 C6/8E2D: 05 BC        ORA $BC
 C6/8E2F: BD 32 02     LDA $0232,X
-C6/8E32: 10 11        BPL $8E45
+C6/8E32: 10 11        BPL Local_C68E45
 C6/8E34: 12 98        ORA ($98)
 C6/8E36: 2C 30 23     BIT $2330
 C6/8E39: 15 16        ORA $16,X
@@ -16,6 +16,7 @@ C6/8E3B: 17 80        ORA [$80],Y
 C6/8E3D: F9 08 B8     SBC $B808,Y
 C6/8E40: 79 23 00     ADC $0023,Y
 C6/8E43: 34 28        BIT $28,X
+Local_C68E45:
 C6/8E45: 2A           ROL
 C6/8E46: 35 45        AND $45,X
 C6/8E48: 63 42        ADC $42,S

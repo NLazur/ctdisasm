@@ -11,6 +11,6 @@ D1/1CAE: 08           PHP
 D1/1CAF: CA           DEX
 D1/1CB0: 18           CLC
 D1/1CB1: 00 00        BRK $00
-D1/1CB3: 22 C0 C0 EA  JSR $EAC0C0
+D1/1CB3: 22 C0 C0 EA  JSR Routine_EAC0C0
 D1/1CB7: 00 EA        BRK $EA
 D1/1CB9: 40           RTI

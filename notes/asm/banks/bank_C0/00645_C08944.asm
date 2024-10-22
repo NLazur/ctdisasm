@@ -2,7 +2,7 @@
 Routine_C08944:
 C0/8944: AD F8 00     LDA $00F8
 C0/8947: 89 02        BIT #$02
-C0/8949: F0 0C        BEQ $8957
+C0/8949: F0 0C        BEQ Routine_C08957
 C0/894B: A9 E0        LDA #$E0
 C0/894D: 85 2C        STA $2C
 C0/894F: A5 2E        LDA $2E

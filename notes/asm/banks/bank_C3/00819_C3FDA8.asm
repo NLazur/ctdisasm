@@ -5,15 +5,15 @@ C3/FDAA: C6 40        DEC $40
 C3/FDAC: C0 D0        CPY #$D0
 C3/FDAE: C8           INY
 C3/FDAF: 00 D0        BRK $D0
-C3/FDB1: D0 CA        BNE $FD7D
+C3/FDB1: D0 CA        BNE Routine_C3FD7D
 C3/FDB3: 00 04        BRK $04
-C3/FDB5: F0 F0        BEQ $FDA7
+C3/FDB5: F0 F0        BEQ Routine_C3FDA7
 C3/FDB7: C6 40        DEC $40
 C3/FDB9: E0 E0        CPX #$E0
 C3/FDBB: C6 40        DEC $40
-C3/FDBD: D0 D0        BNE $FD8F
+C3/FDBD: D0 D0        BNE Routine_C3FD8F
 C3/FDBF: CC 00 C0     CPY $C000
-C3/FDC2: D0 CC        BNE $FD90
+C3/FDC2: D0 CC        BNE Routine_C3FD90
 C3/FDC4: 00 01        BRK $01
 C3/FDC6: F8           SED
 C3/FDC7: F8           SED
@@ -31,7 +31,7 @@ C3/FDDF: 04 22        TSB $22
 C3/FDE1: FE 03 04     INC $0403,X
 C3/FDE4: 13 FE        ORA ($FE,S),Y
 C3/FDE6: 03 04        ORA $04,S
-C3/FDE8: 22 FE 03 04  JSR $0403FE
+C3/FDE8: 22 FE 03 04  JSR Routine_0403FE
 C3/FDEC: 27 FE        AND [$FE]
 C3/FDEE: 03 04        ORA $04,S
 C3/FDF0: 27 FE        AND [$FE]

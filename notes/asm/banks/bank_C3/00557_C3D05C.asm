@@ -7,7 +7,7 @@ C3/D061: 2C C2 2C     BIT $2CC2
 C3/D064: A3 2C        LDA $2C,S
 C3/D066: A3 20        LDA $20,S
 C3/D068: 00 83        BRK $83
-C3/D06A: 20 83 1C     JSR $1C83
+C3/D06A: 20 83 1C     JSR Routine_C31C83
 C3/D06D: 63 1C        ADC $1C,S
 C3/D06F: 1B           TCS
 C3/D070: 6E 01 40     ROR $4001
@@ -16,7 +16,7 @@ C3/D074: 31 46        AND ($46),Y
 C3/D076: BA           TSX
 C3/D077: 36 77        ROL $77,X
 C3/D079: 36 36        ROL $36,X
-C3/D07B: 80 36        BRA $D0B3
+C3/D07B: 80 36        BRA Routine_C3D0B3
 C3/D07D: 15 36        ORA $36,X
 C3/D07F: D1 2E        CMP ($2E),Y
 C3/D081: 8F 2E 5E 08  STA $085E2E
@@ -25,7 +25,7 @@ C3/D087: 21 81        AND ($81,X)
 C3/D089: 15 41        ORA $41,X
 C3/D08B: 19 E2 18     ORA $18E2,Y
 C3/D08E: 00 62        BRK $62
-C3/D090: 10 B0        BPL $D042
+C3/D090: 10 B0        BPL Routine_C3D042
 C3/D092: 25 EA        AND $EA
 C3/D094: 14 31        TRB $31
 C3/D096: 46 00        LSR $00

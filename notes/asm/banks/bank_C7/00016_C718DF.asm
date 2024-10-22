@@ -1,6 +1,6 @@
 ; Bank: C7 | Start Address: 18DF
 Routine_C718DF:
-C7/18DF: 22 00 00 00  JSR $000000
+C7/18DF: 22 00 00 00  JSR Routine_000000
 C7/18E3: 28           PLP
 C7/18E4: 44 6E 00     MVP $6E,$00
 C7/18E7: 00 00        BRK $00
@@ -9,7 +9,7 @@ C7/18EB: 32 26        AND ($26)
 C7/18ED: 48           PHA
 C7/18EE: 5E 00 00     LSR $0000,X
 C7/18F1: 00 27        BRK $27
-C7/18F3: 4C 4F 00     JMP $004F
+C7/18F3: 4C 4F 00     JMP Routine_C7004F
 C7/18F6: 00 00        BRK $00
 C7/18F8: 00 00        BRK $00
 C7/18FA: 00 00        BRK $00
@@ -20,7 +20,7 @@ C7/1902: 00 00        BRK $00
 C7/1904: 00 00        BRK $00
 C7/1906: 00 28        BRK $28
 C7/1908: 45 50        EOR $50
-C7/190A: 20 4B 1B     JSR $1B4B
+C7/190A: 20 4B 1B     JSR Routine_C71B4B
 C7/190D: 21 3E        AND ($3E,X)
 C7/190F: 2C 25 48     BIT $4825
 C7/1912: 5E 00 00     LSR $0000,X

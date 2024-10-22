@@ -1,44 +1,52 @@
 ; Bank: D1 | Start Address: A541
 Routine_D1A541:
 D1/A541: 66 00        ROR $00
-D1/A543: 10 10        BPL $A555
+D1/A543: 10 10        BPL Local_D1A555
 D1/A545: 14 58        TRB $58
 D1/A547: 16 01        ASL $01,X
 D1/A549: 05 10        ORA $10
 D1/A54B: 01 20        ORA ($20,X)
 D1/A54D: C0 00        CPY #$00
-D1/A54F: 10 10        BPL $A561
+D1/A54F: 10 10        BPL Local_D1A561
 D1/A551: 01 20        ORA ($20,X)
 D1/A553: C0 00        CPY #$00
-D1/A555: 10 10        BPL $A567
+Local_D1A555:
+D1/A555: 10 10        BPL Local_D1A567
 D1/A557: 01 20        ORA ($20,X)
 D1/A559: C0 00        CPY #$00
-D1/A55B: 10 10        BPL $A56D
+D1/A55B: 10 10        BPL Local_D1A56D
 D1/A55D: 01 20        ORA ($20,X)
 D1/A55F: C0 00        CPY #$00
-D1/A561: 10 10        BPL $A573
+Local_D1A561:
+D1/A561: 10 10        BPL Local_D1A573
 D1/A563: 01 40        ORA ($40,X)
 D1/A565: 66 00        ROR $00
-D1/A567: 10 10        BPL $A579
+Local_D1A567:
+D1/A567: 10 10        BPL Local_D1A579
 D1/A569: 01 40        ORA ($40,X)
 D1/A56B: 66 00        ROR $00
-D1/A56D: 10 10        BPL $A57F
+Local_D1A56D:
+D1/A56D: 10 10        BPL Local_D1A57F
 D1/A56F: 01 40        ORA ($40,X)
 D1/A571: 66 00        ROR $00
-D1/A573: 10 10        BPL $A585
+Local_D1A573:
+D1/A573: 10 10        BPL Local_D1A585
 D1/A575: 2F A8 A8 A8  AND $A8A8A8
+Local_D1A579:
 D1/A579: 05 A9        ORA $A9
 D1/A57B: 95 A9        STA $A9,X
 D1/A57D: 33 AA        AND ($AA,S),Y
+Local_D1A57F:
 D1/A57F: DA           PHX
 D1/A580: AA           TAX
 D1/A581: 6A           ROR
 D1/A582: AB           PLB
 D1/A583: E8           INX
 D1/A584: AB           PLB
+Local_D1A585:
 D1/A585: 49 AC        EOR #$AC
 D1/A587: E7 AC        SBC [$AC]
-D1/A589: 50 AD        BVC $A538
+D1/A589: 50 AD        BVC Routine_D1A538
 D1/A58B: 9B           TXY
 D1/A58C: AD 15 AE     LDA $AE15
 D1/A58F: 72 AE        ADC ($AE)
@@ -51,7 +59,7 @@ D1/A59C: DB           STP
 D1/A59D: A3 AF        LDA $AF,S
 D1/A59F: 05 B0        ORA $B0
 D1/A5A1: 62 B0 E0     PER $D18654
-D1/A5A4: B0 6F        BCS $A615
+D1/A5A4: B0 6F        BCS Routine_D1A615
 D1/A5A6: B3 91        LDA ($91,S),Y
 D1/A5A8: B3 91        LDA ($91,S),Y
 D1/A5AA: B3 6F        LDA ($6F,S),Y

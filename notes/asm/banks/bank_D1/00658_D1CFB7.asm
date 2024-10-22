@@ -4,7 +4,7 @@ D1/CFB7: 03 78        ORA $78,S
 D1/CFB9: 00 DB        BRK $DB
 D1/CFBB: 06 C3        ASL $C3
 D1/CFBD: 36 31        ROL $31,X
-D1/CFBF: B0 3D        BCS $CFFE
+D1/CFBF: B0 3D        BCS Local_D1CFFE
 D1/CFC1: EC 6F 6F     CPX $6F6F
 D1/CFC4: 63 1B        ADC $1B,S
 D1/CFC6: C0 D8        CPY #$D8
@@ -30,6 +30,7 @@ D1/CFF2: 1D 1E 1B     ORA $1B1E,X
 D1/CFF5: 1C 23 24     TRB $2423
 D1/CFF8: 1F 28 31 32  ORA $323128,X
 D1/CFFC: 25 26        AND $26
+Local_D1CFFE:
 D1/CFFE: 1B           TCS
 D1/CFFF: 1C 23 24     TRB $2423
 D1/D002: 27 30        AND [$30]
@@ -51,7 +52,7 @@ D1/D022: 00 78        BRK $78
 D1/D024: 00 DB        BRK $DB
 D1/D026: 06 C3        ASL $C3
 D1/D028: 06 31        ASL $31
-D1/D02A: 80 3D        BRA $D069
+D1/D02A: 80 3D        BRA Routine_D1D069
 D1/D02C: EC 6F 6F     CPX $6F6F
 D1/D02F: 63 1B        ADC $1B,S
 D1/D031: 00 D8        BRK $D8
@@ -68,7 +69,7 @@ D1/D047: 31 32        AND ($32),Y
 D1/D049: 1F 28 1F 28  ORA $281F28,X
 D1/D04D: 27 30        AND [$30]
 D1/D04F: 1D 1E 27     ORA $271E,X
-D1/D052: 30 2B        BMI $D07F
+D1/D052: 30 2B        BMI Local_D1D07F
 D1/D054: 2C 1F 28     BIT $281F
 D1/D057: 1D 1E 25     ORA $251E,X
 D1/D05A: 26 29        ROL $29
@@ -88,12 +89,13 @@ D1/D077: 00 00        BRK $00
 D1/D079: 00 00        BRK $00
 D1/D07B: 00 00        BRK $00
 D1/D07D: 00 00        BRK $00
+Local_D1D07F:
 D1/D07F: 00 60        BRK $60
 D1/D081: 00 60        BRK $60
 D1/D083: 00 C0        BRK $C0
 D1/D085: 06 C0        ASL $C0
 D1/D087: 06 31        ASL $31
-D1/D089: 80 3D        BRA $D0C8
+D1/D089: 80 3D        BRA Routine_D1D0C8
 D1/D08B: 8C 6F 0F     STY $0F6F
 D1/D08E: 63 1B        ADC $1B,S
 D1/D090: 00 D8        BRK $D8
@@ -130,6 +132,6 @@ D1/D0D6: 00 60        BRK $60
 D1/D0D8: 00 00        BRK $00
 D1/D0DA: 00 00        BRK $00
 D1/D0DC: 00 31        BRK $31
-D1/D0DE: 80 3D        BRA $D11D
+D1/D0DE: 80 3D        BRA Routine_D1D11D
 D1/D0E0: 8C 6C 0F     STY $0F6C
 D1/D0E3: 60           RTS

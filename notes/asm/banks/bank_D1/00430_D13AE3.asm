@@ -2,18 +2,18 @@
 Routine_D13AE3:
 D1/3AE3: C0 00        CPY #$00
 D1/3AE5: 00 80        BRK $80
-D1/3AE7: 80 60        BRA $3B49
+D1/3AE7: 80 60        BRA Routine_D13B49
 D1/3AE9: E0 90 70     CPX #$7090
-D1/3AEC: D0 30        BNE $3B1E
+D1/3AEC: D0 30        BNE Local_D13B1E
 D1/3AEE: E8           INX
 D1/3AEF: 18           CLC
-D1/3AF0: 80 80        BRA $3A72
+D1/3AF0: 80 80        BRA Routine_D13A72
 D1/3AF2: C0 C0        CPY #$C0
 D1/3AF4: 00 00        BRK $00
-D1/3AF6: 80 80        BRA $3A78
+D1/3AF6: 80 80        BRA Routine_D13A78
 D1/3AF8: E0 E0 F0     CPX #$F0E0
-D1/3AFB: F0 F0        BEQ $3AED
-D1/3AFD: F0 F8        BEQ $3AF7
+D1/3AFB: F0 F0        BEQ Routine_D13AED
+D1/3AFD: F0 F8        BEQ Routine_D13AF7
 D1/3AFF: F8           SED
 D1/3B00: 00 00        BRK $00
 D1/3B02: 00 00        BRK $00
@@ -30,6 +30,7 @@ D1/3B16: 00 00        BRK $00
 D1/3B18: 00 00        BRK $00
 D1/3B1A: 00 00        BRK $00
 D1/3B1C: 00 00        BRK $00
+Local_D13B1E:
 D1/3B1E: 00 00        BRK $00
 D1/3B20: 00 00        BRK $00
 D1/3B22: 00 00        BRK $00
@@ -65,8 +66,8 @@ D1/3B62: 28           PLP
 D1/3B63: 38           SEC
 D1/3B64: 28           PLP
 D1/3B65: 38           SEC
-D1/3B66: 50 70        BVC $3BD8
+D1/3B66: 50 70        BVC Routine_D13BD8
 D1/3B68: 28           PLP
 D1/3B69: 38           SEC
-D1/3B6A: 30 30        BMI $3B9C
+D1/3B6A: 30 30        BMI Routine_D13B9C
 D1/3B6C: 60           RTS

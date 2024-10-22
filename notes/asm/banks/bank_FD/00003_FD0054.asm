@@ -1,25 +1,26 @@
 ; Bank: FD | Start Address: 0054
 Routine_FD0054:
-FD/0054: 80 40        BRA $0096
+FD/0054: 80 40        BRA Routine_FD0096
 FD/0056: BC 03 40     LDY $4003,X
 FD/0059: 00 10        BRK $10
 FD/005B: 48           PHA
-FD/005C: 80 40        BRA $009E
+FD/005C: 80 40        BRA Local_FD009E
 FD/005E: 00 00        BRK $00
 FD/0060: 7E 42 00     ROR $0042,X
 FD/0063: D6 B4        DEC $B4,X
 FD/0065: E0 20        CPX #$20
 FD/0067: CE 00 E4     DEC $E400
-FD/006A: 22 78 D4 B2  JSR $B2D478
+FD/006A: 22 78 D4 B2  JSR Routine_B2D478
 FD/006E: 7C 60 00     JMP ($0060,X)
 FD/0071: 66 08        ROR $08
 FD/0073: 6E 28 70     ROR $7028
 FD/0076: 08           PHP
 FD/0077: 3C 28 00     BIT $0028,X
-FD/007A: 10 08        BPL $0084
+FD/007A: 10 08        BPL Local_FD0084
 FD/007C: 02 28        COP $28
 FD/007E: 3C 9D 00     BIT $009D,X
 FD/0081: 1E 00 84     ASL $8400,X
+Local_FD0084:
 FD/0084: 04 02        TSB $02
 FD/0086: 02 08        COP $08
 FD/0088: 64 82        STZ $82
@@ -29,19 +30,21 @@ FD/008E: 00 84        BRK $84
 FD/0090: 42 88        WDM $88
 FD/0092: 44 90 48     MVP $90,$48
 FD/0095: E0 10        CPX #$10
-FD/0097: F0 90        BEQ $0029
+FD/0097: F0 90        BEQ Routine_FD0029
 FD/0099: 48           PHA
 FD/009A: 88           DEY
 FD/009B: 44 A0 08     MVP $A0,$08
+Local_FD009E:
 FD/009E: 58           CLI
 FD/009F: 18           CLC
 FD/00A0: 5E 10 B4     LSR $B410,X
 FD/00A3: 00 01        BRK $01
-FD/00A5: 50 08        BVC $00AF
+FD/00A5: 50 08        BVC Local_FD00AF
 FD/00A7: AC 42 BC     LDY $BC42
 FD/00AA: 42 94        WDM $94
 FD/00AC: 6A           ROR
 FD/00AD: 84 02        STY $02
+Local_FD00AF:
 FD/00AF: 52 C0        EOR ($C0)
 FD/00B1: 18           CLC
 FD/00B2: 84 42        STY $42

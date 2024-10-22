@@ -3,27 +3,29 @@ Routine_CDA5D4:
 CD/A5D4: 36 00        ROL $00,X
 CD/A5D6: 6C 03 02     JMP ($0203)
 CD/A5D9: 24 03        BIT $03
-CD/A5DB: 20 1E 34     JSR $341E
+CD/A5DB: 20 1E 34     JSR Routine_CD341E
 CD/A5DE: 00 06        BRK $06
 CD/A5E0: 05 24        ORA $24
 CD/A5E2: 04 37        TSB $37
 CD/A5E4: 00 06        BRK $06
 CD/A5E6: 03 00        ORA $00,S
-CD/A5E8: 90 80        BCC $A56A
-CD/A5EA: 80 00        BRA $A5EC
+CD/A5E8: 90 80        BCC Routine_CDA56A
+CD/A5EA: 80 00        BRA Local_CDA5EC
+Local_CDA5EC:
 CD/A5EC: F4 A5 37     PEA $37A5
 CD/A5EF: A6 4D        LDX $4D
 CD/A5F1: A6 65        LDX $65
 CD/A5F3: A6 81        LDX $81
 CD/A5F5: 1C 30 0A     TRB $0A30
 CD/A5F8: 2F 30 0B 00  AND $000B30
-CD/A5FC: 30 0C        BMI $A60A
+CD/A5FC: 30 0C        BMI Routine_CDA60A
+Local_CDA5FE:
 CD/A5FE: 01 30        ORA ($30,X)
 CD/A600: 0D 11 30     ORA $3011
 CD/A603: 0E 18 30     ASL $3018
 CD/A606: 09 01 72     ORA #$7201
 CD/A609: 0D D0 C4     ORA $C4D0
-CD/A60C: F0 F0        BEQ $A5FE
+CD/A60C: F0 F0        BEQ Local_CDA5FE
 CD/A60E: C4 E8        CPY $E8
 CD/A610: F8           SED
 CD/A611: C4 E4        CPY $E4
@@ -35,11 +37,12 @@ CD/A61F: 01 C4        ORA ($C4,X)
 CD/A621: E4 02        CPX $02
 CD/A623: C4 E8        CPY $E8
 CD/A625: 04 C4        TSB $C4
-CD/A627: F0 08        BEQ $A631
+CD/A627: F0 08        BEQ Local_CDA631
 CD/A629: C5 10        CMP $10
 CD/A62B: D1 24        CMP ($24),Y
 CD/A62D: 03 06        ORA $06,S
 CD/A62F: 03 22        ORA $22,S
+Local_CDA631:
 CD/A631: 1B           TCS
 CD/A632: 00 50        BRK $50
 CD/A634: 2E 01 00     ROL $0001
@@ -50,7 +53,7 @@ CD/A63D: 01 69        ORA ($69,X)
 CD/A63F: 05 06        ORA $06
 CD/A641: 05 20        ORA $20
 CD/A643: 1E 02 1A     ASL $1A02,X
-CD/A646: 20 1E 6A     JSR $6A1E
+CD/A646: 20 1E 6A     JSR Routine_CD6A1E
 CD/A649: 36 06        ROL $06,X
 CD/A64B: 03 00        ORA $00,S
 CD/A64D: 60           RTS

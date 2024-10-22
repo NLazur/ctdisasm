@@ -20,7 +20,7 @@ C2/3466: 37 A1        AND [$A1],Y
 C2/3468: 37 BB        AND [$BB],Y
 C2/346A: 37 00        AND [$00],Y
 C2/346C: 00 AE        BRK $AE
-C2/346E: 90 02        BCC $3472
+C2/346E: 90 02        BCC Routine_C23472
 C2/3470: 8E 83 02     STX $0283
 C2/3473: AE 92 02     LDX $0292
 C2/3476: 8E 85 02     STX $0285

@@ -9,14 +9,15 @@ CD/B9EF: 03 02        ORA $02,S
 CD/B9F1: 36 00        ROL $00,X
 CD/B9F3: 98           TYA
 CD/B9F4: F8           SED
-CD/B9F5: 80 00        BRA $B9F7
+CD/B9F5: 80 00        BRA Local_CDB9F7
+Local_CDB9F7:
 CD/B9F7: 09 BA        ORA #$BA
 CD/B9F9: 2B           PLD
 CD/B9FA: BA           TSX
 CD/B9FB: 2B           PLD
 CD/B9FC: BA           TSX
 CD/B9FD: 37 BA        AND [$BA],Y
-CD/B9FF: 50 BA        BVC $B9BB
+CD/B9FF: 50 BA        BVC Routine_CDB9BB
 CD/BA01: 67 BA        ADC [$BA]
 CD/BA03: 7E BA 95     ROR $95BA,X
 CD/BA06: BA           TSX

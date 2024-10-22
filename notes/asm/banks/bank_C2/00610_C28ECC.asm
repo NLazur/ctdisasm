@@ -7,7 +7,7 @@ C2/8ED0: F4 00 00     PEA $0000
 C2/8ED3: AB           PLB
 C2/8ED4: AB           PLB
 C2/8ED5: AD BF 0D     LDA $0DBF
-C2/8ED8: 10 1F        BPL $8EF9
+C2/8ED8: 10 1F        BPL Local_C28EF9
 C2/8EDA: 29 7F        AND #$7F
 C2/8EDC: 8D 02 42     STA $4202
 C2/8EDF: AD C0 0D     LDA $0DC0
@@ -17,11 +17,13 @@ C2/8EE7: EB           XBA
 C2/8EE8: C2 20        REP #$20
 C2/8EEA: A0 0A        LDY #$0A
 C2/8EEC: AD 16 42     LDA $4216
+Local_C28EEF:
 C2/8EEF: 99 22 00     STA $0022,Y
 C2/8EF2: 88           DEY
 C2/8EF3: 88           DEY
-C2/8EF4: 10 F9        BPL $8EEF
-C2/8EF6: 4C 52 8F     JMP $8F52
+C2/8EF4: 10 F9        BPL Local_C28EEF
+C2/8EF6: 4C 52 8F     JMP Local_C28F52
+Local_C28EF9:
 C2/8EF9: 8D 02 42     STA $4202
 C2/8EFC: AD C0 0D     LDA $0DC0
 C2/8EFF: 29 1F 8D     AND #$8D1F
@@ -42,6 +44,7 @@ C2/8F24: A0 00        LDY #$00
 C2/8F26: AD BF 0D     LDA $0DBF
 C2/8F29: 1A           INC
 C2/8F2A: 8D 02 42     STA $4202
+Local_C28F2D:
 C2/8F2D: E2 20        SEP #$20
 C2/8F2F: B5 02        LDA $02,X
 C2/8F31: 8D 03 42     STA $4203
@@ -53,14 +56,16 @@ C2/8F3B: 29 FF 00     AND #$00FF
 C2/8F3E: 18           CLC
 C2/8F3F: 65 08        ADC $08
 C2/8F41: 2C BF 0D     BIT $0DBF
-C2/8F44: 10 04        BPL $8F4A
+C2/8F44: 10 04        BPL Local_C28F4A
 C2/8F46: 49 FF FF     EOR #$FFFF
 C2/8F49: 1A           INC
+Local_C28F4A:
 C2/8F4A: 99 22 00     STA $0022,Y
 C2/8F4D: C8           INY
 C2/8F4E: C8           INY
 C2/8F4F: CA           DEX
-C2/8F50: 10 DB        BPL $8F2D
+C2/8F50: 10 DB        BPL Local_C28F2D
+Local_C28F52:
 C2/8F52: 28           PLP
 C2/8F53: AB           PLB
 C2/8F54: 60           RTS

@@ -1,11 +1,11 @@
 ; Bank: D0 | Start Address: 9A88
 Routine_D09A88:
-D0/9A88: 20 E0 A0     JSR $A0E0
+D0/9A88: 20 E0 A0     JSR Routine_D0A0E0
 D0/9A8B: E0 A0        CPX #$A0
 D0/9A8D: E0 C0        CPX #$C0
-D0/9A8F: 80 40        BRA $9AD1
+D0/9A8F: 80 40        BRA Local_D09AD1
 D0/9A91: C0 C0        CPY #$C0
-D0/9A93: 80 40        BRA $9AD5
+D0/9A93: 80 40        BRA Local_D09AD5
 D0/9A95: C0 C0        CPY #$C0
 D0/9A97: E0 FF        CPX #$FF
 D0/9A99: 00 03        BRK $03
@@ -34,10 +34,13 @@ D0/9AC9: 00 00        BRK $00
 D0/9ACB: 00 00        BRK $00
 D0/9ACD: 00 00        BRK $00
 D0/9ACF: 00 80        BRK $80
+Local_D09AD1:
 D0/9AD1: 00 20        BRK $20
 D0/9AD3: 00 70        BRK $70
-D0/9AD5: 80 70        BRA $9B47
-D0/9AD7: 80 00        BRA $9AD9
+Local_D09AD5:
+D0/9AD5: 80 70        BRA Routine_D09B47
+D0/9AD7: 80 00        BRA Local_D09AD9
+Local_D09AD9:
 D0/9AD9: 00 00        BRK $00
 D0/9ADB: 00 00        BRK $00
 D0/9ADD: 03 03        ORA $03,S
@@ -49,9 +52,9 @@ D0/9AE7: 07 00        ORA [$00]
 D0/9AE9: 00 00        BRK $00
 D0/9AEB: 00 00        BRK $00
 D0/9AED: 00 00        BRK $00
-D0/9AEF: 80 E8        BRA $9AD9
+D0/9AEF: 80 E8        BRA Local_D09AD9
 D0/9AF1: 00 74        BRK $74
-D0/9AF3: 80 BE        BRA $9AB3
+D0/9AF3: 80 BE        BRA Routine_D09AB3
 D0/9AF5: C0 19        CPY #$19
 D0/9AF7: 66 00        ROR $00
 D0/9AF9: 00 00        BRK $00

@@ -4,6 +4,7 @@ D0/710A: 5F 60 2F 30  EOR $302F60,X
 D0/710E: 2F 30 17 18  AND $181730
 D0/7112: 17 18        ORA [$18],Y
 D0/7114: 0B           PHD
+Local_D07115:
 D0/7115: 0C 05 06     TSB $0605
 D0/7118: 54 6C 58     MVN $6C,$58
 D0/711B: 68           PLA
@@ -11,10 +12,10 @@ D0/711C: 78           SEI
 D0/711D: 48           PHA
 D0/711E: 28           PLP
 D0/711F: 58           CLI
-D0/7120: 20 50 30     JSR $3050
-D0/7123: 50 F0        BVC $7115
-D0/7125: 90 D0        BCC $70F7
-D0/7127: B0 01        BCS $712A
+D0/7120: 20 50 30     JSR Routine_D03050
+D0/7123: 50 F0        BVC Local_D07115
+D0/7125: 90 D0        BCC Routine_D070F7
+D0/7127: B0 01        BCS Routine_D0712A
 D0/7129: 01 02        ORA ($02,X)
 D0/712B: 03 04        ORA $04,S
 D0/712D: 07 08        ORA [$08]

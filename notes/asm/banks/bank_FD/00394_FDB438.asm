@@ -22,7 +22,7 @@ FD/B453: 4A           LSR
 FD/B454: A8           TAY
 FD/B455: 7B           TDC
 FD/B456: E2 20        SEP #$20
-FD/B458: 20 D6 B4     JSR $B4D6
+FD/B458: 20 D6 B4     JSR Routine_FDB4D6
 FD/B45B: A5 04        LDA $04
 FD/B45D: 99 AD 5F     STA $5FAD,Y
 FD/B460: BF 00 47 CC  LDA $CC4700,X
@@ -42,6 +42,7 @@ FD/B482: 85 00        STA $00
 FD/B484: 99 CA 5F     STA $5FCA,Y
 FD/B487: 99 CB 5F     STA $5FCB,Y
 FD/B48A: 99 CC 5F     STA $5FCC,Y
+Local_FDB48D:
 FD/B48D: E8           INX
 FD/B48E: BF 00 47 CC  LDA $CC4700,X
 FD/B492: 99 CF 5F     STA $5FCF,Y
@@ -49,7 +50,7 @@ FD/B495: C8           INY
 FD/B496: E6 00        INC $00
 FD/B498: A5 00        LDA $00
 FD/B49A: C9 05        CMP #$05
-FD/B49C: 90 EF        BCC $B48D
+FD/B49C: 90 EF        BCC Local_FDB48D
 FD/B49E: 7A           PLY
 FD/B49F: B9 D2 5F     LDA $5FD2,Y
 FD/B4A2: 99 CD 5F     STA $5FCD,Y
@@ -58,6 +59,7 @@ FD/B4A8: 99 CE 5F     STA $5FCE,Y
 FD/B4AB: 5A           PHY
 FD/B4AC: 7B           TDC
 FD/B4AD: 85 00        STA $00
+Local_FDB4AF:
 FD/B4AF: E8           INX
 FD/B4B0: BF 00 47 CC  LDA $CC4700,X
 FD/B4B4: 99 E4 5F     STA $5FE4,Y
@@ -65,10 +67,11 @@ FD/B4B7: C8           INY
 FD/B4B8: E6 00        INC $00
 FD/B4BA: A5 00        LDA $00
 FD/B4BC: C9 0C        CMP #$0C
-FD/B4BE: 90 EF        BCC $B4AF
+FD/B4BE: 90 EF        BCC Local_FDB4AF
 FD/B4C0: 7A           PLY
 FD/B4C1: 7B           TDC
 FD/B4C2: 85 00        STA $00
+Local_FDB4C4:
 FD/B4C4: E8           INX
 FD/B4C5: BF 00 47 CC  LDA $CC4700,X
 FD/B4C9: 99 C6 5F     STA $5FC6,Y
@@ -76,5 +79,5 @@ FD/B4CC: C8           INY
 FD/B4CD: E6 00        INC $00
 FD/B4CF: A5 00        LDA $00
 FD/B4D1: C9 03        CMP #$03
-FD/B4D3: 90 EF        BCC $B4C4
+FD/B4D3: 90 EF        BCC Local_FDB4C4
 FD/B4D5: 6B           RTL

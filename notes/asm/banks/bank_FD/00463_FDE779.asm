@@ -2,6 +2,7 @@
 Routine_FDE779:
 FD/E779: B9 22 05     LDA $0522,Y
 FD/E77C: A8           TAY
+Local_FDE77D:
 FD/E77D: BF 01 20 7E  LDA $7E2001,X
 FD/E781: EB           XBA
 FD/E782: BF 00 20 7E  LDA $7E2000,X
@@ -34,5 +35,5 @@ FD/E7B8: E2 20        SEP #$20
 FD/E7BA: E8           INX
 FD/E7BB: E8           INX
 FD/E7BC: 88           DEY
-FD/E7BD: D0 BE        BNE $E77D
+FD/E7BD: D0 BE        BNE Local_FDE77D
 FD/E7BF: 60           RTS

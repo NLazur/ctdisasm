@@ -10,7 +10,8 @@ C7/1C61: 00 00        BRK $00
 C7/1C63: 00 00        BRK $00
 C7/1C65: 00 00        BRK $00
 C7/1C67: 23 43        AND $43,S
-C7/1C69: 50 00        BVC $1C6B
+C7/1C69: 50 00        BVC Local_C71C6B
+Local_C71C6B:
 C7/1C6B: 00 00        BRK $00
 C7/1C6D: 00 00        BRK $00
 C7/1C6F: 00 00        BRK $00

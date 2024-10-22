@@ -20,7 +20,7 @@ C7/6AC4: 05 EF        ORA $EF
 C7/6AC6: B3 EB        LDA ($EB,S),Y
 C7/6AC8: C3 DB        CMP $DB,S
 C7/6ACA: 01 DC        ORA ($DC,X)
-C7/6ACC: 10 C9        BPL $6A97
+C7/6ACC: 10 C9        BPL Routine_C76A97
 C7/6ACE: 01 05        ORA ($05,X)
 C7/6AD0: 7F 22 BF 09  ADC $09BF22,X
 C7/6AD4: BF D8 87 D7  LDA $D787D8,X
@@ -38,7 +38,7 @@ C7/6AEF: 0A           ASL
 C7/6AF0: E0 0F 00     CPX #$000F
 C7/6AF3: EB           XBA
 C7/6AF4: C4 00        CPY $00
-C7/6AF6: D0 CF        BNE $6AC7
+C7/6AF6: D0 CF        BNE Routine_C76AC7
 C7/6AF8: 14 00        TRB $00
 C7/6AFA: E9 FE        SBC #$FE
 C7/6AFC: D2 DC        CMP ($DC)
@@ -57,7 +57,7 @@ C7/6B18: EB           XBA
 C7/6B19: D4 D8        PEI $D8
 C7/6B1B: DD 0C E2     CMP $E20C,X
 C7/6B1E: 02 E2        COP $E2
-C7/6B20: 10 51        BPL $6B73
+C7/6B20: 10 51        BPL Routine_C76B73
 C7/6B22: DA           PHX
 C7/6B23: 03 E3        ORA $E3,S
 C7/6B25: DA           PHX
@@ -73,7 +73,7 @@ C7/6B37: B7 D4        LDA [$D4],Y
 C7/6B39: D8           CLD
 C7/6B3A: DD 0C E2     CMP $E20C,X
 C7/6B3D: 05 E2        ORA $E2
-C7/6B3F: 10 52        BPL $6B93
+C7/6B3F: 10 52        BPL Routine_C76B93
 C7/6B41: DA           PHX
 C7/6B42: 03 E3        ORA $E3,S
 C7/6B44: DA           PHX

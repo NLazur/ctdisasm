@@ -17,7 +17,7 @@ C0/81E9: 18           CLC
 C0/81EA: 65 52        ADC $52
 C0/81EC: AA           TAX
 C0/81ED: A4 62        LDY $62
-C0/81EF: 80 13        BRA $8204
+C0/81EF: 80 13        BRA Local_C08204
 C0/81F1: 38           SEC
 C0/81F2: E9 20        SBC #$20
 C0/81F4: 00 18        BRK $18
@@ -29,6 +29,7 @@ C0/81FD: A5 62        LDA $62
 C0/81FF: 18           CLC
 C0/8200: 69 E0        ADC #$E0
 C0/8202: 03 A8        ORA $A8,S
+Local_C08204:
 C0/8204: A9 20        LDA #$20
 C0/8206: 00 38        BRK $38
 C0/8208: E5 64        SBC $64

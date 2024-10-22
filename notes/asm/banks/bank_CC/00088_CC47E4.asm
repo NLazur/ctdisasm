@@ -1,8 +1,9 @@
 ; Bank: CC | Start Address: 47E4
 Routine_CC47E4:
 CC/47E4: 00 00        BRK $00
-CC/47E6: 50 46        BVC $482E
-CC/47E8: 30 00        BMI $47EA
+CC/47E6: 50 46        BVC Local_CC482E
+CC/47E8: 30 00        BMI Local_CC47EA
+Local_CC47EA:
 CC/47EA: FF 00 00 00  SBC $000000,X
 CC/47EE: 0A           ASL
 CC/47EF: 0B           PHD
@@ -36,6 +37,7 @@ CC/4826: 04 04        TSB $04
 CC/4828: 00 00        BRK $00
 CC/482A: 00 20        BRK $20
 CC/482C: 00 02        BRK $02
+Local_CC482E:
 CC/482E: 00 00        BRK $00
 CC/4830: 00 00        BRK $00
 CC/4832: 00 0A        BRK $0A
@@ -56,7 +58,7 @@ CC/484E: 0E 32 3F     ASL $3F32
 CC/4851: 7F 04 04 04  ADC $040404,X
 CC/4855: 04 00        TSB $00
 CC/4857: 00 00        BRK $00
-CC/4859: B0 04        BCS $485F
+CC/4859: B0 04        BCS Routine_CC485F
 CC/485B: 1A           INC
 CC/485C: 00 FF        BRK $FF
 CC/485E: 00 00        BRK $00
@@ -66,8 +68,9 @@ CC/4863: 0F 64 0D 50  ORA $500D64
 CC/4867: 41 FA        EOR ($FA,X)
 CC/4869: 04 04        TSB $04
 CC/486B: 04 04        TSB $04
-CC/486D: 80 02        BRA $4871
+CC/486D: 80 02        BRA Local_CC4871
 CC/486F: 00 18        BRK $18
+Local_CC4871:
 CC/4871: 00 02        BRK $02
 CC/4873: 00 00        BRK $00
 CC/4875: 00 00        BRK $00

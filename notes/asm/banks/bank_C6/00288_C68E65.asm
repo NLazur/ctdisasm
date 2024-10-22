@@ -31,7 +31,7 @@ C6/8EA1: F8           SED
 C6/8EA2: 09 B0        ORA #$B0
 C6/8EA4: EC 33 23     CPX $2333
 C6/8EA7: B7 06        LDA [$06],Y
-C6/8EA9: 70 01        BVS $8EAC
+C6/8EA9: 70 01        BVS Routine_C68EAC
 C6/8EAB: 13 39        ORA ($39,S),Y
 C6/8EAD: 15 1A        ORA $1A,X
 C6/8EAF: 07 74        ORA [$74]

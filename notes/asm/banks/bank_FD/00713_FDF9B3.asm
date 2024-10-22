@@ -1,15 +1,15 @@
 ; Bank: FD | Start Address: F9B3
 Routine_FDF9B3:
-FD/F9B3: 80 78        BRA $FA2D
+FD/F9B3: 80 78        BRA Routine_FDFA2D
 FD/F9B5: 00 79        BRK $79
-FD/F9B7: 80 79        BRA $FA32
+FD/F9B7: 80 79        BRA Local_FDFA32
 FD/F9B9: 00 7A        BRK $7A
-FD/F9BB: 80 80        BRA $F93D
-FD/F9BD: 80 80        BRA $F93F
-FD/F9BF: 80 80        BRA $F941
-FD/F9C1: 80 80        BRA $F943
-FD/F9C3: 80 80        BRA $F945
-FD/F9C5: 80 80        BRA $F947
+FD/F9BB: 80 80        BRA Routine_FDF93D
+FD/F9BD: 80 80        BRA Routine_FDF93F
+FD/F9BF: 80 80        BRA Routine_FDF941
+FD/F9C1: 80 80        BRA Routine_FDF943
+FD/F9C3: 80 80        BRA Routine_FDF945
+FD/F9C5: 80 80        BRA Routine_FDF947
 FD/F9C7: 00 00        BRK $00
 FD/F9C9: 00 00        BRK $00
 FD/F9CB: 00 00        BRK $00
@@ -63,6 +63,7 @@ FD/FA2A: 02 B4        COP $B4
 FD/FA2C: 02 B4        COP $B4
 FD/FA2E: 02 B4        COP $B4
 FD/FA30: 02 B4        COP $B4
+Local_FDFA32:
 FD/FA32: 02 B4        COP $B4
 FD/FA34: 02 B4        COP $B4
 FD/FA36: 02 BA        COP $BA

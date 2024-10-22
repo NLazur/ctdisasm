@@ -10,6 +10,6 @@ FF/1BF5: 68           PLA
 FF/1BF6: 98           TYA
 FF/1BF7: 68           PLA
 FF/1BF8: 98           TYA
-FF/1BF9: 70 90        BVS $1B8B
-FF/1BFB: 70 B0        BVS $1BAD
+FF/1BF9: 70 90        BVS Routine_FF1B8B
+FF/1BFB: 70 B0        BVS Routine_FF1BAD
 FF/1BFD: 60           RTS

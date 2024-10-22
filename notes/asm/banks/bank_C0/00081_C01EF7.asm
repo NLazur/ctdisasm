@@ -9,6 +9,6 @@ C0/1F02: 1A           INC
 C0/1F03: AA           TAX
 C0/1F04: 86 DB        STX $DB
 C0/1F06: BF C0 70 7E  LDA $7E70C0,X
-C0/1F0A: 30 D2        BMI $1EDE
+C0/1F0A: 30 D2        BMI Routine_C01EDE
 C0/1F0C: 38           SEC
 C0/1F0D: 60           RTS

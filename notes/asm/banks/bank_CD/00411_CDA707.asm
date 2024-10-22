@@ -1,7 +1,8 @@
 ; Bank: CD | Start Address: A707
 Routine_CDA707:
-CD/A707: 70 02        BVS $A70B
+CD/A707: 70 02        BVS Local_CDA70B
 CD/A709: 01 24        ORA ($24,X)
+Local_CDA70B:
 CD/A70B: 02 71        COP $71
 CD/A70D: 00 25        BRK $25
 CD/A70F: 01 73        ORA ($73,X)

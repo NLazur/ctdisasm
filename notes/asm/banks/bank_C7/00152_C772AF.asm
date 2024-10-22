@@ -9,7 +9,7 @@ C7/72BF: DD 04 C9     CMP $C904,X
 C7/72C2: 0B           PHD
 C7/72C3: 03 7E        ORA $7E,S
 C7/72C5: C8           INY
-C7/72C6: 10 07        BPL $72CF
+C7/72C6: 10 07        BPL Routine_C772CF
 C7/72C8: 9B           TXY
 C7/72C9: C8           INY
 C7/72CA: 88           DEY
@@ -48,7 +48,7 @@ C7/731F: 05 3F        ORA $3F
 C7/7321: B8           CLV
 C7/7322: 00 F0        BRK $F0
 C7/7324: 00 02        BRK $02
-C7/7326: 10 CD        BPL $72F5
+C7/7326: 10 CD        BPL Routine_C772F5
 C7/7328: 24 2F        BIT $2F
 C7/732A: B8           CLV
 C7/732B: DE 03 10     DEC $1003,X
@@ -66,14 +66,15 @@ C7/7346: 32 D2        AND ($D2)
 C7/7348: 01 3F        ORA ($3F,X)
 C7/734A: 2E 01 21     ROL $2101
 C7/734D: A1 A8        LDA ($A8,X)
-C7/734F: D0 51        BNE $73A2
+C7/734F: D0 51        BNE Routine_C773A2
 C7/7351: FD E1 42     SBC $42E1,X
-C7/7354: F0 0A        BEQ $7360
+C7/7354: F0 0A        BEQ Local_C77360
 C7/7356: F5 A8        SBC $A8,X
 C7/7358: 53 BB        EOR ($BB,S),Y
 C7/735A: E3 2F        SBC $2F,S
 C7/735C: E1 FD        SBC ($FD,X)
-C7/735E: 10 0E        BPL $736E
+C7/735E: 10 0E        BPL Local_C7736E
+Local_C77360:
 C7/7360: 98           TYA
 C7/7361: 31 22        AND ($22),Y
 C7/7363: E1 D1        SBC ($D1,X)
@@ -81,6 +82,7 @@ C7/7365: 23 1C        AND $1C,S
 C7/7367: ED 5F 98     SBC $985F
 C7/736A: E3 FD        SBC $FD,S
 C7/736C: 24 52        BIT $52
+Local_C7736E:
 C7/736E: A0 30 03     LDY #$0330
 C7/7371: 3B           TSC
 C7/7372: 98           TYA
@@ -96,7 +98,7 @@ C7/7388: CF CF DC DB  CMP $DBDCCF
 C7/738C: AD 98 34     LDA $3498
 C7/738F: 1C E2 E0     TRB $E0E2
 C7/7392: 01 3B        ORA ($3B,X)
-C7/7394: 22 E2 98 D1  JSR $D198E2
+C7/7394: 22 E2 98 D1  JSR Routine_D198E2
 C7/7398: 01 1D        ORA ($1D,X)
 C7/739A: 3C F3 01     BIT $01F3,X
 C7/739D: 21 CE        AND ($CE,X)

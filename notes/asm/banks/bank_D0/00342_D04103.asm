@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 4103
 Routine_D04103:
 D0/4103: C0 80 80     CPY #$8080
-D0/4106: 80 80        BRA $4088
+D0/4106: 80 80        BRA Routine_D04088
 D0/4108: 02 02        COP $02
 D0/410A: 02 02        COP $02
 D0/410C: 02 02        COP $02
@@ -17,8 +17,8 @@ D0/4120: 09 09 09     ORA #$0909
 D0/4123: 09 0D 0D     ORA #$0D0D
 D0/4126: 0D 0D 20     ORA $200D
 D0/4129: E0 50 B0     CPX #$B050
-D0/412C: 50 B0        BVC $40DE
-D0/412E: 50 B0        BVC $40E0
+D0/412C: 50 B0        BVC Routine_D040DE
+D0/412E: 50 B0        BVC Routine_D040E0
 D0/4130: 68           PLA
 D0/4131: 98           TYA
 D0/4132: 68           PLA

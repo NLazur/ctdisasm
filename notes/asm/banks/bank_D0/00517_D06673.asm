@@ -15,10 +15,11 @@ D0/668B: 03 01        ORA $01,S
 D0/668D: 01 00        ORA ($00,X)
 D0/668F: 00 00        BRK $00
 D0/6691: 00 00        BRK $00
+Local_D06693:
 D0/6693: 00 00        BRK $00
 D0/6695: 00 00        BRK $00
 D0/6697: 00 E0        BRK $E0
-D0/6699: 10 F8        BPL $6693
+D0/6699: 10 F8        BPL Local_D06693
 D0/669B: 08           PHP
 D0/669C: B4 CC        LDY $CC,X
 D0/669E: DA           PHX
@@ -35,9 +36,9 @@ D0/66B1: 08           PHP
 D0/66B2: 06 06        ASL $06
 D0/66B4: 02 03        COP $03
 D0/66B6: 01 01        ORA ($01,X)
-D0/66B8: 20 E0 20     JSR $20E0
+D0/66B8: 20 E0 20     JSR Routine_D020E0
 D0/66BB: E0 80 E0     CPX #$E080
-D0/66BE: 50 70        BVC $6730
+D0/66BE: 50 70        BVC Routine_D06730
 D0/66C0: 38           SEC
 D0/66C1: 38           SEC
 D0/66C2: 04 0C        TSB $0C

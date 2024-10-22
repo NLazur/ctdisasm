@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 0FEF
 Routine_D00FEF:
 D0/0FEF: C0 80 00     CPY #$0080
-D0/0FF2: 20 00 D0     JSR $D000
-D0/0FF5: B0 F0        BCS $0FE7
+D0/0FF2: 20 00 D0     JSR Routine_D0D000
+D0/0FF5: B0 F0        BCS Routine_D00FE7
 D0/0FF7: 08           PHP
 D0/0FF8: 00 00        BRK $00
 D0/0FFA: 00 00        BRK $00
@@ -20,6 +20,7 @@ D0/1010: 00 00        BRK $00
 D0/1012: 0C 12 7C     TSB $7C12
 D0/1015: 9C C4 3A     STZ $3AC4
 D0/1018: 00 00        BRK $00
+Local_D0101A:
 D0/101A: 00 00        BRK $00
 D0/101C: 00 00        BRK $00
 D0/101E: 00 00        BRK $00
@@ -28,12 +29,14 @@ D0/1022: 01 00        ORA ($00,X)
 D0/1024: 03 02        ORA $02,S
 D0/1026: 02 01        COP $01
 D0/1028: 00 00        BRK $00
+Local_D0102A:
 D0/102A: 00 00        BRK $00
 D0/102C: 00 00        BRK $00
+Local_D0102E:
 D0/102E: 00 00        BRK $00
 D0/1030: 00 00        BRK $00
-D0/1032: 80 80        BRA $0FB4
-D0/1034: 80 80        BRA $0FB6
+D0/1032: 80 80        BRA Routine_D00FB4
+D0/1034: 80 80        BRA Routine_D00FB6
 D0/1036: 00 80        BRK $80
 D0/1038: 11 01        ORA ($01),Y
 D0/103A: 11 00        ORA ($00),Y
@@ -51,7 +54,7 @@ D0/1050: 00 80        BRK $80
 D0/1052: 00 00        BRK $00
 D0/1054: 00 00        BRK $00
 D0/1056: 00 00        BRK $00
-D0/1058: 10 30        BPL $108A
+D0/1058: 10 30        BPL Routine_D0108A
 D0/105A: 00 00        BRK $00
 D0/105C: 00 00        BRK $00
 D0/105E: 02 06        COP $06
@@ -59,8 +62,8 @@ D0/1060: 03 04        ORA $04,S
 D0/1062: 02 06        COP $06
 D0/1064: 00 00        BRK $00
 D0/1066: 00 00        BRK $00
-D0/1068: D0 B0        BNE $101A
-D0/106A: 20 00 04     JSR $0400
+D0/1068: D0 B0        BNE Local_D0101A
+D0/106A: 20 00 04     JSR Routine_D00400
 D0/106D: 00 1A        BRK $1A
 D0/106F: 16 FE        ASL $FE,X
 D0/1071: 01 1A        ORA ($1A,X)
@@ -90,10 +93,11 @@ D0/10A0: 06 03        ASL $03
 D0/10A2: 07 02        ORA [$02]
 D0/10A4: 00 05        BRK $05
 D0/10A6: 00 00        BRK $00
-D0/10A8: 80 80        BRA $102A
+D0/10A8: 80 80        BRA Local_D0102A
 D0/10AA: 00 80        BRK $80
-D0/10AC: 80 80        BRA $102E
-D0/10AE: 80 C0        BRA $1070
+D0/10AC: 80 80        BRA Local_D0102E
+D0/10AE: 80 C0        BRA Routine_D01070
 D0/10B0: C0 80 C0     CPY #$C080
-D0/10B3: 80 00        BRA $10B5
+D0/10B3: 80 00        BRA Local_D010B5
+Local_D010B5:
 D0/10B5: 40           RTI

@@ -1,20 +1,24 @@
 ; Bank: FF | Start Address: F02C
 Routine_FFF02C:
+Local_FFF02C:
 FF/F02C: E0 F0        CPX #$F0
-FF/F02E: F0 E0        BEQ $F010
+Local_FFF02E:
+FF/F02E: F0 E0        BEQ Routine_FFF010
+Local_FFF030:
 FF/F030: 78           SEI
 FF/F031: F8           SED
-FF/F032: 70 F8        BVS $F02C
-FF/F034: 70 F8        BVS $F02E
+Local_FFF032:
+FF/F032: 70 F8        BVS Local_FFF02C
+FF/F034: 70 F8        BVS Local_FFF02E
 FF/F036: 71 F8        ADC ($F8),Y
 FF/F038: 00 00        BRK $00
 FF/F03A: A0 C0        LDY #$C0
-FF/F03C: F0 E0        BEQ $F01E
-FF/F03E: F0 F0        BEQ $F030
-FF/F040: F0 F0        BEQ $F032
+FF/F03C: F0 E0        BEQ Routine_FFF01E
+FF/F03E: F0 F0        BEQ Local_FFF030
+FF/F040: F0 F0        BEQ Local_FFF032
 FF/F042: F8           SED
-FF/F043: F0 78        BEQ $F0BD
-FF/F045: F0 78        BEQ $F0BF
+FF/F043: F0 78        BEQ Routine_FFF0BD
+FF/F045: F0 78        BEQ Routine_FFF0BF
 FF/F047: F1 00        SBC ($00),Y
 FF/F049: 00 00        BRK $00
 FF/F04B: 00 00        BRK $00

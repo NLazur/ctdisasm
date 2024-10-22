@@ -1,6 +1,7 @@
 ; Bank: CE | Start Address: EA44
 Routine_CEEA44:
 CE/EA44: 7B           TDC
+Local_CEEA45:
 CE/EA45: 99 5D C1     STA $C15D,Y
 CE/EA48: 99 95 C1     STA $C195,Y
 CE/EA4B: 99 CD C1     STA $C1CD,Y
@@ -21,6 +22,6 @@ CE/EA75: 88           DEY
 CE/EA76: 88           DEY
 CE/EA77: 88           DEY
 CE/EA78: 88           DEY
-CE/EA79: D0 CA        BNE $EA45
+CE/EA79: D0 CA        BNE Local_CEEA45
 CE/EA7B: E6 45        INC $45
 CE/EA7D: 60           RTS

@@ -6,13 +6,13 @@ C6/7D06: 26 F8        ROL $F8
 C6/7D08: 19 1D 0D     ORA $0D1D,Y
 C6/7D0B: 0D AD AE     ORA $AEAD
 C6/7D0E: AF 2B F8 1B  LDA $1BF82B
-C6/7D12: 20 80 24     JSR $2480
+C6/7D12: 20 80 24     JSR Routine_C62480
 C6/7D15: 36 37        ROL $37,X
 C6/7D17: 00 9A        BRK $9A
 C6/7D19: 9B           TXY
 C6/7D1A: 9C 85 F9     STZ $F985
 C6/7D1D: D1 1D        CMP ($1D),Y
-C6/7D1F: 10 67        BPL $7D88
+C6/7D1F: 10 67        BPL Routine_C67D88
 C6/7D21: 68           PLA
 C6/7D22: 69 34 08     ADC #$0834
 C6/7D25: 17 E4        ORA [$E4],Y
@@ -29,7 +29,7 @@ C6/7D39: 79 F1 10     ADC $10F1,Y
 C6/7D3C: 92 00        STA ($00)
 C6/7D3E: 2F F8 0B 26  AND $260BF8
 C6/7D42: B8           CLV
-C6/7D43: 30 B9        BMI $7CFE
+C6/7D43: 30 B9        BMI Routine_C67CFE
 C6/7D45: BA           TSX
 C6/7D46: EB           XBA
 C6/7D47: EC 29 F8     CPX $F829
@@ -67,7 +67,7 @@ C6/7D87: 01 F8        ORA ($F8,X)
 C6/7D89: 01 F8        ORA ($F8,X)
 C6/7D8B: 01 F8        ORA ($F8,X)
 C6/7D8D: 1B           TCS
-C6/7D8E: 20 01 FF     JSR $FF01
+C6/7D8E: 20 01 FF     JSR Routine_C6FF01
 C6/7D91: 01 18        ORA ($18,X)
 C6/7D93: 29 F8 01     AND #$01F8
 C6/7D96: F8           SED

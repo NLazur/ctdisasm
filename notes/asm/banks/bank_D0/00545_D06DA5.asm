@@ -4,13 +4,14 @@ D0/6DA5: A0 20 E0     LDY #$E020
 D0/6DA8: 00 00        BRK $00
 D0/6DAA: 00 00        BRK $00
 D0/6DAC: 01 01        ORA ($01,X)
+Local_D06DAE:
 D0/6DAE: 06 07        ASL $07
 D0/6DB0: 08           PHP
 D0/6DB1: 0F 31 3E 67  ORA $673E31
 D0/6DB5: 78           SEI
 D0/6DB6: 8F F0 00 00  STA $0000F0
 D0/6DBA: 00 00        BRK $00
-D0/6DBC: F0 F0        BEQ $6DAE
+D0/6DBC: F0 F0        BEQ Local_D06DAE
 D0/6DBE: 18           CLC
 D0/6DBF: F8           SED
 D0/6DC0: 0C FC C4     TSB $C4FC
@@ -36,7 +37,7 @@ D0/6DEB: 00 00        BRK $00
 D0/6DED: 00 08        BRK $08
 D0/6DEF: F8           SED
 D0/6DF0: E0 10 C0     CPX #$C010
-D0/6DF3: 20 40 C0     JSR $C040
-D0/6DF6: 80 80        BRA $6D78
+D0/6DF3: 20 40 C0     JSR Routine_D0C040
+D0/6DF6: 80 80        BRA Routine_D06D78
 D0/6DF8: 5E 61 5F     LSR $5F61,X
 D0/6DFB: 60           RTS

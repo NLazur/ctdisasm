@@ -12,21 +12,22 @@ C6/308D: 0D ED 0D     ORA $0DED
 C6/3090: 7C 02 00     JMP ($0002,X)
 C6/3093: EE 0D EF     INC $EF0D
 C6/3096: 01 08        ORA ($08,X)
-C6/3098: 10 8A        BPL $3024
+C6/3098: 10 8A        BPL Routine_C63024
 C6/309A: 19 D2 1A     ORA $1AD2,Y
 C6/309D: 9A           TXS
 C6/309E: 19 F0 00     ORA $00F0,Y
 C6/30A1: 1A           INC
-C6/30A2: 5C 17 5D 17  JMP $175D17
+C6/30A2: 5C 17 5D 17  JMP Routine_175D17
 C6/30A6: 6C 17 6D     JMP ($6D17)
 C6/30A9: 14 17        TRB $17
 C6/30AB: 5E DE 05     LSR $05DE,X
 C6/30AE: 6E 0A 21     ROR $210A
 C6/30B1: 7E 17 7F     ROR $7F17,X
-C6/30B4: 10 17        BPL $30CD
+C6/30B4: 10 17        BPL Routine_C630CD
+Local_C630B6:
 C6/30B6: BE 0D BF     LDX $BF0D,Y
 C6/30B9: A8           TAY
-C6/30BA: 10 FA        BPL $30B6
+C6/30BA: 10 FA        BPL Local_C630B6
 C6/30BC: 16 FB        ASL $FB,X
 C6/30BE: 41 DE        EOR ($DE,X)
 C6/30C0: 0B           PHD
@@ -35,12 +36,12 @@ C6/30C3: 16 FD        ASL $FD,X
 C6/30C5: 16 24        ASL $24,X
 C6/30C7: 09 FE 04     ORA #$04FE
 C6/30CA: 16 FF        ASL $FF,X
-C6/30CC: 20 01 4E     JSR $4E01
+C6/30CC: 20 01 4E     JSR Routine_C64E01
 C6/30CF: 17 E0        ORA [$E0],Y
 C6/30D1: 16 E1        ASL $E1,X
 C6/30D3: 45 46        EOR $46
 C6/30D5: 06 F1        ASL $F1
-C6/30D7: 80 11        BRA $30EA
+C6/30D7: 80 11        BRA Local_C630EA
 C6/30D9: F2 16        SBC ($16)
 C6/30DB: F3 80        SBC ($80,S),Y
 C6/30DD: 01 E5        ORA ($E5,X)
@@ -49,6 +50,7 @@ C6/30E2: 16 F5        ASL $F5,X
 C6/30E4: 16 E6        ASL $E6,X
 C6/30E6: 0C 25 6C     TSB $6C25
 C6/30E9: 08           PHP
+Local_C630EA:
 C6/30EA: 01 70        ORA ($70,X)
 C6/30EC: 08           PHP
 C6/30ED: 9E 0D 9F     STZ $9F0D,X
@@ -87,6 +89,7 @@ C6/312F: 00 AF        BRK $AF
 C6/3131: 08           PHP
 C6/3132: 6D 2C 00     ADC $002C
 C6/3135: AE 08 00     LDX $0008
+Local_C63138:
 C6/3138: BE 01 34     LDX $3401,Y
 C6/313B: 00 57        BRK $57
 C6/313D: 00 C1        BRK $C1
@@ -105,7 +108,7 @@ C6/3159: E3 0C        SBC $0C,S
 C6/315B: C5 0C        CMP $0C
 C6/315D: F3 05        SBC ($05,S),Y
 C6/315F: 08           PHP
-C6/3160: 10 D6        BPL $3138
+C6/3160: 10 D6        BPL Local_C63138
 C6/3162: 08           PHP
 C6/3163: 00 E8        BRK $E8
 C6/3165: 00 E9        BRK $E9
@@ -119,14 +122,16 @@ C6/3174: FB           XCE
 C6/3175: 00 DB        BRK $DB
 C6/3177: 00 DC        BRK $DC
 C6/3179: 00 DD        BRK $DD
-C6/317B: 10 00        BPL $317D
+C6/317B: 10 00        BPL Local_C6317D
+Local_C6317D:
 C6/317D: DF 00 AE 78  CMP $78AE00,X
 C6/3181: 00 BE        BRK $BE
 C6/3183: 08           PHP
-C6/3184: 30 00        BMI $3186
+C6/3184: 30 00        BMI Local_C63186
+Local_C63186:
 C6/3186: 08           PHP
 C6/3187: 21 08        AND ($08,X)
-C6/3189: 22 00 31 00  JSR $003100
+C6/3189: 22 00 31 00  JSR Routine_003100
 C6/318D: 32 00        AND ($00)
 C6/318F: 00 23        BRK $23
 C6/3191: 00 24        BRK $24
@@ -151,17 +156,17 @@ C6/31B4: 09 93 02     ORA #$0293
 C6/31B7: 31 40        AND ($40),Y
 C6/31B9: 88           DEY
 C6/31BA: 08           PHP
-C6/31BB: 30 48        BMI $3205
+C6/31BB: 30 48        BMI Routine_C63205
 C6/31BD: BF 08 2A E0  LDA $E02A08,X
 C6/31C1: 68           PLA
 C6/31C2: 00 F0        BRK $F0
 C6/31C4: 68           PLA
-C6/31C5: 20 F2 70     JSR $70F2
+C6/31C5: 20 F2 70     JSR Routine_C670F2
 C6/31C8: 00 E3        BRK $E3
 C6/31CA: 0C 0A E5     TSB $E50A
 C6/31CD: 7A           PLY
 C6/31CE: 00 F5        BRK $F5
-C6/31D0: 10 20        BPL $31F2
+C6/31D0: 10 20        BPL Routine_C631F2
 C6/31D2: D6 0C        DEC $0C,X
 C6/31D4: E6 0C        INC $0C
 C6/31D6: 00 E7        BRK $E7

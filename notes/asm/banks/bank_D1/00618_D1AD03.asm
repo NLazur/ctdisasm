@@ -16,16 +16,17 @@ D1/AD19: 0A           ASL
 D1/AD1A: 4A           LSR
 D1/AD1B: 4A           LSR
 D1/AD1C: 49 48        EOR #$48
-D1/AD1E: 10 0A        BPL $AD2A
+D1/AD1E: 10 0A        BPL Local_D1AD2A
 D1/AD20: 0A           ASL
 D1/AD21: 0A           ASL
 D1/AD22: 4A           LSR
 D1/AD23: 4A           LSR
 D1/AD24: 4A           LSR
-D1/AD25: 50 18        BVC $AD3F
+D1/AD25: 50 18        BVC Local_D1AD3F
 D1/AD27: 0A           ASL
 D1/AD28: 0A           ASL
 D1/AD29: 0A           ASL
+Local_D1AD2A:
 D1/AD2A: 4A           LSR
 D1/AD2B: 4A           LSR
 D1/AD2C: 4A           LSR
@@ -38,13 +39,14 @@ D1/AD32: CA           DEX
 D1/AD33: CA           DEX
 D1/AD34: CA           DEX
 D1/AD35: D8           CLD
-D1/AD36: 90 8A        BCC $ACC2
+D1/AD36: 90 8A        BCC Routine_D1ACC2
 D1/AD38: 8A           TXA
 D1/AD39: 8A           TXA
 D1/AD3A: CA           DEX
 D1/AD3B: CA           DEX
 D1/AD3C: CA           DEX
-D1/AD3D: D0 88        BNE $ACC7
+D1/AD3D: D0 88        BNE Routine_D1ACC7
+Local_D1AD3F:
 D1/AD3F: 89 8A        BIT #$8A
 D1/AD41: 8A           TXA
 D1/AD42: CA           DEX

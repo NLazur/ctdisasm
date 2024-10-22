@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: E62F
 Routine_FFE62F:
-FF/E62F: 50 63        BVC $E694
-FF/E631: 50 30        BVC $E663
+FF/E62F: 50 63        BVC Routine_FFE694
+FF/E631: 50 30        BVC Routine_FFE663
 FF/E633: 38           SEC
 FF/E634: 0B           PHD
 FF/E635: 0C 18 13     TSB $1318
@@ -19,5 +19,5 @@ FF/E64E: 08           PHP
 FF/E64F: 28           PLP
 FF/E650: 18           CLC
 FF/E651: 28           PLP
-FF/E652: 90 70        BCC $E6C4
+FF/E652: 90 70        BCC Routine_FFE6C4
 FF/E654: 60           RTS

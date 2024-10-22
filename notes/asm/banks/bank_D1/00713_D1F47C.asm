@@ -3,13 +3,13 @@ Routine_D1F47C:
 D1/F47C: A0 02 00     LDY #$0002
 D1/F47F: B7 40        LDA [$40],Y
 D1/F481: 85 49        STA $49
-D1/F483: 20 74 F4     JSR $F474
+D1/F483: 20 74 F4     JSR Routine_D1F474
 D1/F486: 25 49        AND $49
 D1/F488: 18           CLC
 D1/F489: 67 40        ADC [$40]
 D1/F48B: 85 45        STA $45
 D1/F48D: A0 01 00     LDY #$0001
-D1/F490: 20 74 F4     JSR $F474
+D1/F490: 20 74 F4     JSR Routine_D1F474
 D1/F493: 25 49        AND $49
 D1/F495: 18           CLC
 D1/F496: 77 40        ADC [$40],Y

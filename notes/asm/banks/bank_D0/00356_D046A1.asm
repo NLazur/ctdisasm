@@ -20,6 +20,7 @@ D0/46CD: 02 FF        COP $FF
 D0/46CF: 01 FB        ORA ($FB,X)
 D0/46D1: 05 13        ORA $13
 D0/46D3: ED 16 EA     SBC $EA16
+Local_D046D6:
 D0/46D6: 07 FF        ORA [$FF]
 D0/46D8: 00 00        BRK $00
 D0/46DA: 00 00        BRK $00
@@ -28,13 +29,14 @@ D0/46DE: 02 02        COP $02
 D0/46E0: 08           PHP
 D0/46E1: 08           PHP
 D0/46E2: 00 10        BRK $10
-D0/46E4: D0 F0        BNE $46D6
+D0/46E4: D0 F0        BNE Local_D046D6
 D0/46E6: C0 20 00     CPY #$0020
 D0/46E9: 00 00        BRK $00
 D0/46EB: 00 10        BRK $10
-D0/46ED: 10 00        BPL $46EF
+D0/46ED: 10 00        BPL Local_D046EF
+Local_D046EF:
 D0/46EF: 00 00        BRK $00
 D0/46F1: 00 08        BRK $08
 D0/46F3: 08           PHP
-D0/46F4: 30 30        BMI $4726
+D0/46F4: 30 30        BMI Routine_D04726
 D0/46F6: 60           RTS

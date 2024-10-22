@@ -4,6 +4,7 @@ D1/FD3C: C2 20        REP #$20
 D1/FD3E: E2 10        SEP #$10
 D1/FD40: A2 38        LDX #$38
 D1/FD42: A9 FF 00     LDA #$00FF
+Local_D1FD45:
 D1/FD45: 9D 5F C1     STA $C15F,X
 D1/FD48: 9D 97 C1     STA $C197,X
 D1/FD4B: 9D CF C1     STA $C1CF,X
@@ -22,7 +23,7 @@ D1/FD6F: 9D 6F C4     STA $C46F,X
 D1/FD72: 9D A7 C4     STA $C4A7,X
 D1/FD75: CA           DEX
 D1/FD76: CA           DEX
-D1/FD77: D0 CC        BNE $FD45
+D1/FD77: D0 CC        BNE Local_D1FD45
 D1/FD79: C2 10        REP #$10
 D1/FD7B: E2 20        SEP #$20
 D1/FD7D: 60           RTS

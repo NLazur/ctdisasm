@@ -1,7 +1,7 @@
 ; Bank: C7 | Start Address: 7512
 Routine_C77512:
 C7/7512: A1 6E        LDA ($6E,X)
-C7/7514: D0 20        BNE $7536
+C7/7514: D0 20        BNE Routine_C77536
 C7/7516: 01 FF        ORA ($FF,X)
 C7/7518: C1 98        CMP ($98,X)
 C7/751A: 3F FF 26 A4  AND $A426FF,X
@@ -9,7 +9,7 @@ C7/751E: FC 3C 1F     JSR ($1F3C,X)
 C7/7521: 44 A8 FD     MVP $A8,$FD
 C7/7524: 21 1F        AND ($1F,X)
 C7/7526: E2 00        SEP #$00
-C7/7528: D0 3F        BNE $7569
+C7/7528: D0 3F        BNE Routine_C77569
 C7/752A: C0 A8        CPY #$A8
 C7/752C: 00 45        BRK $45
 C7/752E: EE 01 21     INC $2101

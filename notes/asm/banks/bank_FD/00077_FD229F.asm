@@ -17,7 +17,7 @@ FD/22C0: E0 25        CPX #$25
 FD/22C2: 0C C6 1F     TSB $1FC6
 FD/22C5: 03 FC        ORA $FC,S
 FD/22C7: CC 00 F0     CPY $F000
-FD/22CA: 70 80        BVS $224C
+FD/22CA: 70 80        BVS Routine_FD224C
 FD/22CC: E0 07        CPX #$07
 FD/22CE: C0 1F        CPY #$1F
 FD/22D0: C0 00        CPY #$00
@@ -47,12 +47,12 @@ FD/230D: 01 C0        ORA ($C0,X)
 FD/230F: 83 00        STA $00,S
 FD/2311: E0 C1        CPX #$C1
 FD/2313: F4 E1 FE     PEA $FEE1
-FD/2316: F0 F8        BEQ $2310
+FD/2316: F0 F8        BEQ Routine_FD2310
 FD/2318: F8           SED
 FD/2319: C1 E0        CMP ($E0,X)
 FD/231B: 73 08        ADC ($08,S),Y
 FD/231D: 07 0E        ORA [$0E]
 FD/231F: 01 19        ORA ($19,X)
-FD/2321: 20 04 E0     JSR $E004
+FD/2321: 20 04 E0     JSR Routine_FDE004
 FD/2324: 53 01        EOR ($01,S),Y
 FD/2326: 40           RTI

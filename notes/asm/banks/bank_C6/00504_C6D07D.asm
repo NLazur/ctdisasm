@@ -18,17 +18,18 @@ C6/D098: 5A           PHY
 C6/D099: F2 38        SBC ($38)
 C6/D09B: F2 1A        SBC ($1A)
 C6/D09D: E6 0A        INC $0A
-C6/D09F: F0 10        BEQ $D0B1
+C6/D09F: F0 10        BEQ Local_C6D0B1
 C6/D0A1: 08           PHP
 C6/D0A2: 38           SEC
-C6/D0A3: 20 76 48     JSR $4876
+C6/D0A3: 20 76 48     JSR Routine_C64876
 C6/D0A6: 3E 8A 0E     ROL $0E8A,X
 C6/D0A9: 7B           TDC
 C6/D0AA: F2 2A        SBC ($2A)
 C6/D0AC: FF 76 88 0E  SBC $0E8876,X
 C6/D0B0: 5B           TCD
+Local_C6D0B1:
 C6/D0B1: 56 1B        LSR $1B,X
-C6/D0B3: 50 6B        BVC $D120
+C6/D0B3: 50 6B        BVC Routine_C6D120
 C6/D0B5: F2 4A        SBC ($4A)
 C6/D0B7: 6C 3B 2A     JMP ($2A3B)
 C6/D0BA: 19 0E 5B     ORA $5B0E,Y

@@ -5,21 +5,21 @@ C3/79BA: 7B           TDC
 C3/79BB: 68           PLA
 C3/79BC: E0 00        CPX #$00
 C3/79BE: 4F 81 25 14  EOR $142581
-C3/79C2: 10 47        BPL $7A0B
+C3/79C2: 10 47        BPL Local_C37A0B
 C3/79C4: BB           TYX
 C3/79C5: 51 9E        EOR ($9E),Y
 C3/79C7: 19 02 47     ORA $4702,Y
 C3/79CA: 0A           ASL
 C3/79CB: 19 52 5B     ORA $5B52,Y
 C3/79CE: 53 49        EOR ($49,S),Y
-C3/79D0: 4C 56 BA     JMP $BA56
+C3/79D0: 4C 56 BA     JMP Routine_C3BA56
 C3/79D3: 45 91        EOR $91
 C3/79D5: 12 4A        ORA ($4A)
 C3/79D7: 2B           PLD
 C3/79D8: 03 6A        ORA $6A,S
 C3/79DA: 12 28        ORA ($28)
 C3/79DC: 2D 54 28     AND $2854
-C3/79DF: 22 20 49 2F  JSR $2F4920
+C3/79DF: 22 20 49 2F  JSR Routine_2F4920
 C3/79E3: 44 5B 53     MVP $5B,$53
 C3/79E6: 45 09        EOR $09
 C3/79E8: 48           PHA
@@ -38,7 +38,8 @@ C3/7A03: 41 42        EOR ($42,X)
 C3/7A05: 52 9D        EOR ($9D)
 C3/7A07: 08           PHP
 C3/7A08: 4D 22 00     EOR $0022
-C3/7A0B: 50 42        BVC $7A4F
+Local_C37A0B:
+C3/7A0B: 50 42        BVC Local_C37A4F
 C3/7A0D: 55 44        EOR $44,X
 C3/7A0F: 44 3E 03     MVP $3E,$03
 C3/7A12: 46 1B        LSR $1B
@@ -51,7 +52,7 @@ C3/7A1F: 4F 44 45 04  EOR $044544
 C3/7A23: 18           CLC
 C3/7A24: 67 F1        ADC [$F1]
 C3/7A26: 15 1D        ORA $1D,X
-C3/7A28: 20 37 45     JSR $4537
+C3/7A28: 20 37 45     JSR Routine_C34537
 C3/7A2B: 00 00        BRK $00
 C3/7A2D: 00 00        BRK $00
 C3/7A2F: 00 00        BRK $00
@@ -70,6 +71,7 @@ C3/7A47: 00 00        BRK $00
 C3/7A49: 00 00        BRK $00
 C3/7A4B: 00 00        BRK $00
 C3/7A4D: 00 00        BRK $00
+Local_C37A4F:
 C3/7A4F: 00 00        BRK $00
 C3/7A51: 00 00        BRK $00
 C3/7A53: 00 00        BRK $00
@@ -809,7 +811,7 @@ C3/8009: 18           CLC
 C3/800A: 1D 0F 50     ORA $500F,X
 C3/800D: 00 02        BRK $02
 C3/800F: 15 34        ORA $34,X
-C3/8011: 20 01 03     JSR $0301
+C3/8011: 20 01 03     JSR Routine_C30301
 C3/8014: 02 0F        COP $0F
 C3/8016: 1A           INC
 C3/8017: 2F 10 5F B0  AND $B05F10

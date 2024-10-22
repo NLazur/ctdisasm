@@ -11,5 +11,5 @@ FE/741E: 08           PHP
 FE/741F: FF 00 FF 80  SBC $80FF00,X
 FE/7423: 00 00        BRK $00
 FE/7425: 00 80        BRK $80
-FE/7427: 80 C0        BRA $73E9
+FE/7427: 80 C0        BRA Routine_FE73E9
 FE/7429: 40           RTI

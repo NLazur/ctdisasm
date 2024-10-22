@@ -289,7 +289,8 @@ CC/C941: 00 08        BRK $08
 CC/C943: 00 01        BRK $01
 CC/C945: 00 05        BRK $05
 CC/C947: 00 FE        BRK $FE
-CC/C949: 10 00        BPL $C94B
+CC/C949: 10 00        BPL Local_CCC94B
+Local_CCC94B:
 CC/C94B: 01 01        ORA ($01,X)
 CC/C94D: FE 01 01     INC $0101,X
 CC/C950: 05 04        ORA $04

@@ -40,7 +40,7 @@ C6/A7BF: 42 40        WDM $40
 C6/A7C1: 01 75        ORA ($75,X)
 C6/A7C3: 04 5C        TSB $5C
 C6/A7C5: 04 60        TSB $60
-C6/A7C7: 10 95        BPL $A75E
+C6/A7C7: 10 95        BPL Routine_C6A75E
 C6/A7C9: 7E 21 6B     ROR $6B21,X
 C6/A7CC: E6 01        INC $01
 C6/A7CE: 6B           RTL

@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 2CE1
 Routine_D02CE1:
 D0/2CE1: C0 40 C0     CPY #$C040
-D0/2CE4: 20 E0 20     JSR $20E0
+D0/2CE4: 20 E0 20     JSR Routine_D020E0
 D0/2CE7: E0 2C        CPX #$2C
 D0/2CE9: 3F 13 1F 09  AND $091F13,X
 D0/2CED: 0F 04 07 03  ORA $030704
@@ -12,7 +12,7 @@ D0/2CF7: 00 06        BRK $06
 D0/2CF9: FE FF FF     INC $FFFF,X
 D0/2CFC: 00 00        BRK $00
 D0/2CFE: C0 C0 30     CPY #$30C0
-D0/2D01: F0 CC        BEQ $2CCF
+D0/2D01: F0 CC        BEQ Routine_D02CCF
 D0/2D03: FC 3B 3F     JSR ($3F3B,X)
 D0/2D06: 04 07        TSB $07
 D0/2D08: 00 00        BRK $00
@@ -21,7 +21,7 @@ D0/2D0C: 00 00        BRK $00
 D0/2D0E: 00 00        BRK $00
 D0/2D10: 00 00        BRK $00
 D0/2D12: 00 00        BRK $00
-D0/2D14: 80 80        BRA $2C96
+D0/2D14: 80 80        BRA Routine_D02C96
 D0/2D16: 78           SEI
 D0/2D17: F8           SED
 D0/2D18: 00 00        BRK $00
@@ -43,6 +43,6 @@ D0/2D39: E6 54        INC $54
 D0/2D3B: EC A8 58     CPX $58A8
 D0/2D3E: E8           INX
 D0/2D3F: 18           CLC
-D0/2D40: D0 30        BNE $2D72
+D0/2D40: D0 30        BNE Routine_D02D72
 D0/2D42: A0 60        LDY #$60
 D0/2D44: 40           RTI

@@ -2,14 +2,15 @@
 Routine_C22152:
 C2/2152: AD F6 1B     LDA $1BF6
 C2/2155: 89 02        BIT #$02
-C2/2157: D0 34        BNE $218D
+C2/2157: D0 34        BNE Routine_C2218D
 C2/2159: A6 4E        LDX $4E
 C2/215B: BD 03 00     LDA $0003,X
 C2/215E: DD 0A 00     CMP $000A,X
-C2/2161: 90 0A        BCC $216D
+C2/2161: 90 0A        BCC Local_C2216D
 C2/2163: FE 02 00     INC $0002,X
 C2/2166: 9E 03 00     STZ $0003,X
 C2/2169: 64 1C        STZ $1C
 C2/216B: E6 1D        INC $1D
+Local_C2216D:
 C2/216D: 18           CLC
 C2/216E: 60           RTS

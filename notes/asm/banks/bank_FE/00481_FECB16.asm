@@ -1,10 +1,11 @@
 ; Bank: FE | Start Address: CB16
 Routine_FECB16:
 FE/CB16: 6E 59 5A     ROR $5A59
-FE/CB19: 50 E0        BVC $CAFB
+FE/CB19: 50 E0        BVC Routine_FECAFB
 FE/CB1B: 56 5C        LSR $5C,X
 FE/CB1D: 5D 6D 6E     EOR $6E6D,X
 FE/CB20: 88           DEY
+Local_FECB21:
 FE/CB21: 27 D9        AND [$D9]
 FE/CB23: 37 DD        AND [$DD],Y
 FE/CB25: 27 3C        AND [$3C]
@@ -27,7 +28,7 @@ FE/CB47: 42 48        WDM $48
 FE/CB49: 0A           ASL
 FE/CB4A: 00 B7        BRK $B7
 FE/CB4C: 3B           TSC
-FE/CB4D: 50 D2        BVC $CB21
+FE/CB4D: 50 D2        BVC Local_FECB21
 FE/CB4F: 63 D1        ADC $D1,S
 FE/CB51: 73 49        ADC ($49,S),Y
 FE/CB53: 98           TYA
@@ -44,7 +45,7 @@ FE/CB63: 3F 48 55 28  AND $285548,X
 FE/CB67: E8           INX
 FE/CB68: 17 45        ORA [$45],Y
 FE/CB6A: BF 84 08 7E  LDA $7E0884,X
-FE/CB6E: 10 E8        BPL $CB58
+FE/CB6E: 10 E8        BPL Routine_FECB58
 FE/CB70: 23 FA        AND $FA,S
 FE/CB72: 07 00        ORA [$00]
 FE/CB74: 08           PHP
@@ -86,9 +87,10 @@ FE/CBBB: 23 0E        AND $0E,S
 FE/CBBD: CB           WAI
 FE/CBBE: 0A           ASL
 FE/CBBF: 3F 17 08 14  AND $140817,X
-FE/CBC3: 10 A8        BPL $CB6D
+Local_FECBC3:
+FE/CBC3: 10 A8        BPL Routine_FECB6D
 FE/CBC5: 1C 08 70     TRB $7008
-FE/CBC8: 20 38 32     JSR $3238
+FE/CBC8: 20 38 32     JSR Routine_FE3238
 FE/CBCB: 4B           PHK
 FE/CBCC: 08           PHP
 FE/CBCD: 26 08        ROL $08
@@ -113,6 +115,6 @@ FE/CBF1: 00 08        BRK $08
 FE/CBF3: 18           CLC
 FE/CBF4: 4B           PHK
 FE/CBF5: 38           SEC
-FE/CBF6: 10 CB        BPL $CBC3
+FE/CBF6: 10 CB        BPL Local_FECBC3
 FE/CBF8: 07 5E        ORA [$5E]
 FE/CBFA: 40           RTI

@@ -60,7 +60,7 @@ CD/4EDC: 04 00        TSB $00
 CD/4EDE: 19 C0 C4     ORA $C4C0,Y
 CD/4EE1: 08           PHP
 CD/4EE2: 04 00        TSB $00
-CD/4EE4: 50 47        BVC $4F2D
+CD/4EE4: 50 47        BVC Local_CD4F2D
 CD/4EE6: 00 3F        BRK $3F
 CD/4EE8: 33 33        AND ($33,S),Y
 CD/4EEA: 03 C0        ORA $C0,S
@@ -95,6 +95,7 @@ CD/4F26: 25 00        AND $00
 CD/4F28: 00 00        BRK $00
 CD/4F2A: 00 00        BRK $00
 CD/4F2C: 5A           PHY
+Local_CD4F2D:
 CD/4F2D: 00 00        BRK $00
 CD/4F2F: 00 00        BRK $00
 CD/4F31: 00 5C        BRK $5C
@@ -214,6 +215,7 @@ CD/500F: 00 76        BRK $76
 CD/5011: 00 00        BRK $00
 CD/5013: 00 00        BRK $00
 CD/5015: 00 76        BRK $76
+Local_CD5017:
 CD/5017: 00 00        BRK $00
 CD/5019: 00 00        BRK $00
 CD/501B: 00 4D        BRK $4D
@@ -336,10 +338,10 @@ CD/510D: 00 00        BRK $00
 CD/510F: 01 00        ORA ($00,X)
 CD/5111: 00 60        BRK $60
 CD/5113: 06 00        ASL $00
-CD/5115: 30 23        BMI $513A
+CD/5115: 30 23        BMI Routine_CD513A
 CD/5117: 23 60        AND $60,S
 CD/5119: 06 00        ASL $00
-CD/511B: 30 23        BMI $5140
+CD/511B: 30 23        BMI Routine_CD5140
 CD/511D: 23 23        AND $23,S
 CD/511F: 00 00        BRK $00
 CD/5121: 01 00        ORA ($00,X)
@@ -411,10 +413,10 @@ CD/51A3: F8           SED
 CD/51A4: 00 16        BRK $16
 CD/51A6: 1F 17 1B F8  ORA $F81B17,X
 CD/51AA: 00 16        BRK $16
-CD/51AC: 20 17 1B     JSR $1B17
+CD/51AC: 20 17 1B     JSR Routine_CD1B17
 CD/51AF: F8           SED
 CD/51B0: 00 16        BRK $16
-CD/51B2: 20 17 50     JSR $5017
+CD/51B2: 20 17 50     JSR Local_CD5017
 CD/51B5: 00 00        BRK $00
 CD/51B7: 01 00        ORA ($00,X)
 CD/51B9: 00 50        BRK $50
@@ -455,7 +457,7 @@ CD/5200: 00 00        BRK $00
 CD/5202: 64 00        STZ $00
 CD/5204: 00 00        BRK $00
 CD/5206: 00 00        BRK $00
-CD/5208: 5C 00 00 00  JMP $000000
+CD/5208: 5C 00 00 00  JMP Routine_000000
 CD/520C: 00 00        BRK $00
 CD/520E: 0D 48 00     ORA $0048
 CD/5211: 3A           DEC
@@ -590,7 +592,7 @@ CD/531A: 00 00        BRK $00
 CD/531C: 03 00        ORA $00,S
 CD/531E: 00 01        BRK $01
 CD/5320: 00 00        BRK $00
-CD/5322: 5C 00 00 00  JMP $000000
+CD/5322: 5C 00 00 00  JMP Routine_000000
 CD/5326: 00 00        BRK $00
 CD/5328: 43 00        EOR $00,S
 CD/532A: 00 01        BRK $01
@@ -674,7 +676,7 @@ CD/53C9: 08           PHP
 CD/53CA: 06 C8        ASL $C8
 CD/53CC: CC 03 08     CPY $0803
 CD/53CF: 08           PHP
-CD/53D0: 30 C0        BMI $5392
+CD/53D0: 30 C0        BMI Routine_CD5392
 CD/53D2: C4 09        CPY $09
 CD/53D4: 45 45        EOR $45
 CD/53D6: 03 00        ORA $00,S
@@ -870,7 +872,7 @@ CD/5556: FF 07 C0 C4  SBC $C4C007,X
 CD/555A: 08           PHP
 CD/555B: 04 00        TSB $00
 CD/555D: FF 08 06 00  SBC $000608,X
-CD/5561: 30 23        BMI $5586
+CD/5561: 30 23        BMI Routine_CD5586
 CD/5563: 23 FF        AND $FF,S
 CD/5565: 09 C4        ORA #$C4
 CD/5567: 00 07        BRK $07

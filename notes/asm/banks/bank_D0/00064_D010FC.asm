@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 10FC
 Routine_D010FC:
-D0/10FC: 80 80        BRA $107E
+D0/10FC: 80 80        BRA Routine_D0107E
 D0/10FE: 00 80        BRK $80
 D0/1100: 91 B1        STA ($B1),Y
 D0/1102: 12 12        ORA ($12)

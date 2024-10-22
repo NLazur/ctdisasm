@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: A8CB
 Routine_D0A8CB:
-D0/A8CB: 20 30 10     JSR $1030
+D0/A8CB: 20 30 10     JSR Routine_D01030
 D0/A8CE: 00 10        BRK $10
 D0/A8D0: 00 00        BRK $00
 D0/A8D2: 00 00        BRK $00
@@ -14,18 +14,18 @@ D0/A8DF: 00 00        BRK $00
 D0/A8E1: 00 00        BRK $00
 D0/A8E3: 00 00        BRK $00
 D0/A8E5: 00 00        BRK $00
-D0/A8E7: 80 40        BRA $A929
-D0/A8E9: 20 20 00     JSR $0020
+D0/A8E7: 80 40        BRA Routine_D0A929
+D0/A8E9: 20 20 00     JSR Routine_D00020
 D0/A8EC: 00 10        BRK $10
-D0/A8EE: 90 80        BCC $A870
+D0/A8EE: 90 80        BCC Routine_D0A870
 D0/A8F0: 00 00        BRK $00
 D0/A8F2: 00 00        BRK $00
 D0/A8F4: 03 00        ORA $00,S
 D0/A8F6: 04 03        TSB $03
 D0/A8F8: 18           CLC
 D0/A8F9: 04 20        TSB $20
-D0/A8FB: 10 40        BPL $A93D
-D0/A8FD: 20 80 40     JSR $4080
+D0/A8FB: 10 40        BPL Routine_D0A93D
+D0/A8FD: 20 80 40     JSR Routine_D04080
 D0/A900: 0F 00 70 0F  ORA $0F7000
 D0/A904: A0 60        LDY #$60
 D0/A906: 00 00        BRK $00

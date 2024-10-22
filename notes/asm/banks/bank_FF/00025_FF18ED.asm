@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: 18ED
 Routine_FF18ED:
 FF/18ED: 61 BB        ADC ($BB,X)
-FF/18EF: 80 BD        BRA $18AE
+FF/18EF: 80 BD        BRA Routine_FF18AE
 FF/18F1: C2 5E        REP #$5E
 FF/18F3: E1 3B        SBC ($3B,X)
 FF/18F5: FC 7E BF     JSR ($BF7E,X)
@@ -64,10 +64,10 @@ FF/1971: 07 DC        ORA [$DC]
 FF/1973: 03 79        ORA $79,S
 FF/1975: 86 86        STX $86
 FF/1977: 78           SEI
-FF/1978: 4C 30 80     JMP $8030
+FF/1978: 4C 30 80     JMP Routine_FF8030
 FF/197B: 00 C0        BRK $C0
 FF/197D: 00 7F        BRK $7F
-FF/197F: 80 63        BRA $19E4
+FF/197F: 80 63        BRA Local_FF19E4
 FF/1981: 4B           PHK
 FF/1982: BC 2C C7     LDY $C72C,X
 FF/1985: BF FE 0A FF  LDA $FF0AFE,X
@@ -85,8 +85,8 @@ FF/199C: 02 01        COP $01
 FF/199E: 05 02        ORA $02
 FF/19A0: A7 00        LDA [$00]
 FF/19A2: B4 A3        LDY $A3,X
-FF/19A4: 50 4B        BVC $19F1
-FF/19A6: 20 BD 10     JSR $10BD
+FF/19A4: 50 4B        BVC Routine_FF19F1
+FF/19A6: 20 BD 10     JSR Routine_FF10BD
 FF/19A9: 11 0D        ORA ($0D),Y
 FF/19AB: E8           INX
 FF/19AC: A6 B4        LDX $B4
@@ -103,15 +103,16 @@ FF/19C6: 84 7B        STY $7B
 FF/19C8: 06 F9        ASL $F9
 FF/19CA: 4E B1 8E     LSR $8EB1
 FF/19CD: F1 0F        SBC ($0F),Y
-FF/19CF: 30 F8        BMI $19C9
+FF/19CF: 30 F8        BMI Routine_FF19C9
 FF/19D1: 00 FC        BRK $FC
 FF/19D3: 00 FC        BRK $FC
 FF/19D5: 00 EC        BRK $EC
-FF/19D7: 10 DE        BPL $19B7
+FF/19D7: 10 DE        BPL Routine_FF19B7
 FF/19D9: E0 1E C0     CPX #$C01E
 FF/19DC: FE 60 5F     INC $5F60,X
 FF/19DF: E0 F2 0D     CPX #$0DF2
 FF/19E2: F5 0B        SBC $0B,X
+Local_FF19E4:
 FF/19E4: E0 1D A8     CPX #$A81D
 FF/19E7: 54 12 E9     MVN $12,$E9
 FF/19EA: 24 D9        BIT $D9
@@ -124,7 +125,7 @@ FF/19F6: 0C 03 19     TSB $1903
 FF/19F9: 06 39        ASL $39
 FF/19FB: 06 73        ASL $73
 FF/19FD: 0C E3 1C     TSB $1CE3
-FF/1A00: 22 C7 87 9F  JSR $9F87C7
+FF/1A00: 22 C7 87 9F  JSR Routine_9F87C7
 FF/1A04: 47 4E        EOR [$4E]
 FF/1A06: 57 C8        EOR [$C8],Y
 FF/1A08: B7 2C        LDA [$2C],Y

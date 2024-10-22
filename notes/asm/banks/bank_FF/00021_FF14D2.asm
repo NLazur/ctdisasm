@@ -3,12 +3,14 @@ Routine_FF14D2:
 FF/14D2: C3 00        CMP $00,S
 FF/14D4: 43 00        EOR $00,S
 FF/14D6: 00 00        BRK $00
-FF/14D8: 80 00        BRA $14DA
+FF/14D8: 80 00        BRA Local_FF14DA
+Local_FF14DA:
 FF/14DA: E3 C1        SBC $C1,S
 FF/14DC: BC FF 57     LDY $57FF,X
 FF/14DF: FA           PLX
 FF/14E0: 45 B9        EOR $B9
 FF/14E2: AF F3 4F E7  LDA $E74FF3
+Local_FF14E6:
 FF/14E6: 8F D7 1F 83  STA $831FD7
 FF/14EA: 7F 30 5F EC  ADC $EC5F30,X
 FF/14EE: BF D2 FA 83  LDA $83FAD2,X
@@ -17,8 +19,8 @@ FF/14F4: B7 17        LDA [$17],Y
 FF/14F6: 77 27        ADC [$27],Y
 FF/14F8: F3 43        SBC ($43,S),Y
 FF/14FA: C8           INY
-FF/14FB: 80 A0        BRA $149D
-FF/14FD: 10 54        BPL $1553
+FF/14FB: 80 A0        BRA Routine_FF149D
+FF/14FD: 10 54        BPL Routine_FF1553
 FF/14FF: 18           CLC
 FF/1500: D6 8D        DEC $8D,X
 FF/1502: 8E 10 87     STX $8710
@@ -38,7 +40,7 @@ FF/1526: 61 CC        ADC ($CC,X)
 FF/1528: B8           CLV
 FF/1529: 62 FD 3C     PER $FF5229
 FF/152C: 9F 71 BF 6E  STA $6EBF71,X
-FF/1530: 70 80        BVS $14B2
+FF/1530: 70 80        BVS Routine_FF14B2
 FF/1532: 34 C8        BIT $C8,X
 FF/1534: C2 FC        REP #$FC
 FF/1536: D3 DE        CMP ($DE,S),Y
@@ -51,27 +53,28 @@ FF/1545: C7 E2        CMP [$E2]
 FF/1547: C3 D0        CMP $D0,S
 FF/1549: 61 71        ADC ($71,X)
 FF/154B: E1 FC        SBC ($FC,X)
-FF/154D: 20 B2 70     JSR $70B2
-FF/1550: D0 60        BNE $15B2
-FF/1552: 50 60        BVC $15B4
+FF/154D: 20 B2 70     JSR Routine_FF70B2
+FF/1550: D0 60        BNE Local_FF15B2
+FF/1552: 50 60        BVC Local_FF15B4
 FF/1554: 68           PLA
-FF/1555: 30 0C        BMI $1563
-FF/1557: 10 B6        BPL $150F
+FF/1555: 30 0C        BMI Local_FF1563
+FF/1557: 10 B6        BPL Routine_FF150F
 FF/1559: 18           CLC
 FF/155A: 12 9C        ORA ($9C)
 FF/155C: 4D 1E 4E     EOR $4E1E
 FF/155F: 0F 00 00 88  ORA $880000
+Local_FF1563:
 FF/1563: 88           DEY
-FF/1564: 80 80        BRA $14E6
+FF/1564: 80 80        BRA Local_FF14E6
 FF/1566: 84 84        STY $84
 FF/1568: 04 84        TSB $84
 FF/156A: 44 C4 42     MVP $C4,$42
 FF/156D: C6 C2        DEC $C2
 FF/156F: C6 EE        DEC $EE
 FF/1571: 11 67        ORA ($67),Y
-FF/1573: 10 6F        BPL $15E4
-FF/1575: 10 6B        BPL $15E2
-FF/1577: 10 7B        BPL $15F4
+FF/1573: 10 6F        BPL Routine_FF15E4
+FF/1575: 10 6B        BPL Local_FF15E2
+FF/1577: 10 7B        BPL Routine_FF15F4
 FF/1579: 00 3B        BRK $3B
 FF/157B: 00 39        BRK $39
 FF/157D: 00 38        BRK $38
@@ -89,14 +92,17 @@ FF/1596: 59 E9 43     EOR $43E9,Y
 FF/1599: D3 57        CMP ($57,S),Y
 FF/159B: D7 AF        CMP [$AF],Y
 FF/159D: CF BF BF 7F  CMP $7FBFBF
-FF/15A1: B0 FE        BCS $15A1
+Local_FF15A1:
+FF/15A1: B0 FE        BCS Local_FF15A1
 FF/15A3: 31 FF        AND ($FF),Y
-FF/15A5: 10 FF        BPL $15A6
+FF/15A5: 10 FF        BPL Routine_FF15A6
 FF/15A7: E0 3F F8     CPX #$F83F
 FF/15AA: 0F F8 C6 39  ORA $39C6F8
 FF/15AE: 02 FD        COP $FD
 FF/15B0: B3 34        LDA ($34,S),Y
+Local_FF15B2:
 FF/15B2: 31 30        AND ($30),Y
+Local_FF15B4:
 FF/15B4: 11 11        ORA ($11),Y
 FF/15B6: E0 E0 F9     CPX #$F9E0
 FF/15B9: F9 F8 F8     SBC $F8F8,Y
@@ -117,13 +123,14 @@ FF/15D7: E7 D5        SBC [$D5]
 FF/15D9: EF E9 9F D1  SBC $D19FE9
 FF/15DD: 39 C1 21     AND $21C1,Y
 FF/15E0: C1 7F        CMP ($7F,X)
+Local_FF15E2:
 FF/15E2: B8           CLV
 FF/15E3: 47 BB        EOR [$BB]
-FF/15E5: 4C B5 4E     JMP $4EB5
+FF/15E5: 4C B5 4E     JMP Routine_FF4EB5
 FF/15E8: FB           XCE
 FF/15E9: 47 FE        EOR [$FE]
 FF/15EB: C1 FF        CMP ($FF,X)
-FF/15ED: 80 FF        BRA $15EE
+FF/15ED: 80 FF        BRA Routine_FF15EE
 FF/15EF: A0 FF FF     LDY #$FFFF
 FF/15F2: FF FF FF FF  SBC $FFFFFF,X
 FF/15F6: FF FF FF FF  SBC $FFFFFF,X
@@ -141,13 +148,13 @@ FF/1612: 85 A7        STA $A7
 FF/1614: C6 D3        DEC $D3
 FF/1616: EB           XBA
 FF/1617: E1 F5        SBC ($F5,X)
-FF/1619: F0 FF        BEQ $161A
+FF/1619: F0 FF        BEQ Routine_FF161A
 FF/161B: FC FC FD     JSR ($FDFC,X)
 FF/161E: FC FC 05     JSR ($05FC,X)
 FF/1621: 04 91        TSB $91
-FF/1623: 10 43        BPL $1668
+FF/1623: 10 43        BPL Routine_FF1668
 FF/1625: 00 3F        BRK $3F
-FF/1627: 80 8E        BRA $15B7
+FF/1627: 80 8E        BRA Routine_FF15B7
 FF/1629: F5 7D        SBC $7D,X
 FF/162B: 8A           TXA
 FF/162C: 52 BD        EOR ($BD)
@@ -158,7 +165,7 @@ FF/1637: FE 8F FD     INC $FD8F,X
 FF/163A: F6 72        INC $72,X
 FF/163C: CD 05 F3     CMP $F305
 FF/163F: F3 AF        SBC ($AF,S),Y
-FF/1641: 50 EE        BVC $1631
+FF/1641: 50 EE        BVC Routine_FF1631
 FF/1643: 91 64        STA ($64),Y
 FF/1645: 9B           TXY
 FF/1646: 7C BF E0     JMP ($E0BF,X)
@@ -189,8 +196,8 @@ FF/168B: 5D 59 58     EOR $5859,X
 FF/168E: 5B           TCD
 FF/168F: 5A           PHY
 FF/1690: 78           SEI
-FF/1691: 80 70        BRA $1703
-FF/1693: 80 F0        BRA $1685
+FF/1691: 80 70        BRA Local_FF1703
+FF/1693: 80 F0        BRA Routine_FF1685
 FF/1695: 00 E1        BRK $E1
 FF/1697: 00 E3        BRK $E3
 FF/1699: 00 E3        BRK $E3
@@ -206,8 +213,8 @@ FF/16AD: 41 7E        EOR ($7E,X)
 FF/16AF: 43 34        EOR $34,S
 FF/16B1: 08           PHP
 FF/16B2: 28           PLP
-FF/16B3: 10 A0        BPL $1655
-FF/16B5: 10 90        BPL $1647
+FF/16B3: 10 A0        BPL Routine_FF1655
+FF/16B5: 10 90        BPL Routine_FF1647
 FF/16B7: 00 81        BRK $81
 FF/16B9: 00 81        BRK $81
 FF/16BB: 00 82        BRK $82
@@ -244,7 +251,8 @@ FF/16F9: 3C 37 B8     BIT $B837,X
 FF/16FC: 42 BC        WDM $BC
 FF/16FE: E5 1E        SBC $1E
 FF/1700: 0E 72 D3     ASL $D372
-FF/1703: 50 65        BVC $176A
+Local_FF1703:
+FF/1703: 50 65        BVC Routine_FF176A
 FF/1705: A5 98        LDA $98
 FF/1707: 9A           TXS
 FF/1708: 76 7F        ROR $7F,X
@@ -298,14 +306,15 @@ FF/1779: 03 89        ORA $89,S
 FF/177B: 02 89        COP $89
 FF/177D: 02 89        COP $89
 FF/177F: 02 0F        COP $0F
-FF/1781: B0 10        BCS $1793
+FF/1781: B0 10        BCS Routine_FF1793
 FF/1783: 6F 10 EF 21  ADC $21EF10
 FF/1787: DE 21 DE     DEC $DE21,X
 FF/178A: 21 DE        AND ($DE,X)
 FF/178C: 21 DE        AND ($DE,X)
 FF/178E: 41 BE        EOR ($BE,X)
 FF/1790: 3F C0 70 80  AND $8070C0,X
-FF/1794: F0 00        BEQ $1796
+FF/1794: F0 00        BEQ Local_FF1796
+Local_FF1796:
 FF/1796: E0 00 E0     CPX #$E000
 FF/1799: 00 E0        BRK $E0
 FF/179B: 00 E0        BRK $E0
@@ -334,15 +343,17 @@ FF/17CA: 9D 75 4B     STA $4B75,X
 FF/17CD: 23 1F        AND $1F,S
 FF/17CF: 33 90        AND ($90,S),Y
 FF/17D1: 00 58        BRK $58
-FF/17D3: 80 8C        BRA $1761
+FF/17D3: 80 8C        BRA Routine_FF1761
 FF/17D5: C0 6C C0     CPY #$C06C
 FF/17D8: 0C E0 06     TSB $06E0
 FF/17DB: E0 16 E0     CPX #$E016
 FF/17DE: 92 60        STA ($60)
+Local_FF17E0:
 FF/17E0: BA           TSX
 FF/17E1: AA           TAX
 FF/17E2: FA           PLX
 FF/17E3: 6A           ROR
+Local_FF17E4:
 FF/17E4: D8           CLD
 FF/17E5: 48           PHA
 FF/17E6: FC 34 FE     JSR ($FE34,X)
@@ -350,9 +361,9 @@ FF/17E9: 36 EE        ROL $EE,X
 FF/17EB: 06 EF        ASL $EF
 FF/17ED: 07 FD        ORA [$FD]
 FF/17EF: 87 6D        STA [$6D]
-FF/17F1: 10 2D        BPL $1820
-FF/17F3: 10 2F        BPL $1824
-FF/17F5: 10 17        BPL $180E
+FF/17F1: 10 2D        BPL Routine_FF1820
+FF/17F3: 10 2F        BPL Routine_FF1824
+FF/17F5: 10 17        BPL Local_FF180E
 FF/17F7: 08           PHP
 FF/17F8: 17 08        ORA [$08],Y
 FF/17FA: 17 08        ORA [$08],Y
@@ -365,6 +376,7 @@ FF/1806: B1 FF        LDA ($FF),Y
 FF/1808: B9 D2 B8     LDA $B8D2,Y
 FF/180B: D5 DC        CMP $DC,X
 FF/180D: BA           TSX
+Local_FF180E:
 FF/180E: 4E DC 35     LSR $35DC
 FF/1811: CA           DEX
 FF/1812: 31 CE        AND ($CE),Y
@@ -375,9 +387,9 @@ FF/181A: 92 6F        STA ($6F)
 FF/181C: 99 67 6D     STA $6D67,Y
 FF/181F: B3 78        LDA ($78,S),Y
 FF/1821: 73 3A        ADC ($3A,S),Y
-FF/1823: 30 3A        BMI $185F
-FF/1825: 30 B9        BMI $17E0
-FF/1827: B0 BB        BCS $17E4
+FF/1823: 30 3A        BMI Routine_FF185F
+FF/1825: 30 B9        BMI Local_FF17E0
+FF/1827: B0 BB        BCS Local_FF17E4
 FF/1829: B2 BD        LDA ($BD)
 FF/182B: B4 DD        LDY $DD,X
 FF/182D: D8           CLD

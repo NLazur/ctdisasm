@@ -1,6 +1,6 @@
 ; Bank: C3 | Start Address: D185
 Routine_C3D185:
-C3/D185: 70 5E        BVS $D1E5
+C3/D185: 70 5E        BVS Routine_C3D1E5
 C3/D187: BF 17 99 08  LDA $089917,X
 C3/D18B: 12 D6        ORA ($D6)
 C3/D18D: 21 20        AND ($20,X)

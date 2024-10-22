@@ -1,26 +1,28 @@
 ; Bank: D0 | Start Address: AE68
 Routine_D0AE68:
-D0/AE68: 10 30        BPL $AE9A
-D0/AE6A: 20 30 08     JSR $0830
+D0/AE68: 10 30        BPL Routine_D0AE9A
+D0/AE6A: 20 30 08     JSR Routine_D00830
 D0/AE6D: 18           CLC
-D0/AE6E: 10 18        BPL $AE88
+D0/AE6E: 10 18        BPL Local_D0AE88
 D0/AE70: 1C 13 1C     TRB $1C13
 D0/AE73: 13 0C        ORA ($0C,S),Y
 D0/AE75: 13 0C        ORA ($0C,S),Y
 D0/AE77: 13 2C        ORA ($2C,S),Y
 D0/AE79: 33 0D        AND ($0D,S),Y
 D0/AE7B: 33 1C        AND ($1C,S),Y
-D0/AE7D: 22 58 66 C4  JSR $C46658
+D0/AE7D: 22 58 66 C4  JSR Routine_C46658
 D0/AE81: FC 08 0F     JSR ($0F08,X)
 D0/AE84: 03 03        ORA $03,S
+Local_D0AE86:
 D0/AE86: 00 00        BRK $00
+Local_D0AE88:
 D0/AE88: 00 00        BRK $00
 D0/AE8A: 00 00        BRK $00
 D0/AE8C: 00 00        BRK $00
 D0/AE8E: 00 00        BRK $00
 D0/AE90: 00 00        BRK $00
-D0/AE92: 80 80        BRA $AE14
-D0/AE94: 10 F0        BPL $AE86
+D0/AE92: 80 80        BRA Routine_D0AE14
+D0/AE94: 10 F0        BPL Local_D0AE86
 D0/AE96: C4 FC        CPY $FC
 D0/AE98: 29 37 14     AND #$1437
 D0/AE9B: 1B           TCS
@@ -33,7 +35,7 @@ D0/AEA6: 00 00        BRK $00
 D0/AEA8: 00 00        BRK $00
 D0/AEAA: 00 80        BRK $80
 D0/AEAC: 00 C0        BRK $C0
-D0/AEAE: 80 60        BRA $AF10
+D0/AEAE: 80 60        BRA Local_D0AF10
 D0/AEB0: 06 07        ASL $07
 D0/AEB2: 1B           TCS
 D0/AEB3: 1C 27 38     TRB $3827
@@ -42,7 +44,7 @@ D0/AEBA: 72 8E        ADC ($8E)
 D0/AEBC: C8           INY
 D0/AEBD: 38           SEC
 D0/AEBE: A0 60 7F     LDY #$7F60
-D0/AEC1: 80 FF        BRA $AEC2
+D0/AEC1: 80 FF        BRA Routine_D0AEC2
 D0/AEC3: 00 E0        BRK $E0
 D0/AEC5: 1F 18 F8 C0  ORA $C0F818,X
 D0/AEC9: C0 00 00     CPY #$0000
@@ -80,7 +82,8 @@ D0/AF0A: E8           INX
 D0/AF0B: 18           CLC
 D0/AF0C: E8           INX
 D0/AF0D: 18           CLC
-D0/AF0E: D0 30        BNE $AF40
+D0/AF0E: D0 30        BNE Local_D0AF40
+Local_D0AF10:
 D0/AF10: C0 30 60     CPY #$6030
 D0/AF13: 98           TYA
 D0/AF14: B4 CC        LDY $CC,X
@@ -95,8 +98,8 @@ D0/AF24: 15 1B        ORA $1B,X
 D0/AF26: 0A           ASL
 D0/AF27: 16 24        ASL $24,X
 D0/AF29: 3C 08 38     BIT $3808,X
-D0/AF2C: 10 30        BPL $AF5E
-D0/AF2E: 50 70        BVC $AFA0
+D0/AF2C: 10 30        BPL Routine_D0AF5E
+D0/AF2E: 50 70        BVC Routine_D0AFA0
 D0/AF30: 16 19        ASL $19,X
 D0/AF32: 17 18        ORA [$18],Y
 D0/AF34: 07 08        ORA [$08]
@@ -105,6 +108,7 @@ D0/AF37: 0C 0B 0C     TSB $0C0B
 D0/AF3A: 03 04        ORA $04,S
 D0/AF3C: 03 04        ORA $04,S
 D0/AF3E: 03 04        ORA $04,S
-D0/AF40: 80 80        BRA $AEC2
+Local_D0AF40:
+D0/AF40: 80 80        BRA Routine_D0AEC2
 D0/AF42: 00 80        BRK $80
 D0/AF44: 40           RTI

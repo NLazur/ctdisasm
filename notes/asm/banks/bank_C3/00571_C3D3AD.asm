@@ -31,7 +31,7 @@ C3/D3E5: 14 31        TRB $31
 C3/D3E7: 46 18        LSR $18
 C3/D3E9: 63 73        ADC $73,S
 C3/D3EB: 00 52        BRK $52
-C3/D3ED: 30 46        BMI $D435
+C3/D3ED: 30 46        BMI Local_C3D435
 C3/D3EF: CD 39 4A     CMP $4A39
 C3/D3F2: 29 09        AND #$09
 C3/D3F4: 00 1D        BRK $1D
@@ -53,9 +53,9 @@ C3/D415: 84 14        STY $14
 C3/D417: DA           PHX
 C3/D418: 46 00        LSR $00
 C3/D41A: 13 3A        ORA ($3A,S),Y
-C3/D41C: 90 31        BCC $D44F
+C3/D41C: 90 31        BCC Local_C3D44F
 C3/D41E: 2D 21 DC     AND $DC21
-C3/D421: 22 00 D3 0D  JSR $0DD300
+C3/D421: 22 00 D3 0D  JSR Routine_0DD300
 C3/D425: 0E 11 5E     ASL $5E11
 C3/D428: 59 B4 68     EOR $68B4,Y
 C3/D42B: 00 55        BRK $55
@@ -63,10 +63,11 @@ C3/D42D: 3A           DEC
 C3/D42E: D1 2D        CMP ($2D),Y
 C3/D430: 6D 21 EA     ADC $EA21
 C3/D433: 14 00        TRB $00
+Local_C3D435:
 C3/D435: A7 10        LDA [$10]
 C3/D437: 85 10        STA $10
 C3/D439: B1 48        LDA ($48),Y
-C3/D43B: 4C 62 10     JMP $1062
+C3/D43B: 4C 62 10     JMP Routine_C31062
 C3/D43E: 4A           LSR
 C3/D43F: 4D A6 24     EOR $24A6
 C3/D442: C8           INY
@@ -77,6 +78,7 @@ C3/D448: 21 00        AND ($00,X)
 C3/D44A: 00 F9        BRK $F9
 C3/D44C: 5A           PHY
 C3/D44D: B3 25        LDA ($25,S),Y
+Local_C3D44F:
 C3/D44F: 52 00        EOR ($00)
 C3/D451: 15 2E        ORA $2E,X
 C3/D453: 1D 2E 15     ORA $152E,X
@@ -86,7 +88,7 @@ C3/D459: C0 14        CPY #$14
 C3/D45B: 88           DEY
 C3/D45C: 0C C7 10     TSB $10C7
 C3/D45F: 85 E8        STA $E8
-C3/D461: 20 20 10     JSR $1020
+C3/D461: 20 20 10     JSR Routine_C31020
 C3/D464: 08           PHP
 C3/D465: 38           SEC
 C3/D466: FF 7F 02 08  SBC $08027F,X
@@ -129,7 +131,7 @@ C3/D4BA: 01 B6        ORA ($B6,X)
 C3/D4BC: 00 51        BRK $51
 C3/D4BE: 00 0E        BRK $0E
 C3/D4C0: E1 22        SBC ($22,X)
-C3/D4C2: 10 04        BPL $D4C8
+C3/D4C2: 10 04        BPL Routine_C3D4C8
 C3/D4C4: 00 05        BRK $05
 C3/D4C6: 19 21 00     ORA $0021,Y
 C3/D4C9: 01 F8        ORA ($F8,X)

@@ -2,6 +2,7 @@
 Routine_FDE98F:
 FD/E98F: B9 22 05     LDA $0522,Y
 FD/E992: A8           TAY
+Local_FDE993:
 FD/E993: C2 20        REP #$20
 FD/E995: BF 00 20 7E  LDA $7E2000,X
 FD/E999: 29 E0 03     AND #$03E0
@@ -27,5 +28,5 @@ FD/E9C2: E2 20        SEP #$20
 FD/E9C4: E8           INX
 FD/E9C5: E8           INX
 FD/E9C6: 88           DEY
-FD/E9C7: D0 CA        BNE $E993
+FD/E9C7: D0 CA        BNE Local_FDE993
 FD/E9C9: 60           RTS

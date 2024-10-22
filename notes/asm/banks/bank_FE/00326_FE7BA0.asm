@@ -14,7 +14,7 @@ FE/7BB4: 33 58        AND ($58,S),Y
 FE/7BB6: 16 EF        ASL $EF,X
 FE/7BB8: A0 52        LDY #$52
 FE/7BBA: 0E 16 08     ASL $0816
-FE/7BBD: 20 C8 52     JSR $52C8
+FE/7BBD: 20 C8 52     JSR Routine_FE52C8
 FE/7BC0: 24 78        BIT $78
 FE/7BC2: 23 50        AND $50,S
 FE/7BC4: 11 9A        ORA ($9A),Y

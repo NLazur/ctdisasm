@@ -19,7 +19,7 @@ C3/DC08: 85 04        STA $04
 C3/DC0A: 00 43        BRK $43
 C3/DC0C: 04 B0        TSB $B0
 C3/DC0E: 38           SEC
-C3/DC0F: B0 38        BCS $DC49
+C3/DC0F: B0 38        BCS Routine_C3DC49
 C3/DC11: 52 4A        EOR ($4A)
 C3/DC13: 49 1E        EOR #$1E
 C3/DC15: 18           CLC
@@ -35,7 +35,7 @@ C3/DC27: 1E 18 8E     ASL $8E18,X
 C3/DC2A: 1D 25 1E     ORA $1E25,X
 C3/DC2D: 18           CLC
 C3/DC2E: C8           INY
-C3/DC2F: 20 20 31     JSR $3120
+C3/DC2F: 20 20 31     JSR Routine_C33120
 C3/DC32: 46 1E        LSR $1E
 C3/DC34: 18           CLC
 C3/DC35: 13 36        ORA ($36,S),Y
@@ -45,7 +45,7 @@ C3/DC3B: 1E 18 4E     ASL $4E18,X
 C3/DC3E: 15 1E        ORA $1E,X
 C3/DC40: 18           CLC
 C3/DC41: A7 40        LDA [$40]
-C3/DC43: 20 40 70     JSR $7040
+C3/DC43: 20 40 70     JSR Routine_C37040
 C3/DC46: 00 00        BRK $00
 C3/DC48: B5 49        LDA $49,X
 C3/DC4A: D8           CLD
@@ -56,19 +56,19 @@ C3/DC52: 35 E2        AND $E2,X
 C3/DC54: 2C C2 2C     BIT $2CC2
 C3/DC57: A3 2C        LDA $2C,S
 C3/DC59: 00 A3        BRK $A3
-C3/DC5B: 20 83 20     JSR $2083
+C3/DC5B: 20 83 20     JSR Routine_C32083
 C3/DC5E: 83 1C        STA $1C,S
 C3/DC60: 63 1C        ADC $1C,S
 C3/DC62: 00 1B        BRK $1B
 C3/DC64: 6E 38 67     ROR $6738
 C3/DC67: B4 66        LDY $66,X
 C3/DC69: 86 35        STX $35
-C3/DC6B: 4C 00 38     JMP $3800
-C3/DC6E: 20 18 1E     JSR $1E18
+C3/DC6B: 4C 00 38     JMP Routine_C33800
+C3/DC6E: 20 18 1E     JSR Routine_C31E18
 C3/DC71: 18           CLC
 C3/DC72: 02 35        COP $35
 C3/DC74: 1E 18 A3     ASL $A318,X
-C3/DC77: 80 20        BRA $DC99
+C3/DC77: 80 20        BRA Routine_C3DC99
 C3/DC79: 1B           TCS
 C3/DC7A: 6E B4 66     ROR $66B4
 C3/DC7D: 38           SEC
@@ -78,7 +78,7 @@ C3/DC81: E9 1E        SBC #$1E
 C3/DC83: 18           CLC
 C3/DC84: E2 2C        SEP #$2C
 C3/DC86: 1E 18 83     ASL $8318,X
-C3/DC89: 20 00 40     JSR $4000
+C3/DC89: 20 00 40     JSR Routine_C34000
 C3/DC8C: 58           CLI
 C3/DC8D: 1E 18 34     ASL $3418,X
 C3/DC90: C2 2C        REP #$2C

@@ -8,9 +8,9 @@ FD/8D14: E5 C1        SBC $C1
 FD/8D16: FF 31 F6 FE  SBC $FEF631,X
 FD/8D1A: 9D 00 FC     STA $FC00,X
 FD/8D1D: 7F F8 ED F3  ADC $F3EDF8,X
-FD/8D21: 10 63        BPL $8D86
+FD/8D21: 10 63        BPL Routine_FD8D86
 FD/8D23: 42 02        WDM $02
-FD/8D25: 80 98        BRA $8CBF
+FD/8D25: 80 98        BRA Routine_FD8CBF
 FD/8D27: 0A           ASL
 FD/8D28: 31 F7        AND ($F7),Y
 FD/8D2A: FE 9F FC     INC $FC9F,X
@@ -28,7 +28,7 @@ FD/8D44: 2A           ROL
 FD/8D45: 1C CC 00     TRB $00CC
 FD/8D48: 72 00        ADC ($00)
 FD/8D4A: 00 FC        BRK $FC
-FD/8D4C: 80 E1        BRA $8D2F
+FD/8D4C: 80 E1        BRA Routine_FD8D2F
 FD/8D4E: C2 FB        REP #$FB
 FD/8D50: 04 E7        TSB $E7
 FD/8D52: 00 1A        BRK $1A

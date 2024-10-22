@@ -14,17 +14,19 @@ C2/86F7: 8F 04 43 00  STA $004304
 C2/86FB: A0 00 00     LDY #$0000
 C2/86FE: A9 19 9E     LDA #$9E19
 C2/8701: AE 1D A0     LDX $A01D
-C2/8704: D0 06        BNE $870C
+C2/8704: D0 06        BNE Local_C2870C
 C2/8706: A0 00 01     LDY #$0100
 C2/8709: A9 19 9F     LDA #$9F19
+Local_C2870C:
 C2/870C: 8C 1D A0     STY $A01D
 C2/870F: 9C 1B A0     STZ $A01B
 C2/8712: A2 00 00     LDX #$0000
+Local_C28715:
 C2/8715: E2 20        SEP #$20
 C2/8717: BD 99 9D     LDA $9D99,X
-C2/871A: 30 52        BMI $876E
+C2/871A: 30 52        BMI Local_C2876E
 C2/871C: C2 20        REP #$20
-C2/871E: F0 3B        BEQ $875B
+C2/871E: F0 3B        BEQ Local_C2875B
 C2/8720: BD 9A 9D     LDA $9D9A,X
 C2/8723: 29 FF 00     AND #$00FF
 C2/8726: 0A           ASL
@@ -34,6 +36,7 @@ C2/8729: 0A           ASL
 C2/872A: 8D 19 A0     STA $A019
 C2/872D: DA           PHX
 C2/872E: A2 00 00     LDX #$0000
+Local_C28731:
 C2/8731: C2 20        REP #$20
 C2/8733: AD 1B A0     LDA $A01B
 C2/8736: 18           CLC
@@ -52,9 +55,10 @@ C2/8750: C8           INY
 C2/8751: C8           INY
 C2/8752: C8           INY
 C2/8753: E0 20 00     CPX #$0020
-C2/8756: 90 D9        BCC $8731
+C2/8756: 90 D9        BCC Local_C28731
 C2/8758: FA           PLX
-C2/8759: 80 0F        BRA $876A
+C2/8759: 80 0F        BRA Local_C2876A
+Local_C2875B:
 C2/875B: BD 9A 9D     LDA $9D9A,X
 C2/875E: 99 19 9E     STA $9E19,Y
 C2/8761: AD F9 9D     LDA $9DF9
@@ -62,9 +66,11 @@ C2/8764: 99 1A 9E     STA $9E1A,Y
 C2/8767: C8           INY
 C2/8768: C8           INY
 C2/8769: C8           INY
+Local_C2876A:
 C2/876A: E8           INX
 C2/876B: E8           INX
-C2/876C: 80 A7        BRA $8715
+C2/876C: 80 A7        BRA Local_C28715
+Local_C2876E:
 C2/876E: AB           PLB
 C2/876F: 28           PLP
 C2/8770: 60           RTS

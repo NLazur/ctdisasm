@@ -15,8 +15,8 @@ FE/69EF: 4F 00 10 ED  EOR $ED1000
 FE/69F3: 12 AF        ORA ($AF)
 FE/69F5: 52 FF        EOR ($FF)
 FE/69F7: 02 21        COP $21
-FE/69F9: 80 39        BRA $6A34
-FE/69FB: 10 1C        BPL $6A19
+FE/69F9: 80 39        BRA Routine_FE6A34
+FE/69FB: 10 1C        BPL Routine_FE6A19
 FE/69FD: 02 0E        COP $0E
 FE/69FF: 00 04        BRK $04
 FE/6A01: 9A           TXS

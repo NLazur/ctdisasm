@@ -1,11 +1,11 @@
 ; Bank: D1 | Start Address: 0B29
 Routine_D10B29:
 D1/0B29: 7F 00 00 11  ADC $110000,X
-D1/0B2D: 80 C2        BRA $0AF1
+D1/0B2D: 80 C2        BRA Routine_D10AF1
 D1/0B2F: 00 FF        BRK $FF
 D1/0B31: FF 22 80 02  SBC $028022,X
 D1/0B35: 00 07        BRK $07
-D1/0B37: 10 C0        BPL $0AF9
+D1/0B37: 10 C0        BPL Routine_D10AF9
 D1/0B39: C0 C6        CPY #$C6
 D1/0B3B: 00 C6        BRK $C6
 D1/0B3D: 40           RTI

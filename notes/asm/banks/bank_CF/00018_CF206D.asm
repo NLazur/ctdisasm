@@ -1,5 +1,6 @@
 ; Bank: CF | Start Address: 206D
 Routine_CF206D:
+Local_CF206D:
 CF/206D: A0 C0 00     LDY #$00C0
 CF/2070: FF C1 FE 02  SBC $02FEC1,X
 CF/2074: FC 04 F8     JSR ($F804,X)
@@ -34,7 +35,7 @@ CF/20AF: 00 87        BRK $87
 CF/20B1: 84 0F        STY $0F
 CF/20B3: 00 38        BRK $38
 CF/20B5: 28           PLP
-CF/20B6: F0 50        BEQ $2108
+CF/20B6: F0 50        BEQ Routine_CF2108
 CF/20B8: E0 A0 00     CPX #$00A0
 CF/20BB: 00 00        BRK $00
 CF/20BD: 00 00        BRK $00
@@ -55,11 +56,12 @@ CF/20DA: 07 04        ORA [$04]
 CF/20DC: 07 04        ORA [$04]
 CF/20DE: 0F 08 E0 20  ORA $20E008
 CF/20E2: E0 20 E0     CPX #$E020
-CF/20E5: 20 E0 20     JSR $20E0
+CF/20E5: 20 E0 20     JSR Routine_CF20E0
 CF/20E8: C0 40 80     CPY #$8040
-CF/20EB: 80 80        BRA $206D
-CF/20ED: 80 80        BRA $206F
-CF/20EF: 80 00        BRA $20F1
+CF/20EB: 80 80        BRA Local_CF206D
+CF/20ED: 80 80        BRA Routine_CF206F
+CF/20EF: 80 00        BRA Local_CF20F1
+Local_CF20F1:
 CF/20F1: 00 00        BRK $00
 CF/20F3: 00 00        BRK $00
 CF/20F5: 00 00        BRK $00
@@ -72,6 +74,6 @@ CF/2101: 14 07        TRB $07
 CF/2103: 21 0E        AND ($0E,X)
 CF/2105: 1A           INC
 CF/2106: 1C F0 3C     TRB $3CF0
-CF/2109: 20 7C 44     JSR $447C
+CF/2109: 20 7C 44     JSR Routine_CF447C
 CF/210C: 78           SEI
 CF/210D: 40           RTI

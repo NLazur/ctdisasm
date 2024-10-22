@@ -13,22 +13,23 @@ C3/168C: 7F 85 83 68  ADC $688385,X
 C3/1690: AA           TAX
 C3/1691: 29 0F        AND #$0F
 C3/1693: 85 08        STA $08
-C3/1695: 80 8A        BRA $1621
+C3/1695: 80 8A        BRA Routine_C31621
 C3/1697: 4A           LSR
 C3/1698: 01 00        ORA ($00,X)
 C3/169A: 85 80        STA $80
 C3/169C: 88           DEY
-C3/169D: D0 C0        BNE $165F
-C3/169F: F0 AE        BEQ $164F
+C3/169D: D0 C0        BNE Routine_C3165F
+C3/169F: F0 AE        BEQ Routine_C3164F
 C3/16A1: FE 00 9A     INC $9A00,X
 C3/16A4: 2B           PLD
 C3/16A5: C2 00        REP #$00
+Local_C316A7:
 C3/16A7: 2E 20 29     ROL $2920
 C3/16AA: 26 60        ROL $60
 C3/16AC: A5 80        LDA $80
 C3/16AE: 27 10        AND [$10]
 C3/16B0: 19 27 30     ORA $3027,Y
 C3/16B3: 19 88 00     ORA $0088,Y
-C3/16B6: D0 EF        BNE $16A7
+C3/16B6: D0 EF        BNE Local_C316A7
 C3/16B8: 2B           PLD
 C3/16B9: 60           RTS

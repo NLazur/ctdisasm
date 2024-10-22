@@ -240,7 +240,7 @@ CC/A561: 00 00        BRK $00
 CC/A563: 06 04        ASL $04
 CC/A565: 0B           PHD
 CC/A566: 3E C8 00     ROL $00C8,X
-CC/A569: 22 FE 00 00  JSR $0000FE
+CC/A569: 22 FE 00 00  JSR Routine_0000FE
 CC/A56D: 00 00        BRK $00
 CC/A56F: FE 01 00     INC $0001,X
 CC/A572: 06 01        ASL $01
@@ -330,7 +330,7 @@ CC/A62F: 00 FE        BRK $FE
 CC/A631: 04 01        TSB $01
 CC/A633: 01 05        ORA ($05,X)
 CC/A635: 00 02        BRK $02
-CC/A637: 50 19        BVC $A652
+CC/A637: 50 19        BVC Routine_CCA652
 CC/A639: 00 00        BRK $00
 CC/A63B: 00 01        BRK $01
 CC/A63D: 01 08        ORA ($08,X)
@@ -908,7 +908,7 @@ CC/AB36: 00 FE        BRK $FE
 CC/AB38: 12 00        ORA ($00)
 CC/AB3A: 02 00        COP $00
 CC/AB3C: FE 0C 3E     INC $3E0C,X
-CC/AB3F: 30 3E        BMI $AB7F
+CC/AB3F: 30 3E        BMI Routine_CCAB7F
 CC/AB41: FE 15 80     INC $8015,X
 CC/AB44: 00 00        BRK $00
 CC/AB46: FE 14 3E     INC $3E14,X
@@ -1589,7 +1589,7 @@ CC/B0FF: 02 90        COP $90
 CC/B101: 08           PHP
 CC/B102: 00 00        BRK $00
 CC/B104: A7 02        LDA [$02]
-CC/B106: 90 05        BCC $B10D
+CC/B106: 90 05        BCC Routine_CCB10D
 CC/B108: 00 00        BRK $00
 CC/B10A: A7 00        LDA [$00]
 CC/B10C: 00 06        BRK $06

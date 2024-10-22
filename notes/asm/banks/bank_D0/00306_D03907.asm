@@ -11,8 +11,8 @@ D0/3917: 00 00        BRK $00
 D0/3919: 00 00        BRK $00
 D0/391B: 00 00        BRK $00
 D0/391D: 00 80        BRK $80
-D0/391F: 80 80        BRA $38A1
-D0/3921: 80 C0        BRA $38E3
+D0/391F: 80 80        BRA Routine_D038A1
+D0/3921: 80 C0        BRA Routine_D038E3
 D0/3923: C0 30 30     CPY #$3030
 D0/3926: 0E 0E 00     ASL $000E
 D0/3929: 01 01        ORA ($01,X)
@@ -46,11 +46,11 @@ D0/395F: 0C 0A 0D     TSB $0D0A
 D0/3962: 08           PHP
 D0/3963: 0F 08 0F 01  ORA $010F08
 D0/3967: 0F 90 70 90  ORA $907090
-D0/396B: 70 20        BVS $398D
+D0/396B: 70 20        BVS Routine_D0398D
 D0/396D: E0 20        CPX #$20
 D0/396F: E0 40        CPX #$40
 D0/3971: C0 80 80     CPY #$8080
-D0/3974: 80 80        BRA $38F6
+D0/3974: 80 80        BRA Routine_D038F6
 D0/3976: 00 00        BRK $00
 D0/3978: 00 00        BRK $00
 D0/397A: 01 01        ORA ($01,X)
@@ -66,8 +66,8 @@ D0/398C: 14 1C        TRB $1C
 D0/398E: 24 3C        BIT $3C
 D0/3990: 28           PLP
 D0/3991: 38           SEC
-D0/3992: 50 70        BVC $3A04
-D0/3994: 50 70        BVC $3A06
+D0/3992: 50 70        BVC Routine_D03A04
+D0/3994: 50 70        BVC Routine_D03A06
 D0/3996: A0 E0        LDY #$E0
 D0/3998: 00 00        BRK $00
 D0/399A: 00 00        BRK $00
@@ -98,6 +98,7 @@ D0/39C7: 0C F0 F0     TSB $F0F0
 D0/39CA: 0C FC F2     TSB $F2FC
 D0/39CD: 0E FD 03     ASL $03FD
 D0/39D0: FB           XCE
+Local_D039D1:
 D0/39D1: 07 F4        ORA [$F4]
 D0/39D3: 0C F4 0C     TSB $0CF4
 D0/39D6: FB           XCE
@@ -126,11 +127,11 @@ D0/3A01: 03 FD        ORA $FD,S
 D0/3A03: 03 FD        ORA $FD,S
 D0/3A05: 03 FA        ORA $FA,S
 D0/3A07: 06 7F        ASL $7F
-D0/3A09: 80 7F        BRA $3A8A
-D0/3A0B: 80 7F        BRA $3A8C
-D0/3A0D: 80 7F        BRA $3A8E
-D0/3A0F: 80 7F        BRA $3A90
-D0/3A11: 80 BC        BRA $39CF
+D0/3A09: 80 7F        BRA Routine_D03A8A
+D0/3A0B: 80 7F        BRA Routine_D03A8C
+D0/3A0D: 80 7F        BRA Routine_D03A8E
+D0/3A0F: 80 7F        BRA Routine_D03A90
+D0/3A11: 80 BC        BRA Routine_D039CF
 D0/3A13: C3 38        CMP $38,S
 D0/3A15: 47 53        EOR [$53]
 D0/3A17: 6F F4 0C F4  ADC $F40CF4
@@ -156,8 +157,8 @@ D0/3A45: 00 00        BRK $00
 D0/3A47: 00 00        BRK $00
 D0/3A49: 00 00        BRK $00
 D0/3A4B: 00 80        BRK $80
-D0/3A4D: 80 80        BRA $39CF
-D0/3A4F: 80 80        BRA $39D1
-D0/3A51: 80 40        BRA $3A93
+D0/3A4D: 80 80        BRA Routine_D039CF
+D0/3A4F: 80 80        BRA Local_D039D1
+D0/3A51: 80 40        BRA Routine_D03A93
 D0/3A53: C0 C0 C0     CPY #$C0C0
 D0/3A56: 60           RTS

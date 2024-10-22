@@ -31,7 +31,8 @@ C0/2E5C: 8D 00 42     STA $4200
 C0/2E5F: A9 0F        LDA #$0F
 C0/2E61: 8D 00 21     STA $2100
 C0/2E64: 58           CLI
-C0/2E65: 80 FE        BRA $2E65
+Local_C02E65:
+C0/2E65: 80 FE        BRA Local_C02E65
 C0/2E67: C8           INY
 C0/2E68: BB           TYX
 C0/2E69: BF 01 20 7F  LDA $7F2001,X

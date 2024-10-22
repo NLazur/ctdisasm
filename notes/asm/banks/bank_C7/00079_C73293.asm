@@ -1,8 +1,9 @@
 ; Bank: C7 | Start Address: 3293
 Routine_C73293:
+Local_C73293:
 C7/3293: 88           DEY
-C7/3294: 10 FD        BPL $3293
-C7/3296: 10 F1        BPL $3289
+C7/3294: 10 FD        BPL Local_C73293
+C7/3296: 10 F1        BPL Routine_C73289
 C7/3298: CD 00 8D     CMP $8D00
 C7/329B: 00 CB        BRK $CB
 C7/329D: F2 D8        SBC ($D8)

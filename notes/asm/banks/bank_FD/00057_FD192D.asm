@@ -18,7 +18,7 @@ FD/1949: 00 25        BRK $25
 FD/194B: 58           CLI
 FD/194C: 26 25        ROL $25
 FD/194E: 13 21        ORA ($21,S),Y
-FD/1950: 10 10        BPL $1962
+FD/1950: 10 10        BPL Local_FD1962
 FD/1952: 00 23        BRK $23
 FD/1954: 51 22        EOR ($22),Y
 FD/1956: 05 38        ORA $38
@@ -28,5 +28,6 @@ FD/195B: 00 20        BRK $20
 FD/195D: F8           SED
 FD/195E: A0 A0        LDY #$A0
 FD/1960: 00 A0        BRK $A0
+Local_FD1962:
 FD/1962: C0 60 C8     CPY #$C860
 FD/1965: 40           RTI

@@ -20,12 +20,12 @@ C6/9326: 06 C8        ASL $C8
 C6/9328: 33 C3        AND ($C3,S),Y
 C6/932A: C4 03        CPY $03
 C6/932C: C0 C1 C2     CPY #$C2C1
-C6/932F: 5C C3 C4 45  JMP $45C4C3
+C6/932F: 5C C3 C4 45  JMP Routine_45C4C3
 C6/9333: F8           SED
 C6/9334: 07 C0        ORA [$C0]
 C6/9336: 33 0B        AND ($0B,S),Y
 C6/9338: F6 27        INC $27,X
-C6/933A: B0 D0        BCS $930C
+C6/933A: B0 D0        BCS Routine_C6930C
 C6/933C: E0 D1 D2     CPX #$D2D1
 C6/933F: D3 D4        CMP ($D4,S),Y
 C6/9341: A5 46        LDA $46
@@ -162,8 +162,9 @@ C6/9441: 07 01        ORA [$01]
 C6/9443: F8           SED
 C6/9444: 01 F8        ORA ($F8,X)
 C6/9446: 13 60        ORA ($60,S),Y
-C6/9448: 10 02        BPL $944C
+C6/9448: 10 02        BPL Local_C6944C
 C6/944A: 03 03        ORA $03,S
+Local_C6944C:
 C6/944C: 05 0E        ORA $0E
 C6/944E: 06 28        ASL $28
 C6/9450: F8           SED

@@ -2,6 +2,7 @@
 Routine_FDE9CA:
 FD/E9CA: B9 22 05     LDA $0522,Y
 FD/E9CD: A8           TAY
+Local_FDE9CE:
 FD/E9CE: BF 01 20 7E  LDA $7E2001,X
 FD/E9D2: 29 7C        AND #$7C
 FD/E9D4: 85 0C        STA $0C
@@ -30,5 +31,5 @@ FD/EA09: E2 20        SEP #$20
 FD/EA0B: E8           INX
 FD/EA0C: E8           INX
 FD/EA0D: 88           DEY
-FD/EA0E: D0 BE        BNE $E9CE
+FD/EA0E: D0 BE        BNE Local_FDE9CE
 FD/EA10: 60           RTS

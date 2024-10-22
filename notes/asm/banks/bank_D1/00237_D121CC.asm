@@ -1,6 +1,6 @@
 ; Bank: D1 | Start Address: 21CC
 Routine_D121CC:
-D1/21CC: 80 89        BRA $2157
+D1/21CC: 80 89        BRA Routine_D12157
 D1/21CE: 2A           ROL
 D1/21CF: 00 08        BRK $08
 D1/21D1: 01 0A        ORA ($0A,X)
@@ -8,7 +8,7 @@ D1/21D3: 18           CLC
 D1/21D4: EA           NOP
 D1/21D5: 00 0A        BRK $0A
 D1/21D7: 0A           ASL
-D1/21D8: 20 47 83     JSR $8347
+D1/21D8: 20 47 83     JSR Routine_D18347
 D1/21DB: 00 96        BRK $96
 D1/21DD: EC 86 00     CPX $0086
 D1/21E0: 1E 18 EE     ASL $EE18,X
@@ -28,7 +28,8 @@ D1/21FD: 0C 28 A8     TSB $A828
 D1/2200: E4 00        CPX $00
 D1/2202: EA           NOP
 D1/2203: 18           CLC
-D1/2204: 10 00        BPL $2206
+D1/2204: 10 00        BPL Local_D12206
+Local_D12206:
 D1/2206: 24 00        BIT $00
 D1/2208: E8           INX
 D1/2209: 0C 28 2D     TSB $2D28
@@ -53,5 +54,5 @@ D1/2232: C8           INY
 D1/2233: 06 10        ASL $10
 D1/2235: CA           DEX
 D1/2236: 0C 00 33     TSB $3300
-D1/2239: 80 20        BRA $225B
+D1/2239: 80 20        BRA Routine_D1225B
 D1/223B: 40           RTI

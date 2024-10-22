@@ -15,11 +15,12 @@ D1/D7A9: 00 00        BRK $00
 D1/D7AB: 00 00        BRK $00
 D1/D7AD: 00 00        BRK $00
 D1/D7AF: 00 08        BRK $08
-D1/D7B1: 10 00        BPL $D7B3
+D1/D7B1: 10 00        BPL Local_D1D7B3
+Local_D1D7B3:
 D1/D7B3: 01 4D        ORA ($4D,X)
 D1/D7B5: 08           PHP
-D1/D7B6: 50 01        BVC $D7B9
-D1/D7B8: 20 00 60     JSR $6000
+D1/D7B6: 50 01        BVC Routine_D1D7B9
+D1/D7B8: 20 00 60     JSR Routine_D16000
 D1/D7BB: 00 40        BRK $40
 D1/D7BD: 00 40        BRK $40
 D1/D7BF: 00 40        BRK $40
@@ -36,6 +37,6 @@ D1/D7D3: 00 00        BRK $00
 D1/D7D5: 00 05        BRK $05
 D1/D7D7: 00 01        BRK $01
 D1/D7D9: 08           PHP
-D1/D7DA: 10 48        BPL $D824
-D1/D7DC: 50 41        BVC $D81F
+D1/D7DA: 10 48        BPL Routine_D1D824
+D1/D7DC: 50 41        BVC Routine_D1D81F
 D1/D7DE: 40           RTI

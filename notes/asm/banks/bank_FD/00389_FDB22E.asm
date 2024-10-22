@@ -2,10 +2,11 @@
 Routine_FDB22E:
 FD/B22E: 7B           TDC
 FD/B22F: AA           TAX
+Local_FDB230:
 FD/B230: 9D 2D 5E     STA $5E2D,X
 FD/B233: E8           INX
 FD/B234: E0 80 05     CPX #$0580
-FD/B237: 90 F7        BCC $B230
+FD/B237: 90 F7        BCC Local_FDB230
 FD/B239: A9 FF        LDA #$FF
 FD/B23B: 8D DD 99     STA $99DD
 FD/B23E: 8D DE 99     STA $99DE
@@ -16,62 +17,71 @@ FD/B24A: 8D 24 9F     STA $9F24
 FD/B24D: 7B           TDC
 FD/B24E: AA           TAX
 FD/B24F: A9 FF        LDA #$FF
+Local_FDB251:
 FD/B251: 9D FF AE     STA $AEFF,X
 FD/B254: 9D 0A AF     STA $AF0A,X
 FD/B257: E8           INX
 FD/B258: E0 0B 00     CPX #$000B
-FD/B25B: 90 F4        BCC $B251
+FD/B25B: 90 F4        BCC Local_FDB251
 FD/B25D: 7B           TDC
 FD/B25E: AA           TAX
+Local_FDB25F:
 FD/B25F: 9D 15 AF     STA $AF15,X
 FD/B262: E8           INX
 FD/B263: E0 08 00     CPX #$0008
-FD/B266: 90 F7        BCC $B25F
+FD/B266: 90 F7        BCC Local_FDB25F
 FD/B268: 8D C5 AE     STA $AEC5
 FD/B26B: AA           TAX
+Local_FDB26C:
 FD/B26C: BD 80 29     LDA $2980,X
-FD/B26F: 30 09        BMI $B27A
+FD/B26F: 30 09        BMI Local_FDB27A
 FD/B271: 9D FF AE     STA $AEFF,X
 FD/B274: 9D 0A AF     STA $AF0A,X
 FD/B277: EE C5 AE     INC $AEC5
+Local_FDB27A:
 FD/B27A: E8           INX
 FD/B27B: E0 03 00     CPX #$0003
-FD/B27E: 90 EC        BCC $B26C
+FD/B27E: 90 EC        BCC Local_FDB26C
 FD/B280: 64 24        STZ $24
 FD/B282: 7B           TDC
 FD/B283: AA           TAX
 FD/B284: A9 FF        LDA #$FF
+Local_FDB286:
 FD/B286: 9D BE B1     STA $B1BE,X
 FD/B289: E8           INX
 FD/B28A: E0 07 00     CPX #$0007
-FD/B28D: 90 F7        BCC $B286
+FD/B28D: 90 F7        BCC Local_FDB286
 FD/B28F: 7B           TDC
 FD/B290: AA           TAX
+Local_FDB291:
 FD/B291: BD FF AE     LDA $AEFF,X
 FD/B294: C9 FF        CMP #$FF
-FD/B296: F0 05        BEQ $B29D
+FD/B296: F0 05        BEQ Local_FDB29D
 FD/B298: A8           TAY
 FD/B299: 8A           TXA
 FD/B29A: 99 BE B1     STA $B1BE,Y
+Local_FDB29D:
 FD/B29D: E8           INX
 FD/B29E: E0 03 00     CPX #$0003
-FD/B2A1: 90 EE        BCC $B291
+FD/B2A1: 90 EE        BCC Local_FDB291
 FD/B2A3: 7B           TDC
 FD/B2A4: 8D C6 AE     STA $AEC6
 FD/B2A7: AA           TAX
 FD/B2A8: A8           TAY
+Local_FDB2A9:
 FD/B2A9: BD C5 29     LDA $29C5,X
-FD/B2AC: 30 1B        BMI $B2C9
+FD/B2AC: 30 1B        BMI Local_FDB2C9
 FD/B2AE: BD C4 29     LDA $29C4,X
 FD/B2B1: 99 02 AF     STA $AF02,Y
 FD/B2B4: 99 0D AF     STA $AF0D,Y
 FD/B2B7: BD C6 29     LDA $29C6,X
-FD/B2BA: 10 0D        BPL $B2C9
+FD/B2BA: 10 0D        BPL Local_FDB2C9
 FD/B2BC: A9 FF        LDA #$FF
 FD/B2BE: 99 02 AF     STA $AF02,Y
 FD/B2C1: B9 15 AF     LDA $AF15,Y
 FD/B2C4: 09 80        ORA #$80
 FD/B2C6: 99 15 AF     STA $AF15,Y
+Local_FDB2C9:
 FD/B2C9: EE C6 AE     INC $AEC6
 FD/B2CC: C8           INY
 FD/B2CD: C2 20        REP #$20
@@ -82,5 +92,5 @@ FD/B2D4: AA           TAX
 FD/B2D5: 7B           TDC
 FD/B2D6: E2 20        SEP #$20
 FD/B2D8: E0 60 00     CPX #$0060
-FD/B2DB: 90 CC        BCC $B2A9
+FD/B2DB: 90 CC        BCC Local_FDB2A9
 FD/B2DD: 6B           RTL

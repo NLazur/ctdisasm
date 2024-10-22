@@ -1,16 +1,17 @@
 ; Bank: C0 | Start Address: 86F7
 Routine_C086F7:
 C0/86F7: A6 EB        LDX $EB
-C0/86F9: F0 11        BEQ $870C
+C0/86F9: F0 11        BEQ Local_C0870C
 C0/86FB: 8E 75 43     STX $4375
 C0/86FE: A6 C3        LDX $C3
 C0/8700: 8E 16 21     STX $2116
 C0/8703: A2 80        LDX #$80
-C0/8705: D0 8E        BNE $8695
+C0/8705: D0 8E        BNE Routine_C08695
 C0/8707: 72 43        ADC ($43)
-C0/8709: 20 DD 86     JSR $86DD
+C0/8709: 20 DD 86     JSR Routine_C086DD
+Local_C0870C:
 C0/870C: A6 ED        LDX $ED
-C0/870E: F0 18        BEQ $8728
+C0/870E: F0 18        BEQ Local_C08728
 C0/8710: 8E 75 43     STX $4375
 C0/8713: A6 C5        LDX $C5
 C0/8715: 8E 16 21     STX $2116
@@ -20,5 +21,6 @@ C0/871C: 18           CLC
 C0/871D: 69 80 D0     ADC #$D080
 C0/8720: 8D 72 43     STA $4372
 C0/8723: E2 20        SEP #$20
-C0/8725: 20 DD 86     JSR $86DD
+C0/8725: 20 DD 86     JSR Routine_C086DD
+Local_C08728:
 C0/8728: 60           RTS

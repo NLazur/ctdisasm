@@ -7,8 +7,9 @@ CE/07DF: 00 1B        BRK $1B
 CE/07E1: 00 03        BRK $03
 CE/07E3: 01 03        ORA ($03,X)
 CE/07E5: 02 00        COP $00
-CE/07E7: 90 80        BCC $0769
-CE/07E9: 90 00        BCC $07EB
+CE/07E7: 90 80        BCC Routine_CE0769
+CE/07E9: 90 00        BCC Local_CE07EB
+Local_CE07EB:
 CE/07EB: F5 07        SBC $07,X
 CE/07ED: 9E 03 A6     STZ $A603,X
 CE/07F0: 03 03        ORA $03,S
@@ -28,12 +29,12 @@ CE/0808: 36 24        ROL $24,X
 CE/080A: 02 06        COP $06
 CE/080C: 03 2E        ORA $2E,S
 CE/080E: 01 00        ORA ($00,X)
-CE/0810: 90 80        BCC $0792
-CE/0812: 90 80        BCC $0794
-CE/0814: 20 08 2A     JSR $2A08
+CE/0810: 90 80        BCC Routine_CE0792
+CE/0812: 90 80        BCC Routine_CE0794
+CE/0814: 20 08 2A     JSR Routine_CE2A08
 CE/0817: 08           PHP
 CE/0818: 34 08        BIT $08,X
-CE/081A: 20 08 2A     JSR $2A08
+CE/081A: 20 08 2A     JSR Routine_CE2A08
 CE/081D: 08           PHP
 CE/081E: 34 08        BIT $08,X
 CE/0820: 7C 2D 80     JMP ($802D,X)

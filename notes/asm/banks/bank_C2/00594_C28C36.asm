@@ -15,7 +15,7 @@ C2/8C48: 0A           ASL
 C2/8C49: AA           TAX
 C2/8C4A: FC 5B 8C     JSR ($8C5B,X)
 C2/8C4D: 85 C1        STA $C1
-C2/8C4F: 20 4D 83     JSR $834D
+C2/8C4F: 20 4D 83     JSR Routine_C2834D
 C2/8C52: A9 00        LDA #$00
 C2/8C54: EB           XBA
 C2/8C55: A5 C1        LDA $C1

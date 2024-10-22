@@ -3,6 +3,7 @@ Routine_CD0239:
 CD/0239: C2 20        REP #$20
 CD/023B: 7B           TDC
 CD/023C: A2 80 00     LDX #$0080
+Local_CD023F:
 CD/023F: 9D FE B3     STA $B3FE,X
 CD/0242: 9D 7E B4     STA $B47E,X
 CD/0245: 9D FE B4     STA $B4FE,X
@@ -13,6 +14,6 @@ CD/0251: 9D FE B6     STA $B6FE,X
 CD/0254: 9D 7E B7     STA $B77E,X
 CD/0257: CA           DEX
 CD/0258: CA           DEX
-CD/0259: D0 E4        BNE $023F
+CD/0259: D0 E4        BNE Local_CD023F
 CD/025B: E2 20        SEP #$20
 CD/025D: 60           RTS

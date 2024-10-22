@@ -26,27 +26,28 @@ C3/80A5: 00 00        BRK $00
 C3/80A7: 12 0C        ORA ($0C)
 C3/80A9: 26 18        ROL $18
 C3/80AB: 4B           PHK
-C3/80AC: 30 95        BMI $8043
+C3/80AC: 30 95        BMI Routine_C38043
 C3/80AE: 62 00 3D     PER $C3BDB1
 C3/80B1: 42 1D        WDM $1D
 C3/80B3: E7 94        SBC [$94]
 C3/80B5: 78           SEI
-C3/80B6: 80 A0        BRA $8058
+C3/80B6: 80 A0        BRA Routine_C38058
 C3/80B8: 00 C0        BRK $C0
-C3/80BA: 22 83 03 68  JSR $680383
+C3/80BA: 22 83 03 68  JSR Routine_680383
 C3/80BE: 47 12        EOR [$12]
 C3/80C0: DB           STP
 C3/80C1: 00 83        BRK $83
 C3/80C3: 7C 08 F0     JMP ($F008,X)
 C3/80C6: A4 43        LDY $43
-C3/80C8: 50 08        BVC $80D2
+C3/80C8: 50 08        BVC Local_C380D2
 C3/80CA: 00 23        BRK $23
-C3/80CC: 10 E4        BPL $80B2
-C3/80CE: 10 AB        BPL $807B
+C3/80CC: 10 E4        BPL Routine_C380B2
+C3/80CE: 10 AB        BPL Routine_C3807B
 C3/80D0: 00 C7        BRK $C7
-C3/80D2: 20 00 E8     JSR $E800
+Local_C380D2:
+C3/80D2: 20 00 E8     JSR Routine_C3E800
 C3/80D5: B8           CLV
-C3/80D6: 20 B0 44     JSR $44B0
+C3/80D6: 20 B0 44     JSR Routine_C344B0
 C3/80D9: 71 2B        ADC ($2B),Y
 C3/80DB: B8           CLV
 C3/80DC: 00 1F        BRK $1F

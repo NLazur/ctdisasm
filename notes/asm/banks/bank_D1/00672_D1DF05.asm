@@ -451,8 +451,9 @@ D1/E1CC: 98           TYA
 D1/E1CD: 98           TYA
 D1/E1CE: 98           TYA
 D1/E1CF: 98           TYA
-D1/E1D0: 90 01        BCC $E1D3
+D1/E1D0: 90 01        BCC Local_D1E1D3
 D1/E1D2: 08           PHP
+Local_D1E1D3:
 D1/E1D3: 00 08        BRK $08
 D1/E1D5: 00 08        BRK $08
 D1/E1D7: 00 08        BRK $08
@@ -485,7 +486,7 @@ D1/E202: 18           CLC
 D1/E203: 18           CLC
 D1/E204: 18           CLC
 D1/E205: 98           TYA
-D1/E206: 90 01        BCC $E209
+D1/E206: 90 01        BCC Routine_D1E209
 D1/E208: 00 00        BRK $00
 D1/E20A: 08           PHP
 D1/E20B: 00 08        BRK $08
@@ -515,7 +516,7 @@ D1/E233: 00 10        BRK $10
 D1/E235: 18           CLC
 D1/E236: 18           CLC
 D1/E237: 98           TYA
-D1/E238: 90 01        BCC $E23B
+D1/E238: 90 01        BCC Routine_D1E23B
 D1/E23A: 00 00        BRK $00
 D1/E23C: 00 00        BRK $00
 D1/E23E: 08           PHP
@@ -541,7 +542,7 @@ D1/E25F: 00 00        BRK $00
 D1/E261: 00 00        BRK $00
 D1/E263: 00 10        BRK $10
 D1/E265: 18           CLC
-D1/E266: 90 01        BCC $E269
+D1/E266: 90 01        BCC Routine_D1E269
 D1/E268: 00 00        BRK $00
 D1/E26A: 00 00        BRK $00
 D1/E26C: 00 00        BRK $00
@@ -640,7 +641,8 @@ D1/E323: 00 00        BRK $00
 D1/E325: 00 00        BRK $00
 D1/E327: 00 00        BRK $00
 D1/E329: 00 FF        BRK $FF
-D1/E32B: 80 00        BRA $E32D
+D1/E32B: 80 00        BRA Local_D1E32D
+Local_D1E32D:
 D1/E32D: 00 00        BRK $00
 D1/E32F: 00 00        BRK $00
 D1/E331: 00 00        BRK $00
@@ -654,7 +656,8 @@ D1/E33F: 00 00        BRK $00
 D1/E341: 00 00        BRK $00
 D1/E343: 00 00        BRK $00
 D1/E345: 00 FF        BRK $FF
-D1/E347: 80 00        BRA $E349
+D1/E347: 80 00        BRA Local_D1E349
+Local_D1E349:
 D1/E349: 00 00        BRK $00
 D1/E34B: 00 00        BRK $00
 D1/E34D: 00 00        BRK $00
@@ -668,7 +671,8 @@ D1/E35B: 00 00        BRK $00
 D1/E35D: 00 00        BRK $00
 D1/E35F: 00 00        BRK $00
 D1/E361: 00 FF        BRK $FF
-D1/E363: 80 00        BRA $E365
+D1/E363: 80 00        BRA Local_D1E365
+Local_D1E365:
 D1/E365: 00 00        BRK $00
 D1/E367: 00 00        BRK $00
 D1/E369: 00 00        BRK $00

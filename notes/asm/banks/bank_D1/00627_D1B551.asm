@@ -8,10 +8,14 @@ D1/B559: 00 00        BRK $00
 D1/B55B: 00 03        BRK $03
 D1/B55D: 43 83        EOR $83,S
 D1/B55F: C3 01        CMP $01,S
-D1/B561: F0 00        BEQ $B563
-D1/B563: F0 00        BEQ $B565
-D1/B565: F0 00        BEQ $B567
-D1/B567: F0 00        BEQ $B569
+D1/B561: F0 00        BEQ Local_D1B563
+Local_D1B563:
+D1/B563: F0 00        BEQ Local_D1B565
+Local_D1B565:
+D1/B565: F0 00        BEQ Local_D1B567
+Local_D1B567:
+D1/B567: F0 00        BEQ Local_D1B569
+Local_D1B569:
 D1/B569: 06 00        ASL $00
 D1/B56B: 06 00        ASL $00
 D1/B56D: 00 00        BRK $00
@@ -35,19 +39,23 @@ D1/B58F: 00 00        BRK $00
 D1/B591: 00 08        BRK $08
 D1/B593: 09 49        ORA #$49
 D1/B595: 48           PHA
-D1/B596: 10 11        BPL $B5A9
+D1/B596: 10 11        BPL Local_D1B5A9
 D1/B598: 51 50        EOR ($50),Y
-D1/B59A: 90 91        BCC $B52D
+D1/B59A: 90 91        BCC Routine_D1B52D
 D1/B59C: D1 D0        CMP ($D0),Y
 D1/B59E: 88           DEY
 D1/B59F: 89 C9        BIT #$C9
 D1/B5A1: C8           INY
 D1/B5A2: 02 42        COP $42
-D1/B5A4: 82 C2 01     BRL $D1B769
-D1/B5A7: F0 00        BEQ $B5A9
-D1/B5A9: F0 00        BEQ $B5AB
-D1/B5AB: F0 00        BEQ $B5AD
-D1/B5AD: F0 00        BEQ $B5AF
+D1/B5A4: 82 C2 01     BRL Routine_D1B769
+D1/B5A7: F0 00        BEQ Local_D1B5A9
+Local_D1B5A9:
+D1/B5A9: F0 00        BEQ Local_D1B5AB
+Local_D1B5AB:
+D1/B5AB: F0 00        BEQ Local_D1B5AD
+Local_D1B5AD:
+D1/B5AD: F0 00        BEQ Local_D1B5AF
+Local_D1B5AF:
 D1/B5AF: 06 00        ASL $00
 D1/B5B1: 06 00        ASL $00
 D1/B5B3: 00 00        BRK $00
@@ -99,9 +107,9 @@ D1/B60A: D6 8E        DEC $8E,X
 D1/B60C: 8F CF CE 08  STA $08CECF
 D1/B610: 09 49        ORA #$49
 D1/B612: 48           PHA
-D1/B613: 10 11        BPL $B626
+D1/B613: 10 11        BPL Routine_D1B626
 D1/B615: 51 50        EOR ($50),Y
-D1/B617: 90 91        BCC $B5AA
+D1/B617: 90 91        BCC Routine_D1B5AA
 D1/B619: D1 D0        CMP ($D0),Y
 D1/B61B: 88           DEY
 D1/B61C: 89 C9        BIT #$C9
@@ -170,7 +178,8 @@ D1/B699: 00 00        BRK $00
 D1/B69B: 00 00        BRK $00
 D1/B69D: 00 00        BRK $00
 D1/B69F: 00 01        BRK $01
-D1/B6A1: 80 00        BRA $B6A3
+D1/B6A1: 80 00        BRA Local_D1B6A3
+Local_D1B6A3:
 D1/B6A3: 00 00        BRK $00
 D1/B6A5: 00 00        BRK $00
 D1/B6A7: 00 00        BRK $00
@@ -196,7 +205,7 @@ D1/B6CD: 00 00        BRK $00
 D1/B6CF: 00 40        BRK $40
 D1/B6D1: 08           PHP
 D1/B6D2: 48           PHA
-D1/B6D3: 10 50        BPL $B725
+D1/B6D3: 10 50        BPL Routine_D1B725
 D1/B6D5: 01 00        ORA ($00,X)
 D1/B6D7: 00 00        BRK $00
 D1/B6D9: 00 00        BRK $00

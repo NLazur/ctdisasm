@@ -8,7 +8,8 @@ D0/12EB: 00 00        BRK $00
 D0/12ED: 00 00        BRK $00
 D0/12EF: 00 00        BRK $00
 D0/12F1: 00 80        BRK $80
-D0/12F3: 80 00        BRA $12F5
+D0/12F3: 80 00        BRA Local_D012F5
+Local_D012F5:
 D0/12F5: 00 00        BRK $00
 D0/12F7: 00 00        BRK $00
 D0/12F9: 00 00        BRK $00

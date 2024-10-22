@@ -12,19 +12,20 @@ C2/BD6E: A9 24 30     LDA #$3024
 C2/BD71: 85 61        STA $61
 C2/BD73: A9 08 00     LDA #$0008
 C2/BD76: 85 02        STA $02
+Local_C2BD78:
 C2/BD78: E2 30        SEP #$30
 C2/BD7A: A4 00        LDY $00
 C2/BD7C: B9 00 0F     LDA $0F00,Y
 C2/BD7F: 8D 4C 0F     STA $0F4C
 C2/BD82: C2 30        REP #$30
 C2/BD84: A6 61        LDX $61
-C2/BD86: 20 99 BD     JSR $BD99
+C2/BD86: 20 99 BD     JSR Routine_C2BD99
 C2/BD89: E6 00        INC $00
 C2/BD8B: A5 61        LDA $61
 C2/BD8D: 18           CLC
 C2/BD8E: 69 80 00     ADC #$0080
 C2/BD91: 85 61        STA $61
 C2/BD93: C6 02        DEC $02
-C2/BD95: D0 E1        BNE $BD78
+C2/BD95: D0 E1        BNE Local_C2BD78
 C2/BD97: 28           PLP
 C2/BD98: 60           RTS

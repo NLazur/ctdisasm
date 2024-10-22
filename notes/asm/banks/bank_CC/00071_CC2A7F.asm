@@ -1,6 +1,6 @@
 ; Bank: CC | Start Address: 2A7F
 Routine_CC2A7F:
-CC/2A7F: 80 08        BRA $2A89
+CC/2A7F: 80 08        BRA Routine_CC2A89
 CC/2A81: 3C 04 23     BIT $2304,X
 CC/2A84: 04 00        TSB $00
 CC/2A86: 23 08        AND $08,S

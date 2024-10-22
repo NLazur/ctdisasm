@@ -2,11 +2,11 @@
 Routine_C33D20:
 C3/3D20: A2 44        LDX #$44
 C3/3D22: 00 66        BRK $66
-C3/3D24: 4C CA 64     JMP $64CA
+C3/3D24: 4C CA 64     JMP Routine_C364CA
 C3/3D27: 84 11        STY $11
 C3/3D29: AB           PLB
 C3/3D2A: 28           PLP
-C3/3D2B: 10 60        BPL $3D8D
+C3/3D2B: 10 60        BPL Routine_C33D8D
 C3/3D2D: 08           PHP
 C3/3D2E: 7B           TDC
 C3/3D2F: EB           XBA

@@ -1,12 +1,13 @@
 ; Bank: D1 | Start Address: 878C
 Routine_D1878C:
-D1/878C: 80 70        BRA $87FE
+D1/878C: 80 70        BRA Routine_D187FE
 D1/878E: 00 8A        BRK $8A
 D1/8790: 41 80        EOR ($80,X)
-D1/8792: 70 00        BVS $8794
+D1/8792: 70 00        BVS Local_D18794
+Local_D18794:
 D1/8794: 87 04        STA [$04]
 D1/8796: 98           TYA
-D1/8797: 30 95        BMI $872E
+D1/8797: 30 95        BMI Routine_D1872E
 D1/8799: 0F 00 00 9D  ORA $9D0000
 D1/879D: 17 88        ORA [$88],Y
 D1/879F: 00 83        BRK $83
@@ -15,20 +16,21 @@ D1/87A4: 89 00        BIT #$00
 D1/87A6: 00 00        BRK $00
 D1/87A8: 02 8B        COP $8B
 D1/87AA: 00 8F        BRK $8F
-D1/87AC: 80 08        BRA $87B6
+D1/87AC: 80 08        BRA Local_D187B6
 D1/87AE: 04 7F        TSB $7F
 D1/87B0: 84 8B        STY $8B
 D1/87B2: 00 82        BRK $82
 D1/87B4: 61 8F        ADC ($8F,X)
-D1/87B6: 80 08        BRA $87C0
+Local_D187B6:
+D1/87B6: 80 08        BRA Routine_D187C0
 D1/87B8: 04 7F        TSB $7F
-D1/87BA: 82 61 8F     BRL $D1171E
-D1/87BD: 80 08        BRA $87C7
+D1/87BA: 82 61 8F     BRL Routine_D1171E
+D1/87BD: 80 08        BRA Routine_D187C7
 D1/87BF: 04 7F        TSB $7F
 D1/87C1: A9 1A        LDA #$1A
 D1/87C3: 09 83        ORA #$83
 D1/87C5: 1F 82 61 8F  ORA $8F6182,X
-D1/87C9: 80 08        BRA $87D3
+D1/87C9: 80 08        BRA Routine_D187D3
 D1/87CB: 04 80        TSB $80
 D1/87CD: 0E 7F 84     ASL $847F
 D1/87D0: 83 3B        STA $3B,S
@@ -37,31 +39,33 @@ D1/87D4: 00 00        BRK $00
 D1/87D6: 02 8B        COP $8B
 D1/87D8: 01 82        ORA ($82,X)
 D1/87DA: 61 8F        ADC ($8F,X)
-D1/87DC: 80 08        BRA $87E6
+D1/87DC: 80 08        BRA Local_D187E6
 D1/87DE: 04 7F        TSB $7F
 D1/87E0: 84 B7        STY $B7
 D1/87E2: 01 17        ORA ($17,X)
 D1/87E4: 91 08        STA ($08),Y
+Local_D187E6:
 D1/87E6: A2 87        LDX #$87
 D1/87E8: 02 FF        COP $FF
 D1/87EA: 01 93        ORA ($93,X)
-D1/87EC: 10 02        BPL $87F0
+D1/87EC: 10 02        BPL Local_D187F0
 D1/87EE: 07 9D        ORA [$9D]
+Local_D187F0:
 D1/87F0: 13 DC        ORA ($DC,S),Y
 D1/87F2: B6 91        LDX $91,Y
 D1/87F4: BE 9E 83     LDX $839E,Y
 D1/87F7: 0F 7F 84 DC  ORA $DC847F
 D1/87FB: B6 91        LDX $91,Y
 D1/87FD: BE 9E 83     LDX $839E,Y
-D1/8800: 30 7F        BMI $8881
+D1/8800: 30 7F        BMI Routine_D18881
 D1/8802: 84 DC        STY $DC
 D1/8804: B6 91        LDX $91,Y
 D1/8806: BE 9E 83     LDX $839E,Y
 D1/8809: 1F 7F 84 E6  ORA $E6847F,X
 D1/880D: 01 8E        ORA ($8E,X)
-D1/880F: 50 10        BVC $8821
+D1/880F: 50 10        BVC Routine_D18821
 D1/8811: 09 FF        ORA #$FF
-D1/8813: 80 12        BRA $8827
+D1/8813: 80 12        BRA Routine_D18827
 D1/8815: 02 8E        COP $8E
-D1/8817: 50 20        BVC $8839
+D1/8817: 50 20        BVC Routine_D18839
 D1/8819: 60           RTS

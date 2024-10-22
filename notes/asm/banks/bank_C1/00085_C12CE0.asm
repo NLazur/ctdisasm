@@ -8,6 +8,7 @@ C1/2CE8: 4A           LSR
 C1/2CE9: 4A           LSR
 C1/2CEA: 4A           LSR
 C1/2CEB: C9 05        CMP #$05
-C1/2CED: 90 03        BCC $2CF2
+C1/2CED: 90 03        BCC Local_C12CF2
 C1/2CEF: CE 72 98     DEC $9872
+Local_C12CF2:
 C1/2CF2: 60           RTS

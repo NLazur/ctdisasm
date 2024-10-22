@@ -2,37 +2,43 @@
 Routine_CC1CB4:
 CC/1CB4: 02 00        COP $00
 CC/1CB6: 12 80        ORA ($80)
-CC/1CB8: 80 00        BRA $1CBA
+CC/1CB8: 80 00        BRA Local_CC1CBA
+Local_CC1CBA:
 CC/1CBA: 00 00        BRK $00
-CC/1CBC: 82 00 40     BRL $CC5CBF
+CC/1CBC: 82 00 40     BRL Routine_CC5CBF
 CC/1CBF: 12 00        ORA ($00)
 CC/1CC1: 13 80        ORA ($80,S),Y
-CC/1CC3: 80 07        BRA $1CCC
+CC/1CC3: 80 07        BRA Local_CC1CCC
 CC/1CC5: 00 00        BRK $00
-CC/1CC7: 82 00 40     BRL $CC5CCA
+CC/1CC7: 82 00 40     BRL Routine_CC5CCA
 CC/1CCA: 12 00        ORA ($00)
+Local_CC1CCC:
 CC/1CCC: 14 80        TRB $80
-CC/1CCE: 80 07        BRA $1CD7
+CC/1CCE: 80 07        BRA Local_CC1CD7
 CC/1CD0: 00 00        BRK $00
-CC/1CD2: 82 00 40     BRL $CC5CD5
+CC/1CD2: 82 00 40     BRL Routine_CC5CD5
 CC/1CD5: 00 00        BRK $00
+Local_CC1CD7:
 CC/1CD7: 15 80        ORA $80,X
-CC/1CD9: 80 00        BRA $1CDB
+CC/1CD9: 80 00        BRA Local_CC1CDB
+Local_CC1CDB:
 CC/1CDB: 00 00        BRK $00
-CC/1CDD: 82 00 40     BRL $CC5CE0
+CC/1CDD: 82 00 40     BRL Routine_CC5CE0
 CC/1CE0: 12 00        ORA ($00)
 CC/1CE2: 16 80        ASL $80,X
-CC/1CE4: 80 07        BRA $1CED
+CC/1CE4: 80 07        BRA Local_CC1CED
 CC/1CE6: 00 00        BRK $00
-CC/1CE8: 82 00 40     BRL $CC5CEB
+CC/1CE8: 82 00 40     BRL Routine_CC5CEB
 CC/1CEB: 12 00        ORA ($00)
+Local_CC1CED:
 CC/1CED: 17 80        ORA [$80],Y
-CC/1CEF: 80 07        BRA $1CF8
+CC/1CEF: 80 07        BRA Local_CC1CF8
 CC/1CF1: 00 00        BRK $00
-CC/1CF3: 82 00 40     BRL $CC5CF6
+CC/1CF3: 82 00 40     BRL Routine_CC5CF6
 CC/1CF6: 12 00        ORA ($00)
+Local_CC1CF8:
 CC/1CF8: 18           CLC
-CC/1CF9: 80 80        BRA $1C7B
+CC/1CF9: 80 80        BRA Routine_CC1C7B
 CC/1CFB: 07 00        ORA [$00]
 CC/1CFD: 00 03        BRK $03
 CC/1CFF: 00 40        BRK $40
@@ -43,13 +49,13 @@ CC/1D08: 00 03        BRK $03
 CC/1D0A: 00 40        BRK $40
 CC/1D0C: 00 00        BRK $00
 CC/1D0E: 1A           INC
-CC/1D0F: 80 80        BRA $1C91
+CC/1D0F: 80 80        BRA Routine_CC1C91
 CC/1D11: 00 00        BRK $00
 CC/1D13: 00 03        BRK $03
 CC/1D15: 00 40        BRK $40
 CC/1D17: 42 00        WDM $00
 CC/1D19: 1B           TCS
-CC/1D1A: 80 80        BRA $1C9C
+CC/1D1A: 80 80        BRA Routine_CC1C9C
 CC/1D1C: 07 00        ORA [$00]
 CC/1D1E: 00 03        BRK $03
 CC/1D20: 00 40        BRK $40

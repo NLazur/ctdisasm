@@ -4,7 +4,7 @@ D0/4FB5: C0 20 E0     CPY #$E020
 D0/4FB8: 00 00        BRK $00
 D0/4FBA: 00 00        BRK $00
 D0/4FBC: 00 40        BRK $40
-D0/4FBE: 20 10 00     JSR $0010
+D0/4FBE: 20 10 00     JSR Routine_D00010
 D0/4FC1: 00 00        BRK $00
 D0/4FC3: 00 00        BRK $00
 D0/4FC5: 00 03        BRK $03

@@ -1,11 +1,12 @@
 ; Bank: D0 | Start Address: E435
 Routine_D0E435:
-D0/E435: 20 5F 4C     JSR $4C5F
+D0/E435: 20 5F 4C     JSR Routine_D04C5F
 D0/E438: 3C 14 28     BIT $2814,X
-D0/E43B: 80 2A        BRA $E467
+Local_D0E43B:
+D0/E43B: 80 2A        BRA Routine_D0E467
 D0/E43D: 0C 29 F4     TSB $F429
 D0/E440: 28           PLP
-D0/E441: 30 F8        BMI $E43B
+D0/E441: 30 F8        BMI Local_D0E43B
 D0/E443: 00 08        BRK $08
 D0/E445: DC 09 08     JMP [$0809]
 D0/E448: 7E CC 98     ROR $98CC,X

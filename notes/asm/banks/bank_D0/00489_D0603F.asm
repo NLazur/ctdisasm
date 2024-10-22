@@ -11,7 +11,7 @@ D0/604D: 0D 14 1B     ORA $1B14
 D0/6050: 00 00        BRK $00
 D0/6052: 00 00        BRK $00
 D0/6054: 7C 7C F0     JMP ($F07C,X)
-D0/6057: F0 40        BEQ $6099
+D0/6057: F0 40        BEQ Local_D06099
 D0/6059: C0 30 F0     CPY #$F030
 D0/605C: 00 00        BRK $00
 D0/605E: C0 C0 00     CPY #$00C0
@@ -31,9 +31,9 @@ D0/607C: 0A           ASL
 D0/607D: 0D 12 1F     ORA $1F12
 D0/6080: 38           SEC
 D0/6081: 2C 78 6A     BIT $6A78
-D0/6084: 70 52        BVS $60D8
-D0/6086: 70 54        BVS $60DC
-D0/6088: F0 D8        BEQ $6062
+D0/6084: 70 52        BVS Routine_D060D8
+D0/6086: 70 54        BVS Routine_D060DC
+D0/6088: F0 D8        BEQ Routine_D06062
 D0/608A: E0 90 E0     CPX #$E090
 D0/608D: A0 C0 40     LDY #$40C0
 D0/6090: EA           NOP
@@ -41,6 +41,7 @@ D0/6091: AB           PLB
 D0/6092: 51 39        EOR ($39),Y
 D0/6094: 6C 54 2A     JMP ($2A54)
 D0/6097: 36 0D        ROL $0D,X
+Local_D06099:
 D0/6099: 0B           PHD
 D0/609A: 03 04        ORA $04,S
 D0/609C: 02 03        COP $03
@@ -67,7 +68,7 @@ D0/60C6: 04 1C        TSB $1C
 D0/60C8: 38           SEC
 D0/60C9: 38           SEC
 D0/60CA: 00 00        BRK $00
-D0/60CC: 80 80        BRA $604E
+D0/60CC: 80 80        BRA Routine_D0604E
 D0/60CE: 00 00        BRK $00
 D0/60D0: 46 4F        LSR $4F
 D0/60D2: 39 79 50     AND $5079,Y

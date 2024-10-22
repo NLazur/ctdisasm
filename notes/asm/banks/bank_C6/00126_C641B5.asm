@@ -3,7 +3,7 @@ Routine_C641B5:
 C6/41B5: 16 9A        ASL $9A,X
 C6/41B7: 16 92        ASL $92,X
 C6/41B9: 16 93        ASL $93,X
-C6/41BB: 20 30 9B     JSR $9B30
+C6/41BB: 20 30 9B     JSR Routine_C69B30
 C6/41BE: 00 56        BRK $56
 C6/41C0: C0 56 AC     CPY #$AC56
 C6/41C3: 16 00        ASL $00,X
@@ -12,25 +12,26 @@ C6/41C7: 00 56        BRK $56
 C6/41C9: 00 00        BRK $00
 C6/41CB: 9D 16 9E     STA $9E16,X
 C6/41CE: 16 AD        ASL $AD,X
-C6/41D0: 10 16        BPL $41E8
+C6/41D0: 10 16        BPL Routine_C641E8
 C6/41D2: AE 16 9B     LDX $9B16
 C6/41D5: 16 00        ASL $00,X
-C6/41D7: B0 16        BCS $41EF
-C6/41D9: B0 41        BCS $421C
+C6/41D7: B0 16        BCS Local_C641EF
+C6/41D9: B0 41        BCS Local_C6421C
 C6/41DB: 1A           INC
 C6/41DC: 00 BF        BRK $BF
 C6/41DE: 56 C6        LSR $C6,X
 C6/41E0: 16 C5        ASL $C5,X
-C6/41E2: 20 00 96     JSR $9600
+C6/41E2: 20 00 96     JSR Routine_C69600
 C6/41E5: 15 1E        ORA $1E,X
 C6/41E7: 00 BF        BRK $BF
 C6/41E9: 58           CLI
-C6/41EA: 10 C0        BPL $41AC
+C6/41EA: 10 C0        BPL Routine_C641AC
 C6/41EC: 1E 00 B1     ASL $B100,X
+Local_C641EF:
 C6/41EF: 16 B9        ASL $B9,X
 C6/41F1: 0B           PHD
 C6/41F2: 58           CLI
-C6/41F3: 10 80        BPL $4175
+C6/41F3: 10 80        BPL Routine_C64175
 C6/41F5: 68           PLA
 C6/41F6: BF 1E 00 C5  LDA $C5001E,X
 C6/41FA: 16 C6        ASL $C6,X
@@ -48,13 +49,15 @@ C6/4210: B6 16        LDX $16,Y
 C6/4212: B5 56        LDA $56,X
 C6/4214: 9E 16 9F     STZ $9F16,X
 C6/4217: 16 15        ASL $15,X
-C6/4219: 20 68 B0     JSR $B068
+C6/4219: 20 68 B0     JSR Routine_C6B068
+Local_C6421C:
 C6/421C: 5E 00 98     LSR $9800,X
 C6/421F: 7E 00 C5     ROR $C500,X
 C6/4222: 56 8F        LSR $8F,X
 C6/4224: 14 16        TRB $16
 C6/4226: A8           TAY
-C6/4227: 80 00        BRA $4229
+C6/4227: 80 00        BRA Local_C64229
+Local_C64229:
 C6/4229: A8           TAY
 C6/422A: 06 10        ASL $10
 C6/422C: 00 00        BRK $00
@@ -65,7 +68,8 @@ C6/4234: 08           PHP
 C6/4235: 08           PHP
 C6/4236: AB           PLB
 C6/4237: 08           PHP
-C6/4238: 10 00        BPL $423A
+C6/4238: 10 00        BPL Local_C6423A
+Local_C6423A:
 C6/423A: 00 8A        BRK $8A
 C6/423C: C5 A2        CMP $A2
 C6/423E: 00 A8        BRK $A8
@@ -75,5 +79,5 @@ C6/4243: 16 B8        ASL $B8,X
 C6/4245: AC 00 D6     LDY $D600
 C6/4248: 8E 18 20     STX $2018
 C6/424B: 00 69        BRK $69
-C6/424D: 80 38        BRA $4287
+C6/424D: 80 38        BRA Routine_C64287
 C6/424F: 60           RTS

@@ -16,19 +16,22 @@ C1/94EB: 0A           ASL
 C1/94EC: 0A           ASL
 C1/94ED: AA           TAX
 C1/94EE: A5 02        LDA $02
-C1/94F0: D0 0E        BNE $9500
+C1/94F0: D0 0E        BNE Local_C19500
 C1/94F2: BD 9E B1     LDA $B19E,X
 C1/94F5: 29 10        AND #$10
 C1/94F7: 45 00        EOR $00
-C1/94F9: D0 13        BNE $950E
-C1/94FB: 20 3E 8C     JSR $8C3E
-C1/94FE: 80 13        BRA $9513
+C1/94F9: D0 13        BNE Local_C1950E
+C1/94FB: 20 3E 8C     JSR Routine_C18C3E
+C1/94FE: 80 13        BRA Local_C19513
+Local_C19500:
 C1/9500: BD 9E B1     LDA $B19E,X
 C1/9503: 29 10        AND #$10
 C1/9505: 45 00        EOR $00
-C1/9507: F0 05        BEQ $950E
-C1/9509: 20 3E 8C     JSR $8C3E
-C1/950C: 80 05        BRA $9513
+C1/9507: F0 05        BEQ Local_C1950E
+C1/9509: 20 3E 8C     JSR Routine_C18C3E
+C1/950C: 80 05        BRA Local_C19513
+Local_C1950E:
 C1/950E: A9 01        LDA #$01
 C1/9510: 8D 24 AF     STA $AF24
+Local_C19513:
 C1/9513: 60           RTS

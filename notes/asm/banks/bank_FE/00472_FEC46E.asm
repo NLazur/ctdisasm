@@ -2,7 +2,7 @@
 Routine_FEC46E:
 FE/C46E: 0A           ASL
 FE/C46F: 63 BB        ADC $BB,S
-FE/C471: 80 07        BRA $C47A
+FE/C471: 80 07        BRA Routine_FEC47A
 FE/C473: C7 03        CMP [$03]
 FE/C475: 51 F0        EOR ($F0),Y
 FE/C477: 03 05        ORA $05,S
@@ -10,18 +10,19 @@ FE/C479: 04 99        TSB $99
 FE/C47B: 07 08        ORA [$08]
 FE/C47D: AE 17 CB     LDX $CB17
 FE/C480: 08           PHP
-FE/C481: 50 09        BVC $C48C
+FE/C481: 50 09        BVC Local_FEC48C
 FE/C483: 00 07        BRK $07
 FE/C485: BE 27 56     LDX $5627,Y
 FE/C488: 52 08        EOR ($08)
 FE/C48A: 00 98        BRK $98
+Local_FEC48C:
 FE/C48C: 07 BB        ORA [$BB]
 FE/C48E: C8           INY
 FE/C48F: 17 01        ORA [$01],Y
-FE/C491: 30 59        BMI $C4EC
+FE/C491: 30 59        BMI Routine_FEC4EC
 FE/C493: 38           SEC
 FE/C494: 02 01        COP $01
-FE/C496: 10 B6        BPL $C44E
+FE/C496: 10 B6        BPL Routine_FEC44E
 FE/C498: 03 58        ORA $58,S
 FE/C49A: DA           PHX
 FE/C49B: 0D 3E 5D     ORA $5D3E
@@ -29,7 +30,7 @@ FE/C49E: 09 10        ORA #$10
 FE/C4A0: E4 13        CPX $13
 FE/C4A2: BE 17 62     LDX $6217,Y
 FE/C4A5: 16 4D        ASL $4D,X
-FE/C4A7: 22 5A 58 8E  JSR $8E585A
+FE/C4A7: 22 5A 58 8E  JSR Routine_8E585A
 FE/C4AB: 5D 54 02     EOR $0254,X
 FE/C4AE: 1E 00 0F     ASL $0F00,X
 FE/C4B1: 04 53        TSB $53

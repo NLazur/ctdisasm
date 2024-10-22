@@ -36,6 +36,7 @@ FD/E4CB: 5A           PHY
 FD/E4CC: B9 22 05     LDA $0522,Y
 FD/E4CF: A8           TAY
 FD/E4D0: C2 20        REP #$20
+Local_FDE4D2:
 FD/E4D2: BF 00 00 F6  LDA $F60000,X
 FD/E4D6: 87 18        STA [$18]
 FD/E4D8: E6 18        INC $18
@@ -43,7 +44,7 @@ FD/E4DA: E6 18        INC $18
 FD/E4DC: E8           INX
 FD/E4DD: E8           INX
 FD/E4DE: 88           DEY
-FD/E4DF: D0 F1        BNE $E4D2
+FD/E4DF: D0 F1        BNE Local_FDE4D2
 FD/E4E1: E2 20        SEP #$20
 FD/E4E3: A9 00        LDA #$00
 FD/E4E5: EB           XBA

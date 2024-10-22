@@ -16,11 +16,12 @@ C3/BE3B: 08           PHP
 C3/BE3C: 54 2C E8     MVN $2C,$E8
 C3/BE3F: 4D 50 08     EOR $0850
 C3/BE42: 16 00        ASL $00,X
-C3/BE44: B0 2C        BCS $BE72
-C3/BE46: 30 08        BMI $BE50
-C3/BE48: 90 2C        BCC $BE76
-C3/BE4A: 80 03        BRA $BE4F
+C3/BE44: B0 2C        BCS Routine_C3BE72
+C3/BE46: 30 08        BMI Local_C3BE50
+C3/BE48: 90 2C        BCC Routine_C3BE76
+C3/BE4A: 80 03        BRA Routine_C3BE4F
 C3/BE4C: C0 0B        CPY #$0B
-C3/BE4E: 50 C8        BVC $BE18
+C3/BE4E: 50 C8        BVC Routine_C3BE18
+Local_C3BE50:
 C3/BE50: 02 37        COP $37
 C3/BE52: 40           RTI

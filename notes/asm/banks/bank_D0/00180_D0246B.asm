@@ -1,7 +1,8 @@
 ; Bank: D0 | Start Address: 246B
 Routine_D0246B:
 D0/246B: C0 A0 60     CPY #$60A0
-D0/246E: D0 30        BNE $24A0
+D0/246E: D0 30        BNE Routine_D024A0
+Local_D02470:
 D0/2470: E8           INX
 D0/2471: 18           CLC
 D0/2472: 74 8C        STZ $8C,X
@@ -11,10 +12,11 @@ D0/2477: 7B           TDC
 D0/2478: 00 00        BRK $00
 D0/247A: 00 00        BRK $00
 D0/247C: 00 00        BRK $00
-D0/247E: F0 F0        BEQ $2470
+D0/247E: F0 F0        BEQ Local_D02470
 D0/2480: 8E FE 61     STX $61FE
 D0/2483: 5F 58 67 2F  EOR $2F6758,X
-D0/2487: 30 00        BMI $2489
+D0/2487: 30 00        BMI Local_D02489
+Local_D02489:
 D0/2489: 00 00        BRK $00
 D0/248B: 00 00        BRK $00
 D0/248D: 00 00        BRK $00

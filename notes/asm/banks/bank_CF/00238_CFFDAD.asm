@@ -3,12 +3,13 @@ Routine_CFFDAD:
 CF/FDAD: DA           PHX
 CF/FDAE: 7B           TDC
 CF/FDAF: AA           TAX
+Local_CFFDB0:
 CF/FDB0: 38           SEC
 CF/FDB1: AD 99 94     LDA $9499
 CF/FDB4: E9 E8        SBC #$E8
 CF/FDB6: 03 8D        ORA $8D,S
 CF/FDB8: 99 94 E8     STA $E894,Y
-CF/FDBB: B0 F3        BCS $FDB0
+CF/FDBB: B0 F3        BCS Local_CFFDB0
 CF/FDBD: 18           CLC
 CF/FDBE: AD 99 94     LDA $9499
 CF/FDC1: 69 E8        ADC #$E8
@@ -17,12 +18,13 @@ CF/FDC5: 99 94 CA     STA $CA94,Y
 CF/FDC8: DA           PHX
 CF/FDC9: 7B           TDC
 CF/FDCA: AA           TAX
+Local_CFFDCB:
 CF/FDCB: 38           SEC
 CF/FDCC: AD 99 94     LDA $9499
 CF/FDCF: E9 64        SBC #$64
 CF/FDD1: 00 8D        BRK $8D
 CF/FDD3: 99 94 E8     STA $E894,Y
-CF/FDD6: B0 F3        BCS $FDCB
+CF/FDD6: B0 F3        BCS Local_CFFDCB
 CF/FDD8: 18           CLC
 CF/FDD9: AD 99 94     LDA $9499
 CF/FDDC: 69 64        ADC #$64
@@ -31,12 +33,13 @@ CF/FDE0: 99 94 CA     STA $CA94,Y
 CF/FDE3: DA           PHX
 CF/FDE4: 7B           TDC
 CF/FDE5: AA           TAX
+Local_CFFDE6:
 CF/FDE6: 38           SEC
 CF/FDE7: AD 99 94     LDA $9499
 CF/FDEA: E9 0A        SBC #$0A
 CF/FDEC: 00 8D        BRK $8D
 CF/FDEE: 99 94 E8     STA $E894,Y
-CF/FDF1: B0 F3        BCS $FDE6
+CF/FDF1: B0 F3        BCS Local_CFFDE6
 CF/FDF3: 18           CLC
 CF/FDF4: AD 99 94     LDA $9499
 CF/FDF7: 69 0A        ADC #$0A

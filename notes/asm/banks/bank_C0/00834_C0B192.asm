@@ -9,14 +9,15 @@ C0/B19B: E2 10        SEP #$10
 C0/B19D: AF 00 20 7F  LDA $7F2000
 C0/B1A1: A2 00        LDX #$00
 C0/B1A3: A0 00        LDY #$00
+Local_C0B1A5:
 C0/B1A5: 96 00        STX $00,Y
 C0/B1A7: C8           INY
 C0/B1A8: C8           INY
 C0/B1A9: 3A           DEC
-C0/B1AA: D0 F9        BNE $B1A5
+C0/B1AA: D0 F9        BNE Local_C0B1A5
 C0/B1AC: C2 10        REP #$10
 C0/B1AE: 2B           PLD
-C0/B1AF: 82 83 37     BRL $C0E935
+C0/B1AF: 82 83 37     BRL Routine_C0E935
 C0/B1B2: C2 20        REP #$20
 C0/B1B4: A9 00 09     LDA #$0900
 C0/B1B7: 5B           TCD
@@ -30,8 +31,9 @@ C0/B1C6: 8D 70 43     STA $4370
 C0/B1C9: A9 7F        LDA #$7F
 C0/B1CB: 8D 74 43     STA $4374
 C0/B1CE: A2 00 00     LDX #$0000
+Local_C0B1D1:
 C0/B1D1: B5 A0        LDA $A0,X
-C0/B1D3: F0 2C        BEQ $B201
+C0/B1D3: F0 2C        BEQ Local_C0B201
 C0/B1D5: B4 50        LDY $50,X
 C0/B1D7: 8C 16 21     STY $2116
 C0/B1DA: B4 40        LDY $40,X
@@ -50,6 +52,7 @@ C0/B1F8: A9 80        LDA #$80
 C0/B1FA: 8D 0B 42     STA $420B
 C0/B1FD: E8           INX
 C0/B1FE: E8           INX
-C0/B1FF: 80 D0        BRA $B1D1
+C0/B1FF: 80 D0        BRA Local_C0B1D1
+Local_C0B201:
 C0/B201: 64 A0        STZ $A0
 C0/B203: 60           RTS

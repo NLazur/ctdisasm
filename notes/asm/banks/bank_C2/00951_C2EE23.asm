@@ -19,8 +19,9 @@ C2/EE3B: 3A           DEC
 C2/EE3C: 3A           DEC
 C2/EE3D: 0A           ASL
 C2/EE3E: 3A           DEC
-C2/EE3F: 30 03        BMI $EE44
+C2/EE3F: 30 03        BMI Local_C2EE44
 C2/EE41: 54 7E 7E     MVN $7E,$7E
+Local_C2EE44:
 C2/EE44: A5 08        LDA $08
 C2/EE46: 09 03 00     ORA #$0003
 C2/EE49: 99 00 00     STA $0000,Y

@@ -15,7 +15,7 @@ C3/9211: 08           PHP
 C3/9212: CA           DEX
 C3/9213: 0E 00 08     ASL $0800
 C3/9216: 07 01        ORA [$01]
-C3/9218: 90 07        BCC $9221
+C3/9218: 90 07        BCC Routine_C39221
 C3/921A: 44 0F 02     MVP $0F,$02
 C3/921D: 08           PHP
 C3/921E: 81 0F        STA ($0F,X)
@@ -26,11 +26,12 @@ C3/9226: 08           PHP
 C3/9227: FB           XCE
 C3/9228: 0F 05 00 08  ORA $080005
 C3/922C: 38           SEC
-C3/922D: 10 06        BPL $9235
-C3/922F: 10 58        BPL $9289
+C3/922D: 10 06        BPL Local_C39235
+C3/922F: 10 58        BPL Routine_C39289
 C3/9231: 1B           TCS
 C3/9232: 38           SEC
 C3/9233: 02 EE        COP $EE
+Local_C39235:
 C3/9235: A2 05 20     LDX #$2005
 C3/9238: 34 4F        BIT $4F,X
 C3/923A: 7B           TDC

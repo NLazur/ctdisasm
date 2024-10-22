@@ -11,6 +11,6 @@ C7/0A07: 1A           INC
 C7/0A08: 18           CLC
 C7/0A09: 69 F1        ADC #$F1
 C7/0A0B: 85 F2        STA $F2
-C7/0A0D: 20 12 0A     JSR $0A12
+C7/0A0D: 20 12 0A     JSR Routine_C70A12
 C7/0A10: 28           PLP
 C7/0A11: 60           RTS

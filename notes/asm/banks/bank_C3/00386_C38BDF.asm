@@ -3,14 +3,14 @@ Routine_C38BDF:
 C3/8BDF: 02 01        COP $01
 C3/8BE1: 52 3D        EOR ($3D)
 C3/8BE3: 11 24        ORA ($24),Y
-C3/8BE5: 10 36        BPL $8C1D
+C3/8BE5: 10 36        BPL Local_C38C1D
 C3/8BE7: 00 43        BRK $43
 C3/8BE9: C8           INY
 C3/8BEA: BC 06 7F     LDY $7F06,X
-C3/8BED: 22 10 52 52  JSR $525210
+C3/8BED: 22 10 52 52  JSR Routine_525210
 C3/8BF1: 11 40        ORA ($40),Y
 C3/8BF3: 32 00        AND ($00)
-C3/8BF5: 10 43        BPL $8C3A
+C3/8BF5: 10 43        BPL Local_C38C3A
 C3/8BF7: 45 08        EOR $08
 C3/8BF9: 7F 0F 90 22  ADC $22900F,X
 C3/8BFD: 0B           PHD
@@ -28,35 +28,37 @@ C3/8C13: 04 0B        TSB $0B
 C3/8C15: 24 05        BIT $05
 C3/8C17: 00 27        BRK $27
 C3/8C19: 94 02        STY $02,X
-C3/8C1B: 80 10        BRA $8C2D
+C3/8C1B: 80 10        BRA Routine_C38C2D
+Local_C38C1D:
 C3/8C1D: 00 24        BRK $24
 C3/8C1F: 9F 02 F0 0B  STA $0BF002,X
 C3/8C23: 35 DD        AND $DD,X
 C3/8C25: 42 00        WDM $00
 C3/8C27: 35 5E        AND $5E,X
 C3/8C29: 49 35 9E     EOR #$9E35
-C3/8C2C: 30 35        BMI $8C63
+C3/8C2C: 30 35        BMI Routine_C38C63
 C3/8C2E: 64 00        STZ $00
 C3/8C30: 32 35        AND ($35)
 C3/8C32: 94 2F        STY $2F,X
 C3/8C34: 35 28        AND $28,X
 C3/8C36: 56 37        LSR $37,X
 C3/8C38: 01 B7        ORA ($B7,X)
+Local_C38C3A:
 C3/8C3A: 00 01        BRK $01
 C3/8C3C: 17 09        ORA [$09],Y
 C3/8C3E: CE 10 7F     DEC $7F10
 C3/8C41: 09 02 DB     ORA #$DB02
 C3/8C44: 04 00        TSB $00
 C3/8C46: E8           INX
-C3/8C47: 10 7F        BPL $8CC8
+C3/8C47: 10 7F        BPL Routine_C38CC8
 C3/8C49: 44 00 00     MVP $00,$00
 C3/8C4C: 00 44        BRK $44
 C3/8C4E: 01 00        ORA ($00,X)
 C3/8C50: 27 A8        AND [$A8]
 C3/8C52: 1B           TCS
-C3/8C53: 10 09        BPL $8C5E
+C3/8C53: 10 09        BPL Routine_C38C5E
 C3/8C55: 00 09        BRK $09
-C3/8C57: 10 13        BPL $8C6C
+C3/8C57: 10 13        BPL Routine_C38C6C
 C3/8C59: 7F 26 A7 1B  ADC $1BA726,X
 C3/8C5D: 02 02        COP $02
 C3/8C5F: 1E C4 00     ASL $00C4,X

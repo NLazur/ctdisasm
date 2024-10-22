@@ -13,6 +13,7 @@ C6/E53F: 65 08        ADC $08
 C6/E541: AA           TAX
 C6/E542: AD 54 03     LDA $0354
 C6/E545: 85 00        STA $00
+Local_C6E547:
 C6/E547: B9 00 00     LDA $0000,Y
 C6/E54A: 9D 00 00     STA $0000,X
 C6/E54D: 88           DEY
@@ -20,7 +21,7 @@ C6/E54E: 88           DEY
 C6/E54F: E8           INX
 C6/E550: E8           INX
 C6/E551: C6 00        DEC $00
-C6/E553: D0 F2        BNE $E547
+C6/E553: D0 F2        BNE Local_C6E547
 C6/E555: A6 4E        LDX $4E
 C6/E557: BD 24 00     LDA $0024,X
 C6/E55A: 0A           ASL

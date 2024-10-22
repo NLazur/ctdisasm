@@ -1,9 +1,9 @@
 ; Bank: CC | Start Address: E1B0
 Routine_CCE1B0:
 CC/E1B0: 3A           DEC
-CC/E1B1: D0 7A        BNE $E22D
+CC/E1B1: D0 7A        BNE Local_CCE22D
 CC/E1B3: A9 01 8F     LDA #$8F01
-CC/E1B6: 70 43        BVS $E1FB
+CC/E1B6: 70 43        BVS Routine_CCE1FB
 CC/E1B8: 00 A9        BRK $A9
 CC/E1BA: 18           CLC
 CC/E1BB: 8F 71 43 00  STA $004371
@@ -15,7 +15,7 @@ CC/E1C7: 8F 73 43 00  STA $004373
 CC/E1CB: A9 00 8F     LDA #$8F00
 CC/E1CE: 74 43        STZ $43,X
 CC/E1D0: 00 A9        BRK $A9
-CC/E1D2: 80 8F        BRA $E163
+CC/E1D2: 80 8F        BRA Routine_CCE163
 CC/E1D4: 75 43        ADC $43,X
 CC/E1D6: 00 A9        BRK $A9
 CC/E1D8: 01 8F        ORA ($8F,X)
@@ -25,11 +25,11 @@ CC/E1DE: 8F 16 21 00  STA $002116
 CC/E1E2: A9 7A 8F     LDA #$8F7A
 CC/E1E5: 17 21        ORA [$21],Y
 CC/E1E7: 00 A9        BRK $A9
-CC/E1E9: 80 8F        BRA $E17A
+CC/E1E9: 80 8F        BRA Routine_CCE17A
 CC/E1EB: 0B           PHD
 CC/E1EC: 42 00        WDM $00
 CC/E1EE: A9 01 8F     LDA #$8F01
-CC/E1F1: 70 43        BVS $E236
+CC/E1F1: 70 43        BVS Routine_CCE236
 CC/E1F3: 00 A9        BRK $A9
 CC/E1F5: 18           CLC
 CC/E1F6: 8F 71 43 00  STA $004371
@@ -55,4 +55,5 @@ CC/E224: A9 80 8F     LDA #$8F80
 CC/E227: 0B           PHD
 CC/E228: 42 00        WDM $00
 CC/E22A: EE CA 98     INC $98CA
+Local_CCE22D:
 CC/E22D: 6B           RTL

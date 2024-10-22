@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: 6CCA
 Routine_FD6CCA:
-FD/6CCA: B0 B0        BCS $6C7C
-FD/6CCC: D0 D0        BNE $6C9E
+FD/6CCA: B0 B0        BCS Routine_FD6C7C
+FD/6CCC: D0 D0        BNE Routine_FD6C9E
 FD/6CCE: 78           SEI
 FD/6CCF: 78           SEI
 FD/6CD0: 21 2E        AND ($2E,X)
@@ -21,6 +21,6 @@ FD/6CEC: 05 D9        ORA $D9
 FD/6CEE: 03 E6        ORA $E6,S
 FD/6CF0: 04 EA        TSB $EA
 FD/6CF2: 04 00        TSB $00
-FD/6CF4: 20 11 21     JSR $2111
+FD/6CF4: 20 11 21     JSR Routine_FD2111
 FD/6CF7: 03 80        ORA $80,S
 FD/6CF9: 40           RTI

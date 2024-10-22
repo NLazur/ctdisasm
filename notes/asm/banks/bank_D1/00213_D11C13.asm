@@ -7,12 +7,12 @@ D1/1C19: 36 48        ROL $48,X
 D1/1C1B: 34 30        BIT $30,X
 D1/1C1D: E4 08        CPX $08
 D1/1C1F: FF 4F 48 17  SBC $17484F,X
-D1/1C23: 30 32        BMI $1C57
+D1/1C23: 30 32        BMI Local_D11C57
 D1/1C25: 18           CLC
 D1/1C26: 66 18        ROR $18
 D1/1C28: 15 38        ORA $38,X
 D1/1C2A: 48           PHA
-D1/1C2B: 10 7B        BPL $1CA8
+D1/1C2B: 10 7B        BPL Routine_D11CA8
 D1/1C2D: 08           PHP
 D1/1C2E: 13 40        ORA ($40,S),Y
 D1/1C30: EF 1C 09 8E  SBC $8E091C
@@ -30,14 +30,16 @@ D1/1C49: 3A           DEC
 D1/1C4A: 28           PLP
 D1/1C4B: 6E 11 36     ROR $3611
 D1/1C4E: 18           CLC
-D1/1C4F: 22 00 C0 C0  JSR $C0C000
+D1/1C4F: 22 00 C0 C0  JSR Routine_C0C000
 D1/1C53: 00 01        BRK $01
 D1/1C55: 00 41        BRK $41
+Local_D11C57:
 D1/1C57: 00 81        BRK $81
 D1/1C59: 04 00        TSB $00
 D1/1C5B: C1 0D        CMP ($0D,X)
-D1/1C5D: 10 02        BPL $1C61
+D1/1C5D: 10 02        BPL Local_D11C61
 D1/1C5F: 01 02        ORA ($02,X)
+Local_D11C61:
 D1/1C61: 41 02        EOR ($02,X)
 D1/1C63: 04 81        TSB $81
 D1/1C65: 02 0D        COP $0D

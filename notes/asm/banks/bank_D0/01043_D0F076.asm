@@ -29,13 +29,13 @@ D0/F0AF: 49 20        EOR #$20
 D0/F0B1: 6A           ROR
 D0/F0B2: AC 39 1C     LDY $1C39
 D0/F0B5: 19 6C 01     ORA $016C,Y
-D0/F0B8: 80 01        BRA $F0BB
+D0/F0B8: 80 01        BRA Routine_D0F0BB
 D0/F0BA: F4 12 F5     PEA $F512
 D0/F0BD: 12 5C        ORA ($5C)
 D0/F0BF: 12 5D        ORA ($5D)
 D0/F0C1: EF 04 10 8C  SBC $8C1004
 D0/F0C5: 08           PHP
-D0/F0C6: 90 49        BCC $F111
+D0/F0C6: 90 49        BCC Routine_D0F111
 D0/F0C8: E2 3B        SEP #$3B
 D0/F0CA: 5B           TCD
 D0/F0CB: 24 10        BIT $10
@@ -43,17 +43,17 @@ D0/F0CD: AC 09 2C     LDY $2C09
 D0/F0D0: 08           PHP
 D0/F0D1: 1D 1C 29     ORA $291C,X
 D0/F0D4: 7A           PLY
-D0/F0D5: 80 21        BRA $F0F8
+D0/F0D5: 80 21        BRA Routine_D0F0F8
 D0/F0D7: 84 08        STY $08
 D0/F0D9: 08           PHP
 D0/F0DA: 28           PLP
 D0/F0DB: C6 12        DEC $12
 D0/F0DD: C7 E3        CMP [$E3]
-D0/F0DF: 90 31        BCC $F112
+D0/F0DF: 90 31        BCC Local_D0F112
 D0/F0E1: 9E 2C 6E     STZ $6E2C,X
 D0/F0E4: 12 6F        ORA ($6F)
 D0/F0E6: 24 30        BIT $30
-D0/F0E8: 20 08 1C     JSR $1C08
+D0/F0E8: 20 08 1C     JSR Routine_D01C08
 D0/F0EB: 09 1F        ORA #$1F
 D0/F0ED: 28           PLP
 D0/F0EE: 08           PHP
@@ -64,16 +64,17 @@ D0/F0F5: 08           PHP
 D0/F0F6: 28           PLP
 D0/F0F7: D6 12        DEC $12,X
 D0/F0F9: D7 E3        CMP [$E3],Y
-D0/F0FB: 90 31        BCC $F12E
+D0/F0FB: 90 31        BCC Local_D0F12E
 D0/F0FD: 64 2A        STZ $2A
 D0/F0FF: 7E 12 7F     ROR $7F12,X
 D0/F102: 24 30        BIT $30
-D0/F104: 20 08 B0     JSR $B008
+D0/F104: 20 08 B0     JSR Routine_D0B008
 D0/F107: 08           PHP
 D0/F108: FF 28 08 3C  SBC $3C0828,X
 D0/F10C: 09 80        ORA #$80
 D0/F10E: 09 84        ORA #$84
 D0/F110: 09 78        ORA #$78
+Local_D0F112:
 D0/F112: 08           PHP
 D0/F113: 7C 08 8C     JMP ($8C08,X)
 D0/F116: 28           PLP
@@ -88,6 +89,7 @@ D0/F125: 09 84        ORA #$84
 D0/F127: 09 78        ORA #$78
 D0/F129: 08           PHP
 D0/F12A: FF 7C 08 8C  SBC $8C087C,X
+Local_D0F12E:
 D0/F12E: 28           PLP
 D0/F12F: EC 28 E4     CPX $E428
 D0/F132: 08           PHP
@@ -130,7 +132,7 @@ D0/F16B: 42 00        WDM $00
 D0/F16D: EB           XBA
 D0/F16E: 2C 09 7C     BIT $7C09
 D0/F171: 29 C7        AND #$C7
-D0/F173: 5C 50 E5 8C  JMP $8CE550
+D0/F173: 5C 50 E5 8C  JMP Routine_8CE550
 D0/F177: 21 70        AND ($70,X)
 D0/F179: 18           CLC
 D0/F17A: 04 28        TSB $28
@@ -140,7 +142,7 @@ D0/F184: 29 5C        AND #$5C
 D0/F186: 68           PLA
 D0/F187: 18           CLC
 D0/F188: 0A           ASL
-D0/F189: 70 28        BVS $F1B3
+D0/F189: 70 28        BVS Routine_D0F1B3
 D0/F18B: 04 28        TSB $28
 D0/F18D: 43 0C        EOR $0C,S
 D0/F18F: 04 FF        TSB $FF
@@ -222,7 +224,7 @@ D0/F221: 00 13        BRK $13
 D0/F223: 4B           PHK
 D0/F224: 12 4B        ORA ($4B)
 D0/F226: 11 4B        ORA ($4B),Y
-D0/F228: 10 4B        BPL $F275
+D0/F228: 10 4B        BPL Local_D0F275
 D0/F22A: 00 20        BRK $20
 D0/F22C: 13 21        ORA ($21,S),Y
 D0/F22E: 13 22        ORA ($22,S),Y
@@ -258,9 +260,10 @@ D0/F265: 25 4B        AND $4B
 D0/F267: 24 4B        BIT $4B
 D0/F269: 00 23        BRK $23
 D0/F26B: 4B           PHK
-D0/F26C: 22 4B 21 4B  JSR $4B214B
-D0/F270: 20 4B 00     JSR $004B
-D0/F273: 30 13        BMI $F288
+D0/F26C: 22 4B 21 4B  JSR Routine_4B214B
+D0/F270: 20 4B 00     JSR Routine_D0004B
+D0/F273: 30 13        BMI Local_D0F288
+Local_D0F275:
 D0/F275: 31 13        AND ($13),Y
 D0/F277: 32 13        AND ($13)
 D0/F279: 33 13        AND ($13,S),Y
@@ -271,6 +274,7 @@ D0/F281: 13 37        ORA ($37,S),Y
 D0/F283: 13 00        ORA ($00,S),Y
 D0/F285: 38           SEC
 D0/F286: 13 39        ORA ($39,S),Y
+Local_D0F288:
 D0/F288: 13 3A        ORA ($3A,S),Y
 D0/F28A: 13 3B        ORA ($3B,S),Y
 D0/F28C: 13 00        ORA ($00,S),Y
@@ -296,7 +300,7 @@ D0/F2B1: 00 33        BRK $33
 D0/F2B3: 4B           PHK
 D0/F2B4: 32 4B        AND ($4B)
 D0/F2B6: 31 4B        AND ($4B),Y
-D0/F2B8: 30 4B        BMI $F305
+D0/F2B8: 30 4B        BMI Routine_D0F305
 D0/F2BA: 00 40        BRK $40
 D0/F2BC: 13 41        ORA ($41,S),Y
 D0/F2BE: 13 42        ORA ($42,S),Y
@@ -311,7 +315,7 @@ D0/F2CE: 13 49        ORA ($49,S),Y
 D0/F2D0: 13 4A        ORA ($4A,S),Y
 D0/F2D2: 13 4B        ORA ($4B,S),Y
 D0/F2D4: 13 00        ORA ($00,S),Y
-D0/F2D6: 4C 13 4D     JMP $4D13
+D0/F2D6: 4C 13 4D     JMP Routine_D04D13
 D0/F2D9: 13 4E        ORA ($4E,S),Y
 D0/F2DB: 13 4F        ORA ($4F,S),Y
 D0/F2DD: 13 00        ORA ($00,S),Y

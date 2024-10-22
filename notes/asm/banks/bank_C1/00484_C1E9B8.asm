@@ -11,7 +11,7 @@ C1/E9C5: 86 2A        STX $2A
 C1/E9C7: A9 80        LDA #$80
 C1/E9C9: AA           TAX
 C1/E9CA: 86 28        STX $28
-C1/E9CC: 20 0B C9     JSR $C90B
+C1/E9CC: 20 0B C9     JSR Routine_C1C90B
 C1/E9CF: A6 2C        LDX $2C
 C1/E9D1: 8E F6 B1     STX $B1F6
 C1/E9D4: 60           RTS

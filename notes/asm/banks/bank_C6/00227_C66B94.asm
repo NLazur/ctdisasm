@@ -35,7 +35,7 @@ C6/6BD8: 76 00        ROR $00,X
 C6/6BDA: D8           CLD
 C6/6BDB: D9 DA DB     CMP $DBDA,Y
 C6/6BDE: C1 28        CMP ($28,X)
-C6/6BE0: D0 28        BNE $6C0A
+C6/6BE0: D0 28        BNE Routine_C66C0A
 C6/6BE2: 29 17 99     AND #$9917
 C6/6BE5: 26 06        ROL $06
 C6/6BE7: FA           PLX
@@ -54,7 +54,7 @@ C6/6BFF: 27 07        AND [$07]
 C6/6C01: 09 75 D9     ORA #$D975
 C6/6C04: 36 E5        ROL $E5,X
 C6/6C06: 34 4B        BIT $4B,X
-C6/6C08: 4C 4D 1D     JMP $1D4D
+C6/6C08: 4C 4D 1D     JMP Routine_C61D4D
 C6/6C0B: 1E C6 1F     ASL $1FC6,X
 C6/6C0E: 4E F8 10     LSR $10F8
 C6/6C11: 78           SEI

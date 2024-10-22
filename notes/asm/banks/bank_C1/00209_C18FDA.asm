@@ -10,20 +10,25 @@ C1/8FE8: BF 01 00 CC  LDA $CC0001,X
 C1/8FEC: 85 0A        STA $0A
 C1/8FEE: 7B           TDC
 C1/8FEF: AA           TAX
+Local_C18FF0:
 C1/8FF0: BD 02 AF     LDA $AF02,X
 C1/8FF3: C5 08        CMP $08
-C1/8FF5: F0 0D        BEQ $9004
+C1/8FF5: F0 0D        BEQ Local_C19004
 C1/8FF7: E8           INX
 C1/8FF8: 8A           TXA
 C1/8FF9: CD C6 AE     CMP $AEC6
-C1/8FFC: D0 F2        BNE $8FF0
+C1/8FFC: D0 F2        BNE Local_C18FF0
 C1/8FFE: A5 0A        LDA $0A
-C1/9000: D0 06        BNE $9008
-C1/9002: 80 09        BRA $900D
+C1/9000: D0 06        BNE Local_C19008
+C1/9002: 80 09        BRA Local_C1900D
+Local_C19004:
 C1/9004: A5 0A        LDA $0A
-C1/9006: D0 05        BNE $900D
-C1/9008: 20 3E 8C     JSR $8C3E
-C1/900B: 80 05        BRA $9012
+C1/9006: D0 05        BNE Local_C1900D
+Local_C19008:
+C1/9008: 20 3E 8C     JSR Routine_C18C3E
+C1/900B: 80 05        BRA Local_C19012
+Local_C1900D:
 C1/900D: A9 01        LDA #$01
 C1/900F: 8D 24 AF     STA $AF24
+Local_C19012:
 C1/9012: 60           RTS

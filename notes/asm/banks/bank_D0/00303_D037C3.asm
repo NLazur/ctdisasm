@@ -42,19 +42,19 @@ D0/3819: 03 04        ORA $04,S
 D0/381B: 07 08        ORA [$08]
 D0/381D: 0C 10 10     TSB $1010
 D0/3820: 00 00        BRK $00
-D0/3822: 20 20 20     JSR $2020
-D0/3825: 20 A0 A0     JSR $A0A0
-D0/3828: D0 D0        BNE $37FA
+D0/3822: 20 20 20     JSR Routine_D02020
+D0/3825: 20 A0 A0     JSR Routine_D0A0A0
+D0/3828: D0 D0        BNE Routine_D037FA
 D0/382A: E0 E0        CPX #$E0
-D0/382C: 20 60 A0     JSR $A060
+D0/382C: 20 60 A0     JSR Routine_D0A060
 D0/382F: E0 C0        CPX #$C0
 D0/3831: C0 01 01     CPY #$0101
 D0/3834: 01 01        ORA ($01,X)
-D0/3836: 22 23 60 60  JSR $606023
+D0/3836: 22 23 60 60  JSR Routine_606023
 D0/383A: 28           PLP
 D0/383B: 28           PLP
 D0/383C: 14 14        TRB $14
-D0/383E: 10 10        BPL $3850
+D0/383E: 10 10        BPL Local_D03850
 D0/3840: 08           PHP
 D0/3841: 08           PHP
 D0/3842: 04 04        TSB $04
@@ -63,6 +63,7 @@ D0/3846: 00 00        BRK $00
 D0/3848: 12 13        ORA ($13)
 D0/384A: 9F 9E F5 FE  STA $FEF59E,X
 D0/384E: 47 78        EOR [$78]
+Local_D03850:
 D0/3850: 21 3E        AND ($3E,X)
 D0/3852: 4E 7F F3     LSR $F37F
 D0/3855: F3 00        SBC ($00,S),Y
@@ -70,7 +71,7 @@ D0/3857: 00 84        BRK $84
 D0/3859: 84 4A        STY $4A
 D0/385B: CA           DEX
 D0/385C: 4E CE CC     LSR $CCCE
-D0/385F: 4C BC 7C     JMP $7CBC
+D0/385F: 4C BC 7C     JMP Routine_D07CBC
 D0/3862: 18           CLC
 D0/3863: F8           SED
 D0/3864: E0 E0        CPX #$E0
@@ -123,8 +124,8 @@ D0/38D4: C8           INY
 D0/38D5: 38           SEC
 D0/38D6: C8           INY
 D0/38D7: 38           SEC
-D0/38D8: 10 10        BPL $38EA
-D0/38DA: 10 10        BPL $38EC
-D0/38DC: 20 20 20     JSR $2020
-D0/38DF: 20 40 40     JSR $4040
+D0/38D8: 10 10        BPL Routine_D038EA
+D0/38DA: 10 10        BPL Routine_D038EC
+D0/38DC: 20 20 20     JSR Routine_D02020
+D0/38DF: 20 40 40     JSR Routine_D04040
 D0/38E2: 40           RTI

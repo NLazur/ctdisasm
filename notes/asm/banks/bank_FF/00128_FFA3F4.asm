@@ -15,7 +15,7 @@ FF/A40B: 00 E9        BRK $E9
 FF/A40D: 00 F9        BRK $F9
 FF/A40F: 00 6F        BRK $6F
 FF/A411: B4 6D        LDY $6D,X
-FF/A413: B0 6A        BCS $A47F
+FF/A413: B0 6A        BCS Routine_FFA47F
 FF/A415: B1 65        LDA ($65),Y
 FF/A417: B8           CLV
 FF/A418: 64 BF        STZ $BF
@@ -33,7 +33,7 @@ FF/A42F: 00 FF        BRK $FF
 FF/A431: 69 FD        ADC #$FD
 FF/A433: 51 FF        EOR ($FF),Y
 FF/A435: A6 FE        LDX $FE
-FF/A437: 4C D5 A0     JMP $A0D5
+FF/A437: 4C D5 A0     JMP Routine_FFA0D5
 FF/A43A: FF 00 00 FF  SBC $FF0000,X
 FF/A43E: 00 FF        BRK $FF
 FF/A440: 96 00        STX $00,Y
@@ -78,7 +78,7 @@ FF/A493: 83 BB        STA $BB,S
 FF/A495: 02 D6        COP $D6
 FF/A497: 05 E2        ORA $E2
 FF/A499: C4 CD        CPY $CD
-FF/A49B: 80 B3        BRA $A450
+FF/A49B: 80 B3        BRA Routine_FFA450
 FF/A49D: 08           PHP
 FF/A49E: 7F 29 FE 00  ADC $00FE29,X
 FF/A4A2: FC 00 FD     JSR ($FD00,X)
@@ -91,7 +91,7 @@ FF/A4AF: 00 FF        BRK $FF
 FF/A4B1: 69 FD        ADC #$FD
 FF/A4B3: 51 FF        EOR ($FF),Y
 FF/A4B5: A6 FE        LDX $FE
-FF/A4B7: 4C D5 A0     JMP $A0D5
+FF/A4B7: 4C D5 A0     JMP Routine_FFA0D5
 FF/A4BA: DB           STP
 FF/A4BB: 24 66        BIT $66
 FF/A4BD: 18           CLC
@@ -115,6 +115,7 @@ FF/A4E1: 00 6F        BRK $6F
 FF/A4E3: 00 FF        BRK $FF
 FF/A4E5: 00 5D        BRK $5D
 FF/A4E7: 00 BB        BRK $BB
+Local_FFA4E9:
 FF/A4E9: 00 FF        BRK $FF
 FF/A4EB: 00 FE        BRK $FE
 FF/A4ED: 00 FD        BRK $FD
@@ -125,7 +126,7 @@ FF/A4F5: 81 D5        STA ($D5,X)
 FF/A4F7: 00 B8        BRK $B8
 FF/A4F9: 23 35        AND $35,S
 FF/A4FB: 12 FE        ORA ($FE)
-FF/A4FD: 20 7B 6A     JSR $6A7B
+FF/A4FD: 20 7B 6A     JSR Routine_FF6A7B
 FF/A500: FB           XCE
 FF/A501: 00 F7        BRK $F7
 FF/A503: 00 7F        BRK $7F
@@ -140,7 +141,7 @@ FF/A513: 24 1B        BIT $1B
 FF/A515: 2C 15 C8     BIT $C815
 FF/A518: CE 31 1B     DEC $1B31
 FF/A51B: 45 65        EOR $65
-FF/A51D: 80 CA        BRA $A4E9
+FF/A51D: 80 CA        BRA Local_FFA4E9
 FF/A51F: 00 4D        BRK $4D
 FF/A521: 00 FF        BRK $FF
 FF/A523: 00 F7        BRK $F7

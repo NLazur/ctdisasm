@@ -9,17 +9,17 @@ C6/0CF5: A9 2E 86     LDA #$862E
 C6/0CF8: 3F 49 E3 CC  AND $CCE349,X
 C6/0CFC: B4 E2        LDY $E2,X
 C6/0CFE: 04 0C        TSB $0C
-C6/0D00: 20 30 E0     JSR $E030
-C6/0D03: 50 3C        BVC $0D41
-C6/0D05: D0 B6        BNE $0CBD
-C6/0D07: F0 E7        BEQ $0CF0
+C6/0D00: 20 30 E0     JSR Routine_C6E030
+C6/0D03: 50 3C        BVC Routine_C60D41
+C6/0D05: D0 B6        BNE Routine_C60CBD
+C6/0D07: F0 E7        BEQ Routine_C60CF0
 C6/0D09: 09 56 28     ORA #$2856
 C6/0D0C: 17 9C        ORA [$9C],Y
 C6/0D0E: 33 03        AND ($03,S),Y
 C6/0D10: 03 50        ORA $50,S
 C6/0D12: 07 34        ORA [$34]
 C6/0D14: 05 6C        ORA $6C
-C6/0D16: F0 87        BEQ $0C9F
+C6/0D16: F0 87        BEQ Routine_C60C9F
 C6/0D18: 3B           TSC
 C6/0D19: 04 47        TSB $47
 C6/0D1B: 04 D4        TSB $D4

@@ -1,17 +1,20 @@
 ; Bank: FD | Start Address: A95F
 Routine_FDA95F:
 FD/A95F: AD E7 B3     LDA $B3E7
-FD/A962: F0 05        BEQ $A969
+FD/A962: F0 05        BEQ Local_FDA969
 FD/A964: 64 14        STZ $14
-FD/A966: 20 FE A8     JSR $A8FE
+FD/A966: 20 FE A8     JSR Routine_FDA8FE
+Local_FDA969:
 FD/A969: AD E8 B3     LDA $B3E8
-FD/A96C: F0 07        BEQ $A975
+FD/A96C: F0 07        BEQ Local_FDA975
 FD/A96E: A9 01        LDA #$01
 FD/A970: 85 14        STA $14
-FD/A972: 20 FE A8     JSR $A8FE
+FD/A972: 20 FE A8     JSR Routine_FDA8FE
+Local_FDA975:
 FD/A975: AD E9 B3     LDA $B3E9
-FD/A978: F0 07        BEQ $A981
+FD/A978: F0 07        BEQ Local_FDA981
 FD/A97A: A9 02        LDA #$02
 FD/A97C: 85 14        STA $14
-FD/A97E: 20 FE A8     JSR $A8FE
+FD/A97E: 20 FE A8     JSR Routine_FDA8FE
+Local_FDA981:
 FD/A981: 6B           RTL

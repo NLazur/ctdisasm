@@ -16,7 +16,7 @@ C6/9F93: 1D B0 B8     ORA $B8B0,X
 C6/9F96: 5D 17 00     EOR $0017,X
 C6/9F99: 1B           TCS
 C6/9F9A: 1B           TCS
-C6/9F9B: 10 19        BPL $9FB6
+C6/9F9B: 10 19        BPL Routine_C69FB6
 C6/9F9D: 08           PHP
 C6/9F9E: 08           PHP
 C6/9F9F: 16 A0        ASL $A0,X
@@ -31,7 +31,7 @@ C6/9FB2: 02 3D        COP $3D
 C6/9FB4: 3E 3F 40     ROL $403F,X
 C6/9FB7: 35 6A        AND $6A,X
 C6/9FB9: 17 36        ORA [$36],Y
-C6/9FBB: 4C 61 3D     JMP $3D61
+C6/9FBB: 4C 61 3D     JMP Routine_C63D61
 C6/9FBE: 13 BF        ORA ($BF,S),Y
 C6/9FC0: 16 BE        ASL $BE,X
 C6/9FC2: 03 45        ORA $45,S

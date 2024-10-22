@@ -9,7 +9,7 @@ D0/11B4: 00 00        BRK $00
 D0/11B6: 00 00        BRK $00
 D0/11B8: 17 1B        ORA [$1B],Y
 D0/11BA: 09 16 2F     ORA #$2F16
-D0/11BD: 30 1D        BMI $11DC
+D0/11BD: 30 1D        BMI Routine_D011DC
 D0/11BF: 23 5E        AND $5E,S
 D0/11C1: 61 3F        ADC ($3F,X)
 D0/11C3: 40           RTI

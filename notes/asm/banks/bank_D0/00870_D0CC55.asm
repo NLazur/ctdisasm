@@ -1,11 +1,11 @@
 ; Bank: D0 | Start Address: CC55
 Routine_D0CC55:
-D0/CC55: 20 80 40     JSR $4080
+D0/CC55: 20 80 40     JSR Routine_D04080
 D0/CC58: C0 40        CPY #$40
 D0/CC5A: 00 80        BRK $80
 D0/CC5C: 00 00        BRK $00
 D0/CC5E: 00 00        BRK $00
-D0/CC60: 70 E0        BVS $CC42
+D0/CC60: 70 E0        BVS Routine_D0CC42
 D0/CC62: E0 C0        CPX #$C0
 D0/CC64: C0 80        CPY #$80
 D0/CC66: 00 00        BRK $00
@@ -27,13 +27,13 @@ D0/CC84: 00 00        BRK $00
 D0/CC86: 00 00        BRK $00
 D0/CC88: 00 00        BRK $00
 D0/CC8A: 00 60        BRK $60
-D0/CC8C: 50 80        BVC $CC0E
+D0/CC8C: 50 80        BVC Routine_D0CC0E
 D0/CC8E: 00 60        BRK $60
 D0/CC90: 00 00        BRK $00
 D0/CC92: 00 00        BRK $00
 D0/CC94: 00 70        BRK $70
 D0/CC96: E8           INX
-D0/CC97: 70 01        BVS $CC9A
+D0/CC97: 70 01        BVS Routine_D0CC9A
 D0/CC99: 02 07        COP $07
 D0/CC9B: 09 07        ORA #$07
 D0/CC9D: 18           CLC
@@ -70,7 +70,7 @@ D0/CCDA: 00 00        BRK $00
 D0/CCDC: 01 01        ORA ($01,X)
 D0/CCDE: 01 01        ORA ($01,X)
 D0/CCE0: 0B           PHD
-D0/CCE1: 5C 2B AC 29  JMP $29AC2B
+D0/CCE1: 5C 2B AC 29  JMP Routine_29AC2B
 D0/CCE5: BE 34 BB     LDX $BB34,Y
 D0/CCE8: BB           TYX
 D0/CCE9: 3F BF 3F BF  AND $BF3FBF,X

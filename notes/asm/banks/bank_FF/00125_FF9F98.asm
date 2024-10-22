@@ -1,6 +1,6 @@
 ; Bank: FF | Start Address: 9F98
 Routine_FF9F98:
-FF/9F98: 50 80        BVC $9F1A
+FF/9F98: 50 80        BVC Routine_FF9F1A
 FF/9F9A: A8           TAY
 FF/9F9B: 14 41        TRB $41
 FF/9F9D: 38           SEC
@@ -11,7 +11,7 @@ FF/9FA8: FF 00 FF 00  SBC $00FF00,X
 FF/9FAC: FF 00 FF 00  SBC $00FF00,X
 FF/9FB0: 44 10 10     MVP $10,$10
 FF/9FB3: 04 00        TSB $00
-FF/9FB5: 20 03 40     JSR $4003
+FF/9FB5: 20 03 40     JSR Routine_FF4003
 FF/9FB8: 21 00        AND ($00,X)
 FF/9FBA: 75 00        ADC $00,X
 FF/9FBC: 28           PLP
@@ -26,8 +26,8 @@ FF/9FD2: 1C A0 58     TRB $58A0
 FF/9FD5: 81 33        STA ($33,X)
 FF/9FD7: 00 7A        BRK $7A
 FF/9FD9: 00 E0        BRK $E0
-FF/9FDB: 10 64        BPL $A041
-FF/9FDD: 80 91        BRA $9F70
+FF/9FDB: 10 64        BPL Local_FFA041
+FF/9FDD: 80 91        BRA Routine_FF9F70
 FF/9FDF: 00 FF        BRK $FF
 FF/9FE1: 00 FF        BRK $FF
 FF/9FE3: 00 FF        BRK $FF
@@ -38,12 +38,12 @@ FF/9FEB: 00 FF        BRK $FF
 FF/9FED: 00 FF        BRK $FF
 FF/9FEF: 00 74        BRK $74
 FF/9FF1: 00 61        BRK $61
-FF/9FF3: 80 4A        BRA $A03F
+FF/9FF3: 80 4A        BRA Local_FFA03F
 FF/9FF5: A0 07 40     LDY #$4007
 FF/9FF8: 9E 60 E8     STZ $E860,X
 FF/9FFB: 14 C0        TRB $C0
 FF/9FFD: 38           SEC
-FF/9FFE: 82 70 FF     BRL $FF9F71
+FF/9FFE: 82 70 FF     BRL Routine_FF9F71
 FF/A001: 00 FF        BRK $FF
 FF/A003: 00 FF        BRK $FF
 FF/A005: 00 FF        BRK $FF
@@ -64,14 +64,16 @@ FF/A024: FF 00 FF 00  SBC $00FF00,X
 FF/A028: FF 00 FF 00  SBC $00FF00,X
 FF/A02C: FF 00 FF 00  SBC $00FF00,X
 FF/A030: 0B           PHD
-FF/A031: F0 11        BEQ $A044
+FF/A031: F0 11        BEQ Routine_FFA044
 FF/A033: E4 79        CPX $79
-FF/A035: 80 32        BRA $A069
+FF/A035: 80 32        BRA Local_FFA069
 FF/A037: C0 24 C3     CPY #$C324
 FF/A03A: CB           WAI
 FF/A03B: 04 62        TSB $62
 FF/A03D: 84 14        STY $14
+Local_FFA03F:
 FF/A03F: 00 FF        BRK $FF
+Local_FFA041:
 FF/A041: 00 FF        BRK $FF
 FF/A043: 00 FF        BRK $FF
 FF/A045: 00 FF        BRK $FF
@@ -83,7 +85,7 @@ FF/A04F: 00 FA        BRK $FA
 FF/A051: 00 86        BRK $86
 FF/A053: 78           SEI
 FF/A054: AE 00 1C     LDX $1C00
-FF/A057: 20 6A 01     JSR $016A
+FF/A057: 20 6A 01     JSR Routine_FF016A
 FF/A05A: D4 28        PEI $28
 FF/A05C: A2 51 49     LDX #$4951
 FF/A05F: A6 FF        LDX $FF
@@ -91,6 +93,7 @@ FF/A061: 00 FF        BRK $FF
 FF/A063: 00 FF        BRK $FF
 FF/A065: 00 FF        BRK $FF
 FF/A067: 00 FF        BRK $FF
+Local_FFA069:
 FF/A069: 00 FF        BRK $FF
 FF/A06B: 00 FF        BRK $FF
 FF/A06D: 00 FF        BRK $FF
@@ -103,14 +106,15 @@ FF/A07A: 12 CC        ORA ($CC)
 FF/A07C: 3F 80 B8 41  AND $41B880,X
 FF/A080: FF 00 FF 00  SBC $00FF00,X
 FF/A084: FF 00 FF 00  SBC $00FF00,X
+Local_FFA088:
 FF/A088: FF 00 FF 00  SBC $00FF00,X
 FF/A08C: FF 00 FF 00  SBC $00FF00,X
 FF/A090: FF 00 76 F0  SBC $F07600,X
 FF/A094: 69 E0 2F     ADC #$2FE0
-FF/A097: 80 CB        BRA $A064
+FF/A097: 80 CB        BRA Routine_FFA064
 FF/A099: 84 9A        STY $9A
 FF/A09B: 84 43        STY $43
-FF/A09D: 90 EF        BCC $A08E
+FF/A09D: 90 EF        BCC Routine_FFA08E
 FF/A09F: 91 00        STA ($00),Y
 FF/A0A1: 00 0F        BRK $0F
 FF/A0A3: 00 1F        BRK $1F
@@ -124,9 +128,9 @@ FF/A0B1: 00 17        BRK $17
 FF/A0B3: 17 B8        ORA [$B8],Y
 FF/A0B5: 00 FF        BRK $FF
 FF/A0B7: 00 EF        BRK $EF
-FF/A0B9: 10 45        BPL $A100
+FF/A0B9: 10 45        BPL Routine_FFA100
 FF/A0BB: 00 B6        BRK $B6
-FF/A0BD: 20 E9 E5     JSR $E5E9
+FF/A0BD: 20 E9 E5     JSR Routine_FFE5E9
 FF/A0C0: 00 00        BRK $00
 FF/A0C2: E8           INX
 FF/A0C3: 00 FF        BRK $FF
@@ -137,10 +141,10 @@ FF/A0CB: 00 DF        BRK $DF
 FF/A0CD: 00 1E        BRK $1E
 FF/A0CF: 00 FF        BRK $FF
 FF/A0D1: 00 22        BRK $22
-FF/A0D3: 22 2F 00 FF  JSR $FF002F
+FF/A0D3: 22 2F 00 FF  JSR Routine_FF002F
 FF/A0D7: 00 4F        BRK $4F
-FF/A0D9: 30 37        BMI $A112
-FF/A0DB: 30 AB        BMI $A088
+FF/A0D9: 30 37        BMI Routine_FFA112
+FF/A0DB: 30 AB        BMI Local_FFA088
 FF/A0DD: 84 D0        STY $D0
 FF/A0DF: C0 00 00     CPY #$0000
 FF/A0E2: DD 00 FF     CMP $FF00,X
@@ -155,6 +159,7 @@ FF/A0F3: 01 E5        ORA ($E5,X)
 FF/A0F5: 01 BF        ORA ($BF,X)
 FF/A0F7: 61 79        ADC ($79,X)
 FF/A0F9: E1 CF        SBC ($CF,X)
+Local_FFA0FB:
 FF/A0FB: 5B           TCD
 FF/A0FC: FD 19 DD     SBC $DD19,X
 FF/A0FF: 19 01 00     ORA $0001,Y
@@ -163,11 +168,11 @@ FF/A106: 3F 00 BF 00  AND $00BF00,X
 FF/A10A: AD 00 EF     LDA $EF00
 FF/A10D: 00 EF        BRK $EF
 FF/A10F: 00 8E        BRK $8E
-FF/A111: 90 A9        BCC $A0BC
+FF/A111: 90 A9        BCC Routine_FFA0BC
 FF/A113: 91 C5        STA ($C5),Y
 FF/A115: B1 E2        LDA ($E2),Y
-FF/A117: 90 E2        BCC $A0FB
-FF/A119: 90 EC        BCC $A107
+FF/A117: 90 E2        BCC Local_FFA0FB
+FF/A119: 90 EC        BCC Routine_FFA107
 FF/A11B: 94 C3        STY $C3,X
 FF/A11D: 93 C7        STA ($C7,S),Y
 FF/A11F: 92 6F        STA ($6F)
@@ -197,12 +202,12 @@ FF/A14D: 00 EF        BRK $EF
 FF/A14F: 00 AB        BRK $AB
 FF/A151: B2 8D        LDA ($8D)
 FF/A153: B4 A6        LDY $A6,X
-FF/A155: 90 A4        BCC $A0FB
-FF/A157: 90 C7        BCC $A120
-FF/A159: 90 CF        BCC $A12A
-FF/A15B: 90 EF        BCC $A14C
+FF/A155: 90 A4        BCC Local_FFA0FB
+FF/A157: 90 C7        BCC Routine_FFA120
+FF/A159: 90 CF        BCC Routine_FFA12A
+FF/A15B: 90 EF        BCC Routine_FFA14C
 FF/A15D: 93 AF        STA ($AF,S),Y
-FF/A15F: D0 4D        BNE $A1AE
+FF/A15F: D0 4D        BNE Routine_FFA1AE
 FF/A161: 00 6B        BRK $6B
 FF/A163: 00 6F        BRK $6F
 FF/A165: 00 6F        BRK $6F
@@ -252,7 +257,7 @@ FF/A1C9: 00 FF        BRK $FF
 FF/A1CB: 00 FF        BRK $FF
 FF/A1CD: 00 FF        BRK $FF
 FF/A1CF: 00 8E        BRK $8E
-FF/A1D1: 70 0F        BVS $A1E2
+FF/A1D1: 70 0F        BVS Routine_FFA1E2
 FF/A1D3: E0 C4        CPX #$C4
 FF/A1D5: 3B           TSC
 FF/A1D6: 00 FF        BRK $FF
@@ -287,9 +292,9 @@ FF/A22D: 00 E0        BRK $E0
 FF/A22F: 00 1A        BRK $1A
 FF/A231: 00 76        BRK $76
 FF/A233: 06 A1        ASL $A1
-FF/A235: 82 FC 3F     BRL $FFE234
+FF/A235: 82 FC 3F     BRL Routine_FFE234
 FF/A238: 33 30        AND ($30,S),Y
-FF/A23A: D0 D0        BNE $A20C
+FF/A23A: D0 D0        BNE Routine_FFA20C
 FF/A23C: 24 E4        BIT $E4
 FF/A23E: AC AE FF     LDY $FFAE
 FF/A241: 00 F9        BRK $F9
@@ -318,7 +323,7 @@ FF/A271: DF 4E 0A ED  CMP $ED0A4E,X
 FF/A275: 81 13        STA ($13,X)
 FF/A277: 85 D1        STA $D1
 FF/A279: C0 A2        CPY #$A2
-FF/A27B: 80 C0        BRA $A23D
+FF/A27B: 80 C0        BRA Routine_FFA23D
 FF/A27D: A3 32        LDA $32,S
 FF/A27F: 24 20        BIT $20
 FF/A281: 00 F5        BRK $F5
@@ -334,6 +339,6 @@ FF/A293: 00 C6        BRK $C6
 FF/A295: 31 62        AND ($62),Y
 FF/A297: 83 69        STA $69,S
 FF/A299: 81 B3        STA ($B3,X)
-FF/A29B: 30 04        BMI $A2A1
+FF/A29B: 30 04        BMI Routine_FFA2A1
 FF/A29D: 05 69        ORA $69
 FF/A29F: 60           RTS

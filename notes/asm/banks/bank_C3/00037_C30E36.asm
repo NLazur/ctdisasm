@@ -4,19 +4,19 @@ C3/0E36: 0A           ASL
 C3/0E37: 2D 2D 20     AND $202D
 C3/0E3A: 4A           LSR
 C3/0E3B: 45 54        EOR $54
-C3/0E3D: 20 42 49     JSR $4942
+C3/0E3D: 20 42 49     JSR Routine_C34942
 C3/0E40: 4B           PHK
 C3/0E41: 45 20        EOR $20
 C3/0E43: 52 41        EOR ($41)
 C3/0E45: 43 45        EOR $45,S
-C3/0E47: 20 2D 2D     JSR $2D2D
+C3/0E47: 20 2D 2D     JSR Routine_C32D2D
 C3/0E4A: 0A           ASL
 C3/0E4B: 42 49        WDM $49
 C3/0E4D: 4B           PHK
 C3/0E4E: 45 20        EOR $20
 C3/0E50: 4F 42 4A 45  EOR $454A42
 C3/0E54: 43 54        EOR $54,S
-C3/0E56: 20 20 3A     JSR $3A20
+C3/0E56: 20 20 3A     JSR Routine_C33A20
 C3/0E59: 4D 41 4D     EOR $4D41
 C3/0E5C: 49 20        EOR #$20
 C3/0E5E: 4B           PHK
@@ -25,7 +25,7 @@ C3/0E61: 41 49        EOR ($49,X)
 C3/0E63: 0A           ASL
 C3/0E64: 4A           LSR
 C3/0E65: 4F 4E 4E 59  EOR $594E4E
-C3/0E69: 20 4F 42     JSR $424F
+C3/0E69: 20 4F 42     JSR Routine_C3424F
 C3/0E6C: 4A           LSR
 C3/0E6D: 45 43        EOR $43
 C3/0E6F: 54 20 3A     MVN $20,$3A
@@ -37,9 +37,9 @@ C3/0E7C: 41 49        EOR ($49,X)
 C3/0E7E: 0A           ASL
 C3/0E7F: 4D 4F 44     EOR $444F
 C3/0E82: 45 37        EOR $37
-C3/0E84: 20 52 4F     JSR $4F52
+C3/0E84: 20 52 4F     JSR Routine_C34F52
 C3/0E87: 41 44        EOR ($44,X)
-C3/0E89: 20 20 20     JSR $2020
+C3/0E89: 20 20 20     JSR Routine_C32020
 C3/0E8C: 3A           DEC
 C3/0E8D: 4B           PHK
 C3/0E8E: 41 4E        EOR ($4E,X)
@@ -50,9 +50,9 @@ C3/0E97: 41 4B        EOR ($4B,X)
 C3/0E99: 41 0A        EOR ($0A,X)
 C3/0E9B: 42 41        WDM $41
 C3/0E9D: 43 4B        EOR $4B,S
-C3/0E9F: 20 47 52     JSR $5247
+C3/0E9F: 20 47 52     JSR Routine_C35247
 C3/0EA2: 4F 55 4E 44  EOR $444E55
-C3/0EA6: 20 20 3A     JSR $3A20
+C3/0EA6: 20 20 3A     JSR Routine_C33A20
 C3/0EA9: 41 4B        EOR ($4B,X)
 C3/0EAB: 41 4E        EOR ($4E,X)
 C3/0EAD: 45 20        EOR $20
@@ -60,9 +60,9 @@ C3/0EAF: 48           PHA
 C3/0EB0: 41 52        EOR ($52,X)
 C3/0EB2: 55 4B        EOR $4B,X
 C3/0EB4: 49 0A        EOR #$0A
-C3/0EB6: 50 41        BVC $0EF9
+C3/0EB6: 50 41        BVC Local_C30EF9
 C3/0EB8: 4E 45 4C     LSR $4C45
-C3/0EBB: 20 26 20     JSR $2026
+C3/0EBB: 20 26 20     JSR Routine_C32026
 C3/0EBE: 46 4F        LSR $4F
 C3/0EC0: 4E 54 20     LSR $2054
 C3/0EC3: 3A           DEC
@@ -75,19 +75,20 @@ C3/0ED0: 4F 54 4F 0A  EOR $0A4F54
 C3/0ED4: 54 48 41     MVN $48,$41
 C3/0ED7: 4E 4B 20     LSR $204B
 C3/0EDA: 59 4F 55     EOR $554F,Y
-C3/0EDD: 20 46 4F     JSR $4F46
+C3/0EDD: 20 46 4F     JSR Routine_C34F46
 C3/0EE0: 52 20        EOR ($20)
 C3/0EE2: 35 28        AND $28,X
 C3/0EE4: 21 29        AND ($29,X)
-C3/0EE6: 20 47 52     JSR $5247
+C3/0EE6: 20 47 52     JSR Routine_C35247
 C3/0EE9: 41 50        EOR ($50,X)
 C3/0EEB: 48           PHA
 C3/0EEC: 49 43        EOR #$43
-C3/0EEE: 20 44 45     JSR $4544
+C3/0EEE: 20 44 45     JSR Routine_C34544
 C3/0EF1: 53 49        EOR ($49,S),Y
 C3/0EF3: 47 4E        EOR [$4E]
 C3/0EF5: 45 52        EOR $52
 C3/0EF7: 53 2E        EOR ($2E,S),Y
+Local_C30EF9:
 C3/0EF9: 0A           ASL
 C3/0EFA: 0B           PHD
 C3/0EFB: 8B           PHB
@@ -100,23 +101,27 @@ C3/0F05: A0 35 0F     LDY #$0F35
 C3/0F08: 84 F6        STY $F6
 C3/0F0A: A5 61        LDA $61
 C3/0F0C: C5 63        CMP $63
-C3/0F0E: 90 05        BCC $0F15
+C3/0F0E: 90 05        BCC Local_C30F15
 C3/0F10: A0 48 0F     LDY #$0F48
 C3/0F13: A5 63        LDA $63
+Local_C30F15:
 C3/0F15: C5 65        CMP $65
-C3/0F17: 90 05        BCC $0F1E
+C3/0F17: 90 05        BCC Local_C30F1E
 C3/0F19: A0 5B 0F     LDY #$0F5B
 C3/0F1C: A5 65        LDA $65
+Local_C30F1E:
 C3/0F1E: C5 67        CMP $67
-C3/0F20: 90 05        BCC $0F27
+C3/0F20: 90 05        BCC Local_C30F27
 C3/0F22: A0 6E 0F     LDY #$0F6E
 C3/0F25: A5 67        LDA $67
+Local_C30F27:
 C3/0F27: 85 68        STA $68
 C3/0F29: C2 20        REP #$20
 C3/0F2B: A9 04 00     LDA #$0004
 C3/0F2E: 85 F4        STA $F4
 C3/0F30: 84 F0        STY $F0
 C3/0F32: 6C F0 03     JMP ($03F0)
+Local_C30F35:
 C3/0F35: A5 60        LDA $60
 C3/0F37: 85 53        STA $53
 C3/0F39: A5 61        LDA $61
@@ -125,7 +130,7 @@ C3/0F3D: A5 62        LDA $62
 C3/0F3F: 85 57        STA $57
 C3/0F41: A5 63        LDA $63
 C3/0F43: 85 59        STA $59
-C3/0F45: 20 83 0F     JSR $0F83
+C3/0F45: 20 83 0F     JSR Local_C30F83
 C3/0F48: A5 62        LDA $62
 C3/0F4A: 85 53        STA $53
 C3/0F4C: A5 63        LDA $63
@@ -134,7 +139,7 @@ C3/0F50: A5 64        LDA $64
 C3/0F52: 85 57        STA $57
 C3/0F54: A5 65        LDA $65
 C3/0F56: 85 59        STA $59
-C3/0F58: 20 83 0F     JSR $0F83
+C3/0F58: 20 83 0F     JSR Local_C30F83
 C3/0F5B: A5 64        LDA $64
 C3/0F5D: 85 53        STA $53
 C3/0F5F: A5 65        LDA $65
@@ -143,7 +148,7 @@ C3/0F63: A5 66        LDA $66
 C3/0F65: 85 57        STA $57
 C3/0F67: A5 67        LDA $67
 C3/0F69: 85 59        STA $59
-C3/0F6B: 20 83 0F     JSR $0F83
+C3/0F6B: 20 83 0F     JSR Local_C30F83
 C3/0F6E: A5 66        LDA $66
 C3/0F70: 85 53        STA $53
 C3/0F72: A5 67        LDA $67
@@ -152,21 +157,23 @@ C3/0F76: A5 60        LDA $60
 C3/0F78: 85 57        STA $57
 C3/0F7A: A5 61        LDA $61
 C3/0F7C: 85 59        STA $59
-C3/0F7E: 20 83 0F     JSR $0F83
-C3/0F81: 80 B2        BRA $0F35
+C3/0F7E: 20 83 0F     JSR Local_C30F83
+C3/0F81: 80 B2        BRA Local_C30F35
+Local_C30F83:
 C3/0F83: A9 00 FF     LDA #$FF00
 C3/0F86: 14 55        TRB $55
 C3/0F88: 14 59        TRB $59
 C3/0F8A: A5 59        LDA $59
 C3/0F8C: C5 55        CMP $55
-C3/0F8E: 10 0C        BPL $0F9C
+C3/0F8E: 10 0C        BPL Local_C30F9C
 C3/0F90: A5 F6        LDA $F6
-C3/0F92: F0 08        BEQ $0F9C
+C3/0F92: F0 08        BEQ Local_C30F9C
 C3/0F94: E6 50        INC $50
 C3/0F96: A5 55        LDA $55
 C3/0F98: 85 6A        STA $6A
 C3/0F9A: 64 F6        STZ $F6
-C3/0F9C: 22 25 10 C3  JSR $C31025
+Local_C30F9C:
+C3/0F9C: 22 25 10 C3  JSR Routine_C31025
 C3/0FA0: C6 F4        DEC $F4
-C3/0FA2: F0 01        BEQ $0FA5
+C3/0FA2: F0 01        BEQ Routine_C30FA5
 C3/0FA4: 60           RTS

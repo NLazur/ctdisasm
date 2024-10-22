@@ -8,6 +8,7 @@ C2/EC42: 85 00        STA $00
 C2/EC44: A0 06        LDY #$06
 C2/EC46: C2 30        REP #$30
 C2/EC48: A6 61        LDX $61
+Local_C2EC4A:
 C2/EC4A: A5 00        LDA $00
 C2/EC4C: 9D 00 00     STA $0000,X
 C2/EC4F: 1A           INC
@@ -27,7 +28,7 @@ C2/EC67: 18           CLC
 C2/EC68: 69 40 00     ADC #$0040
 C2/EC6B: AA           TAX
 C2/EC6C: 88           DEY
-C2/EC6D: D0 DB        BNE $EC4A
+C2/EC6D: D0 DB        BNE Local_C2EC4A
 C2/EC6F: AD 46 0D     LDA $0D46
 C2/EC72: 29 07 00     AND #$0007
 C2/EC75: 0A           ASL

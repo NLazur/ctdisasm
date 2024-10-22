@@ -8,6 +8,6 @@ C3/957C: C6 7E        DEC $7E
 C3/957E: 09 34 07     ORA #$0734
 C3/9581: FA           PLX
 C3/9582: 16 04        ASL $04,X
-C3/9584: 20 0C 80     JSR $800C
+C3/9584: 20 0C 80     JSR Routine_C3800C
 C3/9587: AA           TAX
 C3/9588: 40           RTI

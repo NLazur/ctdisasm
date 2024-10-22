@@ -38,9 +38,9 @@ C6/7083: 99 2B E0     STA $E02B,Y
 C6/7086: 4D 77 87     EOR $8777
 C6/7089: 88           DEY
 C6/708A: 99 C0 08     STA $08C0,Y
-C6/708D: 82 34 26     BRL $C696C4
+C6/708D: 82 34 26     BRL Routine_C696C4
 C6/7090: 02 02        COP $02
-C6/7092: 50 88        BVC $701C
+C6/7092: 50 88        BVC Routine_C6701C
 C6/7094: 08           PHP
 C6/7095: 87 88        STA [$88]
 C6/7097: 89 23 A0     BIT #$A023
@@ -70,7 +70,7 @@ C6/70C8: E0 C2        CPX #$C2
 C6/70CA: 01 F0        ORA ($F0,X)
 C6/70CC: 58           CLI
 C6/70CD: 47 0B        EOR [$0B]
-C6/70CF: 30 31        BMI $7102
+C6/70CF: 30 31        BMI Routine_C67102
 C6/70D1: 04 44        TSB $44
 C6/70D3: 32 DB        AND ($DB)
 C6/70D5: 01 77        ORA ($77,X)

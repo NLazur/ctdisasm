@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 01CA
 Routine_D001CA:
-D0/01CA: 80 C0        BRA $018C
+D0/01CA: 80 C0        BRA Routine_D0018C
 D0/01CC: 00 C0        BRK $C0
 D0/01CE: C0 40        CPY #$40
 D0/01D0: 00 00        BRK $00
@@ -9,7 +9,7 @@ D0/01D4: 00 00        BRK $00
 D0/01D6: 00 00        BRK $00
 D0/01D8: 00 00        BRK $00
 D0/01DA: 00 00        BRK $00
-D0/01DC: 80 80        BRA $015E
+D0/01DC: 80 80        BRA Routine_D0015E
 D0/01DE: C0 C0        CPY #$C0
 D0/01E0: 00 00        BRK $00
 D0/01E2: 00 00        BRK $00

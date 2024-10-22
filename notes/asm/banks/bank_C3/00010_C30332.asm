@@ -3,7 +3,7 @@ Routine_C30332:
 C3/0332: 18           CLC
 C3/0333: 65 23        ADC $23
 C3/0335: C5 31        CMP $31
-C3/0337: D0 11        BNE $034A
+C3/0337: D0 11        BNE Routine_C3034A
 C3/0339: A5 2D        LDA $2D
 C3/033B: A8           TAY
 C3/033C: 38           SEC
@@ -17,6 +17,7 @@ C3/034B: 31 A2        AND ($A2),Y
 C3/034D: 00 00        BRK $00
 C3/034F: A5 1F        LDA $1F
 C3/0351: 85 35        STA $35
+Local_C30353:
 C3/0353: 8A           TXA
 C3/0354: 65 29        ADC $29
 C3/0356: AA           TAX
@@ -296,23 +297,26 @@ C3/050F: 18           CLC
 C3/0510: 69 04 00     ADC #$0004
 C3/0513: 85 2F        STA $2F
 C3/0515: C6 35        DEC $35
-C3/0517: F0 03        BEQ $051C
-C3/0519: 4C 53 03     JMP $0353
+C3/0517: F0 03        BEQ Local_C3051C
+C3/0519: 4C 53 03     JMP Local_C30353
+Local_C3051C:
 C3/051C: A5 2D        LDA $2D
 C3/051E: 18           CLC
 C3/051F: 69 20 00     ADC #$0020
 C3/0522: 85 2D        STA $2D
 C3/0524: 85 2F        STA $2F
-C3/0526: 4C 09 03     JMP $0309
+C3/0526: 4C 09 03     JMP Routine_C30309
 C3/0529: E2 20        SEP #$20
 C3/052B: 48           PHA
 C3/052C: AF 11 42 00  LDA $004211
+Local_C30530:
 C3/0530: AF 12 42 00  LDA $004212
 C3/0534: 89 40        BIT #$40
-C3/0536: D0 F8        BNE $0530
+C3/0536: D0 F8        BNE Local_C30530
+Local_C30538:
 C3/0538: AF 12 42 00  LDA $004212
 C3/053C: 89 40        BIT #$40
-C3/053E: F0 F8        BEQ $0538
+C3/053E: F0 F8        BEQ Local_C30538
 C3/0540: A9 80        LDA #$80
 C3/0542: 8F 00 21 00  STA $002100
 C3/0546: 68           PLA

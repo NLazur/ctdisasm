@@ -4,30 +4,31 @@ FE/3056: 59 00 5B     EOR $5B00,Y
 FE/3059: 04 47        TSB $47
 FE/305B: 57 72        EOR [$72],Y
 FE/305D: 0A           ASL
-FE/305E: 80 08        BRA $3068
+FE/305E: 80 08        BRA Local_FE3068
 FE/3060: 3F AA 12 EE  AND $EE12AA,X
 FE/3064: 00 7F        BRK $7F
 FE/3066: 03 80        ORA $80,S
+Local_FE3068:
 FE/3068: 53 C0        EOR ($C0,S),Y
 FE/306A: 61 00        ADC ($00,X)
 FE/306C: 5B           TCD
 FE/306D: 59 6F F0     EOR $F06F,Y
 FE/3070: 7F 59 58 58  ADC $585859,X
-FE/3074: 80 10        BRA $3086
+FE/3074: 80 10        BRA Routine_FE3086
 FE/3076: 34 24        BIT $24,X
 FE/3078: 7F 0B 00 54  ADC $54000B,X
 FE/307C: 0F C0 59 54  ORA $5459C0
 FE/3080: 21 97        AND ($97,X)
 FE/3082: BB           TYX
-FE/3083: 80 53        BRA $30D8
+FE/3083: 80 53        BRA Routine_FE30D8
 FE/3085: 7C 74 75     JMP ($7574,X)
 FE/3088: 74 6F        STZ $6F,X
 FE/308A: 69 5B D4     ADC #$D45B
 FE/308D: 38           SEC
-FE/308E: 80 43        BRA $30D3
+FE/308E: 80 43        BRA Routine_FE30D3
 FE/3090: 27 00        AND [$00]
 FE/3092: 76 28        ROR $28,X
-FE/3094: 10 80        BPL $3016
+FE/3094: 10 80        BPL Routine_FE3016
 FE/3096: 61 7C        ADC ($7C,X)
 FE/3098: BB           TYX
 FE/3099: 01 0D        ORA ($0D,X)
@@ -35,7 +36,7 @@ FE/309B: 1C 00 7B     TRB $7B00
 FE/309E: 1F 00 03 6C  ORA $6C0300,X
 FE/30A2: 34 10        BIT $10,X
 FE/30A4: 75 17        ADC $17,X
-FE/30A6: 10 FD        BPL $30A5
+FE/30A6: 10 FD        BPL Routine_FE30A5
 FE/30A8: 27 10        AND [$10]
 FE/30AA: 57 44        EOR [$44],Y
 FE/30AC: 08           PHP

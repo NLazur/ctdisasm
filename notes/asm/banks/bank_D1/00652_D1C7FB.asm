@@ -45,9 +45,10 @@ D1/C864: 0B           PHD
 D1/C865: 0C 4C 4B     TSB $4B4C
 D1/C868: 4A           LSR
 D1/C869: 49 48        EOR #$48
-D1/C86B: 10 11        BPL $C87E
+D1/C86B: 10 11        BPL Routine_D1C87E
 D1/C86D: 12 13        ORA ($13)
 D1/C86F: 14 54        TRB $54
+Local_D1C871:
 D1/C871: 53 52        EOR ($52,S),Y
 D1/C873: 51 50        EOR ($50),Y
 D1/C875: 18           CLC
@@ -90,16 +91,18 @@ D1/C8CB: 0A           ASL
 D1/C8CC: 4A           LSR
 D1/C8CD: 4A           LSR
 D1/C8CE: 49 48        EOR #$48
-D1/C8D0: 10 0A        BPL $C8DC
+Local_D1C8D0:
+D1/C8D0: 10 0A        BPL Local_D1C8DC
 D1/C8D2: 0A           ASL
 D1/C8D3: 0A           ASL
 D1/C8D4: 4A           LSR
 D1/C8D5: 4A           LSR
 D1/C8D6: 4A           LSR
-D1/C8D7: 50 18        BVC $C8F1
+D1/C8D7: 50 18        BVC Local_D1C8F1
 D1/C8D9: 0A           ASL
 D1/C8DA: 0A           ASL
 D1/C8DB: 0A           ASL
+Local_D1C8DC:
 D1/C8DC: 4A           LSR
 D1/C8DD: 4A           LSR
 D1/C8DE: 4A           LSR
@@ -112,19 +115,21 @@ D1/C8E4: CA           DEX
 D1/C8E5: CA           DEX
 D1/C8E6: CA           DEX
 D1/C8E7: D8           CLD
-D1/C8E8: 90 8A        BCC $C874
+D1/C8E8: 90 8A        BCC Routine_D1C874
 D1/C8EA: 8A           TXA
 D1/C8EB: 8A           TXA
 D1/C8EC: CA           DEX
 D1/C8ED: CA           DEX
 D1/C8EE: CA           DEX
-D1/C8EF: D0 80        BNE $C871
+D1/C8EF: D0 80        BNE Local_D1C871
+Local_D1C8F1:
 D1/C8F1: 88           DEY
 D1/C8F2: 89 8A        BIT #$8A
 D1/C8F4: 8A           TXA
 D1/C8F5: CA           DEX
 D1/C8F6: CA           DEX
 D1/C8F7: C9 C8        CMP #$C8
+Local_D1C8F9:
 D1/C8F9: 84 80        STY $80
 D1/C8FB: 81 82        STA ($82,X)
 D1/C8FD: 83 C3        STA $C3,S
@@ -135,9 +140,9 @@ D1/C905: 66 C3        ROR $C3
 D1/C907: E4 64        CPX $64
 D1/C909: 38           SEC
 D1/C90A: 3C 10 78     BIT $7810,X
-D1/C90D: 10 78        BPL $C987
+D1/C90D: 10 78        BPL Routine_D1C987
 D1/C90F: CC 87 3F     CPY $3F87
-D1/C912: 82 11 C2     BRL $D18B26
+D1/C912: 82 11 C2     BRL Routine_D18B26
 D1/C915: 91 27        STA ($27),Y
 D1/C917: E3 17        SBC $17,S
 D1/C919: 43 0E        EOR $0E,S
@@ -148,46 +153,49 @@ D1/C920: 78           SEI
 D1/C921: 2B           PLD
 D1/C922: FC 00 01     JSR ($0100,X)
 D1/C925: 48           PHA
-D1/C926: D0 89        BNE $C8B1
+D1/C926: D0 89        BNE Routine_D1C8B1
 D1/C928: 45 3C        EOR $3C
 D1/C92A: 3D 50 C8     AND $C850,X
 D1/C92D: 88           DEY
 D1/C92E: 06 CC        ASL $CC
 D1/C930: 4D 4C 0D     EOR $0D4C
-D1/C933: 90 0C        BCC $C941
+D1/C933: 90 0C        BCC Local_D1C941
 D1/C935: 0E 89 08     ASL $0889
 D1/C938: 88           DEY
 D1/C939: 0A           ASL
 D1/C93A: C4 88        CPY $88
 D1/C93C: 06 07        ASL $07
-D1/C93E: 10 90        BPL $C8D0
+D1/C93E: 10 90        BPL Local_D1C8D0
 D1/C940: 08           PHP
-D1/C941: 90 0E        BCC $C951
+Local_D1C941:
+D1/C941: 90 0E        BCC Local_D1C951
 D1/C943: 0F 88 10 88  ORA $881088
 D1/C947: 0A           ASL
 D1/C948: 4A           LSR
 D1/C949: 8A           TXA
 D1/C94A: 8B           PHB
-D1/C94B: 4C 06 C9     JMP $C906
-D1/C94E: 4C 0A 0B     JMP $0B0A
-D1/C951: 4C 0A 0B     JMP $0B0A
+D1/C94B: 4C 06 C9     JMP Routine_D1C906
+D1/C94E: 4C 0A 0B     JMP Routine_D10B0A
+Local_D1C951:
+D1/C951: 4C 0A 0B     JMP Routine_D10B0A
 D1/C954: 0E 8A 4A     ASL $4A8A
-D1/C957: 10 48        BPL $C9A1
+D1/C957: 10 48        BPL Routine_D1C9A1
 D1/C959: 48           PHA
 D1/C95A: 08           PHP
 D1/C95B: 8A           TXA
 D1/C95C: 44 10 90     MVP $10,$90
-D1/C95F: 10 10        BPL $C971
-D1/C961: 4C 00 01     JMP $0100
+D1/C95F: 10 10        BPL Local_D1C971
+D1/C961: 4C 00 01     JMP Routine_D10100
 D1/C964: 08           PHP
 D1/C965: 88           DEY
 D1/C966: 0A           ASL
 D1/C967: 0B           PHD
 D1/C968: 08           PHP
-D1/C969: 90 45        BCC $C9B0
+D1/C969: 90 45        BCC Local_D1C9B0
 D1/C96B: 02 03        COP $03
-D1/C96D: 10 48        BPL $C9B7
-D1/C96F: 10 88        BPL $C8F9
+D1/C96D: 10 48        BPL Routine_D1C9B7
+D1/C96F: 10 88        BPL Local_D1C8F9
+Local_D1C971:
 D1/C971: 87 8D        STA [$8D]
 D1/C973: 87 50        STA [$50]
 D1/C975: 18           CLC
@@ -195,17 +203,18 @@ D1/C976: 19 48 4C     ORA $4C48,Y
 D1/C979: CC 8A 44     CPY $448A
 D1/C97C: 8A           TXA
 D1/C97D: CA           DEX
-D1/C97E: 4C 20 21     JMP $2120
-D1/C981: 50 89        BVC $C90C
+D1/C97E: 4C 20 21     JMP Routine_D12120
+D1/C981: 50 89        BVC Routine_D1C90C
 D1/C983: 08           PHP
 D1/C984: 08           PHP
 D1/C985: 08           PHP
 D1/C986: 00 01        BRK $01
 D1/C988: 88           DEY
 D1/C989: 06 07        ASL $07
-D1/C98B: 10 10        BPL $C99D
-D1/C98D: 50 02        BVC $C991
+D1/C98B: 10 10        BPL Routine_D1C99D
+D1/C98D: 50 02        BVC Local_D1C991
 D1/C98F: 03 0A        ORA $0A,S
+Local_D1C991:
 D1/C991: 0B           PHD
 D1/C992: 0E 0F 4B     ASL $4B0F
 D1/C995: 4A           LSR
@@ -213,15 +222,16 @@ D1/C996: 01 7E        ORA ($7E,X)
 D1/C998: 00 7E        BRK $7E
 D1/C99A: 06 7E        ASL $7E
 D1/C99C: 06 7E        ASL $7E
-D1/C99E: F0 7E        BEQ $CA1E
-D1/C9A0: F0 7E        BEQ $CA20
+D1/C99E: F0 7E        BEQ Local_D1CA1E
+D1/C9A0: F0 7E        BEQ Local_D1CA20
 D1/C9A2: FC 80 FD     JSR ($FD80,X)
 D1/C9A5: 83 01        STA $01,S
 D1/C9A7: 7B           TDC
 D1/C9A8: 3F 78 3F 78  AND $783F78,X
 D1/C9AC: 3F 78 3F 0C  AND $0C3F78,X
+Local_D1C9B0:
 D1/C9B0: 3F 0D BF 01  AND $01BF0D,X
-D1/C9B4: 80 15        BRA $C9CB
+D1/C9B4: 80 15        BRA Local_D1C9CB
 D1/C9B6: 0E 0F 4F     ASL $4F0F
 D1/C9B9: 4E 55 1D     LSR $1D55
 D1/C9BC: 0A           ASL
@@ -233,6 +243,7 @@ D1/C9C3: 1E 0A 0A     ASL $0A0A,X
 D1/C9C6: 4A           LSR
 D1/C9C7: 4A           LSR
 D1/C9C8: 5E 9A DA     LSR $DA9A,X
+Local_D1C9CB:
 D1/C9CB: 9E 8A 8A     STZ $8A8A,X
 D1/C9CE: CA           DEX
 D1/C9CF: CA           DEX
@@ -275,8 +286,10 @@ D1/CA15: 4A           LSR
 D1/CA16: 5E 91 92     LSR $9291,X
 D1/CA19: D2 D1        CMP ($D1)
 D1/CA1B: 9E 8A 8A     STZ $8A8A,X
+Local_D1CA1E:
 D1/CA1E: CA           DEX
 D1/CA1F: CA           DEX
+Local_D1CA20:
 D1/CA20: DE 2E 6E     DEC $6E2E,X
 D1/CA23: 9D 8A 8A     STA $8A8A,X
 D1/CA26: CA           DEX
@@ -295,7 +308,7 @@ D1/CA3B: 00 60        BRK $60
 D1/CA3D: 00 0A        BRK $0A
 D1/CA3F: 8B           PHB
 D1/CA40: 08           PHP
-D1/CA41: 90 50        BCC $CA93
+D1/CA41: 90 50        BCC Routine_D1CA93
 D1/CA43: C8           INY
 D1/CA44: 4B           PHK
 D1/CA45: CA           DEX
@@ -330,7 +343,7 @@ D1/CA7E: DC DB DA     JMP [$DADB]
 D1/CA81: D9 D8 D5     CMP $D5D8,Y
 D1/CA84: D4 D3        PEI $D3
 D1/CA86: D2 D1        CMP ($D1)
-D1/CA88: D0 01        BNE $CA8B
+D1/CA88: D0 01        BNE Routine_D1CA8B
 D1/CA8A: FF FF FF FF  SBC $FFFFFF,X
 D1/CA8E: FF FF FF FF  SBC $FFFFFF,X
 D1/CA92: FF FF FF FF  SBC $FFFFFF,X
@@ -559,7 +572,7 @@ D1/CC00: 1B           TCS
 D1/CC01: 1C 0B 0B     TRB $0B0B
 D1/CC04: 4B           PHK
 D1/CC05: 4B           PHK
-D1/CC06: 5C 5B 5A 0C  JMP $0C5A5B
+D1/CC06: 5C 5B 5A 0C  JMP Routine_0C5A5B
 D1/CC0A: 0D 0E 0B     ORA $0B0E
 D1/CC0D: 4B           PHK
 D1/CC0E: 4E 4D 4C     LSR $4C4D
@@ -677,7 +690,7 @@ D1/CCCE: 1B           TCS
 D1/CCCF: 1C 0B 0B     TRB $0B0B
 D1/CCD2: 4B           PHK
 D1/CCD3: 4B           PHK
-D1/CCD4: 5C 5B 5A 0C  JMP $0C5A5B
+D1/CCD4: 5C 5B 5A 0C  JMP Routine_0C5A5B
 D1/CCD8: 0D 0E 0B     ORA $0B0E
 D1/CCDB: 4B           PHK
 D1/CCDC: 4E 4D 4C     LSR $4C4D
@@ -722,13 +735,15 @@ D1/CD3C: 00 00        BRK $00
 D1/CD3E: 00 00        BRK $00
 D1/CD40: 00 00        BRK $00
 D1/CD42: 00 0C        BRK $0C
-D1/CD44: 30 0C        BMI $CD52
-D1/CD46: 30 00        BMI $CD48
+D1/CD44: 30 0C        BMI Local_D1CD52
+D1/CD46: 30 00        BMI Local_D1CD48
+Local_D1CD48:
 D1/CD48: 00 00        BRK $00
 D1/CD4A: 00 18        BRK $18
 D1/CD4C: 00 D8        BRK $D8
 D1/CD4E: 00 C0        BRK $C0
 D1/CD50: 00 18        BRK $18
+Local_D1CD52:
 D1/CD52: 58           CLI
 D1/CD53: 2D 6D 20     AND $206D
 D1/CD56: D8           CLD
@@ -747,6 +762,7 @@ D1/CD6E: 00 03        BRK $03
 D1/CD70: 18           CLC
 D1/CD71: 00 1B        BRK $1B
 D1/CD73: 00 0F        BRK $0F
-D1/CD75: 30 0C        BMI $CD83
-D1/CD77: 30 00        BMI $CD79
+D1/CD75: 30 0C        BMI Routine_D1CD83
+D1/CD77: 30 00        BMI Local_D1CD79
+Local_D1CD79:
 D1/CD79: 60           RTS

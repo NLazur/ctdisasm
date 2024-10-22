@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 7A5D
 Routine_D07A5D:
-D0/7A5D: 80 80        BRA $79DF
+D0/7A5D: 80 80        BRA Routine_D079DF
 D0/7A5F: 00 00        BRK $00
 D0/7A61: 00 00        BRK $00
 D0/7A63: 00 00        BRK $00
@@ -26,5 +26,5 @@ D0/7A88: EE 6E 5D     INC $5D6E
 D0/7A8B: 7F EB FB 9F  ADC $9FFBEB,X
 D0/7A8F: 91 0E        STA ($0E),Y
 D0/7A91: 3F ED 74 11  AND $1174ED,X
-D0/7A95: 80 04        BRA $7A9B
+D0/7A95: 80 04        BRA Routine_D07A9B
 D0/7A97: 60           RTS

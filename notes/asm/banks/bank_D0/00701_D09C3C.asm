@@ -1,10 +1,11 @@
 ; Bank: D0 | Start Address: 9C3C
 Routine_D09C3C:
-D0/9C3C: D0 20        BNE $9C5E
-D0/9C3E: 70 80        BVS $9BC0
-D0/9C40: B0 C8        BCS $9C0A
+D0/9C3C: D0 20        BNE Routine_D09C5E
+D0/9C3E: 70 80        BVS Routine_D09BC0
+D0/9C40: B0 C8        BCS Routine_D09C0A
 D0/9C42: 9C 60 CE     STZ $CE60
-D0/9C45: 70 00        BVS $9C47
+D0/9C45: 70 00        BVS Local_D09C47
+Local_D09C47:
 D0/9C47: 00 04        BRK $04
 D0/9C49: 00 24        BRK $24
 D0/9C4B: 00 02        BRK $02
@@ -21,16 +22,17 @@ D0/9C5F: 00 75        BRK $75
 D0/9C61: 00 C2        BRK $C2
 D0/9C63: 21 DC        AND ($DC,X)
 D0/9C65: 23 90        AND $90,S
-D0/9C67: 70 80        BVS $9BE9
+D0/9C67: 70 80        BVS Routine_D09BE9
 D0/9C69: 00 C4        BRK $C4
 D0/9C6B: 00 40        BRK $40
-D0/9C6D: 20 44 20     JSR $2044
+D0/9C6D: 20 44 20     JSR Routine_D02044
 D0/9C70: C8           INY
 D0/9C71: 04 B0        TSB $B0
 D0/9C73: 08           PHP
-D0/9C74: 70 88        BVS $9BFE
+D0/9C74: 70 88        BVS Routine_D09BFE
 D0/9C76: 9D E0 30     STA $30E0,X
-D0/9C79: 10 00        BPL $9C7B
+D0/9C79: 10 00        BPL Local_D09C7B
+Local_D09C7B:
 D0/9C7B: 00 00        BRK $00
 D0/9C7D: 00 00        BRK $00
 D0/9C7F: 00 02        BRK $02
@@ -50,7 +52,7 @@ D0/9C99: 00 80        BRK $80
 D0/9C9B: 08           PHP
 D0/9C9C: 08           PHP
 D0/9C9D: 00 40        BRK $40
-D0/9C9F: 10 10        BPL $9CB1
+D0/9C9F: 10 10        BPL Local_D09CB1
 D0/9CA1: 00 00        BRK $00
 D0/9CA3: 00 00        BRK $00
 D0/9CA5: 00 00        BRK $00
@@ -58,6 +60,7 @@ D0/9CA7: 00 05        BRK $05
 D0/9CA9: 0E 01 0A     ASL $0A01
 D0/9CAC: 0D 0A 02     ORA $020A
 D0/9CAF: 05 03        ORA $03
+Local_D09CB1:
 D0/9CB1: 04 07        TSB $07
 D0/9CB3: 04 03        TSB $03
 D0/9CB5: 00 01        BRK $01

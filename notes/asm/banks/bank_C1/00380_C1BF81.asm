@@ -22,5 +22,5 @@ C1/BF9E: C0 11        CPY #$11
 C1/BFA0: 00 90        BRK $90
 C1/BFA2: F2 60        SBC ($60)
 C1/BFA4: A9 04        LDA #$04
-C1/BFA6: 20 03 00     JSR $0003
+C1/BFA6: 20 03 00     JSR Routine_C10003
 C1/BFA9: 60           RTS

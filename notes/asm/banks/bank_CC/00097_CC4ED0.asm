@@ -17,7 +17,7 @@ CC/4EE9: 01 21        ORA ($21,X)
 CC/4EEB: 00 FF        BRK $FF
 CC/4EED: 00 00        BRK $00
 CC/4EEF: 00 0A        BRK $0A
-CC/4EF1: 10 55        BPL $4F48
+CC/4EF1: 10 55        BPL Routine_CC4F48
 CC/4EF3: 21 0F        AND ($0F,X)
 CC/4EF5: 64 4C        STZ $4C
 CC/4EF7: FF 04 04 04  SBC $040404,X
@@ -77,6 +77,7 @@ CC/4F66: 14 0A        TRB $0A
 CC/4F68: 00 1B        BRK $1B
 CC/4F6A: 7F 04 04 04  ADC $040404,X
 CC/4F6E: 04 00        TSB $00
+Local_CC4F70:
 CC/4F70: 00 00        BRK $00
 CC/4F72: 0E 00 01     ASL $0100
 CC/4F75: 00 00        BRK $00
@@ -94,12 +95,13 @@ CC/4F8A: 02 1E        COP $1E
 CC/4F8C: 00 FF        BRK $FF
 CC/4F8E: 00 00        BRK $00
 CC/4F90: 00 0A        BRK $0A
-CC/4F92: 10 0A        BPL $4F9E
+CC/4F92: 10 0A        BPL Routine_CC4F9E
 CC/4F94: 64 4B        STZ $4B
 CC/4F96: 64 01        STZ $01
 CC/4F98: 8C 00 00     STY $0000
 CC/4F9B: 00 00        BRK $00
-CC/4F9D: 80 00        BRA $4F9F
+CC/4F9D: 80 00        BRA Local_CC4F9F
+Local_CC4F9F:
 CC/4F9F: 00 00        BRK $00
 CC/4FA1: 00 00        BRK $00
 CC/4FA3: 00 FF        BRK $FF
@@ -110,8 +112,9 @@ CC/4FAB: 64 0A        STZ $0A
 CC/4FAD: 1E 40 64     ASL $6440,X
 CC/4FB0: 04 04        TSB $04
 CC/4FB2: 04 04        TSB $04
-CC/4FB4: 80 02        BRA $4FB8
+CC/4FB4: 80 02        BRA Local_CC4FB8
 CC/4FB6: 00 FA        BRK $FA
+Local_CC4FB8:
 CC/4FB8: 00 17        BRK $17
 CC/4FBA: 00 FF        BRK $FF
 CC/4FBC: 00 00        BRK $00
@@ -127,13 +130,13 @@ CC/4FCF: 00 17        BRK $17
 CC/4FD1: 00 FF        BRK $FF
 CC/4FD3: 00 00        BRK $00
 CC/4FD5: 00 0A        BRK $0A
-CC/4FD7: 10 0A        BPL $4FE3
+CC/4FD7: 10 0A        BPL Routine_CC4FE3
 CC/4FD9: 19 0C 32     ORA $320C,Y
 CC/4FDC: 23 87        AND $87,S
 CC/4FDE: 00 00        BRK $00
 CC/4FE0: 00 00        BRK $00
 CC/4FE2: 00 00        BRK $00
-CC/4FE4: 10 8A        BPL $4F70
+CC/4FE4: 10 8A        BPL Local_CC4F70
 CC/4FE6: 00 0C        BRK $0C
 CC/4FE8: 00 FF        BRK $FF
 CC/4FEA: 00 00        BRK $00
@@ -144,7 +147,8 @@ CC/4FF1: 09 32 05     ORA #$0532
 CC/4FF4: 96 03        STX $03,Y
 CC/4FF6: 01 04        ORA ($04,X)
 CC/4FF8: 04 00        TSB $00
-CC/4FFA: 10 00        BPL $4FFC
+CC/4FFA: 10 00        BPL Local_CC4FFC
+Local_CC4FFC:
 CC/4FFC: 0A           ASL
 CC/4FFD: 00 01        BRK $01
 CC/4FFF: 00 FF        BRK $FF
@@ -200,7 +204,7 @@ CC/5063: 27 11        AND [$11]
 CC/5065: 63 01        ADC $01,S
 CC/5067: 7F 04 04 04  ADC $040404,X
 CC/506B: 04 04        TSB $04
-CC/506D: 80 11        BRA $5080
+CC/506D: 80 11        BRA Routine_CC5080
 CC/506F: 0A           ASL
 CC/5070: 00 0A        BRK $0A
 CC/5072: 00 FF        BRK $FF
@@ -210,7 +214,7 @@ CC/5078: 0D 03 0F     ORA $0F03
 CC/507B: 08           PHP
 CC/507C: 63 05        ADC $05,S
 CC/507E: FF 02 20 20  SBC $202002,X
-CC/5082: 20 00 00     JSR $0000
+CC/5082: 20 00 00     JSR Routine_CC0000
 CC/5085: 00 09        BRK $09
 CC/5087: 00 08        BRK $08
 CC/5089: 00 FF        BRK $FF
@@ -220,7 +224,7 @@ CC/508F: 0C 0C 0D     TSB $0D0C
 CC/5092: 08           PHP
 CC/5093: 5A           PHY
 CC/5094: 0F FA 02 20  ORA $2002FA
-CC/5098: 20 20 00     JSR $0020
+CC/5098: 20 20 00     JSR Routine_CC0020
 CC/509B: 00 00        BRK $00
 CC/509D: 98           TYA
 CC/509E: 00 11        BRK $11
@@ -251,8 +255,8 @@ CC/50D0: 00 00        BRK $00
 CC/50D2: 00 0A        BRK $0A
 CC/50D4: 0A           ASL
 CC/50D5: 64 23        STZ $23
-CC/50D7: 10 46        BPL $511F
-CC/50D9: 50 53        BVC $512E
+CC/50D7: 10 46        BPL Local_CC511F
+CC/50D9: 50 53        BVC Local_CC512E
 CC/50DB: 04 04        TSB $04
 CC/50DD: 04 04        TSB $04
 CC/50DF: 00 00        BRK $00
@@ -270,7 +274,7 @@ CC/50F9: BC 34 2E     LDY $2E34,X
 CC/50FC: 00 FF        BRK $FF
 CC/50FE: 00 00        BRK $00
 CC/5100: 00 0A        BRK $0A
-CC/5102: 10 10        BPL $5114
+CC/5102: 10 10        BPL Routine_CC5114
 CC/5104: 64 13        STZ $13
 CC/5106: 64 FF        STZ $FF
 CC/5108: FD 00 00     SBC $0000,X
@@ -285,6 +289,7 @@ CC/5119: 0B           PHD
 CC/511A: 0A           ASL
 CC/511B: 23 10        AND $10,S
 CC/511D: 32 6E        AND ($6E)
+Local_CC511F:
 CC/511F: 53 04        EOR ($04,S),Y
 CC/5121: 04 04        TSB $04
 CC/5123: 04 00        TSB $00
@@ -292,6 +297,7 @@ CC/5125: 00 00        BRK $00
 CC/5127: 92 00        STA ($00)
 CC/5129: 0E 00 00     ASL $0000
 CC/512C: 00 00        BRK $00
+Local_CC512E:
 CC/512E: 00 0A        BRK $0A
 CC/5130: 0F 0A 12 09  ORA $09120A
 CC/5134: 00 05        BRK $05
@@ -326,13 +332,14 @@ CC/5171: 00 00        BRK $00
 CC/5173: 00 0A        BRK $0A
 CC/5175: 0C 0A 12     TSB $120A
 CC/5178: 09 4B 23     ORA #$234B
-CC/517B: F0 08        BEQ $5185
+CC/517B: F0 08        BEQ Local_CC5185
 CC/517D: 08           PHP
 CC/517E: 08           PHP
 CC/517F: 08           PHP
 CC/5180: 00 00        BRK $00
 CC/5182: 0B           PHD
 CC/5183: 86 01        STX $01
+Local_CC5185:
 CC/5185: 16 00        ASL $00,X
 CC/5187: 00 00        BRK $00
 CC/5189: 00 00        BRK $00
@@ -433,7 +440,8 @@ CC/5246: 1F 0E 32 28  ORA $28320E,X
 CC/524A: AA           TAX
 CC/524B: 04 04        TSB $04
 CC/524D: 04 04        TSB $04
-CC/524F: 80 00        BRA $5251
+CC/524F: 80 00        BRA Local_CC5251
+Local_CC5251:
 CC/5251: 00 88        BRK $88
 CC/5253: 13 1D        ORA ($1D,S),Y
 CC/5255: 00 00        BRK $00
@@ -462,7 +470,7 @@ CC/5280: BC 02 14     LDY $1402,X
 CC/5283: 00 FF        BRK $FF
 CC/5285: 00 00        BRK $00
 CC/5287: 00 0A        BRK $0A
-CC/5289: 10 0A        BPL $5295
+CC/5289: 10 0A        BPL Routine_CC5295
 CC/528B: 17 52        ORA [$52],Y
 CC/528D: 1E 01 8C     ASL $8C01,X
 CC/5290: 00 00        BRK $00
@@ -475,7 +483,7 @@ CC/529C: 00 00        BRK $00
 CC/529E: 00 0A        BRK $0A
 CC/52A0: 0C 78 25     TSB $2578
 CC/52A3: 11 32        ORA ($32),Y
-CC/52A5: 50 7F        BVC $5326
+CC/52A5: 50 7F        BVC Local_CC5326
 CC/52A7: 84 04        STY $04
 CC/52A9: 04 04        TSB $04
 CC/52AB: 02 00        COP $00
@@ -490,7 +498,7 @@ CC/52BB: 32 01        AND ($01)
 CC/52BD: 7F 04 04 04  ADC $040404,X
 CC/52C1: 04 00        TSB $00
 CC/52C3: 08           PHP
-CC/52C4: 10 47        BPL $530D
+CC/52C4: 10 47        BPL Local_CC530D
 CC/52C6: 01 18        ORA ($18,X)
 CC/52C8: 00 FF        BRK $FF
 CC/52CA: 00 00        BRK $00
@@ -522,6 +530,7 @@ CC/5302: 7F 04 04 04  ADC $040404,X
 CC/5306: 04 00        TSB $00
 CC/5308: 00 14        BRK $14
 CC/530A: 2D 00 07     AND $0700
+Local_CC530D:
 CC/530D: 00 00        BRK $00
 CC/530F: 00 00        BRK $00
 CC/5311: 00 0A        BRK $0A
@@ -533,6 +542,7 @@ CC/531D: 04 00        TSB $00
 CC/531F: 00 01        BRK $01
 CC/5321: 6E 00 12     ROR $1200
 CC/5324: 00 00        BRK $00
+Local_CC5326:
 CC/5326: 00 00        BRK $00
 CC/5328: 00 0A        BRK $0A
 CC/532A: 11 07        ORA ($07),Y

@@ -15,6 +15,6 @@ C3/DEC4: CA           DEX
 C3/DEC5: 0D 62 00     ORA $0062
 C3/DEC8: 0C 85 10     TSB $1085
 C3/DECB: A8           TAY
-C3/DECC: 10 E9        BPL $DEB7
+C3/DECC: 10 E9        BPL Routine_C3DEB7
 C3/DECE: 14 2C        TRB $2C
 C3/DED0: 60           RTS

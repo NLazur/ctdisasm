@@ -44,7 +44,7 @@ CC/078A: 26 20        ROL $20
 CC/078C: 00 00        BRK $00
 CC/078E: 00 F8        BRK $F8
 CC/0790: 2A           ROL
-CC/0791: 20 00 00     JSR $0000
+CC/0791: 20 00 00     JSR Routine_CC0000
 CC/0794: 00 00        BRK $00
 CC/0796: 7D 20 00     ADC $0020,X
 CC/0799: 00 00        BRK $00
@@ -78,14 +78,17 @@ CC/07D2: 26 10        ROL $10
 CC/07D4: 00 00        BRK $00
 CC/07D6: 00 C0        BRK $C0
 CC/07D8: 2B           PLD
-CC/07D9: 10 00        BPL $07DB
+CC/07D9: 10 00        BPL Local_CC07DB
+Local_CC07DB:
 CC/07DB: 00 00        BRK $00
 CC/07DD: 98           TYA
 CC/07DE: 3A           DEC
-CC/07DF: 10 00        BPL $07E1
+CC/07DF: 10 00        BPL Local_CC07E1
+Local_CC07E1:
 CC/07E1: 00 00        BRK $00
-CC/07E3: 50 46        BVC $082B
-CC/07E5: 10 00        BPL $07E7
+CC/07E3: 50 46        BVC Routine_CC082B
+CC/07E5: 10 00        BPL Local_CC07E7
+Local_CC07E7:
 CC/07E7: 00 00        BRK $00
 CC/07E9: 08           PHP
 CC/07EA: 52 10        EOR ($10)

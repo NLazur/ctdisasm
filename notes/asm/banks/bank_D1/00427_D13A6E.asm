@@ -6,5 +6,5 @@ D1/3A72: 00 00        BRK $00
 D1/3A74: 00 00        BRK $00
 D1/3A76: 00 00        BRK $00
 D1/3A78: 00 00        BRK $00
-D1/3A7A: 80 80        BRA $39FC
+D1/3A7A: 80 80        BRA Routine_D139FC
 D1/3A7C: 40           RTI

@@ -1,6 +1,7 @@
 ; Bank: D0 | Start Address: 50EF
 Routine_D050EF:
-D0/50EF: 70 00        BVS $50F1
+D0/50EF: 70 00        BVS Local_D050F1
+Local_D050F1:
 D0/50F1: 00 00        BRK $00
 D0/50F3: 00 00        BRK $00
 D0/50F5: 00 00        BRK $00
@@ -12,14 +13,16 @@ D0/50FF: 00 00        BRK $00
 D0/5101: 00 09        BRK $09
 D0/5103: 0E 27 38     ASL $3827
 D0/5106: 99 EE 64     STA $64EE,Y
+Local_D05109:
 D0/5109: E7 02        SBC [$02]
 D0/510B: 03 42        ORA $42,S
 D0/510D: 43 81        EOR $81,S
 D0/510F: 83 00        STA $00,S
 D0/5111: 00 D0        BRK $D0
-D0/5113: 30 F4        BMI $5109
+D0/5113: 30 F4        BMI Local_D05109
 D0/5115: 0C 4D F3     TSB $F34D
 D0/5118: A6 BD        LDX $BD
+Local_D0511A:
 D0/511A: 8A           TXA
 D0/511B: 9F 01 11 14  STA $141101,X
 D0/511F: 16 00        ASL $00,X
@@ -27,8 +30,8 @@ D0/5121: 00 00        BRK $00
 D0/5123: 00 00        BRK $00
 D0/5125: 00 00        BRK $00
 D0/5127: 00 80        BRK $80
-D0/5129: 80 80        BRA $50AB
-D0/512B: 80 40        BRA $516D
+D0/5129: 80 80        BRA Routine_D050AB
+D0/512B: 80 40        BRA Routine_D0516D
 D0/512D: C0 20 20     CPY #$2020
 D0/5130: 45 7F        EOR $7F
 D0/5132: 32 32        AND ($32)
@@ -38,7 +41,7 @@ D0/5138: 00 00        BRK $00
 D0/513A: 00 00        BRK $00
 D0/513C: 00 00        BRK $00
 D0/513E: 00 00        BRK $00
-D0/5140: 10 10        BPL $5152
+D0/5140: 10 10        BPL Routine_D05152
 D0/5142: 00 08        BRK $08
 D0/5144: 04 04        TSB $04
 D0/5146: 00 00        BRK $00
@@ -46,8 +49,9 @@ D0/5148: 00 00        BRK $00
 D0/514A: 00 00        BRK $00
 D0/514C: 00 00        BRK $00
 D0/514E: 00 00        BRK $00
-D0/5150: 20 20 80     JSR $8020
-D0/5153: 80 00        BRA $5155
+D0/5150: 20 20 80     JSR Routine_D08020
+D0/5153: 80 00        BRA Local_D05155
+Local_D05155:
 D0/5155: 00 00        BRK $00
 D0/5157: 00 00        BRK $00
 D0/5159: 00 00        BRK $00
@@ -66,17 +70,18 @@ D0/5176: 0B           PHD
 D0/5177: 8D 0B 0F     STA $0F0B
 D0/517A: 12 1E        ORA ($1E)
 D0/517C: 14 1C        TRB $1C
-D0/517E: 10 10        BPL $5190
+D0/517E: 10 10        BPL Local_D05190
 D0/5180: BD 4E 9C     LDA $9C4E,X
 D0/5183: 64 7E        STZ $7E
 D0/5185: B2 59        LDA ($59)
 D0/5187: BF B6 D7 49  LDA $49D7B6,X
 D0/518B: 79 28 38     ADC $3828,Y
 D0/518E: 14 1C        TRB $1C
+Local_D05190:
 D0/5190: 94 9C        STY $9C,X
 D0/5192: C2 C2        REP #$C2
 D0/5194: 00 10        BRK $10
-D0/5196: 30 30        BMI $51C8
-D0/5198: 80 80        BRA $511A
+D0/5196: 30 30        BMI Routine_D051C8
+D0/5198: 80 80        BRA Local_D0511A
 D0/519A: C0 C0 60     CPY #$60C0
 D0/519D: 60           RTS

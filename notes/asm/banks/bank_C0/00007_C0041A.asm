@@ -9,7 +9,7 @@ C0/0424: 85 DD        STA $DD
 C0/0426: 7B           TDC
 C0/0427: EB           XBA
 C0/0428: A5 97        LDA $97
-C0/042A: 30 3C        BMI $0468
+C0/042A: 30 3C        BMI Local_C00468
 C0/042C: AA           TAX
 C0/042D: BD 01 18     LDA $1801,X
 C0/0430: 38           SEC
@@ -32,10 +32,11 @@ C0/045E: 29 10        AND #$10
 C0/0460: 09 20        ORA #$20
 C0/0462: 9D 00 0C     STA $0C00,X
 C0/0465: 9D 01 0C     STA $0C01,X
+Local_C00468:
 C0/0468: 7B           TDC
 C0/0469: EB           XBA
 C0/046A: A5 99        LDA $99
-C0/046C: 30 3C        BMI $04AA
+C0/046C: 30 3C        BMI Local_C004AA
 C0/046E: AA           TAX
 C0/046F: BD 01 18     LDA $1801,X
 C0/0472: 38           SEC
@@ -58,10 +59,11 @@ C0/04A0: 29 10        AND #$10
 C0/04A2: 09 20        ORA #$20
 C0/04A4: 9D 00 0C     STA $0C00,X
 C0/04A7: 9D 01 0C     STA $0C01,X
+Local_C004AA:
 C0/04AA: 7B           TDC
 C0/04AB: EB           XBA
 C0/04AC: A5 9B        LDA $9B
-C0/04AE: 30 3C        BMI $04EC
+C0/04AE: 30 3C        BMI Local_C004EC
 C0/04B0: AA           TAX
 C0/04B1: BD 01 18     LDA $1801,X
 C0/04B4: 38           SEC
@@ -84,4 +86,5 @@ C0/04E2: 29 10        AND #$10
 C0/04E4: 09 20        ORA #$20
 C0/04E6: 9D 00 0C     STA $0C00,X
 C0/04E9: 9D 01 0C     STA $0C01,X
+Local_C004EC:
 C0/04EC: 60           RTS

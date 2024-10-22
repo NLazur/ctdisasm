@@ -1,8 +1,8 @@
 ; Bank: D0 | Start Address: 2BFE
 Routine_D02BFE:
-D0/2BFE: 50 70        BVC $2C70
-D0/2C00: 50 70        BVC $2C72
-D0/2C02: 10 30        BPL $2C34
+D0/2BFE: 50 70        BVC Routine_D02C70
+D0/2C00: 50 70        BVC Routine_D02C72
+D0/2C02: 10 30        BPL Routine_D02C34
 D0/2C04: 28           PLP
 D0/2C05: 38           SEC
 D0/2C06: 2C 3C 14     BIT $143C
@@ -18,6 +18,6 @@ D0/2C1A: 00 00        BRK $00
 D0/2C1C: 00 00        BRK $00
 D0/2C1E: 00 00        BRK $00
 D0/2C20: 00 00        BRK $00
-D0/2C22: 80 80        BRA $2BA4
-D0/2C24: 80 80        BRA $2BA6
+D0/2C22: 80 80        BRA Routine_D02BA4
+D0/2C24: 80 80        BRA Routine_D02BA6
 D0/2C26: 40           RTI

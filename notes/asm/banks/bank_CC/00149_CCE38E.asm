@@ -18,7 +18,7 @@ CC/E3B3: A0 A2 0E     LDY #$0EA2
 CC/E3B6: 00 A9        BRK $A9
 CC/E3B8: FF 9D 42 98  SBC $98429D,X
 CC/E3BC: CA           DEX
-CC/E3BD: 10 FA        BPL $E3B9
+CC/E3BD: 10 FA        BPL Routine_CCE3B9
 CC/E3BF: 9C 51 98     STZ $9851
 CC/E3C2: A2 02 00     LDX #$0002
 CC/E3C5: A9 F0 9E     LDA #$9EF0
@@ -26,38 +26,44 @@ CC/E3C8: 08           PHP
 CC/E3C9: 97 9D        STA [$9D],Y
 CC/E3CB: 13 97        ORA ($97,S),Y
 CC/E3CD: CA           DEX
-CC/E3CE: 10 F7        BPL $E3C7
+CC/E3CE: 10 F7        BPL Routine_CCE3C7
 CC/E3D0: A2 02 00     LDX #$0002
+Local_CCE3D3:
 CC/E3D3: A9 08 9D     LDA #$9D08
 CC/E3D6: 1E 97 9D     ASL $9D97,X
 CC/E3D9: 29 97 CA     AND #$CA97
-CC/E3DC: 10 F5        BPL $E3D3
+CC/E3DC: 10 F5        BPL Local_CCE3D3
 CC/E3DE: A2 02 00     LDX #$0002
+Local_CCE3E1:
 CC/E3E1: A9 02 9D     LDA #$9D02
 CC/E3E4: BF 98 A9 01  LDA $01A998,X
 CC/E3E8: 9D 3F 97     STA $973F,X
 CC/E3EB: CA           DEX
-CC/E3EC: 10 F3        BPL $E3E1
+CC/E3EC: 10 F3        BPL Local_CCE3E1
 CC/E3EE: A2 0F 00     LDX #$000F
 CC/E3F1: A9 20 9D     LDA #$9D20
 CC/E3F4: 97 98        STA [$98],Y
 CC/E3F6: CA           DEX
-CC/E3F7: 10 FA        BPL $E3F3
+CC/E3F7: 10 FA        BPL Routine_CCE3F3
 CC/E3F9: A2 0A 00     LDX #$000A
 CC/E3FC: AD E3 A5     LDA $A5E3
+Local_CCE3FF:
 CC/E3FF: 9D B5 99     STA $99B5,X
 CC/E402: 9D 3B 9F     STA $9F3B,X
 CC/E405: CA           DEX
-CC/E406: 10 F7        BPL $E3FF
+CC/E406: 10 F7        BPL Local_CCE3FF
 CC/E408: A2 07 00     LDX #$0007
+Local_CCE40B:
 CC/E40B: 9D 5F AB     STA $AB5F,X
 CC/E40E: 9D 57 AB     STA $AB57,X
 CC/E411: CA           DEX
-CC/E412: 10 F7        BPL $E40B
+CC/E412: 10 F7        BPL Local_CCE40B
 CC/E414: 7B           TDC
 CC/E415: A8           TAY
+Local_CCE416:
 CC/E416: 7B           TDC
 CC/E417: AA           TAX
+Local_CCE418:
 CC/E418: BF C4 F4 CC  LDA $CCF4C4,X
 CC/E41C: 99 2D 8E     STA $8E2D,Y
 CC/E41F: 99 2E 8E     STA $8E2E,Y
@@ -74,16 +80,17 @@ CC/E43A: C8           INY
 CC/E43B: C8           INY
 CC/E43C: E8           INX
 CC/E43D: E0 04 00     CPX #$0004
-CC/E440: D0 D6        BNE $E418
+CC/E440: D0 D6        BNE Local_CCE418
 CC/E442: C0 00 02     CPY #$0200
-CC/E445: D0 CF        BNE $E416
+CC/E445: D0 CF        BNE Local_CCE416
 CC/E447: A2 0A 00     LDX #$000A
 CC/E44A: A9 C0 9D     LDA #$9DC0
 CC/E44D: C2 A5        REP #$A5
 CC/E44F: CA           DEX
-CC/E450: 10 FA        BPL $E44C
+CC/E450: 10 FA        BPL Routine_CCE44C
 CC/E452: 7B           TDC
 CC/E453: AA           TAX
+Local_CCE454:
 CC/E454: C2 20        REP #$20
 CC/E456: 8A           TXA
 CC/E457: 4A           LSR
@@ -94,37 +101,42 @@ CC/E45B: E2 20        SEP #$20
 CC/E45D: 9D 2D 90     STA $902D,X
 CC/E460: E8           INX
 CC/E461: E0 00 02     CPX #$0200
-CC/E464: D0 EE        BNE $E454
+CC/E464: D0 EE        BNE Local_CCE454
 CC/E466: 7B           TDC
 CC/E467: AA           TAX
 CC/E468: A8           TAY
+Local_CCE469:
 CC/E469: BF 94 F6 CC  LDA $CCF694,X
 CC/E46D: 99 FD 7B     STA $7BFD,Y
 CC/E470: C8           INY
 CC/E471: E8           INX
 CC/E472: E0 20 00     CPX #$0020
-CC/E475: D0 F2        BNE $E469
+CC/E475: D0 F2        BNE Local_CCE469
 CC/E477: A9 0B        LDA #$0B
 CC/E479: 85 80        STA $80
+Local_CCE47B:
 CC/E47B: 7B           TDC
 CC/E47C: AA           TAX
+Local_CCE47D:
 CC/E47D: BF 44 F6 CC  LDA $CCF644,X
 CC/E481: 99 FD 7B     STA $7BFD,Y
 CC/E484: C8           INY
 CC/E485: E8           INX
 CC/E486: E0 10 00     CPX #$0010
-CC/E489: D0 F2        BNE $E47D
+CC/E489: D0 F2        BNE Local_CCE47D
 CC/E48B: C6 80        DEC $80
-CC/E48D: D0 EC        BNE $E47B
+CC/E48D: D0 EC        BNE Local_CCE47B
 CC/E48F: 7B           TDC
 CC/E490: AA           TAX
+Local_CCE491:
 CC/E491: BF 94 F6 CC  LDA $CCF694,X
 CC/E495: 99 FD 7B     STA $7BFD,Y
 CC/E498: C8           INY
 CC/E499: E8           INX
 CC/E49A: E0 30 00     CPX #$0030
-CC/E49D: D0 F2        BNE $E491
+CC/E49D: D0 F2        BNE Local_CCE491
 CC/E49F: A2 FF 00     LDX #$00FF
+Local_CCE4A2:
 CC/E4A2: BD 23 2B     LDA $2B23,X
 CC/E4A5: 29 80        AND #$80
 CC/E4A7: 4A           LSR
@@ -135,43 +147,48 @@ CC/E4AF: 05 80        ORA $80
 CC/E4B1: 1D FD 7B     ORA $7BFD,X
 CC/E4B4: 9D FD 7B     STA $7BFD,X
 CC/E4B7: CA           DEX
-CC/E4B8: 10 E8        BPL $E4A2
+CC/E4B8: 10 E8        BPL Local_CCE4A2
 CC/E4BA: 7B           TDC
 CC/E4BB: AA           TAX
 CC/E4BC: A9 29        LDA #$29
+Local_CCE4BE:
 CC/E4BE: 9E E3 99     STZ $99E3,X
 CC/E4C1: 9D E4 99     STA $99E4,X
 CC/E4C4: E8           INX
 CC/E4C5: E8           INX
 CC/E4C6: E0 00 05     CPX #$0500
-CC/E4C9: D0 F3        BNE $E4BE
+CC/E4C9: D0 F3        BNE Local_CCE4BE
 CC/E4CB: 7B           TDC
 CC/E4CC: AA           TAX
 CC/E4CD: A9 29        LDA #$29
+Local_CCE4CF:
 CC/E4CF: 9E E1 A6     STZ $A6E1,X
 CC/E4D2: 9D E2 A6     STA $A6E2,X
 CC/E4D5: E8           INX
 CC/E4D6: E8           INX
 CC/E4D7: E0 80 01     CPX #$0180
-CC/E4DA: D0 F3        BNE $E4CF
+CC/E4DA: D0 F3        BNE Local_CCE4CF
 CC/E4DC: 7B           TDC
 CC/E4DD: AA           TAX
 CC/E4DE: A9 29        LDA #$29
+Local_CCE4E0:
 CC/E4E0: 9E C0 0C     STZ $0CC0,X
 CC/E4E3: 9D C1 0C     STA $0CC1,X
 CC/E4E6: E8           INX
 CC/E4E7: E8           INX
 CC/E4E8: E0 C0 04     CPX #$04C0
-CC/E4EB: D0 F3        BNE $E4E0
+CC/E4EB: D0 F3        BNE Local_CCE4E0
 CC/E4ED: 7B           TDC
 CC/E4EE: AA           TAX
+Local_CCE4EF:
 CC/E4EF: BF 00 58 D1  LDA $D15800,X
 CC/E4F3: 9D 40 0B     STA $0B40,X
 CC/E4F6: E8           INX
 CC/E4F7: E0 80 01     CPX #$0180
-CC/E4FA: D0 F3        BNE $E4EF
+CC/E4FA: D0 F3        BNE Local_CCE4EF
 CC/E4FC: 7B           TDC
 CC/E4FD: AA           TAX
+Local_CCE4FE:
 CC/E4FE: A9 FF        LDA #$FF
 CC/E500: 9D FD 7F     STA $7FFD,X
 CC/E503: A9 29        LDA #$29
@@ -179,43 +196,49 @@ CC/E505: 9D FE 7F     STA $7FFE,X
 CC/E508: E8           INX
 CC/E509: E8           INX
 CC/E50A: E0 00 01     CPX #$0100
-CC/E50D: D0 EF        BNE $E4FE
+CC/E50D: D0 EF        BNE Local_CCE4FE
 CC/E50F: 7B           TDC
 CC/E510: A2 40 00     LDX #$0040
+Local_CCE513:
 CC/E513: 9D FD 7F     STA $7FFD,X
 CC/E516: 1A           INC
 CC/E517: E8           INX
 CC/E518: E8           INX
 CC/E519: E0 60 00     CPX #$0060
-CC/E51C: D0 F5        BNE $E513
+CC/E51C: D0 F5        BNE Local_CCE513
 CC/E51E: A9 30        LDA #$30
+Local_CCE520:
 CC/E520: 9D FD 7F     STA $7FFD,X
 CC/E523: 1A           INC
 CC/E524: E8           INX
 CC/E525: E8           INX
 CC/E526: E0 80 00     CPX #$0080
-CC/E529: D0 F5        BNE $E520
+CC/E529: D0 F5        BNE Local_CCE520
 CC/E52B: A9 10        LDA #$10
+Local_CCE52D:
 CC/E52D: 9D FD 7F     STA $7FFD,X
 CC/E530: 1A           INC
 CC/E531: E8           INX
 CC/E532: E8           INX
 CC/E533: E0 A0 00     CPX #$00A0
-CC/E536: D0 F5        BNE $E52D
+CC/E536: D0 F5        BNE Local_CCE52D
 CC/E538: A9 40        LDA #$40
+Local_CCE53A:
 CC/E53A: 9D FD 7F     STA $7FFD,X
 CC/E53D: 1A           INC
 CC/E53E: E8           INX
 CC/E53F: E8           INX
 CC/E540: E0 C0 00     CPX #$00C0
-CC/E543: D0 F5        BNE $E53A
+CC/E543: D0 F5        BNE Local_CCE53A
 CC/E545: 7B           TDC
 CC/E546: AA           TAX
+Local_CCE547:
 CC/E547: BF 50 5D D1  LDA $D15D50,X
 CC/E54B: 9D FD 80     STA $80FD,X
 CC/E54E: E8           INX
 CC/E54F: E0 C0 00     CPX #$00C0
-CC/E552: D0 F3        BNE $E547
+CC/E552: D0 F3        BNE Local_CCE547
+Local_CCE554:
 CC/E554: A9 FF        LDA #$FF
 CC/E556: 9D FD 80     STA $80FD,X
 CC/E559: A9 29        LDA #$29
@@ -223,10 +246,11 @@ CC/E55B: 9D FE 80     STA $80FE,X
 CC/E55E: E8           INX
 CC/E55F: E8           INX
 CC/E560: E0 00 02     CPX #$0200
-CC/E563: D0 EF        BNE $E554
+CC/E563: D0 EF        BNE Local_CCE554
 CC/E565: 7B           TDC
 CC/E566: AA           TAX
 CC/E567: A8           TAY
+Local_CCE568:
 CC/E568: B9 23 2C     LDA $2C23,Y
 CC/E56B: 9D 30 94     STA $9430,X
 CC/E56E: B9 24 2C     LDA $2C24,Y
@@ -246,10 +270,11 @@ CC/E58C: 18           CLC
 CC/E58D: 69 05        ADC #$05
 CC/E58F: AA           TAX
 CC/E590: E0 23 00     CPX #$0023
-CC/E593: D0 D3        BNE $E568
+CC/E593: D0 D3        BNE Local_CCE568
 CC/E595: 7B           TDC
 CC/E596: A8           TAY
 CC/E597: 84 80        STY $80
+Local_CCE599:
 CC/E599: A5 80        LDA $80
 CC/E59B: AA           TAX
 CC/E59C: BF 3F F8 CC  LDA $CCF83F,X
@@ -265,47 +290,52 @@ CC/E5B6: 8D A3 94     STA $94A3
 CC/E5B9: B9 34 94     LDA $9434,Y
 CC/E5BC: 8D A4 94     STA $94A4
 CC/E5BF: 9C A5 94     STZ $94A5
-CC/E5C2: 20 63 F0     JSR $F063
+CC/E5C2: 20 63 F0     JSR Routine_CCF063
 CC/E5C5: A5 80        LDA $80
 CC/E5C7: AA           TAX
 CC/E5C8: BF 37 F8 CC  LDA $CCF837,X
 CC/E5CC: A8           TAY
 CC/E5CD: 7B           TDC
 CC/E5CE: AA           TAX
+Local_CCE5CF:
 CC/E5CF: BD A0 94     LDA $94A0,X
 CC/E5D2: 99 53 94     STA $9453,Y
 CC/E5D5: C8           INY
 CC/E5D6: E8           INX
 CC/E5D7: E0 05 00     CPX #$0005
-CC/E5DA: D0 F3        BNE $E5CF
+CC/E5DA: D0 F3        BNE Local_CCE5CF
 CC/E5DC: 7B           TDC
 CC/E5DD: AA           TAX
+Local_CCE5DE:
 CC/E5DE: BD B0 94     LDA $94B0,X
 CC/E5E1: 99 53 94     STA $9453,Y
 CC/E5E4: C8           INY
 CC/E5E5: E8           INX
 CC/E5E6: E0 05 00     CPX #$0005
-CC/E5E9: D0 F3        BNE $E5DE
+CC/E5E9: D0 F3        BNE Local_CCE5DE
 CC/E5EB: E6 80        INC $80
 CC/E5ED: A5 80        LDA $80
 CC/E5EF: C9 07        CMP #$07
-CC/E5F1: D0 A6        BNE $E599
+CC/E5F1: D0 A6        BNE Local_CCE599
 CC/E5F3: 7B           TDC
 CC/E5F4: AA           TAX
 CC/E5F5: 86 80        STX $80
 CC/E5F7: 86 82        STX $82
+Local_CCE5F9:
 CC/E5F9: A6 80        LDX $80
 CC/E5FB: BD 80 29     LDA $2980,X
-CC/E5FE: 30 40        BMI $E640
+CC/E5FE: 30 40        BMI Local_CCE640
 CC/E600: 29 07        AND #$07
 CC/E602: C9 04        CMP #$04
-CC/E604: D0 05        BNE $E60B
+CC/E604: D0 05        BNE Local_CCE60B
 CC/E606: 8E FF A0     STX $A0FF
-CC/E609: 80 0A        BRA $E615
+CC/E609: 80 0A        BRA Local_CCE615
+Local_CCE60B:
 CC/E60B: C9 06        CMP #$06
-CC/E60D: D0 06        BNE $E615
+CC/E60D: D0 06        BNE Local_CCE615
 CC/E60F: 8E 15 A1     STX $A115
 CC/E612: EE 17 A1     INC $A117
+Local_CCE615:
 CC/E615: AA           TAX
 CC/E616: BF 46 F8 CC  LDA $CCF846,X
 CC/E61A: AA           TAX
@@ -322,13 +352,14 @@ CC/E635: BD 27 2C     LDA $2C27,X
 CC/E638: 99 07 94     STA $9407,Y
 CC/E63B: A6 80        LDX $80
 CC/E63D: FE F5 96     INC $96F5,X
+Local_CCE640:
 CC/E640: E6 80        INC $80
 CC/E642: 18           CLC
 CC/E643: A5 82        LDA $82
 CC/E645: 69 05        ADC #$05
 CC/E647: 85 82        STA $82
 CC/E649: C9 0F        CMP #$0F
-CC/E64B: D0 AC        BNE $E5F9
+CC/E64B: D0 AC        BNE Local_CCE5F9
 CC/E64D: AD FF A0     LDA $A0FF
 CC/E650: 0A           ASL
 CC/E651: 0A           ASL
@@ -338,6 +369,7 @@ CC/E656: 8D FF A0     STA $A0FF
 CC/E659: 7B           TDC
 CC/E65A: A8           TAY
 CC/E65B: 84 80        STY $80
+Local_CCE65D:
 CC/E65D: A5 80        LDA $80
 CC/E65F: AA           TAX
 CC/E660: BF 3F F8 CC  LDA $CCF83F,X
@@ -353,47 +385,52 @@ CC/E67A: 8D A3 94     STA $94A3
 CC/E67D: B9 07 94     LDA $9407,Y
 CC/E680: 8D A4 94     STA $94A4
 CC/E683: 9C A5 94     STZ $94A5
-CC/E686: 20 63 F0     JSR $F063
+CC/E686: 20 63 F0     JSR Routine_CCF063
 CC/E689: A5 80        LDA $80
 CC/E68B: AA           TAX
 CC/E68C: BF 37 F8 CC  LDA $CCF837,X
 CC/E690: A8           TAY
 CC/E691: 7B           TDC
 CC/E692: AA           TAX
+Local_CCE693:
 CC/E693: BD A0 94     LDA $94A0,X
 CC/E696: 99 12 94     STA $9412,Y
 CC/E699: C8           INY
 CC/E69A: E8           INX
 CC/E69B: E0 05 00     CPX #$0005
-CC/E69E: D0 F3        BNE $E693
+CC/E69E: D0 F3        BNE Local_CCE693
 CC/E6A0: 7B           TDC
 CC/E6A1: AA           TAX
+Local_CCE6A2:
 CC/E6A2: BD B0 94     LDA $94B0,X
 CC/E6A5: 99 12 94     STA $9412,Y
 CC/E6A8: C8           INY
 CC/E6A9: E8           INX
 CC/E6AA: E0 05 00     CPX #$0005
-CC/E6AD: D0 F3        BNE $E6A2
+CC/E6AD: D0 F3        BNE Local_CCE6A2
 CC/E6AF: E6 80        INC $80
 CC/E6B1: A5 80        LDA $80
 CC/E6B3: C9 03        CMP #$03
-CC/E6B5: D0 A6        BNE $E65D
+CC/E6B5: D0 A6        BNE Local_CCE65D
 CC/E6B7: 7B           TDC
 CC/E6B8: AA           TAX
+Local_CCE6B9:
 CC/E6B9: BF 68 9C FF  LDA $FF9C68,X
 CC/E6BD: 9D 10 20     STA $2010,X
 CC/E6C0: E8           INX
 CC/E6C1: E0 08 00     CPX #$0008
-CC/E6C4: D0 F3        BNE $E6B9
+CC/E6C4: D0 F3        BNE Local_CCE6B9
 CC/E6C6: 7B           TDC
 CC/E6C7: AA           TAX
+Local_CCE6C8:
 CC/E6C8: BF 70 9C FF  LDA $FF9C70,X
 CC/E6CC: 9D 18 20     STA $2018,X
 CC/E6CF: E8           INX
 CC/E6D0: E0 08 00     CPX #$0008
-CC/E6D3: D0 F3        BNE $E6C8
+CC/E6D3: D0 F3        BNE Local_CCE6C8
 CC/E6D5: 7B           TDC
 CC/E6D6: AA           TAX
+Local_CCE6D7:
 CC/E6D7: BF 0A 9E FF  LDA $FF9E0A,X
 CC/E6DB: 9D 3A 21     STA $213A,X
 CC/E6DE: E8           INX
@@ -401,12 +438,13 @@ CC/E6DF: BF 0A 9E FF  LDA $FF9E0A,X
 CC/E6E3: 9D 3A 21     STA $213A,X
 CC/E6E6: E8           INX
 CC/E6E7: E0 06 00     CPX #$0006
-CC/E6EA: D0 EB        BNE $E6D7
+CC/E6EA: D0 EB        BNE Local_CCE6D7
 CC/E6EC: A2 FF 01     LDX #$01FF
+Local_CCE6EF:
 CC/E6EF: BD 00 20     LDA $2000,X
 CC/E6F2: 9D 00 22     STA $2200,X
 CC/E6F5: CA           DEX
-CC/E6F6: 10 F7        BPL $E6EF
+CC/E6F6: 10 F7        BPL Local_CCE6EF
 CC/E6F8: A9 0A        LDA #$0A
 CC/E6FA: 8D 88 98     STA $9888
 CC/E6FD: 8D 3C 99     STA $993C
@@ -422,6 +460,7 @@ CC/E710: 7B           TDC
 CC/E711: AA           TAX
 CC/E712: 86 82        STX $82
 CC/E714: 86 84        STX $84
+Local_CCE716:
 CC/E716: A4 82        LDY $82
 CC/E718: B9 48 1C     LDA $1C48,Y
 CC/E71B: AA           TAX
@@ -444,12 +483,13 @@ CC/E733: 0A           ASL
 CC/E734: A8           TAY
 CC/E735: A9 06        LDA #$06
 CC/E737: 85 80        STA $80
+Local_CCE739:
 CC/E739: BF 00 4B D1  LDA $D14B00,X
 CC/E73D: 99 BA 23     STA $23BA,Y
 CC/E740: E8           INX
 CC/E741: C8           INY
 CC/E742: C6 80        DEC $80
-CC/E744: D0 F3        BNE $E739
+CC/E744: D0 F3        BNE Local_CCE739
 CC/E746: 18           CLC
 CC/E747: A5 82        LDA $82
 CC/E749: 69 05        ADC #$05
@@ -457,8 +497,9 @@ CC/E74B: 85 82        STA $82
 CC/E74D: E6 84        INC $84
 CC/E74F: A5 84        LDA $84
 CC/E751: C9 03        CMP #$03
-CC/E753: D0 C1        BNE $E716
+CC/E753: D0 C1        BNE Local_CCE716
 CC/E755: A0 02 00     LDY #$0002
+Local_CCE758:
 CC/E758: 98           TYA
 CC/E759: 0A           ASL
 CC/E75A: AA           TAX
@@ -468,19 +509,22 @@ CC/E761: BF 96 F3 CC  LDA $CCF396,X
 CC/E765: 85 81        STA $81
 CC/E767: A6 80        LDX $80
 CC/E769: BD C6 1A     LDA $1AC6,X
-CC/E76C: 30 05        BMI $E773
+CC/E76C: 30 05        BMI Local_CCE773
 CC/E76E: A9 01        LDA #$01
 CC/E770: 99 25 9F     STA $9F25,Y
+Local_CCE773:
 CC/E773: BD FE 1A     LDA $1AFE,X
-CC/E776: 30 05        BMI $E77D
+CC/E776: 30 05        BMI Local_CCE77D
 CC/E778: A9 01        LDA #$01
 CC/E77A: 99 28 9F     STA $9F28,Y
+Local_CCE77D:
 CC/E77D: 88           DEY
-CC/E77E: 10 D8        BPL $E758
+CC/E77E: 10 D8        BPL Local_CCE758
 CC/E780: 7B           TDC
 CC/E781: AA           TAX
 CC/E782: 86 80        STX $80
 CC/E784: 86 82        STX $82
+Local_CCE786:
 CC/E786: 64 82        STZ $82
 CC/E788: 64 8C        STZ $8C
 CC/E78A: A5 83        LDA $83
@@ -495,14 +539,16 @@ CC/E79A: 85 84        STA $84
 CC/E79C: BF 96 F3 CC  LDA $CCF396,X
 CC/E7A0: 85 85        STA $85
 CC/E7A2: A6 84        LDX $84
+Local_CCE7A4:
 CC/E7A4: BD 80 1A     LDA $1A80,X
 CC/E7A7: C9 FF        CMP #$FF
-CC/E7A9: F0 0B        BEQ $E7B6
+CC/E7A9: F0 0B        BEQ Local_CCE7B6
 CC/E7AB: 99 D0 94     STA $94D0,Y
 CC/E7AE: A5 82        LDA $82
 CC/E7B0: 99 51 95     STA $9551,Y
 CC/E7B3: C8           INY
 CC/E7B4: E6 8C        INC $8C
+Local_CCE7B6:
 CC/E7B6: C2 21        REP #$21
 CC/E7B8: 8A           TXA
 CC/E7B9: 69 07 00     ADC #$0007
@@ -512,14 +558,15 @@ CC/E7BE: E2 20        SEP #$20
 CC/E7C0: E6 82        INC $82
 CC/E7C2: A5 82        LDA $82
 CC/E7C4: C9 08        CMP #$08
-CC/E7C6: D0 DC        BNE $E7A4
+CC/E7C6: D0 DC        BNE Local_CCE7A4
 CC/E7C8: A5 83        LDA $83
 CC/E7CA: AA           TAX
 CC/E7CB: BD 25 9F     LDA $9F25,X
-CC/E7CE: F0 06        BEQ $E7D6
+CC/E7CE: F0 06        BEQ Local_CCE7D6
 CC/E7D0: A9 FC        LDA #$FC
 CC/E7D2: 99 D0 94     STA $94D0,Y
 CC/E7D5: C8           INY
+Local_CCE7D6:
 CC/E7D6: 84 84        STY $84
 CC/E7D8: A5 83        LDA $83
 CC/E7DA: 0A           ASL
@@ -531,11 +578,12 @@ CC/E7E2: 95 87        STA $87,X
 CC/E7E4: E6 83        INC $83
 CC/E7E6: A5 83        LDA $83
 CC/E7E8: C9 03        CMP #$03
-CC/E7EA: D0 9A        BNE $E786
+CC/E7EA: D0 9A        BNE Local_CCE786
 CC/E7EC: 7B           TDC
 CC/E7ED: AA           TAX
 CC/E7EE: 86 80        STX $80
 CC/E7F0: 86 82        STX $82
+Local_CCE7F2:
 CC/E7F2: A9 0A        LDA #$0A
 CC/E7F4: 85 82        STA $82
 CC/E7F6: 64 8C        STZ $8C
@@ -555,14 +603,16 @@ CC/E80E: 85 84        STA $84
 CC/E810: BF 96 F3 CC  LDA $CCF396,X
 CC/E814: 85 85        STA $85
 CC/E816: A6 84        LDX $84
+Local_CCE818:
 CC/E818: BD C6 1A     LDA $1AC6,X
 CC/E81B: C9 FF        CMP #$FF
-CC/E81D: F0 0B        BEQ $E82A
+CC/E81D: F0 0B        BEQ Local_CCE82A
 CC/E81F: 99 D0 94     STA $94D0,Y
 CC/E822: A5 82        LDA $82
 CC/E824: 99 51 95     STA $9551,Y
 CC/E827: C8           INY
 CC/E828: E6 8C        INC $8C
+Local_CCE82A:
 CC/E82A: C2 21        REP #$21
 CC/E82C: 8A           TXA
 CC/E82D: 69 07 00     ADC #$0007
@@ -572,14 +622,15 @@ CC/E832: E2 20        SEP #$20
 CC/E834: E6 82        INC $82
 CC/E836: A5 82        LDA $82
 CC/E838: C9 10        CMP #$10
-CC/E83A: D0 DC        BNE $E818
+CC/E83A: D0 DC        BNE Local_CCE818
 CC/E83C: A5 83        LDA $83
 CC/E83E: AA           TAX
 CC/E83F: BD 28 9F     LDA $9F28,X
-CC/E842: F0 06        BEQ $E84A
+CC/E842: F0 06        BEQ Local_CCE84A
 CC/E844: A9 FD        LDA #$FD
 CC/E846: 99 D0 94     STA $94D0,Y
 CC/E849: C8           INY
+Local_CCE84A:
 CC/E84A: 84 84        STY $84
 CC/E84C: A5 83        LDA $83
 CC/E84E: 0A           ASL
@@ -591,16 +642,18 @@ CC/E856: 95 87        STA $87,X
 CC/E858: E6 83        INC $83
 CC/E85A: A5 83        LDA $83
 CC/E85C: C9 03        CMP #$03
-CC/E85E: F0 03        BEQ $E863
-CC/E860: 4C F2 E7     JMP $E7F2
+CC/E85E: F0 03        BEQ Local_CCE863
+CC/E860: 4C F2 E7     JMP Local_CCE7F2
+Local_CCE863:
 CC/E863: 7B           TDC
 CC/E864: AA           TAX
 CC/E865: 86 80        STX $80
 CC/E867: 86 82        STX $82
+Local_CCE869:
 CC/E869: A5 83        LDA $83
 CC/E86B: AA           TAX
 CC/E86C: BD 28 9F     LDA $9F28,X
-CC/E86F: F0 31        BEQ $E8A2
+CC/E86F: F0 31        BEQ Local_CCE8A2
 CC/E871: A9 12        LDA #$12
 CC/E873: 85 82        STA $82
 CC/E875: A5 83        LDA $83
@@ -621,45 +674,51 @@ CC/E891: 85 85        STA $85
 CC/E893: A6 84        LDX $84
 CC/E895: BD FE 1A     LDA $1AFE,X
 CC/E898: 99 D0 94     STA $94D0,Y
-CC/E89B: 30 05        BMI $E8A2
+CC/E89B: 30 05        BMI Local_CCE8A2
 CC/E89D: A9 12        LDA #$12
 CC/E89F: 99 51 95     STA $9551,Y
+Local_CCE8A2:
 CC/E8A2: E6 83        INC $83
 CC/E8A4: A5 83        LDA $83
 CC/E8A6: C9 03        CMP #$03
-CC/E8A8: D0 BF        BNE $E869
+CC/E8A8: D0 BF        BNE Local_CCE869
 CC/E8AA: A2 02 00     LDX #$0002
 CC/E8AD: 86 80        STX $80
+Local_CCE8AF:
 CC/E8AF: A5 80        LDA $80
 CC/E8B1: AA           TAX
 CC/E8B2: BF 8C F3 CC  LDA $CCF38C,X
 CC/E8B6: A8           TAY
 CC/E8B7: A6 80        LDX $80
 CC/E8B9: 9E 2A A0     STZ $A02A,X
+Local_CCE8BC:
 CC/E8BC: B9 D0 94     LDA $94D0,Y
 CC/E8BF: C9 FF        CMP #$FF
-CC/E8C1: F0 0B        BEQ $E8CE
+CC/E8C1: F0 0B        BEQ Local_CCE8CE
 CC/E8C3: C8           INY
 CC/E8C4: FE 2A A0     INC $A02A,X
 CC/E8C7: BD 2A A0     LDA $A02A,X
 CC/E8CA: C9 14        CMP #$14
-CC/E8CC: D0 EE        BNE $E8BC
+CC/E8CC: D0 EE        BNE Local_CCE8BC
+Local_CCE8CE:
 CC/E8CE: C6 80        DEC $80
-CC/E8D0: 10 DD        BPL $E8AF
+CC/E8D0: 10 DD        BPL Local_CCE8AF
 CC/E8D2: A2 02 00     LDX #$0002
 CC/E8D5: 86 80        STX $80
+Local_CCE8D7:
 CC/E8D7: A6 80        LDX $80
 CC/E8D9: BD 80 29     LDA $2980,X
-CC/E8DC: 30 40        BMI $E91E
+CC/E8DC: 30 40        BMI Local_CCE91E
 CC/E8DE: 0A           ASL
 CC/E8DF: 0A           ASL
 CC/E8E0: A8           TAY
 CC/E8E1: AD D4 A0     LDA $A0D4
-CC/E8E4: F0 06        BEQ $E8EC
+CC/E8E4: F0 06        BEQ Local_CCE8EC
 CC/E8E6: B9 7C 2C     LDA $2C7C,Y
 CC/E8E9: 9D 16 99     STA $9916,X
+Local_CCE8EC:
 CC/E8EC: AD D5 A0     LDA $A0D5
-CC/E8EF: F0 2D        BEQ $E91E
+CC/E8EF: F0 2D        BEQ Local_CCE91E
 CC/E8F1: B9 7F 2C     LDA $2C7F,Y
 CC/E8F4: 9D D8 A0     STA $A0D8,X
 CC/E8F7: B9 7E 2C     LDA $2C7E,Y
@@ -673,25 +732,28 @@ CC/E909: 7F 8C F3 CC  ADC $CCF38C,X
 CC/E90D: AA           TAX
 CC/E90E: B9 7F 2C     LDA $2C7F,Y
 CC/E911: DD D0 94     CMP $94D0,X
-CC/E914: F0 08        BEQ $E91E
+CC/E914: F0 08        BEQ Local_CCE91E
 CC/E916: A6 80        LDX $80
 CC/E918: 9E 63 A8     STZ $A863,X
 CC/E91B: 9E 66 A8     STZ $A866,X
+Local_CCE91E:
 CC/E91E: C6 80        DEC $80
-CC/E920: 10 B5        BPL $E8D7
+CC/E920: 10 B5        BPL Local_CCE8D7
 CC/E922: AD D5 A0     LDA $A0D5
-CC/E925: F0 0C        BEQ $E933
+CC/E925: F0 0C        BEQ Local_CCE933
 CC/E927: AD 98 2C     LDA $2C98
 CC/E92A: 8D E6 95     STA $95E6
 CC/E92D: AD 99 2C     LDA $2C99
 CC/E930: 8D E5 95     STA $95E5
+Local_CCE933:
 CC/E933: 7B           TDC
 CC/E934: AA           TAX
+Local_CCE935:
 CC/E935: BD B0 29     LDA $29B0,X
 CC/E938: 9D A4 96     STA $96A4,X
 CC/E93B: E8           INX
 CC/E93C: E0 0F 00     CPX #$000F
-CC/E93F: D0 F4        BNE $E935
+CC/E93F: D0 F4        BNE Local_CCE935
 CC/E941: 7B           TDC
 CC/E942: A8           TAY
 CC/E943: AA           TAX
@@ -727,6 +789,7 @@ CC/E977: 00 D0        BRK $D0
 CC/E979: CA           DEX
 CC/E97A: 64 80        STZ $80
 CC/E97C: 64 81        STZ $81
+Local_CCE97E:
 CC/E97E: A4 80        LDY $80
 CC/E980: B9 80 29     LDA $2980,Y
 CC/E983: 0A           ASL
@@ -803,13 +866,16 @@ CC/EA25: 9D C8 A2     STA $A2C8,X
 CC/EA28: E6 80        INC $80
 CC/EA2A: A5 80        LDA $80
 CC/EA2C: C9 03        CMP #$03
-CC/EA2E: F0 03        BEQ $EA33
-CC/EA30: 4C 7E E9     JMP $E97E
+CC/EA2E: F0 03        BEQ Local_CCEA33
+CC/EA30: 4C 7E E9     JMP Local_CCE97E
+Local_CCEA33:
 CC/EA33: 7B           TDC
 CC/EA34: AA           TAX
 CC/EA35: A8           TAY
 CC/EA36: 64 80        STZ $80
+Local_CCEA38:
 CC/EA38: 64 81        STZ $81
+Local_CCEA3A:
 CC/EA3A: BD BF 29     LDA $29BF,X
 CC/EA3D: 99 B3 96     STA $96B3,Y
 CC/EA40: E8           INX
@@ -817,7 +883,7 @@ CC/EA41: C8           INY
 CC/EA42: E6 81        INC $81
 CC/EA44: A5 81        LDA $81
 CC/EA46: C9 05        CMP #$05
-CC/EA48: D0 F0        BNE $EA3A
+CC/EA48: D0 F0        BNE Local_CCEA3A
 CC/EA4A: 18           CLC
 CC/EA4B: 8A           TXA
 CC/EA4C: 69 07        ADC #$07
@@ -825,15 +891,17 @@ CC/EA4E: AA           TAX
 CC/EA4F: E6 80        INC $80
 CC/EA51: A5 80        LDA $80
 CC/EA53: C9 08        CMP #$08
-CC/EA55: D0 E1        BNE $EA38
+CC/EA55: D0 E1        BNE Local_CCEA38
 CC/EA57: 64 80        STZ $80
 CC/EA59: 64 81        STZ $81
+Local_CCEA5B:
 CC/EA5B: A6 80        LDX $80
 CC/EA5D: BF 39 F9 CC  LDA $CCF939,X
 CC/EA61: AA           TAX
 CC/EA62: BD C5 29     LDA $29C5,X
-CC/EA65: 10 03        BPL $EA6A
-CC/EA67: 4C 26 EC     JMP $EC26
+CC/EA65: 10 03        BPL Local_CCEA6A
+CC/EA67: 4C 26 EC     JMP Local_CCEC26
+Local_CCEA6A:
 CC/EA6A: 18           CLC
 CC/EA6B: A5 80        LDA $80
 CC/EA6D: 69 03        ADC #$03
@@ -969,23 +1037,26 @@ CC/EB73: A4 80        LDY $80
 CC/EB75: BF 04 F6 E4  LDA $E4F604,X
 CC/EB79: 99 00 97     STA $9700,Y
 CC/EB7C: 29 80        AND #$80
-CC/EB7E: F0 06        BEQ $EB86
+CC/EB7E: F0 06        BEQ Local_CCEB86
 CC/EB80: 99 C5 A5     STA $A5C5,Y
 CC/EB83: 99 D0 A5     STA $A5D0,Y
+Local_CCEB86:
 CC/EB86: B9 00 97     LDA $9700,Y
 CC/EB89: 29 08        AND #$08
-CC/EB8B: F0 08        BEQ $EB95
+CC/EB8B: F0 08        BEQ Local_CCEB95
 CC/EB8D: EE 63 AA     INC $AA63
 CC/EB90: A5 80        LDA $80
 CC/EB92: 8D 02 A0     STA $A002
+Local_CCEB95:
 CC/EB95: B9 00 97     LDA $9700,Y
 CC/EB98: 29 20        AND #$20
-CC/EB9A: F0 08        BEQ $EBA4
+CC/EB9A: F0 08        BEQ Local_CCEBA4
 CC/EB9C: DA           PHX
 CC/EB9D: A5 80        LDA $80
 CC/EB9F: AA           TAX
 CC/EBA0: FE 06 A0     INC $A006,X
 CC/EBA3: FA           PLX
+Local_CCEBA4:
 CC/EBA4: B9 00 97     LDA $9700,Y
 CC/EBA7: 29 04        AND #$04
 CC/EBA9: 99 8F A0     STA $A08F,Y
@@ -1030,25 +1101,29 @@ CC/EC01: A5 8C        LDA $8C
 CC/EC03: 9D 53 98     STA $9853,X
 CC/EC06: A5 8D        LDA $8D
 CC/EC08: 9D 54 98     STA $9854,X
-CC/EC0B: D0 14        BNE $EC21
+CC/EC0B: D0 14        BNE Local_CCEC21
 CC/EC0D: BD 53 98     LDA $9853,X
 CC/EC10: C9 D8        CMP #$D8
-CC/EC12: F0 08        BEQ $EC1C
+CC/EC12: F0 08        BEQ Local_CCEC1C
 CC/EC14: C9 94        CMP #$94
-CC/EC16: F0 04        BEQ $EC1C
+CC/EC16: F0 04        BEQ Local_CCEC1C
 CC/EC18: C9 AD        CMP #$AD
-CC/EC1A: D0 05        BNE $EC21
+CC/EC1A: D0 05        BNE Local_CCEC21
+Local_CCEC1C:
 CC/EC1C: A6 80        LDX $80
 CC/EC1E: FE 26 1D     INC $1D26,X
+Local_CCEC21:
 CC/EC21: A6 80        LDX $80
 CC/EC23: FE F8 96     INC $96F8,X
+Local_CCEC26:
 CC/EC26: E6 80        INC $80
 CC/EC28: A5 80        LDA $80
 CC/EC2A: C9 08        CMP #$08
-CC/EC2C: F0 03        BEQ $EC31
-CC/EC2E: 4C 5B EA     JMP $EA5B
+CC/EC2C: F0 03        BEQ Local_CCEC31
+CC/EC2E: 4C 5B EA     JMP Local_CCEA5B
+Local_CCEC31:
 CC/EC31: AD 63 AA     LDA $AA63
-CC/EC34: F0 2D        BEQ $EC63
+CC/EC34: F0 2D        BEQ Local_CCEC63
 CC/EC36: AD 02 A0     LDA $A002
 CC/EC39: AA           TAX
 CC/EC3A: BD 0F 1D     LDA $1D0F,X
@@ -1057,8 +1132,9 @@ CC/EC3F: BD 26 1D     LDA $1D26,X
 CC/EC42: 85 81        STA $81
 CC/EC44: 7B           TDC
 CC/EC45: AA           TAX
+Local_CCEC46:
 CC/EC46: BD F8 96     LDA $96F8,X
-CC/EC49: F0 12        BEQ $EC5D
+CC/EC49: F0 12        BEQ Local_CCEC5D
 CC/EC4B: 38           SEC
 CC/EC4C: BD 0F 1D     LDA $1D0F,X
 CC/EC4F: E5 80        SBC $80
@@ -1067,41 +1143,48 @@ CC/EC54: 38           SEC
 CC/EC55: BD 26 1D     LDA $1D26,X
 CC/EC58: E5 81        SBC $81
 CC/EC5A: 9D 6C AA     STA $AA6C,X
+Local_CCEC5D:
 CC/EC5D: E8           INX
 CC/EC5E: E0 08 00     CPX #$0008
-CC/EC61: D0 E3        BNE $EC46
+CC/EC61: D0 E3        BNE Local_CCEC46
+Local_CCEC63:
 CC/EC63: 7B           TDC
 CC/EC64: AA           TAX
 CC/EC65: A8           TAY
 CC/EC66: 84 80        STY $80
 CC/EC68: 84 82        STY $82
 CC/EC6A: C2 20        REP #$20
+Local_CCEC6C:
 CC/EC6C: BF 00 DE E1  LDA $E1DE00,X
-CC/EC70: 30 27        BMI $EC99
+CC/EC70: 30 27        BMI Local_CCEC99
 CC/EC72: D9 53 98     CMP $9853,Y
-CC/EC75: D0 1C        BNE $EC93
+CC/EC75: D0 1C        BNE Local_CCEC93
 CC/EC77: BF 02 DE E1  LDA $E1DE02,X
 CC/EC7B: C9 03 00     CMP #$0003
-CC/EC7E: D0 07        BNE $EC87
+CC/EC7E: D0 07        BNE Local_CCEC87
 CC/EC80: A9 01 00     LDA #$0001
 CC/EC83: 85 80        STA $80
-CC/EC85: 80 0C        BRA $EC93
+CC/EC85: 80 0C        BRA Local_CCEC93
+Local_CCEC87:
 CC/EC87: C9 04 00     CMP #$0004
-CC/EC8A: D0 04        BNE $EC90
+CC/EC8A: D0 04        BNE Local_CCEC90
 CC/EC8C: 85 82        STA $82
-CC/EC8E: 80 03        BRA $EC93
+CC/EC8E: 80 03        BRA Local_CCEC93
+Local_CCEC90:
 CC/EC90: 8D D2 99     STA $99D2
+Local_CCEC93:
 CC/EC93: E8           INX
 CC/EC94: E8           INX
 CC/EC95: E8           INX
 CC/EC96: E8           INX
-CC/EC97: 80 D3        BRA $EC6C
+CC/EC97: 80 D3        BRA Local_CCEC6C
+Local_CCEC99:
 CC/EC99: 7B           TDC
 CC/EC9A: AA           TAX
 CC/EC9B: C8           INY
 CC/EC9C: C8           INY
 CC/EC9D: C0 10 00     CPY #$0010
-CC/ECA0: D0 CA        BNE $EC6C
+CC/ECA0: D0 CA        BNE Local_CCEC6C
 CC/ECA2: 7B           TDC
 CC/ECA3: E2 20        SEP #$20
 CC/ECA5: AD A7 A0     LDA $A0A7
@@ -1118,26 +1201,29 @@ CC/ECBA: 84 86        STY $86
 CC/ECBC: 84 88        STY $88
 CC/ECBE: A6 88        LDX $88
 CC/ECC0: BD F8 96     LDA $96F8,X
-CC/ECC3: F0 26        BEQ $ECEB
+CC/ECC3: F0 26        BEQ Local_CCECEB
 CC/ECC5: BD FA 9F     LDA $9FFA,X
-CC/ECC8: 30 21        BMI $ECEB
+CC/ECC8: 30 21        BMI Local_CCECEB
 CC/ECCA: C2 20        REP #$20
 CC/ECCC: 7B           TDC
 CC/ECCD: AA           TAX
+Local_CCECCE:
 CC/ECCE: B9 53 98     LDA $9853,Y
 CC/ECD1: DD FF 98     CMP $98FF,X
-CC/ECD4: F0 10        BEQ $ECE6
+CC/ECD4: F0 10        BEQ Local_CCECE6
 CC/ECD6: E8           INX
 CC/ECD7: E8           INX
 CC/ECD8: E0 06 00     CPX #$0006
-CC/ECDB: D0 F1        BNE $ECCE
+CC/ECDB: D0 F1        BNE Local_CCECCE
 CC/ECDD: A6 86        LDX $86
 CC/ECDF: 9D FF 98     STA $98FF,X
 CC/ECE2: E6 86        INC $86
 CC/ECE4: E6 86        INC $86
+Local_CCECE6:
 CC/ECE6: F6 80        INC $80,X
 CC/ECE8: 7B           TDC
 CC/ECE9: E2 20        SEP #$20
+Local_CCECEB:
 CC/ECEB: E6 88        INC $88
 CC/ECED: C8           INY
 CC/ECEE: C8           INY
@@ -1153,9 +1239,10 @@ CC/ED00: 8D CE 98     STA $98CE
 CC/ED03: 7B           TDC
 CC/ED04: AA           TAX
 CC/ED05: 86 80        STX $80
+Local_CCED07:
 CC/ED07: A6 80        LDX $80
 CC/ED09: BD 00 99     LDA $9900,X
-CC/ED0C: 30 6E        BMI $ED7C
+CC/ED0C: 30 6E        BMI Local_CCED7C
 CC/ED0E: C2 20        REP #$20
 CC/ED10: BD FF 98     LDA $98FF,X
 CC/ED13: 0A           ASL
@@ -1182,7 +1269,7 @@ CC/ED47: 8D AA 94     STA $94AA
 CC/ED4A: 7B           TDC
 CC/ED4B: 8D AB 94     STA $94AB
 CC/ED4E: E2 20        SEP #$20
-CC/ED50: 20 63 F0     JSR $F063
+CC/ED50: 20 63 F0     JSR Routine_CCF063
 CC/ED53: A5 80        LDA $80
 CC/ED55: 0A           ASL
 CC/ED56: 0A           ASL
@@ -1193,23 +1280,26 @@ CC/ED5B: 65 82        ADC $82
 CC/ED5D: A8           TAY
 CC/ED5E: 7B           TDC
 CC/ED5F: AA           TAX
+Local_CCED60:
 CC/ED60: BD A0 94     LDA $94A0,X
 CC/ED63: 99 BC AC     STA $ACBC,Y
 CC/ED66: C8           INY
 CC/ED67: E8           INX
 CC/ED68: E0 0C 00     CPX #$000C
-CC/ED6B: D0 F3        BNE $ED60
+CC/ED6B: D0 F3        BNE Local_CCED60
 CC/ED6D: 7B           TDC
 CC/ED6E: AA           TAX
+Local_CCED6F:
 CC/ED6F: BD B0 94     LDA $94B0,X
 CC/ED72: 99 BC AC     STA $ACBC,Y
 CC/ED75: C8           INY
 CC/ED76: E8           INX
 CC/ED77: E0 0C 00     CPX #$000C
-CC/ED7A: D0 F3        BNE $ED6F
+CC/ED7A: D0 F3        BNE Local_CCED6F
+Local_CCED7C:
 CC/ED7C: E6 80        INC $80
 CC/ED7E: E6 80        INC $80
 CC/ED80: A5 80        LDA $80
 CC/ED82: C9 06        CMP #$06
-CC/ED84: D0 81        BNE $ED07
+CC/ED84: D0 81        BNE Local_CCED07
 CC/ED86: 6B           RTL

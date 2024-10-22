@@ -9,7 +9,7 @@ D1/1713: 41 E8        EOR ($E8,X)
 D1/1715: 2A           ROL
 D1/1716: 08           PHP
 D1/1717: C0 60        CPY #$60
-D1/1719: 50 60        BVC $177B
+D1/1719: 50 60        BVC Routine_D1177B
 D1/171B: 42 41        WDM $41
 D1/171D: 42 0C        WDM $0C
 D1/171F: 00 C8        BRK $C8
@@ -20,12 +20,12 @@ D1/1729: C0 00        CPY #$00
 D1/172B: 01 02        ORA ($02,X)
 D1/172D: 66 00        ROR $00
 D1/172F: 88           DEY
-D1/1730: 22 00 40 27  JSR $274000
+D1/1730: 22 00 40 27  JSR Routine_274000
 D1/1734: 08           PHP
-D1/1735: 22 80 C0 5C  JSR $5CC080
+D1/1735: 22 80 C0 5C  JSR Routine_5CC080
 D1/1739: 28           PLP
-D1/173A: 80 12        BRA $174E
-D1/173C: 80 80        BRA $16BE
+D1/173A: 80 12        BRA Local_D1174E
+D1/173C: 80 80        BRA Routine_D116BE
 D1/173E: E2 80        SEP #$80
 D1/1740: E0 80        CPX #$80
 D1/1742: 09 10        ORA #$10
@@ -35,10 +35,12 @@ D1/1747: E4 09        CPX $09
 D1/1749: 18           CLC
 D1/174A: E2 C0        SEP #$C0
 D1/174C: E0 87        CPX #$87
+Local_D1174E:
 D1/174E: 00 44        BRK $44
 D1/1750: 9B           TXY
 D1/1751: 00 F9        BRK $F9
 D1/1753: 12 08        ORA ($08)
 D1/1755: C0 E4        CPY #$E4
-D1/1757: 90 00        BCC $1759
+D1/1757: 90 00        BCC Local_D11759
+Local_D11759:
 D1/1759: 40           RTI

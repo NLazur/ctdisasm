@@ -1,20 +1,21 @@
 ; Bank: CD | Start Address: 0316
 Routine_CD0316:
 CD/0316: CD 06 CD     CMP $CD06
-CD/0319: F0 24        BEQ $033F
+CD/0319: F0 24        BEQ Local_CD033F
 CD/031B: 8D 06 CD     STA $CD06
 CD/031E: C9 FF        CMP #$FF
-CD/0320: F0 1D        BEQ $033F
+CD/0320: F0 1D        BEQ Local_CD033F
 CD/0322: A2 09 3A     LDX #$3A09
 CD/0325: 8E 0D 02     STX $020D
 CD/0328: 48           PHA
 CD/0329: A9 CC        LDA #$CC
 CD/032B: 8D 0F 02     STA $020F
 CD/032E: 68           PLA
-CD/032F: 20 5E 02     JSR $025E
+CD/032F: 20 5E 02     JSR Routine_CD025E
 CD/0332: A9 10        LDA #$10
 CD/0334: 8D EC CC     STA $CCEC
 CD/0337: EE 24 CA     INC $CA24
 CD/033A: A9 01        LDA #$01
 CD/033C: 8D 05 CD     STA $CD05
+Local_CD033F:
 CD/033F: 6B           RTL

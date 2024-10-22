@@ -13,5 +13,5 @@ C6/AE6D: AC AD 1C     LDY $1CAD
 C6/AE70: AA           TAX
 C6/AE71: AB           PLB
 C6/AE72: 3B           TSC
-C6/AE73: 90 2D        BCC $AEA2
+C6/AE73: 90 2D        BCC Routine_C6AEA2
 C6/AE75: 40           RTI

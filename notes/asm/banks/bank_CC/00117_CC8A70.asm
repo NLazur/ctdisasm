@@ -15,34 +15,39 @@ CC/8A86: 03 00        ORA $00,S
 CC/8A88: 00 3A        BRK $3A
 CC/8A8A: 3B           TSC
 CC/8A8B: 04 3E        TSB $3E
-CC/8A8D: 30 00        BMI $8A8F
+CC/8A8D: 30 00        BMI Local_CC8A8F
+Local_CC8A8F:
 CC/8A8F: 0C 00 00     TSB $0000
 CC/8A92: 07 0F        ORA [$0F]
-CC/8A94: 80 3A        BRA $8AD0
+CC/8A94: 80 3A        BRA Routine_CC8AD0
 CC/8A96: 3B           TSC
 CC/8A97: 04 3E        TSB $3E
-CC/8A99: 10 00        BPL $8A9B
+CC/8A99: 10 00        BPL Local_CC8A9B
+Local_CC8A9B:
 CC/8A9B: 0C 00 00     TSB $0000
 CC/8A9E: 03 00        ORA $00,S
 CC/8AA0: 00 3A        BRK $3A
 CC/8AA2: 3B           TSC
 CC/8AA3: 04 3E        TSB $3E
-CC/8AA5: 10 00        BPL $8AA7
+CC/8AA5: 10 00        BPL Local_CC8AA7
+Local_CC8AA7:
 CC/8AA7: 0C 00 00     TSB $0000
 CC/8AAA: 03 00        ORA $00,S
 CC/8AAC: 00 3A        BRK $3A
 CC/8AAE: 3B           TSC
 CC/8AAF: 04 3E        TSB $3E
-CC/8AB1: F0 01        BEQ $8AB4
+CC/8AB1: F0 01        BEQ Routine_CC8AB4
 CC/8AB3: FF 00 00 03  SBC $030000,X
 CC/8AB7: 00 00        BRK $00
 CC/8AB9: 3A           DEC
 CC/8ABA: 3B           TSC
 CC/8ABB: 04 3E        TSB $3E
-CC/8ABD: B0 00        BCS $8ABF
-CC/8ABF: 80 00        BRA $8AC1
+CC/8ABD: B0 00        BCS Local_CC8ABF
+Local_CC8ABF:
+CC/8ABF: 80 00        BRA Local_CC8AC1
+Local_CC8AC1:
 CC/8AC1: 00 05        BRK $05
-CC/8AC3: 80 01        BRA $8AC6
+CC/8AC3: 80 01        BRA Routine_CC8AC6
 CC/8AC5: 00 00        BRK $00
 CC/8AC7: 00 00        BRK $00
 CC/8AC9: 00 00        BRK $00
@@ -52,7 +57,8 @@ CC/8ACF: 00 00        BRK $00
 CC/8AD1: 3A           DEC
 CC/8AD2: 3B           TSC
 CC/8AD3: 04 3E        TSB $3E
-CC/8AD5: B0 00        BCS $8AD7
+CC/8AD5: B0 00        BCS Local_CC8AD7
+Local_CC8AD7:
 CC/8AD7: C8           INY
 CC/8AD8: 00 00        BRK $00
 CC/8ADA: 07 00        ORA [$00]
@@ -90,10 +96,11 @@ CC/8B1B: 8E F8 8E     STX $8EF8
 CC/8B1E: 7F 8F 91 8F  ADC $8F918F,X
 CC/8B22: B1 8F        LDA ($8F),Y
 CC/8B24: DD 8F 02     CMP $028F,X
-CC/8B27: 90 78        BCC $8BA1
-CC/8B29: 90 96        BCC $8AC1
-CC/8B2B: 90 AC        BCC $8AD9
-CC/8B2D: 90 11        BCC $8B40
+Local_CC8B27:
+CC/8B27: 90 78        BCC Local_CC8BA1
+CC/8B29: 90 96        BCC Local_CC8AC1
+CC/8B2B: 90 AC        BCC Routine_CC8AD9
+CC/8B2D: 90 11        BCC Routine_CC8B40
 CC/8B2F: 91 39        STA ($39),Y
 CC/8B31: 91 8B        STA ($8B),Y
 CC/8B33: 91 BA        STA ($BA),Y
@@ -140,7 +147,7 @@ CC/8B82: 8E 98 E2     STX $E298
 CC/8B85: 98           TYA
 CC/8B86: 0E 99 32     ASL $3299
 CC/8B89: 99 56 99     STA $9956,Y
-CC/8B8C: 70 99        BVS $8B27
+CC/8B8C: 70 99        BVS Local_CC8B27
 CC/8B8E: 97 99        STA [$99],Y
 CC/8B90: C0 99 D6     CPY #$D699
 CC/8B93: 99 FD 99     STA $99FD,Y
@@ -149,6 +156,7 @@ CC/8B98: 43 9A        EOR $9A,S
 CC/8B9A: 6D 9A A7     ADC $A79A
 CC/8B9D: 9A           TXS
 CC/8B9E: CD 9A EF     CMP $EF9A
+Local_CC8BA1:
 CC/8BA1: 9A           TXS
 CC/8BA2: 0B           PHD
 CC/8BA3: 9B           TXY
@@ -169,7 +177,7 @@ CC/8BC2: FD 9D 36     SBC $369D,X
 CC/8BC5: 9E 5A 9E     STZ $9E5A,X
 CC/8BC8: 8D 9E A3     STA $A39E
 CC/8BCB: 9E B8 9E     STZ $9EB8,X
-CC/8BCE: D0 9E        BNE $8B6E
+CC/8BCE: D0 9E        BNE Routine_CC8B6E
 CC/8BD0: F9 9E 0F     SBC $0F9E,Y
 CC/8BD3: 9F 46 9F 76  STA $769F46,X
 CC/8BD7: 9F 8C 9F E3  STA $E39F8C,X
@@ -195,7 +203,9 @@ CC/8C05: A3 E0        LDA $E0,S
 CC/8C07: A3 12        LDA $12,S
 CC/8C09: A4 3D        LDY $3D
 CC/8C0B: A4 67        LDY $67
+Local_CC8C0D:
 CC/8C0D: A4 81        LDY $81
+Local_CC8C0F:
 CC/8C0F: A4 9F        LDY $9F
 CC/8C11: A4 D9        LDY $D9
 CC/8C13: A4 0F        LDY $0F
@@ -208,6 +218,7 @@ CC/8C1F: A6 53        LDX $53
 CC/8C21: A6 8E        LDX $8E
 CC/8C23: A6 AC        LDX $AC
 CC/8C25: A6 DC        LDX $DC
+Local_CC8C27:
 CC/8C27: A6 FF        LDX $FF
 CC/8C29: A6 65        LDX $65
 CC/8C2B: A7 7B        LDA [$7B]
@@ -231,13 +242,13 @@ CC/8C50: FF AD 26 AE  SBC $AE26AD,X
 CC/8C54: 62 AE BF     PER $CC4C05
 CC/8C57: AE D7 AE     LDX $AED7
 CC/8C5A: 11 AF        ORA ($AF),Y
-CC/8C5C: 80 AF        BRA $8C0D
+CC/8C5C: 80 AF        BRA Local_CC8C0D
 CC/8C5E: DD AF 3A     CMP $3AAF,X
-CC/8C61: B0 74        BCS $8CD7
-CC/8C63: B0 AA        BCS $8C0F
-CC/8C65: B0 C0        BCS $8C27
-CC/8C67: B0 D6        BCS $8C3F
-CC/8C69: B0 59        BCS $8CC4
+CC/8C61: B0 74        BCS Local_CC8CD7
+CC/8C63: B0 AA        BCS Local_CC8C0F
+CC/8C65: B0 C0        BCS Local_CC8C27
+CC/8C67: B0 D6        BCS Routine_CC8C3F
+CC/8C69: B0 59        BCS Routine_CC8CC4
 CC/8C6B: B1 87        LDA ($87),Y
 CC/8C6D: B1 B5        LDA ($B5),Y
 CC/8C6F: B1 3B        LDA ($3B),Y
@@ -290,6 +301,7 @@ CC/8CCF: C3 B6        CMP $B6,S
 CC/8CD1: C3 F2        CMP $F2,S
 CC/8CD3: C3 59        CMP $59,S
 CC/8CD5: C4 38        CPY $38
+Local_CC8CD7:
 CC/8CD7: C5 6E        CMP $6E
 CC/8CD9: C5 84        CMP $84
 CC/8CDB: C5 9A        CMP $9A
@@ -399,7 +411,7 @@ CC/8DB8: 00 00        BRK $00
 CC/8DBA: 06 04        ASL $04
 CC/8DBC: 0B           PHD
 CC/8DBD: 3E E6 00     ROL $00E6,X
-CC/8DC0: 22 FE 00 00  JSR $0000FE
+CC/8DC0: 22 FE 00 00  JSR Routine_0000FE
 CC/8DC4: 00 00        BRK $00
 CC/8DC6: FE 00 00     INC $0000,X
 CC/8DC9: 06 04        ASL $04

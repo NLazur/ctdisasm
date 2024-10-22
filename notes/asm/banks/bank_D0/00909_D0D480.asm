@@ -9,10 +9,11 @@ D0/D48A: 07 07        ORA [$07]
 D0/D48C: 03 03        ORA $03,S
 D0/D48E: 00 00        BRK $00
 D0/D490: 1C 06 0B     TRB $0B06
-D0/D493: 10 08        BPL $D49D
+D0/D493: 10 08        BPL Local_D0D49D
 D0/D495: 04 03        TSB $03
 D0/D497: 00 30        BRK $30
 D0/D499: C0 F0        CPY #$F0
 D0/D49B: A0 F0        LDY #$F0
-D0/D49D: B0 E0        BCS $D47F
+Local_D0D49D:
+D0/D49D: B0 E0        BCS Routine_D0D47F
 D0/D49F: 40           RTI

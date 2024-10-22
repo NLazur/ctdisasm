@@ -1,6 +1,6 @@
 ; Bank: CE | Start Address: F0E6
 Routine_CEF0E6:
-CE/F0E6: 10 38        BPL $F120
+CE/F0E6: 10 38        BPL Routine_CEF120
 CE/F0E8: 08           PHP
 CE/F0E9: 00 01        BRK $01
 CE/F0EB: 00 00        BRK $00
@@ -49,14 +49,15 @@ CE/F13F: 02 00        COP $00
 CE/F141: 02 00        COP $00
 CE/F143: 03 00        ORA $00,S
 CE/F145: 03 10        ORA $10,S
-CE/F147: 10 08        BPL $F151
+CE/F147: 10 08        BPL Local_CEF151
 CE/F149: 08           PHP
 CE/F14A: 08           PHP
 CE/F14B: 08           PHP
 CE/F14C: 08           PHP
 CE/F14D: 08           PHP
-CE/F14E: 10 10        BPL $F160
+CE/F14E: 10 10        BPL Local_CEF160
 CE/F150: 08           PHP
+Local_CEF151:
 CE/F151: 08           PHP
 CE/F152: 08           PHP
 CE/F153: 08           PHP
@@ -67,6 +68,7 @@ CE/F158: 00 04        BRK $04
 CE/F15A: 00 08        BRK $08
 CE/F15C: 00 10        BRK $10
 CE/F15E: 00 10        BRK $10
+Local_CEF160:
 CE/F160: 00 08        BRK $08
 CE/F162: 00 04        BRK $04
 CE/F164: 00 04        BRK $04
@@ -80,17 +82,21 @@ CE/F175: 73 AD        ADC ($AD,S),Y
 CE/F177: 74 AD        STZ $AD,X
 CE/F179: 77 AD        ADC [$AD],Y
 CE/F17B: 78           SEI
-CE/F17C: 80 00        BRA $F17E
+CE/F17C: 80 00        BRA Local_CEF17E
+Local_CEF17E:
 CE/F17E: 00 02        BRK $02
-CE/F180: 80 02        BRA $F184
+CE/F180: 80 02        BRA Local_CEF184
 CE/F182: 00 04        BRK $04
-CE/F184: 80 04        BRA $F18A
+Local_CEF184:
+CE/F184: 80 04        BRA Local_CEF18A
 CE/F186: 00 06        BRK $06
-CE/F188: 80 06        BRA $F190
+CE/F188: 80 06        BRA Local_CEF190
+Local_CEF18A:
 CE/F18A: 00 08        BRK $08
-CE/F18C: 80 08        BRA $F196
+CE/F18C: 80 08        BRA Routine_CEF196
 CE/F18E: 00 0A        BRK $0A
-CE/F190: 80 0A        BRA $F19C
+Local_CEF190:
+CE/F190: 80 0A        BRA Routine_CEF19C
 CE/F192: 00 00        BRK $00
 CE/F194: 08           PHP
 CE/F195: 00 00        BRK $00

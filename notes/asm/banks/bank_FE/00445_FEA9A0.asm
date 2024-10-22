@@ -2,9 +2,9 @@
 Routine_FEA9A0:
 FE/A9A0: 38           SEC
 FE/A9A1: 8E 37 CA     STX $CA37
-FE/A9A4: 10 46        BPL $A9EC
+FE/A9A4: 10 46        BPL Routine_FEA9EC
 FE/A9A6: 00 AC        BRK $AC
-FE/A9A8: 10 38        BPL $A9E2
+FE/A9A8: 10 38        BPL Routine_FEA9E2
 FE/A9AA: 38           SEC
 FE/A9AB: 3B           TSC
 FE/A9AC: 02 00        COP $00
@@ -19,12 +19,12 @@ FE/A9BE: 3D 43 10     AND $1043,X
 FE/A9C1: 3D 7E 3D     AND $3D7E,X
 FE/A9C4: 59 10 02     EOR $0210,Y
 FE/A9C7: 00 80        BRK $80
-FE/A9C9: D0 7B        BNE $AA46
-FE/A9CB: 10 38        BPL $AA05
+FE/A9C9: D0 7B        BNE Local_FEAA46
+FE/A9CB: 10 38        BPL Routine_FEAA05
 FE/A9CD: 00 3A        BRK $3A
 FE/A9CF: 00 3A        BRK $3A
 FE/A9D1: A2 3A 44     LDX #$443A
-FE/A9D4: 10 39        BPL $AA0F
+FE/A9D4: 10 39        BPL Local_FEAA0F
 FE/A9D6: 38           SEC
 FE/A9D7: 39 08 10     AND $1008,Y
 FE/A9DA: 37 40        AND [$40],Y
@@ -54,8 +54,9 @@ FE/AA08: 0A           ASL
 FE/AA09: 00 49        BRK $49
 FE/AA0B: 47 49        EOR [$49]
 FE/AA0D: 42 42        WDM $42
+Local_FEAA0F:
 FE/AA0F: 23 08        AND $08,S
-FE/AA11: 20 01 10     JSR $1001
+FE/AA11: 20 01 10     JSR Routine_FE1001
 FE/AA14: 07 07        ORA [$07]
 FE/AA16: 47 11        EOR [$11]
 FE/AA18: 00 47        BRK $47
@@ -79,6 +80,7 @@ FE/AA3C: 01 37        ORA ($37,X)
 FE/AA3E: 39 3B 3F     AND $3F3B,Y
 FE/AA41: 3C F9 D5     BIT $D5F9,X
 FE/AA44: 00 36        BRK $36
+Local_FEAA46:
 FE/AA46: 37 08        AND [$08],Y
 FE/AA48: 00 B5        BRK $B5
 FE/AA4A: 21 8C        AND ($8C,X)
@@ -97,7 +99,7 @@ FE/AA61: 13 5F        ORA ($5F,S),Y
 FE/AA63: 28           PLP
 FE/AA64: 02 63        COP $63
 FE/AA66: 23 14        AND $14,S
-FE/AA68: 10 A0        BPL $AA0A
+FE/AA68: 10 A0        BPL Routine_FEAA0A
 FE/AA6A: 43 6F        EOR $6F,S
 FE/AA6C: 13 0E        ORA ($0E,S),Y
 FE/AA6E: D6 33        DEC $33,X
@@ -111,7 +113,7 @@ FE/AA7F: 03 5F        ORA $5F,S
 FE/AA81: A0 03 C1     LDY #$C103
 FE/AA84: 03 5C        ORA $5C,S
 FE/AA86: 14 15        TRB $15
-FE/AA88: 20 53 74     JSR $7453
+FE/AA88: 20 53 74     JSR Routine_FE7453
 FE/AA8B: 05 5D        ORA $5D
 FE/AA8D: 34 02        BIT $02,X
 FE/AA8F: 1E 04 CE     ASL $CE04,X

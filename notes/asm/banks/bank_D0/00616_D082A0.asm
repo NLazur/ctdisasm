@@ -19,6 +19,6 @@ D0/82BF: 36 54        ROL $54,X
 D0/82C1: 6C AB DB     JMP ($DBAB)
 D0/82C4: 54 B6 A8     MVN $B6,$A8
 D0/82C7: 6C C0 C0     JMP ($C0C0)
-D0/82CA: 80 80        BRA $824C
+D0/82CA: 80 80        BRA Routine_D0824C
 D0/82CC: 00 00        BRK $00
 D0/82CE: 40           RTI

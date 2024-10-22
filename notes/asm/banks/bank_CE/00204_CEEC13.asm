@@ -2,21 +2,23 @@
 Routine_CEEC13:
 CE/EC13: 8A           TXA
 CE/EC14: C9 FF        CMP #$FF
-CE/EC16: D0 16        BNE $EC2E
+CE/EC16: D0 16        BNE Local_CEEC2E
 CE/EC18: C2 20        REP #$20
 CE/EC1A: A9 FF 00     LDA #$00FF
+Local_CEEC1D:
 CE/EC1D: 99 61 C1     STA $C161,Y
 CE/EC20: C8           INY
 CE/EC21: C8           INY
 CE/EC22: C8           INY
 CE/EC23: C8           INY
 CE/EC24: C0 82 03     CPY #$0382
-CE/EC27: 90 F4        BCC $EC1D
+CE/EC27: 90 F4        BCC Local_CEEC1D
 CE/EC29: 7B           TDC
 CE/EC2A: E2 20        SEP #$20
-CE/EC2C: 80 25        BRA $EC53
+CE/EC2C: 80 25        BRA Routine_CEEC53
+Local_CEEC2E:
 CE/EC2E: C9 00        CMP #$00
-CE/EC30: D0 15        BNE $EC47
+CE/EC30: D0 15        BNE Local_CEEC47
 CE/EC32: 99 61 C1     STA $C161,Y
 CE/EC35: 9E 64 C1     STZ $C164,X
 CE/EC38: E8           INX
@@ -30,6 +32,7 @@ CE/EC3F: C8           INY
 CE/EC40: C0 82        CPY #$82
 CE/EC42: 03 90        ORA $90,S
 CE/EC44: ED 80 0C     SBC $0C80
+Local_CEEC47:
 CE/EC47: 99 61 C1     STA $C161,Y
 CE/EC4A: C8           INY
 CE/EC4B: C8           INY

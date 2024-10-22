@@ -14,7 +14,7 @@ C7/66E8: 7F DD 03 D0  ADC $D003DD,X
 C7/66EC: CF 0D 00 A8  CMP $A8000D
 C7/66F0: EB           XBA
 C7/66F1: C4 00        CPY $00
-C7/66F3: D0 CF        BNE $66C4
+C7/66F3: D0 CF        BNE Routine_C766C4
 C7/66F5: 0C 00 EB     TSB $EB00
 C7/66F8: DC 08 D8     JMP [$D808]
 C7/66FB: D2 D4        CMP ($D4)
@@ -23,15 +23,15 @@ C7/6700: CB           WAI
 C7/6701: 00 32        BRK $32
 C7/6703: BF C8 54 14  LDA $1454C8,X
 C7/6707: 04 C8        TSB $C8
-C7/6709: 4C E0 A9     JMP $A9E0
+C7/6709: 4C E0 A9     JMP Routine_C7A9E0
 C7/670C: EB           XBA
 C7/670D: C3 DB        CMP $DB,S
 C7/670F: 01 D4        ORA ($D4,X)
 C7/6711: DC 07 D7     JMP [$D707]
 C7/6714: DD 0C 0A     CMP $0A0C,X
 C7/6717: C8           INY
-C7/6718: 20 08 E0     JSR $E008
-C7/671B: 10 AB        BPL $66C8
+C7/6718: 20 08 E0     JSR Routine_C7E008
+C7/671B: 10 AB        BPL Routine_C766C8
 C7/671D: EB           XBA
 C7/671E: D4 DC        PEI $DC
 C7/6720: 07 08        ORA [$08]
@@ -73,7 +73,7 @@ C7/6763: 00 AB        BRK $AB
 C7/6765: EB           XBA
 C7/6766: DB           STP
 C7/6767: 01 C4        ORA ($C4,X)
-C7/6769: 4C D4 DC     JMP $DCD4
+C7/6769: 4C D4 DC     JMP Routine_C7DCD4
 C7/676C: 03 DD        ORA $DD,S
 C7/676E: 0E E2 05     ASL $05E2
 C7/6771: A7 DA        LDA [$DA]
@@ -87,7 +87,7 @@ C7/6781: E2 09        SEP #$09
 C7/6783: 7C DA 03     JMP ($03DA,X)
 C7/6786: E3 EB        SBC $EB,S
 C7/6788: D4 BB        PEI $BB
-C7/678A: D0 CF        BNE $675B
+C7/678A: D0 CF        BNE Routine_C7675B
 C7/678C: 1B           TCS
 C7/678D: CD 18 94     CMP $9418
 C7/6790: E0 0F E2     CPX #$E20F
@@ -98,6 +98,7 @@ C7/6799: E3 B2        SBC $B2,S
 C7/679B: E3 EB        SBC $EB,S
 C7/679D: C4 7F        CPY $7F
 C7/679F: D4 DC        PEI $DC
+Local_C767A1:
 C7/67A1: 06 D6        ASL $D6
 C7/67A3: 00 C9        BRK $C9
 C7/67A5: 0B           PHD
@@ -118,7 +119,7 @@ C7/67C0: 06 11        ASL $11
 C7/67C2: E0 1C 85     CPX #$851C
 C7/67C5: EB           XBA
 C7/67C6: D4 DC        PEI $DC
-C7/67C8: 10 D7        BPL $67A1
+C7/67C8: 10 D7        BPL Local_C767A1
 C7/67CA: DD 08 01     CMP $0108,X
 C7/67CD: EB           XBA
 C7/67CE: D4 E6        PEI $E6
@@ -128,7 +129,7 @@ C7/67D4: DA           PHX
 C7/67D5: 01 E3        ORA ($E3,X)
 C7/67D7: EB           XBA
 C7/67D8: D4 DC        PEI $DC
-C7/67DA: 10 D6        BPL $67B2
+C7/67DA: 10 D6        BPL Routine_C767B2
 C7/67DC: 04 C9        TSB $C9
 C7/67DE: 00 0C        BRK $0C
 C7/67E0: 7F DD 0A C8  ADC $C80ADD,X

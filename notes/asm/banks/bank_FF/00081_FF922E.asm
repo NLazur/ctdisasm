@@ -1,6 +1,7 @@
 ; Bank: FF | Start Address: 922E
 Routine_FF922E:
-FF/922E: F0 00        BEQ $9230
+FF/922E: F0 00        BEQ Local_FF9230
+Local_FF9230:
 FF/9230: 00 03        BRK $03
 FF/9232: 01 06        ORA ($06,X)
 FF/9234: 02 0C        COP $0C

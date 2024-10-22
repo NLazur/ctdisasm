@@ -9,7 +9,7 @@ CE/1962: 05 24        ORA $24
 CE/1964: 01 20        ORA ($20,X)
 CE/1966: 1C 7A 0A     TRB $0A7A
 CE/1969: 09 70 D9     ORA #$D970
-CE/196C: 30 98        BMI $1906
+CE/196C: 30 98        BMI Routine_CE1906
 CE/196E: 01 03        ORA ($03,X)
 CE/1970: DA           PHX
 CE/1971: 71 0A        ADC ($0A),Y
@@ -17,21 +17,21 @@ CE/1973: 1B           TCS
 CE/1974: 03 78        ORA $78,S
 CE/1976: 6A           ROR
 CE/1977: 03 01        ORA $01,S
-CE/1979: 20 05 36     JSR $3605
+CE/1979: 20 05 36     JSR Routine_CE3605
 CE/197C: 33 03        AND ($03,S),Y
 CE/197E: 3A           DEC
 CE/197F: 1E 08 3A     ASL $3A08,X
 CE/1982: 1F F6 1A 78  ORA $781AF6,X
 CE/1986: 6A           ROR
 CE/1987: 03 01        ORA $01,S
-CE/1989: 20 0A 1B     JSR $1B0A
+CE/1989: 20 0A 1B     JSR Routine_CE1B0A
 CE/198C: 03 78        ORA $78,S
 CE/198E: 6A           ROR
 CE/198F: 03 01        ORA $01,S
-CE/1991: 20 05 78     JSR $7805
+CE/1991: 20 05 78     JSR Routine_CE7805
 CE/1994: 6A           ROR
 CE/1995: 03 01        ORA $01,S
-CE/1997: 20 05 78     JSR $7805
+CE/1997: 20 05 78     JSR Routine_CE7805
 CE/199A: 6A           ROR
 CE/199B: 03 01        ORA $01,S
 CE/199D: 36 20        ROL $20,X
@@ -44,7 +44,7 @@ CE/19A9: 33 03        AND ($03,S),Y
 CE/19AB: 3A           DEC
 CE/19AC: 1E F0 1A     ASL $1AF0,X
 CE/19AF: 24 02        BIT $02
-CE/19B1: 20 01 78     JSR $7801
+CE/19B1: 20 01 78     JSR Routine_CE7801
 CE/19B4: 6A           ROR
 CE/19B5: 03 01        ORA $01,S
 CE/19B7: 33 03        AND ($03,S),Y
@@ -55,17 +55,17 @@ CE/19C1: 0A           ASL
 CE/19C2: 78           SEI
 CE/19C3: 6A           ROR
 CE/19C4: 03 01        ORA $01,S
-CE/19C6: 20 05 78     JSR $7805
+CE/19C6: 20 05 78     JSR Routine_CE7805
 CE/19C9: 6A           ROR
 CE/19CA: 03 01        ORA $01,S
-CE/19CC: 20 05 03     JSR $0305
+CE/19CC: 20 05 03     JSR Routine_CE0305
 CE/19CF: 01 20        ORA ($20,X)
 CE/19D1: 05 03        ORA $03
 CE/19D3: 01 20        ORA ($20,X)
 CE/19D5: 05 03        ORA $03
 CE/19D7: 01 00        ORA ($00,X)
 CE/19D9: 73 03        ADC ($03,S),Y
-CE/19DB: 20 01 33     JSR $3301
+CE/19DB: 20 01 33     JSR Routine_CE3301
 CE/19DE: 03 3A        ORA $3A,S
 CE/19E0: 1E 0C 3A     ASL $3A0C,X
 CE/19E3: 1F FB 1A 24  ORA $241AFB,X
@@ -81,18 +81,18 @@ CE/19F8: 0A           ASL
 CE/19F9: 78           SEI
 CE/19FA: 6A           ROR
 CE/19FB: 03 01        ORA $01,S
-CE/19FD: 20 05 78     JSR $7805
+CE/19FD: 20 05 78     JSR Routine_CE7805
 CE/1A00: 6A           ROR
 CE/1A01: 03 01        ORA $01,S
-CE/1A03: 20 05 78     JSR $7805
+CE/1A03: 20 05 78     JSR Routine_CE7805
 CE/1A06: 6A           ROR
 CE/1A07: 03 01        ORA $01,S
-CE/1A09: 20 05 03     JSR $0305
+CE/1A09: 20 05 03     JSR Routine_CE0305
 CE/1A0C: 01 20        ORA ($20,X)
 CE/1A0E: 05 03        ORA $03
 CE/1A10: 01 00        ORA ($00,X)
 CE/1A12: 73 03        ADC ($03,S),Y
-CE/1A14: 20 02 33     JSR $3302
+CE/1A14: 20 02 33     JSR Routine_CE3302
 CE/1A17: 03 3A        ORA $3A,S
 CE/1A19: 1E FB 3A     ASL $3AFB,X
 CE/1A1C: 1F 08 1A 24  ORA $241A08,X
@@ -109,22 +109,22 @@ CE/1A31: 0A           ASL
 CE/1A32: 78           SEI
 CE/1A33: 6A           ROR
 CE/1A34: 03 01        ORA $01,S
-CE/1A36: 20 05 78     JSR $7805
+CE/1A36: 20 05 78     JSR Routine_CE7805
 CE/1A39: 6A           ROR
 CE/1A3A: 03 01        ORA $01,S
-CE/1A3C: 20 05 78     JSR $7805
+CE/1A3C: 20 05 78     JSR Routine_CE7805
 CE/1A3F: 6A           ROR
 CE/1A40: 03 01        ORA $01,S
-CE/1A42: 20 05 03     JSR $0305
+CE/1A42: 20 05 03     JSR Routine_CE0305
 CE/1A45: 01 20        ORA ($20,X)
 CE/1A47: 05 03        ORA $03
 CE/1A49: 01 00        ORA ($00,X)
 CE/1A4B: 73 03        ADC ($03,S),Y
-CE/1A4D: 20 03 33     JSR $3303
+CE/1A4D: 20 03 33     JSR Routine_CE3303
 CE/1A50: 03 3A        ORA $3A,S
 CE/1A52: 1E 10 1A     ASL $1A10,X
 CE/1A55: 24 02        BIT $02
-CE/1A57: 20 10 78     JSR $7810
+CE/1A57: 20 10 78     JSR Routine_CE7810
 CE/1A5A: 6A           ROR
 CE/1A5B: 03 01        ORA $01,S
 CE/1A5D: 33 03        AND ($03,S),Y
@@ -135,18 +135,18 @@ CE/1A67: 0A           ASL
 CE/1A68: 78           SEI
 CE/1A69: 6A           ROR
 CE/1A6A: 03 01        ORA $01,S
-CE/1A6C: 20 05 78     JSR $7805
+CE/1A6C: 20 05 78     JSR Routine_CE7805
 CE/1A6F: 6A           ROR
 CE/1A70: 03 01        ORA $01,S
-CE/1A72: 20 05 78     JSR $7805
+CE/1A72: 20 05 78     JSR Routine_CE7805
 CE/1A75: 6A           ROR
 CE/1A76: 03 01        ORA $01,S
-CE/1A78: 20 05 03     JSR $0305
+CE/1A78: 20 05 03     JSR Routine_CE0305
 CE/1A7B: 01 20        ORA ($20,X)
 CE/1A7D: 05 03        ORA $03
 CE/1A7F: 01 00        ORA ($00,X)
 CE/1A81: 73 03        ADC ($03,S),Y
-CE/1A83: 20 04 33     JSR $3304
+CE/1A83: 20 04 33     JSR Routine_CE3304
 CE/1A86: 03 3A        ORA $3A,S
 CE/1A88: 1E F8 3A     ASL $3AF8,X
 CE/1A8B: 1F F6 1A 24  ORA $241AF6,X
@@ -162,10 +162,10 @@ CE/1AA0: 0A           ASL
 CE/1AA1: 78           SEI
 CE/1AA2: 6A           ROR
 CE/1AA3: 03 01        ORA $01,S
-CE/1AA5: 20 05 78     JSR $7805
+CE/1AA5: 20 05 78     JSR Routine_CE7805
 CE/1AA8: 6A           ROR
 CE/1AA9: 03 01        ORA $01,S
-CE/1AAB: 20 05 03     JSR $0305
+CE/1AAB: 20 05 03     JSR Routine_CE0305
 CE/1AAE: 01 20        ORA ($20,X)
 CE/1AB0: 05 03        ORA $03
 CE/1AB2: 01 00        ORA ($00,X)
@@ -187,7 +187,7 @@ CE/1AD5: 99 03 45     STA $4503,Y
 CE/1AD8: 02 46        COP $46
 CE/1ADA: 36 24        ROL $24,X
 CE/1ADC: 02 2D        COP $2D
-CE/1ADE: 80 12        BRA $1AF2
+CE/1ADE: 80 12        BRA Routine_CE1AF2
 CE/1AE0: 99 06 3C     STA $3C06,Y
 CE/1AE3: 24 03        BIT $03
 CE/1AE5: 03 24        ORA $24,S
@@ -198,12 +198,12 @@ CE/1AEC: 98           TYA
 CE/1AED: 2D 80 12     AND $1280
 CE/1AF0: B8           CLV
 CE/1AF1: 34 1B        BIT $1B,X
-CE/1AF3: 22 1B 00 06  JSR $06001B
+CE/1AF3: 22 1B 00 06  JSR Routine_06001B
 CE/1AF7: 03 20        ORA $20,S
 CE/1AF9: 14 50        TRB $50
-CE/1AFB: 20 0A 2E     JSR $2E0A
+CE/1AFB: 20 0A 2E     JSR Routine_CE2E0A
 CE/1AFE: 01 00        ORA ($00,X)
-CE/1B00: 22 1B 01 69  JSR $69011B
+CE/1B00: 22 1B 01 69  JSR Routine_69011B
 CE/1B04: 03 6B        ORA $6B,S
 CE/1B06: 03 22        ORA $22,S
 CE/1B08: 1B           TCS
@@ -214,8 +214,9 @@ CE/1B0E: 00 22        BRK $22
 CE/1B10: 1B           TCS
 CE/1B11: 01 69        ORA ($69,X)
 CE/1B13: 03 22        ORA $22,S
-CE/1B15: 10 01        BPL $1B18
+CE/1B15: 10 01        BPL Local_CE1B18
 CE/1B17: 6A           ROR
+Local_CE1B18:
 CE/1B18: 00 76        BRK $76
 CE/1B1A: 00 03        BRK $03
 CE/1B1C: 24 01        BIT $01

@@ -3,7 +3,7 @@ Routine_C25470:
 C2/5470: A4 4E        LDY $4E
 C2/5472: B9 28 00     LDA $0028,Y
 C2/5475: D9 27 00     CMP $0027,Y
-C2/5478: F0 11        BEQ $548B
+C2/5478: F0 11        BEQ Local_C2548B
 C2/547A: B9 24 00     LDA $0024,Y
 C2/547D: 3A           DEC
 C2/547E: 0A           ASL
@@ -11,5 +11,6 @@ C2/547F: 0A           ASL
 C2/5480: 79 28 00     ADC $0028,Y
 C2/5483: AA           TAX
 C2/5484: BF 8C 54 C2  LDA $C2548C,X
-C2/5488: 4C DA 1C     JMP $1CDA
+C2/5488: 4C DA 1C     JMP Routine_C21CDA
+Local_C2548B:
 C2/548B: 60           RTS

@@ -4,7 +4,7 @@ C3/222D: 1C 10 80     TRB $8010
 C3/2230: 00 F0        BRK $F0
 C3/2232: 0A           ASL
 C3/2233: 13 1C        ORA ($1C,S),Y
-C3/2235: 20 0D 32     JSR $320D
+C3/2235: 20 0D 32     JSR Routine_C3320D
 C3/2238: 02 60        COP $60
 C3/223A: 00 30        BRK $30
 C3/223C: 06 02        ASL $02
@@ -13,8 +13,9 @@ C3/2240: 02 C6        COP $C6
 C3/2242: 0C 60 48     TSB $4860
 C3/2245: A6 3A        LDX $3A
 C3/2247: 00 89        BRK $89
-C3/2249: 10 00        BPL $224B
-C3/224B: F0 0B        BEQ $2258
+C3/2249: 10 00        BPL Local_C3224B
+Local_C3224B:
+C3/224B: F0 0B        BEQ Routine_C32258
 C3/224D: E8           INX
 C3/224E: E0 0C 08     CPX #$080C
 C3/2251: 00 30        BRK $30

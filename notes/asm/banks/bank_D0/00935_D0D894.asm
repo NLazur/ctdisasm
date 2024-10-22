@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: D894
 Routine_D0D894:
-D0/D894: 80 C0        BRA $D856
-D0/D896: 80 80        BRA $D818
+D0/D894: 80 C0        BRA Routine_D0D856
+D0/D896: 80 80        BRA Routine_D0D818
 D0/D898: 00 00        BRK $00
 D0/D89A: 00 00        BRK $00
 D0/D89C: 00 00        BRK $00
@@ -19,10 +19,11 @@ D0/D8B4: FF 91 9E 61  SBC $619E91,X
 D0/D8B8: 5D F3 8E     EOR $8EF3,X
 D0/D8BB: CE 00 00     DEC $0000
 D0/D8BE: 00 00        BRK $00
-D0/D8C0: 90 90        BCC $D852
-D0/D8C2: 20 20 C0     JSR $C020
+D0/D8C0: 90 90        BCC Routine_D0D852
+D0/D8C2: 20 20 C0     JSR Routine_D0C020
 D0/D8C5: C0 80        CPY #$80
-D0/D8C7: 80 00        BRA $D8C9
+D0/D8C7: 80 00        BRA Local_D0D8C9
+Local_D0D8C9:
 D0/D8C9: 00 00        BRK $00
 D0/D8CB: 00 00        BRK $00
 D0/D8CD: 00 00        BRK $00
@@ -41,6 +42,6 @@ D0/D8EB: E3 00        SBC $00,S
 D0/D8ED: 00 00        BRK $00
 D0/D8EF: 00 A8        BRK $A8
 D0/D8F1: D8           CLD
-D0/D8F2: D0 30        BNE $D924
+D0/D8F2: D0 30        BNE Routine_D0D924
 D0/D8F4: A0 60        LDY #$60
 D0/D8F6: 40           RTI

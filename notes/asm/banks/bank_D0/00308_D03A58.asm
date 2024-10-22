@@ -11,7 +11,7 @@ D0/3A68: 12 1E        ORA ($1E)
 D0/3A6A: 14 1C        TRB $1C
 D0/3A6C: 18           CLC
 D0/3A6D: 18           CLC
-D0/3A6E: 30 30        BMI $3AA0
-D0/3A70: 20 20 20     JSR $2020
-D0/3A73: 20 40 40     JSR $4040
+D0/3A6E: 30 30        BMI Routine_D03AA0
+D0/3A70: 20 20 20     JSR Routine_D02020
+D0/3A73: 20 40 40     JSR Routine_D04040
 D0/3A76: 40           RTI

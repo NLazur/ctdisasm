@@ -13,14 +13,15 @@ CE/0532: 0B           PHD
 CE/0533: A8           TAY
 CE/0534: 01 20        ORA ($20,X)
 CE/0536: 07 77        ORA [$77]
-CE/0538: F0 0D        BEQ $0547
+CE/0538: F0 0D        BEQ Routine_CE0547
 CE/053A: 72 00        ADC ($00)
 CE/053C: 02 01        COP $01
-CE/053E: 70 A8        BVS $04E8
+CE/053E: 70 A8        BVS Routine_CE04E8
 CE/0540: 64 36        STZ $36
 CE/0542: 71 00        ADC ($00),Y
-CE/0544: 90 80        BCC $04C6
-CE/0546: 90 00        BCC $0548
+CE/0544: 90 80        BCC Routine_CE04C6
+CE/0546: 90 00        BCC Local_CE0548
+Local_CE0548:
 CE/0548: 52 05        EOR ($05)
 CE/054A: 62 05 6A     PER $CE6F52
 CE/054D: 05 7A        ORA $7A
@@ -35,7 +36,7 @@ CE/055B: 23 01        AND $01,S
 CE/055D: 24 03        BIT $03
 CE/055F: 2E 01 00     ROL $0001
 CE/0562: 24 01        BIT $01
-CE/0564: 20 1E 1E     JSR $1E1E
+CE/0564: 20 1E 1E     JSR Routine_CE1E1E
 CE/0567: 00 35        BRK $35
 CE/0569: 00 60        BRK $60
 CE/056B: 00 73        BRK $73
@@ -52,8 +53,8 @@ CE/0581: 36 1E        ROL $1E,X
 CE/0583: 2A           ROL
 CE/0584: 24 02        BIT $02
 CE/0586: 2E 01 00     ROL $0001
-CE/0589: 90 C0        BCC $054B
-CE/058B: 90 80        BCC $050D
+CE/0589: 90 C0        BCC Routine_CE054B
+CE/058B: 90 80        BCC Routine_CE050D
 CE/058D: 9B           TXY
 CE/058E: 05 B8        ORA $B8
 CE/0590: 05 C0        ORA $C0
@@ -65,7 +66,7 @@ CE/059A: 06 1E        ASL $1E
 CE/059C: 0A           ASL
 CE/059D: 36 03        ROL $03,X
 CE/059F: 31 36        AND ($36),Y
-CE/05A1: 20 0A 02     JSR $020A
+CE/05A1: 20 0A 02     JSR Routine_CE020A
 CE/05A4: 34 18        BIT $18,X
 CE/05A6: 19 12 19     ORA $1912,Y
 CE/05A9: 72 0D        ADC ($0D)
@@ -76,7 +77,7 @@ CE/05B1: 23 01        AND $01,S
 CE/05B3: 24 03        BIT $03
 CE/05B5: 2E 01 00     ROL $0001
 CE/05B8: 24 01        BIT $01
-CE/05BA: 20 14 1E     JSR $1E14
+CE/05BA: 20 14 1E     JSR Routine_CE1E14
 CE/05BD: 00 35        BRK $35
 CE/05BF: 00 60        BRK $60
 CE/05C1: 00 73        BRK $73

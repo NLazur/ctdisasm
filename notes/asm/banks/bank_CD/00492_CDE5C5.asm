@@ -1,8 +1,9 @@
 ; Bank: CD | Start Address: E5C5
 Routine_CDE5C5:
-CD/E5C5: 20 5A 36     JSR $365A
-CD/E5C8: 70 02        BVS $E5CC
+CD/E5C5: 20 5A 36     JSR Routine_CD365A
+CD/E5C8: 70 02        BVS Local_CDE5CC
 CD/E5CA: 05 0C        ORA $0C
+Local_CDE5CC:
 CD/E5CC: 12 2C        ORA ($2C)
 CD/E5CE: 1B           TCS
 CD/E5CF: 2C 03 06     BIT $0603
@@ -13,7 +14,7 @@ CD/E5DA: 73 03        ADC ($03,S),Y
 CD/E5DC: 1B           TCS
 CD/E5DD: 2D 02 02     AND $0202
 CD/E5E0: 24 0B        BIT $0B
-CD/E5E2: 70 0C        BVS $E5F0
+CD/E5E2: 70 0C        BVS Routine_CDE5F0
 CD/E5E4: 12 2A        ORA ($2A)
 CD/E5E6: 1B           TCS
 CD/E5E7: 2A           ROL
@@ -23,7 +24,7 @@ CD/E5EC: 73 03        ADC ($03,S),Y
 CD/E5EE: 1B           TCS
 CD/E5EF: 2E 02 02     ROL $0202
 CD/E5F2: 24 0B        BIT $0B
-CD/E5F4: 70 0C        BVS $E602
+CD/E5F4: 70 0C        BVS Routine_CDE602
 CD/E5F6: 12 2B        ORA ($2B)
 CD/E5F8: 1B           TCS
 CD/E5F9: 2B           PLD
@@ -33,13 +34,14 @@ CD/E5FE: 73 03        ADC ($03,S),Y
 CD/E600: 1B           TCS
 CD/E601: 2F 02 02 24  AND $240202
 CD/E605: 0B           PHD
-CD/E606: 70 0C        BVS $E614
+CD/E606: 70 0C        BVS Local_CDE614
 CD/E608: 12 2C        ORA ($2C)
 CD/E60A: 1B           TCS
 CD/E60B: 2C 71 00     BIT $0071
 CD/E60E: 33 03        AND ($03,S),Y
 CD/E610: 41 1E        EOR ($1E,X)
 CD/E612: 00 41        BRK $41
+Local_CDE614:
 CD/E614: 1F 01 41 1E  ORA $1E4101,X
 CD/E618: 02 41        COP $41
 CD/E61A: 1F 03 41 1E  ORA $1E4103,X
@@ -66,9 +68,9 @@ CD/E64B: 98           TYA
 CD/E64C: 2D 80 12     AND $1280
 CD/E64F: B8           CLV
 CD/E650: 34 1B        BIT $1B,X
-CD/E652: 22 1B 00 36  JSR $36001B
+CD/E652: 22 1B 00 36  JSR Routine_36001B
 CD/E656: 06 03        ASL $03
-CD/E658: 50 20        BVC $E67A
+CD/E658: 50 20        BVC Routine_CDE67A
 CD/E65A: 0F 2E 01 00  ORA $00012E
 CD/E65E: 24 01        BIT $01
 CD/E660: 69 03        ADC #$03

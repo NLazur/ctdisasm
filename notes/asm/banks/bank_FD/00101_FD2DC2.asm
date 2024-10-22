@@ -13,8 +13,8 @@ FD/2DD6: 6C BC C7     JMP ($C7BC)
 FD/2DD9: 7E 85 00     ROR $0085,X
 FD/2DDC: B3 48        LDA ($48,S),Y
 FD/2DDE: FE 03 08     INC $0803,X
-FD/2DE1: F0 1C        BEQ $2DFF
+FD/2DE1: F0 1C        BEQ Routine_FD2DFF
 FD/2DE3: E0 60        CPX #$60
 FD/2DE5: 7C 80 78     JMP ($7880,X)
-FD/2DE8: 80 F8        BRA $2DE2
+FD/2DE8: 80 F8        BRA Routine_FD2DE2
 FD/2DEA: 40           RTI

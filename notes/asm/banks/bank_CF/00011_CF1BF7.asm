@@ -33,18 +33,20 @@ CF/1C36: 00 10        BRK $10
 CF/1C38: 00 10        BRK $10
 CF/1C3A: 00 60        BRK $60
 CF/1C3C: 00 80        BRK $80
-CF/1C3E: 80 80        BRA $1BC0
+CF/1C3E: 80 80        BRA Routine_CF1BC0
 CF/1C40: 7E 5A 54     ROR $545A,X
 CF/1C43: 75 E0        ADC $E0,X
 CF/1C45: A1 50        LDA ($50,X)
-CF/1C47: 70 38        BVS $1C81
+CF/1C47: 70 38        BVS Routine_CF1C81
 CF/1C49: 29 78 6A     AND #$6A78
-CF/1C4C: F0 9C        BEQ $1BEA
+CF/1C4C: F0 9C        BEQ Routine_CF1BEA
 CF/1C4E: E0 60 00     CPX #$0060
-CF/1C51: 80 00        BRA $1C53
+CF/1C51: 80 00        BRA Local_CF1C53
+Local_CF1C53:
 CF/1C53: 00 00        BRK $00
 CF/1C55: 00 00        BRK $00
-CF/1C57: 80 00        BRA $1C59
+CF/1C57: 80 00        BRA Local_CF1C59
+Local_CF1C59:
 CF/1C59: 00 00        BRK $00
 CF/1C5B: 00 00        BRK $00
 CF/1C5D: 00 00        BRK $00
@@ -54,8 +56,8 @@ CF/1C63: 24 38        BIT $38
 CF/1C65: 28           PLP
 CF/1C66: 38           SEC
 CF/1C67: 29 38 08     AND #$0838
-CF/1C6A: 30 12        BMI $1C7E
-CF/1C6C: 50 3C        BVC $1CAA
+CF/1C6A: 30 12        BMI Local_CF1C7E
+CF/1C6C: 50 3C        BVC Routine_CF1CAA
 CF/1C6E: E0 70 01     CPX #$0170
 CF/1C71: 43 00        EOR $00,S
 CF/1C73: 44 00 24     MVP $00,$24
@@ -63,8 +65,9 @@ CF/1C76: 00 18        BRK $18
 CF/1C78: 00 00        BRK $00
 CF/1C7A: 00 00        BRK $00
 CF/1C7C: 00 00        BRK $00
+Local_CF1C7E:
 CF/1C7E: 00 00        BRK $00
-CF/1C80: F0 30        BEQ $1CB2
+CF/1C80: F0 30        BEQ Local_CF1CB2
 CF/1C82: C0 C0 00     CPY #$00C0
 CF/1C85: 00 00        BRK $00
 CF/1C87: 00 00        BRK $00
@@ -74,8 +77,8 @@ CF/1C8D: 00 00        BRK $00
 CF/1C8F: 00 07        BRK $07
 CF/1C91: 03 1F        ORA $1F,S
 CF/1C93: 12 3F        ORA ($3F)
-CF/1C95: 22 3F 22 1F  JSR $1F223F
-CF/1C99: 70 3C        BVS $1CD7
+CF/1C95: 22 3F 22 1F  JSR Routine_1F223F
+CF/1C99: 70 3C        BVS Routine_CF1CD7
 CF/1C9B: B3 FF        LDA ($FF,S),Y
 CF/1C9D: C7 78        CMP [$78]
 CF/1C9F: B8           CLV
@@ -84,9 +87,10 @@ CF/1CA3: 04 80        TSB $80
 CF/1CA5: 04 88        TSB $88
 CF/1CA7: 00 30        BRK $30
 CF/1CA9: 00 C0        BRK $C0
-CF/1CAB: 20 00 00     JSR $0000
+CF/1CAB: 20 00 00     JSR Routine_CF0000
 CF/1CAE: 00 00        BRK $00
 CF/1CB0: 03 0A        ORA $0A,S
+Local_CF1CB2:
 CF/1CB2: 07 09        ORA [$09]
 CF/1CB4: 1E 12 1E     ASL $1E12,X
 CF/1CB7: 12 1C        ORA ($1C)

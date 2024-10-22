@@ -18,7 +18,7 @@ D1/0F03: 26 41        ROL $41
 D1/0F05: 26 81        ROL $81
 D1/0F07: 04 26        TSB $26
 D1/0F09: C1 7F        CMP ($7F,X)
-D1/0F0B: 10 28        BPL $0F35
+D1/0F0B: 10 28        BPL Routine_D10F35
 D1/0F0D: 01 28        ORA ($28,X)
 D1/0F0F: 41 28        EOR ($28,X)
 D1/0F11: 04 81        TSB $81
@@ -53,22 +53,24 @@ D1/0F49: 4E 00 40     LSR $4000
 D1/0F4C: E2 00        SEP #$00
 D1/0F4E: 00 13        BRK $13
 D1/0F50: 00 80        BRK $80
-D1/0F52: 80 20        BRA $0F74
+D1/0F52: 80 20        BRA Local_D10F74
 D1/0F54: 01 22        ORA ($22,X)
 D1/0F56: 01 44        ORA ($44,X)
 D1/0F58: FF FF 0A 08  SBC $080AFF,X
 D1/0F5C: 24 01        BIT $01
 D1/0F5E: 26 0A        ROL $0A
 D1/0F60: 08           PHP
-D1/0F61: 80 40        BRA $0FA3
-D1/0F63: 80 00        BRA $0F65
-D1/0F65: 20 01 20     JSR $2001
+D1/0F61: 80 40        BRA Routine_D10FA3
+D1/0F63: 80 00        BRA Local_D10F65
+Local_D10F65:
+D1/0F65: 20 01 20     JSR Routine_D12001
 D1/0F68: 81 0A        STA ($0A,X)
 D1/0F6A: 18           CLC
-D1/0F6B: 22 E2 81 0A  JSR $0A81E2
+D1/0F6B: 22 E2 81 0A  JSR Routine_0A81E2
 D1/0F6F: 28           PLP
 D1/0F70: 26 81        ROL $81
 D1/0F72: 24 14        BIT $14
+Local_D10F74:
 D1/0F74: 08           PHP
 D1/0F75: 32 10        AND ($10)
 D1/0F77: 1E 08 20     ASL $2008,X

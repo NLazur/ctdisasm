@@ -3,8 +3,9 @@ Routine_D13061:
 D1/3061: E4 1A        CPX $1A
 D1/3063: 00 C8        BRK $C8
 D1/3065: 00 C8        BRK $C8
-D1/3067: 20 00 C0     JSR $C000
-D1/306A: 10 00        BPL $306C
+D1/3067: 20 00 C0     JSR Routine_D1C000
+D1/306A: 10 00        BPL Local_D1306C
+Local_D1306C:
 D1/306C: E8           INX
 D1/306D: 00 E8        BRK $E8
 D1/306F: 28           PLP
@@ -15,7 +16,7 @@ D1/3079: 08           PHP
 D1/307A: 44 06 10     MVP $06,$10
 D1/307D: 64 0C        STZ $0C
 D1/307F: 00 00        BRK $00
-D1/3081: 22 C0 80 40  JSR $4080C0
+D1/3081: 22 C0 80 40  JSR Routine_4080C0
 D1/3085: 01 42        ORA ($42,X)
 D1/3087: 01 60        ORA ($60,X)
 D1/3089: 41 57        EOR ($57,X)

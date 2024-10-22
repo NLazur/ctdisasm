@@ -19,15 +19,15 @@ FD/429A: 15 00        ORA $00,X
 FD/429C: 28           PLP
 FD/429D: 19 72 11     ORA $1172,Y
 FD/42A0: 36 11        ROL $11,X
-FD/42A2: 20 43 00     JSR $0043
+FD/42A2: 20 43 00     JSR Routine_FD0043
 FD/42A5: 14 53        TRB $53
 FD/42A7: 6C 03 65     JMP ($6503)
-FD/42AA: 22 0F 7C 00  JSR $007C0F
+FD/42AA: 22 0F 7C 00  JSR Routine_007C0F
 FD/42AE: 4B           PHK
-FD/42AF: 70 4B        BVS $42FC
+FD/42AF: 70 4B        BVS Routine_FD42FC
 FD/42B1: 78           SEI
 FD/42B2: 53 20        EOR ($20,S),Y
 FD/42B4: 17 30        ORA [$30],Y
 FD/42B6: 00 37        BRK $37
-FD/42B8: 30 07        BMI $42C1
+FD/42B8: 30 07        BMI Routine_FD42C1
 FD/42BA: 60           RTS

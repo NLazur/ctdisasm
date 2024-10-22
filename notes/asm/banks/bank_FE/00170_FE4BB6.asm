@@ -20,7 +20,7 @@ FE/4BE0: 0A           ASL
 FE/4BE1: 0B           PHD
 FE/4BE2: 0C 0D 0E     TSB $0E0D
 FE/4BE5: 00 0F        BRK $0F
-FE/4BE7: 20 21 22     JSR $2221
+FE/4BE7: 20 21 22     JSR Routine_FE2221
 FE/4BEA: 12 13        ORA ($13)
 FE/4BEC: 15 16        ORA $16,X
 FE/4BEE: 17 18        ORA [$18],Y
@@ -28,7 +28,7 @@ FE/4BF0: 1A           INC
 FE/4BF1: 1B           TCS
 FE/4BF2: 1C 1D 1E     TRB $1E1D
 FE/4BF5: 07 1F        ORA [$1F]
-FE/4BF7: 30 31        BMI $4C2A
+FE/4BF7: 30 31        BMI Routine_FE4C2A
 FE/4BF9: 32 23        AND ($23)
 FE/4BFB: 24 25        BIT $25
 FE/4BFD: 00 01        BRK $01
@@ -63,13 +63,14 @@ FE/4C37: 04 2E        TSB $2E
 FE/4C39: 03 CA        ORA $CA,S
 FE/4C3B: 06 76        ASL $76
 FE/4C3D: 00 01        BRK $01
-FE/4C3F: F0 04        BEQ $4C45
-FE/4C41: B0 FF        BCS $4C42
+FE/4C3F: F0 04        BEQ Local_FE4C45
+FE/4C41: B0 FF        BCS Routine_FE4C42
 FE/4C43: 02 C0        COP $C0
+Local_FE4C45:
 FE/4C45: 01 F0        ORA ($F0,X)
 FE/4C47: 09 60 80     ORA #$8060
 FE/4C4A: 88           DEY
-FE/4C4B: 80 C0        BRA $4C0D
+FE/4C4B: 80 C0        BRA Routine_FE4C0D
 FE/4C4D: C0 14 F0     CPY #$F014
-FE/4C50: 80 80        BRA $4BD2
+FE/4C50: 80 80        BRA Routine_FE4BD2
 FE/4C52: 40           RTI

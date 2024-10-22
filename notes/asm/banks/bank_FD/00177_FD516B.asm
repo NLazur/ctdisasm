@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 516B
 Routine_FD516B:
-FD/516B: 10 60        BPL $51CD
+FD/516B: 10 60        BPL Local_FD51CD
 FD/516D: E0 00 00     CPX #$0000
 FD/5170: DC 20 27     JMP [$2720]
 FD/5173: 18           CLC
@@ -46,6 +46,7 @@ FD/51C4: E1 B5        SBC ($B5,X)
 FD/51C6: 02 27        COP $27
 FD/51C8: 06 6C        ASL $6C
 FD/51CA: EC AB E7     CPX $E7AB
+Local_FD51CD:
 FD/51CD: 00 E0        BRK $E0
 FD/51CF: 88           DEY
 FD/51D0: 02 43        COP $43
@@ -73,7 +74,7 @@ FD/5205: 7F C0 F8 54  ADC $54F8C0,X
 FD/5209: 00 B0        BRK $B0
 FD/520B: AD 31 E0     LDA $E031
 FD/520E: D5 07        CMP $07,X
-FD/5210: 80 86        BRA $5198
+FD/5210: 80 86        BRA Routine_FD5198
 FD/5212: 02 0F        COP $0F
 FD/5214: 1B           TCS
 FD/5215: 06 35        ASL $35
@@ -88,16 +89,16 @@ FD/5229: 04 05        TSB $05
 FD/522B: E5 D4        SBC $D4
 FD/522D: 0D FF 0C     ORA $0CFF
 FD/5230: 08           PHP
-FD/5231: B0 40        BCS $5273
+FD/5231: B0 40        BCS Routine_FD5273
 FD/5233: C8           INY
 FD/5234: 8D F0 05     STA $05F0
 FD/5237: 78           SEI
-FD/5238: 22 07 46 45  JSR $454607
+FD/5238: 22 07 46 45  JSR Routine_454607
 FD/523C: EA           NOP
 FD/523D: 1D 23 98     ORA $9823,X
 FD/5240: 3C 00 20     BIT $2000,X
 FD/5243: 08           PHP
 FD/5244: 28           PLP
 FD/5245: 00 10        BRK $10
-FD/5247: 10 60        BPL $52A9
+FD/5247: 10 60        BPL Routine_FD52A9
 FD/5249: 40           RTI

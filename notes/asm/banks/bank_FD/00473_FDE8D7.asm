@@ -2,6 +2,7 @@
 Routine_FDE8D7:
 FD/E8D7: B9 22 05     LDA $0522,Y
 FD/E8DA: A8           TAY
+Local_FDE8DB:
 FD/E8DB: BF 01 20 7E  LDA $7E2001,X
 FD/E8DF: 29 7C        AND #$7C
 FD/E8E1: 85 0D        STA $0D
@@ -43,5 +44,5 @@ FD/E92D: E2 20        SEP #$20
 FD/E92F: E8           INX
 FD/E930: E8           INX
 FD/E931: 88           DEY
-FD/E932: D0 A7        BNE $E8DB
+FD/E932: D0 A7        BNE Local_FDE8DB
 FD/E934: 60           RTS

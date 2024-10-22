@@ -3,7 +3,7 @@ Routine_C64758:
 C6/4758: C8           INY
 C6/4759: 00 50        BRK $50
 C6/475B: 08           PHP
-C6/475C: 80 41        BRA $479F
+C6/475C: 80 41        BRA Local_C6479F
 C6/475E: 04 42        TSB $42
 C6/4760: 04 51        TSB $51
 C6/4762: 04 52        TSB $52
@@ -15,7 +15,7 @@ C6/476C: 04 45        TSB $45
 C6/476E: 04 0A        TSB $0A
 C6/4770: 46 46        LSR $46
 C6/4772: 01 56        ORA ($56,X)
-C6/4774: 10 70        BPL $47E6
+C6/4774: 10 70        BPL Routine_C647E6
 C6/4776: 4B           PHK
 C6/4777: 04 4C        TSB $4C
 C6/4779: 04 00        TSB $00
@@ -35,6 +35,7 @@ C6/4795: 0C 00 D9     TSB $D900
 C6/4798: 0C CA 0C     TSB $0CCA
 C6/479B: CB           WAI
 C6/479C: 0C DA 0C     TSB $0CDA
+Local_C6479F:
 C6/479F: 00 55        BRK $55
 C6/47A1: 04 7F        TSB $7F
 C6/47A3: C4 7E        CPY $7E

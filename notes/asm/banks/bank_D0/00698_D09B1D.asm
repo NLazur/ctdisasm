@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 9B1D
 Routine_D09B1D:
-D0/9B1D: 90 F0        BCC $9B0F
+D0/9B1D: 90 F0        BCC Routine_D09B0F
 D0/9B1F: 08           PHP
 D0/9B20: E0 1C        CPX #$1C
 D0/9B22: F4 0A 3F     PEA $3F0A
@@ -12,7 +12,7 @@ D0/9B2E: 00 00        BRK $00
 D0/9B30: 00 00        BRK $00
 D0/9B32: 00 00        BRK $00
 D0/9B34: 00 00        BRK $00
-D0/9B36: 80 40        BRA $9B78
+D0/9B36: 80 40        BRA Routine_D09B78
 D0/9B38: 00 00        BRK $00
 D0/9B3A: 00 00        BRK $00
 D0/9B3C: 00 00        BRK $00
@@ -23,7 +23,8 @@ D0/9B44: 17 00        ORA [$00],Y
 D0/9B46: 08           PHP
 D0/9B47: 06 00        ASL $00
 D0/9B49: 00 00        BRK $00
-D0/9B4B: 10 00        BPL $9B4D
+D0/9B4B: 10 00        BPL Local_D09B4D
+Local_D09B4D:
 D0/9B4D: 00 02        BRK $02
 D0/9B4F: 05 86        ORA $86
 D0/9B51: 09 3F        ORA #$3F
@@ -43,7 +44,7 @@ D0/9B6A: F8           SED
 D0/9B6B: 04 E0        TSB $E0
 D0/9B6D: 1C 60 9C     TRB $9C60
 D0/9B70: 08           PHP
-D0/9B71: F0 72        BEQ $9BE5
+D0/9B71: F0 72        BEQ Routine_D09BE5
 D0/9B73: 88           DEY
 D0/9B74: 52 AC        EOR ($AC)
 D0/9B76: 8E 71 00     STX $0071
@@ -66,6 +67,7 @@ D0/9B96: 00 48        BRK $48
 D0/9B98: 00 00        BRK $00
 D0/9B9A: 00 00        BRK $00
 D0/9B9C: 00 00        BRK $00
-D0/9B9E: 80 00        BRA $9BA0
+D0/9B9E: 80 00        BRA Local_D09BA0
+Local_D09BA0:
 D0/9BA0: C0 00        CPY #$00
 D0/9BA2: 40           RTI

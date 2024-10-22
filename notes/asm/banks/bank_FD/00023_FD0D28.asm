@@ -1,8 +1,8 @@
 ; Bank: FD | Start Address: 0D28
 Routine_FD0D28:
-FD/0D28: 30 20        BMI $0D4A
+FD/0D28: 30 20        BMI Local_FD0D4A
 FD/0D2A: 53 35        EOR ($35,S),Y
-FD/0D2C: 22 12 53 FD  JSR $FD5312
+FD/0D2C: 22 12 53 FD  JSR Routine_FD5312
 FD/0D30: 04 20        TSB $20
 FD/0D32: 32 13        AND ($13)
 FD/0D34: 11 11        ORA ($11),Y
@@ -14,10 +14,11 @@ FD/0D41: 19 DC 19     ORA $19DC,Y
 FD/0D44: 32 33        AND ($33)
 FD/0D46: 11 50        ORA ($50),Y
 FD/0D48: 53 33        EOR ($33,S),Y
-FD/0D4A: 22 12 C7 08  JSR $08C712
+Local_FD0D4A:
+FD/0D4A: 22 12 C7 08  JSR Routine_08C712
 FD/0D4E: 11 E4        ORA ($E4),Y
-FD/0D50: 10 73        BPL $0DC5
-FD/0D52: 70 35        BVS $0D89
+FD/0D50: 10 73        BPL Routine_FD0DC5
+FD/0D52: 70 35        BVS Local_FD0D89
 FD/0D54: 75 A7        ADC $A7,X
 FD/0D56: BA           TSX
 FD/0D57: CC 19 D4     CPY $D419
@@ -41,72 +42,78 @@ FD/0D81: 01 00        ORA ($00,X)
 FD/0D83: 00 47        BRK $47
 FD/0D85: 02 00        COP $00
 FD/0D87: 00 00        BRK $00
+Local_FD0D89:
 FD/0D89: 01 02        ORA ($02,X)
 FD/0D8B: 03 04        ORA $04,S
 FD/0D8D: 05 06        ORA $06
 FD/0D8F: 0E 00 01     ASL $0100
-FD/0D92: F0 01        BEQ $0D95
-FD/0D94: F0 01        BEQ $0D97
-FD/0D96: F0 00        BEQ $0D98
+FD/0D92: F0 01        BEQ Routine_FD0D95
+FD/0D94: F0 01        BEQ Routine_FD0D97
+FD/0D96: F0 00        BEQ Local_FD0D98
+Local_FD0D98:
 FD/0D98: 00 07        BRK $07
 FD/0D9A: 08           PHP
 FD/0D9B: C0 09 0A     CPY #$0A09
 FD/0D9E: 0B           PHD
 FD/0D9F: 0C 0D 0E     TSB $0E0D
 FD/0DA2: 1A           INC
-FD/0DA3: F0 01        BEQ $0DA6
-FD/0DA5: F0 01        BEQ $0DA8
+FD/0DA3: F0 01        BEQ Routine_FD0DA6
+FD/0DA5: F0 01        BEQ Routine_FD0DA8
 FD/0DA7: 01 F0        ORA ($F0,X)
 FD/0DA9: 00 00        BRK $00
 FD/0DAB: 0F 10 11 12  ORA $121110
 FD/0DAF: 13 38        ORA ($38,S),Y
 FD/0DB1: 14 15        TRB $15
 FD/0DB3: 16 1A        ASL $1A,X
-FD/0DB5: F0 01        BEQ $0DB8
-FD/0DB7: F0 01        BEQ $0DBA
-FD/0DB9: F0 00        BEQ $0DBB
+FD/0DB5: F0 01        BEQ Routine_FD0DB8
+FD/0DB7: F0 01        BEQ Routine_FD0DBA
+FD/0DB9: F0 00        BEQ Local_FD0DBB
+Local_FD0DBB:
 FD/0DBB: 17 00        ORA [$00],Y
 FD/0DBD: 18           CLC
 FD/0DBE: 19 1A 1B     ORA $1B1A,Y
 FD/0DC1: 1C 1D 1E     TRB $1E1D
 FD/0DC4: 1F 0E 20 1C  ORA $1C200E,X
-FD/0DC8: F0 01        BEQ $0DCB
-FD/0DCA: F0 01        BEQ $0DCD
-FD/0DCC: F0 21        BEQ $0DEF
-FD/0DCE: 22 23 24 C0  JSR $C02423
+FD/0DC8: F0 01        BEQ Routine_FD0DCB
+FD/0DCA: F0 01        BEQ Routine_FD0DCD
+FD/0DCC: F0 21        BEQ Local_FD0DEF
+FD/0DCE: 22 23 24 C0  JSR Routine_C02423
 FD/0DD2: 25 26        AND $26
 FD/0DD4: 27 28        AND [$28]
 FD/0DD6: 29 2A 1C     AND #$1C2A
-FD/0DD9: F0 01        BEQ $0DDC
-FD/0DDB: F0 01        BEQ $0DDE
+FD/0DD9: F0 01        BEQ Routine_FD0DDC
+FD/0DDB: F0 01        BEQ Routine_FD0DDE
 FD/0DDD: 01 F0        ORA ($F0,X)
 FD/0DDF: 2B           PLD
 FD/0DE0: 2C 2D 2E     BIT $2E2D
 FD/0DE3: 2F 30 31 38  AND $383130
 FD/0DE7: 32 33        AND ($33)
 FD/0DE9: 34 1C        BIT $1C,X
-FD/0DEB: F0 01        BEQ $0DEE
-FD/0DED: F0 01        BEQ $0DF0
-FD/0DEF: F0 35        BEQ $0E26
+FD/0DEB: F0 01        BEQ Routine_FD0DEE
+FD/0DED: F0 01        BEQ Routine_FD0DF0
+Local_FD0DEF:
+FD/0DEF: F0 35        BEQ Routine_FD0E26
 FD/0DF1: 36 00        ROL $00,X
 FD/0DF3: 37 38        AND [$38],Y
 FD/0DF5: 39 3A 3B     AND $3B3A,Y
 FD/0DF8: 3C 3D 3E     BIT $3E3D,X
 FD/0DFB: 07 1C        ORA [$1C]
-FD/0DFD: F0 01        BEQ $0E00
-FD/0DFF: F0 01        BEQ $0E02
-FD/0E01: F0 00        BEQ $0E03
+FD/0DFD: F0 01        BEQ Routine_FD0E00
+FD/0DFF: F0 01        BEQ Routine_FD0E02
+FD/0E01: F0 00        BEQ Local_FD0E03
+Local_FD0E03:
 FD/0E03: 3F 40 41 42  AND $424140,X
-FD/0E07: 70 43        BVS $0E4C
+FD/0E07: 70 43        BVS Routine_FD0E4C
 FD/0E09: 44 45 46     MVP $45,$46
 FD/0E0C: 1A           INC
-FD/0E0D: F0 01        BEQ $0E10
-FD/0E0F: F0 01        BEQ $0E12
-FD/0E11: F0 00        BEQ $0E13
+FD/0E0D: F0 01        BEQ Routine_FD0E10
+FD/0E0F: F0 01        BEQ Routine_FD0E12
+FD/0E11: F0 00        BEQ Local_FD0E13
+Local_FD0E13:
 FD/0E13: 00 00        BRK $00
 FD/0E15: 47 48        EOR [$48]
 FD/0E17: 49 4A 4B     EOR #$4B4A
-FD/0E1A: 4C 4D 1E     JMP $1E4D
+FD/0E1A: 4C 4D 1E     JMP Routine_FD1E4D
 FD/0E1D: 4E 1A F0     LSR $F01A
 FD/0E20: 01 F0        ORA ($F0,X)
 FD/0E22: 01 F0        ORA ($F0,X)
@@ -119,13 +126,13 @@ FD/0E31: 01 F0        ORA ($F0,X)
 FD/0E33: 01 F0        ORA ($F0,X)
 FD/0E35: 01 F0        ORA ($F0,X)
 FD/0E37: FF 01 F0 01  SBC $01F001,X
-FD/0E3B: F0 01        BEQ $0E3E
-FD/0E3D: F0 01        BEQ $0E40
-FD/0E3F: F0 01        BEQ $0E42
-FD/0E41: F0 01        BEQ $0E44
-FD/0E43: F0 01        BEQ $0E46
-FD/0E45: F0 01        BEQ $0E48
-FD/0E47: F0 FF        BEQ $0E48
+FD/0E3B: F0 01        BEQ Routine_FD0E3E
+FD/0E3D: F0 01        BEQ Routine_FD0E40
+FD/0E3F: F0 01        BEQ Routine_FD0E42
+FD/0E41: F0 01        BEQ Routine_FD0E44
+FD/0E43: F0 01        BEQ Routine_FD0E46
+FD/0E45: F0 01        BEQ Routine_FD0E48
+FD/0E47: F0 FF        BEQ Routine_FD0E48
 FD/0E49: 01 F0        ORA ($F0,X)
 FD/0E4B: 01 F0        ORA ($F0,X)
 FD/0E4D: 01 F0        ORA ($F0,X)
@@ -135,13 +142,13 @@ FD/0E53: 01 F0        ORA ($F0,X)
 FD/0E55: 01 F0        ORA ($F0,X)
 FD/0E57: 01 F0        ORA ($F0,X)
 FD/0E59: FF 01 F0 01  SBC $01F001,X
-FD/0E5D: F0 01        BEQ $0E60
-FD/0E5F: F0 01        BEQ $0E62
-FD/0E61: F0 01        BEQ $0E64
-FD/0E63: F0 01        BEQ $0E66
-FD/0E65: F0 01        BEQ $0E68
-FD/0E67: F0 01        BEQ $0E6A
-FD/0E69: F0 FF        BEQ $0E6A
+FD/0E5D: F0 01        BEQ Routine_FD0E60
+FD/0E5F: F0 01        BEQ Routine_FD0E62
+FD/0E61: F0 01        BEQ Routine_FD0E64
+FD/0E63: F0 01        BEQ Routine_FD0E66
+FD/0E65: F0 01        BEQ Routine_FD0E68
+FD/0E67: F0 01        BEQ Routine_FD0E6A
+FD/0E69: F0 FF        BEQ Routine_FD0E6A
 FD/0E6B: 01 F0        ORA ($F0,X)
 FD/0E6D: 01 F0        ORA ($F0,X)
 FD/0E6F: 01 F0        ORA ($F0,X)
@@ -151,13 +158,13 @@ FD/0E75: 01 F0        ORA ($F0,X)
 FD/0E77: 01 F0        ORA ($F0,X)
 FD/0E79: 01 F0        ORA ($F0,X)
 FD/0E7B: FF 01 F0 01  SBC $01F001,X
-FD/0E7F: F0 01        BEQ $0E82
-FD/0E81: F0 01        BEQ $0E84
-FD/0E83: F0 01        BEQ $0E86
-FD/0E85: F0 01        BEQ $0E88
-FD/0E87: F0 01        BEQ $0E8A
-FD/0E89: F0 01        BEQ $0E8C
-FD/0E8B: F0 FF        BEQ $0E8C
+FD/0E7F: F0 01        BEQ Routine_FD0E82
+FD/0E81: F0 01        BEQ Routine_FD0E84
+FD/0E83: F0 01        BEQ Routine_FD0E86
+FD/0E85: F0 01        BEQ Routine_FD0E88
+FD/0E87: F0 01        BEQ Routine_FD0E8A
+FD/0E89: F0 01        BEQ Routine_FD0E8C
+FD/0E8B: F0 FF        BEQ Routine_FD0E8C
 FD/0E8D: 01 F0        ORA ($F0,X)
 FD/0E8F: 01 F0        ORA ($F0,X)
 FD/0E91: 01 F0        ORA ($F0,X)
@@ -167,13 +174,13 @@ FD/0E97: 01 F0        ORA ($F0,X)
 FD/0E99: 01 F0        ORA ($F0,X)
 FD/0E9B: 01 F0        ORA ($F0,X)
 FD/0E9D: FF 01 F0 01  SBC $01F001,X
-FD/0EA1: F0 01        BEQ $0EA4
-FD/0EA3: F0 01        BEQ $0EA6
-FD/0EA5: F0 01        BEQ $0EA8
-FD/0EA7: F0 01        BEQ $0EAA
-FD/0EA9: F0 01        BEQ $0EAC
-FD/0EAB: F0 01        BEQ $0EAE
-FD/0EAD: F0 FF        BEQ $0EAE
+FD/0EA1: F0 01        BEQ Routine_FD0EA4
+FD/0EA3: F0 01        BEQ Routine_FD0EA6
+FD/0EA5: F0 01        BEQ Routine_FD0EA8
+FD/0EA7: F0 01        BEQ Routine_FD0EAA
+FD/0EA9: F0 01        BEQ Routine_FD0EAC
+FD/0EAB: F0 01        BEQ Routine_FD0EAE
+FD/0EAD: F0 FF        BEQ Routine_FD0EAE
 FD/0EAF: 01 F0        ORA ($F0,X)
 FD/0EB1: 01 F0        ORA ($F0,X)
 FD/0EB3: 01 F0        ORA ($F0,X)
@@ -183,13 +190,13 @@ FD/0EB9: 01 F0        ORA ($F0,X)
 FD/0EBB: 01 F0        ORA ($F0,X)
 FD/0EBD: 01 F0        ORA ($F0,X)
 FD/0EBF: FF 01 F0 01  SBC $01F001,X
-FD/0EC3: F0 01        BEQ $0EC6
-FD/0EC5: F0 01        BEQ $0EC8
-FD/0EC7: F0 01        BEQ $0ECA
-FD/0EC9: F0 01        BEQ $0ECC
-FD/0ECB: F0 01        BEQ $0ECE
-FD/0ECD: F0 01        BEQ $0ED0
-FD/0ECF: F0 FF        BEQ $0ED0
+FD/0EC3: F0 01        BEQ Routine_FD0EC6
+FD/0EC5: F0 01        BEQ Routine_FD0EC8
+FD/0EC7: F0 01        BEQ Routine_FD0ECA
+FD/0EC9: F0 01        BEQ Routine_FD0ECC
+FD/0ECB: F0 01        BEQ Routine_FD0ECE
+FD/0ECD: F0 01        BEQ Routine_FD0ED0
+FD/0ECF: F0 FF        BEQ Routine_FD0ED0
 FD/0ED1: 01 F0        ORA ($F0,X)
 FD/0ED3: 01 F0        ORA ($F0,X)
 FD/0ED5: 01 F0        ORA ($F0,X)
@@ -199,13 +206,13 @@ FD/0EDB: 01 F0        ORA ($F0,X)
 FD/0EDD: 01 F0        ORA ($F0,X)
 FD/0EDF: 01 F0        ORA ($F0,X)
 FD/0EE1: FF 01 F0 01  SBC $01F001,X
-FD/0EE5: F0 01        BEQ $0EE8
-FD/0EE7: F0 01        BEQ $0EEA
-FD/0EE9: F0 01        BEQ $0EEC
-FD/0EEB: F0 01        BEQ $0EEE
-FD/0EED: F0 01        BEQ $0EF0
-FD/0EEF: F0 01        BEQ $0EF2
-FD/0EF1: F0 FF        BEQ $0EF2
+FD/0EE5: F0 01        BEQ Routine_FD0EE8
+FD/0EE7: F0 01        BEQ Routine_FD0EEA
+FD/0EE9: F0 01        BEQ Routine_FD0EEC
+FD/0EEB: F0 01        BEQ Routine_FD0EEE
+FD/0EED: F0 01        BEQ Routine_FD0EF0
+FD/0EEF: F0 01        BEQ Routine_FD0EF2
+FD/0EF1: F0 FF        BEQ Routine_FD0EF2
 FD/0EF3: 01 F0        ORA ($F0,X)
 FD/0EF5: 01 F0        ORA ($F0,X)
 FD/0EF7: 01 F0        ORA ($F0,X)
@@ -215,13 +222,13 @@ FD/0EFD: 01 F0        ORA ($F0,X)
 FD/0EFF: 01 F0        ORA ($F0,X)
 FD/0F01: 01 F0        ORA ($F0,X)
 FD/0F03: FF 01 F0 01  SBC $01F001,X
-FD/0F07: F0 01        BEQ $0F0A
-FD/0F09: F0 01        BEQ $0F0C
-FD/0F0B: F0 01        BEQ $0F0E
-FD/0F0D: F0 01        BEQ $0F10
-FD/0F0F: F0 01        BEQ $0F12
-FD/0F11: F0 01        BEQ $0F14
-FD/0F13: F0 FF        BEQ $0F14
+FD/0F07: F0 01        BEQ Routine_FD0F0A
+FD/0F09: F0 01        BEQ Routine_FD0F0C
+FD/0F0B: F0 01        BEQ Routine_FD0F0E
+FD/0F0D: F0 01        BEQ Routine_FD0F10
+FD/0F0F: F0 01        BEQ Routine_FD0F12
+FD/0F11: F0 01        BEQ Routine_FD0F14
+FD/0F13: F0 FF        BEQ Routine_FD0F14
 FD/0F15: 01 F0        ORA ($F0,X)
 FD/0F17: 01 F0        ORA ($F0,X)
 FD/0F19: 01 F0        ORA ($F0,X)
@@ -231,13 +238,13 @@ FD/0F1F: 01 F0        ORA ($F0,X)
 FD/0F21: 01 F0        ORA ($F0,X)
 FD/0F23: 01 F0        ORA ($F0,X)
 FD/0F25: FF 01 F0 01  SBC $01F001,X
-FD/0F29: F0 01        BEQ $0F2C
-FD/0F2B: F0 01        BEQ $0F2E
-FD/0F2D: F0 01        BEQ $0F30
-FD/0F2F: F0 01        BEQ $0F32
-FD/0F31: F0 01        BEQ $0F34
-FD/0F33: F0 01        BEQ $0F36
-FD/0F35: F0 FF        BEQ $0F36
+FD/0F29: F0 01        BEQ Routine_FD0F2C
+FD/0F2B: F0 01        BEQ Routine_FD0F2E
+FD/0F2D: F0 01        BEQ Routine_FD0F30
+FD/0F2F: F0 01        BEQ Routine_FD0F32
+FD/0F31: F0 01        BEQ Routine_FD0F34
+FD/0F33: F0 01        BEQ Routine_FD0F36
+FD/0F35: F0 FF        BEQ Routine_FD0F36
 FD/0F37: 01 F0        ORA ($F0,X)
 FD/0F39: 01 F0        ORA ($F0,X)
 FD/0F3B: 01 F0        ORA ($F0,X)
@@ -247,13 +254,13 @@ FD/0F41: 01 F0        ORA ($F0,X)
 FD/0F43: 01 F0        ORA ($F0,X)
 FD/0F45: 01 F0        ORA ($F0,X)
 FD/0F47: FF 01 F0 01  SBC $01F001,X
-FD/0F4B: F0 01        BEQ $0F4E
-FD/0F4D: F0 01        BEQ $0F50
-FD/0F4F: F0 01        BEQ $0F52
-FD/0F51: F0 01        BEQ $0F54
-FD/0F53: F0 01        BEQ $0F56
-FD/0F55: F0 01        BEQ $0F58
-FD/0F57: F0 FF        BEQ $0F58
+FD/0F4B: F0 01        BEQ Routine_FD0F4E
+FD/0F4D: F0 01        BEQ Routine_FD0F50
+FD/0F4F: F0 01        BEQ Routine_FD0F52
+FD/0F51: F0 01        BEQ Routine_FD0F54
+FD/0F53: F0 01        BEQ Routine_FD0F56
+FD/0F55: F0 01        BEQ Routine_FD0F58
+FD/0F57: F0 FF        BEQ Routine_FD0F58
 FD/0F59: 01 F0        ORA ($F0,X)
 FD/0F5B: 01 F0        ORA ($F0,X)
 FD/0F5D: 01 F0        ORA ($F0,X)
@@ -263,13 +270,13 @@ FD/0F63: 01 F0        ORA ($F0,X)
 FD/0F65: 01 F0        ORA ($F0,X)
 FD/0F67: 01 F0        ORA ($F0,X)
 FD/0F69: FF 01 F0 01  SBC $01F001,X
-FD/0F6D: F0 01        BEQ $0F70
-FD/0F6F: F0 01        BEQ $0F72
-FD/0F71: F0 01        BEQ $0F74
-FD/0F73: F0 01        BEQ $0F76
-FD/0F75: F0 01        BEQ $0F78
-FD/0F77: F0 01        BEQ $0F7A
-FD/0F79: F0 FF        BEQ $0F7A
+FD/0F6D: F0 01        BEQ Routine_FD0F70
+FD/0F6F: F0 01        BEQ Routine_FD0F72
+FD/0F71: F0 01        BEQ Routine_FD0F74
+FD/0F73: F0 01        BEQ Routine_FD0F76
+FD/0F75: F0 01        BEQ Routine_FD0F78
+FD/0F77: F0 01        BEQ Routine_FD0F7A
+FD/0F79: F0 FF        BEQ Routine_FD0F7A
 FD/0F7B: 01 F0        ORA ($F0,X)
 FD/0F7D: 01 F0        ORA ($F0,X)
 FD/0F7F: 01 F0        ORA ($F0,X)
@@ -279,13 +286,13 @@ FD/0F85: 01 F0        ORA ($F0,X)
 FD/0F87: 01 F0        ORA ($F0,X)
 FD/0F89: 01 F0        ORA ($F0,X)
 FD/0F8B: FF 01 F0 01  SBC $01F001,X
-FD/0F8F: F0 01        BEQ $0F92
-FD/0F91: F0 01        BEQ $0F94
-FD/0F93: F0 01        BEQ $0F96
-FD/0F95: F0 01        BEQ $0F98
-FD/0F97: F0 01        BEQ $0F9A
-FD/0F99: F0 01        BEQ $0F9C
-FD/0F9B: F0 FF        BEQ $0F9C
+FD/0F8F: F0 01        BEQ Routine_FD0F92
+FD/0F91: F0 01        BEQ Routine_FD0F94
+FD/0F93: F0 01        BEQ Routine_FD0F96
+FD/0F95: F0 01        BEQ Routine_FD0F98
+FD/0F97: F0 01        BEQ Routine_FD0F9A
+FD/0F99: F0 01        BEQ Routine_FD0F9C
+FD/0F9B: F0 FF        BEQ Routine_FD0F9C
 FD/0F9D: 01 F0        ORA ($F0,X)
 FD/0F9F: 01 F0        ORA ($F0,X)
 FD/0FA1: 01 F0        ORA ($F0,X)
@@ -295,13 +302,13 @@ FD/0FA7: 01 F0        ORA ($F0,X)
 FD/0FA9: 01 F0        ORA ($F0,X)
 FD/0FAB: 01 F0        ORA ($F0,X)
 FD/0FAD: FF 01 F0 01  SBC $01F001,X
-FD/0FB1: F0 01        BEQ $0FB4
-FD/0FB3: F0 01        BEQ $0FB6
-FD/0FB5: F0 01        BEQ $0FB8
-FD/0FB7: F0 01        BEQ $0FBA
-FD/0FB9: F0 01        BEQ $0FBC
-FD/0FBB: F0 01        BEQ $0FBE
-FD/0FBD: F0 3F        BEQ $0FFE
+FD/0FB1: F0 01        BEQ Routine_FD0FB4
+FD/0FB3: F0 01        BEQ Routine_FD0FB6
+FD/0FB5: F0 01        BEQ Routine_FD0FB8
+FD/0FB7: F0 01        BEQ Routine_FD0FBA
+FD/0FB9: F0 01        BEQ Routine_FD0FBC
+FD/0FBB: F0 01        BEQ Routine_FD0FBE
+FD/0FBD: F0 3F        BEQ Routine_FD0FFE
 FD/0FBF: 01 F0        ORA ($F0,X)
 FD/0FC1: 01 F0        ORA ($F0,X)
 FD/0FC3: 01 F0        ORA ($F0,X)
@@ -312,13 +319,14 @@ FD/0FCB: 00 00        BRK $00
 FD/0FCD: 00 42        BRK $42
 FD/0FCF: 14 C6        TRB $C6
 FD/0FD1: 00 01        BRK $01
-FD/0FD3: F0 04        BEQ $0FD9
-FD/0FD5: B0 40        BCS $1017
+FD/0FD3: F0 04        BEQ Local_FD0FD9
+FD/0FD5: B0 40        BCS Routine_FD1017
 FD/0FD7: 00 80        BRK $80
+Local_FD0FD9:
 FD/0FD9: 02 20        COP $20
 FD/0FDB: 01 F0        ORA ($F0,X)
 FD/0FDD: 01 0D        ORA ($0D,X)
-FD/0FDF: 20 03 00     JSR $0003
+FD/0FDF: 20 03 00     JSR Routine_FD0003
 FD/0FE2: 0C 00 10     TSB $1000
 FD/0FE5: 00 20        BRK $20
 FD/0FE7: C0 00 4C     CPY #$4C00
@@ -337,7 +345,7 @@ FD/1004: 00 00        BRK $00
 FD/1006: 04 00        TSB $00
 FD/1008: 3A           DEC
 FD/1009: 38           SEC
-FD/100A: 22 38 35 08  JSR $083538
+FD/100A: 22 38 35 08  JSR Routine_083538
 FD/100E: 3C 15 1C     BIT $1C15,X
 FD/1011: 42 00        WDM $00
 FD/1013: C0 00 F0     CPY #$F000
@@ -349,13 +357,14 @@ FD/101C: C4 34        CPY $34
 FD/101E: C2 14        REP #$14
 FD/1020: EA           NOP
 FD/1021: E2 52        SEP #$52
-FD/1023: 50 01        BVC $1026
+FD/1023: 50 01        BVC Routine_FD1026
 FD/1025: 02 00        COP $00
 FD/1027: 02 02        COP $02
 FD/1029: 00 62        BRK $62
-FD/102B: 90 14        BCC $1041
-FD/102D: 10 02        BPL $1031
+FD/102B: 90 14        BCC Routine_FD1041
+FD/102D: 10 02        BPL Local_FD1031
 FD/102F: 07 40        ORA [$40]
+Local_FD1031:
 FD/1031: 00 40        BRK $40
 FD/1033: 00 81        BRK $81
 FD/1035: 01 01        ORA ($01,X)
@@ -367,20 +376,22 @@ FD/103E: 00 5D        BRK $5D
 FD/1040: 00 3F        BRK $3F
 FD/1042: 00 00        BRK $00
 FD/1044: 7E 00 FE     ROR $FE00,X
-FD/1047: 30 FE        BMI $1047
-FD/1049: 70 FF        BVS $104A
-FD/104B: F0 08        BEQ $1055
+Local_FD1047:
+FD/1047: 30 FE        BMI Local_FD1047
+FD/1049: 70 FF        BVS Routine_FD104A
+FD/104B: F0 08        BEQ Local_FD1055
 FD/104D: FF FC 80 4F  SBC $4F80FC,X
 FD/1051: 00 20        BRK $20
 FD/1053: 00 D0        BRK $D0
+Local_FD1055:
 FD/1055: C0 00 28     CPY #$2800
 FD/1058: E0 88        CPX #$88
 FD/105A: E0 F4        CPX #$F4
-FD/105C: F0 74        BEQ $10D2
-FD/105E: 70 8B        BVS $0FEB
+FD/105C: F0 74        BEQ Routine_FD10D2
+FD/105E: 70 8B        BVS Routine_FD0FEB
 FD/1060: A2 10        LDX #$10
 FD/1062: 12 10        ORA ($10)
-FD/1064: 10 96        BPL $0FFC
+FD/1064: 10 96        BPL Routine_FD0FFC
 FD/1066: 00 08        BRK $08
 FD/1068: 00 88        BRK $88
 FD/106A: 58           CLI

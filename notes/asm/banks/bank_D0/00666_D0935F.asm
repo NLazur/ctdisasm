@@ -3,7 +3,7 @@ Routine_D0935F:
 D0/935F: A0 C2        LDY #$C2
 D0/9361: E2 E4        SEP #$E4
 D0/9363: E4 E8        CPX $E8
-D0/9365: D0 10        BNE $9377
+D0/9365: D0 10        BNE Local_D09377
 D0/9367: A0 0E        LDY #$0E
 D0/9369: 09 1E        ORA #$1E
 D0/936B: 11 18        ORA ($18),Y
@@ -12,6 +12,7 @@ D0/936F: 17 1E        ORA [$1E],Y
 D0/9371: 11 1E        ORA ($1E),Y
 D0/9373: 11 1E        ORA ($1E),Y
 D0/9375: 11 0F        ORA ($0F),Y
+Local_D09377:
 D0/9377: 08           PHP
 D0/9378: 0F 17 17 17  ORA $171717
 D0/937C: 11 11        ORA ($11),Y
@@ -49,5 +50,5 @@ D0/93CC: FD 7A FD     SBC $FD7A,X
 D0/93CF: 1E FD 8A     ASL $8AFD,X
 D0/93D2: 99 66 FB     STA $FB66,Y
 D0/93D5: 05 5D        ORA $5D
-D0/93D7: 82 17 8F     BRL $D022F1
+D0/93D7: 82 17 8F     BRL Routine_D022F1
 D0/93DA: 6B           RTL

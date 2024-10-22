@@ -3,13 +3,13 @@ Routine_C61C24:
 C6/1C24: 07 09        ORA [$09]
 C6/1C26: E0 20        CPX #$20
 C6/1C28: 78           SEI
-C6/1C29: F0 B8        BEQ $1BE3
-C6/1C2B: 70 72        BVS $1C9F
+C6/1C29: F0 B8        BEQ Routine_C61BE3
+C6/1C2B: 70 72        BVS Routine_C61C9F
 C6/1C2D: BF 0F A8 00  LDA $00A80F,X
 C6/1C31: 62 60 11     PER $C62D94
 C6/1C34: 0B           PHD
 C6/1C35: E0 00        CPX #$00
-C6/1C37: 70 CB        BVS $1C04
+C6/1C37: 70 CB        BVS Routine_C61C04
 C6/1C39: 0F F3 18 03  ORA $0318F3
 C6/1C3D: 44 2F 04     MVP $2F,$04
 C6/1C40: 2A           ROL

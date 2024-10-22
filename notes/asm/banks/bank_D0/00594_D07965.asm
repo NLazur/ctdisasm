@@ -1,10 +1,11 @@
 ; Bank: D0 | Start Address: 7965
 Routine_D07965:
-D0/7965: 80 00        BRA $7967
+D0/7965: 80 00        BRA Local_D07967
+Local_D07967:
 D0/7967: C0 00        CPY #$00
 D0/7969: 00 00        BRK $00
 D0/796B: 00 30        BRK $30
-D0/796D: 30 1C        BMI $798B
+D0/796D: 30 1C        BMI Routine_D0798B
 D0/796F: 1C 1F 1F     TRB $1F1F
 D0/7972: 0F 0F 0F 0F  ORA $0F0F0F
 D0/7976: 07 07        ORA [$07]

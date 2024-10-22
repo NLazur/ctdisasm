@@ -4,7 +4,7 @@ C2/BA09: 0B           PHD
 C2/BA0A: 08           PHP
 C2/BA0B: E2 20        SEP #$20
 C2/BA0D: AD 90 9A     LDA $9A90
-C2/BA10: 20 26 F6     JSR $F626
+C2/BA10: 20 26 F6     JSR Routine_C2F626
 C2/BA13: AC 2C 0D     LDY $0D2C
 C2/BA16: B9 1A 18     LDA $181A,Y
 C2/BA19: 8D DA 19     STA $19DA
@@ -12,9 +12,10 @@ C2/BA1C: F4 C0 19     PEA $19C0
 C2/BA1F: 2B           PLD
 C2/BA20: AD 90 9A     LDA $9A90
 C2/BA23: C5 00        CMP $00
-C2/BA25: F0 05        BEQ $BA2C
+C2/BA25: F0 05        BEQ Local_C2BA2C
 C2/BA27: 85 00        STA $00
-C2/BA29: 20 22 F4     JSR $F422
+C2/BA29: 20 22 F4     JSR Routine_C2F422
+Local_C2BA2C:
 C2/BA2C: 28           PLP
 C2/BA2D: 2B           PLD
 C2/BA2E: 60           RTS

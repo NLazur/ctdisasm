@@ -1,8 +1,10 @@
 ; Bank: FD | Start Address: 4DFB
 Routine_FD4DFB:
-FD/4DFB: 30 00        BMI $4DFD
+FD/4DFB: 30 00        BMI Local_FD4DFD
+Local_FD4DFD:
 FD/4DFD: 2C 00 2F     BIT $2F00
-FD/4E00: 80 00        BRA $4E02
+FD/4E00: 80 00        BRA Local_FD4E02
+Local_FD4E02:
 FD/4E02: 59 43 00     EOR $0043,Y
 FD/4E05: 4F 00 62 A3  EOR $A36200
 FD/4E09: E7 10        SBC [$10]
@@ -10,7 +12,7 @@ FD/4E0B: 79 C2 00     ADC $00C2,Y
 FD/4E0E: AD E0 11     LDA $11E0
 FD/4E11: 11 2A        ORA ($2A),Y
 FD/4E13: 7B           TDC
-FD/4E14: 90 F6        BCC $4E0C
+FD/4E14: 90 F6        BCC Routine_FD4E0C
 FD/4E16: 00 C8        BRK $C8
 FD/4E18: BA           TSX
 FD/4E19: 0A           ASL
@@ -27,7 +29,7 @@ FD/4E2F: F3 85        SBC ($85,S),Y
 FD/4E31: 00 41        BRK $41
 FD/4E33: 73 01        ADC ($01,S),Y
 FD/4E35: 4E 01 22     LSR $2201
-FD/4E38: 30 C3        BMI $4DFD
+FD/4E38: 30 C3        BMI Local_FD4DFD
 FD/4E3A: 00 3A        BRK $3A
 FD/4E3C: C1 1A        CMP ($1A,X)
 FD/4E3E: E1 1C        SBC ($1C,X)
@@ -43,7 +45,7 @@ FD/4E51: C0 FA        CPY #$FA
 FD/4E53: ED 2E 89     SBC $892E
 FD/4E56: 00 A6        BRK $A6
 FD/4E58: E6 0A        INC $0A
-FD/4E5A: 22 A9 8A 80  JSR $808AA9
+FD/4E5A: 22 A9 8A 80  JSR Routine_808AA9
 FD/4E5E: E2 00        SEP #$00
 FD/4E60: F9 A4 B7     SBC $B7A4,Y
 FD/4E63: 62 B0 E9     PER $FD3816

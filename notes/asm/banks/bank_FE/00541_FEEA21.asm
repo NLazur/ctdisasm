@@ -6,7 +6,7 @@ FE/EA25: 03 45        ORA $45,S
 FE/EA27: 06 03        ASL $03
 FE/EA29: 09 00        ORA #$00
 FE/EA2B: 91 84        STA ($84),Y
-FE/EA2D: 20 8A 22     JSR $228A
+FE/EA2D: 20 8A 22     JSR Routine_FE228A
 FE/EA30: 0A           ASL
 FE/EA31: 42 17        WDM $17
 FE/EA33: 00 46        BRK $46
@@ -18,12 +18,15 @@ FE/EA3E: 21 01        AND ($01,X)
 FE/EA40: 01 81        ORA ($81,X)
 FE/EA42: 11 D4        ORA ($D4),Y
 FE/EA44: 14 00        TRB $00
-FE/EA46: 50 04        BVC $EA4C
-FE/EA48: 50 40        BVC $EA8A
+Local_FEEA46:
+FE/EA46: 50 04        BVC Local_FEEA4C
+FE/EA48: 50 40        BVC Local_FEEA8A
 FE/EA4A: 11 50        ORA ($50),Y
+Local_FEEA4C:
 FE/EA4C: 01 95        ORA ($95,X)
 FE/EA4E: 00 44        BRK $44
 FE/EA50: 01 00        ORA ($00,X)
+Local_FEEA52:
 FE/EA52: 81 00        STA ($00,X)
 FE/EA54: 94 50        STY $50,X
 FE/EA56: 14 C1        TRB $C1
@@ -33,9 +36,9 @@ FE/EA5C: 51 10        EOR ($10),Y
 FE/EA5E: D1 E9        CMP ($E9),Y
 FE/EA60: 33 AA        AND ($AA,S),Y
 FE/EA62: F4 BF 90     PEA $90BF
-FE/EA65: 90 A0        BCC $EA07
-FE/EA67: 20 ED 0A     JSR $0AED
-FE/EA6A: F0 DA        BEQ $EA46
+FE/EA65: 90 A0        BCC Routine_FEEA07
+FE/EA67: 20 ED 0A     JSR Routine_FE0AED
+FE/EA6A: F0 DA        BEQ Local_FEEA46
 FE/EA6C: 1E 8B FA     ASL $FA8B,X
 FE/EA6F: 06 40        ASL $40
 FE/EA71: 01 20        ORA ($20,X)
@@ -43,29 +46,32 @@ FE/EA73: FF 28 1B 57  SBC $571B28,X
 FE/EA77: 93 E2        STA ($E2,S),Y
 FE/EA79: 51 87        EOR ($87),Y
 FE/EA7B: 00 01        BRK $01
-FE/EA7D: 20 40 12     JSR $1240
+FE/EA7D: 20 40 12     JSR Routine_FE1240
 FE/EA80: 44 12 06     MVP $12,$06
 FE/EA83: D6 98        DEC $98,X
 FE/EA85: 1C 14 09     TRB $0914
-FE/EA88: F0 27        BEQ $EAB1
-FE/EA8A: 5C 50 0C 1C  JMP $1C0C50
+Local_FEEA88:
+FE/EA88: F0 27        BEQ Local_FEEAB1
+Local_FEEA8A:
+FE/EA8A: 5C 50 0C 1C  JMP Routine_1C0C50
 FE/EA8E: 00 48        BRK $48
-FE/EA90: 10 C0        BPL $EA52
+FE/EA90: 10 C0        BPL Local_FEEA52
 FE/EA92: 17 35        ORA [$35],Y
 FE/EA94: 05 67        ORA $67
 FE/EA96: 0C 30 30     TSB $3030
-FE/EA99: 30 42        BMI $EADD
+FE/EA99: 30 42        BMI Routine_FEEADD
 FE/EA9B: 28           PLP
 FE/EA9C: 25 1B        AND $1B
 FE/EA9E: C0 C0        CPY #$C0
 FE/EAA0: 33 37        AND ($37,S),Y
 FE/EAA2: 00 28        BRK $28
-FE/EAA4: 30 E2        BMI $EA88
+FE/EAA4: 30 E2        BMI Local_FEEA88
 FE/EAA6: 38           SEC
 FE/EAA7: 00 B8        BRK $B8
-FE/EAA9: 4C 04 0A     JMP $0A04
+FE/EAA9: 4C 04 0A     JMP Routine_FE0A04
 FE/EAAC: 3C 09 EE     BIT $EE09,X
 FE/EAAF: 06 00        ASL $00
+Local_FEEAB1:
 FE/EAB1: 48           PHA
 FE/EAB2: 8C 4C 0E     STY $0E4C
 FE/EAB5: 00 38        BRK $38

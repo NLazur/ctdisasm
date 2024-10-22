@@ -2,6 +2,7 @@
 Routine_FDE962:
 FD/E962: B9 22 05     LDA $0522,Y
 FD/E965: A8           TAY
+Local_FDE966:
 FD/E966: BF 00 20 7E  LDA $7E2000,X
 FD/E96A: 29 1F        AND #$1F
 FD/E96C: 85 0C        STA $0C
@@ -19,5 +20,5 @@ FD/E985: 9F 00 22 7E  STA $7E2200,X
 FD/E989: E8           INX
 FD/E98A: E8           INX
 FD/E98B: 88           DEY
-FD/E98C: D0 D8        BNE $E966
+FD/E98C: D0 D8        BNE Local_FDE966
 FD/E98E: 60           RTS

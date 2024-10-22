@@ -3,7 +3,7 @@ Routine_C697FC:
 C6/97FC: D9 FC 7C     CMP $7CFC,Y
 C6/97FF: 36 54        ROL $54,X
 C6/9801: 55 7E        EOR $7E,X
-C6/9803: 80 12        BRA $9817
+C6/9803: 80 12        BRA Routine_C69817
 C6/9805: 9B           TXY
 C6/9806: 33 A3        AND ($A3,S),Y
 C6/9808: A4 26        LDY $26
@@ -18,7 +18,7 @@ C6/981C: 08           PHP
 C6/981D: 33 0F        AND ($0F,S),Y
 C6/981F: 43 A1        EOR $A1,S
 C6/9821: 01 C0        ORA ($C0,X)
-C6/9823: 50 91        BVC $97B6
+C6/9823: 50 91        BVC Routine_C697B6
 C6/9825: 77 9B        ADC [$9B],Y
 C6/9827: 52 C0        EOR ($C0)
 C6/9829: 02 03        COP $03
@@ -38,7 +38,7 @@ C6/9846: 15 A1        ORA $A1,X
 C6/9848: 01 5B        ORA ($5B,X)
 C6/984A: 4B           PHK
 C6/984B: F9 11 03     SBC $0311,Y
-C6/984E: D0 B0        BNE $9800
+C6/984E: D0 B0        BNE Routine_C69800
 C6/9850: 39 0D A3     AND $A30D,Y
 C6/9853: A4 98        LDY $98
 C6/9855: 23 89        AND $89,S

@@ -3,19 +3,19 @@ Routine_C65118:
 C6/5118: 06 7E        ASL $7E
 C6/511A: 48           PHA
 C6/511B: 04 7D        TSB $7D
-C6/511D: 10 D0        BPL $50EF
+C6/511D: 10 D0        BPL Routine_C650EF
 C6/511F: 7E D0 77     ROR $77D0,X
 C6/5122: 76 00        ROR $00,X
 C6/5124: 87 10        STA [$10]
 C6/5126: 7D 40 90     ADC $9040,X
 C6/5129: 89 90 8A     BIT #$8A90
-C6/512C: 90 79        BCC $51A7
+C6/512C: 90 79        BCC Routine_C651A7
 C6/512E: D2 05        CMP ($05)
 C6/5130: 83 84        STA $84,S
-C6/5132: 90 84        BCC $50B8
+C6/5132: 90 84        BCC Routine_C650B8
 C6/5134: 94 08        STY $08,X
-C6/5136: 90 7E        BCC $51B6
-C6/5138: 90 77        BCC $51B1
+C6/5136: 90 7E        BCC Routine_C651B6
+C6/5138: 90 77        BCC Routine_C651B1
 C6/513A: A0 00        LDY #$00
 C6/513C: 02 87        COP $87
 C6/513E: 08           PHP
@@ -34,10 +34,11 @@ C6/5154: 9E 03 40     STZ $4003,X
 C6/5157: 3B           TSC
 C6/5158: 34 02        BIT $02,X
 C6/515A: 2B           PLD
-C6/515B: 50 05        BVC $5162
+C6/515B: 50 05        BVC Local_C65162
 C6/515D: 04 0D        TSB $0D
 C6/515F: 1A           INC
 C6/5160: A7 02        LDA [$02]
+Local_C65162:
 C6/5162: 1A           INC
 C6/5163: 0E 1A 0F     ASL $0F1A
 C6/5166: 1A           INC

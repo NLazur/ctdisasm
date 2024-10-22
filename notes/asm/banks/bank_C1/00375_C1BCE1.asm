@@ -4,11 +4,12 @@ C1/BCE1: AD 8B B1     LDA $B18B
 C1/BCE4: AA           TAX
 C1/BCE5: BD 58 B1     LDA $B158,X
 C1/BCE8: 9D AB AF     STA $AFAB,X
-C1/BCEB: 20 6F BD     JSR $BD6F
+C1/BCEB: 20 6F BD     JSR Routine_C1BD6F
 C1/BCEE: BD 3A B0     LDA $B03A,X
-C1/BCF1: F0 05        BEQ $BCF8
+C1/BCF1: F0 05        BEQ Local_C1BCF8
 C1/BCF3: A9 01        LDA #$01
 C1/BCF5: 9D 3A B0     STA $B03A,X
+Local_C1BCF8:
 C1/BCF8: 7B           TDC
 C1/BCF9: AD F4 B3     LDA $B3F4
 C1/BCFC: 8D 8B B1     STA $B18B
@@ -25,7 +26,7 @@ C1/BD11: 9E 03 00     STZ $0003,X
 C1/BD14: 9E 06 00     STZ $0006,X
 C1/BD17: BD 05 00     LDA $0005,X
 C1/BD1A: C9 FF        CMP #$FF
-C1/BD1C: F0 38        BEQ $BD56
+C1/BD1C: F0 38        BEQ Local_C1BD56
 C1/BD1E: 85 28        STA $28
 C1/BD20: 29 0F        AND #$0F
 C1/BD22: 0A           ASL
@@ -45,7 +46,7 @@ C1/BD3A: 4A           LSR
 C1/BD3B: 4A           LSR
 C1/BD3C: 29 0F        AND #$0F
 C1/BD3E: C9 0F        CMP #$0F
-C1/BD40: F0 14        BEQ $BD56
+C1/BD40: F0 14        BEQ Local_C1BD56
 C1/BD42: 0A           ASL
 C1/BD43: AA           TAX
 C1/BD44: C2 20        REP #$20
@@ -56,6 +57,7 @@ C1/BD4C: E2 20        SEP #$20
 C1/BD4E: 9E 01 00     STZ $0001,X
 C1/BD51: A9 FF        LDA #$FF
 C1/BD53: 9D 05 00     STA $0005,X
+Local_C1BD56:
 C1/BD56: 7B           TDC
 C1/BD57: AD 8B B1     LDA $B18B
 C1/BD5A: 0A           ASL

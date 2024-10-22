@@ -10,7 +10,7 @@ D1/B071: 9D FD 7F     STA $7FFD,X
 D1/B074: B7 C0        LDA [$C0],Y
 D1/B076: 86 C1        STX $C1
 D1/B078: 83 61        STA $61,S
-D1/B07A: 80 71        BRA $B0ED
+D1/B07A: 80 71        BRA Local_D1B0ED
 D1/B07C: 00 51        BRK $51
 D1/B07E: 00 4E        BRK $4E
 D1/B080: 00 58        BRK $58
@@ -20,11 +20,12 @@ D1/B087: 8A           TXA
 D1/B088: 44 50 0A     MVP $50,$0A
 D1/B08B: 4A           LSR
 D1/B08C: 89 08        BIT #$08
-D1/B08E: 90 4C        BCC $B0DC
+Local_D1B08E:
+D1/B08E: 90 4C        BCC Routine_D1B0DC
 D1/B090: 88           DEY
 D1/B091: 06 07        ASL $07
-D1/B093: 10 88        BPL $B01D
-D1/B095: 90 08        BCC $B09F
+D1/B093: 10 88        BPL Routine_D1B01D
+D1/B095: 90 08        BCC Routine_D1B09F
 D1/B097: 48           PHA
 D1/B098: 0E 0F 02     ASL $020F
 D1/B09B: 03 88        ORA $88,S
@@ -33,7 +34,7 @@ D1/B09E: C4 50        CPY $50
 D1/B0A0: 0A           ASL
 D1/B0A1: 4A           LSR
 D1/B0A2: 00 01        BRK $01
-D1/B0A4: 80 81        BRA $B027
+D1/B0A4: 80 81        BRA Routine_D1B027
 D1/B0A6: 48           PHA
 D1/B0A7: 08           PHP
 D1/B0A8: C5 08        CMP $08
@@ -42,13 +43,13 @@ D1/B0AD: 07 49        ORA [$49]
 D1/B0AF: 04 4A        TSB $4A
 D1/B0B1: 06 07        ASL $07
 D1/B0B3: CD 8D 49     CMP $498D
-D1/B0B6: 4C 0A C4     JMP $C40A
+D1/B0B6: 4C 0A C4     JMP Routine_D1C40A
 D1/B0B9: 0E 0F 4B     ASL $4B0F
 D1/B0BC: CA           DEX
 D1/B0BD: 89 0E        BIT #$0E
 D1/B0BF: 0F CC 8A C4  ORA $C48ACC
 D1/B0C3: 07 0D        ORA [$0D]
-D1/B0C5: 10 8D        BPL $B054
+D1/B0C5: 10 8D        BPL Routine_D1B054
 D1/B0C7: 06 0F        ASL $0F
 D1/B0C9: 45 00        EOR $00
 D1/B0CB: 01 0E        ORA ($0E,X)
@@ -56,11 +57,12 @@ D1/B0CD: 8A           TXA
 D1/B0CE: 00 01        BRK $01
 D1/B0D0: 02 03        COP $03
 D1/B0D2: 08           PHP
+Local_D1B0D3:
 D1/B0D3: 8A           TXA
 D1/B0D4: 44 08 10     MVP $08,$10
 D1/B0D7: 88           DEY
-D1/B0D8: 10 90        BPL $B06A
-D1/B0DA: 4C 0A C4     JMP $C40A
+D1/B0D8: 10 90        BPL Routine_D1B06A
+D1/B0DA: 4C 0A C4     JMP Routine_D1C40A
 D1/B0DD: 88           DEY
 D1/B0DE: 07 0D        ORA [$0D]
 D1/B0E0: 01 86        ORA ($86,X)
@@ -68,32 +70,34 @@ D1/B0E2: 86 46        STX $46
 D1/B0E4: C3 24        CMP $24,S
 D1/B0E6: 64 38        STZ $38
 D1/B0E8: 3C 10 78     BIT $7810,X
-D1/B0EB: 90 78        BCC $B165
-D1/B0ED: 4C 87 3F     JMP $3F87
-D1/B0F0: 82 11 C2     BRL $D17304
+D1/B0EB: 90 78        BCC Routine_D1B165
+Local_D1B0ED:
+D1/B0ED: 4C 87 3F     JMP Routine_D13F87
+D1/B0F0: 82 11 C2     BRL Routine_D17304
 D1/B0F3: 91 26        STA ($26),Y
 D1/B0F5: E3 17        SBC $17,S
 D1/B0F7: 43 0F        EOR $0F,S
 D1/B0F9: 42 87        WDM $87
-D1/B0FB: 22 48 23 78  JSR $782348
+D1/B0FB: 22 48 23 78  JSR Routine_782348
 D1/B0FF: 23 30        AND $30,S
 D1/B101: 4A           LSR
 D1/B102: 48           PHA
-D1/B103: D0 89        BNE $B08E
+D1/B103: D0 89        BNE Local_D1B08E
 D1/B105: 87 8D        STA [$8D]
-D1/B107: 4C 50 C8     JMP $C850
+D1/B107: 4C 50 C8     JMP Routine_D1C850
 D1/B10A: 88           DEY
 D1/B10B: 06 CC        ASL $CC
 D1/B10D: 8A           TXA
-D1/B10E: 90 0C        BCC $B11C
+D1/B10E: 90 0C        BCC Local_D1B11C
 D1/B110: 0E 89 08     ASL $0889
 D1/B113: 88           DEY
 D1/B114: 0A           ASL
 D1/B115: C4 88        CPY $88
 D1/B117: 06 07        ASL $07
-D1/B119: 10 90        BPL $B0AB
+D1/B119: 10 90        BPL Routine_D1B0AB
 D1/B11B: 08           PHP
-D1/B11C: 90 0E        BCC $B12C
+Local_D1B11C:
+D1/B11C: 90 0E        BCC Local_D1B12C
 D1/B11E: 0F 45 88 10  ORA $108845
 D1/B122: 88           DEY
 D1/B123: 0A           ASL
@@ -102,34 +106,35 @@ D1/B125: 4D 4C 06     EOR $064C
 D1/B128: C9 4C        CMP #$4C
 D1/B12A: 0A           ASL
 D1/B12B: 0B           PHD
-D1/B12C: 4C 0A 0B     JMP $0B0A
+Local_D1B12C:
+D1/B12C: 4C 0A 0B     JMP Routine_D10B0A
 D1/B12F: 0E 8A 4A     ASL $4A8A
-D1/B132: 10 48        BPL $B17C
+D1/B132: 10 48        BPL Routine_D1B17C
 D1/B134: 48           PHA
 D1/B135: 08           PHP
 D1/B136: 8A           TXA
 D1/B137: 44 10 90     MVP $10,$90
-D1/B13A: 10 10        BPL $B14C
-D1/B13C: 4C 00 01     JMP $0100
+D1/B13A: 10 10        BPL Routine_D1B14C
+D1/B13C: 4C 00 01     JMP Routine_D10100
 D1/B13F: 88           DEY
 D1/B140: 0A           ASL
 D1/B141: 0B           PHD
 D1/B142: 08           PHP
-D1/B143: 90 45        BCC $B18A
+D1/B143: 90 45        BCC Local_D1B18A
 D1/B145: 02 03        COP $03
 D1/B147: 06 48        ASL $48
-D1/B149: 10 88        BPL $B0D3
+D1/B149: 10 88        BPL Local_D1B0D3
 D1/B14B: 87 8D        STA [$8D]
 D1/B14D: 87 0E        STA [$0E]
-D1/B14F: 50 48        BVC $B199
-D1/B151: 4C CC 8A     JMP $8ACC
+D1/B14F: 50 48        BVC Routine_D1B199
+D1/B151: 4C CC 8A     JMP Routine_D18ACC
 D1/B154: 44 4C 50     MVP $4C,$50
 D1/B157: 89 08        BIT #$08
 D1/B159: 08           PHP
 D1/B15A: 00 01        BRK $01
 D1/B15C: 88           DEY
 D1/B15D: 06 07        ASL $07
-D1/B15F: 10 10        BPL $B171
+D1/B15F: 10 10        BPL Routine_D1B171
 D1/B161: 02 03        COP $03
 D1/B163: 0E 0F 01     ASL $010F
 D1/B166: FF FF FF FF  SBC $FFFFFF,X
@@ -142,6 +147,7 @@ D1/B17E: FF FF FF FF  SBC $FFFFFF,X
 D1/B182: FF FF 11 12  SBC $1211FF,X
 D1/B186: D3 92        CMP ($92,S),Y
 D1/B188: 11 93        ORA ($93),Y
+Local_D1B18A:
 D1/B18A: D2 93        CMP ($93)
 D1/B18C: D2 93        CMP ($93)
 D1/B18E: 11 52        ORA ($52),Y
@@ -269,21 +275,22 @@ D1/B280: 00 08        BRK $08
 D1/B282: 09 0A        ORA #$0A
 D1/B284: 4A           LSR
 D1/B285: 49 48        EOR #$48
-D1/B287: 10 11        BPL $B29A
+D1/B287: 10 11        BPL Local_D1B29A
 D1/B289: 12 52        ORA ($52)
 D1/B28B: 51 50        EOR ($50),Y
 D1/B28D: 0B           PHD
 D1/B28E: 0C 0D 4D     TSB $4D0D
-D1/B291: 4C 4B 13     JMP $134B
+D1/B291: 4C 4B 13     JMP Routine_D1134B
 D1/B294: 14 15        TRB $15
 D1/B296: 55 54        EOR $54,X
 D1/B298: 53 06        EOR ($06,S),Y
+Local_D1B29A:
 D1/B29A: 07 16        ORA [$16]
 D1/B29C: 56 47        LSR $47,X
 D1/B29E: 46 0E        LSR $0E
 D1/B2A0: 0F 17 57 4F  ORA $4F5717
 D1/B2A4: 4E 01 FF     LSR $FF01
-D1/B2A7: 80 FF        BRA $B2A8
+D1/B2A7: 80 FF        BRA Routine_D1B2A8
 D1/B2A9: 00 7E        BRK $7E
 D1/B2AB: 00 3C        BRK $3C
 D1/B2AD: 00 3C        BRK $3C
@@ -314,7 +321,7 @@ D1/B2E0: 1C 1D 1E     TRB $1E1D
 D1/B2E3: 23 24        AND $24,S
 D1/B2E5: 25 26        AND $26
 D1/B2E7: 2C 2D 2E     BIT $2E2D
-D1/B2EA: 30 31        BMI $B31D
+D1/B2EA: 30 31        BMI Routine_D1B31D
 D1/B2EC: 32 33        AND ($33)
 D1/B2EE: 34 35        BIT $35,X
 D1/B2F0: 08           PHP
@@ -325,18 +332,18 @@ D1/B2F6: 18           CLC
 D1/B2F7: 19 1A 20     ORA $201A,Y
 D1/B2FA: 21 22        AND ($22,X)
 D1/B2FC: 52 51        EOR ($51)
-D1/B2FE: 50 28        BVC $B328
+D1/B2FE: 50 28        BVC Routine_D1B328
 D1/B300: 29 2A        AND #$2A
 D1/B302: 01 3F        ORA ($3F,X)
 D1/B304: 00 7F        BRK $7F
-D1/B306: 80 FF        BRA $B307
+D1/B306: 80 FF        BRA Routine_D1B307
 D1/B308: C0 FF        CPY #$FF
 D1/B30A: C0 FF        CPY #$FF
 D1/B30C: C0 FF        CPY #$FF
 D1/B30E: C0 FF        CPY #$FF
 D1/B310: C0 FF        CPY #$FF
 D1/B312: C0 7F        CPY #$7F
-D1/B314: 80 3F        BRA $B355
+D1/B314: 80 3F        BRA Routine_D1B355
 D1/B316: 00 29        BRK $29
 D1/B318: 2A           ROL
 D1/B319: 2B           PLD

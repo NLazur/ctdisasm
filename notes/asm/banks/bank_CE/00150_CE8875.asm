@@ -1,6 +1,6 @@
 ; Bank: CE | Start Address: 8875
 Routine_CE8875:
-CE/8875: F0 D2        BEQ $8849
+CE/8875: F0 D2        BEQ Routine_CE8849
 CE/8877: 00 01        BRK $01
 CE/8879: FF F7 0F 41  SBC $410FF7,X
 CE/887D: FF F7 00 02  SBC $0200F7,X
@@ -12,10 +12,13 @@ CE/888B: 0F 83 12 DD  ORA $DD1283
 CE/888F: 00 04        BRK $04
 CE/8891: F8           SED
 CE/8892: D3 05        CMP ($05,S),Y
+Local_CE8894:
 CE/8894: 05 F6        ORA $F6
 CE/8896: D3 05        CMP ($05,S),Y
+Local_CE8898:
 CE/8898: 45 F6        EOR $F6
 CE/889A: D3 00        CMP ($00,S),Y
+Local_CE889C:
 CE/889C: 06 EB        ASL $EB
 CE/889E: EC 05 07     CPX $0705
 CE/88A1: EB           XBA
@@ -27,11 +30,11 @@ CE/88AC: 09 E0 DD     ORA #$DDE0
 CE/88AF: 05 49        ORA $49
 CE/88B1: E0 DD 00     CPX #$00DD
 CE/88B4: 0A           ASL
-CE/88B5: 10 DD        BPL $8894
+CE/88B5: 10 DD        BPL Local_CE8894
 CE/88B7: 05 0B        ORA $0B
-CE/88B9: 10 DD        BPL $8898
+CE/88B9: 10 DD        BPL Local_CE8898
 CE/88BB: 05 8B        ORA $8B
-CE/88BD: 10 DD        BPL $889C
+CE/88BD: 10 DD        BPL Local_CE889C
 CE/88BF: 00 00        BRK $00
 CE/88C1: F7 D1        SBC [$D1],Y
 CE/88C3: 0F 40 F7 D1  ORA $D1F740
@@ -47,10 +50,13 @@ CE/88D9: 19 DF 0F     ORA $0FDF,Y
 CE/88DC: 83 08        STA $08,S
 CE/88DE: DF 00 04 F8  CMP $F80400,X
 CE/88E2: D3 05        CMP ($05,S),Y
+Local_CE88E4:
 CE/88E4: 05 F6        ORA $F6
 CE/88E6: D3 05        CMP ($05,S),Y
+Local_CE88E8:
 CE/88E8: 45 F6        EOR $F6
 CE/88EA: D3 00        CMP ($00,S),Y
+Local_CE88EC:
 CE/88EC: 06 FB        ASL $FB
 CE/88EE: FC 05 07     JSR ($0705,X)
 CE/88F1: EB           XBA
@@ -62,11 +68,11 @@ CE/88FC: 09 E0 DD     ORA #$DDE0
 CE/88FF: 05 49        ORA $49
 CE/8901: E0 DD 00     CPX #$00DD
 CE/8904: 0A           ASL
-CE/8905: 10 DD        BPL $88E4
+CE/8905: 10 DD        BPL Local_CE88E4
 CE/8907: 05 0B        ORA $0B
-CE/8909: 10 DD        BPL $88E8
+CE/8909: 10 DD        BPL Local_CE88E8
 CE/890B: 05 8B        ORA $8B
-CE/890D: 10 DD        BPL $88EC
+CE/890D: 10 DD        BPL Local_CE88EC
 CE/890F: 00 00        BRK $00
 CE/8911: F8           SED
 CE/8912: F8           SED

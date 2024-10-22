@@ -13,6 +13,7 @@ C6/53F4: 08           PHP
 C6/53F5: C7 08        CMP [$08]
 C6/53F7: C8           INY
 C6/53F8: C8           INY
+Local_C653F9:
 C6/53F9: 23 D4        AND $D4,S
 C6/53FB: D1 C8        CMP ($C8),Y
 C6/53FD: 03 E4        ORA $E4,S
@@ -27,7 +28,7 @@ C6/5409: 77 10        ADC [$10],Y
 C6/540B: 78           SEI
 C6/540C: 28           PLP
 C6/540D: 05 88        ORA $88
-C6/540F: 10 E8        BPL $53F9
+C6/540F: 10 E8        BPL Local_C653F9
 C6/5411: 28           PLP
 C6/5412: 2D 80 84     AND $8480
 C6/5415: 40           RTI

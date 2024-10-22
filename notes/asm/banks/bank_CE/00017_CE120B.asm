@@ -1,12 +1,12 @@
 ; Bank: CE | Start Address: 120B
 Routine_CE120B:
 CE/120B: 00 D9        BRK $D9
-CE/120D: 30 24        BMI $1233
+CE/120D: 30 24        BMI Routine_CE1233
 CE/120F: 01 70        ORA ($70,X)
 CE/1211: 7A           PLY
 CE/1212: 86 00        STX $00
 CE/1214: 02 00        COP $00
-CE/1216: 20 0A 0A     JSR $0A0A
+CE/1216: 20 0A 0A     JSR Routine_CE0A0A
 CE/1219: 85 C0        STA $C0
 CE/121B: A8           TAY
 CE/121C: 0A           ASL
@@ -18,35 +18,38 @@ CE/1223: 71 36        ADC ($36),Y
 CE/1225: 24 02        BIT $02
 CE/1227: 73 03        ADC ($03,S),Y
 CE/1229: 33 03        AND ($03,S),Y
-CE/122B: 30 1F        BMI $124C
-CE/122D: 10 1A        BPL $1249
+CE/122B: 30 1F        BMI Local_CE124C
+CE/122D: 10 1A        BPL Routine_CE1249
 CE/122F: 02 01        COP $01
 CE/1231: 0B           PHD
-CE/1232: 20 28 70     JSR $7028
+CE/1232: 20 28 70     JSR Routine_CE7028
 CE/1235: 12 0C        ORA ($0C)
 CE/1237: 36 20        ROL $20,X
 CE/1239: 48           PHA
 CE/123A: 71 36        ADC ($36),Y
 CE/123C: 00 90        BRK $90
-CE/123E: F0 80        BEQ $11C0
+CE/123E: F0 80        BEQ Routine_CE11C0
 CE/1240: 00 4F        BRK $4F
 CE/1242: 12 60        ORA ($60)
 CE/1244: 12 69        ORA ($69)
 CE/1246: 12 8A        ORA ($8A)
 CE/1248: 12 AA        ORA ($AA)
 CE/124A: 12 CC        ORA ($CC)
+Local_CE124C:
 CE/124C: 12 85        ORA ($85)
 CE/124E: 09 72 15     ORA #$1572
 CE/1251: 03 10        ORA $10,S
 CE/1253: 02 36        COP $36
-CE/1255: 20 0A 36     JSR $360A
+CE/1255: 20 0A 36     JSR Routine_CE360A
 CE/1258: 24 03        BIT $03
-CE/125A: 50 06        BVC $1262
+CE/125A: 50 06        BVC Local_CE1262
 CE/125C: 03 2E        ORA $2E,S
 CE/125E: 01 00        ORA ($00,X)
 CE/1260: 23 01        AND $01,S
+Local_CE1262:
 CE/1262: 02 24        COP $24
-CE/1264: 20 14 06     JSR $0614
+Local_CE1264:
+CE/1264: 20 14 06     JSR Routine_CE0614
 CE/1267: 03 00        ORA $00,S
 CE/1269: 1B           TCS
 CE/126A: 09 72 03     ORA #$0372
@@ -55,7 +58,7 @@ CE/126F: 61 02        ADC ($02,X)
 CE/1271: 00 03        BRK $03
 CE/1273: 02 00        COP $00
 CE/1275: 0D 24 01     ORA $0124
-CE/1278: 70 7A        BVS $12F4
+CE/1278: 70 7A        BVS Local_CE12F4
 CE/127A: 7C 00 1E     JMP ($1E00,X)
 CE/127D: 1C 35 73     TRB $7335
 CE/1280: 03 1B        ORA $1B,S
@@ -65,10 +68,10 @@ CE/1287: 01 71        ORA ($71,X)
 CE/1289: 00 1B        BRK $1B
 CE/128B: 09 72 03     ORA #$0372
 CE/128E: 73 00        ADC ($00,S),Y
-CE/1290: 20 02 02     JSR $0202
+CE/1290: 20 02 02     JSR Routine_CE0202
 CE/1293: 00 0D        BRK $0D
 CE/1295: 24 01        BIT $01
-CE/1297: 20 08 70     JSR $7008
+CE/1297: 20 08 70     JSR Routine_CE7008
 CE/129A: 1E 1C 73     ASL $731C,X
 CE/129D: 03 33        ORA $33,S
 CE/129F: 03 3A        ORA $3A,S
@@ -78,10 +81,10 @@ CE/12A8: 01 00        ORA ($00,X)
 CE/12AA: 1B           TCS
 CE/12AB: 09 72 03     ORA #$0372
 CE/12AE: 73 00        ADC ($00,S),Y
-CE/12B0: 20 05 02     JSR $0205
+CE/12B0: 20 05 02     JSR Routine_CE0205
 CE/12B3: 00 0D        BRK $0D
 CE/12B5: 24 01        BIT $01
-CE/12B7: 20 10 70     JSR $7010
+CE/12B7: 20 10 70     JSR Routine_CE7010
 CE/12BA: 1E 1C 71     ASL $711C,X
 CE/12BD: 73 03        ADC ($03,S),Y
 CE/12BF: 33 03        AND ($03,S),Y
@@ -92,14 +95,14 @@ CE/12C9: 01 36        ORA ($36,X)
 CE/12CB: 00 1B        BRK $1B
 CE/12CD: 09 72 03     ORA #$0372
 CE/12D0: 73 00        ADC ($00,S),Y
-CE/12D2: 20 07 02     JSR $0207
+CE/12D2: 20 07 02     JSR Routine_CE0207
 CE/12D5: 00 0D        BRK $0D
 CE/12D7: 24 01        BIT $01
-CE/12D9: 20 18 70     JSR $7018
+CE/12D9: 20 18 70     JSR Routine_CE7018
 CE/12DC: 1E 1C 71     ASL $711C,X
 CE/12DF: 36 00        ROL $00,X
 CE/12E1: 98           TYA
-CE/12E2: F0 80        BEQ $1264
+CE/12E2: F0 80        BEQ Local_CE1264
 CE/12E4: 00 F5        BRK $F5
 CE/12E6: 12 15        ORA ($15)
 CE/12E8: 13 22        ORA ($22,S),Y
@@ -108,6 +111,7 @@ CE/12EC: 13 3C        ORA ($3C,S),Y
 CE/12EE: 13 47        ORA ($47,S),Y
 CE/12F0: 13 52        ORA ($52,S),Y
 CE/12F2: 13 85        ORA ($85,S),Y
+Local_CE12F4:
 CE/12F4: 09 72 15     ORA #$1572
 CE/12F7: 03 10        ORA $10,S
 CE/12F9: 02 36        COP $36
@@ -116,9 +120,9 @@ CE/12FE: 02 34        COP $34
 CE/1300: 1B           TCS
 CE/1301: 78           SEI
 CE/1302: 84 36        STY $36
-CE/1304: 20 3C 78     JSR $783C
+CE/1304: 20 3C 78     JSR Routine_CE783C
 CE/1307: 85 20        STA $20
-CE/1309: 30 78        BMI $1383
+CE/1309: 30 78        BMI Routine_CE1383
 CE/130B: 85 22        STA $22
 CE/130D: 1B           TCS
 CE/130E: 00 06        BRK $06
@@ -139,26 +143,27 @@ CE/132A: 01 6A        ORA ($6A,X)
 CE/132C: 00 1B        BRK $1B
 CE/132E: 09 72 03     ORA #$0372
 CE/1331: 73 00        ADC ($00,S),Y
-CE/1333: 20 10 33     JSR $3310
+CE/1333: 20 10 33     JSR Routine_CE3310
 CE/1336: 09 78 72     ORA #$7278
 CE/1339: 1E 26 00     ASL $0026,X
 CE/133C: 1B           TCS
 CE/133D: 09 72 03     ORA #$0372
 CE/1340: 73 00        ADC ($00,S),Y
-CE/1342: 20 10 1E     JSR $1E10
+CE/1342: 20 10 1E     JSR Routine_CE1E10
 CE/1345: 27 00        AND [$00]
 CE/1347: 1B           TCS
 CE/1348: 09 72 03     ORA #$0372
 CE/134B: 73 00        ADC ($00,S),Y
-CE/134D: 20 10 1E     JSR $1E10
+CE/134D: 20 10 1E     JSR Routine_CE1E10
 CE/1350: 28           PLP
 CE/1351: 00 1B        BRK $1B
 CE/1353: 09 72 03     ORA #$0372
 CE/1356: 73 00        ADC ($00,S),Y
-CE/1358: 20 10 1E     JSR $1E10
+CE/1358: 20 10 1E     JSR Routine_CE1E10
 CE/135B: 29 36 00     AND #$0036
-CE/135E: 90 FC        BCC $135C
-CE/1360: 80 00        BRA $1362
+CE/135E: 90 FC        BCC Routine_CE135C
+CE/1360: 80 00        BRA Local_CE1362
+Local_CE1362:
 CE/1362: 74 13        STZ $13,X
 CE/1364: 34 0E        BIT $0E,X
 CE/1366: A4 13        LDY $13
@@ -169,22 +174,23 @@ CE/136F: 14 2C        TRB $2C
 CE/1371: 14 85        TRB $85
 CE/1373: 09 72 0D     ORA #$0D72
 CE/1376: 02 24        COP $24
-CE/1378: 20 78 3D     JSR $3D78
+CE/1378: 20 78 3D     JSR Routine_CE3D78
 CE/137B: 03 78        ORA $78,S
 CE/137D: AE 34 1B     LDX $1B34
 CE/1380: 03 21        ORA $21,S
 CE/1382: 03 21        ORA $21,S
-CE/1384: 20 14 03     JSR $0314
-CE/1387: 10 02        BPL $138B
+CE/1384: 20 14 03     JSR Routine_CE0314
+CE/1387: 10 02        BPL Local_CE138B
 CE/1389: 11 36        ORA ($36),Y
-CE/138B: 20 DC 36     JSR $36DC
+Local_CE138B:
+CE/138B: 20 DC 36     JSR Routine_CE36DC
 CE/138E: 24 02        BIT $02
 CE/1390: 34 1A        BIT $1A,X
 CE/1392: 06 03        ASL $03
-CE/1394: 20 14 50     JSR $5014
-CE/1397: 20 14 2E     JSR $2E14
+CE/1394: 20 14 50     JSR Routine_CE5014
+CE/1397: 20 14 2E     JSR Routine_CE2E14
 CE/139A: 01 00        ORA ($00,X)
-CE/139C: 22 1A 01 03  JSR $03011A
+CE/139C: 22 1A 01 03  JSR Routine_03011A
 CE/13A0: 24 06        BIT $06
 CE/13A2: 03 00        ORA $00,S
 CE/13A4: 1B           TCS

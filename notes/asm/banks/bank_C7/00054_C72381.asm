@@ -28,7 +28,8 @@ C7/23B1: 00 00        BRK $00
 C7/23B3: 00 00        BRK $00
 C7/23B5: 00 00        BRK $00
 C7/23B7: 25 43        AND $43
-C7/23B9: 50 00        BVC $23BB
+C7/23B9: 50 00        BVC Local_C723BB
+Local_C723BB:
 C7/23BB: 00 00        BRK $00
 C7/23BD: 00 00        BRK $00
 C7/23BF: 00 00        BRK $00

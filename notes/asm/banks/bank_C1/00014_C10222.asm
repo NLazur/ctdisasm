@@ -47,9 +47,9 @@ C1/026C: A6 E2        LDX $E2
 C1/026E: BF 00 F3 C0  LDA $C0F300,X
 C1/0272: 85 DB        STA $DB
 C1/0274: A5 D8        LDA $D8
-C1/0276: 30 14        BMI $028C
+C1/0276: 30 14        BMI Routine_C1028C
 C1/0278: A5 DA        LDA $DA
-C1/027A: 30 08        BMI $0284
+C1/027A: 30 08        BMI Routine_C10284
 C1/027C: 18           CLC
 C1/027D: A9 80        LDA #$80
 C1/027F: 65 DB        ADC $DB

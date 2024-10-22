@@ -2,7 +2,7 @@
 Routine_C3DED5:
 C3/DED5: 02 1E        COP $1E
 C3/DED7: 28           PLP
-C3/DED8: 20 98 04     JSR $0498
+C3/DED8: 20 98 04     JSR Routine_C30498
 C3/DEDB: 76 00        ROR $00,X
 C3/DEDD: 3C 28 40     BIT $4028,X
 C3/DEE0: 98           TYA
@@ -12,7 +12,7 @@ C3/DEE7: 98           TYA
 C3/DEE8: 4A           LSR
 C3/DEE9: 00 2D        BRK $2D
 C3/DEEB: D3 31        CMP ($31,S),Y
-C3/DEED: 90 21        BCC $DF10
+C3/DEED: 90 21        BCC Routine_C3DF10
 C3/DEEF: 2C 1D C9     BIT $C91D
 C3/DEF2: 00 10        BRK $10
 C3/DEF4: C3 55        CMP $55,S
@@ -27,9 +27,9 @@ C3/DF05: 8A           TXA
 C3/DF06: 00 06        BRK $06
 C3/DF08: 08           PHP
 C3/DF09: 00 00        BRK $00
-C3/DF0B: 20 98 1E     JSR $1E98
+C3/DF0B: 20 98 1E     JSR Routine_C31E98
 C3/DF0E: 18           CLC
-C3/DF0F: 20 B8 42     JSR $42B8
+C3/DF0F: 20 B8 42     JSR Routine_C342B8
 C3/DF12: 18           CLC
 C3/DF13: 00 E5        BRK $E5
 C3/DF15: 55 08        EOR $08,X

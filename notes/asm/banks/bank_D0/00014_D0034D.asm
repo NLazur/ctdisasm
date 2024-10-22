@@ -11,6 +11,6 @@ D0/035D: 1C CF F0     TRB $F0CF
 D0/0360: 00 00        BRK $00
 D0/0362: 00 00        BRK $00
 D0/0364: 00 00        BRK $00
-D0/0366: 80 80        BRA $02E8
+D0/0366: 80 80        BRA Routine_D002E8
 D0/0368: C0 C0        CPY #$C0
 D0/036A: 60           RTS

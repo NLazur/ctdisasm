@@ -1,7 +1,7 @@
 ; Bank: C6 | Start Address: 6D5F
 Routine_C66D5F:
 C6/6D5F: F8           SED
-C6/6D60: 4C 30 36     JMP $3630
+C6/6D60: 4C 30 36     JMP Routine_C63630
 C6/6D63: 37 9A        AND [$9A],Y
 C6/6D65: 8C 9B 9C     STY $9C9B
 C6/6D68: 5A           PHY
@@ -17,11 +17,11 @@ C6/6D78: AA           TAX
 C6/6D79: AB           PLB
 C6/6D7A: DC 5B F8     JMP [$F85B]
 C6/6D7D: 71 1D        ADC ($1D),Y
-C6/6D7F: 10 77        BPL $6DF8
+C6/6D7F: 10 77        BPL Routine_C66DF8
 C6/6D81: 78           SEI
 C6/6D82: 79 25 10     ADC $1025,Y
 C6/6D85: 92 48        STA ($48)
-C6/6D87: 20 D9 11     JSR $11D9
+C6/6D87: 20 D9 11     JSR Routine_C611D9
 C6/6D8A: C0 12 B8     CPY #$B812
 C6/6D8D: B9 BA EB     LDA $EBBA,Y
 C6/6D90: EC 5B F8     CPX $F85B
@@ -34,7 +34,7 @@ C6/6D9F: 8C C3 60     STY $60C3
 C6/6DA2: F8           SED
 C6/6DA3: 44 0A F8     MVP $0A,$F8
 C6/6DA6: F9 FA FB     SBC $FBFA,Y
-C6/6DA9: 5C F8 61 38  JMP $3861F8
+C6/6DA9: 5C F8 61 38  JMP Routine_3861F8
 C6/6DAD: 00 D4        BRK $D4
 C6/6DAF: D5 D6        CMP $D6,X
 C6/6DB1: D7 BA        CMP [$BA],Y
@@ -43,22 +43,23 @@ C6/6DB4: BC BD 1C     LDY $1CBD,X
 C6/6DB7: BE BF 60     LDX $60BF,Y
 C6/6DBA: F8           SED
 C6/6DBB: 01 F8        ORA ($F8,X)
-C6/6DBD: 10 78        BPL $6E37
+C6/6DBD: 10 78        BPL Routine_C66E37
 C6/6DBF: E4 E5        CPX $E5
 C6/6DC1: E6 70        INC $70
 C6/6DC3: E7 CA        SBC [$CA]
 C6/6DC5: CB           WAI
+Local_C66DC6:
 C6/6DC6: CC 20 F9     CPY $F920
 C6/6DC9: 01 F8        ORA ($F8,X)
 C6/6DCB: 0C 98 F5     TSB $F598
-C6/6DCE: F0 F6        BEQ $6DC6
+C6/6DCE: F0 F6        BEQ Local_C66DC6
 C6/6DD0: F7 DA        SBC [$DA],Y
 C6/6DD2: DB           STP
 C6/6DD3: 1D 21 60     ORA $6021,X
 C6/6DD6: F8           SED
 C6/6DD7: 01 F8        ORA ($F8,X)
 C6/6DD9: 12 68        ORA ($68)
-C6/6DDB: F0 E1        BEQ $6DBE
+C6/6DDB: F0 E1        BEQ Routine_C66DBE
 C6/6DDD: E2 D3        SEP #$D3
 C6/6DDF: BE 1D 29     LDX $291D,Y
 C6/6DE2: 60           RTS

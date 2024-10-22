@@ -13,7 +13,7 @@ D0/6C03: 06 FC        ASL $FC
 D0/6C05: 04 F4        TSB $F4
 D0/6C07: 0C F0 F0     TSB $F0F0
 D0/6C0A: C0 C0        CPY #$C0
-D0/6C0C: 80 80        BRA $6B8E
+D0/6C0C: 80 80        BRA Routine_D06B8E
 D0/6C0E: 00 00        BRK $00
 D0/6C10: 00 00        BRK $00
 D0/6C12: 00 00        BRK $00

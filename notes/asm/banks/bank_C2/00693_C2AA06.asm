@@ -1,19 +1,20 @@
 ; Bank: C2 | Start Address: AA06
 Routine_C2AA06:
-C2/AA06: 10 FF        BPL $AA07
+C2/AA06: 10 FF        BPL Routine_C2AA07
 C2/AA08: FF 30 E0 01  SBC $01E030,X
-C2/AA0C: 30 D0        BMI $A9DE
+C2/AA0C: 30 D0        BMI Routine_C2A9DE
 C2/AA0E: 01 30        ORA ($30,X)
-C2/AA10: D0 01        BNE $AA13
-C2/AA12: 30 D0        BMI $A9E4
+C2/AA10: D0 01        BNE Routine_C2AA13
+C2/AA12: 30 D0        BMI Routine_C2A9E4
 C2/AA14: 01 10        ORA ($10,X)
-C2/AA16: F0 01        BEQ $AA19
+C2/AA16: F0 01        BEQ Routine_C2AA19
 C2/AA18: 00 10        BRK $10
 C2/AA1A: 08           PHP
 C2/AA1B: 1A           INC
 C2/AA1C: 29 7F        AND #$7F
-C2/AA1E: 20 23 AA     JSR $AA23
+C2/AA1E: 20 23 AA     JSR Local_C2AA23
 C2/AA21: A9 7F        LDA #$7F
+Local_C2AA23:
 C2/AA23: 8F 80 21 00  STA $002180
 C2/AA27: A5 00        LDA $00
 C2/AA29: 8F 80 21 00  STA $002180

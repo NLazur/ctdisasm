@@ -1,6 +1,7 @@
 ; Bank: CE | Start Address: E9CB
 Routine_CEE9CB:
 CE/E9CB: A9 FF        LDA #$FF
+Local_CEE9CD:
 CE/E9CD: 99 5E C1     STA $C15E,Y
 CE/E9D0: 99 96 C1     STA $C196,Y
 CE/E9D3: 99 CE C1     STA $C1CE,Y
@@ -21,5 +22,5 @@ CE/E9FD: 88           DEY
 CE/E9FE: 88           DEY
 CE/E9FF: 88           DEY
 CE/EA00: 88           DEY
-CE/EA01: D0 CA        BNE $E9CD
+CE/EA01: D0 CA        BNE Local_CEE9CD
 CE/EA03: 60           RTS

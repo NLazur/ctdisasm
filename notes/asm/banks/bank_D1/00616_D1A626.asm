@@ -68,6 +68,7 @@ D1/A6B1: B7 D7        LDA [$D7],Y
 D1/A6B3: E2 D7        SEP #$D7
 D1/A6B5: 13 D8        ORA ($D8,S),Y
 D1/A6B7: 49 D8 76     EOR #$76D8
+Local_D1A6BA:
 D1/A6BA: D8           CLD
 D1/A6BB: AE D8 2F     LDX $2FD8
 D1/A6BE: A8           TAY
@@ -81,17 +82,18 @@ D1/A6D1: 02 C9        COP $C9
 D1/A6D3: A3 AF        LDA $AF,S
 D1/A6D5: 05 B0        ORA $B0
 D1/A6D7: 62 B0 E0     PER $D1878A
-D1/A6DA: B0 07        BCS $A6E3
+D1/A6DA: B0 07        BCS Local_D1A6E3
 D1/A6DC: CD 30 CD     CMP $CD30
 D1/A6DF: 61 CD        ADC ($CD,X)
 D1/A6E1: A2 CD        LDX #$CD
+Local_D1A6E3:
 D1/A6E3: ED CD 50     SBC $50CD
 D1/A6E6: CE C3 CE     DEC $CEC3
 D1/A6E9: 36 CF        ROL $CF,X
 D1/A6EB: A9 CF 14     LDA #$14CF
-D1/A6EE: D0 73        BNE $A763
-D1/A6F0: D0 C8        BNE $A6BA
-D1/A6F2: D0 0F        BNE $A703
+D1/A6EE: D0 73        BNE Routine_D1A763
+D1/A6F0: D0 C8        BNE Local_D1A6BA
+D1/A6F2: D0 0F        BNE Routine_D1A703
 D1/A6F4: D1 E5        CMP ($E5),Y
 D1/A6F6: CC 48 C8     CPY $C848
 D1/A6F9: 6F B3 64 D1  ADC $D164B3
@@ -143,6 +145,7 @@ D1/A754: C2 DB        REP #$DB
 D1/A756: C2 30        REP #$30
 D1/A758: C3 76        CMP $76,S
 D1/A75A: C3 B4        CMP $B4,S
+Local_D1A75C:
 D1/A75C: C3 EC        CMP $EC,S
 D1/A75E: C3 28        CMP $28,S
 D1/A760: C4 54        CPY $54
@@ -157,8 +160,8 @@ D1/A770: C6 60        DEC $60
 D1/A772: C6 8D        DEC $8D
 D1/A774: C6 A3        DEC $A3
 D1/A776: AF 05 B0 62  LDA $62B005
-D1/A77A: B0 E0        BCS $A75C
-D1/A77C: B0 1A        BCS $A798
+D1/A77A: B0 E0        BCS Local_D1A75C
+D1/A77C: B0 1A        BCS Local_D1A798
 D1/A77E: D6 1A        DEC $1A,X
 D1/A780: D6 1A        DEC $1A,X
 D1/A782: D6 1A        DEC $1A,X
@@ -172,6 +175,7 @@ D1/A790: D6 1A        DEC $1A,X
 D1/A792: D6 1A        DEC $1A,X
 D1/A794: D6 65        DEC $65,X
 D1/A796: B1 1A        LDA ($1A),Y
+Local_D1A798:
 D1/A798: D6 8D        DEC $8D,X
 D1/A79A: D5 3C        CMP $3C,X
 D1/A79C: D6 3C        DEC $3C,X

@@ -2,19 +2,19 @@
 Routine_C340B9:
 C3/40B9: DB           STP
 C3/40BA: 18           CLC
-C3/40BB: 20 0E 00     JSR $000E
+C3/40BB: 20 0E 00     JSR Routine_C3000E
 C3/40BE: E3 A1        SBC $A1,S
-C3/40C0: 20 20 1D     JSR $1D20
+C3/40C0: 20 20 1D     JSR Routine_C31D20
 C3/40C3: 00 EB        BRK $EB
 C3/40C5: 68           PLA
 C3/40C6: 3C 00 01     BIT $0100,X
 C3/40C9: 4A           LSR
-C3/40CA: 20 81 41     JSR $4181
+C3/40CA: 20 81 41     JSR Routine_C34181
 C3/40CD: 00 F9        BRK $F9
 C3/40CF: 68           PLA
 C3/40D0: FF FD FF 68  SBC $68FFFD,X
 C3/40D4: 6A           ROR
-C3/40D5: 10 20        BPL $40F7
+C3/40D5: 10 20        BPL Routine_C340F7
 C3/40D7: 7A           PLY
 C3/40D8: 34 FD        BIT $FD,X
 C3/40DA: 08           PHP

@@ -39,7 +39,7 @@ FE/120D: 18           CLC
 FE/120E: C8           INY
 FE/120F: 1C 08 1D     TRB $1D08
 FE/1212: C6 00        DEC $00
-FE/1214: 10 C5        BPL $11DB
+FE/1214: 10 C5        BPL Routine_FE11DB
 FE/1216: 14 C7        TRB $C7
 FE/1218: 14 A4        TRB $A4
 FE/121A: 14 84        TRB $84
@@ -59,10 +59,10 @@ FE/1237: 73 00        ADC ($00,S),Y
 FE/1239: 52 51        EOR ($51)
 FE/123B: 4E 0F 46     LSR $460F
 FE/123E: CD 41 AC     CMP $AC41
-FE/1241: 80 39        BRA $127C
+FE/1241: 80 39        BRA Routine_FE127C
 FE/1243: 6A           ROR
 FE/1244: 35 48        AND $48,X
 FE/1246: 2D 06 29     AND $2906
-FE/1249: 20 00 00     JSR $0000
+FE/1249: 20 00 00     JSR Routine_FE0000
 FE/124C: 77 3A        ADC [$3A],Y
 FE/124E: 6B           RTL

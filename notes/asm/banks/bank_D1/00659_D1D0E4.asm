@@ -170,6 +170,7 @@ D1/D230: 00 30        BRK $30
 D1/D232: 00 30        BRK $30
 D1/D234: 00 00        BRK $00
 D1/D236: 00 00        BRK $00
+Local_D1D238:
 D1/D238: 00 0B        BRK $0B
 D1/D23A: 4B           PHK
 D1/D23B: 8B           PHB
@@ -198,7 +199,7 @@ D1/D266: 00 00        BRK $00
 D1/D268: 00 00        BRK $00
 D1/D26A: 00 00        BRK $00
 D1/D26C: 00 0D        BRK $0D
-D1/D26E: 90 C8        BCC $D238
+D1/D26E: 90 C8        BCC Local_D1D238
 D1/D270: 01 40        ORA ($40,X)
 D1/D272: 00 40        BRK $40
 D1/D274: 00 C0        BRK $C0
@@ -215,9 +216,10 @@ D1/D288: 00 00        BRK $00
 D1/D28A: 00 00        BRK $00
 D1/D28C: 00 00        BRK $00
 D1/D28E: 00 08        BRK $08
-D1/D290: 10 00        BPL $D292
+D1/D290: 10 00        BPL Local_D1D292
+Local_D1D292:
 D1/D292: 01 4D        ORA ($4D,X)
-D1/D294: D0 88        BNE $D21E
+D1/D294: D0 88        BNE Routine_D1D21E
 D1/D296: 01 60        ORA ($60,X)
 D1/D298: 00 60        BRK $60
 D1/D29A: 00 60        BRK $60
@@ -237,7 +239,7 @@ D1/D2B4: 00 18        BRK $18
 D1/D2B6: 19 20 21     ORA $2120,Y
 D1/D2B9: 28           PLP
 D1/D2BA: 29 30        AND #$30
-D1/D2BC: 4C 41 40     JMP $4041
+D1/D2BC: 4C 41 40     JMP Routine_D14041
 D1/D2BF: 0D 90 C8     ORA $C890
 D1/D2C2: 01 30        ORA ($30,X)
 D1/D2C4: 00 30        BRK $30

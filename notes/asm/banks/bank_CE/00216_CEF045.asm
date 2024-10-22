@@ -1,6 +1,7 @@
 ; Bank: CE | Start Address: F045
 Routine_CEF045:
-CE/F045: 80 00        BRA $F047
+CE/F045: 80 00        BRA Local_CEF047
+Local_CEF047:
 CE/F047: 02 04        COP $04
 CE/F049: 06 08        ASL $08
 CE/F04B: 0A           ASL
@@ -19,6 +20,7 @@ CE/F064: 02 00        COP $00
 CE/F066: E2 10        SEP #$10
 CE/F068: A2 10        LDX #$10
 CE/F06A: A9 F0        LDA #$F0
+Local_CEF06C:
 CE/F06C: 9D 0D 07     STA $070D,X
 CE/F06F: 9D 1D 07     STA $071D,X
 CE/F072: 9D 2D 07     STA $072D,X
@@ -54,14 +56,15 @@ CE/F0C9: CA           DEX
 CE/F0CA: CA           DEX
 CE/F0CB: CA           DEX
 CE/F0CC: CA           DEX
-CE/F0CD: D0 9D        BNE $F06C
+CE/F0CD: D0 9D        BNE Local_CEF06C
 CE/F0CF: C2 20        REP #$20
 CE/F0D1: A2 1E        LDX #$1E
 CE/F0D3: A9 AA AA     LDA #$AAAA
+Local_CEF0D6:
 CE/F0D6: 9D 00 09     STA $0900,X
 CE/F0D9: CA           DEX
 CE/F0DA: CA           DEX
-CE/F0DB: D0 F9        BNE $F0D6
+CE/F0DB: D0 F9        BNE Local_CEF0D6
 CE/F0DD: 8D 01 09     STA $0901
 CE/F0E0: 7B           TDC
 CE/F0E1: E2 20        SEP #$20

@@ -1,8 +1,8 @@
 ; Bank: FF | Start Address: 9656
 Routine_FF9656:
 FF/9656: 7E 5C DE     ROR $DE5C,X
-FF/9659: 80 D8        BRA $9633
-FF/965B: 90 DF        BCC $963C
+FF/9659: 80 D8        BRA Routine_FF9633
+FF/965B: 90 DF        BCC Routine_FF963C
 FF/965D: 8E 8E 00     STX $008E
 FF/9660: 3C 38 7E     BIT $7E38,X
 FF/9663: 6C 66 54     JMP ($5466)
@@ -125,7 +125,7 @@ FF/977C: E3 C2        SBC $C2,S
 FF/977E: C2 21        REP #$21
 FF/9780: 7E 7C FF     ROR $FF7C,X
 FF/9783: C2 E3        REP #$E3
-FF/9785: D0 7E        BNE $9805
+FF/9785: D0 7E        BNE Routine_FF9805
 FF/9787: 7D 7F 02     ADC $027F,X
 FF/978A: C3 C2        CMP $C2,S
 FF/978C: FE 7D 7C     INC $7C7D,X
@@ -170,15 +170,15 @@ FF/97E1: C4 E6        CPY $E6
 FF/97E3: C4 7C        CPY $7C
 FF/97E5: 68           PLA
 FF/97E6: 38           SEC
-FF/97E7: 30 38        BMI $9821
-FF/97E9: 30 38        BMI $9823
-FF/97EB: 30 38        BMI $9825
-FF/97ED: 30 38        BMI $9827
+FF/97E7: 30 38        BMI Local_FF9821
+FF/97E9: 30 38        BMI Local_FF9823
+FF/97EB: 30 38        BMI Local_FF9825
+FF/97ED: 30 38        BMI Routine_FF9827
 FF/97EF: 00 FE        BRK $FE
 FF/97F1: FC FC 08     JSR ($08FC,X)
 FF/97F4: 18           CLC
-FF/97F5: 10 30        BPL $9827
-FF/97F7: 20 60 40     JSR $4060
+FF/97F5: 10 30        BPL Routine_FF9827
+FF/97F7: 20 60 40     JSR Routine_FF4060
 FF/97FA: E0 C0 FE     CPX #$FEC0
 FF/97FD: FC FE 00     JSR ($00FE,X)
 FF/9800: 00 00        BRK $00
@@ -195,8 +195,11 @@ FF/981A: EE CC FC     INC $FCCC
 FF/981D: F8           SED
 FF/981E: F8           SED
 FF/981F: 00 00        BRK $00
+Local_FF9821:
 FF/9821: 00 00        BRK $00
+Local_FF9823:
 FF/9823: 00 7E        BRK $7E
+Local_FF9825:
 FF/9825: 7C FE C0     JMP ($C0FE,X)
 FF/9828: E0 C0 E0     CPX #$E0C0
 FF/982B: C0 7E 7C     CPY #$7C7E
@@ -213,12 +216,13 @@ FF/9847: CC FE FC     CPY $FCFE
 FF/984A: FC C0 7E     JSR ($7EC0,X)
 FF/984D: 7C 7E 00     JMP ($007E,X)
 FF/9850: 1E 1C 3E     ASL $3E1C,X
-FF/9853: 30 38        BMI $988D
-FF/9855: 30 FE        BMI $9855
+FF/9853: 30 38        BMI Local_FF988D
+Local_FF9855:
+FF/9855: 30 FE        BMI Local_FF9855
 FF/9857: FC 3E 30     JSR ($303E,X)
 FF/985A: 38           SEC
-FF/985B: 30 38        BMI $9895
-FF/985D: 30 38        BMI $9897
+FF/985B: 30 38        BMI Local_FF9895
+FF/985D: 30 38        BMI Local_FF9897
 FF/985F: 00 00        BRK $00
 FF/9861: 00 00        BRK $00
 FF/9863: 00 7E        BRK $7E
@@ -238,11 +242,14 @@ FF/9885: 04 00        TSB $00
 FF/9887: 00 1C        BRK $1C
 FF/9889: 18           CLC
 FF/988A: 1C 18 1C     TRB $1C18
+Local_FF988D:
 FF/988D: 18           CLC
 FF/988E: 00 00        BRK $00
 FF/9890: 00 00        BRK $00
 FF/9892: 1C 18 18     TRB $1818
+Local_FF9895:
 FF/9895: 04 00        TSB $00
+Local_FF9897:
 FF/9897: 00 1C        BRK $1C
 FF/9899: 18           CLC
 FF/989A: 1C 18 FC     TRB $FC18
@@ -255,7 +262,7 @@ FF/98A7: DA           PHX
 FF/98A8: F8           SED
 FF/98A9: F4 FC D8     PEA $D8FC
 FF/98AC: EE CC CC     INC $CCCC
-FF/98AF: 22 3C 38 3C  JSR $3C383C
+FF/98AF: 22 3C 38 3C  JSR Routine_3C383C
 FF/98B3: 18           CLC
 FF/98B4: 1C 18 1C     TRB $1C18
 FF/98B7: 18           CLC
@@ -309,12 +316,13 @@ FF/992A: 7E 0C FC     ROR $FC0C,X
 FF/992D: F8           SED
 FF/992E: F8           SED
 FF/992F: 00 78        BRK $78
-FF/9931: 70 38        BVS $996B
-FF/9933: 30 FC        BMI $9931
+Local_FF9931:
+FF/9931: 70 38        BVS Local_FF996B
+FF/9933: 30 FC        BMI Local_FF9931
 FF/9935: FC 3C 30     JSR ($303C,X)
 FF/9938: 38           SEC
-FF/9939: 30 38        BMI $9973
-FF/993B: 30 3E        BMI $997B
+FF/9939: 30 38        BMI Routine_FF9973
+FF/993B: 30 3E        BMI Local_FF997B
 FF/993D: 1C 1E 00     TRB $001E
 FF/9940: 00 00        BRK $00
 FF/9942: 00 00        BRK $00
@@ -330,13 +338,14 @@ FF/9955: CC EE CC     CPY $CCEE
 FF/9958: EE CC 7C     INC $7CCC
 FF/995B: 78           SEI
 FF/995C: 38           SEC
-FF/995D: 30 30        BMI $998F
+FF/995D: 30 30        BMI Routine_FF998F
 FF/995F: 00 00        BRK $00
 FF/9961: 00 00        BRK $00
 FF/9963: 00 E7        BRK $E7
 FF/9965: C6 FF        DEC $FF
 FF/9967: D6 FF        DEC $FF,X
 FF/9969: D6 FF        DEC $FF,X
+Local_FF996B:
 FF/996B: D6 7E        DEC $7E,X
 FF/996D: 6D 6C 12     ADC $126C
 FF/9970: 00 00        BRK $00
@@ -345,9 +354,10 @@ FF/9974: EE CC 7C     INC $7CCC
 FF/9977: 5A           PHY
 FF/9978: 78           SEI
 FF/9979: 34 7C        BIT $7C,X
+Local_FF997B:
 FF/997B: 68           PLA
 FF/997C: EE DC CE     INC $CEDC
-FF/997F: 20 00 00     JSR $0000
+FF/997F: 20 00 00     JSR Routine_FF0000
 FF/9982: 00 00        BRK $00
 FF/9984: EE CC EE     INC $EECC
 FF/9987: CC 7C 7A     CPY $7A7C
@@ -370,12 +380,12 @@ FF/99A8: E7 C6        SBC [$C6]
 FF/99AA: E7 C6        SBC [$C6]
 FF/99AC: FE 7D 7C     INC $7C7D,X
 FF/99AF: 02 38        COP $38
-FF/99B1: 30 78        BMI $9A2B
-FF/99B3: 70 78        BVS $9A2D
-FF/99B5: 30 38        BMI $99EF
-FF/99B7: 30 38        BMI $99F1
-FF/99B9: 30 38        BMI $99F3
-FF/99BB: 30 7C        BMI $9A39
+FF/99B1: 30 78        BMI Local_FF9A2B
+FF/99B3: 70 78        BVS Local_FF9A2D
+FF/99B5: 30 38        BMI Routine_FF99EF
+FF/99B7: 30 38        BMI Local_FF99F1
+FF/99B9: 30 38        BMI Routine_FF99F3
+FF/99BB: 30 7C        BMI Routine_FF9A39
 FF/99BD: 78           SEI
 FF/99BE: 78           SEI
 FF/99BF: 04 7E        TSB $7E
@@ -394,9 +404,10 @@ FF/99DC: FE 7D 7C     INC $7C7D,X
 FF/99DF: 02 1E        COP $1E
 FF/99E1: 1C 3E 3C     TRB $3C3E
 FF/99E4: 7E 6C 6E     ROR $6E6C,X
-FF/99E7: 4C EE CC     JMP $CCEE
+FF/99E7: 4C EE CC     JMP Routine_FFCCEE
 FF/99EA: FF FE FF 0C  SBC $0CFFFE,X
 FF/99EE: 0C 00 FF     TSB $FF00
+Local_FF99F1:
 FF/99F1: FE FE C0     INC $C0FE,X
 FF/99F4: FE FC FF     INC $FFFC,X
 FF/99F7: C6 C7        DEC $C7
@@ -413,14 +424,16 @@ FF/9A11: FE FF C6     INC $C6FF,X
 FF/9A14: EE 0C 1C     INC $1C0C
 FF/9A17: 18           CLC
 FF/9A18: 1C 18 38     TRB $3818
-FF/9A1B: 30 38        BMI $9A55
-FF/9A1D: 30 38        BMI $9A57
+FF/9A1B: 30 38        BMI Local_FF9A55
+FF/9A1D: 30 38        BMI Local_FF9A57
 FF/9A1F: 00 7E        BRK $7E
 FF/9A21: 7C FF C6     JMP ($C6FF,X)
 FF/9A24: E7 C6        SBC [$C6]
 FF/9A26: 7E 7C FF     ROR $FF7C,X
 FF/9A29: C6 E7        DEC $E7
+Local_FF9A2B:
 FF/9A2B: C6 FE        DEC $FE
+Local_FF9A2D:
 FF/9A2D: 7C 7C 00     JMP ($007C,X)
 FF/9A30: 7E 7C FF     ROR $FF7C,X
 FF/9A33: C6 E7        DEC $E7
@@ -439,22 +452,26 @@ FF/9A4D: 08           PHP
 FF/9A4E: 0C 00 3C     TSB $3C00
 FF/9A51: 38           SEC
 FF/9A52: 7E 44 4C     ROR $4C44,X
+Local_FF9A55:
 FF/9A55: 08           PHP
 FF/9A56: 18           CLC
-FF/9A57: 10 18        BPL $9A71
-FF/9A59: 10 18        BPL $9A73
+Local_FF9A57:
+FF/9A57: 10 18        BPL Local_FF9A71
+FF/9A59: 10 18        BPL Local_FF9A73
 FF/9A5B: 00 18        BRK $18
-FF/9A5D: 10 18        BPL $9A77
+FF/9A5D: 10 18        BPL Routine_FF9A77
 FF/9A5F: 00 03        BRK $03
 FF/9A61: 02 06        COP $06
 FF/9A63: 04 0C        TSB $0C
 FF/9A65: 08           PHP
 FF/9A66: 18           CLC
-FF/9A67: 10 30        BPL $9A99
-FF/9A69: 20 60 40     JSR $4060
+FF/9A67: 10 30        BPL Local_FF9A99
+FF/9A69: 20 60 40     JSR Routine_FF4060
 FF/9A6C: C0 80 80     CPY #$8080
 FF/9A6F: 00 3F        BRK $3F
+Local_FF9A71:
 FF/9A71: 36 3F        ROL $3F,X
+Local_FF9A73:
 FF/9A73: 36 36        ROL $36,X
 FF/9A75: 2D 3F 12     AND $123F
 FF/9A78: 00 01        BRK $01
@@ -468,17 +485,18 @@ FF/9A89: 00 00        BRK $00
 FF/9A8B: 00 00        BRK $00
 FF/9A8D: 00 00        BRK $00
 FF/9A8F: 00 38        BRK $38
-FF/9A91: 30 38        BMI $9ACB
-FF/9A93: 30 30        BMI $9AC5
+FF/9A91: 30 38        BMI Local_FF9ACB
+FF/9A93: 30 30        BMI Routine_FF9AC5
 FF/9A95: 08           PHP
 FF/9A96: 00 00        BRK $00
 FF/9A98: 38           SEC
-FF/9A99: 30 38        BMI $9AD3
-FF/9A9B: 30 30        BMI $9ACD
+Local_FF9A99:
+FF/9A99: 30 38        BMI Routine_FF9AD3
+FF/9A9B: 30 30        BMI Local_FF9ACD
 FF/9A9D: 08           PHP
 FF/9A9E: 00 00        BRK $00
 FF/9AA0: 38           SEC
-FF/9AA1: 30 7C        BMI $9B1F
+FF/9AA1: 30 7C        BMI Routine_FF9B1F
 FF/9AA3: 48           PHA
 FF/9AA4: 38           SEC
 FF/9AA5: 74 7C        STZ $7C,X
@@ -487,20 +505,22 @@ FF/9AA8: CF A6 C6 85  CMP $85C6A6
 FF/9AAC: FF 7A 7A 05  SBC $057A7A,X
 FF/9AB0: 00 00        BRK $00
 FF/9AB2: 18           CLC
-FF/9AB3: 10 30        BPL $9AE5
+FF/9AB3: 10 30        BPL Routine_FF9AE5
 FF/9AB5: 28           PLP
-FF/9AB6: 30 20        BMI $9AD8
-FF/9AB8: 30 20        BMI $9ADA
-FF/9ABA: 30 20        BMI $9ADC
+FF/9AB6: 30 20        BMI Routine_FF9AD8
+FF/9AB8: 30 20        BMI Routine_FF9ADA
+FF/9ABA: 30 20        BMI Routine_FF9ADC
 FF/9ABC: 38           SEC
-FF/9ABD: 10 18        BPL $9AD7
+FF/9ABD: 10 18        BPL Routine_FF9AD7
 FF/9ABF: 00 00        BRK $00
 FF/9AC1: 00 0C        BRK $0C
 FF/9AC3: 08           PHP
 FF/9AC4: 0E 04 06     ASL $0604
 FF/9AC7: 04 06        TSB $06
 FF/9AC9: 04 06        TSB $06
+Local_FF9ACB:
 FF/9ACB: 04 0C        TSB $0C
+Local_FF9ACD:
 FF/9ACD: 08           PHP
 FF/9ACE: 0C 00 70     TSB $7000
 FF/9AD1: 60           RTS

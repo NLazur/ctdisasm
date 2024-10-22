@@ -4,8 +4,8 @@ C6/AEAA: 11 12        ORA ($12),Y
 C6/AEAC: 15 16        ORA $16,X
 C6/AEAE: 06 0A        ASL $0A
 C6/AEB0: 31 1C        AND ($1C),Y
-C6/AEB2: 10 38        BPL $AEEC
-C6/AEB4: F0 1E        BEQ $AED4
+C6/AEB2: 10 38        BPL Local_C6AEEC
+C6/AEB4: F0 1E        BEQ Routine_C6AED4
 C6/AEB6: 2E 07 CB     ROL $CB07
 C6/AEB9: E4 00        CPX $00
 C6/AEBB: 1F 41 4E 21  ORA $214E41,X
@@ -17,7 +17,7 @@ C6/AEC9: 2D 2E 07     AND $072E
 C6/AECC: 04 48        TSB $48
 C6/AECE: 49 BB 00     EOR #$00BB
 C6/AED1: 04 05        TSB $05
-C6/AED3: 30 31        BMI $AF06
+C6/AED3: 30 31        BMI Routine_C6AF06
 C6/AED5: 32 28        AND ($28)
 C6/AED7: 35 36        AND $36,X
 C6/AED9: 37 22        AND [$22],Y
@@ -29,16 +29,18 @@ C6/AEE5: 1A           INC
 C6/AEE6: 1B           TCS
 C6/AEE7: 37 31        AND [$31],Y
 C6/AEE9: CD 43 21     CMP $2143
+Local_C6AEEC:
 C6/AEEC: BD 80 07     LDA $0780,X
-C6/AEEF: 10 02        BPL $AEF3
+C6/AEEF: 10 02        BPL Local_C6AEF3
 C6/AEF1: 03 03        ORA $03,S
+Local_C6AEF3:
 C6/AEF3: 05 06        ORA $06
 C6/AEF5: 63 18        ADC $18,S
 C6/AEF7: 01 1F        ORA ($1F,X)
 C6/AEF9: B9 3C 3D     LDA $3D3C,Y
 C6/AEFC: 3E 07 58     ROL $5807,X
 C6/AEFF: 59 07 84     EOR $8407,Y
-C6/AF02: 20 21 5B     JSR $5B21
+C6/AF02: 20 21 5B     JSR Routine_C65B21
 C6/AF05: 00 41        BRK $41
 C6/AF07: 42 45        WDM $45
 C6/AF09: 46 CB        LSR $CB
@@ -58,14 +60,14 @@ C6/AF2A: 04 04        TSB $04
 C6/AF2C: 64 00        STZ $00
 C6/AF2E: BF 11 41 DD  LDA $DD4111,X
 C6/AF32: 91 0A        STA ($0A),Y
-C6/AF34: 4C 4D 4E     JMP $4E4D
+C6/AF34: 4C 4D 4E     JMP Routine_C64E4D
 C6/AF37: 07 79        ORA [$79]
 C6/AF39: 01 61        ORA ($61,X)
 C6/AF3B: A4 12        LDY $12
 C6/AF3D: 26 5B        ROL $5B
 C6/AF3F: 00 52        BRK $52
 C6/AF41: 55 AC        EOR $AC,X
-C6/AF43: 10 CC        BPL $AF11
+C6/AF43: 10 CC        BPL Routine_C6AF11
 C6/AF45: A6 10        LDX $10
 C6/AF47: 04 BD        TSB $BD
 C6/AF49: 07 1C        ORA [$1C]

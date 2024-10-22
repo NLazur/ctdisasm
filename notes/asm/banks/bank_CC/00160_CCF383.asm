@@ -109,13 +109,14 @@ CC/F475: FF 01 00 00  SBC $000001,X
 CC/F479: FF FF FF 00  SBC $00FFFF,X
 CC/F47D: FF 01 00 00  SBC $000001,X
 CC/F481: FF FF FF 00  SBC $00FFFF,X
-CC/F485: F0 10        BEQ $F497
+CC/F485: F0 10        BEQ Local_CCF497
 CC/F487: 00 00        BRK $00
 CC/F489: FF FF FF 00  SBC $00FFFF,X
-CC/F48D: F0 10        BEQ $F49F
+CC/F48D: F0 10        BEQ Routine_CCF49F
 CC/F48F: 00 00        BRK $00
 CC/F491: FF FF FF 00  SBC $00FFFF,X
 CC/F495: 00 00        BRK $00
+Local_CCF497:
 CC/F497: 00 00        BRK $00
 CC/F499: 00 00        BRK $00
 CC/F49B: 00 FE        BRK $FE
@@ -135,11 +136,11 @@ CC/F4BB: 04 01        TSB $01
 CC/F4BD: 01 01        ORA ($01,X)
 CC/F4BF: 02 04        COP $04
 CC/F4C1: 08           PHP
-CC/F4C2: 10 20        BPL $F4E4
+CC/F4C2: 10 20        BPL Routine_CCF4E4
 CC/F4C4: 01 04        ORA ($04,X)
-CC/F4C6: 10 40        BPL $F508
+CC/F4C6: 10 40        BPL Routine_CCF508
 CC/F4C8: 01 04        ORA ($04,X)
-CC/F4CA: 10 40        BPL $F50C
+CC/F4CA: 10 40        BPL Routine_CCF50C
 CC/F4CC: FE FB EF     INC $EFFB,X
 CC/F4CF: BF FE FB EF  LDA $EFFBFE,X
 CC/F4D3: BF 00 00 00  LDA $000000,X
@@ -159,8 +160,8 @@ CC/F4F5: 01 01        ORA ($01,X)
 CC/F4F7: 02 03        COP $03
 CC/F4F9: 02 03        COP $03
 CC/F4FB: 04 08        TSB $08
-CC/F4FD: 10 18        BPL $F517
-CC/F4FF: 30 40        BMI $F541
+CC/F4FD: 10 18        BPL Routine_CCF517
+CC/F4FF: 30 40        BMI Local_CCF541
 CC/F501: 00 00        BRK $00
 CC/F503: 00 00        BRK $00
 CC/F505: 0F 1F 2F 5F  ORA $5F2F1F
@@ -185,15 +186,16 @@ CC/F538: FE FF FF     INC $FFFF,X
 CC/F53B: 00 01        BRK $01
 CC/F53D: 00 03        BRK $03
 CC/F53F: 02 00        COP $00
+Local_CCF541:
 CC/F541: 00 00        BRK $00
 CC/F543: 00 08        BRK $08
 CC/F545: 04 02        TSB $02
 CC/F547: 02 10        COP $10
 CC/F549: 08           PHP
 CC/F54A: 04 04        TSB $04
-CC/F54C: 20 10 08     JSR $0810
+CC/F54C: 20 10 08     JSR Routine_CC0810
 CC/F54F: 08           PHP
-CC/F550: 20 10 08     JSR $0810
+CC/F550: 20 10 08     JSR Routine_CC0810
 CC/F553: 08           PHP
 CC/F554: 02 02        COP $02
 CC/F556: 02 02        COP $02
@@ -250,7 +252,7 @@ CC/F5C5: F8           SED
 CC/F5C6: 00 08        BRK $08
 CC/F5C8: EC F4 FC     CPX $FCF4
 CC/F5CB: 04 E8        TSB $E8
-CC/F5CD: F0 F8        BEQ $F5C7
+CC/F5CD: F0 F8        BEQ Routine_CCF5C7
 CC/F5CF: 00 E4        BRK $E4
 CC/F5D1: EC F4 FC     CPX $FCF4
 CC/F5D4: 02 02        COP $02
@@ -275,13 +277,14 @@ CC/F5F8: 02 01        COP $01
 CC/F5FA: 01 00        ORA ($00,X)
 CC/F5FC: 06 0E        ASL $0E
 CC/F5FE: 07 0A        ORA [$0A]
-CC/F600: 10 0E        BPL $F610
+CC/F600: 10 0E        BPL Local_CCF610
 CC/F602: 0A           ASL
 CC/F603: 0E F4 DC     ASL $DCF4
 CC/F606: 06 32        ASL $32
 CC/F608: FC DC 06     JSR ($06DC,X)
 CC/F60B: 72 F4        ADC ($F4)
 CC/F60D: F4 06 B2     PEA $B206
+Local_CCF610:
 CC/F610: FC F4 06     JSR ($06F4,X)
 CC/F613: F2 00        SBC ($00)
 CC/F615: 00 00        BRK $00
@@ -376,6 +379,7 @@ CC/F6D2: C0 C0        CPY #$C0
 CC/F6D4: E8           INX
 CC/F6D5: D8           CLD
 CC/F6D6: A2 25 08     LDX #$0825
+Local_CCF6D9:
 CC/F6D9: D8           CLD
 CC/F6DA: C2 25        REP #$25
 CC/F6DC: E8           INX
@@ -384,44 +388,48 @@ CC/F6DE: A2 25 08     LDX #$0825
 CC/F6E1: D8           CLD
 CC/F6E2: C2 25        REP #$25
 CC/F6E4: F8           SED
-CC/F6E5: D0 AE        BNE $F695
+CC/F6E5: D0 AE        BNE Routine_CCF695
 CC/F6E7: 25 F8        AND $F8
-CC/F6E9: D0 CE        BNE $F6B9
+CC/F6E9: D0 CE        BNE Routine_CCF6B9
 CC/F6EB: 25 F8        AND $F8
-CC/F6ED: D0 AE        BNE $F69D
+CC/F6ED: D0 AE        BNE Routine_CCF69D
 CC/F6EF: 25 F8        AND $F8
-CC/F6F1: D0 CE        BNE $F6C1
+Local_CCF6F1:
+CC/F6F1: D0 CE        BNE Routine_CCF6C1
+Local_CCF6F3:
 CC/F6F3: 25 E8        AND $E8
 CC/F6F5: D8           CLD
 CC/F6F6: A0 25 08     LDY #$0825
+Local_CCF6F9:
 CC/F6F9: D8           CLD
 CC/F6FA: C0 25 E8     CPY #$E825
 CC/F6FD: D8           CLD
 CC/F6FE: A0 25 08     LDY #$0825
 CC/F701: D8           CLD
 CC/F702: C0 25 F8     CPY #$F825
-CC/F705: D0 A6        BNE $F6AD
+CC/F705: D0 A6        BNE Routine_CCF6AD
 CC/F707: 25 F8        AND $F8
-CC/F709: D0 C6        BNE $F6D1
+CC/F709: D0 C6        BNE Routine_CCF6D1
 CC/F70B: 25 F8        AND $F8
-CC/F70D: D0 A6        BNE $F6B5
+CC/F70D: D0 A6        BNE Routine_CCF6B5
 CC/F70F: 25 F8        AND $F8
-CC/F711: D0 C6        BNE $F6D9
+CC/F711: D0 C6        BNE Local_CCF6D9
 CC/F713: 25 F0        AND $F0
-CC/F715: F0 A4        BEQ $F6BB
+Local_CCF715:
+CC/F715: F0 A4        BEQ Routine_CCF6BB
 CC/F717: 25 EC        AND $EC
 CC/F719: EC C4 25     CPX $25C4
-CC/F71C: F0 F0        BEQ $F70E
+CC/F71C: F0 F0        BEQ Routine_CCF70E
 CC/F71E: A4 25        LDY $25
 CC/F720: EC EC C4     CPX $C4EC
 CC/F723: 25 F8        AND $F8
-CC/F725: D0 A8        BNE $F6CF
+CC/F725: D0 A8        BNE Routine_CCF6CF
 CC/F727: 27 F8        AND [$F8]
-CC/F729: D0 C8        BNE $F6F3
+CC/F729: D0 C8        BNE Local_CCF6F3
 CC/F72B: 27 F8        AND [$F8]
-CC/F72D: D0 A8        BNE $F6D7
+CC/F72D: D0 A8        BNE Routine_CCF6D7
 CC/F72F: 27 F8        AND [$F8]
-CC/F731: D0 C8        BNE $F6FB
+CC/F731: D0 C8        BNE Routine_CCF6FB
 CC/F733: 27 F8        AND [$F8]
 CC/F735: E0 AC 27     CPX #$27AC
 CC/F738: F8           SED
@@ -431,13 +439,13 @@ CC/F73D: E0 AC 27     CPX #$27AC
 CC/F740: F8           SED
 CC/F741: E0 CC 27     CPX #$27CC
 CC/F744: F8           SED
-CC/F745: D0 AA        BNE $F6F1
+CC/F745: D0 AA        BNE Local_CCF6F1
 CC/F747: 27 F8        AND [$F8]
-CC/F749: D0 CA        BNE $F715
+CC/F749: D0 CA        BNE Local_CCF715
 CC/F74B: 27 F8        AND [$F8]
-CC/F74D: D0 AA        BNE $F6F9
+CC/F74D: D0 AA        BNE Local_CCF6F9
 CC/F74F: 27 F8        AND [$F8]
-CC/F751: D0 CA        BNE $F71D
+CC/F751: D0 CA        BNE Routine_CCF71D
 CC/F753: 27 00        AND [$00]
 CC/F755: 00 00        BRK $00
 CC/F757: 00 00        BRK $00
@@ -457,10 +465,10 @@ CC/F771: 00 01        BRK $01
 CC/F773: 02 01        COP $01
 CC/F775: 00 FF        BRK $FF
 CC/F777: FE FF 00     INC $00FF,X
-CC/F77A: 80 7F        BRA $F7FB
+CC/F77A: 80 7F        BRA Routine_CCF7FB
 CC/F77C: 25 56        AND $56
 CC/F77E: 04 00        TSB $00
-CC/F780: 80 81        BRA $F703
+CC/F780: 80 81        BRA Routine_CCF703
 CC/F782: 08           PHP
 CC/F783: 01 80        ORA ($80,X)
 CC/F785: 02 00        COP $00

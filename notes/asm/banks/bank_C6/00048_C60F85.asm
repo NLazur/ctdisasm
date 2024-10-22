@@ -1,19 +1,20 @@
 ; Bank: C6 | Start Address: 0F85
 Routine_C60F85:
-C6/0F85: F0 4F        BEQ $0FD6
+C6/0F85: F0 4F        BEQ Local_C60FD6
 C6/0F87: AC 73 A6     LDY $A673
 C6/0F8A: 79 FC 70     ADC $70FC,Y
 C6/0F8D: C0 20 C0     CPY #$C020
-C6/0F90: 80 F0        BRA $0F82
+C6/0F90: 80 F0        BRA Routine_C60F82
 C6/0F92: 00 F0        BRK $F0
 C6/0F94: 0D 71 00     ORA $0071
 C6/0F97: E0 F0 00     CPX #$00F0
 C6/0F9A: F8           SED
-C6/0F9B: 30 C8        BMI $0F65
+C6/0F9B: 30 C8        BMI Routine_C60F65
 C6/0F9D: 8E F0 01     STX $01F0
-C6/0FA0: F0 01        BEQ $0FA3
-C6/0FA2: F0 01        BEQ $0FA5
-C6/0FA4: F0 00        BEQ $0FA6
+C6/0FA0: F0 01        BEQ Routine_C60FA3
+C6/0FA2: F0 01        BEQ Routine_C60FA5
+C6/0FA4: F0 00        BEQ Local_C60FA6
+Local_C60FA6:
 C6/0FA6: 00 00        BRK $00
 C6/0FA8: 0E 07 04     ASL $0407
 C6/0FAB: 1F 30 4F 41  ORA $414F30,X
@@ -21,7 +22,7 @@ C6/0FAF: D9 81 0F     CMP $0F81,Y
 C6/0FB2: 1B           TCS
 C6/0FB3: 05 7E        ORA $7E
 C6/0FB5: 03 28        ORA $28,S
-C6/0FB7: 20 03 00     JSR $0003
+C6/0FB7: 20 03 00     JSR Routine_C60003
 C6/0FBA: 03 03        ORA $03,S
 C6/0FBC: 78           SEI
 C6/0FBD: 7B           TDC
@@ -31,13 +32,15 @@ C6/0FC4: BD F1 30     LDA $30F1,X
 C6/0FC7: 00 00        BRK $00
 C6/0FC9: 78           SEI
 C6/0FCA: 7B           TDC
-C6/0FCB: 30 00        BMI $0FCD
+C6/0FCB: 30 00        BMI Local_C60FCD
+Local_C60FCD:
 C6/0FCD: FF 30 FF 8C  SBC $8CFF30,X
 C6/0FD1: 73 15        ADC ($15,S),Y
 C6/0FD3: 6E 70 00     ROR $0070
+Local_C60FD6:
 C6/0FD6: 49 FE 15     EOR #$15FE
 C6/0FD9: F6 8D        INC $8D,X
-C6/0FDB: F0 AF        BEQ $0F8C
+C6/0FDB: F0 AF        BEQ Routine_C60F8C
 C6/0FDD: F4 00 3F     PEA $3F00
 C6/0FE0: FE 3F DF     INC $DF3F,X
 C6/0FE3: FF 0F 70 09  SBC $09700F,X
@@ -46,7 +49,7 @@ C6/0FE9: 0F FC 00 01  ORA $0100FC
 C6/0FED: 02 01        COP $01
 C6/0FEF: C3 0B        CMP $0B,S
 C6/0FF1: 00 D9        BRK $D9
-C6/0FF3: 30 F0        BMI $0FE5
+C6/0FF3: 30 F0        BMI Routine_C60FE5
 C6/0FF5: 94 6D        STY $6D,X
 C6/0FF7: 71 D9        ADC ($D9),Y
 C6/0FF9: 6A           ROR
@@ -56,7 +59,7 @@ C6/0FFF: CD 5F D8     CMP $D85F
 C6/1002: 0F 00 95 FE  ORA $FE9500
 C6/1006: 9B           TXY
 C6/1007: F5 0B        SBC $0B,X
-C6/1009: F0 0F        BEQ $101A
+C6/1009: F0 0F        BEQ Local_C6101A
 C6/100B: E0 00 1F     CPX #$1F00
 C6/100E: E1 1F        SBC ($1F,X)
 C6/1010: D2 3F        CMP ($3F)
@@ -65,6 +68,7 @@ C6/1014: 8A           TXA
 C6/1015: 00 7A        BRK $7A
 C6/1017: 77 07        ADC [$07],Y
 C6/1019: 0A           ASL
+Local_C6101A:
 C6/101A: C1 C1        CMP ($C1,X)
 C6/101C: C3 A3        CMP $A3,S
 C6/101E: 00 E6        BRK $E6
@@ -94,9 +98,10 @@ C6/1052: 86 42        STX $42
 C6/1054: 00 BD        BRK $BD
 C6/1056: FF 00 FB 04  SBC $04FB00,X
 C6/105A: FF 00 EF 04  SBC $04EF00,X
-C6/105E: 10 FF        BPL $105F
+C6/105E: 10 FF        BPL Routine_C6105F
 C6/1060: 16 22        ASL $22,X
-C6/1062: 80 00        BRA $1064
-C6/1064: 80 70        BRA $10D6
+C6/1062: 80 00        BRA Local_C61064
+Local_C61064:
+C6/1064: 80 70        BRA Routine_C610D6
 C6/1066: 08           PHP
 C6/1067: 40           RTI

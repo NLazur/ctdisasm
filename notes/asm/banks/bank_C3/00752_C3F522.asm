@@ -11,7 +11,7 @@ C3/F530: E8           INX
 C3/F531: 2C 40 05     BIT $0540
 C3/F534: F8           SED
 C3/F535: D9 00 01     CMP $0100,Y
-C3/F538: F0 D8        BEQ $F512
+C3/F538: F0 D8        BEQ Routine_C3F512
 C3/F53A: 0E 00 FF     ASL $FF00
 C3/F53D: D8           CLD
 C3/F53E: 0E 40 F0     ASL $F040
@@ -21,7 +21,7 @@ C3/F545: E8           INX
 C3/F546: 2E 40 05     ROL $0540
 C3/F549: F8           SED
 C3/F54A: D9 20 01     CMP $0120,Y
-C3/F54D: F0 D8        BEQ $F527
+C3/F54D: F0 D8        BEQ Routine_C3F527
 C3/F54F: 0E 00 FF     ASL $FF00
 C3/F552: D8           CLD
 C3/F553: 0E 40 F0     ASL $F040
@@ -31,7 +31,7 @@ C3/F55A: E8           INX
 C3/F55B: 2E 40 05     ROL $0540
 C3/F55E: F8           SED
 C3/F55F: D9 40 01     CMP $0140,Y
-C3/F562: F0 D8        BEQ $F53C
+C3/F562: F0 D8        BEQ Routine_C3F53C
 C3/F564: 0E 00 FF     ASL $FF00
 C3/F567: D8           CLD
 C3/F568: 0E 40 F0     ASL $F040

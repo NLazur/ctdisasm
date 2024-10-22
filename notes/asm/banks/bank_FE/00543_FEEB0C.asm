@@ -9,11 +9,11 @@ FE/EB18: 0E 10 00     ASL $0010
 FE/EB1B: 91 10        STA ($10),Y
 FE/EB1D: 91 90        STA ($90),Y
 FE/EB1F: 11 81        ORA ($81),Y
-FE/EB21: 10 81        BPL $EAA4
+FE/EB21: 10 81        BPL Routine_FEEAA4
 FE/EB23: FE 10 FB     INC $FB10,X
 FE/EB26: F2 01        SBC ($01)
-FE/EB28: F0 01        BEQ $EB2B
-FE/EB2A: F0 01        BEQ $EB2D
+FE/EB28: F0 01        BEQ Routine_FEEB2B
+FE/EB2A: F0 01        BEQ Routine_FEEB2D
 FE/EB2C: E0 47        CPX #$47
 FE/EB2E: 0B           PHD
 FE/EB2F: D2 D7        CMP ($D7)
@@ -21,17 +21,17 @@ FE/EB31: 05 A0        ORA $A0
 FE/EB33: 73 F7        ADC ($F7,S),Y
 FE/EB35: 01 73        ORA ($73,X)
 FE/EB37: 02 81        COP $81
-FE/EB39: 80 7E        BRA $EBB9
-FE/EB3B: 20 74 F0     JSR $F074
+FE/EB39: 80 7E        BRA Routine_FEEBB9
+FE/EB3B: 20 74 F0     JSR Routine_FEF074
 FE/EB3E: 00 08        BRK $08
 FE/EB40: 58           CLI
 FE/EB41: 4A           LSR
 FE/EB42: 1A           INC
-FE/EB43: F0 07        BEQ $EB4C
+FE/EB43: F0 07        BEQ Routine_FEEB4C
 FE/EB45: 03 6F        ORA $6F,S
 FE/EB47: 2A           ROL
 FE/EB48: D4 BC        PEI $BC
-FE/EB4A: 5C 0A 78 03  JMP $03780A
+FE/EB4A: 5C 0A 78 03  JMP Routine_03780A
 FE/EB4E: 00 18        BRK $18
 FE/EB50: 0A           ASL
 FE/EB51: 3C 7C FC     BIT $FC7C,X
@@ -43,7 +43,7 @@ FE/EB5B: 2B           PLD
 FE/EB5C: 2A           ROL
 FE/EB5D: 0E 0B 60     ASL $600B
 FE/EB60: E0 78        CPX #$78
-FE/EB62: 10 20        BPL $EB84
+FE/EB62: 10 20        BPL Routine_FEEB84
 FE/EB64: 85 00        STA $00
 FE/EB66: 38           SEC
 FE/EB67: 07 24        ORA [$24]
@@ -55,16 +55,17 @@ FE/EB70: 57 28        EOR [$28],Y
 FE/EB72: 08           PHP
 FE/EB73: 6C 00 00     JMP ($0000)
 FE/EB76: 18           CLC
+Local_FEEB77:
 FE/EB77: E7 00        SBC [$00]
 FE/EB79: 18           CLC
 FE/EB7A: 38           SEC
 FE/EB7B: 28           PLP
 FE/EB7C: 08           PHP
-FE/EB7D: 80 44        BRA $EBC3
+FE/EB7D: 80 44        BRA Routine_FEEBC3
 FE/EB7F: 81 42        STA ($42,X)
-FE/EB81: F0 07        BEQ $EB8A
+FE/EB81: F0 07        BEQ Routine_FEEB8A
 FE/EB83: 11 11        ORA ($11),Y
-FE/EB85: 80 F0        BRA $EB77
+FE/EB85: 80 F0        BRA Local_FEEB77
 FE/EB87: 07 0C        ORA [$0C]
 FE/EB89: A0 0C        LDY #$0C
 FE/EB8B: 08           PHP
@@ -74,13 +75,13 @@ FE/EB91: 11 00        ORA ($00),Y
 FE/EB93: 28           PLP
 FE/EB94: FE 0C 00     INC $000C,X
 FE/EB97: 18           CLC
-FE/EB98: 90 F0        BCC $EB8A
+FE/EB98: 90 F0        BCC Routine_FEEB8A
 FE/EB9A: 81 D1        STA ($D1,X)
 FE/EB9C: F8           SED
 FE/EB9D: 16 6F        ASL $6F,X
 FE/EB9F: 4F 2F F4 87  EOR $87F42F
 FE/EBA3: 2F D8 42 40  AND $4042D8
-FE/EBA7: 80 01        BRA $EBAA
+FE/EBA7: 80 01        BRA Routine_FEEBAA
 FE/EBA9: 00 BA        BRK $BA
 FE/EBAB: 33 20        AND ($20,S),Y
 FE/EBAD: F2 0E        SBC ($0E)
@@ -103,8 +104,8 @@ FE/EBD7: A0 C4        LDY #$C4
 FE/EBD9: 3E 00 01     ROL $0100,X
 FE/EBDC: 02 00        COP $00
 FE/EBDE: 58           CLI
-FE/EBDF: F0 3E        BEQ $EC1F
-FE/EBE1: 80 C7        BRA $EBAA
+FE/EBDF: F0 3E        BEQ Routine_FEEC1F
+FE/EBE1: 80 C7        BRA Routine_FEEBAA
 FE/EBE3: 02 10        COP $10
 FE/EBE5: 01 F0        ORA ($F0,X)
 FE/EBE7: 34 6D        BIT $6D,X
@@ -119,8 +120,8 @@ FE/EBF7: 4A           LSR
 FE/EBF8: 18           CLC
 FE/EBF9: 1A           INC
 FE/EBFA: F3 01        SBC ($01,S),Y
-FE/EBFC: F0 01        BEQ $EBFF
-FE/EBFE: F0 5A        BEQ $EC5A
+FE/EBFC: F0 01        BEQ Routine_FEEBFF
+FE/EBFE: F0 5A        BEQ Local_FEEC5A
 FE/EC00: 1A           INC
 FE/EC01: 6F DE C0 FE  ADC $FEC0DE
 FE/EC05: 77 72        ADC [$72],Y
@@ -129,7 +130,7 @@ FE/EC09: 17 00        ORA [$00],Y
 FE/EC0B: 0E 06 82     ASL $8206
 FE/EC0E: 39 10 F3     AND $F310,Y
 FE/EC11: FE 17 10     INC $1017,X
-FE/EC14: 10 01        BPL $EC17
+FE/EC14: 10 01        BPL Routine_FEEC17
 FE/EC16: 00 F7        BRK $F7
 FE/EC18: 05 03        ORA $03
 FE/EC1A: 18           CLC
@@ -142,7 +143,7 @@ FE/EC28: 01 F0        ORA ($F0,X)
 FE/EC2A: 07 80        ORA [$80]
 FE/EC2C: 18           CLC
 FE/EC2D: 25 01        AND $01
-FE/EC2F: F0 FF        BEQ $EC30
+FE/EC2F: F0 FF        BEQ Routine_FEEC30
 FE/EC31: 1F 73 FE 07  ORA $07FE73,X
 FE/EC35: 02 00        COP $00
 FE/EC37: 7D 1E 7F     ADC $7F1E,X
@@ -151,9 +152,9 @@ FE/EC3D: 53 F2        EOR ($F2,S),Y
 FE/EC3F: 03 F2        ORA $F2,S
 FE/EC41: FF 01 F0 F7  SBC $F7F001,X
 FE/EC45: A1 42        LDA ($42,X)
-FE/EC47: F0 26        BEQ $EC6F
-FE/EC49: F0 01        BEQ $EC4C
-FE/EC4B: F0 46        BEQ $EC93
+FE/EC47: F0 26        BEQ Routine_FEEC6F
+FE/EC49: F0 01        BEQ Routine_FEEC4C
+FE/EC4B: F0 46        BEQ Routine_FEEC93
 FE/EC4D: 79 77 22     ADC $2277,Y
 FE/EC50: 8A           TXA
 FE/EC51: 72 1F        ADC ($1F)
@@ -161,8 +162,9 @@ FE/EC53: B8           CLV
 FE/EC54: 1C A8 70     TRB $70A8
 FE/EC57: DA           PHX
 FE/EC58: 02 34        COP $34
+Local_FEEC5A:
 FE/EC5A: F2 47        SBC ($47)
-FE/EC5C: 80 0B        BRA $EC69
+FE/EC5C: 80 0B        BRA Routine_FEEC69
 FE/EC5E: 00 2E        BRK $2E
 FE/EC60: 58           CLI
 FE/EC61: 0D 01 05     ORA $0501
@@ -174,10 +176,10 @@ FE/EC70: 3E D0 1C     ROL $1CD0,X
 FE/EC73: 03 40        ORA $40,S
 FE/EC75: 28           PLP
 FE/EC76: 8A           TXA
-FE/EC77: 30 66        BMI $ECDF
+FE/EC77: 30 66        BMI Routine_FEECDF
 FE/EC79: 0B           PHD
 FE/EC7A: 3B           TSC
-FE/EC7B: 10 90        BPL $EC0D
+FE/EC7B: 10 90        BPL Routine_FEEC0D
 FE/EC7D: 72 AC        ADC ($AC)
 FE/EC7F: 01 C8        ORA ($C8,X)
 FE/EC81: 1B           TCS

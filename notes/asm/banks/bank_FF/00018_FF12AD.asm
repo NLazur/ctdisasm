@@ -4,9 +4,9 @@ FF/12AD: 9F 20 DF 00  STA $00DF20,X
 FF/12B1: 00 00        BRK $00
 FF/12B3: 00 00        BRK $00
 FF/12B5: 00 80        BRK $80
-FF/12B7: 80 80        BRA $1239
-FF/12B9: 80 A0        BRA $125B
-FF/12BB: 80 60        BRA $131D
+FF/12B7: 80 80        BRA Routine_FF1239
+FF/12B9: 80 A0        BRA Routine_FF125B
+FF/12BB: 80 60        BRA Local_FF131D
 FF/12BD: C0 00        CPY #$00
 FF/12BF: E0 00        CPX #$00
 FF/12C1: FF 00 FF 00  SBC $00FF00,X
@@ -49,13 +49,14 @@ FF/1315: 3B           TSC
 FF/1316: 2C 3B 5E     BIT $5E3B
 FF/1319: 71 DF        ADC ($DF),Y
 FF/131B: 31 B9        AND ($B9),Y
+Local_FF131D:
 FF/131D: 63 F3        ADC $F3,S
 FF/131F: C7 C6        CMP [$C6]
 FF/1321: AE E0 B7     LDX $B7E0
 FF/1324: E2 39        SEP #$39
 FF/1326: 81 FA        STA ($FA,X)
 FF/1328: 29 5D        AND #$5D
-FF/132A: 30 6D        BMI $1399
+FF/132A: 30 6D        BMI Routine_FF1399
 FF/132C: 18           CLC
 FF/132D: FE 2C 3F     INC $3F2C,X
 FF/1330: 59 FF 4F     EOR $4FFF,Y

@@ -4,7 +4,7 @@ D1/8615: 1F 9D 17 83  ORA $83179D,X
 D1/8619: 0F A6 00 B1  ORA $B100A6
 D1/861D: 00 10        BRK $10
 D1/861F: B1 01        LDA ($01),Y
-D1/8621: 10 88        BPL $85AB
+D1/8621: 10 88        BPL Routine_D185AB
 D1/8623: 00 C6        BRK $C6
 D1/8625: 00 02        BRK $02
 D1/8627: 00 07        BRK $07
@@ -19,7 +19,7 @@ D1/8637: 03 A5        ORA $A5,S
 D1/8639: 00 7F        BRK $7F
 D1/863B: A6 01        LDX $01
 D1/863D: B1 00        LDA ($00),Y
-D1/863F: 10 B1        BPL $85F2
+D1/863F: 10 B1        BPL Routine_D185F2
 D1/8641: 01 10        ORA ($10,X)
 D1/8643: 88           DEY
 D1/8644: 00 C6        BRK $C6

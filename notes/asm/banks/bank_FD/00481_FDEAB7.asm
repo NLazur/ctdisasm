@@ -1,9 +1,10 @@
 ; Bank: FD | Start Address: EAB7
 Routine_FDEAB7:
 FD/EAB7: A6 08        LDX $08
+Local_FDEAB9:
 FD/EAB9: BF B3 74 7F  LDA $7F74B3,X
 FD/EABD: 9F 00 00 7F  STA $7F0000,X
 FD/EAC1: E8           INX
 FD/EAC2: E0 00 02     CPX #$0200
-FD/EAC5: D0 F2        BNE $EAB9
+FD/EAC5: D0 F2        BNE Local_FDEAB9
 FD/EAC7: 60           RTS

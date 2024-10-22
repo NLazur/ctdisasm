@@ -8,5 +8,5 @@ CF/91D8: 48           PHA
 CF/91D9: 2B           PLD
 CF/91DA: 4A           LSR
 CF/91DB: 2B           PLD
-CF/91DC: 4C 2B 4C     JMP $4C2B
+CF/91DC: 4C 2B 4C     JMP Routine_CF4C2B
 CF/91DF: 6B           RTL

@@ -9,27 +9,27 @@ CD/217E: 85 21        STA $21
 CD/2180: BD D4 CA     LDA $CAD4,X
 CD/2183: 85 47        STA $47
 CD/2185: BD EA CA     LDA $CAEA,X
-CD/2188: 20 1B 21     JSR $211B
+CD/2188: 20 1B 21     JSR Routine_CD211B
 CD/218B: 85 12        STA $12
 CD/218D: BD EE CA     LDA $CAEE,X
-CD/2190: 20 1B 21     JSR $211B
+CD/2190: 20 1B 21     JSR Routine_CD211B
 CD/2193: 85 14        STA $14
 CD/2195: BD F2 CA     LDA $CAF2,X
-CD/2198: 20 1B 21     JSR $211B
+CD/2198: 20 1B 21     JSR Routine_CD211B
 CD/219B: 85 16        STA $16
 CD/219D: BD D6 CA     LDA $CAD6,X
 CD/21A0: 85 47        STA $47
 CD/21A2: BD EC CA     LDA $CAEC,X
-CD/21A5: 20 1B 21     JSR $211B
+CD/21A5: 20 1B 21     JSR Routine_CD211B
 CD/21A8: 85 13        STA $13
 CD/21AA: BD F0 CA     LDA $CAF0,X
-CD/21AD: 20 1B 21     JSR $211B
+CD/21AD: 20 1B 21     JSR Routine_CD211B
 CD/21B0: 85 15        STA $15
 CD/21B2: BD F4 CA     LDA $CAF4,X
-CD/21B5: 20 1B 21     JSR $211B
+CD/21B5: 20 1B 21     JSR Routine_CD211B
 CD/21B8: 85 17        STA $17
 CD/21BA: 9C 20 00     STZ $0020
-CD/21BD: 4C 7C 36     JMP $367C
+CD/21BD: 4C 7C 36     JMP Routine_CD367C
 CD/21C0: A7 40        LDA [$40]
 CD/21C2: AA           TAX
 CD/21C3: A9 FF        LDA #$FF
@@ -37,28 +37,32 @@ CD/21C5: 9D FC CA     STA $CAFC,X
 CD/21C8: BD EA CA     LDA $CAEA,X
 CD/21CB: 38           SEC
 CD/21CC: FD EE CA     SBC $CAEE,X
-CD/21CF: B0 09        BCS $21DA
+CD/21CF: B0 09        BCS Local_CD21DA
 CD/21D1: 49 FF        EOR #$FF
 CD/21D3: 1A           INC
 CD/21D4: 4A           LSR
 CD/21D5: 49 FF        EOR #$FF
 CD/21D7: 1A           INC
-CD/21D8: 80 01        BRA $21DB
+CD/21D8: 80 01        BRA Local_CD21DB
+Local_CD21DA:
 CD/21DA: 4A           LSR
+Local_CD21DB:
 CD/21DB: 18           CLC
 CD/21DC: 7D EE CA     ADC $CAEE,X
 CD/21DF: 85 12        STA $12
 CD/21E1: BD EC CA     LDA $CAEC,X
 CD/21E4: 38           SEC
 CD/21E5: FD F0 CA     SBC $CAF0,X
-CD/21E8: B0 09        BCS $21F3
+CD/21E8: B0 09        BCS Local_CD21F3
 CD/21EA: 49 FF        EOR #$FF
 CD/21EC: 1A           INC
 CD/21ED: 4A           LSR
 CD/21EE: 49 FF        EOR #$FF
 CD/21F0: 1A           INC
-CD/21F1: 80 01        BRA $21F4
+CD/21F1: 80 01        BRA Local_CD21F4
+Local_CD21F3:
 CD/21F3: 4A           LSR
+Local_CD21F4:
 CD/21F4: 18           CLC
 CD/21F5: 7D F0 CA     ADC $CAF0,X
 CD/21F8: 85 13        STA $13
@@ -69,28 +73,32 @@ CD/2202: 85 15        STA $15
 CD/2204: BD EA CA     LDA $CAEA,X
 CD/2207: 38           SEC
 CD/2208: FD F2 CA     SBC $CAF2,X
-CD/220B: B0 09        BCS $2216
+CD/220B: B0 09        BCS Local_CD2216
 CD/220D: 49 FF        EOR #$FF
 CD/220F: 1A           INC
 CD/2210: 4A           LSR
 CD/2211: 49 FF        EOR #$FF
 CD/2213: 1A           INC
-CD/2214: 80 01        BRA $2217
+CD/2214: 80 01        BRA Local_CD2217
+Local_CD2216:
 CD/2216: 4A           LSR
+Local_CD2217:
 CD/2217: 18           CLC
 CD/2218: 7D F2 CA     ADC $CAF2,X
 CD/221B: 85 16        STA $16
 CD/221D: BD EC CA     LDA $CAEC,X
 CD/2220: 38           SEC
 CD/2221: FD F4 CA     SBC $CAF4,X
-CD/2224: B0 09        BCS $222F
+CD/2224: B0 09        BCS Local_CD222F
 CD/2226: 49 FF        EOR #$FF
 CD/2228: 1A           INC
 CD/2229: 4A           LSR
 CD/222A: 49 FF        EOR #$FF
 CD/222C: 1A           INC
-CD/222D: 80 01        BRA $2230
+CD/222D: 80 01        BRA Local_CD2230
+Local_CD222F:
 CD/222F: 4A           LSR
+Local_CD2230:
 CD/2230: 18           CLC
 CD/2231: 7D F4 CA     ADC $CAF4,X
 CD/2234: 85 17        STA $17
@@ -106,38 +114,44 @@ CD/2244: A5 12        LDA $12
 CD/2246: 38           SEC
 CD/2247: E5 16        SBC $16
 CD/2249: C9 FC        CMP #$FC
-CD/224B: B0 04        BCS $2251
+CD/224B: B0 04        BCS Local_CD2251
 CD/224D: C9 04        CMP #$04
-CD/224F: B0 07        BCS $2258
+CD/224F: B0 07        BCS Local_CD2258
+Local_CD2251:
 CD/2251: A5 12        LDA $12
 CD/2253: 18           CLC
 CD/2254: 69 04        ADC #$04
 CD/2256: 85 12        STA $12
+Local_CD2258:
 CD/2258: A5 13        LDA $13
 CD/225A: 38           SEC
 CD/225B: E5 17        SBC $17
 CD/225D: C9 FC        CMP #$FC
-CD/225F: B0 04        BCS $2265
+CD/225F: B0 04        BCS Local_CD2265
 CD/2261: C9 04        CMP #$04
-CD/2263: B0 07        BCS $226C
+CD/2263: B0 07        BCS Local_CD226C
+Local_CD2265:
 CD/2265: A5 13        LDA $13
 CD/2267: 18           CLC
 CD/2268: 69 04        ADC #$04
 CD/226A: 85 13        STA $13
+Local_CD226C:
 CD/226C: A5 12        LDA $12
 CD/226E: C5 14        CMP $14
-CD/2270: 90 08        BCC $227A
+CD/2270: 90 08        BCC Local_CD227A
 CD/2272: A6 12        LDX $12
 CD/2274: A4 14        LDY $14
 CD/2276: 84 12        STY $12
 CD/2278: 86 14        STX $14
+Local_CD227A:
 CD/227A: A5 16        LDA $16
 CD/227C: C5 18        CMP $18
-CD/227E: 90 08        BCC $2288
+CD/227E: 90 08        BCC Local_CD2288
 CD/2280: A6 16        LDX $16
 CD/2282: A4 18        LDY $18
 CD/2284: 84 16        STY $16
 CD/2286: 86 18        STX $18
+Local_CD2288:
 CD/2288: A5 15        LDA $15
 CD/228A: 85 0B        STA $0B
 CD/228C: A5 13        LDA $13
@@ -146,7 +160,7 @@ CD/2290: A5 14        LDA $14
 CD/2292: 38           SEC
 CD/2293: E5 12        SBC $12
 CD/2295: 85 0D        STA $0D
-CD/2297: 20 E5 38     JSR $38E5
+CD/2297: 20 E5 38     JSR Routine_CD38E5
 CD/229A: 84 45        STY $45
 CD/229C: A5 19        LDA $19
 CD/229E: 85 0B        STA $0B
@@ -156,30 +170,32 @@ CD/22A4: A5 18        LDA $18
 CD/22A6: 38           SEC
 CD/22A7: E5 16        SBC $16
 CD/22A9: 85 0D        STA $0D
-CD/22AB: 20 E5 38     JSR $38E5
+CD/22AB: 20 E5 38     JSR Routine_CD38E5
 CD/22AE: 84 47        STY $47
 CD/22B0: A5 12        LDA $12
 CD/22B2: 85 23        STA $23
 CD/22B4: C2 20        REP #$20
 CD/22B6: A5 45        LDA $45
-CD/22B8: 10 18        BPL $22D2
+CD/22B8: 10 18        BPL Local_CD22D2
 CD/22BA: 49 FF FF     EOR #$FFFF
 CD/22BD: 1A           INC
 CD/22BE: 85 25        STA $25
 CD/22C0: E2 20        SEP #$20
 CD/22C2: 7B           TDC
-CD/22C3: 20 D4 3B     JSR $3BD4
+CD/22C3: 20 D4 3B     JSR Routine_CD3BD4
 CD/22C6: C2 20        REP #$20
 CD/22C8: A5 28        LDA $28
 CD/22CA: 49 FF FF     EOR #$FFFF
 CD/22CD: 1A           INC
 CD/22CE: 85 28        STA $28
-CD/22D0: 80 0A        BRA $22DC
+CD/22D0: 80 0A        BRA Local_CD22DC
+Local_CD22D2:
 CD/22D2: 85 25        STA $25
 CD/22D4: E2 20        SEP #$20
 CD/22D6: 7B           TDC
-CD/22D7: 20 D4 3B     JSR $3BD4
+CD/22D7: 20 D4 3B     JSR Routine_CD3BD4
 CD/22DA: C2 20        REP #$20
+Local_CD22DC:
 CD/22DC: A5 13        LDA $13
 CD/22DE: 29 FF 00     AND #$00FF
 CD/22E1: 38           SEC
@@ -191,24 +207,26 @@ CD/22E9: A5 16        LDA $16
 CD/22EB: 85 23        STA $23
 CD/22ED: C2 20        REP #$20
 CD/22EF: A5 47        LDA $47
-CD/22F1: 10 18        BPL $230B
+CD/22F1: 10 18        BPL Local_CD230B
 CD/22F3: 49 FF FF     EOR #$FFFF
 CD/22F6: 1A           INC
 CD/22F7: 85 25        STA $25
 CD/22F9: E2 20        SEP #$20
 CD/22FB: 7B           TDC
-CD/22FC: 20 D4 3B     JSR $3BD4
+CD/22FC: 20 D4 3B     JSR Routine_CD3BD4
 CD/22FF: C2 20        REP #$20
 CD/2301: A5 28        LDA $28
 CD/2303: 49 FF FF     EOR #$FFFF
 CD/2306: 1A           INC
 CD/2307: 85 28        STA $28
-CD/2309: 80 0A        BRA $2315
+CD/2309: 80 0A        BRA Local_CD2315
+Local_CD230B:
 CD/230B: 85 25        STA $25
 CD/230D: E2 20        SEP #$20
 CD/230F: 7B           TDC
-CD/2310: 20 D4 3B     JSR $3BD4
+CD/2310: 20 D4 3B     JSR Routine_CD3BD4
 CD/2313: C2 20        REP #$20
+Local_CD2315:
 CD/2315: A5 17        LDA $17
 CD/2317: 29 FF 00     AND #$00FF
 CD/231A: 38           SEC
@@ -217,37 +235,42 @@ CD/231D: 85 4B        STA $4B
 CD/231F: A5 4B        LDA $4B
 CD/2321: 38           SEC
 CD/2322: E5 49        SBC $49
-CD/2324: 10 17        BPL $233D
+CD/2324: 10 17        BPL Local_CD233D
 CD/2326: 49 FF FF     EOR #$FFFF
 CD/2329: 1A           INC
 CD/232A: 85 23        STA $23
 CD/232C: A5 45        LDA $45
 CD/232E: 38           SEC
 CD/232F: E5 47        SBC $47
-CD/2331: 10 06        BPL $2339
+CD/2331: 10 06        BPL Local_CD2339
 CD/2333: 49 FF FF     EOR #$FFFF
 CD/2336: 1A           INC
-CD/2337: 80 23        BRA $235C
+CD/2337: 80 23        BRA Local_CD235C
+Local_CD2339:
 CD/2339: 85 25        STA $25
-CD/233B: 80 0F        BRA $234C
+CD/233B: 80 0F        BRA Local_CD234C
+Local_CD233D:
 CD/233D: 85 23        STA $23
 CD/233F: A5 45        LDA $45
 CD/2341: 38           SEC
 CD/2342: E5 47        SBC $47
-CD/2344: 10 16        BPL $235C
+CD/2344: 10 16        BPL Local_CD235C
 CD/2346: 49 FF FF     EOR #$FFFF
 CD/2349: 1A           INC
 CD/234A: 85 25        STA $25
-CD/234C: 20 8D 23     JSR $238D
-CD/234F: 20 AB 3B     JSR $3BAB
+Local_CD234C:
+CD/234C: 20 8D 23     JSR Routine_CD238D
+CD/234F: 20 AB 3B     JSR Routine_CD3BAB
 CD/2352: A5 27        LDA $27
 CD/2354: 49 FF FF     EOR #$FFFF
 CD/2357: 1A           INC
 CD/2358: 85 27        STA $27
-CD/235A: 80 08        BRA $2364
+CD/235A: 80 08        BRA Local_CD2364
+Local_CD235C:
 CD/235C: 85 25        STA $25
-CD/235E: 20 8D 23     JSR $238D
-CD/2361: 20 AB 3B     JSR $3BAB
+CD/235E: 20 8D 23     JSR Routine_CD238D
+CD/2361: 20 AB 3B     JSR Routine_CD3BAB
+Local_CD2364:
 CD/2364: 7B           TDC
 CD/2365: E2 20        SEP #$20
 CD/2367: AB           PLB
@@ -259,7 +282,7 @@ CD/2370: DA           PHX
 CD/2371: 85 23        STA $23
 CD/2373: A6 45        LDX $45
 CD/2375: 86 25        STX $25
-CD/2377: 20 D4 3B     JSR $3BD4
+CD/2377: 20 D4 3B     JSR Routine_CD3BD4
 CD/237A: C2 20        REP #$20
 CD/237C: A5 28        LDA $28
 CD/237E: 18           CLC

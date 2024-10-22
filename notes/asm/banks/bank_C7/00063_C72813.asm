@@ -8,7 +8,7 @@ C7/2819: D5 A1        CMP $A1,X
 C7/281B: F3 3F        SBC ($3F,S),Y
 C7/281D: BD 06 E4     LDA $E406,X
 C7/2820: B5 D5        LDA $D5,X
-C7/2822: 20 F5 E4     JSR $E4F5
+C7/2822: 20 F5 E4     JSR Routine_C7E4F5
 C7/2825: B6 D5        LDX $D5,Y
 C7/2827: 21 F5        AND ($F5,X)
 C7/2829: F5 51        SBC $51,X
@@ -16,11 +16,11 @@ C7/282B: 01 F0        ORA ($F0,X)
 C7/282D: 33 C4        AND ($C4,S),Y
 C7/282F: A5 3F        LDA $3F
 C7/2831: A2 18 C8     LDX #$C818
-C7/2834: 10 B0        BPL $27E6
+C7/2834: 10 B0        BPL Routine_C727E6
 C7/2836: 04 8D        TSB $8D
 C7/2838: 00 2F        BRK $2F
 C7/283A: 04 F5        TSB $F5
-C7/283C: 10 01        BPL $283F
+C7/283C: 10 01        BPL Routine_C7283F
 C7/283E: FD F6 87     SBC $87F6,X
 C7/2841: 1D FD D0     ORA $D0FD,X
 C7/2844: 04 BA        TSB $BA
@@ -36,8 +36,8 @@ C7/285A: D5 00        CMP $00,X
 C7/285C: F3 DD        SBC ($DD,S),Y
 C7/285E: D5 01        CMP $01,X
 C7/2860: F3 F5        SBC ($F5,S),Y
-C7/2862: 70 01        BVS $2865
-C7/2864: F0 07        BEQ $286D
+C7/2862: 70 01        BVS Routine_C72865
+C7/2864: F0 07        BEQ Routine_C7286D
 C7/2866: C4 A5        CPY $A5
 C7/2868: 3F 60 19 E8  AND $E81960,X
 C7/286C: 00 D5        BRK $D5
@@ -51,7 +51,7 @@ C7/287B: F3 D5        SBC ($D5,S),Y
 C7/287D: C1 F3        CMP ($F3,X)
 C7/287F: D5 E0        CMP $E0,X
 C7/2881: F4 C8 10     PEA $10C8
-C7/2884: B0 1E        BCS $28A4
+C7/2884: B0 1E        BCS Routine_C728A4
 C7/2886: 09 91        ORA #$91
 C7/2888: 24 E4        BIT $E4
 C7/288A: 86 24        STX $24

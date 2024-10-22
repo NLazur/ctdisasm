@@ -35,6 +35,6 @@ C6/A839: C5 08        CMP $08
 C6/A83B: 33 40        AND ($40,S),Y
 C6/A83D: 11 B7        ORA ($B7),Y
 C6/A83F: B8           CLV
-C6/A840: 10 0D        BPL $A84F
+C6/A840: 10 0D        BPL Routine_C6A84F
 C6/A842: 09 1A D6     ORA #$D61A
 C6/A845: 60           RTS

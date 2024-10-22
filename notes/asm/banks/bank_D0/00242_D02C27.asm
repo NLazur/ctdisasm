@@ -2,7 +2,7 @@
 Routine_D02C27:
 D0/2C27: C0 13 1F     CPY #$1F13
 D0/2C2A: F4 FB CF     PEA $CFFB
-D0/2C2D: F0 26        BEQ $2C55
+D0/2C2D: F0 26        BEQ Local_D02C55
 D0/2C2F: 39 18 1F     AND $1F18,Y
 D0/2C32: 07 07        ORA [$07]
 D0/2C34: 00 00        BRK $00
@@ -11,7 +11,7 @@ D0/2C38: C8           INY
 D0/2C39: C8           INY
 D0/2C3A: 48           PHA
 D0/2C3B: C8           INY
-D0/2C3C: 4C CC 94     JMP $94CC
+D0/2C3C: 4C CC 94     JMP Routine_D094CC
 D0/2C3F: 9C 6A F6     STZ $F66A
 D0/2C42: 92 EE        STA ($EE)
 D0/2C44: 7C 7C 00     JMP ($007C,X)
@@ -24,21 +24,23 @@ D0/2C4D: 08           PHP
 D0/2C4E: 0C 0C 0C     TSB $0C0C
 D0/2C51: 0C 0A 0E     TSB $0E0A
 D0/2C54: 0A           ASL
+Local_D02C55:
 D0/2C55: 0E 0A 0E     ASL $0E0A
 D0/2C58: 27 3F        AND [$3F]
+Local_D02C5A:
 D0/2C5A: 12 1E        ORA ($1E)
 D0/2C5C: 09 0F 04     ORA #$040F
 D0/2C5F: 07 02        ORA [$02]
 D0/2C61: 03 01        ORA $01,S
 D0/2C63: 01 FC        ORA ($FC,X)
 D0/2C65: FC 43 7F     JSR ($7F43,X)
-D0/2C68: 90 F0        BCC $2C5A
+D0/2C68: 90 F0        BCC Local_D02C5A
 D0/2C6A: 78           SEI
 D0/2C6B: 78           SEI
 D0/2C6C: 1C 1C 80     TRB $801C
-D0/2C6F: 80 40        BRA $2CB1
+D0/2C6F: 80 40        BRA Routine_D02CB1
 D0/2C71: C0 20 E0     CPY #$E020
-D0/2C74: 90 F0        BCC $2C66
+D0/2C74: 90 F0        BCC Routine_D02C66
 D0/2C76: C8           INY
 D0/2C77: F8           SED
 D0/2C78: 01 01        ORA ($01,X)
@@ -47,7 +49,7 @@ D0/2C7C: 1C 1F 63     TRB $631F
 D0/2C7F: 7F 11 1F 0C  ADC $0C1F11,X
 D0/2C83: 0F 03 03 00  ORA $000303
 D0/2C87: 00 90        BRK $90
-D0/2C89: F0 20        BEQ $2CAB
+D0/2C89: F0 20        BEQ Routine_D02CAB
 D0/2C8B: E0 C0        CPX #$C0
 D0/2C8D: C0 00 00     CPY #$0000
 D0/2C90: E0 E0        CPX #$E0
@@ -61,5 +63,5 @@ D0/2C9E: 08           PHP
 D0/2C9F: 08           PHP
 D0/2CA0: 38           SEC
 D0/2CA1: 38           SEC
-D0/2CA2: D0 F0        BNE $2C94
+D0/2CA2: D0 F0        BNE Routine_D02C94
 D0/2CA4: 60           RTS

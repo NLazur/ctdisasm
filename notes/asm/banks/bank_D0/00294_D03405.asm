@@ -29,12 +29,13 @@ D0/343B: 00 00        BRK $00
 D0/343D: 00 C0        BRK $C0
 D0/343F: C0 E0 A0     CPY #$A0E0
 D0/3442: E0 20        CPX #$20
-D0/3444: 20 E0 20     JSR $20E0
+D0/3444: 20 E0 20     JSR Routine_D020E0
 D0/3447: E0 10        CPX #$10
-D0/3449: 10 00        BPL $344B
-D0/344B: 10 54        BPL $34A1
+D0/3449: 10 00        BPL Local_D0344B
+Local_D0344B:
+D0/344B: 10 54        BPL Routine_D034A1
 D0/344D: 6C 00 10     JMP ($1000)
-D0/3450: 10 10        BPL $3462
+D0/3450: 10 10        BPL Local_D03462
 D0/3452: 00 00        BRK $00
 D0/3454: 00 00        BRK $00
 D0/3456: 00 00        BRK $00
@@ -43,6 +44,7 @@ D0/3459: 1C 00 00     TRB $0000
 D0/345C: 00 00        BRK $00
 D0/345E: 00 00        BRK $00
 D0/3460: 01 01        ORA ($01,X)
+Local_D03462:
 D0/3462: 00 00        BRK $00
 D0/3464: 00 00        BRK $00
 D0/3466: 00 00        BRK $00
@@ -50,23 +52,24 @@ D0/3468: 00 00        BRK $00
 D0/346A: 00 00        BRK $00
 D0/346C: 02 40        COP $40
 D0/346E: 0C E0 1C     TSB $1CE0
-D0/3471: 20 70 48     JSR $4870
+D0/3471: 20 70 48     JSR Routine_D04870
 D0/3474: 62 50 00     PER $D034C7
 D0/3477: 62 0F 00     PER $D03489
 D0/347A: 00 00        BRK $00
 D0/347C: 02 00        COP $00
 D0/347E: 11 00        ORA ($00),Y
-D0/3480: 80 08        BRA $348A
+D0/3480: 80 08        BRA Local_D0348A
 D0/3482: C8           INY
 D0/3483: 04 D2        TSB $D2
 D0/3485: 0A           ASL
 D0/3486: E0 18        CPX #$18
 D0/3488: E6 1E        INC $1E
+Local_D0348A:
 D0/348A: 00 00        BRK $00
 D0/348C: 00 00        BRK $00
 D0/348E: C0 40 00     CPY #$0040
 D0/3491: C0 80 A0     CPY #$A080
-D0/3494: 10 10        BPL $34A6
+D0/3494: 10 10        BPL Local_D034A6
 D0/3496: 00 00        BRK $00
 D0/3498: 62 7E 72     PER $D0A719
 D0/349B: 7E 3E 3E     ROR $3E3E,X
@@ -74,6 +77,7 @@ D0/349E: 00 00        BRK $00
 D0/34A0: 00 00        BRK $00
 D0/34A2: 00 00        BRK $00
 D0/34A4: 00 00        BRK $00
+Local_D034A6:
 D0/34A6: 00 00        BRK $00
 D0/34A8: 00 00        BRK $00
 D0/34AA: 00 00        BRK $00
@@ -104,10 +108,11 @@ D0/34E2: 7C 7C 00     JMP ($007C,X)
 D0/34E5: 00 00        BRK $00
 D0/34E7: 00 00        BRK $00
 D0/34E9: 00 10        BRK $10
-D0/34EB: 10 00        BPL $34ED
-D0/34ED: 10 54        BPL $3543
+D0/34EB: 10 00        BPL Local_D034ED
+Local_D034ED:
+D0/34ED: 10 54        BPL Routine_D03543
 D0/34EF: 6C 00 10     JMP ($1000)
-D0/34F2: 10 10        BPL $3504
+D0/34F2: 10 10        BPL Local_D03504
 D0/34F4: 00 00        BRK $00
 D0/34F6: 00 00        BRK $00
 D0/34F8: 00 00        BRK $00
@@ -116,10 +121,11 @@ D0/34FC: 01 01        ORA ($01,X)
 D0/34FE: 00 01        BRK $01
 D0/3500: 02 02        COP $02
 D0/3502: 00 00        BRK $00
+Local_D03504:
 D0/3504: 00 00        BRK $00
 D0/3506: 00 00        BRK $00
 D0/3508: 02 64        COP $64
-D0/350A: 80 C4        BRA $34D0
+D0/350A: 80 C4        BRA Routine_D034D0
 D0/350C: 04 84        TSB $84
 D0/350E: 00 00        BRK $00
 D0/3510: 00 00        BRK $00
@@ -127,11 +133,12 @@ D0/3512: 00 00        BRK $00
 D0/3514: 00 00        BRK $00
 D0/3516: 00 00        BRK $00
 D0/3518: 88           DEY
-D0/3519: 4C 44 C4     JMP $C444
+D0/3519: 4C 44 C4     JMP Routine_D0C444
 D0/351C: 44 C4 00     MVP $C4,$00
-D0/351F: 80 80        BRA $34A1
-D0/3521: 80 80        BRA $34A3
-D0/3523: 80 00        BRA $3525
+D0/351F: 80 80        BRA Routine_D034A1
+D0/3521: 80 80        BRA Routine_D034A3
+D0/3523: 80 00        BRA Local_D03525
+Local_D03525:
 D0/3525: 00 00        BRK $00
 D0/3527: 00 00        BRK $00
 D0/3529: 00 00        BRK $00
@@ -177,7 +184,7 @@ D0/3579: 00 00        BRK $00
 D0/357B: 00 C0        BRK $C0
 D0/357D: C0 E0 A0     CPY #$A0E0
 D0/3580: E0 20        CPX #$20
-D0/3582: 20 E0 20     JSR $20E0
+D0/3582: 20 E0 20     JSR Routine_D020E0
 D0/3585: E0 E0        CPX #$E0
 D0/3587: E0 01        CPX #$01
 D0/3589: 02 00        COP $00
@@ -188,7 +195,8 @@ D0/3591: 00 00        BRK $00
 D0/3593: 00 00        BRK $00
 D0/3595: 00 00        BRK $00
 D0/3597: 00 00        BRK $00
-D0/3599: 80 00        BRA $359B
+D0/3599: 80 00        BRA Local_D0359B
+Local_D0359B:
 D0/359B: 00 00        BRK $00
 D0/359D: 00 00        BRK $00
 D0/359F: 00 00        BRK $00
@@ -209,8 +217,11 @@ D0/35BB: 00 00        BRK $00
 D0/35BD: 00 00        BRK $00
 D0/35BF: 00 00        BRK $00
 D0/35C1: 00 00        BRK $00
+Local_D035C3:
 D0/35C3: 04 00        TSB $00
+Local_D035C5:
 D0/35C5: 00 00        BRK $00
+Local_D035C7:
 D0/35C7: 00 00        BRK $00
 D0/35C9: 00 00        BRK $00
 D0/35CB: 00 01        BRK $01
@@ -219,11 +230,14 @@ D0/35CF: 02 08        COP $08
 D0/35D1: 0C 14 1C     TSB $1C14
 D0/35D4: 28           PLP
 D0/35D5: 38           SEC
-D0/35D6: 50 70        BVC $3648
+D0/35D6: 50 70        BVC Routine_D03648
 D0/35D8: FF 00 80 00  SBC $008000,X
-D0/35DC: 80 00        BRA $35DE
-D0/35DE: 80 00        BRA $35E0
-D0/35E0: 80 00        BRA $35E2
+D0/35DC: 80 00        BRA Local_D035DE
+Local_D035DE:
+D0/35DE: 80 00        BRA Local_D035E0
+Local_D035E0:
+D0/35E0: 80 00        BRA Local_D035E2
+Local_D035E2:
 D0/35E2: 8C 00 8C     STY $8C00
 D0/35E5: 00 80        BRK $80
 D0/35E7: 00 00        BRK $00
@@ -237,7 +251,8 @@ D0/35F4: 00 00        BRK $00
 D0/35F6: 00 00        BRK $00
 D0/35F8: A0 E0        LDY #$E0
 D0/35FA: C0 40 00     CPY #$0040
-D0/35FD: 80 00        BRA $35FF
+D0/35FD: 80 00        BRA Local_D035FF
+Local_D035FF:
 D0/35FF: 00 00        BRK $00
 D0/3601: 00 00        BRK $00
 D0/3603: 00 00        BRK $00
@@ -258,7 +273,7 @@ D0/361F: 00 38        BRK $38
 D0/3621: 38           SEC
 D0/3622: 3C 3C 76     BIT $763C,X
 D0/3625: 76 22        ROR $22,X
-D0/3627: 22 01 01 01  JSR $010101
+D0/3627: 22 01 01 01  JSR Routine_010101
 D0/362B: 01 01        ORA ($01,X)
 D0/362D: 01 00        ORA ($00,X)
 D0/362F: 01 02        ORA ($02,X)
@@ -270,11 +285,12 @@ D0/3639: 00 00        BRK $00
 D0/363B: 00 00        BRK $00
 D0/363D: 00 00        BRK $00
 D0/363F: 00 80        BRK $80
-D0/3641: 80 80        BRA $35C3
-D0/3643: 80 80        BRA $35C5
-D0/3645: 80 80        BRA $35C7
-D0/3647: 80 02        BRA $364B
+D0/3641: 80 80        BRA Local_D035C3
+D0/3643: 80 80        BRA Local_D035C5
+D0/3645: 80 80        BRA Local_D035C7
+D0/3647: 80 02        BRA Local_D0364B
 D0/3649: 02 04        COP $04
+Local_D0364B:
 D0/364B: 04 00        TSB $00
 D0/364D: 00 00        BRK $00
 D0/364F: 00 00        BRK $00

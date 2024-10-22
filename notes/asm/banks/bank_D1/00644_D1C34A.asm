@@ -24,8 +24,10 @@ D1/C370: D9 D8 CE     CMP $CED8,Y
 D1/C373: CA           DEX
 D1/C374: C6 CA        DEC $CA
 D1/C376: 01 00        ORA ($00,X)
-D1/C378: B0 00        BCS $C37A
-D1/C37A: 30 00        BMI $C37C
+D1/C378: B0 00        BCS Local_D1C37A
+Local_D1C37A:
+D1/C37A: 30 00        BMI Local_D1C37C
+Local_D1C37C:
 D1/C37C: 18           CLC
 D1/C37D: 00 1E        BRK $1E
 D1/C37F: 00 C6        BRK $C6
@@ -48,15 +50,17 @@ D1/C3A1: 58           CLI
 D1/C3A2: 0A           ASL
 D1/C3A3: 8B           PHB
 D1/C3A4: 61 60        ADC ($60,X)
-D1/C3A6: D0 48        BNE $C3F0
+D1/C3A6: D0 48        BNE Local_D1C3F0
 D1/C3A8: 09 88        ORA #$88
 D1/C3AA: 06 06        ASL $06
 D1/C3AC: 05 4D        ORA $4D
 D1/C3AE: 0E 0E 90     ASL $900E
 D1/C3B1: 44 C8 0D     MVP $C8,$0D
 D1/C3B4: 01 00        ORA ($00,X)
-D1/C3B6: 30 00        BMI $C3B8
-D1/C3B8: 30 00        BMI $C3BA
+D1/C3B6: 30 00        BMI Local_D1C3B8
+Local_D1C3B8:
+D1/C3B8: 30 00        BMI Local_D1C3BA
+Local_D1C3BA:
 D1/C3BA: 68           PLA
 D1/C3BB: 00 38        BRK $38
 D1/C3BD: 00 0C        BRK $0C
@@ -71,22 +75,26 @@ D1/C3CD: 00 00        BRK $00
 D1/C3CF: 00 00        BRK $00
 D1/C3D1: 00 00        BRK $00
 D1/C3D3: 00 00        BRK $00
+Local_D1C3D5:
 D1/C3D5: 2A           ROL
 D1/C3D6: 2B           PLD
 D1/C3D7: 32 33        AND ($33)
 D1/C3D9: 3E 3F 48     ROL $483F,X
 D1/C3DC: 4B           PHK
 D1/C3DD: 4A           LSR
-D1/C3DE: 10 5F        BPL $C43F
+D1/C3DE: 10 5F        BPL Local_D1C43F
 D1/C3E0: 5E 67 66     LSR $6667,X
 D1/C3E3: 0C BA BB     TSB $BBBA
 D1/C3E6: 08           PHP
 D1/C3E7: B8           CLV
 D1/C3E8: B9 88 09     LDA $0988,Y
 D1/C3EB: 4D 01 00     EOR $0001
-D1/C3EE: 30 00        BMI $C3F0
-D1/C3F0: 30 00        BMI $C3F2
-D1/C3F2: 30 00        BMI $C3F4
+D1/C3EE: 30 00        BMI Local_D1C3F0
+Local_D1C3F0:
+D1/C3F0: 30 00        BMI Local_D1C3F2
+Local_D1C3F2:
+D1/C3F2: 30 00        BMI Local_D1C3F4
+Local_D1C3F4:
 D1/C3F4: 38           SEC
 D1/C3F5: 00 18        BRK $18
 D1/C3F7: 00 06        BRK $06
@@ -117,7 +125,7 @@ D1/C427: 8A           TXA
 D1/C428: 01 00        ORA ($00,X)
 D1/C42A: 00 00        BRK $00
 D1/C42C: 00 00        BRK $00
-D1/C42E: 20 00 30     JSR $3000
+D1/C42E: 20 00 30     JSR Routine_D13000
 D1/C431: 00 18        BRK $18
 D1/C433: 00 08        BRK $08
 D1/C435: 00 00        BRK $00
@@ -125,13 +133,14 @@ D1/C437: 00 00        BRK $00
 D1/C439: 00 03        BRK $03
 D1/C43B: 00 01        BRK $01
 D1/C43D: 00 00        BRK $00
+Local_D1C43F:
 D1/C43F: 00 00        BRK $00
 D1/C441: 00 03        BRK $03
 D1/C443: 00 00        BRK $00
 D1/C445: 00 00        BRK $00
 D1/C447: 00 00        BRK $00
-D1/C449: 10 89        BPL $C3D4
-D1/C44B: D0 88        BNE $C3D5
+D1/C449: 10 89        BPL Routine_D1C3D4
+D1/C44B: D0 88        BNE Local_D1C3D5
 D1/C44D: 06 0E        ASL $0E
 D1/C44F: 88           DEY
 D1/C450: 06 0E        ASL $0E
@@ -143,5 +152,6 @@ D1/C458: 00 00        BRK $00
 D1/C45A: 00 00        BRK $00
 D1/C45C: 00 00        BRK $00
 D1/C45E: 00 01        BRK $01
-D1/C460: 80 00        BRA $C462
+D1/C460: 80 00        BRA Local_D1C462
+Local_D1C462:
 D1/C462: 40           RTI

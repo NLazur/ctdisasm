@@ -11,8 +11,8 @@ CD/CFE2: 1B           TCS
 CD/CFE3: 03 36        ORA $36,S
 CD/CFE5: A8           TAY
 CD/CFE6: FF 71 36 00  SBC $003671,X
-CD/CFEA: 90 F0        BCC $CFDC
-CD/CFEC: 90 F0        BCC $CFDE
+CD/CFEA: 90 F0        BCC Routine_CDCFDC
+CD/CFEC: 90 F0        BCC Routine_CDCFDE
 CD/CFEE: 07 D0        ORA [$D0]
 CD/CFF0: 06 D0        ASL $D0
 CD/CFF2: 42 D0        WDM $D0

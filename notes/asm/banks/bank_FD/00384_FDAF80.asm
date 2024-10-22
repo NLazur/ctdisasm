@@ -3,8 +3,8 @@ Routine_FDAF80:
 FD/AF80: 9C 23 AF     STZ $AF23
 FD/AF83: 85 06        STA $06
 FD/AF85: C9 5A        CMP #$5A
-FD/AF87: B0 4E        BCS $AFD7
-FD/AF89: 80 4C        BRA $AFD7
+FD/AF87: B0 4E        BCS Local_FDAFD7
+FD/AF89: 80 4C        BRA Local_FDAFD7
 FD/AF8B: A6 04        LDX $04
 FD/AF8D: 9D 80 15     STA $1580,X
 FD/AF90: AA           TAX
@@ -12,7 +12,7 @@ FD/AF91: 86 28        STX $28
 FD/AF93: A9 06        LDA #$06
 FD/AF95: AA           TAX
 FD/AF96: 86 2A        STX $2A
-FD/AF98: 22 BF FD C1  JSR $C1FDBF
+FD/AF98: 22 BF FD C1  JSR Routine_C1FDBF
 FD/AF9C: A6 2C        LDX $2C
 FD/AF9E: 86 02        STX $02
 FD/AFA0: 7B           TDC
@@ -20,7 +20,7 @@ FD/AFA1: A8           TAY
 FD/AFA2: A6 02        LDX $02
 FD/AFA4: BF A7 06 CC  LDA $CC06A7,X
 FD/AFA8: 89 80        BIT #$80
-FD/AFAA: D0 0F        BNE $AFBB
+FD/AFAA: D0 0F        BNE Local_FDAFBB
 FD/AFAC: 0A           ASL
 FD/AFAD: C8           INY
 FD/AFAE: C0 08        CPY #$08
@@ -28,24 +28,29 @@ FD/AFB0: 00 90        BRK $90
 FD/AFB2: F5 7B        SBC $7B,X
 FD/AFB4: A6 04        LDX $04
 FD/AFB6: 9D 80 15     STA $1580,X
-FD/AFB9: 80 61        BRA $B01C
+FD/AFB9: 80 61        BRA Local_FDB01C
+Local_FDAFBB:
 FD/AFBB: B9 BE B1     LDA $B1BE,Y
-FD/AFBE: 30 0E        BMI $AFCE
+FD/AFBE: 30 0E        BMI Local_FDAFCE
 FD/AFC0: AA           TAX
 FD/AFC1: A9 80        LDA #$80
+Local_FDAFC3:
 FD/AFC3: CA           DEX
-FD/AFC4: 30 03        BMI $AFC9
+FD/AFC4: 30 03        BMI Local_FDAFC9
 FD/AFC6: 4A           LSR
-FD/AFC7: 80 FA        BRA $AFC3
+FD/AFC7: 80 FA        BRA Local_FDAFC3
+Local_FDAFC9:
 FD/AFC9: A6 04        LDX $04
 FD/AFCB: 9D 84 15     STA $1584,X
+Local_FDAFCE:
 FD/AFCE: A9 80        LDA #$80
 FD/AFD0: A6 04        LDX $04
 FD/AFD2: 9D 82 15     STA $1582,X
-FD/AFD5: 80 3E        BRA $B015
+FD/AFD5: 80 3E        BRA Local_FDB015
+Local_FDAFD7:
 FD/AFD7: A5 06        LDA $06
 FD/AFD9: C9 BC        CMP #$BC
-FD/AFDB: 90 4E        BCC $B02B
+FD/AFDB: 90 4E        BCC Local_FDB02B
 FD/AFDD: A5 06        LDA $06
 FD/AFDF: 38           SEC
 FD/AFE0: E9 BC        SBC #$BC
@@ -59,7 +64,7 @@ FD/AFEA: 86 02        STX $02
 FD/AFEC: A6 02        LDX $02
 FD/AFEE: BF BC 0A CC  LDA $CC0ABC,X
 FD/AFF2: 89 80        BIT #$80
-FD/AFF4: F0 35        BEQ $B02B
+FD/AFF4: F0 35        BEQ Local_FDB02B
 FD/AFF6: A5 06        LDA $06
 FD/AFF8: A6 04        LDX $04
 FD/AFFA: 9D 80 15     STA $1580,X
@@ -72,9 +77,11 @@ FD/B00A: BF BC 0A CC  LDA $CC0ABC,X
 FD/B00E: 29 7F        AND #$7F
 FD/B010: A6 04        LDX $04
 FD/B012: 9D 82 15     STA $1582,X
+Local_FDB015:
 FD/B015: A5 0E        LDA $0E
 FD/B017: A6 04        LDX $04
 FD/B019: 9D 83 15     STA $1583,X
+Local_FDB01C:
 FD/B01C: C2 20        REP #$20
 FD/B01E: A5 04        LDA $04
 FD/B020: 18           CLC
@@ -82,8 +89,10 @@ FD/B021: 69 05 00     ADC #$0005
 FD/B024: 85 04        STA $04
 FD/B026: 7B           TDC
 FD/B027: E2 20        SEP #$20
-FD/B029: 80 03        BRA $B02E
+FD/B029: 80 03        BRA Local_FDB02E
+Local_FDB02B:
 FD/B02B: EE 23 AF     INC $AF23
+Local_FDB02E:
 FD/B02E: E6 00        INC $00
 FD/B030: E6 08        INC $08
 FD/B032: 6B           RTL

@@ -2,6 +2,7 @@
 Routine_CD64B7:
 CD/64B7: 89 70        BIT #$70
 CD/64B9: 89 A8        BIT #$A8
+Local_CD64BB:
 CD/64BB: 89 C8        BIT #$C8
 CD/64BD: 89 98        BIT #$98
 CD/64BF: 8A           TXA
@@ -14,10 +15,10 @@ CD/64C6: C4 8C        CPY $8C
 CD/64C8: 74 8D        STZ $8D,X
 CD/64CA: 8C 8E A4     STY $A48E
 CD/64CD: 8F E4 8F 24  STA $248FE4
-CD/64D1: 90 64        BCC $6537
-CD/64D3: 90 A4        BCC $6479
-CD/64D5: 90 E4        BCC $64BB
-CD/64D7: 90 24        BCC $64FD
+CD/64D1: 90 64        BCC Routine_CD6537
+CD/64D3: 90 A4        BCC Routine_CD6479
+CD/64D5: 90 E4        BCC Local_CD64BB
+CD/64D7: 90 24        BCC Local_CD64FD
 CD/64D9: 91 54        STA ($54),Y
 CD/64DB: 91 94        STA ($94),Y
 CD/64DD: 91 D4        STA ($D4),Y
@@ -38,6 +39,7 @@ CD/64F9: 98           TYA
 CD/64FA: E8           INX
 CD/64FB: 98           TYA
 CD/64FC: 48           PHA
+Local_CD64FD:
 CD/64FD: 99 A8 99     STA $99A8,Y
 CD/6500: E8           INX
 CD/6501: 99 98 9A     STA $9A98,Y
@@ -47,7 +49,7 @@ CD/6506: C8           INY
 CD/6507: 9B           TXY
 CD/6508: 44 9C B4     MVP $9C,$B4
 CD/650B: 9C 24 9D     STZ $9D24
-CD/650E: 90 9D        BCC $64AD
+CD/650E: 90 9D        BCC Routine_CD64AD
 CD/6510: F4 9D 64     PEA $649D
 CD/6513: 9E F0 9E     STZ $9EF0,X
 CD/6516: 54 9F BC     MVN $9F,$BC
@@ -62,12 +64,14 @@ CD/6529: A6 0C        LDX $0C
 CD/652B: A7 3C        LDA [$3C]
 CD/652D: A7 6C        LDA [$6C]
 CD/652F: A7 A8        LDA [$A8]
+Local_CD6531:
 CD/6531: A7 E4        LDA [$E4]
 CD/6533: A7 3C        LDA [$3C]
 CD/6535: A8           TAY
 CD/6536: 74 A8        STZ $A8,X
 CD/6538: D4 A8        PEI $A8
 CD/653A: 24 A9        BIT $A9
+Local_CD653C:
 CD/653C: FF FF FF FF  SBC $FFFFFF,X
 CD/6540: FF FF FF FF  SBC $FFFFFF,X
 CD/6544: FF FF FF FF  SBC $FFFFFF,X
@@ -93,30 +97,32 @@ CD/657C: DC AA 3C     JMP [$3CAA]
 CD/657F: AB           PLB
 CD/6580: 3C AB 78     BIT $78AB,X
 CD/6583: AB           PLB
-CD/6584: 80 AB        BRA $6531
+CD/6584: 80 AB        BRA Local_CD6531
 CD/6586: C8           INY
 CD/6587: AB           PLB
-CD/6588: 20 AC 48     JSR $48AC
+CD/6588: 20 AC 48     JSR Routine_CD48AC
 CD/658B: AC 80 AC     LDY $AC80
-CD/658E: 80 AC        BRA $653C
-CD/6590: 80 AC        BRA $653E
+CD/658E: 80 AC        BRA Local_CD653C
+CD/6590: 80 AC        BRA Routine_CD653E
 CD/6592: B4 AC        LDY $AC,X
-CD/6594: F0 AC        BEQ $6542
+CD/6594: F0 AC        BEQ Routine_CD6542
 CD/6596: 74 AD        STZ $AD,X
 CD/6598: 9C AD E4     STZ $E4AD
 CD/659B: AD 14 AE     LDA $AE14
 CD/659E: 84 AE        STY $AE
 CD/65A0: C0 AE        CPY #$AE
-CD/65A2: F0 AF        BEQ $6553
+CD/65A2: F0 AF        BEQ Routine_CD6553
 CD/65A4: F8           SED
 CD/65A5: AF 08 B0 08  LDA $08B008
-CD/65A9: B0 08        BCS $65B3
-CD/65AB: B0 08        BCS $65B5
-CD/65AD: B0 30        BCS $65DF
-CD/65AF: B0 30        BCS $65E1
-CD/65B1: B0 38        BCS $65EB
-CD/65B3: B0 98        BCS $654D
-CD/65B5: B0 A8        BCS $655F
+CD/65A9: B0 08        BCS Local_CD65B3
+CD/65AB: B0 08        BCS Local_CD65B5
+CD/65AD: B0 30        BCS Local_CD65DF
+CD/65AF: B0 30        BCS Local_CD65E1
+CD/65B1: B0 38        BCS Local_CD65EB
+Local_CD65B3:
+CD/65B3: B0 98        BCS Routine_CD654D
+Local_CD65B5:
+CD/65B5: B0 A8        BCS Routine_CD655F
 CD/65B7: B1 EC        LDA ($EC),Y
 CD/65B9: B1 F4        LDA ($F4),Y
 CD/65BB: B1 F4        LDA ($F4),Y
@@ -137,12 +143,15 @@ CD/65D7: B2 44        LDA ($44)
 CD/65D9: B2 44        LDA ($44)
 CD/65DB: B2 E0        LDA ($E0)
 CD/65DD: B2 E0        LDA ($E0)
+Local_CD65DF:
 CD/65DF: B2 E0        LDA ($E0)
+Local_CD65E1:
 CD/65E1: B2 E0        LDA ($E0)
 CD/65E3: B2 F0        LDA ($F0)
 CD/65E5: B3 40        LDA ($40,S),Y
 CD/65E7: B5 84        LDA $84,X
 CD/65E9: B5 84        LDA $84,X
+Local_CD65EB:
 CD/65EB: B5 84        LDA $84,X
 CD/65ED: B5 84        LDA $84,X
 CD/65EF: B5 94        LDA $94,X
@@ -184,7 +193,7 @@ CD/6633: B9 68 B9     LDA $B968,Y
 CD/6636: A0 B9        LDY #$B9
 CD/6638: A0 B9        LDY #$B9
 CD/663A: C0 BA        CPY #$BA
-CD/663C: 20 BB A4     JSR $A4BB
+CD/663C: 20 BB A4     JSR Routine_CDA4BB
 CD/663F: BB           TYX
 CD/6640: A4 BB        LDY $BB
 CD/6642: 0C BC 0C     TSB $0CBC

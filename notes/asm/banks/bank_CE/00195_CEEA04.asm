@@ -2,8 +2,9 @@
 Routine_CEEA04:
 CE/EA04: A5 45        LDA $45
 CE/EA06: 29 02        AND #$02
-CE/EA08: F0 3A        BEQ $EA44
+CE/EA08: F0 3A        BEQ Routine_CEEA44
 CE/EA0A: 7B           TDC
+Local_CEEA0B:
 CE/EA0B: 99 5F C1     STA $C15F,Y
 CE/EA0E: 99 97 C1     STA $C197,Y
 CE/EA11: 99 CF C1     STA $C1CF,Y
@@ -24,6 +25,6 @@ CE/EA3B: 88           DEY
 CE/EA3C: 88           DEY
 CE/EA3D: 88           DEY
 CE/EA3E: 88           DEY
-CE/EA3F: D0 CA        BNE $EA0B
+CE/EA3F: D0 CA        BNE Local_CEEA0B
 CE/EA41: E6 45        INC $45
 CE/EA43: 60           RTS

@@ -2,7 +2,8 @@
 Routine_D06A9D:
 D0/6A9D: C0 20        CPY #$20
 D0/6A9F: E0 08 F8     CPX #$F808
-D0/6AA2: F0 FE        BEQ $6AA2
+Local_D06AA2:
+D0/6AA2: F0 FE        BEQ Local_D06AA2
 D0/6AA4: 0F 0F 00 00  ORA $00000F
 D0/6AA8: 00 00        BRK $00
 D0/6AAA: 00 00        BRK $00
@@ -22,9 +23,9 @@ D0/6AC9: C0 20        CPY #$20
 D0/6ACB: E0 B0 F0     CPX #$F0B0
 D0/6ACE: 3C 3C 06     BIT $063C,X
 D0/6AD1: 06 80        ASL $80
-D0/6AD3: 80 C0        BRA $6A95
+D0/6AD3: 80 C0        BRA Routine_D06A95
 D0/6AD5: C0 70        CPY #$70
-D0/6AD7: 70 70        BVS $6B49
+D0/6AD7: 70 70        BVS Routine_D06B49
 D0/6AD9: 7F 1E 1F 03  ADC $031F1E,X
 D0/6ADD: 03 00        ORA $00,S
 D0/6ADF: 00 00        BRK $00
@@ -39,10 +40,10 @@ D0/6AEE: 3F 3F 00 00  AND $00003F,X
 D0/6AF2: 00 00        BRK $00
 D0/6AF4: 00 00        BRK $00
 D0/6AF6: 00 00        BRK $00
-D0/6AF8: 70 7F        BVS $6B79
+D0/6AF8: 70 7F        BVS Routine_D06B79
 D0/6AFA: 00 00        BRK $00
 D0/6AFC: 00 00        BRK $00
-D0/6AFE: 80 80        BRA $6A80
+D0/6AFE: 80 80        BRA Routine_D06A80
 D0/6B00: 00 00        BRK $00
 D0/6B02: 00 00        BRK $00
 D0/6B04: 00 00        BRK $00
@@ -65,6 +66,6 @@ D0/6B29: 00 00        BRK $00
 D0/6B2B: 00 00        BRK $00
 D0/6B2D: 00 00        BRK $00
 D0/6B2F: 00 80        BRK $80
-D0/6B31: 80 40        BRA $6B73
+D0/6B31: 80 40        BRA Routine_D06B73
 D0/6B33: C0 A0        CPY #$A0
 D0/6B35: 60           RTS

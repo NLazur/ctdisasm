@@ -14,11 +14,12 @@ FD/78F0: 3F C0 E4 10  AND $10E4C0,X
 FD/78F4: 07 02        ORA [$02]
 FD/78F6: F8           SED
 FD/78F7: E4 10        CPX $10
-FD/78F9: 80 80        BRA $787B
+FD/78F9: 80 80        BRA Routine_FD787B
+Local_FD78FB:
 FD/78FB: C0 C0        CPY #$C0
 FD/78FD: E0 E0        CPX #$E0
-FD/78FF: 80 F0        BRA $78F1
-FD/7901: F0 F8        BEQ $78FB
+FD/78FF: 80 F0        BRA Routine_FD78F1
+FD/7901: F0 F8        BEQ Local_FD78FB
 FD/7903: F8           SED
 FD/7904: FC FC FE     JSR ($FEFC,X)
 FD/7907: A9 00        LDA #$00
@@ -36,7 +37,7 @@ FD/7921: 14 03        TRB $03
 FD/7923: 1D 0B 10     ORA $100B,X
 FD/7926: 00 0E        BRK $0E
 FD/7928: 11 0E        ORA ($0E),Y
-FD/792A: F0 07        BEQ $7933
+FD/792A: F0 07        BEQ Routine_FD7933
 FD/792C: E3 0F        SBC $0F,S
 FD/792E: E1 00        SBC ($00,X)
 FD/7930: 1F EB 1F EA  ORA $EA1FEB,X

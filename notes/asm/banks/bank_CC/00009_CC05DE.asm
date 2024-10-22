@@ -1,11 +1,11 @@
 ; Bank: CC | Start Address: 05DE
 Routine_CC05DE:
 CC/05DE: 01 0A        ORA ($0A,X)
-CC/05E0: 80 41        BRA $0623
+CC/05E0: 80 41        BRA Routine_CC0623
 CC/05E2: 03 0A        ORA $0A,S
-CC/05E4: 80 42        BRA $0628
+CC/05E4: 80 42        BRA Local_CC0628
 CC/05E6: 06 0A        ASL $0A
-CC/05E8: 80 C2        BRA $05AC
+CC/05E8: 80 C2        BRA Routine_CC05AC
 CC/05EA: 0F 00 80 42  ORA $428000
 CC/05EE: 0F 00 80 C2  ORA $C28000
 CC/05F2: 0F 00 04 00  ORA $000400
@@ -35,6 +35,7 @@ CC/0620: 00 00        BRK $00
 CC/0622: 00 00        BRK $00
 CC/0624: 00 00        BRK $00
 CC/0626: 00 00        BRK $00
+Local_CC0628:
 CC/0628: 00 00        BRK $00
 CC/062A: 00 00        BRK $00
 CC/062C: 00 00        BRK $00
@@ -59,6 +60,7 @@ CC/0650: 00 00        BRK $00
 CC/0652: 00 00        BRK $00
 CC/0654: 00 00        BRK $00
 CC/0656: 00 00        BRK $00
+Local_CC0658:
 CC/0658: 00 00        BRK $00
 CC/065A: 00 00        BRK $00
 CC/065C: 00 00        BRK $00
@@ -106,7 +108,7 @@ CC/06CD: 00 00        BRK $00
 CC/06CF: FC 21 80     JSR ($8021,X)
 CC/06D2: 00 00        BRK $00
 CC/06D4: 00 D4        BRK $D4
-CC/06D6: 30 80        BMI $0658
+CC/06D6: 30 80        BMI Local_CC0658
 CC/06D8: 00 00        BRK $00
 CC/06DA: 00 68        BRK $68
 CC/06DC: 42 80        WDM $80
@@ -122,6 +124,7 @@ CC/06EE: 75 80        ADC $80,X
 CC/06F0: 00 00        BRK $00
 CC/06F2: 00 B8        BRK $B8
 CC/06F4: 88           DEY
-CC/06F5: 80 00        BRA $06F7
+CC/06F5: 80 00        BRA Local_CC06F7
+Local_CC06F7:
 CC/06F7: 00 00        BRK $00
 CC/06F9: 40           RTI

@@ -2,6 +2,7 @@
 Routine_CE4F63:
 CE/4F63: 01 23        ORA ($23,X)
 CE/4F65: 02 70        COP $70
+Local_CE4F67:
 CE/4F67: 23 03        AND $03,S
 CE/4F69: 24 02        BIT $02
 CE/4F6B: 02 03        COP $03
@@ -25,6 +26,7 @@ CE/4F92: 0C 0C C0     TSB $C00C
 CE/4F95: 04 71        TSB $71
 CE/4F97: 36 00        ROL $00,X
 CE/4F99: 1B           TCS
+Local_CE4F9A:
 CE/4F9A: 0C 72 03     TSB $0372
 CE/4F9D: 73 03        ADC ($03,S),Y
 CE/4F9F: 02 02        COP $02
@@ -40,45 +42,53 @@ CE/4FB6: 0C 8C C0     TSB $C08C
 CE/4FB9: 04 71        TSB $71
 CE/4FBB: 00 23        BRK $23
 CE/4FBD: 01 2D        ORA ($2D,X)
-CE/4FBF: 80 12        BRA $4FD3
+CE/4FBF: 80 12        BRA Local_CE4FD3
 CE/4FC1: F5 20        SBC $20,X
-CE/4FC3: 30 2D        BMI $4FF2
-CE/4FC5: 80 02        BRA $4FC9
+CE/4FC3: 30 2D        BMI Routine_CE4FF2
+CE/4FC5: 80 02        BRA Local_CE4FC9
 CE/4FC7: F5 20        SBC $20,X
-CE/4FC9: 30 2D        BMI $4FF8
-CE/4FCB: 80 02        BRA $4FCF
+Local_CE4FC9:
+CE/4FC9: 30 2D        BMI Local_CE4FF8
+Local_CE4FCB:
+CE/4FCB: 80 02        BRA Local_CE4FCF
 CE/4FCD: B5 20        LDA $20,X
-CE/4FCF: 30 2D        BMI $4FFE
-CE/4FD1: 80 12        BRA $4FE5
+Local_CE4FCF:
+CE/4FCF: 30 2D        BMI Local_CE4FFE
+CE/4FD1: 80 12        BRA Local_CE4FE5
+Local_CE4FD3:
 CE/4FD3: B5 20        LDA $20,X
-CE/4FD5: 20 36 00     JSR $0036
+CE/4FD5: 20 36 00     JSR Routine_CE0036
 CE/4FD8: D8           CLD
 CE/4FD9: FF C0 00 F8  SBC $F800C0,X
 CE/4FDD: 4F 17 50 28  EOR $285017
-CE/4FE1: 50 3F        BVC $5022
-CE/4FE3: 50 48        BVC $502D
-CE/4FE5: 50 80        BVC $4F67
-CE/4FE7: 50 B1        BVC $4F9A
-CE/4FE9: 50 E0        BVC $4FCB
-CE/4FEB: 50 FF        BVC $4FEC
-CE/4FED: 50 1C        BVC $500B
+CE/4FE1: 50 3F        BVC Routine_CE5022
+CE/4FE3: 50 48        BVC Local_CE502D
+Local_CE4FE5:
+CE/4FE5: 50 80        BVC Local_CE4F67
+CE/4FE7: 50 B1        BVC Local_CE4F9A
+CE/4FE9: 50 E0        BVC Local_CE4FCB
+CE/4FEB: 50 FF        BVC Routine_CE4FEC
+CE/4FED: 50 1C        BVC Local_CE500B
 CE/4FEF: 51 36        EOR ($36),Y
 CE/4FF1: 51 50        EOR ($50),Y
 CE/4FF3: 51 85        EOR ($85),Y
 CE/4FF5: 09 93 09     ORA #$0993
+Local_CE4FF8:
 CE/4FF8: 72 0B        ADC ($0B)
 CE/4FFA: 02 13        COP $13
 CE/4FFC: 24 02        BIT $02
+Local_CE4FFE:
 CE/4FFE: 06 10        ASL $10
 CE/5000: 24 03        BIT $03
 CE/5002: 26 11        ROL $11
 CE/5004: 03 24        ORA $24,S
 CE/5006: 04 72        TSB $72
 CE/5008: 0D 02 3C     ORA $3C02
+Local_CE500B:
 CE/500B: 24 07        BIT $07
 CE/500D: 06 03        ASL $03
 CE/500F: 24 08        BIT $08
-CE/5011: 22 1B 00 2E  JSR $2E001B
+CE/5011: 22 1B 00 2E  JSR Routine_2E001B
 CE/5015: 01 00        ORA ($00,X)
 CE/5017: 72 0A        ADC ($0A)
 CE/5019: 03 10        ORA $10,S
@@ -91,6 +101,7 @@ CE/5025: 06 03        ASL $03
 CE/5027: 00 3D        BRK $3D
 CE/5029: 03 24        ORA $24,S
 CE/502B: 06 34        ASL $34
+Local_CE502D:
 CE/502D: 1B           TCS
 CE/502E: 7B           TDC
 CE/502F: 84 03        STY $03
@@ -99,7 +110,7 @@ CE/5034: 03 24        ORA $24,S
 CE/5036: 07 6D        ORA [$6D]
 CE/5038: 1E 09 20     ASL $2009,X
 CE/503B: 0A           ASL
-CE/503C: 50 36        BVC $5074
+CE/503C: 50 36        BVC Routine_CE5074
 CE/503E: 00 24        BRK $24
 CE/5040: 06 69        ASL $69
 CE/5042: 04 24        TSB $24

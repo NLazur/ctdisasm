@@ -18,19 +18,23 @@ D0/9864: 54 32 00     MVN $32,$00
 D0/9867: 00 00        BRK $00
 D0/9869: 00 03        BRK $03
 D0/986B: 00 00        BRK $00
+Local_D0986D:
 D0/986D: 03 0E        ORA $0E,S
 D0/986F: 00 00        BRK $00
 D0/9871: 00 00        BRK $00
 D0/9873: 00 00        BRK $00
-D0/9875: 80 00        BRA $9877
+D0/9875: 80 00        BRA Local_D09877
+Local_D09877:
 D0/9877: 00 00        BRK $00
 D0/9879: 00 00        BRK $00
-D0/987B: 80 00        BRA $987D
+D0/987B: 80 00        BRA Local_D0987D
+Local_D0987D:
 D0/987D: 00 00        BRK $00
 D0/987F: 00 00        BRK $00
 D0/9881: 00 80        BRK $80
 D0/9883: 00 00        BRK $00
-D0/9885: 80 00        BRA $9887
+D0/9885: 80 00        BRA Local_D09887
+Local_D09887:
 D0/9887: 00 00        BRK $00
 D0/9889: 00 28        BRK $28
 D0/988B: 1B           TCS
@@ -39,20 +43,22 @@ D0/988E: 0A           ASL
 D0/988F: 06 00        ASL $00
 D0/9891: 00 28        BRK $28
 D0/9893: 1B           TCS
+Local_D09894:
 D0/9894: A1 6F        LDA ($6F,X)
 D0/9896: 00 00        BRK $00
 D0/9898: 00 07        BRK $07
 D0/989A: 00 01        BRK $01
 D0/989C: 00 07        BRK $07
 D0/989E: 1F 00 00 00  ORA $000000,X
-D0/98A2: 70 F0        BVS $9894
+D0/98A2: 70 F0        BVS Local_D09894
 D0/98A4: 00 00        BRK $00
 D0/98A6: 1C FC 00     TRB $00FC
 D0/98A9: 00 70        BRK $70
-D0/98AB: F0 C0        BEQ $986D
+D0/98AB: F0 C0        BEQ Local_D0986D
 D0/98AD: C0 00        CPY #$00
 D0/98AF: 00 00        BRK $00
-D0/98B1: F0 00        BEQ $98B3
+D0/98B1: F0 00        BEQ Local_D098B3
+Local_D098B3:
 D0/98B3: FC 00 F0     JSR ($F000,X)
 D0/98B6: C0 00        CPY #$00
 D0/98B8: 00 00        BRK $00
@@ -79,8 +85,10 @@ D0/98E2: 00 7C        BRK $7C
 D0/98E4: 00 00        BRK $00
 D0/98E6: 7C 00 00     JMP ($0000,X)
 D0/98E9: 00 80        BRK $80
-D0/98EB: 80 00        BRA $98ED
-D0/98ED: 80 00        BRA $98EF
+D0/98EB: 80 00        BRA Local_D098ED
+Local_D098ED:
+D0/98ED: 80 00        BRA Local_D098EF
+Local_D098EF:
 D0/98EF: 00 00        BRK $00
 D0/98F1: 00 00        BRK $00
 D0/98F3: 00 00        BRK $00
@@ -100,5 +108,5 @@ D0/990D: 02 01        COP $01
 D0/990F: 02 00        COP $00
 D0/9911: 00 80        BRK $80
 D0/9913: 00 00        BRK $00
-D0/9915: 80 80        BRA $9897
+D0/9915: 80 80        BRA Routine_D09897
 D0/9917: 40           RTI

@@ -2,7 +2,7 @@
 Routine_C69967:
 C6/9967: 04 37        TSB $37
 C6/9969: 05 FB        ORA $FB
-C6/996B: 30 B3        BMI $9920
+C6/996B: 30 B3        BMI Routine_C69920
 C6/996D: 6F 06 32 B8  ADC $B83206
 C6/9971: 72 73        ADC ($73)
 C6/9973: 3E C9 CA     ROL $CAC9,X
@@ -12,7 +12,7 @@ C6/997C: F8           SED
 C6/997D: 6A           ROR
 C6/997E: 15 4F        ORA $4F,X
 C6/9980: 89 7F 21     BIT #$217F
-C6/9983: 22 F7 20 A5  JSR $A520F7
+C6/9983: 22 F7 20 A5  JSR Routine_A520F7
 C6/9987: DA           PHX
 C6/9988: 0A           ASL
 C6/9989: B5 07        LDA $07,X
@@ -78,7 +78,7 @@ C6/9A0E: 1C C5 C6     TRB $C6C5
 C6/9A11: C1 F8        CMP ($F8,X)
 C6/9A13: 01 F8        ORA ($F8,X)
 C6/9A15: 0F 80 38 21  ORA $213880
-C6/9A19: D0 C0        BNE $99DB
+C6/9A19: D0 C0        BNE Routine_C699DB
 C6/9A1B: D1 D2        CMP ($D2),Y
 C6/9A1D: F3 D4        SBC ($D4,S),Y
 C6/9A1F: D5 D6        CMP $D6,X
@@ -111,7 +111,7 @@ C6/9A52: 5B           TCD
 C6/9A53: 06 21        ASL $21
 C6/9A55: F9 01 F8     SBC $F801,Y
 C6/9A58: D8           CLD
-C6/9A59: 82 8E 07     BRL $C6A1EA
+C6/9A59: 82 8E 07     BRL Routine_C6A1EA
 C6/9A5C: 1F F8 05 61  ORA $6105F8,X
 C6/9A60: 00 21        BRK $21
 C6/9A62: F9 01 F8     SBC $F801,Y
@@ -139,7 +139,7 @@ C6/9A92: 04 98        TSB $98
 C6/9A94: 1C C8 1E     TRB $1EC8
 C6/9A97: E8           INX
 C6/9A98: 5B           TCD
-C6/9A99: 30 71        BMI $9B0C
+C6/9A99: 30 71        BMI Routine_C69B0C
 C6/9A9B: 42 A8        WDM $A8
 C6/9A9D: 01 02        ORA ($02,X)
 C6/9A9F: 03 60        ORA $60,S

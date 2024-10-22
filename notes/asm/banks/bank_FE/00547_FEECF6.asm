@@ -1,12 +1,13 @@
 ; Bank: FE | Start Address: ECF6
 Routine_FEECF6:
-FE/ECF6: 90 0B        BCC $ED03
-FE/ECF8: 80 40        BRA $ED3A
+FE/ECF6: 90 0B        BCC Local_FEED03
+FE/ECF8: 80 40        BRA Routine_FEED3A
 FE/ECFA: 11 44        ORA ($44),Y
 FE/ECFC: 00 49        BRK $49
 FE/ECFE: 28           PLP
 FE/ECFF: 04 28        TSB $28
 FE/ED01: 05 00        ORA $00
+Local_FEED03:
 FE/ED03: 13 06        ORA ($06,S),Y
 FE/ED05: 2B           PLD
 FE/ED06: 62 9B 12     PER $FEFFA4
@@ -14,7 +15,7 @@ FE/ED09: 48           PHA
 FE/ED0A: 00 B0        BRK $B0
 FE/ED0C: C5 C0        CMP $C0
 FE/ED0E: E1 28        SBC ($28,X)
-FE/ED10: 50 70        BVC $ED82
+FE/ED10: 50 70        BVC Routine_FEED82
 FE/ED12: 8A           TXA
 FE/ED13: 34 09        BIT $09,X
 FE/ED15: 05 DE        ORA $DE
@@ -46,15 +47,15 @@ FE/ED4B: 48           PHA
 FE/ED4C: 61 F9        ADC ($F9,X)
 FE/ED4E: 21 40        AND ($40,X)
 FE/ED50: 00 10        BRK $10
-FE/ED52: 80 76        BRA $EDCA
+FE/ED52: 80 76        BRA Routine_FEEDCA
 FE/ED54: 0D BB 09     ORA $09BB
 FE/ED57: 26 22        ROL $22
 FE/ED59: 64 19        STZ $19
 FE/ED5B: 2C 40 00     BIT $0040
 FE/ED5E: A0 12 02     LDY #$0212
 FE/ED61: 58           CLI
-FE/ED62: 80 64        BRA $EDC8
-FE/ED64: 20 24 61     JSR $6124
+FE/ED62: 80 64        BRA Routine_FEEDC8
+FE/ED64: 20 24 61     JSR Routine_FE6124
 FE/ED67: 6E 10 08     ROR $0810
 FE/ED6A: CE 27 F9     DEC $F927
 FE/ED6D: 60           RTS

@@ -17,7 +17,7 @@ C0/4B91: 85 DA        STA $DA
 C0/4B93: A9 FF        LDA #$FF
 C0/4B95: 9D 80 18     STA $1880,X
 C0/4B98: BD 80 0F     LDA $0F80,X
-C0/4B9B: 10 22        BPL $4BBF
+C0/4B9B: 10 22        BPL Local_C04BBF
 C0/4B9D: A6 D9        LDX $D9
 C0/4B9F: BF 00 70 7E  LDA $7E7000,X
 C0/4BA3: 29 40        AND #$40
@@ -34,6 +34,7 @@ C0/4BB5: A6 6D        LDX $6D
 C0/4BB7: 9D 00 0C     STA $0C00,X
 C0/4BBA: A5 D9        LDA $D9
 C0/4BBC: 9D 01 0C     STA $0C01,X
+Local_C04BBF:
 C0/4BBF: BB           TYX
 C0/4BC0: E8           INX
 C0/4BC1: 38           SEC

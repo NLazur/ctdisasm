@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 7419
 Routine_D07419:
-D0/7419: 90 C0        BCC $73DB
-D0/741B: 20 80 40     JSR $4080
+D0/7419: 90 C0        BCC Routine_D073DB
+D0/741B: 20 80 40     JSR Routine_D04080
 D0/741E: 00 80        BRK $80
 D0/7420: 28           PLP
 D0/7421: 68           PLA
@@ -26,12 +26,12 @@ D0/7444: 00 80        BRK $80
 D0/7446: 00 80        BRK $80
 D0/7448: 00 80        BRK $80
 D0/744A: 00 80        BRK $80
-D0/744C: 80 C0        BRA $740E
-D0/744E: 80 C0        BRA $7410
+D0/744C: 80 C0        BRA Routine_D0740E
+D0/744E: 80 C0        BRA Routine_D07410
 D0/7450: 00 00        BRK $00
 D0/7452: 00 00        BRK $00
 D0/7454: 00 00        BRK $00
-D0/7456: 80 80        BRA $73D8
+D0/7456: 80 80        BRA Routine_D073D8
 D0/7458: 00 00        BRK $00
 D0/745A: 00 00        BRK $00
 D0/745C: 00 00        BRK $00

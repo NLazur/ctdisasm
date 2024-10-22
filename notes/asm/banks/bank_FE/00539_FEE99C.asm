@@ -1,7 +1,7 @@
 ; Bank: FE | Start Address: E99C
 Routine_FEE99C:
 FE/E99C: 0A           ASL
-FE/E99D: 20 60 70     JSR $7060
+FE/E99D: 20 60 70     JSR Routine_FE7060
 FE/E9A0: 00 98        BRK $98
 FE/E9A2: 84 01        STY $01
 FE/E9A4: 00 28        BRK $28
@@ -18,7 +18,7 @@ FE/E9B7: 02 62        COP $62
 FE/E9B9: 00 18        BRK $18
 FE/E9BB: 08           PHP
 FE/E9BC: 88           DEY
-FE/E9BD: 80 C0        BRA $E97F
+FE/E9BD: 80 C0        BRA Routine_FEE97F
 FE/E9BF: 48           PHA
 FE/E9C0: 8C E7 F0     STY $F0E7
 FE/E9C3: 27 52        AND [$52]
@@ -42,8 +42,8 @@ FE/E9E1: 5B           TCD
 FE/E9E2: 06 09        ASL $09
 FE/E9E4: 49 E1        EOR #$E1
 FE/E9E6: 39 60 0F     AND $0F60,Y
-FE/E9E9: 90 51        BCC $EA3C
-FE/E9EB: F0 3F        BEQ $EA2C
+FE/E9E9: 90 51        BCC Routine_FEEA3C
+FE/E9EB: F0 3F        BEQ Routine_FEEA2C
 FE/E9ED: F4 D8 74     PEA $74D8
 FE/E9F0: 01 AE        ORA ($AE,X)
 FE/E9F2: 0A           ASL

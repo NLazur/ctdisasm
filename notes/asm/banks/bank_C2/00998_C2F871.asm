@@ -30,6 +30,7 @@ C2/F8A1: 6E 07 00     ROR $0007
 C2/F8A4: A2 00 00     LDX #$0000
 C2/F8A7: A9 01        LDA #$01
 C2/F8A9: 8D 00 00     STA $0000
+Local_C2F8AC:
 C2/F8AC: AD 06 00     LDA $0006
 C2/F8AF: 18           CLC
 C2/F8B0: 75 22        ADC $22,X
@@ -37,13 +38,14 @@ C2/F8B2: 99 00 08     STA $0800,Y
 C2/F8B5: 6A           ROR
 C2/F8B6: 55 22        EOR $22,X
 C2/F8B8: 4D 07 00     EOR $0007
-C2/F8BB: 10 0E        BPL $F8CB
+C2/F8BB: 10 0E        BPL Local_C2F8CB
 C2/F8BD: 5A           PHY
 C2/F8BE: AC 02 00     LDY $0002
 C2/F8C1: B9 10 09     LDA $0910,Y
 C2/F8C4: 0D 00 00     ORA $0000
 C2/F8C7: 99 10 09     STA $0910,Y
 C2/F8CA: 7A           PLY
+Local_C2F8CB:
 C2/F8CB: A5 0E        LDA $0E
 C2/F8CD: 18           CLC
 C2/F8CE: 75 23        ADC $23,X
@@ -70,6 +72,6 @@ C2/F8F9: 0E 00 00     ASL $0000
 C2/F8FC: E8           INX
 C2/F8FD: E8           INX
 C2/F8FE: EC 04 00     CPX $0004
-C2/F901: 90 A9        BCC $F8AC
+C2/F901: 90 A9        BCC Local_C2F8AC
 C2/F903: 28           PLP
 C2/F904: 60           RTS

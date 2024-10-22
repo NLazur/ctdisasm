@@ -30,9 +30,10 @@ C6/B526: 05 BA        ORA $BA
 C6/B528: 1C 7A CB     TRB $CB7A
 C6/B52B: 06 60        ASL $60
 C6/B52D: 04 F9        TSB $F9
-C6/B52F: 90 04        BCC $B535
+C6/B52F: 90 04        BCC Local_C6B535
 C6/B531: 07 2E        ORA [$2E]
 C6/B533: F5 05        SBC $05,X
+Local_C6B535:
 C6/B535: 44 40 9A     MVP $40,$9A
 C6/B538: 1C 73 06     TRB $0673
 C6/B53B: 51 0E        EOR ($0E),Y
@@ -69,7 +70,7 @@ C6/B57A: 54 2C 34     MVN $2C,$34
 C6/B57D: C7 08        CMP [$08]
 C6/B57F: A5 81        LDA $81
 C6/B581: 05 7F        ORA $7F
-C6/B583: B0 02        BCS $B587
+C6/B583: B0 02        BCS Routine_C6B587
 C6/B585: 39 06 3C     AND $3C06,Y
 C6/B588: 06 47        ASL $47
 C6/B58A: 02 AB        COP $AB

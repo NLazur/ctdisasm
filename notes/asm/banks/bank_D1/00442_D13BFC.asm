@@ -11,6 +11,7 @@ D1/3C0A: 01 01        ORA ($01,X)
 D1/3C0C: 03 02        ORA $02,S
 D1/3C0E: 01 01        ORA ($01,X)
 D1/3C10: 03 03        ORA $03,S
+Local_D13C12:
 D1/3C12: 03 03        ORA $03,S
 D1/3C14: 03 03        ORA $03,S
 D1/3C16: 01 01        ORA ($01,X)
@@ -18,5 +19,5 @@ D1/3C18: 00 00        BRK $00
 D1/3C1A: 01 01        ORA ($01,X)
 D1/3C1C: 03 03        ORA $03,S
 D1/3C1E: 01 01        ORA ($01,X)
-D1/3C20: 30 F0        BMI $3C12
+D1/3C20: 30 F0        BMI Local_D13C12
 D1/3C22: 40           RTI

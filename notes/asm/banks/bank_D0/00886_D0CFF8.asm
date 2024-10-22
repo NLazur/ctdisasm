@@ -4,7 +4,7 @@ D0/CFF8: A0 C0        LDY #$C0
 D0/CFFA: A0 C0        LDY #$C0
 D0/CFFC: A0 C0        LDY #$C0
 D0/CFFE: A0 C0        LDY #$C0
-D0/D000: 30 60        BMI $D062
+D0/D000: 30 60        BMI Routine_D0D062
 D0/D002: C0 80        CPY #$80
 D0/D004: 00 00        BRK $00
 D0/D006: 00 00        BRK $00
@@ -24,8 +24,8 @@ D0/D01F: 00 80        BRK $80
 D0/D021: 00 40        BRK $40
 D0/D023: 00 40        BRK $40
 D0/D025: 00 A0        BRK $A0
-D0/D027: 80 A0        BRA $CFC9
-D0/D029: 80 50        BRA $D07B
+D0/D027: 80 A0        BRA Routine_D0CFC9
+D0/D029: 80 50        BRA Routine_D0D07B
 D0/D02B: C0 50        CPY #$50
 D0/D02D: C0 50        CPY #$50
 D0/D02F: C0 80        CPY #$80

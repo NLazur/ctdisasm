@@ -15,7 +15,7 @@ FE/9DC8: F1 09        SBC ($09),Y
 FE/9DCA: 73 DD        ADC ($DD,S),Y
 FE/9DCC: 59 20 20     EOR $2020,Y
 FE/9DCF: D4 D4        PEI $D4
-FE/9DD1: 20 C0 10     JSR $10C0
+FE/9DD1: 20 C0 10     JSR Routine_FE10C0
 FE/9DD4: 00 FD        BRK $FD
 FE/9DD6: 49 EA        EOR #$EA
 FE/9DD8: 11 1D        ORA ($1D),Y

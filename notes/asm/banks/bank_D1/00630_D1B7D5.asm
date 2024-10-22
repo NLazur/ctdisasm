@@ -3,7 +3,7 @@ Routine_D1B7D5:
 D1/B7D5: 28           PLP
 D1/B7D6: 29 69        AND #$69
 D1/B7D8: 68           PLA
-D1/B7D9: 30 0F        BMI $B7EA
+D1/B7D9: 30 0F        BMI Routine_D1B7EA
 D1/B7DB: 4F 70 B0 F0  EOR $F0B070
 D1/B7DF: A8           TAY
 D1/B7E0: A9 E9        LDA #$E9
@@ -26,7 +26,7 @@ D1/B7FF: 86 87        STX $87
 D1/B801: C7 C6        CMP [$C6]
 D1/B803: C5 C4        CMP $C4
 D1/B805: 01 0F        ORA ($0F,X)
-D1/B807: F0 3E        BEQ $B847
+D1/B807: F0 3E        BEQ Routine_D1B847
 D1/B809: 7C 7F FE     JMP ($FE7F,X)
 D1/B80C: FE 7F FF     INC $FF7F,X
 D1/B80F: FF FF FF AA  SBC $AAFFFF,X
@@ -41,6 +41,7 @@ D1/B826: 47 46        EOR [$46]
 D1/B828: 45 44        EOR $44
 D1/B82A: 0A           ASL
 D1/B82B: 0B           PHD
+Local_D1B82C:
 D1/B82C: 0C 0D 0E     TSB $0E0D
 D1/B82F: 4E 4D 4C     LSR $4C4D
 D1/B832: 4B           PHK
@@ -73,11 +74,11 @@ D1/B867: B1 F1        LDA ($F1),Y
 D1/B869: 5F 6D 6C 6B  EOR $6B6C6D,X
 D1/B86D: 6A           ROR
 D1/B86E: 69 68        ADC #$68
-D1/B870: 30 32        BMI $B8A4
+D1/B870: 30 32        BMI Local_D1B8A4
 D1/B872: 34 36        BIT $36,X
 D1/B874: 76 74        ROR $74,X
 D1/B876: 72 70        ADC ($70)
-D1/B878: B0 B2        BCS $B82C
+D1/B878: B0 B2        BCS Local_D1B82C
 D1/B87A: B4 B6        LDY $B6,X
 D1/B87C: F6 F4        INC $F4,X
 D1/B87E: F2 F0        SBC ($F0)
@@ -99,6 +100,7 @@ D1/B89C: E3 E2        SBC $E2,S
 D1/B89E: E1 E0        SBC ($E0,X)
 D1/B8A0: 98           TYA
 D1/B8A1: 99 9A 9B     STA $9B9A,Y
+Local_D1B8A4:
 D1/B8A4: 9C 9D 9E     STZ $9E9D
 D1/B8A7: DE DD DC     DEC $DCDD,X
 D1/B8AA: DB           STP
@@ -323,8 +325,10 @@ D1/BAA0: 00 0C        BRK $0C
 D1/BAA2: C0 00        CPY #$00
 D1/BAA4: C0 00        CPY #$00
 D1/BAA6: 00 00        BRK $00
-D1/BAA8: 30 00        BMI $BAAA
-D1/BAAA: 30 00        BMI $BAAC
+D1/BAA8: 30 00        BMI Local_D1BAAA
+Local_D1BAAA:
+D1/BAAA: 30 00        BMI Local_D1BAAC
+Local_D1BAAC:
 D1/BAAC: 00 00        BRK $00
 D1/BAAE: 00 00        BRK $00
 D1/BAB0: 00 00        BRK $00
@@ -333,22 +337,25 @@ D1/BAB4: 00 2D        BRK $2D
 D1/BAB6: 6D 2D 6D     ADC $6D2D
 D1/BAB9: AD ED AD     LDA $ADED
 D1/BABC: ED 18 58     SBC $5818
-D1/BABF: 20 D8 2D     JSR $2DD8
+D1/BABF: 20 D8 2D     JSR Routine_D12DD8
 D1/BAC2: 6D AD ED     ADC $EDAD
 D1/BAC5: 18           CLC
 D1/BAC6: 58           CLI
-D1/BAC7: 20 D8 2D     JSR $2DD8
+D1/BAC7: 20 D8 2D     JSR Routine_D12DD8
 D1/BACA: 6D AD ED     ADC $EDAD
 D1/BACD: 01 60        ORA ($60,X)
 D1/BACF: C0 60        CPY #$60
 D1/BAD1: C0 31        CPY #$31
-D1/BAD3: 80 31        BRA $BB06
-D1/BAD5: B0 00        BCS $BAD7
+D1/BAD3: 80 31        BRA Routine_D1BB06
+D1/BAD5: B0 00        BCS Local_D1BAD7
+Local_D1BAD7:
 D1/BAD7: 36 0C        ROL $0C,X
 D1/BAD9: 06 0C        ASL $0C
 D1/BADB: C0 18        CPY #$18
 D1/BADD: C0 1B        CPY #$1B
 D1/BADF: 00 03        BRK $03
-D1/BAE1: 30 00        BMI $BAE3
-D1/BAE3: 30 00        BMI $BAE5
+D1/BAE1: 30 00        BMI Local_D1BAE3
+Local_D1BAE3:
+D1/BAE3: 30 00        BMI Local_D1BAE5
+Local_D1BAE5:
 D1/BAE5: 60           RTS

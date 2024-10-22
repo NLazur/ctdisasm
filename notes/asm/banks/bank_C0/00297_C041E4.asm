@@ -3,83 +3,94 @@ Routine_C041E4:
 C0/41E4: A5 6D        LDA $6D
 C0/41E6: 85 8D        STA $8D
 C0/41E8: A9 00        LDA #$00
-C0/41EA: 80 2E        BRA $421A
+C0/41EA: 80 2E        BRA Local_C0421A
 C0/41EC: A5 6D        LDA $6D
 C0/41EE: 85 8E        STA $8E
 C0/41F0: A9 01        LDA #$01
-C0/41F2: 80 26        BRA $421A
+C0/41F2: 80 26        BRA Local_C0421A
 C0/41F4: A5 6D        LDA $6D
 C0/41F6: 85 8F        STA $8F
 C0/41F8: A9 02        LDA #$02
-C0/41FA: 80 1E        BRA $421A
+C0/41FA: 80 1E        BRA Local_C0421A
 C0/41FC: A5 6D        LDA $6D
 C0/41FE: 85 91        STA $91
 C0/4200: A9 04        LDA #$04
-C0/4202: 80 16        BRA $421A
+C0/4202: 80 16        BRA Local_C0421A
 C0/4204: A5 6D        LDA $6D
 C0/4206: 85 90        STA $90
 C0/4208: A9 03        LDA #$03
-C0/420A: 80 0E        BRA $421A
+C0/420A: 80 0E        BRA Local_C0421A
 C0/420C: A5 6D        LDA $6D
 C0/420E: 85 92        STA $92
 C0/4210: A9 05        LDA #$05
-C0/4212: 80 06        BRA $421A
+C0/4212: 80 06        BRA Local_C0421A
 C0/4214: A5 6D        LDA $6D
 C0/4216: 85 93        STA $93
 C0/4218: A9 06        LDA #$06
+Local_C0421A:
 C0/421A: 85 D9        STA $D9
-C0/421C: 80 4C        BRA $426A
+C0/421C: 80 4C        BRA Local_C0426A
 C0/421E: C8           INY
 C0/421F: BB           TYX
 C0/4220: BF 01 20 7F  LDA $7F2001,X
 C0/4224: 85 D9        STA $D9
 C0/4226: C9 00        CMP #$00
-C0/4228: D0 06        BNE $4230
+C0/4228: D0 06        BNE Local_C04230
 C0/422A: A5 6D        LDA $6D
 C0/422C: 85 8D        STA $8D
-C0/422E: 80 3A        BRA $426A
+C0/422E: 80 3A        BRA Local_C0426A
+Local_C04230:
 C0/4230: C9 01        CMP #$01
-C0/4232: D0 06        BNE $423A
+C0/4232: D0 06        BNE Local_C0423A
 C0/4234: A5 6D        LDA $6D
 C0/4236: 85 8E        STA $8E
-C0/4238: 80 30        BRA $426A
+C0/4238: 80 30        BRA Local_C0426A
+Local_C0423A:
 C0/423A: C9 02        CMP #$02
-C0/423C: D0 06        BNE $4244
+C0/423C: D0 06        BNE Local_C04244
 C0/423E: A5 6D        LDA $6D
 C0/4240: 85 8F        STA $8F
-C0/4242: 80 26        BRA $426A
+C0/4242: 80 26        BRA Local_C0426A
+Local_C04244:
 C0/4244: C9 03        CMP #$03
-C0/4246: D0 06        BNE $424E
+C0/4246: D0 06        BNE Local_C0424E
 C0/4248: A5 6D        LDA $6D
 C0/424A: 85 90        STA $90
-C0/424C: 80 1C        BRA $426A
+C0/424C: 80 1C        BRA Local_C0426A
+Local_C0424E:
 C0/424E: C9 04        CMP #$04
-C0/4250: D0 06        BNE $4258
+C0/4250: D0 06        BNE Local_C04258
 C0/4252: A5 6D        LDA $6D
 C0/4254: 85 91        STA $91
-C0/4256: 80 12        BRA $426A
+C0/4256: 80 12        BRA Local_C0426A
+Local_C04258:
 C0/4258: C9 05        CMP #$05
-C0/425A: D0 06        BNE $4262
+C0/425A: D0 06        BNE Local_C04262
 C0/425C: A5 6D        LDA $6D
 C0/425E: 85 92        STA $92
-C0/4260: 80 08        BRA $426A
+C0/4260: 80 08        BRA Local_C0426A
+Local_C04262:
 C0/4262: C9 06        CMP #$06
-C0/4264: D0 04        BNE $426A
+C0/4264: D0 04        BNE Local_C0426A
 C0/4266: A5 6D        LDA $6D
 C0/4268: 85 93        STA $93
+Local_C0426A:
 C0/426A: A5 D9        LDA $D9
 C0/426C: CF 80 29 7E  CMP $7E2980
-C0/4270: D0 04        BNE $4276
+C0/4270: D0 04        BNE Local_C04276
 C0/4272: A9 00        LDA #$00
-C0/4274: 80 26        BRA $429C
+C0/4274: 80 26        BRA Routine_C0429C
+Local_C04276:
 C0/4276: CF 81 29 7E  CMP $7E2981
-C0/427A: D0 05        BNE $4281
+C0/427A: D0 05        BNE Local_C04281
 C0/427C: A9 01        LDA #$01
-C0/427E: 82 8F 00     BRL $C04310
+C0/427E: 82 8F 00     BRL Routine_C04310
+Local_C04281:
 C0/4281: CF 82 29 7E  CMP $7E2982
-C0/4285: D0 05        BNE $428C
+C0/4285: D0 05        BNE Local_C0428C
 C0/4287: A9 02        LDA #$02
-C0/4289: 82 37 01     BRL $C043C3
+C0/4289: 82 37 01     BRL Routine_C043C3
+Local_C0428C:
 C0/428C: A9 80        LDA #$80
 C0/428E: A6 6D        LDX $6D
 C0/4290: 9D 00 11     STA $1100,X

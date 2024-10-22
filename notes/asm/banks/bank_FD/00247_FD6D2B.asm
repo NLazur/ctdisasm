@@ -1,13 +1,15 @@
 ; Bank: FD | Start Address: 6D2B
 Routine_FD6D2B:
-FD/6D2B: 10 00        BPL $6D2D
-FD/6D2D: 10 3D        BPL $6D6C
+Local_FD6D2B:
+FD/6D2B: 10 00        BPL Local_FD6D2D
+Local_FD6D2D:
+FD/6D2D: 10 3D        BPL Local_FD6D6C
 FD/6D2F: 02 F2        COP $F2
 FD/6D31: B6 44        LDX $44,Y
 FD/6D33: C7 5E        CMP [$5E]
 FD/6D35: 00 E7        BRK $E7
 FD/6D37: A0 FF        LDY #$FF
-FD/6D39: 30 F0        BMI $6D2B
+FD/6D39: 30 F0        BMI Local_FD6D2B
 FD/6D3B: 38           SEC
 FD/6D3C: 00 38        BRK $38
 FD/6D3E: 00 38        BRK $38
@@ -30,7 +32,8 @@ FD/6D63: 3B           TSC
 FD/6D64: C4 FF        CPY $FF
 FD/6D66: C0 02 40     CPY #$4002
 FD/6D69: FD FE 11     SBC $11FE,X
+Local_FD6D6C:
 FD/6D6C: C4 8F        CPY $8F
 FD/6D6E: 32 06        AND ($06)
-FD/6D70: 80 99        BRA $6D0B
+FD/6D70: 80 99        BRA Routine_FD6D0B
 FD/6D72: 60           RTS

@@ -6,10 +6,11 @@ D0/B5D3: 00 18        BRK $18
 D0/B5D5: 00 08        BRK $08
 D0/B5D7: 04 0A        TSB $0A
 D0/B5D9: 06 0A        ASL $0A
+Local_D0B5DB:
 D0/B5DB: 06 0B        ASL $0B
 D0/B5DD: 07 0B        ORA [$0B]
 D0/B5DF: 07 C0        ORA [$C0]
-D0/B5E1: F0 F8        BEQ $B5DB
+D0/B5E1: F0 F8        BEQ Local_D0B5DB
 D0/B5E3: FC FE FE     JSR ($FEFE,X)
 D0/B5E6: FF FF 00 00  SBC $0000FF,X
 D0/B5EA: 00 00        BRK $00

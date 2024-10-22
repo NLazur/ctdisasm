@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: C99A
 Routine_CDC99A:
-CD/C99A: 70 09        BVS $C9A5
+CD/C99A: 70 09        BVS Routine_CDC9A5
 CD/C99C: A8           TAY
 CD/C99D: 0A           ASL
 CD/C99E: 0A           ASL
@@ -9,7 +9,7 @@ CD/C9A0: 0A           ASL
 CD/C9A1: 0B           PHD
 CD/C9A2: A8           TAY
 CD/C9A3: 0A           ASL
-CD/C9A4: 20 0A 03     JSR $030A
+CD/C9A4: 20 0A 03     JSR Routine_CD030A
 CD/C9A7: 01 65        ORA ($65,X)
 CD/C9A9: 36 00        ROL $00,X
 CD/C9AB: 1B           TCS

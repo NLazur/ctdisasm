@@ -7,7 +7,7 @@ CE/0068: C6 D8        DEC $D8
 CE/006A: 16 D9        ASL $D9,X
 CE/006C: 2E D9 62     ROL $62D9
 CE/006F: D9 67 D9     CMP $D967,Y
-CE/0072: 70 D9        BVS $004D
+CE/0072: 70 D9        BVS Routine_CE004D
 CE/0074: 97 D9        STA [$D9],Y
 CE/0076: BE D9 CF     LDX $CFD9,Y
 CE/0079: D9 E1 D9     CMP $D9E1,Y
@@ -18,7 +18,7 @@ CE/0082: 67 DA        ADC [$DA]
 CE/0084: BB           TYX
 CE/0085: DA           PHX
 CE/0086: E0 DA        CPX #$DA
-CE/0088: 10 DB        BPL $0065
+CE/0088: 10 DB        BPL Routine_CE0065
 CE/008A: 1C DB 5D     TRB $5DDB
 CE/008D: DB           STP
 CE/008E: 65 DB        ADC $DB
@@ -68,7 +68,7 @@ CE/0115: 29 6B        AND #$6B
 CE/0117: 2D 8C 31     AND $318C
 CE/011A: AD 35 CE     LDA $CE35
 CE/011D: 39 EF 3D     AND $3DEF,Y
-CE/0120: 10 42        BPL $0164
+CE/0120: 10 42        BPL Routine_CE0164
 CE/0122: 31 46        AND ($46),Y
 CE/0124: 52 4A        EOR ($4A)
 CE/0126: 73 4E        ADC ($4E,S),Y

@@ -1,7 +1,8 @@
 ; Bank: D0 | Start Address: 0181
 Routine_D00181:
 D0/0181: C0 80        CPY #$80
-D0/0183: 80 00        BRA $0185
+D0/0183: 80 00        BRA Local_D00185
+Local_D00185:
 D0/0185: 00 00        BRK $00
 D0/0187: 00 00        BRK $00
 D0/0189: 00 00        BRK $00
@@ -21,8 +22,8 @@ D0/01A3: 00 00        BRK $00
 D0/01A5: 00 00        BRK $00
 D0/01A7: 00 00        BRK $00
 D0/01A9: 00 00        BRK $00
-D0/01AB: 20 20 20     JSR $2020
-D0/01AE: 80 80        BRA $0130
+D0/01AB: 20 20 20     JSR Routine_D02020
+D0/01AE: 80 80        BRA Routine_D00130
 D0/01B0: 00 00        BRK $00
 D0/01B2: 00 00        BRK $00
 D0/01B4: 00 00        BRK $00
@@ -33,6 +34,6 @@ D0/01BC: 01 01        ORA ($01,X)
 D0/01BE: 12 13        ORA ($13)
 D0/01C0: 00 00        BRK $00
 D0/01C2: 00 00        BRK $00
-D0/01C4: 80 80        BRA $0146
-D0/01C6: 80 80        BRA $0148
+D0/01C4: 80 80        BRA Routine_D00146
+D0/01C6: 80 80        BRA Routine_D00148
 D0/01C8: 40           RTI

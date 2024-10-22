@@ -28,15 +28,17 @@ D1/ADD7: 4A           LSR
 D1/ADD8: 4A           LSR
 D1/ADD9: 4A           LSR
 D1/ADDA: 4A           LSR
-D1/ADDB: 5C 9C 8A 8A  JMP $8A8A9C
+D1/ADDB: 5C 9C 8A 8A  JMP Routine_8A8A9C
 D1/ADDF: 8A           TXA
 D1/ADE0: 8A           TXA
 D1/ADE1: CA           DEX
 D1/ADE2: CA           DEX
 D1/ADE3: CA           DEX
+Local_D1ADE4:
 D1/ADE4: CA           DEX
 D1/ADE5: DC 9B 8A     JMP [$8A9B]
 D1/ADE8: 8A           TXA
+Local_D1ADE9:
 D1/ADE9: 8A           TXA
 D1/ADEA: 8A           TXA
 D1/ADEB: CA           DEX
@@ -91,7 +93,7 @@ D1/AE43: 0A           ASL
 D1/AE44: 4A           LSR
 D1/AE45: 4A           LSR
 D1/AE46: 4A           LSR
-D1/AE47: 50 18        BVC $AE61
+D1/AE47: 50 18        BVC Local_D1AE61
 D1/AE49: 0A           ASL
 D1/AE4A: 0A           ASL
 D1/AE4B: 0A           ASL
@@ -107,13 +109,14 @@ D1/AE54: CA           DEX
 D1/AE55: CA           DEX
 D1/AE56: CA           DEX
 D1/AE57: D8           CLD
-D1/AE58: 90 8A        BCC $ADE4
+D1/AE58: 90 8A        BCC Local_D1ADE4
 D1/AE5A: 8A           TXA
 D1/AE5B: 8A           TXA
 D1/AE5C: CA           DEX
 D1/AE5D: CA           DEX
 D1/AE5E: CA           DEX
-D1/AE5F: D0 88        BNE $ADE9
+D1/AE5F: D0 88        BNE Local_D1ADE9
+Local_D1AE61:
 D1/AE61: 89 8A        BIT #$8A
 D1/AE63: 8A           TXA
 D1/AE64: CA           DEX
@@ -127,15 +130,17 @@ D1/AE6F: 5A           PHY
 D1/AE70: 9A           TXS
 D1/AE71: DA           PHX
 D1/AE72: 01 1F        ORA ($1F,X)
-D1/AE74: 80 1F        BRA $AE95
-D1/AE76: 80 1F        BRA $AE97
-D1/AE78: 80 1F        BRA $AE99
-D1/AE7A: 80 1F        BRA $AE9B
-D1/AE7C: 80 1F        BRA $AE9D
-D1/AE7E: 80 00        BRA $AE80
+D1/AE74: 80 1F        BRA Routine_D1AE95
+D1/AE76: 80 1F        BRA Local_D1AE97
+D1/AE78: 80 1F        BRA Routine_D1AE99
+D1/AE7A: 80 1F        BRA Routine_D1AE9B
+D1/AE7C: 80 1F        BRA Local_D1AE9D
+D1/AE7E: 80 00        BRA Local_D1AE80
+Local_D1AE80:
 D1/AE80: 00 01        BRK $01
-D1/AE82: 80 01        BRA $AE85
-D1/AE84: 80 00        BRA $AE86
+D1/AE82: 80 01        BRA Routine_D1AE85
+D1/AE84: 80 00        BRA Local_D1AE86
+Local_D1AE86:
 D1/AE86: 00 00        BRK $00
 D1/AE88: 00 00        BRK $00
 D1/AE8A: 00 00        BRK $00
@@ -144,9 +149,11 @@ D1/AE8E: 00 00        BRK $00
 D1/AE90: 00 00        BRK $00
 D1/AE92: 00 15        BRK $15
 D1/AE94: 0E 0F 4F     ASL $4F0F
+Local_D1AE97:
 D1/AE97: 4E 55 1D     LSR $1D55
 D1/AE9A: 16 0A        ASL $0A,X
 D1/AE9C: 4A           LSR
+Local_D1AE9D:
 D1/AE9D: 56 5D        LSR $5D,X
 D1/AE9F: 1E 0A 0A     ASL $0A0A,X
 D1/AEA2: 4A           LSR
@@ -173,8 +180,9 @@ D1/AEC3: 00 0F        BRK $0F
 D1/AEC5: 00 00        BRK $00
 D1/AEC7: 00 00        BRK $00
 D1/AEC9: 00 01        BRK $01
-D1/AECB: 80 01        BRA $AECE
-D1/AECD: 80 00        BRA $AECF
+D1/AECB: 80 01        BRA Routine_D1AECE
+D1/AECD: 80 00        BRA Local_D1AECF
+Local_D1AECF:
 D1/AECF: 00 00        BRK $00
 D1/AED1: 00 00        BRK $00
 D1/AED3: 00 00        BRK $00
@@ -263,6 +271,7 @@ D1/AF83: FF FF FF FF  SBC $FFFFFF,X
 D1/AF87: FF FF FF FF  SBC $FFFFFF,X
 D1/AF8B: FF FF FF FF  SBC $FFFFFF,X
 D1/AF8F: FF FF FF FF  SBC $FFFFFF,X
+Local_D1AF93:
 D1/AF93: FF FF FF FF  SBC $FFFFFF,X
 D1/AF97: FF FF FF FF  SBC $FFFFFF,X
 D1/AF9B: FF FF FF FF  SBC $FFFFFF,X
@@ -281,32 +290,33 @@ D1/AFB4: 01 80        ORA ($80,X)
 D1/AFB6: 02 40        COP $40
 D1/AFB8: 04 20        TSB $20
 D1/AFBA: 1C 10 24     TRB $2410
-D1/AFBD: 10 23        BPL $AFE2
+D1/AFBD: 10 23        BPL Local_D1AFE2
 D1/AFBF: 88           DEY
 D1/AFC0: 43 CE        EOR $CE,S
 D1/AFC2: 84 49        STY $49
-D1/AFC4: 90 CD        BCC $AF93
-D1/AFC6: 4C 02 03     JMP $0302
+D1/AFC4: 90 CD        BCC Local_D1AF93
+D1/AFC6: 4C 02 03     JMP Routine_D10302
 D1/AFC9: 88           DEY
 D1/AFCA: 0D 48 00     ORA $0048
 D1/AFCD: 01 84        ORA ($84,X)
 D1/AFCF: CA           DEX
-D1/AFD0: 90 50        BCC $B022
+D1/AFD0: 90 50        BCC Routine_D1B022
 D1/AFD2: 08           PHP
 D1/AFD3: 88           DEY
 D1/AFD4: 84 4A        STY $4A
-D1/AFD6: 10 48        BPL $B020
+D1/AFD6: 10 48        BPL Routine_D1B020
 D1/AFD8: 0A           ASL
 D1/AFD9: 0B           PHD
 D1/AFDA: 8D 06 07     STA $0706
-D1/AFDD: 50 08        BVC $AFE7
+D1/AFDD: 50 08        BVC Routine_D1AFE7
 D1/AFDF: 0E 0F 8A     ASL $8A0F
-D1/AFE2: 4C 10 45     JMP $4510
+Local_D1AFE2:
+D1/AFE2: 4C 10 45     JMP Routine_D14510
 D1/AFE5: 0D 0C 85     ORA $850C
 D1/AFE8: 05 4C        ORA $4C
 D1/AFEA: 08           PHP
 D1/AFEB: 4D 04 4A     EOR $4A04
-D1/AFEE: 10 48        BPL $B038
+D1/AFEE: 10 48        BPL Routine_D1B038
 D1/AFF0: 08           PHP
 D1/AFF1: 8D 50 10     STA $1050
 D1/AFF4: 4D 06 07     EOR $0706
@@ -314,10 +324,10 @@ D1/AFF7: 48           PHA
 D1/AFF8: 0C CD 0E     TSB $0ECD
 D1/AFFB: 0F 48 50 0A  ORA $0A5048
 D1/AFFF: 44 0D 0C     MVP $0D,$0C
-D1/B002: 50 CD        BVC $AFD1
+D1/B002: 50 CD        BVC Routine_D1AFD1
 D1/B004: 48           PHA
 D1/B005: 01 0D        ORA ($0D,X)
-D1/B007: 22 0C C4 04  JSR $04C40C
+D1/B007: 22 0C C4 04  JSR Routine_04C40C
 D1/B00B: F8           SED
 D1/B00C: 07 28        ORA [$28]
 D1/B00E: 02 18        COP $18

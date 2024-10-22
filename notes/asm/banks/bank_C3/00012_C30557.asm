@@ -26,18 +26,21 @@ C3/057A: 48           PHA
 C3/057B: AB           PLB
 C3/057C: B2 09        LDA ($09)
 C3/057E: 29 C0        AND #$C0
-C3/0580: D0 0C        BNE $058E
+C3/0580: D0 0C        BNE Local_C3058E
 C3/0582: A5 05        LDA $05
 C3/0584: 8F 83 21 00  STA $002183
 C3/0588: 4A           LSR
-C3/0589: 90 5A        BCC $05E5
-C3/058B: 4C A8 06     JMP $06A8
+C3/0589: 90 5A        BCC Local_C305E5
+C3/058B: 4C A8 06     JMP Local_C306A8
+Local_C3058E:
 C3/058E: A5 05        LDA $05
 C3/0590: 8F 83 21 00  STA $002183
 C3/0594: 4A           LSR
-C3/0595: 90 03        BCC $059A
-C3/0597: 4C 2D 08     JMP $082D
-C3/059A: 4C 6B 07     JMP $076B
+C3/0595: 90 03        BCC Local_C3059A
+C3/0597: 4C 2D 08     JMP Local_C3082D
+Local_C3059A:
+C3/059A: 4C 6B 07     JMP Local_C3076B
+Local_C3059D:
 C3/059D: BD 01 00     LDA $0001,X
 C3/05A0: 8F 80 21 00  STA $002180
 C3/05A4: BD 02 00     LDA $0002,X
@@ -62,30 +65,34 @@ C3/05DC: 98           TYA
 C3/05DD: 69 08 00     ADC #$0008
 C3/05E0: A8           TAY
 C3/05E1: E2 20        SEP #$20
-C3/05E3: 80 04        BRA $05E9
+C3/05E3: 80 04        BRA Local_C305E9
+Local_C305E5:
 C3/05E5: A9 08        LDA #$08
 C3/05E7: 85 0B        STA $0B
+Local_C305E9:
 C3/05E9: E4 09        CPX $09
-C3/05EB: F0 57        BEQ $0644
+C3/05EB: F0 57        BEQ Local_C30644
 C3/05ED: BD 00 00     LDA $0000,X
-C3/05F0: F0 AB        BEQ $059D
+C3/05F0: F0 AB        BEQ Local_C3059D
 C3/05F2: E8           INX
 C3/05F3: 4A           LSR
 C3/05F4: 85 0D        STA $0D
-C3/05F6: B0 1C        BCS $0614
+C3/05F6: B0 1C        BCS Local_C30614
 C3/05F8: BD 00 00     LDA $0000,X
 C3/05FB: 8F 80 21 00  STA $002180
 C3/05FF: C8           INY
 C3/0600: E8           INX
+Local_C30601:
 C3/0601: C6 0B        DEC $0B
-C3/0603: F0 E0        BEQ $05E5
+C3/0603: F0 E0        BEQ Local_C305E5
 C3/0605: 46 0D        LSR $0D
-C3/0607: B0 0B        BCS $0614
+C3/0607: B0 0B        BCS Local_C30614
 C3/0609: BD 00 00     LDA $0000,X
 C3/060C: 8F 80 21 00  STA $002180
 C3/0610: C8           INY
 C3/0611: E8           INX
-C3/0612: 80 ED        BRA $0601
+C3/0612: 80 ED        BRA Local_C30601
+Local_C30614:
 C3/0614: BD 01 00     LDA $0001,X
 C3/0617: 4A           LSR
 C3/0618: 4A           LSR
@@ -113,10 +120,11 @@ C3/063C: E2 20        SEP #$20
 C3/063E: A6 15        LDX $15
 C3/0640: E8           INX
 C3/0641: E8           INX
-C3/0642: 80 BD        BRA $0601
+C3/0642: 80 BD        BRA Local_C30601
+Local_C30644:
 C3/0644: BD 00 00     LDA $0000,X
 C3/0647: 29 3F        AND #$3F
-C3/0649: F0 12        BEQ $065D
+C3/0649: F0 12        BEQ Local_C3065D
 C3/064B: 85 0B        STA $0B
 C3/064D: C2 21        REP #$21
 C3/064F: BD 01 00     LDA $0001,X
@@ -126,8 +134,10 @@ C3/0656: E8           INX
 C3/0657: E8           INX
 C3/0658: E8           INX
 C3/0659: E2 20        SEP #$20
-C3/065B: 80 8C        BRA $05E9
-C3/065D: 4C A4 08     JMP $08A4
+C3/065B: 80 8C        BRA Local_C305E9
+Local_C3065D:
+C3/065D: 4C A4 08     JMP Local_C308A4
+Local_C30660:
 C3/0660: BD 01 00     LDA $0001,X
 C3/0663: 8F 80 21 00  STA $002180
 C3/0667: BD 02 00     LDA $0002,X
@@ -152,30 +162,34 @@ C3/069F: 98           TYA
 C3/06A0: 69 08 00     ADC #$0008
 C3/06A3: A8           TAY
 C3/06A4: E2 20        SEP #$20
-C3/06A6: 80 04        BRA $06AC
+C3/06A6: 80 04        BRA Local_C306AC
+Local_C306A8:
 C3/06A8: A9 08        LDA #$08
 C3/06AA: 85 0B        STA $0B
+Local_C306AC:
 C3/06AC: E4 09        CPX $09
-C3/06AE: F0 57        BEQ $0707
+C3/06AE: F0 57        BEQ Local_C30707
 C3/06B0: BD 00 00     LDA $0000,X
-C3/06B3: F0 AB        BEQ $0660
+C3/06B3: F0 AB        BEQ Local_C30660
 C3/06B5: E8           INX
 C3/06B6: 4A           LSR
 C3/06B7: 85 0D        STA $0D
-C3/06B9: B0 1C        BCS $06D7
+C3/06B9: B0 1C        BCS Local_C306D7
 C3/06BB: BD 00 00     LDA $0000,X
 C3/06BE: 8F 80 21 00  STA $002180
 C3/06C2: C8           INY
 C3/06C3: E8           INX
+Local_C306C4:
 C3/06C4: C6 0B        DEC $0B
-C3/06C6: F0 E0        BEQ $06A8
+C3/06C6: F0 E0        BEQ Local_C306A8
 C3/06C8: 46 0D        LSR $0D
-C3/06CA: B0 0B        BCS $06D7
+C3/06CA: B0 0B        BCS Local_C306D7
 C3/06CC: BD 00 00     LDA $0000,X
 C3/06CF: 8F 80 21 00  STA $002180
 C3/06D3: C8           INY
 C3/06D4: E8           INX
-C3/06D5: 80 ED        BRA $06C4
+C3/06D5: 80 ED        BRA Local_C306C4
+Local_C306D7:
 C3/06D7: BD 01 00     LDA $0001,X
 C3/06DA: 4A           LSR
 C3/06DB: 4A           LSR
@@ -203,10 +217,11 @@ C3/06FF: E2 20        SEP #$20
 C3/0701: A6 15        LDX $15
 C3/0703: E8           INX
 C3/0704: E8           INX
-C3/0705: 80 BD        BRA $06C4
+C3/0705: 80 BD        BRA Local_C306C4
+Local_C30707:
 C3/0707: BD 00 00     LDA $0000,X
 C3/070A: 29 3F        AND #$3F
-C3/070C: F0 12        BEQ $0720
+C3/070C: F0 12        BEQ Local_C30720
 C3/070E: 85 0B        STA $0B
 C3/0710: C2 21        REP #$21
 C3/0712: BD 01 00     LDA $0001,X
@@ -216,8 +231,10 @@ C3/0719: E8           INX
 C3/071A: E8           INX
 C3/071B: E8           INX
 C3/071C: E2 20        SEP #$20
-C3/071E: 80 8C        BRA $06AC
-C3/0720: 4C A4 08     JMP $08A4
+C3/071E: 80 8C        BRA Local_C306AC
+Local_C30720:
+C3/0720: 4C A4 08     JMP Local_C308A4
+Local_C30723:
 C3/0723: BD 01 00     LDA $0001,X
 C3/0726: 8F 80 21 00  STA $002180
 C3/072A: BD 02 00     LDA $0002,X
@@ -242,30 +259,34 @@ C3/0762: 98           TYA
 C3/0763: 69 08 00     ADC #$0008
 C3/0766: A8           TAY
 C3/0767: E2 20        SEP #$20
-C3/0769: 80 04        BRA $076F
+C3/0769: 80 04        BRA Local_C3076F
+Local_C3076B:
 C3/076B: A9 08        LDA #$08
 C3/076D: 85 0B        STA $0B
+Local_C3076F:
 C3/076F: E4 09        CPX $09
-C3/0771: F0 56        BEQ $07C9
+C3/0771: F0 56        BEQ Local_C307C9
 C3/0773: BD 00 00     LDA $0000,X
-C3/0776: F0 AB        BEQ $0723
+C3/0776: F0 AB        BEQ Local_C30723
 C3/0778: E8           INX
 C3/0779: 4A           LSR
 C3/077A: 85 0D        STA $0D
-C3/077C: B0 1C        BCS $079A
+C3/077C: B0 1C        BCS Local_C3079A
 C3/077E: BD 00 00     LDA $0000,X
 C3/0781: 8F 80 21 00  STA $002180
 C3/0785: C8           INY
 C3/0786: E8           INX
+Local_C30787:
 C3/0787: C6 0B        DEC $0B
-C3/0789: F0 E0        BEQ $076B
+C3/0789: F0 E0        BEQ Local_C3076B
 C3/078B: 46 0D        LSR $0D
-C3/078D: B0 0B        BCS $079A
+C3/078D: B0 0B        BCS Local_C3079A
 C3/078F: BD 00 00     LDA $0000,X
 C3/0792: 8F 80 21 00  STA $002180
 C3/0796: C8           INY
 C3/0797: E8           INX
-C3/0798: 80 ED        BRA $0787
+C3/0798: 80 ED        BRA Local_C30787
+Local_C3079A:
 C3/079A: BD 01 00     LDA $0001,X
 C3/079D: 4A           LSR
 C3/079E: 4A           LSR
@@ -292,10 +313,11 @@ C3/07C1: E2 20        SEP #$20
 C3/07C3: A6 15        LDX $15
 C3/07C5: E8           INX
 C3/07C6: E8           INX
-C3/07C7: 80 BE        BRA $0787
+C3/07C7: 80 BE        BRA Local_C30787
+Local_C307C9:
 C3/07C9: BD 00 00     LDA $0000,X
 C3/07CC: 29 3F        AND #$3F
-C3/07CE: F0 12        BEQ $07E2
+C3/07CE: F0 12        BEQ Local_C307E2
 C3/07D0: 85 0B        STA $0B
 C3/07D2: C2 21        REP #$21
 C3/07D4: BD 01 00     LDA $0001,X
@@ -305,8 +327,10 @@ C3/07DB: E8           INX
 C3/07DC: E8           INX
 C3/07DD: E8           INX
 C3/07DE: E2 20        SEP #$20
-C3/07E0: 80 8D        BRA $076F
-C3/07E2: 4C A4 08     JMP $08A4
+C3/07E0: 80 8D        BRA Local_C3076F
+Local_C307E2:
+C3/07E2: 4C A4 08     JMP Local_C308A4
+Local_C307E5:
 C3/07E5: BD 01 00     LDA $0001,X
 C3/07E8: 8F 80 21 00  STA $002180
 C3/07EC: BD 02 00     LDA $0002,X
@@ -331,30 +355,34 @@ C3/0824: 98           TYA
 C3/0825: 69 08 00     ADC #$0008
 C3/0828: A8           TAY
 C3/0829: E2 20        SEP #$20
-C3/082B: 80 04        BRA $0831
+C3/082B: 80 04        BRA Local_C30831
+Local_C3082D:
 C3/082D: A9 08        LDA #$08
 C3/082F: 85 0B        STA $0B
+Local_C30831:
 C3/0831: E4 09        CPX $09
-C3/0833: F0 56        BEQ $088B
+C3/0833: F0 56        BEQ Local_C3088B
 C3/0835: BD 00 00     LDA $0000,X
-C3/0838: F0 AB        BEQ $07E5
+C3/0838: F0 AB        BEQ Local_C307E5
 C3/083A: E8           INX
 C3/083B: 4A           LSR
 C3/083C: 85 0D        STA $0D
-C3/083E: B0 1C        BCS $085C
+C3/083E: B0 1C        BCS Local_C3085C
 C3/0840: BD 00 00     LDA $0000,X
 C3/0843: 8F 80 21 00  STA $002180
 C3/0847: C8           INY
 C3/0848: E8           INX
+Local_C30849:
 C3/0849: C6 0B        DEC $0B
-C3/084B: F0 E0        BEQ $082D
+C3/084B: F0 E0        BEQ Local_C3082D
 C3/084D: 46 0D        LSR $0D
-C3/084F: B0 0B        BCS $085C
+C3/084F: B0 0B        BCS Local_C3085C
 C3/0851: BD 00 00     LDA $0000,X
 C3/0854: 8F 80 21 00  STA $002180
 C3/0858: C8           INY
 C3/0859: E8           INX
-C3/085A: 80 ED        BRA $0849
+C3/085A: 80 ED        BRA Local_C30849
+Local_C3085C:
 C3/085C: BD 01 00     LDA $0001,X
 C3/085F: 4A           LSR
 C3/0860: 4A           LSR
@@ -381,10 +409,11 @@ C3/0883: E2 20        SEP #$20
 C3/0885: A6 15        LDX $15
 C3/0887: E8           INX
 C3/0888: E8           INX
-C3/0889: 80 BE        BRA $0849
+C3/0889: 80 BE        BRA Local_C30849
+Local_C3088B:
 C3/088B: BD 00 00     LDA $0000,X
 C3/088E: 29 3F        AND #$3F
-C3/0890: F0 12        BEQ $08A4
+C3/0890: F0 12        BEQ Local_C308A4
 C3/0892: 85 0B        STA $0B
 C3/0894: C2 21        REP #$21
 C3/0896: BD 01 00     LDA $0001,X
@@ -394,7 +423,8 @@ C3/089D: E8           INX
 C3/089E: E8           INX
 C3/089F: E8           INX
 C3/08A0: E2 20        SEP #$20
-C3/08A2: 80 8D        BRA $0831
+C3/08A2: 80 8D        BRA Local_C30831
+Local_C308A4:
 C3/08A4: C2 20        REP #$20
 C3/08A6: 98           TYA
 C3/08A7: 38           SEC

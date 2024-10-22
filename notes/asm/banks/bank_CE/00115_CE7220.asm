@@ -13,12 +13,13 @@ CE/7233: 04 30        TSB $30
 CE/7235: 05 10        ORA $10
 CE/7237: 36 1B        ROL $1B,X
 CE/7239: 03 85        ORA $85,S
-CE/723B: 70 A8        BVS $71E5
+CE/723B: 70 A8        BVS Routine_CE71E5
 CE/723D: 03 24        ORA $24,S
 CE/723F: 03 D9        ORA $D9,S
-CE/7241: 30 0C        BMI $724F
-CE/7243: 70 02        BVS $7247
+CE/7241: 30 0C        BMI Routine_CE724F
+CE/7243: 70 02        BVS Local_CE7247
 CE/7245: 04 85        TSB $85
+Local_CE7247:
 CE/7247: C0 A8 0A     CPY #$0AA8
 CE/724A: 0D A8 64     ORA $64A8
 CE/724D: 6F 00 F0 80  ADC $80F000
@@ -31,7 +32,7 @@ CE/725C: 73 85        ADC ($85,S),Y
 CE/725E: 09 93 09     ORA #$0993
 CE/7261: 93 09        STA ($09,S),Y
 CE/7263: 72 0D        ADC ($0D)
-CE/7265: 20 01 3D     JSR $3D01
+CE/7265: 20 01 3D     JSR Routine_CE3D01
 CE/7268: 00 82        BRK $82
 CE/726A: 00 3F        BRK $3F
 CE/726C: 02 84        COP $84
@@ -43,7 +44,7 @@ CE/7279: C0 20 28     CPY #$2820
 CE/727C: D9 30 27     CMP $2730,Y
 CE/727F: 76 19        ROR $19,X
 CE/7281: 03 22        ORA $22,S
-CE/7283: 10 01        BPL $7286
+CE/7283: 10 01        BPL Routine_CE7286
 CE/7285: 34 00        BIT $00,X
 CE/7287: 12 03        ORA ($03)
 CE/7289: 78           SEI
@@ -53,8 +54,8 @@ CE/728F: 0C 20 18     TSB $1820
 CE/7292: 06 03        ASL $03
 CE/7294: 36 24        ROL $24,X
 CE/7296: 03 2D        ORA $2D,S
-CE/7298: 80 12        BRA $72AC
-CE/729A: D0 1E        BNE $72BA
+CE/7298: 80 12        BRA Routine_CE72AC
+CE/729A: D0 1E        BNE Routine_CE72BA
 CE/729C: 2A           ROL
 CE/729D: DA           PHX
 CE/729E: 28           PLP

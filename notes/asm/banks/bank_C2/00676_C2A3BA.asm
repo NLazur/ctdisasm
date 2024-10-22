@@ -19,6 +19,6 @@ C2/A3E0: D2 00        CMP ($00)
 C2/A3E2: 08           PHP
 C2/A3E3: C2 30        REP #$30
 C2/A3E5: A2 62 30     LDX #$3062
-C2/A3E8: 20 ED A3     JSR $A3ED
+C2/A3E8: 20 ED A3     JSR Routine_C2A3ED
 C2/A3EB: 28           PLP
 C2/A3EC: 60           RTS

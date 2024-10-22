@@ -17,6 +17,7 @@ C2/0C6D: A2 00 B4     LDX #$B400
 C2/0C70: A0 00 B0     LDY #$B000
 C2/0C73: A9 08 00     LDA #$0008
 C2/0C76: 85 08        STA $08
+Local_C20C78:
 C2/0C78: BD 00 00     LDA $0000,X
 C2/0C7B: 99 00 00     STA $0000,Y
 C2/0C7E: BD 02 00     LDA $0002,X
@@ -58,6 +59,6 @@ C2/0CDF: 18           CLC
 C2/0CE0: 69 80 00     ADC #$0080
 C2/0CE3: A8           TAY
 C2/0CE4: C6 08        DEC $08
-C2/0CE6: D0 90        BNE $0C78
+C2/0CE6: D0 90        BNE Local_C20C78
 C2/0CE8: AB           PLB
 C2/0CE9: 60           RTS

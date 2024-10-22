@@ -1,27 +1,27 @@
 ; Bank: D0 | Start Address: 948C
 Routine_D0948C:
-D0/948C: F0 30        BEQ $94BE
-D0/948E: F0 70        BEQ $9500
+D0/948C: F0 30        BEQ Routine_D094BE
+D0/948E: F0 70        BEQ Routine_D09500
 D0/9490: F8           SED
 D0/9491: F8           SED
 D0/9492: 78           SEI
 D0/9493: F8           SED
 D0/9494: F8           SED
 D0/9495: F8           SED
-D0/9496: F0 F0        BEQ $9488
+D0/9496: F0 F0        BEQ Routine_D09488
 D0/9498: A0 E0        LDY #$E0
-D0/949A: B0 70        BCS $950C
+D0/949A: B0 70        BCS Local_D0950C
 D0/949C: B8           CLV
 D0/949D: 78           SEI
 D0/949E: B8           CLV
-D0/949F: 30 0F        BMI $94B0
+D0/949F: 30 0F        BMI Routine_D094B0
 D0/94A1: 08           PHP
 D0/94A2: 17 18        ORA [$18],Y
 D0/94A4: 17 18        ORA [$18],Y
 D0/94A6: 2E 31 20     ROL $2031
 D0/94A9: 33 29        AND ($29,S),Y
 D0/94AB: 32 39        AND ($39)
-D0/94AD: 22 15 1A 08  JSR $081A15
+D0/94AD: 22 15 1A 08  JSR Routine_081A15
 D0/94B1: 18           CLC
 D0/94B2: 1C 3F 3F     TRB $3F3F
 D0/94B5: 3F 2F 1F EF  AND $EF1F2F,X
@@ -57,8 +57,10 @@ D0/9505: 67 09        ADC [$09]
 D0/9507: 06 19        ASL $19
 D0/9509: 06 14        ASL $14
 D0/950B: 0B           PHD
+Local_D0950C:
 D0/950C: ED 12 0F     SBC $0F12
-D0/950F: F0 FE        BEQ $950F
+Local_D0950F:
+D0/950F: F0 FE        BEQ Local_D0950F
 D0/9511: 9F 9F FF FF  STA $FFFF9F,X
 D0/9515: FB           XCE
 D0/9516: F2 F0        SBC ($F0)
@@ -75,7 +77,7 @@ D0/952A: 1E 1E 1E     ASL $1E1E,X
 D0/952D: 1D 1D 3D     ORA $3D1D,X
 D0/9530: 78           SEI
 D0/9531: 78           SEI
-D0/9532: 70 70        BVS $95A4
+D0/9532: 70 70        BVS Local_D095A4
 D0/9534: 00 00        BRK $00
 D0/9536: 00 00        BRK $00
 D0/9538: 00 00        BRK $00
@@ -83,7 +85,8 @@ D0/953A: 00 00        BRK $00
 D0/953C: 00 00        BRK $00
 D0/953E: 00 00        BRK $00
 D0/9540: 78           SEI
-D0/9541: 70 00        BVS $9543
+D0/9541: 70 00        BVS Local_D09543
+Local_D09543:
 D0/9543: 00 00        BRK $00
 D0/9545: 00 00        BRK $00
 D0/9547: 00 08        BRK $08
@@ -110,6 +113,7 @@ D0/956B: 0F 1E 1E 1C  ORA $1C1E1E
 D0/956F: 1C FF FF     TRB $FFFF
 D0/9572: 0F 1D 1F 0F  ORA $0F1F1D
 D0/9576: 1E 1C E7     ASL $E71C,X
+Local_D09579:
 D0/9579: DC FF C4     JMP [$C4FF]
 D0/957C: E7 E6        SBC [$E6]
 D0/957E: F7 E3        SBC [$E3],Y
@@ -121,17 +125,18 @@ D0/958A: FE FB 6F     INC $6FFB,X
 D0/958D: 7E 3C 3C     ROR $3C3C,X
 D0/9590: 7C FF 3E     JMP ($3EFF,X)
 D0/9593: FF 77 97 90  SBC $909777,X
-D0/9597: F0 E0        BEQ $9579
+D0/9597: F0 E0        BEQ Local_D09579
 D0/9599: E0 E0        CPX #$E0
 D0/959B: E0 00        CPX #$00
 D0/959D: 00 00        BRK $00
 D0/959F: 00 FC        BRK $FC
 D0/95A1: FE F7 F0     INC $F0F7,X
+Local_D095A4:
 D0/95A4: E0 E0        CPX #$E0
 D0/95A6: 00 00        BRK $00
 D0/95A8: C0 C0        CPY #$C0
 D0/95AA: C0 C0        CPY #$C0
-D0/95AC: 80 80        BRA $952E
+D0/95AC: 80 80        BRA Routine_D0952E
 D0/95AE: 00 00        BRK $00
 D0/95B0: 00 00        BRK $00
 D0/95B2: 00 00        BRK $00

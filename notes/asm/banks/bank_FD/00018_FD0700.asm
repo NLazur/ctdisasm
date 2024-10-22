@@ -51,6 +51,7 @@ FD/0753: 44 64 26     MVP $64,$26
 FD/0756: 33 32        AND ($32,S),Y
 FD/0758: 43 46        EOR $46,S
 FD/075A: 00 33        BRK $33
+Local_FD075C:
 FD/075C: 42 66        WDM $66
 FD/075E: 35 22        AND $22,X
 FD/0760: 43 76        EOR $76,S
@@ -59,14 +60,14 @@ FD/0764: 32 34        AND ($34)
 FD/0766: 75 43        ADC $43,X
 FD/0768: 23 34        AND $34,S
 FD/076A: 44 E4 00     MVP $E4,$00
-FD/076D: 10 81        BPL $06F0
+FD/076D: 10 81        BPL Routine_FD06F0
 FD/076F: 64 23        STZ $23
-FD/0771: 22 10 12 11  JSR $111210
+FD/0771: 22 10 12 11  JSR Routine_111210
 FD/0775: 67 34        ADC [$34]
 FD/0777: 00 22        BRK $22
 FD/0779: 12 44        ORA ($44)
 FD/077B: 64 24        STZ $24
-FD/077D: 22 44 64 10  JSR $106444
+FD/077D: 22 44 64 10  JSR Routine_106444
 FD/0781: 34 12        BIT $12,X
 FD/0783: 44 44 08     MVP $44,$08
 FD/0786: 00 46        BRK $46
@@ -95,8 +96,8 @@ FD/07B9: FD 04 20     SBC $2004,X
 FD/07BC: BB           TYX
 FD/07BD: FC 01 17     JSR ($1701,X)
 FD/07C0: 11 04        ORA ($04),Y
-FD/07C2: 50 01        BVC $07C5
-FD/07C4: F0 1E        BEQ $07E4
+FD/07C2: 50 01        BVC Routine_FD07C5
+FD/07C4: F0 1E        BEQ Local_FD07E4
 FD/07C6: D1 04        CMP ($04),Y
 FD/07C8: 01 00        ORA ($00,X)
 FD/07CA: 88           DEY
@@ -105,7 +106,7 @@ FD/07CC: 67 98        ADC [$98]
 FD/07CE: 88           DEY
 FD/07CF: 88           DEY
 FD/07D0: 46 88        LSR $88
-FD/07D2: 10 88        BPL $075C
+FD/07D2: 10 88        BPL Local_FD075C
 FD/07D4: 88           DEY
 FD/07D5: 67 78        ADC [$78]
 FD/07D7: 05 00        ORA $00
@@ -117,6 +118,7 @@ FD/07DE: 68           PLA
 FD/07DF: 87 0E        STA [$0E]
 FD/07E1: 00 88        BRK $88
 FD/07E3: 88           DEY
+Local_FD07E4:
 FD/07E4: 87 77        STA [$77]
 FD/07E6: 00 77        BRK $77
 FD/07E8: 75 66        ADC $66,X
@@ -126,5 +128,5 @@ FD/07EE: 64 20        STZ $20
 FD/07F0: 66 88        ROR $88
 FD/07F2: 88           DEY
 FD/07F3: 77 87        ADC [$87],Y
-FD/07F5: 22 02 86 76  JSR $768602
+FD/07F5: 22 02 86 76  JSR Routine_768602
 FD/07F9: 40           RTI

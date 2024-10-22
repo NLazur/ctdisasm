@@ -6,7 +6,7 @@ FF/346D: 00 00        BRK $00
 FF/346F: 00 7C        BRK $7C
 FF/3471: 78           SEI
 FF/3472: FE 8C 8E     INC $8E8C,X
-FF/3475: 4C 0E 0C     JMP $0C0E
+FF/3475: 4C 0E 0C     JMP Routine_FF0C0E
 FF/3478: 1C 1A 38     TRB $381A
 FF/347B: 34 70        BIT $70,X
 FF/347D: 68           PLA
@@ -28,7 +28,7 @@ FF/349D: 00 00        BRK $00
 FF/349F: 00 0E        BRK $0E
 FF/34A1: 0C 1E 1C     TSB $1C1E
 FF/34A4: 3E 2C 6E     ROL $6E2C,X
-FF/34A7: 5C CE AC FF  JMP $FFACCE
+FF/34A7: 5C CE AC FF  JMP Routine_FFACCE
 FF/34AB: FE FE 0D     INC $0DFE,X
 FF/34AE: 0E 0C 0C     ASL $0C0C
 FF/34B1: 02 00        COP $00
@@ -47,8 +47,9 @@ FF/34CD: 00 00        BRK $00
 FF/34CF: 00 3C        BRK $3C
 FF/34D1: 38           SEC
 FF/34D2: 78           SEI
+Local_FF34D3:
 FF/34D3: 64 E0        STZ $E0
-FF/34D5: D0 FC        BNE $34D3
+FF/34D5: D0 FC        BNE Local_FF34D3
 FF/34D7: F8           SED
 FF/34D8: FE CC EE     INC $EECC,X
 FF/34DB: CC EE CC     CPY $CCEE
@@ -62,8 +63,8 @@ FF/34EC: 0E 0C 0E     ASL $0E0C
 FF/34EF: 0C 1C 1A     TSB $1A1C
 FF/34F2: 38           SEC
 FF/34F3: 34 38        BIT $38,X
-FF/34F5: 30 38        BMI $352F
-FF/34F7: 30 30        BMI $3529
+FF/34F5: 30 38        BMI Routine_FF352F
+FF/34F7: 30 30        BMI Local_FF3529
 FF/34F9: 08           PHP
 FF/34FA: 00 00        BRK $00
 FF/34FC: 00 00        BRK $00
@@ -86,6 +87,7 @@ FF/3520: FE 7C 7E     INC $7E7C,X
 FF/3523: 0C 1C 1A     TSB $1A1C
 FF/3526: 78           SEI
 FF/3527: 74 70        STZ $70,X
+Local_FF3529:
 FF/3529: 08           PHP
 FF/352A: 00 00        BRK $00
 FF/352C: 00 00        BRK $00
@@ -103,17 +105,17 @@ FF/3548: 7C 78 FE     JMP ($FE78,X)
 FF/354B: 8C 8E 4C     STY $4C8E
 FF/354E: 1C 1A 38     TRB $381A
 FF/3551: 34 38        BIT $38,X
-FF/3553: 30 30        BMI $3585
+FF/3553: 30 30        BMI Routine_FF3585
 FF/3555: 08           PHP
 FF/3556: 38           SEC
-FF/3557: 30 38        BMI $3591
-FF/3559: 30 30        BMI $358B
+FF/3557: 30 38        BMI Routine_FF3591
+FF/3559: 30 30        BMI Routine_FF358B
 FF/355B: 08           PHP
 FF/355C: 00 00        BRK $00
 FF/355E: 00 00        BRK $00
 FF/3560: 18           CLC
-FF/3561: 10 18        BPL $357B
-FF/3563: 10 30        BPL $3595
+FF/3561: 10 18        BPL Routine_FF357B
+FF/3563: 10 30        BPL Routine_FF3595
 FF/3565: 28           PLP
-FF/3566: 30 20        BMI $3588
+FF/3566: 30 20        BMI Routine_FF3588
 FF/3568: 60           RTS

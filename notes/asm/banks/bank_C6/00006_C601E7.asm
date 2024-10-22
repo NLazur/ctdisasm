@@ -1,12 +1,13 @@
 ; Bank: C6 | Start Address: 01E7
 Routine_C601E7:
-C6/01E7: 10 00        BPL $01E9
-C6/01E9: B0 C0        BCS $01AB
+C6/01E7: 10 00        BPL Local_C601E9
+Local_C601E9:
+C6/01E9: B0 C0        BCS Routine_C601AB
 C6/01EB: 3E 9F 02     ROL $029F,X
-C6/01EE: 30 CD        BMI $01BD
-C6/01F0: F0 01        BEQ $01F3
-C6/01F2: F0 01        BEQ $01F5
-C6/01F4: F0 7E        BEQ $0274
+C6/01EE: 30 CD        BMI Routine_C601BD
+C6/01F0: F0 01        BEQ Routine_C601F3
+C6/01F2: F0 01        BEQ Routine_C601F5
+C6/01F4: F0 7E        BEQ Local_C60274
 C6/01F6: 81 03        STA ($03,X)
 C6/01F8: 01 FC        ORA ($FC,X)
 C6/01FA: 00 00        BRK $00
@@ -15,7 +16,8 @@ C6/01FE: 1F 01 0E 23  ORA $230E01,X
 C6/0202: 1A           INC
 C6/0203: 07 08        ORA [$08]
 C6/0205: 3D 47 03     AND $0347,X
-C6/0208: 80 00        BRA $020A
+C6/0208: 80 00        BRA Local_C6020A
+Local_C6020A:
 C6/020A: 06 01        ASL $01
 C6/020C: 0F 00 80 7D  ORA $7D8000
 C6/0210: 02 5F        COP $5F
@@ -26,7 +28,7 @@ C6/0218: 9B           TXY
 C6/0219: 01 F0        ORA ($F0,X)
 C6/021B: 09 60        ORA #$60
 C6/021D: 03 3D        ORA $3D,S
-C6/021F: 10 DE        BPL $01FF
+C6/021F: 10 DE        BPL Routine_C601FF
 C6/0221: F1 03        SBC ($03),Y
 C6/0223: 07 02        ORA [$02]
 C6/0225: 00 01        BRK $01
@@ -38,7 +40,7 @@ C6/0230: 02 04        COP $04
 C6/0232: 02 20        COP $20
 C6/0234: 0C 00 09     TSB $0900
 C6/0237: 00 19        BRK $19
-C6/0239: 20 00 33     JSR $3300
+C6/0239: 20 00 33     JSR Routine_C63300
 C6/023C: 00 82        BRK $82
 C6/023E: FF 6F FF EB  SBC $EBFF6F,X
 C6/0242: 7B           TDC
@@ -62,6 +64,7 @@ C6/026A: 00 BF        BRK $BF
 C6/026C: 3F FF 06 00  AND $0006FF,X
 C6/0270: 04 02        TSB $02
 C6/0272: 04 B4        TSB $B4
+Local_C60274:
 C6/0274: 02 02        COP $02
 C6/0276: A3 21        LDA $21,S
 C6/0278: 40           RTI

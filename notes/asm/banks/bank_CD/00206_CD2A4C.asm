@@ -33,8 +33,9 @@ CD/2A88: 2A           ROL
 CD/2A89: 97 2A        STA [$2A],Y
 CD/2A8B: 7B           TDC
 CD/2A8C: AA           TAX
+Local_CD2A8D:
 CD/2A8D: FE FA 9F     INC $9FFA,X
 CD/2A90: E8           INX
 CD/2A91: E0 08 00     CPX #$0008
-CD/2A94: D0 F7        BNE $2A8D
+CD/2A94: D0 F7        BNE Local_CD2A8D
 CD/2A96: 60           RTS

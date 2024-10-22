@@ -13,7 +13,7 @@ FE/3992: 84 14        STY $14
 FE/3994: 85 06        STA $06
 FE/3996: F8           SED
 FE/3997: B1 0C        LDA ($0C),Y
-FE/3999: B0 86        BCS $3921
+FE/3999: B0 86        BCS Routine_FE3921
 FE/399B: 14 87        TRB $87
 FE/399D: 04 F8        TSB $F8
 FE/399F: 08           PHP

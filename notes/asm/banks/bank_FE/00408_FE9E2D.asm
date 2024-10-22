@@ -1,7 +1,7 @@
 ; Bank: FE | Start Address: 9E2D
 Routine_FE9E2D:
 FE/9E2D: CB           WAI
-FE/9E2E: 80 A7        BRA $9DD7
+FE/9E2E: 80 A7        BRA Routine_FE9DD7
 FE/9E30: A0 E7        LDY #$E7
 FE/9E32: C0 00        CPY #$00
 FE/9E34: A7 A0        LDA [$A0]
@@ -14,7 +14,7 @@ FE/9E40: F2 AB        SBC ($AB)
 FE/9E42: A3 BC        LDA $BC,S
 FE/9E44: F5 00        SBC $00,X
 FE/9E46: 5E 5A B3     LSR $B35A,X
-FE/9E49: 80 74        BRA $9EBF
+FE/9E49: 80 74        BRA Routine_FE9EBF
 FE/9E4B: 02 E4        COP $E4
 FE/9E4D: 02 00        COP $00
 FE/9E4F: EA           NOP
@@ -32,7 +32,7 @@ FE/9E63: 85 45        STA $45
 FE/9E65: 7A           PLY
 FE/9E66: 7A           PLY
 FE/9E67: 83 83        STA $83,S
-FE/9E69: 80 77        BRA $9EE2
+FE/9E69: 80 77        BRA Routine_FE9EE2
 FE/9E6B: F7 4D        SBC [$4D],Y
 FE/9E6D: 00 27        BRK $27
 FE/9E6F: 00 9B        BRK $9B
@@ -48,7 +48,7 @@ FE/9E82: 88           DEY
 FE/9E83: 0B           PHD
 FE/9E84: FE FE FD     INC $FDFE,X
 FE/9E87: FD BA 81     SBC $81BA,X
-FE/9E8A: 80 4D        BRA $9ED9
+FE/9E8A: 80 4D        BRA Routine_FE9ED9
 FE/9E8C: 00 55        BRK $55
 FE/9E8E: 55 FA        EOR $FA,X
 FE/9E90: FA           PLX

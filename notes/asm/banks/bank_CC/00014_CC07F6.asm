@@ -3,7 +3,8 @@ Routine_CC07F6:
 CC/07F6: 6D 10 00     ADC $0010
 CC/07F9: 00 00        BRK $00
 CC/07FB: 02 00        COP $00
-CC/07FD: 10 00        BPL $07FF
+CC/07FD: 10 00        BPL Local_CC07FF
+Local_CC07FF:
 CC/07FF: 00 00        BRK $00
 CC/0801: 00 00        BRK $00
 CC/0803: 00 00        BRK $00
@@ -26,6 +27,7 @@ CC/0824: 00 C0        BRK $C0
 CC/0826: 5D 08 10     EOR $1008,X
 CC/0829: 00 00        BRK $00
 CC/082B: 00 7D        BRK $7D
+Local_CC082D:
 CC/082D: 08           PHP
 CC/082E: 00 00        BRK $00
 CC/0830: 14 02        TRB $02
@@ -62,14 +64,15 @@ CC/086D: B8           CLV
 CC/086E: 88           DEY
 CC/086F: 02 00        COP $00
 CC/0871: 00 00        BRK $00
-CC/0873: 10 A4        BPL $0819
+CC/0873: 10 A4        BPL Routine_CC0819
 CC/0875: 02 00        COP $00
 CC/0877: 00 00        BRK $00
 CC/0879: 02 00        COP $00
 CC/087B: 02 00        COP $00
 CC/087D: 00 00        BRK $00
 CC/087F: 02 00        COP $00
-CC/0881: 80 00        BRA $0883
+CC/0881: 80 00        BRA Local_CC0883
+Local_CC0883:
 CC/0883: 00 14        BRK $14
 CC/0885: 01 00        ORA ($00,X)
 CC/0887: 00 00        BRK $00
@@ -80,10 +83,11 @@ CC/088F: 00 14        BRK $14
 CC/0891: 01 00        ORA ($00,X)
 CC/0893: 00 00        BRK $00
 CC/0895: 00 00        BRK $00
-CC/0897: 70 94        BVS $082D
-CC/0899: 80 07        BRA $08A2
+CC/0897: 70 94        BVS Local_CC082D
+CC/0899: 80 07        BRA Routine_CC08A2
 CC/089B: 00 14        BRK $14
 CC/089D: 02 00        COP $00
-CC/089F: 80 00        BRA $08A1
+CC/089F: 80 00        BRA Local_CC08A1
+Local_CC08A1:
 CC/08A1: 00 00        BRK $00
 CC/08A3: 60           RTS

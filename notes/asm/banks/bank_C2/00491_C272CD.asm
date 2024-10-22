@@ -1,11 +1,11 @@
 ; Bank: C2 | Start Address: 72CD
 Routine_C272CD:
-C2/72CD: 20 60 20     JSR $2060
+C2/72CD: 20 60 20     JSR Routine_C22060
 C2/72D0: 00 30        BRK $30
-C2/72D2: 20 30 40     JSR $4030
-C2/72D5: 30 60        BMI $7337
-C2/72D7: 30 C2        BMI $729B
-C2/72D9: 20 A7 10     JSR $10A7
+C2/72D2: 20 30 40     JSR Routine_C24030
+C2/72D5: 30 60        BMI Routine_C27337
+C2/72D7: 30 C2        BMI Routine_C2729B
+C2/72D9: 20 A7 10     JSR Routine_C210A7
 C2/72DC: E6 10        INC $10
 C2/72DE: 29 FF        AND #$FF
 C2/72E0: 00 EB        BRK $EB
@@ -35,6 +35,6 @@ C2/7313: A5 08        LDA $08
 C2/7315: 69 10 00     ADC #$0010
 C2/7318: 85 08        STA $08
 C2/731A: C6 00        DEC $00
-C2/731C: D0 BC        BNE $72DA
+C2/731C: D0 BC        BNE Routine_C272DA
 C2/731E: E2 20        SEP #$20
 C2/7320: 60           RTS

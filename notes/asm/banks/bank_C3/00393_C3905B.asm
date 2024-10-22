@@ -1,20 +1,20 @@
 ; Bank: C3 | Start Address: 905B
 Routine_C3905B:
 C3/905B: 85 02        STA $02
-C3/905D: 10 39        BPL $9098
+C3/905D: 10 39        BPL Routine_C39098
 C3/905F: C0 52 56     CPY #$5652
-C3/9062: 50 0A        BVC $906E
+C3/9062: 50 0A        BVC Routine_C3906E
 C3/9064: 0D 00 10     ORA $1000
-C3/9067: 20 17 22     JSR $2217
+C3/9067: 20 17 22     JSR Routine_C32217
 C3/906A: A4 1B        LDY $1B
-C3/906C: 20 22 C0     JSR $C022
-C3/906F: 80 53        BRA $90C4
+C3/906C: 20 22 C0     JSR Routine_C3C022
+C3/906F: 80 53        BRA Routine_C390C4
 C3/9071: 36 19        ROL $19,X
 C3/9073: 0B           PHD
 C3/9074: 39 29 D0     AND $D029,Y
 C3/9077: 62 F0 1F     PER $C3B06A
 C3/907A: 62 10 0F     PER $C39F8D
 C3/907D: 03 64        ORA $64,S
-C3/907F: F0 64        BEQ $90E5
-C3/9081: F0 BA        BEQ $903D
+C3/907F: F0 64        BEQ Routine_C390E5
+C3/9081: F0 BA        BEQ Routine_C3903D
 C3/9083: 40           RTI

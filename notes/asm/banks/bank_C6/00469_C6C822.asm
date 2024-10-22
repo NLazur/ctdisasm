@@ -5,12 +5,13 @@ C6/C824: 26 30        ROL $30
 C6/C826: 27 40        AND [$40]
 C6/C828: F8           SED
 C6/C829: 14 60        TRB $60
-C6/C82B: 30 00        BMI $C82D
-C6/C82D: 30 31        BMI $C860
-C6/C82F: 30 32        BMI $C863
-C6/C831: 30 33        BMI $C866
-C6/C833: 30 34        BMI $C869
+C6/C82B: 30 00        BMI Local_C6C82D
+Local_C6C82D:
+C6/C82D: 30 31        BMI Routine_C6C860
+C6/C82F: 30 32        BMI Routine_C6C863
+C6/C831: 30 33        BMI Routine_C6C866
+C6/C833: 30 34        BMI Routine_C6C869
 C6/C835: C0 30 35     CPY #$3530
-C6/C838: 30 36        BMI $C870
-C6/C83A: 30 37        BMI $C873
+C6/C838: 30 36        BMI Routine_C6C870
+C6/C83A: 30 37        BMI Routine_C6C873
 C6/C83C: 40           RTI

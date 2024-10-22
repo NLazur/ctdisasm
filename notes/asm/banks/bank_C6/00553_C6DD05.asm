@@ -382,7 +382,7 @@ C6/DFF9: 00 00        BRK $00
 C6/DFFB: 00 00        BRK $00
 C6/DFFD: 00 00        BRK $00
 C6/DFFF: 00 A9        BRK $A9
-C6/E001: F0 8F        BEQ $DF92
+C6/E001: F0 8F        BEQ Routine_C6DF92
 C6/E003: 35 8A        AND $8A,X
 C6/E005: 7E 8F 38     ROR $388F,X
 C6/E008: 8A           TXA
@@ -391,7 +391,7 @@ C6/E00C: 3B           TSC
 C6/E00D: 8A           TXA
 C6/E00E: 7E A0 41     ROR $41A0,X
 C6/E011: 26 8C        ROL $8C
-C6/E013: 10 43        BPL $E058
+C6/E013: 10 43        BPL Routine_C6E058
 C6/E015: A0 35 8A     LDY #$8A35
 C6/E018: 8C 12 43     STY $4312
 C6/E01B: A9 7E        LDA #$7E

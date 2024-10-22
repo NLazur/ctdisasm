@@ -17,7 +17,7 @@ C7/3F06: 93 D0        STA ($D0,S),Y
 C7/3F08: 19 EB BA     ORA $BAEB,Y
 C7/3F0B: F6 80        INC $80,X
 C7/3F0D: F5 9C        SBC $9C,X
-C7/3F0F: D0 0C        BNE $3F1D
+C7/3F0F: D0 0C        BNE Routine_C73F1D
 C7/3F11: 7D 1C 9C     ADC $9C1C,X
 C7/3F14: 8B           PHB
 C7/3F15: BA           TSX

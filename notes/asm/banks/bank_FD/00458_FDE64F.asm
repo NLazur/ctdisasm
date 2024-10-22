@@ -2,6 +2,7 @@
 Routine_FDE64F:
 FD/E64F: B9 22 05     LDA $0522,Y
 FD/E652: A8           TAY
+Local_FDE653:
 FD/E653: BF 01 20 7E  LDA $7E2001,X
 FD/E657: 29 7C        AND #$7C
 FD/E659: 8D 03 42     STA $4203
@@ -40,5 +41,5 @@ FD/E699: E2 20        SEP #$20
 FD/E69B: E8           INX
 FD/E69C: E8           INX
 FD/E69D: 88           DEY
-FD/E69E: D0 B3        BNE $E653
+FD/E69E: D0 B3        BNE Local_FDE653
 FD/E6A0: 60           RTS

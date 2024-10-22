@@ -2,15 +2,17 @@
 Routine_D10440:
 D1/0440: 00 00        BRK $00
 D1/0442: 13 80        ORA ($80,S),Y
-D1/0444: 80 00        BRA $0446
+D1/0444: 80 00        BRA Local_D10446
+Local_D10446:
 D1/0446: 24 01        BIT $01
 D1/0448: 26 01        ROL $01
 D1/044A: 84 FF        STY $FF
 D1/044C: FF 0A 00 80  SBC $80000A,X
 D1/0450: 24 01        BIT $01
 D1/0452: 66 0C        ROR $0C
-D1/0454: 10 00        BPL $0456
-D1/0456: 22 C0 C0 28  JSR $28C0C0
+D1/0454: 10 00        BPL Local_D10456
+Local_D10456:
+D1/0456: 22 C0 C0 28  JSR Routine_28C0C0
 D1/045A: 01 28        ORA ($28,X)
 D1/045C: 41 2A        EOR ($2A,X)
 D1/045E: 08           PHP

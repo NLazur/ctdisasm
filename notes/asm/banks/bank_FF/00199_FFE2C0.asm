@@ -1,14 +1,15 @@
 ; Bank: FF | Start Address: E2C0
 Routine_FFE2C0:
 FF/E2C0: 78           SEI
-FF/E2C1: 70 E4        BVS $E2A7
+FF/E2C1: 70 E4        BVS Routine_FFE2A7
 FF/E2C3: 38           SEC
 FF/E2C4: 24 18        BIT $18
 FF/E2C6: 24 18        BIT $18
 FF/E2C8: 3C 00 3C     BIT $3C00,X
 FF/E2CB: 18           CLC
 FF/E2CC: 00 80        BRK $80
-FF/E2CE: 80 00        BRA $E2D0
+FF/E2CE: 80 00        BRA Local_FFE2D0
+Local_FFE2D0:
 FF/E2D0: 00 00        BRK $00
 FF/E2D2: 00 18        BRK $18
 FF/E2D4: 00 00        BRK $00
@@ -29,7 +30,7 @@ FF/E2F6: EE 70 DE     INC $DE70
 FF/E2F9: EC BE C6     CPX $C6BE
 FF/E2FC: 03 07        ORA $07,S
 FF/E2FE: 06 C0        ASL $C0
-FF/E300: 82 06 0E     BRL $FFF109
+FF/E300: 82 06 0E     BRL Routine_FFF109
 FF/E303: 1E DC BB     ASL $BBDC,X
 FF/E306: 4A           LSR
 FF/E307: B7 68        LDA [$68],Y
@@ -37,7 +38,7 @@ FF/E309: B7 60        LDA [$60],Y
 FF/E30B: BF 62 8F D8  LDA $D88F62,X
 FF/E30F: 03 FF        ORA $FF,S
 FF/E311: 00 FF        BRK $FF
-FF/E313: 80 97        BRA $E2AC
+FF/E313: 80 97        BRA Routine_FFE2AC
 FF/E315: 9F BB AD B7  STA $B7ADBB,X
 FF/E319: BC 80 7F     LDY $7F80,X
 FF/E31C: FE C2 5C     INC $5CC2,X
@@ -54,5 +55,5 @@ FF/E330: F2 FA        SBC ($FA)
 FF/E332: 02 FC        COP $FC
 FF/E334: B5 4A        LDA $4A,X
 FF/E336: B4 4A        LDY $4A,X
-FF/E338: 20 4B 45     JSR $454B
+FF/E338: 20 4B 45     JSR Routine_FF454B
 FF/E33B: 40           RTI

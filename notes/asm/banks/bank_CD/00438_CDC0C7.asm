@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: C0C7
 Routine_CDC0C7:
-CD/C0C7: D0 C4        BNE $C08D
-CD/C0C9: F0 F0        BEQ $C0BB
+CD/C0C7: D0 C4        BNE Routine_CDC08D
+CD/C0C9: F0 F0        BEQ Routine_CDC0BB
 CD/C0CB: C4 E8        CPY $E8
 CD/C0CD: F8           SED
 CD/C0CE: C4 E4        CPY $E4
@@ -12,7 +12,7 @@ CD/C0DA: C4 E4        CPY $E4
 CD/C0DC: 02 C4        COP $C4
 CD/C0DE: E8           INX
 CD/C0DF: 04 C4        TSB $C4
-CD/C0E1: F0 08        BEQ $C0EB
+CD/C0E1: F0 08        BEQ Routine_CDC0EB
 CD/C0E3: C5 10        CMP $10
 CD/C0E5: D1 78        CMP ($78),Y
 CD/C0E7: 9C 80 45     STZ $4580

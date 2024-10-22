@@ -7,37 +7,37 @@ CE/21A3: 00 98        BRK $98
 CE/21A5: FC 80 00     JSR ($0080,X)
 CE/21A8: BC 21 F6     LDY $F621,X
 CE/21AB: 21 05        AND ($05,X)
-CE/21AD: 22 0F 22 4F  JSR $4F220F
-CE/21B1: 22 7D 22 B0  JSR $B0227D
-CE/21B5: 22 E3 22 13  JSR $1322E3
+CE/21AD: 22 0F 22 4F  JSR Routine_4F220F
+CE/21B1: 22 7D 22 B0  JSR Routine_B0227D
+CE/21B5: 22 E3 22 13  JSR Routine_1322E3
 CE/21B9: 23 85        AND $85,S
 CE/21BB: 09 3D 09     ORA #$093D
 CE/21BE: 72 15        ADC ($15)
 CE/21C0: 03 13        ORA $13,S
-CE/21C2: 20 05 7A     JSR $7A05
+CE/21C2: 20 05 7A     JSR Routine_CE7A05
 CE/21C5: 97 00        STA [$00],Y
 CE/21C7: 2D 80 02     AND $0280
 CE/21CA: 98           TYA
 CE/21CB: 03 3E        ORA $3E,S
-CE/21CD: 20 19 06     JSR $0619
+CE/21CD: 20 19 06     JSR Routine_CE0619
 CE/21D0: 39 20 05     AND $0520,Y
 CE/21D3: 03 23        ORA $23,S
 CE/21D5: 2D 80 12     AND $1280
 CE/21D8: 98           TYA
-CE/21D9: 20 1E 36     JSR $361E
+CE/21D9: 20 1E 36     JSR Routine_CE361E
 CE/21DC: 02 22        COP $22
 CE/21DE: 24 03        BIT $03
 CE/21E0: 7A           PLY
 CE/21E1: 81 00        STA ($00,X)
 CE/21E3: 34 1B        BIT $1B,X
-CE/21E5: 22 1B 00 06  JSR $06001B
+CE/21E5: 22 1B 00 06  JSR Routine_06001B
 CE/21E9: 03 03        ORA $03,S
 CE/21EB: 0B           PHD
 CE/21EC: 06 03        ASL $03
-CE/21EE: 20 14 50     JSR $5014
-CE/21F1: 20 14 2E     JSR $2E14
+CE/21EE: 20 14 50     JSR Routine_CE5014
+CE/21F1: 20 14 2E     JSR Routine_CE2E14
 CE/21F4: 01 00        ORA ($00,X)
-CE/21F6: 22 1B 01 69  JSR $69011B
+CE/21F6: 22 1B 01 69  JSR Routine_69011B
 CE/21FA: 03 6B        ORA $6B,S
 CE/21FC: 03 22        ORA $22,S
 CE/21FE: 1B           TCS
@@ -48,8 +48,9 @@ CE/2204: 00 22        BRK $22
 CE/2206: 1B           TCS
 CE/2207: 01 69        ORA ($69,X)
 CE/2209: 03 22        ORA $22,S
-CE/220B: 10 01        BPL $220E
+CE/220B: 10 01        BPL Local_CE220E
 CE/220D: 6A           ROR
+Local_CE220E:
 CE/220E: 00 73        BRK $73
 CE/2210: 00 60        BRK $60
 CE/2212: 00 60        BRK $60
@@ -65,17 +66,17 @@ CE/2220: 01 36        ORA ($36,X)
 CE/2222: 1B           TCS
 CE/2223: 09 78 6A     ORA #$6A78
 CE/2226: 03 01        ORA $01,S
-CE/2228: 20 05 33     JSR $3305
+CE/2228: 20 05 33     JSR Routine_CE3305
 CE/222B: 09 3A 1E     ORA #$1E3A
 CE/222E: 08           PHP
 CE/222F: 3A           DEC
 CE/2230: 1F F6 1A 78  ORA $781AF6,X
 CE/2234: 6A           ROR
 CE/2235: 03 01        ORA $01,S
-CE/2237: 20 0A 1B     JSR $1B0A
+CE/2237: 20 0A 1B     JSR Routine_CE1B0A
 CE/223A: 09 78 6A     ORA #$6A78
 CE/223D: 03 01        ORA $01,S
-CE/223F: 20 05 78     JSR $7805
+CE/223F: 20 05 78     JSR Routine_CE7805
 CE/2242: 6A           ROR
 CE/2243: 03 01        ORA $01,S
 CE/2245: 36 20        ROL $20,X
@@ -88,7 +89,7 @@ CE/2251: 33 09        AND ($09,S),Y
 CE/2253: 3A           DEC
 CE/2254: 1E F0 1A     ASL $1AF0,X
 CE/2257: 24 02        BIT $02
-CE/2259: 20 01 78     JSR $7801
+CE/2259: 20 01 78     JSR Routine_CE7801
 CE/225C: 6A           ROR
 CE/225D: 03 01        ORA $01,S
 CE/225F: 33 09        AND ($09,S),Y
@@ -99,21 +100,21 @@ CE/2269: 0A           ASL
 CE/226A: 78           SEI
 CE/226B: 6A           ROR
 CE/226C: 03 01        ORA $01,S
-CE/226E: 20 05 78     JSR $7805
+CE/226E: 20 05 78     JSR Routine_CE7805
 CE/2271: 6A           ROR
 CE/2272: 03 01        ORA $01,S
-CE/2274: 20 05 03     JSR $0305
+CE/2274: 20 05 03     JSR Routine_CE0305
 CE/2277: 01 20        ORA ($20,X)
 CE/2279: 05 03        ORA $03
 CE/227B: 01 00        ORA ($00,X)
 CE/227D: 73 00        ADC ($00,S),Y
-CE/227F: 20 01 33     JSR $3301
+CE/227F: 20 01 33     JSR Routine_CE3301
 CE/2282: 09 3A 1E     ORA #$1E3A
 CE/2285: 0C 3A 1F     TSB $1F3A
 CE/2288: FB           XCE
 CE/2289: 1A           INC
 CE/228A: 24 02        BIT $02
-CE/228C: 20 04 78     JSR $7804
+CE/228C: 20 04 78     JSR Routine_CE7804
 CE/228F: 6A           ROR
 CE/2290: 03 01        ORA $01,S
 CE/2292: 33 09        AND ($09,S),Y
@@ -124,15 +125,15 @@ CE/229C: 0A           ASL
 CE/229D: 78           SEI
 CE/229E: 6A           ROR
 CE/229F: 03 01        ORA $01,S
-CE/22A1: 20 05 78     JSR $7805
+CE/22A1: 20 05 78     JSR Routine_CE7805
 CE/22A4: 6A           ROR
 CE/22A5: 03 01        ORA $01,S
-CE/22A7: 20 05 03     JSR $0305
+CE/22A7: 20 05 03     JSR Routine_CE0305
 CE/22AA: 01 20        ORA ($20,X)
 CE/22AC: 05 03        ORA $03
 CE/22AE: 01 00        ORA ($00,X)
 CE/22B0: 73 00        ADC ($00,S),Y
-CE/22B2: 20 02 33     JSR $3302
+CE/22B2: 20 02 33     JSR Routine_CE3302
 CE/22B5: 09 3A 1E     ORA #$1E3A
 CE/22B8: FB           XCE
 CE/22B9: 3A           DEC
@@ -150,19 +151,19 @@ CE/22CF: 0A           ASL
 CE/22D0: 78           SEI
 CE/22D1: 6A           ROR
 CE/22D2: 03 01        ORA $01,S
-CE/22D4: 20 05 78     JSR $7805
+CE/22D4: 20 05 78     JSR Routine_CE7805
 CE/22D7: 6A           ROR
 CE/22D8: 03 01        ORA $01,S
-CE/22DA: 20 05 03     JSR $0305
+CE/22DA: 20 05 03     JSR Routine_CE0305
 CE/22DD: 01 20        ORA ($20,X)
 CE/22DF: 05 03        ORA $03
 CE/22E1: 01 00        ORA ($00,X)
 CE/22E3: 73 00        ADC ($00,S),Y
-CE/22E5: 20 03 33     JSR $3303
+CE/22E5: 20 03 33     JSR Routine_CE3303
 CE/22E8: 09 3A 1E     ORA #$1E3A
-CE/22EB: 10 1A        BPL $2307
+CE/22EB: 10 1A        BPL Local_CE2307
 CE/22ED: 24 02        BIT $02
-CE/22EF: 20 10 78     JSR $7810
+CE/22EF: 20 10 78     JSR Routine_CE7810
 CE/22F2: 6A           ROR
 CE/22F3: 03 01        ORA $01,S
 CE/22F5: 33 09        AND ($09,S),Y
@@ -173,15 +174,16 @@ CE/22FF: 0A           ASL
 CE/2300: 78           SEI
 CE/2301: 6A           ROR
 CE/2302: 03 01        ORA $01,S
-CE/2304: 20 05 78     JSR $7805
+CE/2304: 20 05 78     JSR Routine_CE7805
+Local_CE2307:
 CE/2307: 6A           ROR
 CE/2308: 03 01        ORA $01,S
-CE/230A: 20 05 03     JSR $0305
+CE/230A: 20 05 03     JSR Routine_CE0305
 CE/230D: 01 20        ORA ($20,X)
 CE/230F: 05 03        ORA $03
 CE/2311: 01 00        ORA ($00,X)
 CE/2313: 73 00        ADC ($00,S),Y
-CE/2315: 20 04 33     JSR $3304
+CE/2315: 20 04 33     JSR Routine_CE3304
 CE/2318: 09 3A 1E     ORA #$1E3A
 CE/231B: F8           SED
 CE/231C: 3A           DEC
@@ -198,10 +200,10 @@ CE/2332: 0A           ASL
 CE/2333: 78           SEI
 CE/2334: 6A           ROR
 CE/2335: 03 01        ORA $01,S
-CE/2337: 20 05 78     JSR $7805
+CE/2337: 20 05 78     JSR Routine_CE7805
 CE/233A: 6A           ROR
 CE/233B: 03 01        ORA $01,S
-CE/233D: 20 05 03     JSR $0305
+CE/233D: 20 05 03     JSR Routine_CE0305
 CE/2340: 01 20        ORA ($20,X)
 CE/2342: 05 03        ORA $03
 CE/2344: 01 00        ORA ($00,X)
@@ -216,7 +218,7 @@ CE/2354: 34 03        BIT $03,X
 CE/2356: 34 02        BIT $02,X
 CE/2358: 35 D0        AND $D0,X
 CE/235A: 27 D9        AND [$D9]
-CE/235C: 30 98        BMI $22F6
+CE/235C: 30 98        BMI Routine_CE22F6
 CE/235E: 00 18        BRK $18
 CE/2360: D1 1B        CMP ($1B),Y
 CE/2362: 18           CLC
@@ -229,7 +231,7 @@ CE/236C: 05 6A        ORA $6A
 CE/236E: 78           SEI
 CE/236F: 8A           TXA
 CE/2370: 34 1B        BIT $1B,X
-CE/2372: 22 1B 00 36  JSR $36001B
+CE/2372: 22 1B 00 36  JSR Routine_36001B
 CE/2376: 03 24        ORA $24,S
 CE/2378: 1E 2D 28     ASL $282D,X
 CE/237B: DA           PHX
@@ -237,12 +239,14 @@ CE/237C: 24 02        BIT $02
 CE/237E: 2E 01 00     ROL $0001
 CE/2381: 24 01        BIT $01
 CE/2383: 1E 05 20     ASL $2005,X
+Local_CE2386:
 CE/2386: 05 50        ORA $50
 CE/2388: 36 00        ROL $00,X
 CE/238A: 24 01        BIT $01
 CE/238C: 1E 05 00     ASL $0005,X
-CE/238F: 90 FF        BCC $2390
-CE/2391: 80 00        BRA $2393
+CE/238F: 90 FF        BCC Routine_CE2390
+CE/2391: 80 00        BRA Local_CE2393
+Local_CE2393:
 CE/2393: A9 23 B6     LDA #$B623
 CE/2396: 23 C2        AND $C2,S
 CE/2398: 23 E1        AND $E1,S
@@ -260,9 +264,10 @@ CE/23AF: 04 50        TSB $50
 CE/23B1: 06 03        ASL $03
 CE/23B3: 2E 01 00     ROL $0001
 CE/23B6: 24 03        BIT $03
+Local_CE23B8:
 CE/23B8: 72 0A        ADC ($0A)
 CE/23BA: 02 24        COP $24
-CE/23BC: 20 14 06     JSR $0614
+CE/23BC: 20 14 06     JSR Routine_CE0614
 CE/23BF: 03 36        ORA $36,S
 CE/23C1: 00 1B        BRK $1B
 CE/23C3: 00 72        BRK $72
@@ -270,7 +275,8 @@ CE/23C5: 0D 73 03     ORA $0373
 CE/23C8: 0C 60 09     TSB $0960
 CE/23CB: 06 02        ASL $02
 CE/23CD: 24 01        BIT $01
-CE/23CF: 70 78        BVS $2449
+CE/23CF: 70 78        BVS Routine_CE2449
+Local_CE23D1:
 CE/23D1: 9F 98 00 03  STA $030098,X
 CE/23D5: 1B           TCS
 CE/23D6: 03 78        ORA $78,S
@@ -281,8 +287,9 @@ CE/23E0: 00 1B        BRK $1B
 CE/23E2: 00 72        BRK $72
 CE/23E4: 0D 73 03     ORA $0373
 CE/23E7: 0C 06 02     TSB $0206
+Local_CE23EA:
 CE/23EA: 24 01        BIT $01
-CE/23EC: 70 98        BVS $2386
+CE/23EC: 70 98        BVS Local_CE2386
 CE/23EE: 00 29        BRK $29
 CE/23F0: 1B           TCS
 CE/23F1: 29 24 02     AND #$0224
@@ -294,8 +301,9 @@ CE/23FA: 1B           TCS
 CE/23FB: 00 72        BRK $72
 CE/23FD: 0D 73 03     ORA $0373
 CE/2400: 0C 06 02     TSB $0206
+Local_CE2403:
 CE/2403: 24 01        BIT $01
-CE/2405: 70 98        BVS $239F
+CE/2405: 70 98        BVS Routine_CE239F
 CE/2407: 00 28        BRK $28
 CE/2409: 1B           TCS
 CE/240A: 28           PLP
@@ -308,8 +316,9 @@ CE/2413: 1B           TCS
 CE/2414: 00 72        BRK $72
 CE/2416: 0D 73 03     ORA $0373
 CE/2419: 0C 06 02     TSB $0206
+Local_CE241C:
 CE/241C: 24 01        BIT $01
-CE/241E: 70 98        BVS $23B8
+CE/241E: 70 98        BVS Local_CE23B8
 CE/2420: 00 27        BRK $27
 CE/2422: 1B           TCS
 CE/2423: 27 24        AND [$24]
@@ -322,7 +331,7 @@ CE/242D: 00 72        BRK $72
 CE/242F: 0D 73 03     ORA $0373
 CE/2432: 0C 06 02     TSB $0206
 CE/2435: 24 01        BIT $01
-CE/2437: 70 98        BVS $23D1
+CE/2437: 70 98        BVS Local_CE23D1
 CE/2439: 00 13        BRK $13
 CE/243B: 1B           TCS
 CE/243C: 13 24        ORA ($24,S),Y
@@ -335,7 +344,7 @@ CE/2446: 00 72        BRK $72
 CE/2448: 0D 73 03     ORA $0373
 CE/244B: 0C 06 02     TSB $0206
 CE/244E: 24 01        BIT $01
-CE/2450: 70 98        BVS $23EA
+CE/2450: 70 98        BVS Local_CE23EA
 CE/2452: 00 26        BRK $26
 CE/2454: 1B           TCS
 CE/2455: 26 24        ROL $24
@@ -348,7 +357,7 @@ CE/245F: 00 72        BRK $72
 CE/2461: 0D 73 03     ORA $0373
 CE/2464: 0C 06 02     TSB $0206
 CE/2467: 24 01        BIT $01
-CE/2469: 70 98        BVS $2403
+CE/2469: 70 98        BVS Local_CE2403
 CE/246B: 00 25        BRK $25
 CE/246D: 1B           TCS
 CE/246E: 25 24        AND $24
@@ -361,7 +370,7 @@ CE/2478: 00 72        BRK $72
 CE/247A: 0D 73 03     ORA $0373
 CE/247D: 0C 06 02     TSB $0206
 CE/2480: 24 01        BIT $01
-CE/2482: 70 98        BVS $241C
+CE/2482: 70 98        BVS Local_CE241C
 CE/2484: 00 24        BRK $24
 CE/2486: 1B           TCS
 CE/2487: 24 71        BIT $71

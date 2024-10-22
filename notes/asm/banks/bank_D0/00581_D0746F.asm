@@ -40,13 +40,13 @@ D0/74B8: 26 79        ROL $79
 D0/74BA: 6C F2 F8     JMP ($F8F2)
 D0/74BD: 84 F0        STY $F0
 D0/74BF: 08           PHP
-D0/74C0: 80 70        BRA $7532
+D0/74C0: 80 70        BRA Routine_D07532
 D0/74C2: 00 C0        BRK $C0
 D0/74C4: 00 00        BRK $00
 D0/74C6: 00 00        BRK $00
 D0/74C8: 38           SEC
-D0/74C9: 70 E0        BVS $74AB
-D0/74CB: 10 C0        BPL $748D
+D0/74C9: 70 E0        BVS Routine_D074AB
+D0/74CB: 10 C0        BPL Routine_D0748D
 D0/74CD: 00 00        BRK $00
 D0/74CF: 00 01        BRK $01
 D0/74D1: 03 01        ORA $01,S

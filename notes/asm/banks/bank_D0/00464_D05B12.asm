@@ -10,7 +10,7 @@ D0/5B1E: 00 00        BRK $00
 D0/5B20: 00 00        BRK $00
 D0/5B22: 00 00        BRK $00
 D0/5B24: 00 00        BRK $00
-D0/5B26: 80 80        BRA $5AA8
+D0/5B26: 80 80        BRA Routine_D05AA8
 D0/5B28: 00 00        BRK $00
 D0/5B2A: 00 00        BRK $00
 D0/5B2C: 40           RTI

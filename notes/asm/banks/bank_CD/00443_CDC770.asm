@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: C770
 Routine_CDC770:
 CD/C770: 0C 10 80     TSB $8010
-CD/C773: 80 22        BRA $C797
+CD/C773: 80 22        BRA Local_CDC797
 CD/C775: 1B           TCS
 CD/C776: 00 36        BRK $36
 CD/C778: 02 05        COP $05
@@ -11,7 +11,7 @@ CD/C77D: 1B           TCS
 CD/C77E: 19 72 0D     ORA $0D72,Y
 CD/C781: 06 03        ASL $03
 CD/C783: 24 05        BIT $05
-CD/C785: 20 0F 50     JSR $500F
+CD/C785: 20 0F 50     JSR Routine_CD500F
 CD/C788: 2E 01 00     ROL $0001
 CD/C78B: 24 01        BIT $01
 CD/C78D: 72 0A        ADC ($0A)
@@ -21,6 +21,7 @@ CD/C792: 98           TYA
 CD/C793: 00 2A        BRK $2A
 CD/C795: 1B           TCS
 CD/C796: 2A           ROL
+Local_CDC797:
 CD/C797: 36 24        ROL $24,X
 CD/C799: 02 20        COP $20
 CD/C79B: 05 02        ORA $02
@@ -29,7 +30,7 @@ CD/C79F: 8F 34 1B 36  STA $361B34
 CD/C7A3: 24 03        BIT $03
 CD/C7A5: 0C 10 C0     TSB $C010
 CD/C7A8: 8C 0B 10     STY $100B
-CD/C7AB: 90 4C        BCC $C7F9
+CD/C7AB: 90 4C        BCC Routine_CDC7F9
 CD/C7AD: 0C 10 70     TSB $7010
 CD/C7B0: 8C 0B 10     STY $100B
 CD/C7B3: 40           RTI

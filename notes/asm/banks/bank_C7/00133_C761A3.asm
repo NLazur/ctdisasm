@@ -2,7 +2,7 @@
 Routine_C761A3:
 C7/61A3: 0A           ASL
 C7/61A4: 96 EB        STX $EB,Y
-C7/61A6: D0 CF        BNE $6177
+C7/61A6: D0 CF        BNE Routine_C76177
 C7/61A8: 06 E6        ASL $E6
 C7/61AA: E2 0D        SEP #$0D
 C7/61AC: 0D E0 17     ORA $17E0
@@ -15,9 +15,9 @@ C7/61BC: 7F DD 0C 97  ADC $970CDD,X
 C7/61C0: D2 D6        CMP ($D6)
 C7/61C2: 06 E0        ASL $E0
 C7/61C4: 12 C8        ORA ($C8)
-C7/61C6: 20 54 06     JSR $0654
+C7/61C6: 20 54 06     JSR Routine_C70654
 C7/61C9: EB           XBA
-C7/61CA: D0 CF        BNE $619B
+C7/61CA: D0 CF        BNE Routine_C7619B
 C7/61CC: 0A           ASL
 C7/61CD: 0B           PHD
 C7/61CE: D4 CF        PEI $CF

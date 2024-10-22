@@ -2,9 +2,9 @@
 Routine_CED610:
 CE/D610: 01 1F        ORA ($1F,X)
 CE/D612: 2D 80 02     AND $0280
-CE/D615: F0 1F        BEQ $D636
+CE/D615: F0 1F        BEQ Routine_CED636
 CE/D617: 2D 80 12     AND $1280
-CE/D61A: F0 1F        BEQ $D63B
+CE/D61A: F0 1F        BEQ Local_CED63B
 CE/D61C: 0B           PHD
 CE/D61D: 78           SEI
 CE/D61E: 91 03        STA ($03),Y
@@ -18,6 +18,7 @@ CE/D631: 49 1E        EOR #$1E
 CE/D633: E2 49        SEP #$49
 CE/D635: 1F 1E 9B 01  ORA $019B1E,X
 CE/D639: 49 1E        EOR #$1E
+Local_CED63B:
 CE/D63B: E2 49        SEP #$49
 CE/D63D: 1F E2 9B 01  ORA $019BE2,X
 CE/D641: 49 1E        EOR #$1E
@@ -47,6 +48,7 @@ CE/D674: 00 85        BRK $85
 CE/D676: C0 0A        CPY #$0A
 CE/D678: A8           TAY
 CE/D679: 08           PHP
+Local_CED67A:
 CE/D67A: 73 00        ADC ($00,S),Y
 CE/D67C: 0B           PHD
 CE/D67D: A8           TAY
@@ -84,29 +86,30 @@ CE/D6C3: 08           PHP
 CE/D6C4: FF 01 1F 0E  SBC $0E1F01,X
 CE/D6C8: A8           TAY
 CE/D6C9: 06 0B        ASL $0B
-CE/D6CB: 70 1F        BVS $D6EC
+CE/D6CB: 70 1F        BVS Local_CED6EC
 CE/D6CD: 02 02        COP $02
 CE/D6CF: 0A           ASL
-CE/D6D0: 70 A8        BVS $D67A
+CE/D6D0: 70 A8        BVS Local_CED67A
 CE/D6D2: 0A           ASL
-CE/D6D3: 20 05 02     JSR $0205
+CE/D6D3: 20 05 02     JSR Routine_CE0205
 CE/D6D6: 03 77        ORA $77,S
 CE/D6D8: 18           CLC
 CE/D6D9: A8           TAY
 CE/D6DA: 08           PHP
-CE/D6DB: 20 05 02     JSR $0205
+CE/D6DB: 20 05 02     JSR Routine_CE0205
 CE/D6DE: 04 77        TSB $77
 CE/D6E0: 28           PLP
 CE/D6E1: 0D A8 04     ORA $04A8
 CE/D6E4: 1F 61 01 00  ORA $000161,X
 CE/D6E8: 03 02        ORA $02,S
 CE/D6EA: 00 20        BRK $20
+Local_CED6EC:
 CE/D6EC: 03 70        ORA $70,S
 CE/D6EE: 0A           ASL
 CE/D6EF: 85 00        STA $00
 CE/D6F1: A8           TAY
-CE/D6F2: 10 77        BPL $D76B
-CE/D6F4: 80 0B        BRA $D701
+CE/D6F2: 10 77        BPL Routine_CED76B
+CE/D6F4: 80 0B        BRA Routine_CED701
 CE/D6F6: A8           TAY
 CE/D6F7: 06 36        ASL $36
 CE/D6F9: 0C C1 0C     TSB $0CC1

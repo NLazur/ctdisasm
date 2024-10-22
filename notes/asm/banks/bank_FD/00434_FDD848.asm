@@ -23,16 +23,19 @@ FD/D870: AF 16 42 00  LDA $004216
 FD/D874: 0A           ASL
 FD/D875: 85 DF        STA $DF
 FD/D877: A9 E8        LDA #$E8
+Local_FDD879:
 FD/D879: 85 E1        STA $E1
+Local_FDD87B:
 FD/D87B: E4 DB        CPX $DB
-FD/D87D: F0 0E        BEQ $D88D
+FD/D87D: F0 0E        BEQ Local_FDD88D
 FD/D87F: A5 E1        LDA $E1
 FD/D881: 9D F9 15     STA $15F9,X
 FD/D884: A9 01        LDA #$01
 FD/D886: 9D F8 15     STA $15F8,X
 FD/D889: E8           INX
 FD/D88A: E8           INX
-FD/D88B: 80 EE        BRA $D87B
+FD/D88B: 80 EE        BRA Local_FDD87B
+Local_FDD88D:
 FD/D88D: A5 DB        LDA $DB
 FD/D88F: 18           CLC
 FD/D890: 65 DD        ADC $DD
@@ -40,42 +43,49 @@ FD/D892: 85 DB        STA $DB
 FD/D894: A5 E1        LDA $E1
 FD/D896: 3A           DEC
 FD/D897: C9 E0        CMP #$E0
-FD/D899: F0 02        BEQ $D89D
-FD/D89B: 80 DC        BRA $D879
+FD/D899: F0 02        BEQ Local_FDD89D
+FD/D89B: 80 DC        BRA Local_FDD879
+Local_FDD89D:
 FD/D89D: A5 DB        LDA $DB
 FD/D89F: 18           CLC
 FD/D8A0: 65 DF        ADC $DF
 FD/D8A2: 85 DB        STA $DB
+Local_FDD8A4:
 FD/D8A4: E4 DB        CPX $DB
-FD/D8A6: F0 0E        BEQ $D8B6
+FD/D8A6: F0 0E        BEQ Local_FDD8B6
 FD/D8A8: A9 E0        LDA #$E0
 FD/D8AA: 9D F9 15     STA $15F9,X
 FD/D8AD: A9 81        LDA #$81
 FD/D8AF: 9D F8 15     STA $15F8,X
 FD/D8B2: E8           INX
 FD/D8B3: E8           INX
-FD/D8B4: 80 EE        BRA $D8A4
+FD/D8B4: 80 EE        BRA Local_FDD8A4
+Local_FDD8B6:
 FD/D8B6: A9 E0        LDA #$E0
 FD/D8B8: 85 E1        STA $E1
-FD/D8BA: 80 14        BRA $D8D0
+FD/D8BA: 80 14        BRA Local_FDD8D0
+Local_FDD8BC:
 FD/D8BC: 85 E1        STA $E1
+Local_FDD8BE:
 FD/D8BE: E4 DB        CPX $DB
-FD/D8C0: F0 0E        BEQ $D8D0
+FD/D8C0: F0 0E        BEQ Local_FDD8D0
 FD/D8C2: A5 E1        LDA $E1
 FD/D8C4: 9D F9 15     STA $15F9,X
 FD/D8C7: A9 81        LDA #$81
 FD/D8C9: 9D F8 15     STA $15F8,X
 FD/D8CC: E8           INX
 FD/D8CD: E8           INX
-FD/D8CE: 80 EE        BRA $D8BE
+FD/D8CE: 80 EE        BRA Local_FDD8BE
+Local_FDD8D0:
 FD/D8D0: A5 DB        LDA $DB
 FD/D8D2: 18           CLC
 FD/D8D3: 65 DD        ADC $DD
 FD/D8D5: 85 DB        STA $DB
 FD/D8D7: A5 E1        LDA $E1
 FD/D8D9: C9 E9        CMP #$E9
-FD/D8DB: F0 03        BEQ $D8E0
+FD/D8DB: F0 03        BEQ Local_FDD8E0
 FD/D8DD: 1A           INC
-FD/D8DE: 80 DC        BRA $D8BC
+FD/D8DE: 80 DC        BRA Local_FDD8BC
+Local_FDD8E0:
 FD/D8E0: C2 10        REP #$10
 FD/D8E2: 60           RTS

@@ -3,15 +3,15 @@ Routine_D02B8D:
 D0/2B8D: C0 E0 E0     CPY #$E0E0
 D0/2B90: 00 00        BRK $00
 D0/2B92: 00 00        BRK $00
-D0/2B94: 80 80        BRA $2B16
+D0/2B94: 80 80        BRA Routine_D02B16
 D0/2B96: 00 00        BRK $00
 D0/2B98: 00 00        BRK $00
 D0/2B9A: 00 00        BRK $00
 D0/2B9C: 00 00        BRK $00
 D0/2B9E: 00 00        BRK $00
 D0/2BA0: 00 00        BRK $00
-D0/2BA2: 20 20 20     JSR $2020
-D0/2BA5: 20 20 20     JSR $2020
+D0/2BA2: 20 20 20     JSR Routine_D02020
+D0/2BA5: 20 20 20     JSR Routine_D02020
 D0/2BA8: 01 01        ORA ($01,X)
 D0/2BAA: 03 03        ORA $03,S
 D0/2BAC: 03 03        ORA $03,S
@@ -22,7 +22,7 @@ D0/2BB4: 05 07        ORA $07
 D0/2BB6: 05 07        ORA $07
 D0/2BB8: 24 3C        BIT $3C
 D0/2BBA: 24 3C        BIT $3C
-D0/2BBC: 22 3E 12 1E  JSR $1E123E
+D0/2BBC: 22 3E 12 1E  JSR Routine_1E123E
 D0/2BC0: 15 1B        ORA $1B,X
 D0/2BC2: 15 1B        ORA $1B,X
 D0/2BC4: 16 19        ASL $19,X
@@ -46,7 +46,7 @@ D0/2BE9: 18           CLC
 D0/2BEA: F4 0C C4     PEA $C40C
 D0/2BED: 3C FE 3E     BIT $3EFE,X
 D0/2BF0: E0 20        CPX #$20
-D0/2BF2: F0 10        BEQ $2C04
+D0/2BF2: F0 10        BEQ Routine_D02C04
 D0/2BF4: 08           PHP
 D0/2BF5: F8           SED
 D0/2BF6: FC FC 60     JSR ($60FC,X)

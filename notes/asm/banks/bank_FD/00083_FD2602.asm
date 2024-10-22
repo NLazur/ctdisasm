@@ -2,7 +2,7 @@
 Routine_FD2602:
 FD/2602: 18           CLC
 FD/2603: E0 73        CPX #$73
-FD/2605: 80 07        BRA $260E
+FD/2605: 80 07        BRA Routine_FD260E
 FD/2607: 00 00        BRK $00
 FD/2609: 1F 82 80 06  ORA $068082,X
 FD/260D: 01 0E        ORA ($0E,X)

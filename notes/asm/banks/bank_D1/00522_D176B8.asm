@@ -1,23 +1,24 @@
 ; Bank: D1 | Start Address: 76B8
 Routine_D176B8:
-D1/76B8: 80 70        BRA $772A
+D1/76B8: 80 70        BRA Local_D1772A
 D1/76BA: 00 8A        BRK $8A
 D1/76BC: 41 80        EOR ($80,X)
-D1/76BE: 70 00        BVS $76C0
+D1/76BE: 70 00        BVS Local_D176C0
+Local_D176C0:
 D1/76C0: 95 0F        STA $0F,X
 D1/76C2: CB           WAI
 D1/76C3: CC 76 93     CPY $9376
 D1/76C6: 04 02        TSB $02
 D1/76C8: 03 CA        ORA $CA,S
-D1/76CA: D0 76        BNE $7742
+D1/76CA: D0 76        BNE Routine_D17742
 D1/76CC: 93 04        STA ($04,S),Y
 D1/76CE: 02 02        COP $02
-D1/76D0: B0 41        BCS $7713
+D1/76D0: B0 41        BCS Routine_D17713
 D1/76D2: 88           DEY
 D1/76D3: 00 7F        BRK $7F
 D1/76D5: AB           PLB
 D1/76D6: 00 AB        BRK $AB
-D1/76D8: 80 88        BRA $7662
+D1/76D8: 80 88        BRA Routine_D17662
 D1/76DA: 00 7F        BRK $7F
 D1/76DC: 91 BE        STA ($BE),Y
 D1/76DE: 9E 9D 17     STZ $179D,X
@@ -46,9 +47,9 @@ D1/770A: 84 93        STY $93
 D1/770C: 13 02        ORA ($02,S),Y
 D1/770E: 04 B0        TSB $B0
 D1/7710: 49 98        EOR #$98
-D1/7712: 10 95        BPL $76A9
+D1/7712: 10 95        BPL Routine_D176A9
 D1/7714: 03 8A        ORA $8A,S
-D1/7716: 20 80 70     JSR $7080
+D1/7716: 20 80 70     JSR Routine_D17080
 D1/7719: 00 AB        BRK $AB
 D1/771B: 00 AA        BRK $AA
 D1/771D: 00 82        BRK $82
@@ -56,6 +57,7 @@ D1/771F: 7F 82 6F 82  ADC $826F82,X
 D1/7723: 3F 88 00 7F  AND $7F0088,X
 D1/7727: 88           DEY
 D1/7728: 00 7F        BRK $7F
+Local_D1772A:
 D1/772A: 89 00        BIT #$00
 D1/772C: 00 00        BRK $00
 D1/772E: 2E 8E 20     ROL $208E
@@ -67,11 +69,12 @@ D1/773C: 14 8B        TRB $8B
 D1/773E: 00 82        BRK $82
 D1/7740: CB           WAI
 D1/7741: 00 84        BRK $84
+Local_D17743:
 D1/7743: 8B           PHB
 D1/7744: 00 00        BRK $00
 D1/7746: A9 1A        LDA #$1A
 D1/7748: 03 8E        ORA $8E,S
-D1/774A: 50 19        BVC $7765
+D1/774A: 50 19        BVC Routine_D17765
 D1/774C: 03 FF        ORA $FF,S
 D1/774E: 00 11        BRK $11
 D1/7750: 01 83        ORA ($83,X)
@@ -84,14 +87,14 @@ D1/775E: 08           PHP
 D1/775F: A2 FF        LDX #$FF
 D1/7761: 01 C9        ORA ($C9,X)
 D1/7763: 7F E1 9B 17  ADC $179BE1,X
-D1/7767: 82 7F 83     BRL $D1FAE9
+D1/7767: 82 7F 83     BRL Routine_D1FAE9
 D1/776A: 06 82        ASL $82
 D1/776C: DF 84 82 CF  CMP $CF8284,X
 D1/7770: DF 20 40 3F  CMP $3F4020,X
 D1/7774: 9D 17 DC     STA $DC17,X
 D1/7777: D3 91        CMP ($91,S),Y
 D1/7779: CC 77 DF     CPY $DF77
-D1/777C: 90 70        BCC $77EE
+D1/777C: 90 70        BCC Local_D177EE
 D1/777E: 3F 91 CC 77  AND $77CC91,X
 D1/7782: DF 40 60 3F  CMP $3F6040,X
 D1/7786: 91 CC        STA ($CC),Y
@@ -113,14 +116,15 @@ D1/77A3: 01 C9        ORA ($C9,X)
 D1/77A5: 7F E1 83 1F  ADC $1F83E1,X
 D1/77A9: 07 84        ORA [$84]
 D1/77AB: 7F BF 03 8E  ADC $8E03BF,X
-D1/77AF: 50 10        BVC $77C1
+D1/77AF: 50 10        BVC Local_D177C1
 D1/77B1: 09 80        ORA #$80
 D1/77B3: FF 09 02 8E  SBC $8E0209,X
-D1/77B7: 50 20        BVC $77D9
-D1/77B9: 30 80        BMI $773B
+D1/77B7: 50 20        BVC Routine_D177D9
+D1/77B9: 30 80        BMI Routine_D1773B
 D1/77BB: FF 0A 02 8E  SBC $8E020A,X
-D1/77BF: 50 50        BVC $7811
-D1/77C1: 30 80        BMI $7743
+D1/77BF: 50 50        BVC Routine_D17811
+Local_D177C1:
+D1/77C1: 30 80        BMI Local_D17743
 D1/77C3: FF 0B 12 9D  SBC $9D120B,X
 D1/77C7: 13 91        ORA ($91,S),Y
 D1/77C9: 08           PHP
@@ -141,6 +145,7 @@ D1/77E6: 02 9C        COP $9C
 D1/77E8: E0 FE        CPX #$FE
 D1/77EA: 03 9C        ORA $9C,S
 D1/77EC: E0 FE        CPX #$FE
+Local_D177EE:
 D1/77EE: 03 9C        ORA $9C,S
 D1/77F0: E0 FE        CPX #$FE
 D1/77F2: 04 9C        TSB $9C
@@ -151,7 +156,7 @@ D1/77FA: 92 01        STA ($01)
 D1/77FC: 9B           TXY
 D1/77FD: 17 83        ORA [$83],Y
 D1/77FF: 1F 7F 84 91  ORA $91847F,X
-D1/7803: 22 78 83 0F  JSR $0F8378
+D1/7803: 22 78 83 0F  JSR Routine_0F8378
 D1/7807: 7F 84 91 22  ADC $229184,X
 D1/780B: 78           SEI
 D1/780C: 83 30        STA $30,S
@@ -196,9 +201,9 @@ D1/7864: 08           PHP
 D1/7865: A2 FF        LDX #$FF
 D1/7867: 01 E6        ORA ($E6,X)
 D1/7869: 01 8E        ORA ($8E,X)
-D1/786B: 50 10        BVC $787D
+D1/786B: 50 10        BVC Routine_D1787D
 D1/786D: 09 FF        ORA #$FF
-D1/786F: 80 08        BRA $7879
+D1/786F: 80 08        BRA Routine_D17879
 D1/7871: 01 8E        ORA ($8E,X)
-D1/7873: 50 20        BVC $7895
+D1/7873: 50 20        BVC Routine_D17895
 D1/7875: 60           RTS

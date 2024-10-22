@@ -25,7 +25,8 @@ C2/FD0D: E2 20        SEP #$20
 C2/FD0F: A9 98        LDA #$98
 C2/FD11: ED 55 2C     SBC $2C55
 C2/FD14: 85 02        STA $02
-C2/FD16: 90 03        BCC $FD1B
-C2/FD18: 20 1D FD     JSR $FD1D
+C2/FD16: 90 03        BCC Local_C2FD1B
+C2/FD18: 20 1D FD     JSR Routine_C2FD1D
+Local_C2FD1B:
 C2/FD1B: 28           PLP
 C2/FD1C: 60           RTS

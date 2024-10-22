@@ -20,7 +20,7 @@ C6/917D: 8E 7C 8F     STX $8F7C
 C6/9180: 81 A6        STA ($A6,X)
 C6/9182: 58           CLI
 C6/9183: 8C 1A C4     STY $C41A
-C6/9186: 90 C6        BCC $914E
+C6/9186: 90 C6        BCC Routine_C6914E
 C6/9188: FA           PLX
 C6/9189: C6 12        DEC $12
 C6/918B: BA           TSX
@@ -34,7 +34,7 @@ C6/9198: 00 71        BRK $71
 C6/919A: FE 10 ED     INC $ED10,X
 C6/919D: EE FF 25     INC $25FF
 C6/91A0: 2A           ROL
-C6/91A1: 50 FB        BVC $919E
+C6/91A1: 50 FB        BVC Routine_C6919E
 C6/91A3: 0E 88 77     ASL $7788
 C6/91A6: 33 23        AND ($23,S),Y
 C6/91A8: 28           PLP
@@ -43,11 +43,11 @@ C6/91AC: 99 20 01     STA $0120,Y
 C6/91AF: 23 01        AND $01,S
 C6/91B1: 99 00 24     STA $2400,Y
 C6/91B4: 9E 9F 3C     STZ $3C9F,X
-C6/91B7: 20 8C 8D     JSR $8D8C
-C6/91BA: 30 01        BMI $91BD
+C6/91B7: 20 8C 8D     JSR Routine_C68D8C
+C6/91BA: 30 01        BMI Routine_C691BD
 C6/91BC: 47 48        EOR [$48]
 C6/91BE: 06 49        ASL $49
-C6/91C0: 50 FB        BVC $91BD
+C6/91C0: 50 FB        BVC Routine_C691BD
 C6/91C2: 09 B0 79     ORA #$79B0
 C6/91C5: 00 82        BRK $82
 C6/91C7: ED EE 80     SBC $80EE
@@ -55,7 +55,7 @@ C6/91CA: FA           PLX
 C6/91CB: FB           XCE
 C6/91CC: FC FD FE     JSR ($FEFD,X)
 C6/91CF: 81 81        STA ($81,X)
-C6/91D1: 20 01 03     JSR $0301
+C6/91D1: 20 01 03     JSR Routine_C60301
 C6/91D4: 23 09        AND $09,S
 C6/91D6: 35 00        AND $00,X
 C6/91D8: F4 00 F5     PEA $F500
@@ -93,8 +93,8 @@ C6/921D: FB           XCE
 C6/921E: 18           CLC
 C6/921F: 61 78        ADC ($78,X)
 C6/9221: 79 91 92     ADC $9291,Y
-C6/9224: B0 99        BCS $91BF
-C6/9226: 80 78        BRA $92A0
+C6/9224: B0 99        BCS Routine_C691BF
+C6/9226: 80 78        BRA Routine_C692A0
 C6/9228: 79 94 0A     ADC $0A94,Y
 C6/922B: 2F 10 F5 C5  AND $C5F510
 C6/922F: 91 71        STA ($71),Y
@@ -106,15 +106,18 @@ C6/9239: F8           SED
 C6/923A: 15 50        ORA $50,X
 C6/923C: 89 20 88     BIT #$8820
 C6/923F: 89 8B 8C     BIT #$8C8B
+Local_C69242:
 C6/9242: 8D F2 02     STA $02F2
 C6/9245: 98           TYA
 C6/9246: 99 40 00     STA $0040,Y
+Local_C69249:
 C6/9249: 00 01        BRK $01
 C6/924B: 02 03        COP $03
 C6/924D: 04 15        TSB $15
+Local_C6924F:
 C6/924F: BD F4 03     LDA $03F4,X
-C6/9252: 50 FB        BVC $924F
-C6/9254: 10 78        BPL $92CE
+C6/9252: 50 FB        BVC Local_C6924F
+C6/9254: 10 78        BPL Routine_C692CE
 C6/9256: 99 98 99     STA $9998,Y
 C6/9259: 9B           TXY
 C6/925A: 9C 9D 85     STZ $859D
@@ -126,26 +129,28 @@ C6/9265: 14 33        TRB $33
 C6/9267: 00 78        BRK $78
 C6/9269: 43 44        EOR $44,S
 C6/926B: 45 39        EOR $39
-C6/926D: B0 2B        BCS $929A
+C6/926D: B0 2B        BCS Routine_C6929A
 C6/926F: 21 01        AND ($01,X)
 C6/9271: F8           SED
 C6/9272: 39 32 97     AND $9732,Y
 C6/9275: 0C 86 97     TSB $9786
-C6/9278: 10 14        BPL $928E
+C6/9278: 10 14        BPL Local_C6928E
 C6/927A: 2B           PLD
 C6/927B: 00 21        BRK $21
-C6/927D: 22 23 24 F1  JSR $F12423
+C6/927D: 22 23 24 F1  JSR Routine_F12423
 C6/9281: 32 00        AND ($00)
 C6/9283: 53 54        EOR ($54,S),Y
 C6/9285: 55 38        EOR $38,X
-C6/9287: 80 B9        BRA $9242
-C6/9289: 10 BE        BPL $9249
+C6/9287: 80 B9        BRA Local_C69242
+C6/9289: 10 BE        BPL Local_C69249
 C6/928B: F8           SED
 C6/928C: 21 71        AND ($71,X)
+Local_C6928E:
 C6/928E: 0C 83 BA     TSB $BA83
-C6/9291: 10 04        BPL $9297
+C6/9291: 10 04        BPL Local_C69297
 C6/9293: 94 1B        STY $1B,X
 C6/9295: 31 32        AND ($32),Y
+Local_C69297:
 C6/9297: 33 34        AND ($34,S),Y
 C6/9299: 11 32        ORA ($32),Y
 C6/929B: 00 63        BRK $63
@@ -155,7 +160,7 @@ C6/92A3: 07 E6        ORA [$E6]
 C6/92A5: 08           PHP
 C6/92A6: 4F F8 A0 7C  EOR $7CA0F8
 C6/92AA: 93 00        STA ($00,S),Y
-C6/92AC: 10 04        BPL $92B2
+C6/92AC: 10 04        BPL Routine_C692B2
 C6/92AE: 94 1B        STY $1B,X
 C6/92B0: 9E 08 09     STZ $0908,X
 C6/92B3: C6 01        DEC $01

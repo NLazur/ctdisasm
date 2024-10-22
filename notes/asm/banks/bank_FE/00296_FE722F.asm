@@ -16,7 +16,7 @@ FE/7248: 42 10        WDM $10
 FE/724A: 06 30        ASL $30
 FE/724C: 48           PHA
 FE/724D: 00 04        BRK $04
-FE/724F: 80 05        BRA $7256
+FE/724F: 80 05        BRA Routine_FE7256
 FE/7251: 04 03        TSB $03
 FE/7253: 04 23        TSB $23
 FE/7255: 04 24        TSB $24
@@ -39,40 +39,43 @@ FE/7272: 26 12        ROL $12
 FE/7274: 00 67        BRK $67
 FE/7276: 04 0C        TSB $0C
 FE/7278: 04 7A        TSB $7A
-FE/727A: 10 04        BPL $7280
+FE/727A: 10 04        BPL Local_FE7280
 FE/727C: 04 04        TSB $04
 FE/727E: 25 08        AND $08
+Local_FE7280:
 FE/7280: 08           PHP
 FE/7281: 24 08        BIT $08
 FE/7283: 25 02        AND $02
 FE/7285: 00 26        BRK $26
 FE/7287: 0C 04 04     TSB $0404
-FE/728A: 20 45 0C     JSR $0C45
+FE/728A: 20 45 0C     JSR Routine_FE0C45
 FE/728D: 46 0C        LSR $0C
 FE/728F: 27 22        AND [$22]
-FE/7291: 10 08        BPL $729B
+FE/7291: 10 08        BPL Local_FE729B
 FE/7293: 46 80        LSR $80
 FE/7295: 08           PHP
 FE/7296: 47 08        EOR [$08]
 FE/7298: 47 0C        EOR [$0C]
 FE/729A: 28           PLP
+Local_FE729B:
 FE/729B: 0C 18 00     TSB $0018
 FE/729E: A1 34        LDA ($34,X)
-FE/72A0: 30 08        BMI $72AA
+FE/72A0: 30 08        BMI Routine_FE72AA
 FE/72A2: 28           PLP
-FE/72A3: 10 28        BPL $72CD
+FE/72A3: 10 28        BPL Local_FE72CD
 FE/72A5: 18           CLC
 FE/72A6: 00 26        BRK $26
 FE/72A8: 3E 00 86     ROL $8600,X
 FE/72AB: 25 20        AND $20
 FE/72AD: 00 3A        BRK $3A
-FE/72AF: 10 06        BPL $72B7
+FE/72AF: 10 06        BPL Local_FE72B7
 FE/72B1: 08           PHP
 FE/72B2: 24 0C        BIT $0C
 FE/72B4: 0C 10 01     TSB $0110
-FE/72B7: 10 10        BPL $72C9
+Local_FE72B7:
+FE/72B7: 10 10        BPL Routine_FE72C9
 FE/72B9: 28           PLP
-FE/72BA: 10 27        BPL $72E3
+FE/72BA: 10 27        BPL Local_FE72E3
 FE/72BC: 0C 48 0C     TSB $0C48
 FE/72BF: 27 05        AND [$05]
 FE/72C1: 3E 00 28     ROL $2800,X
@@ -80,18 +83,21 @@ FE/72C4: 06 00        ASL $00
 FE/72C6: 28           PLP
 FE/72C7: 0C 29 0C     TSB $0C29
 FE/72CA: 49 01 04     EOR #$0401
-FE/72CD: 10 10        BPL $72DF
+Local_FE72CD:
+FE/72CD: 10 10        BPL Routine_FE72DF
 FE/72CF: 4A           LSR
-FE/72D0: 10 2B        BPL $72FD
-FE/72D2: 10 27        BPL $72FB
+FE/72D0: 10 2B        BPL Routine_FE72FD
+FE/72D2: 10 27        BPL Local_FE72FB
 FE/72D4: 04 02        TSB $02
 FE/72D6: 27 0E        AND [$0E]
-FE/72D8: 20 47 0C     JSR $0C47
+FE/72D8: 20 47 0C     JSR Routine_FE0C47
 FE/72DB: 48           PHA
-FE/72DC: 10 49        BPL $7327
-FE/72DE: 10 00        BPL $72E0
+FE/72DC: 10 49        BPL Local_FE7327
+FE/72DE: 10 00        BPL Local_FE72E0
+Local_FE72E0:
 FE/72E0: 4B           PHK
-FE/72E1: 10 47        BPL $732A
+FE/72E1: 10 47        BPL Local_FE732A
+Local_FE72E3:
 FE/72E3: 0C 4A 10     TSB $104A
 FE/72E6: 4A           LSR
 FE/72E7: 14 00        TRB $00
@@ -100,10 +106,11 @@ FE/72EB: 49 0C 69     EOR #$690C
 FE/72EE: 14 6B        TRB $6B
 FE/72F0: 14 00        TRB $00
 FE/72F2: 4B           PHK
-FE/72F3: 10 6B        BPL $7360
+FE/72F3: 10 6B        BPL Routine_FE7360
 FE/72F5: 14 6C        TRB $6C
 FE/72F7: 14 6C        TRB $6C
-FE/72F9: 10 00        BPL $72FB
+FE/72F9: 10 00        BPL Local_FE72FB
+Local_FE72FB:
 FE/72FB: 6D 18 6C     ADC $6C18
 FE/72FE: 14 AE        TRB $AE
 FE/7300: 1C 48 10     TRB $1048
@@ -114,33 +121,36 @@ FE/730A: 8D 20 02     STA $0220
 FE/730D: 8C 02 00     STY $0002
 FE/7310: AF 1C AE 20  LDA $20AE1C
 FE/7314: AF 20 00 8E  LDA $8E0020
-FE/7318: 20 8F 24     JSR $248F
+FE/7318: 20 8F 24     JSR Routine_FE248F
 FE/731B: CF 2C AD 20  CMP $20AD2C
 FE/731F: 00 CC        BRK $CC
 FE/7321: 24 CD        BIT $CD
 FE/7323: 28           PLP
 FE/7324: ED 2C 48     SBC $482C
+Local_FE7327:
 FE/7327: 14 02        TRB $02
 FE/7329: 8B           PHB
+Local_FE732A:
 FE/732A: 14 00        TRB $00
 FE/732C: AF 28 AF 28  LDA $28AF28
-FE/7330: F0 24        BEQ $7356
+FE/7330: F0 24        BEQ Local_FE7356
 FE/7332: 00 F0        BRK $F0
 FE/7334: 24 AD        BIT $AD
 FE/7336: 2C CD 24     BIT $24CD
 FE/7339: 31 35        AND ($35),Y
 FE/733B: 00 54        BRK $54
 FE/733D: 39 0F 2D     AND $2D0F,Y
-FE/7340: 30 2D        BMI $736F
-FE/7342: 50 31        BVC $7375
+FE/7340: 30 2D        BMI Routine_FE736F
+FE/7342: 50 31        BVC Routine_FE7375
 FE/7344: 00 92        BRK $92
 FE/7346: 3D B1 39     AND $39B1,X
 FE/7349: 92 41        STA ($41)
-FE/734B: 70 39        BVS $7386
+FE/734B: 70 39        BVS Routine_FE7386
 FE/734D: 00 B3        BRK $B3
 FE/734F: 3D F4 49     AND $49F4,X
 FE/7352: 72 39        ADC ($39)
 FE/7354: F5 45        SBC $45,X
+Local_FE7356:
 FE/7356: 00 93        BRK $93
 FE/7358: 39 D5 45     AND $45D5,Y
 FE/735B: B4 3D        LDY $3D,X

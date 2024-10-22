@@ -26,7 +26,7 @@ CD/9CA5: 07 78        ORA [$78]
 CD/9CA7: 5A           PHY
 CD/9CA8: 24 04        BIT $04
 CD/9CAA: 06 03        ASL $03
-CD/9CAC: 50 2E        BVC $9CDC
+CD/9CAC: 50 2E        BVC Routine_CD9CDC
 CD/9CAE: 01 00        ORA ($00,X)
 CD/9CB0: 24 03        BIT $03
 CD/9CB2: 78           SEI

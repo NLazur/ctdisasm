@@ -32,11 +32,12 @@ C3/D86E: 25 4F        AND $4F
 C3/D870: 25 31        AND $31
 C3/D872: 46 22        LSR $22
 C3/D874: 00 01        BRK $01
-C3/D876: 10 85        BPL $D7FD
+C3/D876: 10 85        BPL Routine_C3D7FD
 C3/D878: 14 65        TRB $65
 C3/D87A: 58           CLI
 C3/D87B: 00 44        BRK $44
-C3/D87D: 10 00        BPL $D87F
+C3/D87D: 10 00        BPL Local_C3D87F
+Local_C3D87F:
 C3/D87F: 24 0C        BIT $0C
 C3/D881: 24 04        BIT $04
 C3/D883: 04 04        TSB $04

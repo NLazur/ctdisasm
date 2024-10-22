@@ -12,27 +12,34 @@ C1/966D: 85 0C        STA $0C
 C1/966F: AD 52 B2     LDA $B252
 C1/9672: 7B           TDC
 C1/9673: AA           TAX
+Local_C19674:
 C1/9674: BD 02 AF     LDA $AF02,X
 C1/9677: C9 FF        CMP #$FF
-C1/9679: F0 04        BEQ $967F
+C1/9679: F0 04        BEQ Local_C1967F
 C1/967B: C5 08        CMP $08
-C1/967D: D0 0D        BNE $968C
+C1/967D: D0 0D        BNE Local_C1968C
+Local_C1967F:
 C1/967F: E8           INX
 C1/9680: 8A           TXA
 C1/9681: CD C6 AE     CMP $AEC6
-C1/9684: D0 EE        BNE $9674
+C1/9684: D0 EE        BNE Local_C19674
 C1/9686: A5 0A        LDA $0A
-C1/9688: F0 10        BEQ $969A
-C1/968A: 80 13        BRA $969F
+C1/9688: F0 10        BEQ Local_C1969A
+C1/968A: 80 13        BRA Local_C1969F
+Local_C1968C:
 C1/968C: A5 0A        LDA $0A
-C1/968E: F0 06        BEQ $9696
+C1/968E: F0 06        BEQ Local_C19696
 C1/9690: 8A           TXA
 C1/9691: CD 52 B2     CMP $B252
-C1/9694: F0 E9        BEQ $967F
+C1/9694: F0 E9        BEQ Local_C1967F
+Local_C19696:
 C1/9696: A5 0C        LDA $0C
-C1/9698: F0 05        BEQ $969F
-C1/969A: 20 3E 8C     JSR $8C3E
-C1/969D: 80 05        BRA $96A4
+C1/9698: F0 05        BEQ Local_C1969F
+Local_C1969A:
+C1/969A: 20 3E 8C     JSR Routine_C18C3E
+C1/969D: 80 05        BRA Local_C196A4
+Local_C1969F:
 C1/969F: A9 01        LDA #$01
 C1/96A1: 8D 24 AF     STA $AF24
+Local_C196A4:
 C1/96A4: 60           RTS

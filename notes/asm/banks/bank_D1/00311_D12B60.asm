@@ -1,32 +1,36 @@
 ; Bank: D1 | Start Address: 2B60
 Routine_D12B60:
-D1/2B60: 30 00        BMI $2B62
+D1/2B60: 30 00        BMI Local_D12B62
+Local_D12B62:
 D1/2B62: 00 11        BRK $11
-D1/2B64: 80 00        BRA $2B66
+D1/2B64: 80 00        BRA Local_D12B66
+Local_D12B66:
 D1/2B66: 01 FF        ORA ($FF,X)
 D1/2B68: FF 11 80 AA  SBC $AA8011,X
 D1/2B6C: 02 06        COP $06
-D1/2B6E: 10 04        BPL $2B74
+D1/2B6E: 10 04        BPL Routine_D12B74
 D1/2B70: 0C 10 06     TSB $0610
 D1/2B73: 12 10        ORA ($10)
 D1/2B75: 08           PHP
 D1/2B76: 18           CLC
-D1/2B77: 10 2A        BPL $2BA3
+D1/2B77: 10 2A        BPL Routine_D12BA3
 D1/2B79: 0A           ASL
 D1/2B7A: 1E 10 0C     ASL $0C10,X
 D1/2B7D: 24 10        BIT $10
 D1/2B7F: 0E 2A 10     ASL $102A
 D1/2B82: 00 41        BRK $41
 D1/2B84: AB           PLB
-D1/2B85: 30 10        BMI $2B97
+D1/2B85: 30 10        BMI Local_D12B97
 D1/2B87: 06 10        ASL $10
 D1/2B89: 04 0C        TSB $0C
-D1/2B8B: 10 06        BPL $2B93
+D1/2B8B: 10 06        BPL Local_D12B93
 D1/2B8D: 12 10        ORA ($10)
 D1/2B8F: 08           PHP
 D1/2B90: 18           CLC
-D1/2B91: 10 46        BPL $2BD9
+D1/2B91: 10 46        BPL Routine_D12BD9
+Local_D12B93:
 D1/2B93: 3F 00 EA 0A  AND $0AEA00,X
+Local_D12B97:
 D1/2B97: 1E 10 0C     ASL $0C10,X
 D1/2B9A: 24 10        BIT $10
 D1/2B9C: 0E 2A 00     ASL $002A

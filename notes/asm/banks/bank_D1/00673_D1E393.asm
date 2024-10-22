@@ -1,7 +1,8 @@
 ; Bank: D1 | Start Address: E393
 Routine_D1E393:
 D1/E393: 00 01        BRK $01
-D1/E395: 80 00        BRA $E397
+D1/E395: 80 00        BRA Local_D1E397
+Local_D1E397:
 D1/E397: 00 00        BRK $00
 D1/E399: 00 00        BRK $00
 D1/E39B: 00 00        BRK $00
@@ -15,7 +16,7 @@ D1/E3A7: 00 00        BRK $00
 D1/E3A9: 38           SEC
 D1/E3AA: 00 40        BRK $40
 D1/E3AC: 00 00        BRK $00
-D1/E3AE: 80 07        BRA $E3B7
+D1/E3AE: 80 07        BRA Routine_D1E3B7
 D1/E3B0: 00 00        BRK $00
 D1/E3B2: 00 00        BRK $00
 D1/E3B4: 00 00        BRK $00
@@ -31,8 +32,8 @@ D1/E3C3: 00 3C        BRK $3C
 D1/E3C5: 00 6F        BRK $6F
 D1/E3C7: 00 40        BRK $40
 D1/E3C9: 00 00        BRK $00
-D1/E3CB: 80 3D        BRA $E40A
-D1/E3CD: 80 0F        BRA $E3DE
+D1/E3CB: 80 3D        BRA Routine_D1E40A
+D1/E3CD: 80 0F        BRA Local_D1E3DE
 D1/E3CF: 00 00        BRK $00
 D1/E3D1: 00 00        BRK $00
 D1/E3D3: 00 04        BRK $04
@@ -41,6 +42,7 @@ D1/E3D6: 06 07        ASL $07
 D1/E3D8: 00 01        BRK $01
 D1/E3DA: 0E 0F 84     ASL $840F
 D1/E3DD: 4A           LSR
+Local_D1E3DE:
 D1/E3DE: CA           DEX
 D1/E3DF: 0A           ASL
 D1/E3E0: 8A           TXA

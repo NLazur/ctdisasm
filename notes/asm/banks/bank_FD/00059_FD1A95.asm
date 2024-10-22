@@ -9,7 +9,7 @@ FD/1A9F: A9 01 3C     LDA #$3C01
 FD/1AA2: D1 41        CMP ($41),Y
 FD/1AA4: C3 00        CMP $00,S
 FD/1AA6: 3E 01 8A     ROL $8A01,X
-FD/1AA9: 20 85 24     JSR $2485
+FD/1AA9: 20 85 24     JSR Routine_FD2485
 FD/1AAC: E3 24        SBC $24,S
 FD/1AAE: E3 E2        SBC $E2,S
 FD/1AB0: 51 C1        EOR ($C1),Y
@@ -20,7 +20,8 @@ FD/1AB7: 03 1B        ORA $1B,S
 FD/1AB9: 03 1E        ORA $1E,S
 FD/1ABB: DA           PHX
 FD/1ABC: 07 68        ORA [$68]
-FD/1ABE: 80 00        BRA $1AC0
+FD/1ABE: 80 00        BRA Local_FD1AC0
+Local_FD1AC0:
 FD/1AC0: 03 38        ORA $38,S
 FD/1AC2: 07 02        ORA [$02]
 FD/1AC4: F9 15 0C     SBC $0C15,Y

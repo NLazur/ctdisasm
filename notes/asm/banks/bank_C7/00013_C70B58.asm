@@ -74,7 +74,7 @@ C7/0BE9: 00 9C        BRK $9C
 C7/0BEB: 06 00        ASL $00
 C7/0BED: 00 71        BRK $71
 C7/0BEF: 0A           ASL
-C7/0BF0: 4C 08 78     JMP $7808
+C7/0BF0: 4C 08 78     JMP Routine_C77808
 C7/0BF3: 06 24        ASL $24
 C7/0BF5: 00 00        BRK $00
 C7/0BF7: 00 00        BRK $00
@@ -139,7 +139,7 @@ C7/0C6F: 00 00        BRK $00
 C7/0C71: 00 00        BRK $00
 C7/0C73: 00 43        BRK $43
 C7/0C75: 00 E9        BRK $E9
-C7/0C77: F0 E1        BEQ $0C5A
+C7/0C77: F0 E1        BEQ Routine_C70C5A
 C7/0C79: 74 00        STZ $00,X
 C7/0C7B: 00 FE        BRK $FE
 C7/0C7D: 00 00        BRK $00
@@ -207,7 +207,7 @@ C7/0D2F: CA           DEX
 C7/0D30: F4 AB CA     PEA $CAAB
 C7/0D33: B2 B1        LDA ($B1)
 C7/0D35: CA           DEX
-C7/0D36: 22 B5 CA 4D  JSR $4DCAB5
+C7/0D36: 22 B5 CA 4D  JSR Routine_4DCAB5
 C7/0D3A: B9 CA 34     LDA $34CA,Y
 C7/0D3D: BC CA 4E     LDY $4ECA,X
 C7/0D40: C1 CA        CMP ($CA,X)
@@ -286,13 +286,13 @@ C7/0DC0: 27 66        AND [$66]
 C7/0DC2: CB           WAI
 C7/0DC3: 26 6F        ROL $6F
 C7/0DC5: CB           WAI
-C7/0DC6: 50 7C        BVC $0E44
+C7/0DC6: 50 7C        BVC Routine_C70E44
 C7/0DC8: CB           WAI
 C7/0DC9: 57 7D        EOR [$7D],Y
 C7/0DCB: CB           WAI
 C7/0DCC: 01 84        ORA ($84,X)
 C7/0DCE: CB           WAI
-C7/0DCF: 50 8B        BVC $0D5C
+C7/0DCF: 50 8B        BVC Routine_C70D5C
 C7/0DD1: CB           WAI
 C7/0DD2: 61 8C        ADC ($8C,X)
 C7/0DD4: CB           WAI

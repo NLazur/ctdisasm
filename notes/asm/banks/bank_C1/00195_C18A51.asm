@@ -2,8 +2,9 @@
 Routine_C18A51:
 C1/8A51: 7B           TDC
 C1/8A52: AD 7E B1     LDA $B17E
-C1/8A55: D0 03        BNE $8A5A
+C1/8A55: D0 03        BNE Local_C18A5A
 C1/8A57: AD C7 AE     LDA $AEC7
+Local_C18A5A:
 C1/8A5A: 3A           DEC
 C1/8A5B: AA           TAX
 C1/8A5C: BD 63 B1     LDA $B163,X
@@ -21,7 +22,7 @@ C1/8A77: E2 20        SEP #$20
 C1/8A79: B9 7C B0     LDA $B07C,Y
 C1/8A7C: 3A           DEC
 C1/8A7D: 99 7C B0     STA $B07C,Y
-C1/8A80: D0 1A        BNE $8A9C
+C1/8A80: D0 1A        BNE Local_C18A9C
 C1/8A82: A9 0A        LDA #$0A
 C1/8A84: 99 7C B0     STA $B07C,Y
 C1/8A87: 98           TYA
@@ -36,4 +37,5 @@ C1/8A93: 29 BF        AND #$BF
 C1/8A95: 9D 4E 5E     STA $5E4E,X
 C1/8A98: 7B           TDC
 C1/8A99: 99 ED AF     STA $AFED,Y
+Local_C18A9C:
 C1/8A9C: 60           RTS

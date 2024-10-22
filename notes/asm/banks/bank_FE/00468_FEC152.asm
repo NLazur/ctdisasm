@@ -2,10 +2,10 @@
 Routine_FEC152:
 FE/C152: 93 0F        STA ($0F,S),Y
 FE/C154: 1B           TCS
-FE/C155: 20 61 12     JSR $1261
+FE/C155: 20 61 12     JSR Routine_FE1261
 FE/C158: 14 40        TRB $40
 FE/C15A: 14 64        TRB $64
-FE/C15C: 4C EF 03     JMP $03EF
+FE/C15C: 4C EF 03     JMP Routine_FE03EF
 FE/C15F: 61 63        ADC ($63,X)
 FE/C161: 62 10 4D     PER $FE0E74
 FE/C164: 4B           PHK
@@ -48,7 +48,7 @@ FE/C1AC: 49 00        EOR #$00
 FE/C1AE: 17 11        ORA [$11],Y
 FE/C1B0: 18           CLC
 FE/C1B1: 7B           TDC
-FE/C1B2: 10 29        BPL $C1DD
+FE/C1B2: 10 29        BPL Local_FEC1DD
 FE/C1B4: 08           PHP
 FE/C1B5: 0A           ASL
 FE/C1B6: AF 10 C5 97  LDA $97C510
@@ -57,7 +57,7 @@ FE/C1BC: 3B           TSC
 FE/C1BD: 2C 51 53     BIT $5351
 FE/C1C0: 52 C7        EOR ($C7)
 FE/C1C2: 38           SEC
-FE/C1C3: 82 03 F9     BRL $FEBAC9
+FE/C1C3: 82 03 F9     BRL Routine_FEBAC9
 FE/C1C6: 05 2C        ORA $2C
 FE/C1C8: 56 52        LSR $52,X
 FE/C1CA: 45 2C        EOR $2C
@@ -68,6 +68,7 @@ FE/C1D2: 15 1F        ORA $1F,X
 FE/C1D4: 1D 2B 0C     ORA $0C2B,X
 FE/C1D7: 5D AD 1D     EOR $1DAD,X
 FE/C1DA: D9 17 A0     CMP $A017,Y
+Local_FEC1DD:
 FE/C1DD: 12 58        ORA ($58)
 FE/C1DF: 58           CLI
 FE/C1E0: 52 81        EOR ($81)
@@ -82,7 +83,7 @@ FE/C1F0: 52 53        EOR ($53)
 FE/C1F2: 58           CLI
 FE/C1F3: 53 32        EOR ($32,S),Y
 FE/C1F5: 06 58        ASL $58
-FE/C1F7: 22 53 F9 07  JSR $07F953
+FE/C1F7: 22 53 F9 07  JSR Routine_07F953
 FE/C1FB: 5D 5A 53     EOR $535A,X
 FE/C1FE: 5E 06 5A     LSR $5A06,X
 FE/C201: 5D 04 51     EOR $5104,X
@@ -96,7 +97,7 @@ FE/C211: 09 11        ORA #$11
 FE/C213: 11 10        ORA ($10),Y
 FE/C215: 86 02        STX $02
 FE/C217: 57 2B        EOR [$2B],Y
-FE/C219: 20 55 E9     JSR $E955
+FE/C219: 20 55 E9     JSR Routine_FEE955
 FE/C21C: 11 5D        ORA ($5D),Y
 FE/C21E: C5 02        CMP $02
 FE/C220: 58           CLI
@@ -110,7 +111,7 @@ FE/C22E: 59 C9 12     EOR $12C9,Y
 FE/C231: 11 A4        ORA ($A4),Y
 FE/C233: 0C 45 C2     TSB $C245
 FE/C236: 02 5B        COP $5B
-FE/C238: B0 13        BCS $C24D
+FE/C238: B0 13        BCS Routine_FEC24D
 FE/C23A: 58           CLI
 FE/C23B: 5A           PHY
 FE/C23C: 14 8B        TRB $8B

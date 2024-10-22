@@ -3,9 +3,10 @@ Routine_C14D79:
 C1/4D79: 7B           TDC
 C1/4D7A: AA           TAX
 C1/4D7B: 86 8C        STX $8C
+Local_C14D7D:
 C1/4D7D: A6 8C        LDX $8C
 C1/4D7F: BD 18 A0     LDA $A018,X
-C1/4D82: 30 53        BMI $4DD7
+C1/4D82: 30 53        BMI Local_C14DD7
 C1/4D84: 85 8A        STA $8A
 C1/4D86: 0A           ASL
 C1/4D87: A8           TAY
@@ -45,11 +46,12 @@ C1/4DCC: 3A           DEC
 C1/4DCD: 99 3A A1     STA $A13A,Y
 C1/4DD0: 99 14 A2     STA $A214,Y
 C1/4DD3: E6 8C        INC $8C
-C1/4DD5: 80 A6        BRA $4D7D
+C1/4DD5: 80 A6        BRA Local_C14D7D
+Local_C14DD7:
 C1/4DD7: A5 8E        LDA $8E
 C1/4DD9: C9 01        CMP #$01
-C1/4DDB: D0 3C        BNE $4E19
-C1/4DDD: 80 42        BRA $4E21
+C1/4DDB: D0 3C        BNE Local_C14E19
+C1/4DDD: 80 42        BRA Local_C14E21
 C1/4DDF: AC B6 A2     LDY $A2B6
 C1/4DE2: A5 80        LDA $80
 C1/4DE4: AA           TAX
@@ -75,8 +77,10 @@ C1/4E0D: 99 B8 A1     STA $A1B8,Y
 C1/4E10: 99 B8 A2     STA $A2B8,Y
 C1/4E13: A5 8E        LDA $8E
 C1/4E15: C9 01        CMP #$01
-C1/4E17: F0 08        BEQ $4E21
+C1/4E17: F0 08        BEQ Local_C14E21
+Local_C14E19:
 C1/4E19: EE 0F A0     INC $A00F
 C1/4E1C: A9 02        LDA #$02
-C1/4E1E: 4C BB 75     JMP $75BB
+C1/4E1E: 4C BB 75     JMP Routine_C175BB
+Local_C14E21:
 C1/4E21: 60           RTS

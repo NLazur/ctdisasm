@@ -5,7 +5,7 @@ CF/EEA0: A5 C5        LDA $C5
 CF/EEA2: E9 0C        SBC #$0C
 CF/EEA4: AA           TAX
 CF/EEA5: BD D4 A3     LDA $A3D4,X
-CF/EEA8: F0 40        BEQ $EEEA
+CF/EEA8: F0 40        BEQ Local_CFEEEA
 CF/EEAA: A4 C9        LDY $C9
 CF/EEAC: B9 2D 90     LDA $902D,Y
 CF/EEAF: A8           TAY
@@ -20,6 +20,7 @@ CF/EEBB: AA           TAX
 CF/EEBC: A9 04        LDA #$04
 CF/EEBE: 8D C8 00     STA $00C8
 CF/EEC1: A4 C9        LDY $C9
+Local_CFEEC3:
 CF/EEC3: BD 2D 92     LDA $922D,X
 CF/EEC6: 99 00 07     STA $0700,Y
 CF/EEC9: BD 2E 92     LDA $922E,X
@@ -37,6 +38,7 @@ CF/EEE0: E8           INX
 CF/EEE1: E8           INX
 CF/EEE2: E8           INX
 CF/EEE3: CE C8 00     DEC $00C8
-CF/EEE6: D0 DB        BNE $EEC3
+CF/EEE6: D0 DB        BNE Local_CFEEC3
 CF/EEE8: 84 C9        STY $C9
+Local_CFEEEA:
 CF/EEEA: 60           RTS

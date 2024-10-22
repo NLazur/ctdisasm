@@ -9,10 +9,11 @@ C3/B6C1: 88           DEY
 C3/B6C2: 48           PHA
 C3/B6C3: 02 90        COP $90
 C3/B6C5: 02 16        COP $16
-C3/B6C7: 50 30        BVC $B6F9
+C3/B6C7: 50 30        BVC Local_C3B6F9
 C3/B6C9: 59 11 B0     EOR $B011,Y
-C3/B6CC: 80 44        BRA $B712
-C3/B6CE: 30 6B        BMI $B73B
+C3/B6CC: 80 44        BRA Routine_C3B712
+C3/B6CE: 30 6B        BMI Local_C3B73B
+Local_C3B6D0:
 C3/B6D0: B3 0F        LDA ($0F,S),Y
 C3/B6D2: 46 00        LSR $00
 C3/B6D4: 3F 9D 0F 1F  AND $1F0F9D,X
@@ -29,6 +30,7 @@ C3/B6F2: 34 0B        BIT $0B,X
 C3/B6F4: 09 61        ORA #$61
 C3/B6F6: 16 7F        ASL $7F,X
 C3/B6F8: 98           TYA
+Local_C3B6F9:
 C3/B6F9: 0F 09 00 7E  ORA $7E0009
 C3/B6FD: 55 09        EOR $09,X
 C3/B6FF: 00 70        BRK $70
@@ -36,13 +38,13 @@ C3/B701: 12 10        ORA ($10)
 C3/B703: A2 12        LDX #$12
 C3/B705: 00 8C        BRK $8C
 C3/B707: 1B           TCS
-C3/B708: 10 C6        BPL $B6D0
+C3/B708: 10 C6        BPL Local_C3B6D0
 C3/B70A: 84 16        STY $16
 C3/B70C: 7F A8 14 FE  ADC $FE14A8,X
 C3/B710: FF 31 0E E8  SBC $E80E31,X
 C3/B714: 38           SEC
 C3/B715: 0A           ASL
-C3/B716: F0 C5        BEQ $B6DD
+C3/B716: F0 C5        BEQ Routine_C3B6DD
 C3/B718: 35 08        AND $08,X
 C3/B71A: FB           XCE
 C3/B71B: 0E FC FF     ASL $FFFC
@@ -59,9 +61,10 @@ C3/B731: 0E 30 24     ASL $2430
 C3/B734: 24 30        BIT $30
 C3/B736: 0A           ASL
 C3/B737: 24 40        BIT $40
-C3/B739: 10 10        BPL $B74B
+C3/B739: 10 10        BPL Routine_C3B74B
+Local_C3B73B:
 C3/B73B: 2F 00 C0 9B  AND $9BC000
 C3/B73F: 0B           PHD
-C3/B740: 80 2F        BRA $B771
+C3/B740: 80 2F        BRA Routine_C3B771
 C3/B742: 00 5E        BRK $5E
 C3/B744: 40           RTI

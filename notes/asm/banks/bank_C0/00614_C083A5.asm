@@ -12,7 +12,7 @@ C0/83B6: 85 5C        STA $5C
 C0/83B8: A5 0E        LDA $0E
 C0/83BA: 3A           DEC
 C0/83BB: 85 5A        STA $5A
-C0/83BD: 20 60 7E     JSR $7E60
+C0/83BD: 20 60 7E     JSR Routine_C07E60
 C0/83C0: A9 04        LDA #$04
 C0/83C2: 04 7A        TSB $7A
 C0/83C4: 60           RTS

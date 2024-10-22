@@ -18,10 +18,11 @@ C2/AEDB: A9 FF        LDA #$FF
 C2/AEDD: 85 01        STA $01
 C2/AEDF: C2 10        REP #$10
 C2/AEE1: A0 90 98     LDY #$9890
+Local_C2AEE4:
 C2/AEE4: E6 01        INC $01
 C2/AEE6: 06 00        ASL $00
-C2/AEE8: B0 06        BCS $AEF0
+C2/AEE8: B0 06        BCS Routine_C2AEF0
 C2/AEEA: A5 00        LDA $00
-C2/AEEC: D0 F6        BNE $AEE4
+C2/AEEC: D0 F6        BNE Local_C2AEE4
 C2/AEEE: 28           PLP
 C2/AEEF: 60           RTS

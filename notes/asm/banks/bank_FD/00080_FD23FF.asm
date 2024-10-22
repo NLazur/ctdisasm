@@ -3,14 +3,14 @@ Routine_FD23FF:
 FD/23FF: 08           PHP
 FD/2400: 13 73        ORA ($73,S),Y
 FD/2402: A9 2C        LDA #$2C
-FD/2404: 80 3C        BRA $2442
+FD/2404: 80 3C        BRA Local_FD2442
 FD/2406: 0F EF 08 13  ORA $1308EF
 FD/240A: F3 60        SBC ($60,S),Y
 FD/240C: C0 84        CPY #$84
 FD/240E: 08           PHP
-FD/240F: F0 30        BEQ $2441
+FD/240F: F0 30        BEQ Routine_FD2441
 FD/2411: C0 05        CPY #$05
-FD/2413: 50 14        BVC $2429
+FD/2413: 50 14        BVC Routine_FD2429
 FD/2415: EB           XBA
 FD/2416: 98           TYA
 FD/2417: 14 70        TRB $70
@@ -28,11 +28,12 @@ FD/2432: 78           SEI
 FD/2433: DF 3D 48 FD  CMP $FD483D,X
 FD/2437: 4A           LSR
 FD/2438: 78           SEI
-FD/2439: 5C 78 55 68  JMP $685578
+FD/2439: 5C 78 55 68  JMP Routine_685578
 FD/243D: EB           XBA
 FD/243E: 61 E0        ADC ($E0,X)
 FD/2440: 74 60        STZ $60,X
+Local_FD2442:
 FD/2442: FE AD 48     INC $48AD,X
 FD/2445: EF 71 00 74  SBC $740071
-FD/2449: 30 8A        BMI $23D5
+FD/2449: 30 8A        BMI Routine_FD23D5
 FD/244B: 40           RTI

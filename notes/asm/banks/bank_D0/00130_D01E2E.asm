@@ -1,10 +1,10 @@
 ; Bank: D0 | Start Address: 1E2E
 Routine_D01E2E:
-D0/1E2E: B0 60        BCS $1E90
-D0/1E30: 80 80        BRA $1DB2
-D0/1E32: 20 60 40     JSR $4060
-D0/1E35: 10 10        BPL $1E47
-D0/1E37: 10 04        BPL $1E3D
+D0/1E2E: B0 60        BCS Routine_D01E90
+D0/1E30: 80 80        BRA Routine_D01DB2
+D0/1E32: 20 60 40     JSR Routine_D04060
+D0/1E35: 10 10        BPL Routine_D01E47
+D0/1E37: 10 04        BPL Routine_D01E3D
 D0/1E39: 15 12        ORA $12,X
 D0/1E3B: 0F 09 06 13  ORA $130609
 D0/1E3F: 14 3B        TRB $3B

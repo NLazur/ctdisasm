@@ -14,9 +14,9 @@ D0/CF4A: 00 00        BRK $00
 D0/CF4C: 00 08        BRK $08
 D0/CF4E: 00 10        BRK $10
 D0/CF50: 00 00        BRK $00
-D0/CF52: 80 80        BRA $CED4
+D0/CF52: 80 80        BRA Routine_D0CED4
 D0/CF54: C0 40        CPY #$40
-D0/CF56: 80 76        BRA $CFCE
+D0/CF56: 80 76        BRA Routine_D0CFCE
 D0/CF58: 00 01        BRK $01
 D0/CF5A: 00 40        BRK $40
 D0/CF5C: 00 00        BRK $00
@@ -31,5 +31,5 @@ D0/CF6C: 00 00        BRK $00
 D0/CF6E: 00 00        BRK $00
 D0/CF70: 00 00        BRK $00
 D0/CF72: 00 00        BRK $00
-D0/CF74: 80 80        BRA $CEF6
+D0/CF74: 80 80        BRA Routine_D0CEF6
 D0/CF76: 40           RTI

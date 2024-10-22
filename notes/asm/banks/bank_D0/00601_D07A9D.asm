@@ -1,15 +1,15 @@
 ; Bank: D0 | Start Address: 7A9D
 Routine_D07A9D:
 D0/7A9D: C0 30        CPY #$30
-D0/7A9F: F0 30        BEQ $7AD1
-D0/7AA1: 70 70        BVS $7B13
-D0/7AA3: 70 B8        BVS $7A5D
+D0/7A9F: F0 30        BEQ Local_D07AD1
+D0/7AA1: 70 70        BVS Routine_D07B13
+D0/7AA3: 70 B8        BVS Routine_D07A5D
 D0/7AA5: 78           SEI
 D0/7AA6: 78           SEI
 D0/7AA7: F8           SED
 D0/7AA8: 00 80        BRK $80
 D0/7AAA: C0 F0        CPY #$F0
-D0/7AAC: F0 F0        BEQ $7A9E
+D0/7AAC: F0 F0        BEQ Routine_D07A9E
 D0/7AAE: F8           SED
 D0/7AAF: F8           SED
 D0/7AB0: 00 00        BRK $00
@@ -28,7 +28,8 @@ D0/7AC7: 06 00        ASL $00
 D0/7AC9: 00 00        BRK $00
 D0/7ACB: 00 00        BRK $00
 D0/7ACD: 00 90        BRK $90
-D0/7ACF: F0 A8        BEQ $7A79
+D0/7ACF: F0 A8        BEQ Routine_D07A79
+Local_D07AD1:
 D0/7AD1: 98           TYA
 D0/7AD2: DC 3C 2C     JMP [$2C3C]
 D0/7AD5: 1C 5C 3C     TRB $3C5C
@@ -46,17 +47,18 @@ D0/7AED: 0C 3B 1C     TSB $1C3B
 D0/7AF0: 01 03        ORA ($03,X)
 D0/7AF2: 07 0E        ORA [$0E]
 D0/7AF4: 0C 18 10     TSB $1018
-D0/7AF7: 20 00 00     JSR $0000
-D0/7AFA: 80 80        BRA $7A7C
+D0/7AF7: 20 00 00     JSR Routine_D00000
+D0/7AFA: 80 80        BRA Routine_D07A7C
 D0/7AFC: 00 C0        BRK $C0
 D0/7AFE: 00 E0        BRK $E0
 D0/7B00: 00 E0        BRK $E0
-D0/7B02: 80 40        BRA $7B44
+D0/7B02: 80 40        BRA Local_D07B44
 D0/7B04: C0 00        CPY #$00
 D0/7B06: C0 08        CPY #$08
 D0/7B08: 00 00        BRK $00
 D0/7B0A: 00 00        BRK $00
-D0/7B0C: 10 30        BPL $7B3E
+D0/7B0C: 10 30        BPL Local_D07B3E
+Local_D07B0E:
 D0/7B0E: 38           SEC
 D0/7B0F: 38           SEC
 D0/7B10: 00 00        BRK $00
@@ -78,13 +80,16 @@ D0/7B2E: 00 00        BRK $00
 D0/7B30: 00 00        BRK $00
 D0/7B32: 00 00        BRK $00
 D0/7B34: 00 80        BRK $80
-D0/7B36: 80 00        BRA $7B38
+D0/7B36: 80 00        BRA Local_D07B38
+Local_D07B38:
 D0/7B38: 00 00        BRK $00
 D0/7B3A: 00 00        BRK $00
 D0/7B3C: 00 00        BRK $00
-D0/7B3E: 80 80        BRA $7AC0
+Local_D07B3E:
+D0/7B3E: 80 80        BRA Routine_D07AC0
 D0/7B40: 00 00        BRK $00
 D0/7B42: 00 00        BRK $00
+Local_D07B44:
 D0/7B44: 00 03        BRK $03
 D0/7B46: 02 05        COP $05
 D0/7B48: 0B           PHD
@@ -94,7 +99,7 @@ D0/7B4E: 0A           ASL
 D0/7B4F: 33 00        AND ($00,S),Y
 D0/7B51: 00 01        BRK $01
 D0/7B53: 01 01        ORA ($01,X)
-D0/7B55: 10 18        BPL $7B6F
+D0/7B55: 10 18        BPL Routine_D07B6F
 D0/7B57: 3C 13 03     BIT $0313,X
 D0/7B5A: B8           CLV
 D0/7B5B: 3F D1 1E 63  AND $631ED1,X
@@ -111,7 +116,7 @@ D0/7B76: 76 50        ROR $50,X
 D0/7B78: F7 40        SBC [$40],Y
 D0/7B7A: 32 43        AND ($43)
 D0/7B7C: 34 8D        BIT $8D,X
-D0/7B7E: 50 8E        BVC $7B0E
+D0/7B7E: 50 8E        BVC Local_D07B0E
 D0/7B80: 71 D1        ADC ($D1),Y
 D0/7B82: DF 8F BF FD  CMP $FDBF8F,X
 D0/7B86: F3 FF        SBC ($FF,S),Y
@@ -125,32 +130,36 @@ D0/7B93: 0B           PHD
 D0/7B94: AB           PLB
 D0/7B95: 5F AF 5F 2B  EOR $2B5FAF,X
 D0/7B99: 0B           PHD
+Local_D07B9A:
 D0/7B9A: 0F 3F FF FF  ORA $FFFF3F
 D0/7B9E: FF FF F8 F8  SBC $F8F8FF,X
 D0/7BA2: F8           SED
 D0/7BA3: F8           SED
-D0/7BA4: F0 F0        BEQ $7B96
-D0/7BA6: F0 F0        BEQ $7B98
-D0/7BA8: F0 F0        BEQ $7B9A
+Local_D07BA4:
+D0/7BA4: F0 F0        BEQ Routine_D07B96
+D0/7BA6: F0 F0        BEQ Routine_D07B98
+D0/7BA8: F0 F0        BEQ Local_D07B9A
 D0/7BAA: E0 E0 E0     CPX #$E0E0
 D0/7BAD: E0 C0 C0     CPX #$C0C0
 D0/7BB0: F8           SED
 D0/7BB1: F8           SED
-D0/7BB2: F0 F0        BEQ $7BA4
-D0/7BB4: F0 E0        BEQ $7B96
+D0/7BB2: F0 F0        BEQ Local_D07BA4
+D0/7BB4: F0 E0        BEQ Routine_D07B96
 D0/7BB6: E0 C0 16     CPX #$16C0
 D0/7BB9: 05 0E        ORA $0E
-D0/7BBB: 10 19        BPL $7BD6
+D0/7BBB: 10 19        BPL Local_D07BD6
 D0/7BBD: 1F 0F 0F 03  ORA $030F0F,X
 D0/7BC1: 03 00        ORA $00,S
 D0/7BC3: 00 00        BRK $00
+Local_D07BC5:
 D0/7BC5: 00 00        BRK $00
 D0/7BC7: 00 18        BRK $18
 D0/7BC9: 1F 1F 0F 03  ORA $030F1F,X
 D0/7BCD: 00 00        BRK $00
 D0/7BCF: 00 3C        BRK $3C
 D0/7BD1: 7C 78 F8     JMP ($F878,X)
-D0/7BD4: F0 F0        BEQ $7BC6
+D0/7BD4: F0 F0        BEQ Routine_D07BC6
+Local_D07BD6:
 D0/7BD6: C0 C0        CPY #$C0
 D0/7BD8: C0 C0        CPY #$C0
 D0/7BDA: 00 00        BRK $00
@@ -164,7 +173,7 @@ D0/7BE9: 38           SEC
 D0/7BEA: 37 38        AND [$38],Y
 D0/7BEC: 7F 30 6F 70  ADC $706F30,X
 D0/7BF0: FF 60 DC E3  SBC $E3DC60,X
-D0/7BF4: F0 CF        BEQ $7BC5
-D0/7BF6: 80 BF        BRA $7BB7
+D0/7BF4: F0 CF        BEQ Local_D07BC5
+D0/7BF6: 80 BF        BRA Routine_D07BB7
 D0/7BF8: 00 00        BRK $00
 D0/7BFA: 40           RTI

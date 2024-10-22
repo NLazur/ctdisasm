@@ -21,13 +21,13 @@ FD/9A4E: 21 E8        AND ($E8,X)
 FD/9A50: 0A           ASL
 FD/9A51: 04 AD        TSB $AD
 FD/9A53: 02 04        COP $04
-FD/9A55: 30 A3        BMI $99FA
+FD/9A55: 30 A3        BMI Routine_FD99FA
 FD/9A57: 00 82        BRK $82
-FD/9A59: 10 8B        BPL $99E6
+FD/9A59: 10 8B        BPL Routine_FD99E6
 FD/9A5B: 00 04        BRK $04
 FD/9A5D: 0F 00 96 08  ORA $089600
 FD/9A61: 0F 17 AD 08  ORA $08AD17
-FD/9A65: 10 96        BPL $99FD
+FD/9A65: 10 96        BPL Routine_FD99FD
 FD/9A67: 04 06        TSB $06
 FD/9A69: 08           PHP
 FD/9A6A: 11 0D        ORA ($0D),Y

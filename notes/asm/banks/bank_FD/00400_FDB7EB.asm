@@ -3,10 +3,11 @@ Routine_FDB7EB:
 FD/B7EB: 7B           TDC
 FD/B7EC: AA           TAX
 FD/B7ED: 86 02        STX $02
+Local_FDB7EF:
 FD/B7EF: A6 02        LDX $02
 FD/B7F1: BD FF AE     LDA $AEFF,X
 FD/B7F4: C9 FF        CMP #$FF
-FD/B7F6: F0 63        BEQ $B85B
+FD/B7F6: F0 63        BEQ Local_FDB85B
 FD/B7F8: C2 20        REP #$20
 FD/B7FA: 8A           TXA
 FD/B7FB: 0A           ASL
@@ -18,9 +19,10 @@ FD/B804: 7B           TDC
 FD/B805: E2 20        SEP #$20
 FD/B807: BD 38 00     LDA $0038,X
 FD/B80A: C9 10        CMP #$10
-FD/B80C: 90 05        BCC $B813
+FD/B80C: 90 05        BCC Local_FDB813
 FD/B80E: A9 10        LDA #$10
 FD/B810: 9D 38 00     STA $0038,X
+Local_FDB813:
 FD/B813: 7B           TDC
 FD/B814: AD 90 29     LDA $2990
 FD/B817: 29 07        AND #$07
@@ -28,7 +30,7 @@ FD/B819: AA           TAX
 FD/B81A: 86 28        STX $28
 FD/B81C: A2 10 00     LDX #$0010
 FD/B81F: 86 2A        STX $2A
-FD/B821: 22 BF FD C1  JSR $C1FDBF
+FD/B821: 22 BF FD C1  JSR Routine_C1FDBF
 FD/B825: A6 04        LDX $04
 FD/B827: BD 38 00     LDA $0038,X
 FD/B82A: 3A           DEC
@@ -44,7 +46,7 @@ FD/B83B: 85 28        STA $28
 FD/B83D: A9 06        LDA #$06
 FD/B83F: AA           TAX
 FD/B840: 86 2A        STX $2A
-FD/B842: 22 BF FD C1  JSR $C1FDBF
+FD/B842: 22 BF FD C1  JSR Routine_C1FDBF
 FD/B846: A9 69        LDA #$69
 FD/B848: 38           SEC
 FD/B849: E5 2C        SBC $2C
@@ -55,17 +57,19 @@ FD/B850: 9D 58 B1     STA $B158,X
 FD/B853: 9D AB AF     STA $AFAB,X
 FD/B856: A9 01        LDA #$01
 FD/B858: 9D 3A B0     STA $B03A,X
+Local_FDB85B:
 FD/B85B: E6 02        INC $02
 FD/B85D: A5 02        LDA $02
 FD/B85F: C9 03        CMP #$03
-FD/B861: 90 8C        BCC $B7EF
+FD/B861: 90 8C        BCC Local_FDB7EF
 FD/B863: 7B           TDC
 FD/B864: AA           TAX
 FD/B865: 86 02        STX $02
+Local_FDB867:
 FD/B867: A6 02        LDX $02
 FD/B869: BD 0D AF     LDA $AF0D,X
 FD/B86C: C9 FF        CMP #$FF
-FD/B86E: F0 7C        BEQ $B8EC
+FD/B86E: F0 7C        BEQ Local_FDB8EC
 FD/B870: C2 20        REP #$20
 FD/B872: 8A           TXA
 FD/B873: 0A           ASL
@@ -77,9 +81,10 @@ FD/B87C: 7B           TDC
 FD/B87D: E2 20        SEP #$20
 FD/B87F: BD 38 00     LDA $0038,X
 FD/B882: C9 10        CMP #$10
-FD/B884: 90 05        BCC $B88B
+FD/B884: 90 05        BCC Local_FDB88B
 FD/B886: A9 10        LDA #$10
 FD/B888: 9D 38 00     STA $0038,X
+Local_FDB88B:
 FD/B88B: 7B           TDC
 FD/B88C: AD 90 29     LDA $2990
 FD/B88F: 29 07        AND #$07
@@ -87,7 +92,7 @@ FD/B891: AA           TAX
 FD/B892: 86 28        STX $28
 FD/B894: A2 10 00     LDX #$0010
 FD/B897: 86 2A        STX $2A
-FD/B899: 22 BF FD C1  JSR $C1FDBF
+FD/B899: 22 BF FD C1  JSR Routine_C1FDBF
 FD/B89D: A6 04        LDX $04
 FD/B89F: BD 38 00     LDA $0038,X
 FD/B8A2: 3A           DEC
@@ -99,11 +104,12 @@ FD/B8AB: 85 00        STA $00
 FD/B8AD: A6 04        LDX $04
 FD/B8AF: BD 0A 00     LDA $000A,X
 FD/B8B2: 89 01        BIT #$01
-FD/B8B4: F0 0A        BEQ $B8C0
+FD/B8B4: F0 0A        BEQ Local_FDB8C0
 FD/B8B6: A4 02        LDY $02
 FD/B8B8: B9 15 AF     LDA $AF15,Y
 FD/B8BB: 09 40        ORA #$40
 FD/B8BD: 99 15 AF     STA $AF15,Y
+Local_FDB8C0:
 FD/B8C0: 7B           TDC
 FD/B8C1: BD 38 00     LDA $0038,X
 FD/B8C4: AA           TAX
@@ -111,7 +117,7 @@ FD/B8C5: 86 28        STX $28
 FD/B8C7: A9 06        LDA #$06
 FD/B8C9: AA           TAX
 FD/B8CA: 86 2A        STX $2A
-FD/B8CC: 22 BF FD C1  JSR $C1FDBF
+FD/B8CC: 22 BF FD C1  JSR Routine_C1FDBF
 FD/B8D0: A9 69        LDA #$69
 FD/B8D2: 38           SEC
 FD/B8D3: E5 2C        SBC $2C
@@ -122,47 +128,54 @@ FD/B8DA: 9D 5B B1     STA $B15B,X
 FD/B8DD: 9D AE AF     STA $AFAE,X
 FD/B8E0: BD 02 AF     LDA $AF02,X
 FD/B8E3: C9 FF        CMP #$FF
-FD/B8E5: F0 05        BEQ $B8EC
+FD/B8E5: F0 05        BEQ Local_FDB8EC
 FD/B8E7: A9 01        LDA #$01
 FD/B8E9: 9D 3D B0     STA $B03D,X
+Local_FDB8EC:
 FD/B8EC: E6 02        INC $02
 FD/B8EE: A5 02        LDA $02
 FD/B8F0: CD C6 AE     CMP $AEC6
-FD/B8F3: B0 03        BCS $B8F8
-FD/B8F5: 4C 67 B8     JMP $B867
+FD/B8F3: B0 03        BCS Local_FDB8F8
+FD/B8F5: 4C 67 B8     JMP Local_FDB867
+Local_FDB8F8:
 FD/B8F8: 7B           TDC
 FD/B8F9: AA           TAX
 FD/B8FA: A8           TAY
 FD/B8FB: 86 00        STX $00
 FD/B8FD: AD AB AF     LDA $AFAB
+Local_FDB900:
 FD/B900: E8           INX
 FD/B901: DD AB AF     CMP $AFAB,X
-FD/B904: 90 10        BCC $B916
+FD/B904: 90 10        BCC Local_FDB916
 FD/B906: BD AB AF     LDA $AFAB,X
-FD/B909: F0 08        BEQ $B913
+FD/B909: F0 08        BEQ Local_FDB913
 FD/B90B: BD FF AE     LDA $AEFF,X
 FD/B90E: C9 FF        CMP #$FF
-FD/B910: F0 01        BEQ $B913
+FD/B910: F0 01        BEQ Local_FDB913
 FD/B912: 9B           TXY
+Local_FDB913:
 FD/B913: B9 AB AF     LDA $AFAB,Y
+Local_FDB916:
 FD/B916: E0 0A 00     CPX #$000A
-FD/B919: 90 E5        BCC $B900
+FD/B919: 90 E5        BCC Local_FDB900
 FD/B91B: B9 AB AF     LDA $AFAB,Y
 FD/B91E: 3A           DEC
 FD/B91F: 85 00        STA $00
 FD/B921: 7B           TDC
 FD/B922: AA           TAX
+Local_FDB923:
 FD/B923: BD FF AE     LDA $AEFF,X
 FD/B926: C9 FF        CMP #$FF
-FD/B928: F0 0B        BEQ $B935
+FD/B928: F0 0B        BEQ Local_FDB935
 FD/B92A: BD AB AF     LDA $AFAB,X
-FD/B92D: F0 06        BEQ $B935
+FD/B92D: F0 06        BEQ Local_FDB935
 FD/B92F: 38           SEC
 FD/B930: E5 00        SBC $00
 FD/B932: 9D AB AF     STA $AFAB,X
+Local_FDB935:
 FD/B935: E8           INX
 FD/B936: E0 0B 00     CPX #$000B
-FD/B939: 90 E8        BCC $B923
+FD/B939: 90 E8        BCC Local_FDB923
 FD/B93B: AD AB AF     LDA $AFAB
 FD/B93E: 8D DD 99     STA $99DD
 FD/B941: 8D 22 9F     STA $9F22

@@ -5,7 +5,7 @@ C7/1B54: 00 00        BRK $00
 C7/1B56: 27 48        AND [$48]
 C7/1B58: 5E 00 00     LSR $0000,X
 C7/1B5B: 00 25        BRK $25
-C7/1B5D: 4C 4F 00     JMP $004F
+C7/1B5D: 4C 4F 00     JMP Routine_C7004F
 C7/1B60: 00 00        BRK $00
 C7/1B62: 26 4D        ROL $4D
 C7/1B64: 28           PLP

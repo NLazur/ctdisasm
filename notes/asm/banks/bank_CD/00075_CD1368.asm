@@ -23,6 +23,7 @@ CD/138A: 8D 9F CC     STA $CC9F
 CD/138D: 7B           TDC
 CD/138E: A8           TAY
 CD/138F: 64 5B        STZ $5B
+Local_CD1391:
 CD/1391: 7B           TDC
 CD/1392: E2 20        SEP #$20
 CD/1394: A5 5B        LDA $5B
@@ -33,7 +34,7 @@ CD/139A: 4A           LSR
 CD/139B: AA           TAX
 CD/139C: BD 9D CC     LDA $CC9D,X
 CD/139F: 85 5D        STA $5D
-CD/13A1: 20 CA 13     JSR $13CA
+CD/13A1: 20 CA 13     JSR Routine_CD13CA
 CD/13A4: AA           TAX
 CD/13A5: C2 20        REP #$20
 CD/13A7: BF 00 13 CD  LDA $CD1300,X
@@ -52,7 +53,7 @@ CD/13BC: E6 5B        INC $5B
 CD/13BE: E6 53        INC $53
 CD/13C0: E6 53        INC $53
 CD/13C2: C6 67        DEC $67
-CD/13C4: D0 CB        BNE $1391
+CD/13C4: D0 CB        BNE Local_CD1391
 CD/13C6: 7B           TDC
 CD/13C7: E2 20        SEP #$20
 CD/13C9: 60           RTS

@@ -1,24 +1,24 @@
 ; Bank: C3 | Start Address: 3D43
 Routine_C33D43:
-C3/3D43: F0 E0        BEQ $3D25
+C3/3D43: F0 E0        BEQ Routine_C33D25
 C3/3D45: C9 00        CMP #$00
-C3/3D47: D0 14        BNE $3D5D
+C3/3D47: D0 14        BNE Routine_C33D5D
 C3/3D49: 0C 10 A0     TSB $A010
 C3/3D4C: 8D D6 64     STA $64D6
 C3/3D4F: 85 15        STA $15
 C3/3D51: 09 20        ORA #$20
 C3/3D53: DA           PHX
 C3/3D54: F2 07        SBC ($07)
-C3/3D56: 80 80        BRA $3CD8
+C3/3D56: 80 80        BRA Routine_C33CD8
 C3/3D58: E0 C9        CPX #$C9
 C3/3D5A: 2F D0 0E AD  AND $AD0ED0
 C3/3D5E: 14 10        TRB $10
-C3/3D60: 20 A5 17     JSR $17A5
+C3/3D60: 20 A5 17     JSR Routine_C317A5
 C3/3D63: 18           CLC
 C3/3D64: 69 10        ADC #$10
 C3/3D66: 12 00        ORA ($00)
 C3/3D68: CE C9 00     DEC $00C9
-C3/3D6B: 20 D0 09     JSR $09D0
+C3/3D6B: 20 D0 09     JSR Routine_C309D0
 C3/3D6E: A5 15        LDA $15
 C3/3D70: 18           CLC
 C3/3D71: 69 08        ADC #$08
@@ -29,14 +29,14 @@ C3/3D79: AA           TAX
 C3/3D7A: BD 4F 92     LDA $924F,X
 C3/3D7D: 66 24        ROR $24
 C3/3D7F: 0D A9 3E     ORA $3EA9
-C3/3D82: F0 0C        BEQ $3D90
+C3/3D82: F0 0C        BEQ Routine_C33D90
 C3/3D84: A5 15        LDA $15
 C3/3D86: 1F 0D 04 A5  ORA $A5040D,X
 C3/3D8A: 17 EB        ORA [$EB],Y
 C3/3D8C: 0C BD 2F     TSB $2FBD
 C3/3D8F: 66 C9        ROR $C9
 C3/3D91: 09 00        ORA #$00
-C3/3D93: 30 1F        BMI $3DB4
+C3/3D93: 30 1F        BMI Routine_C33DB4
 C3/3D95: 38           SEC
 C3/3D96: 65 15        ADC $15
 C3/3D98: 85 15        STA $15
@@ -48,9 +48,9 @@ C3/3DA0: 92 13        STA ($13)
 C3/3DA2: FA           PLX
 C3/3DA3: FF 1C 02 98  SBC $98021C,X
 C3/3DA7: 0F 01 06 C2  ORA $C20601
-C3/3DAB: 20 E6 13     JSR $13E6
+C3/3DAB: 20 E6 13     JSR Routine_C313E6
 C3/3DAE: E2 10        SEP #$10
-C3/3DB0: 20 4C DD     JSR $DD4C
+C3/3DB0: 20 4C DD     JSR Routine_C3DD4C
 C3/3DB3: 64 1A        STZ $1A
 C3/3DB5: 00 4A        BRK $4A
 C3/3DB7: 92 13        STA ($13)

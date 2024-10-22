@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 7418
 Routine_FD7418:
-FD/7418: 70 80        BVS $739A
+FD/7418: 70 80        BVS Routine_FD739A
 FD/741A: 15 00        ORA $00,X
 FD/741C: 00 00        BRK $00
 FD/741E: 0B           PHD
@@ -23,9 +23,10 @@ FD/7441: 0E FE 00     ASL $00FE
 FD/7444: FE 02 FC     INC $FC02,X
 FD/7447: 00 00        BRK $00
 FD/7449: FC FE F8     JSR ($F8FE,X)
-FD/744C: 10 FE        BPL $744C
+Local_FD744C:
+FD/744C: 10 FE        BPL Local_FD744C
 FD/744E: C0 FE        CPY #$FE
-FD/7450: 80 41        BRA $7493
+FD/7450: 80 41        BRA Routine_FD7493
 FD/7452: 44 00 00     MVP $00,$00
 FD/7455: 0F 06 66 0C  ORA $0C6606
 FD/7459: FF 26 04 80  SBC $800426,X

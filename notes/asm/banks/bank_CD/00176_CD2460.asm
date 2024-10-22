@@ -1,7 +1,7 @@
 ; Bank: CD | Start Address: 2460
 Routine_CD2460:
 CD/2460: A2 04 00     LDX #$0004
-CD/2463: 20 1F 1B     JSR $1B1F
+CD/2463: 20 1F 1B     JSR Routine_CD1B1F
 CD/2466: AD 8E 5D     LDA $5D8E
 CD/2469: A8           TAY
 CD/246A: AD 08 CD     LDA $CD08
@@ -13,16 +13,16 @@ CD/2473: 69 80        ADC #$80
 CD/2475: 85 47        STA $47
 CD/2477: E2 10        SEP #$10
 CD/2479: A5 45        LDA $45
-CD/247B: 20 FD 3B     JSR $3BFD
+CD/247B: 20 FD 3B     JSR Routine_CD3BFD
 CD/247E: 85 49        STA $49
 CD/2480: A5 45        LDA $45
-CD/2482: 20 00 3C     JSR $3C00
+CD/2482: 20 00 3C     JSR Routine_CD3C00
 CD/2485: 85 4B        STA $4B
 CD/2487: A5 47        LDA $47
-CD/2489: 20 FD 3B     JSR $3BFD
+CD/2489: 20 FD 3B     JSR Routine_CD3BFD
 CD/248C: 85 45        STA $45
 CD/248E: A5 47        LDA $47
-CD/2490: 20 00 3C     JSR $3C00
+CD/2490: 20 00 3C     JSR Routine_CD3C00
 CD/2493: 85 47        STA $47
 CD/2495: A0 01        LDY #$01
 CD/2497: B7 40        LDA [$40],Y
@@ -64,7 +64,7 @@ CD/24E1: 18           CLC
 CD/24E2: 65 47        ADC $47
 CD/24E4: 9D 1B CD     STA $CD1B,X
 CD/24E7: C2 10        REP #$10
-CD/24E9: 22 AF F9 D1  JSR $D1F9AF
+CD/24E9: 22 AF F9 D1  JSR Routine_D1F9AF
 CD/24ED: A4 40        LDY $40
 CD/24EF: C8           INY
 CD/24F0: 84 40        STY $40

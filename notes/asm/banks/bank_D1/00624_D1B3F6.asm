@@ -4,7 +4,7 @@ D1/B3F6: 08           PHP
 D1/B3F7: 09 0A        ORA #$0A
 D1/B3F9: 4A           LSR
 D1/B3FA: 49 48        EOR #$48
-D1/B3FC: 10 11        BPL $B40F
+D1/B3FC: 10 11        BPL Local_D1B40F
 D1/B3FE: 12 52        ORA ($52)
 D1/B400: 51 50        EOR ($50),Y
 D1/B402: 18           CLC
@@ -13,13 +13,14 @@ D1/B406: 59 58 03     EOR $0358,Y
 D1/B409: 04 05        TSB $05
 D1/B40B: 45 44        EOR $44
 D1/B40D: 43 0B        EOR $0B,S
+Local_D1B40F:
 D1/B40F: 0C 0D 4D     TSB $4D0D
-D1/B412: 4C 4B 13     JMP $134B
+D1/B412: 4C 4B 13     JMP Routine_D1134B
 D1/B415: 14 15        TRB $15
 D1/B417: 55 54        EOR $54,X
 D1/B419: 53 1B        EOR ($1B,S),Y
 D1/B41B: 1C 1D 5D     TRB $5D1D
-D1/B41E: 5C 5B 06 07  JMP $07065B
+D1/B41E: 5C 5B 06 07  JMP Routine_07065B
 D1/B422: 47 46        EOR [$46]
 D1/B424: 0E 0F 4F     ASL $4F0F
 D1/B427: 4E 16 17     LSR $1716
@@ -37,7 +38,7 @@ D1/B440: 00 15        BRK $15
 D1/B442: 17 2C        ORA [$2C],Y
 D1/B444: 18           CLC
 D1/B445: 19 1A 1B     ORA $1B1A,Y
-D1/B448: 20 21 22     JSR $2221
+D1/B448: 20 21 22     JSR Routine_D12221
 D1/B44B: 23 28        AND $28,S
 D1/B44D: 29 2A        AND #$2A
 D1/B44F: 2B           PLD
@@ -99,9 +100,9 @@ D1/B4BF: 00 00        BRK $00
 D1/B4C1: 00 08        BRK $08
 D1/B4C3: 09 49        ORA #$49
 D1/B4C5: 48           PHA
-D1/B4C6: 10 11        BPL $B4D9
+D1/B4C6: 10 11        BPL Routine_D1B4D9
 D1/B4C8: 51 50        EOR ($50),Y
-D1/B4CA: 90 91        BCC $B45D
+D1/B4CA: 90 91        BCC Routine_D1B45D
 D1/B4CC: D1 D0        CMP ($D0),Y
 D1/B4CE: 88           DEY
 D1/B4CF: 89 C9        BIT #$C9

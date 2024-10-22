@@ -15,10 +15,11 @@ FF/FD68: 85 00        STA $00
 FF/FD6A: A0 FE 09     LDY #$09FE
 FF/FD6D: A9 00 00     LDA #$0000
 FF/FD70: 18           CLC
+Local_FFFD71:
 FF/FD71: 71 00        ADC ($00),Y
 FF/FD73: 88           DEY
 FF/FD74: 88           DEY
-FF/FD75: 10 FA        BPL $FD71
+FF/FD75: 10 FA        BPL Local_FFFD71
 FF/FD77: AB           PLB
 FF/FD78: 28           PLP
 FF/FD79: 60           RTS

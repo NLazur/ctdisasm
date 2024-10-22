@@ -27,7 +27,7 @@ CE/2D5F: 1E 70 9C     ASL $9C70,X
 CE/2D62: 00 0C        BRK $0C
 CE/2D64: 71 35        ADC ($35),Y
 CE/2D66: 00 D9        BRK $D9
-CE/2D68: 30 0B        BMI $2D75
+CE/2D68: 30 0B        BMI Routine_CE2D75
 CE/2D6A: 43 0C        EOR $0C,S
 CE/2D6C: 00 19        BRK $19
 CE/2D6E: 1A           INC

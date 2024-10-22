@@ -17,7 +17,7 @@ C2/F23D: F4 7E 7E     PEA $7E7E
 C2/F240: AB           PLB
 C2/F241: AB           PLB
 C2/F242: A4 90        LDY $90
-C2/F244: 20 4C F2     JSR $F24C
+C2/F244: 20 4C F2     JSR Routine_C2F24C
 C2/F247: BB           TYX
 C2/F248: 28           PLP
 C2/F249: AB           PLB

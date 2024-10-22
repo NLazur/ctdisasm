@@ -1,7 +1,7 @@
 ; Bank: FF | Start Address: E6F6
 Routine_FFE6F6:
 FF/E6F6: 11 60        ORA ($60),Y
-FF/E6F8: 10 6C        BPL $E766
+FF/E6F8: 10 6C        BPL Local_FFE766
 FF/E6FA: 05 72        ORA $72
 FF/E6FC: 00 FE        BRK $FE
 FF/E6FE: 01 03        ORA ($03,X)
@@ -25,9 +25,9 @@ FF/E727: 95 00        STA $00,X
 FF/E729: FF 7F 7F 4D  SBC $4D7F7F,X
 FF/E72D: 32 1C        AND ($1C)
 FF/E72F: 23 17        AND $17,S
-FF/E731: 20 68 10     JSR $1068
+FF/E731: 20 68 10     JSR Routine_FF1068
 FF/E734: 58           CLI
-FF/E735: 20 2E 40     JSR $402E
+FF/E735: 20 2E 40     JSR Routine_FF402E
 FF/E738: 00 00        BRK $00
 FF/E73A: 00 7F        BRK $7F
 FF/E73C: 6D 5F F5     ADC $F55F
@@ -45,15 +45,17 @@ FF/E755: 05 F4        ORA $F4
 FF/E757: 01 00        ORA ($00,X)
 FF/E759: 01 00        ORA ($00,X)
 FF/E75B: FF 00 FF 04  SBC $04FF00,X
-FF/E75F: 80 0D        BRA $E76E
+FF/E75F: 80 0D        BRA Local_FFE76E
 FF/E761: 84 07        STY $07
 FF/E763: 8E 1C 8C     STX $8C1C
+Local_FFE766:
 FF/E766: 1D 85 09     ORA $0985,X
 FF/E769: 89 39        BIT #$39
 FF/E76B: 99 00 00     STA $0000,Y
+Local_FFE76E:
 FF/E76E: 02 02        COP $02
 FF/E770: 02 00        COP $00
-FF/E772: 10 15        BPL $E789
+FF/E772: 10 15        BPL Local_FFE789
 FF/E774: 03 0C        ORA $0C,S
 FF/E776: 0A           ASL
 FF/E777: 04 36        TSB $36
@@ -65,6 +67,7 @@ FF/E780: B1 22        LDA ($22),Y
 FF/E782: E1 72        SBC ($72,X)
 FF/E784: 39 32 B9     AND $B932,Y
 FF/E787: A2 91        LDX #$91
+Local_FFE789:
 FF/E789: 92 9D        STA ($9D)
 FF/E78B: 9A           TXS
 FF/E78C: 00 00        BRK $00

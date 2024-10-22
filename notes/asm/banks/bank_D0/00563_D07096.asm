@@ -9,13 +9,13 @@ D0/70A3: 36 2C        ROL $2C,X
 D0/70A5: 34 3C        BIT $3C,X
 D0/70A7: 24 0F        BIT $0F
 D0/70A9: 0F 61 7E 8F  ORA $8F7E61
-D0/70AD: F0 7F        BEQ $712E
-D0/70AF: 80 FF        BRA $70B0
+D0/70AD: F0 7F        BEQ Routine_D0712E
+D0/70AF: 80 FF        BRA Routine_D070B0
 D0/70B1: 00 FF        BRK $FF
 D0/70B3: 00 FF        BRK $FF
 D0/70B5: 00 FF        BRK $FF
 D0/70B7: 00 0F        BRK $0F
-D0/70B9: F0 FF        BEQ $70BA
+D0/70B9: F0 FF        BEQ Routine_D070BA
 D0/70BB: 00 FF        BRK $FF
 D0/70BD: 00 FF        BRK $FF
 D0/70BF: 00 FF        BRK $FF

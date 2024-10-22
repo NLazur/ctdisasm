@@ -7,8 +7,8 @@ D1/24F6: 00 02        BRK $02
 D1/24F8: 41 00        EOR ($00,X)
 D1/24FA: 41 22        EOR ($22,X)
 D1/24FC: 41 04        EOR ($04,X)
-D1/24FE: 20 41 5C     JSR $5C41
+D1/24FE: 20 41 5C     JSR Routine_D15C41
 D1/2501: 08           PHP
-D1/2502: 10 70        BPL $2574
+D1/2502: 10 70        BPL Routine_D12574
 D1/2504: C8           INY
 D1/2505: 40           RTI

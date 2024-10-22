@@ -34,7 +34,7 @@ C2/7500: 08           PHP
 C2/7501: 1A           INC
 C2/7502: C8           INY
 C2/7503: 74 04        STZ $04,X
-C2/7505: 20 C0 7E     JSR $7EC0
+C2/7505: 20 C0 7E     JSR Routine_C27EC0
 C2/7508: 00 0C        BRK $0C
 C2/750A: 38           SEC
 C2/750B: C0 38        CPY #$38

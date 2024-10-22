@@ -9,11 +9,11 @@ C0/6086: 85 DB        STA $DB
 C0/6088: AA           TAX
 C0/6089: 64 DC        STZ $DC
 C0/608B: BD 01 1C     LDA $1C01,X
-C0/608E: D0 76        BNE $6106
+C0/608E: D0 76        BNE Routine_C06106
 C0/6090: BD 00 11     LDA $1100,X
-C0/6093: 30 6B        BMI $6100
+C0/6093: 30 6B        BMI Local_C06100
 C0/6095: BD 00 10     LDA $1000,X
-C0/6098: 30 66        BMI $6100
+C0/6098: 30 66        BMI Local_C06100
 C0/609A: BD 00 1C     LDA $1C00,X
 C0/609D: 85 D9        STA $D9
 C0/609F: BB           TYX
@@ -27,8 +27,8 @@ C0/60AA: 4A           LSR
 C0/60AB: 4A           LSR
 C0/60AC: 85 DF        STA $DF
 C0/60AE: C5 D9        CMP $D9
-C0/60B0: F0 54        BEQ $6106
-C0/60B2: B0 52        BCS $6106
+C0/60B0: F0 54        BEQ Routine_C06106
+C0/60B2: B0 52        BCS Routine_C06106
 C0/60B4: A5 D9        LDA $D9
 C0/60B6: 8D 02 42     STA $4202
 C0/60B9: A9 80        LDA #$80
@@ -65,6 +65,7 @@ C0/60F5: A5 DF        LDA $DF
 C0/60F7: 9D 00 1C     STA $1C00,X
 C0/60FA: 9E 80 1A     STZ $1A80,X
 C0/60FD: 9E 01 1A     STZ $1A01,X
+Local_C06100:
 C0/6100: BB           TYX
 C0/6101: E8           INX
 C0/6102: E8           INX

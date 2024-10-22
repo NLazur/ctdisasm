@@ -3,9 +3,9 @@ Routine_C68B26:
 C6/8B26: 74 34        STZ $34,X
 C6/8B28: 39 07 20     AND $2007,Y
 C6/8B2B: F9 E7 01     SBC $01E7,Y
-C6/8B2E: F0 5A        BEQ $8B8A
+C6/8B2E: F0 5A        BEQ Local_C68B8A
 C6/8B30: 7E 34 30     ROR $3034,X
-C6/8B33: 5C 5D DE 1B  JMP $1BDE5D
+C6/8B33: 5C 5D DE 1B  JMP Routine_1BDE5D
 C6/8B37: 01 F8        ORA ($F8,X)
 C6/8B39: 07 C0        ORA [$C0]
 C6/8B3B: FF 5A 16 27  SBC $27165A,X
@@ -45,6 +45,7 @@ C6/8B83: F8           SED
 C6/8B84: 01 F8        ORA ($F8,X)
 C6/8B86: 01 F8        ORA ($F8,X)
 C6/8B88: 01 F8        ORA ($F8,X)
+Local_C68B8A:
 C6/8B8A: 01 F8        ORA ($F8,X)
 C6/8B8C: 01 F8        ORA ($F8,X)
 C6/8B8E: 01 F8        ORA ($F8,X)

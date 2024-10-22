@@ -1,13 +1,14 @@
 ; Bank: C7 | Start Address: D2E5
 Routine_C7D2E5:
 C7/D2E5: DC E1 31     JMP [$31E1]
-C7/D2E8: F0 10        BEQ $D2FA
+C7/D2E8: F0 10        BEQ Local_C7D2FA
 C7/D2EA: F1 21        SBC ($21),Y
 C7/D2EC: 78           SEI
 C7/D2ED: ED CF 10     SBC $10CF
 C7/D2F0: 0F E2 63 CB  ORA $CB63E2
 C7/D2F4: 05 78        ORA $78
 C7/D2F6: 4F BB 04 31  EOR $3104BB
+Local_C7D2FA:
 C7/D2FA: 0F EE 11 01  ORA $0111EE
 C7/D2FE: 78           SEI
 C7/D2FF: 1F CD 03 30  ORA $3003CD,X
@@ -21,7 +22,7 @@ C7/D314: EB           XBA
 C7/D315: E4 74        CPX $74
 C7/D317: D9 D2 78     CMP $78D2,Y
 C7/D31A: 42 0F        WDM $0F
-C7/D31C: F0 0F        BEQ $D32D
+C7/D31C: F0 0F        BEQ Routine_C7D32D
 C7/D31E: E0 33        CPX #$33
 C7/D320: 0C C1 68     TSB $68C1
 C7/D323: 7F 9B F0 15  ADC $15F09B,X
@@ -29,11 +30,11 @@ C7/D327: 51 01        EOR ($01),Y
 C7/D329: 1D A0 78     ORA $78A0,X
 C7/D32C: 53 EA        EOR ($EA,S),Y
 C7/D32E: D1 42        CMP ($42),Y
-C7/D330: 10 DB        BPL $D30D
+C7/D330: 10 DB        BPL Routine_C7D30D
 C7/D332: E4 62        CPX $62
 C7/D334: 78           SEI
 C7/D335: CA           DEX
-C7/D336: D0 23        BNE $D35B
+C7/D336: D0 23        BNE Routine_C7D35B
 C7/D338: 41 FF        EOR ($FF,X)
 C7/D33A: FD CE 47     SBC $47CE,X
 C7/D33D: 78           SEI

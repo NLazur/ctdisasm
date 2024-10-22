@@ -2,7 +2,7 @@
 Routine_CD3D90:
 CD/3D90: DA           PHX
 CD/3D91: AA           TAX
-CD/3D92: 10 19        BPL $3DAD
+CD/3D92: 10 19        BPL Routine_CD3DAD
 CD/3D94: BF 8E F4 CE  LDA $CEF48E,X
 CD/3D98: 4A           LSR
 CD/3D99: 8F 02 42 00  STA $004202

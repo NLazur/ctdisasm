@@ -1,7 +1,7 @@
 ; Bank: FD | Start Address: 148F
 Routine_FD148F:
-FD/148F: 80 02        BRA $1493
-FD/1491: 20 84 03     JSR $0384
+FD/148F: 80 02        BRA Routine_FD1493
+FD/1491: 20 84 03     JSR Routine_FD0384
 FD/1494: 3D 70 01     AND $0170,X
 FD/1497: E4 04        CPX $04
 FD/1499: 3C 38 6E     BIT $6E38,X
@@ -20,7 +20,7 @@ FD/14B3: FE FF 7B     INC $7BFF,X
 FD/14B6: 05 57        ORA $57
 FD/14B8: 15 5F        ORA $5F,X
 FD/14BA: 15 01        ORA $01,X
-FD/14BC: F0 69        BEQ $1527
+FD/14BC: F0 69        BEQ Routine_FD1527
 FD/14BE: 13 E0        ORA ($E0,S),Y
 FD/14C0: 11 E2        ORA ($E2),Y
 FD/14C2: 21 E6        AND ($E6,X)

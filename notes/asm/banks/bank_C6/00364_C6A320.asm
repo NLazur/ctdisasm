@@ -2,7 +2,7 @@
 Routine_C6A320:
 C6/A320: 52 5F        EOR ($5F)
 C6/A322: 08           PHP
-C6/A323: D0 52        BNE $A377
+C6/A323: D0 52        BNE Routine_C6A377
 C6/A325: 52 01        EOR ($01)
 C6/A327: 53 03        EOR ($03,S),Y
 C6/A329: 11 04        ORA ($04),Y
@@ -10,17 +10,17 @@ C6/A32B: 00 05        BRK $05
 C6/A32D: 06 07        ASL $07
 C6/A32F: 39 29 25     AND $2529,Y
 C6/A332: 27 1D        AND [$1D]
-C6/A334: 80 2A        BRA $A360
+C6/A334: 80 2A        BRA Routine_C6A360
 C6/A336: 2B           PLD
 C6/A337: 3B           TSC
 C6/A338: E4 06        CPX $06
 C6/A33A: 06 E3        ASL $E3
 C6/A33C: E3 71        SBC $71,S
-C6/A33E: 22 11 A0 01  JSR $01A011
-C6/A342: 80 A2        BRA $A2E6
-C6/A344: 50 60        BVC $A3A6
+C6/A33E: 22 11 A0 01  JSR Routine_01A011
+C6/A342: 80 A2        BRA Routine_C6A2E6
+C6/A344: 50 60        BVC Routine_C6A3A6
 C6/A346: 02 2A        COP $2A
-C6/A348: 80 90        BRA $A2DA
+C6/A348: 80 90        BRA Routine_C6A2DA
 C6/A34A: 61 81        ADC ($81,X)
 C6/A34C: 2B           PLD
 C6/A34D: 3B           TSC
@@ -41,7 +41,7 @@ C6/A36C: 2B           PLD
 C6/A36D: 4B           PHK
 C6/A36E: 05 06        ORA $06
 C6/A370: 06 07        ASL $07
-C6/A372: 22 08 43 6A  JSR $6A4308
+C6/A372: 22 08 43 6A  JSR Routine_6A4308
 C6/A376: 21 12        AND ($12,X)
 C6/A378: 39 C0 00     AND $00C0,Y
 C6/A37B: A2 61 84     LDX #$8461

@@ -1,12 +1,13 @@
 ; Bank: D0 | Start Address: 9D4B
 Routine_D09D4B:
 D0/9D4B: E0 C0        CPX #$C0
-D0/9D4D: 80 00        BRA $9D4F
-D0/9D4F: 80 2A        BRA $9D7B
-D0/9D51: D0 50        BNE $9DA3
+D0/9D4D: 80 00        BRA Local_D09D4F
+Local_D09D4F:
+D0/9D4F: 80 2A        BRA Routine_D09D7B
+D0/9D51: D0 50        BNE Routine_D09DA3
 D0/9D53: A0 25        LDY #$25
 D0/9D55: C5 62        CMP $62
-D0/9D57: 82 15 C5     BRL $D0626F
+D0/9D57: 82 15 C5     BRL Routine_D0626F
 D0/9D5A: AB           PLB
 D0/9D5B: C3 93        CMP $93,S
 D0/9D5D: E3 1A        SBC $1A,S

@@ -1,9 +1,10 @@
 ; Bank: FD | Start Address: 8E63
 Routine_FD8E63:
 FD/8E63: 00 F2        BRK $F2
-FD/8E65: 10 00        BPL $8E67
+FD/8E65: 10 00        BPL Local_FD8E67
+Local_FD8E67:
 FD/8E67: 94 87        STY $87,X
-FD/8E69: 90 85        BCC $8DF0
+FD/8E69: 90 85        BCC Routine_FD8DF0
 FD/8E6B: 84 8C        STY $8C
 FD/8E6D: AF CF 00 8A  LDA $8A00CF
 FD/8E71: 7A           PLY
@@ -62,7 +63,7 @@ FD/8ED8: 1E 42 E1     ASL $E142,X
 FD/8EDB: 00 EB        BRK $EB
 FD/8EDD: 9C B5 FE     STZ $FEB5
 FD/8EE0: 12 DE        ORA ($DE)
-FD/8EE2: 80 84        BRA $8E68
+FD/8EE2: 80 84        BRA Routine_FD8E68
 FD/8EE4: 00 40        BRK $40
 FD/8EE6: 3F 42 3C 61  AND $613C42,X
 FD/8EEA: 1C 18 05     TRB $0518
@@ -72,22 +73,24 @@ FD/8EF1: 00 2F        BRK $2F
 FD/8EF3: 01 7F        ORA ($7F,X)
 FD/8EF5: 03 00        ORA $00,S
 FD/8EF7: B3 78        LDA ($78,S),Y
-FD/8EF9: 5C 50 3C 5B  JMP $5B3C50
+FD/8EF9: 5C 50 3C 5B  JMP Routine_5B3C50
 FD/8EFD: 07 D0        ORA [$D0]
 FD/8EFF: 00 2F        BRK $2F
 FD/8F01: 47 46        EOR [$46]
 FD/8F03: E7 7F        SBC [$7F]
-FD/8F05: 50 AE        BVC $8EB5
+FD/8F05: 50 AE        BVC Routine_FD8EB5
 FD/8F07: 51 00        EOR ($00),Y
 FD/8F09: 27 00        AND [$00]
 FD/8F0B: A3 60        LDA $60,S
 FD/8F0D: E0 F0 E8     CPX #$E8F0
-FD/8F10: F0 00        BEQ $8F12
+FD/8F10: F0 00        BEQ Local_FD8F12
+Local_FD8F12:
 FD/8F12: C8           INY
-FD/8F13: F0 A9        BEQ $8EBE
-FD/8F15: 70 A1        BVS $8EB8
+FD/8F13: F0 A9        BEQ Routine_FD8EBE
+FD/8F15: 70 A1        BVS Routine_FD8EB8
 FD/8F17: 00 00        BRK $00
-FD/8F19: 80 00        BRA $8F1B
+FD/8F19: 80 00        BRA Local_FD8F1B
+Local_FD8F1B:
 FD/8F1B: F8           SED
 FD/8F1C: 25 5C        AND $5C
 FD/8F1E: 46 AF        LSR $AF
@@ -100,7 +103,7 @@ FD/8F2A: 3C C3 00     BIT $00C3,X
 FD/8F2D: 4E F7 A0     LSR $A0F7
 FD/8F30: 7F 01 7E 31  ADC $317E01,X
 FD/8F34: 4E 00 4E     LSR $4E00
-FD/8F37: 20 A5 C0     JSR $C0A5
+FD/8F37: 20 A5 C0     JSR Routine_FDC0A5
 FD/8F3A: 1C E0 60     TRB $60E0
 FD/8F3D: 00 00        BRK $00
 FD/8F3F: 26 5E        ROL $5E
@@ -109,13 +112,13 @@ FD/8F44: C7 65        CMP [$65]
 FD/8F46: CB           WAI
 FD/8F47: 00 B6        BRK $B6
 FD/8F49: 49 FE 41     EOR #$41FE
-FD/8F4C: 90 1F        BCC $8F6D
+FD/8F4C: 90 1F        BCC Routine_FD8F6D
 FD/8F4E: A8           TAY
 FD/8F4F: 1B           TCS
 FD/8F50: 00 61        BRK $61
-FD/8F52: 80 C6        BRA $8F1A
+FD/8F52: 80 C6        BRA Routine_FD8F1A
 FD/8F54: 00 90        BRK $90
 FD/8F56: 00 90        BRK $90
-FD/8F58: 20 02 00     JSR $0002
+FD/8F58: 20 02 00     JSR Routine_FD0002
 FD/8F5B: 01 00        ORA ($00,X)
 FD/8F5D: 60           RTS

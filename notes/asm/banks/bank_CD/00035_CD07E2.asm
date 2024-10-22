@@ -41,29 +41,36 @@ CD/0834: 85 1C        STA $1C
 CD/0836: AD 95 CC     LDA $CC95
 CD/0839: 85 1E        STA $1E
 CD/083B: A2 00        LDX #$00
+Local_CD083D:
 CD/083D: A5 1A        LDA $1A
-CD/083F: D0 04        BNE $0845
+CD/083F: D0 04        BNE Local_CD0845
 CD/0841: A5 45        LDA $45
-CD/0843: 80 06        BRA $084B
+CD/0843: 80 06        BRA Local_CD084B
+Local_CD0845:
 CD/0845: BD 00 0A     LDA $0A00,X
 CD/0848: 18           CLC
 CD/0849: 65 45        ADC $45
+Local_CD084B:
 CD/084B: 9D 89 BC     STA $BC89,X
 CD/084E: A5 1C        LDA $1C
-CD/0850: D0 04        BNE $0856
+CD/0850: D0 04        BNE Local_CD0856
 CD/0852: A5 49        LDA $49
-CD/0854: 80 06        BRA $085C
+CD/0854: 80 06        BRA Local_CD085C
+Local_CD0856:
 CD/0856: BD 00 0A     LDA $0A00,X
 CD/0859: 18           CLC
 CD/085A: 65 49        ADC $49
+Local_CD085C:
 CD/085C: 9D 09 BD     STA $BD09,X
 CD/085F: A5 1E        LDA $1E
-CD/0861: D0 04        BNE $0867
+CD/0861: D0 04        BNE Local_CD0867
 CD/0863: A5 4D        LDA $4D
-CD/0865: 80 06        BRA $086D
+CD/0865: 80 06        BRA Local_CD086D
+Local_CD0867:
 CD/0867: BD 00 0A     LDA $0A00,X
 CD/086A: 18           CLC
 CD/086B: 65 4D        ADC $4D
+Local_CD086D:
 CD/086D: 9D 89 BD     STA $BD89,X
 CD/0870: A5 47        LDA $47
 CD/0872: 9D 8B BC     STA $BC8B,X
@@ -76,7 +83,7 @@ CD/0880: E8           INX
 CD/0881: E8           INX
 CD/0882: E8           INX
 CD/0883: E0 80        CPX #$80
-CD/0885: D0 B6        BNE $083D
+CD/0885: D0 B6        BNE Local_CD083D
 CD/0887: 7B           TDC
 CD/0888: E2 20        SEP #$20
 CD/088A: C2 10        REP #$10

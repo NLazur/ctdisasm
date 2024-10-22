@@ -26,11 +26,12 @@ C6/161A: FC 3C F0     JSR ($F03C,X)
 C6/161D: FE FE FE     INC $FEFE,X
 C6/1620: FF 01 00 F2  SBC $F20001,X
 C6/1624: F1 01        SBC ($01),Y
-C6/1626: F0 01        BEQ $1629
-C6/1628: F0 07        BEQ $1631
+C6/1626: F0 01        BEQ Routine_C61629
+C6/1628: F0 07        BEQ Local_C61631
 C6/162A: 01 F0        ORA ($F0,X)
 C6/162C: 01 F0        ORA ($F0,X)
 C6/162E: A0 85 0F     LDY #$0F85
+Local_C61631:
 C6/1631: 07 06        ORA [$06]
 C6/1633: 13 0F        ORA ($0F,S),Y
 C6/1635: 40           RTI

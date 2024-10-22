@@ -1,6 +1,6 @@
 ; Bank: FE | Start Address: 5A36
 Routine_FE5A36:
-FE/5A36: 20 14 00     JSR $0014
+FE/5A36: 20 14 00     JSR Routine_FE0014
 FE/5A39: 08           PHP
 FE/5A3A: C0 02 10     CPY #$1002
 FE/5A3D: 00 21        BRK $21
@@ -22,11 +22,12 @@ FE/5A58: 18           CLC
 FE/5A59: 3C 99 79     BIT $7999,X
 FE/5A5C: 0F 0F D0 06  ORA $06D00F
 FE/5A60: 07 C8        ORA [$C8]
-FE/5A62: F0 7C        BEQ $5AE0
-FE/5A64: 50 06        BVC $5A6C
+FE/5A62: F0 7C        BEQ Routine_FE5AE0
+FE/5A64: 50 06        BVC Local_FE5A6C
 FE/5A66: 1E 29 E6     ASL $E629,X
 FE/5A69: 6A           ROR
 FE/5A6A: 31 F7        AND ($F7),Y
+Local_FE5A6C:
 FE/5A6C: 05 F9        ORA $F9
 FE/5A6E: FE 60 BA     INC $BA60,X
 FE/5A71: F1 0B        SBC ($0B),Y

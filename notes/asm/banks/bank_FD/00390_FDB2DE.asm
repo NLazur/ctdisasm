@@ -2,9 +2,10 @@
 Routine_FDB2DE:
 FD/B2DE: AD 89 29     LDA $2989
 FD/B2E1: 89 20        BIT #$20
-FD/B2E3: D0 03        BNE $B2E8
-FD/B2E5: 4C 3E B3     JMP $B33E
-FD/B2E8: 20 3F B3     JSR $B33F
+FD/B2E3: D0 03        BNE Local_FDB2E8
+FD/B2E5: 4C 3E B3     JMP Routine_FDB33E
+Local_FDB2E8:
+FD/B2E8: 20 3F B3     JSR Routine_FDB33F
 FD/B2EB: 7B           TDC
 FD/B2EC: AD AC 29     LDA $29AC
 FD/B2EF: 0A           ASL
@@ -51,16 +52,18 @@ FD/B341: AF A9 03 8D  LDA $8D03A9
 FD/B345: C5 AE        CMP $AE
 FD/B347: 7B           TDC
 FD/B348: AA           TAX
+Local_FDB349:
 FD/B349: BF 00 00 CC  LDA $CC0000,X
 FD/B34D: 9D 00 26     STA $2600,X
 FD/B350: E8           INX
 FD/B351: E0 30 02     CPX #$0230
-FD/B354: 90 F3        BCC $B349
+FD/B354: 90 F3        BCC Local_FDB349
 FD/B356: 7B           TDC
 FD/B357: AA           TAX
+Local_FDB358:
 FD/B358: 8A           TXA
 FD/B359: 9D 00 24     STA $2400,X
 FD/B35C: E8           INX
 FD/B35D: E0 00 02     CPX #$0200
-FD/B360: D0 F6        BNE $B358
+FD/B360: D0 F6        BNE Local_FDB358
 FD/B362: 60           RTS

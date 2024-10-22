@@ -49,9 +49,10 @@ FD/037F: F8           SED
 FD/0380: BB           TYX
 FD/0381: 12 7F        ORA ($7F)
 FD/0383: 00 00        BRK $00
-FD/0385: 80 00        BRA $0387
+FD/0385: 80 00        BRA Local_FD0387
+Local_FD0387:
 FD/0387: 81 00        STA ($00,X)
-FD/0389: 82 00 83     BRL $FD868C
+FD/0389: 82 00 83     BRL Routine_FD868C
 FD/038C: 00 00        BRK $00
 FD/038E: 84 00        STY $00
 FD/0390: 85 00        STA $00
@@ -63,7 +64,7 @@ FD/039B: 00 8A        BRK $8A
 FD/039D: 3B           TSC
 FD/039E: F8           SED
 FD/039F: 1B           TCS
-FD/03A0: 20 8B 00     JSR $008B
+FD/03A0: 20 8B 00     JSR Routine_FD008B
 FD/03A3: 00 8C        BRK $8C
 FD/03A5: 00 8D        BRK $8D
 FD/03A7: 00 8E        BRK $8E

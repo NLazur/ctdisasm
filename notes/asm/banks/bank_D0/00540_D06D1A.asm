@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 6D1A
 Routine_D06D1A:
-D0/6D1A: 80 80        BRA $6C9C
+D0/6D1A: 80 80        BRA Routine_D06C9C
 D0/6D1C: 00 00        BRK $00
 D0/6D1E: 00 00        BRK $00
 D0/6D20: 00 00        BRK $00
@@ -16,10 +16,11 @@ D0/6D32: 00 02        BRK $02
 D0/6D34: 04 04        TSB $04
 D0/6D36: 0C 0C 48     TSB $480C
 D0/6D39: 78           SEI
-D0/6D3A: 50 70        BVC $6DAC
+D0/6D3A: 50 70        BVC Routine_D06DAC
 D0/6D3C: A0 E0 40     LDY #$40E0
 D0/6D3F: C0 80        CPY #$80
-D0/6D41: 80 00        BRA $6D43
+D0/6D41: 80 00        BRA Local_D06D43
+Local_D06D43:
 D0/6D43: 00 00        BRK $00
 D0/6D45: 00 00        BRK $00
 D0/6D47: 00 00        BRK $00
@@ -44,7 +45,7 @@ D0/6D6C: 00 00        BRK $00
 D0/6D6E: 08           PHP
 D0/6D6F: 08           PHP
 D0/6D70: 00 10        BRK $10
-D0/6D72: 20 20 00     JSR $0020
+D0/6D72: 20 20 00     JSR Routine_D00020
 D0/6D75: 00 00        BRK $00
 D0/6D77: 00 00        BRK $00
 D0/6D79: 00 00        BRK $00
@@ -54,6 +55,6 @@ D0/6D7F: 00 00        BRK $00
 D0/6D81: 00 00        BRK $00
 D0/6D83: 00 18        BRK $18
 D0/6D85: 1C 20 3F     TRB $3F20
-D0/6D88: 20 20 20     JSR $2020
-D0/6D8B: 20 40 40     JSR $4040
+D0/6D88: 20 20 20     JSR Routine_D02020
+D0/6D8B: 20 40 40     JSR Routine_D04040
 D0/6D8E: 40           RTI

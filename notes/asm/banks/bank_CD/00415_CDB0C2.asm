@@ -4,36 +4,40 @@ CD/B0C2: 00 73        BRK $73
 CD/B0C4: 00 1B        BRK $1B
 CD/B0C6: 0C 24 01     TSB $0124
 CD/B0C9: 6E 02 01     ROR $0102
-CD/B0CC: 20 3C 6F     JSR $6F3C
+CD/B0CC: 20 3C 6F     JSR Routine_CD6F3C
 CD/B0CF: 36 00        ROL $00,X
-CD/B0D1: D0 00        BNE $B0D3
-CD/B0D3: D0 00        BNE $B0D5
+CD/B0D1: D0 00        BNE Local_CDB0D3
+Local_CDB0D3:
+CD/B0D3: D0 00        BNE Local_CDB0D5
+Local_CDB0D5:
 CD/B0D5: E1 B0        SBC ($B0,X)
 CD/B0D7: FA           PLX
-CD/B0D8: B0 1E        BCS $B0F8
+Local_CDB0D8:
+CD/B0D8: B0 1E        BCS Local_CDB0F8
 CD/B0DA: B1 E1        LDA ($E1),Y
-CD/B0DC: B0 FA        BCS $B0D8
-CD/B0DE: B0 30        BCS $B110
+CD/B0DC: B0 FA        BCS Local_CDB0D8
+CD/B0DE: B0 30        BCS Routine_CDB110
 CD/B0E0: B1 02        LDA ($02),Y
 CD/B0E2: 01 20        ORA ($20,X)
 CD/B0E4: 0F 07 12 01  ORA $011207
 CD/B0E8: 36 72        ROL $72,X
 CD/B0EA: 0D 06 07     ORA $0706
-CD/B0ED: 20 0F 36     JSR $360F
+CD/B0ED: 20 0F 36     JSR Routine_CD360F
 CD/B0F0: 03 07        ORA $07,S
 CD/B0F2: 24 05        BIT $05
 CD/B0F4: 06 03        ASL $03
-CD/B0F6: 50 2E        BVC $B126
+CD/B0F6: 50 2E        BVC Routine_CDB126
+Local_CDB0F8:
 CD/B0F8: 01 00        ORA ($00,X)
 CD/B0FA: 0B           PHD
 CD/B0FB: 24 01        BIT $01
 CD/B0FD: 27 D9        AND [$D9]
-CD/B0FF: 30 43        BMI $B144
+CD/B0FF: 30 43        BMI Routine_CDB144
 CD/B101: 00 00        BRK $00
 CD/B103: E0 1A        CPX #$1A
 CD/B105: 02 05        COP $05
 CD/B107: 24 02        BIT $02
-CD/B109: 20 1F 98     JSR $981F
+CD/B109: 20 1F 98     JSR Routine_CD981F
 CD/B10C: 00 0C        BRK $0C
 CD/B10E: 1B           TCS
 CD/B10F: 0C 36 20     TSB $2036
@@ -43,23 +47,23 @@ CD/B117: 19 DA 28     ORA $28DA,Y
 CD/B11A: 36 06        ROL $06,X
 CD/B11C: 03 00        ORA $00,S
 CD/B11E: 24 02        BIT $02
-CD/B120: 20 19 78     JSR $7819
-CD/B123: B0 03        BCS $B128
+CD/B120: 20 19 78     JSR Routine_CD7819
+CD/B123: B0 03        BCS Routine_CDB128
 CD/B125: 09 24        ORA #$24
 CD/B127: 03 78        ORA $78,S
 CD/B129: 67 1E        ADC [$1E]
 CD/B12B: 44 36 06     MVP $36,$06
 CD/B12E: 03 00        ORA $00,S
 CD/B130: 24 02        BIT $02
-CD/B132: 20 19 78     JSR $7819
-CD/B135: B0 03        BCS $B13A
+CD/B132: 20 19 78     JSR Routine_CD7819
+CD/B135: B0 03        BCS Routine_CDB13A
 CD/B137: 09 24        ORA #$24
 CD/B139: 03 1E        ORA $1E,S
 CD/B13B: 49 36        EOR #$36
 CD/B13D: 06 03        ASL $03
 CD/B13F: 00 90        BRK $90
-CD/B141: F0 90        BEQ $B0D3
-CD/B143: F0 5C        BEQ $B1A1
+CD/B141: F0 90        BEQ Local_CDB0D3
+CD/B143: F0 5C        BEQ Routine_CDB1A1
 CD/B145: B1 76        LDA ($76),Y
 CD/B147: B1 9C        LDA ($9C),Y
 CD/B149: B1 B5        LDA ($B5),Y

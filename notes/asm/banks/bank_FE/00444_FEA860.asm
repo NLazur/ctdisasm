@@ -5,17 +5,18 @@ FE/A862: 31 2F        AND ($2F),Y
 FE/A864: 24 27        BIT $27
 FE/A866: C1 00        CMP ($00,X)
 FE/A868: 26 F2        ROL $F2
-FE/A86A: 20 2F D8     JSR $D82F
+FE/A86A: 20 2F D8     JSR Routine_FED82F
 FE/A86D: 26 25        ROL $25
 FE/A86F: 25 89        AND $89
-FE/A871: 10 F4        BPL $A867
-FE/A873: 10 0E        BPL $A883
+FE/A871: 10 F4        BPL Routine_FEA867
+FE/A873: 10 0E        BPL Local_FEA883
 FE/A875: C2 00        REP #$00
 FE/A877: F7 10        SBC [$10],Y
 FE/A879: 36 02        ROL $02,X
 FE/A87B: 51 00        EOR ($00),Y
 FE/A87D: 96 00        STX $00,Y
 FE/A87F: 2F BB 00 C1  AND $C100BB
+Local_FEA883:
 FE/A883: 00 0E        BRK $0E
 FE/A885: 2F 4B 5F 11  AND $115F4B
 FE/A889: BE 00 0E     LDX $0E00,Y
@@ -34,10 +35,10 @@ FE/A8A5: 27 41        AND [$41]
 FE/A8A7: 01 14        ORA ($14,X)
 FE/A8A9: 21 1A        AND ($1A,X)
 FE/A8AB: 00 68        BRK $68
-FE/A8AD: 10 2F        BPL $A8DE
+FE/A8AD: 10 2F        BPL Local_FEA8DE
 FE/A8AF: 2F 53 01 22  AND $220153
 FE/A8B3: 26 B8        ROL $B8
-FE/A8B5: 30 26        BMI $A8DD
+FE/A8B5: 30 26        BMI Routine_FEA8DD
 FE/A8B7: 24 07        BIT $07
 FE/A8B9: 59 10 07     EOR $0710,Y
 FE/A8BC: 08           PHP
@@ -54,23 +55,26 @@ FE/A8CF: 71 02        ADC ($02),Y
 FE/A8D1: 02 12        COP $12
 FE/A8D3: 00 05        BRK $05
 FE/A8D5: 00 01        BRK $01
-FE/A8D7: 10 21        BPL $A8FA
+FE/A8D7: 10 21        BPL Routine_FEA8FA
 FE/A8D9: 0D 01 09     ORA $0901
 FE/A8DC: 09 08        ORA #$08
+Local_FEA8DE:
 FE/A8DE: 07 28        ORA [$28]
-FE/A8E0: 10 09        BPL $A8EB
+FE/A8E0: 10 09        BPL Local_FEA8EB
 FE/A8E2: 09 30        ORA #$30
 FE/A8E4: 26 25        ROL $25
 FE/A8E6: 24 27        BIT $27
 FE/A8E8: BC 01 B9     LDY $B901,X
+Local_FEA8EB:
 FE/A8EB: 21 26        AND ($26,X)
 FE/A8ED: 27 86        AND [$86]
 FE/A8EF: 27 0C        AND [$0C]
-FE/A8F1: 10 87        BPL $A87A
-FE/A8F3: 10 25        BPL $A91A
+FE/A8F1: 10 87        BPL Routine_FEA87A
+FE/A8F3: 10 25        BPL Routine_FEA91A
 FE/A8F5: 26 26        ROL $26
 FE/A8F7: 25 79        AND $79
-FE/A8F9: 10 FE        BPL $A8F9
+Local_FEA8F9:
+FE/A8F9: 10 FE        BPL Local_FEA8F9
 FE/A8FB: 26 B0        ROL $B0
 FE/A8FD: 01 BB        ORA ($BB,X)
 FE/A8FF: 11 0E        ORA ($0E),Y
@@ -80,7 +84,7 @@ FE/A905: 11 E8        ORA ($E8),Y
 FE/A907: 01 AD        ORA ($AD,X)
 FE/A909: 00 81        BRK $81
 FE/A90B: 38           SEC
-FE/A90C: 50 38        BVC $A946
+FE/A90C: 50 38        BVC Routine_FEA946
 FE/A90E: 38           SEC
 FE/A90F: 38           SEC
 FE/A910: 37 38        AND [$38],Y
@@ -105,8 +109,8 @@ FE/A930: 3B           TSC
 FE/A931: 2D 00 36     AND $3600
 FE/A934: 3B           TSC
 FE/A935: 3A           DEC
-FE/A936: 82 39 08     BRL $FEB172
-FE/A939: 10 38        BPL $A973
+FE/A936: 82 39 08     BRL Routine_FEB172
+FE/A939: 10 38        BPL Routine_FEA973
 FE/A93B: 3C 3B 39     BIT $393B,X
 FE/A93E: 3C 3D 00     BIT $003D,X
 FE/A941: F4 09 08     PEA $0809
@@ -114,34 +118,36 @@ FE/A944: 8C 00 08     STY $0800
 FE/A947: 05 00        ORA $00
 FE/A949: 09 20        ORA #$20
 FE/A94B: 0C 10 0A     TSB $0A10
-FE/A94E: 20 AB 14     JSR $14AB
-FE/A951: 10 17        BPL $A96A
-FE/A953: 20 11 1C     JSR $1C11
+FE/A94E: 20 AB 14     JSR Routine_FE14AB
+FE/A951: 10 17        BPL Routine_FEA96A
+FE/A953: 20 11 1C     JSR Routine_FE1C11
 FE/A956: 00 15        BRK $15
-FE/A958: 20 00 12     JSR $1200
+FE/A958: 20 00 12     JSR Routine_FE1200
 FE/A95B: 28           PLP
 FE/A95C: 00 AC        BRK $AC
 FE/A95E: 14 08        TRB $08
 FE/A960: 2E 00 1D     ROL $1D00
-FE/A963: 30 07        BMI $A96C
+FE/A963: 30 07        BMI Local_FEA96C
 FE/A965: 08           PHP
-FE/A966: 70 07        BVS $A96F
+FE/A966: 70 07        BVS Routine_FEA96F
 FE/A968: 2F 40 01 08  AND $080140
-FE/A96C: 10 08        BPL $A976
+Local_FEA96C:
+FE/A96C: 10 08        BPL Local_FEA976
 FE/A96E: 09 38        ORA #$38
 FE/A970: 38           SEC
 FE/A971: 39 37 37     AND $3737,Y
 FE/A974: 12 3A        ORA ($3A)
+Local_FEA976:
 FE/A976: 72 10        ADC ($10)
 FE/A978: 36 39        ROL $39,X
 FE/A97A: 0A           ASL
-FE/A97B: 10 39        BPL $A9B6
+FE/A97B: 10 39        BPL Routine_FEA9B6
 FE/A97D: 39 36 80     AND $8036,Y
 FE/A980: 39 3A 3B     AND $3B3A,Y
 FE/A983: 3B           TSC
 FE/A984: 39 38 36     AND $3638,Y
 FE/A987: 78           SEI
-FE/A988: 10 04        BPL $A98E
+FE/A988: 10 04        BPL Routine_FEA98E
 FE/A98A: 39 38 11     AND $1138,Y
 FE/A98D: 00 39        BRK $39
 FE/A98F: 3B           TSC

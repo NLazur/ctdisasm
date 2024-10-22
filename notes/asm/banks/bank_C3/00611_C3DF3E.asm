@@ -9,7 +9,8 @@ C3/DF4A: 27 31        AND [$31]
 C3/DF4C: C5 20        CMP $20
 C3/DF4E: 5F 40 63 14  EOR $146340,X
 C3/DF52: 00 20        BRK $20
-C3/DF54: 10 00        BPL $DF56
+C3/DF54: 10 00        BPL Local_C3DF56
+Local_C3DF56:
 C3/DF56: 08           PHP
 C3/DF57: 5B           TCD
 C3/DF58: 12 2F        ORA ($2F)

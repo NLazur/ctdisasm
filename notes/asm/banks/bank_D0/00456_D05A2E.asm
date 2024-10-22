@@ -12,9 +12,9 @@ D0/5A3F: 00 00        BRK $00
 D0/5A41: 00 00        BRK $00
 D0/5A43: 00 00        BRK $00
 D0/5A45: 00 20        BRK $20
-D0/5A47: 20 88 88     JSR $8888
+D0/5A47: 20 88 88     JSR Routine_D08888
 D0/5A4A: 81 A1        STA ($A1,X)
-D0/5A4C: 50 55        BVC $5AA3
+D0/5A4C: 50 55        BVC Routine_D05AA3
 D0/5A4E: 02 52        COP $52
 D0/5A50: 00 00        BRK $00
 D0/5A52: 00 00        BRK $00

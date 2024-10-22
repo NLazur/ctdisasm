@@ -2,11 +2,12 @@
 Routine_C0A1D2:
 C0/A1D2: B9 80 16     LDA $1680,Y
 C0/A1D5: C9 19        CMP #$19
-C0/A1D7: F0 0F        BEQ $A1E8
+C0/A1D7: F0 0F        BEQ Local_C0A1E8
 C0/A1D9: A9 19        LDA #$19
 C0/A1DB: 99 80 16     STA $1680,Y
 C0/A1DE: A9 00        LDA #$00
 C0/A1E0: 99 81 16     STA $1681,Y
 C0/A1E3: A9 00        LDA #$00
 C0/A1E5: 99 01 16     STA $1601,Y
+Local_C0A1E8:
 C0/A1E8: 60           RTS

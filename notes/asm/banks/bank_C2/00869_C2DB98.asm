@@ -10,31 +10,36 @@ C2/DBA6: 85 04        STA $04
 C2/DBA8: A9 02 00     LDA #$0002
 C2/DBAB: 85 02        STA $02
 C2/DBAD: 64 22        STZ $22
+Local_C2DBAF:
 C2/DBAF: A6 22        LDX $22
 C2/DBB1: BD 00 10     LDA $1000,X
 C2/DBB4: 29 FF 00     AND #$00FF
-C2/DBB7: F0 2D        BEQ $DBE6
+C2/DBB7: F0 2D        BEQ Local_C2DBE6
 C2/DBB9: 0A           ASL
 C2/DBBA: A8           TAY
 C2/DBBB: B9 00 78     LDA $7800,Y
 C2/DBBE: 85 00        STA $00
 C2/DBC0: 5A           PHY
-C2/DBC1: 20 58 FD     JSR $FD58
+C2/DBC1: 20 58 FD     JSR Routine_C2FD58
 C2/DBC4: 7A           PLY
 C2/DBC5: A5 41        LDA $41
 C2/DBC7: 29 FF 00     AND #$00FF
-C2/DBCA: F0 05        BEQ $DBD1
+C2/DBCA: F0 05        BEQ Local_C2DBD1
 C2/DBCC: A9 E8 FD     LDA #$FDE8
-C2/DBCF: 80 0E        BRA $DBDF
+C2/DBCF: 80 0E        BRA Local_C2DBDF
+Local_C2DBD1:
 C2/DBD1: A5 3E        LDA $3E
 C2/DBD3: 29 FF 00     AND #$00FF
-C2/DBD6: F0 02        BEQ $DBDA
+C2/DBD6: F0 02        BEQ Local_C2DBDA
 C2/DBD8: E6 3F        INC $3F
+Local_C2DBDA:
 C2/DBDA: A5 3F        LDA $3F
-C2/DBDC: D0 01        BNE $DBDF
+C2/DBDC: D0 01        BNE Local_C2DBDF
 C2/DBDE: 1A           INC
+Local_C2DBDF:
 C2/DBDF: 99 00 6E     STA $6E00,Y
 C2/DBE2: E6 22        INC $22
-C2/DBE4: 80 C9        BRA $DBAF
+C2/DBE4: 80 C9        BRA Local_C2DBAF
+Local_C2DBE6:
 C2/DBE6: 28           PLP
 C2/DBE7: 60           RTS

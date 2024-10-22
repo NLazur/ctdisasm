@@ -16,21 +16,21 @@ C6/8C86: 00 DA        BRK $DA
 C6/8C88: 5F 70 60 F8  EOR $F86070,X
 C6/8C8C: 08           PHP
 C6/8C8D: B8           CLV
-C6/8C8E: 70 71        BVS $8D01
+C6/8C8E: 70 71        BVS Routine_C68D01
 C6/8C90: 00 72        BRK $72
 C6/8C92: 73 74        ADC ($74,S),Y
 C6/8C94: 75 76        ADC $76,X
 C6/8C96: 23 78        AND $78,S
 C6/8C98: 88           DEY
-C6/8C99: 20 78 15     JSR $1578
+C6/8C99: 20 78 15     JSR Routine_C61578
 C6/8C9C: 16 20        ASL $20,X
 C6/8C9E: 21 DF        AND ($DF,X)
 C6/8CA0: 89 DD        BIT #$DD
 C6/8CA2: DD 03 47     CMP $4703,X
 C6/8CA5: F8           SED
 C6/8CA6: 09 B0        ORA #$B0
-C6/8CA8: 80 81        BRA $8C2B
-C6/8CAA: 82 83 84     BRL $C61130
+C6/8CA8: 80 81        BRA Routine_C68C2B
+C6/8CAA: 82 83 84     BRL Routine_C61130
 C6/8CAD: 85 00        STA $00
 C6/8CAF: 86 77        STX $77
 C6/8CB1: 78           SEI

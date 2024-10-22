@@ -22,5 +22,5 @@ D0/ADBB: 7E AA 76     ROR $76AA,X
 D0/ADBE: FB           XCE
 D0/ADBF: 87 C0        STA [$C0]
 D0/ADC1: C0 00 C0     CPY #$C000
-D0/ADC4: 80 C0        BRA $AD86
+D0/ADC4: 80 C0        BRA Routine_D0AD86
 D0/ADC6: 40           RTI

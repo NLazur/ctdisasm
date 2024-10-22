@@ -3,7 +3,7 @@ Routine_FE09DE:
 FE/09DE: 00 CC        BRK $CC
 FE/09E0: 05 38        ORA $38
 FE/09E2: F8           SED
-FE/09E3: 80 35        BRA $0A1A
+FE/09E3: 80 35        BRA Local_FE0A1A
 FE/09E5: 77 05        ADC [$05],Y
 FE/09E7: BF B8 17 42  LDA $4217B8,X
 FE/09EB: 28           PLP
@@ -31,8 +31,9 @@ FE/0A13: 42 5E        WDM $5E
 FE/0A15: 0B           PHD
 FE/0A16: 84 18        STY $18
 FE/0A18: 01 C8        ORA ($C8,X)
+Local_FE0A1A:
 FE/0A1A: 05 FF        ORA $FF
-FE/0A1C: 82 08 7E     BRL $FE8827
+FE/0A1C: 82 08 7E     BRL Routine_FE8827
 FE/0A1F: FE 82 65     INC $6582,X
 FE/0A22: C0 07 08     CPY #$0807
 FE/0A25: 02 C6        COP $C6

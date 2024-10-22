@@ -2,14 +2,14 @@
 Routine_FD18FF:
 FD/18FF: 1A           INC
 FD/1900: 18           CLC
-FD/1901: 80 E4        BRA $18E7
+FD/1901: 80 E4        BRA Routine_FD18E7
 FD/1903: A4 C0        LDY $C0
 FD/1905: A4 C2        LDY $C2
 FD/1907: B4 C2        LDY $C2,X
 FD/1909: BA           TSX
 FD/190A: 18           CLC
 FD/190B: 6E 5E 3A     ROR $3A5E
-FD/190E: 20 04 30     JSR $3004
+FD/190E: 20 04 30     JSR Routine_FD3004
 FD/1911: BB           TYX
 FD/1912: 18           CLC
 FD/1913: 1E 3A 20     ASL $203A,X

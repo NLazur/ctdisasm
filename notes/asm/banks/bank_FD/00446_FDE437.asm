@@ -26,6 +26,7 @@ FD/E468: 5A           PHY
 FD/E469: B9 22 05     LDA $0522,Y
 FD/E46C: A8           TAY
 FD/E46D: C2 20        REP #$20
+Local_FDE46F:
 FD/E46F: BF 00 00 F6  LDA $F60000,X
 FD/E473: 87 18        STA [$18]
 FD/E475: E6 18        INC $18
@@ -33,7 +34,7 @@ FD/E477: E6 18        INC $18
 FD/E479: E8           INX
 FD/E47A: E8           INX
 FD/E47B: 88           DEY
-FD/E47C: D0 F1        BNE $E46F
+FD/E47C: D0 F1        BNE Local_FDE46F
 FD/E47E: E2 20        SEP #$20
 FD/E480: A9 00        LDA #$00
 FD/E482: EB           XBA

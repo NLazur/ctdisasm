@@ -1,27 +1,32 @@
 ; Bank: C2 | Start Address: 059B
 Routine_C2059B:
-C2/059B: 80 FE        BRA $059B
+Local_C2059B:
+C2/059B: 80 FE        BRA Local_C2059B
 C2/059D: C2 20        REP #$20
 C2/059F: 09 00 FF     ORA #$FF00
 C2/05A2: 49 FF FF     EOR #$FFFF
 C2/05A5: 1A           INC
 C2/05A6: 85 0C        STA $0C
+Local_C205A8:
 C2/05A8: A6 0E        LDX $0E
 C2/05AA: B5 20        LDA $20,X
 C2/05AC: 29 07 00     AND #$0007
-C2/05AF: D0 0C        BNE $05BD
+C2/05AF: D0 0C        BNE Local_C205BD
 C2/05B1: BD E3 00     LDA $00E3,X
 C2/05B4: 3A           DEC
-C2/05B5: 10 03        BPL $05BA
+C2/05B5: 10 03        BPL Local_C205BA
 C2/05B7: A9 BF 00     LDA #$00BF
+Local_C205BA:
 C2/05BA: 9D E3 00     STA $00E3,X
+Local_C205BD:
 C2/05BD: B5 20        LDA $20,X
 C2/05BF: 3A           DEC
-C2/05C0: 10 03        BPL $05C5
+C2/05C0: 10 03        BPL Local_C205C5
 C2/05C2: A9 FF 05     LDA #$05FF
+Local_C205C5:
 C2/05C5: 95 20        STA $20,X
 C2/05C7: 29 07 00     AND #$0007
-C2/05CA: F0 05        BEQ $05D1
+C2/05CA: F0 05        BEQ Routine_C205D1
 C2/05CC: C6 0C        DEC $0C
-C2/05CE: D0 D8        BNE $05A8
+C2/05CE: D0 D8        BNE Local_C205A8
 C2/05D0: 60           RTS

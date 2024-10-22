@@ -1,17 +1,17 @@
 ; Bank: FD | Start Address: 117A
 Routine_FD117A:
 FD/117A: 18           CLC
-FD/117B: 80 38        BRA $11B5
-FD/117D: 80 38        BRA $11B7
+FD/117B: 80 38        BRA Routine_FD11B5
+FD/117D: 80 38        BRA Routine_FD11B7
 FD/117F: BF 41 64 01  LDA $016441,X
 FD/1183: 3F 20 18 7F  AND $7F1820,X
 FD/1187: 38           SEC
 FD/1188: 7F 38 C0 31  ADC $31C038,X
 FD/118C: 64 60        STZ $60
 FD/118E: 00 92        BRK $92
-FD/1190: F0 92        BEQ $1124
-FD/1192: F0 51        BEQ $11E5
-FD/1194: 70 23        BVS $11B9
+FD/1190: F0 92        BEQ Routine_FD1124
+FD/1192: F0 51        BEQ Routine_FD11E5
+FD/1194: 70 23        BVS Routine_FD11B9
 FD/1196: 21 05        AND ($05,X)
 FD/1198: BF 31 98 F6  LDA $F69831,X
 FD/119C: 01 0C        ORA ($0C,X)
@@ -25,7 +25,7 @@ FD/11AB: 00 40        BRK $40
 FD/11AD: E7 00        SBC [$00]
 FD/11AF: F7 E0        SBC [$E0],Y
 FD/11B1: 9B           TXY
-FD/11B2: F0 F4        BEQ $11A8
+FD/11B2: F0 F4        BEQ Routine_FD11A8
 FD/11B4: 11 1E        ORA ($1E),Y
 FD/11B6: 00 3F        BRK $3F
 FD/11B8: 0E 3F 0F     ASL $0F3F
@@ -66,6 +66,6 @@ FD/120D: 00 FC        BRK $FC
 FD/120F: F2 73        SBC ($73)
 FD/1211: E0 6F        CPX #$6F
 FD/1213: C0 5F 00     CPY #$005F
-FD/1216: 10 3F        BPL $1257
+FD/1216: 10 3F        BPL Routine_FD1257
 FD/1218: 0E BF 1E     ASL $1EBF
 FD/121B: 60           RTS

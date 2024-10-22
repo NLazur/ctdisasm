@@ -2,7 +2,7 @@
 Routine_C66B75:
 C6/6B75: 28           PLP
 C6/6B76: E4 FB        CPX $FB
-C6/6B78: 10 78        BPL $6BF2
+C6/6B78: 10 78        BPL Routine_C66BF2
 C6/6B7A: 8A           TXA
 C6/6B7B: 8B           PHB
 C6/6B7C: 36 70        ROL $70,X

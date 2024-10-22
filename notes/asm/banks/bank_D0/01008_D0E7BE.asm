@@ -7,7 +7,7 @@ D0/E7C6: 00 52        BRK $52
 D0/E7C8: C1 12        CMP ($12,X)
 D0/E7CA: D1 52        CMP ($52),Y
 D0/E7CC: FC 12 D0     JSR ($D012,X)
-D0/E7CF: 20 12 D1     JSR $D112
+D0/E7CF: 20 12 D1     JSR Routine_D0D112
 D0/E7D2: 12 F1        ORA ($F1)
 D0/E7D4: 53 02        EOR ($02,S),Y
 D0/E7D6: 1B           TCS
@@ -55,12 +55,13 @@ D0/E81D: 4F 69 44 11  EOR $114469
 D0/E821: EE 13 F0     INC $F013
 D0/E824: 18           CLC
 D0/E825: FC 7E 00     JSR ($007E,X)
+Local_D0E828:
 D0/E828: 42 08        WDM $08
 D0/E82A: D2 1A        CMP ($1A)
 D0/E82C: 52 82        EOR ($82)
 D0/E82E: 08           PHP
 D0/E82F: D1 82        CMP ($82),Y
-D0/E831: 10 94        BPL $E7C7
+D0/E831: 10 94        BPL Routine_D0E7C7
 D0/E833: 08           PHP
 D0/E834: 46 0A        LSR $0A
 D0/E836: 47 00        EOR [$00]
@@ -72,7 +73,7 @@ D0/E83D: 4A           LSR
 D0/E83E: 0A           ASL
 D0/E83F: 4B           PHK
 D0/E840: 04 0A        TSB $0A
-D0/E842: 4C 36 31     JMP $3136
+D0/E842: 4C 36 31     JMP Routine_D03136
 D0/E845: 5D 0A 5E     EOR $5E0A,X
 D0/E848: 0A           ASL
 D0/E849: C9 C0        CMP #$C0
@@ -82,16 +83,16 @@ D0/E84F: 52 EC        EOR ($EC)
 D0/E851: AA           TAX
 D0/E852: 00 F0        BRK $F0
 D0/E854: 08           PHP
-D0/E855: 80 D1        BRA $E828
+D0/E855: 80 D1        BRA Local_D0E828
 D0/E857: 52 C2        EOR ($C2)
 D0/E859: 52 C7        EOR ($C7)
 D0/E85B: 52 C6        EOR ($C6)
 D0/E85D: 02 00        COP $00
 D0/E85F: 24 CA        BIT $CA
 D0/E861: 12 06        ORA ($06)
-D0/E863: 10 52        BPL $E8B7
+D0/E863: 10 52        BPL Local_D0E8B7
 D0/E865: C9 0E        CMP #$0E
-D0/E867: 10 56        BPL $E8BF
+D0/E867: 10 56        BPL Local_D0E8BF
 D0/E869: 0A           ASL
 D0/E86A: 00 57        BRK $57
 D0/E86C: 0A           ASL
@@ -135,10 +136,12 @@ D0/E8AF: 51 EC        EOR ($EC),Y
 D0/E8B1: D3 EB        CMP ($EB,S),Y
 D0/E8B3: 42 00        WDM $00
 D0/E8B5: D4 80        PEI $80
+Local_D0E8B7:
 D0/E8B7: 00 01        BRK $01
 D0/E8B9: B6 28        LDX $28,Y
 D0/E8BB: C0 12        CPY #$12
 D0/E8BD: D4 12        PEI $12
+Local_D0E8BF:
 D0/E8BF: 89 12        BIT #$12
 D0/E8C1: E9 10        SBC #$10
 D0/E8C3: 12 D6        ORA ($D6)

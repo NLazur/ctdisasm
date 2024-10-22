@@ -17,6 +17,7 @@ CD/11F7: 7B           TDC
 CD/11F8: A8           TAY
 CD/11F9: A9 40 00     LDA #$0040
 CD/11FC: 85 67        STA $67
+Local_CD11FE:
 CD/11FE: A7 53        LDA [$53]
 CD/1200: EB           XBA
 CD/1201: 4A           LSR
@@ -30,7 +31,7 @@ CD/120A: FC 19 12     JSR ($1219,X)
 CD/120D: E6 53        INC $53
 CD/120F: E6 53        INC $53
 CD/1211: C6 67        DEC $67
-CD/1213: D0 E9        BNE $11FE
+CD/1213: D0 E9        BNE Local_CD11FE
 CD/1215: 7B           TDC
 CD/1216: E2 20        SEP #$20
 CD/1218: 60           RTS

@@ -9,8 +9,8 @@ D1/15A6: 00 EC        BRK $EC
 D1/15A8: 1A           INC
 D1/15A9: 00 32        BRK $32
 D1/15AB: 00 E2        BRK $E2
-D1/15AD: 80 E0        BRA $158F
-D1/15AF: 22 80 3B 10  JSR $103B80
+D1/15AD: 80 E0        BRA Routine_D1158F
+D1/15AF: 22 80 3B 10  JSR Routine_103B80
 D1/15B3: E6 80        INC $80
 D1/15B5: E4 09        CPX $09
 D1/15B7: 18           CLC

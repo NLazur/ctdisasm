@@ -6,7 +6,7 @@ CD/0C88: 08           PHP
 CD/0C89: 8B           PHB
 CD/0C8A: 0B           PHD
 CD/0C8B: 08           PHP
-CD/0C8C: 22 02 00 C0  JSR $C00002
+CD/0C8C: 22 02 00 C0  JSR Routine_C00002
 CD/0C90: 28           PLP
 CD/0C91: 2B           PLD
 CD/0C92: AB           PLB

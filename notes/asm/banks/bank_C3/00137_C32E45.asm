@@ -2,12 +2,13 @@
 Routine_C32E45:
 C3/2E45: 00 A0        BRK $A0
 C3/2E47: 00 08        BRK $08
-C3/2E49: 80 0C        BRA $2E57
+C3/2E49: 80 0C        BRA Local_C32E57
 C3/2E4B: A5 AC        LDA $AC
-C3/2E4D: F0 C0        BEQ $2E0F
+C3/2E4D: F0 C0        BEQ Routine_C32E0F
 C3/2E4F: 2D 64 AC     AND $AC64
 C3/2E52: A2 00        LDX #$00
 C3/2E54: 44 0E 00     MVP $0E,$00
+Local_C32E57:
 C3/2E57: D5 0B        CMP $0B,X
 C3/2E59: 12 8C        ORA ($8C)
 C3/2E5B: D2 0B        CMP ($0B)

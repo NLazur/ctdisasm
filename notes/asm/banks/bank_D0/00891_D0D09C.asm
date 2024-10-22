@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: D09C
 Routine_D0D09C:
-D0/D09C: 10 30        BPL $D0CE
+D0/D09C: 10 30        BPL Routine_D0D0CE
 D0/D09E: 38           SEC
 D0/D09F: 28           PLP
 D0/D0A0: 1A           INC
@@ -32,10 +32,11 @@ D0/D0CF: 18           CLC
 D0/D0D0: 00 00        BRK $00
 D0/D0D2: 00 00        BRK $00
 D0/D0D4: 00 00        BRK $00
-D0/D0D6: F0 00        BEQ $D0D8
+D0/D0D6: F0 00        BEQ Local_D0D0D8
+Local_D0D0D8:
 D0/D0D8: 08           PHP
 D0/D0D9: 00 F4        BRK $F4
-D0/D0DB: F0 0A        BEQ $D0E7
+D0/D0DB: F0 0A        BEQ Routine_D0D0E7
 D0/D0DD: F8           SED
 D0/D0DE: F5 0C        SBC $0C,X
 D0/D0E0: 00 00        BRK $00
@@ -47,5 +48,5 @@ D0/D0EA: 05 01        ORA $01
 D0/D0EC: 0D 01 11     ORA $1101
 D0/D0EF: 01 2E        ORA ($2E,X)
 D0/D0F1: 0F 51 1E AE  ORA $AE1E51
-D0/D0F5: 30 50        BMI $D147
+D0/D0F5: 30 50        BMI Routine_D0D147
 D0/D0F7: 60           RTS

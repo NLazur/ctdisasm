@@ -13,8 +13,8 @@ D0/855C: F8           SED
 D0/855D: F8           SED
 D0/855E: D8           CLD
 D0/855F: F8           SED
-D0/8560: 70 F0        BVS $8552
-D0/8562: F0 F0        BEQ $8554
+D0/8560: 70 F0        BVS Routine_D08552
+D0/8562: F0 F0        BEQ Routine_D08554
 D0/8564: B4 F4        LDY $F4,X
 D0/8566: BC FC 43     LDY $43FC,X
 D0/8569: 43 43        EOR $43,S
@@ -143,6 +143,6 @@ D0/867C: CB           WAI
 D0/867D: FC 38 00     JSR ($0038,X)
 D0/8680: E8           INX
 D0/8681: E8           INX
-D0/8682: F0 F0        BEQ $8674
-D0/8684: D0 D0        BNE $8656
+D0/8682: F0 F0        BEQ Routine_D08674
+D0/8684: D0 D0        BNE Routine_D08656
 D0/8686: 60           RTS

@@ -8,13 +8,14 @@ C7/4CCB: C9 00        CMP #$00
 C7/4CCD: 01 BF        ORA ($BF,X)
 C7/4CCF: C8           INY
 C7/4CD0: 18           CLC
-C7/4CD1: F0 07        BEQ $4CDA
+C7/4CD1: F0 07        BEQ Local_C74CDA
 C7/4CD3: C8           INY
 C7/4CD4: 78           SEI
 C7/4CD5: 04 AE        TSB $AE
 C7/4CD7: C8           INY
 C7/4CD8: C0 14        CPY #$14
-C7/4CDA: B0 E0        BCS $4CBC
+Local_C74CDA:
+C7/4CDA: B0 E0        BCS Routine_C74CBC
 C7/4CDC: 14 C8        TRB $C8
 C7/4CDE: C0 09        CPY #$09
 C7/4CE0: AA           TAX
@@ -33,7 +34,7 @@ C7/4CFC: 14 0C        TRB $0C
 C7/4CFE: DD 0A 07     CMP $070A,X
 C7/4D01: E9 FE        SBC #$FE
 C7/4D03: C4 00        CPY $00
-C7/4D05: D0 CF        BNE $4CD6
+C7/4D05: D0 CF        BNE Routine_C74CD6
 C7/4D07: 1C 06 EB     TRB $EB06
 C7/4D0A: C4 70        CPY $70
 C7/4D0C: D2 DC        CMP ($DC)
@@ -42,7 +43,7 @@ C7/4D10: 02 DD        COP $DD
 C7/4D12: 0A           ASL
 C7/4D13: E0 17 C8     CPX #$C817
 C7/4D16: 38           SEC
-C7/4D17: 10 E4        BPL $4CFD
+C7/4D17: 10 E4        BPL Routine_C74CFD
 C7/4D19: 06 EB        ASL $EB
 C7/4D1B: C4 00        CPY $00
 C7/4D1D: DC 06 D6     JMP [$D606]
@@ -60,7 +61,7 @@ C7/4D32: 07 C8        ORA [$C8]
 C7/4D34: 48           PHA
 C7/4D35: EF AA EB C4  SBC $C4EBAA
 C7/4D39: 1C D0 CF     TRB $CFD0
-C7/4D3C: 10 01        BPL $4D3F
+C7/4D3C: 10 01        BPL Routine_C74D3F
 C7/4D3E: C4 7F        CPY $7F
 C7/4D40: CF 13 E0 12  CMP $12E013
 C7/4D44: 01 EB        ORA ($EB,X)
@@ -106,8 +107,9 @@ C7/4D94: D2 D4        CMP ($D4)
 C7/4D96: DC 01 D8     JMP [$D801]
 C7/4D99: C8           INY
 C7/4D9A: 08           PHP
-C7/4D9B: F0 7A        BEQ $4E17
+C7/4D9B: F0 7A        BEQ Routine_C74E17
 C7/4D9D: C1 DC        CMP ($DC,X)
+Local_C74D9F:
 C7/4D9F: 03 D6        ORA $D6,S
 C7/4DA1: 03 C8        ORA $C8,S
 C7/4DA3: 0C E8 97     TSB $97E8
@@ -131,7 +133,7 @@ C7/4DC5: E0 0F C8     CPX #$C80F
 C7/4DC8: 1C FA A9     TRB $A9FA
 C7/4DCB: EB           XBA
 C7/4DCC: C4 38        CPY $38
-C7/4DCE: D0 CF        BNE $4D9F
+C7/4DCE: D0 CF        BNE Local_C74D9F
 C7/4DD0: 12 09        ORA ($09)
 C7/4DD2: E2 02        SEP #$02
 C7/4DD4: 0D CF 31     ORA $31CF
@@ -147,7 +149,7 @@ C7/4DEB: C8           INY
 C7/4DEC: 0C 18 0A     TSB $0A18
 C7/4DEF: EB           XBA
 C7/4DF0: C4 00        CPY $00
-C7/4DF2: D0 CF        BNE $4DC3
+C7/4DF2: D0 CF        BNE Routine_C74DC3
 C7/4DF4: 11 DF        ORA ($DF),Y
 C7/4DF6: 01 01        ORA ($01,X)
 C7/4DF8: EB           XBA

@@ -11,10 +11,11 @@ C0/B212: A9 00        LDA #$00
 C0/B214: 85 83        STA $83
 C0/B216: A2 10 00     LDX #$0010
 C0/B219: A9 80        LDA #$80        ; set $0E00-$0EFF to #$80
+Local_C0B21B:
 C0/B21B: 85 80        STA $80
 C0/B21D: 85 80        STA $80
 C0/B21F: CA           DEX
-C0/B220: D0 F9        BNE $B21B
+C0/B220: D0 F9        BNE Local_C0B21B
 C0/B222: A0 20 0E     LDY #$0E20
 C0/B225: A2 00 0E     LDX #$0E00
 C0/B228: C2 20        REP #$20
@@ -36,9 +37,10 @@ C0/B24D: 85 83        STA $83
 C0/B24F: A2 FF 00     LDX #$00FF
 C0/B252: A0 00 00     LDY #$0000
 C0/B255: AF 00 20 7F  LDA $7F2000
+Local_C0B259:
 C0/B259: 86 80        STX $80
 C0/B25B: 84 80        STY $80
 C0/B25D: 3A           DEC
-C0/B25E: D0 F9        BNE $B259
+C0/B25E: D0 F9        BNE Local_C0B259
 C0/B260: 2B           PLD
 C0/B261: 60           RTS

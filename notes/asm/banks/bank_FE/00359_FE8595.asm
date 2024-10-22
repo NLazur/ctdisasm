@@ -17,13 +17,13 @@ FE/85B1: 1C AA 24     TRB $24AA
 FE/85B4: 04 30        TSB $30
 FE/85B6: 03 50        ORA $50,S
 FE/85B8: FF 12 F1 01  SBC $01F112,X
-FE/85BC: F0 01        BEQ $85BF
-FE/85BE: F0 01        BEQ $85C1
-FE/85C0: F0 01        BEQ $85C3
-FE/85C2: F0 01        BEQ $85C5
-FE/85C4: F0 01        BEQ $85C7
-FE/85C6: F0 01        BEQ $85C9
-FE/85C8: F0 FF        BEQ $85C9
+FE/85BC: F0 01        BEQ Routine_FE85BF
+FE/85BE: F0 01        BEQ Routine_FE85C1
+FE/85C0: F0 01        BEQ Routine_FE85C3
+FE/85C2: F0 01        BEQ Routine_FE85C5
+FE/85C4: F0 01        BEQ Routine_FE85C7
+FE/85C6: F0 01        BEQ Routine_FE85C9
+FE/85C8: F0 FF        BEQ Routine_FE85C9
 FE/85CA: 01 F0        ORA ($F0,X)
 FE/85CC: 01 F0        ORA ($F0,X)
 FE/85CE: 01 F0        ORA ($F0,X)
@@ -33,13 +33,13 @@ FE/85D4: 01 F0        ORA ($F0,X)
 FE/85D6: 01 F0        ORA ($F0,X)
 FE/85D8: 01 F0        ORA ($F0,X)
 FE/85DA: FF 01 F0 01  SBC $01F001,X
-FE/85DE: F0 01        BEQ $85E1
-FE/85E0: F0 01        BEQ $85E3
-FE/85E2: F0 01        BEQ $85E5
-FE/85E4: F0 01        BEQ $85E7
-FE/85E6: F0 01        BEQ $85E9
-FE/85E8: F0 01        BEQ $85EB
-FE/85EA: F0 FF        BEQ $85EB
+FE/85DE: F0 01        BEQ Routine_FE85E1
+FE/85E0: F0 01        BEQ Routine_FE85E3
+FE/85E2: F0 01        BEQ Routine_FE85E5
+FE/85E4: F0 01        BEQ Routine_FE85E7
+FE/85E6: F0 01        BEQ Routine_FE85E9
+FE/85E8: F0 01        BEQ Routine_FE85EB
+FE/85EA: F0 FF        BEQ Routine_FE85EB
 FE/85EC: 01 F0        ORA ($F0,X)
 FE/85EE: 01 F0        ORA ($F0,X)
 FE/85F0: 01 F0        ORA ($F0,X)
@@ -49,18 +49,20 @@ FE/85F6: 01 F0        ORA ($F0,X)
 FE/85F8: 01 F0        ORA ($F0,X)
 FE/85FA: 01 F0        ORA ($F0,X)
 FE/85FC: FF 01 F0 01  SBC $01F001,X
-FE/8600: F0 01        BEQ $8603
-FE/8602: F0 01        BEQ $8605
-FE/8604: F0 01        BEQ $8607
-FE/8606: F0 01        BEQ $8609
-FE/8608: F0 01        BEQ $860B
-FE/860A: F0 01        BEQ $860D
-FE/860C: F0 03        BEQ $8611
+FE/8600: F0 01        BEQ Routine_FE8603
+FE/8602: F0 01        BEQ Routine_FE8605
+FE/8604: F0 01        BEQ Routine_FE8607
+FE/8606: F0 01        BEQ Routine_FE8609
+FE/8608: F0 01        BEQ Routine_FE860B
+FE/860A: F0 01        BEQ Routine_FE860D
+FE/860C: F0 03        BEQ Routine_FE8611
 FE/860E: 21 0E        AND ($0E,X)
 FE/8610: FF 01 F0 01  SBC $01F001,X
-FE/8614: F0 06        BEQ $861C
-FE/8616: 90 00        BCC $8618
+FE/8614: F0 06        BEQ Local_FE861C
+FE/8616: 90 00        BCC Local_FE8618
+Local_FE8618:
 FE/8618: EF 05 10 C0  SBC $C01005
+Local_FE861C:
 FE/861C: C1 C2        CMP ($C2,X)
 FE/861E: C3 04        CMP $04,S
 FE/8620: 68           PLA
@@ -74,13 +76,14 @@ FE/8632: AD AE AF     LDA $AFAE
 FE/8635: AC 04 00     LDY $0004
 FE/8638: C2 20        REP #$20
 FE/863A: C3 D0        CMP $D0,S
+Local_FE863C:
 FE/863C: D1 D2        CMP ($D2),Y
 FE/863E: D3 04        CMP ($04,S),Y
 FE/8640: 68           PLA
 FE/8641: DD 8B 08     CMP $088B,X
 FE/8644: 8A           TXA
 FE/8645: BE BF 18     LDX $18BF,Y
-FE/8648: 70 F2        BVS $863C
+FE/8648: 70 F2        BVS Local_FE863C
 FE/864A: F3 F0        SBC ($F0,S),Y
 FE/864C: CC 04 BE     CPY $BE04
 FE/864F: CF 30 10 AC  CMP $AC1030
@@ -95,6 +98,7 @@ FE/8663: C0 AC AD     CPY #$ADAC
 FE/8666: 8A           TXA
 FE/8667: 8A           TXA
 FE/8668: 8B           PHB
+Local_FE8669:
 FE/8669: BC 62 00     LDY $0062,X
 FE/866C: 1C 70 0C     TRB $0C70
 FE/866F: BC 8A 77     LDY $778A,X
@@ -109,17 +113,19 @@ FE/867F: E3 F0        SBC $F0,S
 FE/8681: F1 CF        SBC ($CF),Y
 FE/8683: 58           CLI
 FE/8684: 00 04        BRK $04
+Local_FE8686:
 FE/8686: 38           SEC
 FE/8687: 1E 20 1F     ASL $1F20,X
 FE/868A: 08           PHP
 FE/868B: BE BF 1C     LDX $1CBF,Y
-FE/868E: 10 A7        BPL $8637
+FE/868E: 10 A7        BPL Routine_FE8637
 FE/8690: 08           PHP
 FE/8691: 87 08        STA [$08]
-FE/8693: 10 1C        BPL $86B1
+FE/8693: 10 1C        BPL Routine_FE86B1
 FE/8695: 00 15        BRK $15
 FE/8697: 08           PHP
 FE/8698: BC BD BD     LDY $BDBD,X
+Local_FE869B:
 FE/869B: BE 3C 00     LDX $003C,Y
 FE/869E: 00 A9        BRK $A9
 FE/86A0: A0 8A 8B     LDY #$8B8A
@@ -140,12 +146,12 @@ FE/86C1: 58           CLI
 FE/86C2: 08           PHP
 FE/86C3: A9 B1 B2     LDA #$B2B1
 FE/86C6: B3 04        LDA ($04,S),Y
-FE/86C8: 10 9F        BPL $8669
+FE/86C8: 10 9F        BPL Local_FE8669
 FE/86CA: 38           SEC
-FE/86CB: 90 CE        BCC $869B
+FE/86CB: 90 CE        BCC Local_FE869B
 FE/86CD: CF 3C 09 00  CMP $00093C
 FE/86D1: 41 5A        EOR ($5A,X)
-FE/86D3: 10 A9        BPL $867E
+FE/86D3: 10 A9        BPL Routine_FE867E
 FE/86D5: B5 00        LDA $00,X
 FE/86D7: B6 B7        LDX $B7,Y
 FE/86D9: B8           CLV
@@ -160,10 +166,10 @@ FE/86E9: A9 8E 00     LDA #$008E
 FE/86EC: 9A           TXS
 FE/86ED: 9A           TXS
 FE/86EE: 9A           TXS
-FE/86EF: 90 85        BCC $8676
+FE/86EF: 90 85        BCC Routine_FE8676
 FE/86F1: 86 87        STX $87
 FE/86F3: 88           DEY
-FE/86F4: F0 90        BEQ $8686
+FE/86F4: F0 90        BEQ Local_FE8686
 FE/86F6: 8A           TXA
 FE/86F7: DE DF 3C     DEC $3CDF,X
 FE/86FA: 09 00 39     ORA #$3900
@@ -171,7 +177,7 @@ FE/86FD: D5 00        CMP $00,X
 FE/86FF: 3C 08 0B     BIT $0B08,X
 FE/8702: 21 00        AND ($00,X)
 FE/8704: 24 00        BIT $00
-FE/8706: B0 68        BCS $8770
+FE/8706: B0 68        BCS Routine_FE8770
 FE/8708: 00 B4        BRK $B4
 FE/870A: 8D 8B BF     STA $BF8B
 FE/870D: 54 E3 CC     MVN $E3,$CC
@@ -179,7 +185,7 @@ FE/8710: 0C 01 8C     TSB $8C01
 FE/8713: 54 08 A0     MVN $08,$A0
 FE/8716: 59 08 80     EOR $8008,Y
 FE/8719: 00 81        BRK $81
-FE/871B: 82 83 84     BRL $FE0BA1
+FE/871B: 82 83 84     BRL Routine_FE0BA1
 FE/871E: CD CE CD     CMP $CDCE
 FE/8721: CE 8D FE     DEC $FE8D
 FE/8724: 00 BF        BRK $BF

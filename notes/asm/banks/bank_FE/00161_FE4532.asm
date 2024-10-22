@@ -2,9 +2,9 @@
 Routine_FE4532:
 FE/4532: 04 00        TSB $00
 FE/4534: F8           SED
-FE/4535: B0 F8        BCS $452F
+FE/4535: B0 F8        BCS Routine_FE452F
 FE/4537: C1 FF        CMP ($FF,X)
-FE/4539: 30 BA        BMI $44F5
+FE/4539: 30 BA        BMI Routine_FE44F5
 FE/453B: 04 3A        TSB $3A
 FE/453D: 31 FF        AND ($FF),Y
 FE/453F: 5E 50 11     LSR $1150,X
@@ -17,7 +17,7 @@ FE/454F: 14 06        TRB $06
 FE/4551: 12 21        ORA ($21)
 FE/4553: 33 30        AND ($30,S),Y
 FE/4555: 9D 2D 12     STA $122D,X
-FE/4558: 10 02        BPL $455C
+FE/4558: 10 02        BPL Routine_FE455C
 FE/455A: 1F E6 02 8C  ORA $8C02E6,X
 FE/455E: 0C 37 37     TSB $3737
 FE/4561: A1 AF        LDA ($AF,X)

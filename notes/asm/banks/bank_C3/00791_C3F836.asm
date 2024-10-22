@@ -23,7 +23,8 @@ C3/F85C: 00 8A        BRK $8A
 C3/F85E: 01 02        ORA ($02,X)
 C3/F860: 00 00        BRK $00
 C3/F862: A4 01        LDY $01
-C3/F864: 10 00        BPL $F866
+C3/F864: 10 00        BPL Local_C3F866
+Local_C3F866:
 C3/F866: 8A           TXA
 C3/F867: 01 03        ORA ($03,X)
 C3/F869: F4 00 AC     PEA $AC00
@@ -66,24 +67,26 @@ C3/F8B4: F8           SED
 C3/F8B5: 00 04        BRK $04
 C3/F8B7: DB           STP
 C3/F8B8: F8           SED
+Local_C3F8B9:
 C3/F8B9: 00 04        BRK $04
 C3/F8BB: F4 F8 00     PEA $00F8
 C3/F8BE: 04 01        TSB $01
 C3/F8C0: F9 00 06     SBC $0600,Y
 C3/F8C3: E0 F0        CPX #$F0
 C3/F8C5: A0 00        LDY #$00
-C3/F8C7: F0 F0        BEQ $F8B9
+C3/F8C7: F0 F0        BEQ Local_C3F8B9
 C3/F8C9: A2 00        LDX #$00
 C3/F8CB: 00 F0        BRK $F0
 C3/F8CD: A2 40        LDX #$40
-C3/F8CF: 10 F0        BPL $F8C1
+C3/F8CF: 10 F0        BPL Routine_C3F8C1
 C3/F8D1: A0 40        LDY #$40
-C3/F8D3: F0 00        BEQ $F8D5
+C3/F8D3: F0 00        BEQ Local_C3F8D5
+Local_C3F8D5:
 C3/F8D5: A4 00        LDY $00
 C3/F8D7: 00 00        BRK $00
 C3/F8D9: A4 40        LDY $40
 C3/F8DB: 06 F0        ASL $F0
-C3/F8DD: F0 A6        BEQ $F885
+C3/F8DD: F0 A6        BEQ Routine_C3F885
 C3/F8DF: 00 00        BRK $00
-C3/F8E1: F0 A6        BEQ $F889
+C3/F8E1: F0 A6        BEQ Routine_C3F889
 C3/F8E3: 40           RTI

@@ -1,11 +1,11 @@
 ; Bank: D0 | Start Address: D05C
 Routine_D0D05C:
-D0/D05C: 50 60        BVC $D0BE
-D0/D05E: 50 60        BVC $D0C0
+D0/D05C: 50 60        BVC Routine_D0D0BE
+D0/D05E: 50 60        BVC Routine_D0D0C0
 D0/D060: 00 00        BRK $00
 D0/D062: 00 00        BRK $00
 D0/D064: 00 80        BRK $80
-D0/D066: 80 80        BRA $CFE8
+D0/D066: 80 80        BRA Routine_D0CFE8
 D0/D068: 18           CLC
 D0/D069: 00 16        BRK $16
 D0/D06B: 08           PHP
@@ -26,9 +26,10 @@ D0/D085: 06 8A        ASL $8A
 D0/D087: 06 55        ASL $55
 D0/D089: 8C AA D8     STY $D8AA
 D0/D08C: 54 70 28     MVN $70,$28
-D0/D08F: 20 00 01     JSR $0100
+D0/D08F: 20 00 01     JSR Routine_D00100
 D0/D092: 01 01        ORA ($01,X)
 D0/D094: 03 06        ORA $06,S
 D0/D096: 8C D8 80     STY $80D8
-D0/D099: 80 00        BRA $D09B
+D0/D099: 80 00        BRA Local_D0D09B
+Local_D0D09B:
 D0/D09B: 40           RTI

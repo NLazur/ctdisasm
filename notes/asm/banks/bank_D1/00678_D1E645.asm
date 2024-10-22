@@ -4,7 +4,8 @@ D1/E645: 08           PHP
 D1/E646: 4B           PHK
 D1/E647: 4A           LSR
 D1/E648: 69 68        ADC #$68
-D1/E64A: 50 00        BVC $E64C
+D1/E64A: 50 00        BVC Local_D1E64C
+Local_D1E64C:
 D1/E64C: 01 70        ORA ($70,X)
 D1/E64E: 0D 45 0C     ORA $0C45
 D1/E651: 13 14        ORA ($14,S),Y
@@ -12,7 +13,7 @@ D1/E653: 08           PHP
 D1/E654: 2A           ROL
 D1/E655: 2B           PLD
 D1/E656: 48           PHA
-D1/E657: 50 32        BVC $E68B
+D1/E657: 50 32        BVC Local_D1E68B
 D1/E659: 33 50        AND ($50,S),Y
 D1/E65B: 0C 4B 4A     TSB $4A4B
 D1/E65E: 05 0D        ORA $0D
@@ -33,15 +34,17 @@ D1/E679: 00 70        BRK $70
 D1/E67B: 00 30        BRK $30
 D1/E67D: 00 20        BRK $20
 D1/E67F: 00 08        BRK $08
-D1/E681: 22 23 05 10  JSR $100523
-D1/E685: B0 0D        BCS $E694
+D1/E681: 22 23 05 10  JSR Routine_100523
+D1/E685: B0 0D        BCS Local_D1E694
 D1/E687: 8A           TXA
 D1/E688: 44 48 A8     MVP $48,$A8
+Local_D1E68B:
 D1/E68B: A9 00        LDA #$00
 D1/E68D: 01 50        ORA ($50,X)
 D1/E68F: A0 A1        LDY #$A1
 D1/E691: 05 D0        ORA $D0
 D1/E693: 98           TYA
+Local_D1E694:
 D1/E694: 99 08 09     STA $0908,Y
 D1/E697: 2A           ROL
 D1/E698: 2B           PLD
@@ -49,7 +52,7 @@ D1/E699: 49 4D        EOR #$4D
 D1/E69B: 32 33        AND ($33)
 D1/E69D: 4D 1A 1B     EOR $1B1A
 D1/E6A0: 00 01        BRK $01
-D1/E6A2: 22 23 D0 6F  JSR $6FD023
+D1/E6A2: 22 23 D0 6F  JSR Routine_6FD023
 D1/E6A6: 6E 6D 6C     ROR $6C6D
 D1/E6A9: C8           INY
 D1/E6AA: 08           PHP
@@ -64,18 +67,19 @@ D1/E6B9: 00 00        BRK $00
 D1/E6BB: 00 00        BRK $00
 D1/E6BD: 00 07        BRK $07
 D1/E6BF: E0 0F        CPX #$0F
-D1/E6C1: F0 0F        BEQ $E6D2
-D1/E6C3: F0 0F        BEQ $E6D4
-D1/E6C5: F0 0F        BEQ $E6D6
-D1/E6C7: F0 0F        BEQ $E6D8
-D1/E6C9: F0 0F        BEQ $E6DA
-D1/E6CB: F0 07        BEQ $E6D4
+D1/E6C1: F0 0F        BEQ Routine_D1E6D2
+D1/E6C3: F0 0F        BEQ Routine_D1E6D4
+D1/E6C5: F0 0F        BEQ Routine_D1E6D6
+D1/E6C7: F0 0F        BEQ Local_D1E6D8
+D1/E6C9: F0 0F        BEQ Routine_D1E6DA
+D1/E6CB: F0 07        BEQ Routine_D1E6D4
 D1/E6CD: E0 01        CPX #$01
 D1/E6CF: 02 03        COP $03
 D1/E6D1: 04 05        TSB $05
 D1/E6D3: 06 08        ASL $08
 D1/E6D5: 09 0A        ORA #$0A
 D1/E6D7: 0B           PHD
+Local_D1E6D8:
 D1/E6D8: 0C 0D 0E     TSB $0E0D
 D1/E6DB: 0F 10 11 12  ORA $121110
 D1/E6DF: 13 14        ORA ($14,S),Y
@@ -100,14 +104,15 @@ D1/E707: 3C 3D 3E     BIT $3E3D,X
 D1/E70A: 9C 01 A1     STZ $A101
 D1/E70D: AD 21 2A     LDA $2A21
 D1/E710: 29 02        AND #$02
-D1/E712: F0 08        BEQ $E71C
+D1/E712: F0 08        BEQ Local_D1E71C
 D1/E714: AD 75 05     LDA $0575
 D1/E717: 49 40        EOR #$40
 D1/E719: 8D 75 05     STA $0575
+Local_D1E71C:
 D1/E71C: C2 20        REP #$20
 D1/E71E: A2 00        LDX #$00
 D1/E720: 00 BC        BRK $BC
-D1/E722: 20 23 BD     JSR $BD23
+D1/E722: 20 23 BD     JSR Routine_D1BD23
 D1/E725: A0 23        LDY #$23
 D1/E727: 9D 20 23     STA $2320,X
 D1/E72A: 98           TYA

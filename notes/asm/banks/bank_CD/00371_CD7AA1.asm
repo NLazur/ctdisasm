@@ -8,18 +8,19 @@ CD/7AA9: 1B           TCS
 CD/7AAA: 00 70        BRK $70
 CD/7AAC: 02 00        COP $00
 CD/7AAE: 78           SEI
-CD/7AAF: 50 12        BVC $7AC3
+CD/7AAF: 50 12        BVC Local_CD7AC3
 CD/7AB1: 03 36        ORA $36,S
 CD/7AB3: 71 00        ADC ($00),Y
 CD/7AB5: 72 00        ADC ($00)
 CD/7AB7: 73 00        ADC ($00,S),Y
 CD/7AB9: 24 01        BIT $01
-CD/7ABB: 20 04 0D     JSR $0D04
+CD/7ABB: 20 04 0D     JSR Routine_CD0D04
 CD/7ABE: 1B           TCS
 CD/7ABF: 00 70        BRK $70
 CD/7AC1: 02 00        COP $00
+Local_CD7AC3:
 CD/7AC3: 78           SEI
-CD/7AC4: 50 12        BVC $7AD8
+CD/7AC4: 50 12        BVC Local_CD7AD8
 CD/7AC6: 03 71        ORA $71,S
 CD/7AC8: 00 72        BRK $72
 CD/7ACA: 00 73        BRK $73
@@ -27,19 +28,22 @@ CD/7ACC: 00 24        BRK $24
 CD/7ACE: 01 20        ORA ($20,X)
 CD/7AD0: 08           PHP
 CD/7AD1: 0D 1B 00     ORA $001B
-CD/7AD4: 70 02        BVS $7AD8
+CD/7AD4: 70 02        BVS Local_CD7AD8
 CD/7AD6: 00 78        BRK $78
-CD/7AD8: 50 12        BVC $7AEC
+Local_CD7AD8:
+CD/7AD8: 50 12        BVC Local_CD7AEC
 CD/7ADA: 03 71        ORA $71,S
 CD/7ADC: 00 72        BRK $72
 CD/7ADE: 00 73        BRK $73
 CD/7AE0: 00 24        BRK $24
 CD/7AE2: 01 20        ORA ($20,X)
+Local_CD7AE4:
 CD/7AE4: 0C 0D 1B     TSB $1B0D
 CD/7AE7: 00 70        BRK $70
 CD/7AE9: 02 00        COP $00
 CD/7AEB: 78           SEI
-CD/7AEC: 50 12        BVC $7B00
+Local_CD7AEC:
+CD/7AEC: 50 12        BVC Routine_CD7B00
 CD/7AEE: 03 71        ORA $71,S
 CD/7AF0: 00 72        BRK $72
 CD/7AF2: 00 73        BRK $73
@@ -53,7 +57,7 @@ CD/7AFF: 71 00        ADC ($00),Y
 CD/7B01: 72 00        ADC ($00)
 CD/7B03: 73 00        ADC ($00,S),Y
 CD/7B05: 24 01        BIT $01
-CD/7B07: 20 04 0D     JSR $0D04
+CD/7B07: 20 04 0D     JSR Routine_CD0D04
 CD/7B0A: 1B           TCS
 CD/7B0B: 00 70        BRK $70
 CD/7B0D: 02 01        COP $01
@@ -62,7 +66,7 @@ CD/7B11: 71 00        ADC ($00),Y
 CD/7B13: 72 00        ADC ($00)
 CD/7B15: 73 00        ADC ($00,S),Y
 CD/7B17: 24 01        BIT $01
-CD/7B19: 20 08 0D     JSR $0D08
+CD/7B19: 20 08 0D     JSR Routine_CD0D08
 CD/7B1C: 1B           TCS
 CD/7B1D: 00 70        BRK $70
 CD/7B1F: 02 01        COP $01
@@ -71,14 +75,16 @@ CD/7B23: 71 00        ADC ($00),Y
 CD/7B25: 72 00        ADC ($00)
 CD/7B27: 73 00        ADC ($00,S),Y
 CD/7B29: 24 01        BIT $01
-CD/7B2B: 20 0C 0D     JSR $0D0C
+CD/7B2B: 20 0C 0D     JSR Routine_CD0D0C
 CD/7B2E: 1B           TCS
 CD/7B2F: 00 70        BRK $70
 CD/7B31: 02 01        COP $01
 CD/7B33: 12 03        ORA ($03)
 CD/7B35: 71 00        ADC ($00),Y
-CD/7B37: 90 00        BCC $7B39
-CD/7B39: 90 00        BCC $7B3B
+CD/7B37: 90 00        BCC Local_CD7B39
+Local_CD7B39:
+CD/7B39: 90 00        BCC Local_CD7B3B
+Local_CD7B3B:
 CD/7B3B: 43 7B        EOR $7B,S
 CD/7B3D: 68           PLA
 CD/7B3E: 7B           TDC
@@ -87,7 +93,7 @@ CD/7B41: E2 95        SEP #$95
 CD/7B43: 72 0D        ADC ($0D)
 CD/7B45: 02 00        COP $00
 CD/7B47: 0C D9 30     TSB $30D9
-CD/7B4A: D0 98        BNE $7AE4
+CD/7B4A: D0 98        BNE Local_CD7AE4
 CD/7B4C: 00 03        BRK $03
 CD/7B4E: 36 02        ROL $02,X
 CD/7B50: 09 20 1E     ORA #$1E20
@@ -99,15 +105,17 @@ CD/7B59: 19 D1 DA     ORA $DAD1,Y
 CD/7B5C: 24 02        BIT $02
 CD/7B5E: 72 0D        ADC ($0D)
 CD/7B60: 06 03        ASL $03
-CD/7B62: 20 0F 50     JSR $500F
+CD/7B62: 20 0F 50     JSR Routine_CD500F
 CD/7B65: 2E 01 00     ROL $0001
 CD/7B68: 24 01        BIT $01
 CD/7B6A: 78           SEI
 CD/7B6B: 67 1E        ADC [$1E]
 CD/7B6D: 44 36 06     MVP $36,$06
 CD/7B70: 03 00        ORA $00,S
-CD/7B72: 90 00        BCC $7B74
-CD/7B74: 90 00        BCC $7B76
+CD/7B72: 90 00        BCC Local_CD7B74
+Local_CD7B74:
+CD/7B74: 90 00        BCC Local_CD7B76
+Local_CD7B76:
 CD/7B76: 7E 7B 8F     ROR $8F7B,X
 CD/7B79: 7B           TDC
 CD/7B7A: D3 95        CMP ($95,S),Y
@@ -116,7 +124,7 @@ CD/7B7F: 0D 36 02     ORA $0236
 CD/7B82: 09 20 50     ORA #$5020
 CD/7B85: 06 03        ASL $03
 CD/7B87: 24 02        BIT $02
-CD/7B89: 20 0F 50     JSR $500F
+CD/7B89: 20 0F 50     JSR Routine_CD500F
 CD/7B8C: 2E 01 00     ROL $0001
 CD/7B8F: 24 01        BIT $01
 CD/7B91: 78           SEI
@@ -125,48 +133,50 @@ CD/7B94: 00 06        BRK $06
 CD/7B96: 05 20        ORA $20
 CD/7B98: 03 6A        ORA $6A,S
 CD/7B9A: 06 03        ASL $03
-CD/7B9C: 20 04 78     JSR $7804
+CD/7B9C: 20 04 78     JSR Routine_CD7804
 CD/7B9F: 46 69        LSR $69
 CD/7BA1: 00 06        BRK $06
 CD/7BA3: 05 20        ORA $20
 CD/7BA5: 03 6A        ORA $6A,S
 CD/7BA7: 06 03        ASL $03
-CD/7BA9: 20 04 78     JSR $7804
+CD/7BA9: 20 04 78     JSR Routine_CD7804
 CD/7BAC: 46 69        LSR $69
 CD/7BAE: 00 06        BRK $06
 CD/7BB0: 05 20        ORA $20
 CD/7BB2: 03 6A        ORA $6A,S
 CD/7BB4: 06 03        ASL $03
-CD/7BB6: 20 04 78     JSR $7804
+CD/7BB6: 20 04 78     JSR Routine_CD7804
 CD/7BB9: 46 69        LSR $69
 CD/7BBB: 00 06        BRK $06
 CD/7BBD: 05 20        ORA $20
 CD/7BBF: 03 6A        ORA $6A,S
 CD/7BC1: 06 03        ASL $03
-CD/7BC3: 20 04 78     JSR $7804
+CD/7BC3: 20 04 78     JSR Routine_CD7804
 CD/7BC6: 46 69        LSR $69
 CD/7BC8: 00 06        BRK $06
 CD/7BCA: 05 20        ORA $20
 CD/7BCC: 03 6A        ORA $6A,S
 CD/7BCE: 06 03        ASL $03
-CD/7BD0: 20 04 78     JSR $7804
+CD/7BD0: 20 04 78     JSR Routine_CD7804
 CD/7BD3: 46 69        LSR $69
 CD/7BD5: 00 06        BRK $06
 CD/7BD7: 05 20        ORA $20
 CD/7BD9: 03 6A        ORA $6A,S
 CD/7BDB: 06 03        ASL $03
-CD/7BDD: 20 04 78     JSR $7804
+CD/7BDD: 20 04 78     JSR Routine_CD7804
 CD/7BE0: 46 69        LSR $69
 CD/7BE2: 00 06        BRK $06
 CD/7BE4: 05 20        ORA $20
 CD/7BE6: 03 6A        ORA $6A,S
 CD/7BE8: 06 03        ASL $03
-CD/7BEA: 20 04 20     JSR $2004
+CD/7BEA: 20 04 20     JSR Routine_CD2004
 CD/7BED: 0A           ASL
 CD/7BEE: 36 06        ROL $06,X
 CD/7BF0: 03 00        ORA $00,S
-CD/7BF2: 90 00        BCC $7BF4
-CD/7BF4: 90 00        BCC $7BF6
+CD/7BF2: 90 00        BCC Local_CD7BF4
+Local_CD7BF4:
+CD/7BF4: 90 00        BCC Local_CD7BF6
+Local_CD7BF6:
 CD/7BF6: FE 7B 1E     INC $1E7B,X
 CD/7BF9: 7C FE 7B     JMP ($7BFE,X)
 CD/7BFC: E2 95        SEP #$95
@@ -175,7 +185,7 @@ CD/7C00: 02 08        COP $08
 CD/7C02: 78           SEI
 CD/7C03: AC 0B 12     LDY $120B
 CD/7C06: 03 36        ORA $36,S
-CD/7C08: 20 1E 78     JSR $781E
+CD/7C08: 20 1E 78     JSR Routine_CD781E
 CD/7C0B: AC 12 19     LDY $1912
 CD/7C0E: 1B           TCS
 CD/7C0F: 19 24 02     ORA $0224,Y
@@ -190,8 +200,8 @@ CD/7C22: 78           SEI
 CD/7C23: 67 1E        ADC [$1E]
 CD/7C25: 44 36 06     MVP $36,$06
 CD/7C28: 03 00        ORA $00,S
-CD/7C2A: 90 C0        BCC $7BEC
-CD/7C2C: 90 01        BCC $7C2F
+CD/7C2A: 90 C0        BCC Routine_CD7BEC
+CD/7C2C: 90 01        BCC Routine_CD7C2F
 CD/7C2E: 3C 7C 90     BIT $907C,X
 CD/7C31: 7C A7 7C     JMP ($7CA7,X)
 CD/7C34: B6 7C        LDX $7C,Y
@@ -209,8 +219,8 @@ CD/7C48: 03 78        ORA $78,S
 CD/7C4A: 61 36        ADC ($36,X)
 CD/7C4C: 06 05        ASL $05
 CD/7C4E: 24 02        BIT $02
-CD/7C50: D0 C4        BNE $7C16
-CD/7C52: F0 F0        BEQ $7C44
+CD/7C50: D0 C4        BNE Routine_CD7C16
+CD/7C52: F0 F0        BEQ Routine_CD7C44
 CD/7C54: C4 E8        CPY $E8
 CD/7C56: F8           SED
 CD/7C57: C4 E4        CPY $E4
@@ -221,14 +231,15 @@ CD/7C63: 01 C4        ORA ($C4,X)
 CD/7C65: E4 02        CPX $02
 CD/7C67: C4 E8        CPY $E8
 CD/7C69: 04 C4        TSB $C4
-CD/7C6B: F0 08        BEQ $7C75
+CD/7C6B: F0 08        BEQ Local_CD7C75
 CD/7C6D: C5 10        CMP $10
 CD/7C6F: D1 36        CMP ($36),Y
 CD/7C71: 72 15        ADC ($15)
 CD/7C73: 02 03        COP $03
+Local_CD7C75:
 CD/7C75: 78           SEI
 CD/7C76: 48           PHA
-CD/7C77: 20 40 78     JSR $7840
+CD/7C77: 20 40 78     JSR Routine_CD7840
 CD/7C7A: FF 36 02 08  SBC $080236,X
 CD/7C7E: 0B           PHD
 CD/7C7F: 12 19        ORA ($19)
@@ -237,18 +248,18 @@ CD/7C82: 19 24 05     ORA $0524,Y
 CD/7C85: 28           PLP
 CD/7C86: 72 0D        ADC ($0D)
 CD/7C88: 06 03        ASL $03
-CD/7C8A: 20 0F 50     JSR $500F
+CD/7C8A: 20 0F 50     JSR Routine_CD500F
 CD/7C8D: 2E 01 00     ROL $0001
 CD/7C90: 24 01        BIT $01
 CD/7C92: 06 05        ASL $05
-CD/7C94: 20 0A 02     JSR $020A
+CD/7C94: 20 0A 02     JSR Routine_CD020A
 CD/7C97: 08           PHP
 CD/7C98: 36 24        ROL $24,X
 CD/7C9A: 04 20        TSB $20
 CD/7C9C: 0A           ASL
 CD/7C9D: 72 0A        ADC ($0A)
 CD/7C9F: 02 12        COP $12
-CD/7CA1: 20 1E 36     JSR $361E
+CD/7CA1: 20 1E 36     JSR Routine_CD361E
 CD/7CA4: 06 03        ASL $03
 CD/7CA6: 00 60        BRK $60
 CD/7CA8: 00 73        BRK $73
@@ -266,8 +277,10 @@ CD/7CBD: 03 70        ORA $70,S
 CD/7CBF: 02 05        COP $05
 CD/7CC1: 24 04        BIT $04
 CD/7CC3: 71 00        ADC ($00),Y
-CD/7CC5: 90 00        BCC $7CC7
-CD/7CC7: 90 00        BCC $7CC9
+CD/7CC5: 90 00        BCC Local_CD7CC7
+Local_CD7CC7:
+CD/7CC7: 90 00        BCC Local_CD7CC9
+Local_CD7CC9:
 CD/7CC9: D1 7C        CMP ($7C),Y
 CD/7CCB: 09 7D FE     ORA #$FE7D
 CD/7CCE: 7B           TDC

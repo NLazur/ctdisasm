@@ -35,8 +35,8 @@ C3/0065: E2 20        SEP #$20
 C3/0067: 9C 05 03     STZ $0305
 C3/006A: A9 C3        LDA #$C3
 C3/006C: 8D 02 03     STA $0302
-C3/006F: 22 57 05 C3  JSR $C30557
-C3/0073: 5C 00 30 7E  JMP $7E3000
+C3/006F: 22 57 05 C3  JSR Routine_C30557
+C3/0073: 5C 00 30 7E  JMP Routine_7E3000
 C3/0077: 8B           PHB
 C3/0078: 0B           PHD
 C3/0079: 08           PHP
@@ -54,19 +54,22 @@ C3/008B: 64 53        STZ $53
 C3/008D: 64 55        STZ $55
 C3/008F: A5 58        LDA $58
 C3/0091: 4A           LSR
-C3/0092: B0 04        BCS $0098
+C3/0092: B0 04        BCS Local_C30098
 C3/0094: A9 7E        LDA #$7E
-C3/0096: 80 02        BRA $009A
+C3/0096: 80 02        BRA Local_C3009A
+Local_C30098:
 C3/0098: A9 7F        LDA #$7F
+Local_C3009A:
 C3/009A: 48           PHA
 C3/009B: AB           PLB
 C3/009C: C2 20        REP #$20
 C3/009E: A5 54        LDA $54
-C3/00A0: D0 0A        BNE $00AC
+C3/00A0: D0 0A        BNE Local_C300AC
 C3/00A2: 68           PLA
 C3/00A3: A9 C0 01     LDA #$01C0
-C3/00A6: 20 C6 01     JSR $01C6
-C3/00A9: 4C BD 01     JMP $01BD
+C3/00A6: 20 C6 01     JSR Routine_C301C6
+C3/00A9: 4C BD 01     JMP Local_C301BD
+Local_C300AC:
 C3/00AC: AA           TAX
 C3/00AD: 0A           ASL
 C3/00AE: 85 F2        STA $F2
@@ -82,6 +85,7 @@ C3/00C0: 85 F4        STA $F4
 C3/00C2: 48           PHA
 C3/00C3: 4A           LSR
 C3/00C4: 85 F6        STA $F6
+Local_C300C6:
 C3/00C6: 86 F0        STX $F0
 C3/00C8: A5 F6        LDA $F6
 C3/00CA: E5 F0        SBC $F0
@@ -91,14 +95,16 @@ C3/00CE: 98           TYA
 C3/00CF: 49 FF FF     EOR #$FFFF
 C3/00D2: 1A           INC
 C3/00D3: 65 50        ADC $50
-C3/00D5: 10 03        BPL $00DA
+C3/00D5: 10 03        BPL Local_C300DA
 C3/00D7: A9 00 00     LDA #$0000
+Local_C300DA:
 C3/00DA: 9D 00 00     STA $0000,X
 C3/00DD: 98           TYA
 C3/00DE: 65 50        ADC $50
 C3/00E0: C9 FF 00     CMP #$00FF
-C3/00E3: 30 03        BMI $00E8
+C3/00E3: 30 03        BMI Local_C300E8
 C3/00E5: A9 FF 00     LDA #$00FF
+Local_C300E8:
 C3/00E8: E2 20        SEP #$20
 C3/00EA: 9D 01 00     STA $0001,X
 C3/00ED: C2 20        REP #$20
@@ -112,26 +118,29 @@ C3/00F9: 8A           TXA
 C3/00FA: 49 FF FF     EOR #$FFFF
 C3/00FD: 1A           INC
 C3/00FE: 65 50        ADC $50
-C3/0100: 10 03        BPL $0105
+C3/0100: 10 03        BPL Local_C30105
 C3/0102: A9 00 00     LDA #$0000
+Local_C30105:
 C3/0105: 99 00 00     STA $0000,Y
 C3/0108: 8A           TXA
 C3/0109: 18           CLC
 C3/010A: 65 50        ADC $50
 C3/010C: C9 FF 00     CMP #$00FF
-C3/010F: 30 03        BMI $0114
+C3/010F: 30 03        BMI Local_C30114
 C3/0111: A9 FF 00     LDA #$00FF
+Local_C30114:
 C3/0114: E2 20        SEP #$20
 C3/0116: 99 01 00     STA $0001,Y
 C3/0119: C2 20        REP #$20
 C3/011B: A4 F0        LDY $F0
 C3/011D: A5 F2        LDA $F2
-C3/011F: 10 08        BPL $0129
+C3/011F: 10 08        BPL Local_C30129
 C3/0121: 98           TYA
 C3/0122: 0A           ASL
 C3/0123: 0A           ASL
 C3/0124: 69 06 00     ADC #$0006
-C3/0127: 80 0B        BRA $0134
+C3/0127: 80 0B        BRA Local_C30134
+Local_C30129:
 C3/0129: 98           TYA
 C3/012A: 86 F0        STX $F0
 C3/012C: CA           DEX
@@ -139,12 +148,13 @@ C3/012D: E5 F0        SBC $F0
 C3/012F: 0A           ASL
 C3/0130: 0A           ASL
 C3/0131: 69 0A 00     ADC #$000A
+Local_C30134:
 C3/0134: 65 F2        ADC $F2
 C3/0136: 85 F2        STA $F2
 C3/0138: 84 F0        STY $F0
 C3/013A: C8           INY
 C3/013B: E4 F0        CPX $F0
-C3/013D: 10 87        BPL $00C6
+C3/013D: 10 87        BPL Local_C300C6
 C3/013F: 7A           PLY
 C3/0140: BB           TYX
 C3/0141: A5 54        LDA $54
@@ -153,13 +163,14 @@ C3/0144: 85 F0        STA $F0
 C3/0146: 68           PLA
 C3/0147: 85 F2        STA $F2
 C3/0149: 29 7F 00     AND #$007F
-C3/014C: F0 29        BEQ $0177
+C3/014C: F0 29        BEQ Local_C30177
 C3/014E: C9 01 00     CMP #$0001
-C3/0151: D0 6A        BNE $01BD
+C3/0151: D0 6A        BNE Local_C301BD
 C3/0153: 46 F0        LSR $F0
 C3/0155: A5 F0        LDA $F0
-C3/0157: 30 64        BMI $01BD
-C3/0159: F0 62        BEQ $01BD
+C3/0157: 30 64        BMI Local_C301BD
+C3/0159: F0 62        BEQ Local_C301BD
+Local_C3015B:
 C3/015B: CA           DEX
 C3/015C: CA           DEX
 C3/015D: CA           DEX
@@ -169,13 +180,14 @@ C3/0162: 99 00 00     STA $0000,Y
 C3/0165: C8           INY
 C3/0166: C8           INY
 C3/0167: C6 F0        DEC $F0
-C3/0169: D0 F0        BNE $015B
+C3/0169: D0 F0        BNE Local_C3015B
 C3/016B: A5 F2        LDA $F2
 C3/016D: 89 80 00     BIT #$0080
-C3/0170: D0 4B        BNE $01BD
+C3/0170: D0 4B        BNE Local_C301BD
 C3/0172: A5 54        LDA $54
 C3/0174: 4A           LSR
-C3/0175: 80 17        BRA $018E
+C3/0175: 80 17        BRA Local_C3018E
+Local_C30177:
 C3/0177: CA           DEX
 C3/0178: CA           DEX
 C3/0179: BD 00 00     LDA $0000,X
@@ -183,15 +195,16 @@ C3/017C: 99 00 00     STA $0000,Y
 C3/017F: C8           INY
 C3/0180: C8           INY
 C3/0181: C6 F0        DEC $F0
-C3/0183: D0 F2        BNE $0177
+C3/0183: D0 F2        BNE Local_C30177
 C3/0185: A5 F2        LDA $F2
 C3/0187: 89 80 00     BIT #$0080
-C3/018A: D0 31        BNE $01BD
+C3/018A: D0 31        BNE Local_C301BD
 C3/018C: A5 54        LDA $54
+Local_C3018E:
 C3/018E: 18           CLC
 C3/018F: 65 52        ADC $52
 C3/0191: C9 DF 00     CMP #$00DF
-C3/0194: 10 15        BPL $01AB
+C3/0194: 10 15        BPL Local_C301AB
 C3/0196: 85 F0        STA $F0
 C3/0198: 0A           ASL
 C3/0199: 18           CLC
@@ -204,17 +217,19 @@ C3/01A3: 3A           DEC
 C3/01A4: 0A           ASL
 C3/01A5: 3A           DEC
 C3/01A6: 85 F0        STA $F0
-C3/01A8: 20 CA 01     JSR $01CA
+C3/01A8: 20 CA 01     JSR Routine_C301CA
+Local_C301AB:
 C3/01AB: A5 52        LDA $52
 C3/01AD: 38           SEC
 C3/01AE: E5 54        SBC $54
 C3/01B0: C9 01 00     CMP #$0001
-C3/01B3: 30 08        BMI $01BD
-C3/01B5: F0 06        BEQ $01BD
+C3/01B3: 30 08        BMI Local_C301BD
+C3/01B5: F0 06        BEQ Local_C301BD
 C3/01B7: 3A           DEC
 C3/01B8: 0A           ASL
 C3/01B9: 3A           DEC
-C3/01BA: 20 C6 01     JSR $01C6
+C3/01BA: 20 C6 01     JSR Routine_C301C6
+Local_C301BD:
 C3/01BD: C2 30        REP #$30
 C3/01BF: 7A           PLY
 C3/01C0: FA           PLX

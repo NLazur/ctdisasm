@@ -1,20 +1,23 @@
 ; Bank: C1 | Start Address: 3714
 Routine_C13714:
 C1/3714: AD E0 99     LDA $99E0
-C1/3717: D0 21        BNE $373A
+C1/3717: D0 21        BNE Local_C1373A
 C1/3719: 7B           TDC
 C1/371A: AA           TAX
 C1/371B: 86 9C        STX $9C
+Local_C1371D:
 C1/371D: A6 9C        LDX $9C
 C1/371F: BD 4A 97     LDA $974A,X
-C1/3722: F0 0E        BEQ $3732
+C1/3722: F0 0E        BEQ Local_C13732
 C1/3724: DE 97 98     DEC $9897,X
-C1/3727: D0 09        BNE $3732
+C1/3727: D0 09        BNE Local_C13732
 C1/3729: BD 9F 98     LDA $989F,X
 C1/372C: 9D 97 98     STA $9897,X
-C1/372F: 20 3B 37     JSR $373B
+C1/372F: 20 3B 37     JSR Routine_C1373B
+Local_C13732:
 C1/3732: E6 9C        INC $9C
 C1/3734: A5 9C        LDA $9C
 C1/3736: C9 08        CMP #$08
-C1/3738: D0 E3        BNE $371D
+C1/3738: D0 E3        BNE Local_C1371D
+Local_C1373A:
 C1/373A: 60           RTS

@@ -6,10 +6,11 @@ C0/7703: 85 54        STA $54
 C0/7705: EB           XBA
 C0/7706: A5 58        LDA $58
 C0/7708: 89 01        BIT #$01
-C0/770A: D0 44        BNE $7750
+C0/770A: D0 44        BNE Local_C07750
 C0/770C: 4A           LSR
 C0/770D: 25 1E        AND $1E
 C0/770F: 85 52        STA $52
+Local_C07711:
 C0/7711: AA           TAX
 C0/7712: BF C0 30 7E  LDA $7E30C0,X
 C0/7716: 29 01        AND #$01
@@ -34,11 +35,12 @@ C0/7740: 1A           INC
 C0/7741: 25 1E        AND $1E
 C0/7743: 85 52        STA $52
 C0/7745: C6 5C        DEC $5C
-C0/7747: F0 B6        BEQ $76FF
+C0/7747: F0 B6        BEQ Routine_C076FF
 C0/7749: A5 54        LDA $54
 C0/774B: EB           XBA
 C0/774C: A5 52        LDA $52
-C0/774E: 80 C1        BRA $7711
+C0/774E: 80 C1        BRA Local_C07711
+Local_C07750:
 C0/7750: 4A           LSR
 C0/7751: 25 1E        AND $1E
 C0/7753: 85 52        STA $52
@@ -64,6 +66,7 @@ C0/7779: A5 52        LDA $52
 C0/777B: 1A           INC
 C0/777C: 25 1E        AND $1E
 C0/777E: 85 52        STA $52
+Local_C07780:
 C0/7780: AA           TAX
 C0/7781: BF C0 30 7E  LDA $7E30C0,X
 C0/7785: 29 01        AND #$01
@@ -88,11 +91,12 @@ C0/77AF: 1A           INC
 C0/77B0: 25 1E        AND $1E
 C0/77B2: 85 52        STA $52
 C0/77B4: C6 5C        DEC $5C
-C0/77B6: F0 07        BEQ $77BF
+C0/77B6: F0 07        BEQ Local_C077BF
 C0/77B8: A5 54        LDA $54
 C0/77BA: EB           XBA
 C0/77BB: A5 52        LDA $52
-C0/77BD: 80 C1        BRA $7780
+C0/77BD: 80 C1        BRA Local_C07780
+Local_C077BF:
 C0/77BF: A5 54        LDA $54
 C0/77C1: EB           XBA
 C0/77C2: A5 52        LDA $52

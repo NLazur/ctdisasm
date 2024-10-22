@@ -2,46 +2,54 @@
 Routine_C1B4E9:
 C1/B4E9: A9 00        LDA #$00
 C1/B4EB: 85 14        STA $14
-C1/B4ED: 20 D1 B6     JSR $B6D1
+C1/B4ED: 20 D1 B6     JSR Routine_C1B6D1
 C1/B4F0: A9 01        LDA #$01
 C1/B4F2: 85 14        STA $14
-C1/B4F4: 20 D1 B6     JSR $B6D1
+C1/B4F4: 20 D1 B6     JSR Routine_C1B6D1
 C1/B4F7: A9 02        LDA #$02
 C1/B4F9: 85 14        STA $14
-C1/B4FB: 20 D1 B6     JSR $B6D1
+C1/B4FB: 20 D1 B6     JSR Routine_C1B6D1
 C1/B4FE: 7B           TDC
 C1/B4FF: AA           TAX
 C1/B500: 86 00        STX $00
 C1/B502: 86 02        STX $02
+Local_C1B504:
 C1/B504: A6 02        LDX $02
 C1/B506: BD 80 15     LDA $1580,X
-C1/B509: D0 03        BNE $B50E
-C1/B50B: 4C 5A B5     JMP $B55A
+C1/B509: D0 03        BNE Local_C1B50E
+C1/B50B: 4C 5A B5     JMP Local_C1B55A
+Local_C1B50E:
 C1/B50E: A2 00 00     LDX #$0000
+Local_C1B511:
 C1/B511: DD 00 24     CMP $2400,X
-C1/B514: F0 08        BEQ $B51E
+C1/B514: F0 08        BEQ Local_C1B51E
 C1/B516: E8           INX
 C1/B517: E0 00 01     CPX #$0100
-C1/B51A: 90 F5        BCC $B511
-C1/B51C: 80 15        BRA $B533
+C1/B51A: 90 F5        BCC Local_C1B511
+C1/B51C: 80 15        BRA Local_C1B533
+Local_C1B51E:
 C1/B51E: 86 00        STX $00
 C1/B520: A6 02        LDX $02
 C1/B522: BD 83 15     LDA $1583,X
-C1/B525: D0 05        BNE $B52C
+C1/B525: D0 05        BNE Local_C1B52C
 C1/B527: A6 00        LDX $00
 C1/B529: 9D 00 24     STA $2400,X
+Local_C1B52C:
 C1/B52C: A6 00        LDX $00
 C1/B52E: 9D 00 25     STA $2500,X
-C1/B531: 80 27        BRA $B55A
+C1/B531: 80 27        BRA Local_C1B55A
+Local_C1B533:
 C1/B533: 7B           TDC
 C1/B534: AA           TAX
+Local_C1B535:
 C1/B535: BD 00 24     LDA $2400,X
 C1/B538: C9 00        CMP #$00
-C1/B53A: F0 08        BEQ $B544
+C1/B53A: F0 08        BEQ Local_C1B544
 C1/B53C: E8           INX
 C1/B53D: E0 00 01     CPX #$0100
-C1/B540: D0 F3        BNE $B535
-C1/B542: 80 2C        BRA $B570
+C1/B540: D0 F3        BNE Local_C1B535
+C1/B542: 80 2C        BRA Local_C1B570
+Local_C1B544:
 C1/B544: 86 04        STX $04
 C1/B546: A6 02        LDX $02
 C1/B548: BD 80 15     LDA $1580,X
@@ -51,6 +59,7 @@ C1/B550: A6 02        LDX $02
 C1/B552: BD 83 15     LDA $1583,X
 C1/B555: A6 04        LDX $04
 C1/B557: 9D 00 25     STA $2500,X
+Local_C1B55A:
 C1/B55A: C2 20        REP #$20
 C1/B55C: A5 02        LDA $02
 C1/B55E: 18           CLC
@@ -60,8 +69,9 @@ C1/B564: 7B           TDC
 C1/B565: E2 20        SEP #$20
 C1/B567: A6 02        LDX $02
 C1/B569: E0 00 05     CPX #$0500
-C1/B56C: F0 02        BEQ $B570
-C1/B56E: 80 94        BRA $B504
+C1/B56C: F0 02        BEQ Local_C1B570
+C1/B56E: 80 94        BRA Local_C1B504
+Local_C1B570:
 C1/B570: 64 03        STZ $03
 C1/B572: 64 05        STZ $05
 C1/B574: 60           RTS

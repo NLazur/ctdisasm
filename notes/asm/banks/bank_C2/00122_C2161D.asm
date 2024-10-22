@@ -3,13 +3,14 @@ Routine_C2161D:
 C2/161D: E2 20        SEP #$20
 C2/161F: A6 4E        LDX $4E
 C2/1621: BD 0A 00     LDA $000A,X
-C2/1624: D0 0A        BNE $1630
+C2/1624: D0 0A        BNE Local_C21630
 C2/1626: A0 01 00     LDY #$0001
 C2/1629: B7 58        LDA [$58],Y
 C2/162B: 9D 0A 00     STA $000A,X
-C2/162E: 80 0B        BRA $163B
+C2/162E: 80 0B        BRA Routine_C2163B
+Local_C21630:
 C2/1630: DE 0A 00     DEC $000A,X
-C2/1633: D0 06        BNE $163B
+C2/1633: D0 06        BNE Routine_C2163B
 C2/1635: C2 20        REP #$20
 C2/1637: A9 02 00     LDA #$0002
 C2/163A: 60           RTS

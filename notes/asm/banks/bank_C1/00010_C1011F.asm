@@ -3,12 +3,13 @@ Routine_C1011F:
 C1/011F: DA           PHX
 C1/0120: 7B           TDC
 C1/0121: AA           TAX
+Local_C10122:
 C1/0122: 38           SEC
 C1/0123: AD 99 94     LDA $9499
 C1/0126: E9 64        SBC #$64
 C1/0128: 00 8D        BRK $8D
 C1/012A: 99 94 E8     STA $E894,Y
-C1/012D: B0 F3        BCS $0122
+C1/012D: B0 F3        BCS Local_C10122
 C1/012F: 18           CLC
 C1/0130: AD 99 94     LDA $9499
 C1/0133: 69 64        ADC #$64
@@ -17,12 +18,13 @@ C1/0137: 99 94 CA     STA $CA94,Y
 C1/013A: DA           PHX
 C1/013B: 7B           TDC
 C1/013C: AA           TAX
+Local_C1013D:
 C1/013D: 38           SEC
 C1/013E: AD 99 94     LDA $9499
 C1/0141: E9 0A        SBC #$0A
 C1/0143: 00 8D        BRK $8D
 C1/0145: 99 94 E8     STA $E894,Y
-C1/0148: B0 F3        BCS $013D
+C1/0148: B0 F3        BCS Local_C1013D
 C1/014A: 18           CLC
 C1/014B: AD 99 94     LDA $9499
 C1/014E: 69 0A        ADC #$0A

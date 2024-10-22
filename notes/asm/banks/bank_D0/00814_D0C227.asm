@@ -41,6 +41,6 @@ D0/C27B: 00 00        BRK $00
 D0/C27D: 00 04        BRK $04
 D0/C27F: 04 18        TSB $18
 D0/C281: 18           CLC
-D0/C282: 30 30        BMI $C2B4
+D0/C282: 30 30        BMI Routine_D0C2B4
 D0/C284: A0 E0        LDY #$E0
 D0/C286: 40           RTI

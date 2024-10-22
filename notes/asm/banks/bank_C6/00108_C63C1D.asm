@@ -3,31 +3,32 @@ Routine_C63C1D:
 C6/3C1D: 00 46        BRK $46
 C6/3C1F: 00 55        BRK $55
 C6/3C21: 00 56        BRK $56
-C6/3C23: 10 70        BPL $3C95
+C6/3C23: 10 70        BPL Routine_C63C95
 C6/3C25: 4B           PHK
 C6/3C26: 00 00        BRK $00
-C6/3C28: 4C 00 5B     JMP $5B00
+C6/3C28: 4C 00 5B     JMP Routine_C65B00
 C6/3C2B: 00 5C        BRK $5C
 C6/3C2D: 00 40        BRK $40
-C6/3C2F: 10 48        BPL $3C79
+C6/3C2F: 10 48        BPL Routine_C63C79
 C6/3C31: AF 08 50 80  LDA $805008
 C6/3C35: 00 C6        BRK $C6
 C6/3C37: 0C C7 05     TSB $05C7
 C6/3C3A: F2 00        SBC ($00)
 C6/3C3C: D7 7C        CMP [$7C],Y
-C6/3C3E: 10 D8        BPL $3C18
+C6/3C3E: 10 D8        BPL Routine_C63C18
 C6/3C40: 0C D9 0C     TSB $0CD9
 C6/3C43: CA           DEX
-C6/3C44: 10 0C        BPL $3C52
+C6/3C44: 10 0C        BPL Local_C63C52
 C6/3C46: CB           WAI
 C6/3C47: 0C DA 04     TSB $04DA
 C6/3C4A: 01 7F        ORA ($7F,X)
 C6/3C4C: C0 7E 00     CPY #$007E
 C6/3C4F: C0 6F C0     CPY #$C06F
+Local_C63C52:
 C6/3C52: 6E C0 5E     ROR $5EC0
-C6/3C55: 80 5F        BRA $3CB6
+C6/3C55: 80 5F        BRA Routine_C63CB6
 C6/3C57: 00 80        BRK $80
 C6/3C59: 4E 80 4F     LSR $4F80
-C6/3C5C: 80 7E        BRA $3CDC
-C6/3C5E: 80 7F        BRA $3CDF
+C6/3C5C: 80 7E        BRA Routine_C63CDC
+C6/3C5E: 80 7F        BRA Routine_C63CDF
 C6/3C60: 60           RTS

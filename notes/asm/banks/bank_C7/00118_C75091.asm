@@ -3,14 +3,14 @@ Routine_C75091:
 C7/5091: 04 A9        TSB $A9
 C7/5093: E3 C4        SBC $C4,S
 C7/5095: 58           CLI
-C7/5096: D0 CF        BNE $5067
+C7/5096: D0 CF        BNE Routine_C75067
 C7/5098: 12 CB        ORA ($CB)
 C7/509A: 00 01        BRK $01
 C7/509C: 7F DD 0A E0  ADC $E00ADD,X
 C7/50A0: 18           CLC
 C7/50A1: 06 EB        ASL $EB
 C7/50A3: C4 28        CPY $28
-C7/50A5: D0 CF        BNE $5076
+C7/50A5: D0 CF        BNE Routine_C75076
 C7/50A7: 0A           ASL
 C7/50A8: CB           WAI
 C7/50A9: 00 01        BRK $01
@@ -19,6 +19,7 @@ C7/50AF: 08           PHP
 C7/50B0: CF 21 E3 EB  CMP $EBE321
 C7/50B4: C4 6E        CPY $6E
 C7/50B6: D4 D2        PEI $D2
+Local_C750B8:
 C7/50B8: DC 03 D6     JMP [$D603]
 C7/50BB: 03 03        ORA $03,S
 C7/50BD: EB           XBA
@@ -53,7 +54,7 @@ C7/50FA: C4 5C        CPY $5C
 C7/50FC: D4 D0        PEI $D0
 C7/50FE: E2 05        SEP #$05
 C7/5100: CF 12 0D CF  CMP $CF0D12
-C7/5104: 10 B2        BPL $50B8
+C7/5104: 10 B2        BPL Local_C750B8
 C7/5106: E3 EB        SBC $EB,S
 C7/5108: C4 5C        CPY $5C
 C7/510A: D4 DC        PEI $DC
@@ -80,10 +81,11 @@ C7/512F: C9 00        CMP #$00
 C7/5131: 02 BF        COP $BF
 C7/5133: D4 D7        PEI $D7
 C7/5135: E2 00        SEP #$00
+Local_C75137:
 C7/5137: 88           DEY
 C7/5138: E0 17 87     CPX #$8717
 C7/513B: E3 C4        SBC $C4,S
-C7/513D: 30 D0        BMI $510F
+C7/513D: 30 D0        BMI Routine_C7510F
 C7/513F: CF 1F E0 1D  CMP $1DE01F
 C7/5143: E2 03        SEP #$03
 C7/5145: 0A           ASL
@@ -103,7 +105,7 @@ C7/515E: 0A           ASL
 C7/515F: 0C DA 04     TSB $04DA
 C7/5162: E3 EB        SBC $EB,S
 C7/5164: C4 38        CPY $38
-C7/5166: D0 CF        BNE $5137
+C7/5166: D0 CF        BNE Local_C75137
 C7/5168: 19 0D CF     ORA $CF0D,Y
 C7/516B: 1D C5 2D     ORA $2DC5,X
 C7/516E: 00 E2        BRK $E2
@@ -112,6 +114,7 @@ C7/5172: E0 1E CF     CPX #$CF1E
 C7/5175: 21 E3        AND ($E3,X)
 C7/5177: EB           XBA
 C7/5178: C4 6F        CPY $6F
+Local_C7517A:
 C7/517A: DC 03 D6     JMP [$D603]
 C7/517D: 03 D4        ORA $D4,S
 C7/517F: C0 E2        CPY #$E2
@@ -133,7 +136,7 @@ C7/519C: EB           XBA
 C7/519D: DB           STP
 C7/519E: 01 C4        ORA ($C4,X)
 C7/51A0: 63 DC        ADC $DC,S
-C7/51A2: 10 D6        BPL $517A
+C7/51A2: 10 D6        BPL Local_C7517A
 C7/51A4: 03 C8        ORA $C8,S
 C7/51A6: 0C 0C DD     TSB $DD0C
 C7/51A9: 0A           ASL
@@ -148,6 +151,7 @@ C7/51B9: DC 08 D6     JMP [$D608]
 C7/51BC: 04 E0        TSB $E0
 C7/51BE: 1E E2 00     ASL $00E2,X
 C7/51C1: 7A           PLY
+Local_C751C2:
 C7/51C2: 7A           PLY
 C7/51C3: BD E3 C4     LDA $C4E3,X
 C7/51C6: 5D DC 03     EOR $03DC,X
@@ -163,9 +167,10 @@ C7/51D9: 00 E3        BRK $E3
 C7/51DB: C4 36        CPY $36
 C7/51DD: D7 E2        CMP [$E2],Y
 C7/51DF: 00 D4        BRK $D4
+Local_C751E1:
 C7/51E1: C8           INY
 C7/51E2: 18           CLC
-C7/51E3: 50 DD        BVC $51C2
+C7/51E3: 50 DD        BVC Local_C751C2
 C7/51E5: 05 03        ORA $03
 C7/51E7: E3 D4        SBC $D4,S
 C7/51E9: DC 06 D6     JMP [$D606]
@@ -184,7 +189,7 @@ C7/5207: 24 7F        BIT $7F
 C7/5209: DD 04 00     CMP $0004,X
 C7/520C: E9 FE        SBC #$FE
 C7/520E: C4 00        CPY $00
-C7/5210: D0 CF        BNE $51E1
+C7/5210: D0 CF        BNE Local_C751E1
 C7/5212: 0C 08 BE     TSB $BE08
 C7/5215: EB           XBA
 C7/5216: D2 DC        CMP ($DC)
@@ -199,7 +204,7 @@ C7/5225: C8           INY
 C7/5226: 0D CC 0A     ORA $0ACC
 C7/5229: EB           XBA
 C7/522A: C4 00        CPY $00
-C7/522C: D0 CF        BNE $51FD
+C7/522C: D0 CF        BNE Routine_C751FD
 C7/522E: 18           CLC
 C7/522F: DD 07 09     CMP $0907,X
 C7/5232: C5 10        CMP $10
@@ -207,6 +212,7 @@ C7/5234: 1C AD EB     TRB $EBAD
 C7/5237: D7 D4        CMP [$D4],Y
 C7/5239: D2 CB        CMP ($CB)
 C7/523B: 00 01        BRK $01
+Local_C7523D:
 C7/523D: BF C9 0B 03  LDA $030BC9,X
 C7/5241: 7F 09 C8 03  ADC $03C809,X
 C7/5245: F6 AD        INC $AD,X
@@ -225,9 +231,9 @@ C7/525E: 1E 03 24     ASL $2403,X
 C7/5261: CB           WAI
 C7/5262: 00 05        BRK $05
 C7/5264: BF C8 18 FD  LDA $FD18C8,X
-C7/5268: B0 EB        BCS $5255
+C7/5268: B0 EB        BCS Routine_C75255
 C7/526A: C4 00        CPY $00
-C7/526C: D0 CF        BNE $523D
+C7/526C: D0 CF        BNE Local_C7523D
 C7/526E: 1F E0 1B E2  ORA $E21BE0,X
 C7/5272: 06 0D        ASL $0D
 C7/5274: CF 3E E3 D1  CMP $D1E33E
@@ -249,7 +255,7 @@ C7/5295: 3C 7F DD     BIT $DD7F,X
 C7/5298: 07 E2        ORA [$E2]
 C7/529A: 00 3C        BRK $3C
 C7/529C: C8           INY
-C7/529D: 30 FC        BMI $529B
+C7/529D: 30 FC        BMI Routine_C7529B
 C7/529F: 04 E3        TSB $E3
 C7/52A1: D4 D0        PEI $D0
 C7/52A3: CF 1D DF 04  CMP $04DF1D
@@ -259,7 +265,7 @@ C7/52AB: D2 DC        CMP ($DC)
 C7/52AD: 03 D6        ORA $D6,S
 C7/52AF: 01 E0        ORA ($E0,X)
 C7/52B1: 1C C8 05     TRB $05C8
-C7/52B4: 50 15        BVC $52CB
+C7/52B4: 50 15        BVC Routine_C752CB
 C7/52B6: EB           XBA
 C7/52B7: C4 64        CPY $64
 C7/52B9: D4 DC        PEI $DC
@@ -279,6 +285,7 @@ C7/52D4: CB           WAI
 C7/52D5: 00 03        BRK $03
 C7/52D7: 7F E0 14 C8  ADC $C814E0,X
 C7/52DB: 05 13        ORA $13
+Local_C752DD:
 C7/52DD: 3C EB C4     BIT $C4EB,X
 C7/52E0: 00 D0        BRK $D0
 C7/52E2: CF 14 DD 06  CMP $06DD14
@@ -288,14 +295,15 @@ C7/52EC: 04 C9        TSB $C9
 C7/52EE: 08           PHP
 C7/52EF: 02 BF        COP $BF
 C7/52F1: C8           INY
-C7/52F2: 20 0D DD     JSR $DD0D
+C7/52F2: 20 0D DD     JSR Routine_C7DD0D
 C7/52F5: 07 9E        ORA [$9E]
 C7/52F7: E0 18        CPX #$18
+Local_C752F9:
 C7/52F9: C8           INY
 C7/52FA: 18           CLC
 C7/52FB: F7 B1        SBC [$B1],Y
 C7/52FD: EB           XBA
-C7/52FE: D0 DD        BNE $52DD
+C7/52FE: D0 DD        BNE Local_C752DD
 C7/5300: 0A           ASL
 C7/5301: CF 1E 0A CF  CMP $CF0A1E
 C7/5305: 18           CLC
@@ -310,7 +318,7 @@ C7/5314: E0 12        CPX #$12
 C7/5316: 03 EB        ORA $EB,S
 C7/5318: DB           STP
 C7/5319: 01 C4        ORA ($C4,X)
-C7/531B: 30 DC        BMI $52F9
+C7/531B: 30 DC        BMI Local_C752F9
 C7/531D: 04 D6        TSB $D6
 C7/531F: 03 C8        ORA $C8,S
 C7/5321: 54 FE 73     MVN $FE,$73

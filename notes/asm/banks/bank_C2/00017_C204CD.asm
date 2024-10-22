@@ -4,11 +4,11 @@ C2/04CD: 86 08        STX $08
 C2/04CF: C2 20        REP #$20
 C2/04D1: A2 30 0B     LDX #$0B30
 C2/04D4: A0 04 00     LDY #$0004
-C2/04D7: 80 BB        BRA $0494
+C2/04D7: 80 BB        BRA Routine_C20494
 C2/04D9: 85 01        STA $01
 C2/04DB: 86 0A        STX $0A
 C2/04DD: A2 63 0F     LDX #$0F63
-C2/04E0: 20 8A 04     JSR $048A
+C2/04E0: 20 8A 04     JSR Routine_C2048A
 C2/04E3: C2 20        REP #$20
 C2/04E5: 8A           TXA
 C2/04E6: 38           SEC

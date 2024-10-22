@@ -4,7 +4,7 @@ CE/DA1C: 01 C0        ORA ($C0,X)
 CE/DA1E: 2B           PLD
 CE/DA1F: 8F 00 01 C0  STA $C00100
 CE/DA23: 2B           PLD
-CE/DA24: 90 C0        BCC $D9E6
+CE/DA24: 90 C0        BCC Routine_CED9E6
 CE/DA26: 01 C0        ORA ($C0,X)
 CE/DA28: 2B           PLD
 CE/DA29: 91 80        STA ($80),Y
@@ -15,7 +15,7 @@ CE/DA30: 01 1F        ORA ($1F,X)
 CE/DA32: 85 C0        STA $C0
 CE/DA34: 08           PHP
 CE/DA35: 02 08        COP $08
-CE/DA37: 70 A8        BVS $D9E1
+CE/DA37: 70 A8        BVS Routine_CED9E1
 CE/DA39: 0A           ASL
 CE/DA3A: 09 A8 13     ORA #$13A8
 CE/DA3D: 08           PHP

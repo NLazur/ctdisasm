@@ -6,7 +6,7 @@ FE/CE30: 01 00        ORA ($00,X)
 FE/CE32: 6C 6C 58     JMP ($586C)
 FE/CE35: 02 37        COP $37
 FE/CE37: 6C 6B 10     JMP ($106B)
-FE/CE3A: 50 6C        BVC $CEA8
+FE/CE3A: 50 6C        BVC Routine_FECEA8
 FE/CE3C: 4E 20 4F     LSR $4F20
 FE/CE3F: 51 01        EOR ($01),Y
 FE/CE41: 67 C3        ADC [$C3]
@@ -18,12 +18,12 @@ FE/CE49: 36 36        ROL $36,X
 FE/CE4B: 09 09        ORA #$09
 FE/CE4D: 14 00        TRB $00
 FE/CE4F: 67 30        ADC [$30]
-FE/CE51: 30 68        BMI $CEBB
+FE/CE51: 30 68        BMI Routine_FECEBB
 FE/CE53: 35 36        AND $36,X
 FE/CE55: 09 6E        ORA #$6E
 FE/CE57: 00 69        BRK $69
 FE/CE59: 68           PLA
-FE/CE5A: 30 69        BMI $CEC5
+FE/CE5A: 30 69        BMI Local_FECEC5
 FE/CE5C: 69 35        ADC #$35
 FE/CE5E: 3A           DEC
 FE/CE5F: 6D 00 6E     ADC $6E00
@@ -34,6 +34,7 @@ FE/CE67: 3A           DEC
 FE/CE68: 14 00        TRB $00
 FE/CE6A: 6E 67 30     ROR $3067
 FE/CE6D: 68           PLA
+Local_FECE6E:
 FE/CE6E: 69 59        ADC #$59
 FE/CE70: 39 6E 84     AND $846E,Y
 FE/CE73: 14 56        TRB $56
@@ -61,7 +62,7 @@ FE/CEAD: 01 18        ORA ($18,X)
 FE/CEAF: 0B           PHD
 FE/CEB0: 08           PHP
 FE/CEB1: 61 55        ADC ($55,X)
-FE/CEB3: 10 B9        BPL $CE6E
+FE/CEB3: 10 B9        BPL Local_FECE6E
 FE/CEB5: 07 E2        ORA [$E2]
 FE/CEB7: 61 95        ADC ($95,X)
 FE/CEB9: 2E 07 0A     ROL $0A07
@@ -71,7 +72,9 @@ FE/CEBF: 08           PHP
 FE/CEC0: 00 79        BRK $79
 FE/CEC2: 47 C1        EOR [$C1]
 FE/CEC4: D8           CLD
+Local_FECEC5:
 FE/CEC5: 43 64        EOR $64,S
+Local_FECEC7:
 FE/CEC7: 63 62        ADC $62,S
 FE/CEC9: 61 64        ADC ($64,X)
 FE/CECB: 45 10        EOR $10
@@ -81,15 +84,15 @@ FE/CED3: 00 10        BRK $10
 FE/CED5: 00 18        BRK $18
 FE/CED7: 28           PLP
 FE/CED8: 08           PHP
-FE/CED9: 10 FB        BPL $CED6
+FE/CED9: 10 FB        BPL Routine_FECED6
 FE/CEDB: 07 20        ORA [$20]
-FE/CEDD: 10 EB        BPL $CECA
+FE/CEDD: 10 EB        BPL Routine_FECECA
 FE/CEDF: 07 05        ORA [$05]
 FE/CEE1: 92 27        STA ($27)
 FE/CEE3: FF 5B 08 08  SBC $08085B,X
-FE/CEE7: 10 DE        BPL $CEC7
+FE/CEE7: 10 DE        BPL Local_FECEC7
 FE/CEE9: 1E 31 24     ASL $2431,X
-FE/CEEC: 80 50        BRA $CF3E
+FE/CEEC: 80 50        BRA Routine_FECF3E
 FE/CEEE: 00 89        BRK $89
 FE/CEF0: 08           PHP
 FE/CEF1: 36 5B        ROL $5B,X

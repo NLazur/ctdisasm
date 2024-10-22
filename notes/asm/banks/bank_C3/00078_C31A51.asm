@@ -3,13 +3,13 @@ Routine_C31A51:
 C3/1A51: 37 90        AND [$90],Y
 C3/1A53: 0D 00 AA     ORA $AA00
 C3/1A56: A5 08        LDA $08
-C3/1A58: F0 E2        BEQ $1A3C
-C3/1A5A: 10 28        BPL $1A84
+C3/1A58: F0 E2        BEQ Routine_C31A3C
+C3/1A5A: 10 28        BPL Routine_C31A84
 C3/1A5C: 13 A0        ORA ($A0,S),Y
 C3/1A5E: 1F 38 E9 00  ORA $00E938,X
-C3/1A62: 10 27        BPL $1A8B
+C3/1A62: 10 27        BPL Routine_C31A8B
 C3/1A64: C8           INY
-C3/1A65: B0 F9        BCS $1A60
+C3/1A65: B0 F9        BCS Routine_C31A60
 C3/1A67: 69 10 27     ADC #$2710
 C3/1A6A: 48           PHA
 C3/1A6B: 8C 8E 3A     STY $3A8E

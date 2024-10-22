@@ -2,9 +2,9 @@
 Routine_C387CA:
 C3/87CA: 7F 7F 20 58  ADC $58207F,X
 C3/87CE: A4 7F        LDY $7F
-C3/87D0: 80 20        BRA $87F2
+C3/87D0: 80 20        BRA Local_C387F2
 C3/87D2: 58           CLI
-C3/87D3: F0 E0        BEQ $87B5
+C3/87D3: F0 E0        BEQ Routine_C387B5
 C3/87D5: 44 5A E0     MVP $5A,$E0
 C3/87D8: B2 26        LDA ($26)
 C3/87DA: AF 40 32 D4  LDA $D43240
@@ -14,16 +14,18 @@ C3/87E2: 6A           ROR
 C3/87E3: FE 84 5A     INC $5A84,X
 C3/87E6: FE BC 44     INC $44BC,X
 C3/87E9: 01 50        ORA ($50,X)
-C3/87EB: 10 F0        BPL $87DD
-C3/87ED: D0 F0        BNE $87DF
+C3/87EB: 10 F0        BPL Routine_C387DD
+C3/87ED: D0 F0        BNE Routine_C387DF
 C3/87EF: FD DD E6     SBC $E6DD,X
+Local_C387F2:
 C3/87F2: F7 08        SBC [$08],Y
 C3/87F4: F5 F7        SBC $F7,X
 C3/87F6: C6 01        DEC $01
 C3/87F8: 00 42        BRK $42
 C3/87FA: 42 E0        WDM $E0
-C3/87FC: 10 00        BPL $87FE
-C3/87FE: 90 60        BCC $8860
+C3/87FC: 10 00        BPL Local_C387FE
+Local_C387FE:
+C3/87FE: 90 60        BCC Routine_C38860
 C3/8800: 95 68        STA $68,X
 C3/8802: E6 11        INC $11
 C3/8804: 84 73        STY $73

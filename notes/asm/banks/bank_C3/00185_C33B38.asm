@@ -2,11 +2,11 @@
 Routine_C33B38:
 C3/3B38: C6 2F        DEC $2F
 C3/3B3A: D5 08        CMP $08,X
-C3/3B3C: D0 48        BNE $3B86
+C3/3B3C: D0 48        BNE Routine_C33B86
 C3/3B3E: 63 3E        ADC $3E,S
 C3/3B40: 2E 80 80     ROL $8080
 C3/3B43: 00 20        BRK $20
-C3/3B45: B0 66        BCS $3BAD
+C3/3B45: B0 66        BCS Local_C33BAD
 C3/3B47: A2 00        LDX #$00
 C3/3B49: 48           PHA
 C3/3B4A: 31 1E        AND ($1E),Y
@@ -15,18 +15,18 @@ C3/3B4E: E2 F8        SEP #$F8
 C3/3B50: A2 CF        LDX #$CF
 C3/3B52: E2 D8        SEP #$D8
 C3/3B54: 7A           PLY
-C3/3B55: 10 A2        BPL $3AF9
+C3/3B55: 10 A2        BPL Routine_C33AF9
 C3/3B57: B1 53        LDA ($53),Y
 C3/3B59: 5B           TCD
 C3/3B5A: 5E A1 2E     LSR $2EA1,X
 C3/3B5D: A2 20        LDX #$20
-C3/3B5F: B0 28        BCS $3B89
+C3/3B5F: B0 28        BCS Local_C33B89
 C3/3B61: 54 8F 2E     MVN $8F,$2E
 C3/3B64: 74 AA        STZ $AA,X
 C3/3B66: B5 E4        LDA $E4,X
 C3/3B68: 1E 57 0C     ASL $0C57,X
-C3/3B6B: 30 B7        BMI $3B24
-C3/3B6D: F0 1E        BEQ $3B8D
+C3/3B6B: 30 B7        BMI Routine_C33B24
+C3/3B6D: F0 1E        BEQ Local_C33B8D
 C3/3B6F: 5A           PHY
 C3/3B70: C8           INY
 C3/3B71: 28           PLP
@@ -35,24 +35,27 @@ C3/3B74: 87 A2        STA [$A2]
 C3/3B76: C0 21        CPY #$21
 C3/3B78: FF 1E 60 FF  SBC $FF601E,X
 C3/3B7C: 1E 00 C2     ASL $C200,X
-C3/3B7F: 20 8B A2     JSR $A28B
+C3/3B7F: 20 8B A2     JSR Routine_C3A28B
 C3/3B82: 3D 63 AD     AND $AD63,X
 C3/3B85: 84 00        STY $00
 C3/3B87: 03 29        ORA $29,S
+Local_C33B89:
 C3/3B89: 0F 00 C9 08  ORA $08C900
+Local_C33B8D:
 C3/3B8D: 00 D0        BRK $D0
-C3/3B8F: 80 03        BRA $3B94
+C3/3B8F: 80 03        BRA Routine_C33B94
 C3/3B91: A2 A6        LDX #$A6
 C3/3B93: 63 8E        ADC $8E,S
-C3/3B95: 20 0A EE     JSR $EE0A
+C3/3B95: 20 0A EE     JSR Routine_C3EE0A
 C3/3B98: 28           PLP
 C3/3B99: 29 3C        AND #$3C
 C3/3B9B: 8E 98 65     STX $6598
-C3/3B9E: 5C 28 03 40  JMP $400328
+C3/3B9E: 5C 28 03 40  JMP Routine_400328
 C3/3BA2: 1E 70 8D     ASL $8D70,X
 C3/3BA5: E5 34        SBC $34
 C3/3BA7: 0E 05 2F     ASL $2F05
 C3/3BAA: 0E A9 B8     ASL $B8A9
+Local_C33BAD:
 C3/3BAD: 8A           TXA
 C3/3BAE: 06 35        ASL $35
 C3/3BB0: 05 05        ORA $05
@@ -69,7 +72,7 @@ C3/3BCB: 2E 21 09     ROL $0921
 C3/3BCE: 11 99        ORA ($99),Y
 C3/3BD0: 03 60        ORA $60,S
 C3/3BD2: F3 20        SBC ($20,S),Y
-C3/3BD4: 90 63        BCC $3C39
+C3/3BD4: 90 63        BCC Local_C33C39
 C3/3BD6: FA           PLX
 C3/3BD7: DD 65 EE     CMP $EE65,X
 C3/3BDA: 0D 43 63     ORA $6343
@@ -84,7 +87,7 @@ C3/3BEE: 02 0E        COP $0E
 C3/3BF0: 00 57        BRK $57
 C3/3BF2: 63 FB        ADC $FB,S
 C3/3BF4: 21 31        AND ($31,X)
-C3/3BF6: F0 22        BEQ $3C1A
+C3/3BF6: F0 22        BEQ Local_C33C1A
 C3/3BF8: 64 00        STZ $00
 C3/3BFA: F1 84        SBC ($84),Y
 C3/3BFC: 03 07        ORA $07,S
@@ -100,6 +103,7 @@ C3/3C10: 65 FA        ADC $FA
 C3/3C12: BF 64 01 F7  LDA $F70164,X
 C3/3C16: 07 F1        ORA [$F1]
 C3/3C18: 23 05        AND $05,S
+Local_C33C1A:
 C3/3C1A: 02 F1        COP $F1
 C3/3C1C: 21 05        AND ($05,X)
 C3/3C1E: 00 F0        BRK $F0
@@ -115,13 +119,14 @@ C3/3C31: 08           PHP
 C3/3C32: 4D 3E B1     EOR $B13E
 C3/3C35: 7C 08 8B     JMP ($8B08,X)
 C3/3C38: 38           SEC
+Local_C33C39:
 C3/3C39: F4 69 00     PEA $0069
 C3/3C3C: 54 0E A9     MVN $0E,$A9
 C3/3C3F: 66 20        ROR $20
 C3/3C41: B4 03        LDY $03,X
 C3/3C43: 64 5F        STZ $5F
 C3/3C45: 0E B4 5D     ASL $5DB4
-C3/3C48: 10 45        BPL $3C8F
+C3/3C48: 10 45        BPL Routine_C33C8F
 C3/3C4A: E0 CA        CPX #$CA
 C3/3C4C: 45 20        EOR $20
 C3/3C4E: 04 D2        TSB $D2
@@ -134,11 +139,11 @@ C3/3C58: 00 00        BRK $00
 C3/3C5A: 1E A2 40     ASL $40A2,X
 C3/3C5D: 00 8E        BRK $8E
 C3/3C5F: 01 1E        ORA ($1E,X)
-C3/3C61: 20 20 7E     JSR $7E20
+C3/3C61: 20 20 7E     JSR Routine_C37E20
 C3/3C64: 37 A2        AND [$A2],Y
 C3/3C66: 95 3F        STA $3F,X
 C3/3C68: 18           CLC
 C3/3C69: A2 F5        LDX #$F5
 C3/3C6B: 00 63        BRK $63
-C3/3C6D: 4C B1 39     JMP $39B1
+C3/3C6D: 4C B1 39     JMP Routine_C339B1
 C3/3C70: 60           RTS

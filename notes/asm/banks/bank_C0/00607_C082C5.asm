@@ -12,7 +12,7 @@ C0/82D5: A9 12        LDA #$12
 C0/82D7: 85 5C        STA $5C
 C0/82D9: A5 0E        LDA $0E
 C0/82DB: 85 5A        STA $5A
-C0/82DD: 20 12 76     JSR $7612
+C0/82DD: 20 12 76     JSR Routine_C07612
 C0/82E0: A9 01        LDA #$01
 C0/82E2: 04 79        TSB $79
 C0/82E4: 60           RTS

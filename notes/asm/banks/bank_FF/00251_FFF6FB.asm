@@ -2,28 +2,30 @@
 Routine_FFF6FB:
 FF/F6FB: 1C 50 18     TRB $1850
 FF/F6FE: 14 06        TRB $06
-FF/F700: 70 17        BVS $F719
+FF/F700: 70 17        BVS Local_FFF719
 FF/F702: 48           PHA
 FF/F703: 17 14        ORA [$14],Y
 FF/F705: 06 00        ASL $00
 FF/F707: 00 41        BRK $41
-FF/F709: 10 40        BPL $F74B
-FF/F70B: 10 20        BPL $F72D
-FF/F70D: 10 1F        BPL $F72E
+FF/F709: 10 40        BPL Routine_FFF74B
+FF/F70B: 10 20        BPL Routine_FFF72D
+FF/F70D: 10 1F        BPL Routine_FFF72E
 FF/F70F: 00 20        BRK $20
 FF/F711: 0C 00 0C     TSB $0C00
 FF/F714: 00 08        BRK $08
 FF/F716: 08           PHP
 FF/F717: E2 20        SEP #$20
+Local_FFF719:
 FF/F719: EE 10 0F     INC $0F10
 FF/F71C: EE 11 0F     INC $0F11
 FF/F71F: AD 11 0F     LDA $0F11
 FF/F722: 29 03        AND #$03
-FF/F724: D0 0C        BNE $F732
+FF/F724: D0 0C        BNE Local_FFF732
 FF/F726: EE 0C 0D     INC $0D0C
 FF/F729: CE 0E 0D     DEC $0D0E
 FF/F72C: CE 10 0F     DEC $0F10
 FF/F72F: CE 10 0F     DEC $0F10
+Local_FFF732:
 FF/F732: C2 30        REP #$30
 FF/F734: AD 0C 0D     LDA $0D0C
 FF/F737: 85 00        STA $00
@@ -32,6 +34,7 @@ FF/F73C: 0A           ASL
 FF/F73D: 29 3E 00     AND #$003E
 FF/F740: AA           TAX
 FF/F741: A4 51        LDY $51
+Local_FFF743:
 FF/F743: BF 59 F7 FF  LDA $FFF759,X
 FF/F747: 65 00        ADC $00
 FF/F749: 99 40 92     STA $9240,Y
@@ -42,6 +45,6 @@ FF/F74F: E8           INX
 FF/F750: C8           INY
 FF/F751: C8           INY
 FF/F752: C0 20 00     CPY #$0020
-FF/F755: 90 EC        BCC $F743
+FF/F755: 90 EC        BCC Local_FFF743
 FF/F757: 28           PLP
 FF/F758: 6B           RTL

@@ -151,7 +151,7 @@ FF/4223: 00 E0        BRK $E0
 FF/4225: C0 E0 C0     CPY #$C0E0
 FF/4228: E0 C0 E0     CPX #$E0C0
 FF/422B: C0 C0 A0     CPY #$A0C0
-FF/422E: 80 40        BRA $4270
+FF/422E: 80 40        BRA Local_FF4270
 FF/4230: 00 80        BRK $80
 FF/4232: 00 00        BRK $00
 FF/4234: 00 00        BRK $00
@@ -184,6 +184,7 @@ FF/4268: 00 00        BRK $00
 FF/426A: 00 00        BRK $00
 FF/426C: 00 00        BRK $00
 FF/426E: 00 00        BRK $00
+Local_FF4270:
 FF/4270: 00 00        BRK $00
 FF/4272: 00 00        BRK $00
 FF/4274: 00 00        BRK $00
@@ -266,8 +267,10 @@ FF/430C: 00 00        BRK $00
 FF/430E: 00 00        BRK $00
 FF/4310: 00 00        BRK $00
 FF/4312: 00 00        BRK $00
-FF/4314: 80 00        BRA $4316
-FF/4316: 80 00        BRA $4318
+FF/4314: 80 00        BRA Local_FF4316
+Local_FF4316:
+FF/4316: 80 00        BRA Local_FF4318
+Local_FF4318:
 FF/4318: 00 80        BRK $80
 FF/431A: 00 00        BRK $00
 FF/431C: 00 00        BRK $00
@@ -295,6 +298,7 @@ FF/4346: 00 00        BRK $00
 FF/4348: 00 00        BRK $00
 FF/434A: 00 00        BRK $00
 FF/434C: 00 00        BRK $00
+Local_FF434E:
 FF/434E: 00 00        BRK $00
 FF/4350: 00 00        BRK $00
 FF/4352: 00 00        BRK $00
@@ -327,6 +331,6 @@ FF/4384: 00 00        BRK $00
 FF/4386: 00 00        BRK $00
 FF/4388: 00 00        BRK $00
 FF/438A: 00 80        BRK $80
-FF/438C: 80 C0        BRA $434E
+FF/438C: 80 C0        BRA Local_FF434E
 FF/438E: C0 A0 E0     CPY #$E0A0
 FF/4391: 40           RTI

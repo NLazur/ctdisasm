@@ -17,6 +17,6 @@ FE/1B1C: 41 47        EOR ($47,X)
 FE/1B1E: 42 4C        WDM $4C
 FE/1B20: E5 03        SBC $03
 FE/1B22: 4B           PHK
-FE/1B23: 10 43        BPL $1B68
+FE/1B23: 10 43        BPL Routine_FE1B68
 FE/1B25: 0F 19 13 51  ORA $511319
 FE/1B29: 40           RTI

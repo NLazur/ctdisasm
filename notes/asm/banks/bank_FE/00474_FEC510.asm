@@ -19,7 +19,7 @@ FE/C530: 38           SEC
 FE/C531: 11 C0        ORA ($C0),Y
 FE/C533: 18           CLC
 FE/C534: 52 08        EOR ($08)
-FE/C536: 30 14        BMI $C54C
+FE/C536: 30 14        BMI Routine_FEC54C
 FE/C538: 53 09        EOR ($09,S),Y
 FE/C53A: 54 01 54     MVN $01,$54
 FE/C53D: 98           TYA
@@ -35,7 +35,7 @@ FE/C54D: 08           PHP
 FE/C54E: 00 74        BRK $74
 FE/C550: 13 F7        ORA ($F7,S),Y
 FE/C552: B4 07        LDY $07,X
-FE/C554: 50 21        BVC $C577
+FE/C554: 50 21        BVC Routine_FEC577
 FE/C556: 47 11        EOR [$11]
 FE/C558: 53 F6        EOR ($F6,S),Y
 FE/C55A: 18           CLC
@@ -58,7 +58,7 @@ FE/C57D: 21 FF        AND ($FF,X)
 FE/C57F: 7F 0D 0A 07  ADC $070A0D,X
 FE/C583: 15 10        ORA $10,X
 FE/C585: 08           PHP
-FE/C586: 20 10 20     JSR $2010
+FE/C586: 20 10 20     JSR Routine_FE2010
 FE/C589: 93 0D        STA ($0D,S),Y
 FE/C58B: C5 11        CMP $11
 FE/C58D: 62 30 87     PER $FE4CC0
@@ -92,7 +92,7 @@ FE/C5C7: 5A           PHY
 FE/C5C8: B9 00 9F     LDA $9F00,Y
 FE/C5CB: 0F 59 5A 7E  ORA $7E5A59
 FE/C5CF: 54 06 04     MVN $06,$04
-FE/C5D2: 50 05        BVC $C5D9
+FE/C5D2: 50 05        BVC Routine_FEC5D9
 FE/C5D4: DC 2D 15     JMP [$152D]
 FE/C5D7: 0C E4 03     TSB $03E4
 FE/C5DA: C7 13        CMP [$13]
@@ -105,7 +105,7 @@ FE/C5E5: 57 CA        EOR [$CA],Y
 FE/C5E7: 0F 57 08 0E  ORA $0E0857
 FE/C5EB: F7 D2        SBC [$D2],Y
 FE/C5ED: 1F 08 10 10  ORA $101008,X
-FE/C5F1: 30 56        BMI $C649
+FE/C5F1: 30 56        BMI Routine_FEC649
 FE/C5F3: D8           CLD
 FE/C5F4: 04 46        TSB $46
 FE/C5F6: 04 F5        TSB $F5
@@ -115,29 +115,30 @@ FE/C5FD: 1C 5A 5A     TRB $5A5A
 FE/C600: 07 8B        ORA [$8B]
 FE/C602: 01 46        ORA ($46,X)
 FE/C604: 1C 91 19     TRB $1991
-FE/C607: F0 2B        BEQ $C634
+FE/C607: F0 2B        BEQ Local_FEC634
 FE/C609: A3 62        LDA $62,S
 FE/C60B: 01 AD        ORA ($AD,X)
 FE/C60D: 01 08        ORA ($08,X)
 FE/C60F: 5E 57 09     LSR $0957,X
-FE/C612: 30 5E        BMI $C672
+FE/C612: 30 5E        BMI Routine_FEC672
 FE/C614: 89 0C        BIT #$0C
 FE/C616: 96 5F        STX $5F,Y
 FE/C618: 88           DEY
 FE/C619: 0C E4 14     TSB $14E4
 FE/C61C: 5A           PHY
-FE/C61D: 90 0C        BCC $C62B
+FE/C61D: 90 0C        BCC Routine_FEC62B
 FE/C61F: 59 5F F9     EOR $F95F,Y
 FE/C622: 09 90        ORA #$90
 FE/C624: 5A           PHY
 FE/C625: 0A           ASL
 FE/C626: 08           PHP
 FE/C627: 56 85        LSR $85,X
-FE/C629: 20 0A 08     JSR $080A
+FE/C629: 20 0A 08     JSR Routine_FE080A
 FE/C62C: 9E 1B 25     STZ $251B,X
 FE/C62F: E7 07        SBC [$07]
 FE/C631: 47 CE        EOR [$CE]
 FE/C633: 2B           PLD
+Local_FEC634:
 FE/C634: 47 47        EOR [$47]
 FE/C636: F5 07        SBC $07,X
 FE/C638: 44 42 60     MVP $42,$60
@@ -149,40 +150,42 @@ FE/C642: 0F 00 49 20  ORA $204900
 FE/C646: 42 45        WDM $45
 FE/C648: 45 45        EOR $45
 FE/C64A: 41 08        EOR ($08,X)
-FE/C64C: 10 49        BPL $C697
+FE/C64C: 10 49        BPL Routine_FEC697
 FE/C64E: 47 BF        EOR [$BF]
 FE/C650: 02 20        COP $20
 FE/C652: 1B           TCS
 FE/C653: 00 1F        BRK $1F
 FE/C655: 00 1A        BRK $1A
-FE/C657: 10 02        BPL $C65B
-FE/C659: 30 0A        BMI $C665
-FE/C65B: 20 43 11     JSR $1143
-FE/C65E: 10 57        BPL $C6B7
+FE/C657: 10 02        BPL Local_FEC65B
+FE/C659: 30 0A        BMI Local_FEC665
+Local_FEC65B:
+FE/C65B: 20 43 11     JSR Routine_FE1143
+FE/C65E: 10 57        BPL Routine_FEC6B7
 FE/C660: 17 A0        ORA [$A0],Y
 FE/C662: 1C 30 2E     TRB $2E30
-FE/C665: 20 46 4F     JSR $4F46
+Local_FEC665:
+FE/C665: 20 46 4F     JSR Routine_FE4F46
 FE/C668: 00 0A        BRK $0A
 FE/C66A: 32 50        AND ($50)
 FE/C66C: 0A           ASL
 FE/C66D: 39 3C 40     AND $403C,Y
 FE/C670: 08           PHP
 FE/C671: 47 01        EOR [$01]
-FE/C673: 10 19        BPL $C68E
-FE/C675: 10 37        BPL $C6AE
+FE/C673: 10 19        BPL Routine_FEC68E
+FE/C675: 10 37        BPL Routine_FEC6AE
 FE/C677: 28           PLP
 FE/C678: 44 44 D7     MVP $44,$D7
 FE/C67B: 73 10        ADC ($10,S),Y
 FE/C67D: 29 0C        AND #$0C
 FE/C67F: 08           PHP
-FE/C680: 10 47        BPL $C6C9
+FE/C680: 10 47        BPL Routine_FEC6C9
 FE/C682: 0F 00 41 5B  ORA $5B4100
-FE/C686: 20 41 0C     JSR $0C41
+FE/C686: 20 41 0C     JSR Routine_FE0C41
 FE/C689: A1 6F        LDA ($6F,X)
 FE/C68B: 00 45        BRK $45
 FE/C68D: 45 47        EOR $47
 FE/C68F: 44 7F 00     MVP $7F,$00
 FE/C692: 45 7A        EOR $7A
-FE/C694: 10 26        BPL $C6BC
+FE/C694: 10 26        BPL Routine_FEC6BC
 FE/C696: 42 58        WDM $58
 FE/C698: 60           RTS

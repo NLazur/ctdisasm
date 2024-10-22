@@ -22,13 +22,13 @@ C2/3F0A: AD 85 02     LDA $0285
 C2/3F0D: 85 0A        STA $0A
 C2/3F0F: A5 0A        LDA $0A
 C2/3F11: C5 00        CMP $00
-C2/3F13: 90 10        BCC $3F25
+C2/3F13: 90 10        BCC Routine_C23F25
 C2/3F15: C5 02        CMP $02
-C2/3F17: B0 0C        BCS $3F25
+C2/3F17: B0 0C        BCS Routine_C23F25
 C2/3F19: A5 08        LDA $08
 C2/3F1B: C5 04        CMP $04
-C2/3F1D: 90 06        BCC $3F25
+C2/3F1D: 90 06        BCC Routine_C23F25
 C2/3F1F: C5 06        CMP $06
-C2/3F21: B0 02        BCS $3F25
+C2/3F21: B0 02        BCS Routine_C23F25
 C2/3F23: 38           SEC
 C2/3F24: 60           RTS

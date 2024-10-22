@@ -1,6 +1,6 @@
 ; Bank: FD | Start Address: 599F
 Routine_FD599F:
-FD/599F: 30 42        BMI $59E3
+FD/599F: 30 42        BMI Routine_FD59E3
 FD/59A1: 00 40        BRK $40
 FD/59A3: F8           SED
 FD/59A4: 1A           INC
@@ -11,7 +11,7 @@ FD/59AC: 09 09        ORA #$09
 FD/59AE: 02 0A        COP $0A
 FD/59B0: 74 0B        STZ $0B,X
 FD/59B2: 07 40        ORA [$40]
-FD/59B4: 20 06 94     JSR $9406
+FD/59B4: 20 06 94     JSR Routine_FD9406
 FD/59B7: 00 40        BRK $40
 FD/59B9: F8           SED
 FD/59BA: 21 38        AND ($38,X)

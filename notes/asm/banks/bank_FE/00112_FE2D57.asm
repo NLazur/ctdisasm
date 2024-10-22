@@ -8,7 +8,7 @@ FE/2D5E: 67 01        ADC [$01]
 FE/2D60: 3A           DEC
 FE/2D61: 57 75        EOR [$75],Y
 FE/2D63: 00 5B        BRK $5B
-FE/2D65: 90 20        BCC $2D87
+FE/2D65: 90 20        BCC Routine_FE2D87
 FE/2D67: 76 19        ROR $19,X
 FE/2D69: 41 90        EOR ($90,X)
 FE/2D6B: 5E 6E 09     LSR $096E,X
@@ -20,13 +20,13 @@ FE/2D78: C0 15 23     CPY #$2315
 FE/2D7B: 23 24        AND $24,S
 FE/2D7D: 25 26        AND $26
 FE/2D7F: A6 99        LDX $99
-FE/2D81: 82 00 15     BRL $FE4284
+FE/2D81: 82 00 15     BRL Routine_FE4284
 FE/2D84: 65 11        ADC $11
 FE/2D86: 5D A4 39     EOR $39A4,X
 FE/2D89: 5E F3 38     LSR $38F3,X
 FE/2D8C: 47 57        EOR [$57]
 FE/2D8E: 21 00        AND ($00,X)
-FE/2D90: 22 23 24 22  JSR $222423
+FE/2D90: 22 23 24 22  JSR Routine_222423
 FE/2D94: 33 33        AND ($33,S),Y
 FE/2D96: 34 35        BIT $35,X
 FE/2D98: BC 36 37     LDY $3736,X
@@ -38,7 +38,7 @@ FE/2DA4: D4 08        PEI $08
 FE/2DA6: 3B           TSC
 FE/2DA7: A1 09        LDA ($09,X)
 FE/2DA9: A4 01        LDY $01
-FE/2DAB: 4C A6 01     JMP $01A6
+FE/2DAB: 4C A6 01     JMP Routine_FE01A6
 FE/2DAE: 32 29        AND ($29)
 FE/2DB0: C4 01        CPY $01
 FE/2DB2: 01 02        ORA ($02,X)
@@ -59,7 +59,7 @@ FE/2DCE: 96 00        STX $00,Y
 FE/2DD0: D4 08        PEI $08
 FE/2DD2: A1 09        LDA ($09,X)
 FE/2DD4: A4 01        LDY $01
-FE/2DD6: 5C 0B A6 01  JMP $01A60B
+FE/2DD6: 5C 0B A6 01  JMP Routine_01A60B
 FE/2DDA: 32 31        AND ($31)
 FE/2DDC: 2F BC 18 1A  AND $1A18BC
 FE/2DE0: 1B           TCS
@@ -94,6 +94,6 @@ FE/2E1D: 21 11        AND ($11,X)
 FE/2E1F: 5D 09 F8     EOR $F809,X
 FE/2E22: 01 96        ORA ($96,X)
 FE/2E24: 02 0F        COP $0F
-FE/2E26: 20 D4 12     JSR $12D4
+FE/2E26: 20 D4 12     JSR Routine_FE12D4
 FE/2E29: 31 32        AND ($32),Y
 FE/2E2B: 40           RTI

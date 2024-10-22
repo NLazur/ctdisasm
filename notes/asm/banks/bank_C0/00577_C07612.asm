@@ -2,18 +2,20 @@
 Routine_C07612:
 C0/7612: A5 5A        LDA $5A
 C0/7614: 89 01        BIT #$01
-C0/7616: F0 03        BEQ $761B
-C0/7618: 82 E5 00     BRL $C07700
+C0/7616: F0 03        BEQ Local_C0761B
+C0/7618: 82 E5 00     BRL Routine_C07700
+Local_C0761B:
 C0/761B: 4A           LSR
 C0/761C: 25 1F        AND $1F
 C0/761E: 85 54        STA $54
 C0/7620: EB           XBA
 C0/7621: A5 58        LDA $58
 C0/7623: 89 01        BIT #$01
-C0/7625: D0 45        BNE $766C
+C0/7625: D0 45        BNE Routine_C0766C
 C0/7627: 4A           LSR
 C0/7628: 25 1E        AND $1E
 C0/762A: 85 52        STA $52
+Local_C0762C:
 C0/762C: AA           TAX
 C0/762D: BF C0 30 7E  LDA $7E30C0,X
 C0/7631: 29 01        AND #$01
@@ -38,9 +40,10 @@ C0/765B: 1A           INC
 C0/765C: 25 1E        AND $1E
 C0/765E: 85 52        STA $52
 C0/7660: C6 5C        DEC $5C
-C0/7662: F0 07        BEQ $766B
+C0/7662: F0 07        BEQ Local_C0766B
 C0/7664: A5 54        LDA $54
 C0/7666: EB           XBA
 C0/7667: A5 52        LDA $52
-C0/7669: 80 C1        BRA $762C
+C0/7669: 80 C1        BRA Local_C0762C
+Local_C0766B:
 C0/766B: 60           RTS

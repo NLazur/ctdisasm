@@ -1,6 +1,6 @@
 ; Bank: CD | Start Address: C8F1
 Routine_CDC8F1:
-CD/C8F1: 70 09        BVS $C8FC
+CD/C8F1: 70 09        BVS Routine_CDC8FC
 CD/C8F3: A8           TAY
 CD/C8F4: 0A           ASL
 CD/C8F5: 0A           ASL
@@ -9,7 +9,7 @@ CD/C8F7: 0A           ASL
 CD/C8F8: 0B           PHD
 CD/C8F9: A8           TAY
 CD/C8FA: 0A           ASL
-CD/C8FB: 20 0A 03     JSR $030A
+CD/C8FB: 20 0A 03     JSR Routine_CD030A
 CD/C8FE: 01 00        ORA ($00,X)
 CD/C900: 1B           TCS
 CD/C901: 09 72 0D     ORA #$0D72
@@ -19,7 +19,7 @@ CD/C908: 0D 76 00     ORA $0076
 CD/C90B: 03 77        ORA $77,S
 CD/C90D: C0 A8 02     CPY #$02A8
 CD/C910: 77 60        ADC [$60],Y
-CD/C912: 70 09        BVS $C91D
+CD/C912: 70 09        BVS Routine_CDC91D
 CD/C914: A8           TAY
 CD/C915: 0A           ASL
 CD/C916: 0A           ASL
@@ -28,10 +28,10 @@ CD/C918: 0A           ASL
 CD/C919: 0B           PHD
 CD/C91A: A8           TAY
 CD/C91B: 0A           ASL
-CD/C91C: 20 0A 03     JSR $030A
+CD/C91C: 20 0A 03     JSR Routine_CD030A
 CD/C91F: 01 00        ORA ($00,X)
 CD/C921: 98           TYA
-CD/C922: F0 80        BEQ $C8A4
+CD/C922: F0 80        BEQ Routine_CDC8A4
 CD/C924: 00 35        BRK $35
 CD/C926: C9 59 C9     CMP #$C959
 CD/C929: 6E C9 82     ROR $82C9
@@ -45,10 +45,10 @@ CD/C93B: 24 01        BIT $01
 CD/C93D: 03 0A        ORA $0A,S
 CD/C93F: 36 78        ROL $78,X
 CD/C941: DC 34 1B     JMP [$1B34]
-CD/C944: 80 45        BRA $C98B
+CD/C944: 80 45        BRA Routine_CDC98B
 CD/C946: 00 00        BRK $00
 CD/C948: E7 84        SBC [$84]
-CD/C94A: 22 1B 00 80  JSR $80001B
+CD/C94A: 22 1B 00 80  JSR Routine_80001B
 CD/C94E: 51 24        EOR ($24),Y
 CD/C950: 04 06        TSB $06
 CD/C952: 03 20        ORA $20,S

@@ -124,7 +124,7 @@ CC/2917: 13 2A        ORA ($2A,S),Y
 CC/2919: 16 2E        ASL $2E,X
 CC/291B: 16 30        ASL $30,X
 CC/291D: 1B           TCS
-CC/291E: 22 1C 23 1D  JSR $1D231C
+CC/291E: 22 1C 23 1D  JSR Routine_1D231C
 CC/2922: 27 1C        AND [$1C]
 CC/2924: 2D 1C 2A     AND $2A1C
 CC/2927: 1E 2C 21     ASL $212C,X
@@ -136,7 +136,7 @@ CC/2933: 28           PLP
 CC/2934: 18           CLC
 CC/2935: 05 0E        ORA $0E
 CC/2937: 16 01        ASL $01,X
-CC/2939: 10 1B        BPL $2956
+CC/2939: 10 1B        BPL Local_CC2956
 CC/293B: 04 0E        TSB $0E
 CC/293D: 25 05        AND $05
 CC/293F: 0E 30 04     ASL $0430
@@ -145,17 +145,19 @@ CC/2944: 05 16        ORA $16
 CC/2946: 26 05        ROL $05
 CC/2948: 16 30        ASL $30,X
 CC/294A: 01 1C        ORA ($1C,X)
-CC/294C: 22 01 1B 2E  JSR $2E1B01
+CC/294C: 22 01 1B 2E  JSR Routine_2E1B01
 CC/2950: 01 22        ORA ($22,X)
-CC/2952: 30 0E        BMI $2962
+CC/2952: 30 0E        BMI Local_CC2962
 CC/2954: 16 38        ASL $38,X
+Local_CC2956:
 CC/2956: 18           CLC
 CC/2957: 1B           TCS
 CC/2958: 34 1C        BIT $1C,X
 CC/295A: 25 2E        AND $2E
 CC/295C: 0A           ASL
 CC/295D: 12 2E        ORA ($2E)
-CC/295F: 10 1D        BPL $297E
+CC/295F: 10 1D        BPL Routine_CC297E
 CC/2961: 28           PLP
+Local_CC2962:
 CC/2962: 00 80        BRK $80
 CC/2964: 40           RTI

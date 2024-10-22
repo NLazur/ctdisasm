@@ -7,7 +7,7 @@ D0/74F6: 00 00        BRK $00
 D0/74F8: 7A           PLY
 D0/74F9: 78           SEI
 D0/74FA: 00 00        BRK $00
-D0/74FC: 20 00 00     JSR $0000
+D0/74FC: 20 00 00     JSR Routine_D00000
 D0/74FF: 00 01        BRK $01
 D0/7501: 03 00        ORA $00,S
 D0/7503: 07 01        ORA [$01]

@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 069E
 Routine_D0069E:
-D0/069E: 80 A0        BRA $0640
+D0/069E: 80 A0        BRA Routine_D00640
 D0/06A0: 00 00        BRK $00
 D0/06A2: 00 03        BRK $03
 D0/06A4: 03 1F        ORA $1F,S

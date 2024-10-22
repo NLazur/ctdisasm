@@ -1,16 +1,18 @@
 ; Bank: FD | Start Address: 92E0
 Routine_FD92E0:
-FD/92E0: D0 A0        BNE $9282
+FD/92E0: D0 A0        BNE Routine_FD9282
 FD/92E2: 32 32        AND ($32)
 FD/92E4: FF FF 04 08  SBC $0804FF,X
-FD/92E8: 30 00        BMI $92EA
-FD/92EA: 30 AD        BMI $9299
+FD/92E8: 30 00        BMI Local_FD92EA
+Local_FD92EA:
+FD/92EA: 30 AD        BMI Routine_FD9299
 FD/92EC: 02 F1        COP $F1
-FD/92EE: 50 00        BVC $92F0
-FD/92F0: F0 F1        BEQ $92E3
+FD/92EE: 50 00        BVC Local_FD92F0
+Local_FD92F0:
+FD/92F0: F0 F1        BEQ Routine_FD92E3
 FD/92F2: 00 AD        BRK $AD
 FD/92F4: 3C FE B0     BIT $B0FE,X
 FD/92F7: A0 80 30     LDY #$3080
-FD/92FA: 30 84        BMI $9280
+FD/92FA: 30 84        BMI Routine_FD9280
 FD/92FC: A0 80 1B     LDY #$1B80
 FD/92FF: 40           RTI

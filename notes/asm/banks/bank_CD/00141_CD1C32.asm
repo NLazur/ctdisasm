@@ -3,7 +3,7 @@ Routine_CD1C32:
 CD/1C32: A7 40        LDA [$40]
 CD/1C34: 0A           ASL
 CD/1C35: A8           TAY
-CD/1C36: 20 36 24     JSR $2436
+CD/1C36: 20 36 24     JSR Routine_CD2436
 CD/1C39: A6 43        LDX $43
 CD/1C3B: C2 20        REP #$20
 CD/1C3D: B9 A0 5D     LDA $5DA0,Y

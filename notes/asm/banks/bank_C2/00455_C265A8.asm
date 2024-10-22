@@ -1,10 +1,10 @@
 ; Bank: C2 | Start Address: 65A8
 Routine_C265A8:
 C2/65A8: C9 40        CMP #$40
-C2/65AA: 90 FB        BCC $65A7
+C2/65AA: 90 FB        BCC Routine_C265A7
 C2/65AC: C9 4F        CMP #$4F
-C2/65AE: B0 F7        BCS $65A7
-C2/65B0: 80 F4        BRA $65A6
+C2/65AE: B0 F7        BCS Routine_C265A7
+C2/65B0: 80 F4        BRA Routine_C265A6
 C2/65B2: C2 20        REP #$20
 C2/65B4: 8B           PHB
 C2/65B5: 7B           TDC
@@ -36,8 +36,10 @@ C2/65F2: 65 10        ADC $10
 C2/65F4: 85 10        STA $10
 C2/65F6: E2 20        SEP #$20
 C2/65F8: A9 01        LDA #$01
+Local_C265FA:
 C2/65FA: 85 08        STA $08
 C2/65FC: 64 0A        STZ $0A
+Local_C265FE:
 C2/65FE: A0 00 00     LDY #$0000
 C2/6601: A5 08        LDA $08
 C2/6603: 91 10        STA ($10),Y
@@ -50,11 +52,11 @@ C2/660F: A5 10        LDA $10
 C2/6611: 18           CLC
 C2/6612: 69 20        ADC #$20
 C2/6614: 00 85        BRK $85
-C2/6616: 10 E2        BPL $65FA
-C2/6618: 20 E6 0A     JSR $0AE6
+C2/6616: 10 E2        BPL Local_C265FA
+C2/6618: 20 E6 0A     JSR Routine_C20AE6
 C2/661B: A5 0A        LDA $0A
 C2/661D: C9 10        CMP #$10
-C2/661F: D0 DD        BNE $65FE
+C2/661F: D0 DD        BNE Local_C265FE
 C2/6621: AB           PLB
 C2/6622: A9 20        LDA #$20
 C2/6624: 85 00        STA $00
@@ -62,6 +64,7 @@ C2/6626: 64 0C        STZ $0C
 C2/6628: 64 0D        STZ $0D
 C2/662A: A2 00 F0     LDX #$F000
 C2/662D: 86 0A        STX $0A
+Local_C2662F:
 C2/662F: A6 0C        LDX $0C
 C2/6631: 8E 16 21     STX $2116
 C2/6634: 7B           TDC
@@ -87,5 +90,5 @@ C2/6660: 69 20 00     ADC #$0020
 C2/6663: 85 0A        STA $0A
 C2/6665: E2 20        SEP #$20
 C2/6667: C6 00        DEC $00
-C2/6669: D0 C4        BNE $662F
+C2/6669: D0 C4        BNE Local_C2662F
 C2/666B: 60           RTS

@@ -1,6 +1,6 @@
 ; Bank: D0 | Start Address: 4C54
 Routine_D04C54:
-D0/4C54: 80 80        BRA $4BD6
+D0/4C54: 80 80        BRA Routine_D04BD6
 D0/4C56: 00 00        BRK $00
 D0/4C58: 00 00        BRK $00
 D0/4C5A: 00 00        BRK $00
@@ -18,14 +18,14 @@ D0/4C70: 02 01        COP $01
 D0/4C72: 13 14        ORA ($14,S),Y
 D0/4C74: 02 00        COP $00
 D0/4C76: 0B           PHD
-D0/4C77: 10 56        BPL $4CCF
-D0/4C79: 50 0D        BVC $4C88
-D0/4C7B: 20 7F 00     JSR $007F
+D0/4C77: 10 56        BPL Local_D04CCF
+D0/4C79: 50 0D        BVC Routine_D04C88
+D0/4C7B: 20 7F 00     JSR Routine_D0007F
 D0/4C7E: D7 00        CMP [$00],Y
 D0/4C80: 6E 00 78     ROR $7800
 D0/4C83: 00 D0        BRK $D0
 D0/4C85: 00 30        BRK $30
-D0/4C87: 80 77        BRA $4D00
+D0/4C87: 80 77        BRA Routine_D04D00
 D0/4C89: 00 DF        BRK $DF
 D0/4C8B: 00 F7        BRK $F7
 D0/4C8D: 00 D8        BRK $D8
@@ -43,7 +43,7 @@ D0/4CA3: 00 00        BRK $00
 D0/4CA5: 00 00        BRK $00
 D0/4CA7: 00 E8        BRK $E8
 D0/4CA9: 18           CLC
-D0/4CAA: F0 04        BEQ $4CB0
+D0/4CAA: F0 04        BEQ Routine_D04CB0
 D0/4CAC: FC 00 1E     JSR ($1E00,X)
 D0/4CAF: C0 0E 10     CPY #$100E
 D0/4CB2: 0E 01 06     ASL $0601
@@ -56,11 +56,16 @@ D0/4CC1: 11 0E        ORA ($0E),Y
 D0/4CC3: 11 0C        ORA ($0C),Y
 D0/4CC5: 13 0C        ORA ($0C,S),Y
 D0/4CC7: 12 00        ORA ($00)
-D0/4CC9: 80 00        BRA $4CCB
-D0/4CCB: 80 00        BRA $4CCD
-D0/4CCD: 80 00        BRA $4CCF
-D0/4CCF: 80 00        BRA $4CD1
-D0/4CD1: 80 00        BRA $4CD3
+D0/4CC9: 80 00        BRA Local_D04CCB
+Local_D04CCB:
+D0/4CCB: 80 00        BRA Local_D04CCD
+Local_D04CCD:
+D0/4CCD: 80 00        BRA Local_D04CCF
+Local_D04CCF:
+D0/4CCF: 80 00        BRA Local_D04CD1
+Local_D04CD1:
+D0/4CD1: 80 00        BRA Local_D04CD3
+Local_D04CD3:
 D0/4CD3: 00 00        BRK $00
 D0/4CD5: 00 00        BRK $00
 D0/4CD7: 00 00        BRK $00

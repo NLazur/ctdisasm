@@ -158,6 +158,7 @@ FD/67C7: 00 00        BRK $00
 FD/67C9: 00 00        BRK $00
 FD/67CB: 00 00        BRK $00
 FD/67CD: 00 00        BRK $00
+Local_FD67CF:
 FD/67CF: 00 00        BRK $00
 FD/67D1: 00 00        BRK $00
 FD/67D3: 00 00        BRK $00
@@ -190,14 +191,15 @@ FD/6808: 0F 00 6A 95  ORA $956A00
 FD/680C: 00 00        BRK $00
 FD/680E: 54 BD BD     MVN $BD,$BD
 FD/6811: 18           CLC
-FD/6812: 80 FF        BRA $6813
-FD/6814: 10 00        BPL $6816
+FD/6812: 80 FF        BRA Routine_FD6813
+FD/6814: 10 00        BPL Local_FD6816
+Local_FD6816:
 FD/6816: 42 28        WDM $28
-FD/6818: 70 B5        BVS $67CF
+FD/6818: 70 B5        BVS Local_FD67CF
 FD/681A: A0 B5 00     LDY #$00B5
 FD/681D: 00 9A        BRK $9A
 FD/681F: 65 10        ADC $10
-FD/6821: 80 4A        BRA $686D
+FD/6821: 80 4A        BRA Routine_FD686D
 FD/6823: 24 30        BIT $30
 FD/6825: 01 4A        ORA ($4A,X)
 FD/6827: 60           RTS

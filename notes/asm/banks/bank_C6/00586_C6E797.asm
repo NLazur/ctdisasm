@@ -31,9 +31,9 @@ C6/E7C7: E7 DA        SBC [$DA]
 C6/E7C9: E7 A2        SBC [$A2]
 C6/E7CB: 64 7F        STZ $7F
 C6/E7CD: A0 41 72     LDY #$7241
-C6/E7D0: 80 18        BRA $E7EA
+C6/E7D0: 80 18        BRA Routine_C6E7EA
 C6/E7D2: A2 76 7F     LDX #$7F76
 C6/E7D5: A0 60 6E     LDY #$6E60
-C6/E7D8: 80 10        BRA $E7EA
+C6/E7D8: 80 10        BRA Routine_C6E7EA
 C6/E7DA: 18           CLC
 C6/E7DB: 6B           RTL

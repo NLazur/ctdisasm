@@ -1,6 +1,6 @@
 ; Bank: C3 | Start Address: 9246
 Routine_C39246:
-C3/9246: 90 01        BCC $9249
+C3/9246: 90 01        BCC Routine_C39249
 C3/9248: 04 04        TSB $04
 C3/924A: 01 2A        ORA ($2A,X)
 C3/924C: 26 3F        ROL $3F
@@ -16,40 +16,43 @@ C3/925C: A4 1B        LDY $1B
 C3/925E: 00 07        BRK $07
 C3/9260: B8           CLV
 C3/9261: 05 20        ORA $20
-C3/9263: 30 19        BMI $927E
+C3/9263: 30 19        BMI Local_C3927E
 C3/9265: 14 01        TRB $01
 C3/9267: 8D 55 10     STA $1055
-C3/926A: 30 09        BMI $9275
+C3/926A: 30 09        BMI Routine_C39275
 C3/926C: 36 92        ROL $92,X
-C3/926E: 10 36        BPL $92A6
+C3/926E: 10 36        BPL Local_C392A6
 C3/9270: AC AD 10     LDY $10AD
 C3/9273: 3D F0 3D     AND $3DF0,X
-C3/9276: 70 01        BVS $9279
+C3/9276: 70 01        BVS Routine_C39279
 C3/9278: 3D 10 01     AND $0110,X
 C3/927B: 3D F0 D3     AND $D3F0,X
+Local_C3927E:
 C3/927E: 3D F0 3D     AND $3DF0,X
-C3/9281: F0 1B        BEQ $929E
+C3/9281: F0 1B        BEQ Routine_C3929E
 C3/9283: 02 7A        COP $7A
-C3/9285: 10 02        BPL $9289
+C3/9285: 10 02        BPL Routine_C39289
 C3/9287: 3D F0 3D     AND $3DF0,X
-C3/928A: F0 E9        BEQ $9275
+C3/928A: F0 E9        BEQ Routine_C39275
 C3/928C: 3D F0 1B     AND $1BF0,X
 C3/928F: 03 B7        ORA $B7,S
-C3/9291: 10 03        BPL $9296
+C3/9291: 10 03        BPL Local_C39296
 C3/9293: 3D F0 3D     AND $3DF0,X
-C3/9296: F0 3D        BEQ $92D5
-C3/9298: F0 74        BEQ $930E
+Local_C39296:
+C3/9296: F0 3D        BEQ Routine_C392D5
+C3/9298: F0 74        BEQ Routine_C3930E
 C3/929A: 1B           TCS
 C3/929B: 04 F4        TSB $F4
-C3/929D: 10 04        BPL $92A3
+C3/929D: 10 04        BPL Routine_C392A3
 C3/929F: 3D F0 3D     AND $3DF0,X
-C3/92A2: F0 3D        BEQ $92E1
-C3/92A4: F0 1B        BEQ $92C1
+C3/92A2: F0 3D        BEQ Routine_C392E1
+C3/92A4: F0 1B        BEQ Local_C392C1
+Local_C392A6:
 C3/92A6: 1A           INC
 C3/92A7: 05 31        ORA $31
 C3/92A9: 11 05        ORA ($05),Y
 C3/92AB: 3D F0 3D     AND $3DF0,X
-C3/92AE: F0 90        BEQ $9240
+C3/92AE: F0 90        BEQ Routine_C39240
 C3/92B0: 01 10        ORA ($10,X)
 C3/92B2: 42 0D        WDM $0D
 C3/92B4: 6E 51 13     ROR $1351
@@ -58,6 +61,7 @@ C3/92B9: 15 6E        ORA $6E,X
 C3/92BB: 01 06        ORA ($06,X)
 C3/92BD: 55 6E        EOR $6E,X
 C3/92BF: 11 06        ORA ($06),Y
+Local_C392C1:
 C3/92C1: 3D 30 16     AND $1630,X
 C3/92C4: 3D A0 15     AND $15A0,X
 C3/92C7: 7A           PLY

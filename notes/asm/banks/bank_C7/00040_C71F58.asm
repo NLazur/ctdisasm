@@ -26,7 +26,7 @@ C7/1F84: 07 26        ORA [$26]
 C7/1F86: 4B           PHK
 C7/1F87: 78           SEI
 C7/1F88: 24 45        BIT $45
-C7/1F8A: 50 27        BVC $1FB3
+C7/1F8A: 50 27        BVC Routine_C71FB3
 C7/1F8C: 42 0A        WDM $0A
 C7/1F8E: 23 48        AND $48,S
 C7/1F90: 40           RTI

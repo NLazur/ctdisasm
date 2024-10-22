@@ -5,5 +5,5 @@ D0/723C: CC 3C E8     CPY $E83C
 D0/723F: 18           CLC
 D0/7240: F4 0C F8     PEA $F80C
 D0/7243: 08           PHP
-D0/7244: D0 30        BNE $7276
+D0/7244: D0 30        BNE Routine_D07276
 D0/7246: 60           RTS

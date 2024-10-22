@@ -22,7 +22,7 @@ C3/9F36: CB           WAI
 C3/9F37: 88           DEY
 C3/9F38: 05 EF        ORA $EF
 C3/9F3A: 11 30        ORA ($30),Y
-C3/9F3C: 10 90        BPL $9ECE
+C3/9F3C: 10 90        BPL Routine_C39ECE
 C3/9F3E: F6 52        INC $52,X
 C3/9F40: 00 B4        BRK $B4
 C3/9F42: 06 00        ASL $00
@@ -35,9 +35,9 @@ C3/9F4E: 02 06        COP $06
 C3/9F50: 7F 36 2E 05  ADC $052E36,X
 C3/9F54: 26 10        ROL $10
 C3/9F56: A7 1B        LDA [$1B]
-C3/9F58: 10 5B        BPL $9FB5
+C3/9F58: 10 5B        BPL Routine_C39FB5
 C3/9F5A: 05 00        ORA $00
-C3/9F5C: 80 5B        BRA $9FB9
+C3/9F5C: 80 5B        BRA Routine_C39FB9
 C3/9F5E: 26 00        ROL $00
 C3/9F60: AA           TAX
 C3/9F61: 1B           TCS
@@ -50,10 +50,10 @@ C3/9F6A: 1A           INC
 C3/9F6B: 94 04        STY $04,X
 C3/9F6D: 27 AE        AND [$AE]
 C3/9F6F: 1B           TCS
-C3/9F70: 20 08 08     JSR $0808
+C3/9F70: 20 08 08     JSR Routine_C30808
 C3/9F73: 1A           INC
 C3/9F74: 99 08 10     STA $1008,Y
-C3/9F77: 80 08        BRA $9F81
+C3/9F77: 80 08        BRA Routine_C39F81
 C3/9F79: 1A           INC
 C3/9F7A: AF 00 04 27  LDA $270400
 C3/9F7E: AF 1B 04 08  LDA $08041B
@@ -61,11 +61,12 @@ C3/9F82: 1A           INC
 C3/9F83: C5 00        CMP $00
 C3/9F85: 04 26        TSB $26
 C3/9F87: 94 02        STY $02,X
-C3/9F89: 50 08        BVC $9F93
+C3/9F89: 50 08        BVC Local_C39F93
 C3/9F8B: 34 0F        BIT $0F,X
 C3/9F8D: 00 2F        BRK $2F
 C3/9F8F: 36 07        ROL $07,X
 C3/9F91: 05 35        ORA $35
+Local_C39F93:
 C3/9F93: 02 77        COP $77
 C3/9F95: 35 00        AND $00,X
 C3/9F97: 59 77 09     EOR $0977,Y
@@ -79,7 +80,7 @@ C3/9FA7: 04 36        TSB $36
 C3/9FA9: 00 0C        BRK $0C
 C3/9FAB: 05 29        ORA $29
 C3/9FAD: 02 38        COP $38
-C3/9FAF: 20 13 7C     JSR $7C13
+C3/9FAF: 20 13 7C     JSR Routine_C37C13
 C3/9FB2: 00 02        BRK $02
 C3/9FB4: 01 52        ORA ($52,X)
 C3/9FB6: 09 37        ORA #$37
@@ -97,8 +98,10 @@ C3/9FD1: 89 6E        BIT #$6E
 C3/9FD3: 00 01        BRK $01
 C3/9FD5: 0E 16 F0     ASL $F016
 C3/9FD8: 7F 09 33 16  ADC $163309,X
+Local_C39FDC:
 C3/9FDC: 00 00        BRK $00
 C3/9FDE: 35 04        AND $04,X
+Local_C39FE0:
 C3/9FE0: 34 0D        BIT $0D,X
 C3/9FE2: 24 01        BIT $01
 C3/9FE4: 35 E2        AND $E2,X
@@ -107,9 +110,11 @@ C3/9FE7: 3A           DEC
 C3/9FE8: 0B           PHD
 C3/9FE9: 24 05        BIT $05
 C3/9FEB: 00 27        BRK $27
+Local_C39FED:
 C3/9FED: 94 02        STY $02,X
-C3/9FEF: 80 00        BRA $9FF1
-C3/9FF1: 10 24        BPL $A017
+C3/9FEF: 80 00        BRA Local_C39FF1
+Local_C39FF1:
+C3/9FF1: 10 24        BPL Routine_C3A017
 C3/9FF3: 9F 02 F2 0B  STA $0BF202,X
 C3/9FF7: 35 DD        AND $DD,X
 C3/9FF9: 00 42        BRK $42
@@ -124,17 +129,18 @@ C3/A00A: 56 00        LSR $00,X
 C3/A00C: 37 3E        AND [$3E],Y
 C3/A00E: 01 3E        ORA ($3E,X)
 C3/A010: 02 37        COP $37
-C3/A012: 4C A6 08     JMP $08A6
+C3/A012: 4C A6 08     JMP Routine_C308A6
 C3/A015: 1B           TCS
 C3/A016: D4 21        PEI $21
 C3/A018: EB           XBA
 C3/A019: 00 10        BRK $10
 C3/A01B: 1C 09 8B     TRB $8B09
-C3/A01E: 10 0B        BPL $A02B
+C3/A01E: 10 0B        BPL Local_C3A02B
 C3/A020: 7F 09 DD 04  ADC $04DD09,X
 C3/A024: 00 03        BRK $03
 C3/A026: 0C 7F 04     TSB $047F
 C3/A029: 09 16        ORA #$16
+Local_C3A02B:
 C3/A02B: 04 00        TSB $00
 C3/A02D: 29 0C        AND #$0C
 C3/A02F: 7F 35 CF 00  ADC $00CF35,X
@@ -143,24 +149,26 @@ C3/A035: 13 9B        ORA ($9B,S),Y
 C3/A037: 1B           TCS
 C3/A038: 05 10        ORA $10
 C3/A03A: 9C 00 1B     STZ $1B00
-C3/A03D: 10 9D        BPL $9FDC
+C3/A03D: 10 9D        BPL Local_C39FDC
 C3/A03F: 1B           TCS
-C3/A040: 10 9E        BPL $9FE0
+C3/A040: 10 9E        BPL Local_C39FE0
 C3/A042: 1B           TCS
-C3/A043: 10 00        BPL $A045
+C3/A043: 10 00        BPL Local_C3A045
+Local_C3A045:
 C3/A045: 9F 1B 10 A0  STA $A0101B,X
 C3/A049: 1B           TCS
-C3/A04A: 10 A1        BPL $9FED
+C3/A04A: 10 A1        BPL Local_C39FED
 C3/A04C: 1B           TCS
 C3/A04D: 00 10        BRK $10
 C3/A04F: A2 1B        LDX #$1B
 C3/A051: 37 2C        AND [$2C],Y
 C3/A053: 08           PHP
 C3/A054: 00 C0        BRK $C0
-C3/A056: 80 00        BRA $A058
+C3/A056: 80 00        BRA Local_C3A058
+Local_C3A058:
 C3/A058: 02 31        COP $31
 C3/A05A: 01 00        ORA ($00,X)
-C3/A05C: 30 7B        BMI $A0D9
+C3/A05C: 30 7B        BMI Routine_C3A0D9
 C3/A05E: 47 00        EOR [$00]
 C3/A060: 00 36        BRK $36
 C3/A062: 07 30        ORA [$30]
@@ -174,8 +182,9 @@ C3/A071: 01 18        ORA ($18,X)
 C3/A073: 11 F7        ORA ($F7),Y
 C3/A075: 1B           TCS
 C3/A076: 08           PHP
-C3/A077: 20 30 01     JSR $0130
-C3/A07A: 10 FE        BPL $A07A
+C3/A077: 20 30 01     JSR Routine_C30130
+Local_C3A07A:
+C3/A07A: 10 FE        BPL Local_C3A07A
 C3/A07C: 1B           TCS
 C3/A07D: 00 22        BRK $22
 C3/A07F: F9 37 13     SBC $1337,Y
@@ -190,14 +199,14 @@ C3/A092: 01 12        ORA ($12,X)
 C3/A094: 47 00        EOR [$00]
 C3/A096: 03 10        ORA $10,S
 C3/A098: 49 03        EOR #$03
-C3/A09A: 20 02 48     JSR $4802
+C3/A09A: 20 02 48     JSR Routine_C34802
 C3/A09D: 03 10        ORA $10,S
 C3/A09F: 1B           TCS
 C3/A0A0: 23 EC        AND $EC,S
 C3/A0A2: 37 0D        AND [$0D],Y
 C3/A0A4: 23 00        AND $00,S
 C3/A0A6: 06 0D        ASL $0D
-C3/A0A8: 22 F0 36 6C  JSR $6C36F0
+C3/A0A8: 22 F0 36 6C  JSR Routine_6C36F0
 C3/A0AC: 05 1B        ORA $1B
 C3/A0AE: 00 23        BRK $23
 C3/A0B0: FA           PLX
@@ -215,15 +224,15 @@ C3/A0C7: 3C 7C 80     BIT $807C,X
 C3/A0CA: 1A           INC
 C3/A0CB: 9D 6E 05     STA $056E,X
 C3/A0CE: 44 00 29     MVP $00,$29
-C3/A0D1: F0 29        BEQ $A0FC
-C3/A0D3: 20 15 15     JSR $1515
+C3/A0D1: F0 29        BEQ Routine_C3A0FC
+C3/A0D3: 20 15 15     JSR Routine_C31515
 C3/A0D6: 00 3B        BRK $3B
-C3/A0D8: 20 04 03     JSR $0304
+C3/A0D8: 20 04 03     JSR Routine_C30304
 C3/A0DB: 3B           TSC
-C3/A0DC: F0 3B        BEQ $A119
-C3/A0DE: 20 38 09     JSR $0938
+C3/A0DC: F0 3B        BEQ Routine_C3A119
+C3/A0DE: 20 38 09     JSR Routine_C30938
 C3/A0E1: 04 00        TSB $00
 C3/A0E3: C0 7E        CPY #$7E
-C3/A0E5: 20 02 00     JSR $0002
+C3/A0E5: 20 02 00     JSR Routine_C30002
 C3/A0E8: 0D 22 0A     ORA $0A22
 C3/A0EB: 40           RTI

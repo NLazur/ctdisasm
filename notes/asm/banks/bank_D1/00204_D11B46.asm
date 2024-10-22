@@ -2,15 +2,15 @@
 Routine_D11B46:
 D1/1B46: 16 00        ASL $00,X
 D1/1B48: 00 11        BRK $11
-D1/1B4A: 80 20        BRA $1B6C
+D1/1B4A: 80 20        BRA Routine_D11B6C
 D1/1B4C: 01 FF        ORA ($FF,X)
 D1/1B4E: FF 11 80 AA  SBC $AA8011,X
-D1/1B52: 22 06 10 24  JSR $241006
+D1/1B52: 22 06 10 24  JSR Routine_241006
 D1/1B56: 0C 10 26     TSB $2610
 D1/1B59: 12 10        ORA ($10)
 D1/1B5B: 28           PLP
 D1/1B5C: 18           CLC
-D1/1B5D: 10 46        BPL $1BA5
+D1/1B5D: 10 46        BPL Routine_D11BA5
 D1/1B5F: 25 00        AND $00
 D1/1B61: EA           NOP
 D1/1B62: 2A           ROL

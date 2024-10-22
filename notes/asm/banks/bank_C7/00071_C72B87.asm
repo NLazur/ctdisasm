@@ -1,13 +1,14 @@
 ; Bank: C7 | Start Address: 2B87
 Routine_C72B87:
-C7/2B87: B0 02        BCS $2B8B
+C7/2B87: B0 02        BCS Local_C72B8B
 C7/2B89: C4 D7        CPY $D7
+Local_C72B8B:
 C7/2B8B: CE 3F A8     DEC $A83F
 C7/2B8E: 07 CB        ORA [$CB]
 C7/2B90: F4 6F CD     PEA $CD6F
 C7/2B93: 00 F5        BRK $F5
 C7/2B95: 72 F1        ADC ($F1)
-C7/2B97: F0 1E        BEQ $2BB7
+C7/2B97: F0 1E        BEQ Routine_C72BB7
 C7/2B99: C4 8D        CPY $8D
 C7/2B9B: F5 73        SBC $73,X
 C7/2B9D: F1 C4        SBC ($C4),Y

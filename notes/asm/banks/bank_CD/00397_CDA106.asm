@@ -4,7 +4,7 @@ CD/A106: 00 73        BRK $73
 CD/A108: 03 1B        ORA $1B,S
 CD/A10A: 0C 24 01     TSB $0124
 CD/A10D: 6E 02 00     ROR $0002
-CD/A110: 20 50 36     JSR $3650
+CD/A110: 20 50 36     JSR Routine_CD3650
 CD/A113: 02 04        COP $04
 CD/A115: 0B           PHD
 CD/A116: 9A           TXS
@@ -56,10 +56,10 @@ CD/A174: A2 72        LDX #$72
 CD/A176: 0D 36 03     ORA $0336
 CD/A179: 07 24        ORA [$24]
 CD/A17B: 09 06 03     ORA #$0306
-CD/A17E: 50 2E        BVC $A1AE
+CD/A17E: 50 2E        BVC Routine_CDA1AE
 CD/A180: 01 00        ORA ($00,X)
 CD/A182: 24 01        BIT $01
-CD/A184: 20 0F 78     JSR $780F
+CD/A184: 20 0F 78     JSR Routine_CD780F
 CD/A187: 74 69        STZ $69,X
 CD/A189: 01 06        ORA ($06,X)
 CD/A18B: 05 24        ORA $24

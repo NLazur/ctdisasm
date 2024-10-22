@@ -1,9 +1,10 @@
 ; Bank: D0 | Start Address: 4D42
 Routine_D04D42:
-D0/4D42: 80 80        BRA $4CC4
+D0/4D42: 80 80        BRA Routine_D04CC4
 D0/4D44: C0 C0 80     CPY #$80C0
-D0/4D47: 80 02        BRA $4D4B
+D0/4D47: 80 02        BRA Local_D04D4B
 D0/4D49: 07 2C        ORA [$2C]
+Local_D04D4B:
 D0/4D4B: 2D 10 1B     AND $1B10
 D0/4D4E: 02 07        COP $07
 D0/4D50: 09 0B 15     ORA #$150B
@@ -22,8 +23,8 @@ D0/4D6A: 14 16        TRB $16
 D0/4D6C: 0E 0E 06     ASL $060E
 D0/4D6F: 16 0C        ASL $0C,X
 D0/4D71: 3C 18 18     BIT $1818,X
-D0/4D74: 30 10        BMI $4D86
-D0/4D76: 50 50        BVC $4DC8
+D0/4D74: 30 10        BMI Routine_D04D86
+D0/4D76: 50 50        BVC Routine_D04DC8
 D0/4D78: 00 00        BRK $00
-D0/4D7A: 80 80        BRA $4CFC
+D0/4D7A: 80 80        BRA Routine_D04CFC
 D0/4D7C: 40           RTI

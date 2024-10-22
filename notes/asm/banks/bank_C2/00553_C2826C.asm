@@ -1,6 +1,6 @@
 ; Bank: C2 | Start Address: 826C
 Routine_C2826C:
-C2/826C: 20 1E 82     JSR $821E
+C2/826C: 20 1E 82     JSR Routine_C2821E
 C2/826F: E2 30        SEP #$30
 C2/8271: A9 C2        LDA #$C2
 C2/8273: 85 18        STA $18

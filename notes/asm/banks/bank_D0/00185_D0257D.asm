@@ -22,6 +22,6 @@ D0/25A6: 04 07        TSB $07
 D0/25A8: 03 03        ORA $03,S
 D0/25AA: 0C 0C 38     TSB $380C
 D0/25AD: 38           SEC
-D0/25AE: 50 70        BVC $2620
+D0/25AE: 50 70        BVC Routine_D02620
 D0/25B0: A0 E0        LDY #$E0
 D0/25B2: 40           RTI

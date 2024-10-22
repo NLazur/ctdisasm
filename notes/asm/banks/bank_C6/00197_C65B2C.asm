@@ -8,20 +8,20 @@ C6/5B35: 97 10        STA [$10],Y
 C6/5B37: 18           CLC
 C6/5B38: B3 18        LDA ($18,S),Y
 C6/5B3A: 41 80        EOR ($80,X)
-C6/5B3C: 10 85        BPL $5AC3
+C6/5B3C: 10 85        BPL Routine_C65AC3
 C6/5B3E: 18           CLC
 C6/5B3F: 7A           PLY
 C6/5B40: DE 18 78     DEC $7818,X
 C6/5B43: F8           SED
-C6/5B44: 80 78        BRA $5BBE
-C6/5B46: 10 F9        BPL $5B41
-C6/5B48: 10 78        BPL $5BC2
+C6/5B44: 80 78        BRA Routine_C65BBE
+C6/5B46: 10 F9        BPL Routine_C65B41
+C6/5B48: 10 78        BPL Routine_C65BC2
 C6/5B4A: 95 7A        STA $7A,X
 C6/5B4C: 00 C6        BRK $C6
 C6/5B4E: 0E 88 B3     ASL $B388
 C6/5B51: 18           CLC
 C6/5B52: 51 FC        EOR ($FC),Y
-C6/5B54: 10 84        BPL $5ADA
+C6/5B54: 10 84        BPL Routine_C65ADA
 C6/5B56: 18           CLC
 C6/5B57: 8A           TXA
 C6/5B58: 04 31        TSB $31

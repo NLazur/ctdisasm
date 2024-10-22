@@ -22,10 +22,10 @@ C2/3FDA: 4A           LSR
 C2/3FDB: 4A           LSR
 C2/3FDC: 85 0B        STA $0B
 C2/3FDE: E2 20        SEP #$20
-C2/3FE0: 20 B5 41     JSR $41B5
+C2/3FE0: 20 B5 41     JSR Routine_C241B5
 C2/3FE3: 0A           ASL
 C2/3FE4: AA           TAX
 C2/3FE5: 7C E8 3F     JMP ($3FE8,X)
-C2/3FE8: F0 3F        BEQ $4029
-C2/3FEA: 4C 40 56     JMP $5640
+C2/3FE8: F0 3F        BEQ Routine_C24029
+C2/3FEA: 4C 40 56     JMP Routine_C25640
 C2/3FED: 40           RTI

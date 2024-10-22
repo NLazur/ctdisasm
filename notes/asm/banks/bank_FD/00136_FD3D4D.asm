@@ -5,7 +5,7 @@ FD/3D4E: 0C FF 19     TSB $19FF
 FD/3D51: FF 00 08 03  SBC $030800,X
 FD/3D55: 65 6B        ADC $6B
 FD/3D57: 32 5F        AND ($5F)
-FD/3D59: B0 77        BCS $3DD2
+FD/3D59: B0 77        BCS Local_FD3DD2
 FD/3D5B: 00 5E        BRK $5E
 FD/3D5D: AB           PLB
 FD/3D5E: E1 A8        SBC ($A8,X)
@@ -58,6 +58,7 @@ FD/3DC8: 03 00        ORA $00,S
 FD/3DCA: 07 F8        ORA [$F8]
 FD/3DCC: AF F0 5F E0  LDA $E05FF0
 FD/3DD0: C7 F8        CMP [$F8]
+Local_FD3DD2:
 FD/3DD2: 02 80        COP $80
 FD/3DD4: 42 09        WDM $09
 FD/3DD6: E0 FF FC     CPX #$FCFF
@@ -82,7 +83,7 @@ FD/3E01: 9E 06 F9     STZ $F906,X
 FD/3E04: 0B           PHD
 FD/3E05: E0 FC F9     CPX #$F9FC
 FD/3E08: 18           CLC
-FD/3E09: 20 F7 10     JSR $10F7
+FD/3E09: 20 F7 10     JSR Routine_FD10F7
 FD/3E0C: E7 20        SBC [$20]
 FD/3E0E: 9F 74 0B FE  STA $FE0B74,X
 FD/3E12: 01 00        ORA ($00,X)
@@ -96,7 +97,7 @@ FD/3E24: 41 00        EOR ($00,X)
 FD/3E26: D8           CLD
 FD/3E27: 81 88        STA ($88,X)
 FD/3E29: 01 4A        ORA ($4A,X)
-FD/3E2B: 50 4B        BVC $3E78
+FD/3E2B: 50 4B        BVC Routine_FD3E78
 FD/3E2D: 03 00        ORA $00,S
 FD/3E2F: EF 20 A7 20  SBC $20A720
 FD/3E33: 61 E0        ADC ($E0,X)
@@ -108,7 +109,7 @@ FD/3E3D: F4 EB F0     PEA $F0EB
 FD/3E40: 02 C8        COP $C8
 FD/3E42: AC 05 FC     LDY $FC05
 FD/3E45: 21 BD        AND ($BD,X)
-FD/3E47: 80 7F        BRA $3EC8
+FD/3E47: 80 7F        BRA Routine_FD3EC8
 FD/3E49: 02 8C        COP $8C
 FD/3E4B: FB           XCE
 FD/3E4C: 03 DC        ORA $DC,S
@@ -130,7 +131,7 @@ FD/3E70: C1 82        CMP ($82,X)
 FD/3E72: 00 08        BRK $08
 FD/3E74: 5B           TCD
 FD/3E75: 00 79        BRK $79
-FD/3E77: 90 0A        BCC $3E83
+FD/3E77: 90 0A        BCC Routine_FD3E83
 FD/3E79: 3B           TSC
 FD/3E7A: 42 00        WDM $00
 FD/3E7C: 02 0D        COP $0D

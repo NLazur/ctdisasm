@@ -1,26 +1,28 @@
 ; Bank: CD | Start Address: 4B13
 Routine_CD4B13:
 CD/4B13: 06 00        ASL $00
-CD/4B15: 30 23        BMI $4B3A
+CD/4B15: 30 23        BMI Local_CD4B3A
 CD/4B17: 23 60        AND $60,S
 CD/4B19: 06 00        ASL $00
-CD/4B1B: 30 23        BMI $4B40
+CD/4B1B: 30 23        BMI Local_CD4B40
 CD/4B1D: 23 22        AND $22,S
 CD/4B1F: C0 C4        CPY #$C4
 CD/4B21: 08           PHP
 CD/4B22: 04 00        TSB $00
-CD/4B24: 22 C0 C4 08  JSR $08C4C0
+CD/4B24: 22 C0 C4 08  JSR Routine_08C4C0
 CD/4B28: 04 00        TSB $00
-CD/4B2A: 22 C0 C4 08  JSR $08C4C0
+CD/4B2A: 22 C0 C4 08  JSR Routine_08C4C0
 CD/4B2E: 04 00        TSB $00
 CD/4B30: 24 C0        BIT $C0
 CD/4B32: C4 08        CPY $08
 CD/4B34: 04 00        TSB $00
 CD/4B36: 24 C0        BIT $C0
 CD/4B38: C4 08        CPY $08
+Local_CD4B3A:
 CD/4B3A: 04 00        TSB $00
 CD/4B3C: 24 C0        BIT $C0
 CD/4B3E: C4 08        CPY $08
+Local_CD4B40:
 CD/4B40: 04 00        TSB $00
 CD/4B42: 03 C0        ORA $C0,S
 CD/4B44: C4 08        CPY $08
@@ -70,6 +72,7 @@ CD/4B9A: 04 00        TSB $00
 CD/4B9C: 1B           TCS
 CD/4B9D: F8           SED
 CD/4B9E: 00 16        BRK $16
+Local_CD4BA0:
 CD/4BA0: 1E 17 1B     ASL $1B17,X
 CD/4BA3: F8           SED
 CD/4BA4: 00 16        BRK $16
@@ -80,7 +83,7 @@ CD/4BAE: 1A           INC
 CD/4BAF: C0 C4        CPY #$C4
 CD/4BB1: 08           PHP
 CD/4BB2: 04 00        TSB $00
-CD/4BB4: 50 47        BVC $4BFD
+CD/4BB4: 50 47        BVC Routine_CD4BFD
 CD/4BB6: 00 3F        BRK $3F
 CD/4BB8: 33 33        AND ($33,S),Y
 CD/4BBA: 03 C0        ORA $C0,S
@@ -101,7 +104,7 @@ CD/4BD6: 04 00        TSB $00
 CD/4BD8: 21 C0        AND ($C0,X)
 CD/4BDA: C4 08        CPY $08
 CD/4BDC: 04 00        TSB $00
-CD/4BDE: 70 C0        BVS $4BA0
+CD/4BDE: 70 C0        BVS Local_CD4BA0
 CD/4BE0: C4 08        CPY $08
 CD/4BE2: 04 00        TSB $00
 CD/4BE4: 6A           ROR
@@ -122,7 +125,7 @@ CD/4C00: 04 00        TSB $00
 CD/4C02: 64 C0        STZ $C0
 CD/4C04: C4 08        CPY $08
 CD/4C06: 04 00        TSB $00
-CD/4C08: 5C C0 C4 08  JMP $08C4C0
+CD/4C08: 5C C0 C4 08  JMP Routine_08C4C0
 CD/4C0C: 04 00        TSB $00
 CD/4C0E: 0C 48 00     TSB $0048
 CD/4C11: 3A           DEC
@@ -177,9 +180,11 @@ CD/4C6A: C4 08        CPY $08
 CD/4C6C: 16 16        ASL $16,X
 CD/4C6E: 19 C0 C4     ORA $C4C0,Y
 CD/4C71: 08           PHP
+Local_CD4C72:
 CD/4C72: 04 00        TSB $00
 CD/4C74: 19 C0 C4     ORA $C4C0,Y
 CD/4C77: 08           PHP
+Local_CD4C78:
 CD/4C78: 04 00        TSB $00
 CD/4C7A: 72 C0        ADC ($C0)
 CD/4C7C: C4 08        CPY $08
@@ -208,10 +213,10 @@ CD/4CA8: 04 00        TSB $00
 CD/4CAA: 03 C0        ORA $C0,S
 CD/4CAC: C4 08        CPY $08
 CD/4CAE: 04 00        TSB $00
-CD/4CB0: 80 C0        BRA $4C72
+CD/4CB0: 80 C0        BRA Local_CD4C72
 CD/4CB2: C4 08        CPY $08
 CD/4CB4: 04 00        TSB $00
-CD/4CB6: 80 C0        BRA $4C78
+CD/4CB6: 80 C0        BRA Local_CD4C78
 CD/4CB8: C4 08        CPY $08
 CD/4CBA: 04 00        TSB $00
 CD/4CBC: 03 C0        ORA $C0,S
@@ -220,10 +225,10 @@ CD/4CC0: 04 00        TSB $00
 CD/4CC2: 03 C0        ORA $C0,S
 CD/4CC4: C4 08        CPY $08
 CD/4CC6: 04 00        TSB $00
-CD/4CC8: 82 C0 C4     BRL $CD118B
+CD/4CC8: 82 C0 C4     BRL Routine_CD118B
 CD/4CCB: 08           PHP
 CD/4CCC: 04 00        TSB $00
-CD/4CCE: 82 C0 C4     BRL $CD1191
+CD/4CCE: 82 C0 C4     BRL Routine_CD1191
 CD/4CD1: 08           PHP
 CD/4CD2: 04 00        TSB $00
 CD/4CD4: 78           SEI
@@ -266,7 +271,7 @@ CD/4D1A: 04 00        TSB $00
 CD/4D1C: 03 C0        ORA $C0,S
 CD/4D1E: C4 08        CPY $08
 CD/4D20: 04 00        TSB $00
-CD/4D22: 5C C0 C4 08  JMP $08C4C0
+CD/4D22: 5C C0 C4 08  JMP Routine_08C4C0
 CD/4D26: 04 00        TSB $00
 CD/4D28: 42 C0        WDM $C0
 CD/4D2A: C4 08        CPY $08

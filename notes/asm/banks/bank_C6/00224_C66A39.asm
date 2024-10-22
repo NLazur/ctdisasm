@@ -25,8 +25,8 @@ C6/6A62: 74 0F        STZ $0F,X
 C6/6A64: E9 23 28     SBC #$2823
 C6/6A67: 06 25        ASL $25
 C6/6A69: BC F8 11     LDY $11F8,X
-C6/6A6C: 70 81        BVS $69EF
-C6/6A6E: 82 83 84     BRL $C6EEF4
+C6/6A6C: 70 81        BVS Routine_C669EF
+C6/6A6E: 82 83 84     BRL Routine_C6EEF4
 C6/6A71: 85 3A        STA $3A
 C6/6A73: 24 0F        BIT $0F
 C6/6A75: C1 27        CMP ($27,X)
@@ -34,15 +34,15 @@ C6/6A77: 23 18        AND $18,S
 C6/6A79: 1B           TCS
 C6/6A7A: F9 5F 98     SBC $985F,Y
 C6/6A7D: 91 92        STA ($92),Y
-C6/6A7F: 10 93        BPL $6A14
+C6/6A7F: 10 93        BPL Routine_C66A14
 C6/6A81: 94 95        STY $95,X
 C6/6A83: 34 29        BIT $29,X
 C6/6A85: B8           CLV
-C6/6A86: 10 42        BPL $6ACA
+C6/6A86: 10 42        BPL Routine_C66ACA
 C6/6A88: 43 E1        EOR $E1,S
 C6/6A8A: 23 10        AND $10,S
 C6/6A8C: 00 24        BRK $24
-C6/6A8E: 10 11        BPL $6AA1
+C6/6A8E: 10 11        BPL Local_C66AA1
 C6/6A90: 4F 10 8C C0  EOR $C08C10
 C6/6A94: 01 F8        ORA ($F8,X)
 C6/6A96: 01 5F        ORA ($5F,X)
@@ -51,6 +51,7 @@ C6/6A99: 51 52        EOR ($52),Y
 C6/6A9B: 53 00        EOR ($00,S),Y
 C6/6A9D: A1 A2        LDA ($A2,X)
 C6/6A9F: A3 80        LDA $80,S
+Local_C66AA1:
 C6/6AA1: 00 00        BRK $00
 C6/6AA3: 34 00        BIT $00,X
 C6/6AA5: 42 43        WDM $43
@@ -78,9 +79,11 @@ C6/6AD4: 03 00        ORA $00,S
 C6/6AD6: C0 C1 C2     CPY #$C2C1
 C6/6AD9: 08           PHP
 C6/6ADA: C3 C4        CMP $C4,S
-C6/6ADC: 10 6A        BPL $6B48
-C6/6ADE: 10 00        BPL $6AE0
+C6/6ADC: 10 6A        BPL Routine_C66B48
+C6/6ADE: 10 00        BPL Local_C66AE0
+Local_C66AE0:
 C6/6AE0: 21 21        AND ($21,X)
+Local_C66AE2:
 C6/6AE2: 32 17        AND ($17)
 C6/6AE4: F5 A0        SBC $A0,X
 C6/6AE6: 46 19        LSR $19
@@ -91,8 +94,8 @@ C6/6AED: 24 20        BIT $20
 C6/6AEF: 00 C4        BRK $C4
 C6/6AF1: 00 13        BRK $13
 C6/6AF3: 45 19        EOR $19
-C6/6AF5: 20 11 12     JSR $1211
+C6/6AF5: 20 11 12     JSR Routine_C61211
 C6/6AF8: 6E 00 0F     ROR $0F00
-C6/6AFB: 10 E5        BPL $6AE2
+C6/6AFB: 10 E5        BPL Local_C66AE2
 C6/6AFD: 62 8B 17     PER $C6828B
 C6/6B00: 6B           RTL

@@ -24,7 +24,7 @@ FE/E592: C3 72        CMP $72,S
 FE/E594: 01 DB        ORA ($DB,X)
 FE/E596: C0 03        CPY #$03
 FE/E598: FE 82 18     INC $1882,X
-FE/E59B: B0 50        BCS $E5ED
+FE/E59B: B0 50        BCS Routine_FEE5ED
 FE/E59D: B6 31        LDX $31,Y
 FE/E59F: 38           SEC
 FE/E5A0: C0 60        CPY #$60

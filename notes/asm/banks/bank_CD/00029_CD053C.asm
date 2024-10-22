@@ -2,6 +2,7 @@
 Routine_CD053C:
 CD/053C: 7B           TDC
 CD/053D: AA           TAX
+Local_CD053E:
 CD/053E: DE 6A C8     DEC $C86A,X
 CD/0541: BD 6D C8     LDA $C86D,X
 CD/0544: 18           CLC
@@ -16,7 +17,7 @@ CD/0554: AA           TAX
 CD/0555: 7B           TDC
 CD/0556: E2 20        SEP #$20
 CD/0558: E0 95 01     CPX #$0195
-CD/055B: D0 E1        BNE $053E
+CD/055B: D0 E1        BNE Local_CD053E
 CD/055D: C2 20        REP #$20
 CD/055F: AD 4F C9     LDA $C94F
 CD/0562: 38           SEC

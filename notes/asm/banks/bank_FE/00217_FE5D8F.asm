@@ -6,7 +6,7 @@ FE/5D93: 00 06        BRK $06
 FE/5D95: F9 06 F9     SBC $F906,Y
 FE/5D98: 0C F3 1C     TSB $1CF3
 FE/5D9B: E3 04        SBC $04,S
-FE/5D9D: 30 CF        BMI $5D6E
+FE/5D9D: 30 CF        BMI Routine_FE5D6E
 FE/5D9F: C0 02        CPY #$02
 FE/5DA1: 1E 02 1C     ASL $1C02,X
 FE/5DA4: 00 3C        BRK $3C
@@ -14,7 +14,7 @@ FE/5DA6: 00 04        BRK $04
 FE/5DA8: 38           SEC
 FE/5DA9: 04 F8        TSB $F8
 FE/5DAB: 08           PHP
-FE/5DAC: F0 18        BEQ $5DC6
+FE/5DAC: F0 18        BEQ Routine_FE5DC6
 FE/5DAE: E0 82 30     CPX #$3082
 FE/5DB1: 54 01 1F     MVN $01,$1F
 FE/5DB4: E0 3F C0     CPX #$C03F
@@ -37,12 +37,13 @@ FE/5DDC: C6 6F        DEC $6F
 FE/5DDE: E0 F4 01     CPX #$01F4
 FE/5DE1: A0 C9 FC     LDY #$FCC9
 FE/5DE4: 01 40        ORA ($40,X)
-FE/5DE6: F0 02        BEQ $5DEA
+FE/5DE6: F0 02        BEQ Local_FE5DEA
 FE/5DE8: 00 70        BRK $70
-FE/5DEA: 80 CC        BRA $5DB8
+Local_FE5DEA:
+FE/5DEA: 80 CC        BRA Routine_FE5DB8
 FE/5DEC: 08           PHP
 FE/5DED: FA           PLX
 FE/5DEE: 31 3B        AND ($3B),Y
-FE/5DF0: 80 5C        BRA $5E4E
+FE/5DF0: 80 5C        BRA Routine_FE5E4E
 FE/5DF2: A0 0E 02     LDY #$020E
 FE/5DF5: 40           RTI

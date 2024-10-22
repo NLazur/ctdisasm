@@ -9,7 +9,7 @@ C3/769B: 1F 31 47 F5  ORA $F54731,X
 C3/769F: 47 35        EOR [$35]
 C3/76A1: 59 03 3B     EOR $3B03,Y
 C3/76A4: F5 4F        SBC $4F,X
-C3/76A6: 50 FF        BVC $76A7
+C3/76A6: 50 FF        BVC Routine_C376A7
 C3/76A8: 3C 35 68     BIT $6835,X
 C3/76AB: 43 3D        EOR $3D,S
 C3/76AD: 25 30        AND $30
@@ -65,7 +65,7 @@ C3/7710: 24 3D        BIT $3D
 C3/7712: 55 3A        EOR $3A,X
 C3/7714: 14 0A        TRB $0A
 C3/7716: 15 EE        ORA $EE,X
-C3/7718: 82 01 F0     BRL $C3671C
+C3/7718: 82 01 F0     BRL Routine_C3671C
 C3/771B: 07 80        ORA [$80]
 C3/771D: 12 20        ORA ($20)
 C3/771F: 01 20        ORA ($20,X)
@@ -75,20 +75,20 @@ C3/7727: 52 58        EOR ($58)
 C3/7729: 49 47        EOR #$47
 C3/772B: 47 6C        EOR [$6C]
 C3/772D: 15 28        ORA $28,X
-C3/772F: 50 5C        BVC $778D
+C3/772F: 50 5C        BVC Routine_C3778D
 C3/7731: 31 30        AND ($30),Y
 C3/7733: 54 60 52     MVN $60,$52
 C3/7736: 41 4E        EOR ($4E,X)
 C3/7738: 53 4C        EOR ($4C,S),Y
-C3/773A: F0 08        BEQ $7744
-C3/773C: 80 20        BRA $775E
+C3/773A: F0 08        BEQ Routine_C37744
+C3/773C: 80 20        BRA Local_C3775E
 C3/773E: 44 00 20     MVP $00,$20
 C3/7741: 57 4F        EOR [$4F],Y
 C3/7743: 4F 4C 53 45  EOR $45534C
 C3/7747: 59 C5 1A     EOR $1AC5,Y
 C3/774A: 03 45        ORA $45,S
 C3/774C: DD 02 4E     CMP $4E02,X
-C3/774F: 20 4C 2C     JSR $2C4C
+C3/774F: 20 4C 2C     JSR Routine_C32C4C
 C3/7752: 06 9A        ASL $9A
 C3/7754: 15 C1        ORA $C1,X
 C3/7756: EB           XBA
@@ -96,6 +96,7 @@ C3/7757: 03 2F        ORA $2F,S
 C3/7759: 52 49        EOR ($49)
 C3/775B: 4B           PHK
 C3/775C: 41 3B        EOR ($3B,X)
+Local_C3775E:
 C3/775E: 0A           ASL
 C3/775F: A0 08        LDY #$08
 C3/7761: E3 DD        SBC $DD,S
@@ -126,7 +127,7 @@ C3/7796: 25 43        AND $43
 C3/7798: 54 45 FA     MVN $45,$FA
 C3/779B: 53 7A        EOR ($7A,S),Y
 C3/779D: 29 59        AND #$59
-C3/779F: 22 26 2C 44  JSR $442C26
+C3/779F: 22 26 2C 44  JSR Routine_442C26
 C3/77A3: FD 25 5C     SBC $5C25,X
 C3/77A6: 0A           ASL
 C3/77A7: 87 18        STA [$18]
@@ -139,7 +140,7 @@ C3/77B4: B7 2A        LDA [$2A],Y
 C3/77B6: 87 05        STA [$05]
 C3/77B8: 5F 43 19 17  EOR $171943,X
 C3/77BC: 03 B8        ORA $B8,S
-C3/77BE: 22 9B 21 88  JSR $88219B
+C3/77BE: 22 9B 21 88  JSR Routine_88219B
 C3/77C2: 03 55        ORA $55,S
 C3/77C4: 9E 71 52     STZ $5271,X
 C3/77C7: FE 45 98     INC $9845,X
@@ -150,7 +151,7 @@ C3/77CF: CA           DEX
 C3/77D0: 53 88        EOR ($88,S),Y
 C3/77D2: 14 33        TRB $33
 C3/77D4: 28           PLP
-C3/77D5: 20 0B 07     JSR $070B
+C3/77D5: 20 0B 07     JSR Routine_C3070B
 C3/77D8: 76 61        ROR $61,X
 C3/77DA: 1A           INC
 C3/77DB: 85 94        STA $94
@@ -182,19 +183,19 @@ C3/780E: 4D 5B E6     EOR $E65B
 C3/7811: 03 4D        ORA $4D,S
 C3/7813: 5B           TCD
 C3/7814: 0B           PHD
-C3/7815: 50 2F        BVC $7846
+C3/7815: 50 2F        BVC Local_C37846
 C3/7817: 4E 5B 57     LSR $575B
 C3/781A: 17 19        ORA [$19],Y
 C3/781C: 41 82        EOR ($82,X)
 C3/781E: 02 4B        COP $4B
-C3/7820: D0 5B        BNE $787D
+C3/7820: D0 5B        BNE Routine_C3787D
 C3/7822: 4D 41 45     EOR $4541
 C3/7825: 1E 13 5B     ASL $5B13,X
 C3/7828: 7D 19 B7     ADC $B719,X
 C3/782B: 72 84        ADC ($84)
 C3/782D: 53 59        EOR ($59,S),Y
 C3/782F: EE 07 4D     INC $4D07
-C3/7832: 20 41 44     JSR $4441
+C3/7832: 20 41 44     JSR Routine_C34441
 C3/7835: 02 0B        COP $0B
 C3/7837: D6 49        DEC $49,X
 C3/7839: F9 17 85     SBC $8517,Y
@@ -202,11 +203,12 @@ C3/783C: 06 5B        ASL $5B
 C3/783E: EE 1A 4A     INC $4A1A
 C3/7841: DC 13 4B     JMP [$4B13]
 C3/7844: 00 DD        BRK $DD
+Local_C37846:
 C3/7846: 97 33        STA [$33],Y
 C3/7848: 5B           TCD
 C3/7849: 88           DEY
 C3/784A: 11 DC        ORA ($DC),Y
 C3/784C: 0A           ASL
 C3/784D: 0A           ASL
-C3/784E: 10 48        BPL $7898
+C3/784E: 10 48        BPL Routine_C37898
 C3/7850: 40           RTI

@@ -8,7 +8,7 @@ D1/271A: 41 08        EOR ($08,X)
 D1/271C: 41 08        EOR ($08,X)
 D1/271E: 04 01        TSB $01
 D1/2720: 0A           ASL
-D1/2721: 30 08        BMI $272B
+D1/2721: 30 08        BMI Routine_D1272B
 D1/2723: 84 FC        STY $FC
 D1/2725: 78           SEI
 D1/2726: EE 40 00     INC $0040

@@ -1,6 +1,7 @@
 ; Bank: CE | Start Address: E94D
 Routine_CEE94D:
 CE/E94D: 7B           TDC
+Local_CEE94E:
 CE/E94E: 99 DD C4     STA $C4DD,Y
 CE/E951: 99 15 C5     STA $C515,Y
 CE/E954: 99 4D C5     STA $C54D,Y
@@ -21,6 +22,6 @@ CE/E97E: 88           DEY
 CE/E97F: 88           DEY
 CE/E980: 88           DEY
 CE/E981: 88           DEY
-CE/E982: D0 CA        BNE $E94E
+CE/E982: D0 CA        BNE Local_CEE94E
 CE/E984: E6 45        INC $45
 CE/E986: 60           RTS

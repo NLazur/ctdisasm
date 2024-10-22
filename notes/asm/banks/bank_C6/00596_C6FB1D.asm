@@ -22,6 +22,6 @@ C6/FB41: 01 40        ORA ($40,X)
 C6/FB43: 11 01        ORA ($01),Y
 C6/FB45: 32 01        AND ($01)
 C6/FB47: 54 01 20     MVN $01,$20
-C6/FB4A: 10 20        BPL $FB6C
+C6/FB4A: 10 20        BPL Routine_C6FB6C
 C6/FB4C: 00 00        BRK $00
 C6/FB4E: 40           RTI

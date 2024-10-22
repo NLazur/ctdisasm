@@ -67,10 +67,11 @@ CC/FAD5: FF FF 95 C9  SBC $C995FF,X
 CC/FAD9: B5 C9        LDA $C9,X
 CC/FADB: C7 95        CMP [$95]
 CC/FADD: 00 00        BRK $00
-CC/FADF: 80 00        BRA $FAE1
+CC/FADF: 80 00        BRA Local_CCFAE1
+Local_CCFAE1:
 CC/FAE1: 00 01        BRK $01
 CC/FAE3: 02 00        COP $00
-CC/FAE5: 82 00 02     BRL $CCFCE8
+CC/FAE5: 82 00 02     BRL Routine_CCFCE8
 CC/FAE8: 01 02        ORA ($02,X)
 CC/FAEA: 00 82        BRK $82
 CC/FAEC: 00 02        BRK $02
@@ -81,7 +82,7 @@ CC/FAF5: 0A           ASL
 CC/FAF6: 2A           ROL
 CC/FAF7: 0C 2A 0E     TSB $0E2A
 CC/FAFA: 2A           ROL
-CC/FAFB: 20 2C 22     JSR $222C
+CC/FAFB: 20 2C 22     JSR Routine_CC222C
 CC/FAFE: 2C 24 2C     BIT $2C24
 CC/FB01: 26 2C        ROL $2C
 CC/FB03: 28           PLP
@@ -136,6 +137,6 @@ CC/FB6A: C2 CA        REP #$CA
 CC/FB6C: CE BE 5C     DEC $5CBE
 CC/FB6F: 00 01        BRK $01
 CC/FB71: 04 09        TSB $09
-CC/FB73: 10 19        BPL $FB8E
+CC/FB73: 10 19        BPL Routine_CCFB8E
 CC/FB75: 24 31        BIT $31
 CC/FB77: 40           RTI

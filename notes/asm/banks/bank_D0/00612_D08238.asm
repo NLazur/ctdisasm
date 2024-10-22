@@ -9,7 +9,7 @@ D0/8246: 79 79 1F     ADC $1F79,Y
 D0/8249: FF F1 F1 C4  SBC $C4F1F1,X
 D0/824D: C4 1B        CPY $1B
 D0/824F: 1F 3E 3E 70  ORA $703E3E,X
-D0/8253: 70 E2        BVS $8237
+D0/8253: 70 E2        BVS Routine_D08237
 D0/8255: E2 44        SEP #$44
 D0/8257: C4 0C        CPY $0C
 D0/8259: 0C 14 1C     TSB $1C14
@@ -21,12 +21,13 @@ D0/8265: 65 23        ADC $23
 D0/8267: 23 6C        AND $6C,S
 D0/8269: 6C 9E 9E     JMP ($9E9E)
 D0/826C: C0 C0 80     CPY #$80C0
-D0/826F: 80 00        BRA $8271
+D0/826F: 80 00        BRA Local_D08271
+Local_D08271:
 D0/8271: 00 02        BRK $02
 D0/8273: 02 00        COP $00
 D0/8275: 00 80        BRK $80
-D0/8277: 80 10        BRA $8289
-D0/8279: 10 61        BPL $82DC
+D0/8277: 80 10        BRA Local_D08289
+D0/8279: 10 61        BPL Routine_D082DC
 D0/827B: 61 63        ADC ($63,X)
 D0/827D: 63 C2        ADC $C2,S
 D0/827F: C2 C0        REP #$C0
@@ -34,8 +35,9 @@ D0/8281: C0 80 80     CPY #$8080
 D0/8284: 02 02        COP $02
 D0/8286: 03 03        ORA $03,S
 D0/8288: 08           PHP
+Local_D08289:
 D0/8289: 08           PHP
-D0/828A: 80 80        BRA $820C
+D0/828A: 80 80        BRA Routine_D0820C
 D0/828C: 00 00        BRK $00
 D0/828E: 02 02        COP $02
 D0/8290: 00 00        BRK $00

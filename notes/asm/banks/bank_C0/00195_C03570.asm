@@ -1,14 +1,15 @@
 ; Bank: C0 | Start Address: 3570
 Routine_C03570:
 C0/3570: A5 2D        LDA $2D
-C0/3572: D0 06        BNE $357A
+C0/3572: D0 06        BNE Local_C0357A
 C0/3574: A2 E0 7F     LDX #$7FE0
-C0/3577: 82 A4 F8     BRL $C02E1E
+C0/3577: 82 A4 F8     BRL Routine_C02E1E
+Local_C0357A:
 C0/357A: A5 29        LDA $29
-C0/357C: D0 34        BNE $35B2
+C0/357C: D0 34        BNE Routine_C035B2
 C0/357E: A6 6D        LDX $6D
 C0/3580: BF 00 0A 7F  LDA $7F0A00,X
-C0/3584: D0 21        BNE $35A7
+C0/3584: D0 21        BNE Routine_C035A7
 C0/3586: A9 01        LDA #$01
 C0/3588: 9F 00 0A 7F  STA $7F0A00,X
 C0/358C: BB           TYX

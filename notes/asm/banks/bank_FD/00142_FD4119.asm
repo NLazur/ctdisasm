@@ -18,7 +18,7 @@ FD/4135: F7 33        SBC [$33],Y
 FD/4137: F3 00        SBC ($00,S),Y
 FD/4139: 27 BF        AND [$BF]
 FD/413B: 27 6B        AND [$6B]
-FD/413D: 4C DE 89     JMP $89DE
+FD/413D: 4C DE 89     JMP Routine_FD89DE
 FD/4140: 18           CLC
 FD/4141: 00 1E        BRK $1E
 FD/4143: 63 0E        ADC $0E,S
@@ -61,6 +61,7 @@ FD/4193: 17 00        ORA [$00],Y
 FD/4195: 0C BB 04     TSB $04BB
 FD/4198: AE F0 01     LDX $01F0
 FD/419B: FE 89 80     INC $8089,X
+Local_FD419E:
 FD/419E: 7F 44 3B 22  ADC $223B44,X
 FD/41A2: 1D 2D 90     ORA $902D,X
 FD/41A5: 86 0E        STX $0E
@@ -80,6 +81,7 @@ FD/41C5: 65 1C        ADC $1C
 FD/41C7: C6 17        DEC $17
 FD/41C9: 0E 66 42     ASL $4266
 FD/41CC: 47 00        EOR [$00]
+Local_FD41CE:
 FD/41CE: 0E 2F 3E     ASL $3E2F
 FD/41D1: C3 13        CMP $13,S
 FD/41D3: CD 6B 56     CMP $566B
@@ -92,19 +94,19 @@ FD/41E5: F3 48        SBC ($48,S),Y
 FD/41E7: B1 80        LDA ($80),Y
 FD/41E9: 48           PHA
 FD/41EA: B1 49        LDA ($49),Y
-FD/41EC: B0 01        BCS $41EF
-FD/41EE: F0 08        BEQ $41F8
+FD/41EC: B0 01        BCS Routine_FD41EF
+FD/41EE: F0 08        BEQ Routine_FD41F8
 FD/41F0: 02 00        COP $00
 FD/41F2: 00 E4        BRK $E4
 FD/41F4: 18           CLC
-FD/41F5: F0 0C        BEQ $4203
+FD/41F5: F0 0C        BEQ Routine_FD4203
 FD/41F7: FF F7 7F 7F  SBC $7F7FF7,X
 FD/41FB: 00 A9        BRK $A9
 FD/41FD: C9 11        CMP #$11
 FD/41FF: 95 95        STA $95,X
 FD/4201: DF D1 9F 00  CMP $009FD1,X
-FD/4205: 10 C7        BPL $41CE
-FD/4207: 30 35        BMI $423E
+FD/4205: 10 C7        BPL Local_FD41CE
+FD/4207: 30 35        BMI Routine_FD423E
 FD/4209: 8F 77 37 FF  STA $FF3777
 FD/420D: 00 9F        BRK $9F
 FD/420F: B9 3B 51     LDA $513B,Y
@@ -113,7 +115,7 @@ FD/4214: 91 91        STA ($91),Y
 FD/4216: 00 28        BRK $28
 FD/4218: 11 AA        ORA ($AA),Y
 FD/421A: F1 88        SBC ($88),Y
-FD/421C: 70 80        BVS $419E
+FD/421C: 70 80        BVS Local_FD419E
 FD/421E: 48           PHA
 FD/421F: 00 00        BRK $00
 FD/4221: 96 C0        STX $C0,Y

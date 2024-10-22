@@ -2,6 +2,7 @@
 Routine_C17E4A:
 C1/7E4A: E0 60 94     CPX #$9460
 C1/7E4D: 61 EC        ADC ($EC,X)
+Local_C17E4F:
 C1/7E4F: 61 20        ADC ($20,X)
 C1/7E51: 62 A7 62     PER $C1E0FB
 C1/7E54: B2 62        LDA ($62)
@@ -19,35 +20,53 @@ C1/7E6D: 64 CE        STZ $CE
 C1/7E6F: 64 F8        STZ $F8
 C1/7E71: 64 02        STZ $02
 C1/7E73: 65 04        ADC $04
-C1/7E75: 50 04        BVC $7E7B
-C1/7E77: 50 28        BVC $7EA1
+C1/7E75: 50 04        BVC Local_C17E7B
+C1/7E77: 50 28        BVC Local_C17EA1
 C1/7E79: 65 49        ADC $49
+Local_C17E7B:
 C1/7E7B: 65 49        ADC $49
 C1/7E7D: 65 49        ADC $49
 C1/7E7F: 65 49        ADC $49
 C1/7E81: 65 65        ADC $65
 C1/7E83: 65 04        ADC $04
-C1/7E85: 50 04        BVC $7E8B
-C1/7E87: 50 04        BVC $7E8D
-C1/7E89: 50 04        BVC $7E8F
-C1/7E8B: 50 04        BVC $7E91
-C1/7E8D: 50 04        BVC $7E93
-C1/7E8F: 50 04        BVC $7E95
-C1/7E91: 50 04        BVC $7E97
-C1/7E93: 50 04        BVC $7E99
-C1/7E95: 50 04        BVC $7E9B
-C1/7E97: 50 04        BVC $7E9D
-C1/7E99: 50 04        BVC $7E9F
-C1/7E9B: 50 04        BVC $7EA1
-C1/7E9D: 50 04        BVC $7EA3
-C1/7E9F: 50 04        BVC $7EA5
-C1/7EA1: 50 04        BVC $7EA7
-C1/7EA3: 50 04        BVC $7EA9
-C1/7EA5: 50 04        BVC $7EAB
-C1/7EA7: 50 A6        BVC $7E4F
+C1/7E85: 50 04        BVC Local_C17E8B
+C1/7E87: 50 04        BVC Local_C17E8D
+C1/7E89: 50 04        BVC Local_C17E8F
+Local_C17E8B:
+C1/7E8B: 50 04        BVC Local_C17E91
+Local_C17E8D:
+C1/7E8D: 50 04        BVC Local_C17E93
+Local_C17E8F:
+C1/7E8F: 50 04        BVC Local_C17E95
+Local_C17E91:
+C1/7E91: 50 04        BVC Local_C17E97
+Local_C17E93:
+C1/7E93: 50 04        BVC Local_C17E99
+Local_C17E95:
+C1/7E95: 50 04        BVC Local_C17E9B
+Local_C17E97:
+C1/7E97: 50 04        BVC Local_C17E9D
+Local_C17E99:
+C1/7E99: 50 04        BVC Local_C17E9F
+Local_C17E9B:
+C1/7E9B: 50 04        BVC Local_C17EA1
+Local_C17E9D:
+C1/7E9D: 50 04        BVC Local_C17EA3
+Local_C17E9F:
+C1/7E9F: 50 04        BVC Local_C17EA5
+Local_C17EA1:
+C1/7EA1: 50 04        BVC Local_C17EA7
+Local_C17EA3:
+C1/7EA3: 50 04        BVC Local_C17EA9
+Local_C17EA5:
+C1/7EA5: 50 04        BVC Local_C17EAB
+Local_C17EA7:
+C1/7EA7: 50 A6        BVC Local_C17E4F
+Local_C17EA9:
 C1/7EA9: 65 3B        ADC $3B
+Local_C17EAB:
 C1/7EAB: 6A           ROR
-C1/7EAC: 50 6A        BVC $7F18
+C1/7EAC: 50 6A        BVC Routine_C17F18
 C1/7EAE: 57 6A        EOR [$6A],Y
 C1/7EB0: A6 65        LDX $65
 C1/7EB2: 3B           TSC
@@ -57,54 +76,89 @@ C1/7EB6: 04 50        TSB $50
 C1/7EB8: 04 50        TSB $50
 C1/7EBA: 04 50        TSB $50
 C1/7EBC: 5E 6A 04     LSR $046A,X
-C1/7EBF: 50 28        BVC $7EE9
+C1/7EBF: 50 28        BVC Local_C17EE9
 C1/7EC1: 6C C7 6C     JMP ($6CC7)
 C1/7EC4: 04 50        TSB $50
 C1/7EC6: 04 50        TSB $50
-C1/7EC8: D0 6C        BNE $7F36
+C1/7EC8: D0 6C        BNE Local_C17F36
 C1/7ECA: FD 6D 04     SBC $046D,X
-C1/7ECD: 50 04        BVC $7ED3
-C1/7ECF: 50 04        BVC $7ED5
-C1/7ED1: 50 04        BVC $7ED7
-C1/7ED3: 50 04        BVC $7ED9
-C1/7ED5: 50 04        BVC $7EDB
-C1/7ED7: 50 04        BVC $7EDD
-C1/7ED9: 50 04        BVC $7EDF
-C1/7EDB: 50 04        BVC $7EE1
-C1/7EDD: 50 04        BVC $7EE3
-C1/7EDF: 50 04        BVC $7EE5
-C1/7EE1: 50 04        BVC $7EE7
-C1/7EE3: 50 04        BVC $7EE9
-C1/7EE5: 50 04        BVC $7EEB
-C1/7EE7: 50 04        BVC $7EED
-C1/7EE9: 50 04        BVC $7EEF
-C1/7EEB: 50 04        BVC $7EF1
-C1/7EED: 50 04        BVC $7EF3
-C1/7EEF: 50 04        BVC $7EF5
-C1/7EF1: 50 04        BVC $7EF7
-C1/7EF3: 50 04        BVC $7EF9
-C1/7EF5: 50 04        BVC $7EFB
-C1/7EF7: 50 00        BVC $7EF9
-C1/7EF9: 70 3E        BVS $7F39
+C1/7ECD: 50 04        BVC Local_C17ED3
+C1/7ECF: 50 04        BVC Local_C17ED5
+C1/7ED1: 50 04        BVC Local_C17ED7
+Local_C17ED3:
+C1/7ED3: 50 04        BVC Local_C17ED9
+Local_C17ED5:
+C1/7ED5: 50 04        BVC Local_C17EDB
+Local_C17ED7:
+C1/7ED7: 50 04        BVC Local_C17EDD
+Local_C17ED9:
+C1/7ED9: 50 04        BVC Local_C17EDF
+Local_C17EDB:
+C1/7EDB: 50 04        BVC Local_C17EE1
+Local_C17EDD:
+C1/7EDD: 50 04        BVC Local_C17EE3
+Local_C17EDF:
+C1/7EDF: 50 04        BVC Local_C17EE5
+Local_C17EE1:
+C1/7EE1: 50 04        BVC Local_C17EE7
+Local_C17EE3:
+C1/7EE3: 50 04        BVC Local_C17EE9
+Local_C17EE5:
+C1/7EE5: 50 04        BVC Local_C17EEB
+Local_C17EE7:
+C1/7EE7: 50 04        BVC Local_C17EED
+Local_C17EE9:
+C1/7EE9: 50 04        BVC Local_C17EEF
+Local_C17EEB:
+C1/7EEB: 50 04        BVC Local_C17EF1
+Local_C17EED:
+C1/7EED: 50 04        BVC Local_C17EF3
+Local_C17EEF:
+C1/7EEF: 50 04        BVC Local_C17EF5
+Local_C17EF1:
+C1/7EF1: 50 04        BVC Local_C17EF7
+Local_C17EF3:
+C1/7EF3: 50 04        BVC Local_C17EF9
+Local_C17EF5:
+C1/7EF5: 50 04        BVC Local_C17EFB
+Local_C17EF7:
+C1/7EF7: 50 00        BVC Local_C17EF9
+Local_C17EF9:
+C1/7EF9: 70 3E        BVS Routine_C17F39
+Local_C17EFB:
 C1/7EFB: 72 60        ADC ($60)
 C1/7EFD: 72 82        ADC ($82)
 C1/7EFF: 72 A7        ADC ($A7)
 C1/7F01: 72 FC        ADC ($FC)
 C1/7F03: 72 04        ADC ($04)
-C1/7F05: 50 04        BVC $7F0B
-C1/7F07: 50 04        BVC $7F0D
-C1/7F09: 50 04        BVC $7F0F
-C1/7F0B: 50 04        BVC $7F11
-C1/7F0D: 50 04        BVC $7F13
-C1/7F0F: 50 04        BVC $7F15
-C1/7F11: 50 04        BVC $7F17
-C1/7F13: 50 04        BVC $7F19
-C1/7F15: 50 04        BVC $7F1B
-C1/7F17: 50 09        BVC $7F22
+C1/7F05: 50 04        BVC Local_C17F0B
+Local_C17F07:
+C1/7F07: 50 04        BVC Local_C17F0D
+Local_C17F09:
+C1/7F09: 50 04        BVC Local_C17F0F
+Local_C17F0B:
+C1/7F0B: 50 04        BVC Local_C17F11
+Local_C17F0D:
+C1/7F0D: 50 04        BVC Local_C17F13
+Local_C17F0F:
+C1/7F0F: 50 04        BVC Local_C17F15
+Local_C17F11:
+C1/7F11: 50 04        BVC Local_C17F17
+Local_C17F13:
+C1/7F13: 50 04        BVC Local_C17F19
+Local_C17F15:
+C1/7F15: 50 04        BVC Local_C17F1B
+Local_C17F17:
+C1/7F17: 50 09        BVC Routine_C17F22
+Local_C17F19:
 C1/7F19: 73 38        ADC ($38,S),Y
+Local_C17F1B:
 C1/7F1B: 73 67        ADC ($67,S),Y
+Local_C17F1D:
 C1/7F1D: 73 1B        ADC ($1B,S),Y
+Local_C17F1F:
 C1/7F1F: 75 56        ADC $56,X
+Local_C17F21:
 C1/7F21: 76 BA        ROR $BA,X
 C1/7F23: 76 71        ROR $71,X
 C1/7F25: 76 18        ROR $18,X
@@ -116,18 +170,19 @@ C1/7F2E: 04 50        TSB $50
 C1/7F30: 04 50        TSB $50
 C1/7F32: 04 50        TSB $50
 C1/7F34: 04 50        TSB $50
+Local_C17F36:
 C1/7F36: 04 50        TSB $50
 C1/7F38: BD 0C 1D     LDA $1D0C,X
 C1/7F3B: 9D 39 A0     STA $A039,X
 C1/7F3E: BD 23 1D     LDA $1D23,X
 C1/7F41: 9D 50 A0     STA $A050,X
-C1/7F44: 20 59 2C     JSR $2C59
-C1/7F47: 4C AF 2C     JMP $2CAF
-C1/7F4A: 50 BB        BVC $7F07
-C1/7F4C: 50 BB        BVC $7F09
-C1/7F4E: 50 BB        BVC $7F0B
-C1/7F50: 50 BB        BVC $7F0D
-C1/7F52: 50 51        BVC $7FA5
+C1/7F44: 20 59 2C     JSR Routine_C12C59
+C1/7F47: 4C AF 2C     JMP Routine_C12CAF
+C1/7F4A: 50 BB        BVC Local_C17F07
+C1/7F4C: 50 BB        BVC Local_C17F09
+C1/7F4E: 50 BB        BVC Local_C17F0B
+C1/7F50: 50 BB        BVC Local_C17F0D
+C1/7F52: 50 51        BVC Routine_C17FA5
 C1/7F54: 66 E6        ROR $E6
 C1/7F56: 6A           ROR
 C1/7F57: FB           XCE
@@ -136,8 +191,8 @@ C1/7F59: 02 6B        COP $6B
 C1/7F5B: 51 66        EOR ($66),Y
 C1/7F5D: E6 6A        INC $6A
 C1/7F5F: BB           TYX
-C1/7F60: 50 BB        BVC $7F1D
-C1/7F62: 50 BB        BVC $7F1F
-C1/7F64: 50 BB        BVC $7F21
-C1/7F66: 50 09        BVC $7F71
+C1/7F60: 50 BB        BVC Local_C17F1D
+C1/7F62: 50 BB        BVC Local_C17F1F
+C1/7F64: 50 BB        BVC Local_C17F21
+C1/7F66: 50 09        BVC Routine_C17F71
 C1/7F68: 6B           RTL

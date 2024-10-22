@@ -1,16 +1,17 @@
 ; Bank: D0 | Start Address: 6801
 Routine_D06801:
-D0/6801: F0 80        BEQ $6783
+D0/6801: F0 80        BEQ Routine_D06783
 D0/6803: C0 00        CPY #$00
 D0/6805: 00 01        BRK $01
 D0/6807: 01 40        ORA ($40,X)
 D0/6809: C0 00        CPY #$00
-D0/680B: 80 00        BRA $680D
+D0/680B: 80 00        BRA Local_D0680D
+Local_D0680D:
 D0/680D: 00 00        BRK $00
 D0/680F: 00 00        BRK $00
 D0/6811: 00 00        BRK $00
 D0/6813: 00 20        BRK $20
-D0/6815: 20 00 80     JSR $8000
+D0/6815: 20 00 80     JSR Routine_D08000
 D0/6818: 01 01        ORA ($01,X)
 D0/681A: 04 07        TSB $07
 D0/681C: 1B           TCS
@@ -41,9 +42,10 @@ D0/6857: 00 FC        BRK $FC
 D0/6859: 03 01        ORA $01,S
 D0/685B: FF FF E0 F0  SBC $F0E0FF,X
 D0/685F: 0F 04 FC 80  ORA $80FC04
-D0/6863: 80 00        BRA $6865
+D0/6863: 80 00        BRA Local_D06865
+Local_D06865:
 D0/6865: 00 00        BRK $00
 D0/6867: 00 1C        BRK $1C
 D0/6869: F4 F8 08     PEA $08F8
-D0/686C: 90 70        BCC $68DE
+D0/686C: 90 70        BCC Routine_D068DE
 D0/686E: 40           RTI

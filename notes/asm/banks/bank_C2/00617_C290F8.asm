@@ -1,10 +1,10 @@
 ; Bank: C2 | Start Address: 90F8
 Routine_C290F8:
 C2/90F8: FC F8 F4     JSR ($F4F8,X)
-C2/90FB: F0 08        BEQ $9105
+C2/90FB: F0 08        BEQ Routine_C29105
 C2/90FD: C2 30        REP #$30
 C2/90FF: AD 7E 0D     LDA $0D7E
-C2/9102: F0 1B        BEQ $911F
+C2/9102: F0 1B        BEQ Local_C2911F
 C2/9104: A2 00 24     LDX #$2400
 C2/9107: A0 96 9B     LDY #$9B96
 C2/910A: A9 FF 01     LDA #$01FF
@@ -14,5 +14,6 @@ C2/9113: A2 00 24     LDX #$2400
 C2/9116: A0 02 24     LDY #$2402
 C2/9119: A9 FD 00     LDA #$00FD
 C2/911C: 54 7E 7E     MVN $7E,$7E
+Local_C2911F:
 C2/911F: 28           PLP
 C2/9120: 60           RTS

@@ -7,8 +7,8 @@ D1/6BC1: 00 00        BRK $00
 D1/6BC3: 91 08        STA ($08),Y
 D1/6BC5: A2 FF        LDX #$FF
 D1/6BC7: 8A           TXA
-D1/6BC8: 30 80        BMI $6B4A
-D1/6BCA: 70 0F        BVS $6BDB
+D1/6BC8: 30 80        BMI Routine_D16B4A
+D1/6BCA: 70 0F        BVS Routine_D16BDB
 D1/6BCC: 83 07        STA $07,S
 D1/6BCE: 88           DEY
 D1/6BCF: 00 89        BRK $89

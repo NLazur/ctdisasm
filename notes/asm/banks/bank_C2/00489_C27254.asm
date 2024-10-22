@@ -2,6 +2,7 @@
 Routine_C27254:
 C2/7254: C2 20        REP #$20
 C2/7256: 64 0C        STZ $0C
+Local_C27258:
 C2/7258: A6 0C        LDX $0C
 C2/725A: BF B8 72 C2  LDA $C272B8,X
 C2/725E: 85 08        STA $08
@@ -10,6 +11,7 @@ C2/7262: A2 00 90     LDX #$9000
 C2/7265: 86 0A        STX $0A
 C2/7267: A9 20        LDA #$20
 C2/7269: 85 00        STA $00
+Local_C2726B:
 C2/726B: A6 08        LDX $08
 C2/726D: 8E 16 21     STX $2116
 C2/7270: A9 80        LDA #$80
@@ -35,12 +37,12 @@ C2/729D: 69 40 00     ADC #$0040
 C2/72A0: 85 0A        STA $0A
 C2/72A2: E2 20        SEP #$20
 C2/72A4: C6 00        DEC $00
-C2/72A6: D0 C3        BNE $726B
+C2/72A6: D0 C3        BNE Local_C2726B
 C2/72A8: C2 20        REP #$20
 C2/72AA: E6 0C        INC $0C
 C2/72AC: E6 0C        INC $0C
 C2/72AE: A6 0C        LDX $0C
 C2/72B0: E0 20 00     CPX #$0020
-C2/72B3: D0 A3        BNE $7258
+C2/72B3: D0 A3        BNE Local_C27258
 C2/72B5: E2 20        SEP #$20
 C2/72B7: 60           RTS

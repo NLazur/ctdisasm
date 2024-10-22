@@ -2,8 +2,9 @@
 Routine_C09CA1:
 C0/9CA1: AD 17 01     LDA $0117
 C0/9CA4: 89 80        BIT #$80
-C0/9CA6: F0 03        BEQ $9CAB
-C0/9CA8: 82 81 00     BRL $C09D2C
+C0/9CA6: F0 03        BEQ Local_C09CAB
+C0/9CA8: 82 81 00     BRL Routine_C09D2C
+Local_C09CAB:
 C0/9CAB: A5 69        LDA $69
 C0/9CAD: 25 1F        AND $1F
 C0/9CAF: EB           XBA
@@ -12,7 +13,7 @@ C0/9CB2: 25 1E        AND $1E
 C0/9CB4: C2 10        REP #$10
 C0/9CB6: AA           TAX
 C0/9CB7: BF 80 70 7E  LDA $7E7080,X
-C0/9CBB: 30 78        BMI $9D35
+C0/9CBB: 30 78        BMI Local_C09D35
 C0/9CBD: 8D 02 42     STA $4202
 C0/9CC0: A9 07        LDA #$07
 C0/9CC2: 8D 03 42     STA $4203
@@ -27,19 +28,22 @@ C0/9CD0: AA           TAX
 C0/9CD1: E2 20        SEP #$20
 C0/9CD3: BF 00 00 E5  LDA $E50000,X
 C0/9CD7: C5 67        CMP $67
-C0/9CD9: F0 0A        BEQ $9CE5
+C0/9CD9: F0 0A        BEQ Local_C09CE5
 C0/9CDB: BF 01 00 E5  LDA $E50001,X
 C0/9CDF: C5 69        CMP $69
-C0/9CE1: F0 12        BEQ $9CF5
-C0/9CE3: 80 47        BRA $9D2C
+C0/9CE1: F0 12        BEQ Local_C09CF5
+C0/9CE3: 80 47        BRA Local_C09D2C
+Local_C09CE5:
 C0/9CE5: BF 01 00 E5  LDA $E50001,X
 C0/9CE9: 38           SEC
 C0/9CEA: E5 69        SBC $69
-C0/9CEC: 10 03        BPL $9CF1
+C0/9CEC: 10 03        BPL Local_C09CF1
 C0/9CEE: 49 FF        EOR #$FF
 C0/9CF0: 1A           INC
+Local_C09CF1:
 C0/9CF1: C9 3F        CMP #$3F
-C0/9CF3: B0 37        BCS $9D2C
+C0/9CF3: B0 37        BCS Local_C09D2C
+Local_C09CF5:
 C0/9CF5: BF 04 00 E5  LDA $E50004,X
 C0/9CF9: 85 52        STA $52
 C0/9CFB: 4A           LSR
@@ -60,11 +64,13 @@ C0/9D21: 8D 15 01     STA $0115
 C0/9D24: AD 17 01     LDA $0117
 C0/9D27: 09 80        ORA #$80
 C0/9D29: 8D 17 01     STA $0117
+Local_C09D2C:
 C0/9D2C: A5 69        LDA $69
 C0/9D2E: 25 1F        AND $1F
 C0/9D30: EB           XBA
 C0/9D31: A5 67        LDA $67
 C0/9D33: 25 1E        AND $1E
+Local_C09D35:
 C0/9D35: A5 73        LDA $73
 C0/9D37: 25 1F        AND $1F
 C0/9D39: EB           XBA
@@ -73,14 +79,15 @@ C0/9D3C: 25 1E        AND $1E
 C0/9D3E: AA           TAX
 C0/9D3F: BF 00 70 7E  LDA $7E7000,X
 C0/9D43: 89 10        BIT #$10
-C0/9D45: F0 0B        BEQ $9D52
+C0/9D45: F0 0B        BEQ Local_C09D52
 C0/9D47: 8E 5B 01     STX $015B
 C0/9D4A: AD 17 01     LDA $0117
 C0/9D4D: 09 10        ORA #$10
 C0/9D4F: 8D 17 01     STA $0117
+Local_C09D52:
 C0/9D52: E2 10        SEP #$10
 C0/9D54: A5 6C        LDA $6C
-C0/9D56: D0 12        BNE $9D6A
+C0/9D56: D0 12        BNE Local_C09D6A
 C0/9D58: A5 6A        LDA $6A
 C0/9D5A: 8D 55 01     STA $0155
 C0/9D5D: AE 97 01     LDX $0197
@@ -88,32 +95,36 @@ C0/9D60: A5 6E        LDA $6E
 C0/9D62: 9D 00 0C     STA $0C00,X
 C0/9D65: A5 6F        LDA $6F
 C0/9D67: 9D 01 0C     STA $0C01,X
+Local_C09D6A:
 C0/9D6A: A5 5E        LDA $5E
 C0/9D6C: 85 34        STA $34
 C0/9D6E: A5 5A        LDA $5A
 C0/9D70: 29 0C        AND #$0C
-C0/9D72: F0 4A        BEQ $9DBE
+C0/9D72: F0 4A        BEQ Routine_C09DBE
 C0/9D74: C9 04        CMP #$04
-C0/9D76: F0 0A        BEQ $9D82
+C0/9D76: F0 0A        BEQ Local_C09D82
 C0/9D78: C9 08        CMP #$08
-C0/9D7A: F0 0C        BEQ $9D88
+C0/9D7A: F0 0C        BEQ Local_C09D88
 C0/9D7C: A9 20        LDA #$20
 C0/9D7E: 85 52        STA $52
-C0/9D80: 80 0A        BRA $9D8C
+C0/9D80: 80 0A        BRA Local_C09D8C
+Local_C09D82:
 C0/9D82: A9 08        LDA #$08
 C0/9D84: 85 52        STA $52
-C0/9D86: 80 04        BRA $9D8C
+C0/9D86: 80 04        BRA Local_C09D8C
+Local_C09D88:
 C0/9D88: A9 10        LDA #$10
 C0/9D8A: 85 52        STA $52
+Local_C09D8C:
 C0/9D8C: A9 08        LDA #$08
 C0/9D8E: 04 34        TSB $34
 C0/9D90: A5 5A        LDA $5A
 C0/9D92: 29 03        AND #$03
-C0/9D94: F0 1E        BEQ $9DB4
+C0/9D94: F0 1E        BEQ Routine_C09DB4
 C0/9D96: 3A           DEC
-C0/9D97: F0 14        BEQ $9DAD
+C0/9D97: F0 14        BEQ Routine_C09DAD
 C0/9D99: 3A           DEC
-C0/9D9A: F0 07        BEQ $9DA3
+C0/9D9A: F0 07        BEQ Routine_C09DA3
 C0/9D9C: A5 52        LDA $52
 C0/9D9E: 85 2A        STA $2A
 C0/9DA0: 64 2B        STZ $2B

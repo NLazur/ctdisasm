@@ -1,9 +1,9 @@
 ; Bank: CF | Start Address: 1A12
 Routine_CF1A12:
 CF/1A12: E0 20 F0     CPX #$F020
-CF/1A15: 90 F8        BCC $1A0F
+CF/1A15: 90 F8        BCC Routine_CF1A0F
 CF/1A17: 08           PHP
-CF/1A18: F0 D8        BEQ $19F2
+CF/1A18: F0 D8        BEQ Routine_CF19F2
 CF/1A1A: E0 A4 E0     CPX #$E0A4
 CF/1A1D: A4 C0        LDY $C0
 CF/1A1F: 48           PHA
@@ -21,6 +21,7 @@ CF/1A34: 00 00        BRK $00
 CF/1A36: 00 00        BRK $00
 CF/1A38: 0C 0C 1E     TSB $1E0C
 CF/1A3B: 12 1F        ORA ($1F)
+Local_CF1A3D:
 CF/1A3D: 0D 1F 8E     ORA $8E1F
 CF/1A40: 00 00        BRK $00
 CF/1A42: 00 00        BRK $00
@@ -44,10 +45,10 @@ CF/1A68: 00 01        BRK $01
 CF/1A6A: 01 01        ORA ($01,X)
 CF/1A6C: 01 01        ORA ($01,X)
 CF/1A6E: 01 01        ORA ($01,X)
-CF/1A70: F0 12        BEQ $1A84
+CF/1A70: F0 12        BEQ Routine_CF1A84
 CF/1A72: F8           SED
 CF/1A73: 8C 78 4C     STY $4C78
-CF/1A76: 70 54        BVS $1ACC
+CF/1A76: 70 54        BVS Routine_CF1ACC
 CF/1A78: E0 A8 C0     CPX #$C0A8
-CF/1A7B: 50 C0        BVC $1A3D
+CF/1A7B: 50 C0        BVC Local_CF1A3D
 CF/1A7D: 60           RTS

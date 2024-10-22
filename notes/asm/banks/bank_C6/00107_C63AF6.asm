@@ -38,7 +38,7 @@ C6/3B2C: 17 00        ORA [$00],Y
 C6/3B2E: 18           CLC
 C6/3B2F: 00 09        BRK $09
 C6/3B31: 08           PHP
-C6/3B32: 20 0A 08     JSR $080A
+C6/3B32: 20 0A 08     JSR Routine_C6080A
 C6/3B35: 19 00 1A     ORA $1A00,Y
 C6/3B38: 28           PLP
 C6/3B39: 00 AF        BRK $AF
@@ -63,7 +63,7 @@ C6/3B61: E2 0C        SEP #$0C
 C6/3B63: A0 E3        LDY #$E3
 C6/3B65: 0C C5 0C     TSB $0CC5
 C6/3B68: F3 08        SBC ($08,S),Y
-C6/3B6A: 10 D6        BPL $3B42
+C6/3B6A: 10 D6        BPL Routine_C63B42
 C6/3B6C: 08           PHP
 C6/3B6D: 00 00        BRK $00
 C6/3B6F: E8           INX
@@ -105,25 +105,27 @@ C6/3BB2: 78           SEI
 C6/3BB3: 00 29        BRK $29
 C6/3BB5: 00 2A        BRK $2A
 C6/3BB7: 14 00        TRB $00
-C6/3BB9: 20 3A 00     JSR $003A
+C6/3BB9: 20 3A 00     JSR Routine_C6003A
+Local_C63BBC:
 C6/3BBC: 2B           PLD
 C6/3BBD: 00 6D        BRK $6D
 C6/3BBF: 93 02        STA ($02,S),Y
 C6/3BC1: 31 40        AND ($40),Y
 C6/3BC3: 41 88        EOR ($88,X)
 C6/3BC5: 08           PHP
-C6/3BC6: 30 48        BMI $3C10
+C6/3BC6: 30 48        BMI Routine_C63C10
 C6/3BC8: BF 08 E0 6A  LDA $6AE008,X
 C6/3BCC: 00 F0        BRK $F0
 C6/3BCE: 54 0C F2     MVN $0C,$F2
-C6/3BD1: 70 10        BVS $3BE3
+C6/3BD1: 70 10        BVS Local_C63BE3
 C6/3BD3: F2 70        SBC ($70)
-C6/3BD5: 10 E5        BPL $3BBC
+C6/3BD5: 10 E5        BPL Local_C63BBC
 C6/3BD7: 0E 00 F5     ASL $F500
 C6/3BDA: 01 10        ORA ($10,X)
-C6/3BDC: 20 D6 0C     JSR $0CD6
+C6/3BDC: 20 D6 0C     JSR Routine_C60CD6
 C6/3BDF: E6 0C        INC $0C
 C6/3BE1: E7 0C        SBC [$0C]
+Local_C63BE3:
 C6/3BE3: F6 00        INC $00,X
 C6/3BE5: 0C F7 0C     TSB $0CF7
 C6/3BE8: EC 00 ED     CPX $ED00

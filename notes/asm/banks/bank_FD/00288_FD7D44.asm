@@ -2,13 +2,14 @@
 Routine_FD7D44:
 FD/7D44: DF E7 DF E7  CMP $E7DFE7,X
 FD/7D48: C7 FF        CMP [$FF]
-FD/7D4A: 80 AB        BRA $7CF7
+Local_FD7D4A:
+FD/7D4A: 80 AB        BRA Routine_FD7CF7
 FD/7D4C: BB           TYX
 FD/7D4D: C7 83        CMP [$83]
 FD/7D4F: FB           XCE
 FD/7D50: C7 C3        CMP [$C3]
 FD/7D52: 01 00        ORA ($00,X)
-FD/7D54: 22 83 14 02  JSR $021483
+FD/7D54: 22 83 14 02  JSR Routine_021483
 FD/7D58: 83 00        STA $00,S
 FD/7D5A: C7 1C        CMP [$1C]
 FD/7D5C: 3B           TSC
@@ -17,20 +18,21 @@ FD/7D60: 3C 0C 33     BIT $330C,X
 FD/7D63: 12 33        ORA ($33)
 FD/7D65: A0 01        LDY #$01
 FD/7D67: 03 0F        ORA $0F,S
-FD/7D69: 80 27        BRA $7D92
+FD/7D69: 80 27        BRA Routine_FD7D92
 FD/7D6B: 03 03        ORA $03,S
 FD/7D6D: 76 00        ROR $00,X
 FD/7D6F: 34 10        BIT $10,X
 FD/7D71: 04 50        TSB $50
 FD/7D73: 42 02        WDM $02
 FD/7D75: 00 34        BRK $34
-FD/7D77: 10 04        BPL $7D7D
-FD/7D79: 90 CF        BCC $7D4A
+FD/7D77: 10 04        BPL Local_FD7D7D
+FD/7D79: 90 CF        BCC Local_FD7D4A
 FD/7D7B: 43 73        EOR $73,S
+Local_FD7D7D:
 FD/7D7D: 1C C5 2E     TRB $2EC5
 FD/7D80: 41 41        EOR ($41,X)
 FD/7D82: C9 C9        CMP #$C9
-FD/7D84: 80 9A        BRA $7D20
+FD/7D84: 80 9A        BRA Routine_FD7D20
 FD/7D86: BE 84 00     LDX $0084,Y
 FD/7D89: 36 D4        ROL $D4,X
 FD/7D8B: 62 00 FF     PER $FD7C8E

@@ -12,6 +12,6 @@ D0/307A: 00 00        BRK $00
 D0/307C: 00 00        BRK $00
 D0/307E: 00 00        BRK $00
 D0/3080: 00 00        BRK $00
-D0/3082: 20 E0 C4     JSR $C4E0
+D0/3082: 20 E0 C4     JSR Routine_D0C4E0
 D0/3085: 3C 7C 83     BIT $837C,X
 D0/3088: 40           RTI

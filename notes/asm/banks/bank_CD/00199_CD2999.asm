@@ -10,7 +10,7 @@ CD/29A3: 29 B6        AND #$B6
 CD/29A5: 29 C2        AND #$C2
 CD/29A7: 29 CE        AND #$CE
 CD/29A9: 29 C2        AND #$C2
-CD/29AB: 20 B9 7A     JSR $7AB9
+CD/29AB: 20 B9 7A     JSR Routine_CD7AB9
 CD/29AE: CA           DEX
 CD/29AF: 99 77 CA     STA $CA77,Y
 CD/29B2: 7B           TDC

@@ -9,11 +9,11 @@ D0/C963: 00 00        BRK $00
 D0/C965: 00 00        BRK $00
 D0/C967: 00 00        BRK $00
 D0/C969: 00 80        BRK $80
-D0/C96B: 80 80        BRA $C8ED
-D0/C96D: 80 C0        BRA $C92F
+D0/C96B: 80 80        BRA Routine_D0C8ED
+D0/C96D: 80 C0        BRA Routine_D0C92F
 D0/C96F: C0 E0        CPY #$E0
 D0/C971: E0 30        CPX #$30
-D0/C973: 30 18        BMI $C98D
+D0/C973: 30 18        BMI Local_D0C98D
 D0/C975: 18           CLC
 D0/C976: 04 04        TSB $04
 D0/C978: 00 00        BRK $00
@@ -26,13 +26,14 @@ D0/C984: 02 03        COP $03
 D0/C986: 0C 0F 00     TSB $000F
 D0/C989: 00 00        BRK $00
 D0/C98B: 00 00        BRK $00
+Local_D0C98D:
 D0/C98D: 00 02        BRK $02
 D0/C98F: 03 20        ORA $20,S
 D0/C991: 3F 87 F8 3F  AND $3FF887,X
 D0/C995: C0 01        CPY #$01
 D0/C997: FE 00 00     INC $0000,X
 D0/C99A: 00 00        BRK $00
-D0/C99C: 30 3F        BMI $C9DD
+D0/C99C: 30 3F        BMI Routine_D0C9DD
 D0/C99E: 03 FC        ORA $FC,S
 D0/C9A0: EF 10 FF 00  SBC $00FF10
 D0/C9A4: FF 00 FF 00  SBC $00FF00,X
@@ -40,6 +41,7 @@ D0/C9A8: 00 00        BRK $00
 D0/C9AA: E0 E0        CPX #$E0
 D0/C9AC: 18           CLC
 D0/C9AD: F8           SED
+Local_D0C9AE:
 D0/C9AE: FC 0C F4     JSR ($F40C,X)
 D0/C9B1: 0C DE 3E     TSB $3EDE
 D0/C9B4: FE 7E 83     INC $837E,X
@@ -65,7 +67,7 @@ D0/C9ED: 00 FF        BRK $FF
 D0/C9EF: 00 FF        BRK $FF
 D0/C9F1: 00 FF        BRK $FF
 D0/C9F3: 00 0F        BRK $0F
-D0/C9F5: F0 1E        BEQ $CA15
+D0/C9F5: F0 1E        BEQ Routine_D0CA15
 D0/C9F7: 1F FD 03 FD  ORA $FD03FD,X
 D0/C9FB: 03 FE        ORA $FE,S
 D0/C9FD: 01 FF        ORA ($FF,X)
@@ -88,8 +90,8 @@ D0/CA22: A0 E0        LDY #$E0
 D0/CA24: 00 80        BRK $80
 D0/CA26: 00 00        BRK $00
 D0/CA28: 66 9E        ROR $9E
-D0/CA2A: B0 70        BCS $CA9C
-D0/CA2C: 80 80        BRA $C9AE
+D0/CA2A: B0 70        BCS Routine_D0CA9C
+D0/CA2C: 80 80        BRA Local_D0C9AE
 D0/CA2E: 00 00        BRK $00
 D0/CA30: 02 03        COP $03
 D0/CA32: 06 06        ASL $06
@@ -98,6 +100,6 @@ D0/CA35: 08           PHP
 D0/CA36: 00 00        BRK $00
 D0/CA38: 01 01        ORA ($01,X)
 D0/CA3A: 03 04        ORA $04,S
-D0/CA3C: 30 3F        BMI $CA7D
+D0/CA3C: 30 3F        BMI Routine_D0CA7D
 D0/CA3E: 86 FE        STX $FE
 D0/CA40: 40           RTI

@@ -10,30 +10,33 @@ C1/078D: 65 82        ADC $82
 C1/078F: AA           TAX
 C1/0790: 86 82        STX $82
 C1/0792: AD F1 95     LDA $95F1
-C1/0795: F0 26        BEQ $07BD
+C1/0795: F0 26        BEQ Local_C107BD
 C1/0797: A5 80        LDA $80
 C1/0799: AA           TAX
 C1/079A: BD 25 9F     LDA $9F25,X
 C1/079D: 1D 28 9F     ORA $9F28,X
-C1/07A0: F0 1B        BEQ $07BD
+C1/07A0: F0 1B        BEQ Local_C107BD
 C1/07A2: AD 17 A1     LDA $A117
-C1/07A5: F0 47        BEQ $07EE
+C1/07A5: F0 47        BEQ Local_C107EE
 C1/07A7: AD DE A6     LDA $A6DE
 C1/07AA: C9 03        CMP #$03
-C1/07AC: F0 40        BEQ $07EE
+C1/07AC: F0 40        BEQ Local_C107EE
 C1/07AE: A5 80        LDA $80
 C1/07B0: CD 15 A1     CMP $A115
-C1/07B3: F0 08        BEQ $07BD
+C1/07B3: F0 08        BEQ Local_C107BD
 C1/07B5: AE 15 A1     LDX $A115
 C1/07B8: BD D9 A6     LDA $A6D9,X
-C1/07BB: 30 31        BMI $07EE
+C1/07BB: 30 31        BMI Local_C107EE
+Local_C107BD:
 C1/07BD: 7B           TDC
 C1/07BE: AA           TAX
 C1/07BF: A9 06        LDA #$06
 C1/07C1: 85 80        STA $80
+Local_C107C3:
 C1/07C3: A9 07        LDA #$07
 C1/07C5: 85 81        STA $81
 C1/07C7: A4 82        LDY $82
+Local_C107C9:
 C1/07C9: BF 41 FA CC  LDA $CCFA41,X
 C1/07CD: 99 C0 0C     STA $0CC0,Y
 C1/07D0: A9 29        LDA #$29
@@ -42,7 +45,7 @@ C1/07D5: C8           INY
 C1/07D6: C8           INY
 C1/07D7: E8           INX
 C1/07D8: C6 81        DEC $81
-C1/07DA: D0 ED        BNE $07C9
+C1/07DA: D0 ED        BNE Local_C107C9
 C1/07DC: C2 21        REP #$21
 C1/07DE: A5 82        LDA $82
 C1/07E0: 69 40 00     ADC #$0040
@@ -50,15 +53,18 @@ C1/07E3: 85 82        STA $82
 C1/07E5: 7B           TDC
 C1/07E6: E2 20        SEP #$20
 C1/07E8: C6 80        DEC $80
-C1/07EA: D0 D7        BNE $07C3
-C1/07EC: 80 2F        BRA $081D
+C1/07EA: D0 D7        BNE Local_C107C3
+C1/07EC: 80 2F        BRA Local_C1081D
+Local_C107EE:
 C1/07EE: 7B           TDC
 C1/07EF: AA           TAX
 C1/07F0: A9 06        LDA #$06
 C1/07F2: 85 80        STA $80
+Local_C107F4:
 C1/07F4: A9 07        LDA #$07
 C1/07F6: 85 81        STA $81
 C1/07F8: A4 82        LDY $82
+Local_C107FA:
 C1/07FA: BF 6B FA CC  LDA $CCFA6B,X
 C1/07FE: 99 C0 0C     STA $0CC0,Y
 C1/0801: A9 29        LDA #$29
@@ -67,7 +73,7 @@ C1/0806: C8           INY
 C1/0807: C8           INY
 C1/0808: E8           INX
 C1/0809: C6 81        DEC $81
-C1/080B: D0 ED        BNE $07FA
+C1/080B: D0 ED        BNE Local_C107FA
 C1/080D: C2 21        REP #$21
 C1/080F: A5 82        LDA $82
 C1/0811: 69 40 00     ADC #$0040
@@ -75,5 +81,6 @@ C1/0814: 85 82        STA $82
 C1/0816: 7B           TDC
 C1/0817: E2 20        SEP #$20
 C1/0819: C6 80        DEC $80
-C1/081B: D0 D7        BNE $07F4
+C1/081B: D0 D7        BNE Local_C107F4
+Local_C1081D:
 C1/081D: 60           RTS

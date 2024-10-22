@@ -8,10 +8,10 @@ C7/2B5C: F4 D0 F8     PEA $F8D0
 C7/2B5F: 68           PLA
 C7/2B60: FE F0 2E     INC $2EF0,X
 C7/2B63: 68           PLA
-C7/2B64: 10 90        BPL $2AF6
+C7/2B64: 10 90        BPL Routine_C72AF6
 C7/2B66: 04 68        TSB $68
 C7/2B68: 18           CLC
-C7/2B69: 90 26        BCC $2B91
+C7/2B69: 90 26        BCC Routine_C72B91
 C7/2B6B: 4D F8 D7     EOR $D7F8
 C7/2B6E: D5 72        CMP $72,X
 C7/2B70: F1 FD        SBC ($FD),Y

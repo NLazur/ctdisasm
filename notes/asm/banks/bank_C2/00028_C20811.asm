@@ -18,8 +18,9 @@ C2/0829: A6 0E        LDX $0E
 C2/082B: 64 08        STZ $08
 C2/082D: BD E7 00     LDA $00E7,X
 C2/0830: 4A           LSR
-C2/0831: B0 02        BCS $0835
+C2/0831: B0 02        BCS Local_C20835
 C2/0833: E6 08        INC $08
+Local_C20835:
 C2/0835: B5 26        LDA $26,X
 C2/0837: 38           SEC
 C2/0838: E9 08 00     SBC #$0008

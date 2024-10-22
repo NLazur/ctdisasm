@@ -4,7 +4,7 @@ FD/5656: 14 15        TRB $15
 FD/5658: 26 27        ROL $27
 FD/565A: 28           PLP
 FD/565B: 29 41        AND #$41
-FD/565D: D0 5C        BNE $56BB
+FD/565D: D0 5C        BNE Local_FD56BB
 FD/565F: 00 5E        BRK $5E
 FD/5661: 09 92        ORA #$92
 FD/5663: 93 95        STA ($95,S),Y
@@ -24,7 +24,7 @@ FD/5680: 37 38        AND [$38],Y
 FD/5682: 39 82 C8     AND $C882,Y
 FD/5685: 42 5D        WDM $5D
 FD/5687: 85 3B        STA $3B
-FD/5689: 70 82        BVS $560D
+FD/5689: 70 82        BVS Routine_FD560D
 FD/568B: 31 32        AND ($32),Y
 FD/568D: 37 02        AND [$02],Y
 FD/568F: 57 10        EOR [$10],Y
@@ -36,7 +36,7 @@ FD/5699: 55 C8        EOR $C8,X
 FD/569B: B6 B7        LDX $B7,Y
 FD/569D: B8           CLV
 FD/569E: C2 03        REP #$03
-FD/56A0: F0 F1        BEQ $5693
+FD/56A0: F0 F1        BEQ Routine_FD5693
 FD/56A2: C7 C2        CMP [$C2]
 FD/56A4: 03 0C        ORA $0C,S
 FD/56A6: 8E 19 01     STX $0119
@@ -49,6 +49,7 @@ FD/56B1: CF 02 00 74  CMP $740002
 FD/56B5: 75 74        ADC $74,X
 FD/56B7: C3 C4        CMP $C4,S
 FD/56B9: C5 C6        CMP $C6
+Local_FD56BB:
 FD/56BB: C7 C0        CMP [$C0]
 FD/56BD: C8           INY
 FD/56BE: C9 D2        CMP #$D2
@@ -89,7 +90,7 @@ FD/5700: 19 9F 00     ORA $009F,Y
 FD/5703: C5 CB        CMP $CB
 FD/5705: 0A           ASL
 FD/5706: 14 80        TRB $80
-FD/5708: 10 38        BPL $5742
+FD/5708: 10 38        BPL Routine_FD5742
 FD/570A: 18           CLC
 FD/570B: 02 97        COP $97
 FD/570D: D4 14        PEI $14
@@ -104,7 +105,7 @@ FD/571E: 5E 06 09     LSR $0906,X
 FD/5721: 91 33        STA ($33),Y
 FD/5723: FF 09 50 03  SBC $035009,X
 FD/5727: CC 84 58     CPY $5884
-FD/572A: 10 2D        BPL $5759
+FD/572A: 10 2D        BPL Routine_FD5759
 FD/572C: D5 01        CMP $01,X
 FD/572E: 41 F8        EOR ($F8,X)
 FD/5730: 0A           ASL

@@ -14,7 +14,7 @@ C0/4C3B: A6 6D        LDX $6D
 C0/4C3D: 9D 80 18     STA $1880,X
 C0/4C40: E2 20        SEP #$20
 C0/4C42: BD 80 0F     LDA $0F80,X
-C0/4C45: 10 28        BPL $4C6F
+C0/4C45: 10 28        BPL Local_C04C6F
 C0/4C47: BD 81 18     LDA $1881,X
 C0/4C4A: EB           XBA
 C0/4C4B: BD 01 18     LDA $1801,X
@@ -34,6 +34,7 @@ C0/4C65: A6 6D        LDX $6D
 C0/4C67: 9D 00 0C     STA $0C00,X
 C0/4C6A: A5 D9        LDA $D9
 C0/4C6C: 9D 01 0C     STA $0C01,X
+Local_C04C6F:
 C0/4C6F: BB           TYX
 C0/4C70: E8           INX
 C0/4C71: E8           INX

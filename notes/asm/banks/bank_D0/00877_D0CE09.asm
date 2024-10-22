@@ -30,14 +30,14 @@ D0/CE43: BC DC DA     LDY $DADC,X
 D0/CE46: 06 00        ASL $00
 D0/CE48: 7B           TDC
 D0/CE49: 06 6F        ASL $6F
-D0/CE4B: 10 7E        BPL $CECB
+D0/CE4B: 10 7E        BPL Routine_D0CECB
 D0/CE4D: 01 3F        ORA ($3F,X)
 D0/CE4F: 00 6F        BRK $6F
-D0/CE51: 10 7C        BPL $CECF
+D0/CE51: 10 7C        BPL Routine_D0CECF
 D0/CE53: 03 34        ORA $34,S
 D0/CE55: 03 03        ORA $03,S
 D0/CE57: 00 26        BRK $26
-D0/CE59: 20 29 16     JSR $1629
+D0/CE59: 20 29 16     JSR Routine_D01629
 D0/CE5C: 36 37        ROL $37,X
 D0/CE5E: 03 00        ORA $00,S
 D0/CE60: 98           TYA

@@ -14,25 +14,27 @@ FE/63C3: 07 14        ORA [$14]
 FE/63C5: 00 0F        BRK $0F
 FE/63C7: D4 6F        PEI $6F
 FE/63C9: 74 EF        STZ $EF,X
+Local_FE63CB:
 FE/63CB: 11 F9        ORA ($F9),Y
 FE/63CD: E1 00        SBC ($00,X)
 FE/63CF: E1 0F        SBC ($0F,X)
 FE/63D1: CE 12 03     DEC $0312
 FE/63D4: 0E 0D C2     ASL $C20D
-FE/63D7: 20 C1 9D     JSR $9DC1
+FE/63D7: 20 C1 9D     JSR Routine_FE9DC1
 FE/63DA: 89 39 08     BIT #$0839
 FE/63DD: F8           SED
 FE/63DE: 11 4D        ORA ($4D),Y
-FE/63E0: 30 00        BMI $63E2
+FE/63E0: 30 00        BMI Local_FE63E2
+Local_FE63E2:
 FE/63E2: 00 FC        BRK $FC
 FE/63E4: 0E F0 C2     ASL $C2F0
 FE/63E7: 3C 88 76     BIT $7688,X
 FE/63EA: 00 8A        BRK $8A
 FE/63EC: F7 10        SBC [$10],Y
-FE/63EE: 10 08        BPL $63F8
+FE/63EE: 10 08        BPL Routine_FE63F8
 FE/63F0: 08           PHP
-FE/63F1: F0 D8        BEQ $63CB
-FE/63F3: 20 AE B0     JSR $B0AE
+FE/63F1: F0 D8        BEQ Local_FE63CB
+FE/63F3: 20 AE B0     JSR Routine_FEB0AE
 FE/63F6: 1D 00 2D     ORA $2D00,X
 FE/63F9: 8A           TXA
 FE/63FA: 04 B5        TSB $B5

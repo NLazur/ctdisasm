@@ -2,9 +2,9 @@
 Routine_C367D2:
 C3/67D2: A5 83        LDA $83
 C3/67D4: 00 4A        BRK $4A
-C3/67D6: 90 31        BCC $6809
+C3/67D6: 90 31        BCC Routine_C36809
 C3/67D8: AE 82 03     LDX $0382
-C3/67DB: 20 CA 08     JSR $08CA
+C3/67DB: 20 CA 08     JSR Routine_C308CA
 C3/67DE: 64 AD        STZ $AD
 C3/67E0: 8D 7F 0E     STA $0E7F
 C3/67E3: 00 C9        BRK $C9
@@ -18,13 +18,14 @@ C3/67F5: 85 81        STA $81
 C3/67F7: E0 1A        CPX #$1A
 C3/67F9: 08           PHP
 C3/67FA: AB           PLB
-C3/67FB: 30 03        BMI $6800
+C3/67FB: 30 03        BMI Local_C36800
 C3/67FD: DC 00 8E     JMP [$8E00]
-C3/6800: 82 03 60     BRL $C3C806
+Local_C36800:
+C3/6800: 82 03 60     BRL Routine_C3C806
 C3/6803: 00 A5        BRK $A5
 C3/6805: 81 C9        STA ($C9,X)
-C3/6807: 20 00 F0     JSR $F000
-C3/680A: 10 60        BPL $686C
+C3/6807: 20 00 F0     JSR Routine_C3F000
+C3/680A: 10 60        BPL Routine_C3686C
 C3/680C: 01 20        ORA ($20,X)
 C3/680E: 00 FB        BRK $FB
 C3/6810: A5 7F        LDA $7F
@@ -32,14 +33,14 @@ C3/6812: 85 81        STA $81
 C3/6814: E6 83        INC $83
 C3/6816: 00 A2        BRK $A2
 C3/6818: 00 FF        BRK $FF
-C3/681A: 80 03        BRA $681F
+C3/681A: 80 03        BRA Routine_C3681F
 C3/681C: A2 FF        LDX #$FF
 C3/681E: 00 00        BRK $00
 C3/6820: 8E 27 05     STX $0527
 C3/6823: A9 50 00     LDA #$0050
 C3/6826: 8D 20 00     STA $0020
 C3/6829: 05 A2        ORA $A2
-C3/682B: F0 04        BEQ $6831
+C3/682B: F0 04        BEQ Routine_C36831
 C3/682D: 8E 21 05     STX $0521
 C3/6830: A2 00        LDX #$00
 C3/6832: 08           PHP

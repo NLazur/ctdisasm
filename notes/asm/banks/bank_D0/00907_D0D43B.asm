@@ -20,6 +20,7 @@ D0/D45C: 00 00        BRK $00
 D0/D45E: 00 00        BRK $00
 D0/D460: 57 83        EOR [$83],Y
 D0/D462: 44 21 1A     MVP $21,$1A
+Local_D0D465:
 D0/D465: 01 00        ORA ($00,X)
 D0/D467: 00 0A        BRK $0A
 D0/D469: FA           PLX
@@ -28,6 +29,6 @@ D0/D46C: 7E 3C BE     ROR $BE3C,X
 D0/D46F: D6 5C        DEC $5C,X
 D0/D471: A8           TAY
 D0/D472: 88           DEY
-D0/D473: 70 F0        BVS $D465
+D0/D473: 70 F0        BVS Local_D0D465
 D0/D475: E0 60        CPX #$60
 D0/D477: 60           RTS

@@ -147,6 +147,7 @@ FD/F11E: 00 08        BRK $08
 FD/F120: 00 04        BRK $04
 FD/F122: 00 A6        BRK $A6
 FD/F124: 08           PHP
+Local_FDF125:
 FD/F125: A5 1B        LDA $1B
 FD/F127: A8           TAY
 FD/F128: B9 00 F8     LDA $F800,Y
@@ -190,5 +191,5 @@ FD/F177: E2 20        SEP #$20
 FD/F179: E8           INX
 FD/F17A: E8           INX
 FD/F17B: E0 40 00     CPX #$0040
-FD/F17E: D0 A5        BNE $F125
+FD/F17E: D0 A5        BNE Local_FDF125
 FD/F180: 60           RTS

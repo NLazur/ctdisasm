@@ -9,7 +9,7 @@ C6/CD2A: 06 BB        ASL $BB
 C6/CD2C: 0C 00 04     TSB $0400
 C6/CD2F: 18           CLC
 C6/CD30: 07 04        ORA [$04]
-C6/CD32: 20 1E 28     JSR $281E
+C6/CD32: 20 1E 28     JSR Routine_C6281E
 C6/CD35: 08           PHP
 C6/CD36: 38           SEC
 C6/CD37: 06 26        ASL $26

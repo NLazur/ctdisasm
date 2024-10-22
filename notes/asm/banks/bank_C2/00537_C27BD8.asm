@@ -19,6 +19,7 @@ C2/7BF9: 54 7F 7F     MVN $7F,$7F
 C2/7BFC: E2 20        SEP #$20
 C2/7BFE: A0 00 90     LDY #$9000
 C2/7C01: A2 00 00     LDX #$0000
+Local_C27C04:
 C2/7C04: BF 28 7C C2  LDA $C27C28,X
 C2/7C08: 99 00 00     STA $0000,Y
 C2/7C0B: 99 20 00     STA $0020,Y
@@ -28,13 +29,14 @@ C2/7C10: C8           INY
 C2/7C11: C2 20        REP #$20
 C2/7C13: 98           TYA
 C2/7C14: 29 0F 00     AND #$000F
-C2/7C17: D0 06        BNE $7C1F
+C2/7C17: D0 06        BNE Local_C27C1F
 C2/7C19: 18           CLC
 C2/7C1A: 98           TYA
 C2/7C1B: 69 30 00     ADC #$0030
 C2/7C1E: A8           TAY
+Local_C27C1F:
 C2/7C1F: E2 20        SEP #$20
 C2/7C21: E0 20 00     CPX #$0020
-C2/7C24: 90 DE        BCC $7C04
+C2/7C24: 90 DE        BCC Local_C27C04
 C2/7C26: AB           PLB
 C2/7C27: 60           RTS

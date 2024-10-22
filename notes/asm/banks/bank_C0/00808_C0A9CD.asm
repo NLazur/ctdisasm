@@ -3,13 +3,13 @@ Routine_C0A9CD:
 C0/A9CD: E2 30        SEP #$30
 C0/A9CF: A6 6D        LDX $6D
 C0/A9D1: BD 01 0E     LDA $0E01,X
-C0/A9D4: 10 30        BPL $AA06
+C0/A9D4: 10 30        BPL Routine_C0AA06
 C0/A9D6: BD 80 0A     LDA $0A80,X
 C0/A9D9: 4A           LSR
 C0/A9DA: 29 FE        AND #$FE
 C0/A9DC: A8           TAY
 C0/A9DD: B9 00 0E     LDA $0E00,Y
-C0/A9E0: 10 10        BPL $A9F2
+C0/A9E0: 10 10        BPL Routine_C0A9F2
 C0/A9E2: 8A           TXA
 C0/A9E3: 99 00 0E     STA $0E00,Y
 C0/A9E6: 9E 01 0E     STZ $0E01,X

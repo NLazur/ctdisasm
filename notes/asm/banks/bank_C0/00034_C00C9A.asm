@@ -1,6 +1,6 @@
 ; Bank: C0 | Start Address: 0C9A
 Routine_C00C9A:
-C0/0C9A: 20 4E 0B     JSR $0B4E
+C0/0C9A: 20 4E 0B     JSR Routine_C00B4E
 C0/0C9D: A6 00        LDX $00
 C0/0C9F: 86 05        STX $05
 C0/0CA1: A4 97        LDY $97
@@ -19,4 +19,4 @@ C0/0CBC: A5 16        LDA $16
 C0/0CBE: 85 04        STA $04
 C0/0CC0: A2 FF 06     LDX #$06FF
 C0/0CC3: 9A           TXS
-C0/0CC4: 82 39 F3     BRL $C00000
+C0/0CC4: 82 39 F3     BRL Routine_C00000

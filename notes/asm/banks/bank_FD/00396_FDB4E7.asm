@@ -2,6 +2,7 @@
 Routine_FDB4E7:
 FD/B4E7: 7B           TDC
 FD/B4E8: AA           TAX
+Local_FDB4E9:
 FD/B4E9: A9 3C        LDA #$3C
 FD/B4EB: 9D D4 B0     STA $B0D4,X
 FD/B4EE: 9D 27 AF     STA $AF27,X
@@ -42,5 +43,5 @@ FD/B548: 9D 4D B1     STA $B14D,X
 FD/B54B: 9D A0 AF     STA $AFA0,X
 FD/B54E: E8           INX
 FD/B54F: E0 0B 00     CPX #$000B
-FD/B552: 90 95        BCC $B4E9
+FD/B552: 90 95        BCC Local_FDB4E9
 FD/B554: 6B           RTL

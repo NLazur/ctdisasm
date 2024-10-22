@@ -10,7 +10,7 @@ FE/445C: E4 2E        CPX $2E
 FE/445E: DE 63 9F     DEC $9F63,X
 FE/4461: D8           CLD
 FE/4462: 27 79        AND [$79]
-FE/4464: 10 81        BPL $43E7
+FE/4464: 10 81        BPL Routine_FE43E7
 FE/4466: 0D 0F 30     ORA $300F
 FE/4469: E0 06 F4     CPX #$F406
 FE/446C: 0B           PHD

@@ -46,7 +46,8 @@ CC/2A48: 00 00        BRK $00
 CC/2A4A: 26 04        ROL $04
 CC/2A4C: 00 0E        BRK $0E
 CC/2A4E: 32 05        AND ($05)
-CC/2A50: 10 00        BPL $2A52
+CC/2A50: 10 00        BPL Local_CC2A52
+Local_CC2A52:
 CC/2A52: 02 3F        COP $3F
 CC/2A54: 87 00        STA [$00]
 CC/2A56: 40           RTI

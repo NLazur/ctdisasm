@@ -8,10 +8,11 @@ C7/2A9C: 41 F2        EOR ($F2,X)
 C7/2A9E: D5 41        CMP $41,X
 C7/2AA0: F2 F0        SBC ($F0)
 C7/2AA2: 03 09        ORA $09,S
+Local_C72AA4:
 C7/2AA4: 91 D0        STA ($D0),Y
 C7/2AA6: F5 C1        SBC $C1,X
 C7/2AA8: F2 F0        SBC ($F0)
 C7/2AAA: 1F 9C D5 C1  ORA $C1D59C,X
 C7/2AAE: F2 F5        SBC ($F5)
-C7/2AB0: 80 F2        BRA $2AA4
+C7/2AB0: 80 F2        BRA Local_C72AA4
 C7/2AB2: 60           RTS

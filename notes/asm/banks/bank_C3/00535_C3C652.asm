@@ -27,13 +27,15 @@ C3/C686: 00 3F        BRK $3F
 C3/C688: 15 00        ORA $00,X
 C3/C68A: E5 19        SBC $19
 C3/C68C: 00 48        BRK $48
-C3/C68E: 10 08        BPL $C698
+C3/C68E: 10 08        BPL Local_C3C698
+Local_C3C690:
 C3/C690: 7F 09 74 04  ADC $047409,X
 C3/C694: 00 B1        BRK $B1
-C3/C696: 10 7F        BPL $C717
+C3/C696: 10 7F        BPL Routine_C3C717
+Local_C3C698:
 C3/C698: 3B           TSC
 C3/C699: 84 E6        STY $E6
-C3/C69B: 80 F3        BRA $C690
+C3/C69B: 80 F3        BRA Local_C3C690
 C3/C69D: 03 3C        ORA $3C,S
 C3/C69F: 09 0B        ORA #$0B
 C3/C6A1: 11 2C        ORA ($2C),Y

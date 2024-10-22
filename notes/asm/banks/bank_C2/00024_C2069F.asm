@@ -1,27 +1,32 @@
 ; Bank: C2 | Start Address: 069F
 Routine_C2069F:
-C2/069F: 80 FE        BRA $069F
+Local_C2069F:
+C2/069F: 80 FE        BRA Local_C2069F
 C2/06A1: C2 20        REP #$20
 C2/06A3: 09 00 FF     ORA #$FF00
 C2/06A6: 49 FF FF     EOR #$FFFF
 C2/06A9: 1A           INC
 C2/06AA: 85 0C        STA $0C
+Local_C206AC:
 C2/06AC: A6 0E        LDX $0E
 C2/06AE: B5 26        LDA $26,X
 C2/06B0: 29 07 00     AND #$0007
-C2/06B3: D0 0C        BNE $06C1
+C2/06B3: D0 0C        BNE Local_C206C1
 C2/06B5: BD E7 00     LDA $00E7,X
 C2/06B8: 3A           DEC
-C2/06B9: 10 03        BPL $06BE
+C2/06B9: 10 03        BPL Local_C206BE
 C2/06BB: A9 7F 00     LDA #$007F
+Local_C206BE:
 C2/06BE: 9D E7 00     STA $00E7,X
+Local_C206C1:
 C2/06C1: B5 26        LDA $26,X
 C2/06C3: 3A           DEC
-C2/06C4: 10 03        BPL $06C9
+C2/06C4: 10 03        BPL Local_C206C9
 C2/06C6: A9 FF 03     LDA #$03FF
+Local_C206C9:
 C2/06C9: 95 26        STA $26,X
 C2/06CB: 29 07 00     AND #$0007
-C2/06CE: F0 05        BEQ $06D5
+C2/06CE: F0 05        BEQ Routine_C206D5
 C2/06D0: C6 0C        DEC $0C
-C2/06D2: D0 D8        BNE $06AC
+C2/06D2: D0 D8        BNE Local_C206AC
 C2/06D4: 60           RTS

@@ -11,91 +11,106 @@ CD/3280: 85 4D        STA $4D
 CD/3282: A2 FE        LDX #$FE
 CD/3284: A9 FF        LDA #$FF
 CD/3286: 85 4F        STA $4F
+Local_CD3288:
 CD/3288: E6 4F        INC $4F
 CD/328A: A5 4F        LDA $4F
 CD/328C: 29 01        AND #$01
-CD/328E: D0 2A        BNE $32BA
+CD/328E: D0 2A        BNE Local_CD32BA
 CD/3290: A5 4B        LDA $4B
 CD/3292: 38           SEC
 CD/3293: F9 00 B8     SBC $B800,Y
-CD/3296: B0 01        BCS $3299
+CD/3296: B0 01        BCS Local_CD3299
 CD/3298: 7B           TDC
+Local_CD3299:
 CD/3299: 9D 00 B9     STA $B900,X
 CD/329C: 8F 80 21 00  STA $002180
 CD/32A0: B9 00 B8     LDA $B800,Y
 CD/32A3: 18           CLC
 CD/32A4: 65 4D        ADC $4D
-CD/32A6: 90 02        BCC $32AA
+CD/32A6: 90 02        BCC Local_CD32AA
 CD/32A8: A9 FF        LDA #$FF
+Local_CD32AA:
 CD/32AA: 9D 01 B9     STA $B901,X
 CD/32AD: 8F 80 21 00  STA $002180
 CD/32B1: CA           DEX
 CD/32B2: CA           DEX
 CD/32B3: C8           INY
 CD/32B4: C4 47        CPY $47
-CD/32B6: D0 D0        BNE $3288
-CD/32B8: 80 20        BRA $32DA
+CD/32B6: D0 D0        BNE Local_CD3288
+CD/32B8: 80 20        BRA Local_CD32DA
+Local_CD32BA:
 CD/32BA: A5 4B        LDA $4B
 CD/32BC: 38           SEC
 CD/32BD: F9 00 B8     SBC $B800,Y
-CD/32C0: B0 01        BCS $32C3
+CD/32C0: B0 01        BCS Local_CD32C3
 CD/32C2: 7B           TDC
+Local_CD32C3:
 CD/32C3: 9D 00 B9     STA $B900,X
 CD/32C6: B9 00 B8     LDA $B800,Y
 CD/32C9: 18           CLC
 CD/32CA: 65 4D        ADC $4D
-CD/32CC: 90 02        BCC $32D0
+CD/32CC: 90 02        BCC Local_CD32D0
 CD/32CE: A9 FF        LDA #$FF
+Local_CD32D0:
 CD/32D0: 9D 01 B9     STA $B901,X
 CD/32D3: CA           DEX
 CD/32D4: CA           DEX
 CD/32D5: C8           INY
 CD/32D6: C4 47        CPY $47
-CD/32D8: D0 AE        BNE $3288
+CD/32D8: D0 AE        BNE Local_CD3288
+Local_CD32DA:
 CD/32DA: 7B           TDC
 CD/32DB: 99 00 B8     STA $B800,Y
 CD/32DE: 88           DEY
 CD/32DF: B9 00 B8     LDA $B800,Y
 CD/32E2: 3A           DEC
 CD/32E3: 85 47        STA $47
+Local_CD32E5:
 CD/32E5: B9 00 B8     LDA $B800,Y
 CD/32E8: D9 FF B7     CMP $B7FF,Y
-CD/32EB: F0 42        BEQ $332F
+CD/32EB: F0 42        BEQ Local_CD332F
 CD/32ED: E6 4F        INC $4F
 CD/32EF: A5 4F        LDA $4F
 CD/32F1: 29 01        AND #$01
-CD/32F3: D0 21        BNE $3316
+CD/32F3: D0 21        BNE Local_CD3316
 CD/32F5: A5 4B        LDA $4B
 CD/32F7: 38           SEC
 CD/32F8: E5 47        SBC $47
-CD/32FA: B0 01        BCS $32FD
+CD/32FA: B0 01        BCS Local_CD32FD
 CD/32FC: 7B           TDC
+Local_CD32FD:
 CD/32FD: 9D 00 B9     STA $B900,X
 CD/3300: 8F 80 21 00  STA $002180
 CD/3304: A5 47        LDA $47
 CD/3306: 18           CLC
 CD/3307: 65 4D        ADC $4D
-CD/3309: 90 02        BCC $330D
+CD/3309: 90 02        BCC Local_CD330D
 CD/330B: A9 FF        LDA #$FF
+Local_CD330D:
 CD/330D: 9D 01 B9     STA $B901,X
 CD/3310: 8F 80 21 00  STA $002180
-CD/3314: 80 17        BRA $332D
+CD/3314: 80 17        BRA Local_CD332D
+Local_CD3316:
 CD/3316: A5 4B        LDA $4B
 CD/3318: 38           SEC
 CD/3319: E5 47        SBC $47
-CD/331B: B0 01        BCS $331E
+CD/331B: B0 01        BCS Local_CD331E
 CD/331D: 7B           TDC
+Local_CD331E:
 CD/331E: 9D 00 B9     STA $B900,X
 CD/3321: A5 47        LDA $47
 CD/3323: 18           CLC
 CD/3324: 65 4D        ADC $4D
-CD/3326: 90 02        BCC $332A
+CD/3326: 90 02        BCC Local_CD332A
 CD/3328: A9 FF        LDA #$FF
+Local_CD332A:
 CD/332A: 9D 01 B9     STA $B901,X
+Local_CD332D:
 CD/332D: CA           DEX
 CD/332E: CA           DEX
+Local_CD332F:
 CD/332F: C6 47        DEC $47
 CD/3331: 88           DEY
-CD/3332: D0 B1        BNE $32E5
+CD/3332: D0 B1        BNE Local_CD32E5
 CD/3334: C2 10        REP #$10
 CD/3336: 60           RTS

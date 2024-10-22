@@ -1,7 +1,7 @@
 ; Bank: D0 | Start Address: 2613
 Routine_D02613:
 D0/2613: C0 40 C0     CPY #$C040
-D0/2616: 80 80        BRA $2598
+D0/2616: 80 80        BRA Routine_D02598
 D0/2618: 03 03        ORA $03,S
 D0/261A: 00 00        BRK $00
 D0/261C: 01 01        ORA ($01,X)
@@ -10,15 +10,17 @@ D0/2620: 1B           TCS
 D0/2621: 1C 2C 3F     TRB $3F2C
 D0/2624: CB           WAI
 D0/2625: CF 1C 1C 7F  CMP $7F1C1C
-D0/2629: 80 BD        BRA $25E8
+D0/2629: 80 BD        BRA Routine_D025E8
 D0/262B: C3 76        CMP $76,S
 D0/262D: 8E D8 38     STX $38D8
-D0/2630: 20 E0 80     JSR $80E0
-D0/2633: 80 00        BRA $2635
+D0/2630: 20 E0 80     JSR Routine_D080E0
+D0/2633: 80 00        BRA Local_D02635
+Local_D02635:
 D0/2635: 00 00        BRK $00
 D0/2637: 00 F0        BRK $F0
-D0/2639: 70 80        BVS $25BB
-D0/263B: 80 00        BRA $263D
+D0/2639: 70 80        BVS Routine_D025BB
+D0/263B: 80 00        BRA Local_D0263D
+Local_D0263D:
 D0/263D: 00 00        BRK $00
 D0/263F: 00 00        BRK $00
 D0/2641: 00 00        BRK $00
@@ -32,5 +34,5 @@ D0/2651: 33 2E        AND ($2E,S),Y
 D0/2653: 33 2C        AND ($2C,S),Y
 D0/2655: 33 59        AND ($59,S),Y
 D0/2657: 67 90        ADC [$90]
-D0/2659: 90 60        BCC $26BB
+D0/2659: 90 60        BCC Routine_D026BB
 D0/265B: 60           RTS

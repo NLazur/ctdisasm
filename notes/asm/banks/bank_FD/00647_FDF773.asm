@@ -1,7 +1,8 @@
 ; Bank: FD | Start Address: F773
 Routine_FDF773:
-FD/F773: 70 80        BVS $F6F5
-FD/F775: 70 C0        BVS $F737
-FD/F777: 70 00        BVS $F779
+FD/F773: 70 80        BVS Routine_FDF6F5
+FD/F775: 70 C0        BVS Routine_FDF737
+FD/F777: 70 00        BVS Local_FDF779
+Local_FDF779:
 FD/F779: 71 04        ADC ($04),Y
 FD/F77B: 60           RTS

@@ -1,7 +1,7 @@
 ; Bank: C0 | Start Address: 3AB7
 Routine_C03AB7:
 C0/3AB7: A5 17        LDA $17
-C0/3AB9: 30 33        BMI $3AEE
+C0/3AB9: 30 33        BMI Routine_C03AEE
 C0/3ABB: BB           TYX
 C0/3ABC: E8           INX
 C0/3ABD: C2 20        REP #$20

@@ -9,7 +9,7 @@ C6/AFE4: 61 12        ADC ($12,X)
 C6/AFE6: 23 24        AND $24,S
 C6/AFE8: B1 10        LDA ($10),Y
 C6/AFEA: 52 01        EOR ($01)
-C6/AFEC: 80 80        BRA $AF6E
+C6/AFEC: 80 80        BRA Routine_C6AF6E
 C6/AFEE: 81 82        STA ($82,X)
 C6/AFF0: A5 84        LDA $84
 C6/AFF2: 85 86        STA $86
@@ -56,7 +56,7 @@ C6/B04B: 9B           TXY
 C6/B04C: 08           PHP
 C6/B04D: 06 52        ASL $52
 C6/B04F: 03 2E        ORA $2E,S
-C6/B051: B0 33        BCS $B086
+C6/B051: B0 33        BCS Routine_C6B086
 C6/B053: E5 00        SBC $00
 C6/B055: 14 2D        TRB $2D
 C6/B057: 2E 23 03     ROL $0323

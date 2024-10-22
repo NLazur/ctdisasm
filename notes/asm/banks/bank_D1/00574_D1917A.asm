@@ -1,9 +1,10 @@
 ; Bank: D1 | Start Address: 917A
 Routine_D1917A:
-D1/917A: 80 70        BRA $91EC
+D1/917A: 80 70        BRA Routine_D191EC
 D1/917C: 00 8A        BRK $8A
 D1/917E: 41 80        EOR ($80,X)
-D1/9180: 70 00        BVS $9182
+D1/9180: 70 00        BVS Local_D19182
+Local_D19182:
 D1/9182: 95 0F        STA $0F,X
 D1/9184: CB           WAI
 D1/9185: 8E 91 93     STX $9391
@@ -12,12 +13,12 @@ D1/918A: 03 CA        ORA $CA,S
 D1/918C: 92 91        STA ($91)
 D1/918E: 93 04        STA ($04,S),Y
 D1/9190: 02 02        COP $02
-D1/9192: B0 41        BCS $91D5
+D1/9192: B0 41        BCS Local_D191D5
 D1/9194: 88           DEY
 D1/9195: 00 7F        BRK $7F
 D1/9197: AB           PLB
 D1/9198: 00 AB        BRK $AB
-D1/919A: 80 88        BRA $9124
+D1/919A: 80 88        BRA Routine_D19124
 D1/919C: 00 7F        BRK $7F
 D1/919E: 9D 17 83     STA $8317,X
 D1/91A1: 0F 89 00 00  ORA $000089
@@ -44,9 +45,10 @@ D1/91C9: 84 93        STY $93
 D1/91CB: 13 02        ORA ($02,S),Y
 D1/91CD: 04 B0        TSB $B0
 D1/91CF: 49 98        EOR #$98
-D1/91D1: 10 95        BPL $9168
+D1/91D1: 10 95        BPL Routine_D19168
 D1/91D3: 03 8A        ORA $8A,S
-D1/91D5: 20 80 70     JSR $7080
+Local_D191D5:
+D1/91D5: 20 80 70     JSR Routine_D17080
 D1/91D8: 00 AB        BRK $AB
 D1/91DA: 00 AA        BRK $AA
 D1/91DC: 00 82        BRK $82
@@ -74,9 +76,10 @@ D1/920B: 08           PHP
 D1/920C: A2 FF        LDX #$FF
 D1/920E: 01 A2        ORA ($A2,X)
 D1/9210: 01 80        ORA ($80,X)
-D1/9212: 70 00        BVS $9214
+D1/9212: 70 00        BVS Local_D19214
+Local_D19214:
 D1/9214: A2 00        LDX #$00
-D1/9216: 80 70        BRA $9288
+D1/9216: 80 70        BRA Routine_D19288
 D1/9218: 46 A7        LSR $A7
 D1/921A: 00 00        BRK $00
 D1/921C: 00 00        BRK $00
@@ -89,7 +92,7 @@ D1/9228: 96 30        STX $30,Y
 D1/922A: B7 01        LDA [$01],Y
 D1/922C: DE 01 00     DEC $0001,X
 D1/922F: 93 00        STA ($00,S),Y
-D1/9231: 20 04 9C     JSR $9C04
+D1/9231: 20 04 9C     JSR Routine_D19C04
 D1/9234: E0 00        CPX #$00
 D1/9236: A0 04        LDY #$04
 D1/9238: 00 9D        BRK $9D
@@ -136,7 +139,7 @@ D1/9287: 61 7F        ADC ($7F,X)
 D1/9289: 84 C3        STY $C3
 D1/928B: E6 01        INC $01
 D1/928D: 8E 40 10     STX $1040
-D1/9290: 70 FF        BVS $9291
+D1/9290: 70 FF        BVS Routine_D19291
 D1/9292: 00 09        BRK $09
 D1/9294: 02 DE        COP $DE
 D1/9296: 00 A0        BRK $A0
@@ -166,7 +169,7 @@ D1/92CC: 7F B0 41 83  ADC $8341B0,X
 D1/92D0: 1F 00 84 00  ORA $008400,X
 D1/92D4: A9 1A        LDA #$1A
 D1/92D6: 03 8E        ORA $8E,S
-D1/92D8: 50 19        BVC $92F3
+D1/92D8: 50 19        BVC Routine_D192F3
 D1/92DA: 03 FF        ORA $FF,S
 D1/92DC: 00 08        BRK $08
 D1/92DE: 01 83        ORA ($83,X)

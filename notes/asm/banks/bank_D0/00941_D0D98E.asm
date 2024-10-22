@@ -7,7 +7,7 @@ D0/D998: 5F 60 3F 30  EOR $303F60,X
 D0/D99C: 1B           TCS
 D0/D99D: 1C 06 07     TRB $0706
 D0/D9A0: BE C1 FF     LDX $FFC1,Y
-D0/D9A3: 80 7F        BRA $DA24
-D0/D9A5: 80 BF        BRA $D966
+D0/D9A3: 80 7F        BRA Routine_D0DA24
+D0/D9A5: 80 BF        BRA Routine_D0D966
 D0/D9A7: C0 5F        CPY #$5F
 D0/D9A9: 60           RTS

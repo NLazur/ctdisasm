@@ -16,7 +16,7 @@ CD/A4C9: A4 1C        LDY $1C
 CD/A4CB: A5 1E        LDA $1E
 CD/A4CD: 1D 30 0A     ORA $0A30,X
 CD/A4D0: 2A           ROL
-CD/A4D1: 30 0E        BMI $A4E1
+CD/A4D1: 30 0E        BMI Routine_CDA4E1
 CD/A4D3: 02 3F        COP $3F
 CD/A4D5: 0A           ASL
 CD/A4D6: 40           RTI

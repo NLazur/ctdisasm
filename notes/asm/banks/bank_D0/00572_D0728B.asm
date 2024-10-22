@@ -5,13 +5,20 @@ D0/728E: CC CC 6C     CPY $6CCC
 D0/7291: EC 7C FC     CPX $FC7C
 D0/7294: 0C FC 1E     TSB $1EFC
 D0/7297: FE FF 00     INC $00FF,X
-D0/729A: 80 00        BRA $729C
-D0/729C: 80 00        BRA $729E
-D0/729E: 80 00        BRA $72A0
-D0/72A0: 80 00        BRA $72A2
-D0/72A2: 80 00        BRA $72A4
-D0/72A4: 80 00        BRA $72A6
-D0/72A6: 80 00        BRA $72A8
+D0/729A: 80 00        BRA Local_D0729C
+Local_D0729C:
+D0/729C: 80 00        BRA Local_D0729E
+Local_D0729E:
+D0/729E: 80 00        BRA Local_D072A0
+Local_D072A0:
+D0/72A0: 80 00        BRA Local_D072A2
+Local_D072A2:
+D0/72A2: 80 00        BRA Local_D072A4
+Local_D072A4:
+D0/72A4: 80 00        BRA Local_D072A6
+Local_D072A6:
+D0/72A6: 80 00        BRA Local_D072A8
+Local_D072A8:
 D0/72A8: 02 03        COP $03
 D0/72AA: 05 06        ORA $06
 D0/72AC: 05 06        ORA $06
@@ -46,12 +53,13 @@ D0/72EB: 7E CF 3F     ROR $3FCF,X
 D0/72EE: E7 1F        SBC [$1F]
 D0/72F0: F7 0F        SBC [$0F],Y
 D0/72F2: F2 0F        SBC ($0F)
+Local_D072F4:
 D0/72F4: FC 03 FC     JSR ($FC03,X)
 D0/72F7: 03 00        ORA $00,S
 D0/72F9: 00 00        BRK $00
 D0/72FB: 00 80        BRK $80
 D0/72FD: C0 60        CPY #$60
 D0/72FF: E0 70 F0     CPX #$F070
-D0/7302: F0 F0        BEQ $72F4
+D0/7302: F0 F0        BEQ Local_D072F4
 D0/7304: C0 C0        CPY #$C0
 D0/7306: 60           RTS

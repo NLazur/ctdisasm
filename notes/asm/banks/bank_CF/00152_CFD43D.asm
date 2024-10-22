@@ -1,10 +1,10 @@
 ; Bank: CF | Start Address: D43D
 Routine_CFD43D:
 CF/D43D: E1 1C        SBC ($1C,X)
-CF/D43F: 20 1C 20     JSR $201C
+CF/D43F: 20 1C 20     JSR Routine_CF201C
 CF/D442: 49 38        EOR #$38
-CF/D444: 30 20        BMI $D466
-CF/D446: 30 60        BMI $D4A8
+CF/D444: 30 20        BMI Routine_CFD466
+CF/D446: 30 60        BMI Routine_CFD4A8
 CF/D448: 1C 20 4B     TRB $4B20
 CF/D44B: 38           SEC
 CF/D44C: 63 E1        ADC $E1,S

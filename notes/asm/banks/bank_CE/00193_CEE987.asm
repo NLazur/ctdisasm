@@ -1,11 +1,12 @@
 ; Bank: CE | Start Address: E987
 Routine_CEE987:
 CE/E987: AD A3 CA     LDA $CAA3
-CE/E98A: 30 78        BMI $EA04
+CE/E98A: 30 78        BMI Routine_CEEA04
 CE/E98C: A5 45        LDA $45
 CE/E98E: 29 02        AND #$02
-CE/E990: F0 39        BEQ $E9CB
+CE/E990: F0 39        BEQ Routine_CEE9CB
 CE/E992: A9 FF        LDA #$FF
+Local_CEE994:
 CE/E994: 99 60 C1     STA $C160,Y
 CE/E997: 99 98 C1     STA $C198,Y
 CE/E99A: 99 D0 C1     STA $C1D0,Y
@@ -26,5 +27,5 @@ CE/E9C4: 88           DEY
 CE/E9C5: 88           DEY
 CE/E9C6: 88           DEY
 CE/E9C7: 88           DEY
-CE/E9C8: D0 CA        BNE $E994
+CE/E9C8: D0 CA        BNE Local_CEE994
 CE/E9CA: 60           RTS

@@ -1,10 +1,12 @@
 ; Bank: C2 | Start Address: 960B
 Routine_C2960B:
 C2/960B: 85 02        STA $02
+Local_C2960D:
 C2/960D: A9 0F 00     LDA #$000F
 C2/9610: 54 7E FF     MVN $7E,$FF
 C2/9613: A9 08 00     LDA #$0008
 C2/9616: 85 00        STA $00
+Local_C29618:
 C2/9618: BF 00 00 FF  LDA $FF0000,X
 C2/961C: 29 FF 00     AND #$00FF
 C2/961F: 99 00 00     STA $0000,Y
@@ -12,7 +14,7 @@ C2/9622: E8           INX
 C2/9623: C8           INY
 C2/9624: C8           INY
 C2/9625: C6 00        DEC $00
-C2/9627: D0 EF        BNE $9618
+C2/9627: D0 EF        BNE Local_C29618
 C2/9629: C6 02        DEC $02
-C2/962B: D0 E0        BNE $960D
+C2/962B: D0 E0        BNE Local_C2960D
 C2/962D: 60           RTS

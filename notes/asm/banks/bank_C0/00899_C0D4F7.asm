@@ -12,5 +12,5 @@ C0/D509: A9 E4        LDA #$E4
 C0/D50B: 85 D8        STA $D8
 C0/D50D: BD 80 17     LDA $1780,X
 C0/D510: C9 03        CMP #$03
-C0/D512: D0 01        BNE $D515
+C0/D512: D0 01        BNE Routine_C0D515
 C0/D514: 60           RTS

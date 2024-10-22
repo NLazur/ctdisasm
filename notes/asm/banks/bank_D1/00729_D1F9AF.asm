@@ -18,11 +18,11 @@ D1/F9D1: BD 19 CD     LDA $CD19,X
 D1/F9D4: 85 18        STA $18
 D1/F9D6: BD 1B CD     LDA $CD1B,X
 D1/F9D9: 85 19        STA $19
-D1/F9DB: 20 EB F8     JSR $F8EB
+D1/F9DB: 20 EB F8     JSR Routine_D1F8EB
 D1/F9DE: 8B           PHB
 D1/F9DF: 7B           TDC
 D1/F9E0: 48           PHA
 D1/F9E1: AB           PLB
-D1/F9E2: 20 E7 F9     JSR $F9E7
+D1/F9E2: 20 E7 F9     JSR Routine_D1F9E7
 D1/F9E5: AB           PLB
 D1/F9E6: 6B           RTL

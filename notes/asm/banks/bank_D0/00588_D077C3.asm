@@ -1,24 +1,29 @@
 ; Bank: D0 | Start Address: 77C3
 Routine_D077C3:
 D0/77C3: B8           CLV
-D0/77C4: 80 70        BRA $7836
+D0/77C4: 80 70        BRA Routine_D07836
 D0/77C6: 00 F0        BRK $F0
 D0/77C8: 00 00        BRK $00
 D0/77CA: 00 00        BRK $00
 D0/77CC: 00 00        BRK $00
 D0/77CE: 00 01        BRK $01
+Local_D077D0:
 D0/77D0: 01 03        ORA ($03,X)
+Local_D077D2:
 D0/77D2: 03 0F        ORA $0F,S
 D0/77D4: 07 3F        ORA [$3F]
 D0/77D6: 0F 7F 00 00  ORA $00007F
-D0/77DA: 10 10        BPL $77EC
-D0/77DC: 70 70        BVS $784E
-D0/77DE: F0 F0        BEQ $77D0
-D0/77E0: F0 F0        BEQ $77D2
+D0/77DA: 10 10        BPL Local_D077EC
+D0/77DC: 70 70        BVS Local_D0784E
+D0/77DE: F0 F0        BEQ Local_D077D0
+Local_D077E0:
+D0/77E0: F0 F0        BEQ Local_D077D2
 D0/77E2: E0 E0 E0     CPX #$E0E0
+Local_D077E5:
 D0/77E5: E0 E0 E0     CPX #$E0E0
 D0/77E8: 00 00        BRK $00
 D0/77EA: 00 00        BRK $00
+Local_D077EC:
 D0/77EC: 02 02        COP $02
 D0/77EE: 06 06        ASL $06
 D0/77F0: 0F 0F 1F 1F  ORA $1F1F0F
@@ -42,8 +47,8 @@ D0/7819: 00 00        BRK $00
 D0/781B: 00 00        BRK $00
 D0/781D: 00 00        BRK $00
 D0/781F: 00 80        BRK $80
-D0/7821: 80 80        BRA $77A3
-D0/7823: 80 C0        BRA $77E5
+D0/7821: 80 80        BRA Routine_D077A3
+D0/7823: 80 C0        BRA Local_D077E5
 D0/7825: C0 C0        CPY #$C0
 D0/7827: C0 00        CPY #$00
 D0/7829: 00 00        BRK $00
@@ -56,14 +61,15 @@ D0/7835: 03 07        ORA $07,S
 D0/7837: 07 00        ORA [$00]
 D0/7839: 00 00        BRK $00
 D0/783B: 00 80        BRK $80
-D0/783D: 80 80        BRA $77BF
-D0/783F: 80 C0        BRA $7801
+D0/783D: 80 80        BRA Routine_D077BF
+D0/783F: 80 C0        BRA Routine_D07801
 D0/7841: C0 C0        CPY #$C0
 D0/7843: C0 E0        CPY #$E0
 D0/7845: E0 C0 E0     CPX #$E0C0
 D0/7848: 00 00        BRK $00
 D0/784A: 00 02        BRK $02
 D0/784C: 01 03        ORA ($03,X)
+Local_D0784E:
 D0/784E: 04 07        TSB $07
 D0/7850: 04 07        TSB $07
 D0/7852: 00 07        BRK $07
@@ -72,5 +78,5 @@ D0/7856: 09 0E        ORA #$0E
 D0/7858: 00 00        BRK $00
 D0/785A: 00 00        BRK $00
 D0/785C: 00 00        BRK $00
-D0/785E: 80 80        BRA $77E0
+D0/785E: 80 80        BRA Local_D077E0
 D0/7860: 40           RTI

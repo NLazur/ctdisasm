@@ -1,5 +1,6 @@
 ; Bank: FE | Start Address: 0000
 Routine_FE0000:
+Local_FE0000:
 FE/0000: 00 12        BRK $12
 FE/0002: C3 13        CMP $13,S
 FE/0004: 13 C3        ORA ($C3,S),Y
@@ -98,12 +99,13 @@ FE/0102: 09 01 18     ORA #$1801
 FE/0105: 3A           DEC
 FE/0106: F8           SED
 FE/0107: E5 80        SBC $80
-FE/0109: 30 0F        BMI $011A
+FE/0109: 30 0F        BMI Local_FE011A
 FE/010B: 3F 28 05 07  AND $070528,X
 FE/010F: 01 20        ORA ($20,X)
 FE/0111: 46 00        LSR $00
 FE/0113: 39 F8 4F     AND $4FF8,Y
 FE/0116: BF 20 7C 00  LDA $007C20,X
+Local_FE011A:
 FE/011A: 42 00        WDM $00
 FE/011C: C1 10        CMP ($10,X)
 FE/011E: 05 08        ORA $08

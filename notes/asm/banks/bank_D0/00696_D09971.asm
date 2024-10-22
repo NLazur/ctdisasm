@@ -2,12 +2,12 @@
 Routine_D09971:
 D0/9971: E0 00        CPX #$00
 D0/9973: 00 00        BRK $00
-D0/9975: 80 50        BRA $99C7
+D0/9975: 80 50        BRA Routine_D099C7
 D0/9977: C8           INY
 D0/9978: 00 C0        BRK $C0
 D0/997A: 00 00        BRK $00
 D0/997C: E0 00        CPX #$00
-D0/997E: 80 38        BRA $99B8
+D0/997E: 80 38        BRA Routine_D099B8
 D0/9980: 26 1E        ROL $1E
 D0/9982: A1 6F        LDA ($6F,X)
 D0/9984: 00 00        BRK $00
@@ -35,7 +35,7 @@ D0/99B5: 11 00        ORA ($00),Y
 D0/99B7: 00 00        BRK $00
 D0/99B9: 00 4C        BRK $4C
 D0/99BB: 71 19        ADC ($19),Y
-D0/99BD: 22 00 00 1E  JSR $1E0000
+D0/99BD: 22 00 00 1E  JSR Routine_1E0000
 D0/99C1: 00 1E        BRK $1E
 D0/99C3: 00 00        BRK $00
 D0/99C5: 7E 3C 00     ROR $003C,X
@@ -70,8 +70,8 @@ D0/9A00: 06 04        ASL $04
 D0/9A02: 02 00        COP $00
 D0/9A04: 00 02        BRK $02
 D0/9A06: 03 02        ORA $02,S
-D0/9A08: 80 60        BRA $9A6A
-D0/9A0A: 80 40        BRA $9A4C
+D0/9A08: 80 60        BRA Routine_D09A6A
+D0/9A0A: 80 40        BRA Local_D09A4C
 D0/9A0C: 00 C0        BRK $C0
 D0/9A0E: 00 80        BRK $80
 D0/9A10: 00 00        BRK $00
@@ -88,11 +88,13 @@ D0/9A24: 00 00        BRK $00
 D0/9A26: 00 00        BRK $00
 D0/9A28: 00 00        BRK $00
 D0/9A2A: 00 00        BRK $00
-D0/9A2C: 10 00        BPL $9A2E
+D0/9A2C: 10 00        BPL Local_D09A2E
+Local_D09A2E:
 D0/9A2E: 00 10        BRK $10
 D0/9A30: 00 10        BRK $10
 D0/9A32: 00 80        BRK $80
-D0/9A34: 80 00        BRA $9A36
+D0/9A34: 80 00        BRA Local_D09A36
+Local_D09A36:
 D0/9A36: 00 80        BRK $80
 D0/9A38: 99 E2 0C     STA $0CE2,Y
 D0/9A3B: 11 00        ORA ($00),Y
@@ -100,8 +102,9 @@ D0/9A3D: 00 00        BRK $00
 D0/9A3F: 00 4C        BRK $4C
 D0/9A41: 71 00        ADC ($00),Y
 D0/9A43: 00 19        BRK $19
-D0/9A45: 22 00 00 FC  JSR $FC0000
+D0/9A45: 22 00 00 FC  JSR Routine_FC0000
 D0/9A49: 1E 00 00     ASL $0000,X
+Local_D09A4C:
 D0/9A4C: 7E 00 3C     ROR $3C00,X
 D0/9A4F: 00 36        BRK $36
 D0/9A51: 8E 98 46     STX $4698

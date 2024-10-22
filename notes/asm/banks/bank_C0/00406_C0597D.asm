@@ -11,8 +11,9 @@ C0/5988: AA           TAX
 C0/5989: BF 01 20 7F  LDA $7F2001,X
 C0/598D: AA           TAX
 C0/598E: E2 20        SEP #$20
+Local_C05990:
 C0/5990: BF 01 20 7F  LDA $7F2001,X
-C0/5994: F0 0F        BEQ $59A5
+C0/5994: F0 0F        BEQ Local_C059A5
 C0/5996: 9B           TXY
 C0/5997: C2 20        REP #$20
 C0/5999: 29 FF 00     AND #$00FF
@@ -20,7 +21,8 @@ C0/599C: 0A           ASL
 C0/599D: AA           TAX
 C0/599E: E2 20        SEP #$20
 C0/59A0: FC 6E 5D     JSR ($5D6E,X)
-C0/59A3: 80 EB        BRA $5990
+C0/59A3: 80 EB        BRA Local_C05990
+Local_C059A5:
 C0/59A5: C2 20        REP #$20
 C0/59A7: E8           INX
 C0/59A8: 8A           TXA

@@ -12,7 +12,7 @@ D0/409E: 0A           ASL
 D0/409F: 0E 12 1E     ASL $1E12
 D0/40A2: 12 1E        ORA ($1E)
 D0/40A4: 12 1E        ORA ($1E)
-D0/40A6: 22 3E 01 01  JSR $01013E
+D0/40A6: 22 3E 01 01  JSR Routine_01013E
 D0/40AA: 01 01        ORA ($01,X)
 D0/40AC: 01 01        ORA ($01,X)
 D0/40AE: 02 03        COP $03
@@ -25,5 +25,5 @@ D0/40BA: 7A           PLY
 D0/40BB: 86 7B        STX $7B
 D0/40BD: 87 F2        STA [$F2]
 D0/40BF: 0E EC 1C     ASL $1CEC
-D0/40C2: 90 70        BCC $4134
+D0/40C2: 90 70        BCC Routine_D04134
 D0/40C4: 60           RTS

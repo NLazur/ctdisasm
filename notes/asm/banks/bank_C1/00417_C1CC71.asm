@@ -1,12 +1,12 @@
 ; Bank: C1 | Start Address: CC71
 Routine_C1CC71:
 C1/CC71: C9 FF        CMP #$FF
-C1/CC73: F0 55        BEQ $CCCA
+C1/CC73: F0 55        BEQ Local_C1CCCA
 C1/CC75: AA           TAX
 C1/CC76: BD BE B1     LDA $B1BE,X
-C1/CC79: D0 19        BNE $CC94
+C1/CC79: D0 19        BNE Local_C1CC94
 C1/CC7B: AD BA B3     LDA $B3BA
-C1/CC7E: 20 F6 CB     JSR $CBF6
+C1/CC7E: 20 F6 CB     JSR Routine_C1CBF6
 C1/CC81: 98           TYA
 C1/CC82: C2 20        REP #$20
 C1/CC84: 85 0E        STA $0E
@@ -16,11 +16,12 @@ C1/CC8A: E5 0E        SBC $0E
 C1/CC8C: 8D 34 5E     STA $5E34
 C1/CC8F: 7B           TDC
 C1/CC90: E2 20        SEP #$20
-C1/CC92: 80 36        BRA $CCCA
+C1/CC92: 80 36        BRA Local_C1CCCA
+Local_C1CC94:
 C1/CC94: C9 01        CMP #$01
-C1/CC96: D0 19        BNE $CCB1
+C1/CC96: D0 19        BNE Local_C1CCB1
 C1/CC98: AD BB B3     LDA $B3BB
-C1/CC9B: 20 F6 CB     JSR $CBF6
+C1/CC9B: 20 F6 CB     JSR Routine_C1CBF6
 C1/CC9E: 98           TYA
 C1/CC9F: C2 20        REP #$20
 C1/CCA1: 85 0E        STA $0E
@@ -30,9 +31,10 @@ C1/CCA7: E5 0E        SBC $0E
 C1/CCA9: 8D B4 5E     STA $5EB4
 C1/CCAC: 7B           TDC
 C1/CCAD: E2 20        SEP #$20
-C1/CCAF: 80 19        BRA $CCCA
+C1/CCAF: 80 19        BRA Local_C1CCCA
+Local_C1CCB1:
 C1/CCB1: AD BC B3     LDA $B3BC
-C1/CCB4: 20 F6 CB     JSR $CBF6
+C1/CCB4: 20 F6 CB     JSR Routine_C1CBF6
 C1/CCB7: 98           TYA
 C1/CCB8: C2 20        REP #$20
 C1/CCBA: 85 0E        STA $0E
@@ -42,5 +44,6 @@ C1/CCC0: E5 0E        SBC $0E
 C1/CCC2: 8D 34 5F     STA $5F34
 C1/CCC5: 7B           TDC
 C1/CCC6: E2 20        SEP #$20
-C1/CCC8: 80 00        BRA $CCCA
+C1/CCC8: 80 00        BRA Local_C1CCCA
+Local_C1CCCA:
 C1/CCCA: 60           RTS

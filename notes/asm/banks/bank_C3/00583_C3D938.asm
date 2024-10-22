@@ -9,14 +9,15 @@ C3/D942: 11 00        ORA ($00),Y
 C3/D944: C3 55        CMP $55,S
 C3/D946: 21 10        AND ($10,X)
 C3/D948: 62 0C 85     PER $C35E57
-C3/D94B: 10 00        BPL $D94D
+C3/D94B: 10 00        BPL Local_C3D94D
+Local_C3D94D:
 C3/D94D: A6 14        LDX $14
 C3/D94F: A8           TAY
-C3/D950: 10 E9        BPL $D93B
+C3/D950: 10 E9        BPL Routine_C3D93B
 C3/D952: 14 0B        TRB $0B
 C3/D954: 1D 00 2C     ORA $2C00,X
 C3/D957: 1D 4F 21     ORA $214F,X
-C3/D95A: 90 21        BCC $D97D
+C3/D95A: 90 21        BCC Routine_C3D97D
 C3/D95C: D3 31        CMP ($31,S),Y
 C3/D95E: 01 20        ORA ($20,X)
 C3/D960: 48           PHA
@@ -52,7 +53,7 @@ C3/D99D: 00 90        BRK $90
 C3/D99F: 00 21        BRK $21
 C3/D9A1: 2C 1D E9     BIT $E91D
 C3/D9A4: 14 21        TRB $21
-C3/D9A6: 10 2D        BPL $D9D5
+C3/D9A6: 10 2D        BPL Local_C3D9D5
 C3/D9A8: 00 16        BRK $16
 C3/D9AA: CC 11 89     CPY $8911
 C3/D9AD: 09 66 01     ORA #$0166
@@ -74,6 +75,7 @@ C3/D9CD: 06 20        ASL $20
 C3/D9CF: 52 E5        EOR ($E5)
 C3/D9D1: 55 C3        EOR $C3,X
 C3/D9D3: 55 06        EOR $06,X
+Local_C3D9D5:
 C3/D9D5: 08           PHP
 C3/D9D6: 08           PHP
 C3/D9D7: 21 10        AND ($10,X)
@@ -87,7 +89,8 @@ C3/D9E2: 00 08        BRK $08
 C3/D9E4: 85 14        STA $14
 C3/D9E6: 03 01        ORA $01,S
 C3/D9E8: C6 1C        DEC $1C
-C3/D9EA: 10 00        BPL $D9EC
+C3/D9EA: 10 00        BPL Local_C3D9EC
+Local_C3D9EC:
 C3/D9EC: 3A           DEC
 C3/D9ED: 7D 63 2E     ADC $2E63,X
 C3/D9F0: 19 F6 25     ORA $25F6,Y
@@ -116,7 +119,7 @@ C3/DA1D: 21 48        AND ($48,X)
 C3/DA1F: 5A           PHY
 C3/DA20: 06 0A        ASL $0A
 C3/DA22: 5A           PHY
-C3/DA23: 4C 00 5A     JMP $5A00
+C3/DA23: 4C 00 5A     JMP Routine_C35A00
 C3/DA26: 08           PHP
 C3/DA27: 18           CLC
 C3/DA28: C3 55        CMP $55,S
@@ -143,7 +146,7 @@ C3/DA59: 7C 6F 39     JMP ($396F,X)
 C3/DA5C: 00 63        BRK $63
 C3/DA5E: 95 52        STA $52,X
 C3/DA60: 32 46        AND ($46)
-C3/DA62: D0 39        BNE $DA9D
+C3/DA62: D0 39        BNE Routine_C3DA9D
 C3/DA64: 8C 00 2D     STY $2D00
 C3/DA67: E9 1C A5     SBC #$A51C
 C3/DA6A: 18           CLC

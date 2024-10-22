@@ -9,52 +9,59 @@ CD/3206: BD A6 CA     LDA $CAA6,X
 CD/3209: 85 4B        STA $4B
 CD/320B: 85 4D        STA $4D
 CD/320D: A2 FE        LDX #$FE
+Local_CD320F:
 CD/320F: A5 4B        LDA $4B
 CD/3211: 38           SEC
 CD/3212: F9 00 B8     SBC $B800,Y
-CD/3215: B0 01        BCS $3218
+CD/3215: B0 01        BCS Local_CD3218
 CD/3217: 7B           TDC
+Local_CD3218:
 CD/3218: 9D 00 B9     STA $B900,X
 CD/321B: 8F 80 21 00  STA $002180
 CD/321F: B9 00 B8     LDA $B800,Y
 CD/3222: 18           CLC
 CD/3223: 65 4D        ADC $4D
-CD/3225: 90 02        BCC $3229
+CD/3225: 90 02        BCC Local_CD3229
 CD/3227: A9 FF        LDA #$FF
+Local_CD3229:
 CD/3229: 9D 01 B9     STA $B901,X
 CD/322C: 8F 80 21 00  STA $002180
 CD/3230: CA           DEX
 CD/3231: CA           DEX
 CD/3232: C8           INY
 CD/3233: C4 47        CPY $47
-CD/3235: D0 D8        BNE $320F
+CD/3235: D0 D8        BNE Local_CD320F
 CD/3237: 7B           TDC
 CD/3238: 99 00 B8     STA $B800,Y
 CD/323B: 88           DEY
 CD/323C: B9 00 B8     LDA $B800,Y
 CD/323F: 3A           DEC
 CD/3240: 85 47        STA $47
+Local_CD3242:
 CD/3242: B9 00 B8     LDA $B800,Y
 CD/3245: D9 FF B7     CMP $B7FF,Y
-CD/3248: F0 21        BEQ $326B
+CD/3248: F0 21        BEQ Local_CD326B
 CD/324A: A5 4B        LDA $4B
 CD/324C: 38           SEC
 CD/324D: E5 47        SBC $47
-CD/324F: B0 01        BCS $3252
+CD/324F: B0 01        BCS Local_CD3252
 CD/3251: 7B           TDC
+Local_CD3252:
 CD/3252: 9D 00 B9     STA $B900,X
 CD/3255: 8F 80 21 00  STA $002180
 CD/3259: A5 47        LDA $47
 CD/325B: 18           CLC
 CD/325C: 65 4D        ADC $4D
-CD/325E: 90 02        BCC $3262
+CD/325E: 90 02        BCC Local_CD3262
 CD/3260: A9 FF        LDA #$FF
+Local_CD3262:
 CD/3262: 9D 01 B9     STA $B901,X
 CD/3265: 8F 80 21 00  STA $002180
 CD/3269: CA           DEX
 CD/326A: CA           DEX
+Local_CD326B:
 CD/326B: C6 47        DEC $47
 CD/326D: 88           DEY
-CD/326E: D0 D2        BNE $3242
+CD/326E: D0 D2        BNE Local_CD3242
 CD/3270: C2 10        REP #$10
 CD/3272: 60           RTS

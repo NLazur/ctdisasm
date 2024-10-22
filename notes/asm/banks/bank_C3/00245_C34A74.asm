@@ -1,9 +1,9 @@
 ; Bank: C3 | Start Address: 4A74
 Routine_C34A74:
-C3/4A74: 10 E2        BPL $4A58
-C3/4A76: 20 60 DA     JSR $DA60
+C3/4A74: 10 E2        BPL Routine_C34A58
+C3/4A76: 20 60 DA     JSR Routine_C3DA60
 C3/4A79: 7D 0C E2     ADC $E20C,X
-C3/4A7C: 20 AA 00     JSR $00AA
+C3/4A7C: 20 AA 00     JSR Routine_C300AA
 C3/4A7F: BF 42 76 7E  LDA $7E7642,X
 C3/4A83: FA           PLX
 C3/4A84: 95 5E        STA $5E,X
@@ -11,7 +11,7 @@ C3/4A86: 1A           INC
 C3/4A87: 00 95        BRK $95
 C3/4A89: 5F C2 20 60  EOR $6020C2,X
 C3/4A8D: 41 35        EOR ($35,X)
-C3/4A8F: 22 80 34 03  JSR $033480
+C3/4A8F: 22 80 34 03  JSR Routine_033480
 C3/4A93: 00 3C        BRK $3C
 C3/4A95: DA           PHX
 C3/4A96: B5 55        LDA $55,X
@@ -22,34 +22,36 @@ C3/4A9F: 85 F4        STA $F4
 C3/4AA1: A8           TAY
 C3/4AA2: B5 02        LDA $02,X
 C3/4AA4: 54 0C 20     MVN $0C,$20
-C3/4AA7: 80 00        BRA $4AA9
+C3/4AA7: 80 00        BRA Local_C34AA9
+Local_C34AA9:
 C3/4AA9: 85 F6        STA $F6
 C3/4AAB: AA           TAX
-C3/4AAC: 20 10 72     JSR $7210
+C3/4AAC: 20 10 72     JSR Routine_C37210
 C3/4AAF: 58           CLI
 C3/4AB0: FA           PLX
 C3/4AB1: 95 CB        STA $CB,X
 C3/4AB3: 0E A5 F4     ASL $F4A5
-C3/4AB6: 10 70        BPL $4B28
+C3/4AB6: 10 70        BPL Local_C34B28
 C3/4AB8: 03 49        ORA $49,S
+Local_C34ABA:
 C3/4ABA: FF 1A 4D 0F  SBC $0F4D1A,X
 C3/4ABE: 53 1F        EOR ($1F,S),Y
 C3/4AC0: 62 22 AC     PER $C3F6E5
-C3/4AC3: 10 34        BPL $4AF9
+C3/4AC3: 10 34        BPL Local_C34AF9
 C3/4AC5: 21 A5        AND ($A5,X)
 C3/4AC7: F6 16        INC $16,X
 C3/4AC9: E0 C2 21     CPX #$21C2
 C3/4ACC: 98           TYA
 C3/4ACD: 00 6D        BRK $6D
 C3/4ACF: 34 21        BIT $21,X
-C3/4AD1: 20 FB 34     JSR $34FB
+C3/4AD1: 20 FB 34     JSR Routine_C334FB
 C3/4AD4: A5 F0        LDA $F0
-C3/4AD6: 10 E2        BPL $4ABA
-C3/4AD8: 20 95 5D     JSR $5D95
+C3/4AD6: 10 E2        BPL Local_C34ABA
+C3/4AD8: 20 95 5D     JSR Routine_C35D95
 C3/4ADB: 63 00        ADC $00,S
 C3/4ADD: A5 A9        LDA $A9
 C3/4ADF: 18           CLC
-C3/4AE0: 20 6D 04     JSR $046D
+C3/4AE0: 20 6D 04     JSR Routine_C3046D
 C3/4AE3: 0B           PHD
 C3/4AE4: 85 A9        STA $A9
 C3/4AE6: AC 13 BC     LDY $BC13
@@ -60,8 +62,9 @@ C3/4AF0: 00 17        BRK $17
 C3/4AF2: 00 75        BRK $75
 C3/4AF4: 5B           TCD
 C3/4AF5: 48           PHA
-C3/4AF6: 80 DA        BRA $4AD2
+C3/4AF6: 80 DA        BRA Routine_C34AD2
 C3/4AF8: 18           CLC
+Local_C34AF9:
 C3/4AF9: 69 80 00     ADC #$0080
 C3/4AFC: EB           XBA
 C3/4AFD: 29 DD 07     AND #$07DD
@@ -71,7 +74,7 @@ C3/4B03: 1D 77 7E     ORA $7E77,X
 C3/4B06: 29 03 FA     AND #$FA03
 C3/4B09: 95 A0        STA $A0,X
 C3/4B0B: 65 C2        ADC $C2
-C3/4B0D: 20 68 DA     JSR $DA68
+C3/4B0D: 20 68 DA     JSR Routine_C3DA68
 C3/4B10: 12 03        ORA ($03)
 C3/4B12: FA           PLX
 C3/4B13: D8           CLD
@@ -83,43 +86,45 @@ C3/4B20: 95 54        STA $54,X
 C3/4B22: C2 21        REP #$21
 C3/4B24: A5 A9        LDA $A9
 C3/4B26: 75 5B        ADC $5B,X
+Local_C34B28:
 C3/4B28: 2E DA 41     ROL $41DA
 C3/4B2B: 03 23        ORA $23,S
-C3/4B2D: F0 23        BEQ $4B52
-C3/4B2F: 10 70        BPL $4BA1
+C3/4B2D: F0 23        BEQ Routine_C34B52
+C3/4B2F: 10 70        BPL Routine_C34BA1
 C3/4B31: DA           PHX
 C3/4B32: 11 60        ORA ($60),Y
 C3/4B34: 03 00        ORA $00,S
 C3/4B36: 01 02        ORA ($02,X)
 C3/4B38: 00 A9        BRK $A9
 C3/4B3A: FF FF 85 41  SBC $4185FF,X
+Local_C34B3E:
 C3/4B3E: 00 A9        BRK $A9
 C3/4B40: 04 00        TSB $00
 C3/4B42: 85 AB        STA $AB
 C3/4B44: A6 AD        LDX $AD
 C3/4B46: E2 80        SEP #$80
-C3/4B48: 20 B5 51     JSR $51B5
+C3/4B48: 20 B5 51     JSR Routine_C351B5
 C3/4B4B: D5 5A        CMP $5A,X
-C3/4B4D: F0 21        BEQ $4B70
+C3/4B4D: F0 21        BEQ Routine_C34B70
 C3/4B4F: 2F 12 00 DA  AND $DA0012
 C3/4B53: B5 56        LDA $56,X
 C3/4B55: 85 41        STA $41
 C3/4B57: B5 52        LDA $52,X
-C3/4B59: 20 00 EB     JSR $EB00
+C3/4B59: 20 00 EB     JSR Routine_C3EB00
 C3/4B5C: 74 A8        STZ $A8,X
 C3/4B5E: B5 51        LDA $51,X
-C3/4B60: 20 DD 74     JSR $74DD
+C3/4B60: 20 DD 74     JSR Routine_C374DD
 C3/4B63: 00 BB        BRK $BB
 C3/4B65: A0 00 1C     LDY #$1C00
-C3/4B68: 20 42 6E     JSR $6E42
+C3/4B68: 20 42 6E     JSR Routine_C36E42
 C3/4B6B: FA           PLX
-C3/4B6C: 20 20 74     JSR $7420
+C3/4B6C: 20 20 74     JSR Routine_C37420
 C3/4B6F: 77 80        ADC [$80],Y
 C3/4B71: 09 16 02     ORA #$0216
 C3/4B74: 74 77        STZ $77,X
-C3/4B76: 10 C6        BPL $4B3E
+C3/4B76: 10 C6        BPL Local_C34B3E
 C3/4B78: AB           PLB
-C3/4B79: D0 CE        BNE $4B49
+C3/4B79: D0 CE        BNE Routine_C34B49
 C3/4B7B: 5E 14 87     LSR $8714,X
 C3/4B7E: 77 20        ADC [$20],Y
 C3/4B80: 04 AE        TSB $AE
@@ -128,7 +133,7 @@ C3/4B84: 32 E0        AND ($E0)
 C3/4B86: 58           CLI
 C3/4B87: 00 D0        BRK $D0
 C3/4B89: EF 34 60 48  SBC $486034
-C3/4B8D: 30 32        BMI $4BC1
+C3/4B8D: 30 32        BMI Routine_C34BC1
 C3/4B8F: C9 0D 00     CMP #$000D
 C3/4B92: 4A           LSR
 C3/4B93: 0B           PHD

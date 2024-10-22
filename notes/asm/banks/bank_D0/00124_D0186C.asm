@@ -15,6 +15,7 @@ D0/1880: 00 00        BRK $00
 D0/1882: 00 00        BRK $00
 D0/1884: 00 00        BRK $00
 D0/1886: 00 00        BRK $00
-D0/1888: 80 00        BRA $188A
-D0/188A: 80 40        BRA $18CC
+D0/1888: 80 00        BRA Local_D0188A
+Local_D0188A:
+D0/188A: 80 40        BRA Routine_D018CC
 D0/188C: 40           RTI

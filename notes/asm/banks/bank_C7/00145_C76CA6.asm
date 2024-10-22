@@ -1,6 +1,6 @@
 ; Bank: C7 | Start Address: 6CA6
 Routine_C76CA6:
-C7/6CA6: F0 9B        BEQ $6C43
+C7/6CA6: F0 9B        BEQ Routine_C76C43
 C7/6CA8: C8           INY
 C7/6CA9: C0 0C        CPY #$0C
 C7/6CAB: A8           TAY
@@ -43,7 +43,7 @@ C7/6CF4: EB           XBA
 C7/6CF5: D4 C4        PEI $C4
 C7/6CF7: 7F C5 1F 18  ADC $181FC5,X
 C7/6CFB: CD 10 80     CMP $8010
-C7/6CFE: D0 CF        BNE $6CCF
+C7/6CFE: D0 CF        BNE Routine_C76CCF
 C7/6D00: 1B           TCS
 C7/6D01: DC 03 DD     JMP [$DD03]
 C7/6D04: 0D 05 D1     ORA $D105
@@ -83,7 +83,7 @@ C7/6D4A: E8           INX
 C7/6D4B: E6 A8        INC $A8
 C7/6D4D: EB           XBA
 C7/6D4E: D4 DC        PEI $DC
-C7/6D50: 10 D6        BPL $6D28
+C7/6D50: 10 D6        BPL Routine_C76D28
 C7/6D52: 08           PHP
 C7/6D53: DD 0A C8     CMP $C80A,X
 C7/6D56: E4 0B        CPX $0B
